@@ -29,8 +29,16 @@ collections:
           max: 24,
         }
       - { name: title, label: Title }
-      - { name: ingress, label: Ingress }
+      - { name: image, label: Image, widget: image }
       - { name: body, label: Body, widget: markdown }
+      - name: links
+        label: 'Relevant links'
+        widget: list
+        fields:
+          - { name: title, label: Title }
+          - { name: url, label: Url }
+          - { name: body, label: Body }
+      - { name: ingress, label: Ingress }
       - {
           label: 'Post Author',
           name: 'author',
@@ -65,8 +73,17 @@ collections:
           max: 24,
         }
       - { name: title, label: Title }
+      - { name: image, label: Image, widget: image }
       - { name: ingress, label: Ingress }
       - { name: body, label: Body, widget: markdown }
+      - name: links
+        label: 'Relevant links'
+        widget: list
+        fields:
+          - { name: title, label: Title }
+          - { name: url, label: Url }
+          - { name: body, label: Body }
+      - { name: ingress, label: Ingress }
       - {
           label: 'Post Author',
           name: 'author',
