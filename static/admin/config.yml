@@ -40,7 +40,7 @@ collections:
           valueField: 'title',
           displayFields: ['title'],
         }
-    - name: post_react
+  - name: post_react
     label: 'Post: React'
     folder: post/react
     create: true
