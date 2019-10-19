@@ -9,7 +9,76 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - {
+          label: 'Calendar',
+          name: 'calendar',
+          widget: 'select',
+          options:
+            [
+              'functional',
+              'opensource',
+              'product',
+              'security',
+              'ml',
+              'react',
+              'javascript',
+            ],
+        }
+      - {
+          label: 'Year',
+          name: 'year',
+          widget: 'select',
+          options: ['2018', '2019', '2020'],
+        }
+      - {
+          label: 'Day',
+          name: 'day',
+          widget: 'select',
+          options:
+            [
+              '1',
+              '2',
+              '3',
+              '4',
+              '5',
+              '6',
+              '7',
+              '8',
+              '9',
+              '10',
+              '11',
+              '12',
+              '13',
+              '14',
+              '15',
+              '16',
+              '17',
+              '18',
+              '19',
+              '20',
+              '21',
+              '22',
+              '23',
+              '24',
+            ],
+        }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - {
+          label: 'Post Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'authors',
+          searchFields: ['title'],
+          valueField: 'title',
+          displayFields: ['title'],
+        }
+  - name: authors
+    label: Authors
+    folder: authors
+    create: true
+    fields:
+      - { name: title, label: Name }
+      - { name: description, label: 'Short description' }
+      - { name: twitterHandle, label: 'Twitter handle' }
+      - { name: avatar, label: 'Image', widget: image }
