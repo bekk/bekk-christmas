@@ -1,3 +1,3 @@
-import React from "react"
+import React from 'react';
 
-export default () => <div>Hello world!</div>
+export default () => <div>Ho ho ho world!</div>;
