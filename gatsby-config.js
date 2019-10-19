@@ -5,5 +5,6 @@
  */
 
 module.exports = {
+  plugins: [`gatsby-plugin-netlify-cms`]
   /* Your site config here */
-}
+};
