@@ -20,6 +20,7 @@ module.exports = {
             },
         },
         `gatsby-transformer-remark`,
+        `gatsby-plugin-react-helmet`,
         /* Your site config here */
     ],
 };

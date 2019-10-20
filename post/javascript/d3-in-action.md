@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2018
 post_day: 20
 title: D3 in action
+image: /assets/fagdag.jpg
 ingress: >-
   D3 is a JavaScript library that's well suited to create data visualizations on
   the web.

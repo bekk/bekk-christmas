@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
@@ -7,6 +8,12 @@ const Template = ({ data }) => {
 
     return (
         <main>
+            <Helmet>
+                <title>{frontmatter.title}</title>
+                <meta property="og:title" content={frontmatter.title} />
+                <meta property="og:description" content={frontmatter.ingress} />
+                <meta property="og:image" content={frontmatter.image} />
+            </Helmet>
             <article>
                 <h1>{frontmatter.title}</h1>
                 <section dangerouslySetInnerHTML={{ __html: html }} />
@@ -21,6 +28,8 @@ export const aboutPageQuery = graphql`
             html
             frontmatter {
                 title
+                ingress
+                image
             }
         }
     }
