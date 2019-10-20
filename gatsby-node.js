@@ -28,12 +28,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allMarkdownRemark.nodes.forEach(node => {
         const { calendar, post_year, post_day } = node.frontmatter;
 
-        createPage({
-            path: `/${calendar}/${post_year}/${post_day}`,
-            component: blogPostTemplate,
-            context: {
-                id: node.id,
-            },
-        });
+        if (process.env.CALENDAR_ENV === calendar) {
+            createPage({
+                path: `/${post_year}/${post_day}`,
+                component: blogPostTemplate,
+                context: {
+                    id: node.id,
+                },
+            });
+        } else if (!process.env.CALENDAR_ENV) {
+            createPage({
+                path: `/${calendar}/${post_year}/${post_day}`,
+                component: blogPostTemplate,
+                context: {
+                    id: node.id,
+                },
+            });
+        }
     });
 };
