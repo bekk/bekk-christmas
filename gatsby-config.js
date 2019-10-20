@@ -10,14 +10,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `javascript-posts`,
         path: `${__dirname}/post/javascript`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `react-posts`,
         path: `${__dirname}/post/react`
       }
     },
