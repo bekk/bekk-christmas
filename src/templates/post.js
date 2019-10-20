@@ -1,11 +1,18 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <main>
+      <Helmet>
+        <title>{frontmatter.title}</title>
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={frontmatter.ingress} />
+        <meta property="og:image" content={frontmatter.image} />
+      </Helmet>
       <article>
         <h1>{frontmatter.title}</h1>
         <section dangerouslySetInnerHTML={{ __html: html }} />
@@ -20,6 +27,8 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        ingress
+        image
       }
     }
   }
