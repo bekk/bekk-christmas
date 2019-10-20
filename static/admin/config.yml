@@ -11,6 +11,12 @@ collections:
     summary: '{{post_year}}/{{post_day}}: {{title}}'
     fields:
       - {
+          label: 'Calendar',
+          name: 'calendar',
+          widget: 'hidden',
+          default: 'javascript',
+        }
+      - {
           label: 'Year',
           name: 'post_year',
           widget: 'number',
@@ -54,6 +60,12 @@ collections:
     create: true
     summary: '{{post_year}}/{{post_day}}: {{title}}'
     fields:
+      - {
+          label: 'Calendar',
+          name: 'calendar',
+          widget: 'hidden',
+          default: 'react',
+        }
       - {
           label: 'Year',
           name: 'post_year',

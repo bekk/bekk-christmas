@@ -5,6 +5,21 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-netlify-cms`]
-  /* Your site config here */
+  plugins: [
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/post/javascript`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/post/react`
+      }
+    },
+    `gatsby-transformer-remark`
+    /* Your site config here */
+  ]
 };

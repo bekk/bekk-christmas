@@ -1,4 +1,5 @@
 ---
+calendar: react
 post_year: 2018
 post_day: 1
 title: Documentation with Docusaurus
@@ -22,25 +23,26 @@ Docusaurus is easily initialised using a script. It will set up all of the infra
 
 Ensure you have the latest [Node](https://nodejs.org/en/) and your favourite package manager ([npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com)) installed. Then create a project, if none exists, and change your directory to this project's root.
 
-Then all you have to do is to run the Docusaurus initialisation script. 
+Then all you have to do is to run the Docusaurus initialisation script.
 
 `$ npx docusaurus-init`
 
 After running the initialisation script you will have a runnable example website to use as your site's base.
 
 To run the example:
-1. In the root of your project, rename `docs-examples-from-docusaurus` to `docs`. 
-2. Change directory to the `website` folder. 
-3. Rename `blog-examples-from-docusaurus` to `blog`. 
+
+1. In the root of your project, rename `docs-examples-from-docusaurus` to `docs`.
+2. Change directory to the `website` folder.
+3. Rename `blog-examples-from-docusaurus` to `blog`.
 4. To start the local web-server run `npm start` from within the `website` folder.
 
 You will now have the example site loaded in your web browser at http://localhost:3000.
 
 ## Make it your own
 
-Out of the box the example features some built-in React components to personalize the home/root page of your website. The primary color is specified in `siteConfig.js` and is reflected various places across the website. 
+Out of the box the example features some built-in React components to personalize the home/root page of your website. The primary color is specified in `siteConfig.js` and is reflected various places across the website.
 
-You can customise your site with the config in `website/siteConfig.js` according to the comprehensive [siteConfig documentation](https://docusaurus.io/docs/en/site-config) (pun intended). The documentation markdown files are added to the `docs` folder. Similarly, you can add your blog posts in the `blog` folder. `sidebars.json` is where you specify the layout and content of the sidebar for your documentation using the `id` of markdown files. You can also create custom pages for your site. This is easily done with React in the `pages` folder and with static assets (like CSS and images) in the `static` folder.  
+You can customise your site with the config in `website/siteConfig.js` according to the comprehensive [siteConfig documentation](https://docusaurus.io/docs/en/site-config) (pun intended). The documentation markdown files are added to the `docs` folder. Similarly, you can add your blog posts in the `blog` folder. `sidebars.json` is where you specify the layout and content of the sidebar for your documentation using the `id` of markdown files. You can also create custom pages for your site. This is easily done with React in the `pages` folder and with static assets (like CSS and images) in the `static` folder.
 
 ## Meet Slash
 
