@@ -2,9 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-export default function Template({ data }) {
+const Template = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
   return (
     <main>
       <Helmet>
@@ -19,7 +20,7 @@ export default function Template({ data }) {
       </article>
     </main>
   );
-}
+};
 
 export const aboutPageQuery = graphql`
   query PostPage($id: String!) {
@@ -33,3 +34,5 @@ export const aboutPageQuery = graphql`
     }
   }
 `;
+
+export default Template;

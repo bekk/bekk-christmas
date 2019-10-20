@@ -1,116 +1,106 @@
 backend:
-  name: github
-  repo: bekk/bekk-christmas
+    name: github
+    repo: bekk/bekk-christmas
 media_folder: static/assets
 public_folder: assets
 collections:
-  - name: post_javascript
-    label: 'Post: JavaScript'
-    folder: post/javascript
-    create: true
-    summary: '{{post_year}}/{{post_day}}: {{title}}'
-    fields:
-      - {
-          label: 'Calendar',
-          name: 'calendar',
-          widget: 'hidden',
-          default: 'javascript',
-        }
-      - {
-          label: 'Year',
-          name: 'post_year',
-          widget: 'number',
-          default: 2019,
-          valueType: 'int',
-          min: 2018,
-          max: 2020,
-        }
-      - {
-          label: 'Day',
-          name: 'post_day',
-          widget: 'number',
-          default: 1,
-          valueType: 'int',
-          min: 1,
-          max: 24,
-        }
-      - { name: title, label: Title }
-      - { name: image, label: Image, widget: image }
-      - { name: body, label: Body, widget: markdown }
-      - name: links
-        label: 'Relevant links'
-        widget: list
-        fields:
+    - name: post_javascript
+      label: 'Post: JavaScript'
+      folder: post/javascript
+      create: true
+      summary: '{{post_year}}/{{post_day}}: {{title}}'
+      fields:
+          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'javascript' }
+          - {
+                label: 'Year',
+                name: 'post_year',
+                widget: 'number',
+                default: 2019,
+                valueType: 'int',
+                min: 2018,
+                max: 2020,
+            }
+          - {
+                label: 'Day',
+                name: 'post_day',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+                max: 24,
+            }
           - { name: title, label: Title }
-          - { name: url, label: Url }
-          - { name: body, label: Body }
-      - { name: ingress, label: Ingress }
-      - {
-          label: 'Post Author',
-          name: 'author',
-          widget: 'relation',
-          collection: 'authors',
-          searchFields: ['title'],
-          valueField: 'title',
-          displayFields: ['title'],
-        }
-  - name: post_react
-    label: 'Post: React'
-    folder: post/react
-    create: true
-    summary: '{{post_year}}/{{post_day}}: {{title}}'
-    fields:
-      - {
-          label: 'Calendar',
-          name: 'calendar',
-          widget: 'hidden',
-          default: 'react',
-        }
-      - {
-          label: 'Year',
-          name: 'post_year',
-          widget: 'number',
-          default: 2019,
-          valueType: 'int',
-          min: 2018,
-          max: 2020,
-        }
-      - {
-          label: 'Day',
-          name: 'post_day',
-          widget: 'number',
-          default: 1,
-          valueType: 'int',
-          min: 1,
-          max: 24,
-        }
-      - { name: title, label: Title }
-      - { name: image, label: Image, widget: image }
-      - { name: ingress, label: Ingress }
-      - { name: body, label: Body, widget: markdown }
-      - name: links
-        label: 'Relevant links'
-        widget: list
-        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: body, label: Body, widget: markdown }
+          - name: links
+            label: 'Relevant links'
+            widget: list
+            fields:
+                - { name: title, label: Title }
+                - { name: url, label: Url }
+                - { name: body, label: Body }
+          - { name: ingress, label: Ingress }
+          - {
+                label: 'Post Author',
+                name: 'author',
+                widget: 'relation',
+                collection: 'authors',
+                searchFields: ['title'],
+                valueField: 'title',
+                displayFields: ['title'],
+            }
+    - name: post_react
+      label: 'Post: React'
+      folder: post/react
+      create: true
+      summary: '{{post_year}}/{{post_day}}: {{title}}'
+      fields:
+          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'react' }
+          - {
+                label: 'Year',
+                name: 'post_year',
+                widget: 'number',
+                default: 2019,
+                valueType: 'int',
+                min: 2018,
+                max: 2020,
+            }
+          - {
+                label: 'Day',
+                name: 'post_day',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+                max: 24,
+            }
           - { name: title, label: Title }
-          - { name: url, label: Url }
-          - { name: body, label: Body }
-      - { name: ingress, label: Ingress }
-      - {
-          label: 'Post Author',
-          name: 'author',
-          widget: 'relation',
-          collection: 'authors',
-          searchFields: ['title'],
-          valueField: 'title',
-          displayFields: ['title'],
-        }
-  - name: authors
-    label: Authors
-    folder: authors
-    create: true
-    fields:
-      - { name: title, label: Name }
-      - { name: description, label: 'Short description' }
-      - { name: twitterHandle, label: 'Twitter handle' }
-      - { name: avatar, label: 'Image', widget: image }
+          - { name: image, label: Image, widget: image }
+          - { name: ingress, label: Ingress }
+          - { name: body, label: Body, widget: markdown }
+          - name: links
+            label: 'Relevant links'
+            widget: list
+            fields:
+                - { name: title, label: Title }
+                - { name: url, label: Url }
+                - { name: body, label: Body }
+          - { name: ingress, label: Ingress }
+          - {
+                label: 'Post Author',
+                name: 'author',
+                widget: 'relation',
+                collection: 'authors',
+                searchFields: ['title'],
+                valueField: 'title',
+                displayFields: ['title'],
+            }
+    - name: authors
+      label: Authors
+      folder: authors
+      create: true
+      fields:
+          - { name: title, label: Name }
+          - { name: description, label: 'Short description' }
+          - { name: twitterHandle, label: 'Twitter handle' }
+          - { name: avatar, label: 'Image', widget: image }
