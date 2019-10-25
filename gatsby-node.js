@@ -70,7 +70,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             });
             calendarSet.add(mapKey);
         } else if (isEnvCalendar && !calendarSet.has(mapKey)) {
-            let path = '';
+            let path = '/';
 
             if (post_year !== 2019) {
                 path = `/${post_year}`;
