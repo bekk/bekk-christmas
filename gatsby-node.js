@@ -4,6 +4,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions;
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
+    const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
 
     const result = await graphql(`
         {
@@ -28,6 +29,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     const calendarSet = new Set();
     const hasEnvCalendar = process.env.CALENDAR_ENV;
+
+    if (!hasEnvCalendar) {
+        createPage({
+            path: '/',
+            component: frontpageTemplate,
+        });
+    }
 
     result.data.allMarkdownRemark.nodes.forEach(node => {
         const { calendar, post_year, post_day } = node.frontmatter;
