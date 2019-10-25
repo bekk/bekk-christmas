@@ -26,29 +26,65 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         return;
     }
 
-    const calendarMap = new Map();
+    const calendarSet = new Set();
+    const hasEnvCalendar = process.env.CALENDAR_ENV;
 
     result.data.allMarkdownRemark.nodes.forEach(node => {
         const { calendar, post_year, post_day } = node.frontmatter;
 
-        const mapKey = `${calendar}${post_year}`;
-        if (!calendarMap.has(mapKey)) {
+        const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
+
+        if (isEnvCalendar) {
             createPage({
-                path: `/${calendar}`,
+                path: `/${post_year}/${post_day}`,
+                component: blogPostTemplate,
+                context: {
+                    id: node.id,
+                },
+            });
+        } else if (!hasEnvCalendar) {
+            createPage({
+                path: `/${calendar}/${post_year}/${post_day}`,
+                component: blogPostTemplate,
+                context: {
+                    id: node.id,
+                },
+            });
+        }
+
+        const mapKey = `${calendar}${post_year}`;
+        if (!hasEnvCalendar && !calendarSet.has(mapKey)) {
+            let path = `/${calendar}`;
+
+            if (post_year !== 2019) {
+                path = `/${calendar}/${post_year}`;
+            }
+
+            createPage({
+                path: path,
                 component: calendarTemplate,
                 context: {
                     year: post_year,
                     calendar: calendar,
                 },
             });
-        }
+            calendarSet.add(mapKey);
+        } else if (isEnvCalendar && !calendarSet.has(mapKey)) {
+            let path = '/';
 
-        createPage({
-            path: `/${calendar}/${post_year}/${post_day}`,
-            component: blogPostTemplate,
-            context: {
-                id: node.id,
-            },
-        });
+            if (post_year !== 2019) {
+                path = `/${post_year}`;
+            }
+
+            createPage({
+                path: path,
+                component: calendarTemplate,
+                context: {
+                    year: post_year,
+                    calendar: calendar,
+                },
+            });
+            calendarSet.add(mapKey);
+        }
     });
 };
