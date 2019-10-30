@@ -83,7 +83,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             // Create page for each calendar
             const mapKey = `${calendar}${post_year}`;
             if (!calendarSet.has(mapKey)) {
-                console.log(calendarPath);
                 // Only create page for each calendar once
                 createPage({
                     path: calendarPath,
