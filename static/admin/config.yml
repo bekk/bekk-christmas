@@ -39,16 +39,19 @@ collections:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
                 - { name: body, label: Body }
-          - { name: ingress, label: Ingress }
-          - {
-                label: 'Post Author',
-                name: 'author',
-                widget: 'relation',
-                collection: 'authors',
-                searchFields: ['title'],
-                valueField: 'title',
-                displayFields: ['title'],
-            }
+          - name: authors
+            label: 'Authors'
+            widget: list
+            field:
+                {
+                    label: 'Author',
+                    name: 'author',
+                    widget: 'relation',
+                    collection: 'authors',
+                    searchFields: ['title'],
+                    valueField: 'title',
+                    displayFields: ['title'],
+                }
     - name: post_react
       label: 'Post: React'
       folder: post/react
@@ -85,16 +88,19 @@ collections:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
                 - { name: body, label: Body }
-          - { name: ingress, label: Ingress }
-          - {
-                label: 'Post Author',
-                name: 'author',
-                widget: 'relation',
-                collection: 'authors',
-                searchFields: ['title'],
-                valueField: 'title',
-                displayFields: ['title'],
-            }
+          - name: authors
+            label: 'Authors'
+            widget: list
+            field:
+                {
+                    label: 'Author',
+                    name: 'author',
+                    widget: 'relation',
+                    collection: 'authors',
+                    searchFields: ['title'],
+                    valueField: 'title',
+                    displayFields: ['title'],
+                }
     - name: post_kotlin
       label: 'Post: Kotlin'
       folder: post/kotlin
@@ -131,16 +137,19 @@ collections:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
                 - { name: body, label: Body }
-          - { name: ingress, label: Ingress }
-          - {
-                label: 'Post Author',
-                name: 'author',
-                widget: 'relation',
-                collection: 'authors',
-                searchFields: ['title'],
-                valueField: 'title',
-                displayFields: ['title'],
-            }
+          - name: authors
+            label: 'Authors'
+            widget: list
+            field:
+                {
+                    label: 'Author',
+                    name: 'author',
+                    widget: 'relation',
+                    collection: 'authors',
+                    searchFields: ['title'],
+                    valueField: 'title',
+                    displayFields: ['title'],
+                }
     - name: authors
       label: Authors
       folder: authors
