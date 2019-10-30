@@ -37,7 +37,7 @@ const AuthorInfo = props => {
                 ))}
             </AvatarContainer>
             <AuthorText>
-                A {readingTime} written by <br />
+                A {readingTime} minute read written by <br />
                 {authors.map((author, index) => (
                     <Fragment key={author.title}>
                         <strong>{author.title}</strong>
