@@ -5,9 +5,9 @@ post_day: 1
 title: Mockk
 image: /assets/dscf5112.jpg
 ingress: Mockk is a test framework
-links: []
-author: Vegard Veiset
+authors: [Vegard Veiset]
 ---
+
 # HOHOHO
 
 hello

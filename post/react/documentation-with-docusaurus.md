@@ -5,9 +5,9 @@ post_day: 2
 title: Documentation with Docusaurus
 image: /assets/fagdag.jpg
 ingress: >-
-  Documenting your project can be a pain in the ass and is often neglected.
-  Docusaurus removes the pain of maintaining documentation.
-author: Svein Petter Gjøby
+    Documenting your project can be a pain in the ass and is often neglected.
+    Docusaurus removes the pain of maintaining documentation.
+authors: [Svein Petter Gjøby]
 ---
 
 # Docusaurus

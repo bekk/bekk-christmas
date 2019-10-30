@@ -5,9 +5,9 @@ post_day: 20
 title: D3 in action
 image: /assets/fagdag.jpg
 ingress: >-
-  D3 is a JavaScript library that's well suited to create data visualizations on
-  the web.
-author: Svein Petter Gjøby
+    D3 is a JavaScript library that's well suited to create data visualizations on
+    the web.
+authors: [Svein Petter Gjøby]
 ---
 
 [D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript library that's well suited to create data visualizations on the web. It brings data to life using HTML, SVGs and CSS. You can make everything from static graphs to interactive articles.
@@ -20,9 +20,9 @@ The core idea of D3 is to connect data with HTML and/or SVG. Let's say we have s
 
 ```js
 const data = [
-  { name: 'Ireland', pop: 6378 },
-  { name: 'Tanzania', pop: 3407 },
-  { name: 'Norway', pop: 5084 }
+    { name: 'Ireland', pop: 6378 },
+    { name: 'Tanzania', pop: 3407 },
+    { name: 'Norway', pop: 5084 },
 ];
 ```
 
@@ -30,9 +30,9 @@ Then we let D3 do its magic, and suddenly we have the SVG below.
 
 ```html
 <svg height="300" width="600">
-  <circle cx="100" cy="150" r="64" style="fill:green" />
-  <circle cx="220" cy="150" r="34" style="fill:orange" />
-  <circle cx="340" cy="150" r="51" style="fill:red" />
+    <circle cx="100" cy="150" r="64" style="fill:green" />
+    <circle cx="220" cy="150" r="34" style="fill:orange" />
+    <circle cx="340" cy="150" r="51" style="fill:red" />
 </svg>
 ```
 
@@ -50,9 +50,9 @@ Given this html and the same data as in the previous example.
 
 ```js
 const data = [
-  { name: 'Ireland', pop: 6378 },
-  { name: 'Tanzania', pop: 3407 },
-  { name: 'Norway', pop: 5084 }
+    { name: 'Ireland', pop: 6378 },
+    { name: 'Tanzania', pop: 3407 },
+    { name: 'Norway', pop: 5084 },
 ];
 ```
 
@@ -60,9 +60,9 @@ Then we use the `data` method of D3 to join each datum in our dataset to a `circ
 
 ```js
 let circles = d3
-  .select('#mySVG')
-  .selectAll('circle')
-  .data(data, d => d.name);
+    .select('#mySVG')
+    .selectAll('circle')
+    .data(data, d => d.name);
 ```
 
 Wait, what?! There are no `circle` elements in the SVG.
@@ -81,10 +81,10 @@ Then we use the `append` method to append a `circle` element for each of the dat
 
 ```js
 newItems
-  .append('circle') // Add a <circle />
-  .attr('cx', (d, i) => 50 + i * 100)
-  .attr('cy', 150)
-  .attr('r', (d, i) => d.pop / 100);
+    .append('circle') // Add a <circle />
+    .attr('cx', (d, i) => 50 + i * 100)
+    .attr('cy', 150)
+    .attr('r', (d, i) => d.pop / 100);
 ```
 
 Now we have modified the original html and it contains three circles that represent the population of each of the countries.

@@ -5,20 +5,21 @@ post_day: 5
 title: Why is this so hard?
 image: /assets/fagdag.jpg
 ingress: >-
-  I've lost count of the number of times I forgot to bind this. Why do we need
-  to bind this and how should we do it?
-author: Svein Petter Gjøby
+    I've lost count of the number of times I forgot to bind this. Why do we need
+    to bind this and how should we do it?
+authors: [Svein Petter Gjøby]
 ---
+
 # Why is this so hard?
 
-To better understand why we need to bind `this` in React, we should understand how `this` [works in JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md). Let's take a shot at it with the following snippet. 
+To better understand why we need to bind `this` in React, we should understand how `this` [works in JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md). Let's take a shot at it with the following snippet.
 
 ```javascript
 class Santa() {
   constructor() {
     this.catchphrase = "Ho ho ho ho!";
   }
-  
+
   greet() {
     return this.catchphrase;
   }
@@ -34,16 +35,15 @@ Awesome! That worked as expected, but will this?
 const santa = new Santa();
 const greet = santa.greet;
 console.log(greet()); // Uncaught TypeError: Cannot read property 'catchphrase' of undefined
-
 ```
 
 Wait, what!? We got a `TypeError` saying `catchphrase` isn't a property of `undefined`. Why is that?
 
 In JavaScript, `this` is determined when a function is called, not when the function is defined. Moreover, `this` refers to the context of the function.
 
-In the above example we create a new variable `greet`. `greet` is a top level variable so its context is `undefined`, and `undefined` does not have a property named `catchphrase`. Unlike `santa.greet` which has `santa` as its context, due to implicit binding. 
+In the above example we create a new variable `greet`. `greet` is a top level variable so its context is `undefined`, and `undefined` does not have a property named `catchphrase`. Unlike `santa.greet` which has `santa` as its context, due to implicit binding.
 
-To better understand implicit binding, consider this example. 
+To better understand implicit binding, consider this example.
 
 ```javascript
 const santa = new Santa();
@@ -61,7 +61,7 @@ Bazinga! This works because the `greet` function is called in the context of `sh
 
 ## Binding it ourselves
 
-Sometimes we might want to specify the context of a function. This can be achieved with the `bind` function, and is called explicit binding. 
+Sometimes we might want to specify the context of a function. This can be achieved with the `bind` function, and is called explicit binding.
 
 ```javascript
 const santa = new Santa();
@@ -85,84 +85,61 @@ Let's transform our example into a React component.
 
 ```jsx
 class Santa extends React.Component {
-  constructor(props){
-    super(props);
-    
-    this.state = {
-      catchphrase: "Ho ho ho ho!"
-    }
-  }
+    constructor(props) {
+        super(props);
 
-  render() {
-    return (
-      <button 
-        onClick={this.sayCatchphrase}
-      >
-        Say catchphrase
-      </button>
-    );
-  }
-  
-  sayCatchphrase() {
-    console.log(this.state.catchphrase);
-  }
+        this.state = {
+            catchphrase: 'Ho ho ho ho!',
+        };
+    }
+
+    render() {
+        return <button onClick={this.sayCatchphrase}>Say catchphrase</button>;
+    }
+
+    sayCatchphrase() {
+        console.log(this.state.catchphrase);
+    }
 }
 ```
 
 Clicking the button should ideally print `Ho ho ho ho!` to the console. However, it does **not** in the above example.
 
-In the `sayCatchphrase` function `this` would be `undefined`. This is because the event handler function loses its implicitl binding. As mentioned previously, the context is determined when the function is called. When the event occurs and the function is invoked, the context falls back to the default binding and is set to `undefined`. 
+In the `sayCatchphrase` function `this` would be `undefined`. This is because the event handler function loses its implicitl binding. As mentioned previously, the context is determined when the function is called. When the event occurs and the function is invoked, the context falls back to the default binding and is set to `undefined`.
 
-To fix this we have a couple of options. We could bind the function ourselves: 
+To fix this we have a couple of options. We could bind the function ourselves:
 
 ```jsx
-<button 
-  onClick={this.sayCatchphrase.bind(this)}
->
-  Say catchphrase
-</button>
-
+<button onClick={this.sayCatchphrase.bind(this)}>Say catchphrase</button>
 ```
 
 > It is considered best practice to [avoid binding your functions in the render method.](https://medium.freecodecamp.org/why-arrow-functions-and-bind-in-reacts-render-are-problematic-f1c08b060e36)
 
-
 We can use an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). This works because `this` is bound [lexically](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md#lexical-this). This means that it uses the context of the `render` method as its context.
 
 ```jsx
-<button 
-  onClick={() => this.sayCatchphrase()}
->
-  Say catchphrase
-</button>
+<button onClick={() => this.sayCatchphrase()}>Say catchphrase</button>
 ```
 
-Or we can use the [public class field syntax](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties), which is still experimental and a babel plugin is required to use it. 
-
+Or we can use the [public class field syntax](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties), which is still experimental and a babel plugin is required to use it.
 
 ```jsx
 class Santa extends React.Component {
-  constructor(props){
-    super(props);
-    
-    this.state = {
-      catchphrase: "Ho ho ho ho!"
-    }
-  }
+    constructor(props) {
+        super(props);
 
-  render() {
-    return (
-      <button 
-        onClick={this.sayCatchphrase}
-      >
-        Say catchphrase
-      </button>
-    );
-  }
-  
-  sayCatchphrase = () => {
-    console.log(this.state.catchphrase);
-  }
+        this.state = {
+            catchphrase: 'Ho ho ho ho!',
+        };
+    }
+
+    render() {
+        return <button onClick={this.sayCatchphrase}>Say catchphrase</button>;
+    }
+
+    sayCatchphrase = () => {
+        console.log(this.state.catchphrase);
+    };
 }
 ```
 
