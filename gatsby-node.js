@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
 
-    const { createPage } = actions;
+    const { createPage, createRedirect } = actions;
 
     const result = await graphql(`
         {
@@ -28,7 +28,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         return;
     }
 
-    const calendarSet = new Set();
     const envCalendar = process.env.CALENDAR_ENV;
 
     // Frontpage for bekk.christmas
@@ -49,6 +48,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendar: envCalendar,
             },
         });
+
+        let latestYear = 0;
+        let latestDay = 0;
+
+        const calendarSet = new Set();
         calendarSet.add(`${envCalendar}${2019}`);
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
@@ -64,9 +68,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
             // Path to each calendar
             let calendarPath = '';
-            if (!isEnvCalendar) {
-                calendarPath = `/${calendar}`;
-            }
+
             if (post_year !== 2019) {
                 calendarPath += `/${post_year}`;
             }
@@ -94,6 +96,31 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 });
                 calendarSet.add(mapKey);
             }
+
+            if (post_year > latestYear) {
+                latestYear = post_year;
+            }
+
+            if (post_year >= latestYear && post_day > latestDay) {
+                latestDay = post_day;
+                latestId = node.id;
+            }
+        });
+
+        let redirectTo = '';
+
+        if (latestYear !== 2019) {
+            redirectTo += `/${latestYear}`;
+        }
+
+        redirectTo += `/${latestDay}`;
+
+        // Create page for each post
+        createRedirect({
+            fromPath: `/latest`,
+            toPath: redirectTo,
+            redirectInBrowser: true,
+            isPermanent: true,
         });
     }
 };
