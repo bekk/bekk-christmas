@@ -17,7 +17,6 @@ const createLink = (calendar, year, day) => {
         link += `/${year}`;
     }
     link += `/${day}`;
-    console.log(link);
     return link;
 };
 
@@ -56,8 +55,6 @@ const Template = ({ data }) => {
             day: node.frontmatter.post_day,
         };
     });
-
-    console.log(windows);
 
     return (
         <main>

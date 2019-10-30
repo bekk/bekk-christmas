@@ -12,9 +12,8 @@ const MaxWidth = styled.article`
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
-    const { frontmatter, html, fields } = markdownRemark;
+    const { frontmatter, html } = markdownRemark;
 
-    console.log(fields.enrichedAuthors);
     return (
         <main>
             <GlobalStyles />
