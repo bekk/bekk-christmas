@@ -29,60 +29,74 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     const calendarSet = new Set();
-    const hasEnvCalendar = process.env.CALENDAR_ENV;
+    const envCalendar = process.env.CALENDAR_ENV;
 
     // Frontpage for bekk.christmas
-    if (!hasEnvCalendar) {
+    if (!envCalendar) {
         createPage({
             path: '/',
             component: frontpageTemplate,
         });
     }
 
-    const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
-    posts.forEach(node => {
-        const { calendar, post_year, post_day } = node.frontmatter;
-
-        const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
-
-        if (hasEnvCalendar && !isEnvCalendar) {
-            // Filter posts from other calendars
-            return;
-        }
-
-        // Path to each calendar
-        let calendarPath = '/';
-        if (!isEnvCalendar) {
-            calendarPath = `/${calendar}`;
-        }
-        if (post_year !== 2019) {
-            calendarPath += `/${post_year}`;
-        }
-
-        // Create page for each post
+    if (envCalendar) {
+        // Create frontpage of current calendar
         createPage({
-            path: `${calendarPath}/${post_day}`,
-            component: blogPostTemplate,
+            path: '/',
+            component: calendarTemplate,
             context: {
-                id: node.id,
+                year: 2019,
+                calendar: envCalendar,
             },
         });
+        calendarSet.add(`${envCalendar}${2019}`);
 
-        // Create page for each calendar
-        const mapKey = `${calendar}${post_year}`;
-        if (!calendarSet.has(mapKey)) {
-            // Only create page for each calendar once
+        const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
+        posts.forEach(node => {
+            const { calendar, post_year, post_day } = node.frontmatter;
+
+            const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
+
+            if (envCalendar && !isEnvCalendar) {
+                // Filter posts from other calendars
+                return;
+            }
+
+            // Path to each calendar
+            let calendarPath = '';
+            if (!isEnvCalendar) {
+                calendarPath = `/${calendar}`;
+            }
+            if (post_year !== 2019) {
+                calendarPath += `/${post_year}`;
+            }
+
+            // Create page for each post
             createPage({
-                path: calendarPath,
-                component: calendarTemplate,
+                path: `${calendarPath}/${post_day}`,
+                component: blogPostTemplate,
                 context: {
-                    year: post_year,
-                    calendar: calendar,
+                    id: node.id,
                 },
             });
-            calendarSet.add(mapKey);
-        }
-    });
+
+            // Create page for each calendar
+            const mapKey = `${calendar}${post_year}`;
+            if (!calendarSet.has(mapKey)) {
+                console.log(calendarPath);
+                // Only create page for each calendar once
+                createPage({
+                    path: calendarPath,
+                    component: calendarTemplate,
+                    context: {
+                        year: post_year,
+                        calendar: calendar,
+                    },
+                });
+                calendarSet.add(mapKey);
+            }
+        });
+    }
 };
 
 // Run after all nodes have been created

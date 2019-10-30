@@ -1,6 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+
+const createLink = (year, day) => {
+    if (!year || !day) {
+        return '';
+    }
+
+    let link = '';
+
+    if (year !== 2019) {
+        link += `/${year}`;
+    }
+    link += `/${day}`;
+    return link;
+};
 
 const Calendar = styled.article`
     max-width: 880px;
@@ -25,24 +39,28 @@ const Template = ({ data }) => {
 
     const windows = new Array(24).fill({
         title: '',
+        year: '',
         day: '',
     });
     nodes.forEach(node => {
         windows[node.frontmatter.post_day - 1] = {
             title: node.frontmatter.title,
+            year: node.frontmatter.post_year,
             day: node.frontmatter.post_day,
         };
     });
+
+    console.log(windows);
 
     return (
         <main>
             <Calendar>
                 {windows.map((window, index) => (
-                    <a href={`./${window.day}`}>
+                    <Link to={createLink(window.year, window.day)}>
                         <Window>
                             <h1>{`${index + 1}: ${window.title}`}</h1>
                         </Window>
-                    </a>
+                    </Link>
                 ))}
             </Calendar>
         </main>

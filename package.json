@@ -11,6 +11,7 @@
         "develop": "gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "npm run develop",
+        "start:javascript": "CALENDAR_ENV=javascript gatsby develop",
         "serve": "gatsby serve",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
     },
