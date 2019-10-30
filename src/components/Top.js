@@ -17,9 +17,22 @@ const Text = styled.h1`
     font-size: 24px;
 `;
 
-export default () => (
+const mapCalendarToName = calendar => {
+    switch (calendar) {
+        case 'javascript':
+            return 'JavaScript Christmas';
+        case 'kotlin':
+            return 'Kotlin Christmas';
+        case 'react':
+            return 'React Christmas';
+        default:
+            return 'Bekk Christmas';
+    }
+};
+
+export default ({ calendar }) => (
     <Container>
         <Tre />
-        <Text>JavaScript Christmas</Text>
+        <Text>{mapCalendarToName(calendar)}</Text>
     </Container>
 );

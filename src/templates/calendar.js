@@ -21,7 +21,7 @@ const createLink = (year, day) => {
     return link;
 };
 
-const Template = ({ data }) => {
+const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
 
@@ -40,7 +40,7 @@ const Template = ({ data }) => {
 
     return (
         <main>
-            <Top />
+            <Top calendar={pageContext.calendar} />
             <Calendar>
                 {windows.map((window, index) => (
                     <Link
