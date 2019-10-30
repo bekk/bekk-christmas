@@ -24,6 +24,12 @@ const Template = ({ data }) => {
                 <meta property="og:image" content={frontmatter.image} />
             </Helmet>
             <MaxWidth>
+                {fields && fields.enrichedAuthors && (
+                    <AuthorInfo
+                        authors={fields && fields.enrichedAuthors}
+                        readingTime={timeToRead}
+                    />
+                )}
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
             </MaxWidth>
         </Layout>
@@ -34,6 +40,7 @@ export const aboutPageQuery = graphql`
     query PostPage($id: String!) {
         markdownRemark(id: { eq: $id }) {
             html
+            timeToRead
             fields {
                 enrichedAuthors {
                     avatar
