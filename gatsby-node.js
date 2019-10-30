@@ -1,10 +1,10 @@
 const path = require(`path`);
+const blogPostTemplate = path.resolve(`src/templates/post.js`);
+const calendarTemplate = path.resolve(`src/templates/calendar.js`);
+const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions;
-    const blogPostTemplate = path.resolve(`src/templates/post.js`);
-    const calendarTemplate = path.resolve(`src/templates/calendar.js`);
-    const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
 
     const result = await graphql(`
         {
@@ -30,6 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const calendarSet = new Set();
     const hasEnvCalendar = process.env.CALENDAR_ENV;
 
+    // Frontpage for bekk.christmas
     if (!hasEnvCalendar) {
         createPage({
             path: '/',
@@ -41,58 +42,48 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         const { calendar, post_year, post_day } = node.frontmatter;
 
         const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
+        const startOfPath = isEnvCalendar ? '/' : `/${calendar}`;
 
-        if (isEnvCalendar) {
-            createPage({
-                path: `/${post_year}/${post_day}`,
-                component: blogPostTemplate,
-                context: {
-                    id: node.id,
-                },
-            });
-        } else if (!hasEnvCalendar) {
-            createPage({
-                path: `/${calendar}/${post_year}/${post_day}`,
-                component: blogPostTemplate,
-                context: {
-                    id: node.id,
-                },
-            });
-        }
+        createPost(createPage, startOfPath, post_year, post_day, node.id);
 
         const mapKey = `${calendar}${post_year}`;
-        if (!hasEnvCalendar && !calendarSet.has(mapKey)) {
-            let path = `/${calendar}`;
 
-            if (post_year !== 2019) {
-                path = `/${calendar}/${post_year}`;
-            }
-
-            createPage({
-                path: path,
-                component: calendarTemplate,
-                context: {
-                    year: post_year,
-                    calendar: calendar,
-                },
-            });
-            calendarSet.add(mapKey);
-        } else if (isEnvCalendar && !calendarSet.has(mapKey)) {
-            let path = '/';
-
-            if (post_year !== 2019) {
-                path = `/${post_year}`;
-            }
-
-            createPage({
-                path: path,
-                component: calendarTemplate,
-                context: {
-                    year: post_year,
-                    calendar: calendar,
-                },
-            });
+        if (!calendarSet.has(mapKey)) {
+            createCalendar(createPage, startOfPath, calendar, post_year);
             calendarSet.add(mapKey);
         }
+    });
+};
+
+const createPost = (createPage, startOfPath, year, day, id) => {
+    let path = startOfPath;
+
+    if (year !== 2019) {
+        path += `/${year}`;
+    }
+
+    createPage({
+        path: `${path}/${day}`,
+        component: blogPostTemplate,
+        context: {
+            id: id,
+        },
+    });
+};
+
+const createCalendar = (createPage, startOfPath, calendar, year) => {
+    let path = startOfPath;
+
+    if (year !== 2019) {
+        path += `/${year}`;
+    }
+
+    createPage({
+        path: path,
+        component: calendarTemplate,
+        context: {
+            year: year,
+            calendar: calendar,
+        },
     });
 };
