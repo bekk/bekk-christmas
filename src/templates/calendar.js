@@ -1,6 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
+import Tre from '../components/Tre';
+import Top from '../components/Top';
+import Ingress from '../components/Ingress';
+import Window from '../components/Window';
+import Calendar from '../components/Calendar';
+import Number from '../components/Number';
 
 const createLink = (year, day) => {
     if (!year || !day) {
@@ -8,30 +13,13 @@ const createLink = (year, day) => {
     }
 
     let link = '';
-
     if (year !== 2019) {
         link += `/${year}`;
     }
     link += `/${day}`;
+
     return link;
 };
-
-const Calendar = styled.article`
-    max-width: 880px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-`;
-
-const Window = styled.section`
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    background: red;
-    color: white;
-`;
 
 const Template = ({ data }) => {
     const { allMarkdownRemark } = data;
@@ -50,16 +38,20 @@ const Template = ({ data }) => {
         };
     });
 
-    console.log(windows);
-
     return (
         <main>
+            <Top />
             <Calendar>
                 {windows.map((window, index) => (
-                    <Link to={createLink(window.year, window.day)}>
+                    <Link
+                        to={createLink(window.year, window.day)}
+                        style={{ textDecoration: 'none' }}
+                    >
                         <Window>
-                            <h1>{`${index + 1}: ${window.title}`}</h1>
+                            {!window.title && <Number>{`${index + 1}`}</Number>}
+                            {window.title && <Tre />}
                         </Window>
+                        {window.title && <Ingress>{window.title}</Ingress>}
                     </Link>
                 ))}
             </Calendar>
