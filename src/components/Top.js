@@ -25,6 +25,8 @@ const mapCalendarToName = calendar => {
             return 'Kotlin Christmas';
         case 'react':
             return 'React Christmas';
+        case 'opensource':
+            return 'Open source Christmas';
         default:
             return 'Bekk Christmas';
     }
