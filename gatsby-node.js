@@ -103,7 +103,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
             if (post_year >= latestYear && post_day > latestDay) {
                 latestDay = post_day;
-                latestId = node.id;
             }
         });
 
@@ -120,7 +119,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             fromPath: `/latest`,
             toPath: redirectTo,
             redirectInBrowser: true,
-            isPermanent: true,
+            isPermanent: false,
         });
     }
 };
