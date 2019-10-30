@@ -37,9 +37,18 @@ module.exports = {
                 path: `${__dirname}/post/opensource`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/static/assets`,
+            },
+        },
         `gatsby-transformer-remark`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         /* Your site config here */
     ],
 };

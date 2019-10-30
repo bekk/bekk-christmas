@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const Container = styled.div`
     text-align: center;
@@ -26,15 +27,43 @@ const Avatar = styled.div`
 
 const AuthorInfo = props => {
     const { authors, readingTime } = props;
+
+    const data = useStaticQuery(graphql`
+        query {
+            images: allFile {
+                edges {
+                    node {
+                        relativePath
+                        name
+                        childImageSharp {
+                            fluid(maxWidth: 600) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    console.log(data);
+
     if (!authors || !authors.length) {
         return null;
     }
     return (
         <Container>
             <AvatarContainer>
-                {authors.map(author => (
-                    <Avatar key={author.title} src={author.avatar} alt={author.title} />
-                ))}
+                {authors.map(author => {
+                    let imgSrc = author.avatar;
+                    data.images.edges.forEach(image => {
+                        if (author.avatar.includes(image.node.relativePath)) {
+                            imgSrc = image.node.childImageSharp.fluid.src;
+                        }
+                    });
+
+                    return <Avatar key={author.title} src={imgSrc} alt={author.title} />;
+                })}
             </AvatarContainer>
             <AuthorText>
                 A {readingTime} written by <br />
