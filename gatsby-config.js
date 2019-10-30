@@ -6,7 +6,7 @@
 
 module.exports = {
     plugins: [
-        `gatsby-plugin-netlify-cms`,
+        ...(process.env.CALENDAR_ENV ? [] : [`gatsby-plugin-netlify-cms`]),
         {
             resolve: `gatsby-source-filesystem`,
             options: {
