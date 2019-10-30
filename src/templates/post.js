@@ -50,6 +50,7 @@ export const aboutPageQuery = graphql`
                 }
             }
             frontmatter {
+                calendar
                 title
                 ingress
                 image
