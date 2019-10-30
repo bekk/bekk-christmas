@@ -31,6 +31,12 @@ module.exports = {
                 path: `${__dirname}/post/kotlin`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/post/opensources`,
+            },
+        },
         `gatsby-transformer-remark`,
         `gatsby-plugin-react-helmet`,
         /* Your site config here */
