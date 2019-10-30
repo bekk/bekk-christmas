@@ -84,3 +84,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
     });
 };
+
+// Run after all nodes have been created
+exports.sourceNodes = ({ actions, getNodes, getNode }) => {
+    const { createNodeField } = actions;
+
+    connectAuthorsToPosts(getNode, getNodes, createNodeField);
+};
+
+const connectAuthorsToPosts = (getNode, getNodes, createNodeField) => {
+    // Get all post nodes
+    const postNodes = getNodes().filter(
+        node => node.internal.type === 'MarkdownRemark' && node.frontmatter.calendar
+    );
+
+    // Get all author nodes
+    const authorNodes = getNodes().filter(
+        node => node.internal.type === 'MarkdownRemark' && !node.frontmatter.calendar
+    );
+
+    // Add author information to each post
+    postNodes.forEach(post => {
+        const { authors = [] } = post.frontmatter;
+
+        const enrichedAuthors = authors.map(author => {
+            const match = authorNodes.find(node => author === node.frontmatter.title);
+            const { title, description, twitterHandle, avatar } = match.frontmatter;
+
+            return {
+                title,
+                description,
+                twitterHandle,
+                avatar,
+            };
+        });
+
+        if (enrichedAuthors) {
+            createNodeField({
+                node: getNode(post.id),
+                name: 'enrichedAuthors',
+                value: enrichedAuthors,
+            });
+        }
+    });
+};
