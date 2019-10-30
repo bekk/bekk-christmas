@@ -6,6 +6,7 @@ import Ingress from '../components/Ingress';
 import Window from '../components/Window';
 import Calendar from '../components/Calendar';
 import Number from '../components/Number';
+import Layout from '../components/Layout';
 
 const createLink = (year, day) => {
     if (!year || !day) {
@@ -39,7 +40,7 @@ const Template = ({ data, pageContext }) => {
     });
 
     return (
-        <main>
+        <Layout>
             <Top calendar={pageContext.calendar} />
             <Calendar>
                 {windows.map((window, index) => (
@@ -56,7 +57,7 @@ const Template = ({ data, pageContext }) => {
                     </Link>
                 ))}
             </Calendar>
-        </main>
+        </Layout>
     );
 };
 

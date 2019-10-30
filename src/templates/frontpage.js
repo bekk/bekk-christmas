@@ -1,12 +1,13 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const Template = () => {
     return (
-        <main>
+        <Layout>
             <article>
                 <h1>Ho ho ho world!</h1>
             </article>
-        </main>
+        </Layout>
     );
 };
 

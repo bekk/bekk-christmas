@@ -18,6 +18,7 @@
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
     },
     "dependencies": {
+        "@bekk/storybook": "^2.4.7",
         "babel-plugin-styled-components": "^1.10.6",
         "gatsby": "^2.16.1",
         "gatsby-plugin-netlify-cms": "^4.1.25",

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import ArticleBody from '../components/ArticleBody';
-import GlobalStyles from '../components/GlobalStyles';
+import Layout from '../components/Layout';
 
 const MaxWidth = styled.article`
     max-width: 700px;
@@ -15,8 +15,7 @@ const Template = ({ data }) => {
     const { frontmatter, html } = markdownRemark;
 
     return (
-        <main>
-            <GlobalStyles />
+        <Layout>
             <Helmet>
                 <title>{frontmatter.title}</title>
                 <meta property="og:title" content={frontmatter.title} />
@@ -27,7 +26,7 @@ const Template = ({ data }) => {
                 <h1>{frontmatter.title}</h1>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
             </MaxWidth>
-        </main>
+        </Layout>
     );
 };
 
