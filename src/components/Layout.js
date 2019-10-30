@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import GlobalStyles from './GlobalStyles';
+import Top from './Top';
 
 const Container = styled.div`
     display: flex;
@@ -16,6 +17,7 @@ const Layout = props => {
     return (
         <Container>
             <GlobalStyles />
+            <Top calendar={props.calendar} />
             <MainContent>{props.children}</MainContent>
         </Container>
     );

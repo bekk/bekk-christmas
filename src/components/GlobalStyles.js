@@ -6,7 +6,7 @@ import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
 const GlobalStyles = createGlobalStyle`
   ${normalize}
-  
+
   html {
     box-sizing: border-box;
   }
@@ -26,6 +26,10 @@ const GlobalStyles = createGlobalStyle`
   h3 {
     line-height: 1.15;
     font-family: NewZaldBook;
+  }
+
+  img {
+    max-width: 100%;
   }
 `;
 

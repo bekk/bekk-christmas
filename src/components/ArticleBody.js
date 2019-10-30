@@ -31,14 +31,8 @@ const ArticleBody = styled.article`
     h6 {
         font-size: 34px;
     }
-    p {
-        font-size: 21px;
-        line-height: 1.58;
-    }
     p code {
         background-color: rgba(0, 0, 0, 0.05);
-        font-family: ${fonts.monospaceFont};
-        font-size: 16px;
         padding: 3px 4px;
         margin: 0 2px;
     }

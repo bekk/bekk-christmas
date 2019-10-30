@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
+import AuthorInfo from '../components/Author';
 
 const MaxWidth = styled.article`
     max-width: 700px;
@@ -12,10 +13,10 @@ const MaxWidth = styled.article`
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
-    const { frontmatter, html } = markdownRemark;
+    const { frontmatter, html, timeToRead, fields } = markdownRemark;
 
     return (
-        <Layout>
+        <Layout calendar={frontmatter.calendar}>
             <Helmet>
                 <title>{frontmatter.title}</title>
                 <meta property="og:title" content={frontmatter.title} />
@@ -23,7 +24,6 @@ const Template = ({ data }) => {
                 <meta property="og:image" content={frontmatter.image} />
             </Helmet>
             <MaxWidth>
-                <h1>{frontmatter.title}</h1>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
             </MaxWidth>
         </Layout>

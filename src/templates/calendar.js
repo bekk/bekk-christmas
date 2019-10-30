@@ -40,8 +40,7 @@ const Template = ({ data, pageContext }) => {
     });
 
     return (
-        <Layout>
-            <Top calendar={pageContext.calendar} />
+        <Layout calendar={pageContext.calendar}>
             <Calendar>
                 {windows.map((window, index) => (
                     <Link
