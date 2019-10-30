@@ -10,6 +10,12 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                path: `${__dirname}/authors`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/post/javascript`,
             },
         },

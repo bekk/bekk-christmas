@@ -38,7 +38,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         });
     }
 
-    result.data.allMarkdownRemark.nodes.forEach(node => {
+    const posts = result.data.allMarkdownRemark.nodes.filter(node => node.calendar);
+    posts.forEach(node => {
         const { calendar, post_year, post_day } = node.frontmatter;
 
         const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
