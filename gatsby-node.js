@@ -1,9 +1,10 @@
 const path = require(`path`);
-const blogPostTemplate = path.resolve(`src/templates/post.js`);
-const calendarTemplate = path.resolve(`src/templates/calendar.js`);
-const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
+    const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
+    const blogPostTemplate = path.resolve(`src/templates/post.js`);
+    const calendarTemplate = path.resolve(`src/templates/calendar.js`);
+
     const { createPage } = actions;
 
     const result = await graphql(`
@@ -38,53 +39,48 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         });
     }
 
-    const posts = result.data.allMarkdownRemark.nodes.filter(node => node.calendar);
+    const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
     posts.forEach(node => {
         const { calendar, post_year, post_day } = node.frontmatter;
 
         const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
-        const startOfPath = isEnvCalendar ? '/' : `/${calendar}`;
 
-        createPost(createPage, startOfPath, post_year, post_day, node.id);
+        if (hasEnvCalendar && !isEnvCalendar) {
+            // Filter posts from other calendars
+            return;
+        }
 
+        // Path to each calendar
+        let calendarPath = '/';
+        if (!isEnvCalendar) {
+            calendarPath = `/${calendar}`;
+        }
+        if (post_year !== 2019) {
+            calendarPath += `/${post_year}`;
+        }
+
+        // Create page for each post
+        createPage({
+            path: `${calendarPath}/${post_day}`,
+            component: blogPostTemplate,
+            context: {
+                id: node.id,
+            },
+        });
+
+        // Create page for each calendar
         const mapKey = `${calendar}${post_year}`;
-
         if (!calendarSet.has(mapKey)) {
-            createCalendar(createPage, startOfPath, calendar, post_year);
+            // Only create page for each calendar once
+            createPage({
+                path: calendarPath,
+                component: calendarTemplate,
+                context: {
+                    year: post_year,
+                    calendar: calendar,
+                },
+            });
             calendarSet.add(mapKey);
         }
-    });
-};
-
-const createPost = (createPage, startOfPath, year, day, id) => {
-    let path = startOfPath;
-
-    if (year !== 2019) {
-        path += `/${year}`;
-    }
-
-    createPage({
-        path: `${path}/${day}`,
-        component: blogPostTemplate,
-        context: {
-            id: id,
-        },
-    });
-};
-
-const createCalendar = (createPage, startOfPath, calendar, year) => {
-    let path = startOfPath;
-
-    if (year !== 2019) {
-        path += `/${year}`;
-    }
-
-    createPage({
-        path: path,
-        component: calendarTemplate,
-        context: {
-            year: year,
-            calendar: calendar,
-        },
     });
 };
