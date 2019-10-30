@@ -25,8 +25,15 @@ export const aboutPageQuery = graphql`
             filter: { frontmatter: { calendar: { eq: $calendar }, post_year: { eq: $year } } }
         ) {
             nodes {
+                fields {
+                    enrichedAuthors {
+                        avatar
+                        description
+                        title
+                        twitterHandle
+                    }
+                }
                 frontmatter {
-                    author
                     calendar
                     image
                     post_year

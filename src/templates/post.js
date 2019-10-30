@@ -12,8 +12,9 @@ const MaxWidth = styled.article`
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
-    const { frontmatter, html } = markdownRemark;
+    const { frontmatter, html, fields } = markdownRemark;
 
+    console.log(fields.enrichedAuthors);
     return (
         <main>
             <GlobalStyles />
@@ -35,6 +36,14 @@ export const aboutPageQuery = graphql`
     query PostPage($id: String!) {
         markdownRemark(id: { eq: $id }) {
             html
+            fields {
+                enrichedAuthors {
+                    avatar
+                    description
+                    title
+                    twitterHandle
+                }
+            }
             frontmatter {
                 title
                 ingress
