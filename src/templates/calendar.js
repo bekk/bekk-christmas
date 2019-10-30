@@ -45,6 +45,7 @@ const Template = ({ data, pageContext }) => {
                 {windows.map((window, index) => (
                     <Link
                         to={createLink(window.year, window.day)}
+                        replace={false}
                         style={{ textDecoration: 'none' }}
                     >
                         <Window>
