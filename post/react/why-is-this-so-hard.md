@@ -1,13 +1,14 @@
 ---
 calendar: react
 post_year: 2018
-post_day: 5
+post_day: 1
 title: Why is this so hard?
 image: /assets/fagdag.jpg
 ingress: >-
-    I've lost count of the number of times I forgot to bind this. Why do we need
-    to bind this and how should we do it?
-authors: [Svein Petter Gjøby]
+  I've lost count of the number of times I forgot to bind this. Why do we need
+  to bind this and how should we do it?
+authors:
+  - Svein Petter Gjøby
 ---
 
 # Why is this so hard?
