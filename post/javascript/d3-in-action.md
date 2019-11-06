@@ -1,7 +1,7 @@
 ---
 calendar: javascript
 post_year: 2018
-post_day: 20
+post_day: 19
 title: D3 in action
 image: /assets/fagdag.jpg
 authors:
