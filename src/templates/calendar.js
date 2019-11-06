@@ -1,22 +1,19 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Tre from '../components/Tre';
-import Top from '../components/Top';
 import Ingress from '../components/Ingress';
 import Window from '../components/Window';
 import Calendar from '../components/Calendar';
 import Number from '../components/Number';
 import Layout from '../components/Layout';
 
-const createLink = (year, day) => {
-    if (!year || !day) {
+const createLink = (path, day) => {
+    if (!day) {
         return '';
     }
 
-    let link = '';
-    if (year !== 2019) {
-        link += `/${year}`;
-    }
+    let link = path;
+
     link += `/${day}`;
 
     return link;
@@ -44,7 +41,7 @@ const Template = ({ data, pageContext }) => {
             <Calendar>
                 {windows.map((window, index) => (
                     <Link
-                        to={createLink(window.year, window.day)}
+                        to={createLink(pageContext.startOfLink, window.day)}
                         replace={false}
                         style={{ textDecoration: 'none' }}
                     >
