@@ -29,9 +29,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     const envCalendar = process.env.CALENDAR_ENV;
+    const isPreview = envCalendar === 'preview';
 
     // Frontpage for bekk.christmas
-    if (!envCalendar) {
+    if (!envCalendar || isPreview) {
         createPage({
             path: '/',
             component: frontpageTemplate,
@@ -40,34 +41,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     if (envCalendar) {
         // Create frontpage of current calendar
-        createPage({
-            path: '/',
-            component: calendarTemplate,
-            context: {
-                year: 2019,
-                calendar: envCalendar,
-            },
-        });
+        const calendarSet = new Set();
+
+        if (!isPreview) {
+            createPage({
+                path: '/',
+                component: calendarTemplate,
+                context: {
+                    year: 2019,
+                    calendar: envCalendar,
+                    startOfLink: '',
+                },
+            });
+            calendarSet.add(`${envCalendar}${2019}`);
+        }
 
         let latestYear = 0;
         let latestDay = 0;
-
-        const calendarSet = new Set();
-        calendarSet.add(`${envCalendar}${2019}`);
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
         posts.forEach(node => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
-            const isEnvCalendar = process.env.CALENDAR_ENV === calendar;
+            const showCalendar = envCalendar === calendar || isPreview;
 
-            if (envCalendar && !isEnvCalendar) {
+            if (envCalendar && !showCalendar) {
                 // Filter posts from other calendars
                 return;
             }
 
             // Path to each calendar
             let calendarPath = '';
+
+            if (isPreview) {
+                calendarPath = `/${calendar}`;
+            }
 
             if (post_year !== 2019) {
                 calendarPath += `/${post_year}`;
@@ -92,6 +100,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     context: {
                         year: post_year,
                         calendar: calendar,
+                        startOfLink: calendarPath,
                     },
                 });
                 calendarSet.add(mapKey);
