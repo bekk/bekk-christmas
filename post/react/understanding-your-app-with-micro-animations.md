@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 15
-title: Understanding your app with micro animations
+title: Micro animations to the rescue
 image: 'https://i.ibb.co/db7Vf4r/photo-1525199896530-b1d87c75c887.jpg'
 ingress: >-
   People like to understand what's happening around them. That is also true when
