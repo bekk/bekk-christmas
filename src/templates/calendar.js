@@ -7,16 +7,18 @@ import Calendar from '../components/Calendar';
 import Number from '../components/Number';
 import Layout from '../components/Layout';
 
-const createLink = (path, day) => {
-    if (!day) {
-        return path;
+const createLink = (includeCalendarInPath, calendar, year, day) => {
+    let link = '';
+
+    if (includeCalendarInPath) {
+        link += `/${calendar}`;
     }
 
-    let link = path;
+    if (!day) {
+        return year === 2019 ? link : `${link}/${year}`;
+    }
 
-    link += `/${day}`;
-
-    return link;
+    return `${link}/${year}/${day}`;
 };
 
 const Template = ({ data, pageContext }) => {
@@ -25,13 +27,11 @@ const Template = ({ data, pageContext }) => {
 
     const windows = new Array(24).fill({
         title: '',
-        year: '',
         day: '',
     });
     nodes.forEach(node => {
         windows[node.frontmatter.post_day - 1] = {
             title: node.frontmatter.title,
-            year: node.frontmatter.post_year,
             day: node.frontmatter.post_day,
         };
     });
@@ -41,7 +41,12 @@ const Template = ({ data, pageContext }) => {
             <Calendar>
                 {windows.map((window, index) => (
                     <Link
-                        to={createLink(pageContext.startOfLink, window.day)}
+                        to={createLink(
+                            pageContext.includeCalendarInPath,
+                            pageContext.calendar,
+                            pageContext.year,
+                            window.day
+                        )}
                         replace={false}
                         style={{ textDecoration: 'none' }}
                     >

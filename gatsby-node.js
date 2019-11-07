@@ -93,7 +93,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     context: {
                         year: post_year,
                         calendar: calendar,
-                        startOfLink: calendarPath,
+                        includeCalendarInPath: isPreview,
                     },
                 });
                 calendarSet.add(mapKey);
