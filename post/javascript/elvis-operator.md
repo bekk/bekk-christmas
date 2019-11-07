@@ -5,6 +5,15 @@ post_day: 3
 title: Elvis Operator
 image: 'https://images.unsplash.com/photo-1534764945014-02d68e5680d8?q=80&w=1680'
 ingress: How to rock and roll with Optional Chaining
+links:
+  - title: TC39 proposal
+    body: TC39 GitHub repository for the Optional Chaining proposal
+    url: 'https://github.com/tc39/proposal-optional-chaining'
+  - title: Babel plugin
+    body: Optional Chaining Babel plugin at NPM
+    url: 'https://www.npmjs.com/package/@babel/plugin-proposal-optional-chaining'
+authors:
+  - Henrik Hermansen
 ---
 # Elvis ~~Presley~~ Operator
 
