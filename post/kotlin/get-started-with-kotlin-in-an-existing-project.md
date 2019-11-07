@@ -7,6 +7,11 @@ image: 'https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg'
 ingress: >-
   So, you've read about Kotlin and many of its cool features, how do you
   actually get startet with it in your existing Java projects?
+links:
+  - title: Using Maven
+    url: 'https://kotlinlang.org/docs/reference/using-maven.html'
+  - title: Using Gradle
+    url: 'https://kotlinlang.org/docs/reference/using-gradle.html'
 authors:
   - Yrjan Fraschetti
 ---
