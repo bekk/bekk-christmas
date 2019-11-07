@@ -31,6 +31,7 @@ collections:
             }
           - { name: title, label: Title }
           - { name: image, label: 'Link to image' }
+          - { name: ingress, label: 'Ingress', widget: text }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -80,6 +81,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
+          - { name: ingress, label: 'Ingress', widget: text }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -129,6 +131,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
+          - { name: ingress, label: 'Ingress', widget: text }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -178,6 +181,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
+          - { name: ingress, label: 'Ingress', widget: text }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
