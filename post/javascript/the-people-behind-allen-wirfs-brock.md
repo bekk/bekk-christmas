@@ -21,13 +21,13 @@ const keyInformation = {
 
 ## Who are you and what do you do? 
 
-I'm a software architect and developer specializing in dynamic programming languages. In the 1980's and 90s I was deeply involved in trying to make Smalltalk an industrial strength programming language.  It almost worked. I've been recognized as an ACM Distinguished Engineer and an Ecma International Fellow. I was the editor for the ES5, ES5.1, ES2015.
+I'm a software architect and developer specializing in dynamic programming languages. In the 1980s and 90s I was deeply involved in trying to make Smalltalk an industrial strength programming language.  It almost worked. I've been recognized as an ACM Distinguished Engineer and an Ecma International Fellow. I was the editor for the ES5, ES5.1, ES2015.
 
 ## How did you get into programming? 
 
 I became intrigued with them in 6th grade, when small computers filled large rooms.
 
-## What do you like about JavaSript?
+## What do you like about JavaScript?
 
 Its ubiquity.  JavaScript is the language of the web and is likely to outlive us all.
 
@@ -41,7 +41,7 @@ lead Microsoft's reengagement with TC39.
 ## What contribution are you most proud of?
 
 Producing the ECMAScript 2015 Language Specification and contributing to the
-design of the language it defines. Part of my roles as editor was making sure
+design of the language it defines. Part of my role as editor was making sure
 that all the good ideas actually fit together coherently.
 
 ## Which upcoming proposal are you most excited about, and why?
@@ -53,19 +53,19 @@ of untested JavaScript code within JavaScript applications.
 
 ## What is the most fun about being a part of the development of EcmaScript?
 
-Impact&mdash;knowing that you are having a direct impact of the world's most
+Impact – knowing that you are having a direct impact of the world's most
 widely used programming language. You are touching people everywhere.
 
 ## What is the hardest part about developing a programming language?
 
 Throwing out all the good ideas that that would make the language too
-complex&mdash;then trying to make sure that the features you keep play
+complex – then trying to make sure that the features you keep play
 nicely with each other.
 
-(Do you think JS is a complex language now? Think what it would be like if
-hundreds of additional good feature ideas where incorporated into it.)
+Do you think JS is a complex language now? Think what it would be like if
+hundreds of additional good feature ideas where incorporated into it.
 
-## What do you wish you knew before you started contributing to the development
+## What do you wish you knew before you started contributing to the development of EcmaScript?
 
 The full history of the language and its standardization efforts. What was the
 reasoning behind past decisions.
