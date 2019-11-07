@@ -70,18 +70,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendarPath = `/${calendar}`;
             }
 
-            if (post_year !== 2019) {
-                calendarPath += `/${post_year}`;
-            }
-
             // Create page for each post
             createPage({
-                path: `${calendarPath}/${post_day}`,
+                path: `${calendarPath}/${post_year}/${post_day}`,
                 component: blogPostTemplate,
                 context: {
                     id: node.id,
                 },
             });
+
+            if (post_year !== 2019) {
+                calendarPath += `/${post_year}`;
+            }
 
             // Create page for each calendar
             const mapKey = calendarPath;
@@ -109,17 +109,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
         });
 
-        let redirectTo = '';
-
-        if (latestYear !== 2019) {
-            redirectTo += `/${latestYear}`;
-        }
-
-        redirectTo += `/${latestDay}`;
-
         createRedirect({
             fromPath: `/latest`,
-            toPath: redirectTo,
+            toPath: `/${latestYear}/${latestDay}`,
             redirectInBrowser: true,
             isPermanent: false,
         });

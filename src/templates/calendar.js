@@ -9,7 +9,7 @@ import Layout from '../components/Layout';
 
 const createLink = (path, day) => {
     if (!day) {
-        return '';
+        return path;
     }
 
     let link = path;
