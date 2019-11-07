@@ -2,12 +2,13 @@
 calendar: kotlin
 post_year: 2019
 post_day: 2
-title: Get started with Kotlin in an existing project
-image: >-
-  https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+title: Get started with Kotlin in your existing Java project!
+image: 'https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg'
 ingress: >-
   So, you've read about Kotlin and many of its cool features, how do you
   actually get startet with it in your existing Java projects?
+authors:
+  - Yrjan Fraschetti
 ---
 ## Setup
 
@@ -71,7 +72,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   </build>
   ```
   The parts to notice here is the `sourceDirs` which shows the plugin where your main and test source files are located.
-  For a more in depth explanation of the `kotlin-maven-plugin` see https://kotlinlang.org/docs/reference/using-maven.html
+  For a more in depth explanation of the `kotlin-maven-plugin` see [Using Maven](https://kotlinlang.org/docs/reference/using-maven.html)
 
   ### Setup in gradle
   Setting up kotlin in gradle requires quite a bit less code than the maven setup. Since we are setting up kotlin, we'll assume that your gradle config is not written in kotlin and will therefore only show the Groovy-way of doing it.
@@ -100,7 +101,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   }
   ```
 
-  For a more in depth explenation of how to set up kotlin with gradle, have a look here: https://kotlinlang.org/docs/reference/using-gradle.html
+  For a more in depth explenation of how to set up kotlin with gradle, have a look here: [Using Gradle](https://kotlinlang.org/docs/reference/using-gradle.html)
 
 ## Create your first kotlinfile
 
