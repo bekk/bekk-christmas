@@ -10,7 +10,8 @@ ingress: >-
   vulnerabilities in the most used websites in the world, saving millions from
   the bad guys, and maybe make some cash along the way? Well, this is your lucky
   day! It's time to learn about bug bounties!
-authors: []
+authors:
+  - Hans Kristian Henriksen
 ---
 As you hopefully know, you can't just go to a random website and start poking around for a security hole. That would be akin to going around the neighbourhood, checking the windows and doors of all the houses. At some point, someone will call the police, and with good reason. But the best way to find security problems is to actually test the site, so to make sure we are not arrested, we have to join a bug bounty.
 
