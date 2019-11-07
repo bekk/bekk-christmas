@@ -9,7 +9,6 @@ ingress: >-
   using apps on their phones. Let's help them along.
 links:
   - title: LayoutAnimation
-    body: API specification for LayoutAnimation in the official docs.
     url: 'https://facebook.github.io/react-native/docs/layoutanimation'
 authors:
   - Hannes Waller
@@ -20,7 +19,7 @@ Lets say my hypothetical kid, Ove, has written a wish list for christmas. Ove is
 
 Being the developer dad that I apparently am I made him an app with React Native. This might look a little something like this:
 
-[Ove's app](https://i.ibb.co/znRvN5G/ove.png)
+![Ove's app](https://i.ibb.co/K2XGhv4/ove.png)
 
 The problem here lies when Ove clicks an item, it disappears. Thanks to the colouring we might understand what just happened. But before we blink the item has vanished. Ove is crying, he didn't understand.
 
@@ -53,4 +52,4 @@ The result being:
 
 This is a lot better. And there's quite a few more things we could do. The above example is a preset. You can supply `LayoutAnimation` with a configuration object for what happens when creating, updating or deleting objects. We can also define how the animation should look with different curves.
 
-Read more about that (here)[https://facebook.github.io/react-native/docs/layoutanimation]
+Read more about that [here](https://facebook.github.io/react-native/docs/layoutanimation)
