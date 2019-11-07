@@ -5,6 +5,7 @@ God jul 🎅, og velkommen til **verdens råeste julekalender-satsning**!
 Dette repoet er kildekoden til disse sidene:
 
 -   [bekk.christmas](https://bekk.christmas) (samlesiden)
+-   [preview.bekk.christmas](https://bekk.christmas) (forhåndsvisningssiden)
 -   [functional.christmas](https://functional.christmas)
 -   [java.christmas](https://java.christmas)
 -   [javascript.christmas](https://javascript.christmas)
