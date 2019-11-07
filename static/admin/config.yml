@@ -30,7 +30,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -39,7 +39,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -79,7 +78,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -88,7 +87,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -128,7 +126,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -137,7 +135,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -177,7 +174,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -186,7 +183,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -226,7 +222,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -235,7 +231,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -275,7 +270,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -284,7 +279,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -324,7 +318,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -333,7 +327,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -373,7 +366,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -382,7 +375,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -422,7 +414,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -431,7 +423,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -471,7 +462,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -480,7 +471,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -520,7 +510,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: 'Link to image' }
+          - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -529,7 +519,6 @@ collections:
             fields:
                 - { name: title, label: Title }
                 - { name: url, label: Url }
-                - { name: body, label: Body }
           - name: authors
             label: 'Authors'
             widget: list
@@ -549,4 +538,8 @@ collections:
       create: true
       fields:
           - { name: title, label: Name }
-          - { name: socialMediaLink, label: 'Link to social media (twitter, linkedin etc.)' }
+          - {
+                name: socialMediaLink,
+                label: 'Link to social media (twitter, linkedin etc.)',
+                required: false,
+            }
