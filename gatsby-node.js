@@ -30,14 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     const envCalendar = process.env.CALENDAR_ENV;
     const isPreview = envCalendar === 'preview';
-
-    // Frontpage for bekk.christmas
-    if (!envCalendar || isPreview) {
-        createPage({
-            path: '/',
-            component: frontpageTemplate,
-        });
-    }
+    const calendarsWithContent = new Set();
 
     if (envCalendar) {
         // Create frontpage of current calendar
@@ -91,8 +84,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             });
 
             // Create page for each calendar
-            const mapKey = `${calendar}${post_year}`;
-            if (!calendarSet.has(mapKey)) {
+            const mapKey = calendarPath;
+            if (!calendarSet.has(calendarPath)) {
                 // Only create page for each calendar once
                 createPage({
                     path: calendarPath,
@@ -104,6 +97,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     },
                 });
                 calendarSet.add(mapKey);
+                calendarsWithContent.add(calendarPath);
             }
 
             if (post_year > latestYear) {
@@ -123,12 +117,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
         redirectTo += `/${latestDay}`;
 
-        // Create page for each post
         createRedirect({
             fromPath: `/latest`,
             toPath: redirectTo,
             redirectInBrowser: true,
             isPermanent: false,
+        });
+    }
+
+    // Frontpage for bekk.christmas
+    if (!envCalendar || isPreview) {
+        createPage({
+            path: '/',
+            component: frontpageTemplate,
+            context: {
+                calendarsWithContent: Array.from(calendarsWithContent),
+                day: 1, // Todo: calculate these values
+                year: 2019,
+            },
         });
     }
 };
