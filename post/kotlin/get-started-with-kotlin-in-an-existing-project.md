@@ -17,7 +17,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   ### Setup in maven
   If your existing project uses maven, the following dependencies and plugins must be added to the pom.xml-file.
 
-  Fist off, the kotlin standard library:
+  Fist off, the Kotlin standard library:
   ```xml
   <dependencies>
     <dependency>
@@ -27,7 +27,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
     </dependency>
   </dependencies>
   ```
-  This library contains all the standard features of kotlin, like classes, functions and common types like String and Int, to name a few.
+  This library contains all the standard features of Kotlin, like classes, functions and common types like String and Int, to name a few.
   Then we need the `kotlin-maven-plugin`, which builds and compiles your code:
   ```xml
   <build>
@@ -72,10 +72,10 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   </build>
   ```
   The parts to notice here is the `sourceDirs` which shows the plugin where your main and test source files are located.
-  For a more in depth explanation of the `kotlin-maven-plugin` see [Using Maven](https://kotlinlang.org/docs/reference/using-maven.html)
+  For a more in depth explanation of the `kotlin-maven-plugin` see [Using Maven](https://kotlinlang.org/docs/reference/using-maven.html).
 
   ### Setup in gradle
-  Setting up kotlin in gradle requires quite a bit less code than the maven setup. Since we are setting up kotlin, we'll assume that your gradle config is not written in kotlin and will therefore only show the Groovy-way of doing it.
+  Setting up Kotlin in gradle requires quite a bit less code than the maven setup. Since we are setting up Kotlin, we'll assume that your gradle config is not written in Kotlin and will therefore only show the Groovy-way of doing it.
 
   Depending on what your project targets, the config may vary, but in this project we target the jvm:
   ```
@@ -101,10 +101,10 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   }
   ```
 
-  For a more in depth explenation of how to set up kotlin with gradle, have a look here: [Using Gradle](https://kotlinlang.org/docs/reference/using-gradle.html)
+  For a more in depth explenation of how to set up kotlin with gradle, have a look here: [Using Gradle](https://kotlinlang.org/docs/reference/using-gradle.html).
 
 ## Create your first kotlinfile
 
-Depending on how you decided to set up your project in the previous step, either by adding kotlin sources together with java sources or by adding a separate folder for kotlin sources, now its time to create your first kotlin file to the project!
+Depending on how you decided to set up your project in the previous step, either by adding Kotlin sources together with java sources or by adding a separate folder for Kotlin sources, now its time to create your first Kotlin file to the project!
 
-In IntelliJ, simply right click the folder where you want to add the new kotlin file, select New -> Kotlin File/Class.
+In IntelliJ, simply right click the folder where you want to add the new Kotlin file, select New -> Kotlin File/Class.
