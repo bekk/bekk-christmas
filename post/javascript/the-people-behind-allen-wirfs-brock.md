@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2019
 post_day: 6
-title: 'The people behind: Allen Wirfs-Brock'
+title: 'The people behind JavaScript: Allen Wirfs-Brock'
 authors:
   - Svein Petter Gjøby
 ---
