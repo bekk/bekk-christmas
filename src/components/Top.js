@@ -26,7 +26,21 @@ const mapCalendarToName = calendar => {
         case 'react':
             return 'React Christmas';
         case 'opensource':
-            return 'Open source Christmas';
+            return 'Open Source Christmas';
+        case 'functional':
+            return 'Functional Christmas';
+        case 'java':
+            return 'Java Christmas';
+        case 'ml':
+            return 'ML Christmas';
+        case 'product':
+            return 'Product Christmas';
+        case 'security':
+            return 'Security Christmas';
+        case 'thecloud':
+            return 'The Cloud Christmas';
+        case 'ux':
+            return 'UX Christmas';
         default:
             return 'Bekk Christmas';
     }
