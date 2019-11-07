@@ -1,97 +1,105 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Bekk Christmas
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+God jul 🎅, og velkommen til **verdens råeste julekalender-satsning**!
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Dette repoet er kildekoden til disse sidene:
 
-## 🚀 Quick start
+-   [bekk.christmas](https://bekk.christmas) (samlesiden)
+-   [preview.bekk.christmas](https://bekk.christmas) (forhåndsvisningssiden)
+-   [functional.christmas](https://functional.christmas)
+-   [java.christmas](https://java.christmas)
+-   [javascript.christmas](https://javascript.christmas)
+-   [kotlin.christmas](https://kotlin.christmas)
+-   [ml.christmas](https://ml.christmas)
+-   [opensource.christmas](https://opensource.christmas)
+-   [product.christmas](https://product.christmas)
+-   [react.christmas](https://react.christmas)
+-   [security.christmas](https://security.christmas)
+-   [thecloud.christmas](https://thecloud.christmas)
+-   [ux.christmas](https://ux.christmas)
 
-1.  **Create a Gatsby site.**
+## Jeg vil legge til innhold!
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+Så bra, da skal vi få deg i gang.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+For å legge til innhold, så må du være logget inn på GitHub, og brukeren din må være lagt til gruppen "[Julenissens hjelpere](https://github.com/orgs/bekk/teams/julenissens-hjelpere)". Ta kontakt med Svein Petter Gjøby ([@sveinpg](https://github.com/sveinpg)) om du trenger slik tilgang, eller om du vil legge til noen andre.
 
-1.  **Start developing.**
+Gå inn i CMSet vårt på [preview.bekk.christmas/admin/](https://preview.bekk.christmas/admin/). Passordet er "sniktitt".
 
-    Navigate into your new site’s directory and start it up.
+Første gang du logger inn må du trykke "Log in with GitHub", for å autentisere deg.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+Når du er logget inn riktig, vil du se denne oversiktssiden:
 
-1.  **Open the source code and start editing!**
+![Bilde av oversiktssiden](https://i.ibb.co/YDbMf7t/Screenshot-2019-11-07-at-1-06-39-PM.png)
 
-    Your site is now running at `http://localhost:8000`!
+Aller først må du registrere deg som forfatter. Det gjør du ved å trykke på "Authors" i det venstre panelet, og så trykke "New Authors", og fyll ut informasjon om deg selv. Vi trenger bare navnet ditt og en lenke for å kontakte deg (Twitter-profil eller eposten din f.eks.). Når du er ferdig trykker du "Publish now" øverst i høyre hjørnet.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+Gå tilbake til forsiden, trykk på kalenderen du vil skrive for i det venstre panelet, og trykk "New Post:"-knappen øverst i høyre hjørnet etter det. Du vil da komme til siden for å endre en artikkel:
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+![Bilde av artikkel-endringssiden](https://i.ibb.co/mNm7QCt/Screenshot-2019-11-07-at-1-11-40-PM.png)
 
-## 🧐 What's inside?
+Her er det bare å fylle ut feltene så godt du kan. Her er en beskrivelse av hva hvert betyr:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+-   `Year` er året julekalenderen er for. Dette trenger du nok ikke endre.
+-   `Date` er hvilken luke din artikkel skal gjemme seg bak. Sjekk dette med lederen for din kalender, men i utgangspunktet er det bare å velge fritt.
+-   `Title` er tittelen på artikkelen din
+-   `Link to image` er URLen til hovedbildet til artikkelen din. Her anbefaler vi at du finner et bilde på [unsplash.com](https://unsplash.com). Finn et bilde, høyreklikk på det, og kopier bilde-URLen. Lim inn URLen her, og så er du i mål!
+-   `Ingress` er ingressen til artikkelen din. Hold den kort - 2-3 setninger - og gjør leseren interessert i hva du skal skrive om!
+-   `Body` er artikkelteksten. Her kan du enten bruke den rike teksteditoren, eller skrive i [Markdown-format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+-   `Relevant links` er en måte å legge til relevante lenker til andre artikler, tutorials osv. Du må ikke legge til noen, men vi anbefaler 2-3 stykker. Dette er så leseren kan dykke videre ned i emnet du har skrevet om. Trykk på "Add relevant links", og legg til tittel, URL og en kort beskrivelse.
+-   `Authors` er hvor du legger til deg selv. Søk opp navnet ditt, så skal du dukke opp.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Jeg vil legge til bilder i artikkelen min!
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Vi anbefaler at du laster opp bilder på en ekstern service, som [imgbb](https://imgbb.com/) eller hvor som helst ellers. Du kan legge til bilder ved å gå inn i `markdown`-formatet, og lime inn følgende code-snippet:
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+```md
+![alt-tekst til bilde](https://url-til-bildet.no)
+```
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+### Jeg er klar for å publisere!
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+Når du er ferdig, trykker du "Publish now" oppe i hjørnet, og lener deg tilbake.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+Hvis din kalender har et Trello-board med ideen din på, så er det på tide å flytte det kortet til "ferdig"-seksjonen.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+Du kan se artikkelen din på `preview.bekk.christmas/<kalendernavn>/2019/<lukenummer>`.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+Gratulerer, du har nå skrevet din første artikkel for bekk.christmas! 🎅 Tusen tusen takk for innsatsen.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+## Jeg vil endre noe i koden på websiden!
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+Utrolig kult! Da bør du begynne med å klone ned repoet:
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```sh
+git clone git@github.com:bekk/bekk-christmas.git
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+Naviger til mappen, og installer alle avhengigheter:
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+```sh
+cd bekk-christmas
+npm install
+```
 
-## 🎓 Learning Gatsby
+Så kan du starte en lokal utviklingsserver med en av følgende kommandos:
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+```sh
+npm start # start bekk.christmas
+npm run start:preview # start preview.bekk.christmas
+npm run start:<kalendernavn> # start <kalendernavn>.christmas
+```
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+Det finnes masse andre kule scripts i scripts-lista vår også, og de kan du se ved å kjøre `npm run`.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+### Hva er hvor?
 
-## 💫 Deploy
+Artiklene ligger i `post`-mappa, gruppert etter hvilken kalender den tilhører. Informasjon om hver forfatter ligger i `author`.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+Koden som rendrer siden vår ligger i `src`, som igjen er delt opp i `components`, `constants` og `templates`. Dette finner du sikkert ut av på null komma niks´.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+Konfigurasjonsfiler og statiske ressurser ligger i `static`-mappen
+
+### Fortell meg om CMSet
+
+bekk.christmas bruker noe som heter Netlife CMS for å administrere innhold. Du kan logge deg inn på [bekk.christmas/admin](https://bekk.christmas/admin/).
