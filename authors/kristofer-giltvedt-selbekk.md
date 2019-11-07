@@ -1,5 +1,4 @@
 ---
 title: Kristofer Giltvedt Selbekk
-socialMediaLink: 'https://twitter.com/selbekk'
+socialMediaLink: https://twitter.com/selbekk
 ---
-

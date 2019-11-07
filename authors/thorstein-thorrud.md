@@ -1,0 +1,4 @@
+---
+title: Thorstein Thorrud
+socialMediaLink:
+---
