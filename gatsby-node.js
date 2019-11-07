@@ -43,7 +43,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 context: {
                     year: 2019,
                     calendar: envCalendar,
-                    startOfLink: '',
+                    includeCalendarInPath: false,
                 },
             });
             calendarSet.add(`${envCalendar}${2019}`);
@@ -81,6 +81,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
             if (post_year !== 2019) {
                 calendarPath += `/${post_year}`;
+            }
+
+            if (!calendarPath) {
+                calendarPath = '/';
             }
 
             // Create page for each calendar
