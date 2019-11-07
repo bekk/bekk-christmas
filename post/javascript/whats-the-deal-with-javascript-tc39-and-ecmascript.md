@@ -8,18 +8,15 @@ image: >-
 ingress: 'Let''s clear it up, once and for all.'
 links:
   - title: Read one of many summaries of the full history of JavaScript
-    body: Dette feltet skal fjernes fra relevant lenke men pt er det obligatorisk
     url: 'https://auth0.com/blog/a-brief-history-of-javascript/'
   - title: See the full list of current proposals
-    body: Dette feltet skal fjernes fra relevant lenke men pt er det obligatorisk
     url: 'https://github.com/tc39/proposals'
   - title: >-
       See a talk about the ECMAScript process by the editor of the huge,
       2015-version of JavaScript (ES6)
-    body: Dette feltet skal fjernes fra relevant lenke men pt er det obligatorisk
     url: 'https://www.youtube.com/watch?v=bzmp6KGwxWc'
 authors:
-  - Svein Petter Gjøby
+  - Eirik Vigeland
 ---
 ## ECMA
 
