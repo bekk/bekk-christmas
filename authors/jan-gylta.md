@@ -1,0 +1,4 @@
+---
+title: Jan Gylta
+socialMediaLink:
+---
