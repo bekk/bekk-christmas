@@ -65,10 +65,8 @@ export const calendarPageQuery = graphql`
             nodes {
                 fields {
                     enrichedAuthors {
-                        avatar
-                        description
                         title
-                        twitterHandle
+                        socialMediaLink
                     }
                 }
                 frontmatter {

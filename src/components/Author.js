@@ -5,11 +5,6 @@ const Container = styled.div`
     text-align: center;
 `;
 
-const AvatarContainer = styled.div`
-    display: flex;
-    justify-content: center;
-`;
-
 const AuthorText = styled.p`
     line-height: 1.5;
 `;
@@ -31,11 +26,6 @@ const AuthorInfo = props => {
     }
     return (
         <Container>
-            <AvatarContainer>
-                {authors.map(author => (
-                    <Avatar key={author.title} src={author.avatar} alt={author.title} />
-                ))}
-            </AvatarContainer>
             <AuthorText>
                 A {readingTime} minute read written by <br />
                 {authors.map((author, index) => (

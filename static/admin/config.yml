@@ -30,7 +30,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: Image, widget: image }
+          - { name: image, label: 'Link to image' }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -78,7 +78,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: Image, widget: image }
+          - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -127,7 +127,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: Image, widget: image }
+          - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -176,7 +176,7 @@ collections:
                 max: 24,
             }
           - { name: title, label: Title }
-          - { name: image, label: Image, widget: image }
+          - { name: image, label: 'Link to image' }
           - { name: ingress, label: Ingress }
           - { name: body, label: Body, widget: markdown }
           - name: links
@@ -205,6 +205,4 @@ collections:
       create: true
       fields:
           - { name: title, label: Name }
-          - { name: description, label: 'Short description' }
-          - { name: twitterHandle, label: 'Twitter handle' }
-          - { name: avatar, label: 'Image', widget: image }
+          - { name: socialMediaLink, label: 'Link to social media (twitter, linkedin etc.)' }

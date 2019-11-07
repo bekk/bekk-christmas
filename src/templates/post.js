@@ -43,10 +43,8 @@ export const aboutPageQuery = graphql`
             timeToRead
             fields {
                 enrichedAuthors {
-                    avatar
-                    description
                     title
-                    twitterHandle
+                    socialMediaLink
                 }
             }
             frontmatter {
