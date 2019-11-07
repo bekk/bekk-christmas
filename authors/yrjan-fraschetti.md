@@ -1,5 +1,5 @@
 ---
 title: Yrjan Fraschetti
-socialMediaLink: 'https://www.linkedin.com/in/yrjanaff/'
+socialMediaLink: 'https://github.com/yrjanaff'
 ---
 
