@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
 
-    const { createPage, createRedirect } = actions;
+    const { createPage } = actions;
 
     const result = await graphql(`
         {
@@ -48,9 +48,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             });
             calendarSet.add(`${envCalendar}${2019}`);
         }
-
-        let latestYear = 0;
-        let latestDay = 0;
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
         posts.forEach(node => {
@@ -103,21 +100,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendarSet.add(mapKey);
                 calendarsWithContent.add(calendarPath);
             }
-
-            if (post_year > latestYear) {
-                latestYear = post_year;
-            }
-
-            if (post_year >= latestYear && post_day > latestDay) {
-                latestDay = post_day;
-            }
-        });
-
-        createRedirect({
-            fromPath: `/latest`,
-            toPath: `/${latestYear}/${latestDay}`,
-            redirectInBrowser: true,
-            isPermanent: false,
         });
     }
 
