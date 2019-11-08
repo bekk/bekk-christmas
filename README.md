@@ -102,4 +102,4 @@ Konfigurasjonsfiler og statiske ressurser ligger i `static`-mappen
 
 ### Fortell meg om CMSet
 
-bekk.christmas bruker noe som heter Netlife CMS for å administrere innhold. Du kan logge deg inn på [bekk.christmas/admin](https://bekk.christmas/admin/).
+bekk.christmas bruker noe som heter [Netlify CMS](https://www.netlifycms.org/) for å administrere innhold. Du kan logge deg inn på [bekk.christmas/admin](https://bekk.christmas/admin/).
