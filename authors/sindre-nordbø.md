@@ -1,0 +1,5 @@
+---
+title: Sindre Nordbø
+socialMediaLink: ''
+---
+
