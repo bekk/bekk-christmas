@@ -2,7 +2,9 @@
 calendar: ux
 post_year: 2019
 post_day: 2
-title: Serious creativity
+title: Creative thinking
+image: 'https://unsplash.com/photos/OKOOGO578eo'
+ingress: Let us have a look at creative thinking!
 authors:
   - Dag Frode Solberg
 ---
