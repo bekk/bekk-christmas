@@ -35,29 +35,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if (envCalendar) {
         // Create frontpage of current calendar
         const calendarSet = new Set();
-
-        if (!isPreview) {
-            createPage({
-                path: '/',
-                component: calendarTemplate,
-                context: {
-                    year: 2019,
-                    calendar: envCalendar,
-                    includeCalendarInPath: false,
-                },
-            });
-            calendarSet.add(`${envCalendar}${2019}`);
-        }
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const currentMonth = currentDate.getMonth();
+        const currentDay = currentDate.getDate();
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
         posts.forEach(node => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
+            // Filter posts from other calendars
             const showCalendar = envCalendar === calendar || isPreview;
-
             if (envCalendar && !showCalendar) {
-                // Filter posts from other calendars
                 return;
+            }
+
+            let hideWindowsAfterDay = 0;
+            if (currentYear > post_year || isPreview) {
+                hideWindowsAfterDay = 24;
+            } else if (currentMonth === 11) {
+                hideWindowsAfterDay = currentDay;
             }
 
             // Path to each calendar
@@ -68,13 +65,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
 
             // Create page for each post
-            createPage({
-                path: `${calendarPath}/${post_year}/${post_day}`,
-                component: blogPostTemplate,
-                context: {
-                    id: node.id,
-                },
-            });
+            if (post_day <= hideWindowsAfterDay)
+                createPage({
+                    path: `${calendarPath}/${post_year}/${post_day}`,
+                    component: blogPostTemplate,
+                    context: {
+                        id: node.id,
+                    },
+                });
 
             if (post_year !== 2019) {
                 calendarPath += `/${post_year}`;
@@ -94,6 +92,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     context: {
                         year: post_year,
                         calendar: calendar,
+                        dayLessOrEqual: hideWindowsAfterDay,
                         includeCalendarInPath: isPreview,
                     },
                 });

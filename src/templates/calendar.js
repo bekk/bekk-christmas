@@ -63,9 +63,15 @@ const Template = ({ data, pageContext }) => {
 };
 
 export const calendarPageQuery = graphql`
-    query CalendarPage($calendar: String!, $year: Int!) {
+    query CalendarPage($calendar: String!, $year: Int!, $dayLessOrEqual: Int!) {
         allMarkdownRemark(
-            filter: { frontmatter: { calendar: { eq: $calendar }, post_year: { eq: $year } } }
+            filter: {
+                frontmatter: {
+                    calendar: { eq: $calendar }
+                    post_year: { eq: $year }
+                    post_day: { lte: $dayLessOrEqual }
+                }
+            }
         ) {
             nodes {
                 fields {
