@@ -4,7 +4,8 @@ post_year: 2019
 post_day: 3
 title: Vanilla SPA
 ingress: Let us look at what it takes to create our own SPA
-authors: []
+authors:
+  - Dag Frode Solberg
 ---
 Back when I started studying IT, I figured I wanted to create a Single Page Application(SPA). I knew some HTML, CSS, and JavaScript, and that was enough to get something up and running.
 
