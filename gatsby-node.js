@@ -36,9 +36,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         // Create frontpage of current calendar
         const calendarSet = new Set();
         const currentDate = new Date();
-        const currentYear = currentDate.getFullYear();
-        const currentMonth = currentDate.getMonth();
-        const currentDay = currentDate.getDate();
+        const currentYear = currentDate.getUTCFullYear();
+        const currentMonth = currentDate.getUTCMonth();
+        const currentDay = currentDate.getUTCDate();
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
         posts.forEach(node => {
