@@ -5,6 +5,8 @@
  */
 const fs = require('fs');
 
+// Adds every directory under post (not recursively) as its own filesystem
+// source.
 const calendarPlugins = fs
     .readdirSync(`${__dirname}/post`, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
