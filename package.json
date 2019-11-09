@@ -6,20 +6,13 @@
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
-        "build:preview": "CALENDAR_ENV=preview gatsby build",
-        "build:javascript": "CALENDAR_ENV=javascript gatsby build",
-        "build:kotlin": "CALENDAR_ENV=kotlin gatsby build",
-        "build:react": "CALENDAR_ENV=react gatsby build",
-        "build:opensource": "CALENDAR_ENV=opensource gatsby build",
-        "build:css": "CALENDAR_ENV=css gatsby build",
+        "build:preview": "gatsby build preview",
+        "build:calendar": "gatsby build",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "gatsby develop",
-        "start:preview": "CALENDAR_ENV=preview gatsby develop",
-        "start:javascript": "CALENDAR_ENV=javascript gatsby develop",
-        "start:react": "CALENDAR_ENV=react gatsby develop",
-        "start:css": "CALENDAR_ENV=css gatsby develop",
-        "serve": "gatsby serve",
-        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+        "start:preview": "gatsby develop preview",
+        "start:calendar": "gatsby develop",
+        "serve": "gatsby serve"
     },
     "dependencies": {
         "@bekk/storybook": "^2.4.7",
