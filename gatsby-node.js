@@ -92,7 +92,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     context: {
                         year: post_year,
                         calendar: calendar,
-                        dayLessOrEqual: hideWindowsAfterDay,
+                        hideWindowsAfterDay: hideWindowsAfterDay,
                         includeCalendarInPath: isPreview,
                     },
                 });
