@@ -11,11 +11,13 @@
         "build:kotlin": "CALENDAR_ENV=kotlin gatsby build",
         "build:react": "CALENDAR_ENV=react gatsby build",
         "build:opensource": "CALENDAR_ENV=opensource gatsby build",
+        "build:css": "CALENDAR_ENV=css gatsby build",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "gatsby develop",
         "start:preview": "CALENDAR_ENV=preview gatsby develop",
         "start:javascript": "CALENDAR_ENV=javascript gatsby develop",
         "start:react": "CALENDAR_ENV=react gatsby develop",
+        "start:css": "CALENDAR_ENV=css gatsby develop",
         "serve": "gatsby serve",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
     },

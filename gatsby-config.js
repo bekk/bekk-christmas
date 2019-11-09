@@ -80,6 +80,12 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/post/css`,
+            },
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [`gatsby-remark-responsive-iframe`],
