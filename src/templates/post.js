@@ -28,6 +28,7 @@ const Template = ({ data }) => {
                     <AuthorInfo
                         authors={fields && fields.enrichedAuthors}
                         readingTime={timeToRead}
+                        calendar={frontmatter.calendar}
                     />
                 )}
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />

@@ -10,14 +10,18 @@ const AuthorText = styled.p`
 `;
 
 const AuthorInfo = props => {
-    const { authors, readingTime } = props;
+    const { authors, readingTime, calendar } = props;
     if (!authors || !authors.length) {
         return null;
     }
+
+    const showReadingTime = calendar !== 'product';
+
     return (
         <Container>
             <AuthorText>
-                A {readingTime} minute read written by <br />
+                {showReadingTime ? `A ${readingTime} minute read written by` : 'Created by'}
+                <br />
                 {authors.map((author, index) => (
                     <Fragment key={author.title}>
                         <strong>{author.title}</strong>
