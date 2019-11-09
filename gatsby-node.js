@@ -28,7 +28,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         return;
     }
 
-    const envCalendar = process.env.CALENDAR_ENV;
+    const envCalendar = process.env.CALENDAR_ENV || process.argv[3];
     const isPreview = envCalendar === 'preview';
     const calendarsWithContent = new Set();
 

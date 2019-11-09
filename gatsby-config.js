@@ -18,9 +18,12 @@ const calendarPlugins = fs
         },
     }));
 
+const envCalendar = process.env.CALENDAR_ENV || process.argv[3];
+const isPreview = envCalendar === 'preview';
+
 module.exports = {
     plugins: [
-        ...(process.env.CALENDAR_ENV !== 'preview' ? [] : [`gatsby-plugin-netlify-cms`]),
+        ...(isPreview ? [`gatsby-plugin-netlify-cms`] : []),
         {
             resolve: `gatsby-source-filesystem`,
             options: {

@@ -95,7 +95,7 @@ Så kan du starte en lokal utviklingsserver med en av følgende kommandos:
 ```sh
 npm start # start bekk.christmas
 npm run start:preview # start preview.bekk.christmas
-npm run start:<kalendernavn> # start <kalendernavn>.christmas
+npm run start:calendar <kalendernavn> # start <kalendernavn>.christmas
 ```
 
 Det finnes masse andre kule scripts i scripts-lista vår også, og de kan du se ved å kjøre `npm run`.
