@@ -3,6 +3,18 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const fs = require('fs');
+
+const calendarPlugins = fs
+    .readdirSync(`${__dirname}/post`, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name)
+    .map(calendar => ({
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: `${__dirname}/post/${calendar}`,
+        },
+    }));
 
 module.exports = {
     plugins: [
@@ -11,78 +23,6 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/authors`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/javascript`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/react`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/kotlin`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/opensource`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/functional`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/java`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/ml`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/product`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/security`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/thecloud`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/ux`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/post/css`,
             },
         },
         {
@@ -95,5 +35,6 @@ module.exports = {
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-netlify`,
         /* Your site config here */
+        ...calendarPlugins,
     ],
 };
