@@ -41,6 +41,8 @@ const mapCalendarToName = calendar => {
             return 'The Cloud Christmas';
         case 'ux':
             return 'UX Christmas';
+        case 'css':
+            return 'CSS Christmas';
         default:
             return 'Bekk Christmas';
     }
