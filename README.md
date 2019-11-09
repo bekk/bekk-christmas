@@ -57,6 +57,13 @@ Vi anbefaler at du laster opp bilder på en ekstern service, som [imgbb](https:/
 ![alt-tekst til bilde](https://url-til-bildet.no)
 ```
 
+### Jeg vil embede eksternt innhold
+
+Vi anbefaler at du viser det eksterne innholdet med en iframe. Du kan legge til bilder ved å gå inn i `markdown`-formatet, og lime inn følgende code-snippet, og legger til de attributtene du trenger på tag'en:
+
+````md
+<iframe src="https://url-til-eksternt-innhold.no"></iframe>
+
 ### Jeg er klar for å publisere!
 
 Når du er ferdig, trykker du "Publish now" oppe i hjørnet, og lener deg tilbake.
@@ -74,6 +81,7 @@ Utrolig kult! Da bør du begynne med å klone ned repoet:
 ```sh
 git clone git@github.com:bekk/bekk-christmas.git
 ```
+````
 
 Naviger til mappen, og installer alle avhengigheter:
 

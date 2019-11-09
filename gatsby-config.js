@@ -79,7 +79,12 @@ module.exports = {
                 path: `${__dirname}/post/ux`,
             },
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [`gatsby-remark-responsive-iframe`],
+            },
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-netlify`,
