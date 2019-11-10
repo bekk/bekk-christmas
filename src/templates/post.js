@@ -11,26 +11,39 @@ const MaxWidth = styled.article`
     margin: 2em auto;
 `;
 
+const HeroImage = styled.img`
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+`;
+
+const Ingress = styled.p`
+    font-size: 22px;
+`;
+
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
+    const { calendar, title, ingress, image } = frontmatter;
 
     return (
-        <Layout calendar={frontmatter.calendar}>
+        <Layout calendar={calendar}>
             <Helmet>
-                <title>{frontmatter.title}</title>
-                <meta property="og:title" content={frontmatter.title} />
-                <meta property="og:description" content={frontmatter.ingress} />
-                <meta property="og:image" content={frontmatter.image} />
+                <title>{title}</title>
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={ingress} />
+                <meta property="og:image" content={image} />
             </Helmet>
             <MaxWidth>
                 {fields && fields.enrichedAuthors && (
                     <AuthorInfo
                         authors={fields && fields.enrichedAuthors}
                         readingTime={timeToRead}
-                        calendar={frontmatter.calendar}
+                        calendar={calendar}
                     />
                 )}
+                <HeroImage src={image} alt="Hero" />
+                <Ingress>{ingress}</Ingress>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
             </MaxWidth>
         </Layout>
