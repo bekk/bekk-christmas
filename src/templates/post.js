@@ -42,7 +42,7 @@ const Template = ({ data }) => {
                         calendar={calendar}
                     />
                 )}
-                <HeroImage src={image} alt="Hero" />
+                <HeroImage src={image} alt="" />
                 <Ingress>{ingress}</Ingress>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
                 {links && links.length > 0 && (
