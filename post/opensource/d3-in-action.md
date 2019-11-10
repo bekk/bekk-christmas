@@ -3,7 +3,7 @@ calendar: opensource
 post_year: 2018
 post_day: 20
 title: D3 in action
-image: /assets/fagdag.jpg
+
 authors:
     - Svein Petter Gjøby
     - Vegard Veiset

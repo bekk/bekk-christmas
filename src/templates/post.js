@@ -6,6 +6,9 @@ import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
 
+const fallbackImage =
+    'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
+
 const MaxWidth = styled.article`
     max-width: 700px;
     margin: 2em auto;
@@ -42,7 +45,7 @@ const Template = ({ data }) => {
                         calendar={calendar}
                     />
                 )}
-                <HeroImage src={image} alt="" />
+                <HeroImage src={image || fallbackImage} alt="" />
                 <Ingress>{ingress}</Ingress>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
                 {links && links.length > 0 && (
