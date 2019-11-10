@@ -24,7 +24,9 @@ const Ingress = styled.p`
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
-    const { calendar, title, ingress, image } = frontmatter;
+    const { calendar, title, ingress, image, links } = frontmatter;
+
+    console.log(links);
 
     return (
         <Layout calendar={calendar}>
@@ -45,6 +47,14 @@ const Template = ({ data }) => {
                 <HeroImage src={image} alt="Hero" />
                 <Ingress>{ingress}</Ingress>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+                {links && links.length > 0 && (
+                    <>
+                        <h2>Relevant links</h2>
+                        {links.map(link => (
+                            <a href={link.url}>{link.title}</a>
+                        ))}
+                    </>
+                )}
             </MaxWidth>
         </Layout>
     );
@@ -66,6 +76,10 @@ export const aboutPageQuery = graphql`
                 title
                 ingress
                 image
+                links {
+                    title
+                    url
+                }
             }
         }
     }
