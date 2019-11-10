@@ -32,13 +32,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const isPreview = envCalendar === 'preview';
     const calendarsWithContent = new Set();
 
+    const currentDate = new Date();
+    const currentYear = currentDate.getUTCFullYear();
+    const currentMonth = currentDate.getUTCMonth();
+    const currentDay = currentDate.getUTCDate();
+
     if (envCalendar) {
         // Create frontpage of current calendar
         const calendarSet = new Set();
-        const currentDate = new Date();
-        const currentYear = currentDate.getUTCFullYear();
-        const currentMonth = currentDate.getUTCMonth();
-        const currentDay = currentDate.getUTCDate();
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
         posts.forEach(node => {
@@ -102,6 +103,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         });
     }
 
+    let currentFrontpageDay = 0;
+    if (currentYear > 2019 || (currentMonth === 11 && currentDay > 24)) {
+        currentFrontpageDay = 24;
+    } else if (currentMonth === 11 && currentDay < 25) {
+        currentFrontpageDay = currentDay;
+    }
+
     // Frontpage for bekk.christmas
     if (!envCalendar || isPreview) {
         createPage({
@@ -109,7 +117,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             component: frontpageTemplate,
             context: {
                 calendarsWithContent: Array.from(calendarsWithContent),
-                day: 1, // Todo: calculate these values
+                day: currentFrontpageDay,
                 year: 2019,
             },
         });
