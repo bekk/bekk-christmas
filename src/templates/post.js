@@ -26,8 +26,6 @@ const Template = ({ data }) => {
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const { calendar, title, ingress, image, links } = frontmatter;
 
-    console.log(links);
-
     return (
         <Layout calendar={calendar}>
             <Helmet>
