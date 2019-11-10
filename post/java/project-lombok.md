@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 1
+post_day: 4
 title: Project Lombok
 image: >-
   https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
@@ -11,16 +11,12 @@ ingress: >-
   Lombok can help you.
 links:
   - title: Project Lombok homepage
-    body: Project Lombok homepage
     url: 'https://projectlombok.org'
   - title: 'JSR 269: Pluggable Annotation Processing API'
-    body: 'JSR 269: Pluggable Annotation Processing API'
     url: 'https://www.jcp.org/en/jsr/detail?id=269'
   - title: Builder pattern
-    body: Builder pattern
     url: 'https://en.wikipedia.org/wiki/Builder_pattern'
   - title: Lombok features
-    body: List of all the goodieness that Project Lombok offers
     url: 'https://projectlombok.org/features/all'
 authors:
   - Nicklas Utgaard
