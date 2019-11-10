@@ -3,9 +3,9 @@ calendar: javascript
 post_year: 2018
 post_day: 19
 title: D3 in action
-image: /assets/fagdag.jpg
+
 authors:
-  - Svein Petter Gjøby
+    - Svein Petter Gjøby
 ---
 
 [D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript library that's well suited to create data visualizations on the web. It brings data to life using HTML, SVGs and CSS. You can make everything from static graphs to interactive articles.
