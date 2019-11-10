@@ -46,10 +46,16 @@ DAO dao = new DAO(dbConnection);
 Service service = new Service(dao);
 Controller controller = new Controller(service);
 ```
-In small and simple applications this may be acceptable, as introducing a DI-framework also introduces complexity. But we're interested in how DI-frameworks work, so lets continue by looking an example using the fictional library `DIY`; 
+In small and simple applications this may be acceptable, as introducing a DI-framework also introduces complexity. But as the application grows this `Config` class may become rather large and hard to maintain. And we're interested in how DI-frameworks work, so lets continue by looking an example using the fictional library `DIY`; 
 ```java
 // Config.java
 Controller controller = DIY.get(Controller.class);
 ```
 
-"WOW", "MAGIC", "SUCH CODE" 
+It should be noted that this is not the full story, and we'll take a look at what changes were made in order for `DIY` to understand how the classes should be wired together. 
+
+## So, how does it work?
+
+At its most basic you can think of `DIY` as a glorified `Map`, often referred to as the IoC Container. Populating the map can be achieved in several ways, but we'll focus on an annotation-based approach, e.g using `@Bean`, `@Component` and `@Inject`.
+`@Bean` and `@Component` would be equivalent to `map.put`, whereas `@Inject` is equivalent to `map.get`. 
+
