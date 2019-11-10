@@ -5,6 +5,10 @@ post_day: 2
 title: Removing duplicates from an array
 image: >-
   https://images.unsplash.com/photo-1448932284983-0c7b152eba33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
+ingress: >-
+  Knowing more than one way to solve a given problem can help you write more
+  readable code. Let's look at three different ways to remove duplicates
+  elements from an array.
 authors:
   - Svein Petter Gjøby
 ---
