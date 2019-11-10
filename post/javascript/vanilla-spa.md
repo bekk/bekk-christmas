@@ -3,7 +3,8 @@ calendar: javascript
 post_year: 2019
 post_day: 3
 title: Vanilla SPA
-image: 'https://unsplash.com/photos/-GUyf8ZCTHM'
+image: >-
+  https://images.unsplash.com/photo-1465161191540-aac346fcbaff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
 ingress: Let us look at what it takes to create our own SPA
 authors:
   - Dag Frode Solberg
