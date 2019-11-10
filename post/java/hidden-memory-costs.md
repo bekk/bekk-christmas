@@ -1,21 +1,18 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 1
+post_day: 3
 title: Hidden memory costs
 image: >-
   https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
 links:
   - title: Java performance tutorial – How fast are the Java 8 streams?
-    body: N/A
     url: >-
       https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html
   - title: 'Benchmark: How Misusing Streams Can Make Your Code 5 Times Slower'
-    body: N/A
     url: >-
       https://blog.overops.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/
   - title: 3 Reasons why You Shouldn’t Replace Your for-loops by Stream.forEach()
-    body: N/A
     url: >-
       https://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/
 authors:
