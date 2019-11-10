@@ -56,6 +56,51 @@ It should be noted that this is not the full story, and we'll take a look at wha
 
 ## So, how does it work?
 
-At its most basic you can think of `DIY` as a glorified `Map`, often referred to as the IoC Container. Populating the map can be achieved in several ways, but we'll focus on an annotation-based approach, e.g using `@Bean`, `@Component` and `@Inject`.
+At its most basic you can think of `DIY` as a glorified `Map`, often referred to as the IoC Container. Populating the map can be achieved in several ways, but we'll focus on an annotation-based approach, e.g using `@Bean`, `@Component`, `@Inject`, etc.
 `@Bean` and `@Component` would be equivalent to `map.put`, whereas `@Inject` is equivalent to `map.get`. 
+
+To start we'll look at the lifecycle of `DIY`, which can be split into three distinct phases;
+1. Scanning
+2. Instantiation
+3. Injection
+
+### Scanning
+Before anything can happen the library needs to get a concept of which classes the application needs. Spring supports a multitude of options here, but we'll focus on the simplest case; classpath-scanning searching for classes annotated with `@Component` and a default constructor. To help us in our efforts we'll use a nifty little library called [reflections](https://github.com/ronmamo/reflections) which will help us scan the classpath. 
+
+Finding all classes of interest is as simple as; 
+```java
+List<Class<?>> classes = new Reflections("com.myapp", new TypeAnnotationsScanner())
+  .getTypesAnnotatedWith(Component.class);
+```
+
+### Instantiation
+
+After finding all classes that the application needs we move on to instantiating these. Since we required all classes to have a default constructor we can simply call `Class::newInstance` for each of the classes found. 
+
+```java
+List<Object> beans = classes
+  .map(cls -> cls.newInstance());
+```
+
+### Injection
+
+After instantiating all classes we're left with injecting dependencies where they are needed. All of the classes we found can potentially include fields annotated with `@Inject` meaning they're dependent on another class. Hence we need to iterate through the list of beans and connect them together.
+
+```
+beans
+  .forEach(bean -> {
+    ReflectionUtils
+      .getAllFields(bean.getClass(), withAnnotation(Inject.class))
+      .forEach(field -> {
+        Object value = resolve(field, beans);
+        field.set(bean, value);
+      });
+  });
+```
+We iterate through all beans, finding all fields annotated with `Inject` and set their value. `resolve` can be implemented rather straight forward by just finding the first bean which can be assigned to the field-type. 
+
+At this point the `DIY` library has completed its job, and we should now be able to run `DIY.get(Controller.class)` and receive a instance of `Controller` with all fields populated by `DIY`.
+
+## Complicating matters
+
 
