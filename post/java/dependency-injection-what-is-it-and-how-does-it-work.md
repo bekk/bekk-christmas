@@ -102,5 +102,11 @@ We iterate through all beans, finding all fields annotated with `Inject` and set
 At this point the `DIY` library has completed its job, and we should now be able to run `DIY.get(Controller.class)` and receive a instance of `Controller` with all fields populated by `DIY`.
 
 ## Complicating matters
+We made a lot of assumptions and made a really scoped down version of what you may expect from a DI framework. Some of the issues include;
 
+**Having multiple beans of the same type.**
+There is no way to differentiate between beans of similar types. Spring provides a way of naming your bean; `@Bean(name = "my-awesome-controller")`, and then requesting that specific bean by using `@Named("my-awesome-controller")` in addition to `@Inject`.
 
+**Code in the constructor of a bean.** Strictly speaking you may create a default constructor and add some code there. But since the bean is instantiated before the injection-phase it will not have the resolved values at that point. Spring's solution solution comes in the form of the annotation `@PostConstruct`, which can be added to a method in the class and executed whenever Spring has injected the requested dependencies.
+
+**Constructor Injection.** Some people prefer constructor injection instead of field injection. E.g allowing classes to specify a constructor with its dependencies instead of annotation every field. This is supported in Spring by simply annotating the constructor instead of each field in the class. For this to work the library needs to instantiate classes in topological order (hence circular dependencies won't longer work). 
