@@ -13,30 +13,30 @@ Search for reified in code on github, and you'll get about 247k hits. Limit it t
 Here's the signature of a generic function
 
 ```kotlin
+
 fun<T> genericFunc(foo: Int): T
+
 ```
 
-It allows us to perform some function on an Int which should be able to return any type.
-However, as we don't have any information about the type returned, we can't really do anything other than to define this as an operation on lists, maps or the like.
+The function allows us to perform some operation on an Int which should be able to return any type. However, as we don't have any information about the type returned, the function is severly limited. Functions with a signature like this is often just some CRUD operation on a generic container type(e.g. List).
 
 ## The KClass parameter
 
-To be able to do something with the type, we introduce the KClass parameter.
+To be able to do something based on the type of the generic parameter, we introduce the KClass parameter.
 
 ```kotlin
-fun<T> genericFunc(foo: Int, clazz: KClass<*>): T {
+
+fun<T> getJson(foo: Int, clazz: KClass<*>): T {
     return ObjectMapper().readValue(foo, clazz.java)
 }
 
 // Usage
-val bar: Data = genericFunc("{\"answer\": 42}", Data::class.java)
+val bar: Data = getJson("{\"answer\": 42}", Data::class.java)
 ```
 
-The class parameter allows us access to a type without having to instantiate an object of class T and send it in. The KClass argument sent in is usually the same as T.
-A common use case for this pattern is when you have a string of, say, JSON, and you want to deserialize it into some object.
-In fact, libraries like GSON and Jackson offer functions like this to serialize from some supported format to an object.
-A downside with the current implementation is that it doesn't support generics very well - the class passed will be that of e.g. List, but it won't have any information about the type of the List elements.
-And isn't that extra parameter a bit nasty?
+Usually, the KClass argument reveals the generic type to the function. By doing it this way, the type can be revealed without the call-site having to instantiate and pass in an object. In the example, this is seen to be one way that the FasterXML/jackson project offers to deserialize from some supported format to an object. A similar solution is also offered by other libraries, like GSON.
+
+A downside with the current implementation is that it doesn't support generics very well. The class passed will be that of e.g. List, but it won't have any information about the type of the List elements. And isn't that extra parameter a bit nasty?
 
 ## Reified type
 
@@ -44,23 +44,28 @@ Enter the `reified` keyword.
 
 > **reify**: to consider or represent (something abstract) as a material or concrete thing : to give definite content and form to (a concept or idea) 
 
-With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example.
+With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example. One caveat though; `reified` requires the function to be prefixed with `inline`.
 
 ```kotlin
 inline fun<reified T> getJson(input: String): T {
-    return ObjectMapper().readValue(input, object : TypeReference<T>(){})
+    return ObjectMapper().readValue(input, T::class.java)
 }
 
-//Usage
-val reifiedList = getJson<List<Name>>("[{\"name\": \"Thomas\"}, {\"name\": \"Karoline\"}, {\"name\": \"Børre\"}]")
+// Usage
+val bar: Data = getJson<Data>("{\"answer\": 42}")
 ```
 
-The `reified` keyword allows us access to the generic type like it was an actual type in the function body.
-No more passing `::class` parameters, just call the function with the type you wish to get back.
-However, Kotlin has type inference! So we can slim this down even more.
+By adding `reified` to the type parameter, we get access to the generic type like it was an actual type. No more passing `::class` parameters, just call the function with the type! 
+
+To sweeten the deal, remember that Kotlin has type inference. Let's trim it down just a little bit extra.
 
 ```kotlin
+inline fun<reified T> getJson(input: String): T {
+    return ObjectMapper().readValue(input, T::class.java)
+}
+
 val reifiedList: List<Name> = getJson("[{\"name\": \"Thomas\"}, {\"name\": \"Karoline\"}, {\"name\": \"Børre\"}]")
+
 ```
 
 Now look at that.
