@@ -1,12 +1,14 @@
 ---
 calendar: kotlin
 post_year: 2019
-post_day: 2
-title: Get started with Kotlin in your existing Java project!
+post_day: 1
+title: Get started with Kotlin!
 image: 'https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg'
 ingress: >-
-  So, you've read about Kotlin and many of its cool features, how do you
-  actually get startet with it in your existing Java projects?
+  Welcome to the Bekk 2019 Kotlin christmas calender! In the days leading up to
+  christmas, we will present you with 24 articles, one for each day, about
+  different topics regarding Kotlin. To start of, we would like to show you how
+  to get started with Kotlin in your existing Java project.
 links:
   - title: Using Maven
     url: 'https://kotlinlang.org/docs/reference/using-maven.html'
