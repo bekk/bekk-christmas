@@ -2,7 +2,9 @@
 calendar: kotlin
 post_year: 2019
 post_day: 15
-title: 'Work in progress: Reified type'
+title: When we need a concrete generic
+image: >-
+  https://images.unsplash.com/photo-1495806284221-6b81ceff1305?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80
 authors:
   - Thomas Oddsund
 ---
