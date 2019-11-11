@@ -41,7 +41,7 @@ So I guess I have to perform a _terminal operation_:
 
 Well, yes, this works. But I can no longer just select the interesting code, press a shortcut and see the results. If I want to figure out what the next step in the pipeline does, I have to close the dialog, increase my selection to the next line, press the **Evaluate Expression** shortcut and add `.toArray()` again. I don’t have time for that!
 
-Enter my _new_ favorite feature of IntelliJ: «![](https://i.ibb.co/8g44ttJ/4-stream-debugger-icon.png) Trace Current Stream Chain». It’s not the most visible button, but you can find it in the Debug pane:
+Enter my _new_ favorite feature of IntelliJ: «**Trace Current Stream Chain**». It’s not the most visible button, but you can find it in the Debug pane:
 
 ![](https://i.ibb.co/0VKD6dR/5-stream-debugger-hint.png)
 
