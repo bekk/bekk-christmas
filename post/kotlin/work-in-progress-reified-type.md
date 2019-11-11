@@ -3,14 +3,14 @@ calendar: kotlin
 post_year: 2019
 post_day: 15
 title: 'Work in progress: Reified type'
+authors:
+  - Thomas Oddsund
 ---
-## Intro
-
-Search for reified in code on github, and you'll get about 247k hits. Limit it to Kotlin, and it's around 50k. But what is it?
+Search for reified on github, and you'll get about 247k hits. Limit it to Kotlin, and it's around 50k. But what is it?
 
 ## A generic function
 
-Here's the signature of a generic function
+First, here's the signature of a generic function
 
 ```kotlin
 
@@ -26,15 +26,17 @@ To be able to do something based on the type of the generic parameter, we introd
 
 ```kotlin
 
-fun<T> getJson(foo: Int, clazz: KClass<*>): T {
+fun<T> getJson(foo: Int, clazz: KClass<*>): T {    
+    
     return ObjectMapper().readValue(foo, clazz.java)
+    
 }
 
 // Usage
 val bar: Data = getJson("{\"answer\": 42}", Data::class.java)
 ```
 
-Usually, the KClass argument reveals the generic type to the function. By doing it this way, the type can be revealed without the call-site having to instantiate and pass in an object. In the example, this is seen to be one way that the FasterXML/jackson project offers to deserialize from some supported format to an object. A similar solution is also offered by other libraries, like GSON.
+Usually, the KClass argument is used to reveal the actual type to the function. By doing it this way, the type can be revealed without the call-site having to instantiate and pass in a dummy object. In the example, this is seen to be one way that the [FasterXML/jackson](https://github.com/FasterXML/jackson) project offers to deserialize from some supported format to an object. A similar solution is also offered by other libraries, like GSON.
 
 A downside with the current implementation is that it doesn't support generics very well. The class passed will be that of e.g. List, but it won't have any information about the type of the List elements. And isn't that extra parameter a bit nasty?
 
@@ -44,9 +46,10 @@ Enter the `reified` keyword.
 
 > **reify**: to consider or represent (something abstract) as a material or concrete thing : to give definite content and form to (a concept or idea) 
 
-With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example. One caveat though; `reified` requires the function to be prefixed with `inline`.
+With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example. One caveat though; `reified` requires an inline function, denoted by the `inline` keyword.
 
 ```kotlin
+
 inline fun<reified T> getJson(input: String): T {
     return ObjectMapper().readValue(input, T::class.java)
 }
@@ -55,17 +58,17 @@ inline fun<reified T> getJson(input: String): T {
 val bar: Data = getJson<Data>("{\"answer\": 42}")
 ```
 
-By adding `reified` to the type parameter, we get access to the generic type like it was an actual type. No more passing `::class` parameters, just call the function with the type! 
+By adding `reified` to the type parameter, we get access to the generic type like it was an actual type. No more passing `::class` parameters, just call the function with the type parameter!
 
-To sweeten the deal, remember that Kotlin has type inference. Let's trim it down just a little bit extra.
+To sweeten the deal, remember that Kotlin has type inference. Let's trim it down just a litle bit extra. If you want Jackson to support generics and their element type as well, such as `List<Name>` instead of just `List`, replace `T::class.java` with `object : TypeReference<T>(){}`.
 
 ```kotlin
+
 inline fun<reified T> getJson(input: String): T {
-    return ObjectMapper().readValue(input, T::class.java)
+    return ObjectMapper().readValue(input, object : TypeReference<T>(){})
 }
 
 val reifiedList: List<Name> = getJson("[{\"name\": \"Thomas\"}, {\"name\": \"Karoline\"}, {\"name\": \"Børre\"}]")
-
 ```
 
-Now look at that.
+Now look at that. One could even suspect that someone had thought of [functions](https://github.com/FasterXML/jackson-module-kotlin/blob/master/src/main/kotlin/com/fasterxml/jackson/module/kotlin/Extensions.kt) like this already!
