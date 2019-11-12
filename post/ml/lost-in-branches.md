@@ -12,15 +12,15 @@ In short, decision trees are models used in the field of machine learning to pre
 
 We will start of with a super short description of the structure of a decision tree model. The first gray circle at the top is called the root node, this is where we start. The rest of the gray circles are just called nodes - except the ones at the bottom, without any preceding nodes, these are called leafs. Take a look:
 
-...
+![](/assets/trees.png)
 
 Decision trees can, as already pointed out, be simple and straightforward. Let's make the simplest possible tree, and let's use it for predicting if guests at a restaurant are vegetarian or not. Try it out:
 
-…
+![](/assets/trees-1-.png)
 
 This machine learning technique is pretty intuitive to work with, you start at the top (root node) and work your way down answering questions. The nodes asks the questions, and in the end the leafs gives us the prediction. Let’s add a question:
 
-...
+![](/assets/trees-3-.png)
 
 In the examples above the trees are only made up by one and two questions, and to be fair, there are many different types of decision trees and some of them can be complex and less intuitive to work with. That said, _regular_ decision trees does not need to be a lot more complicated than this. At first one could think trees are too simple to handle complex problems, yet, with more nodes this technique can be surprisingly powerful.
 
