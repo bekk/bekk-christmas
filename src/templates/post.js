@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
@@ -30,7 +31,7 @@ const Template = ({ data }) => {
     const { calendar, title, ingress, image, links } = frontmatter;
 
     return (
-        <Layout calendar={calendar}>
+        <Layout calendarName={calendar}>
             <Helmet>
                 <title>{title}</title>
                 <meta property="og:title" content={title} />

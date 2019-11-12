@@ -1,11 +1,12 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Tre from '../components/Tre';
-import Ingress from '../components/Ingress';
-import Window from '../components/Window';
+import { graphql } from 'gatsby';
+
 import Calendar from '../components/Calendar';
-import Number from '../components/Number';
+import CalendarWindowClosed from '../components/CalendarWindowClosed';
+import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
+
+import { getWindowImagePlaceholder } from '../utils';
 
 const createLink = (includeCalendarInPath, calendar, year, day) => {
     let link = '';
@@ -37,25 +38,25 @@ const Template = ({ data, pageContext }) => {
     });
 
     return (
-        <Layout calendar={pageContext.calendar}>
-            <Calendar>
+        <Layout calendarName={pageContext.calendar}>
+            <Calendar id="calendar">
                 {windows.map((window, index) => (
-                    <Link
-                        to={createLink(
-                            pageContext.includeCalendarInPath,
-                            pageContext.calendar,
-                            pageContext.year,
-                            window.day
+                    <li key={window.title || index}>
+                        {window.title ? (
+                            <CalendarWindowOpen
+                                link={createLink(
+                                    pageContext.includeCalendarInPath,
+                                    pageContext.calendar,
+                                    pageContext.year,
+                                    window.day
+                                )}
+                                imageUrl={getWindowImagePlaceholder(index)}
+                                title={window.title}
+                            ></CalendarWindowOpen>
+                        ) : (
+                            <CalendarWindowClosed day={index + 1}></CalendarWindowClosed>
                         )}
-                        replace={false}
-                        style={{ textDecoration: 'none' }}
-                    >
-                        <Window>
-                            {!window.title && <Number>{`${index + 1}`}</Number>}
-                            {window.title && <Tre />}
-                        </Window>
-                        {window.title && <Ingress>{window.title}</Ingress>}
-                    </Link>
+                    </li>
                 ))}
             </Calendar>
         </Layout>
