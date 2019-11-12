@@ -5,7 +5,8 @@ post_day: 5
 title: Lost in branches?
 image: 'https://unsplash.com/photos/jcwIthC5oPI'
 ingress: 'First of all, this is not an git article.'
-authors: []
+authors:
+  - Erlend Faxvaag
 ---
 First of all, this is not an git article. This article will give a short introduction to a set of powerful trees, decision trees. We will briefly go through _what_ a decision tree is, and reasons for using these trees.
 
