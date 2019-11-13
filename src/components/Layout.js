@@ -36,7 +36,6 @@ const Header = styled.header`
 
 const Layout = ({ calendarName, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
-    console.log(calendarTitle);
     return (
         <Container>
             <GlobalStyles />

@@ -15,7 +15,6 @@ export const getWindowImagePlaceholder = index => {
 };
 
 export const mapCalendarToName = calendar => {
-    console.log(calendar);
     switch (calendar) {
         case 'javascript':
             return 'JavaScript Christmas';

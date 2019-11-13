@@ -26,12 +26,12 @@ const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
 
-    const windows = new Array(24).fill({
+    const calendarWindows = new Array(24).fill({
         title: '',
         day: '',
     });
     nodes.forEach(node => {
-        windows[node.frontmatter.post_day - 1] = {
+        calendarWindows[node.frontmatter.post_day - 1] = {
             title: node.frontmatter.title,
             day: node.frontmatter.post_day,
         };
@@ -40,21 +40,21 @@ const Template = ({ data, pageContext }) => {
     return (
         <Layout calendarName={pageContext.calendar}>
             <Calendar id="calendar">
-                {windows.map((window, index) => (
-                    <li key={window.title || index}>
-                        {window.title ? (
+                {calendarWindows.map((calendarWindow, index) => (
+                    <li key={calendarWindow.title || index}>
+                        {calendarWindow.title ? (
                             <CalendarWindowOpen
                                 link={createLink(
                                     pageContext.includeCalendarInPath,
                                     pageContext.calendar,
                                     pageContext.year,
-                                    window.day
+                                    calendarWindow.day
                                 )}
                                 imageUrl={getWindowImagePlaceholder(index)}
-                                title={window.title}
-                            ></CalendarWindowOpen>
+                                title={calendarWindow.title}
+                            />
                         ) : (
-                            <CalendarWindowClosed day={index + 1}></CalendarWindowClosed>
+                            <CalendarWindowClosed day={index + 1} />
                         )}
                     </li>
                 ))}

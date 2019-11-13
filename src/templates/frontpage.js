@@ -18,7 +18,7 @@ const Template = ({ pageContext }) => {
                                 link={link}
                                 imageUrl={getWindowImagePlaceholder(index)}
                                 title={link}
-                            ></CalendarWindowOpen>
+                            />
                         </li>
                     ))}
                 </Calendar>

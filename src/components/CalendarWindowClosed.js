@@ -18,7 +18,7 @@ const WindowClosed = styled.div`
 
 const CalendarWindowClosed = ({ day }) => {
     return (
-        <WindowClosed>
+        <WindowClosed aria-label={`Day ${day} is not yet available`}>
             <Number>{day}</Number>
         </WindowClosed>
     );

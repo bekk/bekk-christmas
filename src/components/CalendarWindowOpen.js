@@ -18,7 +18,7 @@ const Title = styled.span`
 const CalendarWindowOpen = ({ link, imageUrl, title }) => {
     return (
         <WindowOpen to={link} replace={false}>
-            <img src={imageUrl}></img>
+            <img src={imageUrl} />
             <Title>{title}</Title>
         </WindowOpen>
     );
