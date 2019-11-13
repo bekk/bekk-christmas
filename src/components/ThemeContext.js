@@ -25,11 +25,11 @@ export const ThemeProvider = ({ children, ...rest }) => {
     const [theme, setTheme] = React.useState(lightTheme);
 
     React.useEffect(() => {
-        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
         const handleChange = e => setTheme(e.matches ? darkTheme : lightTheme);
-        mq.addListener(handleChange);
-        setTheme(mq.matches ? darkTheme : lightTheme);
-        return () => mq.removeListener(handleChange);
+        mediaQuery.addListener(handleChange);
+        setTheme(mediaQuery.matches ? darkTheme : lightTheme);
+        return () => mediaQuery.removeListener(handleChange);
     }, []);
 
     const contextValue = {
