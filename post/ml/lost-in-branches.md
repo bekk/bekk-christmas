@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 5
 title: Lost in branches?
 image: 'https://unsplash.com/photos/jcwIthC5oPI'
-ingress: 'First of all, this is not an git article.'
+ingress: 'First of all, this is not an Git article.'
 authors:
   - Erlend Faxvaag
 ---
@@ -28,4 +28,4 @@ In the examples above the trees are only made up by one and two questions, and t
 
 However, trees are not always convenient. With lots of data and features, trees can be huge. They are also prone to overfitting. They get too familiar with training data, and when a real data sample is pushed through the tree, the _slightest_ of difference can send you down the wrong track and into a wrong classification. Let’s say you ask this question on seafood restaurant, the guests might not be vegetarian, but asking if they ate beef here will get us nowhere. 
 
-Many machine learning techniques are like a black box e.g. neural networks, we have no idea what conclusions the neural network drew. That's not the case with trees. We can easily visualize the decision, that's just the nature of the trees. By starting at the top and answering questions on our way down, we can see and understand each small decision made up by the tree. It's difficult to get lost, just follow the branch out of the tree.
+Many machine learning techniques are like a black box e.g. neural networks, we have no idea what conclusions the neural network drew. That's not the case with trees. We can easily visualize the decision, that's just the nature of the trees. By starting at the top and answering questions on our way down, we can see and understand each small decision made up by the tree. It's difficult to get lost, just follow the branch out of the tree. I would say it's easier to get lost in Git branches than in a decision tree.
