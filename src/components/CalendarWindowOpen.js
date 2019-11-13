@@ -2,15 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const WindowOpen = styled(Link)`
+const WindowOpen = styled(Link)(
+    ({ theme }) => `
     text-decoration: none;
-    color: black;
 
+    &,
     &:active,
     &:visited {
-        color: black;
+        color: ${theme.textColor};
     }
-`;
+`
+);
 const Title = styled.span`
     text-decoration: underline;
 `;
@@ -18,7 +20,7 @@ const Title = styled.span`
 const CalendarWindowOpen = ({ link, imageUrl, title }) => {
     return (
         <WindowOpen to={link} replace={false}>
-            <img src={imageUrl} />
+            <img src={imageUrl} alt="" />
             <Title>{title}</Title>
         </WindowOpen>
     );

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import * as colors from '../constants/colors';
 import * as fonts from '../constants/fonts';
 
-const ArticleBody = styled.article`
+const ArticleBody = styled.article(
+    ({ theme }) => `
     h2,
     h3,
     h4,
@@ -10,7 +10,7 @@ const ArticleBody = styled.article`
     h6,
     p,
     pre {
-        color: rgba(0, 0, 0, 0.85);
+        color: ${theme.textColor};
         margin: 1em 0 0.5em;
         word-wrap: break-word;
     }
@@ -32,7 +32,7 @@ const ArticleBody = styled.article`
         font-size: 34px;
     }
     p code {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: ${theme.secondaryBackgroundColor};
         padding: 3px 4px;
         margin: 0 2px;
     }
@@ -40,7 +40,7 @@ const ArticleBody = styled.article`
         width: 100%;
     }
     pre {
-        background: rgba(0, 0, 0, 0.05);
+        background-color: ${theme.secondaryBackgroundColor};
         padding: 1em;
         overflow-y: scroll;
     }
@@ -49,13 +49,14 @@ const ArticleBody = styled.article`
         line-height: 1.5;
     }
     a {
-        color: ${colors.primary};
+        color: ${theme.linkTextColor};
     }
     ul,
     ol {
         font-size: 21px;
         line-height: 1.58;
     }
-`;
+    `
+);
 
 export default ArticleBody;

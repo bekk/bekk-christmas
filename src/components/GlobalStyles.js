@@ -4,7 +4,8 @@ import normalize from 'styled-normalize';
 import '@bekk/storybook/build/lib/constants/styles.css';
 import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle(
+    ({ theme }) => `
   ${normalize}
 
   html {
@@ -14,8 +15,8 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    background: var(--main-color);
-    color: var(--contrast-color);
+    background: ${theme.primaryBackgroundColor};
+    color: ${theme.textColor};
     transition: background-color 0.3s var(--easing), color 0.5s var(--easing);
     font-family: FFDINWebProLight, sans-serif;
     font-size: 1.125em;
@@ -25,12 +26,13 @@ const GlobalStyles = createGlobalStyle`
   h2,
   h3 {
     line-height: 1.15;
-    font-family: NewZaldBook;
+    font-family: NewZaldBook, sans-serif;
   }
 
   img {
     max-width: 100%;
   }
-`;
+`
+);
 
 export default GlobalStyles;
