@@ -6,9 +6,9 @@ title: Style Transfer
 image: 'https://i.ibb.co/zQrVDCH/p4dxt4p43qv11.jpg'
 ingress: >-
   Usually we let neural networks adapt their parameters to data, for instance
-  images. Ever wondered what happens if we instead adapt the images so they
-  match the network? Style transfer applies the style of one image onto another,
-  and it's a crowd-pleaser.
+  images. Ever wondered what happens if we instead adapt images to match the
+  network? Style transfer applies the style of one image onto another, and it's
+  a crowd-pleaser.
 links:
   - title: A Neural Algorithm of Artistic Style
     url: 'https://arxiv.org/abs/1508.06576'
