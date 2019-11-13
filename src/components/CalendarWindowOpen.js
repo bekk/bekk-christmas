@@ -4,11 +4,11 @@ import { Link } from 'gatsby';
 
 const WindowOpen = styled(Link)`
     text-decoration: none;
-    color: black;
 
+    &,
     &:active,
     &:visited {
-        color: black;
+        color: ${({ theme }) => theme.textColor};
     }
 `;
 const Title = styled.span`
@@ -18,7 +18,7 @@ const Title = styled.span`
 const CalendarWindowOpen = ({ link, imageUrl, title }) => {
     return (
         <WindowOpen to={link} replace={false}>
-            <img src={imageUrl} />
+            <img src={imageUrl} alt="" />
             <Title>{title}</Title>
         </WindowOpen>
     );

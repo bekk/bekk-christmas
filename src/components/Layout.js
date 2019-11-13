@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { mapCalendarToName } from '../utils';
+import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import Tre from './Tre';
 
@@ -37,16 +38,18 @@ const Header = styled.header`
 const Layout = ({ calendarName, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
     return (
-        <Container>
-            <GlobalStyles />
-            {calendarTitle && (
-                <Header>
-                    <Tre />
-                    <h1>{calendarTitle}</h1>
-                </Header>
-            )}
-            <MainContent>{children}</MainContent>
-        </Container>
+        <ThemeProvider>
+            <Container>
+                <GlobalStyles />
+                {calendarTitle && (
+                    <Header>
+                        <Tre />
+                        <h1>{calendarTitle}</h1>
+                    </Header>
+                )}
+                <MainContent>{children}</MainContent>
+            </Container>
+        </ThemeProvider>
     );
 };
 

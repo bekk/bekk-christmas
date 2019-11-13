@@ -39,7 +39,7 @@ export const mapCalendarToName = calendar => {
         case 'ux':
             return 'UX Christmas';
         case 'css':
-            return 'CSS';
+            return 'CSS Christmas';
         default:
             return null;
     }

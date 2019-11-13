@@ -1,9 +1,10 @@
 // Tha colors
-export const primary = 'firebrick';
-export const primaryDark = '#ac0c0c';
+export const primary = 'var(--solnedgang)';
+export const primaryDark = 'var(--solnedgang-kontrast)';
 export const secondary = '#00997c';
 
 // Tha monochromes
-export const black = '#000';
+export const black = 'var(--svart)';
 export const darkGray = '#222';
-export const white = '#fff';
+export const lightGray = '#cecece';
+export const white = 'var(--hvit)';
