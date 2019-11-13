@@ -10,7 +10,7 @@ Like most machine learning methods, neural networks are general problem solvers 
 
 As it turns out, neurons close to the input look for lines, contrasts and gradients. The next layer of neurons will then look for patterns in these simple lines and contrasts. This makes the patterns increasingly complex as we get deeper into the network. [Zeiler, Matthew D., and Rob Fergus. “Visualizing and understanding convolutional networks”](https://link.springer.com/chapter/10.1007/978-3-319-10590-1_53) illustrates what the different layers might look for.
 
-![An early layer  of a neural network looks for simple shapes like lines and contrasts.](https://i.ibb.co/Mnn8TTm/Screenshot-2019-11-05-at-18-01-47.png)
+![An early layer  of a neural network looks for simple shapes like lines and contrasts.](https://i.ibb.co/k80z4Rr/bitmap.png)
 An early layer  of a neural network looks for simple shapes like lines and contrasts.
 
 ![Deeper in the network neurons are triggered by the presence of complex features like human or animal faces.](https://i.ibb.co/J25M3jS/Screenshot-2019-11-05-at-18-00-43.png)
