@@ -4,16 +4,18 @@ post_year: 2019
 post_day: 11
 title: Style Transfer
 image: 'https://i.ibb.co/zQrVDCH/p4dxt4p43qv11.jpg'
-ingress: ''
+ingress: >-
+  Usually we let neural networks adapt their parameters to data, for instance
+  images. Ever wondered what happens if we instead adapt the images so they
+  match the networks expectations? Style transfer tries to apply the style of
+  one image onto another, and it's a crowd-pleaser.
 links:
   - title: A Neural Algorithm of Artistic Style
     url: 'https://arxiv.org/abs/1508.06576'
 authors:
   - Torkil Aamodt
 ---
-Usually we let neural networks adapt their parameters to data, for instance images. Ever wondered what happens if we instead adapt the images so they match the networks expectations? [Style transfer](https://arxiv.org/abs/1508.06576) tries to apply the style of one image onto another, and it's a crowd-pleaser.
-
-To grasp style transfer, we must first understand what neurons inside the network represent. Let's focus on networks trained on images; those are easier to appreciate visually. Efforts have been made to understand what different neurons “looks for” in the input image. In other words; what patterns or objects must be present in the image for a given neuron to activate?
+To grasp [style transfer](https://arxiv.org/abs/1508.06576), we must first understand what neurons inside the network represent. Let's focus on networks trained on images; those are easier to appreciate visually. Efforts have been made to understand what different neurons “looks for” in the input image. In other words; what patterns or objects must be present in the image for a given neuron to activate?
 
 As it turns out, neurons close to the input look for lines, contrasts and gradients. The next layer of neurons will then look for patterns across these simple lines and contrasts. This makes the patterns increasingly complex as we get deeper into the network. [Zeiler, Matthew D., and Rob Fergus. “Visualizing and understanding convolutional networks”](https://link.springer.com/chapter/10.1007/978-3-319-10590-1_53) illustrates what the different layers might look for, shown below.
 
