@@ -3,6 +3,9 @@ calendar: ml
 post_year: 2019
 post_day: 11
 title: Artificial Brain Surgery
+links:
+  - title: A Neural Algorithm of Artistic Style
+    url: 'https://arxiv.org/abs/1508.06576'
 authors:
   - Torkil Aamodt
 ---
@@ -28,7 +31,4 @@ The style of Vincent van Gogh’s “The Starry Night” is transferred to a pho
                Alexander S. Ecker and
                Matthias Bethge. "A Neural Algorithm of Artistic Style"](https://arxiv.org/abs/1508.06576)
 
-Although neural style transfer has seen limited practical applications, it helps researchers broaden their understanding of how neural networks function and what they can do.
-
-![Google recently announced style transfer as a realtime feature for its streaming based gaming platform Stadia.](https://i.ibb.co/rdRD8ZP/ezgif-6-05d1ad1a598f.gif)
-Google recently announced [style transfer as a realtime feature](https://stadia.dev/blog/behind-the-scenes-with-stadias-style-transfer-ml/) for its streaming based gaming platform Stadia.
+[Google's gaming service Stadia aside](https://stadia.dev/blog/behind-the-scenes-with-stadias-style-transfer-ml/), neural style transfer is somewhat limited in terms of practical applications. As a tool for researchers and hobbyists to broaden their understanding of neural networks however, it's certainly a topic worth visiting.
