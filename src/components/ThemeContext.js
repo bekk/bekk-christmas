@@ -10,14 +10,18 @@ const themeConfigs = {
     [darkTheme]: {
         primaryBackgroundColor: colors.black,
         secondaryBackgroundColor: colors.darkGray,
+        contrastBackgroundColor: colors.yellow,
         textColor: colors.white,
         linkTextColor: colors.primary,
+        contrastTextColor: colors.black,
     },
     [lightTheme]: {
         primaryBackgroundColor: colors.white,
         secondaryBackgroundColor: colors.lightGray,
+        contrastBackgroundColor: colors.contrastYellow,
         textColor: colors.black,
         linkTextColor: colors.primary,
+        contrastTextColor: colors.black,
     },
 };
 
