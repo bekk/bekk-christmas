@@ -1,21 +1,27 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import { Link, graphql } from 'gatsby';
+
+import Layout from '../components/Layout';
+import Calendar from '../components/Calendar';
+import CalendarWindowOpen from '../components/CalendarWindowOpen';
+
+import { getWindowImagePlaceholder } from '../utils';
 
 const Template = ({ pageContext }) => {
     return (
         <Layout>
             {pageContext.calendarsWithContent && pageContext.calendarsWithContent.length > 0 && (
-                <article>
-                    <h2>Calendars with content</h2>
-                    <ul>
-                        {pageContext.calendarsWithContent.map(link => (
-                            <li>
-                                <Link to={link}>{link}</Link>
-                            </li>
-                        ))}
-                    </ul>
-                </article>
+                <Calendar>
+                    {pageContext.calendarsWithContent.map((link, index) => (
+                        <li key={link}>
+                            <CalendarWindowOpen
+                                link={link}
+                                imageUrl={getWindowImagePlaceholder(index)}
+                                title={link}
+                            />
+                        </li>
+                    ))}
+                </Calendar>
             )}
         </Layout>
     );

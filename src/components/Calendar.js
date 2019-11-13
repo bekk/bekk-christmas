@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export default styled.article`
-    max-width: 880px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+export default styled.ul`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 1fr;
+    list-style: none;
+    padding: 0;
 `;
