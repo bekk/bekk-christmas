@@ -34,7 +34,7 @@ export const frontpageQuery = graphql`
                 frontmatter: {
                     post_day: { eq: $day }
                     post_year: { eq: $year }
-                    calendar: { neq: null }
+                    calendar: { ne: null }
                 }
             }
         ) {
