@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Preview = ({ calendarsWithContent }) => {
     if (calendarsWithContent == null || calendarsWithContent.length === 0) {
-        return <div />;
+        return null;
     }
 
     return (

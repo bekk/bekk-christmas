@@ -28,9 +28,7 @@ const DailyWindowHeader = styled.h2`
 `;
 
 const Frontpage = ({ data, pageContext }) => {
-    const calendars = data.allMarkdownRemark.nodes
-        .filter(markdown => markdown.frontmatter.calendar != null)
-        .map(markdown => markdown.frontmatter);
+    const calendars = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter);
 
     const showTeaser = calendars.length === 0;
 
@@ -45,10 +43,14 @@ const Frontpage = ({ data, pageContext }) => {
                         <p>
                             288 articles, 24 days.
                             <br />
-                            Made with 🎅 in Oslo, Norway!{' '}
+                            Made with{' '}
+                            <span role="img" aria-label="christmas spirit">
+                                🎅
+                            </span>{' '}
+                            in Oslo and Trondheim, Norway!
                         </p>
                     </Description>
-                    <DailyWindowHeader>Dagens luke</DailyWindowHeader>
+                    <DailyWindowHeader>Dagens luker</DailyWindowHeader>
                     <Calendar>
                         {calendars.map((calendar, index) => (
                             <li key={calendar.calendar}>
