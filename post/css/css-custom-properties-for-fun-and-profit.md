@@ -2,9 +2,12 @@
 calendar: css
 post_year: 2019
 post_day: 2
-title: CSS custom properties for fun and profit
+title: Switch it up with CSS custom properties
 image: >-
   https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
+ingress: >-
+  Custom properties doesn't look like much, but is one of the real super powers
+  of CSS. Let's see what it's all about!
 links:
   - title: Lea Verou's talk
     url: 'https://www.youtube.com/watch?v=2an6-WVPuJU'
@@ -14,7 +17,7 @@ links:
 authors:
   - Kristofer Giltvedt Selbekk
 ---
-I'm currently working on a client's design systems team. It's a lot of fun. We have the opportunity to implement something without thinking about IE11 - and it's been a blast. This presented us with the option to play with the power of the so-called dynamic properties of CSS - and see how they can be used to improve the readability, maintainability and flexibility of the system.
+I'm currently working on a client's design systems team. It's a lot of fun. We have the opportunity to implement something completely from scratch - and it's been a blast. This presented us with the option to play with the power of the so-called dynamic properties of CSS - and see how they can be used to improve the readability, maintainability and flexibility of the system.
 
 ## What are custom properties? 
 
@@ -126,16 +129,51 @@ Now, if we wrap our previous classes in this class, we get the updated values au
 
 This is an incredibly powerful pattern that can create some really nice-looking effects. In addition, you barely add a byte to your CSS, and your code is still super-readable.
 
-## Update with JavaScript
+## Theming
 
-If you want to implement different themes in your application, changing the colors are now as easy as adding a top-level class. If you want to be a bit more dynamic, however, you can also change them via JavaScript. To change the top level `:root` ones, you can update them with the `setProperty` API of the `document.body` property, like so:
+With a nicely thought out group of global custom properties in your arsenal, global theming becomes a case of a few lines of code. We can use the same technique as before, but place our modifier class on the `<body />`-tag for example.
+
+We simply change the values of our custom properties, like so:
 
 ```js
-const bodyStyles = document.documentElement.style;
-bodyStyles.setProperty('--primary-text-color', 'black');
-bodyStyles.setProperty('--primary-background-color', 'peachpuff');
+.high-contrast-theme {
+  --primary-background-color: black;
+  --primary-text-color: white;
+  --secondary-background-color: white;
+  --secondary-text-color: black;
+  --tertiary-background-color: black;
+  --tertiary-text-color: yellow;
+}
+.christmas-theme {
+  --primary-background-color: red;
+  --primary-text-color: white;
+  --secondary-background-color: white;
+  --secondary-text-color: red;
+  --tertiary-background-color: green;
+  --tertiary-text-color: white;
+}
 ```
 
+That's really all there is to it. Since we're using the custom properties in the rest of the code, these will be updated automatically.
+
+### Preferred theming - also known as dark mode!
+
+Most sites doesn't have the time or need for several themes - but since iOS 13 came out, dark mode has become _really_ popular. Implementing it is now as easy as a single media query!
+
+```css
+@media screen and (prefers-color-scheme: dark) {
+  ::root {
+    --primary-background-color: #0E0E0E;
+    --primary-text-color: #FFFFFF;
+    --secondary-background-color: #000000;
+    --secondary-text-color: #EEEEEE;
+    --tertiary-background-color: #FFFFFF;
+    --tertiary-text-color: #FF8034;
+  }
+}
+```
+
+Just remember that you also need to change the values in lower-level overrides, like the `.popout-section` above. Otherwise, it's smooth sailing.
 
 ## Bonus tip - use with inline styles too!
 
