@@ -25,6 +25,15 @@ const Ingress = styled.p`
     font-size: 22px;
 `;
 
+const RelevantLinksContainer = styled.section(
+    ({ theme }) => `
+    a {
+        color: ${theme.linkTextColor};
+        margin-right:2em;
+    }
+    `
+);
+
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
@@ -50,12 +59,12 @@ const Template = ({ data }) => {
                 <Ingress>{ingress}</Ingress>
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
                 {links && links.length > 0 && (
-                    <>
+                    <RelevantLinksContainer>
                         <h2>Relevant links</h2>
                         {links.map(link => (
                             <a href={link.url}>{link.title}</a>
                         ))}
-                    </>
+                    </RelevantLinksContainer>
                 )}
             </MaxWidth>
         </Layout>
