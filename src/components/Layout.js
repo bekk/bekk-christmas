@@ -5,6 +5,7 @@ import { mapCalendarToName } from '../utils';
 import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import Tre from './Tre';
+import { SkipToContent, MainContentWrapper } from './SkipToContent';
 
 const Container = styled.div`
     display: flex;
@@ -12,7 +13,7 @@ const Container = styled.div`
     min-height: 100vh;
 `;
 
-const MainContent = styled.main`
+const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
     max-width: 1000px;
@@ -39,6 +40,7 @@ const Layout = ({ calendarName, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
     return (
         <ThemeProvider>
+            <SkipToContent />
             <Container>
                 <GlobalStyles />
                 {calendarTitle && (
