@@ -30,7 +30,7 @@ const Template = ({ pageContext }) => {
 export const frontpageQuery = graphql`
     query FrontPage($day: Int!, $year: Int!) {
         allMarkdownRemark(
-            filter: { frontmatter: { post_day: { eq: $day }, post_year: { eq: $year } }, { calendar: { eq: null } } }
+            filter: { frontmatter: { post_day: { eq: $day }, post_year: { eq: $year } }, calendar: { eq: null } }
         ) {
             nodes {
                 frontmatter {
