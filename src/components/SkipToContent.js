@@ -39,6 +39,10 @@ export const SkipToContent = () => (
     </Container>
 );
 
-export const MainContentWrapper = props => {
-    return <main id="main-content">{props.children}</main>;
+export const MainContentWrapper = ({ children, ...rest }) => {
+    return (
+        <main id="main-content" {...rest}>
+            {children}
+        </main>
+    );
 };
