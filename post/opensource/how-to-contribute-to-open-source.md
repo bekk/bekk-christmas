@@ -4,22 +4,20 @@ post_year: 2019
 post_day: 1
 title: How to contribute to Open source
 ingress: >-
-    We think Open source is such an important part of a developer’s life that
-    we’ve devoted an entire advent calendar to the subject! For a lot of
-    developers, the thought of putting your code or ideas out there for the whole
-    community to see, can be daunting. Once you get the hang of it and get more
-    comfortable though, it has a tendency to drag you in. Let's start by going
-    through your first steps towards your first contribution.
+  We think Open source is such an important part of a developer’s life that
+  we’ve devoted an entire advent calendar to the subject! For a lot of
+  developers, the thought of putting your code or ideas out there for the whole
+  community to see, can be daunting. Once you get the hang of it and get more
+  comfortable though, it has a tendency to drag you in. Let's start by going
+  through your first steps towards your first contribution.
 links:
-    - title: Firsttimersonly
-      body: A site that helps you find your first issue.
-      url: 'https://www.firsttimersonly.com/'
-    - title: Search GitHub for good first issues
-      body: The URL opens a GitHub search on open issues marked as 'good-first-issue'.
-      url: >-
-          https://github.com/search?q=label%3Agood-first-issue&state=open&type=Issues
+  - title: Firsttimersonly
+    url: 'https://www.firsttimersonly.com/'
+  - title: Search GitHub for good first issues
+    url: >-
+      https://github.com/search?q=label%3Agood-first-issue&state=open&type=Issues
 authors:
-    - Henrik Walker Moe
+  - Henrik Walker Moe
 ---
 
 ## Getting started
@@ -52,7 +50,7 @@ Choose a [Git-workflow](https://bocoup.com/blog/git-workflow-walkthrough-feature
 
 When picking an issue and committing time to work on it, it's good practice to write a comment on the issue stating that you're keen on helping out. This let's the repository maintainers know that someone's working on it, they might even assign you to the issue 😀
 
-_Tip: reference your pull request and issue by using `#<issue/pull request id>`. This generates a link to the issue/pull request._
+_Tip: refer your pull request and issue by using `#<issue/pull request id>`. This generates a link to the issue/pull request._
 
 ### Create a pull request
 
