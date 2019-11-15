@@ -7,13 +7,23 @@ import teaser2Src from '../images/teaser-2.jpg';
 import teaser3Src from '../images/teaser-3.jpg';
 
 const Container = styled.main`
-    margin: 180px auto;
+    margin: 64px auto;
     max-width: 1200px;
+    padding: 0 1em;
+
+    @media screen and (min-width: 800px) {
+        margin: 180px auto;
+        padding: 0;
+    }
 `;
 const Heading = styled.h1`
     font-family: NewzaldBook, serif;
-    font-size: 90px;
+    font-size: 60px;
     font-weight: normal;
+
+    @media screen and (min-width: 800px) {
+        font-size: 90px;
+    }
 `;
 const ImagePotpourri = styled.section`
     position: relative;
@@ -29,8 +39,12 @@ const Image = styled.img`
     }
 `;
 const Paragraph = styled.p`
-    font-size: 45px;
+    font-size: 26px;
     font-weight: 300;
+
+    @media screen and (min-width: 800px) {
+        font-size: 45px;
+    }
 `;
 
 const slideFade = keyframes`
