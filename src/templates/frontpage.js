@@ -8,6 +8,7 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
 import { getWindowImagePlaceholder } from '../utils';
 import Preview from './Preview';
+import { Teaser } from '../components/Teaser';
 
 const Header = styled.h1`
     font-size: 2em;
@@ -32,38 +33,36 @@ const Frontpage = ({ data, pageContext }) => {
 
     const showTeaser = calendars.length === 0;
 
+    if (showTeaser) {
+        return <Teaser />;
+    }
+
     return (
         <Layout>
-            {showTeaser ? (
-                <div />
-            ) : (
-                <>
-                    <Description>
-                        <Header>Bekk Christmas</Header>
-                        <p>
-                            288 articles, 24 days.
-                            <br />
-                            Made with{' '}
-                            <span role="img" aria-label="christmas spirit">
-                                🎅
-                            </span>{' '}
-                            in Oslo and Trondheim, Norway!
-                        </p>
-                    </Description>
-                    <DailyWindowHeader>Dagens luker</DailyWindowHeader>
-                    <Calendar>
-                        {calendars.map((calendar, index) => (
-                            <li key={calendar.calendar}>
-                                <CalendarWindowOpen
-                                    link={`${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
-                                    imageUrl={getWindowImagePlaceholder(index)}
-                                    title={calendar.calendar}
-                                />
-                            </li>
-                        ))}
-                    </Calendar>
-                </>
-            )}
+            <Description>
+                <Header>Bekk Christmas</Header>
+                <p>
+                    288 articles, 24 days.
+                    <br />
+                    Made with{' '}
+                    <span role="img" aria-label="christmas spirit">
+                        🎅
+                    </span>{' '}
+                    in Oslo and Trondheim, Norway!
+                </p>
+            </Description>
+            <DailyWindowHeader>Dagens luker</DailyWindowHeader>
+            <Calendar>
+                {calendars.map((calendar, index) => (
+                    <li key={calendar.calendar}>
+                        <CalendarWindowOpen
+                            link={`${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
+                            imageUrl={getWindowImagePlaceholder(index)}
+                            title={calendar.calendar}
+                        />
+                    </li>
+                ))}
+            </Calendar>
             <Preview calendarsWithContent={pageContext.calendarsWithContent} />
         </Layout>
     );
