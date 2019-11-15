@@ -13,7 +13,6 @@ const Container = styled.main`
 
     @media screen and (min-width: 800px) {
         margin: 180px auto;
-        padding: 0;
     }
 `;
 const Heading = styled.h1`
@@ -84,9 +83,13 @@ export const Teaser = () => {
                 </SpectacularEntrance>
                 <SpectacularEntrance from="bottom">
                     <ImagePotpourri>
-                        <Image src={teaser1Src} alt="" style={{ top: '140px', left: '66px' }} />
+                        <Image
+                            src={teaser1Src}
+                            alt=""
+                            style={{ zIndex: 2, top: '140px', left: '66px' }}
+                        />
                         <Image src={teaser2Src} alt="" style={{ top: '250px', right: '250px' }} />
-                        <Image src={teaser3Src} alt="" style={{ right: 0 }} />
+                        <Image src={teaser3Src} alt="" style={{ zIndex: 2, right: 0 }} />
                     </ImagePotpourri>
                 </SpectacularEntrance>
             </Container>
