@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
+import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import teaser1Src from '../images/teaser-1.jpg';
@@ -28,15 +29,66 @@ const ImagePotpourri = styled.section`
     position: relative;
     min-height: 500px;
 `;
-const Image = styled.img`
+const Image = styled.img(
+    ({ index }) => `
     width: 100%;
-    margin-bottom: 1em;
+    position: relative;
+
+    ${
+        index === 2
+            ? `
+      left: -1em;
+      top: -50px;
+  `
+            : ''
+    }
+
+  ${
+      index === 3
+          ? `
+      right: -1em;
+      top: -200px;
+  `
+          : ''
+  }
+
     @media screen and (min-width: 800px) {
         width: 500px;
         height: 500px;
         position: absolute;
+
+        ${
+            index === 1
+                ? `
+            top: 140px;
+            left: 66px;
+            z-index: 2;
+        `
+                : ''
+        }
+
+        ${
+            index === 2
+                ? `
+            top: 250px;
+            left: unset;
+            right: 250px;
+        `
+                : ''
+        }
+
+        ${
+            index === 3
+                ? `
+            right: 0;
+            top: unset;
+            z-index: 2;
+        `
+                : ''
+        }
     }
-`;
+`
+);
 const Paragraph = styled.p`
     font-size: 26px;
     font-weight: 300;
@@ -68,6 +120,9 @@ export const Teaser = () => {
     return (
         <ThemeProvider>
             <GlobalStyles />
+            <Helmet>
+                <title>Introducing a Bekk Christmas..</title>
+            </Helmet>
             <Container>
                 <SpectacularEntrance fade>
                     <Heading>12 calendars. 24 days. 288 articles.</Heading>
@@ -81,17 +136,36 @@ export const Teaser = () => {
                 <SpectacularEntrance fade delay="2s">
                     <Paragraph>The fun starts on December 1st.</Paragraph>
                 </SpectacularEntrance>
-                <SpectacularEntrance from="bottom">
-                    <ImagePotpourri>
-                        <Image
-                            src={teaser1Src}
-                            alt=""
-                            style={{ zIndex: 2, top: '140px', left: '66px' }}
-                        />
-                        <Image src={teaser2Src} alt="" style={{ top: '250px', right: '250px' }} />
-                        <Image src={teaser3Src} alt="" style={{ zIndex: 2, right: 0 }} />
-                    </ImagePotpourri>
-                </SpectacularEntrance>
+                <ImagePotpourri>
+                    <SpectacularEntrance
+                        src={teaser1Src}
+                        alt=""
+                        index={1}
+                        as={Image}
+                        from="bottom"
+                        fade
+                        delay="1.5s"
+                    />
+
+                    <SpectacularEntrance
+                        src={teaser2Src}
+                        alt=""
+                        index={2}
+                        as={Image}
+                        from="bottom"
+                        fade
+                        delay="1.2s"
+                    />
+                    <SpectacularEntrance
+                        src={teaser3Src}
+                        alt=""
+                        index={3}
+                        as={Image}
+                        from="bottom"
+                        fade
+                        delay="1.7s"
+                    />
+                </ImagePotpourri>
             </Container>
         </ThemeProvider>
     );
