@@ -24,6 +24,8 @@ Let’s look at an example.
 
 As one can see in the figure above, the original data set has been projected onto another sub space with two principal components. This is nothing special in itself, however if we view each principal component by itself we can see that 
 
+TODOOOO
+
 ![](/assets/screenshot-2019-11-12-at-19.11.12.png)
 
 ![]()
