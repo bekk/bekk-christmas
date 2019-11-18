@@ -1,4 +1,3 @@
-require('prismjs/themes/prism-solarizedlight.css');
 import { globalHistory } from '@reach/router';
 
 export const onInitialClientRender = () => {
