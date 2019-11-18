@@ -3,6 +3,12 @@ import * as fonts from '../constants/fonts';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
+    h1,
+    table {
+        max-width:759px;
+        margin-left:auto;
+        margin-right:auto;
+    }
     h2,
     h3,
     h4,
@@ -11,8 +17,11 @@ const ArticleBody = styled.article(
     p,
     pre {
         color: ${theme.textColor};
-        margin: 1em 0 0.5em;
+        margin: 1em 0 0.5em 0;
         word-wrap: break-word;
+        max-width:759px;
+        margin-left:auto;
+        margin-right:auto;
     }
     h2,
     h3,

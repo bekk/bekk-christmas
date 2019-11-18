@@ -11,7 +11,6 @@ const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
 
 const MaxWidth = styled.article`
-    max-width: 700px;
     margin: 2em auto;
 `;
 
@@ -19,10 +18,15 @@ const HeroImage = styled.img`
     width: 100%;
     height: 400px;
     object-fit: cover;
+    margin: 50px 0;
 `;
 
 const Ingress = styled.p`
     font-size: 22px;
+
+    max-width: 759px;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 const RelevantLinksContainer = styled.section(
@@ -33,6 +37,12 @@ const RelevantLinksContainer = styled.section(
     }
     `
 );
+
+const TitleContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
@@ -47,6 +57,9 @@ const Template = ({ data }) => {
                 <meta property="og:description" content={ingress} />
                 <meta property="og:image" content={image} />
             </Helmet>
+            <TitleContainer>
+                <h1>{title}</h1>
+            </TitleContainer>
             <MaxWidth>
                 {fields && fields.enrichedAuthors && (
                     <AuthorInfo
