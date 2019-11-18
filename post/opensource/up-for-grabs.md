@@ -30,7 +30,7 @@ Rultor need write-access to the repository to publish tags and gh-releases, so I
 
 Now I can comment this in an issue after merging a PR:
 
-``` @rultor release, tag=\`0.9.0\` ```
+``` @rultor release, tag=`0.9.0` ```
 
 [no.bekk.bekkopen:nocommons:0.9.0](https://github.com/bekkopen/NoCommons/releases/tag/0.9.0)
 
