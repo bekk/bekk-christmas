@@ -3,7 +3,7 @@ calendar: opensource
 post_year: 2019
 post_day: 3
 title: ChatOps bekkopen/NoCommons
-image: ''
+image: 'https://imgur.com/IEDU3cw'
 ingress: >-
   Releasing to Sonatype is for some a daunting task. You need gpg-keys generated
   and distributed, username and password stored on a developers computer and a
