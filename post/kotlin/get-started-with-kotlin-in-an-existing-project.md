@@ -5,8 +5,8 @@ post_day: 1
 title: Get started with Kotlin!
 image: 'https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg'
 ingress: >-
-  Welcome to the Bekk 2019 Kotlin christmas calender! In the days leading up to
-  christmas, we will present you with 24 articles, one for each day, about
+  Welcome to the Bekk 2019 Kotlin advent calendar! In the days leading up to
+  Christmas, we will present you with 24 articles, one for each day, about
   different topics regarding Kotlin. To start of, we would like to show you how
   to get started with Kotlin in your existing Java project.
 links:
@@ -100,7 +100,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
             - java
   ```
 
-  If you are not using the default convention, you have to update the `sourceSets` property like this:
+  If you are not using the default convention, you have to update the `sourceSets` property in `build.gradle` like this:
   ```
   sourceSets {
     main.kotlin.srcDirs += 'src/main/myKotlin'
@@ -110,8 +110,8 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
 
   For a more in depth explanation of how to set up kotlin with gradle, have a look here: [Using Gradle](https://kotlinlang.org/docs/reference/using-gradle.html).
 
-## Create your first kotlinfile
-
-Depending on how you decided to set up your project in the previous step, either by adding Kotlin sources together with Java sources or by adding a separate folder for Kotlin sources, now its time to create your first Kotlin file to the project!
-
-In IntelliJ, simply right click the folder where you want to add the new Kotlin file, select New -> Kotlin File/Class.
+## And that's all!
+You're now all set to write whatever you want in Kotlin, and to tackle the rest of our advent calendar. To get you started with actually writing some code, have a look at the links below, which are all great for beginners:
+- [Starting a project from scratch](https://kotlinlang.org/docs/tutorials/getting-started.html).
+- [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) is one of the most popular and most effective ways to get into Kotlin for people who already know Java.
+- And of course, the [Kotlin documentation](https://kotlinlang.org/docs/reference/).
