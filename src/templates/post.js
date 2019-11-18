@@ -7,6 +7,8 @@ import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
 
+require('prismjs/themes/prism-solarizedlight.css');
+
 const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
 
