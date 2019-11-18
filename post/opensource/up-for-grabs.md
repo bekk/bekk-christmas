@@ -13,7 +13,8 @@ links:
     url: 'https://github.com/bekkopen/NoCommons/'
   - title: Rultor
     url: 'https://www.rultor.com/'
-authors: []
+authors:
+  - Eivind Bergstøl
 ---
 When maintaining a small, quite static, open source library on github, we need a smooth automatic release-path that is easy and fast to use when a release has to be published. Maybe I changed my computer since last time and need to restore gpg-keys, or even worse, generate new keys and distribute them. And when time goes by, a new maintainer steps up and need to release. How was that done again?
 
