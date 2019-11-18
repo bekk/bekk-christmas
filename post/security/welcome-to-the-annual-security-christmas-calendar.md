@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2019
 post_day: 1
-title: Welcome to the annual security Christmas calendar
+title: 'WIP: Welcome to the annual security Christmas calendar'
 ingress: >-
   Welcome to the annual security Christmas calendar. This year we are excited to
   present a wide selection of topics, ranging from insightful reports from the
