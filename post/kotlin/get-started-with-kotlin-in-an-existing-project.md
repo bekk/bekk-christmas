@@ -111,7 +111,7 @@ We'll go through how to set up Kotlin in both an existing Gradle and Maven proje
   For a more in depth explanation of how to set up kotlin with gradle, have a look here: [Using Gradle](https://kotlinlang.org/docs/reference/using-gradle.html).
 
 ## And that's all!
-You're now all set to write whatever you want in Kotlin, and to tackle the rest of our advent calendar. To get you started with actually writing some code, have a look at some of the links below, which are all great for beginners:
+You're now all set to write whatever you want in Kotlin, and to tackle the rest of our advent calendar. To get you started with actually writing some code, have a look at the links below, which are all great for beginners:
 - [Starting a project from scratch](https://kotlinlang.org/docs/tutorials/getting-started.html).
 - [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) is one of the most popular and most effective ways to get into Kotlin for people who already know Java.
 - And of course, the [Kotlin documentation](https://kotlinlang.org/docs/reference/).
