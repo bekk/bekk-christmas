@@ -51,6 +51,8 @@ const Template = ({ data }) => {
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const { calendar, title, ingress, image, links } = frontmatter;
 
+    const htmlWithImageStyling = html.replace('<p><img', '<p class="p-with-img"><img');
+
     return (
         <Layout calendarName={calendar}>
             <Helmet>
@@ -72,7 +74,7 @@ const Template = ({ data }) => {
                 )}
                 <HeroImage src={image || fallbackImage} alt="" />
                 <Ingress>{ingress}</Ingress>
-                <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+                <ArticleBody dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
                         <h2>Relevant links</h2>

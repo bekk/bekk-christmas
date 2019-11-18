@@ -4,7 +4,8 @@ import * as fonts from '../constants/fonts';
 const ArticleBody = styled.article(
     ({ theme }) => `
     h1,
-    table {
+    table,
+    div{
         max-width:759px;
         margin-left:auto;
         margin-right:auto;
@@ -64,6 +65,12 @@ const ArticleBody = styled.article(
     ol {
         font-size: 21px;
         line-height: 1.58;
+    }
+    .gatsby-highlight{
+        margin:50px auto;
+    }
+    .p-with-img{
+        max-width: 1258px;
     }
     `
 );
