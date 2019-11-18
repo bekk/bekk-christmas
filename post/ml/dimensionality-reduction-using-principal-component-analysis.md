@@ -15,7 +15,7 @@ Let’s look at an example.
 
 ![](/assets/screenshot-2019-11-12-at-18.03.52.png "A projection of data onto a new subspace using PCA. The tool used for visualization can be found at http://setosa.io/ev/principal-component-analysis/")
 
-As one can see in the figure above, the original data set has been projected onto another sub space with two principal components. This might not look like something special at first glance, however if we view each principal component by itself we can see that first principal component accounts for most of the variance in the data. It is barely possible to distinguish the data points in the second one and therefore can just be discarded. This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the data.
+As one can see in the figure above, the original data set has been projected onto another sub space with two principal components. This might not look like something special at first glance, however if we view each principal component by itself we can see that first principal component accounts for most of the variance in the data. It is barely possible to distinguish the data points in the second one and it can therefore just be discarded. This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the data.
 
 TODOOOO: Credit på bilder osv.
 
