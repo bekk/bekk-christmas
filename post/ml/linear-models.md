@@ -3,9 +3,11 @@ calendar: ml
 post_year: 2019
 post_day: 3
 title: Linear Models
+ingress: >-
+  There are many different types of machine learning models. Linear models are
+  one of the simplest, but also one of the most widely used. In this post we’ll
+  explain what a linear model is and why linear models are so popular.
 ---
-There are many different types of machine learning models. Linear models are one of the simplest, but also one of the most widely used. In this post we’ll explain what a linear model is and why linear models are so popular.
-
 Let's say you are going on a 100 km road trip, and you want to know how much money you should expect to spend on gas. Unfortunately for you, there is no information on the fuel efficiency of your car, so you can't simply calculate the number.
 
 Fortunately for you, however, you have recorded the distance traveled and gas usage for previous roadtrips. Using this data, it might be possible to build some model that can be used to predict roughly how much gas you would expect to need for your road trip.
