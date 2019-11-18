@@ -7,7 +7,7 @@ image: screenshot-2019-11-18-at-10.04.38.png
 ingress: >-
   Releasing to Sonatype is for some a daunting task. You need gpg-keys generated
   and distributed, username and password stored on a developers computer and a
-  bit of maven knowhow. But with @Rultor til goes away!
+  bit of maven knowhow. But with @Rultor this goes away!
 links:
   - title: NoCommons
     url: 'https://github.com/bekkopen/NoCommons/'
