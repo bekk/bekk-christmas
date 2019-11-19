@@ -27,9 +27,8 @@ This talk (and the related [blog post](https://phauer.com/2018/best-practices-un
 [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer
 
 ## Kotlin Puzzlers
-A tradition in the making? This was the second edition of the Kotlin Puzzlers, and a quick check confirms that there will be a third edition this year. Anton Keks presented absurd snippets of code and challenged the the audience vote for what the result would be. After the answer was reviled an audience member volunteered to explain why   
+A tradition in the making? This was the second edition of the Kotlin Puzzlers, and the [schedule](https://kotlinconf.com/talks/6-dec/101328) confirms that there will be a third edition this year. Anton Keks presented absurd snippets of code and challenged the to audience vote for the correct result when running the code. After the answer was reviled, an audience member volunteered to explain the result.    
 
-The first puzzler, could you explain what answer it would give and why? There may be some Estonian liqueur in it for you if you do...  
 ```
 fun hello(): Boolean {
   println(print("Hello") == print("World") == return false)
@@ -43,9 +42,13 @@ hello()
 // c) HelloWorldtrue
 // d) will not compile 
 ```   
+This was the first puzzler, can you explain what answer it will give and why? There may be some Estonian liqueur in it for you if you do...  
 
-For more Puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9vBZs0j-8) by Anton Keks
+For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9vBZs0j-8) by Anton Keks
 
+
+
+This 
 
 TODO: 
 
