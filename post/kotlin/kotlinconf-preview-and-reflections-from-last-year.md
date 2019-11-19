@@ -5,9 +5,9 @@ post_day: 4
 title: '''Twas the night before KotlinConf'
 image: 'https://i.imgur.com/I8uhLjx.jpg'
 ingress: >-
-  'Twas the night before KotlinConf when half a dozen developers from Bekk set
-  afoot on a journey. Leaving the snow clad north behind, heading for warmer
-  shores of sealed classes, co-routines and extension functions in Copenhagen. 
+  'Twas the night before KotlinConf when we began on a journey. Leaving the snow
+  clad north behind, heading for warmer shores of sealed classes, co-routines
+  and extension functions in Copenhagen. 
 
 
   Tomorrow the festivities, that are KotlinConf 2019, are upon us. And in that
@@ -16,18 +16,20 @@ ingress: >-
 links: []
 authors: []
 ---
-KotlinConf 2018 was held over two days in the Beurs van Berlage in central Amsterdam. After the keynote there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend. But choices were made, and we will try to present some 
+KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend. But choices were made, and we will try to present some of the talks here we . 
 
 
 
 ## Best Practises for Unit Testing in Kotlin
-This talk (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) has had direct . In a world were Java-developers are 
+related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)
+* har vært nyttig på prosjekt som gikk fra java til kotlin
+* bruker kotlins styrker i samarbeid med junit 5 (som er utviklet med tanke på kotlin)
 
 
 [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer
 
 ## Kotlin Puzzlers
-A tradition in the making? This was the second edition of the Kotlin Puzzlers, and the [schedule](https://kotlinconf.com/talks/6-dec/101328) confirms that there will be a third edition this year. Anton Keks presented absurd snippets of code and challenged the to audience vote for the correct result when running the code. After the answer was reviled, an audience member volunteered to explain the result.    
+A tradition in the making? This was the second edition of the Kotlin Puzzlers, and the [schedule](https://kotlinconf.com/talks/6-dec/101328) confirms that there will be a third edition this year. Anton Keks presented absurd snippets of code and challenged the audience to vote for the correct result when running the code. After the answer was reviled, an audience member volunteered to explain the result.    
 
 ```
 fun hello(): Boolean {
@@ -48,14 +50,16 @@ For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9v
 
 
 
-This 
+
+If your are interested in more, you can find more videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more talks in Copenhagen the next couple of days. We hope to see you there!
+
+### Happy KotlinConf!
 
 TODO: 
 
-* litt om de forskjellige talks/fordrag (skal noen erstattes?)
-* litt om det sosiale, nye bekjente på konferansen(?)
+* litt om fire forskjellige talks/fordrag (skal noen erstattes?)
 
-Lenker:
+Lenker til fire kandidater:
 
 * [Beat the High-Score: Build a Game Using libGDX and Kotlin](https://www.youtube.com/watch?v=kDxerDYelLs) by David Wursteisen\
   Game development
@@ -66,8 +70,6 @@ Lenker:
 * [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9vBZs0j-8) by Anton Keks\
   A tradition in the making? A fun way to end the conference. 
 
-You can find more videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). 
 
-### Happy KotlinConf!
 
 
