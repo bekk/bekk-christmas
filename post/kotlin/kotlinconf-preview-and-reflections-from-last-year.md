@@ -16,11 +16,10 @@ ingress: >-
 links: []
 authors: []
 ---
-KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). But choices were made, and we will try to present some of them here.
+KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote kicked off the conference, there were four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). But choices were made, and we will try to present some of the talks here.
 
 ## Best Practises for Unit Testing in Kotlin
-
-related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)
+Some talks are fun, some are inspiring and some are downright useful. Working on a team that was in the transition from Java to Kotlin, this talk by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing unit tests.    
 
 * har vært nyttig på prosjekt som gikk fra java til kotlin
 * bruker kotlins styrker i samarbeid med junit 5 (som er utviklet med tanke på kotlin)
