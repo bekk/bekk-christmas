@@ -51,7 +51,7 @@ For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9v
 
 
 
-#### If your are interested in more, you can find videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more Kotlin in Copenhagen the next couple of days. We hope to see you there!
+##### If your are interested in more, you can find videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more Kotlin in Copenhagen the next couple of days. We hope to see you there!
 
 ### Happy KotlinConf!
 
