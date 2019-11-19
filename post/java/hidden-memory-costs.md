@@ -16,7 +16,7 @@ links:
     url: >-
       https://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/
 authors:
-  - Tia Helene Firing
+  - Tia Firing
 ---
 50 years ago humans managed to land on the moon using a [guidance computer](https://www.bbc.com/future/article/20190704-apollo-in-50-numbers-the-technology) with no more than 4KB RAM. During these 50 years memory has become a lot cheaper, and the need for writing memory efficient code is not that critical anymore. Today, your simplest Hello World SpringBoot app will probably use at least 100MB RAM. But still, sometimes, typically when we realize that we have to provide even more memory for an application, we can not help but wonder: Why in the world should this app need so much memory?! 
 
