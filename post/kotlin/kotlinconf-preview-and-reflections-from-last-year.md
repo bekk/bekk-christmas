@@ -16,7 +16,7 @@ ingress: >-
 links: []
 authors: []
 ---
-KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend. But choices were made, and we will try to present some of the talks here we . 
+KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or write about). But choices were made, and we will try to present some of them here.
 
 
 
