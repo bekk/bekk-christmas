@@ -32,6 +32,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -80,6 +81,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -128,6 +130,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -176,6 +179,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -224,6 +228,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -272,6 +277,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -320,6 +326,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -368,6 +375,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -416,6 +424,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -464,6 +473,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -512,6 +522,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
@@ -560,6 +571,7 @@ collections:
           - { name: title, label: Title }
           - { name: image, label: 'Link to image', required: false }
           - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
           - { name: body, label: Body, widget: markdown }
           - name: links
             label: 'Relevant links'
