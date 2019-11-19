@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import remark from 'remark';
+import recommended from 'remark-preset-lint-recommended';
+import remarkHtml from 'remark-html';
 
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
@@ -23,7 +26,7 @@ const HeroImage = styled.img`
     object-fit: cover;
 `;
 
-const Ingress = styled.p`
+const Ingress = styled.section`
     font-size: 22px;
 `;
 
@@ -40,6 +43,12 @@ const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const { calendar, description, title, ingress, image, links } = frontmatter;
+
+    const ingressHtml = remark()
+        .use(recommended)
+        .use(remarkHtml)
+        .processSync(ingress)
+        .toString();
 
     return (
         <Layout calendarName={calendar}>
@@ -58,8 +67,10 @@ const Template = ({ data }) => {
                     />
                 )}
                 <HeroImage src={image || fallbackImage} alt="" />
-                <Ingress dangerouslySetInnerHTML={{ __html: ingress }} />
-                <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+                <ArticleBody>
+                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
+                    <section dangerouslySetInnerHTML={{ __html: html }} />
+                </ArticleBody>
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
                         <h2>Relevant links</h2>
