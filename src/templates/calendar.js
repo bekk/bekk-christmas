@@ -7,6 +7,7 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
 
 import { getWindowImagePlaceholder } from '../utils';
+import { Teaser } from '../components/Teaser';
 
 const createLink = (includeCalendarInPath, calendar, year, day) => {
     let link = '';
@@ -25,6 +26,10 @@ const createLink = (includeCalendarInPath, calendar, year, day) => {
 const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
+
+    if (nodes && nodes.length < 1) {
+        return <Teaser />;
+    }
 
     const calendarWindows = new Array(24).fill({
         title: '',
