@@ -9,6 +9,8 @@ ingress: >-
   keyboard-shortcuts and found a few plugins that have helped me be more
   effective in my day-to-day work. I want to share these lessons with you in the
   form of 4 IntelliJ ninja tricks!
+authors:
+  - Ketil S. Velle
 ---
 First and foremost, learning some _**keyboard shortcuts**_ will yield great awards. And the good thing in IntelliJ is that to start off you only need one: `CMD + SHIFT + A`**\*.** This keyboard shortcut of shortcuts gives you access to all possible actions within IntelliJ, and their corresponding keyboard shortcut!
 
