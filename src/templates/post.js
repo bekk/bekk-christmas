@@ -39,14 +39,14 @@ const RelevantLinksContainer = styled.section(
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
-    const { calendar, title, ingress, image, links } = frontmatter;
+    const { calendar, description, title, ingress, image, links } = frontmatter;
 
     return (
         <Layout calendarName={calendar}>
             <Helmet>
                 <title>{title}</title>
                 <meta property="og:title" content={title} />
-                <meta property="og:description" content={ingress} />
+                <meta property="og:description" content={description} />
                 <meta property="og:image" content={image} />
             </Helmet>
             <MaxWidth>
@@ -58,7 +58,7 @@ const Template = ({ data }) => {
                     />
                 )}
                 <HeroImage src={image || fallbackImage} alt="" />
-                <Ingress>{ingress}</Ingress>
+                <Ingress dangerouslySetInnerHTML={{ __html: ingress }} />
                 <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
