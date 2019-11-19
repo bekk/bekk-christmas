@@ -49,7 +49,7 @@ This was the first puzzler, can you explain what answer it will give and why? Th
 
 For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9vBZs0j-8) by Anton Keks
 
-## ...and much more
+## ... and much more
 
 If your are interested in more, you can find videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more Kotlin in Copenhagen the next couple of days. We hope to see you there!
 
