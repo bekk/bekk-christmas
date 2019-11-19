@@ -7,7 +7,7 @@ image: 'https://i.imgur.com/I8uhLjx.jpg'
 ingress: >-
   'Twas the night before KotlinConf when we began on a journey. Leaving the snow
   clad north behind, heading for warmer shores of sealed classes, co-routines
-  and extension functions in Copenhagen. 
+  and extension functions. 
 
 
   Tomorrow the festivities, that are KotlinConf 2019, are upon us. And in that
@@ -16,7 +16,7 @@ ingress: >-
 links: []
 authors: []
 ---
-KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or write about). But choices were made, and we will try to present some of them here.
+KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote that kicked off the conference, there was four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). But choices were made, and we will try to present some of them here.
 
 
 
@@ -51,7 +51,7 @@ For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9v
 
 
 
-If your are interested in more, you can find more videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more talks in Copenhagen the next couple of days. We hope to see you there!
+#### If your are interested in more, you can find videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more Kotlin in Copenhagen the next couple of days. We hope to see you there!
 
 ### Happy KotlinConf!
 
