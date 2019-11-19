@@ -16,7 +16,7 @@ links:
     url: >-
       https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java
 authors:
-  - Tia Helene Firing
+  - Tia Firing
 ---
 ## What is multi-threading?
 Java is a multi-threaded language. This means that you can run your Java application, or specific parts of it, in parallel as separate threads. If the computer running the Java program has multiple CPUs, as most modern computers do, then performing tasks concurrently may improve performance and utilize the available resources more efficiently. This sounds great, you may think, let's do this! However, there are a few pitfalls. A Java program is running as a process, and a thread started by your program will have access to all shared data of all other threads that is started by the same process. For instance, if you have a Java application that is responsible for creating and sending the monthly utility bill to all customers of a power company, you really want the bill to contain the right amount for each particular household, and that no bills are being sent with a random combination of customer and amount.
