@@ -33,7 +33,7 @@ Depending on what version (and patch level) you are running, there are different
 
 ### Layering
 
-One common pattern is to have a base image (runtime environment, which can container one or more layers itself), one layer for your dependencies and one layer for your application. By splitting and reusing layers, container images will be more effective in terms of disk space usage and bandwidth used.
+One common pattern is to have a base image (runtime environment, which can contain one or more layers itself), one layer for your dependencies and one layer for your application. By splitting and reusing layers, container images will be more effective in terms of disk space usage and bandwidth used.
 
 ### Use a stable base image
 
@@ -55,7 +55,7 @@ For reducing your application’s startup time, consider looking into AppCDS. Th
 
 In July of 2018 Google introduced a simpler way to build container images for Java based apps. The [Jib project](https://github.com/GoogleContainerTools/jib) enables developers to produce container images with a minimum of effort, knowledge of best practices and overhead. Jib doesn’t have a dependency on the Docker daemon, so that also helps with improved security and a reduced set of complexity.
 
-Images produced with Jib is based on their [distroless](https://github.com/GoogleContainerTools/distroless) base images and is automatically splitted up into multiple layers. With layer splitting, dependencies are contained in a separate layer and the application itself is contained in another. Applying this technique reduces the diffs between various versions of a container image and will greatly reduce the “weight” of the image in terms of file size and network transfer speeds.
+Images produced with Jib is based on their [distroless](https://github.com/GoogleContainerTools/distroless) base images and is automatically split up into multiple layers. With layer splitting, dependencies are contained in a separate layer and the application itself is contained in another. Applying this technique reduces the diffs between various versions of a container image and will greatly reduce the “weight” of the image in terms of file size and network transfer speeds.
 
 Jib is exposed as an API but more importantly as Maven and Gradle plugins. Checkout their [examples](https://github.com/GoogleContainerTools/jib/tree/master/examples) for getting started. Recommended if you don’t have any special needs.
 
@@ -63,4 +63,4 @@ Jib is exposed as an API but more importantly as Maven and Gradle plugins. Check
 
 Spotify has been running containerized workloads for many years. Their first tooling effort for Maven was the [docker-maven-plugin](https://github.com/spotify/docker-maven-plugin) with the first release in June of 2014. This lead Spotify to gather much experience building container images and is now deprecated in favor of [dockerfile-maven](https://github.com/spotify/dockerfile-maven), which in turn is marked as mature.
 
-This plugin is however quite powerful and hooks into the existing Maven build lifecycle. It lets you use a regular Dockerfile to build a container image as part of an existing Maven build. Recommended if you are dependant on a Dockerfile or explicitly want to use one.
+This plugin is however quite powerful and hooks into the existing Maven build lifecycle. It lets you use a regular Dockerfile to build a container image as part of an existing Maven build. Recommended if you are dependent on a Dockerfile or explicitly want to use one.
