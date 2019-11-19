@@ -1,5 +1,5 @@
 ---
-title: Tia Helene Firing
+title: Tia Firing
 socialMediaLink: N/A
 ---
 
