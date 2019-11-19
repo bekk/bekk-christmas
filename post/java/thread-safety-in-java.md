@@ -7,16 +7,12 @@ image: >-
   https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
 links:
   - title: Java concurrency (multi-threading) - Tutorial
-    body: N/A
     url: 'https://www.vogella.com/tutorials/JavaConcurrency/article.html'
   - title: What is Thread-Safety and How to Achieve it?
-    body: N/A
     url: 'https://www.baeldung.com/java-thread-safety'
   - title: Guide to java.util.concurrent.Locks
-    body: N/A
     url: 'https://www.baeldung.com/java-concurrent-locks'
   - title: Understand Java Collections and Thread Safety
-    body: N/A
     url: >-
       https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java
 authors:
@@ -35,9 +31,9 @@ Always make your objects immutable. All fields should be private and final, and 
 Write stateless code as far as possible. If there is no state, then there is no state that can be shared between multiple threads. Stateless code is methods or functions that are independent of anything but the input parameters, and given the same input it will produce the same output every time. Another advantage of stateless code is that you can easily write automatic tests for it as well!
 
 ### Java functionality for concurrency
-Java provides several ways to control what is shared between threads. A common way to make sure that only one thread at a time can access a particular piece of code is by using the synchronized keyword. You can also use a [lock](https://www.baeldung.com/java-concurrent-locks) to achieve this. 
+Java provides several ways to control what is shared between threads. A common way to make sure that only one thread at a time can access a particular piece of code is by using the `synchronized` keyword. You can also use a [lock](https://www.baeldung.com/java-concurrent-locks) to achieve this. 
 
-Sometimes you have the opposite problem - you have a field that is being updated, and you want all threads to see the new value. By declaring the field volatile you are forcing the JVM to keep this value in the main memory, and all threads must read the value from there. 
+Sometimes you have the opposite problem - you have a field that is being updated, and you want all threads to see the new value. By declaring the field `volatile` you are forcing the JVM to keep this value in the main memory, and all threads must read the value from there. 
 
 **And one final gotcha:** Many commonly used libraries and even quite basic Java APIs are not thread safe. This includes most collections from the java.util package, almost all OutputStreams, SimpleDateFormat and JAXB Marshaller and Unmarshaller, to mention a few. 
 
