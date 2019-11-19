@@ -14,7 +14,7 @@ links:
 authors:
   - Sindre Nordbø
 ---
-This plugin has [a fair amount of goals](https://maven.apache.org/plugins/maven-dependency-plugin/plugin-info.html). I'll highlight a couple of my favorites, but first, lets get the boring part out of the way:
+This plugin has [a fair amount of goals](https://maven.apache.org/plugins/maven-dependency-plugin/plugin-info.html). I'll highlight a couple of my favorites, but first, let's get the boring part out of the way:
 
 To start using this plugin, simply add the following to your `<pluginManagement>` section:
 
@@ -28,13 +28,13 @@ To start using this plugin, simply add the following to your `<pluginManagement>
 
 Version `3.1.1` is the most recent at the time of writing, check [The Central Repository](https://search.maven.org/search?q=g:org.apache.maven.plugins%20AND%20a:maven-dependency-plugin&core=gav) to see if there has been a new version released.
 
-Now, lets look at the more interesting bits!
+Now, let's look at the more interesting bits!
 
 # `analyze`
 
 This goal analyzes the project’s dependencies and figures out if any of the declared dependencies are unused and vice versa – which dependencies you’re using which are not declared (i.e. transitive dependencies that you _actually_ depend upon).
 
-Lets say I run `mvn dependency:analyze` and get the following output:
+Let's say I run `mvn dependency:analyze` and get the following output:
 
 ```xml
 $ mvn dependency:analyze
@@ -89,7 +89,7 @@ $ mvn dependency:tree
 [INFO] ------------------------------------------------------------------------
 ```
 
-For small to medium sized projects this gives a great overview _all_ dependencies, even transitive ones I don't use. For large projects, this list will probably be very long and hardly usable for any purpose.
+For small to medium sized projects this gives a great overview of _all_ dependencies, even transitive ones I don't use. For large projects, this list will probably be very long and hardly usable for any purpose.
 
 So, in this example it's _fairly_ easy to see how `com.foo:bar` is a transitive dependency because of `com.foo:qux`. For large projects, simply use the `includes` parameter to filter the dependency tree:
 
