@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 4
 title: Patching your node_modules
+image: >-
+  https://images.unsplash.com/photo-1507525586584-6a9c816efbed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
   When using open source code, you often encounter some issues like bugs or
   missing functionality and so on. The right thing to do then is of course to
@@ -11,7 +13,8 @@ ingress: >-
   answer you, the project is deprecated or if the fix is planned, but not due
   for quite a while? In this article I’ll teach you the strategy of patching
   dependencies in node_modules by using patch files.
-authors: []
+authors:
+  - Mats Byrkjeland
 ---
 A patch file represents a change to a file and looks like a git diff. Patch files can be kept in source control, and the application of them can be automated in a postinstall script such as `npm postinstall`. The advantages of this is that you can persist some small changes to your dependencies without all the work of forking the repo. But use this sparingly. If the dependency gets an update, the patch might not work anymore and you might have to update it.
 Step by step
