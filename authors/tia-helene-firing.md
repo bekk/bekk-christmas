@@ -1,5 +1,5 @@
 ---
 title: Tia Firing
-socialMediaLink: N/A
+socialMediaLink: ''
 ---
 
