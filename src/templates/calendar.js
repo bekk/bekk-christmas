@@ -27,7 +27,7 @@ const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
 
-    if (nodes && nodes.length < 1) {
+    if (!nodes || nodes.length < 1) {
         return <Teaser />;
     }
 
