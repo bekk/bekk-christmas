@@ -2,20 +2,18 @@
 calendar: functional
 post_year: 2019
 post_day: 1
-title: What is FP?
+title: What is Functional Programming?
 links: []
 authors:
   - Kjetil Valle
 ---
-# What is FP?
-
 Hi there, and welcome to this advent calendar! While you wait for christmas, we'll provide you with an article related to Functional Programming (FP) each day until december 24 🎅
 
 We will try to tackle a wide range of topics. We will cover a few "classic" FP-concepts, both basic and more advanced. We also aim to have some articles with a more practical focus. Some posts will be intended for beginners and some will have a more experienced audience in mind. So if a particular article isn't for you, hopefully the next one will be!
 
 To get the show on the road, lets start out by answering the following question:
 
-## So, what is Functional Programming anyway?
+## So, what is FP anyway?
 
 Functional Programming is, like Object Oriented Programming (OOP), a programming paradigm. There isn't a formal agreed-upon definition of what FP entails, but there are two core concepts most people would agree are central to the paradigm: 
 
@@ -50,4 +48,7 @@ These are also concepts we will be returning to in later articles.
 
 ### What is a functional language?
 
+
+
 > TODO: noe om at det ikke nødvendigvis er enten/eller. språk har varierende støtte for funksjonelle konsepter, og legger i varierede grad opp til å kode funksjonelt. man kan kode funksjonelt i mange språk "oo-språk"
+
