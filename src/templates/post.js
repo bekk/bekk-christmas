@@ -9,6 +9,7 @@ import remarkHtml from 'remark-html';
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
+import { setImageWidth } from '../utils';
 
 require('prismjs/themes/prism-solarizedlight.css');
 
@@ -50,13 +51,15 @@ const Template = ({ data }) => {
         .processSync(ingress)
         .toString();
 
+    const heroImage = setImageWidth(image || fallbackImage);
+
     return (
         <Layout calendarName={calendar}>
             <Helmet>
                 <title>{title}</title>
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content={image} />
+                <meta property="og:image" content={heroImage} />
             </Helmet>
             <MaxWidth>
                 {fields && fields.enrichedAuthors && (
@@ -66,7 +69,7 @@ const Template = ({ data }) => {
                         calendar={calendar}
                     />
                 )}
-                <HeroImage src={image || fallbackImage} alt="" />
+                <HeroImage src={heroImage} alt="" />
                 <ArticleBody>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <section dangerouslySetInnerHTML={{ __html: html }} />

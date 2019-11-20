@@ -14,6 +14,15 @@ export const getWindowImagePlaceholder = index => {
     }
 };
 
+export const setImageWidth = url => {
+    if (url.includes('unsplash')) {
+        const urlPart = url.split('?')[0];
+        return urlPart + '?w=1000';
+    }
+
+    return url;
+};
+
 export const mapCalendarToName = calendar => {
     switch (calendar) {
         case 'javascript':
