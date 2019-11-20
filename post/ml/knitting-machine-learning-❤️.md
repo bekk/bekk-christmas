@@ -3,8 +3,15 @@ calendar: ml
 post_year: 2019
 post_day: 22
 title: Knitting + Machine learning = ❤️
+image: >-
+  https://images.unsplash.com/photo-1475053134893-08eb5944b956?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80
 ingress: 'About machine learning, knitting and stuff'
 description: ''
+links:
+  - title: Article
+    url: 'https://arxiv.org/pdf/1902.02752.pdf'
+  - title: Homepage of Deep Knitting
+    url: 'http://deepknitting.csail.mit.edu/'
 authors:
   - Henrik Aasen Kjeldsberg
 ---
@@ -31,9 +38,3 @@ Illustration of the application, and the pipeline for obtaining a program which 
 Finally, the model, in this case a prediction network, was trained using CNN. For reference, the entire process is visualised in the figure above. The resulting predictor, named Img2Prog, could now be fed an image of a  pattern as input, producing the recipe for the corresponding pattern as output. Amazing!
 
 ![Neural inverse knitting pipeline](https://i.ibb.co/wgxqHzD/knit1.jpg)
-
-**References**:
-
-Article: <https://arxiv.org/pdf/1902.02752.pdf>
-
-Homepage of the projects: <http://deepknitting.csail.mit.edu/>
