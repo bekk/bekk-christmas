@@ -22,7 +22,7 @@ Presenting a graph is like telling a story with data. As the storyteller it is y
 
 First things first, every decent looking graph should build on these three principles:
 
-1) Choose the right graph (shouldn't come as a surprise to anyone...)
+1. Choose the right graph (shouldn't come as a surprise to anyone...)
 
 ![](/assets/ml_7_pic1.png)
 
@@ -30,13 +30,13 @@ To communicate effectively, choosing the right graph is important. The right gra
 
 ![](/assets/ml_7_pic2.png)
 
-2) Remove noise
+2. Remove noise
 
 After you have chosen the right graph, it’s time to remove the noise. Throw the gridlines out, away with unnecessary decimals and markers and avoid long variable names on the x-axis. Add a title, axis labels and place the legend preferably to the right (if you need a legend). If possible, try to make it as clean as possible to enable your recipient to receive your message loud and clear.
 
 ![](/assets/ml_7_pic3.png)
 
-3) Focus your audience’ attention
+3. Focus your audience’ attention
 
 With a clean and noise free canvas, it is possible to highlight different elements in order to focus the attention of your recipient. Add elements such as a trend line, a reference variable or events that might be supportive to your argument. You can also use contrast or bold effects to highlight further. 
 
@@ -45,8 +45,6 @@ Let’s say your point here is the big regional variation in the market battle b
 ![](/assets/ml_7_pic4.png)
 
 You might have noticed that something more changed in this last example. To make it more than just decent looking, a tip is to stay away from the standard color palette and use some fresh colors instead!
-
-
 
 You came here for spicy, but this is not really spicy, is it? There is a lot of exciting stuff you can do in terms of data visualization if you step out of Excel and into more powerful tools such as Python or R. 
 
@@ -58,9 +56,7 @@ Let’s see how our graph above could look like
 
 This one is quite similar to the one above, except the fact that it is interactive, but the opportunities go way beyond this if you really start exploring. Basic charts, statistical graphs, heatmaps, financial charts and different map charts are all part of the library. You can even make animated graphs, just like Hans Rosling’s famous animated Gapminder bubblecharts.
 
-<Insert graph>
-
-
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~thereselied/25.embed"></iframe>
 
 To get started, you will need to get through some initial steps
 
