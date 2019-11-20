@@ -1,6 +1,7 @@
 ---
 title: Stian Daazenko
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: stian.daazenko@bekk.no
 ---
 

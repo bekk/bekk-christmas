@@ -1,6 +1,7 @@
 ---
 title: Julie Hill Roa
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: julie.hill.roa@bekk.no
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Øyvind Skaar
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: '@oms'
 ---
 

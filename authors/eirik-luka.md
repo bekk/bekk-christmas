@@ -1,5 +1,6 @@
 ---
 title: Eirik Luka
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

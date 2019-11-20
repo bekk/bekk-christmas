@@ -1,5 +1,6 @@
 ---
 title: Jan Gylta
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

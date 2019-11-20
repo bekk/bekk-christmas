@@ -1,5 +1,6 @@
 ---
 title: Eirik Wiig
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

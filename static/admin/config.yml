@@ -603,4 +603,5 @@ collections:
                 label: 'Link to social media (twitter, linkedin etc.)',
                 required: false,
             }
-          - {label: "External", name: "external", widget: "boolean", default: false}
+          - { label: 'External', name: 'external', widget: 'boolean', default: false }
+          - { label: 'Firm', name: 'firm', default: 'Bekk' }

@@ -1,5 +1,6 @@
 ---
 title: Aleksander Sjåfjell
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

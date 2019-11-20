@@ -1,6 +1,7 @@
 ---
 title: Even Holthe
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: 'https://github.com/evenh'
 ---
 

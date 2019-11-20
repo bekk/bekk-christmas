@@ -1,5 +1,6 @@
 ---
 title: Emil Døhlen Hansen
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

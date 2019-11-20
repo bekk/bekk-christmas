@@ -1,5 +1,6 @@
 ---
 title: Hannes Waller
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

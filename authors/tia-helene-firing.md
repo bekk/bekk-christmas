@@ -1,6 +1,7 @@
 ---
 title: Tia Firing
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: ''
 ---
 

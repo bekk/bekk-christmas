@@ -1,6 +1,7 @@
 ---
 title: Eirik Vigeland
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: 'https://github.com/eirikv'
 ---
 

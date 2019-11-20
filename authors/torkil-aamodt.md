@@ -1,6 +1,7 @@
 ---
 title: Torkil Aamodt
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: 'https://www.linkedin.com/in/taamodt'
 ---
 

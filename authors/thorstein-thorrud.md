@@ -1,5 +1,6 @@
 ---
 title: Thorstein Thorrud
-external: false;
+external: false
+firm: Bekk
 socialMediaLink:
 ---

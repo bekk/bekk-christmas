@@ -1,6 +1,7 @@
 ---
 title: Ketil S. Velle
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: 'https://twitter.com/ketilsan'
 ---
 

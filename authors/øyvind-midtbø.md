@@ -1,6 +1,7 @@
 ---
 title: Øyvind Midtbø
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: oyvind.midtbo@bekk.no
 ---
 

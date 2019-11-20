@@ -1,6 +1,7 @@
 ---
 title: Henrik Walker Moe
-external: false;
+external: false
+firm: Bekk
 socialMediaLink: 'https://github.com/HenrikWM'
 ---
 
