@@ -28,13 +28,9 @@ ingress: >-
 authors:
   - Tarjei Skjærset
 ---
-
-
 The Kleisli arrow is often written using the fishbone operator.
 
 \`f >=> g\` is the Kleisli composition of the functions \`f\` and \`g\` with the following abstract types.
-
-
 
 \`\``elm
 
@@ -46,11 +42,7 @@ f >=> g : a -> M c
 
 \`\``
 
-
-
 If we consider lists of numbers as a concrete example, the types would be
-
-
 
 \`\``elm
 
@@ -60,13 +52,9 @@ g: Num -> List Num
 
 \`\``
 
-
-
 and their composition would also have the type \`Int -> List Int\`.
 
 Such a function might for instance be the square root function, such as
-
-
 
 \`\``elm
 
@@ -78,27 +66,19 @@ Such a function might for instance be the square root function, such as
 
 \`\``
 
-
-
 If you're using complex numbers you can also consider the n'th root function,
 
 where it will produce a list of \`n\` roots.
 
-
-
 The function \`doubleSquareRoot\` which takes the square root of a number twice
 
 can be defined as the Kleisli composition of this square root function with itself.
-
-
 
 \`\``elm
 
 doubleSquareRoot = sqrt >=> sqrt
 
 \`\``
-
-
 
 To understand what \`doubleSquareRoot 16\` will evaluate to, we will first consider
 
@@ -110,8 +90,6 @@ For each of the results in this list, the next \`sqrt\`
 
 function will be evaluated:
 
-
-
 \`\``elm
 
 sqrt 4 == \[2, -2]
@@ -120,19 +98,13 @@ sqrt -4 == \[2i, -2i]
 
 \`\``
 
-
-
 These results are then consolidated to produce the final result.
-
-
 
 \`\``elm
 
 doubleSquareRoot 16 == \[2, -2, 2i, -2i]
 
 \`\``
-
-
 
 This technique can be used to chain together many computations to
 
@@ -144,19 +116,13 @@ with many results such as finding roots, or maybe finding the possible
 
 next moves in a graph traversal problem.
 
-
-
 \## A real world example
-
-
 
 At work we have recently been experimenting with using F# for a simple
 
 web api.
 
 An endpoint might look like
-
-
 
 \`\``F#
 
@@ -174,15 +140,11 @@ let updateEvent id =
 
 \`\``
 
-
-
 This constructs a larger function using the regular \`>>\` function composition operator.
 
 The input for this function will be a \`context\` object which contains the body of the
 
 HTTP request as well as a reference to the database, which the \`Service\` uses.
-
-
 
 We use \`Result.map\` to handle errors along the way using the built-in \`Result\` type.
 
@@ -192,8 +154,6 @@ The \`Result.bind\` function reveals that the \`Service.updateEvent\` function i
 
 may fail and produce a \`Result.Error\`.
 
-
-
 This seems like it will work, until you consider which functions needs use of the context object.
 
 \`getBody\` obviously needs the context to access the HTTP body.
@@ -202,7 +162,7 @@ In addition, both \`Service.updateEvent\` and \`commitTransaction\` needs a refe
 
 The way we solve this is to consider \`Service.updateEvent id\` not as a function from the domain
 
-model to `Result<DomainModel>\` but as a function from the domain model to \`ctx -> Result<DomainModel>`.
+model to `Result<DomainModel>\` but as a function from the domain model to `ctx -> Result<DomainModel>`.
 
 That is, a function which takes domain models and produce domain models and can fail but also needs a
 
@@ -211,8 +171,6 @@ context.
 That might sound and indeed be confusing, but if you don't think too much about it, it kind of makes sense.
 
 Using Kleisli composition's closely related cousin the bind operator \`>>=\`, we can rewrite our function.\[0]
-
-
 
 \`\``F#
 
@@ -230,8 +188,6 @@ let updateEvent id =
 
 \`\``
 
-
-
 It's a small change, but now our two functions can access the context.
 
 The way I think about it, is that this is regular composition of functions,
@@ -240,23 +196,15 @@ but when you need the context object, you inject it using the bind operator inst
 
 And that is all you need to know to use this pattern productively!
 
-
-
 \## Technicalities
 
-
-
 If you're interested, the bind operator may be defined as follows.
-
-
 
 \`\``F#
 
 f >>= g = fun ctx -> g (f ctx) ctx
 
 \`\``
-
-
 
 The reason we are using the bind operator here instead of the Kleisli fishbone operator,
 
@@ -267,8 +215,6 @@ Had the first function also taken a parameter in addition to the context,
 you would just replace all instaces of \`>>=\` with \`>=>\`.
 
 The implementation of the Kleisli arrow might then look like
-
-
 
 \`\``F#
 
@@ -282,8 +228,6 @@ f >=> g =
 
 \`\``
 
-
-
 It might be difficult to see the similarities between functions that produce lists of
 
 things and functions that produce functions which need contexts, but they are there.
@@ -293,8 +237,6 @@ They have some similar properties and can be understood in the same way. And of 
 if you don't need to, you don't have to think too much about it to be able to use
 
 composition operators such as the bind and Kleisli arrows effectively.
-
-
 
 \[0]: It is well known that \[monads don't compose](https://blog.tmorris.net/posts/monads-do-not-compose/),
 
