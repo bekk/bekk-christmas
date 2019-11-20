@@ -3,7 +3,8 @@ calendar: ux
 post_year: 2019
 post_day: 2
 title: Key takeaways from Edward De Bono’s "Serious creativity"
-image: 'https://unsplash.com/photos/OKOOGO578eo'
+image: >-
+  https://images.unsplash.com/photo-1542382257-80dedb725088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80
 ingress: Let us have a look at creative thinking!
 authors:
   - Dag Frode Solberg
