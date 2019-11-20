@@ -27,7 +27,7 @@ Today's standard is using advanced knitting machines for mass production of garn
 
 So how does one combine machine learning and knitting? You might consider this an unlikely combination, however, there is a logical approach behind the problem. In essence, this is a problem within pattern recognition - a common problem in the world of machine learning.
 
-The solution presented in the article employs methods such as _generative adversarial networks_ (GAN), and _convolutional neural networks_ (CNN) to automate the generation of knitting patterns for industrial use. In particular, GAN was applied to generate artificial textile samples used for training the network, whereas CNN is used to generate the main _image-to-recipe_-model, named `Img2Prog`. We will proceed by looking at the steps to solving this unconventional combination of fields. 
+The solution presented in the article employs methods such as _generative adversarial networks_ (GAN), and _convolutional neural networks_ (CNN) to automate the generation of knitting patterns for industrial use. In particular, GAN was applied to generate artificial textile samples used for training the network, whereas CNN is used to generate the main _image-to-recipe_-model, named _Img2Prog_. We will proceed by looking at the steps to solving this unconventional combination of fields. 
 
 ![Knitting language](https://i.ibb.co/THbgRB8/knit0.png)
 
@@ -39,6 +39,6 @@ The solution presented in the article employs methods such as _generative advers
 
 
 
-* Finally, the model, a prediction network, was trained using CNN. For reference, the entire process is visualised in the figure below. The resulting predictor, named `Img2Prog`, could now be fed an image of a pattern as input, producing the recipe for the corresponding pattern as output. Amazing!
+* Finally, the model, a prediction network, was trained using CNN. For reference, the entire process is visualised in the figure below. The resulting predictor, named _Img2Prog_, could now be fed an image of a pattern as input, producing the recipe for the corresponding pattern as output. Amazing!
 
 ![Neural inverse knitting pipeline](https://i.ibb.co/wgxqHzD/knit1.jpg)
