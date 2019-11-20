@@ -3,7 +3,8 @@ calendar: ml
 post_year: 2019
 post_day: 5
 title: Lost in branches?
-image: 'https://unsplash.com/photos/jcwIthC5oPI'
+image: >-
+  https://images.unsplash.com/photo-1480114440414-43a37cc4472f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80
 ingress: >-
   First of all, this is not a Git article. This article will give a short
   introduction to a set of trees almost as powerful as Christmas trees, decision
