@@ -1,5 +1,5 @@
 ---
 title: Svein Petter Gjøby
-company: 
+company: Bekk
 socialMediaLink: https://twitter.com/sveinpg
 ---

@@ -1,5 +1,5 @@
 ---
 title: Hannes Waller
-company: 
+company: Bekk
 socialMediaLink:
 ---

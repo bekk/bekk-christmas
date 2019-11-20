@@ -1,5 +1,5 @@
 ---
 title: Eirik Wiig
-company: 
+company: Bekk
 socialMediaLink:
 ---

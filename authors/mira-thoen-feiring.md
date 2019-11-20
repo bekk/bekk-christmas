@@ -1,5 +1,5 @@
 ---
 title: Mira Thoen Feiring
-company: 
+company: Bekk
 socialMediaLink:
 ---

@@ -1,6 +1,6 @@
 ---
 title: Therese Borge Lied
-company: 
+company: Bekk
 socialMediaLink: therese.lied@bekk.no
 ---
 

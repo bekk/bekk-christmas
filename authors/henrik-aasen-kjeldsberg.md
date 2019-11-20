@@ -1,6 +1,5 @@
 ---
 title: Henrik Aasen Kjeldsberg
-company: 
+company: Bekk
 socialMediaLink: 'https://github.com/hkjeldsberg'
 ---
-

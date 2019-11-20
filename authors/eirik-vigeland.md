@@ -1,6 +1,5 @@
 ---
 title: Eirik Vigeland
-company: 
+company: Bekk
 socialMediaLink: 'https://github.com/eirikv'
 ---
-

@@ -1,5 +1,5 @@
 ---
 title: Markus Rauhut
-company: 
+company: Bekk
 socialMediaLink:
 ---

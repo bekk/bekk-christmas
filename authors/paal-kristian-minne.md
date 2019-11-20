@@ -1,6 +1,5 @@
 ---
 title: Paal Kristian Minne
-company: 
+company: Bekk
 socialMediaLink: 'https://github.com/paalkristian'
 ---
-

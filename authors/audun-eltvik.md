@@ -1,6 +1,6 @@
 ---
 title: Audun Eltvik
-company: 
+company: Bekk
 socialMediaLink: audun.eltvik@bekk.no
 ---
 

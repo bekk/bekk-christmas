@@ -1,6 +1,5 @@
 ---
 title: Mats Byrkjeland
-company: 
+company: Bekk
 socialMediaLink: 'https://github.com/draperunner'
 ---
-

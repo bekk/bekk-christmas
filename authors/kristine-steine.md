@@ -1,6 +1,5 @@
 ---
 title: Kristine Steine
-company: 
+company: Bekk
 socialMediaLink: 'https://twitter.com/frksteine'
 ---
-

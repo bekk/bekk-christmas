@@ -1,6 +1,5 @@
 ---
 title: Jan Amundsen
-company: 
+company: Bekk
 socialMediaLink: 'https://github.com/jtkarlsen'
 ---
-

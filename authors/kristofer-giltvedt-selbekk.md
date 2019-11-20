@@ -1,5 +1,5 @@
 ---
 title: Kristofer Giltvedt Selbekk
-company: 
+company: Bekk
 socialMediaLink: https://twitter.com/selbekk
 ---

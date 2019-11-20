@@ -1,6 +1,6 @@
 ---
 title: Sindre Nordbø
-company: 
+company: Bekk
 socialMediaLink: ''
 ---
 

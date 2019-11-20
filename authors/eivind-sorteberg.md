@@ -1,6 +1,5 @@
 ---
 title: Eivind Sorteberg
-company: 
+company: Bekk
 socialMediaLink: eivind.sorteberg@bekk.no
 ---
-

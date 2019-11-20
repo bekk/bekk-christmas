@@ -1,5 +1,5 @@
 ---
 title: Emil Døhlen Hansen
-company: 
+company: Bekk
 socialMediaLink:
 ---

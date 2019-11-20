@@ -1,5 +1,5 @@
 ---
 title: Vegard Veiset
-company: 
+company: Bekk
 socialMediaLink: https://twitter.com/veiset
 ---

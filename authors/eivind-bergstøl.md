@@ -1,6 +1,6 @@
 ---
 title: Eivind Bergstøl
-company: 
+company: Bekk
 socialMediaLink: 'https://twitter.com/eivinhb'
 ---
 
