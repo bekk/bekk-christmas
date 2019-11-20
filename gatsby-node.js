@@ -148,12 +148,7 @@ const connectAuthorsToPosts = (getNode, getNodes, createNodeField) => {
 
         const enrichedAuthors = authors.map(author => {
             const match = authorNodes.find(node => author === node.frontmatter.title);
-            const { title, socialMediaLink } = match.frontmatter;
-
-            return {
-                title,
-                socialMediaLink,
-            };
+            return match.frontmatter;
         });
 
         if (enrichedAuthors) {
