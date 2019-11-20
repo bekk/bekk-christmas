@@ -4,15 +4,18 @@ post_year: 2019
 post_day: 5
 title: Lost in branches?
 image: 'https://unsplash.com/photos/jcwIthC5oPI'
-ingress: 'First of all, this is not an Git article.'
+ingress: >-
+  First of all, this is not a Git article. This article will give a short
+  introduction to a set of trees almost as powerful as Christmas trees, decision
+  trees.
 authors:
   - Erlend Faxvaag
 ---
-First of all, this is not an git article. This article will give a short introduction to a set of powerful trees, decision trees. We will briefly go through _what_ a decision tree is, and reasons for using these trees.
+In this article we will briefly go through _what_ a decision tree is, and reasons for why you should be using these trees.
 
 In short, decision trees are models used in the field of machine learning to predict the value of a target variable based on multiple input variables. Some machine learning techniques are hard to learn and near impossible to fully understand - decision trees on the other hand can be really simple. 
 
-We will start of with a super short description of the structure of a decision tree model. The first gray circle at the top is called the root node, this is where we start. The rest of the gray circles are just called nodes - except the ones at the bottom, without any preceding nodes, these are called leafs. Take a look:
+We will start off with a super short description of the structure of a decision tree model. The first gray circle at the top is called the root node, this is where we start. The rest of the gray circles are just called nodes - except the ones at the bottom, without any preceding nodes, these are called leafs. Take a look:
 
 ![](/assets/trees.png)
 
@@ -24,7 +27,7 @@ This machine learning technique is pretty intuitive to work with, you start at t
 
 ![](/assets/trees-3-.png)
 
-In the examples above the trees are only made up by one and two questions, and to be fair, there are many different types of decision trees and some of them can be complex and less intuitive to work with. That said, _regular_ decision trees does not need to be a lot more complicated than this. At first one could think trees are too simple to handle complex problems, yet, with more nodes this technique can be surprisingly powerful.
+In the examples above the trees are only made up of one and two questions, and to be fair, there are many different types of decision trees and some of them can be complex and less intuitive to work with. That said, _regular_ decision trees does not need to be a lot more complicated than this. At first one could think trees are too simple to handle complex problems, yet, with more nodes this technique can be surprisingly powerful.
 
 However, trees are not always convenient. With lots of data and features, trees can be huge. They are also prone to overfitting. They get too familiar with training data, and when a real data sample is pushed through the tree, the _slightest_ of difference can send you down the wrong track and into a wrong classification. Let’s say you ask this question on seafood restaurant, the guests might not be vegetarian, but asking if they ate beef here will get us nowhere. 
 
