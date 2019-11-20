@@ -1,7 +1,6 @@
 ---
 title: Yrjan Fraschetti
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://github.com/yrjanaff'
 ---
 

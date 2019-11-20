@@ -1,6 +1,5 @@
 ---
 title: Tor Egil Fusdahl
-external: false
-firm: Bekk
+company: 
 socialMediaLink:
 ---

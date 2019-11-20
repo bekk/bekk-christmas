@@ -1,7 +1,6 @@
 ---
 title: Thomas Oddsund
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://twitter.com/oddsund'
 ---
 

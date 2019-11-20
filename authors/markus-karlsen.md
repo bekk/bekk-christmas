@@ -1,6 +1,5 @@
 ---
 title: Markus Karlsen
-external: false
-firm: Bekk
+company: 
 socialMediaLink:
 ---

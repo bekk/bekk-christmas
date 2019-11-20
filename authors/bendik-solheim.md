@@ -1,7 +1,6 @@
 ---
 title: Bendik Solheim
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://github.com/bendiksolheim'
 ---
 

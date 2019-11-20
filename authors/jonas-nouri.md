@@ -1,7 +1,6 @@
 ---
 title: Jonas Nouri
-external: false
-firm: Bekk
+company: 
 socialMediaLink: jonas.nouri@bekk.no
 ---
 

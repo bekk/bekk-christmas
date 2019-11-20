@@ -1,6 +1,5 @@
 ---
 title: Ken Wheeler
-external: false
-firm: Bekk
+company: 
 socialMediaLink:
 ---

@@ -1,6 +1,5 @@
 ---
 title: Marianne Grov
-external: false
-firm: Bekk
+company: 
 socialMediaLink:
 ---

@@ -1,7 +1,6 @@
 ---
 title: Arne Tjora
-external: false
-firm: Bekk
+company: 
 socialMediaLink: arne.tjora@bekk.no
 ---
 

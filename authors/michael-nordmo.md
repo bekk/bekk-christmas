@@ -1,7 +1,6 @@
 ---
 title: Michael Nordmo
-external: false
-firm: Bekk
+company: 
 socialMediaLink: michael.nordmo@bekk.no
 ---
 

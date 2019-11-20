@@ -1,7 +1,5 @@
 ---
 title: Dag Frode Solberg
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://github.com/dagfs/'
 ---
-

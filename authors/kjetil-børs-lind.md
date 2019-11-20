@@ -1,6 +1,5 @@
 ---
 title: Kjetil Børs Lind
-external: false
-firm: Bekk
+company: 
 socialMediaLink:
 ---

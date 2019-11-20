@@ -1,7 +1,6 @@
 ---
 title: Nicolai Hagen
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://github.com/nicolhag'
 ---
 

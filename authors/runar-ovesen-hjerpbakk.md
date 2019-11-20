@@ -1,7 +1,6 @@
 ---
 title: Runar Ovesen Hjerpbakk
-external: false
-firm: Bekk
+company: 
 socialMediaLink: 'https://hjerpbakk.com'
 ---
 
