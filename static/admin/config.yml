@@ -603,3 +603,4 @@ collections:
                 label: 'Link to social media (twitter, linkedin etc.)',
                 required: false,
             }
+          - { name: 'company', label: 'Company', default: 'Bekk' }
