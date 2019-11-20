@@ -7,6 +7,8 @@ links: []
 authors:
   - Kjetil Valle
 ---
+# What is FP?
+
 Hi there, and welcome to this advent calendar! While you wait for christmas, we'll provide you with an article related to Functional Programming (FP) each day until december 24 🎅
 
 We will try to tackle a wide range of topics. We will cover a few "classic" FP-concepts, both basic and more advanced. We also aim to have some articles with a more practical focus. Some posts will be intended for beginners and some will have a more experienced audience in mind. So if a particular article isn't for you, hopefully the next one will be!
@@ -30,19 +32,22 @@ Now, if you're new to FP this might sound very strange, but it's actually really
 
 One of the main benefits, at least to me, is that code written in a functional style is much easier to understand. If I want to know what a given piece of code does, I know that I will only have to look at that particular code, and not worry about how state in other parts of the program might affect it.
 
-The computer can also benefit greatly from code being written in a functional style, opening the possibility of some nice optimizations. For example, two _pure_ expressions which does not depend on each other can easily be computed in parallel. And a pure function can be [memoized](https://en.wikipedia.org/wiki/Memoization) automatically, since it will always give same result when called with a given set of inputs.
+The computer can also benefit greatly from code being written in a functional style, opening the possibility of some nice optimizations. For example, two _pure_ expressions which does not depend on each other can easily be computed in parallel, and a pure function can be [memoized](https://en.wikipedia.org/wiki/Memoization) automatically since it will always give same result when called with a given set of inputs.
 
 Don't tell anyone, but we will return to this topic and explore it further in later article 🤫
 
+
 ### Functions as building blocks
 
+In Object Oriented Programming the basic building blocks are classes and objects. In FP, in contrast, you build your programs using functions. In most functional languages your entire program will simply be a function. And this function will in turn be built out of other functions. To use a cliché, _it's functions all the way down_…
+
+To make this viable, it is important that functions are first class values of the language. You should be able to assign it to a variable or store it in a data structure, like any othe type of value in your program. 
+
+Functions must also accept other functions as arguments, and can even have functions as their return value. (This is often refered to as _higher order functions_.) It is also common to create new functions by _composing_ two other functions together, or by calling a function with only some of its arguments.
+
+These are also concepts we will be returning to in later articles.
 
 
-> TODO: noe om at funksjoner er byggestenene, slik som objekter er i oop
-> TODO: noe om førsteklasses funksjoner
-> TODO: noe om høyere ordens funksjoner
-
-### What is a functional
+### What is a functional language?
 
 > TODO: noe om at det ikke nødvendigvis er enten/eller. språk har varierende støtte for funksjonelle konsepter, og legger i varierede grad opp til å kode funksjonelt. man kan kode funksjonelt i mange språk "oo-språk"
-
