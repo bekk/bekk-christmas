@@ -25,6 +25,7 @@ const AuthorInfo = props => {
                 {authors.map((author, index) => (
                     <Fragment key={author.title}>
                         <strong>{author.title}</strong>
+                        {author.company ? ` (${author.company})` : ''}
                         {index < authors.length - 2 && ', '}
                         {index === authors.length - 2 && ' and '}
                     </Fragment>

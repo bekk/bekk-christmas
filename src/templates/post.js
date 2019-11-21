@@ -64,7 +64,6 @@ const Template = ({ data }) => {
     const heroImage = setImageWidth(image || fallbackImage);
 
     const htmlWithImageStyling = html.replace(/<p><img/g, '<p class="p-with-img"><img');
-
     return (
         <Layout calendarName={calendar}>
             <Helmet>
@@ -111,6 +110,7 @@ export const aboutPageQuery = graphql`
                 enrichedAuthors {
                     title
                     socialMediaLink
+                    company
                 }
             }
             frontmatter {
