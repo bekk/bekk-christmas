@@ -3,13 +3,6 @@ import * as fonts from '../constants/fonts';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
-    h1,
-    table,
-    div{
-        max-width:759px;
-        margin-left:auto;
-        margin-right:auto;
-    }
     h2,
     h3,
     h4,
@@ -18,11 +11,9 @@ const ArticleBody = styled.article(
     p,
     pre {
         color: ${theme.textColor};
-        margin: 1em 0 0.5em 0;
+        margin: 1em auto 0.5em auto;
         word-wrap: break-word;
         max-width:759px;
-        margin-left:auto;
-        margin-right:auto;
     }
     h2,
     h3,
@@ -71,6 +62,19 @@ const ArticleBody = styled.article(
     }
     .p-with-img{
         max-width: 1258px;
+    }
+    h1,
+    table,
+    div,
+    ul,
+    ol,
+    iframe{
+        max-width:759px;
+        margin-left:auto;
+        margin-right:auto;
+    },
+    iframe{
+        display:block;
     }
     `
 );
