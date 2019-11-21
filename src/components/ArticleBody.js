@@ -57,7 +57,7 @@ const ArticleBody = styled.article(
         font-size: 21px;
         line-height: 1.58;
     }
-    .gatsby-highlight{
+    .gatsby-highlight, iframe{
         margin:50px auto;
     }
     .p-with-img{
@@ -67,14 +67,10 @@ const ArticleBody = styled.article(
     table,
     div,
     ul,
-    ol,
-    iframe{
+    ol {
         max-width:759px;
         margin-left:auto;
         margin-right:auto;
-    },
-    iframe{
-        display:block;
     }
     `
 );
