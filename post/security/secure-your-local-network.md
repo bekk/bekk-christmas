@@ -3,10 +3,13 @@ calendar: security
 post_year: 2018
 post_day: 23
 title: Secure your local network
-image: 'https://www.grc.com/x/ne.dll?bh0bkyd2'
+image: ''
 ingress: >-
   It is soon Christmas, and you might get new shiny gadgets under your Christmas
   tree. Now it is important to install these new shiny gadgets securely.
+links:
+  - title: ShieldsUP!
+    url: 'https://www.grc.com/x/ne.dll?bh0bkyd2'
 authors:
   - Stian Fredrikstad
 ---
