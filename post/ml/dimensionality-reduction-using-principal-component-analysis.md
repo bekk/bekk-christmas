@@ -21,8 +21,8 @@ This might not look like something special at first glance. However if we view e
 
 This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the data.
 
-TODOOOO: Credit på bilder osv.
+
 
 ![](/assets/screenshot-2019-11-12-at-19.11.12.png)
 
-![]()
+TODOOOO: Credit på bilder
