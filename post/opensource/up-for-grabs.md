@@ -16,7 +16,7 @@ links:
 authors:
   - Eivind Bergstøl
 ---
-When maintaining a small, quite static, open source library on GitHub, we need a smooth automatic release-path that is easy and fast to use when a release has to be published. Maybe I changed my computer since last time and need to restore GPG-keys, or even worse, generate new keys and distribute them. And when time goes by, a new maintainer steps up and need to release. How was that done again?
+[no.bekk.bekkopen:NoCommons](https://github.com/bekkopen/NoCommons) is a small library for validating, generating and manipulating data typical for norwegian domains. SSN, org-nr, names etc. And when maintaining a small, quite static, open source library like this on GitHub, we need a smooth automatic release-path that is easy and fast to use when a release has to be published. Maybe I changed my computer since last time and need to restore GPG-keys, or even worse, generate new keys and distribute them. And when time goes by, a new maintainer steps up and need to release. How was that done again?
 
 [@Rultor](http://rultor.com) is a open source robot living on GitHub. [Yegor256](https://www.yegor256.com) is the maintainer of this robot and we all can use it. Just talk to [@Rultor](http://rultor.com) in an GitHub-issue and it will tell you what to do to get started. This is what I did:
 
