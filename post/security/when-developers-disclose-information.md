@@ -7,6 +7,16 @@ image: 'https://farm9.staticflickr.com/8549/29402709463_a29dfe6992_k.jpg'
 ingress: >-
   Information sensitivity is a problem that can bring your organization to its
   knees. What do you do when disaster strikes?
+links:
+  - title: BFG Repo-Cleaner
+    url: 'https://rtyley.github.io/bfg-repo-cleaner/'
+  - title: git-filter-branch - Rewrite branches
+    url: 'https://git-scm.com/docs/git-filter-branch'
+  - title: 'CWE-532: Information Exposure Through Log Files'
+    url: 'https://cwe.mitre.org/data/definitions/532.html'
+  - title: Removing sensitive data from a repository
+    url: >-
+      https://help.github.com/articles/removing-sensitive-data-from-a-repository/
 authors: []
 ---
 ## It's burning on the toilet
