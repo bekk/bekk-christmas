@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 6
 title: 'The people behind JavaScript: Allen Wirfs-Brock'
 ingress: >-
-  *The people behind JavaScript* is a series of interviews with the members of
+  The people behind JavaScript is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
   JavaScript enthusiasts and language experts who get together to define how
   JavaScript new versions of should work. 
