@@ -6,7 +6,7 @@ title: Lost in branches?
 image: >-
   https://images.unsplash.com/photo-1480114440414-43a37cc4472f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80
 ingress: >-
-  First of all, this is not an Git article. This article will give a short
+  First of all, this is not a Git article. This article will give a short
   introduction to a set of trees almost as powerful as Christmas trees, decision
   trees.
 authors:
