@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 6
 title: 'The people behind JavaScript: Allen Wirfs-Brock'
+image: 'https://images.unsplash.com/photo-1573055418049-c8e0b7e3403b'
 ingress: >-
   **The people behind JavaScript** is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
