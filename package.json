@@ -12,7 +12,8 @@
         "start": "gatsby develop",
         "start:preview": "gatsby develop preview",
         "start:calendar": "gatsby develop",
-        "serve": "gatsby serve"
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
     },
     "dependencies": {
         "@bekk/storybook": "^2.4.7",

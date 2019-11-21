@@ -20,12 +20,12 @@ const GlobalStyles = createGlobalStyle(
     transition: background-color 0.3s var(--easing), color 0.5s var(--easing);
     font-family: FFDINWebProLight, sans-serif;
     font-size: 1.125em;
-    line-height: 1.4;
+    line-height: 1.4em;
   }
   h1,
   h2,
   h3 {
-    line-height: 1.15;
+    line-height: 1.15em;
     font-family: NewZaldBook, sans-serif;
   }
 

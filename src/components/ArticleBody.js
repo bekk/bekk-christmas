@@ -11,8 +11,9 @@ const ArticleBody = styled.article(
     p,
     pre {
         color: ${theme.textColor};
-        margin: 1em 0 0.5em;
+        margin: 1em auto 0.5em auto;
         word-wrap: break-word;
+        max-width:759px;
     }
     h2,
     h3,
@@ -55,6 +56,21 @@ const ArticleBody = styled.article(
     ol {
         font-size: 21px;
         line-height: 1.58;
+    }
+    .gatsby-highlight, iframe{
+        margin:50px auto;
+    }
+    .p-with-img{
+        max-width: 1258px;
+    }
+    h1,
+    table,
+    div,
+    ul,
+    ol {
+        max-width:759px;
+        margin-left:auto;
+        margin-right:auto;
     }
     `
 );
