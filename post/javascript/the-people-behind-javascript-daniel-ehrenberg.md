@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 11
 title: 'The people behind JavaScript: Daniel Ehrenberg'
-image: 'https://images.unsplash.com/photo-1562343128-59e6fa1c7eb0'
+image: 'https://images.unsplash.com/photo-1457904375453-3e1fc2fc76f4'
 ingress: >-
   **The people behind JavaScript** is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
