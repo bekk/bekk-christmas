@@ -17,7 +17,7 @@ const keyInformation = {
   favoriteMusic: "Sardana"
   twitterHandle: "@littledan"
 }
-``
+```
 
 ## Who are you and what do you do?
 
