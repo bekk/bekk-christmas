@@ -55,13 +55,13 @@ function curriedAdd(a) {
 }
 ```
 
-Now, we're free to do things like this again:
+By using currying, we can convert `add` into `curriedAdd`. And this process will work with functions of any number of arguments. And with this new function, we're free to do things like this again:
 
 ```javascript
 incrementByFive = curriedAdd(5)
 ```
 
-But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, are _curried by default_. This means that all functions can easily be partially applied! And that's also why the type signature we saw in the first example looks like this:
+But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, functions are _curried by default_. This means that all functions can easily be partially applied! And that's also why the type signature we saw in the first example looks like this:
 
 ```elm
 add : number -> number -> number
