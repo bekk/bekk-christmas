@@ -91,9 +91,17 @@ displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "J
 justTheJohns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", John McClane", "Jack Bauer"]
 ```
 
-Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) accepts two arguments, but by partially applying them we get exactly what we need.
+Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) expect to get two arguments, but by only partially applying them we get exactly what we need.
 
-TODO
+As another example, say we have a function with the following type signature in our Elm application.
+
+```elm
+log : LogConfig -> Message -> Cmd msg
+```
+
+The function require a configuration type and a message. Depending on the configuration, the message might be logged to a backend service or to the browser console. To specify the log config everywhere we need to log something would be rather cumbersome. Instead we'll partially apply `log` to the configuration once, and use the result in the rest of the application.
+
+The more used you get to functional programming, the more places you will find where a partially applied function is exactly what you need.
 
 ## Schönfinkeli-what-now?
 
