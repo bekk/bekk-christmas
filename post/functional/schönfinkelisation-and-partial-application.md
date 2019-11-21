@@ -84,9 +84,14 @@ This often occurs when we're using functions like _map_ or _filter_. These funct
 Here are a couple of examples, again using Elm. 
 
 ```elm
-> -- foo bar  
-> List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki"]
+-- Convert a list of `Maybe String` into something that can be displayed to the user, using "n/a" where we don't have a value.
+displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki", Just "Wayland"]
+
+-- Filter a list of names to include only the people named "John".
+justTheJohns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", John McClane", "Jack Bauer"]
 ```
+
+Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) accepts two arguments, but by partially applying them we get exactly what we need.
 
 TODO
 
