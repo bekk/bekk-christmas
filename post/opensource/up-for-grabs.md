@@ -21,7 +21,7 @@ authors:
 [@Rultor](http://rultor.com) is a open source robot living on GitHub. [Yegor256](https://www.yegor256.com) is the maintainer of this robot and we all can use it. Just talk to [@Rultor](http://rultor.com) in an GitHub-issue and it will tell you what to do to get started. This is what I did:
 
 * Change parent-pom of project to com.jcabi:parent (not necessary, but quite convenient)
-* Encrypt `setting.xml`, private- and public-key (GPG) with [@Rultor](http://rultor.com) and commit them to NoCommons
+* Encrypt _setting.xml_, private- and public-key (GPG) with [@Rultor](http://rultor.com) and commit them to NoCommons
 * Create _.rultor.yml_ and commit to NoCommons with me as _commanders_ and _architect_
 
 [@Rultor](http://rultor.com) need write-access to the repository to publish tags and GitHub-releases, so I added it as a collaborator in GitHub.
