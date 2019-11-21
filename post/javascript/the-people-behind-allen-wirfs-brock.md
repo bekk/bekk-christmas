@@ -19,7 +19,6 @@ const keyInformation = {
   work: "Semi-retired, Independent Researcher", 
   yearsInTC39: 13, 
   favoriteMusic: "Classic acid rock"
-  twitterHandle: "@awbjs"
 }
 ```
 Make sure to follow [Allen on Twitter](https://twitter.com/awbjs) :bird:
