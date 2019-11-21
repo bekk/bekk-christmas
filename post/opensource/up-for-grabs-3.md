@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 6
 title: Hacktoberfest
+image: >-
+  https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >
   Submit four pull requests in October, get a t-shirt. That’s the TL;DR for
   Hacktoberfest. It’s basically a month-long global hackathon that serves as a
