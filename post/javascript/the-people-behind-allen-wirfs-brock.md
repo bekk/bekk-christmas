@@ -21,7 +21,7 @@ const keyInformation = {
   favoriteMusic: "Classic acid rock"
 }
 ```
-Make sure to follow [Allen on Twitter](https://twitter.com/awbjs) :bird:
+:point_right: Make sure to follow [Allen on Twitter](https://twitter.com/awbjs)
 
 
 ### Who are you and what do you do? 
