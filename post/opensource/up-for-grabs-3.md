@@ -2,6 +2,18 @@
 calendar: opensource
 post_year: 2019
 post_day: 6
-title: up-for-grabs
+title: Hacktoberfest
+ingress: >
+  Submit four pull requests in October, get a t-shirt. That’s the TL;DR for
+  Hacktoberfest. It’s basically a month-long global hackathon that serves as a
+  celebration of open source and its community. Did you get your t-shirt?
 ---
-TODO
+It sounds almost silly. You contribute to some random projects on GitHub and someone sends you a t-shirt. But this simple challenge is the root of a massive movement that closes thousands of GitHub issues around the globe. This year’s Hacktoberfest was the sixth to be held, and throughout October more than 483,000 pull requests were submitted to more than 150,000 repositories. People from 143 different countries participated! It’s the greatest Hacktoberfest ever and you can read the [recap here](https://blog.digitalocean.com/recapping-hacktoberfest-6).
+
+## Participating
+It's easy to sign up for the Hacktoberfest on the primary website (hacktoberfest.digitalocean.com), which usually opens some days before October 1st. You sign up with your Github credentials, and after that, it’s coding time.
+
+Finding projects to contribute to is made easy by the use of labels. Project maintainers are encouraged to label their issues with "hacktoberfest" to attract hungry hacktoberfest participants. There are also other useful labels like "help wanted" and "good first issue" that are commonly used to indicate good starter issues. Use GitHub’s search engine to filter on these kinds of issues, and hopefully you will soon find a fitting project you can contribute to. And here’s a pro tip for you: If you find an issue you really want to take a go at, say so in a comment. Hacktoberfest is so popular that other people might already be hacking away on "your" issue when you see it. So claiming it is not a bad idea.
+
+## But October is… 10 months away! :
+Yup. It’s quite a while until we can indulge ourselves in another Hacktoberfest. But that doesn’t mean we cannot contribute to open source today! Use the labels on GitHub, check out your favorite open source projects if they want help, or create something yourself. You might not get a t-shirt, but contributing to open source projects is an awarding experience. Good luck!
