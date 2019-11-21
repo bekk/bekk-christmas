@@ -29,7 +29,7 @@ Listening to an episode of Hackable is like hearing a good friend tell a great s
 
 ## The Secure Developer
 
-In The Secure Developer podcast you can hear experiences from developers and other people in the industry. There are great tips and interviews with people that have hands on experience and know what they are talking about. This is mostly relevant for developers, but anyone working with development can get great insight to valuable topics. The podcast is predented by Heavybit. <https://www.heavybit.com/library/podcasts/the-secure-developer/ep-33-engineering-teams-with-leif-dreizler-and-eric-ellett-of-segment/> 
+In The Secure Developer podcast you can hear experiences from developers and other people in the industry. There are great tips and interviews with people that have hands on experience and know what they are talking about. This is mostly relevant for developers, but anyone working with development can get great insight to valuable topics. The podcast is predented by Heavybit. <https://www.heavybit.com/library/podcasts/the-secure-developer/> 
 
 ## SANS Internet Stormcenter
 
