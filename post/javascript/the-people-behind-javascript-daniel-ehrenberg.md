@@ -61,6 +61,8 @@ lot of people, but I helped by pushing it through the TC39 process and
 editing the proposed specification. This feature lets you work with
 integers of any size, without arbitrary restrictions like BigInt has.
 
+:video_camera: Watch Dan's JSConf talk from 2018 about [BigInts In JavaScript](https://www.youtube.com/watch?v=WBEdUGsGiXo).
+
 ### What's an upcoming propsal you are excited about, and why?
 
 I'm excited about the BigDecimal proposal. This would be a new numeric
