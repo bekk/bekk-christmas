@@ -22,13 +22,13 @@ When maintaining a small, quite static, open source library on GitHub, we need a
 
 * Change parent-pom of project to com.jcabi:parent (not necessary, but quite convenient)
 * Encrypt `setting.xml`, private- and public-key (GPG) with [@Rultor](http://rultor.com) and commit them to NoCommons
-* Create `.rultor.yml` and commit to NoCommons with me as `commanders` and `architect`
+* Create _.rultor.yml_ and commit to NoCommons with me as _commanders_ and _architect_
 
 [@Rultor](http://rultor.com) need write-access to the repository to publish tags and GitHub-releases, so I added it as a collaborator in GitHub.
 
 Now I can comment this in an issue after merging a PR:
 
-``` @rultor release, tag=`0.9.0` ```
+``@rultor release, tag=`0.9.0` ``
 
 [no.bekk.bekkopen:nocommons:0.9.0](https://github.com/bekkopen/NoCommons/releases/tag/0.9.0)
 
