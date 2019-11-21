@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 11
 title: 'The people behind JavaScript: Daniel Ehrenberg'
 ingress: >-
-  *The people behind JavaScript* is a series of interviews with the members of
+  The people behind JavaScript is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
   JavaScript enthusiasts and language experts who get together to define how
   JavaScript new versions of should work. 
@@ -19,9 +19,10 @@ const keyInformation = {
   work: "Igalia", 
   yearsInTC39: 4, 
   favoriteMusic: "Sardana"
-  twitterHandle: "@littledan"
 }
 ```
+Make sure to follow [Dan on Twitter](https://twitter.com/littledan) :bird:
+
 
 ### Who are you and what do you do?
 
