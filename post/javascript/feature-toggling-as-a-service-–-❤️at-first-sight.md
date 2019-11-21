@@ -17,6 +17,8 @@ Feature toggling as a service is best explained by a live demo. This 60 second s
   Your browser does not support the video tag.
 </video>
 
+## Targeting and logging
 Although not shown in the video, Launch Darkly obviously also allows you to target groups of users based on whatever criteria you have available. It's also backed by great audit logging and statistics, so you can see how feature configuration has changed over time and what values have been served to the users over time.
 
+## Getting started
 Launch Darkly has a nice SDK, allowing you to integrate with all popular programming language, including packages for both general JavaScript and React apps. There also 3rd party libraries like Flopflip, which smoothly mirrors the flag states to your Redux store. This is what we do, and it makes it really easy to debug issues related to feature flags, e.g. using time-travel.
