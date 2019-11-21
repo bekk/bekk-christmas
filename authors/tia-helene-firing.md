@@ -1,5 +1,6 @@
 ---
-title: Tia Helene Firing
-socialMediaLink: N/A
+title: Tia Firing
+company: Bekk
+socialMediaLink: ''
 ---
 

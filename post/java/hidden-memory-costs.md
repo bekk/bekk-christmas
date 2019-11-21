@@ -16,9 +16,9 @@ links:
     url: >-
       https://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/
 authors:
-  - Tia Helene Firing
+  - Tia Firing
 ---
-50 years ago humans managed to land on the moon using a [guidance computer](https://www.bbc.com/future/article/20190704-apollo-in-50-numbers-the-technology) with no more than 4KB RAM. During these 50 years memory has become a lot cheaper, and the need for writing memory efficient code is not that critical anymore. Today, your simplest Hello World SpringBoot app will probably use at least 100MB RAM. But still, sometimes, typically when we realize that we have to provide even more memory for an application, we can not help but wonder: Why in the world should this app need so much memory?! 
+50 years ago humans managed to land on the moon using a [guidance computer](https://www.bbc.com/future/article/20190704-apollo-in-50-numbers-the-technology) with no more than 4KB RAM. During these 50 years memory has become a lot cheaper, and the need for writing memory efficient code is not that critical anymore. Today, your simplest Hello World Spring Boot app will probably use at least 100MB RAM. But still, sometimes, typically when we realize that we have to provide even more memory for an application, we can not help but wonder: Why in the world should this app need so much memory?! 
 
 At least a part of the answer to that question lies within our code. Sometimes we write applications that use far more memory than necessary just because we are not aware of the hidden memory costs of our coding choices. Let us look at a few examples. 
 
@@ -63,11 +63,11 @@ if (args.length == 1) {
 }
 ```
 
-[Lambdas](https://www.beyondjava.net/performance-java-8-lambdas) are another example. When using a Lambda for the first time, what actually happens is that a new class representing the Lamdba is created by the JVM. The next time the Lambda is used, this class will be reused, but if you use your Lambda only once, this is quite costly. 
+[Lambdas](https://www.beyondjava.net/performance-java-8-lambdas) are another example. When using a Lambda for the first time, what actually happens is that a new class representing the Lambda is created by the JVM. The next time the Lambda is used, this class will be reused, but if you use your Lambda only once, this is quite costly. 
 
 You should also use primitives instead of objects whenever possible, e.g. int is preferable to Integer as it requires less memory. 
 
-And, as always, clean up unneccessary method calls. 
+And, as always, clean up unnecessary method calls. 
 
 ## Java Streams
-There has been a lot of debate conserning the performance of Java Streams, that were introduced in Java 8, compared to more traditional for and for-each loops. Several experiments have proven streams to be slower and more resource consuming than traditional loops, but they have received a lot of criticism for writing the code using streams in a poorly optimized way. The conclusion regarding streams and performance seems to be that streams are not necessarily performing worse than traditional loops, but you should pay some attention when writing the code to avoid for instance resource demanding auto-boxing and Lambdas that are used just a few times. 
+There has been a lot of debate concerning the performance of Java Streams, that were introduced in Java 8, compared to more traditional for and for-each loops. Several experiments have proven streams to be slower and more resource consuming than traditional loops, but they have received a lot of criticism for writing the code using streams in a poorly optimized way. The conclusion regarding streams and performance seems to be that streams are not necessarily performing worse than traditional loops, but you should pay some attention when writing the code to avoid for instance resource demanding auto-boxing and Lambdas that are used just a few times. 

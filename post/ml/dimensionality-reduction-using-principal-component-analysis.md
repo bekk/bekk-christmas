@@ -1,7 +1,7 @@
 ---
 calendar: ml
 post_year: 2019
-post_day: 1
+post_day: 13
 title: Dimensionality reduction using Principal Component Analysis
 links:
   - title: Principal Component Analysis Explained Visually

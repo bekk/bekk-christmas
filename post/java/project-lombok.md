@@ -6,7 +6,7 @@ title: Project Lombok
 image: >-
   https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
 ingress: >-
-  Want to use the `var` keyword, but your team is stuck on java 8? Lombok can
+  Want to use the `var` keyword, but your team is stuck on Java 8? Lombok can
   help you. Sick and tired of writing and maintaining getters and setters?
   Lombok can help you.
 links:
@@ -21,13 +21,13 @@ links:
 authors:
   - Nicklas Utgaard
 ---
-[Project Lombok](https://projectlombok.org) is a java compile-time library that “extends” the java-experience by adding new and exciting annotations and keywords. It does this by utilizing [JSR 269: Pluggable Annotation Processing API](https://www.jcp.org/en/jsr/detail?id=269) and a myriad of other internal and/or compiler-specific APIs.
+[Project Lombok](https://projectlombok.org) is a Java compile-time library that “extends” the Java-experience by adding new and exciting annotations and keywords. It does this by utilizing [JSR 269: Pluggable Annotation Processing API](https://www.jcp.org/en/jsr/detail?id=269) and a myriad of other internal and/or compiler-specific APIs.
 
 ## Peeking into the future
-While some projects may be using java 11 or 13, there is still a lot of developers and code stuck in the pre-java-9 era. Project Lombok might help you to peek into the future if this is your everyday reality.
+While some projects may be using Java 11 or 13, there is still a lot of developers and code stuck in the pre- Java-9 era. Project Lombok might help you to peek into the future if this is your everyday reality.
 
 Java 10 introduces the `var` keyword, extending the usage of type inference to include your everyday variables.
-In term of code this means that the previously verbose `Customer customer = new Customer("Frank");`, can be simplified to `var customer = new Customer("Frank");`. Add Project Lombok to your built tool and you may experience this glorious new-found freedom yourself, even if you're stuck at java 8. As a treat, Project Lombok even adds `val`, which is similar to java 10's `final var`.
+In term of code this means that the previously verbose `Customer customer = new Customer("Frank");`, can be simplified to `var customer = new Customer("Frank");`. Add Project Lombok to your built tool and you may experience this glorious new-found freedom yourself, even if you're stuck at Java 8. As a treat, Project Lombok even adds `val`, which is similar to Java 10's `final var`.
 
 ## So much code, yet no value
 
@@ -60,4 +60,4 @@ While Project Lombok undoubtedly has some nice features, it also comes with a co
 
   
 
-Other alternatives may also be better suited for your team, e.g; upgrading to a newer version of java, or introducing kotlin if you main concern is reducing boilerplate code.
+Other alternatives may also be better suited for your team, e.g; upgrading to a newer version of Java, or introducing Kotlin if you main concern is reducing boilerplate code.

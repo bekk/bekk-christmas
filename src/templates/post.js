@@ -2,10 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import remark from 'remark';
+import recommended from 'remark-preset-lint-recommended';
+import remarkHtml from 'remark-html';
 
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
+import { setImageWidth } from '../utils';
 
 require('prismjs/themes/prism-solarizedlight.css');
 
@@ -23,7 +27,7 @@ const HeroImage = styled.img`
     margin: 50px 0;
 `;
 
-const Ingress = styled.p`
+const Ingress = styled.section`
     font-size: 22px;
 
     max-width: 759px;
@@ -49,7 +53,15 @@ const TitleContainer = styled.div`
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
-    const { calendar, title, ingress, image, links } = frontmatter;
+    const { calendar, description, title, ingress, image, links } = frontmatter;
+
+    const ingressHtml = remark()
+        .use(recommended)
+        .use(remarkHtml)
+        .processSync(ingress)
+        .toString();
+
+    const heroImage = setImageWidth(image || fallbackImage);
 
     const htmlWithImageStyling = html.replace('<p><img', '<p class="p-with-img"><img');
 
@@ -58,8 +70,8 @@ const Template = ({ data }) => {
             <Helmet>
                 <title>{title}</title>
                 <meta property="og:title" content={title} />
-                <meta property="og:description" content={ingress} />
-                <meta property="og:image" content={image} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={heroImage} />
             </Helmet>
             <TitleContainer>
                 <h1>{title}</h1>
@@ -72,9 +84,11 @@ const Template = ({ data }) => {
                         calendar={calendar}
                     />
                 )}
-                <HeroImage src={image || fallbackImage} alt="" />
-                <Ingress>{ingress}</Ingress>
-                <ArticleBody dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                <HeroImage src={heroImage} alt="" />
+                <ArticleBody>
+                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
+                    <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                </ArticleBody>
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
                         <h2>Relevant links</h2>

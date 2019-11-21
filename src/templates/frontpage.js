@@ -34,7 +34,12 @@ const Frontpage = ({ data, pageContext }) => {
     const showTeaser = calendars.length === 0;
 
     if (showTeaser) {
-        return <Teaser />;
+        return (
+            <>
+                <Teaser />
+                <Preview calendarsWithContent={pageContext.calendarsWithContent} />
+            </>
+        );
     }
 
     return (

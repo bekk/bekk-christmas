@@ -23,6 +23,7 @@
         "gatsby-plugin-netlify-cms": "^4.1.25",
         "gatsby-plugin-react-helmet": "^3.1.13",
         "gatsby-plugin-styled-components": "^3.1.11",
+        "gatsby-remark-emoji": "0.0.3",
         "gatsby-remark-prismjs": "^3.3.23",
         "gatsby-remark-responsive-iframe": "^2.2.25",
         "gatsby-source-filesystem": "^2.1.33",
@@ -32,6 +33,9 @@
         "react": "^16.10.2",
         "react-dom": "^16.10.2",
         "react-helmet": "^5.2.1",
+        "remark": "^11.0.2",
+        "remark-html": "^10.0.0",
+        "remark-preset-lint-recommended": "^3.0.3",
         "styled-components": "^4.4.0",
         "styled-normalize": "^8.0.6"
     },
