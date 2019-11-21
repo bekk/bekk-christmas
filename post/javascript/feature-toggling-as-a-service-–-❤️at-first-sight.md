@@ -7,6 +7,8 @@ ingress: >-
   I used to think that feature switches were clunky if-statements in my code
   that would require re-compilation or at least restart of my app. Launch Darkly
   proved me totally, swinging me from cynical scepticism to deep love!
+authors:
+  - Thomas Svensen
 ---
 Feature toggling as a service is best explained by a live demo. This 60 second sample from our enterprise app shows how instantly we can enable/disable a feature, and how we can easily do that down to the specific user of our app.
 
