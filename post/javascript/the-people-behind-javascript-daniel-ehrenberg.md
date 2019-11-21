@@ -19,12 +19,12 @@ const keyInformation = {
 }
 ```
 
-## Who are you and what do you do?
+### Who are you and what do you do?
 
 I'm Daniel Ehrenberg, a TC39 delegate and a partner at Igalia, a free
 software consultancy.
 
-## How did you get into programming?
+**How did you get into programming?**
 
 I used to program little games on my TI-83 calculator when I was 12 or
 so. From there, I wanted to learn "real programming" on the computer,
