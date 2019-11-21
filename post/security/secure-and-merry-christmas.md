@@ -3,7 +3,8 @@ calendar: security
 post_year: 2018
 post_day: 24
 title: Secure and Merry Christmas
-authors: []
+authors:
+  - Stian Fredrikstad
 ---
 As you have seen and read, it has been a diversity in the topics of this calendar, and this is also why the field of security is as complex as it is.
 
