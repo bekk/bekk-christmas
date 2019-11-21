@@ -17,7 +17,8 @@ links:
   - title: Removing sensitive data from a repository
     url: >-
       https://help.github.com/articles/removing-sensitive-data-from-a-repository/
-authors: []
+authors:
+  - Didrik Sæther
 ---
 ## It's burning on the toilet
 In Norway we say _"Det brenner på dass"_, can be translated to _"It's burning on the toilet"_. This is our way of saying that "shit has already hit the fan".  
