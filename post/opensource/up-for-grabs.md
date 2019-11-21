@@ -2,7 +2,7 @@
 calendar: opensource
 post_year: 2019
 post_day: 3
-title: ChatOps bekkopen/NoCommons
+title: Automatic deploy (chatops) with @Rultor
 image: 'https://imgur.com/gnAbkfu.png'
 ingress: >-
   Releasing to Sonatype is for some a daunting task. You need gpg-keys generated
