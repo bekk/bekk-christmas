@@ -22,3 +22,28 @@ Although not shown in the video, Launch Darkly obviously also allows you to targ
 
 ## Getting started
 Launch Darkly has a nice SDK, allowing you to integrate with all popular programming language, including packages for both general JavaScript and React apps. There also 3rd party libraries like Flopflip, which smoothly mirrors the flag states to your Redux store. This is what we do, and it makes it really easy to debug issues related to feature flags, e.g. using time-travel.
+
+## Show me the code
+In your React app, you just add this snippet around your code:
+
+``` js
+      <ConfigureFlopFlip
+        adapter={launchDarklyAdapter}
+        adapterArgs={{
+          clientSideId: config.launchDarklyClientId,
+          flags: featureFlags,
+          user: launchDarklyUser
+        }}>
+        <Routes />
+      </ConfigureFlopFlip>
+```
+
+and then for the specific component that you want to toggle:
+
+```
+    <ToggleFeature flag="portal-external-show-map-card">
+      <MapCard />
+    </ToggleFeature> 
+```
+
+You can of course do more complex logic based on your feature-switches too, e.g. have a fallback component which is rendered in the case the feature is `OFF`. Finally, I should mention that feature flags can also be string values. This opens up for multi-variation scenarios and we have "misused" this as a low-effort solution for showing localised warning messages whenever we have system issues.
