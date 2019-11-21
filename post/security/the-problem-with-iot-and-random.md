@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2019
 post_day: 17
-title: The problem with IoT and random
+title: 'WIP: The problem with IoT and random'
 image: >-
   https://www.theartist.me/wp-content/uploads/2018/07/jackson-pollock-convergence-famous-paintings-1.jpg
 ingress: >
