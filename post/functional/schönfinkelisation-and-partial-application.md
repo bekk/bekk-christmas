@@ -59,12 +59,16 @@ Now, we're free to do things like this again:
 incrementByFive = curriedAdd(5)
 ```
 
-But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, are _curried by default_. This means that all functions can be 
+But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, are _curried by default_. This means that all functions can easily be partially applied!
 
 ## Why is this useful?
+
+The `incrementByFive` example above is obviously quite contrived.
 
 TODO
 
 ## Schönfinkeli-what-now?
 
-TODO
+The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If that first name sounds familiar, that's no coincidence. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
+
+However, he was not the one to discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact attributed by Curry. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
