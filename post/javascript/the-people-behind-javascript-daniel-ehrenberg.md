@@ -64,8 +64,7 @@ decimals of unlimited size represented precisely, without rounding
 errors. You can find more information at
 https://github.com/littledan/proposal-bigdecimal .
 
-### What is the most fun about being a part of the development of
-EcmaScript?
+### What is the most fun about being a part of the development of EcmaScript?
 
 It's really fun to dream about new language features and think through
 the details and the design space. I really like how I get to learn about
@@ -77,8 +76,7 @@ they interact with the JavaScript language.
 Working with a large group of people and understanding their problems
 and concerns, and resolving conflicts between these.
 
-### What do you wish you knew before you started contributing to the
-development
+### What do you wish you knew before you started contributing to the development
 
 I wish I knew how important and complicated it was to both listen and to
 reach out and seek feedback. Initially, I thought that we could get
