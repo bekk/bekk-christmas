@@ -21,7 +21,7 @@ const keyInformation = {
   favoriteMusic: "Sardana"
 }
 ```
-Make sure to follow [Dan on Twitter](https://twitter.com/littledan) :bird:
+:point_right: Make sure to follow [Dan on Twitter](https://twitter.com/littledan)
 
 
 ### Who are you and what do you do?
