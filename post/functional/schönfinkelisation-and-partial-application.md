@@ -5,7 +5,7 @@ post_day: 18
 title: Schönfinkelisation and Partial Application
 ingress: ''
 ---
-As we discussed in a [previous article](link-til-simens-artikkel-her), one of the things we can do with a function is to call it with fewer arguments than it is expecting. This will result in a new function where the arguments we did provide are bound to values, and the remainding arguments are still expected as parameters. Since we apply the function to only _some_ of its arguments, we call this technique _partial application_.
+As we discussed in a [previous article](link-til-simens-artikkel-her), one of the things we can do with a function is to call it with fewer arguments than it is expecting. This will result in a new function where the arguments we did provide are bound to values, and the remainding arguments are still expected as parameters. Since we apply the function to _only some_ of its arguments, we call this technique _partial application_.
 
 Let's see how this works in Elm:
 
@@ -33,7 +33,7 @@ incrementByFive 37
 
 ## Currying
 
-It might be surprising that we are able to call the function `add` with only one argument. But, in fact, it is possible to turn a function of any number of arguments into a function of only one by using a process called _currying_.
+It might surprise you that we are able to call the function `add` with only one argument. But, in fact, it is possible to turn a function of any number of arguments into a function of only one by using a process called _currying_.
 
 Say we have this little JavaScript function:
 
@@ -59,11 +59,32 @@ Now, we're free to do things like this again:
 incrementByFive = curriedAdd(5)
 ```
 
-But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, are _curried by default_. This means that all functions can easily be partially applied!
+But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, are _curried by default_. This means that all functions can easily be partially applied! And that's also why the type signature we saw in the first example looks like this:
+
+```elm
+add : number -> number -> number
+```
+
+A different way to read this type is like this:
+
+```elm
+add : number -> (number -> number)
+```
+
+So, as you see, `add` is in fact a function which takes only one argument (a `number`) and returns a new function (with the type `number -> number`).
 
 ## Why is this useful?
 
-The `incrementByFive` example above is obviously quite contrived.
+The `incrementByFive` example above is obviously quite contrived. But you'd be surprised how often partial application turns out to be useful when writing code in a functional language.
+
+This often occurs when we're using functions like _map_ or _filter_. These functions expects an argument which is a function that can be applied to every element of a list, and which must thus take _exactly one_ argument. It is often convenient to create this function by using partial application.
+
+Here are a couple of examples, again using Elm. 
+
+```elm
+> -- foo bar  
+> List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki"]
+```
 
 TODO
 
