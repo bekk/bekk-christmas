@@ -32,4 +32,10 @@ In the examples above the trees are only made up of one and two questions, and t
 
 However, trees are not always convenient. With lots of data and features, trees can be huge. They are also prone to overfitting. They get too familiar with training data, and when a real data sample is pushed through the tree, the _slightest_ of difference can send you down the wrong track and into a wrong classification. Let’s say you ask this question on seafood restaurant, the guests might not be vegetarian, but asking if they ate beef here will get us nowhere. 
 
+This is where bagging and boosting comes, and the difference is illustrated below.  ...
+
+![Source: https://www.kdnuggets.com/2017/11/difference-bagging-boosting.html](/assets/boostvbag.png)
+
+ 
+
 Many machine learning techniques are like a black box e.g. neural networks, we have no idea what conclusions the neural network drew. That's not the case with trees. We can easily visualize the decision, that's just the nature of the trees. By starting at the top and answering questions on our way down, we can see and understand each small decision made up by the tree. It's difficult to get lost, just follow the branch out of the tree. I would say it's easier to get lost in Git branches than in a decision tree.
