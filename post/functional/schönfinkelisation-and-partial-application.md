@@ -7,7 +7,7 @@ ingress: ''
 authors:
   - Kjetil Valle
 ---
-As we discussed in a [previous article](link-til-simens-artikkel-her), one of the things we can do with a function is to call it with fewer arguments than it is expecting. This will result in a new function where the arguments we did provide are bound to values, and the remainding arguments are still expected as parameters. Since we apply the function to _only some_ of its arguments, we call this technique _partial application_.
+As we discussed in a [previous article](link-til-simens-artikkel-her), one of the things we can do with a function is to call it with fewer arguments than it is expecting. This will result in a new function where the arguments we did provide are bound to values, and the reminding arguments are still expected as parameters. Since we apply the function to _only some_ of its arguments, we call this technique _partial application_.
 
 Let's see how this works in Elm:
 
