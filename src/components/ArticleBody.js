@@ -67,8 +67,13 @@ const ArticleBody = styled.article(
     table,
     div,
     ul,
-    video,
     ol {
+        max-width:759px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    video {
+        display: block;
         max-width:759px;
         margin-left:auto;
         margin-right:auto;
