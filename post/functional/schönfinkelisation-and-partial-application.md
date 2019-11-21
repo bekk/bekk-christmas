@@ -73,7 +73,7 @@ A different way to read this type is like this:
 add : number -> (number -> number)
 ```
 
-So, as you see, `add` is in fact a function which takes only one argument (a `number`) and returns a new function (with the type `number -> number`).
+So, as you see, `add` is in fact a function which takes only one argument (a `number`) and returns a function (with the type `number -> number`).
 
 ## Why is this useful?
 
@@ -84,10 +84,13 @@ This often occurs when we're using functions like _map_ or _filter_. These funct
 Here are a couple of examples, again using Elm. 
 
 ```elm
--- Convert a list of `Maybe String` into something that can be displayed to the user, using "n/a" where we don't have a value.
+-- Convert a list of `Maybe String` into something that 
+-- can be displayed to the user, using "n/a" where we 
+-- don't have a value.
 displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki", Just "Wayland"]
 
--- Filter a list of names to include only the people named "John".
+-- Filter a list of names to include only the people 
+-- named "John".
 justTheJohns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", John McClane", "Jack Bauer"]
 ```
 
@@ -99,12 +102,12 @@ As another example, say we have a function with the following type signature in 
 log : LogConfig -> Message -> Cmd msg
 ```
 
-The function require a configuration type and a message. Depending on the configuration, the message might be logged to a backend service or to the browser console. To specify the log config everywhere we need to log something would be rather cumbersome. Instead we'll partially apply `log` to the configuration once, and use the result in the rest of the application.
+The function require a configuration type and a message. Depending on the configuration, the message might be logged to a backend service or maybe to the browser console. To specify the configuration everywhere we need to log something would be rather cumbersome. Instead we can just partially apply `log` to the configuration once, and use the resulting function in the rest of the application!
 
 The more used you get to functional programming, the more places you will find where a partially applied function is exactly what you need.
 
 ## Schönfinkeli-what-now?
 
-The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If that first name sounds familiar, that's no coincidence. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
+The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If the name sounds familiar, that's no coincidence. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
 
-However, he was not the one to discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact attributed by Curry. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
+However, he was not the one to discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact attributed by Curry for doing it. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
