@@ -74,9 +74,10 @@ const ArticleBody = styled.article(
     }
     video {
         display: block;
-        max-width:759px;
-        margin-left:auto;
-        margin-right:auto;
+        width: 100%;
+        max-width: 759px;
+        margin-left: auto;
+        margin-right: auto;
     }
     `
 );
