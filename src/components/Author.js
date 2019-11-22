@@ -38,7 +38,7 @@ const AuthorInfo = props => {
                         ) : (
                             <strong>{author.title}</strong>
                         )}
-                        {author.company && author.company !== 'Bekk' ? ` (${author.company})` : ''}
+                        {author.company && author.company !== 'Bekk' && ` (${author.company})`}
                         {index < authors.length - 2 && ', '}
                         {index === authors.length - 2 && ' and '}
                     </Fragment>
