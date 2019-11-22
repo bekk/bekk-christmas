@@ -109,6 +109,7 @@ export const aboutPageQuery = graphql`
                 enrichedAuthors {
                     title
                     socialMediaLink
+                    company
                 }
             }
             frontmatter {
