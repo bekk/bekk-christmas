@@ -60,8 +60,10 @@ const ArticleBody = styled.article(
     .gatsby-highlight, iframe{
         margin:50px auto;
     }
-    .p-with-img{
-        max-width: 1258px;
+    .wide-image{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
     }
     h1,
     table,

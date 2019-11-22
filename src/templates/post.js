@@ -63,8 +63,6 @@ const Template = ({ data }) => {
 
     const heroImage = setImageWidth(image || fallbackImage);
 
-    const htmlWithImageStyling = html.replace(/<p><img/g, '<p class="p-with-img"><img');
-
     return (
         <Layout calendarName={calendar}>
             <Helmet>
@@ -87,7 +85,7 @@ const Template = ({ data }) => {
                 <HeroImage src={heroImage} alt="" />
                 <ArticleBody>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
-                    <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                    <section dangerouslySetInnerHTML={{ __html: html }} />
                 </ArticleBody>
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
