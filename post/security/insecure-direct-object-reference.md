@@ -1,7 +1,7 @@
 ---
 calendar: security
 post_year: 2018
-post_day: 20
+post_day: 19
 title: Insecure Direct Object Reference
 ingress: >-
   When creating a web application, or a web site with more than one page, you
