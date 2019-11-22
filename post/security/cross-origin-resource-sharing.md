@@ -13,7 +13,8 @@ links:
     url: 'https://medium.com/@baphemot/understanding-cors-18ad6b478e2b'
   - title: What is CORS?
     url: 'https://www.codecademy.com/articles/what-is-cors'
-authors: []
+authors:
+  - Robert Larsen
 ---
 To understand CORS, we also have to understand the same-origin policy. The same-origin policy states that content retrieved from different origins are isolated from eachother. That is, if a webpage is retrieved from origin X it can interact with other resources on origin X only. Most browsers determine that two resources have the same origin if they have identical protocol, host and port. Internet Explorer is an exception, as it excludes the port from the same-origin check.
 
