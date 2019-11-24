@@ -29,7 +29,7 @@ Launch Darkly has [a nice SDK](https://docs.launchdarkly.com/docs/js-sdk-referen
 
 In your React app, you just add this snippet around your code:
 
-``` javascript
+```jsx
       <ConfigureFlopFlip
         adapter={launchDarklyAdapter}
         adapterArgs={{
@@ -43,7 +43,7 @@ In your React app, you just add this snippet around your code:
 
 and then for the specific component that you want to toggle:
 
-``` html
+```jsx
     <ToggleFeature flag="portal-external-show-map-card">
       <MapCard />
     </ToggleFeature> 
