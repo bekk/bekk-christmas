@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import { mapCalendarToName } from '../utils';
 import { ThemeProvider } from './ThemeContext';
@@ -17,22 +18,28 @@ const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
     max-width: 1258px;
-    padding: 30px;
+    padding: 30px 16px;
     margin: 0 auto;
 `;
 
 const Header = styled.header`
     margin: 50px 20px;
+`;
+
+const CalendarName = styled.div`
+    margin-left: 16px;
+    font-size: 40px;
+`;
+
+const StyledLink = styled(Link)`
+    color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 
-    svg {
-    }
-    h1 {
-        margin-left: 16px;
-        font-weight: normal;
-        font-size: 40px;
+    &:visited  {
+        color: inherit;
     }
 `;
 
@@ -45,8 +52,10 @@ const Layout = ({ calendarName, children }) => {
                 <GlobalStyles />
                 {calendarTitle && (
                     <Header>
-                        <Tre />
-                        <h1>{calendarTitle}</h1>
+                        <StyledLink to="/">
+                            <Tre />
+                            <CalendarName>{calendarTitle}</CalendarName>
+                        </StyledLink>
                     </Header>
                 )}
                 <MainContent>{children}</MainContent>
