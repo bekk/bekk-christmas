@@ -64,7 +64,6 @@ const Template = ({ data }) => {
     const heroImage = setImageWidth(image || fallbackImage);
     const seoDescription = description || `An article from ${calendar}`;
 
-    const htmlWithImageStyling = html.replace(/<p><img/g, '<p class="p-with-img"><img');
     return (
         <Layout calendarName={calendar}>
             <Helmet>
@@ -89,7 +88,7 @@ const Template = ({ data }) => {
                 <PrismThemer>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
-                        <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                        <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
                 </PrismThemer>
                 {links && links.length > 0 && (
