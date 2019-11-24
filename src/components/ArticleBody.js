@@ -94,8 +94,7 @@ const ArticleBody = styled.article(
         display: block;
         width: 100%;
         max-width: 760px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 50px auto;
     }
     `
 );
