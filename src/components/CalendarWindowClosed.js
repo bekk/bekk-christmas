@@ -16,13 +16,13 @@ const WindowClosed = styled.div(
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 33px);
+    height: 100%;
 `
 );
 
-const CalendarWindowClosed = ({ day }) => {
+const CalendarWindowClosed = ({ day, ...rest }) => {
     return (
-        <WindowClosed aria-label={`Day ${day} is not yet available`}>
+        <WindowClosed {...rest} aria-label={`Day ${day} is not yet available`}>
             <Number>{day}</Number>
         </WindowClosed>
     );

@@ -61,8 +61,11 @@ const Frontpage = ({ data, pageContext }) => {
                 {calendars.map((calendar, index) => (
                     <li key={calendar.calendar}>
                         <CalendarWindowOpen
-                            link={`${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
-                            imageUrl={getWindowImagePlaceholder(index)}
+                            link={`/${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
+                            imageUrl={getWindowImagePlaceholder(
+                                calendar.calendar,
+                                calendar.post_day
+                            )}
                             title={calendar.calendar}
                         />
                     </li>
