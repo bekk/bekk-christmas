@@ -179,7 +179,7 @@ function tollInfo(toll) {
 
 ## Demo
 
-Bringing it all togeter and we have a working SPA.
+Bringing it all together and we have a working SPA. 
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="Vanilla SPA" src="https://codepen.io/dagfs/embed/abbrJYp?height=500&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/abbrJYp'>Vanilla SPA</a> by Dag
