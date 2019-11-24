@@ -57,7 +57,11 @@ Vi anbefaler at du laster opp bilder på en ekstern service, som [imgbb](https:/
 ![alt-tekst til bilde](https://url-til-bildet.no)
 ```
 
-Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under tittelen) kan du legge det inn ved å legge til koden `<img class="wide-image" src="<Sett inn lenke til bilde her>" />`og bytte ut `<Sett inn lenke til bilde her>`med lenken til bildet du vil bruke. På stor skjerm vil bildet være `1258px`brett, og vil krympe med skjermen. Bildet er alltid `400px` høyt.
+Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under tittelen) kan du legge det inn ved å legge til koden `<img class="wide-image" src="<Sett inn lenke til bilde her>" />`og bytte ut `<Sett inn lenke til bilde her>`med lenken til bildet du vil bruke. På stor skjerm vil bildet være `1260px`brett, og vil krympe med skjermen. Bildet er alltid `400px` høyt.
+
+Eksempel på dette
+
+![](public/assets/readme/wide-image.png)
 
 ### Jeg vil embede eksternt innhold
 
