@@ -61,7 +61,7 @@ Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under t
 
 Eksempel på dette
 
-![](public/assets/readme/wide-image.png)
+![](https://i.ibb.co/nCZ5nhg/wide-image.png)
 
 ### Jeg vil embede eksternt innhold
 
