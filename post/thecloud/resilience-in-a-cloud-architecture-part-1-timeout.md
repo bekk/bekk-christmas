@@ -7,7 +7,7 @@ ingress: "A typical cloud architecture - from a cloud native solution to a publi
 ---
 Even though you want to minimize the number of synchronize HTTP request within your application, it might sometimes be necessary to call another service to fetch some required data needed to respond to some request. If the other service is unavailable and does not respond, the request to your application will also not respond - at least not until the call to the other service time out. Being aware of the timeout set on the client contacting this service might be crucial for keeping your application fully operational.
 
-If your application is popular, and many request take a long time to respond, request could begin to pile up and eventually make your application unavailable as well. A web application is hosted by one or more web servers, even when it run in a public cloud PAAS. Traditional web servers have a limited number of threads to handle concurrent HTTP requests. If this limit is reached, the web server will drop any new incoming requests.
+If your application is popular, and many request take a long time to respond, requests could begin to pile up and eventually make your application unavailable as well. A web application is hosted by one or more web servers, even when it run in a public cloud PAAS. Traditional web servers have a limited number of threads to handle concurrent HTTP requests. If this limit is reached, the web server will drop any new incoming requests.
 
 Another aspect is that the response time of the requests to your application is often correlated to the perceived quality of your application. If users often experience your application to be responding slowly, the chances are that the users become annoyed and stop using your application.
 
