@@ -37,6 +37,12 @@ module.exports = {
                     `gatsby-remark-responsive-iframe`,
                     {
                         resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            aliases: {
+                                sh: 'bash',
+                                'f#': 'fsharp',
+                            },
+                        },
                     },
                     `gatsby-remark-emoji`,
                 ],
