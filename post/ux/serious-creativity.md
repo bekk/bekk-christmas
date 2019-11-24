@@ -47,13 +47,30 @@ Creative thinking helps us break free from these patterns and navigate our knowl
 
 
 ## Creative techniques
-Then how do we break these limiting patterns? There are many techniques we can use to trick our minds into thinking creatively, including "Random Input" and "Provocation".
+Then how do we break these limiting patterns? There are many techniques we can use to trick our minds into thinking creatively, including "Provocation" and "Random Input".
 
-Random input is a method where a list of random input, usually words, but photos could work too, is collected and shared one item at a time. The person ideating thinks of a problem and uses the random input to affect the ideas they generate. The random input helps you break the logical patterns you are used to following and forces you to take detours through other topics that might seem unrelated but can spark new ideas.
+### Provocation
+
+
+<img class="wide-image" src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
 
 Provocation works similarly to random input. By providing a provocation that might seem illogical, and taking the time to think about the implications of the provocation, you can come up with ideas outside of our usual patterns. This can be thought of like 30 seconds of madness. 
 
+### Random input
+
+
+<img class="wide-image" src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"/>
+
+
+
+Random input is a method where a list of random input, usually words, but photos could work too, is collected and shared one item at a time. The person ideating thinks of a problem and uses the random input to affect the ideas they generate. The random input helps you break the logical patterns you are used to following and forces you to take detours through other topics that might seem unrelated but can spark new ideas.
+
+
+
+
 ## Creativity: a challenge to our perceptions, consepts and boundaries
 Creativity challenges our perceptions, concepts, and boundaries. Our understanding of creativity affects how we use it. Knowing creativity is a skill that can be tought and used in serious situations enhances our options when solving problems. 
+
+
 
 
