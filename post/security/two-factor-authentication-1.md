@@ -8,6 +8,9 @@ image: >-
 ingress: >-
   You have been told that two-factor authentication is important, but why, and
   what is it really?
+links:
+  - title: Authy
+    url: 'https://authy.com/download/'
 authors:
   - Hans Kristian Henriksen
 ---
