@@ -9,9 +9,8 @@ import remarkHtml from 'remark-html';
 import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
+import PrismThemer from '../components/PrismThemer';
 import { setImageWidth } from '../utils';
-
-require('prismjs/themes/prism-solarizedlight.css');
 
 const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
@@ -67,6 +66,7 @@ const Template = ({ data }) => {
     return (
         <Layout calendarName={calendar}>
             <Helmet>
+                <html lang="en" />
                 <title>{title}</title>
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
@@ -85,8 +85,10 @@ const Template = ({ data }) => {
                 )}
                 <HeroImage src={heroImage} alt="" />
                 <ArticleBody>
-                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
-                    <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                    <PrismThemer>
+                        <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
+                        <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
+                    </PrismThemer>
                 </ArticleBody>
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
