@@ -1,7 +1,7 @@
 ---
 calendar: javascript
 post_year: 2019
-post_day: 2
+post_day: 22
 title: Removing duplicates from an array
 image: >-
   https://images.unsplash.com/photo-1448932284983-0c7b152eba33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80
