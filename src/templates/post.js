@@ -27,7 +27,8 @@ const HeroImage = styled.img`
 `;
 
 const Ingress = styled.section`
-    font-size: 22px;
+    font-size: 24px;
+    font-family: DINW01Regular, sans-serif;
 
     max-width: 759px;
     margin-left: auto;
@@ -43,10 +44,10 @@ const RelevantLinksContainer = styled.section(
     `
 );
 
-const TitleContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+const TitleContainer = styled.h1`
+    font-size: 48px;
+    margin-top: 0;
+    text-align: center;
 `;
 
 const Template = ({ data }) => {
@@ -61,6 +62,7 @@ const Template = ({ data }) => {
         .toString();
 
     const heroImage = setImageWidth(image || fallbackImage);
+    const seoDescription = description || `An article from ${calendar}`;
 
     const htmlWithImageStyling = html.replace(/<p><img/g, '<p class="p-with-img"><img');
     return (
@@ -68,13 +70,12 @@ const Template = ({ data }) => {
             <Helmet>
                 <html lang="en" />
                 <title>{title}</title>
+                <meta property="description" content={seoDescription} />
                 <meta property="og:title" content={title} />
-                <meta property="og:description" content={description} />
+                <meta property="og:description" content={seoDescription} />
                 <meta property="og:image" content={heroImage} />
             </Helmet>
-            <TitleContainer>
-                <h1>{title}</h1>
-            </TitleContainer>
+            <TitleContainer>{title}</TitleContainer>
             <MaxWidth>
                 {fields && fields.enrichedAuthors && (
                     <AuthorInfo
@@ -84,17 +85,20 @@ const Template = ({ data }) => {
                     />
                 )}
                 <HeroImage src={heroImage} alt="" />
-                <ArticleBody>
-                    <PrismThemer>
-                        <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
+
+                <PrismThemer>
+                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
+                    <ArticleBody>
                         <section dangerouslySetInnerHTML={{ __html: htmlWithImageStyling }} />
-                    </PrismThemer>
-                </ArticleBody>
+                    </ArticleBody>
+                </PrismThemer>
                 {links && links.length > 0 && (
                     <RelevantLinksContainer>
                         <h2>Relevant links</h2>
                         {links.map(link => (
-                            <a href={link.url}>{link.title}</a>
+                            <a key={link.url} href={link.url}>
+                                {link.title}
+                            </a>
                         ))}
                     </RelevantLinksContainer>
                 )}

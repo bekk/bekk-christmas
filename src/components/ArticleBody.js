@@ -14,7 +14,7 @@ const ArticleBody = styled.article(
         color: ${theme.textColor};
         margin: 1em auto 0.5em;
         word-wrap: break-word;
-        max-width:760px;
+        max-width: 760px;
     }
     h2,
     h3,
@@ -40,6 +40,11 @@ const ArticleBody = styled.article(
             font-size: 34px;
         }
     }
+    p {
+        font-family: FFDINWebProLight, sans-serif;
+        font-size: 20px;
+        line-height: 1.45;
+    }
     p code {
         background-color: ${theme.secondaryBackgroundColor};
         padding: 3px 4px;
@@ -63,11 +68,13 @@ const ArticleBody = styled.article(
     }
     ul,
     ol {
-        font-size: 21px;
-        line-height: 1.6;
+        padding-left: 1em ;
+        li {
+            margin-bottom: .5em;
+        }
     }
     .gatsby-highlight, iframe {
-        margin:50px auto;
+        margin: 50px auto;
     }
     .p-with-img {
         max-width: 1260px;
@@ -84,7 +91,7 @@ const ArticleBody = styled.article(
     video {
         display: block;
         width: 100%;
-        max-width: 759px;
+        max-width: 760px;
         margin-left: auto;
         margin-right: auto;
     }
