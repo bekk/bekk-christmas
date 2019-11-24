@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import * as fonts from '../constants/fonts';
+import * as mq from '../constants/media-queries';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
@@ -11,9 +12,9 @@ const ArticleBody = styled.article(
     p,
     pre {
         color: ${theme.textColor};
-        margin: 1em auto 0.5em auto;
+        margin: 1em auto 0.5em;
         word-wrap: break-word;
-        max-width:759px;
+        max-width: 760px;
     }
     h2,
     h3,
@@ -24,18 +25,31 @@ const ArticleBody = styled.article(
         font-weight: 300;
     }
     h2 {
-        font-size: 42px;
+        font-size: 34px;
+
+        ${mq.mediumUp} {
+            font-size: 42px;
+        }
     }
     h3,
     h4,
     h5,
     h6 {
-        font-size: 34px;
+        font-size: 24px;
+        ${mq.mediumUp} {
+            font-size: 34px;
+        }
+    }
+    p {
+        font-family: FFDINWebProLight, sans-serif;
+        font-size: 20px;
+        line-height: 1.45;
     }
     p code {
         background-color: ${theme.secondaryBackgroundColor};
         padding: 3px 4px;
         margin: 0 2px;
+        font-size: inherit;
     }
     p img {
         width: 100%;
@@ -54,11 +68,13 @@ const ArticleBody = styled.article(
     }
     ul,
     ol {
-        font-size: 21px;
-        line-height: 1.58;
+        padding-left: 1em ;
+        li {
+            margin-bottom: .5em;
+        }
     }
-    .gatsby-highlight, iframe{
-        margin:50px auto;
+    .gatsby-highlight, iframe {
+        margin: 50px auto;
     }
     .wide-image{
         width: 100%;
@@ -70,15 +86,16 @@ const ArticleBody = styled.article(
     div,
     ul,
     ol {
-        max-width:759px;
+        max-width:760px;
         margin-left:auto;
         margin-right:auto;
     }
     video {
         display: block;
-        max-width:759px;
-        margin-left:auto;
-        margin-right:auto;
+        width: 100%;
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
     }
     `
 );

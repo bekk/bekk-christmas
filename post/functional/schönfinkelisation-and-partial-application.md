@@ -91,10 +91,10 @@ displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "J
 
 -- Filter a list of names to include only the people 
 -- named "John".
-justTheJohns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", John McClane", "Jack Bauer"]
+johns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", "John McClane", "Jack Bauer"]
 ```
 
-Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) expect to get two arguments, but by only partially applying them we get exactly what we need.
+Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) expect to get two arguments, but by only applying them partially we get exactly what we need.
 
 As another example, say we have a function with the following type signature in our Elm application.
 
