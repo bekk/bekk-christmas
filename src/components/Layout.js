@@ -17,7 +17,7 @@ const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
     max-width: 1258px;
-    padding: 30px;
+    padding: 30px 16px;
     margin: 0 auto;
 `;
 
@@ -27,8 +27,6 @@ const Header = styled.header`
     align-items: center;
     justify-content: center;
 
-    svg {
-    }
     h1 {
         margin-left: 16px;
         font-weight: normal;
