@@ -26,6 +26,8 @@ const themeConfigs = {
             functionColor: colors.primaryDark,
             variableColor: '#ee9900',
         },
+        darkThemeImageDisplay: 'block',
+        lightThemeImageDisplay: 'none',
     },
     [lightTheme]: {
         primaryBackgroundColor: colors.white,
@@ -46,6 +48,8 @@ const themeConfigs = {
             functionColor: '#FF5B5B',
             variableColor: '#ee9900',
         },
+        darkThemeImageDisplay: 'none',
+        lightThemeImageDisplay: 'block',
     },
 };
 

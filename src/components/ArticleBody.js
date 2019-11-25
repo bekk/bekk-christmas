@@ -81,6 +81,12 @@ const ArticleBody = styled.article(
         height: 400px;
         object-fit: cover;
     }
+    .dark-theme-image{
+        display: ${theme.darkThemeImageDisplay};
+    }
+    .light-theme-image{
+        display: ${theme.lightThemeImageDisplay};
+    }
     h1,
     table,
     div,
