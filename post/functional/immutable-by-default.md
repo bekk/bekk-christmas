@@ -15,7 +15,7 @@ links:
 authors:
   - Bendik Solheim
 ---
-An immutable data structure is one that cannot change. Its values are set in stone. Once created, it is simply not possible to assign a new value to either the object itself, or one its children. If this thought is completely new to you, it might sound quite strange and limiting. And you would not necessarily be wrong on the limiting part – a key point with immutability is actually to limit what can be done with an object. As it turns out, if you cannot change an object, many sources of bugs also disappears!
+An immutable data structure is one that cannot change. Its values are set in stone. Once created, it is simply not possible to assign a new value to either the object itself, or one of its children. If this thought is completely new to you, it might sound quite strange and limiting. And you would not necessarily be wrong on the limiting part – a key point with immutability is actually to limit what can be done with an object. As it turns out, if you cannot change an object, many sources of bugs also disappears!
 
 ## Reasoning
 
@@ -31,7 +31,7 @@ Concurrency is a biggie nowadays, with home computers having more and more CPUS 
 
 # But what about the real world?
 
-As we can see, immutability gives us several desired properties when programming. We all want to get rid of bugs, and we all want to remove sources of confusion. At least I do. We want to spend more time solving the real problems, not the problems we created ourselves two weeks ago. I don’t know about you, but I can tell you that the list of bugs caused by my code is already seriously long, and if something can stop that list from growing with the speed of light I’m all in!
+As we can see, immutability gives us several desired properties when programming. We all want to get rid of bugs, and we all want to remove sources of confusion. At least I do. We want to spend more time solving the real problems, not the problems we created ourselves two weeks ago. I don’t know about you, but I can tell you that the list of bugs caused by my code is already seriously long, and if something can stop that list from growing at the speed of light I’m all in!
 
 But just making things immutable does not solve the problems by itself. In real life, data change over time, and if our programs can’t do this it’s quite hard to solve real life problems with them. If I make software for cars, having an immutable speed dial does not exactly help the driver. "Yeah, I know it doesn’t change, but at least it doesn‘t crash your car!" – good luck selling your car on that premise. Luckily, immutable data structures also have ways of modelling changes. In fact, they often have quite similar APIs as mutable data structures, but with the key difference that they return a new copy with the change included rather than modifying the data in place. With our speed dial example, we would simply receive a new speed dial and swap out the old one when accelerating or braking instead of modifying the current one. Now, this might be where you start thinking "creating new copies all the time.. that sure sounds expensive.". And I wouldn’t blame you for thinking like that, because naively implemented that might actually be true. But let me assure you that correctly implemented, this pattern is no more resource intensive than modifying in place.
 
