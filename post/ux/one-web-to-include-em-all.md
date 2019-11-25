@@ -55,6 +55,8 @@ WCAG 2.1 consists of four main principles, which contain a total of 13 guideline
 
 <br>
 
+<br>
+
 The numerous success criteria mainly address three concerns - content (e.g. text and images), design (e.g. layout, colors and contrast), and technology (e.g. the code structure). These are concrete, testable measures of your web page’s level of accessibility. Success criterion “2.1.1 - Keyboard” says, for instance, that all content must be operable through a keyboard interface. 
 
 <br>
@@ -99,3 +101,6 @@ The essence of these examples is that you should try to put yourself in the posi
 ## Some final words
 
 Stay strong, fellow UXer. Accessibility and WCAG 2.1 may seem overwhelming, but essentially, it helps you become a better designer. You don’t need to become an expert in the field, but by understanding the main principles of web accessibility, you can advocate the inclusion of universal design in your day to day work life. Good luck and have a lovely December!
+
+<br>
+<br>
