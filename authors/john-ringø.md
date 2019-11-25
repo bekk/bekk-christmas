@@ -1,6 +1,6 @@
 ---
 title: John Ringø
-socialMediaLink: 'https://twitter.com/ionnar'
+socialMediaLink: ''
 company: Bekk
 ---
 
