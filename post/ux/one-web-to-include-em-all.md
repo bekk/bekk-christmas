@@ -11,6 +11,15 @@ ingress: >-
   to the maze of web accessibility and its related framework WCAG 2.1: How can
   we include people with disabilities on the web and how do we understand the
   numerous criteria we need to meet in order to do so?
+links:
+  - title: W3C's official web page
+    url: 'https://www.w3.org/TR/WCAG21/'
+  - title: WUHCAG
+    url: 'https://www.wuhcag.com/'
+  - title: Knowability
+    url: 'https://knowbility.org/'
+  - title: Difi (Norwegian)
+    url: 'https://uu.difi.no/'
 authors:
   - Ragnhild Finsveen Liven
 ---
