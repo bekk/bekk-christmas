@@ -1,10 +1,9 @@
 ---
 calendar: css
 post_year: 2019
-post_day: 1
-title: 'user-select:all;'
-image: >-
-  https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
+post_day: 5
+title: Gotta Select’em all
+image: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31'
 ingress: ''
 authors:
   - Dag Frode Solberg
@@ -22,7 +21,7 @@ For the next few minutes, we shall explore how we can make all the cells with da
 
 ## User select:all;
 
-By adding some CSS to the table, we can make all the text in the cells selectable by a sing click. This solution currently works for firefox and Chrome.
+By adding some CSS to the table, we can make all the text in the cells are selectable by a sinlge click. This solution currently works for firefox and Chrome. 
 
 The CSS we have added to the table is:
 
