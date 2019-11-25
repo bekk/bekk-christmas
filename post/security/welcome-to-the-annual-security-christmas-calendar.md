@@ -17,6 +17,5 @@ One of the most profiled incidents in Norway this year was a ransomware attack. 
 
 Even our personal devices are under attack. We keep our most personal information, which we would like to decide who can access and not, on our smart phones. Even if there is great work being done on the operating system of these devices, there seems to be an endless storm of security updates after each major upgrade. Most users feel safe by using the recommended app stores for their devices. But there is an increasing number of applications for mobile operating systems that have been proven to contain malware, even if they have been downloaded from the official app store. There are numerous reports of this, both [Google’s Android](https://www.symantec.com/blogs/threat-intelligence/xhelper-android-malware) and [Apples’ IOS](https://www.wandera.com/mobile-security/ios-trojan-malware/).
 
-
-We hope you will enjoy our Christmas Calendar this year as much as we had fun creating it. Please spread the word and please help use make the last weeks of the year a safe one.
+We hope you will enjoy this years security.christmas as much as we had fun creating it. Please spread the word and please help use make the last weeks of the year a safe one.
 Remember to visit our other calendars.
