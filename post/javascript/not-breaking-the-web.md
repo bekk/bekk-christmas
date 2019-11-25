@@ -15,6 +15,6 @@ links:
   - title: StackOverflow Insights
     url: 'https://insights.stackoverflow.com/survey/2019'
 authors:
-  - Nicolai Hagen
+  - Nicolai August Hagen
 ---
 .
