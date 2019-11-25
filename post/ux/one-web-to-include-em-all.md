@@ -37,11 +37,9 @@ Another reason to design accessible web pages is for economic reasons. Over the 
 
 Enter the Web Content Accessibility Guidelines 2.1 (WCAG 2.1): a humongous set of guidelines that helps you make the web more accessible for people with visual, auditory, physical, speech, learning, neurological, and cognitive disabilities. If you’ve ever visited [the official web page of these guidelines](https://www.w3.org/TR/WCAG21/) and felt overwhelmed by its extensive content - you’re not alone! To make your life a little bit easier, here is an introduction to WCAG 2.1, accompanied by four small tips for how to practice accessibility:
 
-<br>
 
 ##### What is WCAG 2.1?
 
-<br>
 
 To directly quote the official webpage:
 
@@ -50,20 +48,18 @@ To directly quote the official webpage:
 WCAG 2.1 consists of four main principles, which contain a total of 13 guidelines. Each guideline provides at least one success criterion:
 
 <br>
+<br>
 
 <img class="wide-image" src="https://i.ibb.co/kcD52nL/WCAG-2-1-structure-hvit-bkgr-2-01.png"/>
 
 <br>
-
+<br>
 <br>
 
 The numerous success criteria mainly address three concerns - content (e.g. text and images), design (e.g. layout, colors and contrast), and technology (e.g. the code structure). These are concrete, testable measures of your web page’s level of accessibility. Success criterion “2.1.1 - Keyboard” says, for instance, that all content must be operable through a keyboard interface. 
 
-<br>
 
 ##### How to practice accessibility and use WCAG 2.1?
-
-<br>
 
 _1. Make WCAG/accessibility a natural part of the insight and development process_
 
@@ -95,8 +91,6 @@ _4. Seek to empathize with your disabled users_
 Empathy - the ability to understand another person's feelings and subjective experiences - is usually a crucial part of user insight. During a busy project with limited time and resources, it can be difficult to locate users who represent the diversity of disabilities you need to account for when practicing accessible design. However, you can try to put yourself in their shoes through some simple measures. To empathize with your blind or visually impaired users, you can, for instance, try to access and operate your web page while blindfolded and solely using a screen-reader and keyboard to navigate; at 200% magnification; or in black-and-white mode.
 
 The essence of these examples is that you should try to put yourself in the position of others unlike yourself. If some content on your web page is inoperable, incomprehensible, or inaccessible when you do so, your web page is not universally designed. And if that’s the case, your newly gained empathy will make it apparent how frustrating it can be to operate a web page that is not adapted to your needs.
-
-<br>
 
 ## Some final words
 
