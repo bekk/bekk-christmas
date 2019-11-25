@@ -1,6 +1,6 @@
 ---
 title: Helen Le
-socialMediaLink: '@helenle'
+socialMediaLink: helen.le@bekk.no
 company: Bekk
 ---
 
