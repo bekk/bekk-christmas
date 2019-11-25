@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 6
-title: One web to include 'em all
+title: 'Accessibility: One web to include ''em all'
 image: 'https://i.ibb.co/gmFxYYZ/Acessibility-for-all-hvit-bgr-02.png'
 ingress: >-
   Designers usually strive to design user-friendly products fit for a diverse
