@@ -10,6 +10,16 @@ ingress: >-
   endpoint? Perhaps you needed somewhere to post form data, but the thought of
   setting up your own server, manage the endpoint and write the logic seemed
   like too much work. Not anymore
+links:
+  - title: Netlify.com
+    url: 'https://www.netlify.com/'
+  - title: Netlify-cli documentation
+    url: 'https://docs.netlify.com/cli/get-started/#installation'
+  - title: Netlify functions overview
+    url: >-
+      https://docs.netlify.com/functions/overview/#manage-your-serverless-functions
+authors:
+  - Sindre Moldeklev
 ---
 That was my experience a few weeks ago when I redid my fathers webpage. The page needed to be a simple
 landing page with a contact form where potenial clients could contact him. The choice of hosting for the site
