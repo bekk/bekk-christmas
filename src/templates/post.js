@@ -55,15 +55,16 @@ const Template = ({ data }) => {
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const { calendar, description, title, ingress, image, links } = frontmatter;
 
-    const ingressHtml = remark()
-        .use(recommended)
-        .use(remarkHtml)
-        .processSync(ingress)
-        .toString();
+    const ingressHtml =
+        remark()
+            .use(recommended)
+            .use(remarkHtml)
+            .processSync(ingress)
+            .toString() || '';
 
     const heroImage = setImageWidth(image || fallbackImage);
     const seoDescription =
-        description || ingressHtml.replace(/<[^>]*>?/gm, '')`An article from ${calendar}`;
+        description || ingressHtml.replace(/<[^>]*>?/gm, '') || `An article from ${calendar}`;
 
     return (
         <Layout calendarName={calendar}>
