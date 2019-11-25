@@ -37,9 +37,10 @@ All assertions in the above test are executed, and you’ll be notified of failu
 
 The ability to have nested tests opens up a whole new field of play when it comes to grouping tests that belong together. Combine this with different display name generators (introduced below) and you have a powerful tool to write tests that are simple to read and understand the intent of.
 
+```
 @Nested
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class A_Tesla_Model_X {
+class Tesla_Model_X {
 
     @Test
     void must_have_an_electric_motor() {
@@ -58,6 +59,7 @@ class A_Tesla_Model_X {
         }
     }
 }
+```
 
 The output of these tests look like the following in IntelliJ. Here we have combined nested tests with a parameterized test:
 
