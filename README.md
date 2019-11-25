@@ -63,6 +63,18 @@ Eksempel på dette
 
 ![](https://i.ibb.co/nCZ5nhg/wide-image.png)
 
+#### Endre bilde ut fra light og dark theme
+
+For å ha forskjellig bilde ut fra light or dark theme kan en benytte seg av:
+
+`<img class="light-theme-image" src="<Sett inn lenke til bilde her>" />`
+
+for bilder som kun skal være tilgjengelig for light theme. Og
+
+`<img class="dark-theme-image" src="<Sett inn lenke til bilde her>" />`
+
+for bilder kun tilgjengelig for dark theme.
+
 ### Jeg vil embede eksternt innhold
 
 Vi anbefaler at du viser det eksterne innholdet med en iframe. Du kan legge til bilder ved å gå inn i `markdown`-formatet, og lime inn følgende code-snippet, og legger til de attributtene du trenger på tag'en:
