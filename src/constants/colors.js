@@ -11,5 +11,5 @@ export const contrastYellow = 'var(--gul-kontrast)';
 export const black = 'var(--svart)';
 export const darkGray = '#222';
 export const lightGray = '#cecece';
-export const lighterGrey = '#f0f0f0';
+export const lighterGray = '#f0f0f0';
 export const white = 'var(--hvit)';

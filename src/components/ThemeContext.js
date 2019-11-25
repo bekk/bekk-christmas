@@ -29,7 +29,7 @@ const themeConfigs = {
     },
     [lightTheme]: {
         primaryBackgroundColor: colors.white,
-        secondaryBackgroundColor: colors.lighterGrey,
+        secondaryBackgroundColor: colors.lighterGray,
         contrastBackgroundColor: colors.contrastYellow,
         textColor: colors.black,
         linkTextColor: colors.black,
