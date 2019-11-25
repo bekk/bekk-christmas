@@ -37,9 +37,7 @@ Another reason to design accessible web pages is for economic reasons. Over the 
 
 Enter the Web Content Accessibility Guidelines 2.1 (WCAG 2.1): a humongous set of guidelines that helps you make the web more accessible for people with visual, auditory, physical, speech, learning, neurological, and cognitive disabilities. If you’ve ever visited [the official web page of these guidelines](https://www.w3.org/TR/WCAG21/) and felt overwhelmed by its extensive content - you’re not alone! To make your life a little bit easier, here is an introduction to WCAG 2.1, accompanied by four small tips for how to practice accessibility:
 
-
 ##### What is WCAG 2.1?
-
 
 To directly quote the official webpage:
 
@@ -58,16 +56,15 @@ WCAG 2.1 consists of four main principles, which contain a total of 13 guideline
 
 The numerous success criteria mainly address three concerns - content (e.g. text and images), design (e.g. layout, colors and contrast), and technology (e.g. the code structure). These are concrete, testable measures of your web page’s level of accessibility. Success criterion “2.1.1 - Keyboard” says, for instance, that all content must be operable through a keyboard interface. 
 
-
 ##### How to practice accessibility and use WCAG 2.1?
 
-_1. Make WCAG/accessibility a natural part of the insight and development process_
+**_1. Make WCAG/accessibility a natural part of the insight and development process_**
 
 Bother spending some time learning about accessibility and the WCAG success criteria. If you make yourself familiar with WCAG 2.1 and the overarching principles of accessibility, you can both consciously and unconsciously design content that is adapted to disabled users’ needs. This understanding makes it possible to consider accessibility _while_ you develop a web page, rather than _after_ it is finished. The following three tips are focused on how you can achieve this understanding.
 
 <br>
 
-_2. Seek supporting sources_
+**_2. Seek supporting sources_**
 
 Some success criteria in WCAG 2.1 are written in a language that demands a Ph.D. in astrophysics to interpret. Or at least, that’s what it felt like to me - a mere designer - the first time I accessed the WCAG web page. For this reason, I highly recommend you use other materials to support your understanding. Personally, I’ve used [WUHCAG](https://www.wuhcag.com/) and [Knowability](https://knowbility.org/) frequently to search for specific success criteria that needed some down-to-earth explanation. Google is your friend!
 
@@ -75,7 +72,7 @@ For Norwegian readers, I also recommend [Difi’s online course in universal des
 
 <br>
 
-_3. Use supporting tools to assess your website_
+**_3. Use supporting tools to assess your website_**
 
 Numerous tools exist out there specifically (and indirectly) developed to help you discover content on your web page that does not conform to WCAG 2.1. For instance, the organization behind the guidelines - W3C - provides [an extensive list of evaluation tools](https://www.w3.org/WAI/ER/tools/). I have used these a lot myself:
 
@@ -86,7 +83,7 @@ Numerous tools exist out there specifically (and indirectly) developed to help y
 
 <br>
 
-_4. Seek to empathize with your disabled users_
+**_4. Seek to empathize with your disabled users_**
 
 Empathy - the ability to understand another person's feelings and subjective experiences - is usually a crucial part of user insight. During a busy project with limited time and resources, it can be difficult to locate users who represent the diversity of disabilities you need to account for when practicing accessible design. However, you can try to put yourself in their shoes through some simple measures. To empathize with your blind or visually impaired users, you can, for instance, try to access and operate your web page while blindfolded and solely using a screen-reader and keyboard to navigate; at 200% magnification; or in black-and-white mode.
 
