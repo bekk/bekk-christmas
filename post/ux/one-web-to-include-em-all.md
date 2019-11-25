@@ -32,6 +32,8 @@ Enter the Web Content Accessibility Guidelines 2.1 (WCAG 2.1): a humongous set o
 
 **What is WCAG 2.1?**
 
+<br>
+
 To directly quote the official webpage:
 
 > _“WCAG 2.1 is developed through the W3C process in cooperation with individuals and organizations around the world, with a goal of providing a shared standard for Web content accessibility that meets the needs of individuals, organizations, and governments internationally.”_
