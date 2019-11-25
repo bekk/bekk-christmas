@@ -32,6 +32,14 @@ const GlobalStyles = createGlobalStyle(
   img {
     max-width: 100%;
   }
+
+  a {
+    &,
+    &:visited,
+    &:active {
+      color: ${theme.textColor}
+    }
+  }
 `
 );
 

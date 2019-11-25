@@ -2,17 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const WindowOpen = styled(Link)(
-    ({ theme }) => `
+const WindowOpen = styled(Link)`
     text-decoration: none;
+    line-height: 0;
+`;
 
-    &,
-    &:active,
-    &:visited {
-        color: ${theme.textColor};
-    }
-`
-);
 const Title = styled.span`
     text-decoration: underline;
 `;

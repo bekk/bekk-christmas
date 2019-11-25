@@ -25,7 +25,7 @@ const WindowClosed = styled.div(
 `
 );
 
-const CalendarWindowClosed = ({ day }) => {
+const CalendarWindowClosed = ({ day, ...rest }) => {
     return (
         <div>
             <WindowClosed aria-label={`Day ${day} is not yet available`}>

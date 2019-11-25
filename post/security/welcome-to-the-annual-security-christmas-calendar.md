@@ -8,8 +8,7 @@ ingress: >-
   writing we are super excited to finally be able to present this year's
   calendar. 
 links: []
-authors:
-  - Lars-Erik Wollan
+authors: []
 ---
 Security is still a hot topic, both in various projects we work on and in the mainstream news, both national and internationally. What just some years ago was an obscure topic only discussed by those in the know, we hear people talk about ransomware on the buss, the news regularly reports on international cyber-attacks and crimes.
 

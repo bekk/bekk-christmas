@@ -7,8 +7,8 @@ image: >-
   https://images.unsplash.com/photo-1512475035448-30460b25ffd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
   Did you know that JavaScript is the world's NO. 1 most popular language? At
-  least according to Github and Stack Overflow. As a developer, that is a huge
-  reason to get to know it better, isn't it?
+  least according to Github and Stack Overflow it is. As a developer, that is a
+  huge reason to get to know it better, wouldn't you say?
 description: javascript web programming website
 links:
   - title: Github Octoverse
@@ -17,12 +17,16 @@ links:
     url: 'https://insights.stackoverflow.com/survey/2019'
   - title: '"Rare ting som får deg til å like JavaScript" - JavaZone 2019'
     url: 'https://vimeo.com/362770540'
+  - title: Wikipedia; JavaScript
+    url: 'https://en.wikipedia.org/wiki/JavaScript'
+  - title: TC39 @ Github
+    url: 'https://github.com/tc39'
 authors:
   - Nicolai August Hagen
 ---
 # The story
 
-Way back in 1995, the rumours has it that the American computer scientist Brendan Eich wrote a brand new language using only 10 days. At this time back in Norway, we were still riding the wave of hosting the winter olympics in Lillehammer the year before (sometimes I'm thinking we still are).
+Way back in 1995, the rumours has it that the American computer scientist Brendan Eich wrote a brand new language. Just through 10 days of work! At this time back in Norway, we were still riding the wave of (finally) hosting the winter olympics in Lillehammer the year before. Sometimes I'm thinking we still are.
 
 At this time, Eich was working for Netscape, one of the coolest tech companies in that decade. He called his new programming language Mocha, but it was later on renamed to LiveScript (when shipped with Netscape Navigator), and later JavaScript. 
 
@@ -30,11 +34,18 @@ Just like the Norwegians, Netscape also wanted to ride the wave, the wave of the
 
 ![Riding the wave; from Unsplash](https://images.unsplash.com/photo-1530870110042-98b2cb110834?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
 
-
-Introduced as "the scripting language" shipped with Netscape   
+Introduced as "the scripting language", Netscape shipped JavaScript. What they did not know was that this was going to become **the most used programming language in the world just 25 years later**.
 
 # JavaScript today
 
-Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum. Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+Today, almost every website is completely and utterly reliant on JavaScript to even work. It is safe to say that the days where websites are only containing HTML and CSS, are gone. Long gone.
 
-# Not breaking the web
+Take my life as an example; without Brendan Eich's JavaScript, I wouldn't even get into my local banking services. I wouldn't be able to by tickets for the tram, I wouldn't be able to chat with all my friends. 
+
+# The committee and "Not breaking the web"
+
+Thankfully, there are a lot of highly competent people making sure that all the websites we heavily rely on do not break. The most powerful tech firms of the 21st century is in fact cooperating on improving the technical standard of JavaScript, labelled ECMAScript. This committee, TC39, was therefore also the people behind all the great improvements to the language, for example in ES6/ES2015 when we got things such as arrow functions, rest/spread etc.
+
+# Follow the calendar! 
+
+Keep on reading for technical quirks, explanations, funny things in the language and many more, throughout the rest of the days in this Christmas calendar, an pick up a thing or two about the world's most popular language! 
