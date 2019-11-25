@@ -21,7 +21,7 @@ Responsible disclosure is an important step in security testing. It is meant to 
 
 We practice responsible disclosure because we think it is important to give fair warning about a vulnerability. While it is possible that the bug might currently be exploited by others, this is quite unlikely, and given that the vendor fixes their system quite fast, we are actually protecting their users by not going public with what we know. Had we performed irresponsible disclosure, and written up a blogpost the minute we found our bug, there is a high risk that others would exploit it before a fix was in place, maybe forcing the site to be taken down, to avoid even more raw fish at the doorstep of the town hall. 
 
-## Best practice for RD
+## Best practice for responsible disclosure
 
 If you found the vulnerability through participating in a [bug bounty](https://bekk.christmas/security/2019/3), there are clear (and strict) rules for how you are to disclose your findings. In most cases, the bounty program guaranties that you will not meet any legal issues if you follow their disclosure regime. You should make every attempt to follow this procedure. Should you however find a vulnerability on a site not covered by a bug bounty program, the following steps should generally be followed.
 
