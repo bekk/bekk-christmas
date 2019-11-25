@@ -44,11 +44,7 @@ To directly quote the official webpage:
 
 WCAG 2.1 consists of four main principles, which contain a total of 13 guidelines. Each guideline provides at least one success criterion:
 
-
-
 ![WCAG 2.1 structure: Four principles and 13 guidelines ](/assets/wcag-2.1-structure-hvit-bkgr-01.png "WCAG 2.1 structure")
-
-
 
 The numerous success criteria mainly address three concerns - content (e.g. text and images), design (e.g. layout, colors and contrast), and technology (e.g. the code structure). These are concrete, testable measures of your web page’s level of accessibility. Success criterion “2.1.1 - Keyboard” says, for instance, that all content must be operable through a keyboard interface. 
 
@@ -56,7 +52,7 @@ The numerous success criteria mainly address three concerns - content (e.g. text
 
 **How to practice accessibility and use WCAG 2.1?**
 
-__
+****
 
 _1. Make WCAG/accessibility a natural part of the insight and development process_
 
