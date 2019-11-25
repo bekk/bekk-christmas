@@ -37,4 +37,4 @@ The daily podcast from SANS gives you a heads up on the new attacks and incident
 
 ## BEKK Open
 
-When mentioning podcast, we must not forget our own podcast, BEKK Open. The podcast is not a security podcast, but still enjoy the topics presented. Watch out for the next episodes. The podcast if, of course, presented by Bekk. <https://open.bekk.no>
+When mentioning podcast, we must not forget our own podcast, BEKK Open. The podcast is not a security podcast, but still enjoy the topics presented. Watch out for the next episodes. The podcast if, of course, presented by Bekk. <https://soundcloud.com/bekkopen>
