@@ -149,10 +149,18 @@ const connectAuthorsToPosts = (getNode, getNodes, createNodeField) => {
 
     // Add author information to each post
     postNodes.forEach(post => {
-        const { authors = [] } = post.frontmatter;
+        const { authors = [], title } = post.frontmatter;
 
         const enrichedAuthors = authors.map(author => {
             const match = authorNodes.find(node => author === node.frontmatter.title);
+            if (!match) {
+                console.error(
+                    `Author not found! The author for the post "${title}" was set to "${author}", but there is no such author. This will typically happen if the author updates their name. To fix this, please check the author file for the author(s) in question and change the name in the post accordingly.`
+                );
+                throw new Error(
+                    "Could not build, because there was a post that didn't have a matching author name. See logs for more info."
+                );
+            }
             return match.frontmatter;
         });
 

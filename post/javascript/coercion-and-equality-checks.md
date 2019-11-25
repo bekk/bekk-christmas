@@ -16,7 +16,7 @@ links:
     url: >-
       https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch4.md#loose-equals-vs-strict-equals
 authors:
-  - Nicolai Hagen
+  - Nicolai August Hagen
 ---
 ## Coercion
 Typecasting. Converting. Coercion. We tend to have many names for the things we love. Coercion in JavaScript is really just about converting one value to another. For example, `5 + ''` will _convert_ the number 5 to a string. If we assign this expression to a variable (or wrap the expression in parentheses), we will suddenly have available methods from the string prototype. For example, we can retrieve the field `.length`.

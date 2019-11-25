@@ -15,7 +15,7 @@ links:
   - title: Read about the history API over at MDN
     url: 'https://developer.mozilla.org/en-US/docs/Web/API/History'
 authors:
-  - Nicolai Hagen
+  - Nicolai August Hagen
 ---
 Many years have passed since your (grand) parents surfed the web with Netscape Navigator, or Internet Explorer was actually used by the people of the web.
 Browsers have not always had the same version, and neither have the various web standards.
