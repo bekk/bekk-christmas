@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 6
 title: 'Accessibility: One web to include ''em all'
-image: 'https://i.ibb.co/gmFxYYZ/Acessibility-for-all-hvit-bgr-02.png'
+image: 'https://i.ibb.co/7g8p40f/Acessibility-for-all2-02.png'
 ingress: >-
   Designers usually strive to design user-friendly products fit for a diverse
   group of people. But how do we actually design and develop products that
