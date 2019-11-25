@@ -1,6 +1,6 @@
 ---
 title: Rafael Winterhalter
-socialMediaLink: rafael.codes
+socialMediaLink: 'http://rafael.codes'
 company: Scienta
 ---
 
