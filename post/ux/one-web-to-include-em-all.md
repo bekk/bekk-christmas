@@ -16,7 +16,7 @@ authors:
 ---
 ## What is web accessibility?
 
-Web accessibility is an inclusive practice that aims to make digital content accessible to everyone, including those with disabilities. This does, for example, imply that people who are blind or deaf, as well as people impaired by socio-economic restrictions like low bandwidth or speed, should be able to operate the web without difficulty. Using design lingo, one could say that an accessible web page is universally designed.
+_Web accessibility_ is an inclusive practice that aims to make digital content accessible to everyone, including those with disabilities. This does, for example, imply that people who are blind or deaf, as well as people impaired by socio-economic restrictions like low bandwidth or speed, should be able to operate the web without difficulty. Using design lingo, one could say that an accessible web page is _universally designed_.
 
 ## 
 
@@ -52,7 +52,7 @@ The numerous success criteria mainly address three concerns - content (e.g. text
 
 _1. Make WCAG/accessibility a natural part of the insight and development process_
 
-Bother spending some time learning about accessibility and the WCAG success criteria. If you make yourself familiar with WCAG 2.1 and the overarching principles of accessibility, you can both consciously and unconsciously design content that is adapted to disabled users’ needs. This understanding makes it possible to consider accessibility while you develop a web page, rather than after it is finished. The following three tips are focused on how you can achieve this understanding.
+Bother spending some time learning about accessibility and the WCAG success criteria. If you make yourself familiar with WCAG 2.1 and the overarching principles of accessibility, you can both consciously and unconsciously design content that is adapted to disabled users’ needs. This understanding makes it possible to consider accessibility _while_ you develop a web page, rather than _after_ it is finished. The following three tips are focused on how you can achieve this understanding.
 
 <br>
 
