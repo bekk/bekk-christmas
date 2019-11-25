@@ -1,17 +1,44 @@
-import WindowImage0 from './images/luke-0.png';
-import WindowImage1 from './images/luke-1.png';
-import WindowImage2 from './images/luke-2.png';
+const getCalendarNumber = calendar => {
+    switch (calendar) {
+        case 'css':
+            return '01';
+        case 'functional':
+            return '02';
+        case 'thecloud':
+            return '03';
+        case 'opensource':
+            return '04';
+        case 'java':
+            return '05';
+        case 'kotlin':
+            return '06';
+        case 'security':
+            return '07';
+        case 'ux':
+            return '08';
+        case 'product':
+            return '09';
+        case 'ml':
+            return '10';
+        case 'javascript':
+            return '11';
+        case 'react':
+            return '12';
+    }
+};
 
-export const getWindowImagePlaceholder = index => {
-    if (index % 3 === 0) {
-        return WindowImage0;
+const getDayNumber = day => {
+    if (day < 10) {
+        return `0${day}`;
     }
-    if (index % 3 === 1) {
-        return WindowImage1;
-    }
-    if (index % 3 === 2) {
-        return WindowImage2;
-    }
+
+    return `${day}`;
+};
+
+export const getWindowImagePlaceholder = (calendar, day) => {
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@latest/${getCalendarNumber(
+        calendar
+    )}/${getDayNumber(day)}.jpeg`;
 };
 
 export const setImageWidth = url => {

@@ -18,7 +18,7 @@ const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
     max-width: 1258px;
-    padding: 30px 16px;
+    padding: 30px;
     margin: 0 auto;
 `;
 
