@@ -9,6 +9,7 @@ ingress: >-
   Did you know that JavaScript is the world's NO. 1 most popular language? At
   least according to Github and Stack Overflow. As a developer, that is a huge
   reason to get to know it better, isn't it?
+description: javascript web programming website
 links:
   - title: Github Octoverse
     url: 'https://octoverse.github.com/'
@@ -17,4 +18,10 @@ links:
 authors:
   - Nicolai August Hagen
 ---
-.
+# Overskrift 1
+
+Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+
+# Overskrift 2
+
+Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum. Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
