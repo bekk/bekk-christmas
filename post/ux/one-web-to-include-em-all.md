@@ -18,8 +18,6 @@ authors:
 
 _Web accessibility_ is an inclusive practice that aims to make digital content accessible to everyone, including those with disabilities. This does, for example, imply that people who are blind or deaf, as well as people impaired by socio-economic restrictions like low bandwidth or speed, should be able to operate the web without difficulty. Using design lingo, one could say that an accessible web page is _universally designed_.
 
-## 
-
 ## Why consider accessibility?
 
 Designing accessible web pages is a good and ethical practice that should be followed at all times. Furthermore, conforming to accessibility guidelines usually improves the general user experience for everyone. Universal design avoids discrimination, broadens your user base, and improves the user experience. It’s a win-win situation! 
