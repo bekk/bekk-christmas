@@ -56,9 +56,9 @@ const Frontpage = ({ data, pageContext }) => {
                     in Oslo and Trondheim, Norway!
                 </p>
             </Description>
-            <DailyWindowHeader>Dagens luker</DailyWindowHeader>
+            <DailyWindowHeader>Today's articles</DailyWindowHeader>
             <Calendar>
-                {calendars.map((calendar, index) => (
+                {calendars.map(calendar => (
                     <li key={calendar.calendar}>
                         <CalendarWindowOpen
                             link={`/${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
