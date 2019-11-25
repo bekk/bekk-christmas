@@ -2,7 +2,7 @@
 calendar: opensource
 post_year: 2019
 post_day: 1
-title: How to contribute to Open source
+title: 'WIP: How to contribute to Open source'
 ingress: >-
   We think Open source is such an important part of a developer’s life that
   we’ve devoted an entire advent calendar to the subject! For a lot of
