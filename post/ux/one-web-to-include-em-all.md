@@ -46,7 +46,7 @@ WCAG 2.1 consists of four main principles, which contain a total of 13 guideline
 
 
 
-![WCAG 2.1 structure: Four principles and 13 guidelines ](/assets/wcag-2.1-structure-01.png)
+![WCAG 2.1 structure: Four principles and 13 guidelines ](/assets/wcag-2.1-structure-hvit-bkgr-01.png "WCAG 2.1 structure")
 
 
 
