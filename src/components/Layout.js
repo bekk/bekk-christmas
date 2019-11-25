@@ -45,6 +45,8 @@ const StyledLink = styled(Link)`
 
 const Layout = ({ calendarName, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
+    const isOnCalendarPage =
+        window.location.pathname === '/css' || window.location.pathname === '/css/';
     return (
         <ThemeProvider>
             <SkipToContent />
@@ -52,7 +54,7 @@ const Layout = ({ calendarName, children }) => {
                 <GlobalStyles />
                 {calendarTitle && (
                     <Header>
-                        <StyledLink to={`/${calendarName}`}>
+                        <StyledLink to={isOnCalendarPage ? '/' : `/${calendarName}`}>
                             <Tre />
                             <CalendarName>{calendarTitle}</CalendarName>
                         </StyledLink>
