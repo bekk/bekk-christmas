@@ -16,7 +16,15 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 
 ## Representing the State
 
+A common 
+
 TODO
+
+- Representing state
+- primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
+- Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control.  
+
+
 
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
@@ -29,7 +37,10 @@ TODO
 [Making Noise with Kotlin Native](https://www.youtube.com/watch?v=vc04QKnryKs) by Josh Skeen
 
 ## Best Practises for Unit Testing
-Some talks are fun, some are inspiring and some are downright useful. Working on a team that was in the transition from Java to Kotlin much of the code was coloured by the pretty common anti-pattern where one writes Kotlin like Java, and prehaps especially so when writing tests.
+
+//TODO
+
+Some talks are fun, some are inspiring and some are downright useful. 
 
 The talk held by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing tests, how well Kotlin works with JUnit 5, and presented some of the many different test libraries that are available.
 
