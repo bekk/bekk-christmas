@@ -84,7 +84,7 @@ For Norwegian readers, I also recommend [Difi’s online course in universal des
 Numerous tools exist out there specifically (and indirectly) developed to help you discover content on your web page that does not conform to WCAG 2.1. For instance, the organization behind the guidelines - W3C - provides [an extensive list of evaluation tools](https://www.w3.org/WAI/ER/tools/). I have used these a lot myself:
 
 * [WAVE’s plugin](https://wave.webaim.org/extension/) for Chrome and Firefox and [W3C’s validator](https://validator.w3.org/), which helps you discover lines of HTML code that should be corrected or improved. 
-* This [color contrast checker](https://color.a11y.com/?wc3), where you can fill in hex-codes for colors and see whether they conform to three different success criteria.
+* This [color contrast checker](https://color.a11y.com/?wc3), where you can fill in your web page's URL or color hex-codes to see whether they conform to three different success criteria.
 * VoiceOver - my Mac’s built-in screen reader - which helps me test content from the perspective of blind or visually impaired users.
 * This [line-height adjuster](https://chrome.google.com/webstore/detail/line-height-adjuster/nggicopcmcgpnpjbibppkjadniipeppa?hl=en-GB) for Chrome that specifically helps you test success criterion “1.4.12 - Text Spacing”.
 
