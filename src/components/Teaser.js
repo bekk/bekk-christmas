@@ -3,7 +3,7 @@ import styled, { css, keyframes } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
-import * as mq from '../constants/media-queries';
+import * as mediaQueries from '../constants/media-queries';
 import teaser1Src from '../images/teaser-1.jpg';
 import teaser2Src from '../images/teaser-2.jpg';
 import teaser3Src from '../images/teaser-3.jpg';
@@ -13,7 +13,7 @@ const Container = styled.main`
     max-width: 1200px;
     padding: 0 1em;
 
-    ${mq.mediumUp} {
+    ${mediaQueries.mediumUp} {
         margin: 180px auto;
     }
 `;
@@ -22,7 +22,7 @@ const Heading = styled.h1`
     font-size: 60px;
     font-weight: normal;
 
-    ${mq.mediumUp} {
+    ${mediaQueries.mediumUp} {
         font-size: 90px;
     }
 `;
@@ -53,7 +53,7 @@ const Image = styled.img(
           : ''
   }
 
-  ${mq.mediumUp} {
+  ${mediaQueries.mediumUp} {
         width: 500px;
         height: 500px;
         position: absolute;
@@ -94,7 +94,7 @@ const Paragraph = styled.p`
     font-size: 26px;
     font-weight: 300;
 
-    ${mq.mediumUp} {
+    ${mediaQueries.mediumUp} {
         font-size: 45px;
     }
 `;

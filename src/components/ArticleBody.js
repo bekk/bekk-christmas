@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import * as fonts from '../constants/fonts';
-import * as mq from '../constants/media-queries';
+import * as mediaQueries from '../constants/media-queries';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
@@ -27,7 +27,7 @@ const ArticleBody = styled.article(
     h2 {
         font-size: 34px;
 
-        ${mq.mediumUp} {
+        ${mediaQueries.mediumUp} {
             font-size: 42px;
         }
     }
@@ -36,7 +36,7 @@ const ArticleBody = styled.article(
     h5,
     h6 {
         font-size: 24px;
-        ${mq.mediumUp} {
+        ${mediaQueries.mediumUp} {
             font-size: 34px;
         }
     }
