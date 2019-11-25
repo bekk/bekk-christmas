@@ -25,7 +25,7 @@ The Malicious Life podcast is a great supplement to the earlier mentioned Darkne
 
 ## Hackable
 
-Listening to an episode of Hackable is like hearing a good friend tell a great story. You may know the facts and have a basic understanding of it, but the way it is being told makes it worth the time. Each episode of Hackable the host Geoff Siskind and security expert Bruce Snell cover a popular topic which should resonate for anyone even outside the security industry. The formula is as simple as it is entertaining, host Geoff is be (volunteer) for a hack, ranging from hostile telefax take over to circumventing car key-fob security. The podcast is presented by McAffe. <https://hackablepodcast.com>
+Listening to an episode of Hackable is like hearing a good friend tell a great story. You may know the facts and have a basic understanding of it, but the way it is being told makes it worth the time. Each episode of Hackable the host Geoff Siskind and security expert Bruce Snell cover a popular topic which should resonate for anyone even outside the security industry. The formula is as simple as it is entertaining, host Geoff is the (volunteer) victim of a hack, ranging from hostile telefax take over to circumventing car key-fob security. The podcast is presented by McAffe. <https://hackablepodcast.com>
 
 ## The Secure Developer
 
