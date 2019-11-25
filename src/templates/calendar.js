@@ -1,13 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Calendar from '../components/Calendar';
 import CalendarWindowClosed from '../components/CalendarWindowClosed';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
 
-import { getWindowImagePlaceholder } from '../utils';
+import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
 import { Teaser } from '../components/Teaser';
+import ogImageSrc from '../images/teaser-1.jpg';
 
 const createLink = (includeCalendarInPath, calendar, year, day) => {
     let link = '';
@@ -42,8 +44,24 @@ const Template = ({ data, pageContext }) => {
         };
     });
 
+    const calendarName = mapCalendarToName(pageContext.calender);
+
     return (
         <Layout calendarName={pageContext.calendar}>
+            <Helmet>
+                <html lang="en" />
+                <title>{calendarName}</title>
+                <meta
+                    property="description"
+                    content="Bekk is getting in the Christmas spirit with 24 days of articles"
+                />
+                <meta property="og:title" content={calendarName} />
+                <meta
+                    property="og:description"
+                    content="Bekk is getting in the Christmas spirit with 24 days of articles"
+                />
+                <meta property="og:image" content={ogImageSrc} />
+            </Helmet>
             <Calendar id="calendar">
                 {calendarWindows.map((calendarWindow, index) => (
                     <li key={calendarWindow.title || index}>
