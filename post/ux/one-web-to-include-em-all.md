@@ -30,7 +30,7 @@ Another reason to design accessible web pages is for economic reasons. Over the 
 
 ## How can you design accessible web pages?
 
-Enter the Web Content Accessibility Guidelines 2.1 (WCAG 2.1): a humongous set of guidelines that helps you make the web more accessible for people with visual, auditory, physical, speech, learning, neurological, and cognitive disabilities. If you’ve ever visited the official web page of these guidelines and felt overwhelmed by its extensive content - you’re not alone! To make your life a little bit easier, here is an introduction to WCAG 2.1, accompanied by four small tips for how to practice accessibility:
+Enter the Web Content Accessibility Guidelines 2.1 (WCAG 2.1): a humongous set of guidelines that helps you make the web more accessible for people with visual, auditory, physical, speech, learning, neurological, and cognitive disabilities. If you’ve ever visited [the official web page of these guidelines](https://www.w3.org/TR/WCAG21/) and felt overwhelmed by its extensive content - you’re not alone! To make your life a little bit easier, here is an introduction to WCAG 2.1, accompanied by four small tips for how to practice accessibility:
 
 
 
@@ -44,7 +44,11 @@ To directly quote the official webpage:
 
 WCAG 2.1 consists of four main principles, which contain a total of 13 guidelines. Each guideline provides at least one success criterion:
 
+
+
 ![WCAG 2.1 structure: Four principles and 13 guidelines ](/assets/wcag-2.1-structure-01.png)
+
+
 
 The numerous success criteria mainly address three concerns - content (e.g. text and images), design (e.g. layout, colors and contrast), and technology (e.g. the code structure). These are concrete, testable measures of your web page’s level of accessibility. Success criterion “2.1.1 - Keyboard” says, for instance, that all content must be operable through a keyboard interface. 
 
@@ -52,7 +56,7 @@ The numerous success criteria mainly address three concerns - content (e.g. text
 
 **How to practice accessibility and use WCAG 2.1?**
 
-****
+__
 
 _1. Make WCAG/accessibility a natural part of the insight and development process_
 
@@ -62,15 +66,15 @@ Bother spending some time learning about accessibility and the WCAG success crit
 
 _2. Seek supporting sources_
 
-Some success criteria in WCAG 2.1 are written in a language that demands a Ph.D. in astrophysics to interpret. Or at least, that’s what it felt like to me - a mere designer - the first time I accessed the WCAG web page. For this reason, I highly recommend you use other materials to support your understanding. Personally, I’ve used WUHCAG and Knowability frequently to search for specific success criteria that needed some down-to-earth explanation. Google is your friend!
+Some success criteria in WCAG 2.1 are written in a language that demands a Ph.D. in astrophysics to interpret. Or at least, that’s what it felt like to me - a mere designer - the first time I accessed the WCAG web page. For this reason, I highly recommend you use other materials to support your understanding. Personally, I’ve used [WUHCAG](https://www.wuhcag.com/) and [Knowability](https://knowbility.org/) frequently to search for specific success criteria that needed some down-to-earth explanation. Google is your friend!
 
-For Norwegian readers, I also recommend Difi’s online course in universal design and their list of WCAG success criteria in Norwegian.
+For Norwegian readers, I also recommend [Difi’s online course in universal design](https://laeringsplattformen.difi.no/kurs/991825827/universell-utforming-e-laeringskurs-nettredaktorer-og-skribenter) and [their list of WCAG success criteria in Norwegian](https://uu.difi.no/krav-og-regelverk/wcag-20-standarden).
 
 
 
 _3. Use supporting tools to assess your website_
 
-Numerous tools exist out there specifically (and indirectly) developed to help you discover content on your web page that does not conform to WCAG 2.1. For instance, the organization behind the guidelines - W3C - provides an extensive list of evaluation tools. I have used these a lot myself:
+Numerous tools exist out there specifically (and indirectly) developed to help you discover content on your web page that does not conform to WCAG 2.1. For instance, the organization behind the guidelines - W3C - provides [an extensive list of evaluation tools](https://www.w3.org/WAI/ER/tools/). I have used these a lot myself:
 
 * WAVE’s plugin for Chrome and Firefox and W3’s validator, which helps you discover lines of HTML code that should be corrected or improved. 
 * This color contrast checker, where you can fill in hex-codes for colors and see whether they conform to three different success criteria.
