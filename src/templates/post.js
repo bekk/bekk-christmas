@@ -62,7 +62,8 @@ const Template = ({ data }) => {
         .toString();
 
     const heroImage = setImageWidth(image || fallbackImage);
-    const seoDescription = description || `An article from ${calendar}`;
+    const seoDescription =
+        description || ingressHtml.replace(/<[^>]*>?/gm, '')`An article from ${calendar}`;
 
     return (
         <Layout calendarName={calendar}>
