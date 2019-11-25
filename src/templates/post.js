@@ -16,7 +16,7 @@ const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
 
 const MaxWidth = styled.article`
-    margin: 2em auto;
+    margin: 32px auto;
 `;
 
 const HeroImage = styled.img`
@@ -39,7 +39,7 @@ const RelevantLinksContainer = styled.section(
     ({ theme }) => `
     a {
         color: ${theme.linkTextColor};
-        margin-right:2em;
+        margin-right: 32px;
     }
     `
 );

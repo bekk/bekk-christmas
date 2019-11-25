@@ -56,7 +56,7 @@ const ArticleBody = styled.article(
     }
     pre {
         background-color: ${theme.secondaryBackgroundColor};
-        padding: 1em;
+        padding: 16px;
         overflow-y: scroll;
     }
     pre code {
@@ -68,9 +68,9 @@ const ArticleBody = styled.article(
     }
     ul,
     ol {
-        padding-left: 1em ;
+        padding-left: 16px;
         li {
-            margin-bottom: .5em;
+            margin-bottom: 8px;
         }
     }
     .gatsby-highlight, iframe {

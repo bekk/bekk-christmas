@@ -11,7 +11,7 @@ import teaser3Src from '../images/teaser-3.jpg';
 const Container = styled.main`
     margin: 64px auto;
     max-width: 1200px;
-    padding: 0 1em;
+    padding: 0 16px;
 
     ${mediaQueries.mediumUp} {
         margin: 180px auto;
@@ -38,7 +38,7 @@ const Image = styled.img(
     ${
         index === 2
             ? `
-      left: -1em;
+      left: -16px;
       top: -50px;
   `
             : ''
@@ -47,7 +47,7 @@ const Image = styled.img(
   ${
       index === 3
           ? `
-      right: -1em;
+      right: -16px;
       top: -200px;
   `
           : ''

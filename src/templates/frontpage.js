@@ -19,7 +19,7 @@ const Description = styled.div`
     margin-left: 50px;
     margin-bottom: 150px;
     max-width: 350px;
-    font-size: 1.4em;
+    font-size: 22px;
 `;
 
 const DailyWindowHeader = styled.h2`
