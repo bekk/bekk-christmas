@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 6
 title: One web to include 'em all
-image: 'https://ibb.co/s646Njq'
+image: 'https://ibb.co/BcK9kk2'
 ingress: >-
   Designers usually strive to design user-friendly products fit for a diverse
   group of people. But how do we actually design and develop products that
