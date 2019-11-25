@@ -44,4 +44,8 @@ Take my life as an example; without Brendan Eich's JavaScript, I wouldn't even g
 
 # The committee and "Not breaking the web"
 
-Thankfully, there are a lot of highly competent people making sure that all the websites we heavily rely on do not break. The most powerful tech firms of the 21st century is in fact cooperating on improving the technical standard of JavaScript, labelled ECMAScript. This committee, TC39, was therefore also the people behind all the great improvements to the language, for example in ES6/ES2015 when we got things such as arrow functions, rest/spread etc.   
+Thankfully, there are a lot of highly competent people making sure that all the websites we heavily rely on do not break. The most powerful tech firms of the 21st century is in fact cooperating on improving the technical standard of JavaScript, labelled ECMAScript. This committee, TC39, was therefore also the people behind all the great improvements to the language, for example in ES6/ES2015 when we got things such as arrow functions, rest/spread etc.
+
+# Follow the calendar! 
+
+Keep on reading for technical quirks, explanations, funny things in the language and many more, throughout the rest of the days in this Christmas calendar, an pick up a thing or two about the world's most popular language! 
