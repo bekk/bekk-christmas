@@ -1,7 +1,7 @@
 ---
 calendar: javascript
 post_year: 2019
-post_day: 3
+post_day: 12
 title: Vanilla SPA
 image: >-
   https://images.unsplash.com/photo-1465161191540-aac346fcbaff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
@@ -156,11 +156,11 @@ To add some dynamic content to the page, we create a new custom function for the
 We use `fetch` to retrieve the data and `reduce` to generate what we will show.
 
 ```js
-pageFunctions["toll"] = function() {
+pageFunctions.toll = function() {
   fetch("https://hotell.difi.no/api/json/vegvesen/bomstasjoner?")
     .then(response => response.json())
     .then(json => {
-      PAGES["toll"].content.innerHTML = json.entries.reduce((acc, toll) => {
+      PAGES.toll.content.innerHTML = json.entries.reduce((acc, toll) => {
         return (acc += tollInfo(toll));
       }, "");
     });
@@ -179,11 +179,13 @@ function tollInfo(toll) {
 
 ## Demo
 
-Working sample available at <https://dagfrode.no/vanilla-spa/src>
+Bringing it all together and we have a working SPA. 
 
-## So, I should stop using frameworks?
+<iframe height="500" style="width: 100%;" scrolling="no" title="Vanilla SPA" src="https://codepen.io/dagfs/embed/abbrJYp?height=500&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/dagfs/pen/abbrJYp'>Vanilla SPA</a> by Dag
+  (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-No, frameworks have many benefits and help us deliver faster and make it easier for others to get to know the code we have made. We do not want another [BobX](https://thedailywtf.com/articles/We-Use-BobX).
+Not bad, considering it is only a few lines of HTML, CSS, and Javascript? Imight not use frameworks for all of my pet projects in the time to come. But I will probably continue using frameworks for more significant projects with other developers. I would prefer not to create my version of [BobX](https://thedailywtf.com/articles/We-Use-BobX). 
 
-But! You should look at what problems you solve by adding frameworks and libraries and try to understand what they solve for you. You don't always need a library to solve your problems!
 

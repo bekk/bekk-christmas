@@ -34,7 +34,7 @@ One of the main benefits, at least to me, is that code written in a functional s
 
 The computer can also benefit greatly from code being written in a functional style, opening the possibility of some nice optimizations. For example, two _pure_ expressions which does not depend on each other can easily be computed in parallel, and a pure function can be [memoized](https://en.wikipedia.org/wiki/Memoization) automatically since it will always give same result when called with a given set of inputs.
 
-Don't tell anyone, but we will return to this topic and explore it further in later article 🤫
+Don't tell anyone, but we will return to this topic and explore it further in a later article 🤫
 
 
 ## Functions as building blocks
@@ -43,7 +43,7 @@ In OOP the basic building blocks are classes and objects. In FP, in contrast, yo
 
 To make this viable, it is important that functions are first class values of the language. You should be able to assign your function to a variable or store it in a data structure, like any other type of value in your program. 
 
-Functions must also accept other functions as arguments, and can even have functions as their return value. (This is often referred to as _higher order functions_.) It is common to create new functions by _composing_ two other functions together, or by calling a function with only some of its arguments to create a new function.
+Functions must also accept other functions as arguments, and can even have functions as their return value. This is often referred to as _higher order functions_. It is common to create new functions by _composing_ two other functions together, or by calling a function with only some of its arguments to create a new function.
 
 These are also concepts we will be returning to in later articles.
 
@@ -52,4 +52,4 @@ These are also concepts we will be returning to in later articles.
 
 A programming language isn't either functional or not functional. It is more like a spectrum, where languages are more or less on the functional side, depending on which features they support. So, a language that's considered functional is simply one which makes it easy, or even mandatory, to program in a functional style.
 
-But it's also perfectly possible to use FP in many languages not traditionally considered functional. Often this will just requires more discipline on the part of the programmer to stay away from mutating variables, for instance. Most such languages also have useful libraries for those inclined to a more functional style of programming. And by the time Christmas comes around, that will hopefully include you!
+But it's also perfectly possible to use FP in many languages not traditionally considered functional. Often this will just require more discipline on the part of the programmer to stay away from mutating variables, for instance. Most such languages also have useful libraries for those inclined to a more functional style of programming. And by the time Christmas comes around, that will hopefully include you!

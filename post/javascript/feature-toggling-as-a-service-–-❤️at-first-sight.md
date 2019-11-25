@@ -10,23 +10,26 @@ ingress: >-
 authors:
   - Thomas Svensen
 ---
-Feature toggling as a service is best explained by a live demo. This 60 second sample from our enterprise app shows how instantly we can enable/disable a feature, and how we can easily do that down to the specific user of our app.
+Feature toggling as a service is best explained by a live demo. This 60 second sample from our enterprise app shows how we can instantly enable/disable a feature. And it shows how we can also do that for a specific user of our app!
 
 <video controls>
-  <source src="https://github.com/thomassvensen/host-a-video/blob/master/Feature%20Flag%20demo.mp4?raw=true" type="video/mp4">
+  <source src="https://github.com/thomassvensen/ost-a-video/blob/master/Feature%20Flag%20demo.mp4?raw=true" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ## Targeting and logging
+
 Although not shown in the video, Launch Darkly obviously also allows you to target groups of users based on whatever criteria you have available. It's also backed by great audit logging and statistics, so you can see how feature configuration has changed over time and what values have been served to the users over time.
 
 ## Getting started
+
 Launch Darkly has [a nice SDK](https://docs.launchdarkly.com/docs/js-sdk-reference), allowing you to integrate with all popular programming language, including packages for both general JavaScript and [React](https://docs.launchdarkly.com/docs/react-sdk-reference) apps. There also 3rd party libraries like [Flopflip](https://github.com/tdeekens/flopflip), which smoothly mirrors the flag states to your Redux store. This is what we do, and it makes it really easy to debug issues related to feature flags, e.g. using time-travel.
 
 ## Show me the code
+
 In your React app, you just add this snippet around your code:
 
-``` js
+```jsx
       <ConfigureFlopFlip
         adapter={launchDarklyAdapter}
         adapterArgs={{
@@ -40,7 +43,7 @@ In your React app, you just add this snippet around your code:
 
 and then for the specific component that you want to toggle:
 
-```
+```jsx
     <ToggleFeature flag="portal-external-show-map-card">
       <MapCard />
     </ToggleFeature> 

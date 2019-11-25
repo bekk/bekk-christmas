@@ -76,8 +76,16 @@ const ArticleBody = styled.article(
     .gatsby-highlight, iframe {
         margin: 50px auto;
     }
-    .p-with-img {
-        max-width: 1260px;
+    .wide-image{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .dark-theme-image{
+        display: ${theme.darkThemeImageDisplay};
+    }
+    .light-theme-image{
+        display: ${theme.lightThemeImageDisplay};
     }
     h1,
     table,
@@ -92,8 +100,7 @@ const ArticleBody = styled.article(
         display: block;
         width: 100%;
         max-width: 760px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 50px auto;
     }
     `
 );

@@ -12,17 +12,37 @@ links: []
 authors:
   - Torbjørn Tessem
 ---
-KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote kicked off the conference, there were four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). But choices were made, and we will try to present some of the talks here.
+KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote kicked off the conference, there were four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). Even still, we will try to present some of the talks here. 
 
 ## Representing the State
 
+A common 
+
+TODO
+
+- Representing state
+- primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
+- Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control.  
+
+
+
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
-## Best Practises for Unit Testing in Kotlin
-Some talks are fun, some are inspiring and some are downright useful. Working on a team that was in the transition from Java to Kotlin, this talk by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing unit tests.    
+## Making Noise
 
-* har vært nyttig på prosjekt som gikk fra java til kotlin
-* bruker kotlins styrker i samarbeid med junit 5 (som er utviklet med tanke på kotlin)
+TODO
+
+\<vz fyll inn her>
+
+[Making Noise with Kotlin Native](https://www.youtube.com/watch?v=vc04QKnryKs) by Josh Skeen
+
+## Best Practises for Unit Testing
+
+//TODO
+
+Some talks are fun, some are inspiring and some are downright useful. 
+
+The talk held by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing tests, how well Kotlin works with JUnit 5, and presented some of the many different test libraries that are available.
 
 [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer
 
@@ -53,20 +73,3 @@ For more puzzlers: [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9v
 If your are interested in more, you can find videos (and some slides) from KotlinConf 2018 [here](https://kotlinconf.com/2018/talks/). And there will of course be more Kotlin in Copenhagen the next couple of days. We hope to see you there!
 
 ### Happy KotlinConf!
-
-TODO: 
-
-* litt om fire forskjellige talks/fordrag (skal noen erstattes?)
-
-Lenker til fire kandidater:
-
-
-* [Beat the High-Score: Build a Game Using libGDX and Kotlin](https://www.youtube.com/watch?v=kDxerDYelLs) by David Wursteisen\
-  Game development
-* [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee. How to use amongst other sealed classes. 
-* [Making Noise with Kotlin Native](https://www.youtube.com/watch?v=vc04QKnryKs) by Josh Skeen\
-  Music! 
-* [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer \
-  Very informative, and perhaps the talk I've personally applied most at projects at work. 
-* [Kotlin Puzzlers, vol 2](https://www.youtube.com/watch?v=Xq9vBZs0j-8) by Anton Keks\
-  A tradition in the making? A fun way to end the conference.

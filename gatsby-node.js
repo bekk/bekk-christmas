@@ -110,6 +110,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         currentFrontpageDay = currentDay;
     }
 
+    // Show the next day for preview.bekk.christmas
+    if (currentFrontpageDay < 24 && isPreview) {
+        currentFrontpageDay += 1;
+    }
+
     // Frontpage for bekk.christmas
     if (!envCalendar || isPreview) {
         createPage({
