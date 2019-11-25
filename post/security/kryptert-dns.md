@@ -17,7 +17,7 @@ authors:
 ---
 Så og si all aktivitet på internett starter med et DNS-oppslag. Formålet med DNS er å oversette lesbare domenenavn, f.eks. bekk.no, til en IP-adresse som brukes til å opprette en forbindelse til en annen datamaskin. Disse oppslagene sendes som standard i klartekst, noe som betyr at andre enkelt kan lese og endre denne trafikken. Det betyr blant annet at:
 - Regimer som ønsker å begrense innbyggernes tilgang til informasjon bruker det til å blokkere DNS-oppslag på utvalgte domener.
-- NSA og andre etterretningstjenester rundt om i verden utnytter dette i sine [verktøy](https://www.wired.com/2014/03/quantum/). 
+- NSA og andre etterretningstjenester rundt om i verden utnytter dette i sine [angreps- og overvåkningsverktøy](https://www.wired.com/2014/03/quantum/). 
 - Amerikanske internettleverandører kan logge DNS-oppslag og [selge informasjonen til tredjeparter](https://arstechnica.com/information-technology/2017/03/how-isps-can-sell-your-web-history-and-how-to-stop-them/). 
 - En angriper kan returnere en annen IP-adresse enn den faktiske for å sende brukere til en side kontrollert av angriperen, kjent som DNS-kapring. [I 2011 ble iranske innbyggere sendt til en falsk versjon av Gmail](https://slate.com/technology/2016/12/how-the-2011-hack-of-diginotar-changed-the-internets-infrastructure.html) som antakeligvis ble brukt til å overvåke e-postene deres.
 
