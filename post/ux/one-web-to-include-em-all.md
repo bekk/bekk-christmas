@@ -5,12 +5,12 @@ post_day: 6
 title: One web to include 'em all
 image: 'https://i.ibb.co/gmFxYYZ/Acessibility-for-all-hvit-bgr-02.png'
 ingress: >-
-  _Designers usually strive to design user-friendly products fit for a diverse
+  Designers usually strive to design user-friendly products fit for a diverse
   group of people. But how do we actually design and develop products that
   consider the needs of impaired users? This short article aims to introduce you
   to the maze of web accessibility and its related framework WCAG 2.1: How can
   we include people with disabilities on the web and how do we understand the
-  numerous criteria we need to meet in order to do so?_
+  numerous criteria we need to meet in order to do so?
 authors:
   - Ragnhild Finsveen Liven
 ---
