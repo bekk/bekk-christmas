@@ -31,7 +31,7 @@ Just add the following dependency to your `pom.xml` if you use Maven:
 
 # Basic annotations
 
-I won’t go into detail about every annotation in JUnit 5, but I’d like to focus on a few of them. The most important annotation is of course `@Test`, which is still used to denote that a given method is a test method. However, in JUnit 5 the @Test-annotation doesn’t declare any attributes. Test expectations, like expected throwables, should now be handled in an assertion instead.
+I won’t go into detail about every annotation in JUnit 5, but I’d like to focus on a few of them. The most important annotation is of course `@Test`, which is still used to denote that a given method is a test method. However, in JUnit 5 the `@Test`-annotation doesn’t declare any attributes. Test expectations, like expected throwables, should now be handled in an assertion instead.
 
 Some of the annotations that have changed from JUnit 4 to JUnit 5:
 
