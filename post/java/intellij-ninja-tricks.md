@@ -12,7 +12,7 @@ ingress: >-
 authors:
   - Ketil S. Velle
 ---
-First and foremost, learning some _**keyboard shortcuts**_ will yield great awards. And the good thing in IntelliJ is that to start off you only need one: `CMD + SHIFT + A (`find actions)**\*.** This keyboard shortcut of shortcuts gives you access to all possible actions within IntelliJ, and their corresponding keyboard shortcut!
+First and foremost, learning some _**keyboard shortcuts**_ will yield great awards. And the good thing in IntelliJ is that to start off you only need one: `CMD + SHIFT + A` (find actions)**\*.** This keyboard shortcut of shortcuts gives you access to all possible actions within IntelliJ, and their corresponding keyboard shortcut!
 
 The second thing I love to use in IntelliJ is _**Scratch files**_ (`CTRL + SHIFT + N`) . I use these as temporary notes or, after choosing a fitting extension, as a quick way to prettify the json or xml structure I want to look at. These files will not be saved as part of your project, and will disappear as you close them. This way you do not have to worry that they end up in your git-repository by mistake.
 
