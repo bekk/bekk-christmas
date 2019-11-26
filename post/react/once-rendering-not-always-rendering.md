@@ -3,7 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 2
 title: 'Once rendering, (not) always rendering'
-image: 'https://unsplash.com/photos/AMQEB4-uG9k'
+image: >-
+  https://images.unsplash.com/photo-1490133961212-53d0e60a1f73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
 ingress: >-
   The promise of Concurrent Mode was made at a conference in 2018. This new
   features for React will help rendering issues, allowing to "pause" the render
