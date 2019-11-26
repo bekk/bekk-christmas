@@ -36,4 +36,4 @@ _Drop observations with missing values_. If your data set contains relatively fe
 
 _Impute missing values_. A more complex approach is to replace missing values with “best guesses”. This is called imputing missing values and there are many approaches available. One common and easy approach is to use statistical values like the mean or median for the variable in question. A second approach is to use a linear regression model between correlated variables to impute the missing values. A third is to copy values from similar observations based on a clustering algorithm.
 
-<img src="https://i.imgflip.com/3hmipk.jpg" />
+<img src="https://i.imgflip.com/3hmipk.jpg" align="right" style="margin:30px 0 0 5px"/>
