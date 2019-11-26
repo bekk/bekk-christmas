@@ -44,7 +44,7 @@ _The elf stared at the thick book. “I need to make one big dash!”_
 
 First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with `2 * 3.1416 * 40  ≈ 251`. Giving the circle a stroke-dasharray of 251, therefore gives us a full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example `stroke-dasharray: 11 241 `and `stroke-dasharray: 188 73`. 
 
-<iframe height="320" style="maxWidth: 100%" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="320" style="width: 100%" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
 _“Awesome!” Cheered the elf._ 
 
