@@ -29,14 +29,14 @@ const PrismThemer = styled.div(
         }
     }
     pre[class*='language-'] {
-        padding: 1em;
-        margin: 0.5em 0;
+        padding: 16px;
+        margin: 8px 0;
         overflow: auto;
         background: ${theme.prism.backgroundColor};
     }
     :not(pre) > code[class*='language-'] {
-        padding: 0.1em 0.3em;
-        border-radius: 0.3em;
+        padding: 2px 5px;
+        border-radius: 5px;
         color: ${theme.prism.textColor};
         background: ${theme.prism.backgroundColor};
     }
@@ -119,7 +119,7 @@ const PrismThemer = styled.div(
         left: 0;
         right: 0;
         padding: inherit 0;
-        margin-top: 1em;
+        margin-top: 16px;
         background: #bccedd;
         box-shadow: inset 5px 0 0 #7e9cb9;
         z-index: 0;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
@@ -9,6 +10,7 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import { getWindowImagePlaceholder } from '../utils';
 import Preview from './Preview';
 import { Teaser } from '../components/Teaser';
+import ogImageSrc from '../images/teaser-1.jpg';
 
 const Header = styled.h1`
     font-size: 2em;
@@ -19,7 +21,7 @@ const Description = styled.div`
     margin-left: 50px;
     margin-bottom: 150px;
     max-width: 350px;
-    font-size: 1.4em;
+    font-size: 22px;
 `;
 
 const DailyWindowHeader = styled.h2`
@@ -44,6 +46,20 @@ const Frontpage = ({ data, pageContext }) => {
 
     return (
         <Layout>
+            <Helmet>
+                <html lang="en" />
+                <title>Bekk Christmas</title>
+                <meta
+                    property="description"
+                    content="Bekk is getting in the Christmas spirit with 24 days of articles"
+                />
+                <meta property="og:title" content="Bekk Christmas" />
+                <meta
+                    property="og:description"
+                    content="Bekk is getting in the Christmas spirit with 24 days of articles"
+                />
+                <meta property="og:image" content={ogImageSrc} />
+            </Helmet>
             <Description>
                 <Header>Bekk Christmas</Header>
                 <p>

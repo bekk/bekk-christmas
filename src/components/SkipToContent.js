@@ -7,7 +7,7 @@ const Container = styled.div(
   border-bottom: 2px solid ${theme.textColor};
   color: ${theme.contrastTextColor};
   text-align: center;
-  padding: 1em;
+  padding: 16px;
   margin: 0 auto;
   transform: translateY(-100%);
   transition: transform .1s ease-out;
