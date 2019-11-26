@@ -10,7 +10,7 @@ const PrismThemer = styled.div(
     pre[class*='language-'],
     code[class*='language-'] {
         color: ${theme.prism.textColor};
-        font-size: 13px;
+        font-size: 0.8em;
         text-shadow: none;
         font-family: 'Dank Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
         direction: ltr;

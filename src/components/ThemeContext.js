@@ -54,7 +54,8 @@ const themeConfigs = {
 };
 
 export const ThemeProvider = ({ children, ...rest }) => {
-    const [theme, setTheme] = React.useState(lightTheme);
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = React.useState(isDark ? darkTheme : lightTheme);
 
     React.useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

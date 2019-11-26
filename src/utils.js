@@ -53,29 +53,29 @@ export const setImageWidth = url => {
 export const mapCalendarToName = calendar => {
     switch (calendar) {
         case 'javascript':
-            return 'JavaScript Christmas';
+            return 'JavaScript';
         case 'kotlin':
-            return 'Kotlin Christmas';
+            return 'Kotlin';
         case 'react':
-            return 'React Christmas';
+            return 'React';
         case 'opensource':
-            return 'Open Source Christmas';
+            return 'Open Source';
         case 'functional':
-            return 'Functional Christmas';
+            return 'Functional';
         case 'java':
-            return 'Java Christmas';
+            return 'Java';
         case 'ml':
-            return 'ML Christmas';
+            return 'ML';
         case 'product':
-            return 'Product Christmas';
+            return 'Product';
         case 'security':
-            return 'Security Christmas';
+            return 'Security';
         case 'thecloud':
-            return 'The Cloud Christmas';
+            return 'The Cloud';
         case 'ux':
-            return 'UX Christmas';
+            return 'UX';
         case 'css':
-            return 'CSS Christmas';
+            return 'CSS';
         default:
             return null;
     }

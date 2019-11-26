@@ -18,14 +18,10 @@ const Container = styled.main`
     }
 `;
 const Heading = styled.h1`
-    font-family: NewzaldBook, serif;
-    font-size: 60px;
     font-weight: normal;
-
-    ${mediaQueries.mediumUp} {
-        font-size: 90px;
-    }
+    font-size: 5.625em;
 `;
+
 const ImagePotpourri = styled.section`
     position: relative;
     min-height: 500px;
@@ -91,12 +87,8 @@ const Image = styled.img(
 `
 );
 const Paragraph = styled.p`
-    font-size: 26px;
+    font-size: 2.8em;
     font-weight: 300;
-
-    ${mediaQueries.mediumUp} {
-        font-size: 45px;
-    }
 `;
 
 const slideFade = keyframes`

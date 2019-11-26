@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import * as fonts from '../constants/fonts';
-import * as mediaQueries from '../constants/media-queries';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
@@ -25,24 +24,17 @@ const ArticleBody = styled.article(
         font-weight: 300;
     }
     h2 {
-        font-size: 34px;
-
-        ${mediaQueries.mediumUp} {
-            font-size: 42px;
-        }
+        font-size: 2.2em;
     }
     h3,
     h4,
     h5,
     h6 {
-        font-size: 24px;
-        ${mediaQueries.mediumUp} {
-            font-size: 34px;
-        }
+        font-size: 1.5em;
     }
     p {
         font-family: FFDINWebProLight, sans-serif;
-        font-size: 20px;
+        font-size: 1.25em;
         line-height: 1.45;
     }
     p code {
