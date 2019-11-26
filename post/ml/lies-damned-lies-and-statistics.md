@@ -11,6 +11,13 @@ ingress: >-
   in 1999 to 2009? And how can your understanding of Bayesian probability help
   to prevent your doctor from erroneously removing your breasts? Read on to find
   out.
+links:
+  - title: More spurious correlations
+    url: 'http://tylervigen.com/spurious-correlations'
+  - title: Do doctors understand testresults
+    url: 'https://www.bbc.com/news/magazine-28166019'
+  - title: Bayes' probability
+    url: 'http://pi.math.cornell.edu/~mec/2008-2009/TianyiZheng/Bayes.html'
 ---
 Statistics are the foundation for machine learning algorithms. In a world where we are bombarded by apparently conceivable statistics, being able to see through the faults that some of the facts and figures that statistics represent is more essential than ever.
 
