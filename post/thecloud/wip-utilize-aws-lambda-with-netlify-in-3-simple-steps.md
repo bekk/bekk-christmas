@@ -21,9 +21,7 @@ links:
 authors:
   - Sindre Moldeklev
 ---
-That was my experience a few weeks ago when I redid my fathers webpage. The page needed to be a simple
-landing page with a contact form where potenial clients could contact him. The choice of hosting for the site
-fell on [Netlify](https://www.netlify.com/), and they just happen to have a super simple way of utilizing AWS Lambda Functions.
+I recently created a static webpage and needed an API endpoint. The page was a simple landing page, with a contact form where potential clients could reach out.The choice of hosting for the site fell on [Netlify](https://www.netlify.com/), and they just happen to have a super simple way of utilizing AWS Lambda Functions.
 
 In this post, I will show you how to setup an API endpoint for whatever your heart desires in three simple steps.
 
@@ -31,10 +29,11 @@ In this post, I will show you how to setup an API endpoint for whatever your hea
 
 For the three steps, there are some prerequisites that needs to be met:
 
-- Sign up to [Netlify](https://www.netlify.com/)
-- Create a new site in Netlify
-- Create a repository on Github, or connect an existing repository to your site
-- Install `netlify-cli` with `npm install -g netlify-cli`
+- Sign up to [Netlify](https://www.netlify.com/).
+- Install `netlify-cli` with `npm install -g netlify-cli`.
+- Create a repository on Github, or connect an existing repository to your site. The repository cannot be empty when connecting to Netlify.
+- Create a new site in Netlify with the following command: `netlify init` and follow the prompt in the terminal.
+  - When prompted if you want the cli to create a netlify.toml-file, select Y (Yes).
 
 #### 1. Create the function
 
@@ -42,8 +41,7 @@ With `netlify-cli` installed, go ahead and make a new function with the followin
 
 `netlify functions:create <name_of_your_function>`
 
-This will trigger a prompt with a few different function templates provided by Netlify. For this demonstration
-I chose `hello-world`.
+This will trigger a prompt with a few different function templates provided by Netlify. For this demonstration I chose `hello-world`.
 
 #### 2. Write the logic
 
@@ -72,7 +70,7 @@ Using the `netlify` command, you can easily test your function locally. Just run
 
 #### 3. Deploy your function
 
-The last step we should do is make our endpoint available on the internet. This is as simple as running `git push` with your committed changes. Now run `netlify open` to open the admin-UI of your site. Your endpoint will be available at `https://<yoursitename>.netlify.com/.netlify/function/<your_function_name>`
+The last step we should do is make our endpoint available on the internet. This is as simple as running `git push` with your committed changes. Netlify will deploy your site and after a few seconds you will have an available API endpoint. To get to the admin panel of your site, run `netlify open` in your terminal. Your endpoint will be available at `https://<yoursitename>.netlify.com/.netlify/function/<your_function_name>`.
 
 ### Summary
 
