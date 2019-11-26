@@ -5,7 +5,7 @@ post_day: 10
 title: IntelliJ Ninja Tricks
 ingress: >-
   As a developer I spend most of my time at work in my IDE, for me that IDE is
-  Idea IntelliJ. During these years I have learned a few tricks, some useful
+  IntelliJ IDEA. During these years I have learned a few tricks, some useful
   keyboard-shortcuts and found a few plugins that have helped me be more
   effective in my day-to-day work. I want to share these lessons with you in the
   form of 4 IntelliJ ninja tricks!
