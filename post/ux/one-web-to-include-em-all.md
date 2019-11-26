@@ -58,7 +58,9 @@ WCAG 2.1 consists of four main principles, which contain a total of 13 guideline
 <br>
 <br>
 
-<img class="wide-image" src="https://i.ibb.co/kcD52nL/WCAG-2-1-structure-hvit-bkgr-2-01.png"/>
+<img class="dark-theme-image" src="<https://i.ibb.co/4gnYPjR/WCAG-2-1-structure-dark-mode.png>" />
+
+<img class="light-theme-image" src="<https://i.ibb.co/P6WcQ2y/WCAG-2-1-structure-light-mode.png>" />
 
 <br>
 <br>
