@@ -58,7 +58,7 @@ However, the data needed to calculate CLV does not come for free. In its simples
 In practice we often need more fine-grained representations of CLV to take proper decisions. The construct of the calculation itself also vary, depending on the business environment. 
 Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. We believe this is an important reason why CLV has had limited practical implementation. Model simplification is often proposed as the solution, but is there another way?
 
-####Using machine learning to solve the problem
+###Using machine learning to solve the problem
 We believe CLV-calculations is an excellent case for machine learning. Based on available customer information, the computer can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined along the way:
 
 ![](/assets/ml_4_pic3.png)
