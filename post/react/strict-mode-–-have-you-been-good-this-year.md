@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 1
-title: Strict Mode – Have you been good this year?
+title: StrictMode – React's Santa Claus
 description: ''
 links:
   - title: React Strict Mode
