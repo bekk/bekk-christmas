@@ -3,8 +3,18 @@ calendar: ux
 post_year: 2019
 post_day: 6
 title: 'Accessibility: One web to include ''em all'
-image: 'https://i.ibb.co/7g8p40f/Acessibility-for-all2-02.png'
+image: ''
 ingress: >-
+
+  <img class="dark-theme-image"
+  src="<https://i.ibb.co/DRBsjqq/Acessibility-for-all-dark-mode.png>" />
+
+
+  <img class="light-theme-image"
+  src="<https://i.ibb.co/yF17bKy/Acessibility-for-all-light-mode.png>" />
+
+
+
   Designers usually strive to design user-friendly products fit for a diverse
   group of people. But how do we actually design and develop products that
   consider the needs of impaired users? This short article aims to introduce you
