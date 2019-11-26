@@ -39,9 +39,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     if (envCalendar) {
         // Create frontpage of current calendar
-        const calendarSet = new Set();
+        const calendars = {};
 
         const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
+
         posts.forEach(node => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
@@ -83,23 +84,42 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendarPath = '/';
             }
 
-            // Create page for each calendar
-            const mapKey = calendarPath;
-            if (!calendarSet.has(calendarPath)) {
-                // Only create page for each calendar once
-                createPage({
-                    path: calendarPath,
-                    component: calendarTemplate,
-                    context: {
-                        year: post_year,
-                        calendar: calendar,
-                        hideWindowsAfterDay: hideWindowsAfterDay,
-                        includeCalendarInPath: isPreview,
-                    },
-                });
-                calendarSet.add(mapKey);
-                calendarsWithContent.add(calendarPath);
-            }
+            // Only create page for each calendar once
+            calendars[calendarPath] = {
+                year: post_year,
+                calendar: calendar,
+                hideWindowsAfterDay: hideWindowsAfterDay,
+                includeCalendarInPath: isPreview,
+            };
+            calendarsWithContent.add(calendarPath);
+        });
+
+        // create calendar pages for all unique calendar years
+        Object.entries(calendars).forEach(([calendarPath, context]) => {
+            const relatedCalendarPaths = Array.from(
+                new Set(
+                    posts
+                        .filter(
+                            post =>
+                                post.frontmatter.calendar === context.calendar &&
+                                post.frontmatter.post_year !== context.year
+                        )
+                        .map(post => {
+                            let path = isPreview ? `/${context.calendar}` : '';
+                            return post.frontmatter.post_year === 2019
+                                ? path
+                                : `${path}/${post.frontmatter.post_year}`;
+                        })
+                )
+            );
+            createPage({
+                path: calendarPath,
+                component: calendarTemplate,
+                context: {
+                    ...context,
+                    relatedCalendarPaths,
+                },
+            });
         });
     }
 
