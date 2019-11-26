@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 19
 title: 'The people behind JavaScript: Yulia Startsev'
+image: 'https://images.unsplash.com/photo-1562229125-6d6075419a22'
 ingress: >-
   **The people behind JavaScript** is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
