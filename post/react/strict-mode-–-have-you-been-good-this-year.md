@@ -12,11 +12,9 @@ links:
 authors:
   - Markus Rauhut
 ---
-## What is Strict Mode?
+## What is StrictMode and why should i use it?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem. In lacinia leo pellentesque lectus malesuada, et volutpat odio egestas. Curabitur nec ipsum eu lectus ultrices ultricies quis in nisi. Nulla sapien diam, imperdiet non eleifend nec, ornare rutrum ex.
-
-## Why should I use Strict Mode?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem. In lacinia leo pellentesque lectus malesuada, et volutpat odio egestas. Curabitur nec ipsum eu lectus ultrices ultricies quis in nisi. Nulla sapien diam, imperdiet non eleifend nec, ornare rutrum ex.
 
