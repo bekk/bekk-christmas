@@ -3,6 +3,8 @@ calendar: ml
 post_year: 2019
 post_day: 15
 title: Conversation analysis
+image: >-
+  https://images.unsplash.com/photo-1552181903-a6af3a3d159d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: '### _Exploring NLP libraries for Norwegian_'
 description: ''
 links:
