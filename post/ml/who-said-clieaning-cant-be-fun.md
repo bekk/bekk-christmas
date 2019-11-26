@@ -30,7 +30,7 @@ Irrelevant variables may be defined as variables we know to have nothing to do w
 
 A data set may contain observations that are repeated by mistake. Data sets combined from different sources often results in duplicate observations. Data from a database where users may submit entries multiple times may also include duplicates. In many situations duplicated records do not represent two separate observations and we should therefore remove the extra ones.
 
-**Missing data**
+**Handle missing data**
 
 Data sets without missing values are widespread when you learn data science and machine learning in school, but very rare in the real world. Most machine learning algorithms do not work on data with missing values, hence handling missing data is an unavoidable part of being a data scientist. There are many approaches available.
 
