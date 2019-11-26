@@ -15,7 +15,7 @@ The most important part of any data science project is the data. It does not mat
 
 **Inspect the raw data**
 
-First of all, look at your data. It may sound trivial, but it is easy to forget. Once your data is in a tabular format, use a couple of minutes to scroll through the table and look at the entries. After inspecting the table, calculate statistics (mean, median, standard deviation, etc.) and visualize the data (e.g. scatter plots, line plots, heat maps, etc). The above steps often give you a feeling of the overall quality of the data, and if you know the domain you are working with you will often be able to spot obvious errors in the data.
+First of all, look at your data. It may sound trivial, but it is easy to forget. Once your data is in a tabular format, use a couple of minutes to scroll through the table and look at the entries. After inspecting the table, calculate statistics (mean, median, standard deviation, etc.) and visualize the data (e.g. scatter plots, line plots, heat maps, etc). The above steps often give you a sense of the overall quality of the data, and if you know the domain you are working with you will often be able to spot obvious errors in the data.
 
 <img src="https://i.imgflip.com/3hmhb3.jpg" width=200 align="right" style="margin:30px 0 0 5px"/>
 
