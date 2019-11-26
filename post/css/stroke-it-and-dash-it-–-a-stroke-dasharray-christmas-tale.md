@@ -22,8 +22,7 @@ _The little elf ran to the workshop and started to draw his solution. This reall
 
 First step is to make a SVG circle. 
 
-<iframe height="320" style="maxWidth: 760px;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/BaaeEGv
-" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe src="https://codepen.io/halldis-sohoel/pen/BaaeEGv">
 </iframe>
 
 _Next, he wanted to hide a part of the circle. He needed to ask for assistance from his dear friend Rudolf. He found Rudolf outside playing in the snow. When Rudolf saw the elf hanging with his head he said “What’s wrong little friend?” the elf said, “Santa, assigned me a very special task, but I can’t figure it out”. “Don’t worry friend, I will help you! What do you need?” The elf explained the problem. “hmmm, that’s a tricky one…” said Rudolf. “… luckily I have the answer!” the elf lit up! “Really?!”_
@@ -44,7 +43,7 @@ _The elf stared at the thick book. “I need to make one big dash!”_
 
 First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with `2 * 3.1416 * 40  ≈ 251`. Giving the circle a stroke-dash array of 251, therefor gives us full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example `stroke-dasharray: 11 241 `and `stroke-dasharray: 188 73`. 
 
-<iframe height="320" style="maxWidth: 760px;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="320" style="maxWidth: 100%" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
 _“Awesome!” Cheered the elf._ 
 
