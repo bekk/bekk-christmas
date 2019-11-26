@@ -4,6 +4,11 @@ post_year: 2019
 post_day: 1
 title: Strict Mode – Have you been good this year?
 description: ''
+links:
+  - title: React Strict Mode
+    url: 'https://reactjs.org/docs/strict-mode.html'
+  - title: How to Enable React Strict Mode
+    url: 'https://kentcdodds.com/blog/react-strict-mode'
 authors:
   - Markus Rauhut
 ---
