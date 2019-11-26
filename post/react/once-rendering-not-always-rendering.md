@@ -36,6 +36,4 @@ If you are curious about this new feature and you want to try it, our God of Blo
 
 # When will it come?!
 
-Fun-fact, the new Facebook website which is in development uses Concurrent Mode! This  is to verify and test that Concurrent Mode is really needed and is stable enough to release. We haven't gotten a specific date yet, but from their blog they have written:
-
-> ... we expect to provide a 16.x release with opt-in support for them this year.
+Fun-fact, the new Facebook website which is in development uses Concurrent Mode! This  is to verify and test that Concurrent Mode is really needed and is stable enough to release. We haven't gotten a specific date yet, but from their blog they have written that they _"... expect to provide a 16.x release with opt-in support for them this year"_.
