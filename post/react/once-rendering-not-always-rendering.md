@@ -33,3 +33,9 @@ With Concurrent Mode, the rendering can be interrupted. If the user do trigger a
 I don't think you should rely on the fact that Concurrent Mode will solve all you performance issues. However, I think it will be a nice helper in the heavy list-rendering React-applications out there.
 
 If you are curious about this new feature and you want to try it, our God of Bloggs have written a nice post about it. You guessed right, Kent C. Dodds wrote about [how to enable Concurrent Mode](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
+
+# When will it come?!
+
+Fun-fact, the new Facebook website which is in development uses Concurrent Mode! This  is to verify and test that Concurrent Mode is really needed and is stable enough to release. We haven't gotten a specific date yet, but from their blog they have written:
+
+> ... we expect to provide a 16.x release with opt-in support for them this year.
