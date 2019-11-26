@@ -2,11 +2,15 @@
 calendar: css
 post_year: 2019
 post_day: 3
-title: 'Stroke it and Dash it – A stroke-dasharray Christmas tale '
+title: 'Stroke it and Dash it – A stroke-dasharray Christmas Tale '
 image: 'https://unsplash.com/photos/unG80SBSfMU'
 links:
   - title: SVG loader
     url: 'https://codepen.io/zzavrski/pen/qXrVpJ'
+  - title: Hamburger menu
+    url: 'https://codepen.io/justinmarsan/pen/ZrrXNg'
+  - title: Logo animation
+    url: 'https://codepen.io/jakubtursky/pen/ZZdarw'
 authors:
   - Halldis Søhoel
 ---
