@@ -23,7 +23,7 @@ _The little elf ran to the workshop and started to draw his solution. This reall
 
 First step is to make a SVG circle. 
 
-<iframe src="https://codepen.io/halldis-sohoel/pen/BaaeEGv">
+<iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/BaaeEGv" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 _Next, he wanted to hide a part of the circle. He needed to ask for assistance from his dear friend Rudolf. He found Rudolf outside playing in the snow. When Rudolf saw the elf hanging with his head he said “What’s wrong little friend?”. The elf said: “Santa, assigned me a very special task, but I can’t figure it out”. “Don’t worry friend, I will help you! What do you need?”. The elf explained the problem. “hmmm, that’s a tricky one…” said Rudolf, “… luckily I have the answer!”. The elf lit up! “Really?!”._
