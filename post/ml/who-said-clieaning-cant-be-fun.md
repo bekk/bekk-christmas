@@ -2,12 +2,11 @@
 calendar: ml
 post_year: 2019
 post_day: 20
-title: ' '
+title: Who said cleaning can't be fun?
 image: ''
-authors:
-  - Michael Nordmo
+authors: []
 ---
-<img src="https://i.imgflip.com/3hmf9p.jpg" display="inline-flex"/>
+<img src="https://i.imgflip.com/3hmoao.jpg" />
 
 The most important part of any data science project is the data. It does not matter how fancy your algorithm is if you’re data has low quality or does not capture the relationships you are interested in. In the end it all comes down to the simple truth: “garbage in, garbage out”. Data cleaning refers to a variety of methods for improving the quality of your data. It can be a time consuming and challenging process, but the reward for properly cleaning your data can be great.
 
@@ -35,11 +34,7 @@ A data set may contain observations that are repeated by mistake. Data sets comb
 
 Data sets without missing values are widespread when you learn data science and machine learning in school, but very rare in the real world. Most machine learning algorithms do not work on data with missing values, hence handling missing data is an unavoidable part of being a data scientist. There are many approaches available.
 
-
-
-
 _Drop observations with missing values_. If your data set contains relatively few observations with missing values, removing them is the easy fix.
-
 
 _Impute missing values_. A more complex approach is to replace missing values with “best guesses”. This is called imputing missing values and there are many approaches available. One common and easy approach is to use statistical values like the mean or median for the variable in question. A second approach is to use a linear regression model between correlated variables to impute the missing values. A third is to copy values from similar observations based on a clustering algorithm.
 
