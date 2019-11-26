@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 6
 title: 'Accessibility: One web to include ''em all'
-image: >-
-  https://gist.githubusercontent.com/dagfs/1a9a78bd5d4d3d9dc45717cf4c44e172/raw/374256a2c1828a08d5cc151ad12cd2efb59d7131/afa.svg
+image: 'https://svgshare.com/i/GQt.svg'
 ingress: >-
 
   <img class="dark-theme-image"
