@@ -70,8 +70,8 @@ julekalendere | NOUN
 -------
 ```
 
-As we see, spaCy understands from the context that _bekk_ is in fact a proper noun!
+As we see, spaCy understands from the context that _bekk_ is in fact a proper noun! This is a very helpful tool in extraction of named entities, but also structural analysis or at some point even abstractive approaches.
 
-
+To extract key words from the transcription, we implemented a modified [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) algorithm, aided by a Norwegian snowball stemmer provided by [NLTK](https://www.nltk.org/_modules/nltk/stem/snowball.html#NorwegianStemmer).
 
 <sup>1</sup> https://www.rev.ai/blog/how-to-calculate-word-error-rate/, https://medium.com/descript/which-automatic-transcription-service-is-the-most-accurate-2018-2e859b23ed19
