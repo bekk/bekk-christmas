@@ -61,7 +61,7 @@ By using currying, we can convert `add` into `curriedAdd`. And this process will
 incrementByFive = curriedAdd(5)
 ```
 
-But why didn't we have to do this in Elm? That's because Elm, like many other functional programming languages, functions are _curried by default_. This means that all functions can easily be partially applied! And that's also why the type signature we saw in the first example looks like this:
+But why didn't we have to do this in Elm? That's because in Elm, like many other functional programming languages, functions are _curried by default_. This means that all functions can easily be partially applied! And that's also why the type signature we saw in the first example looks like this:
 
 ```elm
 add : number -> number -> number
@@ -88,10 +88,12 @@ Here are a couple of examples, again using Elm.
 -- can be displayed to the user, using "n/a" where we 
 -- don't have a value.
 displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki", Just "Wayland"]
+-- Result: [ "NBN", "Jinteki", "Wayland" ]
 
 -- Filter a list of names to include only the people 
 -- named "John".
 johns = List.filter (String.startsWith "John") [ "John Snow", "John Rambo", "James Bond", "John McClane", "Jack Bauer"]
+-- Result: [ "John Snow", "John Rambo", "John McClane" ]
 ```
 
 Both [Maybe.withDefault](https://package.elm-lang.org/packages/elm/core/latest/Maybe#withDefault) and [String.startsWith](https://package.elm-lang.org/packages/elm/core/latest/String#startsWith) expect to get two arguments, but by only applying them partially we get exactly what we need.
@@ -102,12 +104,12 @@ As another example, say we have a function with the following type signature in 
 log : LogConfig -> Message -> Cmd msg
 ```
 
-The function require a configuration type and a message. Depending on the configuration, the message might be logged to a backend service or maybe to the browser console. To specify the configuration everywhere we need to log something would be rather cumbersome. Instead we can just partially apply `log` to the configuration once, and use the resulting function in the rest of the application!
+The function requires a configuration type and a message. Depending on the configuration, the message might be logged to a backend service or maybe to the browser console. To specify the configuration everywhere we need to log something would be rather cumbersome. Instead we can just partially apply `log` to the configuration once, and use the resulting function in the rest of the application!
 
 The more used you get to functional programming, the more places you will find where a partially applied function is exactly what you need.
 
 ## Schönfinkeli-what-now?
 
-The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If the name sounds familiar, that's no coincidence. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
+The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If the name sounds familiar, that's no coincidence: Mr. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
 
 However, he was not the one to discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact attributed by Curry for doing it. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
