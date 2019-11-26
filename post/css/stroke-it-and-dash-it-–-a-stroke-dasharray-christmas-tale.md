@@ -30,11 +30,11 @@ _Next, he wanted to hide a part of the circle. He needed to ask for assistance f
 
 _Well back in the workshop the elf stared at the circle once again. “Ok, so I need to use something called stroke-dasharray. But how does it work?” He went to the bookshelf to fetch a big and heavy book. The weight of it almost made him loose his balance. With a bang, he dropped the book on the table. “Stack overflow” it read on the front page. “Ok, hmmm, S for stroke-dasharray”_
 
-Stroke-dasharray is a way of adding dashes to a stroke. Given a value of, for example, 5 it will divide the stroke into dashes and gaps of equal length 5. 
+Stroke-dasharray is a way of adding dashes to a stroke. Given a value of, for example, 5 it will divide the stroke into dashes and gaps of equal length, 5. 
 
-If you provide stroke-dash array with two values, for example 20 and 5, it will divide the line into dashed of 20px and gaps of 5px.
+If you provide stroke-dasharray with two values, for example 20 and 5, it will divide the line into dashed of 20px and gaps of 5px.
 
- It becomes interesting when stroke-dasharray is provided with three values, say 20, 10 and 5. The first dash will have a length of 20px, the first gap will have the length of 10px and the second dash will have the length of 5px. Then it starts over, with the second gap of length 20, the third gap of length 10px, and so on.
+It becomes interesting when stroke-dasharray is provided with three values, say 20, 10 and 5. The first dash will have a length of 20px, the first gap will have the length of 10px and the second dash will have the length of 5px. Then it starts over, with the second _gap_ of length 20, the third _dash_ of length 10px, and so on.
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/PoovgvX
 " frameborder="no" allowtransparency="true" allowfullscreen="true">
@@ -42,7 +42,7 @@ If you provide stroke-dash array with two values, for example 20 and 5, it will 
 
 _The elf stared at the thick book. “I need to make one big dash!”_
 
-First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with `2 * 3.1416 * 40  ≈ 251`. Giving the circle a stroke-dash array of 251, therefor gives us full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example `stroke-dasharray: 11 241 `and `stroke-dasharray: 188 73`. 
+First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with `2 * 3.1416 * 40  ≈ 251`. Giving the circle a stroke-dasharray of 251, therefore gives us a full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example `stroke-dasharray: 11 241 `and `stroke-dasharray: 188 73`. 
 
 <iframe height="320" style="maxWidth: 100%" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
@@ -50,9 +50,7 @@ _“Awesome!” Cheered the elf._
 
 Let’s animate it with some keyframes. 
 
-<iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/dyyEEYe" frameborder="no" allowtransparency="true" allowfullscreen="true">
-
-</iframe>
+<iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/dyyEEYe" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
 The spinner is finally coming together. The final touch is making it rotate. We do this by using `translate: rotate(45deg);` 
 
