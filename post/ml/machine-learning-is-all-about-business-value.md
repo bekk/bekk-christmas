@@ -22,7 +22,11 @@ When talking about the practical application of machine learning and AI we often
 
 We‘ll start our story with the early adoption of machine learning for the purpose of cost reduction and ease of operation. Some of the first industries to find good use of machine learning were companies struggling with maintenance of physical objects like elevators and wind turbines. In these early cases, sensor data was used to read patterns on well-functioning machines, and replace them when this pattern was broken (but before it actually broke). This was opposed to replacing them at certain defined intervals, the way they previously did. The gains from this way of thinking was massive, and other ways of using similar thinking for cost reduction purposes was soon developed, like delay prediction and demand forecasting.
 
-Gradually, economists and marketers opened their eyes to several other opportunities for using these tools for more customer facing purposes, both to identify better value propositions and to increase sales and revenue. Some relevant examples of this are..., whereof ... is especially interesting. In the illustration below we have illustrated some of the practical applications from cost reduction, value proposition and revenue generation. 
+Gradually, economists and marketers opened their eyes to several other opportunities for using these tools for more customer facing purposes, both to identify better value propositions and to increase sales and revenue. Some relevant examples of this are..., whereof ... is especially interesting. In the illustration below we have illustrated some of the practical applications from cost reduction, value proposition and revenue generation.
+
+![](/assets/ml_4_pic1.png)
+
+
 
 We‘ll look into some of these in more detail during the course of this calendar although we will not be able to explain them all. To exemplify we‘ll present one application we have spent quite some time with the last couple of years.
 
@@ -47,10 +51,18 @@ CLV has several fields of application, including:
 
 However, the data needed to calculate CLV does not come for free. In its simplest form CLV still requires estimation of future contribution margins and retention rates, as well as a discount rate to create the discounted cash flow, exemplified by the typical CLV definition:
 
+![](/assets/ml_4_pic2.png)
+
+
+
 In practice we often need more fine-grained representations of CLV to take proper decisions. The construct of the calculation itself also vary, depending on the business environment. 
 Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. We believe this is an important reason why CLV has had limited practical implementation. Model simplification is often proposed as the solution, but is there another way?
 
-\##Using machine learning to solve the problem
+###Using machine learning to solve the problem
 We believe CLV-calculations is an excellent case for machine learning. Based on available customer information, the computer can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined along the way:
+
+![](/assets/ml_4_pic3.png)
+
+
 
 Too difficult and expensive, you say? Contrary to some beliefs such a model can be created and set up relatively easy, with low investment costs. There are examples of Norwegian companies that already have a fully functional CLV-model running, with very promising results!
