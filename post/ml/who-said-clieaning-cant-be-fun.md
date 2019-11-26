@@ -3,7 +3,7 @@ calendar: ml
 post_year: 2019
 post_day: 20
 title: Who said cleaning can't be fun?
-image: 'https://i.imgflip.com/3hmrcj.jpg'
+image: ''
 authors: []
 ---
 <img src="https://i.imgflip.com/3hmrcj.jpg" style="display: block; margin-left: auto; margin-right: auto;"/>
@@ -37,6 +37,4 @@ Data sets without missing values are widespread when you learn data science and 
 _Drop observations with missing values_. If your data set contains relatively few observations with missing values, removing them is the easy fix.
 
 _Impute missing values_. A more complex approach is to replace missing values with “best guesses”. This is called imputing missing values and there are many approaches available. One common and easy approach is to use statistical values like the mean or median for the variable in question. A second approach is to use a linear regression model between correlated variables to impute the missing values. A third is to copy values from similar observations based on a clustering algorithm.
-<div style="display: flex; justify-content: center;">
-<img src="https://i.imgflip.com/3hmipk.jpg" align="right" style="display: block; margin-left: auto; margin-right: auto;"/>
-</div>
+![](https://i.imgflip.com/3hmipk.jpg)
