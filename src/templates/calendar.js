@@ -1,16 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
 
 import Calendar from '../components/Calendar';
 import CalendarWindowClosed from '../components/CalendarWindowClosed';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
 
+import * as mediaQueries from '../constants/media-queries';
 import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 
+const CalendarWindowDescription = styled.p`
+    text-decoration: underline;
+    font-size: 1.5em;
+    line-height: 140%;
+    margin: 0 0 15px;
+
+    ${mediaQueries.mediumUp}  {
+        margin: 0 0 20px;
+    }
+`;
 const createLink = (includeCalendarInPath, calendar, year, day) => {
     let link = '';
 
@@ -44,7 +56,7 @@ const Template = ({ data, pageContext }) => {
         };
     });
 
-    const calendarName = mapCalendarToName(pageContext.calender);
+    const calendarName = `${mapCalendarToName(pageContext.calender)} Christmas`;
 
     return (
         <Layout calendarName={pageContext.calendar}>
@@ -77,7 +89,11 @@ const Template = ({ data, pageContext }) => {
                                     pageContext.calendar,
                                     calendarWindow.day
                                 )}
-                                title={calendarWindow.title}
+                                title={
+                                    <CalendarWindowDescription>
+                                        {calendarWindow.title}
+                                    </CalendarWindowDescription>
+                                }
                             />
                         ) : (
                             <CalendarWindowClosed day={index + 1} />
