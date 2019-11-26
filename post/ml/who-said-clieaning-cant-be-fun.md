@@ -8,14 +8,14 @@ authors: []
 ---
 <img src="https://i.imgflip.com/3hmrcj.jpg" style="display: block; margin-left: auto; margin-right: auto;"/>
 
-The most important part of any data science project is the data. It does not matter how fancy your algorithm is if you’re data has low quality or does not capture the relationships you are interested in. In the end it all comes down to the simple truth: “garbage in, garbage out”. Data cleaning refers to a variety of methods for improving the quality of your data. It can be a time consuming and challenging process, but the reward for properly cleaning your data can be great.
+The most important part of any data science project is the data. It does not matter how fancy your algorithm is if your data has low quality or does not capture the relationships you are interested in. In the end it all comes down to the simple truth: “garbage in, garbage out”. Data cleaning refers to a variety of methods for improving the quality of your data. It can be a time consuming and challenging process, but the reward for properly cleaning your data can be great.
 
 
 <img src="https://i.imgflip.com/3hme43.jpg" width=200 align="right" style="margin:30px 0 0 5px"/>
 
 **Inspect the raw data**
 
-First of all, look at your data. It may sound trivial, but it is easy to forget. Once your data is in a tabular format, use a couple of minutes to scroll through the table and look at the entries. After inspecting the table, calculate statistics (mean, median, standard deviation, etc.) and visualize the data (e.g. scatter plots, line plots, heat maps, etc). The above steps often give you a feeling for the overall quality of the data and if you know the domain you are working with you will often be able to spot obvious errors in the data.
+First of all, look at your data. It may sound trivial, but it is easy to forget. Once your data is in a tabular format, use a couple of minutes to scroll through the table and look at the entries. After inspecting the table, calculate statistics (mean, median, standard deviation, etc.) and visualize the data (e.g. scatter plots, line plots, heat maps, etc). The above steps often give you a feeling of the overall quality of the data, and if you know the domain you are working with you will often be able to spot obvious errors in the data.
 
 <img src="https://i.imgflip.com/3hmhb3.jpg" width=200 align="right" style="margin:30px 0 0 5px"/>
 
