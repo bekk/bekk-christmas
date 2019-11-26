@@ -54,4 +54,4 @@ The spinner was finally coming together. The final touch is making it rotate. We
 
 </iframe>
 
-For inspiration on other cool stuff you can make with stroke-dash array check out the links listed.
+For inspiration on other cool stuff you can make with stroke-dash array check out the links below.
