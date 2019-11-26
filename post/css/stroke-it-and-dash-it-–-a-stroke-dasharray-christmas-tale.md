@@ -42,7 +42,7 @@ If you provide stroke-dash array with two values, for example 20 and 5, it will 
 
 _The elf stared at the thick book. “I need to make one big dash!”_
 
-First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with 2 \* 3.1416 \* 40  ≈ 251. Giving the circle a stroke-dash array of 251, therefor gives us full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example 11 241 and 188 73. 
+First, let us calculate the circumference of the circle. We do that by calculating `2 * π * radius`. Our circle has a radius of 40; this leaves us with `2 * 3.1416 * 40  ≈ 251`. Giving the circle a stroke-dash array of 251, therefor gives us full circle. Giving stroke-dasharray two values where the sum is 251 will give it one dash. For example `stroke-dasharray: 11 241 `and `stroke-dasharray: 188 73`. 
 
 <iframe height="320" style="maxWidth: 760px;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/gOOJNgM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
@@ -54,7 +54,7 @@ Let’s animate it with some keyframes.
 
 </iframe>
 
-The spinner is finally coming together. The final touch is making it rotate. We do this by using translate: rotate(); 
+The spinner is finally coming together. The final touch is making it rotate. We do this by using `translate: rotate(45deg);` 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/yLLWWzV" frameborder="no" allowtransparency="true" allowfullscreen="true">
 
