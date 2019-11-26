@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 1
-title: StrictMode – React's Santa Claus
+title: Avoiding React's Naughty List
 description: ''
 links:
   - title: React Strict Mode
