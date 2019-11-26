@@ -6,7 +6,7 @@ title: Who said cleaning can't be fun?
 image: ''
 authors: []
 ---
-<img src="https://i.imgflip.com/3hmoao.jpg" />
+<img src="https://i.imgflip.com/3hmoao.jpg" style="display:block; margin-left: auto; margin-right: auto"/>
 
 The most important part of any data science project is the data. It does not matter how fancy your algorithm is if you’re data has low quality or does not capture the relationships you are interested in. In the end it all comes down to the simple truth: “garbage in, garbage out”. Data cleaning refers to a variety of methods for improving the quality of your data. It can be a time consuming and challenging process, but the reward for properly cleaning your data can be great.
 
