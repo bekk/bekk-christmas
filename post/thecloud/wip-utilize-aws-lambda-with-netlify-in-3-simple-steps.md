@@ -9,10 +9,7 @@ ingress: >-
   Have you ever deployed a static site, but found yourself in need of an API
   endpoint? Perhaps you needed somewhere to post form data, but the thought of
   setting up your own server, manage the endpoint and write the logic seemed
-  like too much work.
-description: >-
-  Three simple steps for setting up AWS Lambda functions using Netlify and their
-  netlify-cli.
+  like too much work. Not anymore
 links:
   - title: Netlify.com
     url: 'https://www.netlify.com/'
@@ -24,7 +21,9 @@ links:
 authors:
   - Sindre Moldeklev
 ---
-I recently created a static webpage and needed an API endpoint. The page was a simple landing page, with a contact form where potential clients could reach out.The choice of hosting for the site fell on [Netlify](https://www.netlify.com/), and they just happen to have a super simple way of utilizing AWS Lambda Functions.
+That was my experience a few weeks ago when I redid my fathers webpage. The page needed to be a simple
+landing page with a contact form where potenial clients could contact him. The choice of hosting for the site
+fell on [Netlify](https://www.netlify.com/), and they just happen to have a super simple way of utilizing AWS Lambda Functions.
 
 In this post, I will show you how to setup an API endpoint for whatever your heart desires in three simple steps.
 
@@ -43,7 +42,8 @@ With `netlify-cli` installed, go ahead and make a new function with the followin
 
 `netlify functions:create <name_of_your_function>`
 
-This will trigger a prompt with a few different function templates provided by Netlify. For this demonstration I chose `hello-world`.
+This will trigger a prompt with a few different function templates provided by Netlify. For this demonstration
+I chose `hello-world`.
 
 #### 2. Write the logic
 
@@ -72,10 +72,10 @@ Using the `netlify` command, you can easily test your function locally. Just run
 
 #### 3. Deploy your function
 
-The last step we should do is make our endpoint available on the internet. This is as simple as running `git push` with your committed changes. Netlify will deploy your site and after a few seconds you will have an available API endpoint. To get to the admin panel of your site, run `netlify open` in your terminal. Your endpoint will be available at `https://<yoursitename>.netlify.com/.netlify/function/<your_function_name>`.
+The last step we should do is make our endpoint available on the internet. This is as simple as running `git push` with your committed changes. Now run `netlify open` to open the admin-UI of your site. Your endpoint will be available at `https://<yoursitename>.netlify.com/.netlify/function/<your_function_name>`
 
 ### Summary
 
-In this short post, we have seen how easy it is to get started with Netlify functions. With just a few commands using the `netlify-cli` we have created an api endpoint where we can implement your own logic easily. 
+In this short post, we have seen how easy it is to get started with Netlify functions. With just a few commands using the `netlify-cli` we have created an api endpoint where you can implement your own logic easily.
 
 Now go ahead and make something awesome!
