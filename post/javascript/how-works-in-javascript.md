@@ -17,7 +17,7 @@ links:
     url: >-
       https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 authors:
-  - Dag Frode Solberg
+  - Dag Stuan
 ---
 ## Rest parameter
 
