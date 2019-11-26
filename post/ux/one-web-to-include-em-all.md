@@ -7,11 +7,11 @@ image: ''
 ingress: >-
 
   <img class="dark-theme-image"
-  src="<https://i.ibb.co/DRBsjqq/Acessibility-for-all-dark-mode.png>" />
+  src="https://i.ibb.co/DRBsjqq/Acessibility-for-all-dark-mode.png" />
 
 
   <img class="light-theme-image"
-  src="<https://i.ibb.co/yF17bKy/Acessibility-for-all-light-mode.png>" />
+  src="https://i.ibb.co/yF17bKy/Acessibility-for-all-light-mode.png" />
 
 
 
@@ -58,9 +58,9 @@ WCAG 2.1 consists of four main principles, which contain a total of 13 guideline
 <br>
 <br>
 
-<img class="dark-theme-image" src="<https://i.ibb.co/4gnYPjR/WCAG-2-1-structure-dark-mode.png>" />
+<img class="dark-theme-image" src="https://i.ibb.co/4gnYPjR/WCAG-2-1-structure-dark-mode.png" />
 
-<img class="light-theme-image" src="<https://i.ibb.co/P6WcQ2y/WCAG-2-1-structure-light-mode.png>" />
+<img class="light-theme-image" src="https://i.ibb.co/P6WcQ2y/WCAG-2-1-structure-light-mode.png" />
 
 <br>
 <br>
