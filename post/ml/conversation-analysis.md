@@ -17,6 +17,8 @@ The machine learning universe is full of advanced, powerful and readily availabl
 
 However, during a discussion on potential use cases for NLP, we realized that a large uncertainty was the availability and capabilities of language processing resources for Norwegian. To explore this, we set out to do a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people speaking in Norwegian.
 
+![Meeting analysis output](/assets/echo_output.png "Analysis output")
+
 Our first task was transcribing the recorded speech. After evaluating several options, the [Google Speech-to-Text API](https://cloud.google.com/speech-to-text/) emerged as the best alternative, scoring as low as 7 % normalized [Levenshtein](https://itnext.io/string-similarity-the-basic-know-your-algorithms-guide-3de3d7346227) distance and 17 % [Word Error Rate](https://medium.com/descript/challenges-in-measuring-automatic-transcription-accuracy-f322bf5994f) on test samples. This corresponds well to the results of recent tests<sup>1</sup> evaluating different speech-to-text APIs in English.
 
 A key part of speech analysis is diarization – or speaker identification. As opposed to most NLP methods, this should theoretically be language indifferent. However, as Google only [supports diarization of English](https://cloud.google.com/speech-to-text/docs/supported-features-languages) (as of Nov 2019), we instead employed one of the many available Python libraries, [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis), for diarization, achieving at best 96 % accuracy in takes with different gender participants.
