@@ -88,7 +88,7 @@ Here are a couple of examples, again using Elm.
 -- can be displayed to the user, using "n/a" where we 
 -- don't have a value.
 displayNames = List.map (Maybe.withDefault "n/a") [ Just "NBN", Nothing, Just "Jinteki", Just "Wayland"]
--- Result: [ "NBN", "Jinteki", "Wayland" ]
+-- Result: [ "NBN", "n/a", "Jinteki", "Wayland" ]
 
 -- Filter a list of names to include only the people 
 -- named "John".
@@ -112,4 +112,4 @@ The more used you get to functional programming, the more places you will find w
 
 The name _currying_ is a reference to the American logician Haskell Brooks Curry. (If the name sounds familiar, that's no coincidence: Mr. Curry is quite popular among computer scientists, and has in fact _three_ languages named after him: [Haskell](https://www.haskell.org/), [Brook](http://graphics.stanford.edu/projects/brookgpu/) and [Curry](https://www-ps.informatik.uni-kiel.de/currywiki/)…)
 
-However, he was not the one to discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact attributed by Curry for doing it. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
+However, he was not the one to first discover the technique of _currying_. The Russian logician and mathematician Moses Ilyich Schönfinkel had already described the concept previously, and was in fact also attributed by Curry for doing it. So, maybe we should start to refer to it as _schönfinkelisation_ instead?
