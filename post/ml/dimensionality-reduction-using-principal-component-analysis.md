@@ -6,6 +6,8 @@ title: Dimensionality reduction using Principal Component Analysis
 links:
   - title: Principal Component Analysis Explained Visually
     url: 'http://setosa.io/ev/principal-component-analysis/'
+authors:
+  - Aryan Iranzamini
 ---
 The main idea behind dimensionality reduction techniques is to reduce the amount of features, whilst retaining as much information in the data as possible. There are many reasons for doing this, for example lower dimensions means that less computational resources are needed and it also makes it easier to visualize and interpret the data. It is therefore a must know for every data scientist.
 
@@ -13,7 +15,7 @@ Principal Component Analysis (PCA) is one of the most common dimensionality redu
 
 This might sound complicated at first, but let's look at an example.
 
-![](/assets/screenshot-2019-11-12-at-18.03.52.png "A projection of data onto a new subspace using PCA. The tool used for visualization can be found at http://setosa.io/ev/principal-component-analysis/")
+![Photo: Victor Powell](/assets/screenshot-2019-11-12-at-18.03.52.png "A projection of data onto a new subspace using PCA. The tool used for visualization can be found at http://setosa.io/ev/principal-component-analysis/")
 
 As one can see in the leftmost graph in the figure above, the data set consists of 5 points in a two-dimensional space. One can also see a green line and a red one which corresponds to the principal components of the points. The rightmost graph shows what it would look like if one were to project the points onto these principal components.
 
@@ -21,8 +23,4 @@ This might not look like something special at first glance. However if we view e
 
 This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the data.
 
-
-
-![](/assets/screenshot-2019-11-12-at-19.11.12.png)
-
-TODOOOO: Credit på bilder
+![Photo: Victor Powell](/assets/screenshot-2019-11-12-at-19.11.12.png)
