@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 5
-title: Cravings for toast
+title: A recipe for toasts
 links:
   - title: Create react app
     url: 'https://github.com/facebook/create-react-app'
@@ -24,12 +24,19 @@ I would like to clarify that we are going to build a toast notification system u
 
 ## Recipe preparation
 
-To get started one can use create-react-app (CRA) to quickly get going. More information about CRA can be found in the links below. The boilerplate code thats gets rendered can be seen as:
+To get started one can for example use create-react-app (CRA) to quickly get going. More information about CRA can be found in the links below. The boilerplate code that gets rendered is:
 
 ```
-function App() {  return(    //Boilerplate stuff  )}
+function App() {
+  return(
+    //Boilerplate stuff, everything here gets rendered
+  )
+}
 ```
 
+The goal is to make `App()` render toasts whenever needed, and for this we need two things:
 
+1. A function that returns a toast.
+2. A state where toasts can be saved and managed.
 
 TODO: skriva klart
