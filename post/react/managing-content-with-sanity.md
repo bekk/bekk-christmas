@@ -21,9 +21,11 @@ Sanity is configured in a matter of minutes. First register your account [here](
 
 > npm i -g @sanity/cli && sanity init
 
-Run through the simple guide, once completed your «backend» is configured.
+Run through the simple guide, once completed your «backend» is configured and the output should be somewhat similar to this:
 
-Bilde av oppsett
+<img 
+    src="/assets/sanity-init.png"
+    style="width: 600px; height: 600px">
 
 The directory created contains configuration for your data and the complete configuration is a set of schemas defining your data fields. The basic schema contains the following properties:
 
