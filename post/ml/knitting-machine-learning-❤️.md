@@ -36,3 +36,7 @@ The solution presented in the article employs methods such as _generative advers
 * Finally, the model, a prediction network, was trained using CNN. For reference, the entire process is visualised in the figure below. The resulting predictor, named _Img2Prog_, could now be fed an image of a pattern as input, producing the recipe for the corresponding pattern as output. Amazing!
 
 <img src="https://i.ibb.co/wgxqHzD/knit1.jpg" width=600px style="display: block; margin-left: auto; margin-right: auto;" />
+
+
+
+If you still have some Christmas gifts left to buy/make, you now know what to do. Find your favourite theme, take a picture, apply _Img2Prog_ and start knitting! Merry Knitmas :D
