@@ -2,7 +2,7 @@
 calendar: css
 post_year: 2019
 post_day: 5
-title: Gotta Select’em all
+title: Gotta Select'em all
 image: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31'
 ingress: ''
 authors:
@@ -17,11 +17,11 @@ The following table contains some cells that are easy to copy, and some that are
   (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-For the next few minutes, we shall explore how we can make all the cells with data easy to copy for most of the browsers in use today!
+For the next few minutes, we will explore how we can make all the cells with data easy to copy for most of the browsers in use today!
 
 ## User select:all;
 
-By adding some CSS to the table, we can make all the text in the cells are selectable by a sinlge click. This solution currently works for firefox and Chrome. 
+By adding some CSS to the table, we can make all the text in the cells are selectable by a single click. This solution currently works for Firefox and Chrome. 
 
 The CSS we have added to the table is:
 
@@ -31,7 +31,7 @@ table {
 }
 ```
 
-When you click on some content in an element with the style `user-select: all;`, the browser knows it shall treat all the content as one atom. This styling lets the user click anywhere in the element and get all of the text selected.
+When you click on some content in an element with the style `user-select: all;`, the browser knows it should treat all the content as one atom. This styling lets the user click anywhere in the element and get all of the text selected.
 
 Let us see how this works in practice: 
 
@@ -57,9 +57,9 @@ table td {
   (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-## Polyfill-ich
+## Polyfill-ish
 
-We now have a solution that lets chrome and firefox users understand that they can select the content of a cell, but we want to support the rest of the internet too.
+We now have a solution that lets Chrome and Firefox users understand that they can select the content of a cell, but we want to support the rest of the internet too.
 
 First, we add a class to the elements we want to be possible to select by only clicking on the element.
 
@@ -87,7 +87,7 @@ if(!CSS || CSS.suports || !CSS.supports("user-select", "all")){
   }
 }
 
-```
+`"
 
 The final result should work for most browsers. 
 
@@ -96,4 +96,4 @@ The final result should work for most browsers.
   (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-It is nice to know we can manage without adding any libraries for the smaller stuff like this :D Some CSS and a bit of JavaScript goes a long way. It is also lovely to see that a simple solution can bring a lot of value for your users, but you have to make sure they are communicated clearly!
+It is nice to know we can do a lot without having to rely on libraries :smiley: Some CSS and a bit of JavaScript goes a long way. It is also lovely to see that a simple solution can bring much value to your users, but you have to make sure they are communicated clearly!
