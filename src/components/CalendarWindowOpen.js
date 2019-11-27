@@ -45,16 +45,20 @@ const CalendarWindowOpen = ({ to, href, imageUrl, title, calendarName }) => {
     );
     if (to) {
         return (
-            <WindowOpen to={to} replace={false}>
-                {windowContent}
-            </WindowOpen>
+            <CalendarWindowWrapper>
+                <WindowOpen to={to} replace={false}>
+                    {windowContent}
+                </WindowOpen>
+            </CalendarWindowWrapper>
         );
     }
 
     return (
-        <WindowOpen as="a" href={href}>
-            {windowContent}
-        </WindowOpen>
+        <CalendarWindowWrapper>
+            <WindowOpen as="a" href={href}>
+                {windowContent}
+            </WindowOpen>
+        </CalendarWindowWrapper>
     );
 };
 
