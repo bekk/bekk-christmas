@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 3
 title: Get started with animations in React
 image: >-
-  https://images.unsplash.com/photo-1516659836501-0d5acdca89ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3426&q=80
+  https://images.unsplash.com/photo-1516659836501-0d5acdca89ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80
 ingress: >-
   Have you never been able to make that menu appear in the awesome way you've
   always wanted? Perhaps you've got lots of experience making things move with
