@@ -44,7 +44,7 @@ With a clean and noise free canvas, it is possible to highlight different elemen
 
 Let’s say your point here is the big regional variation in the market battle between company A and B, and that this should be in mind going forward with creating the new sales strategy. Taking focus away from company C and D is a good way of making it easier to understand what you are trying to convey.
 
-![]()
+![](/assets/ml_7_pic5_legend.png)
 
 You might have noticed that something more changed in this last example. To make it more than just decent looking, a tip is to stay away from the standard color palette and use some fresh colors instead!
 
@@ -69,5 +69,3 @@ To get started, you will need to get through some initial steps
 An important note is that since Plotly is in active development, remember to upgrade from time to time. 
 
 If you want to see more examples of the visualizations that are possible using Plotly, check out some of the links below.
-
-their blog post from March of the release of their new library Python.Express or go straight to plot.ly/python.
