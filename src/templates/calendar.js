@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 
@@ -12,6 +12,7 @@ import * as mediaQueries from '../constants/media-queries';
 import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
+import { RelatedCalendars } from '../components/RelatedCalendars';
 
 const CalendarWindowDescription = styled.p`
     text-decoration: underline;
@@ -101,6 +102,7 @@ const Template = ({ data, pageContext }) => {
                     </li>
                 ))}
             </Calendar>
+            <RelatedCalendars paths={pageContext.relatedCalendarPaths} />
         </Layout>
     );
 };
