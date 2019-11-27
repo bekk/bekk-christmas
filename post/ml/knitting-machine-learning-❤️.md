@@ -32,13 +32,9 @@ The solution presented in the article employs methods such as _generative advers
 ![Knitting language](https://i.ibb.co/THbgRB8/knit0.png)
 
 * First, a knitting language is defined, describing knitting patterns. This knitting language consists of 17 operations, and is possibly recognisable by knitting enthusiasts. Here we find operations such as **k**nit, **p**url, **t**uck, and **m**iss to name a few. The rest of the operations are listed in the figure above.
-
-
-
 * Second, we need training data. For this particular case, the training data consisted of several pictures of patterned clothing. However, after collecting over 2,000 real photographs of patterns from clothing and textiles, the authors realised they had to resort to artificial data. In combination with real data, artificial data plays a strong role in data science and machine learning, and is both quick and inexpensive to produce. To overcome the current challenge, the real data was melded with the synthetic images, to create regularised synthetic images of knitting patterns, using GAN. This way there was a consistency between the real and artificial data. 
-
-
-
 * Finally, the model, a prediction network, was trained using CNN. For reference, the entire process is visualised in the figure below. The resulting predictor, named _Img2Prog_, could now be fed an image of a pattern as input, producing the recipe for the corresponding pattern as output. Amazing!
 
-![Neural inverse knitting pipeline](https://i.ibb.co/wgxqHzD/knit1.jpg)
+<img src="https://i.ibb.co/wgxqHzD/knit1.jpg" width=600px display="block" margin-left="auto" margin-right="auto" />
+
+<img src="https://i.ibb.co/wgxqHzD/knit1.jpg" width=600px align="middle" />
