@@ -3,6 +3,8 @@ calendar: ml
 post_year: 2019
 post_day: 13
 title: Dimensionality reduction using Principal Component Analysis
+image: >-
+  https://images.unsplash.com/photo-1518252283669-e5cbf7cd40af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 links:
   - title: Principal Component Analysis Explained Visually
     url: 'http://setosa.io/ev/principal-component-analysis/'
