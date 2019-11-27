@@ -13,6 +13,8 @@ links:
   - title: DQN
     url: >-
       https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning
+authors:
+  - Tharald Jørgen Stray
 ---
 Machine learning is often divided into three categories: supervised learning, unsupervised learning, and reinforcement learning.
 
