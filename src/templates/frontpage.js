@@ -2,37 +2,70 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import * as mediaQueries from '../constants/media-queries';
 
 import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
-import { getWindowImagePlaceholder } from '../utils';
+import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
 import Preview from './Preview';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 
 const Header = styled.h1`
-    font-size: 2em;
+    font-size: 5.625em;
     font-weight: 400;
 `;
 
 const Description = styled.div`
-    margin-left: 50px;
+    margin-left: 0;
     margin-bottom: 150px;
-    max-width: 350px;
-    font-size: 22px;
+    max-width: 700px;
+
+    p {
+        font-size: 2em;
+        ${mediaQueries.smallUp}  {
+            font-size: 2.8em;
+        }
+    }
+
+    ${mediaQueries.smallUp}  {
+        margin-left: 50px;
+    }
 `;
 
 const DailyWindowHeader = styled.h2`
-    font-family: FFDINWebProLight, sans-serif;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 3em;
+`;
+
+const CalendarWindowDescription = styled.div`
+    h3 {
+        font-family: DINW01Regular, sans-serif;
+        font-size: 1.875em;
+        font-weight: 400;
+        margin: 15px 0;
+
+        ${mediaQueries.mediumUp}  {
+            margin: 20px 0;
+        }
+    }
+
+    p {
+        text-decoration: underline;
+        font-size: 1.5em;
+        line-height: 140%;
+        margin: 0 0 15px;
+
+        ${mediaQueries.mediumUp}  {
+            margin: 0 0 20px;
+        }
+    }
 `;
 
 const Frontpage = ({ data, pageContext }) => {
     const calendars = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter);
-
     const showTeaser = calendars.length === 0;
 
     if (showTeaser) {
@@ -82,7 +115,12 @@ const Frontpage = ({ data, pageContext }) => {
                                 calendar.calendar,
                                 calendar.post_day
                             )}
-                            title={calendar.calendar}
+                            title={
+                                <CalendarWindowDescription>
+                                    <h3>{mapCalendarToName(calendar.calendar)}</h3>
+                                    <p>{calendar.title}</p>
+                                </CalendarWindowDescription>
+                            }
                         />
                     </li>
                 ))}

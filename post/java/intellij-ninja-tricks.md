@@ -12,13 +12,13 @@ ingress: >-
 authors:
   - Ketil S. Velle
 ---
-First and foremost, learning some **_keyboard shortcuts_** will yield great awards. And the good thing in IntelliJ is that to start off you only need one: `CMD + SHIFT + A`**\*.** This keyboard shortcut of shortcuts gives you access to all possible actions within IntelliJ, and their corresponding keyboard shortcut!
+First and foremost, learning some _**keyboard shortcuts**_ will yield great awards. And the good thing in IntelliJ is that to start off you only need one: `CMD + SHIFT + A` (find actions)**\*.** This keyboard shortcut of shortcuts gives you access to all possible actions within IntelliJ, and their corresponding keyboard shortcut!
 
-The second thing I love to use in IntelliJ is **_Scratch files_** (`CTRL + SHIFT + N`) . I use these as temporary notes or, after choosing a fitting extension, as a quick way to prettify the json or xml structure I want to look at. These files will not be saved as part of your project, and will disappear as you close them. This way you do not have to worry that they end up in your git-repository by mistake.
+The second thing I love to use in IntelliJ is _**Scratch files**_ (`CTRL + SHIFT + N`) . I use these as temporary notes or, after choosing a fitting extension, as a quick way to prettify the json or xml structure I want to look at. These files will not be saved as part of your project, and will disappear as you close them. This way you do not have to worry that they end up in your git-repository by mistake.
 
-My third ninja-trick is concerned with debugging. If you have to test a branch of your code, and want a specific method to return a certain value you can set a breakpoint and use an action called **_Force return_**. Using the all actions from my first tip, this is easy to find. Great for those nutty corner cases!
+My third ninja-trick is concerned with debugging. If you have to test a branch of your code, and want a specific method to return a certain value you can set a breakpoint and use an action called _**Force return**_. Using the find actions from my first tip, this is easy to find. Great for those nutty corner cases!
 
-Lastly I want to recommend some great **_plugins_** that exists in the marketplace:
+Lastly I want to recommend some great _**plugins**_ that exists in the marketplace:
 
 * Presentation Assistant: Every shortcut you use is shown in a green line at the bottom of the screen - great for pair programming and learning each other new shortcuts!
 * Key Promoter X: Helps you to learn keyboard shortcuts for all the things you are using your mouse to do. It tracks what you use keyboard shortcuts to do and what you are missing out on.
@@ -29,5 +29,5 @@ These are my four ninja tricks to get the most out of IntelliJ - what are yours?
 
 - - -
 
-**\*** Keep in mind that the default keyboard shortcuts may vary from Mac, Linux and Windows. Check them out in the Keymap reference in IntelliJ (Also easily available in all actions) or online here:
+**\*** Keep in mind that the default keyboard shortcuts may vary from Mac, Linux and Windows. Check them out in the Keymap reference in IntelliJ (Also easily available in find actions) or online here:
 <https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html>

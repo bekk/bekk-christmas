@@ -16,6 +16,7 @@ const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
 
 const MaxWidth = styled.article`
+    max-width: 1258px;
     margin: 32px auto;
 `;
 
@@ -27,7 +28,7 @@ const HeroImage = styled.img`
 `;
 
 const Ingress = styled.section`
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: DINW01Regular, sans-serif;
 
     max-width: 759px;
@@ -45,7 +46,7 @@ const RelevantLinksContainer = styled.section(
 );
 
 const TitleContainer = styled.h1`
-    font-size: 48px;
+    font-size: 3em;
     margin-top: 0;
     text-align: center;
 `;

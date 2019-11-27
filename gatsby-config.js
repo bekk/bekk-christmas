@@ -50,8 +50,13 @@ module.exports = {
         },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: 'UA-153443114-1',
+            },
+        },
         `gatsby-plugin-netlify`,
-        /* Your site config here */
         ...calendarPlugins,
     ],
 };

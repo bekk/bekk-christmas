@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+import * as mediaQueries from '../constants/media-queries';
 import { mapCalendarToName } from '../utils';
 import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
@@ -26,14 +27,19 @@ const Container = styled.div(
 const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
-    max-width: 1258px;
-    padding: 30px;
+    max-width: 1600px;
+    padding: 20px;
     margin: 0 auto;
+
 
     .wide-image {
         width: 100%;
         height: 400px;
         object-fit: cover;
+    }
+
+    ${mediaQueries.smallUp}  {
+        padding: 30px;
     }
 `;
 
@@ -41,9 +47,10 @@ const Header = styled.header`
     margin: 50px 20px;
 `;
 
-const CalendarName = styled.div`
+const CalendarName = styled.h1`
     margin-left: 16px;
-    font-size: 40px;
+    font-size: 2.5em;
+    font-weight: 400;
 `;
 
 const StyledLink = styled(Link)`
@@ -69,7 +76,7 @@ const Layout = ({ calendarName, children }) => {
                     <Header>
                         <StyledLink to="/">
                             <Tre />
-                            <CalendarName>{calendarTitle}</CalendarName>
+                            <CalendarName>{calendarTitle} Christmas</CalendarName>
                         </StyledLink>
                     </Header>
                 )}

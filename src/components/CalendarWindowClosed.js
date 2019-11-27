@@ -6,7 +6,7 @@ const Number = styled.span(
     color: ${theme.textColor};
     margin: 0;
     padding: 0;
-    font-size: 48px;
+    font-size: 3em;
 `
 );
 

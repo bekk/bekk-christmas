@@ -52,7 +52,7 @@ For the remainder of this article, I will focus on the visualization library Plo
 
 Let’s see how our graph above could look like
 
-<Insert graph>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~thereselied/70.embed"></iframe>
 
 This one is quite similar to the one above, except the fact that it is interactive, but the opportunities go way beyond this if you really start exploring. Basic charts, statistical graphs, heatmaps, financial charts and different map charts are all part of the library. You can even make animated graphs, just like Hans Rosling’s famous animated Gapminder bubblecharts.
 
