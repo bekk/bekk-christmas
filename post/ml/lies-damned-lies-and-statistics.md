@@ -18,6 +18,8 @@ links:
     url: 'https://www.bbc.com/news/magazine-28166019'
   - title: Bayes' probability
     url: 'http://pi.math.cornell.edu/~mec/2008-2009/TianyiZheng/Bayes.html'
+authors:
+  - Kjartan Berge Steinshamn
 ---
 Statistics are the foundation for machine learning algorithms. In a world where we are bombarded by apparently conceivable statistics, being able to see through the faults that some of the facts and figures that statistics represent is more essential than ever.
 
