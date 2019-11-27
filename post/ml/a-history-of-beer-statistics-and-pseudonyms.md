@@ -33,7 +33,7 @@ At the time Gosset published his findings under the pseudonym “student” in o
 
 
 
-\###The t-test
+###The t-test
 
 There are many variations of the T-test, depending, depending on the specific scenario your using it for, and if it’s a one-tailed or two tailed test. The following formula is for comparing two means to see if they are different from each other. Here it is assumed that the variance of the two datasets are similar.
 
