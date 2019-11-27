@@ -10,7 +10,9 @@ import ArticleBody from '../components/ArticleBody';
 import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
 import PrismThemer from '../components/PrismThemer';
-import { setImageWidth } from '../utils';
+import Calendar from '../components/Calendar';
+import { setImageWidth, getWindowImagePlaceholder } from '../utils';
+import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
 const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
@@ -56,6 +58,15 @@ const Template = ({ data }) => {
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const { calendar, description, title, ingress, image, links } = frontmatter;
 
+    const firstFourLinks = links != null && links.slice(0, 4);
+    const uniqueLinkImageNumbers = [];
+    while (uniqueLinkImageNumbers.length < 4) {
+        const max = 14;
+        var randomNumber = Math.floor(Math.random() * Math.floor(max)) + 1;
+        if (uniqueLinkImageNumbers.indexOf(randomNumber) === -1) {
+            uniqueLinkImageNumbers.push(randomNumber);
+        }
+    }
     const ingressHtml =
         remark()
             .use(recommended)
@@ -94,14 +105,23 @@ const Template = ({ data }) => {
                         <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
                 </PrismThemer>
-                {links && links.length > 0 && (
+                {firstFourLinks && firstFourLinks.length > 0 && (
                     <RelevantLinksContainer>
                         <h2>Relevant links</h2>
-                        {links.map(link => (
-                            <a key={link.url} href={link.url}>
-                                {link.title}
-                            </a>
-                        ))}
+                        <Calendar>
+                            {firstFourLinks.map((link, index) => (
+                                <li key={link.url}>
+                                    <CalendarWindowOpen
+                                        title={link.title}
+                                        href={link.url}
+                                        imageUrl={getWindowImagePlaceholder(
+                                            frontmatter.calendar,
+                                            uniqueLinkImageNumbers[index]
+                                        )}
+                                    />
+                                </li>
+                            ))}
+                        </Calendar>
                     </RelevantLinksContainer>
                 )}
             </MaxWidth>

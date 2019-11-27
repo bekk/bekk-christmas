@@ -8,22 +8,11 @@ import CalendarWindowClosed from '../components/CalendarWindowClosed';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
 
-import * as mediaQueries from '../constants/media-queries';
 import { getWindowImagePlaceholder, mapCalendarToName, getCalendarPostLink } from '../utils';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 import { RelatedCalendars } from '../components/RelatedCalendars';
 
-const CalendarWindowDescription = styled.p`
-    text-decoration: underline;
-    font-size: 1.5em;
-    line-height: 140%;
-    margin: 0 0 15px;
-
-    ${mediaQueries.mediumUp}  {
-        margin: 0 0 20px;
-    }
-`;
 const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
@@ -66,21 +55,29 @@ const Template = ({ data, pageContext }) => {
                     <li key={calendarWindow.title || index}>
                         {calendarWindow.title ? (
                             <CalendarWindowOpen
-                                link={getCalendarPostLink(
-                                    pageContext.isPreview,
-                                    pageContext.calendar,
-                                    pageContext.year,
-                                    calendarWindow.day
-                                )}
+                                to={
+                                    pageContext.isPreview &&
+                                    getCalendarPostLink(
+                                        pageContext.isPreview,
+                                        pageContext.calendar,
+                                        pageContext.year,
+                                        calendarWindow.day
+                                    )
+                                }
+                                href={
+                                    !pageContext.isPreview &&
+                                    getCalendarPostLink(
+                                        pageContext.isPreview,
+                                        pageContext.calendar,
+                                        pageContext.year,
+                                        calendarWindow.day
+                                    )
+                                }
                                 imageUrl={getWindowImagePlaceholder(
                                     pageContext.calendar,
                                     calendarWindow.day
                                 )}
-                                title={
-                                    <CalendarWindowDescription>
-                                        {calendarWindow.title}
-                                    </CalendarWindowDescription>
-                                }
+                                title={calendarWindow.title}
                             />
                         ) : (
                             <CalendarWindowClosed day={index + 1} />

@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
-import { getWindowImagePlaceholder, mapCalendarToName, getCalendarPostLink } from '../utils';
+import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import Preview from './Preview';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
@@ -38,30 +38,6 @@ const Description = styled.div`
 const DailyWindowHeader = styled.h2`
     font-weight: 400;
     font-size: 3em;
-`;
-
-const CalendarWindowDescription = styled.div`
-    h3 {
-        font-family: DINW01Regular, sans-serif;
-        font-size: 1.875em;
-        font-weight: 400;
-        margin: 15px 0;
-
-        ${mediaQueries.mediumUp}  {
-            margin: 20px 0;
-        }
-    }
-
-    p {
-        text-decoration: underline;
-        font-size: 1.5em;
-        line-height: 140%;
-        margin: 0 0 15px;
-
-        ${mediaQueries.mediumUp}  {
-            margin: 0 0 20px;
-        }
-    }
 `;
 
 const Frontpage = ({ data, pageContext }) => {
@@ -110,22 +86,30 @@ const Frontpage = ({ data, pageContext }) => {
                 {calendars.map(calendar => (
                     <li key={calendar.calendar}>
                         <CalendarWindowOpen
-                            link={getCalendarPostLink(
-                                pageContext.isPreview,
-                                calendar.calendar,
-                                calendar.post_year,
-                                calendar.post_day
-                            )}
+                            to={
+                                pageContext.isPreview &&
+                                getCalendarPostLink(
+                                    pageContext.isPreview,
+                                    calendar.calendar,
+                                    calendar.post_year,
+                                    calendar.post_day
+                                )
+                            }
+                            href={
+                                !pageContext.isPreview &&
+                                getCalendarPostLink(
+                                    pageContext.isPreview,
+                                    pageContext.calendar,
+                                    pageContext.year,
+                                    calendarWindow.day
+                                )
+                            }
                             imageUrl={getWindowImagePlaceholder(
                                 calendar.calendar,
                                 calendar.post_day
                             )}
-                            title={
-                                <CalendarWindowDescription>
-                                    <h3>{mapCalendarToName(calendar.calendar)}</h3>
-                                    <p>{calendar.title}</p>
-                                </CalendarWindowDescription>
-                            }
+                            calendarName={calendar.calendar}
+                            title={calendar.title}
                         />
                     </li>
                 ))}
