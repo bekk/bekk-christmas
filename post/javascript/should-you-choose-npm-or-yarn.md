@@ -19,7 +19,7 @@ authors:
 
 To understand why this is an interesting decision to make in the first place, we need to have a look at the history of package management in javascript.
 
-* Pre `npm`: frontend dependencies are downloaded manually and stored into the repositories 📁
+- Pre `npm`: frontend dependencies are downloaded manually and stored into the repositories 📁
 * 2010: `npm` is released and supports `nodejs` 📦
 * 2012: `npm` usage is dramatically increasing - primarily due to `Browserifys` browser support 🎉
 * 2012: `npm` get a competitor, `bower`, that entirely supports browsers 💻
