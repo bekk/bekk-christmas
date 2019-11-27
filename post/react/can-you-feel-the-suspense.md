@@ -19,15 +19,15 @@ Suspense lets you delay the rendering of parts of the application tree until a c
 
 ## Code splitting
 
-Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or chunk. This is a good place to start as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. It can also be at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
+Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or chunk. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. It can also be at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
 
 ### Optimize all the codes
 
-As your application gets bigger, with code and features, your loading time will increase as well. Especially if you include multiple third-party libraries. The user today, is expecting fast loading application with minimum loading time. According to studies on behaviours on the web show that «if a website loads longer than 3 seconds, 53% of mobile users abandon such sites». This is where Suspense and code splitting comes to into play. When you have divided your application code into chunks, you can reduce the initial loading time of your application by only loading the chunk necessary for the initial render. When the user navigates in your application the rest of the chunks can be loaded as needed. 
+As your application gets bigger, with code and features, your loading time will increase as well. Especially if you include multiple third-party libraries. The user today, is expecting fast applications with minimum loading time. According to studies on behaviours on the web show that «if a website loads longer than 3 seconds, 53% of mobile users abandon such sites». This is where Suspense and code splitting comes to into play. When you have divided your application code into chunks, you can reduce the initial loading time of your application by only loading the chunk necessary for the initial render. When the user navigates in your application the rest of the chunks can be loaded as needed. 
 
 ### Code splitting With Suspense
 
-Lets take a closer look: 
+Code splitting is a feature supported by your bundler, like Webpack or Parcel. However, your code facilitates the actual import and use of these chunks. In React 16.6, Suspense for code splitting was released, and it makes code splitting easy. Suspense handles the loading state of the chunks and let’s your application render a fallback component until the chunk is ready to render. The actual import of these chunks is done by React.Lazy and dynamic imports. Let’s take a closer look how this is done:
 
 ```js
 const ChristmasAlbum = React.lazy(() => import('./ChristmasAlbum'))
