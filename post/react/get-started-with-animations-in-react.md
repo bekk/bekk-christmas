@@ -19,34 +19,34 @@ There are several approaches on how to make things move in a React app, and Fram
 ## Example 1
 
 <iframe
-  src="https://codesandbox.io/embed/example-1-simple-hover-3uf4x?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=0"
+  src="https://codesandbox.io/embed/example-1-simple-hover-3uf4x?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 ></iframe>
 
 ## Example 2
 
 <iframe
-  src="https://codesandbox.io/embed/amazing-robinson-zokwh?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=0"
+  src="https://codesandbox.io/embed/amazing-robinson-zokwh?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 ></iframe>
 
 ## Example 3
 
 <iframe
-  src="https://codesandbox.io/embed/example-3-simple-drag-9tin5?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=0"
+  src="https://codesandbox.io/embed/example-3-simple-drag-9tin5?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 ></iframe>
 
 ## Example 4
 
 <iframe
-  src="https://codesandbox.io/embed/example-4-drag-with-motionvalue-s55j7?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=0"
+  src="https://codesandbox.io/embed/example-4-drag-with-motionvalue-s55j7?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 ></iframe>
 
 ## Example 5
 
 <iframe
-  src="https://codesandbox.io/embed/example-5-menu-1kqgp?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=0"
+  src="https://codesandbox.io/embed/example-5-menu-1kqgp?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 ></iframe>
