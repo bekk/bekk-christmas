@@ -84,7 +84,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendarPath = '/';
             }
 
-            // Only create page for each calendar once
+            // Add each unique calendar path to the `calendars` object.
+            // We'll create the actual calendar pages below
             calendars[calendarPath] = {
                 year: post_year,
                 calendar: calendar,
