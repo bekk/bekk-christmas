@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CalendarWindowWrapper from './CalendarWindowWrapper';
 
 const Number = styled.span(
     ({ theme }) => `
@@ -25,13 +26,13 @@ const WindowClosed = styled.div(
 `
 );
 
-const CalendarWindowClosed = ({ day, ...rest }) => {
+const CalendarWindowClosed = ({ day }) => {
     return (
-        <div>
+        <CalendarWindowWrapper>
             <WindowClosed aria-label={`Day ${day} is not yet available`}>
                 <Number>{day}</Number>
             </WindowClosed>
-        </div>
+        </CalendarWindowWrapper>
     );
 };
 

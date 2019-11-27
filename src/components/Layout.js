@@ -28,9 +28,8 @@ const MainContent = styled(MainContentWrapper)`
     flex: 1;
     width: 100%;
     max-width: 1600px;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
-
 
     .wide-image {
         width: 100%;
@@ -38,8 +37,8 @@ const MainContent = styled(MainContentWrapper)`
         object-fit: cover;
     }
 
-    ${mediaQueries.smallUp}  {
-        padding: 30px;
+    ${mediaQueries.mediumUp}  {
+        padding: 15px;
     }
 `;
 

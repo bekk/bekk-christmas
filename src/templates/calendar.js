@@ -32,7 +32,7 @@ const Template = ({ data, pageContext }) => {
         };
     });
 
-    const calendarName = `${mapCalendarToName(pageContext.calender)} Christmas`;
+    const calendarName = `${mapCalendarToName(pageContext.calendar)} Christmas`;
 
     return (
         <Layout calendarName={pageContext.calendar}>
