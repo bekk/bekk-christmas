@@ -24,6 +24,8 @@ First things first, every decent looking graph should build on these three princ
 
 1. Choose the right graph (shouldn't come as a surprise to anyone...)
 
+Let's have a look at this graph. What point can you draw from it?
+
 ![](/assets/ml_7_pic1.png)
 
 To communicate effectively, choosing the right graph is important. The right graph is therefore highly dependent on which point you want to make. Do you want to point out the difference in market shares between the companies? That company B is the leader in Region North? That the competition between A and B seems hard in Region East? Or that the difference in market share in favor of A over B in Region South is huge? Choosing a line graph instead will let us see the overall picture of the market more clearly.
@@ -34,7 +36,7 @@ To communicate effectively, choosing the right graph is important. The right gra
 
 After you have chosen the right graph, it’s time to remove the noise. Throw the gridlines out, away with unnecessary decimals and markers and avoid long variable names on the x-axis. Add a title, axis labels and place the legend preferably to the right (if you need a legend). If possible, try to make it as clean as possible to enable your recipient to receive your message loud and clear.
 
-![](/assets/ml_7_pic3.png)
+![](/assets/ml_7_pic4_legend.png)
 
 3. Focus your audience’ attention
 
@@ -42,7 +44,7 @@ With a clean and noise free canvas, it is possible to highlight different elemen
 
 Let’s say your point here is the big regional variation in the market battle between company A and B, and that this should be in mind going forward with creating the new sales strategy. Taking focus away from company C and D is a good way of making it easier to understand what you are trying to convey.
 
-![](/assets/ml_7_pic4.png)
+![]()
 
 You might have noticed that something more changed in this last example. To make it more than just decent looking, a tip is to stay away from the standard color palette and use some fresh colors instead!
 
@@ -52,7 +54,7 @@ For the remainder of this article, I will focus on the visualization library Plo
 
 Let’s see how our graph above could look like
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~thereselied/70.embed"></iframe>
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~thereselied/70.embed"></iframe>
 
 This one is quite similar to the one above, except the fact that it is interactive, but the opportunities go way beyond this if you really start exploring. Basic charts, statistical graphs, heatmaps, financial charts and different map charts are all part of the library. You can even make animated graphs, just like Hans Rosling’s famous animated Gapminder bubblecharts.
 
