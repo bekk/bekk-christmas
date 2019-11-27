@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
-import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
+import { getWindowImagePlaceholder, mapCalendarToName, getCalendarPostLink } from '../utils';
 import Preview from './Preview';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
@@ -110,7 +110,12 @@ const Frontpage = ({ data, pageContext }) => {
                 {calendars.map(calendar => (
                     <li key={calendar.calendar}>
                         <CalendarWindowOpen
-                            link={`/${calendar.calendar}/${calendar.post_year}/${calendar.post_day}`}
+                            link={getCalendarPostLink(
+                                pageContext.isPreview,
+                                calendar.calendar,
+                                calendar.post_year,
+                                calendar.post_day
+                            )}
                             imageUrl={getWindowImagePlaceholder(
                                 calendar.calendar,
                                 calendar.post_day

@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 
@@ -9,7 +9,7 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
 
 import * as mediaQueries from '../constants/media-queries';
-import { getWindowImagePlaceholder, mapCalendarToName } from '../utils';
+import { getWindowImagePlaceholder, mapCalendarToName, getCalendarPostLink } from '../utils';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 import { RelatedCalendars } from '../components/RelatedCalendars';
@@ -24,20 +24,6 @@ const CalendarWindowDescription = styled.p`
         margin: 0 0 20px;
     }
 `;
-const createLink = (includeCalendarInPath, calendar, year, day) => {
-    let link = '';
-
-    if (includeCalendarInPath) {
-        link += `/${calendar}`;
-    }
-
-    if (!day) {
-        return year === 2019 ? link : `${link}/${year}`;
-    }
-
-    return `${link}/${year}/${day}`;
-};
-
 const Template = ({ data, pageContext }) => {
     const { allMarkdownRemark } = data;
     const { nodes } = allMarkdownRemark;
@@ -80,8 +66,8 @@ const Template = ({ data, pageContext }) => {
                     <li key={calendarWindow.title || index}>
                         {calendarWindow.title ? (
                             <CalendarWindowOpen
-                                link={createLink(
-                                    pageContext.includeCalendarInPath,
+                                link={getCalendarPostLink(
+                                    pageContext.isPreview,
                                     pageContext.calendar,
                                     pageContext.year,
                                     calendarWindow.day

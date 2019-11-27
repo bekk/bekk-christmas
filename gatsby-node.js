@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 year: post_year,
                 calendar: calendar,
                 hideWindowsAfterDay: hideWindowsAfterDay,
-                includeCalendarInPath: isPreview,
+                isPreview,
             };
             calendarsWithContent.add(calendarPath);
         });
@@ -151,6 +151,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 calendarsWithContent: Array.from(calendarsWithContent),
                 day: currentFrontpageDay,
                 year: 2019,
+                isPreview,
             },
         });
     }
