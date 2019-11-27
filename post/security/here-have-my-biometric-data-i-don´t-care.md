@@ -8,7 +8,7 @@ ingress: "Some grocery stores in Norway use fingerprints for verifying the users
 authors:
   - Didrik Sæther
 ---
-Every week we read about a new breach of personal information. Strong, unique passwords have become a necessity because the companies we trust keep losing them all the time. In contrast to the way mobile devices use biometrics for faster access to a phone, some retail stores in Norway has found a refreshing new way to use fingerprints as identification.  
+Every week we read about a new breach of personal information. Strong, unique passwords have become a necessity because the companies we trust with our information keep losing them all the time. In contrast to the way mobile devices use biometrics for faster access to a phone, some retail stores in Norway has found a refreshing new way to use fingerprints as identification.  
 
 In Norway the self-checkout option at grocery stores are favoured by the younger generation, often seen in a rush, and not buying more than a few things. But when buying items restricted by age, such as alcohol, non-prescription drugs, and tobacco there is a need for verification of the customers age.  
 
