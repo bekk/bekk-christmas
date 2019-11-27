@@ -10,9 +10,9 @@ ingress: >-
   matter how fancy your algorithm is if your data has low quality or does not
   capture the relationships you are interested in. In the end it all comes down
   to the simple truth: “garbage in, garbage out”. Data cleaning refers to a
-  variety of methods for improving the quality of your data. It can be a time
-  consuming and challenging process, but the reward for properly cleaning your
-  data can be great.
+  variety of methods for improving data quality. It can be a time consuming and
+  challenging process, but the reward for properly cleaning your data can be
+  great.
 authors:
   - Michael Nordmo
 ---
