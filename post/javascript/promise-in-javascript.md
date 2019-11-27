@@ -37,15 +37,15 @@ console.log(friendsPromise);
 ```
 In this case the promise would be resolved right away to 'My friend keeps his word'. Simple right?
 
-<img width="370" alt="Screenshot 2019-11-23 at 10 33 48" src="https://user-images.githubusercontent.com/10636373/69476727-880d7580-0dd5-11ea-8c2e-b93bf0b12b20.png" alt="Resolved state from console">
+![Resolve state from console](https://user-images.githubusercontent.com/10636373/69740598-8c1cf880-1131-11ea-8ff9-2518deb12d81.png)
 
 Additionally, a promise can have two other states. The pending state for this promise would look like this:
 
-<img width="370" alt="Screenshot 2019-11-23 at 10 53 02" src="https://user-images.githubusercontent.com/10636373/69476859-159d9500-0dd7-11ea-9b31-5575f974230a.png" alt="Pending state from console">
+![Pending state from console](https://user-images.githubusercontent.com/10636373/69741007-33019480-1132-11ea-8a1c-5801ea65665f.png)
 
 While the rejected state would look like this:
 
-<img width="370" alt="Screenshot 2019-11-23 at 10 55 47" src="https://user-images.githubusercontent.com/10636373/69476896-7cbb4980-0dd7-11ea-8c9e-565eaff258e4.png" alt="Rejected state from console">
+![Rejected state from console](https://user-images.githubusercontent.com/10636373/69740766-d4d4b180-1131-11ea-9819-7f3605963b58.png)
 
 ### Prototypes
 
