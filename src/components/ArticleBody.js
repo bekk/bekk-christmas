@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import * as fonts from '../constants/fonts';
 
 const ArticleBody = styled.article(
     ({ theme }) => `
@@ -20,7 +19,6 @@ const ArticleBody = styled.article(
     h4,
     h5,
     h6 {
-        font-family: ${fonts.sansSerifFont};
         font-weight: 300;
     }
     h2 {

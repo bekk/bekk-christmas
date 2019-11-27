@@ -6,9 +6,18 @@ const WindowOpen = styled(Link)`
     text-decoration: none;
 `;
 
-const CalendarWindowOpen = ({ link, imageUrl, title }) => {
+const CalendarWindowOpen = ({ isPreview, link, imageUrl, title }) => {
+    if (isPreview) {
+        return (
+            <WindowOpen to={link} replace={false}>
+                <img src={imageUrl} alt="" />
+                {title}
+            </WindowOpen>
+        );
+    }
+
     return (
-        <WindowOpen to={link} replace={false}>
+        <WindowOpen as="a" href={link}>
             <img src={imageUrl} alt="" />
             {title}
         </WindowOpen>

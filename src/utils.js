@@ -80,3 +80,19 @@ export const mapCalendarToName = calendar => {
             return null;
     }
 };
+
+export const getCalendarPostLink = (isPreview, calendar, year, day) => {
+    let link = '';
+
+    if (isPreview) {
+        link = `/${calendar}`;
+    } else {
+        link = `https://${calendar}.christmas`;
+    }
+
+    if (!day) {
+        return year === 2019 ? link : `${link}/${year}`;
+    }
+
+    return `${link}/${year}/${day}`;
+};
