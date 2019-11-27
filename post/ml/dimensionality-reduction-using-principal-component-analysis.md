@@ -5,9 +5,12 @@ post_day: 13
 title: Dimensionality reduction using Principal Component Analysis
 image: >-
   https://images.unsplash.com/photo-1518252283669-e5cbf7cd40af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
+description: ''
 links:
   - title: Principal Component Analysis Explained Visually
     url: 'http://setosa.io/ev/principal-component-analysis/'
+  - title: Principal Component Analysis (Wikipedia)
+    url: 'https://en.wikipedia.org/wiki/Principal_component_analysis'
 authors:
   - Aryan Iranzamini
 ---
