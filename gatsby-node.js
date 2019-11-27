@@ -97,6 +97,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
         // create calendar pages for all unique calendar years
         Object.entries(calendars).forEach(([calendarPath, context]) => {
+            // First, we get the paths of calendar years that has the same name
+            // but a different year. For React, for example, we get /2018 and
+            // /2017 when we're building this year's React calendar. For UX,
+            // we don't get anything, because they only have a single year of
+            // content (well, so far).
             const relatedCalendarPaths = Array.from(
                 new Set(
                     posts
@@ -113,6 +118,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                         })
                 )
             );
+            // Finally, we call `createPage` to create the actual calendar page
             createPage({
                 path: calendarPath,
                 component: calendarTemplate,
