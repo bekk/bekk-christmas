@@ -86,7 +86,7 @@ const Template = ({ data }) => {
                         calendar={calendar}
                     />
                 )}
-                <HeroImage src={heroImage} alt="" />
+                {image && <HeroImage src={heroImage} alt="" />}
 
                 <PrismThemer>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
