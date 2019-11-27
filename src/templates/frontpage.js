@@ -22,6 +22,7 @@ const Description = styled.div`
     margin-left: 0;
     margin-bottom: 150px;
     max-width: 700px;
+    padding-left: 10px;
 
     p {
         font-size: 2em;
@@ -38,6 +39,11 @@ const Description = styled.div`
 const DailyWindowHeader = styled.h2`
     font-weight: 400;
     font-size: 3em;
+    padding-left: 10px;
+
+    ${mediaQueries.mediumUp}  {
+        padding-left: 15px;
+    }
 `;
 
 const CalendarWindowDescription = styled.div`
