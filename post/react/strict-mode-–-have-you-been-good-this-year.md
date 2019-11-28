@@ -19,15 +19,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem. In lacinia leo pellentesque lectus malesuada, et volutpat odio egestas. Curabitur nec ipsum eu lectus ultrices ultricies quis in nisi. Nulla sapien diam, imperdiet non eleifend nec, ornare rutrum ex.
 ## How to use StrictMode?
 
-Using Strict Mode is amazingly easy: all you have to do is to wrap whatever you want to use Strict Mode on inside `<React.StrictMode />`. This can be your entire `<App />` or just a single component.
+Using StrictMode is amazingly easy: all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
 
 ```js 
-ReactDOM.render(
+<React.StrictMode>
+  <App>
+    <Component 1 />
+    <Component 2 />
+  </App>
+</React.StrictMode>
+```
+
+Or just a single component:
+
+```js 
+<App>
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-)
+    <Component 1 />
+  </React.StrictMode>
+  <Component 2 />
+</App>
 ```
 
 <iframe
