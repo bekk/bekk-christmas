@@ -6,8 +6,8 @@ title: The world premier of UX.christmas
 image: ''
 ingress: >-
   Tada. With this post, I declare UX.christmas hereby launched. Welcome to the
-  world’s first UX advent calendar from Bekk – 24 articles from 24 Bekkers, one
-  for each of the 24 days until Christmas.
+  world’s first UX advent calendar from Bekk – 24 articles from 24 Bekkers and a
+  rant about roles and tunnel vision.
 links:
   - title: Make your own «Pseudo Design Titles»
     url: 'https://designtitles.com/'
