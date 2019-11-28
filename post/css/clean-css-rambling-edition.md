@@ -45,4 +45,4 @@ Speaking of knowing what you are doing: Please don't just try adding some proper
 
 ## In conclusion
 
-That was my general tips/rants/ramblings about CSS. I hope you learned something. Follow along tomorrow for some more nitty-gritty  tips with code examples.
+That was my general tips/ramblings about CSS. I hope you learned something. Follow along tomorrow for some more nitty-gritty  tips with code examples.
