@@ -34,4 +34,7 @@ A complete environment run from its initial state until the end is called an epi
 
 Reinforcement learning started as a field. It suffered from a lack of practical applications. Maintaining state was often done by having a lookup table for all states, which is infeasible for large observation spaces. Using neural networks as function approximators was possible, but in large systems (x) learning was unstable, etc. (see DQN paper), and was considered to be computationally infeasible. These were the main obstacles overcome by the Google DeepMind DQN paper (see paper for more details).
 
+![Different Atari games.](https://i.ibb.co/3Fq28gn/atari.png)
+
+
 Then, in 2013, Google DeepMind published results and a paper showcasing, for the first time ever, an approach which utilized deep neural networks as functions approximators in a popular RL algorithm, known as Q-learning. They named the algorithm Deep Q-Networks.
