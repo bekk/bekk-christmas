@@ -11,7 +11,7 @@ ingress: >-
   for each of the 24 days until Christmas.
 links:
   - title: Make your own «Pseudo Design Titles»
-    url: 'https://medium.com/r/?url=https%3A%2F%2Fdesigntitles.com%2F'
+    url: 'https://designtitles.com/'
   - title: The Truth About Design Titles
     url: 'https://www.vanschneider.com/truth-design-titles'
 authors:
@@ -21,19 +21,20 @@ authors:
 
 What can one expect from a UX advent calendar from Bekk? UX.christmas is a collaborative project where 24 writers have written as many articles, full of industry-relevant tidbits. The “windows” of this advent calendar cover a variety of topics like creativity, storytelling, and product development. Everything from variable fonts and dark patterns (on Friday the 13th of course 👻) to hypothesis testing and digital accessibility.
 
-Some articles are written in English, and some in Norwegian. They are just short enough (2-3 minute read) to squeeze in on the way to work or at the breakfast table. But if that isn’t enough to scratch your \[faglig] itch this advent, you can always try out a window on one of the 11 (!) other calendars Bekk is publishing this holiday season. Check out \[bekk.christmas](url) to see them all.
+Some articles are written in English, and some in Norwegian. They are just short enough (2-3 minute read) to squeeze in on the way to work or at the breakfast table. But if that isn’t enough to scratch your \[faglig] itch this advent, you can always try out a window on one of the 11 (!) other calendars Bekk is publishing this holiday season. Check out [bekk.christmas](https://bekk.christmas/) to see them all.
 
-**Here are a couple of sneak previews of what you can come to expect from UX.christmas: 👀**
-
-December 6th: Copywriter Erik Mathisen tells us a little story on storytelling…
-
-> “At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.“
-
-December 4: Designer Sonja Porter has a wake-up call when it comes to Maslow’s Hierarchy of Needs...
+**Here are a couple of sneak previews of what you can come to expect from UX.christmas: 👀**\
+\
+**December 4th:** Designer Sonja Porter has a wake-up call when it comes to Maslow’s Hierarchy of Needs...
 
 > “Way back in 1943 Abraham Maslow published his “Hierarchy of needs” – a pyramid describing the forces that motivate us, and the order in which we strive to meet them. For many designers, this 76-year-old model still informs the design decisions we make every day. But did you know that Maslow moved on to an updated model only a few years later? Or that psychologists stopped using Maslow’s pyramid years ago?“
 
-## 
+\
+**December 6th:** Copywriter Erik Mathisen tells us a little story on storytelling…
+
+> “At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.“
+
+
 
 ## My work, your work.
 
@@ -60,4 +61,4 @@ Titles can so easily put us in a box. But why can’t a developer think about to
 Happy December 1st! Thanks for opening the first window of our advent calendar. Remember to follow along for a new design tidbit every day until Christmas Eve.
 
 Helen Le\
-– Innovator of Interaction Interpretation & UX.christmas-pusher at Bekk
+– [Innovator of Interaction Interpretation](https://designtitles.com/) & UX.christmas-pusher at Bekk
