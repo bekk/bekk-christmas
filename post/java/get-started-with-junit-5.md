@@ -4,8 +4,8 @@ post_year: 2019
 post_day: 5
 title: Get started with JUnit 5
 ingress: >-
-  JUnit 5 was released two years ago. Why are you still running your tests with
-  JUnit 4.12? Yeah, I know. Me too. But let’s change that!
+  JUnit 5 was released two years ago. Are you still running your tests with
+  JUnit 4.12? Let’s change that, and get you started with JUnit 5.
 links:
   - title: JUnit 5 User Guide
     url: 'https://junit.org/junit5/docs/current/user-guide/'
@@ -43,7 +43,7 @@ Some of the annotations that have changed from JUnit 4 to JUnit 5:
 
 In JUnit 4 you could specify different test runners to integrate your tests with other frameworks, like the Spring Framework with the `@RunWith` annotation.
 
-```
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 public class MySpringTest {
     // All your Spring magic here
@@ -52,7 +52,7 @@ public class MySpringTest {
 
 @RunWith no longer exists in JUnit 5. It has been replaced by @ExtendWith, which provides similar funcitonality
 
-```
+```java
 @ExtendWith(SpringExtension.class)
 public class MyOtherSpringTest {
     // Still your Spring magic here
