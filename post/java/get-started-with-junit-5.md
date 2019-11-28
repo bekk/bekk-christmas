@@ -50,7 +50,7 @@ public class MySpringTest {
 }
 ```
 
-`@RunWith` no longer exists in JUnit 5. It has been replaced by `@ExtendWith`, which provides similar functionality
+`@RunWith` no longer exists in JUnit 5. It has been replaced by `@ExtendWith`, which provides similar functionality.
 
 ```java
 @ExtendWith(SpringExtension.class)
