@@ -162,7 +162,7 @@ Every game needs some good core game play. This game however doesn’t have much
 ```
 
 
-Lastly let us draw our amazing game! To draw simple shapes in LibGDX we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html). 
+Lastly let us draw our amazing game! To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function LibKTX comes with...
 
 ```kotlin
 class MyGame : KtxApplicationAdapter {
@@ -173,6 +173,11 @@ class MyGame : KtxApplicationAdapter {
     override fun create() {
         renderer = ShapeRenderer()
     }
+
+    override fun render() { ... }
+
+    private fun handleInput() { ... }
+    private fun logic() { ... }
 
     private fun draw() {
         clearScreen(0f, 0f, 0f, 0f)
@@ -189,9 +194,7 @@ class MyGame : KtxApplicationAdapter {
             renderer.rect(player.position, 80f, 80f, 80f)
         }
     }
-
-    private fun logic() { ... }
-    private fun draw() { ... }
+}
 ```
 
 
