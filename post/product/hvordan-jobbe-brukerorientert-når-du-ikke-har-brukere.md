@@ -13,4 +13,4 @@ authors:
   - Linda Halvorsen
   - Jens Andreas Huseby
 ---
-<iframe src="https://open.spotify.com/embed/show/6SVNY97zuPWcVdvE2FSNRL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://anchor.fm/kaffeprathosbekk/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
