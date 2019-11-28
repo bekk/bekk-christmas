@@ -5,17 +5,19 @@ post_day: 6
 title: Clean CSS - Rambling edition
 image: >-
   https://images.unsplash.com/photo-1551731494-e17c67304912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
-ingress: Dette er ingressen
+ingress: >-
+  Over the years I've seen (and indeed written) quite a lot of horrible CSS, and
+  I want to take a moment to share some of the rules and principles I try to
+  follow when I write and teach CSS in order to keep the code as clean and
+  maintainable as possible.
+
+
+  In this post, I'll go through some general tips before I'll get into some more
+  specific tips in tomorrow's post. Let's go!
 authors:
   - Peter Hemmen
 ---
-# Clean CSS
-
-Over the years I've seen (and indeed written) quite a lot of horrible CSS, and I want to take a moment to share some of the rules and principles I try to follow when I write and teach CSS in order to keep the code as clean and maintainable as possible.
-
-It is generally easier to keep your CSS clean when you are writing CSS-in-JS as many of us do these days. That means that some of these tips might not apply if you have already left external style sheets behind, but even with CSS-in-JS there are still good and bad ways to write your styling, and I am here to help you avoid a few pitfalls, at least.
-
-In this post, I'll go through some general tips before I'll get into some more specific tips in tomorrow's post. Let's go!
+Quick disclaimer: It is generally easier to keep your CSS clean when you are writing CSS-in-JS as many of us do these days. That means that some of these tips might not apply if you have already left external style sheets behind. However, even with CSS-in-JS there are still good and bad ways to write your styling, and I am here to help you avoid a few pitfalls, at least.
 
 ## Clean CSS comes from clean HTML
 
