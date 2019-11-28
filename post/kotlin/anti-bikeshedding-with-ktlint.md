@@ -48,18 +48,27 @@ Calling ktlint manually is one way to do it, but it's even better if your build 
 
 ### Maven
 
-Maven can be overly verbose. To keep the configuration somewhat short, the example below will use the plugin mentioned in their github documentation. This will give you the commands `mvn ktlint:check` and `mvn ktlint:format`.
+Maven can be overly verbose. To keep the configuration somewhat short, the example below will use the dedicated plugin mentioned in their github documentation. This will give you the self-explanatory commands `mvn ktlint:check` and `mvn ktlint:format`, as well as `mvn ktlint:ktlint` to generate a report containg the result of the check.
 
-SI NOE OM HVILKE LIFECYCLES SOM BLIR SATT OPP
+Note also that we specify it to run in the verify phase of the build, but one could be even stricter and run it in the validate phase if one so wishes. If you want to configure ktlint manually, just follow the example listed in their github repository.
 
 ```xml
 <build>
   <plugins>
     ...
     <plugin>
-      <groupId>com.github.gantsign.maven</groupId>
-      <artifactId>ktlint-maven-plugin</artifactId>
-      <version>1.2.3</version>
+        <groupId>com.github.gantsign.maven</groupId>
+        <artifactId>ktlint-maven-plugin</artifactId>
+        <version>1.2.3</version>
+        <executions>
+            <execution>
+            <id>check</id>
+            <phase>verify</phase>
+            <goals>
+                <goal>check</goal>
+            </goals>
+            </execution>
+        </executions>
     </plugin>
     ...
   </plugins>
@@ -68,4 +77,10 @@ SI NOE OM HVILKE LIFECYCLES SOM BLIR SATT OPP
 
 ### Gradle
 
-### Andre byggeverktøy ?
+Manual configuration of ktlint in gradle is also a verbose process, but here we have two options of plugins! For this example, we have elected to use [org.jlleitschuh.gradle.ktlint](https://github.com/jlleitschuh/ktlint-gradle), and by adding it to the plugins block, we get access to the `gradle ktlintCheck` and `gradle ktlintFormat`. The former task is also made as a dependency to the general `check` task of gradle, so that it becomes a natural part of the verification process.
+
+```gradle
+plugins {
+    id("org.jlleitschuh.gradle.ktlint") version "9.1.1"
+}
+```
