@@ -10,9 +10,9 @@ ingress: >-
   surrounding environment. The basic question in the field of reinforcement
   learning is: can machines do the same?
 links:
-  - title: DRL by Google DeepMind
+  - title: Deep RL by DeepMind
     url: 'https://deepmind.com/blog/article/deep-reinforcement-learning'
-  - title: DQN
+  - title: Deep Q-Network by DeepMind
     url: >-
       https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning
 authors:
