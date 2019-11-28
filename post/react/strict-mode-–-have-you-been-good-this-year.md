@@ -3,6 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 1
 title: How to avoid React's "Naughty List"
+image: >-
+  https://images.unsplash.com/photo-1554646665-0546bdc37ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2128&q=80
 ingress: >-
   Every year, Santa Claus and his helping elves create a special list for every
   child in the world: the "Naughty or Nice" list. React has something very
@@ -22,7 +24,7 @@ StrictMode is a feature which was introduced to React 16.3 already in march 2018
 
 ### Unsafe lifecycle methods
 
-From 16.9, React throws a warning if you are using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. Hopefully, you have converted those methods to safer alternatives or at least added the `UNSAFE_`-prefix Those methods using those will only result in a warning
+From 16.9, React throws a warning if you are using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. Hopefully, you have converted those methods to safer alternatives or at least added the `UNSAFE_`-prefix. If you havThose methods using those will only result in a warning
 - Identify
 
 ### Deprecated code
