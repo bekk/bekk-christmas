@@ -17,7 +17,7 @@ const AuthorLink = styled.a(
 );
 
 const AuthorInfo = props => {
-    const { authors, readingTime, calendar } = props;
+    const { authors, readingTime, calendar, year, day } = props;
     if (!authors || !authors.length) {
         return null;
     }
@@ -43,6 +43,8 @@ const AuthorInfo = props => {
                         {index === authors.length - 2 && ' and '}
                     </Fragment>
                 ))}
+                <br />
+                {`${day.toString().padStart(2, '0')}.12.${year}`}
             </AuthorText>
         </Container>
     );

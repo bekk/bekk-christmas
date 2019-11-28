@@ -51,14 +51,23 @@ const TitleContainer = styled.h1`
     font-size: 3em;
     margin-top: 0;
     text-align: center;
-    max-width: 900px;
+    max-width: 760px;
     margin: auto;
 `;
 
 const Template = ({ data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
-    const { calendar, description, title, ingress, image, links } = frontmatter;
+    const {
+        calendar,
+        description,
+        title,
+        ingress,
+        image,
+        links,
+        post_day,
+        post_year,
+    } = frontmatter;
 
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
@@ -97,6 +106,8 @@ const Template = ({ data }) => {
                         authors={fields && fields.enrichedAuthors}
                         readingTime={timeToRead}
                         calendar={calendar}
+                        year={post_year}
+                        day={post_day}
                     />
                 )}
                 {image && <HeroImage src={heroImage} alt="" />}
@@ -148,6 +159,8 @@ export const aboutPageQuery = graphql`
                 title
                 ingress
                 image
+                post_year
+                post_day
                 links {
                     title
                     url
