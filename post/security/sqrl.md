@@ -3,6 +3,8 @@ calendar: security
 post_year: 2019
 post_day: 2
 title: Secure Quick Reliable Login (SQRL)
+image: >-
+  https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
 ingress: >-
   In case you haven't noticed: [Passwords
   suck](https://security.christmas/2018/19). Fortunately alternatives to that
