@@ -27,19 +27,19 @@ What’s typical for those who succeed is that they work systematically along fo
 
 
 
-\###Infrastructure
+###Infrastructure
 
 The requirements for infrastructure have changed as a result of the need for increased volume, speed and data variation. Different organization’s maturity ranges from operational databases with ad hoc extraction of data, to gathering and consuming a variety of data sources in real-time. 
 
-\###Competence
+###Competence
 
 Converting data into actions requires the right analytics competence. At the lower end of the maturity scale, business developers only interpret reports created by a few employed BI analysts. At the other end you have analytical and self-propelled business developers, along with highly skilled data scientists who work exploratory. 
 
-\###Governance and organization
+###Governance and organization
 
 Organizations who manage to take full advantage of available data are usually organized in product teams. Data scientists are then distributed across these teams, where they spend most of their time, while maintaining and updating their knowledge through a professional community. 
 
-\###Process and culture
+###Process and culture
 
 Less mature organizations mostly use data in static reporting and base many decisions on intuition and experience. Data-driven-organizations however, work hypothesis driven and dedicate time to exploratory work, and they will require data to support every leadership and board decision.
 
