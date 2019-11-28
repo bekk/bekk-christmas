@@ -51,6 +51,8 @@ const TitleContainer = styled.h1`
     font-size: 3em;
     margin-top: 0;
     text-align: center;
+    max-width: 900px;
+    margin: auto;
 `;
 
 const Template = ({ data }) => {
