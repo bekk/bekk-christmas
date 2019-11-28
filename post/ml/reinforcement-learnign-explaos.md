@@ -8,10 +8,10 @@ image: >-
 ingress: >-
   Recently, machine learning research have increasingly been focused on general
   learning algorithms where the same algorithm can perform a huge variety of
-  tasks. The ultimate goal by reinforcement learning researchers is to create
-  machines that can learn to solve any general task, just like humans! Today
-  we're going to take a brief look at some of the coolest projects and greatest
-  breakthroughs in the field of self-learning machines.
+  tasks. The ultimate goal by many reinforcement learning researchers is to
+  create machines that can learn to solve any general task, just like humans!
+  Today we're going to take a brief look at some of the coolest projects and
+  greatest breakthroughs in the field of self-learning machines.
 authors:
   - Asbjørn Steinskog
 ---
