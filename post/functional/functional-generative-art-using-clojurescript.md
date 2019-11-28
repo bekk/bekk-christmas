@@ -10,20 +10,20 @@ ingress: >-
 authors:
   - Torgeir Thoresen
 ---
-Creative programming is about writing code to create an expression rather than developing functionality that is nescessarily otherwise usable. It's an enjoyable process, that can be used to create all kinds of art pieces, be it still images, animations, music etc. It is also a great framework for learning new programming languages.
+Creative programming is about writing code to create an expression rather than developing some kind of functionality. It's an enjoyable process that can be used to create all kinds of art pieces, be it still images, animations, music etc. It's also a great framework for learning new programming languages.
 
 ClojureScript, or cljs for short, is a Lisp that compiles to javascript. It's a dynamic, functional programming language with great support for an interactive development process, making it a perfect fit for the type of explorative, creative programming that generative art often resemble.
 
-The art piece we will be making here is one based on a Perlin flow noise field. It uses [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) to move some thousand particles across the screen in an organic looking fashion. As opposed to white noise, Perlin noise is a controlled type of noise, where two values drawn from close to each other in the noise map will have similar, but still random values.
+We will create an art piece based on a Perlin noise flow field. It uses [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) to move some thousand particles across the screen in an organic looking fashion. As opposed to white noise, Perlin noise is a controlled type of noise where two values drawn from close to each other in the noise map will have similar, but still random values.
 
-We will be using a library called [Quil](http://quil.info/) for creating a
+We will be using a library called [Quil](http://quil.info/) to create a
 drawing using the browser canvas api, along with a library called
 [Figwheel](https://figwheel.org/) for building and hot loading the code as it
 evolves.
 
 A file `deps.edn` in the project root defines the dependencies for this setup.
 
-```cljs
+```clj
 {:paths ["src" "resources" "target"]
  :deps  {org.clojure/clojure       {:mvn/version "1.10.0"}
          com.bhauman/figwheel-main {:mvn/version "0.2.0"}
@@ -40,7 +40,7 @@ To kick things off, we define a namespace to hold our code in `src/sketches/perl
 
 A developement build called `dev` is defined by placing a file `dev.cljs.edn` alongside it. This file instructs our build on what namespace that should run initially when the built javascript file loads.
 
-```cljs
+```clj
 {:main sketches.perlin_flow}
 ```
 
@@ -70,7 +70,7 @@ clojure -m figwheel.main -b dev
 
 A couple of vars `w` and `h` used throughout our sketch is defined to hold the width and height of the browser window. This also shows a general example of how function calls are made in a lisp, by placing the name of the function to be called as the first element in the list (i.e. inside the parens). However, it also shows the somewhat cryptic approach cljs takes to javascript interop, where a `.-` prefix in front of the name is how properties of native javascript objects are looked up. We will generally not be needing this prefix, as most our code simply refers ClojureScript vars and functions directly.
 
-```cljs
+```clj
 (def body (.-body js/document))
 (def w (.-clientWidth body))
 (def h (.-clientHeight body))
@@ -78,7 +78,7 @@ A couple of vars `w` and `h` used throughout our sketch is defined to hold the w
 
 We define a function `create` to create our sketch by passing it the nescessary options. This defines the essense of our sketch, namely what functions will be used for state setup, update and draw. We'll keep them minimal for now. The setup function sets up our drawing's state, i.e. an empty vector `[]`. The update function gets the state of our sketch as and argument and simply returns it. The draw function, well, draws our sketch to the actual canvas in the browser. It also receives the state as an argument, but as of now, simply draws an ellipse to the center of the screen, on a dark [background color](http://quil.info/api/color/setting#background).
 
-```cljs
+```clj
 (defn sketch-setup []
   [])
 
@@ -109,7 +109,7 @@ By seeding Quil's [random](http://quil.info/api/math/random#random-seed) and [no
 
 A clever cljs macro, `defonce`, ensures that we only create one instance of the sketch, even though the namespace is reloaded by figwheel each time the sketch file is saved.
 
-```cljs
+```clj
 (defonce sketch (create "sketch"))
 ```
 
@@ -129,7 +129,7 @@ Not a masterpiece, to say the least. Let's up the game.
 
 Every piece of generative art needs a pretty palette. This palette is a map of predefined colors, on the form of vectors with rgb values. We'll use this palette to spice things up a bit when drawing particles to our canvas.
 
-```cljs
+```clj
 (def palette
   {:name       "purple haze"
    :background [10 10 10]
@@ -144,7 +144,7 @@ Every piece of generative art needs a pretty palette. This palette is a map of p
 
 The state for this sketch will hold a vector of these particles, created by mapping the `particle` function over the range of numbers from 0 to 2000. On each change of the setup function we have to reload the page, as the `defonce` mentioned above keeps the sketch from re-initializing.
 
-```cljs
+```clj
 (defn sketch-setup
   "Returns the initial state to use for the update-render loop."
   []
@@ -155,7 +155,7 @@ The state for this sketch will hold a vector of these particles, created by mapp
 Each particle is a map consisting of the `:id` of the particle, `:x` and `:y` representing its position constrained by the screen size, `:vx` and `:vy` representing its speed in the x and y directions respectively, `:size` representing the particle's size in pixels, `:direction` representing the direction of each particle and a random `:color` drawn from the palette.
 
 
-```cljs
+```clj
 (defn particle
   "Creates a particle map."
   [id]
@@ -171,7 +171,7 @@ Each particle is a map consisting of the `:id` of the particle, `:x` and `:y` re
 
 Our draw function starts off by clearing what was previously drawn by setting a new background color with [`q/background`](http://quil.info/api/color/setting#background). [q/no-stroke](http://quil.info/api/color/setting#no-stroke) ensure there's no stroke around each particle. Subsequently, it uses `doseq` to process each particle `p` from our state of particles (returned by `sketch-setup`) for side effects. It uses the Quil function [`q/fill`](http://quil.info/api/color/setting#fill) to set the color of what is about to be drawn to that of the `:color` the particle, and calls out to [`q/ellipse`](http://quil.info/api/shape/2d-primitives#ellipse) to draw a circle at the `:x` and `:y` positions of each particle with its `:size`.
 
-```cljs
+```clj
 (defn sketch-draw
   "Draws the current state to the canvas. Called on each iteration after sketch-update."
   [particles]
@@ -192,7 +192,7 @@ Already it's starting to look good, albeit static. Let's fix that.
 
 Our `sketch-update` function receives the current state of particles and its task is to update their state for the next iteration of the drawing, before `sketch-draw` will draw the resulting state to the canvas. The update and draw functions will be called after one another for the lifetime of the sketch, resembling our program's render-loop. The following function definition moves each particle according to its current position by adding in its velocity in each direction. By running the modulo function `mod` on each resulting position, we ensure that particles come back on the opposite side of the screen if they move outside the screen bounds. The cljs function [`assoc`](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/assoc) associates new values for the given keys in each map.
 
-```cljs
+```clj
 (defn position
   "Calculates the next position based on the current, the speed and a max."
   [current delta max]
@@ -219,7 +219,7 @@ Look! It's moving.
 
 Simply by removing the one line of code from the draw function that clears the background we see a radically different expression in our drawing. If you are coding along you would be starting to feel the effects that this kind of short feedback loop setup can have.
 
-```cljs
+```clj
 (defn sketch-draw
   "Draws the current state to the canvas. Called on each iteration after sketch-update."
   [particles]
@@ -238,7 +238,7 @@ Rest assured, the [circles are really moving](http://quil.info/sketches/show/c69
 
 Changing around each particle's speed by a random amount between `[-0.5, 0.5]` and capping it at 2 renders a rather busy result.
 
-```cljs
+```clj
 (defn velocity
   "Calculates the next velocity based on the current and a delta. Capped at 2."
   [current delta]
@@ -265,7 +265,7 @@ Let's introduce some Perlin noise to start heading for the effect we're after an
 
 We will give each particle a direction from `[0,2π]` by use of Quil's [Perlin noise function](http://quil.info/api/math/random#noise), based on the noise (i.e. a number between `[0,1]`) at the particle's location x and y in the noise map. We'll let this represent "the wind" that carries the particles across the screen with slight variations in direction. By averaging the current velocity and the `Math/cos`/`Math/sin` of the updated direction we keep it within bounds of `[0,1]`. To calm it down a bit we also scale the `x` and `y` values by the `noise-zoom`. By "zooming in" on the noise map, values close to each other will have increasingly similar random values, easing things out. This forms a great basis for creating natural looking flows of particles.
 
-```cljs
+```clj
 (def noise-zoom
   "Noise zoom level."
   0.0005)
@@ -306,7 +306,7 @@ Getting there!
 
 To make things more natural looking, let's introduce some more noise on a per particle basis, to add the effect of uniqueness to each particle's movement. We'll do this by adding a touch more perlin noise to each calculated direction by using the `:id` of each particle as a third argument to the [`q/noise`](http://quil.info/api/math/random#noise) function. This looks up the Perlin noise value in three dimensions, making it unique per particle.
 
-```cljs
+```clj
 (defn direction
   "Calculates the next direction based on the previous position and id of each particle."
   [x y z]
@@ -338,7 +338,7 @@ Not radically different, I hear you.
 
 Now try this: adjust the `noise-zoom` scale by a slight increase. In this way we are effectively "zooming out" of the Perlin noise cloud, making its randomness more varying, making the curves stand out more in the drawing.
 
-```cljs
+```clj
 (def noise-zoom
   "Noise zoom level."
   0.005)
@@ -352,7 +352,7 @@ It flows!
 
 Playing around with opacity often create stunning effects in sketches like these. Try modifying each drawn color by adding an alpha channel, of say 3, to the `[r g b]` color vectors making them `[r g b a]`, e.g. so the first color of the palette becomes `[32 0 40 3]`. We'll do this for all our colors by appending 3 to each color vector as it is drawn. This is done using the cljs function  [`conj`](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/conj).
 
-```cljs
+```clj
 (defn sketch-draw
   "Draws the current state to the canvas. Called on each iteration after sketch-update."
   [particles]
