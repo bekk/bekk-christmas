@@ -17,7 +17,6 @@ const GlobalStyles = createGlobalStyle(
     box-sizing: inherit;
   }
   body {
-    background: ${theme.primaryBackgroundColor};
     color: ${theme.textColor};
     transition: background-color 0.3s var(--easing), color 0.5s var(--easing);
     font-family: FFDINWebProLight, sans-serif;
