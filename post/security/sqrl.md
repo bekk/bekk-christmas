@@ -2,7 +2,17 @@
 calendar: security
 post_year: 2019
 post_day: 2
-title: SQRL
+title: Secure Quick Reliable Login (SQRL)
+ingress: >-
+  In case you haven't noticed: [Passwords
+  suck](https://security.christmas/2018/19). Fortunately alternatives to that
+  age-old authentication scheme are finally becoming practical. SQRL (Secure
+  Quick Reliable Login) is a proposed solution to the authentication problem,
+  invented by Steve Gibson (these days best known as host of the podcast
+  Security Now). Over the past few years a lot of work has gone into perfecting
+  the SQRL standard, and recently several client and server implementations have
+  been developed, making now a good time to start experimenting with this
+  fascinating technology.
 links:
   - title: SQRL documentation
     url: 'https://www.grc.com/sqrl/sqrl.htm'
@@ -12,7 +22,7 @@ links:
     url: 'https://www.youtube.com/watch?v=uU1fY_xm9BE'
 authors: []
 ---
-In case you haven't noticed: [Passwords suck](https://security.christmas/2018/19). Fortunately alternatives to that age-old authentication scheme are finally becoming practical. SQRL (Secure, Quick, Relable Login) is a proposed solution to the authentication problem, invented by Steve Gibson (these days best known as host of the podcast Security Now). Over the past few years a lot of work has gone into perfecting the SQRL standard, and recently several client and server implementations have been developed, making now a good time to start experimenting with this fascinating technology.
+
 
 SQRL uses public key cryptography to securely authenticate a user to a web site with minimal fuss, and without the user having to memorize or manage a multitude of passwords. It is based around the central premise of using a single master identity to predictably generate unique identities for every web site that the user authenticates to. 
 
