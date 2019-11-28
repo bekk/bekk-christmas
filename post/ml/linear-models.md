@@ -11,6 +11,8 @@ authors:
   - Audun Eltvik
   - Michael Nordmo
 ---
+<img src="https://i.imgflip.com/3hueo1.jpg" style="display: block; margin-left: auto; margin-right: auto;"/>
+
 Let's say you are going on a 100 km road trip, and you want to know how much money you should expect to spend on gas. Unfortunately for you, there is no information on the fuel efficiency of your car, so you can't simply calculate the number.
 
 Fortunately for you, however, you have recorded the distance traveled and gas usage for previous roadtrips. Using this data, it might be possible to build a model that can be used to predict roughly how much gas you would expect to need for your road trip.
@@ -32,6 +34,8 @@ For this situation, a good cost function is the sum of the distances between the
 ![](/assets/leastsquares.png)
 
 As an informal definition, we can say that linear model are all models that represents the relationships in the data using only straight lines.
+
+<img src="https://i.imgflip.com/3huf21.jpg" style="display: block; margin-left: auto; margin-right: auto;"/>
 
 There are many reasons why linear models are widely used, but we will mention three important ones here. Firstly, linear models are relatively **easy to interpret**. The model parameters may be used to gain insights into the data and to explain why a machine learning model made a particular prediction. Interpretability is a very attractive quality in many data science problems.
 
