@@ -3,8 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 1
 title: How to avoid React's "Naughty List"
-image: >-
-  https://images.unsplash.com/photo-1554646665-0546bdc37ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2128&q=80
+image: ''
 ingress: >-
   Every year, Santa Claus and his helping elves create a special list for every
   child in the world: the "Naughty or Nice" list. React has something very
