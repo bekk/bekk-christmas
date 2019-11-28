@@ -4,6 +4,6 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: black;
+        background: '#0e0e0e';
     }
 }
