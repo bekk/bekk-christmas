@@ -21,7 +21,7 @@ This is [what DeepMind did to Atari games in 2013](https://deepmind.com/research
 
 The following years, DeepMind went ahead and beat increasingly complex games, utilizing novel reinforcement learning techniques to beat games that were previously thought to be extremely hard for computers to be good at because of their high complexity. In 2015, they gave birth to _AlphaGo_.
 
-While machines have been better than every living human at chess for about 20 years, they have struggled to beat humans at its Asian cousin Go. The amount of possible moves at each step is so high that it’s unfeasible for computers to play it in the same brute-forceish way that made them succeed in chess. To beat Go, you needed something more intuitive, something more human. This lead DeepMind to develop AlphaGo, the first computer to surpass humans in the ancient board game.
+While machines have been better than every living human at chess for about 20 years, they have struggled to beat humans at its Asian cousin Go. The amount of possible moves at each step is so high that it’s unfeasible for computers to play it in the same brute-forceish way that made them succeed at chess. To beat Go, you needed something more intuitive, something more human. This lead DeepMind to develop AlphaGo, the first computer to surpass humans in the ancient board game.
 
 Instead of looking at all the possible moves, AlphaGo uses a Monte Carlo tree search to suggest moves based on knowledge it has previously learnt by its neural network. This makes it _think_ in a way that might make it resemble humans more than computers.
 
