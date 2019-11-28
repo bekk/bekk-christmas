@@ -35,7 +35,7 @@ This is how logging in with SQRL works from a high level:
 7. The web server establishes a signed in session for the user and sends the URL for that session to the user's SQRL client.
 8. The SQRL client receives the session URL and redirects the user's browser to the signed-in session.
 
-!\[SQRL site specific identity synthesis](https://i.ibb.co/SRgGhk8/sqrl.png)
+<img class="wide-image" src="https://i.ibb.co/SRgGhk8/sqrl.png" />
 
 The above image borrowed from the [SQRL documentation](https://www.grc.com/sqrl/sqrl.htm) nicely illustrates how SQRL generates site specific identities from the site domain name and the user's Master Key.
 
