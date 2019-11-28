@@ -14,3 +14,5 @@ authors:
   - Jens Andreas Huseby
 ---
 <iframe src="https://anchor.fm/kaffeprathosbekk/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="https://open.spotify.com/embed/show/6z4NLXyHPga1UmSJsPK7G1" width="400" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
