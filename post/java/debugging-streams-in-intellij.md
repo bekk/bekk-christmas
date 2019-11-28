@@ -27,11 +27,11 @@ Are you able to instantly see what the result of this expression will be? No? Le
 
 When learning how to use the Stream API, I had recently learned a super power in IntelliJ: **Evaluate expression**. I’d mark e.g. the first two lines of code and use my new favorite tool:
 
-![](https://i.ibb.co/LrXxWD3/1-evaluate-expression.png)
+![](https://i.ibb.co/N9P0xcT/1-evaluate-expression.png)
 
 That was … underwhelming. Where are my numbers?! The only thing looking remotely interesting is `this$0`. Surely `this` are my numbers, right?
 
-![](https://i.ibb.co/1KZLqMn/2-evaluate-expression-2.png)
+![](https://i.ibb.co/RvC9LDR/2-evaluate-expression-2.png)
 
 No 🤦‍♀️
 
@@ -42,7 +42,7 @@ This is because, as we all know, Stream operations are lazy:
 
 So I guess I have to perform a _terminal operation_:
 
-![](https://i.ibb.co/HGpf0xx/3-evaluate-expression-terminator.png)
+![](https://i.ibb.co/0hH6qnw/3-evaluate-expression-terminator.png)
 
 Well, yes, this works. But I can no longer just select the interesting code, press a shortcut and see the results. If I want to figure out what the next step in the pipeline does, I have to close the dialog, increase my selection to the next line, press the **Evaluate Expression** shortcut and add `.toArray()` again. I don’t have time for that!
 
