@@ -1,0 +1,9 @@
+body {
+    background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
+}
