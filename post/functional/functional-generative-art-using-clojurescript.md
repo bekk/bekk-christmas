@@ -3,7 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 15
 title: Functional Generative Art Using ClojureScript
-authors: []
+authors:
+  - Torgeir Thoresen
 ---
 ~ _This post explores how you can create your own generative art in the web browser using functional programming in the ClojureScript programming language._ ~
 
