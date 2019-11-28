@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 5
+post_day: 15
 title: Debugging Streams in IntelliJ
 image: >-
   https://images.unsplash.com/photo-1552561618-4fe029f7858a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80
