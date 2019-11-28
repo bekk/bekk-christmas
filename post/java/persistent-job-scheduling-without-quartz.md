@@ -20,7 +20,7 @@ authors:
 ## Introducing a lightweight alternative 
 Running background tasks is an important part of backend software. In the Java ecosystem, one of the most used schedulers for running background tasks is the [Quartz Scheduler](https://www.quartz-scheduler.org/). It is simply a beast in terms of functionality and can be in form of complexity.
 
-[Gustav Karlsson](https://github.com/kagkarlsson) (Bekk) longed for a more lightweight alternative himself, one which didn’t need 11 database tables to function. He wound up writing his own alternative scheduler – [db-scheduler](https://github.com/kagkarlsson/db-scheduler) – which just requires a single database table but stills support clustering, embedding and yet provides a simple API. Even though the API is simple, it still provides some pretty powerful features. 
+[Gustav Karlsson](https://github.com/kagkarlsson) (Bekk) longed for a more lightweight alternative himself, one which did not require 11 database tables to function. He wound up writing his own alternative scheduler – [db-scheduler](https://github.com/kagkarlsson/db-scheduler) – which just requires a single database table but stills support clustering and embedding. Even though the API is simple, it still provides some pretty powerful features. 
 
 ## Give me an example!
 The library itself does not have any bindings to other libraries or frameworks but a [starter](https://github.com/kagkarlsson/db-scheduler#spring-boot-usage) is provided for Spring Boot projects. Let’s use that!
@@ -73,7 +73,6 @@ spring.application.name=background-jobs
 # db-scheduler (please accept the defaults or tweak before going into production :-)
 db-scheduler.threads=3
 db-scheduler.polling-interval=5s
-db-scheduler.heartbeat-interval=10s
 ```
 
 Finally add a new Spring Configuration class that will provide the tasks that need to be executed. These are exposed as regular beans, so you can wire in whatever you need.
@@ -104,4 +103,4 @@ Running the app should now produce log lines like:
 ```
 
 ## Summary
-As the example proves, it is really easy to get some basic background jobs up and running. It is however easy to add arbitrary binary data in a separate field for use at execution-time and create custom tasks that needs to update it’s own data.
+As the example shows, it is really easy to get some basic background jobs up and running. db-scheduler also supports more advanced features such as scheduling one-time tasks with arbitrary data for use at execution-time or recurring tasks keeping an internal state.
