@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 2
 title: What is Machine Learning?
 image: >-
-  https://i.barkpost.com/wp-content/uploads/2016/03/labrachick.jpg?q=70&fit=crop&crop=entropy&w=808&h=500
+  https://www.disruptiveadvertising.com/wp-content/uploads/2018/05/machine-learning-ecommerce-blog-1-1280x720.jpg
 ingress: Are you eating fried chicken or a dog when you enter a KFC?
 authors:
   - Audun Eltvik
