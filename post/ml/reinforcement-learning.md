@@ -6,7 +6,7 @@ title: Reinforcement learning
 image: >-
   https://images.unsplash.com/photo-1563209259-2819dbb22d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
-  From the moment they’re born, animals learn by interacting with their
+  From the moment they’re born, animals _learn_ by interacting with their
   surrounding environment. The basic question in the field of reinforcement
   learning is: can machines do the same?
 links:
@@ -27,6 +27,8 @@ A policy, often denoted by $\pi$, dictates the behaviour of an agent. The ultima
 During training, the agent interacts with the environment, and subsequently updates its policy based on the interaction.
 
 !\[An illustration of the agent/environment interaction.](https://ibb.co/86VbPMj)
+
+Test
 
 In some cases, an agent can interact with the environment for multiple steps and episodes at a time, collecting the experiences in what’s called a replay buffer. Then, these experiences can be used in training later. This allows training to be completed in batches, which can be more effective, especially when neural networks are used as function approximators.
 
