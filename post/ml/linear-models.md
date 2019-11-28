@@ -13,7 +13,7 @@ authors:
 ---
 Let's say you are going on a 100 km road trip, and you want to know how much money you should expect to spend on gas. Unfortunately for you, there is no information on the fuel efficiency of your car, so you can't simply calculate the number.
 
-Fortunately, you have recorded the distance traveled and gas usage for previous roadtrips. Using this data, it might be possible to build a model that can be used to predict roughly how much gas you would expect to need for your road trip.
+Fortunately for you, however, you have recorded the distance traveled and gas usage for previous roadtrips. Using this data, it might be possible to build a model that can be used to predict roughly how much gas you would expect to need for your road trip.
 
 The first step in any machine learning problem is usually to visualize the data in some way. In this case, we plot distance traveled vs gas usage in a scatter plot.
 
