@@ -12,13 +12,13 @@ But what about Kotlin, how does LibGDX work with Kotlin and how can we use it?
 
 # Introducing LibKTX
 
-Using LibGDX with Kotlin can feel a little bit dated and clunky, it is a Java framework after all, not a framework tailored for Kotlin. To make LibGDX feel more idiomatic to Kotlin we are lucky enough to have a library to help us with that; [ktx](https://github.com/libktx/ktx) is a library aimed to make libGDX feel like a Kotlin framework. It's still LibGDX, just with syntax that feels more natural in Kotlin.
+Using LibGDX with Kotlin can feel a little bit dated and clunky, it's a Java framework that's been around for quite some time, and not a framework tailored for Kotlin. To make LibGDX feel more idiomatic to Kotlin we have the perfect library for that; [ktx](https://github.com/libktx/ktx) is a library aimed to make libGDX feel like native Kotlin framework. 
 
 # Project setup
 
 While LibGDX supports multiple platforms in this article we will focus on making a small game for a desktop environment. To get started we need an empty Gradle Kotlin project. Fire up your favorite editor and create a new empty Gradle Kotlin project. 
 
-We are going to use LibGDX and LibKTX, so lets add to our dependency list. The `build.gradle` file should look something like this:
+We are going to use LibGDX and LibKTX, so lets add those to our dependency list. The `build.gradle` file should look something like this:
 
 ```gradle
 plugins {
@@ -50,7 +50,7 @@ compileKotlin {
 }
 ```
 
-So from LibGDX we need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, desktop (native) in our case. We also want to include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
+From LibGDX we need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, which is desktop (native) in our case. We also want to include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
 
 # Let there be darkness
 
@@ -74,20 +74,19 @@ fun main() {
 }
 
 class MyGame : KtxApplicationAdapter {
-    override fun render() {
- }
+    override fun render() { }
 }
 ```
 
 There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
 
-Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now simply run the `main` method and a black screen should appear. 
+Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now can start our application by running the `main` method.
 
 # Let there be light
 
-A black screen isn't very interesting so let us add game objects, controls, some very simple logic and graphics. 
+A black screen isn't very interesting. To make it more exciting we'll need game objects, keyboard controls, some simple logic and graphics. 
 
-The application adapter comes with two important methods we can override: `create` and `render`. The `create` method is run before the application starts and this is were we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have logic and to draw the game. So lets make functions for those and put them in to the `render` method. 
+The application adapter comes with two important methods we can override: `create` and `render`. The `create` method is run before the application starts and this is were we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have logic and to draw the game. So lets make functions for those and put them in the `render` method. 
 
 ```kotlin
 class MyGame : KtxApplicationAdapter {
@@ -106,7 +105,7 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-With our game application structure outlined lets start by adding some game objects, and what's more fitting than Santa and gifts.  
+With our game application structure outlined lets start by adding some game objects and what's more fitting than Santa and gifts.  
 
 ```kotlin
 data class Santa(val position: Float)
@@ -134,10 +133,10 @@ class MyGame : KtxApplicationAdapter {
 ```
 
 We use Kotlin data classes to represent Santa and ChristmasGifts. For the gifts we give them a random horizontal position and put them at the top of the game screen.
-The `create` method is run after LibGDX is loaded and ensures that we can safely access LibGDX-specific stuff inside it. We don't need that for our data objects so we simply place them as private variables and ignore `create` for now. 
+The `create` method is run after LibGDX is loaded and ensures that we can safely access LibGDX-specific stuff inside it. We don't need that for our data objects so we just place them as private variables and ignore `create` for now. 
 
 
-The next part is to make our game interactive. Luckily input-handling with LibGDX is very easy. 
+The next part is to make our game interactive. Luckily input-handling with LibGDX is easy. 
 
 ```kotlin
  private fun handleInput() {
@@ -153,7 +152,7 @@ The next part is to make our game interactive. Luckily input-handling with LibGD
 
 
 
-Every game needs some good core game play. This game however doesn’t have much of that, but lets add some randomness and "gravity"!
+Every game needs some good core game play. This won't have much of that, but lets add some randomness and "gravity"!
 
 ```kotlin
     private fun logic() {
