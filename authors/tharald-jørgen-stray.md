@@ -1,6 +1,6 @@
 ---
 title: Tharald Jørgen Stray
-socialMediaLink: tharaldstray@gmail.com
+socialMediaLink: 'mailto:tharaldstray@gmail.com'
 company: Bekk
 ---
 
