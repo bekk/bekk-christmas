@@ -35,6 +35,10 @@ This is how logging in with SQRL works from a high level:
 7. The web server establishes a signed in session for the user and sends the URL for that session to the user's SQRL client.
 8. The SQRL client receives the session URL and redirects the user's browser to the signed-in session.
 
+!\[SQRL site specific identity synthesis](https://i.ibb.co/SRgGhk8/sqrl.png)
+
+The above image borrowed from the [SQRL documentation](https://www.grc.com/sqrl/sqrl.htm) nicely illustrates how SQRL generates site specific identities from the site domain name and the user's Master Key.
+
 This relatively simple concept provides us with many desireable characteristics, most notable of which are:
 
 * **No secrets to lose:** Since the web site knows the user only by the site specific public key, which can in no way be used to infer the matching private key (let alone the Master Key), SQRL gives web sites no secrets to keep. The public key is useless for anyone other than the site for which it was made.
