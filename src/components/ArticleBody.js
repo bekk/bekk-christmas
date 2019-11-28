@@ -22,20 +22,21 @@ const ArticleBody = styled.article(
         font-weight: 300;
     }
     h2 {
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
     h3,
     h4,
     h5,
     h6 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
-    p {
+    p, li {
         font-family: FFDINWebProLight, sans-serif;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         line-height: 1.45;
     }
-    p code {
+    p code, 
+    li code {
         background-color: ${theme.secondaryBackgroundColor};
         padding: 3px 4px;
         margin: 0 2px;
@@ -80,6 +81,9 @@ const ArticleBody = styled.article(
         width: 100%;
         max-width: 760px;
         margin: 50px auto;
+    }
+    .gatsby-highlight {
+        font-size: 1.25rem;
     }
     `
 );
