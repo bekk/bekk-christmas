@@ -18,9 +18,9 @@ Using LibGDX with Kotlin can feel a little bit dated and clunky, it is a Java fr
 
 Enough with the introductions, lets make a game!
 
-While LibGDX supports multiple platforms, with this blogpost, we will focus on making a small game for a desktop environment. To get started we need an empty gradle Kotlin project. Fire up your favorite editor and create a Kotlin project. 
+While LibGDX supports multiple platforms in this article we will focus on making a small game for a desktop environment. To get started we need an empty Gradle Kotlin project. Fire up your favorite editor and create a new empty Gradle Kotlin project. 
 
-We add the dependencies we need for LibGDX and LibKTX. Your gradle file should look something like this:
+We are going to use LibGDX and LibKTX, so lets add to our dependency list. The `build.gradle` file should look something like this:
 
 ```gradle
 plugins {
@@ -52,15 +52,12 @@ compileKotlin {
 }
 ```
 
-Here we add dependencies for LibGDX. We need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, desktop in our case. We include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
+So from LibGDX we need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, desktop (native) in our case. We also want to include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
 
 
 # Let there be darkness
 
-
 Lets make the simplest application we can make. A black screen!
-
-
 
 ```kotlin
 // file: src/main/kotlin/org/veiset/game/MyGame.kt
