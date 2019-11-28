@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 7
+post_day: 4
 title: Never use toString() for behaviour
 image: 'https://picsum.photos/id/964/800/300?blur=5'
 ingress: >-
