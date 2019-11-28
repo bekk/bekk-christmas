@@ -18,13 +18,10 @@ authors:
 ---
 ## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've never used it before. StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. 
-
-With Hooks and React 17 just around the corner, StrictMode becomes a increasingly powerful tool to track down bad practices.
-
-As stated in [React's official documentation](https://reactjs.org/docs/strict-mode.html), StrictMode helps you with the 
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://medium.com/nmc-techblog/wait-youre-not-using-react-strictmode-a9713927a33b). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and React 17 just around the corner, StrictMode is becoming an increasingly powerful tool for locating bad practices.
 
 #### Unsafe lifecycle methods
+
 From 16.9, React throws a warning if you are using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. Hopefully, you have converted those methods to safer alternatives or at least added the `UNSAFE_`-prefix Those methods using those will only result in a warning
 - Identify
 
@@ -61,7 +58,7 @@ Or just a single component:
 </App>
 ```
 
-If you want, you can play with (Kent C. Dodds')[https://twitter.com/kentcdodds] CodeSandbox below:
+If you want, you can play with [Kent C. Dodds'](https://twitter.com/kentcdodds) CodeSandbox below:
 
 <iframe
      src="https://codesandbox.io/embed/y01q7vmpnz?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1"
