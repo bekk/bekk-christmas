@@ -18,7 +18,8 @@ links:
     url: 'https://sqrl.grc.com/'
   - title: 'Steve Gibson''s SQRL presentation at OWASP Dublin (Oct 2019):'
     url: 'https://www.youtube.com/watch?v=uU1fY_xm9BE'
-authors: []
+authors:
+  - Øystein Grande Jaren
 ---
 SQRL was originally invented in 2013 by Steve Gibson (these days best known as host of the podcast Security Now). Over the past few years a lot of work has gone into perfecting the SQRL standard, and recently several client and server implementations have been developed, making now a good time to start experimenting with this fascinating technology.
 
