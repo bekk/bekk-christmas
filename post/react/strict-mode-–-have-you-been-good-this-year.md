@@ -9,23 +9,32 @@ ingress: >-
   similar – StrictMode.
 description: ''
 links:
-  - title: React StrictMode
+  - title: Strict Mode
     url: 'https://reactjs.org/docs/strict-mode.html'
   - title: How to Enable React Strict Mode
     url: 'https://kentcdodds.com/blog/react-strict-mode'
 authors:
   - Markus Rauhut
 ---
-## What is StrictMode and why should i use it?
+## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've never used it before. StrictMode does not render anything visual (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've never used it before. StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. 
 
-StrictMode helps you with:
-1) Identifying unsafe lifecycles
-2) Warning about legacy string ref API usage
-3) Warning about deprecated `findDOMNode` usage
-4) Detecting unexpected side effects
-5) Detecting legacy context API
+With Hooks and React 17 just around the corner, StrictMode becomes a increasingly powerful tool to track down bad practices.
+
+As stated in [React's official documentation](https://reactjs.org/docs/strict-mode.html), StrictMode helps you with the 
+
+#### Unsafe lifecycle methods
+React 16.9 deprecated the lifecycle methods `componentWillMount, componentWillReceiveProps and componentWillUpdate. Until React 17 is released, using those will only result in a warning 
+- Identify
+
+#### Deprecated code
+- Warning about deprecated `findDOMNode` usage
+- Warning about legacy string ref API usage
+- Detecting legacy context API
+
+####  Unexpected side effects
+- Detecting...
 
 
 ## How to use StrictMode?
@@ -51,6 +60,8 @@ Or just a single component:
   <Component 2 />
 </App>
 ```
+
+If you want, you can play with (Kent C. Dodds')[https://twitter.com/kentcdodds] CodeSandbox below:
 
 <iframe
      src="https://codesandbox.io/embed/y01q7vmpnz?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1"
