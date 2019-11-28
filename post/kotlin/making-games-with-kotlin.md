@@ -81,13 +81,13 @@ class MyGame : KtxApplicationAdapter {
 
 There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
 
-Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now simply run the `main` method and a black screen should appear. Now, lets make a game!
+Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now simply run the `main` method and a black screen should appear. 
 
 # Let there be light
 
 A black screen isn't very interesting so let us add game objects, controls, some very simple logic and graphics. 
 
-We have two important functions in our application adapter: `create` and `render`. The `create` function is run before the application starts and this is were we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have logic and to draw the game. So lets make functions for those and put them in to the `render` method!
+The application adapter comes with two important methods we can override: `create` and `render`. The `create` method is run before the application starts and this is were we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have logic and to draw the game. So lets make functions for those and put them in to the `render` method. 
 
 ```kotlin
 class MyGame : KtxApplicationAdapter {
@@ -106,7 +106,7 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-With our game structure finished, lets add gifts and Santa! 
+With our game application structure outlined lets start by adding some game objects, and what's more fitting than Santa and gifts.  
 
 ```kotlin
 data class Santa(val position: Float)
@@ -133,7 +133,11 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-Gdx allows us to check for input state. 
+We use Kotlin data classes to represent Santa and ChristmasGifts. For the gifts we give them a random horizontal position and put them at the top of the game screen.
+The `create` method is run after LibGDX is loaded and ensures that we can safely access LibGDX-specific stuff inside it. We don't need that for our data objects so we simply place them as private variables and ignore `create` for now. 
+
+
+The next part is to make our game interactive. Luckily input-handling with LibGDX is very easy. 
 
 ```kotlin
  private fun handleInput() {
@@ -145,7 +149,11 @@ Gdx allows us to check for input state.
     }
 ```
 
-Every game needs some good core game play. This game however doesn’t have much of that, but we do have some randomness and "gravity"!
+... input info...
+
+
+
+Every game needs some good core game play. This game however doesn’t have much of that, but lets add some randomness and "gravity"!
 
 ```kotlin
     private fun logic() {
@@ -158,7 +166,9 @@ Every game needs some good core game play. This game however doesn’t have much
     }
 ```
 
-Lastly let us draw our amazing game! To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function LibKTX comes with...
+So whats the core of our game? We add a new gift every now and then and then move them downwards by one pixel every frame. I gotta admit that this is maybe not the most exciting game play, but hey, it does something.
+
+With input, game play and data objects out of the way let us draw our amazing game! 
 
 ```kotlin
 class MyGame : KtxApplicationAdapter {
@@ -193,18 +203,22 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
+To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function LibKTX comes with...
+
+
 # Putting it all together
 
 [Full source code](https://gist.github.com/veiset/4f4e4dd59a95d6d12bc1a828b64955a1)
 
 ![gameplay image](/assets/gameplay_simple_game.gif)
 
-The game might be simple, and we can almost argue that it's not a game at all, it has no real logic and no end goal, but it does highlights some of the features of LibGDX and ktx. You can build upon this to make cool games. 
+The game might be simple, and we can almost argue that it's not a game at all, it has no real game play and no end goal, but it does highlights some of the features of LibGDX and LibKTX. You can build upon this to make cool games. 
 
+I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
 
-As a side project over the last year I've been making a game using Kotlin, LibGDX and LibKTX. Take a look.
+You can make pretty cool stuff using Kotlin, LibGDX and LibKTX. As a side project over the last year I've been making a game and I can wholeheartedly recommend you to do the same. Check out the video below to see an example of what you can make using Kotlin! Peace out and happy holidays.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DIsHFzZfyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+
 
