@@ -2,7 +2,7 @@
 calendar: ml
 post_year: 2019
 post_day: 19
-title: Reinforcement learning examples
+title: The quest for general intelligence
 image: >-
   https://images.unsplash.com/photo-1546704864-07235973413d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
