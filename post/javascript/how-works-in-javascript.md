@@ -76,7 +76,7 @@ The spread operator lets us expand elements such as objects and arrays. Lets see
 ```js
 const withoutMarge = ["Lisa", "Homer", "Bart"]
 
-const wholeFamily = ["Marge", ...lisaHomerBart];
+const wholeFamily = ["Marge", ...withoutMarge];
 ```
 
 The operation above "spreads" the `withoutMarge`-array into the `wholeFamily` array. And the resulting array will contain all the names `["Marge", "Lisa", "Homer", "Bart"]`. Spreading can also be used to extend objects, like this:
@@ -113,7 +113,7 @@ const person = {
 
 const overwritten = {
   ...person,
-  homeTown: "New york"
+  homeTown: "New York"
 }
 
 console.log(overwritten);
@@ -121,7 +121,7 @@ console.log(overwritten);
 {
   firstName: "Lisa",
   lastName: "Simpson",
-  homeTown: "New york"
+  homeTown: "New York"
 }
 */
 ```
