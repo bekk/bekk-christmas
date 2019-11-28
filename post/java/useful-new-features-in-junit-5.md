@@ -4,13 +4,13 @@ post_year: 2019
 post_day: 9
 title: Useful new features in JUnit 5
 links:
+  - title: JUnit 5 - Assertions
+    url: 'https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions'
+  - title: JUnit 5 - Nested tests
+    url: 'https://junit.org/junit5/docs/current/user-guide/#writing-tests-nested'
   - title: JUnit 5 - Display names
     url: >-
       https://junit.org/junit5/docs/current/user-guide/#writing-tests-display-names
-  - title: JUnit 5 - Nested tests
-    url: 'https://junit.org/junit5/docs/current/user-guide/#writing-tests-nested'
-  - title: JUnit 5 - Assertions
-    url: 'https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions'
 authors:
   - John Ringø
 ---
