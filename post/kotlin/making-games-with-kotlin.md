@@ -16,8 +16,6 @@ Using LibGDX with Kotlin can feel a little bit dated and clunky, it is a Java fr
 
 # Project setup
 
-Enough with the introductions, lets make a game!
-
 While LibGDX supports multiple platforms in this article we will focus on making a small game for a desktop environment. To get started we need an empty Gradle Kotlin project. Fire up your favorite editor and create a new empty Gradle Kotlin project. 
 
 We are going to use LibGDX and LibKTX, so lets add to our dependency list. The `build.gradle` file should look something like this:
@@ -77,21 +75,40 @@ fun main() {
 }
 
 class MyGame : KtxApplicationAdapter {
-    override fun render() {
-        clearScreen(0f, 0f, 0f, 0f)
-    }
+    override fun render() { }
 }
 ```
 
 There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
 
-Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen overriding `render` to clear the screen is enough. And that's it! Now simply run the `main` method and a black screen should appear. 
+Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now simply run the `main` method and a black screen should appear. Now, lets make a game!
 
 # Let there be light
 
-A black screen isn't very interesting so let us add game objects, controls, some very simple logic and graphics.
+A black screen isn't very interesting so let us add game objects, controls, some very simple logic and graphics. 
 
-First and most importantly we need gifts, and santa! 
+We have two important functions in our application adapter: `create` and `render`. The `create` function is run before the application starts and this is were we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have logic and to draw the game. So lets make functions for those and put them in to the `render` method!
+
+```kotlin
+class MyGame : KtxApplicationAdapter {
+
+    override fun create() { }
+
+    override fun render() {
+        handleInput()
+        logic()
+        draw()
+    }
+
+    private fun handleInput() { }
+    private fun logic() { }
+    private fun draw() { }
+}
+```
+
+
+With our application finished, lets add gifts and Santa! 
+
 
 ```kotlin
 data class Santa(val position: Float)
@@ -99,6 +116,24 @@ data class ChristmasGift(
     var height: Float = 720f,
     val position: Float = (40..1200).random().toFloat()
 )
+
+class MyGame : KtxApplicationAdapter {   
+    private var player = Santa(40f)
+    private var gifts = emptyList<ChristmasGift>()
+
+    override fun create() { }
+
+    override fun render() {
+        handleInput()
+        logic()
+        draw()
+    }
+
+    private fun handleInput() { }
+    private fun logic() { }
+    private fun draw() { }
+}
+
 ```
 
 Gdx allows us to check for input state. 
@@ -113,7 +148,7 @@ Gdx allows us to check for input state.
     }
 ```
 
-Every game needs some good core game play. This game however doesn’t have much of that.
+Every game needs some good core game play. This game however doesn’t have much of that, but we do have some randomness and "gravity"!
 
 ```kotlin
     private fun logic() {
@@ -127,9 +162,18 @@ Every game needs some good core game play. This game however doesn’t have much
 ```
 
 
-Lastly let us draw our amazing game!
+Lastly let us draw our amazing game! To draw simple shapes in LibGDX we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html). 
 
 ```kotlin
+class MyGame : KtxApplicationAdapter {
+    private lateinit var renderer: ShapeRenderer
+    private var player = Santa(40f)
+    private var gifts = emptyList<ChristmasGift>()
+    
+    override fun create() {
+        renderer = ShapeRenderer()
+    }
+
     private fun draw() {
         clearScreen(0f, 0f, 0f, 0f)
 
@@ -145,50 +189,13 @@ Lastly let us draw our amazing game!
             renderer.rect(player.position, 80f, 80f, 80f)
         }
     }
+
+    private fun logic() { ... }
+    private fun draw() { ... }
 ```
 
 
 # Putting it all together
-
-```kotlin
-
-fun main() {
-    val config = LwjglApplicationConfiguration().apply { ... }
-    LwjglApplication(MyGame(), config)
-}
-
-data class Santa(...)
-data class ChristmasGift(...)
-
-class MyGame : KtxApplicationAdapter {
-    private lateinit var renderer: ShapeRenderer
-
-    private var player = Santa(40f)
-    private var gifts = emptyList<ChristmasGift>()
-
-    override fun create() {
-        renderer = ShapeRenderer()
-    }
-
-    override fun render() {
-        handleInput()
-        logic()
-        draw()
-    }
-
-    private fun handleInput() {
-       ...
-    }
-
-    private fun logic() {
-        ...
-    }
-
-    private fun draw() {
-        ...
-    }
-}
-```
 
 [Full source code](https://gist.github.com/veiset/4f4e4dd59a95d6d12bc1a828b64955a1)
 
