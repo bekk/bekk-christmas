@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 13
+post_day: 14
 title: Use your time wisely! Run tests in parallel
 image: >-
   https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
