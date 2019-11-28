@@ -6,17 +6,21 @@ title: WIP - Making games with Kotlin!
 authors:
   - Vegard Veiset
 ---
-Who doesn’t love flashy fun things! LibGDX is a library that makes it easy and fun to work with graphics in Java. But what about Kotlin, how does LibGDX work with Kotlin and how can we use it?
+Who doesn’t love flashy fun things! [LibGDX](https://libgdx.badlogicgames.com) is a library that makes it easy and fun to work with graphics in Java. ...more about LibGDX...
 
-# ktx
+But what about Kotlin, how does LibGDX work with Kotlin and how can we use it?
 
-KTX Is a wrapper library to make LibGDX idiomatic Kotlin. 
+# Introducing LibKTX
+
+Using LibGDX with Kotlin can feel a little bit dated and clunky, it is a Java framework after all, not a framework tailored for Kotlin. To make LibGDX feel more idiomatic to Kotlin we are lucky enough to have a library to help us with that; [ktx](https://github.com/libktx/ktx) is a library aimed to make libGDX feel like a Kotlin framework. It's still LibGDX, just with syntax that feels more natural in Kotlin.
 
 # Project setup
 
-While libgdx supports multiple platforms we will only be focusing on making a small game for a desktop environment. To get started we need an empty gradle kotlin project. 
+Enough with the introduction, lets make a game!
 
-We add the dependencies we need for libgdx and ktx. Your gradle file should look something like this:
+While LibGDX supports multiple platforms, with this blogpost, we will focus on making a small game for a desktop environment. To get started we need an empty gradle Kotlin project. Fire up your favorite editor and create a Kotlin project. 
+
+We add the dependencies we need for LibGDX and LibKTX. Your gradle file should look something like this:
 
 ```gradle
 plugins {
@@ -48,15 +52,19 @@ compileKotlin {
 }
 ```
 
-Here we add dependencies for libgdx. We need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, in our case desktop. We also want to use `ktx-app` and `ktx-graphic` for idiomatic kotlin syntax when using libgdx. 
+Here we add dependencies for LibGDX. We need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, desktop in our case. We include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
 
 
 # Let there be darkness
 
-Let's make the simplest application we can make. A black screen!
+
+Lets make the simplest application we can make. A black screen!
+
+
 
 ```kotlin
-package src.org.veiset.game
+// file: src/main/kotlin/org/veiset/game/MyGame.kt
+package org.veiset.game
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
@@ -71,13 +79,16 @@ fun main() {
     LwjglApplication(MyGame(), config)
 }
 
-
 class MyGame : KtxApplicationAdapter {
     override fun render() {
         clearScreen(0f, 0f, 0f, 0f)
     }
 }
 ```
+
+There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to set our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
+
+Lastly we need an actual game adapter that will contain our game. To make we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our super simple black screen overriding `render` to clear the screen is enough. And that's it!
 
 # Let there be light
 
@@ -186,4 +197,4 @@ class MyGame : KtxApplicationAdapter {
 
 ![gameplay image](/assets/gameplay_simple_game.gif)
 
-This is a very simple example to get you familiarized with libgdx and ktx. You can build upon this to make cool games. I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+The game might be simple, and we can almost argue that it's not a game at all, it has no real logic and no end goal, but it does highlights some of the features of LibGDX and ktx. You can build upon this to make cool games. I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
