@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 12
+post_day: 5
 title: Get started with JUnit 5
 ingress: >-
   JUnit 5 was released two years ago. Why are you still running your tests with
