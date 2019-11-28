@@ -52,7 +52,7 @@ But did you know that _anyone_ can contribute by composing their own proposals t
 
 And. If you have the time, take a stroll down memory lane and read [Eirik's article from last year's calendar](https://javascript.christmas/2018/1) on the committee work and the standard itself. 
 
-Or, if you're lucky, perhaps one of the calendar hatches will be written by one of the maintainers of EcmaScript? Who knows😏.
+Or, if you're lucky, perhaps one of the coming calendar hatches will be written by one of the maintainers of EcmaScript? Who knows😏.
 
 # Follow the calendar! 
 
