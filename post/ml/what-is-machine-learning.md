@@ -4,12 +4,14 @@ post_year: 2019
 post_day: 2
 title: What is Machine Learning?
 image: >-
-  https://i.iheart.com/v3/re/new_assets/5a0ca9ec111a943785eaff48?ops=contain(740,0)
+  https://i.barkpost.com/wp-content/uploads/2016/03/labrachick.jpg?q=70&fit=crop&crop=entropy&w=808&h=500
 ingress: Are you eating fried chicken or a dog when you enter a KFC?
 authors:
   - Audun Eltvik
 ---
-One of the pictures above is of a group of labradoodles. The other is of a bunch of fried chicken. Which is which? While this is an easy problem for most people, this was for a long time considered a virtually impossible problem for computers. Most traditional programming takes an input, performs a series of well defined steps, and produce some desired output. But what are the steps of recognizing a dog or a fried chicken?
+One of the pictures below is of a group of labradoodles. The other is of a bunch of fried chicken. Which is which? While this is an easy problem for most people, this was for a long time considered a virtually impossible problem for computers. Most traditional programming takes an input, performs a series of well defined steps, and produce some desired output. But what are the steps of recognizing a dog or a fried chicken?
+
+![](/assets/labrachick.jpg)
 
 When we recognize a dog or a piece of fried chicken, we don't go through a series of explicit steps. We have simply been exposed to enough dogs and pieces of fried chicken to know the difference. This is an important feature of learning: an ability to generalize from experience.
 
