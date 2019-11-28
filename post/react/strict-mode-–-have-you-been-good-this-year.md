@@ -44,8 +44,8 @@ Using StrictMode is amazingly easy: all you have to do is to wrap whatever you w
 ```js 
 <React.StrictMode>
   <App>
-    <Component 1 />
-    <Component 2 />
+    <Component1 />
+    <Component2 />
   </App>
 </React.StrictMode>
 ```
@@ -55,9 +55,9 @@ Or just a single component:
 ```js 
 <App>
   <React.StrictMode>
-    <Component 1 />
+    <Component1 />
   </React.StrictMode>
-  <Component 2 />
+  <Component2 />
 </App>
 ```
 
