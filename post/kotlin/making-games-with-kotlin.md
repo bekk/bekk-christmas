@@ -166,7 +166,7 @@ Every game needs some good core game play. This game however doesn’t have much
     }
 ```
 
-So whats the core of our game? We add a new gift every now and then and then move them downwards by one pixel every frame. I gotta admit that this is maybe not the most exciting game play, but hey, it does something.
+That's the game play. We add a new gift every now and then and then move them downwards by one pixel every frame. I gotta admit that this is maybe not the most exciting game to date, but hey, it does something.
 
 With input, game play and data objects out of the way let us draw our amazing game! 
 
@@ -203,7 +203,7 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function LibKTX comes with...
+First things first. We need to clear the screen (`cleanScreen`) so we don't get multiple frames at once. To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function from LibKTX. LibKTX has countless of extension functions and this is where some of the magic comes from. Using only LibGDX we would have to use start a drawing by `renderer.begin()`, do some drawing, and finishing it up by calling `renderer.end()`. LibKTX simplify this and it comes with a huge range of improvements over LibGDX when using Kotlin. Check out the [official site](https://libktx.github.io/) for more examples.
 
 
 # Putting it all together
@@ -212,13 +212,14 @@ To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.c
 
 ![gameplay image](/assets/gameplay_simple_game.gif)
 
-The game might be simple, and we can almost argue that it's not a game at all, it has no real game play and no end goal, but it does highlights some of the features of LibGDX and LibKTX. You can build upon this to make cool games. 
+The game might be simple, and we can almost argue that it's not a game at all, it has no real game play and no end goal, but it does highlights some of the features of LibGDX and LibKTX. And with enough imagination you can almost see Santa running around trying to pick up the green gifts, saving Christmas. 
 
-I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+# Going further
+
+If you want to see how to structure a proper LibKTX project that includes some assets and sounds you should take a look at [SimpleKtxGame](https://github.com/Quillraven/SimpleKtxGame/wiki). I can also highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
 
 You can make pretty cool stuff using Kotlin, LibGDX and LibKTX. As a side project over the last year I've been making a game and I can wholeheartedly recommend you to do the same. Check out the video below to see an example of what you can make using Kotlin! Peace out and happy holidays.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DIsHFzZfyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 
