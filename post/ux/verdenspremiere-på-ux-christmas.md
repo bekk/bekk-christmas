@@ -2,67 +2,64 @@
 calendar: ux
 post_year: 2019
 post_day: 1
-title: Verdenspremiere på UX.christmas
+title: The world premier of UX.christmas
 image: >-
   https://images.unsplash.com/photo-1479740030693-66ad10f3a7b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
-  :Tada: UX.christmas er herved åpnet. Velkommen til verdens første Bekk
-  UX-julekalender. 24 luker fra 24 bekkere og en liten rant om titler og
-  tunnelsyn.
+  :tada: With this post, I declare UX.christmas hereby launched. Welcome to the
+  world’s first UX advent calendar from Bekk – 24 articles from 24 Bekkers, one
+  for each of the 24 days until Christmas.
 links:
-  - title: Pseudo Design Titles
+  - title: Make your own «Pseudo Design Titles»
     url: 'https://medium.com/r/?url=https%3A%2F%2Fdesigntitles.com%2F'
   - title: The Truth About Design Titles
     url: 'https://www.vanschneider.com/truth-design-titles'
 authors:
   - Helen Le
 ---
-## Aller først, litt forventningsstyring
+## But first, some context.
 
-Hva kan du forvente å få? UX.christmas er et kollektivt dugnadsprosjekt der over 24 Bekk-skribenter skal bidra med 24 luker med faglige drops. Frem til selveste julaften kommer vi til å dekke temaer som kreativitet, historiefortelling, produktuvtikling - alt fra variable fonter, dark patterns (13. desember-luka👻) til hypoteseteknikk og UU.
+What can one expect from a UX advent calendar from Bekk? UX.christmas is a collaborative project where 24 writers have written as many articles, full of industry-relevant tidbits. The “windows” of this advent calendar cover a variety of topics like creativity, storytelling, and product development. Everything from variable fonts and dark patterns (on Friday the 13th of course 👻) to hypothesis testing and digital accessibility.
 
-Du kan forvente å lese innlegg på både norsk og engelsk. De er akkurat passe korte (2–3 min lesetid) til å lese på vei til jobb eller over frokostbordet. Får du mersmak, kan du åpne flere kalendere og luker gjennom Bekk sine 11 (!) andre kalendere. Sjekk ut bekk.christmas.
+Some articles are written in English, and some in Norwegian. They are just short enough (2-3 minute read) to squeeze in on the way to work or at the breakfast table. But if that isn’t enough to scratch your \[faglig] itch this advent, you can always try out a window on one of the 11 (!) other calendars Bekk is publishing this holiday season. Check out \[bekk.christmas](url) to see them all.
 
-**Her er en liten sniktitt til lukene som kommer i UX.christimas 👀**
+**Here are a couple of sneak previews of what you can come to expect from UX.christmas: 👀**
 
-Erik Mathisen, tekstforfatter i Bekk skal blant annet gi dere en liten historietime - om nettopp historier:
+December 6th: Copywriter Erik Mathisen tells us a little story on storytelling…
 
-> At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.
+> “At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.“
 
-Sniktitt nr. 2 her. 
+December 4: Designer Sonja Porter has a wake-up call when it comes to Maslow’s Hierarchy of Needs...
 
-## Faget mitt. Og faget ditt. 
-
-I år ønsket vi i Interactive i Bekk å lage en helt egen julekalender for UX. Her ble det fort en diskusjon om hva den egentlig skal hete og hva den skal inneholde. Er UX et treffende begrep og treffer det alle rollene innenfor fagområdet? 
-
-I bransjen finnes det mange titler og roller. I Bekk er grafisk designere, interaksjonsdesignere, tjenestedesignere, UX-ere, produktdesignere, produktutvikler, frontend-utviklere, fullstackere, prosjektledere og masse mer. 
-
-Titlene gjør det enkelt å skille fagområdene og dyrke spisskompetansen. Det er lett å identifisere og ansvarliggjøre fagområdet til konkrete personer og ikke minst sørge for tverrfaglighet i teamet. Min erfaring er at titlene også lett kan skape båser, ansvarsfraskrivelse og mindre tverrfaglighet.
-
-Interaksjonsdesignere kjører brukertester og sørger for god flyt. Visuelle designere står for konsistent design og utvikleren sørger for at det tekniske faller på plass. Det er naturlig for oss å lene oss til fagbåsen vi selv er i, og tenke løsning innenfor det vi har best kompetanse på. Et slikt tunnelsyn kan begrense kreativ tenkning og gjør at vi fort lener oss på åpenbare løsninger. 
-
- Å være tro til faget sitt trenger ikke alltid å være fasiten. Den viktige innsiktsworkshopen og brukertesten på minst fem personer kan gå på bekostning av smidig utvikling og viktige prioriteringer. Selv om du er "eksperten" i rommet, er det ikke sikkert du har den beste løsningen eller vet hva det er viktig å prioritere akkurat nå.
-
-## Hvem har egentlig ansvar for UX?
-
-Hva om hele teamet, uavhengig av fagområde, er mer nysgjerrige i hverandres fagområder? Utvid horisonten. Par-design med produkteier, øv på stil og tone med utviklere, ta over kundeservice for en dag eller prøv å kode litt i nettleseren. Se forbi titlene og få innsikt i hva de andre driver med. I bunn og grunn jobber vi jo sammen for å oppnå det samme. Om vi visker ut rollene, så kan hele teamet jobbe målrettet for å gjøre det beste for produktet og brukerne. På den måten kan hele teamet ta ansvar og eierskap til hele brukeropplevelsen –– ikke bare sitt eget fagområde.
-
-\- - tegneseriestripe her - -
+> “Way back in 1943 Abraham Maslow published his “Hierarchy of needs” – a pyramid describing the forces that motivate us, and the order in which we strive to meet them. For many designers, this 76-year-old model still informs the design decisions we make every day. But did you know that Maslow moved on to an updated model only a few years later? Or that psychologists stopped using Maslow’s pyramid years ago?“
 
 ## 
 
-## Alle er UX-ere.
+## My work, your work.
 
-Titler kan som nevnt sette oss i bås. En utvikler kan også tenke på stil og tone, samtidig som en visuell designer kan tenke arkitektur og ryddig kode. Legger vi titlene til side, kan teamet samarbeide og fokusere på hva vi skal oppnå. Vi bør utfordre hverandre, i motsetning til å detaljstyre og gjøre x&y etter håndboka. Er det så viktig med disse titlene, så lenge vi alle leverer verdi?
+This year, a couple of us in Bekk’s Interactive department decided to make our own UX advent calendar to compliment the slurry of development calendars produced by the Technology department. Only a breath or two later, a discussion arose about what it would be called and what type of articles we should include. Is “UX” the right term? Does it cover all of the specialities we have in our discipline?
 
-Er du usikker på hvilken tittel som passer deg best?\
-Ta en titt på: [Pseudo Design Titles](https://medium.com/r/?url=https%3A%2F%2Fdesigntitles.com%2F)
+In our industry, there are a ton of titles and role-descriptions for what we do. In Bekk we have Graphic Designers, Interaction Designers, Service Designers, UX Designers, Product Designers, Product Developers, Front-end Developers, Full-stack Developers, and Project Managers to name a few.
 
-Ute etter sannheten om designtitler?\
-Finn sannheten en gang for alle i [dette troverdige blogginnlegget](https://medium.com/r/?url=https%3A%2F%2Fwww.vanschneider.com%2Ftruth-design-titles)
+These titles make it easy to distinguish between practice areas and foster expertise within our own discipline. They make it easy to identify individuals, assign responsibility within a team, and assure cross-disciplinary collaboration. My experience is that the titles can also easily create silos and disclaimers within the team.
 
-God 1. desember. Takk som åpnet første luke. Håper du vil åpne flere.
+Interaction Designers facilitate user testing and create user-flows. Visual or Graphic Designers focus on combining visuals and other elements to create clear communication, and developers make sure that the technology delivers. It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.
 
-Helen Le
+Being true to your discipline does not always have to be the golden standard. That super-important insight workshop and user test you’ve been planning maybe isn’t the best for your agile team and could hinder other important priorities. Even if you are the design expert in the room, that doesn’t necessarily mean that you have the correct answer when it comes to users, or that you know what is important to prioritise right now.
 
+## Who is actually responsible for user experience?
+
+What if the whole team, no matter their background, was more curious about each other's work? Expand your horizons – co-design with a product owner. Practice style and tone of voice with a developer. Take over the customer service lines for a day, or try your hand at in-browser coding. Look past titles and figure out what your teammates are doing. At the end of the day, we are all working together to achieve the same thing (hopefully). By erasing our roles, the whole team can work towards a common goal: the best product for our users. Let the whole team take responsibility and feel ownership of the user experience – not just their own discipline.
+
+```
+![Cartoon strip](https://ibb.co/rFcxtmc)
+```
+
+## Everyone is a UXer.
+
+Titles can so easily put us in a box. But why can’t a developer think about tone of voice, while a Visual Designer considers technical architecture and clean code. By putting titles to the side, a team can collaborate and focus on what they want to achieve. We should challenge one another, not micromanage eachother or cling on to the methods we learned in school. Do we really need these titles, as long as we are delivering value?
+
+Happy December 1st! Thanks for opening the first window of our advent calendar. Remember to follow along for a new design tidbit every day until Christmas Eve.
+
+Helen Le\
 – Innovator of Interaction Interpretation & UX.christmas-pusher at Bekk
