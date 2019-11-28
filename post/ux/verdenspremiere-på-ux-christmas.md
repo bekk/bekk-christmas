@@ -16,6 +16,8 @@ links:
 authors:
   - Helen Le
 ---
+![Illustratrion christmastree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif)
+
 ## But first, some context.
 
 What can one expect from a UX advent calendar from Bekk? UX.christmas is a collaborative project where 24 writers have written as many articles, full of industry-relevant tidbits. The “windows” of this advent calendar cover a variety of topics like creativity, storytelling, and product development. Everything from variable fonts and dark patterns (on Friday the 13th of course 👻) to hypothesis testing and digital accessibility.
@@ -33,8 +35,6 @@ Some articles are written in English, and some in Norwegian. They are just short
 
 > “At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.“
 
-
-
 ## My work, your work.
 
 This year, a couple of us in Bekk’s Interactive department decided to make our own UX advent calendar to compliment the slurry of development calendars produced by the Technology department. Only a breath or two later, a discussion arose about what it would be called and what type of articles we should include. Is “UX” the right term? Does it cover all of the specialities we have in our discipline?
@@ -51,7 +51,9 @@ Being true to your discipline does not always have to be the golden standard. Th
 
 What if the whole team, no matter their background, was more curious about each other's work? Expand your horizons – co-design with a product owner. Practice style and tone of voice with a developer. Take over the customer service lines for a day, or try your hand at in-browser coding. Look past titles and figure out what your teammates are doing. At the end of the day, we are all working together to achieve the same thing (hopefully). By erasing our roles, the whole team can work towards a common goal: the best product for our users. Let the whole team take responsibility and feel ownership of the user experience – not just their own discipline.
 
-![Cartoon strip of a developer talking to a designer ](https://i.ibb.co/PF9cYN9/Artboard-1.png "A true story.")
+**A true story:**
+
+![Cartoon strip of a developer talking to a designer ](https://i.ibb.co/PF9cYN9/Artboard-1.png)
 
 ## Everyone is a UXer.
 
