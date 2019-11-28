@@ -49,4 +49,4 @@ It remains to be seen if SQRL will get enough traction to become a real "passwor
 
 SQRL Client apps are available and in development for all major platforms (Windows, Mac, Linux, Android, iOS, as well as browser plugins), and server libraries exist for .NET Core, Java, Go and more. There is even a Wordpress plugin.
 
-To learn more and try out SQRL for yourself, check out the links below.
+To learn more and try out SQRL for yourself, check out the links below. (The documentation actually makes for a surprisingly engaging read!)
