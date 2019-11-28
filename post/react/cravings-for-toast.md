@@ -8,6 +8,8 @@ links:
     url: 'https://github.com/facebook/create-react-app'
   - title: Context Docs from React
     url: 'https://reactjs.org/docs/context.html'
+  - title: Hooks Docs from React
+    url: 'https://reactjs.org/docs/hooks-intro.html'
 ---
 Toasts are great, so simple but yet so useful. It is for many a part of their daily life, which is why we will today provide one of the quickest and simplest recipes for making toast. Let's dive in.
 
@@ -82,6 +84,18 @@ const toastReducer = (state, action) => {
     default:
       return [...state]
   }
+}
+```
+Now we have a state manager where we can from any state either append a toast notification or remove a specific one by the `'ADD_TOAST'` and the `'REMOVE_TOAST'` actions. Making use of the reducer in the `ToastContext.Provider` gives us a working toast notification system and should look something like this:
+
+```
+const ToastProvider = (props) => {
+  const reducer = useReducer(toastReducer, [])
+  return (
+    <ToastContext.Provider value={reducer} >
+      {props.children}
+    </ToastContext.Provider>
+  );
 }
 ```
 
