@@ -6,4 +6,4 @@ title: Typesafe Error Handling in Kotlin
 authors:
   - Fredrik Løberg
 ---
-WIP
+WIP.
