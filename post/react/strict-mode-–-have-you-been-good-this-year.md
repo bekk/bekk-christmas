@@ -2,7 +2,11 @@
 calendar: react
 post_year: 2019
 post_day: 1
-title: How to avoid React's Naughty List
+title: How to avoid React's "Naughty List"
+ingress: >-
+  Every year, Santa Claus and his helping elves create a special list for every
+  child in the world: the "Naughty or Nice" list. React has something very
+  similar – StrictMode.
 description: ''
 links:
   - title: React Strict Mode
