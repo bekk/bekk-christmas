@@ -20,7 +20,7 @@ Assertions in general haven’t changed too much from JUnit 4 to JUnit 5, but th
 
 A really cool feature is the ability to group assertions together. Remember in JUnit 4 when you fixed a failing test because of a wrong assertion, only to find out that the next assertion also failed on the following test run? Yeah, no need to be annoyed by such simple things anymore. Enter, grouped assertions:
 
-```
+```java
 @Test
 void groupedAssertions() {
     assertAll("vehicle",
@@ -37,7 +37,7 @@ All assertions in the above test are executed, and you’ll be notified of failu
 
 The ability to have nested tests opens up a whole new field of play when it comes to grouping tests that belong together. Combine this with different display name generators (introduced below) and you have a powerful tool to write tests that are simple to read and understand the intent of.
 
-```
+```java
 @Nested
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class Tesla_Model_X {
