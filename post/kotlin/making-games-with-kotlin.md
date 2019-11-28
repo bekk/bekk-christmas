@@ -16,7 +16,7 @@ Using LibGDX with Kotlin can feel a little bit dated and clunky, it is a Java fr
 
 # Project setup
 
-Enough with the introduction, lets make a game!
+Enough with the introductions, lets make a game!
 
 While LibGDX supports multiple platforms, with this blogpost, we will focus on making a small game for a desktop environment. To get started we need an empty gradle Kotlin project. Fire up your favorite editor and create a Kotlin project. 
 
@@ -86,9 +86,9 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to set our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
+There is not much to the example above. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
 
-Lastly we need an actual game adapter that will contain our game. To make we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our super simple black screen overriding `render` to clear the screen is enough. And that's it!
+Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen overriding `render` to clear the screen is enough. And that's it! Now simply run the `main` method and a black screen should appear. 
 
 # Let there be light
 
