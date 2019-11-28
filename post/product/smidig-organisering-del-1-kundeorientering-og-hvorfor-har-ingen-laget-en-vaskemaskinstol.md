@@ -2,9 +2,7 @@
 calendar: product
 post_year: 2019
 post_day: 4
-title: >-
-  Smidig organisering, del 1: Kundeorientering, og hvorfor har ingen laget en
-  vaskemaskinstol?
+title: 'Smidig organisering, del 1: Kundeorientering'
 ingress: >-
   Dette er del 1 av 6 kaffeprater om Smidig organisering. Vi er innom ekte
   kundeorientering, raske læringssykluser, og stiller spørsmålet om hvorfor
