@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 9
+post_day: 8
 title: Manage your dependencies
 ingress: >-
   During an application's lifespan you've probably added quite a few
