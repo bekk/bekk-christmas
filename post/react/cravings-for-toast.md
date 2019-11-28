@@ -99,4 +99,53 @@ const ToastProvider = (props) => {
 }
 ```
 
+All that's left is having some visual logic for dispatching actions and viewing the toasts.
+
+## Putting the pieces together
+The last step consists of putting everything together. By using the `useContext`-hook in components, we can act as **Consumers** and thus get access to both the state of toast notification system and to the `dispatch` function of the nearest **Provider**. The final result can look something like this:
+```
+import React, { useContext } from 'react'
+import { ToastContext, ToastProvider } from './Toast'
+
+function App() {
+  return (
+    <div className="App">
+      <ToastProvider>
+        <MainPageStuff />
+        <ToastContainer />
+      </ToastProvider>
+    </div>
+  );
+}
+
+function MainPageStuff() {
+  const [,dispatch] = useContext(ToastContext)
+  return (
+          <header className="..">
+            .....
+            <button onClick={ () => dispatch({type: 'ADD_TOAST', payload: {id:Math.random()}})} className="...">Add a Toast!</button>
+          </header>
+        )
+
+function ToastContainer() {
+  const [toasts] = useContext(ToastContext)
+  return (
+    <div className="...">
+      {toasts.map((toast) => <ToastBody id={toast.id} key={toast.id}/>)}
+    </div>
+  )
+}
+
+function ToastBody({id}) {
+  const [,dispatch] = useContext(ToastContext)
+  return (
+    <div onClick={() => dispatch({type: 'REMOVE_TOAST', payload:{ id }})}  className="...">
+      i am a toast
+    </div>
+  )
+}
+```
+
+Voila! As seen in the `App()`-function we do not need to send down any props to the children component, instead they can extract everything by using the `useContext`-hook. This is how simple it was building a toast notification system. For more information on this topic, please visit the links below.
+
 TODO: skriva klart
