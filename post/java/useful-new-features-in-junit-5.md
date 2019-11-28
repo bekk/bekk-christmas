@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 14
+post_day: 9
 title: Useful new features in JUnit 5
 links:
   - title: JUnit 5 - Display names
