@@ -1,20 +1,21 @@
 ---
 calendar: react
 post_year: 2019
-post_day: 5
+post_day: 20
 title: A recipe for toasts
 links:
-  - title: Create react app
-    url: 'https://github.com/facebook/create-react-app'
+    - title: Create react app
+      url: 'https://github.com/facebook/create-react-app'
 ---
+
 Toasts are great, so simple but yet so useful. It is for many a part of their daily life, which is why we will today provide one of the quickest and simplest recipes for making toast. Let's dive in.
 
 ## The ingredients
 
 The following ingredients are needed:
 
-* Context API
-* Hooks
+-   Context API
+-   Hooks
 
 I would like to clarify that we are going to build a toast notification system using the **context api** and **hooks** from react just to avoid any confusion with regular, delicious toast. These are relatively new tools which makes life a whole lot easier when working with both small-scale and especially large-scale code. A very brief explanation of each tool is:
 
