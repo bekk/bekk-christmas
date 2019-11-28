@@ -3,11 +3,13 @@ calendar: functional
 post_year: 2019
 post_day: 15
 title: Functional Generative Art Using ClojureScript
+ingress: >-
+  This post explores how you can create your own generative art in the web
+  browser using functional programming in the ClojureScript programming
+  language.
 authors:
   - Torgeir Thoresen
 ---
-~ _This post explores how you can create your own generative art in the web browser using functional programming in the ClojureScript programming language._ ~
-
 Creative programming is about writing code to create an expression rather than developing functionality that is nescessarily otherwise usable. It's an enjoyable process, that can be used to create all kinds of art pieces, be it still images, animations, music etc. It is also a great framework for learning new programming languages.
 
 ClojureScript, or cljs for short, is a Lisp that compiles to javascript. It's a dynamic, functional programming language with great support for an interactive development process, making it a perfect fit for the type of explorative, creative programming that generative art often resemble.
