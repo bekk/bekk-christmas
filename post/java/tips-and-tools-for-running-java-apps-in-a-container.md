@@ -1,7 +1,7 @@
 ---
 calendar: java
 post_year: 2019
-post_day: 6
+post_day: 3
 title: Tips and tools for running Java apps in a container
 image: >-
   https://images.unsplash.com/photo-1494961104209-3c223057bd26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1984&q=80
