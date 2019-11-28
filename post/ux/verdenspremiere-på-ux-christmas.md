@@ -51,9 +51,7 @@ Being true to your discipline does not always have to be the golden standard. Th
 
 What if the whole team, no matter their background, was more curious about each other's work? Expand your horizons – co-design with a product owner. Practice style and tone of voice with a developer. Take over the customer service lines for a day, or try your hand at in-browser coding. Look past titles and figure out what your teammates are doing. At the end of the day, we are all working together to achieve the same thing (hopefully). By erasing our roles, the whole team can work towards a common goal: the best product for our users. Let the whole team take responsibility and feel ownership of the user experience – not just their own discipline.
 
-```
-![Cartoon strip](https://ibb.co/rFcxtmc)
-```
+![Cartoon strip](https://i.ibb.co/PF9cYN9/Artboard-1.png)
 
 ## Everyone is a UXer.
 
