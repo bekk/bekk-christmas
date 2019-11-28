@@ -10,5 +10,7 @@ ingress: >-
   diskuterer og spekulerer i denne kaffepraten.
 authors:
   - Moquan Chen
+  - Linda Halvorsen
+  - Jens Andreas Huseby
 ---
 <iframe src="https://anchor.fm/kaffeprathosbekk/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
