@@ -219,7 +219,7 @@ The game might be simple, and we can almost argue that it's not a game at all, i
 
 # Going further
 
-If you want to see how to structure a proper LibKTX project that includes some assets and sounds you should take a look at [SimpleKtxGame](https://github.com/Quillraven/SimpleKtxGame/wiki). I can also highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+If you want to see how to structure a proper LibKTX project that includes assets, sounds and multiple platforms you should take a look at [SimpleKtxGame](https://github.com/Quillraven/SimpleKtxGame/wiki). I can also highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
 
 You can make pretty cool stuff using Kotlin, LibGDX and LibKTX. As a side project over the last year I've been making a game and I can wholeheartedly recommend you to do the same. Check out the video below to see an example of what you can make using Kotlin! Peace out and happy holidays.
 
