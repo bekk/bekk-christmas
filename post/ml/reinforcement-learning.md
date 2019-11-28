@@ -27,7 +27,7 @@ A policy, often denoted by $\pi$, dictates the behaviour of an agent. The ultima
 During training, the agent interacts with the environment, and subsequently updates its policy based on the interaction.
 
 ```md
-!\[An illustration of the agent/environment interaction.](https://ibb.co/86VbPMj)
+![An illustration of the agent/environment interaction.](https://ibb.co/86VbPMj)
 ```
 
 In some cases, an agent can interact with the environment for multiple steps and episodes at a time, collecting the experiences in what’s called a replay buffer. Then, these experiences can be used in training later. This allows training to be completed in batches, which can be more effective, especially when neural networks are used as function approximators.
