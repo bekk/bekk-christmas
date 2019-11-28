@@ -52,12 +52,11 @@ compileKotlin {
 
 So from LibGDX we need the core `gdx` package, the `lwjgl` for opengl bindings and `platform` for our desired platform, desktop (native) in our case. We also want to include `ktx-app` and `ktx-graphic` for idiomatic Kotlin syntax supplied by the LibKTX library. 
 
-
 # Let there be darkness
 
 Lets make the simplest application we can make. A black screen!
 
-```kotlin
+```kotlin
 // file: src/main/kotlin/org/veiset/game/MyGame.kt
 package org.veiset.game
 
@@ -75,7 +74,8 @@ fun main() {
 }
 
 class MyGame : KtxApplicationAdapter {
-    override fun render() { }
+    override fun render() {
+ }
 }
 ```
 
@@ -106,9 +106,7 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-
-With our application finished, lets add gifts and Santa! 
-
+With our game structure finished, lets add gifts and Santa! 
 
 ```kotlin
 data class Santa(val position: Float)
@@ -133,7 +131,6 @@ class MyGame : KtxApplicationAdapter {
     private fun logic() { }
     private fun draw() { }
 }
-
 ```
 
 Gdx allows us to check for input state. 
@@ -160,7 +157,6 @@ Every game needs some good core game play. This game however doesn’t have much
         }
     }
 ```
-
 
 Lastly let us draw our amazing game! To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function LibKTX comes with...
 
@@ -197,11 +193,18 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-
 # Putting it all together
 
 [Full source code](https://gist.github.com/veiset/4f4e4dd59a95d6d12bc1a828b64955a1)
 
-![gameplay image](/assets/gameplay_simple_game.gif)
+![gameplay image](/assets/gameplay_simple_game.gif)
 
-The game might be simple, and we can almost argue that it's not a game at all, it has no real logic and no end goal, but it does highlights some of the features of LibGDX and ktx. You can build upon this to make cool games. I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+The game might be simple, and we can almost argue that it's not a game at all, it has no real logic and no end goal, but it does highlights some of the features of LibGDX and ktx. You can build upon this to make cool games. 
+
+
+As a side project over the last year I've been making a game using Kotlin, LibGDX and LibKTX. Take a look.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9DIsHFzZfyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+I can highly recommend [Beat the High-Score](https://www.youtube.com/watch?v=kDxerDYelLs), a talk from last years KotlinConf by David Wursteisen.
+
