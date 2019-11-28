@@ -25,7 +25,7 @@ With Hooks and React 17 just around the corner, StrictMode becomes a increasingl
 As stated in [React's official documentation](https://reactjs.org/docs/strict-mode.html), StrictMode helps you with the 
 
 #### Unsafe lifecycle methods
-React 16.9 deprecated the lifecycle methods `componentWillMount, componentWillReceiveProps and componentWillUpdate. Until React 17 is released, using those will only result in a warning 
+From 16.9, React throws a warning if you are using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. Hopefully, you have converted those methods to safer alternatives or at least added the `UNSAFE_`-prefix Those methods using those will only result in a warning
 - Identify
 
 #### Deprecated code
