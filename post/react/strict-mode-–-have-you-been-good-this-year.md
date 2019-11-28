@@ -9,7 +9,7 @@ ingress: >-
   similar – StrictMode.
 description: ''
 links:
-  - title: React Strict Mode
+  - title: React StrictMode
     url: 'https://reactjs.org/docs/strict-mode.html'
   - title: How to Enable React Strict Mode
     url: 'https://kentcdodds.com/blog/react-strict-mode'
@@ -18,9 +18,16 @@ authors:
 ---
 ## What is StrictMode and why should i use it?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem. In lacinia leo pellentesque lectus malesuada, et volutpat odio egestas. Curabitur nec ipsum eu lectus ultrices ultricies quis in nisi. Nulla sapien diam, imperdiet non eleifend nec, ornare rutrum ex.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've never used it before. StrictMode does not render anything visual (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum sem. In lacinia leo pellentesque lectus malesuada, et volutpat odio egestas. Curabitur nec ipsum eu lectus ultrices ultricies quis in nisi. Nulla sapien diam, imperdiet non eleifend nec, ornare rutrum ex.
+StrictMode helps you with:
+1) Identifying unsafe lifecycles
+2) Warning about legacy string ref API usage
+3) Warning about deprecated `findDOMNode` usage
+4) Detecting unexpected side effects
+5) Detecting legacy context API
+
+
 ## How to use StrictMode?
 
 Using StrictMode is amazingly easy: all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
@@ -46,10 +53,9 @@ Or just a single component:
 ```
 
 <iframe
-     src="https://codesandbox.io/embed/boring-bouman-9s0b0?autoresize=1&expanddevtools=1&fontsize=14&theme=dark&view=editor"
+     src="https://codesandbox.io/embed/y01q7vmpnz?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="Strict Mode Example"
+     title="React Codesandbox"
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
-
