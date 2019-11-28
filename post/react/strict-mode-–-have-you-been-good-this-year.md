@@ -19,19 +19,20 @@ authors:
 ---
 ## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://medium.com/nmc-techblog/wait-youre-not-using-react-strictmode-a9713927a33b). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and React 17 just around the corner, StrictMode is becoming an increasingly powerful tool for locating bad practices.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://medium.com/nmc-techblog/wait-youre-not-using-react-strictmode-a9713927a33b). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
 
 ### Unsafe lifecycle methods
 
-From 16.9, React throws a warning if you are using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. Hopefully, you have converted those methods to safer alternatives or at least added the `UNSAFE_`-prefix. If you havThose methods using those will only result in a warning
-- Identify
+Since release 16.9 React started issuing a warning when using one of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now. But if you didn't, you should at least add the prefix `UNSAFE`. StrictMode can help you identify unsafe lifecycle methods in your own code and in third-party libraries.
 
 ### Deprecated code
+
 - Warning about deprecated `findDOMNode` usage
 - Warning about legacy string ref API usage
 - Detecting legacy context API
 
 ### Unexpected side effects
+
 - Detecting...
 
 
@@ -59,7 +60,7 @@ Or just a single component:
 </App>
 ```
 
-If you want, you can play with [Kent C. Dodds'](https://twitter.com/kentcdodds) CodeSandbox below:
+If you want to see StrictMode in action, you should check out this CodeSandbox created by [Kent C. Dodds'](https://twitter.com/kentcdodds):
 
 <iframe
      src="https://codesandbox.io/embed/y01q7vmpnz?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1"
