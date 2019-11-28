@@ -82,6 +82,9 @@ const ArticleBody = styled.article(
         max-width: 760px;
         margin: 50px auto;
     }
+    .gatsby-highlight {
+        font-size: 1.25rem;
+    }
     `
 );
 
