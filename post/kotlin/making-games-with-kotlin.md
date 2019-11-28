@@ -165,7 +165,7 @@ Every game needs some good core game play. This won't have much of that, but let
     }
 ```
 
-That's the game play. We add a new gift every now and then and then move them downwards by one pixel every frame. I gotta admit that this is maybe not the most exciting game to date, but hey, it does something.
+That's the game play. We add a new gift every now and then and then move all the gifts down one pixel on the screen. I gotta admit that this is maybe not the most exciting game to date, but hey, it at least does something.
 
 With input, game play and data objects out of the way let us draw our amazing game! 
 
@@ -202,7 +202,11 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-First things first. We need to clear the screen (`cleanScreen`) so we don't get multiple frames at once. To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function from LibKTX. LibKTX has countless of extension functions and this is where some of the magic comes from. Using only LibGDX we would have to use start a drawing by `renderer.begin()`, do some drawing, and finishing it up by calling `renderer.end()`. LibKTX simplify this and it comes with a huge range of improvements over LibGDX when using Kotlin. Check out the [official site](https://libktx.github.io/) for more examples.
+First things first. We need to clear the screen (`cleanScreen`) so we don't get multiple frames drawn at the same time. To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function from LibKTX. 
+
+LibKTX has countless of extension functions and this is where some of the magic comes from. Using only LibGDX we would have to use start a drawing by `renderer.begin()`, do some drawing, and finishing it up by calling `renderer.end()`. LibKTX simplify this and it comes with a huge range of improvements over LibGDX when using Kotlin. Check out the [official site](https://libktx.github.io/) for more examples.
+
+With our renderer set up we can now draw stuff on to the screen, `renderer.color` sets the color and `renderer.rect` draws a rectangle. 
 
 
 # Putting it all together
