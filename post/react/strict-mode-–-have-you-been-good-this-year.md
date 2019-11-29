@@ -32,7 +32,14 @@ Since release 16.9, React throws a warning when using any of the lifecycle metho
 
 ### Unexpected side effects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lectus at sapien sagittis dapibus nec ac magna. Vivamus tempus vulputate massa, et tincidunt nisl. Nullam condimentum magna sollicitudin urna congue, ut commodo mauris laoreet. Nunc ornare porttitor est, sit amet vulputate metus volutpat sit amet. Aliquam erat volutpat. Aliquam venenatis nisl ac velit aliquam lacinia. Pellentesque convallis porta lorem, vel venenatis felis dignissim vitae.
+In Concurrent Mode, React may trigger a render lifecycle more than once 
+
+
+Side effects (such as fetching data from a server, changing the DOM, etc.) that may cause trouble can't be detected automatically by StrictMode.
+
+
+The methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` are all invoked twice to make  
+
 
 
 ## How to use StrictMode?
