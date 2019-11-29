@@ -11,6 +11,6 @@ ingress: >-
   og løse opp i stemningen før man starter å for eksempel idémyldre. Det er ikke
   alltid så lett å gå fra 0 til 10 på kort tid, så derfor kan en
   oppvarmingsøvelse være en ypperlig måte å få i gang en workshop eller unngå
-  «etter lunsj dippen».
+  «etter lunsj-dippen».
 ---
 sdadadsa
