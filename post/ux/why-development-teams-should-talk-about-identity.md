@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 3
 title: Why development teams should talk about identity.
-image: 'https://cdn-images-1.medium.com/max/1200/1*Xkg2ba_Of-aD8BLq8AlMow.jpeg'
+image: 'https://ibb.co/GkMzxFv'
 ingress: >-
   A brand, or identity, is all about the feeling you get when you encounter a
   product. Identity designers work with logos, packaging, advertisements and
