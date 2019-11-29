@@ -19,28 +19,17 @@ ingress: >-
 En merkevare kan sees på som en mental knagg for forbrukere og de som jobber med merkevaren. På knaggen henges alle tanker, følelser, inntrykk og holdninger kunden har til merkevaren og gjør den enkel å identifisere og differensiere. Alt som henges på knaggen skal være med på at din merkevare blir den prefererte.
 
 Dagens marked er preget av hyppige endringer og stadig tøffere krav fra forbrukere. For at merkevaren skal utvikle seg i takt med samfunnet og den teknologiske utviklingen, uten at den og identiteten sklir fra hverandre er det viktig å ha en trygghet i bunn. Med merkevarehistorien som et styringsverktøy er det fullt mulig å gjøre endringer ettersom markedet endrer seg samtidig som man beholder en kjerne av essensen til merkevaren.
-
-
-
-
-
+<br><br>
 # **Merkevaren — en historiefortelling**
 
 Merkevarehistorien er strukturert inn i historien som kommuniserer internt og eksternt. Internt for at selskapet skal jobbe i samme retning, eksternt for å fortelle historien til sluttbrukere og kunder. Den består av en rekke knagger som beskriver merkevaren. Alt av kommunikasjon, tone of voice, visuell identitet og design av tjenester og produkter kan måles opp mot merkevarehistorien.
 
 Merk at forbrukere, kunder, ambassadører og interessenter vil fortelle sin versjon av merkevarehistorien. Den vil både være påvirket av det de møter av kommunikasjon om merkevaren og også deres egne mentale knagger som de henger merkevaren på.
 
-
-
-
-
 ![alt-tekst til bilde](https://miro.medium.com/max/700/1*mJgr5PiJX9EYqWgFuMgRYQ.jpeg)
 
 _Avis slet med å holde tritt med konkurrenten Hertz, men valgte i 1962 å omfavne nummer to plassen med det ikoniske slagordet “We try harder”. Etter 50 år har slagordet nå blitt byttet ut med “It’s your space” og flere undrer seg over om dette var riktig for merkevaren. Foto: https://www.summit.co.uk_
 
-__
-
-__
 
 # Merkevarehistorien
 
@@ -53,17 +42,11 @@ En visjon er bedriftens «drøm om fremtiden». Visjonen skal si noe om hvilken 
 
 _Visjonen til Patagonia: “Build the best product, cause no unnecessary harm, use business to inspire and implement solutions to the environmental crisis”. Reklamekampanjen “Don’t buy this jacket” fra 2011 er i helt i tråd med visjonen der den tar et oppgjør med tradisjonelle forretningsverdier og påpeker hvordan kortsiktig profitt er destruktivt for miljø, kvalitet, samfunn og helse._
 
-__
-
-__
-
 ![alt-tekst til bilde](https://miro.medium.com/max/1200/1*pRPdr3C3WFqSrsxtS32PZA.jpeg)
 
 _IKEA: To create a better everyday life for the many people._
 
 __
-
-
 
 **Misjon — Vår oppgave**\
 Misjonens jobb er å tydeliggjøre hvorfor organisasjonen driver med det den driver med. Det sentrale ved en misjon er at den er tydelig for alle, både ansatte, kunder og andre interessenter. Den er førende for alle videre beslutninger, spesielt for å avgjøre hva som er innenfor eller utenfor selskapets virksomhetsområde. I en tid med store endringer i kategorier, teknologier og rammebetingelser er det viktig at misjonen handler om hva organisasjonen ønsker å oppnå, mer enn hva man produserer.
@@ -135,8 +118,6 @@ Konseptet må trigge målgruppen og det bør være balanse mellom det emosjonell
 
 ![alt-tekst til bilde](https://miro.medium.com/max/6000/1*Pn2Fv7zKHCWgs0m56y1puA.jpeg)
 
-
-
 ## Gjennomføring
 
 Mye av merkevarehistorien jobbet vi med allerede i Brandsprinten. I oppfølginsworkshopen jobbet vi frem personligheten med utgangspunkt i verdiene, posisjonen som bygger på personlighetsaksene, konkurrentanalysen og konseptet som kort kommuniserer idéen/grunntanken bak merkevaren.
@@ -144,8 +125,6 @@ Mye av merkevarehistorien jobbet vi med allerede i Brandsprinten. I oppfølginsw
 Kanskje en av de viktigste tingene med sprinten er arbeidsformen for workshopen. For de som har jobbet med identitet og merkevare tidligere vil mange av øvelsene være kjente. Forskjellen ligger i måten øvelsene fasiliteres. Oppgavene løses både individuelt og i gruppe, og gir rom for at alle slipper til. Man jobber individuelt før man diskuterer og beslutter i fellesskap. For at teamet skal kunne jobbe effektivt er det viktig å være nok deltakere og riktige deltakere. Samtidig bør man ikke være for mange. Det ideelle er mellom tre til åtte. Teamet må være tverrfaglig og ha mandat til å fatte beslutninger. Alle må også være tilstede gjennom hele workshopen da avgjørelser blir tatt kontinuerlig. En av deltakerne kommenterte i etterkant at nettopp det at alle slipper til hjalp henne i å forstå de andres perspektiv og vurderinger, noe som bidro til å øke forståelsen av merkevaren.
 
 > “Jeg skjønner viktigheten av en rød tråd. Hvis vi legger arbeid i dette nå vinner vi i det lengre løp. Det mange ser på som pynt er jo viktige differensierende personlighetstrekk til din merkevare.”
-
-
 
 ## Så hvorfor trenger du en merkevare, ikke bare et digitalt produkt?
 
