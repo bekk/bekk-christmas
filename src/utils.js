@@ -35,14 +35,16 @@ const getDayNumber = day => {
     return `${day}`;
 };
 
-export const getWindowImagePlaceholder = (calendar, day, year) => {
-    if (year < 2019) {
-        return `/assets/generated/${day}.png`;
-    }
-
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@latest/${getCalendarNumber(
+export const getChristmasTree = calendar => {
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
         calendar
-    )}/${getDayNumber(day)}.jpeg`;
+    )}/tre.png`;
+};
+
+export const getWindowImagePlaceholder = (calendar, day) => {
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
+        calendar
+    )}/small/${getDayNumber(day)}.jpeg`;
 };
 
 export const setImageWidth = url => {

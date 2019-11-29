@@ -13,6 +13,7 @@ import PrismThemer from '../components/PrismThemer';
 import Calendar from '../components/Calendar';
 import { setImageWidth, getWindowImagePlaceholder } from '../utils';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
+import * as mediaQueries from '../constants/media-queries';
 
 const fallbackImage =
     'https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80';
@@ -20,6 +21,17 @@ const fallbackImage =
 const MaxWidth = styled.article`
     max-width: 1258px;
     margin: 32px auto;
+    padding: 10px;
+    ${mediaQueries.mediumUp} {
+        padding: 10px;
+    }
+`;
+
+const ReadMoreHeader = styled.h2`
+    padding: 10px;
+    ${mediaQueries.mediumUp} {
+        padding: 10px;
+    }
 `;
 
 const HeroImage = styled.img`
@@ -111,34 +123,32 @@ const Template = ({ data }) => {
                     />
                 )}
                 {image && <HeroImage src={heroImage} alt="" />}
-
                 <PrismThemer>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
                         <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
                 </PrismThemer>
-                {firstFourLinks && firstFourLinks.length > 0 && (
-                    <RelevantLinksContainer>
-                        <h2>Relevant links</h2>
-                        <Calendar>
-                            {firstFourLinks.map((link, index) => (
-                                <li key={link.url}>
-                                    <CalendarWindowOpen
-                                        title={link.title}
-                                        href={link.url}
-                                        imageUrl={getWindowImagePlaceholder(
-                                            frontmatter.calendar,
-                                            uniqueLinkImageNumbers[index],
-                                            post_year
-                                        )}
-                                    />
-                                </li>
-                            ))}
-                        </Calendar>
-                    </RelevantLinksContainer>
-                )}
             </MaxWidth>
+            {firstFourLinks && firstFourLinks.length > 0 && (
+                <RelevantLinksContainer>
+                    <ReadMoreHeader>Read more outside the calendar</ReadMoreHeader>
+                    <Calendar>
+                        {firstFourLinks.map((link, index) => (
+                            <li key={link.url}>
+                                <CalendarWindowOpen
+                                    title={link.title}
+                                    href={link.url}
+                                    imageUrl={getWindowImagePlaceholder(
+                                        frontmatter.calendar,
+                                        uniqueLinkImageNumbers[index]
+                                    )}
+                                />
+                            </li>
+                        ))}
+                    </Calendar>
+                </RelevantLinksContainer>
+            )}
         </Layout>
     );
 };
