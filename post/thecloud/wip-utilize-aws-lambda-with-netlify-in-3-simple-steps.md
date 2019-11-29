@@ -1,8 +1,8 @@
 ---
 calendar: thecloud
 post_year: 2019
-post_day: 14
-title: 'WIP: Utilize AWS Lambda with Netlify in 3 simple steps'
+post_day: 1
+title: Take your functions to the cloud in 3 simple steps
 image: >-
   https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3306&q=80
 ingress: >-
