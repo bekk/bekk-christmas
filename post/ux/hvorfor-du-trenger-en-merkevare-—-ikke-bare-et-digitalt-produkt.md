@@ -41,11 +41,15 @@ En visjon er bedriftens «drøm om fremtiden». Visjonen skal si noe om hvilken 
 
 _Visjonen til Patagonia: “Build the best product, cause no unnecessary harm, use business to inspire and implement solutions to the environmental crisis”. Reklamekampanjen “Don’t buy this jacket” fra 2011 er i helt i tråd med visjonen der den tar et oppgjør med tradisjonelle forretningsverdier og påpeker hvordan kortsiktig profitt er destruktivt for miljø, kvalitet, samfunn og helse._
 
+__
+
+__
+
 ![alt-tekst til bilde](https://miro.medium.com/max/1200/1*pRPdr3C3WFqSrsxtS32PZA.jpeg)
 
 _IKEA: To create a better everyday life for the many people._
 
-__
+
 
 **Misjon — Vår oppgave**\
 Misjonens jobb er å tydeliggjøre hvorfor organisasjonen driver med det den driver med. Det sentrale ved en misjon er at den er tydelig for alle, både ansatte, kunder og andre interessenter. Den er førende for alle videre beslutninger, spesielt for å avgjøre hva som er innenfor eller utenfor selskapets virksomhetsområde. I en tid med store endringer i kategorier, teknologier og rammebetingelser er det viktig at misjonen handler om hva organisasjonen ønsker å oppnå, mer enn hva man produserer.
