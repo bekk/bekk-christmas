@@ -3,6 +3,11 @@ calendar: kotlin
 post_year: 2019
 post_day: 12
 title: Making games with Kotlin!
+links:
+  - title: LibGDX
+    url: 'https://libgdx.badlogicgames.com/'
+  - title: LibKTX
+    url: 'https://libktx.github.io/'
 authors:
   - Vegard Veiset
 ---
