@@ -9,6 +9,9 @@ const fade = keyframes`
 
 const Container = styled.div`
     fill: ${({ theme }) => theme.textColor};
+    width: 5em;
+    cursor: pointer;
+
     &:focus,
     &:hover {
         path {

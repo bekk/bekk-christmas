@@ -82,7 +82,7 @@ const Layout = ({ calendarName, children }) => {
                 )}
                 <MainContent>{children}</MainContent>
             </Container>
-            <Footer />
+            <Footer calendarName={calendarName} />
         </ThemeProvider>
     );
 };

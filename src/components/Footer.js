@@ -4,7 +4,6 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import BekkLogo from './BekkLogo';
 import * as mediaQueries from '../constants/media-queries';
 
-import { Grid, GridContent } from './Grid';
 import { mapCalendarToName } from '../utils';
 
 const Link = styled(OutboundLink)`
@@ -45,6 +44,25 @@ const Description = styled.p`
     }
 `;
 
+const Container = styled.footer`
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    ${mediaQueries.mediumUp} {
+        flex-direction: row;
+    }
+`;
+
+const Column = styled.div`
+    margin-bottom: 50px;
+`;
+
 const calendars = [
     'css',
     'functional',
@@ -60,13 +78,15 @@ const calendars = [
     'ux',
 ];
 
-const SiteFooter = () => {
+const SiteFooter = ({ calendarName }) => {
+    const otherCalendars = calendars.filter(calendar => calendar !== calendarName);
+
     return (
-        <Grid style={{ marginTop: '200px', marginBottom: '50px' }}>
-            <GridContent md="2 / 6" style={{ fontStyle: 'normal' }}>
-                <p>Check out some of our other calendars</p>
+        <Container>
+            <Column>
+                <p>Check out some of our other calendars:</p>
                 <FlatList>
-                    {calendars.map(calendar => (
+                    {otherCalendars.map(calendar => (
                         <li key={calendar}>
                             <Link href={`https://${calendar}.christmas`}>
                                 {mapCalendarToName(calendar) + ' Christmas'}
@@ -74,15 +94,15 @@ const SiteFooter = () => {
                         </li>
                     ))}
                 </FlatList>
-            </GridContent>
-            <GridContent md="7 / 12" align="start" alignMd="end">
+            </Column>
+            <Column>
                 <RightFooterLayout>
-                    <BekkLogo style={{ width: '5em', cursor: 'pointer' }} />
+                    <BekkLogo />
                     <Description>
                         Bekk is all about craftmanship and the people crafting it. This year, we're
                         creating 12 calendars, each with daily content, articles and podcasts.
                     </Description>
-                    <FlatList style={{ margin: '0.8em 0 2em' }}>
+                    <FlatList>
                         <FlatListItem>
                             <Link href="https://www.instagram.com/livetibekk/">Instagram</Link>
                         </FlatListItem>
@@ -94,8 +114,8 @@ const SiteFooter = () => {
                         </FlatListItem>
                     </FlatList>
                 </RightFooterLayout>
-            </GridContent>
-        </Grid>
+            </Column>
+        </Container>
     );
 };
 
