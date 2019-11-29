@@ -17,9 +17,14 @@ ingress: >-
 # **Strategi og merkevare**
 
 En merkevare kan sees på som en mental knagg for forbrukere og de som jobber med merkevaren. På knaggen henges alle tanker, følelser, inntrykk og holdninger kunden har til merkevaren og gjør den enkel å identifisere og differensiere. Alt som henges på knaggen skal være med på at din merkevare blir den prefererte.
-
+<br/>
+<br/>
+<br/>
 Dagens marked er preget av hyppige endringer og stadig tøffere krav fra forbrukere. For at merkevaren skal utvikle seg i takt med samfunnet og den teknologiske utviklingen, uten at den og identiteten sklir fra hverandre er det viktig å ha en trygghet i bunn. Med merkevarehistorien som et styringsverktøy er det fullt mulig å gjøre endringer ettersom markedet endrer seg samtidig som man beholder en kjerne av essensen til merkevaren.
-<br><br>
+<br/>
+<br/>
+<br/>
+
 # **Merkevaren — en historiefortelling**
 
 Merkevarehistorien er strukturert inn i historien som kommuniserer internt og eksternt. Internt for at selskapet skal jobbe i samme retning, eksternt for å fortelle historien til sluttbrukere og kunder. Den består av en rekke knagger som beskriver merkevaren. Alt av kommunikasjon, tone of voice, visuell identitet og design av tjenester og produkter kan måles opp mot merkevarehistorien.
@@ -28,8 +33,10 @@ Merk at forbrukere, kunder, ambassadører og interessenter vil fortelle sin vers
 
 ![alt-tekst til bilde](https://miro.medium.com/max/700/1*mJgr5PiJX9EYqWgFuMgRYQ.jpeg)
 
-_Avis slet med å holde tritt med konkurrenten Hertz, men valgte i 1962 å omfavne nummer to plassen med det ikoniske slagordet “We try harder”. Etter 50 år har slagordet nå blitt byttet ut med “It’s your space” og flere undrer seg over om dette var riktig for merkevaren. Foto: https://www.summit.co.uk_
-
+_Avis slet med å holde tritt med konkurrenten Hertz, men valgte i 1962 å omfavne nummer to plassen med det ikoniske slagordet “We try harder”. Etter 50 år har slagordet nå blitt byttet ut med “It’s your space” og flere undrer seg over om dette var riktig for merkevaren. Foto: https://www.summit.co.uk_\
+<br/>
+<br/>
+<br/>
 
 # Merkevarehistorien
 
@@ -46,7 +53,9 @@ _Visjonen til Patagonia: “Build the best product, cause no unnecessary harm, u
 
 _IKEA: To create a better everyday life for the many people._
 
-__
+<br/>
+<br/>
+<br/>
 
 **Misjon — Vår oppgave**\
 Misjonens jobb er å tydeliggjøre hvorfor organisasjonen driver med det den driver med. Det sentrale ved en misjon er at den er tydelig for alle, både ansatte, kunder og andre interessenter. Den er førende for alle videre beslutninger, spesielt for å avgjøre hva som er innenfor eller utenfor selskapets virksomhetsområde. I en tid med store endringer i kategorier, teknologier og rammebetingelser er det viktig at misjonen handler om hva organisasjonen ønsker å oppnå, mer enn hva man produserer.
