@@ -123,7 +123,6 @@ const Template = ({ data }) => {
                     />
                 )}
                 {image && <HeroImage src={heroImage} alt="" />}
-
                 <PrismThemer>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
