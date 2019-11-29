@@ -11,13 +11,11 @@ links:
 authors:
   - Vegard Veiset
 ---
-Who doesn’t love flashy fun things! [LibGDX](https://libgdx.badlogicgames.com) is a framework that makes it easy and fun to work with graphics in Java. LibGDX is a framework that makes it possible to use the same code base for multiple platforms such as mobile, html and desktop. It comes with OpenGL bindings, a high level graphics API, audio, input handling and much more.
-
-But what about Kotlin, how does LibGDX work with Kotlin and how can we use it?
+Who doesn’t love flashy fun things! [LibGDX](https://libgdx.badlogicgames.com) is a framework that makes it easy and fun to work with graphics in Java. LibGDX makes it possible to use the same code base for multiple platforms such as mobile, html and desktop. It comes with OpenGL bindings, a high level graphics API, audio, input handling and much more.
 
 # Introducing LibKTX
 
-Using LibGDX with Kotlin can feel a little bit dated and clunky, it's a Java framework that's been around for quite some time, and not a framework tailored for Kotlin. To make LibGDX feel more idiomatic to Kotlin we have the perfect library for that; [ktx](https://github.com/libktx/ktx) is a library aimed to make libGDX feel like native Kotlin framework. 
+Using LibGDX with Kotlin can feel a little bit dated and clunky, it's a Java framework that's been around for quite some time, and not a framework tailored for Kotlin. To make LibGDX feel more idiomatic to Kotlin we have the perfect library for that; [ktx](https://github.com/libktx/ktx) is a library aimed to make LibGDX feel like native Kotlin framework. 
 
 # Project setup
 
@@ -79,19 +77,19 @@ fun main() {
 }
 
 class MyGame : KtxApplicationAdapter {
-    override fun render() { }
+
 }
 ```
 
-There is not much to the example above. We've created a Kotlin file named \`MyGame.kt\`. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
+There is not much to the example above. We've created a Kotlin file named \`MyGame.kt\` and have put some code in to it. We use [LwjglApplicationConfiguration](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.html) to configure our games resolution. It has a lot of options to play around with, like capping FPS and other performance tweaks, but for now we'll keep it simple. The second thing we do is to create a [LwjglApplication](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/backends/lwjgl/LwjglApplication.html) and pass our game adapter and config to that.
 
-Lastly we need an actual game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application overriding `render` and doing nothing is enough. And that's it. Now can start our application by running the `main` method.
+The last thing we need to do is to create a game adapter that will contain our game. To make one we simply extend the [KtxApplicationAdapter](https://github.com/libktx/ktx/blob/master/app/src/main/kotlin/ktx/app/application.kt) and override the methods we want to use. For our black screen application doing nothing is enough. And that's it. We can now start our application by running the `main` method.
 
 # Let there be light
 
 A black screen isn't very interesting. To make it more exciting we need game objects, keyboard controls, some simple logic and graphics. 
 
-The application adapter comes with two important methods we can override: `create` and `render`. The `create` method is run before the application starts and this is where we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have some game play logic and we need to draw the game. So lets make functions for those and put them in the `render` method. 
+The application adapter comes with two important methods we can override: `create` and `render`. The `create` method is run before the application starts and this is where we do all our LibGDX related setup. The `render` method acts as the main game loop. We know we need to handle user input, have some game play and we need to draw the game. So lets make functions for those and put them in the `render` method. 
 
 ```kotlin
 class MyGame : KtxApplicationAdapter {
@@ -110,7 +108,7 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-With our game application structure outlined lets start by adding some game objects and what's more fitting than Santa and gifts.  
+With our game application structure outlined lets add some game objects and what's more fitting than Santa and gifts.  
 
 ```kotlin
 data class Santa(val position: Float)
@@ -151,7 +149,7 @@ The next part is to make our game interactive. Luckily input-handling with LibGD
     }
 ```
 
-LibGDX has already mapped all keybindings to reasonable names for us and \[Gdx.input](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.html) contains methods for checking input state. In this Christmas themed game we just want to check if a button is pressed and move Santa based on that. 
+LibGDX has already mapped all keybindings to reasonable names for us and [Gdx.input](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.html) contains methods for checking input state. In this Christmas themed game we just want to check if a keyboard button is pressed and move Santa based on that. 
 
 Every game needs some good core game play. This game won't have much of that, but lets add some randomness and "gravity"!
 
@@ -166,7 +164,7 @@ Every game needs some good core game play. This game won't have much of that, bu
     }
 ```
 
-That's the game play. We add a new gift every now and then and then move all the gifts down one pixel on the screen. I gotta admit that this is maybe not the most exciting game to date, but hey, it at least does something.
+That's the game. We add a new gift every now and then and then move all the gifts down one pixel on the screen. I gotta admit that this is maybe not the most exciting game to date, but hey, it at least does something.
 
 With input, game play and data objects out of the way let us draw our amazing game! 
 
@@ -203,7 +201,9 @@ class MyGame : KtxApplicationAdapter {
 }
 ```
 
-First things first. We need to clear the screen (`cleanScreen`) so we don't get multiple frames drawn at the same time. If we forget to clear the screen we'll just draw stuff on top of other things and it will become a huge mess, you can remove `cleanScreen` to see the result. To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function from LibKTX. 
+There are two main ways of drawing stuff with LibGDX: Sprites and Shapes. We'll be drawing shapes (rectangles) and that require us to set up a LibGDX renderer. Since the renderer is a LibGDX component we need to load it in the `create` step of our game adapter. With that out of the way lets draw some stuff!
+
+First things first though. We need to clear the screen (`cleanScreen`) so we don't get multiple frames drawn at the same time. If we forget to clear the screen we'll just draw stuff on top of other things and it will become a huge mess, you can remove `cleanScreen` to see how messy it can get, but I will for sure clear the screen. To draw shapes in our game we use [ShapeRenderer](https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/glutils/ShapeRenderer.html) from LibGDX combined with the `use` extension function from LibKTX. 
 
 LibKTX has countless of extension functions and this is where some of the magic comes from. Using only LibGDX we would have to use start a drawing by `renderer.begin()`, do some drawing, and finishing it up by calling `renderer.end()`. LibKTX simplify this and it comes with a huge range of improvements over LibGDX when using Kotlin. Check out the [official site](https://libktx.github.io/) for more examples.
 
