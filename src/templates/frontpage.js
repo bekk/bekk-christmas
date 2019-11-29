@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+
 import * as mediaQueries from '../constants/media-queries';
 
 import Layout from '../components/Layout';
@@ -12,37 +13,81 @@ import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import Preview from './Preview';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
+import treeImage from '../images/frontpage-tree.png';
 
 const Header = styled.h1`
-    font-size: 5.625em;
+    font-size: 4.1rem;
     font-weight: 400;
-`;
-
-const Description = styled.div`
-    margin-left: 0;
-    margin-bottom: 150px;
-    max-width: 700px;
-    padding-left: 10px;
-
-    p {
-        font-size: 2em;
-        ${mediaQueries.smallUp}  {
-            font-size: 2.8em;
-        }
-    }
 
     ${mediaQueries.smallUp}  {
-        margin-left: 50px;
+        font-size: 5rem;
+    }
+`;
+
+const Description = styled.p`
+    margin: 0;
+    font-size: 2em;
+    max-width: 100%;
+
+    ${mediaQueries.smallUp}  {
+        font-size: 2.8em;
+    }
+
+    ${mediaQueries.mediumUp}  {
+        max-width: 700px;
     }
 `;
 
 const DailyWindowHeader = styled.h2`
     font-weight: 400;
     font-size: 3em;
-    padding-left: 10px;
 
     ${mediaQueries.mediumUp}  {
         padding-left: 15px;
+    }
+`;
+
+const ChristmasTreeMobile = styled.div`
+    display: none;
+    margin-left: 30px;
+    max-width: 120px;
+
+    @media all and (min-width: 500px) {
+        display: block;
+    }
+
+    ${mediaQueries.mediumUp} {
+        display: none;
+    }
+`;
+
+const ChristmasTreeDesktop = styled.div`
+    display: none;
+    padding-top: 40px;
+    max-width: 240px;
+
+    ${mediaQueries.mediumUp}  {
+        display: block;
+    }
+`;
+
+const HeaderContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+const Top = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 100px;
+
+    ${mediaQueries.mediumUp}  {
+        margin: 0 40px 150px;
+    }
+
+    ${mediaQueries.largeUp}  {
+        margin: 0 100px 150px;
     }
 `;
 
@@ -75,18 +120,29 @@ const Frontpage = ({ data, pageContext }) => {
                 />
                 <meta property="og:image" content={ogImageSrc} />
             </Helmet>
-            <Description>
-                <Header>Bekk Christmas</Header>
-                <p>
-                    288 articles, 24 days.
-                    <br />
-                    Made with{' '}
-                    <span role="img" aria-label="christmas spirit">
-                        🎅
-                    </span>{' '}
-                    in Oslo and Trondheim, Norway!
-                </p>
-            </Description>
+            <Top>
+                <div>
+                    <HeaderContainer>
+                        <Header>Bekk Christmas</Header>
+                        <ChristmasTreeMobile>
+                            <img src={treeImage} alt="" />
+                        </ChristmasTreeMobile>
+                    </HeaderContainer>
+
+                    <Description>
+                        288 articles, 24 days.
+                        <br />
+                        Made with{' '}
+                        <span role="img" aria-label="christmas spirit">
+                            🎅
+                        </span>{' '}
+                        in Oslo and Trondheim, Norway!
+                    </Description>
+                </div>
+                <ChristmasTreeDesktop>
+                    <img src={treeImage} alt="" />
+                </ChristmasTreeDesktop>
+            </Top>
             <DailyWindowHeader>Today's articles</DailyWindowHeader>
             <Calendar>
                 {calendars.map(calendar => (
