@@ -65,7 +65,7 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const Layout = ({ calendarName, children }) => {
+const Layout = ({ calendarName, year, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
     return (
         <ThemeProvider>
@@ -75,7 +75,11 @@ const Layout = ({ calendarName, children }) => {
                 {calendarTitle && (
                     <Header>
                         <StyledLink to="/">
-                            <img src={getChristmasTree(calendarName)} style={{ height: 101 }} />
+                            <img
+                                src={getChristmasTree(calendarName, year)}
+                                style={{ height: 101 }}
+                                alt=""
+                            />
                             <CalendarName>{calendarTitle} Christmas</CalendarName>
                         </StyledLink>
                     </Header>

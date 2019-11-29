@@ -102,7 +102,7 @@ const Template = ({ data }) => {
         description || ingressHtml.replace(/<[^>]*>?/gm, '') || `An article from ${calendar}`;
 
     return (
-        <Layout calendarName={calendar}>
+        <Layout calendarName={calendar} year={post_year}>
             <Helmet>
                 <html lang="en" />
                 <title>{title}</title>

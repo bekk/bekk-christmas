@@ -1,4 +1,8 @@
-const getCalendarNumber = calendar => {
+const getCalendarNumber = (calendar, year) => {
+    if (year < 2019) {
+        return '01';
+    }
+
     switch (calendar) {
         case 'css':
             return '01';
@@ -24,6 +28,8 @@ const getCalendarNumber = calendar => {
             return '11';
         case 'react':
             return '12';
+        default:
+            return '12';
     }
 };
 
@@ -35,9 +41,10 @@ const getDayNumber = day => {
     return `${day}`;
 };
 
-export const getChristmasTree = calendar => {
+export const getChristmasTree = (calendar, year) => {
     return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
-        calendar
+        calendar,
+        year
     )}/tre.png`;
 };
 

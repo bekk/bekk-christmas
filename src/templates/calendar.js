@@ -35,7 +35,7 @@ const Template = ({ data, pageContext }) => {
     const calendarName = `${mapCalendarToName(pageContext.calendar)} Christmas`;
 
     return (
-        <Layout calendarName={pageContext.calendar}>
+        <Layout calendarName={pageContext.calendar} year={pageContext.year}>
             <Helmet>
                 <html lang="en" />
                 <title>{calendarName}</title>
