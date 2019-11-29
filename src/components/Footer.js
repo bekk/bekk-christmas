@@ -46,7 +46,9 @@ const Description = styled.p`
 
 const Container = styled.footer`
     max-width: 1600px;
+    margin: 0 auto;
     padding: 20px;
+
     ${mediaQueries.mediumUp}  {
         padding: 30px;
     }

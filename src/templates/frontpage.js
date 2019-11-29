@@ -16,11 +16,11 @@ import ogImageSrc from '../images/teaser-1.jpg';
 import treeImage from '../images/frontpage-tree.png';
 
 const Header = styled.h1`
-    font-size: 5.4em;
+    font-size: 4.1rem;
     font-weight: 400;
 
     ${mediaQueries.smallUp}  {
-        font-size: 5.625em;
+        font-size: 5rem;
     }
 `;
 
