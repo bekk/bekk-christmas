@@ -20,17 +20,19 @@ authors:
 ---
 ## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://medium.com/nmc-techblog/wait-youre-not-using-react-strictmode-a9713927a33b). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://twitter.com/sebmarkbage/status/1177593546087395328). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
 
-### Unsafe lifecycle methods
+### Deprecated and legacy code
 
-Since release 16.9 React started issuing a warning when using one of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now. But if you didn't, you should at least add the prefix `UNSAFE`. StrictMode can help you identify unsafe lifecycle methods in your own code and in third-party libraries.
-
-### Deprecated code
+Like everything else that is made of code, React changes over time and what was once considered state of the art eventually becomes deprecated and replaced. Such as `findDOMNode` which was deprecated 
 
 - Warning about deprecated `findDOMNode` usage
 - Warning about legacy string ref API usage
 - Detecting legacy context API
+
+### Unsafe lifecycle methods
+
+Since release 16.9, React started issuing a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now. But if you didn't, you should at least add `UNSAFE` as prefix. StrictMode can help you identify unsafe lifecycle methods in your own code and in third-party libraries.
 
 ### Unexpected side effects
 
@@ -39,9 +41,9 @@ Since release 16.9 React started issuing a warning when using one of the lifecyc
 
 ## How to use StrictMode?
 
-Using StrictMode is amazingly easy: all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
+Using StrictMode is amazingly easy – all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
 
-```js 
+```javascript 
 <React.StrictMode>
   <App>
     <Component1 />
@@ -52,7 +54,7 @@ Using StrictMode is amazingly easy: all you have to do is to wrap whatever you w
 
 Or just a single component:
 
-```js 
+```javascript
 <App>
   <React.StrictMode>
     <Component1 />
@@ -61,7 +63,7 @@ Or just a single component:
 </App>
 ```
 
-If you want to see StrictMode in action, you should check out this CodeSandbox created by [Kent C. Dodds'](https://twitter.com/kentcdodds):
+If you want to see StrictMode in action, you should check out this CodeSandbox created by [Kent C. Dodds'](https://twitter.com/kentcdodds) (see the console output for warnings):
 
 <iframe
      src="https://codesandbox.io/embed/y01q7vmpnz?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1"
