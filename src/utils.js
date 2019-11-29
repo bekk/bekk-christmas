@@ -41,7 +41,11 @@ export const getChristmasTree = calendar => {
     )}/tre.png`;
 };
 
-export const getWindowImagePlaceholder = (calendar, day) => {
+export const getWindowImagePlaceholder = (calendar, day, year) => {
+    if (year < 2019) {
+        return `/assets/generated/${day}.png`;
+    }
+
     return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
         calendar
     )}/small/${getDayNumber(day)}.jpeg`;
