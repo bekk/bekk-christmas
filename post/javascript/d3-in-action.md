@@ -1,7 +1,7 @@
 ---
 calendar: javascript
 post_year: 2018
-post_day: 19
+post_day: 20
 title: D3 in action
 ingress: >-
   [D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript library that's
