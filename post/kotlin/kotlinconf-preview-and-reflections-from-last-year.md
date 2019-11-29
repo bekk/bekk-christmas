@@ -27,9 +27,7 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 
 ## Making Noise
 
-//TODO
-
-<vz fyll inn her>
+Do you like Kotlin, music, or at least abstract sounds, and electronics then look no further. Josh showed us a very fun use case for the Kotlin/Native technology. A synthesiser aquarium! He explained how he had used C-libraries in Kotlin/Native to make a small music/ascii art program, and explained how he was able to compile Kotlin/Native to a Raspberry PI. Amazing stuff! 
 
 [Making Noise with Kotlin Native](https://www.youtube.com/watch?v=vc04QKnryKs) by Josh Skeen
 
