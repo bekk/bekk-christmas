@@ -161,15 +161,15 @@ const Frontpage = ({ data, pageContext }) => {
                                 !pageContext.isPreview &&
                                 getCalendarPostLink(
                                     pageContext.isPreview,
-                                    pageContext.calendar,
-                                    pageContext.year,
+                                    calendar.calendar,
+                                    calendar.post_year,
                                     calendar.post_day
                                 )
                             }
                             imageUrl={getWindowImagePlaceholder(
                                 calendar.calendar,
                                 calendar.post_day,
-                                pageContext.year
+                                calendar.post_year
                             )}
                             calendarName={calendar.calendar}
                             title={calendar.title}
