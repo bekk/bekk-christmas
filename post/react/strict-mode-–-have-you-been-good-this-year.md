@@ -20,24 +20,24 @@ authors:
 ---
 ## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://twitter.com/sebmarkbage/status/1177593546087395328). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://twitter.com/sebmarkbage/status/1177593546087395328). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. StrictMode runs in development mode only and doesn't affect your production build. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
 
 ### Deprecated code and legacy APIs
 
-Like everything else that is made of code, React changes over time and what was once considered state of the art eventually becomes deprecated and replaced. Such as `findDOMNode` which is deprecated in StrictMode and possibly will be removed in a future version of React. Other examples are the use of [string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) or the [legacy context API](https://reactjs.org/docs/legacy-context.html) which both have some issues.
+Like everything else that is made of code, React changes over time and what was once considered state of the art eventually becomes deprecated and replaced. Such as `findDOMNode` which is deprecated in StrictMode and possibly will be removed in a future version of React. Other examples are the use of [string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) and the [legacy context API](https://reactjs.org/docs/legacy-context.html) which both have some issues.
 
 ### Unsafe lifecycle methods
 
-Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now. But if you didn't, you should at least add `UNSAFE` as prefix. StrictMode can help you identify unsafe lifecycle methods in your own code and in third-party libraries.
+Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now (if you didn't, you should at least add an "UNSAFE_" prefix). StrictMode can help you identify unsafe lifecycle methods in your own code and third-party libraries and also suggests alternative methods.
 
 ### Unexpected side effects
 
-- Detecting...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lectus at sapien sagittis dapibus nec ac magna. Vivamus tempus vulputate massa, et tincidunt nisl. Nullam condimentum magna sollicitudin urna congue, ut commodo mauris laoreet. Nunc ornare porttitor est, sit amet vulputate metus volutpat sit amet. Aliquam erat volutpat. Aliquam venenatis nisl ac velit aliquam lacinia. Pellentesque convallis porta lorem, vel venenatis felis dignissim vitae.
 
 
 ## How to use StrictMode?
 
-Using StrictMode is amazingly easy – all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
+Fortunately, using StrictMode is amazingly easy – all you have to do is to wrap whatever you want to use StrictMode on inside `<React.StrictMode />`. This can be your entire `<App />`:
 
 ```javascript 
 <React.StrictMode>
