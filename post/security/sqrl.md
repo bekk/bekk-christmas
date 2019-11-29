@@ -32,7 +32,7 @@ This is how logging in with SQRL works from a high level:
 3. The user clicks/presses that link on her PC/phone. This launches the local SQRL client app (or browser plugin), which receives the SQRL URL, including the nonce.
 4. The client app takes the domain of the URL and runs it through an HMAC function, keyed by the user's 256-bit _Master Key_, to produce a site specific public/private key pair. Given the same domain, this procedure will always produce the same key pair. The public key serves as the user's identity for the site. It is how the site will know the user.
 5. The client app uses the site specific private key to cryptographically sign the SQRL URL (including the nonce). The client then sends that signature to the web site server, along with the public key, ie. the user's site specific identity.
-6. The server identifies the user by the provided public key, and uses this public key to verify the provided signature. A valid signature proves that the user is in possession of the matching private key. This securely authenticates the user's identity to the site.
+6. The server identifies the user by the provided public key, and uses this public key to verify the provided signature. A valid signature proves that the client is in possession of the matching private key. This securely authenticates the user's identity to the site.
 7. The web server establishes a signed in session for the user and sends the URL for that session to the user's SQRL client.
 8. The SQRL client receives the session URL and redirects the user's browser to the signed-in session.
 
