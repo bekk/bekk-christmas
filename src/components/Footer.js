@@ -45,9 +45,11 @@ const Description = styled.p`
 `;
 
 const Container = styled.footer`
-    padding-top: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1600px;
+    padding: 20px;
+    ${mediaQueries.mediumUp}  {
+        padding: 30px;
+    }
 
     display: flex;
     flex-direction: column;

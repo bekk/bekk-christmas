@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import * as mediaQueries from '../constants/media-queries';
-import { mapCalendarToName } from '../utils';
+import { mapCalendarToName, getChristmasTree } from '../utils';
 import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
-import Tre from './Tre';
 import { SkipToContent, MainContentWrapper } from './SkipToContent';
 import Footer from './Footer';
 
@@ -57,6 +56,7 @@ const StyledLink = styled(Link)`
     color: inherit;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-decoration: none;
 
@@ -75,7 +75,7 @@ const Layout = ({ calendarName, children }) => {
                 {calendarTitle && (
                     <Header>
                         <StyledLink to="/">
-                            <Tre />
+                            <img src={getChristmasTree(calendarName)} style={{ height: 101 }} />
                             <CalendarName>{calendarTitle} Christmas</CalendarName>
                         </StyledLink>
                     </Header>
