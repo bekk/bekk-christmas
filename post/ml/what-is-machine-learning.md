@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 2
 title: What is Machine Learning?
 image: ''
-ingress: Are you eating fried chicken or a dog when you enter a KFC?
+ingress: ''
 authors:
   - Audun Eltvik
 ---
