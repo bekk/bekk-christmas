@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle(
   h2,
   h3 {
     line-height: 1.15;
-    font-family: NewZaldBook, sans-serif;
+    font-family: NewZaldBook, serif;
   }
 
   img {
