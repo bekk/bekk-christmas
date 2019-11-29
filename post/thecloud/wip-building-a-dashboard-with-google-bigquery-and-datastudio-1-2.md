@@ -7,12 +7,12 @@ ingress: >-
   Dashboards and information screens are becoming increasingly common for
   monitoring and displaying important, relevant information at a glance. Over
   the following two blog posts, we will look at how I, without much programming
-  skills, was able to build a such a dashboard in the cloud using Google’s
+  skills, was able to build such a dashboard in the cloud using Google’s
   BigQuery and DataStudio tools.
 ---
 Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees are mostly dependent on public transportation to get to clients, social events or back home from work. We therefore wanted to build a simple dashboard in our reception hall that would provide employees and visitors with realtime information about nearby buses, city bikes and electric scooters on their way out of the office.
 
-The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use of Google services. To build dashboard data, we made use of BigQuery. It is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
+The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. It is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
 
 ## 1. Obtain and store your data
 
@@ -24,7 +24,7 @@ Oslo City Bike and Entur (who delivers information about public transportation a
 
 **Function to stream data from API to a BigQuery table:**
 
-```
+```python
 from google.cloud import bigquery
 BQ = bigquery.Client()
 dataset_id = ‘bysykkel'
@@ -53,7 +53,7 @@ These data points were not immediately available in our data table, and so we ha
 
 **Example for showing 3 available dockings near Stortinget station:**
 
-```
+```sql
 SELECT DISTINCT
   name as stasjon, num_docks_available, latitude, longitude
 FROM
@@ -73,4 +73,4 @@ LIMIT 3
 
 ## Wrap-up
 
-In part 2 we will look at how you can save your queries as views, and visualise their results with DataStudio.
+In part 2 we will look at how you can save your queries as views, and visualize their results with DataStudio.
