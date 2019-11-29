@@ -64,7 +64,7 @@ const SiteFooter = () => {
     return (
         <Grid style={{ marginTop: '200px', marginBottom: '50px' }}>
             <GridContent md="2 / 6" style={{ fontStyle: 'normal' }}>
-                <p>All calendars:</p>
+                <p>Check out some of our other calendars</p>
                 <FlatList>
                     {calendars.map(calendar => (
                         <li>
