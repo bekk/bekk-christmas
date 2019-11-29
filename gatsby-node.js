@@ -4,7 +4,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
-    const pageNotFoundTemplate = path.resolve('src/templates/');
 
     const { createPage } = actions;
 
