@@ -44,7 +44,7 @@ __
 
 # Merkevarehistorien
 
-## Internt
+**Internt**
 
 **Visjon — Vår ledestjerne**\
 En visjon er bedriftens «drøm om fremtiden». Visjonen skal si noe om hvilken retning bedriften ønsker å jobbe mot, men den er ikke så konkret og målbar, snarere en ledestjerne, en veiviser.
@@ -95,7 +95,7 @@ __
 
 __
 
-## Eksternt
+**Eksternt**
 
 **Personlighet — Hvordan blir vi oppfattet**\
 Det er ord eller korte setninger som sier hvem vi er og hva vi står for. De speiler verdiene vi jobber etter internt ut mot målgruppen. Personlighet handler om den du er innerst inne, du er nødt til å bevise gjennom hvordan du handler at det du sier oppfattes som troverdig og ekte.
