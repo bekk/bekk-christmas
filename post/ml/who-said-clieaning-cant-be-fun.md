@@ -28,13 +28,13 @@ First of all, look at your data. It may sound trivial, but it is easy to forget.
 
 **Remove irrelevant variables**
 
-Irrelevant variables may be defined as variables we know to have nothing to do with the problem we are trying to solve. For example, say you are trying to predict the probability of a disease in a population. In this context we can be pretty sure that a persons phone number will not affect the probability. Hence, we can safely remove this variable from the data set. Another example is if a data set where two variables are 100% correlated. In this case both variables contain the same information and we can safely remove one of the variables (pick your favourite).
+Irrelevant variables may be defined as variables we know to have nothing to do with the problem we are trying to solve. For example, say you are trying to predict the probability of a disease in a population. In this context we can be pretty sure that a persons phone number will not affect the probability. Hence, we can safely remove this variable from the data set. Another example is data sets with 100% correlated variables. If a data set has two variables that are 100% correlated they contain the same information. Hence, we can safely remove one of them - pick your favourite!
 
 <img src="https://i.imgflip.com/3hmurq.jpg" width=300 align="right" margin-right=10 style="margin:40px 0 0 5px"/>
 
 **Drop duplicate observations**
 
-A data set may contain observations that are repeated by mistake. Data sets combined from different sources often results in duplicate observations. Data from a database where users may submit entries multiple times may also include duplicates. In many situations duplicated records do not represent two separate observations and we should therefore remove the extra ones.
+A data set may contain observations that are repeated by mistake. Combining data sets from different sources often results in duplicate observations. Data from a database where users may submit entries multiple times may also include duplicates. In many situations duplicated records do not represent two separate observations and we should therefore remove the extra ones.
 
 **Handle missing data**
 
