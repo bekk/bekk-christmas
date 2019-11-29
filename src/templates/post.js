@@ -129,7 +129,8 @@ const Template = ({ data }) => {
                                         href={link.url}
                                         imageUrl={getWindowImagePlaceholder(
                                             frontmatter.calendar,
-                                            uniqueLinkImageNumbers[index]
+                                            uniqueLinkImageNumbers[index],
+                                            post_year
                                         )}
                                     />
                                 </li>

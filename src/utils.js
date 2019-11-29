@@ -35,7 +35,11 @@ const getDayNumber = day => {
     return `${day}`;
 };
 
-export const getWindowImagePlaceholder = (calendar, day) => {
+export const getWindowImagePlaceholder = (calendar, day, year) => {
+    if (year < 2019) {
+        return `/assets/generated/${day}.png`;
+    }
+
     return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@latest/${getCalendarNumber(
         calendar
     )}/${getDayNumber(day)}.jpeg`;
