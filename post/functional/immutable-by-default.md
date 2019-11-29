@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2019
-post_day: 4
+post_day: 3
 title: Immutable by default
 ingress: >-
   You should always strive to make, and make use of, immutable data structures.
