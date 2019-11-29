@@ -8,6 +8,7 @@ import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import Tre from './Tre';
 import { SkipToContent, MainContentWrapper } from './SkipToContent';
+import Footer from './Footer';
 
 const Container = styled.div(
     ({ theme }) => `
@@ -81,6 +82,7 @@ const Layout = ({ calendarName, children }) => {
                 )}
                 <MainContent>{children}</MainContent>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 };
