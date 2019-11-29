@@ -8,39 +8,34 @@ const fade = keyframes`
 `;
 
 const Container = styled.div`
-  background: none;
-  appearance: none;
-  border: none;
-  border-radius: 0
-  display: block;
-  fill: ${({ theme }) => theme.textColor};
-  &:focus,
-  &:hover {
-    path {
-      fill: ${({ theme }) => theme.secondaryBackgroundColor};
-      animation-duration: 0.15s;
-      animation-name: ${fade};
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards;
-      transition-duration: 0.3s;
+    fill: ${({ theme }) => theme.textColor};
+    &:focus,
+    &:hover {
+        path {
+            fill: ${({ theme }) => theme.secondaryBackgroundColor};
+            animation-duration: 0.15s;
+            animation-name: ${fade};
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            transition-duration: 0.3s;
+        }
+        #last-k-bottom,
+        #e-top {
+            animation-delay: 0.3s;
+        }
+        #b-bottom,
+        #last-k-top {
+            animation-delay: 0.4s;
+        }
+        #e-bottom,
+        #first-k-bottom {
+            animation-delay: 0.5s;
+        }
+        #first-k-top,
+        #b-top {
+            animation-delay: 0.6s;
+        }
     }
-    #last-k-bottom,
-    #e-top {
-      animation-delay: 0.3s;
-    }
-    #b-bottom,
-    #last-k-top {
-      animation-delay: 0.4s;
-    }
-    #e-bottom,
-    #first-k-bottom {
-      animation-delay: 0.5s;
-    }
-    #first-k-top,
-    #b-top {
-      animation-delay: 0.6s;
-    }
-  }
 `;
 
 const BekkLogo = props => {
