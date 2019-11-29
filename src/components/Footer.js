@@ -67,7 +67,7 @@ const SiteFooter = () => {
                 <p>Check out some of our other calendars</p>
                 <FlatList>
                     {calendars.map(calendar => (
-                        <li>
+                        <li key={calendar}>
                             <Link href={`https://${calendar}.christmas`}>
                                 {mapCalendarToName(calendar) + ' Christmas'}
                             </Link>
