@@ -16,23 +16,20 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 
 ## Representing the State
 
-A common 
+//TODO
 
-TODO
-
-- Representing state
-- primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
-- Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control.  
-
-
+* Representing state
+* primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
+* Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control. 
+* Sealed classes everywhere!
 
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
 ## Making Noise
 
-TODO
+//TODO
 
-\<vz fyll inn her>
+<vz fyll inn her>
 
 [Making Noise with Kotlin Native](https://www.youtube.com/watch?v=vc04QKnryKs) by Josh Skeen
 
@@ -40,7 +37,18 @@ TODO
 
 //TODO
 
-Some talks are fun, some are inspiring and some are downright useful. 
+During any conference some talks are fun, some are inspiring and some are downright useful. While this talk by Philipp Hauer may fall into the two first categories, it definitely belongs in the third one. 
+
+It is pretty common that the first big Kotlin-project one works on is a Java-project that is, class by class, converted to Kotlin. And at some point this includes the tests. (noe om anti pattern å skrive kotlin som java)
+
+Although many best practices for unit testing in Java also apply to Kotlin, there are several ways       
+
+This includes
+
+- JUnit 5
+- mockK \
+- test names in brackets
+- data classes as reference objects.
 
 The talk held by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing tests, how well Kotlin works with JUnit 5, and presented some of the many different test libraries that are available.
 
