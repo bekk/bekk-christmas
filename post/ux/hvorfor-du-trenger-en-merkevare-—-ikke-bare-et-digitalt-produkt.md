@@ -62,30 +62,27 @@ Misjonens jobb er å tydeliggjøre hvorfor organisasjonen driver med det den dri
 
 ![alt-tekst til bilde](https://miro.medium.com/max/2000/1*f_zfej3TKsakLwG5kkmScw.jpeg)
 
-_Tydelig mission statement fra Disney: “To be one of the world’s leading producers and providers of entertainment and information, using its portfolio of brands to differentiate its content, services and consumer products”._
-
-__
-
-__
+_Tydelig mission statement fra Disney: “To be one of the world’s leading producers and providers of entertainment and information, using its portfolio of brands to differentiate its content, services and consumer products”._\
+<br/>
+<br/>
+<br/>
 
 ![alt-tekst til bilde](https://miro.medium.com/max/900/1*GyFQbAzQ11ROI8HSxXB4ug.jpeg)
 
-_Mission statement fra Google: “To organize the world’s information and make it universally accessible and useful”._
-
-__
-
-__
+_Mission statement fra Google: “To organize the world’s information and make it universally accessible and useful”._\
+<br/>
+<br/>
+<br/>
 
 **Verdier — Hva vi står for**\
 Hensikten med å definere tydelige verdier er å sikre at alle i organisasjonen (også de som vurderer å jobbe i den) vet hva som er viktig for organisasjonen. Verdiene sier noe om hvordan man opptrer i organisasjonen og setter tydelige grenser, men også muligheter for valg og handlinger. Verdiene må ikke være for generelle, men beskrive kjernen av bedriften. De må være godt forankret og ansatte må kjenne seg igjen i dem.
 
 ![alt-tekst til bilde](https://miro.medium.com/max/1280/1*3oMYxeuKy0PPWyEP5pa4WA.png)
 
-_En av verdiene til Adidas er Diversity: We know it takes people with different ideas, strengths, interests, and cultural backgrounds to make our company succeed. We encourage healthy debate and differences of opinion._
-
-__
-
-__
+_En av verdiene til Adidas er Diversity: We know it takes people with different ideas, strengths, interests, and cultural backgrounds to make our company succeed. We encourage healthy debate and differences of opinion._\
+<br/>
+<br/>
+<br/>
 
 **Eksternt**
 
@@ -94,22 +91,20 @@ Det er ord eller korte setninger som sier hvem vi er og hva vi står for. De spe
 
 ![alt-tekst til bilde](https://miro.medium.com/max/1600/1*k9TjYyI7oE27gjacMdMePw.png)
 
-_Slack har forstått at deres bot også er en representasjon av merkevaren og har tekster med humor og personlighet._
-
-__
-
-__
+_Slack har forstått at deres bot også er en representasjon av merkevaren og har tekster med humor og personlighet._\
+<br/>
+<br/>
+<br/>
 
 **Målgruppe — Hvem eksisterer vi for**\
 Handler om å sirkle inn en spesifikk målgruppe som man vil selge sine produkter eller tjenester til. Hva kjennetegner personen når det gjelder livsstil og livsfaser, interesser og holdninger. Det handler om å finne ut hva de liker, hva som driver dem, hva som er deres problem eller behov som markedet ikke møter, samt forstå det behovet.
 
 ![alt-tekst til bilde](https://miro.medium.com/max/800/1*Dad896p1IFvpTZaMwTzc-A.jpeg)
 
-_Målgruppen til superstjernen Justin Bieber er en hær av unge fans som kalles «Beliebers»_
-
-__
-
-__
+_Målgruppen til superstjernen Justin Bieber er en hær av unge fans som kalles «Beliebers»_\
+<br/>
+<br/>
+<br/>
 
 **Posisjon — Oss sammenliknet med andre**\
 Den kartlegger og analyserer en merkevares plass i markedet i forhold til konkurrerende produkter. Det handler om å posisjonere seg for å svare på målgruppens behov. Det er noe unikt, et særpreg, en egenskap eller opplevelse som kunden assosierer med produktet som gjør at det blir preferert fremfor noe annet.
@@ -127,6 +122,10 @@ Konseptet må trigge målgruppen og det bør være balanse mellom det emosjonell
 
 ![alt-tekst til bilde](https://miro.medium.com/max/6000/1*Pn2Fv7zKHCWgs0m56y1puA.jpeg)
 
+<br/>
+<br/>
+<br/>
+
 ## Gjennomføring
 
 Mye av merkevarehistorien jobbet vi med allerede i Brandsprinten. I oppfølginsworkshopen jobbet vi frem personligheten med utgangspunkt i verdiene, posisjonen som bygger på personlighetsaksene, konkurrentanalysen og konseptet som kort kommuniserer idéen/grunntanken bak merkevaren.
@@ -134,6 +133,10 @@ Mye av merkevarehistorien jobbet vi med allerede i Brandsprinten. I oppfølginsw
 Kanskje en av de viktigste tingene med sprinten er arbeidsformen for workshopen. For de som har jobbet med identitet og merkevare tidligere vil mange av øvelsene være kjente. Forskjellen ligger i måten øvelsene fasiliteres. Oppgavene løses både individuelt og i gruppe, og gir rom for at alle slipper til. Man jobber individuelt før man diskuterer og beslutter i fellesskap. For at teamet skal kunne jobbe effektivt er det viktig å være nok deltakere og riktige deltakere. Samtidig bør man ikke være for mange. Det ideelle er mellom tre til åtte. Teamet må være tverrfaglig og ha mandat til å fatte beslutninger. Alle må også være tilstede gjennom hele workshopen da avgjørelser blir tatt kontinuerlig. En av deltakerne kommenterte i etterkant at nettopp det at alle slipper til hjalp henne i å forstå de andres perspektiv og vurderinger, noe som bidro til å øke forståelsen av merkevaren.
 
 > “Jeg skjønner viktigheten av en rød tråd. Hvis vi legger arbeid i dette nå vinner vi i det lengre løp. Det mange ser på som pynt er jo viktige differensierende personlighetstrekk til din merkevare.”
+
+<br/>
+<br/>
+<br/>
 
 ## Så hvorfor trenger du en merkevare, ikke bare et digitalt produkt?
 
