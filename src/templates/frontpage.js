@@ -125,7 +125,7 @@ const Frontpage = ({ data, pageContext }) => {
                     <HeaderContainer>
                         <Header>Bekk Christmas</Header>
                         <ChristmasTreeMobile>
-                            <img src={treeImage} />
+                            <img src={treeImage} alt="" />
                         </ChristmasTreeMobile>
                     </HeaderContainer>
 
@@ -140,7 +140,7 @@ const Frontpage = ({ data, pageContext }) => {
                     </Description>
                 </div>
                 <ChristmasTreeDesktop>
-                    <img src={treeImage} />
+                    <img src={treeImage} alt="" />
                 </ChristmasTreeDesktop>
             </Top>
             <DailyWindowHeader>Today's articles</DailyWindowHeader>
