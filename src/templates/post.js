@@ -105,8 +105,11 @@ const Template = ({ data, pageContext }) => {
             .toString() || '';
 
     const heroImage = setImageWidth(image || fallbackImage);
+    const trimmedDescription = description ? description.trim() : '';
     const seoDescription =
-        description || ingressHtml.replace(/<[^>]*>?/gm, '') || `An article from ${calendar}`;
+        trimmedDescription ||
+        ingressHtml.replace(/<[^>]*>?/gm, '').trim() ||
+        `An article from ${calendar}`;
 
     const path = `${pageContext.isPreview && `/${calendar}`}/${post_year}/`;
 
