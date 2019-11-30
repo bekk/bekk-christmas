@@ -16,6 +16,29 @@ const AuthorLink = styled.a(
 `
 );
 
+const enhancedLinkGuesser = link => {
+    if (!link) {
+        return null;
+    }
+    if (link.startsWith('http') || link.startsWith('mailto:')) {
+        // assume the user knows what they're doing
+        return link;
+    }
+
+    if (link.startsWith('@')) {
+        // assume twitter
+        return `https://twitter.com/${link}`;
+    }
+
+    if (link.endsWith('@bekk.no')) {
+        // assume bekk email
+        return `mailto:${link}`;
+    }
+
+    // deep learning failed, return the default
+    return link;
+};
+
 const AuthorInfo = props => {
     const { authors, readingTime, calendar, year, day } = props;
     if (!authors || !authors.length) {
@@ -32,7 +55,10 @@ const AuthorInfo = props => {
                 {authors.map((author, index) => (
                     <Fragment key={author.title}>
                         {author.socialMediaLink ? (
-                            <AuthorLink target="_blank" href={author.socialMediaLink}>
+                            <AuthorLink
+                                target="_blank"
+                                href={enhancedLinkGuesser(author.socialMediaLink)}
+                            >
                                 {author.title}
                             </AuthorLink>
                         ) : (
