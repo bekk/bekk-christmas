@@ -11,25 +11,30 @@ links:
 authors:
   - Henning Håkonsen
 ---
-So you have an idea of an application and just started with you project. You need some content, and because you think a CMS(Content Management System) is overkill, you want to keep it simple and create some configuration with content which is imported into your app. The data is used to present some functionality in your app, for example display restaurants, bloggpost or whatever. In the beginning this approach is awesome! The application is up and running in no time, so you go on to the next feature and keep adding data to your setup. The amount of content increases and before you know it you are stuck in management hell. 
+So you have an idea of an application and just started with you project. You need some content, and because you think a CMS (Content Management System) is overkill, you want to keep it simple and create some configuration with content which is imported into your app. The data is used to present some functionality in your app, for example display restaurants, blog post or whatever. 
 
-Sanity may be the tool and the backend you need to rescue your project. It is a headless CMS which means it only cares about storing and managing your content while you can focus on the implementation of the view of your application. Sanity has very good documentation and has implemented their own query language to help grabbing the correct content for your feature.
+In the beginning this approach is awesome! The application is up and running in no time, so you go on to the next feature and keep adding data to your setup. The amount of content increases and before you know it, you are stuck in content management hell. 
 
-## Define your datamodell
+Sanity maybe the tool and the backend you need to rescue your project. It is a headless CMS, which means it only cares about storing and managing your content while you can focus on the implementation of the view of your application. Sanity has very good documentation and has implemented their own query language to help grabbing the correct content for your feature.
+
+## Define your data model
 
 Sanity is configured in a matter of minutes. First register your account [here](https://manage.sanity.io/) and proceed with the following command:
 
-> npm i -g @sanity/cli && sanity init
+```sh
+npm i -g @sanity/cli && sanity init\
+```
 
 Run through the simple guide, once completed your «backend» is configured and the output should be somewhat similar to this:
 
 <img 
     src="/assets/sanity-init.png"
-    style="width: 600px; height: 600px">
+    alt="Screenshot of the Sanity CLI in progress"
+    style="maxWidth: 600px; width: 100%" />
 
 The directory created contains configuration for your data and the complete configuration is a set of schemas defining your data fields. The basic schema contains the following properties:
 
-```
+```js
 // First, we must import the schema creator
 import createSchema from 'part:@sanity/base/schema-creator'
 
@@ -49,7 +54,7 @@ export default createSchema({
 })
 ```
 
-The types you define will create a schema and definition of your data modell. If we were to proceed with the restaurant case we would probably start of with a type something like this:
+The types you define will create a schema and definition of your data model. If we were to proceed with the restaurant case we would probably start of with a type something like this:
 
 ```
 {
@@ -64,9 +69,9 @@ The types you define will create a schema and definition of your data modell. If
        validation: Rule => Rule.required()
      },
      {
-       name: "restaurant_adress",
+       name: "restaurant_address",
        type: "string",
-       title: "Restaurant adress",
+       title: "Restaurant address",
        validation: Rule => Rule.required(),
      },
      {
@@ -86,7 +91,7 @@ The types you define will create a schema and definition of your data modell. If
 }
 ```
 
-This document contains three fields - the name, address and type of restaurant. This is not so interesting so we want to add menu items to the document. Sanity comes with many predefined [schema types](https://www.sanity.io/docs/schema-types), but a menu type is not present. However we are able to create our own types, so we go ahead defining our menu type:
+This document contains three fields - the name, address and type of restaurant. This is not so interesting so we want to add menu items to the document. Sanity comes with many predefined [schema types](https://www.sanity.io/docs/schema-types), but a menu type is not present. However, we are able to create our own types, so we go ahead defining our menu type:
 
 ```
 export default createSchema({
@@ -107,9 +112,9 @@ export default createSchema({
           validation: Rule => Rule.required()
         },
         {
-          name: "adress",
+          name: "address",
           type: "string",
-          title: "Restaurant adress",
+          title: "Restaurant address",
           validation: Rule => Rule.required()
         },
         {
@@ -177,9 +182,9 @@ export default createSchema({
 
 We have now defined a complex schema type with Sanity’s predefined types and this becomes very powerful when we want to modell the «world» we are describing.
 
-## Use your datamodell
+## Use your data model
 
-Sanity has implemented a very nice [client library](https://www.npmjs.com/package/@sanity/client) that we can utilize in frontend apps. It is a promise based fetch library which enables you to grab content with their query language [groq](https://www.sanity.io/docs/groq). Let's use Sanity's examples with our restaurant modell in mind. 
+Sanity has implemented a very nice [client library](https://www.npmjs.com/package/@sanity/client) that we can utilize in frontend apps. It is a promise based fetch library which enables you to grab content with their query language [groq](https://www.sanity.io/docs/groq). Let's use Sanity's examples with our restaurant model in mind. 
 
 ```
 // Define our client
@@ -203,6 +208,7 @@ client.fetch(query).then(restaurants => {
 This query fetches the last 10 restaurants created with the time of creation, an id, the name and all menu categories with their content. We have to specify what data we want from the inner data modell, hence `"menu_categories": *[_type == 'category']}` which means, give me all fields within `menu_categories` with type `category`.
 
 ## Key takeaways
+
 1. Minimal setup, fast and easy to use.
 2. The way schema is implemented lets the consumer define the level of complexity require for the use-case and offers many predefined types.
 3. Non-technical people can easily manage content with Sanity's [studio](https://www.sanity.io/docs/sanity-studio).
