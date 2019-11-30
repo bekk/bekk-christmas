@@ -6,9 +6,8 @@ title: Finally December!
 image: >-
   https://images.unsplash.com/photo-1512155381554-31ea36a27426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
-  Welcome!\
+  Welcome!
 
-  \
 
   Welcome to our Christmas calendar for machine learning and data science, one
   of 12 (!) calendars prepared by Bekk this year.
