@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 
 import * as mediaQueries from '../constants/media-queries';
 import { mapCalendarToName, getChristmasTree } from '../utils';
-import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import { SkipToContent, MainContentWrapper } from './SkipToContent';
 import Footer from './Footer';
@@ -66,7 +65,7 @@ const StyledLink = styled(Link)`
 const Layout = ({ calendarName, year, children }) => {
     const calendarTitle = mapCalendarToName(calendarName);
     return (
-        <ThemeProvider>
+        <div>
             <SkipToContent />
             <Container>
                 <GlobalStyles />
@@ -85,7 +84,7 @@ const Layout = ({ calendarName, year, children }) => {
                 <MainContent>{children}</MainContent>
             </Container>
             <Footer calendarName={calendarName} />
-        </ThemeProvider>
+        </div>
     );
 };
 
