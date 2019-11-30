@@ -46,11 +46,9 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
-It is possible to "hook into" a motion component and acquire motion values associated with it, such as the position and velocity. How? You guessed it: Using a hook! Let's continue working with the previous example and see how we can use the drag position of the an element to animate another element.
+A motion element uses a `MotionValue` to track its state and velocity, and while it is created automatically by default, we can create one using a `useMotionValue`-hook and pass it to a motion element explicitly. This way, we have direct access to the state of the element. This is done in the following example, where the MotionValue `sliderXVal` is passed to the drag element by giving it the following prop: `style={{x: sliderXVal`}}. Then, we can access the actual value simply by calling `sliderXVal.get()`, and in the following example we utilize this to animate another element based on the position of the drag element.
 
-The motion elements all use `MotionValue`'s to track its state and velocity, and while these are created automatically by default, we can create one using a `useMotionValue`-hook and pass it to a motion element explicitly. This way, we have direct access to the state of the element. This is done in the following example, where the `MotionValue` `sliderXVal` is passed to the drag element by giving it the following the prop: `style={{x: sliderXVal`}}. Then, we can access the actual value using `sliderXVal.get()` and animate another element using this value. 
-
-In the example below we define a state which we update to the current value of the `MotionValue` using a `useEffect`-hook and the `onChange`-method of `MotionValue`s, to be able to trigger a new render each time the motion value changes.
+We define a state which we update to the current value of the `MotionValue` using a `useEffect`-hook and the `onChange`-method of MotionValue, to be able to trigger a new render each time the MotionValue changes.
 
 <iframe
   src="https://codesandbox.io/embed/example-4-drag-with-motionvalue-s55j7?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
@@ -59,7 +57,20 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
-## Example 5
+I started this article by talking about animating a menu, so let's end the circle and finish off with a simple menu example! However, first we need to talk a bit about something that is called "variants". 
+
+Framer Motion supports a powerful feature called "variants", which is an object containing different "animation states". Say you want to orchestrate animations in your app based on some criteria, actions from a user etc. Then you can define multiple animation states for each scenario and use variants to conditionally animate your motion elements!
+
+An example of a variant object is seen below., Here, we have declared two minimalistic animation states, "open" and "closed":
+
+```js
+const menu_variants = {
+    open: { opacity: 1 },
+    closed: { opacity: 0 }
+  };
+```
+
+Simply passing the `animate`-prop to a motion element and setting it as either "open" or "closed" will animate the element according to the values of the chosen state. Thus we can set the animation state conditionally, for instance depending on whether a button is clicked or not, such as hiding or displaying a menu! BOOM SHAKALAKA! AND THIS CONCLUDES MY ADORNED ARTICLE!
 
 <iframe
   src="https://codesandbox.io/embed/example-5-menu-1kqgp?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
