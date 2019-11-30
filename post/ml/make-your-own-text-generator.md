@@ -35,7 +35,8 @@ Neural networks for the text generation are usually designed to take a sequence 
 1. Feed an initial seed to the network. This can be a sentence we want the network to work on from or just an empty string.
 2. Make the network predict the probabilities for the next word.
 3. Choose one of the words with the highest probability and add it to the end of the current sentence.
-4. Feed the augmented sentence back to the network and repet the process from step 2.
+4. Feed the augmented sentence back to the network and repeat the process from step 2.
+
 We can be repeated steps 2-4 as many times as wanted to generate as long a text sequence as we need.
 
 ![Illustration of how a neural network can generate a text sequence](/assets/ml_17_pic1.gif)
