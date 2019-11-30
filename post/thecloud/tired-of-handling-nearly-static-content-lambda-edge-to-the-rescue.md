@@ -10,7 +10,8 @@ ingress: >-
 
 
   You’ve got your [SPA](https://en.wikipedia.org/wiki/Single-page_application),
-  consisting of static CSS, HTML and JS, and high-performing microservices to
+  consisting of static CSS, HTML and JS, and high-performing
+  [microservices](https://martinfowler.com/articles/microservices.html) to
   provide the dynamic behavior of your app. The only thing remaining is hosting
   the static content somewhere, point a DNS to it, and call it a day. 
 
