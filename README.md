@@ -57,7 +57,7 @@ Vi anbefaler at du laster opp bilder på en ekstern service, som [imgbb](https:/
 ![alt-tekst til bilde](https://url-til-bildet.no)
 ```
 
-Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under tittelen) kan du legge det inn ved å legge til koden `<img class="wide-image" src="<Sett inn lenke til bilde her>" />`og bytte ut `<Sett inn lenke til bilde her>`med lenken til bildet du vil bruke. På stor skjerm vil bildet være `1260px`brett, og vil krympe med skjermen. Bildet er alltid `400px` høyt.
+Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under tittelen) kan du legge det inn ved å legge til koden `<img class="wide-image" src="Sett inn lenke til bilde her" />`og bytte ut `Sett inn lenke til bilde her`med lenken til bildet du vil bruke. På stor skjerm vil bildet være `1260px`brett, og vil krympe med skjermen. Bildet er alltid `400px` høyt. For å få bildene automatisk tilpasset bør en fjerne det som kommer etter `?` i URLen og legge til `?w=1226&h=400&fit=crop&crop=edges? i stede.
 
 Eksempel på dette
 
@@ -67,11 +67,11 @@ Eksempel på dette
 
 For å ha forskjellig bilde ut fra light or dark theme kan en benytte seg av:
 
-`<img class="light-theme-image" src="<Sett inn lenke til bilde her>" />`
+`<img class="light-theme-image" src="Sett inn lenke til bilde her" />`
 
 for bilder som kun skal være tilgjengelig for light theme. Og
 
-`<img class="dark-theme-image" src="<Sett inn lenke til bilde her>" />`
+`<img class="dark-theme-image" src=<Sett inn lenke til bilde her" />`
 
 for bilder kun tilgjengelig for dark theme.
 
