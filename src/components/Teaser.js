@@ -115,6 +115,10 @@ export const Teaser = () => {
             <GlobalStyles />
             <Helmet>
                 <title>Introducing a Bekk Christmas..</title>
+                <meta
+                    property="description"
+                    content="We're creating 12 calendars, each with daily content, articles and podcasts."
+                />
             </Helmet>
             <Container>
                 <SpectacularEntrance fade>
