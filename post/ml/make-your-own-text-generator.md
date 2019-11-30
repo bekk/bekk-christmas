@@ -2,7 +2,7 @@
 calendar: ml
 post_year: 2019
 post_day: 17
-title: Make your own text generator
+title: How to talk like a machine
 image: >-
   https://images.unsplash.com/photo-1414389754010-8cf70521937b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
