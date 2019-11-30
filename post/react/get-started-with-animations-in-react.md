@@ -22,7 +22,7 @@ Framer Motion let's you implement animations to your app by having a "motion com
 A simple example is given below, where a `div` styled as a simple square is replaced by a `motion.div` with two Motion specific props: `whileHover` and `whileTap`. These props both take objects that can contain various properties depending on the desired behaviour when tapping and hovering the element. In the example, perhaps the simplest property is used: `scale`.
 
 <iframe
-  src="https://codesandbox.io/embed/example-1-simple-hover-3uf4x?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&autoresize=1&fontsize=14"
+  src="https://codesandbox.io/embed/example-1-simple-hover-3uf4x?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
