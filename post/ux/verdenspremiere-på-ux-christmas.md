@@ -16,7 +16,7 @@ links:
 authors:
   - Helen Le
 ---
-![alt-tekst til bilde](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif)
+![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcom to ux.christmas")
 
 ## But first, some context.
 
