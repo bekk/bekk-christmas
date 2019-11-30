@@ -1,6 +1,6 @@
 ---
 title: Bendik Bjørndal Iversen
-socialMediaLink: bendikiv@gmail.com
+socialMediaLink: bendik.iversen@bekk.no
 company: Bekk
 ---
 
