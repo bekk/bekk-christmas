@@ -10,7 +10,9 @@ ingress: >-
   endpoint? Perhaps you needed somewhere to post form data, but the thought of
   setting up your own server, manage the endpoint and write the logic seemed
   like too much work. Not anymore
-description: Learn how to utilize AWS Lambda functions in the cloud using Netlify.
+description: >-
+  Learn how to utilize AWS Lambda functions in the cloud using Netlify in three
+  simple steps.
 links:
   - title: Netlify.com
     url: 'https://www.netlify.com/'
