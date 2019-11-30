@@ -31,7 +31,7 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
 Making transitions to elements is also fairy simple using the `animate`-prop, as shown in the example below. Again, the prop takes an object (most/all of them do), which in the example contains two properties: `x` and `rotate`. Here, `x` is an array containing 5 values, each representing a keyframe in the animation. There are several other properties supported by the object passed to the `animate`-prop, such as `y`, scale, properties for setting the acceleration of the element, opacity etc. The second prop, `transition`, is used to configure the animation. In this case it is used to specify the duration of the animation (1.5 seconds) and how many times the animation should run (infinitely).
 
 <iframe
-  src="https://codesandbox.io/embed/amazing-robinson-zokwh?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50&fontsize=14"
+  src="https://codesandbox.io/embed/amazing-robinson-zokwh?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
@@ -40,7 +40,7 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
 I mentioned drag, so let's do a drag-example. Again, we use the motion component of a `div`-element, and adding drag to an object is as easy as adding the `drag` prop to the element. In our example, we're allowed to drag the square in the horizontal direction, which is achieved by setting the property to `"x"`. We can control how far we are allowed to drag the element by providing the `dragConstrains` prop.
 
 <iframe
-  src="https://codesandbox.io/embed/example-3-simple-drag-9tin5?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50&fontsize=14"
+  src="https://codesandbox.io/embed/example-3-simple-drag-9tin5?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
@@ -53,7 +53,7 @@ The motion elements all use `MotionValue`'s to track its state and velocity, and
 In the example below we define a state which we update to the current value of the `MotionValue` using a `useEffect`-hook and the `onChange`-method of `MotionValue`s, to be able to trigger a new render each time the motion value changes.
 
 <iframe
-  src="https://codesandbox.io/embed/example-4-drag-with-motionvalue-s55j7?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50&fontsize=14"
+  src="https://codesandbox.io/embed/example-4-drag-with-motionvalue-s55j7?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
@@ -62,7 +62,7 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
 ## Example 5
 
 <iframe
-  src="https://codesandbox.io/embed/example-5-menu-1kqgp?codemirror=1&hidedevtools=1&hidenavigation=1&view=preview&editorsize=50&fontsize=14"
+  src="https://codesandbox.io/embed/example-5-menu-1kqgp?codemirror=1&hidedevtools=1&hidenavigation=1&autoresize=1&fontsize=14"
   style="width:100%; height:300px; border:none; border-radius: 5px; overflow:hidden;"
 allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
