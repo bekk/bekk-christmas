@@ -16,7 +16,8 @@ links:
 authors:
   - Helen Le
 ---
-![Illustratrion christmastree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif)
+<img class="light-theme-image" src="https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif" />
+<img class="dark-theme-image" src="https://i.ibb.co/bzL77rS/julekalender-darkmode.gif" />
 
 ## But first, some context.
 
@@ -24,7 +25,7 @@ What can one expect from a UX advent calendar from Bekk? UX.christmas is a colla
 
 Some articles are written in English, and some in Norwegian. They are just short enough (2-3 minute read) to squeeze in on the way to work or while you wait for the gingerbread to bake in the oven. But if that isn’t enough to scratch your itch this advent, you can always try out a window on one of the 11 (!) other calendars Bekk is publishing this holiday season. Check out [bekk.christmas](https://bekk.christmas/) to see them all.
 
-**Here are a couple of sneak previews of what you can come to expect from UX.christmas: 👀**\
+**Here are a couple of sneak previews of what you can come to expect from UX.christmas:**\
 \
 **December 4th:** Designer Sonja Porter has a wake-up call when it comes to Maslow’s Hierarchy of Needs...
 
@@ -41,7 +42,7 @@ Some articles are written in English, and some in Norwegian. They are just short
 >
 > Velkommen til en liten historietime. Om historier.“
 
-## Roles and tunnel vision 
+## Roles and tunnel vision
 
 This year, a couple of us in Bekk’s Interactive department decided to make our own UX advent calendar to compliment the slurry of development calendars produced by the Technology department. Only a breath or two later, a discussion arose about what it would be called and what type of articles we should include. Is “UX” the right term? Does it cover all of the specialities we have in our discipline?
 
