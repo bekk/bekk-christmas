@@ -11,6 +11,9 @@ ingress: >-
   CSS animations, but you want to learn how (or if) a modern animations library
   would make your life easier? Or perhaps you just want to have fun and learn
   how easy it is to animate elements in React using Framer-Motion? Then read on!
+links:
+  - title: Framer Motion documentation
+    url: 'https://www.framer.com/api/motion/'
 authors:
   - Bendik Bjørndal Iversen
 ---
