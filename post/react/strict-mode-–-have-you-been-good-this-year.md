@@ -20,7 +20,9 @@ authors:
 ---
 ## What is StrictMode and why should I use it?
 
-StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://twitter.com/sebmarkbage/status/1177593546087395328). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. StrictMode runs in development mode only and doesn't affect your production build. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices.
+StrictMode is a feature which was introduced to React 16.3 already in march 2018. Still, chances are you've [never used it before](https://twitter.com/sebmarkbage/status/1177593546087395328). StrictMode does not render anything visible (similar to `Fragment`), but detects potential problems in your code and gives you helpful warnings. StrictMode runs in development mode only and doesn't affect your production build. With the introduction of Hooks earlier this year and [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) just around the corner, StrictMode is becoming an increasingly important tool for locating bad practices 
+
+(using Concurrent mode will not work before you fix things).
 
 ### Deprecated code and legacy APIs
 
@@ -30,15 +32,13 @@ Like everything else that is made of code, React changes over time and what was 
 
 Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now (if you didn't, you should at least add an "UNSAFE_" prefix). StrictMode can help you identify unsafe lifecycle methods in your own code and third-party libraries and also suggests alternative methods.
 
-### Unexpected side effects
+### Unexpected side-effects
 
-In Concurrent Mode, React may trigger a render lifecycle more than once 
+In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side-effects which can lead to memory leaks and invalid state. StrictMode can't detect those side-effects automatically, but uses another trick – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` are all invoked twice.
 
 
 Side effects (such as fetching data from a server, changing the DOM, etc.) that may cause trouble can't be detected automatically by StrictMode.
 
-
-The methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` are all invoked twice to make  
 
 
 
@@ -65,6 +65,8 @@ Or just a single component:
   <Component2 />
 </App>
 ```
+
+This way you can apply StrictMode gradually in your app without having to correct everything at once.
 
 If you want to see StrictMode in action, you should check out this CodeSandbox created by [Kent C. Dodds'](https://twitter.com/kentcdodds) (warnings can be found in the console output):
 
