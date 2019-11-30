@@ -9,16 +9,17 @@ ingress: >-
   # The Problem
 
 
-  You’ve got your SPA, consisting of static CSS, HTML and JS, and
-  high-performing microservices to provide the dynamic behavior of your app. The
-  only thing remaining is hosting the static content somewhere, point a DNS to
-  it, and call it a day. 
+  You’ve got your [SPA](https://en.wikipedia.org/wiki/Single-page_application),
+  consisting of static CSS, HTML and JS, and high-performing microservices to
+  provide the dynamic behavior of your app. The only thing remaining is hosting
+  the static content somewhere, point a DNS to it, and call it a day. 
 
 
   However, it turns out that your app needs a top menu, which is shared between
   all the apps in the organization, to provide a common look-and-feel and
-  navigation. All of a sudden you’re pushed into the world of content
-  transclusion, now loosely referred to as micro frontends
+  navigation. All of a sudden you’re pushed into the world of [content
+  transclusion](https://en.wikipedia.org/wiki/Transclusion), now loosely
+  referred to as [micro frontends](https://micro-frontends.org/)
 ---
 Logically, this is how your index.html should look:
 
@@ -42,15 +43,15 @@ The menu content (html, css, and js) is provided as a service maintained by some
 
 A few options are available to you as a developer, typically variations of server-side includes (SSI) and client-side includes (CSI) techniques:
 
-* Treat the menu content as static and deploy a snapshot embedded within your app. A menu update requires a redeploy, which could be relatively easy if downloading and embedding the snapshot was a part of your CD pipeline. Ensuring a fairly updated menu could be achieved by automatically redeploying often enough, or - slightly more sophisticated - triggering a redeploy when the content of the menu service changes. In both cases the pipeline must handle an unavailable menu service, or other issues, increasing the complexity. And with lots of apps in production, there is a governance issue in ensuring working CD pipelines across all of them. 
-* Treat the menu as dynamic, and have the client download and insert it into the html as part of page rendering. This is relatively straight-forward and only requires referring to the right piece of javascript, which could be shared between all apps. The downside is the risk of a javascript error (elsewhere in the app) could prevent the menu from being rendered altogether, or that the menu service is temporarily unavailable, also leaving the app without a menu. Also, the user experience could be affected by the performance of the menu service, potentially resulting in the menu appearing long after the app itself has been rendered, causing annoying reflow. Techniques like Optimistic UI and Skeleton Screens can mitigate such problems to some extent. 
+* Treat the menu content as static and deploy a snapshot embedded within your app. A menu update requires a redeploy, which could be relatively easy if downloading and embedding the snapshot was a part of your [CD pipeline](https://semaphoreci.com/blog/cicd-pipeline). Ensuring a fairly updated menu could be achieved by automatically redeploying often enough, or - slightly more sophisticated - triggering a redeploy when the content of the menu service changes. In both cases the pipeline must handle an unavailable menu service, or other issues, increasing the complexity. And with lots of apps in production, there is a governance issue in ensuring working CD pipelines across all of them. 
+* Treat the menu as dynamic, and have the client download and insert it into the html as part of page rendering. This is relatively straight-forward and only requires referring to the right piece of javascript, which could be shared between all apps. The downside is the risk of a javascript error (elsewhere in the app) could prevent the menu from being rendered altogether, or that the menu service is temporarily unavailable, also leaving the app without a menu. Also, the user experience could be affected by the performance of the menu service, potentially resulting in the menu appearing long after the app itself has been rendered, causing annoying reflow. Techniques like [Optimistic UI](https://medium.com/distant-horizons/using-optimistic-ui-to-delight-your-users-ac819a81d59a) and [Skeleton Screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a) can mitigate such problems to some extent. 
 * Embed the menu server side, when the content is served to the client. Of course, this would require running a web server for the static content, adding the hooks to intercept the request for index.html, and calling the functionality to download the menu content and decorating the html on the way out. Again, performance and failures would be an issue, having the user wait for the inclusion of content from a service you don’t have control over. And running a webserver to serve static content really was what we were hoping to avoid in the first place. 
 
-Each of these options has some downsides, and ways to overcome them. AWS Lambda@Edge offers a compelling alternative, which falls in the category of edge-side includes (ESI). 
+Each of these options has some downsides, and [ways to overcome them](https://gustafnk.github.io/microservice-websites/). [AWS Lambda@Edge](https://aws.amazon.com/lambda/edge/) offers a compelling alternative, which falls in the category of edge-side includes (ESI). 
 
 # Edge-side Includes with AWS Lambda@Edge
 
-AWS offers a CDN service called CloudFront, which caches static content closer to the clients, whereby offloading the origin web server and improving response times. July 2017 it became possible to run a piece of code when CloudFront receives a request or returns a response. More precisely, CloudFront offers four events that can trigger your code:
+AWS offers a CDN service called [CloudFront](https://aws.amazon.com/cloudfront/), which caches static content closer to the clients, whereby offloading the origin web server and improving response times. July 2017 it became possible to run a piece of code when CloudFront receives a request or returns a response. More precisely, CloudFront offers four events that can trigger your code:
 
 * When receiving a request from a client, regardless of the requested content is cached or not
 * Before forwarding the request to the origin web server, in case of a cache miss
