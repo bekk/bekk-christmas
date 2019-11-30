@@ -72,10 +72,6 @@ const PostNavigation = styled.div`
     max-width: 760px;
     width: 100%;
     margin: 30px auto;
-
-    &: > * {
-        display: block;
-    }
 `;
 
 const Template = ({ data, pageContext }) => {
@@ -155,6 +151,13 @@ const Template = ({ data, pageContext }) => {
                     </ArticleBody>
                 </PrismThemer>
             </MaxWidth>
+            <PostNavigation>
+                {pageContext.showNextLink && (
+                    <Link to={`${path}/${post_day + 1}`}>
+                        Still going strong – read the next post
+                    </Link>
+                )}
+            </PostNavigation>
             {firstFourLinks && firstFourLinks.length > 0 && (
                 <RelevantLinksContainer>
                     <ReadMoreHeader>Read more outside the calendar</ReadMoreHeader>
