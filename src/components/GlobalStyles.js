@@ -28,9 +28,10 @@ const GlobalStyles = createGlobalStyle(
 
     background: #ffffff;
     color: #0e0e0e;
+    
     ${mediaQueries.darkMode} {
       background: #0e0e0e;
-      color: #ffffff;      
+      color: #ffffff;
     }
   }
   
