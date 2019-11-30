@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-const ArticleBody = styled.article(
-    ({ theme }) => `
+const ArticleBody = styled.article`
     h2,
     h3,
     h4,
@@ -9,7 +8,7 @@ const ArticleBody = styled.article(
     h6,
     p,
     pre {
-        color: ${theme.textColor};
+        color: var(--text-color);
         margin: 1em auto 0.5em;
         word-wrap: break-word;
         max-width: 760px;
@@ -30,14 +29,15 @@ const ArticleBody = styled.article(
     h6 {
         font-size: 1.5rem;
     }
-    p, li {
+    p,
+    li {
         font-family: FFDINWebProLight, sans-serif;
         font-size: 1.25rem;
         line-height: 1.45;
     }
-    p code, 
+    p code,
     li code {
-        background-color: ${theme.secondaryBackgroundColor};
+        background-color: var(--secondary-background-color);
         padding: 3px 4px;
         margin: 0 2px;
         font-size: inherit;
@@ -46,7 +46,7 @@ const ArticleBody = styled.article(
         width: 100%;
     }
     pre {
-        background-color: ${theme.secondaryBackgroundColor};
+        background-color: var(--secondary-background-color);
         padding: 16px;
         overflow-y: scroll;
     }
@@ -55,16 +55,17 @@ const ArticleBody = styled.article(
         line-height: 1.5;
     }
     a {
-        color: ${theme.linkTextColor};
+        color: var(--link-text-color);
     }
     ul,
     ol {
         padding-left: 16px;
-        li {
+        li  {
             margin-bottom: 8px;
         }
     }
-    .gatsby-highlight, iframe {
+    .gatsby-highlight,
+    iframe {
         margin: 50px auto;
     }
     h1,
@@ -72,9 +73,9 @@ const ArticleBody = styled.article(
     div,
     ul,
     ol {
-        max-width:760px;
-        margin-left:auto;
-        margin-right:auto;
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
     }
     video {
         display: block;
@@ -85,7 +86,6 @@ const ArticleBody = styled.article(
     .gatsby-highlight {
         font-size: 1.25rem;
     }
-    `
-);
+`;
 
 export default ArticleBody;

@@ -9,12 +9,10 @@ const AuthorText = styled.p`
     line-height: 1.5;
 `;
 
-const AuthorLink = styled.a(
-    ({ theme }) => `
-    color: ${theme.textColor};
+const AuthorLink = styled.a`
+    color: var(--link-text-color);
     font-weight: bolder;
-`
-);
+`;
 
 const enhancedLinkGuesser = link => {
     if (!link) {
