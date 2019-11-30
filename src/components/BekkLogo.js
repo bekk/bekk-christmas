@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import * as mediaQueries from '../constants/media-queries';
 
 const fade = keyframes`
   to {
@@ -9,7 +10,11 @@ const fade = keyframes`
 
 const Container = styled.div`
     fill: ${({ theme }) => theme.textColor};
-    width: 5em;
+    width: 200px;
+    ${mediaQueries.mediumUp} {
+        margin-top: 50px;
+    }
+
     cursor: pointer;
 
     &:focus,
