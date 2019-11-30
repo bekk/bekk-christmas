@@ -20,7 +20,7 @@ This became the start of a chaotic period where different browsers supported dif
 
 Instead of having the new browser defaulting to the better CSS implementation, developers had to specify that the website intended to use the newer version of the CSS implementation. Many developers suffered without need as they were not aware of this new CSS implementation that they could turn to, and make their days better.
 
-<img class="wide-image" src="https://images.unsplash.com/photo-1476041583396-e91e78267fb8?w=1226&h=400&fit=crop&crop=edges" />
+![](https://images.unsplash.com/photo-1476041583396-e91e78267fb8?w=760&h=400&fit=crop&crop=edges)
 
 Fast Forward to today where most browsers support CSS2 in a consistent way - making the development experience a lot better. But CSS is still developing, providing new features that let us get even more out of our markup. But this also creates much frustration seeing as developers are often living on the bleeding edge - knowing that some browsers support features they want to use - but knowing some browsers still don't support them.
 
