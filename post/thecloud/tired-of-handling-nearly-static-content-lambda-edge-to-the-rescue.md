@@ -20,6 +20,15 @@ ingress: >-
   navigation. All of a sudden you’re pushed into the world of [content
   transclusion](https://en.wikipedia.org/wiki/Transclusion), now loosely
   referred to as [micro frontends](https://micro-frontends.org/)
+links:
+  - title: Content transclusion
+    url: 'https://en.wikipedia.org/wiki/Transclusion'
+  - title: Micro frontends
+    url: 'https://micro-frontends.org/'
+  - title: Microservice websites
+    url: 'https://gustafnk.github.io/microservice-websites/'
+authors:
+  - Jørn Ola Birkeland
 ---
 Logically, this is how your index.html should look:
 
