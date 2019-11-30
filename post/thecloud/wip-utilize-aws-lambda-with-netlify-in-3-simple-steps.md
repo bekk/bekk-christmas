@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 1
 title: Take your functions to the cloud with 3 simple steps
 image: >-
-  https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3306&q=80
+  https://images.unsplash.com/photo-1476790422463-0f61b4722b8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80
 ingress: >-
   Have you ever deployed a static site, but found yourself in need of an API
   endpoint? Perhaps you needed somewhere to post form data, but the thought of
