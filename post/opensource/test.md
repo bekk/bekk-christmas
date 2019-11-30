@@ -16,8 +16,9 @@ We have compiled a short list of some of the accounts that we follow. Hopefully 
 
 * [@dan_abramov](https://twitter.com/dan_abramov) (Co-creator of Redux, JavaScript)
 * [@davidfowl](https://twitter.com/davidfowl) (ASP.NET , Roslyn)
+* [@kentcdodds](https://twitter.com/kentcdodds) (JavaScript/frontend), 
 * [@khellang](https://twitter.com/khellang) (Web, Open source activist)
-* [@selbekk](https://twitter.com/selbekk) (React influencer, JavaScript)
+* [@selbekk](https://twitter.com/selbekk) (React influencer, JavaScript/frontend)
 * [@housecor](https://twitter.com/housecor) (React & JavaScript)
 * [@yegor256](https://twitter.com/yegor256) (Software development & architecture)
 * [@baeldung](https://twitter.com/baeldung) (Security, OAuth, software development)
