@@ -73,6 +73,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     component: blogPostTemplate,
                     context: {
                         id: node.id,
+                        isPreview,
+                        showPrevLink: post_day > 1,
+                        showNextLink: post_day !== hideWindowsAfterDay,
                     },
                 });
 

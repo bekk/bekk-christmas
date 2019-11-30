@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import remark from 'remark';
 import recommended from 'remark-preset-lint-recommended';
@@ -67,7 +67,18 @@ const TitleContainer = styled.h1`
     margin: auto;
 `;
 
-const Template = ({ data }) => {
+const PostNavigation = styled.div`
+    display: flex;
+    max-width: 760px;
+    width: 100%;
+    margin: 30px auto;
+
+    &: > * {
+        display: block;
+    }
+`;
+
+const Template = ({ data, pageContext }) => {
     const { markdownRemark } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const {
@@ -101,6 +112,8 @@ const Template = ({ data }) => {
     const seoDescription =
         description || ingressHtml.replace(/<[^>]*>?/gm, '') || `An article from ${calendar}`;
 
+    const path = `${pageContext.isPreview && `/${calendar}`}/${post_year}/`;
+
     return (
         <Layout calendarName={calendar} year={post_year}>
             <Helmet>
@@ -123,6 +136,18 @@ const Template = ({ data }) => {
                     />
                 )}
                 {image && <HeroImage src={heroImage} alt="" />}
+                <PostNavigation>
+                    {pageContext.showPrevLink && (
+                        <Link to={`${path}/${post_day - 1}`} style={{ marginRight: 'auto' }}>
+                            Previous post
+                        </Link>
+                    )}
+                    {pageContext.showNextLink && (
+                        <Link to={`${path}/${post_day + 1}`} style={{ marginLeft: 'auto' }}>
+                            Next post
+                        </Link>
+                    )}
+                </PostNavigation>
                 <PrismThemer>
                     <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
