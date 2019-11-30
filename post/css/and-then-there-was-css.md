@@ -22,7 +22,7 @@ Instead of having the new browser defaulting to the better CSS implementation, d
 
 ![](https://images.unsplash.com/photo-1476041583396-e91e78267fb8?w=760&h=400&fit=crop&crop=edges)
 
-Fast forward to today where most browsers support CSS2 in a consistent way - making the development experience a lot better. But CSS is still developing, providing new features that let us get even more out of our markup. But this also creates much frustration seeing as developers are often living on the bleeding edge - knowing that some browsers support features they want to use - but knowing some browsers still don't support them.
+Fast forward, today most browsers support CSS2 in a consistent way - making the development experience a lot better. But CSS is still developing, providing new features that let us get even more out of our markup. But this also creates much frustration seeing as developers are often living on the bleeding edge - knowing that some browsers support features they want to use - but knowing some browsers still don't support them.
 
 There still seems to remain some frustrations when styling websites. Some libraries try to make the development experience better, but they often bloat the markup. It seems that because HTML and CSS seem so simple, it is simple to accidentally skip getting to know of certain basic principles one should know of, so as to take full advantage of the languages.
 
