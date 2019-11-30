@@ -25,22 +25,11 @@ const FlatListItem = styled.li`
     }
 `;
 
-const RightFooterLayout = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    ${mediaQueries.mediumUp} {
-        align-items: flex-end;
-    }
-`;
-
 const Description = styled.p`
     max-width: 350px;
-    text-align: left;
-
+    margin: 0;
     ${mediaQueries.mediumUp} {
-        text-align: right;
+        margin-top: 48px;
     }
 `;
 
@@ -88,9 +77,18 @@ const SiteFooter = ({ calendarName }) => {
     return (
         <Container>
             <Column>
-                <p>Check out some of our other calendars:</p>
+                <h2 style={{ marginTop: 0 }}>Bekk Christmas</h2>
                 <FlatList>
-                    {otherCalendars.map(calendar => (
+                    {otherCalendars.slice(0, 7).map(calendar => (
+                        <li key={calendar}>
+                            <Link href={`https://${calendar}.christmas`}>
+                                {mapCalendarToName(calendar) + ' Christmas'}
+                            </Link>
+                        </li>
+                    ))}
+                </FlatList>
+                <FlatList>
+                    {otherCalendars.slice(7, 13).map(calendar => (
                         <li key={calendar}>
                             <Link href={`https://${calendar}.christmas`}>
                                 {mapCalendarToName(calendar) + ' Christmas'}
@@ -100,24 +98,24 @@ const SiteFooter = ({ calendarName }) => {
                 </FlatList>
             </Column>
             <Column>
-                <RightFooterLayout>
-                    <BekkLogo />
-                    <Description>
-                        Bekk is all about craftmanship and the people crafting it. This year, we're
-                        creating 12 calendars, each with daily content, articles and podcasts.
-                    </Description>
-                    <FlatList>
-                        <FlatListItem>
-                            <Link href="https://www.instagram.com/livetibekk/">Instagram</Link>
-                        </FlatListItem>
-                        <FlatListItem>
-                            <Link href="https://www.facebook.com/BekkConsulting/">Facebook</Link>
-                        </FlatListItem>
-                        <FlatListItem>
-                            <Link href="https://blogg.bekk.no/">Blogg</Link>
-                        </FlatListItem>
-                    </FlatList>
-                </RightFooterLayout>
+                <Description>
+                    Bekk is all about craftmanship and the people crafting it. This year, we're
+                    creating 12 calendars, each with daily content, articles and podcasts.
+                </Description>
+            </Column>
+            <Column>
+                <BekkLogo />
+                <FlatList style={{ marginTop: 20 }}>
+                    <FlatListItem>
+                        <Link href="https://www.instagram.com/livetibekk/">Instagram</Link>
+                    </FlatListItem>
+                    <FlatListItem>
+                        <Link href="https://www.facebook.com/BekkConsulting/">Facebook</Link>
+                    </FlatListItem>
+                    <FlatListItem>
+                        <Link href="https://blogg.bekk.no/">Blog</Link>
+                    </FlatListItem>
+                </FlatList>
             </Column>
         </Container>
     );

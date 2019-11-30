@@ -41,6 +41,7 @@ const Description = styled.p`
 const DailyWindowHeader = styled.h2`
     font-weight: 400;
     font-size: 3em;
+    padding-left: 10px;
 
     ${mediaQueries.mediumUp}  {
         padding-left: 15px;
