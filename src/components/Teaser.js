@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { ThemeProvider } from './ThemeContext';
 import GlobalStyles from './GlobalStyles';
 import * as mediaQueries from '../constants/media-queries';
 import teaser1Src from '../images/teaser-1.jpg';
@@ -111,7 +110,7 @@ const SpectacularEntrance = styled.div(
 
 export const Teaser = () => {
     return (
-        <ThemeProvider>
+        <div>
             <GlobalStyles />
             <Helmet>
                 <title>Introducing a Bekk Christmas..</title>
@@ -164,6 +163,6 @@ export const Teaser = () => {
                     />
                 </ImagePotpourri>
             </Container>
-        </ThemeProvider>
+        </div>
     );
 };
