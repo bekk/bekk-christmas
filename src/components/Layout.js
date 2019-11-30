@@ -9,20 +9,18 @@ import GlobalStyles from './GlobalStyles';
 import { SkipToContent, MainContentWrapper } from './SkipToContent';
 import Footer from './Footer';
 
-const Container = styled.div(
-    ({ theme }) => `
+const Container = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
     .dark-theme-image {
-        display: ${theme.darkThemeImageDisplay};
+        display: var(--dark-theme-image-display);
     }
     .light-theme-image {
-        display: ${theme.lightThemeImageDisplay};
+        display: var(--light-theme-image-display);
     }
-`
-);
+`;
 
 const MainContent = styled(MainContentWrapper)`
     flex: 1;

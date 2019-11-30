@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
     --text-color: #0e0e0e;
     --link-text-color: #0e0e0e;
     --contrast-text-color: #0e0e0e;
+    --dark-theme-image-display: none;
+    --light-theme-image-display: block;
     
     ${mediaQueries.darkMode} {
       --primary-background-color: #0e0e0e;
@@ -24,6 +26,8 @@ const GlobalStyles = createGlobalStyle`
       --text-color: #fff;
       --link-text-color: #fff;
       --contrast-text-color: #fff;
+      --dark-theme-image-display: block;
+      --light-theme-image-display: none;
     }
   }
 
