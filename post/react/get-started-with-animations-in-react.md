@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 3
 title: Get started with animations in React
 image: >-
-  https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
+  https://images.unsplash.com/photo-1552472200-78d2ad19d2ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
 ingress: >-
   Have you never been able to make that menu appear in the awesome way you've
   always wanted? Perhaps you've got lots of experience making things move with
@@ -17,7 +17,7 @@ links:
 authors:
   - Bendik Bjørndal Iversen
 ---
-Framer Motion is popular animations library for React that is simple enough to get you started quickly with implementing actual animations in your app, yet has enough features and possibilities to support more advanced use-cases. The library has a "motion component" for each HTML-element that exists, and lets you implement animations by adding various Framer-specific props to the components to add things like drag, hover, transitions and more. 
+Framer Motion is a popular animations library for React that is simple enough to get you started quickly with implementing actual animations in your app, yet has enough features and possibilities to support more advanced use-cases. The library has a "motion component" for each HTML-element that exists, and lets you implement animations by adding various Framer-specific props to the components to add things like drag, hover, transitions and more. 
 
 A simple example is given below, where a `div` styled as a simple square is replaced by a `motion.div` with two props: `whileHover` and `whileTap`. These props both take objects that can contain various properties depending on the desired behaviour of the element. In the example, a single `scale` property is used to control the size of the element.
 
