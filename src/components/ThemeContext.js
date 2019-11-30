@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import * as colors from '../constants/colors';
-import * as mediaQueries from '../constants/media-queries';
 
 const ThemeContext = React.createContext(null);
 
