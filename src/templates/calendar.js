@@ -78,7 +78,7 @@ const Template = ({ data, pageContext }) => {
                                     calendarWindow.day,
                                     pageContext.year
                                 )}
-                                title={calendarWindow.title}
+                                title={`${calendarWindow.day}: ${calendarWindow.title}`}
                             />
                         ) : (
                             <CalendarWindowClosed day={index + 1} />
