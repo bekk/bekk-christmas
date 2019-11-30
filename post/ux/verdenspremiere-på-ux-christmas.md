@@ -17,7 +17,7 @@ authors:
   - Helen Le
 ---
 <img class="light-theme-image" src="https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif" />
-<img class="dark-theme-image" src="https://i.ibb.co/bzL77rS/julekalender-darkmode.gif" />
+<img class="dark-theme-image" src="https://i.ibb.co/ZfS1RfB/julekalender-2-darkmode.gif" />
 
 ## But first, some context.
 
