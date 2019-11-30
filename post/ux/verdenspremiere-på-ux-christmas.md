@@ -31,11 +31,17 @@ Some articles are written in English, and some in Norwegian. They are just short
 > “Way back in 1943 Abraham Maslow published his “Hierarchy of needs” – a pyramid describing the forces that motivate us, and the order in which we strive to meet them. For many designers, this 76-year-old model still informs the design decisions we make every day. But did you know that Maslow moved on to an updated model only a few years later? Or that psychologists stopped using Maslow’s pyramid years ago?“
 
 \
-**December 6th:** Copywriter Erik Mathisen tells us a little story on storytelling…
+**December 6th:** Copywriter Erik Mathisen tells us a little story on storytelling (in Norwegian) …
 
-> “At gode historier er universelle. De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.“
+> “Historier sender ungene våre til drømmeland. Historier bygger solide merkevarer og får tårer til å trille på kino. Historier skaper helter. Skurker. Presidenter. Mytologier. Konspirasjoner. Legender.
+>
+> Historier er sentrale i vår fortløpende konstruksjon av virkeligheten.
+>
+> De er limet som skaper et fornuftig narrativ vi kan forholde oss til i dag, i morgen og til dagen historiene våre er alt som er igjen.
+>
+> Velkommen til en liten historietime. Om historier.“
 
-## My work, your work.
+## Roles and tunnel vision 
 
 This year, a couple of us in Bekk’s Interactive department decided to make our own UX advent calendar to compliment the slurry of development calendars produced by the Technology department. Only a breath or two later, a discussion arose about what it would be called and what type of articles we should include. Is “UX” the right term? Does it cover all of the specialities we have in our discipline?
 
@@ -53,7 +59,7 @@ What if the whole team, no matter their background, was more curious about each 
 
 **A true story:**
 
-![Cartoon strip of a developer talking to a designer ](https://i.ibb.co/PF9cYN9/Artboard-1.png)
+![Cartoon strip of a developer talking to a designer ](https://i.ibb.co/mqrkwJC/UX-bug.png)
 
 ## Everyone is a UXer.
 
