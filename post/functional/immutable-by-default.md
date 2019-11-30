@@ -10,7 +10,7 @@ ingress: >-
   mutable data structures. Many of them are avoidable simply by making it harder
   to accidentally modify data.
 links:
-  - title: '[0] – Concurrency (Computer Science)'
+  - title: Concurrency (Computer Science)
     url: 'https://en.wikipedia.org/wiki/Concurrency_(computer_science)'
 authors:
   - Bendik Solheim
@@ -27,7 +27,7 @@ I don’t like surprises. Well, there are of course nice surprises, but when I p
 
 ## Concurrency
 
-Concurrency is a biggie nowadays, with home computers having more and more CPUS and threads available. Yeah, I know, this was also true 15 years ago. But I needed a way to start this paragraph, so just keep on reading. Concurrency is also inherently hard, as threads might need to synchronize, and sometimes even needs access to shared data to perform their operations. What would happen if you had two threads operating on the same, shared data structure – one reading from it while the other mutates it? Best case scenario, your program blows up and execution stops. Worst case, you end up with the wrong result and have no idea that something is seriously wrong. This is not a new problem – concurrency and all its issues has been discussed by computer scientists since at least the 1960s [0]. There are therefore also multiple ways to deal with concurrency, and prevent concurrency issues. The easiest though, at least in my opinion, is simply making your data structures immutable. When shared resources can’t change, threads can’t cause issues for each other as easily. Again, we have removed possible problems by limiting the number of possible operations.
+Concurrency is a biggie nowadays, with home computers having more and more CPUS and threads available. Yeah, I know, this was also true 15 years ago. But I needed a way to start this paragraph, so just keep on reading. Concurrency is also inherently hard, as threads might need to synchronize, and sometimes even needs access to shared data to perform their operations. What would happen if you had two threads operating on the same, shared data structure – one reading from it while the other mutates it? Best case scenario, your program blows up and execution stops. Worst case, you end up with the wrong result and have no idea that something is seriously wrong. This is not a new problem – concurrency and all its issues has been discussed by computer scientists since at least the 1960s ([Concurrenty (computer science](https://en.wikipedia.org/wiki/Concurrency_(computer_science))). There are therefore also multiple ways to deal with concurrency, and prevent concurrency issues. The easiest though, at least in my opinion, is simply making your data structures immutable. When shared resources can’t change, threads can’t cause issues for each other as easily. Again, we have removed possible problems by limiting the number of possible operations.
 
 # But what about the real world?
 
