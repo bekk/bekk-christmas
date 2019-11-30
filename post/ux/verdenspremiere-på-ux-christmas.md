@@ -16,7 +16,7 @@ links:
 authors:
   - Helen Le
 ---
-![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcom to ux.christmas")
+![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcome to ux.christmas")
 
 ## But first, some context.
 
@@ -47,7 +47,7 @@ This year, a couple of us in Bekk’s Interactive department decided to make our
 
 In our industry, there are a ton of titles and role-descriptions for what we do. In Bekk we have Graphic Designers, Interaction Designers, Service Designers, UX Designers, Product Designers, Product Developers, Front-end Developers, Full-stack Developers, and Project Managers to name a few.
 
-These titles make it easy to distinguish between practice areas and foster expertise within our own discipline. They make it easy to identify individuals, assign responsibility within a team, and assure cross-disciplinary collaboration. My experience is that the titles can also easily create silos and disclaimers within the team.
+These titles make it easy to distinguish between practice areas and foster expertise within our own discipline. They make it easy to identify individuals, assign responsibility within a team, and assure cross-disciplinary collaboration. My experience is that the titles can also create silos and disclaimers within the team.
 
 Interaction Designers facilitate user testing and create user-flows. Visual or Graphic Designers focus on combining visuals and other elements to create clear communication, and developers make sure that the technology delivers. It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.
 
@@ -63,7 +63,7 @@ What if the whole team, no matter their background, was more curious about each 
 
 ## Everyone is a UXer.
 
-Titles can so easily put us in a box. But why can’t a developer think about tone of voice, while a Visual Designer considers technical architecture and clean code. By putting titles to the side, a team can collaborate and focus on what they want to achieve. We should challenge one another, not micromanage eachother or cling on to the methods we learned in school. Do we really need these titles, as long as we are delivering value?
+Titles can so easily put us in a box. But why can’t a developer think about tone of voice, while a Visual Designer considers technical architecture and implementation. Just to be clear, I'm not saying that designers should take over and code. By putting titles to the side, a team can collaborate and focus on what they want to achieve. We should be open, challenge one another, not micromanage eachother or cling on to the methods we learned in school. Do we really need these titles, as long as we are delivering value?
 
 Happy December 1st! Thanks for opening the first window of our advent calendar. Remember to follow along for a new design tidbit every day until Christmas Eve.
 
