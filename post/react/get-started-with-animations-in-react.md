@@ -17,7 +17,7 @@ links:
 authors:
   - Bendik Bjørndal Iversen
 ---
-Framer Motion is popular library that is simple enough to get you started quickly with implementing actual animations in your React app, yet has enough features and possibilities to support more advanced use-cases. The library let's you implement animations by having a "motion component" for each HTML-element that exists, and by adding different props supported by the Framer API to the components you can  easily add things like drag, hover, transitions and more to the elements. 
+Framer Motion is popular library that is simple enough to get you started quickly with implementing actual animations in your React app, yet has enough features and possibilities to support more advanced use-cases. The library has a "motion component" for each HTML-element that exists, and lets you implement animations  by adding various Framer-specific props to the components to add things like drag, hover, transitions and more. 
 
 A simple example is given below, where a `div` styled as a simple square is replaced by a `motion.div` with two Motion specific props: `whileHover` and `whileTap`. These props both take objects that can contain various properties depending on the desired behaviour of the element. In the example, a single `scale` property is used to control the size of the element.
 
