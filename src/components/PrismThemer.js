@@ -19,16 +19,16 @@ const PrismThemer = styled.div`
     --prism-variable-color: #ee9900;
 
     ${mediaQueries.darkMode} {
-        --prism--text-color: #c5c8c6;
-        --prism--background-color: #1d1f21;
-        --prism--comment-text-color: #7c7c7c;
-        --prism--punctuation-color: #c5c8c6;
-        --prism--property-color: #96cbfe;
-        --prism--selector-color: #a8ff60;
-        --prism--operator-color: #bccedd;
-        --prism--keyword-color: #96cbfe;
-        --prism--function-color: #dad085;
-        --prism--variable-color: #c6c5fe;
+        --prism-text-color: #c5c8c6;
+        --prism-background-color: #1d1f21;
+        --prism-comment-text-color: #7c7c7c;
+        --prism-punctuation-color: #c5c8c6;
+        --prism-property-color: #96cbfe;
+        --prism-selector-color: #a8ff60;
+        --prism-operator-color: #bccedd;
+        --prism-keyword-color: #96cbfe;
+        --prism-function-color: #dad085;
+        --prism-variable-color: #c6c5fe;
     }
 
     pre[class*='language-'],
