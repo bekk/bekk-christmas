@@ -31,7 +31,7 @@ Traditional artificial neural networks are structured in layers. Each neuron com
 
 These neural networks are trained to do specific tasks. If we want our network to tell whether an image depicts a cat or dog, we have to train it to do so. This is done by first feeding an image of a cat or a dog to the network. The network then does its internal computations, before an output is produced. This output is compared with the truth. If the network thinks it was given a picture of a dog when in reality the picture was of a cat, it will alter the behaviour of its neurons slightly in order to make a better prediction of a cat in the future. 
 
-![](https://i.ibb.co/j3c77Td/1-o-B3-S5y-HHhvoug-Jk-PXuc8og.gif)
+![](/assets/ml_10_pic4.gif)
 
 
 In order to reach near-human performance, the network needs to be presented with a lot of labelled pictures of cats and dogs. Each time the network makes a wrong prediction, the neurons are modified slightly. After a lot of modifications, the neurons are able to work together to identify whether or not the given image is of a cat or dog. 
