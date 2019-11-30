@@ -32,15 +32,9 @@ Like everything else that is made of code, React changes over time and what was 
 
 Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now (if you didn't, you should at least add an "UNSAFE_" prefix). StrictMode can help you identify unsafe lifecycle methods in your own code and third-party libraries and also suggests alternative methods.
 
-### Unexpected side-effects
+### Unexpected side effects
 
-In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side-effects which can lead to memory leaks and invalid state. StrictMode can't detect those side-effects automatically, but uses another trick – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` are all invoked twice.
-
-
-Side effects (such as fetching data from a server, changing the DOM, etc.) that may cause trouble can't be detected automatically by StrictMode.
-
-
-
+In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side effects which can lead to memory leaks and invalid state. StrictMode can't detect those side effects automatically, but uses a simple but ingenious trick to make it easier to spot those – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` all get double-invoked. If this leads to any strange behaviour in your app, you should look for any unexpected side effects.
 
 ## How to use StrictMode?
 
