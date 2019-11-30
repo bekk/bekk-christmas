@@ -8,6 +8,7 @@ const themes = ['dark', 'light'];
 const [darkTheme, lightTheme] = themes;
 const themeConfigs = {
     [darkTheme]: {
+        primaryBackgroundColor: colors.black,
         secondaryBackgroundColor: colors.darkGray,
         contrastBackgroundColor: colors.yellow,
         textColor: colors.white,
@@ -29,6 +30,7 @@ const themeConfigs = {
         lightThemeImageDisplay: 'none',
     },
     [lightTheme]: {
+        primaryBackgroundColor: colors.white,
         secondaryBackgroundColor: colors.lighterGray,
         contrastBackgroundColor: colors.contrastYellow,
         textColor: colors.black,
