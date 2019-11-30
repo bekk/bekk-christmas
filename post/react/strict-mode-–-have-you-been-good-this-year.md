@@ -24,15 +24,15 @@ Strict Mode is a feature already introduced to React 16.3 in March 2018. Still, 
 
 ### Deprecated code and legacy APIs
 
-Like everything else that is made of code, React changes over time and what was once considered state of the art eventually becomes deprecated and replaced. Such as `findDOMNode` which is deprecated in Strict Mode and possibly will be removed in a future version of React. Other examples are the use of [string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) and the [legacy context API](https://reactjs.org/docs/legacy-context.html) which both have some issues.
+Like everything else that is made of code, React changes over time and what was once considered state of the art eventually becomes deprecated and replaced. Such as `findDOMNode` which is deprecated in Strict Mode and possibly will be removed in a future version of React. Other examples are the use of [string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) and the [legacy context API](https://reactjs.org/docs/legacy-context.html), both of which cause some issues.
 
 ### Unsafe lifecycle methods
 
-Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now (if you didn't, you should at least add an "UNSAFE_" prefix). Strict Mode can help you identify unsafe lifecycle methods in your own code and third-party libraries and also suggests alternative methods.
+Since release 16.9, React throws a warning when using any of the lifecycle methods `componentWillMount`, `componentWillReceiveProps` and `componentWillUpdate`. You've hopefully converted these methods into safer alternatives by now (if not, you should at least add an "UNSAFE_" prefix). Strict Mode can help you identify unsafe lifecycle methods in your own code and third-party libraries, and also suggests alternative methods.
 
 ### Unexpected side effects
 
-In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side effects which can lead to memory leaks and invalid state. Strict Mode can' t detect these side effects automatically, but uses a simple yet clever trick to make them easier to spot – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` all get double invoked. If this leads to a weird behaviour in your app, you know what to look for.
+In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side effects which can lead to memory leaks and invalid state. Strict Mode can't detect these side effects automatically, but uses a simple yet clever trick to make them easier to spot – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` all get double invoked. If this leads to any weird behaviour in your app, you know what to look for.
 
 ## How to use Strict Mode?
 
@@ -58,7 +58,7 @@ Or just a single component:
 </App>
 ```
 
-This way you can apply Strict Mode gradually in your app without having to correct everything at once.
+This way, you can gradually apply Strict Mode to your app without having to correct everything at once.
 
 If you want to see Strict Mode in action, you should check out this CodeSandbox created by [Kent C. Dodds'](https://twitter.com/kentcdodds) (warnings can be found in the console output):
 
