@@ -34,7 +34,7 @@ Since release 16.9, React throws a warning when using any of the lifecycle metho
 
 ### Unexpected side effects
 
-In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side effects which can lead to memory leaks and invalid state. StrictMode can't detect those side effects automatically, but uses a simple but ingenious trick to make it easier to spot those – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` all get double-invoked. If this leads to any strange behaviour in your app, you should look for any unexpected side effects.
+In Concurrent Mode, React may trigger the `render` method multiple times before actually committing the changes (e.g. changing the DOM). Therefore, it is important that this method doesn't contain side effects which can lead to memory leaks and invalid state. StrictMode can' t detect these side effects automatically, but uses a simple yet clever trick to make them easier to spot – the methods `constructor`, `render`, `setState` and `getDerivedStateFromProps` all get double invoked. If this leads to a weird behaviour in your app, you know what to look for.
 
 ## How to use StrictMode?
 
