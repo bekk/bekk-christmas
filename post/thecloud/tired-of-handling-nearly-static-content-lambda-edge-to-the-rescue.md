@@ -97,4 +97,6 @@ Finally, leveraging a CDN for static content is A Good Thing, and should reduce 
 
 There are a couple of drawbacks, of course: Getting your lambda function to work correctly can be a bit of trial and error with somewhat [limited debugging possibilities](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-testing-debugging.html). Also, index.html is cached for a certain time period (decided by you). A new deployment of your app will not be immediately available to new clients. A cache invalidation request to CloudFront may take a few minutes, so in the odd case you need to be able to rapidly make a new version of your index.html available, using a CDN in front of it may be the wrong thing to do. For everybody else, it is definitely a tool to have in your toolbox.
 
-**Many thanks to** [**Morten Jansrud**](mailto:morten.jansrud@bekk.no)**,** [**Frikk Hald Andersen**](mailto:frikk.hald.andersen@gmail.com) **og** [**Eirik Årseth**](mailto:eirik.emil@gmail.com)**, who have done all the hard  work.**
+**Many thanks to** [**Morten Jansrud**](mailto:morten.jansrud@bekk.no)**,** [**Frikk Hald Andersen**](mailto:frikk.hald.andersen@gmail.com) **og** [**Eirik Årseth**](mailto:eirik.emil@gmail.com)**, who have done all the hard  work.** 
+
+Splash photo by [Eduardo Braga](https://www.pexels.com/@eduardo-braga-4788?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/awesome-beautiful-glacial-glacier-1296744/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
