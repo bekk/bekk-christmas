@@ -21,12 +21,12 @@ ingress: >-
   transclusion](https://en.wikipedia.org/wiki/Transclusion), now loosely
   referred to as [micro frontends](https://micro-frontends.org/)
 links:
-  - title: Content transclusion
-    url: 'https://en.wikipedia.org/wiki/Transclusion'
   - title: Micro frontends
     url: 'https://micro-frontends.org/'
   - title: Microservice websites
     url: 'https://gustafnk.github.io/microservice-websites/'
+  - title: Immutable web apps
+    url: 'https://immutablewebapps.org/'
 authors:
   - Jørn Ola Birkeland
 ---
