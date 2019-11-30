@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 3
-title: Tired of handling NEARLY static content? Lambda@Edge to the rescue
+title: Need to handle NEARLY static content? Lambda@Edge to the rescue
 image: >-
   https://images.pexels.com/photos/1296744/pexels-photo-1296744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 ingress: >-
