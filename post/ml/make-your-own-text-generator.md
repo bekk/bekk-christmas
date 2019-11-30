@@ -44,4 +44,4 @@ We can be repeated steps 2-4 as many times as wanted to generate as long a text 
 
 ![Illustration of how a neural network can generate a text sequence](/assets/ml_17_pic1.gif)
 
-Congrats! You now have some intuition for how a text generator works. If you want to play with the text generator used to generate the first paragraph in this post you can visit [https://talktotransformer.com](https://talktotransformer.com) and feed it a seed of your own. Have fun!
+Congrats! You now have a basic intuition for how a text generator works. If you want to play with the text generator used to generate the first paragraph in this post you can visit [https://talktotransformer.com](https://talktotransformer.com) and feed it a seed of your own. Have fun!
