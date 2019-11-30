@@ -5,6 +5,8 @@ post_day: 1
 title: And then there was CSS
 image: >-
   https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+authors:
+  - Dag Frode Solberg
 ---
 And then there was CSS
 
