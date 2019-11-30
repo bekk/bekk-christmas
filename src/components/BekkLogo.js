@@ -9,7 +9,7 @@ const fade = keyframes`
 `;
 
 const Container = styled.div`
-    fill: ${({ theme }) => theme.textColor};
+    fill: var(--text-color);
     width: 200px;
     ${mediaQueries.mediumUp} {
         margin-top: 50px;
@@ -20,7 +20,7 @@ const Container = styled.div`
     &:focus,
     &:hover {
         path {
-            fill: ${({ theme }) => theme.secondaryBackgroundColor};
+            fill: var(--secondary-background-color)
             animation-duration: 0.15s;
             animation-name: ${fade};
             animation-timing-function: ease-in-out;

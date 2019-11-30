@@ -50,14 +50,12 @@ const Ingress = styled.section`
     margin-right: auto;
 `;
 
-const RelevantLinksContainer = styled.section(
-    ({ theme }) => `
+const RelevantLinksContainer = styled.section`
     a {
-        color: ${theme.linkTextColor};
+        color: var(--link-text-color);
         margin-right: 32px;
     }
-    `
-);
+`;
 
 const TitleContainer = styled.h1`
     font-size: 3em;
