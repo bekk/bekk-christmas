@@ -2,15 +2,15 @@
 calendar: opensource
 post_year: 2019
 post_day: 2
-title: 'WIP: Open Source on Twitter'
+title: Open Source on Twitter
 ingress: >-
-  Contributing to Open source requires inspiration - and time! By following
-  Twitter-accounts that focus on the subjects that the most matter to you, you
-  might find the inspiration you seek.
+  Contributing to Open source often requires a healthy dose of inspiration. By
+  following accounts on Twitter that focus on the subjects that the most matter
+  to you, you might find the inspiration you seek.
 authors:
   - Henrik Walker Moe
 ---
-We have compiled a short list of some of the Twitter-accounts that we follow. Hopefully they'll turn out to be useful and a source of inspiration to you too!
+We have compiled a short list of some of the accounts that we follow. Hopefully they'll inspire you too!
 
 ## Developers
 
