@@ -2,7 +2,7 @@
 calendar: opensource
 post_year: 2019
 post_day: 2
-title: Open Source on Twitter
+title: Open source on Twitter
 ingress: >-
   Contributing to Open source often requires a healthy dose of inspiration. By
   following accounts on Twitter that focus on the subjects that the most matter
