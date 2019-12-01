@@ -21,7 +21,7 @@ authors:
 <!---//![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcome to ux.christmas")--->
 
 <img class="light-theme-image" src="https://i.ibb.co/728CGgQ/julekalender-light.gif" style="margin: auto" />
-<img class="dark-theme-image" src="https://i.ibb.co/ch3X7Sn/julekalender-darkmode-4.gif" style="margin: auto />
+<img class="dark-theme-image" src="https://i.ibb.co/ch3X7Sn/julekalender-darkmode-4.gif" style="margin: auto" />
 
 ## But first, some context.
 
