@@ -1,5 +1,6 @@
 ---
 title: Kjetil Valle
-socialMediaLink: '@kjetilvalle'
+socialMediaLink: 'https://twitter.com/kjetilvalle'
+company: Bekk
 ---
 
