@@ -55,7 +55,9 @@ To this simple pure grid markup:
 
 ![Pure Grid layout example](/assets/screen-shot-2019-11-30-at-13.44.50.png "Pure Grid layout example")
 
-Not only does a pure flexbox layout require nested divs, but it also require more CSS to get padding or margin between each flex item to add spacing between your items. With Grid you can simply use `grid-gap`. 💁 Check out this [codepen](https://codepen.io/Myau/pen/yLyBPaV) want to check out the code above!
+Not only does a pure flexbox layout require nested divs, but it also require more CSS to get padding or margin between each flex item to add spacing between your items. With Grid you can simply use `grid-gap`. 💁 
+
+<iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBPaV"></iframe>
 
 Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️  ✨
 
