@@ -23,13 +23,13 @@ The concept of Concurrent Mode is not a new revolutionary feature, but for React
 
 # The Concept of Concurrent Mode
 
-As I mention in the introduction, the concept of Concurrent Mode is not a _new method_. Think of processors as an example, they got a scheduler which prioritises the most important taks when a resource is available. The same is it for JavaScript compiler, but instead of a processor, it has **one** thread for user interaction it has to use wisely (the UI thread). If this thread freezes, it can't react (pun intended) to new events. Concurrent Mode want to prevent this by creating several `mini-threads` in the UI main thread with its own scheduler to be able to be responsive. The scheduler parts the rendering tasks which can be paused due to other more important jobs.
+As I mention in the introduction, the concept of Concurrent Mode is not a _new method_. Think of processors as an example, they got a scheduler which prioritises the most important taks when a resource is available. The same is it for the JavaScript compiler, but instead of a processor, it has **one** thread for user interaction (the UI thread) it has to use wisely. If this thread "freezes" due to work overload, it can't react (pun intended) to new events until it is done. Concurrent Mode want to prevent this by creating several `mini-threads` within the UI main thread, and with its own scheduler it can maintain the responsiveness. 
 
 # The User Experience
 
 The _once rendering, always rendering_ problem is sometimes hard to avoid, because even though your application has nice performance, the device the user has may not be strong enough to handle it. Factors as network speed and device capabilities may cause your application to stutter, even though you have done a nice job with throttling and debouncing.
 
-There are some events that you want to happen immediately, for instance hovering over elements or typing into an input field. If your device is busy rendering the list,  the hover effect is not visible before it is done with the previous task. And the scroll may freeze(!#$%&). When React begins to render, you can't stop it until it is done. That's why the Concurrent Mode (they say) may come to save the day. The new feature will focus on human interactions; simple tasks like hover and scroll should happen instantly, while navigation to new sites and click-events is more acceptable to be more time consuming (they claim research has shown).
+There are some events that you want to happen immediately, for instance hovering over elements or typing into an input field. If your device is busy rendering the list,  the hover effect is not visible before it is done with the previous task. And the scroll may freeze(!#$%&). When React begins to render, you can't stop it until it is done.  Concurrent Mode will focus on human interactions; simple tasks like hover and scroll should happen instantly, while navigation to new sites and click-events is more acceptable to be more time consuming (they claim research has shown).
 
 ## Interruptible Rendering
 
@@ -39,7 +39,7 @@ I don't think you should rely on the fact that Concurrent Mode will solve all yo
 
 ## Intentional Loading Sequences
 
-It is a common action when you navigate to a new site on your website, and you simultaneously want to fetch data. But it is a little annoying being redirected to a new page with no content or it is just showing some kind of a loading indicator. So what if React could make you stay on the previous page just a little bit longer so you can skip the _bad_ loading state? By doing this you cover the fact that you don't have all the data you need to show right now, and it doesn't feel like an eternity for the user. When the user has triggered an action which leads to a site transition, React can start creating the new page (in memory) and wait before updating DOM until it is ready. And most importantly; the "old" site is still interactive. This feature is not impossible to create to day, but with Concurrent Mode it is built-in. 
+It is a common action when you navigate to a new site on your website, and you simultaneously want to fetch data. But it is a little annoying being redirected to a new page with no content or it is just showing some kind of a loading indicator. So what if React could make you stay on the previous page just a little bit longer so you can skip the _bad_ loading state? By doing this you cover the fact that you don't have all the data you need to show right now, and it doesn't feel like an eternity for the user. When the user has triggered an action which leads to a site transition, React can start creating the new page (in memory) and wait before updating DOM until it is ready. And most importantly; the "old" site is still interactive. This feature is not impossible to create today, but with Concurrent Mode it is already built-in. 
 
 To be able to create the intentional loading sequences, React offers the new `useTransition` hook:
 
@@ -49,9 +49,9 @@ const CONFIG = { timeoutMs: 2000 };
 const [startTransition, isPending] = useTransition(CONFIG);
 ```
 
-The `startTransition` value is a function, which could be used on the state we want to intentionally load. `isPending` tells us if the transition is going on! If you put your data fetching inside the startTransition function, it will wait the amount of time you passed inn as config. This will tell React how long you are willing to wait before showing some output to the user.
+The `startTransition` value is a function, which could be used on the state we want to intentionally load. `isPending` tells us if the transition is going on! If you put your data fetching inside the startTransition function, it will wait the amount of time you passed as config. This will tell React how long you are willing to wait before showing some output to the user.
 
-Let's take a look at an example:
+Let's take a look at an example where we use the startTransition as a onClick event for a button that should get some asynchronous data when it's pressed:
 
 ```
 <button
@@ -64,7 +64,7 @@ Let's take a look at an example:
 >
 ```
 
-# How to Enable It
+# How to Enable it
 
 Concurrent Mode has been released as an opt-in. Our god of bloggs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode). To get the version with Concurrent Mode, you need to install this experimental version of React:
 
@@ -92,6 +92,6 @@ In addition to be able to use Concurrent Mode, they strongly advise to use `Stri
 
 # What Now?
 
-One common feature that occur hand in hand with Concurrent Mode, which I have not written about is Suspense, will come in a later article!
+The date for stable release of Concurrent Mode has not yet been announced (as far I know), but keep calm and keep an eye one the [releases](https://github.com/facebook/react/releases) for React. Meanwhile, you can enjoy the experimental version (but perhaps not use it in production just yet!).
 
-However, the date for stable release of Concurrent Mode has not yet been announced (as far I know), but keep calm and keep an eye one the [releases](https://github.com/facebook/react/releases). Meanwhile, you can enjoy the experimental version (but perhaps not use it in production just yet!).
+One feature that occur hand in hand with Concurrent Mode, which I have not written about, is Suspense, but it will come in a later article!
