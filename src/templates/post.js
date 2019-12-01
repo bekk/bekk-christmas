@@ -74,7 +74,7 @@ const PostNavigation = styled.div`
 
 const Template = ({ data, pageContext }) => {
     const { markdownRemark, allAuthors } = data;
-    const { frontmatter, html, timeToRead, fields } = markdownRemark;
+    const { frontmatter, html, timeToRead } = markdownRemark;
     const {
         authors,
         calendar,
@@ -87,15 +87,17 @@ const Template = ({ data, pageContext }) => {
         post_year,
     } = frontmatter;
 
-    const enrichedAuthors = authors.map(author => {
-        let details = {};
-        allAuthors.forEach(element => {
-            if (element.frontmatter.title === author) {
-                details = element.frontmatter;
-            }
+    const enrichedAuthors =
+        Array.isArray(authors) &&
+        authors.map(author => {
+            let details = {};
+            allAuthors.forEach(element => {
+                if (element.frontmatter.title === author) {
+                    details = element.frontmatter;
+                }
+            });
+            return details;
         });
-        return details;
-    });
 
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
