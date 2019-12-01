@@ -15,7 +15,7 @@ ingress: >-
 ---
 Det finnes en haug med ulike oppvarmingsøvelser der ute som kan brukes, avhengig av hva som er hensikten. Jeg vil gjerne dele noen av oppvarmingsøvelsene jeg har prøvd ut på prosjekt og sammen med faggruppen min “Kreativ problemløsning”.  (Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
 
-## Tegne i blinde 
+## Tegne i blinde
 
 ice breaker, bli kjent
 
@@ -35,15 +35,12 @@ energi, ice breaker
 
 Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller lignende. 
 
-![alt-tekst til bilde](https://i.ibb.co/xYqzD6G/Sirkler.png)
-
 **Hvordan**
 
 1. Alle får et ark med mange sirkler på foran seg og klokken settes på 5 minutter. I løpet av denne tiden skal du gjøre flest mulig sirkler om til noen annet enn sirkler
 2. Når 5 minutter har gått går man sammen i par og bytter ark. 
 3. Se på hverandres ark og skriv hva du tror den andre har tegnet. 
-
-
+![beskrivelse av sirkler-øvelse](https://i.ibb.co/1LqLD03/sirkler-L.png)
 
 ## Zombie Cats
 
@@ -59,6 +56,4 @@ energi
 
 ## 
 
-
-
-****
+- - -
