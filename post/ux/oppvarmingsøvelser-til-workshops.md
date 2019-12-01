@@ -13,4 +13,22 @@ ingress: >-
   oppvarmingsøvelse være en ypperlig måte å få i gang en workshop eller unngå
   «etter lunsj-dippen».
 ---
-sdadadsa
+## **Sirkler**
+
+* Type: Tegning
+* Tidsbruk: ca.10 min
+* Du trenger: Tusjer, ark med mange sirkler på et papir
+* Antall deltagere: Ubegrenset
+* Hva: En øvelse for å være kreativ på kort tid
+
+![alt-tekst til bilde](https://ibb.co/cwh21Qt)
+
+**Hvordan**
+
+1. Alle får et ark med mange sirkler på foran seg og klokken settes på 5 minutter. I løpet av denne tiden skal du gjøre flest mulig sirkler om til noen annet enn sirkler
+2. Når 5 minutter har gått går man sammen i par og bytter ark. 
+3. Se på hverandres ark og skriv hva du tror den andre har tegnet. 
+
+**Hvorfor**
+
+Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller lignende.
