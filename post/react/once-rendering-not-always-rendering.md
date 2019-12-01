@@ -21,7 +21,9 @@ authors:
 ---
 The concept of Concurrent Mode is not a new revolutionary feature, but for React it creates some nice new opportunities. In most React applications today there are some problems with rendering. If you have triggered some sort of list update or other time consuming task, and you want to go on with your life, that's not always that easy. If all the performance on your device is busy rendering an exceptional big list, it will not be able to give feedback for other events before it is done. To give it an analogy, imagine you have that one friend that only talks and talks, and you never get possibility to say anything. That's rendering and it blocks even though you have new input!
 
+# The Concept of Concurrent Mode
 
+As I mention in the introduction of this article, the concept of Concurrent Mode is not a _new feature_. Think of processors as an example, they got a scheduler prioritising the most important taks when some resources is available. The same is it for React, but instead of a processor, React has one thread it has to use wisely.
 
 # The User Experience
 
@@ -39,24 +41,33 @@ I don't think you should rely on the fact that Concurrent Mode will solve all yo
 
 It is a common action when you navigate to a new site on your website, and simultaneously fetch data. But it is a little annoying being redirected to a new page which with no content or just show some kind of a loading indicator. So what if React could make you stay on the previous page just a little bit longer so you can skip the _bad_ loading state? By doing this you cover the fact that you have to gather some data to show, and it doesn't feel like an eternity for the user. When the user has triggered an action which leads to a site transition, React can start creating the new page (in memory) and wait before updating DOM. And most importantly; the "old" site is still interactive. This feature is not impossible to create to day, but with Concurrent Mode it is built in. 
 
-# The Concept of Concurrent Mode
-
-As I mention in the introduction of this article, the concept of Concurrent Mode is not a _new feature_. Think of processors, 
-
 # How to Enable It
 
-Our god of bloggs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
+Concurrent Mode has been release as an opt-in in React version 16.8. Our god of bloggs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
+
+To get the experimental version, you need to install the experimental version of React:
+
+```
+npm install react@experimental react-dom@experimental
+```
+
+Further on, to enable it you simple need to make som changes in your entry file, and use the \`createRoot\` from ReactDOM:
 
 ```
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './app'
-ReactDOM.render(<App />, rootEl)
 
 // Before Concurrent Mode:
-const rootEl = document.getElementById('root')
+const rootEl = document.getElementById('root')ReactDOM.render(<App />, rootEl)
 
 // With Concurrent Mode:
 const root = ReactDOM.createRoot(rootEl)
 root.render(<App />)
 ```
+
+# What Now?
+
+One common feature that occur hand in hand with Concurrent Mode but I have not written about is Suspense, but this will come in another article!
+
+The stable release of Concurrent Mode has not yet been announced (as I know), but keep calm and keep an eye one the releases. Meanwhile, you can enjoy the experimental version, and perhaps not use it in production.
