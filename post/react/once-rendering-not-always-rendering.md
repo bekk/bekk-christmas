@@ -33,8 +33,22 @@ With Concurrent Mode, the rendering can be interrupted. If the user do trigger a
 
 I don't think you should rely on the fact that Concurrent Mode will solve all you performance issues. However, I think it will be a nice helper in the heavy list-rendering React-applications out there.
 
-If you are curious about this new feature and you want to try it, our God of Bloggs have written a nice post about it. You guessed right, Kent C. Dodds wrote about [how to enable Concurrent Mode](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
-
 # Intentional loading sequences
 
-#
+# 
+
+# How to Enable It
+
+```
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app'
+ReactDOM.render(<App />, rootEl)
+
+// Today:
+const rootEl = document.getElementById('root')
+
+// With Concurrent Mode:
+const root = ReactDOM.createRoot(rootEl)
+root.render(<App />)
+```
