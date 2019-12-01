@@ -17,15 +17,17 @@ links:
 authors:
   - My Thao Nguyen
 ---
+CSS Grid is basically a 2-dimensional layout system that lets you place items across a number of rows and columns, unlike Flexbox which was made for placing items in a single row or column.
+
 ## How to Grid
 
-CSS Grid is basically a 2-dimensional layout system that lets you place items across a number of rows and columns, unlike Flexbox which was made for placing items in a single row or column. Grid is used like Flexbox by setting the container with `display: grid`. You then need to define your grid by saying how many rows and columns you would like it to consist of with `grid-template-columns` and `grid-template-rows`. For instance:
+Grid is used like Flexbox by setting the container with `display: grid`. Then you got to define how many rows and columns you want your grid to have with `grid-template-columns` and `grid-template-rows`. For instance:
 
 ![Defining you grid example](/assets/screen-shot-2019-11-28-at-23.58.03.png "Defining you grid example")
 
-In this example, I have used `fr` which will split the grid vertically into three equal fractions of the total space in the grid. This can also be written in a simpler way, by using `repeat(3, 1fr)` - where the number `3`represents how many rows you would like of the size of one fraction (`1fr`) of the remaining space. 
+In this example, I have used `fr` (which stands for _fraction_) - to split the grid into three columns each of one fraction each of the total space in the grid. This can also be written in a simpler way, by using `repeat(3, 1fr)` - where the number `3`represents how many rows you would like of the size of one fraction (`1fr`) of the remaining space. 
 
-After defining your columns and rows, you can decide whether to position your items by using _grid lines_ or _grid tracks_. The numbers in the image below defines the grid lines for columns and rows, while tracks is the any group of cells.
+After defining your columns and rows, you can decide whether to position your items by using _grid lines_ or _grid tracks_. The numbers in the image below defines the grid lines for columns and rows, while tracks is the any group of cells. 
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
@@ -33,7 +35,7 @@ With grid-lines, you place each item by defining from which column/row line to w
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
-To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method 😊 Check out the code:
+To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method 😊 Check out the codepen below to see why. ✨
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
 
