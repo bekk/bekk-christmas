@@ -23,7 +23,7 @@ The concept of Concurrent Mode is not a new revolutionary feature, but for React
 
 # The Concept of Concurrent Mode
 
-As I mention in the introduction of this article, the concept of Concurrent Mode is not a _new feature_. Think of processors as an example, they got a scheduler prioritising the most important taks when some resources is available. The same is it for React, but instead of a processor, React has one thread it has to use wisely.
+As I mention in the introduction of this article, the concept of Concurrent Mode is not a _new feature_. Think of processors as an example, they got a scheduler prioritising the most important taks when a resource is available.  The same is it for React, but instead of a processor, JavaScript has **one** thread it has to use wisely for user interaction (the UI thread). If this thread freezes, it can't react (pun intended) to new input. Concurrent Mode want to prevent this by creating several `mini-threads` in the main thread to be responsive.
 
 # The User Experience
 
@@ -41,13 +41,15 @@ I don't think you should rely on the fact that Concurrent Mode will solve all yo
 
 It is a common action when you navigate to a new site on your website, and simultaneously fetch data. But it is a little annoying being redirected to a new page which with no content or just show some kind of a loading indicator. So what if React could make you stay on the previous page just a little bit longer so you can skip the _bad_ loading state? By doing this you cover the fact that you have to gather some data to show, and it doesn't feel like an eternity for the user. When the user has triggered an action which leads to a site transition, React can start creating the new page (in memory) and wait before updating DOM. And most importantly; the "old" site is still interactive. This feature is not impossible to create to day, but with Concurrent Mode it is built in. 
 
-To be able to get the intentional loading sequences, React offers a new hook, the \`useTransition\` hook.
+To be able to get the intentional loading sequences, React offers the new `useTransition` hook.
 
 ```
 const SUSPENSE_CONFIG = { timeoutMs: 2000 };
 
 const [startTransition, isPending] = useTransition(SUSPENSE_CONFIG);
 ```
+
+The `startTransition` value is a function, which could be used on the state we want to intentionally load. `isPending `tells us if the transition is going on.
 
 # How to Enable It
 
@@ -59,7 +61,7 @@ To get the experimental version, you need to install the experimental version of
 npm install react@experimental react-dom@experimental
 ```
 
-Further on, to enable it you simple need to make som changes in your entry file, and use the \`createRoot\` from ReactDOM:
+Further on, to enable it you simple need to make som changes in your entry file, and use the `createRoot` from ReactDOM:
 
 ```
 import React from 'react'
@@ -74,7 +76,7 @@ const root = ReactDOM.createRoot(rootEl)
 root.render(<App />)
 ```
 
-In addition to be able to use Concurrent Mode, the strongly advise to use \`Strict Mode\`, which luckily was written about in the [article from yesterday](https://react.christmas/2019/1)!
+In addition to be able to use Concurrent Mode, the strongly advise to use `Strict Mode`, which luckily was written about in the [article from yesterday](https://react.christmas/2019/1)!
 
 # What Now?
 
