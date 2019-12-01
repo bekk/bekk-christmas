@@ -14,6 +14,10 @@ links:
     url: 'https://css-tricks.com/snippets/css/complete-guide-grid/ '
   - title: Does Grid replace Flex?
     url: 'https://css-tricks.com/css-grid-replace-flexbox/'
+  - title: Auto-sizing columns using auto-fill vs auto-fit
+    url: 'https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/'
+  - title: Grid examples
+    url: 'https://gridbyexample.com/examples/'
 authors:
   - My Thao Nguyen
 ---
@@ -31,17 +35,17 @@ After defining your columns and rows, you can decide whether to position your it
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, to define the position of my header, I set `.header { grid-column: 1/4; }`:
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header `item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand:  `.header { grid-column: 1/4 }`. 
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
-To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method 😊 Check out the codepen below to see why. ✨
+To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method as it is less code and easier to remember the cell names rather than the grid lines 😊.
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
 
-If the placement of your grid items is not defined then all direct children of the container will be automatically be placed inside of each cell in the grid. It's super simple! ✨
+If the placement of your grid items is not defined then all direct children of the container will be automatically be placed inside of each cell in the grid. Simple, right? ✨
 
-## What's good about it?
+## What is good about Grid?
 
 Grid really shines when it comes to dividing your webpage into different parts without letting your markup suffer! Imagine going from having a layout with loads of nested flexboxes:
 
@@ -53,6 +57,6 @@ To this simple pure grid markup:
 
 Not only does a pure flexbox layout require nested divs, but it also require more CSS to get padding or margin between each flex item to add spacing between your items. With Grid you can simply use `grid-gap`. 💁 Check out this [codepen](https://codepen.io/Myau/pen/yLyBPaV) want to check out the code above!
 
-Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️ 
+Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️  ✨
 
 ##
