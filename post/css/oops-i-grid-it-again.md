@@ -3,7 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 4
 title: Oops! I Grid it again
-image: 'https://i.ibb.co/zXjHr25/Screen-Shot-2019-11-21-at-17-50-32.png'
+image: >-
+  https://images.unsplash.com/photo-1494506195512-4d6e9a7beb35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80
 ingress: >-
   It’s been six months since I’ve been introduced to CSS Grid and I just can't
   stop sharing how useful it is! It’s amazing when you’re in the need of a
