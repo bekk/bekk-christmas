@@ -3,7 +3,7 @@ calendar: css
 post_year: 2019
 post_day: 4
 title: Oops! I Grid it again
-image: 'https://ibb.co/X7Nkb54'
+image: 'https://unsplash.com/photos/vwwZOoYFCHc '
 ingress: >-
   It’s been six months since I’ve been introduced to CSS Grid and I just can't
   seem to stop wanting to share how useful it is! It’s amazing when you’re in
@@ -53,8 +53,6 @@ Not only does a pure flexbox layout require nested divs, but it also require mor
 
 Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! 
 
-So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! 
+So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️
 
-## I know what you're thinking, but what about IE? No worries!
-
-![Annie - The sun will come out tomorrow](/assets/index.jpg "The sun will come out tomorrow")
+##
