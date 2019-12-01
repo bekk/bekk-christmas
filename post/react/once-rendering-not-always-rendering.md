@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 2
-title: 'Once rendering, (not) always rendering'
+title: Stop... Render Time!
 image: >-
   https://images.unsplash.com/photo-1443632826930-7e5bc4aa7fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
