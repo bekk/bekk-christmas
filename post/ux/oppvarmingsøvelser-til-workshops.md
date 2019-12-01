@@ -21,7 +21,7 @@ ingress: >-
 * Antall deltagere: Ubegrenset
 * Hva: En øvelse for å være kreativ på kort tid
 
-![alt-tekst til bilde](https://ibb.co/cwh21Qt)
+![alt-tekst til bilde](https://i.ibb.co/xYqzD6G/Sirkler.png)
 
 **Hvordan**
 
