@@ -11,6 +11,8 @@ links:
     url: 'http://setosa.io/ev/principal-component-analysis/'
   - title: Principal Component Analysis (Wikipedia)
     url: 'https://en.wikipedia.org/wiki/Principal_component_analysis'
+  - title: In depth explanation of PCA
+    url: 'https://brilliant.org/wiki/principal-component-analysis/'
 authors:
   - Aryan Iranzamini
 ---
@@ -26,6 +28,6 @@ As one can see in the leftmost graph in the figure above, the data set consists 
 
 This might not look like something special at first glance. However if we view each principal component by itself, which can be seen in the second figure, we can see that first principal component accounts for most of the variance in the data. It is barely possible to distinguish the data points in the second one and it can therefore just be discarded. Thus, we can just use the first principal components to represent our data.
 
-This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the data.
-
 ![Photo: Victor Powell](/assets/screenshot-2019-11-12-at-19.11.12.png)
+
+This was an example of how we can use PCA to go from two dimensions to just one, while still retaining all the important information in the original data set. It can be applied to data with any number of dimensions and reduce it down to two or three components for visualization, which makes it a useful tool for every data scientist. For more in-depth information regarding PCA, please see the links down below.
