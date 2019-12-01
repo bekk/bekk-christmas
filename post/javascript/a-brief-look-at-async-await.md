@@ -70,7 +70,7 @@ How would you solve this using ```async-await```? The first thing we need is a f
 
 ```js
 function check() {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(get('/resource/check');
     }, 5000);
