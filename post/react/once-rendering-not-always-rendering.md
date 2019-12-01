@@ -66,6 +66,8 @@ const root = ReactDOM.createRoot(rootEl)
 root.render(<App />)
 ```
 
+In addition to be able to use Concurrent Mode, the strongly advise to use \`Strict Mode\`, which luckily was written about in the [article from yesterday](https://react.christmas/2019/1)!
+
 # What Now?
 
 One common feature that occur hand in hand with Concurrent Mode but I have not written about is Suspense, but this will come in another article!
