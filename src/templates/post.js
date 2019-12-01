@@ -73,9 +73,10 @@ const PostNavigation = styled.div`
 `;
 
 const Template = ({ data, pageContext }) => {
-    const { markdownRemark } = data;
+    const { markdownRemark, allAuthors } = data;
     const { frontmatter, html, timeToRead, fields } = markdownRemark;
     const {
+        authors,
         calendar,
         description,
         title,
@@ -85,6 +86,16 @@ const Template = ({ data, pageContext }) => {
         post_day,
         post_year,
     } = frontmatter;
+
+    const enrichedAuthors = authors.map(author => {
+        let details = {};
+        allAuthors.forEach(element => {
+            if (element.frontmatter.title === author) {
+                details = element.frontmatter;
+            }
+        });
+        return details;
+    });
 
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
@@ -123,9 +134,9 @@ const Template = ({ data, pageContext }) => {
             </Helmet>
             <TitleContainer>{title}</TitleContainer>
             <MaxWidth>
-                {fields && fields.enrichedAuthors && (
+                {enrichedAuthors && enrichedAuthors.length > 0 && (
                     <AuthorInfo
-                        authors={fields && fields.enrichedAuthors}
+                        authors={enrichedAuthors}
                         readingTime={timeToRead}
                         calendar={calendar}
                         year={post_year}
@@ -186,14 +197,8 @@ export const aboutPageQuery = graphql`
         markdownRemark(id: { eq: $id }) {
             html
             timeToRead
-            fields {
-                enrichedAuthors {
-                    title
-                    socialMediaLink
-                    company
-                }
-            }
             frontmatter {
+                authors
                 calendar
                 title
                 ingress
@@ -204,6 +209,13 @@ export const aboutPageQuery = graphql`
                     title
                     url
                 }
+            }
+        }
+        allAuthors {
+            frontmatter {
+                title
+                socialMediaLink
+                company
             }
         }
     }
