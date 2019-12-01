@@ -59,4 +59,7 @@ module.exports = {
         },
         `gatsby-plugin-netlify`,
     ],
+    mapping: {
+        'MarkdownRemark.frontmatter.authors': 'MarkdownRemark.frontmatter.title',
+    },
 };

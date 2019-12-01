@@ -103,12 +103,6 @@ export const calendarPageQuery = graphql`
             }
         ) {
             nodes {
-                fields {
-                    enrichedAuthors {
-                        title
-                        socialMediaLink
-                    }
-                }
                 frontmatter {
                     calendar
                     image
