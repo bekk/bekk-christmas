@@ -56,7 +56,7 @@ asyncFunction();
 The code ``` await addOne(1)``` will wait until the promise is resolve and return the 2, similar to:
 
 ```js
-const asyncFunction = async function() {
+const someFunction = function() {
   addOne(1).then((result) => console.log(result));
 };
 ```
