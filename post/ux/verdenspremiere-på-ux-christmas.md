@@ -13,6 +13,8 @@ links:
     url: 'https://designtitles.com/'
   - title: The Truth (!) About Design Titles
     url: 'https://www.vanschneider.com/truth-design-titles'
+  - title: The magic behind Bekk.christmas
+    url: 'https://blogg.bekk.no/introducing-bekk-christmas-ad01660ccadf'
 authors:
   - Helen Le
 ---
