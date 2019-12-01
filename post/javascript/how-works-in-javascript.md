@@ -43,12 +43,12 @@ const person = {
   firstName: "Lisa",
   lastName: "Simpson",
   homeTown: "Springfield"
-}
+};
 
 const { firstName, ...restPerson } = person;
 
-console.log(firstName) // "Lisa"
-console.log(restPerson) // { lastName: "Simpson", homeTown: "Springfield" }
+console.log(firstName); // "Lisa"
+console.log(restPerson); // { lastName: "Simpson", homeTown: "Springfield" }
 ```
 
 As shown above, destructuring lets us extract the `firstName` property, while keeping the rest in a separate object.
@@ -74,7 +74,7 @@ If the rest parameter was yin, the spread operator would be its yang. It looks e
 The spread operator lets us expand elements such as objects and arrays. Lets see how it works.
 
 ```js
-const withoutMarge = ["Lisa", "Homer", "Bart"]
+const withoutMarge = ["Lisa", "Homer", "Bart"];
 
 const wholeFamily = ["Marge", ...withoutMarge];
 ```
@@ -86,12 +86,12 @@ const person = {
   firstName: "Lisa",
   lastName: "Simpson",
   homeTown: "Springfield"
-}
+};
 
 const extended = {
   ...person,
   brother: "Bart"
-}
+};
 
 console.log(extended);
 // {
@@ -109,12 +109,12 @@ const person = {
   firstName: "Lisa",
   lastName: "Simpson",
   homeTown: "Springfield"
-}
+};
 
 const overwritten = {
   ...person,
   homeTown: "New York"
-}
+};
 
 console.log(overwritten);
 /*
