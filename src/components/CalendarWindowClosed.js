@@ -10,7 +10,7 @@ const Number = styled.span`
 `;
 
 const WindowClosed = styled.div`
-    border: 1px solid var(--text-color)
+    border: 1px solid var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
