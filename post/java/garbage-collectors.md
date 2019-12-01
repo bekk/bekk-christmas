@@ -91,7 +91,7 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
   </span>
   <span class="c20_box c20_tenure">Tenure space</span>
 </div>
-<figcaption>The anatomy of the heap.</figcaption>
+<figcaption>The anatomy of the heap (eden, survivor, and tenure space).</figcaption>
 </figure>
 
 
