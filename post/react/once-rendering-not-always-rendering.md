@@ -21,23 +21,31 @@ authors:
 ---
 The concept of Concurrent Mode is not a new revolutionary feature, but for React it creates some nice new opportunities. In most React applications today there are some problems with rendering. If you have triggered some sort of list update or other time consuming task, and you want to go on with your life, that's not always that easy. If all the performance on your device is busy rendering an exceptional big list, it will not be able to give feedback for other events before it is done. To give it an analogy, imagine you have that one friend that only talks and talks, and you never get possibility to say anything. That's rendering and it blocks even though you have new input!
 
+
+
 # The User Experience
 
 The _once rendering, always rendering_ problem is sometimes hard to avoid, because even though your application has nice performance the device the user has may not be strong enough to handle it. Factors as network speed and device capabilities may cause your application to stutter, even though you have done a nice job with throttling and debouncing.
 
 There are some events that you want to happen immediately, for instance hovering over some elements or typing into an input field. If your device is busy rendering the list, the hover effect is not visible before it is done with he previous task. When React begins to render, you can't stop it until it is done. That's why the Concurrent Mode (they say) will come to save the day. The new feature will focus on human interactions; simple input like hover and simple tasks should happen instantly, while navigation to new sites and click-events is more acceptable to be more time consuming.
 
-# Interruptible Rendering
+## Interruptible Rendering
 
 With Concurrent Mode, the rendering can be interrupted. If the user do trigger another event that is more important, it will pause the rendering and do the desired task, before returning to the origin task to finish the job. The degree of what is important is determined by a heuristics, to know how high-priority the update is. It will (hopefully) make your application more responsive!
 
 I don't think you should rely on the fact that Concurrent Mode will solve all you performance issues. However, I think it will be a nice helper in the heavy list-rendering React-applications out there.
 
-# Intentional loading sequences
+## Intentional Loading Sequences
 
-# 
+It is a common action when you navigate to a new site on your website, and simultaneously fetch data. But it is a little annoying being redirected to a new page which with no content or just show some kind of a loading indicator. So what if React could make you stay on the previous page just a little bit longer so you can skip the _bad_ loading state? By doing this you cover the fact that you have to gather some data to show, and it doesn't feel like an eternity for the user. When the user has triggered an action which leads to a site transition, React can start creating the new page (in memory) and wait before updating DOM. And most importantly; the "old" site is still interactive. This feature is not impossible to create to day, but with Concurrent Mode it is built in. 
+
+# The Concept of Concurrent Mode
+
+As I mention in the introduction of this article, the concept of Concurrent Mode is not a _new feature_. Think of processors, 
 
 # How to Enable It
+
+Our god of bloggs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
 
 ```
 import React from 'react'
@@ -45,7 +53,7 @@ import ReactDOM from 'react-dom'
 import App from './app'
 ReactDOM.render(<App />, rootEl)
 
-// Today:
+// Before Concurrent Mode:
 const rootEl = document.getElementById('root')
 
 // With Concurrent Mode:
