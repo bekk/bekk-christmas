@@ -24,13 +24,13 @@ const isPreview = envCalendar === 'preview';
 module.exports = {
     plugins: [
         ...(isPreview ? [`gatsby-plugin-netlify-cms`] : []),
-        ...calendarPlugins,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/authors`,
             },
         },
+        ...calendarPlugins,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
