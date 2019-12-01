@@ -17,8 +17,6 @@ links:
 authors:
   - My Thao Nguyen
 ---
-
-
 ## How to Grid
 
 CSS Grid is basically a 2-dimensional layout system that lets you place items across a number of rows and columns, unlike Flexbox which was made for placing items in a single row or column. Grid is used like Flexbox by setting the container with `display: grid`. You then need to define your grid by saying how many rows and columns you would like it to consist of with `grid-template-columns` and `grid-template-rows`. For instance:
@@ -31,7 +29,7 @@ After defining your columns and rows, you can decide whether to position your it
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, to define the position of my header, I set` .header { grid-column: 1/4; }`:
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, to define the position of my header, I set`.header { grid-column: 1/4; }`:
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
@@ -40,8 +38,6 @@ To use grid tracks, you first have to define your `grid-template-areas` by namin
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
 
 If the placement of your grid items is not defined then all direct children of the container will be automatically be placed inside of each cell in the grid. It's super simple! ✨
-
-
 
 ## What's good about it?
 
@@ -58,8 +54,6 @@ Not only does a pure flexbox layout require nested divs, but it also require mor
 Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! 
 
 So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! 
-
-
 
 ## I know what you're thinking, but what about IE? No worries!
 
