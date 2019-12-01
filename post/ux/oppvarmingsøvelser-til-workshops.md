@@ -23,6 +23,8 @@ ice breaker, bli kjent
 
 energi, ice breaker
 
+![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
+
 ## **Sirkler**
 
 * Type: Tegning - 
