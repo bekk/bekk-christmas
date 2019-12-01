@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 1
 title: How to contribute to Open source
+image: >-
+  https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
   We think Open Source is such an important part of a developer’s life that
   we’ve devoted an entire advent calendar to the subject! For a lot of
