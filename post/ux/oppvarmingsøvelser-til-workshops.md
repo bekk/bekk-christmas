@@ -13,13 +13,27 @@ ingress: >-
   oppvarmingsøvelse være en ypperlig måte å få i gang en workshop eller unngå
   «etter lunsj-dippen».
 ---
+Det finnes en haug med ulike oppvarmingsøvelser der ute som kan brukes, avhengig av hva som er hensikten. Jeg vil gjerne dele noen av oppvarmingsøvelsene jeg har prøvd ut på prosjekt og sammen med faggruppen min “Kreativ problemløsning”.  (Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
+
+## Tegne i blinde 
+
+ice breaker, bli kjent
+
+## Historiestafett
+
+energi, ice breaker
+
 ## **Sirkler**
 
-* Type: Tegning
+* Type: Tegning - 
 * Tidsbruk: ca.10 min
 * Du trenger: Tusjer, ark med mange sirkler på et papir
 * Antall deltagere: Ubegrenset
 * Hva: En øvelse for å være kreativ på kort tid
+
+**Hvorfor**
+
+Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller lignende. 
 
 ![alt-tekst til bilde](https://i.ibb.co/xYqzD6G/Sirkler.png)
 
@@ -29,6 +43,22 @@ ingress: >-
 2. Når 5 minutter har gått går man sammen i par og bytter ark. 
 3. Se på hverandres ark og skriv hva du tror den andre har tegnet. 
 
-**Hvorfor**
 
-Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller lignende.
+
+## Zombie Cats
+
+bli kjent
+
+## Funfact
+
+bli kjent
+
+## Stein, saks, papir
+
+energi
+
+## 
+
+
+
+****
