@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import * as mediaQueries from '../constants/media-queries';
 
@@ -131,7 +131,8 @@ const Frontpage = ({ data, pageContext }) => {
                     </HeaderContainer>
 
                     <Description>
-                        288 articles, 24 days.
+                        <a href="https://link.medium.com/AdCsZLiM31">Introducing</a> 288 articles,
+                        24 days.
                         <br />
                         Made with{' '}
                         <span role="img" aria-label="christmas spirit">
