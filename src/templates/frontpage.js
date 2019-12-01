@@ -26,6 +26,7 @@ const Header = styled.h1`
 
 const Description = styled.p`
     margin: 0;
+    margin-bottom: 50px;
     font-size: 2em;
     max-width: 100%;
 
@@ -129,16 +130,19 @@ const Frontpage = ({ data, pageContext }) => {
                             <img src={treeImage} alt="" />
                         </ChristmasTreeMobile>
                     </HeaderContainer>
-
                     <Description>
-                        <a href="https://link.medium.com/AdCsZLiM31">Introducing</a> 288 articles,
-                        24 days.
+                        288 articles, 24 days.
                         <br />
                         Made with{' '}
                         <span role="img" aria-label="christmas spirit">
                             🎅
                         </span>{' '}
                         in Oslo and Trondheim, Norway!
+                    </Description>
+                    <Description>
+                        Read about this project
+                        <br />
+                        <a href="https://link.medium.com/AdCsZLiM31">on our blog</a>.
                     </Description>
                 </div>
                 <ChristmasTreeDesktop>
