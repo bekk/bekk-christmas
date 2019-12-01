@@ -24,7 +24,9 @@ links:
 authors:
   - Nicklas Utgaard
 ---
-Garbage collection is a mechanism used in Java to free up unused memory. In order to achieve this it tracks all objects and determines which ones that safely can be removed from the heap. In this post we'll provide a short introduction to how it works, and some different implementations provided in by Java.
+Garbage collection is a mechanism used in Java to free up unused memory. In order to achieve this it tracks all objects and determines which ones that safely can be removed from the heap. 
+
+When a Java process launches it allocates memory for the heap, metaspace (PermGen successor), JIT codecache, thread stacks, and shared libraries depending on how much memory is available to the process. When talking about garbage collections in Java it is natural to focus on the heap, though the metaspace and codecache are also subjected to garbage collection. 
 
 <style>
 .c20_heapfig {
