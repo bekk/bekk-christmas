@@ -35,7 +35,7 @@ After defining your columns and rows, you can decide whether to position your it
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header `item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand:  `.header { grid-column: 1/4 }`. 
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand:  `.header { grid-column: 1/4 }`. 
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
@@ -47,7 +47,7 @@ If the placement of your grid items is not defined then all direct children of t
 
 ## What is good about Grid?
 
-Grid really shines when it comes to dividing your webpage into different parts without letting your markup suffer! Imagine going from having a layout with loads of nested flexboxes:
+Grid really shines when it comes to dividing your web page into different parts without letting your markup suffer! Imagine going from having a layout with loads of nested flexboxes:
 
 ![Pure Flexbox layout example](/assets/screen-shot-2019-11-30-at-13.45.01.png "Pure Flexbox layout example")
 
