@@ -6,9 +6,8 @@ title: Oops! I Grid it again
 image: 'https://i.ibb.co/zXjHr25/Screen-Shot-2019-11-21-at-17-50-32.png'
 ingress: >-
   It’s been six months since I’ve been introduced to CSS Grid and I just can't
-  seem to stop wanting to share how useful it is! It’s amazing when you’re in
-  the need of a responsive layout without wanting to compromise on the semantics
-  or markup.
+  stop sharing how useful it is! It’s amazing when you’re in the need of a
+  responsive layout!
 links:
   - title: The Complete Guide to CSS Grid
     url: 'https://css-tricks.com/snippets/css/complete-guide-grid/ '
