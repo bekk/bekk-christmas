@@ -9,7 +9,11 @@ The Code Book by Simon Singh
 
 Liars and Outliers: Enabling the Trust that Society Needs to Thrive by Bruce Schneier
 
-Cryptonomicon by Neil Stephenson
+GCHQ Puzzle Book I and II
+
+The Code Book av Simon Singh
+
+Permanent Record av Edward Snowden
 
 Hackers: Heroes of the Computer Revolution by Steven Levy
 
