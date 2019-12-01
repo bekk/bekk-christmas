@@ -17,7 +17,7 @@ links:
 authors:
   - My Thao Nguyen
 ---
-CSS Grid is basically a 2-dimensional layout system that lets you place items across a number of rows and columns, unlike Flexbox which was made for placing items in a single row or column.
+So what is CSS Grid all about? Unlike Flexbox which was made for placing items in a single row or column, Grid can be called a 2-dimensional layout system that lets you place items across a number of rows and columns! Well, it sounds interesting enough! But how do you use it? 
 
 ## How to Grid
 
@@ -31,7 +31,7 @@ After defining your columns and rows, you can decide whether to position your it
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, to define the position of my header, I set`.header { grid-column: 1/4; }`:
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, to define the position of my header, I set `.header { grid-column: 1/4; }`:
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
@@ -51,10 +51,8 @@ To this simple pure grid markup:
 
 ![Pure Grid layout example](/assets/screen-shot-2019-11-30-at-13.44.50.png "Pure Grid layout example")
 
-Not only does a pure flexbox layout require nested divs, but it also require more css to get gap in between each flex item compared to using `grid-gap`. Check out this [codepen](https://codepen.io/Myau/pen/yLyBPaV) want to check out the code above!
+Not only does a pure flexbox layout require nested divs, but it also require more CSS to get padding or margin between each flex item to add spacing between your items. With Grid you can simply use `grid-gap`. 💁 Check out this [codepen](https://codepen.io/Myau/pen/yLyBPaV) want to check out the code above!
 
-Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! 
-
-So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️
+Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️ 
 
 ##
