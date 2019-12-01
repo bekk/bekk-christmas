@@ -27,6 +27,10 @@ authors:
 Garbage collection is a mechanism used in Java to free up unused memory. In order to achieve this it tracks all objects and determines which ones that safely can be removed from the heap. In this post we'll provide a short introduction to how it works, and some different implementations provided in by Java.
 
 <style>
+.c20_heapfig {
+  max-width: 760px;
+  margin: 0 auto;
+}
 .c20_heap {
   display: flex;
   max-width: 760px;
@@ -34,10 +38,6 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;
-}
-.c20_heap + figcaption {
-  max-width: 760px;
-  margin: 0 auto;
 }
 .c20_box {
   display: inline-flex;
@@ -69,7 +69,7 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
   flex: 2;
 }
 </style>
-<figure>
+<figure class="c20_heapfig">
 <div class="c20_heap">
   <span class="c20_box c20_eden">Eden space</span>
   <span class="c20_box c20_survivor">
