@@ -11,11 +11,11 @@ links:
 authors:
   - Henning Håkonsen
 ---
-So you have an idea of an application and just started with you project. You need some content, and because you think a CMS (Content Management System) is overkill, you want to keep it simple and create some configuration with content which is imported into your app. The data is used to present some functionality in your app, for example display restaurants, blog post or whatever. 
+So you have an idea of an application and just started with your project. You need some content, and because you think a CMS (Content Management System) is overkill, you want to keep it simple and create some configuration with content which is imported into your app. The data is used to present some functionality in your app, for example display restaurants, blog post or whatever. 
 
 In the beginning this approach is awesome! The application is up and running in no time, so you go on to the next feature and keep adding data to your setup. The amount of content increases and before you know it, you are stuck in content management hell. 
 
-Sanity maybe the tool and the backend you need to rescue your project. It is a headless CMS, which means it only cares about storing and managing your content while you can focus on the implementation of the view of your application. Sanity has very good documentation and has implemented their own query language to help grabbing the correct content for your feature.
+Sanity may be the tool and the backend you need to rescue your project. It is a headless CMS, which means it only cares about storing and managing your content while you can focus on the implementation of the view of your application. Sanity has very good documentation and has implemented their own query language to help grabbing the correct content for your feature.
 
 ## Define your data model
 
@@ -184,31 +184,42 @@ We have now defined a complex schema type with Sanity’s predefined types and t
 
 ## Use your data model
 
-Sanity has implemented a very nice [client library](https://www.npmjs.com/package/@sanity/client) that we can utilize in frontend apps. It is a promise based fetch library which enables you to grab content with their query language [groq](https://www.sanity.io/docs/groq). Let's use Sanity's examples with our restaurant model in mind. 
+Sanity has implemented a very nice [client library](https://www.npmjs.com/package/@sanity/client) that we can utilize in frontend apps. It is a promise based fetch library which enables you to grab content with their query language [groq](https://www.sanity.io/docs/groq). Let's use Sanity's examples with our restaurant model in mind and create a custom hook with react's hook api.
 
-```
-// Define our client
-const sanityClient = require('@sanity/client')
+```js
+const React = require('react');
+const sanityClient = require('@sanity/client');
+
 const client = sanityClient({
-  projectId: 'your-project-id',
-  dataset: 'bikeshop',
-  token: 'sanity-auth-token', // or leave blank to be anonymous user
-  useCdn: true // `false` if you want to ensure fresh data
-})
+    dataset: 'default',
+    projectId: 'your-project-id',
+    token: 'sanity-auth-token', // or leave blank to be anonymous user
+    useCdn: true, // `false` if you want to ensure fresh data
+});
 
-const query = '*[_type == "restaurant"] [0...10] | order(_createdAt asc) {_createdAt, _id, name, "menu_categories": *[_type == 'category']}'
- 
-client.fetch(query).then(restaurants => {
-  restaurants.forEach(restaurant => {
-    console.log(`${restaurant.name}: ${restaurant.menu_categories.length} menu categories `)
-  })
-})
+export const useSanity = query => {
+    const [content, setContent] = React.useState();
+
+    React.useEffect(() => {
+        client.fetch(query).then(fetchedContent => {
+            setContent(fetchedContent);
+        });
+    }, []);
+
+    return content;
+};
 ```
 
-This query fetches the last 10 restaurants created with the time of creation, an id, the name and all menu categories with their content. We have to specify what data we want from the inner data modell, hence `"menu_categories": *[_type == 'category']}` which means, give me all fields within `menu_categories` with type `category`.
+The hook is called with the consumers query and the content is returned. A typical query can be can be:
+
+```js
+const query = '*[_type == "restaurant"] [0...10] | order(_createdAt asc) {_createdAt, _id, name, "menu_categories": *[_type == 'category']}'
+```
+
+This query fetches the last 10 restaurants created with the time of creation, an id, the name and all menu categories with their content. We have to specify what data we want from the inner data model, hence `"menu_categories": *[_type == 'category']}` which means, give me all fields within `menu_categories` with type `category`.
 
 ## Key takeaways
 
 1. Minimal setup, fast and easy to use.
-2. The way schema is implemented lets the consumer define the level of complexity require for the use-case and offers many predefined types.
+2. The way schema is implemented lets the consumer define the level of complexity required for the use-case and offers many predefined types.
 3. Non-technical people can easily manage content with Sanity's [studio](https://www.sanity.io/docs/sanity-studio).
