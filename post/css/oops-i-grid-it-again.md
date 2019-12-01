@@ -35,11 +35,11 @@ After defining your columns and rows, you can decide whether to position your it
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand:  `.header { grid-column: 1/4 }`. 
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand like in the example below:
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
-To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method as it is less code and easier to remember the cell names rather than the grid lines 😊.
+To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method as it is less code and easier to remember the cell names rather than the grid lines 😊. 
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
 
