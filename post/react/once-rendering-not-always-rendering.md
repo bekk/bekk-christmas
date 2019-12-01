@@ -35,6 +35,6 @@ I don't think you should rely on the fact that Concurrent Mode will solve all yo
 
 If you are curious about this new feature and you want to try it, our God of Bloggs have written a nice post about it. You guessed right, Kent C. Dodds wrote about [how to enable Concurrent Mode](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode).
 
-# When will it come?!
+# Intentional loading sequences
 
-Fun-fact, the new Facebook website which is in development uses Concurrent Mode! This is to verify and test that Concurrent Mode is really needed and is stable enough to release.
+#
