@@ -26,4 +26,63 @@ authors:
 ---
 Garbage collection is a mechanism used in Java to free up unused memory. In order to achieve this it tracks all objects and determines which ones that safely can be removed from the heap. In this post we'll provide a short introduction to how it works, and some different implementations provided in by Java.
 
+<style>
+.c20_heap {
+  display: flex;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+.c20_heap + figcaption {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.c20_box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.c20_eden {
+  background-color: rgb(20, 219, 196);
+  flex: 1;
+}
+.c20_survivor {
+    background-color: rgb(255, 240, 41);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.c20_survivor > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.c20_survivor > span {
+  position: relative;
+  top: 0.5rem;
+}
+.c20_tenure {
+  background-color: rgb(255, 91, 90);
+  flex: 2;
+}
+</style>
+<figure>
+<div class="c20_heap">
+  <span class="c20_box c20_eden">Eden space</span>
+  <span class="c20_box c20_survivor">
+    <div>
+      <span>S0</span>
+      <span>S1</span>
+    </div>
+    <span>Survivor space</span>
+  </span>
+  <span class="c20_box c20_tenure">Tenure space</span>
+</div>
+<figcaption>The anatomy of the heap.</figcaption>
+</figure>
+
+
 
