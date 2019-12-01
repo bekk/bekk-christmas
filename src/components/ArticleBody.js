@@ -72,10 +72,14 @@ const ArticleBody = styled.article`
     table,
     div,
     ul,
+    blockquote,
     ol {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+    }
+    blockquote {
+        padding-left: 35px;
     }
     video {
         display: block;
