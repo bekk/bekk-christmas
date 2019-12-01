@@ -46,11 +46,12 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
   padding: 2rem 1rem;
 }
 .c20_eden {
-  background-color: rgb(20, 219, 196);
+  background-color: rgb(22, 219, 196);
   flex: 1;
 }
 .c20_survivor {
-    background-color: rgb(255, 240, 41);
+  position: relative;
+  background-color: rgb(255, 240, 43);
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -60,12 +61,21 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
   display: flex;
   justify-content: space-around;
 }
+.c20_survivor > div:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgb(199, 163, 0);
+}
 .c20_survivor > span {
   position: relative;
   top: 0.5rem;
 }
 .c20_tenure {
-  background-color: rgb(255, 91, 90);
+  background-color: rgb(255, 91, 91);
   flex: 2;
 }
 </style>
