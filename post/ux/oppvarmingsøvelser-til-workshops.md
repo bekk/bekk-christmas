@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 8
 title: Oppvarmingsøvelser til workshops
-image: >-
-  https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80
+image: ''
 ingress: >-
   Av og til trenger man en skikkelig kickstart på en workshop. Hensikten kan
   være å fremme kreativ tenkning og deling, eller bli bedre kjent med hverandre
