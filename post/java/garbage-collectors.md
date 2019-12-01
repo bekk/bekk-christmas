@@ -29,14 +29,14 @@ Garbage collection is a mechanism used in Java to free up unused memory. In orde
 <style>
 .c20_heap {
   display: flex;
-  max-width: 40rem;
+  max-width: 760px;
   margin: 0 auto;
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;
 }
 .c20_heap + figcaption {
-  max-width: 40rem;
+  max-width: 760px;
   margin: 0 auto;
 }
 .c20_box {
