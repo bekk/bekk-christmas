@@ -110,7 +110,7 @@ const SiteFooter = ({ calendarName }) => {
                         <Link href="https://www.instagram.com/livetibekk/">Instagram</Link>
                     </FlatListItem>
                     <FlatListItem>
-                        <Link href="https://www.facebook.com/livetibekk//">Facebook</Link>
+                        <Link href="https://www.facebook.com/livetibekk/">Facebook</Link>
                     </FlatListItem>
                     <FlatListItem>
                         <Link href="https://blogg.bekk.no/">Blog</Link>
