@@ -13,10 +13,15 @@ links:
     url: 'https://designtitles.com/'
   - title: The Truth (!) About Design Titles
     url: 'https://www.vanschneider.com/truth-design-titles'
+  - title: The magic behind Bekk.christmas
+    url: 'https://blogg.bekk.no/introducing-bekk-christmas-ad01660ccadf'
 authors:
   - Helen Le
 ---
-![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcome to ux.christmas")
+<!---//![Christmas tree lights](https://s5.gifyu.com/images/juletrelys582e22efab67dc34.gif "Welcome to ux.christmas")--->
+
+<img class="light-theme-image" src="https://i.ibb.co/728CGgQ/julekalender-light.gif" style="margin: auto" />
+<img class="dark-theme-image" src="https://i.ibb.co/ch3X7Sn/julekalender-darkmode-4.gif" style="margin: auto" />
 
 ## But first, some context.
 
@@ -68,4 +73,4 @@ Titles can so easily put us in a box. But why can’t a developer think about to
 Happy December 1st! Thanks for opening the first window of our advent calendar. Remember to follow along for a new design tidbit every day until Christmas Eve.
 
 Helen Le\
-– [Innovator of Interaction Interpretation](https://designtitles.com/) & UX.christmas-pusher at Bekk
+– [Innovator of Interaction Interpretation](https://designtitles.com/) & UX.christmas-pusher
