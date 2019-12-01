@@ -74,7 +74,7 @@ const PostNavigation = styled.div`
 
 const Template = ({ data, pageContext }) => {
     const { markdownRemark } = data;
-    const { frontmatter, html, timeToRead, fields } = markdownRemark;
+    const { frontmatter, html, timeToRead } = markdownRemark;
     const {
         calendar,
         description,
@@ -86,6 +86,7 @@ const Template = ({ data, pageContext }) => {
         post_year,
     } = frontmatter;
 
+    const authors = frontmatter.authors && frontmatter.authors.map(author => author.frontmatter);
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
     while (uniqueLinkImageNumbers.length < 4) {
@@ -123,9 +124,9 @@ const Template = ({ data, pageContext }) => {
             </Helmet>
             <TitleContainer>{title}</TitleContainer>
             <MaxWidth>
-                {fields && fields.enrichedAuthors && (
+                {authors && (
                     <AuthorInfo
-                        authors={fields && fields.enrichedAuthors}
+                        authors={authors}
                         readingTime={timeToRead}
                         calendar={calendar}
                         year={post_year}
@@ -186,13 +187,6 @@ export const aboutPageQuery = graphql`
         markdownRemark(id: { eq: $id }) {
             html
             timeToRead
-            fields {
-                enrichedAuthors {
-                    title
-                    socialMediaLink
-                    company
-                }
-            }
             frontmatter {
                 calendar
                 title
@@ -203,6 +197,13 @@ export const aboutPageQuery = graphql`
                 links {
                     title
                     url
+                }
+                authors {
+                    frontmatter {
+                        title
+                        socialMediaLink
+                        company
+                    }
                 }
             }
         }
