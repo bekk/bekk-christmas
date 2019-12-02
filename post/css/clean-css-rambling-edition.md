@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 6
 title: Clean CSS - rambling edition
 image: >-
-  https://images.unsplash.com/photo-1551731494-e17c67304912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
+  https://images.unsplash.com/photo-1493953659556-556b14bdaca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3891&q=80
 ingress: >-
   Over the years I've seen (and indeed written) quite a lot of horrible CSS, and
   I want to take a moment to share some of the rules and principles I try to
