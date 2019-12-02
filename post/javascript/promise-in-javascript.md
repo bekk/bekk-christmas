@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2019
 post_day: 8
-title: Promise in Javascript
+title: The Promise of Christmas
 image: 'https://images.unsplash.com/photo-1531417666976-ed2bdbeb043b'
 ingress: |+
 
