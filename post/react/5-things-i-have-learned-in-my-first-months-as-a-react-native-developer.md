@@ -33,7 +33,7 @@ Attacking the developer world, you can get stunned by the amount of different la
 
 ## Assuming that if things are working then things are right
 
-A fundamental difference between developing in an unprofessional versus a professional setting, is the requirement for quality and performance of the code. As a beginner you are simply happy about your code working. However, the difference between being able to code and writing good, understandable, and proper tested code with high quality, is huge. Regarding this, I believe I will continue to learn something new every day for the rest of my development career. Both from my co-workers and from an industry in continuous evolvement. 
+A fundamental difference between developing in an unprofessional versus a professional setting, is the requirement for quality and performance of the code. As a beginner you are simply happy about your code working. However, the difference between being _able_ to code and writing good, understandable, and proper tested code with high quality, is huge. Regarding this, I believe I will continue to learn something new every day for the rest of my development career. Both from my co-workers and from an industry in continuous evolvement. 
 
 ## Taking breaks will make you more efficient
 
