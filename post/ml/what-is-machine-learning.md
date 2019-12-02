@@ -18,7 +18,7 @@ Rather than experience, we often speak of data. A machine learning program is fi
 
 There are three broad categories of machine learning: _supervised learning_, _unsupervised learning_ and _reinforcement learning_.
 
-In _reinforcement learning_, the program is trained using labeled data. Consider the problem above: A program is exposed to tens of thousands of pictures, labeled as being of either dogs or of fried chicken. Based on this, it develops some model of what a dog and a piece of fried chicken looks like. When exposed to a new image, it should be able to correctly identify it.
+In _supervised learning_, the program is trained using labeled data. Consider the problem above: A program is exposed to tens of thousands of pictures, labeled as being of either dogs or of fried chicken. Based on this, it develops some model of what a dog and a piece of fried chicken looks like. When exposed to a new image, it should be able to correctly identify it.
 
 _Unsupervised learning_ deals with unlabelled data. Typically, the program identifies patterns in the data. As an example, a streaming service may wish to segment their customers based on viewing habits. By having an algorithm look at which movies different customers rate highly, they may identify clusters of customers with similar interests, and use this to recommend movies they are likely to enjoy.
 
