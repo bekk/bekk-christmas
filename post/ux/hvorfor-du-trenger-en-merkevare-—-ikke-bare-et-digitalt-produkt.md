@@ -4,6 +4,12 @@ post_year: 2019
 post_day: 7
 title: Hvorfor du trenger en merkevare — ikke bare et digitalt produkt?
 ingress: >-
+  Skrevet av[ Jon Sindre
+  Cosgrove](https://www.linkedin.com/in/jonsindrecosgrove/) sammen med Arne
+  Magnus Mykkelbost og Nina Inberg.\
+
+  \
+
   I faggruppen Identitetsdesign i Bekk har vi tidligere i år arrangert en
   Brandsprint for seks oppstartere for å hjelpe dem med å konkretisere
   identiteten/merkevaren fra abstrakte tanker til en konkretisering av
@@ -13,9 +19,7 @@ ingress: >-
   konsept. Sammen dannet workshopene «grunnmuren» til merkevaren i form av en
   strategi: Merkevarehistorien. Den danner grunnlaget for å bygge identiteten
   til We Ignite Tech.
-description: >-
-  Skrevet av Jon Sindre Cosgrove sammen med Arne Magnus Mykkelbost og Nina
-  Inberg.
+description: ''
 ---
 # **Strategi og merkevare**
 
