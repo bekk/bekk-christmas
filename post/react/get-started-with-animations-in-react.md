@@ -9,15 +9,17 @@ ingress: >-
   Have you never been able to make that menu appear in the awesome way you've
   always wanted? Perhaps you've got lots of experience making things move with
   CSS animations, but you want to learn how (or if) a modern animations library
-  would make your life easier? Or perhaps you just want to have fun and learn
-  how easy it is to animate elements in React using Framer-Motion? Then read on!
+  could make your life easier? Or perhaps you just want to have fun and see how
+  easy it is to animate elements in React using Framer Motion? Then read on!
+  This article won't give you all the answers, but hopefully it will help you
+  getting started.
 links:
   - title: Framer Motion documentation
     url: 'https://www.framer.com/api/motion/'
 authors:
   - Bendik Bjørndal Iversen
 ---
-Framer Motion is a popular animations library for React that is simple enough to get you started quickly with implementing actual animations in your app, yet has enough features and possibilities to support more advanced use-cases. The library has a "motion component" for each HTML-element that exists, and lets you implement animations by adding various Framer-specific props to the components to add things like drag, hover, transitions and more. 
+Framer Motion is a popular animations library for React that is simple enough to get you started quickly with implementing actual animations in your app, yet has enough features and possibilities to support more advanced use-cases. The library has a "motion component" for each HTML-element that exists, and lets you implement animations by adding various Framer-specific props to the components to get things like drag, hover, transition effects, and more. This article will present code examples of some of the things you can do with Framer Motion.
 
 A simple example is given below, where a `div` styled as a simple square is replaced by a `motion.div` with two props: `whileHover` and `whileTap`. These props both take objects that can contain various properties depending on the desired behaviour of the element. In the example, a single `scale` property is used to control the size of the element.
 
@@ -79,4 +81,4 @@ allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; paym
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
-This was just a quick walkthrough of some of the possibilities you get with Framer Motion. If you want to learn more I recommend taking a look at some of the examples in the documentation and start experimenting on your own!
+This was just a quick walkthrough of some of the possibilities you get with Framer Motion. If you want to learn more, I recommend taking a look at some of the examples in the documentation and start experimenting on your own!
