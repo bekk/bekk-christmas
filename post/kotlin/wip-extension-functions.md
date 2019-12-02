@@ -23,7 +23,7 @@ We also do not need to derive the class, by using a [decorator pattern](https://
 
 Cool, right?
 
-## Naugthy or Nice
+# Naugthy or Nice
 
 Let's take a look at an example. As we all know, Santa Claus keeps two lists to know who is naughty and who is nice. For this purpose he makes a data class containing all the data on each child.
 
