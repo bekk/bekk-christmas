@@ -68,13 +68,13 @@ One feature that occur hand in hand with Concurrent Mode and this transition exa
 
 ## How to Enable it
 
-Concurrent Mode has been released as an opt-in. Our god of bloggs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode). To get the version with Concurrent Mode, you need to install this experimental version of React:
+Concurrent Mode has been released as an opt-in. Our god of blogs (Kent C. Dodds) has written a post on how to [enable it](https://kentcdodds.com/blog/how-to-enable-react-concurrent-mode). To get the version with Concurrent Mode, you need to install this experimental version of React:
 
 ```
 npm install react@experimental react-dom@experimental
 ```
 
-Further on, to enable it you simple need to make som changes in your entry file, and use the `createRoot` from ReactDOM:
+Further on, to enable it you simply need to make some changes in your entry file, and use the `createRoot` from ReactDOM:
 
 ```
 import React from 'react'
@@ -94,4 +94,4 @@ In addition to be able to use Concurrent Mode, they strongly advise to use `Stri
 
 ## What Now?
 
-The date for stable release of Concurrent Mode has not yet been announced (as far I know), but keep calm and keep an eye one the [releases](https://github.com/facebook/react/releases) for React! Meanwhile, you can enjoy the experimental version (but perhaps not use it in production just yet!).
+The date for a stable release of Concurrent Mode has not yet been announced (as far I know), but keep calm and keep an eye on the [releases](https://github.com/facebook/react/releases) for React! Meanwhile, you can enjoy the experimental version (but perhaps not use it in production just yet!).
