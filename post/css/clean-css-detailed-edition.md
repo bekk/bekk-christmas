@@ -11,9 +11,7 @@ ingress: >-
   some detailed tips you can start applying to your projects right away. Ready?
   Here we go.
 links:
-  - title: >-
-      Really good CSS book, which starts off with a few tips for writing
-      readable and maintable CSS code.
+  - title: 'My favorite CSS book (okay, it''s the only CSS book I''ve read)'
     url: 'https://www.oreilly.com/library/view/css-secrets/9781449372736/'
 authors:
   - Peter Hemmen
@@ -157,4 +155,4 @@ If you are actually creating a design where text wraps around an image, you here
 
 ## Wrapping up
 
-I hope you found some of these tips useful. If you disagree with anything, feel free to shoot me an e-mail, and I'll be happy to discuss it. CSS you around!
+I hope you found some of these tips useful. If you disagree with anything, or just want to reach out, feel free to shoot me an e-mail, and we'll have a chat. CSS you around!
