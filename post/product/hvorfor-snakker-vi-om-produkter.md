@@ -6,6 +6,9 @@ title: Hvorfor snakker vi om produkter?
 ingress: >-
   Hvorfor snakker vi om produkter og digital produktutvikling? Og hva er
   alternativet? Hvorfor snakker vi ikke om prosjekter eller tjenester?
+links:
+  - title: Alle kaffeprater
+    url: 'https://anchor.fm/kaffeprathosbekk/'
 authors:
   - Fredrik Matheson
   - Stian Surén
