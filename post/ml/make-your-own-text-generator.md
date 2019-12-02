@@ -42,7 +42,7 @@ After the network is trained it has learned which words are most likely to follo
 3. Choose one of the words with the highest probability and add it to the end of the current sentence.
 4. Feed the augmented sentence back to the network and repeat the process from step two.
 
-Steps 2-4 can be repeated as many times as wanted to generate a text sequence of the length we need.
+Steps 2-4 can be repeated as many times as wanted to generate a text sequence of the length we need. The image below illustrates how the sequence of words are propagated through the neural network to produce the next word in the sentence.
 
 ![Illustration of how a neural network can generate a text sequence](/assets/ml_17_pic1.gif)
 
