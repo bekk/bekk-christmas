@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 23
-title: Fan-out/fan-in for maximum scalability with Durable Functions
+title: WIP Fan-out/fan-in for maximum scalability with Durable Functions
 authors:
   - Eivind Sorteberg
 ---
