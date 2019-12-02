@@ -37,18 +37,16 @@ const Container = styled.footer`
     max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
-
-    ${mediaQueries.mediumUp}  {
-        padding: 30px;
-    }
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: start;
 
     ${mediaQueries.mediumUp} {
+        align-items: end;
         flex-direction: row;
+        padding: 30px;
     }
 `;
 
@@ -79,16 +77,7 @@ const SiteFooter = ({ calendarName }) => {
             <Column>
                 <h2 style={{ marginTop: 0 }}>Bekk Christmas</h2>
                 <FlatList>
-                    {otherCalendars.slice(0, 7).map(calendar => (
-                        <li key={calendar}>
-                            <Link href={`https://${calendar}.christmas`}>
-                                {mapCalendarToName(calendar) + ' Christmas'}
-                            </Link>
-                        </li>
-                    ))}
-                </FlatList>
-                <FlatList>
-                    {otherCalendars.slice(7, 13).map(calendar => (
+                    {otherCalendars.map(calendar => (
                         <li key={calendar}>
                             <Link href={`https://${calendar}.christmas`}>
                                 {mapCalendarToName(calendar) + ' Christmas'}

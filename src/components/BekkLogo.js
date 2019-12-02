@@ -8,7 +8,8 @@ const fade = keyframes`
   }
 `;
 
-const Container = styled.div`
+const Container = styled.a`
+    display: block;
     fill: var(--text-color);
     width: 200px;
     ${mediaQueries.mediumUp} {
@@ -48,7 +49,7 @@ const Container = styled.div`
 
 const BekkLogo = props => {
     return (
-        <Container {...props}>
+        <Container {...props} href="https://bekk.no">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.51 93.42" role="presentation">
                 <title>Bekk</title>
                 <path
