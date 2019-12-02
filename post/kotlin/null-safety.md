@@ -60,7 +60,7 @@ We can also handle nullable objects using the elvis operator `?:`
 val naughtyLength = naughty.length ?: -1
 ```
 
-The elvis operator here returns the length of `naughty` if `naughty` is not null or -1 otherwise.
+The elvis operator here returns the length of `naughty` if `naughty` is not `null` or `-1` otherwise.
 
 You can also tell Kotlin that a nullable object cannot be null by using the `!!` operator. This converts any nullable type to a non-nullable type and throws an exception if the value is `null`
 
@@ -68,4 +68,4 @@ You can also tell Kotlin that a nullable object cannot be null by using the `!!`
 val naughtyLength = naughty!!.length
 ```
 
-Thus, if you like and want to get NullPointerExceptions, you still can! You just have to ask for it first.
+Thus, if you like and want to get NullPointerExceptions, you still can! You just have to ask for it first. 
