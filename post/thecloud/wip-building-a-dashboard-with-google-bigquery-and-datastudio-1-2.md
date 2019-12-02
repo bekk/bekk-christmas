@@ -1,7 +1,7 @@
 ---
 calendar: thecloud
 post_year: 2019
-post_day: 13
+post_day: 14
 title: WiP - Building a dashboard with Google BigQuery and DataStudio (1/2)
 ingress: >-
   Dashboards and information screens are becoming increasingly common for
@@ -11,6 +11,8 @@ ingress: >-
   BigQuery and DataStudio tools.
 ---
 Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees are mostly dependent on public transportation to get to clients, social events or back home from work. We therefore wanted to build a simple dashboard in our reception hall that would provide employees and visitors with realtime information about nearby buses, city bikes and electric scooters on their way out of the office.
+
+![](/assets/dashboard.png)
 
 The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. It is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
 
