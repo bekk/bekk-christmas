@@ -78,7 +78,7 @@ We could of course also have added some line breaks to make these distinctions e
 
 When it comes to using media queries to make a site responsive, I have a simple, but powerful rule:
 
-> Always write the code the way it should be for the smallest screen sizes, and only use `@media (min-width: <ideally some global variable here>)` to adjust the styling for the bigger screen sizes. 
+> Always write the code the way it should be for the smallest screen sizes, and only use `@media (min-width: <width>)` to adjust the styling for the bigger screen sizes. 
 
 If you follow this rule from the start, you very rarely have to resort to using media queries with `max-width` or create ranges of media queries. This way, the breakpoints get so much easier to reason about, and you can usually get a good feel for how the site will look on different devices just by browsing the code. Be sure to always to sort the code ascending by screen size to minimize confusion. Of course, you should also try and be really sparse with your media queries, and write as little specific code as possible per screen size in the cases you really need to use them.
 
