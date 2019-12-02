@@ -31,9 +31,9 @@ Do you like Kotlin, music, or at least abstract sounds, and electronics then loo
 
 ## Best Practises for Unit Testing
 
-During any conference some talks are fun, some are inspiring and some are downright useful. While this talk may fall into the two first categories, it definitely belongs in the third one. Especially if you are a developer migrating to Kotlin from the Java-world. 
+During any conference, some talks are fun, some are inspiring and some are downright useful. While this talk may fall into the two first categories, it definitely belongs in the third one. Especially if you are a developer migrating to Kotlin from the Java-world. 
 
-Phillipp Hauer gave many useful tips on how to use features of Kotlin when writing tests. This included how one can avoid using statics, using the strengths of data classes and how well Kotlin works with JUnit 5. He also presented some of the many different libraries for testing, assertions and mocking. 
+Phillipp Hauer gave many useful tips on how to use the features of Kotlin when writing tests. This included how one can avoid using statics, using the strengths of data classes and how well Kotlin works with JUnit 5. He also presented some of the many different libraries for testing, assertions and mocking. 
 
 [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer
 
