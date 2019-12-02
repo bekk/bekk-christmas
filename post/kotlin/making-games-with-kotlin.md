@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2019
-post_day: 12
+post_day: 11
 title: Making games with Kotlin!
 image: 'https://i.imgur.com/BS8up0l.png'
 links:
