@@ -12,7 +12,7 @@ links:
 authors:
   - Henrik Gundersen
 ---
-Sealed classes in Kotlin are a concept close to enums that we are used to from other languages. They are used for representing restricted class hierarchies, which means that each type have to be within a limited set of values. Unlike enums — where each value only exists as a single instance — a value in a sealed class can have several instances containing state. This gives us the possibility to make more expressive data models.
+Sealed classes in Kotlin are a concept close to enums that we are used to from other languages. While enums are used to represent a set of values — sealed classes are used for representing restricted class hierarchies. This means that each type have to be within a limited set of values and can have several instances containing state. This gives us the possibility to make more expressive data models.
 
 ## Declaring sealed classes
 To declare a sealed class — put the `sealed` modifier in front of the class name. Note that a sealed class can have subclasses, but all of them must be declared in the same file as the sealed class itself.
@@ -55,8 +55,10 @@ data class Payment(amount: Int, paymentMethod: PaymentMethod)
 // Compiles :)
 fun processPayment(payment: Payment) =
   when (payment.paymentMethod) {
-    is PaymentMethod.CreditCard -> processCreditCardPayment(paymentMethod.token, paymentMethod.expireDated)
-    is PaymentMethod.DirectPayment -> processDirectPayment(payment.amount, paymentMethod.phoneNumber)
+    is PaymentMethod.CreditCard -> 
+      processCreditCardPayment(payment.amount, paymentMethod.token, paymentMethod.expireDated)
+    is PaymentMethod.DirectPayment ->
+      processDirectPayment(payment.amount, paymentMethod.phoneNumber)
 }
 ```
 
