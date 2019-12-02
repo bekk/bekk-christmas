@@ -10,7 +10,7 @@ links: []
 authors:
   - Markus Karlsen
 ---
-In this calendar we will look into promises in Javascript. The concept of a real life promise is simple, as may also be the case when we first start using promises. However, as we gain more experience with Javascript, it becomes important to really understand promises.
+In this article we will look into promises in Javascript. The concept of a real life promise is simple, as may also be the case when we first start using promises. However, as we gain more experience with Javascript, it becomes important to really understand promises.
 
 When working with promises today we usually focus on the handling, and a promise is often linked with asynchronous operations like API calls, DB operations or IO calls. There are two important parts of a promise we need to understand: Creating and handling. Lets start by looking into the creation of a promise:
 
