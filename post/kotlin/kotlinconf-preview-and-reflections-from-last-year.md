@@ -11,6 +11,7 @@ ingress: >-
 links: []
 authors:
   - Torbjørn Tessem
+  - Vegard Veiset
 ---
 KotlinConf 2018 was held over two days (not including workshops) in  Beurs van Berlage in central Amsterdam. After the keynote kicked off the conference, there were four talks in parallel trough-out. This presented a problem, as it was not easy to choose which talks to attend (or even more so, write about). Even still, we will try to present some of the talks here. 
 
@@ -21,7 +22,8 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 * Representing state
 * primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
 * Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control. 
-* Sealed classes everywhere!
+
+And while she did not say that booleans or strings were bad, the recommendation was (at least to consider) **Sealed classes everywhere!**
 
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
@@ -33,24 +35,13 @@ Do you like Kotlin, music, or at least abstract sounds, and electronics then loo
 
 ## Best Practises for Unit Testing
 
-//TODO
+During any conference some talks are fun, some are inspiring and some are downright useful. While this talk may fall into the two first categories, it definitely belongs in the third one. Especially if you are a developer migrating to Kotlin from the Java-world. 
 
-During any conference some talks are fun, some are inspiring and some are downright useful. While this talk by Philipp Hauer may fall into the two first categories, it definitely belongs in the third one. 
-
-It is pretty common that the first big Kotlin-project one works on is a Java-project that is, class by class, converted to Kotlin. And at some point this includes the tests. (noe om anti pattern å skrive kotlin som java)
-
-Although many best practices for unit testing in Java also apply to Kotlin, there are several ways       
-
-This includes
-
-- JUnit 5
-- mockK \
-- test names in brackets
-- data classes as reference objects.
-
-The talk held by Philipp Hauer (and the related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/)) gave many useful tips on how to use the strengths of Kotlin when writing tests, how well Kotlin works with JUnit 5, and presented some of the many different test libraries that are available.
+Phillipp Hauer gave many useful tips on how to use features of Kotlin when writing tests. This included how one can avoid using statics, using the strengths of data classes and how well Kotlin works with JUnit 5. He also presented some of the many different libraries for testing, assertions and mocking. 
 
 [Best Practices for Unit Testing in Kotlin](https://www.youtube.com/watch?v=RX_g65J14H0) by Philipp Hauer
+
+The related [blog post](https://phauer.com/2018/best-practices-unit-testing-kotlin/) is also a recommended read.
 
 ## Kotlin Puzzlers
 
