@@ -50,7 +50,10 @@ En visjon er bedriftens «drøm om fremtiden». Visjonen skal si noe om hvilken 
 
 ![alt-tekst til bilde](https://miro.medium.com/max/800/1*GgeZSesxYD_lbN6G_IkHEQ.jpeg)
 
-_Visjonen til Patagonia: “Build the best product, cause no unnecessary harm, use business to inspire and implement solutions to the environmental crisis”. Reklamekampanjen “Don’t buy this jacket” fra 2011 er i helt i tråd med visjonen der den tar et oppgjør med tradisjonelle forretningsverdier og påpeker hvordan kortsiktig profitt er destruktivt for miljø, kvalitet, samfunn og helse._
+_Visjonen til Patagonia: “Build the best product, cause no unnecessary harm, use business to inspire and implement solutions to the environmental crisis”. Reklamekampanjen “Don’t buy this jacket” fra 2011 er i helt i tråd med visjonen der den tar et oppgjør med tradisjonelle forretningsverdier og påpeker hvordan kortsiktig profitt er destruktivt for miljø, kvalitet, samfunn og helse._\
+<br/>
+<br/>
+<br/>
 
 ![alt-tekst til bilde](https://miro.medium.com/max/1200/1*pRPdr3C3WFqSrsxtS32PZA.jpeg)
 
