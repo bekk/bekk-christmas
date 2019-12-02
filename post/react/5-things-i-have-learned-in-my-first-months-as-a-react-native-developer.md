@@ -11,7 +11,7 @@ ingress: >-
   path working with strategy and business development. The journey that has led
   me from being a management consultant to a developer has been filled with
   confusion, feeling of achievement, stupid questions, not so stupid questions,
-  bad code and good code. Just as I now look back at myself 4 months ago
+  bad code and good code. Just as I now look back at myself four months ago
   thinking “oh, such a newbie”, I guess I will do the same four months from now.
   It is true what they say; the learning curve is steep! I will take you through
   some of the learnings I have encountered during my first months as a
