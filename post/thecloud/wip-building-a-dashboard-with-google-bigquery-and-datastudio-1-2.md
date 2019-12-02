@@ -10,11 +10,11 @@ ingress: >-
   skills, was able to build such a dashboard in the cloud using Google’s
   BigQuery and DataStudio tools.
 ---
-Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees are mostly dependent on public transportation to get to clients, social events or back home from work. We therefore wanted to build a simple dashboard in our reception hall that would provide employees and visitors with realtime information about nearby buses, city bikes and electric scooters on their way out of the office.
+Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees are mostly dependent on public transportation to get to clients, social events or back home from work. We wanted to build a simple dashboard in our reception hall that would provide employees and visitors with realtime information about nearby buses, city bikes and electric scooters on their way out of the office.
 
 ![](/assets/dashboard.png)
 
-The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. BigQuery is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
+The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. BigQuery is part of GCP and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
 
 ## 1. Obtain and store your data
 
@@ -22,7 +22,7 @@ BigQuery has plenty of huge, open datasets you can play around with, or you can 
 
 As the dashboard had to display real-time data, this required us to continuously gather the data through APIs, and stream it into BigQuery.
 
-[Oslo City Bike](https://oslobysykkel.no/apne-data/sanntid) and [Entur](https://developer.entur.org/pages-intro-overview) (who delivers information about public transportation and e-scooters), both have open real-time APIs. GCP provides the ability to create scheduled functions that collect data through through an API, and insert it into rows in a BigQuery table. These simple functions can be written using Python or another language of your choice. This is the function I use for obtaining the most recent data through Oslo City Bike’s API, and storing it in a BigQuery table:
+[Oslo City Bike](https://oslobysykkel.no/apne-data/sanntid) and [Entur](https://developer.entur.org/pages-intro-overview) (who delivers information about public transportation and e-scooters), both have open real-time APIs. GCP provides the ability to create scheduled functions that collect data through an API and insert it into rows in a BigQuery table. These simple functions can be written using Python or another language of your choice. This is the function I use for obtaining the most recent data through Oslo City Bike’s API and storing it in a BigQuery table:
 
 **Function to stream data from API to a BigQuery table:**
 
@@ -51,9 +51,9 @@ In our case, we did not just want to present the raw data points. For example, f
 * Show number of available docks near public transport hubs to dock your bike
 * Display the station names, which were not collected in the real-time data table
 
-These data points were not immediately available in our data table, and so we had to build different queries for manipulating the data as we wanted. Below is an example of a query to display the three racks near Stortinget T-banestasjon with available docks.
+These data points were not immediately available in our data table, and so we had to build different queries for manipulating the data as we wanted. Below is an example of a query to display the three racks near Stortinget metro station with available docks.
 
-**Example for showing 3 available dockings near Stortinget station:**
+**Example of showing 3 available dockings near Stortinget station:**
 
 ```sql
 SELECT DISTINCT
@@ -69,10 +69,10 @@ ORDER BY sqrt(power(59.9130 - latitude, 2) + power(10.7419 - longitude, 2)) -- t
 LIMIT 3
 ```
 
-> **Warning:**
+> **Heads up:**
 >
-> Continously adding rows to your data table makes it grow in size quite rapidly, and both storage and querying can become costly. I wasn’t able to implement a function to replace the data in my BigQuery tables instead of just adding new rows on every API call. My quick workaround was to write a script that ran every night, removing the rows from 2 days before and prior, but I’m quite certain there are other more elegant solutions to this problem.
+> Continuously adding rows to your data table makes it grow in size quite rapidly, and both storage and querying can become costly. I wasn’t able to implement a function to replace the data in my BigQuery tables instead of just adding new rows on every API call. My quick workaround was to write a script that ran every night, removing the rows from 2 days before and prior, but I’m quite certain there are other more elegant solutions to this problem.
 
-## Wrap-up
+## To be continued...
 
-In part 2 we will look at how you can save your queries as views, and visualize their results with DataStudio.
+In part 2 we will look at how you can save your queries as views, and visualize the data with a DataStudio dashboard.
