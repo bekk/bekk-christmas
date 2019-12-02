@@ -4,7 +4,8 @@ post_year: 2019
 post_day: 5
 title: WIP Resilience in a cloud architecture
 ingress: "A typical cloud architecture - from a cloud native solution to a public cloud solution - consists of multiple connected services. Some of these services are your own, others are third-party services. Common for these is that they all communicate with each other over a network and that they depend on each other's availability.\r\n\r\nWhen your application integrates with another service - your application must handle erroneous behavior from the service. Thinking resilience is, based on my experience, something we developers often forget and is first addressed once we experience availability issues with the service in production."
-authors: []
+authors:
+  - Eirik Jenssen Daling
 ---
 ## Timeout
 
