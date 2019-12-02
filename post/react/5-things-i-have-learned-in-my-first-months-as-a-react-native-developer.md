@@ -6,16 +6,15 @@ title: 5 things I have learned in my first months as a React Native developer
 image: >-
   https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 ingress: >-
-  Hi, my name is Marte and I decided that I wanted to pursue a career within
-  front end development five months ago. At that point in time I was on another
-  path working with strategy and business development. The journey that has led
-  me from being a management consultant to a developer has been filled with
-  confusion, feeling of achievement, stupid questions, not so stupid questions,
-  bad code and good code. Just as I now look back at myself four months ago
-  thinking “oh, such a newbie”, I guess I will do the same four months from now.
-  It is true what they say; the learning curve is steep! I will take you through
-  some of the learnings I have encountered during my first months as a
-  developer.
+  Hi, my name is Marte and I decided five montsh ago that I wanted to pursue a
+  career within front-end development to get closer to the products and users.
+  At that point in time I was working with strategy and business development,
+  which I also studied for six years. The journey that has led me from being a
+  management consultant to a developer has been filled with confusion, feeling
+  of achievement, stupid questions, not so stupid questions, bad code and good
+  code. And it is true what they say; the learning curve is steep! I will take
+  you through some of the learnings I have encountered during my first months as
+  a developer.
 authors:
   - Marte Dybendal Gleditsch
 ---
