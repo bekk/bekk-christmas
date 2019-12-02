@@ -151,7 +151,7 @@ This completely explains and justifies the complicated selector, and truthfully,
 
 ## You probably shouldn't use `float`
 
-If you are actually creating a design where text wraps around an image, you hereby have my permission to go ahead and add a carefully placed `float`. If, instead, you are trying to position something to the left or to the right, or next to another thing, please use something else. `position: flex`, `display: grid` or even good old `inline-block` usually does the job a whole lot better than `float` has ever done. `float` is a really old school technique which is still sometimes overused as a hack to this day in order to achieve effects we now have much better tools to accomplish. Do everyone (most of all yourself) a favor and skip it.
+If you are actually creating a design where text wraps around an image, you hereby have my permission to go ahead and add a carefully placed `float`. If, instead, you are trying to create a layout for your page, position something to the left or to the right, or next to another thing, please use something else. `position: flex`, `display: grid` or even good old `inline-block` usually does the job a whole lot better than `float` has ever done. `float` works really well for its intended use, but at some point, people started using it to create entire layouts, because it was easier to create columns with it than any other tool at the time. Now, the world has moved on, and we no longer need to resort to adding a clearfix everywhere, or wondering why our containers suddenly have collapsed. Because we rarely use `float` anymore, it is actually even more confusing to find one lying around now than it was a decade ago. Please do everyone (most of all yourself) a favor and skip it.
 
 ## Wrapping up
 
