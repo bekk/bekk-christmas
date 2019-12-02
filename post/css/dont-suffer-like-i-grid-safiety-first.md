@@ -4,10 +4,8 @@ post_year: 2019
 post_day: 8
 title: Don't suffer like I Grid - SafIEty first
 image: >-
-  https://images.unsplash.com/photo-1470390356535-d19bbf47bacb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
-ingress: >-
-  Many developers hesitate when it comes to CSS Grid. A common argument is that
-  it’s not supported by all browsers, but that’s not true!
+  https://images.unsplash.com/photo-1565548506122-24cf4665ece4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2110&q=80
+ingress: "Many developers hesitate when it comes to CSS Grid. A common argument being that it is not supported by all browsers, but that is simply not true! \U0001F624"
 links:
   - title: Feature queries @supports
     url: 'https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/ '
