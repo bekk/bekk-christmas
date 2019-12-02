@@ -22,7 +22,7 @@ Sanity may be the tool and the backend you need to rescue your project. It is a 
 Sanity is configured in a matter of minutes. First register your account [here](https://manage.sanity.io/) and proceed with the following command:
 
 ```sh
-npm i -g @sanity/cli && sanity init\
+npm i -g @sanity/cli && sanity init
 ```
 
 Run through the simple guide, once completed your «backend» is configured and the output should be somewhat similar to this:
