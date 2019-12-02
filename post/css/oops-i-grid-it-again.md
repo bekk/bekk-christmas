@@ -29,13 +29,13 @@ Grid is used like Flexbox by setting the container with `display: grid`. Then yo
 
 ![Defining you grid example](/assets/screen-shot-2019-11-28-at-23.58.03.png "Defining you grid example")
 
-In this example, I have used `fr` (which stands for _fraction_) - to split the grid into three columns each of one fraction each of the total space in the grid. This can also be written in a simpler way, by using `repeat(3, 1fr)` - where the number `3`represents how many rows you would like of the size of one fraction (`1fr`) of the remaining space. 
+In this example, I have used `1fr` (which stands for _fraction_) - to split the total space in the grid into three columns. This can also be written in a simpler way, by using `repeat(3, 1fr)` - which basically means repeat this column or row three times with the size of 1 fraction each. 
 
 After defining your columns and rows, you can decide whether to position your items by using _grid lines_ or _grid tracks_. The numbers in the image below defines the grid lines for columns and rows, while tracks is the any group of cells. 
 
 ![grid lines vs grid tracks](/assets/screen-shot-2019-12-01-at-20.34.54.png "grid lines vs grid tracks")
 
-With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand like in the example below:
+With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand like  `grid-column: 1/4` .  So instead of two codelines, you could use just one! Check out the example below:
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
 
@@ -43,7 +43,7 @@ To use grid tracks, you first have to define your `grid-template-areas` by namin
 
 <iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
 
-If the placement of your grid items is not defined then all direct children of the container will be automatically be placed inside of each cell in the grid. Simple, right? ✨
+If the placement of your grid items is not defined then all direct children of the container will automatically be placed inside of each cell in the grid. Simple, right? ✨
 
 ## What is good about Grid?
 
