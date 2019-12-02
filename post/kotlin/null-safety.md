@@ -4,6 +4,8 @@ post_year: 2019
 post_day: 2
 title: Null Safety
 ingress: ''
+authors:
+  - Einar Afiouni
 ---
 One of the most common mistakes of many programming languages is accessing a member of a `null` reference which results in an exception. Most people have probably experienced getting NullPointerExceptions in Java, or NPE for short. Kotlin's type system, on the other hand, is aimed at eliminating this.
 
