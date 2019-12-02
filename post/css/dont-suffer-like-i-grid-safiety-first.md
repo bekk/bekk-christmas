@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 8
 title: Don't suffer like I Grid - SafIEty first
 image: >-
-  https://images.unsplash.com/photo-1565548506122-24cf4665ece4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2110&q=80
+  https://images.unsplash.com/photo-1511377398397-8f0fb9ae372d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 ingress: "Many developers hesitate when it comes to CSS Grid. A common argument against it is that it's not supported by all browsers, but that is not true! \U0001F624"
 links:
   - title: Feature queries @supports
@@ -16,9 +16,9 @@ links:
 authors:
   - My Thao Nguyen
 ---
-Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. Partially because IE10 and IE11 supports an older specification of CSS Grid syntax. Thus, some Grid syntax will work fine while newer properties will fail.
+Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Thus, some Grid syntax will work fine while newer Grid properties will fail.
 
-## Autoprefixer will fix! 
+## Autoprefixer will fix!
 
 This tool is a PostCSS plugin to parse CSS and will add necessary CSS prefixes to the CSS rules. To see how it works, check out their [online tool](https://autoprefixer.github.io/).
 
@@ -36,15 +36,15 @@ However, even Autoprefixer cannot fix it all when it comes to Internet Explorer.
 
 There are some limitations with Grid Autoplacement when it comes to using Autoprefixer. 
 
-## Have you tried not supporting IE? 
+## Have you tried not supporting IE?
 
 Even [Microsoft](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732) writes Internet Explorer off as a browser and describes it more as a “compatibility solution”  for enterprise customers to deal with legacy sites that should be updated for modern browsers, and also have plans to stop supporting IE11 themselves. Read more about it [here](https://www.microsoft.com/en-ca/windowsforbusiness/end-of-ie-support).  
 
 A solution could be to show the users an informative banner that is shown if IE is used. [Bowser](https://github.com/lancedikson/bowser) can be used to detect your users browser and version. Then show them a nice banner to enlighten them how much at risk they are from using an outdated browser, and that the application will not work properly in IE. If you want to be extra kind, then consider adding download links to other browsers. ✨
 
-## Internet Explorer is not all bad though 
+## Internet Explorer is not all bad though
 
-You will rarely meet a web developer that has not had a fateful encounter with Internet Explorer. Most feel strong emotions when it comes to making a site that actually supports IE, thus it can always be a fun subject to rant over when you meet someone new in the same field. :D 
+You will rarely meet a web developer that has not had a fateful encounter with Internet Explorer. Most feel strong emotions when it comes to making a site that actually supports IE, thus it can always be a fun subject to rant over when you meet someone new in the same field 😄.  
 
 Hope you enjoyed the article! 
 
