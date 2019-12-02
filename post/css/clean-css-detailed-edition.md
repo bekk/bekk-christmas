@@ -10,6 +10,7 @@ ingress: >-
   write clean CSS code. Today, I'll try to be a bit less fluffy and instead show
   some detailed tips you can start applying to your projects right away. Ready?
   Here we go.
+description: clean maintable readable css
 links:
   - title: 'My favorite CSS book (okay, it''s the only CSS book I''ve read)'
     url: 'https://www.oreilly.com/library/view/css-secrets/9781449372736/'
@@ -20,7 +21,7 @@ authors:
 
 A useful habit I've acquired over the years is to sort the properties for a component after what I consider to be most important. When I read CSS, I am usually most interested in how a component interacts with – and positions itself within – the world around it, and then how it organizes its internals. The least pressing matters are stuff like borders, colors and text decoration.
 
-Whenever I write CSS, then, I try and place `position` and `display` at the very top. An added point here is that all additional properties that are connected with specific values for these properties should also be placed close. For example, if you are using `display: flex` or `position: absolute`, add all your extra needed properties and be done with it.
+Whenever I write CSS, then, I try and place `position` and `display` at the very top. An added point here is that all additional properties which are connected with specific values for these properties should also be placed close by. For example, if you are using `display: flex` or `position: absolute`, add all your extra needed properties right away and be done with it.
 
 `width`, `height`, `margin` and even `z-index` can fight it out for the next places, before it's time for `padding`, `background`, `text-align` and maybe an `overflow`. Finishing up, add all your `color`, `text-transform`, `border` and whatever other properties you might need. We are now officially in the "miscellaneous" section.
 
