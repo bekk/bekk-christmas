@@ -1,7 +1,7 @@
 ---
 calendar: thecloud
 post_year: 2019
-post_day: 4
+post_day: 13
 title: WIP Getting started with GitHub Actions
 image: >-
   https://images.unsplash.com/photo-1567792825717-84dcd666b715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
