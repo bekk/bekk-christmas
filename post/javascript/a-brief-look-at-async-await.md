@@ -79,7 +79,7 @@ function check() {
 
 ```
 
-This function waits 5 seconds before calling the API, implementing the requirement about not calling the API more than every 5 seconds. Let's move on to the async function:
+This function waits 5 seconds before calling the API. Implementing the requirement (as long as you wait until the promise is settled) about not calling the API more than every 5 seconds. Let's move on to the async function:
 
 ```js
 async function waitAndCheck() {
