@@ -6,7 +6,7 @@ title: Kryptert DNS
 ingress: >-
   Når vi surfer på nettet i dag er det meste av trafikken kryptert.
   [Bruksstatistikk fra
-  Google](ttps://transparencyreport.google.com/https/overview?hl=en) viser at
+  Google](https://transparencyreport.google.com/https/overview?hl=en) viser at
   ca. 90 prosent av nettstedene som lastes i nettleseren Chrome lastes over
   HTTPS. Selv om mye av innholdet vi laster opp og ned over internett er
   beskyttet er det fortsatt mye annen informasjon om internettaktiviteten vår
