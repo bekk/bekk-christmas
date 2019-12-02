@@ -7,7 +7,7 @@ image: >-
   https://images.pexels.com/photos/3186163/pexels-photo-3186163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 ingress: >-
   An extension functions is, as the name implies, a function that extends an
-  existing class. The function does this without actually modifying the it!
+  existing class. The function does this without actually modifying it!
 links:
   - title: Kotlinlang - Extensions
     url: 'https://kotlinlang.org/docs/reference/extensions.html'
@@ -18,49 +18,31 @@ links:
 authors:
   - Yrjan Fraschetti
 ---
-We also do not need to derive the class, by using a [decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern), like we would have to do in for example Java.
+We also do not need to derive the class, by using a [decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern), like we would have to do in Java or any other language that does not support extensions.
 
 Cool, right?
 
-## The calculator
+## Naugthy or Nice
 
-Let's take a look at an example. Say you have a calculator class:
-
-```
-class Calculator() {
-  fun add(a: Int, b: Int) = a+b
-
-  fun subtract(a: Int, b: Int) = a-b
-}
-```
-
-This class i obviously missing some functionality. So, if you would like the Calulator class to also have a multiply function, one way to make that happen is to use an extension function like this:
+Let's take a look at an example. As we all know, Santa Claus keeps two lists to know who is naughty and who is nice. For this he makes a data class containing the data on each child:
 
 ```
- fun Calculator.multiply(a: Int, b: Int) = a*b
+data class Child (
+	val name: String,
+	val adress: String,
+	val listensToParents: Boolean,
+	val sharesToys: Boolean,
+	val doesHouseChores: Boolean
+)
 ```
-
-Now you can use the extension just like the _native_ functions:
-
-```
-fun main() {
-    var a = 20
-    var b = 16
-    var calc = Calculator()
-    println(calc.add(a, b))
-    println(calc.subtract(a, b))
-    println(calc.multiply(a, b))
-} 
-```
-
-Running the main function would give the following output:
+This class contains all the important parameters for Santa to determine who is naugthy or nice, but he does not want taint the pure data class with logic. The solution to his problems is of course, to extend the class.
 
 ```
-36
-4
-320
+Child.isNice(): Boolean = listensToParents && sharesToys && doesHouseChores
+Child.getNameAndAdress: String = "$name, $adress"
 ```
+Santa Claus can now easly sort all the children into their respective lists using the `isNice()` extension function. To know where to go and who he is visiting, he can call the `getNameAndAdress()` extensiuon function to get a formated string of the info. Pretty neat!
 
-The syntax for extension functions is as follows: `fun <Class>.<Name of extension>(<Parameters>): <Return type if any> {}`
+Just to get it staight, the syntax for extension functions is as follows: `fun <Class>.<Name of extension>(<Parameters>): <Return type if any> {}`
 
 # Statically resolved
