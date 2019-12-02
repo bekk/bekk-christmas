@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 1
-title: The world premier of UX.christmas
+title: The world premiere of UX.christmas
 image: ''
 ingress: >-
   Tada. With this post, I declare UX.christmas hereby launched. Welcome to the
