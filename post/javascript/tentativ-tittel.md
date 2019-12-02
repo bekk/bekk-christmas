@@ -62,7 +62,9 @@ found 1 high severity vulnerability in 1113634 scanned packages
 run `npm audit fix` to fix 1 of them.
 ```
 
-To fix the vulnerability, run `npm audit fix` or bump the vulnerable packages yourself. Sometimes the warning makes you realize you have a dependency you don't actually need. We've definitely pruned a few unnecessary dependencies from our app this way that we weren't completely aware of having :grimacing:
+The script has found a vulnerability in a package which is imported at a depth level of 7, which means that it is a dependency of a dependency of a dependency of a dependency of a dependency of a dependency of a dependency of our app :eyes:. To fix it manually we can run `npm update` and tell it the name of the package as well as the tree depth at which the package is found. To fix the vulnerability automagically, run `npm audit fix`.
+
+Sometimes the warning makes you realize you have a dependency you don't actually need. We've definitely pruned a few unnecessary dependencies from our app this way that we weren't completely aware of having :grimacing:
 
 ### What if it _really_ doesn't look okay?
 
