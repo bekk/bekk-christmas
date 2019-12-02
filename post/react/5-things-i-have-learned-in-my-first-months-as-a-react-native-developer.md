@@ -9,7 +9,7 @@ ingress: >-
   Hi, my name is Marte and I decided that I wanted to pursue a career within
   front end development five months ago. At that point in time I was on another
   path working with strategy and business development. The journey that has led
-  me from being a management consulting to a developer has been filled with
+  me from being a management consultant to a developer has been filled with
   confusion, feeling of achievement, stupid questions, not so stupid questions,
   bad code and good code. Just as I now look back at myself 4 months ago
   thinking “oh, such a newbie”, I guess I will do the same four months from now.
