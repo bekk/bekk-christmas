@@ -2,7 +2,7 @@
 calendar: css
 post_year: 2019
 post_day: 6
-title: Clean CSS - Rambling edition
+title: Clean CSS - rambling edition
 image: >-
   https://images.unsplash.com/photo-1551731494-e17c67304912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
 ingress: >-
