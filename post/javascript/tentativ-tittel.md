@@ -25,7 +25,7 @@ Each time I see the number of transitive dependencies in our app I get a little 
 
 Luckily there are small steps we can take to at least be able to sleep at night! One of them is using `npm audit`.
 
-### What's that?
+## What's that?
 
 `npm audit` is a CLI command for NPM which scans your project for vulnerabilities and warns you if it finds something you should look into. If everything looks okay, you should get something like this:
 
@@ -38,7 +38,7 @@ found 0 vulnerabilities
 
 Whew! :sweat_smile:
 
-### Well, what if it doesn't look okay?
+## Well, what if it doesn't look okay?
 
 If the vulnerability scan finds something dodgy, it will tell you what, where, and how to fix it:
 
@@ -66,7 +66,7 @@ run `npm audit fix` to fix 1 of them.
 
 To fix the vulnerability, run `npm audit fix` or bump the vulnerable packages yourself. Sometimes the warning makes you realize you have a dependency you don't actually need. We've definitely pruned a few unnecessary dependencies from our app this way that we weren't completely aware of having :upside_down_face:
 
-### What more can it do?
+## What more can it do?
 
 There's more! You can make the script output JSON if you want to:
 
@@ -82,6 +82,6 @@ $ npm audit --audit-level=high
 
 There's a `--parseable` option as well, which is handy if you want to pipe the output along to another script.
 
-### Add auditing to your workflow :eyes:
+## Add auditing to your workflow :eyes:
 
 If the audit finishes and has found vulnerable packages, the script will fail and exit. That's really neat, because it means that we can add `npm audit` to our app verification script, along with tests and [linting](https://javascript.christmas/2018/7). That way, we are forced to give attention to the warnings each time we want to make changes to our app. We've had this as part of our workflow for the past year and it _does_ help us sleep at night. I hope you find it helpful too! :raised_hands:
