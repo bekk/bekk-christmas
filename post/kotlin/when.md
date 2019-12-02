@@ -3,6 +3,10 @@ calendar: kotlin
 post_year: 2019
 post_day: 3
 title: When
+ingress: >-
+  This article will give you a brief introduction to the Kotlin `when`
+  expression and how to use it.
+description: kotlin when
 authors:
   - Øyvind Midtbø
 ---
