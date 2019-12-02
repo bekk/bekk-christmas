@@ -10,12 +10,12 @@ ingress: >-
 links:
   - title: Kotlinlang - Extensions
     url: 'https://kotlinlang.org/docs/reference/extensions.html'
-  - title: Decorator pattern
-    url: 'https://en.wikipedia.org/wiki/Decorator_pattern'
   - title: Clean models using extensions
     url: 'https://okkotlin.com/clean-models/'
   - title: Write extension functions for your own classes
     url: 'https://blog.frankel.ch/write-extension-functions-own-classes-kotlin/'
+  - title: Decorator pattern
+    url: 'https://en.wikipedia.org/wiki/Decorator_pattern'
 authors:
   - Yrjan Fraschetti
 ---
