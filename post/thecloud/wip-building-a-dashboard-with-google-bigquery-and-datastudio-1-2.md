@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 14
-title: WiP - Building a dashboard with Google BigQuery and DataStudio (1/2)
+title: Building a dashboard with Google BigQuery and DataStudio (1/2)
 ingress: >-
   Dashboards and information screens are becoming increasingly common for
   monitoring and displaying important, relevant information at a glance. Over
