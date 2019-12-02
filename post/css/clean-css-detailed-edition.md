@@ -151,9 +151,9 @@ When I write code, I always try to surprise the next developer as little as poss
 
 This completely explains and justifies the complicated selector, and truthfully, when I stumbled upon this code myself weeks after I'd written it, I read the comment, and was more than a little satisfied with my own cleanliness. It's nice to see that I can surprise myself in a good way once in a while as well.
 
-## Don't use `float`
+## You probably shouldn't use `float`
 
-You probably shouldn't use `float`. If you are actually creating a design where text wraps around an image, you hereby have my permission to go ahead and add a carefully placed `float`. If, instead, you are trying to position something to the left or to the right, or next to another thing, please use something else. `position: flex`, `display: grid` or even good old `inline-block` usually does the job a whole lot better than `float` has ever done. `float` is a really old school technique which is still sometimes overused as a hack to this day in order to achieve effects we now have much better tools to accomplish. Do everyone (most of all yourself) a favor and skip it.
+If you are actually creating a design where text wraps around an image, you hereby have my permission to go ahead and add a carefully placed `float`. If, instead, you are trying to position something to the left or to the right, or next to another thing, please use something else. `position: flex`, `display: grid` or even good old `inline-block` usually does the job a whole lot better than `float` has ever done. `float` is a really old school technique which is still sometimes overused as a hack to this day in order to achieve effects we now have much better tools to accomplish. Do everyone (most of all yourself) a favor and skip it.
 
 ## Wrapping up
 
