@@ -3,6 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 7
 title: Clean CSS - detailed edition
+image: >-
+  https://images.unsplash.com/photo-1457524461416-8796b6d23efb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
 ingress: >-
   In yesterday's post, I listed some of the general tips I use when I try to
   write clean CSS code. Today, I'll try to be a bit less fluffy and instead show
