@@ -89,4 +89,9 @@ const unique = array.filter(isFirst);
 
 ## Which method should I choose?
 
-We saw three different methods to remove duplicate elements from an array. In terms of readability, I prefer the first method. By using a `Set` your code is both short and easy to understand. 
+We saw three different methods to remove duplicate elements from an array. It's easy to imagine a fourth method that would improve the readability. Namely, by [creating a proposal](https://javascript.christmas/2018/1) to add `Array.prototype.unique` to EcmaScript.
+
+In terms of readability, I prefer the first method. By using a `Set` your code is both short and easy to understand. 
+
+
+
