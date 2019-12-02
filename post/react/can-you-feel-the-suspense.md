@@ -21,7 +21,7 @@ authors:
 
 Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or _chunk_. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. 
 
-It can also be at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
+You can also split up your code at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
 
 <img class="wide-image" src="/assets/codesplitting.png" alt="code splitting illustration, inspiration by https://www.cronj.com"/>
 
@@ -51,7 +51,7 @@ The example shows a chunk named `ChristmasAlbum` and a chunk named `OtherChristm
 
 Because `ChristmasAlbum` and `OtherChristmasAlbum` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `ChristmasAlbum` and, of course `OtherChristmasAlbum`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully.
 
-## But.. what if it fails?!
+## But, what if it fails?!
 
 As earlier stated, Suspense only handles the loading state as you try to dynamically import a component, not errors that may occur. It is also a known fact that anything that can go wrong, will go wrong... at some point. Therefore, we need a way to handle the errors that may come as we are trying render our chunks. We also want the error handling in the same declarative way, we are used to in React. _In comes error boundaries._
 
@@ -68,7 +68,7 @@ const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
   </Suspense>
 </ErrorBoundary>
 ```
-Note that the ErrorBoundary component does not have to be a direct parent. You can place it higher up in the tree if for instance the Error UI should hide more than the actual component that crashed.
+Note that the ErrorBoundary component does not have to be a direct parent. You can place it higher up in the tree if, for instance, the Error UI should hide more than the actual component that crashed.
 
 If you want to learn more about error bounderies and how to write them, Kristoffer Selbekk made a smashing article about it in last years calendar. [Take a look!]( https://react.christmas/2018/14)
 
