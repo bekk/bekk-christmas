@@ -6,16 +6,22 @@ title: WIP Fan-out/fan-in for maximum scalability with Durable Functions
 authors:
   - Eivind Sorteberg
 ---
-## Fan-out/fan-in
+# Durable functions in Microsoft Azure
+
+## Fan-in fan-out
 
 ```
-      /-x-\
-     /--x--\
-    /---x---\
----x----x----x---
-    \---x---/
-     \--x--/
-      \-x-/
+            /---c1---\  
+       /---b1---c2---b1---\
+      /     \---c3---/     \
+     /                      \
+    /       /---c4---\       \
+---a-------b2---c5---b2-------a---
+    \       \---c6---/       /
+     \                      /
+      \     /---c7---\     /
+       \---b3---c8---b3---/
+            \---c9---/
 ```
 
 ## Function types
@@ -81,17 +87,19 @@ public class MyOrchestrator
 ```csharp
 public class MyTrigger
 {
-    private ILogger<MyTrigger> _logger;
-
-    public MyTrigger(ILogger<MyTrigger> logger)
-    {
-        _logger = logger;
-    }
-
     [FunctionName(nameof(MyTrigger))]
-    public async Task Run(OrchestratorInput input)
+    public async Task<string> Run(
+        [HttpTrigger] HttpRequest req,
+        [OrchestrationClient] DurableOrchestrationClient orchestrationClient
+    )
     {
+        var people = new[]
+        {
+            "Santa",
+            "Claus"
+        };
 
+        return await orchestrationClient.StartNewAsync(nameof(MyOrchestrator), people);
     }
 }
 ```
