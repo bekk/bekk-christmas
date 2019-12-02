@@ -19,7 +19,7 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 
 Representing the state of a program in the code can be difficult work, and is a discipline prone to errors. In this talk Christina Lee presented how the use of primitives and strings can be problematic when used to represent state. Both because their meaning may change over time and because they quickly (or even initially) will have the ability to represent invalid states when code changes.  
 
-So what is the solution? As always that depends on the application. But Christina recommends using bounded types, and in Kotlin that means **Sealed classes everywhere!**
+So what is the solution? As always, that depends on the application. But Christina recommends using bounded types, and in Kotlin that means **Sealed classes everywhere!**
 
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
