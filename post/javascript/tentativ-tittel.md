@@ -62,7 +62,19 @@ found 1 high severity vulnerability in 1113634 scanned packages
 run `npm audit fix` to fix 1 of them.
 ```
 
-To fix the vulnerability, run `npm audit fix` or bump the vulnerable packages yourself. Sometimes the warning makes you realize you have a dependency you don't actually need. We've definitely pruned a few unnecessary dependencies from our app this way that we weren't completely aware of having :upside_down_face:
+To fix the vulnerability, run `npm audit fix` or bump the vulnerable packages yourself. Sometimes the warning makes you realize you have a dependency you don't actually need. We've definitely pruned a few unnecessary dependencies from our app this way that we weren't completely aware of having :grimacing:
+
+### What if it _really_ doesn't look okay?
+
+If your codebase hasn't been audited for a while you might be met by something that looks more like this:
+
+```sh
+found 160 vulnerabilities (14 low, 146 high) in 951689 scanned packages
+  run `npm audit fix` to fix 146 of them.
+  14 vulnerabilities require manual review. See the full report for details.
+```
+
+Yeah. Not as nice. Most times these vulnerabilities are fixed in the next patch of the packages, but if it's been a while you might have to bump a minor or even major version. Your mileage may vary - and I would recommend that you run the audit script often, to avoid having to bump major versions of several packages at the same time. You might also be lucky and find that 130 of these vulnerabilities point to the same package and are solved by the same patch bump.
 
 ## What more can it do?
 
