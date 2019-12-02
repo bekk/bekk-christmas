@@ -41,8 +41,6 @@ const ArticleBody = styled.article`
         padding: 3px 4px;
         margin: 0 2px;
         font-size: inherit;
-        white-space: normal;
-        word-break: normal;
     }
     p img {
         width: 100%;
