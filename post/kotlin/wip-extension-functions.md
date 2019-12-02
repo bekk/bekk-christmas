@@ -3,7 +3,8 @@ calendar: kotlin
 post_year: 2019
 post_day: 9
 title: Extension functions
-image: 'https://images.unsplash.com/photo-1551650322-a0cfff4dd76b'
+image: >-
+  https://images.unsplash.com/photo-1450198342040-c32e6d1ef2e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80
 ingress: >-
   An extension functions is, as the name implies, a function that extends an
   existing class. The function does this without actually modifying it!
