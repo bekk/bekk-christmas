@@ -3,6 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 4
 title: Can you feel the Suspense?!
+image: 'https://unsplash.com/photos/kTHJb6pYsrY'
 ingress: >-
   Suspense is and will become a game changer when it comes to data fetching. It
   changes the way we structure our code, think about loading states and gives a
@@ -20,6 +21,8 @@ Suspense lets you delay the rendering of parts of the application tree until a c
 ## Code splitting
 
 Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or chunk. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. It can also be at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
+
+
 
 ### Optimize all the codes
 
@@ -42,4 +45,3 @@ const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
 The example shows a chunk named `ChristmasAlbum`. Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component.
 
 Because `ChristmasAlbum` is dynamically imported, we wrap the component in a Suspense component. Suspense will try to render `ChristmasAlbum`. If the chunk is not loaded completely and ready to render, the Suspense component will render the fallback component until it can render ChristmasAlbum successfully.
-
