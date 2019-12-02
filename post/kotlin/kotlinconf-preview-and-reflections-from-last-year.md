@@ -3,7 +3,7 @@ calendar: kotlin
 post_year: 2019
 post_day: 4
 title: '''Twas the night before KotlinConf'
-image: 'https://i.imgur.com/I8uhLjx.jpg'
+image: 'https://i.imgur.com/4keu9Ap.jpg'
 ingress: >-
   Tomorrow the festivities, that are KotlinConf 2019, are upon us. And in that
   spirit we take time to look back at last years conference and some of the
@@ -17,13 +17,9 @@ KotlinConf 2018 was held over two days (not including workshops) in  Beurs van B
 
 ## Representing the State
 
-//TODO
+Representing the state of a program in the code can be difficult work, and is a discipline prone to errors. In this talk Christina Lee presented how the use of primitives and strings can be problematic when used to represent state. Both because their meaning may change over time and because they quickly (or even initially) will have the ability to represent invalid states when code changes.  
 
-* Representing state
-* primitives/strings vs bounded types (sealed classes, interfaces). How many states can they hold, bool, tuple, string? fun(s: String) takes infinite possible inputs.  
-* Code changes over time, assumptions will be wrong. Code that is theoretically reachable must be able to run. Using sealed classes. Doing thing explicitly may be boring, but you keep control. 
-
-And while she did not say that booleans or strings were bad, the recommendation was (at least to consider) **Sealed classes everywhere!**
+So what is the solution? As always that depends on the application. But Christina recommends using bounded types, and in Kotlin that means **Sealed classes everywhere!**
 
 [Representing State: the Kotlin Edition](https://www.youtube.com/watch?v=-lVVfxsRjcY&list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr&index=27) by Christina Lee
 
