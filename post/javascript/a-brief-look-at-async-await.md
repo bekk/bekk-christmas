@@ -50,8 +50,6 @@ const asyncFunction = async function() {
   const result = await addOne(1);
   console.log(result);
 };
-
-asyncFunction();
 ```
 The code ``` await addOne(1)``` will wait until the promise is resolve and return the 2, similar to:
 
