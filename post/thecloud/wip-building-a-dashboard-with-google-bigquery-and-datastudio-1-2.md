@@ -14,7 +14,7 @@ Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees ar
 
 ![](/assets/dashboard.png)
 
-The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. It is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
+The Google Cloud Platform (GCP) combines powerful cloud tools with the simplicity and ease of use from Google services. To build the dashboard data, we made use of BigQuery. BigQuery is part of GCP, and is a serverless tool ideal for performing analysis on large datasets using the SQL language, without the need for administering a local database.
 
 ## 1. Obtain and store your data
 
@@ -22,7 +22,7 @@ BigQuery has plenty of huge, open datasets you can play around with, or you can 
 
 As the dashboard had to display real-time data, this required us to continuously gather the data through APIs, and stream it into BigQuery.
 
-Oslo City Bike and Entur (who delivers information about public transportation and e-scooters), both have open real-time APIs. GCP provides the ability to create scheduled functions that collect data through through an API, and insert it into rows in a BigQuery table. These simple functions can be written using Python or another language of your choice. This is the function I use for obtaining the most recent data through Oslo City Bike’s API, and storing it in a BigQuery table:
+[Oslo City Bike](https://oslobysykkel.no/apne-data/sanntid) and [Entur](https://developer.entur.org/pages-intro-overview) (who delivers information about public transportation and e-scooters), both have open real-time APIs. GCP provides the ability to create scheduled functions that collect data through through an API, and insert it into rows in a BigQuery table. These simple functions can be written using Python or another language of your choice. This is the function I use for obtaining the most recent data through Oslo City Bike’s API, and storing it in a BigQuery table:
 
 **Function to stream data from API to a BigQuery table:**
 
