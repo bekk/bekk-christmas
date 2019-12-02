@@ -13,7 +13,9 @@ ingress: >-
   konsept. Sammen dannet workshopene «grunnmuren» til merkevaren i form av en
   strategi: Merkevarehistorien. Den danner grunnlaget for å bygge identiteten
   til We Ignite Tech.
-description: 'Jon Sindre Cosgrove, Arne Magnus Mykkelbost og Nina Inberg.'
+description: >-
+  Skrevet av Jon Sindre Cosgrove sammen med Arne Magnus Mykkelbost og Nina
+  Inberg.
 ---
 # **Strategi og merkevare**
 
