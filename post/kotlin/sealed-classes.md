@@ -22,11 +22,11 @@ To illustrate this, let's look into a simple example. In this example we are doi
 ```kotlin
 sealed class PaymentMethod() {
   data class CreditCard(val token: String, val expireDate: String) : PaymentMethod()
-  data class DirectPayment(val phonenumber: String) : PaymentMethod()
+  data class DirectPayment(val phoneNumber: String) : PaymentMethod()
 }
 ```
 
-Each of these payment methods have different requirements for input data. When handling a `CreditCard` payment we need a `token` and an value for `expireDate`. Handling a `DirectPayment` only requires a `phonenumber`.
+Each of these payment methods have different requirements for input data. When handling a `CreditCard` payment we need a `token` and `expireDate`. A `DirectPayment` however only requires a `phoneNumber`.
 
 As we can see here, each of the values have to extend the sealed class `PaymentMethod`. Every type defined inside `PaymentMethod`, might have their own state, extend state from `PaymentMethod` or they can even be an `object` with no state at all. 
 
@@ -56,7 +56,7 @@ data class Payment(amount: Int, paymentMethod: PaymentMethod)
 fun processPayment(payment: Payment) =
   when (payment.paymentMethod) {
     is PaymentMethod.CreditCard -> processCreditCardPayment(paymentMethod.token, paymentMethod.expireDated)
-    is PaymentMethod.DirectPayment -> processDirectPayment(payment.amount, paymentMethod.phonenumber)
+    is PaymentMethod.DirectPayment -> processDirectPayment(payment.amount, paymentMethod.phoneNumber)
 }
 ```
 
@@ -65,4 +65,4 @@ The above code will now compile since all possible values of `PaymentMethod` is 
 Another important benefit we get from using `when` expressions, is `smartcast`. When the `paymentMethod` matches one of the `is` statements - we can use the object directly without the need for explicit casting.
 
 ## Summary
-Sealed classes gives us a new tool for creating cleaner and better data models. By by utilizing sealed classes with the `when` expression, the compiler will also help us to handle all possible values. Even though this sometimes might feel cumbersome, it will definitely make the code more solid and more maintainable.
+Sealed classes gives us a new tool for creating cleaner and better data models. By utilizing sealed classes with the `when` expression, the compiler will also help us to handle all possible values. Even though this sometimes might feel cumbersome, it will definitely make the code more solid and more maintainable.
