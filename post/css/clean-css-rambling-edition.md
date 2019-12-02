@@ -14,6 +14,7 @@ ingress: >-
 
   In this post, I'll go through some general tips before I'll get into some more
   specific tips in tomorrow's post. Let's go!
+description: clean maintainable readable css
 authors:
   - Peter Hemmen
 ---
