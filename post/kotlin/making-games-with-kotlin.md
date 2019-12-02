@@ -3,7 +3,7 @@ calendar: kotlin
 post_year: 2019
 post_day: 12
 title: Making games with Kotlin!
-image: 'https://i.redd.it/s52wnyi3k7f21.png'
+image: 'https://i.imgur.com/BS8up0l.png'
 links:
   - title: LibGDX
     url: 'https://libgdx.badlogicgames.com/'
