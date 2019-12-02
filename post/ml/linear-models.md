@@ -5,8 +5,8 @@ post_day: 3
 title: Linear Models
 ingress: >-
   There are many different types of machine learning models. Linear models are
-  one of the simplest, but also one of the most widely used. In this post we’ll
-  explain what a linear model is and why linear models are so popular.
+  some of the simplest, but also some of the most widely used. In this post
+  we’ll explain what a linear model is and why linear models are so popular.
 authors:
   - Audun Eltvik
   - Michael Nordmo
@@ -21,11 +21,11 @@ The first step in any machine learning problem is usually to visualize the data 
 
 ![](/assets/scatterplot.png)
 
-In machine learning, we decide on some model that we believe describes the data. This model is then fitted to the data, and used to extrapolate to new situations. The simplest of such models is the humble line. A line, or more accurately a linear model, assumes that the relationship between the input and the output is such that an increase in input produces the same increase in output times some constant. More precisely, is is a parameterized model of the form
+In machine learning, we decide on some model that we believe describes the data. This model is then fitted to the data, and used to extrapolate to new situations. The simplest of such models is the humble line. A line, or more accurately a linear model, assumes that the relationship between the input and the output is such that an increase in input produces the same increase in output multiplied by some constant. More precisely, is is a parameterized model of the form
 
 **Y = a*X + b** 
 
-Where **X** is the input (distance traveled), **b** is the output (gas usage) and **a** and **b** are parameters (the relationship between distance traveled and gas usage) are to be determined using machine learning. The perceptive reader will notice that it’s not possible to run a line through all the points in the above image. So we need some sense of a best line.
+Where **X** is the input (distance traveled), **Y** is the output (gas usage) and **a** and **b** are parameters (the relationship between distance traveled and gas usage) to be determined using machine learning. The perceptive reader will notice that it’s not possible to run a line through all the points in the above image. So we need some sense of a best line.
 
 The idea of a best model in machine learning is captured by the cost function. This is a function of the parameters which measures how “bad” your model is performing on the given data, with zero being a perfect model. The model is trained on your data set by minimizing the cost function, which corresponds to finding the model parameters that performs best on your data.
 
