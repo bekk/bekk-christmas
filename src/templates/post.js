@@ -110,7 +110,7 @@ const Template = ({ data, pageContext }) => {
         ingressHtml.replace(/<[^>]*>?/gm, '').trim() ||
         `An article from ${calendar}`;
 
-    const path = `${pageContext.isPreview && `/${calendar}`}/${post_year}/`;
+    const path = `${pageContext.isPreview ? `/${calendar}` : ''}/${post_year}/`;
 
     return (
         <Layout calendarName={calendar} year={post_year}>
