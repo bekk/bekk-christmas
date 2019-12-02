@@ -5,10 +5,10 @@ post_day: 8
 title: Anti-bikeshedding with ktlint
 ingress: >-
   How the code is formatted can be a hot topic, but it's a solved problem - just
-  use a linter and/or formatter! In this blog, I'll introduce you to a linter
+  use a linter and/or formatter! In this article, I'll introduce you to a linter
   and formatter for your Kotlin codebase.
 ---
-When you have two or more people working on the same codebase, there is bound to be disagreements. It might be about larger things such as the architecture or what framework to use. It might be about smaller things, like the number of spaces used for indentation or the order of modifiers.
+When you have two or more people working on the same codebase there is bound to be disagreements. It might be about larger things such as the architecture or what framework to use. It might be about smaller things, like the number of spaces used for indentation or the order of modifiers.
 
 Meet [ktlint](https://github.com/pinterest/ktlint), ''an anti-bikeshedding Kotlin linter with built-in formatter'', which is here to help you with the small things!
 
@@ -18,7 +18,7 @@ What, you haven't heard of this term before? What about [Parkinson's law of triv
 
 In short, the term bikeshedding stems from the aforementioned 'law' which argument that ''members of an organization give disproportionate weight to trivial issues''. Here, an example.
 
-> While planning to build a nuclear power plant, there is an allocation meeting. In this metting, large issues such as the size of the workforce and the budget for the containment vessels are passed without much hassel as there are just a few experts fronting each issues. However, when the small issue of a bikeshed is raised, everyone has an opinion, so the issue drags on and ends up claiming a larger part of the meeting then the large issues combined.
+> While planning to build a nuclear power plant, there is an allocation meeting. In this meeting, large issues such as the size of the workforce and the budget for the containment vessels are passed without much hassel as there are just a few experts fronting each issues. However, when the small issue of a bikeshed is raised, everyone has an opinion, so the issue drags on and ends up claiming a larger part of the meeting then the large issues combined.
 
 For a full version, I recommend the blog post [Bikeshedding](https://exceptionnotfound.net/bikeshedding-the-daily-software-anti-pattern/). Just remember the gist; we tend to spend too much time on trivial things, especially compared to time spent on larger things.
 
@@ -27,7 +27,7 @@ So in other words, an ''anti-bikeshedding'' tool is a tool which aims to tackle 
 ## So ktlint is for the small issues? 🤔
 
 Yes it is! More specific, it's an opinionated tool that performs linting and formatting of your Kotlin source code, based on the [official style guide](https://kotlinlang.org/docs/reference/coding-conventions.html).
-Other similar tools are ESlint and Prettier(javascript)(javascript), gofmt(Go) and Black(python).
+Other similar tools are ESlint(javascript), Prettier(javascript), gofmt(Go) and Black(python).
 
 ktlint can perform two actions; it can check kotlin source files, and it can format the source files. When checking the source files it will report any errors it encounters in the files, and the developer will have to fix it. Performing the formating action however, will fix any identified flaw in place in the file, leaving nicely formatted source files in place.
 
