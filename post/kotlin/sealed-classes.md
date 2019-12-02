@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2019
-post_day: 17
+post_day: 5
 title: Sealed classes
 image: >-
   https://images.unsplash.com/photo-1533084417605-e538a510d50a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80
