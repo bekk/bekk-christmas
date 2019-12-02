@@ -6,8 +6,11 @@ title: Sealed classes
 image: >-
   https://images.unsplash.com/photo-1533084417605-e538a510d50a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80
 ingress: ''
-links: []
-authors: []
+links:
+  - title: Sealed classes
+    url: 'https://kotlinlang.org/docs/reference/sealed-classes.html'
+authors:
+  - Henrik Gundersen
 ---
 Sealed classes in Kotlin is a concept close to enums that we are used to from other programming languages. Similar to regular enums, the values defined in a sealed class are restricted. However — unlike enums — these values might also be an instance of a class containing state. This makes it possible to make more expressive models.
 
@@ -29,10 +32,7 @@ As we can se here, each of the classes have to extend the sealed class `PaymentM
 
 ### Utilizing the `when` expression
 The key benefit of sealed classes, can be seen using the `when` expression. As described earlier, there have to be an exact set of possible values when defining sealed classes. This restriction makes it possible for the compiler to do 
-warn you if you are not handling all possible cases in the `when` expression. 
-
-exhaustive
-
+warn you if you are not handling all possible cases in the `when` expression.
 
 In the following example we are trying to handle a payment:
 
@@ -63,8 +63,3 @@ Another benefit is the use of smartcasting for each of the `is` statements. This
 
 ### Summary
 Sealed classes gives us a new tool for creating cleaner and better data models. By by utilizing sealed classes with the `when` expression, the compiler will also help us to remember to handle all possible cases. Even though this sometimes might feel cumbersome, it will make the code more solid and more maintainable.
-
-
-##### Sources:
-https://kotlinlang.org/docs/reference/sealed-classes.html
-https://antonioleiva.com/sealed-classes-kotlin/
