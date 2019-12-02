@@ -13,4 +13,4 @@ authors:
   - Jens Andreas Huseby
   - Linda Halvorsen
 ---
-<iframe src="https://anchor.fm/kaffeprathosbekk/embed" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://anchor.fm/kaffeprathosbekk/embed/episodes/--e94b67" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
