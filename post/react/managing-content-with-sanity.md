@@ -1,7 +1,7 @@
 ---
 calendar: react
 post_year: 2019
-post_day: 10
+post_day: 6
 title: Managing content with Sanity
 image: 'https://www.sanity.io/static/images/opengraph/social.png'
 ingress: "Content management done the right way \U0001F937‍♂️"
