@@ -6,6 +6,11 @@ title: Hvorfor driver vi med kontinuerlige leveranser?
 ingress: >-
   Hva er gevinstene med å levere kontinuerlig? Er kontinuerlige leveranser
   risikabelt? Vil brukerne egentlig ha det? Og er det noe alternativ?
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Stian Surén
   - Morten Grønvold
