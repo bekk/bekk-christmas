@@ -74,7 +74,7 @@ To get the version with Concurrent Mode, you need to install this experimental v
 npm install react@experimental react-dom@experimental
 ```
 
-Next, to enable it you simply need to make som changes in your entry file, and use the `createRoot` from `ReactDOM`:
+Next, to enable it you simply need to make some changes in your entry file, and use the `createRoot` from `ReactDOM`:
 
 ```js
 import React from 'react'
