@@ -2,8 +2,15 @@
 calendar: kotlin
 post_year: 2019
 post_day: 7
-title: KotlinConf - Day 2
-image: imgr2.pdf
+title: On the second day of KotlinConf
+image: ''
 ingress: Day 2
 ---
-Bla bla bla
+- common first talk 
+- talks
+- exhibition
+- puzzlers
+- closing panel
+- and a partridge in a pear tree.
+
+
