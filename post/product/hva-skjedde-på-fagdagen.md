@@ -8,6 +8,11 @@ ingress: >-
   A/B-teste en ny ansattliste-app... Men hva var det egentlig som ble testet? Vi
   snakker litt om hypotesetesting, design av eksperimenter og er så vidt innom
   signifikans.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Stian Surén
   - Valentina Sørlie
