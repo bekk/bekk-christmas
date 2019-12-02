@@ -13,7 +13,7 @@ authors: []
 
 ## The venue 
 
-This year the conference is held in Copenhagen, the capitol of Denmark. 
+This year the conference is held in the Bella Conference centre in  
 
 ## talk 1
 En talk
@@ -22,4 +22,4 @@ Noe om utstilling
 ## talk 2
 En talk til
 ## Party
-This blog post was written before the KotlinConf party, but we assume that it was awesome!
+This blog post was written before the KotlinConf party, but we assume that it was awesome! :beers: 
