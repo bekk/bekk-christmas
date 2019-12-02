@@ -30,9 +30,9 @@ If you are intent on having a bad time, you can use CSS for almost whatever you 
 ## Read up on `display` and `position`
 
 This might seem like a specific tip. In my experience, however, these properties are really some of the most general knowledge you can have when understanding and writing CSS. Surprisingly, quite a few developers lack a proper grasp of these concepts. Have you ever wondered why the element you are styling doesn't care about the height or width you are trying to give it? The element is probably `inline`. Why is that element you added with `position: absolute` suddenly all the way over in the corner of the screen? You probably forgot to position its ancestor. This stuff might seem daunting at first, but it's not rocket science, and it has made working with CSS that much more fun for me. I'm guessing it will for you too.
- 
+
 My all-time favorite site for learning a few CSS basics is this little beauty which I've shared countless times over the years: http://learnlayout.com/ It might seem a bit dated in the way it talks about supporting IE6 and presents `inline-block` as a new thing, but that only goes to prove the point that `position` and `display` is really something timeless that everyone who writes CSS should know. I can guarantee that the concepts are not going anywhere anytime soon, so go ahead and read it. You'll thank me later. 
- 
+
 ## Write as little CSS as possible
 
 CSS is notoriously hard to delete from big projects since you don't get any help out of the box with knowing where it is used and if it has any effect at all. In that way, it is even more important with CSS than other code to be really careful about not writing any unnecessary code. It is way easier and cheaper to remove it before you merge your PR. Before you are done with a feature, you should be ruthless about your newly written CSS and try to consider if every line you have written is really necessary. As soon as the code is merged, every developer – even you, the original author – starts thinking of it in this way: "I am not sure if I can delete this or not. It _might_ be used somewhere by someone or have an effect I am just not understanding. Better leave it in." Say hello to bloated, horribly styling. You'll probably spend a lot of time together.
@@ -41,7 +41,7 @@ Along the same line of making something easy to delete, try to avoid creating cl
 
 A stellar example of unneccesary styling is repeating the default properties of an element. There is rarely a reason to specify that a `div` is `display: block` or scatter the code with `position: static`. All that tells me is that you might not know what you're doing.
 
-Speaking of knowing what you are doing: Please don't just try adding some properties willy-nilly and seeing if it works. This shouldn't even be necessary to write, but somehow it seems that the mere act of opening up a stylesheet sometimes makes otherwise responsible developers try all that responsibility out the window and just cram properties into the CSS until it somehow works. This is also a _great_ way to end up with a lot of styling that really hurts the maintainability of your application. Please try to understand why the web site looks the way it does before you write anything. It will make it a lot more fun to write CSS. I pinky swear.
+Speaking of knowing what you are doing: Please don't just try adding some properties willy-nilly and seeing if it works. This shouldn't even be necessary to write, but somehow it seems that the mere act of opening up a stylesheet sometimes makes otherwise responsible developers throw all that responsibility out the window and just cram properties into the CSS until it somehow works. This is also a _great_ way to end up with a lot of styling that really hurts the maintainability of your application. Please try to understand why the web site looks the way it does before you write anything. It will make it a lot more fun to write CSS. I pinky swear.
 
 ## In conclusion
 
