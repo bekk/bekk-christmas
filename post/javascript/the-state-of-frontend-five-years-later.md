@@ -20,7 +20,7 @@ authors:
 ---
 ## Types are here, and you should be using them
 
-In 2014 I wrote my first big application using Backbone. Not particularily early to the party, I know, but it was definitely a step up from my former favourite frontend framework, jQuery Spaghetti 2.0. TypeScript was out already back then, but for some reason that was mostly for the .Net developers. Us Java guys were too cool. So instead we just passed around objects called `data` and `opts`, and console logged them to figure out what the heck was going on. And then we forgot to remove the console logging, and the application crashed in Internet Explorer in production.
+In 2014 I wrote my first big application using Backbone. Not particularly early to the party, I know, but it was definitely a step up from my former favourite frontend framework, jQuery Spaghetti 2.0. TypeScript was out already back then, but for some reason that was mostly for the .Net developers. Us Java guys were too cool. So instead we just passed around objects called `data` and `opts`, and console logged them to figure out what the heck was going on. And then we forgot to remove the console logging, and the application crashed in Internet Explorer in production.
 
 Even then, writing large scale JavaScript application without types was starting to look like a rather shoddy idea. Coming back to frontend now, I had the pleasure of meeting a codebase where types had just been introduced. And what a joy! Not only does the types make life soo much easier, it even turns out that TypeScript has become a quite decent type system!
 
@@ -56,7 +56,7 @@ These days, most things seem to work as expected, and there aren't that many bad
 
 ## Build times are… meh
 
-One of the great things about JavaScript when coming from the deep, dark caves of backend was the (almost) zero build time. That's definitely gone. I'm guessing the stable language I touted in the previous section didn't come for free. It looks like the average frontend build today would make my 2010 maven builds blush with embarassment, in terms of build time, dependency madness and complexity. 
+One of the great things about JavaScript when coming from the deep, dark caves of backend was the (almost) zero build time. That's definitely gone. I'm guessing the stable language I touted in the previous section didn't come for free. It looks like the average frontend build today would make my 2010 maven builds blush with embarrassment, in terms of build time, dependency madness and complexity. 
 
 I guess that just comes with maturity. Before a language has any use in enterprise applications (which I'm starting to figure out means 'real world' applications), the last thing anyone wants to deal with is dependency management, backwards compatibility and other boring enterprise stuff. But the quickly passes once your 20 million dollar business starts to fall apart because someone upgraded Babel.
 
@@ -65,13 +65,13 @@ JavaScript is definitely way past that point by now, and it's interesting to see
 
 ## Developer tooling is… meh
 
-With the maturity of the toolchain, developer tooling has improved. React and especially Redux provides some great debugging functionality, but overall I'm a bit disappointed that the state of things aren't better than they are. Source maps are good, but the fact that the standard debuggers can't evaluate variables properly with source maps is a bit of a bummer.
+With the maturity of the toolchain, developer tooling has improved. React and especially Redux provides some great debugging functionality, but overall, I'm a bit disappointed that the state of things aren't better than they are. Source maps are good, but the fact that the standard debuggers can't evaluate variables properly with source maps is a bit of a bummer.
 
 There might be things I should know here that I don't, but I was hoping that we'd be well past the point where `console.log` and attaching things to global state are reasonable approaches to debugging.
 
 
 # In short
 
-All in all, things are not bad in the world of frontend. The community is thriving, and innovation is both rapid and reasonably well directed. So, I guess I could reasonbly say that things used to be worse. The coffee was bitter, and the developers were too. These days the coffee is single lot, the function scope is predictable and the developers are hopefully slightly less bitter than they used to be.
+All in all, things are not bad in the world of frontend. The community is thriving, and innovation is both rapid and reasonably well directed. So, I guess I could reasonably say that things used to be worse. The coffee was bitter, and the developers were too. These days the coffee is single lot, the function scope is predictable, and the developers are hopefully slightly less bitter than they used to be.
 
-So, if you yourself is part of the frontend community, enjoy it! Frontend as an area of expertize has undergone huge changes the last few year, and I dare say most are for the much better. 
+So, if you yourself is part of the frontend community, enjoy it! Frontend as an area of expertise has undergone huge changes the last few years, and I dare say most are for the much better. 
