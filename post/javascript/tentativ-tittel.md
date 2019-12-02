@@ -17,8 +17,6 @@ links:
 authors:
   - Kristine Steine
 ---
-Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
-
 Should you be scared? For sure. [I know lots of people who would love to hack my app.](https://security.christmas/) Sure, we've taken care to secure our site from the risks described in the [OWASP Top Ten Project](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project). But I'm still kind of worried about the integrity of the 1113634 (:scream:) packages our frontend app depends upon.
 
 Each time I see the number of transitive dependencies in our app I get a little chill down my spine. Mostly because I don't _really_ know how those packages are maintained. Who controls them? Are they maintained actively? NPMs package registry is centralized and privately controlled, which is not without its controversies. If you're interested in more about this, C J Silverio gave a talk about [the economics of open source](https://2019.jsconf.eu/c-j-silverio/the-economics-of-open-source.html) at this year's JSConfEU.
@@ -85,3 +83,5 @@ There's a `--parseable` option as well, which is handy if you want to pipe the o
 ## Add auditing to your workflow :eyes:
 
 If the audit finishes and has found vulnerable packages, the script will fail and exit. That's really neat, because it means that we can add `npm audit` to our app verification script, along with tests and [linting](https://javascript.christmas/2018/7). That way, we are forced to give attention to the warnings each time we want to make changes to our app. We've had this as part of our workflow for the past year and it _does_ help us sleep at night. I hope you find it helpful too! :raised_hands:
+
+Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
