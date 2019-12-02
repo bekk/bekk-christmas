@@ -54,7 +54,7 @@ Enter the `reified` keyword.
 
 > **reify**: to consider or represent (something abstract) as a material or concrete thing : to give definite content and form to (a concept or idea) 
 
-With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example. One caveat though; `reified` requires an inline function, denoted by the `inline` keyword.
+With this defintion from [Merriam-Webster](https://www.merriam-webster.com/dictionary/reify) in mind, lets look at an example. One caveat though; `reified` requires it to be an inline function, denoted by the `inline` keyword. Inline, as the name implies, means that the function will be inlined at the call site - something we'll cover in another article!
 
 ```kotlin
 
