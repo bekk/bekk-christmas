@@ -9,12 +9,15 @@ ingress: >-
   examples, and therefore it is a good idea to have a foundation of what it is
   first. I will use metaphors to explain the concept, and I will not give any
   code examples in this article.
+links:
+  - title: What we talk about when we talk about monads
+    url: 'https://arxiv.org/pdf/1803.10195.pdf'
 authors:
   - Ragnhild Aalvik
 ---
 ## You're using monads!
 
-I'm sure most of you are already using monads, even without knowing it. You see, monads are hidden behind various names in different programming languages. `Promises`, `Tasks`, `Maybes`, `Optionals`, and `Lists` are all examples of monads :exploding_head:
+I'm sure most of you are already using monads, even without knowing it. You see, monads are hidden behind various names in different programming languages. `Promises`, `Tasks`, `Maybes`, `Optionals`, and `Lists` are all examples of monads. :exploding_head:
 
 ## Some context
 
