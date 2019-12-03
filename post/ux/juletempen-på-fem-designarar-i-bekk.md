@@ -20,7 +20,7 @@ authors:
 ## Guro Johansson, interaksjonsdesignar
 
 <div style="max-width: 760px; margin: auto;">
-<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
+<img style="width: 320px" src="https://i.ibb.co/ZftwB7q/Guro-Johansson.jpg" alt="Guro Johansson" />
 </div>
 
 **Kva jobbar du med akkurat no?**\
@@ -45,7 +45,9 @@ Det blir ikke ordentelig juleaften uten Tre nøtter til Askepott! Favorittjulel�
 
 ## Robert Austnes, visuell designar
 
-![Bilete av Robert Austnes](https://ibb.co/CwSYVq3)
+<div style="max-width: 760px; margin: auto;">
+<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
+</div>
 
 **Kva jobbar du med akkurat no?**\
 Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgaver i Bekk, mens på prosjekt hos Vy er jeg innom å lage designsystem, nytt ikonbibliotek og utvikling av den nye taxi-tjenesten som dukker opp om ikke så altfor lenge.
@@ -67,7 +69,9 @@ Julelåt må være The Pogues, Fairytale of New York. Favorittfilm må vel være
 
 ## Ola Claussen, interaksjonsdesignar
 
-![Bilete av Ola Claussen](https://ibb.co/7rvBfZZ)
+<div style="max-width: 760px; margin: auto;">
+<img style="width: 320px" src="https://i.ibb.co/KmrN0PG/Ola-Claussen.jpg" alt="Ola Claussen" />
+</div>
 
 **Kva jobbar du med akkurat no?**\
 Akkurat nå jobber jeg med å få søket på Finanstilsynets nettsider til å bli nytt og bra. Det betyr et dypdykk ned i en rar verden av hvordan det maskineriet fungerer. I tillegg jobber jeg en del meg Sentralfag, et internt system som Finanstilsynet bruker for å holde oversikt over alt de følger opp.
@@ -93,7 +97,9 @@ Favorittjulelåten må bli Both Sides Now av Joni Mitchell selv om den kan være
 
 ## Hans Christian Øren, visuell designar
 
-![Bilete av Hans Christian Øren](https://ibb.co/5440RJG)
+<div style="max-width: 760px; margin: auto;">
+<img style="width: 320px" src="https://i.ibb.co/BwGVhKv/Hans-Christian-ren.jpg" alt="Hans Christian Øren" />
+</div>
 
 **Kva jobbar du med akkurat no?**\
 Akkurat nå jobber jeg med Pekepinn og barn.
@@ -115,7 +121,9 @@ Favorittjuelåta er Driving home for christmas av Chris Rea, og favorittjulefilm
 
 ## Thea Snilsberg Søfting, interaksjonsdesignar
 
-![Bilete av Thea Snilsberg Søfting](https://ibb.co/KzbF9Tq)
+<div style="max-width: 760px; margin: auto;">
+<img style="width: 320px" src="https://i.ibb.co/0Xf54Lk/Thea-Snilsberg-S-fting.jpg" alt="Thea Snilsberg Søfting" />
+</div>
 
 **Kva jobbar du med akkurat no?**\
 Jeg jobber med å hjelpe studenter å finne folka de bør bo med i Leile. For tiden så utforsker jeg hvordan vi kan være mer rådgivende i tjenesten vår for å hjelpe brukerne våre å oppnå suksess, så det går mest i konseptutvikling og innsiktsarbeid.
