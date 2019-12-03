@@ -45,9 +45,9 @@ authors:
 > ## Gode historier er universelle 
 >
 > De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.
-
-![God historiefortelling (og eksepsjonelt god bruk av det retoriske virkemidlet paradoks) var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden.](/assets/lemon.jpeg "Lemon")
-
+>
+> ![God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden.](/assets/volkswagen_think_small.jpg)
+>
 > _God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden._
 >
 > ## Historier speiler samtiden 
