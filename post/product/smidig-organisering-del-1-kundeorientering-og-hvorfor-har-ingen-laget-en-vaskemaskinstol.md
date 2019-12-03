@@ -10,6 +10,11 @@ ingress: >-
   kundeorientering, raske læringssykluser, og stiller spørsmålet om hvorfor
   ingen har laget en vaskemaskinstol enda. Altså en kombinasjon av en
   vaskemaskin og stol.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Hilde Marie Flesland Torall
   - Pia Solheim
