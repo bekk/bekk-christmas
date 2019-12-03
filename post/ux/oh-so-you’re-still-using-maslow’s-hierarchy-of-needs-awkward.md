@@ -28,12 +28,12 @@ This new model includes 7 “motives” (rather than 5 needs):
 Human beings are driven by the motivation to…
 
 ...evade physical danger to remain safe. (Self-Protection)\
-...avoid infections to stay healthy. (Disease avoidance)\
+...avoid infections to stay healthy. (Disease Avoidance)\
 ...form and maintain cooperative alliances. (Affiliation)\
 ...gain and maintain prestige and respect. (Status)\
 ...acquire a desirable romantic partner. (Mate Acquisition)\
 ...foster a long-term mating bond. (Mate Retention)\
-...invest in, and care for, offspring and family. (Kin care)
+...invest in, and care for, offspring and family. (Kin Care)
 
 Additionally, this new framework does away with the concept that one “need” or “motive” has to be met before the next can be achieved. In fact, this new understanding tells us that our motivations are often in conflict with one another. The order is simply determined by age. An infant starts their life with only the motivation of their immediate physiological needs, but quickly incorporates new motivators into the balance as they develop.
 
