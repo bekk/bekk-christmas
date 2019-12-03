@@ -32,13 +32,13 @@ Jeg er mest fornøyd med hvor langt vi har kommet i løpet av det siste året to
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
 Det må vel være <a href="https://www.figma.com/" target="_blank">Figma</a>. Jeg synes Figma er helt genialt – rett og slett fordi det løser så mange av mine behov i ett. Før måtte jeg bruke flere ulike verktøy for å gjøre det samme som Figma gjør for meg i dag. Det er veldig praktisk å kunne jobbe med andre designere og utviklere i samme fil samtidig, og se live hva vi holder på med.
 
-I tillegg er jeg veldig glad i WhatFont, som er en enkel og praktisk utvidelse til Chrome. Den viser hvilken font og størrelse en tekst er skrevet i, uten at jeg må inspisere koden.
+I tillegg er jeg veldig glad i <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm" target="_blank">WhatFont</a>, som er en enkel og praktisk utvidelse til Chrome. Den viser hvilken font og størrelse en tekst er skrevet i, uten at jeg må inspisere koden.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 Jeg har ikke noe revolusjonerende tips å komme med, dessverre. Men når jeg har mye å gjøre så liker jeg å sette opp en liste over alt som skal gjøres, og prioritere den med det viktigste først. Jeg lager oppgavene så små og konkrete som mulig, slik at jeg får mange små seire når jeg kan markere de som utført!
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
-Her vil jeg trekke frem Eyr, som gjør det mulig å få snakke med en lege fra der du er. Det var veldig praktisk da jeg skulle reise til Afrika. Jeg trengte bare å fylle ut et enkelt skjema om hvor jeg skulle, så fikk jeg svar fra en lege i løpet av dagen om hva jeg trengte av vaksiner og medisiner. Så kunne jeg bare møte opp på et apotek når det passet meg og få satt vaksinene der.
+Her vil jeg trekke frem <a href="https://eyr.md/no" target="_blank">Eyr</a>, som gjør det mulig å få snakke med en lege fra der du er. Det var veldig praktisk da jeg skulle reise til Afrika. Jeg trengte bare å fylle ut et enkelt skjema om hvor jeg skulle, så fikk jeg svar fra en lege i løpet av dagen om hva jeg trengte av vaksiner og medisiner. Så kunne jeg bare møte opp på et apotek når det passet meg og få satt vaksinene der.
 
 **Bonusspørsmål: Kva er favorittjulelåta og favorittjulefilmen din?**\
 Det blir ikke ordentlig juleaften uten Tre nøtter til Askepott! Favorittjulelåt er vanskeligere å velge... men Det lyser i stille grender har jeg vært glad i helt siden jeg var liten.
@@ -56,7 +56,7 @@ Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgav
 Jeg er fornøyd med å ha bidratt til å bygge Vy sin nye merkevare. Det er bare i startfasen enda på uttak digitalt, men med et stadig bedre designsystem, omskriving av kode og flinke designere som dytter på, skjer det mye bra fremover.
 
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
-Sketch. Jeg bruker stort sett bare det i hverdagen. Men du skal ikke undervurdere litt penn og papir heller, det kommer fort mye bra ut av litt rabling i blokka.
+<a href="https://www.sketch.com/" target="_blank">Sketch</a>. Jeg bruker stort sett bare det i hverdagen. Men du skal ikke undervurdere litt penn og papir heller, det kommer fort mye bra ut av litt rabling i blokka.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 November og desember er veldig hektiske måneder, både på prosjekt og i Bekk. Så jeg prøver å være flink til å prioritere og planlegge uken på søndager. Det kommer jo alltid litt inn fra sidelinjen, men da har jeg i alle fall oversikt over det mest prekære, så det ikke går i glemmeboken. Så prøver jeg å ta meg tid til å koble av mellom slagene med en sykkeltur eller en løpetur i marka.
@@ -87,7 +87,7 @@ Store whiteboards har alltid vært favoritten. Det er noe tilfredsstillende med 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 Tv-peis!
 
-Har du to dataskjermer tilgjengelig så jobb på den ene mens du fyrer opp YouTube og søker opp «Fireplace no ads» på den andre. Sett på noen gode tunes, gjerne julemusikk! Det kan få enhver lang og hektisk dag til å bli litt bedre! Min favoritt: https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s
+Har du to dataskjermer tilgjengelig så jobb på den ene mens du fyrer opp YouTube og søker opp «Fireplace no ads» på den andre. Sett på noen gode tunes, gjerne julemusikk! Det kan få enhver lang og hektisk dag til å bli litt bedre! Min favoritt: <a href="https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s" target="_blank">Peis på YouTube</a> 
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
 Hvis det er en ting som i hvert fall har fått meg til å endre litt adferd så må det være å ha fått smartklokke med eSIM. Jeg er ikke noe stor fan av å ha med meg mobilen over alt, samtidig så får jeg FOMO-følelsen når jeg ikke har den. Så det å nå kunne la mobilen ligge igjen hjemme når jeg skal ta meg en tur, uten å måtte føle at jeg har glemt noe har vært en digg greie.
@@ -108,13 +108,13 @@ Akkurat nå jobber jeg med Pekepinn og barn.
 Det jeg er mest fornøyd med er at Pushwagnesizer har fått så mye oppmerksomhet.
 
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
-Adobe Illustrator. Jeg får stor kreativ frihet der jeg kan lage alt fra enkle skisser til mer detaljerte illustrasjoner.
+<a href="https://www.adobe.com/Illustrator" target="_blank">Adobe Illustrator</a>. Jeg får stor kreativ frihet der jeg kan lage alt fra enkle skisser til mer detaljerte illustrasjoner.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 Pass på å få gjort alt ferdig slik at du ikke sitter på juleaften og jobber.
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
-Det er mange, men de to siste er https://deplacemaison.webflow.io og https://pygar.co/en/investments
+Det er mange, men de to siste er <a href="https://deplacemaison.webflow.io" target="_blank">Déplacé Maison</a> og <a href="https://pygar.co/en/investments" target="_blank">Pygar</a>.
 
 **Bonusspørsmål: Kva er favorittjulelåta og favorittjulefilmen din?**\
 Favorittjuelåta er Driving Home for Christmas av Chris Rea, og favorittjulefilmen er Hjemme Alene 1
@@ -135,7 +135,7 @@ Generelt hele året på Leile, egentlig! Vi vet at verdiforslaget vårt treffer,
 En god tusj og papir vil nok alltid være favorittverktøyet, men i løpet av året har Figma bitt mitt go-to designverktøy. Hovedsakelig bruker jeg det til å skisse, prototype og jobbe med flyten i tjenesten vår, men det fungerer også utmerket som et verktøy for diskusjon og samarbeid i teamet.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
-Generelt når det er hektisk er det utrolig viktig for meg å skrive ned absolutt alt jeg må og skal gjøre, enten det er på jobb eller privat. Jeg har blitt veldig glad i Things, der klarer jeg å holde styr på alt!
+Generelt når det er hektisk er det utrolig viktig for meg å skrive ned absolutt alt jeg må og skal gjøre, enten det er på jobb eller privat. Jeg har blitt veldig glad i <a href="https://apps.apple.com/us/app/things-3/id904237743" target="_blank">Things</a>, der klarer jeg å holde styr på alt!
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
 Animasjonene i Klarna-appen er utrolig søte, og generelt har de et veldig gjennomarbeidet design og en god brukeropplevelse. Jeg er også en person som sjekker været hver eneste morgen, så er veldig glad i varselet jeg får automatisk fra Yr-appen når jeg våkner!
