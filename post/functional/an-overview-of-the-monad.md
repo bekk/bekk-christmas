@@ -3,6 +3,7 @@ calendar: functional
 post_year: 2019
 post_day: 5
 title: An overview of the monad
+image: 'https://www.pexels.com/photo/gray-cat-inside-white-and-purple-box-2870497/'
 ingress: >-
   In this article I will give a brief overview of what a _monad_ is. Later
   articles in this series will use monadic features in different programming
