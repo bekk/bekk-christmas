@@ -20,6 +20,8 @@ links:
 ---
 Det finnes en haug med ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekt. Så kanskje det kan hjelpe dere på vei med deres neste workshop. (Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
 
+
+
 ## Tegne i blinde
 
 * Type: Ice breaker, bli kjent, team building
@@ -27,7 +29,13 @@ Det finnes en haug med ulike oppvarmingsøvelser der ute som kan benyttes i work
 * Du trenger: Ark til alle deltakerne, noe å tegne med
 * Antall deltagere: Bør gå opp i par, men ellers ingen begrensning på antall. 
 
+**Hva** 
 
+Denne øvelsen går ut på å lage portretter av hverandre - uten å se på arket når du tegner, og med feil hånd (ikke den du vanligvis tegner med). Og om man har lyst å legge til enda en tvist kan personen som tegner samtidig intervjue den andre for å bli bedre kjent, eks "Hvor studerte du?", "Hvor vokste du opp?" osv. 
+
+**Hvorfor**
+
+Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger prestere. Den kan også fungere fint som en del av en teambuilding-workshop hvor man kan sette navn på tegningene i etterkant og ta de med videre. 
 
 ## Historiestafett
 
@@ -53,14 +61,11 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 ![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
 
-
-
 ## **Sirkler**
 
-* Hva: En tegneøvelse som har som mål å være mest mulig kreativ på kort tid
-* Type: Tegning, tenke kreativt 
+* Type: Tegning, kreativitet
 * Tidsbruk**:** ca.10 min
-* Du trenger: Tusjer, ark med mange sirkler på et papir
+* Du trenger: Tusjer, ark med mange sirkler 
 * Antall deltagere: Ubegrenset
 
 **Hvorfor**
