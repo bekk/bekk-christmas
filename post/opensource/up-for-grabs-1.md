@@ -41,7 +41,7 @@ rm -rf node_modules && npm install
 After that’s done, let’s create the patch file:
 
 ```
-diff -Naur patches/my-fixed-buggybug.js node_modules/buggybug/index.js > patches/buggybug-index.patch
+diff -Naur node_modules/buggybug/index.js patches/my-fixed-buggybug.js > patches/buggybug-index.patch
 ```
 
 This will create a file called `buggybug-index.patch` that contains the diff of our change. To apply it to the actual buggybug in node_modules, we use 
