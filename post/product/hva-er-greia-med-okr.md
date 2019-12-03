@@ -10,6 +10,11 @@ ingress: >-
   OKR-rammeverket. Du får innsikt i komponentene rammeverket består av og
   hvordan OKR skiller seg fra andre målstyringsrammeverk. I tillegg deler vi
   noen gode råd til deg som vil prøve OKR i egen virksomhet.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Harald Kjølner
   - Christoffer Marcussen
