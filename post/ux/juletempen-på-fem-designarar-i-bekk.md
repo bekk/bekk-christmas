@@ -19,7 +19,7 @@ authors:
 ---
 ## Guro Johansson, interaksjonsdesignar
 
-**![Guro Johansson](https://i.ibb.co/bKTFBTk/Guro-Johansson.jpg)**
+**![Guro Johansson](https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg)**
 
 **Kva jobbar du med akkurat no?**\
 Jeg jobber hos Vipps, og der jobber jeg i et team som jobber med å forenkle hverdagen til både bedriftskundene og de ansatte i Vipps. En av tingene jeg holder på med akkurat nå er å slå sammen flere interne verktøy til ett, slik at de ansatte i Vipps skal slippe å forholde seg til så mange ulike systemet når de hjelper kundene.
@@ -28,7 +28,7 @@ Jeg jobber hos Vipps, og der jobber jeg i et team som jobber med å forenkle hve
 Jeg er mest fornøyd med hvor langt vi har kommet i løpet av det siste året totalt sett. Vi gjør stadig små forbedringer for brukerne våre, og til sammen har alle endringene gjort at systemene vi jobber med er blitt veldig mye bedre enn det var. Det er fort gjort å glemme hvor mye mange små ting får å si til sammen.
 
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
-Det må vel være Figma. Jeg synes Figma er helt genialt – rett og slett fordi det løser så mange av mine behov i ett. Før måtte jeg bruke flere ulike verktøy for å gjøre det samme som Figma gjør for meg i dag. Det er veldig praktisk å kunne jobbe med andre designere og utviklere i samme fil samtidig, og se live hva vi holder på med.
+Det må vel være [Figma](https://www.figma.com). Jeg synes Figma er helt genialt – rett og slett fordi det løser så mange av mine behov i ett. Før måtte jeg bruke flere ulike verktøy for å gjøre det samme som Figma gjør for meg i dag. Det er veldig praktisk å kunne jobbe med andre designere og utviklere i samme fil samtidig, og se live hva vi holder på med.
 
 I tillegg er jeg veldig glad i WhatFont, som er en enkel og praktisk extension til Chrome. Den viser hvilken font og størrelse en tekst er skrevet i, uten at jeg må inspisere koden.
 
