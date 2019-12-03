@@ -9,6 +9,8 @@ ingress: >-
   the following two blog posts, we will look at how I, without much programming
   skills, was able to build such a dashboard in the cloud using Google’s
   BigQuery and DataStudio tools.
+authors:
+  - Morten Winther Wold
 ---
 Bekk’s Oslo office is located at the tip of Vippetangen. Thus our employees are mostly dependent on public transportation to get to clients, social events or back home from work. We wanted to build a simple dashboard in our reception hall that would provide employees and visitors with realtime information about nearby buses, city bikes and electric scooters on their way out of the office.
 
