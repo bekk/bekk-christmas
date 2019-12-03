@@ -17,7 +17,7 @@ links:
 authors:
   - Julie Hill Roa
 ---
-React.Suspense is a component that let you suspend, or delay, the component rendering if the components, or soon data, are imported from outside your code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
+React.Suspense is a component that let you suspend, or delay, the component rendering if the components, or soon data, are imported from outside your loaded code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
 
 ## Code splitting
 
