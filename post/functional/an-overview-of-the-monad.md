@@ -3,7 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 5
 title: An overview of the monad
-image: 'https://www.pexels.com/photo/gray-cat-inside-white-and-purple-box-2870497/'
+image: >-
+  https://images.pexels.com/photos/2870497/pexels-photo-2870497.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
 ingress: >-
   In this article I will give a brief overview of what a _monad_ is. Later
   articles in this series will use monadic features in different programming
@@ -13,6 +14,11 @@ ingress: >-
 links:
   - title: What we talk about when we talk about monads
     url: 'https://arxiv.org/pdf/1803.10195.pdf'
+  - title: Learn about monads in Haskell
+    url: 'http://learnyouahaskell.com/a-fistful-of-monads'
+  - title: Bartosz Milewski's programming cafe
+    url: >-
+      https://bartoszmilewski.com/2011/01/09/monads-for-the-curious-programmer-part-1/
 authors:
   - Ragnhild Aalvik
 ---
