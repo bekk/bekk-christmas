@@ -32,7 +32,7 @@ Jeg er mest fornøyd med hvor langt vi har kommet i løpet av det siste året to
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
 Det må vel være [Figma](https://www.figma.com). Jeg synes Figma er helt genialt – rett og slett fordi det løser så mange av mine behov i ett. Før måtte jeg bruke flere ulike verktøy for å gjøre det samme som Figma gjør for meg i dag. Det er veldig praktisk å kunne jobbe med andre designere og utviklere i samme fil samtidig, og se live hva vi holder på med.
 
-I tillegg er jeg veldig glad i WhatFont, som er en enkel og praktisk extension til Chrome. Den viser hvilken font og størrelse en tekst er skrevet i, uten at jeg må inspisere koden.
+I tillegg er jeg veldig glad i WhatFont, som er en enkel og praktisk utvidelse til Chrome. Den viser hvilken font og størrelse en tekst er skrevet i, uten at jeg må inspisere koden.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 Jeg har ikke noe revolusjonerende tips å komme med, dessverre. Men når jeg har mye å gjøre så liker jeg å sette opp en liste over alt som skal gjøres, og prioritere den med det viktigste først. Jeg lager oppgavene så små og konkrete som mulig, slik at jeg får mange små seire når jeg kan markere de som utført!
@@ -41,7 +41,7 @@ Jeg har ikke noe revolusjonerende tips å komme med, dessverre. Men når jeg har
 Her vil jeg trekke frem Eyr, som gjør det mulig å få snakke med en lege fra der du er. Det var veldig praktisk da jeg skulle reise til Afrika. Jeg trengte bare å fylle ut et enkelt skjema om hvor jeg skulle, så fikk jeg svar fra en lege i løpet av dagen om hva jeg trengte av vaksiner og medisiner. Så kunne jeg bare møte opp på et apotek når det passet meg og få satt vaksinene der.
 
 **Bonusspørsmål: Kva er favorittjulelåta og favorittjulefilmen din?**\
-Det blir ikke ordentelig juleaften uten Tre nøtter til Askepott! Favorittjulelåt er vanskeligere å velge...men Det lyser i stille grender har jeg vært glad i helt siden jeg var liten.
+Det blir ikke ordentlig juleaften uten Tre nøtter til Askepott! Favorittjulelåt er vanskeligere å velge... men Det lyser i stille grender har jeg vært glad i helt siden jeg var liten.
 
 ## Robert Austnes, visuell designar
 
@@ -50,7 +50,7 @@ Det blir ikke ordentelig juleaften uten Tre nøtter til Askepott! Favorittjulel�
 </div>
 
 **Kva jobbar du med akkurat no?**\
-Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgaver i Bekk, mens på prosjekt hos Vy er jeg innom å lage designsystem, nytt ikonbibliotek og utvikling av den nye taxi-tjenesten som dukker opp om ikke så altfor lenge.
+Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgaver i Bekk, mens på prosjekt hos Vy er jeg innom å lage designsystem, nytt ikonbibliotek og utvikling av den nye taxitjenesten som dukker opp om ikke så altfor lenge.
 
 **Kva er du mest nøgd med å ha fått til i år?**\
 Jeg er fornøyd med å ha bidratt til å bygge Vy sin nye merkevare. Det er bare i startfasen enda på uttak digitalt, men med et stadig bedre designsystem, omskriving av kode og flinke designere som dytter på, skjer det mye bra fremover.
@@ -59,7 +59,7 @@ Jeg er fornøyd med å ha bidratt til å bygge Vy sin nye merkevare. Det er bare
 Sketch. Jeg bruker stort sett bare det i hverdagen. Men du skal ikke undervurdere litt penn og papir heller, det kommer fort mye bra ut av litt rabling i blokka.
 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
-November og desember er veldig hektiske måneder, både på prosjekt og i Bekk. Så jeg prøver å være flink til å prioritere og planlegge uken på søndager. Det kommer jo alltid litt inn fra sidelinjen, men da har jeg i alle fall oversikt over det med prekære, så det ikke går i glemmeboken. Så prøver jeg å ta meg tid til å koble av mellom slagene med en sykkeltur eller en løpetur i marka.
+November og desember er veldig hektiske måneder, både på prosjekt og i Bekk. Så jeg prøver å være flink til å prioritere og planlegge uken på søndager. Det kommer jo alltid litt inn fra sidelinjen, men da har jeg i alle fall oversikt over det mest prekære, så det ikke går i glemmeboken. Så prøver jeg å ta meg tid til å koble av mellom slagene med en sykkeltur eller en løpetur i marka.
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
 Jeg liker veldig godt den nye NRK-appen Heydays gjorde. Både design og brukeropplevelse er veldig bra.
@@ -77,9 +77,9 @@ Julelåt må være The Pogues, Fairytale of New York. Favorittfilm må vel være
 Akkurat nå jobber jeg med å få søket på Finanstilsynets nettsider til å bli nytt og bra. Det betyr et dypdykk ned i en rar verden av hvordan det maskineriet fungerer. I tillegg jobber jeg en del meg Sentralfag, et internt system som Finanstilsynet bruker for å holde oversikt over alt de følger opp.
 
 **Kva er du mest nøgd med å ha fått til i år?**\
-Det jeg er mest fornøyd med å ha fått til i år må faktisk være søket som vi jobber med akkurat nå. Ikke fordi det kommer til å bli superinnovativt eller råere enn Google, men fordi vi har fått til en god prosess sammen med kunden. Design og utvikling har gått hånd i hånd, vi leverer smidig, designet blir litt til underveis og vi lærer underveis. Det har ikke vært noe selvfølge at prosessen skulle være slik, men jeg er veldig glad for at vi har fått til det når man ser hvor vanskelig det kan være å jobbe med søkeresultater som materiale. 
+Det jeg er mest fornøyd med å ha fått til i år må faktisk være søket som vi jobber med akkurat nå. Ikke fordi det kommer til å bli superinnovativt eller råere enn Google, men fordi vi har fått til en god prosess sammen med kunden. Design og utvikling har gått hånd i hånd, vi leverer smidig, designet blir litt til underveis og vi lærer underveis. Det har ikke vært noen selvfølge at prosessen skulle være slik, men jeg er veldig glad for at vi har fått til det når man ser hvor vanskelig det kan være å jobbe med søkeresultater som materiale. 
 
-Hvorfor er dette så fett for meg som designer? Det å sitte som en designer og prøve å forutsi hvordan et søk vil fungere og hvilke treff man får er så og si umulig, men det er også det som blir grunnlaget for en god brukeropplevelse. Så det å få lov til å jobbe med design av søk samtidig som man har et søk som faktisk fungerer, få lov til å endre mening underveis når man får ekte feedback og ikke bare synsing er gøy!
+Hvorfor er dette så fett for meg som designer? Det å sitte som en designer og prøve å forutsi hvordan et søk vil fungere og hvilke treff man får er så å si umulig, men det er også det som blir grunnlaget for en god brukeropplevelse. Så det å få lov til å jobbe med design av søk samtidig som man har et søk som faktisk fungerer, få lov til å endre mening underveis når man får ekte feedback og ikke bare synsing er gøy!
 
 **Kva er favorittverktøyet ditt i designverda og kvifor?**\
 Store whiteboards har alltid vært favoritten. Det er noe tilfredsstillende med å ha en helg vegg å tegne på! Og så er det så enkelt å viske ut ting som man ikke blir fornøyd med!
@@ -90,7 +90,7 @@ Tv-peis!
 Har du to dataskjermer tilgjengelig så jobb på den ene mens du fyrer opp YouTube og søker opp «Fireplace no ads» på den andre. Sett på noen gode tunes, gjerne julemusikk! Det kan få enhver lang og hektisk dag til å bli litt bedre! Min favoritt: https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
-Hvis det er en ting som i hvert fall har fått meg til å endre litt adferd så må det være å ha fått smartklokke med e-sim. Jeg er ikke noe stor fan av å ha med meg mobilen over alt, samtidig så får jeg FOMO-følelsen når jeg ikke har den. Så det å nå kunne la mobilen ligge igjen hjemme når jeg skal ta meg en tur, uten å måtte føle at jeg har glemt noe har vært en digg greie.
+Hvis det er en ting som i hvert fall har fått meg til å endre litt adferd så må det være å ha fått smartklokke med eSIM. Jeg er ikke noe stor fan av å ha med meg mobilen over alt, samtidig så får jeg FOMO-følelsen når jeg ikke har den. Så det å nå kunne la mobilen ligge igjen hjemme når jeg skal ta meg en tur, uten å måtte føle at jeg har glemt noe har vært en digg greie.
 
 **Bonusspørsmål: Kva er favorittjulelåta og favorittjulefilmen din?**\
 Favorittjulelåten må bli Both Sides Now av Joni Mitchell selv om den kan være litt trist. Favorittjulefilmen blir Hjemme Alene.
@@ -117,7 +117,7 @@ Pass på å få gjort alt ferdig slik at du ikke sitter på juleaften og jobber.
 Det er mange, men de to siste er https://deplacemaison.webflow.io og https://pygar.co/en/investments
 
 **Bonusspørsmål: Kva er favorittjulelåta og favorittjulefilmen din?**\
-Favorittjuelåta er Driving home for christmas av Chris Rea, og favorittjulefilmen er Hjemme Alene 1
+Favorittjuelåta er Driving Home for Christmas av Chris Rea, og favorittjulefilmen er Hjemme Alene 1
 
 ## Thea Snilsberg Søfting, interaksjonsdesignar
 
