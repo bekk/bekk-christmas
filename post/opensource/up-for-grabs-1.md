@@ -24,7 +24,7 @@ authors:
 A patch file represents a change to a file and looks like a git diff. Patch files can be kept in source control, and the application of them can be automated in a postinstall script such as `npm postinstall`. The advantages of this is that you can persist some small changes to your dependencies without all the work of forking the repo, or waiting for the maintainers to release a new version. But use this strategy sparingly, though! If the dependency gets an update, the patch might not work anymore and you might have to update it. Consider it a temporary workaround.
 
 ## Creating a patch file
-So, you’ve encountered a bug in your app. After some investigation you’ve found that the bug is located in code of the npm package `buggybug`, which your app is strongly dependent on. By editing the relevant file in the `node_modules/buggybug` directory, you fix the evil line of code. Great! But since `node_modules` is included in your `.gitignore` file, how do you let your teammates enjoy your fix as well? You decide to create a patch file.
+So, you’ve encountered a bug in your app. After some investigation you’ve found that the bug is located in the code of the npm package `buggybug`, which your app is strongly dependent on. By editing the relevant file in the `node_modules/buggybug` directory, you fix the evil line of code. Great! But since `node_modules` is included in your `.gitignore` file, how do you let your teammates enjoy your fix as well? You decide to create a patch file.
 
 Create a patches directory in the root of your repo:
 
