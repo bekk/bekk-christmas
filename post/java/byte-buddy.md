@@ -3,9 +3,7 @@ calendar: java
 post_year: 2019
 post_day: 22
 title: 'Code as data, Java edition'
-ingress: |-
-  This post written by Rafael Winterhalter from [Scienta](https://scienta.no).
-  Thank you Rafael!
+ingress: ''
 description: A blog post about Byte Buddy written by Rafael Winterhalter from Scienta
 links:
   - title: Byte Buddy (GitHub)
@@ -138,3 +136,6 @@ public class SecurityAgent {
 As a result, all classes within any application in which the Java agent was included will apply the security check, just as if the previous build plugin would have been applied.
 
 In the end, the right approach to code manipulation depends on the actual requirements but Byte Buddy tries to make it easy to share as much code between the different ways of manipulating Java classes. Also, there is much more to Byte Buddy and to Java agents what is too much to cover in a single blog posting but which are covered in various other blog postings and conference presentations, some of which are linked in the references below.
+
+_This post was written by Rafael Winterhalter from [Scienta](https://scienta.no).
+Thank you Rafael!_
