@@ -19,7 +19,8 @@ authors:
 ---
 ## Guro Johansson, interaksjonsdesignar
 
-**![Guro Johansson](https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg)**
+<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
+
 
 **Kva jobbar du med akkurat no?**\
 Jeg jobber hos Vipps, og der jobber jeg i et team som jobber med å forenkle hverdagen til både bedriftskundene og de ansatte i Vipps. En av tingene jeg holder på med akkurat nå er å slå sammen flere interne verktøy til ett, slik at de ansatte i Vipps skal slippe å forholde seg til så mange ulike systemet når de hjelper kundene.
