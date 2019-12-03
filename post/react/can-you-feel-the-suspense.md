@@ -23,7 +23,7 @@ React.Suspense is a component that let you suspend, or delay, the component rend
 
 Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or _chunk_. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. 
 
-You can also split up your code at a component-level. You can try to identify smaller parts of the application which is rarely used or shown to the user. 
+You can also split up your code at a component-level. You try to identify smaller parts of the application which is rarely used or shown to the user. 
 
 <img class="wide-image" src="/assets/codesplitting.png" alt="code splitting illustration, inspiration by https://www.cronj.com"/>
 
@@ -52,7 +52,7 @@ const GiftTable = React.lazy(() => import('./GiftTable'))
 </Suspense>
 ```
 
-The example shows a chunk named `WishList` and a chunk named `GiftTable`.  Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component.
+The example shows a chunk named `WishList` and a chunk named `GiftTable`.  Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component. If you want to know more about React.lazy, hang on a few more days for an article just about lazy loading in React!
 
 Because `WishList` and `GiftTable` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `WishList` and, of course `GiftTable`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully.
 
