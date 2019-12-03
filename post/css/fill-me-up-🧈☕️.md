@@ -2,7 +2,7 @@
 calendar: css
 post_year: 2019
 post_day: 20
-title: "Fill me up (\U0001F9C8☕️)"
+title: Fill me up (butter cup)
 ingress: ''
 ---
 Recipe:
