@@ -3,12 +3,13 @@ calendar: kotlin
 post_year: 2019
 post_day: 6
 title: On the first day of KotlinConf
-image: ''
+image: >-
+  https://upload.wikimedia.org/wikipedia/commons/6/6d/Bella_Sky_Comwell_hotell_Orestad_20130421_0247F_%288668782211%29.jpg
 ingress: >-
   Yesterday (the non-workshop part of) the third edition of KotlinConf kicked
   off. This year the conference is held in Copenhagen, the capitol of Denmark. 
 links:
-  - title: Program for December 5th
+  - title: Day 1 talks
     url: 'https://kotlinconf.com/talks/5-dec'
 authors: []
 ---
