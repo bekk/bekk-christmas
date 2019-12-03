@@ -82,4 +82,4 @@ If you want to learn more about error bounderies and how to write them, Kristofe
 
 ## Suspense in the future
 
-This was a "quick" intro to React.Suspense and how it is used with code splitting. However, tomorrow we will see what Suspense will become in the future. A hint  – it will not only be used for code splitting, but so much more!
+This was a "quick" intro to React.Suspense and how it is used with code splitting. However, tomorrow we will see what Suspense will become in the future. A hint – it will not only be used for code splitting, but so much more! We will also take a deep dive into what problems suspense tries to solve and how we structure our code to make a great user experience – so stay tuned!
