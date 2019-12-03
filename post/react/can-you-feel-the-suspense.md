@@ -6,9 +6,11 @@ title: 'Oh, the Suspense!'
 image: >-
   https://images.unsplash.com/photo-1492681950396-e1052bfa206e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80
 ingress: >-
-  The American dictionary states that _suspense_ means a feeling of excitement
-  while waiting for something uncertain to happen. So, let’s get excited and
-  learn about React.Suspense and how this helps us wait for something uncertain!
+  [The American
+  dictionary](https://dictionary.cambridge.org/dictionary/english/suspense)
+  states that _suspense_ means a feeling of excitement while waiting for
+  something uncertain to happen. So, let’s get excited and learn about
+  React.Suspense and how this helps us wait for something uncertain!
 links:
   - title: Suspense for code splitting
     url: 'https://reactjs.org/docs/code-splitting.html'
@@ -28,7 +30,7 @@ You can also split up your code at a component-level. You can try to identify sm
 
 ## Optimize all the codes
 
-As your application gets bigger, with code and features, your loading time will increase as well. Especially if you include multiple third-party libraries. The user today, is expecting fast applications with minimum loading time. According to studies on behaviours on the web, 53% of mobile users abandons sites that loads longer than 3 seconds. This is where code splitting comes to into play. 
+As your application gets bigger, with code and features, your loading time will increase as well. Especially if you include multiple third-party libraries. The user today, is expecting fast applications with minimum loading time. Some even say that 53% of mobile users abandons sites that loads longer than 3 seconds. This is where code splitting comes to into play. 
 
 When you have divided your application code into chunks, you can reduce the initial loading time of your application dramatically by only loading the chunk necessary for the initial render. When the user navigates in your application the rest of the chunks can be loaded as needed. 
 
