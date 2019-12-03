@@ -64,7 +64,7 @@ authors:
 >
 > Mennesker har en utløpsdato, men historier lever evig. Historiefortelling er derfor sannsynligvis den mest effektive, og mest utprøvde, måten å videreformidle mening fra et menneske til et annet, skriver Mitch Ditkoff i Huffpost. Historiefortelling stammer fra tiden mennesker satt rundt leirbålet og utvekslet de første, spede forsøkene på en brukbar samtale, for rundt 
 >
-> 100 000 år siden, i følge evolusjonspsykologen Steven Pinker. Språk ble et verktøy du måtte mestre for å overleve, på lik linje med å lage ild og bygge våpen. Og da, som nå, var historiene en ettertraktet sosial valuta. Hvem liker ikke folk som forteller gode historier?
+> 100 000 år siden, i følge evolusjonspsykologen Steven Pinker. Språk ble et verktøy du måtte mestre for å overleve, på lik linje med å lage ild og bygge våpen. Og da, som nå, var historiene en ettertraktet sosial valuta. For hvem liker vel ikke dem som fanger oppmerksomheten vår med retorikkens usynlige håv?
 
 ![I lang tid ble historier videreført nesten utelukkende på folkemunne. I vår tid har måten vi formidler og mottar budskap endret seg radikalt på bare noen tiår. Kun 150 år skiller telegrafi og internett.](/assets/speaking-.png)
 
