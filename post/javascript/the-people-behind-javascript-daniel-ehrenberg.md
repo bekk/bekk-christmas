@@ -64,7 +64,7 @@ integers of any size, without arbitrary restrictions like BigInt has.
 
 :video_camera: Watch Dan's JSConf talk from 2018 about [BigInts In JavaScript](https://www.youtube.com/watch?v=WBEdUGsGiXo).
 
-### What's an upcoming propsal you are excited about, and why?
+### What's an upcoming proposal you are excited about, and why?
 
 I'm excited about the BigDecimal proposal. This would be a new numeric
 type that can represent numbers like people write them: with base-10
