@@ -3,7 +3,9 @@ calendar: java
 post_year: 2019
 post_day: 22
 title: 'Code as data, Java edition'
-ingress: ''
+ingress: |-
+  This post written by Rafael Winterhalter from [Scienta](https://scienta.no).
+  Thank you Rafael!
 description: A blog post about Byte Buddy written by Rafael Winterhalter from Scienta
 links:
   - title: Byte Buddy (GitHub)
@@ -22,9 +24,9 @@ links:
 authors:
   - Rafael Winterhalter
 ---
-Any student of computer science has encountered the concept of *code as data*. Most famously, in the the Lisp language, all code can easily be manipulated by code written in Lisp, dissolving the barrier between the program and its input.
+Any student of computer science has encountered the concept of _code as data_. Most famously, in the the Lisp language, all code can easily be manipulated by code written in Lisp, dissolving the barrier between the program and its input.
 
-And while it is less obvious, this concept of code as data can also be applied to any Java application. Admittedly, in a less obvious manner: when compiling Java sources, the Java compiler generates *.class* files which represent the source in a binary format. And by thinking of binaries as arrays of bytes, it is of course possible to serve those arrays as input to the very same Java application those arrays represent. Fortunately, the Java class file format is specified in the minutest [detail](https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-4.html) what makes processing classes a very feasible task.
+And while it is less obvious, this concept of code as data can also be applied to any Java application. Admittedly, in a less obvious manner: when compiling Java sources, the Java compiler generates _.class_ files which represent the source in a binary format. And by thinking of binaries as arrays of bytes, it is of course possible to serve those arrays as input to the very same Java application those arrays represent. Fortunately, the Java class file format is specified in the minutest [detail](https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-4.html) what makes processing classes a very feasible task.
 
 **Why is this useful?**
 
@@ -37,13 +39,16 @@ Byte Buddy is a library for manipulating and generating Java class files within 
 To understand what Byte Buddy can be used for, consider the previous example of an annotation-driven security library. Using Byte Buddy, it is simple to implement a security check at runtime by for example creating a subclass of an existing class. By overriding methods of the base class, Byte Buddy can add additional behavior in this subclass and only invoke the original method based on conditions provided by the library’s user.
 
 As an example, consider a service:
+
 ```
 public class SampleService {
   @Secured(role = "admin")
   public void doSomethingSensitive() { … }
 } 
 ```
+
 Using Byte Buddy, it is now possible to apply code manipulation to invoke the following security interceptor prior to invoking the the annotated method. Doing so, one can check if the logged-in user really has the necessary privilege:
+
 ```
 public class SecurityInterceptor {
   public static void onMethodEnter(@Origin Method method) {
@@ -53,6 +58,7 @@ public class SecurityInterceptor {
   }
 }
 ```
+
 Using this interceptor that checks any method’s annotated role against some static user management utility, a secured subclass is created as follows:
 
 ```
@@ -102,13 +108,14 @@ public class SecurityPlugin implements net.bytebuddy.build.Plugin {
   public void close() { }
 }
 ```
-The above plugin first chooses classes to manipulate where classes are selected if they declare at least one method that is annotated with *Secured*. For those classes, it applies the same interception as before, even using the same API. After applying this build plugin, all classes with the annotation implement  the security check that is now reliably executed upon any invocation and not only if guarded by a subclass proxy.
+
+The above plugin first chooses classes to manipulate where classes are selected if they declare at least one method that is annotated with _Secured_. For those classes, it applies the same interception as before, even using the same API. After applying this build plugin, all classes with the annotation implement  the security check that is now reliably executed upon any invocation and not only if guarded by a subclass proxy.
 
 As an example, the Hibernate framework allows for build-time manipulation where the framework even generates more efficient proxies than it would by using subclasses. For convenience, the framework does however give developers a choice and applies runtime subclass generation only if it detects that its build plugin was not used.
 
 **Changing code during runtime**
 
-Finally, the JVM also allows runtime manipulation of classes by installing a so-called Java agent into a running virtual machine process. Java agents are shipped within separate jar files where their manifest points to an entry point, similar to Java’s main method, only that it is executed prior to the actual program as a *premain* method.
+Finally, the JVM also allows runtime manipulation of classes by installing a so-called Java agent into a running virtual machine process. Java agents are shipped within separate jar files where their manifest points to an entry point, similar to Java’s main method, only that it is executed prior to the actual program as a _premain_ method.
 
 Besides running before the actual program, Java agents are supplied with an API as an argument that allows to hook into the JVM’s class loading process, giving Java agents the ability to transform class files before they are loaded. And also for this use case, Byte Buddy includes an API to make use of agent-based code manipulation as simple as possible:
 
@@ -127,12 +134,7 @@ public class SecurityAgent {
   }
 }
 ```
+
 As a result, all classes within any application in which the Java agent was included will apply the security check, just as if the previous build plugin would have been applied.
 
 In the end, the right approach to code manipulation depends on the actual requirements but Byte Buddy tries to make it easy to share as much code between the different ways of manipulating Java classes. Also, there is much more to Byte Buddy and to Java agents what is too much to cover in a single blog posting but which are covered in various other blog postings and conference presentations, some of which are linked in the references below.
-
-***
-
-This was a guest post written by Rafael Winterhalter from [Scienta](https://scienta.no).
-Thank you Rafael!
-
