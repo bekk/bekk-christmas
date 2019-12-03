@@ -8,37 +8,12 @@ image: >-
 ingress: >-
   14 dagar att til jul! Treng du nokre tips til hektiske innspurtsdagar, leiter
   etter inspirasjon til gode brukaropplevingar, eller lurer du kanskje på kva
-  julesang du skal sette på til arbeidet og kva julefilm du bør få med deg før
+  julesong du skal sette på til arbeidet og kva julefilm du bør få med deg før
   jula ringes inn? Eg har tatt juletemperaturen på fem av designarane våre i eit
   forsøk på å finne svar.
 links:
   - title: Pushwagnesizer
     url: 'https://pushwagnesizer.com/'
-  - title: Figma
-    url: 'https://www.figma.com/'
-  - title: Sketch
-    url: 'https://www.sketch.com/'
-  - title: Adobe Illustrator
-    url: 'https://www.adobe.com/no/products/illustrator.html'
-  - title: Peis på YouTube
-    url: 'https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s'
-  - title: WhatFont
-    url: >-
-      https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm
-  - title: Eyr
-    url: 'https://eyr.md/no'
-  - title: NRK-appen (iOS)
-    url: 'https://apps.apple.com/no/app/nrk-tv/id385114898'
-  - title: Things-appen (iOS)
-    url: 'https://apps.apple.com/us/app/things-3/id904237743'
-  - title: Klarna
-    url: 'https://www.klarna.com/no/'
-  - title: Yr-appen (iOS)
-    url: 'https://apps.apple.com/no/app/yr/id490989206?l=nb'
-  - title: Déplacé Maison
-    url: 'https://deplacemaison.webflow.io/'
-  - title: Pygar
-    url: 'https://pygar.com/en/investments'
 authors:
   - Åshild Aaen Torpe
 ---
