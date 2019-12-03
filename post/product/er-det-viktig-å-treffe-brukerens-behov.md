@@ -8,6 +8,11 @@ ingress: >-
   å ta og hvordan balansere det? Hvem har ansvaret for å balansere det? Blir det
   kynisk å ikke sette brukeren først? I denne kaffepraten har vi Jens Andreas
   Huseby, Linda Halvorsen og Moquan Chen.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Linda Halvorsen
   - Jens Andreas Huseby
