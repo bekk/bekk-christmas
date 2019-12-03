@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 10
+post_day: 9
 title: 'WIP: Post-apocalyptic Open source'
 ingress: >-
   The seed bank just got a new neighbor - Open source is moving in and plans on
