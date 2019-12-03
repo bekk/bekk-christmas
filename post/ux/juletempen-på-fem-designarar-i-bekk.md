@@ -19,7 +19,7 @@ authors:
 ---
 ## Guro Johansson, interaksjonsdesignar
 
-<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
+<img style="width: 320px; margin: auto;" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
 
 
 **Kva jobbar du med akkurat no?**\
