@@ -50,8 +50,6 @@ authors:
 
 > _God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden._
 >
->
->
 > ## Historier speiler samtiden 
 >
 > Fakta: Vi forstår det ukjente gjennom det kjente. Forenklede forklaringer på universets daglige mysterier har vært - og er fremdeles– tvingende nødvendig. For hvis man ikke skjønte hva som faktisk foregikk, var det mye enklere å koble det til den mest åpenbare sammenhengen innen rekkevidde. Lyn og torden, Tor med hammer'n. Menneskets opprinnelse, Adam og Eva. Big bang, Gud. Vant i lotto og hadde på meg den gamle lusekoften etter bestefar? Min nye lykkegenser 🦄 
@@ -60,9 +58,7 @@ authors:
 
 ![Skaperne av TV-serien Game of Thrones fikk erfare fansens vrede når historien tok en vending som brøt med karakterenes utvikling gjennom 8 sesonger. Merkevarer opplever det samme med jevne mellomrom når oppdateringer slippes, design endres eller tjenester fjernes. (Valgte et spoilerfritt bilde for sikkerhets skyld)](/assets/dragons.jpeg "Historiefortelling i verdensklasse. Eller?")
 
-> _Skaperne av TV-serien Game of Thrones fikk erfare fansens vrede når historien tok en vending som brøt med karakterenes utvikling gjennom 8 sesonger. Merkevarer opplever det samme med jevne mellomrom når oppdateringer slippes, design endres eller tjenester fjernes. (Valgte et spoilerfritt bilde for sikkerhets skyld)_
->
->
+> _Skaperne av TV-serien Game of Thrones fikk erfare fansens vrede når historien tok en vending som brøt med karakterenes utvikling gjennom 7 sesonger. Merkevarer opplever det samme med jevne mellomrom når oppdateringer slippes, design endres eller tjenester fjernes. (Valgte et spoilerfritt bilde for sikkerhets skyld)_
 >
 > ## Snakking ga oss et forsprang
 >
