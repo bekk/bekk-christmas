@@ -9,12 +9,19 @@ ingress: >-
   I recently became a frontend developer. Again. The last time I was, was back
   in 2014. And it's pretty much like riding a bike: if you haven't done it in 5
   years, you're going to feel pretty damn wobbly. Especially if the bikes
-  started using create-react-webapp and Sagas in the meantime.
+  started using create-react-app and Sagas in the meantime.
 
 
   So, with all the wisdom of a child who just fell of his bike, I'm going to try
   to share a few insights on the state of ~biking~ frontend in 2019!
 description: 'JavaScript, Rants'
+links:
+  - title: The proposals that made it
+    url: 'https://javascript.christmas/2018/5'
+  - title: Five simple steps to understanding *this* in JavaScript
+    url: 'https://javascript.christmas/2018/17'
+  - title: Console candy
+    url: 'https://javascript.christmas/2018/15'
 authors:
   - Jøran Vagnby Lillesand
 ---
@@ -58,7 +65,7 @@ These days, most things seem to work as expected, and there aren't that many bad
 
 One of the great things about JavaScript when coming from the deep, dark caves of backend was the (almost) zero build time. That's definitely gone. I'm guessing the stable language I touted in the previous section didn't come for free. It looks like the average frontend build today would make my 2010 maven builds blush with embarrassment, in terms of build time, dependency madness and complexity. 
 
-I guess that just comes with maturity. Before a language has any use in enterprise applications (which I'm starting to figure out means 'real world' applications), the last thing anyone wants to deal with is dependency management, backwards compatibility and other boring enterprise stuff. But the quickly passes once your 20 million dollar business starts to fall apart because someone upgraded Babel.
+I guess that just comes with maturity. Before a language has any use in enterprise applications (which I'm starting to figure out means 'real world' applications), the last thing anyone wants to deal with is dependency management, backwards compatibility and other boring enterprise stuff. But that quickly passes once your 20 million dollar business starts to fall apart because someone upgraded Babel.
 
 JavaScript is definitely way past that point by now, and it's interesting to see how mature the toolchain has become. And hey, I get to take breaks to get coffee while My Code Is Building.
 
