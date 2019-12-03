@@ -12,7 +12,7 @@ ingress: >-
 authors:
   - Svein Petter Gjøby
 ---
-Never underestimate the importance of code quality. As a developer it is key to clearly communicate the implementation of any solution you are working on through readable code. Knowing more than one way to solve a given problem can help you write more readable code. Let's look at three different ways to remove duplicates elements from an array.
+Never underestimate the importance of code quality. As a developer it is key to clearly communicate the implementation of any solution you are working on through readable code. Knowing more than one way to solve a given problem can help you write more readable code. Let's look at three different ways to remove duplicate **primitive values** from an array.
 
 ```js
 const array = [1, 1, 1, 3, 3, 2, 2];
@@ -56,7 +56,6 @@ const uniqueArray = [...uniqueSet]; // [1, 3, 2]
 
 The [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) method executes a reducer function (provided by you) on each element of the array, resulting in a single output value. The value returned from a reducer function is assigned to the accumulator, which is passed as the first argument of the subsequent execution of the reducer function and ultimately becomes the final resulting value.
 
-
 To remove duplicate elements from an array, we can provide a function that checks if the accumulated array [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) the current element. If not we add the current element to the array. 
 
 ```js
@@ -73,12 +72,12 @@ const unique = array.reduce(reducerFunction);
 
 The key to understand this method is to understand how [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) and [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) works.
 
-- `indexOf`returns the first index of a given element in an array. 
-- `filter` creates a new array with all the elements that passes a test. You can provide the test as the first argument of `filter`.
+* `indexOf`returns the first index of a given element in an array. 
+* `filter` creates a new array with all the elements that passes a test. You can provide the test as the first argument of `filter`.
 
 If we combine these two methods, by providing a test that checks if each element is the first occurrence of the given element in the array, we can remove duplicate elements from arrays. 
 
-```js 
+```js
 const isFirst = (element, index) => {
   // Checks if a given element is the first occurrence of it.
   return array.indexOf(element) === index;
@@ -92,6 +91,3 @@ const unique = array.filter(isFirst);
 We saw three different methods to remove duplicate elements from an array. It's easy to imagine a fourth method that would improve the readability. Namely, by [creating a proposal](https://javascript.christmas/2018/1) to add `Array.prototype.unique` to EcmaScript.
 
 In terms of readability, I prefer the first method. By using a `Set` your code is both short and easy to understand. 
-
-
-
