@@ -54,7 +54,9 @@ const GiftTable = React.lazy(() => import('./GiftTable'))
 
 The example shows a chunk named `WishList` and a chunk named `GiftTable`.  Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component. If you want to know more about React.lazy, hang on a few more days for an article just about lazy loading in React!
 
-Because `WishList` and `GiftTable` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `WishList` and, of course `GiftTable`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully.
+Because `WishList` and `GiftTable` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `WishList` and, of course `GiftTable`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully. 
+
+For simplicity, in this example the suspense component is an immediate parent of WishList and GiftTable. However, suspense can be placed anywhere above them in the tree, depending on how you want your loading state to be. 
 
 ## But, what if it fails?!
 
@@ -74,7 +76,7 @@ const GiftTable = React.lazy(() => import('./GiftTable'))
 </ErrorBoundary>
 ```
 
-Note that the ErrorBoundary component does not have to be a direct parent. You can place it higher up in the tree if, for instance, the error UI should hide more than the actual component that crashed.
+Note that as suspense, the ErrorBoundary component does not have to be a direct parent. You can place it higher up in the tree if, for instance, the error UI should hide more than the actual component that crashed.
 
 If you want to learn more about error bounderies and how to write them, Kristofer Selbekk made a smashing article about it in last years calendar. [Take a look!](https://react.christmas/2018/14)
 
