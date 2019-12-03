@@ -45,7 +45,7 @@ fun main() {
 }
 ```
 
-In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But does it scale well with more complex problem, you might ask. Well, no. This barebone implementation suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
+In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But, does it scale well with more complex problems, you might ask. Well, no. This barebone implementation suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
 
 - Fetch the timestamp of the previous successful transfer, from the database.
 - Fetch all users that have changed since this timestamp, from the database.
