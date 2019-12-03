@@ -8,6 +8,11 @@ ingress: >-
   langt unna? Langt unna både verdikjede distanse og langt unna i tid? Finnes
   det noe enkel løsning? Linda Halvorsen, Jens Andreas Huseby og Moquan Chen
   diskuterer og spekulerer i denne kaffepraten.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Moquan Chen
   - Linda Halvorsen
