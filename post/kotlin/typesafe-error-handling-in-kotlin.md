@@ -45,7 +45,7 @@ fun main() {
 }
 ```
 
-In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). While this barebone implementation works great at enforcing typesafe error handling, it suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
+In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But does it scale well with more complex problem, you might ask. Well, no. This barebone implementation suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
 
 - Fetch the timestamp of the previous successful transfer, from the database.
 - Fetch all users that have changed since this timestamp, from the database.
@@ -85,7 +85,7 @@ fun transferChangedUsers(now: LocalDateTime): Result<Unit, String> {
     return Err("Failed to transfer users")
 }
 ```
-This implementation does not feel quite right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. It is easy to see that this does not scale well for more complex cases. Imagine that you needed to be more specific about what failed, and let the failure of each step propagate up to the caller of `transferChangedUsers`. To do that, we could to add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, it becomes a monad, which in turn gives us the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
+This implementation does not feel right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. It is easy to see that this does not scale well for more complex cases. Imagine that you needed to be more specific about what failed, and let the failure of each step propagate up to the caller of `transferChangedUsers`. To do that, we could to add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, it becomes a monad, which in turn gives us the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
 
 ```Kotlin
 fun <U, T, E> Result<T, E>.map(transform: (T) -> U): Result<U, E> =
