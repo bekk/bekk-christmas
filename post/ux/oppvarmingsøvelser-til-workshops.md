@@ -23,6 +23,8 @@ Det finnes en haug med ulike oppvarmingsøvelser der ute som kan brukes, avhengi
 * Du trenger: Ark til alle deltakerne, noe å tegne med
 * Antall deltagere: Bør gå opp i par, men ellers ingen begrensning på antall. 
 
+
+
 ## Historiestafett
 
 * Hva: En morsom og litt mer fysisk øvelse 
@@ -35,9 +37,13 @@ Det finnes en haug med ulike oppvarmingsøvelser der ute som kan brukes, avhengi
 
 Målet med denne øvelsen er å få opp energinivået og leke seg litt. Den kan løse litt opp i stemningen om ikke alle kjenner hverandre så godt, samt at den gjør at 
 
+**Hvordan**
+
 
 
 ![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
+
+
 
 ## **Sirkler**
 
