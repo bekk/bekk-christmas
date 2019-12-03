@@ -1,13 +1,13 @@
 ---
 calendar: thecloud
 post_year: 2019
-post_day: 13
-title: WIP Getting started with GitHub Actions
+post_day: 4
+title: Getting started with GitHub Actions
 image: >-
   https://images.unsplash.com/photo-1567792825717-84dcd666b715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  This November 13th, GitHub Actions moved to General Availability making
-  another mark of GitHubs push towards eating more of the CI/CD ecosystem.
+  This November, GitHub Actions moved to General Availability making another
+  mark of GitHubs push towards eating more of the CI/CD ecosystem.
 
 
 
@@ -33,6 +33,9 @@ You can follow along with the code in [this repo](https://github.com/heim/gh-act
 
 To get your app tested with GitHub Actions is actually quite simple. You need to place a YAML-file in the `.github/workflows` directory in your app, and then push your code and GitHub will run your workflow automatically on your event of choice. For our example, we will trigger the workflow on the `push` event.
 
+For our example app, there is only a few steps that need to be run.
+
+First we must tell GitHub Actions to check out our source code, then we must set up Java, and finally we can run our tests with Gradle. Luckily GitHub provides us with some helpful tools, and the runners contain a [healthy list](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners) of pre-installed software.
 
 ```
 name: Test
@@ -51,17 +54,12 @@ jobs:
       run: ./gradlew --no-daemon test
 ```
 
-
-For our example app, there is only a few steps that need to be run.
-
-First we must tell GitHub Actions to check out our source code, then we must set up Java, and finally we can run our tests with Gradle. Luckily GitHub provides us with some helpful tools, and the runners contain a [healthy list](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners) of pre-installed software.
-
 That's actually all that is to it! 
 
-When you now push code to your repo, you can track the status of your workflow under the "Actions" tab. You'll also get the results directly in a related Pull Request, and even your commits will contain the status of the workflow.
+When you now push code to your repo, you can track the status of your workflow under the "Actions" tab. You'll also get the results directly in a related Pull Request, and even your commits will contain the status of the workflow. Pretty awesome, right?
 
 ## What's in it for me?
 
 So you might ask yourself why you should care about GitHub Actions? I find that the most useful thing about it is to gather all of your building, testing and deployment within the same tool. GitHub Actions doesn't provide the polished user experience and speedy builds that for instance [CircleCI](https://circleci.com) can give you, but in return it is tightly integrated with the different [events](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows) that is triggered when you push, deploy, open issues, close pull requests, etc.
 
-All in all, I think that GitHub Actions is a promising addition to the GitHub portfolio, that will challenge the competitors within the CI/DC landscape in the years to come.
+All in all, I think that GitHub Actions is a promising addition to the GitHub product suite, that will challenge the competitors in the CI/CD landscape in the years to come.
