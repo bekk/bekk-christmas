@@ -12,12 +12,16 @@ ingress: >-
 authors:
   - Ragnhild Aalvik
 ---
+## You're using monads!
+
+I'm sure most of you are already using monads, even without knowing it. You see, monads are hidden behind various names in different programming languages. `Promises`, `Tasks`, `Maybes`, `Optionals`, and `Lists` are all examples of monads :exploding_head:
+
 ## Some context
 
 A monad is a concept that belongs to a branch of mathematics called _category theory_, where it was introduced in the 1960s. It wasn't until the 1990s that monads were found useful in programming. In category theory, a monad can be defined like this:
 
 > _Definition 1. A monad over a category C is a triple (T,η,µ) where T : C → C is a functor, η : idC → T and µ : T^2 → T are natural transformations such that:_
-
+>
 > µA ◦ TµA = µA ◦ µTA\
 > µA ◦ ηTA = idTA = µA ◦ TηA
 
@@ -30,7 +34,6 @@ To understand monads, either you have studied category theory or not, we need to
 ### A monad as a container
 
 A monad can be seen as a container around some value, along with operations on that value. Concretely, in programming we can think of a monad as a datatype with two operations: `>>=` (pronounced _bind_) and `return`.
-
 
 A little simplified, `>>=` takes a container with a value inside, applies a function to the value, and puts the new value back in the container. `return` takes a value and puts it in a container. One concrete example of a container monad is `Maybe`. `Maybe` is a datatype that either contains a value (`Just x`) or it is empty (`Nothing`). To do operations on a `Maybe` value, we must first check if the value is present or not. This makes it tedious to compose operations on a `Maybe`, as we need to unwrap the value for every step. This is where our monadic friend `>>=` comes in handy, as it lets us compose functions on monadic values, such as `Maybe`, effortlessly.
 
