@@ -17,9 +17,9 @@ authors:
 ---
 ZEIT Now is a cloud platform that allows you to [deploy static sites](https://zeit.co/docs/v2/introduction/#creating-a-project-and-deploying) from the commando line with the single command `now`. With [Now 2.0](https://zeit.co/blog/now-2), the platform also offers deployment and execution of serverless functions. These functions works by providing respones to HTTP requests and can be written in Go, Python or JavaScript.
 
-In this article, we will explore how Santa Claus can use serverless functions to  create a simple 🎁-list API for all his helpers to use.
+In this article, we will explore how Santa Claus can use serverless functions to  create a simple 🎁-list API for all his elves to use.
 
-### Setting up the project
+## Set up the christmas tree
 Before we start, we need to prepare some stuff.
 
 * Sign up at [https://zeit.co/signup]().
@@ -27,3 +27,4 @@ Before we start, we need to prepare some stuff.
 * Login with `now login`.
 * Initilize the folder structure with `mkdir gift-lists && cd gift-lists`.
 * Next, initlize the project with `npm init` to create a `package.json`.
+
