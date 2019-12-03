@@ -11,6 +11,5 @@ ingress: Day 2
 - exhibition
 - puzzlers
 - closing panel
-- and a partridge in a pear tree.
 
 
