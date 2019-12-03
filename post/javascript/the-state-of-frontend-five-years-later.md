@@ -81,4 +81,4 @@ There might be things I should know here that I don't, but I was hoping that we'
 
 All in all, things are not bad in the world of frontend. The community is thriving, and innovation is both rapid and reasonably well directed. So, I guess I could reasonably say that things used to be worse. The coffee was bitter, and the developers were too. These days the coffee is single lot, the function scope is predictable, and the developers are hopefully slightly less bitter than they used to be.
 
-So, if you yourself is part of the frontend community, enjoy it! Frontend as an area of expertise has undergone huge changes the last few years, and I dare say most are for the much better. 
+So, if you yourself is part of the frontend community, enjoy it! Frontend as an area of expertise has undergone huge changes the last few years, and I dare say most are for the much better.
