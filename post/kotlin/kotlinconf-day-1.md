@@ -16,7 +16,7 @@ authors: []
 
 ## The venue 
 
-This years venue is the Bella Conference Center, a quick metro ride from central Copenhagen. While perhaps not as charming as last years venue (Beurs van Berlage in Amsterdam), a larger venue may be more fitting to the ever growing Kotlin community. 
+This years venue is the Bella Conference Center _(pictured)_, a quick metro ride from central Copenhagen. While perhaps not as charming as last years venue (Beurs van Berlage in Amsterdam), a larger venue may be more fitting to the ever growing Kotlin community. 
 
 - lokalene
 - er det trangt
