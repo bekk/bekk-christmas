@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 8
-title: Optimize your app by being lazy
+title: Optimize Your App by Being Lazy
 image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55'
 ingress: 'What is lazy loading, and why should you do it?'
 authors:
