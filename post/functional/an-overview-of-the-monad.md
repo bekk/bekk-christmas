@@ -8,9 +8,9 @@ image: >-
 ingress: >-
   In this article I will give a brief overview of what a _monad_ is. Later
   articles in this series will use monadic features in different programming
-  examples, and therefore it is a good idea to have a foundation of what it is
-  first. I will use metaphors to explain the concept, and I will not give any
-  code examples in this article.
+  examples, therefore I thought it would be a good idea to first give an
+  overview of what a monad is. I will use metaphors to explain the concept, and
+  I will _not_ give any code examples in this article.
 links:
   - title: What we talk about when we talk about monads
     url: 'https://arxiv.org/pdf/1803.10195.pdf'
