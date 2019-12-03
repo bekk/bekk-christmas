@@ -19,18 +19,6 @@ function shouldPublishPost(edge) {
 
 module.exports = function feedPluginConfig(calendar) {
     return {
-        query: `
-      {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            site_url: siteUrl
-          }
-        }
-      }
-    `,
         feeds: [
             {
                 serialize: ({ query: { allMarkdownRemark } }) => {
@@ -54,9 +42,10 @@ module.exports = function feedPluginConfig(calendar) {
                 query: `
             {
                 allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___calendar, frontmatter___post_year, frontmatter___post_day]}, filter: ${
-                    calendar
-                        ? `{frontmatter: {calendar: {eq: "${calendar}"}}}`
-                        : '{frontmatter: {calendar: {ne: null}}}' // skips authors
+                    [null, 'preview'].includes(calendar)
+                        ? // skips authors, but includes the rest
+                          '{frontmatter: {calendar: {ne: null}}}'
+                        : `{frontmatter: {calendar: {eq: "${calendar}"}}}`
                 }) {
                   edges {
                     node {
