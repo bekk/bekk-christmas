@@ -20,10 +20,10 @@ I'm sure most of you are already using monads, even without knowing it. You see,
 
 A monad is a concept that belongs to a branch of mathematics called _category theory_, where it was introduced in the 1960s. It wasn't until the 1990s that monads were found useful in programming. In category theory, a monad can be defined like this:
 
-> _Definition 1. A monad over a category C is a triple (T,η,µ) where T : C → C is a functor, η : idC → T and µ : T^2 → T are natural transformations such that:_
+> _Definition 1. A monad over a category C is a triple (T,η,µ) where T : C → C is a functor, η : id<sub>C</sub> → T and µ : T<sup>2</sup> → T are natural transformations such that:_
 >
-> µA ◦ TµA = µA ◦ µTA\
-> µA ◦ ηTA = idTA = µA ◦ TηA
+> µ<sub>A</sub> ◦ Tµ<sub>A</sub> = µ<sub>A</sub> ◦ µ<sub>TA</sub>\
+> µ<sub>A</sub> ◦ η<sub>TA</sub> = id<sub>TA</sub> = µ<sub>A</sub> ◦ Tη<sub>A</sub>
 
 This is probably pretty incomprehensible if you're not familiar with category theory. Luckily it is not needed for understanding and using monads in the context of programming. I just wanted to show the formal definition before moving to the more tangible way of talking about monads in the following section.
 
@@ -39,6 +39,6 @@ A little simplified, `>>=` takes a container with a value inside, applies a func
 
 ## Rounding up
 
-Was this all a little too fluffy to grasp? I agree, therefore I recommend checking out [this amazing visualization](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html "Monads in pictures") of how we work with monads in programming. I hope this gave you a little intuition for what monads are, and that it helps when they return in later articles.
+Was this all a little too fluffy to grasp? I agree, therefore I recommend checking out [this awesome visualization](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html "Monads in pictures") of how we work with monads in programming. I hope this gave you a little intuition for what monads are, and that it helps when they return in later articles.
 
 And remember, a monad is just a monoid in the category of endofunctors, what's the big deal 😉
