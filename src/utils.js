@@ -42,7 +42,7 @@ const getDayNumber = day => {
 };
 
 export const getChristmasTree = (calendar, year) => {
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
         calendar,
         year
     )}/tre.png`;
@@ -53,7 +53,7 @@ export const getWindowImagePlaceholder = (calendar, day, year) => {
         return `/assets/generated/${day}.png`;
     }
 
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@2cec035/${getCalendarNumber(
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
         calendar
     )}/small/${getDayNumber(day)}.jpeg`;
 };
