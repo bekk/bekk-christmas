@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const fs = require('fs');
+const feedPluginConfig = require('./config/feed-plugin-config');
+const getMetadataForSite = require('./config/get-metadata-for-site');
 
 // Adds every directory under post (not recursively) as its own filesystem
 // source.
@@ -22,6 +24,7 @@ const envCalendar = process.env.CALENDAR_ENV || process.argv[3];
 const isPreview = envCalendar === 'preview';
 
 module.exports = {
+    siteMetadata: getMetadataForSite(envCalendar),
     plugins: [
         ...(isPreview ? [`gatsby-plugin-netlify-cms`] : []),
         {
@@ -58,6 +61,10 @@ module.exports = {
             },
         },
         `gatsby-plugin-netlify`,
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: feedPluginConfig(envCalendar),
+        },
     ],
     mapping: {
         'MarkdownRemark.frontmatter.authors': 'MarkdownRemark.frontmatter.title',
