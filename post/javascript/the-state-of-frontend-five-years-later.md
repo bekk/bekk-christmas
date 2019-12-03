@@ -22,6 +22,8 @@ links:
     url: 'https://javascript.christmas/2018/17'
   - title: Console candy
     url: 'https://javascript.christmas/2018/15'
+  - title: Don't break the web
+    url: 'https://javascript.christmas/2018/2'
 authors:
   - Jøran Vagnby Lillesand
 ---
