@@ -4,6 +4,7 @@ post_year: 2019
 post_day: 22
 title: 'Code as data, Java edition'
 ingress: ''
+description: A blog post about Byte Buddy written by Rafael Winterhalter from Scienta
 links:
   - title: Byte Buddy (GitHub)
     url: 'https://github.com/raphw/byte-buddy'
