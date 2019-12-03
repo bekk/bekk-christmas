@@ -82,7 +82,7 @@ export const mapCalendarToName = calendar => {
         case 'java':
             return 'Java';
         case 'ml':
-            return 'ML';
+            return 'Machine Learning';
         case 'product':
             return 'Product';
         case 'security':
