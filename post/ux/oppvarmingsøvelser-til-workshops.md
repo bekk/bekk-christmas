@@ -12,6 +12,11 @@ ingress: >-
   alltid så lett å gå fra 0 til 10 på kort tid, så derfor kan en
   oppvarmingsøvelse være en ypperlig måte å få i gang en workshop eller unngå
   «etter lunsj-dippen».
+links:
+  - title: 'Session Lab: Library of facilitation techniques'
+    url: 'https://www.sessionlab.com/library/energiser'
+  - title: Hyper Island Toolbox
+    url: 'https://toolbox.hyperisland.com/'
 ---
 Det finnes en haug med ulike oppvarmingsøvelser der ute som kan brukes, avhengig av hva som er hensikten. Jeg vil gjerne dele noen av øvelsene jeg har prøvd ut på prosjekt og sammen med faggruppen min “Kreativ problemløsning”.  (Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
 
