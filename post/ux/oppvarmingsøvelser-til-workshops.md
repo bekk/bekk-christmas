@@ -31,11 +31,11 @@ Det finnes en haug med ulike oppvarmingsøvelser der ute som kan benyttes i work
 
 **Hva** 
 
-Denne øvelsen går ut på å lage portretter av hverandre - uten å se på arket når du tegner, og med feil hånd (ikke den du vanligvis tegner med). Og om man har lyst å legge til enda en tvist, kan personen som tegner samtidig intervjue den andre for å bli bedre kjent, eks "Hvor studerte du?", "Hvor vokste du opp?" osv. 
+Denne øvelsen går ut på at man går to og to sammen, og lager portretter av hverandre - uten å se på arket når du tegner, og med feil hånd (ikke den du vanligvis tegner med). Om man skulle ha lyst til å legge til enda en tvist, kan personen som tegner samtidig intervjue den andre for å bli bedre kjent, f.eks. "Hvor studerte du?", "Hvor vokste du opp?" osv. 
 
 **Hvorfor**
 
-Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger prestere. Den kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
+Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
 
 
 
