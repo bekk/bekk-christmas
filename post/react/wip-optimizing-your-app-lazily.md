@@ -2,7 +2,8 @@
 calendar: react
 post_year: 2019
 post_day: 8
-title: 'WIP: Optimizing your app lazily'
+title: Optimize your app by being lazy
+image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55'
 ingress: 'What is lazy loading, and why should you do it?'
 authors:
   - Sissel Fladby
@@ -77,20 +78,23 @@ If we import our components using React.lazy, and then wrap them in a Suspense t
 
 ## What is the effect?
 
-On very small projects, the benefits of doing lazy loading are negligible, if any. To test lazy loading in a genuine setting, I tried implementing the same type of logic in a much larger project that I have worked on, where there are many more routes with more content. 
+On very small projects, the benefits of doing lazy loading are negligible, if any. To test lazy loading in a genuine setting, I tried implementing the same type of logic in a much larger project that I have worked on, where there are many more routes with more content.
+ 
 
 Before we start code splitting, let us look at our original JavaScript chunks on a single page load.
 
 
-![JavaScript chunks before introducing lazy loading](https://ibb.co/gyHYqB6)
+![JavaScript chunks before introducing lazy loading](https://i.ibb.co/6Ddy71v/Screenshot-from-2019-12-03-21-03-02.png)
 
 In this app, I did the exact same thing as in the example above - wrapped the Router in a Suspense-tag and lazy loaded the components for each route. The project in question uses Create React App and a new version of React, so I did not need to do any extra configuration to get it working. 
 
 After introducing lazy loading we get the following chunks on a single page load.
 
-![JavaScript chunks after introducing lazy loading](https://ibb.co/gm9d6X7)
+![JavaScript chunks after introducing lazy loading](https://i.ibb.co/9VypzJS/Screenshot-from-2019-12-03-21-03-34.png)
 
-When loading this application after the introduction of lazy loading, the first thing to note was the loading of the JavaScript chunks. As expected, the number of chunks had increased, but the size of each chunk was reduced considerably. But more importantly: The DOMContentLoaded-metric was reduced with about 1.2s, which is a huge gain with very little effort.
+When loading this application after the introduction of lazy loading, the first thing to note was the JavaScript chunks. As expected, the number of chunks had increased, but the size of each chunk was reduced considerably.
+
+But more importantly: The DOMContentLoaded-metric was on average reduced with about 200ms with a regular internett speed, and upon throttling the network in Chrome DevTools with a Fast 3G connection the average difference was 4 seconds. That is a huge gain with very little effort. It should be mentioned that this test was done in a very informal setting, but the difference is still significant.
 
 Of course, lazy loading also works wonders with components that aren't the target of a Route. A menu hidden behind a dropdown-menu would be a great candidate for lazy loading. The same holds for any component that is hidden until the user performs a certain action.
 
