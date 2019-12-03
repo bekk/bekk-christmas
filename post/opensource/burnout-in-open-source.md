@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 9
+post_day: 8
 title: Burnout in Open source
 image: >-
   https://images.unsplash.com/photo-1479909745254-43e2e435f93b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80
