@@ -130,3 +130,7 @@ As a result, all classes within any application in which the Java agent was incl
 
 In the end, the right approach to code manipulation depends on the actual requirements but Byte Buddy tries to make it easy to share as much code between the different ways of manipulating Java classes. Also, there is much more to Byte Buddy and to Java agents what is too much to cover in a single blog posting but which are covered in various other blog postings and conference presentations, some of which are linked in the references below.
 
+***
+This was a guest post written by Rafael Winterhalter from [Scienta](https://scienta.no).
+Thank you Rafael!
+
