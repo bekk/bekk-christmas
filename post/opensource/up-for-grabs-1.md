@@ -13,6 +13,11 @@ ingress: >-
   deprecated or if the fix is planned, but not due for quite a while? In this
   article I’ll teach you the strategy of patching dependencies in node\_modules
   by using _patch files_.
+links:
+  - title: The patch Unix tool
+    url: 'https://en.wikipedia.org/wiki/Patch_(Unix)'
+  - title: A buggy dependency
+    url: 'https://github.com/draperunner/buggybug'
 authors:
   - Mats Byrkjeland
 ---
@@ -53,6 +58,7 @@ patch --forward node_modules/buggybug/index.js < patches/buggybug-index.patch
 If you inspect your node_modules after running this, you should see that buggybug/index.js is updated with your fixed version.
 
 Now it's safe to delete your fixed copy. We only needed it to generate the patch file.
+
 ```
 rm patches/my-fixed-buggybug.js
 ```
@@ -71,4 +77,6 @@ In order to automate the application of the patch, we'll add it to the `postinst
 }
 ```
 
-Since the postinstall script is run automatically after `npm install`, all your teammates need to do after a git pull is to run npm install, and your fix is applied!
+Since the postinstall script is run automatically after `npm install`, all your teammates need to do after a git pull is to run npm install, and your fix is applied. :tada: Test it yourself with `rm -rf node_modules && npm install`.
+
+And hey! Remember to submit that issue and/or pull request to the dependency's repo!
