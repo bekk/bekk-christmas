@@ -10,17 +10,15 @@ ingress: >-
   dictionary](https://dictionary.cambridge.org/dictionary/english/suspense)
   states that _suspense_ means a feeling of excitement while waiting for
   something uncertain to happen. So, let’s get excited and learn about
-  React.Suspense and learn how this helps us wait for something uncertain!
+  React.Suspense and how this helps us wait for something uncertain!
 links:
   - title: Suspense for code splitting
     url: 'https://reactjs.org/docs/code-splitting.html'
-  - title: Suspense for data fetching (experimental)
-    url: 'https://reactjs.org/docs/concurrent-mode-suspense.html'
 authors:
   - Julie Hill Roa
 ---
 
-React.Suspense is a component that help suspend, or delay, the component rendering if the components, or soon data, are imported from outside your code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
+React.Suspense is a component that let you suspend, or delay, the component rendering if the components, or soon data, are imported from outside your code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
   
 ## Code splitting
 
@@ -34,11 +32,11 @@ You can also split up your code at a component-level. You can try to identify sm
 
 As your application gets bigger, with code and features, your loading time will increase as well. Especially if you include multiple third-party libraries. The user today, is expecting fast applications with minimum loading time. According to studies on behaviours on the web, 53% of mobile users abandons sites that loads longer than 3 seconds. This is where code splitting comes to into play. 
 
-When you have divided your application code into chunks, you can reduce the initial loading time  of your application dramatically by only loading the chunk necessary for the initial render. When the user navigates in your application the rest of the chunks can be loaded as needed. 
+When you have divided your application code into chunks, you can reduce the initial loading time of your application dramatically by only loading the chunk necessary for the initial render. When the user navigates in your application the rest of the chunks can be loaded as needed. 
 
 ## Code splitting with Suspense
 
-Code splitting is a feature supported by your bundler, like Webpack or Parcel. However, your _code_ facilitates the actual import and use of these chunks. In React 16.6, Suspense for code splitting was released, and it makes the  code splitting really easy. 
+Code splitting is a feature supported by your bundler, like Webpack or Parcel. However, your _code_ facilitates the actual import and use of these chunks. In React 16.6, Suspense for code splitting was released, and it makes the code splitting really easy. 
 
 Suspense handles the loading state and lets you delay the rendering of parts of the application tree. While the chunks are loading suspense shows a fallback component until the chunk is ready to render. This means that you do not have to have a local state checking if a component is loading or not and you do not have to clutter your render function with an if-statement checking this state. Suspense deals with all of this for you!
 
@@ -81,4 +79,4 @@ Note that the ErrorBoundary component does not have to be a direct parent. You c
 If you want to learn more about error bounderies and how to write them, Kristoffer Selbekk made a smashing article about it in last years calendar. [Take a look!]( https://react.christmas/2018/14)
 
 ## Game changer 
-In the ingress, I stated that Suspense will become a game changer and it is no lie! Tomorrow we will see what Suspense will become in the future. A hint  – it will not only be used for code splitting, but so much more! We will also take a deep dive into how suspense actually works  – so stay tuned!
+Suspense is and will become a game changer! Tomorrow we will see what Suspense will become in the future. A hint  – it will not only be used for code splitting, but so much more! We will also take a deep dive into how suspense actually works  – so stay tuned!
