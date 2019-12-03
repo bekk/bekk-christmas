@@ -94,7 +94,7 @@ After introducing lazy loading we get the following chunks on a single page load
 
 When loading this application after the introduction of lazy loading, the first thing to note was the JavaScript chunks. As expected, the number of chunks had increased, but the size of each chunk was reduced considerably.
 
-But more importantly: The DOMContentLoaded-metric was on average reduced with about 200ms with a regular internett speed, and upon throttling the network in Chrome DevTools with a Fast 3G connection the average difference was 4 seconds. That is a huge gain with very little effort. It should be mentioned that this test was done in a very informal setting, but the difference is still significant.
+But more importantly: The DOMContentLoaded-metric was on average reduced with about **200ms** with a regular internett speed, and upon throttling the network in Chrome DevTools with a Fast 3G connection the average difference was **4 seconds**. That is a huge gain with very little effort. It should be mentioned that this test was done in a very informal setting, but the difference is still significant.
 
 Of course, lazy loading also works wonders with components that aren't the target of a Route. A menu hidden behind a dropdown-menu would be a great candidate for lazy loading. The same holds for any component that is hidden until the user performs a certain action.
 
