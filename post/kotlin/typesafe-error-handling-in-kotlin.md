@@ -8,9 +8,11 @@ authors:
 ---
 WIP...
 
+# Typesafe Error Handling in Kotlin
+
 In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. We can do whatever we want. As long as the object we are throwing is a subtype of `Throwable`, the compiler will not complain. This sounds like a good thing, right? Well, _it depends_.
 
-Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe. The compiler will not tell you what to catch or whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers tend to more often _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
+Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe. The compiler will not tell you what to catch or whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
 
 ## Error Handling with `Result<T, E>`
 
@@ -22,7 +24,7 @@ class Ok<out T>(val value: T): Result<T, Nothing>()
 class Err<out E>(val error: E): Result<Nothing, E>()
 ```
 
-`Result` is a superclass that can only be instantiated as an `Ok` or an `Err`. If you receive an instance of `Result`, the only way to get the encapsulated value is by _explicitly_ checking whether it is an `Ok` or an `Err` instance. In other words, error handling is both _enforced_ and _typesafe_. Simple enough, right? Let us look at an example.
+`Result` is a superclass that can only be instantiated as an `Ok` or an `Err`. If you receive an instance of `Result`, the only way to get the encapsulated value is by _explicitly_ checking whether it is an `Ok` or an `Err` instance. In other words, error handling is both enforced and typesafe. Simple enough, right? Let us look at an example.
 
 ```kotlin
 fun divide(dividend: Int, divisor: Int): Result<Int, String> =
@@ -43,7 +45,7 @@ fun main() {
 }
 ```
 
-In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). While this does indeed enforce error handling, it may still feel awkward to use in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
+In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). While this barebone implementation works great at enforcing typesafe error handling, it suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
 
 - Fetch the timestamp of the previous successful transfer, from the database.
 - Fetch all users that have changed since this timestamp, from the database.
