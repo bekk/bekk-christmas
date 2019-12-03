@@ -2,61 +2,60 @@
 calendar: ml
 post_year: 2019
 post_day: 4
-title: Machine learning is all about business value
+title: 'It’s the economy, stupid!'
 image: >-
   https://images.unsplash.com/photo-1521828847175-b6d80fc5a7fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
-  We have now learnt the basics of machine learning and what it is. But before
-  we look more into the details of how to do machine learning we must first talk
-  briefly about why. In this blog post we will present our high-level thoughts
-  about practical application before diving in to a real-life exampe from our
-  work for Center for Service Innovation (CSI).
+  Up until now we have learnt what machine learning is and looked at some
+  initial examples. But before we move on with more details of _how_ to do
+  machine learning we must first talk about _why_. In this blog post we‘ll
+  present a high-level overview of practical application before diving into a
+  real-life example from our work at the Center for Service Innovation (CSI) in
+  Norway. The basic concept? It‘s all about business value!
 links:
   - title: Center for Service Innovation
     url: 'https://www.nhh.no/en/research-centres/csi/aboutold/'
 authors:
   - Stian Daazenko
 ---
-###Introduction
-When talking about the practical application of machine learning and AI we often hear about the events and the extrems. A lot of articles talk about the history of machine learning, from the turing test, created in the wake of the second world war codebreaking revolution, via computers beating grand masters at chess, to the creation of the self-driving cars and autonomous robots of today. Interesting and cool stuff indeed, but most companies doesn‘t break codes, play chess or build inteligent cars. So when talking about practical application of machine learning in this blog post we‘ll be targeting some more mainstream business challenges (Sorry, Tesla!).
+\###The business value of machine learning
+When people talk about the practical application of machine learning (ML) we often hear about the major events and the extremes. A lot of articles revolve around the history of machine learning and AI, from the turing test created in the wake of the WW2 codebreaking revolution, via computers beating grand masters at chess, to the creation of the self-driving cars of today. Interesting and cool stuff indeed, but most companies don‘t break codes, play chess or build inteligent cars. So when looking at practical application in this blog post we‘ll be targeting some more mainstream business challenges (Sorry, Tesla).
 
-We‘ll start our story with the early adoption of machine learning for the purpose of cost reduction and ease of operation. Some of the first industries to find good use of machine learning were companies struggling with maintenance of physical objects like elevators and wind turbines. In these early cases, sensor data was used to read patterns on well-functioning machines, and replace them when this pattern was broken (but before it actually broke). This was opposed to replacing them at certain defined intervals, the way they previously did. The gains from this way of thinking was massive, and other ways of using similar thinking for cost reduction purposes was soon developed, like delay prediction and demand forecasting.
+We‘ll start our story with the adoption of machine learning for the purpose of cost reduction and operational efficiency. Some of the first industries to find good use of machine learning were companies responsible for maintenance of physical objects, like elevators and wind turbines. In these early cases, sensor data was used to read patterns on well-functioning machine parts and replace them when this pattern was broken, so-called predictive maintenance. This as opposed to preventive maintenance, where critical parts are replaced at pre-defined intervals. The financial gains from this new way of thinking were massive, and other ways of using ML for operational analysis were soon developed, like demand forecasting, delay prediction and various types of process automation.
 
-Gradually marketers, economist and business developers also opened their eyes to ML, and new areas of application was born. People soon figured out that ML is a useful tool for customer facing purposes, like social media analysis, a/b testing, predicting purchase behaviour and discrete choice analysis. The range of these application areas enable us to both identify better value propositions and to increase revenue. In the illustration below we have illustrated some of the practical applications from cost reduction, value proposition and revenue generation. 
+Gradually marketers and business developers also opened their eyes to ML, and new areas of application were born. In these use cases there are generally less focus on physical objects and more focus on the fuzzy, intangible asset called customers. Better value propositions to customers can be developed through for example automated a/b testing, personalized news feeds and market basket analysis (You know, that Netflix/Amazon recommendation thing everyone used to talk about). For those concerned with customer sales and revenue, well-known examples include churn detection, predict purchase and discrete choice analysis for price optimization. 
+
+Each of these use cases are in themselves pretty interesting, and we could easily go on and on to describe them more in detail. But that would require an unreasonable long blog post. So we‘ll instead leave you with a summary of some of the application areas we find most interesting, categorized according to the business value they provide (kind of), before providing a short example. 
+
+
 
 ![](/assets/ml_4_pic1.png)
 
-We‘ll look into some of these in more detail during the course of this calendar although we will not be able to explain them all. To exemplify we‘ll present one application we have spent quite some time with the last couple of years.
-
-###A practical challenge – increasing the financial value of customers
 
 
-The need for better decision support for service investments was a particular requirement from CSI's business partners back in 2015. This was based on their common challenges and corresponding difficulties when applying traditional profitability models to calculate ROI. For this reason, the Service Innovation Economics research theme (SIE) was created.
+\###Example: Using machine learning to increase customer profitability
 
-Initially in our work it soon became clear that this challenge was about more than the creation of a new ROI model. To really address the problem, we first had to look at the basic mindset behind how profitability is calculated.
-
-Traditional profitability models are based on product-based logic. For products, value creation has historically been linked to standardized deliveries of physical products through a linear process, from production to consumption. For services, value creation is much more complex. Value creation takes place in dialogue with the customer over time, and through co-creation in the customer's value network. Thus, services become more specialized and the lines between production and consumption get blurred. In this type of environment, the traditional profitability models fall short.
-
-Our focus has been to develop profitability models with customer-based logic. In such models the value of your customer relationships, and not the value of individual services and products, are the subject for profitability analysis. A key factor in this work has been to establish Customer Lifetime Value (CLV) and Customer Equity as the basic measurements of profitability. Another key factor has been to develop models where we can segment the customer base based on future profitability potential. This is a prerequisite for doing service development targeted at customers that are most profitable over time.
-
-CLV can be defined as the future cash flow from a given customer relationship. The sum of CLVs for all current and future customers is called Customer Equity (CE) and represents the total value of a company’s customer base.
-
-CLV has several fields of application, including:
+One of the application areas described in the illustration above is to calculate Customer Lifetime Value or CLV. CLV can be defined as the future cash flow from a given customer relationship. The sum of CLVs for all current and future customers is called Customer Equity and represents the total value of a company’s customer base. CLV has several fields of application, including:
 
 * Identify the right customers to spend money on and where the potential for increased profitability is largest
 * Deliver personalized customer service and marketing to improve customer experience and boost sales
-* Create a business case for investments. ROI is then represented as the change in Customer Equity
+* Create a business cases for investments, where ROI is represented as the change in Customer Equity
+* Estimate a company’s financial value (For service-oriented companies Customer Equity is considered to be a good proxy)
 
-However, the data needed to calculate CLV does not come for free. In its simplest form CLV still requires estimation of future contribution margins and retention rates, as well as a discount rate to create the discounted cash flow, exemplified by the typical CLV definition:
+The importance of CLVs was one of the key factors in the work Bekk did for the Center for Service Innovation (CSI) at the Norwegian School of Economics (NHH) that recently finalized its work. Bekk had the main responsibility for one of the research themes at CSI (Service Innovation Economics), with the aim of developing methods to measure the financial effects of service innovations. 
+
+To summarize, our research required us to develop profitability models with customer-based logic, where CLV and Customer Equity are established as the basic measurements of profitability. However, the data needed to calculate CLV does not come for free. Even in its simplest form CLV requires estimation of future contribution margins (the yearly future profit from a customer) and retention rates (probability that a customer stays with us for another period), as well as a discount rate to create a cash flow, illustrated by the typical CLV definition below: 
 
 ![](/assets/ml_4_pic2.png)
 
-In practice we often need more fine-grained representations of CLV to take proper decisions. The construct of the calculation itself also vary, depending on the business environment. 
-Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. We believe this is an important reason why CLV has had limited practical implementation. Model simplification is often proposed as the solution, but is there another way?
 
-###Using machine learning to solve the problem
-We believe CLV-calculations is an excellent case for machine learning. Based on available customer information, the computer can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined along the way:
+
+In practice we often also need more fine-grained representations of CLV to do real-life calculations. Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. Even though CLV is a well-established concept, we believe this is an important reason why CLV has had limited practical implementation. 
+
+Stuck with what seemed to be too complex calculations in our research; in came machine learning in white and shining amour. Without going into all the details: Based on available customer information, computers can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined as we go along:
 
 ![](/assets/ml_4_pic3.png)
 
-Too difficult and expensive, you say? Contrary to some beliefs such a model can be created and set up relatively easy, with low investment costs. There are examples of Norwegian companies that already have a fully functional CLV-model running, with very promising results!
+Too difficult and expensive, you say? Contrary to some beliefs such a model can be created and set up relatively easy, with low investment costs. In our research we also encountered Norwegian companies that already have a fully functional CLV-model running, with very promising results. And even better: When you have a ML model using customer data running, you have a good foundation for expanding your model to support other areas of application, as seen in the illustration further up. 
+
+That seems like an excellent platform for generating business value, wouldn’t you agree?
