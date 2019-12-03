@@ -5,6 +5,10 @@ post_day: 7
 title: 9 new features in ES2019
 image: >-
   https://images.unsplash.com/photo-1519241678948-28f18681ce14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80
+ingress: >-
+  This year the 10th version of the ECMAScript Language specification was
+  released, often referred to simply as ES2019. Let’s take a closer look at what
+  new features we got and how we make can put them to use.
 ---
 ## String.trimStart() and String.trimEnd()
 ​
