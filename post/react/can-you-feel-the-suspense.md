@@ -2,13 +2,15 @@
 calendar: react
 post_year: 2019
 post_day: 4
-title: Can you feel the Suspense?!
+title: 'Oh, the Suspense!'
 image: >-
   https://images.unsplash.com/photo-1492681950396-e1052bfa206e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80
 ingress: >-
-  Suspense is and will become a game changer when it comes to data fetching. It
-  changes the way we structure our code, think about loading states and gives a
-  better experience for both the developers and the users' interface.
+  \[The American
+  dictionary](https://dictionary.cambridge.org/dictionary/english/suspense)
+  states that _suspense_ means a feeling of excitement while waiting for
+  something uncertain to happen. So, let’s get excited and learn about
+  React.Suspense and learn how this helps us wait for something uncertain!
 links:
   - title: Suspense for code splitting
     url: 'https://reactjs.org/docs/code-splitting.html'
@@ -17,6 +19,9 @@ links:
 authors:
   - Julie Hill Roa
 ---
+
+React.Suspense is a component that help suspend, or delay, the component rendering if the components, or soon data, are imported from outside your code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
+  
 ## Code splitting
 
 Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or _chunk_. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. 
@@ -35,13 +40,16 @@ When you have divided your application code into chunks, you can reduce the init
 
 Code splitting is a feature supported by your bundler, like Webpack or Parcel. However, your _code_ facilitates the actual import and use of these chunks. In React 16.6, Suspense for code splitting was released, and it makes the  code splitting really easy. 
 
-Suspense handles the loading state and lets you delay the rendering of parts of the application tree. While the chunks are loading suspense shows a fallback component until the chunk is ready to render. The actual import of these chunks is done by `React.Lazy` and dynamic imports. Let’s take a closer look how this is done:
+Suspense handles the loading state and lets you delay the rendering of parts of the application tree. While the chunks are loading suspense shows a fallback component until the chunk is ready to render. This means that you do not have to have a local state checking if a component is loading or not and you do not have to clutter your render function with an if-statement checking this state. Suspense deals with all of this for you!
+
+The actual import of these chunks is done by `React.Lazy` and dynamic imports. Let’s take a closer look how this is done:
 
 ```js
 const ChristmasAlbum = React.lazy(() => import('./ChristmasAlbum'))
 const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
 
-<Suspense fallback="<h1>We are loading...🎅</h1>">
+
+<Suspense fallback={<h1>We are loading...🎅</h1>}>
   <ChristmasAlbum />
   <OtherChristmasAlbum />
 </Suspense>
@@ -62,7 +70,7 @@ const ChristmasAlbum = React.lazy(() => import('./ChristmasAlbum'))
 const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
 
 <ErrorBoundary>
-  <Suspense fallback="<h1>We are loading...🎅</h1>">
+  <Suspense fallback={<h1>We are loading...🎅</h1>}>
     <ChristmasAlbum />
     <OtherChristmasAlbum />
   </Suspense>
