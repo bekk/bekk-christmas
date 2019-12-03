@@ -2,7 +2,7 @@
 calendar: functional
 post_year: 2019
 post_day: 4
-title: 'Minesweeper, and functional programming propaganda'
+title: Minesweeper in Elm
 authors:
   - André Wolden
 ---
