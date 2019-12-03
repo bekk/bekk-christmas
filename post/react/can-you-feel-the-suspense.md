@@ -17,9 +17,8 @@ links:
 authors:
   - Julie Hill Roa
 ---
-
 React.Suspense is a component that let you suspend, or delay, the component rendering if the components, or soon data, are imported from outside your code. Later this December we may or may not, learn about Suspense for data fetching, but right now we are diving into how React.Suspense is used today with code splitting.  
-  
+
 ## Code splitting
 
 Code splitting is exactly as it sounds: splitting up your code.  This might be on a route-level, meaning that each sub route in your application is its own part or _chunk_. This is a good place to begin, as it will make your split parts more even. The user experience will also be intact as users are already used to a page transition with a new render. 
@@ -43,19 +42,19 @@ Suspense handles the loading state and lets you delay the rendering of parts of 
 The actual import of these chunks is done by React.Lazy and dynamic imports. Let’s take a closer look how this is done:
 
 ```js
-const ChristmasAlbum = React.lazy(() => import('./ChristmasAlbum'))
-const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
+const WishList = React.lazy(() => import('./WishList'))
+const GiftTable = React.lazy(() => import('./GiftTable'))
 
 
 <Suspense fallback={<h1>We are loading...🎅</h1>}>
-  <ChristmasAlbum />
-  <OtherChristmasAlbum />
+  <WishList />
+  <GiftTable />
 </Suspense>
 ```
 
-The example shows a chunk named `ChristmasAlbum` and a chunk named `OtherChristmasAlbum`.  Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component.
+The example shows a chunk named `WishList` and a chunk named `GiftTable`.  Instead of a regular import statement we use React.lazy. React.lazy takes a function, that must call a dynamic import, as an argument. This returns a Promise which resolves to a module exporting a React component.
 
-Because `ChristmasAlbum` and `OtherChristmasAlbum` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `ChristmasAlbum` and, of course `OtherChristmasAlbum`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully.
+Because `WishList` and `GiftTable` is dynamically imported, we wrap the components in Suspense. Suspense will try to render `WishList` and, of course `GiftTable`. If the chunks is not loaded completely, the Suspense component will render the fallback component until it can render the two child components successfully.
 
 ## But, what if it fails?!
 
@@ -64,19 +63,21 @@ As earlier stated, Suspense only handles the loading state as you try to dynamic
 Error boundaries are components with special lifecycle functions like `getDerivedStateFromError()` or `componentDidCatch()`. These functions are there to catch errors in their child component tree, so you can render an error UI and log the specific error. In our example it will look like this:
 
 ```js
-const ChristmasAlbum = React.lazy(() => import('./ChristmasAlbum'))
-const OtherChristmasAlbum = React.lazy(() => import('./OtherChristmasAlbum'))
+const WishList = React.lazy(() => import('./WishList'))
+const GiftTable = React.lazy(() => import('./GiftTable'))
 
 <ErrorBoundary>
   <Suspense fallback={<h1>We are loading...🎅</h1>}>
-    <ChristmasAlbum />
-    <OtherChristmasAlbum />
+    <WishList />
+    <GiftTable />
   </Suspense>
 </ErrorBoundary>
 ```
+
 Note that the ErrorBoundary component does not have to be a direct parent. You can place it higher up in the tree if, for instance, the error UI should hide more than the actual component that crashed.
 
-If you want to learn more about error bounderies and how to write them, Kristofer Selbekk made a smashing article about it in last years calendar. [Take a look!]( https://react.christmas/2018/14)
+If you want to learn more about error bounderies and how to write them, Kristofer Selbekk made a smashing article about it in last years calendar. [Take a look!](https://react.christmas/2018/14)
 
 ## Suspense in the future
-This was a quick intro to React.Suspense and how it is used with code splitting. However, tomorrow we will see what Suspense will become in the future. A hint  – it will not only be used for code splitting, but so much more! We will also take a deep dive into how suspense actually works – so stay tuned!
+
+This was a "quick" intro to React.Suspense and how it is used with code splitting. However, tomorrow we will see what Suspense will become in the future. A hint  – it will not only be used for code splitting, but so much more! We will also take a deep dive into how suspense actually works – so stay tuned!
