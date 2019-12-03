@@ -10,6 +10,11 @@ ingress: >-
   velfungerende, tverrfaglig team med perspektiver både fra forretnings- og
   systemutvikleren. Sondre H. Graver, Marte Gleditsch og Snorre Gryte tar praten
   over en kaffe.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Snorre Gryte
   - Marte Gleditsch
