@@ -6,6 +6,11 @@ title: En spøkelseshistorie fra fortiden. Var det verre før?
 ingress: >-
   Fossefall. Kravspec. Use Case. Systemtest. Overleveringer. Hvordan var det å
   jobbe i den hverdagen?
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Valentina Sørlie
   - Moquan Chen
