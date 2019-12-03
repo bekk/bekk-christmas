@@ -9,6 +9,11 @@ ingress: >-
   Dette er del 3 av 6 kaffeprater om Smidig organisering. Trenger vi ledere når
   vi har myndiggjorte team som jobber kundeorientert? Hva blir rollen til
   lederne og hvordan utøver de ledelse nå? Hvordan bygges tillit?
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Pia Solheim
   - Hilde Marie Flesland Torall
