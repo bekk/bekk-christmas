@@ -87,7 +87,7 @@ Store whiteboards har alltid vært favoritten. Det er noe tilfredsstillende med 
 **Kva er ditt beste tips til hektiske innspurtsdagar før jul?**\
 Tv-peis!
 
-Har du to dataskjermer tilgjengelig så jobb på den ene mens du fyrer opp YouTube og søker opp «Fireplace no ads» på den andre. Sett på noen gode tunes, gjerne julemusikk! Det kan få enhver lang og hektisk dag til å bli litt bedre! Min favoritt: <a href="https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s" target="_blank">Peis på YouTube</a> 
+Har du to dataskjermer tilgjengelig så jobb på den ene mens du fyrer opp YouTube og søker opp «Fireplace no ads» på den andre. Sett på noen gode tunes, gjerne julemusikk! Det kan få enhver lang og hektisk dag til å bli litt bedre! Min favoritt: <a href="https://www.youtube.com/watch?v=9EE_ICC_wFw&t=1961s" target="_blank">«4 Hours Fireplace in Full HD With Real Crackling Sound»</a> 
 
 **Kva er den beste bruker-/kundeopplevinga du har vore bort i løpet av året?**\
 Hvis det er en ting som i hvert fall har fått meg til å endre litt adferd så må det være å ha fått smartklokke med eSIM. Jeg er ikke noe stor fan av å ha med meg mobilen over alt, samtidig så får jeg FOMO-følelsen når jeg ikke har den. Så det å nå kunne la mobilen ligge igjen hjemme når jeg skal ta meg en tur, uten å måtte føle at jeg har glemt noe har vært en digg greie.
