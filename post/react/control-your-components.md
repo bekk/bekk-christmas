@@ -1,7 +1,7 @@
 ---
 calendar: react
 post_year: 2019
-post_day: 12
+post_day: 11
 title: Control your components
 image: >-
   https://images.unsplash.com/photo-1472235008642-bb3ce23994ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
@@ -10,10 +10,8 @@ ingress: >-
   you want them to.
 links:
   - title: State reducers vs control props
-    body: An article comparing state reducers to control props
     url: 'https://kentcdodds.com/blog/control-props-vs-state-reducers'
   - title: How to give rendering control to users with Prop getters
-    body: 'A different way to do the same thing, with classes!'
     url: >-
       https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters
 authors:
