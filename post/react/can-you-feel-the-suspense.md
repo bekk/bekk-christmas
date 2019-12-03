@@ -6,11 +6,9 @@ title: 'Oh, the Suspense!'
 image: >-
   https://images.unsplash.com/photo-1492681950396-e1052bfa206e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80
 ingress: >-
-  \[The American
-  dictionary](https://dictionary.cambridge.org/dictionary/english/suspense)
-  states that _suspense_ means a feeling of excitement while waiting for
-  something uncertain to happen. So, let’s get excited and learn about
-  React.Suspense and how this helps us wait for something uncertain!
+  The American dictionary states that _suspense_ means a feeling of excitement
+  while waiting for something uncertain to happen. So, let’s get excited and
+  learn about React.Suspense and how this helps us wait for something uncertain!
 links:
   - title: Suspense for code splitting
     url: 'https://reactjs.org/docs/code-splitting.html'
