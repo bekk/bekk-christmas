@@ -3,6 +3,7 @@ calendar: java
 post_year: 2019
 post_day: 22
 title: 'Code as data, Java edition'
+image: 'https://bytebuddy.net/images/logo-bg.png'
 ingress: ''
 description: A blog post about Byte Buddy written by Rafael Winterhalter from Scienta
 links:
