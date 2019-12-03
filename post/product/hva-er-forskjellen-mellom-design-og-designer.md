@@ -8,6 +8,11 @@ ingress: >-
   designer utøver? Hvordan ser vi på design arbeidet opp mot evolusjon og
   hypotesetesting? Er design simulering? Linda Halvorsen, Jens Andreas Huseby og
   Moquan Chen kaffeprater.
+links:
+  - title: Alle episoder på Spotify
+    url: 'https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL'
+  - title: Alle episoder på Anchor
+    url: 'https://anchor.fm/kaffeprathosbekk'
 authors:
   - Moquan Chen
   - Jens Andreas Huseby
