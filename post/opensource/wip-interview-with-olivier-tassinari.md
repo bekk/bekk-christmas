@@ -24,7 +24,9 @@ We try to leverage these 3 approaches as the best possible in Material-UI. The p
 
 ## Are there any useful tools you use to make your GitHub-life easier to manage, and if so, could you share a few of them with us?
 
-I manage all the notifications with Gmail, the snooze feature is extremely useful. Print this: "You can save time by delaying things".
+I manage all the notifications with Gmail, the snooze feature is extremely useful.
+
+> You can save time by delaying things
 
 I use Trello to study potential problems we will fix in the future.
 We aggressively move all support questions to StackOverflow.
