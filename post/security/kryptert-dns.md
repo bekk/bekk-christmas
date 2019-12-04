@@ -9,9 +9,11 @@ ingress: >-
   Google](https://transparencyreport.google.com/https/overview?hl=en) viser at
   ca. 90 prosent av nettstedene som lastes i nettleseren Chrome lastes over
   HTTPS. Selv om mye av innholdet vi laster opp og ned over internett er
-  beskyttet er det fortsatt mye annen informasjon om internettaktiviteten vår
+  beskyttet, er det fortsatt mye annen informasjon om internettaktiviteten vår
   som er tilgjengelig for uvedkommende.
-links: []
+links:
+  - title: DNS Privacy Project Homepage
+    url: 'https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Project+Homepage'
 authors:
   - Emil Øien Lunde
 ---
