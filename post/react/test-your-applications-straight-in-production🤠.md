@@ -1,17 +1,14 @@
 ---
 calendar: react
-categories: []
-date: ''
-keywords: []
 post_year: 2019
 post_day: 9
 title: "Test your applications straight in production\U0001F920"
+image: 'https://unsplash.com/photos/GPPAjJicemU'
 description: >-
   Wouldn’t it be sweet to be able to test your application straight in
   production? Not having to wait 20 min to redeploy and roll out your…
 authors:
   - Jørgen Johansen
-slug: ''
 ---
 
 Wouldn’t it be sweet to be able to test your application straight in production? Not having to wait 20 min to redeploy and roll out your new features? ⏱
