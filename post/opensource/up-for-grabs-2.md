@@ -2,7 +2,7 @@
 calendar: opensource
 post_year: 2019
 post_day: 9
-title: Digipost html validator
+title: 'WIP: Digipost html validator'
 ingress: >-
   Virksomheter som sender meldinger i Digipost kan sende html-dokumenter. Men
   det å ta i mot html fra tredjepart og vise til en person i en nettleser er
