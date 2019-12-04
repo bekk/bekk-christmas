@@ -37,8 +37,6 @@ Denne øvelsen går ut på at man går to og to sammen, og lager portretter av h
 
 Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
 
-
-
 ## Historiestafett
 
 * Type: Energi, ice breaker
@@ -83,7 +81,12 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 
 ## Zombie Cats
 
-bli kjent
+* Type: Bli kjent
+* Tidsbruk**:** ca.10 min
+* Du trenger: Ingenting 
+* Antall deltagere: Passer for gruppearbeid
+
+bli kjent, 
 
 ## Funfact
 
