@@ -15,7 +15,7 @@ links: []
 authors:
   - Emil Øien Lunde
 ---
-Så og si all aktivitet på internett starter med et DNS-oppslag. Formålet med DNS er å oversette lesbare domenenavn, f.eks. bekk.no, til en IP-adresse som brukes til å opprette en forbindelse til en annen datamaskin. Disse oppslagene sendes som standard i klartekst, noe som betyr at andre enkelt kan lese og endre denne trafikken. Det betyr blant annet at:
+Så å si all aktivitet på internett starter med et DNS-oppslag. Formålet med DNS er å oversette lesbare domenenavn, f.eks. bekk.no, til en IP-adresse som brukes til å opprette en forbindelse til en annen datamaskin. Disse oppslagene sendes som standard i klartekst, noe som betyr at andre enkelt kan lese og endre denne trafikken. Det betyr blant annet at:
 - Regimer som ønsker å begrense innbyggernes tilgang til informasjon bruker det til å blokkere DNS-oppslag på utvalgte domener.
 - NSA og andre etterretningstjenester rundt om i verden utnytter dette i sine [angreps- og overvåkningsverktøy](https://www.wired.com/2014/03/quantum/). 
 - Amerikanske internettleverandører kan logge DNS-oppslag og [selge informasjonen til tredjeparter](https://arstechnica.com/information-technology/2017/03/how-isps-can-sell-your-web-history-and-how-to-stop-them/). 
