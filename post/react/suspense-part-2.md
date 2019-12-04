@@ -18,9 +18,9 @@ links:
 authors:
   - Julie Hill Roa
 ---
-Yesterday we learned about how Suspense can be used to support code splitting and lazy loading of components. Today however, we are going to look to the future and see what suspense will become. We will learn more about Suspense for data fetching and what Suspense is really all about: Creating a great loading experience for your app! 
+Yesterday we looked at how Suspense can be used to support code splitting and lazy loading of components. Today however, we are going to look to the future and see what suspense will become. We will learn more about Suspense for data fetching and what Suspense is really all about: Creating a great loading experience for your app! 
 
-_Disclaimer: The stuff we are going to look at today is not yet out in stable mode and might change over time. As Suspense for data fetching was a year ago is not as it is today. A lot is happening in the React community and I for one is excited to see what it will become!_
+_Disclaimer: The stuff we are going to look at today is not yet out in stable mode and might change over time. Suspense for data fetching a year ago is not as it is today. A lot is happening in the React community and I for one is excited to see what it will become!_
 
 # Suspense for data fetching
 
@@ -30,9 +30,9 @@ Suspense, as of React 16.6, is only waiting for lazy loaded components or code. 
 
 ## Faster loading time
 
-When we create an application, we strive for fast loading times and a UI the users can interact with as soon as possible. We can often accomplish this in today apps, but can we do even better? 
+When we create an application, we strive for fast loading times and a UI the users can interact with as soon as possible. We can accomplish this in apps today, but can we do even better? 
 
-As we develop components in need of external data, we usually fetch on render. When the component renders it notice that it is lacking data, witch triggers an `componantDidMount()` or an effect. We then fetch the data and while we wait, we render a spinner. When we get the data, we render the component again. This again will trigger the child’s loading state and _we get a new spinner_. It creates a waterfall of data fetching.
+As we develop components in need of external data, we usually fetch on render. When the component renders it notice that it is lacking data, witch triggers an `componantDidMount()` or an effect. We then fetch the data and while we wait, we render a spinner. When we get the data, we render the component again. This render will trigger the child’s loading state and _we get a new spinner_. It creates a waterfall of data fetching.
 
 With Suspense, we don’t wait for the data to come back. We start rendering as soon as the fetch request is sent. Let’s see how this might look:
 
@@ -53,7 +53,7 @@ function ChristmasGifts() {
 
 function WishList() {
     // Try to read whish info, although it might not have loaded yet
-    const wishList =  resource.whishes.read();`
+    const wishList =  resource.whishes.read();
     return (
         <ol>
             {wishList.map(wish => <li>{wish}</li>)}
@@ -81,17 +81,17 @@ function GiftTable() {
 };
 ```
 
-The first thing we notice is the resource. I do will not go into what this is so for all intents and purposes, let’s call it a cache. When read() is called it will return the value or, if the value does not exist, it will fetch the data.
+The first thing we notice is the resource. I will not go into what this is so for all intents and purposes, let’s call it a cache. When read() is called it will return the data or, if the data does not exist, it will fetch the data.
 
-React goes down the component tree. When React tries to render WishList, which is wrapped in a suspense component, WishList will suspend as the data is not yet fetched. React then skips WishList and try to render other components in the tree until there is nothing left to try. In our example, this means that the request for WishList data and the request for GiftTable data will go in parallel instead for a sequence. As our components are suspended React will find the closest suspense component above it in the tree and show the fallback component as it waits for the data. 
+React goes down the tree to render components. When React tries to render WishList, which is wrapped in a suspense component, WishList will suspend as the data is not yet fetched. React then skips WishList and try to render other components in the tree until there is nothing left to try. In our example, this means that the requests for WishList data and GiftTable data will go in parallel instead of a sequence as it would have done without Suspense. As our components are suspended React will find the closest suspense component above it in the tree and show the fallback as it waits for the data. 
 
 ## Percieved performance
 
-Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are rendered your application will seem slower than it is. This is perceived performance. 
+Your application might load as fast as it possibly can, but if the users experience a bunch of intermediate loading states and UI parts jumping around on the page as more content appears, your application will seem slower than it is. This is perceived performance. 
 
-As mentioned, with the waterfall method of data fetching we often see today, we can trigger multiple different loaders all over our page. When one spinner is replaced with actual content another one might be displayed. Our content to replace these spinners can also be shown to the user seemingly at random depending on the long the request takes to respond. The user might get content on the lower part of the page before the content on the top, and if we haven’t allocated fixed spaces for this content to show, an element the user has started to interact with can suddenly move further down the page. This is a perfect situation for Suspense to save the day!
+As mentioned, with the waterfall method of data fetching we often see today, we can trigger multiple different loaders all over our page. When one spinner is replaced with actual content another one might be displayed. Our components to replace these spinners can also be shown to the users seemingly at random depending on the response time. The user might get content on the lower part of the page before the content on the top. If we haven’t allocated fixed spaces for this content to appear in, an element the user has started interacting with can suddenly move down the page. This is a perfect situation for Suspense to save the day!
 
-If you use Suspense to handle your loading state while you fetch you can minimize the number of spinners. As a suspended component renders the fallback component of the nearest Suspense component, and suspense does not have to be an immediate parent, you can place suspense further up in the tree, wrapping multiple components that in the user’s mind fits together. The users will then hopefully see fewer loaders and a more holistic loading state.
+If you use Suspense to handle your loading state while you fetch you can minimize the number of spinners. As a suspended component will look for the nearest Suspense above it in the tree for the fall back to render, you can place suspense farther up, wrapping multiple components that, in the user’s mind, fits together. The users will then hopefully see fewer loaders and a more holistic loading state.
 
 ### SuspenseList
 
