@@ -42,15 +42,18 @@ const resource = ChristmasGiftsData();
 
 function ChristmasGifts() {
     return (
-        <Suspense fallback={<h1>We are loading...</h1>}>
+        <Suspense fallback={<h1>We are loading...🎅</h1>}>
             <WishLists/>
-            <Suspense fallback={<h1>We are loading...</h1>}>
+            <Suspense fallback={<h1>We are loading...🎅</h1>}>
                 <GiftTable/>
-            </Suspense>                        </Suspense>           );
+            </Suspense>
+        </Suspense>
+    );
 }
 
 function WishList() {
-    // Try to read whish info, although it might not have loaded yet         const wishList =  resource.whishes.read();`
+    // Try to read whish info, although it might not have loaded yet
+    const wishList =  resource.whishes.read();`
     return (
         <ol>
             {wishList.map(wish => <li>{wish}</li>)}
@@ -86,11 +89,47 @@ React goes down the component tree. When React tries to render WishList, which i
 
 Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are rendered your application will seem slower than it is. This is perceived performance. 
 
-As mentioned with the waterfall method of data fetching we often see today, we can trigger multiple different loaders all over our page. And when one spinner is replaced with actual content another one might be displayed. Our content to replace these spinners can also be shown to the user seemingly at random depending on the long the request takes to respond. The user might get content on the lower part of the page before the content on the top, and if we haven’t allocated fixed spaces for this content to show, an element the user has started to interact with can suddenly move further down the page. 
+As mentioned, with the waterfall method of data fetching we often see today, we can trigger multiple different loaders all over our page. When one spinner is replaced with actual content another one might be displayed. Our content to replace these spinners can also be shown to the user seemingly at random depending on the long the request takes to respond. The user might get content on the lower part of the page before the content on the top, and if we haven’t allocated fixed spaces for this content to show, an element the user has started to interact with can suddenly move further down the page. This is a perfect situation for Suspense to save the day!
 
+If you use Suspense to handle your loading state while you fetch you can minimize the number of spinners. As a suspended component renders the fallback component of the nearest Suspense component, and suspense does not have to be an immediate parent, you can place suspense further up in the tree, wrapping multiple components that in the user’s mind fits together. The users will then hopefully see fewer loaders and a more holistic loading state.
 
+### SuspenseList
+Another way to control how your user perceive your loading state is by using SuspenseList.Let’s look at an example again:
+```js
+function ChristmasGifts({ resource }) {
+  return (
+    <>
+      <Suspense fallback={<h1>We are loading...🎅</h1>}>
+        <WishList resource={resource} />
+      </Suspense>
+      <Suspense fallback={<h1>We are loading...🎅</h1>}>
+        <GiftTable resource={resource} />
+      </Suspense>
+    </>
+  );
+}
+```
+In this example, we have no control over the order these components is displayed to the user. It might be that WishList is displayed first or it can be GiftTable. One way of insuring that GiftTable is not displayed before WishList is to wrap them in the same suspense component. However, this means that you must wait for both the request for WishList and GiftTable to display them. What we do instead is to add SuspenseList.
+```js
+function ChristmasGifts({ resource }) {
+  return (
+    <SuspenseList 
+      revealOrder="forwards"
+      tail=”collapsed”
+    >
+      <Suspense fallback={<h2>Loading posts...</h2>}>
+        <WishList resource={resource} />
+      </Suspense>
+      <Suspense fallback={<h2>Loading fun facts...</h2>}>
+        <GiftTable resource={resource} />
+      </Suspense>
+    </SuspenseList>
+  );
+}
+```
+SuspenseList controls the order the closes suspense components appear in, independent of the order of the fetch responses. The property revealOrder either make the children appear in the same order as the children by setting the property to forward. It can also make all the children be displayed at once or in the opposite order as the children by setting the revealOrder  to backwards. 
 
-\-- more controll of what the users see in the loading state (suspenseList?)
+With the tail property set to collapsed you can also tell suspense to only show one fallback component at the time instead of both in this example. 
 
 ## Flexibility and developer experience
 
