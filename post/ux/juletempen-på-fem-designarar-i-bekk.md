@@ -17,10 +17,10 @@ links:
 authors:
   - Åshild Aaen Torpe
 ---
-## Guro Johansson, interaksjonsdesignar
+## Guro Johanson, interaksjonsdesignar
 
 <div style="max-width: 760px; margin: auto;">
-<img style="width: 320px" src="https://i.ibb.co/ZftwB7q/Guro-Johansson.jpg" alt="Guro Johansson" />
+<img style="width: 320px" src="https://i.ibb.co/ZftwB7q/Guro-Johansson.jpg" alt="Guro Johanson" />
 </div>
 
 **Kva jobbar du med akkurat no?**\
