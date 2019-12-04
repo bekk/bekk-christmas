@@ -95,7 +95,7 @@ If you use Suspense to handle your loading state while you fetch you can minimiz
 
 ### SuspenseList
 
-Another way to control how your user perceive your loading state is by using SuspenseList.Let’s look at an example again:
+Another way to control how your user perceive your loading state is by using SuspenseList. Let’s look at an example again:
 
 ```js
 function ChristmasGifts({ resource }) {
@@ -112,7 +112,7 @@ function ChristmasGifts({ resource }) {
 }
 ```
 
-In this example, we have no control over the order these components is displayed to the user. It might be that WishList is displayed first or it can be GiftTable. One way of insuring that GiftTable is not displayed before WishList is to wrap them in the same suspense component. However, this means that you must wait for both the request for WishList and GiftTable to display them. What we do instead is to add SuspenseList.
+In this example, we have no control over the order these components are displayed to the user. It might be that WishList is displayed first or it can be GiftTable. One way of insuring that GiftTable is not displayed before WishList is to wrap them in the same suspense component. However, this means that you must wait for the data response of both WhisList and GiftTable to display them. What we do instead is to add SuspenseList.
 
 ```js
 function ChristmasGifts({ resource }) {
@@ -132,20 +132,20 @@ function ChristmasGifts({ resource }) {
 }
 ```
 
-SuspenseList controls the order the closes suspense components appear in, independent of the order of the fetch responses. The property revealOrder either make the children appear in the same order as the children by setting the property to forward. It can also make all the children be displayed at once or in the opposite order as the children by setting the revealOrder  to backwards. 
+SuspenseList controls the order the closes suspense components appear in, independent of the order of the fetch responses. The property revealOrder either make the children appear in the same order as in the tree by setting the property to "forwards". It can also make all the children be displayed at once or in the opposite order as the children by setting the revealOrder to "together" og "backwards" respectively. 
 
 With the tail property set to collapsed you can also tell suspense to only show one fallback component at the time instead of both in this example. 
 
 ## useTransition
 
-As Caroline Odden mentions in the article about Concurrent Mode we can also wait a given time before we show anything to the user with useTransition. This is especially helpful in a page transition where we want to skip many loading states. Read more about useTransitions in [Stop… Render Time!](https://react.christmas/2019/2)
+As Caroline Odden mentions in the article about Concurrent Mode we can also wait a given time before we show anything to the user with `useTransition()`. This is especially helpful in a page transition where we want the loading state to be at seamlessly as possible. Read more about useTransitions in [Stop… Render Time!](https://react.christmas/2019/2)
 
 ## Developer experience
 
 Suspense has the added perk of not only enabling us to make great user experiences, but also great developer experiences. 
 
-The fact that we can remove the loading states from the component itself or having it be in a parent for that specific component gives us more readable code and less boiler plate. This also means that you can easily add more control over a component or less by adding a suspense parent or removing or putting it further up the tree. It is so flexible and it makes this more plug and play and again gives more time to focus on how our users experiences our loading states.
+The fact that we can remove the loading states from the component itself or having it be in a parent for that specific component gives us more readable code and less boiler plate. This also means that you can easily add more control over a component or less by adding a suspense parent or putting it further up the tree. It is so flexible and it gives developers more time to focus on how our users experiences our loading states.
 
 ## Not enough
 
-Even though this was a long article, it was quite a superficial walkthrough of Suspense for data fetching. I recommend spending more time learning about suspense. Why don’t watch some of the talks from React conf on your way to work or on the sofa after a long day of coding.
+Even though this was a long article, it was quite a superficial walkthrough of Suspense for data fetching. I recommend spending more time learning about Suspense. Why don’t watch [the keynote from React conf 2019](https://www.youtube.com/watch?v=uXEEL9mrkAQ&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=2) on your way to work or read the material posted by the React team.
