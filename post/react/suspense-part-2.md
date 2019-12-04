@@ -32,7 +32,7 @@ Suspense, as of React 16.6, is only waiting for lazy loaded components or code. 
 
 When we create an application, we strive for fast loading times and a UI the users can interact with as soon as possible. We can often accomplish this in today apps, but can we do even better? 
 
-As we develop components in need of external data, we usually fetch on render. When the component renders it notice that it is lacking data, witch triggers an `componantDidMount()` or an effect. We then fetch the data and while we wait, the component renders something else. When we get the data, we render the component again. If this component has a child also dependant on external the data, the same thing happens to this child. It creates a waterfall of data fetching.
+As we develop components in need of external data, we usually fetch on render. When the component renders it notice that it is lacking data, witch triggers an `componantDidMount()` or an effect. We then fetch the data and while we wait, we render a spinner. When we get the data, we render the component again. This again will trigger the child’s loading state and _we get a new spinner_. It creates a waterfall of data fetching.
 
 With Suspense, we don’t wait for the data to come back. We start rendering as soon as the fetch request is sent. Let’s see how this might look:
 
@@ -78,18 +78,18 @@ function GiftTable() {
 };
 ```
 
-The first thing we notice is the resource. I do will not go into what this is so for all intents and purposes, let’s call it a cache. When read is called it will return the value or, if the value does not exist, it will fetch the data. 
+The first thing we notice is the resource. I do will not go into what this is so for all intents and purposes, let’s call it a cache. When read is called it will return the value or, if the value does not exist, it will fetch the data.
 
-Suspense is wrapped around the // forklar – det faktumet at man fetcher så rendrer så får data kontra waterfall metoden som vi har I dag
-
-What is great about suspense is that when we go down the component tree, we do not stop at the first component dependant on fetching data. Suspense makes it possible to move further down the tree to see if anything else is ready. This means that even though we stopped at WishList to fetch we will still try to render GiftsTable. As GiftTable is also in need of external data we get these to fetch calls in parallel instead for a sequence. 
+React goes down the component tree. When React tries to render WishList, which is wrapped in a suspense component, WishList will suspend as the data is not yet fetched. React then skips WishList and try to render other components in the tree until there is nothing left to try. In our example, this means that the request for WishList data and the request for GiftTable data will go in parallel instead for a sequence. As our components are suspended React will find the closest suspense component above it in the tree and show the fallback component as it waits for the data. 
 
 ## Percieved performance
 
-Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are renered, your application will seem to have a lower loading time then it has. This is perceived performance. 
+Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are rendered, your application will seem to have a lower loading time then it has. This is perceived performance. 
 
 
 
 \-- more controll of what the users see in the loading state (suspenseList?)
 
 ## Flexibility and developer experience
+
+felxibilty: break up and destructure the code, loadingstates are not in the component, you can easily add or remove a suspense componant.
