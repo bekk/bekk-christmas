@@ -5,7 +5,7 @@ post_day: 8
 title: 'WIP: Interview with Olivier Tassinari'
 ingress: >-
   Today's interview is with [@olivtassinari](https://twitter.com/olivtassinari).
-  Oliviero is a web developer and the co-creator of
+  Olivier is a web developer and the co-creator of
   [Material-UI](https://material-ui.com/).
 ---
 The questions below came from a simple question we asked ourselves: 
@@ -45,4 +45,4 @@ We go very far on this end, as we are speaking, you can find about +10% of our o
 
 We are exploring the feasibility of an open core model. It’s the best approach we can think of to solve the comprehensiveness problem. We might see more projects try this direction.
 
-Thanks for taking the time to talk with us Oliviero! 💪
+Thanks for taking the time to talk with us Olivier! 💪
