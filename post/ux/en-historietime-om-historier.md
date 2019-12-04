@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 5
-title: En historietime om historier
+title: En liten historietime. Om historier.
 image: >-
   https://images.unsplash.com/photo-1561221308-79bb1063fde8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80
 ingress: "Historier sender ungene våre til drømmeland. Historier bygger solide merkevarer og får tårer til å trille på kino. Historier skaper helter. Skurker. Presidenter. Mytologier. Konspirasjoner. Legender.\_De er limet som skaper et fornuftig narrativ vi kan forholde oss til i dag, i morgen og til dagen historiene våre er alt som er igjen.\_\n\nVelkommen til en liten historietime. Om historier."
@@ -45,9 +45,9 @@ authors:
 > ## Gode historier er universelle 
 >
 > De rører ved noe i oss, uansett hvilken himmelretning vi tilhører, og hvilken epoke du har levd eller lever i, og omfatter alt fra urgamle fortellinger rundt leirbålet, eventyr og sagn til uforglemmelige filmøyeblikk, improviserte fortellinger på sengekanten, fantastiske reklamer og verdenskjent litteratur.
->
-> ![God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden.](/assets/volkswagen_think_small.jpg)
->
+
+![God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden.](/assets/volkswagen_think_small.jpg)
+
 > _God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden._
 >
 > ## Historier speiler samtiden 
@@ -75,6 +75,12 @@ authors:
 > For hvert teknologiske fremskritt, endres måten vi kommuniserer på. Nye kanaler, nye narrativ. Friendster. En gang i tiden var noveller og føljetong det hotteste man kunne oppleve. Så kom Myspace. Facebook. Instagram. Snapchat. TikTok. Plutselig hadde alle en historie å fortelle. Om kvaliteten på historiefortellingen økte, det kan diskuteres. Mer av alt ble det i alle fall. 
 >
 > Og viktigere enn noensinne ble det å finne folka som mestrer historiefortellingens kunst, de som kan skjære gjennom metertykke vegger av digital støy med verbale piruetter og skriftlig laserpresisjon.
+>
+> ![](/assets/zerocode-animasjon-ux-writing.gif)
+>
+> _Historiefortelling skjer ikke utelukkende med ord. Når du skriver inn passordet, holder Yetien hendene foran øynene. Underforstått forteller de oss at de bryr seg om vårt personvern._
+>
+>
 >
 > > __
 > >
