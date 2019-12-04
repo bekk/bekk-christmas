@@ -18,6 +18,8 @@ links:
   - title: Går det an å lage et brand på 3 timer? Vi har testet Google Brand Sprint
     url: >-
       https://medium.com/@jonsindrecosgrove/g%C3%A5r-det-an-%C3%A5-lage-et-brand-p%C3%A5-3-timer-vi-har-testet-google-brand-sprint-4215052c3249
+authors:
+  - Jon Sindre Cosgrove
 ---
 # **Strategi og merkevare**
 
