@@ -84,7 +84,9 @@ React goes down the component tree. When React tries to render WishList, which i
 
 ## Percieved performance
 
-Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are rendered, your application will seem to have a lower loading time then it has. This is perceived performance. 
+Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are rendered your application will seem slower than it is. This is perceived performance. 
+
+As mentioned with the waterfall method of data fetching we often see today, we can trigger multiple different loaders all over our page. And when one spinner is replaced with actual content another one might be displayed. Our content to replace these spinners can also be shown to the user seemingly at random depending on the long the request takes to respond. The user might get content on the lower part of the page before the content on the top, and if we haven’t allocated fixed spaces for this content to show, an element the user has started to interact with can suddenly move further down the page. 
 
 
 
