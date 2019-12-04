@@ -37,11 +37,11 @@ After defining your columns and rows, you can decide whether to position your it
 
 With grid-lines, you place each item by defining from which column/row line to which column/row line you want your item stretch. For instance, if I want my `.header` item to stretch from the first grid line to the last grid line I could use: `grid-column-start: 1` and `grid-column-end: 4`. However, I can also use a shorthand like  `grid-column: 1/4` .  So instead of two codelines, you could use just one! Check out the example below:
 
-<iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBdqb"></iframe>
+<iframe width="560" height="315" src="https://codepen.io/Myau/embed/yLyBdqb"></iframe>
 
 To use grid tracks, you first have to define your `grid-template-areas` by naming each cell. Then tell your grid item which cell(s) it should cover with just one line, `grid-area: header`. I prefer this method as it is less code and easier to remember the cell names rather than the grid lines 😊. 
 
-<iframe width="560" height="315" src="https://codepen.io/Myau/pen/PowYOyq"></iframe>
+<iframe width="560" height="315" src="https://codepen.io/Myau/embed/PowYOyq"></iframe>
 
 If the placement of your grid items is not defined then all direct children of the container will automatically be placed inside of each cell in the grid. Simple, right? ✨
 
@@ -57,7 +57,7 @@ To this simple pure grid markup:
 
 Not only does a pure flexbox layout require nested divs, but it also require more CSS to get padding or margin between each flex item to add spacing between your items. With Grid you can simply use `grid-gap`. 💁 
 
-<iframe width="560" height="315" src="https://codepen.io/Myau/pen/yLyBPaV"></iframe>
+<iframe width="560" height="315" src="https://codepen.io/Myau/embed/yLyBPaV"></iframe>
 
 Of course, Grid is not here to replace Flexbox, but rather allow you to write concise and more semantically correct code! So instead of drowning in infinite nested flex boxer, how about you start using a combination of both Grid and Flexbox? You will definitiely reap of the results! ☺️  ✨
 
