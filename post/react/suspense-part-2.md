@@ -35,6 +35,7 @@ As we develop components in need of external data, we usually fetch on render. W
 With Suspense, we don’t wait for the data to come back. We start rendering as soon as the fetch request is sent. Let’s see how this might look:
 
 ```js
+Example with modifications taken from https://reactjs.org/docs/concurrent-mode-suspense.html
 // Not a promise, but something that holds our data by Suspense spesifications
 const resource = ChristmasGiftsData();
 
@@ -96,6 +97,7 @@ If you use Suspense to handle your loading state while you fetch you can minimiz
 Another way to control how your user perceive your loading state is by using SuspenseList. Let’s look at an example again:
 
 ```js
+//Example with modifications taken from https://reactjs.org/docs/concurrent-mode-suspense.html
 function ChristmasGifts({ resource }) {
   return (
     <>
@@ -113,6 +115,7 @@ function ChristmasGifts({ resource }) {
 In this example, we have no control over the order these components are displayed to the user. It might be that WishList is displayed first or it can be GiftTable. One way of insuring that GiftTable is not displayed before WishList is to wrap them in the same suspense component. However, this means that you must wait for the data response of both WhisList and GiftTable to display them. What we do instead is to add SuspenseList.
 
 ```js
+//Example with modifications taken from https://reactjs.org/docs/concurrent-mode-suspense.html
 function ChristmasGifts({ resource }) {
   return (
     <SuspenseList 
