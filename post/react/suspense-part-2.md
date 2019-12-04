@@ -29,3 +29,56 @@ Suspense lets you delay the rendering of parts of the application tree until a c
 Suspense, as of React 16.6, is only waiting for lazy loaded components or code. The idea of Suspense in the future, is that it does not matter what it is, it can wait for anything – including data. This means that it could also be images or any other thing you fetch asynchronously.
 
 ## Why do we need Suspense?
+
+1. Faster loading time:
+2. Perceived performance
+3. Race conditions??
+4. Flexibility, and developer experience
+
+When we create an application, we strive for fast loading times and a UI the users can interact with as soon as possible. We can often accomplish this in today apps, but can we do even better? 
+
+As we develop components in need of external data, we usually fetch on render. When the component renders it notice that it is lacking data, witch triggers an `componantDidMount()` or an effect. We then fetch the data and while we wait, the component renders something else. When we get the data, we render the component again. If this component has a child also dependant on external the data, the same thing happens to this child. It creates a waterfall of data fetching.
+
+With Suspense, we don’t wait for the data to come back. We start rendering as soon as the fetch request is sent. Let’s see how this might look:
+
+```js
+// Not a promise, but something that holds our data by Suspense spesifications
+const resource = ChristmasGiftsData();
+
+function ChristmasGifts() {
+    return (
+        <Suspense fallback={<h1>We are loading...</h1>}>
+            <WishLists/>
+            <Suspense fallback={<h1>We are loading...</h1>}>
+                <GiftTable/>
+            </Suspense>         </Suspense>    );
+}
+
+function WishList() {
+    // Try to read whish info, although it might not have loaded yet     const wishList =  resource.whishes.read();`
+    return (
+        <ol>
+            {wishList.map(wish => <li>{wish}</li>)}
+        </ol>
+    )
+}
+
+function GiftTable() {
+    // Try to read gift info, although they might not have loaded yet  
+    const gifts = resource.gifts.read();
+    return (
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gift</th>
+            </tr>
+            <tr>
+                {gifts.map(gift => (
+                    <th>{gift.name}</th>
+                    <th>{gift.item}</th>
+                )}
+            </tr>
+        <table>
+    );
+};
+```
