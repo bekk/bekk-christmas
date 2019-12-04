@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 8
+post_day: 5
 title: Interview with Olivier Tassinari
 ingress: >-
   Today's interview is with [@olivtassinari](https://twitter.com/olivtassinari).
