@@ -2,11 +2,11 @@
 calendar: opensource
 post_year: 2019
 post_day: 8
-title: 'WIP: Interview with Olivier Tassinari'
+title: Interview with Olivier Tassinari
 ingress: >-
   Today's interview is with [@olivtassinari](https://twitter.com/olivtassinari).
-  Olivier is a web developer and the co-creator of
-  [Material-UI](https://material-ui.com/).
+  Olivier is a developer and the co-creator of the UI component library for
+  React: [Material-UI](https://material-ui.com/).
 ---
 The questions below came from a simple question we asked ourselves: 
 
