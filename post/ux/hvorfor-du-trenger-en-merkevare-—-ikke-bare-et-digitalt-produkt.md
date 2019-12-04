@@ -4,12 +4,6 @@ post_year: 2019
 post_day: 7
 title: Hvorfor du trenger en merkevare — ikke bare et digitalt produkt?
 ingress: >-
-  Skrevet av[ Jon Sindre
-  Cosgrove](https://www.linkedin.com/in/jonsindrecosgrove/) sammen med Arne
-  Magnus Mykkelbost og Nina Inberg.\
-
-  \
-
   I faggruppen Identitetsdesign i Bekk har vi tidligere i år arrangert en
   Brandsprint for seks oppstartere for å hjelpe dem med å konkretisere
   identiteten/merkevaren fra abstrakte tanker til en konkretisering av
@@ -20,6 +14,10 @@ ingress: >-
   strategi: Merkevarehistorien. Den danner grunnlaget for å bygge identiteten
   til We Ignite Tech.
 description: ''
+links:
+  - title: Går det an å lage et brand på 3 timer? Vi har testet Google Brand Sprint
+    url: >-
+      https://medium.com/@jonsindrecosgrove/g%C3%A5r-det-an-%C3%A5-lage-et-brand-p%C3%A5-3-timer-vi-har-testet-google-brand-sprint-4215052c3249
 ---
 # **Strategi og merkevare**
 
