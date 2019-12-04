@@ -5,15 +5,19 @@ post_day: 7
 title: On the second day of KotlinConf
 image: >-
   https://upload.wikimedia.org/wikipedia/commons/6/61/Tivoli_Copenhagen_night.jpg
-ingress: Day 2
+ingress: >-
+  KotlinConf 2019 is over. :cry: Two fantastic days of talks, confersations and
+  conversations. Here are some of the highlights from day 2.    
 links:
   - title: 'Day 2 talks '
     url: 'https://kotlinconf.com/talks/6-dec'
 ---
-- common first talk 
-- talks
-- exhibition
-- puzzlers
-- closing panel
+Forslag til ting å skrive om:
 
+* common first talk 
+* talks
+* exhibition
+* puzzlers
+* closing panel
 
+**See you in <fyll inn eneste års lokasjon>!**
