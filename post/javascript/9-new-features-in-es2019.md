@@ -13,11 +13,10 @@ ingress: >-
 ## String.trimStart() and String.trimEnd()
 
 ​
-_String.trim()_ is probably known to most, and has been a part of the ECMAScript standard since ES5. The _String.trim()_ method removes whitespace from both the beginning and the end of a string.
-​
-With the new methods _trimStart()_ and _trimEnd()_ we can now choose which end of the string we want to trim.
+_`String.trim()`_ is probably known to most, and has been a part of the ECMAScript standard since ES5. It  removes whitespace from both the beginning and the end of a string.
 
 
+With the new methods _`trimStart()`_ and _`trimEnd()`_ we can now choose which end of the string we want to trim.
 
 ```js
 const string = ' ES2019! Yay! ';
@@ -31,8 +30,7 @@ string.trimEnd();
 
 ## Object.fromEntries()
 
-
-_Object.fromEntries()_ simply converts a list of key-value pairs into a object.
+_`Object.fromEntries()`_ simply converts a list of key-value pairs into a object.
 ​
 
 ```js
@@ -46,7 +44,7 @@ const object = Object.fromEntries(entries);
 ## Array.flat() og Array.flatMap()
 
 ​
-_Array.flat()_ lets us flatten nested lists down to a depth specified by the integer parameter in the function call. The parameter can also be omitted and the function will use a default value of 1. Equal to calling _flat(1)_.
+_`Array.flat()`_ lets us flatten nested lists down to a depth specified by the integer parameter in the function call. The parameter can also be omitted and the function will use a default value of 1, equal to calling _`flat(1)`_.
 ​
 
 ```js
@@ -57,9 +55,9 @@ _Array.flat()_ lets us flatten nested lists down to a depth specified by the int
 ```
 
 ​
-_Array.flatMap()_ is also a new feature on the _Array_ prototype. In practice, flatMap is a combination of _Array.map()_ and _Array.flat()_. It first runs a mapping function over the list and then tries to flatten the result.
+_`Array.flatMap()`_ is also a new feature on the _Array_ prototype. It's a combination of _`Array.map()`_ and _`Array.flat()`_. It first runs a mapping function over the list and then tries to flatten the result.
 ​
-Unlike _Array.flat()_, where it is possible to specify a parameter for how deep in the nesting the lists should be flattened, _Array.flatMap()_ uses _Array.flat()_ under the hood and will therefore only flatten one level deep.
+Unlike _`Array.flat()`_, where it is possible to specify a parameter for how deep in the nesting the lists should be flattened, _`Array.flatMap()`_ uses _`Array.flat()`_ under the hood and therefore only flattens one level deep.
 ​
 
 ## Symbol.description
@@ -153,7 +151,7 @@ If you like using emojis in your code you might have seen the following:
 ​
 The reason JavaScript interprets the emoji as two characters is because UTF-16 represents emojis (and other, unusual characters) as a combination of two surrogates. Our emoji is encoded with the characters '\uD83D' and '\uDE0E'. However, if you try to write such a character alone, such as '\uD83D', this is considered to be an invalid text string.
 ​
-The news in ES2019 is how _JSON.stringify()_ handles such lonely surrogates. In earlier versions, these would be replaced with a special character:
+The news in ES2019 is how _`JSON.stringify()`_ handles such lonely surrogates. In earlier versions, these would be replaced with a special character:
 ​
 
 ```js
@@ -171,7 +169,7 @@ JSON.stringify('\uD83D');
 ```
 
 ​
-Note that _JSON.parse(stringified)_ works just as before!
+Note that _`JSON.parse(stringified)`_ works just as before!
 ​
 
 ## Stable Array#sort
@@ -185,7 +183,7 @@ Check if your browser [uses a stable sorting algorithm!](https://mathiasbynens.b
 ## Revised Function#toString
 
 ​
-As of ES2019 _Function.toString()_ will return actual text snippets from the source code from the function start to end. This means that comments, spaces, and syntax details will also be returned.
+As of ES2019 _`Function.toString()`_ will return actual text snippets from the source code from the function start to end. This means that comments, spaces, and syntax details will also be returned.
 ​
 Let's say we have a function `foo`:
 ​
