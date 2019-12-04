@@ -3,6 +3,10 @@ calendar: security
 post_year: 2019
 post_day: 11
 title: FIDO2 - the web authentication standard of the (near) future
+links:
+  - title: When can we finally get rid of passwords?
+    url: >-
+      https://www.theverge.com/2019/4/24/18514225/passwords-fido2-authentication-webauthn-security-key-cybersecurity-online-browser-web
 authors:
   - Emil Øien Lunde
 ---
@@ -41,3 +45,7 @@ In the authentication scenario you may have noticed that the authenticator is no
 So what exactly makes FIDO2 better than using passwords? First of all, the secret, which in this case is the private key, never leaves the device. It is also locked behind some authentication mechanism on the device itself. This makes it a lot less likely that someone will be able to steal your secret. If some website is breached, only the public key, which can not be used to impersonate a legitimate user, will be available to the attacker. Additionally, FIDO2 has built-in phishing protection. The private key is scoped to a specific domain, meaning it can only be used to authenticate on the same domain for which the key was generated. FIDO2 also protects against replay attacks. The challenge that has to be signed is randomly generated each time a sign in is initiated and can only be used once. If someone attempts to reuse a signed challenge, no access will be granted.
 
 FIDO2 support is increasing. Most major web browsers have already implemented WebAuthn, whilst devices running Android 7.0+ or Windows 10 can be used as FIDO2 authenticators. Now it’s mostly up to websites to start offering FIDO2 authentication. Companies like Google and Github allow you to use your FIDO2 security key as a second factor of authentication, whilst Microsoft allows you to use is it as a single factor of authentication, providing a true passwordless experience. If you’re using a WebAuthn compatible browser on one of the devices mentioned earlier, you can test out yourself at webauthn.io. 
+
+This is all good, but what happens if you lose the device holding all the security keys? Perhaps the biggest obstacle to reaching widespread FIDO2 adoption at the moment is coming up with a recovery mechanism that is both secure and user friendly. The current recommendation is to register a second authenticator with each relying party. If you lose one of your devices, you can still get access to your account with the other authenticator. This is definitely not very user friendly and is hopefully something that will be solved in the future.
+
+If you're interested in reading about an alternative to FIDO2 that is also based on public key cryptography, check out this post about [SQRL](https://security.christmas/2019/2). Or if you want to learn more about WebAuthn, [click here](https://security.christmas/2019/16) (available from December 16).
