@@ -80,11 +80,7 @@ authors:
 >
 > _Historiefortelling skjer ikke utelukkende med ord. Når du skriver inn passordet, holder Yetien hendene foran øynene. Underforstått forteller de oss at de bryr seg om vårt personvern._
 >
->
->
-> > __
-> >
-> > > > _"Det finnes ikke ett konkret svar på hvorfor vi forteller historier. Mye viktigere er begeistringen og den endeløse undringen over tingenes tilstand, kommunikasjon som et kreativt bindemiddel og hvordan ord endrer adferd."_
+> > > >
 
 ![Historien om det å være far gjennom et helt liv. Ført i pennen av tekstforfatter Anders Molstad. Legg merke til detaljnivået i bildet som bare forsterker opplevelsen.](/assets/jølstad.jpeg)
 
@@ -100,7 +96,13 @@ authors:
 >
 > ## Fortell det som er, som det er
 >
-> Ingen liker å bli lurt. Kamuflerte hensikter og påkostede, misledende budskap uten oppriktighet i bånn, kveler tilliten. Si det som det er, rått og brutalt. Eller elegant, vakkert, tydelig, forklarende. Alt ettersom. Historier som vekker emosjoner gjør det lettere å forvalte tillit. På samme måte som tekster som forenkler og oppklarer sikrer lojale og fornøyde brukere. Gode, sårbare og ærlige tekster og historier er god service, god merkevarebygging og god fornøyelse.
+> Ingen liker å bli lurt. Kamuflerte hensikter og påkostede, misledende budskap uten oppriktighet i bånn, kveler tilliten. Si det som det er, rått og brutalt. Eller elegant, vakkert, tydelig, forklarende. Alt ettersom. Historier som vekker emosjoner gjør det lettere å forvalte tillit. På samme måte som tekster som forenkler og oppklarer sikrer lojale og fornøyde brukere. Gode, sårbare og ærlige tekster og historier er god service, god merkevarebygging og god fornøyelse. 
+>
+>
+>
+> ## Og viktigst av alt
+>
+> Det finnes ikke ett konkret svar på hvorfor vi forteller historier. Mye viktigere er begeistringen og den endeløse undringen over tingenes tilstand, kommunikasjon som et emosjonelt bindemiddel og hvordan ord endrer adferd. 
 >
 > > _In communications, familiarity breeds apathy._
 > >
