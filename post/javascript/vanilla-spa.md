@@ -186,7 +186,7 @@ Bringing it all together and we have a working SPA.
   (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-##Final thoughts
+## Final thoughts
 
 Not bad, considering it is only a few lines of HTML, CSS, and Javascript? Imight not use frameworks for all of my pet projects in the time to come. But I will probably continue using frameworks for more significant projects with other developers. I would prefer not to create my version of [BobX](https://thedailywtf.com/articles/We-Use-BobX). 
 
