@@ -30,10 +30,9 @@ Suspense, as of React 16.6, is only waiting for lazy loaded components or code. 
 
 ## Why do we need Suspense?
 
-1. Faster loading time:
-2. Perceived performance
-3. Race conditions??
-4. Flexibility, and developer experience
+1. Faster loading time: (pågående)
+2. Perceived performance -- more controll of what the users see in the loading state (suspenseList?)
+3. Flexibility, and developer experience
 
 When we create an application, we strive for fast loading times and a UI the users can interact with as soon as possible. We can often accomplish this in today apps, but can we do even better? 
 
@@ -51,7 +50,7 @@ function ChristmasGifts() {
             <WishLists/>
             <Suspense fallback={<h1>We are loading...</h1>}>
                 <GiftTable/>
-            </Suspense>         </Suspense>    );
+            </Suspense>                 </Suspense>        );
 }
 
 function WishList() {
@@ -82,3 +81,9 @@ function GiftTable() {
     );
 };
 ```
+
+The first thing we notice is the resource. I do will not go into what this is so for all intents and purposes, let’s call it a cache. When read is called it will return the value or, if the value does not exist, it will fetch the data. 
+
+Suspense is wrapped around the // forklar – det faktumet at man fetcher så rendrer så får data kontra waterfall metoden som vi har I dag
+
+What is great about suspense is that when we go down the component tree, we do not stop at the first component dependant on fetching data. Suspense makes it possible to move further down the tree to see if anything else is ready. This means that even though we stopped at WishList to fetch we will still try to render GiftsTable. As GiftTable is also in need of external data we get these to fetch calls in parallel instead for a sequence.
