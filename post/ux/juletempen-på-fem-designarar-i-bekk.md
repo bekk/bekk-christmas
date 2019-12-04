@@ -20,7 +20,7 @@ authors:
 ## Guro Johanson, interaksjonsdesignar
 
 <div style="max-width: 760px; margin: auto;">
-<img style="width: 320px" src="https://i.ibb.co/9b1Vs7d/Guro.jpg" alt="Guro Johanson" />
+<img style="width: 320px" src="https://i.ibb.co/khQ7SCh/Guro-Johanson-lite.jpg" alt="Guro Johanson" />
 </div>
 
 **Kva jobbar du med akkurat no?**\
