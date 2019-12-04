@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 13
+post_day: 12
 title: 3 steps to improving your GitHub-experience
 image: 'https://images.unsplash.com/photo-1574949957924-0b1dcdc319bb'
 ingress: "By helping others help you, you're setting yourself up for less friction.\nHere are 3 steps towards making the whole experience as smooth as possible \U0001F600"
