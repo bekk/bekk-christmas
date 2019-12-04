@@ -9,11 +9,11 @@ ingress: Let us look at what it takes to create our own SPA
 authors:
   - Dag Frode Solberg
 ---
-Back when I started studying IT, I figured I wanted to create a Single Page Application(SPA). I knew some HTML, CSS, and JavaScript, and that was enough to get something up and running.
+Back when I started studying IT, I wanted to create a Single Page Application(SPA). I knew some HTML, CSS, and JavaScript, and that was enough to get something up and running.
 
-It is easy to add React, Vue, or Angular, to a project that might not need it. Writing everything from scratch is a way to reminds us of what these frameworks solve for us and how they limit us.
+It is easy to add React, Vue, or Angular to a project that might not need it. Writing everything from scratch is a way to remind us of what these frameworks solve for us and how they limit us.
 
-Let's look at how we can create a simple SPA.
+Let’s look at how we can create a simple SPA, just using vanilla JavaScript.
 
 
 ## Templates
@@ -74,7 +74,7 @@ We now have multiple pages in our SPA, most of them hidden with CSS. To make thi
 
 By using the function `window.onhashchange`, we can detect when the hash in the URL changes. Combining this with anchors, and we have a way detect when we should changing the content of the SPA.
 
-The URL hash is easily accessible trough `location.hash`.
+The URL hash is easily accessible through `location.hash`.
 
 ```js
 var path;
@@ -140,7 +140,7 @@ pageFunctions.page404 = function() {
 };
 ```
 
-To run the custom code, we need to hock the custom code to the navigate function by adding some code to the end of our navigate function.
+To run the custom code, we need to hook the custom code to the navigate function by adding some code to the end of our navigate function.
 
 ```js
 //Run custom page code if it exists
@@ -185,6 +185,8 @@ Bringing it all together and we have a working SPA.
   See the Pen <a href='https://codepen.io/dagfs/pen/abbrJYp'>Vanilla SPA</a> by Dag
   (<a href='https://codepen.io/dagfs'>@dagfs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+##Final thoughts
 
 Not bad, considering it is only a few lines of HTML, CSS, and Javascript? Imight not use frameworks for all of my pet projects in the time to come. But I will probably continue using frameworks for more significant projects with other developers. I would prefer not to create my version of [BobX](https://thedailywtf.com/articles/We-Use-BobX). 
 
