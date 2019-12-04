@@ -20,7 +20,7 @@ authors:
 ## Guro Johanson, interaksjonsdesignar
 
 <div style="max-width: 760px; margin: auto;">
-<img style="width: 320px" src="https://i.ibb.co/CmJ0tyy/Guro-Johansson.jpg" alt="Guro Johanson" />
+<img style="width: 320px" src="https://i.ibb.co/9b1Vs7d/Guro.jpg" alt="Guro Johanson" />
 </div>
 
 **Kva jobbar du med akkurat no?**\
@@ -46,7 +46,7 @@ Det blir ikke ordentlig juleaften uten Tre nøtter til Askepott! Favorittjulelå
 ## Robert Austnes, visuell designar
 
 <div style="max-width: 760px; margin: auto;">
-<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Guro Johansson" />
+<img style="width: 320px" src="https://i.ibb.co/XFXjRXC/Robert-Austnes.jpg" alt="Robert Austnes" />
 </div>
 
 **Kva jobbar du med akkurat no?**\
