@@ -75,16 +75,12 @@ authors:
 > For hvert teknologiske fremskritt, endres måten vi kommuniserer på. Nye kanaler, nye narrativ. Friendster. En gang i tiden var noveller og føljetong det hotteste man kunne oppleve. Så kom Myspace. Facebook. Instagram. Snapchat. TikTok. Plutselig hadde alle en historie å fortelle. Om kvaliteten på historiefortellingen økte, det kan diskuteres. Mer av alt ble det i alle fall. 
 >
 > Og viktigere enn noensinne ble det å finne folka som mestrer historiefortellingens kunst, de som kan skjære gjennom metertykke vegger av digital støy med verbale piruetter og skriftlig laserpresisjon.
->
-> ![](/assets/zerocode-animasjon-ux-writing.gif)
->
+
+![](/assets/zerocode-animasjon-ux-writing.gif)
+
 > _Historiefortelling skjer ikke utelukkende med ord. Når du skriver inn passordet, holder Yetien hendene foran øynene. Underforstått forteller de oss at de bryr seg om vårt personvern._
 >
 > > > >
-
-![Historien om det å være far gjennom et helt liv. Ført i pennen av tekstforfatter Anders Molstad. Legg merke til detaljnivået i bildet som bare forsterker opplevelsen.](/assets/jølstad.jpeg)
-
-> _Historien om det å være far gjennom et helt liv. Ført i pennen av tekstforfatter Anders Molstad. Legg merke til detaljnivået i bildet som bare forsterker opplevelsen._
 >
 > __
 >
