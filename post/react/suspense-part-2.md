@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 5
-title: Can you fell the Suspense?!
+title: Can you feel the Suspense?!
 image: >-
   https://images.unsplash.com/photo-1566513875272-0e184c92b77c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80
 ingress: >-
@@ -26,4 +26,6 @@ _Disclaimer: The stuff we are going to look at today is not yet out in stable mo
 
 Suspense lets you delay the rendering of parts of the application tree until a condition is met. This condition can either be that an asset is loaded or, soon, that _data is fetched_. While waiting for the condition to be met, Suspense will render a fallback component instead. This might be a spinner, a loading animation or any other dumb component.
 
-Suspense right now is just handling components loaded lazily
+Suspense, as of React 16.6, is only waiting for lazy loaded components or code. The idea of Suspense in the future, is that it does not matter what it is, it can wait for anything – including data. This means that it could also be images or any other thing you fetch asynchronously.
+
+## Why do we need Suspense?
