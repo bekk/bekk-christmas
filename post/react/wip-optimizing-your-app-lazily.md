@@ -53,10 +53,10 @@ However, introducing React.lazy and Suspence, we can choose to only load the rel
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const App = () => {
-  const Homepage = React.lazy(() => import('./pages/Home'));
-  const BusinessCase = React.lazy(() => import('./pages/BusinessCase'));
+const Homepage = React.lazy(() => import('./pages/Home'));
+const BusinessCase = React.lazy(() => import('./pages/BusinessCase'));
 
+const App = () => {
   return (
     <div id="app">
       <Router>
