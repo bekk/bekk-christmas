@@ -50,7 +50,7 @@ Det blir ikke ordentlig juleaften uten Tre nøtter til Askepott! Favorittjulelå
 </div>
 
 **Kva jobbar du med akkurat no?**\
-Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgaver i Bekk, mens på prosjekt hos Vy er jeg innom å lage designsystem, nytt ikonbibliotek og utvikling av den nye taxitjenesten som dukker opp om ikke så altfor lenge.
+Jeg jobber med litt av alt om dagen. Mye av tiden går til administrative oppgaver i Bekk, mens på prosjekt hos Vy er jeg innom designsystem, nytt ikonbibliotek og utvikling av den nye taxitjenesten som dukker opp om ikke så altfor lenge.
 
 **Kva er du mest nøgd med å ha fått til i år?**\
 Jeg er fornøyd med å ha bidratt til å bygge Vy sin nye merkevare. Det er bare i startfasen enda på uttak digitalt, men med et stadig bedre designsystem, omskriving av kode og flinke designere som dytter på, skjer det mye bra fremover.
