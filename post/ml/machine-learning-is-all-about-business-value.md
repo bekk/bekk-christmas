@@ -27,11 +27,7 @@ Gradually marketers and business developers also opened their eyes to ML, and ne
 
 Each of these use cases are in themselves pretty interesting, and we could easily go on and on to describe them more in detail. But that would require an unreasonable long blog post. So we‘ll instead leave you with a summary of some of the application areas we find most interesting, categorized according to the business value they provide (kind of), before providing a short example. 
 
-
-
-![](/assets/ml_4_pic1.png)
-
-
+![](/assets/ml_4_pic1-updated.png)
 
 ###Example: Using machine learning to increase customer profitability
 
@@ -48,13 +44,11 @@ To summarize, our research required us to develop profitability models with cust
 
 ![](/assets/ml_4_pic2.png)
 
-
-
 In practice we often also need more fine-grained representations of CLV to do real-life calculations. Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. Even though CLV is a well-established concept, we believe this is an important reason why CLV has had limited practical implementation. 
 
 Stuck with what seemed to be too complex calculations in our research; in came machine learning in white and shining amour. Without going into all the details: Based on available customer information, computers can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined as we go along:
 
-![](/assets/ml_4_pic3.png)
+![](/assets/ml_4_pic-3-updated.png)
 
 Too difficult and expensive, you say? Contrary to some beliefs such a model can be created and set up relatively easy, with low investment costs. In our research we also encountered Norwegian companies that already have a fully functional CLV-model running, with very promising results. And even better: When you have a ML model using customer data running, you have a good foundation for expanding your model to support other areas of application, as seen in the illustration further up. 
 
