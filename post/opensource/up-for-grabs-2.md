@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 7
+post_day: 9
 title: Digipost html validator
 ingress: >-
   Virksomheter som sender meldinger i Digipost kan sende html-dokumenter. Men
