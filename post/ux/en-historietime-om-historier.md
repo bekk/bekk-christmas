@@ -50,6 +50,18 @@ authors:
 
 > _God historiefortelling og retorikk var helt avgjørende for å hjelpe en tyskprodusert bil å etablere seg i Amerika i etterkrigstiden._
 >
+> __
+>
+> ## Gode historier er big business
+>
+> Ett døgn etter at Disney lanserte sin Plus-tjeneste nådde de 10 millioner abonnenter 👀
+>
+> https://fortune.com/2019/11/13/disney-plus-10-million-subscribers-free-trial-verizon-stock/
+>
+> ![](/assets/disney-plus.jpg)
+>
+> __
+>
 > ## Historier speiler samtiden 
 >
 > Fakta: Vi forstår det ukjente gjennom det kjente. Forenklede forklaringer på universets daglige mysterier har vært - og er fremdeles– tvingende nødvendig. For hvis man ikke skjønte hva som faktisk foregikk, var det mye enklere å koble det til den mest åpenbare sammenhengen innen rekkevidde. Lyn og torden, Tor med hammer'n. Menneskets opprinnelse, Adam og Eva. Big bang, Gud. Vant i lotto og hadde på meg den gamle lusekoften etter bestefar? Min nye lykkegenser 🦄 
