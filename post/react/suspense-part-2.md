@@ -86,6 +86,10 @@ What is great about suspense is that when we go down the component tree, we do n
 
 ## Percieved performance
 
+Your application can load as fast as it wants, but if the users experience many intermediate loading states and UI parts jumping around on the page as more components are renered, your application will seem to have a lower loading time then it has. This is perceived performance. 
+
+
+
 \-- more controll of what the users see in the loading state (suspenseList?)
 
 ## Flexibility and developer experience
