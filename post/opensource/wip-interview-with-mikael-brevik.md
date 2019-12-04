@@ -7,7 +7,7 @@ ingress: "Today's interview is with [@mikaelbrevik](https://twitter.com/mikaelbr
 authors:
   - Henrik Walker Moe
 ---
-The questions were sourced internally based on a simple question we asked ourselves: 
+The questions below came from a simple question we asked ourselves: 
 
 > if you had the chance, what would you ask an Open source maintainer/person/community member.
 
