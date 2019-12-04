@@ -1,14 +1,12 @@
 ---
 calendar: kotlin
 post_year: 2019
-post_day: 16
+post_day: 17
 title: Typesafe Error Handling in Kotlin
 authors:
   - Fredrik Løberg
 ---
 WIP...
-
-# Typesafe Error Handling in Kotlin
 
 In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. We can do whatever we want. As long as the object we are throwing is a subtype of `Throwable`, the compiler will not complain. This sounds like a good thing, right? Well, _it depends_.
 
