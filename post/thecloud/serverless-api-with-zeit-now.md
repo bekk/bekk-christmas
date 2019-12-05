@@ -29,20 +29,39 @@ Before we start, we need to prepare some stuff.
 * Next, initlize the project with `npm init` to create a `package.json`.
 
 ## Constructing the API
-Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with underscore, like this `_utils.js`. If you prefix a folder with underscore, none of the files inside it will be executed by Now.
+Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with underscore, like `_utils.js`. If you prefix a folder with underscore, *none* of the files inside it will be executed by Now.
 
-So let's add `gift-lists.js` in the `api` directory and write these lines of code:
+So let's add `gift-lists.js` to the `api` directory and write these lines of code:
 
 ```javascript
 module.exports = (req, res) => {
   const giftLists = [
-    { id: "001", "gift-list": ["Lego", "Candy"] },
-    { id: "002", "gift-list": ["Dracco Heads", "Hot Wheels"] }
+    { name: "Hannah", "gift-list": ["Lego", "Candy"] },
+    { name: "Christine", "gift-list": ["Dracco Heads", "Hot Wheels"] }
   ];
   res.json({ giftLists });
 };
 ```
 
-This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each Node.js Serveless Function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
+This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serveless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
+
+We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass that value to the function. So let's create a `[name].js` file in the `api` directory. Inside this file, write this simple function:
+
+```javascript
+module.exports = (req, res) => {
+  const {
+    query: { name }
+  } = req;
+
+  const giftLists = [
+    { name: "Hannah", "gift-list": ["Lego", "Candy"] },
+    { name: "Christine", "gift-list": ["Dracco Heads", "Hot Wheels"] }
+  ];
+  
+  res.json({
+    giftList: giftLists.find(x => x.name === name)
+  });
+};
+```
 
 
