@@ -7,8 +7,8 @@ image: 'https://picsum.photos/id/964/800/300?blur=5'
 ingress: >-
   Every object in Java has a `toString()` method which can be called to get a
   String-representation of any object at hand. If left unoverridden, it only
-  yields a description of it’s class and location in memory, and not really
-  useful for much.
+  yields a description of its class and hash code, and not really useful for
+  much.
 authors:
   - Rune Flobakk
 ---
