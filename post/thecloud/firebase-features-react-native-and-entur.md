@@ -55,14 +55,18 @@ When we first started developing the Entur app three years ago, all the communic
 >
 > _https://firebase.google.com/docs/functions_
 
-Sounds great, right! But there was especially one thing we were curious about if we wore going to use Cloud Functions. And that was the _cold start_. Since these functions are serverless, the cloud server might shut down if there is no traffic, and then have to start up again it’s triggered. SInce there is no built-in way to keep the server running, our workaround was pinging some of our functions now and then, to ensure that it was kept alive, and the user gets a fast response. With more active users calling our API’s through our BFF, this pinging might no longer be necessary any more, because the most used functions is being kept alive by all the traffic. 
+Sounds great, right! But there was especially one thing we were curious about if we wore going to use Cloud Functions. And that was the _cold start_. Since these functions are serverless, the cloud server might shut down if there is no traffic, and then have to start up again it’s triggered. SInce there is no built-in way to keep the server running, our workaround was pinging some of our functions now and then to ensure that it was kept alive, so that the app user would get a fast response. 
+
+With more active users calling our API’s through our BFF, this pinging might no longer be necessary any more, because most of our functions now is being kept alive by continuous traffic. 
 
 In retrospective, we are very satisfied with what cloud functions have provided us. It was fast and easy to get up to run, it is stable and scales automatically. It is something we really would recommend if you want a simple backend to get started with. Nevertheless, we are now thinking about porting some of our functions to something like Google Cloud Run. This will give us some extra features that Firebase Functions can’t give us right now. This be processing concurrent requests on the same instance, as well as being able to reduce the latency even more than what we can get from Cloud Functions.
 
 ## More Firebase features
 
-Firebase offers a lot of different features. Remote config and Cloud Functions are just two of them. For caching of data and backup of the public transporting tickets we are using Cloud Firestore, a scalable NoSQL database. Fabric.io was previously used for app distribution, but this is now all integrated into Firebase App Distribution. To test app features, we are using Firebase A/B Testing to get some real world statistics of how successful or unsuccessful new functionality might end up to be.
+Firebase offers a lot of different features. Remote config and Cloud Functions are just two of them. For caching of data and backup of the public transport tickets we are using Cloud Firestore, a scalable NoSQL database. Fabric.io was previously used for app distribution, but this is now all integrated into Firebase App Distribution. And for testing of new app features, we are using Firebase A/B Testing to get some real world statistics of how successful or unsuccessful this new functionality might end up to be.
 
 ## Summary
 
-Using Firebase for the last couple of years have for us been a very satisfying experience. To be able to have at least some control of the features in a distributed mobile application, Firebase have provided us with the functionality we been needed. Remote config have enabled us to turn features on and off, or add scheduled info messages. While the Firebase functions have made it possible for us to move a lot of business logic out of the app to a more controllable environment. We are looking forward to see what more to come from Firebase over the next years.
+Using Firebase for the last couple of years have for us been a very satisfying experience. To be able to have at least some control of the features in a distributed mobile application, Firebase have provided us with the functionality we been needed. Remote config have enabled us to turn features on and off, or add scheduled information messages directly into everyone's app. While Firebase Cloud Functions have made it possible for us to move a lot of business logic out of the app to a more controllable environment. 
+
+We are looking forward to see what more to come from Firebase over the next years!
