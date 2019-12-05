@@ -36,7 +36,7 @@ Before we start, we need to prepare some stuff.
 * Next, initlize the project with `npm init` to create a `package.json`.
 
 ## Constructing the API
-Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extension is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with an underscore, like `_utils.js`. If you prefix a folder with an underscore, *none* of the files inside it will be executed by Now.
+Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extension is supported, we put in this folder will be automatically executed when someone visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with an underscore, like `_utils.js`. If you prefix a folder with an underscore, *none* of the files inside it will be executed by Now.
 
 Let's make the directory with `mkdir api && cd api`, create the first endpoint with `touch gift-lists.js` and write these lines of code:
 
