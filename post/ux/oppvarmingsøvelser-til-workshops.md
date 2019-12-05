@@ -54,11 +54,11 @@ Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme s
 
 **Hvorfor**
 
-Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshopen. Dette har blitt en av mine favoritter, da sen er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. 
+Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshopen. Dette har blitt en av mine favoritter, da den er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. 
 
 **Hvordan**
 
-1. Hvert av "stafettlagene" stiller seg på rekke med en plakat på veggen foran seg. Førstemann har en penn i hånden, klar til å starte historien.
+1. Hvert av "stafettlagene" stiller seg på rekke med en plaka/noe å tegne på på veggen foran seg. Førstemann har en penn i hånden, klar til å starte historien.
 2. Fasilitator setter på en sang, gjerne en med litt tempo, og historiestafetten er i gang!
 3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen (tusjen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
