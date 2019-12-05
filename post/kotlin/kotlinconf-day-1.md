@@ -29,7 +29,7 @@ The registration went smoothly, and after leaving our coats in the cloakroom, we
 
 ## Talks
 
-As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin,1.4 is on it's way! After the keynote, a long day filled with many excellent talks started, some of which we will present here.  
+As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin 1.4 is on it's way! After the keynote, a long day filled with many excellent talks started, some of which we will present here.  
 
 ### Putting Down the Golden Hammer
 
@@ -39,13 +39,13 @@ Keep using the great features of Kotlin, but always make the intention of your c
 
 ### Kotless
 
-A fantastic talk about [Kotless](https://github.com/JetBrains/kotless), a serverless framework, by [Vladislav Tankov](https://github.com/TanVD). The talk started with a short introduction to serverless and continued on about some of the issues with it. In theory serverless sounds really nice, as you don't have to deal with all the server infrastructure. In practise though it's slightly more complex. A simple serverless app often requires 500+ lines of infrastructure configuration that you as a developer have to deal with. Shouldn't it and couldn't it be done much easier?
+A fantastic talk about [Kotless](https://github.com/JetBrains/kotless), a serverless framework, by [Vladislav Tankov](https://github.com/TanVD). The talk started with a short introduction to serverless and continued on about some of the issues with it. In theory serverless sounds really nice, as you don't have to deal with all the server infrastructure. In practice though it's slightly more complex. A simple serverless app often requires 500+ lines of infrastructure configuration that you as a developer have to deal with. Shouldn't it and couldn't it be done much easier?
 
 The answer is yes, and Kotless. Kotless introspects your code and generates the configuration for you. It currently supports AWS and looks really promising. 
 
 ### Kotlin for science
 
-Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk ,by particle physicist Alexander Nozik, the challenges scientists meet when programming and how Kotlin can present solutions to them were discussed.  
+Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk, by particle physicist Alexander Nozik, the challenges scientists meet when programming and how Kotlin can present solutions to them were discussed.  
 
 ![](/assets/power-of-kotlin-2-.jpg "The power of Kotlin")
 
