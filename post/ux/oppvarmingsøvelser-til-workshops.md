@@ -65,12 +65,12 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 * Type: Tegning, kreativitet
 * Tidsbruk**:** ca.10 min
-* Du trenger: Tusjer, ark med mange sirkler 
+* Du trenger: Tusjer, ark med mange sirkler (20 stk)
 * Antall deltagere: Bør gå opp i par, men ingen begrensing på antall. 
 
 **Hva**
 
-Dette er en enkel tegneøvelse for å fremme kreativ tenkning (kilde).
+Dette er en enkel tegneøvelse for å fremme kreativ tenkning (kilde: Digital Norway)
 
 **Hvorfor**
 
