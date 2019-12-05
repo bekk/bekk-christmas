@@ -9,16 +9,18 @@ ingress: >-
   Av og til trenger man en skikkelig kickstart på en workshop. Hensikten kan
   være å fremme kreativ tenkning og deling, eller bli bedre kjent med hverandre
   og løse opp i stemningen før man starter med selve workshopen. Det er ikke
-  alltid så lett å gå fra 0 til 10 på kort tid, så derfor kan en
-  oppvarmingsøvelse være en ypperlig måte å sparke i gang en workshop eller
-  unngå den velkjente «etter lunsj-dippen».
+  alltid så lett å gå fra 0 til 10 på kort tid, så derfor kan oppvarmingsøvelser
+  være en ypperlig måte å sparke i gang en workshop eller unngå den velkjente
+  «etter lunsj-dippen».
 links:
   - title: 'Session Lab: Library of facilitation techniques'
     url: 'https://www.sessionlab.com/library/energiser'
   - title: Hyper Island Toolbox
     url: 'https://toolbox.hyperisland.com/'
 ---
-Det finnes en haug med ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekt. Så kanskje det kan hjelpe dere på vei med deres neste workshop. (Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
+Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekter. Så kanskje det kan hjelpe dere å velge den passende øvelsen til neste workshop. 
+
+(Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
 
 
 
@@ -35,7 +37,7 @@ Denne øvelsen går ut på at man går to og to sammen, og lager portretter av h
 
 **Hvorfor**
 
-Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
+Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Da jeg prøvde den ut i et prosjekt med teamet mitt, satt latteren løst og vi fikk en god start på team building-workshop'en vår. For øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
 
 
 
@@ -48,11 +50,11 @@ Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme s
 
 **Hva** 
 
-Øvelsen går ut på at gruppen/stafettlaget skriver en historie sammen ord for ord, ved at hver deltaker skriver et og et ord hver, noen som ofte resulterer i nokså morsomme og særegne historier. 
+Øvelsen går ut på at gruppen/stafettlaget skriver en historie sammen ord for ord, ved at deltaker skriver et ord hver, noe som ofte resulterer i nokså morsomme og særegne historier. 
 
 **Hvorfor**
 
-Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med for eksempel brainstorming. Øvelsen kan bidra til å løsne på stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt. 
+Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshopen. Dette har blitt en av mine favoritter, da sen er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. 
 
 **Hvordan**
 
