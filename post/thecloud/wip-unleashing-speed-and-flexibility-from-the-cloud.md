@@ -3,8 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 6
 title: Unleashing speed and flexibility from the cloud
-image: >-
-  https://images.unsplash.com/photo-1463680942456-e4230dbeaec7?w=1226&h=400&fit=crop&crop=entropy
+image: 'https://i.ibb.co/wJch3LV/two-directions.jpg'
 ingress: >-
   Feature toggling, or feature flags, is a fairly well known concept in the
   world of modern system development. It provides the foundation for separating
@@ -68,7 +67,7 @@ Unleash allows you to define your toggles in a dedicated, central system, using 
 In addition to the built-in strategies, you can easily define your own, like turning on for certain environments (i.e. test), for people at a certain location or any other criteria that you’re able to evaluate. Finally, a toggle can use a combination of strategies, like _“on for a certain percentage of users, plus always on for user a and b”._
 
 There is an [online demo](https://unleash.herokuapp.com/) of unleash available if you want to check it out.
-![The unleash admin gui](https://ibb.co/CBwXQw0)
+![The unleash admin gui](https://i.ibb.co/G7d1RdP/unleash-gui.png)
 
 Unleash provides client libraries for various languages, to use in your app’s code. This is where the actual evaluation of the toggles will take place, according to the defined strategies. The built-in strategies comes with the library, but in many cases you’ll have to pass some contextual information for it to work (i.e. the id of the logged in user for the _userWithId_ strategy.) For your custom strategies, you’ll have to provide the entire evaluation implementation. At the point of evaluation, your code will be quite simple, like 
 
