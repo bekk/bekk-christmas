@@ -68,7 +68,7 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 **Hva**
 
-En enkel tegneøvelse for å fremme kreativ tenkning (kilde).
+Dette er en enkel tegneøvelse for å fremme kreativ tenkning (kilde).
 
 **Hvorfor**
 
@@ -93,11 +93,34 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 **Hvordan**
 
-1. Først skal gruppemedlemmene sammen finne to ting de har til felles med hverandre
-2. Deretter får gruppen vite at de to tingene de har til felles er nå deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen engang, fant vi ut at alle hadde hatt Java-programmering på studiene og at alle i grunn var ganske glad i Baileys i kaffen, dermed ble vårt gruppenavn "Java Baileys". Og opprinnelsen til navnet Zombi Cats er fordi en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter. 
-3. Alternativt kan gruppen få i oppgave å mime navnet sitt for alle de andre gruppene slik at de kan prøve å gjette seg framn til gruppenavnet. 
+1. Først skal gruppemedlemmene sammen finne to ting de har til felles med hverandre.
+2. Deretter får gruppen vite at de to tingene de har til felles nå er deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen engang, fant vi ut at alle hadde hatt Java-programmering på studiene og at alle i grunn var ganske glad i Baileys i kaffen, dermed ble vårt gruppenavn "Java Baileys". Og navnet på selve øvelsen kommer fra at en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter, derav navnet Zombie Cats. 
+3. Alternativt kan gruppen også få i oppgave å mime navnet sitt for alle de andre gruppene slik at de kan prøve å gjette seg fram til hva navnet er. 
 
 ## 5. To sannheter, en løgn
+
+* Type: Bli kjent, team building
+* Tidsbruk**:**  ca. 20 - 40 min 
+* Du trenger: Post its
+* Antall deltagere: Jo flere deltagere, desto lenger tid tar det.
+
+**Hva og hvordan**
+
+En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg selv. En og en leser opp alle 3 påstandene, og så skal resten av gruppen diskuterer og til slutt gjette hvilken av de tre påstandene de tror er en løgn. Når riktig svar er avslørt fortsetter neste person i gruppen. Dette er en øvelse som kan ta litt tid avhengig av hvor mange man er og hvor snakkesalig gruppen er, så den passer gjerne best som del av en litt lenger workshop. 
+
+**Hvorfor**
+
+Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en fin måte å generere samtaletemaer for neste lunsj!
+
+
+
+
+
+
+
+****
+
+
 
 
 
@@ -105,11 +128,7 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 
 
-Andre mulige øvelser:
 
-Dele en Funfact om seg selv, Stein, saks, papir
-
-energi
 
 ## 
 
