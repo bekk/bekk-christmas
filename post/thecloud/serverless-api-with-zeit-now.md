@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 8
-title: WIP Modular and Serverless API with ZEIT Now
+title: Modular and Serverless API with ZEIT Now
 image: >-
   https://images.unsplash.com/photo-1492355040260-cd982083603e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80
 ingress: >-
@@ -82,7 +82,7 @@ Made some changes or added more endpoints? Just run `now` again and the URL poin
 Also one command, in your project's root, run `now dev` to get a local environment.
 
 ## Let's sum it up
-This article only scratches the surface of what's possible with Now and there is still a lot to learn. I recommend you to explore the cloud platform from simple deployments to serverless functions. The workflow is truly amazing.
+This article only scratches the surface of what's possible with Now and there is still a lot to learn. I recommend you to explore the Now cloud platform from simple static site deployments to serverless functions. The workflow is truly amazing.
 
 See the related link below to learn more, perfect Sunday readings.
 
