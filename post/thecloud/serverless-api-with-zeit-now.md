@@ -79,7 +79,7 @@ Well, I promised you that the API could be deployed with one single command. And
 Made some changes or added more endpoints? Just run `now` again and the URL point to the latest changes.
 
 ## What about local development?
-Also one command, in your project's root, run `now dev` to get a local environment.
+Also one command. In your project's root, run `now dev` to get a local environment.
 
 ## Let's sum it up
 This article only scratches the surface of what's possible with Now and there is still a lot to learn. I recommend you to explore the Now cloud platform from simple static site deployments to serverless functions. The workflow is truly amazing.
