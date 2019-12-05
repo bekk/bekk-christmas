@@ -76,11 +76,11 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 **Hva**
 
-Enkel tegneøvelse for å fremme kreativ tenkning.
+En enkel tegneøvelse for å fremme kreativ tenkning.
 
 **Hvorfor**
 
-Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller f.eks. før en sprint- workshop hvor deltakerne skal tegne en del. 
+Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller kanskje før en sprint- workshop hvor deltakerne skal tegne en del. 
 
 **Hvordan**
 
@@ -96,7 +96,15 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 * Du trenger: Ingenting! 
 * Antall deltagere: Passer for gruppearbeid, gjerne med ikke altfor store grupper
 
+**Hva**
 
+
+
+**Hvorfor**
+
+**Hvordan**
+
+****
 
 ## To sannheter, en løgn
 
