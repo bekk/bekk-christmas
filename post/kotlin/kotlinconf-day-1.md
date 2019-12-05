@@ -49,9 +49,9 @@ Simulations is an important part of modern natural science, especially for disci
 
 ![](/assets/power-of-kotlin-2-.jpg "The power of Kotlin")
 
-What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with varying programming experience, as opposed to other languages where higher experience is needed to easily avoid errors. Extensions and scoped functions can be very helpful both in this regard and with regards to performance. As for performance, it is often good enough (both for Java and Kotlin), and much better than the old reputation of the slow JVM. Kotlin also has the advantage of full compatibility with java. As for so much else, coroutines is a fantastic tool for science, and kotlin/js can be great for creating visualizations. 
+What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with varying programming experience. Perhaps as opposed to certain other languages, where higher experience is needed to easily avoid errors. Extensions and scoped functions can be very helpful both in this regard and with regards to performance. As for performance, it is often good enough (both for Java and Kotlin), and much better than the well known reputation of the slow JVM. Kotlin also has the advantage of full compatibility with Java. As for so much else, coroutines is a fantastic tool for science, and kotlin/js can be great for creating visualizations. 
 
-However, there are some issues with Kotlin in science as well.  There are still certain performance issues and also a lack of easy access to scientific tools. But if these can be solved, Kotlin may very well be the next big programming language used in science. 
+However, there are some issues with Kotlin in science as well. There are still certain performance issues and also a lack of easy access to certain scientific tools. But if these problems can be solved, Kotlin may very well be the next big programming language used for science. 
 
 ## Party
 
