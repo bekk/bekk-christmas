@@ -45,7 +45,7 @@ module.exports = (req, res) => {
 
 This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serveless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
 
-We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass that value to the function. So let's create a `[name].js` file in the `api` directory. Inside this file, write this simple function:
+We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass the value in the route to the function. So let's create a `[name].js` file in the `api/gift-lists` directory. Inside this file, write this simple function:
 
 ```javascript
 module.exports = (req, res) => {
@@ -64,4 +64,8 @@ module.exports = (req, res) => {
 };
 ```
 
+So in order to retrieve Hannah's gift list, we simply go to the route `/api/hannah`. Neat, right?
+
+## So how do I deploy this?
+Well, I promised that you could deploy this with one single command. And thats is totally true, just stay in your project's root and run the command `now`. You will receive a url like this `https://my-project.username.now.sh/` and your API is accesible through it.
 
