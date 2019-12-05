@@ -18,7 +18,7 @@ links:
 ---
 It sounds almost silly. You contribute to some random projects on GitHub and someone sends you a t-shirt. But this simple challenge is the root of a massive movement that closes thousands of GitHub issues around the globe. This year’s Hacktoberfest was the sixth to be held, and throughout October more than 483,000 pull requests were submitted to more than 150,000 repositories. People from 143 different countries participated! It’s the greatest Hacktoberfest ever and you can read the [recap here](https://blog.digitalocean.com/recapping-hacktoberfest-6).
 
-If you did not participate this year, you should next year. Not only to win a stylish piece of fabric, but to help change the world – one pull request at a time.
+If you did not participate this year, you should next year. Not only to win a piece of short-sleeved garment, but to help change the world – one pull request at a time.
 
 ## Participating
 It's easy to sign up for the Hacktoberfest on the [primary website](hacktoberfest.digitalocean.com), which usually opens some days before October 1st. You sign up with your GitHub credentials, and after that, it’s coding time.
