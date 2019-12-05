@@ -3,6 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 9
 title: Hyphens - Breaker of Words
+image: >-
+  https://images.unsplash.com/photo-1496938812221-15ebc6c61b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1852&q=80
 authors:
   - Espen Hellerud
 ---
