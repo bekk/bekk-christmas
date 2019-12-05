@@ -98,7 +98,7 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 
 **Hva**
 
-
+Dette er en Smashing Ideas 
 
 **Hvorfor**
 
