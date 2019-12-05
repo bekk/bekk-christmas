@@ -74,7 +74,7 @@ module.exports = (req, res) => {
 So in order to retrieve Hannah's gift list, we simply go to the route `/api/hannah`. Neat, right?
 
 ## So how do I deploy this?
-Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server for you and provide free automatic SSL with zero configuration. After around 30 seconds, you will receive a url like this `https://my-project.username.now.sh/` and your API is accesible through it.
+Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server for you and provide free automatic SSL with zero configuration. After around 30 seconds, you will receive a url like this `https://gift-lists.username.now.sh/` and your API is accesible through it.
 
 ## What about local development?
 Also one command, in your project's root, run `now dev` to get a local environment.
