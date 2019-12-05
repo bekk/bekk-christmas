@@ -1,0 +1,78 @@
+---
+calendar: thecloud
+post_year: 2019
+post_day: 6
+title: 'WIP: Unleashing speed and flexibility from the cloud'
+ingress: >-
+  Feature toggling, or feature flags, is a fairly well known concept in the
+  world of modern system development. It provides the foundation for separating
+  _launching_ a feature from the physical _deployment_ of code, enabling things
+  like A/B testing, piloting and a faster development process. With a few
+  clicks, you can get going with a streamlined feature toggling setup in no time
+  using hosted cloud services.
+links:
+  - title: Getting started with feature flags
+    url: >-
+      https://medium.com/@tmaslen/getting-started-with-feature-flags-fc3e617260fe
+  - title: Feature Toggles Give You Superpowers
+    url: >-
+      https://medium.com/jettech/feature-toggles-give-you-superpowers-78fdeb7ab5e8
+  - title: Unleash
+    url: 'https://github.com/Unleash/unleash'
+authors:
+  - Torstein Gjengedal
+---
+The concept of feature toggling is pretty straightforward: Evaluating a boolean expression decides whether some (in most cases) new code should be executed or if we should go with the existing old code:
+
+`if (doTheNewStuff == true) { `\
+  `doTheNewStuff(); `\
+`} else { `\
+`  doTheOldstuff(); `\
+`}`
+
+Simple as it is, this technique essentially opens the door for having code that is unused, or even still a work in progress as part of the production code. In many cases, this is an essential tool to avoid long living feature branches and go for a master branch strategy - a key part of succeeding in continuous delivery. If that’s not enough, adding some smartness to the toggle evaluation helps with things like A/B testing, pilot testing / canary releases and gradual rollouts.
+
+A dead simple toggle may be implemented as 
+
+`if (false) { `\
+`  doTheNewStuff(); `\
+`} else { `\
+`  doTheOldstuff(); `\
+`}`
+
+This will hide the new stuff until ready for launch, but it will require a (really, really small) commit, build and deploy to do so. And it does not allow for configuring different setup in different environments, i.e. running the new stuff in a test environment and not in production – at least not in the same version of the code base.
+
+`if (theNewStuffIsSwitchedOn()) { `\
+`  doTheNewStuff(); `\
+`} else { `\
+`  doTheOldstuff(); `\
+`}`
+
+This minor adjustment gives the magic touch. Now, we have the flexibility to evaluate the toggle in any way we see fit, by changing the implementation of the evaluation function. The toggle may be simply bound to some config setting, i.e. for turning _on_ for test but _off_ for prod - a frequently used, and in many cases sufficient, approach. But the function may also be true for specific users, a certain percent of users or whatnot.
+
+However, implementing rules like these at every point of evaluation in every app may quickly turn into a mess of many toggles with lots of duplicated, or slightly different, implementations – as well as being boring and cumbersome. When reaching that point, it may be time to look out for help. There are quite a few libraries or services ready to use. The organisation where I work have been using [Unleash](https://github.com/Unleash/unleash) for the last year and a half, where it has rapidly become a core tool for many dev teams – so I’ll use that as an example.
+
+Unleash allows you to define your toggles in a dedicated, central system, using a nice and simple web UI. You define your toggle with the name of your choice, and assigns it one or more evaluation strategies. These strategies define _how_ the toggle should be evaluated, and any parameters it needs for doing so. Unleash comes with a set of pre-defined strategies, like 
+
+* The simple, but handy _default_ strategy – either on or off
+* _userWithId_ - on for specific users, configured with user ids for the users in question.
+* _gradualRolloutUserId_ - on for a specific percentage of users (based on hashing the user id)
+* _gradualRolloutSessionId_ – as above, but based on a session cookie (handy for systems without login)
+
+In addition to the built-in strategies, you can easily define your own, like turning on for certain environments (i.e. test), for people at a certain location or any other criteria that you’re able to evaluate. Finally, a toggle can use a combination of strategies, like _“on for a certain percentage of users, plus always on for user a and b”._
+
+Unleash provides client libraries for various languages, to use in your app’s code. This is where the actual evaluation of the toggles will take place, according to the defined strategies. The built-in strategies comes with the library, but in many cases (like userWithId), you’ll have to pass some contextual information for it to work (i.e. the id of the logged in users.) For your custom strategies, you’ll have to provide the entire evaluation implementation. At the point of evaluation, your code will be quite simple, like 
+
+`if (unleash.isEnabled(“theNewStuff”) { `\
+`  doTheNewStuff(); `\
+`} else { `\
+`  doTheOldstuff(); `\
+`}`
+
+The client also reports metrics back to the unleash admin app, where you can see how many times a certain toggle have been evaluated to true or false recently, and which apps that use each toggle.
+
+Wrapping up, feature toggling is first and foremost an enabler for getting code into production fast, avoiding long lasting feature branches and increasing speed. Additionally, it provides lots of flexibility of how to launch and test new features, being it in the dedicated test environment  or in production itself.
+
+If you’re ready to take the step into the modern world of flexible feature toggling, Unleash available as a hosted service at [unleash-hosted.com](unleash-hosted.com). However, you can host it yourself for free if you’d like. Or, you might want to check out other hosted services in the feature toggle space, like [LaunchDarkly](https://launchdarkly.com/),  [FeatureFlow](https://www.featureflow.io/) or [Feature Ops](https://www.featureops.com/).
+
+Now, go and enable the speed toggle for your team :)
