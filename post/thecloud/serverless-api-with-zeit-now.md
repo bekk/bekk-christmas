@@ -71,7 +71,7 @@ module.exports = (req, res) => {
 };
 ```
 
-To retrieve Albert's gift list, we simply go to the route `/api/gift-lists/albert`. Neat, right?
+To retrieve Albert's gift list, the elves can simply go to the route `/api/gift-lists/albert`. Neat, right?
 
 ## So, how do I deploy this?
 Well, I promised you that the API could be deployed with one single command. And that's true, from your project's root in the terminal, run the command `now`. Now will spin up a server and provide free automatic SSL with zero configuration. After some seconds, you will receive a live URL like this `https://gift-lists.username.now.sh/` and Santa's API is ready to go.
