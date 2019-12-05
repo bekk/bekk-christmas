@@ -75,7 +75,9 @@ const SiteFooter = ({ calendarName }) => {
     return (
         <Container>
             <Column>
-                <h2 style={{ marginTop: 0 }}>Bekk Christmas</h2>
+                <h2 style={{ marginTop: 0 }}>
+                    <a href="https://bekk.christmas">Bekk Christmas</a>
+                </h2>
                 <FlatList>
                     {otherCalendars.map(calendar => (
                         <li key={calendar}>
