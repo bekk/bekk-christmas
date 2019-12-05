@@ -47,7 +47,9 @@ The answer is yes, and Kotless. Kotless introspects your code and generates the 
 
 Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk ,by particle physicist Alexander Nozik, the challenges scientists meet when programming and how Kotlin can present solutions to them were discussed.  
 
-What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with vari
+![](/assets/power-of-kotlin-2-.jpg "The power of Kotlin")
+
+What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with varying programming experience. Extensions and scoped functions can be very he
 
 However, there are some issues with Kotlin in science as well. Among them certain performance issues and a lack of easy access to scientific tools. But if these can be solved, Kotlin may very well be the next big programming language used in science. 
 
