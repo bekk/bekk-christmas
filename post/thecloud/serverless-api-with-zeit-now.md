@@ -38,7 +38,7 @@ Before we start, we need to prepare some stuff.
 ## Constructing the API
 Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with underscore, like `_utils.js`. If you prefix a folder with underscore, *none* of the files inside it will be executed by Now.
 
-Let's add the directory `api`, create the file `gift-lists.js` and write these lines of code:
+Let's make the directory with `mkdir api && cd api`, create the first endpoint with `touch gift-lists.js` and write these lines of code:
 
 ```javascript
 module.exports = (req, res) => {
@@ -66,12 +66,12 @@ module.exports = (req, res) => {
   ];
   
   res.json({
-    giftList: giftLists.find(x => x.name === name)
+    giftList: giftLists.find(x => x.name.toLowerCase() === name)
   });
 };
 ```
 
-So in order to retrieve Albert's gift list, we simply go to the route `/api/albert`. Neat, right?
+So in order to retrieve Albert's gift list, we simply go to the route `/api/gift-lists/albert`. Neat, right?
 
 ## So, how do I deploy this?
 Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server for you and provide free automatic SSL with zero configuration. After around 30 seconds, you will receive a url like this `https://gift-lists.username.now.sh/` and your API is accesible through it.
