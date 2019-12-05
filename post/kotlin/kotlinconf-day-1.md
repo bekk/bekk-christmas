@@ -7,7 +7,7 @@ image: >-
   https://upload.wikimedia.org/wikipedia/commons/6/6d/Bella_Sky_Comwell_hotell_Orestad_20130421_0247F_%288668782211%29.jpg
 ingress: >-
   Yesterday (the non-workshop part of) the third edition of KotlinConf kicked
-  off. This year the conference is held in Copenhagen, the capitol of Denmark.
+  off. This year the conference is held in Copenhagen, the capital of Denmark.
   While a visit to "Kongens by" is nice in any circumstance, a December visit
   with a taste of Kotlin is almost perfect.     
 links:
@@ -29,7 +29,7 @@ The registration went smoothly, and after leaving our coats in the cloakroom, we
 
 ## Talks
 
-As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin 1.4 is on it's way! After the keynote, a long day filled with many excellent talks started, some of which we will present here.  
+As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin, 1.4 is on it's way! After the keynote, a long day filled with many excellent talks started, some of which we will present here.  
 
 ### Putting Down the Golden Hammer
 
@@ -45,7 +45,7 @@ The answer is yes, and Kotless. Kotless introspects your code, generates the con
 
 ### Kotlin for science
 
-Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk, by particle physicist Alexander Nozik, the challenges scientists meet when programming and how Kotlin can present solutions to them were discussed.  
+Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk, by particle physicist Alexander Nozik, we hear about the challenges scientists meet when programming and how Kotlin can present solutions to them.  
 
 ![](/assets/power-of-kotlin-2-.jpg "The power of Kotlin")
 
