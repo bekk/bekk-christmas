@@ -52,7 +52,7 @@ module.exports = (req, res) => {
 
 This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serveless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
 
-We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass the value in the route to the function. So let's create a `[name].js` file in the `/api/gift-lists` directory. Inside this file, write this simple function:
+We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass the value in the route to the function. So let's create a `[name].js` file in the directory `/api/gift-lists`. Inside this file, write this simple function:
 
 ```javascript
 module.exports = (req, res) => {
@@ -74,7 +74,7 @@ module.exports = (req, res) => {
 So in order to retrieve Albert's gift list, we simply go to the route `/api/gift-lists/albert`. Neat, right?
 
 ## So, how do I deploy this?
-Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server for you and provide free automatic SSL with zero configuration. After some seconds, you will receive a live URL like this `https://gift-lists.username.now.sh/` and Santa's API is ready to go.
+Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server and provide free automatic SSL with zero configuration. After some seconds, you will receive a live URL like this `https://gift-lists.username.now.sh/` and Santa's API is ready to go.
 
 Made some changes or added more endpoints? Just run `now` again and the URL point to the latest changes.
 
@@ -84,6 +84,6 @@ Also one command, in your project's root, run `now dev` to get a local environme
 ## Let's sum it up
 This article only scratch the surface of what's possible with Now and there is still a lot to learn. I recommed you to explore the cloud platform from simple deployments to serverless functions. The workflow is truly amazing.
 
-See the related link below to learn more, perfect readings for a Sunday.
+See the related link below to learn more, perfect Sunday readings.
 
 Happy holidays🎅
