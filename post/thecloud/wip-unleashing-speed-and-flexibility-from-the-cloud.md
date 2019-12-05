@@ -23,6 +23,8 @@ links:
 authors:
   - Torstein Gjengedal
 ---
+The concept of feature toggling is pretty straightforward: Evaluating a boolean expression decides whether some (in most cases) new code should be executed or if we should go with the existing old code:
+
 ```java
 if (doTheNewStuff == true) {
   doTheNewStuff();
