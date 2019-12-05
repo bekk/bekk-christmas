@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 8
 title: 5 oppvarmingsøvelser for å kickstarte din workshop
 image: >-
-  https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80
+  https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ingress: >-
   Av og til trenger man en skikkelig kickstart på en workshop. Hensikten kan
   være å fremme kreativ tenkning og deling, eller bli bedre kjent med hverandre
@@ -18,7 +18,7 @@ links:
   - title: Hyper Island Toolbox
     url: 'https://toolbox.hyperisland.com/'
 ---
-Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekter. Så kanskje det kan hjelpe deg å velge den øvelsen som passer best til din neste workshop. 
+Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og som jeg har prøvd ut på prosjekter. Så kanskje det kan hjelpe deg å velge den øvelsen som passer best til din neste workshop. 
 
 ## 1. Tegne i blinde
 
@@ -114,15 +114,7 @@ Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt
 
 
 
-
-
-
-
-****
-
-
-
-
+Lykke til med neste workshop!
 
 - - -
 
