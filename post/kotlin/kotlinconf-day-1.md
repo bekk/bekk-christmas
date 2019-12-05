@@ -13,7 +13,9 @@ ingress: >-
 links:
   - title: Day 1 talks
     url: 'https://kotlinconf.com/talks/5-dec'
-authors: []
+authors:
+  - Torbjørn Tessem
+  - Vegard Veiset
 ---
 ## The venue
 
