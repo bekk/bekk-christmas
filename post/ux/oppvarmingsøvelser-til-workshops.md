@@ -59,8 +59,6 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
 
-
-
 ## **3. Sirkler**
 
 * Type: Tegning, kreativitet
@@ -115,6 +113,8 @@ En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg
 **Hvorfor**
 
 Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en veldig morsom måte å generere samtaletemaer for neste lunsj!
+
+
 
 
 
