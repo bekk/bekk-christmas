@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 7
-title: Global state management without Redux (WIP)
+title: Global State with Context API and useReducer
 image: >-
   https://images.unsplash.com/photo-1491118217331-c147f566d809?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3084&q=80
 ingress: >-
@@ -36,7 +36,7 @@ As promised earlier, this article will propose such a solution. By utilizing Rea
 
 From React’s own docs they say that _Context provides a way to pass data through the component tree without having to pass props down manually at every level_. Great! That sounds exactly like what we are looking for. In combination with the `useContext` and `useReducer` hooks we can create a global store that manages the entire app’s state and supports convenient ways to update the state throughout the app regardless of how deep the component tree goes.
 
-![The Redux pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ngrx-redux-pattern-diagram.png/320px-Ngrx-redux-pattern-diagram.png "The Redux Pattern. AAMINE1965 [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]")
+![The Redux pattern](https://upload.wikimedia.org/wikipedia/commons/0/06/Ngrx-redux-pattern-diagram.png "The Redux Pattern. AAMINE1965 [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]")
 
 Even though we are searching for an alternative to Redux – we will make use of Redux’ core concepts. A store which will hold our state, actions with payload information sent from the application to the store, and reducers specifying how the state changes based on those actions. To show what this could look like we are going to use a simple counter example.
 
