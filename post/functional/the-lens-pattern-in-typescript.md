@@ -3,7 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 6
 title: The Lens Pattern in TypeScript
-authors: []
+authors:
+  - Simen Vie
 ---
 If you have read all blog post until now, you might have come to the realization that immutability is a core conecept in functional programming. In this blog post, we will take a look at a pattern that can help us update and extract data from large immutable data structures. As mentioned in a previous blog post, updating immutable data is done by creating an entirely new copy of the data structure with some part of the data with new values. For shallow structures, this is not really an issue, at least for languages that has a syntax for copying values. Take the following record as an example, written in typescript:
 ```typescript
