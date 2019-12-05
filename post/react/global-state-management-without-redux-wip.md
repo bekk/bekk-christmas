@@ -135,7 +135,7 @@ export const ChildComponent = () => {
 }
 ```
 
-There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I will add a CodeSandbox by the end for you to experiment with if you want.
+There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I will add a CodeSandbox at the bottom for you to experiment with, if you want.
 
 ## Conclusion
 
