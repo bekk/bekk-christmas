@@ -19,18 +19,15 @@ authors: []
 
 This years venue is the Bella Conference Center _(pictured)_, a quick metro ride from central Copenhagen. While perhaps not as charming as last years venue (Beurs van Berlage in Amsterdam), a larger venue may be fitting to the ever growing Kotlin community. 
 
+![](/assets/welcome-2-.jpg "Welcome to KotlinConf!")
+
+The registration went smoothly, and after leaving our coats in the cloakroom, we went into the huge conference hall. While at first sight it felt a little crowded around the food and drink stations, as we moved further from the entrance the crowds thinned and we could easily help ourselves to some breakfast snacks and a much needed cup of coffee. 
+
 ![](/assets/breakfast-3-.jpg "breakfast snacks")
-
-The registration went smoothly, and after leaving our coats in the cloakroom, we went into the  
-
-* lokalene
-* er det trangt
-* lyd, bilde
-* kaffe, mat(!)      
 
 ## Talks
 
-A good venue with lots of space 
+As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin. (1.4 is on it's way!).  
 
 ### Putting Down the Golden Hammer
 
@@ -59,4 +56,4 @@ Kotlin has several strengths that gives it, including extensions
 
 ## Party
 
-As we're writing this the first day is coming to an end. Now it's time to party! **Skål.kt** :beers:
+As we're writing this the first day is coming to an end, and we are waiting for an new product announcement from JetBrains. Then it's time to party! **Skål.kt** :beers:
