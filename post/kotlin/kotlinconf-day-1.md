@@ -41,7 +41,7 @@ Keep using the great features of Kotlin, but always make the intention of your c
 
 A fantastic talk about [Kotless](https://github.com/JetBrains/kotless), a serverless framework, by [Vladislav Tankov](https://github.com/TanVD). The talk started with a short introduction to serverless and continued on about some of the issues with it. In theory serverless sounds really nice, as you don't have to deal with all the server infrastructure. In practice though it's slightly more complex. A simple serverless app often requires 500+ lines of infrastructure configuration that you as a developer have to deal with. Shouldn't it and couldn't it be done much easier?
 
-The answer is yes, and Kotless. Kotless introspects your code and generates the configuration for you. It currently supports AWS and looks really promising. 
+The answer is yes, and Kotless. Kotless introspects your code, generates the configuration for you and makes serverless simple. It currently supports AWS and looks really promising. 
 
 ### Kotlin for science
 
