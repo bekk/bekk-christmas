@@ -53,4 +53,4 @@ However, there are some issues with Kotlin in science as well. Among them certai
 
 ## Party
 
-As we're writing this the first day is coming to an end, and we are waiting for an new product announcement from JetBrains. Then it's time to party! **Skål.kt** :beers:
+As we're writing this the first day is coming to an end, and we are waiting for a new product announcement from JetBrains. Then it's time to party! **Skål.kt** :beers:
