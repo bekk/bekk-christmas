@@ -37,6 +37,8 @@ Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme s
 
 ## 2. Historiestafett
 
+![historiestafett](https://i.ibb.co/bP326SZ/Historiestafett.jpg)
+
 * Type: Energi, ice breaker
 * Tidsbruk: ca. 10 min
 * Du trenger: X antall store plakater/ark som kan skrives på, tusjer, musikk
@@ -57,7 +59,7 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
 
-![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
+
 
 ## **3. Sirkler**
 
@@ -99,7 +101,7 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 ## 5. To sannheter, en løgn
 
-![alt-tekst til bilde](https://i.ibb.co/QDxVC6t/IMG-2013.jpg)
+![to sannheter, en løgn](https://i.ibb.co/QDxVC6t/IMG-2013.jpg)
 
 * Type: Bli kjent, team building
 * Tidsbruk**:**  ca. 20 - 40 min 
