@@ -3,8 +3,8 @@ calendar: thecloud
 post_year: 2019
 post_day: 6
 title: Unleashing speed and flexibility from the cloud
-image: 'https://i.ibb.co/wJch3LV/two-directions.jpg'
-ingress: >-
+image: 'https://i.ibb.co/NSHBPYw/two-directions-2.jpg'
+ingress: >
   Feature toggling, or feature flags, is a fairly well known concept in the
   world of modern system development. It provides the foundation for separating
   _launching_ a feature from the physical _deployment_ of code, enabling things
