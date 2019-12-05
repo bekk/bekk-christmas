@@ -82,6 +82,8 @@ Made some changes or added more endpoints? Just run `now` again and the URL poin
 Also one command, in your project's root, run `now dev` to get a local environment.
 
 ## Let's sum it up
-This article only sums up the basic usage of Now's serverless function and there is still a lot to learn about them. I also recommed deploying your next static site with Now, the workflow is truly amazing.
+This article only scratch the surface of what's possible with Now and there is still a lot to learn. I recommed you to explore the cloud platform from simple deployments to serverless functions. The workflow is truly amazing.
 
-See the related link below to learn more.
+See the related link below to learn more, perfect readings for a Sunday.
+
+Happy holidays🎅
