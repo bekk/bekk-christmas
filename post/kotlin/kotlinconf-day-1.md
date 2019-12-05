@@ -29,7 +29,7 @@ The registration went smoothly, and after leaving our coats in the cloakroom, we
 
 ## Talks
 
-As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin. (1.4 is on it's way!).  
+As last year, the conference kicked off with a keynote.  Andrey Breslav presented some information on the recent developments and near future of Kotlin,1.4 is on it's way! After the keynote, a long day filled with many excellent talks started, some of which we will present here.  
 
 ### Putting Down the Golden Hammer
 
@@ -45,16 +45,11 @@ The answer is yes, and Kotless. Kotless introspects your code and generates the 
 
 ### Kotlin for science
 
-Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. But to make simulations 
+Simulations is an important part of modern natural science, especially for disciplines where experiments are time consuming and expensive. In this talk ,by particle physicist Alexander Nozik, the challenges scientists meet when programming and how Kotlin can present solutions to them were discussed.  
 
-Kotlin has several strengths that gives it, including extensions 
+What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with vari
 
-//TODO Torbjørn
-
-* Computer simulations
-* Differential equations, 
-* monte carlo
-* kMath   
+However, there are some issues with Kotlin in science as well. Among them certain performance issues and a lack of easy access to scientific tools. But if these can be solved, Kotlin may very well be the next big programming language used in science. 
 
 ## Party
 
