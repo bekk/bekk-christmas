@@ -106,15 +106,17 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 **Hva og hvordan**
 
-En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg selv. En og en leser opp alle 3 påstandene, og så skal resten av gruppen diskuterer og til slutt gjette hvilken av de tre påstandene de tror er en løgn. Når riktig svar er avslørt fortsetter neste person i gruppen. Dette er en øvelse som kan ta litt tid avhengig av hvor mange man er og hvor snakkesalig gruppen er, så den passer gjerne best som del av en litt lenger workshop. 
+En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg selv. En og en leser opp alle 3 påstandene, og så skal resten av gruppen diskutere og til slutt gjette hvilken av de tre påstandene de tror er en løgn. Når riktig svar er avslørt fortsetter neste person i gruppen. Dette er en øvelse som kan ta litt tid avhengig av hvor mange man er og hvor snakkesalig gruppen er, så den passer gjerne best som del av en litt lenger workshop. 
 
 **Hvorfor**
 
-Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en fin måte å generere samtaletemaer for neste lunsj!
+Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en veldig morsom måte å generere samtaletemaer for neste lunsj!
 
 
 
-Lykke til med neste workshop!
+
+
+Håper du Lykke til med neste workshop!
 
 - - -
 
