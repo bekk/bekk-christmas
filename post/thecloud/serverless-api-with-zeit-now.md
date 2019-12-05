@@ -12,6 +12,13 @@ ingress: >-
   functions offered by these cloud providers, it is suprisingly easy to create
   modular and serverless APIs that can easily be deployed with one command.
   Let's dig into how.
+links:
+  - title: Now Serverless Functions Docs
+    url: 'https://zeit.co/docs/v2/serverless-functions/introduction/'
+  - title: Introduction to ZEIT Now
+    url: 'https://zeit.co/docs/v2/introduction/'
+  - title: More ZEIT Now guides
+    url: 'https://zeit.co/guides'
 authors:
   - Vebjørn Isaksen
 ---
@@ -67,5 +74,12 @@ module.exports = (req, res) => {
 So in order to retrieve Hannah's gift list, we simply go to the route `/api/hannah`. Neat, right?
 
 ## So how do I deploy this?
-Well, I promised that you could deploy this with one single command. And thats is totally true, just stay in your project's root and run the command `now`. You will receive a url like this `https://my-project.username.now.sh/` and your API is accesible through it.
+Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server for you and provide free automatic SSL with zero configuration. After around 30 seconds, you will receive a url like this `https://my-project.username.now.sh/` and your API is accesible through it.
 
+## What about local development?
+Also one command, in your project's root, run `now dev` to get a local environment.
+
+## Let's sum it up
+This article only sums up the basic usage of Now's serverless function and there is still a lot to learn about them. I also recommed deploying your next static site with Now, the workflow is truly amazing.
+
+See the related link below to learn more.
