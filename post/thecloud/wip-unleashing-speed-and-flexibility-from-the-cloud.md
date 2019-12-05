@@ -67,7 +67,10 @@ Unleash allows you to define your toggles in a dedicated, central system, using 
 
 In addition to the built-in strategies, you can easily define your own, like turning on for certain environments (i.e. test), for people at a certain location or any other criteria that you’re able to evaluate. Finally, a toggle can use a combination of strategies, like _“on for a certain percentage of users, plus always on for user a and b”._
 
-Unleash provides client libraries for various languages, to use in your app’s code. This is where the actual evaluation of the toggles will take place, according to the defined strategies. The built-in strategies comes with the library, but in many cases (like userWithId), you’ll have to pass some contextual information for it to work (i.e. the id of the logged in users.) For your custom strategies, you’ll have to provide the entire evaluation implementation. At the point of evaluation, your code will be quite simple, like 
+There is an [online demo](https://unleash.herokuapp.com/) of unleash available if you want to check it out.
+![The unleash admin gui](https://ibb.co/CBwXQw0)
+
+Unleash provides client libraries for various languages, to use in your app’s code. This is where the actual evaluation of the toggles will take place, according to the defined strategies. The built-in strategies comes with the library, but in many cases you’ll have to pass some contextual information for it to work (i.e. the id of the logged in user for the _userWithId_ strategy.) For your custom strategies, you’ll have to provide the entire evaluation implementation. At the point of evaluation, your code will be quite simple, like 
 
 ```java
 if (unleash.isEnabled(“theNewStuff”) {
@@ -77,7 +80,9 @@ if (unleash.isEnabled(“theNewStuff”) {
 }
 ```
 
-The client also reports metrics back to the unleash admin app, where you can see how many times a certain toggle have been evaluated to true or false recently, and which apps that use each toggle.
+Communication between the client (your app) and the unleash server is asynchronous, meaning that the toggles have minimal effect on performance (unless the evaluation itself is slow), and that your app will still work if you lose connection to the unleash server. The client library caches the toggle strategies and settings. Evaluating a toggle that is not defined yet, will be false.
+
+The client also reports metrics back to the unleash admin app, where you can see the number of times a certain toggle have been evaluated true or false within the last hour, and which apps that use each toggle.
 
 Wrapping up, feature toggling is first and foremost an enabler for getting code into production fast, avoiding long lasting feature branches and increasing speed. Additionally, it provides lots of flexibility of how to launch and test new features, being it in the dedicated test environment  or in production itself.
 
