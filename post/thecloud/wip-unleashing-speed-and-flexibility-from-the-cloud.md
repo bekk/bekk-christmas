@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 6
-title: 'WIP: Unleashing speed and flexibility from the cloud'
+title: Unleashing speed and flexibility from the cloud
 image: >-
   https://images.unsplash.com/photo-1463680942456-e4230dbeaec7?w=1226&h=400&fit=crop&crop=entropy
 ingress: >-
@@ -32,7 +32,7 @@ if (doTheNewStuff == true) {
 }
 ```
 
-Simple as it is, this technique essentially opens the door for having code that is unused, or even still a work in progress as part of the production code. In many cases, this is an essential tool to avoid long living feature branches and go for a master branch strategy - a key part of succeeding in continuous delivery. If that’s not enough, adding some smartness to the toggle evaluation helps with things like A/B testing, pilot testing / canary releases and gradual rollouts.
+Simple as it is, this technique essentially opens the door for having code that is unused, or even still a work in progress as part of the production code. In many cases, this is an essential tool to avoid long living feature branches and go for trunk-based development - a key part of succeeding in continuous delivery. If that’s not enough, adding some smartness to the toggle evaluation helps with things like A/B testing, pilot testing / canary releases and gradual rollouts.
 
 A dead simple toggle may be implemented as 
 
