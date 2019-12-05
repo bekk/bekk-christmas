@@ -61,6 +61,8 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 ## **3. Sirkler**
 
+![sirkler øvelser](https://i.ibb.co/R3CtzWX/sirkel-IMG-2015.jpg)
+
 * Type: Tegning, kreativitet
 * Tidsbruk**:** ca.10 min
 * Du trenger: Tusjer, ark med mange sirkler 
