@@ -94,16 +94,14 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 
 
 
-Andre mulige: 
+## To sannheter, en løgn
 
-## Funfact
+Andre mulige øvelser:
 
-bli kjent
-
-## Stein, saks, papir
+Dele en Funfact om seg selv, Stein, saks, papir
 
 energi
 
-## To sanneheter, en løgn
+## 
 
 - - -
