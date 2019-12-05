@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 8
-title: X oppvarmingsøvelser for å kickstarte din workshop
+title: 5 oppvarmingsøvelser for å kickstarte din workshop
 image: >-
   https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80
 ingress: >-
@@ -18,13 +18,9 @@ links:
   - title: Hyper Island Toolbox
     url: 'https://toolbox.hyperisland.com/'
 ---
-Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekter. Så kanskje det kan hjelpe dere å velge den passende øvelsen til neste workshop. 
+Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge, så jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning” og noen jeg har prøvd ut på prosjekter. Så kanskje det kan hjelpe dere å velge den øvelsen som passer best til neste workshop. 
 
-(Del gjerne oppvarmingsøvelser dere sverger til i kommentarfeltet)
-
-
-
-## Tegne i blinde
+## 1. Tegne i blinde
 
 * Type: Ice breaker, bli kjent, team building
 * Tidsbruk: ca. 5-10 min
@@ -39,9 +35,7 @@ Denne øvelsen går ut på at man går to og to sammen, og lager portretter av h
 
 Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Da jeg prøvde den ut i et prosjekt med teamet mitt, satt latteren løst og vi fikk en god start på team building-workshop'en vår. For øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
 
-
-
-## Historiestafett
+## 2. Historiestafett
 
 * Type: Energi, ice breaker
 * Tidsbruk: ca. 10 min
@@ -65,9 +59,7 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 ![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
 
-
-
-## **Sirkler**
+## **3. Sirkler**
 
 * Type: Tegning, kreativitet
 * Tidsbruk**:** ca.10 min
@@ -76,7 +68,7 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 
 **Hva**
 
-En enkel tegneøvelse for å fremme kreativ tenkning.
+En enkel tegneøvelse for å fremme kreativ tenkning (kilde).
 
 **Hvorfor**
 
@@ -87,26 +79,31 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 1. Alle får et ark med mange sirkler på foran seg og klokken settes på 5 minutter. I løpet av denne tiden skal du gjøre flest mulig sirkler om til noen annet enn sirkler
 2. Når 5 minutter har gått går man sammen i par og bytter ark. 
 3. Se på hverandres ark og skriv hva du tror den andre har tegnet. 
-   ![beskrivelse av sirkler-øvelse](https://i.ibb.co/1LqLD03/sirkler-L.png)
 
-## Zombie Cats
+## 4. Zombie Cats
 
 * Type: Bli kjent
 * Tidsbruk**:** ca.10 min
 * Du trenger: Ingenting! 
 * Antall deltagere: Passer for gruppearbeid, gjerne med ikke altfor store grupper
 
-**Hva**
-
-Dette er en Smashing Ideas 
-
 **Hvorfor**
+
+Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har til felles i gruppen. Øvelsen er laget av Smashing Ideas. 
 
 **Hvordan**
 
-****
+1. Først skal gruppemedlemmene sammen finne to ting de har til felles med hverandre
+2. Deretter får gruppen vite at de to tingene de har til felles er nå deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen engang, fant vi ut at alle hadde hatt Java-programmering på studiene og at alle i grunn var ganske glad i Baileys i kaffen, dermed ble vårt gruppenavn "Java Baileys". Og opprinnelsen til navnet Zombi Cats er fordi en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter. 
+3. Alternativt kan gruppen få i oppgave å mime navnet sitt for de andre i gruppen slik at de kan prøve å gjette seg framn til gruppenavnet. 
 
-## To sannheter, en løgn
+## 5. To sannheter, en løgn
+
+
+
+- - -
+
+
 
 Andre mulige øvelser:
 
