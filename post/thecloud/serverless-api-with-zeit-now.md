@@ -50,7 +50,7 @@ module.exports = (req, res) => {
 };
 ```
 
-This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serverless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
+This is a serverless function and will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serverless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
 
 We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass the value in the route to the function. So let's create a `[name].js` file in the directory `/api/gift-lists`. Inside this file, write this simple function:
 
