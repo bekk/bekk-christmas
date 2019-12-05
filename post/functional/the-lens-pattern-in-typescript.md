@@ -52,7 +52,7 @@ const updatedModel = {
 Cumbersome, right? Imagine having to do this every time we need to update a value.
 
 ## Lenses
-Lenses is part of a group of patterns used to abstract away the action of updating and looking through large immutable data structures. Today we will take a brief look at perhaps the most widely used one: lenses. A lens – or a functional reference – is essentially a focus into a data structure, abstracting away how deep a strucure is by pointing right at the requested field. Let us look at the signature of a lens:
+Lenses is part of a group of patterns used to abstract away the action of updating and looking through large immutable data structures. A lens – or a functional reference – is essentially a focus into a data structure, abstracting away how deep a strucure is by pointing right at the requested field. Let us look at the signature of a lens:
 
 ```typescript
 interface Lens<A, B> {
@@ -66,7 +66,7 @@ It is a pair of two functions, a getter and a setter. The getter is a way to ext
 A lens made to focus on the name field from the perspective of the model, could look something like this:
 
 ```typescript
-const nameLens: Lens<Model, User> = {
+const nameLens: Lens<Model, String> = {
     get: model => model.loginContext.user.name
     set: (model, name) => ({
         ...model,
@@ -139,4 +139,4 @@ const updatedUser = userNameLens.set(model, 'Simen')
 ```
 
 ## Why use lenses?
-Lenses abstract away the operation of updating and extracting values from deep immutable data structures. This means that – in theory – consumers that solely use lenses to work on some data structure, has to know very little about how the model is actually structured. The impact of such an abstraction is greatest when returning to refactor some part of the model, where – in a dream world – only the lenses has to be changed. Without composition in such a pattern, you would find yourself duplicating the same selectors and setters again and again from different perspectives. Such qualities are often present in functional patterns, but are not exclusive to functional programming languages. Take TypeScript for example, it is not a functional programming language, but the lens pattern can be used quite effectively. There are in general many concepts that can be learned and adopted to from functional to other paradigms, which alone should inpire everyone to learn functional programming!
+Lenses abstract away the operation of updating and extracting values from deep immutable data structures. This means that – in theory – consumers that solely use lenses to work on some data structure, has to know very little about how the model is actually structured. The impact of such an abstraction is greatest when returning to refactor some part of the model, where – in a dream world – only the lenses has to be changed. Without composition in such a pattern, you would find yourself duplicating the same selectors and setters again and again from different perspectives. Such qualities are often present in functional patterns, but are not exclusive to functional programming languages. Take TypeScript for example, it is not a functional programming language, but the lens pattern can be used quite effectively. There are in general many concepts that can be learned from functional to be adopted to other paradigms, which alone should inpire everyone to learn functional programming!
