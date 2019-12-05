@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 6
 title: 'WIP: Unleashing speed and flexibility from the cloud'
+image: 'https://unsplash.com/photos/lPQIndZz8Mo'
 ingress: >-
   Feature toggling, or feature flags, is a fairly well known concept in the
   world of modern system development. It provides the foundation for separating
