@@ -54,27 +54,29 @@ Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme s
 
 **Hvorfor**
 
-Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshopen. Dette har blitt en av mine favoritter, da den er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. 
+Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshop'en. Dette har blitt en av mine favoritter, da den er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. Det har ikke vært fokus på å kåre en vinner de gangene jeg har vært med på den, men hvis man ønsker trigge konkurranseinstinktet i gruppen kan man fint inkludere det også. 
 
 **Hvordan**
 
-1. Hvert av "stafettlagene" stiller seg på rekke med en plaka/noe å tegne på på veggen foran seg. Førstemann har en penn i hånden, klar til å starte historien.
+1. Hvert av "stafettlagene" stiller seg på rekke med en plakat/noe å skrive på foran seg. Førstemann har en penn i hånden, klar til å starte historien.
 2. Fasilitator setter på en sang, gjerne en med litt tempo, og historiestafetten er i gang!
-3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen (tusjen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
+3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
 
 ![beskrivelse av sirkler-øvelse](https://i.ibb.co/3dmYdBt/Historiestafett.jpg)
+
+
 
 ## **Sirkler**
 
 * Type: Tegning, kreativitet
 * Tidsbruk**:** ca.10 min
 * Du trenger: Tusjer, ark med mange sirkler 
-* Antall deltagere: Ubegrenset
+* Antall deltagere: Bør gå opp i par, men ingen begrensing på antall. 
 
 **Hvorfor**
 
-Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller lignende. 
+Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller f.eks. før en sprint- workshop hvor deltakerne skal tegne en del. 
 
 **Hvordan**
 
