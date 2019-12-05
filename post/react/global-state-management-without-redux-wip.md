@@ -135,15 +135,16 @@ export const ChildComponent = () => {
 }
 ```
 
-There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I will add a CodeSandbox for you to experiment with if you want.
-<iframe
-     src="https://codesandbox.io/embed/sleepy-fermat-m0zge?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fstore.js&theme=dark"
-     style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
-     title="sleepy-fermat-m0zge"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I will add a CodeSandbox by the end for you to experiment with if you want.
 
 ## Conclusion
 
 The purpose of this article is not to leave Redux for dead – cause it’s definitely not. Redux absolutely has its use cases and advantages. This is merely an alternate way to manage global state in a simpler way without the need of external libraries. However, you have obvious drawbacks with this approach. First of all, it doesn't scale very well. In our example we only had one reducer with three actions holding two states. A real world app would probably need several more states and actions. You can, of course, add all these states to the existing reducer, but that would gradually develop into a maintainability nightmare. A solution would be to create several reducers; one for each group of states belonging together, and then combine them into a root reducer you pass into the `StoreContext`. You can either make this yourself or perhaps use `combineReducers` from Redux. Another significant drawback is all of the tools Redux gives you out-of-the-box – such as DevTools, middlewares and large community support. But again, if your goal is simply just to connect all of your components and you can do without much of the fanciness of Redux, I find this solution to be quite reasonable, fast and practical.
+
+<iframe
+     src="https://codesandbox.io/embed/sleepy-fermat-m0zge?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fstore.js&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="sleepy-fermat-m0zge"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
