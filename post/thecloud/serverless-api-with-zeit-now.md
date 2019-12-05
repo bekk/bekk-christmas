@@ -9,7 +9,7 @@ ingress: >-
   By now, you have probably heard about serverless applications. You know, the
   applications where you focus on the code and let some third-party cloud
   provider manage the infrastructure and deployment process. With serverless
-  functions offered by these cloud providers, it is suprisingly easy to create
+  functions offered by these cloud providers, it is surprisingly easy to create
   modular and serverless APIs that can easily be deployed with one command.
   Let's dig into how.
 links:
@@ -22,7 +22,7 @@ links:
 authors:
   - Vebjørn Isaksen
 ---
-ZEIT Now is a cloud platform that allows you to [deploy static sites](https://zeit.co/docs/v2/introduction/#creating-a-project-and-deploying) from the commando line with the single command `now`. With [Now 2.0](https://zeit.co/blog/now-2), the platform also offers deployment and execution of serverless functions. These functions works by providing respones to HTTP requests and can be written in Go, Python or JavaScript.
+ZEIT Now is a cloud platform that allows you to [deploy static sites](https://zeit.co/docs/v2/introduction/#creating-a-project-and-deploying) from the command line with the single command `now`. With [Now 2.0](https://zeit.co/blog/now-2), the platform also offers deployment and execution of serverless functions. These functions work by responding to HTTP requests and can be written in Go, Python or JavaScript.
 
 In this article, we will explore how Santa Claus can use serverless functions to  create a simple 🎁-list API for all his elves to use.
 
@@ -36,7 +36,7 @@ Before we start, we need to prepare some stuff.
 * Next, initlize the project with `npm init` to create a `package.json`.
 
 ## Constructing the API
-Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with underscore, like `_utils.js`. If you prefix a folder with underscore, *none* of the files inside it will be executed by Now.
+Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extension is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with an underscore, like `_utils.js`. If you prefix a folder with an underscore, *none* of the files inside it will be executed by Now.
 
 Let's make the directory with `mkdir api && cd api`, create the first endpoint with `touch gift-lists.js` and write these lines of code:
 
@@ -50,7 +50,7 @@ module.exports = (req, res) => {
 };
 ```
 
-This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serveless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
+This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each serverless function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
 
 We can also create a dynamic route to retrieve a gift list by a persons name. If we wrap the filename in square brackets, Now will pass the value in the route to the function. So let's create a `[name].js` file in the directory `/api/gift-lists`. Inside this file, write this simple function:
 
@@ -71,10 +71,10 @@ module.exports = (req, res) => {
 };
 ```
 
-So in order to retrieve Albert's gift list, we simply go to the route `/api/gift-lists/albert`. Neat, right?
+To retrieve Albert's gift list, we simply go to the route `/api/gift-lists/albert`. Neat, right?
 
 ## So, how do I deploy this?
-Well, I promised you that the API could be deployed with one single command. And that's totally true, just stay in your project's root and run the command `now` in the terminal. Now will spin up a server and provide free automatic SSL with zero configuration. After some seconds, you will receive a live URL like this `https://gift-lists.username.now.sh/` and Santa's API is ready to go.
+Well, I promised you that the API could be deployed with one single command. And that's true, from your project's root in the terminal, run the command `now`. Now will spin up a server and provide free automatic SSL with zero configuration. After some seconds, you will receive a live URL like this `https://gift-lists.username.now.sh/` and Santa's API is ready to go.
 
 Made some changes or added more endpoints? Just run `now` again and the URL point to the latest changes.
 
@@ -82,7 +82,7 @@ Made some changes or added more endpoints? Just run `now` again and the URL poin
 Also one command, in your project's root, run `now dev` to get a local environment.
 
 ## Let's sum it up
-This article only scratch the surface of what's possible with Now and there is still a lot to learn. I recommed you to explore the cloud platform from simple deployments to serverless functions. The workflow is truly amazing.
+This article only scratches the surface of what's possible with Now and there is still a lot to learn. I recommend you to explore the cloud platform from simple deployments to serverless functions. The workflow is truly amazing.
 
 See the related link below to learn more, perfect Sunday readings.
 
