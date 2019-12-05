@@ -95,7 +95,7 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 1. Først skal gruppemedlemmene sammen finne to ting de har til felles med hverandre
 2. Deretter får gruppen vite at de to tingene de har til felles er nå deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen engang, fant vi ut at alle hadde hatt Java-programmering på studiene og at alle i grunn var ganske glad i Baileys i kaffen, dermed ble vårt gruppenavn "Java Baileys". Og opprinnelsen til navnet Zombi Cats er fordi en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter. 
-3. Alternativt kan gruppen få i oppgave å mime navnet sitt for de andre i gruppen slik at de kan prøve å gjette seg framn til gruppenavnet. 
+3. Alternativt kan gruppen få i oppgave å mime navnet sitt for alle de andre gruppene slik at de kan prøve å gjette seg framn til gruppenavnet. 
 
 ## 5. To sannheter, en løgn
 
