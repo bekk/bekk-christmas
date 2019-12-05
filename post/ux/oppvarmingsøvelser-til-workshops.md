@@ -98,7 +98,8 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 3. Alternativt kan gruppen også få i oppgave å mime navnet sitt for alle de andre gruppene slik at de kan prøve å gjette seg fram til hva navnet er. 
 
 ## 5. To sannheter, en løgn
-![2 sannheter, 1 løgn](https://i.ibb.co/QDxVC6t/IMG-2013.jpg)
+
+![alt-tekst til bilde](https://i.ibb.co/QDxVC6t/IMG-2013.jpg)
 
 * Type: Bli kjent, team building
 * Tidsbruk**:**  ca. 20 - 40 min 
