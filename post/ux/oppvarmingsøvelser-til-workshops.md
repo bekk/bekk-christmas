@@ -116,16 +116,4 @@ Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt
 
 
 
-
-
-Håper du Lykke til med neste workshop!
-
-- - -
-
-
-
-
-
-## 
-
-- - -
+Lykke til med din neste workshop!
