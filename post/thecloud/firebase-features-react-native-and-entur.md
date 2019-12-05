@@ -39,15 +39,23 @@ So to be able to handle feature toggling or changes in all the different app ver
 
 In December we have put a cute Santa hat on the profile icon in the app. The code for this feature has been included in all the latest versions of the app. During December we can toggle this feature on, and turn it back off again in January. No need for a timely app release, only a simple remote config change.
 
-![Entur Christmas filter](/assets/img_072b0813200c-1.jpeg "Christmas filter")
-
 ## Firebase Cloud Functions
 
-When we first started developing the Entur app three years ago, all the communication to the API’s was done directly from the client. This worked well in the beginning, but as the number of active users increased, and we also needed several authenticated API calls. We started looking for someone or something that could be our BFF, or at least our Backend for Frontend. Since we already were in the Firebase domain, a natural choice was to try out Cloud Functions.
+When we first started developing the Entur app three years ago, all the communication to the API’s was done directly from the client. This worked well in the beginning, but as the number of active users increased, and we also needed several authenticated API calls, we started looking for something or someone that could be our BFF, or at least our Backend for Frontend. Since we already were in the Firebase domain, a natural choice was to try out Cloud Functions.
 
-Cloud Functions for Firebase let you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your code is stored in Google's cloud and runs in a managed environment. There's no need to manage and scale your own servers. https://firebase.google.com/docs/functions
+> Cloud Functions for Firebase let you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your code is stored in Google's cloud and runs in a managed environment. There's no need to manage and scale your own servers.
+>
+> \
+>
+>
+> __
+>
+> \
+>
+>
+> _https://firebase.google.com/docs/functions_
 
-Sounds great, right! But there was especially one thing were curious about if we were going to use Cloud Functions. That was the cold start. Since these functions are serverless, the cloud server might shut down if there is no traffic, and then have to start up again it’s triggered. SInce there is no built-in way to keep the server running, our workaround was pinging some of our functions now and then, to ensure that it was kept alive, and the user gets a fast response. With more active users calling our API’s through our BFF, this pinging might no longer be necessary any more, because the most used functions is being kept alive by all the traffic. 
+Sounds great, right! But there was especially one thing we were curious about if we wore going to use Cloud Functions. And that was the _cold start_. Since these functions are serverless, the cloud server might shut down if there is no traffic, and then have to start up again it’s triggered. SInce there is no built-in way to keep the server running, our workaround was pinging some of our functions now and then, to ensure that it was kept alive, and the user gets a fast response. With more active users calling our API’s through our BFF, this pinging might no longer be necessary any more, because the most used functions is being kept alive by all the traffic. 
 
 In retrospective, we are very satisfied with what cloud functions have provided us. It was fast and easy to get up to run, it is stable and scales automatically. It is something we really would recommend if you want a simple backend to get started with. Nevertheless, we are now thinking about porting some of our functions to something like Google Cloud Run. This will give us some extra features that Firebase Functions can’t give us right now. This be processing concurrent requests on the same instance, as well as being able to reduce the latency even more than what we can get from Cloud Functions.
 
