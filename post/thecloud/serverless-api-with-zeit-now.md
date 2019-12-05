@@ -29,7 +29,7 @@ Before we start, we need to prepare some stuff.
 * Next, initlize the project with `npm init` to create a `package.json`.
 
 ## Constructing the API
-Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes).
+Ok, we are now ready to create Santa's simple gift lists API. First, we create a new directory named `api` at the project's root. Any file, as long as the extention is supported, we put in this folder will be automatically executed when your application visits the route `/api/file-name`. This works since filesystem routing is used by default, but it's also possible to define your own [routes](https://zeit.co/docs/configuration/#routes). If you want a file to live inside the `api` folder, but not be served as a serverless function, you can simply prefix the filename with underscore, like this `_utils.js`. If you prefix a folder with underscore, none of the files inside it will be executed by Now.
 
 So let's add `gift-lists.js` in the `api` directory and write these lines of code:
 
@@ -44,3 +44,5 @@ module.exports = (req, res) => {
 ```
 
 This serverless function will run whenever the `/api/gift-lists` endpoint is visited. The two objects, `req` and `res`, are passed to each Node.js Serveless Function and can look like standard HTTP request and response objects. However, they include some additional [helper functions](https://zeit.co/docs/v2/serverless-functions/supported-languages#node.js-request-and-response-objects) provided by Now, including the `res.json(obj)` used above to send a JSON object.
+
+
