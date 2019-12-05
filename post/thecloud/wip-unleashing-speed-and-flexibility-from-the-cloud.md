@@ -38,9 +38,9 @@ A dead simple toggle may be implemented as
 
 ```java
 if (false) {
-doTheNewStuff();
+  doTheNewStuff();
 } else {
-doTheOldstuff();
+  doTheOldstuff();
 }
 ```
 
@@ -48,9 +48,9 @@ This will hide the new stuff until ready for launch, but it will require a (real
 
 ```java
 if (theNewStuffIsSwitchedOn()) {
-doTheNewStuff();
+  doTheNewStuff();
 } else {
-doTheOldstuff();
+  doTheOldstuff();
 }
 ```
 
@@ -71,9 +71,9 @@ Unleash provides client libraries for various languages, to use in your app’s 
 
 ```java
 if (unleash.isEnabled(“theNewStuff”) {
-doTheNewStuff();
+  doTheNewStuff();
 } else {
-doTheOldstuff();
+  doTheOldstuff();
 }
 ```
 
