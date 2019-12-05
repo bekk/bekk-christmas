@@ -74,6 +74,10 @@ Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og ti
 * Du trenger: Tusjer, ark med mange sirkler 
 * Antall deltagere: Bør gå opp i par, men ingen begrensing på antall. 
 
+**Hva**
+
+Enkel tegneøvelse for å fremme kreativ tenkning.
+
 **Hvorfor**
 
 Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller f.eks. før en sprint- workshop hvor deltakerne skal tegne en del. 
@@ -89,8 +93,8 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 
 * Type: Bli kjent
 * Tidsbruk**:** ca.10 min
-* Du trenger: Ingenting 
-* Antall deltagere: Passer for gruppearbeid
+* Du trenger: Ingenting! 
+* Antall deltagere: Passer for gruppearbeid, gjerne med ikke altfor store grupper
 
 
 
