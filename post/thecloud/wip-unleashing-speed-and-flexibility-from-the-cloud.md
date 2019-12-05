@@ -55,7 +55,7 @@ if (theNewStuffIsSwitchedOn()) {
 }
 ```
 
-This minor adjustment gives the magic touch. Now, we have the flexibility to evaluate the toggle in any way we see fit, by changing the implementation of the evaluation function. The toggle may be simply bound to some config setting, i.e. for turning _on_ for test but _off_ for prod - a frequently used, and in many cases sufficient, approach. But the function may also be true for specific users, a certain percent of users or whatnot.
+This minor adjustment gives the magic touch. Now, we have the flexibility to evaluate the toggle in any way we see fit, by changing the implementation of the evaluation function. The toggle may be simply bound to some config setting, i.e. for turning _on_ for test but _off_ for prod - a frequently used, and in many cases sufficient, approach. But the function may also be true for specific users, a certain percent of users, certain devices or whatnot.
 
 However, implementing rules like these at every point of evaluation in every app may quickly turn into a mess of many toggles with lots of duplicated, or slightly different, implementations – as well as being boring and cumbersome. When reaching that point, it may be time to look out for help. There are quite a few libraries or services ready to use. The organisation where I work have been using [Unleash](https://github.com/Unleash/unleash) for the last year and a half, where it has rapidly become a core tool for many dev teams – so I’ll use that as an example.
 
@@ -81,7 +81,7 @@ if (unleash.isEnabled(“theNewStuff”) {
 }
 ```
 
-Communication between the client (your app) and the unleash server is asynchronous, meaning that the toggles have minimal effect on performance (unless the evaluation itself is slow), and that your app will still work if you lose connection to the unleash server. The client library caches the toggle strategies and settings. Evaluating a toggle that is not defined yet, will be false.
+Communication between the client (your app) and the unleash server is asynchronous, meaning that the toggles have minimal effect on performance (unless the evaluation itself is slow), and that your app will still work if you lose connection to the unleash server. The client library caches the toggle strategies and settings. Evaluating a toggle that is not yet defined, will be false.
 
 The client also reports metrics back to the unleash admin app, where you can see the number of times a certain toggle have been evaluated true or false within the last hour, and which apps that use each toggle.
 
