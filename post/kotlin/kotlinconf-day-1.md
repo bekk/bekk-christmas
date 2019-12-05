@@ -35,13 +35,13 @@ As last year, the conference kicked off with a keynote.  Andrey Breslav presente
 
 With great syntax comes great responsibility. Or, at least, with great syntax comes the temptation to use it everywhere, even places where you maybe shouldn't. In this talk [Huyen Tue Dao](https://twitter.com/queencodemonkey) shares with us some examples of going to far with the Kotlin syntax. 
 
-Keep using the great features of Kotlin, but always make the intention of your code as clear as possible, even though that means writing `!!` or dropping an `apply`. I can wholeheartedly recommend this talk for both experienced and new Kotlin developers. 
+Keep using the great features of Kotlin, but always make the intention of your code as clear as possible, even though that means writing `!!` or dropping an `apply`. We can wholeheartedly recommend this talk for both experienced and new Kotlin developers. 
 
 ### Kotless
 
 A fantastic talk about [Kotless](https://github.com/JetBrains/kotless), a serverless framework, by [Vladislav Tankov](https://github.com/TanVD). The talk started with a short introduction to serverless and continued on about some of the issues with it. In theory serverless sounds really nice, as you don't have to deal with all the server infrastructure. In practise though it's slightly more complex. A simple serverless app often requires 500+ lines of infrastructure configuration that you as a developer have to deal with. Shouldn't it and couldn't it be done much easier?
 
-The answer is yes, and Kotless. Kotless introspects your code and generates the configuration for you. It currently supports AWS and looks really promising. I'm personally looking forward to try this framework out!
+The answer is yes, and Kotless. Kotless introspects your code and generates the configuration for you. It currently supports AWS and looks really promising. 
 
 ### Kotlin for science
 
@@ -49,7 +49,7 @@ Simulations is an important part of modern natural science, especially for disci
 
 ![](/assets/power-of-kotlin-2-.jpg "The power of Kotlin")
 
-What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with varying programming experience, as opposed to other languages where higher experience is needed to easily avoid errors. Extensions and scoped functions can be very helpful both in this regard and with regards to performance. As for performance, it is often good enough (both for Java and Kotlin), and much better than the old reputation of the slow JVM. Kotlin also has the advantage of full compatibility with java.  
+What strengths does Kotlin have compared to the more common programming languages used in science? Kotlin is expressive and safe enough to be used by people with varying programming experience, as opposed to other languages where higher experience is needed to easily avoid errors. Extensions and scoped functions can be very helpful both in this regard and with regards to performance. As for performance, it is often good enough (both for Java and Kotlin), and much better than the old reputation of the slow JVM. Kotlin also has the advantage of full compatibility with java. As for so much else, coroutines is a fantastic tool for science, and kotlin/js can be great for creating visualizations. 
 
 However, there are some issues with Kotlin in science as well.  There are still certain performance issues and also a lack of easy access to scientific tools. But if these can be solved, Kotlin may very well be the next big programming language used in science. 
 
