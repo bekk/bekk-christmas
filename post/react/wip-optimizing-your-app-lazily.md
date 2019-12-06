@@ -5,6 +5,11 @@ post_day: 8
 title: Optimize Your App by Being Lazy
 image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55'
 ingress: 'What is lazy loading, and why should you do it?'
+links:
+  - title: Can you feel the Suspense?!
+    url: 'https://react.christmas/2019/5'
+  - title: Code-splitting
+    url: 'https://reactjs.org/docs/code-splitting.html'
 authors:
   - Sissel Fladby
 ---
@@ -92,10 +97,16 @@ After introducing lazy loading we get the following chunks on a single page load
 
 ![JavaScript chunks after introducing lazy loading](https://i.ibb.co/9VypzJS/Screenshot-from-2019-12-03-21-03-34.png)
 
-When loading this application after the introduction of lazy loading, the first thing to note was the JavaScript chunks. As expected, the number of chunks had increased, but the size of each chunk was reduced considerably.
+When loading this application after the introduction of lazy loading, the first thing to note was the JavaScript chunks. As expected, the number of chunks had increased, and the size of each chunk is reduced.
 
 But more importantly: The DOMContentLoaded-metric was on average reduced with about **200ms** with a regular internett speed, and upon throttling the network in Chrome DevTools with a Fast 3G connection the average difference was **4 seconds**. That is a huge gain with very little effort. It should be mentioned that this test was done in a very informal setting, but the difference is still significant.
 
+## When to use and when not to use
+
 Of course, lazy loading also works wonders with components that aren't the target of a Route. A menu hidden behind a dropdown-menu would be a great candidate for lazy loading. The same holds for any component that is hidden until the user performs a certain action.
 
-I am definitely going to apply this to my work, and I hope you do too!
+Not all components are eligible for lazy loading, though. There is a slight amount of overhead on it, so components that would be loaded anyway for all users, or almost all users, should be loaded straight away. The perceived loading time for the user might end up being longer if not!
+
+In addition, it does not look good, and is not a good user experience if many components load and pop up at an unsynchronized pace. Therefore, make sure you think through which components should be lazy loaded, and which should not. 
+
+Still, there are many cases where lazy loading is an obvious benefit that will help optimizing and improve user experience. It is easy, simple, and will help out with performance.
