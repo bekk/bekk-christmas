@@ -111,8 +111,8 @@ Using `elm-decode-pipeline`, the decoder for `BackendData` would look like this:
 import Json.Decode exposing (Decoder, succeed)
 import Json.Decode.Pipeline exposing (required)
 
-decoderBackendData : Decoder BackendData
-decoderBackendData =
+backendDataDecoder : Decoder BackendData
+backendDataDecoder =
     succeed BackendData
         |> required "type-of-christmas" Json.Decode.string
         |> required "first-snow" Json.Decode.string
@@ -176,7 +176,7 @@ This is what our actual `Christmas` decoder will look like:
 ```elm
 decoder : Decoder Christmas
 decoder =
-    decodeBackendData
+    backendDataDecoder
         |> Json.Decode.andThen backendDataToChristmas
 
 backendDataToChristmas : BackendData -> Decoder Christmas
