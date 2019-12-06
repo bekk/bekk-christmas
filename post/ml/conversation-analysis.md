@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 15
 title: Conversation analysis with Python
 image: >-
-  https://images.unsplash.com/photo-1525616188-ccf49fddc5cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2639&q=80
+  https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 ingress: '### _Exploring NLP libraries for Norwegian_'
 description: ''
 links:
@@ -15,10 +15,7 @@ authors:
 ---
 One of the many branches of machine learning is [Natural Language Processing](https://towardsdatascience.com/introduction-to-natural-language-processing-nlp-323cc007df3d) (or NLP) where computers are trained to understand and generate text and speech. However, while the machine learning universe is full of advanced, powerful and readily available resources for many types of analyses, discussing potential use cases of NLP we realized that a large uncertainty was the availability and capabilities of language processing resources for Norwegian. To explore this, we set out to do a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people talking in Norwegian. This blog post will give a quick intro to some of the most useful Python libraries for Norwegian NLP, to help you get started on your own NLP project!
 
-<img src="/assets/echo_output.png" alt="Meeting analysis output"/>
-*Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)*
-
-![Meeting analysis output](/assets/echo_output.png "Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)")
+![Meeting analysis output](/assets/echo_output.png "Meeting analysis output") <i>Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)</i>
 
 Our first task was transcribing the recorded speech. After evaluating several options, the [Google Speech-to-Text API](https://cloud.google.com/speech-to-text/) emerged as the best alternative, scoring as low as 7 % normalized [Levenshtein](https://itnext.io/string-similarity-the-basic-know-your-algorithms-guide-3de3d7346227) distance and 17 % [Word Error Rate](https://medium.com/descript/challenges-in-measuring-automatic-transcription-accuracy-f322bf5994f) on test samples. This corresponds well to the results of recent tests<sup>1</sup> evaluating different speech-to-text APIs in English.
 
