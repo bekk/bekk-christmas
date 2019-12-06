@@ -24,6 +24,9 @@ A key part of speech analysis is speaker identification, known in the field as d
 
 As for the summary of the text, we used the Gensim library, which offers an [extractive summarization model](https://www.geeksforgeeks.org/python-extractive-text-summarization-using-gensim/) based on the TextRank algorithm. In our experience, the function is effective when input text data is of high quality, but becomes equivalently confused by low-grade transcriptions. We experimented with [abstractive summarization](https://towardsdatascience.com/abstractive-summarization-of-dialogues-f530c7d290be) models for English (translating the transcribed speech back and forth), but any meaningful insight was clearly lost in translation and/or transcription.
 
+
+To extract key words from the transcription, we implemented a modified [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) algorithm, aided by a Norwegian Snowball stemmer provided by [NLTK](https://www.nltk.org/_modules/nltk/stem/snowball.html#NorwegianStemmer)<sup>2</sup>. With a careful optimization of the TF/IDF weights, [stopword deletion](https://en.wikipedia.org/wiki/Stop_words) and outlier removal, the program was able to extract highly relevant keywords (top left box in the analysis output above).
+
 One of the most sophisticated libraries we encountered was spaCy. It has a trained [convolutional neural network model for Norwegian](https://spacy.io/models/nb) which enables context-based [recognition of named entities](https://towardsdatascience.com/custom-named-entity-recognition-using-spacy-7140ebbb3718), [part-of-speech tagging](https://stackabuse.com/python-for-nlp-parts-of-speech-tagging-and-named-entity-recognition/) and even [dependency parsing](http://nlpprogress.com/english/dependency_parsing.html). To demonstrate its POS tagging abilities, we let spaCy analyze the following sentence:
 
 ```
@@ -68,8 +71,6 @@ julekalendere | NOUN
 ```
 
 As we see, spaCy understands from the context that _bekk_ is in fact a proper noun! This is a very helpful tool in extraction of named entities, but also structural sentence analysis or at some point even abstractive approaches.
-
-To extract key words from the transcription, we implemented a modified [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) algorithm, aided by a Norwegian Snowball stemmer provided by [NLTK](https://www.nltk.org/_modules/nltk/stem/snowball.html#NorwegianStemmer)<sup>2</sup>. With a careful optimization of the TF/IDF weights, [stopword deletion](https://en.wikipedia.org/wiki/Stop_words) and outlier removal, the program was able to extract highly relevant keywords.
 
 This has hopefully been a useful intro to some of the many available resources for Norwegian NLP! We tackled several other challenges, including [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), speech time mapping and [sociogram](https://en.wikipedia.org/wiki/Sociogram) generation, which may be covered some other time. Feel free to drop me an email if you're interested in hearing more!
 
