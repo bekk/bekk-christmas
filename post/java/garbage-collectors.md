@@ -26,21 +26,22 @@ authors:
 ---
 - https://howtodoinjava.com/java/garbage-collection/all-garbage-collection-algorithms/
 
-Garbage collection is the mechanism used in Java to free up unused memory. In order to achieve this it tracks all objects and determines which ones that safely can be removed from the heap. **WHY DOES IT MATTER, LATENCY VS THROUGHPUT ETC** 
+Garbage collection is the mechanism used in Java to free up unused memory. In order to achieve this it keeps track of all objects and determines which ones that safely can be removed from the heap, thus freeing up that precious memory. 
 
-When a Java process launches it allocates memory for the heap, metaspace (PermGen successor), JIT codecache, thread stacks, and shared libraries depending on how much memory is available to the process. When talking about garbage collections in Java it is natural to focus on the heap, though the metaspace and codecache are also subjected to garbage collection through other means.
+When a Java process launches it allocates memory for the heap, metaspace (PermGen successor), JIT codecache, thread stacks, and shared libraries depending on how much memory is available to the process. Though the metaspace and codecache also have garbage collection we're going to focus on the Java heap. 
 
-<img src="https://i.ibb.co/yqb7zGF/heapillustration.png" alt="The anatomy of the heap (eden, survivor, and tenured space)." />
+The Java heap is divided into three separate areas as shown below;
+
+![The anatomy of the heap (eden, survivor, and tenured space).](https://i.ibb.co/yqb7zGF/heapillustration.png)
 
 - https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag
 - https://stackoverflow.com/questions/2129044/java-heap-terminology-young-old-and-permanent-generations
 
-The illustration shows the subdivision of the heap as three major areas. 
-Eden space is the part where newly created objects are places, so whenever you create an `new` object it is places in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold it is promoted to tenured space.
+Eden space is the part where newly created objects are places, so whenever you create an `new` object it is places in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold (ex. survived 8 garbage collections) it is promoted to tenured space.
 
-This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. 
-**MINOR/MAJOR GC**
+This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. It also is the reason why we talk about minor and major garbage collection. Typically minor GC works on the young space, which is the combination of eden space and survivor space. While major GC does it work in the tenured space. 
 
+**WHY DOES IT MATTER, LATENCY VS THROUGHPUT ETC** 
 
 ## Phases in a cycle
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
