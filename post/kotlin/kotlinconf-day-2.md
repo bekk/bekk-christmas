@@ -34,6 +34,39 @@ This talk by Nat Pryce and Duncan McGregor revolves around error handling in Kot
 
 For simple cases such as parsing an int from a string, they have found that null can work as an error. However, our world is rarely simple, so they outlined two other solutions; the familiar exceptions and the "Result" type. When throwing exceptions, they recommended "fuzzy" tests to ensure that there weren't any unexpected exceptions. When using the "Result" type, they suggested to prefer immutable data and delegate handling of failures as high up the stack as possible by propgating the failure Result. To provide the Result type and utilities, they proposed the use of Result4k in specific situations. Your milage may vary, though.
 
+### What's new in Java 19: The end of Kotlin? 🤔
+
+Another interesting talk was by [Jake Wharton](https://jakewharton.com/), where he compares new and upcoming features in Java with Kotlin of today.
+As he aptly illustrates, since the emergence of Kotlin, the developers of Java seems to have stepped up their game - but is it enough?
+
+Throughout the talk, he illustrated his points through code, albeit with some artistic freedom when it came to overriding a deconstructor.
+Take value-based classes as an example. In Kotlin, we have the well known data class, like so;
+```kotlin
+data class Person(val name: String, val age: Int)
+```
+With the proposed `record` in Java, a similar construct would look like this;
+```java
+record Person(String name, int age) {}
+```
+Combined with the new deconstructors which he also mentiones, the only big difference would be the copy constructor! 😱
+
+Another advantage to Kotlin as of today is `Sealed class`, described by many as Enum on speed. To recap, this is a Sealed class
+```kotlin
+sealed class Customer
+data class Person(val ssn: String, val firstName: String, val lastName: String) : CustomerID()
+data class Company(val id: String, val name: String) : CustomerID()
+```
+A little down the road, it looks like Java will have a similar construct
+```java
+sealed interface CustomerID {}
+record Person(String ssn, String firstName, String lastName) : CustomerID()
+record Company(String id, String name) : CustomerID()
+```
+
+When you factor in other topics he mentioned, like Variable Type Inference, Expression Switch and Pattern Matching, it can indeed look somewhat gloomy for Kotlin.
+However, all of these changes will also benefit Kotlin, given that it's also on the JVM!
+Add in things such as Kotlins multiplatform support and Null as part of the type system, he answered with **nope** - we will still need Kotlin.
+
 ### Android Jetpack ❤️
 
 In 2017 Android announced first-class support for Kotlin, and since 2017 both the platform and the language has evolved a lot. That is why this year Google announced that Android will become Kotlin-first. In this talk Wojtek Kaliciński talked about the current state of Android Jetpack, which is a suite of libraries for app development on Android. Part of the talk was also to present how the future will look like for the API development on Android.
