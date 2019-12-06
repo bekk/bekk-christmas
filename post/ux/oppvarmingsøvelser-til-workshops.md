@@ -47,17 +47,17 @@ Hensikten med denne øvelsen er å lage god stemning. Den skaper rom for å dumm
 
 **Hva** 
 
-Øvelsen går ut på at gruppen/stafettlaget skriver en historie sammen ord for ord, ved at deltaker skriver et ord hver, noe som ofte resulterer i nokså morsomme og særegne historier. 
+Øvelsen går ut på at gruppen/stafettlaget skriver en historie sammen ord for ord, ved at deltaker skriver et ord hver. Dette resulterer ofte i nokså morsomme og særegne historier.
 
 **Hvorfor**
 
-Målet med denne øvelsen er å få opp energinivået og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshop'en. Dette har blitt en av mine favoritter, da den er enkel å forberede og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. Det har ikke vært fokus på å kåre en vinner de gangene jeg har vært med på den, men hvis man ønsker trigge konkurranseinstinktet i gruppen kan man fint inkludere det også. 
+Målet med denne øvelsen er å få opp energinivået, og leke seg litt. Av og til er det akkurat det man trenger før man setter i gang med selve workshop'en. Dette har blitt en av mine favoritter, da den er enkel å forberede, og alltid leverer. Øvelsen kan bidra til å løse opp stemningen i grupper som ikke kjenner hverandre så godt, eller fungere som en underholdende "energizer" med teamet ditt eller en annen gruppe. Det har ikke vært fokus på å kåre en vinner de gangene jeg har vært med på den, men hvis man ønsker trigge konkurranseinstinktet i gruppen, kan man fint inkludere det også. 
 
 **Hvordan**
 
 1. Hvert av "stafettlagene" stiller seg på rekke med en plakat/noe å skrive på foran seg. Førstemann har en penn i hånden, klar til å starte historien.
 2. Fasilitator setter på en sang, gjerne en med litt tempo, og historiestafetten er i gang!
-3. Førstemann løper opp til plakaten og skrive det første ordet, deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
+3. Førstemann løper opp til plakaten for å skrive det første ordet. Deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
 
 ## **3. Sirkler**
@@ -75,7 +75,7 @@ Dette er en enkel tegneøvelse for å fremme kreativ tenkning (kilde: Digital No
 
 **Hvorfor**
 
-Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse som for eksempel kan brukes før en skal i gang med brainstorming eller kanskje før en sprint- workshop hvor deltakerne skal tegne en del. 
+Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finne flest mulig måter å omskape en sirkel til noe forståelig. Det er en superenkel og veldig artig øvelse. Den kan for eksempel brukes før en skal i gang med brainstorming eller før en sprint- workshop hvor deltakerne skal tegne en del. 
 
 **Hvordan**
 
@@ -111,10 +111,10 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 
 **Hva og hvordan**
 
-En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg selv. En og en leser opp alle 3 påstandene, og så skal resten av gruppen diskutere og til slutt gjette hvilken av de tre påstandene de tror er en løgn. Når riktig svar er avslørt fortsetter neste person i gruppen. Dette er en øvelse som kan ta litt tid avhengig av hvor mange man er og hvor snakkesalig gruppen er, så den passer gjerne best som del av en litt lenger workshop. 
+En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg selv. En og en leser opp alle 3 påstandene. Så skal resten av gruppen diskutere, og til slutt gjette hvilken av de tre påstandene de tror er en løgn. Når riktig svar er avslørt fortsetter neste person i gruppen. Dette er en øvelse som kan ta litt tid avhengig av hvor mange man er, og hvor snakkesalig gruppen er. Derfor passer den gjerne best som del av en litt lenger workshop.
 
 **Hvorfor**
 
-Målet med denne oppgaven er å bli bedre kjent og jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en veldig morsom måte å generere samtaletemaer for neste lunsj!
+Målet med denne oppgaven er å bli bedre kjent. Jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en veldig morsom måte å generere samtaletemaer for neste lunsj!
 
 Lykke til med din neste workshop!
