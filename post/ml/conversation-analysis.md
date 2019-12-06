@@ -39,13 +39,10 @@ To extract keywords from the transcription, we implemented a modified [tf-idf](h
 <h3>POS tagging</h3>
 
 One of the most sophisticated libraries we encountered was spaCy. It has a trained [convolutional neural network model for Norwegian](https://spacy.io/models/nb) which enables context-based [recognition of named entities](https://towardsdatascience.com/custom-named-entity-recognition-using-spacy-7140ebbb3718), [part-of-speech tagging](https://stackabuse.com/python-for-nlp-parts-of-speech-tagging-and-named-entity-recognition/) and even [dependency parsing](http://nlpprogress.com/english/dependency_parsing.html). To demonstrate its POS tagging abilities, we let spaCy analyze the following sentence:
-
 ```
 i år skal bekk publisere tolv julekalendere
 ```
-
 or in English, "_This year, Bekk is publishing twelve Advent calendars"._ The main challenge posed here is the fact that _bekk_, apart from being our company name, also means _brook_ or _creek_ in Norwegian. While <i>brook</i> and <i>creek</i> are clearly common nouns, _bekk_, in this case, is intented as a company name – that is, a proper noun. We run the following code:
-
 ```python
 import spacy
 nlp = spacy.load("nb_core_news_sm")
@@ -61,9 +58,7 @@ sentence = 'i år skal bekk publisere tolv julekalendere'
 for (word, pos) in getPOS(sentence):
     print(word,"|",pos,"\n-------")
 ```
-
 receiving the output:
-
 ```
 i | ADP 
 -------
@@ -80,7 +75,6 @@ tolv | NUM
 julekalendere | NOUN 
 -------
 ```
-
 As we see, spaCy understands from the context that _bekk_ is in fact a proper noun! This is a very helpful tool in extraction of named entities, but also structural sentence analysis or at some point even abstractive approaches.
 
 This has hopefully been a useful intro to some of the many available resources for Norwegian NLP! We tackled several other challenges, including [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), speech time mapping and [sociogram](https://en.wikipedia.org/wiki/Sociogram) generation, which may be covered some other time. Feel free to drop me an email if you're interested in hearing more✉
