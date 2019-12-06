@@ -213,7 +213,7 @@ export const useSanity = query => {
 The hook is called with the consumers query and the content is returned. A typical query can be can be:
 
 ```js
-const query = '*[_type == "restaurant"] [0...10] | order(_createdAt asc) {_createdAt, _id, name, "menu_categories": *[_type == 'category']}'
+const query = '*[_type == "restaurant"] [0...10] | order(_createdAt asc) {_createdAt, _id, name, "menu_categories": *[_type == "category"]}'
 ```
 
 This query fetches the last 10 restaurants created with the time of creation, an id, the name and all menu categories with their content. We have to specify what data we want from the inner data model, hence `"menu_categories": *[_type == 'category']}` which means, give me all fields within `menu_categories` with type `category`.
