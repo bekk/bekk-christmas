@@ -17,8 +17,6 @@ links:
   - title: Hyper Island Toolbox
     url: 'https://toolbox.hyperisland.com/'
 ---
-Det er ikke alltid så lett å gå fra 0 til 10 på kort tid, så derfor kan oppvarmingsøvelser være en ypperlig måte å sparke i gang en workshop eller unngå den velkjente «etter lunsj-dippen».
-
 Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge. Jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning”, og som jeg har prøvd ut på prosjekter. Kanskje det kan hjelpe deg å velge den øvelsen som passer best til din neste workshop?
 
 ## 1. Tegne i blinde
@@ -30,11 +28,13 @@ Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i worksho
 
 **Hva** 
 
-Denne øvelsen går ut på at man går to og to sammen, og lager portretter av hverandre - uten å se på arket når du tegner, og med feil hånd (ikke den du vanligvis tegner med). Om man skulle ha lyst til å legge til enda en tvist, kan personen som tegner samtidig intervjue den andre for å bli bedre kjent, f.eks. "Hvor studerte du?", "Hvor vokste du opp?" osv. 
+Denne øvelsen går ut på at man går to og to sammen, og lager portretter av hverandre. Utfordringen er at du ikke skal se på arket når du tegner, og bruke feil hånd (ikke den du vanligvis tegner med). Om man skulle ha lyst til å legge til enda en tvist, kan personen som tegner samtidig intervjue den andre for å bli bedre kjent, f.eks. "Hvor studerte du?", "Hvor vokste du opp?" osv. 
 
 **Hvorfor**
 
-Hensikten med denne øvelsen er å lage god stemning og skape rom for å dumme seg ut og poengtere at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Da jeg prøvde den ut i et prosjekt med teamet mitt, satt latteren løst og vi fikk en god start på team building-workshop'en vår. For øvelsen kan også fungere bra som team building ved at man setter navn på portrettene og henger de opp i team-området som en artig presentasjon av alle i etterkant. 
+Hensikten med denne øvelsen er å lage god stemning. Den skaper rom for å dumme seg ut, og poengterer at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Da jeg prøvde den ut i et prosjekt med teamet mitt, satt latteren løst og vi fikk en god start på team building-workshop'en vår. Øvelsen kan også fungere bra som team building ved at man setter navn på portrettene, og henger de opp i team-området som en artig presentasjon av alle i etterkant.
+
+
 
 ## 2. Historiestafett
 
@@ -97,8 +97,8 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 **Hvordan**
 
 1. Først skal gruppemedlemmene sammen finne to ting de har til felles med hverandre.
-2. Deretter får gruppen vite at de to tingene de har til felles nå er deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen engang, fant vi ut at alle hadde hatt Java-programmering på studiene og at alle i grunn var ganske glad i Baileys i kaffen, dermed ble vårt gruppenavn "Java Baileys". Og navnet på selve øvelsen kommer fra at en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter, derav navnet Zombie Cats. 
-3. Alternativt kan gruppen også få i oppgave å mime navnet sitt for alle de andre gruppene slik at de kan prøve å gjette seg fram til hva navnet er. 
+2. Deretter får gruppen vite at de to tingene de har til felles nå er deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen en gang, fant vi ut at alle hadde hatt Java-programmering på studiene, og at alle i grunn var ganske glad i Baileys i kaffen. Dermed ble vårt gruppenavn "Java Baileys". Navnet på selve øvelsen kommer fra at en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter, derav navnet Zombie Cats. 
+3. Alternativt kan gruppen også få i oppgave å mime navnet sitt for alle de andre gruppene, slik at de kan prøve å gjette seg fram til hva navnet er. 
 
 ## 5. To sannheter, en løgn
 
