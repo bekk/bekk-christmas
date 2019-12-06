@@ -49,10 +49,9 @@ Anything that can trigger your functions you have defined in your service. On AW
 These are any resources which is needed by your service, and typically what your functions use. Typical resources may be a database like DynamoDB or a S3 bucket.
 
 
-## In practice
+## What does this look like in practice?
 
-
-So, how does this actually look in practice? Below is an example of a *service*, defined in i file called `serverless.yml`.
+Below is an example of a *service*, defined in i file called `serverless.yml`. The service is an API which you can use to create new christmas wishes and return a list of all your wishes.
 
 ```yaml
 service: wishlist 
@@ -107,11 +106,21 @@ In the `functions` block we declare two functions. The `wishlist` function is a 
 
 The last two blocks, `resources` and `iamRoleStatements` defines our DynamoDB table and we also define that our lambda functions are allowed to query and add items to our table.
 
-## Deploy your service
+## So, how do we actually deploy our service to the cloud? 
 
-So how do we actually deploy our service to the cloud to be able to use our API? 
+Run the command `sls deploy`, and it will print the following output. The framework will deploy all your functions and necessary infrastructure and print the URL for your brand new serverless API at the bottom.
 
-When we run `sls deploy`, Serverless Framework will under the hood create a [CloudFormation]() template and upload that to AWS. This will again provision all of the necessary services and link them nicely together. When Serverless Framework sees that we wan't to our functions to react on a http request, it automatically provisions a API Gateway for us so that we get an API we can call. Quite cool!
+```bash
+$ sls deploy
+
+....
+```
+
+So what happend here? Under the hood, Serverless Framework creates a [CloudFormation](https://aws.amazon.com/cloudformation/) template and uploads that to AWS. CloudFormation will take this template and provision all of the necessary services, deploy the functions and link all the services nicely together. When Serverless Framework sees that our functions shall react to a http request, it automatically provisions a API Gateway for us so that we get an API we can call. Pretty cool!
+
+# What's next?
+
+This was only a simple example of what Serverless Framework is capable of.
 
 ## TODO
 
