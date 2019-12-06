@@ -19,7 +19,7 @@ Sanity may be the tool and the backend you need to rescue your project. It is a 
 
 ## Define your data model
 
-Sanity is configured in a matter of minutes. First register your account [here](https://manage.sanity.io/) and proceed with the following command:
+Sanity is configured in a matter of minutes. First register your account [here](sanity.io/create)(or with the CLI) and proceed with the following command:
 
 ```sh
 npm i -g @sanity/cli && sanity init
