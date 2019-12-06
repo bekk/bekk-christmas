@@ -9,6 +9,8 @@ ingress: >-
   This year the 10th version of the ECMAScript Language Specification was
   released, often referred to simply as ES2019. Let’s take a closer look at what
   new features we got and how we can put them to use.
+authors:
+  - Emil Døhlen Hansen
 ---
 ## String.trimStart() and String.trimEnd()
 
