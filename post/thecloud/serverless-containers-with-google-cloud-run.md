@@ -11,16 +11,15 @@ ingress: >-
   management of a full-fledged Kubernetes cluster? 
 
 
-  Are you intrigued by the simplicity of serverless and the _pay-what-you-use_
-  model of existing [FaaS](https://en.wikipedia.org/wiki/Function_as_a_service)
-  platforms, but find the supported languages and frameworks too limited? Or
-  maybe you find the FaaS platforms a bit too vendor-specific?
+  Are you intrigued by serverless and the _pay-what-you-use_ model of existing
+  [FaaS](https://en.wikipedia.org/wiki/Function_as_a_service) platforms, but
+  find the supported languages and frameworks too limited? 
 
 
   Then come along and have a look at _Google Cloud Run_ - a fully managed
   serverless execution environment that lets you run stateless HTTP-driven
-  containers, almost like functions, but where _you_ supply a container with the
-  web serving runtime and you pay exactly for what you use billed to the nearest
+  containers. It's almost like functions, but where _you_ supply a container
+  with the web runtime and pay exactly for what you use billed to the nearest
   100 milliseconds.
 links:
   - title: Cloud Run product overview
@@ -39,3 +38,5 @@ authors:
 Cloud Run is a fully managed serverless execution environment that lets you run stateless HTTP-driven containers, without worrying about the underlying infrastructure. You don't have to set up and manage a Kubernetes cluster, and you don't pay for compute instances idling around when your service are not handling any traffic.
 
 More to come...
+
+Splash photo by [asoggetti](https://unsplash.com/@asoggetti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
