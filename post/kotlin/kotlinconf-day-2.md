@@ -12,6 +12,10 @@ ingress: >-
 links:
   - title: 'Day 2 talks '
     url: 'https://kotlinconf.com/talks/6-dec'
+authors:
+  - Yrjan Fraschetti
+  - Vetle Bu Solgård
+  - Thomas Oddsund
 ---
 Forslag til ting å skrive om:
 
