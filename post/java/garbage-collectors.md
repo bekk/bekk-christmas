@@ -32,8 +32,10 @@ When a Java process launches it allocates memory for the heap, metaspace (PermGe
 
 The Java heap is divided into three separate areas as shown below;
 
+<p>
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/heap-light.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/heap-dark.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
+</p>
 
 - https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag
 - https://stackoverflow.com/questions/2129044/java-heap-terminology-young-old-and-permanent-generations
