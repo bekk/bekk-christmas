@@ -7,6 +7,8 @@ ingress: >-
   How the code is formatted can be a hot topic, but it's a solved problem - just
   use a linter and/or formatter! In this article, I'll introduce you to a linter
   and formatter for your Kotlin codebase.
+authors:
+  - Thomas Oddsund
 ---
 When you have two or more people working on the same codebase there is bound to be disagreements. It might be about larger things such as the architecture or what framework to use. It might be about smaller things, like the number of spaces used for indentation or the order of modifiers.
 
