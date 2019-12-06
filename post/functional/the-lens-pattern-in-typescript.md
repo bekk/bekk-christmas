@@ -97,7 +97,7 @@ Instead of creating a lens focusing us from the model straight to the name of th
 ```typescript
 const loginContextLens: Lens<Model, LoginContext> = {
     get: model => model.loginContext,
-    set: (model, loginContect) => ({ ...model, loginContect })
+    set: (model, loginContext) => ({ ...model, loginContext })
 }
 const userLens: Lens<LoginContext, User> = {
     get: loginContext => loginContext.user,
