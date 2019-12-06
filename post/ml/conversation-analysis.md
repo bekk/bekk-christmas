@@ -83,7 +83,7 @@ julekalendere | NOUN
 
 As we see, spaCy understands from the context that _bekk_ is in fact a proper noun! This is a very helpful tool in extraction of named entities, but also structural sentence analysis or at some point even abstractive approaches.
 
-This has hopefully been a useful intro to some of the many available resources for Norwegian NLP! We tackled several other challenges, including [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), speech time mapping and [sociogram](https://en.wikipedia.org/wiki/Sociogram) generation, which may be covered some other time. Feel free to drop me an email if you're interested in hearing more!
+This has hopefully been a useful intro to some of the many available resources for Norwegian NLP! We tackled several other challenges, including [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), speech time mapping and [sociogram](https://en.wikipedia.org/wiki/Sociogram) generation, which may be covered some other time. Feel free to drop me an email if you're interested in hearing more✉
 
 <sup>1</sup> https://www.rev.ai/blog/how-to-calculate-word-error-rate/, https://medium.com/descript/which-automatic-transcription-service-is-the-most-accurate-2018-2e859b23ed19
 
