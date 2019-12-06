@@ -71,7 +71,7 @@ The compiler will remove _incidental whitespace_, meaning whitespace the author 
 
 Don't worry if this seems confusing. If you're using IntelliJ IDEA, look at the small green line indicating the margin:
 
-![](text_block_margin.png)
+![](https://i.ibb.co/Tb02s68/text-block-margin.png)
 
 💡Trailing whitespace are also considered undesired and will be removed.
 
