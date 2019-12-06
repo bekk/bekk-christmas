@@ -106,7 +106,6 @@ We start by defining the name for our service (wishlist). Then we define which p
 In the `functions` block we declare two functions. The `wishlist` function is a function that returns all wishes from our database. And in the `events` block we define that this should trigger on a http GET request that mathces the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request that matches the path `/wishes`.
 
 The last two blocks, `resources` and `iamRoleStatements` defines our DynamoDB table and we also define that our lambda functions are allowed to query and add items to our table.
-``` 
 
 ## Deploy your service
 
