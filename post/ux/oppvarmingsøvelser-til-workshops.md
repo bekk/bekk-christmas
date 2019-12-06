@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 8
-title: 5 oppvarmingsøvelser for å kickstarte din workshop
+title: 6 oppvarmingsøvelser for å kickstarte din workshop
 image: >-
   https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ingress: >-
@@ -35,7 +35,6 @@ Denne øvelsen går ut på at man går to og to sammen, og lager portretter av h
 Hensikten med denne øvelsen er å lage god stemning. Den skaper rom for å dumme seg ut, og poengterer at man ikke alltid trenger å prestere. Målet er å ha det gøy, ikke å lage det beste portrettet. Da jeg prøvde den ut i et prosjekt med teamet mitt, satt latteren løst og vi fikk en god start på team building-workshop'en vår. Øvelsen kan også fungere bra som team building ved at man setter navn på portrettene, og henger de opp i team-området som en artig presentasjon av alle i etterkant.
 
 
-
 ## 2. Historiestafett
 
 ![historiestafett](https://i.ibb.co/bP326SZ/Historiestafett.jpg)
@@ -59,6 +58,8 @@ Målet med denne øvelsen er å få opp energinivået, og leke seg litt. Av og t
 2. Fasilitator setter på en sang, gjerne en med litt tempo, og historiestafetten er i gang!
 3. Førstemann løper opp til plakaten for å skrive det første ordet. Deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
+
+
 
 ## **3. Sirkler**
 
@@ -116,5 +117,9 @@ En øvelse hvor hver person i gruppen skal skrive 2 sannheter og en løgn om seg
 **Hvorfor**
 
 Målet med denne oppgaven er å bli bedre kjent. Jeg synes den passer spesielt bra som en team building øvelse, men den trenger ikke brukes bare i den sammenheng. Uansett, så er det en veldig morsom måte å generere samtaletemaer for neste lunsj!
+
+
+
+
 
 Lykke til med din neste workshop!
