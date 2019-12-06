@@ -83,7 +83,7 @@ Målet med denne øvelsen er å presse seg selv til å tegne noe som gir mening 
 4. Personen som valgte første dyret skal nå kåre en vinner. Det vil si, hvem hen synes tegnet den best sauen. Denne personen får velge neste dyr som skal tegnes. 
 5. Slik fortsetter det så lenge gruppen ønsker å holde på. 
 
-## **3. Sirkler**
+## **4. Sirkler**
 
 ![sirkler øvelser](https://i.ibb.co/R3CtzWX/sirkel-IMG-2015.jpg)
 
@@ -106,7 +106,7 @@ Målet med denne øvelsen er å presse seg selv til å være kreativ ved å finn
 2. Når 5 minutter har gått går man sammen i par og bytter ark. 
 3. Se på hverandres ark og skriv hva du tror den andre har tegnet. 
 
-## 4. Zombie Cats
+## 5. Zombie Cats
 
 * Type: Bli kjent
 * Tidsbruk**:** ca.10 min
@@ -123,7 +123,7 @@ Målet med øvelsen er å bli bedre kjent med hverandre ved å finne noe man har
 2. Deretter får gruppen vite at de to tingene de har til felles nå er deres nye gruppenavn. Da jeg var med som deltaker på denne øvelsen en gang, fant vi ut at alle hadde hatt Java-programmering på studiene, og at alle i grunn var ganske glad i Baileys i kaffen. Dermed ble vårt gruppenavn "Java Baileys". Navnet på selve øvelsen kommer fra at en gruppe fant ut at det de hadde til felles var at alle likte Zombie-filmer og katter, derav navnet Zombie Cats. 
 3. Alternativt kan gruppen også få i oppgave å mime navnet sitt for alle de andre gruppene, slik at de kan prøve å gjette seg fram til hva navnet er. 
 
-## 5. To sannheter, en løgn
+## 6. To sannheter, en løgn
 
 ![to sannheter, en løgn](https://i.ibb.co/QDxVC6t/IMG-2013.jpg)
 
