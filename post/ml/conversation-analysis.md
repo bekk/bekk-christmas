@@ -15,7 +15,9 @@ authors:
 ---
 One of the many branches of machine learning is [Natural Language Processing](https://towardsdatascience.com/introduction-to-natural-language-processing-nlp-323cc007df3d) (or NLP) where computers are trained to understand and generate text and speech. However, while the machine learning universe is full of advanced, powerful and readily available resources for many types of analyses, discussing potential use cases of NLP we realized that a large uncertainty was the availability and capabilities of language processing resources for Norwegian. To explore this, we set out to do a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people talking in Norwegian. This blog post will give a quick intro to some of the most useful Python libraries for Norwegian NLP, to help you get started with your own NLP project!
 
-![Meeting analysis output](/assets/echo_output.png "Meeting analysis output") <i>Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)</i>
+![Meeting analysis output](/assets/echo_output_border.png "Meeting analysis output") 
+
+<span style="color:dimgray" font-size:10><i>Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)</i></span>.
 
 Our first task was transcribing the recorded speech. After evaluating several options, the [Google Speech-to-Text API](https://cloud.google.com/speech-to-text/) emerged as the best alternative, scoring as low as 7 % normalized [Levenshtein](https://itnext.io/string-similarity-the-basic-know-your-algorithms-guide-3de3d7346227) distance and 17 % [Word Error Rate](https://medium.com/descript/challenges-in-measuring-automatic-transcription-accuracy-f322bf5994f) on test samples. This corresponds well to the results of recent tests<sup>1</sup> evaluating different speech-to-text APIs in English.
 
