@@ -142,7 +142,31 @@ export const ChildComponent = () => {
 }
 ```
 
-There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I’ve added a CodeSandbox at the bottom for you to experiment with, if you want.
+There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat right? 
+
+To make it even more explicit and simple we can define an API that takes care of the action dispatching for us.
+```js
+// storeApi.js
+import { useStore } from "./store";
+
+export const useCounter = () => {
+  const {state, dispatch} = useStore();
+  return {
+    count: state.count,
+    message: state.message,
+    increment: () => dispatch({type: "increment", message:"Incremented"}),
+    decrement: () => dispatch({type: "decrement", message: "Decremented"}),
+    reset: () => dispatch({type: "reset", message: "Reset"})
+  }
+}
+```
+Here we have created a custom hook `useCounter` that accesses the store and returns the state variables and functions that dispatches the actions. In turn this hook kan be used where you need to access the state like this:
+```jsx
+const {count, message, increment, decrement, reset} = useCounter();
+```
+where the the actions can be called as regular functions, e.g. `increment()`.
+
+I’ve added a CodeSandbox at the bottom for you to experiment with if you want.
 
 ## Conclusion
 
