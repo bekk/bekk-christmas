@@ -58,12 +58,30 @@ Målet med denne øvelsen er å få opp energinivået, og leke seg litt. Av og t
 3. Førstemann løper opp til plakaten for å skrive det første ordet. Deretter løper hen tilbake og gir stafettpinnen(pennen) videre til nestemann på laget som skriver ord nummer to i historien. Og slik fortsetter det til sangen er ferdig.
 4. Til slutt deler lagene de unike historiene med de andre i workshopen. 
 
-
-
-## **3. Tegne dyr - fort!**
+## **3. Tegne et dyr - fort!**
 
 ![tegne dyr øvelse](https://i.ibb.co/C9P7FBt/Dyr-oppvarming.jpg)
 
+* Type: Tegning, kreativitet
+* Tidsbruk**:** ca. 5 - 10 min
+* Du trenger: Tusjer, ark å tegne på
+* Antall deltagere: Ingen begrensning
+
+**Hva**
+
+Dette er en tegneøvelse som utfordrer deltagerne til å tegne et dyr på 10 sekunder. Hvis du ikke ønsker å tegne dyr, kan du bytte ut dyr med et annet tema. Her er det bare fantasien som setter grenser. 
+
+**Hvorfor**
+
+Målet med denne øvelsen er å presse seg selv til å tegne noe som gir mening raskt. Det resulterer i mange morsomme tegninger. 
+
+**Hvordan**
+
+1. En person på gruppen bestemmer hvilket dyr gruppen skal tegne først, f.eks. en sau.
+2. Samme person setter klokken på ti sekunder. Nå kan alle tegne. 
+3. Etter 10 sekunder er gått skal alle vise sin tegning av en sau.
+4. Personen som valgte første dyret skal nå kåre en vinner. Det vil si, hvem hen synes tegnet den best sauen. Denne personen får velge neste dyr som skal tegnes. 
+5. Slik fortsetter det så lenge gruppen ønsker å holde på. 
 
 ## **3. Sirkler**
 
