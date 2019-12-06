@@ -286,7 +286,8 @@ So, in conclusion, to more easily write good and maintainable decoders, simply f
 
 Happy decoding, and happy holidays!
 
- [^1]: We won't actually define `YearMonth`, but you can imagine what the definition looks like.
- 
- [^2]: I changed the name of the type variable from `b` to `value` to match `map`s type signature in the package.
+
+[^1]: We won't actually define `YearMonth`, but you can imagine what the definition looks like.
+
+[^2]: I changed the name of the type variable from `b` to `value` to match `map`s type signature in the package.
  
