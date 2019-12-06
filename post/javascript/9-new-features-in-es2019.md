@@ -204,5 +204,8 @@ foo.toString();
 // 'function /* a comment  */ foo () {}'
 ```
 
-​
-Phew!
+
+
+That's it for now. 
+
+Courious about whats coming next? The full list of ECMAScript proposals can be found [here](https://github.com/tc39/proposals).
