@@ -5,7 +5,7 @@ post_day: 15
 title: Conversation analysis with Python
 image: >-
   https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
-ingress: '### _Exploring NLP libraries for Norwegian_'
+ingress: '## Exploring NLP libraries for Norwegian'
 description: ''
 links:
   - title: Norwegian NLP Resources
@@ -13,7 +13,7 @@ links:
 authors:
   - Tobias R. Pettrém
 ---
-One of the many branches of machine learning is [Natural Language Processing](https://towardsdatascience.com/introduction-to-natural-language-processing-nlp-323cc007df3d) (or NLP) where computers are trained to understand and generate text and speech. However, while the machine learning universe is full of advanced, powerful and readily available resources for many types of analyses, discussing potential use cases of NLP we realized that a large uncertainty was the availability and capabilities of language processing resources for Norwegian. To explore this, we set out to do a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people talking in Norwegian. This blog post will give a quick intro to some of the most useful Python libraries for Norwegian NLP, to help you get started on your own NLP project!
+One of the many branches of machine learning is [Natural Language Processing](https://towardsdatascience.com/introduction-to-natural-language-processing-nlp-323cc007df3d) (or NLP) where computers are trained to understand and generate text and speech. However, while the machine learning universe is full of advanced, powerful and readily available resources for many types of analyses, discussing potential use cases of NLP we realized that a large uncertainty was the availability and capabilities of language processing resources for Norwegian. To explore this, we set out to do a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people talking in Norwegian. This blog post will give a quick intro to some of the most useful Python libraries for Norwegian NLP, to help you get started with your own NLP project!
 
 ![Meeting analysis output](/assets/echo_output.png "Meeting analysis output") <i>Analysis output from discussion revolving around NLP product development (everything apart from visualization fully automated)</i>
 
