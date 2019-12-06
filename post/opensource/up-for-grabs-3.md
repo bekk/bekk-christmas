@@ -15,6 +15,8 @@ links:
   - title: GitHub issues tagged with hacktoberfest
     url: >-
       https://github.com/search?utf8=✓&q=issues+label%3Ahacktoberfest+state%3Aopen&type=Issues
+authors:
+  - Mats Byrkjeland
 ---
 It sounds almost silly. You contribute to some random projects on GitHub and someone sends you a t-shirt. But this simple challenge is the root of a massive movement that closes thousands of GitHub issues around the globe. This year’s Hacktoberfest was the sixth to be held, and throughout October more than 483,000 pull requests were submitted to more than 150,000 repositories. People from 143 different countries participated! It’s the greatest Hacktoberfest ever and you can read the [recap here](https://blog.digitalocean.com/recapping-hacktoberfest-6).
 
