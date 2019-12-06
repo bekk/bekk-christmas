@@ -24,8 +24,6 @@ Forslag til ting å skrive om:
 
 **See you in <fyll inn eneste års lokasjon>!**
 
-# Dag 2 - KotlinConf
-
 # Space
 Just before the party kicked of on day one of KotlinConf, Maxim Shafirov CEO of JetBrains announced the companies newest product: [Space](https://www.jetbrains.com/space/).
 
