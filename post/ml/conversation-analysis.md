@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 15
 title: Conversation analysis with Python
 image: >-
-  https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
+  https://images.unsplash.com/photo-1525616188-ccf49fddc5cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2639&q=80
 ingress: '### _Exploring NLP libraries for Norwegian_'
 description: ''
 links:
