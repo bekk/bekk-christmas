@@ -78,7 +78,7 @@ Målet med denne øvelsen er å presse seg selv til å tegne noe som gir mening 
 **Hvordan**
 
 1. En person på gruppen bestemmer hvilket dyr gruppen skal tegne først. F.eks. en sau.
-2. Samme person setter klokken på ti sekunder. Nå kan alle tegne. 
+2. Samme person setter klokken på 10 sekunder. Nå kan alle tegne. 
 3. Etter 10 sekunder er gått skal alle vise sin tegning av en sau.
 4. Personen som valgte første dyret skal nå kåre en vinner. Det vil si, hvem hen synes tegnet den best sauen. Denne personen får velge neste dyr som skal tegnes. 
 5. Slik fortsetter det så lenge gruppen ønsker å holde på. 
