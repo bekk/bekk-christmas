@@ -38,10 +38,10 @@ nlp = spacy.load('nb_core_news_sm')
 
 def getPOS(sentence): # returns POS class of all words in the sentence
     doc = nlp(sentence)
-    pos = []
+    word_and_pos = []
     for token in doc:
-        pos.append([token.text, token.pos_])
-    return pos
+        word_and_pos.append([token.text, token.pos_])
+    return word_and_pos
 
 sentence = "i år skal bekk publisere tolv julekalendere"
 for (word, pos) in getPOS(sentence):
