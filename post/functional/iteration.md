@@ -4,10 +4,10 @@ post_year: 2019
 post_day: 7
 title: Iteration without for, foreach or while
 ingress: >-
-Iteration is part of the bread and butter of any programming language,
-and this is the case in functional programming just as much as in
-imperative programming, but how is it possible to iterate without `for`, `foreach`
-or `while`?
+  Iteration is part of the bread and butter of any programming language,
+  and this is the case in functional programming just as much as in
+  imperative programming, but how is it possible to iterate without `for`, `foreach`
+  or `while`?
 
 authors:
   - Simen Endsjø
