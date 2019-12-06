@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2019
-post_day: 18
+post_day: 9
 title: Schönfinkelisation and Partial Application
 ingress: ''
 authors:
