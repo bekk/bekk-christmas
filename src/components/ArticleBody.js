@@ -90,6 +90,9 @@ const ArticleBody = styled.article`
     .gatsby-highlight {
         font-size: 1.25rem;
     }
+    .footnotes {
+        margin-top: 2.5rem;
+    }
 `;
 
 export default ArticleBody;
