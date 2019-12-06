@@ -3,6 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 9
 title: JSON Decoding in Elm
+authors:
+  - Aksel Wester
 ---
 JSON is probably the most common way of representing data that is being sent between a server and a browser.
 JSON stands for JavaScript Object Notation, and, as the name implies,
