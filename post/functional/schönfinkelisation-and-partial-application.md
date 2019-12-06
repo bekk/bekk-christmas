@@ -22,7 +22,7 @@ add a b =
 -- A relatively useless function, used to illustrate 
 -- partial application…
 incrementByFive : number -> number
-incrementByFife n =
+incrementByFife =
 	-- Here we partially apply the `add` function. By
 	-- only providing the first argument, we get a new
 	-- function in return, which will accept another
