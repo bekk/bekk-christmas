@@ -29,7 +29,7 @@ string.trimEnd();
 
 ## Object.fromEntries()
 
-_`Object.fromEntries()`_ simply converts a list of key-value pairs into a object.
+_`Object.fromEntries()`_ simply converts a list of key-value pairs into an object.
 ​
 
 ```js
@@ -37,8 +37,6 @@ const entries = [ [‘foo’, ‘bar’] ];
 const object = Object.fromEntries(entries);
 // { foo: ‘bar’ }
 ```
-
-
 
 ## Array.flat() og Array.flatMap()
 
@@ -55,7 +53,6 @@ _`Array.flat()`_ lets us flatten nested lists down to a depth specified by the i
 
 ​
 _`Array.flatMap()`_ is also a new feature on the _Array_ prototype. It's a combination of _`Array.map()`_ and _`Array.flat()`_. It first runs a mapping function over the list and then tries to flatten the result.
-​
 Unlike _`Array.flat()`_, where it is possible to specify a parameter for how deep in the nesting the lists should be flattened, _`Array.flatMap()`_ uses _`Array.flat()`_ under the hood and therefore only flattens one level deep.
 ​
 
@@ -75,12 +72,10 @@ Symbol.description;
 // description
 ```
 
-
-
 ## JSON ⊂ ECMAScript (JSON Superset)
 
 ​
-Previously, ECMAScript strings could not contain the _line separator_(U+2028 ) or the _paragraph separator_(U+2029). These were handled as line terminators and therefore resulted in syntax errors.
+Previously, ECMAScript strings could not contain the _line separator_ (U+2028 ) or the _paragraph separator_ (U+2029). These were handled as line terminators and therefore resulted in syntax errors.
 ​
 
 ```js
@@ -134,8 +129,6 @@ const isValidJSON = json => {
 };
 ```
 
-
-
 ## Well-formed JSON.stringify
 
 ​
@@ -171,15 +164,17 @@ JSON.stringify('\uD83D');
 Note that _`JSON.parse(stringified)`_ works just as before!
 ​
 
-## Stable Array#sort
+## Stable Array.sort()
 
 ​
 With ES2019 we are guaranteed stable list sorting. Previously, the specification allowed unstable sorting algorithms such as QuickSort. Now all major browsers use stable sorting algorithms. In practice, this means that if we have an array of objects and sort them on a given key, the elements in the list will retain their position relative to the other objects with the same key.
 ​
+
+
 Check if your browser [uses a stable sorting algorithm!](https://mathiasbynens.be/demo/sort-stability)
 ​
 
-## Revised Function#toString
+## Revised Function.toString()
 
 ​
 As of ES2019 _`Function.toString()`_ will return actual text snippets from the source code from the function start to end. This means that comments, spaces, and syntax details will also be returned.
