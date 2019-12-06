@@ -6,7 +6,7 @@ title: 9 new features in ES2019
 image: >-
   https://images.unsplash.com/photo-1519241678948-28f18681ce14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80
 ingress: >-
-  This year the 10th version of the ECMAScript Language specification was
+  This year the 10th version of the ECMAScript Language Specification was
   released, often referred to simply as ES2019. Let’s take a closer look at what
   new features we got and how we can put them to use.
 ---
@@ -14,7 +14,6 @@ ingress: >-
 
 ​
 _`String.trim()`_ is probably known to most, and has been a part of the ECMAScript standard since ES5. It  removes whitespace from both the beginning and the end of a string.
-
 
 With the new methods _`trimStart()`_ and _`trimEnd()`_ we can now choose which end of the string we want to trim.
 
@@ -25,8 +24,6 @@ string.trimStart();
 string.trimEnd();
 // " ES2019! Yay!"
 ```
-
-
 
 ## Object.fromEntries()
 
@@ -39,7 +36,7 @@ const object = Object.fromEntries(entries);
 // { foo: ‘bar’ }
 ```
 
-​
+
 
 ## Array.flat() og Array.flatMap()
 
@@ -76,7 +73,7 @@ Symbol.description;
 // description
 ```
 
-​
+
 
 ## JSON ⊂ ECMAScript (JSON Superset)
 
@@ -135,7 +132,7 @@ const isValidJSON = json => {
 };
 ```
 
-​
+
 
 ## Well-formed JSON.stringify
 
