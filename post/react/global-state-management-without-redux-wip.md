@@ -20,6 +20,7 @@ authors:
   - Jonas Løchsen
 ---
 ## Global State – What? Why?
+
 So, you have created a new JavaScript app? Cool. Using React? Even better! And filled it with several independent components? Awesome! If only there was a way for all of them to be friends and talk to each other in a convenient way.
 
 This issue is a recurring one when developing new apps for the browser. How should a shared state between all the bits and pieces of your app be managed? Should you jump on the Redux bandwagon or should you explore other possible solutions? The questions are many. 
@@ -29,6 +30,7 @@ But first of all, what is a global state anyway? As we know, the typical way to 
 Furthermore, with the global state now defined, what kind of data should live there? Although we now have enabled the possibility to share state globally it doesn't necessarily mean that all of your app's state should be shared. It's rather the opposite. One should strive for the global state to only keep states that concerns the entire app – such as theme, language or other app-wide settings, to name a few. Other states should be kept locally or with contexts further down the component tree.
 
 ## To Redux or not to Redux
+
 Redux has been around for over four years now and is still consuming the lion’s share of the state container market – at least for React apps. I refer to the [docs](https://redux.js.org/introduction/getting-started) on how Redux works as I will not delve into it here. It rapidly became very popular, which led many developers to thinking they _had_ to use it. And suddenly the world was filled with apps that hadn't taken into account the tradeoffs that Redux brings.
 
 Redux is a comprehensive tool that is great for larger apps. It offers a centralized, predictable and immutable store, separates data from presentation, can be used for server-side rendering, has powerful DevTools and the ability to add middlewares to name a few of the features.
@@ -144,7 +146,11 @@ There you have it. A simple example that shows a Redux-like state management too
 
 ## Conclusion
 
-The purpose of this article is not to leave Redux for dead – cause it’s definitely not. Redux absolutely has its use cases and advantages. This is merely an alternate way to manage global state in a simpler way without the need of external libraries. However, you have obvious drawbacks with this approach. First of all, it doesn't scale very well. In our example we only had one reducer with three actions holding two states. A real world app would probably need several more states and actions. You can, of course, add all these states to the existing reducer, but that would gradually develop into a maintainability nightmare. A solution would be to create several reducers; one for each group of states belonging together, and then combine them into a root reducer you pass into the `StoreContext`. You can either make this yourself or perhaps use `combineReducers` from Redux. Another significant drawback is all of the tools Redux gives you out-of-the-box – such as DevTools, middlewares and large community support. But again, if your goal is simply just to connect all of your components and you can do without much of the fanciness of Redux, I find this solution to be quite reasonable, fast and practical.
+The purpose of this article is not to leave Redux for dead – cause it’s definitely not. Redux absolutely has its use cases and advantages. This is merely an alternate way to manage global state in a simpler way without the need of external libraries.
+
+However, you have obvious drawbacks with this approach. First of all, it doesn't scale very well. In our example we only had one reducer with three actions holding two states. A real world app would probably need several more states and actions. You can, of course, add all these states to the existing reducer, but that would gradually develop into a maintainability nightmare. A solution would be to create several reducers; one for each group of states belonging together, and then combine them into a root reducer you pass into the `StoreContext`. You can either make this yourself or perhaps use `combineReducers` from Redux.
+
+Another significant drawback is all of the tools Redux gives you out-of-the-box – such as DevTools, middlewares and large community support. But again, if your goal is simply just to connect all of your components and you can do without much of the fanciness of Redux, I find this solution to be quite reasonable, fast and practical.
 
 <iframe
      src="https://codesandbox.io/embed/sleepy-fermat-m0zge?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fstore.js&theme=dark"
