@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 7
 title: Serverless Containers with Google Cloud Run
 image: >-
-  https://images.unsplash.com/photo-1498596970060-8d11115e3e71?w=1226&h=750&fit=crop&crop=edges
+  https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?w=1226&h=750&fit=crop&crop=edges
 ingress: >-
   Do you want to run stateless container-based applications or microservices,
   but don't need all the features and overhead with configuration and management
@@ -33,7 +33,7 @@ Back in april '19 at the _Google Cloud Next_ conference [Cloud Run was released 
 
 Cloud Run is a managed compute platform that enables you to run stateless containers accessible via HTTP. It is built from Knative, and you can choose to run your containers on _Fully managed Cloud Run_, or in a [_Google Kubernetes Engine_](https://cloud.google.com/kubernetes-engine/) cluster with Cloud Run for Anthos on GCP or even on-prem with Anthos on VMware.
 
-### Fully managed Cloud Run
+## Fully managed Cloud Run
 
 Managed Cloud Run is a fully managed environment that lets you run stateless HTTP-driven containers, without worrying about the underlying infrastructure or provisioning VMs or clusters. You focus on writing application code, package a Docker-image with your favourite stack that listens on \`$PORT\`, and Cloud Run makes it easy to deploy and automatic handles scaling in response to the demand on your service. It abstracts away all the details of a typical Kubernetes deployment 🤯
 
@@ -41,25 +41,29 @@ It is as easy as `gcloud run deploy SERVICE-NAME --image gcr.io/PROJECT-ID/IMAGE
 
 If you don't have any traffic it scales to zero, and it doesn't cost a thing! Like a lambda/function. But you choose the programming language and webserver without restrictions. You can even use custom and OS binaries if you include them in the Docker image. You only pay for the resources used during a request billed to the nearest 100 ms (for details check out their [Pricing](https://cloud.google.com/run/pricing)). So you don't pay for compute instances idling around in a cluster when you are not handling any traffic. It's true serverless 🏆
 
-The request processing model is almost like the per-request model of lambda/functions, but backed by a container where _you_ supply the web runtime. This model and the "you-pay-only-per-request" come with some constraints. As soon as the request is finished, the container instance does not have any CPU available. Therefore you _can't run any background processes._ I recommend you read about these constraints in the [Container Runtime Contract](https://cloud.google.com/run/docs/reference/container-contract). You also have the cold-start issue found on other lambda/function offerings. The container itself can be reused if you get _close-enough_ subsequent requests, and each container [can handle multiple requests](https://cloud.google.com/run/docs/about-concurrency) (the default and max per container is 80, but this is configurable). 
+The request processing model is almost like the per-request model of lambda/functions, but backed by a container where _you_ supply the web runtime. This model and the "you-pay-only-per-request" come with some constraints. As soon as the request is finished, the container instance does not have any CPU available. Therefore you _can't run any background processes._ I recommend you read about these constraints in the [Container Runtime Contract](https://cloud.google.com/run/docs/reference/container-contract). You also have the cold-start issue found on other lambda/function offerings. The container itself can be reused if you get _close-enough_ subsequent requests, and each container [can handle multiple requests](https://cloud.google.com/run/docs/about-concurrency) (the default and max per container is 80, but this is configurable) ⚡️
 
-### Comparing with Kubernetes
+## Comparing with Kubernetes
 
 Kubernetes is a full-fledged container orchestration platform that offers advanced scalability and configuration flexibility. It gives you complete control over the container orchestration. Everything from from networking, to storage, to how you set up routing and observability. It also supports stateful applications. 
 
 If you don't need all this and the complexity it brings to the table, then _Managed Cloud Run_ is a much simpler serverless approach. If you do need that anyway, or you already have a GKE or Anthos cluster on GCP, you can still use traditional Kubernetes deployment for some services and take advantage of Cloud Run’s ease of use and scalability for other services. If you are interested see this guide on [Cloud Run on Anthos](https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy-gke).
 
-### Comparing with other alternatives
+## Comparing with other cloud providers
 
 Other cloud providers also has the ability to run Docker containers without provisioning clusters. In some sense you can compare it to [AWS Fargate](https://aws.amazon.com/fargate/) and [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/). But the difference here is that Cloud Run will actually automatically scale to zero, and you only pay for resources during a request. On the other platforms you pay for the whole container while it is running. 
 
-### Deployment
+## Developing
 
-### Scaling and concurrency
+Stateless
 
-### Configuration
+## Deployment
 
-### Caveats
+## Scaling and concurrency
+
+## Configuration
+
+## Caveats
 
 Cloud Run suspends the cpu when you are not serving traffic.
 
@@ -69,8 +73,12 @@ No filesystem (actually you have a ephemeral in-mem filesystem that counts towar
 
 Startup time.
 
-### Summary
+## Summary
 
-🎉
+In many ways Cloud Run seems to be a very smooth way to build Cloud Native applications that follow [The Twelve-Factor App](https://12factor.net/) principles. Almost every aspect I've described around build, deployment, configuration, concurrency model, dev/prod parity etc, adheres to the twelve separate principles.  
+
+Go build and Run something 🎉  
+
+\---
 
 Splash photo by [asoggetti](https://unsplash.com/@asoggetti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
