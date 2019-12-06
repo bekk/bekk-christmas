@@ -14,7 +14,8 @@ links:
 ---
 Forslag til ting å skrive om:
 
-* common first talk 
+* Nytt produkt
+* common first talk - Yrjan
 * talks
 * exhibition
 * puzzlers
