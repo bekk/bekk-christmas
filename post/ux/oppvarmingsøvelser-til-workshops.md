@@ -7,8 +7,8 @@ image: >-
   https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ingress: >-
   Av og til trenger man en skikkelig kickstart på en workshop. Hensikten kan
-  være å fremme kreativ tenkning, eller bli bedre kjent og løse opp stemningen i
-  en gruppe. Det er ikke alltid så lett å gå fra 0 til 10 på kort tid. Derfor
+  være å fremme kreativ tenkning, eller bli bedre kjent og løse opp i
+  stemningen. Det er ikke alltid så lett å gå fra 0 til 10 på kort tid. Derfor
   kan oppvarmingsøvelser være en ypperlig måte å sparke i gang en workshop eller
   unngå den velkjente «etter lunsj-dippen».
 links:
