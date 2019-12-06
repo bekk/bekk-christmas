@@ -33,6 +33,7 @@ Space is an integrated team environment, with which JetBrains takes on Atlassian
 The second day of KotlinConf began with a story about risk management in the NASA Space Shuttle program, held by Stephen Carver. He talked about how an organisational culture can become so bad that comunication between departments becomes non existent, and how this ended with astronauts loosing their lifes. Not just once, but twice.
 
 ## Failure is not an option - Error handling strategues for Kotlin programs
+![](/assets/failure.jpeg "Failure is not an option")
 This talk by Nat Pryce and Duncan McGregor revolves around error handling in Kotlin. As we know, Kotlin has largely inherited Java's exception mechanisms but, as the two brits put it: "exceptions and functional programming are uneasy bedfellows, leading to most projects adopting a wing-and-a-prayer as their error handlign strategy". So, how should we do it in Kotlin? Well, it depend.
 
 In a pinch, they have fund that for their case they use null for simple parse errors, "fuzz" tests to make sure they do not propagate unexpected exceptions, prefer immutable data and push code that can fail on the outer layers. They also propse the use of Result4k in specific situations. Your milage might vary, though.
