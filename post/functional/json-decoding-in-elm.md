@@ -297,3 +297,6 @@ Happy decoding, and happy holidays!
 
 [^2]: I changed the name of the type variable from `b` to `value` to match `map`s type signature in the package.
  
+<style type="text/css" rel="stylesheet">
+.footnotes { margin-top: 40px; }
+</style>
