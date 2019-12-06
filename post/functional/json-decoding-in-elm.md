@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2019
-post_day: 9
+post_day: 8
 title: JSON Decoding in Elm
 authors:
   - Aksel Wester
