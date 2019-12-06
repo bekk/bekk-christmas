@@ -150,7 +150,7 @@ The purpose of this article is not to leave Redux for dead – cause it’s defi
 
 However, you have obvious drawbacks with this approach. First of all, it doesn't scale very well. In our example we only had one reducer with three actions holding two states. A real world app would probably need several more states and actions. You can, of course, add all these states to the existing reducer, but that would gradually develop into a maintainability nightmare. A solution would be to create several reducers; one for each group of states belonging together, and then combine them into a root reducer you pass into the `StoreContext`. You can either make this yourself or perhaps use `combineReducers` from Redux.
 
-Another significant drawback is all of the tools Redux gives you out-of-the-box – such as DevTools, middlewares and large community support. But again, if your goal is simply just to connect all of your components and you can do without much of the fanciness of Redux, I find this solution to be quite reasonable, fast and practical.
+Another significant drawback is all of the tools Redux gives you out-of-the-box – such as DevTools, middlewares and large community support. But again, if your goal is just to connect all of your components and you can do without much of the fanciness of Redux, I find this solution to be quite reasonable, fast and practical.
 
 <iframe
      src="https://codesandbox.io/embed/sleepy-fermat-m0zge?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fstore.js&theme=dark"
