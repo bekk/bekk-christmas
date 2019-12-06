@@ -2,14 +2,13 @@
 calendar: react
 post_year: 2019
 post_day: 7
-title: Global State with Context API and useReducer
+title: Manage Global State with Context API and Hooks
 image: >-
   https://images.unsplash.com/photo-1491118217331-c147f566d809?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3084&q=80
 ingress: >-
   For quite some time, Redux has been React developers go-to library for
   managing their app’s global state. It’s a great tool – but do you really need
-  it? This article gives a short elaboration on this matter and proposes an
-  alternate solution using React Hooks and Context API.
+  it?
 links:
   - title: Redux - Not Dead Yet!
     url: 'https://blog.isquaredsoftware.com/2018/03/redux-not-dead-yet/'
@@ -20,19 +19,25 @@ links:
 authors:
   - Jonas Løchsen
 ---
-## To Redux or not to Redux
-
+## Global State – What? Why?
 So, you have created a new JavaScript app? Cool. Using React? Even better! And filled it with several independent components? Awesome! If only there was a way for all of them to be friends and talk to each other in a convenient way.
 
-This issue is a recurring one when developing new apps for the browser. How should a shared state between all the bits and pieces of your app be managed? Should you jump on the Redux bandwagon or should you explore other possible solutions?
+This issue is a recurring one when developing new apps for the browser. How should a shared state between all the bits and pieces of your app be managed? Should you jump on the Redux bandwagon or should you explore other possible solutions? The questions are many. 
 
-Redux has been around for over four years now and is still consuming the lion’s share of the state container market – at least for React apps. I refer to the [docs](https://redux.js.org/introduction/getting-started) on how Redux works as I will not delve into it here. It rapidly became very popular, which led many developers to thinking they _had_ to use it. This is a misconception as there exists several trade-offs to consider before making the decision. Redux is a comprehensive tool that is great for larger apps. It offers a centralized, predictable and immutable store, separates data from presentation, can be used for server-side rendering, has powerful DevTools and the ability to add middlewares to name a few of the features.
+But first of all, what is a global state anyway? As we know, the typical way to pass data between disconnected components is through prop drilling. This is fine for a couple of levels down the component tree. But as soon as the complexity grows, so does the need for a global state. Imagine a component needing data that lies five levels above in the component tree. Passing props into each component on the way down would quickly become a nightmare. In addition to writing a lot of unnecessary code we would also give each component properties they will never use, which undoubtedly would become a huge mess. A global state would solve this by keeping a state at the top level and provide access methods to all child levels without the need to pass props.
 
-But it comes at a cost, however. The library can be quite overwhelming at first glance and seem challenging to wrap your head around – at least it was for me. It is quite rigid in its design and requires a lot of boilerplate code to get going. Depending on what you wish to achieve with your global state, Redux might be overkill. If your goal is to manage a global state that all child components have access to without the need to pass props, then perhaps a different solution would suit you better.
+Furthermore, with the global state now defined, what kind of data should live there? Although we now have enabled the possibility to share state globally it doesn't necessarily mean that all of your app's state should be shared. It's rather the opposite. One should strive for the global state to only keep states that concerns the entire app – such as theme, language or other app-wide settings, to name a few. Other states should be kept locally or with contexts further down the component tree.
+
+## To Redux or not to Redux
+Redux has been around for over four years now and is still consuming the lion’s share of the state container market – at least for React apps. I refer to the [docs](https://redux.js.org/introduction/getting-started) on how Redux works as I will not delve into it here. It rapidly became very popular, which led many developers to thinking they _had_ to use it. And suddenly the world was filled with apps that hadn't taken into account the tradeoffs that Redux brings.
+
+Redux is a comprehensive tool that is great for larger apps. It offers a centralized, predictable and immutable store, separates data from presentation, can be used for server-side rendering, has powerful DevTools and the ability to add middlewares to name a few of the features.
+
+However, it comes at a cost. The library can be quite overwhelming at first glance and seem challenging to wrap your head around – at least it was for me. It is quite rigid in its design and requires a lot of boilerplate code to get going. Depending on what you wish to achieve with your global state, Redux might be overkill. If your goal is to manage a global state that all child components have access to without the need to pass props, then perhaps a different solution would suit you better.
 
 ## Cue React Context API and Hooks
 
-As promised earlier, this article will propose such a solution. By utilizing React’s own Context API we can create a global state management tool which resembles Redux, but in a much more lightweighted fashion.
+This article will propose such a solution. By utilizing React’s own Context API we can create a global state management tool which resembles Redux, but in a much more lightweighted fashion.
 
 From React’s own docs they say that _Context provides a way to pass data through the component tree without having to pass props down manually at every level_. Great! That sounds exactly like what we are looking for. In combination with the `useContext` and `useReducer` hooks we can create a global store that manages the entire app’s state and supports convenient ways to update the state throughout the app regardless of how deep the component tree goes.
 
@@ -92,7 +97,7 @@ export const useStore = () => useContext(StoreContext);
 
 ### Making the store globally accessible
 
-To make our `store` accessible everywhere, we wrap our entire app in the `Provider` we created.
+To make our `store` accessible everywhere, we wrap our entire app in the `Provider` we just created.
 
 ```jsx
 // index.js
@@ -113,7 +118,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-This way we can access `useStore` everywhere. As you can see, we extract both the state and the dispatch function from the store. `dispatch` needs the type of action to be called as well as possible payload information such as `message` in this case. 
+This way we can access `useStore` everywhere. As you can see, in `childComponent.js`, we extract both the state and the dispatch function from the store. `dispatch` needs the type of action to be called as well as any payload information such as `message` in this case. 
 
 ```jsx
 // childComponent.js
@@ -135,7 +140,7 @@ export const ChildComponent = () => {
 }
 ```
 
-There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I will add a CodeSandbox at the bottom for you to experiment with, if you want.
+There you have it. A simple example that shows a Redux-like state management tool without the boilerplate. Pretty neat? I’ve added a CodeSandbox at the bottom for you to experiment with, if you want.
 
 ## Conclusion
 
