@@ -31,7 +31,7 @@ Forslag til ting å skrive om:
 # Space
 Just before the party kicked of on day one of KotlinConf, Maxim Shafirov CEO of JetBrains announced the company's newest product: [Space](https://www.jetbrains.com/space/).
 
-Space is an integrated team environment, with which JetBrains takes on Atlassian, Micrsoft and Slack all at once. It promises to become a fully featured EAP with team management, chat, IDE intregation, issue tracking, VCS and much more. And it's all built with Kotlin! It potentially substitutes literally all inter-communication tools of a company 🤯
+Space is an integrated team environment, with which JetBrains takes on Atlassian, Micrsoft and Slack all at once. It promises features like team management, chat, IDE integration, issue tracking, VCS and much more. And it's all built with Kotlin! It potentially substitutes literally all inter-communication tools of a company 🤯
 The demo looked very promising, so we're really looking forward to see what becomes of it.
 
 # Day 2
