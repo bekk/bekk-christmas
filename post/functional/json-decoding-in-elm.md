@@ -51,7 +51,7 @@ along with the other data types that can be represented in JSON.
 ## Decode Backend Data
 
 JSON decoding can often be quite difficult to reason about,
-especially if the JSON value you are decoding doesn't map neatly onto the Elm value you are decode into.
+especially if the JSON value you are decoding doesn't map neatly onto the Elm value you are decoding into.
 I have often found myself lost in huge decoders that I don't understand anything of,
 even though I wrote them myself only a couple of weeks earlier.
 The best strategy I have found to make my JSON decoders more simple to both read and understand,
