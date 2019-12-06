@@ -5,6 +5,11 @@ post_day: 8
 title: JSON Decoding in Elm
 image: >-
   https://images.unsplash.com/photo-1481603707406-47fe6021a1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+links:
+  - title: Json.Decode package
+    url: 'https://package.elm-lang.org/packages/elm/json/latest/Json-Decode'
+  - title: Demystifying Elm JSON Decoders
+    url: 'https://blog.ilias.xyz/demystifying-decoders-d294ed35bc6e'
 authors:
   - Aksel Wester
 ---
