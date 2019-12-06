@@ -44,11 +44,11 @@ One of the most sophisticated libraries we encountered was spaCy. It has a train
 i år skal bekk publisere tolv julekalendere
 ```
 
-or in English, "_This year, Bekk is publishing twelve Advent calendars"._ The main challenge posed here is the fact that _bekk_, apart from being our company name, also means _brook_ or _creek_ in Norwegian. While <i>brook</i> and <i>creek</i> are clearly nouns, _bekk_, in this case, is intented as a company name – that is, a proper noun. We run the following code:
+or in English, "_This year, Bekk is publishing twelve Advent calendars"._ The main challenge posed here is the fact that _bekk_, apart from being our company name, also means _brook_ or _creek_ in Norwegian. While <i>brook</i> and <i>creek</i> are clearly common nouns, _bekk_, in this case, is intented as a company name – that is, a proper noun. We run the following code:
 
 ```python
 import spacy
-nlp = spacy.load('nb_core_news_sm')
+nlp = spacy.load("nb_core_news_sm")
 
 def getPOS(sentence): # returns POS class of all words in the sentence
     doc = nlp(sentence)
@@ -57,7 +57,7 @@ def getPOS(sentence): # returns POS class of all words in the sentence
         word_and_pos.append([token.text, token.pos_])
     return word_and_pos
 
-sentence = "i år skal bekk publisere tolv julekalendere"
+sentence = 'i år skal bekk publisere tolv julekalendere'
 for (word, pos) in getPOS(sentence):
     print(word,"|",pos,"\n-------")
 ```
