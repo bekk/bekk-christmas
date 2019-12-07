@@ -56,8 +56,8 @@ Lenses is part of a group of patterns used to abstract away the action of updati
 
 ```typescript
 interface Lens<A, B> {
-    get: (a: A): B
-    set: (a: A, b: B): A
+    get: (a: A) => B
+    set: (a: A, b: B) => A
 }
 ```
 
@@ -66,8 +66,8 @@ It is a pair of two functions, a getter and a setter. The getter is a way to ext
 A lens made to focus on the name field from the perspective of the model, could look something like this:
 
 ```typescript
-const nameLens: Lens<Model, String> = {
-    get: model => model.loginContext.user.name
+const nameLens: Lens<Model, string> = {
+    get: model => model.loginContext.user.name,
     set: (model, name) => ({
         ...model,
         loginContext: {
@@ -97,7 +97,7 @@ Instead of creating a lens focusing us from the model straight to the name of th
 ```typescript
 const loginContextLens: Lens<Model, LoginContext> = {
     get: model => model.loginContext,
-    set: (model, loginContext) => ({ ...model, loginContext })
+    set: (model, loginContect) => ({ ...model, loginContect })
 }
 const userLens: Lens<LoginContext, User> = {
     get: loginContext => loginContext.user,
@@ -115,7 +115,7 @@ For reference, we include the compose function. It is a function that takes two 
 function composeLens<A, B, C>(ab: Lens<A, B>, bc: Lens<B, C>): Lens<A, C> {
     return {
         get: (a) => bc.get(ab.get(a)),
-        set: (c, a) => ab.set(bc.set(c, ab.get(a)), a)
+        set: (a, c) => ab.set(a, bc.set(ab.get(a), c))
     };
 }
 ```
@@ -131,7 +131,7 @@ const birthDateLens: Lens<User, Date> = {
     get: user => user.birthDate,
     set: (user, birthDate) => ({ ...user, birthDate })
 }
-const modelToBirthDateLens: Lens<Model, Date> = composeLens(loginContextUserLens, birthDateLens);
+const modelToBirthDateLens: Lens<Model, Date> = composeLens(modelToUserLens, birthDateLens);
 ```
 
 ```typescript
