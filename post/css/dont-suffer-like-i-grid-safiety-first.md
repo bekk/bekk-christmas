@@ -62,8 +62,6 @@ Autoprefixer do have its limitations, thus there are properties even Autoprefixe
 
 ![Avoid shorthands](/assets/screen-shot-2019-12-07-at-14.36.28.png "Avoid shorthands")
 
-
-
 4. When enabling the grid for your whole project, be sure to check each grid fix in IE. Just to be sure
 
 Check out their [docs ](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie)for more info. 
