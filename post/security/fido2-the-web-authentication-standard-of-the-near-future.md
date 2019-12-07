@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2019
 post_day: 11
-title: FIDO2 - the web authentication standard of the (near) future
+title: FIDO2 - the Web Authentication Standard of the (near) Future
 links:
   - title: When can we finally get rid of passwords?
     url: >-
