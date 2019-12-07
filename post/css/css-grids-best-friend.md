@@ -17,7 +17,7 @@ authors:
 ---
 Let's say you're writing a blog, and want an overview page of all the posts you've written. You might choose the following markup:
 
-```
+```html
 <section>
     <h1>My Awesome Blog</h1>
     <article>
