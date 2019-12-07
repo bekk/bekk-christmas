@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 7
 title: Serverless Containers with Google Cloud Run
-image: 'https://i.ibb.co/Qcz73tm/google-cloud-run-christmas-post.jpg'
+image: 'https://i.ibb.co/ygP5x34/google-cloud-run-blogpost.jpg'
 ingress: >-
   Do you want to run stateless container-based applications or microservices,
   but don't need all the features and management of a full-fledged Kubernetes
@@ -77,7 +77,7 @@ You can set which region to deploy in with `--region` and many other config flag
 
 You can specify a load of config flags when deploying or _updating_ a revision of your service. See full details [here](https://cloud.google.com/sdk/gcloud/reference/run/deploy). These configuration values can also be done directly in the Cloud Console/UI. Here are some examples. 
 
-To update the [allocated memory](https://cloud.google.com/run/docs/configuring/memory-limits) for an instance use `gcloud run services update SERVICE-NAME --memory SIZE`. 
+To update the [allocated memory](https://cloud.google.com/run/docs/configuring/memory-limits) for an instance use `gcloud run services update SERVICE-NAME --memory SIZE` 
 
 You can change the [concurrency](https://cloud.google.com/run/docs/configuring/concurrency) (how many requests are dispatched in parallel per container) and the [`max number of instances`](https://cloud.google.com/run/docs/configuring/max-instances) with `--concurrency=[NUMBER]` and `--max-instances=[NUMBER]` respectively. This is very useful if you for example use Cloud Run as a consumer for a Pub/Sub Push subscription, where these values can tweak how fast you can process messages. 
 
