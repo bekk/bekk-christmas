@@ -4,12 +4,12 @@ post_year: 2019
 post_day: 14
 title: The Adaptive Web Developer
 image: >-
-  https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2466&q=80
+  https://images.unsplash.com/photo-1460530628918-ebce15e46c1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80
 ingress: >-
   Modern frameworks are easy to learn. From zero web experience, they help you
-  get productive in a matter of weeks. What they didn't tell me, was that a
-  slightly different stack would make me question everything I thought I knew
-  about web development.
+  get productive in a matter of weeks. But for me, the web remained a mystery
+  until I taught myself the very basics.
+description: 'For me, the web remained a mystery until I taught myself the very basics.'
 links:
   - title: Why is modern web development so complicated?
     url: >-
@@ -35,6 +35,6 @@ To specialize oneself in a framework is not necessarily a good fundament in a ra
 
 Invest in yourself, rather than the fancy web stack. If you teach yourself HTML, CSS and JavaScript in an isolated context, without the supportive libraries and build tools, you are doing yourself a favor that will pay back in heaps. You will become an adaptive web developer.
 
-Who knows how the frontend landscape will look in two, five or ten years. I'm not sure we'll still use React, Vue, Elm or other popular frameworks. But I'm pretty sure HTML, CSS and JavaScript are still around, powering the latest and greatest of the future web.
+Who knows how the frontend landscape will look like in two, five or ten years. I'm not sure we'll still use React, Vue, Elm or other popular frameworks. But I'm pretty sure HTML, CSS and JavaScript are still around, powering the latest and greatest of the future web. Don't just take my word for it. As [Allen Wirfs-Brock frames it](https://javascript.christmas/2019/6), "[JavaScript's] role on the web means that it is likely to be one of the world's longest-lived programming languages."
 
-If you missed it, day 13 of this calendar includes a list of resources you can use to learn JavaScript and web development. Make sure to check it out, whether you're new to the web or just need to freshen up your skills!
+If you missed it, [day 13](https://javascript.christmas/2019/13) of this calendar includes a list of resources you can use to learn JavaScript and web development. Make sure to check it out, whether you're new to the web or just need to freshen up your skills!
