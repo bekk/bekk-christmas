@@ -100,9 +100,9 @@ resources:
             KeyType: RANGE
 ```
 
-We start by defining the name for our service (`wishlist`). Then we define which provider we would like to use (`aws`), runtime for our functions (`nodejs`) and which region we would like our service to be deployed to (`eu-central-1`). The `iamRoleStatements` declares that our functions are allowed to query and add items to our DynamoDB table. The last block, `resources`, defines our DynamoDB table.
+We start by defining the name for our service, `wishlist`. Then we define which provider we would like to use, `aws`, runtime for our functions, `nodejs`, and which region we would like our service to be deployed to, `eu-central-1`. The `iamRoleStatements` declares that our functions are allowed to query and add items to our DynamoDB table. The last block, `resources`, defines our DynamoDB table.
 
-The functions block could need a more detailed explanation.
+The functions block could do with a more detailed explanation.
 
 ```yaml
 functions:
@@ -116,7 +116,17 @@ functions:
       - http: POST wishes
 ```
 
-Here we declare two functions. The `wishlist` function is a function that returns all wishes from our database. In the `events` block we define that this should trigger on a http GET request with the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request with the path `/wishes`.
+Here we declare two functions. The `wishlist` function is a function that returns all wishes from our database. In the `events` block we define that this should trigger on a http GET request with the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request with the path `/wishes`. The actual code for the two functions is listed below.
+
+```js
+// list all wishes
+
+```
+
+```js
+// add new wish
+
+```
 
 ## So, how do we actually deploy our service to the cloud? 
 
@@ -128,11 +138,13 @@ $ sls deploy
 ....
 ```
 
-So what actually happend here? Under the hood, Serverless Framework creates a [CloudFormation](https://aws.amazon.com/cloudformation/) template and uploads that to AWS. CloudFormation will take this template and provision all of the necessary services, deploy the functions and link all the services nicely together. In our case the framework created a DynamoDB table, two functions and an API Gateway. And with just a small yaml-file and some commands you suddenly have an API which autoscales automatically and you only pay when the API is in use. I think that's pretty cool!
+So what actually happend here? Under the hood, Serverless Framework creates a [CloudFormation](https://aws.amazon.com/cloudformation/) template and uploads that to AWS. CloudFormation will take this template and provision all of the necessary services, deploy the functions and link all the services nicely together. In our case the framework created a DynamoDB table, two functions and an API Gateway. 
+
+With just a small yaml file and some commands, you suddenly have an API which autoscales automatically and you only pay when the API is in use. I think that's pretty cool!
 
 # What's next?
 
-This was only a simple example of what Serverless Framework is capable of and the framework is capable of much more to develop serverless framework. It can for instance be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. It also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
+This was only a simple example of what Serverless Framework is capable of, but this only scratches the surface on what the framework can do for you when developing server. It can for instance be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. It also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
 
-All in all, Serverless Framework is a nice alternative to use for developing serverless applications. It supports multiple cloud providers (although the support is limited on some of them) and comes with lots of [plugins](https://serverless.com/plugins/) to help you speed up your development. It of course has some limitations and `yaml` can be frustrating to debug some times, but I will absolutely recommend you to try it out if you're interested in developing serverless applications!
+All in all, Serverless Framework is a nice alternative to use for developing serverless applications. It supports multiple cloud providers (although the support is limited on some of them) and comes with lots of [plugins](https://serverless.com/plugins/) to help you speed up your development. It of course has some limitations, and `yaml` can be frustrating to debug some times, but I will absolutely recommend you to try it out if you're interested in developing serverless applications!
 
