@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 10
 title: Prepare to die - An introduction to Spot Market
+image: ''
 ingress: >-
   Companies and developers love the cloud. The cloud provides scalability and
   resilience to some of the most critical applications for a company. Due to the
@@ -22,8 +23,7 @@ authors: []
 ---
 ## Introduction
 What if I told you that renting these servers could give you a discount of up to 90% compared to a regular on-demand server. Still not convinced? Have a look at the graph below. 
-
-
+![Spot market price for m1.xlarge in eu-west around Black Friday](/assets/spot-market-black-friday.png "Spot market price for m1.xlarge in eu-west around Black Friday")
 
 The graph shows the pricing around Black Friday 2019. As you can see, if you had hosted a server at Amazon eu-west-1c, you would have paid only 10% of the on-demand price! But, there is a catch! Depending on the cloud provider, your provider reserves the right to at any time shutdown and remove your server at a very short notice. 
 Let’s dive deeper into the world of spot marketing, why it is good and prepare your application to die!
