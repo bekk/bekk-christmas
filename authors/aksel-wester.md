@@ -1,6 +1,6 @@
 ---
 title: Aksel Wester
-socialMediaLink: '@aksel on the Elm Slack'
+socialMediaLink: ''
 company: Bekk
 ---
 
