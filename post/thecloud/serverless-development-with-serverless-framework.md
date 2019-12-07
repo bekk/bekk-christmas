@@ -53,11 +53,11 @@ These are any resources which is needed by your service, and typically what your
 Below is an example of a *service* defined in a file called `serverless.yml`. The service is an API which you can use to create new christmas wishes, and return a list of all your wishes.
 
 ```yaml
-service: wishlist 
+service: wishlist
 
 provider:
   name: aws
-  runtime: nodejs12.13.0
+  runtime: nodejs12.x
 
   region: eu-central-1
 
@@ -69,8 +69,7 @@ provider:
         - dynamodb:Scan
         - dynamodb:GetItem
         - dynamodb:PutItem
-      Resource:
-        - "Fn::GetAtt": [ WishlistTable, Arn ]
+      Resource: "arn:aws:dynamodb:eu-central-1:*:*"
 
 functions:
   wishlist:
@@ -98,6 +97,9 @@ resources:
             KeyType: HASH
           - AttributeName: wish
             KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
 ```
 
 We start by defining the name for our service, `wishlist`. Then we define which provider we would like to use, `aws`, runtime for our functions, `nodejs`, and which region we would like our service to be deployed to, `eu-central-1`. The `iamRoleStatements` declares that our functions are allowed to query and add items to our DynamoDB table. The last block, `resources`, defines our DynamoDB table.
@@ -121,10 +123,39 @@ Here we declare two functions. The `wishlist` function is a function that return
 ```js
 // list all wishes
 
-```
+const AWS = require('aws-sdk');
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
+module.exports.wishlist = (event, context, callback) => {
+  dynamoDb.scan({ TableName: 'wishlist' }, (err, res) => {
+    return callback(null, {
+      statusCode: err ? 500 : 200,
+      body: err ? err.message : JSON.stringify(res),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+  })
+};
 
 ```js
 // add new wish
+
+const AWS = require('aws-sdk');
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
+module.exports.newWish = (event, context, callback) => {
+  dynamoDb.put({ TableName: 'wishlist', Item: JSON.parse(event.body) }, (err, res) => {
+    return callback(null, {
+      statusCode: err ? 500 : 200,
+      body: err ? err.message : JSON.stringify(res),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+  })
+};
+
 
 ```
 
@@ -135,7 +166,36 @@ To deploy the API just run the command `sls deploy`. Serverless Framework will d
 ```bash
 $ sls deploy
 
-....
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wishlist.zip file to S3 (1.21 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+................................................
+Serverless: Stack update finished...
+Service Information
+service: wishlist
+stage: dev
+region: eu-central-1
+stack: wishlist-dev
+resources: 17
+api keys:
+  None
+endpoints:
+  GET - https://ny8fxydfd5.execute-api.eu-central-1.amazonaws.com/dev/wishes
+  POST - https://ny8fxydfd5.execute-api.eu-central-1.amazonaws.com/dev/wishes
+functions:
+  wishlist: wishlist-dev-wishlist
+  newWish: wishlist-dev-newWish
+layers:
+  None
 ```
 
 So what actually happend here? Under the hood, Serverless Framework creates a [CloudFormation](https://aws.amazon.com/cloudformation/) template and uploads that to AWS. CloudFormation will take this template and provision all of the necessary services, deploy the functions and link all the services nicely together. In our case the framework created a DynamoDB table, two functions and an API Gateway. 
