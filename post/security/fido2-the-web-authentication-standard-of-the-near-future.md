@@ -47,7 +47,7 @@ When signing in, the website uses WebAuthn to send a randomly generated string o
 
 Source: https://fidoalliance.org/how-fido-works/
 
-##### Figure2
+##### Figure 2
 
 In the authentication scenario the authenticator is not running on the same device as the browser. These authenticators are referred to as roaming authenticators and communicate with the client platform through the CTAP protocol. We won’t go into details about the protocol here, but it describes how external devices running authenticators communicate with client platforms through underlying transport protocols like USB, NFC and Bluetooth.
 
