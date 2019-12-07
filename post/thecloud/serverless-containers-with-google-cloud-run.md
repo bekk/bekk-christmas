@@ -12,7 +12,7 @@ ingress: >-
   model and supported languages/versions too limited? Let's have a look at
   [_Google Cloud Run_](https://cloud.google.com/run/) - a fully managed
   serverless platform for running stateless HTTP-driven containers. And where
-  you only pay for resources used during requests.
+  you only pay for resources used when handling requests.
 links:
   - title: Cloud Run product overview
     url: 'https://cloud.google.com/run'
