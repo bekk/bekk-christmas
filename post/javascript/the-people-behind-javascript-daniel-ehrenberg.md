@@ -47,7 +47,7 @@ etc. Its base is both minimal and free of arbitrary restrictions.
 And I like how JavaScript is everywhere, adding an layer of
 programmability accessible to a wide range of people.
 
-### How did you get involved in the development of EcmaScript?
+### How did you get involved in the development of ECMAScript?
 
 When I was working at Google on various Linux kernel/firmware teams, I
 saw an internal job opening for the V8 sub-team working on new language
@@ -72,7 +72,7 @@ decimals of unlimited size represented precisely, without rounding
 errors. You can find more information at
 https://github.com/littledan/proposal-bigdecimal .
 
-### What is the most fun about being a part of the development of EcmaScript?
+### What is the most fun about being a part of the development of ECMAScript?
 
 It's really fun to dream about new language features and think through
 the details and the design space. I really like how I get to learn about
