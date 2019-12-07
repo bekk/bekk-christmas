@@ -11,8 +11,8 @@ ingress: >-
   billing of other FaaS platforms, but find the runtime model and supported
   languages/versions too limited? Let's have a look at [_Google Cloud
   Run_](https://cloud.google.com/run/) - a fully managed serverless platform for
-  running stateless HTTP-driven containers where you supply the runtime. And you
-  only pay for resources used during requests.
+  running stateless HTTP-driven containers. And where you only pay for resources
+  used during requests.
 links:
   - title: Cloud Run product overview
     url: 'https://cloud.google.com/run'
@@ -27,11 +27,11 @@ links:
 authors:
   - Mikkel Dan-Rognlie
 ---
-Back in april '19 at the _Google Cloud Next_ conference [Cloud Run was released in public beta](https://cloud.google.com/blog/products/serverless/announcing-cloud-run-the-newest-member-of-our-serverless-compute-stack) (along with their hybrid/multi-cloud offering called [Anthos](https://cloud.google.com/anthos/) and the open source [Knative](https://knative.dev/) project which Cloud Run builds upon). A few weeks ago at _Cloud Next_ in London, they [announced Cloud Run as generally available](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga). Ok, enough with the links already! So what is Cloud Run really? 
+Back in april '19 at the _Google Cloud Next_ conference [Cloud Run was released in public beta](https://cloud.google.com/blog/products/serverless/announcing-cloud-run-the-newest-member-of-our-serverless-compute-stack). Then a few weeks ago at _Cloud Next_ in London, they [announced Cloud Run as generally available](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga). Enough with the links already! So what is Cloud Run? It's is a managed compute platform that enables you to run stateless containers accessible via HTTP. It is very simple to deploy and run a containerized application.
 
-Cloud Run is a managed compute platform that enables you to run stateless containers accessible via HTTP. It is very simple to deploy and run a containerized application. It is built from Knative, and you can choose to run your containers on _Fully managed Cloud Run_, or in a _Google Kubernetes Engine_ cluster with Cloud Run for Anthos on GCP or even on-prem with Anthos on VMware. I'll focus on the fully managed version here.
+It is built upon the open source [Knative](https://knative.dev/) project, and you can choose to run your containers on _Fully Managed Cloud Run_, or in a _Google Kubernetes Engine_ cluster with Cloud Run for [Anthos](https://cloud.google.com/anthos/) on GCP or other places with Anthos on VMware (Anthos is Google's new hybrid/multi-cloud platform). I'll focus on the fully managed version here.
 
-## Fully managed Cloud Run
+## Fully Managed Cloud Run
 
 Cloud Run lets you run stateless HTTP-driven containers, without worrying about the underlying infrastructure. You can focus on writing application code, package a Docker-image with your favourite web stack that listens on `$PORT`, and Cloud Run makes it easy to deploy and automatic handles scaling of your service. It abstracts away all the details of a typical Kubernetes deployment 🤯
 
@@ -63,11 +63,15 @@ All you need is a Dockerfile and an application that starts an HTTP server on th
 
 You have several options for build and deploy. You can use the Cloud Console/UI, the `gcloud` CLI and [automatic deploy from Git](https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build). The [documentation](https://cloud.google.com/run/docs/building/containers) is so good and concise that I won't flesh it out here, but merely give a small example. 
 
-**Build using Cloud Build CLI in your sources folder**: `gcloud builds submit --tag gcr.io/[PROJECT-ID]/[IMAGE-NAME]`
+**Build using Cloud Build CLI in your sources folder** 
 
-**Deploy using CLI**: `gcloud run deploy SERVICE-NAME --image gcr.io/PROJECT-ID/IMAGE-NAME`
+`gcloud builds submit --tag gcr.io/[PROJECT-ID]/[IMAGE]`
 
-You can set which region to deploy in with `--region` and many other config flags as described below. Full re
+**Deploy using CLI**: 
+
+`gcloud run deploy SERVICE-NAME --image gcr.io/PROJECT-ID/IMAGE`
+
+You can set which region to deploy in with `--region` and many other config flags as described below.
 
 ## Configuration
 
