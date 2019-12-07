@@ -39,7 +39,7 @@ const object = Object.fromEntries(entries);
 // { foo: ‘bar’ }
 ```
 
-## Array.flat() og Array.flatMap()
+## Array.flat() and Array.flatMap()
 
 ​
 _`Array.flat()`_ lets us flatten nested lists down to a depth specified by the integer parameter in the function call. The parameter can also be omitted and the function will use a default value of 1, equal to calling _`flat(1)`_.
