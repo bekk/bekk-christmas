@@ -7,11 +7,11 @@ image: >-
   https://images.unsplash.com/photo-1511377398397-8f0fb9ae372d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 ingress: "Many developers hesitate to use CSS Grid in their project especially if they have to support Internet Explorer. All web developers loves to rant about IE, and this time, I learned the hard way what the fuss was all about. \U0001F605"
 links:
-  - title: Feature queries @supports
+  - title: Feature queries @supports  by MDN
     url: 'https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/ '
-  - title: Learn more about Autoprefixer and Grid in IE
+  - title: Grid in IE and the new Autoprefixer by Daniel Tonon
     url: 'https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/ '
-  - title: 'End of IE11 support countdown and informative links '
+  - title: 'IE11 Countdown and informative links '
     url: 'https://death-to-ie11.netlify.com/'
 authors:
   - My Thao Nguyen
@@ -40,13 +40,15 @@ Autoprefixer is a PostCSS plugin to parse CSS and what it does is that it adds n
 npm install autoprefixer@latest
 ```
 
-Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment ` /* autoprefixer grid: autoplace */` at the top of your CSS file. 
+Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment ` /* autoprefixer grid: autoplace */` at the top of your CSS file. Another option is switching it on
 
 To see it in action, test your code with their [online tool](https://autoprefixer.github.io/). 
 
 ![Autoprefixer online tool](/assets/screen-shot-2019-12-02-at-20.06.13.png "Autoprefixer online tool")
 
 Awesome, right? ✨ 
+
+If you're interested, check out their [docs ](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie)for more info. 
 
 ## Limitations
 
@@ -56,19 +58,15 @@ Autoprefixer do have its limitations, thus there are properties even Autoprefixe
 
 2. If you decide to define your grid with _grid tracks_ thus using` grid-template-areas` to define your grid, make sure each grid element have unique area names. 
 
-3. In the new version of Autoprefixer, `grid-gap` is supported. However, make sure to defined both `grid-template-areas` and `grid-template-columns`.
+3. In the new version of Autoprefixer, `grid-gap` is supported. However, make sure to defined both `grid-template-areas` and `grid-template-columns`. Daniel Tonon has a pretty good [article ](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/)about IE and the new Autoprefixer.
 
 4. Avoid shorthands such as `grid` or `grid-column `/ `grid-row`. `grid-column` and `grid-row` are both shorthands for placing grid items using _grid lines_, which means that you will have to go from two code lines back to four. 
 
 ![Avoid shorthands](/assets/screen-shot-2019-12-07-at-14.36.28.png "Avoid shorthands")
 
-4. When enabling the grid for your whole project, be sure to check each grid fix in IE. Just to be sure
+4. When enabling the grid for your whole project, be sure to check each grid fix in IE just in case! Because you know, safiety first 😆!
 
-Check out their [docs ](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie)for more info. 
-
-
-
-## How about a Feature Query?
+## @supports
 
 If you would still love to have some autoplacement properties, such as grid-auto-rows or auto-fill, then an option could be using the feature query, `@supports`. You can then use some CSS features, such as `grid`, depending on whether the browser supports it or not.  
 
