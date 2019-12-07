@@ -11,6 +11,7 @@ ingress: >-
   new features we got and how we can put them to use.
 authors:
   - Emil Døhlen Hansen
+  - Fredrik Stenbro
 ---
 ## String.trimStart() and String.trimEnd()
 
