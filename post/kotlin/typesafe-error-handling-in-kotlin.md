@@ -6,9 +6,9 @@ title: Typesafe Error Handling in Kotlin
 authors:
   - Fredrik Løberg
 ---
-WIP...
+WIP…
 
-In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. Such freedom sounds must be a good thing, right? Well, _it depends_.
+In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. That sounds like a good thing, right? Well, _it depends_.
 
 Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile time. The compiler will not tell you what to catch or even whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
 
@@ -43,7 +43,9 @@ fun main() {
 }
 ```
 
-In this example, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But, what about more complex problems, you might ask. Well, this barebone implementation suffers from a readability problem when it comes to more complex problems, especially in the case of lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should periodically transfer all changed users from a database to a third-party API. It performs the following subtasks:
+In this example, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great!
+
+But, what about more complex problems, you might ask. Well, this barebone implementation suffers from a readability problem when it comes to more complex problems, especially in the case of lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should periodically transfer all changed users from a database to a third-party API. It performs the following subtasks:
 
 - Fetch the timestamp of the previous successful transfer, from the database.
 - Fetch all users that have changed since this timestamp, from the database.
