@@ -7,12 +7,12 @@ image: 'https://i.ibb.co/ygP5x34/google-cloud-run-blogpost.jpg'
 ingress: >-
   Do you want to run stateless container-based applications or microservices,
   but don't need all the features and management of a full-fledged Kubernetes
-  cluster? Or do you crave the serverless model with _only-pay-what-you-use_
-  billing of other FaaS platforms, but find the runtime model and supported
-  languages/versions too limited? Let's have a look at [_Google Cloud
-  Run_](https://cloud.google.com/run/) - a fully managed serverless platform for
-  running stateless HTTP-driven containers. And where you only pay for resources
-  used during requests.
+  cluster? Or do you crave the serverless model with no management and
+  _only-pay-what-you-use_ billing of other FaaS platforms, but find the runtime
+  model and supported languages/versions too limited? Let's have a look at
+  [_Google Cloud Run_](https://cloud.google.com/run/) - a fully managed
+  serverless platform for running stateless HTTP-driven containers. And where
+  you only pay for resources used during requests.
 links:
   - title: Cloud Run product overview
     url: 'https://cloud.google.com/run'
