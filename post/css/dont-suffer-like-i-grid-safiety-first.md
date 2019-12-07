@@ -16,7 +16,7 @@ links:
 authors:
   - My Thao Nguyen
 ---
-If you still haven't gotten the hang of CSS Grid, read the short intro ["Oops! I Grid it again"](https://css.christmas/2019/4). 
+If you haven't yet, read the quick intro to CSS Grid -  ["Oops! I Grid it again"](https://css.christmas/2019/4). 
 
 ## The first encounter
 
@@ -46,26 +46,25 @@ To see it in action, test your code with their [online tool](https://autoprefixe
 
 ![Autoprefixer online tool](/assets/screen-shot-2019-12-02-at-20.06.13.png "Autoprefixer online tool")
 
-Awesome, right? ✨ \
-Although it's pretty good, there is still a few things you need to be aware of when Grid and Autoprefixer with Internet Explorer.  
+Awesome, right? ✨ 
 
 ## Limitations
 
-Even Autoprefixer cannot fix it all, and there are even some limitations to what it does fix. So here's a small checklist of things you should be aware of:
+Autoprefixer do have its limitations, thus there are properties even Autoprefixer can not fix. So here's a short list of things you should be aware of:
 
-1. When enabling the grid for your whole project, be sure to check each grid fix in IE. 
+1. IE does not support [autoplacement ](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout)at all. Thus, grid autoplacement properties like `grid-auto-rows` or `grid-auto-columns` does not really work even with Autoprefixer. Read more about Grid Autoplacement support in IE [here](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie). 
 
-2. IE does not support autoplacement at all. Thus, grid autoplacement properties like grid-auto-rows or grid-auto-columns does not really work even with Autoprefixer. Read more about Grid Autoplacement support in IE [here](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie).
+2. If you decide to define your grid with _grid tracks_ thus using` grid-template-areas` to define your grid, make sure each grid element have unique area names. 
 
-3. If you decide to define your grid with _grid tracks_, make sure each grid element have unique area names. 
+3. In the new version of Autoprefixer, `grid-gap` is supported. However, make sure to defined both `grid-template-areas` and `grid-template-columns`.
 
-4. In the new version of Autoprefixer, `grid-gap` is supported. However, make sure to defined both `grid-template-areas` and `grid-template-columns`.
+4. Avoid shorthands such as `grid` or `grid-column `/ `grid-row`. `grid-column` and `grid-row` are both shorthands for placing grid items using _grid lines_, which means that you will have to go from two code lines back to four. 
 
- 
+![Avoid shorthands](/assets/screen-shot-2019-12-07-at-14.36.28.png "Avoid shorthands")
 
-* grid-gap limitations 
-* Rachels awesome article https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/ 
-* 
+
+
+4. When enabling the grid for your whole project, be sure to check each grid fix in IE. Just to be sure
 
 Check out their [docs ](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie)for more info. 
 
