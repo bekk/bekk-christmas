@@ -15,21 +15,21 @@ Most authentication solutions end users are exposed to on the web these days are
 * It is the user’s responsibility to generate and remember passwords. Therefore they often end up being easy to guess and reused across multiple sites.
 * Users are easily tricked to give away their passwords. [Verizon's Data Breach Investigations Report for 2019](https://enterprise.verizon.com/resources/reports/dbir/) showed that 3% of phishing attempts were successful.
 
-Knowing all this, why do we still use password based authentication methods? For the most part it’s due to the lack of good alternatives. Different attempts have been made to rectify the issues mentioned above. Two factor authentication protects you, to some extent, if your password is leaked, while password managers help you generate strong passwords that are unique across your accounts. Used in combination they alleviate some of the issues, but unfortunately not all of them. Additionally, [most people don't use them](https://hackernoon.com/why-do-most-people-ignore-two-factor-authentication-1bbc49671b8e) indicating that they aren’t user friendly enough for your average Jane or Joe. 
+Knowing all this, why do we still use password based authentication methods? For the most part it’s due to the lack of good alternatives. Different attempts have been made to rectify the issues mentioned above. Two factor authentication protects you, to some extent, if your password is leaked, while password managers help you generate strong passwords that are unique across your accounts. Used in combination they alleviate some of the issues, but unfortunately [most people don't use them](https://hackernoon.com/why-do-most-people-ignore-two-factor-authentication-1bbc49671b8e) indicating that they aren’t user friendly enough for your average Jane or Joe. 
 
 The FIDO (Fast Identity Online) Alliance has set out to solve the world’s password problem by creating an authentication method that is both secure and user friendly. The alliance consists of some of the most influential companies on the web, like Google, Amazon and Microsoft, and have created an open authentication standard called FIDO2. In simple terms FIDO2 replaces the need of a shared secret, i.e. the password, with public key cryptography. The standard consists of a W3C approved API called [WebAuthn](https://www.w3.org/TR/webauthn/) and a client to authenticator protocol called [CTAP](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). Before diving into the details, let’s walk through how this will work in practice (use cases taken from the WebAuthn specification):
 
 #### Registration (using a phone)
 1. The user navigates to example.com in a browser and clicks a button to create an account
 2. The phone prompts, “Do you want to register with example.com?”
-3. To accept, the user provides some previously configured authentication mechanism like a PIN code, fingerprint etc.
+3. To accept, the user provides some previously configured authentication mechanism such as a PIN code or fingerprint
 4. Once authenticated, the registration is complete
 
 #### Authentication (using a laptop)
 1. The user navigates to example.com in a browser and clicks a button to sign in
 2. The browser displays a message saying, “Please complete this action on your phone”
 3. The phone receives a notification saying, “Sign in to example.com”
-4. The user taps on the notification and authenticates using a PIN code, fingerprint etc.
+4. The user taps on the notification and authenticates using their preferred authentication mechanism
 5. The sign in completes
 
 Let’s take a closer look at what’s happening under the hood. The central component in FIDO2 is a cryptographic entity called the authenticator. In the examples above, the authenticator is running on the user’s phone. The authenticator’s job is to generate public key credentials for relying parties, authenticate the user and cryptographically sign challenges presented to it by relying parties. When the user clicks the button to create an account, the website (referred to as the relying party) uses the WebAuthn API in the browser to initiate the registration process illustrated in Figure 1. First the authenticator prompts the user to authenticate, e.g. using biometry. Then public key credentials are generated, given that the authentication was successful. The private key is stored on the device together with information about the relying party. The public key is sent back to the relying party which associates the public key with the newly created account.
