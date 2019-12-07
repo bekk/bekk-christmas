@@ -8,9 +8,9 @@ authors:
 ---
 WIP...
 
-In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. We can do whatever we want. As long as the object we are throwing is a subtype of `Throwable`, the compiler will not complain. This sounds like a good thing, right? Well, _it depends_.
+In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. Such freedom sounds must be a good thing, right? Well, _it depends_.
 
-Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe. The compiler will not tell you what to catch or whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
+Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile time. The compiler will not tell you what to catch or even whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
 
 ## Error Handling with `Result<T, E>`
 
@@ -22,7 +22,7 @@ class Ok<out T>(val value: T): Result<T, Nothing>()
 class Err<out E>(val error: E): Result<Nothing, E>()
 ```
 
-`Result` is a superclass that can only be instantiated as an `Ok` or an `Err`. If you receive an instance of `Result`, the only way to get the encapsulated value is by _explicitly_ checking whether it is an `Ok` or an `Err` instance. In other words, error handling is both enforced and typesafe. Simple enough, right? Let us look at an example.
+`Result` is a superclass that can only be instantiated as an `Ok` or an `Err`. If you receive an instance of `Result`, the only way to get the encapsulated value is by _explicitly_ checking whether it is an `Ok` or an `Err` instance. In other words, error handling is both enforced and compile-time typesafe. Simple enough, right? Let us look at an example.
 
 ```kotlin
 fun divide(dividend: Int, divisor: Int): Result<Int, String> =
@@ -43,11 +43,11 @@ fun main() {
 }
 ```
 
-In the example above, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But, does it scale well with more complex problems, you might ask. Well, no. This barebone implementation suffers from a readability problem when used in more complex situations, especially with lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should perform the following task:
+In this example, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great! But, what about more complex problems, you might ask. Well, this barebone implementation suffers from a readability problem when it comes to more complex problems, especially in the case of lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should periodically transfer all changed users from a database to a third-party API. It performs the following subtasks:
 
 - Fetch the timestamp of the previous successful transfer, from the database.
 - Fetch all users that have changed since this timestamp, from the database.
-- Transfer all those users, one by one, to a third party API.
+- Transfer all those users, one by one, to a third-party API.
 - Save the result of the transfer to the database.
 
 The signature of the functions we use are as follows:
@@ -83,7 +83,7 @@ fun transferChangedUsers(now: LocalDateTime): Result<Unit, String> {
     return Err("Failed to transfer users")
 }
 ```
-This implementation does not feel right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. It is easy to see that this does not scale well for more complex cases. Imagine that you needed to be more specific about what failed, and let the failure of each step propagate up to the caller of `transferChangedUsers`. To do that, we could to add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, it becomes a monad, which in turn gives us the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
+This implementation does not feel right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. Imagine that you needed to let the failure of each step propagate up the call-stack (an extremely common scenario). To do that, we could to add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, it becomes a monad, which in turn gives us the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
 
 ```Kotlin
 fun <U, T, E> Result<T, E>.map(transform: (T) -> U): Result<U, E> =
@@ -193,14 +193,3 @@ private class RunResultTryAbortion(val err: Any) : Exception()
 ```
 
 In simple terms, the `runResultTry` function takes a function as an argument and executes it in a `try/catch`. The `.abortOnError` function is a _scoped extension function_ of the Result type, which is _only_ available inside the block passed to `runResultTry`. When a result is an `Err`, the `.abortOnError` function aborts execution by jumping to the catch block of `runResultTry`, or else it unwraps and returns its encapsulated value. The fact that it uses exceptions internally is just an implementation detail, and not important. You may also notice the suspicious casts. These casts are a way to get around the fact that exceptions cannot have generic types (a consequence of dynamic typing and type erasure). Regardless, the casts are safe in the current implementation above.
-
-## What About Kotlin's Own `Result<T>`?
-
-...
-
-## Error Handling with `Try<T>`
-...
-
-## Gotchas
-
-...
