@@ -37,7 +37,7 @@ I became intrigued with them in 6th grade, when small computers filled large roo
 
 Its ubiquity.  JavaScript is the language of the web and is likely to outlive us all.
 
-### How did you get involved in the development of EcmaScript?
+### How did you get involved in the development of ECMAScript?
 
 In early 2007, I was working as a software architect at Microsoft. At the time,
 nobody at MSFT cared very much about JavaScript.  I saw a need and opportunity
@@ -57,7 +57,7 @@ The [Realms API](https://github.com/tc39/proposal-realms) and closely-related
 These are foundational proposals that enable building secure sandboxing
 of untested JavaScript code within JavaScript applications. 
 
-### What is the most fun about being a part of the development of EcmaScript?
+### What is the most fun about being a part of the development of ECMAScript?
 
 Impact – knowing that you are having a direct impact of the world's most
 widely used programming language. You are touching people everywhere.
@@ -71,7 +71,7 @@ nicely with each other.
 Do you think JS is a complex language now? Think what it would be like if
 hundreds of additional good feature ideas where incorporated into it.
 
-### What do you wish you knew before you started contributing to the development of EcmaScript?
+### What do you wish you knew before you started contributing to the development of ECMAScript?
 
 The full history of the language and its standardization efforts. What was the
 reasoning behind past decisions.
