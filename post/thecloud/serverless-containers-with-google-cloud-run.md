@@ -3,8 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 7
 title: Serverless Containers with Google Cloud Run
-image: >-
-  https://images.unsplash.com/photo-1498596970060-8d11115e3e71?w=1226&h=750&fit=crop&crop=edges
+image: 'https://i.ibb.co/Qcz73tm/google-cloud-run-christmas-post.jpg'
 ingress: >-
   Do you want to run stateless container-based applications or microservices,
   but don't need all the features and management of a full-fledged Kubernetes
