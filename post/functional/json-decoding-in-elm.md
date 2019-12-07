@@ -42,7 +42,7 @@ And if we want to turn a JSON value into a type we have made ourselves, for inst
 we would write a `Christmas` decoder, with the type signature `Decoder Christmas`. 
 
 The [Json.Decode package](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode)
-defines the basic decoders we use to decode a string containing JSON, like
+defines the basic decoders we use to decode JSON, like
 [`string`](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#string),
 [`int`](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#int) and
 [`list`](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#list),
@@ -111,7 +111,7 @@ type alias BackendData =
 Decoding this type, on the other hand, is quite easy, so let's do that!
 I usually always use NoRedInk's [`json-decode-pipeline` package](https://package.elm-lang.org/packages/NoRedInk/elm-json-decode-pipeline/latest),
 but you can also use the `map3` and `field` functions in the Json.Decode package, to decode `BackendData`.
-Using `elm-decode-pipeline`, the decoder for `BackendData` would look like this:
+Using `json-decode-pipeline`, the decoder for `BackendData` would look like this:
 
 ```elm
 import Json.Decode exposing (Decoder, succeed)
@@ -175,7 +175,7 @@ The `typeOfChristmas` field is of type `TypeOfChristmas`, which is a custom type
 but the type we have in `BackendData` is a `String`.
 Since not all strings can be mapped to one of the three variations of `TypeOfChristmas`,
 we know that we have a transformation that isn't always successful.
-Therefore we need to use `andThen`.
+We therefore need to use `andThen`.
 
 This is what our actual `Christmas` decoder will look like:
 
