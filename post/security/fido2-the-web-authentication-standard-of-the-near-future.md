@@ -38,20 +38,20 @@ Let’s take a closer look at what’s happening under the hood. The central com
 
 
 Source: https://fidoalliance.org/how-fido-works/
-
-###### Figure 1
+##### Figure 1
 
 When signing in, the website uses WebAuthn to send a randomly generated string of characters called a challenge to the authenticator. The authenticator verifies the origin of the request, unlocks access to the private key by prompting the user for authentication, signs the challenge with the private key and returns the signed challenge back to the relying party. The website, knowing the original value of the challenge, verifies the signature by using the public key associated with the account. If the signature is verified, the sign in is complete. The process is illustrated in Figure 2. 
 
 ![FIDO2 Login Process](https://1nmqmp2u9dgf3jo9centu6rq-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/graphic_Login.png)
 
-###### Figure 2 (Source: https://fidoalliance.org/how-fido-works/)
+Source: https://fidoalliance.org/how-fido-works/
+##### Figure 2
 
 In the authentication scenario the authenticator is not running on the same device as the browser. These authenticators are referred to as roaming authenticators and communicate with the client platform through the CTAP protocol. We won’t go into details about the protocol here, but it describes how external devices running authenticators communicate with client platforms through underlying transport protocols like USB, NFC and Bluetooth.
 
 So what exactly makes FIDO2 better than using passwords? First of all, the secret, which in this case is the private key, never leaves the device. It is also locked behind some authentication mechanism on the device itself. This makes it a lot less likely that someone will be able to steal your secret. If some website is breached, only the public key, which can not be used to impersonate a legitimate user, will be available to the attacker. Additionally, FIDO2 has built-in phishing protection. The private key is scoped to a specific domain, meaning it can only be used to authenticate on the same domain for which the key was generated. FIDO2 also protects against replay attacks. The challenge that has to be signed is randomly generated each time a login is initiated and can only be used once. If someone attempts to reuse a signed challenge, no access will be granted.
 
-FIDO2 support is increasing. Most major web browsers already [support WebAuthn](https://caniuse.com/#search=webauthn), whilst devices running Android 7+ or Windows 10 can be used as FIDO2 authenticators. Now it’s mostly up to websites to start offering FIDO2 authentication to end users. Companies like Google and Github currently allow you to use your FIDO2 security key as a second factor of authentication, whilst Microsoft has gone all the way allowing you to use is it as a single factor of authentication, providing a true passwordless experience. If you’re using a WebAuthn compatible browser on one of the devices mentioned earlier, you can test it out FIDO2 yourself at [webauthn.io](https://webauthn.io). 
+FIDO2 support is increasing. Most major web browsers already [support WebAuthn](https://caniuse.com/#search=webauthn), whilst devices running Android 7+ or Windows 10 can be used as FIDO2 authenticators. Now it’s mostly up to websites to start offering FIDO2 authentication to end users. Companies like Google and Github currently allow you to use your FIDO2 security key as a second factor of authentication, whilst Microsoft has gone all the way allowing you to use is it as a single factor of authentication, providing a true passwordless experience. If you’re using a WebAuthn compatible browser on one of the devices mentioned earlier, you can try out FIDO2 yourself at [webauthn.io](https://webauthn.io). 
 
 This is all good, but what happens if you lose the device holding all the security keys? Perhaps the biggest obstacle to reaching widespread FIDO2 adoption at the moment is coming up with a recovery mechanism that is both secure and user friendly. The current recommendation is to register a second authenticator with each relying party. If you lose one of your devices, you can still get access to your account with the other authenticator. This is definitely not very user friendly and is hopefully something that will be solved in the future.
 
