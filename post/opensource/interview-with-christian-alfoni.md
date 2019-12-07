@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 10
+post_day: 8
 title: Interview with Christian Alfoni
 ingress: >-
   Today's interview is with
