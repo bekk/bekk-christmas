@@ -5,7 +5,9 @@ post_day: 8
 title: Don't suffer like I Grid - SafIEty first
 image: >-
   https://images.unsplash.com/photo-1511377398397-8f0fb9ae372d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
-ingress: "Many developers hesitate to use CSS Grid in their project especially if they have to support Internet Explorer. All web developers loves to rant about IE, and this time, I learned the hard way what the fuss was all about. \U0001F605"
+ingress: >-
+  Many developers hesitate to use CSS Grid in their project. A typical argument
+  is that Grid is not supported in all browsers. But that's not true!
 links:
   - title: Feature queries @supports  by MDN
     url: 'https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/ '
@@ -16,21 +18,13 @@ links:
 authors:
   - My Thao Nguyen
 ---
-If you haven't yet, read the quick intro to CSS Grid -  ["Oops! I Grid it again"](https://css.christmas/2019/4). 
+_If you're not familiar with CSS Grid, check out this short article_  [_"Oops! I Grid it again"_](https://css.christmas/2019/4)_._ 
 
-## The first encounter
+Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. 
 
-When I started out with CSS Grid, and loved how it defining a layout so much easier and semantically cleaner compared to layouts with infinite nested flexboxes. I was living in my happy bubble using Grid until one day, I was told we had to support Internet Explorer 😬. I had not even opened my app in Internet Explorer, and when I did, _everything_ was broken. 
+![Can I Use - CSS Grid ](/assets/screen-shot-2019-12-07-at-20.02.40.png "Can I Use - CSS Grid ")
 
-So what do you do when you got to support IE but also want to use Grid? Don't worry! 
-
-## Grid + IE
-
-Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Check out the screenshot from [caniuse](https://caniuse.com/#search=grid):
-
-![Can I Use - CSS Grid ](/assets/grid.png "Can I Use - CSS Grid ")
-
-Thus, some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
+Thus , some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
 
 ## Autoprefixer can fix! 💁🏻✨
 
@@ -64,9 +58,9 @@ Autoprefixer do have its limitations, thus there are properties even Autoprefixe
 
 ![Avoid shorthands](/assets/screen-shot-2019-12-07-at-14.36.28.png "Avoid shorthands")
 
-4. When enabling the grid for your whole project, be sure to check each grid fix in IE just in case! Because you know, safiety first 😆!
+4. When enabling the grid for your whole project, be sure to check each grid fix in IE just in case! If you're like me and do not have IE on your laptop, you can either download a Virtual Machine (VM) to use Windows on your laptop such as [Parallels](https://www.parallels.com/eu/landingpage/pd/general/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhuqLT-NrvSBWj2X-tD5V5qznVF2fHHRYRDUPzX4ilW9TJCYq92cowTBoCVEoQAvD_BwE) or test your website through a web solution such as [SauceLabs](https://saucelabs.com/) or [Browserstack](https://www.browserstack.com/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhut0Cwdq1tfEk_2VcHmKcDM5YknUkDkRtOLtd0hqkEoDfE1Usi-m5-RoChkgQAvD_BwE). Because you know, safiety first 😆!
 
-## @supports
+## @supports 
 
 If you would still love to have some autoplacement properties, such as grid-auto-rows or auto-fill, then an option could be using the feature query, `@supports`. You can then use some CSS features, such as `grid`, depending on whether the browser supports it or not.  
 
