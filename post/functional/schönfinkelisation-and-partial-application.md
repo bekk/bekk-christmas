@@ -3,6 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 9
 title: Schönfinkelisation and Partial Application
+image: >-
+  https://images.unsplash.com/photo-1575582050795-c7c42bf57672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 ingress: ''
 authors:
   - Kjetil Valle
