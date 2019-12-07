@@ -127,7 +127,7 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports.wishlist = (event, context, callback) => {
   dynamoDb.scan({ TableName: 'wishlist' }, (err, res) => {
-    return callback(null, {
+    callback(null, {
       statusCode: err ? 500 : 200,
       body: err ? err.message : JSON.stringify(res),
       headers: {
@@ -146,7 +146,7 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports.newWish = (event, context, callback) => {
   dynamoDb.put({ TableName: 'wishlist', Item: JSON.parse(event.body) }, (err, res) => {
-    return callback(null, {
+    callback(null, {
       statusCode: err ? 500 : 200,
       body: err ? err.message : JSON.stringify(res),
       headers: {
