@@ -26,7 +26,11 @@ So what do you do when you got to support IE but also want to use Grid? Don't wo
 
 ## Grid + IE
 
-Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Thus, some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
+Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. 
+
+![Can I Use - CSS Grid ](/assets/picture-1.png "Can I Use - CSS Grid ")
+
+Thus, some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
 
 ## Autoprefixer can fix! 💁🏻✨
 
