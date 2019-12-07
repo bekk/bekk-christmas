@@ -27,13 +27,13 @@ links:
 authors:
   - Mikkel Dan-Rognlie
 ---
-Back in april '19 at the _Google Cloud Next_ conference [Cloud Run was released in public beta](https://cloud.google.com/blog/products/serverless/announcing-cloud-run-the-newest-member-of-our-serverless-compute-stack). Then a few weeks ago at _Cloud Next_ in London, they [announced Cloud Run as generally available](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga). Enough with the links already! So what is Cloud Run? It's is a managed compute platform that enables you to run stateless containers accessible via HTTP. It is very simple to deploy and run a containerized application.
+Back in april '19 at the _Google Cloud Next_ conference [Cloud Run was released in public beta](https://cloud.google.com/blog/products/serverless/announcing-cloud-run-the-newest-member-of-our-serverless-compute-stack). Then a few weeks ago at _Cloud Next_ in London, they [announced Cloud Run as generally available](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga). So what is Cloud Run? It's is a managed compute platform that enables you to run stateless containers accessible via HTTP.
 
-It is built upon the open source [Knative](https://knative.dev/) project, and you can choose to run your containers on _Fully Managed Cloud Run_, or in a _Google Kubernetes Engine_ cluster with Cloud Run for [Anthos](https://cloud.google.com/anthos/) on GCP or other places with Anthos on VMware (Anthos is Google's new hybrid/multi-cloud platform). I'll focus on the fully managed version here.
+It is built upon the open source [Knative](https://knative.dev/) project, and you can choose to run your containers on _Fully Managed Cloud Run_ without worrying about the underlying infrastructure, VMs or clusters. This is the true serverless option. Or you can deploy to a _Google Kubernetes Engine_ cluster with Cloud Run for [Anthos](https://cloud.google.com/anthos/) on GCP or other places with Anthos on VMware. Anthos is Google's new hybrid/multi-cloud platform. I'll focus on the fully managed version here.
 
 ## Fully Managed Cloud Run
 
-Cloud Run lets you run stateless HTTP-driven containers, without worrying about the underlying infrastructure. You can focus on writing application code, package a Docker-image with your favourite web stack that listens on `$PORT`, and Cloud Run makes it easy to deploy and automatic handles scaling of your service. It abstracts away all the details of a typical Kubernetes deployment 🤯
+Cloud Run lets you run stateless HTTP-driven containers without provisioning anything. You can focus on writing application code, package a Docker-image with your favourite web stack that listens on `$PORT`, and Cloud Run makes it easy to deploy and automatic handles scaling of your service. It abstracts away all the details of a typical Kubernetes deployment 🤯
 
 It is as easy as `gcloud run deploy SERVICE-NAME --image gcr.io/PROJECT-ID/IMAGE` if you deploy a pre-built Docker image using the [gcloud CLI](https://cloud.google.com/sdk/docs/). You can choose whether you want a public endpoint, or a private endpoint that is only accessible from other GCP components with the right role/IAM permissions. This makes it suitable for both public APIs or internal microservices/worker processes/asynchronous handling. For example by using [Pub/Sub Push subscriptions with delivery to Cloud Run](https://cloud.google.com/run/docs/triggering/pubsub-push). I'll come back to building images and options for deploy later 🚀 
 
@@ -67,7 +67,7 @@ You have several options for build and deploy. You can use the Cloud Console/UI,
 
 `gcloud builds submit --tag gcr.io/[PROJECT-ID]/[IMAGE]`
 
-**Deploy using CLI**: 
+**Deploy using CLI**
 
 `gcloud run deploy SERVICE-NAME --image gcr.io/PROJECT-ID/IMAGE`
 
@@ -81,7 +81,9 @@ To update the [allocated memory](https://cloud.google.com/run/docs/configuring/m
 
 You can change the [concurrency](https://cloud.google.com/run/docs/configuring/concurrency) (how many requests are dispatched in parallel per container) and the [`max number of instances`](https://cloud.google.com/run/docs/configuring/max-instances) with `--concurrency=[NUMBER]` and `--max-instances=[NUMBER]` respectively. This is very useful if you for example use Cloud Run as a consumer for a Pub/Sub Push subscription, where these values can tweak how fast you can process messages. 
 
-If you wan't to store environment-specific configuration like URLs to other services, you can set environment variables with the `deploy` or `update` command (or better, maybe use a runtime config server like [Consul](https://www.consul.io/) or [Cloud Config API](https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/)). Example: `--set-env-vars=[KEY=VALUE,…]`. If you need to store secrets, you should be [careful with env variables](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/). Actually the Cloud Run UI shows them in plain text! You could use [Berglas](https://github.com/GoogleCloudPlatform/berglas) or [Vault](https://www.vaultproject.io/) (with the setup and management it brings if you don't use it already).
+If you wan't to store environment-specific configuration like URLs to other services, you can set environment variables with the `deploy` or `update` command (or better, maybe use a runtime config server like [Consul](https://www.consul.io/) or [Cloud Config API](https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/)). Example: `--set-env-vars=[KEY=VALUE,…]`. 
+
+If you need to store secrets, you should be [careful with env variables](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/). Actually the Cloud Run UI shows them in plain text! You could use [Berglas](https://github.com/GoogleCloudPlatform/berglas) or [Vault](https://www.vaultproject.io/) (with the setup and management it brings if you don't use it already).
 
 ## Summary
 
