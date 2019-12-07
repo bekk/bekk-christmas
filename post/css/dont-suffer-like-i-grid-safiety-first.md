@@ -69,7 +69,7 @@ If you would still love to have some autoplacement properties, such as `grid-aut
 
 ![@supports - feature query](/assets/screen-shot-2019-12-07-at-14.36.57.png "@supports - feature query")
 
-This is because `@supports` is not supported in IE, thus it would not helpful to use the other way around. 🤷🏻
+This is because `@supports` is not supported in IE, thus it would not helpfull to use the other way around. 🤷🏻
 
 ## Have you tried not supporting IE?
 
