@@ -26,25 +26,15 @@ So what do you do when you got to support IE but also want to use Grid? Don't wo
 
 ## Grid + IE
 
-Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. 
+Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Check out the screenshot from [caniuse](https://caniuse.com/#search=grid):
 
-![Can I Use - CSS Grid ](/assets/picture-1.png "Can I Use - CSS Grid ")
+![Can I Use - CSS Grid ](/assets/grid.png "Can I Use - CSS Grid ")
 
 Thus, some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
 
 ## Autoprefixer can fix! 💁🏻✨
 
-Autoprefixer is a PostCSS plugin to parse CSS and what it does is that it adds necessary CSS and prefixes to your CSS rules so that it will work even in IE. 
-
-****
-
-**https://github.com/postcss/autoprefixer#does-autoprefixer-polyfill-grid-layout-for-ie**
-
-
-
-
-
-Add it to your project with:
+Autoprefixer is a PostCSS plugin to parse CSS and what it does is that it adds necessary CSS and prefixes to your CSS rules so that it will work even in IE. So what are you waiting for? Add it to your project with:
 
 ```
 npm install autoprefixer@latest
@@ -57,7 +47,7 @@ To see it in action, test your code with their [online tool](https://autoprefixe
 ![Autoprefixer online tool](/assets/screen-shot-2019-12-02-at-20.06.13.png "Autoprefixer online tool")
 
 Awesome, right? ✨ \
-Although it's pretty good, there is still a few things you need to beware of when using it.  
+Although it's pretty good, there is still a few things you need to be aware of when Grid and Autoprefixer with Internet Explorer.  
 
 ## Limitations
 
