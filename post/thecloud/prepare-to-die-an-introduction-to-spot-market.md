@@ -19,6 +19,10 @@ links:
   - title: Introduction to Spot Market by Amazon
     url: >-
       https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-spot-instances-work.html
+  - title: Amazon EC2 Spot Instances
+    url: 'https://aws.amazon.com/ec2/spot/'
+  - title: Playing the AWS ec2 Spot Market - Matthew Powers
+    url: 'https://medium.com/@mrpowers/playing-the-aws-ec2-spot-market-74b703454f4f'
 authors: []
 ---
 ## Introduction
