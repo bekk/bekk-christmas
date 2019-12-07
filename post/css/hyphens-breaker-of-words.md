@@ -16,7 +16,6 @@ links:
 authors:
   - Espen Hellerud
 ---
-# Hyphens - Breaker of words
 A hyphen (`-`) is a punctuation mark used to join words or separate syllables within a word. The latter comes in handy when a word is just too long, and we need to break it into smaller pieces.
 When working with CSS we can use the property `hyphen` to specify how words should be hyphenated when they are too long for its parent container. To specify the wanted behaviour of `hyphen`, there are three different keywords we can use as values.
 
