@@ -1,7 +1,7 @@
 ---
 calendar: css
 post_year: 2019
-post_day: 12
+post_day: 15
 title: CSS Grid's Best Friend
 image: >-
   https://images.unsplash.com/photo-1465161191540-aac346fcbaff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
