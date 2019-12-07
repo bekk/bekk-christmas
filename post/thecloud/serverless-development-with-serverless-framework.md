@@ -26,7 +26,7 @@ links:
 authors:
   - Henrik Wingerei
 ---
-Serverless Framework is a node CLI tool which can be installed via npm by running `npm install -g serverless`. As mentioned the framework can be used against many different cloud [providers](https://serverless.com/framework/docs/providers/). AWS, Azure and Google of course, but also more "exotic" providers like [Cloudflare Workers](https://workers.cloudflare.com/), [OpenWhisk](https://openwhisk.apache.org/) and [Alibaba Cloud](https://www.alibabacloud.com/). In this post we will focus on how to use Serverless Framework on AWS.
+Serverless Framework is a node CLI tool which can be installed via npm by running `npm install -g serverless`. As mentioned the framework can be used against many different cloud [providers](https://serverless.com/framework/docs/providers/). AWS, Azure and Google is supported, but also more "exotic" providers like [Cloudflare Workers](https://workers.cloudflare.com/), [OpenWhisk](https://openwhisk.apache.org/) and [Alibaba Cloud](https://www.alibabacloud.com/). In this post we will focus on how to use Serverless Framework on AWS.
 
 ## Serverless Framework concepts
 
@@ -34,7 +34,7 @@ Serverless Framework has four main concepts which you should know before we look
 
 **Service**
 
-You can think of this as an application or as a .. yeah, service. It typically  consists of multiple functions ([Lambda](https://docs.aws.amazon.com/lambda/) in our case) and different resources as databases, [S3 buckets](https://aws.amazon.com/s3/), [API gateway](https://aws.amazon.com/api-gateway/) and other managed services your service use.
+You can think of this as an application or as a ... yeah, service. It typically  consists of multiple functions ([Lambda](https://docs.aws.amazon.com/lambda/) in our case) and different resources as databases, [S3 buckets](https://aws.amazon.com/s3/), [API gateway](https://aws.amazon.com/api-gateway/) and other managed services.
 
 **Functions**
 
@@ -42,7 +42,7 @@ On AWS this is equivalent to AWS Lambda. A single piece of code deployed to AWS 
 
 **Events**
 
-Events are what trigger your functions you have defined in your service. On AWS this can be anything from a HTTP request from API Gateway, an image uploaded to a S3 bucket, a new entry in a [DynamoDB](https://aws.amazon.com/dynamodb) database, a [CloudWatch](https://aws.amazon.com/cloudwatch/) alert and [lots more](https://serverless.com/framework/docs/providers/aws/events/).
+Events are what trigger your functions you have defined in your service. On AWS this can be anything from a HTTP request from API Gateway, an image uploaded to a S3 bucket, a new entry in a [DynamoDB](https://aws.amazon.com/dynamodb) table, a [CloudWatch](https://aws.amazon.com/cloudwatch/) alert and [lots more](https://serverless.com/framework/docs/providers/aws/events/).
 
 **Resources**
 
@@ -102,7 +102,7 @@ resources:
           WriteCapacityUnits: 1
 ```
 
-We start by defining the name for our service, `wishlist`. Then we define which provider we would like to use, `aws`, runtime for our functions, `nodejs`, and which region we would like our service to be deployed to, `eu-central-1`. The `iamRoleStatements` declares that our functions are allowed to query and add items to our DynamoDB table. The last block, `resources`, defines our DynamoDB table.
+We start by defining the name for our service, `wishlist`. Then we define which provider we would like to use, `aws`, runtime for our functions, `nodejs`, and which region we would like our service to be deployed to, `eu-central-1`. The `iamRoleStatements` declares that our functions are allowed to query and add items to our DynamoDB table. The last block, `resources`, defines our DynamoDB table where our wishes are stored.
 
 The functions block could do with a more detailed explanation.
 
@@ -118,9 +118,9 @@ functions:
       - http: POST wishes
 ```
 
-Here we declare two functions. The `wishlist` function is a function that returns all wishes from our database. In the `events` block we define that this should trigger on a http GET request with the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request with the path `/wishes`. The actual code for the two functions is listed below.
+Here we declare two functions. The `wishlist` function is a function that returns all wishes from our DynamoDB table. In the `events` block we define that this should trigger on a http GET request with the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request with the path `/wishes`. The actual code for the two functions is listed below.
 
-**list all wishes**
+**List all wishes**
 ```js
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
@@ -139,7 +139,7 @@ module.exports.wishlist = (event, context, callback) => {
 
 ```
 
-**add new wish**
+**Add new wish**
 ```js
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
@@ -161,24 +161,12 @@ module.exports.newWish = (event, context, callback) => {
 
 ## So, how do we actually deploy our service to the cloud? 
 
-To deploy the API just run the command `sls deploy`. Serverless Framework will deploy all your functions and necessary infrastructure, and print the URL for your brand new serverless API at the bottom.
+To deploy our service just run the command `sls deploy`. Serverless Framework will deploy all your functions and necessary infrastructure, and print the URL for your brand new serverless API at the bottom.
 
 ```bash
 $ sls deploy
 
-Serverless: Packaging service...
-Serverless: Excluding development dependencies...
-Serverless: Creating Stack...
-Serverless: Checking Stack create progress...
-........
-Serverless: Stack create finished...
-Serverless: Uploading CloudFormation file to S3...
-Serverless: Uploading artifacts...
-Serverless: Uploading service wishlist.zip file to S3 (1.21 KB)...
-Serverless: Validating template...
-Serverless: Updating Stack...
-Serverless: Checking Stack update progress...
-................................................
+.......
 Serverless: Stack update finished...
 Service Information
 service: wishlist
@@ -200,11 +188,11 @@ layers:
 
 So what actually happend here? Under the hood, Serverless Framework creates a [CloudFormation](https://aws.amazon.com/cloudformation/) template and uploads that to AWS. CloudFormation will take this template and provision all of the necessary services, deploy the functions and link all the services nicely together. In our case the framework created a DynamoDB table, two functions and an API Gateway. 
 
-With just a small yaml file and some commands, you suddenly have an API which autoscales automatically and you only pay when the API is in use. I think that's pretty cool!
+With just a small yaml file, two functions and some shell commands, you suddenly have an API which autoscales automatically and you only pay when the API is in use. I think that's pretty cool!
 
 # What's next?
 
-This was only a simple example of what Serverless Framework is capable of, but this only scratches the surface on what the framework can do for you when developing server. It can for instance be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. It also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
+This was only a simple example of what Serverless Framework is capable of, and this only scratches the surface on what the framework can do for you when developing serverless applications. In addition to create more complex applications, the framework can be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. Serverless Framework also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
 
-All in all, Serverless Framework is a nice alternative to use for developing serverless applications. It supports multiple cloud providers (although the support is limited on some of them) and comes with lots of [plugins](https://serverless.com/plugins/) to help you speed up your development. It of course has some limitations, and `yaml` can be frustrating to debug some times, but I will absolutely recommend you to try it out if you're interested in developing serverless applications!
+All in all, Serverless Framework is a nice alternative to use for developing serverless applications. It supports multiple cloud providers (although the support is limited on some of them) and comes with lots of [plugins](https://serverless.com/plugins/) to help you speed up your development. It has some limitations, and `yaml` can be frustrating to debug some times, but I will absolutely recommend you to try it out if you're interested in developing serverless applications!
 
