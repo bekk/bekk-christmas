@@ -120,9 +120,8 @@ functions:
 
 Here we declare two functions. The `wishlist` function is a function that returns all wishes from our database. In the `events` block we define that this should trigger on a http GET request with the path `/wishes`. The `newWish` function will, as the name applies, create a new wish in our DynamoDB table. It triggers on a http POST request with the path `/wishes`. The actual code for the two functions is listed below.
 
+**list all wishes**
 ```js
-// list all wishes
-
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
@@ -138,9 +137,10 @@ module.exports.wishlist = (event, context, callback) => {
   })
 };
 
-```js
-// add new wish
+```
 
+**add new wish**
+```js
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
