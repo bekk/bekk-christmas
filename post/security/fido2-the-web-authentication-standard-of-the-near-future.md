@@ -27,8 +27,8 @@ The FIDO (Fast Identity Online) Alliance has set out to solve the world’s pass
 
 #### Authentication (using a laptop)
 1. The user navigates to example.com in a browser and clicks a button to sign in
-2. The browser displays a message saying “Please complete this action on your phone”
-3. The phone receives a notification saying “Sign in to example.com”
+2. The browser displays a message saying, “Please complete this action on your phone”
+3. The phone receives a notification saying, “Sign in to example.com”
 4. The user taps on the notification and authenticates using a PIN code, fingerprint etc.
 5. The sign in completes
 
