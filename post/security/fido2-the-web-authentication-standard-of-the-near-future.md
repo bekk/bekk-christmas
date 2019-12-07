@@ -35,12 +35,19 @@ The FIDO (Fast Identity Online) Alliance has set out to solve the world’s pass
 Let’s take a closer look at what’s happening under the hood. The central component in FIDO2 is a cryptographic entity called the authenticator. In the examples above, the authenticator is running on the user’s phone. The authenticator’s job is to generate public key credentials for relying parties, authenticate the user and cryptographically sign challenges presented to it by relying parties. When the user clicks the button to create an account, the website (referred to as the relying party) uses the WebAuthn API (typically implemented in the browser) to initiate the registration process illustrated in figure 1. First the authenticator prompts the user to authenticate, e.g. using biometry. Then public key credentials are generated, given that the authentication was successful. The private key is stored on the device together with information about the relying party. The public key is sent back to the relying party which associates the public key with the newly created account.
 
 ![FIDO2 Registration Process](https://1nmqmp2u9dgf3jo9centu6rq-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/graphic_Registration.png)
-##### Figure 1 (Source: https://fidoalliance.org/how-fido-works/)
+
+
+Source: https://fidoalliance.org/how-fido-works/
+
+##### Figure 1
 
 When signing in, the website uses WebAuthn to send a randomly generated string of characters called a challenge to the authenticator. The authenticator verifies the origin of the request, unlocks access to the private key by prompting the user for authentication, signs the challenge with the private key and returns the signed challenge back to the relying party. The website, knowing the original value of the challenge, verifies the signature by using the public key associated with the account. If the signature is verified, the sign in is complete. The process is illustrated in figure 2. 
 
 ![FIDO2 Login Process](https://1nmqmp2u9dgf3jo9centu6rq-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/graphic_Login.png)
-##### Figure2 (Source: https://fidoalliance.org/how-fido-works/)
+
+Source: https://fidoalliance.org/how-fido-works/
+
+##### Figure2
 
 In the authentication scenario the authenticator is not running on the same device as the browser. These authenticators are referred to as roaming authenticators and communicate with the client platform through the CTAP protocol. We won’t go into details about the protocol here, but it describes how external devices running authenticators communicate with client platforms through underlying transport protocols like USB, NFC and Bluetooth.
 
