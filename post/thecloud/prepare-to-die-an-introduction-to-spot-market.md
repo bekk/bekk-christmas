@@ -25,7 +25,7 @@ links:
     url: 'https://medium.com/@mrpowers/playing-the-aws-ec2-spot-market-74b703454f4f'
 authors: []
 ---
-## Introduction
+## Why use the Spot Market?
 What if I told you that renting these servers could give you a discount of up to 90% compared to a regular on-demand server. Still not convinced? Have a look at the graph below. 
 ![Spot market price for m1.xlarge in eu-west around Black Friday](/assets/spot-market-black-friday.png "Spot market price for m1.xlarge in eu-west around Black Friday")
 
@@ -33,7 +33,7 @@ The graph shows the pricing around Black Friday 2019. As you can see, if you had
 However, there is a catch! Depending on the cloud provider, your provider reserves the right to at any time shutdown and remove your server at a very short notice. 
 Let’s dive deeper into the world of spot marketing, why it is good and prepare your application to die!
 
-## What is the Spot market?
+## What is the Spot Market?
 The Spot Market is in short, the unused/spare resources available at a datacenter/zone. Instead of these resources just being left in an idle state, these resources are auctioned away to the highest bidder. 
 So, how do we bid, and how does that process work? Well, in order to get an instance you specify the maximum amount you want to buy your resources for. If your max value is lower than the market price, you will have your server. However, should the market price surpass your bid, well, then that server is given to someone else. Pretty simple actually. Its kinda like buying and selling stocks.
 
@@ -45,7 +45,7 @@ All the four major cloud providers have some sort of spot market and they are ca
 
 Some of the features varies across all the providers, however, the concept remains mostly the same. For a more detailed comparison, have a look at [this article](https://spotinst.com/blog/amazon-ec2-spot-vs-azure-lpvms-vs-google-pvms-vs-ibm-transient-servers/). In this article, we’ll focus on Amazon EC2 spot instances. 
 
-## Some steps to prepare your app
+## How do I use the Spot Market?
 In order to utilize the Spot Market (safely), there are some steps and takes I want to share. There are definitely more to the Spot Market than I am able write about in this article, but here are some key takeaways.
 
 ### 1. Identify states in your app
