@@ -5,7 +5,7 @@ post_day: 8
 title: Don't suffer like I Grid - SafIEty first
 image: >-
   https://images.unsplash.com/photo-1511377398397-8f0fb9ae372d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
-ingress: "Many developers hesitate to use CSS Grid in their project. An argument being that it's not supported in all browser, but that is not true! \U0001F624"
+ingress: "Many developers hesitate to use CSS Grid in their project especially if they have to support Internet Explorer. All web developers loves to rant about IE, and this time, I learned the hard way what the fuss was all about. \U0001F605"
 links:
   - title: Feature queries @supports
     url: 'https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/ '
@@ -16,7 +16,15 @@ links:
 authors:
   - My Thao Nguyen
 ---
-Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Thus, some Grid syntax will work fine while newer Grid properties will fail. So what do you do when you got to support IE but also want to use Grid? No worries..  
+## The first encounter
+
+I've just learned CSS Grid, and loved how it defining a layout so much easier and semantically neater compared to layouts with infinite nested flexboxes. I was living in my happy bubble using Grid until one day, I was told we had to support Internet Explorer.  😬 I had not even opened my app in IE, and when I did, literally everything was a broken mess. 
+
+So what do you do when you got to support IE but also want to use Grid? Don't worry! 
+
+## Grid + IE
+
+Grid is fully supported by all browsers except Internet Explorer.  Well, at least partially. 🤷🏻 Partially because what IE10 and IE11 does support is the older [specification](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) of CSS Grid syntax. Thus, some Grid syntax will work fine while newer Grid properties will fail. There are some tools to help you with this! 
 
 ## Autoprefixer can fix! 💁🏻✨
 
@@ -42,14 +50,31 @@ Awesome, right? ✨
 
 Although it's amazing, there is still a few things you need to beware of when using it.  
 
+## Always define your rows and columns
+
+
+
 ## Not even Autoprefixer can fix it all 😔😬
 
 * **Autoplacement -->** Read more about Grid Autoplacement support in IE [here](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie).
+
+IE does not support autoplacement at all. Thus, grid properties like grid-auto-rows or grid-auto-columns for when 
+
 * grid-gap limitations 
 * Rachels awesome article https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/ 
 * 
 
 There are some limitations with Grid Autoplacement when it comes to using Autoprefixer. 
+
+
+
+## How about a Feature Query?
+
+If you would still love to have some autoplacement properties, such as grid-auto-rows or auto-fill, then an option could be using the feature query, `@supports`. You can then use some CSS features, such as `grid`, depending on whether the browser supports it or not.  
+
+![@supports - feature query](/assets/screen-shot-2019-12-07-at-14.36.57.png "@supports - feature query")
+
+You put the nice grid code (that might not be supported in some browsers) inside of the `@support (display: grid) {...}` as a fallback enable the code if grid is supported. This is because `@supports` is not supported in IE, thus it would not helpful to use the other way around. 🤷🏻
 
 ## Have you tried not supporting IE?
 
@@ -59,7 +84,7 @@ A solution could be to show the users an informative banner that is shown if IE 
 
 ## Internet Explorer is not all bad though 🤷🏻
 
-You will rarely meet a web developer that has not had a fateful encounter with Internet Explorer. Most feel strong emotions when it comes to making a site that actually supports IE, thus it can always be a fun subject to rant over when you meet someone new in the same field 😄.  
+You will rarely meet a web developer that has not had a fateful encounter with Internet Explorer. Most feel strong emotions when it comes to making a site that actually supports IE, thus it can always be a fun subject to rant over when you meet someone new in the same field 😄. 
 
 Hope you enjoyed the article! 
 
