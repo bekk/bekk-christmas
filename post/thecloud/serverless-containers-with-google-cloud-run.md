@@ -9,7 +9,7 @@ ingress: >-
   but don't need all the features and management of a full-fledged Kubernetes
   cluster? Or do you crave the serverless model with no management and
   _only-pay-what-you-use_ billing of other FaaS platforms, but find the runtime
-  model and supported languages/versions too limited? Let's have a look at
+  model and supported languages or versions too limiting? Let's have a look at
   [_Google Cloud Run_](https://cloud.google.com/run/) - a fully managed
   serverless platform for running stateless HTTP-driven containers. And where
   you only pay for resources used when handling requests.
