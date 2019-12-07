@@ -4,6 +4,10 @@ post_year: 2019
 post_day: 9
 title: Hyphens - Breaker of Words
 image: 'https://images.unsplash.com/photo-1485390027107-13d46287ba07'
+ingress: >-
+  How words are broken when lines overflow their containers is not always
+  trivial and can cause many a headaches. Hyphens is a CSS property used to help
+  with this, but how does it actually work and what can it do for us?
 links:
   - title: MDN - hyphens
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens'
