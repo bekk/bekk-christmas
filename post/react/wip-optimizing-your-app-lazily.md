@@ -6,8 +6,6 @@ title: Optimize your app by being Lazy
 image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55'
 ingress: 'What is lazy loading, and why should you do it?'
 links:
-  - title: Can you feel the Suspense?!
-    url: 'https://react.christmas/2019/5'
   - title: Code-splitting
     url: 'https://reactjs.org/docs/code-splitting.html'
 authors:
