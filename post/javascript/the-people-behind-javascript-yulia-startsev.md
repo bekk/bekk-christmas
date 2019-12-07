@@ -38,7 +38,7 @@ It wasn't that much fun to play.
 
 It is a very flexible language, which you can use to program in a variety of styles. I also think its learnability is one of its key features. It helps people get into programming  easily.
 
-### How did you get involved in the development of EcmaScript?
+### How did you get involved in the development of ECMAScript?
 
 I started off by following the spec and things that were going on in the committee. Eventually when I joined Mozilla, and through a series of events I ended up going to the committee.
 
@@ -50,7 +50,7 @@ At the moment I am really excited that we may bring experimentation to the langu
 
 I quite like pattern matching. I think our `switch / case` statement has some unexpected quirks and that proposal introduces an interesting solution that I personally like.
 
-### What is the most fun about being a part of the development of EcmaScript?
+### What is the most fun about being a part of the development of ECMAScript?
 
 It is very interesting to hear and participate in the debate around language features. It is also a bit scary, as I feel like everyone else in the room is more of an expert than myself.
 
