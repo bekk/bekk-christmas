@@ -92,6 +92,18 @@ While this does free up space, but you run the risk of encountering a `OutOfMemo
 
 Compacting, moves all object to the start of the memory region, and thus allows larger allocations to happen in the future. The downside of course is that the GC time increases as nothing is free in this world.
 
+As an alternative to compacting the memory in place is to use seperate region and copy live objects to another region. In the heap-description above we saw that survivor space was divided into to regions; `S0` and `S1`. One approach could therefor be to alternative between these two:
+<p>
+<b>Before marking:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-light.png" alt="Image of S0/S1 before marking"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-dark.png" alt="Image of S0/S1 before marking"/>
+<b>After marking:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-marked-light.png" alt="Image of S0/S1 after marking"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-marked-dark.png" alt="Image of S0/S1 after marking"/>
+<b>After copy</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-copied-light.png" alt="Image of S0/S1 after copying"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-copied-dark.png" alt="Image of S0/S1 after copying"/>
+</p>
 
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 - https://plumbr.io/handbook/garbage-collection-algorithms
