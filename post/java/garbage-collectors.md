@@ -136,29 +136,13 @@ This is the first GC algorithm which doesn't rely on stop-the-world pauses for a
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-dark.png" alt="Heap regions"/>
 </p>
 
-`G1GC` keep track of the amount of live vs dead objects in each region, and collects garbage in the regions that contains the most garbage. This allows the GC to avoid collecting the entire heap at once, and instead it can select a few regions to collect from (*collection set*). This in turn directly affects pause times needed by the GC, making G1GC very well suited for application where latency is important.
+`G1GC` keep track of the amount of live vs dead objects in each region, and collects garbage in the regions that contains the most garbage, hence the name *garbage first*. This allows the collector to avoid collecting the entire heap at once, and instead it can select a few regions. Which in turn leads to smaller pause times needed by the GC, thus making G1GC very well suited for application where latency is important.
 `G1GC` was first introduced in Java 7 as an experimental GC, and made the default GC in Java 9. Enable it by passing: `-XX:+UseG1GC`.
 
+### The future
+Recent releases of Java have seen the introduction to two new alternatives; `ZGC` and `Shenandoah GC`. Both being low-pause times, "fully"-concurrent, region-based and capable of handling large heap sizes. 
 
-### ZGC
+`ZGC` is available in OpenJDK 11 (linux only), with macOS and windows support planned for JDK 14 according to the [OpenJDK Wiki - ZGC](https://wiki.openjdk.java.net/display/zgc). 
+If you are interested in the inner workings of ZGC have a look at [this post at baeldung.com](https://www.baeldung.com/jvm-zgc-garbage-collector#zgc-concepts).
 
-### Shenandoah GC
- 
-Descibing a algorithm; concurrent, incremental, parallel, stop-the-world
-
-- serial
-  - Single-threaded mark, sweep, compacting (copy?)
-- parallel
-  - Multi-threaded mark, sweep, compacting (copy?)
-- CMS
-  - Concurrent mark, sweep, compacting (copy?)
-- G1GC
-  - Region-based
-- ZGC
-  - Low-latency, concurrent, region-based, compacting
-  - https://wiki.openjdk.java.net/display/zgc
-- Senandoah GC
-  - Low-latency, concurrent, region-based, compacting
-  - https://wiki.openjdk.java.net/display/shenandoah/Main#Main-Heuristics
-
-## But why care?
+`Shenandoah GC` is available upstream in OpenJDK 12 with backports to OpenJDK8u and OpenJDK11u, which should make it availble to most programmers out there. Progress can be tracked at the [OpenJDK Wiki - Shenandoah GC](https://wiki.openjdk.java.net/display/shenandoah).
