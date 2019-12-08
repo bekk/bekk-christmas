@@ -53,13 +53,13 @@ After this short introduction to Java's memory model it is time to take a closer
 In any GC algorithm the first thing that needs to happen is the **marking** phase. During this phase the algorithm looks at the heap space in question and tries to figure out which objects it can remove. 
 
 <p>
-<b>Before marking:</b>
+<b>Before marking:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-before-light.png" alt="Image of partially full heap"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-before-dark.png" alt="Image of partially full heap"/>
 </p>
 
 <p>
-<b>After marking:</b>
+<b>After marking:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-light.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-dark.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
 </p>
@@ -77,10 +77,10 @@ By starting at what is referred to as **GC Roots** and following all references 
 After marking all objects that can be removed from memory the GC moves on to actually freeing up the space. One approach would be to just free up all space occupied by dead objects.
 
 <p>
-<b>Before sweep:</b>
+<b>Before sweep:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-light.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-dark.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
-<b>After sweep:</b>
+<b>After sweep:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-light.png" alt="Image of heap after marked sections are freed"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-dark.png" alt="Image of heap after marked sections are freed"/>
 </p>
@@ -95,13 +95,13 @@ Compacting, moves all object to the start of the memory region, and thus allows 
 
 As an alternative to compacting the memory in place is to use seperate region and copy live objects to another region. In the heap-description above we saw that survivor space was divided into to regions; `S0` and `S1`. One approach could therefor be to alternative between these two:
 <p>
-<b>Before marking:</b>
+<b>Before marking:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-light.png" alt="Image of S0/S1 before marking"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-dark.png" alt="Image of S0/S1 before marking"/>
-<b>After marking:</b>
+<b>After marking:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-marked-light.png" alt="Image of S0/S1 after marking"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-marked-dark.png" alt="Image of S0/S1 after marking"/>
-<b>After copy</b>
+<b>After copy</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-copied-light.png" alt="Image of S0/S1 after copying"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-copied-dark.png" alt="Image of S0/S1 after copying"/>
 </p>
@@ -129,7 +129,15 @@ Enable it by passing: `-XX:+UseParallelGC -XX:+UseParallelOldGC` to use it in yo
 This is the first GC algorithm which doesn't rely on stop-the-world pauses for all its work, hence the *concurrent* part. It uses standard parallel mark-copy for the young space, and concurrent mark-sweep in tenured space. The goal of this algorithm is to minimize the pauses due to garbage collection, and does this by running part of the cycle concurrently with the application threads. Enable it by passing: `-XX:+UseConcMarkSweepGC`, it is however deprecated in Java 9 and scheduled to be removed in Java 14.
 
 ### G1GC
+`G1GC` (Garbage first GC) is the first region-based GC. Which means that the heap illustration from earlier doesn't really fit anymore.
+<p>
+<b>Region based heap:</b><br />
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-light.png" alt="Heap regions"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-dark.png" alt="Heap regions"/>
+</p>
+
 ### ZGC
+
 ### Shenandoah GC
  
 Descibing a algorithm; concurrent, incremental, parallel, stop-the-world
