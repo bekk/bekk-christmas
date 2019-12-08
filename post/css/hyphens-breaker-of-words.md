@@ -53,10 +53,10 @@ See the Pen <a href='https://codepen.io/espehel/pen/gObpdKY'>hyphen: auto</a> by
 If you are not happy with how the browsers hyphenates your words, there is some extras snack available. Here are four CSS properties introduced in CSS Text Module Level 4, that gives us almost an inDesign level of control.
 
 ### Setting minimum length before and after an hyphen
-`hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of character a word can have before the hyphenation and the third value is after. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
+`hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of characters a word can have before the hyphenation. The third and finale value limits amount of characters after the hyphen. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
 
 ### Limiting consecutive hyphenated lines 
-`hyphenate-limit-lines` limits how many consecutive lines that the browser can hyphenate. If three or more consecutive lines are hyphenated, it forms what is called a _ladder_. In some languages, e.g. English, it is common to avoid ladders.
+`hyphenate-limit-lines` limits how many consecutive lines that the browser can hyphenate. If three or more consecutive lines are hyphenated, it forms what is called a _ladder_. In some languages, e.g. English, it is common to avoid ladders because of aesthetic reasons.
 
 ### Avoid hyphenating the last line
 `hyphenate-limit-last` can be given the value `always` to make the browser never hyphenate the last line. This is to avoid having a part of the word sitting alone on the last line.
