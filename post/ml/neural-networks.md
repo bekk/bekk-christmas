@@ -19,7 +19,7 @@ Neural networks are computer algorithms that are loosely modelled after the huma
 
 Artificial Neural Networks are computationally created algorithms that try to mimic this behaviour. As neurons are fundamental in our brain, artificial neurons are central in artificial neural networks. They work the same way; each neuron receives a set of input signals, combines them in some way, and passes the information along. The real power of artificial neural networks emerges when you connect layers of neurons together to form a network.
 
-![](/assets/ml_10_pic2.png)
+![](https://i.ibb.co/QpbZYC3/ANN1.jpg)
 
 Traditional artificial neural networks are structured in layers. Each neuron combines its input signals and passes it along to the neurons in the next layer. The output of the last layer is the output of the network. This shape and form of this output depends on what you want the network to do. If you want it to recognize cats - a simple digit, signifying a cat or not, would suffice. 
 
