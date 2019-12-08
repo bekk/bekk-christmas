@@ -14,7 +14,7 @@ links:
 authors:
   - Markus Karlsen
 ---
-In this calendar we will look into async-await. Let's start with async functions.
+In this article we will look into async-await. Let's start with async functions.
 
 From [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function):
 
@@ -59,10 +59,10 @@ const someFunction = function() {
 };
 ```
 
-By adding the ```async``` keyword in the function declaration, we make the function return a promise and allow us to use the ```await``` keyword in it. The ```await``` keyword cant be used at top level code or in functions without ```async```. Addionally, the ```await``` keyword before a promise makes the code feel and act synchronous. Together ```async``` and ```await``` provide a great framework to write asynchronous code that is easy to understand. 
+By adding the ```async``` keyword in the function declaration, we make the function return a promise and allow us to use the ```await``` keyword in it. The ```await``` keyword can't be used at top level code or in functions without ```async```. Addionally, the ```await``` keyword before a promise makes the code feel and act synchronous. Together ```async``` and ```await``` provide a great framework to write asynchronous code that is easy to understand. 
 
 ### Case
-Let's say you have a API GET that returns true or false. The user has to wait for this GET to return true. However, we don't want to keep the user waiting longer than 30 seconds, and the API does not allow more than one API call every 5 seconds. If we get a timeout or the API call returns an error, we want to redirect the user to an error page.
+Let's say you have a HTTP GET that returns true or false. The user has to wait for this GET to return true. However, we don't want to keep the user waiting longer than 30 seconds, and the API does not allow more than one API call every 5 seconds. If we get a timeout or the API call returns an error, we want to redirect the user to an error page.
 
 How would you solve this using ```async-await```? The first thing we need is a function that calls the API GET:
 
