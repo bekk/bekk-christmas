@@ -85,7 +85,7 @@ Now, it is conceivable that this is the [canonical solution to this particular p
 Is this at all possible to achieve in C#?
 I sat down and tried to restore the honour of C# by [solving it with recursion and lazy implementation in my old familiar language](https://gist.github.com/oyms/e7bad5882dd8495246b5a9045c474444). (With a little more code and hassle.)
 
-```c#
+```csharp
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -138,6 +138,8 @@ namespace CSharpCanDoFunctional
 }
 ```
 
-No, I don’t think it is possible to solve this way in C#. In about 50 lines the snippet achieves almost but not quite what Haskell could do in seven. I just took a massive code golf defeat.
+No, I don’t think it is possible to solve this way in C#. 
+
+In about 50 lines the snippet achieves almost but not quite what Haskell could do in seven. I just took a massive code golf defeat.
 
 I think I have learned something new today.
