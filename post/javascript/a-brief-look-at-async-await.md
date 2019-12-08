@@ -64,7 +64,7 @@ By adding the ```async``` keyword in the function declaration, we make the funct
 ### Case
 Let's say you have an HTTP GET that returns true or false. The user has to wait for this GET to return true. However, we don't want to keep the user waiting longer than 30 seconds, and the API does not allow more than one API call every 5 seconds. If we get a timeout or the API call returns an error, we want to redirect the user to an error page.
 
-How would you solve this using ```async-await```? The first thing we need is a function that calls the API GET:
+How would you solve this using ```async-await```? The first thing we need is a function that calls the HTTP GET:
 
 ```js
 function check() {
