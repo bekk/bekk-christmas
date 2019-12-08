@@ -84,4 +84,4 @@ hyphenate-limit-last: always;
 
 ## Breaking Free
 Hyphens is pretty simple to use when you combine _auto_ with a language to enhance your browsers hyphenation. If you also try to master it with the extra properties and line break characters, there's not a star in heaven  
-that you can't [reach]([https://www.youtube.com/watch?v=0qj67KE5VXI](https://www.youtube.com/watch?v=0qj67KE5VXI)).
+that you can't [reach](https://www.youtube.com/watch?v=0qj67KE5VXI).
