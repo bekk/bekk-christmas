@@ -3,7 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 18
 title: That one time I thought I understood recursion
-image: 'https://underskaar.com/images/csharpman0.png'
+image: >-
+  https://images.unsplash.com/photo-1524674246373-e33d40231e9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3024&q=80
 ingress: >-
   A short tale about my struggle to comprehend why C# isn't a functional
   language.
@@ -19,6 +20,8 @@ In an effort to learn Haskell I have started to work through the exercises at [e
 I am having a go at learning **Haskell**. Not because this is something I will ever need. It is rather an attempt to get my head around functional programming, and Haskell doesn’t seem to pretend to have any practical application beyond that.
 
 Although I am struggling, it is great fun!
+
+![C#-man](https://underskaar.com/images/csharpman0.png)
 
 My background is in OO programming, mostly using C#.
 C# being the versatile language it is, I have had the perception that whatever you do in other programming languages, you can with a little more code and hassle achieve in C# as well. If need be, I can program C# using a functional paradigm. And, of course I use recursion all the time. I know all there is to know about recursion.
