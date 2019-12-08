@@ -10,6 +10,10 @@ ingress: >-
   latest years, you’re bound to have heard of neural networks. These kinds of
   computational algorithms have pushed the boundaries of machine learning in
   pretty much every sub field there is. But what are they really?
+links:
+  - title: Gradient Descent
+    url: >-
+      https://towardsdatascience.com/understanding-the-mathematics-behind-gradient-descent-dde5dc9be06e
 authors:
   - Jørgen Wilhelmsen
 ---
@@ -23,7 +27,7 @@ Artificial Neural Networks are computationally created algorithms that try to mi
 
 Traditional artificial neural networks are structured in layers. Each neuron combines its input signals and passes it along to the neurons in the next layer. The output of the last layer is the output of the network. This shape and form of this output depends on what you want the network to do. If you want it to recognize cats - a simple digit, signifying a cat or not, would suffice. 
 
-These neural networks are trained to do specific tasks. If we want our network to tell whether an image depicts a cat or dog, we have to train it to do so. This is done by first feeding an image of a cat or a dog to the network. The network then does its internal computations, before an output is produced. This output is compared with the truth. If the network thinks it was given a picture of a dog when in reality the picture was of a cat, it will alter the behaviour of its neurons slightly in order to make a better prediction of a cat in the future. 
+These neural networks are trained to do specific tasks. If we want our network to tell whether an image depicts a cat or dog, we have to train it to do so. This is done by first feeding an image of a cat or a dog to the network. The network then does its internal computations, before an output is produced. This output is compared with the truth. If the network thinks it was given a picture of a dog when in reality the picture was of a cat, it will alter the behaviour of its neurons slightly in order to make a better prediction of a cat in the future. The network uses an algorithm called _gradient descent_ to modify the behavior of its neurons. The specifics of gradient descent is beyond the scope of this article, but I'll include a link below if you want to learn more. 
 
 ![](/assets/ml_10_pic4.gif)
 
