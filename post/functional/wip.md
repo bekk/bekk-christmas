@@ -86,7 +86,7 @@ primes n = take n $ sieve [2..]
 
 Not only is it _much_ shorter, it also applies a combination of recursion and lazy partial execution of the function. This led me to understand how little I had understood.
 
-<p><img src="https://underskaar.com/images/csharpman1.png" alt="My head exploded" width="200px" /></p>
+<p><img src="https://underskaar.com/images/csharpman1.png" alt="My head exploded" style="width:200px" /></p>
 
 Now, it is conceivable that this is the [canonical solution to this particular problem](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), but still my head exploded.
 
