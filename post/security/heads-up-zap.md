@@ -11,6 +11,9 @@ ingress: >-
   [check it out](https://security.christmas/2018/10). This year we were excited
   to learn that a new feature called Heads Up Display was introduced in the
   latest version.
+links:
+  - title: OWASP Zed Attack Proxy Project
+    url: 'https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project'
 authors:
   - Lars-Erik Wollan
 ---
