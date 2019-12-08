@@ -18,7 +18,7 @@ authors:
 ---
 First of all, if you don't know what Hacktoberfest is, get a quick introduction here: https://opensource.christmas/2019/6
 
-The main thing I learned from trying to be a maintainer during Hacktoberfest is that Hacktoberfest is really popular. Most of the issues I created were picked after few minutes. The power of tagging the issues with "hacktoberfest" was truly remarkable. I had to laugh when two people asked for the same issue, and not long after a third person submitted a pull request.
+The main thing I learned from trying to be a maintainer during Hacktoberfest is that Hacktoberfest is really popular. Most of the issues I created were picked after few minutes. The power of tagging the issues with "hacktoberfest" was truly remarkable. I had to laugh when two people asked for the same issue, and not long after a third person submitted a pull request ([#21](https://github.com/entur/shamash/issues/21)).
 
 I think that defining issues with a small scope and no (or little) requirement of understanding the domain of the application is important for having success as a maintainer during hacktoberfest. I tried to follow these principles and had success with issues like "Initialize TypeScript", "Rewrite this script from bash to Node.js" and "Rewrite this class component into a function component". These kinds of issues should be possible to do "mechanically" without necessarily understanding much of what the app really does.
 
