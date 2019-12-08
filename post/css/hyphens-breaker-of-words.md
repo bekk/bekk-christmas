@@ -20,7 +20,9 @@ authors:
 ---
 A hyphen (`-`) is a punctuation mark used to join words or separate syllables within a word. The latter comes in handy when a word is just too long, and we need to break it into smaller pieces. In CSS, we control it with the property [hyphens](<https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens>).
 
-```hypen: manual | auto | none;```
+```css
+hypen: manual | auto | none;
+```
 
 _Hyphens_ has three possible values _manual_, _auto_ and _none_, that specify how words should be hyphenated when they are too long for its parent container. 
 
@@ -59,7 +61,7 @@ If you are still not happy with how the browsers hyphenates your words, there is
 
 ### Setting minimum length before and after an hyphen
 `hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of characters a word can have before the hyphenation. The third and finale value limits amount of characters after the hyphen. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
-```
+```css
 /* Only hyphenate words with >= 6 characters,
  leave at least 3 characters before the hyphen and at least 2 after it */
 hyphenate-limit-chars: 6 3 2;
@@ -67,14 +69,14 @@ hyphenate-limit-chars: 6 3 2;
 
 ### Limiting consecutive hyphenated lines 
 `hyphenate-limit-lines` limits how many consecutive lines that the browser can hyphenate. If three or more consecutive lines are hyphenated, it forms what is called a _ladder_. In some languages, e.g. English, it is common to avoid ladders because of aesthetic reasons.
-```
+```css
 /* Do not allow more than 2 successive hyphenated lines */
 hyphenate-limit-lines: 2;
 ```
 
 ### Avoid hyphenating the last line
 `hyphenate-limit-last` can be given the value `always` to make the browser never hyphenate the last line. This is to avoid having a part of the word sitting alone on the last line.
-```
+```css
 /* No hyphenation on the last line of each page, column or paragraph. */
 hyphenate-limit-last: always;
 ```
