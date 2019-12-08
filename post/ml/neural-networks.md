@@ -14,6 +14,8 @@ links:
   - title: Gradient Descent
     url: >-
       https://towardsdatascience.com/understanding-the-mathematics-behind-gradient-descent-dde5dc9be06e
+  - title: Neural Networks and Deep Learning on Coursera
+    url: 'https://www.coursera.org/learn/neural-networks-deep-learning'
 authors:
   - Jørgen Wilhelmsen
 ---
@@ -35,4 +37,6 @@ In order to reach near-human performance, the network needs to be presented with
 
 In reality, these networks are so powerful they can actually be used for more complicated tasks then differentiating between cats and dogs. Artificial Neural Networks have pushed the boundaries of pretty much every sub-field within machine learning, from self-driven cars, voice assistants, automatic video-game playing - heck, perhaps this article was recommended to you based on predictions from a neural network. 
 
-I hope this gave you a quick introduction to neural networks. By itself, each neuron is not very complicated. But stacking them together really proves how the whole can be greater than the sum of its parts. Thank your for reading!
+I hope this gave you a quick introduction to neural networks. By itself, each neuron is not very complicated. But stacking them together really proves how the whole can be greater than the sum of its parts. If you want to delve further into the world of artificial neural networks along with practical knowledge of how to implement them, I recommend [this Coursera course](https://www.coursera.org/learn/neural-networks-deep-learning) by Andrew Ng.
+
+Thank your for reading!
