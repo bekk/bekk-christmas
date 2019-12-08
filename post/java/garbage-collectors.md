@@ -63,7 +63,11 @@ After this short introduction to Java's memory model it is time to take a closer
 
 Marking objects as ready to be garbage collected (dead objects) can be achieved in several ways. The simplest to reason about is the well-known reference-counter approach; where each object keeps track of how many references to it are floating around. Whenever a reference is removed, the referenced object decrements its reference-counter, and when it reaches zero it can be marked as dead. This approach does however have some limitations when it comes to cyclic references, and is not used by any garbage collector in Java. Instead the Java GC algorithms uses graph traversal algorithms to find which objects it can reach. 
 
-
+<p>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-light.png" alt="Example of mark-phase"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-dark.png" alt="Example of mark-phase"/>
+</p>
+By starting at what is referred to as **GC Roots** and following all references it finds, it is able to correctly mark all objects that are reachable. Unreachable objects are then marked as dead objects and can be garbage collected. What is considered a GC root may vary, but include; local variables and input arguments for any currently executing methods, active threads, static fields of loaded classes and several more. For example when running a minor GC (remember, just the young space), then every reference from tenured space into young space is considered a GC root. 
 
 
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
