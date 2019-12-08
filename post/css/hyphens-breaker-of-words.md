@@ -57,8 +57,7 @@ If you are still not happy with how the browsers hyphenates your words, there is
 ### Setting minimum length before and after an hyphen
 `hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of characters a word can have before the hyphenation. The third and finale value limits amount of characters after the hyphen. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
 ```
-/* Only hyphenate words with >= 6 characters,
-   leave at least 3 characters before the hyphen and at least 2 after it */
+/* Only hyphenate words with >= 6 characters, leave at least 3 characters before the hyphen and at least 2 after it */
 hyphenate-limit-chars: 6 3 2;
 ```
 
