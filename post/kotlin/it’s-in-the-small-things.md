@@ -82,3 +82,18 @@ With Data classes the same DTO as above suddenly only becomes:
 ```
  data class ChristmasTree(val height: Number, val radius: Number, val price: Number )
 ```
+
+The compiler automatically derives 
+
+* getters and setters for mutable properties and getters for immutable properties. 
+* equals()
+* hashCode() 
+* toString() 
+* componentN() 
+* copy() 
+
+Creating new Christmas Trees are done like this:
+
+```
+val christmasTree = ChristmasTree(200, 100, 500)
+```
