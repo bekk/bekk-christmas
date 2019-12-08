@@ -7,10 +7,14 @@ ingress: >-
   I like TypeScript. I also like Magic the Gathering. What if we combine them;
   can the magical domain of planeswalkers and spells help us understand the
   awesome but advanced type system of TypeScript?
+links:
+  - title: Awesome TypeScript GitHub repo
+    url: 'https://github.com/dzharii/awesome-typescript'
+authors: []
 ---
-GHLet's give it a shot! Starting with the basics, we will gradually introduce the various features of the TS type system, using Magic cards as examples.
+Let's give it a shot! Starting with the basics, we will gradually introduce the various features of the TS type system, using Magic cards as examples.
 
-The rules for MtG are out of scope for this article, but if you're interested you can check out [MtG Arena](https://magic.wizards.com/en/mtgarena), a free online game for PC where you can learn the game and play against other people.
+The complete rules for MtG are out of scope for this article, but if you're interested you can check out [MtG Arena](https://magic.wizards.com/en/mtgarena), a free online game for PC where you can learn the game and play against other people.
 
 ## Type Inference
 
@@ -40,23 +44,31 @@ Here we have added the interfaces `Spell` to require a `manaCost`, `Creature` wi
 
 Now, in newer versions of TypeScript, types and interfaces are pretty much interchangeable. So what are the real differences between types and interfaces, and when do you want to use one over the other?
 
+- - -
+
 ![Example of declaration merging](/assets/mtg-code4.png)
 
 1. Interfaces support [declaration merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html), types do not. Here we can see we declare `Creature` twice, with no errors, because the declarations do not conflict.
+
+- - -
 
 ![Example of keyof operator](/assets/mtg-code5.png)
 
 2. Results of the `typeof` and `keyof` operators can only be stored as types, not interfaces. Here we see using `keyof Creature`, which gives us a new type that is the [discriminated union](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) of [string literals](https://www.typescriptlang.org/docs/handbook/advanced-types.html#string-literal-types) for the properties `power`, `toughness` and `manaCost`; i.e. variables of the `CreatureProperties` type can only be either one of those strings.
 
+- - -
+
 ![Types vs interfaces](/assets/mtg-code3.png)
 
 3. Types have generally shorter syntax.
 
+- - -
+
 There might be other edge case differences as well, but these are the ones you'll most likely notice. So which one do we use when? I use the following rules of thumb:
 
 * Use `interface` when creating a reusable library. This makes it easier for consumers to merge declarations in case they need to expand the interface without inheriting it.
-* Use `type` when combining other types. I find the syntax is both shorter and more readable.
-* Otherwise, use whatever feels nice :)
+* Use `type` when combining other types. I find the syntax is both shorter and more readable, and in some cases like `typeof` and `keyof`, only types can be used.
+* Otherwise, use whatever feels right. I usually use interfaces, but types are okay too :)
 
 ## Union types and Generics
 
@@ -83,3 +95,31 @@ One issue with the `Instant` type is that the `target` could be anything. But in
 Now `Instant` takes in a generic parameter. This can be any type, as long as it is a `Card`. The default value is `Card`.
 
 Now we can define `murder` as an `Instant<Creature>` card, which means that its `applyToTarget` function will interpret the `target` as a `Creature`.
+
+## Mapped types and conditional types
+
+Sometimes we have types that are very similar, but not quite the same. For example, in MtG, a **Creature Token** is a card that is exactly like a **Creature**, except it does not have a **mana cost** and can only exist on the battlefield, not in your hand.
+
+![Centaur creature token](/assets/mtg-centaur.jpg)
+
+To model a **Creature Token** in TS, we will use a built-in [mapped type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types) `Omit`, with the implementation included here for reference (from [lib.es5.d.ts](https://github.com/microsoft/TypeScript/blob/master/lib/lib.es5.d.ts)):
+
+![Implementation of Omit type](/assets/mtg-code8.png)
+
+`Pick` is a [mapped type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types) that allows specifying a type and a number of properties, and gives a new type containing only those properties.
+
+`Exclude` is a [conditional type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#conditional-types) that in this case removes the properties we want to omit, so `Omit` becomes a form of "reverse" `Pick`.
+
+Now we can define our `CreatureToken` type:
+
+![CreatureToken using Omit](/assets/mtg-code9.png)
+
+As we can see, we no longer need to (or may) include `manaCost` for our `centaur`.
+
+Mapped types and conditional types are really powerful, but can be quite hard to grasp. For a more in-depth look, I recommend the articles [Mapped Types in TypeScript](https://mariusschulz.com/blog/mapped-types-in-typescript) and [Conditional Types in TypeScript](https://mariusschulz.com/blog/conditional-types-in-typescript) by Marius Schulz, as well as the official TypeScript docs linked to above.
+
+## Conclusion
+
+We have explored the wonderful world of TypeScript types, covering type inference, the difference between types and interfaces, union types and intersection types, generics, mapped types and conditional types.
+
+If you are interested in learning more, I would recommend checking out the [Awesome TypeScript GitHub repo](https://github.com/dzharii/awesome-typescript) for lots of curated resources to get you started!
