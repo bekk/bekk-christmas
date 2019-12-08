@@ -3,6 +3,7 @@ calendar: functional
 post_year: 2019
 post_day: 18
 title: That one time I thought I understood recursion
+image: 'https://underskaar.com/images/csharpman0.png'
 ingress: >-
   A short tale about my struggle to comprehend why C# isn't a functional
   language.
