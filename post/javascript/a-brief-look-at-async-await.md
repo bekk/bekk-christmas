@@ -84,7 +84,7 @@ async function waitAndCheck() {
   try {
     for (let i = 0; i < 6; i++) {
       const status = await check();
-      if (status {
+      if (status) {
         // set state to finished
       }
     }
