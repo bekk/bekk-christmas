@@ -28,7 +28,7 @@ The initial value for `hyphen` is _manual_. When it is used we have to give the 
 This is the hard hyphen. It indicates a line break opportunity for the browser, but it will always render, even though the line is not broken. To insert it into our HTML, we can use `&hyphen;`, but it will have the same effect as hitting _dash_ on your keyboard. 
 
 ### U+00AD SHY
-The second option is the soft hyphen. It is not rendered visibly, but instead marks where the browser may hyphenate a word not fitting its container.  Use `$shy;`  in HTML, to insert a soft hyphen.
+The second option is the soft hyphen. It is not rendered visibly, but instead marks where the browser may hyphenate a word not fitting its container.  Use `&shy;`  in HTML, to insert a soft hyphen.
 
 <iframe height="326" style="width: 100%;" scrolling="no" title="hyphen: manual" src="https://codepen.io/espehel/embed/povJZqv?height=326&theme-id=default&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 See the Pen <a href='https://codepen.io/espehel/pen/povJZqv'>hyphen: manual</a> by Espen Hellerud
