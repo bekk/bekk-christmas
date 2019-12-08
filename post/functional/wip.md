@@ -83,6 +83,8 @@ primes n = take n $ sieve [2..]
 
 Not only is it _much_ shorter, it also applies a combination of recursion and lazy partial execution of the function. This led me to understand how little I had understood.
 
+![My head exploded](https://underskaar.com/images/csharpman1.png)
+
 Now, it is conceivable that this is the [canonical solution to this particular problem](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), but still my head exploded.
 
 Is this at all possible to achieve in C#?
@@ -146,3 +148,7 @@ No, I don’t think it is possible to solve this way in C#.
 In about 50 lines the snippet achieves almost but not quite what Haskell could do in seven. I just took a massive code golf defeat.
 
 I think I have learned something new today.
+
+![I tip my hat to Haskell](https://underskaar.com/images/csharpman2.png)
+
+The struggle continues.
