@@ -21,8 +21,11 @@ links:
 authors:
   - Espen Hellerud
 ---
-A hyphen (`-`) is a punctuation mark used to join words or separate syllables within a word. The latter comes in handy when a word is just too long, and we need to break it into smaller pieces.
-When working with CSS we can use the property `hyphen` to specify how words should be hyphenated when they are too long for its parent container. To specify the wanted behaviour of `hyphen`, there are three different keywords we can use as values.
+A hyphen (`-`) is a punctuation mark used to join words or separate syllables within a word. The latter comes in handy when a word is just too long, and we need to break it into smaller pieces. In CSS, we control it with the property [hyphens](<https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens>).
+
+```hypen: manual | auto | none;```
+
+_Hyphens_ has three possible values _manual_, _auto_ and _none_, that specify how words should be hyphenated when they are too long for its parent container. 
 
 ## Manual
 The initial value for `hyphen` is _manual_. When it is used we have to give the browser suggestions about where a word may be able to break. If we do not give any suggestions, a word to long for the box will overflow. By using special unicode characters inside a word, we can suggest line break opportunities for the browser. We have two line break characters. 
