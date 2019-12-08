@@ -16,6 +16,8 @@ links:
     url: 'https://www.sessionlab.com/library/energiser'
   - title: Hyper Island Toolbox
     url: 'https://toolbox.hyperisland.com/'
+authors:
+  - Therese Drivenes
 ---
 Det finnes en rekke ulike oppvarmingsøvelser der ute som kan benyttes i workshops, avhengig av hva som er hensikten. Men det er ikke alltid like lett å velge. Jeg vil gjerne dele noen av øvelsene vi har testet ut i faggruppen “Kreativ problemløsning”, og som jeg har prøvd ut på prosjekter. Kanskje det kan hjelpe deg å velge den øvelsen som passer best til din neste workshop?
 
