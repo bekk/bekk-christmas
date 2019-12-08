@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 10
 title: Neural Networks
 image: >-
-  https://images.unsplash.com/photo-1549925245-f20a1bac6454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
+  https://images.unsplash.com/photo-1530973428-5bf2db2e4d71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
   If you have paid any attention to the artificial intelligence community the
   latest years, you’re bound to have heard of neural networks. These kinds of
