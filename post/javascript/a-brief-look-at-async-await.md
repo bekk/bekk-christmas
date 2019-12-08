@@ -62,9 +62,9 @@ const someFunction = function() {
 The ```await``` keyword can't be used at top level code or in functions without ```async```. Additionally, the ```await``` keyword before a promise makes the code feel and act synchronously. Together ```async``` and ```await``` provide a great framework to write asynchronous code that is easy to understand. 
 
 ### Case
-Let's say you have an HTTP GET that returns true or false. The user has to wait for this GET to return true. However, we don't want to keep the user waiting longer than 30 seconds, and the API does not allow more than one API call every 5 seconds. If we get a timeout or the API call returns an error, we want to redirect the user to an error page.
+Let's say; you are creating a webpage that allows users to sign documents. However, the documents need to be ready before the user can sign them. The webpage calls an endpoint that returns the current status of the document. Either true or false. If the API doesn't return true within 30 seconds after loading the webpage, the user should be redirected to an error page.
 
-How would you solve this using ```async-await```? The first thing we need is a function that calls the HTTP GET:
+How would you solve this using ```async-await```? The first thing we need is a function that calls the API:
 
 ```js
 function check() {
@@ -77,7 +77,7 @@ function check() {
 
 ```
 
-This function waits 5 seconds before calling the API. Implementing the requirement (as long as you wait until the promise is settled) about not calling the API more than every 5 seconds. Let's move on to the async function:
+This function waits 5 seconds before calling the API. Let's move on to the async function:
 
 ```js
 async function waitAndCheck() {
@@ -95,7 +95,7 @@ async function waitAndCheck() {
 }
 
 ```
-By making this function async, we solve every requirement. The function ```waitAndCheck``` will only call the ```check``` function 6 times and will not execute longer than 30 seconds. This case could have been solved several ways, for example, we could chain ```check()``` like this:
+By making this function async, we solve the problem. The function ```waitAndCheck``` will only call the ```check``` function 6 times and will not execute longer than 30 seconds. This case could have been solved several ways, for example, we could chain ```check()``` like this:
 
 ```js
 function chain() {
