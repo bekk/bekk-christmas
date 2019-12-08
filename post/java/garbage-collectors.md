@@ -106,6 +106,8 @@ As an alternative to compacting the memory in place is to use seperate region an
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-copied-dark.png" alt="Image of S0/S1 after copying"/>
 </p>
 
+Mark-and-copy is similar to mark-compact in that it also reallocates all living objects. The advantage of mark-and-copy is that since all objects are moved to a new region it is able to copying objects simultaneously with the marking phase, though at the expense of an extra memory region.
+
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 - https://plumbr.io/handbook/garbage-collection-algorithms
 - mark
