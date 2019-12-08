@@ -47,7 +47,10 @@ This process of promoting objects through different spaces is known as generatio
 **WHY DOES IT MATTER, LATENCY VS THROUGHPUT ETC** 
 
 ## Phases in a GC cycles
-After this short introduction to Java's memory model it is time to take a closer look at what is going during a GC cycle. In any GC algorithm the first thing that needs to happen is the **marking** phase. During this phase the algorithm looks at the heap space in question and tries to figure out which objects it can remove. 
+After this short introduction to Java's memory model it is time to take a closer look at what is going during a GC cycle. 
+
+### Marking
+In any GC algorithm the first thing that needs to happen is the **marking** phase. During this phase the algorithm looks at the heap space in question and tries to figure out which objects it can remove. 
 
 <p>
 <b>Before marking:</b>
@@ -68,6 +71,26 @@ Marking objects as ready to be garbage collected (dead objects) can be achieved 
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-dark.png" alt="Example of mark-phase"/>
 </p>
 By starting at what is referred to as **GC Roots** and following all references it finds, it is able to correctly mark all objects that are reachable. Unreachable objects are then marked as dead objects and can be garbage collected. What is considered a GC root may vary, but include; local variables and input arguments for any currently executing methods, active threads, static fields of loaded classes and several more. For example when running a minor GC (remember, just the young space), then every reference from tenured space into young space is considered a GC root. 
+
+### Sweeping
+After marking all objects that can be removed from memory the GC moves on to actually freeing up the space. One approach would be to just free up all space occupied by dead objects.
+
+<p>
+<b>Before sweep:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-light.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-dark.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
+<b>After sweep:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-light.png" alt="Image of heap after marked sections are freed"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-dark.png" alt="Image of heap after marked sections are freed"/>
+</p>
+
+While this does free up space, but you run the risk of encountering a `OutOfMemoryError` later on if you try to allocate memory larger then any of the given free regions. To solve this one might turn to **compacting**;
+<p>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-compact-light.png" alt="Image of heap after marked sections are freed"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-after-compact-dark.png" alt="Image of heap after marked sections are freed"/>
+</p>
+
+Compacting, moves all object to the start of the memory region, and thus allows larger allocations to happen in the future. The downside of course is that the GC time increases as nothing is free in this world.
 
 
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
