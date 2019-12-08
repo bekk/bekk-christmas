@@ -26,8 +26,7 @@ Behavioural Economics has some interesting insights to offer for us designers ar
 
 > _The study of psychology as it relates to the economic decision-making processes of individuals and institutions (investopedia)._
 
-![drawing of me](https://i.ibb.co/Btmgnd7/thomas.gif)
-
+![drawingofme](https://i.ibb.co/BGs8vdy/thomas2.gif)
 _Me! No! Yes! No? No. I wish._
 
 ## Homo Economicus:
