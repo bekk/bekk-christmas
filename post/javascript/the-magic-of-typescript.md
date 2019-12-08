@@ -8,7 +8,7 @@ ingress: >-
   can the magical domain of planeswalkers and spells help us understand the
   awesome but advanced type system of TypeScript?
 ---
-Let's give it a shot! Starting with the basics, we will gradually introduce the various features of the TS type system, using Magic cards as examples.
+GHLet's give it a shot! Starting with the basics, we will gradually introduce the various features of the TS type system, using Magic cards as examples.
 
 The rules for MtG are out of scope for this article, but if you're interested you can check out [MtG Arena](https://magic.wizards.com/en/mtgarena), a free online game for PC where you can learn the game and play against other people.
 
@@ -58,10 +58,28 @@ There might be other edge case differences as well, but these are the ones you'l
 * Use `type` when combining other types. I find the syntax is both shorter and more readable.
 * Otherwise, use whatever feels nice :)
 
-## Generics
+## Union types and Generics
 
 Now, there are several other card types in Magic than Creature. Here are a few:
 
 ![Forest MtG card](/assets/mtg-forest.jpg)
 
-This
+This **Forest** is a **Land** card. This means you don't need **Mana** to play it, but you can only play one **Land** each turn. Also, lands can be **tapped** for **Mana**, similar to **Llanowar Elves**.
+
+![Murder MtG Card](/assets/mtg-murder.jpg)
+
+**Murder** is an **Instant**, which means it can be played at any time, as long as you have the **Mana** to pay for it. This specific card can be used to destroy any card that is a **Creature**.
+
+So, how would we go about modelling different types of cards? Let's start by using `|`, the [union type operator](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types), to define all possible types of a card:
+
+![Example of union types](/assets/mtg-code6.png)
+
+As we can see, `Land` is `Tappable` and also has a `color`, while `Instant` is a `Spell` and has a `applyToTarget` function. And the `Card` type can be either one of these, so if a function takes in a `Card`, you have to use [type guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types) to differentiate between the type of cards.
+
+One issue with the `Instant` type is that the `target` could be anything. But in the case of **Murder**, only **creatures** are valid targets. We can use [generics](https://www.typescriptlang.org/docs/handbook/generics.html) to enforce this, let's modify our `Instant` interface declaration:
+
+![Generic implementation of Instant](/assets/mtg-code7.png)
+
+Now `Instant` takes in a generic parameter. This can be any type, as long as it is a `Card`. The default value is `Card`.
+
+Now we can define `murder` as an `Instant<Creature>` card, which means that its `applyToTarget` function will interpret the `target` as a `Creature`.
