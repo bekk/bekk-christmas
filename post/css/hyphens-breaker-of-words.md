@@ -5,9 +5,12 @@ post_day: 9
 title: Hyphens - Breaker of Words
 image: 'https://images.unsplash.com/photo-1485390027107-13d46287ba07'
 ingress: >-
+  ```hypen: manual | auto | none;```
+
   How words are broken when lines overflow their containers is not always
-  trivial and can cause many a headaches. Hyphens is a CSS property used to help
-  with this, but how does it actually work and what can it do for us?
+  trivial and can cause many a headaches. One CSS property to help with this is
+  [Hyphens](<https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens>) , and
+  its three possible values _manual_, _auto_ and _none_.
 links:
   - title: MDN - hyphens
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens'
@@ -57,7 +60,8 @@ If you are still not happy with how the browsers hyphenates your words, there is
 ### Setting minimum length before and after an hyphen
 `hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of characters a word can have before the hyphenation. The third and finale value limits amount of characters after the hyphen. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
 ```
-/* Only hyphenate words with >= 6 characters, leave at least 3 characters before the hyphen and at least 2 after it */
+/* Only hyphenate words with >= 6 characters,
+ leave at least 3 characters before the hyphen and at least 2 after it */
 hyphenate-limit-chars: 6 3 2;
 ```
 
@@ -74,3 +78,7 @@ hyphenate-limit-lines: 2;
 /* No hyphenation on the last line of each page, column or paragraph. */
 hyphenate-limit-last: always;
 ```
+
+## Breaking Free
+Hyphens is pretty simple to use when you combine _auto_ with a language to enhance your browsers hyphenation. If you also try to master it with the extra properties and line break characters, there's not a star in heaven  
+that you can't [reach]([https://www.youtube.com/watch?v=0qj67KE5VXI](https://www.youtube.com/watch?v=0qj67KE5VXI)).
