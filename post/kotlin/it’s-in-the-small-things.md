@@ -68,3 +68,17 @@ import java.util.Objects;public class ChristmasTree {
             '}';
     }}
 ```
+
+
+
+It is possible to use third party libraries, and all good IDEs  can generate much of the boilerplate code. Still I prefer to not have the extra lines of code, and if you are going to add or remove fields you still have to regenerate constructors, getters/setters and equals()/hashcode() methods.
+
+
+
+## Kotlins Data classes
+
+With Data classes the same DTO as above suddenly only becomes:
+
+```
+ data class ChristmasTree(val height: Number, val radius: Number, val price: Number )
+```
