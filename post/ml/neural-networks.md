@@ -35,7 +35,7 @@ These neural networks are trained to do specific tasks. If we want our network t
 
 In order to reach near-human performance, the network needs to be presented with a lot of labelled pictures of cats and dogs. Each time the network makes a wrong prediction, the neurons are modified slightly. After a lot of modifications, the neurons are able to work together to identify whether or not the given image is of a cat or dog. 
 
-In reality, these networks are so powerful they can actually be used for more complicated tasks then differentiating between cats and dogs. Artificial Neural Networks have pushed the boundaries of pretty much every sub-field within machine learning, from self-driven cars, voice assistants, automatic video-game playing - heck, perhaps this article was recommended to you based on predictions from a neural network. 
+These networks can be used for much more complicated tasks than differentiating between cats and dogs. Artificial Neural Networks have pushed the boundaries of pretty much every sub-field within machine learning, from self-driven cars, voice assistants, automatic video-game playing - heck, perhaps this article was recommended to you based on predictions from a neural network. 
 
 I hope this gave you a quick introduction to neural networks. By itself, each neuron is not very complicated. But stacking them together really proves how the whole can be greater than the sum of its parts. If you want to delve further into the world of artificial neural networks along with practical knowledge of how to implement them, I recommend [this Coursera course](https://www.coursera.org/learn/neural-networks-deep-learning) by Andrew Ng.
 
