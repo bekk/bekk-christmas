@@ -29,7 +29,7 @@ The ZAP team has come up with a great solution for this, the Heads-Up Display. L
 
 ![](/assets/zap-hud-welcome.jpeg)
 
-When ZAP is set up, the traffic from your browser (or some other client setup to proxy through ZAP) will pass through ZAP. HTTP requests and responses can be intercepted, modified or just inspected. As the tester is clicks through the application, ZAP will log the request and responses.
+When ZAP is set up, the traffic from your browser (or some other client setup to proxy through ZAP) will pass through ZAP. HTTP requests and responses can be intercepted, modified or just inspected. As the tester is clicks through the application, ZAP will log the request and responses.
 
 When doing a black box test, testing an application without too much prior knowledge of inner workings, trying to get an understanding of the various features and API’s used. This can be done by clicking around like a normal user of the application. After some time one can check the requests and responses in ZAP. All this is done through the dedicated graphical user interface. As a side note, ZAP can be run in headless mode, but we will not cover this here.
 
@@ -39,7 +39,7 @@ This process of switching back and forth can be a bit confusing. If available a 
 
 The ZAP team has come up with a great solution for this, the Heads-Up Display. Like a fighter pilot, required tools and information is available from within the browser. Since ZAP can process requests and responses it actually makes sense that it would be possible to inject widgets, as an overlay to the web pages inside the browser.
 
-The overlay that ZAP provides has three main areas; to the left there are buttons to add or remove pages from the attack scope. There are also indicators for security issues on the current page. These are grouped by severity, ranging from high, medium, low and finally info. By clicking any of these you can get information about that specific warning, without leaving the application. By right clicking, you can remove unneeded widgets. A nice trick is the light bulb which enables displaying hidden form fields – which can be useful when trying to understand how a given application works.
+The overlay that ZAP provides has three main areas; to the left there are buttons to add or remove pages from the attack scope. There are also indicators for security issues on the current page. These are grouped by severity, ranging from high, medium, low and finally info. By clicking any of these you can get information about that specific warning, without leaving the application. By right clicking, you can remove unneeded widgets. A nice trick is the light bulb which enables displaying hidden form fields – which can be useful when trying to understand how a given application works.
 
 By clicking the green button, it is possible to intercept requests, in the browser, before it is sent to the server. The requests can even be modified before sending them.
 
@@ -49,4 +49,4 @@ On the lower bottom page, the history and web sockets tab that it familiar from 
 
 Finally, on the lower right hand, you can enable or disable the HUD, and reset the configuration to default.
 
-The ZAP HUD is a great way to explore web applications during both development and security assessments. It becomes intuitive to use the various features provided by the overlay directly from the browser.
+The ZAP HUD is a great way to explore web applications during both development and security assessments. It becomes intuitive to use the various features provided by the overlay directly from the browser. Remember that you need permission before attacking any site.
