@@ -42,11 +42,30 @@ The Java heap is divided into three separate areas as shown below;
 
 Eden space is the part where newly created objects are places, so whenever you create an `new` object it is places in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold (ex. survived 8 garbage collections) it is promoted to tenured space.
 
-This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. It also is the reason why we talk about minor and major garbage collection. Typically minor GC works on the young space, which is the combination of eden space and survivor space. While major GC does it work in the tenured space. 
+This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. It also is the reason why we talk about minor and major garbage collection. Typically minor GC works on the young space, which is the combination of eden space and survivor space. While major GC does its work in the tenured space. 
 
 **WHY DOES IT MATTER, LATENCY VS THROUGHPUT ETC** 
 
-## Phases in a cycle
+## Phases in a GC cycles
+After this short introduction to Java's memory model it is time to take a closer look at what is going during a GC cycle. In any GC algorithm the first thing that needs to happen is the **marking** phase. During this phase the algorithm looks at the heap space in question and tries to figure out which objects it can remove. 
+
+<p>
+<b>Before marking:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-before-light.png" alt="Image of partially full heap"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-before-dark.png" alt="Image of partially full heap"/>
+</p>
+
+<p>
+<b>After marking:</b>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-light.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-marked-dark.png" alt="Image of partially full heap with sections marked as ready to be garbage collected"/>
+</p>
+
+Marking objects as ready to be garbage collected (dead objects) can be achieved in several ways. The simplest to reason about is the well-known reference-counter approach; where each object keeps track of how many references to it are floating around. Whenever a reference is removed, the referenced object decrements its reference-counter, and when it reaches zero it can be marked as dead. This approach does however have some limitations when it comes to cyclic references, and is not used by any garbage collector in Java. Instead the Java GC algorithms uses graph traversal algorithms to find which objects it can reach. 
+
+
+
+
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 - https://plumbr.io/handbook/garbage-collection-algorithms
 - mark
