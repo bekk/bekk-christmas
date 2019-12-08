@@ -50,7 +50,7 @@ These are any resources which is needed by your service, and typically what your
 
 ## What does this look like in practice?
 
-Below is an example of a *service* defined in a file called `serverless.yml`. The service is an API which you can use to create new christmas wishes, and return a list of all your wishes.
+Below is an example of a service defined in a file called `serverless.yml`. The service is an API which you can use to create new christmas wishes, and return a list of all your wishes.
 
 ```yaml
 service: wishlist
@@ -192,7 +192,7 @@ With just a small yaml file, two functions and some shell commands, you suddenly
 
 # What's next?
 
-This was only a simple example of what Serverless Framework is capable of, and this only scratches the surface on what the framework can do for you when developing serverless applications. In addition to create more complex applications, the framework can be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. Serverless Framework also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
+This was only a simple example of what Serverless Framework can do for you when developing serverless applications. In addition to create more complex applications, the framework can be used to test your functions locally or trigger them directly in the cloud, and you can use the framework for accessing logs and other metrics. Serverless Framework also comes with a [Dashboard](https://serverless.com/dashboard/) which gives you a "A unified view of your Serverless applications, featuring monitoring, alerting, deployments & much more". 
 
 All in all, Serverless Framework is a nice alternative to use for developing serverless applications. It supports multiple cloud providers (although the support is limited on some of them) and comes with lots of [plugins](https://serverless.com/plugins/) to help you speed up your development. It has some limitations, and `yaml` can be frustrating to debug some times, but I will absolutely recommend you to try it out if you're interested in developing serverless applications!
 
