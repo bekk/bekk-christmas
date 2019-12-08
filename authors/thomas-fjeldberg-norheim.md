@@ -1,6 +1,6 @@
 ---
-title: Thomas Fjeldberg-Norheim
-socialMediaLink: thomas.norheim@bekk.no
+title: Thomas B Fjeldberg-Norheim
+socialMediaLink: 'https://medium.com/@tbnorheim'
 company: Bekk
 ---
 
