@@ -24,8 +24,6 @@ links:
 authors:
   - Nicklas Utgaard
 ---
-- https://howtodoinjava.com/java/garbage-collection/all-garbage-collection-algorithms/
-
 Garbage collection is the mechanism used in Java to free up unused memory. In order to achieve this it keeps track of all objects and determines which ones that safely can be removed from the heap, thus freeing up that precious memory. 
 
 When a Java process launches it allocates memory for the heap, metaspace (PermGen successor), JIT codecache, thread stacks, and shared libraries depending on how much memory is available to the process. Though the metaspace and codecache also have garbage collection we're going to focus on the Java heap. 
@@ -37,14 +35,9 @@ The Java heap is divided into three separate areas as shown below;
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/heap-dark.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
 </p>
 
-- https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag
-- https://stackoverflow.com/questions/2129044/java-heap-terminology-young-old-and-permanent-generations
-
 Eden space is the part where newly created objects are places, so whenever you create an `new` object it is places in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold (ex. survived 8 garbage collections) it is promoted to tenured space.
 
 This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. It also is the reason why we talk about minor and major garbage collection. Typically minor GC works on the young space, which is the combination of eden space and survivor space. While major GC does its work in the tenured space. 
-
-**WHY DOES IT MATTER, LATENCY VS THROUGHPUT ETC** 
 
 ## Phases in a GC cycles
 After this short introduction to Java's memory model it is time to take a closer look at what is going during a GC cycle. 
@@ -107,13 +100,6 @@ As an alternative to compacting the memory in place is to use seperate region an
 </p>
 
 Mark-and-copy is similar to mark-compact in that it also reallocates all living objects. The advantage of mark-and-copy is that since all objects are moved to a new region it is able to copying objects simultaneously with the marking phase, though at the expense of an extra memory region.
-
-- https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
-- https://plumbr.io/handbook/garbage-collection-algorithms
-- mark
-- sweep
-- copy
-- compacting
 
 ## GC Algoritms
 We finally arrive to the point where we can talk about the different GC algorithms.
