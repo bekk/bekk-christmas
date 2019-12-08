@@ -115,7 +115,23 @@ Mark-and-copy is similar to mark-compact in that it also reallocates all living 
 - copy
 - compacting
 
-## Algoritms
+## GC Algoritms
+We finally arrive to the point where we can talk about the different GC algorithms.
+
+### Serial GC
+`Serial-GC` uses the mark-copy approach for the young space, and mark-sweep-compact for tenured space. As the name somewhat implies it is a single threaded collector relying on **stop-the-world** (all application threads stopped) pauses to get its work done. As a result it is best suited for environments where you have a small heap size (<200Mb), and single CPU core available. Enable it by passing: `-XX:+UseSerialGC` when starting the Java process.
+
+### Parallel GC 
+`Parallel-GC` (also known as *throughput collector*) is very similar til `serial-gc`, but uses multiple thread during marking, compacting and copying. In Java 8 this was default algorithm for the server-class machines, while client-class machines used `serial-gc`. A computer is considered server-class if it has 2+ physical processors and 2+GB of physical memory.
+Enable it by passing: `-XX:+UseParallelGC -XX:+UseParallelOldGC` to use it in young space and tenured space, or `-XX:+UseParNewGC -XX:+UseConcMarkSweepGC` to only use it in young space (CMS in tenured space). 
+
+### Concurrent Mark and Sweep (CMS)
+This is the first GC algorithm which doesn't rely on stop-the-world pauses for all its work, hence the *concurrent* part. It uses standard parallel mark-copy for the young space, and concurrent mark-sweep in tenured space. The goal of this algorithm is to minimize the pauses due to garbage collection, and does this by running part of the cycle concurrently with the application threads. Enable it by passing: `-XX:+UseConcMarkSweepGC`, it is however deprecated in Java 9 and scheduled to be removed in Java 14.
+
+### G1GC
+### ZGC
+### Shenandoah GC
+ 
 Descibing a algorithm; concurrent, incremental, parallel, stop-the-world
 
 - serial
@@ -133,3 +149,4 @@ Descibing a algorithm; concurrent, incremental, parallel, stop-the-world
   - Low-latency, concurrent, region-based, compacting
   - https://wiki.openjdk.java.net/display/shenandoah/Main#Main-Heuristics
 
+## But why care?
