@@ -13,6 +13,8 @@ links:
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens'
   - title: All you need to know about hyphenation in CSS
     url: 'http://clagnut.com/blog/2395'
+  - title: WebPlatform - CSS
+    url: 'https://webplatform.github.io/docs/css/'
 authors:
   - Espen Hellerud
 ---
@@ -50,13 +52,26 @@ See the Pen <a href='https://codepen.io/espehel/pen/gObpdKY'>hyphen: auto</a> by
 </iframe>
 
 ## Snacks
-If you are not happy with how the browsers hyphenates your words, there is some extras snack available. Here are four CSS properties introduced in CSS Text Module Level 4, that gives us almost an inDesign level of control.
+If you are still not happy with how the browsers hyphenates your words, there is some extras snacks available. Here are four CSS properties introduced in CSS Text Module Level 4, that gives us almost an inDesign level of control.
 
 ### Setting minimum length before and after an hyphen
 `hyphenate-limit-chars` takes three values. The first sets the minimum length of a word that can be hyphenated. The second is the minimum amount of characters a word can have before the hyphenation. The third and finale value limits amount of characters after the hyphen. This can help in the case of the browser hyphenating short words in a manner which makes them hard to read.
+```
+/* Only hyphenate words with >= 6 characters,
+   leave at least 3 characters before the hyphen and at least 2 after it */
+hyphenate-limit-chars: 6 3 2;
+```
 
 ### Limiting consecutive hyphenated lines 
 `hyphenate-limit-lines` limits how many consecutive lines that the browser can hyphenate. If three or more consecutive lines are hyphenated, it forms what is called a _ladder_. In some languages, e.g. English, it is common to avoid ladders because of aesthetic reasons.
+```
+/* Do not allow more than 2 successive hyphenated lines */
+hyphenate-limit-lines: 2;
+```
 
 ### Avoid hyphenating the last line
 `hyphenate-limit-last` can be given the value `always` to make the browser never hyphenate the last line. This is to avoid having a part of the word sitting alone on the last line.
+```
+/* No hyphenation on the last line of each page, column or paragraph. */
+hyphenate-limit-last: always;
+```
