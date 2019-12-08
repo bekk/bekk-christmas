@@ -15,7 +15,7 @@ authors:
 ---
 Neural networks are computer algorithms that are loosely modelled after the human brain. Our brain can do what it can because of interconnected _neurons_. Simply put, neurons are entities that receive information through a set of synapses, performs some sort of calculation, before it passes the result to other neurons through its outgoing synapses.
 
-![](/assets/ml_10_pic1.png)
+![](https://i.ibb.co/9tgycJ6/1-e-BMwp-BBbo-AXgqsaww-OKk-Pw.png)
 
 Artificial Neural Networks are computationally created algorithms that try to mimic this behaviour. As neurons are fundamental in our brain, artificial neurons are central in artificial neural networks. They work the same way; each neuron receives a set of input signals, combines them in some way, and passes the information along. The real power of artificial neural networks emerges when you connect layers of neurons together to form a network.
 
