@@ -88,6 +88,8 @@ Not only is it _much_ shorter, it also applies a combination of recursion and la
 
 ![My head exploded](https://underskaar.com/images/csharpman1.png)
 
+<img src="https://underskaar.com/images/csharpman1.png" alt="My head exploded" width="400px" />
+
 Now, it is conceivable that this is the [canonical solution to this particular problem](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), but still my head exploded.
 
 Is this at all possible to achieve in C#?
