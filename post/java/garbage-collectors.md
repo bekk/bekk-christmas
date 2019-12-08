@@ -136,6 +136,8 @@ This is the first GC algorithm which doesn't rely on stop-the-world pauses for a
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-dark.png" alt="Heap regions"/>
 </p>
 
+`G1GC` was first introduced in Java 7 as an experimental GC, and made the default GC in Java 9. 
+
 ### ZGC
 
 ### Shenandoah GC
