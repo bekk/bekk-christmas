@@ -70,6 +70,7 @@ Marking objects as ready to be garbage collected (dead objects) can be achieved 
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-light.png" alt="Example of mark-phase"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-dark.png" alt="Example of mark-phase"/>
 </p>
+
 By starting at what is referred to as **GC Roots** and following all references it finds, it is able to correctly mark all objects that are reachable. Unreachable objects are then marked as dead objects and can be garbage collected. What is considered a GC root may vary, but include; local variables and input arguments for any currently executing methods, active threads, static fields of loaded classes and several more. For example when running a minor GC (remember, just the young space), then every reference from tenured space into young space is considered a GC root. 
 
 ### Sweeping
