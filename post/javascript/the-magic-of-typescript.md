@@ -10,7 +10,8 @@ ingress: >-
 links:
   - title: Awesome TypeScript GitHub repo
     url: 'https://github.com/dzharii/awesome-typescript'
-authors: []
+authors:
+  - Geir Sagberg
 ---
 Let's give it a shot! Starting with the basics, we will gradually introduce the various features of the TS type system, using Magic cards as examples.
 
