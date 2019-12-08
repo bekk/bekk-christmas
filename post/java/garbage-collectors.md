@@ -131,12 +131,14 @@ This is the first GC algorithm which doesn't rely on stop-the-world pauses for a
 ### G1GC
 `G1GC` (Garbage first GC) is the first region-based GC. Which means that the heap illustration from earlier doesn't really fit anymore.
 <p>
-<b>Region based heap:</b><br />
+<b>Example of heap with multiple regions:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-light.png" alt="Heap regions"/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-grid-dark.png" alt="Heap regions"/>
 </p>
 
-`G1GC` was first introduced in Java 7 as an experimental GC, and made the default GC in Java 9. 
+`G1GC` keep track of the amount of live vs dead objects in each region, and collects garbage in the regions that contains the most garbage. This allows the GC to avoid collecting the entire heap at once, and instead it can select a few regions to collect from (*collection set*). This in turn directly affects pause times needed by the GC, making G1GC very well suited for application where latency is important.
+`G1GC` was first introduced in Java 7 as an experimental GC, and made the default GC in Java 9. Enable it by passing: `-XX:+UseG1GC`.
+
 
 ### ZGC
 
