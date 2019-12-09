@@ -27,6 +27,8 @@ Luckily, with the power of F#, a better way exists.
 
 ![Model-View-Update Arcitechture](https://hjerpbakk.com/img/bekk-christmas/model-view-update.svg)
 
+The Model-View-Update architecture is easy to reason about. It structures applications into three parts and it defines how these interact with each other. There is only this one determined way to handle interactions and manage state –  and it provides a good foundation for modularity, code reuse and testing by default.
+
 Using Fabulous, this is an app in its purest form:
 
 ```fsharp
@@ -149,7 +151,7 @@ Using immutable models, this architecture has a couple of advantages:
 
 - The `init`, `update` and `view` functions can be easily tested in isolation
 - Models can be easily saved and restored
-- Business logic is performed consistently, no need to understand the sum of a host of smaller interdependent changes
+- The `update` function is the only place where your model gets transformed, this structure makes it very easy to reason about state changes and where they are coming from.
 
 And off course, Fabulous supports [Live Update](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/tools.html), enabling you to make and see the effect of these changes in the simulator without redeploying the app.
 
