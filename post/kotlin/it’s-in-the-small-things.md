@@ -4,19 +4,19 @@ post_year: 2019
 post_day: 10
 title: It’s in the small things
 ---
-Kotlin brings with it a lot of good things like Null Safety and full interoperability with Java, but data classes might be one the things you most often notice
+Kotlin brings with it a lot of good things like Null Safety and full interoperability with Java, but data classes might be one the things you most often notice during day to day work.
 
 Most larger applications, especially those consuming or producing REST apis need lots of DTOs (data transfer objects). These are used to represent plaint data objects which is only used to hold data. 
 
-An example of such a class could be:
+In java an example of such a class could be:
 
 ```
 import java.util.Objects;public class ChristmasTree {
     private int height;
     private int radius;
     private int price;public int getHeight() {
-    return height;
-}
+        return height;
+    }
 
     public void setHeight(int height) {
         this.height = height;
@@ -69,15 +69,11 @@ import java.util.Objects;public class ChristmasTree {
     }}
 ```
 
-
-
-It is possible to use third party libraries, and all good IDEs  can generate much of the boilerplate code. Still I prefer to not have the extra lines of code, and if you are going to add or remove fields you still have to regenerate constructors, getters/setters and equals()/hashcode() methods.
-
-
+It is possible to use third party libraries or an IDE to help with reduce the amount of code, or generate most of the boilerplate code. Still I prefer to not have the extra lines of code, and if you are going to add or remove fields you still have to regenerate constructors, getters/setters and equals()/hashcode() methods.
 
 ## Kotlins Data classes
 
-With Data classes the same DTO as above suddenly only becomes:
+Using data classes in Kotlin the same DTO as above suddenly only becomes:
 
 ```
  data class ChristmasTree(val height: Number, val radius: Number, val price: Number )
@@ -85,7 +81,8 @@ With Data classes the same DTO as above suddenly only becomes:
 
 The compiler automatically derives 
 
-* getters and setters for mutable properties and getters for immutable properties. 
+* getters and setters for mutable properties and 
+  getters for immutable properties. 
 * equals()
 * hashCode() 
 * toString() 
