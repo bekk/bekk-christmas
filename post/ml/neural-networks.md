@@ -19,7 +19,7 @@ links:
 authors:
   - Jørgen Wilhelmsen
 ---
-Neural networks are computer algorithms that are loosely modelled after the human brain. Our brain can do what it can because of interconnected _neurons_. Simply put, neurons are entities that receive information through a set of synapses, performs some sort of calculation, before it passes the result to other neurons through its outgoing synapses.
+Neural networks are computer algorithms that are loosely modelled after the human brain. Our brain can do what it can because of interconnected _neurons_. Simply put, neurons are entities that receive information through a set of synapses, performs some sort of calculation, and passes the result to other neurons through its outgoing synapses.
 
 ![](https://i.ibb.co/9tgycJ6/1-e-BMwp-BBbo-AXgqsaww-OKk-Pw.png)
 
