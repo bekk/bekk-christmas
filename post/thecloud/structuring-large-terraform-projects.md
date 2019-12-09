@@ -26,15 +26,8 @@ ingress: >-
 It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters to being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. [Charity Majors](https://twitter.com/mipsytipsy) noted the following back in 2016 about Terraform:
 
 > It is still as green as the motherfucking Shire and you should assume that every change you make could destroy the world.  So your job as a responsible engineer is to add guard rails, build a clear promotion path for validating changesets into production, and limit the scope of the world it is capable of destroying.  This means separate state files.
->
-> \
->
->
->
->
+> 
 > <https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/>
->
->
 
 Though this was written in March 2016, and Terraform has matured a lot since then, the point she makes is still valid, and touch upon some of the nervousness one might feel regarding IaC: As easy as it is to create all your infra in one command, it is equally easy to tear it all down, data and all. Which is why you need to think about what guard rails you have in place to make sure that never happens. One such guard rail is **separate state-files per environment**, enabling you to safely test out infrastructure changes in test environments as well as reducing the total number of resources in the state-file.
 
@@ -42,19 +35,40 @@ Though this was written in March 2016, and Terraform has matured a lot since the
 
 > If you manage the infrastructure for both the VPC component and the web server component in the same set of Terraform configurations, you are unnecessarily putting your entire network topology at risk of breakage (e.g., from a simple typo in the code or someone accidentally running the wrong command) multiple times per day.
 >
-> \
->
->
->
->
 > <https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa>
->
->
 
 He suggests the following structure as a template for a Terraform project:
 
 ```
-stage └ vpc └ services     └ frontend-app     └ backend-app         └ main.tf         └ outputs.tf         └ variables.tf └ data-storage     └ mysql     └ redisprod └ vpc └ services     └ frontend-app     └ backend-app └ data-storage     └ mysql     └ redismgmt └ vpc └ services     └ bastion-host     └ jenkinsglobal └ iam └ s3 Source: 
+# Source https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa
+
+stage
+ └ vpc
+ └ services
+     └ frontend-app
+     └ backend-app
+         └ main.tf
+         └ outputs.tf
+         └ variables.tf
+ └ data-storage
+     └ mysql
+     └ redis
+prod
+ └ vpc
+ └ services
+     └ frontend-app
+     └ backend-app
+ └ data-storage
+     └ mysql
+     └ redis
+mgmt
+ └ vpc
+ └ services
+     └ bastion-host
+     └ jenkins
+global
+ └ iam
+ └ s3
 ```
 
 Notice the additional directories under for example `prod/`. This will in addition to environments, isolate VPC, data stores, web-servers etc from each other. The drawback of such a layout is the increased complexity of operations when using many state-files (as Terraform need to be run in all the different subdirectories), and also the increased duplication of config. At this point, most seem to prefer using a wrapper like [terragrunt](https://github.com/gruntwork-io/terragrunt) or [astro](https://github.com/uber/astro) to ease the pain, while some prefer the [wrapper-less approach](https://www.reddit.com/r/Terraform/comments/afznb2/terraform_without_wrappers_is_awesome/). 
