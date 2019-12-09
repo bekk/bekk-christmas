@@ -64,10 +64,7 @@ provider:
   iamRoleStatements:
     - Effect: "Allow"
       Action:
-        - dynamodb:DescribeTable
-        - dynamodb:Query
         - dynamodb:Scan
-        - dynamodb:GetItem
         - dynamodb:PutItem
       Resource: "arn:aws:dynamodb:eu-central-1:*:*"
 
