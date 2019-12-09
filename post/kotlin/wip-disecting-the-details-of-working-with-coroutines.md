@@ -23,7 +23,7 @@ As we have already learned, the coroutine builder `launch {…}` starts up a cor
 
 ## CoroutineScope 🔭
 
-`GlobalScope` is a `CoroutineScope` which all coroutine builders (like `CoroutineScope.launch`) are an extension of. The scope of a coroutine is often/always?? bound to a `Job` which has a lifecycle, and is cancellable.
+`GlobalScope` is a `CoroutineScope` which all coroutine builders (like `CoroutineScope.launch`) are an extension of. The scope of a coroutine is often bound to a `Job` which has a lifecycle, and is cancellable.
 
 All `CoroutineScope`s should be implemented in components with a lifecycle, meaning that the lifetime of the `CoroutineScope` is limited. We don't want coroutines to run when they don't need to.
 
@@ -50,9 +50,9 @@ class MyActivity : Activity(), CoroutineScope {
 
 All coroutines are started from the `CoroutineScope` and when we cancel the `CoroutineScope`, all coroutines started within this scope is cancelled. So when the user exits the screen in the application and the activity finishes, all coroutines affiliated with this component will cancel.
 
-You may also notice that we don't need to supply the scope when using the coroutine builder `launch {}` here. That is because launch is here an extension on the `Activity` because it implements a `CoroutineScope`.
+You may also notice that we don't need to supply the scope when using the coroutine builder `launch {}` here. That is because launch is here an extension on the `Activity` because it implements a `CoroutineScope`. If we were to run the code above we would crash the instance the `Activity` were told to show UI stuff (`fun showUIStuff()`). Why?🤨 
 
-If we were to run the code above we would crash the instance the `Activity` were told to show UI stuff (`fun showUIStuff()`). Why?🤨 Since all interference with the UI needs to run on the Main thread this will not run and its because its on the wrong `Dispatcher`.  To make the code above runnable there is one small, but very important change we need to make. We need to tell the coroutine we're running to run it on the `Main` `Dispatcher`, like so:
+Since all interference with the UI needs to run on the Main thread this will not run and its because its on the wrong `Dispatcher`.  To make the code above runnable there is one small, but very important change we need to make. We need to tell the coroutine we're running to run it on the `Main` `Dispatcher`, like so:
 
 ```kotlin
 fun showUIStuff() = launch{…} 
