@@ -58,7 +58,7 @@ Azure will then generate a certificate for your domain that is valid for a year 
  
 End-users will then be able to use the custom domain to access your website through the Azure CDN. But what about the backend? The storage account will only serve static assets so you still can’t have a custom domain for your backend. As long as you only need a SPA the backend api can be either a regular Azure website using the free tier or an Azure Function using consumption plan (which is partially free). The backend api will use the regular *.azurewebsites.net address which supports SSL and does not need to be served from the CDN. The end-users will not see the backend url since the api is only used by the javascript in the frontend. You only have to make sure to update the CORS settings for your backend api to accept requests from the custom domain.
  
-## Wrapup
+## Wrap-up
 Using a combination of Azure CDN and an Azure Storage Account as your frontend and an Azure WebSite (or Azure Function) as your backend you can have a virtually free website on Azure that supports SSL encryption and a custom domain. You only need to pay for the storage and network traffic to the storage account, but that likely amounts to pennies a month. The whole infrastructure setup can also relatively easily be automated using ARM-templates.
  
 The only major drawbacks are that the Azure Website free tier backend is limited to 60 CPU minutes a day and that the web app resources on the free tier are shared with other Azure customers. The site won’t support a lot of simultaneous visitors, but for a low traffic website that probably won’t be a problem. You can always pay to scale up the App Service Plan when needed. 
