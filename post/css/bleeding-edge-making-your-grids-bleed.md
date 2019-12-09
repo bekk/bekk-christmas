@@ -1,7 +1,7 @@
 ---
 calendar: css
 post_year: 2019
-post_day: 12
+post_day: 10
 title: Bleeding edge - making your grids bleed
 image: >-
   https://images.unsplash.com/photo-1572470468728-1b2277637d30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
