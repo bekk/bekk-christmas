@@ -66,7 +66,11 @@ Each model has an `update` function for message processing. The messages are eit
 
 ## Fabulous example
 
-The following is a complete example of an app, the source is [available on github]().
+The following is a complete example of an app, the source is [available on github](https://github.com/Sankra/fabulous-xamarin-forms).
+
+<video width="295" height="640" controls>
+  <source src="https://hjerpbakk.com/img/bekk-christmas/app.MP4" type="video/mp4">
+</video>
 
 ```fsharp
 namespace FabulousApp
