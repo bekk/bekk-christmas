@@ -24,10 +24,29 @@ Just add the following dependency to your `pom.xml` if you use Maven:
 <dependency>
     <groupId>org.junit.vintage</groupId>
     <artifactId>junit-vintage-engine</artifactId>
-    <version>${junit5.vintage.version}</version>
+    <version>${junit5.version}</version>
     <scope>test</scope>
 </dependency>
 ```
+
+So far, so good. You should now be able to run your old JUnit 4.x tests with JUnit 5, but you're still not able to write new tests with JUnit 5. Add the following dependencies to your `pom.xml` to be able to use the new features provided with JUnit 5 in your tests:
+
+```
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>${junit5.version}</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>${junit5.version}</version>
+    <scope>test</scope>
+</dependency>
+```
+
+Now you should be ready to get started with JUnit 5. Start by converting some of your old test annotations to the ones provided with JUnit 5.
 
 # Basic annotations
 
@@ -60,3 +79,7 @@ public class MyOtherSpringTest {
 ```
 
 You should have enough to get started with JUnit 5 in your projects. JUnit has an excellent JUnit 5 User Guide that you can use for a more comprehensive introduction to how you can best write your tests with JUnit 5.
+
+If you want more handy JUnit 5 tips, be sure to check out:
+
+* [Useful new features in JUnit 5 @ java.christmas](https://java.christmas/2019/9)
