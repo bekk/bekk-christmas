@@ -1,7 +1,7 @@
 ---
 calendar: thecloud
 post_year: 2019
-post_day: 12
+post_day: 11
 title: Structuring large Terraform projects
 ingress: >-
   At Digipost we are in the progress of building up our new infrastructure on
