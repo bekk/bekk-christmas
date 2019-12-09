@@ -27,7 +27,7 @@ Artificial Neural Networks are computational algorithms that try to mimic this b
 
 ![](https://i.ibb.co/QpbZYC3/ANN1.jpg)
 
-Traditional artificial neural networks are structured in layers. Each neuron combines its input signals and passes it along to the neurons in the next layer. The output of the last layer is the output of the network. The shape and form of this output depends on what you want the network to do. If you want it to recognize cats - a simple digit, signifying a cat or not, would suffice. 
+Traditional artificial neural networks are structured in layers. Each neuron combines its input signals and passes it along to the neurons in the next layer. The output of the last layer is the output of the network. The shape and form of the output depends on what you want the network to do. If you want it to recognize cats - a simple digit, signifying a cat or not, would suffice. 
 
 These neural networks are trained to do specific tasks. If we want our network to tell whether an image depicts a cat or dog, we have to train it to do so. This is done by first feeding an image of a cat or a dog to the network. The network then does its internal computations, before an output is produced. This output is compared with the truth. If the network thinks it was given a picture of a dog when in reality the picture was of a cat, it will alter the behaviour of its neurons slightly in order to make a better prediction of a cat in the future. The network uses an algorithm called _gradient descent_ to modify the behavior of its neurons. The specifics of gradient descent is beyond the scope of this article, but I'll include a link below if you want to learn more. 
 
