@@ -74,3 +74,7 @@ Oh, and you can use emojis in your test display names! 🥳
 You can check out the JUnit 5 User Guide for an example of a homemade DisplayNameGenerator: IndicativeSentences.
 
 Happy testing!
+
+If you want more handy JUnit 5 tips, be sure to check out:
+
+* [Get started with JUnit 5](https://java.christmas/2019/5)
