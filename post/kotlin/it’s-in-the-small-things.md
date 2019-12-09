@@ -100,4 +100,4 @@ val christmasTree = ChristmasTree(200, 100, 500)
 
 ## Summary
 
-Data classes gives us
+Kotlin data classes gives us less and more concise code, and with this more maintainable applications .
