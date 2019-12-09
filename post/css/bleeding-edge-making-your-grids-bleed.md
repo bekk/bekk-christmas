@@ -11,6 +11,8 @@ ingress: >-
 description: >-
   Want to go outside of the confines of your grid? This article shows you how to
   create bleeding edges.
+authors:
+  - Kristofer Giltvedt Selbekk
 ---
 I'm a huge fan of grid layouts. As a developer, I love how easy they make it to achieve good vertical rhythm, a clean element flow and a consistent design across widely different layouts. It is - in other words - the bees knees.
 
