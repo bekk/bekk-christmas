@@ -34,7 +34,7 @@ Autoprefixer is a PostCSS plugin to parse CSS and what it does is that it adds n
 npm install autoprefixer@latest
 ```
 
-Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment ` /* autoprefixer grid: autoplace */` at the top of your CSS file. Another option is switching it on
+Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment ` /* autoprefixer grid: autoplace */` at the top of your CSS file.
 
 To see it in action, test your code with their [online tool](https://autoprefixer.github.io/). 
 
