@@ -37,7 +37,7 @@ Turns out this is now also possible in Azure. In late 2018 Azure announced suppo
 
 When you enable the static website feature on a storage account the website will get an endpoint like: 
 
-  https://<storageaccountname>.z13.web.core.windows.net
+`https://<storageaccountname>.z13.web.core.windows.net`
 
 
 
