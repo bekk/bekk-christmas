@@ -3,6 +3,9 @@ calendar: kotlin
 post_year: 2019
 post_day: 10
 title: It’s in the small things
+links:
+  - title: Data classes
+    url: 'https://kotlinlang.org/docs/reference/data-classes.html'
 ---
 Kotlin brings with it a lot of good things like Null Safety and full interoperability with Java, but data classes might be one the things you most often notice during day to day work.
 
@@ -89,8 +92,12 @@ The compiler automatically derives
 * componentN() 
 * copy() 
 
-Creating new Christmas Trees are done like this:
+Creating new christmas trees are done like this:
 
 ```
 val christmasTree = ChristmasTree(200, 100, 500)
 ```
+
+## Summary
+
+Data classes gives us
