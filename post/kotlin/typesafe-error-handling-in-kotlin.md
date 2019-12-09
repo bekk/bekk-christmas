@@ -8,9 +8,9 @@ authors:
 ---
 WIP…
 
-In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. That sounds like a good thing, right? Well, _it depends_.
+In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. This sounds like a good thing, right? Well, _it depends_.
 
-Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile time. The compiler will not tell you what to catch or even whether or not what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
+Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile time. The compiler will not tell you what to catch or even whether what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
 
 ## Error Handling with `Result<T, E>`
 
@@ -45,10 +45,10 @@ fun main() {
 
 In this example, the `divide` function either returns a `String` (the error case) or an `Int` (the quotient). Together with Kotlin's awesome `when` and `smartcast` functionality, the above code is minimal, easy to read, and straight to the point. Great!
 
-But, what about more complex problems, you might ask. Well, this barebone implementation suffers from a readability problem when it comes to more complex problems, especially in the case of lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should periodically transfer all changed users from a database to a third-party API. It performs the following subtasks:
+But what about more complex problems you might ask. Well, this barebone implementation suffers from a readability problem when it comes to more complex problems, especially in the case of lambdas. Imagine being forced to check whether the result is an `Ok` or and `Err` in _every step_ of a lambda pipeline. To illustrate the problem further, let us look at a function that should periodically transfer all changed users from a database to a third-party API. It performs the following subtasks:
 
-- Fetch the timestamp of the previous successful transfer, from the database.
-- Fetch all users that have changed since this timestamp, from the database.
+- Fetch the timestamp of the previous successful transfer from the database.
+- Fetch all users that have changed since this timestamp from the database.
 - Transfer all those users, one by one, to a third-party API.
 - Save the result of the transfer to the database.
 
@@ -195,3 +195,13 @@ private class RunResultTryAbortion(val err: Any) : Exception()
 ```
 
 In simple terms, the `runResultTry` function takes a function as an argument and executes it in a `try/catch`. The `.abortOnError` function is a _scoped extension function_ of the Result type, which is _only_ available inside the block passed to `runResultTry`. When a result is an `Err`, the `.abortOnError` function aborts execution by jumping to the catch block of `runResultTry`, or else it unwraps and returns its encapsulated value. The fact that it uses exceptions internally is just an implementation detail, and not important. You may also notice the suspicious casts. These casts are a way to get around the fact that exceptions cannot have generic types (a consequence of dynamic typing and type erasure). Regardless, the casts are safe in the current implementation above.
+
+## When Should You Use `Result<T, E>`?
+When the Result type is used to handle errors of functions where you do not care about the return value (i.e., impure functions), it has a major problem: errors might be swallowed. If you are not prepared to receive a return value, it very is easy to forget to check whether the invocation failed. In such cases, exceptions might be a better choice. At least then, everything blows up and gets (hopefully) logged.
+
+
+## What About Kotlin's Own `Result<T>`?
+
+Since Kotlin version 1.3, the standard library includes its own [`Result<T>` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html). Being included in the standard library yields many advantages: no dependency management cost, promotes more widespread use, and everyone ends up using the same implementation—which is especially beneficial for library developers. The only problem is that this implementation of `Result` is primarily designed for a different use case, namely to complement error handling with coroutines. If you want to dig into the details of what that means, I recommend reading the original proposal [here](https://github.com/Kotlin/KEEP/blob/master/proposals/stdlib/result.md) and also its associated [discussions](https://github.com/Kotlin/KEEP/issues/127). Summarized, its biggest limitation is that it cannot be used as a _direct_ return type of a function. Returning a `List<Result<String>>` is fine, but returning `Result<List<String>>` will not compile. And, as you may have noticed, the type of the error is hardcoded to `Throwable`, discarding all type information about the error.
+
+## Error Handling with `Try<T>`
