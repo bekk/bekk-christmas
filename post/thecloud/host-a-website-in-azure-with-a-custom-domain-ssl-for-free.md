@@ -36,9 +36,7 @@ Basically it works like this:
 Turns out this is now also possible in Azure. In late 2018 Azure announced support for hosting static websites in storage accounts. You can enable “Static website” on a storage account and get a special $web storage container where you can put static website content (HTML/CSS/Javascript and images) and have them served to the user as if it was a web server. The cool thing about this is that storage accounts supports custom domains for free.
 
 When you enable the static website feature on a storage account the website will get an endpoint like:
-```
-https://<storageaccountname>.z13.web.core.windows.net
-```
+`https://<storageaccountname>.z13.web.core.windows.net`
 
 ## Azure CDN
 There are many CDN providers that can provide free SSL on a custom domain, but with a pure Azure solution only the Azure CDN will do. The main benefit of using an Azure service is that the provisioning and configuration can easily be scripted using Azure Powershell or ARM-templates.
