@@ -125,38 +125,42 @@ Here we declare two functions. The `wishlist` function is a function that return
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-module.exports.wishlist = (event, context, callback) => {
-  dynamoDb.scan({ TableName: 'wishlist' }, (err, res) => {
-    callback(null, {
-      statusCode: err ? 500 : 200,
-      body: err ? err.message : JSON.stringify(res),
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    });
-  })
-};
-
+module.exports.wishlist = async () => {
+  try {
+    const result = await dynamoDb.scan({ TableName: 'wishlist' }).promise();
+    return {
+      statusCode: 200,
+      body: JSON.stringify(result)
+    }
+  } catch (e) {
+    return {
+      statusCode: 500,
+      body: e.message
+    }
+  }
+}
 ```
 
 **Add new wish**
 ```js
+'use strict';
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-module.exports.newWish = (event, context, callback) => {
-  dynamoDb.put({ TableName: 'wishlist', Item: JSON.parse(event.body) }, (err, res) => {
-    callback(null, {
-      statusCode: err ? 500 : 200,
-      body: err ? err.message : JSON.stringify(res),
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    });
-  })
-};
-
-
+module.exports.newWish = async (event) => {
+  try {
+    const result = await dynamoDb.put({ TableName: 'wishlist', Item: JSON.parse(event.body) }).promise();
+    return {
+      statusCode: 200,
+      body: JSON.stringify(result)
+    }
+  } catch (e) { 
+    return {
+      statusCode: 500,
+      body: e.message
+    }
+  }
+}
 ```
 
 ## So, how do we actually deploy our service to the cloud? 
