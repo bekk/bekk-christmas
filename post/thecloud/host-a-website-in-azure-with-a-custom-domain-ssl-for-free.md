@@ -38,6 +38,7 @@ Turns out this is now also possible in Azure. In late 2018 Azure announced suppo
 When you enable the static website feature on a storage account the website will get an endpoint like:
 `https://<storageaccountname>.z13.web.core.windows.net`
 
+
 ## Azure CDN
 There are many CDN providers that can provide free SSL on a custom domain, but with a pure Azure solution only the Azure CDN will do. The main benefit of using an Azure service is that the provisioning and configuration can easily be scripted using Azure Powershell or ARM-templates.
 
