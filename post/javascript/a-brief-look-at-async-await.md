@@ -36,7 +36,7 @@ const doSomething = async () => {
 }
 ```
 
-All async functions will always return a ```Promise```. However, the ```await``` keyword allows you to wait for a promise to be resolved, thus forcing the code to be synchronous. Let's begin with a simple example:
+All async functions will always return a ```Promise```. However, the ```await``` keyword allows you to wait for a promise to be resolved. Let's begin with a simple example:
 ```js
 const addOne = function(number) {
   return new Promise((resolve, reject) => {
@@ -59,7 +59,7 @@ const someFunction = function() {
 };
 ```
 
-The ```await``` keyword can't be used at top level code or in functions without ```async```. Additionally, the ```await``` keyword before a promise makes the code feel and act synchronously. Together ```async``` and ```await``` provide a great framework to write asynchronous code that is easy to understand. 
+The ```await``` keyword can't be used at top level code, [yet](https://github.com/tc39/proposal-top-level-await), or in functions without ```async```. Together ```async``` and ```await``` provide a great framework to write asynchronous code that is easy to understand. 
 
 ### Case
 Let's say; you are creating a webpage that allows users to sign documents. However, the documents need to be ready before the user can sign them. The webpage calls an endpoint that returns the current status of the document. Either true or false. If the API doesn't return true within 30 seconds after loading the webpage, the user should be redirected to an error page.
