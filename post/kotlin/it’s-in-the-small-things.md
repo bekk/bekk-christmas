@@ -101,6 +101,20 @@ Creating new christmas trees are done like this:
 val christmasTree = ChristmasTree(200, 100, 500)
 ```
 
+Using and accessing the values are done like this:
+
+```
+println(christmasTree.height)   //200println(christmasTree.radius)   //100println(christmasTree.price)    //500
+```
+
+The toString-method prints the values like this:
+
+```
+println(christmasTree.toString()) //ChristmasTree(height=200, radius=100, price=500)
+```
+
+
+
 ## Summary
 
 Kotlin data classes gives us less and more concise code, and with this more maintainable applications .
