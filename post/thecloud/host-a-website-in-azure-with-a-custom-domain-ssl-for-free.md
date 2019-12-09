@@ -28,7 +28,7 @@ What we want to achieve:
 A common way to solve this problem for web applications where you have a separate backend and frontend, is to host the frontend as a static website and combine it with a Content Delivery Network (CDN) that can provide SSL on a custom domain. Netlify, GitHub Pages and Amazon Web Services (AWS) all have solutions to this problem and can provide this functionality for free. AWS has had this capability for years by combining the Amazon CloudFront CDN with Amazon S3 storage which can host a static website. 
 
 Basically it works like this:
-
+![End-user - CDN - website communication](https://ibb.co/QvrLNHQ)
 
 The CDN manages the certificate that is used to encrypt the connection to the end-user with a custom domain and the connection between the CDN and the website is encrypted with the SSL certificate supplied by the website (if any). 
 Turns out this is now also possible in Azure. In late 2018 Azure announced support for hosting static websites in storage accounts. You can enable “Static website” on a storage account and get a special $web storage container where you can put static website content (HTML/CSS/Javascript and images) and have them served to the user as if it was a web server. The cool thing about this is that storage accounts supports custom domains for free.
