@@ -214,7 +214,9 @@ at some bullet points describing them.
 
   - AGPL (GNU Affero General Public License)
       - Like GPL, but includes software accessed over the network
-  - GPL
+  - GPL (GNU General Public License)
+      - Users are allowed to run, study, share and modify the software
+      - Derivative work must also include these freedoms
 
 ## For libraries
 
