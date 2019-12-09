@@ -34,7 +34,7 @@ Autoprefixer is a PostCSS plugin to parse CSS and what it does is that it adds n
 npm install autoprefixer@latest
 ```
 
-Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment ` /* autoprefixer grid: autoplace */` at the top of your CSS file.
+Or if you have used `create-react-app` to create your app, then all you have to do is enable it. By default, Autoprefixer is disabled for Grid. To switch it on, add this comment `/* autoprefixer grid: autoplace */` at the top of your CSS file.
 
 To see it in action, test your code with their [online tool](https://autoprefixer.github.io/). 
 
@@ -47,23 +47,18 @@ Check out their [docs ](https://github.com/postcss/autoprefixer#grid-autoplaceme
 
 Autoprefixer do have its limitations, thus there are properties even Autoprefixer can not fix. So here's a short list of things you should be aware of:
 
-1. **IE does not support** [**autoplacement**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout)**.** Thus, grid autoplacement properties like `grid-auto-rows` or `grid-auto-columns` does not really work even with Autoprefixer. Read more about Grid Autoplacement support in IE [here](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie). 
-
-2. **Defining your grid with _grid tracks_** **and** **__` grid-template-areas`?** Make sure each grid element have unique area names. 
-
-3. **In the new version of Autoprefixer, `grid-gap` _kinda_ is supported**. However, make sure to defined both `grid-template-areas` and `grid-template-columns`. Daniel Tonon has a pretty good [article ](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/)about IE and the new Autoprefixer.
-
-4. **Avoid shorthands!** Shorthands such as `grid` or `grid-column `/ `grid-row`. `grid-column` and `grid-row` are both shorthands for placing grid items using _grid lines_, which means that you will have to go from two code lines back to four. 
+1. IE does not support [autoplacement](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout). Thus, grid autoplacement properties like `grid-auto-rows` or `grid-auto-columns` does not really work even with Autoprefixer. Read more about Grid Autoplacement support in IE [here](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie). 
+2. Defining your grid with _grid tracks_ and `grid-template-areas`? Make sure each grid element have unique area names. 
+3. In the new version of Autoprefixer, `grid-gap` _kinda_ is supported. However, make sure to defined both `grid-template-areas` and `grid-template-columns`. Daniel Tonon has a pretty good [article ](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/)about IE and the new Autoprefixer.
+4. Avoid shorthands! Shorthands such as `grid` or `grid-column`/ `grid-row`. `grid-column` and `grid-row` are both shorthands for placing grid items using _grid lines_, which means that you will have to go from two code lines back to four. 
 
 ![Avoid shorthands](/assets/screen-shot-2019-12-07-at-14.36.28.png "Avoid shorthands")
 
-5. **`grid-template-areas` and grid tracks is your friend!** It's quite the hassle to write four codelines for each grid item when you use grid lines and have to support IE. So try to use `grid-template-areas` and  `grid-area` as much as you can. 
+5. `grid-template-areas` and grid tracks is your friend! It's quite the hassle to write four codelines for each grid item when you use grid lines and have to support IE. So try to use `grid-template-areas` and  `grid-area` as much as you can. 
+6. Still gotta use grid lines? Always make sure to define _both_ columns and rows for your grid items. Thus, you gotta write four codelines for your grid item. 🙄
+7. Always check your grid fix in IE! ****You have probably used grid a lot of places in your code even though it can be a hassle, make sure you check if your site behaves like you would expect it do. If you're like me and do not have IE on your laptop, you can either download a Virtual Machine (VM) to use Windows on your laptop such as [Parallels](https://www.parallels.com/eu/landingpage/pd/general/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhuqLT-NrvSBWj2X-tD5V5qznVF2fHHRYRDUPzX4ilW9TJCYq92cowTBoCVEoQAvD_BwE) or test your website through a web solution such as [SauceLabs](https://saucelabs.com/) or [Browserstack](https://www.browserstack.com/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhut0Cwdq1tfEk_2VcHmKcDM5YknUkDkRtOLtd0hqkEoDfE1Usi-m5-RoChkgQAvD_BwE). Because you know, safiety first 😆!
 
-5. **Still gotta use grid lines?** Always make sure to define **both** columns and rows for your grid items. Thus, you gotta write four codelines for your grid item. 🙄
-
-6. **Always check how grid fix in IE!** You have probably used grid a lot of places in your code even though it can be a hassle, make sure you check if your site behaves like you would expect it do. If you're like me and do not have IE on your laptop, you can either download a Virtual Machine (VM) to use Windows on your laptop such as [Parallels](https://www.parallels.com/eu/landingpage/pd/general/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhuqLT-NrvSBWj2X-tD5V5qznVF2fHHRYRDUPzX4ilW9TJCYq92cowTBoCVEoQAvD_BwE) or test your website through a web solution such as [SauceLabs](https://saucelabs.com/) or [Browserstack](https://www.browserstack.com/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhut0Cwdq1tfEk_2VcHmKcDM5YknUkDkRtOLtd0hqkEoDfE1Usi-m5-RoChkgQAvD_BwE). Because you know, safiety first 😆!
-
-## @supports 
+## @supports
 
 If you would still love to have some autoplacement properties, such as `grid-auto-rows` or `auto-fill`, then another option could be using the feature query, `@supports`. You can then use some CSS features, such as `grid`, depending on whether the browser supports it or not. So you basically put the grid code you would like to use IF the browser supports grid inside of the `@support (display: grid) {...}` and keep the fallback code outside of it. So in the example below, the flexbox code will be used as a default and if the browser do support grid? Well, then the grid code is used instead ✨ 
 
