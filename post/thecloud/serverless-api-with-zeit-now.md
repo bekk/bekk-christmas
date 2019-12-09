@@ -34,7 +34,7 @@ Before we start, we need to prepare some stuff.
 * Sign up at [https://zeit.co/signup](https://zeit.co/signup).
 * Install `now-cli` with `npm i -g now` (or with Yarn if you prefer).
 * Login with `now login`.
-* Initilize the folder structure with `mkdir gift-lists && cd gift-lists`.
+* Initilize the folder structure with `mkdir gifts && cd gifts`.
 * Next, initlize the project with `npm init` to create a `package.json`.
 
 ## Constructing the API
