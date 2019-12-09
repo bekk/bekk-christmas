@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 10
 title: Prepare to die - An introduction to Spot Market
-image: ''
+image: /assets/spot-market-illustration.jpg
 ingress: >-
   Companies and developers love the cloud. The cloud provides scalability and
   resilience to some of the most critical applications for a company. Due to the
