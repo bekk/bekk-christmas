@@ -18,13 +18,15 @@ authors:
 
 This is great for the object-oriented guys and gals, but what about functionally oriented people? Good news! Xamarin supports F#, Microsoft's functional language, as a first-class citizen on the platform. And just like C#, F# can utilize the entire .Net ecosystem and gives us some exciting choices in regards to app architecture. MVC and MVVM are great for what they are, but haphazardly mutation of state easily leads to bugs and more complicated testing harnesses.
 
-Luckily, with the power of F#, a better way exists
-
-[Fabulous](https://github.com/fsprojects/Fabulous) is a fabulous framework for crafting apps with the ultra-simple Model-View-Update architecture, know from [Elm](https://elmprogramming.com/model-view-update-part-1.html) and [Flutter](https://buildflutter.com/functional-model-view-update-architecture-for-flutter/), using F# and Xamarin Forms.
-
-![Model-View-Update Architecture](https://hjerpbakk.com/img/bekk-christmas/model-view-update.svg)
+Luckily, with the power of F#, a better way exists.
 
 ## Fabulous Architecture
+
+[Fabulous](https://github.com/fsprojects/Fabulous) is a fabulous framework for crafting apps with the ultra-simple **Model-View-Update architecture**, know from [Elm](https://elmprogramming.com/model-view-update-part-1.html) and [Flutter](https://buildflutter.com/functional-model-view-update-architecture-for-flutter/), using F# and Xamarin Forms.
+
+![Model-View-Update Arcitechture](https://hjerpbakk.com/img/bekk-christmas/model-view-update.svg)
+
+Using Fabulous, this is an app in its purest form:
 
 ```fsharp
 type Msg =
