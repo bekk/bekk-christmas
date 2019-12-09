@@ -39,22 +39,16 @@ When you enable the static website feature on a storage account the website will
 
 `https://<storageaccountname>.z13.web.core.windows.net`
 
-`https://<storageaccountname>.z13.web.core.windows.net`
-
 ## Azure CDN
 There are many CDN providers that can provide free SSL on a custom domain, but with a pure Azure solution only the Azure CDN will do. The main benefit of using an Azure service is that the provisioning and configuration can easily be scripted using Azure Powershell or ARM-templates.
 
 To try it out you first have to create an Azure CDN profile in the Azure Portal and choose a pricing tier which supports custom domains. I chose the “Premium Verizon” tier just because it is the only tier that supports redirecting http => https using custom page rules. The CDN cost for a static website, which is typically just a few MB, is basically zero. Continue by adding a CDN endpoint inside the CDN profile that maps your CDN endpoint to your site: 
 
-```
-<sitename>.azureedge.net →  https://<storageaccountname>.z13.web.core.windows.net
-```
+`<sitename>.azureedge.net → https://<storageaccountname>.z13.web.core.windows.net`
 
 As long as http is allowed on the storage account you should after a short while be able to access the site using the *.azureedge.net address. To add a custom domain to the CDN you first need to login to your domain host and add a CNAME mapping to your CDN endpoint like this:
 
-```
-www.mysite.com → <sitename>.azureedge.net
-```
+`www.mysite.com → <sitename>.azureedge.net`
 
 After the CNAME has been added and the DNS has propagated which in my case was pretty quick, Azure will allow you to add the custom domain to your CDN endpoint. When the custom domain is added, the last step is to enable SSL on the custom hostname which is just a flip of a switch. Just click the hostname and choose to enable custom domain HTTPS. 
 
