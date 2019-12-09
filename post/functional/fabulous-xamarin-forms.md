@@ -150,4 +150,8 @@ Using immutable models, this architecture has a couple of advantages:
 
 And off course, Fabulous supports [Live Update](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/tools.html), enabling you to make and see the effect of these changes in the simulator without redeploying the app.
 
+<video width="640" height="353" controls>
+  <source src="https://hjerpbakk.com/img/bekk-christmas/live-update-1080.mp4" type="video/mp4">
+</video>
+
 Xamarin Forms can truly be fabulous.
