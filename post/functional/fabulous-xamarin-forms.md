@@ -3,7 +3,7 @@ calendar: functional
 post_year: 2019
 post_day: 11
 title: Fabulous Xamarin Forms
-image: 'https://hjerpbakk.com/img/bekk-christmas/xamarin-forms.png'
+image: ''
 links:
   - title: Getting Started
     url: >-
