@@ -79,7 +79,7 @@ It is possible to use third party libraries or an IDE to help with reduce the am
 
 ## Kotlins Data classes
 
-Using data classes in Kotlin the same DTO as above suddenly only becomes:
+Using data classes in Kotlin the same DTO as above becomes:
 
 ```
  data class ChristmasTree(val height: Number, val radius: Number, val price: Number )
@@ -112,8 +112,6 @@ The toString-method prints the values like this:
 ```
 println(christmasTree.toString()) //ChristmasTree(height=200, radius=100, price=500)
 ```
-
-
 
 ## Summary
 
