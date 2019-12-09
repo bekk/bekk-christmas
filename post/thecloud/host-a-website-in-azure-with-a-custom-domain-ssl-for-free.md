@@ -30,7 +30,6 @@ A common way to solve this problem for web applications where you have a separat
 Basically it works like this:
 ![End-user - CDN - website communication](https://i.ibb.co/B2qbZ63/cdn.png)
 
-
 The CDN manages the certificate that is used to encrypt the connection to the end-user with a custom domain and the connection between the CDN and the website is encrypted with the SSL certificate supplied by the website (if any). 
 Turns out this is now also possible in Azure. In late 2018 Azure announced support for hosting static websites in storage accounts. You can enable “Static website” on a storage account and get a special $web storage container where you can put static website content (HTML/CSS/Javascript and images) and have them served to the user as if it was a web server. The cool thing about this is that storage accounts supports custom domains for free.
 
@@ -56,6 +55,7 @@ www.mysite.com → <sitename>.azureedge.net
 
 After the CNAME has been added and the DNS has propagated which in my case was pretty quick, Azure will allow you to add the custom domain to your CDN endpoint. When the custom domain is added, the last step is to enable SSL on the custom hostname which is just a flip of a switch. Just click the hostname and choose to enable custom domain HTTPS. 
 
+![CDN - Custom domain](https://i.ibb.co/sR96D80/add-domain.png)
 
 Azure will then generate a certificate for your domain that is valid for a year and will be automatically renewed. Enabling SSL can take quite a bit of time so expect to wait a day or two.
  
