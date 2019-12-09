@@ -3,6 +3,8 @@ calendar: kotlin
 post_year: 2019
 post_day: 10
 title: It’s in the small things
+image: >-
+  https://images.unsplash.com/photo-1512308439392-3c1bec71099e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 links:
   - title: Data classes
     url: 'https://kotlinlang.org/docs/reference/data-classes.html'
