@@ -1,7 +1,7 @@
 ---
 calendar: react
 post_year: 2019
-post_day: 11
+post_day: 10
 title: Control your components
 image: >-
   https://images.unsplash.com/photo-1472235008642-bb3ce23994ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
