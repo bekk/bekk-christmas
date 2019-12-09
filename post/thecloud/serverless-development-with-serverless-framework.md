@@ -143,7 +143,6 @@ module.exports.wishlist = async () => {
 
 **Add new wish**
 ```js
-'use strict';
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
