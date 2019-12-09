@@ -23,7 +23,7 @@ Neural networks are computer algorithms that are loosely modelled after the huma
 
 ![](https://i.ibb.co/9tgycJ6/1-e-BMwp-BBbo-AXgqsaww-OKk-Pw.png)
 
-Artificial Neural Networks are computationally created algorithms that try to mimic this behaviour. As neurons are fundamental in our brain, artificial neurons are central in artificial neural networks. They work the same way; each neuron receives a set of input signals, combines them in some way, and passes the information along. The real power of artificial neural networks emerges when you connect layers of neurons together to form a network.
+Artificial Neural Networks are computational algorithms that try to mimic this behaviour. As neurons are fundamental in our brain, artificial neurons are central in artificial neural networks. They work the same way; each neuron receives a set of input signals, combines them in some way, and passes the information along. The real power of artificial neural networks emerges when you connect layers of neurons together to form a network.
 
 ![](https://i.ibb.co/QpbZYC3/ANN1.jpg)
 
