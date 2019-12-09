@@ -82,4 +82,4 @@ You should have enough to get started with JUnit 5 in your projects. JUnit has a
 
 If you want more handy JUnit 5 tips, be sure to check out:
 
-* [Useful new features in JUnit 5 @ java.christmas](https://java.christmas/2019/9)
+* [Useful new features in JUnit 5](https://java.christmas/2019/9)
