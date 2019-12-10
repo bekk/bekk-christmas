@@ -26,13 +26,15 @@ authors:
 ---
 ## A picture says more than words
 
-Gitmoji was born to make it easier for developers to identify the purpose or intention of others commits, simply by looking at the associated emoji. And not to mentioned, the colors and joy it brings to the commit history. 
+Gitmoji was born to make it easier for developers to identify the purpose or intention of others commits, simply by looking at the associated emoji. And not to mention, the colors and joy it brings to the commit history. 
 
 ![](/assets/skjermbilde-2019-12-04-kl.-16.07.04.png "A sample of Gitmojis")
 
+## 
+
 ## A small set of gitmojis make commits easy to identify
 
-However, some emojis are more recognizable than others and the Gitmoji guide currently consists of 66 different emojis describing different intentions, some more useful than others. The 🐛emoji is easily recognized as a bug by most people, but will 🔥immediately signalize that code is removed? 
+However, some emojis are more recognizable than others and the Gitmoji guide currently consists of 66 different emojis describing different intentions, some more useful than others. The 🐛 emoji is easily recognized as a bug by most people, but will 🔥 immediately signalize that code is removed? 
 
 The learning process is an important factor with successful use of gitmoji. By selecting a small set of emojis, you and the contributors can rapidly recognize the emojis and their meanings, which is the whole idea with gitmoji in the first place. Some of the emojis are more general than others. I would recommend using those more general rather than the more detailed ones unless their usage is frequently and should be highlighted. What emojis that are selected should vary depending on technology and which stack you are working in. Frontend repositories would for example use 💄for UI changes, an emoji less relevant for backend development. 
 
@@ -44,10 +46,10 @@ A positive outcome of using gitmoji is the fact that it forces you to think thro
 
 ## May also be used for pull request titles
 
-Originally, gitmoji is meant for assigning emojis to the commit messages. This may be suitable for large pull requests with many commits of different nature. However, small pull request with a defined objective may have few commits of similar nature. In this case, assigning gitmojis to the pull request title may be more relevant. From experience, doing both adds value. 
+Originally, gitmoji is meant for assigning emojis to the commit messages. This may be suitable for large pull requests with many commits of different nature. However, a small pull request with a defined objective may have fewer commits of similar nature. In this case, assigning gitmojis to the pull request title may be more relevant. From experience, doing both adds value. 
 
 ![](/assets/skjermbilde-2019-12-10-kl.-19.55.55.png)
 
 ## Summary
 
-To summarize, gitmojis will add value to your development project if it is correctly used. Using a small set of emojis, suitable for your project, will make it easy for the contributors to recognize the intention of the commit. It may contribute to better and more precise commits, and last but not least it definitely adds joy and excitement.
+Gitmoji will add value to your development project by simplifying code collaboration. Using a small set of emojis, suitable for your project, will make it easy for the contributors to recognize the intention of the commit. It may also contribute to better and more precise commits, and last but not least it definitely adds joy and excitement ✨💥🚑🤖.
