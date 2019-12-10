@@ -140,3 +140,5 @@ function chain() {
 ```
 
 That's all! I hope this inspires you to use ```async-await```.
+
+*Disclaimer: The code in this article is just for making a point, not something to copy*
