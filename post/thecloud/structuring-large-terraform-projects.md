@@ -2,23 +2,16 @@
 calendar: thecloud
 post_year: 2019
 post_day: 11
-title: Structuring large Terraform projects
-image: 'https://source.unsplash.com/8Gg2Ne_uTcM/1600x900'
+title: Splitting the Terraform monolith
+image: >-
+  https://images.unsplash.com/photo-1516971849755-77ddd3e004b0?crop=edges&w=1226&h=400&fit=crop
 ingress: >-
-  At Digipost we are in the progress of building up our new infrastructure on
-  Azure, to be able to migrate away from an on-prem IaaS platform. We are
-  already enthusiastic users of Terraform and have chosen to continue down that
-  path, towards infrastructure-as-code (IaC) bliss, where the totality of your
-  infrastructure can be created by a single command.
-
-
-  As we were building the new infrastructure and added more and more components
-  to our Terraform state, some operational pains started to surface. Operations
-  were slower and recreating the stateless compute parts (Kubernetes) sometimes
-  led to seemingly unrelated resources being affected, in part because the
-  effective dependency graph was slightly accidental. As a response to these
-  pains, we did some research to learn a bit more about best practices when
-  structuring Terraform projects.
+  At [Digipost](https://www.digipost.no) we are in the progress of building up
+  our new infrastructure on Azure. We are already enthusiastic users of
+  Terraform and have chosen to continue down that path, towards
+  infrastructure-as-code (IaC) bliss, where the totality of your infrastructure
+  can be created by a single command. But what happens when that totality is a
+  bit big for a single Terraform state-file?
 links:
   - title: 'Terraform, VPC, and why you want a tfstate file per env'
     url: >-
@@ -33,6 +26,8 @@ links:
 authors:
   - Gustav Karlsson
 ---
+As we were building the new infrastructure and adding more and more components to our Terraform state, some operational pains started to surface. Operations were slower and recreating the stateless compute parts (Kubernetes) sometimes led to seemingly unrelated resources being affected, in part because the effective dependency graph was slightly accidental. As a response to these pains, we did some research to learn a bit more about best practices when structuring Terraform projects.
+
 ## Splitting by environment
 
 It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. In the words of [Charity Majors](https://twitter.com/mipsytipsy):
@@ -99,4 +94,4 @@ So what did we end up doing? We already had one state-file per environment, and 
 
 We are particularly happy with having isolated the storage components into small stable state-files. 
 
-Hopefully this will be a better foundation to evolve from, time will tell.
+Hopefully this will make operations faster and safer and be a better foundation to evolve from.
