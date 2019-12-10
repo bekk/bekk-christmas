@@ -16,7 +16,7 @@ authors:
 const keyInformation = {
   name: "Yulia Startsev",
   residence: "Berlin, Germany", 
-  firstProgrammingLanguage: "hm. can't remember. I did HTML very early on, but I think the first experience with programming that I had was with the GoldSource scripting sequences. I just don't know what language that was in.", 
+  firstProgrammingLanguage: "I did HTML very early on, but I think the first experience with programming that I had was with the GoldSource scripting sequences. I just don't know what language that was in.", 
   work: "Mozilla", 
   yearsInTC39: 2, 
 }
@@ -26,7 +26,7 @@ const keyInformation = {
 
 ### Who are you and what do you do?
 
-Yulia Startsev - Spidermonkey developer and co-chair of Ecma’s TC39.
+Yulia Startsev - Spidermonkey developer and co-chair of Ecma’s TC39. The chair group helps facilitate the plenary meetings, which are face to face meetings that happen 6 times a year. We also do back office tasks like helping new members get started.
 
 ### How did you get into programming?
 
