@@ -30,6 +30,7 @@ const MainContent = styled(MainContentWrapper)`
 
     .wide-image {
         width: 100%;
+        max-width: 1600px;
         height: 400px;
         object-fit: cover;
     }
