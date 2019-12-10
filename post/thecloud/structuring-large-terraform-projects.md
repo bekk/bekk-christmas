@@ -3,14 +3,13 @@ calendar: thecloud
 post_year: 2019
 post_day: 11
 title: Structuring large Terraform projects
+image: 'https://source.unsplash.com/8Gg2Ne_uTcM/1600x900'
 ingress: >-
   At Digipost we are in the progress of building up our new infrastructure on
   Azure, to be able to migrate away from an on-prem IaaS platform. We are
   already enthusiastic users of Terraform and have chosen to continue down that
   path, towards infrastructure-as-code (IaC) bliss, where the totality of your
   infrastructure can be created by a single command.
-
-
 
 
   As we were building the new infrastructure and added more and more components
@@ -20,22 +19,29 @@ ingress: >-
   effective dependency graph was slightly accidental. As a response to these
   pains, we did some research to learn a bit more about best practices when
   structuring Terraform projects.
+links:
+  - title: 'Terraform, VPC, and why you want a tfstate file per env'
+    url: >-
+      https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/
+  - title: How to manage Terraform state
+    url: 'https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa'
+  - title: >-
+      Evolving Your Infrastructure with Terraform: OpenCredo's 5 Common
+      Terraform Patterns
+    url: >-
+      https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo
+authors:
+  - Gustav Karlsson
 ---
-
-
-It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters to being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. [Charity Majors](https://twitter.com/mipsytipsy) noted the following back in 2016 about Terraform:
+It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters to being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. [Charity Majors](https://twitter.com/mipsytipsy) noted the following [back in 2016](https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/) about Terraform:
 
 > It is still as green as the motherfucking Shire and you should assume that every change you make could destroy the world.  So your job as a responsible engineer is to add guard rails, build a clear promotion path for validating changesets into production, and limit the scope of the world it is capable of destroying.  This means separate state files.
-> 
-> <https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/>
 
 Though this was written in March 2016, and Terraform has matured a lot since then, the point she makes is still valid, and touch upon some of the nervousness one might feel regarding IaC: As easy as it is to create all your infra in one command, it is equally easy to tear it all down, data and all. Which is why you need to think about what guard rails you have in place to make sure that never happens. One such guard rail is **separate state-files per environment**, enabling you to safely test out infrastructure changes in test environments as well as reducing the total number of resources in the state-file.
 
-[Yevgeniy Brikman](https://twitter.com/brikis98), creator of [Terragrunt](https://github.com/gruntwork-io/terragrunt) and another infra-veteran, goes further in the theme of blast radius reduction and suggests to also **separate state by component**, so that resources that are changed frequently are not grouped together with resources that do not, and especially not together with basic network components and stateful components such as databases.
+[Yevgeniy Brikman](https://twitter.com/brikis98), creator of [Terragrunt](https://github.com/gruntwork-io/terragrunt) and another infra-veteran, goes further in the theme of blast radius reduction and suggests to also **separate state by component**, so that resources that are changed frequently are not grouped together with resources that do not, and especially not together with basic network components and stateful components such as databases. In a [blogpost](https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa) he says:
 
 > If you manage the infrastructure for both the VPC component and the web server component in the same set of Terraform configurations, you are unnecessarily putting your entire network topology at risk of breakage (e.g., from a simple typo in the code or someone accidentally running the wrong command) multiple times per day.
->
-> <https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa>
 
 He suggests the following structure as a template for a Terraform project:
 
