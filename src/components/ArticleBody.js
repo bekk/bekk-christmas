@@ -81,7 +81,7 @@ const ArticleBody = styled.article`
     blockquote {
         padding-left: 35px;
     }
-    video {
+    video, img {
         display: block;
         width: 100%;
         max-width: 760px;
