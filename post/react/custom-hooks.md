@@ -25,6 +25,7 @@ authors:
   - Nicolai August Hagen
   - Markus Rauhut
 ---
+
 ## Custom Hook basics
 
 Consider the following example, in which the document title of a web page is changed:
@@ -39,7 +40,13 @@ const useDocumentTitle = title => {
 }
 ```
 
-This is one of the simplest examples of a custom hook. Like all existing Hooks, every Custom Hook should start with "use" to indicate that this is a Hook. Further, as you can see, a Custom Hooks is really just a fancy way of saying *"a function containing other Hooks, and/or some extra logic"*. 
+You can use the Hook like this:
+
+```javascript
+useDocumentTitle("My document title");
+```
+
+This is one of the simplest examples of a Custom Hook. Like all existing Hooks, every Custom Hook should start with "use" to indicate that this is a Hook. Further, as you can see, a Custom Hooks is really just a fancy way of saying *"a function containing other Hooks, and/or some extra logic"*. 
 
 The whole idea behind a custom hook is to hide the implementation of something that we often need in our application - or across applications. In the example above; updating the document title. By "blackboxing" these often used implementations, we can combine our custom hooks in new ways, thereby creating a more loosely coupled application. 
 
@@ -53,19 +60,12 @@ Some of the most popular solutions to these common problems can you find below:
 
 - **[useForm](https://www.npmjs.com/package/react-hook-form)** – Ever struggled with state in form validations? It can really help you manage the state of your forms.
 
-- **[useMedia](https://www.npmjs.com/package/react-use-media)** - a way to yyy
+Also popular npm packages like *Redux* and *React Router Dom* have recently created their own custom hooks to simplify their use.
 
-## Packages adapting Custom Hooks
-
-It is not only 
-
-- **React Router Dom** -
-
-- 
 
 ## Repercussions
 
-After about one year of using Custom Hooks, we can see some trends. Using those, may lead to: 
+After about a year with Custom Hooks we see some tendencies. The use of these can lead to the following:
 
 - Less code
 
