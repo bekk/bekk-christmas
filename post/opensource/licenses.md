@@ -1,16 +1,16 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 15
+post_day: 12
 title: Open ≠ Free ≠ Gratis
-ingress:  >-
+ingress: >-
   Software has become an integrated part of life. It's everywhere, and the
-  complexity is increasing. As developers, we're standing on the shoulders
-  of giants. Most of the software running in our applications is written
-  by someone else. But do you know what you're allowed to use the software
-  for? And what your obligations are when using the software? All software
-  has a license, which means it contains legal talk which "authorize the
-  use, performance, or release of (something)."
+  complexity is increasing. As developers, we're standing on the shoulders of
+  giants. Most of the software running in our applications is written by someone
+  else. But do you know what you're allowed to use the software for? And what
+  your obligations are when using the software? All software has a license,
+  which means it contains legal talk which "authorize the use, performance, or
+  release of (something)."
 authors:
   - Simen Endsjø
 ---
