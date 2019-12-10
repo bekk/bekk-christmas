@@ -14,7 +14,7 @@ He shared his work and waited for feedback. It did not take long before he was a
 
 "You know. You could use [Can I use](https://caniuse.com) to look up browser compatibility. "Selbekk suggested. Dag did as suggested and found:
 
-![Can I use compatibility table](https://i.ibb.co/Y8WZTR3/Screenshot-2019-12-10-at-17-19-37.png)
+<img class="wide-image" src="https://i.ibb.co/Y8WZTR3/Screenshot-2019-12-10-at-17-19-37.png" alt="Can I use compatibility table">
 https://caniuse.com/#feat=css-clip-path
 
 "Okay, no support for IE or Edge. That might be okay, most of the receivers of the card are using Mac or are developers so they probably use another web browser. But let's see if we can get Safari working!"
