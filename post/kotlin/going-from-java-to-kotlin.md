@@ -61,7 +61,10 @@ public String printFoo(Foo foo) {
 Or like this:
 ```java
 public String printFoo(Foo foo) {
-    return String.valueOf(foo.getCode()).concat(" has description [").concat(foo.getDescription()).concat("].");
+    return String.valueOf(foo.getCode())
+        .concat(" has description [")
+        .concat(foo.getDescription())
+        .concat("].");
 }
 ``` 
 
