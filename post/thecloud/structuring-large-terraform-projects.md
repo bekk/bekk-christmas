@@ -30,9 +30,9 @@ As we were building the new infrastructure and adding more and more components t
 
 ## Splitting by environment
 
-It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. In the words of [Charity Majors](https://twitter.com/mipsytipsy):
+It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters being concerned about the _blast radius_ when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. In the words of [Charity Majors](https://twitter.com/mipsytipsy):
 
-> It is still as green as the motherfucking Shire and you should assume that every change you make could destroy the world.  So your job as a responsible engineer is to add guard rails, build a clear promotion path for validating changesets into production, and limit the scope of the world it is capable of destroying.  This means separate state files.
+> It is still as green as the motherfucking Shire and you should assume that every change you make could destroy the world. So your job as a responsible engineer is to add guard rails, build a clear promotion path for validating changesets into production, and limit the scope of the world it is capable of destroying. This means separate state files.
 >
 > <https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/>
 
