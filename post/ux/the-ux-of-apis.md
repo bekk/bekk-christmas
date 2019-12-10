@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 11
 title: The UX of api's
 image: 'https://i.ibb.co/PZVVqps/desirable-viable-feasible-400.png'
-ingress: "This December 1st, Helen kicked off our Christmas calendar with [a bit of a rant, concerning titles](https://ux.christmas/2019/1). \r\n\n> “It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.”\r\n\nI couldn’t agree more. \r\n\nAnd this year, I came across a challenge that really put this in perspective for me:\r\n\nThe APIs we were delivering, weren’t doing their job."
+ingress: ''
 links:
   - title: Consistency in api-design
     url: >-
@@ -18,13 +18,23 @@ links:
 authors:
   - Linda Christin Halvorsen
 ---
+This December 1st, Helen kicked off our Christmas calendar with [a bit of a rant, concerning titles](https://ux.christmas/2019/1). 
+
+> “It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.”
+
+I couldn’t agree more. 
+
+And this year, I came across a challenge that really put this in perspective for me:
+
+The APIs we were delivering, weren’t doing their job.
+
 Well, that’s not exactly true. We were making APIs that worked – others could use them to build their own digital solutions. But it was difficult for them to figure out just how they could make use of them, and develop stuff with them. 
 
 And it occurred to me then, as I started looking into that problem, that APIs are as much of a service as running an airport train and needs just as much design attention if they’re to be great services. And it’s not just about touchpoint-design – like the documentation website – but the design of the APIs in themselves, the communication channels surrounding them, the onboarding process of new developers, security and access levels. 
 
 **I hadn’t really given APIs much thought as a designer before, I must confess.** 
 
-I am an interaction design, with 12 years of experience. And my ux playground has certainly grown over the years; from doing strictly user interface interaction specifications and information structures way back in 2007, I now deal with the attractiveness of our digital products, with how our cross-functional teams deliver and collaborate, the viability of our ideas, the organizational intricacies of setting clear goals for digital services and how we work to reach them, the completeness of the customer journey our products are part of and underpin – along with the usability and desirability and doability of it all. 
+I am an interaction design, with 12 years of experience. And my UX playground has certainly grown over the years; from doing strictly user interface interaction specifications and information structures way back in 2007, I now deal with the attractiveness of our digital products, with how our cross-functional teams deliver and collaborate, the viability of our ideas, the organizational intricacies of setting clear goals for digital services and how we work to reach them, the completeness of the customer journey our products are part of and underpin – along with the usability and desirability and doability of it all. 
 
 And yet – paying attention to our APIs as a designer and product developer hadn’t really occurred to me as part of responsibility. 
 
