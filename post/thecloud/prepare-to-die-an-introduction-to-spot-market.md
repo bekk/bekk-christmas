@@ -23,7 +23,8 @@ links:
     url: 'https://aws.amazon.com/ec2/spot/'
   - title: Playing the AWS ec2 Spot Market - Matthew Powers
     url: 'https://medium.com/@mrpowers/playing-the-aws-ec2-spot-market-74b703454f4f'
-authors: []
+authors:
+  - Anders Refsdal Olsen
 ---
 ## Why use the Spot Market?
 What if I told you that renting these servers could give you a discount of up to 90% compared to a regular on-demand server. Still not convinced? Have a look at the graph below. 
