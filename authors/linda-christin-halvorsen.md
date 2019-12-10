@@ -1,6 +1,6 @@
 ---
 title: Linda Christin Halvorsen
-socialMediaLink: 'https://www.linkedin.com/in/lindachristinhalvorsen/'
+socialMediaLink: 'https://www.instagram.com/lchalvorsen/'
 company: Bekk
 ---
 
