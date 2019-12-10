@@ -32,7 +32,7 @@ And this year, I came across a challenge that really put this in perspective for
 
 Well, that’s not exactly true. We were making APIs that worked – others could use them to build their own digital solutions. But it was difficult for them to figure out just how they could make use of them, and develop stuff with them. 
 
-And it occurred to me then, as I started looking into that problem, that APIs are as much of a service as running an airport train and needs just as much design attention if they’re to be great services. And it’s not just about touchpoint-design – like the documentation website – but the design of the APIs in themselves, the communication channels surrounding them, the onboarding process of new developers, security and access levels. 
+And it occurred to me then, as I started looking into that problem, that APIs are as much of a service as running an airport express train and needs just as much design attention if they’re to be great services. And it’s not just about touchpoint-design – like the documentation website – but the design of the APIs in themselves, the communication channels surrounding them, the onboarding process of new developers, security and access levels. 
 
 **I hadn’t really given APIs much thought as a designer before, I must confess.** 
 
