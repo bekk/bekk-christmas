@@ -197,11 +197,22 @@ private class RunResultTryAbortion(val err: Any) : Exception()
 In simple terms, the `runResultTry` function takes a function as an argument and executes it in a `try/catch`. The `.abortOnError` function is a _scoped extension function_ of the Result type, which is _only_ available inside the block passed to `runResultTry`. When a result is an `Err`, the `.abortOnError` function aborts execution by jumping to the catch block of `runResultTry`, or else it unwraps and returns its encapsulated value. The fact that it uses exceptions internally is just an implementation detail, and not important. You may also notice the suspicious casts. These casts are a way to get around the fact that exceptions cannot have generic types (a consequence of dynamic typing and type erasure). Regardless, the casts are safe in the current implementation above.
 
 ## When Should You Use `Result<T, E>`?
-When the Result type is used to handle errors of functions where you do not care about the return value (i.e., impure functions), it has a major problem: errors might be swallowed. If you are not prepared to receive a return value, it very is easy to forget to check whether the invocation failed. In such cases, exceptions might be a better choice. At least then, everything blows up and gets (hopefully) logged.
+The Result type is not a silver bullet that fits every error handling situation perfectly; at least not in languages with impure functions. When this pattern is used to handle errors of functions where you do not care about the return value (i.e., impure functions), a problem arises: errors might be swallowed. If you are not prepared to receive a return value, it very is easy to forget to check whether the invocation failed. In situations where nothing fails or blows up, errors and bugs may be extremely hard to debug. In other words, exceptions might be a better choice in such situations. At least then, everything blows up and gets (hopefully) logged.
 
+There are solutions/workarounds to this swallowing-problem, even for impure languages. Javascript, for example, has the global `unhandledrejection`-event, which fires whenever a promise is rejected but lacks an error handler (i.e., a `.catch()`). In Kotlin (and Java), we may utilize the `finalize`-method to implement the same concept, but on the other hand, `finalize` is only called when the object is about to be garbage collected, which makes it somewhat unreliable.
+
+
+To summarize, I recommend that you use:
+
+Exceptions when:
+* You have an error handler at the top level of your application that _only_ catches instances of `Exception`.
+  * You treat all errors equally and the type of the error is irrelevant.
+  * You do not try to recover from failure.
+* There is a high risk of the error being swallowed, either now or after a refactor in the future.
+
+Result when:
+* None of the points above about exceptions apply.
 
 ## What About Kotlin's Own `Result<T>`?
 
 Since Kotlin version 1.3, the standard library includes its own [`Result<T>` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html). Being included in the standard library yields many advantages: no dependency management cost, promotes more widespread use, and everyone ends up using the same implementation—which is especially beneficial for library developers. The only problem is that this implementation of `Result` is primarily designed for a different use case, namely to complement error handling with coroutines. If you want to dig into the details of what that means, I recommend reading the original proposal [here](https://github.com/Kotlin/KEEP/blob/master/proposals/stdlib/result.md) and also its associated [discussions](https://github.com/Kotlin/KEEP/issues/127). Summarized, its biggest limitation is that it cannot be used as a _direct_ return type of a function. Returning a `List<Result<String>>` is fine, but returning `Result<List<String>>` will not compile. And, as you may have noticed, the type of the error is hardcoded to `Throwable`, discarding all type information about the error.
-
-## Error Handling with `Try<T>`
