@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 11
-title: The UX of api's
+title: The UX of APIs
 image: 'https://i.ibb.co/PZVVqps/desirable-viable-feasible-400.png'
 ingress: ''
 links:
