@@ -9,18 +9,6 @@ ingress: >-
   alternatives that can be used directly (e.g. `useState`, `useEffect` and some
   others), but also provided the possibility to create your very own Hooks –
   Custom Hooks.
-links:
-  - title: Sophie Alpert and Dan Abramov's intro-video to Hooks
-    url: 'https://www.youtube.com/watch?v=V-QO-KO90iQ'
-  - title: reactjs docs; Building Your Own Hooks
-    url: 'https://reactjs.org/docs/hooks-custom.html'
-  - title: Do React Hooks Replace Redux?
-    url: >-
-      https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672
-  - title: Thinking In React Hooks
-    url: 'https://wattenberger.com/blog/react-hooks'
-  - title: How To Migrate From HOCs to Hooks
-    url: 'https://blog.logrocket.com/how-to-migrate-from-hocs-to-hooks-d0f7675fd600/'
 authors:
   - Nicolai August Hagen
   - Markus Rauhut
@@ -45,7 +33,7 @@ The whole idea behind a custom hook is to hide the implementation of something t
 
 ## Popular Custom Hooks
 
-In our client project, we use several custom hooks in our daily work. The most important aspect is that they solve a typical problem in your application. However, people recognize themselves in the same problems across projects, domains and countries. 
+In our client project, we use several Custom Hooks in our daily work. The most important aspect is that they solve a typical problem in your application. However, people recognize themselves in the same problems across projects, domains and countries. 
 
 Some of the most popular solutions to these common problems can you find below:
 
@@ -55,17 +43,22 @@ Some of the most popular solutions to these common problems can you find below:
 
 - **[useMedia](https://www.npmjs.com/package/react-use-media)** - a way to yyy
 
+## Packages adapting Custom Hooks
+
+It is not only 
+
+- **React Router Dom** -
+
+- 
+
 ## Repercussions
 
-So, after about one year of using Hooks in general, and Custom Hooks specifically, what do we see as the overall trends? 
+After about one year of using Custom Hooks, we can see some trends. Using those, may lead to: 
 
-- Increases declarative makes our code more declarative
+- Less code
 
-- It makes our application more loosely coupled than before.
+- More declarative code
 
-- Simplifies state management
+- More loosely coupled code
 
-- It creates less code.
-
-- It is, perhaps, obsoletes redux as a package, because you may (almost) completely get rid of Redux by just creating a custom hook returning its  `[state, dispatch]`.
-
+- Simplified state management
