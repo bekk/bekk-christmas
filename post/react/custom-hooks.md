@@ -9,6 +9,18 @@ ingress: >-
   alternatives that can be used directly (e.g. `useState`, `useEffect` and some
   others), but also provided the possibility to create your very own Hooks –
   Custom Hooks.
+links:
+  - title: Alpert & Abramov intro-video to Hooks
+    url: 'https://www.youtube.com/watch?v=V-QO-KO90iQ'
+  - title: Build Your Own Custom Hooks (reactjs docs)
+    url: 'https://reactjs.org/docs/hooks-custom.html'
+  - title: Do React Hooks Replace Redux?
+    url: >-
+      https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672
+  - title: Thinking In React Hooks
+    url: 'https://wattenberger.com/blog/react-hooks'
+  - title: How To Migrate From HOCs to Hooks
+    url: 'https://blog.logrocket.com/how-to-migrate-from-hocs-to-hooks-d0f7675fd600/'
 authors:
   - Nicolai August Hagen
   - Markus Rauhut
