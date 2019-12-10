@@ -11,6 +11,13 @@ ingress: >-
   out that these features are only supported in the B1 App Service Plan for a
   whooping 50$ a month? With some simple changes and a Content Delivery Network
   (CDN) you can have it all for FREE! 
+links:
+  - title: Add a custom domain to your Azure CDN endpoint
+    url: >-
+      https://docs.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain
+  - title: Configure HTTPS on an Azure CDN custom domain
+    url: >-
+      https://docs.microsoft.com/en-us/azure/cdn/cdn-custom-ssl?tabs=option-1-default-enable-https-with-a-cdn-managed-certificate
 authors:
   - Mats Mortensen
 ---
@@ -33,7 +40,7 @@ Basically it works like this:
 *The CDN manages the certificate that is used to encrypt the connection to the end-user with a custom domain and the connection between the CDN and the website is encrypted with the SSL certificate supplied by the website (if any).*
 
 
-Turns out this is now also possible in Azure. In late 2018 Azure announced support for hosting static websites in storage accounts. You can enable “Static website” on a storage account and get a special $web storage container where you can put static website content (HTML/CSS/Javascript and images) and have them served to the user as if it was a web server. The cool thing about this is that storage accounts supports custom domains for free.
+Turns out this is now also possible in Azure. In late 2018 Azure announced support for hosting static websites in storage accounts. You can enable “Static website” on a storage account and get a special $web container where you can put static website content (HTML/CSS/Javascript and images) and have them served to the user as if it was a web server. The cool thing about this is that storage accounts supports custom domains for free.
 
 When you enable the static website feature on a storage account the website will get an endpoint like: 
 
