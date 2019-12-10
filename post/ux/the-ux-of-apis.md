@@ -62,6 +62,6 @@ To quote Helen again:
 
 And for us, that would have meant that we probably would have caught on a lot faster on the importance of designing APIs as a real service. If I had been more curious about that part of the developers’ job, and they had been more curious about my bringings to the table – I think we could have saved us and our users a whole lot of trouble and delivered a more powerful service sooner. 
 
-UX is everywhere – and you can live long and prosper a lot more if you take a look around and not let titles and old assumptions bog you down.
+**UX is everywhere – and you can live long and prosper a lot more if you take a look around and not let titles and old assumptions bog you down.**
 
 ![Examples of ambitions for your API-as-a-service](https://i.ibb.co/6YM0s25/ambisjoner-apier.png)
