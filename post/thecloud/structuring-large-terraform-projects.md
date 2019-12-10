@@ -33,13 +33,19 @@ links:
 authors:
   - Gustav Karlsson
 ---
-It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters to being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. [Charity Majors](https://twitter.com/mipsytipsy) noted the following [back in 2016](https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/) about Terraform:
+## Splitting by environment
+
+It turns out that especially in the early days of Terraform, bugs where Terraform crashed and messed up your state was not uncommon. This led to early adopters being concerned about the blast radius when running Terraform, in other words, if something explodes, how many resources will at maximum be affected. In the words of [Charity Majors](https://twitter.com/mipsytipsy):
 
 > It is still as green as the motherfucking Shire and you should assume that every change you make could destroy the world.  So your job as a responsible engineer is to add guard rails, build a clear promotion path for validating changesets into production, and limit the scope of the world it is capable of destroying.  This means separate state files.
+>
+> <https://charity.wtf/2016/03/30/terraform-vpc-and-why-you-want-a-tfstate-file-per-env/>
 
-Though this was written in March 2016, and Terraform has matured a lot since then, the point she makes is still valid, and touch upon some of the nervousness one might feel regarding IaC: As easy as it is to create all your infra in one command, it is equally easy to tear it all down, data and all. Which is why you need to think about what guard rails you have in place to make sure that never happens. One such guard rail is **separate state-files per environment**, enabling you to safely test out infrastructure changes in test environments as well as reducing the total number of resources in the state-file.
+Though this was written back in March 2016 and Terraform has matured a lot since then, the point she makes is still valid and touch upon the scary thing about IaC: As easy as it is to create all your infra in one command, it is just as easy to tear it all down again. Which is why you need to think about what "guard rails" you have in place to make sure that never happens. One such guard rail, Charity suggests, is **separate state-files per environment**, enabling you to safely test out infrastructure changes in test environments as well as reducing the total number of resources in the state-file.
 
-[Yevgeniy Brikman](https://twitter.com/brikis98), creator of [Terragrunt](https://github.com/gruntwork-io/terragrunt) and another infra-veteran, goes further in the theme of blast radius reduction and suggests to also **separate state by component**, so that resources that are changed frequently are not grouped together with resources that do not, and especially not together with basic network components and stateful components such as databases. In a [blogpost](https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa) he says:
+## Splitting by component
+
+[Yevgeniy Brikman](https://twitter.com/brikis98), creator of [Terragrunt](https://github.com/gruntwork-io/terragrunt) and another infra-veteran, goes further in the theme of blast radius reduction and "guard rails", and suggests to also **separate state by component**, so that resources that are changed frequently are not grouped together with stateful resources such as databases. In a [blogpost](https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa) he says:
 
 > If you manage the infrastructure for both the VPC component and the web server component in the same set of Terraform configurations, you are unnecessarily putting your entire network topology at risk of breakage (e.g., from a simple typo in the code or someone accidentally running the wrong command) multiple times per day.
 
@@ -85,8 +91,12 @@ So there seems to be a general consensus that you should both **separate by envi
 
 For those interested in a deeper dive into the topic, OpenCredo have written [a great article](https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo) about the different stages in their journey from a single state-file to a split-by-component setup. They loosely compare splitting by component to a monolith being broken into smaller micro-services.
 
+## So what did we do?
+
 So what did we end up doing? We already had one state-file per environment, and decided to further separate it into layers of components to really isolate the stateful resources from frequent changes. It was a really useful exercise which made it clearer what resources belonged together and which did not. Below is a somewhat simplified illustration of our current state split.
 
 ![Simplified illustration of our current state split. The state-file at the bottom have yet to find its name..](/assets/terraform_state_dag.png "Simplified illustration of our current state split. The state-file at the bottom have yet to find its name..")
 
-We also decided to postpone decisions regarding tooling and automation of workflow and rather focus on the state-split and getting sh*t into production.
+We are particularly happy with having isolated the storage components into small stable state-files. 
+
+Hopefully this will be a better foundation to evolve from, time will tell.
