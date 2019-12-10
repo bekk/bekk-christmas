@@ -20,7 +20,9 @@ authors:
 ---
 [Xamarin](https://dotnet.microsoft.com/apps/xamarin) is a well-known framework from Microsoft allowing you to use C# to write cross-platform apps for iOS, Android, Tizen and more. With Xamarin Forms, a cross-platform native UI-layer built on top of Xamarin itself, even the views and logic can be shared.
 
-![Xamarin Forms Architecture](https://hjerpbakk.com/img/bekk-christmas/xamarin-forms.png)
+<img class="light-theme-image" src="https://hjerpbakk.com/img/bekk-christmas/xamarin-forms-light.png" alt="Xamarin Forms Architecture" />
+
+<img class="dark-theme-image" src="https://hjerpbakk.com/img/bekk-christmas/xamarin-forms-dark.png" alt="Xamarin Forms Architecture" />
 
 This is great for the object-oriented guys and gals, but what about functionally oriented people? Good news! Xamarin supports F#, Microsoft's functional language, as a first-class citizen on the platform. And just like C#, F# can utilize the entire .Net ecosystem and gives us some exciting choices in regards to app architecture. MVC and MVVM are great for what they are, but haphazardly mutation of state easily leads to bugs and more complicated testing harnesses.
 
@@ -30,7 +32,9 @@ Luckily, with the power of F#, a better way exists.
 
 [Fabulous](https://github.com/fsprojects/Fabulous) is a fabulous framework for crafting apps with the ultra-simple **Model-View-Update architecture**, know from [Elm](https://elmprogramming.com/model-view-update-part-1.html) and [Flutter](https://buildflutter.com/functional-model-view-update-architecture-for-flutter/), using F# and Xamarin Forms.
 
-![Model-View-Update Arcitechture](https://hjerpbakk.com/img/bekk-christmas/model-view-update.svg)
+<img class="light-theme-image" src="https://hjerpbakk.com/img/bekk-christmas/model-view-update-light.svg" alt="Model-View-Update Arcitechture" />
+
+<img class="dark-theme-image" src="https://hjerpbakk.com/img/bekk-christmas/model-view-update-dark.svg" alt="Model-View-Update Arcitechture" />
 
 The Model-View-Update architecture is easy to reason about. It structures applications into three parts and it defines how these interact with each other. There is only this one determined way to handle interactions and manage state –  and it provides a good foundation for modularity, code reuse and testing by default.
 
