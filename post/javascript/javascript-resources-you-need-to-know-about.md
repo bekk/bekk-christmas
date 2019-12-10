@@ -14,7 +14,7 @@ authors:
 ---
 
 ## [MDN web docs](https://developer.mozilla.org/en-US/)
-This is a resource created for developers by developers, and is loaded with articles, tutorials, references and documentation on many subjects such as JavaScript, CSS and WebAssembly. You can find information aimed towards all kinds of experience here, which also applies to the tutorials and guides. When it comes to JavaScript in particular, MDN has a lot to offer and I think that almost everyone reading this article can learn something here. There is one guide which you just need to check out named [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) This is a detailed guide that gives a great overview of the language and is divided into multiple chapters that covers topics such as functions, working with objects, promises, modules and so on. This guide is directed primarily against those who have previous experience with JavaScript or other languages. In addition to that guide, here is some interesting tutorials on JavaScript that MDN offer:
+This is a resource created for developers by developers, and is loaded with articles, tutorials, references and documentation on many subjects such as JavaScript, CSS and WebAssembly. You can find information aimed towards all kinds of experience here, which also applies to the tutorials and the guides. When it comes to JavaScript in particular, MDN has a lot to offer and I think that almost everyone that reads this article can learn something here. There is one guide on MDN which you just need to check out named [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). This is a detailed guide that gives a great overview of the language and is divided into multiple chapters that covers topics such as functions, working with objects, promises, modules and so on. This guide is directed primarily towards those who have previous experience with JavaScript or other languages. In addition to this guide, here is some other interesting tutorials on JavaScript that MDN offer:
 
 * [JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
 * [Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
@@ -44,8 +44,8 @@ You just can’t make a list like this without mentioning YouTube. There are jus
 ## Books 
 Finally, I will share two free books with you.
 
-* [Eloquent javascript](https://eloquentjavascript.net/) This is a dives deep into the JavaScript language to show you how to write beautiful, effective code.
+* [Eloquent javascript.](https://eloquentjavascript.net/) Dives deep into the JavaScript to show you how to write beautiful, effective code.
 
-* [You Don't Know JS Yet](https://github.com/getify/You-Dont-Know-JS) which is a free series of books that lets you explore the ins and outs of JavaScript and its core mechanisms.
+* [You Don't Know JS Yet.](https://github.com/getify/You-Dont-Know-JS) A free series of books that lets you explore the ins and outs of JavaScript and its core mechanisms.
 
 There you have it, a full list of resources about JavaScript which you can enjoy during the holidays. 🎅🤶
