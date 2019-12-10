@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 11
 title: The UX of APIs
-image: 'https://i.ibb.co/PZVVqps/desirable-viable-feasible-400.png'
+image: 'https://i.ibb.co/0JYhMzR/desirable-viable-feasible-364.png'
 ingress: ''
 links:
   - title: Consistency in api-design
