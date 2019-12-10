@@ -9,6 +9,8 @@ ingress: ''
 links:
   - title: Data classes
     url: 'https://kotlinlang.org/docs/reference/data-classes.html'
+authors:
+  - Herman Møyner Lund
 ---
 Kotlin brings with it a lot of good things like Null Safety and full interoperability with Java, but data classes might be one the things you most often notice during day to day work.
 
@@ -95,24 +97,26 @@ The compiler automatically derives
 * componentN() 
 * copy() 
 
-Creating new christmas trees are done like this:
+Creating new a new christmas tree object is done like this:
 
 ```
 val christmasTree = ChristmasTree(200, 100, 500)
 ```
 
-Using and accessing the values are done like this:
+Using and accessing the values is done like this:
 
 ```
-println(christmasTree.height)   //200println(christmasTree.radius)   //100println(christmasTree.price)    //500
+println(christmasTree.height)   // 200
+println(christmasTree.radius)   // 100
+println(christmasTree.price)    // 500
 ```
 
 The toString-method prints the values like this:
 
 ```
-println(christmasTree.toString()) //ChristmasTree(height=200, radius=100, price=500)
+println(christmasTree.toString()) // ChristmasTree(height=200, radius=100, price=500)
 ```
 
 ## Summary
 
-Kotlin data classes gives us less and more concise code, and with this more maintainable applications .
+Kotlin data classes gives us less and more concise code, and with this more maintainable applications.
