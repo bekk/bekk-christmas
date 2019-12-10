@@ -7,8 +7,8 @@ image: 'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b'
 ingress: >-
   **The people behind JavaScript** is a series of interviews with the members of
   [TC39](https://javascript.christmas/2018/1). The committee consists of
-  JavaScript enthusiasts and language experts who get together to define how
-  JavaScript new versions of should work. 
+  JavaScript enthusiasts and language experts who get together to define how new
+  versions of JavaScript should work.
 authors:
   - Svein Petter Gjøby
 ---
