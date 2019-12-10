@@ -4,10 +4,11 @@ post_year: 2019
 post_day: 11
 title: Fabulous Xamarin Forms
 image: ''
-ingress: >-
-  F# is a fully supported language for creating cross-platform apps with
+ingress: ''
+description: >-
+  F# is a fully supported language for creating cross-platform apps using
   Xamarin. This article teaches you to use the Fabulous framework on top of
-  Xamarin Forms, using the Model-View-Update architecture, to quickly craft
+  Xamarin Forms, utilizing the Model-View-Update architecture, to quickly craft
   fabulous apps!
 links:
   - title: Getting Started
