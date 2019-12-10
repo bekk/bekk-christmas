@@ -9,14 +9,14 @@ ingress: >-
   Version control software is an essential part of modern-day software developer
   practices, and Git is by far the most used system. However, the amount of
   commits, pull requests and activity in general may be huge, and reduce the
-  value of the git history. The Open Source project Gitmoji is an standardized
-  emoji guide for your commit messages. It lets you assign an emoji at the
-  beginning of commits, and it even comes with an interactive client which lets
-  you access the emojis in your command line. Though emojis is always fun, the
-  question arises; is it just a gimmick or does it add any value? 
+  value of the git history. The Open Source project Gitmoji is a standardized
+  emoji guide for your commit messages which enables you to assign an emoji at
+  the beginning of commits. It even comes with an interactive client that lets
+  you access the emojis through your command line. Although emojis are always
+  fun, the question arises; is it just a gimmick or does it add any value? 
 
 
-  Overview of emojis:
+  Overview of Gitmojis:
   [https://gitmoji.carloscuesta.me](https://gitmoji.carloscuesta.me/)
 links:
   - title: Gitmoji
@@ -26,7 +26,7 @@ authors:
 ---
 ## A picture says more than words
 
-Gitmoji was born to make it easier for developers to identify the purpose or intention of others commits, simply by looking at the associated emoji. And not to mention, the colors and joy it brings to the commit history. 
+Gitmoji was born to make it easier for developers to identify the purpose of others commits. With gitmoji others or your future self can simply look at the associated emoji and straightaway catch the intention. That in itself is a powerful feature for a developer analyzing line by line with text and code. And not to mention, the colors and joy it brings to the commit history. 
 
 ![](/assets/skjermbilde-2019-12-04-kl.-16.07.04.png "A sample of Gitmojis")
 
@@ -40,15 +40,19 @@ The learning process is an important factor with successful use of gitmoji. By s
 
 ## Forces you to make smaller and more specific commits
 
-A positive outcome of using gitmoji is the fact that it forces you to think through the content and message of your commits to a larger extent. It might reduce the urge to combine completely different changes in the same commits, or even writing commit messages like `small fixes`. The purpose of commit messages to communicate context about a change to other developers working on that project, and indeed, to your future self. Gitmojis may contribute to making this history more understandable a long time after the changes were committed. 
+A positive outcome of using gitmoji is the fact that it forces you to think through the content and message of your commits to a larger extent. It might reduce the urge to combine completely different changes in the same commits, or even writing diffuse commit messages like `small fixes`. The purpose of commit messages is to communicate context about a change to other developers working on that project, and indeed, to your future self. Gitmojis may contribute to making this history more understandable a long time after the changes were committed. 
 
 ![](/assets/skjermbilde-2019-12-10-kl.-19.43.00.png)
+
+## 
 
 ## May also be used for pull request titles
 
 Originally, gitmoji is meant for assigning emojis to the commit messages. This may be suitable for large pull requests with many commits of different nature. However, a small pull request with a defined objective may have fewer commits of similar nature. In this case, assigning gitmojis to the pull request title may be more relevant. From experience, doing both adds value. 
 
 ![](/assets/skjermbilde-2019-12-10-kl.-19.55.55.png)
+
+## 
 
 ## Summary
 
