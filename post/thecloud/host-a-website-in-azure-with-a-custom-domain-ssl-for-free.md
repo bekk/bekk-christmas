@@ -49,7 +49,7 @@ When you enable the static website feature on a storage account the website will
 ## Azure CDN
 There are many CDN providers that can provide free SSL on a custom domain, but with a pure Azure solution only the Azure CDN will do. The main benefit of using an Azure service is that the provisioning and configuration can easily be scripted using Azure Powershell or ARM-templates.
 
-To try it out you first have to create an Azure CDN profile in the Azure Portal and choose a pricing tier which supports custom domains. I chose the “Premium Verizon” tier just because it is the only tier that supports redirecting http => https using custom page rules. The CDN cost for a static website, which is typically just a few MB, is basically zero. Continue by adding a CDN endpoint inside the CDN profile that maps your CDN endpoint to your site: 
+To try it out, you first have to create an Azure CDN profile in the Azure Portal and choose a pricing tier which supports custom domains. I chose the “Premium Verizon” tier just because it is the only tier that supports redirecting http => https using custom page rules. The CDN cost for a static website, which is typically just a few MB, is basically zero. Continue by adding a CDN endpoint inside the CDN profile that maps your CDN endpoint to your site: 
 
 `<sitename>.azureedge.net → https://<storageaccountname>.z13.web.core.windows.net`
 
