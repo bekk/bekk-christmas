@@ -85,6 +85,6 @@ As we see, spaCy understands from the context that _bekk_ is in fact a proper no
 
 This has hopefully been a useful intro to some of the many available resources for Norwegian NLP! We tackled several other challenges, including [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), speech time mapping and [sociogram](https://en.wikipedia.org/wiki/Sociogram) generation, which may be covered some other time. Feel free to drop me an email if you're interested in hearing more<a href="mailto:tobias.pettrem@bekk.no" style="text-decoration:none">✉</a>
 
-<sup>1</sup> https://www.rev.ai/blog/how-to-calculate-word-error-rate/, https://medium.com/descript/which-automatic-transcription-service-is-the-most-accurate-2018-2e859b23ed19
+<sup>1</sup>https://www.rev.ai/blog/how-to-calculate-word-error-rate/, https://medium.com/descript/which-automatic-transcription-service-is-the-most-accurate-2018-2e859b23ed19
 
 <sup>2</sup>When combining stemming with tf-idf, we recommend grouping words on their stem, setting the stem's TF to the sum of each word's TF, and the stem's IDF to the lowest of each word's IDF.
