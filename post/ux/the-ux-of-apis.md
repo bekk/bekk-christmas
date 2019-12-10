@@ -26,7 +26,7 @@ I couldn’t agree more.
 
 And this year, I came across a challenge that really put this in perspective for me:
 
-The APIs we were delivering, weren’t doing their job.
+**The APIs we were delivering, weren’t doing their job.**
 
 Well, that’s not exactly true. We were making APIs that worked – others could use them to build their own digital solutions. But it was difficult for them to figure out just how they could make use of them, and develop stuff with them. 
 
