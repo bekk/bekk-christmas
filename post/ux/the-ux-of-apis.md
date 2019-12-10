@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 11
 title: The UX of APIs
-image: 'https://i.ibb.co/0JYhMzR/desirable-viable-feasible-364.png'
+image: ''
 ingress: ''
 links:
   - title: Consistency in api-design
@@ -18,6 +18,8 @@ links:
 authors:
   - Linda Christin Halvorsen
 ---
+![Product development of APIs](https://i.ibb.co/0JYhMzR/desirable-viable-feasible-364.png)
+
 This December 1st, Helen kicked off our Christmas calendar with [a bit of a rant, concerning titles](https://ux.christmas/2019/1). 
 
 > “It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.”
