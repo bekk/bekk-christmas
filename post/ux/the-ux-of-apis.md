@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 11
 title: The UX of api's
-image: >-
-  https://photos.google.com/u/1/search/_tra_/photo/AF1QipNhq2K5IC6EHnnFHVuErC9MIeC1Diezbk4_uOWq
+image: 'https://i.ibb.co/JtWsDjy/desirable-viable-feasible.png'
 ingress: "This December 1st, Helen kicked off our Christmas calendar with [a bit of a rant, concerning titles](https://ux.christmas/2019/1). \r\n\n> “It’s natural for us to want to keep to our own camp and focus on problems that can be solved with our own discipline. But this tunnel vision can severely limit our creative thinking and force us to fall back on obvious solutions.”\r\n\nI couldn’t agree more. \r\n\nAnd this year, I came across a challenge that really put this in perspective for me:\r\n\nThe APIs we were delivering, weren’t doing their job."
 links:
   - title: Consistency in api-design
@@ -65,4 +64,4 @@ And for us, that would have meant that we probably would have caught on a lot fa
 
 UX is everywhere – and you can live long and prosper a lot more if you take a look around and not let titles and old assumptions bog you down.
 
-![Examples of ambitions for your API-as-a-service](https://photos.app.goo.gl/ghnDQGn2h3wVq1am8)
+![Examples of ambitions for your API-as-a-service](https://i.ibb.co/JsNsdWd/ambisjoner-apier.png)
