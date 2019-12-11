@@ -29,7 +29,7 @@ Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det g
 
 <img class="dark-theme-image" src="https://i.ibb.co/znhdLFh/Social-proof-dark.png" alt="Eksempel på Nugget - social proof"/>
 
-Nuggetsene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det er bygger på vitenskap, og kan tilføre teamet ny kunnskap for å ta gode valg. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
+Nuggetsene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det bygger på vitenskap, og kan tilføre ny kunnskap til teamet for å ta gode valg. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
