@@ -18,7 +18,7 @@ authors:
 
 Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Roxy og Gerome ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. I tillegg finnes en kort oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man kan bruke det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til, de ulike prinsippene. 
 
-![Bilde av en nugget - social proof](https://i.ibb.co/H4ggFfP/Social-proof.png "Hva skjer om jeg skriver her?")
+![Bilde av en nugget - social proof](https://i.ibb.co/H4ggFfP/Social-proof.png)
 
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende Nuggets du kan bruke for å komme på nye idéer og konsepter. Etter å ha laget idéer er det er viktig å teste de ut for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
@@ -42,7 +42,7 @@ Vi kom på mange forskjellige, og kanskje litt uventede idéer, til hvordan vi k
 
 En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig takkemelding med beskjed om at de ville få en gratis dessert ved neste bestilling.
 
-![Vinnerløsningen](https://i.ibb.co/zG5WJjb/Vinnerl-sningen.png)
+![Vinnerideen](https://i.ibb.co/Tt8xR8k/Vinnerideen.png)
 
 Konseptet som vant avstemningen bygget på Nuggeten “Status”: vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
