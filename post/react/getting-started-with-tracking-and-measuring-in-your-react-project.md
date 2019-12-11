@@ -3,7 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 11
 title: Working with Azure Application Insights in your React app
-image: 'https://unsplash.com/photos/JXwwX0CQxXs'
+image: 'https://unsplash.com/photos/5uTm0Z-HH7M'
 ingress: >-
   Do you really know how your users are using your application? Have they tried
   out the latest feature you just deployed to production? Examining your user’s
@@ -26,7 +26,7 @@ authors:
 ---
 There are many products and services offered in related to measuring or tracking your user’s behaviour on your website. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than than setup and implementation.
 
-For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more low-level tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from the Application Insights resource on your Azure Portal. If you're just getting started Application Insights tracking, I recommend running the demo locally and playing the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
+For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more low-level tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from the Application Insights resource on your Azure Portal. If you're just getting started Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
 
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
@@ -71,9 +71,9 @@ Now this is just to showcase a possible use case and might be better placed else
 
 ![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
 
-Primitive and gets the point across. Here we've create a funnel using two events - it let's us and track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating which where most users fall off.
+Primitive and gets the point across. Here we've create a funnel using two events - it let's us and track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating where most users fall off.
 
-Complementing trackEvent(), there’s also these tracking methods:
+Getting back to our event tracking, there’s also these tracking methods:
 
 ```javascript
 const trackException () => {
@@ -93,7 +93,7 @@ const trackTrace = () =>  {
 
 Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention.
 
-Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A very useful feature is automatically tracking page views and user navigation routes. Another very convenient feature is auto collecting errors and communication.
+Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A convenient feature is auto collecting errors and communication:
 
 ```javascript
 const throwError = () => {
@@ -110,7 +110,11 @@ const fetchRequest = () => {
 };
 ```
 
-Now, these trackings can be made smarter, of course. For useful tracking, you might want to include more data which is relevant for monitoring events and errors. From there on, it’s easier to look for common denominators on errors. For example, you can create your own method for tracking, including all your relevant data
+Another very useful feature is automatically tracking page views and user navigation behaviour. This lets us follow the users path from start to end, by looking at the visited pages and the navigation route. For instance, a purchase process could look something like this:
+
+![Application Insights page tracking and flow](/assets/azure-page-tracking.png "Application Insights page tracking and flow")
+
+Now, these trackings can be made smarter, of course. For more useful tracking, you might want to include more data which is relevant for monitoring page views, events and errors. From there on, it’s easier to look for common denominators on potential improvements and errors. For example, you can create your own method for tracking, including all your relevant data:
 
 ```javascript
 // helper to retrieve common tracking properties
@@ -140,4 +144,4 @@ const trackEvent = (name, properties) => {
 
 Using this new method, you can add all of desired data for passing data along to certain types of tracking. Instead of typing the tracking name in manually, it could prove wise to create a file with tracking constant for use across the project.
 
-Application Insights has a lot of templates which allows you to explore the metrics from your webapp, without much experience or prerequisite knowledge. For more advanced metrics, note: for visualization it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way.
+Application Insights has a number of templates available which allows you to explore the metrics from your webapp, without much prerequisite knowledge or experience. There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project, whether it is a small hobby project or a large customer one :-)
