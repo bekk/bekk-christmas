@@ -50,7 +50,7 @@ Now this is just to showcase a possible use case and might be better placed else
 
 ![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
 
-Simple, but get's the point across. Here we've create a funnel using two events.
+Primitive, but get's the point across. Here we've create a funnel using two events - it let's us and track events in sequence, measuring the 
 
 Complementing trackEvent(), there’s also these tracking methods:
 
