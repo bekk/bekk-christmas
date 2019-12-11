@@ -91,7 +91,7 @@ fun transferChangedUsers(now: LocalDateTime): Result<Unit, String> {
     return Err("Failed to transfer users")
 }
 ```
-This implementation does not feel right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. Imagine that you needed to let the failure of each step propagate up the call-stack (an extremely common scenario). To do that, we could to add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, we get the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
+This implementation does not feel right. With all the error handling so tightly intertwined with the actual business logic, its readability suffers. Imagine that you needed to let the failure of each step propagate up the call-stack (an extremely common scenario). To do that, we could add else-clauses to all those ifs and then return the error. That would make it even more verbose and harder to read. There is, however, a simple fix for this readability problem: make `Result<T, E>` a monad. By adding a `map` and a `flatMap` function to the Result-type, we get the benefits of _monadic chaining_. For readability and explicitness, we name the `flatMap` function `andThen` (you will see why shortly) and also add a `mapError` function as well.
 
 ```Kotlin
 fun <U, T, E> Result<T, E>.map(transform: (T) -> U): Result<U, E> =
