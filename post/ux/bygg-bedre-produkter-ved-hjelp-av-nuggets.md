@@ -27,7 +27,7 @@ Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
-I høst kjørte Faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Kreativ Problemløsning” i Bekk en felles workshop der målet var å bli kjent med startpakken (Box One) vi har kjøpt. På den tiden var det mye snakk om Foodora, og lønningene til sykkelbudene deres. Derfor tenkte vi at det kunne være gøy å kjøre en workshop hvor vi var på syklistenes side, og lekte oss litt med problemstillingen: 
+I høst kjørte faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Kreativ Problemløsning” i Bekk en felles workshop der målet var å bli kjent med startpakken (Box One) vi har kjøpt. På den tiden var det mye snakk om Foodora, og lønningene til sykkelbudene deres. Derfor tenkte vi at det kunne være gøy å kjøre en workshop hvor vi var på syklistenes side, og lekte oss litt med problemstillingen: 
 
 > **“Hvordan få flere folk til å gi tips/mer tips til Foodora-syklistene når de bestiller mat fra Foodora?”**
 
