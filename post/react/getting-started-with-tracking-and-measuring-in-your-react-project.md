@@ -80,11 +80,7 @@ const getCommonTrackingProperties = () => {
         userInfo,
         userLanguage
     };
-}
-```
-
-```
-// middleman method for appending your propertiesconst trackEvent = (name, properties) => {
+}// middleman method for appending your propertiesconst trackEvent = (name, properties) => {
     const commonProps = getCommonTrackingProperties();
     appInsights.trackEvent(
         { name: name },
