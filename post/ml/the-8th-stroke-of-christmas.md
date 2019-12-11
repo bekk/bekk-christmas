@@ -43,7 +43,7 @@ After some time experimenting, we set the rnn size to 256, and the number of epo
 
 In the beginning, after a few number of epocs. Things look like this.
 
-!\[Weird](https://ibb.co/CML0V60)
+!\[Weird](https://i.ibb.co/qW61mC1/Daarligkake.png)
 
 If you have used the textgenrnn yourself, you have probably noticed the temperature-schedule. This is telling us how much randomness the model adds. A low number means little randomness. If we have a small number of randomness, the model just says “2 teaspoons of cardamom” all the time – this is probably due to there being much cardamom in the cookies in our recipe-list…I guess that gives us some information at least! 😊
 
