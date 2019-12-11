@@ -9,9 +9,9 @@ ingress: >-
   out the latest feature you just deployed to production? Examining your user’s
   behaviour and interaction can be tremendously useful - figuring out where they
   incur problems or halt a purchase, where in the onboarding process most people
-  fall of, how long they time they spend on certain pages, and even just where
+  fall of, how long time they spend on certain pages, and even just where
   they’re located are all valuable information for the further improvement and
-  development of your website. 
+  development of your website.
 links:
   - title: 'Github: Application Insights JavaScript SDK'
     url: 'https://github.com/microsoft/ApplicationInsights-JS'
@@ -50,7 +50,7 @@ Now this is just to showcase a possible use case and might be better placed else
 
 ![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
 
-Primitive, but gets the point across. Here we've create a funnel using two events - it let's us and track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating which where most users fall off.
+Primitive and gets the point across. Here we've create a funnel using two events - it let's us and track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating which where most users fall off.
 
 Complementing trackEvent(), there’s also these tracking methods:
 
@@ -99,7 +99,7 @@ const getCommonTrackingProperties = () => {
 ​
 ```
 
-
+Using this new method, you can add all of desired data for passing along. 
 
 Application Insights has a lot of templates which allows you to explore the metrics from your webapp, without much experience or prerequisite knowledge. For more advanced metrics, note: for visualization it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way. However 
 
