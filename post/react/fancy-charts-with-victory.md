@@ -11,7 +11,7 @@ ingress: >-
   there? You might begin by researching d3 since it's one of the most popular
   data viz libraries for javascript, but you quickly get overwhelmed by the
   myriads of customization options and the steep learning curve. You probably
-  don't evenneed all the bells and whistles that come included with it. My
+  don't even need all the bells and whistles that come included with it. My
   advice? Take a look at one of the slickest and most enjoyable charting
   libraries you're likely to come across this christmas - Victory.
 ---
@@ -39,17 +39,14 @@ const Chart = () => {
 };
 ```
 
-Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping 
-our `VictoryBar` component in a `VictoryChart`, like so:
+Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
 ```typescript jsx
 <VictoryChart domainPadding={20}>
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
 
-Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the 
-leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed
-by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
+Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
 ```typescript jsx
 <VictoryChart domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap />
@@ -59,9 +56,7 @@ by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
 ```
 
 ## Getting fancy
-One of the really nice things about Victory is that it is highly customizable and stylable. One way to style your chart
-is to pass a `theme` prop to the `VictoryChart` component. You can make your own theme or use on of the pre-defined
-ones with `VictoryTheme`:
+One of the really nice things about Victory is that it is highly customizable and stylable. One way to style your chart is to pass a `theme` prop to the `VictoryChart` component. You can make your own theme or use on of the pre-defined ones with `VictoryTheme`:
 ```typescript jsx
 <VictoryChart theme={VictoryTheme.material} domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap style={{ tickLabels: { padding: 16, fontSize: 8 } }} />
@@ -69,6 +64,4 @@ ones with `VictoryTheme`:
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
-Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. 
-We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that 
-there's some space between each.
+Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that  there's some space between each.
