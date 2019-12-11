@@ -41,11 +41,11 @@ Agendaen for workshopen var inspirert av en workshop på Design Matters, og var 
 
 Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
-![Idé nummer 1 og 2](https://i.ibb.co/2ngCK7n/Ide-nr-1-og-2.png)
+![Idé nummer 1 og 2](https://i.ibb.co/qykc1My/Ide-nr-1-og-2.png)
 
 En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig takkemelding med beskjed om at de ville få en gratis dessert ved neste bestilling.
 
-![Vinnerideen](https://i.ibb.co/Tt8xR8k/Vinnerideen.png)
+![Vinnerideen](https://i.ibb.co/QMN3nNf/Vinnerideen.png)
 
 Konseptet som vant avstemningen bygget på Nuggeten “Status”: vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
