@@ -46,7 +46,13 @@ Seems prett straight forward. Use the trackEvent() method by passing an object a
 const handleSearch = (searchString) => {    appInsights.trackEvent({        name: Search_start’,        query: searchString    });   fetch(santasgifs.com/api/s=${searchString})        .then(response => {            // handle response            appInsights.trackEvent({                name: Search_successful’,                query: searchString            });        .catch(e => {            appInsights.trackEvent({                name: Search_failed’,                query: searchString,                data: e        });};
 ```
 
-Now this is just to showcase a possible use case and might be better placed elsewhere. Complementing trackEvent(), there’s also these tracking methods:
+Now this is just to showcase a possible use case and might be better placed elsewhere. Here's how that could look in Azure Portal:
+
+![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
+
+Simple, but get's the point across. Here we've create a funnel using two events.
+
+Complementing trackEvent(), there’s also these tracking methods:
 
 ```
 const trackException () => {    appInsights.trackException({         error: new Error('Some error'),         severityLevel: SeverityLevel.Error     });};const trackTrace = () =>  {    appInsights.trackTrace({         message: 'Some trace',         severityLevel: SeverityLevel.Information    });}; 
@@ -92,8 +98,6 @@ const getCommonTrackingProperties = () => {
 }
 ​
 ```
-
-
 
 
 
