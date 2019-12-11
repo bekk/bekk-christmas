@@ -54,7 +54,7 @@ const trackException () => {    appInsights.trackException({         error: new 
 
 Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention.
 
-Instead of doing all of this manuaally, you can also automatically track a number of events without explicitly telling it to do so. A very useful feature is automatically tracking page views and user navigation routes. Another very convenient feature is auto collecting errors and communication.
+Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A very useful feature is automatically tracking page views and user navigation routes. Another very convenient feature is auto collecting errors and communication.
 
 ```
 const throwError = () => {
