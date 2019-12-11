@@ -32,7 +32,7 @@ I høst kjørte Faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Krea
 Agendaen for workshopen var inspirert av en workshop på Design Matters, og var ganske enkel:
 
 * Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen [“Zombie cats”](https://ux.christmas/2019/8) som Therese skrev om 8. desember.
-* Etter oppvarmingen fikk alle på gruppa velge seg en Nugget å gjøre seg kjent med, som de så forklarte til resten av gruppa. 
+* Etter oppvarmingen fikk alle på gruppa velge seg en Nugget å bli kjent med, som de så forklarte til resten av gruppa. 
 * Vi fortsatte workshopen med individuell brainstorm på Post It´s, der vi brukte Nuggetene som trigger og inspirasjon. 
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge de to idéene de hadde mest tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss selv. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
