@@ -18,7 +18,7 @@ One of the many branches of machine learning is [Natural Language Processing](ht
 To explore this, we did a conversation analysis [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) – analyzing and presenting the contents and metadata of a conversation between two or more people talking in Norwegian. This blog post will give a quick intro to some of the most useful resources for Norwegian NLP, to help you get started with your own NLP project!
 
 ![Meeting analysis output](/assets/echo_output_border.png "Meeting analysis output") 
-<span style="color:dimgray" font-size:10><i>Analysis output of a test discussion revolving around NLP product development</i></span>.
+<span style="color:dimgray"><i>Analysis output of a test discussion revolving around NLP product development</i></span>.
 
 <h3>Transcription</h3>
 
