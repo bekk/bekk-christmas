@@ -15,14 +15,11 @@ ingress: >-
   don't even need all the bells and whistles that come included with it. My
   advice? Take a look at one of the slickest and most enjoyable charting
   libraries you're likely to come across this christmas - Victory.
-authors:
-  - Stephen Ramthun
 ---
 ## Getting started
 Victory is super easy to get started with. Start by adding Victory to your list of dependencies: `npm i victory -S`, 
 assuming you're using npm. Now say you have some stock trading volume data that looks like this:
-
-```jsx
+```typescript jsx
 const data = [
   {date: '2019-12-10', volume: 16197},
   {date: '2019-12-9', volume: 32010},
@@ -33,10 +30,9 @@ const data = [
   {date: '2019-12-4', volume: 23621}
 ];
 ```
-
 All you need to do to let Victory visualize this data for you is to pass it along to a Victory component with some props 
 specifying which keys in the data objects to spread across which axes:
-```jsx
+```typescript jsx
 const Chart = () => {
     return (
         <VictoryBar data={data} x="date" y="volume" />
@@ -44,32 +40,19 @@ const Chart = () => {
 };
 ```
 
-<iframe
-     src="https://codesandbox.io/embed/zen-thunder-ehfff?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="zen-thunder-ehfff"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+![A simple bar chart](https://i.ibb.co/Jd0qVk0/1.png)
 
 Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
-
-```jsx
+```typescript jsx
 <VictoryChart domainPadding={20}>
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
-<iframe
-     src="https://codesandbox.io/embed/reverent-yalow-sijnh?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="reverent-yalow-sijnh"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+
+![A slightly more useful chart](https://i.ibb.co/8c1p6h4/2.png)
 
 Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
-
-```jsx
+```typescript jsx
 <VictoryChart domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap />
   <VictoryAxis dependentAxis />
@@ -82,10 +65,8 @@ Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop
 Not bad for only five lines of code, but there's still some room for improvement.
 
 ## Getting fancy
-
 One of the really nice things about Victory is that it is highly customizable and stylable. One way to style your chart is to pass a `theme` prop to the `VictoryChart` component. You can make your own theme or use on of the pre-defined ones with `VictoryTheme`:
-
-```jsx
+```typescript jsx
 <VictoryChart theme={VictoryTheme.material} domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap style={{ tickLabels: { padding: 16, fontSize: 8 } }} />
   <VictoryAxis dependentAxis />
@@ -113,8 +94,7 @@ Stock volume data is probably not best represented by a simple bar chart, which 
    ></iframe>
 
 Want to add zoom to your chart? Simply add a `containerComponent` prop to `VictoryChart` without any props, and let Victory work it's magic:
-
-```jsx
+```typescript jsx
 <VictoryChart
     ...
     containerComponent={
