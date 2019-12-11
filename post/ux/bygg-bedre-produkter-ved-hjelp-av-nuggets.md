@@ -76,4 +76,4 @@ For å oppsummere; Nuggets er ypperlig for å komme frem til kreative løsninger
 
 __
 
-_Illustrasjonene og bildene av Nuggetsene er hentet fra_ [_Coglode.c_om](https://www.coglode.com/)
+_Illustrasjonene og bildene av Nuggets er hentet fra_ [_Coglode.c_om](https://www.coglode.com/)
