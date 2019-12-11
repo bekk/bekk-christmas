@@ -45,14 +45,6 @@ When we first started developing the Entur app three years ago, all the communic
 
 > Cloud Functions for Firebase let you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your code is stored in Google's cloud and runs in a managed environment. There's no need to manage and scale your own servers.
 >
-> \
->
->
-> __
->
-> \
->
->
 > _https://firebase.google.com/docs/functions_
 
 Sounds great, right! But there was especially one thing we were curious about if we wore going to use Cloud Functions. And that was the _cold start_. Since these functions are serverless, the cloud server might shut down if there is no traffic, and then have to start up again it’s triggered. SInce there is no built-in way to keep the server running, our workaround was pinging some of our functions now and then to ensure that it was kept alive, so that the app user would get a fast response. 
