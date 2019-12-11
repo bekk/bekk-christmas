@@ -44,12 +44,12 @@ Konseptet som vant avstemningen bygget på nuggeten “Status”: vi ser stadig 
 En del av løsningene vi kom opp med kan vel sies å være noe kontroversielle. Men målet med workshopen var å teste ut hvordan vi kunne bruke nuggets i workshop, og ikke løsningene i seg selv. Så derfor spurte jeg noen av deltakerne hvordan de synes det var:
 
 > “Det var fint å bruke nuggetene i idégenereringa for å tvinge hjernen til å tenke annleis, og få andre koblingar. Blei skikkeleg gira av å bruke verktøyet i gruppa, me kom fram til så mange bra idear!” 
-> \- Åshild Aaen Torpe, Interaksjonsdesigner 
-
+> – Åshild Aaen Torpe, Interaksjonsdesigner 
+>
 > “Jeg synes adferdsnuggets var veldig interessant fordi jeg kom ut av mine vante tankemønstre, og kom på helt nye og spennende ideer. 10/10. Would recommend.” 
-> \- Alexander Slåfjell, Utvikler
-
+> – Alexander Slåfjell, Utvikler
+>
 > “Jeg syntes det var superinteressant 😀Et snedig verktøy for å komme opp med ideer på kort tid – noe folk fant i fleng 👍 
-> \- Erik Mathisen, Tekstforfatter
+> – Erik Mathisen, Tekstforfatter
 
 For å oppsummere; Nuggets er ypperlig for å komme frem til kreative løsninger. De kan hjelpe deg når du skal gjøre endringer i en tekst, så vel som når du skal utforme idéer og konsepter. De er like nyttig når du er alene som sammen med andre i en workshop. Ønsker du å teste ut nuggets så ligger mange av de beskrevet på Coglode sine nettsider, eller du kan bestille startpakken her (LENKE).
