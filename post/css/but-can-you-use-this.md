@@ -3,6 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 13
 title: 'CSS Christmas card - Part 2: But can you use this?'
+image: >-
+  https://images.unsplash.com/photo-1534759846116-5799c33ce22a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=988&q=80
 authors:
   - Dag Frode Solberg
 ---
