@@ -3,6 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 11
 title: Working with Azure Application Insights in your React app
+image: 'https://unsplash.com/photos/JXwwX0CQxXs'
 ingress: >-
   Do you really know how your users are using your application? Have they tried
   out the latest feature you just deployed to production? Examining your user’s
