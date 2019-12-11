@@ -85,3 +85,11 @@ Here we're using the pre-defined theme `VictoryTheme.material` which renders our
 
 Stock volume data is probably not best represented by a simple bar chart, which is why it's usually presented as a line chart or something similar in appearance. Luckily for us Victory makes it dead simple to change our chart type. Simply replace `VictoryBar` with `VictoryLine` and you get this:
 
+<iframe
+     src="https://codesandbox.io/embed/elastic-sound-dry9d?fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="elastic-sound-dry9d"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
