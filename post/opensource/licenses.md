@@ -1,7 +1,7 @@
 ---
 calendar: opensource
 post_year: 2019
-post_day: 15
+post_day: 18
 title: Open ≠ Free ≠ Gratis
 ingress: >-
   Software has become an integrated part of life. It's everywhere, and the
