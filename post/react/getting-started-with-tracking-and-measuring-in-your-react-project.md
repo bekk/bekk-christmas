@@ -5,13 +5,13 @@ post_day: 11
 title: Working with Azure Application Insights in your React app
 image: 'https://unsplash.com/photos/5uTm0Z-HH7M'
 ingress: >-
-  Do you really know how your users are using your application? Have they tried
-  out the latest feature you just deployed to production? Examining your user’s
-  behaviour and interaction can be tremendously useful - figuring out where they
-  incur problems or halt a purchase, where in the onboarding process most people
-  fall of, how long time they spend on certain pages, and even just where
-  they’re located are all valuable information for the further improvement and
-  development of your website.
+  Do you really know how your users are interacting with your application? Have
+  they tried out the latest feature you just deployed to production? Examining
+  your user’s behaviour and interaction can be tremendously useful - figuring
+  out where they incur problems or halt a purchase, where in the onboarding
+  process most people fall off, how long time they spend on certain pages, or
+  even just where on the site they’re located, are all valuable information for
+  the further improvement and development of your website.
 links:
   - title: 'Github: Application Insights JavaScript SDK'
     url: 'https://github.com/microsoft/ApplicationInsights-JS'
@@ -24,9 +24,9 @@ authors:
   - Sondre Widmark
   - Marie Buøen
 ---
-There are many products and services offered in related to measuring or tracking your user’s behaviour on your website. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than than setup and implementation.
+There are many products and services offered relating to measuring and tracking a user’s behaviour on websites. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than than setup and implementation.
 
-For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more low-level tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from the Application Insights resource on your Azure Portal. If you're just getting started Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
+For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more calibrated tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from the Application Insights resource on your Azure Portal. If you're just getting started Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
 
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
