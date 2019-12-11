@@ -18,17 +18,17 @@ In yesterday's post, we looked at how to get our data into BigQuery, and build q
 
 ## 4. Save the queries as views
 
-As our real-time bike availability status did not contain the station names, which we would want to display in the dashboard, we had to join two tables. In addition we wanted to calcualate some eucledian distances between map locations and bike stations (yup, that rhymes). BigQuery lets you save these queries as _views_, which is a virtual table based on the query results. These views will then contain all the columns and you can even query to a view itself.
-
-In Google Data Studio, 
+As our real-time bike availability status did not contain the station names, which we would want to display in the dashboard, we simply had to join the realtime status table with a static table containing station names. In addition we wanted to calcualate some eucledian distances between map locations and bike stations (yup, that rhymes). BigQuery lets you save these queries as _views_, which is a virtual table based on the query results. As views just gather and present data from other tables, they will be consistently up-to-date as the original tables have data added, changed or removed.
 
 ## 5. Visualize your data
 
-Google Data Studio is ideal for creating simple, interactive dashboards and reports. You can connect to a bunch of different services, such as - you guessed it - BigQuery, and share them with others.
+When we have finished setting up our data tables and views in BigQuery, we can start building the dashboard itself using Google Data Studio. Data Studio is built for creating simple, interactive dashboards and reports. You can connect to a bunch of different data providers and services, such as - you guessed it - BigQuery, and share the results with others. It is also possible to combine data from different sources in the same dashboard, making it a flexible and versatile tool. 
 
-
+For this simple dashboard we only needed to use a couple of different tables and views from BigQuery, such as the '10naermestsykler' view for showing the 10 bike stations with available bikes closest to our office. When you have connected your data sources, you can just make use of the drag-and-drop interface to place text, graphs, images, tables and shapes. Data Studio offers some customization options, including Excel-like features such as calculated fields. You can also add pickers for dimensions, metrics and date ranges, so the end-users themselves can filter the data in realtime.
 
 ![Screenshot from Google Data Studio](/assets/datastudio_screen.png)
+
+With the numbers and graphs all set up (and a couple of glances out the window to check if the numbers were actually correct), the final part was just to clean up the design a bit. Data Studio has a bunch of different nice-looking templates you can choose from, but we obviously wanted to keep it simple and tweak the colours of elements to match Bekk's brand palette.
 
 ## Final thoughts
 
