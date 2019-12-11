@@ -27,7 +27,7 @@ authors:
 ---
 There are many products and services offered relating to measuring and tracking a user’s behaviour on websites. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than setup and implementation.
 
-For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more calibrated tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project by Microsoft available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from an Application Insights resource in your Azure Portal. If you're just getting started with Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
+For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more calibrated tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There's a useful React demo project by Microsoft available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from an Application Insights resource in your Azure Portal. If you're just getting started with Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
 
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
@@ -41,7 +41,7 @@ const handleSearch = (searchString) => {
 };
 ```
 
-Pretty straight forward. Use the `trackEvent()` method by passing an object as argument. Use the `name` key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
+Pretty straight forward. Use the `trackEvent()` method by passing an object as argument. Use the `name` key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves beneficial for observing various stages of a process.
 
 ```js
 const handleSearch = (searchString) => {    
@@ -73,7 +73,7 @@ Now this is just to showcase a possible use case and could be better placed else
 
 ![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
 
-As with all examples it might be a bit primitive, but it gets the point across. Here we've create a funnel using two events - it lets us track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating where most users fall off.
+As with all examples it might be a bit primitive, but it gets the point across. Here we've create a funnel using two events - it lets us track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very beneficial for investigating where most users fall off.
 
 Getting back to our event tracking, we also have these tracking methods:
 
