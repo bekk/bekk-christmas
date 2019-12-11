@@ -21,6 +21,10 @@ Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. R
 
 ![Bilde av en nugget - social proof](https://i.ibb.co/D8KJQgy/Social-proof-dark.png)
 
+<img class="light-theme-image" src="https://i.ibb.co/Lv7Jg97/Social-proof-light.png" />
+
+<img class="dark-theme-image" src=<"https://i.ibb.co/D8KJQgy/Social-proof-dark.png" />
+
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende Nuggets du kan bruke for å komme på nye idéer og konsepter. Etter å ha laget idéer er det er viktig å teste de ut for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
