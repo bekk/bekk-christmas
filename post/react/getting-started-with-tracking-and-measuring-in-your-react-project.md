@@ -35,7 +35,7 @@ The most basic form of tracking is arguably event tracking. For example, say you
 const handleSearch = (searchString) => {     
     // handle search
     appInsights.trackEvent({
-        name: 'Search’,
+        name: 'Search',
         query: searchString
     });
 };
