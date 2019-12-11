@@ -3,7 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 12
 title: Fancy charts with Victory
-image: 'https://unsplash.com/photos/oK-HLdJwJ_s'
+image: >-
+  https://images.unsplash.com/photo-1574281160075-6eb5f7bfe645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ingress: >-
   Say you want to add a nice chart or other form of data visualization to your
   React app, but don't have the slightest idea of where to start. Do you write
@@ -38,6 +39,7 @@ const Chart = () => {
     );
 };
 ```
+![A simple chart](https://i.ibb.co/QP0sM34/1.png)
 
 Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
 ```typescript jsx
