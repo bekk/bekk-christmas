@@ -30,8 +30,9 @@ For our React project, we’re using Microsoft’s npm packages created for inte
 
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
-```
-const handleSearch = (searchString) => {     // handle search
+```javascript
+const handleSearch = (searchString) => {     
+    // handle search
     appInsights.trackEvent({
         name: 'Search’,
         query: searchString
@@ -41,8 +42,29 @@ const handleSearch = (searchString) => {     // handle search
 
 Seems prett straight forward. Use the trackEvent() method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings this proves useful for following various stages of the process.
 
-```
-const handleSearch = (searchString) => {    appInsights.trackEvent({        name: Search_start’,        query: searchString    });   fetch(santasgifs.com/api/s=${searchString})        .then(response => {            // handle response            appInsights.trackEvent({                name: Search_successful’,                query: searchString            });        .catch(e => {            appInsights.trackEvent({                name: Search_failed’,                query: searchString,                data: e        });};
+```javascript
+const handleSearch = (searchString) => {    
+    appInsights.trackEvent({        
+        name: Search_start’,
+        query: searchString
+    });
+    
+    fetch(santasgifs.com/api/s=${searchString})
+        .then(response => {
+            // handle response
+            appInsights.trackEvent({
+                name: Search_successful’,
+                query: searchString
+            })
+        })
+        .catch(e => {
+            appInsights.trackEvent({
+                name: Search_failed’,
+                query: searchString,
+                data: e
+            })
+        });
+};
 ```
 
 Now this is just to showcase a possible use case and might be better placed elsewhere. Here's how that could look in Azure Portal:
@@ -53,7 +75,7 @@ Primitive and gets the point across. Here we've create a funnel using two events
 
 Complementing trackEvent(), there’s also these tracking methods:
 
-```
+```javascript
 const trackException () => {    appInsights.trackException({         error: new Error('Some error'),         severityLevel: SeverityLevel.Error     });};const trackTrace = () =>  {    appInsights.trackTrace({         message: 'Some trace',         severityLevel: SeverityLevel.Information    });}; 
 ```
 
@@ -61,7 +83,7 @@ Here we’ve also introduced severity level, which can be used to filter trackin
 
 Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A very useful feature is automatically tracking page views and user navigation routes. Another very convenient feature is auto collecting errors and communication.
 
-```
+```javascript
 const throwError = () => {
     let foo = {
         field: { bar: 'value' }
@@ -74,7 +96,7 @@ const throwError = () => {
 
 Now, these trackings can be made smarter, of course. For useful tracking, you might want to include more data which is relevant for monitoring events and errors. From there on, it’s easier to look for common denominators on errors. For example, you can create your own method for tracking, including all your relevant data
 
-```
+```javascript
 // helper to retrieve common tracking properties
 const getCommonTrackingProperties = () => {
     const currentUrl = window.location.href;
@@ -85,7 +107,10 @@ const getCommonTrackingProperties = () => {
         userInfo,
         userLanguage
     };
-}// middleman for appending your propertiesconst trackEvent = (name, properties) => {
+}
+
+// middleman for appending your properties
+const trackEvent = (name, properties) => {
     const commonProps = getCommonTrackingProperties();
     appInsights.trackEvent(
         { name: name },
