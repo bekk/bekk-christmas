@@ -17,9 +17,9 @@ ingress: >-
   libraries you're likely to come across this christmas - Victory.
 ---
 ## Getting started
-Victory is super easy to get started with. Start by adding Victory to your list of dependencies: `npm i victory -S`, 
+Victory is super easy to get started with. Start by adding it to your list of dependencies: `npm i victory -S`, 
 assuming you're using npm. Now say you have some stock trading volume data that looks like this:
-```typescript jsx
+```jsx
 const data = [
   {date: '2019-12-10', volume: 16197},
   {date: '2019-12-9', volume: 32010},
@@ -32,7 +32,7 @@ const data = [
 ```
 All you need to do to let Victory visualize this data for you is to pass it along to a Victory component with some props 
 specifying which keys in the data objects to spread across which axes:
-```typescript jsx
+```jsx
 const Chart = () => {
     return (
         <VictoryBar data={data} x="date" y="volume" />
@@ -43,7 +43,7 @@ const Chart = () => {
 ![A simple bar chart](https://i.ibb.co/Jd0qVk0/1.png)
 
 Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
-```typescript jsx
+```jsx
 <VictoryChart domainPadding={20}>
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
@@ -52,7 +52,7 @@ Great! Our chart is currently not displaying any numbers or labels, so lets fix 
 ![A slightly more useful chart](https://i.ibb.co/8c1p6h4/2.png)
 
 Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
-```typescript jsx
+```jsx
 <VictoryChart domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap />
   <VictoryAxis dependentAxis />
@@ -66,7 +66,7 @@ Not bad for only five lines of code, but there's still some room for improvement
 
 ## Getting fancy
 One of the really nice things about Victory is that it is highly customizable and stylable. One way to style your chart is to pass a `theme` prop to the `VictoryChart` component. You can make your own theme or use on of the pre-defined ones with `VictoryTheme`:
-```typescript jsx
+```jsx
 <VictoryChart theme={VictoryTheme.material} domainPadding={20} padding={75}>
   <VictoryAxis fixLabelOverlap style={{ tickLabels: { padding: 16, fontSize: 8 } }} />
   <VictoryAxis dependentAxis />
@@ -114,3 +114,15 @@ Most of the components supplied by Victory have sensible defaults and are able t
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
+
+Victory is extremely customizable and tweakable while still providing a dead simple api that is easy to pick up and play with. It also provides an easy way of styling your charts by letting you define your own themes. Although Victory delivers a ton of functionality straight out of the box, you might sometimes need a little bit more direct control over the components in your chart. Which is why Victory lets you replace every Victory component with custom ones, like a scatter plot that renders cat emojis instead of boring dots:
+
+<iframe
+     src="https://codesandbox.io/embed/cocky-snyder-ikzb6?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="cocky-snyder-ikzb6"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+There is still so much more that Victory can do, and since I can't fit everything into this article I urge you to check out their official documentation and try it out for yourself.
