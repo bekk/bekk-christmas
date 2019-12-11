@@ -39,6 +39,7 @@ const Chart = () => {
     );
 };
 ```
+
 ![A simple chart](https://i.ibb.co/QP0sM34/1.png)
 
 Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
@@ -47,6 +48,8 @@ Great! Our chart is currently not displaying any numbers or labels, so lets fix 
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
+
+![A slightly more useful chart](https://i.ibb.co/q7VQLv4/2.png)
 
 Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
 ```typescript jsx
@@ -57,6 +60,8 @@ Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop
 </VictoryChart>
 ```
 
+![A chart with correctly spaced labels](https://i.ibb.co/7VGD7gY/3.png)
+
 ## Getting fancy
 One of the really nice things about Victory is that it is highly customizable and stylable. One way to style your chart is to pass a `theme` prop to the `VictoryChart` component. You can make your own theme or use on of the pre-defined ones with `VictoryTheme`:
 ```typescript jsx
@@ -66,4 +71,5 @@ One of the really nice things about Victory is that it is highly customizable an
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
+![A fancier chart](https://i.ibb.co/qpx5nQc/4.png)
 Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that  there's some space between each.
