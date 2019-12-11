@@ -88,8 +88,6 @@ const getCommonTrackingProperties = () => {
 ​
 ```
 
-https://www.npmjs.com/package/@microsoft/applicationinsights-web
-
 Application insights has a lot of prerequisites which allows you to explore the metrics from your webapp, pretty straight forward. For more advanced metrics, note: for visualisation it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way. However 
 
 This was a very small example, but there is really not that much configuration needed. You get a lot of metrics automatically. It is easy to add a new tracking event whenever you get an idea or and hypotheses you want to check out.
