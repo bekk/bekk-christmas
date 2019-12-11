@@ -29,7 +29,7 @@ Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det g
 
 <img class="dark-theme-image" src="https://i.ibb.co/znhdLFh/Social-proof-dark.png" alt="Eksempel på Nugget - social proof"/>
 
-Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det er bygger på vitenskap. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
+Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det er bygger på vitenskap, og kan tilføre teamet ny kunnskap for å ta gode valg. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
@@ -45,9 +45,9 @@ Agendaen for workshopen var ganske enkel:
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge to idéer de hadde tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
 
-<img class="light-theme-image" width="320px" src="https://i.ibb.co/6Z0t6yn/Workshop-light.png" alt="Samarbeid"/>
+<img class="light-theme-image" width="300" src="https://i.ibb.co/6Z0t6yn/Workshop-light.png" alt="Samarbeid"/>
 
-<img class="dark-theme-image" width="320px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
+<img class="dark-theme-image" width="300" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
 
 Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
