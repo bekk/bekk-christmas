@@ -17,7 +17,6 @@ ingress: >-
 authors:
   - Tarjei Skjærset
 ---
-
 But first we need to consider what recursion is and which functions are tail recursive and which are not.
 A function is said to be recursive if it is defined in terms of itself.
 Not only is recursion a natural and elegant solution for many problems, but in pure functional languages such as Elm and Haskell, there is simply no other way to express looping.
@@ -35,7 +34,7 @@ This translates nicely to programming.
 In a functional language we might define the factorial function like the following.
 
 ```F#
-let factorial n =
+let rec factorial n =
     match n with
     | 0 -> 1
     | n -> n * factorial (n-1)
@@ -47,7 +46,7 @@ This function is however not tail recursive, it is merely recursive.
 A slightly re-written version, which _is_ tail recursive, might look like the follwing.
 
 ```F#
-let factorial acc n =
+let rec factorial acc n =
     match n with
     | 0 -> acc
     | n -> factorial (acc * n) (n-1)
@@ -66,7 +65,7 @@ In which case we might as well return the answer directly.
 Maybe this becomes more clear if we take a look at the same two definitions re-written more verbosely, using intermediary variable names and if statements, instead of the more terse mathematics-like syntax above.
 
 ```F#
-let factorial n =
+let rec factorial n =
     if n = 0
     then 1
     else
@@ -75,7 +74,7 @@ let factorial n =
 ```
 
 ```F#
-let factorial acc n =
+let rec factorial acc n =
     if n = 0
     then acc
     else
