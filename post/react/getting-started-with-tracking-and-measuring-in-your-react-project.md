@@ -33,29 +33,11 @@ const handleSearch = (searchString) => {
 
 That’s as easy as it gets. Use the trackEvent() method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings this proves useful for following various stages of the process.
 
-`const handleSearch = (searchString) => {
-    appInsights.trackEvent({
-        name: Search_start’,
-        query: searchString
-    });
-    fetch(santasgifs.com/api/s=${searchString})
-        .then(response => {
-            // handle response
-            appInsights.trackEvent({
-                name: Search_successful’,
-                query: searchString
-            });
-        .catch(e => {
-            appInsights.trackEvent({ 
-                name: Search_failed’,
-                query: searchString,
-                data: e
-        });
-};`
+```
+const handleSearch = (searchString) => {    appInsights.trackEvent({        name: Search_start’,        query: searchString    });   fetch(santasgifs.com/api/s=${searchString})        .then(response => {            // handle response            appInsights.trackEvent({                name: Search_successful’,                query: searchString            });        .catch(e => {            appInsights.trackEvent({                name: Search_failed’,                query: searchString,                data: e        });};
+```
 
-``
-
-Now this is just to showcase a possible use case and might be better placed  elsewhere. Complimenting trackEvent(), there’s also these tracking methods:
+Now this is just to showcase a possible use case and might be better placed elsewhere. Complimenting trackEvent(), there’s also these tracking methods:
 
 `const trackException () => {
         appInsights.trackException({ error: new Error('Some error'), severityLevel: SeverityLevel.Error });
