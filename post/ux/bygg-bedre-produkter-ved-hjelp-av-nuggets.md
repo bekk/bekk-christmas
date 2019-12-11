@@ -31,8 +31,6 @@ Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det g
 
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
-
-
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
 I høst kjørte faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Kreativ Problemløsning” i Bekk en felles workshop der målet var å bli kjent med startpakken (Box One) vi har kjøpt. På den tiden var det mye snakk om Foodora, og lønningene til sykkelbudene deres. Derfor tenkte vi at det kunne være gøy å kjøre en workshop hvor vi var på syklistenes side, og lekte oss litt med problemstillingen: 
@@ -47,9 +45,9 @@ Agendaen for workshopen var ganske enkel:
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge to idéer de hadde tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
 
-<img class="light-theme-image" src="https://i.ibb.co/6Z0t6yn/Workshop-light.png" alt="Samarbeid"/>
+<img class="light-theme-image" "width: 320px" src="https://i.ibb.co/6Z0t6yn/Workshop-light.png" alt="Samarbeid"/>
 
-<img class="dark-theme-image" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
+<img class="dark-theme-image" "width: 320px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
 
 Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
@@ -60,8 +58,6 @@ En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønnin
 ![Vinneridéen fra workshopen](https://i.ibb.co/QMN3nNf/Vinnerideen.png "Vinneridéen fra workshopen")
 
 Konseptet som vant avstemningen bygget på Nuggeten “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
-
-
 
 ## Så.. hvordan synes vi det var å jobbe med Nuggets?
 
