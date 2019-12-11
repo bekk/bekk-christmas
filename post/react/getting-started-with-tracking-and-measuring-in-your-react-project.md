@@ -12,6 +12,14 @@ ingress: >-
   fall of, how long they time they spend on certain pages, and even just where
   they’re located are all valuable information for the further improvement and
   development of your website. 
+links:
+  - title: 'Github: Application Insights JavaScript SDK'
+    url: 'https://github.com/microsoft/ApplicationInsights-JS'
+  - title: 'Github: Application Insights React Plugin'
+    url: >-
+      https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js
+  - title: 'Github: Application Insights Demo'
+    url: 'https://github.com/Azure-Samples/application-insights-react-demo'
 authors:
   - Sondre Widmark
   - Marie Buøen
