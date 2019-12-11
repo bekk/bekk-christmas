@@ -23,7 +23,7 @@ Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. C
 
 <img class="dark-theme-image" src="https://i.ibb.co/7NYGyWr/The-nuggets-dark.png" alt="Hvordan nuggetene er bygget opp"/>
 
-Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. Kortet inneholder også en oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man anvender det. Navngivningen er viktig for at det de skal være enkelt å snakke om, og henvise til. "Sosialt Bevis" (Social Proof) er et eksempel på en slik Nugget. Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. Dette prinsippet har blant annet TripAdvisor benyttet seg av, og lyktes godt med. 
+Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. Kortet inneholder også en oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man anvender det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til. "Sosialt Bevis" (Social Proof) er et eksempel på en slik Nugget. Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. Dette prinsippet har blant annet TripAdvisor benyttet seg av, og lyktes godt med. 
 
 <img class="light-theme-image" src="https://i.ibb.co/GT926Pr/Social-proof-light.png" alt="Eksempel på Nugget - social proof"/>
 
@@ -78,4 +78,4 @@ Nuggets er ypperlig for å komme frem til kreative løsninger. De kan hjelpe deg
 
 __
 
-_Illustrasjonene og bildene av Nuggets er hentet fra_ [_Coglode.c_](https://www.coglode.com/)__[_om_](https://www.coglode.com/)__
+_Illustrasjonene og bildene av Nuggets er hentet fra_ [_Coglode.c_](https://www.coglode.com/)**[_om_](https://www.coglode.com/)**
