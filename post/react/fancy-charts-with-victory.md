@@ -83,7 +83,29 @@ One of the really nice things about Victory is that it is highly customizable an
 
 Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that  there's some space between each. 
 
-Stock volume data is probably not best represented by a simple bar chart, which is why it's usually presented as a line chart or something similar in appearance. Luckily for us Victory makes it dead simple to change our chart type. Simply replace `VictoryBar` with `VictoryLine` and you get this:
+Stock volume data is probably not best represented by a simple bar chart, which is why it's usually presented as a line chart or something similar. Luckily for us Victory makes it dead simple to change our chart type. Simply replace `VictoryBar` with `VictoryLine` and you get this:
+
+<iframe
+     src="https://codesandbox.io/embed/zen-thunder-ehfff?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="zen-thunder-ehfff"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+Want to add zoom to your chart? Simply add a `containerComponent` prop to `VictoryChart` without any props, and let Victory work it's magic:
+```typescript jsx
+<VictoryChart
+    ...
+    containerComponent={
+      <VictoryZoomContainer />
+    }
+>
+    ...
+</VictoryChart>
+```
+
+Most of the components supplied by Victory have sensible defaults and are able to render something useful without you having to do anything at all. How about adding a tooltip showing the trading volume for a particular point on the chart when hovering over it with your cursor? Easy! Switch out the zoom container with a `VictoryVoronoiContainer` and give it a function telling it how to display you data: 
 
 <iframe
      src="https://codesandbox.io/embed/elastic-sound-dry9d?fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
@@ -92,4 +114,3 @@ Stock volume data is probably not best represented by a simple bar chart, which 
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
-
