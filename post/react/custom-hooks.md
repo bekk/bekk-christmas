@@ -3,6 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 13
 title: Home-baked Hooks
+image: >-
+  https://images.unsplash.com/photo-1481233673589-df886804ee96?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: >-
   About a year ago, Sophie Alpert and Dan Abramov presented one of the most
   exciting new features in React: Hooks. Release 16.8 introduced several
