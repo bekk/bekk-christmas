@@ -73,10 +73,6 @@ One of the really nice things about Victory is that it is highly customizable an
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
-![A fancier chart](https://i.ibb.co/qpx5nQc/4.png)
-Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that  there's some space between each. 
-
-Stock volume data is probably not best represented by a simple bar chart, which is why it's usually presented as a line chart or something similar in appearance. Luckily for us Victory makes it dead simple to change our chart type. Simply replace `VictoryBar` with `VictoryLine` and you get this:
 
 <iframe
      src="https://codesandbox.io/embed/runtime-dew-6wy13?fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
@@ -84,3 +80,8 @@ Stock volume data is probably not best represented by a simple bar chart, which 
      title="runtime-dew-6wy13"
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+Here we're using the pre-defined theme `VictoryTheme.material` which renders our chart in a nice, soothing teal tint. We're also overriding the styling for the x-axis labels to make sure that our labels are easily readable and that  there's some space between each. 
+
+Stock volume data is probably not best represented by a simple bar chart, which is why it's usually presented as a line chart or something similar in appearance. Luckily for us Victory makes it dead simple to change our chart type. Simply replace `VictoryBar` with `VictoryLine` and you get this:
+
