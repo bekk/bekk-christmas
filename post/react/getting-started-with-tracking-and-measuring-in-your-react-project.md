@@ -25,7 +25,7 @@ authors:
   - Sondre Widmark
   - Marie Buøen
 ---
-There are many products and services offered relating to measuring and tracking a user’s behaviour on websites. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than than setup and implementation.
+There are many products and services offered relating to measuring and tracking a user’s behaviour on websites. This article is an introduction to using Azure’s Application Insights in your React project, focusing more on how it’s used than setup and implementation.
 
 For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more calibrated tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project by Microsoft available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from an Application Insights resource in your Azure Portal. If you're just getting started with Application Insights tracking, try running the demo locally and experiment with the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
 
@@ -41,7 +41,7 @@ const handleSearch = (searchString) => {
 };
 ```
 
-Seems pretty straight forward. Use the `trackEvent()` method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
+Pretty straight forward. Use the `trackEvent()` method by passing an object as argument. Use the `name` key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
 
 ```js
 const handleSearch = (searchString) => {    
@@ -50,7 +50,7 @@ const handleSearch = (searchString) => {
         query: searchString
     });
     
-    fetch(santasgifs.com/api/s=${searchString})
+    fetch(`santasgifs.com/api/s=${searchString}`)
         .then(response => {
             // handle response
             appInsights.trackEvent({
@@ -59,6 +59,7 @@ const handleSearch = (searchString) => {
             })
         })
         .catch(e => {
+            // handle error
             appInsights.trackEvent({
                 name: 'Search_failed',
                 query: searchString,
@@ -92,7 +93,7 @@ const trackTrace = () =>  {
 }; 
 ```
 
-Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention and what deserves to be logged at all.
+Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what requires our immediate attention and what deserves to be logged at all.
 
 Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A convenient feature is auto collecting errors and API methods:
 
@@ -103,7 +104,8 @@ const throwError = () => {
     };    
 
     // This will crash the app and the error will show up in the Azure Portal
-    return foo.fielld.bar;};
+    return foo.fielld.bar;
+};
 
 const fetchRequest = () => {
     // this will automatically show up in azure portal if you’re autocollecting fetch 
@@ -115,7 +117,7 @@ Another very useful feature is automatically tracking page views and user naviga
 
 ![Application Insights page tracking and user flow](/assets/azure-page-tracking.png "Application Insights page tracking and user flow")
 
-Now, these trackings can be made smarter, of course. For more useful tracking, you might want to include more data which is relevant for monitoring page views, events and errors. From there on, it’s easier to look for common denominators on potential improvements and errors. For example, you can create your own method for tracking, including all your relevant data:
+Now, these trackings can be made smarter, of course. For more useful tracking, you might want to include more data which is relevant for monitoring page views, events and errors. From there on, it’s easier to look for common denominators on potential improvements and errors. For instance, you can create a helper for tracking events and including all the relevant data:
 
 ```js
 // helper to retrieve common tracking properties
@@ -130,7 +132,7 @@ const getCommonTrackingProperties = () => {
     };
 }
 
-// middleman for appending your properties
+// middleman for including predetermined properties
 const trackEvent = (name, properties) => {
     const commonProps = getCommonTrackingProperties();
     appInsights.trackEvent(
@@ -143,10 +145,21 @@ const trackEvent = (name, properties) => {
 }
 ```
 
-Using this new method, you can add all of the desired data for passing data along to certain types of tracking. Instead of typing the tracking name in manually, it could prove wise to create a file to maintain tracking constant for use across the project.
+Using this approach, you can predetermine desired data for passing along particular types of data to different types of tracking. Additionally, instead of typing the tracking name in manually, it could prove wise to create a file to maintain tracking constant for use across the project.
+
+```js
+import { PURCHASE_COMPLETE } from "./trackingConstants";
+import { trackEvent } from "./trackingHelper";
+
+const handlePurchase = (shoppingCart) => {
+    // handle purchase
+    trackEvent(PURCHASE_COMPLETE, shoppingCart);
+    // our trackEvent helper supplements relevant user properties
+};
+```
 
 ## Templates to get you started
 
 Application Insights has a number of templates available which allows you to explore the metrics from your webapp, without much need for prerequisite knowledge or experience. 
 
-There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project, whether it is a small hobby project or a large customer one.
+There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project and the potential benefits, whether it is a small hobby project or a large client one.
