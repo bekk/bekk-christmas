@@ -145,7 +145,7 @@ const trackPurchaseEvent = (name, properties) => {
 }
 ```
 
-Using this approach, you can predetermine desired data for passing along particular types of data to different types of tracking. Additionally, instead of typing the tracking name in manually, it could prove wise to create a file to maintain tracking constant for use across the project.
+Using this approach, you can predetermine desired data for passing along particular types of data used in different types of tracking. Additionally, instead of typing the tracking name in manually, it could prove wise to create a file to maintain tracking constant for use across the project.
 
 ```js
 import { PURCHASE_COMPLETE } from "./trackingConstants";
@@ -161,4 +161,4 @@ const handlePurchase = (shoppingCart) => {
 
 Application Insights has a number of templates available which allows you to explore the metrics from your webapp, without much need for prerequisite knowledge or experience. 
 
-There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project and the potential benefits, whether it is a small hobby project or a large client one.
+There's still a ton of functionality which isn't mentioned here, but hopefully this article served as an interesting introduction to using Azure Application Insights in your React project and the potential benefits, whether it's a small hobby project or a large client one.
