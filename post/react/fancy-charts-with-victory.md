@@ -15,6 +15,9 @@ ingress: >-
   don't even need all the bells and whistles that come included with it. My
   advice? Take a look at one of the slickest and most enjoyable charting
   libraries you're likely to come across this christmas - Victory.
+links:
+  - title: Victory
+    url: 'https://formidable.com/open-source/victory/'
 ---
 ## Getting started
 Victory is super easy to get started with. Start by adding it to your list of dependencies: `npm i victory -S`, 
@@ -125,4 +128,4 @@ Victory is extremely customizable and tweakable while still providing a dead sim
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
 
-There is still so much more that Victory can do, and since I can't fit everything into this article I urge you to check out their official documentation and try it out for yourself.
+There is still so much more that Victory can do, and since I can't fit everything into this article I urge you to check out their [official documentation](https://formidable.com/open-source/victory/docs/) and try it out for yourself.
