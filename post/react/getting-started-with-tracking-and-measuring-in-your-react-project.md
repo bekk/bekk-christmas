@@ -39,13 +39,9 @@ const handleSearch = (searchString) => {    appInsights.trackEvent({        name
 
 Now this is just to showcase a possible use case and might be better placed elsewhere. Complementing trackEvent(), there’s also these tracking methods:
 
-`const trackException () => {
-        appInsights.trackException({ error: new Error('Some error'), severityLevel: SeverityLevel.Error });
-};`
-
-`const trackTrace = () =>  {
-    appInsights.trackTrace({ message: 'Some trace', severityLevel: SeverityLevel.Information });
-};`
+```
+const trackException () => {    appInsights.trackException({         error: new Error('Some error'),         severityLevel: SeverityLevel.Error     });};const trackTrace = () =>  {    appInsights.trackTrace({         message: 'Some trace',         severityLevel: SeverityLevel.Information    });}; 
+```
 
 Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention.
 
