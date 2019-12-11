@@ -31,8 +31,7 @@ For our React project, we’re using Microsoft’s npm packages created for inte
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
 ```
-const handleSearch = (searchString) => {
-    // handle search
+const handleSearch = (searchString) => {     // handle search
     appInsights.trackEvent({
         name: 'Search’,
         query: searchString
@@ -96,11 +95,8 @@ const getCommonTrackingProperties = () => {
         }
     );
 }
-​
 ```
 
-Using this new method, you can add all of desired data for passing along. 
+Using this new method, you can add all of desired data for passing data along to certain types of tracking. Instead of typing the tracking name in manually, it could prove wise to create a file with tracking constant for use across the project.
 
-Application Insights has a lot of templates which allows you to explore the metrics from your webapp, without much experience or prerequisite knowledge. For more advanced metrics, note: for visualization it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way. However 
-
-This was a very small example, but there is really not that much configuration needed. You get a lot of metrics automatically. It is easy to add a new tracking event whenever you get an idea or and hypotheses you want to check out.
+Application Insights has a lot of templates which allows you to explore the metrics from your webapp, without much experience or prerequisite knowledge. For more advanced metrics, note: for visualization it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way.
