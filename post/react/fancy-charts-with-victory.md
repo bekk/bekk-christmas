@@ -40,7 +40,13 @@ const Chart = () => {
 };
 ```
 
-![A simple chart](https://i.ibb.co/QP0sM34/1.png)
+<iframe
+     src="https://codesandbox.io/embed/zen-thunder-ehfff?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="zen-thunder-ehfff"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 Great! Our chart is currently not displaying any numbers or labels, so lets fix that next. We can do this by wrapping our `VictoryBar` component in a `VictoryChart`, like so:
 ```typescript jsx
@@ -48,8 +54,13 @@ Great! Our chart is currently not displaying any numbers or labels, so lets fix 
   <VictoryBar data={data} x="date" y="volume" />
 </VictoryChart>
 ```
-
-![A slightly more useful chart](https://i.ibb.co/q7VQLv4/2.png)
+<iframe
+     src="https://codesandbox.io/embed/reverent-yalow-sijnh?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="reverent-yalow-sijnh"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 Alright, we're getting somewhere. Note that we're passing a `domainPadding` prop to our `VictoryChart` to stop the leftmost bar from overlapping the y-axis. The labels for the x-axis are overlapping each other, but this is easily fixed by introducing `VictoryAxis` and a handy prop called `fixLabelOverlap`:
 ```typescript jsx
@@ -105,7 +116,7 @@ Want to add zoom to your chart? Simply add a `containerComponent` prop to `Victo
 </VictoryChart>
 ```
 
-Most of the components supplied by Victory have sensible defaults and are able to render something useful without you having to do anything at all. How about adding a tooltip showing the trading volume for a particular point on the chart when hovering over it with your cursor? Easy! Switch out the zoom container with a `VictoryVoronoiContainer` and give it a function telling it how to display you data: 
+Most of the components supplied by Victory have sensible defaults and are able to render something useful without you having to do anything at all. How about adding a tooltip showing the trading volume for a particular point on the chart when hovering over it with your cursor? Easy! Switch out the zoom container with a `VictoryVoronoiContainer` and give it a function telling it how to display your data: 
 
 <iframe
      src="https://codesandbox.io/embed/elastic-sound-dry9d?fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
