@@ -33,7 +33,7 @@ I høst kjørte faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Krea
 
 > **“Hvordan få flere folk til å gi tips/mer tips til Foodora-syklistene når de bestiller mat fra Foodora?”**
 
-Agendaen for workshopen var inspirert av en workshop på Design Matters, og var ganske enkel:
+Agendaen for workshopen var ganske enkel:
 
 * Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen [“Zombie cats”](https://ux.christmas/2019/8) som Therese skrev om 8. desember.
 * Etter oppvarmingen fikk alle på gruppa velge seg en Nugget å bli kjent med, som de så forklarte til resten av gruppa. 
