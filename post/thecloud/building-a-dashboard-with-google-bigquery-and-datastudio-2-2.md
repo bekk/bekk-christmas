@@ -9,6 +9,8 @@ ingress: >-
   blog post is part two of a short series where we look at how I, without much
   programming skills, was able to build such a dashboard in the cloud using
   Google’s BigQuery and DataStudio tools.
+authors:
+  - Morten Winther Wold
 ---
 Now it’s time to build our to visualise the data we have gathered. Google Data Studio makes you easily build nice-looking reports and live dashboards.
 
