@@ -76,7 +76,19 @@ Primitive and gets the point across. Here we've create a funnel using two events
 Complementing trackEvent(), there’s also these tracking methods:
 
 ```javascript
-const trackException () => {    appInsights.trackException({         error: new Error('Some error'),         severityLevel: SeverityLevel.Error     });};const trackTrace = () =>  {    appInsights.trackTrace({         message: 'Some trace',         severityLevel: SeverityLevel.Information    });}; 
+const trackException () => {
+    appInsights.trackException({
+         error: new Error('Some error'),
+         severityLevel: SeverityLevel.Error
+     });
+};
+
+const trackTrace = () =>  {
+    appInsights.trackTrace({
+         message: 'Some trace',
+         severityLevel: SeverityLevel.Information
+    });
+}; 
 ```
 
 Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention.
@@ -87,8 +99,12 @@ Instead of doing all of this manually, you can also automatically track a number
 const throwError = () => {
     let foo = {
         field: { bar: 'value' }
-    };    // This will crash the app and the error will show up in the Azure Portal
-    return foo.fielld.bar;};const fetchRequest = () => {
+    };    
+
+    // This will crash the app and the error will show up in the Azure Portal
+    return foo.fielld.bar;};
+
+const fetchRequest = () => {
     // this will automatically show up in azure portal if you’re autocollecting fetch 
     fetch('https://httpbin.org/status/200');
 };
