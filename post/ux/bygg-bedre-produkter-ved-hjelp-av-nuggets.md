@@ -69,7 +69,7 @@ En del av løsningene vi kom opp med kan vel sies å være noe kontroversielle. 
 > “Jeg synes adferdsnuggets var veldig interessant fordi jeg kom ut av mine vante tankemønstre, og kom på helt nye og spennende ideer. 10/10. Would recommend.” 
 > – Alexander Slåfjell, Utvikler
 >
-> “Jeg syntes det var superinteressant 😀Et snedig verktøy for å komme opp med ideer på kort tid – noe folk fant i fleng 👍 
+> “Jeg syntes det var superinteressant 😀 Et snedig verktøy for å komme opp med ideer på kort tid – noe folk fant i fleng 👍 
 > – Erik Mathisen, Tekstforfatter
 
 For å oppsummere; Nuggets er ypperlig for å komme frem til kreative løsninger. De kan hjelpe deg når du skal gjøre endringer i en tekst, så vel som når du skal utforme idéer og konsepter. De er like nyttig når du er alene som sammen med andre. Ønsker du å lære mer om og teste ut Nuggets, så ligger mange av de beskrevet på [Coglode sine nettsider](https://www.coglode.com/), eller [du kan bestille startpakken her](https://www.coglode.com/nuggets/pricing).
