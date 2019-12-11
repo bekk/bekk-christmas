@@ -42,6 +42,8 @@ Vi kom på mange forskjellige, og kanskje litt uventede idéer, til hvordan vi k
 
 En annen idé kombinerte prinsippene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig takkemelding med beskjed om at de ville få en gratis dessert ved neste bestilling.
 
+![Vinnerløsningen](https://i.ibb.co/zG5WJjb/Vinnerl-sningen.png)
+
 Konseptet som vant avstemningen bygget på nuggeten “Status”: vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
 ## Så.. hvordan synes vi det var å jobbe med nuggets?
