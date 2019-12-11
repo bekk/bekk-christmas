@@ -84,7 +84,7 @@ The documentation for the textgenrnn clearly states that the model doesn't creat
     1 egg
     ```
 
-We chose this recipe, because it has a substantial amount of dry matter (flour and sugar) fluid (milk, heavy cream, butter) and interesting (...yet special) taste components (raisins, nutmeg, lemon and brandy). We might have to alter the amounts somewhat, but this is great base for creating a christmas cake!
+We chose this recipe, because it has a substantial amount of dry matter (flour and sugar) fluid (milk, heavy cream, butter) and interesting (...yet special) taste components (raisins, cardamom, lemon and brandy). We might have to alter the amounts somewhat, but this is great base for creating a christmas cake!
 
 We decided to see what kind of role our ingredients usually have in their recipes, and base our instructions upon that:
 
