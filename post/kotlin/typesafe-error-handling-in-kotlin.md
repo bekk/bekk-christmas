@@ -8,6 +8,9 @@ links:
     url: 'http://oneeyedmen.com/failure-is-not-an-option-part-1.html'
   - title: kotlin-result
     url: 'https://github.com/michaelbull/kotlin-result'
+  - title: Encapsulate successful or failed function execution
+    url: >-
+      https://github.com/Kotlin/KEEP/blob/master/proposals/stdlib/result.md#encapsulate-successful-or-failed-function-execution
 authors:
   - Fredrik Løberg
 ---
