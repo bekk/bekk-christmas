@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2019
 post_day: 11
-title: Getting started with tracking and measuring in your react project
+title: Working with Azure Application Insights in your React app
 ingress: >-
   Do you really know how your users are using your application? Have they tried
   out the latest feature you just deployed to production? Examining your user’s
