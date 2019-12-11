@@ -2,7 +2,7 @@
 calendar: css
 post_year: 2019
 post_day: 13
-title: 'CSS Christmas card - Part 1: But can you use this?'
+title: 'CSS Christmas card - Part 2: But can you use this?'
 authors:
   - Dag Frode Solberg
 ---
