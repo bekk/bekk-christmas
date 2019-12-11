@@ -17,11 +17,9 @@ authors:
 ---
 ## Hva er Nuggets, og hva kan man bruke de til?
 
-Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Roxy og Gerome ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. I tillegg finnes en kort oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man kan bruke det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til, de ulike prinsippene. 
+Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Roxy og Gerome ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. I tillegg finnes en kort oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man kan bruke det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til, de ulike prinsippene. Et eksempel på en slik Nugget er "Sosialt Bevis" ("Social Proof"). Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. 
 
 ![Bilde av en nugget - social proof](https://i.ibb.co/H4ggFfP/Social-proof.png)
-
-Et eksempel på en slik Nugget er "Sosialt Bevis" ("Social Proof"). Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. 
 
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende Nuggets du kan bruke for å komme på nye idéer og konsepter. Etter å ha laget idéer er det er viktig å teste de ut for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
