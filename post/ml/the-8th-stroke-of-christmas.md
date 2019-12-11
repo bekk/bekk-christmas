@@ -2,7 +2,9 @@
 calendar: ml
 post_year: 2019
 post_day: 24
-title: The 8th Stroke of Christmas
+title: The 8th Christmas cookie
+image: >-
+  https://images.unsplash.com/photo-1480215529400-2995f91ddb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ---
 So, you have finally arrived at the end of our modest “tutorial” to machine learning, and may continue on the road of illumination all by yourself.
 
