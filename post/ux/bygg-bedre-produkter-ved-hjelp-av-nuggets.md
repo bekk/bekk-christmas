@@ -17,13 +17,13 @@ authors:
 ---
 ## Hva er Nuggets, og hva kan man bruke de til?
 
-Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Coglode ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. 
+Nuggets er en “liten munnfull” adferdsforskning formulert som et prinsipp. Coglode ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. 
 
 <img class="light-theme-image" src="https://i.ibb.co/NW3gZh1/The-nuggets-light.png" alt="Hvordan nuggetene er bygget opp"/>
 
 <img class="dark-theme-image" src="https://i.ibb.co/7NYGyWr/The-nuggets-dark.png" alt="Hvordan nuggetene er bygget opp"/>
 
-Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. Kortet inneholder også en oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man anvender det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til. "Sosialt Bevis" (Social Proof) er et eksempel på en slik Nugget. Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. Dette prinsippet har blant annet TripAdvisor benyttet seg av, og lyktes godt med. 
+Hver Nugget består av et navngitt adferdsprinsipp, med beskrivelse av hva det går ut på. Kortet inneholder også en oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man anvender det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til. "Sosialt Bevis" (Social Proof) er et eksempel på en slik Nugget. Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. Dette prinsippet har blant annet TripAdvisor benyttet seg av, og lyktes godt med. 
 
 <img class="light-theme-image" src="https://i.ibb.co/GT926Pr/Social-proof-light.png" alt="Eksempel på Nugget - social proof"/>
 
@@ -49,7 +49,7 @@ Agendaen for workshopen var ganske enkel:
 
 <img class="dark-theme-image" style="width: 300px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
 
-Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggetsen “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
+Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
 ![To av idéene fra workshopen](https://i.ibb.co/qykc1My/Ide-nr-1-og-2.png "To av idéene fra workshopen")
 
@@ -57,7 +57,7 @@ En annen idé kombinerte Nuggetsene “Overraskelse” (Surprise) og “Belønni
 
 ![Vinneridéen fra workshopen](https://i.ibb.co/QMN3nNf/Vinnerideen.png "Vinneridéen fra workshopen")
 
-Konseptet som vant avstemningen bygget på Nuggetsen “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
+Konseptet som vant avstemningen bygget på Nuggeten “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
 ## Så.. hvordan synes vi det var å jobbe med Nuggets?
 
