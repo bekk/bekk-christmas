@@ -24,13 +24,13 @@ Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
-I høst kjørte Faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Kreativ Problemløsning” i Bekk en felles workshop der målet var å bli kjent med startpakken vi har kjøpt(LENKE). På den tiden var det mye snakk om Foodora, og lønningene til sykkelbudene deres. Derfor tenkte vi at det kunne være gøy å kjøre en workshop hvor vi var på syklistenes side, og lekte oss litt med problemstillingen: 
+I høst kjørte Faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Kreativ Problemløsning” i Bekk en felles workshop der målet var å bli kjent med startpakken vi har kjøpt. På den tiden var det mye snakk om Foodora, og lønningene til sykkelbudene deres. Derfor tenkte vi at det kunne være gøy å kjøre en workshop hvor vi var på syklistenes side, og lekte oss litt med problemstillingen: 
 
 > “Hvordan få flere folk til å gi tips/mer tips til Foodora-syklistene når de bestiller mat fra Foodora?”
 
 Agendaen for workshopen var inspirert av en workshop på Design Matters, og var ganske enkel:
 
-* Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen “Zombie cats” som Therese skrev om 8. desember. (LENKE)
+* Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen [“Zombie cats”](https://ux.christmas/2019/8) som Therese skrev om 8. desember.
 * Etter oppvarmingen fikk alle på gruppa velge seg en nugget å gjøre seg kjent med, som de så forklarte til resten av gruppa. 
 * Vi fortsatte workshopen med individuell brainstorm på Post It´s, der vi brukte nuggetene som trigger og inspirasjon. 
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge de to idéene de hadde mest tro på, tegne de på A3 ark, og henge de opp på veggen. 
@@ -55,4 +55,4 @@ En del av løsningene vi kom opp med kan vel sies å være noe kontroversielle. 
 > “Jeg syntes det var superinteressant 😀Et snedig verktøy for å komme opp med ideer på kort tid – noe folk fant i fleng 👍 
 > – Erik Mathisen, Tekstforfatter
 
-For å oppsummere; Nuggets er ypperlig for å komme frem til kreative løsninger. De kan hjelpe deg når du skal gjøre endringer i en tekst, så vel som når du skal utforme idéer og konsepter. De er like nyttig når du er alene som sammen med andre i en workshop. Ønsker du å teste ut nuggets så ligger mange av de beskrevet på Coglode sine nettsider, eller du kan bestille startpakken her (LENKE).
+For å oppsummere; Nuggets er ypperlig for å komme frem til kreative løsninger. De kan hjelpe deg når du skal gjøre endringer i en tekst, så vel som når du skal utforme idéer og konsepter. De er like nyttig når du er alene som sammen med andre i en workshop. Ønsker du å teste ut nuggets så ligger mange av de beskrevet på [Coglode sine nettsider](https://www.coglode.com/), eller [du kan bestille startpakken her](https://www.coglode.com/nuggets/pricing).
