@@ -43,7 +43,7 @@ Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi ka
 
 ![Idé nummer 1 og 2](https://i.ibb.co/qykc1My/Ide-nr-1-og-2.png)
 
-En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig takkemelding med beskjed om at de ville få en gratis dessert ved neste bestilling.
+En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig takkemelding, og beskjed om at de ville få en gratis dessert ved neste bestilling.
 
 ![Vinnerideen](https://i.ibb.co/QMN3nNf/Vinnerideen.png)
 
