@@ -3,9 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 12
 title: Bygg bedre produkter ved hjelp av Nuggets!
-image: >-
-  [url=https://ibb.co/T13HD2D][img]https://i.ibb.co/PMH5sjs/Coglode-Nuggets.png[/img][/url]
-  [url=https://imgbb.com/]upload temporary image[/url]
+image: 'https://ibb.co/T13HD2D'
 ingress: >-
   Har du noen gang gjort noe bare fordi “alle andre” gjorde det? Trent mer og
   spist sunnere i januar? Eller kanskje til og med vært i et forhold du visste
