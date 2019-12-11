@@ -28,7 +28,7 @@ There are many products and services offered in related to measuring or tracking
 
 For our React project, we’re using Microsoft’s npm packages created for integrating your project tracking in Application Insights. [@microsoft/applicationinsights-web](https://github.com/microsoft/ApplicationInsights-JS) is the Javascript SDK and works well if you’re mostly interested in tracking actions and events. [@microsoft/applicationinsights-react-js](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-react-js) is a React plugin for the Javascript SDK, which enables instrumenting various react component usage tracking and utilizing higher-order component function. It permits for more low-level tracking, for instance measuring time from the ComponentDidMount event through the ComponentWillUnmount event. There is a good React demo project available [here](https://github.com/Azure-Samples/application-insights-react-demo), all you need to get started is the instrumentation key from the Application Insights resource on your Azure Portal. If you're just getting started Application Insights tracking, I recommend running the demo locally and playing the different forms of tracking showcased. So what can you do with all of this? Let's get trackin'
 
-The most basic form of tracking is arguably event tracking. For example tracking what users search for on your site.
+The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
 ```
 const handleSearch = (searchString) => {
@@ -92,6 +92,10 @@ const getCommonTrackingProperties = () => {
 }
 ​
 ```
+
+
+
+
 
 Application Insights has a lot of templates which allows you to explore the metrics from your webapp, without much experience or . For more advanced metrics, note: for visualization it works okay for the most basic stuff. It is possible to get an indication for how many search fails and how many who succeed. The events you have implemented in you react app will appear in the dropdown. This is the easiest way. However 
 
