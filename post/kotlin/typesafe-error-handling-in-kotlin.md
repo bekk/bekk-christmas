@@ -209,7 +209,7 @@ Currently, my rule of thumb is that you should use:
 
 Exceptions when:
 * You treat all errors equally, and the type of the error is irrelevant. I.e.,
-  * You have an error handler at the top-level of your application that _only_ catches instances of `Exception`.
+  * An error handler at the top-level of your application that _only_ catches instances of `Exception` is sufficient.
   * You do not try to recover from failure.
 * There is a high risk of the error being swallowed, either now or after a refactor in the future.
 
