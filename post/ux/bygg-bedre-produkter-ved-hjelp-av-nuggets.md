@@ -47,7 +47,7 @@ En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønnin
 
 ![Vinnerideen](https://i.ibb.co/QMN3nNf/Vinnerideen.png)
 
-Konseptet som vant avstemningen bygget på Nuggeten “Status”: vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
+Konseptet som vant avstemningen bygget på Nuggeten “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
 ## Så.. hvordan synes vi det var å jobbe med Nuggets?
 
