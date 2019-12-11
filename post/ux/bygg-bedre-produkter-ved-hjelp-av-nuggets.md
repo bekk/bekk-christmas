@@ -39,7 +39,7 @@ Agendaen for workshopen var inspirert av en workshop på Design Matters, og var 
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge to idéer de hadde tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
 
-Vi kom på mange forskjellige, og kanskje litt uventede idéer, til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
+Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
 ![Idé nummer 1 og 2](https://i.ibb.co/2ngCK7n/Ide-nr-1-og-2.png)
 
