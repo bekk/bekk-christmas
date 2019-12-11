@@ -65,23 +65,23 @@ In which case we might as well return the answer directly.
 
 Maybe this becomes more clear if we take a look at the same two definitions re-written more verbosely, using intermediary variable names and if statements, instead of the more terse mathematics-like syntax above.
 
-```reasonml
+```F#
 let factorial n =
-    if (n == 0) {
-        return 1
-    }
-    let rest = factorial (n-1)
-    return n * rest
+    if n = 0
+    then 1
+    else
+      let rest = factorial (n-1)
+      n * rest
 ```
 
-```reasonml
+```F#
 let factorial acc n =
-    if (n == 0) {
-        return acc
-    }
-    let sofar = acc * n
-    let next = n - 1
-    return factorial sofar next
+    if n = 0
+    then acc
+    else
+      let sofar = acc * n
+      let next = n - 1
+      factorial sofar next
 ```
 
 The important difference is that in the first definition there is more work to be done after the recursive call, namely the multiplication `n * rest`, while in the second definition, all the work happens before.
