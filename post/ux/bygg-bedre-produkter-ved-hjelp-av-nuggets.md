@@ -29,7 +29,7 @@ Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det g
 
 <img class="dark-theme-image" src="https://i.ibb.co/znhdLFh/Social-proof-dark.png" alt="Eksempel på Nugget - social proof"/>
 
-Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det er bygger på vitenskap, og kan tilføre teamet ny kunnskap for å ta gode valg. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
+Nuggetsene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. Det som skiller dette fra andre kreative verktøy er at det er bygger på vitenskap, og kan tilføre teamet ny kunnskap for å ta gode valg. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
@@ -39,9 +39,9 @@ I høst kjørte faggruppene “Anvendt Psykologi og Nevrovitenskap” og “Krea
 
 Agendaen for workshopen var ganske enkel:
 
-* Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen [“Zombie cats”](https://ux.christmas/2019/8) som Therese skrev om 8. desember.
+* Vi delte oss opp i grupper. For å kickstarte workshopen kjørte vi oppvarmingsøvelsen “Zombie cats" som [Therese skrev om 8. desember](https://ux.christmas/2019/8).
 * Etter oppvarmingen fikk alle på gruppa velge seg en Nugget å bli kjent med, som de så forklarte til resten av gruppa. 
-* Vi fortsatte workshopen med individuell brainstorm på Post Its, der vi brukte Nuggetene som trigger og inspirasjon. 
+* Vi fortsatte workshopen med individuell brainstorm på Post Its, der vi brukte Nuggetsene som trigger og inspirasjon. 
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge to idéer de hadde tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
 
@@ -49,21 +49,21 @@ Agendaen for workshopen var ganske enkel:
 
 <img class="dark-theme-image" width="300" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
 
-Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggeten “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
+Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggetsen “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
 ![To av idéene fra workshopen](https://i.ibb.co/qykc1My/Ide-nr-1-og-2.png "To av idéene fra workshopen")
 
-En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig melding, og beskjed om at de ville få en gratis dessert som takk ved neste bestilling.
+En annen idé kombinerte Nuggetsene “Overraskelse” (Surprise) og “Belønning” (Reward). Vi mennesker responderer bra på positive overraskelser, og endrer oppførsel når vi får gaver som forsterker handlinger vi gjør. Med de prinsippene som inspirasjon kom vi på idéen om å gi de brukerne som gav tips en overraskelse. Overraskelsen besto av en hyggelig melding, og beskjed om at de ville få en gratis dessert som takk ved neste bestilling.
 
 ![Vinneridéen fra workshopen](https://i.ibb.co/QMN3nNf/Vinnerideen.png "Vinneridéen fra workshopen")
 
-Konseptet som vant avstemningen bygget på Nuggeten “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
+Konseptet som vant avstemningen bygget på Nuggetsen “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
 
 ## Så.. hvordan synes vi det var å jobbe med Nuggets?
 
 En del av løsningene vi kom opp med kan vel sies å være noe kontroversielle. Men målet med workshopen var å teste ut hvordan vi kunne bruke Nuggets i workshop, og ikke løsningene i seg selv. Så derfor spurte jeg noen av deltakerne hvordan de synes det var:
 
-> “Det var fint å bruke Nuggetene i idégenereringa for å tvinge hjernen til å tenke annleis, og få andre koblingar. Blei skikkeleg gira av å bruke verktøyet i gruppa, me kom fram til så mange bra idear!” 
+> “Det var fint å bruke Nuggetsene i idégenereringa for å tvinge hjernen til å tenke annleis, og få andre koblingar. Blei skikkeleg gira av å bruke verktøyet i gruppa, me kom fram til så mange bra idear!” 
 > – Åshild Aaen Torpe, Interaksjonsdesigner 
 >
 > “Jeg synes adferdsnuggets var veldig interessant fordi jeg kom ut av mine vante tankemønstre, og kom på helt nye og spennende ideer. 10/10. Would recommend.” 
