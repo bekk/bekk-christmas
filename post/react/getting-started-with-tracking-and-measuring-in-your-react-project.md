@@ -69,20 +69,16 @@ Here we’ve also introduced severity level, which can be used to filter trackin
 
 By using the React plugin for the Application Insights Javascript SDK, you can also automatically track a number of events without explicitly telling it to do so. A very useful feature is automatically tracking page views and user navigation route. Another very convenient feature is auto collecting errors and communication.
 
-`const throwError = () => {
+```
+const throwError = () => {
     let foo = {
         field: { bar: 'value' }
-    };`
-
-`// This will crash the app and the error will show up in the Azure Portal
-return foo.fielld.bar;`
-
-`}`
-
-`const fetchRequest = () => {
+    };    // This will crash the app and the error will show up in the Azure Portal
+    return foo.fielld.bar;};const fetchRequest = () => {
     // this will automatically show up in azure portal if you’re autocollecting fetch 
-        fetch('https://httpbin.org/status/200');
-}`
+    fetch('https://httpbin.org/status/200');
+};
+```
 
 Now, these trackings can be made smarter, of course. For useful tracking, you might want to include more data which is relevant for monitoring events and errors. From there on, it’s easier to look for common denominators on errors. For example, you can create your own method for tracking, including all your relevant data
 
@@ -101,7 +97,7 @@ const getCommonTrackingProperties = () => {
 ```
 
 ```
-const trackEvent = (name, properties) => {
+// middleman method for appending your propertiesconst trackEvent = (name, properties) => {
     const commonProps = getCommonTrackingProperties();
     appInsights.trackEvent(
         { name: name },
