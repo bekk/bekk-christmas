@@ -9,11 +9,11 @@ ingress: ''
 authors:
   - Dag Frode Solberg
 ---
-Once upon a time, a developer named Dag was asked to create a Christmas card for his team. Having little experience with photo editing software, he turned to his strengths, web development.
+Once upon a time, a developer named Dag was asked to create a Christmas card for his team. Having little experience with photo editing software, he turned to his main strength: web development.
 
-He started out collecting some photos of his team. He considered many options. Should he find them on Facebook, take some himself, or find some funny characters to illustrate them? Pondering this, he opened a pull request to give some feedback. Looking back at him from the pull request was the answer!
+He started out collecting some photos of his team. He considered many options. Should he find them on Facebook, take some himself, or find some funny characters to illustrate them? While pondering about this, he opened a pull request to give some feedback. Looking back at him from the pull request was the answer!
 
-"Why not use the profile pictures on GitHub? They are already uploaded and can easily be scaled!" So he did just that, collected all the GitHub profile pictures of his team.
+"Why not use the profile pictures on GitHub? They are already uploaded and can easily be scaled!" So he did just that, collected the GitHub profile pictures of everyone on his team.
 
 <iframe height="317" style="width: 100%;" scrolling="no" title="OJPMMwe" src="https://codepen.io/dagfs/embed/OJPMMwe?height=317&theme-id=default&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/OJPMMwe'>OJPMMwe</a> by Dag Frode
@@ -24,7 +24,7 @@ He started out collecting some photos of his team. He considered many options. S
 
 "That is a good start," he thought to himself. But where do I go from here? He remembered Mira on his team styling the user profile images in their project, so he went and asked her how she had done it.
 
-"How I styled those rounded images?" Mira said. "That is quite easy, and you can use border-radius 50% to get a circular image!"
+"How I styled those rounded images?" Mira said. "That is quite easy - you can use border-radius 50% to get a circular image!"
 
 Dag added the following styling to the images he had collected. 
 
@@ -53,7 +53,7 @@ second-radius-top-left | second-radius-top-right | second-radius-bottom-right | 
 border-radius: 1px 0 3px 4px / 20% 10% 30% 40%; 
 ```
 
-"Neat!" He thought. "This can be very useful for anything that needs rounded corners. Even if the items have variable sizes as I can use both lengths in px and percentages. I can also create elliptical shapes and have control of each corner. But for now, I'll stick with the one value to rule them all".
+"Neat!", he thought. "This can be very useful for anything that needs rounded corners. Even if the items have variable sizes as I can use both lengths in px and percentages. I can also create elliptical shapes and have control of each corner. But for now, I'll stick with the one value to rule them all".
 
 ## Cutting corners for Christmas
 
@@ -80,11 +80,22 @@ And to think that all it took was a little code.
 
 Dag tried to summarize the property, but quickly found he would have to reference the documentation when needed. But he noted that one could use different geometric shapes as well as SVG to create a clipping region of what parts of an element to show.
 
+```css
+/*
+* A short excerpt from the MDN web docs
+*/
+
+/* <basic-shape> values */
+clip-path: inset(100px 50px);
+clip-path: circle(50px at 0 100px);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+clip-path: path('M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,1,1,1,0.5,0.3 A0.25,0.25,1,1,1,1,0.3 C1,0.7,0.5,1,0.5,1 Z');
+```
 [MDN web docs: clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
 
 ## Decorating the three
 
-After taking some time to enjoy his hard work, Dag thought to himself, "Let's put it together." He added the images of his team to the three and using <absolute> positioning, positioned them on the three as Christmas decoration. "Look at how nice I've hung them on the tree," he thought to himself, followed by "... Uhm, that was a poor choice of words.". He also added a fitting background to make it all come together even better.
+After taking some time to enjoy his hard work, Dag thought to himself, "Let's put it together." He added the images of his team to the three and using <absolute> positioning, positioned them on the three as Christmas decoration. "Look at how nice I've hung them on the tree," he thought to himself, followed by "... Uhm, that was a poor choice of words." He also added a fitting background to make it all come together even better.
 
 "This is starting to look like something! But we should have a star too!". Using the same steps as with the three, he created a star and placed it on the top of the three.
 
@@ -94,7 +105,7 @@ After taking some time to enjoy his hard work, Dag thought to himself, "Let's pu
 </iframe>
 
 
-"Better! But not quite there," The three looks a bit bland, "Maybe a gradient could spice up the three? But I've never gotten the hang of them". He took to his favorite search engine with a quack and quickly found something he thought he could use. [CSS Stripes Generator](http://stripesgenerator.com) . Generating some rad stripes and then tweaking them, he came up with a result he was happy with.
+"Better! But not quite there." The three looks a bit bland. "Maybe a gradient could spice up the three? But I've never gotten the hang of them". He took to his favorite search engine with a quack and quickly found something he thought he could use. [CSS Stripes Generator](http://stripesgenerator.com). Generating some rad stripes and then tweaking them, he came up with a result he was happy with.
 
 <iframe height="837" style="width: 100%;" scrolling="no" title="three with decorations" src="https://codepen.io/dagfs/embed/MWYKybE?height=837&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/MWYKybE'>three with decorations</a> by Dag Frode
@@ -102,16 +113,22 @@ After taking some time to enjoy his hard work, Dag thought to himself, "Let's pu
 </iframe>
 
 
-The [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) property turned out to be powerful as one could get an image generated based on gradients.
+The [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) property turned out to be powerful, as one could get an image generated based on gradients.
 
-All the CSS is needed to generate some nice stripes was:
+All the CSS needed to generate some nice stripes was:
 
 ```css
 background-image: linear-gradient(5deg, #1a9900 25%, #00ab17 25%, #00ab17 50%, #1a9900 50%, #1a9900 75%, #00ab17 75%, #00ab17 100%);
 background-size: 49.44px 68.05px;
 ``` 
 
+He noted the following as his own reference for how to use the `linear-gradiant`:
 
-He put his hands behind his head, leaned backward, and enjoyed his work. But he only got to enjoy it for a short while as he noticed what time it was. "I'll finish this tomorrow," he thought as he made sure it was stored.
+```css
+linear-gradient( <angle-in-deg>, [<color> <step-in-percentage>] )
+linear-gradient( 5deg, red 50%, blue 100%)
+```
 
-To be continued tomorrow.
+He put his hands behind his head, leaned backward, and enjoyed his work. But he only got to enjoy it for a short while as he noticed what time it was. "I'll finish this tomorrow," he thought as he made sure his hard work was saved.
+
+_To be continued tomorrow._
