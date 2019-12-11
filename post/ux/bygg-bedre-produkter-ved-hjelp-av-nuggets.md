@@ -18,7 +18,7 @@ authors:
 
 Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Roxy og Gerome ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller nuggets. Hver nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. I tillegg finnes en kort oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man kan bruke det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til, de ulike prinsippene. 
 
-![Nuggeten social proof](https://i.ibb.co/wRmjmSy/Social-proof.png)
+![Nuggeten social proof](https://i.ibb.co/H4ggFfP/Social-proof.png)
 
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende nuggets du kan bruke for å komme på nye idéer og konsepter. Etter å ha laget idéer er det er viktig å teste de ut for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
