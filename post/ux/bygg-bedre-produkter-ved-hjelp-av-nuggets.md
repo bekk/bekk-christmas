@@ -15,6 +15,10 @@ links: []
 authors:
   - Guro Johanson
 ---
+<img class="light-theme-image" src="https://i.ibb.co/NW3gZh1/The-nuggets-light.png" alt="EHvordan nuggetene er bygget opp"/>
+
+<img class="dark-theme-image" src="https://i.ibb.co/7NYGyWr/The-nuggets-dark.png" alt="Hvordan nuggetene er bygget opp"/>
+
 ## Hva er Nuggets, og hva kan man bruke de til?
 
 Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Coglode ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller Nuggets. Hver Nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. Kortet inneholder også en oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man anvender det. Navngivningen er viktig for at det de skal være enkelt å snakke om, og henvise til. "Sosialt Bevis" (Social Proof) er et eksempel på en Nugget. Det handler om at vi kopierer andres oppførsel, spesielt i ukjente situasjoner. Dette prinsippet har blant annet TripAdvisor benyttet seg av. 
