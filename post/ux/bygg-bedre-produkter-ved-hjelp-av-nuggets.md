@@ -5,8 +5,8 @@ post_day: 12
 title: Bygg bedre produkter ved hjelp av Nuggets!
 image: ''
 ingress: >-
-  Har du noen gang gjort noe bare fordi “alle andre” gjorde det? Trent mer og
-  spist sunnere i januar? Eller kanskje til og med blitt værende i et forhold du
+  Har du noen gang gjort noe bare fordi andre gjorde det? Trent mer og spist
+  sunnere i januar? Eller kanskje til og med blitt værende i et forhold du
   visste burde vært slutt? Det er du ikke alene om. Men hvorfor gjør vi egentlig
   disse tingene? Og hvordan kan vi bruke kunnskap om adferd i designprosessen?
   Roxy og Gerome i [CoGlode](https://www.coglode.com/) lager Nuggets for å
