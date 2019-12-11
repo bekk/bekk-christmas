@@ -132,8 +132,8 @@ const getCommonTrackingProperties = () => {
     };
 }
 
-// middleman for including predetermined properties
-const trackEvent = (name, properties) => {
+// tracking method for including predetermined properties
+const trackPurchaseEvent = (name, properties) => {
     const commonProps = getCommonTrackingProperties();
     appInsights.trackEvent(
         { name: name },
@@ -149,12 +149,11 @@ Using this approach, you can predetermine desired data for passing along particu
 
 ```js
 import { PURCHASE_COMPLETE } from "./trackingConstants";
-import { trackEvent } from "./trackingHelper";
+import { trackPurchaseEvent } from "./trackingHelper";
 
 const handlePurchase = (shoppingCart) => {
     // handle purchase
-    trackEvent(PURCHASE_COMPLETE, shoppingCart);
-    // our trackEvent helper supplements relevant user properties
+    trackPurchaseEvent(PURCHASE_COMPLETE, shoppingCart);
 };
 ```
 
