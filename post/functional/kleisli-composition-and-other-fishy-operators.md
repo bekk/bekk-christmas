@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2019
-post_day: 14
+post_day: 12
 title: Kleisli composition and other fishy operators
 image: >-
   https://images.unsplash.com/photo-1508886661276-2ba595d8cd22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2652&q=80
