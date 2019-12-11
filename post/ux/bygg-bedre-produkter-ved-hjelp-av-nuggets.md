@@ -18,7 +18,7 @@ authors:
 
 Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. Roxy og Gerome ønsker å gjøre forskningen enkel for folk flest å forstå og benytte seg av. Derfor oppsummerer de den på praktiske kort som de kaller nuggets. Hver nugget består av et navngitt atferdsprinsipp, med beskrivelse av hva det går ut på. I tillegg finnes en kort oppsummering av forskningen bak prinsippet, og hovedfunn som forklarer hvordan man kan bruke det. Navngivningen er viktig for at det skal være enkelt å snakke om, og henvise til, de ulike prinsippene. 
 
-![Nuggeten social proof](/assets/social-proof.png)
+![Nuggeten social proof](https://i.ibb.co/wRmjmSy/Social-proof.png)
 
 Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende nuggets du kan bruke for å komme på nye idéer og konsepter. Etter å ha laget idéer er det er viktig å teste de ut for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
 
@@ -35,6 +35,8 @@ Agendaen for workshopen var inspirert av en workshop på Design Matters, og var 
 * Vi fortsatte workshopen med individuell brainstorm på Post It´s, der vi brukte nuggetene som trigger og inspirasjon. 
 * Etterpå presenterte vi idéene til hverandre, og bearbeidet de videre i gruppen. Hver gruppe måtte velge de to idéene de hadde mest tro på, tegne de på A3 ark, og henge de opp på veggen. 
 * For å simulere en test av løsningene, kjørte vi avstemning. Alle fikk tre stemmer hver, som skulle brukes på den løsningen vi tenkte ville ha mest innflytelse på oss selv. Valget var selvsagt hemmelig, slik at vi ikke skulle påvirke hverandre. 
+
+![Idé nummer 1 og 2](https://i.ibb.co/WzWmTqB/Ide-nummer-1-og-2.png)
 
 Vi kom på mange forskjellige, og kanskje litt uventede idéer, til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av prinsippet “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
