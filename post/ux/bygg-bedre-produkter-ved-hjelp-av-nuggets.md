@@ -45,10 +45,10 @@ En del av løsningene vi kom opp med kan vel sies å være noe kontroversielle. 
 
 > “Det var fint å bruke nuggetene i idégenereringa for å tvinge hjernen til å tenke annleis, og få andre koblingar. Blei skikkeleg gira av å bruke verktøyet i gruppa, me kom fram til så mange bra idear!” 
 > \- Åshild Aaen Torpe, Interaksjonsdesigner 
->
+
 > “Jeg synes adferdsnuggets var veldig interessant fordi jeg kom ut av mine vante tankemønstre, og kom på helt nye og spennende ideer. 10/10. Would recommend.” 
 > \- Alexander Slåfjell, Utvikler
->
+
 > “Jeg syntes det var superinteressant 😀Et snedig verktøy for å komme opp med ideer på kort tid – noe folk fant i fleng 👍 
 > \- Erik Mathisen, Tekstforfatter
 
