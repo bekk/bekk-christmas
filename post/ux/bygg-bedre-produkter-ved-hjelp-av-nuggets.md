@@ -9,9 +9,7 @@ ingress: >-
   burde vært slutt? Da er du i så fall ikke alene. Men hvorfor gjør vi egentlig
   disse tingene? Roxy og Gerome i [Coglode](https://www.coglode.com/) lager
   nuggets som gir oss forklaring på dette, og mye mer.
-links:
-  - title: 6 oppvarmingsøvelser for å kickstarte din workshop
-    url: 'https://ux.christmas/2019/8'
+links: []
 authors:
   - Guro Johanson
 ---
