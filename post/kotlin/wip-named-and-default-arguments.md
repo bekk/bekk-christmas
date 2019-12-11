@@ -87,7 +87,7 @@ Now it's possible to call the function while omiting the given arguments:
 prepareChristmasGift("John Doe")
 ```
 
-Neat! Keep in mind that, unless we combine this with Named Arguments, only trailing arguments can be ommited. If we wanted to supply the `applyRibbon` and the `applyGiftBow` with arguments other than the default ones, we would also have to give arguments for preceding arguments.
+Neat! Keep in mind that, unless we combine this with Named Arguments, only trailing arguments can be ommited. If we wanted to supply the `applyRibbon` and the `applyGiftBow` with arguments other than the default ones, we would also have to give values for preceding arguments.
 ​
 ## Combining Named and Default Arguments
 ​
