@@ -41,12 +41,12 @@ const handleSearch = (searchString) => {
 };
 ```
 
-Seems prett straight forward. Use the trackEvent() method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
+Seems pretty straight forward. Use the `trackEvent()` method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
 
 ```js
 const handleSearch = (searchString) => {    
     appInsights.trackEvent({        
-        name: Search_start’,
+        name: 'Search_start',
         query: searchString
     });
     
@@ -54,13 +54,13 @@ const handleSearch = (searchString) => {
         .then(response => {
             // handle response
             appInsights.trackEvent({
-                name: Search_successful’,
+                name: 'Search_successful',
                 query: searchString
             })
         })
         .catch(e => {
             appInsights.trackEvent({
-                name: Search_failed’,
+                name: 'Search_failed',
                 query: searchString,
                 data: e
             })
@@ -72,7 +72,7 @@ Now this is just to showcase a possible use case and could be better placed else
 
 ![A funnel in Application Insights](/assets/image.png "A funnel in Application Insights")
 
-Primitive, but gets the point across. Here we've create a funnel using two events - it lets us track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating where most users fall off.
+As with all examples it might be a bit primitive, but it gets the point across. Here we've create a funnel using two events - it lets us track events in sequence, measuring the changes between each step. For instance, in a multi-step onboarding process, this proves very useful for investigating where most users fall off.
 
 Getting back to our event tracking, we also have these tracking methods:
 
@@ -94,7 +94,7 @@ const trackTrace = () =>  {
 
 Here we’ve also introduced severity level, which can be used to filter tracking in Application Insights to display what needs our immediate attention and what deserves to be logged at all.
 
-Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A convenient feature is auto collecting errors and api methods:
+Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A convenient feature is auto collecting errors and API methods:
 
 ```js
 const throwError = () => {
@@ -145,4 +145,8 @@ const trackEvent = (name, properties) => {
 
 Using this new method, you can add all of the desired data for passing data along to certain types of tracking. Instead of typing the tracking name in manually, it could prove wise to create a file to maintain tracking constant for use across the project.
 
-Application Insights has a number of templates available which allows you to explore the metrics from your webapp, without much need for prerequisite knowledge or experience. There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project, whether it is a small hobby project or a large customer one :-)
+## Templates to get you started
+
+Application Insights has a number of templates available which allows you to explore the metrics from your webapp, without much need for prerequisite knowledge or experience. 
+
+There's still a ton of functionality which isn't mentioned here, but hopefully this article served as a interesting introduction to using Azure Application Insights in your React project, whether it is a small hobby project or a large customer one.
