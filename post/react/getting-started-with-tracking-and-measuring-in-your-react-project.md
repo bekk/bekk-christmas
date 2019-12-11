@@ -112,7 +112,7 @@ const fetchRequest = () => {
 
 Another very useful feature is automatically tracking page views and user navigation behaviour. This lets us follow the users path from start to end, by looking at the visited pages and the navigation route. For instance, a purchase process could look something like this:
 
-![Application Insights page tracking and flow](/assets/azure-page-tracking.png "Application Insights page tracking and flow")
+![Application Insights page tracking and user flow](/assets/azure-page-tracking.png "Application Insights page tracking and user flow")
 
 Now, these trackings can be made smarter, of course. For more useful tracking, you might want to include more data which is relevant for monitoring page views, events and errors. From there on, it’s easier to look for common denominators on potential improvements and errors. For example, you can create your own method for tracking, including all your relevant data:
 
