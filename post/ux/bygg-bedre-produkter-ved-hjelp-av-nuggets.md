@@ -23,7 +23,9 @@ Nuggets er en “liten munnfull” atferdsforskning formulert som et prinsipp. C
 
 <img class="dark-theme-image" src="https://i.ibb.co/znhdLFh/Social-proof-dark.png" alt="Eksempel på Nugget - social proof"/>
 
-Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med en problemstilling som skal løses. Deretter velger du ut noen passende Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
+Nuggetene er laget for å gjøre det enklere å ta beslutninger, bli inspirert, og få frem gode idéer raskt. For å ta de i bruk i designprosessen begynner du med problemstillingen som skal løses. Deretter velger du ut noen Nuggets du kan bruke for å komme på nye idéer og konsepter. Det er viktig å teste idéene du lager for å se om du får den effekten du ønsker. Den beste måten å teste om en løsning fungerer er å kjøre en eller flere A/B tester. 
+
+
 
 ## Hvordan nudge flere til å gi tips til Foodora-syklistene?
 
@@ -48,6 +50,8 @@ En annen idé kombinerte Nuggetene “Overraskelse” (Surprise) og “Belønnin
 ![Vinneridéen fra workshopen](https://i.ibb.co/QMN3nNf/Vinnerideen.png "Vinneridéen fra workshopen")
 
 Konseptet som vant avstemningen bygget på Nuggeten “Status”: Vi ser stadig etter måter å forbedre hvordan andre ser oss. Konseptet gikk ut på at kundene fikk maten levert i ulike poser avhengig av hvor mye tips de hadde gitt. Hadde de droppet tips fikk de rød pose, og hadde de gitt bra tips så fikk de grønn. Etter hvert som folk ble kjent med dette, ville de som hadde grønn pose bli sett i et bedre lys enn de som hadde rød. 
+
+
 
 ## Så.. hvordan synes vi det var å jobbe med Nuggets?
 
