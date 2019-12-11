@@ -49,7 +49,7 @@ If you have used the textgenrnn yourself, you have probably noticed the temperat
 
 The recipes keep getting better, and after a whole 1000 epocs, things look promising.
 
-Pic
+![](/assets/brakake.png)
 
 The documentation for the textgenrnn clearly states that the model doesn't create perfect texts all the time, and that we may have to do some manual alteration afterwards. With that in mind, we did approximately 10 runs, and picked the cake we believed the most in. The cookie consists of
 
