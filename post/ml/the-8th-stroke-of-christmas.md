@@ -98,6 +98,6 @@ So, based on this information, we have decided on these instructions:
 
 1. Melt butter, and blend it with the sugar. Let the mixture cool
 2. Cream, milk, eggs and brandy is blended with the cool mixture of butter and sugar.
-3. Peel lemons, grate the nutmeg, and mix in flour, sugar and raisins.
+3. Peel lemons, and mix in flour, sugar, cardamom and raisins.
 
 Without baking powder or baking soda, this is probably going to be a a non-rasing cake, like gingerbread. We therefore prepare a long which we can fill with this (hopefully) amazing dough, and cook, before cutting them with a knife when is done.
