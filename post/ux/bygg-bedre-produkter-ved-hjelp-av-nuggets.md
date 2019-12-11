@@ -49,7 +49,7 @@ Agendaen for workshopen var ganske enkel:
 
 <img class="dark-theme-image" style="width: 300px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid"/>
 
-Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggetsen “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å prøve trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
+Vi kom på mange forskjellige, og kanskje litt uventede idéer til hvordan vi kan få brukerne av Foodora til å gi sykkelbudene mer tips. En av idéene var inspirert av Nuggetsen “Gjensidighet” (Reciprocity): Når noen er snille med oss, ønsker vi å være snill tilbake. For å øke sannsynligheten for at sykkelbudet skulle få tips, tenkte vi å få kundene til å føle at budet var snille med de. En måte å trigge det på var å legge frem hvor kaldt og guffent vær syklisten måtte ut i for å levere maten. 
 
 ![To av idéene fra workshopen](https://i.ibb.co/qykc1My/Ide-nr-1-og-2.png "To av idéene fra workshopen")
 
