@@ -3,7 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 11
 title: Working with Azure Application Insights in your React app
-image: 'https://unsplash.com/photos/5uTm0Z-HH7M'
+image: >-
+  https://images.unsplash.com/photo-1544577250-d7ce0fa229c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80
 ingress: >-
   Do you really know how your users are interacting with your application? Have
   they tried out the latest feature you just deployed to production? Examining
@@ -30,7 +31,7 @@ For our React project, we’re using Microsoft’s npm packages created for inte
 
 The most basic form of tracking is arguably event tracking. For example, say you want to track what users search for on your site
 
-```javascript
+```js
 const handleSearch = (searchString) => {     
     // handle search
     appInsights.trackEvent({
@@ -42,7 +43,7 @@ const handleSearch = (searchString) => {
 
 Seems prett straight forward. Use the trackEvent() method by passing an object as argument. Use the ‘name’ key to keep track of the different events in Application Insights and pass along other useful data. With multiple event trackings, this proves useful for observing various stages of a process.
 
-```javascript
+```js
 const handleSearch = (searchString) => {    
     appInsights.trackEvent({        
         name: Search_start’,
@@ -75,7 +76,7 @@ Primitive, but gets the point across. Here we've create a funnel using two event
 
 Getting back to our event tracking, we also have these tracking methods:
 
-```javascript
+```js
 const trackException () => {
     appInsights.trackException({
          error: new Error('Some error'),
@@ -95,7 +96,7 @@ Here we’ve also introduced severity level, which can be used to filter trackin
 
 Instead of doing all of this manually, you can also automatically track a number of events without explicitly telling it to do so. A convenient feature is auto collecting errors and api methods:
 
-```javascript
+```js
 const throwError = () => {
     let foo = {
         field: { bar: 'value' }
@@ -116,7 +117,7 @@ Another very useful feature is automatically tracking page views and user naviga
 
 Now, these trackings can be made smarter, of course. For more useful tracking, you might want to include more data which is relevant for monitoring page views, events and errors. From there on, it’s easier to look for common denominators on potential improvements and errors. For example, you can create your own method for tracking, including all your relevant data:
 
-```javascript
+```js
 // helper to retrieve common tracking properties
 const getCommonTrackingProperties = () => {
     const currentUrl = window.location.href;
