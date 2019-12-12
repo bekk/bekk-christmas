@@ -60,7 +60,7 @@ Keep in mind, though; arguments that we do not specify by name must still adhere
 
 Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself (or code inspection if your IDE supports it).
 
-(_In comparison; in Java we could potentially achieve the same benefit by applying the [Builder Pattern](https://en.wikipedia.org/wiki/Builder_patternhttps://en.wikipedia.org/wiki/Builder_pattern) or using Enum values, albeit being neither optimal nor idiomatic solutions._)
+(_In comparison; in Java we could potentially achieve the same benefit by applying the [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern) or using Enum values, albeit being neither optimal nor idiomatic solutions._)
 
 As we'll see later, Named Arguments can be even more powerful, and sometimes make function calls less verbose (!), when combined with Default Arguments.
 
