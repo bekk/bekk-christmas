@@ -95,7 +95,7 @@ If you're anything like me, you have a ton of presents to prepare for Christmas,
 ​
 ```kotlin
 val present1 = prepareChristmasGift("John Doe", applyRibbon = true, applyGiftBow = false)
-val present1 = prepareChristmasGift("Jane Doe", applyRibbon = true, applyGiftBow = false)
+val present2 = prepareChristmasGift("Jane Doe", applyRibbon = true, applyGiftBow = false)
 ...
 ```
 
