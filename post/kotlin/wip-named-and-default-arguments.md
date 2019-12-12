@@ -4,7 +4,13 @@ post_year: 2019
 post_day: 19
 title: 'WIP: Named and Default Arguments'
 ingress: ''
-authors: []
+links:
+  - title: 'Kotlin Docs: Default Arguments / Named Arguments'
+    url: 'https://kotlinlang.org/docs/reference/functions.html#default-arguments'
+  - title: 'Kotlin in Action: Chapter 3.2 - Making functions easier to call'
+    url: 'https://livebook.manning.com/book/kotlin-in-action/chapter-3/23'
+authors:
+  - Sondre Larsen Ovrid
 ---
 # Named and Default Arguments
 
