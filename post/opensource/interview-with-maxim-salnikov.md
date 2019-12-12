@@ -4,11 +4,12 @@ post_year: 2019
 post_day: 14
 title: Interview with Maxim Salnikov
 ingress: >-
-  Today's interview is with
-  [@christianalfoni](https://twitter.com/christianalfoni). Christian is a
-  developer and creator of [overmindjs.org](https://overmindjs.org/) and
-  [cerebraljs.com](https://cerebraljs.com/), and works at
-  [@codesandbox](https://twitter.com/codesandbox).
+  Today's interview is with [@webmaxru](https://twitter.com/webmaxru). Maxim
+  works at [@MicrosoftNorge](https://twitter.com/MicrosoftNorge) in Developer
+  Relations and is active in the modern web app and progrssive web app (PWA)
+  scene. He also organizes [@ngVikingsConf](https://twitter.com/ngVikingsConf)
+  and [@mobileeraconf](https://twitter.com/mobileeraconf) and is a
+  [@Google](https://twitter.com/google) expert.
 authors:
   - Maxim Salnikov
 ---
