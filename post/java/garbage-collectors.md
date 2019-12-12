@@ -35,12 +35,12 @@ The Java heap is divided into three separate areas as shown below;
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/heap-dark.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
 </p>
 
-Eden space is the part where newly created objects are places, so whenever you create an `new` object it is places in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold (ex. survived 8 garbage collections) it is promoted to tenured space.
+Eden space is the part where newly created objects are placed, so whenever you create a `new` object it is placed in eden space. Objects in eden space that survive a garbage collection are moved to the survivor space. And if the object survives in survivor space long enough to exceed a threshold (ex. survived 8 garbage collections) it is promoted to tenured space.
 
 This process of promoting objects through different spaces is known as generational -or ephemeral garbage collection, and is based on the hypothesis that most objects are likely to be short lived. It also is the reason why we talk about minor and major garbage collection. Typically minor GC works on the young space, which is the combination of eden space and survivor space. While major GC does its work in the tenured space. 
 
-## Phases in a GC cycles
-After this short introduction to Java's memory model it is time to take a closer look at what is going during a GC cycle. 
+## Phases in a GC cycle
+After this short introduction to Java's memory model it is time to take a closer look at what is going on during a GC cycle. 
 
 ### Marking
 In any GC algorithm the first thing that needs to happen is the **marking** phase. During this phase the algorithm looks at the heap space in question and tries to figure out which objects it can remove. 
@@ -64,7 +64,7 @@ Marking objects as ready to be garbage collected (dead objects) can be achieved 
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/graph-dark.png" alt="Example of mark-phase"/>
 </p>
 
-By starting at what is referred to as **GC Roots** and following all references it finds, it is able to correctly mark all objects that are reachable. Unreachable objects are then marked as dead objects and can be garbage collected. What is considered a GC root may vary, but include; local variables and input arguments for any currently executing methods, active threads, static fields of loaded classes and several more. For example when running a minor GC (remember, just the young space), then every reference from tenured space into young space is considered a GC root. 
+By starting at what is referred to as **GC Roots** and following all references it can find, it is able to correctly mark all objects that are reachable. Unreachable objects are then marked as dead objects and can be garbage collected. What is considered a GC root may vary, but include local variables and input arguments for any currently executing methods, active threads, static fields of loaded classes and several more. For example when running a minor GC (remember, just the young space), then every reference from tenured space into young space is considered a GC root. 
 
 ### Sweeping
 After marking all objects that can be removed from memory the GC moves on to actually freeing up the space. One approach would be to just free up all space occupied by dead objects.
@@ -86,7 +86,7 @@ While this does free up space, but you run the risk of encountering a `OutOfMemo
 
 Compacting, moves all object to the start of the memory region, and thus allows larger allocations to happen in the future. The downside of course is that the GC time increases as nothing is free in this world.
 
-As an alternative to compacting the memory in place is to use seperate region and copy live objects to another region. In the heap-description above we saw that survivor space was divided into to regions; `S0` and `S1`. One approach could therefor be to alternative between these two:
+As an alternative to compacting the memory in place is to use seperate region and copy live objects to another region. In the heap-description above we saw that survivor space was divided into to regions; `S0` and `S1`. One approach could therefore be to alternate between these two:
 <p>
 <b>Before marking:</b><br />
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/memory-partition-light.png" alt="Image of S0/S1 before marking"/>
@@ -108,11 +108,11 @@ We finally arrive to the point where we can talk about the different GC algorith
 `Serial-GC` uses the mark-copy approach for the young space, and mark-sweep-compact for tenured space. As the name somewhat implies it is a single threaded collector relying on **stop-the-world** (all application threads stopped) pauses to get its work done. As a result it is best suited for environments where you have a small heap size (<200Mb), and single CPU core available. Enable it by passing: `-XX:+UseSerialGC` when starting the Java process.
 
 ### Parallel GC 
-`Parallel-GC` (also known as *throughput collector*) is very similar til `serial-gc`, but uses multiple thread during marking, compacting and copying. In Java 8 this was default algorithm for the server-class machines, while client-class machines used `serial-gc`. A computer is considered server-class if it has 2+ physical processors and 2+GB of physical memory.
+`Parallel-GC` (also known as *throughput collector*) is very similar til `serial-gc`, but uses multiple threads during marking, compacting and copying. In Java 8 this was default algorithm for the server-class machines, while client-class machines used `serial-gc`. A computer is considered server-class if it has 2+ physical processors and 2+GB of physical memory.
 Enable it by passing: `-XX:+UseParallelGC -XX:+UseParallelOldGC` to use it in young space and tenured space, or `-XX:+UseParNewGC -XX:+UseConcMarkSweepGC` to only use it in young space (CMS in tenured space). 
 
 ### Concurrent Mark and Sweep (CMS)
-This is the first GC algorithm which doesn't rely on stop-the-world pauses for all its work, hence the *concurrent* part. It uses standard parallel mark-copy for the young space, and concurrent mark-sweep in tenured space. The goal of this algorithm is to minimize the pauses due to garbage collection, and does this by running part of the cycle concurrently with the application threads. Enable it by passing: `-XX:+UseConcMarkSweepGC`, it is however deprecated in Java 9 and scheduled to be removed in Java 14.
+This is the first GC algorithm which doesn't rely on stop-the-world pauses for all its work, hence the *concurrent* part. It uses standard parallel mark-copy for the young space, and concurrent mark-sweep in tenured space. The goal of this algorithm is to minimize the pauses due to garbage collection, and it does this by running part of the cycle concurrently with the application threads. Enable it by passing: `-XX:+UseConcMarkSweepGC`, it is however deprecated in Java 9 and scheduled to be removed in Java 14.
 
 ### G1GC
 `G1GC` (Garbage first GC) is the first region-based GC. Which means that the heap illustration from earlier doesn't really fit anymore.
