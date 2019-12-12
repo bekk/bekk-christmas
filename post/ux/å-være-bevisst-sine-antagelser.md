@@ -40,23 +40,13 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## **Formuleringen vi har brukt er denne:**
 
-> **Vi tror at…**
+> **Vi tror at…** \[fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?]
 >
->  \[fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?]
+> **Så hvis vi…** \[fyll inn det dere tenker er løsningen, hva skal dere «tilby»?]
 >
-> **Så hvis vi…**
+> **Så vil vi se at…** \[fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?]
 >
->  \[fyll inn det dere tenker er løsningen, hva skal dere «tilby»?]
->
-> **Så vil vi se at…**
->
->  
->
-> \[fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?]
->
-> **Og dette kan vi vite ved å måle...**
->
->  \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
+> **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
 LEGG VED BILDE AV TESTKORT ![Testkortet](https://url-til-bildet.no) 
 
@@ -68,7 +58,9 @@ LEGG VED BILDE AV TESTKORT ![Testkortet](https://url-til-bildet.no)
 
 ## **Eksperimentet:**
 
-4.     Måling: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+4. ```
+   Måling: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+   ```
 
 LEGG VED BILDE AV LÆRINGSKORT
 
