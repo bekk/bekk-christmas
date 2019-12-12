@@ -5,7 +5,11 @@ post_day: 19
 title: 'WIP: Streamlining your functions with Named and Default Arguments'
 image: >-
   https://images.unsplash.com/photo-1464348123218-0ee63dfd2746?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2328&q=80
-ingress: ''
+ingress: >-
+  Named Arguments and Default Arguments are two language features in Kotlin that
+  can make life as a developer a little easier when working with functions.
+  After all; we do spend a considerable amount of time declaring and invoking
+  functions when writing software.
 links:
   - title: 'Kotlin Docs: Default Arguments / Named Arguments'
     url: 'https://kotlinlang.org/docs/reference/functions.html#default-arguments'
@@ -14,10 +18,6 @@ links:
 authors:
   - Sondre Larsen Ovrid
 ---
-# Named and Default Arguments
-
-Named Arguments and Default Arguments are two language features in Kotlin that can make life as a developer a little easier when working with functions. After all; we do spend a considerable amount of time declaring and invoking functions when writing software.
-
 ## Named Arguments
 
 When declaring functions we may specify an arbitrary number of parameters that the function expects in order to perform its logic. For example we may declare the following function for preparing Christmas gifts:
