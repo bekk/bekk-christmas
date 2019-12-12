@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 14
 title: Tips & tricks for a better UX of voice user interfaces
-image: 'https://ibb.co/jkK3RdR'
+image: 'https://i.ibb.co/Ldw95M5/Screenshot-2019-12-11-at-18-27-03.png'
 ingress: >-
   Me: “Hey Goog..”\
 
