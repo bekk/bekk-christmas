@@ -45,13 +45,13 @@ As the Reporting API header is cached it allows the browser to send reports even
 
 Other types of reports (in addition to CSP and NEL) include these:
 
-Deprecation: a browser API or feature has been used which is expected to stop working in a future update of the browser 
+* Deprecation: a browser API or feature has been used which is expected to stop working in a future update of the browser 
 
-Intervention: indicate that a browser has decided not to honor a request made by the application (e.g. for security, performance or user annoyance reasons) 
+* Intervention: indicate that a browser has decided not to honor a request made by the application (e.g. for security, performance or user annoyance reasons) 
 
-Crash: the user was unable to continue using the page because the browser crashed. For security reasons, no details of the crash are communicated except for a unique identifier and optionally the reason for the crash (such as Out Of Memory) 
+* Crash: the user was unable to continue using the page because the browser crashed. For security reasons, no details of the crash are communicated except for a unique identifier and optionally the reason for the crash (such as Out Of Memory) 
 
-Feature-Policy: code running on the client violated the rules that defines what browser features and APIs are allowed (this is currently in development) 
+* Feature-Policy: code running on the client violated the rules that defines what browser features and APIs are allowed (this is currently in development) 
 
  As you can see the Reporting API can be used to report a lot of interesting data from the front-end of your application. All in a standardised way that does not require any specific front end frameworks or libraries at all. We have just covered the basics so head over to the links below if you want to know more. As of now, Chrome is the only major browser that support the Reporting-API (https://caniuse.com/#search=report-to), but hopefully others will follow soon.
 
