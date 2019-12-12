@@ -16,7 +16,7 @@ authors:
 ---
 In Kotlin, the standard way of handling errors is with _exceptions_, more specifically, _unchecked exceptions_. This is god mode. As long as the object we are throwing is a subtype of `Throwable`, we can do whatever we want. The compiler will not complain. This sounds like a good thing, right? Well, _it depends_.
 
-Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile-time. The compiler will not tell you what to catch or even whether what you are trying to catch will be thrown at all. You must either _know_ or _check_ it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to _not check_ than _check_. I would much rather have the compiler tell me _then and there_ exactly what I might have missed.
+Unchecked exceptions are, by definition, dynamically typed, and thus, _not_ typesafe at compile-time. The compiler will not tell you what to catch or even whether what you are trying to catch will be thrown at all. You must either know or check it yourself. As the codebase and number of developers grow, knowing _will_ become futile at some point, and lazy developers are more likely to not check than check. I would much rather have the compiler tell me then and there exactly what I might have missed.
 
 ## Error Handling with `Result<T, E>`
 
@@ -171,7 +171,7 @@ fun transferChangedUsers(now: LocalDateTime): Result<Unit, String> =
       val changedUsers = getAllUsersChangedAfter(lastTransferTimestamp).abortOnError()
       val token = fetchToken().abortOnError()
 
-      val userTransfers = changedUsers.map {user -> transferUser(user, token) }
+      val userTransfers = changedUsers.map { user -> transferUser(user, token) }
       val (succeededTransfers, failedTransfers) = userTransfers.partition { it is Ok }
 
       saveNewTransfer(now, succeededTransfers.size, failedTransfers.size)
