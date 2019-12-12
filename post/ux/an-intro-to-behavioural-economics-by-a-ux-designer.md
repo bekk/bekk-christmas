@@ -42,7 +42,7 @@ _Ah.. the swear jar.. always full, aren't you! Can’t use that to pay the rent.
 
 > _Treating money differently depending on where it comes from, rather than treating it all the same._
 
-There are various interconnecting terms and principles between UX design and Behavioural Economics. For instance, social norming. Whether we like it or not, we all follow social norms to some extent. We do not want to differentiate ourselves from others, especially not those we identify with. This comes from a basic instinct, like the response to run, when we see others run (there might be a tiger!). This is used in both design and sales, with ads like: “other people who but this also bought this” etc.
+There are various interconnecting terms and principles between UX design and Behavioural Economics. For instance, social norming. Whether we like it or not, we all follow social norms to some extent. We do not want to differentiate ourselves from others, especially not those we identify with. This comes from a basic instinct, like the response to run, when we see others run (there might be a tiger!). This is used in both design and sales, with ads like: “other people who bought this also bought this” etc.
 
 ## Social norming:
 
