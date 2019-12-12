@@ -47,7 +47,7 @@ function useLocalStorage = (key, initialValue) => {
 };
 ```
 
-Like all the pre-defined hooks in the `react` package, a Custom Hook's name should always start with the phrase "use", making them distinguishable from other concepts in our website. *Custom Hook* sounds hardcore, but luckily for us, it is really just a fancy way of saying *"a function containing other hooks and/or some additional logic"* (and remember: Hooks don't work in class components).
+Like all the pre-defined hooks in the `react` package, a Custom Hook's name should always start with the phrase "use", making them distinguishable from other concepts in our application. *Custom Hook* sounds tough, but luckily for us it's really just a fancy way of saying *"a function containing other hooks and/or some additional logic"* (and remember: Hooks don't work in class components).
 
 If you would like to use the `useLocalStorage` hook from above, you could easily do so like this:
 
@@ -60,7 +60,7 @@ dayFromLocalStorage.setValue(24);  // day: 24
 
 ```
 
-The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract away the implementation of something frequently used in your application (acts as a black box).
+The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract the implementation of something frequently used in your application (acts as a black box).
 
 ## Popular Custom Hooks
 
