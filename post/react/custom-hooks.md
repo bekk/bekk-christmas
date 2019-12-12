@@ -29,7 +29,7 @@ authors:
 ---
 ## Custom Hooks anatomy
 
-Suppose you want to create an app that keeps track of a value even after a page refresh. This can easily be done by taking advantage of the local storage feature in any browser. A Custom Hook for this could may look like the following:
+Suppose you want to create an app that keeps track of a value even after a page refresh. This can easily be done by taking advantage of [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) in a browser. A Custom Hook for this may look like the following:
 
 ```javascript
 import React, { useEffect } from 'react';
@@ -47,38 +47,31 @@ function useLocalStorage = (key, initialValue) => {
 };
 ```
 
-Like all the pre-defined hooks in the `react` package, a Custom Hook's name should always start with the phrase "use", making them distinguishable from other concepts in our website. 
+Like all the pre-defined hooks in the `react` package, a Custom Hook's name should always start with the phrase "use", making them distinguishable from other concepts in our website. *Custom Hook* sounds hardcore, but luckily for us, it is really just a fancy way of saying *"a function containing other hooks and/or some additional logic"* (and remember: Hooks don't work in class components).
 
-A **Custom Hook** sounds hardcore, but luckily for us, it is really just a fancy way of saying *"a function containing other hooks and/or some additional logic"*. 
-
-<aside class="warning">
-**Remember:** Custom Hooks don't work in class components.
-</aside>
-
-If you would like to use the `useLocalStorage` hook from above, you could do so like this:
+If you would like to use the `useLocalStorage` hook from above, you could easily do so like this:
 
 ```javascript
 const dayFromLocalStorage = useLocalStorage("day", 13);
 
-dayFromLocalStorage.value // 13
+dayFromLocalStorage.value;         // day: 13
+
+dayFromLocalStorage.setValue(24);  // day: 24
+
 ```
 
-The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract away the implementation of something frequently used in your application. This does not need to be limited to just your own code, but can even be applied across applications. By "blackboxing" often used implementations, we can combine our custom hooks in new ways, thereby creating a more loosely coupled application. 
+The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract away the implementation of something frequently used in your application.
 
 ## Popular Custom Hooks
 
-Back at work in our client project, we use several Custom Hooks in our daily work. The most important aspect of using them is that they solve a typical problem in the application. These abstractions make sense for us in our daily work. 
-
-However, there are some patterns that may be recognized even across projects, domains and even countries. This is where the popular Custom Hook-packages come into play. 
-
-Luckily for us, many has already started creating the great abstractions and black boxes for us. Let us have a look at the most popular ones:
+At our client project, we use several Custom Hooks in our daily work. The most important aspect of using them is that they solve a typical problem in the application. These abstractions make sense for us in our daily work. However, there are some patterns that may be recognised even across projects, domains and countries. This is where popular Custom Hook packages come into play. Luckily for us, many have already started to develop comprehensive abstractions and black boxes for us. Let's take a look at the most popular:
 
 - **[useForm](https://www.npmjs.com/package/react-hook-form)** – Ever struggled with state in form validations? It can really help you manage the state of your forms.
 
-- **[react-use](https://github.com/streamich/react-use)** – Not a single Hook, but a colletion of many different (contains Hooks for interacting with sensors, UI, state etc.) 
+- **[react-use](https://github.com/streamich/react-use)** – Not a single hook, but a collection of many different (contains hooks for interacting with sensors, UI, state etc.) 
 
-- **[useHooks.com](https://usehooks.com/)** – This website presents third-party Hooks every once in a while with simple examples
+- **[useHooks.com](https://usehooks.com/)** – This website presents third-party Hooks every once in a while with simple but detailed examples.
 
 Still, it is a joyful task to go about creating your own Custom Hooks. Have for example a look at [how you can make setInterval declarative with Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/), or have a look at [what people already have done in other awesome react hook packages](https://github.com/rehooks/awesome-react-hooks#packages). 
 
-And remember, by creating your very own Custom Hooks, you will automatically be just as cool and good looking as the *Redux* and *React Router Dom* npm packages, who have just recently created their own custom hooks to simplify their packages. Ho Ho Hoooooooks! 👊🎄
+And remember, by creating your very own Custom Hooks, you will automatically be just as cool and good looking as the *Redux* and *React Router Dom* npm packages, who have just recently created their own Custom Hooks to simplify their packages. Ho Ho Hoooooooks! 👊🎄
