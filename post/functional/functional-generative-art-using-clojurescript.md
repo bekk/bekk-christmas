@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2019
-post_day: 15
+post_day: 13
 title: Functional Generative Art Using ClojureScript
 ingress: >-
   This post explores how you can create your own generative art in the web
@@ -148,7 +148,6 @@ The state for this sketch will hold a vector of these particles, created by mapp
 (defn sketch-setup
   "Returns the initial state to use for the update-render loop."
   []
-  (apply q/background (:background palette))
   (map particle (range 0 2000)))
 ```
 
@@ -186,7 +185,7 @@ This is what we get.
 
 ![a bunch of tiny circles](https://p196.p4.n0.cdn.getcloudapp.com/items/JruwJz4q/perlin-1.png?v=6c2e9591166f52a233174665c0703bfb)
 
-[Try it yourself](http://quil.info/sketches/show/71aaa57fc161c46eaee780492f2d24cd569e6add2d157d6e5556657d6d31ff54)
+[Try it yourself](http://quil.info/sketches/show/c686a76ad8533e29de3459a604be2424658efa1a1667a4f5ec098b2f5520fb9f)
 
 Already it's starting to look good, albeit static. Let's fix that.
 
@@ -215,7 +214,7 @@ Look! It's moving.
 
 ![a bunch of tiny circles moving across the screen](https://p196.p4.n0.cdn.getcloudapp.com/items/wbuelrgQ/perlin-2.gif?v=4752831353cef01ccb8d14eb8e0ad32a)
 
-[Try it yourself](http://quil.info/sketches/show/aab6f930a07211cc518609643b3b2def4baec09011e7bf983468144e6972d72c)
+[Try it yourself](http://quil.info/sketches/show/e04f085aef191095ef204ad6e516f6d4cd82d719c14c679a68196e62daa46778)
 
 Simply by removing the one line of code from the draw function that clears the background we see a radically different expression in our drawing. If you are coding along you would be starting to feel the effects that this kind of short feedback loop setup can have.
 
@@ -234,7 +233,7 @@ Simply by removing the one line of code from the draw function that clears the b
 
 The circles become lines!
 
-Rest assured, the [circles are really moving](http://quil.info/sketches/show/c69b01d3f7f98c8b5aeb3ba741c61434549aef5da4829e01047bb9ef96ce07cf), but my gifs were getting huge due to the poorly compressable content!
+Rest assured, the [circles are really moving](http://quil.info/sketches/show/9c8f533dbb319231922326e2eed19ecaa037df085e1e871a8ee2163b2a91b0e1), but my gifs were getting huge due to the poorly compressable content!
 
 Changing around each particle's speed by a random amount between `[-0.5, 0.5]` and capping it at 2 renders a rather busy result.
 
