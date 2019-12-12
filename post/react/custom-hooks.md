@@ -64,7 +64,7 @@ The whole idea behind a Custom Hook is to support the reuse of stateful logic an
 
 ## Popular Custom Hooks
 
-At our client project, we use several Custom Hooks in our daily work. The most important aspect of using them is that they solve a typical problem in the application. These abstractions make sense for us in our daily work. However, there are some patterns that may be recognised even across projects, domains and countries. This is where popular Custom Hook packages come into play. Luckily for us, many have already started to develop comprehensive abstractions and black boxes for us. Let's take a look at the most popular:
+At our client project, we use several Custom Hooks in our daily work. The most important aspect of using them is that they solve a typical problem in the application. These abstractions make sense for us in our daily work. However, there are some patterns that may be recognised even across projects, domains and countries. This is where popular Custom Hook packages come into play.  Fortunately for us, many have already started to develop comprehensive abstractions and black boxes for us. Let's take a look at the most popular:
 
 - **[useForm](https://www.npmjs.com/package/react-hook-form)** – Ever struggled with state in form validations? It can really help you manage the state of your forms.
 
