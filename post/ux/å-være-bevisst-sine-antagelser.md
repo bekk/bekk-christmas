@@ -11,6 +11,14 @@ ingress: >-
   som vi har tro på, og det ligger mange andre problemer tilgjengelig som en kan
   ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at
   det vi laget faktisk løste problemet?
+links:
+  - title: Validate Your Ideas with the Test Card - Osterwalder
+    url: >-
+      https://www.strategyzer.com/blog/posts/2015/3/5/validate-your-ideas-with-the-test-card
+  - title: >-
+      Lyntale på JavaZone: Hypotesedrevet utvikling – Lage nye greier bare for å
+      lage nye greier? Eller?
+    url: 'https://vimeo.com/362766163'
 authors:
   - Linn Harbo Dahle
 ---
