@@ -26,7 +26,7 @@ Vi har tatt en antagelse. Antagelser er skummelt! - rett og slett fordi de kan v
 
 Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
 
-!\[Postit med vi tror at...](https://https://ibb.co/56qDYdH)
+![Postit med vi tror at...](https://https://ibb.co/56qDYdH)
 
 ## Slik bruker vi «testkort»
 
@@ -58,7 +58,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 >
 >  \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
-LEGG VED BILDE AV TESTKORT !\[Testkortet](https://url-til-bildet.no) 
+LEGG VED BILDE AV TESTKORT ![Testkortet](https://url-til-bildet.no) 
 
 ## **Selve hypotesen er de første tre delene:**
 
@@ -80,7 +80,7 @@ Her oppsummeres det dere trodde (altså selve hypotesen) og hva dere lærte. Ble
 
 # Noen erfaringer og refleksjoner
 
-!\[Tegning av hypoteseveggen](https://ibb.co/Nm4g1rs)\
+![Tegning av hypoteseveggen](https://ibb.co/Nm4g1rs)\
 _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig det er å vite og ikke bare anta._ 
 
 ## De gode diskusjonene
@@ -97,9 +97,9 @@ Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal so
 
 ## Tips om hypotesekort
 
-Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel lansert noe til prod og satt på målinger, så er gjerne brukerhistorien satt til «done» i Jira/Trello, og da er det så lett å glemme å se på den igjen. Mitt triks ble da å lage en påminnelse i kalenderen som sier ifra hvilken hypotese jeg skal se på etter for eksempel to-tre uker. 
+Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel lansert noe til prod og satt på målinger, så er gjerne oppgaven satt til «done» i Jira/Trello, og da er det så lett å glemme å se på den igjen. Mitt triks ble da å lage en påminnelse i kalenderen som sier ifra hvilken hypotese jeg skal se på etter for eksempel to-tre uker. 
 
-!\[det er vondt å ikke vite](https://ibb.co/dtC77PF)
+![det er vondt å ikke vite](https://ibb.co/dtC77PF)
 
 ## Å ikke vite er ubehagelig
 
