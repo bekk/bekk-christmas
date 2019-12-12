@@ -29,7 +29,7 @@ authors:
 ---
 ## Custom Hooks anatomy
 
-Suppose you want to create an app that keeps track of a value even after a page refresh. This can easily be done by taking advantage of [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) in a browser. A Custom Hook for this may look like the following:
+Suppose you want to create an app that keeps track of a value even after a page refresh. This can easily be done by taking advantage of a browser's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). A Custom Hook for this may look like the following:
 
 ```javascript
 import React, { useEffect } from 'react';
@@ -60,7 +60,7 @@ dayFromLocalStorage.setValue(24);  // day: 24
 
 ```
 
-The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract away the implementation of something frequently used in your application.
+The whole idea behind a Custom Hook is to support the reuse of stateful logic and to abstract away the implementation of something frequently used in your application (acts as a black box).
 
 ## Popular Custom Hooks
 
