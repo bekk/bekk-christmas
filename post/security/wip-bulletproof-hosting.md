@@ -2,11 +2,17 @@
 calendar: security
 post_year: 2019
 post_day: 14
-title: 'WIP: Bulletproof hosting'
+title: Bulletproof hosting
 ingress: >-
   When hearing about security breaches and typically cybercrime, one is
   sometimes left wondering, where are these servers hosted and why can't they be
   stopped?
+links:
+  - title: 'Bulletproof Hosting Services: Cybercriminal Hideouts for Lease'
+    url: >-
+      https://www.trendmicro.com/vinfo/nl/security/news/cybercrime-and-digital-threats/bulletproof-hosting-services-cybercriminal-hideouts-for-lease
+  - title: KrebsOnSecurity
+    url: 'https://krebsonsecurity.com/tag/bulletproof-hosting-providers/'
 authors:
   - Lars-Erik Wollan
 ---
@@ -21,15 +27,3 @@ Bulletproof hosting providers provide services which at first glance are the sam
 Some providers take this ever further by renting out compromised servers and stolen cloud service accounts. These servers are typically used for short term task, such as specific attacks or just computer intense tasks, password hashing for example.
 
 The availability of bulletproof hosting providers seems to indicate that there is a thriving market for such services. But as these services become more prevalent, they are also exposing themselves to authorities. Recently the German police stormed the data center of CyberBunker. CyberBunker proudly stated that they host anything except child pornography and anything related to terrorism. The server location was a former cold war bunker which was built to withstand a nuclear attack. But as soon at one provider is taken down, it seems that another enterprising startup sees an opportunity and announces their bulletproof services.
-
-
-
-References:
-
-https://www.trendmicro.com/vinfo/nl/security/news/cybercrime-and-digital-threats/bulletproof-hosting-services-cybercriminal-hideouts-for-lease
-
-https://krebsonsecurity.com/tag/bulletproof-hosting-providers/
-
-https://en.wikipedia.org/wiki/Bulletproof_hosting
-
-https://us.norton.com/internetsecurity-emerging-threats-what-is-bulletproof-hosting.html
