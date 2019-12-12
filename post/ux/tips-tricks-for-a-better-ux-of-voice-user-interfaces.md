@@ -14,11 +14,12 @@ _With a tear from the corner of my eye I go to sleep, well aware that I won’t 
 \
 A true and heart-breaking story from my life, and one that I guess many technology lovers out there can relate to. Because even though smart speaker sales numbers has been going through the roof over the last few years, my impression from talking to friends and reading articles is that voice user interface (VUI) still struggles to find its place among the mainstream user. One of the main reasons for this is bad UX. Nielsen Norman Group formulated it well [comparing todays voice assistants with mobile phones from year 2000.](https://www.nngroup.com/articles/intelligent-assistant-usability/)\
 \
-I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on voice projects at work and read a lot of articles. So, I’d like to summarise a couple of important things to be aware of and some tips and tricks when making a voice user interface:
+I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on voice projects at work and read a lot of articles. So, I’d like to summarise a couple of important things to be aware of and some tips and tricks when making a VUI:
 
 * Ask yourself “Why is VUI the right interface for this solution?”. This is for example not the best interface for selling paintings. In my opinion, one of the biggest problems for VUI so far is that it needs to prove itself useful and not only “nice to have”.\
   \
   Tips & tricks: People use VUI when their hands are busy - for example to set a timer when cooking or to find a song while driving. And they use it  it’s faster to ask a question than trying to find the answer by themselves - for example getting the outdoor temperature or the name of a capital. 
+
 * Speaking and listening [share the same short-term memory](https://www.cs.umd.edu/users/ben/papers/Shneiderman2000limits.pdf) and working memory as recall and problem solving. So thinking while speaking requires quite an effort. The consequences of this is that people struggle remembering answers, options and commandos voice assistants give them.\
   \
   Tips & tricks: You have to prioritise hard on the amount of information to give the user. Too much information, and you lose your user. This is mobile first level 100. Also if you have several options for the user, don’t give them more than three at a time. Let the user know they can ask for more options instead if needed.
