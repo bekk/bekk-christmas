@@ -74,4 +74,4 @@ At our client project, we use several Custom Hooks in our daily work. The most i
 
 Still, it is a joyful task to create your own Custom Hooks. For example, have a look at [how you can make setInterval declarative with Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/), or check out [what people already have done in other awesome react hook packages](https://github.com/rehooks/awesome-react-hooks#packages). 
 
-And remember, by creating your very own Custom Hooks, you will automatically be just as cool and good looking as the *Redux* and *React Router Dom* npm packages, who have just recently created their own Custom Hooks to simplify their usage. Ho Ho Hoooooooks! 👊🎄
+And remember, by creating your very own Custom Hooks, you will automatically be just as cool as the `redux` and `react-router-dom` npm packages, who recently added some Hooks. Ho Ho Hoooooooks! 👊🎄
