@@ -6,10 +6,16 @@ title: "Coroutines channels\U0001F525 and flow❄️"
 links:
   - title: "A very good resource on Channels and asynchronous flow is Roman Elizarov's talk on KotlinConf this year in Copenhagen (I was there!\U0001F929)"
     url: 'https://youtu.be/E4F0YU8Jd5g?t=4897'
+  - title: Kotlin docs on channels
+    url: 'https://kotlinlang.org/docs/reference/coroutines/channels.html'
+  - title: Kotlin docs on flows
+    url: kotlinlang.org/docs/reference/coroutines/flow.html
 authors:
   - Vetle Bu Solgård
 ---
-So now we have learned about basic coroutine properties and know some details on how to work with coroutines. Does coroutines have more stuff we can use? Ofcourse! 
+If you missed the two previous articles on coroutines you can read the first [here](https://kotlin.christmas/2019/12)👈 and the second 👉[there](https://kotlin.christmas/2019/13)
+
+Now that we have learned about basic coroutine properties and know some details on how to work with coroutines is there more to coroutines? Other than very efficient asynchronous operations and great readability, do kotlin coroutines solve other problems as well? Of course!
 
 ```kotlin
 suspend fun getListOfImages(): List<Image> {
