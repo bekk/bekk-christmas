@@ -9,7 +9,7 @@ ingress: >-
   About a year ago, Sophie Alpert and Dan Abramov presented one of the most
   exciting new features in React: Hooks. Release 16.8 introduced several
   alternatives that can be used directly (e.g. `useState`, `useEffect` and some
-  others), but also provided the possibility to create your very own Hooks –
+  others), but also provided the possibility to create your very own hooks –
   Custom Hooks.
 links:
   - title: Alpert & Abramov intro-video to Hooks
@@ -72,6 +72,6 @@ At our client project, we use several Custom Hooks in our daily work. The most i
 
 - **[useHooks.com](https://usehooks.com/)** – This website presents third-party Hooks every once in a while with simple but detailed examples.
 
-Still, it is a joyful task to go about creating your own Custom Hooks. Have for example a look at [how you can make setInterval declarative with Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/), or have a look at [what people already have done in other awesome react hook packages](https://github.com/rehooks/awesome-react-hooks#packages). 
+Still, it is a joyful task to create your own Custom Hooks. For example, have a look at [how you can make setInterval declarative with Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/), or check out [what people already have done in other awesome react hook packages](https://github.com/rehooks/awesome-react-hooks#packages). 
 
-And remember, by creating your very own Custom Hooks, you will automatically be just as cool and good looking as the *Redux* and *React Router Dom* npm packages, who have just recently created their own Custom Hooks to simplify their packages. Ho Ho Hoooooooks! 👊🎄
+And remember, by creating your very own Custom Hooks, you will automatically be just as cool and good looking as the *Redux* and *React Router Dom* npm packages, who have just recently created their own Custom Hooks to simplify their usage. Ho Ho Hoooooooks! 👊🎄
