@@ -3,17 +3,15 @@ calendar: ux
 post_year: 2019
 post_day: 14
 title: Tips & tricks for a better UX of voice user interfaces
-image: 'https://i.ibb.co/Ldw95M5/Screenshot-2019-12-11-at-18-27-03.png'
-ingress: >-
-  Me: “Hey Goog..”\
-
-  \*Bang\* The sound of my girlfriend’s palm hitting the light switch. \
-
-  With a tear from the corner of my eye I go to sleep, well aware that I won’t
-  be turning the lights off with my voice tonight either.
+image: 'https://i.ibb.co/cCdps6t/Screenshot-2019-12-11-at-18-27-03-copy.png'
+ingress: ''
 authors:
   - Ingar Røsok Kvalheim
 ---
+Me: “Hey Goog..”\
+***Bang*** The sound of my girlfriend’s palm hitting the light switch. \
+With a tear from the corner of my eye I go to sleep, well aware that I won’t be turning the lights off with my voice tonight either. \
+\
 A true and heart-breaking story from my life, and one that I guess many technology lovers out there can relate to. Because even though smart speaker sales numbers has been going through the roof over the last two years, my impression from talking to friends and reading articles is that voice user interface (VUI) still struggles to find its place among the mainstream user. One of the main reasons for this is bad UX. Nielsen and norman group formulated it well [comparing todays voice assistants with mobile phones from year 2000.](https://www.nngroup.com/articles/intelligent-assistant-usability/)\
 \
 I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on voice projects at work and read a lot of articles. So, I’d like to summarise a couple of important things to be aware of and some tips and tricks when making a voice user interface:
