@@ -1,6 +1,6 @@
 ---
 title: Jonas Løchsen
-socialMediaLink: jonas.lochsen@bekk.no
+socialMediaLink: 'https://twitter.com/jonaslochsen'
 company: Bekk
 ---
 
