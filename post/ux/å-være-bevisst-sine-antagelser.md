@@ -30,7 +30,7 @@ Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale 
 
 ## Slik bruker vi «testkort»
 
-For å bli mer bevisst våre antagelser så har vi jobbet med hypoteser gjennom såkalte «testkort», hentet fra Osterwalders Test card 
+For å bli mer bevisst våre antagelser så har vi jobbet med hypoteser gjennom såkalte «testkort», hentet fra [Osterwalders Test card](https://www.strategyzer.com/blog/posts/2015/3/5/validate-your-ideas-with-the-test-card) 
 
 > «En hypotese er en gjetning, antagelse eller forklaring som synes rimelig ut fra foreliggende kunnskap» snl.no
 
