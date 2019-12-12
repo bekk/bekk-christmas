@@ -1,6 +1,6 @@
 ---
 title: Hans-Christian Fjeldberg-Gustavson
-socialMediaLink: 'https://twitter.com/hcfjeldberg'
+socialMediaLink: ''
 company: Bekk
 ---
 
