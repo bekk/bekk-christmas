@@ -18,6 +18,8 @@ ingress: >-
 links:
   - title: Victory
     url: 'https://formidable.com/open-source/victory/'
+authors:
+  - Stephen Ramthun
 ---
 ## Getting started
 Victory is super easy to get started with. Start by adding it to your list of dependencies: `npm i victory -S`, 
