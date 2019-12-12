@@ -3,6 +3,8 @@ calendar: kotlin
 post_year: 2019
 post_day: 19
 title: 'WIP: Named and Default Arguments'
+image: >-
+  https://images.unsplash.com/photo-1464348123218-0ee63dfd2746?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2328&q=80
 ingress: ''
 links:
   - title: 'Kotlin Docs: Default Arguments / Named Arguments'
