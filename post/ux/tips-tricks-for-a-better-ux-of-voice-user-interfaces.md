@@ -9,8 +9,7 @@ authors:
   - Ingar Røsok Kvalheim
 ---
 _Me: “Hey Goog..”_\
-_\*Bang\* The sound of my girlfriend’s palm hitting the light switch, and the room goes dark._\
-_With a tear from the corner of my eye I go to sleep, well aware that I won’t be turning the lights off with my voice tonight either._ \
+_\*Bang\* The sound of my girlfriend’s palm hitting the light switch, and the room goes dark. With a tear from the corner of my eye I go to sleep, well aware that I won’t be turning the lights off with my voice tonight either._ \
 \
 A true and heart-breaking story from my life, and one that I guess many technology lovers out there can relate to. Because even though smart speaker sales numbers has been going through the roof over the last few years, my impression from talking to friends and reading articles is that voice user interface (VUI) still struggles to find its place among the mainstream user. One of the main reasons for this is bad UX. Nielsen Norman Group formulated it well [comparing todays voice assistants with mobile phones from year 2000.](https://www.nngroup.com/articles/intelligent-assistant-usability/)\
 \
