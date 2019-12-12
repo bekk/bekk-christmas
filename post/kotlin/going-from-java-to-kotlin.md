@@ -5,8 +5,8 @@ post_day: 20
 title: Going from Java to Kotlin
 ingress: >-
   We used to have a pure Java application. Then we decided to add some Kotlin
-  code to it, just to try it out. Now there is no Java code left. How did that
-  come about? Read on!
+  code to it, just to try it out. Now there is almost no Java code left. How did
+  that come about? Read on!
 authors:
   - Øyvind Hagen
 ---
