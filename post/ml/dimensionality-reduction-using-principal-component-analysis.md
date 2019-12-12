@@ -24,9 +24,9 @@ This might sound complicated at first, but let's look at an example.
 
 ![Photo: Victor Powell](/assets/screenshot-2019-11-12-at-18.03.52.png "A projection of data onto a new subspace using PCA. The tool used for visualization can be found at http://setosa.io/ev/principal-component-analysis/")
 
-As one can see in the leftmost graph in the figure above, the data set consists of 5 points in a two-dimensional space. A green line and a red one is also plotted in the graph and corresponds to the principal components of the points. The rightmost graph shows what it would look like if one were to project the points onto these principal components.
+As one can see in the leftmost graph in the figure above, the data set consists of 5 points in a two-dimensional space. A green and a red line is also plotted in the graph and corresponds to the principal components of the points. The rightmost graph shows what it would look like if one were to project the points onto these principal components.
 
-This might not look like something special at first glance. However if we view each principal component by itself, which can be seen in the second figure, we can see that first principal component accounts for most of the variance in the data. It is barely possible to distinguish the data points in the second one and it can therefore just be discarded. Thus, we can just use the first principal components to represent our data.
+This might not look like something special at first glance. However if we view each principal component by itself, which can be seen in the figure below, we can see that the first principal component accounts for most of the variance in the data. It is barely possible to distinguish the data points in the second one and it can therefore just be discarded. Thus, we can just use the first principal components to represent our data.
 
 ![Photo: Victor Powell](/assets/screenshot-2019-11-12-at-19.11.12.png)
 
