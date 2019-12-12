@@ -5,7 +5,7 @@ post_day: 19
 title: 'What''s new in Java 12, 13 and 14, part II'
 ingress: >-
   A couple of days ago, we had a look at [two new features in Java 13 and
-  14](https://java.christmas/2019/17). In todays article, we'll cover some more
+  14](https://java.christmas/2019/17). In today's article, we'll cover some more
   goodies arriving in the near future.
 links:
   - title: 'JEP 368: Text Blocks (Second Preview)'
