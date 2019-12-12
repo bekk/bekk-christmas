@@ -16,6 +16,8 @@ like IBM, LinkedIn, Microsoft, Netflix, PayuPal are betting on Node.js to power
 their business critical applications! We even have sent Node.js applications
 into space 🚀
 
+![](/assets/1-nodejs-timeline.jpeg)
+
 As the creator of Node.js Ryan Dahl lead the development which was later
 sponsored by a Silicon Valley based Enterprise Infrastructure Company named
 Joyent. In 2012 Ryan stepped aside promoting coworker and _npm_ creator Isaac
@@ -29,12 +31,16 @@ say in disputes or arguments within the community. The title is often passed
 onto the next benevolent dictator by anointment as opposed to through democratic
 means.
 
+![](/assets/2-nodejs-growth.jpeg)
+
 At the same time that Node.js was seeing an all time growth in adoption the
 development had ground to a halt with an all time low in September of 2014.
 Contributors was becoming more and more frustrated with the stringent process
 imposed by Joyent. A coordinated effort through the node-forward\[2] initiative
 in order to work with Joyent to move the project to a structure where the
 community could contribute effectively lead nowhere.
+
+![](/assets/3-iojs-logos.jpeg)
 
 A private fork of Node.js had already existed for some time amongst some of the
 most active contributors but due to a trademark issue and legal threats they
@@ -49,6 +55,8 @@ should be owned by the community and not one person or corporation.
 > commit-access to the project to contribute as they see fit. This project is
 > more like an open wiki than a standard guarded open source project.
 
+![](/assets/4-iojs-org.jpeg)
+
 The io.js organisation was set up several autonomous working groups that had a
 specific responsibility. Each group was soley responsible for their work and
 only as a last resort when a consensus could not be reached within the group
@@ -60,12 +68,16 @@ maintaining the test and build infrastructure servers from DigitalOcean,
 Rackspace, ARM and Voxer as well as from the community managed to get the
 infrastructure up and running just in time for the first release of io.js.
 
+![](/assets/5-iojs-timeline.jpeg)
+
 io.js also changed the even-odd version numbering that no-one understood and
 that Node.js had been following since it was first created by Ryan, and io.js
 adopted Semantic Versioning\[4] instead with the first release being v1.0.0. The
 reason was that Node.js had already been proven stable enough in production for
 several years and releasing anything short of v1 would not get the same
 addoption and thus defeating the purpose of releasing a version at all.
+
+![](/assets/6-merge-timeline.jpeg)
 
 In June of 2015, only a short year after io.js, it was made public that Joyent
 was transferring the ownership of the Node.js trademark to a new Node.js
