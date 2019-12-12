@@ -86,8 +86,8 @@ open governance structure already established by io.js. The work that io.js had
 done would be the basis of the project going forward and remaining changes in
 Node.js was merged into io.js and version 4.0.0 of Node.js was released.
 
-* \[1] https://en.wikipedia.org/wiki/Benevolent_dictator_for_life
-* \[2] https://github.com/node-forward
-* \[3] https://en.wikipedia.org/wiki/Open-source_governance
-* \[4] https://semver.org
-* \[5] https://www.linuxfoundation.org/
+* \[1] <https://en.wikipedia.org/wiki/Benevolent_dictator_for_life>
+* \[2] <https://github.com/node-forward>
+* \[3] <https://en.wikipedia.org/wiki/Open-source_governance>
+* \[4] <https://semver.org>
+* \[5] <https://www.linuxfoundation.org>
