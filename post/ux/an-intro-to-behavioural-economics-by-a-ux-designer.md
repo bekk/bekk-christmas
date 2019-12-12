@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 9
 title: An intro to Behavioural Economics by a UX designer
 image: ''
-ingress: Key concepts from Behavioural Eonomics every UX designer should know
+ingress: Key concepts from Behavioural Economics every UX designer should know
 links:
   - title: 'Freakonomics Radio: «Honey, I Grew the Economy»'
     url: >-
@@ -68,4 +68,4 @@ I can recommend the books, misbehaving and nudge by Richard Thaler. I would also
 
 ## Thanks!
 
-Thanks so much to [Sonja](https://medium.com/@kaeuph) for your valuable isights and strict eye for grammar! Thanks to [Eivind Mangset](https://medium.com/@eivindmangset) for inspiration and sparring with me on this post, and thanks Hamy Nguyen for the sketch of me that sparked the inspiration for the illustrations.
+Thanks so much to [Sonja](https://medium.com/@kaeuph) for your valuable insights and strict eye for grammar! Thanks to [Eivind Mangset](https://medium.com/@eivindmangset) for inspiration and sparring with me on this post, and thanks Hamy Nguyen for the sketch of me that sparked the inspiration for the illustrations.
