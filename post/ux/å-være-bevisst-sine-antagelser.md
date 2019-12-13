@@ -48,7 +48,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 >
 > **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
-LEGG VED BILDE AV TESTKORT ![Testkortet](https://url-til-bildet.no) 
+[Testkortet](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
 
 ## **Selve hypotesen er de første tre delene:**
 
@@ -62,9 +62,7 @@ LEGG VED BILDE AV TESTKORT ![Testkortet](https://url-til-bildet.no)
    Måling: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
    ```
 
-LEGG VED BILDE AV LÆRINGSKORT
-
-!\[Læringskortet](https://url-til-bildet.no)
+![Læringskortet](https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png)
 
 ## Og del 2: læringskort
 
@@ -91,7 +89,7 @@ Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal so
 
 Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel lansert noe til prod og satt på målinger, så er gjerne oppgaven satt til «done» i Jira/Trello, og da er det så lett å glemme å se på den igjen. Mitt triks ble da å lage en påminnelse i kalenderen som sier ifra hvilken hypotese jeg skal se på etter for eksempel to-tre uker. 
 
-![det er vondt å ikke vite](https://ibb.co/dtC77PF)
+![det er vondt å ikke vite](https://i.ibb.co/wR37tFf/antar-bare.png)
 
 ## Å ikke vite er ubehagelig
 
