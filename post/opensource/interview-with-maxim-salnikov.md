@@ -6,10 +6,12 @@ title: Interview with Maxim Salnikov
 ingress: >-
   Today's interview is with [@webmaxru](https://twitter.com/webmaxru). Maxim
   works at [@MicrosoftNorge](https://twitter.com/MicrosoftNorge) in Developer
-  Relations and is active in the modern web app and progrssive web app (PWA)
-  scene. He also organizes [@ngVikingsConf](https://twitter.com/ngVikingsConf)
-  and [@mobileeraconf](https://twitter.com/mobileeraconf) and is a
-  [@Google](https://twitter.com/google) expert.
+  Relations and is active in the Progressive Web App (#PWA) scene. He also
+  organizes [@ngVikingsConf](https://twitter.com/ngVikingsConf) &
+  [@mobileeraconf](https://twitter.com/mobileeraconf) confs,
+  [@AngularOslo](https://twitter.com/angularoslo) &
+  [@MobileOslo](https://twitter.com/mobileoslo) meetups, and is a
+  [@GoogleDevExpert](https://twitter.com/GoogleDevExpert).
 authors:
   - Maxim Salnikov
 ---
