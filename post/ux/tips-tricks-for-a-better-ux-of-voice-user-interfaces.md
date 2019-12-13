@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 14
-title: Tips & tricks for a better UX of voice user interfaces
+title: Tips & Tricks for Better UX in Voice Interfaces
 image: 'https://i.ibb.co/cCdps6t/Screenshot-2019-12-11-at-18-27-03-copy.png'
 ingress: ''
 authors:
