@@ -27,7 +27,7 @@ Gradually marketers and business developers also opened their eyes to ML, and ne
 
 Each of these use cases are in themselves pretty interesting, and we could easily go on and on to describe them more in detail. But that would require an unreasonable long blog post. So we‘ll instead leave you with a summary of some of the application areas we find most interesting, categorized according to the business value they provide (kind of), before providing a short example. 
 
-![](/assets/ml_4_pic1-updated.png)
+![](/assets/ml_4_pic1-white-background.png)
 
 ###Example: Using machine learning to increase customer profitability
 
@@ -42,13 +42,13 @@ The importance of CLVs was one of the key factors in the work Bekk did for the [
 
 To summarize, our research required us to develop profitability models with customer-based logic, where CLV and Customer Equity are established as the basic measurements of profitability. However, the data needed to calculate CLV does not come for free. Even in its simplest form CLV requires estimation of future contribution margins (the yearly future profit from a customer) and retention rates (probability that a customer stays with us for another period), as well as a discount rate to create a cash flow, illustrated by the typical CLV definition below: 
 
-![](/assets/ml_4_pic2.png)
+![](/assets/ml_4_pic2-white-background.png)
 
 In practice we often also need more fine-grained representations of CLV to do real-life calculations. Hence, CLV is not a trivial number to estimate, and requires relatively complex modeling and calculation. Even though CLV is a well-established concept, we believe this is an important reason why CLV has had limited practical implementation. 
 
 Stuck with what seemed to be too complex calculations in our research; in came machine learning in white and shining amour. Without going into all the details: Based on available customer information, computers can identify patterns, build models and estimate CLV values – much faster and with more complexity than a human can handle. The model can also self-improve as more data becomes available. This represents a new way of working with CLV-calculations, where the model and key parameters are defined as we go along:
 
-![](/assets/ml_4_pic-3-updated.png)
+![](/assets/ml_4_pic3-white-background.png)
 
 Too difficult and expensive, you say? Contrary to some beliefs such a model can be created and set up relatively easy, with low investment costs. In our research we also encountered Norwegian companies that already have a fully functional CLV-model running, with very promising results. And even better: When you have a ML model using customer data running, you have a good foundation for expanding your model to support other areas of application, as seen in the illustration further up. 
 
