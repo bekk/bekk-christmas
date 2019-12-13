@@ -73,7 +73,7 @@ LIMIT 3
 
 > **Heads up:**
 >
-> Continuously adding rows to your data table makes it grow in size quite rapidly, and both storage and querying can become costly. I wasn’t able to implement a function to replace the data in my BigQuery tables instead of just adding new rows on every API call. My quick workaround was to write a script that ran every night, removing the rows from 2 days before and prior, but I’m quite certain there are other more elegant solutions to this problem.
+> In this case we only needed the real-time data, but there was no need to store the historical data. However, BigQuery is not as intuitive when it comes to updating or deleting rows. Continuously adding rows to your data table makes it grow in size quite rapidly, and both storage and querying can become costly. I wasn’t able to implement a function to replace the data in my BigQuery tables instead of just adding new rows on every API call. My quick workaround was to write a script that ran every night, removing the rows from 2 days before and prior, but I’m quite certain there are other more elegant solutions to this problem.
 
 ## To be continued...
 
