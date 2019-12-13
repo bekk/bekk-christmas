@@ -13,12 +13,12 @@ The next morning, Dag showed Halldis what he had done so far. After she had stop
 Looking up the documentation, Dag quickly figured out how to make the tree move.
 
 ```css
-/* 
-* CSS animation properties 
+/*
+* CSS animation properties
 * Listed with default or example values
 */
 
-/* 
+/*
 * duration, can be specified in seconds, or milliseconds
 */
 animation-duration: 3s;
@@ -43,7 +43,7 @@ Animation-timing-function: ease;
 * Keyframes
 * Keyframes can be defined at % of the animation duration
 * To and From can be used instead of 0% and 100%
-* 
+*
 */
 @keyframes slidein {
     0% {
@@ -90,7 +90,7 @@ background-size: 49.44px 68.05px;
     }
 }
 
-`"
+```
 
 <iframe height="765" style="width: 100%;" scrolling="no" title="three with decorations with stripes with safari support and animation" src="https://codepen.io/dagfs/embed/QWwEobG?height=765&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/QWwEobG'>three with decorations with stripes with safari support and animation</a> by Dag Frode
@@ -105,7 +105,7 @@ The card looked a bit strange, with only the tree moving, so he added animations
 </iframe>
 
 
-Looking at the card, he was pleased. But he felt that the card had lost some of the attention on him and his team members. He figured he should add some animation to their images, as well. 
+Looking at the card, he was pleased. But he felt that the card had lost some of the attention on him and his team members. He figured he should add some animation to their images, as well.
 
 This project had gotten him to explore new features he had not often used before, and he found it exciting. Looking up different ways of manipulating images with CSS, he found the `filter` function. "That might work. But what filter should I use?". He ended up try saturation, as Christmas has a lot of green and red, and with saturation, you can make things more green and red, therefore more Christmassy!
 
