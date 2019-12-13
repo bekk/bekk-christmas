@@ -32,7 +32,7 @@ authors:
 Suppose you want to create an app that keeps track of a value even after a page refresh. This can easily be done by taking advantage of the browser's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). A Custom Hook for this may look like the following:
 
 ```javascript
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(
