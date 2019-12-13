@@ -50,3 +50,4 @@ Dag updated the code and tried to rerun the card in Safari. The card worked as e
 Dag spent the remaining time he had left for the side project reading up on CSS builds and [auto prefixing](https://github.com/postcss/autoprefixer).
 
 _To be continued tomorrow._
+
