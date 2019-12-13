@@ -33,7 +33,7 @@ Egghead has a lot of great content that is free, but you have to pay to get full
 ## [Wes Bos](https://wesbos.com/)
 This website and its content are made by a full-stack web-developer and designer named Wes Bos from Hamilton, Canada. The website has a blog with plenty of references to courses, videos, and articles that Wes Bos has made. On this [blog](https://wesbos.com/blog/), you can find useful resources on learning the basics but also resources on more advanced topics in the realm of web development. Some of the resources are free and some you have to pay for. If there is one resource you have to check out from Mr.Bos, it must be his famous  [JavaScript30](https://javascript30.com/) course. This is a 30-day vanilla JavaScript coding challenge, where you can join over 300 000 others to learn vanilla JavaScript in 30 days with 30 tutorials.
 
-## [YouTube](https://www.youtube.com)
+## YouTube
 You can’t make a list like this without mentioning YouTube. There are just so many great courses on this platform, and the best about the platform is that it’s 100% free. I got into JavaScript just by watching courses on YouTube. So I will list some popular channels which I have discovered that has a lot of great video courses on JavaScript, but also web-development in general.
 
 * [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
