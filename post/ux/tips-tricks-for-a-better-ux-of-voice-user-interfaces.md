@@ -17,9 +17,9 @@ I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on v
 
 * Ask yourself “Why is VUI the right interface for this solution?”. This is for example not the best interface for selling paintings. In my opinion, one of the biggest problems for VUI so far is that it needs to prove itself useful and not only “nice to have”.\
     \
-    Tips & tricks: People use VUI when their hands are busy - for example to set a timer when cooking or to find a song while driving. And they use it  it’s faster to ask a question than trying to find the answer by themselves - for example getting the outdoor temperature or the name of a capital.
+    Tips & tricks: People use VUI when their hands are busy - for example to set a timer when cooking or to find a song while driving. And they use it  it’s faster to ask a question than trying to find the answer by themselves - for example getting the outdoor temperature or the name of a capital.n
 
-
+  
 
 * Speaking and listening [share the same short-term memory](https://www.cs.umd.edu/users/ben/papers/Shneiderman2000limits.pdf) and working memory as recall and problem solving. So thinking while speaking requires quite an effort. The consequences of this is that people struggle remembering answers, options and commandos voice assistants give them.\
     \
