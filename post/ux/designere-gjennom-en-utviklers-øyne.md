@@ -16,6 +16,7 @@ description: ''
 authors:
   - Henrik Sivertsgård
 ---
+Designere:
 > En designer er en person som gir meg tegninger i fine farger for hvordan en nettside eller app skal se ut. Elsker det abstrakte, lever i en drømmeverden uten konsept over hva som er teknisk gjennomførbart.
 
 
