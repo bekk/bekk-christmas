@@ -50,6 +50,6 @@ I forbindelse med denne kalenderluken spurte jeg designerne i Bekk om de kunne s
 
 Konklusjonen på visa er at mitt utgangspunkt for hva en designer er ikke stemmer helt med virkeligheten. I løpet av de siste årene i arbeid har jeg lært mye om en designers arbeidsmetoder, faglige styrker og hvordan jeg og designer kan jobbe sammen for å levere mest mulig verdi. Kort fortalt så er ikke en designer en som leverer fra seg fargerike skisser; en designer er like mye en utvikler som det jeg er i hverdagen. 
 
-![Desktop-collage](https://ibb.co/nf9ZN7q)
+![Desktop-collage](https://i.ibb.co/S0bW4tD/pjimage-1.jpg)
 
 ..Og når det kommer til en designers pult mangler bildene jeg fikk mange elementer, men jeg vil gi meg selv et halvt poeng for post-its og Macbooks.
