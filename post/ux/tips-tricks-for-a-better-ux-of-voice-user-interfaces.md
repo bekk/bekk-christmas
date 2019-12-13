@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 14
 title: Tips & Tricks for Better UX in Voice Interfaces
-image: 'https://i.ibb.co/cCdps6t/Screenshot-2019-12-11-at-18-27-03-copy.png'
+image: 'https://i.ibb.co/RbcN48k/Screenshot-2019-12-11-at-18-27-03.png'
 ingress: ''
 authors:
   - Ingar Røsok Kvalheim
