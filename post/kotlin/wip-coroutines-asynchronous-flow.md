@@ -41,11 +41,11 @@ suspend fun Image.present() {
 }
 ```
 
-In this code we first get a lot of images from the API, proceeds to put the results together and then returns the result to be presented somewhere in our application. It seems very suboptimal to first get all the images, construct some container for them, and then present them? Not very nice😟
+In this code we first get a lot of images from the API, proceeds to put the result together and then returns the result to be presented somewhere in our application. It seems very suboptimal to first get all the images, construct some container for them, and then present them? That doesn't feel very nice😟
 
-We don't really want to wait for the entire result to be retrieved, constructed, and then returned when the first image really is available long before this. It would be ideal if we were able to process/present the images continuously as each image is retrieved from the API. A solution such as this would apply for any type of collection of responses.
+We don't really want to wait for the entire result to be retrieved, constructed, and then returned when the first image is available long before the other images. It would be ideal if we were able to process/present the images continuously as each image is retrieved from the API. A solution such as this would apply for any type of collection of responses.
 
-One solution that the kotlin coroutine team came up with for solving these types of problems are `Channel`s. A `Channel` can be thought of as a pipeline, one point send and the other receive.
+One solution that the kotlin coroutine team came up with for solving these types of problems is the concept of Channels. A `Channel` can be thought of as a pipeline, one point send and the other receive.
 
 ```kotlin
 suspend fun CoroutineScope.channelOfImages(): ReceiveChannel<Image> = produce {
@@ -62,9 +62,9 @@ fun main() = runBlocking {
 }
 ```
 
-The difference between this code snippet and the above is that what was previously `images` is now `imagesChannel` which is now a channel of images instead of a `List` of images. When we now iterate over these values they will be presented the second `send(image)` is called in the `channelOfImages()` function. What is happening is that the `channelOfImages()` starts a coroutine and works together with the coroutine in the `runBlocking` scope.
+The difference between this code snippet and the above is that what was previously `images` is now imagesChannel. We have replaced a list of images with a channel of images. When we iterate over the channel these values will be presented the instance `send(image)` is called in the `channelOfImages()` function. What is happening is that the `channelOfImages()` starts a coroutine and works together with the coroutine in the `runBlocking` scope.
 
-So the code stays about the same as it were before, only now we can process the data the moment it is available from the API. Pretty nice, but there is a problem with `Channel`. They are hot 🔥
+So the code stays about the same as it were before, only now we can process the data the moment it is available from the API. Pretty nice, but there is a problem with `Channels`. They are hot 🔥
 
 A `Channel` is called hot because in practice it stays alive and runs as a coroutine the moment `channelOfImages()` is called. And why is this a problem you say🤔 This could be a problem when the coroutine that is receiving data from the `Channel` suddenly has an exception and are not able to receive anymore. In this case `Channel` will just live on doing nothing because it is unable to send its data to anyone and finish its work. When working with files or network connections this could prove to be a real problem as we will not be able to close either.
 
@@ -87,9 +87,9 @@ fun main() = runBlocking {
 
 The previous code example which returned a channel of images now returns a flow of images. It uses other words, but looks very similar to the previous example, so what is really the difference?🤔
 
-A huge difference is that `imagesFlow` is just a reference to the `flow` it does not start the flow like the call to `channelOfImages()` further up does. The flow is not activated until `.collect {…}` is called. So if we now get an exception in the code calling to collect the flow, or we for some other reason don't call `.collect {…}` our code will run fine.
+A huge difference is that `imagesFlow` is just a reference to the `flow` it does not start the flow like the call to `channelOfImages()` further up does. The flow is not activated until `.collect {…}` is called. If we now get an exception in the code calling to collect the flow, or we for some other reason don't call `.collect {…}` our code will run fine.
 
-Because of this, we can be certain that we do not have any open coroutines doing nothing as a result of the call to `flowOfImages()`. This is why, unlike hot channels we call kotlin flow entities cold❄️
+Because of this, we can be certain that we do not have any open coroutines doing nothing as a result of the call to `flowOfImages()`. This is why we call Kotlin flow entities cold:snowflake:. Cold flows, hot channels.
 
 Flow also have this builder called `flowOf()` where the input parameter is some collection. In the following example we compare the `Collection` approach to the `Flow` approach.
 
