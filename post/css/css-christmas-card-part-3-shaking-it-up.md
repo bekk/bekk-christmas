@@ -8,7 +8,7 @@ image: >-
 authors:
   - Dag Frode Solberg
 ---
-The next morning, Dag showed Halldis what he had done so far. After she had stopped laughing, she agreed it was pretty high. "Why don't you add some animations to it?" she asked. "Animations?" Dag asked. "You know, maybe some movement to the tree?".
+The next morning, Dag showed Halldis what he had done so far. After she had stopped laughing, she agreed it was pretty great. "Why don't you add some animations to it?" she asked. "Animations?" Dag asked. "You know, maybe some movement to the tree?".
 
 Looking up the documentation, Dag quickly figured out how to make the tree move.
 
