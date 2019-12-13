@@ -67,4 +67,4 @@ void process(InputStream input) throws IOException {
 }
 ```
 
-The resource management of the `InputStream` passed to the process-method is the responsibility of the calling code, and the calling code must apply the two principles to decide if it should do resource management.
+The resource management of the `InputStream` passed to the process-method is the responsibility of the calling code, and the calling code must apply the three principles to decide if it should do resource management.
