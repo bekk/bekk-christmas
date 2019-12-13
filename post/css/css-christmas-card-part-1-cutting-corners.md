@@ -60,7 +60,7 @@ border-radius: 1px 0 3px 4px / 20% 10% 30% 40%;
 "But this is still not a Christmas card," he thought. "We need to make this more christmassy. " Had he not just read something about `clip-path`? He had thought that "that sure looks nice, but when will I ever use it?". He figured he could give it a go. He looked up the documentation; he even checked it twice. He was going to make sure he could figure it out. But even after looking at the documentation multiple times, it was hard to do what he wanted to do.
 
 In the end, Dag looked up a clip-path generator [Clippy — CSS clip-path maker
-](https://bennettfeely.com/clippy/) as he was not satisfied with anything less than the best Christmas three (shape)! After generating the path and cleaning it up. He could take a step back and look at the tree he had created.
+](https://bennettfeely.com/clippy/) as he was not satisfied with anything less than the best Christmas tree (shape)! After generating the path and cleaning it up. He could take a step back and look at the tree he had created.
 
 <iframe height="673" style="width: 100%;" scrolling="no" title="three" src="https://codepen.io/dagfs/embed/XWJXXwe?height=673&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/XWJXXwe'>three</a> by Dag Frode
@@ -93,11 +93,11 @@ clip-path: path('M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,1,1,1,0.5,0.3 A0.25,0.25,1
 ```
 [MDN web docs: clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
 
-## Decorating the three
+## Decorating the tree
 
-After taking some time to enjoy his hard work, Dag thought to himself, "Let's put it together." He added the images of his team to the three and using <absolute> positioning, positioned them on the three as Christmas decoration. "Look at how nice I've hung them on the tree," he thought to himself, followed by "... Uhm, that was a poor choice of words." He also added a fitting background to make it all come together even better.
+After taking some time to enjoy his hard work, Dag thought to himself, "Let's put it together." He added the images of his team to the tree and using <absolute> positioning, positioned them on the tree as a Christmas decoration. "Look at how nice I've hung them on the tree," he thought to himself, followed by "... Uhm, that was a poor choice of words." He also added a fitting background to make it all come together even better.
 
-"This is starting to look like something! But we should have a star too!". Using the same steps as with the three, he created a star and placed it on the top of the three.
+"This is starting to look like something! But we should have a star too!". Using the same steps as with the tree, he created a star and placed it on the top of the tree.
 
 <iframe height="836" style="width: 100%;" scrolling="no" title="three with decorations" src="https://codepen.io/dagfs/embed/PowZNpP?height=836&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/PowZNpP'>three with decorations</a> by Dag Frode
@@ -105,7 +105,7 @@ After taking some time to enjoy his hard work, Dag thought to himself, "Let's pu
 </iframe>
 
 
-"Better! But not quite there." The three looks a bit bland. "Maybe a gradient could spice up the three? But I've never gotten the hang of them". He took to his favorite search engine with a quack and quickly found something he thought he could use. [CSS Stripes Generator](http://stripesgenerator.com). Generating some rad stripes and then tweaking them, he came up with a result he was happy with.
+"Better! But not quite there." The tree looks a bit bland. "Maybe a gradient could spice up the tree? But I've never gotten the hang of them". He took to his favorite search engine with a quack and quickly found something he thought he could use. [CSS Stripes Generator](http://stripesgenerator.com). Generating some rad stripes and then tweaking them, he came up with a result he was happy with.
 
 <iframe height="837" style="width: 100%;" scrolling="no" title="three with decorations" src="https://codepen.io/dagfs/embed/MWYKybE?height=837&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/dagfs/pen/MWYKybE'>three with decorations</a> by Dag Frode
