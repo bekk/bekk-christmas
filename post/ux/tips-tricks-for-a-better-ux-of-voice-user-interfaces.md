@@ -19,7 +19,7 @@ I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on v
 
 * Ask yourself “Why is VUI the right interface for this solution?”. This is for example not the best interface for selling paintings. In my opinion, one of the biggest problems for VUI so far is that it needs to prove itself useful and not only “nice to have”.\
     \
-    Tips & tricks: People use VUI when their hands are busy - for example to set a timer when cooking or to find a song while driving. And they use it  it’s faster to ask a question than trying to find the answer by themselves - for example getting the outdoor temperature or the name of a capital.
+    Tips & tricks: People use VUI when their hands are busy - for example to set a timer when cooking or to find a song while driving. And they use it when it’s faster to ask a question than trying to find the answer by themselves - for example getting the outdoor temperature or the name of a capital.
 
 \--
 
@@ -41,7 +41,7 @@ I know the struggle. I’ve made two voice skills for Amazon Alexa, advised on v
 
 \--
 
-* Words matter more than ever when talking about branding. The chosen words are the ones that dictates how the user understands your product, and that shapes their experience.\
+* Words matter more than ever. The chosen words are the ones that dictates how the user understands your product, and that shapes their experience.\
     \
     Tips & tricks: End your sentence with a question, and avoid placing it in the middle. People tend to answer the questions immediately. This is, by the way, not the time and place for those rhetorical questions trying to pretend to be a great author.
 
