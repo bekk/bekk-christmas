@@ -60,10 +60,11 @@ prepareChristmasGift(
 
 Keep in mind, though; arguments that we do not specify by name must still adhere to the placement as given by the function declaration.
 
-Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself (or code inspection if your IDE supports it). Additionally, as we'll see later, Named Arguments can be even more powerful, and sometimes make function calls less verbose (!), when combined with Default Arguments.
+Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself (or code inspection if your IDE supports it). Additionally, as we'll see later, when combining Named and Default Arguments, we can make function calls even more flexible and sometimes less verbose.
 
 ## A word about Java Interop
-In the example above we made the assumption that our function was both declared and called from within Kotlin code. If we're making use of Kotlin's interop with Java, we might be tempted to try and call Java methods with named arguments from within Kotlin code. By default this is **not supported**, and thus trying to pass arguments to a Java method call by its parameter name, would result in a compiler error.
+
+In the example above we made the assumption that our function was both declared and called from within Kotlin code. If we're making use of Kotlin's interop with Java, we might be tempted to try and call Java methods with named arguments from within Kotlin code. By default this is **not supported**, and thus trying to pass arguments to a Java method call by specifying its parameter name, would result in a compiler error.
 
 Rewriting the Java method to a Kotlin function might not always be an option. In such cases there are some alternatives to named arguments in the context of Java interop; such as utilising the [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern), that might give similar possibilities, although requiring more overhead. 
 
