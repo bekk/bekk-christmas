@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 16
 title: Managing Apps on GKE Using Helm
+ingress: ''
 links:
   - title: Code Example
     url: 'https://github.com/espenmeidell/christmas-19'
@@ -24,6 +25,10 @@ To complete the steps in this article you need the following tools installed on 
 You also need to enable the Kubernetes engine and Container Registry apis in GCP. The code used in this article can be found on [GitHub](https://github.com/espenmeidell/christmas-19). 
 
 ## What is Helm?
+
+Helm describes itself as the package manager for Kubernetes. By creating Helm charts, we can describe all the required parts of our application, such as deployments, configmaps, and services, in one place. Helm uses value files that can inject variables into the templates. This makes it easy to customize deployments across different environments.  
+
+...TODO
 
 ## The Sample Application
 
@@ -181,6 +186,83 @@ Now we can visit http://localhost:8080/ and see that our app is running. Obvious
 
 ## Adding a Load Balancer
 
+First we edit `values.yaml` and set the service type to a load balancer. 
+```yaml
+...
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8000
+...
+```
+We also need to change the file describing the service (`service.yaml`) by adding the target port:
+```yaml
+...
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+...
+```
+Finally, we bump the version number in `Chart.yaml` to 2:
+```yaml
+...
+version: 2
+...
+```
+
+Now that the templates have been added we can package it up. This will create a new file with the name `christmas-app-2.tgz`:
+```
+helm package christmas-app
+```
+
+Now it's time to roll out the new release. To do this we use the `helm upgrade` command. Note that to most Helm commands we can add the `--dry-run` flag to see what changes the command will create.
+
+```
+helm upgrade christmasapp christmas-app-2.tgz
+```
+
+We have to wait for a bit until the load balancer gets an IP address. We can watch it happen with:
+```
+kubectl get svc -w
+```
+
+Once a value appears under `EXTERNAL-IP`, copy it and open it in the browser. You should see the message from our server!
+
+
 ## Updating the Application
 
+Let’s say we want to release a new version of our app that counts down the days until Christmas. We update the javascript file, build and push a new docker image:
+```
+docker build . -t eu.gcr.io/julekalender/app:2
+docker push eu.gcr.io/julekalender/app:2
+```
+
+We have tagged the image with 2, so we update the appVersion in Chart.yaml. We also need to update the chart version to 3. Note the difference between the application version and chart version. Then we package the new release:
+```
+helm package christmasapp
+helm upgrade christmasapp christmas-app-3.tgz
+```
+
+Helm will detect the changes and create a new pod with the updated app. When the new version is ready it will shut down the old pod. This way there is no downtime for our mission critical Christmas app!
+
+If you visit the IP you should see the updated app.
+
 ## Release History and Rollback
+
+The following command allows us to see the release history of our application:
+```
+helm history christmasapp
+```
+
+If we want to undo the latest change, rolling back to the previous revision is as simple as:
+```
+helm rollback christmasapp 0
+```
+
+Soon we will see the previous version of the app. By checking the history, we can see that the rollback is added as a new release. This way we have full control over our release history.
+
+## Final Comments
+
