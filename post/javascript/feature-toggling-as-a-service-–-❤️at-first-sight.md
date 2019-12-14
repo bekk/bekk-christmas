@@ -6,7 +6,7 @@ title: Feature toggling as a service – ❤️at first sight
 ingress: >-
   I used to think that feature switches were clunky if-statements in my code
   that would require re-compilation or at least restart of my app. Launch Darkly
-  proved me totally, swinging me from cynical scepticism to deep love!
+  proved me totally wrong, swinging me from cynical scepticism to deep love!
 authors:
   - Thomas Svensen
 ---
