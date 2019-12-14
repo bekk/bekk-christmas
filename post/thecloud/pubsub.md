@@ -17,7 +17,7 @@ authors:
 ---
 ## The digital economy requires a massive infrastructure
 
-In today's digital economy, storing, processing and transporting information across all digital services we employ is a massive undertaking. Imagine only the amount of documents, emails, snaps, Spotify and Netflix steams, Google searches the world does during a single day. The amount of data stored and processed inceases by more than 60% per year, and will reach 175 ZB in 2025 by [some estimates](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597), up fom 33 ZB in 2018.
+In today's digital economy, storing, processing and transporting information across all digital services we employ is a massive undertaking. Imagine only the amount of Google searches, documents, emails, snaps, Spotify, Netflix and viral Youtube steams of Despacito and Gangam Style,  the world does during a single day. The amount of data stored and processed inceases by more than 60% per year, and will reach 175 ZB in 2025 by [some estimates](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597), up fom 33 ZB in 2018.
 
 To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers. 
 
