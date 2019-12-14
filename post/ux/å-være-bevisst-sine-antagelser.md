@@ -36,7 +36,9 @@ Målet med å få opp en hypotese er å kjøre et eksperiment der man prøver å
 
 Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: design, utvikling og produkteier. Da har vi diskutert hvilke antagelser vi har om løsningen, hva vi vil finne ut av og hvordan vi kan finne ut av det. 
 
-<a href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"><img style="width: 150px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/> </a>
+<a target="_blank" href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"><img style="width: 150px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/> </a>
+
+<center><a target="_blank" href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"> Testkortet</a> </center>
 
 ## **Formuleringen vi har brukt:**
 
@@ -58,21 +60,23 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 4. _Måling_: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
-<a href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"><img style="width: 150px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/> </a>
 
-## Og del 2: læringskort
+
+## Og del 2: læringskortet
+
+ <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"><img style="width: 150px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/> </a>
+
+<center> <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"> Læringskortet </a> </center>
 
 Her oppsummeres det dere trodde (altså selve hypotesen) og hva dere lærte. Ble hypotesen bekreftet eller avkreftet? Og hvorfor?
 
 
 
-
+# Noen erfaringer og refleksjoner
 
 <img style="width: 300px" src="https://i.ibb.co/qRLyyC6/hypotesevegg.png" alt="Hypoteseveggen"/>
 
 _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig det er å vite og ikke bare anta._ 
-
-# Noen erfaringer og refleksjoner
 
 ## De gode diskusjonene
 
