@@ -23,7 +23,7 @@ Vi var et nytt produktteam. Det vil si, før sommeren var vi et prosjekt med tyd
 
  <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists"><img style="width: 300px" src="https://i.ibb.co/X8kdDSN/illustrasjon-anca.png" alt="tekanne"/> </a> 
 
-<center>Bok: The Design of Everyday Things - Don Norman. Illustrasjon av Anca doodles</center>
+<center>Bok: The Design of Everyday Things - Don Norman. Illustrasjon av  <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists">Anca doodles</center></a> 
 
 
 
@@ -31,12 +31,12 @@ Vi var et nytt produktteam. Det vil si, før sommeren var vi et prosjekt med tyd
 
 
 
- <a  target="_blank" href="https://twitter.com/necolas/status/1096221537537933312"><img style="width: 150px" src="https://i.ibb.co/9hKxv42/twitter-Nicolas-measure.png" alt="Twittermelding"/> </a>
+ <a  target="_blank" href="https://twitter.com/necolas/status/1096221537537933312"><img style="width: 400px" src="https://i.ibb.co/9hKxv42/twitter-Nicolas-measure.png" alt="Twittermelding"/> </a>
 
 <center> Twitter-melding </center>
 
 
 
- <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"><img style="width: 150px" src="https://i.ibb.co/wW3GtWh/ambisjonskanvas-Linn-HD-lite.png" alt="Ambisjonskanvas"/> </a> 
+ <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"><img style="width: 200px" src="https://i.ibb.co/wW3GtWh/ambisjonskanvas-Linn-HD-lite.png" alt="Ambisjonskanvas"/> </a> 
 
 <center> <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"> Ambisjonskanvas </a> </center>
