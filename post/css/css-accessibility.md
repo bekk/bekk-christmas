@@ -48,62 +48,39 @@ Great, we just made our site useless for those who really need and rely on this 
 
 Ok, but I didn’t actually add that line of CSS you say, it is part of my CSS Reset you say. Ok, but then it might be time to update your css reset, as the most used CSS Reset from Eric Meyer removed this css in 2011…
 
-\## Controlling the focus
+## Controlling the focus
 
 I highly recommend reading https://css-tricks.com/focusing-on-focus-styles/ for detailed information about everything focus. Different designs require different considerations when choosing how you are showing focus, but whatever you end up choosing, remember to take into account all the other WCAG Success Criterion to make sure you do not break compliance with more rules.
 
-\## Don’t forget to focus on your fancy designs
+## Don’t forget to focus on your fancy designs
 
 We love fancy design, or at least our users and designers love fancy design, and especially custom radio, checkboxes and dropdowns. As developers though, we especially hate styling these three form elements, due to the fact that they are not customisable out of the box. Cue hacks!
 
-
-
 https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3 goes through all the steps necessary for creating a custom checkbox, and the same technique applies for radio buttons and dropdowns. 
-
-
 
 Not all custom checkboxes are created equal though, and it is depressing how little care is given to accessibility when browsing for custom css forms. When searching for “custom checkbox” on codepen.io, almost all top examples did not have proper accessibility. 
 
-
-
 To make sure you custom css forms are accessible:
-
-
 
 1. Do not remove the initial input element from the DOM.
 
-
-
 You might be tempted to apply
 
+```
 
+input[type="checkbox"] { display: none; }
 
-\`\``
-
-input\[type="checkbox"] { display: none; }
-
-\`\``
-
-
+```
 
 to your checkbox. You just lost screen readers, and the possibility of controlling the focus state. The better way is to use \`opacity: 0;\` and move the original checkbox out of the way so that it does not take up any space.
 
-
-
 2. Style your ::before or ::after based on the focus state
-
-
 
 The work is almost done, it is just a matter of adding some focus style:
 
-
-
-\`\``
-
-input\[type="checkbox"]:focus + label::before {
-
-\    outline: #ff0a0e auto 5px;
-
+```
+input[type="checkbox"]:focus + label::before {
+    outline: #ff0a0e auto 5px;
 }
 
-\`\``
+```
