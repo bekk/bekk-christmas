@@ -3,9 +3,11 @@ calendar: thecloud
 post_year: 2019
 post_day: 15
 title: How clouds impact environment
+image: >-
+  https://images.unsplash.com/photo-1461733467189-bdbea5525075?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  We are generating staggering amounts of data each year. And the amount is
-  ever-increasing year by year. IDC estimates that the amount of data worldwide
+  We are generating astounding amounts of data each year. And the amount is
+  ever-increasing year by year. Estimates show that the amount of data worldwide
   will reach 175 zettabytes by 2025. Roughly half of it will be stored in public
   clouds and the rest in other types of data centers. What kind of impact does
   this have on the environment? And is there anything you can do about it?
@@ -21,7 +23,7 @@ In today's digital economy data has become the new gold. The more you have, the 
 
 No wonder companies are fighting about the privilege to collect our data. 
 
-## Data requires infrastructure
+## Data requires a staggering infrastructure
 
 To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about data centers.
 
@@ -33,7 +35,27 @@ The need to store all of our data has lead to a golden period of development in 
 
 
 
-It is hard to even imagine this number, but if one were able to store 175ZB onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times and if you could download 175ZB on today’s largest hard drive, it would take 12.5 billion drives. 
+## How much is 175ZB?
+
+It is hard to even imagine this number, but if one were able to store 175ZB onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. If you could download 175ZB on a stack of hard disks, you would need approximately 11 billion drives (the largest hard drive in production as of writing is 16TB). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center operations and implicitly the cloud employs a large industry. 
+
+## What is the problem?
+
+Building data centers has become an industry of its own right with an expected value of $57 bn by 2025. In addition to the actual housing of the data centers, you need to fill the data centers with lots and lots of hardware, hundreds of miles of cable, refrigerant and water for cooling, batteries and diesel generators to mitigate power outages, and last but not least - an enormous amount of energy to operate the hardware. I will present some issues with each of these.
+
+**Hardware**
+
+Since data centers require so much hardware, it is natural to assess the lifecycle impact of the hardware used in the data centers. For data center operations, hardware needs to be manufactured, shipped, installed, operated and decommissioned. Each of these processes requires resources. The manufacturing process for computer electronics for instance requires the mining and extraction of metal ore and in some instances rare earth metals such as neodymium which is used in traditional hard drives and terbium which is used in solid state electronics. Although rare earth metals is a somewhat [misleading term](https://www.scientificamerican.com/article/dont-panic-about-rare-earth-elements/), the extraction and processing of ore to produce concentrates usually involves usage of lots of heavy machinery and chemicals and leaves [significant impacts](https://www.researchgate.net/publication/227332044_Environmental_impact_assessment_of_open_pit_mining_in_Iran) on the environment via the open pits the mines [imprint on the geography](v). 
+
+Hardware also usually has a fairly limited life span. Usually hardware is replaced every 3-5 years to keep up with performance requirements and reliability concerns for operations. [Decomissioning ](https://www.networkworld.com/article/3439917/how-to-decommission-a-data-center.html)hardware might entail both hazardous materials such as refrigerant used in cooling systems, electronic waste and recycling electronics. Especially recycling electronics will have a big impact on the life cycle assessment of the hardware. 
+
+
+
+water supply for cooling,
+
+
+
+
 
 This in turn has 
 
