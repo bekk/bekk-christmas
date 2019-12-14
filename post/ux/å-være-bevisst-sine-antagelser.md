@@ -20,11 +20,11 @@ authors:
 ---
 Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning ut i produksjon som vi har tro på, og det ligger mange andre problemer tilgjengelig som en kan ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at det vi laget faktisk løste problemet?
 
-Vi har tatt en antagelse. Antagelser er skummelt! - rett og slett fordi de kan være feil!
+Vi har tatt en antagelse. Og antagelser er skummelt - rett og slett fordi de kan være feil!
 
 <img style="width: 300px" src="https://i.ibb.co/Hqm1NxQ/vi-tror-at.png" alt="Postit med vi tror at"/>
 
-Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
+Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger, og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
 
 ## Slik bruker vi «testkort»
 
@@ -53,12 +53,16 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 ## **Selve hypotesen er de første tre delene:**
 
 1. _Problemet vi ønsker å løse._ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for...»
-2. _Løsningen_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har nok tro på- Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
+2. _Løsningen_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
 3. _Utfall_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
 
 ## **Eksperimentet:**
 
 4. _Måling_: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+
+ <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"><img style="width: 150px" src="https://i.ibb.co/FYDwHkT/3-Hypotesekort-inngang-til-ma-l-lite.jpg" alt="testkort"/> </a>
+
+<center> <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"> Et eksempel </a> på et utfyllt testkort for en A/B-test </center> 
 
 
 
@@ -81,6 +85,8 @@ _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig de
 ## De gode diskusjonene
 
 Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges slavisk. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
+
+
 
 ## Få med alle fagfelt
 
