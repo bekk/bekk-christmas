@@ -57,19 +57,39 @@ Data centers require a lot of space. Hyperscale datacenters require hundreds of 
 
 **Energy**
 
-According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately somewhere between 1 and 2% of total worldwide energy consumption. 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world.
+According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately 1% of the total worldwide energy consumption. 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world. What is more important, the source of this energy might come from fossil fuels such as coal. If all this energy were produced by coal plants, it would result in an annual emission of [1.2 billion metrics tonnes of CO2](https://www.sourcewatch.org/index.php/Estimating_carbon_dioxide_emissions_from_coal_plants). In comparison, the total aviation industry emits roughly [0.9 billion metric tonnes of CO2](https://theicct.org/publications/co2-emissions-commercial-aviation-2018). Although many cloud providers have pledged to decarbonize their data centers, none have ditched fossil fuels entirely, and most of them rely on renewable energy credits rather than directly utilizing renewable energy sources such as solar or wind power. Greenpeace has been [following up](https://www.greenpeace.org/usa/news/greenpeace-finds-amazon-breaking-commitment-to-power-cloud-with-100-renewable-energy/) on the cloud providers pledges, and there are big differences, as laid out in [this recent](https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#) Wired article.
+
+Some [alarmist predictions](https://www.nature.com/articles/d41586-018-06610-y) indicate that the total energy consumption of data centers could rise to as much as 8% of total world energy consumption by 2030.
 
 
+
+That’s why a critical measure of a data center’s greenness is the source of its energy. 
+
+
+
+The Lawrence Berkeley National Laboratory estimated that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage.
+
+https://www.cbinsights.com/research/future-of-data-centers/#energy
 
 
 
 ## Is there some light at the end of the tunnel?
+
+The reality however is a bit more nuanced. 
+
+Luckily, there are some bright sides to these dire statistics. 
+
+https://www.nature.com/articles/d41586-018-06610-y
+
+
 
 
 
 water supply for cooling,
 
 
+
+https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#
 
 
 
@@ -99,7 +119,7 @@ hyperscale cloud data centers are beginning to record PUE value of 1.1 or less.3
 
 
 
-## What is there to be done?
+## Why is this important and what is there to be done?
 
 Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose, even if research shows that 4K pictures alone can 
 
