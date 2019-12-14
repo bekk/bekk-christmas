@@ -14,7 +14,7 @@ ingress: >-
 
 
   For a general introduction to accessibility, I recommend reading the article
-  from day 6 in our UX Christmas calendar https://ux.christmas/2019/6, and to
+  from [day 6 in our UX Christmas calendar](https://ux.christmas/2019/6), and to
   see all the technical tidbits involved, I recommend going through the
   checklist found at https://www.wuhcag.com/wcag-checklist/.
 
@@ -34,19 +34,15 @@ links:
 authors:
   - Hans-Christian Fjeldberg-Gustavson
 ---
-\## :focus
+## :focus
 
 How many of you have done this before, I know I have:
 
-\`\``
-
+```
 :focus {
-
-\    outline: none;
-
+    outline: none;
 }
-
-\`\``
+```
 
 Great, we just made our site useless for those who really need and rely on this feature, and at the same time made our site less usable for the rest of our users. And, if we do not offer an alternative way of showing if an element is in focus, a fine might be one its way, since we are not complying with Success Criterion 2.4.7 Focus Visible!
 
