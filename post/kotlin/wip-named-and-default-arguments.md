@@ -87,7 +87,7 @@ fun overloaded(a: Boolean) =
 
 In practice we have now allowed the caller of the function to omit arguments for `b`, `c`, `d`, which will be supplied correspondingly with `false` as the default value.
 
-With Default Arguments though, we can achieve the same functionality with a fraction of the overhead. Suppose we wanted to modify our gift-wrapping function with a default value for the `applyGiftWrapping` parameter. After all; half the fun with Christmas presents lies in the unwrapping, so we can expect that most of the callers will want to have this flag set to `true`!
+With Default Arguments though, we can achieve the same functionality with a fraction of the overhead. Suppose we wanted to modify our gift-wrapping function with a default value for the `applyGiftWrapping` parameter. After all; half the fun with receiving Christmas presents lies in the unwrapping, so we can expect that most of the callers will want to have this flag set to `true`!
 
 Default Arguments are specified in the function declaration using `=` followed by the default value. Applying this to our function, we get the following:
 
