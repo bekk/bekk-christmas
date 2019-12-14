@@ -5,21 +5,20 @@ post_day: 15
 title: How clouds impact environment
 image: >-
   https://images.unsplash.com/photo-1461733467189-bdbea5525075?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
-ingress: >-
-  We are generating astounding amounts of data. Estimates show that the amount
-  of data worldwide will reach 175 zettabytes by 2025. Roughly half of it will
-  be stored in public clouds and the rest in other types of data centers. What
-  kind of impact does this have on the environment? And is there anything you
-  can do about it?
+ingress: Did you know that a Google search
 links: []
 authors:
   - Safurudin Mahic
 ---
 ## The digital economy requires a massive infrastructure
 
-In today's digital economy, storing, processing and transporting information across all digital services we employ is a massive undertaking. Imagine only the amount of [Google searches](https://googleblog.blogspot.com/2009/01/powering-google-search.html), documents, emails, snaps, Spotify, Netflix and viral Youtube steams of [Despacito](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) and Gangam Style, the world does during a single day. The amount of data stored and processed inceases by more than 60% per year, and will reach 175 ZB in 2025 by [some estimates](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597), up fom 33 ZB in 2018.
+We are generating astounding amounts of data. Estimates show that the amount of data worldwide will increase by 60% per year, reaching [175 zettabytes](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597) by 2025, up from 33 in 2018. Roughly half of it will be stored in public clouds and the rest in other types of data centers. 
 
-To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers. 
+On top of that data, we are building services that drive the digital economy. 
+
+Storing, processing and transporting information across all digital services we employ is a massive undertaking. There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/) Google searches performed each day, each resulting in[ 6-8 servers](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) to be activated each search in terms of greenhouse gases is [equivalent to about 0.2 grams of CO2](https://googleblog.blogspot.com/2009/01/powering-google-search.html).  [Despacito](https://www.youtube.com/watch?v=kJQP7kiw5Fk) going viral, reaching 6.3 billion views [burned](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) as much energy as 40 000 U.S. homes
+
+Add on top of this all the other services powered by the cloud such as Netflix, Spotify, Uber, Office365++ you'll soon realize To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers, serving billions of users.
 
 ![test](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
@@ -86,7 +85,7 @@ In the past decade, processor scaling and general improvement in energy efficien
 
 However, now that we are starting to hit some physical and theoretical limitations, these low-hanging fruits are gone. The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres seems evident. The Lawrence Berkeley National Laboratory [estimated](https://newscenter.lbl.gov/2016/06/27/data-centers-continue-proliferate-energy-use-plateaus/) that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage. A prediction by the IAE is that this trend is already on its way, as illustrated in the chart below.
 
-![](/assets/tc-15-hyperscale.png "IEA, \\"Global data centre energy demand by data centre type\\", IEA, Paris https://www.iea.org/data-and-statistics/charts/global-data-centre-energy-demand-by-data-centre-type")
+![](/assets/tc-15-hyperscale.png)
 
 _IEA, "Global data centre energy demand by data centre type", IEA, Paris https://www.iea.org/data-and-statistics/charts/global-data-centre-energy-demand-by-data-centre-type_
 
