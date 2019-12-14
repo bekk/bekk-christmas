@@ -5,7 +5,8 @@ post_day: 15
 title: 'WIP: Stuff we read - sunday reading'
 ingress: ''
 ---
-# The Code Book by Simon Singh
+# The Code Book
+If you want a history lesson about the fascinating story
 
 https://simonsingh.net/books/the-code-book/
 
@@ -19,20 +20,20 @@ The GCHQ Puzzle Book is published in corporation with the GCHQ, the British inte
 
 There is no hiding that these puzzles are hard, but they are a great way to test your wit against some of the best code breakers in the world.
 
-<https://www.penguin.co.uk/books/300160/the-gchq-puzzle-book/9780718185541.html>
-
-and
-
-<https://www.penguin.co.uk/books/311109/the-gchq-puzzle-book-ii/9780241365434.html>
+<https://www.penguin.co.uk/books/300160/the-gchq-puzzle-book/9780718185541.html> and <https://www.penguin.co.uk/books/311109/the-gchq-puzzle-book-ii/9780241365434.html>
 
 # Permanent Record by Edward Snowden
 
 <https://us.macmillan.com/books/9781250237231>
 
 # Hackers: Heroes of the Computer Revolution
+We cannot believe that it is 25 years since this book was released, many of us were hardly born yet. Steven Levy tells the story of the early hackers, mostly around MIT and Silicon Valley milieu. From the hobbyist that funded computer clubs, via hardware hackers with their own ethics to game developers and the start of the home computer revolution. The book is filled with facts and interviews with the people that actually where there during the infancy of our business. This updated edition contains new afterword with new interviews.
 
 <https://www.stevenlevy.com/index.php/books/hackers>
 
 # The Geek Atlas: 128 Places Where Science and Technology Come Alive
+If you still have not made plan on where to go next year, we might suggest you have a look at this book. The Geek Atlas covers famous, and not so famous destinations, all related to technology. John Graham-Cumming has selected a diverse range of locations where “science happened”. Each place is described and includes interesting facts about the sites significance in history. On the top of our list is Bletchley Park, where Alan Turing worked as a code breaker in the Government Code and Cipher School (GC & CS).
 
 <https://jgc.org>
+
+Happy reading...
