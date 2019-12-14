@@ -82,29 +82,33 @@ A third technology improvement has been dynamic scaling based on demand. Most pr
 
 Lastly, replacing older hard drives with SSD drives reduces the energy consumption by half.
 
-**Incresed energy efficiency on data center level**
+**Increased energy efficiency on data center level**
 
-Energy is the single largest expense for a data center operation, therefore data center operators have invested heavily in improving infrastructure. A standard measure used in industry is power usage effectiveness (PUE) - the ratio of total power required to run an entire facility versus the direct power involved in compute and storage. Over the past 10 years public cloud vendors have decreased this value considerably. While smaller data centers are still being measured with PUE values greater than 2, large hyperscale cloud data centers are beginning to record [PUE value of 1.1](http://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf) or less, which is very close to the theoretically perfect PUE of 1.0
+Energy is the single largest expense for a data center operation, this is in particular true for hyperscale operators of public clouds. These companies have invested heavily in improving their infrastructure. A standard measure used in industry is power usage effectiveness (PUE) - the ratio of total power required to run an entire facility versus the direct power involved in compute and storage. Over the past 10 years public cloud vendors have decreased this value considerably. While smaller data centers are still being measured with PUE values greater than 2, large hyperscale cloud data centers are beginning to record [PUE value of 1.1](http://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf) or less, which is very close to the theoretically perfect PUE of 1.0. 
+
+**What will the future bring?**
+
+In the past decade, processor scaling and general improvement in energy efficiency on both component level and data center level, via reductions in PUE, has been ensuring us an efficient offset in total energy consumption in data centers, even due to strong growth of both hyperscale and regular data centers.
+
+However, now that we are starting to hit some physical and theoretical limitations, these low-hanging fruits are gone. The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres seems evident. The Lawrence Berkeley National Laboratory [estimated](https://newscenter.lbl.gov/2016/06/27/data-centers-continue-proliferate-energy-use-plateaus/) that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage. A prediction by the IAE is that this trend is already on its way, as illustrated in the chart below.
+
+![](/assets/tc-15-hyperscale.png "IEA, \"Global data centre energy demand by data centre type\", IEA, Paris https://www.iea.org/data-and-statistics/charts/global-data-centre-energy-demand-by-data-centre-type")
+
+_IEA, "Global data centre energy demand by data centre type", IEA, Paris https://www.iea.org/data-and-statistics/charts/global-data-centre-energy-demand-by-data-centre-type_
+
+Meanwhile, these hyperscale operators continue to innovate. Google for instance entered into a collaboration with DeepMind to [improve data center cooling](https://www.bloomberg.com/opinion/articles/2019-12-13/energy-efficiency-a-hot-problem-for-big-tech-data-centers?srnd=opinion) via Machine Learning and just recently launched a fully automated solution for their data centers, rendering a PUE of 1.06 on certain facilities.
+
+![](/assets/tc-15-ml.jpg "https://www.cbinsights.com/research/future-of-data-centers/#energy")
+
+_A typical day of PUE (power usage effectiveness) with ML turned on and off. Source: DeepMind_
+
+The cloud vendors also continue to improve on runtimes, virtualization, compression and software that runs on top of this hardware. For instance, Google [recently launched](https://cloud.google.com/blog/products/compute/understanding-dynamic-resource-management-in-e2-vms) a new task scheduler which assigns resources dynamically, hence increasing hardware utilization in massive-multiparallell environments. Microsoft has done substatial work to improve performance in their .NET Core libraries for the same reasons. 
 
 
 
-Google now maintains a PUE of 1.12 across all of its data centers, including all sources of overhead, which is .
 
 
-
-
-
-Strong growth in demand for data centre services continues to be offset by continued improvements in the efficiency of servers, storage devices, network switches and data centre infrastructure, as well as a shift to much greater shares of cloud and hyperscale data centres. Hyperscale data centres are very efficient, large-scale cloud data centres that run at high capacity, owing in part to virtualisation software that enables data centre operators to deliver higher work output with fewer servers.
-
-The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres is evident in the shrinking share of data centre infrastructure in total energy demand, given the very low power usage effectiveness (PUE) of large data centres. PUE is a measure of how efficiently a data centre uses energy; the very best hyperscale data centres can have PUE values of around 1.1 (meaning 0.1 kWh used for cooling/power provision for every 1 kWh used for IT equipment).
-
-
-
-
-
-However, now that PUEs have improved, the low-hanging fruit is gone. Future efficiency gains will be minor and incremental
-
-The Lawrence Berkeley National Laboratory estimated that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage.
+https://www.bloomberg.com/opinion/articles/2019-12-13/energy-efficiency-a-hot-problem-for-big-tech-data-centers?srnd=opinion
 
 https://www.cbinsights.com/research/future-of-data-centers/#energy
 
