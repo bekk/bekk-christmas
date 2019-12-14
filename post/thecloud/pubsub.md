@@ -63,49 +63,37 @@ Servers in data centers consume substantial amounts of energy. According to esti
 
 Some [alarmist predictions](https://www.nature.com/articles/d41586-018-06610-y) indicate that the total energy consumption of data centers could rise to as much as 8% of total world energy consumption by 2030.
 
-That's why environmental impact of the cloud is mostly dictated by the source of its energy.
-
-
+That's why environmental impact of the cloud is first and foremost dictated by the amount and source of its energy.
 
 ## Is there some light at the end of the tunnel?
 
 Maybe
 
-Although various sources report an increased energy consumption due to the increased demand for computation, and in particular an increased number of data centers, the International Energy Agency [refutes this](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks), claiming the energy consumption in this industry has and will be stable for at least the next three years.
+Although various sources report an increased energy consumption due to the increased demand for computation, and in particular an increased number of data centers, the International Energy Agency [refutes this](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks), claiming the energy consumption will be stable for at least the next three years despite a projected 80% increase in data centre traffic and 50% increase in data centre workloads.
 
-This needs some explanation. For the last 50 years, we have been able to cram an exponential number of transistors in a single processor. Mainly driven by manufacturing process improvements, reducing the size of each transistor has in addition to giving an exponential improvement in computing power, simultaneously as we've been able to reduce power consumption. So, even we've seen a rapid increase in number of data centers, the technology improvement has been reducing power consumption by an equal amount. 
+This needs some explanation. For the last 50 years, we have been able to cram an exponential number of transistors in a single processor. Mainly driven by manufacturing process improvements, reducing the size of each transistor has in addition to giving an exponential improvement in computing power, enabled a reduction in power consumption. So, even though we've seen a rapid increase in number of data centers, the technology improvement has been reducing power consumption by an equal amount. 
+
+However, these efforts have lately come to a halt. We are getting close to physical boundaries with regards to how small each transistor can get before experiencing quantum effects, rendering computations non-deterministic. Therefore, instead of focusing on reducing transistor size, the processor industry has focused on providing the opportunity to increase the number of cores, and improve computation by parallelization.  Today, you can find processors with up to 64 cores, and GPUs with hundreds of cores, enabling parallellization of specific tasks. But not all computations are parallelizable, and this too will hit a rooftop in the future. 
+
+Another driver behind this trend has been the data center industry itself. Energy is the single largest expense for a data center operation, and the industry has done quite some improvements.
 
 
 
+Strong growth in demand for data centre services continues to be offset by continued improvements in the efficiency of servers, storage devices, network switches and data centre infrastructure, as well as a shift to much greater shares of cloud and hyperscale data centres. Hyperscale data centres are very efficient, large-scale cloud data centres that run at high capacity, owing in part to virtualisation software that enables data centre operators to deliver higher work output with fewer servers.
+
+The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres is evident in the shrinking share of data centre infrastructure in total energy demand, given the very low power usage effectiveness (PUE) of large data centres. PUE is a measure of how efficiently a data centre uses energy; the very best hyperscale data centres can have PUE values of around 1.1 (meaning 0.1 kWh used for cooling/power provision for every 1 kWh used for IT equipment).
+
+Over the past 10 years, data center power usage effectiveness (PUE) -- the ratio of total power required to run an entire facility versus the direct power involved in compute and storage -- has decreased. Google now maintains an impressive PUE of 1.12 across all of its data centers, including all sources of overhead, which is very close to the theoretically perfect PUE of 1.0.
 
 
-However, these efforts have lately come to a halt. We are getting close to physical boundaries with regards to how small each transistor can get before experiencing quantum effects, rendering computations non-deterministic. Therefore, instead of focusing on reducing transistor size, the processor industry has focused on providing the opportunity to increase the number of cores, and improve computation by parallelization. 
+
+However, now that PUEs have improved, the low-hanging fruit is gone. Future efficiency gains will be minor and incremental
 
 The Lawrence Berkeley National Laboratory estimated that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage.
 
 https://www.cbinsights.com/research/future-of-data-centers/#energy
 
 
-
-The reality however is a bit more nuanced. 
-
-Luckily, there are some bright sides to these dire statistics. 
-
-https://www.nature.com/articles/d41586-018-06610-y
-
-water supply for cooling,
-
-https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#
-
-This in turn has 
-
-Global data centre electricity demand in 2018 was an estimated 198 TWh, or almost 1% of global final demand for electricity (Masanet et al., 2018).
-
-Based on current trends in the efficiency of hardware and data centre infrastructure, global data centre energy demand is projected to decrease slightly to 191 TWh in 2021 (Cisco, 2018; Masanet et al., 2018; Shehabi et al., 2016). This is despite a projected 80% increase in data centre traffic and 50% increase in data centre workloads over the next three years (Cisco, 2018).
-
-Strong growth in demand for data centre services continues to be offset by continued improvements in the efficiency of servers, storage devices, network switches and data centre infrastructure, as well as a shift to much greater shares of cloud and hyperscale data centres. Hyperscale data centres are very efficient, large-scale cloud data centres that run at high capacity, owing in part to virtualisation software that enables data centre operators to deliver higher work output with fewer servers.
-
-The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres is evident in the shrinking share of data centre infrastructure in total energy demand, given the very low power usage effectiveness (PUE) of large data centres. PUE is a measure of how efficiently a data centre uses energy; the very best hyperscale data centres can have PUE values of around 1.1 (meaning 0.1 kWh used for cooling/power provision for every 1 kWh used for IT equipment).
 
 But the biggest signal, says Fox, will come from us, the digital consumers. Increasingly, he says, “they understand that every cloud lives inside a data center. And each has a different footprint.” We will, he believes, soon all demand to know the carbon footprint of our video streams and internet searches. The more far-sighted of the big data companies are gearing up for that day. “I fully expect we may see green labelling for digital sources as routine within five years.” 
 
