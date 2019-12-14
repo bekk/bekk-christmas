@@ -17,8 +17,6 @@ links:
 authors:
   - Even Holthe
 ---
-# Accelerating cloud migration by contributing to Terraform providers
-
 ## What is Digipost?
 [Digipost](https://digipost.no) is one of two providers of [digital mailboxes](https://www.norge.no/en/about-digital-mailbox), a more secure alternative than regular email. This enables central and local government as well as private companies to send secure letters to Norwegian citizens. As a consultant for [Bekk](https://bekk.no) I currently help Digipost with migrating their systems to a public cloud – Microsoft Azure.
 
