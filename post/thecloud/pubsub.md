@@ -8,7 +8,7 @@ ingress: >-
   ever-increasing year by year. IDC estimates that the amount of data worldwide
   will reach 175 zettabytes by 2025. Roughly half of it will be stored in public
   clouds and the rest in other types of data centers. What kind of impact does
-  this have on the environment?
+  this have on the environment? And is there anything you can do about it?
 links: []
 authors:
   - Safurudin Mahic
@@ -35,4 +35,40 @@ The need to store all of our data has lead to a golden period of development in 
 
 It is hard to even imagine this number, but if one were able to store 175ZB onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times and if you could download 175ZB on today’s largest hard drive, it would take 12.5 billion drives. 
 
-This in turn has
+This in turn has 
+
+Global data centre electricity demand in 2018 was an estimated 198 TWh, or almost 1% of global final demand for electricity (Masanet et al., 2018).
+
+Based on current trends in the efficiency of hardware and data centre infrastructure, global data centre energy demand is projected to decrease slightly to 191 TWh in 2021 (Cisco, 2018; Masanet et al., 2018; Shehabi et al., 2016). This is despite a projected 80% increase in data centre traffic and 50% increase in data centre workloads over the next three years (Cisco, 2018).
+
+Strong growth in demand for data centre services continues to be offset by continued improvements in the efficiency of servers, storage devices, network switches and data centre infrastructure, as well as a shift to much greater shares of cloud and hyperscale data centres. Hyperscale data centres are very efficient, large-scale cloud data centres that run at high capacity, owing in part to virtualisation software that enables data centre operators to deliver higher work output with fewer servers.
+
+
+
+The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres is evident in the shrinking share of data centre infrastructure in total energy demand, given the very low power usage effectiveness (PUE) of large data centres. PUE is a measure of how efficiently a data centre uses energy; the very best hyperscale data centres can have PUE values of around 1.1 (meaning 0.1 kWh used for cooling/power provision for every 1 kWh used for IT equipment).
+
+But the biggest signal, says Fox, will come from us, the digital consumers. Increasingly, he says, “they understand that every cloud lives inside a data center. And each has a different footprint.” We will, he believes, soon all demand to know the carbon footprint of our video streams and internet searches. The more far-sighted of the big data companies are gearing up for that day. “I fully expect we may see green labelling for digital sources as routine within five years.” 
+
+Data center energy consumption first came under heavy scrutiny in the early 2000s, when experts warned that the rapid growth of the Internet would drive a rise in worldwide fossil fuel emissions. Thankfully, energy efficiency improvements and innovation in renewable energy has substantially lowered the increase of the industry’s power consumption – despite the fact that the hunger for data has accelerated.
+
+Furthermore, improved hardware efficiency, server virtualization and the advent of hyper-scale data centers, has driven economies of scale for the likes of Microsoft and Amazon. These IT behemoths have mastered the art of maximizing data center efficiency and server utilization, as well as improving their power systems and cooling equipment.
+
+ Consequently,
+
+smaller data centers are still being measured with PUE values greater than 2.037 while large
+
+hyperscale cloud data centers are beginning to record PUE value of 1.1 or less.38 39 40
+
+
+
+## What is there to be done?
+
+Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose, even if research shows that 4K pictures alone can 
+
+
+
+ However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers 
+
+As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. \
+\
+Despite energy efficiency
