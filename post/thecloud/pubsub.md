@@ -104,16 +104,6 @@ _A typical day of PUE (power usage effectiveness) with ML turned on and off. Sou
 
 The cloud vendors also continue to improve on runtimes, virtualization, compression and software that runs on top of this hardware. For instance, Google [recently launched](https://cloud.google.com/blog/products/compute/understanding-dynamic-resource-management-in-e2-vms) a new task scheduler which assigns resources dynamically, hence increasing hardware utilization in massive-multiparallell environments. Microsoft has done substatial work to improve performance in their .NET Core libraries for the same reasons. 
 
-
-
-
-
-https://www.bloomberg.com/opinion/articles/2019-12-13/energy-efficiency-a-hot-problem-for-big-tech-data-centers?srnd=opinion
-
-https://www.cbinsights.com/research/future-of-data-centers/#energy
-
-
-
 But the biggest signal, says Fox, will come from us, the digital consumers. Increasingly, he says, “they understand that every cloud lives inside a data center. And each has a different footprint.” We will, he believes, soon all demand to know the carbon footprint of our video streams and internet searches. The more far-sighted of the big data companies are gearing up for that day. “I fully expect we may see green labelling for digital sources as routine within five years.” 
 
 Data center energy consumption first came under heavy scrutiny in the early 2000s, when experts warned that the rapid growth of the Internet would drive a rise in worldwide fossil fuel emissions. Thankfully, energy efficiency improvements and innovation in renewable energy has substantially lowered the increase of the industry’s power consumption – despite the fact that the hunger for data has accelerated.
@@ -124,18 +114,10 @@ Furthermore, improved hardware efficiency, server virtualization and the advent 
 
 ## Why is this important and what is there to be done?
 
-Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose, even if research shows that 4K pictures alone can 
+Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose. 
 
-However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers 
+However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers and decisionmakers about environmental impacts of their decisions.
 
-As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. \
-\
-Despite energy efficiency 
+As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. 
 
 What I am optimistic about is the opportunity for major compute efficiency improvements. Disruptive innovation on the compute side will inevitably come to market soon, giving us faster compute engines and architectures that deliver more computational density per watt. We are currently stuck with architectures developed some 40 years ago that are not going to satisfy humanity’s insatiable thirst for a lot more processing, much faster processing and much more energy-efficient processing.
-
-I believe compute efficiency innovation is on the verge of happening. In the face of such a strong market pull, it is inevitable. Frankly, the only thing left to improve is the compute side of the equation. We have already improved everything around compute architecture, and further improvements outside compute are now contributing only small and incremental improvements to overall data center efficiency and performance.
-
-Why am I optimistic? Forty years ago, when today’s ubiquitous processors were designed, transistors were infinitely slow compared to wires. Forty years later, with transistor and wire trace widths shrunk down to an astounding 7nm (human DNA is 2.5nm wide), transistors are much faster than the wires that connect them. This represents a complete reversal of the delay characteristics of the two fundamental components (transistors and wires) of every chip ever built. Yet we still build and use processors designed when things were completely reversed from how they are today. How can that possibly lead to an optimal design at 7nm transistor sizes? It can’t, and that’s the reason I’m optimistic that we are on verge of major breakthroughs in compute architecture.
-
-It’s either a breakthrough in our compute engines, or we need to get deadly serious about doubling the number of power plants on the planet.
