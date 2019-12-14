@@ -18,7 +18,7 @@ links:
 authors:
   - Linn Harbo Dahle
 ---
-Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning som vi har tro på ut til brukerene, og det ligger mange andre problemer tilgjengelig som en kan ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at det vi laget faktisk løste problemet?
+Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning som vi har tro på ut til brukerne, og det ligger mange andre problemer tilgjengelig som en kan ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at det vi laget faktisk løste problemet?
 
 Vi har tatt en antagelse. Og antagelser er skummelt - rett og slett fordi de kan være feil!
 
@@ -52,13 +52,13 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## **Selve hypotesen er de første tre delene:**
 
-1. _**Problemet vi ønsker å løse.**_ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for ...»
-2. _**Løsningen**_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
-3. _**Utfall**_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se ...». Det er gjerne her den største usikkerheten ligger. Det er dette utfallet vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
+1. **_Problemet vi ønsker å løse._** Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for ...»
+2. **_Løsningen_**: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
+3. **_Utfall_**: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se ...». Det er gjerne her den største usikkerheten ligger. Det er dette utfallet vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
 
 ## **Eksperimentet:**
 
-4. _**Måling**_: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+4. **_Måling_**: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
  <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"><img style="width: 150px" src="https://i.ibb.co/FYDwHkT/3-Hypotesekort-inngang-til-ma-l-lite.jpg" alt="testkort"/> </a>
 
