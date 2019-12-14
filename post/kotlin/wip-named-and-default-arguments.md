@@ -5,12 +5,10 @@ post_day: 19
 title: 'WIP: Streamlining your functions with Named and Default Arguments'
 image: >-
   https://images.unsplash.com/photo-1464348123218-0ee63dfd2746?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2328&q=80
-ingress: "Aa developers, we spend a considerable amount of time declaring and invoking functions when writing software. Kotlin provides several features that can boost your productivity when working with functions. Today we'll take a closer look at two of these features; Named Arguments and Default Arguments, and how we might use them to make our Christmas preparations carefree \U0001F384"
+ingress: "As developers, we spend a considerable amount of time declaring and invoking functions when writing software. Kotlin provides several features that can boost your productivity when working with functions. Today we'll take a closer look at two of these features; Named Arguments and Default Arguments, and how we might use them to make our Christmas preparations carefree \U0001F384"
 links:
   - title: 'Kotlin Docs: Default Arguments / Named Arguments'
     url: 'https://kotlinlang.org/docs/reference/functions.html#default-arguments'
-  - title: 'Kotlin in Action: Chapter 3.2 - Making functions easier to call'
-    url: 'https://livebook.manning.com/book/kotlin-in-action/chapter-3/23'
 authors:
   - Sondre Larsen Ovrid
 ---
@@ -36,7 +34,7 @@ prepareChristmasGift("John Doe", true, true, true, false)
 
 Now first of all, you may have noticed that the order of the arguments given to the function upon calling it, is not arbitrary. As you probably already know, we have to adhere to the order of the parameters as given in the function signature. The language simply has no other way to map the arguments to its corresponding parameter counterpart.
 
-Named Arguments, on the other hand, lets us specify which particular parameter we are mapping the argument value to. Given that the function above was actually declared in Kotlin (*), we may instead call the function the following way:
+Named Arguments, on the other hand, lets us specify which particular parameter we are mapping the argument value to. Utilising this concept, we may instead call the function the following way:
 
 ```kotlin
 prepareChristmasGift(
@@ -62,13 +60,12 @@ prepareChristmasGift(
 
 Keep in mind, though; arguments that we do not specify by name must still adhere to the placement as given by the function declaration.
 
-Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself (or code inspection if your IDE supports it).
+Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself (or code inspection if your IDE supports it). Additionally, as we'll see later, Named Arguments can be even more powerful, and sometimes make function calls less verbose (!), when combined with Default Arguments.
 
-(_In comparison; in Java we could potentially achieve the same benefit by applying the_ [_Builder Pattern_](https://en.wikipedia.org/wiki/Builder_pattern) _or using Enum values, albeit being neither optimal nor idiomatic solutions._)
+## A word about Java Interop
+In the example above we made the assumption that our function was both declared and called from within Kotlin code. If we're making use of Kotlin's interop with Java, we might be tempted to try and call Java methods with named arguments from within Kotlin code. By default this is **not supported**, and thus trying to pass arguments to a Java method call by its parameter name, would result in a compiler error.
 
-As we'll see later, Named Arguments can be even more powerful, and sometimes make function calls less verbose (!), when combined with Default Arguments.
-
-_\* Java functions cannot be called with named parameters from Kotlin-code_
+Rewriting the Java method to a Kotlin function might not always be an option. In such cases there are some alternatives to named arguments in the context of Java interop; such as utilising the [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern), that might give similar possibilities, although requiring more overhead. 
 
 ## Default Arguments
 
