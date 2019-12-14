@@ -57,13 +57,15 @@ Data centers require a lot of space. Hyperscale datacenters require hundreds of 
 
 **Energy**
 
-According to estimates 
+According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately somewhere between 1 and 2% of total worldwide energy consumption. 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world.
 
 
 
 
 
-## What is the 
+## Is there some light at the end of the tunnel?
+
+
 
 water supply for cooling,
 
@@ -101,10 +103,24 @@ hyperscale cloud data centers are beginning to record PUE value of 1.1 or less.3
 
 Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose, even if research shows that 4K pictures alone can 
 
-
-
- However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers 
+However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers 
 
 As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. \
 \
-Despite energy efficiency
+Despite energy efficiency 
+
+
+
+What I am optimistic about is the opportunity for major compute efficiency improvements. Disruptive innovation on the compute side will inevitably come to market soon, giving us faster compute engines and architectures that deliver more computational density per watt. We are currently stuck with architectures developed some 40 years ago that are not going to satisfy humanity’s insatiable thirst for a lot more processing, much faster processing and much more energy-efficient processing.
+
+
+
+I believe compute efficiency innovation is on the verge of happening. In the face of such a strong market pull, it is inevitable. Frankly, the only thing left to improve is the compute side of the equation. We have already improved everything around compute architecture, and further improvements outside compute are now contributing only small and incremental improvements to overall data center efficiency and performance.
+
+
+
+Why am I optimistic? Forty years ago, when today’s ubiquitous processors were designed, transistors were infinitely slow compared to wires. Forty years later, with transistor and wire trace widths shrunk down to an astounding 7nm (human DNA is 2.5nm wide), transistors are much faster than the wires that connect them. This represents a complete reversal of the delay characteristics of the two fundamental components (transistors and wires) of every chip ever built. Yet we still build and use processors designed when things were completely reversed from how they are today. How can that possibly lead to an optimal design at 7nm transistor sizes? It can’t, and that’s the reason I’m optimistic that we are on verge of major breakthroughs in compute architecture.
+
+
+
+It’s either a breakthrough in our compute engines, or we need to get deadly serious about doubling the number of power plants on the planet.
