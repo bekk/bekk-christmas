@@ -22,7 +22,7 @@ Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning ut i 
 
 Vi har tatt en antagelse. Antagelser er skummelt! - rett og slett fordi de kan være feil!
 
-![Postit med vi tror at...](https://i.ibb.co/Hqm1NxQ/vi-tror-at.png)
+<img style="width: 300px" src="https://i.ibb.co/Hqm1NxQ/vi-tror-at.png" alt="Postit med vi tror at"/>
 
 Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
 
@@ -63,8 +63,10 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 4. **Måling**: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
-![Læringskortet](---)
-[Læringskortet](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
+
+<img style="width: 200px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/>
+
+
 
 ## Og del 2: læringskort
 
@@ -72,7 +74,7 @@ Her oppsummeres det dere trodde (altså selve hypotesen) og hva dere lærte. Ble
 
 # Noen erfaringer og refleksjoner
 
-![Tegning av hypoteseveggen](https://i.ibb.co/qRLyyC6/hypotesevegg.png)
+<img style="width: 300px" src="https://i.ibb.co/qRLyyC6/hypotesevegg.png" alt="Hypoteseveggen"/>
 
 _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig det er å vite og ikke bare anta._ 
 
@@ -92,7 +94,7 @@ Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal so
 
 Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel lansert noe til prod og satt på målinger, så er gjerne oppgaven satt til «done» i Jira/Trello, og da er det så lett å glemme å se på den igjen. Mitt triks ble da å lage en påminnelse i kalenderen som sier ifra hvilken hypotese jeg skal se på etter for eksempel to-tre uker. 
 
-![dame som antar](https://i.ibb.co/wR37tFf/antar-bare.png)
+<img style="width: 300px" src="https://i.ibb.co/wR37tFf/antar-bare.png" alt="dame som antar"/>
 
 ## Å ikke vite er ubehagelig
 
