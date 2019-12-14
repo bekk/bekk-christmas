@@ -17,34 +17,31 @@ authors:
 ---
 ## The digital economy requires a massive infrastructure
 
-Today's digital economy is built on services on top of that data.
-
-Storing, processing and transporting information across all digital services we employ is a massive undertaking. There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/) Google searches performed each day, each resulting in[ 6-8 servers](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) to be activated each search in terms of greenhouse gases is [equivalent to about 0.2 grams of CO2](https://googleblog.blogspot.com/2009/01/powering-google-search.html).  [Despacito](https://www.youtube.com/watch?v=kJQP7kiw5Fk) going viral, reaching 6.3 billion views [burned](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) as much energy as 40 000 U.S. homes.
-
-Add on top of this all the other services powered by the cloud such as Netflix, Spotify, Uber, Office365++ you'll soon realize To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers, serving billions of users.
+Today's digital economy is built on services on top of the data we store in the cloud. But what is the cloud? Storing, processing and transporting information across all digital services we employ requires a massive infrastructure. The cloud is nothing more than a vast amount of data centers scattered around the world covering large masses of land which in sum operate millions of servers, processing data and serving billions of users. 
 
 ![test](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
 _Aerial view of a large scale data center in San Diego (Source: Wordpress)_
 
-The data centers powering the cloud have become as essential as water and electricity to the public. When cloud services [go down](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html), the world halts. We've become dependant on cloud services both at work and at home. 
-
-We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via services that run on the cloud.
-
-The need to store and process this ever-increasing amount of data has led to a golden period of development in the data center industry. The number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is [8 million datacenters 
-worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/) in total.
+The need to store and process this ever-increasing amount of data has led to a golden period of development in the data center industry. The number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there is [8 million datacenters ](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/)and [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), but the total amount hyperscale data centers needed to manage the expected amounts of data in the years to come is three times today's amount. 
 
 ![](/assets/tc-15-growth.png "Growth of hyperscale data centers")
 
+**Why is that a problem?** 
+
+There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/) Google searches performed each day, each resulting in[ 6-8 servers](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) to be activated. In terms of greenhouse gases, each search is [equivalent to about 0.2 grams of CO2](https://googleblog.blogspot.com/2009/01/powering-google-search.html).  [Despacito](https://www.youtube.com/watch?v=kJQP7kiw5Fk) going viral, reaching 6.3 billion views, [burned](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) alone as much energy as 40 000 U.S. homes.
+
+Add on top of this all the other services powered by the cloud such as internet banking, ticketing services, Netflix, Spotify, Uber and Office365, you'll soon realize that data centers powering the cloud have become as mission critical and essential as water and electricity.
+
+We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via services that run on the cloud. We've become dependent on the cloud to be able to perform tasks both at work and home and when cloud services [go down](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html), the world halts. This begs for a number of questions with regards to environmental impact.
+
 ## What is the problem?
 
-Building data centers has become a large industry with an expected value of [$57 bn by 2025](https://www.cbinsights.com/research/future-of-data-centers/#storage), and the rapid increase in number of hyperscale data centers the last few years accompanied with an expectation of even faster growth towards 2025 begs for a number of questions with regards to environmental impact.
-
-In addition to the actual housing of the data centers, you need to fill the data centers with lots and lots of hardware, hundreds of miles of cable, refrigerant and water for cooling, batteries and diesel generators to mitigate power outages, and last but not least - an enormous amount of energy to operate the hardware. 
+In addition to the actual housing of the data centers, you need to fill each data center with lots and lots of hardware, hundreds of miles of cable, refrigerant and water for cooling, batteries and diesel generators to mitigate power outages, and last but not least - an enormous amount of energy to operate the hardware. I'll describe some of the issues.
 
 **Hardware**
 
-It is hard to imagine how much data 175 ZB represent, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need approximately 11 billion drives(!) (the largest hard drive in production as of writing is 16TB). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center consumes a lot of resources.
+It is hard to imagine how much data 175 ZB represents, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need approximately 11 billion drives(!). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center consumes a lot of resources.
 
 Since data centers require so much hardware, it is natural to assess the lifecycle impact of the hardware used in the data centers. For data center operations, hardware needs to be manufactured, shipped, installed, operated and decommissioned. Each of these processes requires resources. The manufacturing process for computer electronics for instance requires the mining and extraction of metal ore and in some instances rare earth metals such as neodymium which is used in traditional hard drives and terbium which is used in solid state electronics. Although rare earth metals is a somewhat [misleading term](https://www.scientificamerican.com/article/dont-panic-about-rare-earth-elements/), the extraction and processing of ore to produce concentrates usually involves usage of lots of heavy machinery and chemicals and leaves [significant impacts](https://www.researchgate.net/publication/227332044_Environmental_impact_assessment_of_open_pit_mining_in_Iran) on the environment via the open pits the mines [imprint on the geography](v). 
 
