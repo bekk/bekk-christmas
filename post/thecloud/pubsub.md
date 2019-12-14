@@ -17,7 +17,7 @@ authors:
 ---
 ## The digital economy requires a massive infrastructure
 
-In today's digital economy, storing, processing and transporting information in all digital services we employ is a massive undertaking. Imagine only the amount of documents, emails, snaps, Spotify and Netflix steams, Google searches the world does during a single day. The amount of data stored and processed inceases by more than 60% per year, and will reach 175 ZB in 2025 by [some estimates](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597), up fom 33 ZB in 2018.
+In today's digital economy, storing, processing and transporting information across all digital services we employ is a massive undertaking. Imagine only the amount of documents, emails, snaps, Spotify and Netflix steams, Google searches the world does during a single day. The amount of data stored and processed inceases by more than 60% per year, and will reach 175 ZB in 2025 by [some estimates](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597), up fom 33 ZB in 2018.
 
 To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers. 
 
@@ -27,10 +27,10 @@ _Aerial view of a large scale data center in San Diego (Source: Wordpress)_
 
 The data centers powering the cloud have become as essential as water and electricity to the public. When cloud services [go down](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html), the world halts. We've become dependant on cloud services both at work and at home. 
 
-We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via the services build on the cloud.
+We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via services that run on the cloud.
 
-The need to store all of our data together with the shift to cloud has lead to a golden period of development in the data center industry, and the number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is a total of [8 million datacenters 
-worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/).
+The need to store and process this ever-increasing amount of data has led to a golden period of development in the data center industry. The number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is [8 million datacenters 
+worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/) in total.
 
 ![](/assets/tc-15-growth.png "Growth of hyperscale data centers")
 
