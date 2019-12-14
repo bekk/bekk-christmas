@@ -25,14 +25,11 @@ No wonder companies are fighting about the privilege to collect our data.
 
 ## Data requires a massive infrastructure
 
-To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about huge data centers around the world covering millions of square meters of real estate which operate tens and hundreds of thousands of servers.
+To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about huge data centers around the world covering millions of square meters of real estate which operate tens and hundreds of thousands of servers.
 
 ![test](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
-The data centers powering the cloud have become as essential as water and electricity to the public. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We buy shoes and other merchandise, and we communicate with our friends and family both near and far via the services build on the cloud.
-
-
-The data centers powering all the services we use in our day-to-day lives have silently but slowly become the backbone of the internet. They store, communicate, and transport the information we produce every single day. 
+The data centers powering all the services we use in our day-to-day have become as essential as water and electricity to the public. They store, communicate, and transport the information we produce every single day. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We use it to buy shoes and other merchandise online, and we communicate with our friends and family both near and far via the services build on the cloud.
 
 The need to store all of our data together with the shift to cloud has lead to a golden period of development in the data center industry, and the number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is a total of [8 million datacenters 
 worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/).
