@@ -22,9 +22,9 @@ Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning ut i 
 
 Vi har tatt en antagelse. Antagelser er skummelt! - rett og slett fordi de kan være feil!
 
-Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
+![Postit med vi tror at...](https://i.ibb.co/Hqm1NxQ/vi-tror-at.png)
 
-![Postit med vi tror at...](https://https://ibb.co/56qDYdH)
+Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
 
 ## Slik bruker vi «testkort»
 
@@ -46,13 +46,11 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 >
 > **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
-![Testkortet](https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png)
+<img style="width: 200px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/>
 
-[Testkortet](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
+[Testkort-malen](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
 
-nytt bilde zxc: 
-
-<img class="wide-image" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" />
+<img class="dark-theme-image" style="width: 300px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid">
 
 ## **Selve hypotesen er de første tre delene:**
 
@@ -79,7 +77,7 @@ _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig de
 
 ## De gode diskusjonene
 
-Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges slavisk. Jeg tror ikke det har noen verdi “å bare fylle ut testkortet”. Det skal være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
+Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges slavisk. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
 
 ## Få med alle fagfelt
 
@@ -97,4 +95,4 @@ Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel
 
 ## Å ikke vite er ubehagelig
 
-Å endre mentaliteten rundt at vi ikke vet, men at vi tror, kan være vanskelig! Fordi plutselig så blir en mer bevisst på at en lever i en stor usikkerhet. Da prøver jeg å minne meg på at det er helt ok, fordi vi jobber jo med ting som skal lages i fremtiden og det er ikke noen andre som heller vet hva som er riktig. Husk på at det er helt ok å ikke vite, men da må en i hvert fall bruke tid og arbeidskraft på å utforske og lære. Og det har jeg erfart at hypoteser kan hjelpe å sette fokus på.
+Å endre mentaliteten rundt at vi ikke vet, men at vi tror, kan være vanskelig! Fordi plutselig så blir en mer bevisst på at en lever i en stor usikkerhet. Da prøver jeg å minne meg på at det er helt ok, fordi vi jobber jo med ting som skal lages i fremtiden og det er ikke noen andre som heller vet hva som er riktig. Husk på at det er helt ok å ikke vite, men da må en i hvert fall bruke tid og arbeidskraft på å utforske og lære! Og det har jeg erfart at hypoteser kan hjelpe å sette fokus på.
