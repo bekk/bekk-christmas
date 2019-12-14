@@ -84,7 +84,7 @@ _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig de
 
 ## De gode diskusjonene
 
-Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges slavisk. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
+Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges til punkt og prikke. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
 
 
 
