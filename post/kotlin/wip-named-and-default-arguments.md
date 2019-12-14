@@ -113,7 +113,7 @@ fun prepareChristmasGift(
 ) { ... }
 ```
 
-Now it's possible to call the function while omitting the given arguments:
+Now it is possible to call the function while omitting some arguments, which instead will be supplied behind the scenes with the default values that we specified:
 
 ```kotlin
 prepareChristmasGift("John Doe")
