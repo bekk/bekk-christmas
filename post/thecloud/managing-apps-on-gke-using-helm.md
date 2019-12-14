@@ -14,7 +14,7 @@ authors:
 ---
 
 
-To complete the steps in this article you need the following tools installed on your computer:
+If you want to follow along and complete the steps in this article you need the following tools installed on your computer:
 
 * A google cloud project with where you are the owner
 * The [gcloud](https://cloud.google.com/sdk/docs/quickstarts) command line tools
@@ -26,9 +26,18 @@ You also need to enable the Kubernetes engine and Container Registry apis in GCP
 
 ## What is Helm?
 
-Helm describes itself as the package manager for Kubernetes. By creating Helm charts, we can describe all the required parts of our application, such as deployments, configmaps, and services, in one place. Helm uses value files that can inject variables into the templates. This makes it easy to customize deployments across different environments.  
+[Helm](https://helm.sh/) describes itself as the package manager for Kubernetes. By creating Helm charts, we can describe all the Kubernetes resources of our application, such as deployments, configmaps, and services, in one place. Helm uses value files that can inject variables into the templates. This makes it easy to customize deployments across different environments. The creator of a chart will often provide sensible default values, and it is possible to override the values when installing a release.
 
-...TODO
+There are three concepts you need to know when working with Helm: 
+* A *chart* describes the application you want to run in Kubernetes, along with its dependencies.
+* A *repository* is a web server where packaged charts are shared. The official [stable](https://github.com/helm/charts/tree/master/stable) repository for example, has ready made charts for applications such as Memcached, Postgresql, and MongoDB.
+* A *release* is a running instance of a chart. 
+
+>Helm installs charts into Kubernetes, creating a new release for each >installation. And to find new charts, you can search Helm chart repositories.
+>
+> *[The Helm Docs](https://helm.sh/docs/intro/using_helm/)*
+
+So, with that in mind, let's see how we can deploy a web application on GKE using Helm.
 
 ## The Sample Application
 
@@ -266,3 +275,4 @@ Soon we will see the previous version of the app. By checking the history, we ca
 
 ## Final Comments
 
+There is a lot more to Helm than covered in this article. 
