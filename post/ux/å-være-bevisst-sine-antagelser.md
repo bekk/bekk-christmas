@@ -42,19 +42,19 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## **Formuleringen vi har brukt:**
 
-> **Vi tror at…** [_fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?_]
+> **Vi tror at …** [_fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?_]
 >
-> **Så hvis vi…** [_fyll inn det dere tenker er løsningen, hva skal dere «tilby»?_]
+> **Så hvis vi …** [_fyll inn det dere tenker er løsningen, hva skal dere «tilby»?_]
 >
-> **Så vil vi se at…** [_fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?_]
+> **Så vil vi se at …** [_fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?_]
 >
-> **Og dette kan vi vite ved å måle...** [_hvordan skal dere teste dette? Hvordan skal eksperimentet være?_]
+> **Og dette kan vi vite ved å måle ...** [_hvordan skal dere teste dette? Hvordan skal eksperimentet være?_]
 
 ## **Selve hypotesen er de første tre delene:**
 
-1. _Problemet vi ønsker å løse._ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for...»
+1. _Problemet vi ønsker å løse._ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for ...»
 2. _Løsningen_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
-3. _Utfall_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
+3. _Utfall_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se ...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
 
 ## **Eksperimentet:**
 
@@ -62,7 +62,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
  <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"><img style="width: 150px" src="https://i.ibb.co/FYDwHkT/3-Hypotesekort-inngang-til-ma-l-lite.jpg" alt="testkort"/> </a>
 
-<center> <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"> Et eksempel </a> på et utfyllt testkort for en A/B-test </center> 
+<center> <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"> Et eksempel </a> på et utfylt testkort for en A/B-test </center> 
 
 
 
