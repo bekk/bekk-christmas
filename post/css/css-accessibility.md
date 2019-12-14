@@ -37,13 +37,11 @@ authors:
 ## :focus
 
 How many of you have done this before, I know I have:
-
 ```
 :focus {
     outline: none;
 }
 ```
-
 Great, we just made our site useless for those who really need and rely on this feature, and at the same time made our site less usable for the rest of our users. And, if we do not offer an alternative way of showing if an element is in focus, a fine might be one its way, since we are not complying with Success Criterion 2.4.7 Focus Visible!
 
 Ok, but I didn’t actually add that line of CSS you say, it is part of my CSS Reset you say. Ok, but then it might be time to update your css reset, as the most used CSS Reset from Eric Meyer removed this css in 2011…
@@ -67,9 +65,7 @@ To make sure you custom css forms are accessible:
 You might be tempted to apply
 
 ```
-
 input[type="checkbox"] { display: none; }
-
 ```
 
 to your checkbox. You just lost screen readers, and the possibility of controlling the focus state. The better way is to use \`opacity: 0;\` and move the original checkbox out of the way so that it does not take up any space.
