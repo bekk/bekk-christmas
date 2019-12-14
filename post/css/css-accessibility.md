@@ -73,3 +73,5 @@ input[type="checkbox"]:focus + label::before {
     outline: #ff0a0e auto 5px;
 }
 ```
+
+Thanks for reading, hope it was useful, and hope you have time to verify that your focus is correctly handled on your website :)
