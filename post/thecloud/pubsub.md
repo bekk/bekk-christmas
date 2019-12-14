@@ -5,18 +5,21 @@ post_day: 15
 title: How clouds impact environment
 image: >-
   https://images.unsplash.com/photo-1461733467189-bdbea5525075?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
-ingress: Did you know that a Google search
+ingress: >-
+  We are generating astounding amounts of data. Estimates show that the amount
+  of data worldwide will increase by 60% per year, reaching [175
+  zettabytes](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597)
+  by 2025, up from 33 in 2018. Roughly half of it will be stored in public
+  clouds and the rest in other types of data centers.
 links: []
 authors:
   - Safurudin Mahic
 ---
 ## The digital economy requires a massive infrastructure
 
-We are generating astounding amounts of data. Estimates show that the amount of data worldwide will increase by 60% per year, reaching [175 zettabytes](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/#5d9ed0354597) by 2025, up from 33 in 2018. Roughly half of it will be stored in public clouds and the rest in other types of data centers. 
+Today's digital economy is built on services on top of that data.
 
-On top of that data, we are building services that drive the digital economy. 
-
-Storing, processing and transporting information across all digital services we employ is a massive undertaking. There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/) Google searches performed each day, each resulting in[ 6-8 servers](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) to be activated each search in terms of greenhouse gases is [equivalent to about 0.2 grams of CO2](https://googleblog.blogspot.com/2009/01/powering-google-search.html).  [Despacito](https://www.youtube.com/watch?v=kJQP7kiw5Fk) going viral, reaching 6.3 billion views [burned](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) as much energy as 40 000 U.S. homes
+Storing, processing and transporting information across all digital services we employ is a massive undertaking. There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/) Google searches performed each day, each resulting in[ 6-8 servers](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) to be activated each search in terms of greenhouse gases is [equivalent to about 0.2 grams of CO2](https://googleblog.blogspot.com/2009/01/powering-google-search.html).  [Despacito](https://www.youtube.com/watch?v=kJQP7kiw5Fk) going viral, reaching 6.3 billion views [burned](https://fortune.com/2019/09/18/internet-cloud-server-data-center-energy-consumption-renewable-coal/) as much energy as 40 000 U.S. homes.
 
 Add on top of this all the other services powered by the cloud such as Netflix, Spotify, Uber, Office365++ you'll soon realize To be able to manage and process this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but the cloud in reality is nothing more than huge amounts of data centers scattered around the world covering millions of square meters of real estate which in sum operate millions of servers, serving billions of users.
 
