@@ -23,9 +23,11 @@ In today's digital economy data has become the new gold. The more you have, the 
 
 No wonder companies are fighting about the privilege to collect our data. 
 
-## Data requires a staggering infrastructure
+## Data requires a massive infrastructure
 
-To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about data centers.
+To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about huge data centers around the world which operate tens and hundreds of thousands of servers.
+
+![](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
 The data centers powering the cloud have become as essential as water and electricity to the public. We depend on the cloud to keep our videos and photos safe. We buy shoes and other merchandise, and we communicate with our friends and family both near and far via the services build on the cloud. The data centers powering all the services we use in our day-to-day lives have silently but slowly become the backbone of the internet. They store, communicate, and transport the information we produce every single day. The more data we create, the more vital our data centers become.
 
