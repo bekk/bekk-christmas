@@ -20,7 +20,7 @@ authors:
 ---
 Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning som vi har tro på ut til brukerne, og det ligger mange andre problemer tilgjengelig som en kan ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at det vi laget faktisk løste problemet?
 
-Vi har tatt en antagelse. Og antagelser er skummelt - rett og slett fordi de kan være feil!
+Vi har tatt en antagelse. Og antagelser er skumle - rett og slett fordi de kan være feil!
 
 <img style="width: 300px" src="https://i.ibb.co/Hqm1NxQ/vi-tror-at.png" alt="Postit med vi tror at"/>
 
