@@ -18,3 +18,7 @@ authors:
   - Linn Harbo Dahle
 ---
 Vi var et nytt produktteam. Det vil si, før sommeren var vi et prosjekt med tydelige rammer, forventninger og budsjett. Vi mottok en overordnet plan en gang i halvåret som sa hva vi skulle lage og målet var å få til det på en god måte. Men, så ble vi et produktteam. Ingen sa lenger: dette skal dere lage. Hvordan skulle vi starte? Vi ønsket å jobbe på denne nye måten. Så absolutt! Men vi visste ikke helt hvordan. Vi trengte en retning. Det var også andre rundt oss som trengte å vite hva vi hadde fokus på.
+
+
+
+<iframe src="https://twitter.com/necolas/status/1096221537537933312"></iframe>
