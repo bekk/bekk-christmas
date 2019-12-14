@@ -6,11 +6,11 @@ title: How clouds impact environment
 image: >-
   https://images.unsplash.com/photo-1461733467189-bdbea5525075?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  We are generating astounding amounts of data each year. And the amount is
-  ever-increasing year by year. Estimates show that the amount of data worldwide
-  will reach 175 zettabytes by 2025. Roughly half of it will be stored in public
-  clouds and the rest in other types of data centers. What kind of impact does
-  this have on the environment? And is there anything you can do about it?
+  We are generating astounding amounts of data each year. Estimates show that
+  the amount of data worldwide will reach 175 zettabytes by 2025. Roughly half
+  of it will be stored in public clouds and the rest in other types of data
+  centers. What kind of impact does this have on the environment? And is there
+  anything you can do about it?
 links: []
 authors:
   - Safurudin Mahic
@@ -25,17 +25,19 @@ No wonder companies are fighting about the privilege to collect our data.
 
 ## Data requires a massive infrastructure
 
-To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about huge data centers around the world which operate tens and hundreds of thousands of servers.
+To be able to manage this vast sea of data requires some pretty heavy infrastructure. We often use the term cloud, but we are of course aware that we are talking about huge data centers around the world covering millions of square meters of real estate which operate tens and hundreds of thousands of servers.
 
 ![test](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
-The data centers powering the cloud have become as essential as water and electricity to the public. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We buy shoes and other merchandise, and we communicate with our friends and family both near and far via the services build on the cloud. The data centers powering all the services we use in our day-to-day lives have silently but slowly become the backbone of the internet. They store, communicate, and transport the information we produce every single day. The more data we create, the more vital our data centers become.
+The data centers powering the cloud have become as essential as water and electricity to the public. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We buy shoes and other merchandise, and we communicate with our friends and family both near and far via the services build on the cloud.
 
-The need to store all of our data together with the shift to cloud has lead to a golden period of development in the data center industry, and the number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is a total of [8 million datacenters worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/).
+
+The data centers powering all the services we use in our day-to-day lives have silently but slowly become the backbone of the internet. They store, communicate, and transport the information we produce every single day. 
+
+The need to store all of our data together with the shift to cloud has lead to a golden period of development in the data center industry, and the number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is a total of [8 million datacenters 
+worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/).
 
 ![](/assets/tc-15-growth.png "Growth of hyperscale data centers")
-
-
 
 ## How much is 175ZB?
 
@@ -61,19 +63,17 @@ According to estimates from the International Energy Agency, data centers in the
 
 Some [alarmist predictions](https://www.nature.com/articles/d41586-018-06610-y) indicate that the total energy consumption of data centers could rise to as much as 8% of total world energy consumption by 2030.
 
-
+Thats 
 
 That’s why a critical measure of a data center’s greenness is the source of its energy. 
-
-
 
 The Lawrence Berkeley National Laboratory estimated that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage.
 
 https://www.cbinsights.com/research/future-of-data-centers/#energy
 
-
-
 ## Is there some light at the end of the tunnel?
+
+Maybe
 
 The reality however is a bit more nuanced. 
 
@@ -81,17 +81,9 @@ Luckily, there are some bright sides to these dire statistics.
 
 https://www.nature.com/articles/d41586-018-06610-y
 
-
-
-
-
 water supply for cooling,
 
-
-
 https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#
-
-
 
 This in turn has 
 
@@ -100,8 +92,6 @@ Global data centre electricity demand in 2018 was an estimated 198 TWh, or almos
 Based on current trends in the efficiency of hardware and data centre infrastructure, global data centre energy demand is projected to decrease slightly to 191 TWh in 2021 (Cisco, 2018; Masanet et al., 2018; Shehabi et al., 2016). This is despite a projected 80% increase in data centre traffic and 50% increase in data centre workloads over the next three years (Cisco, 2018).
 
 Strong growth in demand for data centre services continues to be offset by continued improvements in the efficiency of servers, storage devices, network switches and data centre infrastructure, as well as a shift to much greater shares of cloud and hyperscale data centres. Hyperscale data centres are very efficient, large-scale cloud data centres that run at high capacity, owing in part to virtualisation software that enables data centre operators to deliver higher work output with fewer servers.
-
-
 
 The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres is evident in the shrinking share of data centre infrastructure in total energy demand, given the very low power usage effectiveness (PUE) of large data centres. PUE is a measure of how efficiently a data centre uses energy; the very best hyperscale data centres can have PUE values of around 1.1 (meaning 0.1 kWh used for cooling/power provision for every 1 kWh used for IT equipment).
 
@@ -117,8 +107,6 @@ smaller data centers are still being measured with PUE values greater than 2.037
 
 hyperscale cloud data centers are beginning to record PUE value of 1.1 or less.38 39 40
 
-
-
 ## Why is this important and what is there to be done?
 
 Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose, even if research shows that 4K pictures alone can 
@@ -129,18 +117,10 @@ As a part of this advent calendar, our CTO wrote an article about private PaaS [
 \
 Despite energy efficiency 
 
-
-
 What I am optimistic about is the opportunity for major compute efficiency improvements. Disruptive innovation on the compute side will inevitably come to market soon, giving us faster compute engines and architectures that deliver more computational density per watt. We are currently stuck with architectures developed some 40 years ago that are not going to satisfy humanity’s insatiable thirst for a lot more processing, much faster processing and much more energy-efficient processing.
-
-
 
 I believe compute efficiency innovation is on the verge of happening. In the face of such a strong market pull, it is inevitable. Frankly, the only thing left to improve is the compute side of the equation. We have already improved everything around compute architecture, and further improvements outside compute are now contributing only small and incremental improvements to overall data center efficiency and performance.
 
-
-
 Why am I optimistic? Forty years ago, when today’s ubiquitous processors were designed, transistors were infinitely slow compared to wires. Forty years later, with transistor and wire trace widths shrunk down to an astounding 7nm (human DNA is 2.5nm wide), transistors are much faster than the wires that connect them. This represents a complete reversal of the delay characteristics of the two fundamental components (transistors and wires) of every chip ever built. Yet we still build and use processors designed when things were completely reversed from how they are today. How can that possibly lead to an optimal design at 7nm transistor sizes? It can’t, and that’s the reason I’m optimistic that we are on verge of major breakthroughs in compute architecture.
-
-
 
 It’s either a breakthrough in our compute engines, or we need to get deadly serious about doubling the number of power plants on the planet.
