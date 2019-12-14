@@ -52,19 +52,17 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## **Selve hypotesen er de første tre delene:**
 
-1. _Problemet vi ønsker å løse._ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for ...»
-2. _Løsningen_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
-3. _Utfall_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se ...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
+1. **_Problemet vi ønsker å løse._** Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for ...»
+2. **_Løsningen_**: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har tro på. Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
+3. **_Utfall_**: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se ...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
 
 ## **Eksperimentet:**
 
-4. _Måling_: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+4. **_Måling_**: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
  <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"><img style="width: 150px" src="https://i.ibb.co/FYDwHkT/3-Hypotesekort-inngang-til-ma-l-lite.jpg" alt="testkort"/> </a>
 
 <center> <a  target="_blank" href="https://i.ibb.co/5n6DJRL/3-Hypotesekort-inngang-til-ma-l.jpg"> Et eksempel </a> på et utfylt testkort for en A/B-test </center> 
-
-
 
 ## Og del 2: læringskortet
 
@@ -73,8 +71,6 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 <center> <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"> Læringskortet </a> </center>
 
 Her oppsummeres det dere trodde (altså selve hypotesen) og hva dere lærte. Ble hypotesen bekreftet eller avkreftet? Og hvorfor?
-
-
 
 # Noen erfaringer og refleksjoner
 
@@ -86,11 +82,9 @@ _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig de
 
 Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges til punkt og prikke. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
 
-
-
 ## Få med alle fagfelt
 
-Å forstå og skrive hypoteser er ikke vanskelig, og derfor noe alle i teamet kan samle seg rundt. I et autonomt team skal alle, både produkteier, designer og utvikler, ta ansvar for å vurdere om vi jobber med det som er riktig. Disse testkortene har hjulpet i arbeidsmøter til å styre diskusjonene inn på det som er viktig å snakke om. Det er så mye mindre viktig å snakke om hva JEG TROR og hva DU TROR, i motsetning til å snakke om hvordan vi faktisk kan finne ut og VITE.
+Å forstå og skrive hypoteser er ikke vanskelig, og derfor noe alle i teamet kan samle seg rundt. I et autonomt team skal alle, både produkteier, designer og utvikler, ta ansvar for å vurdere om vi jobber med det som er riktig. Disse testkortene har hjulpet i arbeidsmøter til å styre diskusjonene inn på det som er viktig å snakke om. Det er så mye mindre viktig å snakke om hva **jeg tror** og hva **du tror**, i motsetning til å snakke om hvordan vi faktisk kan finne ut og **vite**.
 
 ## Læringskortet gjør at vi tar oss tid til å reflektere over læringen
 
