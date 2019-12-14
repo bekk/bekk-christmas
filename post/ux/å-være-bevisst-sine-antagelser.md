@@ -6,11 +6,7 @@ title: Å være bevisst sine antagelser
 ingress: >-
   Når vi utvikler digitale løsninger så tar vi gjerne mange antagelser om hva
   som vil løse problemet vi jobber med. Vi ser et problem, vi kommer på en idé
-  om hvordan vi kan løse det, vi lager det og setter det ut i prod. Og mange
-  ganger: så er vi fornøyde med det. Vi har jo levert en løsning ut i produksjon
-  som vi har tro på, og det ligger mange andre problemer tilgjengelig som en kan
-  ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at
-  det vi laget faktisk løste problemet?
+  om hvordan vi kan løse det, vi lager det og setter det ut i prod. 
 links:
   - title: Validate Your Ideas with the Test Card - Osterwalder
     url: >-
@@ -22,6 +18,8 @@ links:
 authors:
   - Linn Harbo Dahle
 ---
+Og mange ganger: så er vi fornøyde med det. Vi har jo levert en løsning ut i produksjon som vi har tro på, og det ligger mange andre problemer tilgjengelig som en kan ta tak i nå. Men har vi egentlig løst problemet? Eller har vi bare antatt at det vi laget faktisk løste problemet?
+
 Vi har tatt en antagelse. Antagelser er skummelt! - rett og slett fordi de kan være feil!
 
 Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale løsninger og det siste året har vi jobbet hypotesedrevet. I dette innlegget skal jeg fortelle litt om hvordan vi har brukt testkort som utgangspunkt for gode diskusjoner og litt om hvor utrolig vanskelig det er å leve med at vi faktisk bare har antagelser. 
@@ -48,6 +46,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 >
 > **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
+![Testkortet](https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png)
 [Testkortet](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
 
 ## **Selve hypotesen er de første tre delene:**
@@ -58,9 +57,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## **Eksperimentet:**
 
-4. ```
-   Måling: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
-   ```
+4. **Måling**: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
 ![Læringskortet](https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png)
 
