@@ -47,7 +47,12 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 > **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
 
 ![Testkortet](https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png)
+
 [Testkortet](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
+
+nytt bilde zxc: 
+
+<img class="wide-image" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" />
 
 ## **Selve hypotesen er de første tre delene:**
 
