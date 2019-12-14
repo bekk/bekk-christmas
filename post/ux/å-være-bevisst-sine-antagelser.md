@@ -48,9 +48,10 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 <img style="width: 200px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/>
 
-[Testkort-malen](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
+<a href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"><img style="width: 200px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/> </a>
 
-<img class="dark-theme-image" style="width: 300px" src="https://i.ibb.co/52j5x6J/Workshop-dark.png" alt="Samarbeid">
+
+[Testkort-malen](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
 
 ## **Selve hypotesen er de første tre delene:**
 
