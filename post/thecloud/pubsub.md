@@ -29,22 +29,24 @@ To be able to manage and process this vast sea of data requires some pretty heav
 
 ![test](/assets/tc-15-centres.jpg "Image of data center (Source: https://classmayte.wordpress.com/2016/02/06/what-is-data-center-what-are-the-top-5-largest-data-centers-around-the-world/)")
 
-The data centers powering all the services we use in our day-to-day have become as essential as water and electricity to the public. They store, communicate, and transport the information we produce every single day. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We use it to buy shoes and other merchandise online, and we communicate with our friends and family both near and far via the services build on the cloud.
+The data centers powering all the services we use in our day-to-day have become as essential as water and electricity to the public. They store, process, communicate, and transport the information we produce every single day. We depend on the cloud to keep our videos and photos safe. We depend on it at work to be able to send and receive email and collaborate on documents, code, schematics and share files. We use it to buy shoes and other merchandise online, and we communicate with our friends and family both near and far via the services build on the cloud.
 
 The need to store all of our data together with the shift to cloud has lead to a golden period of development in the data center industry, and the number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are over [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), and 150 more are under development. And there is a total of [8 million datacenters 
 worldwide](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/).
 
 ![](/assets/tc-15-growth.png "Growth of hyperscale data centers")
 
-## How much is 175ZB?
 
-It is hard to even imagine this number, but if one were able to store 175ZB onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. If you could download 175ZB on a stack of hard disks, you would need approximately 11 billion drives (the largest hard drive in production as of writing is 16TB). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center operations and implicitly the cloud employs a large industry. 
 
 ## What is the problem?
 
-Building data centers has become an industry of its own right with an expected value of [$57 bn by 2025](https://www.cbinsights.com/research/future-of-data-centers/#storage). In addition to the actual housing of the data centers, you need to fill the data centers with lots and lots of hardware, hundreds of miles of cable, refrigerant and water for cooling, batteries and diesel generators to mitigate power outages, and last but not least - an enormous amount of energy to operate the hardware. I will present some issues with each of these.
+The rapid increase in number of data centers the last few years accompanied with an expectation of even faster growth towards 2025 begs for a number of questions with regards to environmental impact.
+
+Building data centers has become a large industry with an expected value of [$57 bn by 2025](https://www.cbinsights.com/research/future-of-data-centers/#storage). In addition to the actual housing of the data centers, you need to fill the data centers with lots and lots of hardware, hundreds of miles of cable, refrigerant and water for cooling, batteries and diesel generators to mitigate power outages, and last but not least - an enormous amount of energy to operate the hardware. I hope to shed some light on potential issues.
 
 **Hardware**
+
+It is hard to even imagine 175 ZB, but if one were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. If you could download 175ZB on a stack of hard disks, you would need approximately 11 billion drives (the largest hard drive in production as of writing is 16TB). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center operations and implicitly the cloud employs a large industry. 
 
 Since data centers require so much hardware, it is natural to assess the lifecycle impact of the hardware used in the data centers. For data center operations, hardware needs to be manufactured, shipped, installed, operated and decommissioned. Each of these processes requires resources. The manufacturing process for computer electronics for instance requires the mining and extraction of metal ore and in some instances rare earth metals such as neodymium which is used in traditional hard drives and terbium which is used in solid state electronics. Although rare earth metals is a somewhat [misleading term](https://www.scientificamerican.com/article/dont-panic-about-rare-earth-elements/), the extraction and processing of ore to produce concentrates usually involves usage of lots of heavy machinery and chemicals and leaves [significant impacts](https://www.researchgate.net/publication/227332044_Environmental_impact_assessment_of_open_pit_mining_in_Iran) on the environment via the open pits the mines [imprint on the geography](v). 
 
