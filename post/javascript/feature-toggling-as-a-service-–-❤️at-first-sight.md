@@ -29,7 +29,7 @@ Launch Darkly has [a nice SDK](https://docs.launchdarkly.com/docs/js-sdk-referen
 
 In your React app, you just add this snippet around your code:
 
-``` jsx
+``` javascript
       <ConfigureFlopFlip
         adapter={launchDarklyAdapter}
         adapterArgs={{
@@ -43,14 +43,39 @@ In your React app, you just add this snippet around your code:
 
 and then for the specific component that you want to toggle:
 
-``` jsx
+``` javascript
     <ToggleFeature flag="portal-external-show-map-card">
       <MapCard />
     </ToggleFeature> 
 ```
+
+With plain Javascript you initialise like this:
+
+``` javascript
+  var user = {
+    "key": "aa0ceb"
+  };
+  var ldclient = LDClient.initialize('YOUR_CLIENT_SIDE_ID', user);
+```
+and can access the value like this:
+
+``` javascript
+  ldclient.on('ready', function() {
+    var showFeature = ldclient.variation("YOUR_FEATURE_KEY", false);
+    if (showFeature) {
+     	...
+    } else {
+      ...
+    }
+  });
+```
+
 ## Is that all?
 
 You can of course do more complex logic based on your feature-switches too, e.g. have a fallback component which is rendered in the case the feature is `OFF`. Finally, I should mention that feature flags can also be string values. This opens up for multi-variation scenarios and we have "misused" this as a low-effort solution for showing localised warning messages whenever we have system issues.
 
 Launch Darkly also provides a rich, modern API which allows you to build your own tooling if you prefer. That can include e.g. automated monitoring of toggles that need to be archived: when adding toggles is this easy, you quickly end up with a lot of them.
 
+## Empowering the stakeholders
+
+The ultimate proof that Launch Darkly adds real value to our development and deployment process, is what has started to happen recently. Our (non-technical) product owner is not only in charge of deciding when new features should be enabled, he is actually doing it himself, without even asking us. The first time it happened, I was baffled, but it is really how things should be — empower people to take the decision that are important to them.
