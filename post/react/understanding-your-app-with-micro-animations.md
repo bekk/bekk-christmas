@@ -34,10 +34,9 @@ function removeFromWishList(itemId) {
 }
 ```
 
-Our problem is that the item vanishes in an instant. To remedy this we really just need two lines of code. Firstly, we need to import `LayoutAnimation` from React Native.
-``` import { ..., LayoutAnimation } from 'react-native'`
+Our problem is that the item vanishes in an instant. To remedy this we really just need two lines of code. Firstly, we need to import the it by using the standard `import { LayoutAnimation } from 'react-native'`
 
-And to actually use it all we need to do is adding a configuration for when we remove an item. So by extending the above code block to
+To actually use it, all we need to do is adding a configuration for when we remove an item. So by extending the above code block to
 
 ```js
 function removeFromWishList(itemId) {
