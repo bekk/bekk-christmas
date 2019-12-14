@@ -65,17 +65,17 @@ That's why environmental impact of the cloud is first and foremost dictated by t
 
 ## Is there some light at the end of the tunnel?
 
-Maybe
+Maybe. In order to answer that, we need to look at what has been done until now.
 
 **Increased energy efficiency on component level**
 
-Although various sources report an increased energy consumption due to the increased demand for computation, and in particular an increased number of data centers, the International Energy Agency [refutes this](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks), claiming the energy consumption will be stable for at least the next three years despite a projected 80% increase in data centre traffic and 50% increase in data centre workloads.
+Although various sources report an increased energy consumption due to the increased number of data centers, the International Energy Agency [refutes this](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks), claiming the total energy consumption of data center operations worldwide will be stable for at least the next three years despite a projected 80% increase in data center traffic and 50% increase in data center workloads.
 
-This needs some explanation. For the last 50 years, we have been able to cram an exponential number of transistors in a single processor. Mainly driven by manufacturing process improvements, reducing the size of each transistor has in addition to giving an exponential improvement in computing power, enabled a reduction in power consumption. So, even though we've seen a rapid increase in number of data centers, the technology improvement has been reducing power consumption by an equal amount. 
+This requires some explanation. Enter Moore's Law. For the last 50 years, driven by manufacturing process improvements, we've been able to reduce the size of transistors at an exponentially steady state each 18 months. In turn, that has resulted in an exponentially larger number of transistors in each new processor generation, substantially improving computing power. But the scaling has also reduced power consumption with the same rate. So, even though we've seen a rapid increase in number of data centers, the technology improvement has been reducing power consumption by an equal amount. 
 
-However, these efforts have lately come to a halt. We are getting close to physical boundaries with regards to how small each transistor can get before experiencing quantum effects, rendering computations non-deterministic. Therefore, instead of focusing on reducing transistor size, the processor industry has focused on providing the opportunity to increase the number of cores, and improve computation by parallelization.  Today, you can find processors with up to 64 cores, and GPUs with hundreds of cores, enabling parallellization of specific tasks. But not all computations are parallelizable, and this too will hit a rooftop in the future. 
+However, these efforts have lately come to a halt. We are getting close to physical boundaries with regards to how small each transistor can be manufactured. The transistors today measure 7um. In comparison, human DNA is 2.5um. The processor industry has solved this by increasing the number of cores in each processor, and improving computing power by parallelization. Today, you can find processors with up to 64 cores, and GPUs with hundreds of cores, enabling parallellization of specific tasks. But not all computations are parallelizable, and this too will hit a rooftop in the future. 
 
-A third technology improvement has been dynamic scaling based on demand. Most processors and servers nowadays have the ability to idle or throttle down when not in use, consuming only a fraction of  energy.
+A third technology improvement has been dynamic scaling based on demand. Since servers must always be on, being able to automatically scale down processor speed can have a tremendous impact on power consumption when the need for computing is low. Most processors and servers nowadays have the ability to idle or throttle down when not in use, consuming only a fraction of energy.
 
 Lastly, replacing older hard drives with SSD drives reduces the energy consumption by half.
 
