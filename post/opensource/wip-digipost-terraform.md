@@ -3,7 +3,9 @@ calendar: opensource
 post_year: 2019
 post_day: 15
 title: Accelerating cloud migration by contributing to Terraform providers
-ingress: ''
+ingress: >-
+  How does Digipost contribute to open source to speed up their migration to the
+  public cloud?
 description: >-
   How does Digipost contribute to open source to speed up their migration to the
   public cloud?
