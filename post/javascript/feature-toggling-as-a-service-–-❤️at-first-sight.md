@@ -13,7 +13,7 @@ authors:
 Feature toggling as a service is best explained by a live demo. This 60 second sample from our enterprise app shows how we can instantly enable/disable a feature. And it shows how we can also do that for a specific user of our app!
 
 <video controls>
-  <source src="https://github.com/thomassvensen/host-a-video/blob/master/Feature%20Flag%20demo.mp4?raw=true" type="video/mp4">
+  <source src="https://github.com/thomassvensen/host-a-video/blob/master/2019-12-14_20-09-31.mp4?raw=true" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -23,13 +23,13 @@ Although not shown in the video, Launch Darkly obviously also allows you to targ
 
 ## Getting started
 
-Launch Darkly has [a nice SDK](https://docs.launchdarkly.com/docs/js-sdk-reference), allowing you to integrate with all popular programming language, including packages for both general JavaScript and [React](https://docs.launchdarkly.com/docs/react-sdk-reference) apps. There also 3rd party libraries like [Flopflip](https://github.com/tdeekens/flopflip), which smoothly mirrors the flag states to your Redux store. This is what we do, and it makes it really easy to debug issues related to feature flags, e.g. using time-travel.
+Launch Darkly has [a nice SDK](https://docs.launchdarkly.com/docs/js-sdk-reference), allowing you to integrate with all popular programming language, including packages for both general JavaScript and [React](https://docs.launchdarkly.com/docs/react-sdk-reference) apps. There are also 3rd party libraries like [Flopflip](https://github.com/tdeekens/flopflip), which smoothly mirrors the flag states to your Redux store. This is what we do, and it makes it really easy to debug issues related to feature flags, e.g. using time-travel.
 
 ## Show me the code
 
 In your React app, you just add this snippet around your code:
 
-```jsx
+``` jsx
       <ConfigureFlopFlip
         adapter={launchDarklyAdapter}
         adapterArgs={{
@@ -43,10 +43,14 @@ In your React app, you just add this snippet around your code:
 
 and then for the specific component that you want to toggle:
 
-```jsx
+``` jsx
     <ToggleFeature flag="portal-external-show-map-card">
       <MapCard />
     </ToggleFeature> 
 ```
+## Is that all?
 
 You can of course do more complex logic based on your feature-switches too, e.g. have a fallback component which is rendered in the case the feature is `OFF`. Finally, I should mention that feature flags can also be string values. This opens up for multi-variation scenarios and we have "misused" this as a low-effort solution for showing localised warning messages whenever we have system issues.
+
+Launch Darkly also provides a rich, modern API which allows you to build your own tooling if you prefer. That can include e.g. automated monitoring of toggles that need to be archived: when adding toggles is this easy, you quickly end up with a lot of them.
+
