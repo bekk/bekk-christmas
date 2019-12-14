@@ -68,7 +68,7 @@ Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: des
 
 ## Og del 2: læringskortet
 
- <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"><img style="width: 150px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/> </a>
+ <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"><img style="width: 150px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/> </a> 
 
 <center> <a  target="_blank" href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"> Læringskortet </a> </center>
 
@@ -84,19 +84,19 @@ _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig de
 
 ## De gode diskusjonene
 
-Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges til punkt og prikke. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner i riktig retning. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
+Er ikke disse testkortene et veldig strengt format? Nei. Dette er ikke en mal som skal følges til punkt og prikke. Jeg tror ikke det har noen verdi å bare fylle ut testkortet. Det bør være et grunnlag for å styre teamets diskusjoner. Hvis testkortet blir brukt som diskusjonsgrunnlag så har det hjulpet meg i arbeidsmøter med teamet til å fokusere på hvorfor lager vi det vi lager. Vi skal ikke snakke om «vi skal lage dette eller dette». Men at vi istedenfor ordlegger oss i formen «Vi tror at vi bør lage dette fordi det og det blir bedre for dem».
 
 
 
 ## Få med alle fagfelt
 
-Å forstå og skrive hypoteser er ikke vanskelig, og derfor noe alle i teamet kan samle seg rundt. I et autonomt team skal alle, både produkteier, designer og utvikler, ta ansvar for å vurdere om vi jobber med det som er riktig. Disse testkortene har hjulpet i arbeidsmøter til å styre diskusjonene inn på det som er viktig å snakke om. Det er så mye mindre viktig å snakke om hva jeg tror og hva du tror, i motsetning til å snakke om hvordan vi faktisk kan finne ut og VITE.
+Å forstå og skrive hypoteser er ikke vanskelig, og derfor noe alle i teamet kan samle seg rundt. I et autonomt team skal alle, både produkteier, designer og utvikler, ta ansvar for å vurdere om vi jobber med det som er riktig. Disse testkortene har hjulpet i arbeidsmøter til å styre diskusjonene inn på det som er viktig å snakke om. Det er så mye mindre viktig å snakke om hva JEG TROR og hva DU TROR, i motsetning til å snakke om hvordan vi faktisk kan finne ut og VITE.
 
 ## Læringskortet gjør at vi tar oss tid til å reflektere over læringen
 
-Å sette av tid og få en rutine for å samle teamet til å analysere og snakke om hva vi FAKTISK lærte, har vært skikkelig spennende. Det skaper en felles forståelse i teamet og tydeliggjør hva veien videre blir. Å ta seg tid til læringskortet kan være skikkelig vanskelig, men jeg har erfart igjen og igjen at dette er veldig nyttig. 
+Å sette av tid og få en rutine for å samle teamet til å analysere og snakke om hva vi FAKTISK lærte, har vært veldig spennende. Det skaper en felles forståelse i teamet og tydeliggjør hva veien videre blir. Å ta seg tid til læringskortet kan være skikkelig vanskelig, men jeg har erfart igjen og igjen at dette er veldig nyttig. 
 
-## Tips om hypotesekort
+## Tips om testkortet
 
 Gi deg selv en påminnelse om når du skal sjekke hypotesen. Har du for eksempel lansert noe til prod og satt på målinger, så er gjerne oppgaven satt til «done» i Jira/Trello, og da er det så lett å glemme å se på den igjen. Mitt triks ble da å lage en påminnelse i kalenderen som sier ifra hvilken hypotese jeg skal se på etter for eksempel to-tre uker. 
 
