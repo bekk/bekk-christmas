@@ -13,7 +13,7 @@ authors:
 Feature toggling as a service is best explained by a live demo. This 60 second sample from our enterprise app shows how we can instantly enable/disable a feature. And it shows how we can also do that for a specific user of our app!
 
 <video controls>
-  <source src="https://github.com/thomassvensen/ost-a-video/blob/master/Feature%20Flag%20demo.mp4?raw=true" type="video/mp4">
+  <source src="https://github.com/thomassvensen/host-a-video/blob/master/Feature%20Flag%20demo.mp4?raw=true" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
