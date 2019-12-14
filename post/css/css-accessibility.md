@@ -60,7 +60,7 @@ Not all custom checkboxes are created equal though, and it is depressing how lit
 
 And it really isn't that hard! To make sure you custom css forms are accessible:
 
-1. Do not remove the initial input element from the DOM.
+1. *Do not remove the initial input element from the DOM.*
 
 You might be tempted to apply
 
@@ -68,9 +68,9 @@ You might be tempted to apply
 input[type="checkbox"] { display: none; }
 ```
 
-to your checkbox. You just lost screen readers, and the possibility of controlling the focus state. The better way is to use \`opacity: 0;\` and move the original checkbox out of the way so that it does not take up any space.
+to your checkbox. You just lost screen readers, and the possibility of controlling the focus state. The better way is to use `opacity: 0;` and move the original checkbox out of the way so that it does not take up any space.
 
-2. Style your ::before or ::after based on the focus state
+2. *Style your `::before` or `::after` based on the focus state*
 
 The work is almost done, it is just a matter of adding some focus style:
 
@@ -78,5 +78,4 @@ The work is almost done, it is just a matter of adding some focus style:
 input[type="checkbox"]:focus + label::before {
     outline: #ff0a0e auto 5px;
 }
-
-```
+```
