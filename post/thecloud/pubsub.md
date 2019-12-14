@@ -55,25 +55,37 @@ Hardware also usually has a fairly limited life span. Usually hardware is replac
 
 **Real estate**
 
-Data centers require a lot of space. Hyperscale datacenters require hundreds of acres of land in order to accomodate the hardware. And one of the issues with data centers are that cloud providers usually want them to be as close as possible to most end users, in order to provide best performance and lowest latency. This has lead to a competition for real estate between data centers and humans, and in Amsterdam, which houses 30% of all hyperscale data centers in Europe, it led to a [temporary ban on building new ones](https://www.datacenterknowledge.com/regulation/why-amsterdam-halted-data-center-construction). 
+Data centers require a lot of space. Hyperscale datacenters require hundreds of acres of land in order to accomodate the hardware. One of the issues are that cloud providers usually want data centers to be as close as possible to most end users, in order to provide best performance and lowest latency. This has lead to a competition for real estate between data centers and humans, and in Amsterdam, which houses 30% of all hyperscale data centers in Europe, it led to a [temporary ban on building new ones](https://www.datacenterknowledge.com/regulation/why-amsterdam-halted-data-center-construction). 
 
 **Energy**
 
-According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately 1% of the total worldwide energy consumption. 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world. What is more important, the source of this energy might come from fossil fuels such as coal. If all this energy were produced by coal plants, it would result in an annual emission of [1.2 billion metrics tonnes of CO2](https://www.sourcewatch.org/index.php/Estimating_carbon_dioxide_emissions_from_coal_plants). In comparison, the total aviation industry emits roughly [0.9 billion metric tonnes of CO2](https://theicct.org/publications/co2-emissions-commercial-aviation-2018). Although many cloud providers have pledged to decarbonize their data centers, none have ditched fossil fuels entirely, and most of them rely on renewable energy credits rather than directly utilizing renewable energy sources such as solar or wind power. Greenpeace has been [following up](https://www.greenpeace.org/usa/news/greenpeace-finds-amazon-breaking-commitment-to-power-cloud-with-100-renewable-energy/) on the cloud providers pledges, and there are big differences, as laid out in [this recent](https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#) Wired article.
+Servers in data centers consume substantial amounts of energy. According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately 1% of the total worldwide energy consumption. 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world. What is more important, the source of this energy might come from fossil fuels such as coal. If all this energy were produced by coal plants, it would result in an annual emission of [1.2 billion metrics tonnes of CO2](https://www.sourcewatch.org/index.php/Estimating_carbon_dioxide_emissions_from_coal_plants). In comparison, the total aviation industry emits roughly [0.9 billion metric tonnes of CO2](https://theicct.org/publications/co2-emissions-commercial-aviation-2018). Although many cloud providers have pledged to decarbonize their data centers, none have ditched fossil fuels entirely, and most of them rely on renewable energy credits rather than directly utilizing renewable energy sources such as solar or wind power. Greenpeace has been [following up](https://www.greenpeace.org/usa/news/greenpeace-finds-amazon-breaking-commitment-to-power-cloud-with-100-renewable-energy/) on the cloud providers pledges, and there are big differences, as laid out in [this recent](https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/#) Wired article.
 
 Some [alarmist predictions](https://www.nature.com/articles/d41586-018-06610-y) indicate that the total energy consumption of data centers could rise to as much as 8% of total world energy consumption by 2030.
 
-Thats 
+That's why environmental impact of the cloud is mostly dictated by the source of its energy.
 
-That’s why a critical measure of a data center’s greenness is the source of its energy. 
+
+
+## Is there some light at the end of the tunnel?
+
+Maybe
+
+Although various sources report an increased energy consumption due to the increased demand for computation, and in particular an increased number of data centers, the International Energy Agency [refutes this](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks), claiming the energy consumption in this industry has and will be stable for at least the next three years.
+
+This needs some explanation. For the last 50 years, we have been able to cram an exponential number of transistors in a single processor. Mainly driven by manufacturing process improvements, reducing the size of each transistor has in addition to giving an exponential improvement in computing power, simultaneously as we've been able to reduce power consumption. So, even we've seen a rapid increase in number of data centers, the technology improvement has been reducing power consumption by an equal amount. 
+
+
+
+
+
+However, these efforts have lately come to a halt. We are getting close to physical boundaries with regards to how small each transistor can get before experiencing quantum effects, rendering computations non-deterministic. Therefore, instead of focusing on reducing transistor size, the processor industry has focused on providing the opportunity to increase the number of cores, and improve computation by parallelization. 
 
 The Lawrence Berkeley National Laboratory estimated that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage.
 
 https://www.cbinsights.com/research/future-of-data-centers/#energy
 
-## Is there some light at the end of the tunnel?
 
-Maybe
 
 The reality however is a bit more nuanced. 
 
