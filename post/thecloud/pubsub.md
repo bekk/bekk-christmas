@@ -41,7 +41,7 @@ In addition to the actual housing of the data centers, you need to fill each dat
 
 **Hardware**
 
-It is hard to imagine how much data 175 ZB represents, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need approximately 11 billion drives(!). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center consumes a lot of resources.
+It is hard to imagine how much data 175 ZB represents, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need 11 billion drives(!). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center consumes a lot of resources.
 
 Since data centers require so much hardware, it is natural to assess the lifecycle impact of the hardware used in the data centers. For data center operations, hardware needs to be manufactured, shipped, installed, operated and decommissioned. Each of these processes requires resources. The manufacturing process for computer electronics for instance requires the mining and extraction of both regular and rare earth metals such as neodymium, which is used in traditional hard drives, and terbium which is used in solid state electronics. Although rare earth metals is a somewhat [misleading term](https://www.scientificamerican.com/article/dont-panic-about-rare-earth-elements/), the extraction and processing of ore to produce concentrates usually involves usage of lots of heavy machinery and chemicals and leaves [significant impacts](https://www.researchgate.net/publication/227332044_Environmental_impact_assessment_of_open_pit_mining_in_Iran) on the environment via the open pits the mines [imprint on the geography](v). 
 
@@ -53,7 +53,7 @@ Data centers require a lot of space. Hyperscale datacenters require hundreds of 
 
 **Energy**
 
-Servers in data centers are on 24/7/365. As each data center can have hundreds of thousands of servers, they naturally consume vast amounts of energy. According to estimates from the International Energy Agency, data centers in the world account for [approximately 200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is approximately 1% of the total worldwide energy consumption. 
+Servers in data centers are on 24/7/365. As each data center can have hundreds of thousands of servers, they naturally consume vast amounts of energy. According to estimates from the International Energy Agency, data centers in the world account for [200 TWh/year energy consumption](https://www.iea.org/reports/tracking-buildings/data-centres-and-data-transmission-networks). This is 1% of the total worldwide energy consumption. 
 
 1% might not sound like a big deal, but that is the equivalent of the [total energy consumption of Indonesia](https://www.worlddata.info/asia/indonesia/energy-consumption.php), a country of 250 million citizens and the 4th most populated country in the world. What is more important, the source of this energy might come from fossil fuels such as coal. If all this energy were produced by coal plants, it would result in an annual emission of [1.2 billion metrics tonnes of CO2](https://www.sourcewatch.org/index.php/Estimating_carbon_dioxide_emissions_from_coal_plants). In comparison, the total aviation industry emits roughly [0.9 billion metric tonnes of CO2](https://theicct.org/publications/co2-emissions-commercial-aviation-2018). 
 
@@ -81,11 +81,13 @@ Lastly, replacing older hard drives with SSD drives reduces the energy consumpti
 
 **Increased energy efficiency on data center level**
 
-Energy is the single largest expense for a data center operation, this is in particular true for hyperscale operators of public clouds. These companies have invested heavily in improving their infrastructure. A standard measure used in industry is power usage effectiveness (PUE) - the ratio of total power required to run an entire facility versus the direct power involved in compute and storage. Over the past 10 years public cloud vendors have decreased this value considerably. While smaller data centers are still being measured with PUE values greater than 2, large hyperscale cloud data centers are beginning to record [PUE value of 1.1](http://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf) or less, which is very close to the theoretically perfect PUE of 1.0. 
+Energy is the single largest expense for a data center operation, this is in particular true for hyperscale operators of public clouds. These companies have invested heavily in improving their infrastructure in orde to reduce power bills. A standard measure used in industry is power usage effectiveness (PUE) of a data centerr - the ratio of total power required to run an entire facility versus the direct power involved in compute and storage. While smaller data centers are still being measured with PUE values greater than 2, large hyperscale cloud data centers have over the past 10 years decreased this value, beginning to record [PUE value of 1.1](http://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf) or less, which is very close to the theoretically perfect PUE of 1.0. 
 
 **What will the future bring?**
 
-In the past decade, processor scaling and general improvement in energy efficiency on both component level and data center level, via reductions in PUE, has been ensuring us an efficient offset in total energy consumption in data centers, even due to strong growth of both hyperscale and regular data centers.
+In the past decade, manufacturing improvement and targeted efforts towards improving energy efficiency on both component level and data center level, via reductions in PUE, has been ensuring us an efficient offset in total energy consumption in data centers, even due to strong growth of both hyperscale and regular data centers.
+
+**No more low-hanging fruits**
 
 However, now that we are starting to hit some physical and theoretical limitations, these low-hanging fruits are gone. The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres seems evident. The Lawrence Berkeley National Laboratory [estimated](https://newscenter.lbl.gov/2016/06/27/data-centers-continue-proliferate-energy-use-plateaus/) that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage. A prediction by the IAE is that this trend is already on its way, as illustrated in the chart below.
 
@@ -93,26 +95,22 @@ However, now that we are starting to hit some physical and theoretical limitatio
 
 _IEA, "Global data centre energy demand by data centre type", IEA, Paris https://www.iea.org/data-and-statistics/charts/global-data-centre-energy-demand-by-data-centre-type_
 
+**Continued efforts on improving energy efficiency**
+
 Meanwhile, these hyperscale operators continue to innovate. Google for instance entered into a collaboration with DeepMind to [improve data center cooling](https://www.bloomberg.com/opinion/articles/2019-12-13/energy-efficiency-a-hot-problem-for-big-tech-data-centers?srnd=opinion) via Machine Learning and just recently launched a fully automated solution for their data centers, rendering a PUE of 1.06 on certain facilities.
 
 ![](/assets/tc-15-ml.jpg "https://www.cbinsights.com/research/future-of-data-centers/#energy")
 
 _A typical day of PUE (power usage effectiveness) with ML turned on and off. Source: DeepMind_
 
-The cloud vendors also continue to improve on runtimes, virtualization, compression and software that runs on top of this hardware. For instance, Google [recently launched](https://cloud.google.com/blog/products/compute/understanding-dynamic-resource-management-in-e2-vms) a new task scheduler which assigns resources dynamically, hence increasing hardware utilization in massive-multiparallell environments. Microsoft has done substatial work to improve performance in their .NET Core libraries for the same reasons. 
+The cloud vendors also continue to improve on runtimes, virtualization, compression and software that runs our workloads on top of their hardware improving the overall computation density. For instance, Google [recently launched](https://cloud.google.com/blog/products/compute/understanding-dynamic-resource-management-in-e2-vms) a new task scheduler which assigns resources dynamically, hence increasing hardware utilization in massive-multiparallell environments. Microsoft has done substantial work to improve performance in their .NET Core libraries for the same reasons. 
 
-But the biggest signal, says Fox, will come from us, the digital consumers. Increasingly, he says, “they understand that every cloud lives inside a data center. And each has a different footprint.” We will, he believes, soon all demand to know the carbon footprint of our video streams and internet searches. The more far-sighted of the big data companies are gearing up for that day. “I fully expect we may see green labelling for digital sources as routine within five years.” 
-
-Data center energy consumption first came under heavy scrutiny in the early 2000s, when experts warned that the rapid growth of the Internet would drive a rise in worldwide fossil fuel emissions. Thankfully, energy efficiency improvements and innovation in renewable energy has substantially lowered the increase of the industry’s power consumption – despite the fact that the hunger for data has accelerated.
-
-Furthermore, improved hardware efficiency, server virtualization and the advent of hyper-scale data centers, has driven economies of scale for the likes of Microsoft and Amazon. These IT behemoths have mastered the art of maximizing data center efficiency and server utilization, as well as improving their power systems and cooling equipment.
-
-## Why is this important and what is there to be done?
+## Why is this important and what can you do?
 
 Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose. 
 
-However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers and decisionmakers about environmental impacts of their decisions.
+However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers and decisionmakers about environmental impacts of their decisions and where our workloads run.
 
 As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. 
 
-Disruptive innovation on the compute side will inevitably come to market soon, giving us faster compute engines and architectures that deliver more computational density per watt. We are currently stuck with architectures developed some 40 years ago that are not going to satisfy humanity’s insatiable thirst for a lot more processing, much faster processing and much more energy-efficient processing.
+However, there lies a responsibility on all of us developers as well to utilize libraries, coding techniques and compression algorithms which consume less energy. Mobile developers are well aware of the power restrictions due to batteries. It's time the rest of us follows and give their contribution to lowering data storage and processing for our workloads. The benefit? Reducing storage, memory and CPU for your workloads has an economic benefit - you pay less money to the cloud vendor. Win-win.
