@@ -30,53 +30,49 @@ Jeg jobber som interaksjonsdesigner i et tverrfaglig team som utvikler digitale 
 
 For å bli mer bevisst våre antagelser så har vi jobbet med hypoteser gjennom såkalte «testkort», hentet fra [Osterwalders Test card](https://www.strategyzer.com/blog/posts/2015/3/5/validate-your-ideas-with-the-test-card) 
 
-> «En hypotese er en gjetning, antagelse eller forklaring som synes rimelig ut fra foreliggende kunnskap» snl.no
+> _«En hypotese er en gjetning, antagelse eller forklaring som synes rimelig ut fra foreliggende kunnskap» snl.no_
 
 Målet med å få opp en hypotese er å kjøre et eksperiment der man prøver å bekrefte eller avkrefte hypotesen. For så å lære om hva som faktisk er riktig. 
 
 Vi har typisk jobbet med hypotesene i arbeidsmøter der alle fagfelt er med: design, utvikling og produkteier. Da har vi diskutert hvilke antagelser vi har om løsningen, hva vi vil finne ut av og hvordan vi kan finne ut av det. 
 
-## **Formuleringen vi har brukt er denne:**
+<a href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"><img style="width: 150px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/> </a>
 
-> **Vi tror at…** \[fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?]
+## **Formuleringen vi har brukt:**
+
+> **Vi tror at…** [_fyll inn det dere tenker staå er nå, hva er problemet dere ønsker å løse?_]
 >
-> **Så hvis vi…** \[fyll inn det dere tenker er løsningen, hva skal dere «tilby»?]
+> **Så hvis vi…** [_fyll inn det dere tenker er løsningen, hva skal dere «tilby»?_]
 >
-> **Så vil vi se at…** \[fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?]
+> **Så vil vi se at…** [_fyll inn det dere tenker brukeren vil oppleve som forbedret? Hva er utfallet dere ønsker skal skje?_]
 >
-> **Og dette kan vi vite ved å måle...** \[hvordan skal dere teste dette? Hvordan skal eksperimentet være?]
-
-<img style="width: 200px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/>
-
-<a href="https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png"><img style="width: 200px" src="https://i.ibb.co/PG2mMmQ/1-Hypotesekort-mal-Linn-HD-lite.png" alt="testkort"/> </a>
-
-
-[Testkort-malen](https://i.ibb.co/3MbBQh8/1-Hypotesekort-mal-Linn-HD.png) 
+> **Og dette kan vi vite ved å måle...** [_hvordan skal dere teste dette? Hvordan skal eksperimentet være?_]
 
 ## **Selve hypotesen er de første tre delene:**
 
-1. **Problemet vi ønsker å løse**. Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for...»
-2. **Løsningen**: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har nok tro på- Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
-3. **Utfall**: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
+1. _Problemet vi ønsker å løse._ Hva er «ståa nå»? Noen ganger er dette noe en antar, og noe ganger er dette noe en faktisk vet er et problem. Noen ganger har vi nok innsikt på problemet og da har vi bare strøket over og sagt «Vi vet at – det og det – er et problem for...»
+2. _Løsningen_: hva tenker vi å gjøre for å løse problemet. Kanskje er vi enige om hvordan vi tror vi bør løse det, kanskje trenger vi å jobbe lenge med å finne en løsning vi har nok tro på- Kanskje det skisseres mye. Kanskje det kjøres store workshop for å generere nye innovative løsninger. På lik linje med at problemet kan være et stort og fluffy problem eller et lite konkret problem, så kan også løsningen noen ganger være innovativ og kjempespennende, eller veldig konkret og lite tidkrevende.  
+3. _Utfall_: Hva vil løsningen føre til. Her kunne vi kanskje endret teksten til «Så tror vi at vi vil se...». Ofte er det her den største usikkerheten ligger. Det er denne vi prøver å teste og lære om er riktig eller ikke. I diskusjon med teamet så er det veldig tydelig at hvis vi ikke har et godt svar her, så må vi kanskje revurdere hele løsningen. 
 
 ## **Eksperimentet:**
 
-4. **Måling**: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
+4. _Måling_: hvordan kan vi se at utfallet vi tror vil skje, faktisk skjer? Her tenker jeg på ordet «måle» i en bred forståelse: det kan være både kvalitative og kvantitative målinger. Her må en designe «et eksperiment» for å avkrefte eller bekrefte hypotesen, og det kan gjøres på så utrolig mange måter! Og det er dette som er det virkelig vanskelige. Kanskje er det å sette en liten løsning ut i prod, og kanskje er det å lese forskningsartikler eller gjøre en større test på folk?
 
-
-<img style="width: 200px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/>
-
-
+<a href="https://i.ibb.co/2sLMxTF/2-Hypotesekort-mal-Linn-HD-laering.png"><img style="width: 150px" src="https://i.ibb.co/RbxcDQ5/2-Hypotesekort-mal-Linn-HD-laering-lite.png" alt="Læringskortet"/> </a>
 
 ## Og del 2: læringskort
 
 Her oppsummeres det dere trodde (altså selve hypotesen) og hva dere lærte. Ble hypotesen bekreftet eller avkreftet? Og hvorfor?
 
-# Noen erfaringer og refleksjoner
+
+
+
 
 <img style="width: 300px" src="https://i.ibb.co/qRLyyC6/hypotesevegg.png" alt="Hypoteseveggen"/>
 
 _Testkortene henger oppe på veggen og minner meg på i hverdagen hvor viktig det er å vite og ikke bare anta._ 
+
+# Noen erfaringer og refleksjoner
 
 ## De gode diskusjonene
 
