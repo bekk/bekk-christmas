@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 16
-title: Ambisjoner og sånn
+title: Ambisjoner og sånn ----
 ingress: >-
   En historie om hvordan produktteamet prøvde seg frem for å finne ut hva vi
   ville få til. Vi jobbet frem noen ambisjoner og strevde med å finne gode
