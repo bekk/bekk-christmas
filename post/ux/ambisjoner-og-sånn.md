@@ -51,7 +51,7 @@ Det var tydelig for oss at det ikke var vits å snakke kun om ambisjoner hvis de
 
 <img style="width: 300px" src="https://i.ibb.co/JBDMhFb/ambisjonskanvas-postits.png" alt="Ambisjonskanvas med postits"/>
 
-Så hver gang noen begynte å snakke om hvordan vi skulle løse dette, gjentok jeg følgende spørsmål i ulike varianter: "Hva ønsker vi å oppnå?". "Hva ønsker vi EGENTLIG å oppnå?". "Hva vil det gi av verdi til brukeren?". For å fange essensen av det vi snakket om. Samtidig parkerte vi tanken om løsning på en lapp. Det var jo ikke det at det var uinteressant. Det var bare ikke nå vi skulle diskutere hvordan. Vi skulle ha fokus på hva vi ønsket å oppnå i lengden. 
+Så hver gang noen begynte å snakke om hvordan vi skulle løse dette, gjentok jeg disse spørsmålene i ulike varianter: "Hva ønsker vi å oppnå?". "Hva ønsker vi EGENTLIG å oppnå?". "Hva vil det gi av verdi til brukeren?". For å fange essensen av det vi snakket om. Samtidig parkerte vi tanken om løsning på en lapp. Det var jo ikke det at det var uinteressant. Det var bare ikke nå vi skulle diskutere hvordan. Vi skulle ha fokus på hva vi ønsket å oppnå i lengden. 
 
 ## Et stort nok problem
 
@@ -71,7 +71,7 @@ Etter arbeidsmøtene der vi gikk bredt ut og jobbet med flere ambisjoner og foku
 
 I teamet har vi jobbet hypotesedrevet i cirka ett år. Det innebærer at de løsningene vi har gått for har vi formulert som hypoteser, som har blitt testet og vi har lært om antagelsen om løsning faktisk løste problemet. <a  target="_blank" href="https://ux.christmas/2019/15">Mer om prosessen rundt hypoteser</a>
 
-Men det var jo også bare antagelser at de forskjellige løsningene vi kom opp med, faktisk førte til at vi nærmet oss ambisjonen. Vi burde kunne se om vi gikk i riktig retning. Derfor var det behov for målinger. For å ikke forvirre og blande dette med mål, så brukte jeg begrepet måltall. Hvordan kunne vi vite at vi nærmet oss ambisjonen? Hvordan kunne vi vite at vi skapte verdi for brukerne og organisasjonen? 
+Men det var jo også bare antagelser at de forskjellige løsningene vi kom opp med, faktisk førte til at vi nærmet oss ambisjonen. Vi burde kunne følge med på om vi gikk i riktig retning. Derfor var det behov for målinger. For å ikke forvirre og blande dette med mål, så brukte jeg begrepet måltall. Hvordan kunne vi vite at vi nærmet oss ambisjonen? Hvordan kunne vi vite at vi skapte verdi for brukerne og organisasjonen? 
 
 ## Måltall
 
@@ -103,7 +103,7 @@ Denne historien har ikke handlet om hvordan disse ambisjonene også ble formidle
 
 ## Ikke bare fyll ut malen! 
 
-Det gjør litt vondt å dele malen til ambisjonskanvaset i dette blogginnlegget. Rett og slett fordi den ikke er viktig! Det er ikke viktig å fylle ut noen mal, for det har ikke noen verdi i seg selv. Det som var viktig var at teamet fikk diskutert hva vi ønsket å oppnå. Det var ikke lett, og for oss hjalp ambisjonskanvaset oss til å styre diskusjonen bort fra løsning og inn på hva som ville bli riktig både for brukeren og organisasjonen. Bruk det som er et diskusjonsverktøy. 
+Det gjør litt vondt å dele malen til ambisjonskanvaset i dette blogginnlegget. Rett og slett fordi den ikke er viktig! Det er ikke viktig å fylle ut noen mal, for det har ikke noen verdi i seg selv. Det som var viktig var at teamet fikk diskutert hva vi ønsket å oppnå. Det var ikke lett, og for oss hjalp ambisjonskanvaset oss til å styre diskusjonen bort fra løsning og inn på hva som ville bli riktig både for brukeren og organisasjonen. 
 
 <img style="width: 450px" src="https://i.ibb.co/7R9sWWK/arbeidsmote-ambisjoner.png" alt="arbeidsmøte"/>
 
