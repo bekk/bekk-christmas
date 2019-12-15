@@ -64,7 +64,7 @@ Although a little more verbose, using Named Arguments arguably makes it easier t
 
 > This inspection reports boolean literal arguments that could be named to remove ambiguity.
 
-Additionally, as we'll see later, we can even make function calls even more flexible and sometimes less verbose when combining Named and Default Arguments.
+Additionally, as we'll see later, we can make function calls even more flexible and sometimes less verbose when combining Named and Default Arguments.
 
 ## A word about Java Interop
 
