@@ -20,7 +20,7 @@ The FIDO Alliance has since 2013 worked towards simpler online authentication an
 To strengthen the adaption of authenticators W3C released its Web Authentication API at their "Recommended" level this March.
 
 WebAuthn moves the burden of authenticator interaction to the user's browser agent. The API reduces both authenticator selection and communication to the two JS methods `create()` and `get()`.
-`Create()` is used to register new authenticators, and `get()` to authenticate users.
+`create()` is used to register new authenticators, and `get()` to authenticate users.
 Both methods accept their separate option objects to provide some level of control to implementers as well as providing the required security measures. One of these measures is the challenge. Challenges are required for all authenticator communication and serve as a nonce value that must always be signed over by the authenticator. This proves the authenticator's involvement and prevents replay attacks. The back-end services must generate and validate the challenges for it to achieve its purpose.
 
 #### Registering a new authenticator:
