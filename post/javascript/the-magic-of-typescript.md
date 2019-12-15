@@ -188,7 +188,7 @@ const arcaneFlight: Enchantment<Creature> = {
 
 Now `Enchantment` takes in a generic parameter. This can be any type, as long as it is a `Card`. The default type is `Card`.
 
-Now we can define `arcaneFlight` as an `Enchantment<Creature>` card, which means that its `modifyTarget` function will interpret the `target` as a `Creature`. Please ignore the naïve implementation of `modifyTarget`; a robust implementation of the MtG rules are left as an exercise for the reader ;-).
+Now we can define `arcaneFlight` as an `Enchantment<Creature>` card, which means that its `modifyTarget` function will interpret the `target` as a `Creature`.
 
 ## Mapped types and conditional types
 
