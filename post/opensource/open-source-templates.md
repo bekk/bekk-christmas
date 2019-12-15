@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 16
 title: Inspirational Templates
 image: 'https://hjerpbakk.com/img/bekk-christmas/elements-of-creativity2.jpg'
-ingress: I ❤️ open source.
+ingress: '[I ❤️ open source](https://github.com/sankra).'
 links:
   - title: Snppts.dev
     url: 'https://snppts.dev'
@@ -13,8 +13,6 @@ links:
 authors:
   - Runar Ovesen Hjerpbakk
 ---
-# Inspirational Templates
-
 [I ❤️ open source as a manager.](https://ben.balter.com/2015/11/23/why-open-source/) It fills my heart with joy knowing bugs can be fixed by teams other than my own, that perhaps we're not the biggest consumer of our software and that my team can get public recognition of their hard work.
 
 I ❤️ open source as a developer. Public code is a showcase of my skills and interests and since most easy problems have already been solved, I can concentrate on providing my unique value to the projects I care about most.
@@ -39,6 +37,6 @@ For Xamarin Forms, [snppts.dev](https://snppts.dev/snippet/simplest-weather) has
 
 ![snppts.dev](https://hjerpbakk.com/img/bekk-christmas/snppts.jpg)
 
-But most of all, [I ❤️ open source](https://github.com/sankra) as a human being. It makes me and every other designer, manager or developer more productive. We build upon the knowledge of those who came before, helping each other to not make the same mistakes and enable those who come after to start at a better place than we did. Inspirational templates help us deliver digital products faster, better and cheaper.
+But most of all, I ❤️ open source as a human being. It makes me and every other designer, manager or developer more productive. We build upon the knowledge of those who came before, helping each other to not make the same mistakes and enable those who come after to start at a better place than we did. Inspirational templates help us deliver digital products faster, better and cheaper.
 
-How will you help tomorrow's remixer today?
+How will you help tomorrow's remixer?
