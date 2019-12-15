@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2019
 post_day: 16
-title: WebAuthn
+title: WebAuthn - The simplest way to 2FA
 ingress: >-
   We've covered FIDO2 in this year's [eleventh calendar
   post](https://security.christmas/2019/11), and with FIDO2 available the
@@ -19,7 +19,7 @@ authors:
 The FIDO Alliance has since 2013 worked towards simpler online authentication and a weaker reliance on passwords. A strong alternative to password authentication is becoming generally available: the cryptographic authenticator. The authenticator covers the "Something you have" authenticator factor.
 To strengthen the adaption of authenticators W3C released its Web Authentication API at their "Recommended" level this March.
 
-WebAuthn moves the burden of authenticator interaction to the user's browser agent. The API reduces both authenticator selection and communication to the two JS methods `create()` and `get()`.
+WebAuthn moves the burden of authenticator interaction to the user's browser agent. The API reduces both authenticator selection and communication to the two JavaScript methods `create()` and `get()`.
 `create()` is used to register new authenticators, and `get()` to authenticate users.
 Both methods accept their separate option objects to provide some level of control to implementers as well as providing the required security measures. One of these measures is the challenge. Challenges are required for all authenticator communication and serve as a nonce value that must always be signed over by the authenticator. This proves the authenticator's involvement and prevents replay attacks. The back-end services must generate and validate the challenges for it to achieve its purpose.
 
