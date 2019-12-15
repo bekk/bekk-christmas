@@ -35,7 +35,7 @@ I vår bransje bør målet aldri være "å lage noe". Å ha laget noe gir ikke v
 
 ## Prosessen vår (noe forenklet…)
 
-1. **Ambisjon** og **problem**: Hva ville vi oppnå? Hvilke problem var viktig å løse?
+1. Vurderte **ambisjoner** og **problem**: Hva ville vi oppnå? Hvilke problem var viktig å løse?
 2. Hvilken **verdi** kunne vi skape for **både bruker og organisasjon**?
 3. **Prioriterte** ambisjonene. Satte ett fokus!
 4. Fant **måltall**. Hvordan kunne vi vite at vi gikk i retning av ambisjonen? 
