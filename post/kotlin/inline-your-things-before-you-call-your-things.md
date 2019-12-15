@@ -2,7 +2,7 @@
 calendar: kotlin
 post_year: 2019
 post_day: 16
-title: Inline your things before you call your things!
+title: Overhead from calling? Not with inline!
 ingress: >-
   On the JVM, calling a function or instantiating a class will always incure an
   overhead, unless the JVM runtime performs some magic. At least, that's how it
