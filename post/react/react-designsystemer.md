@@ -3,6 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 17
 title: Why (not) make a design system?
+image: 'https://cdn.pixabay.com/photo/2015/07/15/11/53/woodtype-846089_1280.jpg'
 ingress: >-
   Design is complex - and ever increasingly so. It requires full collaboration
   between all teams and professions involved in the process. A shared design
