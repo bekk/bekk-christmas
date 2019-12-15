@@ -10,22 +10,26 @@ ingress: >-
   one. I've spent the last couple of months creating a design system and its
   documentation site in Docz, and I'd like to share some experiences.
 links:
-  - title: Docz website
+  - title: The Docz website
     url: 'https://www.docz.site/'
   - title: 'Our design system site, built with Docz'
     url: 'https://design.entur.org'
 authors:
   - Kristofer Giltvedt Selbekk
 ---
-## What's a docz?
+## What's a docz? 🤷‍♂️
 
-Docz is an all-in-one solution for your next documentation site. It's basically Gatsby with a lot of plugins that makes it super easy to document React components or apps.
+Creating a documentation website is a lot of work. Well, at least it used to be. You had to set up a build system, preferably with some kind of hot reloading for a good developer experience, server side rendering for searchability and interactive examples for, well, fun.
+
+Docz is a flexible all-in-one solution that lets you get started with what's supposed to be the fun part - documenting whatever you've created.
+
+Below the hood, Docz is basically a Gatsby page with all the plugins you need to create magic. It adds support for MDX, props parsing and a ton of other stuff - all hidden behind a single dependency.
 
 ## How to get started
 
-To get started, create a new project, and install `docz` via your favorite package manager:
+To get started, create a new project, and install `docz` via your favorite package manager. You'll also need React and the `prop-types` package:
 
-```
+```sh
 yarn init -y
 yarn add docz react react-dom prop-types --dev
 ```
@@ -52,13 +56,17 @@ Button.propTypes = {
 };
 ```
 
-It's a pretty simple component that shows a spinner if the `isLoading` prop is true, otherwise the children prop. And it comes in primary and secondary variants.
+It's a pretty simple component that shows a spinner if the `isLoading` prop is true, otherwise the children prop. Just to be fancy, it comes in primary and secondary variants as well.
 
-Next, let's create a MDX file that documents this button! You can place it wherever you want, but perhaps right next to the component would be a good spot?
+Next, let's create a MDX file that documents this button! You can place it wherever you want, but perhaps right next to the component would be a good spot? 
 
 If you're not familiar with MDX, it's basically Markdown with JSX support. You can render React-components directly inside of your Markdown, which triggers some really cool possibilities. You can read more about MDX at [its website](https://mdxjs.com/) if you're interested.
 
-Each MDX file starts with some YAML-configuration fields called frontmatter. We specify the name of the page, and the route it should be mounted to.
+Each MDX file starts with some YAML-configuration fields called frontmatter. We specify the name of the page, and the route it should be mounted to, and then we start creating our document!
+
+MDX allows for imports at the top, and this is where we import the component we want to document, as well as a few helpers from the `docz` library itself.
+
+This is how it looks:
 
 ```markdown
 ---
@@ -82,8 +90,10 @@ import { Button } from './'
 
 ## How to use
 
-Use the primary button as the main action of your interface. Otherwise, use the secondary button.
+Use the **primary** button as the main action of your interface. Otherwise, use the **secondary** button.
 ```
+
+Looks fair, right? The mix between JSX and regular Markdown is a bit weird at first, but I promise you'll get used to it quickly.
 
 The `<Props />` component accepts an `of` prop, where you pass in the component you want documented. This creates a UI where the prop types of your component are parsed and shown in all their glory.
 
