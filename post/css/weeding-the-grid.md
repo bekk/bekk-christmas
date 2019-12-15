@@ -28,4 +28,4 @@ I'm a believer in learning by doing. If you are like me, then you might have rea
  
 [Grid Garden](https://cssgridgarden.com/) is a cute little game that lets you try out positioning in CSS Grid in a quick and fun manner. Head over there and have a few minutes for yourself meditating in this busy time of the years while weeding your virtual garden!
  
-![CSS Grid Garden](http://www.giphy.com/gifs/iINC1wBDqUEAmKIwCK) 
+![CSS Grid Garden](https://i.ibb.co/hRzR43d/Screenshot-2019-12-15-at-20-13-00.png)
