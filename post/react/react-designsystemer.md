@@ -10,6 +10,8 @@ ingress: >-
   language makes teams work together more effectively. That’s why companies
   invest in design systems. But how can we make sure that it works for our
   product and improves our productivity?
+authors:
+  - Kjell Arne Brødreskift
 ---
 Design systems should let product teams take a systematic approach to their work. But all design systems are not equally effective. Some help product teams create coherent experience; others produce confusing designs. We can measure the system's success by how well it helps us achieve the purpose of the product.
 
