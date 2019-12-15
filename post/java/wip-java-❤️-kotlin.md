@@ -18,7 +18,7 @@ links:
 authors:
   - John Ringø
 ---
-Kotlin v1.0 was released in February 2016, almost four years ago. Since then the language has gained a lot of traction, and in 2019 Google made Kotlin the preferred language for Android app development. Kotlin has full interoperability with Java, making it easy to introduce Kotlin bit by bit into your existing Java code base. To set up your existing project with Kotlin, read [Get started with Kotlin](https://kotlin.christmas/2019/1).
+Kotlin v1.0 was released in February 2016, almost four years ago. Since then the language has gained a lot of traction, and in 2019 Google made Kotlin the preferred language for Android app development. Kotlin has full interoperability with Java, making it easy to introduce Kotlin bit by bit into your existing Java code base. To set up your existing project, read [Get started with Kotlin](https://kotlin.christmas/2019/1).
 
 Once your project is ready for some Kotlin code, a good place to start can be to introduce Kotlin data classes into your Java code.
 
