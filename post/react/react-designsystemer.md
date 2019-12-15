@@ -35,3 +35,11 @@ The product's purpose should inform design and development decisions. This purpo
 ## Establish clear design principles
 
 Clear design principles are the foundation of any functioning design system. They should capture the essence of what good design means for the company and provide practical recommendations for product teams on how to achieve it.
+
+## Measure Your Progress
+
+Implementing a design system is a process. And it’s need to ensure that the system is helpful. It can be hard to predict how a change will affect the user experience. That’s why you want to define metrics and track them as you go.
+
+# Conclusion
+
+A design system should be the guide to your product development. It enhances design-driven culture – it encourages people who work on the product to think of the purpose of their design. The design system's ultimate purpose is to give a better understanding of your users and a better user experience.
