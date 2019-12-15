@@ -60,9 +60,9 @@ prepareChristmasGift(
 
 Keep in mind though, if we're mixing named and un-named (positioned) arguments, only trailing arguments can be named. E.g. it would be possible to omit the name for the `applyWrapping` argument but not for `applyGiftBow`, in the example above.
 
-Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself, or using code inspection if your IDE supports it. This becomes particularly evident whenever a function, like ours, expects boolean literals as arguments. Some IDE's actually encourage this convention, as can be seen in IntelliJ's tooltip
+Although a little more verbose, using Named Arguments arguably makes it easier to understand what the function does, without having to look at the function signature itself, or using code inspection if your IDE supports it. This becomes particularly evident whenever a function, like ours, expects boolean literals as arguments. Some IDE's actually encourage this convention, as can be seen in IntelliJ's tooltip:
 
-> This inspection reports boolean literal arguments that could be named to remove ambiguity.
+> _This inspection reports boolean literal arguments that could be named to remove ambiguity._
 
 Additionally, as we'll see later, we can make function calls even more flexible and sometimes less verbose when combining Named and Default Arguments.
 
