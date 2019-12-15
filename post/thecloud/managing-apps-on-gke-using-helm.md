@@ -122,7 +122,10 @@ To create a new chart run the following command (christmas-app is the name of th
 helm create christmas-app
 ``
 
-This will create a new folder with the name `christmas-app` containing some files:
+This will create a new folder with the name `christmas-app` with this structure:
+
+![](/assets/helm-tree.png)
+
 
 * Chart.yaml: Metadata about our application
 * values.yaml: Variables for our application
