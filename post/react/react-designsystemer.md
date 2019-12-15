@@ -12,7 +12,7 @@ ingress: >-
 ---
 Design systems should let product teams take a systematic approach to their work. But all design systems are not equally effective. Some help product teams create coherent experience; others produce confusing designs. We can measure the system's success by how well it helps us achieve the purpose of the product.
 
-## What is the reason you need a design system?
+# What is the reason you need a design system?
 
 Perhaps you are creating a solution to an imaginary problem? Or do you just want a design system because others have one? None of these reasons suffices - obviously.
 
@@ -20,10 +20,18 @@ Creating a design system is time-consuming. And it could easily slow a small tea
 
 A design system should come from the need to increase efficiency – when work are being slowed down by lack of design directions. But you also have to consider this mechanism: Those who create the design system believes firmly in its importance, and those who it's meant for tend to think they do better without it.
 
-## So how do you make it work?
+# So how do you make it work?
 
-You need clear directions for designers and developers
+You need clear directions for designers and developers:
 
-* Map out user's needs, goals, and motivations
-* Express the purpose of the product
-* Establish clear design principles
+## Map out user's needs, goals, and motivations
+
+First we need to understand who our users are and what are their goals, needs, and motivations. This information should be the foundation of the design system you want to create.
+
+## Express the purpose of the product
+
+The product's purpose should inform design and development decisions. This purpose should be expressed in one sentence. The purpose should be natural, otherwise, the team won’t believe in it.
+
+## Establish clear design principles
+
+Clear design principles are the foundation of any functioning design system. They should capture the essence of what good design means for the company and provide practical recommendations for product teams on how to achieve it.
