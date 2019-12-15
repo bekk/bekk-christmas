@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 16
 title: JavaScript Hoisting
 image: >-
-  https://images.unsplash.com/photo-1460530628918-ebce15e46c1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80
+  https://unsplash.com/photos/ZMraoOybTLQ?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80
 ingress: >-
   **If you are new to JavaScript, chances are that you might find it a bit
   confusing at times. This is with good reason as JavaScript is a language of
