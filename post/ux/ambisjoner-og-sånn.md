@@ -35,15 +35,15 @@ I vår bransje bør målet aldri være «å lage noe». Å ha laget noe gir ikke
 
 ## Prosessen vår (noe forenklet…)
 
-1.  Ambisjon og problem: Hva ville vi oppnå? Hvilke problem var viktig å løse?
+1.  **Ambisjon** og **problem**: Hva ville vi oppnå? Hvilke problem var viktig å løse?
 
-2. Hvilken verdi kunne vi skape for både bruker og organisasjon?
+2. Hvilken **verdi** kunne vi skape for **både bruker og organisasjon**?
 
-3.  Prioriterte ambisjonene. Satte ett fokus!
+3.  **Prioriterte** ambisjonene. Satte ett fokus!
 
-4. Fant måltall. Hvordan kunne vi vite at vi gikk i retning av ambisjonen? 
+4. Fant **måltall**. Hvordan kunne vi vite at vi gikk i retning av ambisjonen? 
 
-5. Hvilke tiltak skulle vi gjøre for å nærme oss ambisjonen? Idémyldring. Lage hypoteser, prodsette, teste og lære.
+5. Hvilke **tiltak** skulle vi gjøre for å nærme oss ambisjonen? Idémyldring. Lage hypoteser, prodsette, teste og lære.
 
 ## Først bare ambisjon og problem
 
@@ -73,7 +73,7 @@ Etter arbeidsmøtene der vi gikk bredt ut og jobbet med flere ambisjoner og foku
 
 # Hvordan kunne vi vite at vi nærmet oss ambisjonen?
 
-I teamet har vi jobbet hypotesedrevet i cirka ett år. Det innebærer at de løsningene vi har gått for har vi formulert som hypoteser, som har blitt testet og vi har lært om antagelsen om løsning faktisk løste problemet. Mer om prosessen vår rundt hypoteser.
+I teamet har vi jobbet hypotesedrevet i cirka ett år. Det innebærer at de løsningene vi har gått for har vi formulert som hypoteser, som har blitt testet og vi har lært om antagelsen om løsning faktisk løste problemet. [Mer om prosessen vår rundt hypoteser](https://ux.christmas/2019/15).
 
 Men det var jo også bare antagelser at de forskjellige løsningene vi kom opp med, faktisk førte til at vi nærmet oss ambisjonen. Vi burde kunne se om vi gikk i riktig retning. Derfor var det behov for målinger. For å ikke forvirre og blande dette med mål, så brukte jeg begrepet måltall. Hvordan kunne vi vite at vi nærmet oss ambisjonen? Hvordan kunne vi vite at vi skapte verdi for brukerne og organisasjonen? 
 
@@ -105,9 +105,7 @@ Denne historien har ikke handlet om hvordan disse ambisjonene også ble formidle
 
  <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"><img style="width: 200px" src="https://i.ibb.co/wW3GtWh/ambisjonskanvas-Linn-HD-lite.png" alt="Ambisjonskanvas"/> </a> 
 
-<center> <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"> Ambisjonskanvas </a> </center>
-
-Ambisjonskanvaset - som utgangspunkt for diskusjon
+<center> <a  target="_blank" href="https://i.ibb.co/9ptdgLt/ambisjonskanvas-Linn-HD.png"> Ambisjonskanvaset - bruk det som utgangspunkt for diskusjon </a> </center>
 
 ## Ikke bare fyll ut malen! 
 
