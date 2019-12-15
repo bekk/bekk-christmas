@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 16
 title: Overhead from calling? Not with inline!
 ingress: >-
-  On the JVM, calling a function or instantiating a class will always incure an
+  On the JVM, calling a function or instantiating a class will always incur an
   overhead, unless the JVM runtime performs some magic. At least, that's how it
   used to be before Kotlin introduced the inline keyword. This article will give
   you a quick introduction to this fantastic keyword, and how it can help you!
@@ -28,7 +28,7 @@ val result = listOf("Cake", "Pie", "Pasta").findStringOfLength(4)
 Yes, this is a simple and contrived function for this use case, but it illustrates the point.
 
 The function will be compiled into a static function as part of a final class, which will then be called at the call site.
-Now, say we have some hyper-optimization to do(yes, on the JVM. No, the JVM will not inline for us at runtime for.. reasons 🤷‍♀️ ), so we simply cannot accept the overhead of the function call!
+Now, say we have some hyper-optimization to do(no, the JVM will not inline for us at runtime for.. reasons 🤷‍♀️ ), so we simply cannot accept the overhead of the function call!
 Enter, `inline`.
 
 ```kotlin
@@ -39,7 +39,7 @@ By adding the `inline` keyword to the function signature, the call to `findStrin
 In essence, it copies the code of the `findStringOfLength` function, and replaces any `findStringOfLength` call with the code in the function body. Neat!
 However, if you copy this simple sample code, you'll get this reminder from the compiler;
 
-> Expected performance impact of inlining '*function definition*' is insignificant. Inlining works best for functions with parameters of functional types
+> Expected performance impact of inlining '_function definition_' is insignificant. Inlining works best for functions with parameters of functional types
 
 So when might this be usefull? 🤔
 
@@ -63,8 +63,8 @@ listOf("Cake", "Pie", "Pasta").any { it.length == 4 }
 If the predicate returns true for any element, the `any` function will also return true.
 Now, if `any` didn't have the `inline` modifier, this would mainly have two consequences;
 
-- The `any` function would be called as a static function
-- Any Lambdas passed as arguments would be compiled into a generic function object at *each* call site
+* The `any` function would be called as a static function
+* Any Lambdas passed as arguments would be compiled into a generic function object at _each_ call site
 
 So, if we're only passing regular functions to `any`, there isn't that much overhead.
 But we pass Lambdas, don't we?
@@ -77,6 +77,7 @@ This is one of the many reasons that Kotlin can maintain performance on par with
 
 While inlining of lambdas is great in most circumstances, there are times where that's not desired. 
 In that case, just annotate the function argument with `noinline`.
+
 ```kotlin
 public inline fun <T> Iterable<T>.any(noinline predicate: (T) -> Boolean): Boolean
 ```
@@ -136,9 +137,9 @@ While this sounds like a somewhat amputated class, the power comes when the code
 The compilator will prefer to erase the inline class, so source code which deals with the Name class, will (mostly) see the String class after compilation.
 This has some key benefits;
 
-- The overhead incured when using the inline class is comparable to other primitive wrappers such as Integer and Boolean, so minimal
-- The optimizations related to primitives(e.g. Long or Floats) are used
-- The ability to have stronger type safety on properties
+* The overhead incured when using the inline class is comparable to other primitive wrappers such as Integer and Boolean, so minimal
+* The optimizations related to primitives(e.g. Long or Floats) are used
+* The ability to have stronger type safety on properties
 
 As an example, see the following two data classes;
 
