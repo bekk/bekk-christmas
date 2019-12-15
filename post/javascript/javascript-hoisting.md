@@ -11,6 +11,9 @@ ingress: >-
   many quirks packed with odd behaviors and inconsistency. Let's make JavaScript
   a bit less confusing by tackling one of the more overlooked quirk of
   JavaScript known as Hoisting.**
+links:
+  - title: Glossary
+    url: 'https://developer.mozilla.org/en-US/docs/Glossary/Hoisting'
 authors:
   - Tien Quoc Tran
 ---
