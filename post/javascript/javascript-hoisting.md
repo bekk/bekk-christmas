@@ -3,7 +3,8 @@ calendar: javascript
 post_year: 2019
 post_day: 16
 title: JavaScript Hoisting
-image: 'https://unsplash.com/photos/ZMraoOybTLQ'
+image: >-
+  https://images.unsplash.com/photo-1460530628918-ebce15e46c1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80
 ingress: >-
   **If you are new to JavaScript, chances are that you might find it a bit
   confusing at times. This is with good reason as JavaScript is a language of
@@ -19,7 +20,7 @@ Hoisting is something that happens during the compilation stage of the JavaScrip
 
 ### Var
 
-Let’s take a look at an example of how variables declared using `var` is hoisted. Consider the following code, what do you think the output will be? 
+Let’s take a look at an example of how variables declared using `var` are hoisted. Consider the following code, what do you think the output will be? 
 
 ```javascript
 console.log(movie);
