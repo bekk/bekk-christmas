@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 16
 title: Inspirational Templates
 image: 'https://hjerpbakk.com/img/bekk-christmas/elements-of-creativity2.jpg'
-ingress: '[I ❤️ open source](https://github.com/sankra).'
+ingress: I ❤️ open source.
 links:
   - title: Snppts.dev
     url: 'https://snppts.dev'
@@ -37,6 +37,6 @@ For Xamarin Forms, [snppts.dev](https://snppts.dev/snippet/simplest-weather) has
 
 ![snppts.dev](https://hjerpbakk.com/img/bekk-christmas/snppts.jpg)
 
-But most of all, I ❤️ open source as a human being. It makes me and every other designer, manager or developer more productive. We build upon the knowledge of those who came before, helping each other to not make the same mistakes and enable those who come after to start at a better place than we did. Inspirational templates help us deliver digital products faster, better and cheaper.
+But most of all, [I ❤️ open source](https://github.com/sankra) as a human being. It makes me and every other designer, manager or developer more productive. We build upon the knowledge of those who came before, helping each other to not make the same mistakes and enable those who come after to start at a better place than we did. Inspirational templates help us deliver digital products faster, better and cheaper.
 
 How will you help tomorrow's remixer?
