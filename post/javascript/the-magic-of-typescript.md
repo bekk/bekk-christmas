@@ -10,6 +10,10 @@ ingress: >-
 links:
   - title: Awesome TypeScript GitHub repo
     url: 'https://github.com/dzharii/awesome-typescript'
+  - title: Mapped Types in TypeScript
+    url: 'https://mariusschulz.com/blog/mapped-types-in-typescript'
+  - title: Conditional Types in TypeScript
+    url: 'https://mariusschulz.com/blog/conditional-types-in-typescript'
 authors:
   - Geir Sagberg
 ---
