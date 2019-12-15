@@ -38,9 +38,9 @@ Likewise the caller of the function would probably call the function with the co
 prepareChristmasGift("John Doe", true, true, true, false)
 ```
 
-Now first of all, you may have noticed that the order of the arguments given to the function upon calling it, is not arbitrary. As you probably already know, we have to adhere to the order of the parameters as given in the function signature. The language simply has no other way to map the arguments to its corresponding parameter counterpart.
+Now first of all, you may have noticed that the order of the arguments given to the function upon calling it, is not arbitrary. As you might already know, we have to adhere to the order of the parameters as given in the function signature, since arguments will be mapped to their corresponding parameter counterpart by position.
 
-Named Arguments, on the other hand, lets us specify which particular parameter we are mapping the argument value to. Utilising this concept, we may instead call the function the following way:
+Named Arguments, on the other hand, lets us specify explicitly which particular parameter we are mapping the argument value to. Utilising this concept, we may instead call the function the following way:
 
 ```kotlin
 prepareChristmasGift(
