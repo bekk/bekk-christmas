@@ -74,10 +74,33 @@ This is one of the many reasons that Kotlin can maintain performance on par with
 While inlining of lambdas is great in most circumstances, there are times where that's not desired. 
 In that case, just annotate the function argument with `noinline`.
 ```kotlin
-public inline fun <T> Iterable<T>.any(noinline predicate: (T) -> Boolean): Boolean {
+public inline fun <T> Iterable<T>.any(noinline predicate: (T) -> Boolean): Boolean
+```
+
+#### Non-local returns
+
+Normally, lambdas are not allowed to use the return keyword without a label, e.g. `return@forEach`. 
+When the lambda is used as an argument to an inline function however, it will act as if it was a return used in the function body of the enclosing function.
+
+```kotlin
+fun foo() {
+    listOf(1, 2).forEach {
+        if(it % 2 == 0) return //Acts the same as the return below
+    }
+    println("No even number found!")
+    return
+}
 ```
 
 #### crossinline
+
+Non-local returns can be great, and makes the Lambdas feel like a natural part of the language.
+However, there might be times when this kind of functionality is not desired, such as when passing the lambda to another function.
+To deny this behavior, just add the crossinline keyword to the argument.
+
+```kotlin
+public inline fun <T> Iterable<T>.any(crossinline predicate: (T) -> Boolean): Boolean
+```
 
 ### Generic functions
 
