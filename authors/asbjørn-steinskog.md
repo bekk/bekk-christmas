@@ -1,6 +1,6 @@
 ---
 title: Asbjørn Steinskog
-socialMediaLink: 'https://twitter.com/Assios'
+socialMediaLink: 'https://github.com/Assios'
 company: Bekk
 ---
 
