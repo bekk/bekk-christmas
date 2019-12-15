@@ -41,7 +41,7 @@ Clear design principles are the foundation of any functioning design system. The
 
 ## Measure Your Progress
 
-Implementing a design system is a process. And it’s need to ensure that the system is helpful. It can be hard to predict how a change will affect the user experience. That’s why you want to define metrics and track them as you go.
+Implementing a design system is a process. And you need to ensure that the system is helpful. It can be hard to predict how a change will affect the user experience. That’s why you want to define metrics and track them as you go.
 
 # Conclusion
 
