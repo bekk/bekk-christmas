@@ -26,7 +26,8 @@ You also need to enable the Kubernetes engine and Container Registry apis in GCP
 
 ## What is Helm?
 
-[Helm](https://helm.sh/) describes itself as the package manager for Kubernetes. By creating Helm charts, we can describe all the Kubernetes resources of our application, such as deployments, configmaps, and services, in one place. Helm uses value files that can inject variables into the templates. This makes it easy to customize deployments across different environments. The creator of a chart will often provide sensible default values, and it is possible to override the values when installing a release.
+[Helm](https://helm.sh/) describes itself as the package manager for Kubernetes. By creating Helm charts, we can describe all the Kubernetes resources of our application, such as deployments, configmaps, and services, in one place. 
+A Helm chart specifies values that a user can override when deploying an application, making it easy to customize deployments  across different environments.
 
 There are three concepts you need to know when working with Helm: 
 * A *chart* describes the application you want to run in Kubernetes, along with its dependencies.
@@ -126,17 +127,19 @@ This will create a new folder with the name `christmas-app` with this structure:
 
 ![helm folder structure](/assets/helm-tree.png)
 
-
+For the purposes of this article we will only edit four of those files.
 * Chart.yaml: Metadata about our application
 * values.yaml: Variables for our application
 * templates/deployment.yaml: Kubernetes deployment file
 * templates/service.yaml: Kubernetes service file
 
-It will also create some other files, but for this article we will stick to a simple deployment with one service. Values are added to the files using the [Helm Templating Language](https://helm.sh/docs/topics/chart_template_guide/). A Helm chart can have multiple value files. This makes it simple to manage different configurations for different environments.
+The files created use the [Helm Templating Language](https://helm.sh/docs/topics/chart_template_guide/). The Helm templating language supports flow control, value templating, variables and functions.
 
 We need to edit some of the files before we can deploy our app. We will start by setting `appVersion` and `version` in `Chart.yaml` to `1`. 
 
-The next step is to update the `values.yaml` file. Set `image.repository` to `eu.gcr.io/[GCP-PROJECT-NAME]/app`. The `appVersion` from [`Chart.yaml`](https://github.com/espenmeidell/christmas-19/blob/de47b44354e22ef9f412fbcb8dab5ae0901c6eb2/christmas-app/templates/deployment.yaml#L28) will be used as the docker image tag.
+The next step is to update the `values.yaml` file. The values in a chart are used for user supplied values, often application specific configurations, and other values that can change between deployments. It is possible to override the values in `values.yaml` when running `helm install` or `helm upgrade`.
+
+Set `image.repository` to `eu.gcr.io/[GCP-PROJECT-NAME]/app`. The `appVersion` from [`Chart.yaml`](https://github.com/espenmeidell/christmas-19/blob/de47b44354e22ef9f412fbcb8dab5ae0901c6eb2/christmas-app/templates/deployment.yaml#L28) will be used as the docker image tag.
 
 Our docker image exposes port 8000, so we need to update the container health checks in `deployment.yaml` accordingly:
 
@@ -247,6 +250,8 @@ We have to wait for a bit until the load balancer gets an IP address. We can wat
 kubectl get svc -w
 ```
 
+![kubectl get svc output with ip](/assets/k-svc-2.png)
+
 Once a value appears under `EXTERNAL-IP`, copy it and open it in the browser. You should see the message from our server!
 
 
@@ -275,6 +280,9 @@ The following command allows us to see the release history of our application:
 helm history christmasapp
 ```
 
+![helm history output](/assets/helm-history-1.png)
+
+
 If we want to undo the latest change, rolling back to the previous revision is as simple as:
 ```
 helm rollback christmasapp 0
@@ -282,6 +290,12 @@ helm rollback christmasapp 0
 
 Soon we will see the previous version of the app. By checking the history, we can see that the rollback is added as a new release. This way we have full control over our release history.
 
+![helm history output](/assets/helm-history-2.png)
+
 ## Final Comments
 
-There is a lot more to Helm than covered in this article. 
+There is a lot more to Helm than covered in this article. Using Helm to manage apps on Kubernetes makes our applications more configurable, composable and much simpler to manage across many environment. Version management is simple, and undoing a broken release is as simple as one command. 
+
+By using private chart repositories it is simple to share charts in an organsiation. Helm can be extended with [plugins](https://helm.sh/docs/topics/plugins/) to create additional features. [Helm-gcs](https://github.com/hayorov/helm-gcs) for example makes it possible to use Google Cloud Storage as a chart repository.
+
+**Note: If you created your own Kubernetes cluster, it is probably a good idea to delete it when you are done testing Helm!** 
