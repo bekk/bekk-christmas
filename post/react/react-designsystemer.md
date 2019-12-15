@@ -20,4 +20,10 @@ Creating a design system is time-consuming. And it could easily slow a small tea
 
 A design system should come from the need to increase efficiency – when work are being slowed down by lack of design directions. But you also have to consider this mechanism: Those who create the design system believes firmly in its importance, and those who it's meant for tend to think they do better without it.
 
-## How do you make it work?
+## So how do you make it work?
+
+You need clear directions for designers and developers
+
+* Map out user's needs, goals, and motivations
+* Express the purpose of the product
+* Establish clear design principles
