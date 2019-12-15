@@ -19,11 +19,11 @@ authors:
 ---
 Vi var et nytt produktteam. Det vil si, før sommeren var vi et prosjekt med tydelige rammer, forventninger og budsjett. Vi mottok en overordnet plan en gang i halvåret som sa hva vi skulle lage, og målet var å få til det på en god måte. Men så ble vi et produktteam. Ingen sa lengre: dette skal dere lage. Hvordan skulle vi starte? Vi ønsket å jobbe på denne nye måten. Så absolutt! Men vi visste ikke helt hvordan. Vi trengte en retning, og det var også andre rundt oss som trengte å vite hva vi hadde fokus på. 
 
-Vi var et tverrfaglig team på fem som jobbet på NAV med arbeidsrettede digitale verktøy. Tre utviklere, en produkteier og meg: en UX-designer. Vi levde i en «kontinuerlig utviklings»-verden. Vi hadde svære applikasjoner ute i prod som skulle forvaltes og bli bedre. Vi skulle nok fortsette å jobbe videre med dem, og kanskje skulle vi lage noe nytt. Det var masse vi kunne ta tak i - men hva var viktigst å ta tak i først?
+Vi var et tverrfaglig team på fem som jobbet på NAV med arbeidsrettede digitale verktøy. Tre utviklere, en produkteier og meg: en UX-designer. Vi levde i en "kontinuerlig utviklings"-verden. Vi hadde svære applikasjoner ute i prod som skulle forvaltes og bli bedre. Vi skulle nok fortsette å jobbe videre med dem, og kanskje skulle vi lage noe nytt. Det var masse vi kunne ta tak i - men hva var viktigst å ta tak i først?
 
 # Vi prøvde det ut på denne måten
 
-Vi ble inspirert av Lean Canvas, Business Model Canvas, OKRs og presentasjon fra Finn.no om ambisjoner og mål. De ulike elementene vi jobbet med ble ambisjon, problem, verdi til bruker, verdi til organisasjon og hvordan måle at vi oppnår denne verdien. Dette ble en tom mal med diskusjonspunkter, og ble etter hvert kalt «ambisjonskanvas». Håpet var at dette kunne skape et grunnlag for arbeidsmøter for å hjelpe oss å komme i gang med de viktige og riktige diskusjonene rundt hvor vi ville, hva vi skulle prioritere og hva vi ville oppnå. 
+Vi ble inspirert av Lean Canvas, Business Model Canvas, OKRs og presentasjon fra Finn.no om ambisjoner og mål. De ulike elementene vi jobbet med ble ambisjon, problem, verdi til bruker, verdi til organisasjon og hvordan måle at vi oppnår denne verdien. Dette ble en tom mal med diskusjonspunkter, og ble etter hvert kalt ambisjonskanvas. Håpet var at dette kunne skape et grunnlag for arbeidsmøter for å hjelpe oss å komme i gang med de viktige og riktige diskusjonene rundt hvor vi ville, hva vi skulle prioritere og hva vi ville oppnå. 
 
 ## Hvorfor skulle vi ikke snakke om hva vi skulle lage? 
 
@@ -31,18 +31,14 @@ Vi ble inspirert av Lean Canvas, Business Model Canvas, OKRs og presentasjon fra
 
 <center>Bok: The Design of Everyday Things - Don Norman. Illustrasjon av  <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists">Anca doodles</center></a> 
 
-I vår bransje bør målet aldri være «å lage noe». Å ha laget noe gir ikke verdi i seg selv. Et nytt produkt er ikke automatisk et nyttig produkt. Se for deg den fantastiske tekannen som er bokomslaget på «Design for Everyday Things» av Don Norman. Her kan en tenke at noen hadde satt seg målet om å lage en tekanne. Og så laget de en tekanne. De oppnådde målet. Det kan ingen si noe på. Men var det nyttig? Vil brukeren av denne tekannen kunne bruke den? Var det riktig å bruke tid på å lage noe som ingen trenger?
+I vår bransje bør målet aldri være "å lage noe". Å ha laget noe gir ikke verdi i seg selv. Et nytt produkt er ikke automatisk et nyttig produkt. Se for deg den fantastiske tekannen som er bokomslaget på Design for Everyday Things av Don Norman. Her kan en tenke at noen hadde satt seg målet om å lage en tekanne. Og så laget de en tekanne. De oppnådde målet. Det kan ingen si noe på. Men var det nyttig? Vil brukeren av denne tekannen kunne bruke den? Var det riktig å bruke tid på å lage noe som ingen trenger?
 
 ## Prosessen vår (noe forenklet…)
 
-1.  **Ambisjon** og **problem**: Hva ville vi oppnå? Hvilke problem var viktig å løse?
-
+1. **Ambisjon** og **problem**: Hva ville vi oppnå? Hvilke problem var viktig å løse?
 2. Hvilken **verdi** kunne vi skape for **både bruker og organisasjon**?
-
-3.  **Prioriterte** ambisjonene. Satte ett fokus!
-
+3. **Prioriterte** ambisjonene. Satte ett fokus!
 4. Fant **måltall**. Hvordan kunne vi vite at vi gikk i retning av ambisjonen? 
-
 5. Hvilke **tiltak** skulle vi gjøre for å nærme oss ambisjonen? Idémyldring. Lage hypoteser, prodsette, teste og lære.
 
 ## Først bare ambisjon og problem
@@ -55,7 +51,7 @@ Det var tydelig for oss at det ikke var vits å snakke kun om ambisjoner hvis de
 
 <img style="width: 300px" src="https://i.ibb.co/JBDMhFb/ambisjonskanvas-postits.png" alt="Ambisjonskanvas med postits"/>
 
-Så hver gang noen begynte å snakke om hvordan vi skulle løse dette, gjentok jeg følgende spørsmål i ulike varianter: «Hva ønsker vi å oppnå?». «Hva ønsker vi EGENTLIG å oppnå?» «Hva vil det gi av verdi til brukeren?”. For å fange essensen av det vi snakket om. Samtidig parkerte vi tanken om løsning på en lapp. Det var jo ikke det at det var uinteressant. Det var bare ikke nå vi skulle diskutere hvordan. Vi skulle ha fokus på hva vi ønsket å oppnå i lengden. 
+Så hver gang noen begynte å snakke om hvordan vi skulle løse dette, gjentok jeg følgende spørsmål i ulike varianter: "Hva ønsker vi å oppnå?". "Hva ønsker vi EGENTLIG å oppnå?". "Hva vil det gi av verdi til brukeren?". For å fange essensen av det vi snakket om. Samtidig parkerte vi tanken om løsning på en lapp. Det var jo ikke det at det var uinteressant. Det var bare ikke nå vi skulle diskutere hvordan. Vi skulle ha fokus på hva vi ønsket å oppnå i lengden. 
 
 ## Et stort nok problem
 
@@ -73,7 +69,7 @@ Etter arbeidsmøtene der vi gikk bredt ut og jobbet med flere ambisjoner og foku
 
 # Hvordan kunne vi vite at vi nærmet oss ambisjonen?
 
-I teamet har vi jobbet hypotesedrevet i cirka ett år. Det innebærer at de løsningene vi har gått for har vi formulert som hypoteser, som har blitt testet og vi har lært om antagelsen om løsning faktisk løste problemet. [Mer om prosessen vår rundt hypoteser](https://ux.christmas/2019/15).
+I teamet har vi jobbet hypotesedrevet i cirka ett år. Det innebærer at de løsningene vi har gått for har vi formulert som hypoteser, som har blitt testet og vi har lært om antagelsen om løsning faktisk løste problemet. <a  target="_blank" href="https://ux.christmas/2019/15">Mer om prosessen rundt hypoteser</a>
 
 Men det var jo også bare antagelser at de forskjellige løsningene vi kom opp med, faktisk førte til at vi nærmet oss ambisjonen. Vi burde kunne se om vi gikk i riktig retning. Derfor var det behov for målinger. For å ikke forvirre og blande dette med mål, så brukte jeg begrepet måltall. Hvordan kunne vi vite at vi nærmet oss ambisjonen? Hvordan kunne vi vite at vi skapte verdi for brukerne og organisasjonen? 
 
@@ -94,8 +90,6 @@ Da måtte vi stoppe opp! Tenke på hvorfor vi jobber med disse målingene. Det e
 For uansett: måltallet måtte aldri bli målet i seg selv! For det kunne virkelig gått hardt utover brukeropplevelsen hvis vi skulle optimalisert tjenesten for å få til et godt måltall.
 
  <a  target="_blank" href="https://twitter.com/necolas/status/1096221537537933312"><img style="width: 400px" src="https://i.ibb.co/9hKxv42/twitter-Nicolas-measure.png" alt="Twittermelding"/> </a>
-
-<center> Twitter-melding </center>
 
 # Helt tilslutt...
 
