@@ -3,7 +3,11 @@ calendar: kotlin
 post_year: 2019
 post_day: 16
 title: Inline your things before you call your things!
-ingress: Some ingress
+ingress: >-
+  On the JVM, calling a function or instantiating a class will always incure an
+  overhead, unless the JVM runtime performs some magic. At least, that's how it
+  used to be before Kotlin introduced the inline keyword. This article will give
+  you a quick introduction to this fantastic keyword, and how it can help you!
 authors:
   - Thomas Oddsund
 ---
@@ -24,14 +28,14 @@ val result = listOf("Cake", "Pie", "Pasta").findStringOfLength(4)
 Yes, this is a simple and contrived function for this use case, but it illustrates the point.
 
 The function will be compiled into a static function as part of a final class, which will then be called at the call site.
-Now, say we have some hyper-optimization to do(yes, on the JVM. No, the JVM will not inline for us at runtime for reasons), so we simply cannot accept the overhead of the function call!
+Now, say we have some hyper-optimization to do(yes, on the JVM. No, the JVM will not inline for us at runtime for.. reasons 🤷‍♀️ ), so we simply cannot accept the overhead of the function call!
 Enter, `inline`.
 
 ```kotlin
 public inline fun List<String>.findStringOfLength(targetLength: Int): Boolean
 ```
 
-By adding the `inline` keyword to the function signature, the call to `findStringOfLength` will be inlined at the call site by the compiler!
+By adding the `inline` keyword to the function signature, the call to `findStringOfLength` will be inlined at the call site by the compiler.
 In essence, it copies the code of the `findStringOfLength` function, and replaces any `findStringOfLength` call with the code in the function body. Neat!
 However, if you copy this simple sample code, you'll get this reminder from the compiler;
 
@@ -62,10 +66,10 @@ Now, if `any` didn't have the `inline` modifier, this would mainly have two cons
 - The `any` function would be called as a static function
 - Any Lambdas passed as arguments would be compiled into a generic function object at *each* call site
 
-So, if we're only passing regular functions to `any`, there isn't much overhead any the inline modifier isn't needed.
+So, if we're only passing regular functions to `any`, there isn't that much overhead.
 But we pass Lambdas, don't we?
 
-This reveales another effect of the `inline` modifier - Lambdas which are passed as arguments are also inlined!
+This reveales another effect of the `inline` modifier - Lambdas which are passed as arguments are also inlined! 🤯
 So by passing Lambdas to an inline function, we avoid both the runtime costs of the static version of the inline function, as well as the generic function object of the Lambda!
 This is one of the many reasons that Kotlin can maintain performance on par with Java, while extending the Java library with modern concepts.
 
@@ -80,15 +84,18 @@ public inline fun <T> Iterable<T>.any(noinline predicate: (T) -> Boolean): Boole
 #### Non-local returns
 
 Lambdas are allowed to use the return keyword with a label, e.g. `return@forEach`.
-When the lambda is used as an argument to an inline function however, it will act as if it was a return used in the function body of the enclosing function.
+When the lambda is used as an argument to an inline function however, the return keyword will act as if it was a return used in the function body of the enclosing function.
+This is a small but neat trick that makes an ordinary extension function seem as if it's part of the language!
 
 ```kotlin
 fun foo() {
     listOf(1, 2).forEach {
-        if(it % 2 == 0) return //Acts the same as the return below
+        if(it % 2 == 0) return //Acts the same as the return in the for loop below
+    }
+    for (i in listOf(1, 2)) {
+        if(i % 2 == 0) return
     }
     println("No even number found!")
-    return
 }
 ```
 
@@ -104,7 +111,7 @@ public inline fun <T> Iterable<T>.any(crossinline predicate: (T) -> Boolean): Bo
 
 ### Generic functions
 
-Another usecase is when you use generic functions where you need access to the actual type of the generic parameter.
+Another usecase is generic functions where you need access to the actual type of the generic parameter.
 Normally, generic functions does not have access to the actual type of a generic parameter, as the generic type is erased at runtime.
 With an inlined function however, the function will be executed in place where it still has access to the type.
 Just add the keyword `reified` to the generic type!
@@ -126,15 +133,14 @@ inline class Age(val age: Int)
 
 These classes can only have one actual property(as declared in the constructor), and no init block.
 While this sounds like a somewhat amputated class, the power comes when the code is compiled.
-The inline class is (in most cases) removed, so source code which deals with the Name class, will see the String class after compilation.
-Further, 
+The compilator will prefer to erase the inline class, so source code which deals with the Name class, will (mostly) see the String class after compilation.
 This has some key benefits;
 
-- No additional overhead is incured when using the inline class, as it's removed during compilation
+- The overhead incured when using the inline class is comparable to other primitive wrappers such as Integer and Boolean, so minimal
 - The optimizations related to primitives(e.g. Long or Floats) are used
 - The ability to have stronger type safety on properties
 
-As an example, see the following example;
+As an example, see the following two data classes;
 
 ```kotlin
 data class Employee(val name: String, val salary: Int, val age: Int)
@@ -145,5 +151,5 @@ data class EmployeeWithInlineClass(val name: Name, val salary: Salary, val age: 
 When you use the Employee class, it's easy to accidently swap the salary and age arguments.
 With EmployeeWithInlineClass however, you have to instantiate the arguments with the correct type, forcing you to send in the right value to the right argument.
 This is of course nothing new, as one could use a regular old class before, but that would guarantee an overhead!
-When an inline class is compiled on the other hand, the compiler will prefer to remove the inline class as much as possible.
-This will yield better performance when compared to using the tradition class, while providing the same type safety, which again can lead to fewer bugs.
+When an inline class is compiled on the other hand, the compiler will prefer to erase the inline class as much as possible and stick to the primitive wrapped.
+This will yield better performance when compared to using the tradition class, while providing the same type safety, which again can lead to fewer bugs. For more on inline classes, see [this post](https://kotlinexpertise.com/kotlin-inline-classes/) on the Kotlin Expertise Blog.
