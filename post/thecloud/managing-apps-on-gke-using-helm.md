@@ -118,7 +118,7 @@ Now that the cluster is ready, and we have pushed our deployable app to the cont
 
 ## Creating the Helm Chart
 
-To create a new chart run the following command (christmas-app is the name of the chart we want to deploy):
+To create a new chart run the following command (christmas-app) is the name of the chart we want to deploy):
 ``
 helm create christmas-app
 ``
@@ -141,7 +141,7 @@ The next step is to update the `values.yaml` file. The values in a chart are use
 
 Set `image.repository` to `eu.gcr.io/[GCP-PROJECT-NAME]/app`. The `appVersion` from [`Chart.yaml`](https://github.com/espenmeidell/christmas-19/blob/de47b44354e22ef9f412fbcb8dab5ae0901c6eb2/christmas-app/templates/deployment.yaml#L28) will be used as the docker image tag.
 
-Our docker image exposes port 8000, so we need to update the container health checks in `deployment.yaml` accordingly:
+Our docker image exposes port 8000, so we need to update the container specification in `deployment.yaml` accordingly:
 
 ```yaml
 ...
