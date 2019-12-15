@@ -19,7 +19,7 @@ authors:
 ---
 Vi var et nytt produktteam. Det vil si, før sommeren var vi et prosjekt med tydelige rammer, forventninger og budsjett. Vi mottok en overordnet plan en gang i halvåret som sa hva vi skulle lage, og målet var å få til det på en god måte. Men så ble vi et produktteam. Ingen sa lengre: dette skal dere lage. Hvordan skulle vi starte? Vi ønsket å jobbe på denne nye måten. Så absolutt! Men vi visste ikke helt hvordan. Vi trengte en retning, og det var også andre rundt oss som trengte å vite hva vi hadde fokus på. 
 
-Vi var et tverrfaglig team på fem som jobbet på NAV med arbeidsrettede digitale verktøy. Tre utviklere, en produkteier og meg: en UX-designer. Vi levde i en "kontinuerlig utviklings"-verden. Vi hadde svære applikasjoner ute i prod som skulle forvaltes og bli bedre. Vi skulle nok fortsette å jobbe videre med dem, og kanskje skulle vi lage noe nytt. Det var masse vi kunne ta tak i - men hva var viktigst å ta tak i først?
+Vi var et tverrfaglig team på fem som jobbet på NAV med arbeidsrettede digitale verktøy. Tre utviklere, en produkteier og meg: en UX-designer. Vi levde i en "kontinuerlig utviklings"-verden. Vi hadde svære applikasjoner ute i prod som skulle forvaltes og bli bedre. Vi skulle nok fortsette å jobbe videre med de, og kanskje skulle vi lage noe nytt. Det var masse vi kunne ta tak i - men hva var viktigst å ta tak i først?
 
 # Vi prøvde det ut på denne måten
 
@@ -29,7 +29,7 @@ Vi ble inspirert av Lean Canvas, Business Model Canvas, OKRs og presentasjon fra
 
 <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists"><img style="width: 300px" src="https://i.ibb.co/X8kdDSN/illustrasjon-anca.png" alt="tekanne"/> </a> 
 
-<center>Bok: The Design of Everyday Things - Don Norman. Illustrasjon av  <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists">Anca doodles</center></a> 
+<center>The Design of Everyday Things - Bok av Don Norman. Illustrasjon av  <a  target="_blank" href="https://dribbble.com/shots/5240543-20-100-Coffeepot-for-Masochists">Anca doodles</center></a> 
 
 I vår bransje bør målet aldri være "å lage noe". Å ha laget noe gir ikke verdi i seg selv. Et nytt produkt er ikke automatisk et nyttig produkt. Se for deg den fantastiske tekannen som er bokomslaget på Design for Everyday Things av Don Norman. Her kan en tenke at noen hadde satt seg målet om å lage en tekanne. Og så laget de en tekanne. De oppnådde målet. Det kan ingen si noe på. Men var det nyttig? Vil brukeren av denne tekannen kunne bruke den? Var det riktig å bruke tid på å lage noe som ingen trenger?
 
@@ -89,7 +89,7 @@ Da måtte vi stoppe opp! Tenke på hvorfor vi jobber med disse målingene. Det e
 
 For uansett: måltallet måtte aldri bli målet i seg selv! For det kunne virkelig gått hardt utover brukeropplevelsen hvis vi skulle optimalisert tjenesten for å få til et godt måltall.
 
- <a  target="_blank" href="https://twitter.com/necolas/status/1096221537537933312"><img style="width: 400px" src="https://i.ibb.co/9hKxv42/twitter-Nicolas-measure.png" alt="Twittermelding"/> </a>
+ <a  target="_blank" href="https://twitter.com/necolas/status/1096221537537933312"><img style="width: 300px" src="https://i.ibb.co/9hKxv42/twitter-Nicolas-measure.png" alt="Twittermelding"/> </a>
 
 # Helt tilslutt...
 
@@ -105,7 +105,7 @@ Denne historien har ikke handlet om hvordan disse ambisjonene også ble formidle
 
 Det gjør litt vondt å dele malen til ambisjonskanvaset i dette blogginnlegget. Rett og slett fordi den ikke er viktig! Det er ikke viktig å fylle ut noen mal, for det har ikke noen verdi i seg selv. Det som var viktig var at teamet fikk diskutert hva vi ønsket å oppnå. Det var ikke lett, og for oss hjalp ambisjonskanvaset oss til å styre diskusjonen bort fra løsning og inn på hva som ville bli riktig både for brukeren og organisasjonen. Bruk det som er et diskusjonsverktøy. 
 
-<img style="width: 600px" src="https://i.ibb.co/7R9sWWK/arbeidsmote-ambisjoner.png" alt="arbeidsmøte"/>
+<img style="width: 450px" src="https://i.ibb.co/7R9sWWK/arbeidsmote-ambisjoner.png" alt="arbeidsmøte"/>
 
 ## Prøv det. Det er ikke lett.
 
