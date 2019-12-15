@@ -124,7 +124,7 @@ helm create christmas-app
 
 This will create a new folder with the name `christmas-app` with this structure:
 
-![](/assets/helm-tree.png)
+![helm folder structure](/assets/helm-tree.png)
 
 
 * Chart.yaml: Metadata about our application
@@ -174,7 +174,11 @@ Now we install our application on the cluster. `christmasapp` is the name of the
 ``` 
 helm install christmasapp christmas-app-1.tgz
 ```
-We can use the kubectl tool to check the status of how the deployment is going:
+To list all releases running in a cluster we can run `helm ls`. The output gives us a quick overview of what apps we have running, including release time and version.
+
+![helm ls output](/assets/helm-ls.png)
+
+We can also use the kubectl tool to check the status of how the deployment is going:
 ```
 kubectl get pods
 ```
@@ -187,6 +191,8 @@ You should see the log messages created by our web server. Great! But it is a we
 ```
 kubectl get svc
 ```
+
+![kubectl get svc output](/assets/k-svc-1.png)
 
 Helm is nice enough to give us the command to enable port forwarding from our local machine: 
 ```
