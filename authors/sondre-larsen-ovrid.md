@@ -1,6 +1,6 @@
 ---
 title: Sondre Larsen Ovrid
-socialMediaLink: 'https://no.linkedin.com/in/sondreovrid'
+socialMediaLink: sondre.ovrid@bekk.no
 company: Bekk
 ---
 
