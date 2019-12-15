@@ -33,7 +33,18 @@ As we can see in this GIF from VS Code, we get full autocompletion without speci
 
 ## Types and interfaces
 
-Great! But what if we want to do something strongly typed with it? We could extract the type using the `typeof` operator, something like this:
+Great! But what if we want to do something strongly typed with it? We could create a **type alias** using the `type` keyword to define the types manually:
+
+```typescript
+type LlanowarElves = {
+  manaCost: Mana[]
+  power: number
+  tougness: number
+  tap: () => mana
+}
+```
+
+However, in this case we probably want to **infer** the types and save that information as a new type. We can do this using the `typeof` operator:
 
 ```typescript
 const llanowarElves = {
@@ -51,13 +62,32 @@ type LlanowarElves = typeof llanowarElves
 //    power: number;
 //    toughness: number;
 //    tap: () => Mana;
-//}
+// }
 ```
 
+Cool! Now we can make functions that take an input parameter of type `LlanowarElves`. But we probably want to make our functions more generic, for example a function that works only on **Creatures**, or on something that can be **tapped**. This is where `interface` comes in handy:
 
-Then we could make functions that take an input parameter of type `LlanowarElves`. But we probably want to make our functions more generic, for example a function that works only on **Creatures**, or on something that can be **tapped**. This is where `interface` comes in handy:
+```typescript
+interface Spell {
+  manaCost: Mana[]
+}
 
-<p><img src="/assets/mtg-code2.png" alt="Three example interfaces, and how to implement them" style="width: auto; max-width: 100%;" /></p>
+interface Creature {
+  power: number
+  toughness: number
+}
+
+interface Tappable {
+  tap: () => any
+}
+
+const llanowarElves: Spell & Creature & Tappable = {
+  manaCost: [Mana.Green],
+  power: 1,
+  toughness: 1,
+  tap: () => Mana.Green
+}
+```
 
 Here we have added the interfaces `Spell` to require a `manaCost`, `Creature` with `power` and `toughness`, and `Tappable` as something with a `tap` ability. We have also declared that `llanowarElves` is all of these things, using `&`, the [intersection type operator](https://www.typescriptlang.org/docs/handbook/advanced-types.html#intersection-types).
 
@@ -65,21 +95,38 @@ Now, in newer versions of TypeScript, types and interfaces are pretty much inter
 
 ### Declaration merging
 
-<p><img src="/assets/mtg-code4.png" alt="Example of declaration merging" style="width: auto; max-width: 100%;" /></p>
+```typescript
+interface Spell {
+  manaCost: Mana[]
+}
 
-1. Interfaces support [declaration merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html), types do not. Here we can see we declare `Creature` twice, with no errors, because the declarations do not conflict.
+interface Creature {
+  power: number
+  toughness: number
+}
+
+interface Creature extends Spell {}
+```
+
+**1. Interfaces support [declaration merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html), types do not.** Here we can see we declare `Creature` twice, with no errors, because the declarations do not conflict.
 
 ### `typeof` and `keyof`
 
-<p><img src="/assets/mtg-code5.png" alt="Example of keyof operator" style="width: auto; max-width: 100%;" /></p>
+```typescript
+type CreatureProperties = keyof Creature
+// Result: type CreatureProperties = "power" | "toughness" | "manaCost"
+```
 
-2. Results of the `typeof` and `keyof` operators can only be stored as types, not interfaces. Here we see using `keyof Creature`, which gives us a new type that is the [discriminated union](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) of [string literals](https://www.typescriptlang.org/docs/handbook/advanced-types.html#string-literal-types) for the properties `power`, `toughness` and `manaCost`; i.e. variables of the `CreatureProperties` type can only be either one of those strings.
+**2. Results of the `typeof` and `keyof` operators can only be stored as types, not interfaces.** Here we see using `keyof Creature`, which gives us a new type that is the [discriminated union](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) of [string literals](https://www.typescriptlang.org/docs/handbook/advanced-types.html#string-literal-types) for the properties `power`, `toughness` and `manaCost`; i.e. variables of the `CreatureProperties` type can only be either one of those strings.
 
 ### Syntax
 
-<p><img src="/assets/mtg-code3.png" alt="Types vs interfaces" style="width: auto; max-width: 100%;" /></p>
+```typescript
+type TappableCreatureSpellType = Spell & Tappable & Creature
+interface TappableCreatureSpellInterface extends Spell, Tappable, Creature {}
+```
 
-3. Types have generally shorter syntax.
+**3. Types have generally shorter syntax.**
 
 ### Rules of thumb
 
@@ -97,23 +144,51 @@ Now, there are several other card types in Magic than Creature. Here are a few:
 
 This **Forest** is a **Land** card. This means you don't need **Mana** to play it, but you can only play one **Land** each turn. Also, lands can be **tapped** for **Mana**, similar to **Llanowar Elves**.
 
-<p><img src="/assets/mtg-murder.jpg" alt="Murder MtG card" style="width: auto; max-width: 100%;" /></p>
+<p><img src="/assets/mtg-arcane-flight.jpg" alt="Arcane Flight MtG card" style="width: auto; max-width: 100%;" /></p>
 
-**Murder** is an **Instant**, which means it can be played at any time, as long as you have the **Mana** to pay for it. This specific card can be used to destroy any card that is a **Creature**.
+**Arcane Flight** is an **Enchantment**, which means it targets another card and provides a lasting effect. This specific card will increase the **power** and **toughness** by **1** when attached to a **creature**, as well as give it the **flying** ability.
 
 So, how would we go about modelling different types of cards? Let's start by using `|`, the [union type operator](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types), to define all possible types of a card:
 
-<p><img src="/assets/mtg-code6.png" alt="Example of union types" style="width: auto; max-width: 100%;" /></p>
+```typescript
+interface Creature extends Spell {
+  power: number
+  toughness: number
+}
 
-As we can see, `Land` is `Tappable` and also has a `color`, while `Instant` is a `Spell` and has a `applyToTarget` function. And the `Card` type can be either one of these, so if a function takes in a `Card`, you have to use [type guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types) to differentiate between the type of cards.
+interface Land extends Tappable {
+  color: Mana
+}
 
-One issue with the `Instant` type is that the `target` could be anything. But in the case of **Murder**, only **creatures** are valid targets. We can use [generics](https://www.typescriptlang.org/docs/handbook/generics.html) to enforce this, let's modify our `Instant` interface declaration:
+interface Enchantment extends Spell {
+  modifyTarget: (target: any) => void
+}
 
-<p><img src="/assets/mtg-code7.png" alt="Generic implementation of Instant" style="width: auto; max-width: 100%;" /></p>
+type Card = Creature | Land | Enchantment
+```
 
-Now `Instant` takes in a generic parameter. This can be any type, as long as it is a `Card`. The default value is `Card`.
+In addition to the existing `Creature` type, we have `Land` which is `Tappable` and also has a `color`, while `Enchantment` is a `Spell` and has a `modifyTarget` function. And the `Card` type can be either one of these, so if a function takes in a `Card`, you have to use [type guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types) to differentiate between the type of cards.
 
-Now we can define `murder` as an `Instant<Creature>` card, which means that its `applyToTarget` function will interpret the `target` as a `Creature`.
+One issue with the `Enchantment` type is that the `target` could be anything. But in the case of **Arcane Flight**, only **creatures** are valid targets. We can use [generics](https://www.typescriptlang.org/docs/handbook/generics.html) to enforce this, let's modify our `Enchantment` interface declaration:
+
+```typescript
+interface Enchantment<T extends Card = Card> extends Spell {
+  modifyTarget: (target: T) => void
+}
+
+const arcaneFlight: Enchantment<Creature> = {
+  manaCost: [Mana.Blue],
+  modifyTarget: target => {
+    target.power += 1
+    target.toughness += 1
+    target['flying'] = true
+  }
+}
+```
+
+Now `Enchantment` takes in a generic parameter. This can be any type, as long as it is a `Card`. The default type is `Card`.
+
+Now we can define `arcaneFlight` as an `Enchantment<Creature>` card, which means that its `modifyTarget` function will interpret the `target` as a `Creature`. Please ignore the naïve implementation of `modifyTarget`; a robust implementation of the MtG rules are left as an exercise for the reader ;-).
 
 ## Mapped types and conditional types
 
@@ -123,7 +198,26 @@ Sometimes we have types that are very similar, but not quite the same. For examp
 
 To model a **Creature Token** in TS, we will use a built-in [mapped type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types) `Omit`, with the implementation included here for reference (from [lib.es5.d.ts](https://github.com/microsoft/TypeScript/blob/master/lib/lib.es5.d.ts)):
 
-<p><img src="/assets/mtg-code8.png" alt="Implementation of Omit type" style="width: auto; max-width: 100%;" /></p>
+```typescript
+
+/**
+ * From T, pick a set of properties whose keys are in the union K
+ */
+type Pick<T, K extends keyof T> = {
+    [P in K]: T[P];
+};
+
+/**
+ * Exclude from T those types that are assignable to U
+ */
+type Exclude<T, U> = T extends U ? never : T;
+
+/**
+ * Construct a type with the properties of T except for those in type K.
+ */
+type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
+
+```
 
 `Pick` is a [mapped type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types) that allows specifying a type and a number of properties, and gives a new type containing only those properties.
 
@@ -131,7 +225,14 @@ To model a **Creature Token** in TS, we will use a built-in [mapped type](https:
 
 Now we can define our `CreatureToken` type:
 
-<p><img src="/assets/mtg-code9.png" alt="CreatureToken using Omit" style="width: auto; max-width: 100%;" /></p>
+```typescript
+type CreatureToken = Omit<Creature, 'manaCost'>
+
+const centaur: CreatureToken = {
+  power: 3,
+  toughness: 3
+}
+```
 
 As we can see, we no longer need to (or may) include `manaCost` for our `centaur`.
 
