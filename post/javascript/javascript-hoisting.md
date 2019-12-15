@@ -52,7 +52,7 @@ let movie = “Bølgen”;
 
 If you guessed `ReferenceError` you’re right again! While `let` and `const` gets hoisted just like `var` there is a small difference in how they are initialized. Instead of being initialized to `undefined` like in the case of `var`, `let` and `const` remains uninitialized and does not get assigned a value before the declaration. The space between where the variable is created and assigned a value is often referred to as the `Temporal Dead Zone`. If we try to access the variable inside this space, we will get a `ReferenceError`. 
 
-```
+```javascript
 let movie;                  // Not automatically assigned a value
 console.log(movie);         // Temporal Dead Zone
 movie = “Bølgen”;           // Assign the value
