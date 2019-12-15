@@ -40,3 +40,5 @@ When using SVG animations, the same CSS property can be applied,  but you might 
 When creating animations, they should not contain anything that flashes more than three times in any one second period, or otherwise break the [very technical definition of the flash threshold](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html#general-thresholddef).
 
 Given that your animations adhere to this principle, it is generally considered good practice to stop the animations, either after a given duration using [`animation-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration) or a given number of iterations using [`animation-iteration-count`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count).
+
+Tomorrow, let’s take a look at how to automatically detect if we should limit our animations presented to our users.
