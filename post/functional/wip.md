@@ -17,7 +17,7 @@ authors:
 
 In an effort to learn Haskell I have started to work through the exercises at [exercism.io](https://exercism.io/). It is an excellent site that provides classical programming exercises in loads of different languages. You get feedback from experienced mentors, and the feedback I have received so far has been really thoughtful and useful. I am learning tons!
 
-I am having a go at learning **Haskell**. Not because this is something I will ever need. It is rather an attempt to get my head around functional programming, and Haskell doesn’t seem to pretend to have any practical application beyond that.
+I am having a go at learning **Haskell**. Not because this is something I will ever need. It is rather an attempt to get my head around functional programming, and to me Haskell doesn’t seem to have any practical application beyond that.
 
 Although I am struggling, it is great fun!
 
@@ -30,7 +30,7 @@ Obviously, I can’t know much about functional programming!
 
 One of my tasks was to implement a function that returns the nth prime number.
 
-Googling for a Haskell implementation of the problem, I would consider cheating. But using Wikipedia to find a general algorithm is not beneath my standards. So I jumped over to [this page](https://en.wikipedia.org/wiki/Primality_test#Pseudocode) and found a small optimization I probably wouldn’t have thought of myself.
+Googling for a Haskell implementation of the problem, I would consider cheating. But using Wikipedia to find a general algorithm is not beneath my standards. So I jumped over to [this page](https://en.wikipedia.org/wiki/Primality_test#Pseudocode) and found a small optimisation I probably wouldn’t have thought of myself.
 
 The final solution was published, and I was pretty happy with my own efforts; a [beauty of just 30 lines](https://exercism.io/tracks/haskell/exercises/nth-prime/solutions/798a0cab2879469db0557d789d9c4ca7).
  
@@ -86,11 +86,11 @@ primes n = take n $ sieve [2..]
 
 Not only is it _much_ shorter, it also applies a combination of recursion and lazy partial execution of the function. This led me to understand how little I had understood.
 
-<p><img src="https://underskaar.com/images/csharpman1.png" alt="My head exploded" style="width:200px" /></p>
+![Head exploding](https://underskaar.com/images/csharpman1.png)
 
 Now, it is conceivable that this is the [canonical solution to this particular problem](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), but still my head exploded.
 
-Is this at all possible to achieve in C#?
+Is this at all possible to achieve in an OO language?
 I sat down and tried to restore the honour of C# by [solving it with recursion and lazy implementation in my old familiar language](https://gist.github.com/oyms/e7bad5882dd8495246b5a9045c474444). (With a little more code and hassle.)
 
 ```csharp
@@ -146,7 +146,7 @@ namespace CSharpCanDoFunctional
 }
 ```
 
-No, I don’t think it is possible to solve this way in C#. 
+No, I don’t think it is possible to solve it this way in C#. 
 
 In about 50 lines the snippet achieves almost but not quite what Haskell could do in seven. I just took a massive code golf defeat.
 
