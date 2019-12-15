@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2019
 post_day: 16
-title: JavaScript Hoisting
+title: Hoisting
 image: >-
   https://images.unsplash.com/photo-1485856407642-7f9ba0268b51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
