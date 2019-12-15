@@ -41,7 +41,7 @@ In addition to the actual housing of the data centers, you need to fill each dat
 
 **Hardware**
 
-It is hard to imagine how much data 175 ZB represents, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need 11 billion drives(!). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data center consumes a lot of resources.
+It is hard to imagine how much data 175 ZB represents, but if you were able to store that onto BluRay discs, then you’d have a stack of discs that can get you to the moon 23 times. To store it on hard drives, you would need 11 billion drives(!). Imagine the resources necessary to manufacture only the disk drives, and you will begin to realize that data centers consume a lot of resources.
 
 Since data centers require so much hardware, it is natural to assess the lifecycle impact of the hardware used in the data centers. For data center operations, hardware needs to be manufactured, shipped, installed, operated and decommissioned. Each of these processes requires resources. The manufacturing process for computer electronics for instance requires the mining and extraction of both regular and rare earth metals such as neodymium, which is used in traditional hard drives, and terbium which is used in solid state electronics. Although rare earth metals is a somewhat [misleading term](https://www.scientificamerican.com/article/dont-panic-about-rare-earth-elements/), the extraction and processing of ore to produce concentrates usually involves usage of lots of heavy machinery and chemicals and leaves [significant impacts](https://www.researchgate.net/publication/227332044_Environmental_impact_assessment_of_open_pit_mining_in_Iran) on the environment via the open pits the mines [imprint on the geography](v). 
 
@@ -109,7 +109,7 @@ The cloud vendors also continue to improve on runtimes, virtualization, compress
 
 Resistance to both the cloud and the Borg is futile. Limiting viral videos, Google searches and users from using online services is obviously to no purpose. 
 
-However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our bosses, customers and decisionmakers about environmental impacts of their decisions and where our workloads run.
+However, for us in the industry of making such services, there lies a responsibility to inform and acquaint our leaders, customers and decision makers about environmental impacts of their decisions and where our workloads run.
 
 As a part of this advent calendar, our CTO wrote an article about private PaaS [being considered harmful](https://thecloud.christmas/2019/2). He was mainly arguing the benefits of public clouds versus private clouds and data centers. I hope this article has contributed to illuminate a new perspective. Not only are private clouds considered harmful from an innovation perspective, but from an environmental aspect as well, where hyperscale clouds continue to innovate not only on the breath of services, but also on energy efficiency on a scale. 
 
