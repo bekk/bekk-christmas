@@ -38,7 +38,7 @@ To kick things off, we define a namespace to hold our code in `src/sketches/perl
             [quil.middleware :as middleware]))
 ```
 
-A developement build called `dev` is defined by placing a file `dev.cljs.edn` alongside it. This file instructs our build on what namespace that should run initially when the built javascript file loads.
+A developement build called `dev` is defined by placing a file `dev.cljs.edn` in the root of the project. This file instructs our build on what namespace that should run initially when the built javascript file loads.
 
 ```clojure
 {:main sketches.perlin_flow}
