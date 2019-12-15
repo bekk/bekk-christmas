@@ -35,7 +35,25 @@ As we can see in this GIF from VS Code, we get full autocompletion without speci
 
 Great! But what if we want to do something strongly typed with it? We could extract the type using the `typeof` operator, something like this:
 
-<p><img src="/assets/mtg-code1.png" alt="Illustration of the typeof operator" style="width: auto; max-width: 100%;" /></p>
+```typescript
+const llanowarElves = {
+  manaCost: [Mana.Green],
+  power: 1,
+  toughness: 1,
+  tap: () => Mana.Green
+}
+
+type LlanowarElves = typeof llanowarElves
+
+// Result:
+// type LlanowarElves = {
+//    manaCost: Mana[];
+//    power: number;
+//    toughness: number;
+//    tap: () => Mana;
+//}
+```
+
 
 Then we could make functions that take an input parameter of type `LlanowarElves`. But we probably want to make our functions more generic, for example a function that works only on **Creatures**, or on something that can be **tapped**. This is where `interface` comes in handy:
 
