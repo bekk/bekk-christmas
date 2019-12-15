@@ -1,7 +1,7 @@
 ---
 calendar: css
 post_year: 2019
-post_day: 17
+post_day: 16
 title: 'CSS Accessibility - get a move on, then, stop!'
 ingress: >-
   CSS Animations can be what sets your website apart, and really makes your
