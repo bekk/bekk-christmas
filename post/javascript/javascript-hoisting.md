@@ -12,8 +12,11 @@ ingress: >-
   a bit less confusing by tackling one of the more overlooked quirk of
   JavaScript known as Hoisting.**
 links:
-  - title: Glossary
+  - title: MDN Hoisting
     url: 'https://developer.mozilla.org/en-US/docs/Glossary/Hoisting'
+  - title: 'Hoisting in Modern JavaScript — let, const, and var'
+    url: >-
+      https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda
 authors:
   - Tien Quoc Tran
 ---
