@@ -9,6 +9,8 @@ ingress: >-
   [@salonigarg_](https://twitter.com/salonigarg_)! Saloni is also a Computer
   Science undergrad, a Mozilla Open Leader and a Google Venkat Scholar. We're
   both honored and excited to talk with Saloni about Open source!
+authors:
+  - Henrik Walker Moe
 ---
 The questions below came from a simple question we asked ourselves: 
 
