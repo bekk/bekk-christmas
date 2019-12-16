@@ -46,3 +46,14 @@ I forbindelse med denne kalenderluken spurte jeg designerne i Bekk om de kunne s
 Konklusjonen på visa er at mitt utgangspunkt for hva en designer er ikke stemmer helt med virkeligheten. I løpet av de siste årene i arbeid har jeg lært mye om en designers arbeidsmetoder, faglige styrker og hvordan jeg og designer kan jobbe sammen for å levere mest mulig verdi. Kort fortalt så er ikke en designer en som leverer fra seg fargerike skisser; en designer er like mye en utvikler som det jeg er i hverdagen. 
 
 ..Og når det kommer til en designers pult mangler bildene jeg fikk mange elementer, men jeg vil gi meg selv et halvt poeng for post-its og Macbooks.
+
+
+
+<br />
+
+
+
+_Takk til mine designkollegaer..._ 
+
+_Stine M. Hjetland for tegning i intro og deltakalse i eksperiment._\
+_Elin Orsen og Emil Säll Fuglerud for deltakelse i eksperiment._
