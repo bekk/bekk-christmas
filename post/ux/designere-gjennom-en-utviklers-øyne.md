@@ -6,7 +6,7 @@ title: Designere gjennom en utviklers øyne
 image: ''
 ingress: >-
   <img class="light-theme-image"
-  src="https://i.ibb.co/pw59r65/Henrik-Tekst2-lavprofil.png" />
+  src="https://i.ibb.co/DfqsmR3/inverted-henrik.png" />
 
   <img class="dark-theme-image"
   src="https://i.ibb.co/pw59r65/Henrik-Tekst2-lavprofil.png" />
