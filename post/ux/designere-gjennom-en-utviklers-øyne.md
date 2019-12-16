@@ -5,7 +5,11 @@ post_day: 17
 title: Designere gjennom en utviklers øyne
 image: ''
 ingress: >-
-  ![TenkendeTecher](https://i.ibb.co/pw59r65/Henrik-Tekst2-lavprofil.png)
+  <img class="light-theme-image"
+  src="https://i.ibb.co/pw59r65/Henrik-Tekst2-lavprofil.png" />
+
+  <img class="dark-theme-image"
+  src="https://i.ibb.co/pw59r65/Henrik-Tekst2-lavprofil.png" />
 
 
   Tegnetusjer i ørten pastellfarger. Fancy penner. iPhone. Post-its i diverse
