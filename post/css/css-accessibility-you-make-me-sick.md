@@ -48,7 +48,7 @@ A better solution is to let the animations and transitions finish in no time at 
 
 By utilising the above css rules, we just made something special into something boring, but our users never told us they didn’t want any movement at all, they just told us the preferred less movement. They simply might be using an old device with poor performance and battery life, or they might struggle from a [vestibular disorder](https://vestibular.org/understanding-vestibular-disorder/types-vestibular-disorders), epilepsy or migraine sensitivities. 
 
-If you have ever enabled this setting on one of your devices, animations are not removed, but they changes, because not all animations are problematic. You should really read [Designing Safer Web Animation For Motion Sensitivity](https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/) for details about problematic animations, but in short avoid:
+If you have ever enabled this setting on one of your devices, animations are not removed, but they change, because not all animations are problematic. You should really read [Designing Safer Web Animation For Motion Sensitivity](https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/) for details about problematic animations, but in short avoid:
 
 1. large areas of motion
 2. mismatching direction and speed (parallax effects and scrolljacking)
