@@ -54,6 +54,6 @@ Konklusjonen på visa er at mitt utgangspunkt for hva en designer er ikke stemme
 
 _Takk til mine designkollegaer..._ 
 
-_Stine M. Hjetland for tegning i intro og deltakalse i eksperiment_ 🙇‍♂️\
-_Elin Orsen og Emil Säll Fuglerud for deltakelse i eksperiment_ 🙇‍♂️\
-_Alle dere som sendte meg bilder av pulten deres_ 🙇‍♂️
+_Stine M. Hjetland for tegning i intro og deltakalse i eksperiment_ 👏\
+_Elin Orsen og Emil Säll Fuglerud for deltakelse i eksperiment_ 👏\
+_Alle dere som sendte meg bilder av pulten deres_ 👏
