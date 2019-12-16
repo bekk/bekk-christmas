@@ -13,7 +13,7 @@ ingress: >-
   [@MobileOslo](https://twitter.com/mobileoslo) meetups, and is a
   [@GoogleDevExpert](https://twitter.com/GoogleDevExpert).
 authors:
-  - Maxim Salnikov
+  - Henrik Walker Moe
 ---
 The questions below came from a simple question we asked ourselves: 
 
