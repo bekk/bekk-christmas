@@ -31,10 +31,7 @@ I min verden fantes det kun 1 type designere, og det var de som tegnet en skisse
 
 Tett relatert til dette med skisser så finnes det en myte om at alle designere kan tegne. Sjokket var stort da jeg spurte om ikke designeren vår kunne trylle frem noen ikoner til en ny del av applikasjonen og jeg fikk til svar at det ikke var hennes sterkeste side. For å bekrefte/avkrefte denne myten jeg har hatt så tenkte jeg at i forbindelse med denne artikkelen at vi skulle kjøre et praktisk eksperiment. Deltakerne skulle være de 3 designerne vi har på prosjektet jeg sitter på til daglig. Oppgaven bestod i å tegne et utvalg ting i løpet av 1 minutt. Jeg lar resultatet prate for seg selv:
 
-
-
-BILDER AV EKSPERIMENTET HER
-
+![Tegnekonkurranse](https://i.ibb.co/SxktgWw/Ikke-navngitt.png)
 
 
 Noe jeg tenkte en del over før var hvilket plan designere jobbet på. I mitt hode jobbet de på et abstrakt plan med fluffy idéer uten begrensningene fra virkeligheten. Vi utviklere er gode på å se hvilke begrensninger vi har i en verden bestående av 0ere og 1ere. Kall det gjerne en yrkesskade, for det henger tett sammen med hvor mange timer vi har brukt på å midtstille en knapp på en responsiv nettside. 
