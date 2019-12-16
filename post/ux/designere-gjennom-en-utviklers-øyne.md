@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 17
 title: Designere gjennom en utviklers øyne
-image: 'https://i.ibb.co/rm2sG8X/Henrik-Tekst.png'
+image: ''
 ingress: >-
   Tegnetusjer i ørten pastellfarger. Fancy penner. iPhone. Post-its i diverse
   størrelser; noen større enn en PC-skjermen, andre mindre enn et viskelær. En
@@ -11,6 +11,9 @@ ingress: >-
   Service Blueprint Flow”. Macbook med “Wine&Design”-sticker. Kaffekopp,
   chiapudding og mandelmelk fra Kaffebrenneriet. Slik ville jeg, en techer,
   beskrevet en designers pult på 30 sekund.
+
+
+  ![Tegnekonkurranse](https://i.ibb.co/rm2sG8X/Henrik-Tekst.png)
 description: ''
 authors:
   - Henrik Sivertsgård
