@@ -16,9 +16,9 @@ description: ''
 authors:
   - Henrik Sivertsgård
 ---
-Designere:
-
-> En designer er en person som gir meg tegninger i fine farger for hvordan en nettside eller app skal se ut. Elsker det abstrakte, lever i en drømmeverden uten konsept over hva som er teknisk gjennomførbart.
+> _En designer er en person som gir meg tegninger i fine farger for hvordan en nettside eller app skal se ut. Elsker det abstrakte, lever i en drømmeverden uten konsept over hva som er teknisk gjennomførbart._ 
+>
+> \- Henrik, jobbet som utvikler i 1 dag
 
 Nå har jeg jobbet som utvikler i 3,5 år i et ganske stort og tverrfaglig team. I løpet av denne tiden har jeg samarbeidet med både grafiske designere, interaksjonsdesignere og tjenestedesignere, alle med hver sine styrker og syn på hvordan det vi lager skal fungere. Er det en ting jeg har funnet ut, så er det at min overfladiske beskrivelse av en designer er et stykke unna sannheten.
 
@@ -34,8 +34,8 @@ Alle designerne jeg har møtt på i løpet av disse årene har hatt beina godt p
 
 I forbindelse med denne kalenderluken spurte jeg designerne i Bekk om de kunne sende meg et bilde av pulten de sitter ved til daglig. Visjonen min var at jeg kom til å treffe ganske heftig med beskrivelsen min i innledningen. Det jeg egentlig sitter igjen med er at jeg har bomma til de grader. Designeres pulter kan deles i 2 grupper; de med rot i systemet og de med system i rotet.
 
-Konklusjonen på visa er at mitt utgangspunkt for hva en designer er ikke stemmer helt med virkeligheten. I løpet av de siste årene i arbeid har jeg lært mye om en designers arbeidsmetoder, faglige styrker og hvordan jeg og designer kan jobbe sammen for å levere mest mulig verdi. Kort fortalt så er ikke en designer en som leverer fra seg fargerike skisser; en designer er like mye en utvikler som det jeg er i hverdagen. 
-
 ![Desktop-collage](https://i.ibb.co/zZ1QsTC/FotoJet.png)
+
+Konklusjonen på visa er at mitt utgangspunkt for hva en designer er ikke stemmer helt med virkeligheten. I løpet av de siste årene i arbeid har jeg lært mye om en designers arbeidsmetoder, faglige styrker og hvordan jeg og designer kan jobbe sammen for å levere mest mulig verdi. Kort fortalt så er ikke en designer en som leverer fra seg fargerike skisser; en designer er like mye en utvikler som det jeg er i hverdagen. 
 
 ..Og når det kommer til en designers pult mangler bildene jeg fikk mange elementer, men jeg vil gi meg selv et halvt poeng for post-its og Macbooks.
