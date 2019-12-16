@@ -13,6 +13,8 @@ links:
       https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/
   - title: Your Interactive Makes Me Sick
     url: 'https://source.opennews.org/articles/motion-sick/'
+  - title: More Resources for Accessible Animations
+    url: 'https://alistapart.com/blog/post/more-resources-for-accessible-animations/'
 authors:
   - Hans-Christian Fjeldberg-Gustavson
 ---
