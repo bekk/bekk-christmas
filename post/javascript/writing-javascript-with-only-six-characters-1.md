@@ -10,6 +10,8 @@ ingress: >-
   JavaScript code using only six different characters. But how does that
   actually work?
 description: javascript
+authors:
+  - Erik Wendel
 ---
 
 You can write basically any JavaScript program on the planet using just these characters:
