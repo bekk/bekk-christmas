@@ -1,7 +1,7 @@
 ---
 calendar: javascript
 post_year: 2019
-post_day: 19
+post_day: 22
 title: Cellular Automata in the Browser
 image: 'https://ibb.co/hXJbWZr'
 ingress: |+
