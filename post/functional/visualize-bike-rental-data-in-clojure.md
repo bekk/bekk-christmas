@@ -9,6 +9,8 @@ links:
     url: 'http://quil.info/'
   - title: Awesome creative coding (lots of inspiration)
     url: 'https://github.com/terkelg/awesome-creative-coding'
+  - title: Github repository
+    url: 'https://github.com/FredrikMeyer/visualize-bicycle-data'
 authors:
   - Fredrik Meyer
 ---
@@ -196,3 +198,5 @@ Notice how now each line has a different stroke depending on the duration.
 Running, you should see something like this:
 
 ![Fargebilde](https://user-images.githubusercontent.com/1738405/70390294-1c78fa00-19ca-11ea-9e7a-5c77d893bb1b.png)
+
+If you don't want to type all the code yourself, you can check out this Github repository, where I've uploaded the code. Clone it, and run `lein run`!
