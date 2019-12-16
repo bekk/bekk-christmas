@@ -9,6 +9,8 @@ ingress: >-
   developer and creator of [overmindjs.org](https://overmindjs.org/) and
   [cerebraljs.com](https://cerebraljs.com/), and works at
   [@codesandbox](https://twitter.com/codesandbox).
+authors:
+  - Henrik Walker Moe
 ---
 The questions below came from a simple question we asked ourselves: 
 
