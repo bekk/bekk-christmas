@@ -21,8 +21,8 @@ authors:
 In modern operating systems, users can specify that they prefer less animations than normal. In [iOS](http://osxdaily.com/2019/10/18/how-reduce-motion-iphone-ipad/) and [macOS](http://osxdaily.com/2018/12/17/how-reduce-motion-mac-disable-animations/), this is called Reduce Motion. On [Windows](https://support.microsoft.com/en-gb/help/27930/windows-10-make-it-easier-to-focus-on-tasks) you can disable “Show animation in Windows”, and on [Android](https://mcmw.abilitynet.org.uk/how-disable-interface-animations-android-pie) you can “Remove animations”. With this setting in place, modern web browsers supports the experimental media query [`prefers-reduced-motion`](https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion). With this knowledge in hand, we can now remove animations for our users who’d rather not see them:
 
 ```
-@media (prefers-reduced-motion: reduce) { 
-      * {
+@media (prefers-reduced-motion:reduce) {
+    * {
         animation: none !important;
         transition: none !important;
     }
@@ -34,13 +34,13 @@ Great, this kind of work, if your animations and transitions start and stop at t
 A better solution is to let the animations and transitions finish in no time at all, making sure they at least stop in their final state, hoping the final state is inside the viewport:
 
 ```
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *:: before,
-  *:: after {
-    animation-duration: 0s !important;
-    transition-duration: 0s !important;
-  }
+@media (prefers-reduced-motion:reduce) {
+    *, 
+    *::before, 
+    *::after {
+        animation-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
 }
 ```
 
@@ -53,3 +53,21 @@ If you have ever enabled this setting on one of your devices, animations are not
 1. large areas of motion
 2. mismatching direction and speed (parallax effects and scrolljacking)
 3. large perceived distance (like the animation on our site…)
+
+In many cases, fading content into view using transitions is a good replacement for moving content, and is for instance widely used in iOS when reduce motion is active:
+
+```
+.hidden {
+    transform: translateX(-100%);
+    transition: transform 500ms;
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .hidden {
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+}
+``` 
+
+Thats all for today, I love animations, and hope too see more of this in the future, just be mindful of those who really can’t handle our crazy inventions :)
