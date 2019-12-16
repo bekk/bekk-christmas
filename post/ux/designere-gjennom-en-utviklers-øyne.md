@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 17
 title: Designere gjennom en utviklers øyne
-image: >-
-  https://images.unsplash.com/photo-1575296505699-7648cf327b3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80
+image: 'https://i.ibb.co/rm2sG8X/Henrik-Tekst.png'
 ingress: >-
   Tegnetusjer i ørten pastellfarger. Fancy penner. iPhone. Post-its i diverse
   størrelser; noen større enn en PC-skjermen, andre mindre enn et viskelær. En
