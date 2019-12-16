@@ -20,9 +20,7 @@ You can write basically any JavaScript program on the planet using just these ch
 []()!+
 ```
 
-You've probably seen this trick (ab-)used before.
-
-Today, we're gonna look at how it works under the hood. Let's create the string `"self"` using only our funny little subset of characters.
+This is a well-known trick, but not that many developers know how it actually works. Today, we're gonna look at how it works under the hood. Let's create the string `"self"` using only our funny little subset of characters.
 
 Our target string will be `"self"`, as an homage to the programming language Self for being one of the inspirations for JavaScript.
 
