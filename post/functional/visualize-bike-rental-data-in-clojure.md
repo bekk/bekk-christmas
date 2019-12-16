@@ -30,7 +30,7 @@ First of all, we need some data to work with. We'll use open data provided by [O
 
 We'll use [Quil](https://github.com/quil/quil) to visualize the data. It is a wrapper of [Processing](https://processing.org/) written for Clojure. To use Quil, we must add it as a dependency in our project. We will also need to process some JSON, so we'll add a dependency to the `org.clojure/data.json` library. To do that, update the `project.clj` file to look like this:
 
-```clj
+```clojure
 (defproject bysykler "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -46,14 +46,14 @@ We'll use [Quil](https://github.com/quil/quil) to visualize the data. It is a wr
 
 To download the dependencies, run `lein deps` in your terminal. To be able to use the dependencies, we must import them. Update the namespace declaration:
 
-```clj
+```clojure
 (ns bysykler.core
   (:require [quil.core :as q]
             [clojure.data.json :as json]))
 ```
 
 Let us take a look at the data: first of all we'll take a look at how the data looks. Using for example `jq`:
-```zsh
+```bash
 [~/code/bysykler]$ jq '.[0]' bysykler.json
 {
   "started_at": "2019-06-01 00:26:52.688000+00:00",
@@ -76,7 +76,7 @@ For this visualization, we're only interested in the start- and end-points and t
 
 We'll write a small Clojure function that takes a Clojure map and returns only the interesting keys (to avoid clutter when debugging, for example):
 
-```clj
+```clojure
 (defn keep-interesting [b]
   (select-keys b
                [:start_station_latitude
@@ -87,7 +87,7 @@ We'll write a small Clojure function that takes a Clojure map and returns only t
 ```
 
 Now we can read the data into a Clojure variable:
-```clj
+```clojure
 (def bysykler
   (let [parsed (-> "city-bikes.json"
                    slurp
@@ -99,7 +99,7 @@ Notice how we chain the computation: we start with an input, the name of the fil
 
 To test how this works, try adding the following in your `core.clj` function:
 
-```clj
+```clojure
 (println (first bysykler))
 ```
 
@@ -109,7 +109,7 @@ After running `lein deps && lein run`, you should see the data of the first bicy
 
 Now to the fun part! First we must setup Quil. Quil need a `setup` function, and a `draw` function. Add the following functions to `core.clj`:
 
-```clj
+```clojure
 (defn setup []
   (q/color-mode :hsb 100 100 100)
   (q/background 0.)
@@ -119,7 +119,7 @@ Now to the fun part! First we must setup Quil. Quil need a `setup` function, and
 
 and
 
-```clj
+```clojure
 (q/defsketch quil-drawings
   :title "Bysykler"
   :size [1000 1000]
@@ -130,7 +130,7 @@ and
 
 and
 
-```clj
+```clojure
 (defn draw []
   (q/ellipse 500 500 300 300)
   (q/no-loop))
@@ -140,7 +140,7 @@ Save, and run `lein run`. If everything works, you should see a big circle in th
 
 But we really want to plot bike rental data. We'll keep it simple and draw lines from the start position of the trip to the end position. We are given latitude and longitude, but want to draw them on a screen. A really simple way to do this, is to think of latitude and longitude as x- and y-coordinates. This works for small maps, because the Earth is approximately flat:
 
-```clj
+```clojure
 (def max-start-lat (apply max (map :start_station_latitude bysykler)))
 (def max-start-lon (apply max (map :start_station_longitude bysykler)))
 (def min-start-lat (apply min (map :start_station_latitude bysykler)))
@@ -155,7 +155,7 @@ But we really want to plot bike rental data. We'll keep it simple and draw lines
 
 The above code snippet first finds the maximum and minimum latitudes and longitudes of all the trips, and then we normalize it to lie inside the canvas. We now have all we need top draw the trips. Update your draw function as so:
 
-```clj
+```clojure
 (defn draw []
   (doseq [b bysykler]
     (let [[x y] (lat-long-to-xy (:start_station_latitude b) (:start_station_longitude b))
@@ -171,7 +171,7 @@ If you now run `lein run`, and everything is correct, you'll see a nice black an
 
 Finally, we'll add some color. We'll color the trips based on its duration. The following code maps all the durations and maps them to the interval 0-10.
 
-```clj
+```clojure
 (def min-dur (apply min (map :duration bysykler)))
 (def max-dur (apply max (map :duration bysykler)))
 (defn normalize-duration [dur]
@@ -180,7 +180,7 @@ Finally, we'll add some color. We'll color the trips based on its duration. The 
 
 Update your drawing function:
 
-```clj
+```clojure
 (defn draw []
   (println (first bysykler))
   (doseq [b bysykler]
