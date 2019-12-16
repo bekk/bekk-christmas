@@ -7,7 +7,8 @@ ingress: >-
   Today's interview is with the winner of [Women In Open Source Award 2019 by
   Red Hat](https://www.redhat.com/en/about/women-in-open-source#):
   [@salonigarg_](https://twitter.com/salonigarg_)! Saloni is also a Computer
-  Science undergrad, a Mozilla Open Leader and a Google Venkat Scholar.
+  Science undergrad, a Mozilla Open Leader and a Google Venkat Scholar. We're
+  both honored and excited to talk with Saloni about Open source!
 ---
 The questions below came from a simple question we asked ourselves: 
 
