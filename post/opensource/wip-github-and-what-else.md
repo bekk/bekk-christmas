@@ -6,6 +6,7 @@ title: 'WIP: GitHub, and what else?'
 ingress: "So we've all mostly heard about Github, right? But did you know there are other thriving Open Source hosting platforms out there?\r"
 authors:
   - Henrik Walker Moe
+  - Hanne Olsen
 ---
 ## Brief history of GitHub
 
