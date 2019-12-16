@@ -18,10 +18,13 @@ description: ''
 authors:
   - Henrik Sivertsgård
 ---
+<br />
+
 > _En designer er en person som gir meg tegninger i fine farger for hvordan en nettside eller app skal se ut. Elsker det abstrakte, lever i en drømmeverden uten konsept over hva som er teknisk gjennomførbart._ 
 >
 > \- Henrik, jobbet som utvikler i 1 dag
 
+<br />
 Nå har jeg jobbet som utvikler i 3,5 år i et ganske stort og tverrfaglig team. I løpet av denne tiden har jeg samarbeidet med både grafiske designere, interaksjonsdesignere og tjenestedesignere, alle med hver sine styrker og syn på hvordan det vi lager skal fungere. Er det en ting jeg har funnet ut, så er det at min overfladiske beskrivelse av en designer er et stykke unna sannheten.
 
 I min verden fantes det kun 1 type designere, og det var de som tegnet en skisse over noe som jeg i ettertid skulle programmere. Realiteten er at en slik skisse er et mulig resultat etter grundig innsiktsarbeid. Mesteparten av det jeg har programmert har ikke blitt bygget ut i fra en skisse, men heller en kontinuerlig dialog med designerne om brukerens behov og hva som er teknisk gjennomførbart.
