@@ -5,14 +5,14 @@ post_day: 17
 title: Designere gjennom en utviklers øyne
 image: ''
 ingress: >-
-  ![Tegnekonkurranse](https://i.ibb.co/Kzg2D3r/tech4life-spaces.png)
+  ![TenkendeTecher](https://i.ibb.co/Kzg2D3r/tech4life-spaces.png)
 
 
   Tegnetusjer i ørten pastellfarger. Fancy penner. iPhone. Post-its i diverse
   størrelser; noen større enn en PC-skjermen, andre mindre enn et viskelær. En
   bok om “Real life Continuous Digital Design Thinking In Agile Organisations
   Service Blueprint Flow”. Macbook med “Wine&Design”-sticker. Kaffekopp,
-  chiapudding og mandelmelk fra Kaffebrenneriet. Slik ville jeg, en techer,
+  chiapudding og mandelmelk fra Kaffebrenneriet. Slik ville jeg, en utvikler,
   beskrevet en designers pult på 30 sekund.
 description: ''
 authors:
@@ -31,7 +31,7 @@ I min verden fantes det kun 1 type designere, og det var de som tegnet en skisse
 
 Tett relatert til dette med skisser så finnes det en myte om at alle designere kan tegne. Sjokket var stort da jeg spurte om ikke designeren vår kunne trylle frem noen ikoner til en ny del av applikasjonen og jeg fikk til svar at det ikke var hennes sterkeste side. For å bekrefte/avkrefte denne myten jeg har hatt så tenkte jeg at i forbindelse med denne artikkelen at vi skulle kjøre et praktisk eksperiment. Deltakerne skulle være de 3 designerne vi har på prosjektet jeg sitter på til daglig. Oppgaven bestod i å tegne et utvalg ting i løpet av 1 minutt. Resultatet er åpent for tolkning:
 
-![Tegnekonkurranse](https://i.ibb.co/SxktgWw/Ikke-navngitt.png)
+![Tegnekonkurranse](https://i.ibb.co/xMPWCgZ/Collection.png)
 
 Noe jeg tenkte en del over før var hvilket plan designere jobbet på. I mitt hode jobbet de på et abstrakt plan med fluffy idéer uten begrensningene fra virkeligheten. Vi utviklere er gode på å se hvilke begrensninger vi har i en verden bestående av 0ere og 1ere. Kall det gjerne en yrkesskade, for det henger tett sammen med hvor mange timer vi har brukt på å midtstille en knapp på en responsiv nettside. 
 
