@@ -11,6 +11,8 @@ description: >-
   With the new release cadence of Java and vendor landscape, managing multiple
   versions of Java can become a tedious task. However, tooling exists to make
   your life simpler.
+authors:
+  - Even Holthe
 ---
 # Managing multiple installations of Java on a Mac
 The last few years we’ve seen an increase in various Java distributions. Now there is OpenJDK in multiple flavors (Oracle, AdoptOpenJDK, Amazon Corretto), Eclipse OpenJ9 and Azul Zing. With this increased interest in the Java ecosystem there is suddenly multiple Java distributions and versions to test your applications against. Running applications in [containers](https://java.christmas/2019/3) is one approach, but for local development one should consider jEnv.
