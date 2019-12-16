@@ -7,6 +7,8 @@ ingress: >-
   Today's interview is with [@olivtassinari](https://twitter.com/olivtassinari).
   Olivier is a developer and the co-creator of the UI component library for
   React: [Material-UI](https://material-ui.com/).
+authors:
+  - Henrik Walker Moe
 ---
 The questions below came from a simple question we asked ourselves: 
 
