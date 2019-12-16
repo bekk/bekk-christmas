@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 17
 title: Designere gjennom en utviklers øyne
-image: ''
+image: 'https://i.ibb.co/y401NfK/tech4life-Wide.png'
 ingress: >-
   Tegnetusjer i ørten pastellfarger. Fancy penner. iPhone. Post-its i diverse
   størrelser; noen større enn en PC-skjermen, andre mindre enn et viskelær. En
