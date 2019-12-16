@@ -14,7 +14,7 @@ authors:
 ---
 The questions below came from a simple question we asked ourselves: 
 
-> if you had the chance, what would you ask an Open source maintainer/person/community member.
+> if you had the chance, what would you ask an Open source maintainer/person/community member?
 
 Here we go!
 
