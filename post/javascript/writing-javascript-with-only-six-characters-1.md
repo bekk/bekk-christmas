@@ -13,7 +13,6 @@ description: javascript
 authors:
   - Erik Wendel
 ---
-
 You can write basically any JavaScript program on the planet using just these characters:
 
 ```js
@@ -24,12 +23,11 @@ This is a well-known trick, but not that many developers know how it actually wo
 
 Our target string will be `"self"`, as an homage to the programming language Self for being one of the inspirations for JavaScript.
 
-## How it works: the basics
+## How It Works: The Basics
 
 What allows us to make all other characters superfluous is the fact that we can abuse JavaScript's type system and bizarre type conversion mechanisms.
 
 We'll be using our six superhero characters this way: with `[]` we can create arrays, with the negation and addition operators `!` and `+` we can do operations on them and finally use `()` to group operations.
-
 
 Let's start off with a simple array:
 
@@ -69,7 +67,6 @@ Aha! Now we're conjured a string containing the characters we need to produce ou
 
 If we could produce some numbers, we could extract the characters we need in the right sequence:
 
-
 ```js
 "false"[3] === "s"
 
@@ -78,7 +75,7 @@ If we could produce some numbers, we could extract the characters we need in the
 
 Let's go looking for numbers!
 
-### Creating numbers
+# Creating Numbers
 
 In the previous section, we _coerced_ an array to a boolean.
 What happens if we coerce it to a number using `+`?
@@ -110,6 +107,7 @@ The empty string is a falsy value, like `null`, `undefined` and the number zero,
 +NaN === 0
 +"" === 0
 ```
+
 So converting an array to a number takes a detour converting to string first, finally producing zero:
 
 ```js
@@ -118,7 +116,6 @@ So converting an array to a number takes a detour converting to string first, fi
 
 Aha! We've managed to produce a number! Although, not a very useful one.
 However, we can keep playing the coercion game:
-
 
 ```js
 !0 === !false
@@ -147,14 +144,13 @@ Using the substitutions we've learned to create numbers:
 4 === +!+[] +!+[] +!+[] +!+[]
 ```
 
-## Putting it all together
+## Putting It All Together
 
 Let's put together all the things we've learned.
 
 * Arrays are truthful values, so negating them will produce false: `![] // false`
 * JavaScript coercing rules state that adding arrays together will toString them: `[] + [] // ""`
 * Converting an array to a number becomes zero, when negated becomes true, when coerced to number becomes 1: `+(!(+[])) === 1`
-
 
 ```js
 ![] + [] === "false"
@@ -170,13 +166,11 @@ Let's put together all the things we've learned.
 
 Our final expression thus becomes:
 
-
 ```js
 (![] + [])[+!+[]+!+[]+!+[]] + 
 (![] + [])[+!+[]+!+[]+!+[]+!+[]] + 
 (![] + [])[+!+[]+!+[]] +
 (![] + [])[+[]]
-
 ```
 
 Adapting our expression to this specific JavaScript dialect, where newlines and whitespaces are, of course, banned:
@@ -188,18 +182,3 @@ Adapting our expression to this specific JavaScript dialect, where newlines and 
 Easy as pie!
 
 Thank you, Brendan Eich ❤️
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
