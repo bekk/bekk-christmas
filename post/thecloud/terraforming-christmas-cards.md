@@ -44,8 +44,7 @@ Merry Christmas and a Happy New Year!
 ```
 
 The Brits are a bit peculiar about [how they address mail](https://www.postoffice.co.uk/mail/how-to-address-mail) 
-compared to the rest of us, and I therefore had to add an [*if directive*](https://www.terraform.io/docs/configuration/expressions.html#string-templates)  
-in the template.
+compared to the rest of us, and I therefore had to add an [if directive](https://www.terraform.io/docs/configuration/expressions.html#string-templates) in the template.
 
 In order to actually generate some Christmas cards, I decided to write all the cards to disk using
 the [local_file](https://www.terraform.io/docs/providers/local/r/file.html) resource in Terraform in combination
