@@ -2,7 +2,9 @@
 calendar: security
 post_year: 2019
 post_day: 18
-title: 'Tor, the gateway to the darknet?'
+title: 'Tor, the onion router'
+image: >-
+  https://blog.torproject.org/sites/default/files/styles/full_width/public/image/tor-logo-blog_8.png?itok=bjhBDNPc
 ingress: >-
   Does the US government sponsor the development of the darknet? What is The
   Onion Router project and why should you be anonymous on the internet?
