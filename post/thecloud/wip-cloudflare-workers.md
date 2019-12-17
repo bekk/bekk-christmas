@@ -72,7 +72,7 @@ $ wrangler publish
 
 ## Use cases
 
-The example above is of course a simple hello world example, and you might think what can Cloudflare Workers actually be used for? If you already uses Cloudflare as a CDN, workers could be a good way for redirecting or rewriting the response based on the incoming request. [This example](https://developers.cloudflare.com/workers/templates/pages/conditional_response/) show for instance how a worker could be used to return a response based on the incoming request’s URL, HTTP method, User Agent, and other criteria.
+The example above is of course a simple hello world example, and you might think what can Cloudflare Workers actually be used for? If you already uses Cloudflare as a CDN, workers could be a good way for redirecting or rewriting the response based on the incoming request. [This example](https://developers.cloudflare.com/workers/templates/pages/conditional_response/) show for instance how a worker could be used to return a response based on the incoming request’s URL, HTTP method, User Agent and other criteria.
 
 But workers could also be used for more standalone functionality, like [hosting a React App](https://developers.cloudflare.com/workers/tutorials/deploy-a-react-app/) or building a [function that generates QR codes](https://developers.cloudflare.com/workers/tutorials/build-a-serverless-function/).
 
