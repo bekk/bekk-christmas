@@ -100,7 +100,7 @@ If we want to access the value we expect after a successful request through the 
 ```
 case remoteDataValue of
     Success value ->
-        transformFunction value
+        Success (transformFunction value)
 
     Loading ->
         Loading
