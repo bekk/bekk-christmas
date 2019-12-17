@@ -13,6 +13,8 @@ links:
   - title: 'Functors, Applicatives, And Monads In Pictures'
     url: >-
       http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+  - title: 'LambaCast Episode 16: Functors'
+    url: 'https://soundcloud.com/lambda-cast/16-functors'
 authors:
   - Harald Ringvold
 ---
