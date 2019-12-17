@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 22
 title: Cellular Automata in the Browser
-image: 'https://i.ibb.co/LQXmtJB/sketch-92-49-199.jpg'
+image: 'https://i.ibb.co/WFPvPYf/sketch-92-49-199-bc.jpg'
 ingress: |+
 
 authors:
