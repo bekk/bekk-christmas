@@ -12,6 +12,12 @@ ingress: >-
 description: >-
   There are a lot of ways to screw up CSS. Let's look at a few of the ways I
   have made CSS not work.
+links:
+  - title: Other gotchas
+    url: >-
+      https://medium.com/@sargalias/the-top-5-css-gotchas-and-a-few-bonus-d39755c79527
+  - title: The language has its own screw-ups too!
+    url: 'https://dev.to/3zsforinsomnia/mistakes-in-css-5f3j'
 authors:
   - Kristofer Giltvedt Selbekk
 ---
