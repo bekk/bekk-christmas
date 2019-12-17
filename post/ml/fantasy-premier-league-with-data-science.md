@@ -20,12 +20,13 @@ The process for all models is built on three steps. First, the models are traine
 
 The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player are:
 
-* Position
-* Team
-* Opponent team
-* Home/away game
-* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567))
-* Minutes played the last 5 games
+* Position (4 variables)
+* Team (20 variables)
+* Opponent team (20 variables)
+* Home/away game (1 variable)
+* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (5 variables)
+
+This results in 50 input variables in total, with points scored in the testing round as the dependent variable.
 
 ### 2. Predicting points
 
@@ -41,6 +42,6 @@ Lorem ipsum
 
 ### Next steps
 
-<sup>1</supt>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
+<sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 <sup>2</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
 <sup>3</sup>Subtitutes are accounted for in the available budget, but are not subbed in should any of the players in the first XI not play.
