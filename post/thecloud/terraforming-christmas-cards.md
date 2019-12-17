@@ -3,6 +3,8 @@ calendar: thecloud
 post_year: 2019
 post_day: 20
 title: Terraforming Christmas Cards
+image: >-
+  https://images.unsplash.com/photo-1512440929676-9dfaadc6891c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80
 ingress: >-
   So like every year, Christmas is approaching too fast, and like every year I’m
   late at writing Christmas cards! Like all other complex problems in life, also
