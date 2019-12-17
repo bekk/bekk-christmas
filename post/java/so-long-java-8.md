@@ -85,3 +85,5 @@ In the [JEP](http://openjdk.java.net/jeps/320#CORBA-and-JTA-modules) it is state
     <version>1.3.5</version>
 </dependency>
 ```
+
+💡 The version numbers above are the newest versions as of December 21st 2019. Make sure to verify you're using the newest version, and keep them them updated, by using e.g. [maven-dependency-plugin](https://java.christmas/2019/8).
