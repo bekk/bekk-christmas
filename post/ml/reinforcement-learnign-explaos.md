@@ -29,6 +29,8 @@ The following years, DeepMind went ahead and beat increasingly complex games, ut
 
 While machines have been better than every living human at chess for about 20 years, they have struggled to beat humans at its Asian cousin Go. The amount of possible moves at each step is so high that it’s unfeasible for computers to play it in the same brute-forceish way that made them succeed at chess. To beat Go, you needed something more intuitive, something more human. This lead DeepMind to develop AlphaGo, the first computer to surpass humans in the ancient board game.
 
+![AlphaGo](https://i.ibb.co/TvDNfyd/Screen-Shot-2019-12-17-at-16-16-20.png)
+
 Instead of looking at all the possible moves, AlphaGo uses a Monte Carlo tree search to suggest moves based on knowledge it has previously learnt by its neural network. This makes it _think_ in a way that might make it resemble humans more than computers.
 
 Remember: DeepMind's ultimate goal is to _solve_ general intelligence. While AlphaGo trained and improved on its own, it also needed human games, so the natural next step was to create a version that could learn _only_ by itself. Humans are after all fallible. In 2017, they created _AlphaGo Zero_ and _Alpha Zero_, programs that were capable of learning only by playing itself. AlphaZero also learnt to play Chess and Shogi better than all previous players, both humans and machines. With its ability to learn to play any two-player perfect information games, it had broken another milestone in the quest for general intelligence.
