@@ -58,11 +58,112 @@ Hvorfor er har det noe med skolen å gjøre?\
 Hvorfor blir man mindre nysgjerrig av at ting er magisk?\
 Hvorfor må man begrense nysgjerrigheten for å fokusere? – Er ikke nysgjerrighet nettopp å fokusere?
 
+__
+
+_J_
+
+_e_
+
+_g_\
+ \
+ \
+_s_
+
+_k_
+
+_a_
+
+_l_\
+ \
+ \
+_i_
+
+_k_
+
+_k_
+
+_e_\
+ \
+ \
+_s_
+
+_v_
+
+_a_
+
+_r_
+
+_e_\
+ \
+ \
+_p_
+
+_å_\
+ \
+ \
+_n_
+
+_o_
+
+_e_\
+ \
+ \
+_a_
+
+_v_\
+ \
+ \
+_d_
+
+_e_
+
+_t_
+
+_t_
+
+_e_\
+ \
+ \
+_n_
+
+_å_
+
+_._\
+ \
+ \
+_D_
+
+_u_\
+ \
+ \
+_s_
+
+_k_
+
+_a_
+
+_l_
+
+_._
+
+__
+
 Ok.
 
 Nå er det på tide at jeg forteller hvorfor jeg skriver dette.
 
 Jeg skriver denne teksten fordi jeg vil at hverdagen min, arbeidsplassen min og fritiden min, skal være et sted hvor jeg kan utforske og være nysgjerrig. Og jeg vil ikke bare være nysgjerrig alene i min egen lille hule. Jeg vil dele hverdagen min med andre nysgjerrige sjeler. Andre som kan reflektere og utstråle mer nysgjerrighet tilbake til meg. At vi sammen skal finne spennende eksperimenter og områder vi vil utforske. Det er jo sånn man finner ut av nye ting!
+
+
+
+Jeg vil at vi virkelig skal lure på noe. At vi skal ha lyst til å vite svaret. At vi lurer så mye på svaret, at vi bare må finne ut hva det er. Men at når vi får vite svaret, så er vi fremdeles urolige. Utålmodige. Nysgjerrige. Det stopper ikke der. Ok, det er greit at vi fant et svar – men hvorfor er dette svaret? Hvorfor er ikke svaret noe annet? \
+Vi vil vite hvorfor!\
+Vi er nysgjerrige.\
+Vi er utforskende.
+
+Det er hit jeg vil. Det er derfor jeg skriver dette 
+
+
 
 For å forklare hva jeg prøver på her, har jeg funnet frem et sitat*. Sitatet sier noe om at man ikke skal fortelle folk hvordan de skal gjøre noe, men heller lære dem hvorfor du er vil at de skal gjøre det. Og dette føler jeg at klør litt på myggestikket nysgjerrighet. Nettopp hvorfor gjør vi dette? Nok forklaring, her kommer sitatet: 
 
