@@ -9,11 +9,9 @@ ingress: |+
 authors:
   - Kjetil Golid
 ---
-A cellular automaton is a system consisting of cells of numerical values on a grid, together with a rule that decides the behaviour of these cells. Applying this rule repeatedly on each cell on the grid, while visualising the grid in some way or another, often gives the effect of some evolving organism with complex and intricate behaviour, even with relatively simple rules.
+A cellular automaton is a system consisting of cells of numerical values on a grid, together with a rule that decides the behaviour of these cells. By applying this rule repeatedly on each cell in the grid while visualising the grid in some way or another, one often gets the effect of some evolving organism with complex and intricate behavior, even from relatively simple rules.
 
-Cellular automata comes in many shapes, forms and dimensions. Perhaps the most famous cellular automaton is called _Game of Life_ (GOL). It consists of a two-dimensional grid where each cell contain a boolean value (dead or alive). The accompanying rule decides whether or not a cell should be dead or alive based on that cell's neighbouring cells. It states that a live cell dies of loneliness if there are less than 2 live cells around it. Similarly, it dies of overcrowding if more than three neighbouring cells are alive. In other words, a cell will only "survive" by having exactly 2 or 3 neighbouring cells that are alive. For a _dead_ cell to become alive, it needs to have exactly 3 live neighbouring cells, otherwise it stays dead. 
-
-An example of the GoL automaton can be seen below, iterating rapidly through several states.
+Cellular automata comes in many shapes, forms and dimensions. Perhaps the most famous cellular automaton is called _Game of Life_ (GOL). It consists of a two-dimensional grid where each cell contain a boolean value (dead or alive). The accompanying rule decides whether or not a cell should be dead or alive based on that cell's neighbouring cells. It states that a live cell dies of loneliness if there are less than 2 live cells around it. Similarly, it dies of overcrowding if more than three neighbouring cells are alive. In other words, a cell will only "survive" by having exactly 2 or 3 neighbouring cells that are alive. For a _dead_ cell to become alive, it needs to have exactly 3 live neighbouring cells, otherwise it stays dead. An example of the GoL automaton can be seen below, iterating rapidly through several states.
 
 ![Game of Life](https://i.imgur.com/ZRY1IlT.gif)
 
@@ -52,7 +50,7 @@ const combine = (b1, b2, b3) => (b1 << 2) + (b2 << 1) + b3;
 
 By left-shifting the arguments to their appropriate positions, then adding the three shifted numbers, we get the combination we were looking for.
 
-The second important part of the `get_rule` function is to figure out what bit value is located at a certain position in a number. Let us therefore build the function `get_bit(num, pos)` that can return the bit value at a given position `pos` in a given number `num`. For instance, the number 141 is 10001101 in binary, so `get_bit(2, 141)` should return `1`, while `get_bit(5, 141)` should return `0` .
+The second important part of the `get_rule` function is to figure out what bit value is located at a certain position in a number. Let's therefore build the function `get_bit(num, pos)` that can return the bit value at a given position `pos` in a given number `num`. For instance, the number 141 is 10001101 in binary, so `get_bit(2, 141)` should return `1`, while `get_bit(5, 141)` should return `0` .
 
 `get_bit(num,pos)` can be implemented by first bitshifting our number `pos` positions to the right and then do a bitwise AND with the number 1.
 
@@ -66,4 +64,59 @@ Now it just a matter of putting these two functions together:
 const get_rule = num => (b1, b2, b3) => get_bit(num, combine(b1, b2, b3));
 ```
 
-Cool! We now have a function that for each number between 0 and 256 gives us a unique ECA rule that we can do whatever we want with.
+Cool! We now have a function that for each number between 0 and 256 gives us a unique ECA rule that we can do whatever we want with. The next step is to visualise them in the browser.
+
+## Visualising rules
+
+We will use a canvas element to visualise our automata in the browser. A canvas element can be created and added to the body of your html in the following way:
+
+```javascript
+window.onload = function() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 800;
+  canvas.height = 800;
+
+  document.body.appendChild(canvas);
+};
+```
+
+In order to interact with our canvas, we need a _context_. A context is what lets us draw shapes and lines, colorize things, and move around in our canvas. It is provided for us through the [`getContext`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) method on our canvas.
+
+```javascript
+const context = canvas.getContext('2d');
+```
+
+The parametre `'2d'` refers to the context type we will be using in this example.
+
+Next, let's make a function that, given a context and an ECA rule, draws the rule onto our canvas. The idea is to generate and draw the grid row by row; the pseudo code being something like this:
+
+```javascript
+draw_rule(context, rule) {
+  current_row = initial_row()
+  for(30 times) {
+    draw_row(context, current_row)
+    current_row = next_row(current_row, rule)
+  }
+}
+```
+
+We start of with some initial collection of cells as our current row. This row, like in the examples above, usually contains all 0s except for a 1 in the middle cell, but it can also contain a completely random string on 1s and 0s. We draw this row of cells, then calculate the next row of values based on our current row, using our rule. Then we simply repeat drawing and calculating new steps until we feel that our grid is tall enough.
+
+This pseudo code requires us to implement 3 functions: `initial_row`, `draw_row` and `next_row`.
+
+`initial_row` a simple function. Return an array of 0s where the middle element is a 1.
+
+```javascript
+function initial_row() {
+  const initial_row = Array(grid_dim).fill(0);
+  initial_row[Math.floor(grid_dim / 2)] = 1;
+
+  return initial_row;
+}
+```
+
+With our rule function readily available, the `next_row` function can be written as a oneliner. Each cell value in the new row is the product of our rule with the nearby cell values in the old row as input.
+
+```javascript
+const next_row = (row, rule) => row.map((_, i) => rule(row[i - 1], row[i], row[i + 1]));
+```
