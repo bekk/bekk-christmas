@@ -114,7 +114,7 @@ This gets tiresome very quickly! Functor to the rescue! 🎉
 
 `RemoteData.map` makes it easy for us to transform this value without a case statement where we need to handle every possible state of the type.
 
-This is the same as the code above:
+This has the same functionality as the code above:
 
 ```
 RemoteData.map transformFunction remoteDataValue
