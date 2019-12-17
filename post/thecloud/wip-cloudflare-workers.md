@@ -54,7 +54,7 @@ async function handleRequest(request) {
 }
 ```
 
-A Cloudflare Worker function consists of two main parts. The first part is an event listener which listens to a so called [FetchEvent](https://developers.cloudflare.com/workers/reference/apis/fetch-event/). This event handler will be called everytime there comes a new HTTP request to your worker.
+A Cloudflare Worker consists of two main parts. The first part is an event listener which listens to a so called [FetchEvent](https://developers.cloudflare.com/workers/reference/apis/fetch-event/). This event handler will be called everytime there comes a new HTTP request to your worker.
 
 The last part is an event handler that returns a [Response](https://developers.cloudflare.com/workers/reference/apis/response/) object, and is passed as an argument to the event's `respondWith` method. In this example all clients will get a `Hello Christmas!` text in response.
 
