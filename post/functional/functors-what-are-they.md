@@ -42,7 +42,7 @@ Map takes one parameter which is a one-parameter function. When sent (or applied
 
 Note that when mapping arrays we always get back an array. The values in it can be transformed into strings, ints, objects or arrays (or any valid JS type) but they will always be inside an Array.
 
-## The Maybe type
+## The Maybe functor
 
 In the statically typed functional language Elm these functional concepts are used all the time but without actually talking about the technical names. Lets look at one of the most used besides lists/arrays: Maybe.
 
