@@ -170,7 +170,7 @@ For å forklare hva jeg prøver på her, har jeg funnet frem et sitat*. Sitatet 
 >
 > Antoine de Saint-Exupéry (paraphrased)
 
-Hvis du føler deg nysgjerrig, skriv gjerne tilbake til meg ved å klikke på navnet mitt øverst på denne siden – eller utforsk noe du er nysgjerrig på. Nedenfor har jeg noen forslag til ting du kan utforske, men kom gjerne med innspill på hva _du_ skulle hatt på lista også.
+Hvis du føler deg nysgjerrig, skriv gjerne tilbake til meg ved å klikke på navnet mitt øverst på denne siden – eller utforsk noe du er nysgjerrig på. Nederst på siden under overskriften "Read more outside the calendar" har jeg noen forslag til ting du kan utforske, men kom gjerne med innspill på hva _du_ skulle hatt på lista også.
 
 ![black silhouettes on yellow background ](/assets/giphy-5.gif)
 
