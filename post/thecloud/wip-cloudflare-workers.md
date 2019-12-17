@@ -78,6 +78,6 @@ But workers could also be used for more standalone functionality, like [hosting 
 
 ## Summary
 
-Cloudflare Workers is a really interesting alternative in the FaaS market. Especially since it's based on the V8 JavaScript Engine instead of containers. It's also specially attractive if you already uses Cloudflare as a CDN, and it will be fun to see how the service evolves in the next months.
+Cloudflare Workers is a really interesting alternative in the FaaS market. Especially since it's based on the V8 JavaScript Engine instead of containers. It's also especially attractive if you already uses Cloudflare as a CDN, and it will be fun to see how the service evolves in the next months.
 
 It's also worth mentioning that while Cloudflare recommends using their CLI tool Wrangler, it's supported by Serverless Framework (using the [Serverless Cloudflare Workers plugin](https://github.com/cloudflare/serverless-cloudflare-workers)) and Terraform (using the [Terraform Cloudflare Provider](https://www.terraform.io/docs/providers/cloudflare/guides/version-2-upgrade.html)).
