@@ -25,12 +25,17 @@ links:
       https://www.netflix.com/watch/80237093?trackId=13752289&tctx=0%2C0%2C6f3e04a0-89c9-4f49-970b-5e0cdb4b7ae7-18411229%2C%2C
   - title: Hvorfor må et strekkstag kunne tåle trykk?
     url: 'http://www.tensegriteit.nl'
+  - title: 'Hvorfor feilsiterer du? Vel, det er en fin bok - jeg ville presse den inn.'
+    url: >-
+      https://www.tanum.no/_le-petite-prince-french-antoine-de-saint-exupery-9780156013987
 authors:
   - Mikkel Haslum
 ---
-Nysgjerrighet er en stor del av det å vokse opp. Nysgjerrighet driver en vilje til å lære, som hjelper oss å forstå verden rundt oss. Man kan enkelt forestille seg et barn stille alle hvorfor’ene, og en voksen svare "Slutt!", i dialogen over. Men det er ikke like lett å forestille seg at det er en voksen som stiller alle hvorfor’ene. Og her vil jeg komme med en påstand:
+Nysgjerrighet er en stor del av det å vokse opp. Nysgjerrighet driver en vilje til å lære, som hjelper oss å forstå verden rundt oss. I dialogen over kan man enkelt forestille seg et barn stille alle hvorfor’ene, og en voksen svare «Slutt!». Men det er ikke like lett å forestille seg at det er en voksen som stiller alle hvorfor’ene. Og her vil jeg komme med en påstand:
 
-**Nysgjerrigheten visner bort hos de fleste av oss etterhvert som vi vokser opp. Jeg tror de fleste av dere som leser dette, og de fleste dere kjenner, var mer nysgjerrige da dere var 5 år enn hva dere er nå.**
+**Nysgjerrigheten visner bort hos de fleste av oss etterhvert som vi vokser opp.** 
+
+Jeg tror de fleste av dere som leser dette, og de fleste dere kjenner, var mer nysgjerrige da dere var 5 år enn hva dere er nå.
 
 Hvorfor er det sånn?
 
