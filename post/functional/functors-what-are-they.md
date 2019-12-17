@@ -63,7 +63,7 @@ You might have been in a situation where some of the data you get from the backe
 Lets say you have a field of type Int that might not be available in all situations and we model with a Maybe. This gives us a value of `Maybe Int`. We might later need this value to be a string. We can use `Maybe.map` and `String.fromInt` to easily convert it to Elms string type:
 
 ```elm
--- maybeInt might (Just 42) or som  
+-- maybeInt might be Just 42 or Nothing
 
 Maybe.map String.fromInt maybeInt
 -- output: Maybe String
