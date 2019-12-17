@@ -39,8 +39,6 @@ Jeg tror de fleste av dere som leser dette, og de fleste dere kjenner, var mer n
 
 Hvorfor er det sånn?
 
-![test](/assets/zerocode-animasjon-ux-writing.gif "tester med tittel")
-
 Jeg spurte 3 kolleger under Bekks julebord om akkurat dette. Svarene jeg fikk var:
 
 > _Kanskje det er fordi man bare er nysgjerrig frem til man slutter på skolen. Etter det handler det om å mestre. Ikke lære._
@@ -48,8 +46,6 @@ Jeg spurte 3 kolleger under Bekks julebord om akkurat dette. Svarene jeg fikk va
 > _Alt er digitalt og magisk – og man forventer at det er magisk, så da trenger man ikke undres like mye og blir mindre nysgjerrig._
 >
 > _Jo mer man lærer jo mer er det mulig å være nysgjerrig på. Man må begrense nysgjerrigheten sin for å kunne fokusere. Det kan være at man blir for god til å begrense nysgjerrigheten..._
-
-![hm](/assets/mtg-code2.png "nysgjerrig nå?")
 
 «Hvorfor?» tenker du kanskje nå. \
 Hvorfor sa du det?\
@@ -147,6 +143,10 @@ _._
 
 __
 
+![I'm curious what makes you so curious.](/assets/giphy-4.gif "why so curious")
+
+__
+
 Ok.
 
 Nå er det på tide at jeg forteller hvorfor jeg skriver dette.
@@ -164,7 +164,7 @@ Det er hit jeg vil. Det er derfor jeg skriver dette
 
 
 
-For å forklare hva jeg prøver på her, har jeg funnet frem et sitat*. Sitatet sier noe om at man ikke skal fortelle folk hvordan de skal gjøre noe, men heller lære dem hvorfor du er vil at de skal gjøre det. Og dette føler jeg at klør litt på myggestikket nysgjerrighet. Nettopp hvorfor gjør vi dette? Nok forklaring, her kommer sitatet: 
+For å forklare hva jeg prøver på her, har jeg funnet frem et sitat*. Sitatet sier noe om at man ikke skal fortelle folk hvordan de skal gjøre noe, men heller lære dem hvorfor du vil at de skal gjøre det. Og dette føler jeg at klør litt på myggestikket nysgjerrighet. Nettopp hvorfor gjør vi dette? Nok forklaring, her kommer sitatet: 
 
 > _If you want to build a ship, don’t gather people together to collect wood and don’t assign them tasks and work, but rather, teach them how to long for the immensity of the sea._
 >
@@ -172,4 +172,6 @@ For å forklare hva jeg prøver på her, har jeg funnet frem et sitat*. Sitatet 
 
 Hvis du føler deg nysgjerrig, skriv gjerne tilbake til meg ved å klikke på navnet mitt øverst på denne siden – eller utforsk noe du er nysgjerrig på. Nedenfor har jeg noen forslag til ting du kan utforske, men kom gjerne med innspill på hva _du_ skulle hatt på lista også.
 
-_\*Det er vel og merke et feilsitert sitat som ingen er helt sikre på hvordan oppstod. Men samme det. Du var i hvert fall nysgjerrig nok til å sjekke hva den lille svarte stjernen mitt i teksten stod for._
+![black silhouettes on yellow background ](/assets/giphy-5.gif)
+
+_\*Det er vel og merke et feilsitert sitat som ingen er helt sikre på hvordan oppstod. Men samme det. Du var i hvert fall nysgjerrig nok til å sjekke hva den lille svarte stjernen midt i teksten stod for._
