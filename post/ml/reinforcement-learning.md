@@ -44,13 +44,15 @@ These were the main obstacles overcome in the Google DeepMind Deep Q-Networks pa
 
 The DQN paper, first published in 2013, showcased an approach which utilized deep neural networks as functions approximators at scale, in a popular RL algorithm known as Q-learning. DeepMind named the approach Deep Q-Networks (DQN), and trained an agent to play a wide range of Atari games (see image above) at a super-human level. 
 
-After a series of consecutive breakthroughs, DeepMind created AlphaZero, a general algorithm which could be trained to play games such as Go, Chess and Shogi, beating both human and computer program champions alike. You can read more about these practical applications of reinforcement learning in tomorrow's blog post.
+After a series of consecutive breakthroughs, DeepMind created AlphaZero, a general algorithm which could be trained to play games such as Go, Chess and Shogi, beating both human and computer program champions alike. You can read more about this in tomorrow's blog post.
 
 ![AlphaZero chess.](https://i.ibb.co/fSCpXK9/chess.jpg)
 
-These algorithms often start with a completely blank slate, _tabula rasa_. They create their policies from the ground up, without any preprogrammed baseline or rules created by humans. This allows the policies to be devoid of any human bias which is often introduced in algorithms designed explicitly by humans. 
+These algorithms often start with a completely blank slate, _tabula rasa_. They create their policies from the ground up, without any preprogrammed baseline or rules created by humans. This allows the policies to be devoid of any human bias which is often introduced in algorithms designed explicitly by humans.
 
-If one were to consider this a war, it would be clear that the humans are losing. Deep reinforcement learning algorithms are starting to best humans at even more complicated games such as Dota 2 and StarCraft II, which include vast amounts of imperfect information and long-term strategizing, a combination which for a long time was considered infeasible for computers to overcome.
+If one were to consider gameplay a war, it would be clear that the humans are losing. Deep reinforcement learning algorithms are starting to best humans at even more complicated games such as Dota 2 and StarCraft II, which include vast amounts of imperfect information and long-term strategizing, a combination which for a long time was considered infeasible for learning-based methods to overcome.
+
+Interestingly, both of the approaches underpinning these algorithms, namely neural networks and reinforcement learning, are inspired by biology and nature. Neural networks started as an attempt to mimic the inner workings of the animal brain, and reinforcement learning is based on (a simplification of) how we believe animals learn. Stay tuned for tomorrow’s blog post, which will delve deeper into the potential of deep reinforcement learning by exploring one of the most sought after goals in all of AI: the quest for general intelligence.
 
 For anyone looking for more in-depth resources, I strongly recommend checking out Spinning Up by OpenAI (link below). It includes theory, exercises, well documented implementations of cutting edge algorithms, and references to relevant papers and other resources. If you prefer purely theoretical resources, I would also like to recommend two great books: “Reinforcement Learning: An Introduction” by Sutton & Barto, and “Deep Reinforcement Learning: An Overview” by Yuxi Li. 
 
