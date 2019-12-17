@@ -5,7 +5,7 @@ post_day: 18
 title: Utpust om viktigheten av å være nysgjerrig
 image: >-
   https://images.unsplash.com/photo-1489066018051-404bf1b5faa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80
-ingress: "\\-\tHvorfor? Hvorfor? \r\\\nHvorfor?\r\\\nHvorfor? Hvorfor? Hvorfor? Hvorfor?\r\n\n\\-\tSlutt!\r\n\n\\-\t... Hvorfor?"
+ingress: "* Hvorfor? Hvorfor? \r\\\n  Hvorfor?\r\\\n  Hvorfor? Hvorfor? Hvorfor? Hvorfor?\r\n* Slutt!\r\n* ... Hvorfor?"
 links:
   - title: Hvorfor vet jeg ikke hva kronobiologi er?
     url: 'https://www.edge.org/response-detail/27083'
