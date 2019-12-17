@@ -39,7 +39,7 @@ To bootstrap a JavaScript project, simply run the following command.
 $ wrangler generate my-project https://github.com/cloudflare/worker-template
 ```
 
-This command creates a folder including all files from the template passed in as the last argument. In the folder you have one `index.js` which contains your function code, and the code is shown below.
+This command creates a folder including all files from the template passed in as the last argument. In the folder you have one `index.js` file which contains your function code.
 
 
 ```js
