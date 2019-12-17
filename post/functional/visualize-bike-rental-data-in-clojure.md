@@ -199,4 +199,4 @@ Running, you should see something like this:
 
 ![Fargebilde](https://user-images.githubusercontent.com/1738405/70390294-1c78fa00-19ca-11ea-9e7a-5c77d893bb1b.png)
 
-If you don't want to type all the code yourself, you can check out this Github repository, where I've uploaded the code. Clone it, and run `lein run`!
+If you don't want to type all the code yourself, you can check out [this Github repository](https://github.com/FredrikMeyer/visualize-bicycle-data), where I've uploaded the code. Clone it, and run `lein run`!
