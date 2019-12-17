@@ -3,10 +3,11 @@ calendar: javascript
 post_year: 2019
 post_day: 22
 title: Cellular Automata in the Browser
-image: 'https://ibb.co/hXJbWZr'
+image: 'https://i.ibb.co/LQXmtJB/sketch-92-49-199.jpg'
 ingress: |+
 
-authors: []
+authors:
+  - Kjetil Golid
 ---
 A cellular automaton is a system consisting of cells of numerical values on a grid, together with a rule that decides the behaviour of these cells. Applying this rule repeatedly on each cell on the grid, while visualising the grid in some way or another, often gives the effect of some evolving organism with complex and intricate behaviour, even with relatively simple rules.
 
