@@ -84,7 +84,7 @@ The documentation for the textgenrnn clearly states that the model doesn't creat
     1 egg
     ```
 
-We chose this recipe, because it has a substantial amount of dry matter (flour and sugar) fluid (milk, heavy cream, butter) and interesting (...yet special) taste components (raisins, cardamom, lemon and brandy). We might have to alter the amounts somewhat, but this is great base for creating a christmas cake!
+We chose this recipe, because it has a substantial amount of dry ingredients (flour and sugar) fluid (milk, heavy cream, butter) and interesting (...yet special) taste components (raisins, cardamom, lemon and brandy). We might have to alter the amounts somewhat, but this is great base for creating a christmas cake!
 
 We decided to see what kind of role our ingredients usually have in their recipes, and base our instructions upon that:
 
@@ -102,16 +102,16 @@ So, based on this information, we have decided on these instructions:
 
 Without baking powder or baking soda, this is probably going to be a a non-raising cake, like gingerbread. We therefore prepare a long which we can fill with this (hopefully) amazing dough, and cook, before cutting them with a knife when is done.
 
-So, we bought the necessary ingredients, prepared for a nice evening, and followed the recipe from above, we also cooked them on 200°C. The dough was much firmer than the though it would be, so we took the liberty of trying out different shapes before they went in the oven
+So, we bought the necessary ingredients, prepared for a nice evening, and followed the recipe from above, we also cooked them on 200°C. The dough was much firmer than we thought it would be, so we took the liberty of trying out different shapes before they went in the oven.
 
 Pic
 
 So! Here you go! The 8th Christmas Cookie. We have decided to call it "Bekkstang" (A pun on Bekk and the Norwegian translation of Crowbar) and in the future, all these cookies should have an elongated shape. The taste was actually quite interesting, and we definitely consider the use of lemon peel and brandy as a stroke of genius.
 
-You have now reached the end of our calendar, and we hope you haven't lost your appetite (no pun intended) for machine learning and it's wonders. Only your imagination sets the boundaries for what you can do with data science, as we hopefully has shown with this last entry.
+You have now reached the end of our calendar, and we hope you haven't lost your appetite (no pun intended) for machine learning and it's wonders. Only your imagination sets the boundaries for what you can do with data science, as we hopefully has shown throughout this calendar.
 
-As a last note: There are many other elements you could have used machine learning for creating these cookies: You could have used machine learning for the instructions, the shapes, or for the name of the cake for that matter. The problems aren't exceedingly difficult, but we wanted to show you that it doesn't take a lot amount of work to create something fun (or delicious in our case).
+As a last note: There are many other elements you could have used machine learning for when creating these cookies: You could have used machine learning for the instructions, the shapes, or for the name of the cake for that matter. The problems aren't exceedingly difficult, but we wanted to show you that it doesn't take a lot amount of work to create something fun (and delicious in our case).
 
-Gods speed on your journey with machine learning ahead.
+Godspeed on your journey with machine learning!
 
-...and have a Merry, Merry Christmas.
+...and have a Merry, Merry Christmas from all of us here at Bekk :)
