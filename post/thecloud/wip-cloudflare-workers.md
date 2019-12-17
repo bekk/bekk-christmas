@@ -6,7 +6,7 @@ title: Cloudflare Workers
 ingress: >-
   [Cloudflare Workers](https://workers.cloudflare.com/) is a service that let's
   you run serverless functions on [Cloudflare's Edge
-  Network](https://www.cloudflare.com/network/) close to the where the user is
+  Network](https://www.cloudflare.com/network/) close to where the user is
   located. Combined with the [V8 engine](https://v8.dev/) this lets you write
   highly scalable functions in the cloud with fast startup and response times.
   This article shows how you can get started using Cloudflare Workers and
