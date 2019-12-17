@@ -2,7 +2,7 @@
 calendar: css
 post_year: 2019
 post_day: 19
-title: Gotcha! 5 ways I've screwed up CSS
+title: Gotcha! Ways I've screwed up CSS
 image: >-
   https://images.unsplash.com/photo-1544569975-8e155329f348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
 ingress: >-
