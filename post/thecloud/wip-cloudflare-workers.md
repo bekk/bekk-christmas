@@ -10,7 +10,7 @@ ingress: >-
   located. Combined with the [V8 JavaScript engine](https://v8.dev/) this lets
   you write highly scalable functions in the cloud with fast startup and
   response times. This article shows how you can get started using Cloudflare
-  Workers and present some possible use cases.
+  Workers, and present some possible use cases.
 links:
   - title: Cloudflare Workers
     url: 'https://workers.cloudflare.com/'
