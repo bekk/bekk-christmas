@@ -8,6 +8,11 @@ ingress: >-
   late at writing Christmas cards! Like all other complex problems in life, also
   this can be tackled by using the open source infrastructure as code tool
   Terraform!
+links:
+  - title: Terraform
+    url: 'https://www.terraform.io/'
+  - title: Sourcecode
+    url: 'https://github.com/landro/terraform-christmas-postcards'
 authors:
   - Stefan Magnus Landrø
 ---
