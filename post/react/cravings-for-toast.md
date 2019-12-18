@@ -22,7 +22,7 @@ The following ingredients are needed:
 * Context API
 * Hooks
 
-I would like to clarify that we are going to build a toast notification system using the **context api** and **hooks** from react just to avoid any confusion with regular, delicious toast. These are relatively new tools which makes life a whole lot easier when working with both small-scale and especially large-scale code. A very brief explanation of each tool is:
+I would like to clarify that we are going to build a toast notification system using the **context api** and **hooks** from react just to avoid any confusion. These are relatively new tools which makes life a whole lot easier when working with both small-scale and especially large-scale code. A very brief explanation of each tool is:
 
 **Context API -** A state management system that fixes many problems or annoyances that comes with handling different components state. The most basic approach for managing state is that each component uses `React.setState(..)` to handle its own internal state. But this can get messy real quick which is why tools such as e.g Redux are used, but these tools are not perfect either. This is where the Context Api comes in, trying to make these imperfections a bit better just to ease state management a little more.
 
@@ -54,12 +54,8 @@ function ToastBody() {
       i am a toast
     </div>
   )
-}
+}  First we create the context:First we create the context:
 ```
-
-Creating the state and managing it will be a bit tricker than that, let's start by creating a new file `Toast.js` where we implement the aforementioned points with the Context api.
-
-First we create the context:
 
 ```
 const ToastContext = createContext();
@@ -80,7 +76,7 @@ const ToastProvider = (props) => {
 
 The idea here is that we can wrap any component with the `ToastContext.Provider`   and get whatever is passed through the `value`-prop. Neat, huh?
 
-For the toast notification system, we need to able to store things in a state but also handle the state with different types of actions. Think of actions as e.g adding a notification to the state or removing one. Here is where we can use the `useReducer`-hook.
+For the toast notification system, we need to able to store things in a state but also handle the state with different types of actions. In this case, an action can be e.g adding a notification to the state or removing one. This is where we can use the `useReducer`-hook.
 
 ```
 const toastReducer = (state, action) => {
@@ -157,4 +153,4 @@ function ToastBody({id, dispatch}) {
 }
 ```
 
-Voila! As seen in the `App()`-function we do not need to send down any props to the children component, instead they can extract everything needed using the `useContext`-hook. This was a short introduction to hooks and the context api, and how they can be used together to create e.g a toast notification system. For more information, please visit the links below.
+Voila! As seen in the `App()`-function we do not need to send down any props to the children component, instead they can extract everything needed using the `useContext`-hook. This was a short introduction to hooks and the context api, and how they can be used together to create a toast notification system. For more information, please visit the links below.
