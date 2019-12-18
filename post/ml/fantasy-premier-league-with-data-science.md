@@ -16,9 +16,9 @@ Picking the right Fantasy team with data science is no new subject<sup>1</sup>, 
 
 The process for both models is built on three steps. First, the models are trained to predict expected amount of points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in a new round (in our case, game week 19). Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
-### 1. Training the models
+## 1. Training the models
 
-#### Input data
+### Input data
 
 The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
 
@@ -28,9 +28,9 @@ The models are trained using data provided by Github user [Vaastav Anand](https:
 * Home/away game (one variable)
 * Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (five variables)
 
-This results in 50 input variables in total, with points scored in the testing round as the dependent variable. Only data from previous rounds are used in the training rounds to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`)
+This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`)
 
-#### Designing the models
+### Designing the models
 
 The linear regression is set up with the assumed weakest team as reference on the team variable, and the assumed strongest team as reference on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2.
 
