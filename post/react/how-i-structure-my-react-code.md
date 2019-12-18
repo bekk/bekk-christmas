@@ -211,8 +211,8 @@ Some of the most obvious culprits are the repeating inputs and radio button layo
 ```jsx
 import React, { useState } from 'react';
 import { saveMyInformationToSanta } from '../../api/santa-api';
-import TextInputWithLabel from '../../components/text-input/TextInputWithLabel';
-import RadioToggle from '../../components/radio-toggle/RadioToggle';
+import TextInputWithLabel from './TextInputWithLabel';
+import RadioToggle from './RadioToggle';
 
 const EditMyInformationToSanta = ({ person }) => {
   const [name, setName] = useState('');
