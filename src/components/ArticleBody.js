@@ -81,7 +81,26 @@ const ArticleBody = styled.article`
     blockquote {
         padding-left: 35px;
     }
-    video, img {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+            font-weight: bold;
+        }
+        th,
+        td {
+            border: 1px solid rgba(100, 100, 100, 0.3);
+            border-left: 0;
+            border-right: 0;
+            padding: 5px;
+        }
+        th {
+            border-top: 0;
+        }
+    }
+    video,
+    img {
         display: block;
         width: 100%;
         max-width: 760px;
