@@ -24,7 +24,7 @@ So I'm not hoping for agreement on this. In this article I will show what prefer
 
 First, a few words about how I am as a developer. When I code, I see what I'm building as a building blocks - like a puzzle. Every thing I make, every function I write or component I implement, is a part of a larger picture. 
 
-I'm also very fond of visualizing stuff. I tend to draw stuff when I explain, and I love when what my users are using, the actual pieces of UI, is reflected in the code base as well. 
+I'm also very fond of visualizing what I work with. I tend to draw when I explain, and I love when what my users are using, the actual pieces of UI, is reflected in the code base as well. 
 
 Another thing that's important to me is to get a top level overview quickly, and understanding what a component does as simply as possible. Both through spending time choosing the right names, but also through visualizing hierarchies through usage.
 
@@ -202,7 +202,7 @@ const EditMyInformationToSanta = ({ person }) => {
 export default EditMyInformationToSanta;
 ```
 
-The component itself isn't really very advanced, but since it's a pretty big form with a lot of information, the file size (or rather, the file _length_) becomes pretty huge. To improve this, I'd start splitting stuff into components.
+The component itself isn't really very advanced, but since it's a pretty big form with a lot of information, the file size (or rather, the file _length_) becomes pretty huge. To improve this, I'd start splitting the code into components.
 
 Some of the most obvious culprits are the repeating inputs and radio button layouts, so let's start with those. In the example code below, you'll see what I'm left with after the refactor:
 
@@ -427,7 +427,7 @@ I like to extract presentational logic into their own components, both where it 
 
 I extract each component into its own file, and make sure to keep to that rule as my user interface grows in complexity. I do this because I think it's easier to see what's happening in each file when there's only a single component in there. The files are shorter, which gives me that top level overview, and good component (and file) names help with understanding the underlying responsibilities of each.
 
-Splitting the components into one-off domain logic and reusable components makes our code base easier to navigate, and it _definitely: makes it easier to delete dead code.
+Splitting the components into one-off domain logic and reusable components makes our code base easier to navigate, and it _definitely_ makes it easier to delete dead code.
 
 When working as a consultant, you end up spending a lot of time looking at other people's code. Making sure that process is as smooth as possible is paramount. Most of the time I alter or extend already written code, and having a simple, yet robust file structure that's easy to reason about is a great help in getting stuff done.
 
