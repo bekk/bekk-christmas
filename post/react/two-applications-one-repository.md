@@ -11,7 +11,7 @@ authors:
 ---
 ## The App and the Web
 
-Currently my colleagues and I are developing the web application and the mobile application for a Norwegian company named Entur. 
+Currently my colleagues and I are developing the web application and the mobile application for a Norwegian company named Entur. These applications lets the user plan their journey, buy tickets, create a profile and add payment options, and other functionalities. 
 
 For web we are using React and for mobile we are using React Native. 
 
@@ -22,16 +22,34 @@ In stead of having to maintain two separate repositories, we have one repository
 
 How to structure your repo? When developing Feature X, where does it make most sense to put your component that will be 95% identical to the one for app? 
 
+You may be familiar with the differences between React and React Native, instead of:
+
+```
+<div>
+    Bekk.christmas!
+</div>
+```
+
+you have:
+
+```
+<View>
+    <Text>
+       Bekk.christmas!
+    </Text>
+</View
+```
+
 ### Packages
 
-We structure our code and components in domain packages. We have managed to split up for applications into mostly separate parts. For instance we have created a subfolder for everything regarding the profile page, everything regarding the purchase of tickets in another map, and so on. By doing it this way we are able to easier understand the 
+We structure our code and components in domain packages. We have managed to split up for applications into mostly separate parts. For instance we have created a subfolder for everything regarding the profile page, everything regarding the purchase of tickets in another map, and so on. By doing it this way we are able to easier compare the components and 
 
 ```
 packages
     |_ client-app
         |_ index.js
     |_ client-web
-        |_ index.native.js
+        |_ index.js
     ...
 
     |_ profile
@@ -44,24 +62,24 @@ packages
 
 ```
 
-
 > Duplication is far cheaper than the wrong abstraction.
 
 ### Helpers
 
-The web and app components often shares the same logic. Therefore there are no need to 
-A dear child has many names. 
+The web and app components often shares the same logic. Therefore there are no need to implement the same pure javascript functions over again.
+
+A dear child has many names, for instance utils, commons, 
 
 ### Setup
 
 This is pain.
-Patches.
-The upgrade du React Native 0.61 took one week.
+The upgrade to React Native 0.61 took one week and one patch.
 
 ## The Experience
 
 We experienced sometimes that one of the applications often was favored. 
 
+Don't even get me started on the duplicate styles. 
 
 ## The Alternatives?
 
