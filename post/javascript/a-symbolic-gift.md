@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 20
 title: A symbolic gift
+image: 'https://images.unsplash.com/photo-1515325458032-82fb25824501'
 ingress: >-
   Years ago, the JavaScript language was gifted with the `Symbol` primitive.
   Unlike many other language features in ES6, it was not simply a shorter syntax
