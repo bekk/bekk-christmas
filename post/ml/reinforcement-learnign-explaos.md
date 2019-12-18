@@ -36,7 +36,7 @@ _Breakout was one of the Atari games that DeepMind's reinforcement learning mode
 
 The following years, DeepMind went ahead and beat increasingly complex games, utilizing novel reinforcement learning techniques to beat games that were previously thought to be extremely hard for computers to be good at because of their high complexity. In 2015, they gave birth to _AlphaGo_.
 
-While machines have been better than every living human at chess for about 20 years, they have struggled to beat humans at its Asian cousin Go. The amount of possible moves at each turn is so high that it’s unfeasible for computers to play it in the same brute-forceish way that made them succeed at chess. To beat Go, you needed something more intuitive, something more human. This lead DeepMind to develop AlphaGo, the first computer to surpass humans in the ancient board game.
+While machines have been better than every living human at chess for about 20 years, they have struggled to beat humans at its Asian cousin Go. The amount of possible moves at each turn is so high that it’s infeasible for computers to play it in the same brute-forceish way that made them succeed at chess. To beat Go, you needed something more intuitive, something more human. This lead DeepMind to develop AlphaGo, the first computer to surpass humans in the ancient board game.
 
 ![AlphaGo](https://i.ibb.co/TvDNfyd/Screen-Shot-2019-12-17-at-16-16-20.png)
 
