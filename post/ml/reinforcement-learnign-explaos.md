@@ -6,7 +6,7 @@ title: The quest for general intelligence
 image: >-
   https://images.unsplash.com/photo-1546704864-07235973413d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60
 ingress: >-
-  Recently, machine learning research have increasingly been focused on general
+  Recently, machine learning research has increasingly been focused on general
   learning algorithms where the same algorithm can perform a huge variety of
   tasks. The ultimate goal by many reinforcement learning researchers is to
   create machines that can learn to solve any general task, just like humans!
