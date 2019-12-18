@@ -15,6 +15,8 @@ description: >-
   data quality as you do can often be a nightmare. This article describes how we
   use Azure Functions, ServiceBus and BlobStorage to mitigate problems that can
   occur during sketchy data-imports.
+authors:
+  - Asbjørn Bydal
 ---
 I currently work for a client where the brand new system we are developing needs to receive a lot of customer data from older systems. Typically data arrives on a daily or weekly schedule in data-formats such as csv or fixed-width-field. 
 Reading and parsing these types of files usually boils down to using the correct library. But cleaning, validating, and synchronizing these imports with existing data can often lead to a good deal of processing per row. Failures or inadequate data will almost certainly occur in one or more rows of incoming files, where the length can be up to ten or even a hundred thousand rows.
@@ -58,6 +60,7 @@ public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport", Conn
     }
     catch (Exception e)
     {
+        // A failure to process a data entity will result in a dead-letter message
         await messageReceiver.DeadLetterAsync(lockToken, $"Exception occurred during processing of customer: {e.ToString()}");
         return;
     }
@@ -66,4 +69,8 @@ public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport", Conn
 }
 ```
 
-This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy and replay the failing messages with very little effort. It is also higly scalable. A cautionary note here. If you query or send data to other services you don't control, keep in mind that a big file with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput. 
+This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy, and replay the failing messages with very little effort. We use [Queue Explorer](https://www.cogin.com/mq/) to check for failing messages and to replay messages when needed. 
+
+![ServiceBus queus displayed in Queue Explorer. Two messages have been dead-lettered](https://imgbb.com/"><img src="https://i.ibb.co/QCXKy8f/servicebusqueue-cropped.png)
+
+It is also higly scalable. A cautionary note here. If you query or send data to other services you don't control, keep in mind that a big files with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput.
