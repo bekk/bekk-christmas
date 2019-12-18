@@ -4,30 +4,31 @@ post_year: 2019
 post_day: 19
 title: On combining stuff
 ingress: >-
+
   In this article we will take a small peak into the general concept of
   combining
 
   things with other things. We all know about and how to use the plus operator
-  from every day math and
+  from everyday math and
 
   programming. So why do I want to write it? There is in fact a
 
   generalization of the concept that is pretty neat that I hope you also
 
-  will find useful.
-description: ''
+  will find useful. It can be a door opener for understanding the behaviour you
+  get from algebraic laws. First things first, what are we actually talking
+  about? Let us take a look at a few different operations on text and
+
+  numbers.
+description: >-
+  In this article we will take a small peak into the general concept of
+  combiningthings with other things. We all know about and how to use the plus
+  operator from everyday math andprogramming. So why do I want to write it?
+  There is in fact ageneralization of the concept that is pretty neat that I
+  hope you alsowill find useful. 
 authors:
   - Per Øyvind Kanestrøm
 ---
-# On combining stuff
-
-In this article we will take a small peak into the general concept of combining
-things with other things. We all know about and how to use the plus operator from every day math and
-programming. So why do I want to write it? There is in fact a
-generalization of the concept that is pretty neat that I hope you also
-will find useful. It can be a door opener for understanding the behaviour you get from algebraic laws. First things first, what are we actually talking about? Let us take a look at a few different operations on text and
-numbers.
-
 ## Law abiding citizens
 
 In the table below each row compares the operation and result on shape similar strings and ints for addition.
@@ -40,8 +41,7 @@ In the table below each row compares the operation and result on shape similar s
 | 4 | `"" + "abc"`        | `"abc"`             |`0 + 6`           | 6             |
 
 Notice the similarity between the operations on ints and strings. Rows 2 and 3 show associativity,
-which means *the order of evaluation doesn't change
-the result as long as the order of the values are the same*.
+which means *the order of evaluation doesn't change the result as long as the order of the values are the same*.
 
 In mathematical terms we have the following law for associativity:
 
@@ -71,13 +71,13 @@ random data is generated to verify the properties. Look it up if it sounds inter
 
 ## An example
 
-Let us take a look at a text corpus analyzer. The task is to find all unique words, total length of all words and how many occurrences there is of each word.
+Let us take a look at a text corpus analyser. The task is to find all unique words, total length of all words and how many occurrences there is of each word.
 
-To solve this we will write code in [Scala](https://www.scala-lang.org/), a object-oriented and functional programming language for the JVM and Javascript. If this is new to you then you can squint hard and see Python, Kotlin or Java. The brackets are the same as generics in Java. But the details in the code are not important, only the possibilities. Therefore, I will explain the reasoning behind each line. If you already know Scala and the [Cats](https://typelevel.org/cats/) library then you can probably gloss right over it.
+To solve this, we will write code in [Scala](https://www.scala-lang.org/), an object-oriented and functional programming language for the JVM and Javascript. If this is new to you then you can squint hard and see Python, Kotlin or Java. The brackets are the same as generics in Java. But the details in the code are not important, only the possibilities. Therefore, I will explain the reasoning behind each line. If you already know Scala and the [Cats](https://typelevel.org/cats/) library then you can probably gloss right over it.
 
-To start things of we have got our text corpus to analyze and split it up into a list containing each word.
+To start things of we have got our text corpus to analyse and split it up into a list containing each word.
 
-```scala mdoc:silent
+```scala
 val message = List("Hello", "world!", "Have", "you",
                    "learned", "anything", "new?", "Hello", "again")
 ```
@@ -88,9 +88,9 @@ For each of these words we need to have a function that take one word and splits
 - Length of the word
 - A hash map with the word as key pointing to the number of occurrences for that word
 
-In Scala this function can look like the code snippet below.
+In Scala this function will look like the following code snippet.
 
-```scala mdoc:silent
+```scala
 def wordDetails(word: String) = (1, word.length, Map(word -> 1))
 ```
 
@@ -100,16 +100,16 @@ Now, if we combine the information we get from using this function on all the wo
 - Total length of all the words
 - A hash map with the words as keys pointing to the number of occurrences for that word
 
-Does this sound familiar? Each of these types of data should have some default monoid implementation that defines this behavior, and
+Does this sound familiar? Each of these types of data should have some default monoid implementation that defines this behaviour, and
 thanks to the Cats library in Scala we have just that.
 
-```scala mdoc:silent
+```scala
 import cats._, cats.implicits._
 ```
 
 With this we have imported the cats library for functional programming with category theory concepts. The next step is to see if the compiler can give us an `Monoid` for the result type of the wordDetails function.
 
-```scala mdoc:silent
+```scala
 type WordDetailsResult = (Int, Int, Map[String, Int])
 
 val monoidImpl = Monoid[WordDetailsResult]
@@ -126,21 +126,35 @@ def foldLeft[A](z: A)(op: (A, T) => A): A
 
 Putting these pieces together we can get our result by doing the following:
 
-```scala mdoc
+```scala
 message
   .map(wordDetails)
   .foldLeft(monoidImpl.empty)(monoidImpl.combine)
+// res0: (Int, Int, Map[String, Int]) = (
+//   9,
+//   47,
+//   Map(
+//     "learned" -> 1,
+//     "Have" -> 1,
+//     "you" -> 1,
+//     "Hello" -> 2,
+//     "again" -> 1,
+//     "world!" -> 1,
+//     "anything" -> 1,
+//     "new?" -> 1
+//   )
+// )
 ```
 
 Combining the map operation with a monoidal fold like we just did is quite handy! It is therefore also possible to skip the ceremony. That would look like the following:
 
-```scala mdoc:silent
+```scala
 message.foldMap(wordDetails)
 ```
 
 ## Changing the laws
 
-For our text corpus example we have the laws of associativity and identity. What would happen if we did not have the law of identity? If
+For our text corpus analyser we have the laws of associativity and identity. What would happen if we did not have the law of identity? If
 our text corpus was empty then we would still need to be able to produce a result that we got from the wordDetails function. But with no values we cannot run
 the function and therefore have no value to produce! Our function would have needed to be partial, that is to not be able to handle all cases of our input - the empty list. The result would have been an exception 😢 Thanks to having the law of identity we knew that we would always be able to produce some value that defines emptiness and so our problem is non existing.
 
@@ -148,7 +162,7 @@ But this does not mean that leaving out the identity laws is useless. In fact, h
 
 ## Summary
 
-That concludes our introduction to the Monoid laws. We have seen some simple, yet practical application, that I hope have helped to give some intuition on how it can be used. Furthermore, we have taken a peak into what the laws actually mean
+That concludes our introduction to the Monoid laws. We have seen some simple, yet practical application, that I hope to have helped to give some intuition on how it can be used. Furthermore, we have taken a peek into what the laws actually mean
 for the application of Monoids and how that relates to another algebraic constructs. Note that there are more useful laws and algebraic constructs that one can look into. For a more in-depth explanation of these I can recommend the talk [Monoids monoids monoids](https://www.youtube.com/watch?v=DJyhWAwmGqE).
 
-In real-world code there are many other hidden usages, including among others web routes in web servers. Now go out and try to find some! If these concepts were new to you then I hope this have peaked some interest.
+In real-world code there are many other hidden usages, including among others web routes in web servers. Now go out and try to find some! If these concepts were new to you then I hope this have piqued some interest.
