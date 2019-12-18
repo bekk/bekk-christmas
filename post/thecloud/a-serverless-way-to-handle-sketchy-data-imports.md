@@ -15,6 +15,9 @@ description: >-
   data quality as you do can often be a nightmare. This article describes how we
   use Azure Functions, ServiceBus and BlobStorage to mitigate problems that can
   occur during sketchy data-imports.
+links:
+  - title: Demo Code on Github
+    url: 'https://github.com/abydal/christmas'
 authors:
   - Asbjørn Bydal
 ---
@@ -46,10 +49,11 @@ The message is picked up by a second Azure Function, which does the heavy data c
 
 ```csharp
 [FunctionName("ServiceBusQueueTrigger")]
-public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport", Connection = "AzureServiceBusConnection")] string customerDataRaw,
-    MessageReceiver messageReceiver,
-    string lockToken,
-    ILogger log)
+public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport",
+  Connection = "AzureServiceBusConnection")] string customerDataRaw,
+  MessageReceiver messageReceiver,
+  string lockToken,
+  ILogger log)
 {
     Customer customer;
 
@@ -71,10 +75,9 @@ public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport", Conn
 
 This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy, and replay the failing messages with very little effort. We use [Queue Explorer](https://www.cogin.com/mq/) to check for failing messages and to replay messages when needed. 
 
-![ServiceBus queus displayed in Queue Explorer. Two messages have been dead-lettered](https://i.ibb.co/QCXKy8f/servicebusqueue-cropped.png)
+![ServiceBus queues displayed in Queue Explorer. Two messages have been dead-lettered](https://i.ibb.co/kH2mpfH/deadletters3.png)
 
 Alongside the dead-lettered message we also provide information on the exception that occurred.
 
-![Details from Queue Explorer on what failure occurred on each specific data entity.](https://i.ibb.co/sWy8L0X/dead-letter-messages.png)
 
-It is also higly scalable. A cautionary note here. If you query or send data to other services you don't control, keep in mind that a big files with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput.
+Another benefit of this approach is its ability to scale. A cautionary note here. If you query or send data to other services you don't control during processing, keep in mind that big files with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput.
