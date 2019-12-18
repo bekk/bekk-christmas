@@ -16,6 +16,8 @@ links:
     url: 'https://thecloud.christmas'
   - title: OWASP Juice Shop
     url: 'https://www2.owasp.org/www-project-juice-shop/'
+  - title: OWASP Security Shepherd
+    url: 'https://www.owasp.org/index.php/OWASP_Security_Shepherd'
 authors:
   - Lars-Erik Wollan
 ---
@@ -37,4 +39,8 @@ Another great feature of the Juice Shop is using it as a workbench for testing o
 # OWASP Security Shepherd
 If you want to get into security and application security, then you could have a look at OWASP Security Shepherd. This project’s goal is to let users understand about various concepts of security risks. It can be used as a learning platform, in a classroom environment or for self-study. The different lessons are presented in the web application (actually multiple applications) with one or more challenges to solve for the topic. The focus of the project is to educate and make the use understand and learn how to avoid making the same mistakes in their own code.
 
-By setting up Security Shepherd in a classroom the admin can create users, track individual progress to give extra guidance, if needed. There is also a built-in score board.
+When setting up Security Shepherd in a classroom, it has a lot of features to facility various types of learning. The platform supports three different modes, Open Floor, Capture The Flag and tournament. In open floor the users can access any challenge available and the lessons are sorted into risk categories. This mode is recommended for exploring and self-study. When running in CTF mode the user needs to solve the challenges according to difficulty but is free to choose challenges from all available modules. Finally, in tournament mode, challenges can be picked more freely.
+
+The Security Shepherd is great for teaching security, even when the knowledge of the participants varies from novice to more experienced. The admin can for example can track the progress of individual users. This enables her to help students which are stuck on a certain topic or challenge.
+
+Even if consider yourself to be a super skilled, security aware, developer or just looking to learn more about application security, OWASP got you covered. Thank you OWASP.
