@@ -28,7 +28,8 @@ Going serverless seems to be trending in many of the projects we involved in, an
 The serverless top 10 project wants to address this by giving examples on how to pervent the various attacks. We expect to have many interesting cases in near future on how to secure applications and services deployed in the cloud.
 
 ## OWASP Juice Shop
+This year we’ve had so much hosting Capture The Flag (CTF) events, for both employees and students. At the core of this was the OWASP Juice Shop, the world’s most modern insecure web application., has a configuration where participants can find security vulnerabilities in a safe environment. There are challenges which cover all of the OWASP Top Ten and then some. They are also ranked according to difficulty. The easiest can be solved in a flash, while others may take some research and googling. By adding the competitiveness of a CTF, you will have a great opportunity to show off your hacker skills, as well as learning a thing or two about web application security. We are all about sharing and learning, for this CTF is a perfect arena.
 
-
+Another great feature of the Juice Shop is using it as a workbench for testing out new penetration test tools or specific features of such tools. We have used the Juice shop as a victim when running various attacks using ZAP or other tools. Being able to learn new tricks with penetration test tools in a controlled environment will make you more efficient when doing security assessments or doing research on your own applications.
 
 ## OWASP Security Shepherd
