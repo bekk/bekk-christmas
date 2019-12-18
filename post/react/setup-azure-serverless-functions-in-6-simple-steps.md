@@ -17,14 +17,17 @@ links:
 authors:
   - William Imoh
 ---
-This is some sort of memoir for myself on how to spin up a serverless function in simple steps. I use serverless functions for numerous reasons and the two most frequent ones are to store API keys for 3rd party services and to connect to a data store when building out JAM stack solutions. 
+This is some sort of memoir for myself on how to spin up a serverless function in simple steps. I use serverless functions for numerous reasons and the 2 most frequent ones are to store API keys for 3rd party services and to connect to a data store when building out web applications.
 
-With serverless functions, these use cases  can scale to even larger solutions. Azure functions is a powerful serverless compute service that lets you run event-triggered code. The major reason I decided to try it out is the ability to choose different kinds of functions templates. Also, I live on VS Code and the Azure extension makes startup and deployment seamless.
+React apps are no different when using serverless functions. Many times, building a single page app requires user authentication, pulling data from a store, creating and storing data as well as handling some business logic. While it would be a lot more expensive to setup traditional server infrastructure, to handle these on-demand requirements, it would be great to utilize a system that provides a means to deploy the required services, abstract server management and focus more on building a rich user experience.
 
-In this super short post, I’ll spin up and deploy an Azure serverless function in six straight-to-the-point cut-the-crap steps.
+Serverless functions in React applications simply help you achieve that efficiently. 
 
+Azure functions is a powerful serverless compute service that lets you run event-triggered code. The major reason I decided to try it out is the ability to choose different kinds of functions templates. Also, I live in VS Code, and the Azure extension makes startup and deployment seamless.
 
-> Note: [Azure Functions v3](https://azure.microsoft.com/en-us/updates/announcing-go-live-release-for-azure-functions-v3/) now supports Node v12+. 
+In this super short post, I’ll spin up and deploy an Azure serverless function in six straight-to-the-point cut-the-crap steps. This serverless function can be consumed in a React application either on component mount or triggered by an event.
+
+> Note: [Azure functions v3](https://azure.microsoft.com/en-us/updates/announcing-go-live-release-for-azure-functions-v3/) now supports Node v12+. 
 
 The 6 steps to spin up and deploy a function in VS Code are:
 
@@ -36,9 +39,11 @@ The 6 steps to spin up and deploy a function in VS Code are:
 - Create a deployable function app with a storage account and resource location.
 - [**Bonus Step**] Drink nice ground coffee
 
+
 ## Install the functions extension
 
 Download VS Code and install the functions extension by searching for “Azure Marketplace” using the extensions marketplace in the left menu. Reload your editor once done. This adds the extension to the left menu bar of your editor. 
+
 
 ## Install Azure core tools
 
@@ -69,12 +74,44 @@ Open the provided URL in your browser, for me it’s:
 
 [http://localhost:7071/api/HttpTriggerTest](http://localhost:7071/api/HttpTriggerTest)
 
+
 ## Deploy the Function App
 
 To deploy the function to Azure cloud, click the blue upward pointing arrow in the Azure extensions top left menu. Select a function app in Azure or create a new one. If creating a new one, enter a unique name for the app, select a runtime (Node.js 10.x) and select a resource location (West Jupiter’s belly if you find, lol). Select the closest location to you.
 
-Voila! This deploys your serverless function/API whose endpoints can be used in apps anywhere, as specified in the function definition. A resource group and storage account are also created. You can find mine here: [https://chulootest2.azurewebsites.net/api/HttpTriggerTest](https://chulootest2.azurewebsites.net/api/HttpTriggerTest)
+Voila! This deploys your serverless function/API whose endpoints can be used in apps anywhere, as specified in the function definition. A resource group and storage account are also created. You can find mine here: https://chulootest2.azurewebsites.net/api/HttpTriggerTest
 
-Subsequently, I’ll write follow up posts using serverless functions for real-world cases and even larger projects.
 
-[Let me know](https://twitter.com/iChuloo) if you have any issues or questions with this, and I hope you remember the 6 steps all the time. Happy Holidays!
+## Using a Function in a React application
+
+Like making a HTTP request to a remote server and receiving data, in a React application, a HTTP request can be made to deployed function which returns the defined response. Here’s a sample API request using the deployed function in a useEffect hook.
+
+```js
+import React, {useEffect} from "react";
+    
+const url = "https://chulootest2.azurewebsites.net/api/HttpTriggerTest"
+const App = () => {
+  useEffect(()=>{
+    let fetchData = async () => {
+      let response = await fetch(url);
+      console.log(response);
+    }
+    fetchData();
+  }, [])
+    
+  return (
+    <div>Do something with the data!</div>
+  );
+};
+
+export default App
+```
+
+This performs a GET request on the function and logs it to console.
+
+This is a simple illustration of how powerful is the destructured architecture serverless functions provide, combined with the inherent component architecture of React, when crafting rich and robust user experiences.
+
+Subsequently, I’ll write follow up posts using serverless functions for real-world cases and even larger projects. You'll find those on Scotch.
+
+Let me know if you have any issues or questions with this, and I hope you remember the 6 steps all the time. Happy Holidays!
+
