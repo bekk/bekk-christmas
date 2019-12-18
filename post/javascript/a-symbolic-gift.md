@@ -27,15 +27,17 @@ authors:
 
 Symbols are a type of value in JavaScript, like numbers and strings. It is a core primitive, not a high level class deriving from `Object`. Let's create some symbols to see how they work:
 
-    // Symbols are created with the Symbol function:
-    const a = Symbol();
-    const b = Symbol();
+```javascript
+// Symbols are created with the Symbol function:
+const a = Symbol();
+const b = Symbol();
     
-    // Each symbol value is different, even though they look the same:
-    a == b; // false
+// Each symbol value is different, even though they look the same:
+a == b; // false
     
-    // You can pass a string with a description, but this is only meant for debugging purposes:
-    const colorRed = Symbol("The color red");
+// You can pass a string with a description, but this is only meant for debugging purposes:
+const colorRed = Symbol("The color red");
+```
 
 ## Yes, but what is the point?
 
