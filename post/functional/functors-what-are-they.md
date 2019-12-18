@@ -13,12 +13,12 @@ links:
   - title: 'Functors, Applicatives, And Monads In Pictures'
     url: >-
       http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
-  - title: 'LambaCast Episode 16: Functors'
+  - title: 'LambdaCast Episode 16: Functors'
     url: 'https://soundcloud.com/lambda-cast/16-functors'
 authors:
   - Harald Ringvold
 ---
-Lets start with a definition, and then try to make sense of it. This will not be a comprehensive explanation and we will be glossing over some details in the interest of brevity but it will hopefully be enough you get you started.
+Lets start with a definition, and then try to make sense of it. This will not be a comprehensive explanation and we will be glossing over some details in the interest of brevity but it will hopefully be enough to you get you started.
 
 > A functor is a structure that has a mapping function that can transform the values inside the functor
 
@@ -26,7 +26,7 @@ As with [monads](https://functional.christmas/2019/5) a functor can be thought o
 
 By having the structure define and uphold its own rules through the mapping function we do not need to know all the different rules and edge cases for accessing the value. The functor handles this and all we need to do is to use the mapping function. It makes our coding life easier! 😄
 
-This might seem to make little sense now but stay with me. We will start in off in a language many might be familiar with: JavaScript!
+This might seem to make little sense now but stay with me. We will start off in a language many might be familiar with: JavaScript!
 
 ## My first functor
 
@@ -58,11 +58,11 @@ type Maybe a
     | Nothing
 ```
 
-This defines a type called Maybe which contains a value `a` (small letter means any type). It represents to different "states": `Just` for when you have a value and `Nothing` when you have nothing. 
+This defines a type called Maybe which contains a value `a` (small letter means any type). It represents two different "states": `Just` for when you have a value and `Nothing` when you have nothing. 
 
-You might have been in a situation where some of the data you get from the backend might not allways be available so you end up having to check of fields are `null` or `undefined`. In Elm we can use Maybe to model this.
+You might have been in a situation where some of the data you get from the backend might not always be available so you end up having to check of fields are `null` or `undefined`. In Elm we can use Maybe to model this.
 
-Lets say you have a field of type Int that might not be available in all situations and we model with a Maybe. This gives us a value of `Maybe Int`. We might later need this value to be a string. We can use `Maybe.map` and `String.fromInt` to easily convert it to Elms string type:
+Lets say you have a field of type Int that might not be available in all situations. To model this we can use the `Maybe` type. This gives us a value of `Maybe Int`. We might later need this value to be a string. We can use `Maybe.map` and `String.fromInt` to easily convert it to Elm’s string type:
 
 ```elm
 -- maybeInt might be Just 42 or Nothing
@@ -70,7 +70,7 @@ Lets say you have a field of type Int that might not be available in all situati
 Maybe.map String.fromInt maybeInt
 -- output: Maybe String
 ```
-Later we can use Elms case expression to get the value so we can display it to the user.
+Later we can use Elm’s case expression to get the value so we can display it to the user.
 
 ```
 showString maybeString =
@@ -84,7 +84,7 @@ showString maybeString =
 
 ## More complicated structures
 
-The Maybe type is fairly intuitive in that we understand that when we have and instance of `Nothing` there is nothing to do and it is relatively simple to just use a case expression to access and transform the value that way. If the type/structure we are working on is more complicated like the [RemoteData](https://package.elm-lang.org/packages/krisajenkins/remotedata/latest/RemoteData#RemoteData) type the `map` function makes our life easier.
+The Maybe type is fairly intuitive in that we understand that when we have an instance of `Nothing` there is nothing to do and it is relatively simple to just use a case expression to access and transform the value that way. If the type/structure we are working on is more complicated like the [RemoteData](https://package.elm-lang.org/packages/krisajenkins/remotedata/latest/RemoteData#RemoteData) type the `map` function makes our life easier.
 
 ```elm
 type RemoteData e a
@@ -124,4 +124,4 @@ RemoteData.map transformFunction remoteDataValue
 
 Does not that look a bit easier to use? 😄
 
-There is a lot more to be said about functors but I hope this was a good intro. If you want to explore it more I recommend you to take a look at [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) which has greate illustrations.
+There is a lot more to be said about functors but I hope this was a good intro. If you want to explore it more I recommend you to take a look at [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) which has great illustrations.
