@@ -13,13 +13,13 @@ In creative problem solving “a new set of eyes” and a “new perspective” 
 
 User needs are the designer’s responsibility, but user insight alone doesn’t cover the knowledge you require to accommodate these needs. You have to know the purpose of the service or system you work with, the business goals of the supplier, the supplier’s market, as well as other external factors. This knowledge will help you solve problems in a better way. Here’s why:
 
-_**1 Creating Ripples**_\
+**1 Creating Ripples**\
 What you do as a designer creates ripples in the system, service, or environment it is implemented in. If you don’t know the domain, you also don’t know the extent of the area you are influencing.
 
-_**2 Prioritization**_\
+**2 Prioritization**\
 Knowledge helps you prioritize correctly. What is low cost and high value? Both for the customer and the business.
 
-_**3 Evolution**_\
+**3 Evolution**\
 Build on what you know to move the service further. It doesn’t mean you have to stay trapped in old tracks. 
 
 ## The ripple effect
