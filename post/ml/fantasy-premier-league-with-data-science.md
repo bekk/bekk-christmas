@@ -12,13 +12,13 @@ description: >-
 ---
 If you’re a below-average Fantasy Premier League performer and an above-average data science enthusiast, we have at least two things in common – and you’ve found exactly the right article!
 
-Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare three classic prediction models: linear regression, a basic neural network, and random forest. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
+Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
-The process for all models is built on three steps. First, the models are trained to predict expected amount of points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in a new round (in our case, game week 19). Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
+The process for both models is built on three steps. First, the models are trained to predict expected amount of points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in a new round (in our case, game week 19). Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
 ### 1. Training the models
 
-The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player are:
+The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
 
 * Position (4 variables)
 * Team (20 variables)
@@ -26,7 +26,7 @@ The models are trained using data provided by Github user [Vaastav Anand](https:
 * Home/away game (1 variable)
 * Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (5 variables)
 
-This results in 50 input variables in total, with points scored in the testing round as the dependent variable.
+This results in 50 input variables in total, with points scored in the testing round as the dependent variable. The linear regression is set up 
 
 ### 2. Predicting points
 
@@ -43,5 +43,7 @@ Lorem ipsum
 ### Next steps
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
+
 <sup>2</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
+
 <sup>3</sup>Subtitutes are accounted for in the available budget, but are not subbed in should any of the players in the first XI not play.
