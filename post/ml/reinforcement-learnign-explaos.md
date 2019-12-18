@@ -10,7 +10,8 @@ ingress: >-
   learning algorithms where the same algorithm can perform a huge variety of
   tasks. The ultimate goal by many reinforcement learning researchers is to
   create machines that can learn to solve any general task, just like humans!
-  Today we're going to take a brief look at some of the coolest projects and
+  Yesterday's article introduced you to the concept of reinforcement learning,
+  and today we're going to take a brief look at some of the coolest projects and
   greatest breakthroughs in the field of self-learning machines.
 links: []
 authors:
@@ -18,7 +19,7 @@ authors:
 ---
 While there are many companies specializing in Reinforcement Learning these days, we'll take a deeper look at one who has been focusing on learning machines to play increasingly complex games, namely _DeepMind_. By having the same algorithm learn to play multiple games from scratch without being explicitly programmed to play any of them, they get one step closer to general artificial intelligence (or singuarity, which may well be the end of all of humanity).
 
-This is what DeepMind did do Atari games in 2013. They presented a Deep Learning model that learnt to play seven different Atari games from scratch. The really groundbreaking thing about this achievement was that the machines didn't need any information other than the game frames to learn. They were essentially able to learn playing the games just by looking at the screen (like humans!) while smashing random buttons (like humans playing Tekken!) – until their random actions eventually started paying off. The machines would then recognize which actions paid off and which didn’t, and after trying again and again, occasionally succeeding while failing a million times along the way, they would become experts. With no human guidance.
+This is what DeepMind managed to do with their Deepin 2013. As introduced in yesterday's article, they presented a Deep Learning model that learnt to play seven different Atari games from scratch. The really groundbreaking thing about this achievement was that the machines didn't need any information other than the game frames to learn. They were essentially able to learn playing the games just by looking at the screen (like humans!) while smashing random buttons (like humans playing Tekken!) – until their random actions eventually started paying off. The machines would then recognize which actions paid off and which didn’t, and after trying again and again, occasionally succeeding while failing a million times along the way, they would become experts. With no human guidance.
 
 ![Breakout](https://i.ibb.co/x2rK5TB/atari.gif)
 
@@ -33,7 +34,7 @@ While machines have been better than every living human at chess for about 20 ye
 
 Instead of looking at all the possible moves, AlphaGo uses a Monte Carlo tree search to suggest moves based on knowledge it has previously learnt by its neural network. This makes it _think_ in a way that might make it resemble humans more than computers.
 
-Remember: DeepMind's ultimate goal is to _solve_ general intelligence. While AlphaGo trained and improved on its own, it also needed human games, so the natural next step was to create a version that could learn _only_ by itself. Humans are after all fallible. In 2017, they created _AlphaGo Zero_ and _Alpha Zero_, programs that were capable of learning only by playing itself. AlphaZero also learnt to play Chess and Shogi better than all previous players, both humans and machines. With its ability to learn to play any two-player perfect information games, it had broken another milestone in the quest for general intelligence.
+Remember: DeepMind's ultimate goal is to _solve_ general intelligence, to create computers capable of learning any task. While AlphaGo trained and improved on its own, it also needed human games to learn from, so the natural next step was to create a version that could learn _only_ by itself. Humans are after all fallible. In 2017, they created _AlphaGo Zero_ and _Alpha Zero_, programs that were capable of learning only by playing itself. AlphaZero also learnt to play Chess and Shogi better than all previous players, both humans and machines. With its ability to learn to play any two-player perfect information games, it had broken another milestone in the quest for general intelligence.
 
 But we're not done yet. Only one month ago, DeepMind presented a new model, *AlphaMu*, with an even higher degree of generality. Although AlphaZero learnt to play games with no human guidance on how to excel at them, they obviously needed to know the rules in advance, right? Well, this new model doesn't even need to know the rules of the games it plays. It also achieved state-of-the-art performance in 57 Atari games as well as matching the performance of AlphaZero at chess, go and shogi!
 
