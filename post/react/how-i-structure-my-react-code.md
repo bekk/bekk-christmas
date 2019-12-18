@@ -46,7 +46,7 @@ const EditMyInformationToSanta = ({ person }) => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [hasBeenNice, setHasBeenNice] = useState(null);
+  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -144,16 +144,16 @@ const EditMyInformationToSanta = ({ person }) => {
           <input
             type="radio"
             value={false}
-            checked={hasBeenNice === false}
-            onChange={event => setHasBeenNice(event.target.value)}
+            checked={naughtyOrNice === false}
+            onChange={event => setNaughtyOrNice(event.target.value)}
           />
 
           <label>Nice</label>
           <input
             type="radio"
             value={true}
-            checked={hasBeenNice}
-            onChange={event => setHasBeenNice(event.target.value)}
+            checked={naughtyOrNice}
+            onChange={event => setNaughtyOrNice(event.target.value)}
           />
         </div>
 
@@ -171,12 +171,14 @@ const EditMyInformationToSanta = ({ person }) => {
 
           <button
             type="button"
+            value="Add wish"
             onClick={() => {
               setWishList(wishList.concat(wish));
               setWish('');
             }}
           />
 
+          <span>My wish list:</span>
           <ul>
             {wishList.map(wish => (
               <li>{wish}</li>
@@ -306,7 +308,7 @@ const EditMyInformationToSanta = ({ person }) => {
         </div>
 
         <div>
-          <h2>My wishes this year:</h2>
+          <h2>My wishes this year</h2>
           <TextInputWithLabel
             label="I want:"
             placeholder="Write a wish"
@@ -316,13 +318,14 @@ const EditMyInformationToSanta = ({ person }) => {
 
           <button
             type="button"
+            value="Add wish"
             onClick={() => {
               setWishList(wishList.concat(wish));
               setWish('');
             }}
           />
 
-          <span>Your wish list</span>
+          <span>My wish list:</span>
           <ul>
             {wishList.map(wish => (
               <li>{wish}</li>
@@ -397,9 +400,9 @@ const EditMyInformationToSanta = ({ person }) => {
     <div>
       <h1>Hi, Santa! This is me</h1>
       <form>
-        <AboutMe me={me} onMeChange={updatedMeState => setMeState(updatedMeState)} />
+        <AboutMe me={me} onMeChange={setMeState} />
 
-        <MyWishes           wish={wish}           wishList={wishList}           onWishChange={setWish}           onWishListChange={setWishList}         />
+        <MyWishes wish={wish} wishList={wishList} onWishChange={setWish} onWishListChange={setWishList} />
 
         <LetterToSanta letterToSanta={letterToSanta} onLetterChange={setLetterToSanta} />
 
