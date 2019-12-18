@@ -94,7 +94,7 @@ type RemoteData e a
     | Success a
 ```
 
-This type represents and helps us model the states a HTTP request can be in. In many situations the interesting part is the Success state and its value. 
+This type represents and helps us model the states a HTTP request can be in. In many situations the interesting part is the `Success` state and its value. 
 If we want to access the value we expect after a successful request through the case expression it would look something like this:
 
 ```
@@ -114,7 +114,7 @@ case remoteDataValue of
 
 This gets tiresome very quickly! Functor to the rescue! 🎉  
 
-`RemoteData.map` makes it easy for us to transform this value without a case statement where we need to handle every possible state of the type.
+`RemoteData.map` makes it easy for us to transform this value without a case expression where we need to handle every possible state of the type.
 
 This has the same functionality as the code above:
 
@@ -124,4 +124,4 @@ RemoteData.map transformFunction remoteDataValue
 
 Does not that look a bit easier to use? 😄
 
-There is a lot more to be said about functors but I hope this was a good intro. If you want to explore it more I recommend you to take a look at [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) which has great illustrations.
+There is a lot more to be said about functors but I hope this was a good intro. If you want to explore it more I recommend you to take a look at [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) which has great illustrations or listen to LambdaCast episode 16 on functors.
