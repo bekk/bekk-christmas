@@ -23,7 +23,7 @@ This is what DeepMind demonstrated when they had a go at Atari games in 2013. As
 
 ![Breakout](https://i.ibb.co/x2rK5TB/atari.gif)
 
-_Breakout var ett av Atari-spillene som modellen til DeepMind lærte seg å spille._
+_Breakout was one of the Atari games that DeepMind's reinforcement learning model learnt to play._
 
 
 The following years, DeepMind went ahead and beat increasingly complex games, utilizing novel reinforcement learning techniques to beat games that were previously thought to be extremely hard for computers to be good at because of their high complexity. In 2015, they gave birth to _AlphaGo_.
