@@ -11,14 +11,13 @@ authors:
 ---
 ## The App and the Web
 
-Currently my colleagues and I are developing the web application and the mobile application for a Norwegian company named Entur. These applications lets the user plan their journey, buy tickets, create a profile and add payment options, and other functionalities. 
+Currently my colleagues and I are developing the web application and the native application for a Norwegian company named Entur. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed, we use React for web and for native we are using React Native. 
 
-For web we are using React and for mobile we are using React Native. 
-
-We have that (dis)advantage that web app and mobile app mostly contains the same functionality.
-In stead of having to maintain two separate repositories, we have one repository.
+We have that (dis)advantage that the web app and mobile app mostly contains the same functionality. And as you may have foreseen, this creates two versions of our code. So, in stead of having to maintain two separate repositories, we ended up using one repository (monorepo).
 
 ## The Monorepo
+
+A monorepo is just a repository containing several projects. 
 
 How to structure your repo? When developing Feature X, where does it make most sense to put your component that will be 95% identical to the one for app? 
 
@@ -26,7 +25,7 @@ You may be familiar with the differences between React and React Native, instead
 
 ```
 <div>
-    Bekk.christmas!
+    Bekk.christmas!!!
 </div>
 ```
 
@@ -35,7 +34,7 @@ you have:
 ```
 <View>
     <Text>
-       Bekk.christmas!
+        Bekk.christmas!!!
     </Text>
 </View
 ```
@@ -51,7 +50,6 @@ packages
     |_ client-web
         |_ index.js
     ...
-
     |_ profile
         |_ index.native.js
         |_ index.web.js
@@ -64,22 +62,27 @@ packages
 
 > Duplication is far cheaper than the wrong abstraction.
 
-### Helpers
+The web and app components often shares the same logic. Therefore there are no need to implement the same pure javascript functions over again. Small helper functions are divided in separate files, and since both the web and app components is in the same folder, no problem accessing it. A dear file has many names, for instance utils, commons, but we call the files for `helper.js`.
 
-The web and app components often shares the same logic. Therefore there are no need to implement the same pure javascript functions over again.
-
-A dear child has many names, for instance utils, commons, 
+```
+|_ profile
+    |_ index.native.js
+    |_ index.web.js
+    |_ helper.js
+```
 
 ### Setup
 
-This is pain.
-The upgrade to React Native 0.61 took one week and one patch.
+React Native and node_modules
+Flow and flow-typed files
+Rarely good support of frameworks by default 
+
 
 ## The Experience
 
-We experienced sometimes that one of the applications often was favored. 
+The dilemma we experience is to develop 
 
-Don't even get me started on the duplicate styles. 
+We experienced sometimes that one of the applications often was favored. By having more knowledge about the app, the easier it was to continue working on it and get even better known with all the systems and components. 
 
-## The Alternatives?
+Another aspect of 
 
