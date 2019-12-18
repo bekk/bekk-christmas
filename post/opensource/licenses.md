@@ -48,7 +48,7 @@ be sued by just looking at the software.
 
 Freedom ≠ Gratis: Being allowed to use something as you please still
 doesn't necessarily mean it has to be gratis. And being gratis doesn't
-been your allowed to use it for your needs.
+mean you're allowed to use it for your needs.
 
 Open ≠ Can Use: In short, Open Source doesn't mean you can or are
 allowed to use it
