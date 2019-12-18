@@ -15,7 +15,7 @@ The removed packages are:
 
 * JAF (`java.activation`)
 * CORBA (`java.corba`)
-* JTA (`java.transaction`)
+* JTA (`javax.transaction`)
 * JAXB (`java.xml.bind`)
 * JAX-WS (`java.xml.ws`)
 * Common Annotations (`java.xml.ws.annotation`)
@@ -36,7 +36,7 @@ Replacement Maven artifacts:
 
 In the [JEP](http://openjdk.java.net/jeps/320#CORBA-and-JTA-modules) it is stated that «There will not be a standalone version of CORBA unless third parties take over maintenance of the CORBA APIs, ORB implementation, CosNaming provider, etc.». However, you may have a look at [Glassfish CORBA ORB](https://github.com/eclipse-ee4j/orb). According to the website it «[…] complies with the CORBA 2.3.1 specification, and with the CORBA 3.0 specifications for the Interoperable Name Service and Portable Interceptors. It includes both IDL and RMI-IIOP support».
 
-**JTA (`java.transaction`)**
+**JTA (`javax.transaction`)**
 
 ```xml
 <dependency>
