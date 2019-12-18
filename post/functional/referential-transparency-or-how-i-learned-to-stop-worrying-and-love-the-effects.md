@@ -6,6 +6,8 @@ title: >-
   Referential transparency - Or how I learned to stop worrying and love the
   effects
 ingress: ''
+authors:
+  - Per Øyvind Kanestrøm
 ---
 In functional programming we are often concerned with mathematical or pure
 functions - functions that do not perform side effects. Side effects are
