@@ -1,6 +1,6 @@
 ---
 title: Olav Folkestad
-socialMediaLink: 'https://bekk.no'
+socialMediaLink: ''
 company: Bekk
 ---
 
