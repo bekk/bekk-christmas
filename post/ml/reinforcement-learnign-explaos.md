@@ -13,7 +13,15 @@ ingress: >-
   Yesterday's article introduced you to the concept of reinforcement learning,
   and today we're going to take a brief look at some of the coolest projects and
   greatest breakthroughs in the field of self-learning machines.
-links: []
+links:
+  - title: Playing Atari with Deep Reinforcement Learning
+    url: >-
+      https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning
+  - title: 'AlphaZero: Shedding new light on chess, shogi, and Go'
+    url: >-
+      https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go
+  - title: 'Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model'
+    url: 'https://arxiv.org/abs/1911.08265'
 authors:
   - Asbjørn Steinskog
 ---
