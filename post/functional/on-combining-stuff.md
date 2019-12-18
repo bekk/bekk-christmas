@@ -5,6 +5,8 @@ post_day: 19
 title: On combining stuff
 ingress: ''
 description: ''
+authors:
+  - Per Øyvind Kanestrøm
 ---
 In this post we will take a small peak into the general concept of combining
 things with other things. We all know about and how to use the plus operator
