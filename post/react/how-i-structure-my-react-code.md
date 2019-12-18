@@ -68,66 +68,60 @@ const EditMyInformationToSanta = ({ person }) => {
 
   return (
     <div>
-      <h1>Hi, santa! This is me</h1>
+      <h1>Hi, Santa! This is me</h1>
       <form>
-        <h2>About me</h2>
+        <h2>About me:</h2>
 
         <label>
-          <span>Name</span>}
+          <span>My name is:</span>
           <input
             type="text"
             value={name}
-            placeholder="Your name"
+            placeholder="Write your name"
             onChange={event => setName(event.target.value)}
-            inputMode={inputMode}
           />
         </label>
 
         <label>
-          <span>How old are you?</span>}
+          <span>My age is:</span>
           <input
             type="text"
             value={age}
-            placeholder="Your age"
+            placeholder="Tell Santa your age"
             onChange={event => setAge(event.target.value)}
-            inputMode={inputMode}
           />
         </label>
 
         <div>
-          <span>Boy or girl?</span>
-          <input
-            type="radio"
-            value="girl"
-            checked={gender === 'girl'}
-            onChange={event => setGender(event.target.value)}
-          />
+          <span>I am a...</span>
+          <label>Boy</label>
           <input
             type="radio"
             value="boy"
             checked={gender === 'boy'}
             onChange={event => setGender(event.target.value)}
           />
+          <label>Girl</label>
+          <input
+            type="radio"
+            value="girl"
+            checked={gender === 'girl'}
+            onChange={event => setGender(event.target.value)}
+          />
         </div>
 
         <label>
-          <span>Where do you live?</span>}
+          <span>My address is:</span>
           <input
             type="text"
             value={address}
-            placeholder="Your address"
+            placeholder="Where do you live?"
             onChange={event => setAddress(event.target.value)}
-            inputMode={inputMode}
           />
         </label>
 
-        <label>
-          Has a fireplace:
-          <input type="checkbox" checked={person.hasFireplace} />
-        </label>
-
         <div>
-          <span>Do you have a fireplace?</span>
+          <span>I have a fireplace?</span>
           <label>Yes</label>
           <input
             type="radio"
@@ -145,38 +139,35 @@ const EditMyInformationToSanta = ({ person }) => {
         </div>
 
         <div>
-          <span>Have you been naughty or nice?</span>
+          <span>This year I have been naughty or nice?</span>
           <label>Naughty</label>
-          <input
-            type="radio"
-            value={true}
-            checked={hasBeenNice}
-            onChange={event => setHasBeenNice(event.target.value)}
-          />
-          <label>Nice</label>
           <input
             type="radio"
             value={false}
             checked={hasBeenNice === false}
             onChange={event => setHasBeenNice(event.target.value)}
           />
+
+          <label>Nice</label>
+          <input
+            type="radio"
+            value={true}
+            checked={hasBeenNice}
+            onChange={event => setHasBeenNice(event.target.value)}
+          />
         </div>
 
-        <textarea
-          onChange={event => {
-            setLetterToSanta(event.target.value);
-          }}
-          value={letterToSanta}
-        />
-
         <div>
-          <h2>Your wishes this year</h2>
-          <input
-            type="text"
-            value={wish}
-            placeholder="Enter your wish"
-            onChange={event => setWish(event.target.value)}
-          />
+          <h2>My wishes this year:</h2>
+          <label>
+            <span>I want:</span>
+            <input
+              type="text"
+              value={wish}
+              placeholder="Write a wish"
+              onChange={event => setWish(event.target.value)}
+            />
+          </label>
 
           <button
             type="button"
@@ -193,7 +184,16 @@ const EditMyInformationToSanta = ({ person }) => {
           </ul>
         </div>
 
-        <button type="submit" onClick={() => submitMyInformationToSanta()} />
+        <div>
+          <h2>Santa, I also want to tell you...</h2>
+          <textarea
+            placeholder="Do you want to say something to Santa?"
+            onChange={event => setLetterToSanta(event.target.value)}
+            value={letterToSanta}
+          />
+        </div>
+
+        <button type="submit" onClick={submitMyInformationToSanta} />
       </form>
     </div>
   );
@@ -211,48 +211,57 @@ import React, { useState } from 'react';
 import { saveMyInformationToSanta } from '../../api/santa-api';
 import TextInputWithLabel from '../../components/text-input/TextInputWithLabel';
 import RadioToggle from '../../components/radio-toggle/RadioToggle';
+
 const EditMyInformationToSanta = ({ person }) => {
   const [name, setName] = useState('');
+
   const [age, setAge] = useState('');
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [naugtyOrNice, setNaughtyOrNice] = useState(null);
+  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
+
   const submitMyInformationToSanta = async event => {
     event.preventDefault();
+
     await saveMyInformationToSanta({
       name,
       age,
       gender,
       address,
       hasFireplace,
-      hasBeenNice,
+      naughtyOrNice,
       letterToSanta,
       wishList,
     });
   };
+
   return (
     <div>
-      <h1>Hi, santa! This is me</h1>
+      <h1>Hi, Santa! This is me</h1>
       <form>
         <h2>About me</h2>
+
         <TextInputWithLabel
-          label="Name"
-          placeholder="Your name"
+          label="My name is:"
+          placeholder="Write your name"
           value={name}
           onChange={event => setName(event.target.value)}
         />
+
         <TextInputWithLabel
-          label="How old are you?"
-          placeholder="Your age"
+          label="My age is:"
+          placeholder="Tell Santa your age"
           value={age}
           onChange={event => setAge(event.target.value)}
         />
+
         <div>
-          <span>Boy or girl?</span>
+          <span>I am a...</span>
+
           <RadioToggle
             label1="Boy"
             toggleValue1="boy"
@@ -262,18 +271,17 @@ const EditMyInformationToSanta = ({ person }) => {
             onChange={event => setGender(event.target.value)}
           />
         </div>
-        <label>
-          <span>Where do you live?</span>}
-          <input
-            type="text"
-            value={address}
-            placeholder="Your address"
-            onChange={event => setAddress(event.target.value)}
-            inputMode={inputMode}
-          />
-        </label>
+
+        <TextInputWithLabel
+          label="My address is:"
+          placeholder="Where do you live?"
+          value={address}
+          onChange={event => setAddress(event.target.value)}
+        />
+
         <div>
-          <span>Do you have a fireplace?</span>
+          <span>I have a fireplace?</span>
+
           <RadioToggle
             label1="Yes"
             toggleValue1={true}
@@ -283,30 +291,29 @@ const EditMyInformationToSanta = ({ person }) => {
             onChange={event => setHasFireplace(event.target.value)}
           />
         </div>
+
         <div>
-          <span>Have you been naughty or nice this year?</span>
+          <span>This year I have been naughty or nice?</span>
+
           <RadioToggle
             label1="Naughty"
             toggleValue1="naughty"
             label2="Nice"
             toggleValue2="nice"
-            value={naugtyOrNice}
+            value={naughtyOrNice}
             onChange={event => setNaughtyOrNice(event.target.value)}
           />
         </div>
-        <textarea
-          onChange={event => {
-            setLetterToSanta(event.target.value);
-          }}
-          value={letterToSanta}
-        />
+
         <div>
+          <h2>My wishes this year:</h2>
           <TextInputWithLabel
-            label="Your wishes this year"
-            placeholder="Enter a wish"
+            label="I want:"
+            placeholder="Write a wish"
             value={wish}
             onChange={event => setWish(event.target.value)}
           />
+
           <button
             type="button"
             onClick={() => {
@@ -314,6 +321,7 @@ const EditMyInformationToSanta = ({ person }) => {
               setWish('');
             }}
           />
+
           <span>Your wish list</span>
           <ul>
             {wishList.map(wish => (
@@ -321,13 +329,23 @@ const EditMyInformationToSanta = ({ person }) => {
             ))}
           </ul>
         </div>
-        <button type="submit" onClick={() => submitMyInformationToSanta()} />
+
+        <div>
+          <h2>Santa, I also want to tell you...</h2>
+          <textarea
+            placeholder="Do you want to say something to Santa?"
+            onChange={event => setLetterToSanta(event.target.value)}
+            value={letterToSanta}
+          />
+        </div>
+
+        <button type="submit" onClick={submitMyInformationToSanta} />
       </form>
     </div>
   );
 };
-export default EditMyInformationToSanta;
 
+export default EditMyInformationToSanta;
 ```
 
 Note that, even though I'm not sure if the inputs and radio buttons will ever be used by other parts of my application, I'm still choosing to move them into their own separate files. These are placed as close to the original component as possible, so they're as close as possible to where they're used. 
@@ -377,26 +395,15 @@ const EditMyInformationToSanta = ({ person }) => {
 
   return (
     <div>
-      <h1>Hi, santa! This is me</h1>
+      <h1>Hi, Santa! This is me</h1>
       <form>
-        <AboutMe
-          me={me}
-          onMeChange={updatedMeState => setMeState(updatedMeState)}
-        />
+        <AboutMe me={me} onMeChange={updatedMeState => setMeState(updatedMeState)} />
 
-        <LetterToSanta
-          letterToSanta={letterToSanta}
-          onLetterChange={setLetterToSanta}
-        />
+        <MyWishes           wish={wish}           wishList={wishList}           onWishChange={setWish}           onWishListChange={setWishList}         />
 
-        <MyWishes
-          wish={wish}
-          wishList={wishList}
-          onWishChange={setWish}
-          onWishListChange={setWishList}
-        />
+        <LetterToSanta letterToSanta={letterToSanta} onLetterChange={setLetterToSanta} />
 
-        <button type="submit" onClick={() => submitMyInformationToSanta()} />
+        <button type="submit" onClick={submitMyInformationToSanta} />
       </form>
     </div>
   );
@@ -437,4 +444,4 @@ I want to end on the same note I started the entire article with. Agreeing on co
 
 Getting everybody in your team to agree on what looks the nicest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, and tries to incorporate most of them in your strategy - you can at least make everybody feel included in the decision.
 
-No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. It helps with onboarding new developers, and keeping everybody as productive as possible. 
+No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. It helps with onboarding new developers, and keeping everybody as productive as possible.
