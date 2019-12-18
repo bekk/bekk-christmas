@@ -236,7 +236,7 @@ attribution.
 "Do whatever you want, but don't sue me"
 
   - CC0
-  - Unlicence: Bruk heller CC0
+  - Unlicence: Rather use CC0
   - Public Domain: Might not be valid in many countries – stay away
 
 ## Non-free
