@@ -16,7 +16,7 @@ links:
 authors:
   - Dan Abramov
 ---
-During my time on the React team, I’ve been lucky to see how [Jordan](https://twitter.com/jordwalke), [Sebastian](https://twitter.com/sebmarkbage), [Sophie](https://twitter.com/sophiebits) and other tenured team members approach problems. In this post, I'm distilling what I learned from them into a few high-level technical principles. These principles aren’t meant to be exhaustive, and I don’t claim to speak for other people on the team. This is <i>my</i> attempt to formalize observations about how the React team operates, but other team members may have different perspectives.
+During my time on the React team, I’ve been lucky to see how [Jordan](https://twitter.com/jordwalke), [Sebastian](https://twitter.com/sebmarkbage), [Sophie](https://twitter.com/sophiebits) and other tenured team members approach problems. In this post, I'm distilling what I learned from them into a few high-level technical principles. These principles aren’t meant to be exhaustive. This is my personal attempt to formalize observations about how the React team operates — other team members may have different perspectives.
 
 ## UI Before API
 
