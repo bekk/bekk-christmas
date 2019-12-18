@@ -15,14 +15,12 @@ description: >-
   data quality as you do can often be a nightmare. This article describes how we
   use Azure Functions, ServiceBus and BlobStorage to mitigate problems that can
   occur during sketchy data-imports.
-links:
-  - title: Demo Code on Github
-    url: 'https://github.com/abydal/christmas'
+links: []
 authors:
   - Asbjørn Bydal
 ---
-I currently work for a client where the brand new system we are developing needs to receive a lot of customer data from older systems. Typically data arrives on a daily or weekly schedule in data-formats such as csv or fixed-width-field. 
-Reading and parsing these types of files usually boils down to using the correct library. But cleaning, validating, and synchronizing these imports with existing data can often lead to a good deal of processing per row. Failures or inadequate data will almost certainly occur in one or more rows of incoming files, where the length can be up to ten or even a hundred thousand rows.
+I currently work for a client where the brand new system we are developing needs to receive a lot of customer data from older systems. Typically data arrives on a daily or weekly schedule in data-formats such as [csv](https://en.wikipedia.org/wiki/Comma-separated_values) or [flat file](https://en.wikipedia.org/wiki/Flat-file_database). 
+Reading and parsing these types of files usually boils down to using the correct library (we use [FileHelpers](https://www.filehelpers.net/)). But cleaning, validating, and synchronizing these imports with existing data can often lead to a good deal of processing per row. Failures or inadequate data will almost certainly occur in one or more rows of incoming files, where the length can be up to ten or even a hundred thousand rows.
 
 To prevent a single error in a row from stopping the entire process, we have adopted a handy pattern using Azure Functions, Blob storage, and ServiceBus queues. We typically receive files during off-hours, and the import process is triggered immediately by using an Azure Function with a BlobStorageTrigger. Instead of letting that single function handle all of the processing, we send one message per data entity into a ServiceBus Queue. 
 
@@ -76,8 +74,9 @@ public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport",
 This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy, and replay the failing messages with very little effort. We use [Queue Explorer](https://www.cogin.com/mq/) to check for failing messages and to replay messages when needed. 
 
 ![ServiceBus queues displayed in Queue Explorer. Two messages have been dead-lettered](https://i.ibb.co/kH2mpfH/deadletters3.png)
-
 Alongside the dead-lettered message we also provide information on the exception that occurred.
 
-
 Another benefit of this approach is its ability to scale. A cautionary note here. If you query or send data to other services you don't control during processing, keep in mind that big files with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput.
+
+- [The demo code on GitHub](https://github.com/abydal/christmas)
+- [Microsoft Docs on Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
