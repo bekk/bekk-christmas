@@ -4,8 +4,8 @@ post_year: 2019
 post_day: 24
 title: What are the React Team Principles?
 description: >-
-  What principles make up a good team? What principles makes up the React Core
-  team? Dan Abramov explains
+  Dan Abramov explains a few high-level technical principles about how the React
+  team works
 links:
   - title: Meet the React Team
     url: 'https://reactjs.org/community/team.html'
