@@ -27,7 +27,7 @@ As a designer you are a problem solver, not a problem maker. To avoid making new
 The world is not a perfect system (as I believed as a kid). No one has that ultimate control, looking over everything to assure that the world is running smoothly. So we need people who can look up and see connections and dependencies to help new, old and changed services to run complementary side by side.
 
 _Wait what? Isn’t this service design?_\
-Of course this help blur the lines between design titles. Where should the Interaction Designer draw the line on what to care about in her work? Hence, the discussion on where an Interaction Designer stops and the Service Designer starts. But, as [Helen discussed in the first article of this calendar](https://ux.christmas/2019/1), no matter what title you have, if your work includes creative problem solving you should solve problems as a part of a whole, not part by part. To do so, you have to know your domain.
+Of course this help blur the lines between design titles. Where should the Interaction Designer draw the line on what to care about in her work? Hence, the discussion on where an Interaction Designer stops and the Service Designer starts. But, as [Helen discussed](https://ux.christmas/2019/1) in the first article of this calendar, no matter what title you have, if your work includes creative problem solving you should solve problems as a part of a whole, not part by part. To do so, you have to know your domain.
 
 ## Prioritize correctly
 
