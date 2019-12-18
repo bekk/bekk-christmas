@@ -40,7 +40,7 @@ It's a lot - so let's just jump in.
 import React, { useState } from 'react';
 import { saveMyInformationToSanta } from '../../api/santa-api';
 
-const EditMyInformationToSanta = ({ person }) => {
+const EditMyInformationToSanta = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [gender, setGender] = useState(null);
@@ -214,7 +214,7 @@ import { saveMyInformationToSanta } from '../../api/santa-api';
 import TextInputWithLabel from './TextInputWithLabel';
 import RadioToggle from './RadioToggle';
 
-const EditMyInformationToSanta = ({ person }) => {
+const EditMyInformationToSanta = () => {
   const [name, setName] = useState('');
 
   const [age, setAge] = useState('');
@@ -372,7 +372,7 @@ import AboutMe from './AboutMe';
 import MyWishes from './MyWishes';
 import LetterToSanta from './LetterToSanta';
 
-const EditMyInformationToSanta = ({ person }) => {
+const EditMyInformationToSanta = () => {
   const [me, setMeState] = useState({
     name: '',
     age: '',
