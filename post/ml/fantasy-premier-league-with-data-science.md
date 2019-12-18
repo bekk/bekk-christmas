@@ -20,13 +20,13 @@ The process for both models is built on three steps. First, the models are train
 
 The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
 
-* Position (4 variables)
+* Position (four variables)
 * Team (20 variables)
 * Opponent team (20 variables)
-* Home/away game (1 variable)
-* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (5 variables)
+* Home/away game (one variable)
+* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (five variables)
 
-This results in 50 input variables in total, with points scored in the testing round as the dependent variable. The linear regression is set up 
+This results in 50 input variables in total, with points scored in the testing round as the dependent variable. The linear regression is set up with the assumed weakest team as reference on the team variable, and the assumed strongest team as reference on the opponent team variable. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function except the output, which 
 
 ### 2. Predicting points
 
