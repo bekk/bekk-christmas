@@ -46,6 +46,6 @@ Remember: DeepMind's ultimate goal is to _solve_ general intelligence; to create
 
 But we're not done yet. Only one month ago, DeepMind presented a new model, *MuZero*, with an even higher degree of generality. Although AlphaZero learnt to play games with no human guidance on how to excel at them, they obviously needed to know the rules in advance, right? Well, this new model doesn't even need to know the rules of the games it plays. By looking at "pictures" of different games, it learns to predict the value function (who's winning), the policy (which action or move to play) and reward function (the action's result). Consequently, _MuZero_ achieved state-of-the-art performance in 57 Atari games as well as matching the performance of AlphaZero at chess, go and shogi! By not needing to know the rules of the games it plays, _MuZero_ can more easily generalize to real-life problems where the dynamics of the environment are unknown.
 
-7 years ago, none of the reinforcement learning examples mentioned in this article existed, and researchers come up with new techniques that improve the agents ability to learn on a weekly basis.
+7 years ago, none of the reinforcement learning examples mentioned in this article existed, and researchers come up with new techniques that improve the machines' ability to learn on a weekly basis.
 
 Who knows where we (or rather, the machines) will be after the next 7?
