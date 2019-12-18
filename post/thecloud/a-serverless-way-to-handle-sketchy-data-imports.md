@@ -3,7 +3,8 @@ calendar: thecloud
 post_year: 2019
 post_day: 19
 title: A serverless way to handle sketchy data imports
-image: 'https://unsplash.com/photos/XSUvsYl_LrE'
+image: >-
+  https://images.unsplash.com/photo-1531324442324-909f6c0394e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80
 ingress: >-
   Data imports from sources that don't care as much about data integrity and
   data quality as you do can often be a nightmare. This article describes how we
@@ -22,7 +23,10 @@ To prevent a single error in a row from stopping the entire process, we have ado
 
 ```csharp
 [FunctionName("BlobStorageTrigger")]
-public static async Task FileReaderFunction([BlobTrigger("customerimport/{fileName}", Connection = "AzureWebJobsStorage")]Stream file, string fileName, [ServiceBus("CustomerImport", Connection = "AzureServiceBusConnection")] ICollector<string> queue, ILogger log)
+public static async Task FileReaderFunction([BlobTrigger("customerimport/{fileName}",
+   Connection = "AzureWebJobsStorage")] Stream file, string fileName,
+   [ServiceBus("CustomerImport", Connection = "AzureServiceBusConnection")],
+   ICollector<string> queue, ILogger log)
 {
   log.LogInformation($"Recieved new customer file {fileName}");
 
@@ -30,10 +34,36 @@ public static async Task FileReaderFunction([BlobTrigger("customerimport/{fileNa
   var rows = BusinessLogic.ReadCustomerCsvFile(file);
 
   // Send all entites to ServiceBus Queue to be picked up and processed
-  var sendTasks = rows.Select(async t => await t.ContinueWith(async s => ueue.Add(await s)));
+  var sendTasks = rows.Select(async t => await t.ContinueWith(async s => queue.Add(await s)));
 
   Task.WaitAll(sendTasks.ToArray());
 }
 ```
 
-The message is picked up by a second Azure Function, which does the heavy data cleaning and validation.  By wrapping the heavy business logic in this second function in a try/catch, we can dead-letter any failing data and provide a helpful error description alongside the original message. 
+The message is picked up by a second Azure Function, which does the heavy data cleaning and validation.  By wrapping the heavy business logic in this second function in a try/catch, we can dead-letter any failing data and provide a helpful error description alongside the original message.
+
+```csharp
+[FunctionName("ServiceBusQueueTrigger")]
+public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport", Connection = "AzureServiceBusConnection")] string customerDataRaw,
+    MessageReceiver messageReceiver,
+    string lockToken,
+    ILogger log)
+{
+    Customer customer;
+
+    try
+    {
+        customer = BusinessLogic.Process(customerDataRaw);
+        log.LogInformation($"Processed customer {customer.FirstName} {customer.LastName}");
+    }
+    catch (Exception e)
+    {
+        await messageReceiver.DeadLetterAsync(lockToken, $"Exception occurred during processing of customer: {e.ToString()}");
+        return;
+    }
+
+    BusinessLogic.PersistToDataModels(customer);
+}
+```
+
+This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy and replay the failing messages with very little effort. It is also higly scalable. A cautionary note here. If you query or send data to other services you don't control, keep in mind that a big file with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput. 
