@@ -3,6 +3,7 @@ calendar: product
 post_year: 2019
 post_day: 24
 title: Historien om Bekk sin fødsel. Hva snakket vi om for 20 år siden?
+image: 'https://i.ibb.co/nCGSF80/IMG-7360.jpg'
 ingress: >-
   Hva snakket vi om for 20 år siden? Hva fikk oss til å snakke om det og starte
   Bekk? Har det skjedd noe ila. de siste 20 årene og hvordan ser de neste 20 ut?
