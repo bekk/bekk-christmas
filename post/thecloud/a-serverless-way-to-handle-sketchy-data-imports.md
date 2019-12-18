@@ -2,27 +2,33 @@
 calendar: thecloud
 post_year: 2019
 post_day: 19
-title: A serverless way to handle sketchy data imports
+title: A serverless approach to handle sketchy data imports
 image: >-
   https://images.unsplash.com/photo-1531324442324-909f6c0394e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80
 ingress: >-
   Data imports from sources that don't care as much about data integrity and
   data quality as you do can often be a nightmare. This article describes how we
-  use Azure Functions, ServiceBus and BlobStorage to mitigate problems that can
+  use Azure Functions, ServiceBus, and BlobStorage to mitigate problems that can
   occur during sketchy data-imports.
 description: >-
   Data imports from sources that don't care as much about data integrity and
   data quality as you do can often be a nightmare. This article describes how we
-  use Azure Functions, ServiceBus and BlobStorage to mitigate problems that can
+  use Azure Functions, ServiceBus, and BlobStorage to mitigate problems that can
   occur during sketchy data-imports.
-links: []
+links:
+  - title: Take your functions to the cloud with 3 simple steps
+    url: 'https://preview.bekk.christmas/thecloud/2019/1'
+  - title: Resilience in a cloud architecture
+    url: 'https://preview.bekk.christmas/thecloud/2019/5'
+  - title: Serverless Library - A massive selection of Azure code samples
+    url: 'https://www.serverlesslibrary.net/'
 authors:
   - Asbjørn Bydal
 ---
-I currently work for a client where the brand new system we are developing needs to receive a lot of customer data from older systems. Typically data arrives on a daily or weekly schedule in data-formats such as [csv](https://en.wikipedia.org/wiki/Comma-separated_values) or [flat file](https://en.wikipedia.org/wiki/Flat-file_database). 
+I currently work for a client where the brand new system we are developing needs to receive a lot of customer data from older systems. Typically data arrives on a daily or weekly schedule in data-formats such as [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) or [flat file](https://en.wikipedia.org/wiki/Flat-file_database). 
 Reading and parsing these types of files usually boils down to using the correct library (we use [FileHelpers](https://www.filehelpers.net/)). But cleaning, validating, and synchronizing these imports with existing data can often lead to a good deal of processing per row. Failures or inadequate data will almost certainly occur in one or more rows of incoming files, where the length can be up to ten or even a hundred thousand rows.
 
-To prevent a single error in a row from stopping the entire process, we have adopted a handy pattern using Azure Functions, Blob storage, and ServiceBus queues. We typically receive files during off-hours, and the import process is triggered immediately by using an Azure Function with a BlobStorageTrigger. Instead of letting that single function handle all of the processing, we send one message per data entity into a ServiceBus Queue. 
+To prevent a single error in a row from stopping the entire process, we have adopted a handy pattern using Azure Functions, Blob storage, and ServiceBus queues. We typically receive files during off-hours, and the import process is triggered immediately by using an Azure Function with a `BlobStorageTrigger`. Instead of letting that single function handle all of the processing, we send one message per data entity into a ServiceBus Queue. 
 
 ```csharp
 [FunctionName("BlobStorageTrigger")]
@@ -71,12 +77,12 @@ public static async Task ProcessWishes([ServiceBusTrigger("CustomerImport",
 }
 ```
 
-This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy, and replay the failing messages with very little effort. We use [Queue Explorer](https://www.cogin.com/mq/) to check for failing messages and to replay messages when needed. 
+This approach provides the benefit of being able to discover a bug or validation scenarios that have not been covered, write a fix, redeploy, and replay the failing messages with minimal effort. We use [Queue Explorer](https://www.cogin.com/mq/) to check for failing messages and to replay messages when needed. 
 
 ![ServiceBus queues displayed in Queue Explorer. Two messages have been dead-lettered](https://i.ibb.co/kH2mpfH/deadletters3.png)
 Alongside the dead-lettered message we also provide information on the exception that occurred.
 
-Another benefit of this approach is its ability to scale. A cautionary note here. If you query or send data to other services you don't control during processing, keep in mind that big files with thousands of rows will very fast become thousands of requests. You should make sure that the recieving end is equally capable of scaling, or consider throtteling your throughput.
+Another benefit of this approach is its ability to scale. A cautionary note here. If you query or send data to other services you don't control during processing, keep in mind that big files with thousands of rows will very fast become thousands of requests. You should make sure that the receiving end is equally capable of scaling or consider throttling your throughput.
 
 - [The demo code on GitHub](https://github.com/abydal/christmas)
 - [Microsoft Docs on Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
