@@ -1,7 +1,7 @@
 ---
 calendar: react
 post_year: 2019
-post_day: 24
+post_day: 19
 title: Setup Azure Serverless Functions in 6 Simple Steps
 image: >-
   https://images.unsplash.com/photo-1488433341267-2cf917b899f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2275&q=80
