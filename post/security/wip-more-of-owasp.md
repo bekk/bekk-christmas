@@ -14,6 +14,8 @@ links:
     url: 'https://github.com/OWASP/Serverless-Top-10-Project'
   - title: The Cloud Christmas
     url: 'https://thecloud.christmas'
+  - title: OWASP Juice Shop
+    url: 'https://www2.owasp.org/www-project-juice-shop/'
 authors:
   - Lars-Erik Wollan
 ---
