@@ -46,7 +46,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
+  const [hasBeenNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -144,7 +144,7 @@ const EditMyInformationToSanta = () => {
           <input
             type="radio"
             value={false}
-            checked={naughtyOrNice === false}
+            checked={hasBeenNice === false}
             onChange={event => setNaughtyOrNice(event.target.value)}
           />
 
@@ -152,7 +152,7 @@ const EditMyInformationToSanta = () => {
           <input
             type="radio"
             value={true}
-            checked={naughtyOrNice}
+            checked={hasBeenNice}
             onChange={event => setNaughtyOrNice(event.target.value)}
           />
         </div>
@@ -221,7 +221,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
+  const [hasBeenNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -235,7 +235,7 @@ const EditMyInformationToSanta = () => {
       gender,
       address,
       hasFireplace,
-      naughtyOrNice,
+      hasBeenNice,
       letterToSanta,
       wishList,
     });
@@ -302,7 +302,7 @@ const EditMyInformationToSanta = () => {
             toggleValue1="naughty"
             label2="Nice"
             toggleValue2="nice"
-            value={naughtyOrNice}
+            value={hasBeenNice}
             onChange={event => setNaughtyOrNice(event.target.value)}
           />
         </div>
@@ -379,7 +379,7 @@ const EditMyInformationToSanta = () => {
     address: '',
     gender: null,
     hasFireplace: null,
-    naughtyOrNice: null,
+    hasBeenNice: null,
   });
 
   const [letterToSanta, setLetterToSanta] = useState('');
