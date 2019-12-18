@@ -2,14 +2,22 @@
 calendar: react
 post_year: 2019
 post_day: 21
-title: 5 neat tricks for the react + typescript combo
+title: 5 neat tricks for React with TypeScript
 image: '![pineaple out of context](https://ibb.co/n74C32d)'
 ingress: ''
-links: []
+links:
+  - title: React+TypeScript Cheatsheets
+    url: 'https://github.com/typescript-cheatsheets/react-typescript-cheatsheet'
+  - title: Official TypeScript docs
+    url: 'https://www.typescriptlang.org/docs/home.html'
 authors:
   - Bendik Ibenholt
 ---
-how to instatiate usesate with null
+**Union types**
+
+
+
+how to instantiate usesate with null
 
 const \[season, setSeason] = React.useState<"christmas" | "easter" | null>(null);
 
