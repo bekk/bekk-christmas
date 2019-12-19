@@ -49,7 +49,7 @@ Yes, knowing the requirements and restrictions of the industry can limit your id
 <br />
 
 <img class="light-theme-image" src="https://i.ibb.co/6mdMCWM/SORTwater-Insight.png" />
-<img class="dark-theme-image" src="https://i.ibb.co/pxpMbGf/HVITwater-Insight.png" />
+<img class="dark-theme-image" src="https://www.guru-utvikling.no/wp-content/uploads/2017/05/Bilde-til-sak-om-bilder-750x365.jpg" />
 
 There are many creative ways to unlock your brain and develop new features even though you already know the technical limitations of a system. Isn’t this exactly what a designer does? Introducing tools to help people think outside of that box? We even have a specific approach for when we don’t know the domain well enough – it’s called co-creation. So, if you don’t know your domain yet (because, of course you will right?) get the people who do to help you in the process. Broader knowledge helps the designer to create more sustainable products with real impact for both the users and the business.  
 
