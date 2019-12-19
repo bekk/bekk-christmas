@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2019
 post_day: 23
 title: WIP Fan-out/fan-in for high scalability with Durable Functions
+image: 'https://ibb.co/4TBZLKr'
 ingress: >-
   Serverless computing has been with us for some years now, and has been
   "production ready" for quite a while. Services like AWS Lambda, Google Cloud
