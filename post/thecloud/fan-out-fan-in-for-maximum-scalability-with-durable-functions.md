@@ -3,12 +3,31 @@ calendar: thecloud
 post_year: 2019
 post_day: 23
 title: WIP Fan-out/fan-in for maximum scalability with Durable Functions
+ingress: >-
+  Serverless computing has been with us for some years now, and has been
+  "production ready" for quite a while. Services like AWS Lambda, Google Cloud
+  Functions, and Azure Functions allows us to create highly scalable services
+  with minimal overhead where you only pay for what you actually need.
+
+
+  Azure Durable Functions is an extension of the Azure Functions family that
+  lets you create stateful functions. This is useful for a lot of different
+  scenarios, including the *fan-out/fan-in* pattern, which we will look into in
+  this blog post.
+description: ''
+links:
+  - title: Azure Durable Functions
+    url: >-
+      https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp
+  - title: 'Create your first durable function in C#'
+    url: >-
+      https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-create-first-csharp
+  - title: Resilience in a cloud architecture
+    url: 'https://thecloud.christmas/2019/5'
 authors:
   - Eivind Sorteberg
 ---
-# Durable functions in Microsoft Azure
-
-## Fan-in fan-out
+## Fan-out/fan-in
 
 ```
             /---c1---\  
@@ -24,9 +43,17 @@ authors:
             \---c9---/
 ```
 
-## Function types
+The fan-out/fan-in pattern is useful in scenarios where you have a root process with multiple child processes that can run in parallel. Each of these child processes may also have more child processes. This is the "fan out" part of fan-out/fan-in, and can easily be implemented using regular functions and some kind of queue. 
+
+However, if you want to have control of your system, you probably want to keep track of when all processes have completed as well as the result of each child process, in other words fanning back in. Azure Durable Functions lets you do this using `Orchestrators`, `SubOrchestrators`, and `Activities`. In addition, you need some kind of `Trigger` function to get the fun started.
+
+In the following sections, I will show an example of creating a Lotto ticket generator using Azure Durable Functions. A Lotto ticket consists of 10 lines, each containing 6 numbers.  This Lotto ticket generator takes a list of people which should get a Lotto ticket, and stores the Lotto tickets someplace safe. Our (somewhat contrived) example also pretends to use an external number generator service to simulate some real world challenges.
+
+The example uses `C#`, `Azure Functions 3`, and `Durable Functions 2`.
 
 ### Activities
+
+The `Activity` function is where the actual work happens when using Durable Functions. An `Activity` works the same way as a regular Azure Function, except that is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the `Activity Function` only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
 
 ```csharp
 public class MyActivity
@@ -39,7 +66,15 @@ public class MyActivity
 }
 ```
 
+So there it is. This `Activity` takes an `int` input, which isn't actually used, calls an external number generator function, and returns the result.
+
+When creating `Activity` functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren´t really running serverless, and you are missing out on the good parts. This means that your `Activity` duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
+
 ### Sub-orchestrators
+
+The `Sub-orchestrator` is responsible for kicking off child processes and returning the results to its parent. `Sub-orchestrators` may be chained to create multiple levels of fanning out, but in our example, we'll only use one `Sub-orchestrator`.
+
+The `Sub-orchestrator` has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like `Activities`, needs to be a `Task` containing the result.
 
 ```csharp
 public class MySubOrchestrator
@@ -54,7 +89,7 @@ public class MySubOrchestrator
             maxNumberOfAttempts: 10
         );
 
-        var numbersTasks = Enumerable.Range(0, 8).Select(i => context.CallActivityWithRetryAsync<byte>(nameof(MyActivity), retryOptions, i));
+        var numbersTasks = Enumerable.Range(0, 6).Select(i => context.CallActivityWithRetryAsync<byte>(nameof(MyActivity), retryOptions, i));
 
         var numbers = await Task.WhenAll(numbersTasks);
 
@@ -63,7 +98,11 @@ public class MySubOrchestrator
 }
 ```
 
+In this example, the `Sub-orchestrator` takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` activity function. These numbers are then returned along with with the name of the ticket's owner.
+
 ### Orchestrators
+
+The `Orhestrator` is the manager of the entire process, and is responsible for starting the child processes, and knowing when they all have completed. In practice, `Orchestrators` are implemented the same way as `Sub-orchestrators` (`Sub-orchestrators` _are_ `Orchestrators`).
 
 ```csharp
 public class MyOrchestrator
@@ -82,7 +121,15 @@ public class MyOrchestrator
 }
 ```
 
+In this `Orchestrator`, a list of ticket owners is provided, and the ticket generator `Sub-orchestrator` is kicked off for each owner. When all tickets have been created, the `Orchestrator` stores the tickets (probably using an `Activity`), and the function completes.
+
+When running `Orchestrators` (and `Sub-orchestrators`), the process is paused when you have kicked off `Activities` or other `Sub-orchestrators`, so you don't need to worry about the 5 minute execution limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. So you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
+
 ### Triggers
+
+The final part of the puzzle is some way to start everything. Azure Functions contains a lot of different `Triggers`, which respond to different types of events. In this example, we will use the `[HttpTrigger]`, which simply creates an HTTP endpoint, and responds to requests to that endpoint.
+
+To start a Durable Function, the activity needs to take a `[DurableClient]` parameter of type `IDurableOrchestrationClient`. This client is then used to start the `Orchestrator` function. 
 
 ```csharp
 public class MyTrigger
@@ -104,9 +151,10 @@ public class MyTrigger
 }
 ```
 
+
 ## Error handling
 
-So, now we have a functioning function, able to scale indefinitely. But what happens when an error occurs, as we all know will happen? After all, computers do have a mind of their own, especially in the cloud. There are a couple of different ways to handle this. But first, we need to discern what kind of errors we can expect.
+So, now we have a functioning function, able to scale indefinitely. But what happens when an error occurs, as we all know will happen? After all, computers do have a mind of their own, especially in the cloud. There are a couple of different ways to handle this, as discussed in a [previous article](https://thecloud.christmas/2019/5). But first, we need to discern what kind of errors we can expect.
 
 #### Transient errors
 
