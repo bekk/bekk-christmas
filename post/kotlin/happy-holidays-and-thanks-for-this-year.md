@@ -12,3 +12,5 @@ ingress: >-
 description: ''
 ---
 We may suspect that Santa's tech stack not always is the most up to date. Perhaps he used to run a pure Java-application, but after reading this calendar he decided to try to add some Kotlin, [just like Øyvind](https://kotlin.christmas/2019/20). 
+
+WIP
