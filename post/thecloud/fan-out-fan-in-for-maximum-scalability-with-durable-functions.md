@@ -24,8 +24,6 @@ links:
   - title: 'Create your first durable function in C#'
     url: >-
       https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-create-first-csharp
-  - title: Resilience in a cloud architecture
-    url: 'https://thecloud.christmas/2019/5'
 authors:
   - Eivind Sorteberg
 ---
