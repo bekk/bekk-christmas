@@ -5,6 +5,7 @@ post_day: 20
 title: A recipe for toasts
 image: >-
   https://images.unsplash.com/photo-1556008531-57e6eefc7be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2539&q=80
+description: Learn how to create your own toast system with React Hooks and Context API
 links:
   - title: Create react app
     url: 'https://github.com/facebook/create-react-app'
@@ -34,9 +35,9 @@ I would like to clarify that we are going to build a toast notification system u
 
 To get started one can for example use create-react-app (CRA) to quickly get going. More information about CRA can be found in the links below. The boilerplate code that gets rendered is:
 
-```
+```js
 function App() {
-  return(
+  return (
     //Boilerplate stuff, everything here gets rendered
   )
 }
@@ -49,27 +50,30 @@ The goal is to make `App()` render toasts whenever needed, and for this we need 
 
 For the sake of simplicity, the function that returns a toast will be as simple as:
 
-```
+```js
 function ToastBody() {
   return (
     <div className="....">
-      i am a toast
+      I am a toast
     </div>
   )
-}  First we create the context:First we create the context:
+}
 ```
 
-```
+First we create the context:
+
+```js
 const ToastContext = createContext();
 ```
 
 The context works by having **Providers** and **Consumers**. The **Provider** shares its values with its children, which are called **Consumers**, without explicitly having to send them down as props. Consider the following:
 
-```
+```js
 const ToastProvider = (props) => {
-  const foo = ... // This is the value that gets sent down to the children/consumers
+  // This is the value that gets sent down to the children/consumers
+  const value = ... 
   return (
-    <ToastContext.Provider value={foo} >
+    <ToastContext.Provider value={value} >
       {props.children}
     </ToastContext.Provider>
   );
@@ -80,7 +84,7 @@ The idea here is that we can wrap any component with the `ToastContext.Provider`
 
 For the toast notification system, we need to able to store things in a state but also handle the state with different types of actions. In this case, an action can be e.g adding a notification to the state or removing one. This is where we can use the `useReducer`-hook.
 
-```
+```js
 const toastReducer = (state, action) => {
   const { payload, type } = action
   switch(type){
@@ -96,7 +100,7 @@ const toastReducer = (state, action) => {
 
 Now we have a state manager where we can from any state either append a toast notification or remove a specific one by the `'ADD_TOAST'` and the `'REMOVE_TOAST'` actions. Making use of the reducer in the `ToastContext.Provider` gives us a working toast notification system and should look something like this:
 
-```
+```js
 const ToastProvider = (props) => {
   const reducer = useReducer(toastReducer, [])
   return (
@@ -113,7 +117,7 @@ All that's left is having some visual logic for dispatching actions and viewing 
 
 The last step consists of putting everything together. By using the `useContext`-hook in components, we make them **Consumers** and thus they get access to both the state of the toast notification system and to the `dispatch` function of the nearest **Provider**. The final result can look something like this:
 
-```
+```js
 import React, { useContext } from 'react'
 import { ToastContext, ToastProvider } from './Toast'
 
@@ -131,8 +135,8 @@ function App() {
 function MainPageStuff() {
   const [,dispatch] = useContext(ToastContext)
   return (
-          <header className="..">
-            .....
+          <header className="...">
+            ....
             <button onClick={ () => dispatch({type: 'ADD_TOAST', payload: {id:Math.random()}})} className="...">Add a Toast!</button>
           </header>
         )
