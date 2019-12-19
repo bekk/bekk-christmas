@@ -210,11 +210,7 @@ var retryOptions = new RetryOptions(
 
 try
 {
-    await context.CallActivityWithRetryAsync<int>(
-        nameof(MyActivity),
-        retryOptions,
-        activityInput
-    );
+    await context.CallActivityWithRetryAsync<int>(nameof(MyActivity), retryOptions, activityInput);
 }
 catch (Exception e)
 {
