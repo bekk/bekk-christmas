@@ -108,7 +108,7 @@ So, we bought the necessary ingredients, prepared for a nice evening, and follow
 
 ![](/assets/20191211_223306.jpg)
 
-So! Here you go! The 8th Christmas Cookie. We have decided to call it "Bekkstang" (A pun on Bekk and the Norwegian translation of Crowbar) and in the future, all these cookies should have an elongated shape. The taste was actually quite interesting, and we definitely consider the use of lemon peel and brandy as a stroke of genius.
+So! Here you go! The 8th Christmas Cookie. We have decided to call it "Bekkstang" (A pun on Bekk and the Norwegian translation of crowbar) and in the future, all these cookies should have an elongated shape. The taste was actually quite interesting, and we definitely consider the use of lemon peel and brandy as a stroke of genius.
 
 You have now reached the end of our calendar, and we hope you haven't lost your appetite (no pun intended) for machine learning and it's wonders. Only your imagination sets the boundaries for what you can do with data science, as we hopefully has shown you throughout this calendar.
 
