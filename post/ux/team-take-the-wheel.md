@@ -4,6 +4,8 @@ post_year: 2019
 post_day: 19
 title: 'Team, take the wheel'
 image: ''
+authors:
+  - Fredrik Matheson
 ---
 A common complaint among teams working with the _conception, design and development of software, self-service, ecommerce and services_ is that they "don't have a seat at the table". 
 
