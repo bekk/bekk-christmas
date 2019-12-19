@@ -120,8 +120,8 @@ const arrowkeys = {
     right: Symbol("Arrow right")
 };
 
-if (key === arrowKeys.up) {
-    // Can ONLY be true for arrowKey.up
+if (key === arrowkeys.up) {
+    // Can ONLY be true for arrowkeys.up
 }
 
 // Debugging is also clearer:
