@@ -21,16 +21,16 @@ authors:
   - Joakim Gyllenskepp
 ---
 # How does mix-blend-mode work?
-Just like when you mix real colors on a palette, computers can do different computations on two color codes to find a new color! Some of you may have played around with this kind of blending in photo editing software where you can apply different effects on photos. CSS supports this kind of blending as well with the mix-blend-mode property, which allows us to blend the colors of different elements! 
+Just like when you mix real colors on a palette, computers can do different computations on two color codes to find a new color! Some of you may have played around with this kind of blending in photo editing software where you can apply different effects on photos. CSS supports blending as well with the mix-blend-mode property, which allows us to blend the colors of different elements! 
 
 The color of the element with the property mix-blend-mode set will be blended with it’s background color. For example, we could put mix-blend-mode on a text-element above an image to have the text color adjusted according to colors of the background, or we could blend two images together to achieve quite a cool effect.
 
-Although, blending with a computer is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, in CSS’s mix-blend-mode the method of blending is specified by different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). 
+Although, blending with a computer is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, in CSS’s mix-blend-mode the method of blending is specified by different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode), but more on that later! 
 Lets get on with some examples on how it actually looks like in practice! 
 
 
 # Blending text on top of an image
-Blending text with a picture is actually quite easy. All it takes is the code below:
+Blending text with a picture is actually quite easy. All it takes is to add the mix-blend-mode property on the element that you want to blend with the background (in this case the text):
 
 ``` CSS
 .text {
@@ -45,7 +45,7 @@ You can see the effect of this code used together with the blending mode *differ
 
 
 # Blending two images with each other
-By blending two images together we can also get quite a cool effect. By just playing around a little with different blend modes I ended up with a colored santa above a snowy landscape - quite cool!
+You can also blend images with each other to get quite a cool effect. By just playing around a little with different blend modes I ended up with a red santa above some snowy landscape - quite nice!
 
 ``` CSS
 .image {
