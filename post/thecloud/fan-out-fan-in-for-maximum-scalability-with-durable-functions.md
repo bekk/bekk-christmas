@@ -73,7 +73,7 @@ public class CreateNumberActivity
 
 So there it is. This activity takes an `int` input, calls an external number generator function, and returns the result.
 
-When creating activity functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren´t really running serverless, and you are missing out on the good parts. This means that your activity duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
+When creating activity functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren't really running serverless, and you are missing out on the good parts. This means that your activity duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
 
 ### Sub-orchestrators
 
