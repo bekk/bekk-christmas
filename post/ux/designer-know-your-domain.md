@@ -59,7 +59,7 @@ There are many creative ways to unlock your brain and develop new features even 
 
 <br>
 
-\-
+.....
 
 So, being able to facilitate workshops, utilize design methods and share user insight isn’t the only thing a designer should be able to do. You have to engage in the whole domain to be able to solve problems in a holistic and sustainable way. A designer’s job isn’t just to fight for user needs, but to do that in relation to what the organisation she works for needs, and what the world needs. 
 
