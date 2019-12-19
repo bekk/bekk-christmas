@@ -153,4 +153,14 @@ function ToastBody({id, dispatch}) {
 }
 ```
 
-Voila! As seen in the `App()`-function we do not need to send down any props to the children component, instead they can extract everything needed using the `useContext`-hook. This was a short introduction to hooks and the context api, and how they can be used together to create a toast notification system. For more information, please visit the links below.
+Voila! As seen in the `App()`-function we do not need to send down any props to the children component, instead they can extract everything needed using the `useContext`-hook. This was a short introduction to hooks and the context api, and how they can be used together to create a toast notification system.
+
+A working example can be found below. For more information on this topic, please visit the given links further down. Have a good day!
+
+<iframe
+     src="https://codesandbox.io/embed/polished-bird-yx7ym?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="polished-bird-yx7ym"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
