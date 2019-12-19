@@ -171,7 +171,7 @@ public class CreateTicketsTrigger
 
 ## Error handling
 
-So, now we have a functioning function, able to scale indefinitely. But what happens when an error occurs, as we all know will happen? After all, computers do have a mind of their own, especially in the cloud. There are a couple of different ways to handle this, as discussed in a [previous article](https://thecloud.christmas/2019/5). But first, we need to discern what kind of errors we can expect.
+So, now we have a functioning function, able to scale indefinitely. But what happens when an error occurs, as we all know will happen? After all, computers do have a mind of their own, especially in the cloud. There are a couple of different ways to handle this, as explained in a [previous post](https://thecloud.christmas/2019/5). But first, we need to discern what kind of errors we can expect.
 
 ### Transient errors
 
