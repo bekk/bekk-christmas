@@ -19,7 +19,7 @@ authors:
 ---
 When we are introduced to Java Generics, parameterized types, or what you choose to call it, it is usually in the context of container classes. The most well-known containers in Java are probably the ones offered by the Collections Framework. Parameterized types is an intuitive fit for managing lists, sets, maps, and other generic collections in a safe way. The alternative before Generics was introduced, was scattering collections around which you can add anything to, and must remember which type you must manually cast to when retrieving elements. Generic collections is an easy concept to grasp and use. It is almost as if Java Generics were introduced solely for collection classes.
 
-But what are those `extends` and `super` words for? And the `?`? They always introduce problems. They seem to be related to why we can't pass a `List<Car>` to a method accepting a `Collection<Vehicle>`, even though a `List` _is_ a `Collection` and a `Car` _is_ a `Vehicle`. We can fix this by having the method accept a `Collection<? extends Vehicle>` instead. Ok, so we can settle with the fact that we can assign the `List` to its super type of `Collection`, but this does not work with those types inside the `<` and `>`. In some cases, and for some reason, we have to be so darn verbose by saying "oh, this is a Collection of something which is a Vehicle of some particular type".
+But what are those `extends` and `super` words for? They always introduce problems. They seem to be related to why we can't pass a `List<Car>` to a method accepting a `Collection<Vehicle>`, even though a `List` _is_ a `Collection` and a `Car` _is_ a `Vehicle`. We can fix this by having the method accept a `Collection<? extends Vehicle>` instead. Ok, so we can settle with the fact that we can assign the `List` to its super type of `Collection`, but this does not work with those types inside the `<` and `>`. In some cases, and for some reason, we have to be so darn verbose by saying "oh, this is a Collection of something which is a Vehicle of some particular type".
 
 And that `super` word. That's just weird.
 
@@ -51,7 +51,7 @@ void addYourCars(List<? extends Vehicle> vehicles) {
 }
 ```
 
-The list of boats which is passed as a _list of some particular type of vehicles_, i.e. `List<? extends Vehicle>`, can not contain cars, and the type system prevents us from having such an error in our program. And we can not trick the type system by assigning the `List<Boat>` to the lesser specific type `List<? extends Vehicle>`, which is what we do by passing it as an argument to the method.
+The list of boats, which is passed as a _list of some particular type of vehicles_, can not have cars added to it, and the type system prevents us from having such an error in our program. We can not trick the type system by assigning the `List<Boat>` to the lesser specific type `List<? extends Vehicle>`, which is what we do by passing it as an argument to the method.
 
 The following code example should make this very evident:
 
