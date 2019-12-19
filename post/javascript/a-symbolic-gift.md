@@ -44,15 +44,19 @@ const colorRed = Symbol("The color red");
 Given the previous description, symbols seem like weird strings that you cannot see. But their main purpose is that _they can be used as property keys on objects_. 
 
 Property keys in JavaScript have before this been confined to strings:
+
 ```javascript
 const ola = {"name": "Ola", "age": 30};
 ```
+
 But now, these keys can be symbols:
+    
 ```javascript
 const name = Symbol();
 const age = Symbol();
 const kari = {[name]: "Kari", [age]: 32};
 ```
+
 And these symbol keys are treated separately from the old fashioned string keys:
 
 ```javascript
@@ -69,7 +73,7 @@ Object.getOwnPropertySymbols(kari).includes(name); // true
 
 Yes, of course you don't. Why write 3 lines of code when 1 would suffice? Their purpose come to light when you consider that all symbols are unique and will never have a name clash. 
 
-```
+```javascript
 // Let's say you want to extend a third party object with your own property "graphics":
 const element = document.getElementById("title");
 
@@ -109,7 +113,12 @@ handleKey(someOtherValue); // interpreted as up!
 The messy solution to this might be to make up some very random values for `arrowkeys`. But the elegant solution is to use symbols instead:
 
 ```javascript
-const arrowkeys = {up: Symbol("Arrow up"), down: Symbol("Arrow down"), left: Symbol("Arrow left"), right: Symbol("Arrow right")};
+const arrowkeys = {
+    up: Symbol("Arrow up"), 
+    down: Symbol("Arrow down"), 
+    left: Symbol("Arrow left"), 
+    right: Symbol("Arrow right")
+};
 
 if (key === arrowKeys.up) {
     // Can ONLY be true for arrowKey.up
