@@ -11,9 +11,9 @@ A common complaint among teams working with the _conception, design and developm
 
 Behind these seven words we find a threefold complaint of not having enough influence in:
 
-* A. _Choosing_ what to work on
-* B. _Deciding_ what the solution should be
-* C. _Shaping_ how the work is done
+A. _Choosing_ what to work on\
+B. _Deciding_ what the solution should be\
+C. _Shaping_ how the work is done
 
 Let's have a look at these might look like:
 
@@ -38,8 +38,9 @@ Let's have a look at these might look like:
 * The team is pressured to start pushing code into production as quickly as possible, leaving little time to come up with a coherent, well-architected solution.
 
 So: to enable optimum outcomes, teams must have sufficient influence in:
-A. _Choosing_ what to work on
-B. _Deciding_ what the solution should be
+
+A. _Choosing_ what to work on\
+B. _Deciding_ what the solution should be\
 C. _Shaping_ how the work is done
 
 For the purposes of our discussion, I'm going to call these working conditions the _Ideal Frame_. 
@@ -54,9 +55,9 @@ You might also have noticed that I didn't include "management" in the phrase. Th
 
 The team operating within the Ideal Frame:
 
-* A. chooses what to work on
-* B. decides what the solution should be
-* C. shapes how the work is done
+A. Chooses what to work on\
+B. Decides what the solution should be\
+C. Shapes how the work is done
 
 For teams already working within the Ideal Frame, these three describe how (or to what degree, nobody's perfect) things are done. For everyone else, they are goals. We must not make the mistake of thinking we can attain the directly.
 
@@ -69,8 +70,8 @@ Because the external conditions vary, the effort it takes to put in place the Id
 
 Thus, we see that the degree to which the team:
 
-A. itself chooses what to work on
-B. itself decides what the solution should be
+A. itself chooses what to work on\
+B. itself decides what the solution should be\
 C. itself shapes how the work is done
 
 … is not endemic to the environment or a function of the team's internal capacity. Instead the degree to which the team achieves all three is the result of the _interaction_ between the team and its environment:
@@ -104,9 +105,10 @@ Here are a few suggestions to get us started:
 # Take the wheel
 
 I began by dissecting a common grumble into its constituent part and flipped these over to reveal that a teams that works in an Ideal Frame:
-A. chooses what to work on
-B. decides what the solution should be
-C. shapes how the work is done
+
+A. Chooses what to work on\
+B. Decides what the solution should be\
+C. Shapes how the work is done
 
 Then I looked briefly at the team itself, but since others have written extensively about high-performing and safe teams, I chose to focus on what I often find is missing: reshaping the external conditions under which we do our work. We do this so we can pick the right problem, make the right thing and make it in the right way. And then I offered a few suggestions of how we can get better at **reshaping the external conditions under which we do our work**.
 
