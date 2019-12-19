@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 20
 title: 'GitHub, and what else?'
+image: >-
+  https://images.unsplash.com/photo-1513885251266-04dcfa26e979?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3751&q=80
 ingress: "So we've all mostly heard about Github, right? But did you know there are other thriving open source hosting platforms out there?\r"
 authors:
   - Henrik Walker Moe
