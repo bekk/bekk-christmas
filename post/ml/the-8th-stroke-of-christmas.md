@@ -104,11 +104,13 @@ Without baking powder or baking soda, this is probably going to be a a non-raisi
 
 So, we bought the necessary ingredients, prepared for a nice evening, and followed the recipe from above, we also cooked them on 200°C. The dough was much firmer than we thought it would be, so we took the liberty of trying out different shapes before they went in the oven.
 
-Pic
+![](/assets/20191211_223404.jpg)
+
+![](/assets/20191211_223306.jpg)
 
 So! Here you go! The 8th Christmas Cookie. We have decided to call it "Bekkstang" (A pun on Bekk and the Norwegian translation of Crowbar) and in the future, all these cookies should have an elongated shape. The taste was actually quite interesting, and we definitely consider the use of lemon peel and brandy as a stroke of genius.
 
-You have now reached the end of our calendar, and we hope you haven't lost your appetite (no pun intended) for machine learning and it's wonders. Only your imagination sets the boundaries for what you can do with data science, as we hopefully has shown throughout this calendar.
+You have now reached the end of our calendar, and we hope you haven't lost your appetite (no pun intended) for machine learning and it's wonders. Only your imagination sets the boundaries for what you can do with data science, as we hopefully has shown you throughout this calendar.
 
 As a last note: There are many other elements you could have used machine learning for when creating these cookies: You could have used machine learning for the instructions, the shapes, or for the name of the cake for that matter. The problems aren't exceedingly difficult, but we wanted to show you that it doesn't take a lot amount of work to create something fun (and delicious in our case).
 
