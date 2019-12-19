@@ -48,13 +48,13 @@ The fan-out/fan-in pattern is useful in scenarios where you have a root process 
 
 However, if you want to have control of your system, you probably want to keep track of when all processes have completed as well as the result of each child process, in other words fanning back in. Azure Durable Functions lets you do this using `Orchestrators`, `SubOrchestrators`, and `Activities`. In addition, you need some kind of `Trigger` function to get the fun started.
 
-In the following sections, I will show an example of creating a Lotto ticket generator using Azure Durable Functions. A Lotto ticket consists of 10 lines, each containing 6 numbers.  This Lotto ticket generator takes a list of people which should get a Lotto ticket, and stores the Lotto tickets someplace safe. Our (somewhat contrived) example also pretends to use an external number generator service to simulate some real world challenges.
+In the following sections, I will show an example of creating a Lotto ticket generator using Azure Durable Functions. A Lotto ticket consists of 6 numbers.  This Lotto ticket generator takes a list of people which should get a Lotto ticket, and stores the Lotto tickets someplace safe. Our (somewhat contrived) example also pretends to use an external number generator service to simulate  real world challenges.
 
 The example uses `C#`, `Azure Functions 3`, and `Durable Functions 2`.
 
 ### Activities
 
-The `Activity` function is where the actual work happens when using Durable Functions. An `Activity` works the same way as a regular Azure Function, except that is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the `Activity Function` only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
+The activity function is where the actual work happens when using Durable Functions. An activity works the same way as a regular Azure Function, except that is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the activity function only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
 
 ```csharp
 public class MyActivity
@@ -67,15 +67,15 @@ public class MyActivity
 }
 ```
 
-So there it is. This `Activity` takes an `int` input, which isn't actually used, calls an external number generator function, and returns the result.
+So there it is. This activity takes an `int` input, which isn't actually used, calls an external number generator function, and returns the result.
 
-When creating `Activity` functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren´t really running serverless, and you are missing out on the good parts. This means that your `Activity` duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
+When creating activity functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren´t really running serverless, and you are missing out on the good parts. This means that your activity duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
 
 ### Sub-orchestrators
 
-The `Sub-orchestrator` is responsible for kicking off child processes and returning the results to its parent. `Sub-orchestrators` may be chained to create multiple levels of fanning out, but in our example, we'll only use one `Sub-orchestrator`.
+The sub-orchestrator is responsible for kicking off child processes and returning the results to its parent. sub-orchestrators may be chained to create multiple levels of fanning out, but in our example, we'll only use one sub-orchestrator.
 
-The `Sub-orchestrator` has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like `Activities`, needs to be a `Task` containing the result.
+The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like activities, needs to be a `Task` containing the result.
 
 ```csharp
 public class MySubOrchestrator
@@ -99,11 +99,11 @@ public class MySubOrchestrator
 }
 ```
 
-In this example, the `Sub-orchestrator` takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` activity function. These numbers are then returned along with with the name of the ticket's owner.
+In this example, the aub-orchestrator takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` function. These numbers are then returned along with with the name of the ticket's owner.
 
 ### Orchestrators
 
-The `Orhestrator` is the manager of the entire process, and is responsible for starting the child processes, and knowing when they all have completed. In practice, `Orchestrators` are implemented the same way as `Sub-orchestrators` (`Sub-orchestrators` _are_ `Orchestrators`).
+The orchestrator is the manager of the entire process, and is responsible for starting the child processes, and knowing when they all have completed. In practice, orchestrators are implemented the same way as sub-orchestrators (sub-orchestrators _are_ orchestrators).
 
 ```csharp
 public class MyOrchestrator
@@ -122,15 +122,15 @@ public class MyOrchestrator
 }
 ```
 
-In this `Orchestrator`, a list of ticket owners is provided, and the ticket generator `Sub-orchestrator` is kicked off for each owner. When all tickets have been created, the `Orchestrator` stores the tickets (probably using an `Activity`), and the function completes.
+In this orchestrator, a list of ticket owners is provided, and the ticket generator sub-orchestrator is kicked off for each owner. When all tickets have been created, the orchestrator stores the tickets (probably using an activity), and the function completes.
 
-When running `Orchestrators` (and `Sub-orchestrators`), the process is paused when you have kicked off `Activities` or other `Sub-orchestrators`, so you don't need to worry about the 5 minute execution limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. So you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
+When running orchestrators (and sub-orchestrators), the process is paused when you have kicked off activities or other sub-orchestrators, so you don't need to worry about the 5 minute execution time limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. So you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
 
 ### Triggers
 
-The final part of the puzzle is some way to start everything. Azure Functions contains a lot of different `Triggers`, which respond to different types of events. In this example, we will use the `[HttpTrigger]`, which simply creates an HTTP endpoint, and responds to requests to that endpoint.
+The final part of the puzzle is some way to start everything. Azure Functions contain a lot of different Triggers, which respond to different types of events. In this example, we will use the `[HttpTrigger]`, which simply creates an HTTP endpoint, and responds to requests to that endpoint.
 
-To start a Durable Function, the activity needs to take a `[DurableClient]` parameter of type `IDurableOrchestrationClient`. This client is then used to start the `Orchestrator` function. 
+To start a Durable Function, the activity needs to take a `[DurableClient]` parameter of type `IDurableOrchestrationClient`. This client is then used to start the Orchestrator function. 
 
 ```csharp
 public class MyTrigger
@@ -181,7 +181,7 @@ However, when using retries, you should be aware of the error types specified ab
 
 ### Exception handling
 
-So, if the error is an application error, you may be better off using good old exceptions:
+So, if the error is an application error, you need a way to tell the function to simply accept it. `RetryOptions` also contains a callback for determining whether exceptions should cause a retry or not. This, combined with a good old `try-catch`, gives you fine-grained control over how different types of errors in your functions should be handled.
 
 ```csharp
 try {
@@ -198,7 +198,7 @@ catch (MyException e)
 }
 ```
 
-This way, the suborchestrator will not fail even if one of its activities fails, while still using retries for transient errors. And you are able to control how to handle the application error. Of course, you may still pass information about the failed activity to the orchestrator using exceptions or status objects.
+This way, the (sub)orchestrator will not fail even if one of its activities fails, while still using retries for transient errors. And you are able to control how to handle the application error. Of course, you may still pass information about the failed activity to the orchestrator using exceptions or status objects.
 
 ## Full example
 
