@@ -7,11 +7,10 @@ image: >-
   https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2691&q=80
 ingress: >-
   This day is going to be all about blending colors, or rather how you can do
-  blending in CSS! For those of you that, like me, have limited experience
-  playing around with colors may wonder what blending is. It’s quite simple,
-  blending is when you mix two colors together in order to get a new color - and
-  yes, it’s exactly like when you played around with color tubes in
-  kindergarten!
+  blending in CSS! Those of you that have limited experience playing around with
+  colors may wonder what blending is. It’s quite simple, blending is when you
+  mix two colors together in order to get a new color - and yes, it’s exactly
+  like when you played around with color tubes in kindergarten!
 links:
   - title: Documentation for mix-blend-mode in CSS
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode'
