@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2019
 post_day: 23
-title: WIP Fan-out/fan-in for high scalability with Durable Functions
+title: Fan-out/fan-in for high scalability with Durable Functions
 image: >-
   https://i.ibb.co/hWpRNLz/Max-Pixel-net-Hand-Spread-Japanese-Fan-Chinese-166502.jpg
 ingress: >-
