@@ -29,7 +29,7 @@ Knowledge helps you prioritize correctly. What is low cost and high value? Both 
 **3 Evolution**\
 Build on what you know to move the service further. It doesn’t mean you have to stay trapped in old tracks. 
 
-## The ripple effect
+## **Creating Ripples**
 
 As a designer you are a problem solver, not a problem maker. To avoid making new problems when implementing a solution, you have to have a holistic approach in finding the solution and really know the world you are navigating in. Whether you’re an Interaction Designer solving problems in an IT-context or you are a Service Designer creating new customer journeys in a public service, your design will have ripple effects. Seeing user needs in isolation can lead you towards the best solution for the end users, but it might not be the best overall solution if the company starts losing money. Then no one is left with anything in the end. 
 
@@ -38,7 +38,7 @@ The world is not a perfect system (as I believed as a kid). No one has that ulti
 _Wait what? Isn’t this service design?_\
 Of course this help blur the lines between design titles. Where should the Interaction Designer draw the line on what to care about in her work? Hence, the discussion on where an Interaction Designer stops and the Service Designer starts. But, as [Helen discussed](https://ux.christmas/2019/1) in the first article of this calendar, no matter what title you have, if your work includes creative problem solving you should solve problems as a part of a whole, not part by part. To do so, you have to know your domain.
 
-## Prioritize correctly
+## **Prioritization**
 
 A problem can often be divided into smaller problems. By seeing the whole picture you are more likely to understand what part should be solved first. As a designer, you should take part in the prioritizing process by fighting for the prioritization of user needs. However, if you don’t have enough knowledge about the domain you can’t prioritize correctly. Without the greater picture, you will only be able to say “this is important because...” instead of “this is more important than that, because…” 
 
