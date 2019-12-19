@@ -39,7 +39,7 @@ Blending text with a picture is actually quite easy. All it takes is to add the 
   /* Other text properties (placement etc) */
 }
 ```
-You can see the effect of this code used together with the blending mode *difference* in the image below! This blending mode calculates the difference between colors being blended, for example if we would blend white (#FFFFFF) and blue (#0000FF) we would get yellow (#FFFF00)
+You can see the effect of this code used together with the blending mode *difference* in the image below! This blending mode calculates the difference between the colors being blended, for example if we would blend white (#FFFFFF) and blue (#0000FF) we would get yellow (#FFFF00)
 
 <img class="wide-image" src="https://i.ibb.co/JjJ0Vsf/css-christmas-textpic.png" />
 
@@ -48,11 +48,18 @@ You can see the effect of this code used together with the blending mode *differ
 You can also blend images with each other to get quite a cool effect. By just playing around a little with different blend modes I ended up with a red santa above some snowy landscape - quite nice!
 
 ``` CSS
+
+.background {
+  background-color: black;
+}
+
 .image {
   mix-blend-mode: hard-light;
   /* Other image properties (placement etc) */
 }
 ```
+
+In this case there is a black background, then a `div` containing two `img´'s, first the snowy landscape and then the santa. The order of the elements does matter, in this case the snowy landscape is first blended with the background, and the resulting image is then blended with the red santa!
 
 <img class="wide-image" src="https://i.ibb.co/vLhNgvN/css-christmas-picpic.png" />
 
