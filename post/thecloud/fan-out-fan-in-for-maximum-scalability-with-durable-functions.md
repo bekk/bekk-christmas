@@ -2,11 +2,11 @@
 calendar: thecloud
 post_year: 2019
 post_day: 23
-title: WIP Fan-out/fan-in for maximum scalability with Durable Functions
+title: WIP Fan-out/fan-in for high scalability with Durable Functions
 ingress: >-
   Serverless computing has been with us for some years now, and has been
   "production ready" for quite a while. Services like AWS Lambda, Google Cloud
-  Functions, and Azure Functions allows us to create highly scalable services
+  Functions, and Azure Functions allow us to create highly scalable services
   with minimal overhead where you only pay for what you actually need.
 
 
