@@ -20,7 +20,7 @@ authors:
 I aim to give an introduction to open source and licenses to make it
 easier for you to look into the details on your own when needed.
 
-  - Source code ≠ Freedom
+  - Source code available ≠ Freedom
   - What is freedom
   - History
   - Terminology and concepts
@@ -31,10 +31,20 @@ easier for you to look into the details on your own when needed.
 I Am Not A Lawyer\! Don't take legal advice from strangers on the
 internet\! Don't trust me\! I'm serious\! Leave now\!
 
-# Open Source Software (OSS) ≠ Can use
+# Religion
+
+Believe it or not, but software licenses are much like religion. I've been
+called a zealot, communist, ignorant, dumb, and everything in between over this
+post.
+
+So when you're talking about Open Source or licenses with people, tread softly,
+and don't be alarmed if someone gets very upset and starts attacking you -- much
+like religious debate.
+
+# Open Source Software ≠ Can use
 
 The phrase "Open Source" has changed meaning over the last decade. It
-somehow became a buzzword, and suddenly everything is Open Source – but
+somehow became a buzzword, and suddenly everything is "Open Source" – but
 what does Open actually mean?
 
 Open ≠ Gratis: We'll use the word gratis for "doesn't cost any money".
@@ -57,11 +67,26 @@ allowed to use it
 
 # Free Open Source Software (FOSS)
 
-Because "Open Source" has been hijacked, a new term has been coined,
-FOSS.
+Several projects and companies use custom licenses and modified versions of
+Open Source licenses. The motives for this might be many, but I suspect the
+primary motivation is because it might be easier to monetize, keep control, or
+reduce the risk of someone taking your work, making it better, and making you
+obsolete. Of course, purely speculations, and regardless of motivation, the
+loss of freedom might be problematic for the user.
 
-Free = Freedom: FOSS ≠ OSS. The Free talks about freedom to use as you
-like, which is only possible if the code is also open.
+When a project is released under such license, the correct term is Source
+Available, not Open Source, as a key of Open Source is that you should be able
+to use the code as you like. It will probably still be marketed as Open Source,
+so you need to keep a keen eye.
+
+There are several organizations working to promote Open Source, Open Source
+Initiative (OSI) and Free Software Foundation (FSF) being two prominent players.
+While they agree on much, and OSI-approved licenses also being FSF-approved
+licenses, the FSF is more strict on what freedoms it requires. But remember that
+for the purpose of this post, OSI and FSF are good friends playing along nicely!
+
+Free = Freedom: The Free talks about freedom to use as you like, which is only
+possible if the code is also open.
 
 Free ≠ Gratis: FOSS still doesn't have to be gratis.
 
@@ -319,7 +344,7 @@ Alike](https://tldrlegal.com/license/creative-commons-attribution-share-alike-\(
 
   - IANAL\! Don't trust random legal advice from random strangers on the
     internet\!
-  - Open Source ≠ Freedom
+  - Source Available ≠ Freedom
   - Freedom ≠ Gratis
   - Use free licenses and submit your work under free licenses
   - Make contributors sign over copyright
