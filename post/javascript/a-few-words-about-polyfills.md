@@ -3,23 +3,14 @@ calendar: javascript
 post_year: 2019
 post_day: 21
 title: A few words about polyfills
-ingress: >-
-  Maybe you’ve heard of Fetch? The promise-based Web API for making network
-  requests in Javascript, and a favourite amongst developers for doing HTTP
-  requests for external resources. If you paste
-  `fetch(‘https://www.google.com’)` into the Chrome DevTools console and run it
-  you can take a closer look at how it works. Sadly, you can’t do the same in
-  Internet Explorer. It won’t work. That is because Internet Explorer has not
-  implemented support for Fetch. Or Promise for that matter.
-
-
-  As developers of things on the web we want, and are often required by law, to
-  support all major browsers out there. The more users you have on your web site
-  often converts to more success, regardless. So, of course we want to invite
-  everyone in. The problem arises when our users, many unknowingly I suppose,
-  are using old or specific browsers that do not support the latest and greatest
-  features in JavaScript - which we, as developers, are longing to use.
+ingress: ''
+authors:
+  - Fredrik Stenbro
 ---
+Maybe you’ve heard of Fetch? The promise-based Web API for making network requests in Javascript, and a favourite amongst developers for doing HTTP requests for external resources. If you paste `fetch(‘https://www.google.com’)` into the Chrome DevTools console and run it you can take a closer look at how it works. Sadly, you can’t do the same in Internet Explorer. It won’t work. That is because Internet Explorer has not implemented support for Fetch. Or Promise for that matter.
+
+As developers of things on the web we want, and are often required by law, to support all major browsers out there. The more users you have on your web site often converts to more success, regardless. So, of course we want to invite everyone in. The problem arises when our users, many unknowingly I suppose, are using old or specific browsers that do not support the latest and greatest features in JavaScript - which we, as developers, are longing to use.
+
 ## What is polyfills?
 
 If the browser that is running your code do not support the features that you want to apply in your modern JavaScript, like `Object.assign()` or `String.trimStart()`, a common practice is to provide the pieces of code that is missing yourself. These pieces of code are called polyfills. Polyfilling can be as easy as finding the required implementation of the functionality yourself and adding it to your JavaScript, as shown in this basic example taken from MDNs suggested polyfill for Number.isInteger: 
