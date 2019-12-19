@@ -4,11 +4,11 @@ post_year: 2019
 post_day: 20
 title: Who is your security champion?
 ingress: >-
-  Well all know it, application security is a shared responsibility and every
-  one in the team should act according to the secure lifecycle development
-  process. But our experience is that security is one of the first non
-  functional requirements that are dropped when deadlines approaches or when
-  management is setting up a budget for the next period.
+  We all know it; application security is a shared responsibility and everyone
+  in the team should act according to the secure lifecycle development process.
+  But our experience is that security is one of the first non-functional
+  requirements that are dropped when deadlines approaches or when management is
+  setting up a budget for the next period.
 links:
   - title: Security Champions Playbook
     url: 'https://www.owasp.org/index.php/Security_Champions_Playbook'
