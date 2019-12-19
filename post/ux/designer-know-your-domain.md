@@ -11,10 +11,8 @@ authors:
 ---
 In creative problem solving “a new set of eyes” and a “new perspective” are always welcome. In times of a creative drought, bringing in a person from the outside to help generate ideas can be smart. Why? Because this person has no constraints based on what is possible or not. She or he sees possibilities, not limitations, and doesn’t know the domain well enough to have that automatic filter that eliminates ideas. Using “outsiders” as kickstarters and idea generators can be helpful. However, when working on creative problem solving over time (often a designer’s job) you have to know the domain you’re in, and you have to know it well! 
 
-
 <img class="light-theme-image" src="https://i.ibb.co/QryzNwY/SORTtegning-domenekunnskap.png" style="margin: auto" />
 <img class="dark-theme-image" src="https://i.ibb.co/n3xbbYc/HVITtegning-domenekunnskap.png" style="margin: auto" />
-
 
 _Domain knowledge will help you to be aware of ripples you create, prioritize correctly and help the organisation and product to evolve._
 
@@ -55,12 +53,13 @@ Yes, knowing the requirements and restrictions of the industry can limit your id
 <img class="light-theme-image" src="https://i.ibb.co/rbr1VDf/SORTwater-Insight.png" style="margin: auto" />
 <img class="dark-theme-image" src="https://i.ibb.co/47xXK98/HVITwater-Insight.png" style="margin: auto" />
 
-
 _Create impact by combining user insight with domain knowledge._
 
 There are many creative ways to unlock your brain and develop new features even though you already know the technical limitations of a system. Isn’t this exactly what a designer does? Introducing tools to help people think outside of that box? We even have a specific approach for when we don’t know the domain well enough – it’s called co-creation. So, if you don’t know your domain yet (because, of course you will right?) get the people who do to help you in the process. Broader knowledge helps the designer to create more sustainable products with real impact for both the users and the business.  
 
 <br>
+
+\-
 
 So, being able to facilitate workshops, utilize design methods and share user insight isn’t the only thing a designer should be able to do. You have to engage in the whole domain to be able to solve problems in a holistic and sustainable way. A designer’s job isn’t just to fight for user needs, but to do that in relation to what the organisation she works for needs, and what the world needs. 
 
