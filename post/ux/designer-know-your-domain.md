@@ -38,10 +38,11 @@ A problem can often be divided into smaller problems. By seeing the whole pictur
 ## Evolution
 
 Yes, knowing the requirements and restrictions of the industry can limit your ideas to what you already know ...oooor, combined with the right tools it can help you come up with even better ideas that advance your organisation.
-
-> "When ideas are only watered with user insights, it doesn’t give them much of a foundation to grow on. Without the fertilizer of industry knowledge, your concepts are only skin-deep and have no real impact on the core business."
-
-\- Linda C. Halvorsen, Practice Lead at Bekk
+<br />
+> "When ideas are only watered with user insights, it doesn’t give them much of a foundation to grow on. Without the fertilizer of industry knowledge, your concepts are only skin-deep and have no real impact on the core business." 
+>
+> \- Linda C. Halvorsen, Practice Lead at Bekk
+<br />
 
 There are many creative ways to unlock your brain and develop new features even though you already know the technical limitations of a system. Isn’t this exactly what a designer does? Introducing tools to help people think outside of that box? We even have a specific approach for when we don’t know the domain well enough – it’s called co-creation. So, if you don’t know your domain yet (because, of course you will right?) get the people who do to help you in the process. Broader knowledge helps the designer to create more sustainable products with real impact for both the users and the business.  
 
