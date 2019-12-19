@@ -28,7 +28,13 @@ Let's start with Bitbucket.
 
 In the beginning, it only offered support for [Mercurial](https://www.mercurial-scm.org/) projects, but rolled out Git support in 2011. Some of the really convenient features it boasts are its integrations with other Atlassian products. To support the whole product team and the development process, one can use Jira, Trello and Confluence together and have an impressing amount of features supporting the development.
 
-Both Github and Bitbucket are proprietary software. 
+### Azure DevOps
+
+Azure DevOps (formerly Team Foundation Server (TFS) and Visual Studio Team System) was released as a platform by Microsoft in 2013 and called "Visual Studio Online". It grew to host many of the features from TFS "as-a-service" on its platform, including work item tracking, extensibility via APIs and supporting different source control systems, e.g. Team Foundation Version Control, Git and more.
+
+Azure DevOps Services' Continuous Integration and Continuous Delivery is using open source for [its pipelines](https://github.com/microsoft/azure-pipelines-tasks). This year Microsoft also released Azure DevOps Server 2019 which can be installed on-premises.
+
+Azure DevOps, Github and Bitbucket are proprietary software. 
 
 ### GitLab
 
