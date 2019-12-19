@@ -14,7 +14,7 @@ In creative problem solving “a new set of eyes” and a “new perspective” 
 <img class="light-theme-image" src="https://i.ibb.co/kJM7HBG/SORTtegning-domenekunnskap.png" />
 <img class="dark-theme-image" src="https://i.ibb.co/mhvYQC9/HVITtegning-domenekunnskap.png" />
 
-![alt-tekst til bilde](https://i.ibb.co/CwPxCnG/SORTtegning-domenekunnskap.png)
+![alt-tekst til bilde](https://i.ibb.co/282Kh82/SORTtegning-domenekunnskap.png)
 
 User needs are the designer’s responsibility, but user insight alone doesn’t cover the knowledge you require to accommodate these needs. You have to know the purpose of the service or system you work with, the business goals of the supplier, the supplier’s market, as well as other external factors. This knowledge will help you solve problems in a better way. Here’s why:
 
