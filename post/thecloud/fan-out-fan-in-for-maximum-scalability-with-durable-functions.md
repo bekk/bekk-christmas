@@ -63,10 +63,7 @@ public class CreateNumberActivity
         [ActivityTrigger] int index
     )
     {
-        var number = await GetNumberFromSomeService(index);
-
-        // Return a random value between 1 and 48
-        return number;
+        return await GetNumberFromSomeService(index);
     }
 }
 ```
