@@ -106,7 +106,7 @@ public class CreateTicketsOrchestrator
 }
 ```
 
-In this example, the aub-orchestrator takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` function. These numbers are then returned along with with the name of the ticket's owner.
+In this example, the sub-orchestrator takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` function. These numbers are then returned along with with the name of the ticket's owner.
 
 ### Orchestrators
 
