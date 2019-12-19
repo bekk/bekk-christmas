@@ -3,6 +3,8 @@ calendar: react
 post_year: 2019
 post_day: 20
 title: A recipe for toasts
+image: >-
+  https://images.unsplash.com/photo-1556008531-57e6eefc7be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2539&q=80
 links:
   - title: Create react app
     url: 'https://github.com/facebook/create-react-app'
