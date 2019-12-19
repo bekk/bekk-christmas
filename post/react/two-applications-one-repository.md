@@ -22,7 +22,9 @@ When developing Feature X for the web, where does it make most sense to put your
 
 ### Packages
 
-We structure our code and components in domain packages. We try our best to split up the applications into mostly separate folders. For instance we have created a subfolder for everything regarding the profile page, purchase of tickets in another map, and components that define. By doing it this way we are able to easier compare the components and share the business logic across web and native
+We structure our code and components in domain packages. We try our best to split up the applications into mostly separate folders. For instance we have created a subfolder for everything regarding the profile page, purchase of tickets in another map, and components that define. By doing it this way we are able to easier compare the components and share the business logic across web and native.
+
+In addition to the domain packages we have a `client-app` and `client-web` folder which is the entry point for the applications.
 
 ```
 packages
@@ -41,7 +43,7 @@ packages
 
 ```
 
-Actions, reducers, sagas and helper files are typically files with logic we use to share between the applications. They are put in separate files and folders, and since both the web and app components is in short distance there are no problem accessing it.
+Actions, reducers, sagas and helper files are typically files we use to share between the applications. They are put in separate files and folders in the domain packages, and since both the web and app components are in short distance of each other, there are no problem accessing it.
 
 ```
 |_ profile
@@ -53,18 +55,17 @@ Actions, reducers, sagas and helper files are typically files with logic we use 
     ...
 ```
 
+There are both positive and negative sides when working with a monorepo. Personally, I like the domain package structure we are going for. At first look it seems a little bit chaotic, but when you get used to the domain system it is pretty nice! Of course it is a pickle to know when to create a new package, and when to not. In our case the complete application is a journey planner, and it is super hard not to put everything in the `journey` domain package! 😅
+
+When you are done developing a feature for one of the platforms, it is relatively easy to develop it for the other. Because all the heavy logic thinking, developing, and rethinking again has been done. Most of the time it remaining to "port" the views from native to web or vice versa. 
+
+
 ### Setup
 
 <Kent skriv her>
 
-React Native and node_modules
-Flow and flow-typed files
-Rarely good support of frameworks by default 
+<React Native and node_modules>
+<Flow and flow-typed files>
+<Rarely good support of frameworks by default>
 
-
-## The Experience
-
-We experience sometimes that one of the applications often was favored. By having more knowledge about the app, the easier it was to continue working on it and get even better known with all the systems and components. 
-
-Another aspect of 
 
