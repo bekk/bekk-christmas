@@ -79,7 +79,7 @@ When creating activity functions, it is important to be aware that they should b
 
 ### Sub-orchestrators
 
-The sub-orchestrator is responsible for kicking off child processes and returning the results to its parent. sub-orchestrators may be chained to create multiple levels of fanning out, but in our example, we'll only use one sub-orchestrator.
+The sub-orchestrator is responsible for kicking off child processes and returning the results to its parent. Sub-orchestrators may be chained to create multiple levels of fanning out, but in our example, we'll only use one sub-orchestrator.
 
 The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like activities, needs to be a `Task` containing the result.
 
