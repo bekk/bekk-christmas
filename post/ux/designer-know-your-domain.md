@@ -11,6 +11,8 @@ authors:
 ---
 In creative problem solving “a new set of eyes” and a “new perspective” are always welcome. In times of a creative drought, bringing in a person from the outside to help generate ideas can be smart. Why? Because this person has no constraints based on what is possible or not. She or he sees possibilities, not limitations, and doesn’t know the domain well enough to have that automatic filter that eliminates ideas. Using “outsiders” as kickstarters and idea generators can be helpful. However, when working on creative problem solving over time (often a designer’s job) you have to know the domain you’re in, and you have to know it well! 
 
+![alt-tekst til bilde](https://i.ibb.co/mX7wYkV/SORTtegning-domenekunnskap.png" alt="SORTtegning-domenekunnskap)
+
 <img class="light-theme-image" src="https://i.ibb.co/kJM7HBG/SORTtegning-domenekunnskap.png" />
 <img class="dark-theme-image" src="https://i.ibb.co/mhvYQC9/HVITtegning-domenekunnskap.png" />
 
