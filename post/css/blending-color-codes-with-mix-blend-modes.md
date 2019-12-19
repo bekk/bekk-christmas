@@ -7,10 +7,11 @@ image: >-
   https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2691&q=80
 ingress: >-
   This day is going to be all about blending colors, or rather how you can do
-  blending in CSS! Those of you that have limited experience playing around with
-  colors may wonder what blending is. It’s quite simple, blending is when you
-  mix two colors together in order to get a new color - and yes, it’s exactly
-  like when you played around with color tubes in kindergarten!
+  blending in CSS with mix-blend-mode! Those of you that have limited experience
+  playing around with colors may wonder what blending is. It’s quite simple,
+  blending is when you mix two colors together in order to get a new color - and
+  yes, it’s exactly like when you played around with color tubes in
+  kindergarten!
 links:
   - title: Documentation for mix-blend-mode in CSS
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode'
@@ -20,10 +21,11 @@ authors:
   - Joakim Gyllenskepp
 ---
 # How does mix-blend-mode work?
-In CSS, blending works similarly, the color of the element with the property mix-blend-mode set will be blended with it’s background color. 
-For example, we could put mix-blend-mode on a text-element above an image to have the text color adjusted according to colors of the background, or we could blend two images together to achieve quite a cool effect.
+Just like when you mix real colors on a palette, computers can do different computations on two color codes to find a new color! Some of you may have played around with this kind of blending in photo editing software where you can apply different effects on photos. CSS supports this kind of blending as well with the mix-blend-mode property, which allows us to blend the colors of different elements! 
 
-Although, blending in CSS is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, in CSS’s mix-blend-mode the method of blending is specified by different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). 
+The color of the element with the property mix-blend-mode set will be blended with it’s background color. For example, we could put mix-blend-mode on a text-element above an image to have the text color adjusted according to colors of the background, or we could blend two images together to achieve quite a cool effect.
+
+Although, blending with a computer is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, in CSS’s mix-blend-mode the method of blending is specified by different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). 
 Lets get on with some examples on how it actually looks like in practice! 
 
 
