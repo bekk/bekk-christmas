@@ -3,7 +3,8 @@ calendar: thecloud
 post_year: 2019
 post_day: 23
 title: WIP Fan-out/fan-in for high scalability with Durable Functions
-image: 'https://ibb.co/4TBZLKr'
+image: >-
+  https://i.ibb.co/hWpRNLz/Max-Pixel-net-Hand-Spread-Japanese-Fan-Chinese-166502.jpg
 ingress: >-
   Serverless computing has been with us for some years now, and has been
   "production ready" for quite a while. Services like AWS Lambda, Google Cloud
@@ -57,17 +58,22 @@ The example uses `C#`, `Azure Functions 3`, and `Durable Functions 2`.
 The activity function is where the actual work happens when using Durable Functions. An activity works the same way as a regular Azure Function, except that is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the activity function only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
 
 ```csharp
-public class MyActivity
+public class CreateNumberActivity
 {
-    [FunctionName(nameof(MyActivity))]
-    public async Task<byte> Run([ActivityTrigger] int input) // input is not used in this particular function
+    [FunctionName(nameof(CreateNumberActivity))]
+    public async Task<int> Run(
+        [ActivityTrigger] int index
+    )
     {
-        return await GetNumberFromSomeService();
+        var number = await GetNumberFromSomeService(index);
+
+        // Return a random value between 1 and 48
+        return number;
     }
 }
 ```
 
-So there it is. This activity takes an `int` input, which isn't actually used, calls an external number generator function, and returns the result.
+So there it is. This activity takes an `int` input, calls an external number generator function, and returns the result.
 
 When creating activity functions, it is important to be aware that they should be extremely simple and fast. There are different [hosting plans](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) that you may use for your functions, but unless you are using a consumption plan, you aren´t really running serverless, and you are missing out on the good parts. This means that your activity duration should never, ever, exceed 5 minutes. (It is possible to increase the maximum duration to 10 minutes, but if you need to do that, you are probably doing too much work in the function.)
 
@@ -78,23 +84,24 @@ The sub-orchestrator is responsible for kicking off child processes and returnin
 The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like activities, needs to be a `Task` containing the result.
 
 ```csharp
-public class MySubOrchestrator
+public class CreateTicketsOrchestrator
 {
-    [FunctionName(nameof(MySubOrchestrator))]
-    public async Task<(string, byte[])> Run([OrchestrationTrigger] DurableOrchestrationContext context)
+    [FunctionName(nameof(CreateTicketsOrchestrator))]
+    public async Task Run(
+        [OrchestrationTrigger] IDurableOrchestrationContext context
+    )
     {
-        var name = context.GetInput<string>();
+        var people = context.GetInput<IEnumerable<string>>();
 
-        var retryOptions = new RetryOptions(
-            firstRetryInterval: TimeSpan.FromSeconds(5),
-            maxNumberOfAttempts: 10
-        );
+        var tasks = people
+            .Select(p => context.CallSubOrchestratorAsync<(string, int[])>(
+                nameof(CreateTicketSubOrchestrator), 
+                p
+            ));
 
-        var numbersTasks = Enumerable.Range(0, 6).Select(i => context.CallActivityWithRetryAsync<byte>(nameof(MyActivity), retryOptions, i));
-
-        var numbers = await Task.WhenAll(numbersTasks);
-
-        return (name, numbers);
+        var tickets = await Task.WhenAll(tasks);
+        
+        // TODO: Store the tickets someplace safe
     }
 }
 ```
@@ -133,21 +140,30 @@ The final part of the puzzle is some way to start everything. Azure Functions co
 To start a Durable Function, the activity needs to take a `[DurableClient]` parameter of type `IDurableOrchestrationClient`. This client is then used to start the Orchestrator function. 
 
 ```csharp
-public class MyTrigger
+public class CreateTicketsTrigger
 {
-    [FunctionName(nameof(MyTrigger))]
+    [FunctionName(nameof(CreateTicketsTrigger))]
     public async Task<string> Run(
         [HttpTrigger] HttpRequest req,
-        [OrchestrationClient] DurableOrchestrationClient orchestrationClient
+        [DurableClient] IDurableOrchestrationClient orchestrationClient
     )
     {
         var people = new[]
         {
-            "Santa",
-            "Claus"
+            "Dasher",
+            "Dancer",
+            "Prancer",
+            "Vixen",
+            "Comet",
+            "Cupid",
+            "Donder",
+            "Blitzen"
         };
 
-        return await orchestrationClient.StartNewAsync(nameof(MyOrchestrator), people);
+        return await orchestrationClient.StartNewAsync(
+            nameof(CreateTicketsOrchestrator), 
+            people
+        );
     }
 }
 ```
@@ -157,11 +173,11 @@ public class MyTrigger
 
 So, now we have a functioning function, able to scale indefinitely. But what happens when an error occurs, as we all know will happen? After all, computers do have a mind of their own, especially in the cloud. There are a couple of different ways to handle this, as discussed in a [previous article](https://thecloud.christmas/2019/5). But first, we need to discern what kind of errors we can expect.
 
-#### Transient errors
+### Transient errors
 
 These are errors that typically occur as a consequence of communication between services. Examples of these are database connectivity issues, unresponsive web services, or other unavailable resources. Typically, these kinds of errors can be handled by trying again later.
 
-#### Application errors
+### Application errors
 
 These are errors that occur because of an error in the application code. For example, the input can be invalid, or cause an invalid state in the function. Retrying the function a thousand times will cause the same error every time.
 
@@ -210,135 +226,166 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.DurableTask;
 using Microsoft.Extensions.Logging;
-using MyNamespace;
+using TicketGenerator;
 
 [assembly: FunctionsStartup(typeof(Startup))]
-namespace MyNamespace
+namespace TicketGenerator
 {
     public class Startup : FunctionsStartup
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            // Just use default configration
+            // Just use default configuration
         }
     }
 
-    public class MyTrigger
+    public class CreateTicketsTrigger
     {
-        private readonly ILogger<MyTrigger> _logger;
+        private readonly ILogger<CreateTicketsTrigger> _logger;
 
-        public MyTrigger(ILogger<MyTrigger> logger)
+        public CreateTicketsTrigger(ILogger<CreateTicketsTrigger> logger)
         {
             _logger = logger;
         }
 
-        [FunctionName(nameof(MyTrigger))]
+        [FunctionName(nameof(CreateTicketsTrigger))]
         public async Task<string> Run(
             [HttpTrigger] HttpRequest req,
-            [OrchestrationClient] DurableOrchestrationClient orchestrationClient
+            [DurableClient] IDurableOrchestrationClient orchestrationClient
         )
         {
             var people = new[]
             {
-                "Santa",
-                "Claus"
+                "Dasher",
+                "Dancer",
+                "Prancer",
+                "Vixen",
+                "Comet",
+                "Cupid",
+                "Donder",
+                "Blitzen"
             };
 
-            return await orchestrationClient.StartNewAsync(nameof(MyOrchestrator), people);
+            return await orchestrationClient.StartNewAsync(nameof(CreateTicketsOrchestrator), people);
         }
     }
 
-    public class MyOrchestrator
+    public class CreateTicketsOrchestrator
     {
-        private readonly ILogger<MyOrchestrator> _logger;
+        private readonly ILogger<CreateTicketsOrchestrator> _logger;
 
-        public MyOrchestrator(ILogger<MyOrchestrator> logger)
+        public CreateTicketsOrchestrator(ILogger<CreateTicketsOrchestrator> logger)
         {
             _logger = logger;
         }
 
-        [FunctionName(nameof(MyOrchestrator))]
-        public async Task Run([OrchestrationTrigger] DurableOrchestrationContext context)
+        [FunctionName(nameof(CreateTicketsOrchestrator))]
+        public async Task Run([OrchestrationTrigger] IDurableOrchestrationContext context)
         {
             var people = context.GetInput<IEnumerable<string>>();
 
-            var retryOptions = new RetryOptions(
-                firstRetryInterval: TimeSpan.FromSeconds(5),
-                maxNumberOfAttempts: 5
-            );
-
-            var tasks = people.Select(p => context.CallSubOrchestratorWithRetryAsync<(string, byte[])>(nameof(MySubOrchestrator), retryOptions, p));
+            var tasks = people.Select(p => context.CallSubOrchestratorAsync<(string, int[])>(nameof(CreateTicketSubOrchestrator), p));
 
             var tickets = await Task.WhenAll(tasks);
 
             foreach (var (name, numbers) in tickets)
             {
-                _logger.LogInformation("[{functionName}] {name}: [{numbers}]", nameof(MyOrchestrator), name, numbers.OrderBy(n => n));
+                _logger.LogInformation("[{functionName}] {name}: [{numbers}]", nameof(CreateTicketsOrchestrator), name, numbers.OrderBy(n => n));
             }
 
             // TODO: Store the tickets someplace safe
         }
     }
 
-    public class MySubOrchestrator
+    public class CreateTicketSubOrchestrator
     {
-        private readonly ILogger<MySubOrchestrator> _logger;
+        private readonly ILogger<CreateTicketSubOrchestrator> _logger;
 
-        public MySubOrchestrator(ILogger<MySubOrchestrator> logger)
+        public CreateTicketSubOrchestrator(ILogger<CreateTicketSubOrchestrator> logger)
         {
             _logger = logger;
         }
 
-        [FunctionName(nameof(MySubOrchestrator))]
-        public async Task<(string, byte[])> Run([OrchestrationTrigger] DurableOrchestrationContext context)
+        [FunctionName(nameof(CreateTicketSubOrchestrator))]
+        public async Task<(string, int[])> Run([OrchestrationTrigger] IDurableOrchestrationContext context)
         {
             var name = context.GetInput<string>();
 
             var retryOptions = new RetryOptions(
                 firstRetryInterval: TimeSpan.FromSeconds(5),
                 maxNumberOfAttempts: 10
-            );
+            )
+            {
+                Handle = e =>
+                {
+                    if (e.InnerException is ArgumentException)
+                    {
+                        _logger.LogError(e, "[{functionName}] An application error occured: {message}. Don't retry.", nameof(CreateTicketSubOrchestrator), e.Message);
+                        return false;
+                    }
+                    else
+                    {
+                        _logger.LogWarning(e, "[{functionName}] A transient error occured: {message}. Do retry.", nameof(CreateTicketSubOrchestrator), e.Message);
+                        return true;
+                    }
+                }
+            };
 
-            var numbersTasks = Enumerable.Range(0, 8).Select(i => context.CallActivityWithRetryAsync<byte>(nameof(MyActivity), retryOptions, i));
+            var numbersTasks = Enumerable.Range(1, 7).Select(async i =>
+            {
+                try
+                {
+                    return await context.CallActivityWithRetryAsync<int>(
+                        nameof(CreateNumberActivity),
+                        retryOptions,
+                        i
+                    );
+                }
+                catch (Exception)
+                {
+                    return -1;
+                }
+            });
 
             var numbers = await Task.WhenAll(numbersTasks);
 
-            _logger.LogDebug("[{functionName}] Ticket was successfully generated for '{name}'.", nameof(MySubOrchestrator), name);
+            _logger.LogDebug("[{functionName}] Ticket was successfully generated for '{name}'.", nameof(CreateTicketSubOrchestrator), name);
 
             return (name, numbers);
         }
     }
 
-    public class MyActivity
+    public class CreateNumberActivity
     {
-        private readonly ILogger<MyActivity> _logger;
+        private readonly ILogger<CreateNumberActivity> _logger;
         private readonly Random _random;
 
-        public MyActivity(ILogger<MyActivity> logger)
+        public CreateNumberActivity(ILogger<CreateNumberActivity> logger)
         {
             _logger = logger;
             _random = new Random();
         }
 
-        [FunctionName(nameof(MyActivity))]
-        public async Task<byte> Run([ActivityTrigger] int input) // input is not used in this particular function
+        [FunctionName(nameof(CreateNumberActivity))]
+        public async Task<int> Run([ActivityTrigger] int index) // input is not used in this function
         {
-            // Randomly wait for 0-5 seconds
-            await Task.Delay(_random.Next(5000));
+            var number = await GetNumberFromSomeService(index);
 
-            var number = await GetNumberFromSomeService();
-
-            _logger.LogDebug("[{functionName}] Number '{number}' was successfully generated.", nameof(MyActivity), number);
+            _logger.LogDebug(
+                "[{functionName}] Number '{number}' was successfully generated.",
+                nameof(CreateNumberActivity), number
+            );
 
             // Return a random value between 1 and 48
             return number;
         }
 
-        private Task<byte> GetNumberFromSomeService()
+        private Task<int> GetNumberFromSomeService(int index)
         {
             var shouldTimeout = _random.Next(0, 10) == 0;
-            var shouldFail = false;
+            var shouldFail = index > 6;
 
             if (shouldTimeout)
             {
@@ -346,11 +393,12 @@ namespace MyNamespace
             }
             if (shouldFail)
             {
-                throw new ApplicationException();
+                throw new ArgumentException("A ticket should only contain 6 numbers.");
             }
 
-            return Task.FromResult((byte)(_random.Next(47) + 1));
+            return Task.FromResult(_random.Next(47) + 1);
         }
     }
 }
 ```
+
