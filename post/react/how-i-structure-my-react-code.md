@@ -46,7 +46,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [hasBeenNice, setNaughtyOrNice] = useState(null);
+  const [hasBeenNice, setHasBeenNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -145,7 +145,7 @@ const EditMyInformationToSanta = () => {
             type="radio"
             value={false}
             checked={hasBeenNice === false}
-            onChange={event => setNaughtyOrNice(event.target.value)}
+            onChange={event => setHasBeenNice(event.target.value)}
           />
 
           <label>Nice</label>
@@ -153,7 +153,7 @@ const EditMyInformationToSanta = () => {
             type="radio"
             value={true}
             checked={hasBeenNice}
-            onChange={event => setNaughtyOrNice(event.target.value)}
+            onChange={event => setHasBeenNice(event.target.value)}
           />
         </div>
 
@@ -221,7 +221,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [hasBeenNice, setNaughtyOrNice] = useState(null);
+  const [hasBeenNice, setHasBeenNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -303,7 +303,7 @@ const EditMyInformationToSanta = () => {
             label2="Nice"
             toggleValue2="nice"
             value={hasBeenNice}
-            onChange={event => setNaughtyOrNice(event.target.value)}
+            onChange={event => setHasBeenNice(event.target.value)}
           />
         </div>
 
