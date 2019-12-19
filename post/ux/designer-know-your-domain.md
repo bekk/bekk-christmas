@@ -15,7 +15,7 @@ In creative problem solving “a new set of eyes” and a “new perspective” 
 <figure>
 <img class="light-theme-image" src="https://i.ibb.co/QryzNwY/SORTtegning-domenekunnskap.png" style="margin: auto" />
 <img class="dark-theme-image" src="https://i.ibb.co/n3xbbYc/HVITtegning-domenekunnskap.png" style="margin: auto" />
-<figcaption class="imageCaption" contenteditable="true" data-default-value="Type caption for image (optional)">Domain knowledge will help you to be aware of ripples you create, prioritize correctly and help the organisation and product to evolve.</figcaption>
+<figcaption class="imageCaption" contenteditable="true" data-default-value="Type caption for image (optional)" style="margin: auto">Domain knowledge will help you to be aware of ripples you create, prioritize correctly and help the organisation and product to evolve.</figcaption>
 </figure>
 
 
@@ -55,7 +55,7 @@ Yes, knowing the requirements and restrictions of the industry can limit your id
 <figure>
 <img class="light-theme-image" src="https://i.ibb.co/rbr1VDf/SORTwater-Insight.png" style="margin: auto" />
 <img class="dark-theme-image" src="https://i.ibb.co/47xXK98/HVITwater-Insight.png" style="margin: auto" />
-<figcaption class="imageCaption" contenteditable="true" data-default-value="Type caption for image (optional)">Create impact by combining user insight with domain knowledge.</figcaption>
+<figcaption class="imageCaption" contenteditable="true" data-default-value="Type caption for image (optional)" style="margin: auto">Create impact by combining user insight with domain knowledge.</figcaption>
 </figure>
 
 There are many creative ways to unlock your brain and develop new features even though you already know the technical limitations of a system. Isn’t this exactly what a designer does? Introducing tools to help people think outside of that box? We even have a specific approach for when we don’t know the domain well enough – it’s called co-creation. So, if you don’t know your domain yet (because, of course you will right?) get the people who do to help you in the process. Broader knowledge helps the designer to create more sustainable products with real impact for both the users and the business.  
