@@ -11,8 +11,9 @@ authors:
 ---
 In creative problem solving “a new set of eyes” and a “new perspective” are always welcome. In times of a creative drought, bringing in a person from the outside to help generate ideas can be smart. Why? Because this person has no constraints based on what is possible or not. She or he sees possibilities, not limitations, and doesn’t know the domain well enough to have that automatic filter that eliminates ideas. Using “outsiders” as kickstarters and idea generators can be helpful. However, when working on creative problem solving over time (often a designer’s job) you have to know the domain you’re in, and you have to know it well! 
 
-<img class="light-theme-image" src="https://ibb.co/T1rfv2w" />
-<img class="dark-theme-image" src="https://ibb.co/T1rfv2w" />
+<img class="light-theme-image" src="https://i.ibb.co/kJM7HBG/SORTtegning-domenekunnskap.png" />
+<img class="dark-theme-image" src="https://i.ibb.co/mhvYQC9/HVITtegning-domenekunnskap.png" />
+
 
 User needs are the designer’s responsibility, but user insight alone doesn’t cover the knowledge you require to accommodate these needs. You have to know the purpose of the service or system you work with, the business goals of the supplier, the supplier’s market, as well as other external factors. This knowledge will help you solve problems in a better way. Here’s why:
 
@@ -46,6 +47,9 @@ Yes, knowing the requirements and restrictions of the industry can limit your id
 >
 > \- Linda C. Halvorsen, Practice Lead at Bekk
 <br />
+
+<img class="light-theme-image" src="https://i.ibb.co/z7qv05Q/SORTwater-Insight.png" />
+<img class="dark-theme-image" src="https://i.ibb.co/qRr7CZ7/HVITwater-Insight.png" />
 
 There are many creative ways to unlock your brain and develop new features even though you already know the technical limitations of a system. Isn’t this exactly what a designer does? Introducing tools to help people think outside of that box? We even have a specific approach for when we don’t know the domain well enough – it’s called co-creation. So, if you don’t know your domain yet (because, of course you will right?) get the people who do to help you in the process. Broader knowledge helps the designer to create more sustainable products with real impact for both the users and the business.  
 
