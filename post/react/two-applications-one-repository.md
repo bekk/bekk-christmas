@@ -9,7 +9,7 @@ ingress: >-
   When you’re developing similar apps for web and native platforms, it is hard
   to find a project structure that works well. Let us take a look at how our
   team is approaching this challenge for maintaining different view layers, as
-  well as a shared business logic code case at the same time.
+  well as a shared business logic at the same time.
 authors:
   - Caroline Odden
 ---
