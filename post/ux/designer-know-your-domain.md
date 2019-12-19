@@ -14,6 +14,8 @@ In creative problem solving “a new set of eyes” and a “new perspective” 
 
 <img class="light-theme-image" src="https://i.ibb.co/QryzNwY/SORTtegning-domenekunnskap.png" style="margin: auto" />
 <img class="dark-theme-image" src="https://i.ibb.co/n3xbbYc/HVITtegning-domenekunnskap.png" style="margin: auto" />
+
+
 _Domain knowledge will help you to be aware of ripples you create, prioritize correctly and help the organisation and product to evolve._
 
 User needs are the designer’s responsibility, but user insight alone doesn’t cover the knowledge you require to accommodate these needs. You have to know the purpose of the service or system you work with, the business goals of the supplier, the supplier’s market, as well as other external factors. This knowledge will help you solve problems in a better way. Here’s why:
