@@ -6,10 +6,10 @@ title: 'Two Applications, One Repository'
 image: >-
   https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: >-
-  When developing for both web and native applications, it is hard to know how
-  to structure everything. Let's take a look at how our team is solving this
-  problem, maintaining the views for the different applications and the business
-  logic across platforms.
+  When you’re developing similar apps for web and native platforms, it is hard
+  to find a project structure that works well. Let us take a look at how our
+  team is approaching this challenge for maintaining different view layers, as
+  well as a shared business logic code case at the same time.
 authors:
   - Caroline Odden
 ---
