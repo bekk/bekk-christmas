@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 20
-title: 'Designer: Know your domain!'
+title: "User insight alone won't cut it for good\_design"
 ingress: >-
   Why you, as a designer, should know the domain you are working in, not just
   base your choices on user insight.
