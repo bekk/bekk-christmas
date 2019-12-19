@@ -24,7 +24,7 @@ Let's start with Bitbucket.
 
 ### Bitbucket
 
-[Bitbucket](https://bitbucket.org) has seen a lot of success over the last couple of years, just this year it announced [10 million Bitbucket Cloud users](https://bitbucket.org/blog/celebrating-10-million-bitbucket-cloud-registered-users). It started as a start-up back in 2008, and was aquired by Atlassian in 2010. 
+[Bitbucket](https://bitbucket.org) has seen a lot of success over the last couple of years and just this year it announced achieving an impressive [10 million Bitbucket Cloud users](https://bitbucket.org/blog/celebrating-10-million-bitbucket-cloud-registered-users). It started as a start-up back in 2008, and was aquired by Atlassian in 2010. 
 
 In the beginning, it only offered support for [Mercurial](https://www.mercurial-scm.org/) projects, but rolled out Git support in 2011. Some of the really convenient features it boasts are its integrations with other Atlassian products. To support the whole product team and the development process, one can use Jira, Trello and Confluence together and have an impressing amount of features supporting the development.
 
@@ -32,6 +32,8 @@ Both Github and Bitbucket are proprietary software.
 
 ### GitLab
 
-[GitLab](https://gitlab.com) on the other hand, is a product that both enables open source, and truly embodies its essence. [The first commit](https://gitlab.com/gitlab-org/gitlab-foss/commit/9ba1224867665844b117fa037e1465bb706b3685) was made by its founder Dmitriy back in 2011, in a house in Ukraine without running water. GitLab Enterprise Edition launched in 2013 and by 2016 it had over 1000 contributers to the source code. 
+[GitLab](https://gitlab.com) on the other hand, is a product that both enables open source, and truly embodies its essence. [The first commit](https://gitlab.com/gitlab-org/gitlab-foss/commit/9ba1224867665844b117fa037e1465bb706b3685) was made by its founder Dmitriy back in 2011, in a house in Ukraine without running water. Gaining popularity it grew at a steady pace and became a corporation. GitLab Enterprise Edition launched in 2013, and by 2016 it had over 1000 contributers to the source code. 
 
-The story of GitLab's origins to where it is today is a great success-story for open source. Hosted on its own platform, the [code base](https://gitlab.com/gitlab-org/gitlab) is still open source and its GitLab Community Edition is distributed under the [MIT Expat license](https://en.wikipedia.org/wiki/MIT_License).
+Hosted on its own platform, the [code base](https://gitlab.com/gitlab-org/gitlab) is still open source and its GitLab Community Edition is distributed under the [MIT Expat license](https://en.wikipedia.org/wiki/MIT_License).
+
+The story of GitLab's origin to where it is today is a great success-story for its founders, its community and open source! 👏
