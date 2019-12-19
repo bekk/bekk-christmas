@@ -3,7 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 20
 title: Blending color codes with mix-blend-modes
-image: £
+image: >-
+  https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2691&q=80
 ingress: >-
   This day is going to be all about blending colors, or rather how you can do
   blending in CSS! For those of you that, like me, have limited experience
