@@ -44,19 +44,15 @@ const colorRed = Symbol("The color red");
 Given the previous description, symbols seem like weird strings that you cannot see. But their main purpose is that _they can be used as property keys on objects_. 
 
 Property keys in JavaScript have before this been confined to strings:
-
 ```javascript
 const ola = {"name": "Ola", "age": 30};
 ```
-
 But now, these keys can be symbols:
-    
 ```javascript
 const name = Symbol();
 const age = Symbol();
 const kari = {[name]: "Kari", [age]: 32};
 ```
-
 And these symbol keys are treated separately from the old fashioned string keys:
 
 ```javascript
