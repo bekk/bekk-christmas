@@ -84,6 +84,34 @@ The sub-orchestrator is responsible for kicking off child processes and returnin
 The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like activities, needs to be a `Task` containing the result.
 
 ```csharp
+public class CreateTicketSubOrchestrator
+{
+    [FunctionName(nameof(CreateTicketSubOrchestrator))]
+    public async Task<(string, int[])> Run([OrchestrationTrigger] IDurableOrchestrationContext context)
+    {
+        var name = context.GetInput<string>();
+
+        var numbersTasks = Enumerable.Range(1, 6)
+            .Select(i => context.CallActivityAsync<int>(
+                    nameof(CreateNumberActivity),
+                    i
+            )
+        );
+
+        var numbers = await Task.WhenAll(numbersTasks);
+
+        return (name, numbers);
+    }
+}
+```
+
+In this example, the sub-orchestrator takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` function. These numbers are then returned along with with the name of the ticket's owner.
+
+### Orchestrators
+
+The orchestrator is the manager of the entire process, and is responsible for starting the child processes, and knowing when they all have completed. In practice, orchestrators are implemented the same way as sub-orchestrators (sub-orchestrators _are_ orchestrators).
+
+```csharp
 public class CreateTicketsOrchestrator
 {
     [FunctionName(nameof(CreateTicketsOrchestrator))]
@@ -101,29 +129,6 @@ public class CreateTicketsOrchestrator
 
         var tickets = await Task.WhenAll(tasks);
         
-        // TODO: Store the tickets someplace safe
-    }
-}
-```
-
-In this example, the sub-orchestrator takes a name as input and generates 6 numbers by invoking 6 instances of the `CreateNumberActivity` function. These numbers are then returned along with with the name of the ticket's owner.
-
-### Orchestrators
-
-The orchestrator is the manager of the entire process, and is responsible for starting the child processes, and knowing when they all have completed. In practice, orchestrators are implemented the same way as sub-orchestrators (sub-orchestrators _are_ orchestrators).
-
-```csharp
-public class MyOrchestrator
-{
-    [FunctionName(nameof(MyOrchestrator))]
-    public async Task Run([OrchestrationTrigger] DurableOrchestrationContext context)
-    {
-        var people = context.GetInput<IEnumerable<string>>();
-
-        var tasks = people.Select(p => context.CallSubOrchestratorWithRetryAsync<(string, byte[])>(nameof(MySubOrchestrator), retryOptions, p));
-
-        var tickets = await Task.WhenAll(tasks);
-
         // TODO: Store the tickets someplace safe
     }
 }
@@ -193,11 +198,11 @@ var retryOptions = new RetryOptions(
 await context.CallActivityWithRetryAsync(nameof(MyActivity), retryOptions, activityInput);
 ```
 
-However, when using retries, you should be aware of the error types specified above. If an activity throws an application error every time it is invoked, and the suborchestrator retries 10 times, you have 10 retries which will fail every time. Furthermore, if the orchestrator also retries the suborchestrator 10 times, you suddenly have 100 retries which fail every time. And if the suborchestrator calls other activities, those activities will be retried as well.
+However, when using retries, you should be aware of the error types specified above. If an activity throws an application error every time it is invoked, and the sub-orchestrator retries 10 times, you have 10 retries which will fail every time. Furthermore, if an orchestrator also retries the sub-orchestrator 10 times, you suddenly have 100 retries which fail every time. And if the sub-orchestrator calls other activities, those activities will be retried as well.
 
 ### Exception handling
 
-So, if the error is an application error, you need a way to tell the function to simply accept it. `RetryOptions` also contains a callback for determining whether exceptions should cause a retry or not. This, combined with a good old `try-catch`, gives you fine-grained control over how different types of errors in your functions should be handled.
+So, if the error is an application error, you need a way to tell the function to simply accept it as a fact of life. `RetryOptions` also contains a callback for determining whether exceptions should cause a retry or not. This, combined with a good old `try-catch`, give you fine-grained control over how different types of errors in your functions should be handled.
 
 ```csharp
 var retryOptions = new RetryOptions(
@@ -218,7 +223,7 @@ catch (Exception e)
 }
 ```
 
-This way, the (sub)orchestrator will not fail even if one of its activities fails, while still using retries for transient errors. And you are able to control how to handle the application error. Of course, you may still pass information about the failed activity to the orchestrator using exceptions or status objects.
+This way, the (sub-)orchestrator will not fail even if one of its activities fails, while still using retries for transient errors. And you are able to control how to handle the application error. Of course, you may still pass information about the failed activity to the orchestrator using exceptions or status objects.
 
 ## Full example
 
