@@ -147,7 +147,7 @@ function ToastContainer() {
 function ToastBody({id, dispatch}) {
   return (
     <div onClick={() => dispatch({type: 'REMOVE_TOAST', payload:{ id }})}  className="...">
-      i am a toast
+      i am a toast. click to remove me.
     </div>
   )
 }
