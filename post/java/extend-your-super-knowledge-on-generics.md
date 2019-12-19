@@ -61,7 +61,7 @@ List<? extends Vehicle> vehicles = boats;
 vehicles.add(new Car());   // nope!
 ```
 
-There is only one `List` instance being instantiated, and it is an `ArrayList<Boat>`. The instance is then (correctly) assigned as a `List<? extends Vehicle>`, but that does not change _what_ the list was instantiated as, and that integrity is maintained by the type system, which refuses to add a car to the list of boats.
+There is only one list being instantiated, and it is an `ArrayList<Boat>`. The list instance is then (correctly) assigned as a `List<? extends Vehicle>`, but that does not change _what_ the list originally was instantiated as, and that integrity is maintained by the type system, which refuses to add a car to the list of boats.
 
 If the list was indeed instantiated as an `ArrayList<Vehicle>`, then it would be possible to add both cars and boats to it. And that is also why it is not allowed to assign a `List<Boat>` to a `List<Vehicle>`, as they exhibit different behaviour in what type of elements you may add to them.
 
