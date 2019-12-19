@@ -25,7 +25,7 @@ Just like when you mix real colors on a palette, computers can do different comp
 
 The color of the element with mix-blend-mode set will be blended with it’s background color. For example, we could put mix-blend-mode on a text-element over an image to have the text color adjust according to the color of the background, or we could blend two images together to achieve quite a cool effect.
 
-However, blending with a computer is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, which in CSS can be specified by using different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode), but more on that later! 
+However, blending with a computer is not quite as straightforward as when you mix two colors on a palette. There are a heap of different ways to blend colors with computers, which in CSS can be specified with different [blending modes](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode), but more on that later! 
 Lets get on with some examples on how it actually looks like in practice! 
 
 
@@ -35,7 +35,7 @@ Blending text with a picture is actually quite easy. All it takes is to add the 
 ``` CSS
 .text {
   mix-blend-mode: [mode];
-  color: [base color to blend with background]
+  color: [base color of the text that will blend with background]
   /* Other text properties (placement etc) */
 }
 ```
@@ -59,14 +59,11 @@ You can also blend images with each other to get quite a cool effect. By just pl
 }
 ```
 
-In this case there is a black background, then a `div` containing two `img´'s, first the snowy landscape and then the santa. The order of the elements does matter, in this case the snowy landscape is first blended with the background, and the resulting image is then blended with the red santa!
+In this case there is a black background, then a `div` containing two `img`'s, first the snowy landscape and then the santa. The order of the elements does matter, in this case the snowy landscape is first blended with the black background, and the resulting image is then blended with the red santa!
 
 <img class="wide-image" src="https://i.ibb.co/vLhNgvN/css-christmas-picpic.png" />
 
 # What else?
 I recommend just playing around with mix-blend-mode a bit, it's quite fun and you can end up with some beautiful effects! It's also possible to have dynamic elements that move around while simultaneously blending, and in modern browsers there is support for blending SVGs as well. 
-
-# How do I know what blends with what?
-For me it was quite hard to get my head around how elements blend when they are stacked on top of each other, but it's quite easy really. The element with the mix-blend-mode property, and all of its children elements, will be blended with the same background colors. So even if you have 10 elements stacked on top of each other, they will not blend with each other but with the background of the parent with the mix-blend-mode property.
 
 ### Happy blending!
