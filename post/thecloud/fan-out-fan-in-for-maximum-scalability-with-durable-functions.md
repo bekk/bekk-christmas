@@ -59,9 +59,7 @@ The activity function is where the actual work happens when using Durable Functi
 public class CreateNumberActivity
 {
     [FunctionName(nameof(CreateNumberActivity))]
-    public async Task<int> Run(
-        [ActivityTrigger] int index
-    )
+    public async Task<int> Run([ActivityTrigger] int index)
     {
         return await GetNumberFromSomeService(index);
     }
@@ -82,7 +80,9 @@ The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  
 public class CreateTicketSubOrchestrator
 {
     [FunctionName(nameof(CreateTicketSubOrchestrator))]
-    public async Task<(string, int[])> Run([OrchestrationTrigger] IDurableOrchestrationContext context)
+    public async Task<(string, int[])> Run(
+        [OrchestrationTrigger] IDurableOrchestrationContext context
+    )
     {
         var name = context.GetInput<string>();
 
