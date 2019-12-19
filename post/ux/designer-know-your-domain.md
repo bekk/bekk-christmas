@@ -43,7 +43,7 @@ A problem can often be divided into smaller problems. By seeing the whole pictur
 
 Yes, knowing the requirements and restrictions of the industry can limit your ideas to what you already know ...oooor, combined with the right tools it can help you come up with even better ideas that advance your organisation.
 <br />
-> "When ideas are only watered with user insights, it doesn’t give them much of a foundation to grow on. Without the fertilizer of industry knowledge, your concepts are only skin-deep and have no real impact on the core business." 
+> _"When ideas are only watered with user insights, it doesn’t give them much of a foundation to grow on. Without the fertilizer of industry knowledge, your concepts are only skin-deep and have no real impact on the core business."_ 
 >
 > \- Linda C. Halvorsen, Practice Lead at Bekk
 <br />
