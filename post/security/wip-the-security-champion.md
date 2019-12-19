@@ -7,6 +7,9 @@ ingress: >-
   If you are anything like us, you are more that average aware of the risk of
   ignoring security when developing or maintaining software or computer network.
   Does your organization have a security champion program?
+links:
+  - title: Security Champions Playbook
+    url: 'https://www.owasp.org/index.php/Security_Champions_Playbook'
 authors:
   - Lars-Erik Wollan
 ---
@@ -26,4 +29,4 @@ The security champions can also arrange awareness activities such as monthly pre
 
 
 
-https://www.owasp.org/index.php/Security_Champions
+
