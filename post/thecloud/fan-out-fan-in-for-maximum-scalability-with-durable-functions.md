@@ -200,16 +200,24 @@ However, when using retries, you should be aware of the error types specified ab
 So, if the error is an application error, you need a way to tell the function to simply accept it. `RetryOptions` also contains a callback for determining whether exceptions should cause a retry or not. This, combined with a good old `try-catch`, gives you fine-grained control over how different types of errors in your functions should be handled.
 
 ```csharp
-try {
-    var retryOptions = new RetryOptions(
-        firstRetryInterval: TimeSpan.FromSeconds(5),
-        maxNumberOfAttempts: 10
-    );
-    await context.CallActivityWithRetryAsync(nameof(MyActivity), retryOptions, activityInput);
-}
-catch (MyException e)
+var retryOptions = new RetryOptions(
+    firstRetryInterval: TimeSpan.FromSeconds(5),
+    maxNumberOfAttempts: 10
+)
 {
-    _logger.LogError(e, "An error occurred: '{message}'", e.Message);
+    Handle = e => !(e.InnerException is MyException)
+};
+
+try
+{
+    await context.CallActivityWithRetryAsync<int>(
+        nameof(MyActivity),
+        retryOptions,
+        activityInput
+    );
+}
+catch (Exception e)
+{
     // Handle the exception some way
 }
 ```
