@@ -24,7 +24,7 @@ links:
 authors:
   - Kjetil Svalestuen
 ---
-💡 A *web proposal* is the specification of a feature, API or any other addition to the official web standards, governed by the [World Wide Web Consortium (W3C)](https://www.w3.org). These additions are typically developed [in the open](https://github.com/w3c/) by volunteers and large browser vendors such as Apple, Google, Microsoft and Mozilla.
+💡 A _web proposal_ is the specification of a feature, API or any other addition to the official web standards, governed by the [World Wide Web Consortium (W3C)](https://www.w3.org). These additions are typically developed [in the open](https://github.com/w3c/) by volunteers and large browser vendors such as Apple, Google, Microsoft and Mozilla.
 
 🛠 As a result, browsers such as Chrome and Firefox often let you try new features before they're ready to go public. In Chrome, you can enable experimental features by navigating to `chrome://flags/#enable-experimental-web-platform-features` and enabling the flag. Just make sure you're on the latest version!
 
@@ -34,7 +34,7 @@ A few years ago, I helped develop an arcade machine for a large student festival
 
 We had to go for the slow option. But soon, this and other, similar problems can be solved using the proposed [Shape Detection API](https://wicg.github.io/shape-detection-api/)! While JavaScript solutions are typically heavy on the CPU, this proposal lets the browser access specialized hardware modules and SDKs that support both efficient scanning of both QR codes and traditional barcodes.
 
-In addition to QR and barcodes, the Shape Detection API lets you do text recognition and even *face recognition* – directly in the browser! Using the API is also quite simple. Here's an example by Cassie Evans from CSSCamp 2019, showing how to retrieve faces from a webcam feed:
+In addition to QR and barcodes, the Shape Detection API lets you do text recognition and even _face recognition_ – directly in the browser! Using the API is also quite simple. Here's an example by Cassie Evans from CSSCamp 2019, showing how to retrieve faces from a webcam feed:
 
 ```javascript
 const findFace = async () => {
@@ -42,10 +42,10 @@ const findFace = async () => {
     const faceDetector = new FaceDetector();
 
     try {
-    const faces = await faceDetector.detect(myWebcamFeed);
-    console.log(faces);
+        const faces = await faceDetector.detect(myWebcamFeed);
+        console.log(faces);
     } catch (error) {
-    console.log('oops, something went wrong with face detection.');
+        console.log('oops, something went wrong with face detection.');
     }
 }
 ```
@@ -56,9 +56,9 @@ The Shape Detection API is openly [available on GitHub](https://github.com/WICG/
 
 ## Progressive Web Apps
 
-Progressive Web Apps (PWAs) erase the boundaries between apps that live in your browser, and native apps you install on your OS. PWAs are actually a combination of *at least* two, new web proposals; The [Web App Manifest](https://w3c.github.io/manifest/) lets you define a name, icon and colors for your app, and enables the app to be installed locally on the user's device. Using [Service Workers](https://www.w3.org/TR/service-workers/), the app can work without a stable internet connection and send push notifications using the [Push API](https://www.w3.org/TR/push-api/).
+Progressive Web Apps (PWAs) erase the boundaries between apps that live in your browser, and native apps you install on your OS. PWAs are actually a combination of _at least_ two, new web proposals; The [Web App Manifest](https://w3c.github.io/manifest/) lets you define a name, icon and colors for your app, and enables the app to be installed locally on the user's device. Using [Service Workers](https://www.w3.org/TR/service-workers/), the app can work without a stable internet connection and send push notifications using the [Push API](https://www.w3.org/TR/push-api/).
 
-PWAs have been around for a while, but the API support still varies a bit across browsers and devices. Creating a PWA from scratch is also a dauting task, given the long [checklist](https://developers.google.com/web/progressive-web-apps/checklist) of features to keep in mind. However, frameworks such as [Gatsby](https://www.gatsbyjs.org/) for React or [Gridsome](https://www.gridsome.org) for Vue makes the process as easy as installing a handful of plugins.
+PWAs have been around for a while, but the API support still varies a bit across browsers and devices. Creating a PWA from scratch is also a daunting task, given the long [checklist](https://developers.google.com/web/progressive-web-apps/checklist) of features to keep in mind. However, frameworks such as [Gatsby](https://www.gatsbyjs.org/) for React or [Gridsome](https://www.gridsome.org) for Vue makes the process as easy as installing a handful of plugins.
 
 🎥 If you want to build a PWA, I recommend watching Maximiliano Firtman's [talk from JSConf EU 2019](https://www.youtube.com/watch?v=cybhV88KLfI) with an updated perspective on the matter.
 
@@ -66,7 +66,7 @@ PWAs have been around for a while, but the API support still varies a bit across
 
 This is a big one. A team from Google is working on a [Native File System API](https://wicg.github.io/native-file-system/) for the browser. Currently, web applications are very limited in terms of reading and writing files to your local storage. When they want to read a file, the user must manually choose the file using a native file explorer. Saving works in a similar fashion. This quickly becomes tedious when dealing with frequent file operations or handling multiple files simultaneously.
 
-Using the Native File System API, the browser can (if given permission) gain access to local files like any other, native application. This opens a lot of possibilities for the Web. Combined with features of a Progressive Web App, there may be less need for bundlers such as *Electron*, which powers VSCode, Slack, Discord and many other desktop apps. Certainly an opportunity for *ChromeOS*, which mainly relies on web applications. But only time will show if the public wants this merge of the desktop and web, or if they want the browser to remain a separate, sandboxed corner of their operating system.
+Using the Native File System API, the browser can (if given permission) gain access to local files like any other, native application. This opens a lot of possibilities for the Web. Combined with features of a Progressive Web App, there may be less need for bundlers such as _Electron_, which powers VSCode, Slack, Discord and many other desktop apps. Certainly an opportunity for _ChromeOS_, which mainly relies on web applications. But only time will show if the public wants this merge of the desktop and web, or if they want the browser to remain a separate, sandboxed corner of their operating system.
 
 🚀 See it for yourself in [this interactive demo](https://googlechromelabs.github.io/text-editor/), or read a thorough introduction at [web.dev](https://web.dev/native-file-system/).
 
