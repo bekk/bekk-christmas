@@ -31,6 +31,8 @@ I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres s
 
 ## Hvorfor nå?
 
+Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste året har vi sett at flere og flere browsere støtter formatet, og for ikke lenge siden oppdaterte både Figma og Sketch mulighet for å designe med variable fonter.
+
 
 
 ## Lyst til å lære mer?
