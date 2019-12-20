@@ -68,3 +68,6 @@ Test ut hvordan variabel fontteknologi kan manipuleres i sanntid eller med lyd v
 
 [4. The Font Gautlet](https://dinamodarkroom.com/gauntlet/)\
 Det sveitsiske designstudioet Dinamo har laget et verktøy hvor du kan teste variable fonter rett i browseren. Her kan du velge blant eksisterende, eller laste opp egne variable fonter og få en animert forhåndsvisning av alle aksene de inneholder.
+
+[5. V-fonts.com](https://v-fonts.com/)\
+Er det et sted du skal gå for å få tilgang til, og teste ut variable fonter etterhvert som de blir lansert så er det på v-fonts.com.
