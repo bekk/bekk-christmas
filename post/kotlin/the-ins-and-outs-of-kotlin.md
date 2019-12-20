@@ -15,11 +15,6 @@ links:
 authors:
   - Jørund Amsen
 ---
-
-# The 'in's and 'out's of Kotlin
-
-
-
 So the other day I was writing a program for my new zoo. What? Okay fine I haven't actually opened a zoo, I was writing some very boring domain-specific software at work. But it's Christmas, let's just pretend. 
 
 There I was modelling my new zoo in Kotlin. I had decided on a simple inheritance; all animals of the zoo would inherit from the superclass "Animal", and would be contained in a list of animals. Currently all I had for my zoo were my two cats; Sir Toby and Mr Winterbottom. It looked something like this:
