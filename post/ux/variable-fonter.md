@@ -16,6 +16,18 @@ ingress: >-
 authors:
   - Ina Rønning Johansen
 ---
-## Hæ? Variable fonter?
+## Variable fonter, sa du?
 
-I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil.
+Variable fonter er et relativt nytt OpenType-format.
+
+I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
+
+
+
+## Hvorfor nå?
+
+
+
+## Lyst til å lære mer?
+
+Jeg har samlet et knippe ressurser om variable fonter opp igjennom året:
