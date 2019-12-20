@@ -9,7 +9,7 @@ links:
 authors:
   - Vegard Veiset
 ---
-Did you know that you can change the scope of functions? It’s pretty awesome. In Kotlin you can change the scope of functions by using a concept called receivers, and the standard library does it all the time. 
+Did you know that you can change the scope of lambdas? It’s pretty awesome. In Kotlin you can change the scope of lambdas by using a concept called receivers, and the Kotlin standard library does it all the time. 
 
 Let's take a closer look at the familiar `apply` function.
 
