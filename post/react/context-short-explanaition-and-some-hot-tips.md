@@ -20,10 +20,16 @@ authors:
 ---
 **Type inference** 
 
-You don’t have to explicitly type _everything_, TypeScript will use the type of the initial value of a variable. It even works for more complex types.
+You don’t have to explicitly type _everything_, TypeScript will use the type of the initial value of a variable. It  works for more complex types too.
 
 ```
 const [season, setSeason] = React.useState({name:"Christmas", color:"red"});//in order to set the state you can do this:setSeason({name:"Easter", color: "yellow"});
+```
+
+If you realise you need the type in retrospect, you can use _typeof_ to decleare the type based on the inferred type.
+
+```
+type Season = typeof season;
 ```
 
 
