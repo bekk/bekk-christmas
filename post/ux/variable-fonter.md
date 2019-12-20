@@ -53,7 +53,7 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 
 
 
-## Lyst til å lære mer?
+## En variert lenkeliste for mer informasjon om variable fonter. God jul! 
 
 10 lenker
 
