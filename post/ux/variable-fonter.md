@@ -18,4 +18,4 @@ authors:
 ---
 ## Hæ? Variable fonter?
 
-I motsetning til tradisjonelle fonter, der hver snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil.
+I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil.
