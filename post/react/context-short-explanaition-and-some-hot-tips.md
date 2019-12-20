@@ -6,11 +6,10 @@ title: Some neat things to know when working with React and TypeScript
 image: >-
   https://images.unsplash.com/photo-1566807387450-b74aea0e727e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  I started working with React and TypeScriptabout six months ago. Since then
+  I started working with React and TypeScript about six months ago. Since then
   I’ve learned a lot, and there are a few things I wish I knew when I started
-  out that would have saved me from messy solutions and som frustrating moments.
-  Here are a few things that are nice to know about when you are using react
-  with typescript
+  out that would have saved me from messy solutions and some frustrating
+  moments. Here are the ones I think are the most useful.
 links:
   - title: React+TypeScript Cheatsheets
     url: 'https://github.com/typescript-cheatsheets/react-typescript-cheatsheet'
