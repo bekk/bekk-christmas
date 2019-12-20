@@ -22,7 +22,7 @@ authors:
 ---
 Machine learning is often divided into three basic paradigms: supervised learning, unsupervised learning, and reinforcement learning.
 
-In reinforcement learning (RL), software agents are left to fend for themselves in environments with unknown dynamics, and must learn how to behave by observing how the environment changes as a result of previous states and actions taken. To be able to distinguish between good or bad behaviour, the agent receives rewards and punishments based on the state of the environment, and its own actions. As opposed to
+In reinforcement learning (RL), software agents are left to fend for themselves in environments with unknown dynamics, and must learn how to behave by observing how the environment changes as a result of previous states and actions taken. To be able to distinguish between good or bad behaviour, the agent receives rewards and punishments based on the state of the environment, and its own actions.
 
 The _policy_ dictates the behaviour of an agent. The ultimate goal in reinforcement learning is for the agent to learn a policy which will maximize some objective function, often the total reward gained. A _value function_ is often used to keep track of the expected values of certain states, or state-actions pairs. The value function can often be used to derive optimal actions directly.
 
