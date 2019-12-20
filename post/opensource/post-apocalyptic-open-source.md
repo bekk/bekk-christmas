@@ -37,4 +37,4 @@ Stored on doomsday-surviving microfilm, the code will represent the product of d
 
 As a contributor on GitHub and industry member, it feels very exciting to be part of this snapshot and history!
 
-Read the [full article](https://www.bloomberg.com/news/features/2019-11-13/microsoft-apocalypse-proofs-open-source-code-in-an-arctic-cave) over at Bloomberg for their complete coverage and interview with GitHub CEO Nat Friedman.
+Read the [full article](https://www.bloomberg.com/news/features/2019-11-13/microsoft-apocalypse-proofs-open-source-code-in-an-arctic-cave) over at Bloomberg for their complete coverage and interview with GitHub's CEO Nat Friedman.
