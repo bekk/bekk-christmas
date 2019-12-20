@@ -38,7 +38,7 @@ caps(user) {
 
 Ok, so let's take a closer look at whats happening in the example above. The `caps` function takes in a user and a lambda with some unusual syntax: `text: User.() -> String`. What's happening here? We have a lambda function type prefixed with a type! The prefix is a receiver type, and in our example that is a `User`.
 
-But what does this mean? What is a receiver? Receivers assigns a scope, or a receiver type, to a lambda. This means that we can change what `this` is inside a lambda. Having a `User` as a receiver gives us the power to call everything on a `user` object without having to explicitly reference it.
+But what does this mean? What is a receiver? Receivers assign a scope, or a receiver type, to a lambda. This means that we can change what `this` is inside a lambda. Having a `User` as a receiver gives us the power to call everything on a `user` object without having to explicitly reference it.
 
 ```kotlin
 fun caps(user: User, text: User.() -> String) =
@@ -75,10 +75,10 @@ fun User.caps(text: User.() -> String): String = text().capitalize()
 
 val user = User(username = "Santa", id = 1)
 user.caps {
-    $username
+    username
 }
 ```
 
 Now we're talking. With that change our `caps` function look and behave much more like `apply`. Using extension functions and lambdas with receiver types we can make a lot of cool code snippets, and even create amazing domain specific languages!
 
-Receivers makes it possible us to create some pretty interesting things, but remember that with great syntactical powers comes great responsibilities.
+Receivers make it possible to create some pretty interesting things, but remember that with great syntactical powers comes great responsibilities.
