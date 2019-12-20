@@ -158,7 +158,7 @@ So analogous to the `extends` wildcard, `super` is also about enabling flexibili
 
 ### Some `super` awkward collection manipulation
 
-Passing a list of some type to some method which then mutates the list by adding elements to it as a side effect, is rarely a natural way of solving how to populate a list. But to bring some closure to our use of the Collections Framework as examples for applying wildcard types, consider this code:
+Passing a list of some type to a method, which then mutates the list by adding elements to it as a side effect, is rarely a natural way of solving how to populate a list. But to bring some closure to our use of the Collections Framework as examples for applying wildcard types, consider this code:
 
 ```java
 class ParkingLot {
