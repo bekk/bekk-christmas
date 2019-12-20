@@ -2,13 +2,13 @@
 calendar: kotlin
 post_year: 2019
 post_day: 22
-title: The 'in's and 'out's of Kotlin
+title: The ins and outs of Kotlin
 image: >-
   https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  Wonder why a MutableList<Cat> isn't a subtype of MutableList<Animal>? Ever
-  seen the "in" and "out" modifiers in Kotlin and wondered what they did? Let's
-  find out!
+  Wonder why a `MutableList<Cat>\` isn't a subtype of \`MutableList<Animal>`?
+  Ever seen the "in" and "out" modifiers in Kotlin and wondered what they did?
+  Let's find out!
 links:
   - title: Kotlin docs for generics
     url: 'https://kotlinlang.org/docs/reference/generics.html'
@@ -41,7 +41,7 @@ fun main() {
 }
 ```
  
-All was good and i kept on adding new features to my zoo. Until at one point I realized something quite obvious: I need to be able to expand my zoo! Well that's a simple refactoring, I just take that List of Animals and turn it into a MutableList of...
+All was good and i kept on adding new features to my zoo. Until at one point I realized something quite obvious: I need to be able to expand my zoo! Well that's a simple refactoring, I just take that immutable List of Animals and turn it into a MutableList of...
 
 ![Type mismatch. Required MutableList<Animal>. Found: MutableList<Cat>](https://i.ibb.co/7WwKxXW/bilde.png)
  
@@ -97,7 +97,7 @@ val catHouse = Enclosure<Cat>()
 catHouse.moveInAnimal(winterbottom)
 ```
  
-So this is all well and good. We've made a generic class that can be used with any animal that inherits from the Animal-class, like a dog or a sloth. It even has the `feed()`-function that acts equally on all animals. However say I now wanted to add the feature of feeding any animal inside an Enclosure:
+So this is all well and good. We've made a generic class that can be used with any animal that inherits from the Animal-class, like a dog or a sloth. It even has the `feed()`-function that acts equally on all animals. However, say I now wanted to add the feature of feeding any animal inside an Enclosure:
  
 ```kotlin
 fun feedAnimalInside(enclosure: Enclosure<Animal>) {
@@ -162,11 +162,11 @@ addADog(myCats)
  
 Take a moment before you read on to ask yourself *why* the Kotlin people would not allow this. Why isn't the class MutableList covariant? What error will this cause? Don't worry, take your time. This whole generic business is a bit to wrap our head around. 
 
-Ready for the answer? The error we'd encounter is we are now adding a `Dog` to a variable defined only to hold `Cats`. The variable myCats originally wasn't a `MutableList<Animal>` but a `MutableList<Cat>`, one which now suddenly contains a Dog! In Java, we can encounter this error with Arrays since Arrays are **covariant** on its type. It's called an ArrayStoreException, and is a runtime error. Meaning nothing warns us that it will happen. However in Kotlin, they've tried to make this type of error difficult by making all generics by default **invariant**. So why then is an immutable List **covariant**? Well first of all, if we had a `List<Animal>` as a parameter to our `addADog()`, we wouldn't be able to add a dog. Since.. well the List interface doesn't have `add()`. So what that means, is that you can't mess with the content of List. Meaning it's safe to assign a `List<Cat>` to `List<Animal>`, because none can by mistake of adding a `Dog` or a `Sloth`. 
+Ready for the answer? All right. The error we'd encounter is that we are now adding a `Dog` to a variable defined only to hold `Cats`. The variable myCats originally wasn't a `MutableList<Animal>` but a `MutableList<Cat>`, one which now suddenly contains a Dog! In Java, we can encounter this error with Arrays since Arrays are **covariant** on its type. It's called an ArrayStoreException, and is a runtime error. Meaning nothing warns us that it will happen. However in Kotlin, they've tried to make this type of error difficult by making all generics by default **invariant**. So why then is an immutable List **covariant**? Well first of all, if we had a `List<Animal>` as a parameter to our `addADog()`, we wouldn't be able to add a dog. Since.. well the List interface doesn't have `add()`. So what that means, is that you can't mess with the content of List. Meaning it's safe to assign a `List<Cat>` to `List<Animal>`, because none can make the mistake of adding a `Dog` or a `Sloth`. 
 
 So can we generalize this rule to any kind of generic class? Well, kind of. The rule as far as I've understood it is this:
 
-Only a class whose members strictly return the type on which it is generic can be covariant on said type. Meaning no functions of the class can take/consume a parameter of the type, they can only return it. This in turn means there is no way for such a class to have a function that can take a "wrong" subclass and add it to its member variables. We call classes that only return their type **producers**. Producers are covariant on their type. `List<E>` is a **producer**, and is therefore **covariant** on E. However MutableList has the function `add(element: E)`, this means the class doesn't strictly **return**, it also **consumes** a parameter of the type and thus is not a producer, nor is it covariant. 
+Only a class whose members *strictly return* the type on which it is generic can be covariant on said type. Meaning no functions of the class can take/consume a parameter of the type, they can only return it. This in turn means there is no way for such a class to have a function that can take a "wrong" subclass and add it to its member variables. We call classes that only return their type **producers**. Producers are covariant on their type. `List<E>` is a **producer**, and is therefore **covariant** on E. However MutableList has the function `add(element: E)`, this means the class doesn't strictly **return**, it also **consumes** a parameter of the type and thus is not a producer, nor is it covariant. 
 
 ### Always an exception
 
@@ -204,7 +204,7 @@ Now, this clearly clearly breaks with our rule: it has the function `moveInAnima
 
 Let's say for a moment I want to add this function:
 ```kotlin
-fun moveInCat(enclosure: Enclosure<Cat>) {
+fun moveInCat(enclosure: Enclosure<Animal>) {
     enclosure.moveInAnimal(Cat("Admiral von Schneider"))
 }
 ```
