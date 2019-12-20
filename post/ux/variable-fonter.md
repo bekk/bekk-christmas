@@ -13,6 +13,7 @@ ingress: >-
 
 
   ##
+description: ''
 links:
   - title: Monotype “5 Type Trends for Brands to Consider in 2020”
     url: 'https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html'
@@ -21,15 +22,17 @@ authors:
 ---
 ## Variable fonter, sa du?
 
-Variable fonter er et relativt nytt OpenType-format.
-
-Variable fonter er en evolusjon av OpenType (formatet vi alle har brukt i flere år) 
-
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
+
+Filstørrelsen blir mindre fordi hvert tegn bare tegnes som en outline. Punktene som konstruerer denne outlinen har instruksjoner for hvordan de skal oppføre seg for å lage f.eks en annen vekt. Deretter blir de individuelle stilene interpolert, som betyr at de blir tegnet dynamisk i browseren. Dette gjør det også mulig å generere de stilene som kommer imellom, f.eks, semi-bold og bold.
 
 
 
 ## Hvorfor nå?
+
+Variable fonter er et relativt nytt OpenType-format.
+
+Variable fonter er en evolusjon av OpenType (formatet vi alle har brukt i flere år) 
 
 Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste året har vi sett at flere og flere browsere støtter formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter.
 
