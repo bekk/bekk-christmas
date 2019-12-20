@@ -50,17 +50,27 @@ One problem with this approach is that we can no longer know if this method thro
 
 To help understand the differences between using Try or normal exceptions, let's see an example. In this example we have an API-controller which receives an HTTP-request, and parses it. It then sends the parsed request down to a validator component which validates the request. The request is then handled to a service layer which in turn uses a repository. The repository can for example be an external service or a database. The response from the repository is then returned up the layers and finally to the API-controller. This path is shown in the figure below
 
-![Result from repository](https://i.ibb.co/m453q4H/Correct-result.png)
+<p>
+<img src="https://i.ibb.co/m453q4H/Correct-result.png"
+     alt="Result from repository"/>
+</p>
+
 
 Now lets consider the error case where the repository code encounters an error and throws an Exception. The code flow would then look like this.
 
-![Exception from repository](https://i.ibb.co/wSbjFcT/exception-bubbling.png)
+<p>
+<img src="https://i.ibb.co/wSbjFcT/exception-bubbling.png"
+     alt="Exception from repository"/>
+</p>
 
 In this case which can be quite common in Java we throw an `Exception` and it will bubble all the way up and be handled by our global exception handler which will log the error for debugging, and return a nice response to the user. 
 
 The last example will show the code flow when wrapping the result from the repository in a `Try`
 
-![Try with result or exception](https://i.ibb.co/pz9Ssxx/try-exception-capturing.png)
+<p>
+<img src="https://i.ibb.co/pz9Ssxx/try-exception-capturing.png"
+     alt="Try with result or exception"/>
+</p>
 
 Here we get either the result or the exception. They follow the same path back to the API-controller and will likely be handled by the same API-controller and not by a global exception handler. One advantage of this approach is that errors follow the same code flow as normal application logic. 
 
