@@ -2,9 +2,14 @@
 calendar: react
 post_year: 2019
 post_day: 21
-title: 5 neat tricks for React with TypeScript
+title: Some neat things to know when working with React and TypeScript
 image: '![pineaple out of context](https://ibb.co/n74C32d)'
-ingress: "\r\n\nI started working with React and TypeScriptabout six months ago. Since then I’ve learned a lot, and there are a few things I wish I knew back just started out that would have saved me from messy solutions and som frustrating moments. Here are a few things that are nice to know about when you are using react with typescript\r."
+ingress: >-
+  I started working with React and TypeScriptabout six months ago. Since then
+  I’ve learned a lot, and there are a few things I wish I knew when I started
+  out that would have saved me from messy solutions and som frustrating moments.
+  Here are a few things that are nice to know about when you are using react
+  with typescript
 links:
   - title: React+TypeScript Cheatsheets
     url: 'https://github.com/typescript-cheatsheets/react-typescript-cheatsheet'
@@ -13,11 +18,19 @@ links:
 authors:
   - Bendik Ibenholt
 ---
+**Type inference and typeof**
+
+You don’t have to explicitly type everything, TypeScript will use the type of the initial value of a variable. It even works for more complex types.
+
+```
+ const [season, setSeason] = React.useState({name:"Christmas", color:"red"});
+```
+
+In order to set  the state in the above example
+
 **Union types**
 
 When I started out with typescript and React I was mostly familiar with typed languages through Java so this was the first time I came across union types. If you haven’t come across it before it basically allows you to say that a variable can be one of several types. It’s useful if you want to avoid type inference but still want a variable to be able to have more than one type. For instance if you want to initialize a state with a null value
-
-
 
 ```
 const [season, setSeason] = React.useState<Season | null>(null);
