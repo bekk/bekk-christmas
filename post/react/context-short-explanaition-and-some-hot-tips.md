@@ -45,3 +45,7 @@ In the same vein as the tip above, here’s another tip for typing which incorpo
 ```
 type NeatTrickProps =    | {          hasTheme: true;          season: 'christmas' | 'easter';      }    | {          hasTheme: false;      };export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {    if (props.hasTheme) {        return seasonBanner(props.season);    }    return (        <div>            <h1>No reason to celebrate</h1>        </div>    );};}
 ```
+
+
+
+So thats a few features I really wish I was familiar with when I started out using react and Typescript. Happy holydays :-)
