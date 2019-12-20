@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 21
 title: Slipp fontene fri!
-image: 'https://ibb.co/WkrNVKc'
+image: ''
 ingress: >-
 
 
