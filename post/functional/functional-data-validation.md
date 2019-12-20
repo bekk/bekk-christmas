@@ -3,6 +3,8 @@ calendar: functional
 post_year: 2019
 post_day: 21
 title: Functional Data Validation
+authors:
+  - Kristoffer Severinsen
 ---
 As web developers, we are often validating if the data coming from the frontend is valid per our domain logic.
 
