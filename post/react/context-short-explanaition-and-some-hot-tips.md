@@ -23,25 +23,13 @@ When I started out with typescript and React I was mostly familiar with typed la
 
 In the same vein as the tip above, here’s another tip for typing which incorporates union types. If you make a union type of several types that have one common litteral type that you can use to tell the types apart you have what’s called a discriminated union type. Usefull if you want your components accept different sets of props. 
 
-`type NeatTrickProps =`\
-`| {`\
-`hasTheme: true;`\
-`season: 'christmas' | 'easter';`\
-`}`\
-`| {`\
-`hasTheme: false;`\
-`};`
 
-`export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {`\
-`if (props.hasTheme) {`\
-`return seasonBanner(props.season);`\
-`}`\
-`return (`\
-`<div>`\
-`<h1>No reason to celebrate</h1>`\
-`</div>
-    );`\
-`};`
+
+```
+type NeatTrickProps =    | {          hasTheme: true;          season: 'christmas' | 'easter';      }    | {          hasTheme: false;      };export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {    if (props.hasTheme) {        return seasonBanner(props.season);    }    return (        <div>            <h1>No reason to celebrate</h1>        </div>    );};}
+```
+
+
 
 omit
 
