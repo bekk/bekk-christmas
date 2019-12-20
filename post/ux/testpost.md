@@ -45,35 +45,27 @@ After several iterations, we arrived at the _insight retro_.
 
 **How**: Go through the following steps:
 
-![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
-
 ### Status
 
 Active experiments and initiatives. What are we currently investigating? Report back on initiatives from the last retro.
 
-![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
-
-### Summary
+### Discoveries
 
 Findings and knowledge collected since last Insight Retro. What have we discovered recently?
-
-![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
 
 ### Suggestions
 
 Suggestions and ideas. What’s in sight? What should we investigate and which experiments should we do? Tip: set a limit of 1-2 ideas per person.
 
-![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
-
-### Priority
+### Priorities
 
 Prioritize the most important experiments and initiatives. Dot voting or counting hands – keep this simple.
-
-![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
 
 ### Ownership
 
 Each problem or suggestion should have an owner. This person is responsible for reporting back the results in the next retro. That doesn’t necessarily mean that the owner is responsible for doing the actual research.
+
+
 
 **Tip 1**: To make it easier to prioritize you can try to make tasks (experiments and initiatives) in the same size. Try to make the task big enough to be of true value and small enough to depend on everything else.
 
@@ -81,7 +73,7 @@ Each problem or suggestion should have an owner. This person is responsible for 
 
 ## Try it on your own ship!
 
-If you feel your team has an incomplete treasure map that needs to be stitched together, you should give the insight retro a try! We can’t imagine an easier way to engage the whole team around collecting and managing product insights. Although you and your fellow pirates might have just returned from this year’s biggest sea battle (julebord), January is the best time to try out a few insight retros before you set sail towards the next treasure. 
+If you feel your team has an incomplete treasure map that needs to be stitched together, you should give the insight retro a try! We can’t imagine an easier way to engage the whole team around collecting and managing product insights. Although you and your fellow pirates might have just returned from this year’s biggest sea battle (julebord), January is the best time to try out a few insight retros before you set sail towards your next treasure. 
 
 If you try this with your team and develop it further, we would love to get some feedback.
 👆🔝
