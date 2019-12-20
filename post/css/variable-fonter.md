@@ -8,5 +8,7 @@ ingress: >-
   typografi, og hevder her at bruken av variable fonter vil øke dramatisk de
   neste fem til ti årene. Men hva er egentlig variable fonter. Og hvorfor er det
   plutselig blitt aktuelt nå?
+authors:
+  - Ina Rønning Johansen
 ---
 tekst
