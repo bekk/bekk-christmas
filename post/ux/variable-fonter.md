@@ -37,4 +37,12 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 
 ## Lyst til å lære mer?
 
-Jeg har samlet et knippe ressurser om variable fonter opp igjennom året:
+10 lenker
+
+****[**1. Monotype sin trendrapport om typografi i 202**](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)
+
+Monotype har identifisert 5 trender å vurdere til neste år, og i årene som kommer, deriblant variable fonter.
+
+Fase er et generativt konsept. Det er systematisk designet med modulære komponenter, som danner basen for et uendelig antall former. Gjennom variabel fontteknologi kan den manipuleres i sanntid eller med lyd via stemmesignal.
+
+<https://www.eliashanzer.com/phase/>
