@@ -4,7 +4,9 @@ post_year: 2019
 post_day: 22
 title: Your product team needs an insight retro
 ingress: Who is responsible for insights in a product team?
-authors: []
+authors:
+  - Kristoffer Johnsen Solberg
+  - Mikkel Haslum
 ---
 The list of different pieces of information needed to navigate a product in its environment towards a goal, is a long one. A product team is just like a group of pirates on a ship navigating towards their next treasure. They need to know about the nautical terrain, weather forecast and enemy ships to navigate successfully. Like in a product team, the team of pirates has their different roles and responsibilities—and therefore their own separate piece of the truth about how the ship can reach their goal.
 
