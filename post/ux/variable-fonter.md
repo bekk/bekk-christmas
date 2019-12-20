@@ -71,3 +71,6 @@ Det sveitsiske designstudioet Dinamo har laget et verktøy hvor du kan teste var
 
 [5. V-fonts.com](https://v-fonts.com/)\
 Er det et sted du skal gå for å få tilgang til, og teste ut variable fonter etterhvert som de blir lansert så er det på v-fonts.com.
+
+[6. Movement](http://www.nmtype.com/movement/)\
+Movement er en variabel font som er inspirert av dansebevegelser. Ganske stilig!
