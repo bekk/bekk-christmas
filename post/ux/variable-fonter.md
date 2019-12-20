@@ -45,9 +45,5 @@ Monotype sin trendrapport for typografi
 [2. Hva er variable fonter? Med Jason Pamental](https://www.smashingmagazine.com/2019/12/smashing-podcast-episode-5/)\
 Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi. Her snakker han om 
 
-
-
-\
-Fase er et generativt konsept. Det er systematisk designet med modulære komponenter, som danner basen for et uendelig antall former. Gjennom variabel fontteknologi kan den manipuleres i sanntid eller med lyd via stemmesignal.
-
-<https://www.eliashanzer.com/phase/>
+[3. Phase is a generative type concept](https://www.eliashanzer.com/phase/)\
+Test ut hvordan variabel fontteknologi kan manipuleres i sanntid eller med lyd via stemmesignal.
