@@ -39,7 +39,7 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 
 10 lenker
 
-****[**1. Monotype sin trendrapport om typografi i 202**](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)
+****[**1. Monotype sin trendrapport om typografi i 2020**](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)****
 
 Monotype har identifisert 5 trender å vurdere til neste år, og i årene som kommer, deriblant variable fonter.
 
