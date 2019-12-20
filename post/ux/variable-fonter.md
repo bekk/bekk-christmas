@@ -33,33 +33,21 @@ authors:
 ---
 ## Variable fonter, sa du?
 
-Variable fonter er en ny måte å anvende typografi i digitale flater, som gir en enorm fleksibilitet og muligheter for lekenhet i hvordan vi viser frem og setter tekst i grensesnittet. Og det er jo egentlig et paradoks at vi i mange år har designet dynamiske grensesnitt, mens typografien og det tekstlige innholde i stor grad har vært begrenset av tradisjonelle "statiske" fonter. 
+Variable fonter er en ny måte å anvende typografi i digitale flater, som gir en enorm fleksibilitet og muligheter for lekenhet i hvordan vi viser frem og setter tekst i grensesnittet. Og det er jo egentlig et paradoks at vi i mange år har designet dynamiske grensesnitt, mens typografien og det tekstlige innholdet i stor grad har vært begrenset av tradisjonelle "statiske" fonter. Med variable fonter kan også teksten bli dynamisk.
 
-med variable fonter så kan også teksten bli dynamisk. 
-
-
-
-Et paradoks har vært at vi har designet for dynamiske flater i flere år, men fontene har inntil nå vært statiske. \
-\
-Der vektorformatet gjør det enkelt å dynamisk endre størrelsen uten at kvaliteten forringes, så er variable fonter
-
-
-
-\
-\
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
 
 Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som konstruerer omrisset har instruksjoner for hvordan de skal oppføre seg for å f.eks lage en annen annen vekt. Deretter blir de individuelle stilene interpolert, som betyr at de blir tegnet dynamisk i browseren. Dette gjør det også mulig å generere de stilene som kommer imellom automatisk, f.eks, semi-bold og bold.
 
 Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
 
-Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan legge til i fonten,  [FS Kitty fra Fontsmith](https://www.variable-fonts.com/fonts/fs-kitty) kan justeres med akser for både skygge og 
+Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan legge til i fonten,  [FS Kitty fra Fontsmith](https://www.variable-fonts.com/fonts/fs-kitty) kan justeres med akser for både skygge og omriss.
 
 
 
 
 
-## Hvorfor er variable fonter hot akkurat nå?
+## Hvorfor er variable fonter 🔥 akkurat nå?
 
 \
 Variable fonter er et relativt nytt OpenType-format.
@@ -70,7 +58,7 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 
 
 
-## En variert lenkeliste for mer informasjon om variable fonter. God jul! 
+## Her har jeg samlet mine favoritter i en variert lenkeliste. God jul! 
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
