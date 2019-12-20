@@ -13,7 +13,7 @@ ingress: >-
 authors:
   - Fredrik Stenbro
 ---
-As developers of things on the web we want, and are often required by law, to support all major browsers out there. More users often converts to more success. So, of course we want to invite everyone in. The problem arises when our users, many unknowingly I suppose, are using old or specific browsers that do not support the latest and greatest features - which we, as developers, are longing to use. Polyfills to the rescue!
+As developers of things on the web we want, and are often required, to support all major browsers out there. More users often converts to more success. So, of course we want to invite everyone in. The problem arises when our users, many unknowingly I suppose, are using old or specific browsers that do not support the latest and greatest features - which we, as developers, are longing to use. Polyfills to the rescue!
 
 ## What is a polyfill?
 
