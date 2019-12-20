@@ -5,12 +5,15 @@ post_day: 21
 title: Slipp fontene fri!
 image: 'https://ibb.co/WkrNVKc'
 ingress: >-
+  !\[alt-tekst til bilde](https://ibb.co/WkrNVKc)
+
+
+
+
   Folka i Monotype, kanskje verdens fremste fonteksperter, publiserte nylig en
   trendrapport om typografi. De mener at bruken av variable fonter kommer til å
   øke dramatisk de neste årene. Men hva er egentlig variable fonter? Og hvorfor
   har det plutselig blitt så aktuelt akkurat nå?
-
-
 
 
   ##
