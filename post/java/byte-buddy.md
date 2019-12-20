@@ -33,7 +33,7 @@ At first glance, such metaprogramming might seem overly complicated. Isn’t Jav
 
 **Code manipulation with Byte Buddy**
 
-Byte Buddy is a library for manipulating and generating Java class files within a running application, a tool that hides the gory details of byte array processing to make metaprogramming in Java approachable. The library’s API intends to resemble the Java programming language as much as possible to give a familiar start to developers who already program in Java.
+[Byte Buddy](https://bytebuddy.net) is a library for manipulating and generating Java class files within a running application, a tool that hides the gory details of byte array processing to make metaprogramming in Java approachable. The library’s API intends to resemble the Java programming language as much as possible to give a familiar start to developers who already program in Java.
 
 To understand what Byte Buddy can be used for, consider the previous example of an annotation-driven security library. Using Byte Buddy, it is simple to implement a security check at runtime by for example creating a subclass of an existing class. By overriding methods of the base class, Byte Buddy can add additional behavior in this subclass and only invoke the original method based on conditions provided by the library’s user.
 
