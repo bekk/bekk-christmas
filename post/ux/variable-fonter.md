@@ -5,9 +5,9 @@ post_day: 21
 title: Slipp fontene fri!
 image: 'https://ibb.co/WkrNVKc'
 ingress: >-
-  !\[alt-tekst til bilde](https://ibb.co/WkrNVKc)
 
 
+  ![alt-tekst til bilde](https://https://ibb.co/WkrNVKc)
 
 
   Folka i Monotype, kanskje verdens fremste fonteksperter, publiserte nylig en
