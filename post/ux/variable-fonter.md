@@ -32,16 +32,9 @@ Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan
 
 
 
-
-
 ## Hvorfor er variable fonter 🔥 akkurat nå?
 
-\
-Variable fonter er et relativt nytt OpenType-format.
-
-Variable fonter er en evolusjon av OpenType (formatet vi alle har brukt i flere år) 
-
-Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste året har vi sett at flere og flere browsere støtter formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter.
+Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år.  Det er ikke før det siste året flere browsere og flere browsere har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. Og selv om 
 
 
 
