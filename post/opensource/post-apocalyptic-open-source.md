@@ -2,7 +2,7 @@
 calendar: opensource
 post_year: 2019
 post_day: 22
-title: 'WIP: Post-apocalyptic Open source'
+title: 'Open source + Svalbard Global Seed Vault: Artic Code Vault'
 image: >-
   https://images.unsplash.com/photo-1481233673589-df886804ee96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80
 ingress: >-
