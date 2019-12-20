@@ -3,7 +3,7 @@ calendar: react
 post_year: 2019
 post_day: 21
 title: Some neat things to know when working with React and TypeScript
-image: 'https://ibb.co/n74C32d'
+image: 'https://i.ibb.co/VgbmHyn/pineapple-supply-co-6y3rpppgtd-I-unsplash.jpg'
 ingress: >-
   I started working with React and TypeScriptabout six months ago. Since then
   I’ve learned a lot, and there are a few things I wish I knew when I started
