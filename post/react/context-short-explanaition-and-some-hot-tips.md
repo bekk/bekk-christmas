@@ -48,4 +48,6 @@ type NeatTrickProps =    | {          hasTheme: true;          season: 'chris
 
 
 
-So thats a few features I really wish I was familiar with when I started out using react and Typescript. Happy holydays :-)
+So thats a few features I really wish I was familiar with when I started out using react and Typescript.  If you want to read more I highly recomend these [cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) and the [official typescript docs](https://www.typescriptlang.org/docs/home.html)
+
+Happy holidays :-)
