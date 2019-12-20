@@ -46,23 +46,31 @@ After several iterations, we arrived at the _insight retro_.
 
 ### Status
 
-![https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png](test)
+![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
 
 Active experiments and initiatives. What are we currently investigating? Report back on initiatives from the last retro.
 
 ### Summary
 
+![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
+
 Findings and knowledge collected since last Insight Retro. What have we discovered recently?
 
 ### Suggestions
+
+![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
 
 Suggestions and ideas. What’s in sight? What should we investigate and which experiments should we do? Tip: set a limit of 1-2 ideas per person.
 
 ### Priority
 
+![](https://dagfrode.no/artikler/jul/serious-creativity/logical-thinking.png)
+
 Prioritize the most important experiments and initiatives. Dot voting or counting hands – keep this simple.
 
 ### Ownership
+
+
 
 Each problem or suggestion should have an owner. This person is responsible for reporting back the results in the next retro. That doesn’t necessarily mean that the owner is responsible for doing the actual research.
 
