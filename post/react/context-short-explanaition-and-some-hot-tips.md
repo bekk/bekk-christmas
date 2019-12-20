@@ -18,15 +18,15 @@ links:
 authors:
   - Bendik Ibenholt
 ---
-**Type inference and typeof**
+**Type inference** 
 
 You don’t have to explicitly type everything, TypeScript will use the type of the initial value of a variable. It even works for more complex types.
 
 ```
- const [season, setSeason] = React.useState({name:"Christmas", color:"red"});
+ const [season, setSeason] = React.useState({name:"Christmas", color:"red"});//in order to set the state you can do this:setSeason({name:"Easter", color: "yellow"});
 ```
 
-In order to set  the state in the above example
+
 
 **Union types**
 
@@ -45,11 +45,3 @@ In the same vein as the tip above, here’s another tip for typing which incorpo
 ```
 type NeatTrickProps =    | {          hasTheme: true;          season: 'christmas' | 'easter';      }    | {          hasTheme: false;      };export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {    if (props.hasTheme) {        return seasonBanner(props.season);    }    return (        <div>            <h1>No reason to celebrate</h1>        </div>    );};}
 ```
-
-
-
-omit
-
-when to use type inferrence type inference
-
-Generic Components
