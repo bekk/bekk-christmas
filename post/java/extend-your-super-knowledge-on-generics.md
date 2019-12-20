@@ -36,7 +36,7 @@ void addYourCars(List<? extends Vehicle> vehicles) {
 
 It is a list of anything which extends the `Vehicle` class and `Car extends Vehicle`, so why can I not add a `Car`? Is it bug in the type system?
 
-![Thinking covariantly](https://i.ibb.co/7Y34RfR/thinking-covariantly.png)
+![Thinking covariantly](https://i.ibb.co/0Zp07wV/thinking-covariantly.png)
 
 It is actually quite easy to get an understanding to why being able to add a `Car` to this list would be a hole in the type system. Consider adding some more context to the code above:
 
