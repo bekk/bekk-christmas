@@ -3,12 +3,16 @@ calendar: javascript
 post_year: 2019
 post_day: 21
 title: A short recap on polyfills
-ingress: ''
+ingress: >-
+  Maybe you’ve heard of Fetch? The promise-based Web API for making network
+  requests in the browser, and a favourite amongst developers. If you paste
+  `fetch(‘https://www.google.com’)` into the Chrome DevTools console and run it
+  you can take a closer look at how it works. Sadly, you can’t do the same in
+  Internet Explorer. It won’t work. That is because Internet Explorer has not
+  implemented support for Fetch. Or Promise for that matter.
 authors:
   - Fredrik Stenbro
 ---
-Maybe you’ve heard of Fetch? The promise-based Web API for making network requests in the browser, and a favourite amongst developers. If you paste `fetch(‘https://www.google.com’)` into the Chrome DevTools console and run it you can take a closer look at how it works. Sadly, you can’t do the same in Internet Explorer. It won’t work. That is because Internet Explorer has not implemented support for Fetch. Or Promise for that matter.
-
 As developers of things on the web we want, and are often required by law, to support all major browsers out there. More users often converts to more success. So, of course we want to invite everyone in. The problem arises when our users, many unknowingly I suppose, are using old or specific browsers that do not support the latest and greatest features - which we, as developers, are longing to use. Polyfills to the rescue!
 
 ## What is a polyfill?
