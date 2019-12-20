@@ -42,7 +42,7 @@ It is actually quite easy to get an understanding to why being able to add a `Ca
 
 ```java
 void collectVehicles() {
-    List<Boat> vehicles = new getYourBoats();
+    List<Boat> vehicles = getYourBoats();
     addYourCars(vehicles);
 }
 
@@ -177,7 +177,7 @@ List<Car> expiredCars = new ArrayList<>();
 parkingLot.putExpiredInto(expiredCars);
 ```
 
-The implementation of `putExpiredInto(Collection)`-method is just a matter of invoking `expired.add(..)` for applicable cars in the parking lot, and not affected by the Collection being parameterized with a type with or without a `super` wildcard. But the wildcard adds more flexibility in which types of collections which are accepted as input parameters by the method, but still being type safe. Code using `putExpiredInto(Collection)` may actually not be interested in having the expired parked cars put into a collection of cars, but a more general kind, say a `List<Vehicle>`, or even a `Set<Object>`, and that should not matter to the `ParkingLot`. What does matter though, is that it is not accepted to add the cars to a collection of for instance boats, and the type system is able to enforce that. 
+The implementation of `putExpiredInto(Collection)`-method is just a matter of invoking `expired.add(..)` for applicable cars in the parking lot, and not affected by the Collection being parameterized with a type with or without a `super` wildcard. But the wildcard adds more flexibility in which types of collections that are accepted as input parameters by the method, but still being type safe. Code using `putExpiredInto(Collection)` may actually not be interested in having the expired parked cars put into a collection of cars, but a more general kind, say a `List<Vehicle>`, or even a `Set<Object>`, and that should not matter to the `ParkingLot`. What does matter though, is that it is not accepted to add the cars to a collection of for instance boats, and the type system is able to enforce that. 
 
 ```java
 ParkingLot parkingLot = new ParkingLot();
@@ -250,4 +250,4 @@ Types are about guarantees of the constructs we are working on in code. For a ty
 
 The intention of this article has been to give an understanding and appreciation for how types enables to prove certain properties of our programs, automatically, and how maintaining the integrity of these proofs requires the type system to be very strict about how hierarchies of types are managed, and how working with parameterized types in hierarchies naturally imposes restrictions on what operations are possible to safely perform with generic types. The use of familiar examples instead of introducing theoretical concepts on type theory, should hopefully help the reader being able to begin to internalize more advanced use of Java Generics.
 
-Readers interested in further understanding some of the theory behind types, I can recommend the article on [Covariance and contravariance on Wikipedia](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)). In particular, it is interesting to gain an understanding on how type parameterization differ in C# and Java, using respectively _declaration-site_ and _use-site_ variance type annotations. One can also argue that the keywords used in C# for variance, `in` and `out`, offer a more intuitive mnemonic for the effect of the variance than the overloaded words `extends` and `super` in Java.
+For readers interested in further understanding some of the theory behind types, I can recommend the article on [Covariance and contravariance on Wikipedia](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)). In particular, it is interesting to gain an understanding on how type parameterization differ in C# and Java, using respectively _declaration-site_ and _use-site_ variance type annotations. One can also argue that the keywords used in C# for variance, `in` and `out`, offer a more intuitive mnemonic for the effect of the variance than the overloaded words `extends` and `super` in Java.
