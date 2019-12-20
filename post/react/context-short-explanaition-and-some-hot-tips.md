@@ -19,13 +19,49 @@ When I started out with typescript and React I was mostly familiar with typed la
 
 `const [season, setSeason] = React.useState<Season | null>(null);`
 
+Discriminated Unions
+
+In the same vein as the tip above, here’s another tip for typing which incorporates union types. If you make a union type of several types that have one common litteral type that you can use to tell the types apart you have what’s called a discriminated union type. Usefull if you want your components accept different sets of props. 
+
+_type NeatTrickProps =_
+
+\    _\| {_
+
+\    _hasTheme: true;_
+
+\    _season: 'christmas' | 'easter';_
+
+\    _}_
+
+\    _\| {_
+
+\    _hasTheme: false;_
+
+\    _};_
+
+__
+
+_export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {_
+
+\    _if (props.hasTheme) {_
+
+\    _return seasonBanner(props.season);_
+
+\    _}_
+
+\    _return (_
+
+\    _<div>_
+
+\    _<h1>No reason to celebrate</h1>_
+
+\    _</div>_
+
+\    _);_
+
+_};_
 
 
-how to instantiate usesate with null
-
-const \[season, setSeason] = React.useState<"christmas" | "easter" | null>(null);
-
-Typing a Component that Accepts Different Props
 
 omit
 
