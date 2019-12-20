@@ -26,7 +26,7 @@ You don’t have to explicitly type _everything_, TypeScript will use the type o
 const [season, setSeason] = React.useState({name:"Christmas", color:"red"});//in order to set the state you can do this:setSeason({name:"Easter", color: "yellow"});
 ```
 
-If you realise you need the type in retrospect, you can use _typeof_ to decleare the type based on the inferred type.
+If you realise you need the type in retrospect, you can can go back and declare the type, _or_ you can use _typeof_ to declare the type based on the inference.
 
 ```
 type Season = typeof season;
@@ -44,7 +44,7 @@ const [season, setSeason] = React.useState<Season | null>(null);
 
 **Discriminated Unions**
 
-In the same vein as the tip above, here’s another tip for typing which incorporates union types. If you make a union type of several types that have one common litteral type that you can use to tell the types apart you have what’s called a discriminated union type. Usefull if you want your components accept different sets of props. 
+In the same vein as the tip above, here’s another tip for typing which incorporates union types. If you make a union type of several types that have one common literal type that you can use to tell the types apart you have what’s called a discriminated union type. Useful if you want your components accept different sets of props. 
 
 
 
@@ -54,6 +54,6 @@ type NeatTrickProps =    | {          hasTheme: true;          season: 'chris
 
 
 
-So thats a few features I really wish I was familiar with when I started out using react and Typescript.  If you want to read more I highly recomend these [cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) and the [official typescript docs](https://www.typescriptlang.org/docs/home.html)
+So that’s a few features I really wish I was familiar with when I started out using react and Typescript. If you want to read more I highly recommend these [cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) and the [official typescript docs](https://www.typescriptlang.org/docs/home.html)
 
 Happy holidays :-)
