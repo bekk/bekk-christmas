@@ -20,9 +20,7 @@ ingress: >-
 
   ![alt-tekst til bilde](https://i.ibb.co/ws9NYRg/Tesla-Sentry-Vision.png "high
   level architecture")
-links:
-  - title: Tesla USB
-    url: github.com/marcone/teslausb
+links: []
 authors:
   - Nordine Ben Bachir
 ---
