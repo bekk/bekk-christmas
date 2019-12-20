@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 21
 title: Slipp fontene fri!
 ingress: >-
-  Folka i Monotype, kanskje verdens fremste fontekspterter, publiserte nylig en
+  Folka i Monotype, kanskje verdens fremste fonteksperter, publiserte nylig en
   trendrapport om typografi. De mener at bruken av variable fonter kommer til å
   øke dramatisk de neste årene. Men hva er egentlig variable fonter? Og hvorfor
   har det plutselig blitt så aktuelt akkurat nå?
@@ -13,21 +13,8 @@ ingress: >-
 
 
   ##
-description: >-
-  The interpolation can happen in very small steps along various axes, like on a
-  weight axis. This creates an enormous gradation of possible styles. There are
-  still named instances like regular or font-weight: 700 that work, but you can
-  also select any design in between.
-
-
-  A variable font can contain multiple axes. You could add a width axis to your
-  weight axis and get even more styles. Venn by Dalton Maag, the variable font
-  used in these examples, supports weights from 300 to 800 and widths from 75 to
-  125%. This means if you multiply these ranges (500 × 50), you can get 25,000
-  styles out of Venn alone. Not bad for a file of 112 KB.
-links:
-  - title: Monotype “5 Type Trends for Brands to Consider in 2020”
-    url: 'https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html'
+description: ''
+links: []
 authors:
   - Ina Rønning Johansen
 ---
