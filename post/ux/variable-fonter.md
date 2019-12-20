@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 21
-title: Variable fonter
+title: Slipp fontene fri!
 ingress: "Monotype, verdens største skriftforlag, publiserte nylig en trendrapport om typografi, og hevder her at bruken av variable fonter vil øke dramatisk de neste fem til ti årene. Men hva er egentlig variable fonter. Og hvorfor er variable fonter \U0001F525 akkurat nå?\n\n\n\n##"
 description: >-
   The interpolation can happen in very small steps along various axes, like on a
@@ -30,9 +30,9 @@ Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som k
 
 Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
 
-Det er heller ingen begrensning for hvilke akser skriftdesigneren kan legge til, i fonten [FS Kitty fra Fontsmith,](https://www.variable-fonts.com/fonts/fs-kitty) kan du tilpasse fonten etter både skygge og outline. 
+Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan legge til i fonten,  [FS Kitty fra Fontsmith](https://www.variable-fonts.com/fonts/fs-kitty) kan justeres med akser for både skygge og 
 
-En variabel font kan inneholde nesten ubegrenset med akser. Du kan legge til en bredde-akse til vekt-aksen, og få enda flere stiler. 
+
 
 
 
