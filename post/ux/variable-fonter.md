@@ -13,7 +13,18 @@ ingress: >-
 
 
   ##
-description: ''
+description: >-
+  The interpolation can happen in very small steps along various axes, like on a
+  weight axis. This creates an enormous gradation of possible styles. There are
+  still named instances like regular or font-weight: 700 that work, but you can
+  also select any design in between.
+
+
+  A variable font can contain multiple axes. You could add a width axis to your
+  weight axis and get even more styles. Venn by Dalton Maag, the variable font
+  used in these examples, supports weights from 300 to 800 and widths from 75 to
+  125%. This means if you multiply these ranges (500 × 50), you can get 25,000
+  styles out of Venn alone. Not bad for a file of 112 KB.
 links:
   - title: Monotype “5 Type Trends for Brands to Consider in 2020”
     url: 'https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html'
@@ -25,6 +36,10 @@ authors:
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
 
 Filstørrelsen blir mindre fordi hvert tegn bare tegnes som en outline. Punktene som konstruerer denne outlinen har instruksjoner for hvordan de skal oppføre seg for å lage f.eks en annen vekt. Deretter blir de individuelle stilene interpolert, som betyr at de blir tegnet dynamisk i browseren. Dette gjør det også mulig å generere de stilene som kommer imellom, f.eks, semi-bold og bold.
+
+Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
+
+En variabel font kan inneholde nesten ubegrenset med akser. Du kan legge til en bredde-akse til vekt-aksen, og få enda flere stiler. 
 
 
 
@@ -50,3 +65,6 @@ Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi
 
 [3. Phase is a generative type concept](https://www.eliashanzer.com/phase/)\
 Test ut hvordan variabel fontteknologi kan manipuleres i sanntid eller med lyd via stemmesignal.
+
+[4. The Font Gautlet](https://dinamodarkroom.com/gauntlet/)\
+Det sveitsiske designstudioet Dinamo har laget et verktøy hvor du kan teste variable fonter rett i browseren. Her får du en animert forhåndsvisning av alle aksene i en variabel font.
