@@ -17,7 +17,9 @@ authors:
 ---
 ## Svalbard Global Seed Vault
 
-The [Svalbard Global Seed Vault](https://en.wikipedia.org/wiki/Svalbard_Global_Seed_Vault) is a vault for storing seeds for an extended amount of time, a sort of genebank "cold storage" (pun intended) backup for the world's agricultural history in case seeds gets lost for various reasons (accidents, conflict, equipment failures, global crises etc). It's located on the Norwegian archipelago of Svalbard and is funded by Norway and the Crop Trust, which is funded by organisations such as the Bill & Melinda Gates Foundation and other governments.
+The [Svalbard Global Seed Vault](https://en.wikipedia.org/wiki/Svalbard_Global_Seed_Vault) is a vault for storing seeds for an extended amount of time, a sort of genebank "cold storage" (pun intended) backup for the world's agricultural history in case seeds gets lost for various reasons (accidents, conflict, equipment failures, global crises etc). 
+
+It's located on the Norwegian archipelago of Svalbard and is funded by Norway and the Crop Trust. The Crop Trust is funded by organisations such as the Bill & Melinda Gates Foundation and other governments.
 
 From its Wikipedia page:
 
