@@ -27,7 +27,8 @@ Although these cakes have long traditions and has been refined for decades, we a
 
 So, the plan is simple: based upon the existing types of Christmas cookies, let’s use machine learning to create a new one. To do this, we are going to use an open source neural network called textgenrnn.
 
-If you want to understand the model to perfection, you should read our blog post about recurrent neural networks here and we are using this model to make use of transfer learning (here). The beauty of this model is that it is both pretrained and (even more important) it runs on Google Colab, which has more computer power than you could probably muster, which makes re-training much less time consuming. 
+If you want to understand the model to perfection, you should read our blog post about recurrent neural networks . Also, we are using this model to make use of transfer learning, which you can read about in this calendar (_11th of December, titled "Style Transfer"_).\
+The beauty of this model is that it is both pretrained and (even more important) it runs on Google Colab, which has more computer power than you could probably muster, which makes re-training much less time consuming. 
 
 The details surrounding this particular neural network, you are free to look up yourselves. The most important things for you to know, is that the model is pretrained on a substantial amount of text from all over the internet (generalized text) and, by transfer learning, it needs specialized text as input to alter it’s weights for our purpose. So: first of all, we need text.
 
