@@ -38,7 +38,7 @@ Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er e
 
 
 
-## Her har jeg samlet mine favoritter i en variert lenkeliste. God jul! 
+## Og til slutt en liten gavepakke med mine favorittlenker om variable fonter. God jul! 
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
