@@ -26,7 +26,7 @@ In reinforcement learning (RL), software agents are left to fend for themselves 
 
 The _policy_ dictates the behaviour of an agent. The ultimate goal in reinforcement learning is for the agent to learn a policy which will maximize some objective function, often the total reward gained. A _value function_ is often used to keep track of the expected values of certain states, or state-actions pairs. The value function can often be used to derive optimal actions directly.
 
-During training, the agent interacts with the environment, and subsequently updates its policy based on the interaction. This means that a reinforcement learning algorithm trains using a simulation of some scenario, as opposed using labeled data, as in supervised learning.
+During training, the agent interacts with the environment, and subsequently updates its policy based on the interaction. This means that a reinforcement learning algorithm trains using a simulation of some scenario, as opposed to using labeled data, as in supervised learning.
 
 ![An illustration of the agent/environment interaction.](https://i.ibb.co/qkwCmBR/agent-environment.png)
 
