@@ -22,7 +22,8 @@ ingress: >-
 links:
   - title: Tesla USB
     url: github.com/marcone/teslausb
-authors: []
+authors:
+  - Nordine Ben Bachir
 ---
 ## Archiving dashcam footage to the cloud
 
