@@ -18,7 +18,10 @@ If the browser that is running your code do not support the features that you wa
 Here is an example of MDNs suggested polyfill for `Number.isInteger()`:
 
 ```
-Number.isInteger = Number.isInteger || function(value) {              return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;   };
+Number.isInteger = 
+    Number.isInteger || function(value) {              
+        return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;   
+    };
 ```
 
 Just add this to your Javascript, and make sure its declared and on a reachable scope before it is used, and you’re good to go. 
