@@ -12,13 +12,10 @@ ingress: >-
 
 
 
-  ## Hæ? Variable fonter?
-
-
-  I motsetning til tradisjonelle fonter, der hver snitt av en skrifttype lagres
-  som individuelle fontfiler, vil de i en variabel font samles i én enkelt
-  fontfil.
+  ##
 authors:
   - Ina Rønning Johansen
 ---
-tekst
+## Hæ? Variable fonter?
+
+I motsetning til tradisjonelle fonter, der hver snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil.
