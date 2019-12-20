@@ -34,11 +34,11 @@ Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som t
 
 ## Hvorfor er variable fonter 🔥 akkurat nå?
 
-Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år. Det er ikke før det siste året at flere av de største browserne har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. Så nå er tiden for å eksperimentere! 
+Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år. Det er ikke før det siste året at flere av de største browserne har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. Så nå er tiden inne for å eksperimentere! 
 
-## Ønsker du å sjekke ut mer? 
+## 
 
-Her er en liten gavepakke med mine favorittlenker om variable fonter. God jul 🎅🏽
+**Her er en liten gavepakke med mine favorittlenker om variable fonter. God jul** 🎅🏽
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
