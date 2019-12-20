@@ -13,12 +13,17 @@ ingress: >-
 
 
   ##
+links:
+  - title: Monotype “5 Type Trends for Brands to Consider in 2020”
+    url: 'https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html'
 authors:
   - Ina Rønning Johansen
 ---
 ## Variable fonter, sa du?
 
 Variable fonter er et relativt nytt OpenType-format.
+
+Formatet variable fonter er en evolusjon av OpenType (formatet vi alle har brukt i flere år) 
 
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
 
