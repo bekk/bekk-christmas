@@ -22,8 +22,6 @@ links: []
 authors:
   - Ina Rønning Johansen
 ---
-![alt-tekst til bilde](https://https://ibb.co/WkrNVKc)
-
 ## Variable fonter, sa du?
 
 Variable fonter er en ny måte å anvende typografi i digitale flater, noe som gir en enorm fleksibilitet og muligheter for lekenhet i hvordan vi viser frem og setter tekst i grensesnittet. Og det er jo egentlig et paradoks at vi i mange år har designet dynamiske grensesnitt, mens typografien og det tekstlige innholdet i stor grad har vært begrenset av tradisjonelle "statiske" fonter. Med variable fonter kan også teksten bli dynamisk.
@@ -36,9 +34,7 @@ Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som t
 
 Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år. Det er ikke før det siste året at flere av de største browserne har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. Så nå er tiden inne for å eksperimentere! 
 
-## 
-
-**Her er en liten gavepakke med mine favorittlenker om variable fonter. God jul** 🎅🏽
+**Her er en liten gavepakke med noen av mine favorittlenker om variable fonter. God jul** 🎅🏽
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
