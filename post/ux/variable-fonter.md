@@ -3,7 +3,16 @@ calendar: ux
 post_year: 2019
 post_day: 21
 title: Slipp fontene fri!
-ingress: "Monotype, verdens største skriftforlag, publiserte nylig en trendrapport om typografi, og hevder her at bruken av variable fonter vil øke dramatisk de neste fem til ti årene. Men hva er egentlig variable fonter. Og hvorfor er variable fonter \U0001F525 akkurat nå?\n\n\n\n##"
+ingress: >-
+  Folka i Monotype, kanskje verdens fremste fontekspterter, publiserte nylig en
+  trendrapport om typografi. De mener at bruken av variable fonter kommer til å
+  øke dramatisk de neste årene. Men hva er egentlig variable fonter? Og hvorfor
+  har det plutselig blitt så aktuelt akkurat nå?
+
+
+
+
+  ##
 description: >-
   The interpolation can happen in very small steps along various axes, like on a
   weight axis. This creates an enormous gradation of possible styles. There are
@@ -24,6 +33,9 @@ authors:
 ---
 ## Variable fonter, sa du?
 
+Et paradoks har vært at vi har designet for dynamiske flater i flere år, men fontene har inntil nå vært statiske. \
+\
+\
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
 
 Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som konstruerer omrisset har instruksjoner for hvordan de skal oppføre seg for å f.eks lage en annen annen vekt. Deretter blir de individuelle stilene interpolert, som betyr at de blir tegnet dynamisk i browseren. Dette gjør det også mulig å generere de stilene som kommer imellom automatisk, f.eks, semi-bold og bold.
@@ -36,8 +48,9 @@ Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan
 
 
 
-## Hvorfor nå?
+## Hvorfor er variable fonter hot akkurat nå?
 
+\
 Variable fonter er et relativt nytt OpenType-format.
 
 Variable fonter er en evolusjon av OpenType (formatet vi alle har brukt i flere år) 
