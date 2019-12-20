@@ -55,9 +55,7 @@ In the same vein as the tip above, here’s another tip for typing which incorpo
 
 `            <h1>No reason to celebrate</h1>`
 
-`        </div>`
-
-`    );`
+`        </div>    );`
 
 `};`
 
@@ -67,6 +65,6 @@ omit
 
 when to use type inferrence type inference
 
-generiske componenter
+
 
 Generic Components
