@@ -33,7 +33,18 @@ authors:
 ---
 ## Variable fonter, sa du?
 
+Variable fonter er en ny måte å anvende typografi i digitale flater, som gir en enorm fleksibilitet og muligheter for lekenhet i hvordan vi viser frem og setter tekst i grensesnittet. Og det er jo egentlig et paradoks at vi i mange år har designet dynamiske grensesnitt, mens typografien og det tekstlige innholde i stor grad har vært begrenset av tradisjonelle "statiske" fonter. 
+
+med variable fonter så kan også teksten bli dynamisk. 
+
+
+
 Et paradoks har vært at vi har designet for dynamiske flater i flere år, men fontene har inntil nå vært statiske. \
+\
+Der vektorformatet gjør det enkelt å dynamisk endre størrelsen uten at kvaliteten forringes, så er variable fonter
+
+
+
 \
 \
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
