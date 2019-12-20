@@ -31,7 +31,7 @@ I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres s
 
 ## Hvorfor nå?
 
-Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste året har vi sett at flere og flere browsere støtter formatet, og for ikke lenge siden oppdaterte både Figma og Sketch mulighet for å designe med variable fonter.
+Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste året har vi sett at flere og flere browsere støtter formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter.
 
 
 
@@ -42,7 +42,7 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 Monotype sin trendrapport for typografi 
 
-[2. Hva er variable fonter? Med Jason Pamental](https://www.smashingmagazine.com/2019/12/smashing-podcast-episode-5/)\
+[2. Smashing Podcast Episode 5 With Jason Pamental: What Are Variable Fonts?](https://share.transistor.fm/s/a800792e)\
 Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi. Her snakker han om 
 
 [3. Phase is a generative type concept](https://www.eliashanzer.com/phase/)\
