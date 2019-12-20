@@ -3,16 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 21
 title: Variable fonter
-ingress: >-
-  Monotype, verdens største skriftforlag, publiserte nylig en trendrapport om
-  typografi, og hevder her at bruken av variable fonter vil øke dramatisk de
-  neste fem til ti årene. Men hva er egentlig variable fonter. Og hvorfor er det
-  plutselig blitt aktuelt nå?
-
-
-
-
-  ##
+ingress: "Monotype, verdens største skriftforlag, publiserte nylig en trendrapport om typografi, og hevder her at bruken av variable fonter vil øke dramatisk de neste fem til ti årene. Men hva er egentlig variable fonter. Og hvorfor er variable fonter \U0001F525 akkurat nå?\n\n\n\n##"
 description: >-
   The interpolation can happen in very small steps along various axes, like on a
   weight axis. This creates an enormous gradation of possible styles. There are
