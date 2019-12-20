@@ -43,6 +43,12 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 
 Monotype har identifisert 5 trender å vurdere til neste år, og i årene som kommer, deriblant variable fonter.
 
+[2. Hva er variable fonter? Med Jason Pamental](https://www.smashingmagazine.com/2019/12/smashing-podcast-episode-5/)\
+Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi. Her snakker han om 
+
+
+
+\
 Fase er et generativt konsept. Det er systematisk designet med modulære komponenter, som danner basen for et uendelig antall former. Gjennom variabel fontteknologi kan den manipuleres i sanntid eller med lyd via stemmesignal.
 
 <https://www.eliashanzer.com/phase/>
