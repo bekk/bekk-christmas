@@ -32,7 +32,7 @@ Just add this to your Javascript, and make sure its declared and on a reachable 
 
 There are also many polyfills that can be found on NPM, like [the popular polyfill for Fetch](https://www.npmjs.com/package/whatwg-fetch) which removes the burden of you having to find the perfect implementation yourself.
 
-But how to know if a feature is supported or not? I would recommend using the [MDN Web Docs](https://developer.mozilla.org/en-US/) from Mozilla Developer Network. In addition to showing browser compatibility, it also contains great documentation and often suggested polyfills. [CanIUse](https://caniuse.com/) is another great alternative, offering a quick and easy way for looking up for compatibility for a lot of different features in both Javascript, CSS and more.
+But how to know if a feature is supported or not? I would recommend using the [MDN Web Docs](https://developer.mozilla.org/en-US/) from Mozilla Developer Network. In addition to showing browser compatibility, it also contains great documentation and often suggested polyfills. [CanIUse](https://caniuse.com/) is another great alternative, offering a quick and easy way for looking up compatibility for a lot of different features in both Javascript, CSS and more.
 
 If your code base requires a lot of polyfilling, maybe also some transpiling, adding tools like [Babel.js](https://babeljs.io/) to your build setup enables an easy way of securing that required polyfills are available when your code is running.
 
