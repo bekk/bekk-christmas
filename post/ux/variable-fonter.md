@@ -58,7 +58,7 @@ Teknologien er ganske ny, faktisk bare tre år gammel. Men i løpet av det siste
 10 lenker
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
-I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, deriblant variable fonter.
+I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
 
 [2. Smashing Podcast Episode 5 With Jason Pamental: What Are Variable Fonts?](https://share.transistor.fm/s/a800792e)\
 Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi. Her snakker han om 
