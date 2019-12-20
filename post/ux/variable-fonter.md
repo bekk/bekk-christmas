@@ -34,26 +34,22 @@ Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som k
 
 Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
 
-![alt-tekst til bilde (https://i.ibb.co/1nc4wwr/f6ccda3beec19535d36d056360556b24.gif)
+
 Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan legge til i fonten,  [FS Kitty fra Fontsmith](https://www.variable-fonts.com/fonts/fs-kitty) kan justeres med akser for både skygge og omriss.
-
-
-
-
 
 ## Hvorfor er variable fonter 🔥 akkurat nå?
 
-Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år.  Det er ikke før det siste året flere browsere og flere browsere har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. Og selv om 
+Vel, teknologien er ganske ny, faktisk bare tre år gammel. Variable fonter er en evolusjon av OpenType, formatet vi har brukt i flere år.  Det er ikke før det siste året at flere av de største browserne har lagt inn støtte for formatet, og for ikke lenge siden gjorde både Figma og Sketch det mulig å designe med variable fonter. 
 
 
 
-## Og til slutt en liten gavepakke med mine favorittlenker om variable fonter. God jul! 
+## Og til slutt en liten gavepakke med mine favorittlenker om variable fonter. God jul!
 
 [1. 5 type trends for brands to consider in 2020](https://hello.monotype.com/5-Type-Trends-for-Brands-2020.html)\
 I Monotype sin trendrapport, lister de ut 5 typografitrender for 2020 og årene som kommer, en av trendene er selvfølgelig variable fonter.
 
 [2. Smashing Podcast Episode 5 With Jason Pamental: What Are Variable Fonts?](https://share.transistor.fm/s/a800792e)\
-Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi. Her snakker han om 
+Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi, så han har naturligvis snakket om variable fonter både her og der, senest i Smashing magazine sin podcast.
 
 [3. Phase is a generative type concept](https://www.eliashanzer.com/phase/)\
 Test ut hvordan variabel fontteknologi kan manipuleres i sanntid eller med lyd via stemmesignal.
