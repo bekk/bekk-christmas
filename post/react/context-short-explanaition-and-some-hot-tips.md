@@ -19,47 +19,47 @@ When I started out with typescript and React I was mostly familiar with typed la
 
 `const [season, setSeason] = React.useState<Season | null>(null);`
 
-Discriminated Unions
+**Discriminated Unions**
 
 In the same vein as the tip above, here’s another tip for typing which incorporates union types. If you make a union type of several types that have one common litteral type that you can use to tell the types apart you have what’s called a discriminated union type. Usefull if you want your components accept different sets of props. 
 
-_type NeatTrickProps =_
+`type NeatTrickProps =`
 
-\    _\| {_
+`    | {`
 
-\    _hasTheme: true;_
+`          hasTheme: true;`
 
-\    _season: 'christmas' | 'easter';_
+`          season: 'christmas' | 'easter';`
 
-\    _}_
+`      }`
 
-\    _\| {_
+`    | {`
 
-\    _hasTheme: false;_
+`          hasTheme: false;`
 
-\    _};_
+`      };`
 
-__
+``
 
-_export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {_
+`export const NeatTrickBanner: FunctionComponent<NeatTrickProps> = props => {`
 
-\    _if (props.hasTheme) {_
+`    if (props.hasTheme) {`
 
-\    _return seasonBanner(props.season);_
+`        return seasonBanner(props.season);`
 
-\    _}_
+`    }`
 
-\    _return (_
+`    return (`
 
-\    _<div>_
+`        <div>`
 
-\    _<h1>No reason to celebrate</h1>_
+`            <h1>No reason to celebrate</h1>`
 
-\    _</div>_
+`        </div>`
 
-\    _);_
+`    );`
 
-_};_
+`};`
 
 
 
