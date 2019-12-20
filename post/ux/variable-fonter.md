@@ -30,7 +30,10 @@ Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som k
 
 Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
 
+![alt-tekst til bilde](https://ibb.co/VN6kPPg)
 Og det er faktisk nesten ingen begrensning for hvilke akser skriftdesigneren kan legge til i fonten,  [FS Kitty fra Fontsmith](https://www.variable-fonts.com/fonts/fs-kitty) kan justeres med akser for både skygge og omriss.
+
+
 
 
 
