@@ -116,6 +116,6 @@ You have now reached the end of our calendar, and we hope you haven't lost your 
 
 As a last note: There are many other elements you could have used machine learning for when creating these cookies: You could have used machine learning for the instructions, the shapes, or for the name of the cake for that matter. The problems aren't exceedingly difficult, but we wanted to show you that it doesn't take a lot amount of work to create something fun (and delicious in our case).
 
-Godspeed on your journey with machine learning!
+Godspeed on the journey ahead with machine learning and data science!
 
-...and have a Merry, Merry Christmas from all of us here at Bekk :)
+...and have a Merry, Merry Christmas from all of us at Bekk :)
