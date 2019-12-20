@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 21
 title: Slipp fontene fri!
-image: 'https://ibb.co/rkYgdH3'
+image: 'https://ibb.co/4Vb3rkC'
 ingress: >-
   Folka i Monotype, kanskje verdens fremste fonteksperter, publiserte nylig en
   trendrapport om typografi. De mener at bruken av variable fonter kommer til å
