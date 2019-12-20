@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 22
-title: Testpost
+title: Your product team needs an insight retro
 ingress: Who is responsible for insights in a product team?
 authors: []
 ---
