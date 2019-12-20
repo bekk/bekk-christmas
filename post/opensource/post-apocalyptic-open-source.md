@@ -33,7 +33,7 @@ An impressive feat and the deposits keep coming. Deposits are also soon coming i
 
 [![Artic Code Vault](https://img.youtube.com/vi/fzI9FNjXQ0o/0.jpg)](https://www.youtube.com/watch?v=fzI9FNjXQ0o)
 
-On the 2nd of Febuary 2020 every public repository on GitHub will be snapshotted at stored for at least 1000 years! So if you have a few gremlins in your code, now's the time to start tidying up 😜
+On the 2nd of Febuary 2020 every public repository on GitHub will be snapshotted and stored for at least 1000 years! So if you have a few gremlins in your code, now's the time to start tidying up 😜
 
 Stored on doomsday-surviving microfilm, the code will represent the product of decades of industry innovation and software, and it will be saved as part of our sivilization's legacy for a long, long time. 
 
