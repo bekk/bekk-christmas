@@ -3,6 +3,7 @@ calendar: functional
 post_year: 2019
 post_day: 21
 title: Functional Data Validation
+image: 'https://i.ibb.co/C5JVVDS/QKo-op-g-R9-I.png'
 authors:
   - Kristoffer Severinsen
 ---
