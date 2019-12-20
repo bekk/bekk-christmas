@@ -52,7 +52,7 @@ The second thing that might look slightly weird at first glimpse is the way the 
 
 Our `caps` function doesn't quite look like apply, but we are getting there. On the other hand `caps` looks very similar to the `with` function in Kotlin, which is not a keyword, but is in fact a function in the standard library. Let's compare them.
 
-```
+```kotlin
 caps(user) {
     "$username!"
 }
@@ -66,13 +66,13 @@ Both `caps` and `with` changes the context of the code-block allowing us to refe
 
 But we wanted to implement `apply`, not `with`. Extension functions to the rescue! Let's change our function to be an extension functions and see what happens. 
 
-```
+```kotlin
 fun User.caps(text: User.() -> String): String = text().capitalize()
 ```
 
 In extension functions `this` refers to the object it's extending. And in our extension function the receiver type and the extended type is the same, meaning that we can call our lambda directly. Pretty sweet!
 
-```
+```kotlin
 fun User.caps(text: User.() -> String): String = text().capitalize()
 
 val user = User(username = "Santa", id = 1)
