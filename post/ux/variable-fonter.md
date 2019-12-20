@@ -67,4 +67,4 @@ Jason Pamental er kanskje den mest tydeligste talspersonen for digital typografi
 Test ut hvordan variabel fontteknologi kan manipuleres i sanntid eller med lyd via stemmesignal.
 
 [4. The Font Gautlet](https://dinamodarkroom.com/gauntlet/)\
-Det sveitsiske designstudioet Dinamo har laget et verktøy hvor du kan teste variable fonter rett i browseren. Her får du en animert forhåndsvisning av alle aksene i en variabel font.
+Det sveitsiske designstudioet Dinamo har laget et verktøy hvor du kan teste variable fonter rett i browseren. Her kan du velge blant eksisterende, eller laste opp egne variable fonter og få en animert forhåndsvisning av alle aksene de inneholder.
