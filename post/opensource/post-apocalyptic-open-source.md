@@ -25,7 +25,7 @@ From its Wikipedia page:
 
 > At this time, the total number of samples held at the vault was 967,216,[21] representing over 13,000 years of agricultural history.[22]
 
-An impressive feat and the deposits keep coming. Deposits are also coming in other shapes, such as open source code...
+An impressive feat and the deposits keep coming. Deposits are also soon coming in other forms, such as open source code...
 
 ## Introducing the Artic Code Vault
 
