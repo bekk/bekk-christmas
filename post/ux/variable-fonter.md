@@ -24,6 +24,8 @@ Variable fonter er en ny måte å anvende typografi i digitale flater, noe som g
 
 I motsetning til tradisjonelle fonter, der hvert snitt av en skrifttype lagres som individuelle fontfiler, vil de i en variabel font samles i én enkelt fontfil. Dette gjør at du får færre filer å holde styr på, færre kilobytes, og mye, mye mer typografisk frihet!
 
+En skriftdesigner jobber tradisjonelt sett med et statisk sett med parametere og eksporterer de til separate fontfiler, som en designer deretter tar i bruk. I en variabel font samles alle snitt av en skrifttype i én enkelt fontfil, og gir oss som designere mye større spillerom for å kunne eksperimentere med, og tilpasse skrifttypen som vi vil. 
+
 Filstørrelsen blir mindre fordi hvert tegn tegnes som et omriss. Punktene som konstruerer omrisset har instruksjoner for hvordan de skal oppføre seg for å f.eks lage en annen annen vekt. Deretter blir de individuelle stilene interpolert, som betyr at de blir tegnet dynamisk i browseren. Dette gjør det også mulig å generere de stilene som kommer imellom automatisk, f.eks, semi-bold og bold.
 
 Interpolering kan foregå i veldig små steg langs forskjellige akser, som f.eks en vektakse. Dette skaper en stor gradering av mulige stiler. Det er fortsatt mulig å velge f.eks regular eller "font-weight: 600", men du kan også velge hva du vil i mellom. 
