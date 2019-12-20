@@ -18,7 +18,7 @@ ingress: >-
   the owner. I’m using Azure for archiving the videos and AWS to process them.
 
 
-  ![alt-tekst til bilde](https://ibb.co/Zmn6NVX)
+  ![alt-tekst til bilde](https://i.ibb.co/ws9NYRg/Tesla-Sentry-Vision.png)
 links:
   - title: Tesla USB
     url: github.com/marcone/teslausb
