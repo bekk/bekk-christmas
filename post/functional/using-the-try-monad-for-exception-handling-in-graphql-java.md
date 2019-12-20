@@ -4,7 +4,7 @@ post_year: 2019
 post_day: 22
 title: Using the Try Monad for exception handling in GraphQL-java
 authors:
-  - Bendik Solheim
+  - Pål Thomassen
 ---
 In this blog post I will go through some practical examples of using the Try monad for exception handling in Java. The purpose is to see how we can write more functional code in a non-functional but widely adopted language such as Java. 
 
