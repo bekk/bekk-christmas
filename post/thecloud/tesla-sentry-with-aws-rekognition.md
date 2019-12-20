@@ -16,6 +16,9 @@ ingress: >-
   In this post, I want to describe how I’m trying to use video content analysis
   to determine if there is a person on any video and then send a notification to
   the owner. I’m using Azure for archiving the videos and AWS to process them.
+
+
+  ![alt-tekst til bilde](https://ibb.co/Zmn6NVX)
 links:
   - title: Tesla USB
     url: github.com/marcone/teslausb
