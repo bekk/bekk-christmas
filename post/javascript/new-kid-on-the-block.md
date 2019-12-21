@@ -122,4 +122,4 @@ What I personally loved the most when I started making something with Svelte was
 
 I could go on for a while about all the built-in functionality of Svelte, but I'd rather you go [try it for yourself](https://svelte.dev/tutorial/basics).
 
-P.S. if you're intrigued and curious, but feel guilty for betraying your current framework of choice, don't worry. Svelte actually [aroused the most interest](https://2019.stateofjs.com/awards/prediction_award) of all front end frameworks this year, so you're not alone.
+P.S. if you're intrigued and curious, but feel guilty for betraying your current framework of choice, don't worry. Svelte was actually awarded the [Prediction Award](https://2019.stateofjs.com/awards/prediction_award) in this years state of JS, so you're not alone.
