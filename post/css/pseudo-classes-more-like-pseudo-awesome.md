@@ -25,9 +25,15 @@ For each box I add an pseudo element with ::after and position it to be placed r
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/rNamVOQ" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
+<iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/RwNpvGG" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
 I now rotate the pseudo elements in order to create a box. I use transform to rotate the pseudo element 90 degrees along the X-axis. On hover the boxes will turn. To get the effect of a turning box I rotate the parent element and change the color of the pseudo element to imitate shadow. I set the transition time to 0.3 seconds. 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/ExamjVM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+
+<iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/RwNpvGG" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 I'm not quite happy with the hover effects. The boxes are turning too quickly and I cannot grasp the secret message. I want to change the boxes to turn on click. In order to achieve this I have to change the boxes into checkboxes. If the checkbox is checked, it will rotate. 
 
