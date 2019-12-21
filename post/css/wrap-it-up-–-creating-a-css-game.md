@@ -234,4 +234,4 @@ body {
 ## Wrapping up
 And that's it! We've created a game using only CSS and HTML. 
 
-For more inspiration, I'd highly recommend checking out the collection of CSS games that Una Kravets has compiled on Codepen, as well as the talk she held on CSSconf EU in 2017, both linked down below. For you Norwegiana I also included a link to my own talk at JavaZone this year, where I live coded this game (although with more zombies and less Christmas).
+For more inspiration, I'd highly recommend checking out the collection of CSS games that Una Kravets has compiled on Codepen, as well as the talk she held on CSSconf EU in 2017, both linked down below.
