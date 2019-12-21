@@ -17,7 +17,7 @@ links: []
 authors:
   - Ina Rønning Johansen
 ---
-<!---//!\[variablefonter](https://i.ibb.co/kgP070k/giffen.gif)
+![alt-tekst til bilde](https://i.ibb.co/kgP070k/giffen.gif)
 
 
 
