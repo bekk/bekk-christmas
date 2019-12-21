@@ -444,10 +444,6 @@ When working as a consultant, you end up spending a lot of time looking at other
 
 ## Agreeing on the impossible
 
-.
-
-S
-
 I want to end on the same note as I started the entire article. Agreeing on how to structure you code with a team of diverse people with diverse opinions and preferences isn't necessarily easy. But do we really _need_ to agree? **I'd say yes**. Not about what's the prettiest, but in what kind of code style and structure you want in your project - even if some people don't agree completely.
 
 Getting your whole team to agree on what's the "cleanest" or "most readable" is not a realistic goal. What becomes the most important is to have everybody voice their opinions, try to empathize with why they want one thing or the other, and then try to have a conversation about what choices you should make as a team. It will definitely be a lot of give and take for most (if not all) members of your team, but I stand by that it's better to agree on a single code style and structure, instead of having a mix and match of everybody's personal preferences.
