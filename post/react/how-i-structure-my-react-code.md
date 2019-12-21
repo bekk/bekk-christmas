@@ -443,8 +443,10 @@ When working as a consultant, you end up spending a lot of time looking at other
 
 ## Agreeing on the impossible
 
-I want to end on the same note I started the entire article with. Agreeing on code structure with a team of different personalities with different experiences and personal preferences is hard. This begs the question - do we really need to agree?
+I want to end on the same note as I started the entire article. Agreeing on code structure with a team of different personalities with different experiences and personal preferences is hard. This begs the question - do we really need to agree? 
 
-Getting everybody in your team to agree on what looks the nicest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, and tries to incorporate most of them in your strategy - you can at least make everybody feel included in the decision.
+I would state that the answer here would be «yes». Not about what looks the nicest, but about what kind of structure and code style you should have in your project. Even though it will come at the expense of someone's opinions and preferences.
 
-No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. It helps with onboarding new developers, and keeping everybody as productive as possible.
+Getting everybody in your team to agree on what looks cleanest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, are interested in why they have them, and tries to incorporate most of their opinions in your strategy - you can at least make everybody feel included in the decision.
+
+No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. This is the key to having a clean and understandable project, which also helps with onboarding new developers, and keeping everybody as productive as possible.
