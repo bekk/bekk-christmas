@@ -35,7 +35,10 @@ By combining these three principles, one could use this hierarchy to name things
 
 Thus, when for example describing a menu, the wrapper is named `menu` and each menu item is named `menu__item`. If one of the menu-items is disabled, it will be named `menu__item--disabled`. By following these principles for giving class names, specificity remains low. Meaning, how the browser applies what CSS values to apply. By keeping it low, hopefully, your code behaves more like you think it should. Thus keeping "sledgehammers" like `ID` and `!important` out of the picture.
 
-<iframe src="https://codepen.io/nicolaif/pen/povRJEY"></iframe>
+<iframe height="365" style="width: 100%;" scrolling="no" title="Examples of BEM with SCSS" src="https://codepen.io/nicolaif/embed/povRJEY?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/nicolaif/pen/povRJEY'>Examples of BEM with SCSS</a> by Nicolai Fredriksen
+  (<a href='https://codepen.io/nicolaif'>@nicolaif</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 The examples consist of three _Blocks_: `menu`, `page-content` and `button`. `menu`, for example, has an _element_ called `item` which could be in the _modified_ state of `disabled`. By using the nesting capabilities of SCSS, the code gets a tree-like structure with regards to its logic, and making edits to specific _modifiers_ and _element_ while containing a base-_block_ is how BEM really shines.
 
