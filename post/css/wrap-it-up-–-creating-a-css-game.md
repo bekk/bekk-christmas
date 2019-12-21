@@ -57,7 +57,7 @@ input:checked {
 
 In order to display these counters, we need to use a pseudo-element and  the `counter()` function, which returns the current value of a counter as a string:
 
-```
+```css
 footer:before {
   content: counter(gifts-wrapped) '/' counter(gifts) ' ';
 }
