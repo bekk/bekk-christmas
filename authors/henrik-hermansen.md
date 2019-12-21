@@ -1,6 +1,6 @@
 ---
 title: Henrik Hermansen
+socialMediaLink: 'https://twitter.com/RealHenrikH'
 company: Bekk
-socialMediaLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 ---
 
