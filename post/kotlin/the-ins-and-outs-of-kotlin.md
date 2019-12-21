@@ -6,9 +6,9 @@ title: The ins and outs of Kotlin
 image: >-
   https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: >-
-  Wonder why a `MutableList<Cat>\` isn't a subtype of \`MutableList<Animal>`?
-  Ever seen the "in" and "out" modifiers in Kotlin and wondered what they did?
-  Let's find out!
+  Wonder why a `MutableList<Cat>` isn't a subtype of `MutableList<Animal>`? Ever
+  seen the "in" and "out" modifiers in Kotlin and wondered what they did? Let's
+  find out!
 links:
   - title: Kotlin docs for generics
     url: 'https://kotlinlang.org/docs/reference/generics.html'
