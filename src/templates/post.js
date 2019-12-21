@@ -147,8 +147,8 @@ const Template = ({ data, pageContext }) => {
                     )}
                 </PostNavigation>
                 <PrismThemer>
-                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
+                        <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                         <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
                 </PrismThemer>
