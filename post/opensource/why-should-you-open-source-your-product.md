@@ -6,7 +6,6 @@ title: Why should you open source your product?
 ingress: 'Such a simple question. But is there an easy answer? '
 authors:
   - Mats Byrkjeland
-  - Mats Byrkjeland
 ---
 
 ## You seek contributions from the community
