@@ -175,7 +175,7 @@ We extract the canvas dimensions as individual variables together with the numbe
 
 ![Resolution](https://i.ibb.co/BwWQHB4/resolution.png)
 
-...and that's it! The full code example is available on [github](https://github.com/kgolid/cellular-automata-post/blob/master/index.js) and as a codepen:
+...and that's it! The full code example is available on [github](https://github.com/kgolid/cellular-automata-post/blob/master/index.js) and on codepen:
 
 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="kgolid" data-slug-hash="oNgZKqV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="oNgZKqV">  <span>See the Pen <a href="https://codepen.io/kgolid/pen/oNgZKqV">  oNgZKqV</a> by Kjetil Golid (<a href="https://codepen.io/kgolid">@kgolid</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
