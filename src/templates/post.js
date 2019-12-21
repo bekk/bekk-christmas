@@ -42,12 +42,21 @@ const HeroImage = styled.img`
 `;
 
 const Ingress = styled.section`
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: DINW01Regular, sans-serif;
 
     max-width: 759px;
     margin-left: auto;
     margin-right: auto;
+
+    code {
+        background-color: var(--secondary-background-color);
+        padding: 3px 4px;
+        margin: 0 2px;
+        font-size: inherit;
+        white-space: pre-wrap !important;
+        word-break: break-word !important;
+    }
 `;
 
 const RelevantLinksContainer = styled.section`
@@ -147,8 +156,8 @@ const Template = ({ data, pageContext }) => {
                     )}
                 </PostNavigation>
                 <PrismThemer>
+                    <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                     <ArticleBody>
-                        <Ingress dangerouslySetInnerHTML={{ __html: ingressHtml }} />
                         <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
                 </PrismThemer>
