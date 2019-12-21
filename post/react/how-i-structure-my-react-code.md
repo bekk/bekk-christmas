@@ -444,10 +444,12 @@ When working as a consultant, you end up spending a lot of time looking at other
 
 ## Agreeing on the impossible
 
-I want to end on the same note as I started the entire article. Agreeing on code structure with a team of different personalities with different experiences and personal preferences is hard. This begs the question - do we really need to agree? 
+...
 
-I would state that the answer here would be «yes». Not about what looks the nicest, but about what kind of structure and code style you should have in your project. Even though it will come at the expense of someone's opinions and preferences.
+Som jeg startet hele artikkelen med, det å komme til enighet om hvordan man skal strukturere koden sin i et team med mennesker som alle har forskjellige preferanser, det er ikke nødvendigvis lett. Men så er jo spørsmålet, trenger man egentlig å bli enige? Jeg vil egentlig si at svaret på dette er JA. Da ikke om hva som er finest eller best, men om hva slags kodestil og struktur man ønsker å ha i prosjektet sitt. Selv om det går på bekostning av noens meninger og preferanser.
 
-Getting your team to agree on what looks cleanest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, are interested in why they have them, and tries to incorporate most of their opinions in your strategy - you can at least make the whole team feel included in the decision.
+I want to end by repeating what I claimed in the beginning of the article. **Agreeing on how to structure you code with a team of diverse people with diverse opinions and preferences isn't necessarily easy. But do we really _need_ to agree? **I'd say yes**. Not about what's the prettiest, but what kind of code style and structure you want in your project - even if some people don't agree completely. Even if I don't agree completely.
 
-No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. This is the key to having a clean and understandable project, which also helps with onboarding new developers, and keeping everybody as productive as possible.
+Getting everybody to agree on what's the "cleanest" or "most readable" is not a realistic goal. What becomes the most important then is to have everybody voice their opinions, try to empathize with why they want one thing or the other, and then try to have a conversation about what choices you should make as a team. It will definitely be a lot of give and take for most (if not all) members of your team, but I stand by that it's better to agree on a single code style and structure, instead of having a mix and match of everybody's personal preferences.
+
+Because when you have a neat, clean, understandable and standardized code style in your code base, it'll help with onboarding new developers, and keeping everybody as productive as possible.
