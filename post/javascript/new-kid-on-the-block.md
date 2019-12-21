@@ -3,8 +3,7 @@ calendar: javascript
 post_year: 2019
 post_day: 23
 title: New kid on the block
-image: >-
-  https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/NKOTB_2008-11-06.jpg/1600px-NKOTB_2008-11-06.jpg
+image: 'https://images.unsplash.com/photo-1555813456-94a3dd418cd3'
 ingress: >-
   The world of front end frameworks is [always
   evolving](https://2019.stateofjs.com/front-end-frameworks/). For years it was
