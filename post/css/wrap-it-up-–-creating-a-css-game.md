@@ -28,7 +28,7 @@ links:
 authors:
   - Mira Thoen Feiring
 ---
-<https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator>Did you catch all the gifts? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend.
+Did you catch all the gifts? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend.
 
 ## The setup
 
