@@ -419,15 +419,15 @@ You can see the complete code for this project in [its Github repository](https:
 
 Now we're left with a directory that contains the file `EditMyInformationToSanta.jsx` and a bunch of simple component files. Each file is small, easy to reason about in isolation. 
 
-The section components are very local to this file, so they reside in the same folder. The reason I refactored this code out in the first place is so the main file is visually nicer to look at, and easier to understand. We'll can also place other relevant files here, like styling, images, tests, utilities or other resources. 
+The section components are very local to this file, so they reside in the same folder. The reason I refactored this code out in the first place is so the main file is visually nicer to look at, and easier to understand. We'll can also place other relevant files here, like styling, images, texts, utilities or other resources. 
 
 ## Domain vs Components
 
-When your app grows, like when we add live-tracking of Santa's movements using the SantaLocation API, or the new top 10 wished gifts lists feature, you'll eventually start running into places where presentational components can be reused.  To separate these from the rest, I like to split my code into two folders - `/components` and `/domain`. 
+When your app grows, like when we add live-tracking of Santa's movements using the SantaLocation API, or the new top 10 wished gifts feature, you'll eventually start running into places where presentational components can be reused.  To separate these from the rest, I like to split my code into two folders - `/components` and `/domain`. 
 
 `/domain` contains the domain logic of my application. It's where `EditMyInformationToSanta` lives, and all of its buddies. 
 
-`/components` is where I place components that are reusable and can be used across the project. `TextInputWithLabel` is a typical candidate for this kind of reuse, and will be moved from the `/domain/edit-my-information-to-santa` folder to its own folder in `/components/text-input-with-label` whenever that need arises. Like in the `/domain` folder, this one might also contain relevant files for testing or styling.
+`/components` is where I place components that are reusable and can be used across the project. `TextInputWithLabel` is a typical candidate for this kind of reuse, and will be moved from the `/domain/edit-my-information-to-santa` folder to its own folder in `/components/text-input-with-label` whenever that need arises. Like in the `/domain` folder, this one might also contain relevant files as texts or styling.
 
 ## Keeping it clean
 
