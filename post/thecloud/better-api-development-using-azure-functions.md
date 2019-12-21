@@ -3,6 +3,8 @@ calendar: thecloud
 post_year: 2019
 post_day: 22
 title: Better API development using Azure Functions
+image: >-
+  https://images.unsplash.com/photo-1459695452562-46cc57bef5f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 ingress: >-
   The Cloud has changed the way we work. From enabling truly global scale
   through faster and repeatable deployments to a whole new DevEx 
