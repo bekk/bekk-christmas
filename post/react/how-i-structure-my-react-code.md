@@ -46,7 +46,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [hasBeenNice, setHasBeenNice] = useState(null);
+  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -60,7 +60,7 @@ const EditMyInformationToSanta = () => {
       gender,
       address,
       hasFireplace,
-      hasBeenNice,
+      naughtyOrNice,
       letterToSanta,
       wishList,
     });
@@ -92,23 +92,27 @@ const EditMyInformationToSanta = () => {
           />
         </label>
 
-        <div>
-          <span>I am a...</span>
-          <label>Boy</label>
-          <input
-            type="radio"
-            value="boy"
-            checked={gender === 'boy'}
-            onChange={event => setGender(event.target.value)}
-          />
-          <label>Girl</label>
-          <input
-            type="radio"
-            value="girl"
-            checked={gender === 'girl'}
-            onChange={event => setGender(event.target.value)}
-          />
-        </div>
+        <fieldset>
+          <legend>I am a...</legend>
+          <label>
+            <input
+              type="radio"
+              value="boy"
+              checked={gender === 'boy'}
+              onChange={event => setGender(event.target.value)}
+            />
+            Boy
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="girl"
+              checked={gender === 'girl'}
+              onChange={event => setGender(event.target.value)}
+            />
+            Girl
+          </label>
+        </fieldset>
 
         <label>
           <span>My address is:</span>
@@ -120,42 +124,50 @@ const EditMyInformationToSanta = () => {
           />
         </label>
 
-        <div>
-          <span>I have a fireplace?</span>
-          <label>Yes</label>
-          <input
-            type="radio"
-            value={true}
-            checked={hasFireplace}
-            onChange={event => setHasFireplace(event.target.value)}
-          />
-          <label>No</label>
-          <input
-            type="radio"
-            value={false}
-            checked={hasFireplace === false}
-            onChange={event => setHasFireplace(event.target.value)}
-          />
-        </div>
+        <fieldset>
+          <legend>I have a fireplace?</legend>
+          <label>
+            <input
+              type="radio"
+              value={true}
+              checked={hasFireplace}
+              onChange={event => setHasFireplace(event.target.value)}
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              value={false}
+              checked={hasFireplace === false}
+              onChange={event => setHasFireplace(event.target.value)}
+            />
+            No
+          </label>
+        </fieldset>
 
-        <div>
-          <span>This year I have been naughty or nice?</span>
-          <label>Naughty</label>
-          <input
-            type="radio"
-            value={false}
-            checked={hasBeenNice === false}
-            onChange={event => setHasBeenNice(event.target.value)}
-          />
+        <fieldset>
+          <legend>This year I have been naughty or nice?</legend>
+          <label>
+            <input
+              type="radio"
+              value="naughty"
+              checked={naughtyOrNice === 'naughty'}
+              onChange={event => setNaughtyOrNice(event.target.value)}
+            />
+            Naughty
+          </label>
 
-          <label>Nice</label>
-          <input
-            type="radio"
-            value={true}
-            checked={hasBeenNice}
-            onChange={event => setHasBeenNice(event.target.value)}
-          />
-        </div>
+          <label>
+            <input
+              type="radio"
+              value="nice"
+              checked={naughtyOrNice === 'nice'}
+              onChange={event => setNaughtyOrNice(event.target.value)}
+            />
+            Nice
+          </label>
+        </fieldset>
 
         <div>
           <h2>My wishes this year:</h2>
@@ -178,7 +190,7 @@ const EditMyInformationToSanta = () => {
             }}
           />
 
-          <span>My wish list:</span>
+          <h3>My wish list:</h3>
           <ul>
             {wishList.map(wish => (
               <li>{wish}</li>
@@ -202,6 +214,7 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
+
 ```
 
 The component itself isn't really very advanced, but since it's a pretty big form with a lot of information, the file size (or rather, the file _length_) becomes pretty huge. To improve this, I'd start splitting the code into components.
@@ -221,7 +234,7 @@ const EditMyInformationToSanta = () => {
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState('');
   const [hasFireplace, setHasFireplace] = useState(null);
-  const [hasBeenNice, setHasBeenNice] = useState(null);
+  const [naughtyOrNice, setNaughtyOrNice] = useState(null);
   const [letterToSanta, setLetterToSanta] = useState('');
   const [wish, setWish] = useState('');
   const [wishList, setWishList] = useState([]);
@@ -235,7 +248,7 @@ const EditMyInformationToSanta = () => {
       gender,
       address,
       hasFireplace,
-      hasBeenNice,
+      naughtyOrNice,
       letterToSanta,
       wishList,
     });
@@ -261,8 +274,8 @@ const EditMyInformationToSanta = () => {
           onChange={event => setAge(event.target.value)}
         />
 
-        <div>
-          <span>I am a...</span>
+        <fieldset>
+          <legend>I am a...</legend>
 
           <RadioToggle
             label1="Boy"
@@ -272,7 +285,7 @@ const EditMyInformationToSanta = () => {
             value={gender}
             onChange={event => setGender(event.target.value)}
           />
-        </div>
+        </fieldset>
 
         <TextInputWithLabel
           label="My address is:"
@@ -281,8 +294,8 @@ const EditMyInformationToSanta = () => {
           onChange={event => setAddress(event.target.value)}
         />
 
-        <div>
-          <span>I have a fireplace?</span>
+        <fieldset>
+          <legend>I have a fireplace?</legend>
 
           <RadioToggle
             label1="Yes"
@@ -292,23 +305,23 @@ const EditMyInformationToSanta = () => {
             value={hasFireplace}
             onChange={event => setHasFireplace(event.target.value)}
           />
-        </div>
+        </fieldset>
 
-        <div>
-          <span>This year I have been naughty or nice?</span>
+        <fieldset>
+          <legend>This year I have been naughty or nice?</legend>
 
           <RadioToggle
             label1="Naughty"
             toggleValue1="naughty"
             label2="Nice"
             toggleValue2="nice"
-            value={hasBeenNice}
-            onChange={event => setHasBeenNice(event.target.value)}
+            value={naughtyOrNice}
+            onChange={event => setNaughtyOrNice(event.target.value)}
           />
-        </div>
+        </fieldset>
 
         <div>
-          <h2>My wishes this year</h2>
+          <h2>My wishes this year:</h2>
           <TextInputWithLabel
             label="I want:"
             placeholder="Write a wish"
@@ -325,7 +338,7 @@ const EditMyInformationToSanta = () => {
             }}
           />
 
-          <span>My wish list:</span>
+          <h3>My wish list:</h3>
           <ul>
             {wishList.map(wish => (
               <li>{wish}</li>
@@ -349,6 +362,7 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
+
 ```
 
 Note that, even though I'm not sure if the inputs and radio buttons will ever be used by other parts of my application, I'm still choosing to move them into their own separate files. These are placed as close to the original component as possible, so they're as close as possible to where they're used. 
@@ -379,7 +393,7 @@ const EditMyInformationToSanta = () => {
     address: '',
     gender: null,
     hasFireplace: null,
-    hasBeenNice: null,
+    naughtyOrNice: null,
   });
 
   const [letterToSanta, setLetterToSanta] = useState('');
@@ -400,11 +414,11 @@ const EditMyInformationToSanta = () => {
     <div>
       <h1>Hi, Santa! This is me</h1>
       <form>
-        <AboutMe me={me} onMeChange={setMeState} />
-
-        <MyWishes wish={wish} wishList={wishList} onWishChange={setWish} onWishListChange={setWishList} />
+        <AboutMe me={me} onMeChange={updatedMeState => setMeState(updatedMeState)} />
 
         <LetterToSanta letterToSanta={letterToSanta} onLetterChange={setLetterToSanta} />
+
+        <MyWishes wish={wish} wishList={wishList} onWishChange={setWish} onWishListChange={setWishList} />
 
         <button type="submit" onClick={submitMyInformationToSanta} />
       </form>
@@ -413,6 +427,8 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
+
+
 ```
 
 You can see the complete code for this project in [its Github repository](https://github.com/mathilwa/WishesToSanta).
