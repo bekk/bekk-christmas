@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 22
 title: Your product team needs an insight retro
-image: /assets/piratskipet.gif
+image: /assets/piratskip-laggy.gif
 ingress: Who is responsible for insights in a product team?
 authors:
   - Kristoffer Johnsen Solberg
@@ -32,6 +32,8 @@ We tested different versions of insight rituals in our teams and workplaces (a v
 6. **Adjustable** – No teams are equal so the ritual needs to have room for adaptation.
 
 After several iterations, we arrived at the _insight retro_.
+
+![](/assets/pirat-kart.gif)
 
 ## The Insight Retro
 
@@ -64,8 +66,6 @@ Prioritize the most important experiments and initiatives. Dot voting or countin
 ### Ownership
 
 Each problem or suggestion should have an owner. This person is responsible for reporting back the results in the next retro. That doesn’t necessarily mean that the owner is responsible for doing the actual research.
-
-
 
 **Tip 1**: To make it easier to prioritize you can try to make tasks (experiments and initiatives) in the same size. Try to make the task big enough to be of true value and small enough to depend on everything else.
 
