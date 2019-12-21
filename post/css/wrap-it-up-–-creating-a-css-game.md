@@ -5,9 +5,9 @@ post_day: 21
 title: Wrap it up! – Creating a CSS game
 ingress: >-
   Santa needs your help. The usually ever so helpful elves have decided to play
-  a trick on him, and have made all the gifts run around, resisting to get
+  a trick on him, and have made all the toys run around, resisting getting
   wrapped in the lovely Christmas paper he just spent all day picking out. Can
-  you help Santa catch and wrap the gifts?
+  you help Santa catch and wrap all of them?
 
 
   <iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas
@@ -28,7 +28,7 @@ links:
 authors:
   - Mira Thoen Feiring
 ---
-Did you catch all the gifts? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend. But beware: This might not look its best on a small devices.
+Did you catch all the toys? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend. But beware: This might not look its best on a small devices.
 
 ## The setup
 
