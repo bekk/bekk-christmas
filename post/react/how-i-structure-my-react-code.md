@@ -214,7 +214,6 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
-
 ```
 
 The component itself isn't really very advanced, but since it's a pretty big form with a lot of information, the file size (or rather, the file _length_) becomes pretty huge. To improve this, I'd start splitting the code into components.
@@ -274,18 +273,15 @@ const EditMyInformationToSanta = () => {
           onChange={event => setAge(event.target.value)}
         />
 
-        <fieldset>
-          <legend>I am a...</legend>
-
-          <RadioToggle
-            label1="Boy"
-            toggleValue1="boy"
-            label2="Girl"
-            toggleValue2="girl"
-            value={gender}
-            onChange={event => setGender(event.target.value)}
-          />
-        </fieldset>
+        <RadioToggle
+          question="I am a..."
+          label1="Boy"
+          toggleValue1="boy"
+          label2="Girl"
+          toggleValue2="girl"
+          value={gender}
+          onChange={event => setGender(event.target.value)}
+        />
 
         <TextInputWithLabel
           label="My address is:"
@@ -294,32 +290,26 @@ const EditMyInformationToSanta = () => {
           onChange={event => setAddress(event.target.value)}
         />
 
-        <fieldset>
-          <legend>I have a fireplace?</legend>
+        <RadioToggle
+          question="I have a fireplace?"
+          label1="Yes"
+          toggleValue1={true}
+          label2="No"
+          toggleValue2={false}
+          value={hasFireplace}
+          onChange={event => setHasFireplace(event.target.value)}
+        />
 
-          <RadioToggle
-            label1="Yes"
-            toggleValue1={true}
-            label2="No"
-            toggleValue2={false}
-            value={hasFireplace}
-            onChange={event => setHasFireplace(event.target.value)}
-          />
-        </fieldset>
-
-        <fieldset>
-          <legend>This year I have been naughty or nice?</legend>
-
-          <RadioToggle
-            label1="Naughty"
-            toggleValue1="naughty"
-            label2="Nice"
-            toggleValue2="nice"
-            value={naughtyOrNice}
-            onChange={event => setNaughtyOrNice(event.target.value)}
-          />
-        </fieldset>
-
+        <RadioToggle
+          question="This year I have been naughty or nice?"
+          label1="Naughty"
+          toggleValue1="naughty"
+          label2="Nice"
+          toggleValue2="nice"
+          value={naughtyOrNice}
+          onChange={event => setNaughtyOrNice(event.target.value)}
+        />
+        
         <div>
           <h2>My wishes this year:</h2>
           <TextInputWithLabel
@@ -362,7 +352,6 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
-
 ```
 
 Note that, even though I'm not sure if the inputs and radio buttons will ever be used by other parts of my application, I'm still choosing to move them into their own separate files. These are placed as close to the original component as possible, so they're as close as possible to where they're used. 
@@ -415,10 +404,7 @@ const EditMyInformationToSanta = () => {
       <h1>Hi, Santa! This is me</h1>
       <form>
         <AboutMe me={me} onMeChange={updatedMeState => setMeState(updatedMeState)} />
-
-        <LetterToSanta letterToSanta={letterToSanta} onLetterChange={setLetterToSanta} />
-
-        <MyWishes wish={wish} wishList={wishList} onWishChange={setWish} onWishListChange={setWishList} />
+        <MyWishes wish={wish} wishList={wishList} onWishChange={setWish} onWishListChange={setWishList} />        <LetterToSanta letterToSanta={letterToSanta} onLetterChange={setLetterToSanta} />
 
         <button type="submit" onClick={submitMyInformationToSanta} />
       </form>
@@ -427,8 +413,6 @@ const EditMyInformationToSanta = () => {
 };
 
 export default EditMyInformationToSanta;
-
-
 ```
 
 You can see the complete code for this project in [its Github repository](https://github.com/mathilwa/WishesToSanta).
