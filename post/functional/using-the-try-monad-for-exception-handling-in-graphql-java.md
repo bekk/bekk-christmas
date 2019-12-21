@@ -32,7 +32,7 @@ public DatabaseObject fetchDatabaseObject() throws IOException {
 
 Now, they might not look that much different. With `Try`, you have to treat the data structure returned with a result containing the `Exception`. In the other, since `IOException` is checked exception, you must also handle the IOException as a caller. We will see later that there are other advantages to using a Try instead of an Exception.
 
-Often in Java we do not like checked exceptions because we do not know what to do with them and we instead wrap them in a `RuntimeException`. The rationale behind this is that since we do not know what to do with the `IOException`, it is just as easy to throw an RuntimeException and let it bubble all the way up. As an example, we might have done something like this skip having to throw an exception:
+Often in Java we do not like checked exceptions because we do not know what to do with them and we instead wrap them in a `RuntimeException`. The rationale behind this is that since we do not know what to do with the `IOException`, it is just as easy to throw an RuntimeException and let it bubble all the way up. As an example, we might have done something like this to rethrow a checked exception as an unchecked exception:
 
 ```java
 public DatabaseObject fetchDatabaseObject() {
@@ -55,7 +55,6 @@ To help understand the differences between using Try or normal exceptions, let's
      alt="Result from repository"
      style="width: auto;"/>
 </p>
-
 
 Now lets consider the error case where the repository code encounters an error and throws an Exception. The code flow would then look like this.
 
@@ -85,7 +84,7 @@ In the examples in this post I will use cyclops Try data structure, but is can e
 
 ## GraphQL and Java
 
-[GraphQL](https://graphql.org/learn/) is a new way of building APIs that is quite different from traditional REST. This blog post will not go into depths about GraphQL, for that see the above mentioned link. Since GraphQL is transport agnostic, it does not use HTTP error codes to represent errors. Errors are a part of the response and not something special that is handled in some other way. This blog post won't explain the details of GraphQL, but here is how the responses from a GraphQL API looks like.
+[GraphQL](https://graphql.org/learn/) is a new way of building APIs that is quite different from traditional REST. This blog post will not go into depths about GraphQL, for that see the link mentioned above. Since GraphQL is transport agnostic, it does not use HTTP error codes to represent errors. Errors are a part of the response and not something special that is handled in some other way. This blog post won't explain the details of GraphQL, but here is how the responses from a GraphQL API looks like. It is just JSON but following a specification.
 
 ```graphql
 {
@@ -108,7 +107,7 @@ GraphQL APIs are naturally a Graph and they can be written in their own graphql 
 type Person {
   id: String!
   name: String!
-  programmingIn: [ProgrammingLanguage!]!
+  programmingLanguages: [ProgrammingLanguage!]!
 }
 
 type ProgrammingLanguage {
@@ -149,7 +148,7 @@ public <T> DataFetcherResult<T> fromTry(Try<T, IOException> tried) {
 
 By doing this we can easily wrap all of our exceptions all the way from the repository and up to the GraphQL-layer in our application. This allows us to write code that does not throw exceptions but instead wraps them in `Try` data structures and later in `DataFetcherResult` before returning them in the GraphQL-api. 
 
-## What advantages are there to using Try instead of exceptions? 
+## What advantages are there to using Try instead of exceptions?
 
 We are forced by the compiler to handle the exceptions early and cannot write code that just ignores the possibility that there might be thrown exceptions. The control flow of the application is the same and since a GraphQL response might contain both data and errors, we can anticipate what the final response will be when errors are thrown. If we instead used `Exceptions` it can be hard to reason about how the final GraphQL response to the user will look like. 
 
@@ -159,8 +158,8 @@ Writing code that does not throw exceptions might be a goal in itself. It makes 
 
 ### But java can still throw errors
 
-Yes, the JVM can still produce `OutOfMemoryExceptions` and the like. There might be hidden `RuntimeExceptions` from external libraries being thrown which we do not know where to catch in our code. I would argue that these exceptions are fine, since when they are severe enough like an `OutOfMemoryException` there is not much we can do in code other than to crash. If you have external dependencies which throws `RunTimeExceptions` you can either use the Try-monad as best you can and encapsulate them or just let them bubble to the top and be handled by your global exception handler. Since this is Java you should probably have a global exception handler anyway.
+Yes, the JVM can still produce `OutOfMemoryExceptions` and the like. There might be hidden `RuntimeExceptions` from external libraries being thrown which we do not know where to catch in our code.I would argue that these exceptions are fine, since when they are severe enough. Like an `OutOfMemoryException` there is not much we can do in code other than to crash. If you have external dependencies which throws `RunTimeExceptions` you can either use the Try-monad as best you can and encapsulate them or just let them bubble to the top and be handled by your global exception handler. Since this is Java you should probably have a global exception handler anyway.
 
 ### In the end the answer is it depends
 
-Should you embrace writing functional code in a non-functional language like java? Are the functional paradigm really that much better than traditional object oriented code? The answer is off course it depends. It depends on how familiar you are with functional languages and concepts, how is the rest of the code base structured? Are you starting a new project, or is this a huge existing code base which has sophisticated error handling in place already? Introducing something completely different can make the code base as a whole harder to read since it now has two different ways of dealing with exceptions. For me personally writing more functional java code has been quite fun and a big learning experience. For our GraphQL-API using the Try-monad for exception handling, it has been much easier for us to have control over the response returned to the user and the tests are easier to write since an exception is just like a normal response.
+Should you embrace writing functional code in a non-functional language like java? Are the functional paradigm really that much better than traditional object oriented code? The answer is off course it depends. How familiar you are with functional languages and concepts? How is  the rest of the code base structured? Are you starting a new project, or is this a huge existing code base which has sophisticated error handling in place already? Introducing something completely different can make the code base as a whole harder to read since it now has two different ways of dealing with exceptions. For me personally writing more functional java code has been quite fun and a big learning experience. For our GraphQL-API using the Try-monad for exception handling, it has been much easier for us to have control over the response returned to the user and the tests are easier to write since an exception is just like a normal response.
