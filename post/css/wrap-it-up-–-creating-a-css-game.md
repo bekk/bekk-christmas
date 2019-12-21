@@ -28,13 +28,13 @@ links:
 authors:
   - Mira Thoen Feiring
 ---
-Did you catch all the gifts? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend.
+Did you catch all the gifts? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend. But beware: This might not look its best on a small devices.
 
 ## The setup
 
 To start I've created a pretty basic layout. In contains five checkboxes, with corresponding labels, linked together with the `for` and `id` attributes. I've increased the size of the input fields with the `zoom` property (this doesn't work in Firefox unfortunately). By scrolling down a bit, you should see the success screen.
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 1" src="https://codepen.io/mfeiring/embed/eYmvXWJ?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 1" src="https://codepen.io/mfeiring/embed/eYmvXWJ?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/eYmvXWJ'>CSS Christmas game - step 1</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -65,7 +65,7 @@ footer:before {
 
 The counter should now increment for each checkbox that is, well, checked.
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 2" src="https://codepen.io/mfeiring/embed/KKwWYmW?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 2" src="https://codepen.io/mfeiring/embed/KKwWYmW?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/KKwWYmW'>CSS Christmas game - step 2</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -107,7 +107,7 @@ input {
 }
 ```
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 3" src="https://codepen.io/mfeiring/embed/YzPZMQM?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 3" src="https://codepen.io/mfeiring/embed/YzPZMQM?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/YzPZMQM'>CSS Christmas game - step 3</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -134,7 +134,7 @@ label {
 
 Here, we have an `infinite` animation, in which the `animation-direction` is `alternate`, taking the toys 5 seconds to reach the bottom, and the another 5 seconds to go back up again. The `calc` function is used to prevent the toys from moving beneath the counter, by calculating the height of the viewport (`100vh`) minus the height of the counter container (`3rem`).
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.1" src="https://codepen.io/mfeiring/embed/VwYpNQO?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.1" src="https://codepen.io/mfeiring/embed/VwYpNQO?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/VwYpNQO'>CSS Christmas game - step 4.1</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -164,7 +164,7 @@ By adding a few more keyframes to the animation, we can make the movement a bit 
 }
 ```
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.2" src="https://codepen.io/mfeiring/embed/mdyWgLd?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.2" src="https://codepen.io/mfeiring/embed/mdyWgLd?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/mdyWgLd'>CSS Christmas game - step 4.2</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -198,7 +198,7 @@ input:checked + label {
 }
 ```
 
-<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.3" src="https://codepen.io/mfeiring/embed/yLyMrjz?height=265&theme-id=default&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas game - step 4.3" src="https://codepen.io/mfeiring/embed/yLyMrjz?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/mfeiring/pen/yLyMrjz'>CSS Christmas game - step 4.3</a> by Mira Feiring
   (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
