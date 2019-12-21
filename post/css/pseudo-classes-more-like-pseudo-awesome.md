@@ -21,7 +21,7 @@ I start of with a nice Christmas color and some boxes where todays date is writt
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/Examjar" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-For each box I add an pseudo element with ::after and position it to be placed right beneath the box. Then I insert the secret message using attr(). 
+For each box I add an pseudo element with ::after and position them right beneath the box. Then I insert the secret message using `attr()`. 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/rNamVOQ" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
