@@ -195,7 +195,7 @@ You can see below how big of an effect this change in the initial row has on the
 
 ![Random initial row](https://i.ibb.co/CVKp2wK/rand-init.png)
 
-This is only one of the things you can change though! Why limit ourselves to two colours? Why limit ourselves to squares? Why only 2 dimensions? Why only one rule at a time?
+This is only one of the things you can change though! Why limit ourselves to two states? (Going from 2 to 3 states actually increases the number of rules from 256 to 7 625 597 484 987!) Why limit ourselves to squares? Why only 2 dimensions? Why only one rule at a time?
 
 Below are some examples of ECA-based visualisations, but with an alternative `draw_rule` function, drawing lines in an isometric pattern rather than squares, then filling areas defined by those lines with colours. You can even choose to not display the separating lines at all, only showing the colours.
 
@@ -205,6 +205,6 @@ Taking it even further, one can start introducing symmetries, both rotational (m
 
 ![Further variants of cellular automata](https://i.ibb.co/jbzZVX0/hexa-variant.jpg)
 
-If you find the above visuals intriguing, feel free to check out [this interactive playground](https://generated.space/sketch/hatch-automata-full/#53:156:110), or even better, start from the code we've built here, and try coming up with your very own cellular automata!
+If you find the above visuals intriguing, feel free to check out [this interactive playground](https://generated.space/sketch/hatch-automata-full/#53:156:110), or even better, start from the code we've built here and try coming up with your very own cellular automata!
 
 Good luck!
