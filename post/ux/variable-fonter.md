@@ -17,6 +17,10 @@ links: []
 authors:
   - Ina Rønning Johansen
 ---
+<!---//!\[variablefonter](https://i.ibb.co/kgP070k/giffen.gif)
+
+
+
 ## Variable fonter, sa du?
 
 Variable fonter er en ny måte å anvende typografi i digitale flater, noe som gir en enorm fleksibilitet og muligheter for lekenhet i hvordan vi viser frem og setter tekst i grensesnittet. Og det er jo egentlig et paradoks at vi i mange år har designet dynamiske grensesnitt, mens typografien og det tekstlige innholdet i stor grad har vært begrenset av tradisjonelle "statiske" fonter. Med variable fonter kan også teksten bli dynamisk.
