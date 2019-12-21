@@ -447,6 +447,6 @@ I want to end on the same note as I started the entire article. Agreeing on code
 
 I would state that the answer here would be «yes». Not about what looks the nicest, but about what kind of structure and code style you should have in your project. Even though it will come at the expense of someone's opinions and preferences.
 
-Getting everybody in your team to agree on what looks cleanest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, are interested in why they have them, and tries to incorporate most of their opinions in your strategy - you can at least make everybody feel included in the decision.
+Getting your team to agree on what looks cleanest, or reads the best, is close to impossible - even in the most homogenous of groups. But as long as you listen to everybody's preferences, are interested in why they have them, and tries to incorporate most of their opinions in your strategy - you can at least make the whole team feel included in the decision.
 
 No matter what your answer is, though, it's important to find a structure and style guide, and stick to it. This is the key to having a clean and understandable project, which also helps with onboarding new developers, and keeping everybody as productive as possible.
