@@ -27,7 +27,7 @@ You might wonder why the above rules have numbers attached to them. This is beca
 
 ![From number to rule](https://i.ibb.co/kHg2wbX/cell1.png)
 
-Any number in the interval from 0 to (but not including) 256 can be represented in binary using only 8 digits (first arrow above). Furthermore, we can give each of these 8 digits an index based on their positioning (second arrow). These indices will naturally range from 0 to 7, which coincidentally are numbers that can be represented in binary using only 3 digits (third arrow). By interpreting these 3 digits as input, and the corresponding digit from our original number as output, we get the tertiary function we are looking for (fourth arrow).
+Any number in the interval from 0 up to (but not including) 256 can be represented in binary using only 8 digits (first arrow above). Furthermore, we can give each of these 8 digits an index based on their positioning (second arrow). These indices will naturally range between 0 and 7, which coincidentally are numbers that can be represented in binary using only 3 digits (third arrow). By interpreting these 3 digits as input, and the corresponding digit from our original number as output, we get the tertiary function we are looking for (fourth arrow).
 
 ## Generating rules
 
@@ -45,7 +45,7 @@ In the above example, running `rule30(1,1,0)` will combine the three binary valu
 Knowing that the three binary input variables will be combined into one number, let's start by implementing such a `combine` function.
 
 ```javascript
-const combine = (b1, b2, b3) => (b1 << 2) + (b2 << 1) + b3;
+const combine = (b1, b2, b3) => (b1 << 2) + (b2 << 1) + (b3 << 0);
 ```
 
 By left-shifting the arguments to their appropriate positions, then adding the three shifted numbers, we get the combination we were looking for.
@@ -80,22 +80,22 @@ window.onload = function() {
 };
 ```
 
-In order to interact with our canvas, we need a _context_. A context is what lets us draw shapes and lines, colorize things, and move around in our canvas. It is provided for us through the [`getContext`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) method on our canvas.
+In order to interact with our canvas, we need a _context_. A context is what lets us draw shapes and lines, colorize things, and move around on our canvas. It is provided for us through the [`getContext`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) method on our canvas.
 
 ```javascript
 const context = canvas.getContext('2d');
 ```
 
-The parametre `'2d'` refers to the context type we will be using in this example.
+The `'2d'` parameter refers to the context type we will be using in this example.
 
-Next, let's make a function that, given a context, an ECA rule and some info on the scale and number of our cells, draws the rule onto our canvas. The idea is to generate and draw the grid row by row; the pseudo code being something like this:
+Next, let's make a function that, given a context, an ECA rule and some info on the scale and number of our cells, draws the rule onto our canvas. The idea is to generate and draw the grid row by row; with the main part of the code looking something like this:
 
 ```javascript
-draw_rule(context, rule, scale, width, height) {
-  row = initial_row(width)
-  for([height] times) {
-    draw_row(context, row, scale)
-    row = next_row(row, rule)
+function draw_rule(ctx, rule, scale, width, height) {
+  let row = initial_row(width);
+  for (let i = 0; i < height; i++) {
+    draw_row(ctx, row, scale);
+    row = next_row(row, rule);
   }
 }
 ```
@@ -104,7 +104,7 @@ We start of with some initial collection of cells as our current row. This row, 
 
 This pseudo code requires us to implement 3 functions: `initial_row`, `draw_row` and `next_row`.
 
-`initial_row` a simple function. Make an array of 0s and change the element in the middle of the array to a 1.
+`initial_row` is a simple function. Make an array of 0s and change the element in the middle of the array to a 1.
 
 ```javascript
 function initial_row(length) {
@@ -121,7 +121,7 @@ With our rule function readily available, the `next_row` function can be written
 const next_row = (row, rule) => row.map((_, i) => rule(row[i - 1], row[i], row[i + 1]));
 ```
 
-Do you notice our cheat in the line above? Each cell in our new row needs input from three other cells, but the two pixels at each edge of the row only gets input from two. For instance, `next_row[0]` tries to get an input value from `row[-1]`. This works because javascript returns `undefined` when attempting to access values at indices that don't exist in an array, and it so happens that `(undefined >> [any number])` (from our combine function) always returns 0. This means that we in reality treat every value outside our grid as a 0.
+Do you notice our cheat in the line above? Each cell in our new row needs input from three other cells, but the two cells at each edge of the row only gets input from two. For instance, `next_row[0]` tries to get an input value from `row[-1]`. This works because javascript returns `undefined` when attempting to access values at indices that don't exist in an array, and it so happens that `(undefined >> [any number])` (from our combine function) always returns 0. This means that we in reality treat every value outside our grid as a 0.
 
 I know, it's not pretty, but we are making something really pretty on the screen very soon, so we are excused.
 
@@ -145,4 +145,64 @@ This is where we are heavily depending on our context object, utilizing no less 
 - `fillStyle` specifies what you want to fill your shapes with. It can be a color, like `"#f55"`, but also a gradient or a pattern. We use it to distinguish between 0-cells and 1-cells.
 - `fillRect(x, y, w, h)` draws a rectangle from point (x,y) with width w and height h, filled according to the `fillStyle`. Our rectangles are simple squares, but you might be surprised that they all are positioned in origo. This is because we use it in conjunction with `translate`.
 - `translate(x, y)` lets you move the whole coordinate system around. This persists, so it works as a great alternative to keeping track of the different positions of items. For instance, instead of calculating the position of each individual cell in our grid, we can just draw a cell, move to the right, draw a new cell and so on.
-- `save()` and `restore()` is used together with `translate` and other coordinate-manipulating methods. We use them to _save_ the current coordinate system at a certain point, so that we at a later point may return to it (using _restore_). In our case, we save our coordinate system before we start drawing a row and move to the right. Then, when we are done drawing the row and are all the way to the right, we restore, so we get back to our initial state. Finally we move down so that we are ready to start drawing the next row.
+- `save()` and `restore()` is used together with `translate` and other coordinate-transforming methods. We use them to _save_ the current coordinate system at a certain point, so that we at a later point may return to it (using _restore_). In our case, we save our coordinate system before we start drawing a row and move to the right. Then, when we are done drawing the row and are all the way to the right, we restore, so we get back to our initial state. Finally we move down so that we are ready to start drawing the next row.
+
+We now have all the parts needed for our `draw_rule` function. We will use this function on `window.onload` after having set up the canvas. We also define the parameters we need.
+
+```javascript
+window.onload = function() {
+  const width = 1000; // Width of the canvas
+  const height = 500; // Height of the canvas
+
+  const cells_across = 200; // Number of cells horizontally in the grid
+  const cell_scale = width / cells_across; // Size of each cell
+  const cells_down = height / cell_scale; // Number of cells vertically in the grid
+
+  const rule = get_rule(30); // The rule to display
+
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+
+  document.body.appendChild(canvas);
+
+  const context = canvas.getContext('2d');
+  draw_rule(context, rule, cell_scale, cells_across, cells_down);
+};
+```
+
+We extract the canvas dimensions as individual variables together with the number of cells horizontally. Then, we calculate the `cell_scale` and 'cells_down' so that the grid fills the whole canvas while keeping cells square. This way, we can now easily change the "resolution" of our grid while still keeping it within the bounds of the canvas.
+
+![Resolution](https://i.ibb.co/BwWQHB4/resolution.png)
+
+...and that's it! The full code example can be seen [here](https://github.com/kgolid/cellular-automata-post/blob/master/index.js).
+
+## Onward from here
+
+Having this setup now lets you explore all the 256 different rule one by one, either by iterating through each one by changing the code, or by letting the rule number be random at every page load. Either way, it is a great feeling to explore these unpredictable results within your own controlled environment.
+
+Another thing to explore is letting the initial cell state of our automata be random rather than our static "only 0s, but a single 1" state. This will yield even more unpredictable results. Such a variant of our `initial_row` can be written like this:
+
+```javascript
+function random_initial_row(width) {
+  return Array.from(Array(width), _ => Math.floor(Math.random() * 2));
+}
+```
+
+You can see below how big of an effect this change in the initial row has on the output.
+
+![Random initial row](https://i.ibb.co/CVKp2wK/rand-init.png)
+
+This is only one of the things you can change though! Why limit ourselves to two colors? Why limit ourselves to squares? Why only 2 dimensions? Why only one rule at a time?
+
+Below are some examples of ECA-based visualizations, but with an alternative `draw_rule` function, drawing lines in an isometric pattern rather than squares, then filling areas defined by those lines with colors. You can even choose to not display the separating lines at all, only showing the colors.
+
+![Alternative display of cellular automata](https://i.ibb.co/GFZVfLD/hexa-progress.jpg)
+
+Taking it even further, one can start introducing symmetries, both rotational (middle row) or reflectional (bottom row).
+
+![Further variants of cellular automata](https://i.ibb.co/jbzZVX0/hexa-variant.jpg)
+
+If you find the above visuals intriguing, feel free to check out [this interactive playground](https://generated.space/sketch/hatch-automata-full/#53:156:110), or even better, start from the code we've built here and try coming up with your very own cellular automata!
+
+Good luck!
