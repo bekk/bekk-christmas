@@ -6,8 +6,8 @@ title: Wrap it up! – Creating a CSS game
 ingress: >-
   Santa needs your help. The usually ever so helpful elves have decided to play
   a trick on him, and have made all the toys run around, resisting getting
-  wrapped in the lovely Christmas paper he just spent all day picking out. Can
-  you help Santa catch and wrap all of them?
+  wrapped in the lovely Christmas wrapping paper he just spent all day picking
+  out. Can you help Santa catch and wrap all of them?
 
 
   <iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas
