@@ -79,8 +79,8 @@ In her team’s work, design is defined by the input it needs from neighboring d
 
 Similarly, way back in 1965 designer Bruce Archer mused about a question that still confuses many today: what is the difference between art and design? Though they may seem similar, they are quite fundamentally different. Think about it… an architect preparing plans for a house – that is design. So is a typographer preparing a page for print. But what about a sculptor, shaping a figure out of clay? Is that design? [Archer would argue](https://books.google.com/books?id=pURZDwAAQBAJ&pg=PA117&lpg=PA117&dq=An+architect+preparing+plans+for+a+house+is+clearly+designing.+So+is+a+typographer+preparing+a+layout+for+a+page+of+print.&source=bl&ots=JZB91RLVm2&sig=ACfU3U3B4iEk2g1hWpFQ7ARkyXEnHrT28A&hl=en&sa=X&ved=2ahUKEwj_wfeBlcjmAhWFJ80KHX5wCs4Q6AEwAHoECA0QAQ#v=onepage&q=An%20architect%20preparing%20plans%20for%20a%20house%20is%20clearly%20designing.%20So%20is%20a%20typographer%20preparing%20a%20layout%20for%20a%20page%20of%20print.&f=false) no – an artist creates, they do not design. For an activity to qualify as “design” there are two requirements: 
 
-* > A prior formulation of a prescription or model
-* > The hope or expectation of ultimate embodiment as an artifact
+* A prior formulation of a prescription or model
+* The hope or expectation of ultimate embodiment as an artifact
 
 So basically, according to Archer, design is about **making plans** for something you hope gets made in the future, while art **creates** the actual thing then and there.
 
@@ -102,12 +102,12 @@ _The UX spectrum shows a wide variety of profiles even within UX, depending on t
 
 Some would argue that there is one sure-fire way to find the designer on a team – the questions they ask. Your designer is probably the one asking questions like: 
 
-* > Who is our target audience? What are they trying to achieve? How can I get their input?
-* > How do people react to, interact with, or use this? What doesn’t work right now?
-* > What are we trying to achieve? How does this help our users?
-* > What are we trying to communicate? Is there a way to do it faster, better or in a more unique way?
-* > How can I get input from subject-matter experts?
-* > What dependencies (other services, technical systems, laws and regulations, etc.) affect the experience?
+* Who is our target audience? What are they trying to achieve? How can I get their input?
+* How do people react to, interact with, or use this? What doesn’t work right now?
+* What are we trying to achieve? How does this help our users?
+* What are we trying to communicate? Is there a way to do it faster, better or in a more unique way?
+* How can I get input from subject-matter experts?
+* What dependencies (other services, technical systems, laws and regulations, etc.) affect the experience?
 
 Questions are an interesting angle in defining design, as questions are a tangible output of the typical problems design aims to solve – not to mention the core values and philosophies of a designer. Yet they don’t require long training or special tools. They can be asked by anyone, not just the designer. So per this definition, design can still happen without it’s advocate, as long as questions like these are being asked. Interesting.
 
