@@ -10,16 +10,40 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
-dfgsdgf sergsedgf rty
+# What is a delightful UX?
 
-etyertyrte
+Let's get an idea of the concept, by looking at some examples.
 
-ty
+## Reacting on Facebook posts
 
-et
+Do you see those small, delightful animations? Does the cute angry emoji, shaking its head, make you smile? It might seem superfluous, but it makes me want to react on posts — even if the post itself is not engaging.
 
-y
 
-res
 
-tyre
+# Why bother making products delighful?
+
+
+
+# Challanges
+
+
+
+# Lets get theoretical
+
+
+
+# Examples of theory in practice
+
+
+
+# Where should you start?
+
+
+
+# But wait, what about business impact?
+
+
+
+
+
+\--
