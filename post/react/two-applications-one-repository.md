@@ -10,6 +10,9 @@ ingress: >-
   to find a project structure that works well. Let us take a look at how our
   team is approaching this challenge for maintaining different view layers, as
   well as a shared business logic at the same time.
+links:
+  - title: 'Firebase features, React Native and Entur'
+    url: 'https://thecloud.christmas/2019/17'
 authors:
   - Caroline Odden
   - Kent Andersen
@@ -68,9 +71,9 @@ A monorepo is just fun and games, after you have configured the correct setup.
 
 ### The setup
 
-If deciding on a project structure is not difficult itself, getting the tooling and support frameworks to work is another uphill battle. 
+If deciding on a project structure is not difficult itself, getting the tooling and supported frameworks to work is another uphill battle. 
 
-First, importing internal and external modules. Needless to say, We do not worry about whether a module is part of the monorepo or from an external repository, like NPM. Luckily, **Yarn** has a feature tailored towards monorepos called _workspaces_. It solves the issues of symlinking modules together, de-duplicating dependencies across packages, and keeping it all in a single yarn.lock file. As a result dependency resolution works just as you would expect. Need to access an exported module from another package? Just add \`import { something } from "@entur/profile"\`. And if you need to add a dependency to one of the packages, just run \`yarn add date-fns\`. The only difference from a traditional javascript repository is that you have one package.json for every package, in addition to the root package.json.  
+First, importing internal and external modules. Needless to say, We do not worry about whether a module is part of the monorepo or from an external repository, like NPM. Luckily, **Yarn** has a feature tailored towards monorepos called _workspaces_. It solves the issues of symlinking modules together, de-duplicating dependencies across packages, and keeping it all in a single yarn.lock file. As a result dependency resolution works just as you would expect. Need to access an exported module from another package? Just add `import { something } from "@entur/profile"`. And if you need to add a dependency to one of the packages, just run `yarn add date-fns`. The only difference from a traditional javascript repository is that you have one package.json for every package, in addition to the root package.json.  
 
 #### Bundling
 
@@ -78,4 +81,4 @@ Second, bundle everything. Building the applications for two different targets r
 
 #### Third parties
 
-Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort)
+Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort).
