@@ -3,7 +3,8 @@ calendar: css
 post_year: 2019
 post_day: 23
 title: Pseudo classes? More like pseudo awesome
-image: 'https://unsplash.com/photos/7VOyZ0-iO0o'
+image: >-
+  https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 authors:
   - Halldis Søhoel
 ---
@@ -30,7 +31,7 @@ Now I can fold the pseudo element beneath the box to create the illusion of a cu
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/ExamjVM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
-I'm not quite happy with the hover effects. The boxes are turning too quickly and I cannot grasp the secret message. I want to change the boxes to turn on click. In order to achieve this I have to change the boxes into checkboxes. If the checkbox is checked, it will rotate. 
+I'm not quite happy with the hover effects. The boxes are turning too quickly and I cannot grasp the secret message. I want to change the boxes to turn on click. In order to achieve this I have to change the boxes into checkboxes. If I check the checkbox, it will rotate. 
 
 To style the checkbox as the boxes we had before I have to add a label and style the label. Then I can hide the actual checkbox. Here’s the result. 
 
