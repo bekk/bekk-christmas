@@ -10,19 +10,15 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
-
-
-
-
-
-
 # What is a delightful UX?
 
 Let's get an idea of the concept, by looking at some examples.
 
-
 ![Image of buying Google Home at Elektro importøren](./assets/ux24_google_bad.png)
 
+
+
+![test](/assets/ux24a.png "test")
 
 ## Reacting on Facebook posts
 
