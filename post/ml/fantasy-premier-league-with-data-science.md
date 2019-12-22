@@ -14,7 +14,7 @@ If you’re a below-average Fantasy Premier League performer and an above-averag
 
 Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
-The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the [constraints](https://fantasy.premierleague.com/help/rules) given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
+The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
 ## 1. Training the models
 
@@ -36,11 +36,11 @@ The linear regression is set up with the assumed weakest team as baseline on the
 
 ## 2. Predicting points
 
-After fitting the model, it predicts points achieved by all the Premier League players in the out-of-sample round – in our case, round 19. Injured or suspended players are not predicted.
+After fitting the models, they predict points achieved by all the Premier League players in the out-of-sample round – in our case, round 19. Injured or suspended players are not predicted.
 
 ## 3. Selecting the XI
 
-und 19.
+After predicting points scored, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play).
 
 ### Results
 
