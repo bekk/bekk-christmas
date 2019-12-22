@@ -10,7 +10,7 @@ authors:
 Opening up your code base for everyone to see can be a bit scary. Everyone can see your (bad) code and commit messages, it's easier for evil people to find weaknesses or make fake copies of your product. But there are many good reasons for open-sourcing a project. Even if it's not a library, framework or other developer-facing tool. Let's go through some of them.
 
 ## You seek contributions from the community
-This is maybe the most obvious reason. If your code is open sourced, outsiders can contribute to the development of the project. This is a strong argument for libraries, frameworks and tools where the target user group is developers.
+This is maybe the most obvious reason. If your code is open sourced, outsiders can contribute to the development of the project. This is a strong argument for libraries, frameworks and tools where the target user group is developers. But this goes also for other kinds of products. If you want users of the product to be able to find bugs, and even correct them, that's possible when the source code is open. And if you're good at publishing issues, project plans, you might get help in driving the development forward.
 
 ## Transparency
 One reason for open sourcing your code is to achieve _transparency_. You might want – or are required to – give people the possibility to read the code. This is a common argument for public companies, where the tax payers should be able to have insight into what is made, and therefore, what they pay for. [NAV](https://github.com/navikt), [Digipost](https://github.com/digipost) and [Entur](https://github.com/entur) are examples of Norwegian public companies that have taken this principle to heart.
@@ -23,7 +23,12 @@ If you are a data or API provider or creator of a framework or library, you can 
 ## It's your business model
 Open source does not mean _free_, as you might have read this [December 18th](https://opensource.christmas/2019/18). [_Highcharts_](https://www.highcharts.com/) is a good example of this. Highcharts is a chart library, and [it's open source](https://github.com/highcharts/highcharts). Their licensing model makes it free to use non-commercially, which has ensured wide and fast adaptation. But it's not free to use _commercially_. This has made Highsoft, the company behind it, one of Norway's [most profitable companies](https://www.bt.no/nyheter/okonomi/i/e8v5La/denne-gjengen-har-skapt-en-av-landets-aller-mest-loennsomme-bedrifter).
 
-## And the answer is...
-Have we found a simple answer to our simple question? No. There are many possible reasons to open-source your project. And there are the same number of reasons _not_ to do it, and we haven't talked about them yet. 
+## Security
+Remember the first paragraph in this article? Since evil persons can read the whole code base, this sounds scary. But the thing is, there are many good people out there as well. When a project is open source, there is a greater possibility that vulnerabilities are found and fixed. 
 
-Why you should open-source your project primarily comes down to your principles and philosophy. Hopefully this article has helped enlighten some of the advantages of open source.
+A lot of automated processes and tools can also help in finding vulnerabilities in open source software, like [Snyk](https://snyk.io/) and [npm audit](https://docs.npmjs.com/cli/audit). Also, [GitHub Security](https://github.com/security) is a very interesting new initiative. 
+
+## And the answer is...
+Does our simple question have a simple answer? No. There are many possible reasons to open-source your project. And there are the same number of reasons _not_ to do it, and we haven't talked about them yet. 
+
+Why you should open-source your project primarily comes down to your principles and philosophy. Hopefully this article has helped enlighten some of the benefits of open sourcing your project.
