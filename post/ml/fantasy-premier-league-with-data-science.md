@@ -51,12 +51,8 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 To examine the strength of our models, we compare their performance in already played rounds with the performance of human players. Specifically, we compare the number of points achieved by the models with the average score of all Fantasy players in a given round.<sup>3</sup> The results from gameweek 13 to 17 are displayed in the table below:
 
-<img class="dark-theme-image" src=</assets/models-performance-dark.png" />
+<img class="dark-theme-image" src="/assets/models-performance-dark.png" />
 <img class="light-theme-image" src="/assets/models-performance.png" />
-
-
-
-![Performance of models](/assets/models-performance.png "Performance of models gameweeks 13 - 17")
 
 As we see, the regression is considerably more consistent, beating the average score with at least 10 % each round. The neural network appears slighty more risk-seeking, resulting in extremely varying scores ranging from a staggering round 16 score of 89 points to an equivalently disastrous performance in the previous round.
 
