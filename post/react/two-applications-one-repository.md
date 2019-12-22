@@ -13,15 +13,17 @@ ingress: >-
 links:
   - title: 'Firebase features, React Native and Entur'
     url: 'https://thecloud.christmas/2019/17'
+  - title: Patching your node_modules
+    url: 'https://opensource.christmas/2019/4'
 authors:
   - Caroline Odden
   - Kent Andersen
 ---
 ## The Web and the Native
 
-Currently our colleagues and us are developing the web and the native application for a company named Entur. Entur provides a journey planner for public transport in Norway. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
+Currently our colleagues and us are developing the web and the native application for a company named Entur, which provides a journey planner for public transport in Norway. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
 
-We have that (dis)advantage that the web and native application mostly contains the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wan to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a monorepo.
+We have that (dis)advantage that the web and native application mostly (but not a 100%) contains the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wan to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a monorepo.
 
 ## The Monorepo
 
@@ -82,3 +84,11 @@ Second, bundle everything. Building the applications for two different targets r
 #### Third parties
 
 Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort).
+
+## Other Possibilities
+
+Monorepo is not the only solution when developing for native and web. When these applications was created, we had absolutely all the business logic on the client side which affected the choice having one repository. Over the years we have moved more of our logic over to cloud functions (see the article written by Carl Joachim about [Firebase functions in Entur](https://thecloud.christmas/2019/17)), that may have influenced the decision of a monorepo vs. several repositories today. 
+
+Another possibility when developing for native and web, is the `react-native-web`. It provides much of the logic and code of [React Native for the web](https://github.com/necolas/react-native-web). We tried to use this as a part of our project, but decided to remove it due to the lack of semantics. Also, the div-o-rama that goes along with the native code bleeds over to the web applications. An example is the repetetive styling you need for React Native components, which is separate styling for each view due to the lack inheritance for native. In addition we had rarely a 100% one-to-one connection between native and web, which in most cases would create separate views. 
+
+So, all-in-all, it is hard to give a "correct answer" of what you should use when developing for web and native applications. However, even with the complexity of the setup we have been through, we are satisfied with our structure and would recommend it to others struggling with the decision of the setup of your projects!
