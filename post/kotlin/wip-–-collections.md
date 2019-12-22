@@ -2,13 +2,16 @@
 calendar: kotlin
 post_year: 2019
 post_day: 23
-title: Collections vs. sequences
+title: Lists vs. sequences
+ingress: >-
+  The Kotlin library comes with several container types. Two of these are `List`
+  and `Sequence`. At the first glance these two look quite similar, but we will
+  look at the differences in this article.
+description: Kotlin list sequence
 authors:
   - Øyvind Midtbø
 ---
-The Kotlin library comes with several container types. Two of these are `Collection` and `Sequence`.
-
-A `List` implements the `Collection` interface, which again implements the `Iterable` interface. A `List` is an ordered collection of elements, and every element can be accessed by an index. A list implements the `Iterable` interface.
+A `List` implements the `Collection` interface, which again implements the `Iterable` interface. A `List` is an ordered collection of elements, and every element can be accessed by an index.
 
 ```
 val numbersList = listOf(1, 2, 3, 4)
@@ -36,12 +39,14 @@ println(numbersSequence.indexOf(4)) // 3
 ```
 
 You can also create a sequence from an `Iterable`:
+
 ```
 val letters = listOf("a", "b", "c", "d")
 val lettersSequence = letters.asSequence()
 ```
 
 On both sequences and lists you can operate upon collection of elements, like you can see in this example:
+
 ```
 data class Country(val name: String, val population: Long)
 
@@ -68,4 +73,59 @@ val bigCountries2 = countries
 println(bigCountries2) // [Sweden, Germany]
 ```
 
-Now let's look at the difference between sequences and iterables, in this example lists. If a sequence operation returns another sequence, it’s an intermediate function. If it doesn’t return a sequence, it’s terminal. Sequences are lazy, so intermediate functions for sequences don’t do any calculations. All the calculations are added to the sequence, and they are not performed until a terminal operation is called. On a list, however, the intermediate function does the calculation and returns a new collection.
+Now let's look at the difference between sequences and lists. If a sequence operation returns another sequence, it’s an intermediate function. If it doesn’t return a sequence, it’s terminal. Sequences are lazy, so intermediate functions for sequences don’t do any calculations. All the calculations are added to the sequence, and they are not performed until a terminal operation is called. On a list, however, the intermediate function does the calculation and returns a new collection.
+
+If expand the example above with some print statements, we can see how the program executes:
+
+```
+println("List:")
+val bigCountries1 = countries
+    .filter {
+        println("Filters the population: ${it.name}")
+        it.population > 6_000_000
+    }
+   .map {
+        println("Maps the name: ${it.name}")
+        it.name
+    }
+
+println(bigCountries1) // [Sweden, Germany]
+println("\nSequence:")
+
+val bigCountries2 = countries
+    .asSequence()
+    .filter {
+        println("Filters the population: ${it.name}")
+        it.population > 6_000_000
+    }
+    .map {
+        println("Maps the name: ${it.name}")
+        it.name
+    }
+    .toList()
+
+println(bigCountries2) // [Sweden, Germany]
+``
+
+The output:
+```
+List:
+Filters the population: Norway
+Filters the population: Denmark
+Filters the population: Sweden
+Filters the population: Finland
+Filters the population: Germany
+Maps the name: Sweden
+Maps the name: Germany
+[Sweden, Germany]
+
+Sequence:
+Filters the population: Norway
+Filters the population: Denmark
+Filters the population: Sweden
+Maps the name: Sweden
+Filters the population: Finland
+Filters the population: Germany
+Maps the name: Germany
+[Sweden, Germany]
+```
