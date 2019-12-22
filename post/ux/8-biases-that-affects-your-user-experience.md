@@ -10,6 +10,10 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
+<br/>
+<br/>
+<br/>
+
 # What is a delightful UX?
 
 Let's get an idea of the concept, by looking at some examples.
@@ -20,8 +24,7 @@ Let's get an idea of the concept, by looking at some examples.
 
 Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem superfluous, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
 
-**Sending mails via Mailchimp**
-
+**Sending mails via Mailchimp**\
 Mailchimp has mastered delight in their communication. When your startup has spent all their energy creating a campaign for growth hacking, and you have proof-read the email over and over. You might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
 
 ![Mailchimp send animation](/assets/tumblr_ni78rfkazf1qea4hso1_500.gif)
