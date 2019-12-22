@@ -17,6 +17,9 @@ links:
   - title: How the Norsk Hydro attack unfolded
     url: >-
       https://www.amm.com/Article/3890250/How-the-Norsk-Hydro-cyberattack-unfolded.html
+  - title: How to accidentally stop a global cyber attack - WannaCry
+    url: >-
+      https://www.malwaretech.com/2017/05/how-to-accidentally-stop-a-global-cyber-attacks.html
 authors:
   - Hans Kristian Henriksen
 ---
@@ -25,7 +28,7 @@ As with any malicious software, there are no one size fits all description of ra
 
 ### Exploitation of existing weakness
 The first problem for the attacker is of course getting into the target system. This is usually accomplished by exploiting an existing vulnerability. This might be a published and known weakness in the system, or an unknown bug. In the latter case the exploit is known as a zero-day vulnerability, and these are obviously preferred, as any victim will be defenseless. On the other side, they are rare, difficult to find, and expensive to buy, making known vulnerabilities far more common to exploit.
-The weakness used can vary greatly. There may be there is a flaw in a service running on a publicly accessible port, making direct entry into the system possible. Or a flaw in an email reader causing malicious code in certain attachments to automatically execute when the message is loaded. Or another application is fitted with a backdoor that is used to deliver the payload of the malware. The only limitations here are probably the imagination (and endurance) of the attacker.
+The weakness used can vary greatly. It can be a flaw in a service running on a publicly accessible port, making direct entry into the system possible. Or a flaw in an email reader causing malicious code in certain attachments to automatically execute when the message is loaded. Or another application is fitted with a backdoor that is used to deliver the payload of the malware. The only limitations here are probably the imagination (and endurance) of the attacker.
 
 ### Encrypting files
 The thing that distinguishes ransomware from other malware is that it does not intend to destroy its target system permanently, nor is its main intent to steal data. Instead, it seeks to make _reversible_ damage. This is usually done by encrypting parts of the contents of the infected machine. Naively encrypting all files would most likely encrypt some files required by the operating system, causing the system to be unrecoverable. Instead, the ransomware targets files based on type and location. Some search for all files of type `.docx`, others may target all files contained within the `My Documents` or `User` directories. It also searches the network for other machines to infect and attempts to encrypt files on network disks.
