@@ -16,14 +16,14 @@ authors:
 ---
 ## The Web and the Native
 
-Currently out colleagues and us are developing the web and the native application for a Norwegian company named Entur. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
+Currently our colleagues and us are developing the web and the native application for a company named Entur. Entur provides a journey planner for public transport in Norway. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
 
-We have that (dis)advantage that the web and native application mostly contains the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wanted to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a monorepo.
+We have that (dis)advantage that the web and native application mostly contains the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wan to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a monorepo.
 
 ## The Monorepo
 
 A monorepo is just a repository containing several projects, and how you structure it will affect the developer experience. 
-When developing Feature X for the web application, where does it make the most sense to put your views/components that will be 95% identical to the one for native? The answer here is not easy, and it is totally independent of the developer. However, we decided to divide our code into subfolders across web and native, called domain packages.
+When developing Feature X for the web application, where does it make the most sense to put your views/components that will be 95% identical to the one for native? The answer here is not easy, and it is totally independent of the developer. However, we decided to divide our code into subfolders across web and native, called **domain packages**.
 
 ### Packages
 
@@ -64,12 +64,18 @@ There are both positive and negative sides when working with a monorepo. Persona
 
 Furthermore, when you are done developing a feature for one of the platforms, it is relatively easy to develop it for the other. Because all the work with the heavy logic, developing, and thinking is already done. Most of the time it is remaining to "port" the views from native to web or vice versa. Of course it isn't always as easy to convert one view from native to web, there are some corner cases in the business logic, something with the url chaos (logged in vs. not etc.), and the styling when it comes to vertical vs. horizontal design.
 
-### Setup
+A monorepo is just fun and games, after you have configured the correct setup.
 
-If deciding on a project structure is not difficult itself, getting the tooling and support frameworks to work is another uphill battle.
+### The setup
 
-First, importing internal and external modules. Needless to say, I do not worry about whether a module is part of the monorepo or from an external repository, like NPM. Luckily, Yarn has a feature tailored towards monorepos called workspaces. It solves the issues of symlinking modules together, de-duplicating dependencies across packages, and keeping it all in a single yarn.lock file. As a result dependency resolution works just as you would expect. Need to access an exported module from another package? Just add \`import { something } from ‘@entur/profile’. And if you need to add a dependency to one of the packages, just run \`yarn add date-fns. The only difference from a traditional javascript repository is that you have one package.json for every package, in addition to the root package.json.  
+If deciding on a project structure is not difficult itself, getting the tooling and support frameworks to work is another uphill battle. 
 
-Second, bundle everything. Building the applications for two different targets requires two different build systems. For web we use Webpack and for React Native - Metro. Both systems implements the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations is required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js
+First, importing internal and external modules. Needless to say, We do not worry about whether a module is part of the monorepo or from an external repository, like NPM. Luckily, **Yarn** has a feature tailored towards monorepos called _workspaces_. It solves the issues of symlinking modules together, de-duplicating dependencies across packages, and keeping it all in a single yarn.lock file. As a result dependency resolution works just as you would expect. Need to access an exported module from another package? Just add \`import { something } from "@entur/profile"\`. And if you need to add a dependency to one of the packages, just run \`yarn add date-fns\`. The only difference from a traditional javascript repository is that you have one package.json for every package, in addition to the root package.json.  
 
-Third, getting the third party to play along. Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort)
+#### Bundling
+
+Second, bundle everything. Building the applications for two different targets requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implements the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations is required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
+
+#### Third parties
+
+Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort)
