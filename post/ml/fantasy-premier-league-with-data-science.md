@@ -57,10 +57,10 @@ To examine the strength of our models, we let them predict already played rounds
 As we see, the regression is remarkably consistent, beating the average score with at least 10 % each round. The neural network appears slighty more risk-seeking, resulting in highly varying scores ranging from a staggering round 16 score of 89 points to an equivalently disastrous performance in the previous round. However, both models outperform the average player over the course of five rounds. Let's have a look at their bets for Boxing Day!
 
 ## Gameweek 19 predictions
-
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
 | --------------------------------------------- | -------------------------------------------- |
-| <b>The Regressed Registas.</b> Cost: £79.5m   | <b>The Neural Netters.</b> Cost: £63.2m      |
+| <b>The Regressed Registas.</b> Cost: £79.5m | <b>The Neural Netters.</b> Cost: £63.2m |
+
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were in fact the three most selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford supports the addition of Lundstram's teammates Fleck and Stevens. Vardy and Maddison will hope to shorten the Liverpool lead, while Maupay needs to bounce back from a disappointing home performance against Sheffield United on Saturday. A slightly weaker opponent is likely what gives De Bruyne the edge as captain over Mohamed Salah. The price of the team leaves a comfortable £20.5m for filling up the four spots on the sideline.
 
