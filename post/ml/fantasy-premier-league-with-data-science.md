@@ -56,7 +56,7 @@ The models have been run to demonstrate their
 
 ### Next steps
 
-This has been a brief 
+These models have been built primarily to show the value of adding machine learning capabilities to solve problems which require consideration of a large amount of factors. Implementing all possible variables influencing a player's performance in a given Premier League round is simply not feasible, and the problem of setting up a Fantasy draft is, as all complex problems of this sort, an area where expert humans continue to outperform automated efforts.
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 
