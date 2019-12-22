@@ -12,14 +12,15 @@ authors:
 ---
 <br/>
 <br/>
-<br/>
 
-# What is a delightful UX?
+
+# What is a delightful UX? 
 
 Let's get an idea of the concept, by looking at some examples.
 
-**Reacting on Facebook posts**
+<br/>
 
+**Reacting on Facebook posts**
 ![Reacting on a facebook post](/assets/ezgif-7-eb52c18c430b.gif)
 
 Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem superfluous, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
@@ -35,16 +36,10 @@ They do the same when jobs have been done. They could have shown a status messag
 
 ![Mailchimp sent animation](/assets/d21a7c71fe9cd8abdaa52c619ecb9362.gif)
 
-
-
 **Stores**\
 Store store store
 
-
-
 ![Buying google home mini](/assets/googleux24.png)
-
-
 
 # Why bother making products delighful?
 
