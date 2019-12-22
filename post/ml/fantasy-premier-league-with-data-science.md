@@ -53,6 +53,12 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 Results achieved by the models have been compared with the average score of all Fantasy players in a given round<sup>3</sup>. The results are displayed in the table below:
 
+|       | Regression | Neural Network | Average |
+|-------|:----: |:----: |:----: |
+| GW 15 |     54     |       26       |    49   |
+| GW 16 |     69     |       89       |    54   |
+| GW 17 |     69     |       52       |    56   |
+
 ### Gameweek 19 teams
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
