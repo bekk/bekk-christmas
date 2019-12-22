@@ -448,4 +448,4 @@ I want to end on the same note as I started the entire article. Agreeing on how 
 
 Getting your whole team to agree on what's the "cleanest" or "most readable" is not a realistic goal. What becomes the most important is to have everybody voice their opinions, try to empathize with why they want one thing or the other, and then try to have a conversation about what choices you should make as a team. It will definitely be a lot of give and take for most (if not all) members of your team, but I stand by that it's better to agree on a single code style and structure, instead of having a mix and match of everybody's personal preferences.
 
-Because when you have a neat, clean, understandable and standardized code style in your project, it'll help with onboarding new developers, and keeping everybody as productive as possible.
+No matter what you end up with, agreeing on one solution will be the key to a neat, clean, understandable and standardized code style in your project.
