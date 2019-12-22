@@ -50,7 +50,7 @@ The models have been run to demonstrate their
 
 ![Fantasy Screenshot, Neural Network Team](/assets/nn_pred_gw19.png "Neural Netters F.C.")
 
-| [![Regression Team](/assets/reg_pred_gw19.png) | [![Neural net team](/assets/nn_pred_gw19.png) |
+| ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
 |:---:|:---:|
 | Regression Team | Neural Net Team |
 
