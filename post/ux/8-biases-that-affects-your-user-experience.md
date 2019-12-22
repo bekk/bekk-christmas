@@ -40,6 +40,11 @@ Store store store
 
 ![Buying google home mini](/assets/googleux24b.png)
 
+
+
+Apple Pay
+<iframe src="https://player.vimeo.com/video/381027133" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/381027133">Apple Pay Demo</a> from <a href="https://vimeo.com/user103233789">martin sangolt</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 # Why bother making products delighful?
 
 # Challanges
