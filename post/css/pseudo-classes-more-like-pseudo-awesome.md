@@ -7,24 +7,22 @@ image: 'https://unsplash.com/photos/7VOyZ0-iO0o'
 authors:
   - Halldis Søhoel
 ---
-Pseudo classes are used to select elements of a specific state. For example, we might want some custom styling on all first element of a type or we want to change the styling of a button on mouse over or if it is active. 
+Pseudo classes are used to select elements of a specific state. The state of an element can either be something that is applied to it by the user, such as hover, or it is based on the element's position in the markup, for example it is the first of its type. 
 
-Pseudo classes come in handy if you want to change the styling of some elements based on user interactions. For example to give the user feedback that an element is clickable. To achieve this we can use psuedo classes like; `::checked`, under `::focus` or `::disabled`. 
+We can use pseudo classes to change the styling of some elements based on user interactions. For example, if we want to give the user feedback that an element is clickable, we can use psuedo classes like; `::hover`, `::focus` or `::checked`.
 
-In addition, they are useful if you want to change the styling of every other element or every element that is first of its type. 
+Pseudo classes give you the flexibility to add specific styling to certain elements, while still keeping your markup nice and clean. 
 
-Pseudo classes give you the flexibility to add specific styling to certain elements, while still keeping you markup nice and clean. 
+The fun begins when we start using pseudo elements. Pseudo elements are elements that will act as if they were added to your markup. With `::before` and `::after` we can add elements with a specified content. 
 
-The fun begins when we start using pseudo elements. Pseudo elements are elements that will act as if they were added to your markup. With `::before` and `::after` we can add elements with a speficied content. 
+Let’s start with an example. I want to make an interactive Christmas card! To make it more interesting let's hide a secret message using pseudo elements. 
 
-Let’s start with an example. I want to make an interactive Christmas card!
-
-I start of with a nice Christmas color and some boxes where todays date is written. In the html I have hidden a secret message! 
+I start of with a nice Christmas color and some boxes where today's date is written. The secret message is hidden in the html! Can you see it? 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/Examjar" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-For each box I add an pseudo element with `::after` and position them right beneath the box. Then I insert the secret message using `attr()`. 
+Now let's hide the message behind the date boxes. We can create cubes with the message written  on the sides facing down. For each box I add an pseudo element with `::after` and position them right beneath the box. Then I insert the secret message using `attr()`. Later I want to fold it beneath the actual element, creating a "box". 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/rNamVOQ" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
