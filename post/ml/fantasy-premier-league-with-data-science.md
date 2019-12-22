@@ -40,9 +40,13 @@ After fitting the models, they predict points achieved by all the Premier League
 
 ## 3. Selecting the XI
 
-After predicting points scored, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play).
+After predicting points scored, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
 
-### Results
+### Results from earlier rounds
+
+The models have been run to demonstrate their 
+
+### Gameweek 19 teams
 
 ![Fantasy Screenshot, Regression Team](/assets/reg_pred_gw19.png)
 
