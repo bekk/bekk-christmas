@@ -83,7 +83,7 @@ Second, bundle everything. Building the applications for two different targets r
 
 #### Third parties
 
-Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s writeup to patch your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort).
+Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s about patching your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files change every release, and patching is rare (usual a last resort).
 
 ## Other Possibilities
 
