@@ -48,7 +48,7 @@ The models have been run to demonstrate their
 
 ### Gameweek 19 teams
 
-![Fantasy Screenshot, Regression Team](/assets/reg_pred_gw19.png)
+<img src="/assets/reg_pred_gw19.png" width="50%">
 
 ![Fantasy Screenshot, Neural Network Team](/assets/nn_pred_gw19.png "Neural Netters F.C.")
 
