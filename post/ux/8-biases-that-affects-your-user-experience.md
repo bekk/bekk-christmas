@@ -13,8 +13,7 @@ authors:
 <br/>
 <br/>
 
-
-# What is a delightful UX? 
+# What is a delightful UX?
 
 Let's get an idea of the concept, by looking at some examples.
 
@@ -39,7 +38,7 @@ They do the same when jobs have been done. They could have shown a status messag
 **Stores**\
 Store store store
 
-![Buying google home mini](/assets/googleux24.png)
+![Buying google home mini](/assets/googleux24b.png)
 
 # Why bother making products delighful?
 
