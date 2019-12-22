@@ -69,7 +69,7 @@ There are both positive and negative sides when working with a monorepo. Persona
 
 Furthermore, when you are done developing a feature for one of the platforms, it is relatively easy to develop it for the other. Because all the work with the heavy logic, developing, and thinking is already done. Most of the time it is remaining to "port" the views from native to web or vice versa. Of course it isn't always as easy to convert one view from native to web, there are some corner cases in the business logic, something with the url chaos (logged in vs. not etc.), and the styling when it comes to vertical vs. horizontal design.
 
-A monorepo is just fun and games, after you have configured the correct setup.
+A monorepo is just fun and games, **after** you have configured the correct setup.
 
 ### The setup
 
