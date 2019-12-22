@@ -49,7 +49,7 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 ## Results from earlier rounds
 
-To examine the strength of our models, we let them predict already played rounds and compare their results with the average score of all human Fantasy players.<sup>3</sup> The results from gameweek 13 to 17 are displayed in the table below:
+To examine the strength of our models, we let them predict already played rounds and compare their results with the average score of all human Fantasy players.<sup>3</sup> The number of points achieved by the models in gameweek 13 to 17 is displayed in the table below:
 
 <img class="dark-theme-image" src="/assets/models-performance-dark.png" />
 <img class="light-theme-image" src="/assets/models-performance.png" />
