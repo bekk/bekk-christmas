@@ -22,11 +22,11 @@ I start of with a nice Christmas color and some boxes where today's date is writ
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/Examjar" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Now let's hide the message behind the date boxes. We can create cubes with the message written  on the sides facing down. For each box I add an pseudo element with `::after` and position them right beneath the box. Then I insert the secret message using `attr()`. Later I want to fold it beneath the actual element, creating a "box". 
+Now let's hide the message on the page. If we imagine that the date boxes are cubes we can hide the message on the side facing down and turn them around on mouse over. I start off by adding pseudo element to each box using `::after` and position them right below the box. Then I insert the secret message using `attr()`. 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/rNamVOQ" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
-I now rotate the pseudo elements in order to create a box. I use transform to rotate the pseudo element 90 degrees along the X-axis. On hover the boxes will turn. To get the effect of a turning box I rotate the parent element and change the color of the pseudo element to imitate shadow. I set the transition time to 0.3 seconds. 
+Now I can fold the pseudo element beneath the box to create the illusion of a cube. I use `transform `to rotate the pseudo element 90 degrees along the X-axis. The boxes will turn on hover. To get the effect of a turning box I rotate the parent element and change the color of the pseudo element to make it look like shadow. I set the transition time to 0.3 seconds. 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/ExamjVM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
