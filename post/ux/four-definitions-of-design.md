@@ -42,13 +42,11 @@ Here are the four I found most useful, both practical and abstract:
 
 Perhaps the most straight-forward way of describing design would be the way it was described to the designer – through their education. Though design training varies, there are some common themes:
 
-_**\*\*\* Illustration here\*\*\***_
-
 **Project-based learning:** Most design schools have a focus on learning design by doing design. It is a hands-on major where students learn by model projects requiring them frame the challenge, ideate and present designs, then receive and give feedback through “Critiques”.
 
-**Insight/research and co-creation:** Designers are taught that the answer always lies with the user. By learning interview techniques, co-creating, facilitation and mapping techniques, designers grow their empathy for users and train to spot their own assumptions and biases.
+**Methodology:** Techniques for generating and exploring numerous concepts before then methodically converging down to the best solution. Often called the "double diamond".
 
-**Brainstorming & Creativity:** Techniques for coming up with numerous, unique solutions, since the first idea is not always the best one.
+**Insight/research and co-creation:** Designers are taught that the answer always lies with the user. By learning interview techniques, co-creating, facilitation and mapping techniques, designers grow their empathy for users and train to spot their own assumptions and biases.
 
 **Storytelling:** Humans respond best to stories – it is how we naturally process and store information. Designers learn to harness this both in text, user flows and to sell concepts.
 
@@ -64,7 +62,7 @@ Even after formal education, designers are often [still measured](https://uxdesi
 
 Zooming way out, another approach to describing design is by contrasting it to related disciplines. In the Netflix series [Abstract](https://www.netflix.com/title/80057883), designer and renaissance woman Neri Oxman presents a diagram of her team’s process, with an interesting perspective on design:
 
-_**\*\*\* Illustration here\*\*\***_
+**_\*\*\* Illustration here\*\*\*_**
 
 Oxman’s work with Bio-architecture is at the intersection of design, science, engineering and art, so for her the blurred boundaries of these disciplines has been especially enlightening. She describes how the fields bleed into and inform one another.
 
