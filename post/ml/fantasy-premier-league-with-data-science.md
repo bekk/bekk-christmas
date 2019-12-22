@@ -10,6 +10,8 @@ description: >-
   fantasy, premier, league, football, machine learning, random forest, linear
   regression, data science
 ---
+![]()
+
 If you’re a below-average Fantasy Premier League performer and an above-average data science enthusiast, we have at least two things in common – and you’ve found exactly the right article!
 
 Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
@@ -49,8 +51,8 @@ The models have been run to demonstrate their
 ### Gameweek 19 teams
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
-|:---:|:---:|
-| Regression Team | Neural Net Team |
+| --------------------------------------------- | -------------------------------------------- |
+| Regression Team                               | Neural Net Team                              |
 
 ### Next steps
 
