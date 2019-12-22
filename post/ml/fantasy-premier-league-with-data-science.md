@@ -52,9 +52,9 @@ The models have been run to demonstrate their
 
 ![Fantasy Screenshot, Neural Network Team](/assets/nn_pred_gw19.png "Neural Netters F.C.")
 
-| [![VideoBlocks](/assets/reg_pred_gw19.png)](http://videoblocks.com)  | [![/assets/nn_pred_gw19.png](https://dtyn3c8zjrx01.cloudfront.net/img/assets/audioblocks/images/logo.png)](http://audioblocks.com)(http://graphicstock.com) |
+| [![Regression Team](/assets/reg_pred_gw19.png) | [![Neural net team](/assets/nn_pred_gw19.png) |
 |:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com |
+| Regression Team | Neural Net Team |
 
 ### Next steps
 
