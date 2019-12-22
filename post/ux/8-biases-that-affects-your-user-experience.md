@@ -56,7 +56,7 @@ Apple is experts at making delightful experiences, and Apple Pay is a great exam
 
 # Why should experiences be delightful?
 
-By now, I hope you have an understanding of delight in the context of user experiences. But why should products and services be delightful? When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In an agile work environment, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
+By now, I hope you have an understanding of delight in the context of user experiences. But why should products and services be delightful? When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In agile work environments, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
 
 My focus shifted after I delved into the world of psychology.\
 <br/>
