@@ -48,7 +48,11 @@ Creating delight can be done in several ways. These websites show us the same pr
 **Apple Pay**\
 Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience here:
 
-<iframe src="https://player.vimeo.com/video/381027133" width="760" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/381027133" width="760" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> 
+
+
+
+<br/>
 
 # Why should experiences be delightful?
 
