@@ -47,13 +47,22 @@ Creating delight can be done in several ways. These websites show us the same pr
 
 **Apple Pay**\
 Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience here:
-<iframe src="https://player.vimeo.com/video/381027133" width="760" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/381027133" width="760" height="auto" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 # Why bother making products delighful?
 
 When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In an agile work environment, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
 
-My focus shifted after I delved into the world of psychology and saw the effects of delight by the numbers.
+My focus shifted after I delved into the world of psychology.
+
+**People are humans — not robots.**
+
+Duh uh. But we often forget the implications of this when we create digital services. Humans are faulty. We make choices based upon our past experiences and the knowledge stored in our brains. Our knowledge contains a lot of gaps, but maybe worse, are full of incorrect information. Our brain tries to understand the world around us constantly and unconsciously. When it sees patterns, our brain stores it as concepts in our long term memory by insulating the pathways between networks of neurons. Undoing these strengthened brain paths becomes harder and harder as time goes. Misunderstandings become facts.
+
+At the same time, our energy-hungry brain tries to preserve energy all the time. One strategy it has is habits. Have you done something before? Do not waste energy on making the same decision again. Another one is motivation — rewarding energy-persevering and energy-gaining behavior with addictive drugs such as dopamine. A third strategy is feelings. The brain summarizes the body's energy budget, environmental context, internal and external perceptions, as fellings to our consciousness. Feelings leave lots of information outside of energy-hungry conscious processes.
+
+Okay. What does all this mean? Well. Humans make decisions based on their feelings, motivations, habits, and error-prone knowledge. People are not logical, like a computer. The same person might end up with entirely different choices, depending on when they ate the last time. If your app asks a user to rate it, the user might give it one star if they broke up with their loved one the same day. A lot of your users might consent to marketing-emails if you ask on a payday.
 
 # Challanges
 
