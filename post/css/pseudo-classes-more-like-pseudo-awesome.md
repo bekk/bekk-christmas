@@ -3,6 +3,9 @@ calendar: css
 post_year: 2019
 post_day: 23
 title: Pseudo classes? More like pseudo awesome
+image: 'https://unsplash.com/photos/7VOyZ0-iO0o'
+authors:
+  - Halldis Søhoel
 ---
 Pseudo classes are used to select elements of a specific state. For example, we might want some custom styling on all first element of a type or we want to change the styling of a button on mouse over or if it is active. 
 
