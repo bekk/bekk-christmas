@@ -14,13 +14,25 @@ authors:
 
 Let's get an idea of the concept, by looking at some examples.
 
+**Reacting on Facebook posts**
+
+Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem superfluous, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
 
 
-![test](/assets/ux24a.png "test")
 
-## Reacting on Facebook posts
+**Sending mails via Mailchimp**
 
-Do you see those small, delightful animations? Does the cute angry emoji, shaking its head, make you smile? It might seem superfluous, but it makes me want to react on posts — even if the post itself is not engaging.
+Mailchimp has mastered delight in their communication. When your startup has spent all their energy creating a campaign for growth hacking, and you have proof-read the email over and over. You might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
+
+
+
+They could have shown "are you sure" status message, but the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling. Telling users it is okay to be a bit stressed.
+
+
+
+They do the same when jobs have been done. They could have shown a status message labeled "Emails sent". But they give us this delightful message instead:
+
+
 
 # Why bother making products delighful?
 
