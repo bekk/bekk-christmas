@@ -31,8 +31,7 @@ Remember the first paragraph in this article? Since evil persons can read the wh
 A lot of automated processes and tools can also help in finding vulnerabilities in open source software, like [Snyk](https://snyk.io/) and [npm audit](https://docs.npmjs.com/cli/audit). Also, [GitHub Security](https://github.com/security) is a very interesting new initiative. 
 
 ## And the answer is...
-Does our simple question have a simple answer? No. There are many possible reasons to open-source your project. And there are the same number of reasons _not_ to do it, and we haven't talked about them yet. 
-
-Why you should open-source your project primarily comes down to your principles and philosophy. Hopefully this article has helped enlighten some of the benefits of open sourcing your project.
+Does our simple question have a simple answer? No. There are many possible reasons to open-source your project, and they depend on the characteristics of the project, and the principles and philosophy of your team and company. 
+We haven't talked about any of the reasons _not_ to open-source your projects, but hopefully this article has helped enlighten some of the benefits.
 
 Why did you open source your project? I'd like to know! Email me at mats.byrkjeland@bekk.no.
