@@ -31,7 +31,7 @@ The models are trained using data provided by GitHub user [Vaastav Anand](https:
 * Team (20 variables)
 * Opponent team (20 variables)
 * Home/away game (one variable)
-* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567), normalized) (five variables)
+* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (five variables)
 
 This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used.<sup>2</sup>
 
@@ -41,15 +41,15 @@ The linear regression is set up with the assumed weakest team as baseline on the
 
 ## 2. Predicting points
 
-After fitting the models, they predict points achieved by all the Premier League players in the out-of-sample round – in our case, round 19. Injured or suspended players are not predicted.
+After the models are fitted, they predict points achieved by all the Premier League players in the out-of-sample round – in our case, round 19. Injured or suspended players are not predicted.
 
 ## 3. Selecting the XI
 
-After predicting points scored by all players, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
+After predicting points scored by all players, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the 15-man squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
 
 ## Results from earlier rounds
 
-To examine the strength of our models, we compare their performance in already played rounds with the performance of human players. Specifically, we compare the number of points achieved by the models with the average score of all Fantasy players in a given round.<sup>3</sup> The results from gameweek 13 to 17 are displayed in the table below:
+To examine the strength of our models, we let them predict already played rounds and compare their results with the performance of human players. Specifically, we compare the number of points achieved by the models with the average score of all Fantasy players in a given round.<sup>3</sup> The results from gameweek 13 to 17 are displayed in the table below:
 
 <img class="dark-theme-image" src="/assets/models-performance-dark.png" />
 <img class="light-theme-image" src="/assets/models-performance.png" />
