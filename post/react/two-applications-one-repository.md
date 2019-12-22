@@ -71,7 +71,7 @@ Furthermore, when you are done developing a feature for one of the platforms, it
 
 So, a monorepo is just fun and games, but how do you configure this?
 
-### The setup
+### The Setup
 
 If deciding on a project structure is not difficult itself, getting the tooling and supported frameworks to work is another uphill battle. 
 
@@ -81,7 +81,7 @@ First, importing internal and external modules. Needless to say, we do not want 
 
 Secondly, bundle everything. Building these applications requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implement the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations are required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
 
-#### Third parties
+#### Third Parties
 
 Thanks to Yarn workspace module resolution works out of the box. However, library developers sometimes requires files to exist in a certain location. When there is no way to override the config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s post about patching your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files changes with every release, and for us patching is rare.
 
