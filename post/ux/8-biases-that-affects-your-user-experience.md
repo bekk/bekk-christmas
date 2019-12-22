@@ -53,9 +53,13 @@ Apple is experts at making delightful experiences, and Apple Pay is a great exam
 
 <iframe src="https://player.vimeo.com/video/381027133" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-# 
+# Why bother making products delighful?
 
-Why bother making products delighful?
+When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In an agile work environment, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
+
+
+
+My focus shifted after I delved into the world of psychology and saw the effects of delight by the numbers.
 
 # Challanges
 
