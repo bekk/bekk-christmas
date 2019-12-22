@@ -3,7 +3,8 @@ calendar: ux
 post_year: 2019
 post_day: 24
 title: The impact of delightful experiences
-image: 'https://www.dropbox.com/s/vhofe4t10rm1rvr/manwithnumbers.png'
+image: >-
+  https://previews.dropbox.com/p/thumb/AAq4lkkfZje4x7z10xBaN1OK3m5CamwXxY0mhAO3hRXk33hPj_JBlLWpvKgKMemi6y5cu7-t8_nxFsWgstjEQ0E8ZuJT7hNQjQK6xCVTDNXhGNiRWQw25mMFmoU0emfPraivhTU5KaIH5K8tgfrwRNBZiOKQqnyAku66Ee1hF7bwVFTffXQSLWaV1OFMS3akac31n86Fo8NPsHGgxI0ShDYrM_F-5HKrEqpxRX_Astfebcds6e5qxXVyql2a95nPNq0RxBD5qva1bwjtB9U0MFJpClKm81Etx5caSrmYuHCp59TmC4lnqDyujBg4cYUinu9YwvzRV1LbH5xURCCnUizK/p.png
 ingress: >-
   People love delightful digital experiences. It can make the dullest of tasks —
   an exciting experience. Like filling in forms and paying for groceries. So why
