@@ -47,7 +47,9 @@ Apple Pay
 
 <iframe src="https://player.vimeo.com/video/381027133" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-# Why bother making products delighful?
+# 
+
+Why bother making products delighful?
 
 # Challanges
 
