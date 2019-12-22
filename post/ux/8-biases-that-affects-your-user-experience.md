@@ -79,7 +79,7 @@ In many cases, manual work has been automated. Before digitization, users contac
 
 ![Human-Computer Interaction](/assets/human-2.png)
 
-Human functions that are typically lost; 
+Human functions that are typically lost:
 
 * Correcting information, often without telling the users (like formatting errors) 
 * Adjust the amount of information or complexity, making it understandable to different users
@@ -105,7 +105,28 @@ Let's look at an example. A bottle of sugarfree soda. The utility is its ability
 
 Delight is the quality that makes a useful service or product, something that users want to use even when they don't need to.
 
-# Challanges
+# Challenges you'll meet as a Delight Champion
+
+If you have come this far, I hope you'll soon want to champion delight in your organization. But new ideas alway meet some resistance. These are some of the typical challenges that you'll encounter when trying to create delightful digital experiences. 
+
+**Delight is challenging to describe**\
+When working in teams, creating digital products, we need to explain work to be done. In the world of agile, we often use some sort of ticket system or user stories. But these tools often describe the end result highly abstract or strictly functional. Since delight needs to be felt to be understood, it is tricky to express objectively. You can show an animation by making an animation or showing the humorous copy by writing it — but in an agile team, you'll never want to do this time-consuming work upfront.
+
+Since you won't be able to describe the delightful aspects upfront, you need to create a team culture that values delight. It will require interdisciplinary hands-on collaboration. Creating delightful experiences can be extra challenging in distributed teams.
+
+
+
+**Definition of Done**\
+In agile teams, you often want to have a definition of when something is done. This way, team members can more easily work independently. But since delightful UX is challenging to describe, it's almost impossible to define when it's good enough. A digital service can have 100% conversion rates, zero bugs, and be in production (in the hands of the users). And still, it might not be delightful.
+
+**Lack of competency**\
+Small digital teams might not have the skills required to make attractive services. Typical experts of delightful experiences are; Motion designers, Visual designers, UX writes, Copywriters, Illustrators, Front-end developers with lots of experience with CSS or visual technologies. Even teams with dedicated designers or front-end developers, might not focus on delightfulness in their work. Not because they lack the knowledge, but it can be challenging to champion something that's not part of your core skillset.
+
+**Measuring the effects**\
+Yup. Another tricky one. Measuring the impact of something fuzzy is a challenge. You could find metrics, like numbers of likes, ratings, engagement, positive feedback in surveys, or scores in customer satisfaction indices. But these will likely be proxy metrics and be hard to link to economic effects. Loyalty will most likely be your best bet on an economic impact.
+
+**Return of investment**\
+The business case of delight is challenging. When digitizing manual work, you can often predict a reduction in manual labor — the new self-service or feature will reduce wages or make customer handling more effective. But the challenges mentioned above makes any prediction of the return of investment difficult. To win over your ROI-people, you can show them the effects of optimization. Adding delight to an existing service or feature can radically change conversion rates or engagement. It can be the little push of motivation users need to interact with your product.
 
 # Lets get theoretical
 
