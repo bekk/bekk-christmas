@@ -50,8 +50,6 @@ Apple is experts at making delightful experiences, and Apple Pay is a great exam
 
 <iframe src="https://player.vimeo.com/video/381027133" width="760" height="300 !important" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> 
 
-
-
 <br/>
 
 # Why should experiences be delightful?
@@ -75,11 +73,9 @@ A lot of digital experiences are entertaining at its core, like games or video s
 
 ![Human-human interaction](/assets/human-1.png)
 
-In many cases, manual work has been automated. Before digitization, users contacted a person in order to use a service. Paying bills, ordering food, buying movie tickets, or canceling their subscriptions. Often, this interaction has been replaced by a form of some sort. The app or website usually only replaces the former workers' transactional function. Input from the user, output from the system. The human part of the system is lost. 
+In many cases, manual work has been automated. Before digitization, users contacted a person in order to use a service. Paying bills, ordering food, buying movie tickets, or canceling their subscriptions. Often, this interaction has been replaced by a form. The app or website usually only replaces the former workers' transactional function. Input from the user, output from the system. The human part of the system is lost. 
 
 ![Human-Computer Interaction](/assets/human-2.png)
-
-
 
 Functions that are typically lost are 
 
@@ -94,9 +90,16 @@ Functions that are typically lost are
 
 While delight in UX cannot change what users experience outside of the services we create, we can make our systems more human with it.
 
+**Defining the usefulness of delightful UX**
+When looking at successful products and services, they tend to be at the intersection of three lenses. They are feasible (it is possible to make), they are viable (it makes sense financially) and they are desirable (users will come and stay).
 
 
 
+When are products desirable? In order to make more sense of it, we can look at three aspects of desirability. Utility, usability, and delight. The utility is the most objective quality. Services and products with high utility are useful. They solve user problems or needs. Usability is slightly fuzzier. High usability means that users are able to use the product. They understand how to interact with it. In the world of UX, conversion rates are typically correlated with usability. The last aspect, delight, is the most mysterious. It tells us if users want the product, or like to use it.
+
+Let's look at an example. A bottle of sugarfree soda. The utility is its ability to quench thirst. The bottle fits your hand, you can hold it and you can place it on a surface, you can easily open and close the cap. In other words, it is highly usable. But why did you buy this soda? You could have bought a bottle of water or you could have quenched your thirst at the tap. It must have some delightful aspects. Maybe it tastes great?
+
+Delight is the quality that makes a useful service or product, something that users want to use even when they don't need to.
 
 # Challanges
 
