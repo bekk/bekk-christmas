@@ -14,8 +14,6 @@ ingress: >-
 authors:
   - Mats Byrkjeland
 ---
-Opening up your code base for everyone to see can seem a bit scary. Everyone can see your (bad) code and commit messages, and it's easier for evil people to find weaknesses or make fake copies of your product. But there are many good reasons for open-sourcing a project. Let's go through some of them.
-
 ## You seek contributions from the community
 This is maybe the most obvious reason. If your code is open sourced, outsiders can contribute to the development of the project. This is a strong argument for libraries, frameworks and tools where the target user group is developers. But this goes also for other kinds of products. If you want users of the product to be able to find bugs, and even correct them, that's possible when the source code is open. And if you're good at publishing issues, project plans, you might get help in driving the development forward.
 
