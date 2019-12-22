@@ -3,12 +3,15 @@ calendar: functional
 post_year: 2019
 post_day: 23
 title: Making a small Haskell application
+authors:
+  - Morten Kolstad
 ---
+# Making a small Haskell application
 
 [Haskell](https://www.haskell.org/) is a programming language that a lot of people use to learn functional programming and solve
 programming exercises. But not as many take the leap to use Haskell for practical projects.
 To try to help to bridge this gap, I will walk through how to create a "practical" Haskell application. 
-This is if course not the only way to do it and there are alternatives to everyapproach I am using, but
+This is of course not the only way to do it and there are alternatives to every approach I am using, but
 this is what I find most suitable for a small easy-to-understand project.
 
 The application we are going to make is pretty simple, it should just output the current Bitcoin rate. 
@@ -25,7 +28,7 @@ First we need to create and set up our project.
 
 ## Stack
 
-We will be using [Stack](https://docs.haskellstack.org/en/stable/README/), a cross-platform program for developing Haskell projects. 
+We will be using [Stack](https://docs.haskellstack.org/en/stable/README/), a cross-platform tool for developing Haskell projects. 
 
 [Installation instructions](https://docs.haskellstack.org/en/stable/README/#how-to-install) are available if you don't have stack installed and want to follow along.
 
@@ -204,7 +207,7 @@ main = do
   BS.putStrLn json
 ```
 
-Lets walk through over code :
+Lets walk through the code :
 
 * The language extension `OverloadedStrings` makes literal strings more flexible. In our case it makes so that our URL is automaticly parsed into a `Request`, which simplifies our HTTP request.
 * Then we have some imports that allows us to make HTTP requests and work with bytestrings.
