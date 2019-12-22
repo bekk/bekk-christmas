@@ -19,10 +19,13 @@ Let's get an idea of the concept, by looking at some examples.
 
 <br/>
 
-**Reacting on Facebook posts**
+**Reacting on Facebook post**\
+Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem superfluous, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
+
+
 ![Reacting on a facebook post](/assets/ezgif-7-eb52c18c430b.gif)
 
-Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem superfluous, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
+
 
 **Sending emails via Mailchimp**\
 Mailchimp has mastered delight in their communication. When your startup has spent all their energy creating a campaign for growth hacking, and you have proof-read the email over and over. You might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
