@@ -9,6 +9,11 @@ ingress: '### Helping you pick the top team for Boxing Day!'
 description: >-
   fantasy, premier, league, football, machine learning, random forest, linear
   regression, data science
+links:
+  - title: 'https://github.com/vaastav/Fantasy-Premier-League'
+    url: Fantasy Data
+authors:
+  - Tobias R. Pettrém
 ---
 ![]()
 
@@ -58,7 +63,7 @@ The models have been run to demonstrate their
 
 These models have been built primarily to show the value of adding machine learning capabilities to solve problems which require consideration of a large amount of factors. While they are basic and could relatively easily be improved or replaced by more sophisticated models (e.g., some ensemble learning approach or including more data combined with [PCA](https://towardsdatascience.com/principal-component-analysis-intro-61f236064b38)), a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
-Implementing all possible variables influencing a player's performance in a given Premier League round is simply not feasible, and the problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. However, the value of machine learning, data science and quantitative methods as decision support is indisputable. Letting machines do what they do best – crunching big data sets and discovering intricate patterns – and use this insight as guidance for making decisions, is probably (and perhaps, hopefully) a more rational approach, also for Fantasy Premier League.
+Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. However, the value of machine learning, data science and quantitative methods as decision support is indisputable. Letting machines do what they do best – crunching big data sets and discovering deep patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and perhaps, hopefully) a more rational approach, also for Fantasy Premier League.
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 
