@@ -62,7 +62,7 @@ Even after formal education, designers are often [still measured](https://uxdesi
 
 Zooming way out, another approach to describing design is by contrasting it to related disciplines. In the Netflix series [Abstract](https://www.netflix.com/title/80057883), designer and renaissance woman Neri Oxman presents a diagram of her team’s process, with an interesting perspective on design:
 
-**_\*\*\* Illustration here\*\*\*_**
+![Neri Oxman's Krebs Cycle of Creativity](/assets/neri-oxmans-krebs-cycle-of-creativity-830x754.jpg "Neri Oxman's Krebs Cycle of Creativity. Source: MIT Spectrum")
 
 Oxman’s work with Bio-architecture is at the intersection of design, science, engineering and art, so for her the blurred boundaries of these disciplines has been especially enlightening. She describes how the fields bleed into and inform one another.
 
