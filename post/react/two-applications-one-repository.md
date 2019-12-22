@@ -21,9 +21,9 @@ authors:
 ---
 ## The Web and the Native
 
-Currently our colleagues and us are developing the web and the native application for a company named Entur, which provides a journey planner for public transport in Norway. These applications lets the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
+Currently our colleagues and us are developing the web and native applications for a company named Entur, which provides a journey planner for public transport in Norway. These applications let the user plan their journey, buy tickets, create a profile, add payment options, and other functionalities. To be able to create this awesomeness, and as you may have guessed based on this calendar, we are using React for web and React Native for iOS and Android.
 
-We have that (dis)advantage that the web and native application mostly (but not a 100%) contains the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wan to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a monorepo.
+We have that (dis)advantage that the web and native applications mostly (but not a 100%) contain the same functionality. And as you may have foreseen, this creates two versions of our code based on our choice of technology. We wanted to have the same business logic for both of the applications, but didn't want it to mess with the views. We wanted to separate the views from the business logic, but at the same time minimize the duplication of the code. Therefore, we ended up with a _monorepo_.
 
 ## The Monorepo
 
@@ -32,8 +32,8 @@ When developing Feature X for the web application, where does it make the most s
 
 ### Packages
 
-We create subfolders that covers web and native and we separate them by the domain (we feel) they belong to. For instance we have created a subfolder for everything regarding the profile page, and another folder for things that travel suggestions (called journey). By doing it this way we are able to easier compare the components and share the business logic across web and native without too much overhead.
-In addition to the domain packages we have a `client-app` and `client-web` folder which is the entry point for the different applications.
+We create subfolders that cover web and native and we separate them by the domain (we feel) they belong to. For instance, we have created a subfolder for everything regarding the profile page, and another folder for things that travel suggestions (called journey). By doing it this way we are able to easier compare the components and share the business logic across web and native without too much overhead.
+In addition to the domain packages we have a `client-app` and `client-web` folder which are the entry points for the different applications.
 
 Here is a rough snippet of our structure:
 
@@ -79,7 +79,7 @@ First, importing internal and external modules. Needless to say, we do not want 
 
 #### Bundling
 
-Second, bundle everything. Building the applications requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implements the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations is required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
+Second, bundle everything. Building the applications requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implement the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations are required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
 
 #### Third parties
 
