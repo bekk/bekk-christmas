@@ -5,7 +5,12 @@ post_day: 23
 title: Why should you open source your product?
 image: >-
   https://images.unsplash.com/photo-1472898965229-f9b06b9c9bbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
-ingress: 'Such a simple question. But does it have an easy answer? '
+ingress: >-
+  Such a simple question. But does it have an easy answer? Opening up your code
+  base can seem a bit scary. Everyone can see your (bad) code and commit
+  messages, and it's easier for evil people to find weaknesses or make fake
+  copies of your product. But there are many good reasons for open-sourcing a
+  project. Let's go through some of them.
 authors:
   - Mats Byrkjeland
 ---
