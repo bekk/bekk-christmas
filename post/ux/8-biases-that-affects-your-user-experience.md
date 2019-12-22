@@ -93,7 +93,7 @@ While delight in UX cannot change what users experience outside of the services 
 **Defining the usefulness of delightful UX**
 When looking at successful products and services, they tend to be at the intersection of three lenses. They are feasible (it is possible to make), they are viable (it makes sense financially) and they are desirable (users will come and stay).
 
-
+![Venn diagram of three aspects of products](/assets/venn.001.png)
 
 When are products desirable? In order to make more sense of it, we can look at three aspects of desirability. Utility, usability, and delight. The utility is the most objective quality. Services and products with high utility are useful. They solve user problems or needs. Usability is slightly fuzzier. High usability means that users are able to use the product. They understand how to interact with it. In the world of UX, conversion rates are typically correlated with usability. The last aspect, delight, is the most mysterious. It tells us if users want the product, or like to use it.
 
