@@ -31,9 +31,9 @@ Now I can fold the pseudo element beneath the box to create the illusion of a cu
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/ExamjVM" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
 
-I'm not quite happy with the hover effects. The boxes are turning too quickly and I cannot grasp the secret message. I want to change the boxes to turn on click. In order to achieve this I have to change the boxes into checkboxes. If I check the checkbox, it will rotate. 
+I'm not quite happy with the hover effects. The boxes are turning too quickly and I cannot grasp the secret message. I want the boxes to turn on click. In order to achieve this I have to change the boxes into checkboxes. If I check a checkbox, it will rotate. 
 
-To style the checkbox as the boxes we had before I have to add a label and style the label. Then I can hide the actual checkbox. Here’s the result. 
+To style the checkbox to look like the cubes we had before I need to add a label. It is actually the label that will be styled as a box. When we have achieved this we can hide the actual checkbox by setting `width: 0`. Here’s the result. 
 
 <iframe height="320" style="width: 100%;" scrolling="no" src="https://codepen.io/halldis-sohoel/pen/RwNpvGG" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
