@@ -12,6 +12,7 @@ ingress: >-
   well as a shared business logic at the same time.
 authors:
   - Caroline Odden
+  - Kent Andersen
 ---
 ## The Web and the Native
 
