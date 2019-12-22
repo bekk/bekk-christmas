@@ -14,13 +14,11 @@ If you’re a below-average Fantasy Premier League performer and an above-averag
 
 Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
-The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round (in our case, gameweek 19). Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the [constraints](https://fantasy.premierleague.com/help/rules) given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
-
-## 1. Training the models
+The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the [constraints](https://fantasy.premierleague.com/help/rules) given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
 ### Input data
 
-The models are trained using data provided by Github user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
+The models are trained using data provided by GitHub user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
 
 * Position (four variables)
 * Team (20 variables)
@@ -28,19 +26,19 @@ The models are trained using data provided by Github user [Vaastav Anand](https:
 * Home/away game (one variable)
 * Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (five variables)
 
-This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, the most recent ICT score for Liverpool and West Ham players are set to the average of the other players, as their round 18 match was [postponed](https://www.premierleague.com/news/1336506) due to the participation of Liverpool in the FIFA World Cup.
+This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used<sup>4</sup>.
 
 ### Designing the models
 
-The linear regression is set up with the assumed weakest team as baseline on the team variable, and the assumed strongest team as baseline on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2.
+The linear regression is set up with the assumed weakest team as baseline on the team variable, and the assumed strongest team as baseline on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2. The model uses mean squared error as loss function and the [Adam](https://keras.io/optimizers/#adam) optimizer.
 
-### 2. Predicting points
+### Predicting points
 
-Lorem ipsum
+After fitting the model, it predicts points achieved by all the players in the out-of-sample round – in our case, round 19.
 
-### 3. Selecting the XI
+### Selecting the XI
 
-Lorem ipsum
+und 19.
 
 ### Results
 
@@ -53,3 +51,5 @@ Lorem ipsum
 <sup>2</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
 
 <sup>3</sup>Subtitutes are accounted for in the available budget, but are not subbed in should any of the players in the first XI not play.
+
+<sup>4</sup>The GitHub data is usually published 2-3 days after the last game of the round (which was played yesterday, on the 22nd). Further, since the Liverpool and West Ham match was postponed, the form data would be incomplete.
