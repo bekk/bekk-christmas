@@ -51,7 +51,7 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 ### Results from earlier rounds
 
-Results achieved by the models have been compared with the average score of all Fantasy players in a given round<sup>3</sup>. The results are displayed in the table below:
+Number of points achieved by the models have been compared with the average score of all Fantasy players in a given round<sup>3</sup>. The results from gameweek 13 to 17 are displayed in the table below:
 
 |       | Regression | Neural Network | Average |
 |-------|:----: |:----: |:----: |
