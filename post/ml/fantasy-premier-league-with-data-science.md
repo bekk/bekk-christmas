@@ -47,11 +47,11 @@ After fitting the models, they predict points achieved by all the Premier League
 
 ## 3. Selecting the XI
 
-After predicting points scored, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
+After predicting points scored by all players, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
 
 ### Results from earlier rounds
 
-The models have been run to demonstrate their 
+Results achieved by the models have been compared with the average score of all Fantasy players in a given round. The results are displayed in the table below:
 
 ### Gameweek 19 teams
 
@@ -59,9 +59,13 @@ The models have been run to demonstrate their
 | --------------------------------------------- | -------------------------------------------- |
 | Regression Team                               | Neural Net Team                              |
 
+As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were infact the top three selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford makes Lundstram's teammates Fleck and Stevens favorable selections. Vardy and Maddison will hope to shorten the Liverpool lead on Boxing day, while Maupay needs to bounce back from a disappointing home performance against Sheffield Utd. A slightly weaker opponent gives De Bruyne the edge as captain over Mohamed Salah.
+
+The neural network has opted for a refreshing 5-2-3 formation, with large emphasis on Sheffield and Aston Villa defenders. Doherty and Neves will face a tough task in Pep Guadiola's men on Thursday, while Christian Benteke is still waiting for his first goal of the 19/20 season. Notably, all players but Martinelli have home matches, which could indicate a substantial preference for this by the model. Abraham should have plenty of chances to prove his worth as captain against the most conceding team of the Premier League season so far.
+
 ### Next steps
 
-These models have been built primarily to show the value of adding machine learning capabilities to solve problems which require consideration of a large amount of factors. While they are basic and could relatively easily be improved or replaced by more sophisticated models (e.g., some ensemble learning approach or including more data combined with [PCA](https://towardsdatascience.com/principal-component-analysis-intro-61f236064b38)), a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
+These models have been built primarily to show the value of adding machine learning capabilities to solve problems which require consideration of a large amount of factors. While they are basic and could relatively easily be improved or replaced by more sophisticated models (e.g., some ensemble learning approach or improve data preprocessing with [PCA](https://towardsdatascience.com/principal-component-analysis-intro-61f236064b38)), a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
 Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. However, the value of machine learning, data science and quantitative methods as decision support is indisputable. Letting machines do what they do best – crunching big data sets and discovering deep patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and perhaps, hopefully) a more rational approach, also for Fantasy Premier League.
 
