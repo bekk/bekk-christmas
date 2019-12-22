@@ -32,10 +32,10 @@ When developing Feature X for the web application, where does it make the most s
 
 ### Packages
 
-We create subfolders that cover web and native and we separate them by the domain (we feel) they belong to. For instance, we have created a subfolder for everything regarding the profile page, and another folder for things that travel suggestions (called journey). By doing it this way we are able to easier compare the components and share the business logic across web and native without too much overhead.
-In addition to the domain packages we have a `client-app` and `client-web` folder which are the entry points for the different applications.
+We create subfolders that cover web and native and we separate them by the domain (we feel) they belong to. For instance, we have created a subfolder for everything regarding the profile page, and another folder for things that applies to the travel suggestions (called journey). By doing it this way we are able to easier compare the components and share the business logic across web and native without too much overhead.
 
-Here is a rough snippet of our structure:
+
+In addition to the domain packages we have a `client-app` and `client-web` folder which are the entry points for the different applications. Here is a rough snippet of our structure:
 
 ```
 packages
@@ -65,11 +65,11 @@ Actions, reducers, sagas and helper files are typically files we use to share be
     ...
 ```
 
-There are both positive and negative sides when working with a monorepo. Personally, we like the domain package structure we are going for. At first look it seems a little bit chaotic, but when you get used to the domain logic it is pretty nice! Of course it is a pickle to know when to create a new package, and when to not or even delete one. For example, in our case the product we are creating is a journey planner, and it is super hard not to put everything in the `journey` domain package! 😅 And of course, we have the one folder, the `utils`-folder, where all the stuff we don't know where to put is placed!
+There are both positive and negative sides when working with a monorepo. Personally, we like the domain package structure we are going for. At first look it seems a little bit chaotic, but when you get used to the domain logic it is pretty nice! Of course it is a pickle to know when to create a new package, and when to not, or even delete one. For example, in our case the product we are creating is a journey planner, and it is super hard not to put everything in the `journey` domain package! 😅 And of course, we have the one folder, the `utils`-folder, where all the stuff we don't know where to put is placed!
 
-Furthermore, when you are done developing a feature for one of the platforms, it is relatively easy to develop it for the other. Because all the work with the heavy logic, developing, and thinking is already done. Most of the time it is remaining to "port" the views from native to web or vice versa. Of course it isn't always as easy to convert one view from native to web, there are some corner cases in the business logic, something with the url chaos (logged in vs. not etc.), and the styling when it comes to vertical vs. horizontal design.
+Furthermore, when you are done developing a feature for one of the platforms, it is relatively easy to develop it for the other. Because all the work with the heavy logic, developing, and thinking is already done, with the domain fresh in memory. Most of the time the remaining things to do is just "port" the views from native to web or vice versa. Of course it isn't always as easy to convert one view from native to web, because there are some corner cases in the business logic, something with the url chaos (logged in vs. not etc.), and the styling when it comes to vertical vs. horizontal design.
 
-A monorepo is just fun and games, **after** you have configured the correct setup.
+So, a monorepo is just fun and games, but how do you configure this?
 
 ### The setup
 
@@ -79,16 +79,16 @@ First, importing internal and external modules. Needless to say, we do not want 
 
 #### Bundling
 
-Second, bundle everything. Building the applications requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implement the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations are required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
+Secondly, bundle everything. Building these applications requires two different build systems. For web we use **Webpack** and for React Native - **Metro**. Both systems implement the same concept, one main entry file with references (directly or indirectly) to the entire application, which is then traced and bundled into a single file. When separate implementations are required for the different applications, a .web.js or .native.js file extension can be added to expose the file to only one of the build systems. Metro has built in support for .native.js, and Webpack can be configured to also accept .web.js.
 
 #### Third parties
 
-Thanks to Yarn workspace module resolution works out of the box. However, library developers some times requires files to exist in a certain location. When there is no way to override config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s post about patching your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files changes with every release, and for us patching is rare.
+Thanks to Yarn workspace module resolution works out of the box. However, library developers sometimes requires files to exist in a certain location. When there is no way to override the config, or get a pull-request accepted, the last resort is to patch source files. If you’re new to patching, check out [Mats Byrkjeland’s post about patching your node_modules](https://opensource.christmas/2019/4). The advantage of patching is that you can make the change as specific as you need. The disadvantage is now you have to support the patch for every library update. Luckily not all files changes with every release, and for us patching is rare.
 
 ## Other Possibilities
 
-Monorepo is not the only solution when developing for native and web. When these applications was created, we had absolutely all the business logic on the client side which affected the choice having one repository. Over the years we have moved more of our logic over to cloud functions (see the article written by Carl Joachim about [Firebase functions in Entur](https://thecloud.christmas/2019/17)), that may have influenced the decision of a monorepo vs. several repositories today. 
+A monorepo is not the only solution when developing for native and web. When these applications was created, we had absolutely all the business logic on the client side which affected the choice having one repository. Over the years we have moved more of our logic over to cloud functions (see the article written by Carl Joachim about [Firebase functions in Entur](https://thecloud.christmas/2019/17)), that could have influenced the decision of a monorepo vs. several repositories today. 
 
-Another possibility when developing for native and web, is the `react-native-web`. It provides much of the logic and code of [React Native for the web](https://github.com/necolas/react-native-web). We tried to use this as a part of our project, but decided to remove it due to the lack of semantics. Also, the div-o-rama that goes along with the native code bleeds over to the web applications. An example is the repetetive styling you need for React Native components, which is separate styling for each view due to the lack inheritance for native. In addition we had rarely a 100% one-to-one connection between native and web, which in most cases would create separate views. 
+Another possibility when developing for native and web, is the `react-native-web`. It provides much of the logic and code of [React Native for the web](https://github.com/necolas/react-native-web). We tried to use this as a part of our project, but decided to remove it due to the lack of semantics. The div-o-rama that goes along with the native code bleeds over to the web applications. Another example is the repetitive styling you need for React Native components, which is separate styling for each view due to the lack inheritance. In addition we had rarely a 100% one-to-one connection between native and web, which in most cases would create separate views. 
 
 So, all-in-all, it is hard to give a "correct answer" of what you should use when developing for web and native applications. However, even with the complexity of the setup we have been through, we are satisfied with our structure and would recommend it to others struggling with the decision of the setup of your projects!
