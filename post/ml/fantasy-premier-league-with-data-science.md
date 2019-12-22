@@ -66,7 +66,7 @@ As we see, the two teams are fundamentally different. The regression settles on 
 
 The neural network has opted for a refreshing 5-2-3 formation, with large emphasis on Sheffield and Villa defenders. Doherty and Neves will face a tough task in Pep Guadiola's men on Thursday, while Christian Benteke is still waiting for his first goal of the 19/20 season. Trusted with the captain's band, Abraham should have plenty of chances to reignite his old scoring form against the most conceding team of the Premier League season so far. Notably, all players but Martinelli have home matches, which could indicate a substantial preference for this by the model. Finally, despite boasting a rather speculative team, the model remains financially sober and leaves plenty of room in the budget for some decent benchwarmers.
 
-## Next steps
+## Further work
 
 These models have been built to show the potential value of adding machine learning capabilities to solve problems which require consideration of many factors. The models themselves are fairly basic, and there are several ways to improve them – perhaps by augmenting the input data or through some ensamble learning approach. However, a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
