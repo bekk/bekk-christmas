@@ -2,7 +2,7 @@
 calendar: kotlin
 post_year: 2019
 post_day: 23
-title: Lists vs. sequences
+title: Lists vs. Sequences
 ingress: >-
   The Kotlin library comes with several container types. Two of these are `List`
   and `Sequence`. At the first glance these two look quite similar, but we will
@@ -144,7 +144,7 @@ val bigNumbers = numbers
 
 println(bigNumbers)
 ```
-As you can see on the output, all the filter functions are executed before we take the three first numbers:
+As you can see on the output, all the `filter()` functions are executed before we take the three first numbers:
 ```
 Filters 30
 Filters 22
