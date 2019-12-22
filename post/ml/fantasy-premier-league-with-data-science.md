@@ -14,7 +14,7 @@ If you’re a below-average Fantasy Premier League performer and an above-averag
 
 Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance<sup>2</sup>, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
-The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
+The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
 ## 1. Training the models
 
@@ -28,7 +28,7 @@ The models are trained using data provided by GitHub user [Vaastav Anand](https:
 * Home/away game (one variable)
 * Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567), normalized) (five variables)
 
-This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used<sup>4</sup>.
+This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used<sup>3</sup>.
 
 ### Designing the models
 
@@ -44,7 +44,9 @@ After predicting points scored, the [simplex algorithm](https://en.wikipedia.org
 
 ### Results
 
-(results here)
+![Fantasy Screenshot, Regression Team](/assets/reg_pred_gw19.png)
+
+![Fantasy Screenshot, Neural Network Team](/assets/nn_pred_gw19.png "Neural Netters F.C.")
 
 ### Next steps
 
@@ -52,6 +54,4 @@ After predicting points scored, the [simplex algorithm](https://en.wikipedia.org
 
 <sup>2</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
 
-<sup>3</sup>Subtitutes are accounted for in the available budget, but are not subbed in should any of the players in the first XI not play.
-
-<sup>4</sup>The GitHub data is usually published 2-3 days after the last game of the round (which was played yesterday, on the 22nd). Further, since the Liverpool and West Ham match was postponed, the form data would be incomplete.
+<sup>3</sup>The GitHub data is usually published 2-3 days after the last game of the round (which was played yesterday, on the 22nd). Further, since the Liverpool and West Ham match was postponed, the form data would be incomplete.
