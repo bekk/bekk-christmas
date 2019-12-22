@@ -17,7 +17,7 @@ authors:
 ---
 If you’re a below-average Fantasy Premier League performer and an above-average data science enthusiast, we have at least two things in common – and you’ve found exactly the right article!
 
-Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
+Picking the right Fantasy team with data science is no new subject,<sup>1</sup> but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
 The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
@@ -33,11 +33,11 @@ The models are trained using data provided by GitHub user [Vaastav Anand](https:
 * Home/away game (one variable)
 * Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567), normalized) (five variables)
 
-This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used<sup>2</sup>.
+This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used.<sup>2</sup>
 
 ### Designing the models
 
-The linear regression is set up with the assumed weakest team as baseline on the team variable, and the assumed strongest team as baseline on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2. The model uses mean squared error as loss function and the [Adam](https://keras.io/optimizers/#adam) optimizer.
+The linear regression is set up with the assumed weakest team as baseline on the team variable, and the assumed strongest team as baseline on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2. The model uses mean squared error as loss function and the [Adam](https://keras.io/optimizers/#adam) optimizer.
 
 ## 2. Predicting points
 
@@ -47,9 +47,9 @@ After fitting the models, they predict points achieved by all the Premier League
 
 After predicting points scored by all players, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to construct a team maximizing total expected points. The official [Fantasy rules](https://fantasy.premierleague.com/help/rules) are set as constraints, including the £100m budget. Substitutes are accounted for by leaving room in the budget for the cheapest possible players to fill up the squad, but are not selected (and consequently, no players are subbed on should any in the first XI not play). The player with the highest amount of expected points is set as captain, and the second highest as vice captain.
 
-### Results from earlier rounds
+## Results from earlier rounds
 
-Number of points achieved by the models have been compared with the average score of all Fantasy players in a given round<sup>3</sup>. The results from gameweek 13 to 17 are displayed in the table below:
+To examine the strength of our models, we compare their performance in already played rounds with the performance of human players. Specifically, we compare the number of points achieved by the models with the average score of all Fantasy players in a given round.<sup>3</sup> The results from gameweek 13 to 17 are displayed in the table below:
 
 ![Performance of models](/assets/models-performance.png "Performance of models gameweeks 13 - 17")
 
@@ -65,7 +65,7 @@ As we see, the two teams are fundamentally different. The regression settles on 
 
 The neural network has opted for a refreshing 5-2-3 formation, with large emphasis on Sheffield and Aston Villa defenders. Doherty and Neves will face a tough task in Pep Guadiola's men on Thursday, while Christian Benteke is still waiting for his first goal of the 19/20 season. Notably, all players but Martinelli have home matches, which could indicate a substantial preference for this by the model. Abraham should have plenty of chances to prove his worth as captain against the most conceding team of the Premier League season so far. Although the models as mentioned do not specify substitutes, there should be plenty of room in the budget for some decent benchwarmers.
 
-### Next steps
+## Next steps
 
 These models have been built to show the potential value of adding machine learning capabilities to solve problems which require consideration of many factors. The models implemented are fairly basic, and there are several ways to improve them – some ensemble learning approach perhaps the most evident. However, a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
