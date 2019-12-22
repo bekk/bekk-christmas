@@ -113,4 +113,4 @@ Questions are an interesting angle in defining design, as questions are a tangib
 
 \---
 
-And there you have it – four definitions, each shedding a bit of light on what this “design” thing is. Four not enought? Check out even more bellow.
+And there you have it – four definitions, each shedding a bit of light on what this “design” thing is. Four not enought? Check out even more below.
