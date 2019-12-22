@@ -30,7 +30,11 @@ You’ve got this. Your developer colleague or business-minded project manager j
 
 There is an ancient Indian proverb about [the blind men and the elephant](https://en.wikipedia.org/wiki/Blind_men_and_an_elephant). The men have never seen an elephant before, and when one is placed in front of them each starts experiencing a different part of the elephant…
 
+__
+
 ![The four blind men and the elephant](/assets/01-blind_monks_examining_an_elephant.jpg "Source: Wikipedia")
+
+_The blind men and the elefant. Source: Wikipedia_
 
 > “It’s a rope!” says one blind man, feeling the slender length of the elephant’s tail. “No, it’s definitely a tree,” says another, arms around one of the legs. “You’re all mistaken,” says yet another near the tusk, “This is definitely a spear.”
 
@@ -64,6 +68,8 @@ Zooming way out, another approach to describing design is by contrasting it to r
 
 ![Neri Oxman's Krebs Cycle of Creativity](/assets/neri-oxmans-krebs-cycle-of-creativity-830x754.jpg "Neri Oxman's Krebs Cycle of Creativity. Source: MIT Spectrum")
 
+_Neri Oxman's Krebs Cycle of Creativity. Source: MIT Spectrum_
+
 Oxman’s work with Bio-architecture is at the intersection of design, science, engineering and art, so for her the blurred boundaries of these disciplines has been especially enlightening. She describes how the fields bleed into and inform one another.
 
 > “Science converts information into knowledge. Engineering converts knowledge into utility. Design converts utility into cultural behavior in context. Art takes that cultural behavior and questions our perception of the world… And at the midnight hour, art meet science – changes in our perception affect the way we capture data.” – Neri Oxman
@@ -85,7 +91,11 @@ As visual communicators, describing this variety becomes a design problem. Many 
 
 ![A spectrum of design titles](/assets/03a-titles.png "Jasper Stephenson maps designer titles over a timeline of the project phases they are most involved in. Source: The spectrum of design roles in 2018 | UX Collective")
 
+_Jasper Stephenson maps designer titles over a timeline of the project phases they are most involved in. Source: The spectrum of design roles in 2018 | UX Collective_
+
 ![The UX spectrum](/assets/03b-titles.png "The UX spectrum shows a wide variety of profiles even within UX, depending on their strengths in certain skills. Source: Vitamintalent")
+
+_The UX spectrum shows a wide variety of profiles even within UX, depending on their strengths in certain skills. Source: Vitamintalent_
 
 ## 4. Design is a set of questions.
 
@@ -99,3 +109,7 @@ Some would argue that there is one sure-fire way to find the designer on a team 
 * What dependencies (other services, technical systems, laws and regulations, etc.) affect the experience?
 
 Questions are an interesting angle in defining design, as questions are often the tangible output of the typical problems design aims to solve – not to mention the core values and philosophies of a designer. Another great thing about questions is that they don’t require long training or special tools. They can be asked by anyone, not just the designer. So per this definition, design can still happen without it’s advocate, as long as the questions like these are being asked. Interesting.
+
+
+
+And there you have it – four definitions, each shedding a bit of light on what this “design” thing is. Four not enought? Check out even more bellow.
