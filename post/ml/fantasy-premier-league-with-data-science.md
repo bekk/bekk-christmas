@@ -68,7 +68,7 @@ The neural network has opted for a refreshing 5-2-3 formation, with large emphas
 
 ## Next steps
 
-These models have been built to show the potential value of adding machine learning capabilities to solve problems which require consideration of many factors. The models themselves are fairly basic, and there are several ways to improve them – perhaps some ensemble learning approach, or augmenting the input data. However, a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
+These models have been built to show the potential value of adding machine learning capabilities to solve problems which require consideration of many factors. The models themselves are fairly basic, and there are several ways to improve them – perhaps by augmenting the input data or through some ensamble learning approach. However, a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
 Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and for the Fantasy lovers among us, hopefully) a more rational approach.
 
