@@ -16,6 +16,8 @@ Picking the right Fantasy team with data science is no new subject<sup>1</sup>, 
 
 The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) is used to solve the LP problem of constructing a team of 11 players<sup>3</sup> fulfilling the [constraints](https://fantasy.premierleague.com/help/rules) given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
 
+## 1. Training the models
+
 ### Input data
 
 The models are trained using data provided by GitHub user [Vaastav Anand](https://github.com/vaastav/Fantasy-Premier-League), who publishes all Fantasy results and stats after each gameweek. The input parameteres for each individual player in any given round are:
@@ -24,7 +26,7 @@ The models are trained using data provided by GitHub user [Vaastav Anand](https:
 * Team (20 variables)
 * Opponent team (20 variables)
 * Home/away game (one variable)
-* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567)) (five variables)
+* Form the last 5 games (Fantasy's own [ICT index](https://www.premierleague.com/news/65567), normalized) (five variables)
 
 This results in 50 input variables in total, with actual Fantasy points achieved in each round as the dependent variable. All data from previous rounds are used in the training phase to predict a given round (i.e., predicting results in round `n`, the training sample contains data from rounds `n-1, n-2, ... , 1`). Predicting round 19, data from rounds 1 to 17 was used<sup>4</sup>.
 
@@ -32,11 +34,11 @@ This results in 50 input variables in total, with actual Fantasy points achieved
 
 The linear regression is set up with the assumed weakest team as baseline on the team variable, and the assumed strongest team as baseline on the opponent team variable. An ordinary least squares regression is performed. The neural net uses four layers: Input layer (50 neurons), two middle layers (50 and 30 neurons) and finally an output layer (one neuron). All layers use the relu activation function, except the output which uses a linear activation function. There is also added a [dropout layer](https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab) between the two middle layers with a dropout probability of 0.2. The model uses mean squared error as loss function and the [Adam](https://keras.io/optimizers/#adam) optimizer.
 
-### Predicting points
+## 2. Predicting points
 
-After fitting the model, it predicts points achieved by all the players in the out-of-sample round – in our case, round 19.
+After fitting the model, it predicts points achieved by all the Premier League players in the out-of-sample round – in our case, round 19. Injured or suspended players are not predicted.
 
-### Selecting the XI
+## 3. Selecting the XI
 
 und 19.
 
