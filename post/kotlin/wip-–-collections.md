@@ -75,7 +75,7 @@ println(bigCountries2) // [Sweden, Germany]
 
 Now let's look at the difference between sequences and lists. If a sequence operation returns another sequence, it’s an intermediate function. If it doesn’t return a sequence, it’s terminal. Sequences are lazy, so intermediate functions for sequences don’t do any calculations. All the calculations are added to the sequence, and they are not performed until a terminal operation is called. On a list, however, the intermediate function does the calculation and returns a new collection.
 
-If expand the example above with some print statements, we can see how the program executes:
+If we expand the example above with some print statements, we can see how the program executes:
 
 ```
 println("List:")
