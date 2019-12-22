@@ -63,7 +63,7 @@ Number of points achieved by the models have been compared with the average scor
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
 |:---:|:---:|
-| The Regressed Registas. Cost: £79.5m                            | The Neural Netters. Cost: £63.2m                          |
+| <b>The Regressed Registas.</b> Cost: £79.5m                            | <b>The Neural Netters.</b> Cost: £63.2m                          |
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were in fact the top three selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford makes Lundstram's teammates Fleck and Stevens favorable selections. Vardy and Maddison will hope to shorten the Liverpool lead on Boxing day, while Maupay needs to bounce back from a disappointing home performance against Sheffield United on Saturday. A slightly weaker opponent gives De Bruyne the edge as captain over Mohamed Salah.
 
