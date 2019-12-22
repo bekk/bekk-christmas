@@ -51,7 +51,7 @@ The models have been run to demonstrate their
 ### Gameweek 19 teams
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
-| -------------------------------------------- | -------------------------------------------- |
+|:---:|:---:|
 | Regression Team                               | Neural Net Team                              |
 
 ### Next steps
