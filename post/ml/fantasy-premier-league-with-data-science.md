@@ -56,7 +56,7 @@ Results achieved by the models have been compared with the average score of all 
 ### Gameweek 19 teams
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
-| --------------------------------------------- | -------------------------------------------- |
+|:---:|:---:|
 | Regression Team                               | Neural Net Team                              |
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were infact the top three selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford makes Lundstram's teammates Fleck and Stevens favorable selections. Vardy and Maddison will hope to shorten the Liverpool lead on Boxing day, while Maupay needs to bounce back from a disappointing home performance against Sheffield Utd. A slightly weaker opponent gives De Bruyne the edge as captain over Mohamed Salah.
