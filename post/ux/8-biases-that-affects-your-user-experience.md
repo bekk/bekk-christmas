@@ -43,6 +43,8 @@ Creating delight can be done in several ways. These websites show us the same pr
 
 ![Buying google home mini](/assets/googleux24b.png)
 
+![Buying Sony Headphones in two webshops](/assets/sonyexample.png)
+
 Apple Pay
 
 <iframe src="https://player.vimeo.com/video/381027133" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
