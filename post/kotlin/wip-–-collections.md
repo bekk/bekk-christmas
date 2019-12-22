@@ -28,7 +28,7 @@ mutableNumbersList.add("e")
 println(mutableNumbersList) // [a, b, c, d, e]
 ```
 
-Note that although the list is created as a constant with the `val` keyword, you can still add or remove objects. The reason for that is that write operations modify the same object reference.
+Note that although the list is created as a constant with the `val` keyword, you can still add or remove objects. The reason for that is that write operations modify the object and not the object reference.
 
 A `Sequence` offers the same functionality as `Iterable`, but implements another approach to multi-step collection processing.
 
