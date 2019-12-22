@@ -35,6 +35,17 @@ They do the same when jobs have been done. They could have shown a status messag
 
 ![Mailchimp sent animation](/assets/d21a7c71fe9cd8abdaa52c619ecb9362.gif)
 
+
+
+**Stores**\
+Store store store
+
+
+
+![Buying google home mini](/assets/googleux24.png)
+
+
+
 # Why bother making products delighful?
 
 # Challanges
