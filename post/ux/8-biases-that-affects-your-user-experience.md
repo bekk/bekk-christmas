@@ -79,7 +79,7 @@ In many cases, manual work has been automated. Before digitization, users contac
 
 ![Human-Computer Interaction](/assets/human-2.png)
 
-Functions that are typically lost are 
+Human functions that are typically lost; 
 
 * Correcting information, often without telling the users (like formatting errors) 
 * Adjust the amount of information or complexity, making it understandable to different users
@@ -92,7 +92,9 @@ Functions that are typically lost are
 
 While delight in UX cannot change what users experience outside of the services we create, we can make our systems more human with it.
 
-**Defining the usefulness of delightful UX**
+<br/>
+
+**Defining the usefulness of delightful UX**\
 When looking at successful products and services, they tend to be at the intersection of three lenses. They are feasible (it is possible to make), they are viable (it makes sense financially) and they are desirable (users will come and stay).
 
 ![Venn diagram of three aspects of products](/assets/venn.001.png)
