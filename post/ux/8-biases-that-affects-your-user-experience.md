@@ -16,7 +16,7 @@ authors:
 <br/>
 <br/>
 
-# What is a delightful UX?
+# What is delightful user experiences?
 
 Let's get an idea of the concept by looking at some examples.
 
