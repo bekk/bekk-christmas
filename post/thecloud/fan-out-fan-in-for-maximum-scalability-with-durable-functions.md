@@ -47,21 +47,21 @@ The fan-out/fan-in pattern is useful in scenarios where you have a root process 
 
 However, if you want to have control of your system, you probably want to keep track of when all processes have completed as well as the result of each child process, in other words fanning back in. Azure Durable Functions lets you do this using `Orchestrators`, `SubOrchestrators`, and `Activities`. In addition, you need some kind of `Trigger` function to get the fun started.
 
-In the following sections, I will show an example of creating a Lotto ticket generator using Azure Durable Functions. A Lotto ticket consists of 6 numbers.  This Lotto ticket generator takes a list of people which should get a Lotto ticket, and stores the Lotto tickets someplace safe. Our (somewhat contrived) example also pretends to use an external number generator service to simulate  real world challenges.
+In the following sections, I will show an example of creating a Lotto ticket generator using Azure Durable Functions. A Lotto ticket consists of 6 numbers.  This Lotto ticket generator takes a list of people who should get a Lotto ticket, and stores the Lotto tickets someplace safe. Our (somewhat contrived) example also pretends to use an external number generator service to simulate  real world challenges.
 
 The example uses `C#`, `Azure Functions 3`, and `Durable Functions 2`.
 
 ### Activities
 
-The activity function is where the actual work happens when using Durable Functions. An activity works the same way as a regular Azure Function, except that is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the activity function only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
+The activity function is where the actual work happens when using Durable Functions. An activity works the same way as a regular Azure Function, except that it is kicked off using an `[ActivityTrigger]` which can be any kind of object. Note that the activity function only may take one argument, so if you want to pass multiple arguments, you either need to create a complex type, or use [tuples](https://docs.microsoft.com/en-us/dotnet/csharp/tuples). The return type must be a `Task` containing the return value.
 
 ```csharp
 public class CreateNumberActivity
 {
     [FunctionName(nameof(CreateNumberActivity))]
-    public async Task<int> Run([ActivityTrigger] int index)
+    public async Task<int> Run([ActivityTrigger] int i) // i is not used
     {
-        return await GetNumberFromSomeService(index);
+        return await GetNumberFromSomeService();
     }
 }
 ```
@@ -72,7 +72,7 @@ When creating activity functions, it is important to be aware that they should b
 
 ### Sub-orchestrators
 
-The sub-orchestrator is responsible for kicking off child processes and returning the results to its parent. Sub-orchestrators may be chained to create multiple levels of fanning out, but in our example, we'll only use one sub-orchestrator.
+The sub-orchestrator is responsible for kicking off child processes and returning the results to its parent. Sub-orchestrators may be chained to create multiple levels of fan out, but in our example, we'll only use one sub-orchestrator.
 
 The sub-orchestrator has to take an `[OrchestrationTrigger]`, which must be of  the type `IDurableOrchestrationContext`. To get the input to the function, you call `context.GetInput<T>()`, where `T` can be any type. The return type, like activities, needs to be a `Task` containing the result.
 
@@ -131,7 +131,7 @@ public class CreateTicketsOrchestrator
 
 In this orchestrator, a list of ticket owners is provided, and the ticket generator sub-orchestrator is kicked off for each owner. When all tickets have been created, the orchestrator stores the tickets (probably using an activity), and the function completes.
 
-When running orchestrators (and sub-orchestrators), the process is paused when you have kicked off activities or other sub-orchestrators, so you don't need to worry about the 5 minute execution time limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. So you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
+When running orchestrators (and sub-orchestrators), the process is paused when you have kicked off activities or other sub-orchestrators, so you don't need to worry about the 5 minute execution time limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. The state of child activities and sub-orchestrators are stored so that they are not invoked multiple times. But you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
 
 ### Triggers
 
