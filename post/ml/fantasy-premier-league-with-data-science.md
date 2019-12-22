@@ -64,7 +64,7 @@ As we see, the regression is remarkably consistent, beating the average score wi
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were in fact the three most selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford supports the addition of Lundstram's teammates Fleck and Stevens. Vardy and Maddison will hope to shorten the Liverpool lead, while Maupay needs to bounce back from a disappointing home performance against Sheffield United on Saturday. A slightly weaker opponent is likely what gives De Bruyne the edge as captain over Mohamed Salah. The price of the team leaves a comfortable £20.5m for filling up the four spots on the sideline.
 
-The neural network has opted for a refreshing 5-2-3 formation, with large emphasis on Sheffield and Villa defenders. Doherty and Neves will face a tough task in Pep Guadiola's men on Thursday, while Christian Benteke is still waiting for his first goal of the 19/20 season. Trusted by the net with the captain's band, Abraham should have plenty of chances to reignite his old scoring form against the most conceding team of the Premier League season so far. Notably, all players but Martinelli have home matches, which could indicate a substantial preference for this by the model. Finally, despite boasting a rather speculative team, the model remains financially sober and leaves plenty of room in the budget for some decent benchwarmers.
+The neural network has opted for a refreshing 5-2-3 formation, with large emphasis on Sheffield and Villa defenders. Doherty and Neves will face a tough task in Pep Guadiola's men on Thursday, while Christian Benteke is still waiting for his first goal of the 19/20 season. Trusted with the captain's band, Abraham should have plenty of chances to reignite his old scoring form against the most conceding team of the Premier League season so far. Notably, all players but Martinelli have home matches, which could indicate a substantial preference for this by the model. Finally, despite boasting a rather speculative team, the model remains financially sober and leaves plenty of room in the budget for some decent benchwarmers.
 
 ## Next steps
 
@@ -72,8 +72,10 @@ These models have been built to show the potential value of adding machine learn
 
 Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and for the Fantasy lovers among us, hopefully) a more rational approach.
 
+
 ||
 | --------------------------------------------- |
+
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 
