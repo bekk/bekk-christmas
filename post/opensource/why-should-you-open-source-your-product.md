@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 23
 title: Why should you open source your product?
+image: >-
+  https://images.unsplash.com/photo-1524989899036-b1c54afba1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 ingress: 'Such a simple question. But does it have an easy answer? '
 authors:
   - Mats Byrkjeland
