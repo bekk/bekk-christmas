@@ -15,8 +15,6 @@ links:
 authors:
   - Tobias R. Pettrém
 ---
-![]()
-
 If you’re a below-average Fantasy Premier League performer and an above-average data science enthusiast, we have at least two things in common – and you’ve found exactly the right article!
 
 Picking the right Fantasy team with data science is no new subject<sup>1</sup>, but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
@@ -53,18 +51,15 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 Number of points achieved by the models have been compared with the average score of all Fantasy players in a given round<sup>3</sup>. The results from gameweek 13 to 17 are displayed in the table below:
 
+![Performance of models](/assets/models-performance.png "Performance of models gameweeks 13 - 17")
 
-|       | Regression | Neural Network | Average |
-|:----:|:----: |:----: |:----: |
-| GW 15 |     54     |       26       |    49   |
-| GW 16 |     69     |       89       |    54   |
-| GW 17 |     69     |       52       |    56   |
+As we see, the regression is considerably more consistent, beating the average score with at least 10 % each round. The neural network appears slighty more risk-seeking, resulting in extremely varying scores ranging from a staggering round 16 score of 89 points to an equivalently disastrous performance in the previous round.
 
 ### Gameweek 19 teams
 
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
-|:---:|:---:|
-| <b>The Regressed Registas.</b> Cost: £79.5m                            | <b>The Neural Netters.</b> Cost: £63.2m                          |
+| --------------------------------------------- | -------------------------------------------- |
+| <b>The Regressed Registas.</b> Cost: £79.5m   | <b>The Neural Netters.</b> Cost: £63.2m      |
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were in fact the top three selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford makes Lundstram's teammates Fleck and Stevens favorable selections. Vardy and Maddison will hope to shorten the Liverpool lead on Boxing day, while Maupay needs to bounce back from a disappointing home performance against Sheffield United on Saturday. A slightly weaker opponent gives De Bruyne the edge as captain over Mohamed Salah.
 
@@ -81,4 +76,3 @@ Modeling all possible variables influencing a player's performance in a given Pr
 <sup>2</sup>The GitHub data is usually published 2-3 days after the last game of the round (which was played yesterday, on the 22nd). Further, since the Liverpool and West Ham match was postponed, the form data would be incomplete.
 
 <sup>3</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
-
