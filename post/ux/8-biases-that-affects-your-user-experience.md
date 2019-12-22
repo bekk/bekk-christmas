@@ -12,8 +12,6 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
-
-
 <br/>\
 <br/>
 <br/>
@@ -27,17 +25,14 @@ Let's get an idea of the concept by looking at some examples.
 **Reacting on Facebook post**\
 Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem excessive, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
 
-
 ![Reacting on a facebook post](/assets/ezgif-7-eb52c18c430b.gif)
-
-
 
 **Sending emails via Mailchimp**\
 Mailchimp has mastered delight in their communication. When your startup has spent all its energy creating a campaign for growth hacking, you'll proof-read the email you're sending over and over. But you might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
 
 ![Mailchimp send animation](/assets/tumblr_ni78rfkazf1qea4hso1_500.gif)
 
-They could have shown "are you sure?" status message, but the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling.  It's telling users normal to be a bit stressed.
+They could have shown a "are you sure?" status message, but the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling.  It's telling users normal to be a bit stressed.
 
 When you have sent the emails, they do the same. They could have shown a status message labeled "emails sent". But they give us this delightful message instead:
 
@@ -58,8 +53,6 @@ Apple is experts at making delightful experiences, and Apple Pay is a great exam
 # Why bother making products delighful?
 
 When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In an agile work environment, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
-
-
 
 My focus shifted after I delved into the world of psychology and saw the effects of delight by the numbers.
 
