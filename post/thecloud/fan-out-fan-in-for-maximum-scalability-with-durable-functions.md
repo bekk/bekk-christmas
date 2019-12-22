@@ -131,7 +131,7 @@ public class CreateTicketsOrchestrator
 
 In this orchestrator, a list of ticket owners is provided, and the ticket generator sub-orchestrator is kicked off for each owner. When all tickets have been created, the orchestrator stores the tickets (probably using an activity), and the function completes.
 
-When running orchestrators (and sub-orchestrators), the process is paused when you have kicked off activities or other sub-orchestrators, so you don't need to worry about the 5 minute execution time limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. The state of child activities and sub-orchestrators are stored so that they are not invoked multiple times. But you need to make sure that the internals of the function are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
+When running orchestrators (and sub-orchestrators), the process is paused when you have kicked off activities or other sub-orchestrators, so you don't need to worry about the 5 minute execution time limit. However, each time a child process returns, the entire function is re-executed from the start to rebuild the local state. The state of child activities and sub-orchestrators are stored so that they are not invoked multiple times. But you need to make sure that the internals of the orchestrator are deterministic. In other words, calls to methods like `DateTime.Now` or `Guid.NewGuid()` must be avoided.
 
 ### Triggers
 
