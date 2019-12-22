@@ -10,12 +10,18 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
-![Image of buying Google Home at "Elektro importøren"](/assets/ux24_google_bad.png =250x)
+
+
+
+
+
 
 # What is a delightful UX?
 
 Let's get an idea of the concept, by looking at some examples.
 
+
+![Image of buying Google Home at "Elektro importøren"](/assets/ux24_google_bad.png =250x)
 ## Reacting on Facebook posts
 
 Do you see those small, delightful animations? Does the cute angry emoji, shaking its head, make you smile? It might seem superfluous, but it makes me want to react on posts — even if the post itself is not engaging.
