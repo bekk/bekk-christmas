@@ -19,7 +19,7 @@ If you’re a below-average Fantasy Premier League performer and an above-averag
 
 Picking the right Fantasy team with data science is no new subject,<sup>1</sup> but we thought we’d give it a go and compare two classic prediction models: linear regression and a basic neural network. We’ll train the models on historical data, evaluate their performance, and finally set up our ultimate team for the pinnacle of Premier League – Boxing Day⚽
 
-The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players fulfilling the constraints given by the Fantasy rules, maximizing number of expected points. Still hanging on? Let’s dive in!
+The process for both models is built on three steps. First, the models are trained to predict expected amount of Fantasy points achieved by each Premier League player in any round, based on a set of input data. Second, the models try to predict the points scored by each player in an out-of-sample round. Third, the simplex algorithm is used to solve the LP problem of constructing a team of 11 players fulfilling the constraints given by the Fantasy rules, maximizing the number of expected points. Still hanging on? Let’s dive in!
 
 ## 1. Training the models
 
