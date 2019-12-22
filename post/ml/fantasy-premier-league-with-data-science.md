@@ -48,8 +48,6 @@ The models have been run to demonstrate their
 
 ### Gameweek 19 teams
 
-<img src="/assets/reg_pred_gw19.png" width="50%">
-
 ![Fantasy Screenshot, Neural Network Team](/assets/nn_pred_gw19.png "Neural Netters F.C.")
 
 | [![Regression Team](/assets/reg_pred_gw19.png) | [![Neural net team](/assets/nn_pred_gw19.png) |
@@ -57,6 +55,8 @@ The models have been run to demonstrate their
 | Regression Team | Neural Net Team |
 
 ### Next steps
+
+This has been a brief 
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 
