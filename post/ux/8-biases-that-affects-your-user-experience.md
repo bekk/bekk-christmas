@@ -48,7 +48,7 @@ Creating delight can be done in several ways. These websites show us the same pr
 **Apple Pay**\
 Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience here:
 
-<iframe src="https://player.vimeo.com/video/381027133" width="760" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> 
+<iframe src="https://player.vimeo.com/video/381027133" width="760" height="300 !important" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> 
 
 
 
@@ -56,7 +56,7 @@ Apple is experts at making delightful experiences, and Apple Pay is a great exam
 
 # Why should experiences be delightful?
 
-By now, I hope you have an understanding of delight in the context of user experiences. But why should products and services be delightful? When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In agile work environments, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time to get there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
+By now, I hope you have an understanding of delight in the context of user experiences. But why should products and services be delightful? When I started doing UX work, I asked myself this constantly. Since then, I have worked in several agile product teams. In agile work environments, maximizing value creation is always at the top of your mind. While aesthetic and delightful experiences are something you aim for as a UX designer, you and your team need to spend a lot of time getting there. Time your team wants to spend making new products, creating new features, or fixing bugs — since it seems more effective for creating value.
 
 My focus shifted after I delved into the world of psychology.\
 <br/>
@@ -68,7 +68,35 @@ At the same time, our energy-hungry brain tries to preserve energy all the time.
 
 ![Human is not a computer](/assets/manwithnumbers.png)
 
-Okay. What does all this mean? Well. Humans make decisions based on their feelings, motivations, habits, and error-prone knowledge. People are not logical, like computers. The same person might end up with an entirely different choice, depending on whether they're hungry or not. If your app asks a user to rate it, the user might give it one star if they broke up with their loved one the same day. A lot of your users might consent to marketing-emails if you ask on a payday.
+Okay. What does all this mean? Well. Humans make decisions based on their feelings, motivations, habits, and error-prone knowledge. People are not logical, like computers. The same person might end up with an entirely different choice, depending on whether they're hungry or not. If your app asks a user to rate it, the user might give it one star if they broke up with their loved one the same day. A lot of your users might consent to marketing-emails if you ask on a payday. You cannot understand the actions of users by solely looking at their behavior in the context of the service itself.
+
+**Human behaviour and its implications in digital experiences**\
+A lot of digital experiences are entertaining at its core, like games or video services. Users are highly motived to use these services. But digization of both governmental and private functions, have created a slew of useful, but dull, tools and services.
+
+![Human-human interaction](/assets/human-1.png)
+
+In many cases, manual work has been automated. Before digitization, users contacted a person in order to use a service. Paying bills, ordering food, buying movie tickets, or canceling their subscriptions. Often, this interaction has been replaced by a form of some sort. The app or website usually only replaces the former workers' transactional function. Input from the user, output from the system. The human part of the system is lost. 
+
+![Human-Computer Interaction](/assets/human-2.png)
+
+
+
+Functions that are typically lost are 
+
+* Correcting information, often without telling the users (like formatting errors) 
+* Adjust the amount of information or complexity, making it understandable to different users
+* Motivate users, when they lack the motivation to finish a transaction or task
+* Making the customer feel safe or feel like choices are made correctly
+* Make users feel heard and seen
+* Noticing users emotions and changing behavior to fit their emotions
+* Help users navigate when they are lost
+* Help users self-reflect
+
+While delight in UX cannot change what users experience outside of the services we create, we can make our systems more human with it.
+
+
+
+
 
 # Challanges
 
