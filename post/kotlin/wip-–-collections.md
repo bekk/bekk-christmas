@@ -105,7 +105,7 @@ val bigCountries2 = countries
     .toList()
 
 println(bigCountries2) // [Sweden, Germany]
-``
+```
 
 The output:
 ```
@@ -129,3 +129,4 @@ Filters the population: Germany
 Maps the name: Germany
 [Sweden, Germany]
 ```
+We can see that 
