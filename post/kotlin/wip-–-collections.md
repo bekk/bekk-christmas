@@ -73,7 +73,7 @@ val bigCountries2 = countries
 println(bigCountries2) // [Sweden, Germany]
 ```
 
-Now let's look at the difference between sequences and lists. If a sequence operation returns another sequence, it’s an intermediate function. If it doesn’t return a sequence, it’s terminal. Sequences are lazy, so intermediate functions for sequences don’t do any calculations. All the calculations are added to the sequence, and they are not performed until a terminal operation is called. On a list, however, the intermediate function does the calculation and returns a new collection.
+Now let's look at the difference between sequences and lists. If a sequence operation returns another sequence, it’s an intermediate function. If it doesn’t return a sequence, it’s terminal. Sequences are lazy, so intermediate functions for sequences don’t do any calculations. All the calculations are added to the sequence, and they are not executed until a terminal operation is called. On a list, however, the intermediate function does the calculation and returns a new collection.
 
 If we expand the example above with some print statements, we can see how the program executes:
 
@@ -129,4 +129,53 @@ Filters the population: Germany
 Maps the name: Germany
 [Sweden, Germany]
 ```
-We can see that 
+We can see that the `map()` function is executed immediately after `filter()` for Sweden and Germany when the terminal function `toList()` is called.
+
+In this next example I want to get the three first numbers bigger than 10 in a list. First I can execute the functions directly on the list:
+```
+val numbers = listOf(30, 22, 1, 11, 19, 5, 1)
+
+val bigNumbers = numbers
+    .filter {
+        println("Filters $it")
+        it > 10
+     }
+    .take(3)
+
+println(bigNumbers)
+```
+As you can see on the output, all the filter functions are executed before we take the three first numbers:
+```
+Filters 30
+Filters 22
+Filters 1
+Filters 11
+Filters 19
+Filters 5
+Filters 1
+[30, 22, 11]
+```
+Let's try the same on the sequence:
+```
+val bigNumbers = numbers
+    .asSequence()
+    .filter {
+        println("Filters $it")
+        it > 10
+    }
+    .take(3)
+    .toList()
+
+println(bigNumbers)
+```
+The output:
+```
+Filters 30
+Filters 22
+Filters 1
+Filters 11
+[30, 22, 11]
+```
+Because the intermediate function `filter()` isn't called before the terminal function `toList()` is called, the compiler knows that only the first three numbers bigger than 10 are included, and as a result the `filter()` function is only executed four times.
+
+If you are dealing with big data sets, or doing lots of processing on the data set, it might be smart to consider sequences instead of a normal list.
