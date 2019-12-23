@@ -16,9 +16,9 @@ authors:
 
 # What is delight, in the context of user experiences?
 
-For many working with digital services, it1s the polish that seems unecessary. Money out the window. Even UX designers usually don't foucs on this part of design. "I'm not here to make it pretty", you'll hear UX designers say. But for professionals like visual designers, it's essential to their craft. It's what seperate great work from good work.
+For many working with digital services, it's the polish that seems unnecessary. Money out the window. Even UX designers usually don’t focus on this part of design. “I’m not here to make it pretty,” you’ll hear UX designers say. But for professionals like visual designers, it’s essential to their craft. It’s what separates great work from good work.
 
-It's challenging to describe with words, so let's get an idea of the concept by looking at some examples.
+It’s challenging to describe with words, so let’s get an idea of the concept by looking at some examples.
 
 <br/>
 
@@ -32,9 +32,9 @@ Mailchimp has mastered delight in their communication. When your startup has spe
 
 ![Mailchimp send animation](/assets/mailchimpani.gif)
 
-They could have shown a "are you sure?" status message, but the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling.  It's telling users normal to be a bit stressed.
+They could have shown us a message saying, “are you sure?”. But the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling. It’s telling users normal to be a bit stressed.
 
-When you have sent the emails, they do the same. They could have shown a status message labeled "emails sent". But they give us this delightful message instead:
+When you have sent the emails, they do something similar. Instead of a system message telling us “emails has been sent”, they give us this delightful message:
 
 ![Mailchimp sent animation](/assets/d21a7c71fe9cd8abdaa52c619ecb9362.gif)
 
