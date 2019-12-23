@@ -44,7 +44,7 @@ Perhaps the most straight-forward way of describing design would be the way it w
 Most design schools have a focus on learning design by doing design. It is a hands-on major where students learn by model projects requiring them frame the challenge, ideate and present designs, then receive and give feedback through “Critiques”.
 
 **Methodology**\
-Techniques for generating and exploring numerous concepts, then methodically narrowing down to the best solution. Often called the "double diamond".
+Techniques for generating and exploring numerous concepts, then methodically narrowing down to the best solution.
 
 **Insight, research and co-creation**\
 Designers are taught that the answer always lies with the user. By learning interview techniques, co-creation, facilitation and mapping techniques, designers grow their empathy for users and train to move past their own assumptions and biases.
