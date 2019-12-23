@@ -57,10 +57,10 @@ To examine the strength of our models, we let them predict already played rounds
 As we see, the regression is remarkably consistent, beating the average score with at least 10 % each round. The neural network appears slighty more risk-seeking, resulting in highly varying scores ranging from a staggering round 16 score of 89 points to an equivalently disastrous performance in the previous round. However, both models outperform the average player over the course of five rounds. Let's have a look at their bets for Boxing Day!
 
 ## Gameweek 19 predictions
+
 | ![Regression Team](/assets/reg_pred_gw19.png) | ![Neural net team](/assets/nn_pred_gw19.png) |
 | --------------------------------------------- | -------------------------------------------- |
-| <b>The Regressed Registas.</b> Cost: £79.5m | <b>The Neural Netters.</b> Cost: £63.2m |
-
+| <b>The Regressed Registas.</b> Cost: £79.5m   | <b>The Neural Netters.</b> Cost: £63.2m      |
 
 As we see, the two teams are fundamentally different. The regression settles on a conventional 3-5-2 formation, with familiar faces such as Vardy, Lundstram and De Bruyne, which were in fact the three most selected players in GW 18. A great performance against Aston Villa in round 17 paired with a supposedly managable home match against Watford supports the addition of Lundstram's teammates Fleck and Stevens. Vardy and Maddison will hope to shorten the Liverpool lead, while Maupay needs to bounce back from a disappointing home performance against Sheffield United on Saturday. A slightly weaker opponent is likely what gives De Bruyne the edge as captain over Mohamed Salah. The price of the team leaves a comfortable £20.5m for filling up the four spots on the sideline.
 
@@ -72,10 +72,8 @@ These models have been built to show the potential value of adding machine learn
 
 Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering seemingly indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and for the Fantasy lovers among us, hopefully) a more rational approach.
 
-
-||
-| --------------------------------------------- |
-
+|     |
+| --- |
 
 <sup>1</sup>Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
 
