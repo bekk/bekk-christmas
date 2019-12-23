@@ -80,7 +80,7 @@ These models have been built to show the potential value of adding machine learn
 
 Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering seemingly indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably a more rational approach.
 
-Enjoy Boxing Day, and may the second half of the Fantasy Premier League season treat you better than the first!
+Enjoy Boxing Day, and may the second half of the Fantasy Premier League season treat you well!
 
 |     |
 | --- |
