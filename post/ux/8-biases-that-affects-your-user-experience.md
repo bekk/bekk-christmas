@@ -30,7 +30,7 @@ Do you see those small, delightful animations? Does the cute angry emoji shaking
 **Sending emails via Mailchimp**\
 Mailchimp has mastered delight in their communication. When your startup has spent all its energy creating a campaign for growth hacking, you'll proof-read the email you're sending over and over. But you might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
 
-![Mailchimp send animation](/assets/tumblr_ni78rfkazf1qea4hso1_500.gif)
+![Mailchimp send animation](/assets/mailchimpani.gif)
 
 They could have shown a "are you sure?" status message, but the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling.  It's telling users normal to be a bit stressed.
 
