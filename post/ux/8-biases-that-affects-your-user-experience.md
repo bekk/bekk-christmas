@@ -226,14 +226,18 @@ If you can inform users using visualizations and copy, they can process informat
 
 An example is this Norwegian webshop, Komplett.no. The combination of both icons and copy is what makes their navigation fast to use:
 
-![Komplett.no navigation bar]()
+![Komplett.no navigation bar](/assets/ezgif-7-99e8de8ca794.gif)
 
 <br/>
 
 **Spatial animations and transitions**\
 The brain maps the physical world. The mental map contains landmarks and updates on our current position, speed, and direction. Experiments on mice show that their minds do the same with the digital world. And likely, this is the same for humans.
 
+![We map space mentally](/assets/spatial1.png)
+
 If humans create mental maps of digital experiences, we could help users navigate and create navigation models — with spatial transitions.
+
+![We map digitial experiences as well](/assets/spatial2.png)
 
 These animations can be over the top sometimes. On larger screens, they can be lengthy, demanding on the hardware, and distracting for users. But used carefully, we can really help our users navigate our UIs. Since our brain looks for landmarks to effectively navigate, we should be careful about hiding or changing UI elements without any interaction from the user. Let's look at some examples for spatial transitions:
 
