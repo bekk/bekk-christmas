@@ -94,7 +94,7 @@ While delight in UX cannot change what users experience outside of the services 
 
 <br/>
 
-**Defining the usefulness of delightful UX**\
+**Defining delight**\
 When looking at successful products and services, they tend to be at the intersection of three lenses. They are _feasible_; it is possible to make. They are _viable_; it makes sense financially. They are _desirable_; users will come and stay.
 
 ![Venn diagram of three aspects of products](/assets/venn.001.png)
@@ -107,8 +107,6 @@ Delight can be defined as the qualities that make useful services or products, s
 
 <br/>
 
-
-
 # Challenges you'll meet as a Delight Champion
 
 If you have come this far, I hope you'll soon want to champion delight in your organization. But new ideas alway meet some resistance. These are some of the typical challenges that you'll encounter when trying to create delightful digital experiences. 
@@ -120,12 +118,8 @@ Since you won't be able to describe the delightful aspects upfront, you need to 
 
 ![User Story](/assets/user-story.png)
 
-
-
 **Definition of Done**\
 In agile teams, you often want to have a definition of when something is done. This way, team members can more easily work independently. But since delightful UX is challenging to describe, it's almost impossible to define when it's good enough. A digital service can have 100% conversion rates, zero bugs, and be in production (in the hands of the users). And still, it might not be delightful.
-
-
 
 ![Definition of done](/assets/dod.png)
 
@@ -140,11 +134,9 @@ Yup. Another tricky one. Measuring the impact of something fuzzy is a challenge.
 ![Measuring impact is diifcult](/assets/measure.png)
 
 **Return of investment**\
-The business case of delight is challenging. When digitizing manual work, you can often predict a reduction in manual labor — the new self-service or feature will reduce wages or make customer handling more effective. But the challenges mentioned above makes any prediction of the return of investment difficult. To win over your ROI-people, you can show them the effects of optimization. Adding delight to an existing service or feature can radically change conversion rates or engagement. It can be the little push of motivation users need to interact with your product.
+The business case of delight is challenging. When digitizing manual work, you can often predict a reduction in manual labor — the new self-service or feature can reduce the number of customer service workers needed per customer. But the challenges mentioned above makes any prediction of the return of investment difficult. To win over your ROI-people, you can show them the effects of optimization. Adding delight to an existing service or feature can radically change conversion rates or engagement. It can be the little push of motivation users need to interact with your product.
 
 ![ROI](/assets/roi.png)
-
-
 
 <br/>
 
@@ -170,29 +162,19 @@ When we create delightful experiences, we can help our brain with its perceptive
 
 Micro interaction animations
 
-
-
 Reducing change blindness
-
-
 
 White space and introduction animations
 
 Reducing cognitive load
 
-
-
 Visual representations of information
 
 Dual coding theory
 
-
-
 Transitional animations
 
 Spacial mental models
-
-
 
 Summary
 
