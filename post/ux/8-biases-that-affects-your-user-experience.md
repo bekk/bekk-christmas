@@ -170,7 +170,15 @@ When we create delightful experiences, we can help our brain with its perceptive
 
 We now have enough knowledge to get our hands dirty. The fun part. Let's look at four examples of techniques we can use to make our experiences more delightful. Many of these examples are from a Norweigan insurance company, Gjensidige.
 
-**Micro-interaction animations**\
+
+
+<br/>
+
+**Micro-interaction animations**
+
+![Mailchimp form]()
+
+****\
 In this example, the create a new account form at Mailchimp, some information only appears in context. The small animation in this micro-interaction is more crucial than you might think.
 
 We know that our perception filters information, sometimes never reaching our consciousness. Our visual systems can hold information in about 200-400 milliseconds. If we look at a UI on a screen, fixate our eyes on a button on the right side — then look at some text on the left side. Our visual memory regarding the button is soon lost, and our eyes get minimal stimuli from the peripheral vision. We still see the button in our mind, but it is now strictly simulated by our brain. If small changes happen to the button — like the text changing, we will be blind to it. We'll experience change blindness. 
@@ -179,20 +187,34 @@ When we change the information in our UI, we need to be aware of how we can redu
 
 Here are some examples of how these subtle animations can be implemented in a UI:
 
+![Micro-interactions 1]()
+
+![Micro-interactions 2]()
+
 When users interact with your UI, and the information is not changing, you can still use subtle animations as feedback for the user:
+
+![Micro-interactions 3]()
 
 **White space and introduction animations**\
 When we are stressed, like filling in a web form for the first time or buying a train ticket while running to the station, our brains spend a lot of their resources filtering out noise. We are experiencing a high cognitive load. In these situations, our mind is not able to simulate as much of our environment as usual. The useful Field of View (FOV) is reduced. We experience it as tunnel vision. This effects user experiences significantly; users are not able to consume the information presented — and can have difficulties navigating UIs.
 
 Making experiences more delightful can reduce cognitive loads of our users. A tactic is spreading the amount of information in time and space.
 
-If you look at this form (in Norweigan), there's actually only one input field. But the users are exposed to a lot of information, helpful tips — increasing cognitive load — and ironically make the form more difficult to complete. When you focus on the input field, your brain tries hard to filter out nearby information — making you blind to nearby information you might need.
+If you look at this form (in Norweigan), there's actually only one input field. But the users are exposed to a lot of information, helpful tips — increasing cognitive load — and ironically make the form more difficult to complete. When you focus on the input field, your brain tries hard to filter out nearby information — making you blind to nearby information you might need:
+
+![Gjensidige form]()
 
 If we introduce a lot of white space, we can reduce the cognitive load. Like NAV has done here:
+
+![web form at NAV]()
 
 Another tactic is presenting information over time. Using subtle animations to show one and one UI element as the user scrolls the UI, loading content bit by bit — or going all in presenting information through movies and animations.
 
 A way to expose information bit by bit is loading content with skeleton loaders. Adding more and more details over time. You'll find this all over in feed-based applications such as Instagram and Twitter. This is how we did it, at Gjensidige:
+
+![Skeleton loader 1]()
+
+![Skeleton loader 2]()
 
 <br/>
 
@@ -204,6 +226,8 @@ If you can inform users using visualizations and copy, they can process informat
 
 An example is this Norwegian webshop, Komplett.no. The combination of both icons and copy is what makes their navigation fast to use:
 
+![Komplett.no navigation bar]()
+
 <br/>
 
 **Spatial animations and transitions**\
@@ -211,15 +235,23 @@ The brain maps the physical world. The mental map contains landmarks and updates
 
 If humans create mental maps of digital experiences, we could help users navigate and create navigation models — with spatial transitions.
 
-These animations can be over the top sometimes. On larger screens, they can be lengthy, demanding on the hardware, and distracting for users. But used carefully, we can really help our users navigate our UIs. 
+These animations can be over the top sometimes. On larger screens, they can be lengthy, demanding on the hardware, and distracting for users. But used carefully, we can really help our users navigate our UIs. Since our brain looks for landmarks to effectively navigate, we should be careful about hiding or changing UI elements without any interaction from the user. Let's look at some examples for spatial transitions:
 
 Settings on iPhones, creating a feeling of two-dimensional space:
 
+![Transisitions in the iOS Settings App]()
+
 Google maps, animating zoom to show users where they ended up:
+
+![Zooming with google maps]()
 
 A webshop, Elkjøp, jumping to the right place on the page with no animation:
 
+![Navigation on elkjop.no](/assets/ezgif-7-89bd64362c16.gif)
+
 The same type of interaction on Klarna's website, where the animation clearly helps us understand where we have navigated from and to:
+
+![Klarna's website](/assets/ezgif-7-25685990acdf.gif)
 
 <br/>
 
