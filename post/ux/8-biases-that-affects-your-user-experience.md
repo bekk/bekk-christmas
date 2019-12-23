@@ -8,6 +8,16 @@ ingress: >-
   People love delightful digital experiences. It can make the dullest of tasks —
   an exciting experience. Like filling in forms and paying for groceries. So why
   aren't every digital experience delightful?
+links:
+  - title: Theory of User Delight — NN Group
+    url: 'https://www.nngroup.com/articles/theory-user-delight/'
+  - title: Deep Delight
+    url: 'https://uxmastery.com/formula-delight/'
+  - title: Minimum Lovable Products
+    url: >-
+      https://uxdesign.cc/surface-delight-wont-help-you-build-better-products-955be624927a
+  - title: Dangers of Delight
+    url: 'https://uxdesign.cc/the-dangers-of-delightful-design-bb5834a1b684'
 authors:
   - Martin Skarbø Sangolt
 ---
