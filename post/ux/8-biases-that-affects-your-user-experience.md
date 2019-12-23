@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 24
-title: The business impact of delightful experiences
+title: The importance of delight in experiences
 image: >-
   https://previews.dropbox.com/p/thumb/AAq4lkkfZje4x7z10xBaN1OK3m5CamwXxY0mhAO3hRXk33hPj_JBlLWpvKgKMemi6y5cu7-t8_nxFsWgstjEQ0E8ZuJT7hNQjQK6xCVTDNXhGNiRWQw25mMFmoU0emfPraivhTU5KaIH5K8tgfrwRNBZiOKQqnyAku66Ee1hF7bwVFTffXQSLWaV1OFMS3akac31n86Fo8NPsHGgxI0ShDYrM_F-5HKrEqpxRX_Astfebcds6e5qxXVyql2a95nPNq0RxBD5qva1bwjtB9U0MFJpClKm81Etx5caSrmYuHCp59TmC4lnqDyujBg4cYUinu9YwvzRV1LbH5xURCCnUizK/p.png
 ingress: >-
@@ -176,7 +176,7 @@ We now have enough knowledge to get our hands dirty. The fun part. Let's look at
 
 **Micro-interaction animations**
 
-![Mailchimp form]()
+![Mailchimp form](/assets/ezgif-7-7355ef9592a6.gif)
 
 ****\
 In this example, the create a new account form at Mailchimp, some information only appears in context. The small animation in this micro-interaction is more crucial than you might think.
