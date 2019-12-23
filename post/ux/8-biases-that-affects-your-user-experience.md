@@ -16,7 +16,7 @@ authors:
 
 # What is delight, in the context of user experiences?
 
-For many working with digital services, its the polish that seems unecessary. Money out the window. Even UX designers usually don't foucs on this part of design. "I'm not here to make it pretty", you'll hear UX designers say. But for professionals like visual designers, it's essential to their craft. It's what seperate great work from good work.
+For many working with digital services, it1s the polish that seems unecessary. Money out the window. Even UX designers usually don't foucs on this part of design. "I'm not here to make it pretty", you'll hear UX designers say. But for professionals like visual designers, it's essential to their craft. It's what seperate great work from good work.
 
 It's challenging to describe with words, so let's get an idea of the concept by looking at some examples.
 
