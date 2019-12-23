@@ -2,15 +2,28 @@
 calendar: kotlin
 post_year: 2019
 post_day: 24
-title: WIP - Happy holidays and thanks for this year!
+title: Happy holidays and thanks for this year!
 image: 'https://i.imgur.com/8SH68fp.png'
 ingress: >-
   It's the 24th of December and a visit from Santa is right around the corner.
   The reindeer are eager and his sleigh is ready. He has determined who is
-  naughty and who is nice. Perhaps by using [extension
-  functions](https://kotlin.christmas/2019/9).    
+  naughty and who is nice.    
 description: ''
+authors:
+  - Vegard Veiset
 ---
-We may suspect that Santa's tech stack not always is the most up to date. Perhaps he used to run a pure Java-application, but after reading this calendar he decided to try to add some Kotlin, [just like Øyvind](https://kotlin.christmas/2019/20). 
+We’ve covered a lot over the last twenty-four days! Twenty-four articles by thirteen authors. Yrjan kicked it of with [getting started with Kotlin](https://kotlin.christmas/2019/1) and then we the articles continued in fast succession.  It's time for a recap!
 
-WIP
+We’ve looked at some of the language features Kotlin offers. Einar explained [null safety](https://kotlin.christmas/2019/2) and how to avoid `NullPointerExceptions`, Herman showed us how to use [data classes](https://kotlin.christmas/2019/10), and Øyvind told us [when](https://kotlin.christmas/2019/2) to when. We've looked at cute pictures of seals and Henrik wrote about [sealed classes](https://kotlin.christmas/2019/5), Yrjan extended our knowledge about [extension functions](https://kotlin.christmas/2019/9), Sondre told us about [named and default arguments](https://kotlin.christmas/2019/19), and Vegard about [lambdas](https://kotlin.christmas/2019/18)!
+
+We’ve also looked at some of the more advanced features of Kotlin. Jørund explored the [in’s and out’s](https://kotlin.christmas/2019/22) of Kotlin, Øyvind explained the difference between [lists and sequences](https://kotlin.christmas/2019/23), we’ve looked at [receivers](https://kotlin.christmas/2019/21), and Thomas explained when to use the [reified](https://kotlin.christmas/2019/15) and [inline](https://kotlin.christmas/2019/16) keywords.
+
+Vetle wrote a three part series about coroutines. An [introduction](https://kotlin.christmas/2019/12), looking in to [dispatchers](https://kotlin.christmas/2019/13), and looking at [channels and flows](https://kotlin.christmas/2019/14). 
+
+We've talked about how to use Kotlin for various things. Øyvind shared his experiences with [going from Java to Kotlin](https://kotlin.christmas/2019/20). Vegard gave us an introduction on how to [make games in Kotlin](https://kotlin.christmas/2019/11), Thomas talked about anti-bikeshedding and how to use [Klint](https://kotlin.christmas/2019/8), and Fedrink wrote an in-depth guide on how to use [typesafe error handling](https://kotlin.christmas/2019/17). We also covered KotlinConf. What an amazing conference. We covered what happened [last year](https://kotlin.christmas/2019/4), the [first day](https://kotlin.christmas/2019/6) and the [second day](https://kotlin.christmas/2019/7) of this years KotlinConf.
+
+
+That's all from us this year, and thank you for reading. Happy holidays and who knows, maybe we'll see you again next year!
+
+
+
