@@ -240,11 +240,11 @@ These animations can be over the top sometimes. On larger screens, they can be l
 
 Settings on iPhones, creating a feeling of two-dimensional space:
 
-![Transisitions in the iOS Settings App]()
+![Transisitions in the iOS Settings App](/assets/ezgif-7-5e07fd096abc.gif)
 
 Google maps, animating zoom to show users where they ended up:
 
-![Zooming with google maps]()
+![Zooming with google maps](/assets/ezgif-7-a3b928958fbb.gif)
 
 A webshop, Elkjøp, jumping to the right place on the page with no animation:
 
