@@ -79,16 +79,16 @@ In many cases, manual work has been automated. Before digitization, users contac
 
 ![Human-Computer Interaction](/assets/human-2.png)
 
-Human functions that are typically lost:
+Human functions that typically get lost:
 
-* Correcting information, often without telling the users (like formatting errors) 
-* Adjust the amount of information or complexity, making it understandable to different users
-* Motivate users, when they lack the motivation to finish a transaction or task
+* Correcting information, often without telling the users
+* Adjusting the amount of information or complexity, making it understandable to different users
+* Motivating users, when they lack the motivation to finish a transaction or task
 * Making the customer feel safe or feel like choices are made correctly
-* Make users feel heard and seen
+* Making users feel heard and seen
 * Noticing users emotions and changing behavior to fit their emotions
-* Help users navigate when they are lost
-* Help users self-reflect
+* Helping users navigate when they are lost
+* Helping users self-reflect
 
 While delight in UX cannot change what users experience outside of the services we create, we can make our systems more human with it.
 
@@ -202,34 +202,21 @@ Summary
 
 # Where should you start?
 
-You can start by going through this checklist:
+Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information?" or "Would they ask about their input like this?". 
 
-1. Is the feature/product/service useful? Does it solve a problem for the user?
-2. Do you need input from the user? Why is the service not automated, without any need for user interaction?
-3. Are users able to interact with it? Do they understand it?
-4. Do users want to use it? Are they motivated?
+You can even pair up with a person in your team, and go through the experience you're creating - as if it was a dialog. Does it feel natural? Can you make changes, so it feels even more human? This can be a great start to create more delightful experiences.
 
-If you answer "no" to questions in steps 1, 2, or 3 — creating something delightful might be a waste of time or resources. But if your users lack the motivation to complete tasks or engaging with your service, adding some delight can have a significant impact.
-
-\
-**Think of your system as if it was a human.**\
-Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information, or ask about their input?" can be a great start to humanize your experiences.
-
-If you like even more theory in your toolset, I would recommend looking at work from Colin Ware, such as "Information Visualization, perception for design."
-
-
+If you need more theory to argue for making delightful UX, I would recommend looking at literature from Colin Ware, such as _Information Visualization: Perception for design._
 
 <br/>
 
 # But wait, what about business impact?
 
+Some of my examples in this article have been from my work at Gjensidige Insurance. When looking at the numbers,  especially when we have optimized existing experiences with delightfulness in mind, we saw some remarkable results.
 
+When we optimized some of their forms without adding any new features but creating a smoother, more engaging experience — conversation rates jumped, some as high as 400%. Creating massive business impact. The end result is still very functional, but is a delight to use:
 
-Some of my examples in this article have been from my work at Gjensidige Insurance. When looking at the numbers,  especially when we have optimized existing experiences with delightfulness in mind, we have seen some remarkable results.
-
-When we optimized some of their forms without adding any new features but creating a smoother, more engaging experience — conversation rates jumped, from 100-400% better rates. Creating massive business impact. The end result is still very functional, but is a delight to use:
-
-Thanks!
+Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products.
 
 \--\
-Illustrations by me, Images/videos are screenrecordings from Mailchimp, Apple, Hifi-klubbben, Proshop, Elektroimportøren, Google, Facebook.
+Illustrations by me. Images and gifs are screenrecordings from Mailchimp, Apple, Hifi klubbben, Proshop, Elektroimportøren, Google, Facebook.
