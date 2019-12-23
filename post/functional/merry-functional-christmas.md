@@ -53,13 +53,13 @@ Length: 60 minutes
 
 > Composition is a fundamental principle of functional programming, but how is it different from an object-oriented approach, and how do you use it in practice? In this talk for beginners, we'll start by going over the basic concepts of functional programming, and then look at some different ways that composition can be used to build large things from small things. After that, we'll see how composition is used in practice, beginning with a simple FizzBuzz example, and ending with a complete (object-free!) web application.
 
-## Making Impossible States Impossible – Richard Feldman
+## Why Isn't Functional Programming the Norm? – Richard Feldman
 
-Link: [youtu.be/IcgmSRJHu_8](https://youtu.be/IcgmSRJHu_8)
+Link: [youtu.be/QyJZzq0v7Z4](https://youtu.be/QyJZzq0v7Z4)
 
 Length: 25 minutes
 
-> Among the most time-consuming bugs to track down are the ones where we look at our application state and say "this shouldn’t be possible." We can use Elm’s compiler to rule out many of these bugs in the first place—but only if we design our Models using the right techniques! This talk explores how.
+> Richard Feldman explores the reason why functional programming hasn’t taken over despite its advantages.
 
 ## Functional Composition – Chris Ford
 
@@ -68,3 +68,11 @@ Link: [youtu.be/jyNqHsN3pEc](https://youtu.be/jyNqHsN3pEc)
 Length: 40 minutes
 
 > Chris Ford demonstrates that music theory can be delightfully represented as code. He shows how to make music starting with the basic building block of sound, the sine wave, and gradually accumulates abstractions culminating in a canon by Johann Sebastian Bach. Examples will be live-coded in Clojure.
+
+## Communicating in Types – Kris Jenkins
+
+Link: [youtu.be/R2afqbzWDiU](https://youtu.be/R2afqbzWDiU)
+
+Length: 40 minutes
+
+> Modern type systems have come a long way from the days of C and Java. Far from being nit-pickers that berate us for making mistakes, type systems like the ones found in Haskell, PureScript and Elm form a language in themselves. A language for expressing high-level ideas about our software to our colleagues and to the computer. A design language. In this talk, we'll take a look at the way the right kind of type signatures let us talk about software. We'll survey how to state our assumptions about the domain we're coding in and how each part fits together. We'll show how it can highlight problems, and surface opportunities for reuse. And most importantly, we'll see how types can help you communicate to your coworkers, and to future maintainers, with little effort. You've probably heard the phrase, "programs are meant to be read by humans and only incidentally for computers to execute." Come and see how a modern type system is about communicating ideas to humans, and only incidentally about proving correctness.
