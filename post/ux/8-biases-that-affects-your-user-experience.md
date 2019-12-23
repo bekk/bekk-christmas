@@ -149,7 +149,7 @@ How our brain handles raw data from our internal and external stimuli, filters i
 
 ![Internal perception](/assets/intero.png)
 
-Internal sensing is called interoception. Our brain gets data from internal organs, our immune system, bones, and more. Sometimes this data is presented to us consciously, like your heart racing or being hungry. But usually, we only get the summarized form of our body state, sometimes referred to as affect. Our affect has two main parameters; valence (pleasant/unpleasant) and arousal (activated/deactivated). In practice, we could call affect basic emotions. It tells us whether we are stressed, bored, relaxed, or excited.
+Internal sensing is called interoception. Our brain gets data from internal organs, our immune system, bones, and more. Sometimes this data is presented to us consciously, like feeling your heart racing or being hungry. But usually, we only get the summarized form of our body state, sometimes referred to as _affect_. Our _affect_ has two main parameters; valence (pleasant/unpleasant) and arousal (activated/deactivated). In practice, we could call _affect_ basic emotions. It tells us whether we are stressed, bored, relaxed, or excited.
 
 ![External perception](/assets/perception.png)
 
@@ -194,15 +194,41 @@ Another tactic is presenting information over time. Using subtle animations to s
 
 A way to expose information bit by bit is loading content with skeleton loaders. Adding more and more details over time. You'll find this all over in feed-based applications such as Instagram and Twitter. This is how we did it, at Gjensidige:
 
-Visual representations of information
+<br/>
 
-Dual coding theory
+**Visual representations of information**
 
-Transitional animations
+Perceiving information takes time. But our brains can parallel process information if the type of input is both visual and verbal. This is sometimes referred to as the Dual coding theory of working memory.
 
-Spacial mental models
+If you can inform users using visualizations and copy, they can process information much faster. Your team might not have the resources to create elaborate illustrations or infographics, but you can make interfaces more efficient and delightful by introducing icons in your navigation.
 
-Summary
+An example is this Norwegian webshop, Komplett.no. The combination of both icons and copy is what makes their navigation fast to use:
+
+<br/>
+
+**Spatial animations and transitions**\
+The brain maps the physical world. The mental map contains landmarks and updates on our current position, speed, and direction. Experiments on mice show that their minds do the same with the digital world. And likely, this is the same for humans.
+
+If humans create mental maps of digital experiences, we could help users navigate and create navigation models — with spatial transitions.
+
+These animations can be over the top sometimes. On larger screens, they can be lengthy, demanding on the hardware, and distracting for users. But used carefully, we can really help our users navigate our UIs. 
+
+Settings on iPhones, creating a feeling of two-dimensional space:
+
+Google maps, animating zoom to show users where they ended up:
+
+A webshop, Elkjøp, jumping to the right place on the page with no animation:
+
+The same type of interaction on Klarna's website, where the animation clearly helps us understand where we have navigated from and to:
+
+<br/>
+
+**What the examples have shown us about delight:**
+
+* Reduce change blindness by making changes less subtle, e.g., using small animations.
+* Reduce cognitive load by using white space or presenting information over time.
+* Use visuals to make users comprehend information faster.
+* Use spatial transitions to help users navigate faster.
 
 <br/>
 
@@ -230,5 +256,8 @@ When we optimized some of their forms without adding any new features but creati
 
 Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products — impacting your business.
 
-\--\
-Illustrations by me. Images and gifs are screenrecordings from Mailchimp, Apple, Hifi klubbben, Proshop, Elektroimportøren, Google, Facebook.
+\-- 
+
+Illustrations by me. Movie by Thomas Fjeldberg-Norheim and Elin Ohme.
+
+Images and gifs are screen recordings from Gjensidige, Mailchimp, Apple, Hifi klubben, Proshop,  Elektroimportøren, Google, Facebook, Klarna, Elkjøp, Komplett and NAV.
