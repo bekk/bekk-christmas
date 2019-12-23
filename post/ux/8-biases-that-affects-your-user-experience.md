@@ -71,7 +71,7 @@ At the same time, our energy-hungry brain tries to preserve energy all the time.
 Okay. What does all this mean? Well. Humans make decisions based on their feelings, motivations, habits, and error-prone knowledge. People are not logical, like computers. The same person might end up with an entirely different choice, depending on whether they're hungry or not. If your app asks a user to rate it, the user might give it one star if they broke up with their loved one the same day. A lot of your users might consent to marketing-emails if you ask on a payday. You cannot understand the actions of users by solely looking at their behavior in the context of the service itself.
 
 **Human behaviour and its implications in digital experiences**\
-A lot of digital experiences are entertaining at its core, like games or video services. Users are highly motived to use these services. But digization of both governmental and private functions, have created a slew of useful, but dull, tools and services.
+A lot of digital experiences are entertaining at its core, like games or video services. Users are highly motived to use these services. But the digitization of both governmental and private functions, have created a slew of useful, but dull, tools and services.
 
 ![Human-human interaction](/assets/human-1.png)
 
