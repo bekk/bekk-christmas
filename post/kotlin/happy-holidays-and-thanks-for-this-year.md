@@ -20,9 +20,9 @@ We’ve also taken an in-depth look at some of the features of Kotlin. Jørund e
 
 Vetle, working in parallell, wrote a three part series about coroutines. An [introduction](https://kotlin.christmas/2019/12), looking in to [dispatchers](https://kotlin.christmas/2019/13), and exploring [channels and flows](https://kotlin.christmas/2019/14). 
 
-Øyvind shared his experiences with [going from Java to Kotlin](https://kotlin.christmas/2019/20). Vegard gave us an introduction on how to [make games in Kotlin](https://kotlin.christmas/2019/11), Thomas talked about anti-bikeshedding and how to use [Klint](https://kotlin.christmas/2019/8), and Fedrink wrote an in-depth guide on how to use [typesafe error handling](https://kotlin.christmas/2019/17). 
+Øyvind shared his experiences with [going from Java to Kotlin](https://kotlin.christmas/2019/20). Vegard gave us an introduction on how to [make games in Kotlin](https://kotlin.christmas/2019/11), Thomas talked about anti-bikeshedding and how to use [Klint](https://kotlin.christmas/2019/8), and Fredrik wrote an in-depth guide on how to use [typesafe error handling](https://kotlin.christmas/2019/17). 
 
-KotlinConf! What an amazing conference. We covered some of the highlights of [last year](https://kotlin.christmas/2019/4) KotlinConf, and some of the highlights from both the [first day](https://kotlin.christmas/2019/6) and the [second day](https://kotlin.christmas/2019/7) of this years KotlinConf.
+KotlinConf! What an amazing conference. Torbjørn covered some of the highlights of [last years](https://kotlin.christmas/2019/4) KotlinConf. We also recapped the [first day](https://kotlin.christmas/2019/6) and the [second day](https://kotlin.christmas/2019/7) of this years KotlinConf.
 
 
 Phew! That's all from us this year, and thank *you* for reading. Happy holidays and who knows, maybe we'll see you again next year!
