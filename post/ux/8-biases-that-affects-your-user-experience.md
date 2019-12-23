@@ -95,17 +95,15 @@ While delight in UX cannot change what users experience outside of the services 
 <br/>
 
 **Defining the usefulness of delightful UX**\
-When looking at successful products and services, they tend to be at the intersection of three lenses. They are feasible (it is possible to make), they are viable (it makes sense financially) and they are desirable (users will come and stay).
+When looking at successful products and services, they tend to be at the intersection of three lenses. They are _feasible_; it is possible to make. They are _viable_; it makes sense financially. They are _desirable_; users will come and stay.
 
 ![Venn diagram of three aspects of products](/assets/venn.001.png)
 
-When are products desirable? In order to make more sense of it, we can look at three aspects of desirability. Utility, usability, and delight. The utility is the most objective quality. Services and products with high utility are useful. They solve user problems or needs. Usability is slightly fuzzier. High usability means that users are able to use the product. They understand how to interact with it. In the world of UX, conversion rates are typically correlated with usability. The last aspect, delight, is the most mysterious. It tells us if users want the product, or like to use it.
+When are products desirable? To make more sense of it, we can look at three aspects of desirability. _Utility_, _usability_, and _delight_. The utility is the most objective quality. Services and products with high utility are useful. They solve problems or needs. A fuzzier aspect is usability. High usability means users are able to use the product, they understand how to interact with it. In the world of UX, conversion rates are typically correlated with usability. The last aspect, delight, is the most mysterious. It tells us if users want the product, or like to use it.
 
-Let's look at an example. A bottle of sugarfree soda. The utility is its ability to quench thirst. The bottle fits your hand, you can hold it and you can place it on a surface, you can easily open and close the cap. In other words, it is highly usable. But why did you buy this soda? You could have bought a bottle of water or you could have quenched your thirst at the tap. It must have some delightful aspects. Maybe it tastes great?
+Let’s look at an example. A bottle of sugarfree soda. The utility is its ability to quench thirst. That’s it. The bottle itself has several qualities; it fits your hand and can be transported, you can drink from it without spilling, you can place it on a surface, you can easily open and close the cap. In other words, it is highly usable. But why did you buy this specific soda? You could have bought a bottle of water, or you could have quenched your thirst at the tap. It must have some delightful aspects. Maybe it tastes great?
 
-Delight is the quality that makes a useful service or product, something that users want to use even when they don't need to.
-
-
+Delight can be defined as the qualities that make useful services or products, something that users _want_ to use, even when they don’t _need_ to. Delight is often felt trough aesthetics, in its broadest definition. In the context of digital services, we can experience it as visuals, humor, animations, sound, lack of friction, tone of voice, reduction of noise, or unexpected gestures.
 
 <br/>
 
