@@ -176,7 +176,30 @@ When we create delightful experiences, we can help our brain with its perceptive
 
 # Where should you start?
 
+You can start by going through this checklist:
+
+1. Is the feature/product/service useful? Does it solve a problem for the user?
+2. Do you need input from the user? Why is the service not automated, without any need for user interaction?
+3. Are users able to interact with it? Do they understand it?
+4. Do users want to use it? Are they motivated?
+
+If you answer "no" to questions in steps 1, 2, or 3 — creating something delightful might be a waste of time or resources. But if your users lack the motivation to complete tasks or engaging with your service, adding some delight can have a significant impact.
+
+\
+**Think of your system as if it was a human.**\
+Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information, or ask about their input?" can be a great start to humanize your experiences.
+
+If you like even more theory in your toolset, I would recommend looking at work from Colin Ware, such as "Information Visualization, perception for design."
+
 # But wait, what about business impact?
+
+
+
+Some of my examples in this article have been from my work at Gjensidige Insurance. When looking at the numbers,  especially when we have optimized existing experiences with delightfulness in mind, we have seen some remarkable results.
+
+When we optimized some of their forms without adding any new features but creating a smoother, more engaging experience — conversation rates jumped, from 100-400% better rates. Creating massive business impact. The end result is still very functional, but is a delight to use:
+
+Thanks!
 
 \--\
 Illustrations by me, Images/videos are screenrecordings from Mailchimp, Apple, Hifi-klubbben, Proshop, Elektroimportøren, Google, Facebook.
