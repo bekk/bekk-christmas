@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2019
 post_day: 24
 title: The importance of delight in experiences
-image: >-
-  https://previews.dropbox.com/p/thumb/AAoqRu90RZv61z1FZMx6S0vZb4B3ynygZ-SlO_7Yuf4Q2asqNj_tIw-WIkzAzPwPcu5DponMG5XRcPYK0YfEnm1HwhY45WCHGHGs4ULQDHLvHiyCH44g0aPVWMx7a7QymhcGm46HnE4E0R8eXUN3AByWpPFgQkuaE9ADPX2ZnoUfTSKHbcK9yhgaKDYE-dc5G-7cCwCXL8cIEFYbRzWoEuA4snjEZpFX65f3owYYlRyxRz9Raoo0psjFqkjHb5KzBhv9rqQ202odBem8X3LwaOYt2fxgnOsx8wYBVC_BQ7UrvOapCchxZpyGar74zvUfe0XC3jc2k8wdSefEQQ75p-_3/p.png?fv_content=true&size_mode=5
+image: 'https://i.imgur.com/A9y0tmq.png'
 ingress: >-
   People love delightful digital experiences. It can make the dullest of tasks —
   an exciting experience. Like filling in forms and paying for groceries. So why
