@@ -3,6 +3,8 @@ calendar: opensource
 post_year: 2019
 post_day: 24
 title: Have a merry open source Christmas!
+image: >-
+  https://images.unsplash.com/photo-1543759616-92ca87aaedd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3667&q=80
 ingress: >-
   And here we are, it's Christmas! We hope you've enjoyed reading Bekk's Open
   source advent calendar this December.
