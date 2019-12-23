@@ -147,7 +147,11 @@ In order to understand how we can use delight in practice, we need some understa
 **Perception**\
 How our brain handles raw data from our internal and external stimuli, filters it, and converts the data to information — is called perception. The processes are highly unconscious.
 
+![Internal perception](/assets/intero.png)
+
 Internal sensing is often called interoception. Our brain gets data from internal organs, our immune system, bones, and more. Sometimes this data is presented to us consciously, like your heart racing or being hungry. But usually, we only get the summarized form of our body state, sometimes referred to as affect. Our affect has two main parameters; valence (pleasant/unpleasant) and arousal (activated/deactivated). In practice, we could call affect basic emotions. It tells us whether we are stressed, bored, relaxed, or excited.
+
+![External perception](/assets/perception.png)
 
 External perception is referred to as exteroception. It's what most people think of when they hear senses; hearing, tasting, touching, seeing, and smelling. Our perception processes this data to features (colors, edges, soundbites, etc.), filters data, and continues to form more and more complex information and understanding of our surroundings. All the objects you perceive are stored as mental copies in our long term memory. Called mental concepts and models. Creating mental models is an energy-intensive and time-consuming task. (This is why your first day at work is so tiring.)  Our brain, consequently, continually tries to match our environment with past experiences. If it finds a match, it makes shortcuts and stops processing external sensorial data.
 
@@ -158,7 +162,7 @@ Our brain processes information from our perception, in mental activities called
 
 When we create delightful experiences, we can help our brain with its perceptive and cognitive processes. We can help it filter out unnecessary information and focus on what's important.
 
-![]()
+![Simulation](/assets/brain1.png)
 
 
 
