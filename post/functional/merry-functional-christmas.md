@@ -45,7 +45,7 @@ Length: 20 minutes
 
 > Parsing lexical ambiguity in natural language has always been a tricky endeavor, both from the perspective of formal linguistics as well as natural language processing. In this talk, we'll consider one of the canonical examples from linguistics, the "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo." sentence from Dmitri Borgmann's 1967 "Beyond Language: Adventures in Word and Thought."
 
-## The Power of Composition – Scott Scott Wlaschin
+## The Power of Composition – Scott Wlaschin
 
 Link: [vimeo.com/254635723](https://vimeo.com/254635723)
 
