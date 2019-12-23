@@ -202,6 +202,8 @@ If you need more theory to argue for making delightful UX, I would recommend loo
 
 Some of my examples in this article have been from my work at Gjensidige Insurance. When looking at the numbers,  especially when we have optimized existing experiences with delightfulness in mind, we saw some remarkable results.
 
+![Gjensidige Forms](/assets/gjensidigeform.png)
+
 When we optimized some of their forms without adding any new features but creating a smoother, more engaging experience — conversation rates jumped, some as high as 400%. Creating massive business impact. The end result is still very functional, but is a delight to use:
 
 Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products.
