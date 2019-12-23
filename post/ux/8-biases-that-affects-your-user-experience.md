@@ -46,7 +46,7 @@ Creating delight can be done in several ways. These websites show us the same pr
 ![Buying Sony Headphones in two webshops](/assets/sonyexample.png)
 
 **Apple Pay**\
-Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience [here](https://player.vimeo.com/video/381027133):
+Apple is great at making delightful experiences, and Apple Pay is an excellent example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience [here](https://player.vimeo.com/video/381027133):
 
 ![](/assets/ezgif-7-0b8e687f6b8a.gif)
 
@@ -71,7 +71,7 @@ At the same time, our energy-hungry brain tries to preserve energy all the time.
 Okay. What does all this mean? Well. Humans make decisions based on their feelings, motivations, habits, and error-prone knowledge. People are not logical, like computers. The same person might end up with an entirely different choice, depending on whether they're hungry or not. If your app asks a user to rate it, the user might give it one star if they broke up with their loved one the same day. A lot of your users might consent to marketing-emails if you ask on a payday. You cannot understand the actions of users by solely looking at their behavior in the context of the service itself.
 
 **Human behaviour and its implications in digital experiences**\
-A lot of digital experiences are entertaining at its core, like games or video services. Users are highly motived to use these services. But the digitization of both governmental and private functions, have created a slew of useful, but dull, tools and services.
+A lot of digital experiences are entertaining at its core, like games or video services. Users are highly motived to use these services. But the digitization of both public and private sectors, have created a slew of useful, but dull, tools and services.
 
 ![Human-human interaction](/assets/human-1.png)
 
