@@ -174,6 +174,36 @@ When we create delightful experiences, we can help our brain with its perceptive
 
 # Examples of theory in practice
 
+Micro interaction animations
+
+
+
+Reducing change blindness
+
+
+
+White space and introduction animations
+
+Reducing cognitive load
+
+
+
+Visual representations of information
+
+Dual coding theory
+
+
+
+Transitional animations
+
+Spacial mental models
+
+
+
+Summary
+
+<br/>
+
 # Where should you start?
 
 You can start by going through this checklist:
@@ -190,6 +220,10 @@ If you answer "no" to questions in steps 1, 2, or 3 — creating something delig
 Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information, or ask about their input?" can be a great start to humanize your experiences.
 
 If you like even more theory in your toolset, I would recommend looking at work from Colin Ware, such as "Information Visualization, perception for design."
+
+
+
+<br/>
 
 # But wait, what about business impact?
 
