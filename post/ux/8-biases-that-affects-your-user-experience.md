@@ -199,11 +199,11 @@ Making experiences more delightful can reduce cognitive loads of our users. A ta
 
 If you look at this form (in Norweigan), there's actually only one input field. But the users are exposed to a lot of information, helpful tips — increasing cognitive load — and ironically make the form more difficult to complete. When you focus on the input field, your brain tries hard to filter out nearby information — making you blind to nearby information you might need:
 
-![Gjensidige form]()
+![Gjensidige form](/assets/ezgif-7-9dbcf951e213.gif)
 
 If we introduce a lot of white space, we can reduce the cognitive load. Like NAV has done here:
 
-![web form at NAV]()
+![web form at NAV](/assets/navimage.png)
 
 Another tactic is presenting information over time. Using subtle animations to show one and one UI element as the user scrolls the UI, loading content bit by bit — or going all in presenting information through movies and animations.
 
