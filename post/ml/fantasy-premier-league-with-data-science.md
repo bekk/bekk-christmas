@@ -78,7 +78,9 @@ The neural network has opted for a refreshing 5-2-3 formation, with large emphas
 
 These models have been built to show the potential value of adding machine learning capabilities to solve problems which require consideration of many factors. The models themselves are fairly basic, and there are several ways to improve them – perhaps by augmenting the input data or through some ensamble learning approach. However, a more interesting discussion is whether this is in fact a problem worth solving with machine learning.
 
-Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering seemingly indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably (and for the Fantasy lovers among us, hopefully) a more rational approach.
+Modeling all possible variables influencing a player's performance in a given Premier League round is not feasible. The problem of setting up a Fantasy draft is, as most complex problems of this sort, an area where expert humans are likely to continue outperforming automated efforts. Nevertheless, the value of quantitative methods as decision support is indisputable. Letting machines do the dirty work – crunching big data sets and discovering seemingly indiscernible patterns – and use this insight as guidance for making <i>human</i> decisions, is probably a more rational approach.
+
+Enjoy Boxing Day, and may the second half of the Fantasy Premier League season treat you better than the first!
 
 |     |
 | --- |
@@ -88,5 +90,3 @@ Modeling all possible variables influencing a player's performance in a given Pr
 <sup>2</sup>The GitHub data is usually published 2-3 days after the last game of the round (which was played yesterday, on the 22nd). Further, since Liverpool-West Ham was postponed, the form data would be incomplete.
 
 <sup>3</sup>We compare results from our models with the average human score for each round. This implicitly relies on the false premise that all human players can pick a brand-new squad (in practice, use a wildcard) every single round, so the machine scores should ideally be slightly devaluated.
-
-Examples of articles written in [2017](https://medium.com/@277roshan/machine-learning-to-predict-high-performing-players-in-fantasy-premier-league-3c0de546b251), [2018](https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be) and [2019](https://medium.com/@sol.paul/how-to-win-at-fantasy-premier-league-using-data-part-1-forecasting-with-deep-learning-bf121f38643a)
