@@ -34,7 +34,7 @@ Mailchimp has mastered delight in their communication. When your startup has spe
 
 They could have shown us a message saying, “are you sure?”. But the animation tells us so much more. It understands the context. It playfully conveys the angsty feeling. It’s telling users normal to be a bit stressed.
 
-When you have sent the emails, they do something similar. Instead of a system message telling us “emails has been sent”, they give us this delightful message:
+When you have sent the emails, they do something similar. Instead of a system message telling us “emails have been sent”, they give us this delightful message:
 
 ![Mailchimp sent animation](/assets/d21a7c71fe9cd8abdaa52c619ecb9362.gif)
 
@@ -149,22 +149,20 @@ How our brain handles raw data from our internal and external stimuli, filters i
 
 ![Internal perception](/assets/intero.png)
 
-Internal sensing is often called interoception. Our brain gets data from internal organs, our immune system, bones, and more. Sometimes this data is presented to us consciously, like your heart racing or being hungry. But usually, we only get the summarized form of our body state, sometimes referred to as affect. Our affect has two main parameters; valence (pleasant/unpleasant) and arousal (activated/deactivated). In practice, we could call affect basic emotions. It tells us whether we are stressed, bored, relaxed, or excited.
+Internal sensing is called interoception. Our brain gets data from internal organs, our immune system, bones, and more. Sometimes this data is presented to us consciously, like your heart racing or being hungry. But usually, we only get the summarized form of our body state, sometimes referred to as affect. Our affect has two main parameters; valence (pleasant/unpleasant) and arousal (activated/deactivated). In practice, we could call affect basic emotions. It tells us whether we are stressed, bored, relaxed, or excited.
 
 ![External perception](/assets/perception.png)
 
-External perception is referred to as exteroception. It's what most people think of when they hear senses; hearing, tasting, touching, seeing, and smelling. Our perception processes this data to features (colors, edges, soundbites, etc.), filters data, and continues to form more and more complex information and understanding of our surroundings. All the objects you perceive are stored as mental copies in our long term memory. Called mental concepts and models. Creating mental models is an energy-intensive and time-consuming task. (This is why your first day at work is so tiring.)  Our brain, consequently, continually tries to match our environment with past experiences. If it finds a match, it makes shortcuts and stops processing external sensorial data.
+External perception is referred to as exteroception. It's what most people think of when they hear senses; hearing, tasting, touching, seeing, and smelling. Our perception processes this data to features (colors, edges, soundbites, etc.), filters data, and continues to form more and more complex information and understanding of our surroundings. All the objects you perceive are stored as mental copies in our long term memory. Called mental concepts and models. Creating mental models is an energy-intensive and time-consuming task. Our brain, consequently, continually tries to match our environment with past experiences. If it finds a match, it makes shortcuts and stops processing external sensorial data.
 
 **Cognition and simulation**\
-Our brain processes information from our perception, in mental activities called cognition. The information from our senses is combined with the context (time, place, situation), our mental concepts (knowledge, experiences), and conscious thought. Our brain then simulates the world, so we perceive it consciously. In other words, we don't see with our eyes, but with our minds. (This is why optical illusions work.)
+Our brain processes information from our perception, in mental activities called cognition. The information from our senses is combined with the context (time, place, situation), our mental concepts (knowledge, experiences), and conscious thought. Our brain then simulates the world, so we perceive it consciously. In other words, we don't see with our eyes, but with our minds.
 
 ![cognition](/assets/brain2.png)
 
 When we create delightful experiences, we can help our brain with its perceptive and cognitive processes. We can help it filter out unnecessary information and focus on what's important.
 
 ![Simulation](/assets/brain1.png)
-
-
 
 <br/>
 
