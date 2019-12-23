@@ -154,7 +154,13 @@ External perception is referred to as exteroception. It's what most people think
 **Cognition and simulation**\
 Our brain processes information from our perception, in mental activities called cognition. The information from our senses is combined with the context (time, place, situation), our mental concepts (knowledge, experiences), and conscious thought. Our brain then simulates the world, so we perceive it consciously. In other words, we don't see with our eyes, but with our minds. (This is why optical illusions work.)
 
+![cognition](/assets/brain2.png)
+
 When we create delightful experiences, we can help our brain with its perceptive and cognitive processes. We can help it filter out unnecessary information and focus on what's important.
+
+![]()
+
+
 
 <br/>
 
