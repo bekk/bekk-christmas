@@ -51,8 +51,9 @@ After predicting points scored by all players, the [simplex algorithm](https://e
 
 To examine the strength of our models, we let them predict already played rounds and compare their results with the average score of all human Fantasy players.<sup>3</sup> The number of points achieved by the models in gameweek 13 to 17 is displayed in the table below:
 
-<img class="dark-theme-image" src="/assets/models-performance-dark.png" />
 <img class="light-theme-image" src="/assets/models-performance.png" />
+
+<img class="dark-theme-image" src="/assets/models-performance-dark.png" />
 
 As we see, the regression is remarkably consistent, beating the average score with at least 10 % each round. The neural network appears slighty more risk-seeking, resulting in highly varying scores ranging from a staggering round 16 score of 89 points to an equivalently disastrous performance in the previous round. However, both models outperform the average player over the course of five rounds. Let's have a look at their bets for Boxing Day!
 
