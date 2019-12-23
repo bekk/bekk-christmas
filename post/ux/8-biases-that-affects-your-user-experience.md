@@ -168,9 +168,23 @@ When we create delightful experiences, we can help our brain with its perceptive
 
 # Examples of theory in practice
 
-Micro interaction animations
+We now have enough knowledge to get our hands dirty. The fun part. Let's look at four examples of techniques we can use to make our experiences more delightful. Many of these examples are from a Norweigan insurance company, Gjensidige.
 
-Reducing change blindness
+**Micro-interaction animations**
+
+In this example, the create a new account form at Mailchimp, some information only appears in context. The small animation in this micro-interaction is more crucial than you might think.
+
+We know that our perception filters information, sometimes never reaching our consciousness. Our visual systems can hold information in about 200-400 milliseconds. If we look at a UI on a screen, fixate our eyes on a button on the right side — then look at some text on the left side. Our visual memory regarding the button is soon lost, and our eyes get minimal stimuli from the peripheral vision. We still see the button in our mind, but it is now strictly simulated by our brain. If small changes happen to the button — like the text changing, we will be blind to it. We'll experience change blindness. 
+
+When we change the information in our UI, we need to be aware of how we can reduce change blindness. You have to main tactics; do not be subtle — change placement, colors, shapes — or, use small, delightful animations that our peripheral vision can perceive.
+
+
+
+Here are some examples of how these subtle animations can be implemented in a UI:
+
+
+
+When users interact with your UI, and the information is not changing, you can still use subtle animations as feedback for the user:
 
 White space and introduction animations
 
