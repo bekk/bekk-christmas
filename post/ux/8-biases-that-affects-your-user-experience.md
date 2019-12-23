@@ -12,10 +12,7 @@ ingress: >-
 authors:
   - Martin Skarbø Sangolt
 ---
-<br/>\
 <br/>
-
-
 
 # What is delight, in the context of user experiences?
 
@@ -49,9 +46,9 @@ Creating delight can be done in several ways. These websites show us the same pr
 ![Buying Sony Headphones in two webshops](/assets/sonyexample.png)
 
 **Apple Pay**\
-Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience here:
+Apple is experts at making delightful experiences, and Apple Pay is a great example. Using your physical credit card might be faster. Rewards are possibly more useful or plentiful. But Apple Pay is such a delightful experience; you'll smile every time you pay.  The experience is a fantastic orchestration of physical movement, slick transitions, loads of white space, snappy animations, clear audiovisual and physical feedback. If you haven't tried it yourself, you can get a grasp of the experience [here](https://player.vimeo.com/video/381027133):
 
-<iframe src="https://player.vimeo.com/video/381027133" width="760" height="300 !important" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> 
+![](/assets/ezgif-7-0b8e687f6b8a.gif)
 
 <br/>
 
