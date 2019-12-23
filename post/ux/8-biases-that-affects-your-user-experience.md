@@ -14,7 +14,11 @@ authors:
 ---
 <br/>\
 <br/>
+
+After you have read this long-read, you will understand the concept of delightful user experience, why it's important, and examples of implementation. In the realm of visual design, delight is essential to their craft. It's work well done. Without it, you lack professional integrity. But in the eyes of many professionals working with and creating digital services, delight can seem unnecessary. Money out the window. This is why you'll find some theory from cognitive and behavioral sciences in this article, making delight more appealing to logical and economic thinkers.
 <br/>
+
+
 
 # What is delightful user experiences?
 
@@ -105,6 +109,12 @@ Let's look at an example. A bottle of sugarfree soda. The utility is its ability
 
 Delight is the quality that makes a useful service or product, something that users want to use even when they don't need to.
 
+
+
+<br/>
+
+
+
 # Challenges you'll meet as a Delight Champion
 
 If you have come this far, I hope you'll soon want to champion delight in your organization. But new ideas alway meet some resistance. These are some of the typical challenges that you'll encounter when trying to create delightful digital experiences. 
@@ -139,6 +149,10 @@ Yup. Another tricky one. Measuring the impact of something fuzzy is a challenge.
 The business case of delight is challenging. When digitizing manual work, you can often predict a reduction in manual labor — the new self-service or feature will reduce wages or make customer handling more effective. But the challenges mentioned above makes any prediction of the return of investment difficult. To win over your ROI-people, you can show them the effects of optimization. Adding delight to an existing service or feature can radically change conversion rates or engagement. It can be the little push of motivation users need to interact with your product.
 
 ![ROI](/assets/roi.png)
+
+
+
+<br/>
 
 # Lets get theoretical
 
