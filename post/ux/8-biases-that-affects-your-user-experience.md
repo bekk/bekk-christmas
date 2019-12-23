@@ -208,11 +208,13 @@ Summary
 
 # Where should you start?
 
+If your creating digital products, you could get inspired by the examples above. Try to map out useful features and services you have that still have low levels of engagement or low conversion rates. This might be the place where focusing on delightful user experiences can have the most impact.
+
 Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information?" or "Would they ask about their input like this?". 
 
 You can even pair up with a person in your team, and go through the experience you're creating - as if it was a dialog. Does it feel natural? Can you make changes, so it feels even more human? This can be a great start to create more delightful experiences.
 
-If you need more theory to argue for making delightful UX, I would recommend looking at literature from Colin Ware, such as _Information Visualization: Perception for design._
+If you need more theory to argue for making delightful UX, I would recommend looking at literature from Colin Ware, such as _Information Visualization, perception for design._
 
 <br/>
 
