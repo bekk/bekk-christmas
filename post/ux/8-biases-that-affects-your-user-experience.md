@@ -187,13 +187,13 @@ When we change the information in our UI, we need to be aware of how we can redu
 
 Here are some examples of how these subtle animations can be implemented in a UI:
 
-![Micro-interactions 1]()
+![Micro-interactions 1](/assets/ezgif-7-59a099b7fd92.gif)
 
-![Micro-interactions 2]()
+![Micro-interactions 2](/assets/ezgif-7-0e7218f625d0.gif)
 
 When users interact with your UI, and the information is not changing, you can still use subtle animations as feedback for the user:
 
-![Micro-interactions 3]()
+![Micro-interactions 3](/assets/ezgif-7-8bf2732b25d0.gif)
 
 **White space and introduction animations**\
 When we are stressed, like filling in a web form for the first time or buying a train ticket while running to the station, our brains spend a lot of their resources filtering out noise. We are experiencing a high cognitive load. In these situations, our mind is not able to simulate as much of our environment as usual. The useful Field of View (FOV) is reduced. We experience it as tunnel vision. This effects user experiences significantly; users are not able to consume the information presented — and can have difficulties navigating UIs.
