@@ -15,21 +15,20 @@ authors:
 <br/>\
 <br/>
 
-After you have read this long-read, you will understand the concept of delightful user experience, why it's important, and examples of implementation. In the realm of visual design, delight is essential to their craft. It's work well done. Without it, you lack professional integrity. But in the eyes of many professionals working with and creating digital services, delight can seem unnecessary. Money out the window. This is why you'll find some theory from cognitive and behavioral sciences in this article, making delight more appealing to logical and economic thinkers.
-<br/>
 
 
+# What is delight, in the context of user experiences?
 
-# What is delightful user experiences?
+For many working with digital services, its the polish that seems unecessary. Money out the window. Even UX designers usually don't foucs on this part of design. "I'm not here to make it pretty", you'll hear UX designers say. But for professionals like visual designers, it's essential to their craft. It's what seperate great work from good work.
 
-Let's get an idea of the concept by looking at some examples.
+It's challenging to describe with words, so let's get an idea of the concept by looking at some examples.
 
 <br/>
 
 **Reacting on Facebook post**\
 Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem excessive, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
 
-![Reacting on a facebook post](/assets/ezgif-7-eb52c18c430b.gif)
+![Reacting on a facebook post](/assets/ezgif-7-0fb1d68693d4.gif)
 
 **Sending emails via Mailchimp**\
 Mailchimp has mastered delight in their communication. When your startup has spent all its energy creating a campaign for growth hacking, you'll proof-read the email you're sending over and over. But you might still be a bit angsty. When you are sending those emails to all your users, this is what Mailchimp shows you:
