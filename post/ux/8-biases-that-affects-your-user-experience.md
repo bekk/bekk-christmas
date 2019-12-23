@@ -206,7 +206,9 @@ Some of my examples in this article have been from my work at Gjensidige Insuran
 
 When we optimized some of their forms without adding any new features but creating a smoother, more engaging experience — conversation rates jumped, some as high as 400%. Creating massive business impact. The end result is still very functional, but is a delight to use:
 
-Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products.
+<iframe src="https://player.vimeo.com/video/381170255" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products — impacting your business.
 
 \--\
 Illustrations by me. Images and gifs are screenrecordings from Mailchimp, Apple, Hifi klubbben, Proshop, Elektroimportøren, Google, Facebook.
