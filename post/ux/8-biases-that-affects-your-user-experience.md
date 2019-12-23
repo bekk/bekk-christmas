@@ -209,9 +209,9 @@ Another tactic is presenting information over time. Using subtle animations to s
 
 A way to expose information bit by bit is loading content with skeleton loaders. Adding more and more details over time. You'll find this all over in feed-based applications such as Instagram and Twitter. This is how we did it, at Gjensidige:
 
-![Skeleton loader 1]()
+![Skeleton loader 1](/assets/screen-shot-2019-12-23-at-19.08.28.png)
 
-![Skeleton loader 2]()
+![Skeleton loader 2](/assets/ezgif-7-ac7c9d6703b2.gif)
 
 <br/>
 
