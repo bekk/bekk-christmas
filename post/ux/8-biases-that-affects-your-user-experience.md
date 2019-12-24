@@ -31,7 +31,7 @@ It’s challenging to describe with words, so let’s get an idea of the concept
 
 <br/>
 
-**Reacting on Facebook post**\
+**Reacting on Facebook posts**\
 Do you see those small, delightful animations? Does the cute angry emoji shaking its head make you smile? It might seem excessive, and Facebook could easily have used static icons. But those small details make you want to react on posts — even if the post itself is not engaging.
 
 ![Reacting on a facebook post](/assets/ezgif-7-0fb1d68693d4.gif)
