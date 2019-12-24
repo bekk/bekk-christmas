@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2019
 post_day: 24
-title: The importance of delight in experiences
+title: The importance of delightful UX
 image: 'https://i.imgur.com/A9y0tmq.png'
 ingress: >-
   People love delightful digital experiences. It can make the dullest of tasks —
