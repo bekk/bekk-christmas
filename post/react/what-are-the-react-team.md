@@ -81,3 +81,5 @@ We want to avoid getting stuck in a local maxima. If another approach makes a lo
 These are a few fundamental principles I've observed in how we work, but I've probably missed a bunch of them. I also haven't touched on the less technical principles around how we roll out APIs, communicate changes, and so on. That could be a topic for another day.
 
 Does your team have a set of principles? I’d love to hear about them.
+
+> This article is also published on [Dan's personal blog - Overreacted](https://overreacted.io/what-are-the-react-team-principles/).
