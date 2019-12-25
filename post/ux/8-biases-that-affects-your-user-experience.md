@@ -276,7 +276,7 @@ The same type of interaction on Klarna's website, where the animation clearly he
 
 # Where should you start?
 
-If your creating digital products, you could get inspired by the examples above. Try to map out useful features and services you have that still have low levels of engagement or low conversion rates. This might be the place where focusing on delightful user experiences can have the most impact.
+If you're creating digital products, you could get inspired by the examples above. Try to map out useful features and services you have that still have low levels of engagement or low conversion rates. This might be the place where focusing on delightful user experiences can have the most impact.
 
 Since delight is a way of humanizing digital services, you could try thinking of your product or service as if it was human. Asking yourself  questions like, "If my service was human, how would it react in this situation?", "How and when would it tell our user this information?" or "Would they ask about their input like this?". 
 
@@ -296,7 +296,7 @@ When we optimized some of their forms without adding any new features but creati
 
 <iframe src="https://player.vimeo.com/video/381170255" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what you create, and it will make your users more engaged with your products — impacting your business.
+Try it yourself. Create more human experiences that delight your users. It will make your team more proud of what they make, and it will make your users more engaged with your products. It will make a positve impact on your business.
 
 \-- 
 
