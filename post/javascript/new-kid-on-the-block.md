@@ -63,9 +63,9 @@ Well _let_ me explain. By default Svelte expects data to be mutable. What if we 
 
 For simplicity I removed the `<style>`-tag in this example.
 
-## Reactive declerations
+## Reactive declarations
 
-One more thing you should know to truly make your Svelte code reactive is how to deal with reactive declerations. Say you want to show the users name in capital letters. Could you just [make another `let`](https://svelte.dev/repl/e6439904f18f453e80feab69b371d0ea?version=3)?
+One more thing you should know to truly make your Svelte code reactive is how to deal with reactive declarations. Say you want to show the users name in capital letters. Could you just [make another `let`](https://svelte.dev/repl/e6439904f18f453e80feab69b371d0ea?version=3)?
 
 ```svelte
 <script>
@@ -84,9 +84,9 @@ When the value of the input field changes, there's no need to re-render the comp
 * the value of `name` changes
 * the text in the `h1` node is updated
 
-But Svelte has no way of knowing you also have an expression that depends on `name`. To solve this, Svelte borrows the [Javascript label syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) to introduce [the reactive decleration syntax](https://svelte.dev/docs#3_$_marks_a_statement_as_reactive) `$:`.
+But Svelte has no way of knowing you also have an expression that depends on `name`. To solve this, Svelte borrows the [Javascript label syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) to introduce [the reactive declaration syntax](https://svelte.dev/docs#3_$_marks_a_statement_as_reactive) `$:`.
 
-With this in hand it really is a piece of cake to make [reactive declerations](https://svelte.dev/repl/05a3a7d8c467492c8fcbfe3819edaaf1?version=3):
+With this in hand it really is a piece of cake to make [reactive declarations](https://svelte.dev/repl/05a3a7d8c467492c8fcbfe3819edaaf1?version=3):
 
 ```svelte
 <script>
