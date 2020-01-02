@@ -132,14 +132,14 @@ val it : int list = [5; 4; 3; 2; 1]
 Picking the last element
 
 ``` fsharp
-let uncurry f a b = f (a, b)
-let tryLast = Seq.fold (uncurry (snd >> Some)) None
+let curry f a b = f (a, b)
+let tryLast = Seq.fold (curry (snd >> Some)) None
 let a = tryLast []
 let b = tryLast [1; 2]
 ```
 
 ``` example
-val uncurry : f:('a * 'b -> 'c) -> a:'a -> b:'b -> 'c
+val curry : f:('a * 'b -> 'c) -> a:'a -> b:'b -> 'c
 val tryLast : (int list -> int option)
 val a : int option = None
 val b : int option = Some 2
