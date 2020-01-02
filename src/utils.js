@@ -98,13 +98,17 @@ export const mapCalendarToName = calendar => {
     }
 };
 
-export const getCalendarPostLink = (isPreview, calendar, year, day) => {
+export const getCalendarPostLink = (isPreview, calendar, year, day, forceFrontPage = false) => {
     let link = '';
 
     if (isPreview) {
         link = `/${calendar}`;
     } else {
         link = `https://${calendar}.christmas`;
+    }
+
+    if (forceFrontPage) {
+        return link;
     }
 
     if (!day) {
