@@ -96,6 +96,7 @@ const Top = styled.div`
 const Frontpage = ({ data, pageContext }) => {
     const calendars = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter);
     const showTeaser = calendars.length === 0;
+    const isDecember = new Date().getMonth() === 11;
 
     if (showTeaser) {
         return (
@@ -149,7 +150,9 @@ const Frontpage = ({ data, pageContext }) => {
                     <img src={treeImage} alt="" />
                 </ChristmasTreeDesktop>
             </Top>
-            <DailyWindowHeader>Today's articles</DailyWindowHeader>
+            <DailyWindowHeader>
+                {isDecember ? "Today's articles" : 'Our calendars'}
+            </DailyWindowHeader>
             <Calendar>
                 {calendars.map(calendar => (
                     <li key={calendar.calendar}>
@@ -169,7 +172,8 @@ const Frontpage = ({ data, pageContext }) => {
                                     pageContext.isPreview,
                                     calendar.calendar,
                                     calendar.post_year,
-                                    calendar.post_day
+                                    calendar.post_day,
+                                    isDecember
                                 )
                             }
                             imageUrl={getWindowImagePlaceholder(
@@ -178,7 +182,7 @@ const Frontpage = ({ data, pageContext }) => {
                                 calendar.post_year
                             )}
                             calendarName={calendar.calendar}
-                            title={calendar.title}
+                            title={isDecember && calendar.title}
                         />
                     </li>
                 ))}

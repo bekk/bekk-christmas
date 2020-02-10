@@ -38,9 +38,11 @@ const CalendarWindowOpen = ({ to, href, imageUrl, title, calendarName }) => {
         <>
             <img src={imageUrl} alt="" />
             {calendarName && <CalendarName>{mapCalendarToName(calendarName)}</CalendarName>}
-            <CalendarWindowDescription hasMargin={calendarName != null}>
-                {title}
-            </CalendarWindowDescription>
+            {title && (
+                <CalendarWindowDescription hasMargin={calendarName != null}>
+                    {title}
+                </CalendarWindowDescription>
+            )}
         </>
     );
     if (to) {
