@@ -29,17 +29,13 @@ authors:
 ---
 ![](/assets/buble.png "Popularity for the keywords “Michael Bublé” on Google Trends")
 
-
-
 However, other things are not so certain. Today, we will take a look at how uncertainty may play a role in how we interpret machine learning models.
 
-
-
-###Black Box versus White Box Models
+\###Black Box versus White Box Models
 
 As modern machine learning models become able to solve increasingly challenging problems, their application has grown tremendously. In the US, deep learning patent applications grew on average by 175% annually between 2013 and 2016. This has caused an ever-expanding range of complex models.
 
-One challenge with the complexity of modern deep learning models is the non-trivial task of understanding precisely why a model produces the outputs it does. Deep models may have millions of hyperparameters and determining the correct values is not an exact science. Once trained, understanding the complex relationship between inputs and outputs can be extremely difficult. In other words, many modern models exhibit traits of a black box. In black box models the relationship between inputs and outputs is not easily interpretable – it’s as if we are dealing with a black box which magically gives us answers given our inputs.
+One challenge with the complexity of modern deep learning models is the non-trivial task of understanding precisely why a model produces the outputs it does. Deep learning models may have millions of model parameters and determining the values is not an exact science. Once trained, understanding the complex relationship between inputs and outputs can be extremely difficult. In other words, many modern models exhibit traits of a black box. In black box models the relationship between inputs and outputs is not easily interpretable – it’s as if we are dealing with a black box which magically gives us answers given our inputs.
 
 Conversely, in white box models we can clearly understand and explain the relationship between inputs and outputs, and thus also model behaviour.
 
@@ -51,9 +47,7 @@ So why can black box traits be problematic? There are several reasons:
 
 The debate of which is superior between white and black box models is not something we will dive into in this blog post – but we will look at how we can utilize uncertainty to assist in both interpretability and to some extent explainability. 
 
-
-
-###About uncertainty
+\###About uncertainty
 
 Uncertainty in the setting of modelling a problem comes in two forms: 
 
@@ -64,15 +58,11 @@ Thus, for every prediction a model makes we deal with both aleatoric and epistem
 
 ![](/assets/the_dress_-viral_phenomenon-.png "“The Dress” – sparking widespread discussion")
 
-
-
-###Uncertainty in a Machine Learning Problem
+\###Uncertainty in a Machine Learning Problem
 
 Let’s look at the two types of uncertainty in the context of a simple regression problem. Here we have some data points in two dimensions, and we wish to model the output y as a function of x. We have fitted a deep learning model to the data (a simple model would have sufficed for this problem, but the discussion scales to higher dimensions and more complex problems).
 
 ![](/assets/example-regression.png)
-
-
 
 Our model seems to fit the data reasonably well, but there are two areas of particular interest. 
 
@@ -84,9 +74,7 @@ Clearly, while uncertainty will not improve the performance of our model by itse
 
 Now that we have identified these uncertain areas, let’s briefly look at how we can estimate the uncertainty and communicate it using deep learning models.
 
-
-
-###Estimating Uncertainty
+\###Estimating Uncertainty
 
 Data scientists with a penchant for the Bayesian school will argue that you should always model uncertainty because it is always present in any problem. However, we can often afford to overlook it if the application is not critical. In cases that you do need to consider uncertainty, several approaches exist. A thorough review is beyond the scope of this blog post, but we will give some pointers for those who are interested.
 
@@ -101,9 +89,7 @@ For the aleatoric uncertainty:
 
 Also, worth mentioning is the study of using machine learning to produce prediction intervals for regression problems which is concerned with outputting intervals with a given confidence level that the real value will be contained within the interval. Some approaches do not require assumptions on the underlying distributions of the data. 
 
-
-
-###Does This Mean a Free Lunch?
+\###Does This Mean a Free Lunch?
 
 Finally, we should point out that in data science, there is no free lunch. This also applies to estimating uncertainty in deep learning models, which comes at a cost:
 
