@@ -20,7 +20,7 @@ authors:
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmudr.jpg" width="140px" align="right" style="margin:30px 0 0 5px"/>
+<img src="https://i.imgflip.com/3hmudr.jpg" align="right" style="margin:30px 0 0 5px; width:140px;"/>
 
 **Inspect the raw data**
 
@@ -28,7 +28,7 @@ First of all, look at your data. It may sound trivial, but it is easy to forget.
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmum2.jpg" width="140px" align="right" style="margin:30px 0 0 5px"/>
+<img src="https://i.imgflip.com/3hmum2.jpg" align="right" style="margin:30px 0 0 5px; width:15%;"/>
 
 **Remove irrelevant variables**
 
