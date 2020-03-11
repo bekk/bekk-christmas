@@ -20,7 +20,7 @@ authors:
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmudr.jpg" align="right" style="margin:30px 0 0 5px; width:15%;"/>
+<img src="https://i.imgflip.com/3hmudr.jpg" align="right" style="margin:30px 0 0 5px; width:12em;"/>
 
 **Inspect the raw data**
 
@@ -28,7 +28,7 @@ First of all, look at your data. It may sound trivial, but it is easy to forget.
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmum2.jpg" align="right" style="margin:30px 0 0 5px; width:15%;"/>
+<img src="https://i.imgflip.com/3hmum2.jpg" align="right" style="margin:30px 0 0 5px; width:12em;"/>
 
 **Remove irrelevant variables**
 
@@ -36,7 +36,7 @@ Irrelevant variables may be defined as variables we know to have nothing to do w
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmurq.jpg" align="right" margin-right=10 style="margin:40px 0 0 5px; width:30%"/>
+<img src="https://i.imgflip.com/3hmurq.jpg" align="right" style="margin:40px 0 10px 5px; width:24em"/>
 
 **Drop duplicate observations**
 
