@@ -20,7 +20,7 @@ authors:
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmudr.jpg" align="right" style="margin:30px 0 0 5px; width:140px;"/>
+<img src="https://i.imgflip.com/3hmudr.jpg" align="right" style="margin:30px 0 0 5px; width:15%;"/>
 
 **Inspect the raw data**
 
@@ -36,7 +36,7 @@ Irrelevant variables may be defined as variables we know to have nothing to do w
 
 <br/>
 
-<img src="https://i.imgflip.com/3hmurq.jpg" width="280px" align="right" margin-right=10 style="margin:40px 0 0 5px"/>
+<img src="https://i.imgflip.com/3hmurq.jpg" align="right" margin-right=10 style="margin:40px 0 0 5px; width:30%"/>
 
 **Drop duplicate observations**
 
