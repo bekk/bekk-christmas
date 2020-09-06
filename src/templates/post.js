@@ -95,7 +95,7 @@ const Template = ({ data, pageContext }) => {
         post_year,
     } = frontmatter;
 
-    const authors = frontmatter.authors && frontmatter.authors.map(author => author.frontmatter);
+    const authors = frontmatter.authors && frontmatter.authors.map((author) => author.frontmatter);
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
     while (uniqueLinkImageNumbers.length < 4) {
@@ -106,11 +106,7 @@ const Template = ({ data, pageContext }) => {
         }
     }
     const ingressHtml =
-        remark()
-            .use(recommended)
-            .use(remarkHtml)
-            .processSync(ingress)
-            .toString() || '';
+        remark().use(recommended).use(remarkHtml).processSync(ingress).toString() || '';
 
     const heroImage = setImageWidth(image || fallbackImage);
     const trimmedDescription = description ? description.trim() : '';

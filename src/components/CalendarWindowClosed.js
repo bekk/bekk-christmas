@@ -16,7 +16,7 @@ const WindowClosed = styled.div`
     align-items: center;
 
     &:after {
-        content: "";
+        content: '';
         display: block;
         padding-bottom: 100%;
     }

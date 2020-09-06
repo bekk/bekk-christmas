@@ -44,9 +44,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         // Create frontpage of current calendar
         const calendars = {};
 
-        const posts = result.data.allMarkdownRemark.nodes.filter(node => node.frontmatter.calendar);
+        const posts = result.data.allMarkdownRemark.nodes.filter(
+            (node) => node.frontmatter.calendar
+        );
 
-        posts.forEach(node => {
+        posts.forEach((node) => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
             // Filter posts from other calendars
@@ -110,11 +112,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 new Set(
                     posts
                         .filter(
-                            post =>
+                            (post) =>
                                 post.frontmatter.calendar === context.calendar &&
                                 post.frontmatter.post_year !== context.year
                         )
-                        .map(post => {
+                        .map((post) => {
                             let path = isPreview ? `/${context.calendar}` : '';
                             return `${path}/${post.frontmatter.post_year}`;
                         })

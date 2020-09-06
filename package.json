@@ -44,6 +44,6 @@
     "devDependencies": {
         "cross-env": "^7.0.2",
         "eslint-config-react-app": "^5.2.1",
-        "prettier": "^1.19.1"
+        "prettier": "^2.1.1"
     }
 }

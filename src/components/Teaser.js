@@ -98,14 +98,16 @@ to {
 `;
 const SpectacularEntrance = styled.div(
     ({ speed = '1s', delay = '', from, fade = false }) => css`
-  animation: ${speed} ${delay} ease-out forwards ${slideFade};
+        animation: ${speed} ${delay} ease-out forwards ${slideFade};
 
-  ${from === 'left' && `transform: translateX(-100%);`}
-  ${from === 'top' && `transform: translateY(-100%);`}
-  ${from === 'right' && `transform: translateX(100%);`}
-  ${from === 'bottom' && `transform: translateY(100%);`}
+        ${from === 'left' && `transform: translateX(-100%);`}
+        ${from === 'top' && `transform: translateY(-100%);`}
+  ${from === 'right' &&
+        `transform: translateX(100%);`}
+  ${from === 'bottom' &&
+        `transform: translateY(100%);`}
   ${fade && 'opacity: 0;'}
-`
+    `
 );
 
 export const Teaser = () => {

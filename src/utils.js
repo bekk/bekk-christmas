@@ -33,7 +33,7 @@ const getCalendarNumber = (calendar, year) => {
     }
 };
 
-const getDayNumber = day => {
+const getDayNumber = (day) => {
     if (day < 10) {
         return `0${day}`;
     }
@@ -58,7 +58,7 @@ export const getWindowImagePlaceholder = (calendar, day, year) => {
     )}/small/${getDayNumber(day)}.jpeg`;
 };
 
-export const setImageWidth = url => {
+export const setImageWidth = (url) => {
     if (url.includes('unsplash')) {
         const urlPart = url.split('?')[0];
         return urlPart + '?w=1226&h=400&fit=crop&crop=edges';
@@ -67,7 +67,7 @@ export const setImageWidth = url => {
     return url;
 };
 
-export const mapCalendarToName = calendar => {
+export const mapCalendarToName = (calendar) => {
     switch (calendar) {
         case 'javascript':
             return 'JavaScript';

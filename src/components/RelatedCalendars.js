@@ -8,7 +8,7 @@ const Container = styled.section`
     border-top: 1px solid currentColor;
 `;
 
-const getYearLinkAndDescription = path => {
+const getYearLinkAndDescription = (path) => {
     if (path.endsWith('2017')) {
         return <Link to={path}>2017's</Link>;
     }

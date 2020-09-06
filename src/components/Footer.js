@@ -70,7 +70,7 @@ const calendars = [
 ];
 
 const SiteFooter = ({ calendarName }) => {
-    const otherCalendars = calendars.filter(calendar => calendar !== calendarName);
+    const otherCalendars = calendars.filter((calendar) => calendar !== calendarName);
 
     return (
         <Container>
@@ -79,7 +79,7 @@ const SiteFooter = ({ calendarName }) => {
                     <a href="https://bekk.christmas">Bekk Christmas</a>
                 </h2>
                 <FlatList>
-                    {otherCalendars.map(calendar => (
+                    {otherCalendars.map((calendar) => (
                         <li key={calendar}>
                             <Link href={`https://${calendar}.christmas`}>
                                 {mapCalendarToName(calendar) + ' Christmas'}

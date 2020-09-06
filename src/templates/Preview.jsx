@@ -12,7 +12,7 @@ const Preview = ({ calendarsWithContent }) => {
         return null;
     }
 
-    const calendarsWithInfo = calendarsWithContent.map(link => {
+    const calendarsWithInfo = calendarsWithContent.map((link) => {
         const [, name, year] = link.split('/');
         return { link, name, year };
     });
