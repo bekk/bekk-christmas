@@ -6,11 +6,11 @@
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
-        "build:preview": "gatsby build preview",
+        "build:preview": "cross-env CALENDAR_ENV=preview gatsby build",
         "build:calendar": "gatsby build",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "gatsby develop",
-        "start:preview": "gatsby develop preview",
+        "start:preview": "cross-env CALENDAR_ENV=preview gatsby develop",
         "start:calendar": "gatsby develop",
         "serve": "gatsby serve",
         "clean": "gatsby clean"
@@ -42,6 +42,7 @@
         "styled-normalize": "^8.0.7"
     },
     "devDependencies": {
+        "cross-env": "^7.0.2",
         "eslint-config-react-app": "^5.2.1",
         "prettier": "^1.19.1"
     }
