@@ -67,7 +67,7 @@ module.exports = function feedPluginConfig(calendar) {
       `,
                 output: '/rss.xml',
                 title: `The ${calendar || 'Bekk'} Christmas RSS feed`,
-                match: '^/2019/',
+                match: '^/2020/',
             },
         ],
     };

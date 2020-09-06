@@ -1,5 +1,8 @@
 const path = require(`path`);
 
+// This has to be changed every year in order
+const THIS_YEAR = 2020;
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
@@ -79,9 +82,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     },
                 });
 
-            if (post_year !== 2019) {
-                calendarPath += `/${post_year}`;
-            }
+            calendarPath += `/${post_year}`;
 
             if (!calendarPath) {
                 calendarPath = '/';
@@ -115,9 +116,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                         )
                         .map(post => {
                             let path = isPreview ? `/${context.calendar}` : '';
-                            return post.frontmatter.post_year === 2019
-                                ? path
-                                : `${path}/${post.frontmatter.post_year}`;
+                            return `${path}/${post.frontmatter.post_year}`;
                         })
                 )
             );
@@ -134,7 +133,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     let currentFrontpageDay = 0;
-    if (currentYear > 2019 || (currentMonth === 11 && currentDay > 24)) {
+    if (currentYear > THIS_YEAR || (currentMonth === 11 && currentDay > 24)) {
         currentFrontpageDay = 24;
     } else if (currentMonth === 11 && currentDay < 25) {
         currentFrontpageDay = currentDay;
@@ -153,7 +152,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             context: {
                 calendarsWithContent: Array.from(calendarsWithContent),
                 day: currentFrontpageDay,
-                year: 2019,
+                year: 2020,
                 isPreview,
             },
         });

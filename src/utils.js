@@ -1,5 +1,5 @@
 const getCalendarNumber = (calendar, year) => {
-    if (year < 2019) {
+    if (year < 2020) {
         return '01';
     }
 
@@ -49,7 +49,7 @@ export const getChristmasTree = (calendar, year) => {
 };
 
 export const getWindowImagePlaceholder = (calendar, day, year) => {
-    if (year < 2019) {
+    if (year < 2020) {
         return `/assets/generated/${day}.png`;
     }
 
@@ -112,7 +112,7 @@ export const getCalendarPostLink = (isPreview, calendar, year, day, forceFrontPa
     }
 
     if (!day) {
-        return year === 2019 ? link : `${link}/${year}`;
+        return `${link}/${year}`;
     }
 
     return `${link}/${year}/${day}`;
