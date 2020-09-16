@@ -1,8 +1,4 @@
 const getCalendarNumber = (calendar, year) => {
-    if (year < 2020) {
-        return '01';
-    }
-
     switch (calendar) {
         case 'css':
             return '01';
@@ -29,7 +25,7 @@ const getCalendarNumber = (calendar, year) => {
         case 'react':
             return '12';
         default:
-            return '12';
+            return '01';
     }
 };
 
@@ -49,7 +45,7 @@ export const getChristmasTree = (calendar, year) => {
 };
 
 export const getWindowImagePlaceholder = (calendar, day, year) => {
-    if (year < 2020) {
+    if (year < 2019) {
         return `/assets/generated/${day}.png`;
     }
 
