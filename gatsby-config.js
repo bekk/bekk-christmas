@@ -20,7 +20,7 @@ const calendarPlugins = fs
         },
     }));
 
-const envCalendar = process.env.CALENDAR_MODE;
+const envCalendar = process.env.CALENDAR_ENV;
 const isPreview = envCalendar === 'preview';
 
 module.exports = {
