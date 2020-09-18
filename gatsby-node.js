@@ -154,7 +154,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             context: {
                 calendarsWithContent: Array.from(calendarsWithContent),
                 day: currentFrontpageDay,
-                year: 2020,
+                year: THIS_YEAR,
                 isPreview,
             },
         });
