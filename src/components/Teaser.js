@@ -118,7 +118,7 @@ export const Teaser = () => {
                 <title>Introducing a Bekk Christmas..</title>
                 <meta
                     property="description"
-                    content="We're creating lots calendars, each with daily content, articles and podcasts."
+                    content="We're creating lots of calendars, each with daily content, articles and podcasts."
                 />
             </Helmet>
             <Container>
