@@ -91,7 +91,7 @@ const SiteFooter = ({ calendarName }) => {
             <Column>
                 <Description>
                     Bekk is all about craftmanship and the people crafting it. This year, we're
-                    creating 12 calendars, each with daily content, articles and podcasts.
+                    creating 11 advent calendars, each with daily original content made by us.
                 </Description>
             </Column>
             <Column>
