@@ -1,6 +1,6 @@
 const path = require(`path`);
 
-// This has to be changed every year in order
+// This has to be changed every year
 const THIS_YEAR = 2020;
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
