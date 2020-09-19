@@ -23,7 +23,7 @@ Today's digital economy comprises of services such as Uber, Office365 and Netfli
 
 _Aerial view of a large scale data center in San Diego (Source: Wordpress)_
 
-The need to store and process this exponentially increasing amount of data has led to a golden period of development in the data center industry. The number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there is [8 million datacenters ](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/)and [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), but the total amount hyperscale data centers needed to manage the expected amounts of data in the years to come is three times today's amount. 
+The need to store and process this exponentially increasing amount of data has led to a golden period of development in the data center industry. The number of hyperscale datacenters in the world powering the cloud has experienced a 100% increase the last 5 years alone. Today there are [8 million datacenters ](https://www.statista.com/statistics/500458/worldwide-datacenter-and-it-sites/)and [500 hyperscale datacenters in the world](https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world), but the total amount of hyperscale data centers needed to manage the expected amounts of data in the years to come is three times today's amount. 
 
 ![](/assets/tc-15-growth.png "Growth of hyperscale data centers")
 
@@ -33,7 +33,7 @@ There are [5 billion](https://bluelist.co/blog/how-many-google-searches-per-day/
 
 Add on top of this all the other services powered by the cloud such as internet banking, ticketing services, Netflix, Spotify, Uber and Office365, you'll soon realize that data centers powering the cloud have become as mission critical and essential as water and electricity.
 
-We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via services that run on the cloud. We've become dependent on the cloud to be able to perform tasks both at work and home and when cloud services [go down](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html), the world halts. This begs for a number of questions with regards to environmental impact.
+We depend on it at work to be able to send and receive email, share and collaborate on documents, code, schematics and files. We use it to buy shoes and other merchandise online, and we communicate with our colleagues, friends and family both near and far via services that run on the cloud. We've become dependent on the cloud to be able to perform tasks both at work and at home. When cloud services [go down](http://nymag.com/intelligencer/2018/03/when-amazon-web-services-goes-down-so-does-a-lot-of-the-web.html), the world halts. This begs for a number of questions with regards to environmental impact.
 
 ## What is the problem?
 
@@ -49,7 +49,7 @@ Hardware also usually has a fairly limited life span. Usually hardware is replac
 
 **Real estate**
 
-Data centers require a lot of space. Hyperscale datacenters require hundreds of acres of land in order to accomodate the hardware. One of the issues are that cloud providers usually want data centers to be as close as possible to most end users, in order to provide best performance and lowest latency. This has lead to a competition for real estate between data centers and humans, and in Amsterdam, which houses 30% of all hyperscale data centers in Europe, it led to a [temporary ban on building new ones](https://www.datacenterknowledge.com/regulation/why-amsterdam-halted-data-center-construction). 
+Data centers require a lot of space. Hyperscale data centers require hundreds of acres of land in order to accomodate the hardware. One of the issues are that cloud providers usually want data centers to be as close as possible to most end users, in order to provide best performance and lowest latency. This has led to a competition for real estate between data centers and humans, and in Amsterdam, which houses 30% of all hyperscale data centers in Europe, it led to a [temporary ban on building new ones](https://www.datacenterknowledge.com/regulation/why-amsterdam-halted-data-center-construction). 
 
 **Energy**
 
@@ -61,7 +61,7 @@ Although many cloud providers have pledged to decarbonize their data centers, no
 
 Some [alarmist predictions](https://www.nature.com/articles/d41586-018-06610-y) indicate that due to the increasing number of data centers in the world, the total energy consumption of data centers could rise to as much as 8% of total world energy consumption by 2030.
 
-That's why environmental impact of the cloud is first and foremost dictated by the amount and source of its energy.
+That's why environmental impact of the cloud first and foremost is dictated by the amount and source of its energy.
 
 ## Is there some light at the end of the tunnel?
 
@@ -89,7 +89,7 @@ In the past decade, manufacturing improvement and targeted efforts towards impro
 
 **No more low-hanging fruits**
 
-However, now that we are starting to hit some physical and theoretical limitations, these low-hanging fruits are gone. The shift away from small, inefficient data centres towards much larger cloud and hyperscale data centres seems evident. The Lawrence Berkeley National Laboratory [estimated](https://newscenter.lbl.gov/2016/06/27/data-centers-continue-proliferate-energy-use-plateaus/) that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage. A prediction by the IAE is that this trend is already on its way, as illustrated in the chart below.
+However, now that we are starting to hit some physical and theoretical limitations, these low-hanging fruits are gone. The shift away from small, inefficient data centers towards much larger cloud and hyperscale data centers seem sevident. The Lawrence Berkeley National Laboratory [estimated](https://newscenter.lbl.gov/2016/06/27/data-centers-continue-proliferate-energy-use-plateaus/) that if 80 percent of servers in the U.S. were moved over to optimized hyperscale facilities, this would result in a 25 percent drop in their energy usage. A prediction by the IAE is that this trend is already on its way, as illustrated in the chart below.
 
 ![](/assets/tc-15-hyperscale.png)
 
