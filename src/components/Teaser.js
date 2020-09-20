@@ -98,14 +98,17 @@ to {
 `;
 const SpectacularEntrance = styled.div(
     ({ speed = '1s', delay = '', from, fade = false }) => css`
-  animation: ${speed} ${delay} ease-out forwards ${slideFade};
+        animation: ${speed} ${delay} ease-out forwards ${slideFade};
+        pointer-events: none;
 
-  ${from === 'left' && `transform: translateX(-100%);`}
-  ${from === 'top' && `transform: translateY(-100%);`}
-  ${from === 'right' && `transform: translateX(100%);`}
-  ${from === 'bottom' && `transform: translateY(100%);`}
+        ${from === 'left' && `transform: translateX(-100%);`}
+        ${from === 'top' && `transform: translateY(-100%);`}
+  ${from === 'right' &&
+        `transform: translateX(100%);`}
+  ${from === 'bottom' &&
+        `transform: translateY(100%);`}
   ${fade && 'opacity: 0;'}
-`
+    `
 );
 
 export const Teaser = () => {
@@ -113,20 +116,20 @@ export const Teaser = () => {
         <div>
             <GlobalStyles />
             <Helmet>
-                <title>Introducing a Bekk Christmas..</title>
+                <title>Introducing Bekk Christmas…</title>
                 <meta
                     property="description"
-                    content="We're creating 12 calendars, each with daily content, articles and podcasts."
+                    content="Bekk is all about craftmanship and the people crafting it. This year, we're creating 11 advent calendars, each with daily original content made by us."
                 />
             </Helmet>
             <Container>
                 <SpectacularEntrance fade>
-                    <Heading>12 calendars. 24 days. 288 articles.</Heading>
+                    <Heading>11 calendars. 24 days. 264 articles.</Heading>
                 </SpectacularEntrance>
                 <SpectacularEntrance fade delay="0.5s">
                     <Paragraph>
                         Bekk is all about craftmanship and the people crafting it. This year, we're
-                        creating 12 calendars, each with daily content, articles and podcasts.
+                        creating 11 advent calendars, each with daily original content made by us.
                     </Paragraph>
                 </SpectacularEntrance>
                 <SpectacularEntrance fade delay="2s">

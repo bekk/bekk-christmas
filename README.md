@@ -89,7 +89,7 @@ Når du er ferdig, trykker du "Publish now" oppe i hjørnet, og lener deg tilbak
 
 Hvis din kalender har et Trello-board med ideen din på, så er det på tide å flytte det kortet til "ferdig"-seksjonen.
 
-Du kan se artikkelen din på `preview.bekk.christmas/<kalendernavn>/2019/<lukenummer>`.
+Du kan se artikkelen din på `preview.bekk.christmas/<kalendernavn>/2020/<lukenummer>`.
 
 Gratulerer, du har nå skrevet din første artikkel for bekk.christmas! 🎅 Tusen tusen takk for innsatsen.
 

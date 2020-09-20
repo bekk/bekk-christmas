@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import * as mediaQueries from '../constants/media-queries';
 
@@ -94,7 +94,7 @@ const Top = styled.div`
 `;
 
 const Frontpage = ({ data, pageContext }) => {
-    const calendars = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter);
+    const calendars = data.allMarkdownRemark.nodes.map((markdown) => markdown.frontmatter);
     const showTeaser = calendars.length === 0;
     const isDecember = new Date().getMonth() === 11;
 
@@ -154,7 +154,7 @@ const Frontpage = ({ data, pageContext }) => {
                 {isDecember ? "Today's articles" : 'Our calendars'}
             </DailyWindowHeader>
             <Calendar>
-                {calendars.map(calendar => (
+                {calendars.map((calendar) => (
                     <li key={calendar.calendar}>
                         <CalendarWindowOpen
                             to={

@@ -47,7 +47,7 @@ const Container = styled.a`
     }
 `;
 
-const BekkLogo = props => {
+const BekkLogo = (props) => {
     return (
         <Container {...props} href="https://bekk.no">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.51 93.42" role="presentation">

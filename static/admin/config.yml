@@ -15,10 +15,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -64,10 +64,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -113,10 +113,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -162,10 +162,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -211,10 +211,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -260,10 +260,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -309,10 +309,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -358,10 +358,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -407,10 +407,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -456,10 +456,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -505,10 +505,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',
@@ -554,10 +554,10 @@ collections:
                 label: 'Year',
                 name: 'post_year',
                 widget: 'number',
-                default: 2019,
+                default: 2020,
                 valueType: 'int',
                 min: 2018,
-                max: 2020,
+                max: 2021,
             }
           - {
                 label: 'Day',

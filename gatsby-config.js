@@ -11,16 +11,16 @@ const getMetadataForSite = require('./config/get-metadata-for-site');
 // source.
 const calendarPlugins = fs
     .readdirSync(`${__dirname}/post`, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name)
-    .map(calendar => ({
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name)
+    .map((calendar) => ({
         resolve: `gatsby-source-filesystem`,
         options: {
             path: `${__dirname}/post/${calendar}`,
         },
     }));
 
-const envCalendar = process.env.CALENDAR_ENV || process.argv[3];
+const envCalendar = process.env.CALENDAR_ENV;
 const isPreview = envCalendar === 'preview';
 
 module.exports = {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BrokenBalls = props => (
+export const BrokenBalls = (props) => (
     <svg xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 381 377" {...props}>
         <defs>
             <path

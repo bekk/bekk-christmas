@@ -1,8 +1,4 @@
 const getCalendarNumber = (calendar, year) => {
-    if (year < 2019) {
-        return '01';
-    }
-
     switch (calendar) {
         case 'css':
             return '01';
@@ -29,11 +25,11 @@ const getCalendarNumber = (calendar, year) => {
         case 'react':
             return '12';
         default:
-            return '12';
+            return '01';
     }
 };
 
-const getDayNumber = day => {
+const getDayNumber = (day) => {
     if (day < 10) {
         return `0${day}`;
     }
@@ -58,7 +54,7 @@ export const getWindowImagePlaceholder = (calendar, day, year) => {
     )}/small/${getDayNumber(day)}.jpeg`;
 };
 
-export const setImageWidth = url => {
+export const setImageWidth = (url) => {
     if (url.includes('unsplash')) {
         const urlPart = url.split('?')[0];
         return urlPart + '?w=1226&h=400&fit=crop&crop=edges';
@@ -67,7 +63,7 @@ export const setImageWidth = url => {
     return url;
 };
 
-export const mapCalendarToName = calendar => {
+export const mapCalendarToName = (calendar) => {
     switch (calendar) {
         case 'javascript':
             return 'JavaScript';
@@ -112,7 +108,7 @@ export const getCalendarPostLink = (isPreview, calendar, year, day, forceFrontPa
     }
 
     if (!day) {
-        return year === 2019 ? link : `${link}/${year}`;
+        return `${link}/${year}`;
     }
 
     return `${link}/${year}/${day}`;

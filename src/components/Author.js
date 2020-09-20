@@ -14,7 +14,7 @@ const AuthorLink = styled.a`
     font-weight: bolder;
 `;
 
-const enhancedLinkGuesser = link => {
+const enhancedLinkGuesser = (link) => {
     if (!link) {
         return null;
     }
@@ -37,7 +37,7 @@ const enhancedLinkGuesser = link => {
     return link;
 };
 
-const AuthorInfo = props => {
+const AuthorInfo = (props) => {
     const { authors, readingTime, calendar, year, day } = props;
     if (!authors || !authors.length) {
         return null;

@@ -8,27 +8,23 @@ const Container = styled.section`
     border-top: 1px solid currentColor;
 `;
 
-const getYearLinkAndDescription = path => {
-    if (path.endsWith('2017')) {
-        return <Link to={path}>2017's</Link>;
-    }
-    if (path.endsWith('2018')) {
-        return <Link to={path}>last year's</Link>;
-    }
-    return <Link to={path}>this year's</Link>;
-};
-
 export const RelatedCalendars = ({ paths }) => {
     if (!paths.length) {
         return null;
     }
 
-    const [yearOne, yearTwo] = paths;
-
     return (
         <Container>
-            Want more? Check out {getYearLinkAndDescription(yearOne)}{' '}
-            {yearTwo && <>and {getYearLinkAndDescription(yearTwo)}</>} calendar{yearTwo ? 's' : ''}!
+            Want more? Check out the calendar{paths.length > 1 && 's'} from{' '}
+            {paths.map((path, index) => (
+                <>
+                    {index === paths.length - 1 && ' and '}
+                    <Link key={path} to={path}>
+                        {path.split('/').pop()}
+                    </Link>
+                    {index < paths.length - 2 && ', '}
+                </>
+            ))}
         </Container>
     );
 };

@@ -25,7 +25,7 @@ const Template = ({ data, pageContext }) => {
         title: '',
         day: '',
     });
-    nodes.forEach(node => {
+    nodes.forEach((node) => {
         calendarWindows[node.frontmatter.post_day - 1] = {
             title: node.frontmatter.title,
             day: node.frontmatter.post_day,
