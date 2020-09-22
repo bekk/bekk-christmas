@@ -8,7 +8,7 @@ import * as mediaQueries from '../constants/media-queries';
 import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
-import Search from '../components/Search';
+import Search from '../components/search/Search';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import Preview from './Preview';
