@@ -83,15 +83,21 @@ const HeaderContainer = styled.div`
 const Top = styled.div`
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 100px;
+    margin: 0 20px 75px;
 
     ${mediaQueries.mediumUp}  {
-        margin: 0 40px 150px;
+        margin: 0 40px 100px;
     }
 
     ${mediaQueries.largeUp}  {
-        margin: 0 100px 150px;
+        margin: 0 100px 100px;
     }
+`;
+
+const SearchWrapper = styled.div`
+    padding: 0 10px;
+    max-width: 750px;
+    margin: 25px auto;
 `;
 
 const Frontpage = ({ data, pageContext }) => {
@@ -146,15 +152,17 @@ const Frontpage = ({ data, pageContext }) => {
                         <br />
                         <a href="https://link.medium.com/AdCsZLiM31">on our blog</a>.
                     </Description>
-                    <Search
-                        searchIndex={pageContext.siteSearchIndex.index}
-                        isPreview={pageContext.isPreview}
-                    />
                 </div>
                 <ChristmasTreeDesktop>
                     <img src={treeImage} alt="" />
                 </ChristmasTreeDesktop>
             </Top>
+            <SearchWrapper>
+                <Search
+                    searchIndex={pageContext.siteSearchIndex.index}
+                    isPreview={pageContext.isPreview}
+                />
+            </SearchWrapper>
             <DailyWindowHeader>
                 {isDecember ? "Today's articles" : 'Our calendars'}
             </DailyWindowHeader>

@@ -14,8 +14,6 @@ const Input = styled.input`
 
 const SearchWrapper = styled.div`
     position: relative;
-    max-width: 500px;
-    width: 100%;
 `;
 
 const ResultList = styled.ul`
