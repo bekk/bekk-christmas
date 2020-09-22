@@ -9,27 +9,50 @@ const SearchWrapper = styled.div`
     position: relative;
 `;
 
+const SearchBackground = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+    pointer-events: none;
+
+    ${({ hidden }) =>
+        hidden &&
+        `
+    background: none;
+  `}
+`;
+
+const SearchForeground = styled.div`
+    position: relative;
+    z-index: 11;
+`;
+
 const ResultList = styled.ul`
     position: absolute;
     width: 100%;
-    padding: 20px;
+    padding: 0;
     margin: 0;
-    margin-top: -1px;
     list-style: none;
-    border: 1px solid gray;
-    background: white;
+    transform: translateY(15px);
 
     &:empty {
         display: none;
     }
-
-    & > * + * {
-        margin-top: 0.5rem;
-    }
 `;
 
 const ResultListItem = styled.li`
-    font-size: 1.25rem;
+    font-size: 21px;
+    padding: 7px 0;
+    a {
+        text-decoration: none;
+        &:hover {
+            font-weight: bold;
+        }
+    }
 `;
 
 const InputLabel = styled.label`
@@ -123,7 +146,7 @@ const Search = ({ searchIndex, isPreview }) => {
 
     const resultList = (
         <ResultList>
-            {results.slice(0, 5).map((page) => {
+            {results.slice(0, 10).map((page) => {
                 return (
                     <ResultListItem key={page.id}>
                         <Link
@@ -144,10 +167,13 @@ const Search = ({ searchIndex, isPreview }) => {
 
     return (
         <SearchWrapper>
-            <InputLabel>Hva ser du etter?</InputLabel>
-            <Input value={query} onChange={(e) => search(e.target.value)} />
-            {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
-            {resultList}
+            <SearchBackground hidden={!query} />
+            <SearchForeground>
+                <InputLabel>Hva ser du etter?</InputLabel>
+                <Input value={query} onChange={(e) => search(e.target.value)} />
+                {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
+                {resultList}
+            </SearchForeground>
         </SearchWrapper>
     );
 };
