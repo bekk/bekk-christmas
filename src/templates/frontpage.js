@@ -83,14 +83,14 @@ const HeaderContainer = styled.div`
 const Top = styled.div`
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 75px;
+    margin: 0 20px 100px;
 
     ${mediaQueries.mediumUp}  {
-        margin: 0 40px 100px;
+        margin: 0 40px 150px;
     }
 
     ${mediaQueries.largeUp}  {
-        margin: 0 100px 100px;
+        margin: 0 100px 150px;
     }
 `;
 
