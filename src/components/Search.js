@@ -103,19 +103,20 @@ const MagnifierIcon = () => (
 const Search = ({ searchIndex, isPreview }) => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
-    let index = Index.load(searchIndex);
+
+    // I stor grad hentet fra pakkedokumentasjonen til gatsby-plugin-elasticlunr-search:
+    // https://www.gatsbyjs.com/plugins/@gatsby-contrib/gatsby-plugin-elasticlunr-search/?=search#consuming-in-your-site
 
     // Create an elastic lunr index and hydrate with graphql query results
-    const getOrCreateIndex = () => (index ? index : Index.load(searchIndex));
+    const index = Index.load(searchIndex);
 
     const search = (searchValue) => {
-        index = getOrCreateIndex();
         setQuery(searchValue);
-        // Query the index with search value to get list of IDs
-        // Map over the IDs, return the full set of fields as specified in gatsby-config
         setResults(
             index
+                // Query the index with search value to get list of IDs
                 .search(searchValue, { expand: true })
+                // Map over the IDs, return the full set of fields as specified in gatsby-config
                 .map(({ ref }) => index.documentStore.getDoc(ref))
         );
     };
@@ -123,7 +124,6 @@ const Search = ({ searchIndex, isPreview }) => {
     const resultList = (
         <ResultList>
             {results.slice(0, 5).map((page) => {
-                console.log(page);
                 return (
                     <ResultListItem key={page.id}>
                         <Link
