@@ -65,6 +65,20 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: feedPluginConfig(envCalendar),
         },
+        {
+            resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+            options: {
+                fields: [`title`],
+                resolvers: {
+                    MarkdownRemark: {
+                        title: (node) => node.frontmatter.title,
+                        calendar: (node) => node.frontmatter.calendar,
+                        post_year: (node) => node.frontmatter.post_year,
+                        post_day: (node) => node.frontmatter.post_day,
+                    },
+                },
+            },
+        },
     ],
     mapping: {
         'MarkdownRemark.frontmatter.authors': 'MarkdownRemark.frontmatter.title',

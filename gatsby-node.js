@@ -22,6 +22,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     id
                 }
             }
+            siteSearchIndex {
+                index
+            }
         }
     `);
 
@@ -156,6 +159,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 day: currentFrontpageDay,
                 year: THIS_YEAR,
                 isPreview,
+                siteSearchIndex: result.data.siteSearchIndex,
             },
         });
     }

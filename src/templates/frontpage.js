@@ -8,6 +8,7 @@ import * as mediaQueries from '../constants/media-queries';
 import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
+import Search from '../components/Search';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import Preview from './Preview';
@@ -145,6 +146,10 @@ const Frontpage = ({ data, pageContext }) => {
                         <br />
                         <a href="https://link.medium.com/AdCsZLiM31">on our blog</a>.
                     </Description>
+                    <Search
+                        searchIndex={pageContext.siteSearchIndex.index}
+                        isPreview={pageContext.isPreview}
+                    />
                 </div>
                 <ChristmasTreeDesktop>
                     <img src={treeImage} alt="" />
