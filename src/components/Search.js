@@ -5,13 +5,6 @@ import styled from 'styled-components';
 
 import { getCalendarPostLink } from '../utils';
 
-const Input = styled.input`
-    width: 100%;
-    padding: 20px;
-    font-size: 1.25rem;
-    border: 1px solid gray;
-`;
-
 const SearchWrapper = styled.div`
     position: relative;
 `;
@@ -39,6 +32,28 @@ const ResultListItem = styled.li`
     font-size: 1.25rem;
 `;
 
+const InputLabel = styled.label`
+    display: block;
+    height: 36px;
+    font-size: 21px;
+`;
+
+const Input = styled.input`
+    width: 100%;
+    height: 70px;
+
+    font-family: NewZaldBook;
+    font-size: 47px;
+
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+
+    &:focus {
+        border-color: var(--solnedgang);
+        outline: none;
+    }
+`;
+
 const Search = ({ searchIndex, isPreview }) => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
@@ -59,7 +74,7 @@ const Search = ({ searchIndex, isPreview }) => {
         );
     };
 
-    const loremipsumdolorsitamet = (
+    const resultList = (
         <ResultList>
             {results.slice(0, 5).map((page) => {
                 console.log(page);
@@ -83,12 +98,9 @@ const Search = ({ searchIndex, isPreview }) => {
 
     return (
         <SearchWrapper>
-            <Input
-                placeholder="Søk etter en artikkel"
-                value={query}
-                onChange={(e) => search(e.target.value)}
-            />
-            {loremipsumdolorsitamet}
+            <InputLabel>Hva ser du etter?</InputLabel>
+            <Input value={query} onChange={(e) => search(e.target.value)} />
+            {resultList}
         </SearchWrapper>
     );
 };
