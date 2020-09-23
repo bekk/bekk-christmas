@@ -1,10 +1,9 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import React from 'react';
 import styled from 'styled-components';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import BekkLogo from './BekkLogo';
 import * as mediaQueries from '../constants/media-queries';
-
 import { mapCalendarToName } from '../utils';
+import BekkLogo from './BekkLogo';
 
 const Link = styled(OutboundLink)`
     color: inherit;
@@ -56,6 +55,7 @@ const Column = styled.div`
 
 const calendars = [
     'css',
+    'dot-net',
     'functional',
     'java',
     'javascript',
@@ -65,6 +65,7 @@ const calendars = [
     'product',
     'react',
     'security',
+    'talks',
     'thecloud',
     'ux',
 ];
