@@ -12,6 +12,12 @@ module.exports = function getMetadataForSite(siteName = 'bekk') {
                 description: 'A Christmas calendar all about CSS',
                 siteUrl: 'https://css.christmas',
             };
+        case 'dot-net':
+            return {
+                title: '.net Christmas',
+                description: 'A Christmas calendar all about .net',
+                siteUrl: 'https://dot-net.christmas',
+            };
         case 'functional':
             return {
                 title: 'A Functional Christmas',
@@ -65,6 +71,12 @@ module.exports = function getMetadataForSite(siteName = 'bekk') {
                 title: 'Security Christmas',
                 description: 'A Christmas calendar all about infosec',
                 siteUrl: 'https://security.christmas',
+            };
+        case 'talks':
+            return {
+                title: 'Talks Christmas',
+                description: 'A Christmas calendar all about talks and presentations',
+                siteUrl: 'https://talks.christmas',
             };
         case 'thecloud':
             return {
