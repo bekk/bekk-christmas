@@ -129,5 +129,8 @@ export const getSearchResults = (query, searchIndex) => {
             .search(query, { expand: true })
             // Map over the IDs, return the full set of fields as specified in gatsby-config
             .map(({ ref }) => index.documentStore.getDoc(ref))
+            // As we use the title field for both authors and posts, we get both author-objects and post-objects
+            // Filter on the authors-field which exists on the post-object, but not the author-object
+            .filter((post) => post.authors)
     );
 };
