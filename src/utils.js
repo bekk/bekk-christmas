@@ -1,3 +1,5 @@
+import { Index } from 'elasticlunr';
+
 const getCalendarNumber = (calendar, year) => {
     switch (calendar) {
         case 'css':
@@ -112,4 +114,20 @@ export const getCalendarPostLink = (isPreview, calendar, year, day, forceFrontPa
     }
 
     return `${link}/${year}/${day}`;
+};
+
+export const getSearchResultsLink = (query) => `/search?${query}`;
+
+// I stor grad hentet fra pakkedokumentasjonen til gatsby-plugin-elasticlunr-search:
+// https://www.gatsbyjs.com/plugins/@gatsby-contrib/gatsby-plugin-elasticlunr-search/?=search#consuming-in-your-site
+export const getSearchResults = (query, searchIndex) => {
+    // Create an elastic lunr index and hydrate with graphql query results
+    const index = Index.load(searchIndex);
+    return (
+        index
+            // Query the index with search value to get list of IDs
+            .search(query, { expand: true })
+            // Map over the IDs, return the full set of fields as specified in gatsby-config
+            .map(({ ref }) => index.documentStore.getDoc(ref))
+    );
 };

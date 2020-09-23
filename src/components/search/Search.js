@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Index } from 'elasticlunr';
+import { navigate } from 'gatsby';
 
 import { CrossIcon, MagnifierIcon } from './Icons';
 import ResultList from './ResultList';
+import { getSearchResultsLink, getSearchResults } from '../../utils';
 
 const SearchWrapper = styled.div`
     position: relative;
@@ -16,14 +17,14 @@ const SearchBackground = styled.div`
     width: 100%;
     height: 100%;
     background: var(--primary-background-color);
-    opacity: 0.95;
+    opacity: 0;
     z-index: 10;
     pointer-events: none;
 
-    ${({ hidden }) =>
-        hidden &&
+    ${({ shown }) =>
+        shown &&
         `
-    opacity: 0;
+    opacity: 0.95;
   `}
 `;
 
@@ -54,35 +55,49 @@ const Input = styled.input`
     }
 `;
 
-const Search = ({ searchIndex, isPreview }) => {
-    const [query, setQuery] = useState('');
+const Search = ({ searchIndex, isPreview, searchValue = '', showAllResults = false }) => {
+    const [query, setQuery] = useState(searchValue);
     const [results, setResults] = useState([]);
-
-    // I stor grad hentet fra pakkedokumentasjonen til gatsby-plugin-elasticlunr-search:
-    // https://www.gatsbyjs.com/plugins/@gatsby-contrib/gatsby-plugin-elasticlunr-search/?=search#consuming-in-your-site
-
-    // Create an elastic lunr index and hydrate with graphql query results
-    const index = Index.load(searchIndex);
+    const [focus, setFocus] = useState(false);
 
     const search = (searchValue) => {
         setQuery(searchValue);
-        setResults(
-            index
-                // Query the index with search value to get list of IDs
-                .search(searchValue, { expand: true })
-                // Map over the IDs, return the full set of fields as specified in gatsby-config
-                .map(({ ref }) => index.documentStore.getDoc(ref))
-        );
+        setResults(getSearchResults(searchValue, searchIndex));
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            navigate(getSearchResultsLink(query));
+            showAllResults && e.target.blur();
+        }
+    };
+
+    const handleBlur = (e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+            setFocus(false);
+        }
     };
 
     return (
-        <SearchWrapper>
-            <SearchBackground hidden={!query} />
+        <SearchWrapper onBlur={(e) => handleBlur(e)} onFocus={() => setFocus(true)}>
+            <SearchBackground shown={query && focus} />
             <SearchForeground>
                 <InputLabel htmlFor="searchbar">Looking for a specific article?</InputLabel>
-                <Input id="searchbar" value={query} onChange={(e) => search(e.target.value)} />
+                <Input
+                    id="searchbar"
+                    value={query}
+                    onChange={(e) => search(e.target.value)}
+                    onKeyPress={(e) => handleKeyPress(e)}
+                />
                 {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
-                <ResultList results={results} isPreview={isPreview} />
+                {focus && (
+                    <ResultList
+                        query={query}
+                        results={results}
+                        isPreview={isPreview}
+                        showAllResults={showAllResults}
+                    />
+                )}
             </SearchForeground>
         </SearchWrapper>
     );

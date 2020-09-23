@@ -72,6 +72,9 @@ module.exports = {
                 resolvers: {
                     MarkdownRemark: {
                         title: (node) => node.frontmatter.title,
+                        authors: (node) => node.frontmatter.authors,
+                        ingress: (node) => node.frontmatter.ingress,
+                        image: (node) => node.frontmatter.image,
                         calendar: (node) => node.frontmatter.calendar,
                         post_year: (node) => node.frontmatter.post_year,
                         post_day: (node) => node.frontmatter.post_day,
