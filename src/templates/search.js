@@ -36,14 +36,6 @@ const SearchLayout = styled.main`
 const SearchResult = styled.article`
     margin-top: 50px;
 
-    ${mediaQueries.smallUp}  {
-        margin-top: 75px;
-    }
-
-    ${mediaQueries.largeUp}  {
-        margin-top: 100px;
-    }
-
     a {
         text-decoration: underline;
         font-size: 1.5em;
