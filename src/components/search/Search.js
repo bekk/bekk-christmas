@@ -15,14 +15,15 @@ const SearchBackground = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--primary-background-color);
+    opacity: 0.95;
     z-index: 10;
     pointer-events: none;
 
     ${({ hidden }) =>
         hidden &&
         `
-    background: none;
+    opacity: 0;
   `}
 `;
 
@@ -78,8 +79,8 @@ const Search = ({ searchIndex, isPreview }) => {
         <SearchWrapper>
             <SearchBackground hidden={!query} />
             <SearchForeground>
-                <InputLabel>Hva ser du etter?</InputLabel>
-                <Input value={query} onChange={(e) => search(e.target.value)} />
+                <InputLabel htmlFor="searchbar">Looking for a specific article?</InputLabel>
+                <Input id="searchbar" value={query} onChange={(e) => search(e.target.value)} />
                 {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
                 <ResultList results={results} isPreview={isPreview} />
             </SearchForeground>
