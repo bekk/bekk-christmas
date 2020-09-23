@@ -1,20 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import * as mediaQueries from '../../constants/media-queries';
+
 // Kopiert rett fra ansattlisten
 const Cross = styled.svg`
     position: absolute;
     width: 16px;
     height: 16px;
     padding: 10px;
-    right: 15px;
-    top: 71px;
+    top: 25px;
+    right: 0;
     transform: translateY(-50%);
     stroke: var(--text-color);
     stroke-linecap: square;
     stroke-width: 1.6;
     box-sizing: content-box;
     cursor: pointer;
+
+    ${mediaQueries.mediumUp}  {
+        right: 15px;
+        top: 71px;
+    }
 `;
 
 export const CrossIcon = (args) => (
@@ -27,12 +34,17 @@ const Magnifier = styled.svg`
     position: absolute;
     width: 39px;
     height: 39px;
+    top: 25px;
     right: 0;
-    top: 71px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(0.66667);
 
     path {
         fill: var(--text-color);
+    }
+
+    ${mediaQueries.mediumUp}  {
+        top: 71px;
+        transform: translateY(-50%);
     }
 `;
 

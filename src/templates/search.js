@@ -3,37 +3,55 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
+import * as mediaQueries from '../constants/media-queries';
+
+import GlobalStyles from '../components/GlobalStyles';
 import Search from '../components/search/Search';
 
 import ogImageSrc from '../images/teaser-1.jpg';
 import { setImageWidth, mapCalendarToName, getCalendarPostLink, getSearchResults } from '../utils';
 
-const SearchWrapper = styled.div`
-    padding: 0 10px;
-    max-width: 750px;
-    margin: 100px auto;
-`;
-
-const SearchResults = styled.main`
-    padding: 0 10px;
+const SearchLayout = styled.main`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     max-width: 750px;
     margin: 0 auto;
+
+    padding: 50px 20px;
+
+    ${mediaQueries.smallUp}  {
+        padding: 75px 20px;
+    }
+
+    ${mediaQueries.mediumUp}  {
+        padding: 100px 20px 50px;
+    }
+
+    ${mediaQueries.largeUp}  {
+        padding: 100px 20px 50px;
+    }
 `;
 
-const SearchResultItem = styled.article`
+const SearchResult = styled.article`
+    margin-top: 50px;
+
+    ${mediaQueries.smallUp}  {
+        margin-top: 75px;
+    }
+
+    ${mediaQueries.largeUp}  {
+        margin-top: 100px;
+    }
+
     a {
         text-decoration: underline;
         font-size: 1.5em;
         line-height: 140%;
     }
-
-    & + & {
-        margin-top: 100px;
-    }
 `;
 
-const SearchResultItemMeta = styled.div`
+const SearchResultInfo = styled.div`
     display: flex;
     justify-content: space-between;
 `;
@@ -46,7 +64,8 @@ const SearchResultsPage = ({ data, pageContext }) => {
     const searchIndex = pageContext.siteSearchIndex.index;
 
     return (
-        <Layout>
+        <SearchLayout>
+            <GlobalStyles />
             <Helmet>
                 <html lang="en" />
                 <title>Bekk Christmas</title>
@@ -61,40 +80,35 @@ const SearchResultsPage = ({ data, pageContext }) => {
                 />
                 <meta property="og:image" content={ogImageSrc} />
             </Helmet>
-            <SearchWrapper>
-                <Search
-                    searchIndex={searchIndex}
-                    isPreview={pageContext.isPreview}
-                    searchValue={query}
-                    showAllResults={true}
-                />
-            </SearchWrapper>
-            <SearchResults>
-                {getSearchResults(query, searchIndex).map((page) => (
-                    <SearchResultItem key={page.id}>
-                        <SearchResultItemMeta>
-                            <p>{page.authors.join(', ')}</p>
-                            <p>
-                                {mapCalendarToName(page.calendar)} {page.post_year}, Day{' '}
-                                {page.post_day}
-                            </p>
-                        </SearchResultItemMeta>
-                        <Link
-                            to={getCalendarPostLink(
-                                isPreview,
-                                page.calendar,
-                                page.post_year,
-                                page.post_day
-                            )}
-                        >
-                            {page.image && <img src={setImageWidth(page.image)} />}
-                            {page.title}
-                        </Link>
-                        <p>{page.ingress}</p>
-                    </SearchResultItem>
-                ))}
-            </SearchResults>
-        </Layout>
+            <Search
+                searchIndex={searchIndex}
+                isPreview={pageContext.isPreview}
+                searchValue={query}
+                showAllResults={true}
+            />
+            {getSearchResults(query, searchIndex).map((page) => (
+                <SearchResult key={page.id}>
+                    <SearchResultInfo>
+                        <p>{page.authors.join(', ')}</p>
+                        <p>
+                            {mapCalendarToName(page.calendar)} {page.post_year}, day {page.post_day}
+                        </p>
+                    </SearchResultInfo>
+                    <Link
+                        to={getCalendarPostLink(
+                            isPreview,
+                            page.calendar,
+                            page.post_year,
+                            page.post_day
+                        )}
+                    >
+                        {page.image && <img src={setImageWidth(page.image)} />}
+                        {page.title}
+                    </Link>
+                    <p>{page.ingress}</p>
+                </SearchResult>
+            ))}
+        </SearchLayout>
     );
 };
 

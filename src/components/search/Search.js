@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
+import * as mediaQueries from '../../constants/media-queries';
+
 import { CrossIcon, MagnifierIcon } from './Icons';
 import ResultList from './ResultList';
 import { getSearchResultsLink, getSearchResults } from '../../utils';
@@ -34,17 +36,21 @@ const SearchForeground = styled.div`
 `;
 
 const InputLabel = styled.label`
-    display: block;
+    display: none;
     height: 36px;
     font-size: 21px;
+
+    ${mediaQueries.mediumUp}  {
+        display: block;
+    }
 `;
 
 const Input = styled.input`
     width: 100%;
-    height: 70px;
+    height: 50px;
 
     font-family: NewZaldBook;
-    font-size: 47px;
+    font-size: 18px;
 
     border: none;
     border-bottom: 2px solid var(--text-color);
@@ -52,6 +58,15 @@ const Input = styled.input`
     &:focus {
         border-color: var(--solnedgang);
         outline: none;
+    }
+
+    ${mediaQueries.mediumUp} {
+        height: 70px;
+        font-size: 47px;
+
+        &::placeholder {
+            color: transparent;
+        }
     }
 `;
 
@@ -78,13 +93,16 @@ const Search = ({ searchIndex, isPreview, searchValue = '', showAllResults = fal
         }
     };
 
+    const prompt = 'Looking for a specific article?';
+
     return (
         <SearchWrapper onBlur={(e) => handleBlur(e)} onFocus={() => setFocus(true)}>
             <SearchBackground shown={query && focus} />
             <SearchForeground>
-                <InputLabel htmlFor="searchbar">Looking for a specific article?</InputLabel>
+                <InputLabel htmlFor="searchbar">{prompt}</InputLabel>
                 <Input
                     id="searchbar"
+                    placeholder={prompt}
                     value={query}
                     onChange={(e) => search(e.target.value)}
                     onKeyPress={(e) => handleKeyPress(e)}
