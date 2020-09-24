@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -48,12 +48,21 @@ const SearchResultInfo = styled.div`
     justify-content: space-between;
 `;
 
-const SearchResultsPage = ({ data, pageContext }) => {
-    const queryParams = window.location.search;
-    const query = decodeURI(queryParams).slice(1);
+const useQueryParams = () => {
+    const [queryParams, setQueryParams] = useState('');
 
+    useEffect(() => {
+        setQueryParams(decodeURI(window.location.search).slice(1));
+    });
+
+    return queryParams;
+};
+
+const SearchResultsPage = ({ pageContext }) => {
     const isPreview = pageContext.isPreview;
     const searchIndex = pageContext.siteSearchIndex.index;
+
+    const query = useQueryParams();
 
     return (
         <SearchLayout>
@@ -78,30 +87,35 @@ const SearchResultsPage = ({ data, pageContext }) => {
                 searchValue={query}
                 showAllResults={true}
             />
-            {getSearchResults(query, searchIndex).map((page) => (
-                <SearchResult key={page.id}>
-                    <SearchResultInfo>
-                        <p>{page.authors.join(', ')}</p>
-                        <p>
-                            {mapCalendarToName(page.calendar)} {page.post_year}, day {page.post_day}
-                        </p>
-                    </SearchResultInfo>
-                    <Link
-                        to={getCalendarPostLink(
-                            isPreview,
-                            page.calendar,
-                            page.post_year,
-                            page.post_day
-                        )}
-                    >
-                        {page.image && <img src={setImageWidth(page.image)} />}
-                        {page.title}
-                    </Link>
-                    <p>{page.ingress}</p>
-                </SearchResult>
-            ))}
+            <SearchResults
+                pages={getSearchResults(query, searchIndex)}
+                query={query}
+                isPreview={isPreview}
+            />
         </SearchLayout>
     );
+};
+
+const SearchResults = ({ pages, query, isPreview }) => {
+    if (pages.length === 0) {
+        return <p>No results found for "{query}".</p>;
+    }
+
+    return pages.map((page) => (
+        <SearchResult key={page.id}>
+            <SearchResultInfo>
+                <p>{page.authors.join(', ')}</p>
+                <p>
+                    {mapCalendarToName(page.calendar)} {page.post_year}, day {page.post_day}
+                </p>
+            </SearchResultInfo>
+            <Link to={getCalendarPostLink(isPreview, page.calendar, page.post_year, page.post_day)}>
+                {page.image && <img src={setImageWidth(page.image)} />}
+                {page.title}
+            </Link>
+            <p>{page.ingress}</p>
+        </SearchResult>
+    ));
 };
 
 export default SearchResultsPage;
