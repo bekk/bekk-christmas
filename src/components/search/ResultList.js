@@ -33,12 +33,15 @@ const ResultListItem = styled.li`
 
 const QueryLink = styled(Link)`
     display: block;
-    margin-top: 15px;
+    margin: 10px 0;
     text-decoration: underline;
 `;
 
-const ResultList = ({ query, results, isPreview, showAllResults }) => (
+const ResultList = ({ query, results, isPreview }) => (
     <ResultListContainer>
+        {query && (
+            <QueryLink to={getSearchResultsLink(query)}>Show all results for "{query}"</QueryLink>
+        )}
         <ResultListItems>
             {results.slice(0, 10).map((page) => {
                 return (
@@ -57,9 +60,6 @@ const ResultList = ({ query, results, isPreview, showAllResults }) => (
                 );
             })}
         </ResultListItems>
-        {query && !showAllResults && (
-            <QueryLink to={getSearchResultsLink(query)}>Show all results for "{query}"</QueryLink>
-        )}
     </ResultListContainer>
 );
 

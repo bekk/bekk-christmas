@@ -110,14 +110,7 @@ const Search = ({ searchIndex, isPreview, searchValue = '', showAllResults = fal
                     onKeyPress={(e) => handleKeyPress(e)}
                 />
                 {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
-                {focus && (
-                    <ResultList
-                        query={query}
-                        results={results}
-                        isPreview={isPreview}
-                        showAllResults={showAllResults}
-                    />
-                )}
+                {focus && <ResultList query={query} results={results} isPreview={isPreview} />}
             </SearchForeground>
         </SearchWrapper>
     );
