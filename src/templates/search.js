@@ -33,6 +33,18 @@ const SearchLayout = styled.main`
     }
 `;
 
+const FrontpageLink = styled(Link)`
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 20px;
+
+    ${mediaQueries.largeUp}  {
+        display: block;
+    }
+`;
+
 const SearchResult = styled.article`
     margin-top: 50px;
 
@@ -132,6 +144,7 @@ const SearchResultsPage = ({ pageContext }) => {
                 />
                 <meta property="og:image" content={ogImageSrc} />
             </Helmet>
+            <FrontpageLink to="/">Back to the frontpage</FrontpageLink>
             <Search
                 searchIndex={searchIndex}
                 isPreview={pageContext.isPreview}
