@@ -69,6 +69,26 @@ const SearchResultTitle = styled.p`
     margin: 1rem 0;
 `;
 
+const SearchResultIngress = styled.p`
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    /* Line height * font-size * 3 lines of text */
+    max-height: 67.2px;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        /* Fade out the last line of text */
+        height: 22.4px;
+        width: 100%;
+        left: 0;
+        top: 44.8px;
+        background: linear-gradient(120deg, transparent 0%, var(--primary-background-color) 50%);
+    }
+`;
+
 const SearchResultInfo = styled.div`
     display: flex;
     justify-content: space-between;
@@ -142,7 +162,7 @@ const SearchResults = ({ pages, query, isPreview }) => {
                 )}
                 <SearchResultTitle>{page.title}</SearchResultTitle>
             </Link>
-            <p>{page.ingress}</p>
+            <SearchResultIngress>{page.ingress}</SearchResultIngress>
             <SearchResultInfo>
                 <p>{page.authors.join(', ')}</p>
                 <p>
