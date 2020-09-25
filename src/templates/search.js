@@ -9,7 +9,7 @@ import GlobalStyles from '../components/GlobalStyles';
 import Search from '../components/search/Search';
 
 import ogImageSrc from '../images/teaser-1.jpg';
-import { setImageWidth, mapCalendarToName, getCalendarPostLink, getSearchResults } from '../utils';
+import { setImageHeight, mapCalendarToName, getCalendarPostLink, getSearchResults } from '../utils';
 
 const SearchLayout = styled.main`
     display: flex;
@@ -36,16 +36,47 @@ const SearchLayout = styled.main`
 const SearchResult = styled.article`
     margin-top: 50px;
 
-    a {
-        text-decoration: underline;
-        font-size: 1.5em;
-        line-height: 140%;
+    ${mediaQueries.smallUp}  {
+        margin-top: 75px;
     }
+
+    a {
+        text-decoration: none;
+        transition: color 0.2s;
+
+        img {
+            transition: transform 0.2s;
+        }
+
+        &:hover {
+            color: var(--solnedgang-kontrast);
+
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+`;
+
+const SearchResultImageWrapper = styled.div`
+    overflow: hidden;
+    max-height: 300px;
+`;
+
+const SearchResultTitle = styled.p`
+    font-size: 2rem;
+    font-family: NewZaldBook, serif;
+    margin: 1rem 0;
 `;
 
 const SearchResultInfo = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
 `;
 
 const useQueryParams = () => {
@@ -103,17 +134,21 @@ const SearchResults = ({ pages, query, isPreview }) => {
 
     return pages.map((page) => (
         <SearchResult key={page.id}>
+            <Link to={getCalendarPostLink(isPreview, page.calendar, page.post_year, page.post_day)}>
+                {page.image && (
+                    <SearchResultImageWrapper>
+                        <img src={setImageHeight(page.image)} />
+                    </SearchResultImageWrapper>
+                )}
+                <SearchResultTitle>{page.title}</SearchResultTitle>
+            </Link>
+            <p>{page.ingress}</p>
             <SearchResultInfo>
                 <p>{page.authors.join(', ')}</p>
                 <p>
                     {mapCalendarToName(page.calendar)} {page.post_year}, day {page.post_day}
                 </p>
             </SearchResultInfo>
-            <Link to={getCalendarPostLink(isPreview, page.calendar, page.post_year, page.post_day)}>
-                {page.image && <img src={setImageWidth(page.image)} />}
-                {page.title}
-            </Link>
-            <p>{page.ingress}</p>
         </SearchResult>
     ));
 };

@@ -65,6 +65,15 @@ export const setImageWidth = (url) => {
     return url;
 };
 
+export const setImageHeight = (url) => {
+    if (url.includes('unsplash')) {
+        const urlPart = url.split('?')[0];
+        return urlPart + '?w=710&h=300&fit=crop&crop=edges';
+    }
+
+    return url;
+};
+
 export const mapCalendarToName = (calendar) => {
     switch (calendar) {
         case 'javascript':
