@@ -172,7 +172,7 @@ const SearchResults = ({ pages, query, isPreview }) => {
             <Link to={getCalendarPostLink(isPreview, page.calendar, page.post_year, page.post_day)}>
                 {page.image && (
                     <SearchResultImageWrapper>
-                        <img src={setImageHeight(page.image)} />
+                        <img src={setImageHeight(page.image)} alt="" />
                     </SearchResultImageWrapper>
                 )}
                 <SearchResultTitle>{page.title}</SearchResultTitle>
