@@ -49,9 +49,11 @@ const Input = styled.input`
     width: 100%;
     height: 50px;
 
-    font-family: NewZaldBook;
+    font-family: NewZaldBook, serif;
     font-size: 18px;
 
+    color: var(--text-color);
+    background: transparent;
     border: none;
     border-bottom: 2px solid var(--text-color);
 
