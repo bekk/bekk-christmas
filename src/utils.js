@@ -1,3 +1,5 @@
+import { Index } from 'elasticlunr';
+
 const getCalendarNumber = (calendar, year) => {
     switch (calendar) {
         case 'css':
@@ -65,6 +67,15 @@ export const setImageWidth = (url) => {
     return url;
 };
 
+export const setImageHeight = (url) => {
+    if (url.includes('unsplash')) {
+        const urlPart = url.split('?')[0];
+        return urlPart + '?w=710&h=300&fit=crop&crop=edges';
+    }
+
+    return url;
+};
+
 export const mapCalendarToName = (calendar) => {
     switch (calendar) {
         case 'javascript':
@@ -118,4 +129,23 @@ export const getCalendarPostLink = (isPreview, calendar, year, day, forceFrontPa
     }
 
     return `${link}/${year}/${day}`;
+};
+
+export const getSearchResultsLink = (query) => `/search?${query}`;
+
+// I stor grad hentet fra pakkedokumentasjonen til gatsby-plugin-elasticlunr-search:
+// https://www.gatsbyjs.com/plugins/@gatsby-contrib/gatsby-plugin-elasticlunr-search/?=search#consuming-in-your-site
+export const getSearchResults = (query, searchIndex) => {
+    // Create an elastic lunr index and hydrate with graphql query results
+    const index = Index.load(searchIndex);
+    return (
+        index
+            // Query the index with search value to get list of IDs
+            .search(query, { expand: true })
+            // Map over the IDs, return the full set of fields as specified in gatsby-config
+            .map(({ ref }) => index.documentStore.getDoc(ref))
+            // As we use the title field for both authors and posts, we get both author-objects and post-objects
+            // Filter on the authors-field which exists on the post-object, but not the author-object
+            .filter((post) => post.authors)
+    );
 };

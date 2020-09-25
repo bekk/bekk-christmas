@@ -7,6 +7,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
+    const searchTemplate = path.resolve(`src/templates/search.js`);
 
     const { createPage } = actions;
 
@@ -21,6 +22,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     }
                     id
                 }
+            }
+            siteSearchIndex {
+                index
             }
         }
     `);
@@ -156,7 +160,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 day: currentFrontpageDay,
                 year: THIS_YEAR,
                 isPreview,
+                siteSearchIndex: result.data.siteSearchIndex,
             },
         });
     }
+
+    // Search results page
+    createPage({
+        path: '/search',
+        component: searchTemplate,
+        context: {
+            isPreview,
+            siteSearchIndex: result.data.siteSearchIndex,
+        },
+    });
 };
