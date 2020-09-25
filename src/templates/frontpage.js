@@ -10,7 +10,6 @@ import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
-import Preview from './Preview';
 import PreviousCalendars from '../components/PreviousCalendars';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
@@ -100,12 +99,7 @@ const Frontpage = ({ data, pageContext }) => {
     const isDecember = new Date().getMonth() === 11;
 
     if (showTeaser) {
-        return (
-            <>
-                <Teaser />
-                <Preview calendarsWithContent={pageContext.calendarsWithContent} />
-            </>
-        );
+        return <Teaser />;
     }
 
     return (
