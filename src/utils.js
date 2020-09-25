@@ -1,12 +1,14 @@
 const getCalendarNumber = (calendar, year) => {
     switch (calendar) {
         case 'css':
+        case 'talks':
             return '01';
         case 'functional':
             return '02';
         case 'thecloud':
             return '03';
         case 'opensource':
+        case 'dot-net':
             return '04';
         case 'java':
             return '05';
@@ -89,6 +91,10 @@ export const mapCalendarToName = (calendar) => {
             return 'UX';
         case 'css':
             return 'CSS';
+        case 'talks':
+            return 'Talks';
+        case 'dot-net':
+            return '.net';
         default:
             return null;
     }

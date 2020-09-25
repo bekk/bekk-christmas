@@ -1,8 +1,8 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import React from 'react';
 import styled from 'styled-components';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import BekkLogo from './BekkLogo';
 import * as mediaQueries from '../constants/media-queries';
+import BekkLogo from './BekkLogo';
 
 const Container = styled.footer`
     max-width: 1600px;
