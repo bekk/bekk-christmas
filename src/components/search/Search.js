@@ -1,12 +1,10 @@
+import { navigate } from 'gatsby';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
-
 import * as mediaQueries from '../../constants/media-queries';
-
+import { getSearchResults, getSearchResultsLink } from '../../utils';
 import { CrossIcon, MagnifierIcon } from './Icons';
 import ResultList from './ResultList';
-import { getSearchResultsLink, getSearchResults } from '../../utils';
 
 const SearchWrapper = styled.div`
     position: relative;
@@ -82,10 +80,14 @@ const Search = ({ searchIndex, isPreview, searchValue = '', showAllResults = fal
         setResults(getSearchResults(searchValue, searchIndex));
     };
 
-    const handleKeyPress = (e) => {
-        if (e.key === 'Enter') {
-            navigate(getSearchResultsLink(query));
-            showAllResults && e.target.blur();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!query) {
+            return;
+        }
+        navigate(getSearchResultsLink(query));
+        if (showAllResults) {
+            e.target.blur();
         }
     };
 
@@ -100,14 +102,13 @@ const Search = ({ searchIndex, isPreview, searchValue = '', showAllResults = fal
     return (
         <SearchWrapper onBlur={(e) => handleBlur(e)} onFocus={() => setFocus(true)}>
             <SearchBackground shown={query && focus} />
-            <SearchForeground>
+            <SearchForeground as="form" onSubmit={handleSubmit}>
                 <InputLabel htmlFor="searchbar">{prompt}</InputLabel>
                 <Input
                     id="searchbar"
                     placeholder={prompt}
                     value={query}
                     onChange={(e) => search(e.target.value)}
-                    onKeyPress={(e) => handleKeyPress(e)}
                 />
                 {query ? <CrossIcon onClick={() => search('')} /> : <MagnifierIcon />}
                 {focus && <ResultList query={query} results={results} isPreview={isPreview} />}
