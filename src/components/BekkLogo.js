@@ -11,17 +11,14 @@ const fade = keyframes`
 const Container = styled.a`
     display: block;
     fill: var(--text-color);
-    width: 200px;
-    ${mediaQueries.mediumUp} {
-        margin-top: 50px;
-    }
+    width: 150px;
 
     cursor: pointer;
 
     &:focus,
     &:hover {
         path {
-            fill: var(--secondary-background-color)
+            fill: var(--secondary-background-color);
             animation-duration: 0.15s;
             animation-name: ${fade};
             animation-timing-function: ease-in-out;

@@ -4,10 +4,23 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import BekkLogo from './BekkLogo';
 import * as mediaQueries from '../constants/media-queries';
 
-import { mapCalendarToName } from '../utils';
+const Container = styled.footer`
+    max-width: 1600px;
+    margin: 75px auto 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-const Link = styled(OutboundLink)`
-    color: inherit;
+    ${mediaQueries.mediumUp} {
+        padding: 30px;
+    }
+`;
+
+const Description = styled.p`
+    text-align: center;
+    max-width: 400px;
+    margin: 20px 0;
 `;
 
 const FlatList = styled.ul`
@@ -25,91 +38,25 @@ const FlatListItem = styled.li`
     }
 `;
 
-const Description = styled.p`
-    max-width: 350px;
-    margin: 0;
-    ${mediaQueries.mediumUp} {
-        margin-top: 48px;
-    }
-`;
-
-const Container = styled.footer`
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
-
-    ${mediaQueries.mediumUp} {
-        align-items: end;
-        flex-direction: row;
-        padding: 30px;
-    }
-`;
-
-const Column = styled.div`
-    margin-bottom: 50px;
-`;
-
-const calendars = [
-    'css',
-    'functional',
-    'java',
-    'javascript',
-    'kotlin',
-    'ml',
-    'opensource',
-    'product',
-    'react',
-    'security',
-    'thecloud',
-    'ux',
-];
-
-const SiteFooter = ({ calendarName }) => {
-    const otherCalendars = calendars.filter((calendar) => calendar !== calendarName);
-
-    return (
-        <Container>
-            <Column>
-                <h2 style={{ marginTop: 0 }}>
-                    <a href="https://bekk.christmas">Bekk Christmas</a>
-                </h2>
-                <FlatList>
-                    {otherCalendars.map((calendar) => (
-                        <li key={calendar}>
-                            <Link href={`https://${calendar}.christmas`}>
-                                {mapCalendarToName(calendar) + ' Christmas'}
-                            </Link>
-                        </li>
-                    ))}
-                </FlatList>
-            </Column>
-            <Column>
-                <Description>
-                    Bekk is all about craftmanship and the people crafting it. This year, we're
-                    creating 11 advent calendars, each with daily original content made by us.
-                </Description>
-            </Column>
-            <Column>
-                <BekkLogo />
-                <FlatList style={{ marginTop: 20 }}>
-                    <FlatListItem>
-                        <Link href="https://www.instagram.com/livetibekk/">Instagram</Link>
-                    </FlatListItem>
-                    <FlatListItem>
-                        <Link href="https://www.facebook.com/livetibekk/">Facebook</Link>
-                    </FlatListItem>
-                    <FlatListItem>
-                        <Link href="https://blogg.bekk.no/">Blog</Link>
-                    </FlatListItem>
-                </FlatList>
-            </Column>
-        </Container>
-    );
-};
+const SiteFooter = () => (
+    <Container>
+        <BekkLogo />
+        <Description>
+            Bekk is all about craftmanship and the people crafting it. This year, we're creating 11
+            advent calendars, each with daily original content made by us.
+        </Description>
+        <FlatList>
+            <FlatListItem>
+                <OutboundLink href="https://www.instagram.com/livetibekk/">Instagram</OutboundLink>
+            </FlatListItem>
+            <FlatListItem>
+                <OutboundLink href="https://www.facebook.com/livetibekk/">Facebook</OutboundLink>
+            </FlatListItem>
+            <FlatListItem>
+                <OutboundLink href="https://blogg.bekk.no/">Blog</OutboundLink>
+            </FlatListItem>
+        </FlatList>
+    </Container>
+);
 
 export default SiteFooter;
