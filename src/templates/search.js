@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import striptags from 'striptags';
 
 import * as mediaQueries from '../constants/media-queries';
 
@@ -99,6 +100,10 @@ const SearchResultIngress = styled.p`
         top: 44.8px;
         background: linear-gradient(120deg, transparent 0%, var(--primary-background-color) 50%);
     }
+
+    &:empty {
+        display: none;
+    }
 `;
 
 const SearchResultInfo = styled.div`
@@ -175,7 +180,7 @@ const SearchResults = ({ pages, query, isPreview }) => {
                 )}
                 <SearchResultTitle>{page.title}</SearchResultTitle>
             </Link>
-            <SearchResultIngress>{page.ingress}</SearchResultIngress>
+            <SearchResultIngress>{striptags(page.ingress)}</SearchResultIngress>
             <SearchResultInfo>
                 <p>{page.authors.join(', ')}</p>
                 <p>
