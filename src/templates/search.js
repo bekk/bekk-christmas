@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import striptags from 'striptags';
-
-import * as mediaQueries from '../constants/media-queries';
-
+import styled from 'styled-components';
 import GlobalStyles from '../components/GlobalStyles';
 import Search from '../components/search/Search';
-
+import * as mediaQueries from '../constants/media-queries';
 import ogImageSrc from '../images/teaser-1.jpg';
-import { setImageHeight, mapCalendarToName, getCalendarPostLink, getSearchResults } from '../utils';
+import { getCalendarPostLink, getSearchResults, mapCalendarToName, setImageHeight } from '../utils';
 
 const SearchLayout = styled.main`
     display: flex;
@@ -149,7 +146,7 @@ const SearchResultsPage = ({ pageContext }) => {
                 />
                 <meta property="og:image" content={ogImageSrc} />
             </Helmet>
-            <FrontpageLink to="/">Back to the frontpage</FrontpageLink>
+            <FrontpageLink to="/">Go back</FrontpageLink>
             <Search
                 searchIndex={searchIndex}
                 isPreview={pageContext.isPreview}
