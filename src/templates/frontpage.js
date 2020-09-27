@@ -11,7 +11,7 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Search from '../components/search/Search';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
-import Preview from './Preview';
+import PreviousCalendars from '../components/PreviousCalendars';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 import treeImage from '../images/frontpage-tree.png';
@@ -40,7 +40,7 @@ const Description = styled.p`
     }
 `;
 
-const DailyWindowHeader = styled.h2`
+const CalendarHeading = styled.h2`
     font-weight: 400;
     font-size: 3em;
     padding-left: 10px;
@@ -106,12 +106,7 @@ const Frontpage = ({ data, pageContext }) => {
     const isDecember = new Date().getMonth() === 11;
 
     if (showTeaser) {
-        return (
-            <>
-                <Teaser />
-                <Preview calendarsWithContent={pageContext.calendarsWithContent} />
-            </>
-        );
+        return <Teaser />;
     }
 
     return (
@@ -163,9 +158,7 @@ const Frontpage = ({ data, pageContext }) => {
                     isPreview={pageContext.isPreview}
                 />
             </SearchWrapper>
-            <DailyWindowHeader>
-                {isDecember ? "Today's articles" : 'Our calendars'}
-            </DailyWindowHeader>
+            <CalendarHeading>{isDecember ? "Today's articles" : 'Our calendars'}</CalendarHeading>
             <Calendar>
                 {calendars.map((calendar) => (
                     <li key={calendar.calendar}>
@@ -200,7 +193,8 @@ const Frontpage = ({ data, pageContext }) => {
                     </li>
                 ))}
             </Calendar>
-            <Preview calendarsWithContent={pageContext.calendarsWithContent} />
+            <CalendarHeading>Previous Calendars</CalendarHeading>
+            <PreviousCalendars calendarsWithContent={pageContext.calendarsWithContent} />
         </Layout>
     );
 };
