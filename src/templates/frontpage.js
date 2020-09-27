@@ -8,6 +8,7 @@ import * as mediaQueries from '../constants/media-queries';
 import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
+import Search from '../components/search/Search';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import PreviousCalendars from '../components/PreviousCalendars';
@@ -93,6 +94,12 @@ const Top = styled.div`
     }
 `;
 
+const SearchWrapper = styled.div`
+    padding: 0 10px;
+    max-width: 750px;
+    margin: 25px auto;
+`;
+
 const Frontpage = ({ data, pageContext }) => {
     const calendars = data.allMarkdownRemark.nodes.map((markdown) => markdown.frontmatter);
     const showTeaser = calendars.length === 0;
@@ -145,6 +152,12 @@ const Frontpage = ({ data, pageContext }) => {
                     <img src={treeImage} alt="" />
                 </ChristmasTreeDesktop>
             </Top>
+            <SearchWrapper>
+                <Search
+                    searchIndex={pageContext.siteSearchIndex.index}
+                    isPreview={pageContext.isPreview}
+                />
+            </SearchWrapper>
             <CalendarHeading>{isDecember ? "Today's articles" : 'Our calendars'}</CalendarHeading>
             <Calendar>
                 {calendars.map((calendar) => (
