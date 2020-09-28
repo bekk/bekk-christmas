@@ -8,7 +8,8 @@ ingress: Sunday is our day off. Every sunday until Christmas we'll post a
   JavaScript puzzle. Hopefully you'll figure it out.
 description: Sunday is our day off. Every sunday until Christmas we'll post a
   JavaScript puzzle. Hopefully you'll figure it out.
-authors: []
+authors:
+  - Svein Petter Gjøby
 ---
 JavaScript is forgiving. You can add almost anything with the plus operator. However, it's not always clear what the outcome will be. What's the output of the codesnippet below? 
 
