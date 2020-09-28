@@ -16,7 +16,7 @@ authors:
 JavaScript is forgiving. You can add almost anything with the plus operator. However, it's not always clear what the outcome will be. 
 
 
-## What's the output of the codes nippet below? 
+What's the output of the codes nippet below? 
 
 ```javascript
 const myAwesomeString = 1+2+"A"+2+2+[]+"0";
