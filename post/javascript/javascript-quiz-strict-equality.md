@@ -10,7 +10,8 @@ ingress: Sunday is our day off, it's a day to relax and unwind. It's a perfect
 description: Sunday is our day off, it's a day to relax and unwind. It's a
   perfect day to wonder about the oddities of JavaScript. Every sunday until
   Christmas we'll post a quiz question. Can you figure it out?
-authors: []
+authors:
+  - Svein Petter Gjøby
 ---
 Equality in JavaScript can be frustrating. When is it OK to use `==`, and when should you use `===`? 
 
