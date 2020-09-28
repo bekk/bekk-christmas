@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 6
 title: JavaScript Quiz - Add all the things
-image: https://images.unsplash.com/photo-1548175551-1edaea7bbf0d
+image: https://images.unsplash.com/photo-1512766483272-0efe0291eea0
 ingress: Sunday is our day off, it's a day to relax and unwind. It's a perfect
   day to wonder about the oddities of JavaScript. Every sunday until Christmas
   we'll post a quiz question. Can you figure it out?
