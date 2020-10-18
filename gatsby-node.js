@@ -8,6 +8,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
     const searchTemplate = path.resolve(`src/templates/search.js`);
+    const redirectTemplate = path.resolve(`src/templates/redirect.js`);
 
     const { createPage } = actions;
 
@@ -52,6 +53,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             (node) => node.frontmatter.calendar
         );
 
+        // Create each post
         posts.forEach((node) => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
@@ -90,10 +92,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
             calendarPath += `/${post_year}`;
 
-            if (!calendarPath) {
-                calendarPath = '/';
-            }
-
             // Add each unique calendar path to the `calendars` object.
             // We'll create the actual calendar pages below
             calendars[calendarPath] = {
@@ -106,26 +104,42 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         });
 
         // create calendar pages for all unique calendar years
-        Object.entries(calendars).forEach(([calendarPath, context]) => {
+        Object.entries(calendars).forEach(([calendarPath, context], index) => {
+            const postsFromThisCalendar = posts.filter(
+                (post) => post.frontmatter.calendar === context.calendar
+            );
             // First, we get the paths of calendar years that has the same name
             // but a different year. For React, for example, we get /2018 and
-            // /2017 when we're building this year's React calendar. For UX,
+            // /2017 when we're building this year's React calendar. For ML,
             // we don't get anything, because they only have a single year of
             // content (well, so far).
             const relatedCalendarPaths = Array.from(
                 new Set(
-                    posts
-                        .filter(
-                            (post) =>
-                                post.frontmatter.calendar === context.calendar &&
-                                post.frontmatter.post_year !== context.year
-                        )
+                    postsFromThisCalendar
+                        .filter((post) => post.frontmatter.post_year !== context.year)
                         .map((post) => {
                             let path = isPreview ? `/${context.calendar}` : '';
                             return `${path}/${post.frontmatter.post_year}`;
                         })
                 )
             );
+
+            // Figure out what the newest year of a calendar is
+            const latestYear = Math.max(
+                ...postsFromThisCalendar.map((post) => post.frontmatter.post_year)
+            );
+
+            // Create redirect for the base URL
+            if (index === 0) {
+                createPage({
+                    path: '/',
+                    component: redirectTemplate,
+                    context: {
+                        redirectTo: `/${latestYear}`,
+                    },
+                });
+            }
+
             // Finally, we call `createPage` to create the actual calendar page
             createPage({
                 path: calendarPath,
