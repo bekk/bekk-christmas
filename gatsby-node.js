@@ -103,8 +103,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             calendarsWithContent.add(calendarPath);
         });
 
+        let createdRedirects = {};
+
         // create calendar pages for all unique calendar years
-        Object.entries(calendars).forEach(([calendarPath, context], index) => {
+        Object.entries(calendars).forEach(([calendarPath, context]) => {
             const postsFromThisCalendar = posts.filter(
                 (post) => post.frontmatter.calendar === context.calendar
             );
@@ -130,14 +132,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             );
 
             // Create redirect for the base URL
-            if (index === 0) {
+            if (!createdRedirects[context.calendar]) {
+                // We only create one root route per calendar
+                // so for react.christmas, this loop will be run 4 times, but
+                // we still only want it to run once. That's why we use the
+                // createdRedirects object to "register" each calendar as
+                // created.
                 createPage({
-                    path: '/',
+                    path: isPreview ? `/${context.calendar}` : '/',
                     component: redirectTemplate,
                     context: {
-                        redirectTo: `/${latestYear}`,
+                        ...context,
+                        redirectTo: isPreview
+                            ? `/${context.calendar}/${latestYear}`
+                            : `/${latestYear}`,
                     },
                 });
+                createdRedirects[context.calendar] = true;
             }
 
             // Finally, we call `createPage` to create the actual calendar page

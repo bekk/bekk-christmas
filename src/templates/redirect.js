@@ -1,5 +1,6 @@
 import { useNavigate } from '@reach/router';
 import { useEffect } from 'react';
+
 const RedirectTemplate = ({ pageContext }) => {
     const navigate = useNavigate();
     useEffect(() => {
