@@ -8,6 +8,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
     const searchTemplate = path.resolve(`src/templates/search.js`);
+    const redirectTemplate = path.resolve(`src/templates/redirect.js`);
 
     const { createPage } = actions;
 
@@ -52,6 +53,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             (node) => node.frontmatter.calendar
         );
 
+        // Create each post
         posts.forEach((node) => {
             const { calendar, post_year, post_day } = node.frontmatter;
 
@@ -90,10 +92,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
             calendarPath += `/${post_year}`;
 
-            if (!calendarPath) {
-                calendarPath = '/';
-            }
-
             // Add each unique calendar path to the `calendars` object.
             // We'll create the actual calendar pages below
             calendars[calendarPath] = {
@@ -105,27 +103,54 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             calendarsWithContent.add(calendarPath);
         });
 
+        let createdRedirects = {};
+
         // create calendar pages for all unique calendar years
         Object.entries(calendars).forEach(([calendarPath, context]) => {
+            const postsFromThisCalendar = posts.filter(
+                (post) => post.frontmatter.calendar === context.calendar
+            );
             // First, we get the paths of calendar years that has the same name
             // but a different year. For React, for example, we get /2018 and
-            // /2017 when we're building this year's React calendar. For UX,
+            // /2017 when we're building this year's React calendar. For ML,
             // we don't get anything, because they only have a single year of
             // content (well, so far).
             const relatedCalendarPaths = Array.from(
                 new Set(
-                    posts
-                        .filter(
-                            (post) =>
-                                post.frontmatter.calendar === context.calendar &&
-                                post.frontmatter.post_year !== context.year
-                        )
+                    postsFromThisCalendar
+                        .filter((post) => post.frontmatter.post_year !== context.year)
                         .map((post) => {
                             let path = isPreview ? `/${context.calendar}` : '';
                             return `${path}/${post.frontmatter.post_year}`;
                         })
                 )
             );
+
+            // Figure out what the newest year of a calendar is
+            const latestYear = Math.max(
+                ...postsFromThisCalendar.map((post) => post.frontmatter.post_year)
+            );
+
+            // Create redirect for the base URL
+            if (!createdRedirects[context.calendar]) {
+                // We only create one root route per calendar
+                // so for react.christmas, this loop will be run 4 times, but
+                // we still only want it to run once. That's why we use the
+                // createdRedirects object to "register" each calendar as
+                // created.
+                createPage({
+                    path: isPreview ? `/${context.calendar}` : '/',
+                    component: redirectTemplate,
+                    context: {
+                        ...context,
+                        redirectTo: isPreview
+                            ? `/${context.calendar}/${latestYear}`
+                            : `/${latestYear}`,
+                    },
+                });
+                createdRedirects[context.calendar] = true;
+            }
+
             // Finally, we call `createPage` to create the actual calendar page
             createPage({
                 path: calendarPath,
