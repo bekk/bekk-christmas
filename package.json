@@ -5,9 +5,9 @@
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
-        "build": "gatsby build",
-        "build:preview": "cross-env CALENDAR_ENV=preview gatsby build",
-        "build:calendar": "gatsby build",
+        "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+        "build:preview": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true CALENDAR_ENV=preview gatsby build",
+        "build:calendar": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "gatsby develop",
         "start:preview": "cross-env CALENDAR_ENV=preview gatsby develop",
