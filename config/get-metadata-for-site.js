@@ -90,6 +90,18 @@ module.exports = function getMetadataForSite(siteName = 'bekk') {
                 description: 'A Christmas calendar all about UX',
                 siteUrl: 'https://ux.christmas',
             };
+        case 'elm':
+            return {
+                title: 'Elm Christmas',
+                description: 'A Christmas calendar all about Elm',
+                siteUrl: 'https://elm.christmas',
+            };
+        case 'strategy':
+            return {
+                title: 'Strategy Christmas',
+                description: 'A Christmas calendar all about strategy',
+                siteUrl: 'https://strategy.christmas',
+            };
         default:
             return {
                 title: 'Bekk Christmas',
