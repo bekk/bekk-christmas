@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
 
 import Calendar from '../components/Calendar';
 import CalendarWindowClosed from '../components/CalendarWindowClosed';
