@@ -690,6 +690,104 @@ collections:
                     valueField: 'title',
                     displayFields: ['title'],
                 }
+    - name: post_elm
+      label: 'Post: Elm'
+      folder: post/elm
+      create: true
+      summary: '{{post_year}}/{{post_day}}: {{title}}'
+      fields:
+          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'elm' }
+          - {
+                label: 'Year',
+                name: 'post_year',
+                widget: 'number',
+                default: 2020,
+                valueType: 'int',
+                min: 2020,
+                max: 2021,
+            }
+          - {
+                label: 'Day',
+                name: 'post_day',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+                max: 24,
+            }
+          - { name: title, label: Title }
+          - { name: image, label: 'Link to image', required: false }
+          - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
+          - { name: body, label: Body, widget: markdown }
+          - name: links
+            label: 'Relevant links'
+            widget: list
+            fields:
+                - { name: title, label: Title }
+                - { name: url, label: Url }
+          - name: authors
+            label: 'Authors'
+            widget: list
+            field:
+                {
+                    label: 'Author',
+                    name: 'author',
+                    widget: 'relation',
+                    collection: 'authors',
+                    searchFields: ['title'],
+                    valueField: 'title',
+                    displayFields: ['title'],
+                }
+    - name: post_strategy
+      label: 'Post: Strategy'
+      folder: post/strategy
+      create: true
+      summary: '{{post_year}}/{{post_day}}: {{title}}'
+      fields:
+          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'strategy' }
+          - {
+                label: 'Year',
+                name: 'post_year',
+                widget: 'number',
+                default: 2020,
+                valueType: 'int',
+                min: 2020,
+                max: 2021,
+            }
+          - {
+                label: 'Day',
+                name: 'post_day',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+                max: 24,
+            }
+          - { name: title, label: Title }
+          - { name: image, label: 'Link to image', required: false }
+          - { name: ingress, label: 'Ingress', widget: markdown, required: false }
+          - { name: description, label: 'SEO Description', widget: text, required: false }
+          - { name: body, label: Body, widget: markdown }
+          - name: links
+            label: 'Relevant links'
+            widget: list
+            fields:
+                - { name: title, label: Title }
+                - { name: url, label: Url }
+          - name: authors
+            label: 'Authors'
+            widget: list
+            field:
+                {
+                    label: 'Author',
+                    name: 'author',
+                    widget: 'relation',
+                    collection: 'authors',
+                    searchFields: ['title'],
+                    valueField: 'title',
+                    displayFields: ['title'],
+                }
     - name: authors
       label: Authors
       folder: authors
