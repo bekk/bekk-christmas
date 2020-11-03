@@ -49,7 +49,7 @@ Well, that's not very exciting. Lets try adding a property to our `Code` class;
 val cls = TypeSpec
   .classBuilder(className)
   .addProperty(PropertySpec
-    // Using predefined TypeName which are included in kotlinpoet
+    // MUTABLE_LIST and STRING are predefined TypeName's included in kotlinpoet
     .builder("statements", MUTABLE_LIST.parameterizedBy(STRING))
     .initializer("mutableListOf()")
     .build()
@@ -95,6 +95,9 @@ public class Code {
 }
 ```
 
-Kotlinpoet correctly identified that the `Code` class is visible, and thus didn't add an import or use the fully qualified name for the class. However, if we change the return type of our function to `LONG` it would include it as an import. Consequently it would also generate code that wouldn't compile as our function has `return this` which isn't a `Long`.
+Kotlinpoet correctly identified that the `Code` class is visible, and thus didn't add an import or use the fully qualified name for the class. However, if we change the return type of our function to `LONG` it would include it as an import. Consequently it would also generate code that wouldn't compile as our function has `return this` which isn't a `Long` , whoopsi.
+
+This seems like quite alot of work to get a small class you may think to yourself. And while I tend to agree, it also opens up a few possibilities for automation down the line. 
 
 
+Dependent on by 285 packages on [mvnrepository.com](https://mvnrepository.com/artifact/com.squareup/kotlinpoet/usages), most notably: [Arrow (Arrow-Meta)](https://arrow-kt.io/docs/0.10/apidocs/arrow-meta/arrow.meta.encoder/-meta-api/index.html), [Microsoft Thrifty compiler plugin](https://github.com/microsoft/thrifty/tree/master/thrifty-compiler-plugins) and the [apollo-compiler](https://github.com/apollographql/apollo-android/tree/main/apollo-compiler)
