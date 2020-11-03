@@ -45,10 +45,11 @@ public class Code
 ```
 
 Well, that's not very exciting. Lets try adding a property to our `Code` class;
-```
+```kotlin
 val cls = TypeSpec
   .classBuilder(className)
   .addProperty(PropertySpec
+    // Using predefined TypeName which are included in kotlinpoet
     .builder("statements", MUTABLE_LIST.parameterizedBy(STRING))
     .initializer("mutableListOf()")
     .build()
@@ -65,5 +66,35 @@ public class Code {
 }
 ```
 
-Suddenly, our class has a property. But even more interesting is the fact that it also has the correct imports included. 
+Suddenly, our class has a property. But more interesting is the fact that it also added the correct imports. Adding a function to our class continues in a similar vein;
+```kotlin
+val cls = TypeSpec.classBuilder(className)
+  // .addProperty(...)
+  .addFunction(FunSpec
+    .builder("addStatement")
+    .returns(ClassName(packageName, className))
+    .addParameter("statement", STRING)
+    .addStatement("this.statements += statement")
+    .addStatement("return this")
+    .build()
+  )
+
+---- Returns ----
+package com.christmas.kotlin
+
+import kotlin.String
+import kotlin.collections.MutableList
+
+public class Code {
+  public val statements: MutableList<String> = mutableListOf()
+
+  public fun addStatement(statement: String): Code {
+    this.statements += statement
+    return this
+  }
+}
+```
+
+Kotlinpoet correctly identified that the `Code` class is visible, and thus didn't add an import or use the fully qualified name for the class. However, if we change the return type of our function to `LONG` it would include it as an import. Consequently it would also generate code that wouldn't compile as our function has `return this` which isn't a `Long`.
+
 
