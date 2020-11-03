@@ -37,7 +37,7 @@ val file = FileSpec.get(packageName, cls.build())
 
 println(file)
 
----- Returns ----
+// ---- Returns ----
 
 package com.christmas.kotlin
 
@@ -55,7 +55,7 @@ val cls = TypeSpec
     .build()
   )
 
----- Returns ----
+// ---- Returns ----
 package com.christmas.kotlin
 
 import kotlin.String
@@ -79,7 +79,7 @@ val cls = TypeSpec.classBuilder(className)
     .build()
   )
 
----- Returns ----
+// ---- Returns ----
 package com.christmas.kotlin
 
 import kotlin.String
