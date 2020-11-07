@@ -7,7 +7,9 @@ image: https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2
 authors:
   - Miina Lervik
 ---
-When I first started out with typescript I found it very difficult to create the correct typings when making generic components. In this article we will create a generic Table component that can be used with any set of objects. We will make a columns definition that lets the user of <Table> make adjustments to how the data should be displayed. I will show you how to add typescript to this component and explain how typescript benefits you.\
+When I first started out with typescript I found it very difficult to create the correct typings when making generic components. In this article we will create a generic Table component that can be used with any set of objects. We will make a columns definition that lets the user of <Table> make adjustments to how the data should be displayed. I will show you how to add typescript to this component and explain how typescript benefits you.
+
+This article assumes you already have some basic knowledge about React and Typescript.\
 \
 This will be our final product
 
@@ -247,7 +249,7 @@ Maybe we just want to show some of the properties. We could make a columns defin
   ]
 ```
 
-Here we see how the <T, K extends keyof T> us used with a specific object. <Cat, keyof Cat>. Now, just for fun, try to alter field: 'name', to day field: 'Name'.  Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the field property in you column definition! Isn't that amazing?
+Here we see how the `<T, K extends keyof T>` us used with a specific object. `<Cat, keyof Cat>`. Now, just for fun, try to alter field: 'name', to field: 'Name' (capital N).  Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the field property in your column definition! Isn't that amazing?
 
 And then we send the data and columns into our table:
 
@@ -299,7 +301,7 @@ name.toLowerCase(); // error!
 ```
 
 It will give me an error! But we know that name property is a string, isn't it 🤔? 
-No. Because the type of our key is not linked to the 'name' property. The function doesn't know which type it should return when we do obj[key](cat['name']). It could be any of the types defined within our Cat type: string | number | undefined.
+No. Because the type of our key is not linked to the 'name' property. The function doesn't know which type it should return when we do `obj[key]`(`cat['name']`). It could be any of the types defined within our Cat type: string | number | undefined.
 
 If we call the second function however
 
