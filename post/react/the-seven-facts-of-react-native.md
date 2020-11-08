@@ -29,7 +29,7 @@ There have been some questions about when they will version to properly semver v
 
 # \<View/> and \<Text/>
 
-React Native has a syntax equal to React, almost. Instead of tags such as` \<div>` and `\<p>`, you have `\<View>` and `\<Text>`. You need to import these components for each file you are writing layout specific code.
+React Native has a syntax equal to React, almost. Instead of tags such as `<div>` and `<p>`, you have `<View>` and `<Text>`. You need to import these components for each file you are writing layout specific code.
 
 ```
 import { View, Text } from 'react-native'
@@ -54,7 +54,7 @@ I will recommend you to check out the [common components documentation](https://
 
 Let’s talk more about the styles. Some of you may have a love/hate relationship for css. Sometimes inheritance may be a bit of a struggle, sometimes it is nice to not write the same styling all over again.
 
-In React Native, you lose the concept of inheritance, because the styling for a component is declared in a [](<https://reactnative.dev/docs/style>)[Stylesheet object](https://reactnative.dev/docs/style) and needs to be added to the component you want to style.
+In React Native, you lose the concept of inheritance, because the styling for a component is declared in a `StyleSheet` component. [](<https://reactnative.dev/docs/style>) This is [an abstraction of CSS stylesheet](https://reactnative.dev/docs/style) and needs to be added to the component you want to style.
 
 ```
 import { StyleSheet } from 'react-native'
@@ -78,15 +78,15 @@ As mentioned in the section above, you need to import the Text component from Re
 
 # Flexing the boxes
 
-Flexbox came and took the css-world by storm after being accepted by the W3C in 2013. By being able to easily place your elements where you want without too much css.
+Flexbox came and took the css-world by storm after being accepted by the [W3C in 2013](https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2). By being able to easily place your elements where you want without too much css.
 
-When accessing [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in css, you ENABLE it by writing `display: flex`. When you do that, a set of default settings is set, as you can see in the documentation. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [Flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
+When accessing [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in css, you enable it by writing `display: flex`. When you do that, a set of default settings is set, as you can see in the documentation. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [Flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
 
 Why, you ask? Well, I would assume that for the web applications, you have a lot more horizontal space you can use. For native applications there are somewhat limited how much you can put on a row, so defaulting to columns to put the elements under each other will be more common.
 
 
 
-# iOS = Android ? I think not!
+# iOS and Android
 
 The concept of React Native is to have one code for several platforms. Even though this works in most cases, there are still some pain points when developing for both iOS and Android. Having developed an application in React Native over the past years, I have encountered “but is not looking/working like that for iOS” debugging the android app.
 
