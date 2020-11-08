@@ -3,7 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 1
 title: The Seven Facts of React Native
-image: https://images.unsplash.com/photo-1483664852095-d6cc6870702d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
+image: https://images.unsplash.com/photo-1510151490593-aa277bc49f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80
 links:
   - url: "https://reactnative.dev/docs/components-and-apis "
     title: Core Components and APIs
@@ -14,15 +14,11 @@ I have worked with React Native for some years now, and have encountered one or 
 
 # Five years and still version 0.59
 
-React Native was released in 2015 with the stable release. Today it is widely used in production by several small and big companies like [Facebook (the creators), Instagram, and Skype](<https://wiredelta.com/10-most-popular-react-native-apps-of-2020/>).
-
-With over almost 10.000 pull requests, and nearly 20.000 closed issues on [Github](https://github.com/facebook/react-native), it has still not reached a major version with the semver convention. Per 1st of December 2020, React Native is on version 0.63.3.
+React Native was released in 2015 with the stable release. Today it is widely used in production by several small and big companies like [Facebook (the creators), Instagram, and Skype](<https://wiredelta.com/10-most-popular-react-native-apps-of-2020/>). With over almost 10.000 pull requests, and nearly 20.000 closed issues on [Github](https://github.com/facebook/react-native), it has still not reached a major version with the semver convention. Per 1st of December 2020, React Native is on version 0.63.3.
 
 According to the [Semantic Versioning](https://semver.org/), you should bump the major version when “when you make incompatible API changes,”. And trust me, it has been some breaking changes…
 
-There have been some questions about when they will version to properly semver versions, and they have said they may bump to [version 1.0.0 as a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) for something, but nothing is set in stone
-
-Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html). That is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
+There have been some questions about when they will version to properly semver versions, and they have said they may bump to [version 1.0.0 as a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) for something, but nothing is set in stone. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html). That is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
 # The syntax
 
@@ -30,7 +26,6 @@ React Native has a syntax equal to React, almost. Instead of tags such as \<div>
 
 ```
 import { View, Text } from 'react-native'
-
 
 <View>
     <Text>
@@ -44,7 +39,7 @@ View is used to group your components, and structure them the way you like it. I
 
 Let’s continue! You have out-of-the box Buttons components, which look natively of iOS and android, but you can always add styling to get the right layout. And oif you want to create your own “pressable” areas, you can use TouchableOpacity which responds to touches on components you wrap it with.
 
-I will recommend you to check out the [common components documentation](https://reactnative.dev/docs/components-and-apis) if you want to know more!
+I will recommend you to check out the [common components documentation](https://reactnative.dev/docs/components-and-apis) for React Native if you want to know more!
 
 # Styles
 
@@ -73,7 +68,7 @@ As mentioned in the section above, you need to import the Text component from Re
 
 Flexbox came and took the css-world by storm after being accepted by the W3C in 2013. By being able to easily place your elements where you want without too much css.
 
-When accessing flexbox in css, you “activate” it by writing \`display: flex\`. When you do that, a set of default settings is set, as you can see in the documentation https://css-tricks.com/snippets/css/a-guide-to-flexbox/. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
+When accessing [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in css, you “activate” it by writing \`display: flex\`. When you do that, a set of default settings is set, as you can see in the documentation. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [Flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
 
 Why, you ask? Well, I would assume that for the web applications, you have a lot more horizontal space you can use. For native applications there are somewhat limited how much you can put on a row, so defaulting to columns to put the elements under each other will be more common.
 
@@ -83,7 +78,7 @@ The concept of React Native is to have one code for several platforms. Even thou
 
 For instance, when adding accessibility to your application, not everything is equal for both platforms. React Native have support for different [accessibility usecases](https://reactnative.dev/docs/accessibility), but not every one of them were supported for both platforms. There was one scenario, where I wanted the application to read the changes on the screen for the user, even though the user is not focusing on that given component. For instance when the departure time changes, it is crucial to notify the user. This resulted in adding two ways to get the voiceover to read the changes.
 
-Fortunately, React Native gives you the possibility to select which code you want to apply whether iOS or Android by using [Platform](https://reactnative.dev/docs/platform-specific-code).
+Fortunately, React Native gives you the possibility to select which code you want to apply whether iOS or Android by using [Platform](https://reactnative.dev/docs/platform-specific-code). By using this you can apply the part of code you want to execute for the different platforms.
 
 ```
 import { Platform } from 'react-native'
@@ -92,19 +87,17 @@ const myFunction = () => {
     Platform.select({
         ios: console.log('Hello iOS')
         android: console.log('Hello Android')
-        default: console.log('Hey everyone')
+        default: console.log('Hey everyone else')
     })
 }
 ```
-
-By using this you can apply the part of code you want to execute.
 
 It is also nice to use to apply the correct styling for your code. For example, at the bottom of the screen on an iPhone X where the home button used to be, there is this swipe indicator you can use to close your app. When placing buttons at the bottom of your page, will be good on Android but will crash with the swipe indicator. This results in adding different margins for the different platforms, look at the example:
 
 ```
 import { StyleSheet, Platform } from 'react-native'
 
-/* ... */
+/* Your component here */
 
 const styles = StyleSheet.create({
     container: {
@@ -120,22 +113,30 @@ const styles = StyleSheet.create({
 })
 ```
 
-However, in a perfect world, you don’t need Platform.select.
+However, in a perfect world, you wouldn't need Platform.select!
 
-# The origin
+# The origin of React Native
 
 In 2012, [Mark Zuckerberg said](https://mashable.com/2012/09/11/html5-biggest-mistake/)
 
 > The biggest mistake we made as a company was betting too much on [HTML](https://en.wikipedia.org/wiki/HTML) as opposed to native
 
-This was because Facebook was eager to use HTML5, also on iOS and android. However, this was not optimal for stability and speed.
+This was because Facebook was eager to use HTML5, also on iOS and android. However, this was not optimal for stability and/or speed.
 
-React Native was born after an internal hackathon in Facebook in 2013, where Jordan Walke had found a way to generate [UI layouts natively from Javascript](https://jobninja.com/blog/short-story-react-native/).
+React Native was born after an internal hackathon in Facebook in 2013, where Jordan Walke had found a way to generate [UI layouts natively from Javascript](https://jobninja.com/blog/short-story-react-native/). This resulted in that in 2015, they presented an introduction for[ React Native at React Conf](https://www.youtube.com/watch?v=KVZ-P-ZI6W4).
 
-This resulted in that in 2015, they presented an introduction for[ React Native at React Conf](https://www.youtube.com/watch?v=KVZ-P-ZI6W4).
-
-# Will Facebook use it?
+# Will Facebook continue to use it?
 
 React Native is used in many applications in production, but few of them can say that the complete App is based on React Native.
 
 As mentioned in the introduction, React Native is developed by Facebook, and earlier this year, Facebook announced that they would release the Messenger app, [written in native](https://engineering.fb.com/data-infrastructure/messenger/) where they would save lots of lots of memory.
+
+
+
+- - -
+
+
+
+This was a little list of the most interesting facts in React Native I have experienced over my years with this technology.
+
+Hope you liked it!
