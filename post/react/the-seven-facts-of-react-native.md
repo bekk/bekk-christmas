@@ -29,7 +29,7 @@ There have been some questions about when they will version to properly semver v
 
 # \<View/> and \<Text/>
 
-React Native has a syntax equal to React, almost. Instead of tags such as \<div> and \<p>, you have \<View> and \<Text>. You need to import these components for each file you are writing layout specific code.
+React Native has a syntax equal to React, almost. Instead of tags such as` \<div>` and `\<p>`, you have `\<View>` and `\<Text>`. You need to import these components for each file you are writing layout specific code.
 
 ```
 import { View, Text } from 'react-native'
@@ -42,9 +42,9 @@ import { View, Text } from 'react-native'
 
 ```
 
-View is used to group your components, and structure them the way you like it. In addition, they have made it mandatory to put all your text inside a Text Component. And we are not even done. Creating an app with lots of information that goes outside the screen vertically, you need to wrap your components in a ScrollView to manage to scroll to the bottom. So pro tip from experience: Always test your application with different screen sizes… I may have published an app perfect for iPhone X, where you were not able to see the bottom text for an iPhone 5...
+View is used to group your components, and structure them the way you like it. In addition, they have made it mandatory to put all your text inside a `Text` Component. And we are not even done. Creating an app with lots of information that goes outside the screen vertically, you need to wrap your components in a `ScrollView` to manage to scroll to the bottom. So pro tip from experience: Always test your application with different screen sizes… I may have published an app perfect for iPhone X, where you were not able to see the bottom text for an iPhone 5...
 
-Let’s continue! You have out-of-the box Buttons components, which look natively of iOS and android, but you can always add styling to get the right layout. And if you want to create your own “pressable” areas, you can use TouchableOpacity which responds to touches on components you wrap it with.
+Let’s continue! You have out-of-the box `Button` component, which look natively of iOS and android, but you can always add styling to get the right layout. And if you want to create your own “pressable” areas, you can use `TouchableOpacity` which responds to touches on components you wrap it with.
 
 I will recommend you to check out the [common components documentation](https://reactnative.dev/docs/components-and-apis) for React Native if you want to know more!
 
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
 
 ```
 
-As mentioned in the section above, you need to import the Text component from React Native when adding text to your layout. I assume you want to have the same font for your whole application, not different based on what the developer has remembered to add. So one pro tip regarding font styles is to create your own component “MyText” which uses the Text component, and add the correct font here. This way you can rely on the font being correct through your application. Write once, use everywhere.
+As mentioned in the section above, you need to import the Text component from React Native when adding text to your layout. I assume you want to have the same font for your whole application, not different based on what the developer has remembered to add. So one pro tip regarding font styles is to create your own component `MyText` which uses the Text component, and add the correct font here. This way you can rely on the font being correct through your application. Write once, use everywhere.
 
 
 
@@ -80,7 +80,7 @@ As mentioned in the section above, you need to import the Text component from Re
 
 Flexbox came and took the css-world by storm after being accepted by the W3C in 2013. By being able to easily place your elements where you want without too much css.
 
-When accessing [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in css, you “activate” it by writing \`display: flex\`. When you do that, a set of default settings is set, as you can see in the documentation. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [Flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
+When accessing [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in css, you ENABLE it by writing `display: flex`. When you do that, a set of default settings is set, as you can see in the documentation. When accessing the flex property, the default value for flexDirection is row. This means that every component in the container will be placed horizontally on your screen. However, when using [Flexbox in React Native](https://reactnative.dev/docs/0.61/flexbox), the default for flexDirection is column.
 
 Why, you ask? Well, I would assume that for the web applications, you have a lot more horizontal space you can use. For native applications there are somewhat limited how much you can put on a row, so defaulting to columns to put the elements under each other will be more common.
 
@@ -149,8 +149,8 @@ React Native is used in many applications in production, but few of them can say
 
 As mentioned in the introduction, React Native is developed by Facebook, and earlier this year, Facebook announced that they would release the Messenger app, [written in native](https://engineering.fb.com/data-infrastructure/messenger/) where they would save lots of lots of memory.
 
+# That was it!
 
-
-This was a little list of the most interesting facts in React Native I have experienced over my years with this technology.
+This was a little list of the most interesting facts in React Native I have experienced over the years with this technology.
 
 Hope you liked it!
