@@ -63,7 +63,7 @@ const Table = <T, K extends keyof T>({ data, columns }: TableProps<T, K>): JSX.E
 export default Table;
 ```
 
-# `<T, K extends keyof T>`
+## `<T, K extends keyof T>`
 T means "any type is ok". In our case T will be the cat object. `K extends keyof T` means that K is a valid key of T:
 ```javascript
 const name = cat.name;
@@ -114,7 +114,8 @@ export default TableHeader;
 
 By using our columns definition the user can decide the order and width of each column without having to alter the data set in any way. If you want 'age' to be displayed before 'name' in our cat table, then all you do is define that in the columns definition. You can also decide to only display some of the properties in you data object.
 
-Lets look at TableRows. It takes in both data and columns as props.
+# Lets look at TableRows
+It takes in both data and columns as props.
 
 ```javascript
 type TableRowsProps<T, K extends keyof T> = {
@@ -152,10 +153,10 @@ const TableRows = <T, K extends keyof T>({ data, columns }: TableRowsProps<T, K>
 export default TableRows;
 ```
 
-# `{row[column.key]}`
+## `{row[column.key]}`
 We create each row by mapping though our data set (our list of cats 🐱). For each cat object we use the columns definition to pick which properties should be placed first, second, third... in our table. We do this by calling `row[column.key]`. Row is our cat. If `column.key` returns 'name' then this is the same as saying `cat.['name']` or `cat.name`.
 
-# Almost done
+# Putting it together
 Now we are ready to use our Table!
 
 We start by defining our data set which is of the type `Cat[]`. 
@@ -230,17 +231,14 @@ And then we send the data and columns into our table:
 ```javascript
 <Table data={data} columns={columns} />
 ```
-
-## `<Cat, keyof Cat>`
-Here we see how the `<T, K extends keyof T>` is used with a specific object: `<Cat, keyof Cat>`. Try to alter the key: 'name', to key: 'Name' (capital N). Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the key property in your column definition! It's amazing!😻
-
-# All done
-
 ![The table we created showing our cats name, age in years and color. Where the name column is wider than the other columns.](/assets/cattable1.jpg "Our result")
 
 Now you can play around with the columns definition. Add the other properties from our cat object and define different widths for each column.
 
-# A note on the keyof type
+## Keyof T or keyof Cat?
+When we create the columns definition for our cat object we see how the `<T, K extends keyof T>` is used with the specific definition: `<Cat, keyof Cat>`. Try to alter the key: 'name', to key: 'Name' (capital N). Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the key property in your column definition! It's amazing!😻
+
+### A note on the keyof type
 
 The keyof type is one of my favorite parts of typescript. When making the ColumnDefinitionType you might have wondered why we didn't do it like this instead:
 ```javascript
