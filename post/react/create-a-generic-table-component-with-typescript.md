@@ -7,8 +7,7 @@ image: https://i.imgsli.com/images/570580f9-d0e6-428a-ada7-2b492c06e2cf.png
 ingress: When I first started out with Typescript I found it very difficult to
   create the correct types when making generic components. In this article we
   will create a generic Table component that can be used with any set of
-  objects. We will make a columns definition that lets the user of `<Table>`
-  make adjustments to how the data should be displayed.
+  objects.
 authors:
   - Miina Lervik
 ---
@@ -16,7 +15,7 @@ This article assumes you already have some basic knowledge about React and Types
 
 # Lets get started!
 
-I will be using a data set of cats. The cat objects will look like this:
+I will be using a data set of cats.🐱 The cat objects will look like this:
 
 ```javascript
  interface Cat {
