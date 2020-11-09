@@ -219,7 +219,7 @@ Maybe we just want to show some of the properties. We could make a columns defin
   ]
 ```
 
-Here we see how the `<T, K extends keyof T>` us used with a specific object. `<Cat, keyof Cat>`. Now, just for fun, try to alter field: 'name', to field: 'Name' (capital N).  Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the field property in your column definition! Isn't that amazing?
+Here we see how the `<T, K extends keyof T>` us used with a specific object: `<Cat, keyof Cat>`. Now, just for fun, try to alter field: 'name', to field: 'Name' (capital N).  Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the field property in your column definition! Isn't that amazing?
 
 And then we send the data and columns into our table:
 
