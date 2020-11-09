@@ -269,7 +269,7 @@ const name = getValue(cat, 'name'); // uses keyof T
 name.toLowerCase(); // error!
 ```
 
-It gives an error! But we know that the name property is a string, so calling `toLoverCase()` on it should work, right 🤔? 
+It gives an error! But we know that the name property is a string, so calling `toLowerCase()` on it should work, right 🤔? 
 Not exactly. Because the type of our key is not linked to the 'name' property the function doesn't know which type it should return when we do `obj[key]`(`cat['name']`). It could be any of the types defined within our Cat type: string | number | undefined.
 
 If we call the second function however
