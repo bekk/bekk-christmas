@@ -243,7 +243,6 @@ Now you can play around with the columns definition. Add the other properties fr
 # A note on the keyof type
 
 The keyof type is one of my favorite parts of typescript. When making the ColumnDefinitionType you might have wondered why we didn't do it like this instead:
-
 ```javascript
 export type ColumnDefinitionType<T> = {
     key: keyof T; // now we don't need the 'K extends keyof T' anymore!
@@ -252,10 +251,7 @@ export type ColumnDefinitionType<T> = {
 }
 ```
 
-In our Table example this would actually work just fine. However, there is a difference!
-
 To illustrate the difference let us look at these two, seemingly similar, functions:
-
 ```javascript
 function getValue<T extends unknown>(obj: T, key: keyof T) {
  // uses keyof T
@@ -270,7 +266,6 @@ function getValue2<T, K extends keyof T>(obj: T, key: K) {
 
 These functions do the same thing. You send in an object and a key, and the functions returns the value for that property.
 So if we send in our cat object from before with the key 'name', we should get the name of the cat in return. Let's try it with the first function:
-
 ```javascript
 const name = getValue(cat, 'name'); // uses keyof T
 name.toLowerCase(); // error!
@@ -280,7 +275,6 @@ It gives an error! But we know that the name property is a string, so calling `t
 Not exactly. Because the type of our key is not linked to the 'name' property the function doesn't know which type it should return when we do `obj[key]`(`cat['name']`). It could be any of the types defined within our Cat type: string | number | undefined.
 
 If we call the second function however
-
 ```javascript
 const name = getValue2(cat, 'name'); // uses K extends keyof T
 name.toLowerCase(); // no error
