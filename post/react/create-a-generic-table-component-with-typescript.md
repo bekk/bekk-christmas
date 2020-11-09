@@ -32,10 +32,10 @@ The Table component takes in data and columns as props, then renders a TableHead
 
 ```javascript
 type ColumnDefinitionType<T, K extends keyof T> = {
-    field: K;
+    key: K;
     header: string;
     width?: number;
-} // ColumnDefinitionType should be imported from a commonTypes.d.ts file so it can be reused
+}
 
 type TableProps<T, K extends keyof T> = {
   data: Array<T>;
@@ -61,13 +61,22 @@ const Table = <T, K extends keyof T>({ data, columns }: TableProps<T, K>): JSX.E
 export default Table;
 ```
 
-First, look at the columns. It is of type `Array<ColumnsDefinitionType<T, K extends keyof T>>` 😵 The first part is easy; an array of ColumnsDefinitionType. T basically means "any type is ok". In our case T will be the cat object. `K extends keyof T` means that K is a valid key of T. You know how you would write `cat.name` <-- "name" is a key of cat. We see that the K is used as a type for our `field` property. This means that field can only be one of the properties we have in our cat object: 'name', 'age', 'favoriteFood'... This might be a bit confusing now, but hopefully it will get clearer when we get to the usage of columns further down.
+# `<T, K extends keyof T>`
+T means "any type is ok". In our case T will be the cat object. `K extends keyof T` means that K is a valid key of T:
+```javascript
+const name = cat.name;
+// same as:
+const nameKey = 'name';
+const name = cat[nameKey];
+```
+We see that the K is used as a type for our `key` property. This means that key can only be one of the properties we have in our cat object: 'name', 'age', 'favoriteFood'...
 
 The data that we send in is an `Array<T>`, so in our case an array of cat objects. But as I said, it could be anything!
 
 Finally, the Table component returns JSX.Element. This is what a function component normally returns and you often don't have to define this return type as typescript will be able to guess the return type for you.
 
-Now, lets look at the TableHeader component. It takes in columns as props, and the type definition is the same as for our table component.
+# Custom headers
+Lets look at the TableHeader component. It takes in columns as props, and the type definition is the same as for our table component.
 
 ```javascript
 type TableHeaderProps<T, K extends keyof T> = {
@@ -101,8 +110,7 @@ const TableHeader = <T, K extends keyof T>({ columns }: TableHeaderProps<T, K>):
 export default TableHeader;
 ```
 
-We are creating the header row for our table by mapping through our columns array. For each column we check if the width is defined. If not we use a default value to create our style. This way the user of Table is able to define how wide each column should be to better fit their data set.
-Then we set the header. By using our columns definition the user can decide the order of each column without having to alter the data set in any way. If you want 'age' to be displayed before 'name' in our cat table, then all you do is define that in the columns definition. You can also decide to only display some of the properties in you data object.
+By using our columns definition the user can decide the order and width of each column without having to alter the data set in any way. If you want 'age' to be displayed before 'name' in our cat table, then all you do is define that in the columns definition. You can also decide to only display some of the properties in you data object.
 
 Lets look at TableRows. It takes in both data and columns as props.
 
@@ -123,7 +131,7 @@ const TableRows = <T, K extends keyof T>({ data, columns }: TableRowsProps<T, K>
         {columns.map((column, index2) => {
           return (
             <td key={`cell-${index2}`} style={style}>
-              {row[column.field]}
+              {row[column.key]}
             </td>
           );
         }
@@ -142,9 +150,10 @@ const TableRows = <T, K extends keyof T>({ data, columns }: TableRowsProps<T, K>
 export default TableRows;
 ```
 
-There is a lot of mapping going on 😵 Please bear with me 😅
-We create each row by mapping though our data set (our list of cats). For each cat object we now use the columns definition to pick which properties should be placed first, second, third... in our table. We do this by calling `row[column.field]`. Row is our cat. If `column.field` returns 'name' then this is the same as saying `cat.['name']` or `cat.name`.
+# `{row[column.key]}`
+We create each row by mapping though our data set (our list of cats 🐱). For each cat object we use the columns definition to pick which properties should be placed first, second, third... in our table. We do this by calling `row[column.key]`. Row is our cat. If `column.key` returns 'name' then this is the same as saying `cat.['name']` or `cat.name`.
 
+# Almost done
 Now we are ready to use our Table!
 
 We start by defining our data set which is of the type `Cat[]`. 
@@ -200,30 +209,30 @@ Maybe we just want to show some of the properties. We could make a columns defin
 ```javascript
   const columns: ColumnDefinitionType<Cat, keyof Cat>[] = [
     {
-      field: 'name',
+      key: 'name',
       header: 'Name',
       width: 150
     },
     {
-      field: 'age',
+      key: 'age',
       header: 'Age in years',
     },
     {
-      field: 'color',
+      key: 'color',
       header: 'Color'
     }
   ]
 ```
-
-Here we see how the `<T, K extends keyof T>` us used with a specific object: `<Cat, keyof Cat>`. Now, just for fun, try to alter field: 'name', to field: 'Name' (capital N).  Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the field property in your column definition! Isn't that amazing?
-
 And then we send the data and columns into our table:
 
 ```javascript
 <Table data={data} columns={columns} />
 ```
 
-...and this is the result!
+## `<Cat, keyof Cat>`
+Here we see how the `<T, K extends keyof T>` is used with a specific object: `<Cat, keyof Cat>`. Try to alter the key: 'name', to key: 'Name' (capital N). Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the key property in your column definition! It's amazing!😻
+
+# All done
 
 ![The table we created showing our cats name, age in years and color. Where the name column is wider than the other columns.](/assets/cattable1.jpg "Our result")
 
@@ -235,7 +244,7 @@ The keyof type is one of my favorite parts of typescript. When making the Column
 
 ```javascript
 export type ColumnDefinitionType<T> = {
-    field: keyof T; // now we don't need the 'K extends keyof T' anymore!
+    key: keyof T; // now we don't need the 'K extends keyof T' anymore!
     header: string;
     width?: number;
 }
