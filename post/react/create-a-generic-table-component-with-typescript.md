@@ -13,7 +13,7 @@ This article assumes you already have some basic knowledge about React and Types
 
 This will be our final result:
 
-![A table displaying the following details about various cats: their name, color, age in years, gender, activity level, and favorite food](assets/cattable.jpg "The final result")
+![A table displaying the following details about various cats: their name, color, age in years, gender, activity level, and favorite food](/assets/cattable.jpg "The final result")
 
 # Lets get started!
 
@@ -229,7 +229,7 @@ And then we send the data and columns into our table:
 
 ...and this is the result!
 
-![The table we created showing our cats name, age in years and color. Where the name column is wider than the other columns.](assets/cattable1.jpg "Our result")
+![The table we created showing our cats name, age in years and color. Where the name column is wider than the other columns.](/assets/cattable1.jpg "Our result")
 
 Now you can play around with the columns definition. Add the other properties from our cat object and define different widths for each column.
 
