@@ -13,7 +13,7 @@ This article assumes you already have some basic knowledge about React and Types
 
 This will be our final result:
 
-![A table displaying the following details about various cats: their name, color, age in years, gender, activity level, and favorite food](assets/cattable.jpg "The final product")
+![A table displaying the following details about various cats: their name, color, age in years, gender, activity level, and favorite food](assets/cattable.jpg "The final result")
 
 # Lets get started!
 
