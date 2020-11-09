@@ -3,12 +3,15 @@ calendar: react
 post_year: 2020
 post_day: 22
 title: Create a generic table with React and Typescript
-image: https://i.imgsli.com/images/e1bf9745-0c8e-4852-8589-cb203cb71773.png
+image: https://i.imgsli.com/images/570580f9-d0e6-428a-ada7-2b492c06e2cf.png
+ingress: When I first started out with Typescript I found it very difficult to
+  create the correct types when making generic components. In this article we
+  will create a generic Table component that can be used with any set of
+  objects. We will make a columns definition that lets the user of `<Table>`
+  make adjustments to how the data should be displayed.
 authors:
   - Miina Lervik
 ---
-When I first started out with Typescript I found it very difficult to create the correct types when making generic components. In this article we will create a generic Table component that can be used with any set of objects. We will make a columns definition that lets the user of `<Table>` make adjustments to how the data should be displayed.
-
 This article assumes you already have some basic knowledge about React and Typescript.
 
 # Lets get started!
