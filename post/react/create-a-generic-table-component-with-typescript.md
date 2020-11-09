@@ -7,14 +7,13 @@ image: https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2
 authors:
   - Miina Lervik
 ---
-When I first started out with Typescript I found it very difficult to create the correct types when making generic components. In this article we will create a generic Table component that can be used with any set of objects. We will make a columns definition that lets the user of <Table> make adjustments to how the data should be displayed.
+When I first started out with Typescript I found it very difficult to create the correct types when making generic components. In this article we will create a generic Table component that can be used with any set of objects. We will make a columns definition that lets the user of `<Table>` make adjustments to how the data should be displayed.
 
 This article assumes you already have some basic knowledge about React and Typescript.
 
-This will be our final result
+This will be our final result:
 
-![A table displaying the following details about various cats: theyr name, color, age in years, gender, activity level, and favorite food](assets/cattable.jpg "The final product")
-
+![A table displaying the following details about various cats: their name, color, age in years, gender, activity level, and favorite food](assets/cattable.jpg "The final product")
 
 # Lets get started!
 
