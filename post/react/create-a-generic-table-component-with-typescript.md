@@ -236,7 +236,7 @@ And then we send the data and columns into our table:
 Now you can play around with the columns definition. Add the other properties from our cat object and define different widths for each column.
 
 ## Keyof T or keyof Cat?
-When we create the columns definition for our cat object we see how the `<T, K extends keyof T>` is used with the specific definition: `<Cat, keyof Cat>`. Try to alter the key: 'name', to key: 'Name' (capital N). Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the key property in your column definition! It's amazing!😻
+When we create the columns definition for our cat object we see how the `<T, K extends keyof T>` is used with the specific definition: `<Cat, keyof Cat>`. In your columns definition try to alter the key: 'name', to key: 'Name' (capital N). Typescript will give you an error because "Name" is not a valid key of our cat object! This means that if you rename the properties in your data set typescript will let you know that you also have to rename the key property in your column definition! It's amazing!😻
 
 ### A note on the keyof type
 
