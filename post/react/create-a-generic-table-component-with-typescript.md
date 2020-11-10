@@ -112,7 +112,7 @@ const TableHeader = <T, K extends keyof T>({ columns }: TableHeaderProps<T, K>):
 export default TableHeader;
 ```
 
-By using our columns definition the user can decide the order and width of each column without having to alter the data set in any way. If you want 'age' to be displayed before 'name' in our cat table, then all you do is define that in the columns definition. You can also decide to only display some of the properties in you data object.
+By using our columns definition you can decide the order and width of each column without having to alter the data set in any way. If you want 'age' to be displayed before 'name' in your cat table, then all you do is define that in the columns definition. You can also decide to only display some of the properties in you data object.
 
 # Lets look at TableRows
 It takes in both data and columns as props.
