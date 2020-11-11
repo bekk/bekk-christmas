@@ -24,6 +24,9 @@ authors:
 ---
 The goal was to make it as simple and quick as possible. No flashy frameworks, just plain HTML, CSS and JS. Let’s take a closer look at how it was made.
 
+<img class="dark-theme-image" src="https://i.ibb.co/gycYDN9/confetti-dark.gif?h=200&fit=crop&crop=edges" alt="confetti-dark" border="0">
+<img class="light-theme-image" src="https://i.ibb.co/6XTTtRd/confetti-light.gif?h=200&fit=crop&crop=edges" alt="confetti-light" border="0">
+
 On our internal front page we have a carousel with employees, sorted by birthdays. Every upcoming birthday boy or girl has their own “card” in the carousel, with their image on it. Let’s say each card looks like this:
 
 ```html
