@@ -15,7 +15,8 @@ The goal was to make it as simple and quick as possible. No flashy frameworks, j
 
 On our internal front page we have a carousel with employees, sorted by birthdays. Every upcoming birthday boy or girl has their own “card” in the carousel, with their image on it. Let’s say each card looks like this:
 
-```
+```html
+
 <div id="employeeId" class="employeeCard">
     <img ... />
 </div>
@@ -23,7 +24,8 @@ On our internal front page we have a carousel with employees, sorted by birthday
 
 For simplification, let’s say that each employee object consists of three properties:
 
-```
+```javascript 
+
 {
    id: 1,
    name: "Santa",
