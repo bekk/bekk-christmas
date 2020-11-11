@@ -7,8 +7,7 @@ image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
 ingress: "I'm part of a group that holds introductory courses on web development
   for students and new employees in Bekk. In the course we say that there are
   three ways to retrieve data in JavaScript: **callbacks, promises and async /
-  await**. I was curious to see them measured up against each other, so here it
-  comes."
+  await**, but only the latter is explained. Let's see how each of them works!"
 description: "An introduction to three different ways of fetching data in
   JavaScript: callbacks, promises and async / await."
 links:
