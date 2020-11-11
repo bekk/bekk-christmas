@@ -19,7 +19,7 @@ In the spirit of Christmas, let's use a suiting analogy. Let's say Santa request
 
 Our elf in this analogy will be represented by the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child. We also have access to the global array `const bagOfToys = [];`, which is to be filled up with Christmas presents before Santa is on his way.
 
-### Callbacks
+## Callbacks
 
 The first way to fetch data utilises that we can pass a reference to a function `A` as an argument to another function `B`, which then is going to call `A` at some point. Here, `A` is called the _callback_-function, while `B` is the _higher order_-function. This is a very common pattern in JavaScript, so it's likely you've seen it before – in event handlers, timeouts or even in the map, filter and reduce list-functions.
 
@@ -27,7 +27,7 @@ There are multiple ways to fetch data, but we're going to look at the classic, w
 
 First, we define our main function `fetchChristmasGift` to fetch a Christmas gift for a child. We need the name of the child to fetch the correct gift, so we'll take that as a parameter. Then, we create a new request:
 
-```
+```javascript
 const fetchChristmasGift = (name) => {
     const request = new XMLHttpRequest();
     const url = `https://santas-gift-storage.northpole/gifts/${name}`;
@@ -47,7 +47,7 @@ The event `onreadystatechange` is triggered when the state of the request change
 
 So let's create a callback function, to decide what happens when we have fetched our gift. Our instructions were to add it to Santa's bag of gifts, so we'll do that. While we're at it, let's include a check to see if we actually got the gift:
 
-```
+```javascript
 const callbackFunction = (request) => {
     if (request.status == 200) {
         const gift = request.response;
@@ -60,7 +60,7 @@ const callbackFunction = (request) => {
 
 Let's call this function in our code above:
 
-```
+```javascript
 const fetchChristmasGift = (name) => {
     const request = new XMLHttpRequest();
     const url = `https://santas-gift-storage.northpole/gifts/${name}`;
@@ -80,19 +80,19 @@ And that's it. We used a callback to do something with our data after we success
 
 But callbacks can easily get messy. There is a reason why there is something called _callback hell_ :fire: (just Google it and see), and why this is not the preferred way of doing things. Let's move on to a new type of object that has another take on the matter.
 
-### Promises
+## Promises
 
 The second way to fetch data uses [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) to handle asynchronous calls. Promises are objects that make asynchronity a bit more tidy. For this purpose we use a function called `fetch()` from the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). Unlike the previous method, the responses are wrapped in Promises, so you don't have to explicitly handle all the nitty-gritty details anymore!
 
 We start by defining the function `getGiftForChild()` which takes a child's name as input and fetches the gift from our URL using `fetch()`. This function will return a response in the form of a `Promise`.
 
-```
+```javascript
 const getGiftForChild = (name) => fetch(`https://santas-gift-storage.northpole/gifts/${name}`);
 ```
 
 Then, we can use the Promise prototype methods `then()` and `catch()` to do something when the Promise either resolves :white_check_mark: or is rejected :x:. Let's define the function `fetchChristmasGift()` like before, and call `getGiftForChild()` to fetch our gift:
 
-```
+```javascript
 const fetchChristmasGift = (name) => {
     const promise = getGiftForChild(name);
     promise
@@ -103,11 +103,11 @@ const fetchChristmasGift = (name) => {
 
 In fact, this is also a way of using callbacks. We define what is to happen when we get a response, passing in a function to both `then()` and `catch()`. With Promises it's just being handled in a smoother way than our first example. But can it get _even_ better? Keep on reading!
 
-### Async / Await
+## Async / Await
 
 The third way to fetch data builds on Promises, but is generally a more elegant way of handling them that looks a lot more like synchronous programming. Assume we still have our function `getGiftForChild()` which returns a Promise:
 
-```
+```javascript
 const getGiftForChild = (name) => fetch(`https://santas-gift-storage.northpole/gifts/${name}`);
 ```
 
@@ -117,7 +117,7 @@ Here, we make use of the two magical keywords `async` and `await`, to explicitly
 
 In our analogy, it would look something like this:
 
-```
+```javascript
 const fetchChristmasGift = async (name) => {
     const gift = await getGiftForChild(name);
     bagOfToys.push(gift);
@@ -126,7 +126,7 @@ const fetchChristmasGift = async (name) => {
 
 To be sure, we can wrap it in a `try / catch` block to handle if the Promise is rejected:
 
-```
+```javascript
 const fetchChristmasGift = async (name) => {
     try {
         const gift = await getGiftForChild(name);
@@ -138,7 +138,7 @@ const fetchChristmasGift = async (name) => {
 }
 ```
 
-We will wait until we have retireved a gift successfully, and then we will add it to the bag :gift:
+We will wait until we have retrieved a gift successfully, and then we will add it to the bag :gift:
 
 We have to declare `fetchChristmasGift()` asynchronous with `async`, since we are using `await` within. That way, we'll know that something is being awaited where we call our async function `fetchChristmasGift()`. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
 
