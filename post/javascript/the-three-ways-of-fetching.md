@@ -22,7 +22,7 @@ links:
 authors:
   - Ida Marie Vestgøte Bosch
 ---
-In the spirit of Christmas, let's use a suiting analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
+In the spirit of Christmas, we'll use a suiting analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
 
 Our elf in this analogy will be represented by the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child. We also have access to the global array `bagOfToys`, which is to be filled up with Christmas presents before Santa is on his way.
 
@@ -34,7 +34,7 @@ const bagOfToys = [];
 
 The first way to fetch data utilises that we can pass a reference to a function `A` as an argument to another function `B`, which then is going to call `A` at some point. Here, `A` is called the _callback_-function, while `B` is the _higher order_-function. This is a very common pattern in JavaScript, so it's likely you've seen it before – in event handlers, timeouts or even in the map, filter and reduce list-functions.
 
-There are multiple ways to fetch data, but we're going to look at the classic, well-used API [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). If you're not familiar with it, don't worry – the details are not too important. We're interested in the way we use our callback, and I'll explain it below.
+There are multiple ways to fetch data, but we're going to look at the classic, well-used API [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). If you're not familiar with it, don't worry – the details aren't too important. We're interested in the way we use our callback, and I'll explain it below.
 
 First, we define our main function `fetchChristmasGift` to fetch a Christmas gift for a child. We need the name of the child to fetch the correct gift, so we'll take that as a parameter. Then, we create a new request:
 
@@ -149,8 +149,8 @@ const fetchChristmasGift = async (name) => {
 }
 ```
 
-We will wait until we have retrieved a gift successfully, and then we will add it to the bag :gift:
+We'll wait until we've retrieved a gift successfully, and then we'll add it to the bag :gift:
 
-We have to declare `fetchChristmasGift()` asynchronous with `async`, since we are using `await` within. That way, we'll know that something is being awaited where we call our async function `fetchChristmasGift()`. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
+We have to declare `fetchChristmasGift()` asynchronous with `async`, since we're using `await` within. That way, we'll know that something is being awaited where we call our async function `fetchChristmasGift()`. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
 
 And that's about it! I hope you learned something new about fetching data from this quick introduction, whether you're new to JavaScript or a veteran who has long since forgotten why you write code the way you're used to. Hopefully, Santa read this too and was able to find your gift in time for Christmas Eve :christmas_tree:
