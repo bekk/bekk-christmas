@@ -13,7 +13,8 @@ ingress: I'm part of a group that holds introductory courses on web development
   fetching, or a veteran who has long since forgotten why you write code the way
   you're used to.
 description: ""
-authors: []
+authors:
+  - Ida Marie Vestgøte Bosch
 ---
 In the spirit of Christmas, let's use a suiting analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
 
