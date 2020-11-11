@@ -46,6 +46,10 @@ Tilsvarende dynamikk kan vi finne igjen hos bedrifter når det skjer endringer m
 
 Dette er også overførbart til hvordan selskaper behandler kunder. Stadig flere ønsker å ha en personlig relasjon til kundene sine og slik skape en dyp kundelojalitet. Et godt eksempel er lokalbanken, som skal være den trygge og nære banken som bryr seg om deg. Vel og bra, men da må man evne å vise lojalitet andre veien også. Dersom den vennlige lokalbanken setter betalingsfrister på 5 dager og sender purregebyr før du rekker å si «grevinnen og hovmesteren» faller nok følelsen av en god relasjon bort for kunden. Relasjonen kan til og med bli betydelig dårligere enn om banken i utgangspunktet hadde holdt kundeforholdet som et rent markedsbasert forhold.
 
+
+
+### Hva gjør vi da?
+
 Økt bevissthet rundt hvordan endringer i relasjoner kan skje viser seg altså å være viktig for oss enten vi sitter i bedrifter eller stresser med julegavehandlingen. Før vi begynner å bytte ut alle gaver med kontanter er det derfor kanskje lurt å tenke over hvilken relasjon vi har til de rundt oss og om vi er villige til å ta sjansen på å endre den relasjonen til en markedsbasert relasjon.
 
 Men, frykt ikke. Jeg har et lite tips til hvordan du kan, om ikke å redusere stresset i førjulstiden, klare å imponere mer med gavene dine. Forskning har nemlig vist at innpakning kan påvirke hvordan en gave oppfattes. For nære venner oppfattes en gave som mer verdifull dersom den har en kjip innpakning, mens en flott innpakning vil øke oppfattelsen av gaven for perifere bekjente.
