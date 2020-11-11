@@ -19,6 +19,8 @@ Den alarmerende lyden av bjelleklang varsler at nå er sesongen her på ny. Seso
 
 Det er i slike stressende stunder det er fristende å drømme seg bort til en situasjon der man bare kunne tatt opp mobilen og sendt en vipps-overføring, gjerne fulgt av noen hyggelige ord, til alle de som står på gavelista. 
 
+![](assets/vipps.png)
+
 
 
 Det å skulle gi penger eller gavekort i stedet for gaver, er jo egentlig veldig rasjonelt. Når du gir en gave så risikerer du, selv om du håper at det skal være akkurat det personen har ønsket seg, at gaven ikke treffer. Dersom du derimot gir penger så kan vedkommende kjøpe seg det samme, dersom det er det som gir høyest nytte, eller kjøpe seg noe som personen vil sette enda mer pris på. Du sikrer derfor at mottaker av gaven oppnår minst like høy nytte med å gi penger og fjerner nedsiderisikoen. Dersom vi er slik økonomer flest antar at vi er, rasjonelt tenkende mennesker, så vil penger altså være en bedre gave å motta og ikke minst gjøre livet utrolig mye enklere for alle som skal gi gaver!
@@ -32,9 +34,11 @@ Vel, det kommer an på. Dan Ariely, professor ved Duke University, peker på at 
 
 Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at du er på julemiddag hos svigers. Når maten er spist opp, reiser du deg og spør svigermor hvor mye du skal betale. «Vil 250 per pers dekke måltidet?». Jeg tror ikke jeg er alene om å grøsse av tanken på stillheten som ville etterfulgt et slikt spørsmål på julaften. Hadde jeg derimot tatt med en fin blomsteroppsats eller en flaske med godt innhold som en gave til vertskapet hadde nok reaksjonen vært en ganske annen.
 
+
+
+
+
 I boken Predictably Irrational forklarer Dan Ariely at grunnen til at en slik situasjon kan oppstå, på tross av at vi i andre situasjoner foretrekker penger fremfor gaver fra en ønskeliste, er at vi her endrer en sosial relasjon til en markeds- eller transaksjonsrelasjon. Det sosiale forholdet som er preget av høflighet og gavmildhet blir plutselig endret til et markedsbasert forhold der enhver tjeneste og ytelse har en pris.
-
-
 
 ### Gjelder dette for bedrifter også?
 
@@ -46,4 +50,4 @@ Dette er også overførbart til hvordan selskaper behandler kunder. Stadig flere
 
 Men, frykt ikke. Jeg har et lite tips til hvordan du kan, om ikke å redusere stresset i førjulstiden, klare å imponere mer med gavene dine. Forskning har nemlig vist at innpakning kan påvirke hvordan en gave oppfattes. For nære venner oppfattes en gave som mer verdifull dersom den har en kjip innpakning, mens en flott innpakning vil øke oppfattelsen av gaven for perifere bekjente.
 
-Når det kommer til julegaver, er nok julenissens strategi den beste. Lykke til med innkjøpene! Vi sees nok på gullsmeden 23. desember neste år også … 
+Når det kommer til julegaver, er nok julenissens strategi den beste. Lykke til med innkjøpene! Vi sees nok på gullsmeden 23. desember neste år også …
