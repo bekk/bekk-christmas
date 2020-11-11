@@ -10,6 +10,8 @@ ingress: I work on the internal applications in Bekk, including a front page
   their big day. But something was missing. You know, that little extra that
   tends to light up people’s faces. How about some confetti bursting out the top
   of your head? 🎉
+authors:
+  - Ida Marie Vestgøte Bosch
 ---
 The goal was to make it as simple and quick as possible. No flashy frameworks, just plain HTML, CSS and JS. Let’s take a closer look at how it was made.
 
