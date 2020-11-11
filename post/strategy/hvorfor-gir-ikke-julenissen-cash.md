@@ -19,7 +19,13 @@ Den alarmerende lyden av bjelleklang varsler at nå er sesongen her på ny. Seso
 
 Det er i slike stressende stunder det er fristende å drømme seg bort til en situasjon der man bare kunne tatt opp mobilen og sendt en vipps-overføring, gjerne fulgt av noen hyggelige ord, til alle de som står på gavelista. 
 
+
+
 Det å skulle gi penger eller gavekort i stedet for gaver, er jo egentlig veldig rasjonelt. Når du gir en gave så risikerer du, selv om du håper at det skal være akkurat det personen har ønsket seg, at gaven ikke treffer. Dersom du derimot gir penger så kan vedkommende kjøpe seg det samme, dersom det er det som gir høyest nytte, eller kjøpe seg noe som personen vil sette enda mer pris på. Du sikrer derfor at mottaker av gaven oppnår minst like høy nytte med å gi penger og fjerner nedsiderisikoen. Dersom vi er slik økonomer flest antar at vi er, rasjonelt tenkende mennesker, så vil penger altså være en bedre gave å motta og ikke minst gjøre livet utrolig mye enklere for alle som skal gi gaver!
+
+
+
+### Dette må da noen ha tenkt på?
 
 Jeg er ikke den første til å tenke i disse baner. Francesca Gino (Harvard) og Francis J. Flynn (Stanford) har forsket på hvilke gaver som foretrekkes. I en av studiene sine finner de at deltakerne i studien setter mer pris på å motta penger enn en gave, fra en ønskeliste de selv har satt opp, til tilsvarende verdi. Dette skulle vel bevise at vi fra nå av bare kan dra frem det digitale sjekkheftet ved alle festlige anledninger?
 Vel, det kommer an på. Dan Ariely, professor ved Duke University, peker på at selv om vi tror vi foretrekker penger så vil en slik gave oppfattes ulikt avhengig av hvilken relasjon det er mellom giver og mottaker. I studien til Gino & Flynn har ikke giver og mottaker noen eksisterende relasjon før studien. Det har derimot jeg og alle på min gaveliste. 
@@ -27,6 +33,10 @@ Vel, det kommer an på. Dan Ariely, professor ved Duke University, peker på at 
 Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at du er på julemiddag hos svigers. Når maten er spist opp, reiser du deg og spør svigermor hvor mye du skal betale. «Vil 250 per pers dekke måltidet?». Jeg tror ikke jeg er alene om å grøsse av tanken på stillheten som ville etterfulgt et slikt spørsmål på julaften. Hadde jeg derimot tatt med en fin blomsteroppsats eller en flaske med godt innhold som en gave til vertskapet hadde nok reaksjonen vært en ganske annen.
 
 I boken Predictably Irrational forklarer Dan Ariely at grunnen til at en slik situasjon kan oppstå, på tross av at vi i andre situasjoner foretrekker penger fremfor gaver fra en ønskeliste, er at vi her endrer en sosial relasjon til en markeds- eller transaksjonsrelasjon. Det sosiale forholdet som er preget av høflighet og gavmildhet blir plutselig endret til et markedsbasert forhold der enhver tjeneste og ytelse har en pris.
+
+
+
+### Gjelder dette for bedrifter også?
 
 Tilsvarende dynamikk kan vi finne igjen hos bedrifter når det skjer endringer mellom sosiale og transaksjonsrelasjoner. For stadig flere bedrifter er det viktig å ha en personlig relasjon til de ansatte. Gjennom sosiale aktiviteter og ekte omtanke for hver enkelt ansatt skaper man økt lojalitet og bedre ytelse. I et arbeidsforhold der du opplever at selskapet genuint bryr seg om deg som menneske, så er det mer ok for deg om du av og til må lese en mail mens du ser på dagsrevyen. Men hva skjer om selskapet innfører en streng loggføring av når du starter og slutter på jobb for dagen? Ergrelsen over da å gjøre mer arbeid utenfor den offisielle arbeidsdagen, uten å føre eksakt antall timer for jobben, øker nok betraktelig. Ariely ville her argumentert for at bedriften har endret den sosiale relasjonen mellom arbeidstaker og bedrift til en markedsbasert relasjon. Kanskje noe å tenke over når man vurderer å gi de ansatte en fin gave eller en tusenlapp ekstra på lønnsslippen i desember? Hva ville gjort deg mest takknemlig og mest motivert?
 
