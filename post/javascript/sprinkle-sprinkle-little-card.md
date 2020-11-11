@@ -47,7 +47,7 @@ We want to attach the confetti to the card if their birthday is today. To do thi
 function createBirthdayConfetti(employee) {
    if (employee.hasBirthdayToday) {
        const card = document.getElementById(`${employee.id}`);
-       // make confetti!
+       // Make confetti!
    }
 }
 ```
