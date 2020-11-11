@@ -34,7 +34,7 @@ Vel, det kommer an på. Dan Ariely, professor ved Duke University, peker på at 
 
 Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at du er på julemiddag hos svigers. Når maten er spist opp, reiser du deg og spør svigermor hvor mye du skal betale. «Vil 250 per pers dekke måltidet?». Jeg tror ikke jeg er alene om å grøsse av tanken på stillheten som ville etterfulgt et slikt spørsmål på julaften. Hadde jeg derimot tatt med en fin blomsteroppsats eller en flaske med godt innhold som en gave til vertskapet hadde nok reaksjonen vært en ganske annen.
 
-![](assets/julemiddag.jpg)
+![](assets/julemiddag.png)
 
 
 
