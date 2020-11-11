@@ -8,7 +8,8 @@ ingress: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
   posuere mi, id tristique dui. Donec cursus, ante non mattis laoreet, ex urna
   aliquet risus, non blandit augue libero vitae tellus. Vivamus laoreet semper
   turpis, vel consequat lorem mattis eget.
-authors: []
+authors:
+  - Markus Rauhut
 ---
 Nulla in aliquet purus. Phasellus commodo sed sapien at auctor. Pellentesque mi risus, faucibus vel vulputate a, aliquet et nisl. Quisque egestas pharetra neque, eget lacinia arcu accumsan ut. Nam lacinia lacinia diam et rhoncus. Mauris porttitor, risus sollicitudin ullamcorper congue, tellus neque tincidunt orci, non ornare arcu odio at felis. Praesent commodo at diam eget tincidunt. Cras aliquet non justo ut convallis. Mauris at elit augue. Vivamus enim diam, vehicula in cursus non, lobortis vitae nunc. Nullam lacinia ligula at mi ultrices auctor. Morbi vel convallis ex. Mauris quis varius neque, non posuere dui. Quisque ultricies, neque et faucibus interdum, risus turpis fermentum ligula, in consequat tortor est non sem. Suspendisse blandit nunc eu felis dignissim fringilla. Sed interdum bibendum purus nec ornare.
 
