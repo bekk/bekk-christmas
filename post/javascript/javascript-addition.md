@@ -26,6 +26,8 @@ links:
     title: https://tc39.es/ecma262/
   - url: https://javascript.info/type-conversions
     title: Type conversions
+authors:
+  - Charlie Midtlyng
 ---
 
 If you have been working with JavaScript you have probably seen a lot of usage with the “+” operator and discovered that the output is not necessarily what you expected.
