@@ -20,6 +20,8 @@ const calendars = [
     'talks',
     'thecloud',
     'ux',
+    'elm',
+    'strategy', 
 ];
 
 const Container = styled.div``;
