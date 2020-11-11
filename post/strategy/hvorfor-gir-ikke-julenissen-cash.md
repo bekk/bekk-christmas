@@ -40,6 +40,8 @@ Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at 
 
 I boken Predictably Irrational forklarer Dan Ariely at grunnen til at en slik situasjon kan oppstå, på tross av at vi i andre situasjoner foretrekker penger fremfor gaver fra en ønskeliste, er at vi her endrer en sosial relasjon til en markeds- eller transaksjonsrelasjon. Det sosiale forholdet som er preget av høflighet og gavmildhet blir plutselig endret til et markedsbasert forhold der enhver tjeneste og ytelse har en pris.
 
+
+
 ### Gjelder dette for bedrifter også?
 
 Tilsvarende dynamikk kan vi finne igjen hos bedrifter når det skjer endringer mellom sosiale og transaksjonsrelasjoner. For stadig flere bedrifter er det viktig å ha en personlig relasjon til de ansatte. Gjennom sosiale aktiviteter og ekte omtanke for hver enkelt ansatt skaper man økt lojalitet og bedre ytelse. I et arbeidsforhold der du opplever at selskapet genuint bryr seg om deg som menneske, så er det mer ok for deg om du av og til må lese en mail mens du ser på dagsrevyen. Men hva skjer om selskapet innfører en streng loggføring av når du starter og slutter på jobb for dagen? Ergrelsen over da å gjøre mer arbeid utenfor den offisielle arbeidsdagen, uten å føre eksakt antall timer for jobben, øker nok betraktelig. Ariely ville her argumentert for at bedriften har endret den sosiale relasjonen mellom arbeidstaker og bedrift til en markedsbasert relasjon. Kanskje noe å tenke over når man vurderer å gi de ansatte en fin gave eller en tusenlapp ekstra på lønnsslippen i desember? Hva ville gjort deg mest takknemlig og mest motivert?
