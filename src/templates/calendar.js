@@ -6,6 +6,7 @@ import Calendar from '../components/Calendar';
 import CalendarWindowClosed from '../components/CalendarWindowClosed';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Layout from '../components/Layout';
+import OtherCalendars from '../components/OtherCalendars';
 
 import { getWindowImagePlaceholder, mapCalendarToName, getCalendarPostLink } from '../utils';
 import { Teaser } from '../components/Teaser';
@@ -86,6 +87,7 @@ const Template = ({ data, pageContext }) => {
                 ))}
             </Calendar>
             <RelatedCalendars paths={pageContext.relatedCalendarPaths} />
+            <OtherCalendars calendarName={pageContext.calendar}/>
         </Layout>
     );
 };

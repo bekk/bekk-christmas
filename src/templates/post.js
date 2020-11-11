@@ -11,9 +11,10 @@ import Layout from '../components/Layout';
 import AuthorInfo from '../components/Author';
 import PrismThemer from '../components/PrismThemer';
 import Calendar from '../components/Calendar';
-import OtherCalendars from '../components/OtherCalendars';
-import { setImageWidth, getWindowImagePlaceholder } from '../utils';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
+import OtherCalendars from '../components/OtherCalendars';
+
+import { setImageWidth, getWindowImagePlaceholder } from '../utils';
 import * as mediaQueries from '../constants/media-queries';
 
 const fallbackImage =

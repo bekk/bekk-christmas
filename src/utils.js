@@ -105,7 +105,7 @@ export const mapCalendarToName = (calendar) => {
         case 'talks':
             return 'Talks';
         case 'dot-net':
-            return '.net';
+            return '.NET';
         case 'elm':
             return 'Elm';
         case 'strategy':
