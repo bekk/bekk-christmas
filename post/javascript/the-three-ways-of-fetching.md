@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 2
 title: The Three Ways of Fetching
-image: https://images.unsplash.com/photo-1577905055304-3ca6c585fe15
+image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
 ingress: I'm part of a group that holds introductory courses on web development
   for students and new employees in Bekk. Somewhere in the course we say that
   there are three ways to retrieve data in JavaScript, but it was not until I
