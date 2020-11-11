@@ -16,7 +16,6 @@ The goal was to make it as simple and quick as possible. No flashy frameworks, j
 On our internal front page we have a carousel with employees, sorted by birthdays. Every upcoming birthday boy or girl has their own “card” in the carousel, with their image on it. Let’s say each card looks like this:
 
 ```html
-
 <div id="employeeId" class="employeeCard">
     <img ... />
 </div>
@@ -25,7 +24,6 @@ On our internal front page we have a carousel with employees, sorted by birthday
 For simplification, let’s say that each employee object consists of three properties:
 
 ```javascript 
-
 {
    id: 1,
    name: "Santa",
@@ -35,17 +33,17 @@ For simplification, let’s say that each employee object consists of three prop
 
 We can then define a method that is applied to every employee in the carousel, to check if they should have confetti or not.
 
-```
+```javascript
 function applyBirthdayConfetti(employee) {
    if (employee.hasBirthdayToday) {
-       // make confetti!
+       // Make confetti!
    }
 }
 ```
 
 We want to attach the confetti to the card if their birthday is today. To do this, we need to get a hold of their card in the DOM. Luckily, the DOM API provides us with the method `document.getElementById()`. Since each card in the DOM uses the `employeeId` as its id, we can do the following to get a hold on that card:
 
-```
+```javascript
 function createBirthdayConfetti(employee) {
    if (employee.hasBirthdayToday) {
        const card = document.getElementById(`${employee.id}`);
@@ -60,14 +58,14 @@ What is confetti, anyway? Isn’t it just a collection of many small, colored do
 
 First, we create a new element, and add a `classname` for styling:
 
-```
+```javascript
 let dot = document.createElement('div');
 dot.className = "confetti";
 ```
 
 Time to look at some CSS. Don't be intimidated by the variables we have used – we'll get to that. We define the styling for each dot, and an animation to go with it:
 
-```
+```css
 .confetti {
  position: absolute;
  width: 4px;
@@ -95,7 +93,7 @@ We want the confetti dots to start from the same source, but end up in different
 
 To simulate this randomness in our confetti, we create a simple method. It gives us a random number within a specified range that we can use to set the end positions of x and y.
 
-```
+```javascript
 const random = (min, max) => {
    return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -103,7 +101,7 @@ const random = (min, max) => {
 
 Let’s go ahead and define our custom properties using our random function:
 
-```
+```javascript
 dot.style.setProperty('--endX', random(-260, 260) + 'px');
 dot.style.setProperty('--endY', random(-160, 160) + 'px');
 dot.style.setProperty('--scale', random(0.6, 1) + '');
@@ -111,7 +109,7 @@ dot.style.setProperty('--scale', random(0.6, 1) + '');
 
 Lastly, let’s define some happy colors for our confetti.
 
-```
+```javascript
 const colors = [
    "#a864fd",
    "#29cdff",
@@ -121,7 +119,7 @@ const colors = [
 ]
 ```
 
-```
+```javascript
 dot.style.setProperty('--color', colors[random(0,4)]);
 ```
 
