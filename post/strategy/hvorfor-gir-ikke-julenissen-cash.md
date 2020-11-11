@@ -19,13 +19,9 @@ Den alarmerende lyden av bjelleklang varsler at nå er sesongen her på ny. Seso
 
 Det er i slike stressende stunder det er fristende å drømme seg bort til en situasjon der man bare kunne tatt opp mobilen og sendt en vipps-overføring, gjerne fulgt av noen hyggelige ord, til alle de som står på gavelista. 
 
-![](assets/vipps.jpg)
-
-
+![](assets/vipps.png)
 
 Det å skulle gi penger eller gavekort i stedet for gaver, er jo egentlig veldig rasjonelt. Når du gir en gave så risikerer du, selv om du håper at det skal være akkurat det personen har ønsket seg, at gaven ikke treffer. Dersom du derimot gir penger så kan vedkommende kjøpe seg det samme, dersom det er det som gir høyest nytte, eller kjøpe seg noe som personen vil sette enda mer pris på. Du sikrer derfor at mottaker av gaven oppnår minst like høy nytte med å gi penger og fjerner nedsiderisikoen. Dersom vi er slik økonomer flest antar at vi er, rasjonelt tenkende mennesker, så vil penger altså være en bedre gave å motta og ikke minst gjøre livet utrolig mye enklere for alle som skal gi gaver!
-
-
 
 ### Dette må da noen ha tenkt på?
 
@@ -36,19 +32,13 @@ Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at 
 
 ![](assets/julemiddag.png)
 
-
-
 I boken Predictably Irrational forklarer Dan Ariely at grunnen til at en slik situasjon kan oppstå, på tross av at vi i andre situasjoner foretrekker penger fremfor gaver fra en ønskeliste, er at vi her endrer en sosial relasjon til en markeds- eller transaksjonsrelasjon. Det sosiale forholdet som er preget av høflighet og gavmildhet blir plutselig endret til et markedsbasert forhold der enhver tjeneste og ytelse har en pris.
-
-
 
 ### Gjelder dette for bedrifter også?
 
 Tilsvarende dynamikk kan vi finne igjen hos bedrifter når det skjer endringer mellom sosiale og transaksjonsrelasjoner. For stadig flere bedrifter er det viktig å ha en personlig relasjon til de ansatte. Gjennom sosiale aktiviteter og ekte omtanke for hver enkelt ansatt skaper man økt lojalitet og bedre ytelse. I et arbeidsforhold der du opplever at selskapet genuint bryr seg om deg som menneske, så er det mer ok for deg om du av og til må lese en mail mens du ser på dagsrevyen. Men hva skjer om selskapet innfører en streng loggføring av når du starter og slutter på jobb for dagen? Ergrelsen over da å gjøre mer arbeid utenfor den offisielle arbeidsdagen, uten å føre eksakt antall timer for jobben, øker nok betraktelig. Ariely ville her argumentert for at bedriften har endret den sosiale relasjonen mellom arbeidstaker og bedrift til en markedsbasert relasjon. Kanskje noe å tenke over når man vurderer å gi de ansatte en fin gave eller en tusenlapp ekstra på lønnsslippen i desember? Hva ville gjort deg mest takknemlig og mest motivert?
 
 Dette er også overførbart til hvordan selskaper behandler kunder. Stadig flere ønsker å ha en personlig relasjon til kundene sine og slik skape en dyp kundelojalitet. Et godt eksempel er lokalbanken, som skal være den trygge og nære banken som bryr seg om deg. Vel og bra, men da må man evne å vise lojalitet andre veien også. Dersom den vennlige lokalbanken setter betalingsfrister på 5 dager og sender purregebyr før du rekker å si «grevinnen og hovmesteren» faller nok følelsen av en god relasjon bort for kunden. Relasjonen kan til og med bli betydelig dårligere enn om banken i utgangspunktet hadde holdt kundeforholdet som et rent markedsbasert forhold.
-
-
 
 ### Hva gjør vi da?
 
