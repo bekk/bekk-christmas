@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 20
 title: Sprinkle, sprinkle, little card
-image: https://unsplash.com/photos/e2pVrE1PYzs
+image: https://images.unsplash.com/photo-1571197650032-cbc73669711b
 ingress: I work on the internal applications in Bekk, including a front page
   that shows key information about employees and the company. One of the
   sections shows upcoming birthdays, so you can congratulate your colleagues on
