@@ -87,6 +87,6 @@ Since we have information about the generic type parameter at time of invokation
     }
 ```
 
-Here we see how Kotlin has gotten around the erasure of parameterized types, and provided us with runtime information about the actual type of the argument we invoked the function with! We can take advantage of this to do things we otherwise would not be able to, like using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth .
+Here we see how Kotlin has gotten around the erasure of parameterized types: since inline expansion is performed, additional information can be included at the callsite - i.e. Kotlin can provide us with runtime information about the actual type of the argument we invoked the function with! We can take advantage of this to do things we otherwise would not be able to, like using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth .
 
 \* _You can read more about the inline modifier keyword in the [Kotlin docs](https://kotlinlang.org/docs/reference/inline-functions.html)._
