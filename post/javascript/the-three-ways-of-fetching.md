@@ -4,15 +4,13 @@ post_year: 2020
 post_day: 2
 title: The Three Ways of Fetching
 image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
-ingress: I'm part of a group that holds introductory courses on web development
+ingress: "I'm part of a group that holds introductory courses on web development
   for students and new employees in Bekk. Somewhere in the course we say that
-  there are three ways to retrieve data in JavaScript, but it was not until I
-  did the workshop myself that I noticed that we do not explain all three. I
-  thought it might be helpful with a comparison of the different methods. So
-  here it comes – whether you're curious about learning the basics of data
-  fetching, or a veteran who has long since forgotten why you write code the way
-  you're used to.
-description: ""
+  there are three ways to retrieve data in JavaScript: **callbacks, promises and
+  async / await**. I noticed that we do not explain all three in the workshop,
+  so here it comes."
+description: "An introduction to three different ways of fetching data in
+  JavaScript: callbacks, promises and async / await."
 links:
   - url: https://javascript.christmas/2019/8
     title: The Promise of Christmas
@@ -27,7 +25,11 @@ authors:
 ---
 In the spirit of Christmas, let's use a suiting analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
 
-Our elf in this analogy will be represented by the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child. We also have access to the global array `const bagOfToys = [];`, which is to be filled up with Christmas presents before Santa is on his way.
+Our elf in this analogy will be represented by the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child. We also have access to the global array `bagOfToys`, which is to be filled up with Christmas presents before Santa is on his way.
+
+```javascript
+const bagOfToys = [];
+```
 
 ## Callbacks
 
@@ -152,4 +154,4 @@ We will wait until we have retrieved a gift successfully, and then we will add i
 
 We have to declare `fetchChristmasGift()` asynchronous with `async`, since we are using `await` within. That way, we'll know that something is being awaited where we call our async function `fetchChristmasGift()`. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
 
-And that's about it! I hope you learned something new about fetching data from this quick introduction. Hopefully, Santa read this too and was able to find your gift in time for Christmas Eve :christmas_tree:
+And that's about it! I hope you learned something new about fetching data from this quick introduction, whether you're new to JavaScript or a veteran who has long since forgotten why you write code the way you're used to. Hopefully, Santa read this too and was able to find your gift in time for Christmas Eve :christmas_tree:
