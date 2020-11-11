@@ -13,6 +13,15 @@ ingress: I'm part of a group that holds introductory courses on web development
   fetching, or a veteran who has long since forgotten why you write code the way
   you're used to.
 description: ""
+links:
+  - url: https://javascript.christmas/2019/8
+    title: The Promise of Christmas
+  - url: https://javascript.christmas/2019/9
+    title: A brief look at async-await
+  - url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+    title: Fetch API
+  - url: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+    title: Asynchronous JavaScript
 authors:
   - Ida Marie Vestgøte Bosch
 ---
