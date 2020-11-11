@@ -4,12 +4,21 @@ post_year: 2020
 post_day: 20
 title: Sprinkle, Sprinkle, Little Card
 image: https://images.unsplash.com/photo-1571197650032-cbc73669711b
-ingress: I work on the internal applications in Bekk, including a front page
+ingress: "I work on the internal applications in Bekk, including a front page
   that shows key information about employees and the company. One of the
   sections shows upcoming birthdays, so you can congratulate your colleagues on
   their big day. But something was missing. You know, that little extra that
   tends to light up people’s faces. How about some confetti bursting out the top
-  of your head? 🎉
+  of your head? :tada: "
+links:
+  - url: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+    title: Introduction to the DOM
+  - url: https://htmldom.dev/
+    title: How to manage HTML DOM
+  - url: https://kentcdodds.com/blog/super-simple-start-to-css-variables
+    title: Super Simple Start to css variables
+  - url: https://epicreact.dev/css-variables/
+    title: Use CSS Variables instead of React Context
 authors:
   - Ida Marie Vestgøte Bosch
 ---
@@ -33,7 +42,7 @@ For simplification, let’s say that each employee object consists of three prop
 }
 ```
 
-We can then define a method that is applied to every employee in the carousel, to check if they should have confetti or not.
+We can then define a method that's applied to every employee in the carousel, to check if they should have confetti or not.
 
 ```javascript
 function applyBirthdayConfetti(employee) {
@@ -43,7 +52,7 @@ function applyBirthdayConfetti(employee) {
 }
 ```
 
-We want to attach the confetti to the card if their birthday is today. To do this, we need to get a hold of their card in the DOM. Luckily, the DOM API provides us with the method `document.getElementById()`. Since each card in the DOM uses the `employeeId` as its id, we can do the following to get a hold on that card:
+We want to attach the confetti to the card if their birthday is today. To do this, we need to get a hold of their card in the DOM. Luckily, the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) provides us with the method `document.getElementById()`. Since each card in the DOM uses the `employeeId` as its id, we can do the following to get a hold on that card:
 
 ```javascript
 function createBirthdayConfetti(employee) {
@@ -56,9 +65,9 @@ function createBirthdayConfetti(employee) {
 
 This enables us to manipulate the element in the DOM. We can append child elements to it during runtime!
 
-What is confetti, anyway? Isn’t it just a collection of many small, colored dots, spread in multiple directions? That does not sound too complicated. And you guessed it – that’s exactly what we’re going to make next!
+What is confetti, anyway? Isn’t it just a collection of many small, colored dots, spread in multiple directions? That doesn't sound too complicated. And you guessed it – that’s exactly what we’re going to make next!
 
-First, we create a new element, and add a `classname` for styling:
+First, we create a new element, and add a `className` for styling:
 
 ```javascript
 let dot = document.createElement('div');
@@ -69,16 +78,16 @@ Time to look at some CSS. Don't be intimidated by the variables we have used –
 
 ```css
 .confetti {
- position: absolute;
- width: 4px;
- height: 4px;
- top: 10%;
- left: 50%;
- margin: -2px 0 0 -2px;
- opacity: 0;
- background: var(--color);
- transform: translate(var(--endX), var(--endY)) scale(var(--scale, 1));
- animation: confetti 1s ease-out 1s forwards;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 10%;
+  left: 50%;
+  margin: -2px 0 0 -2px;
+  opacity: 0;
+  background: var(--color);
+  transform: translate(var(--endX), var(--endY)) scale(var(--scale, 1));
+  animation: confetti 1s ease-out 1s forwards;
 }
 
 @keyframes confetti {
@@ -89,7 +98,7 @@ Time to look at some CSS. Don't be intimidated by the variables we have used –
 }
 ```
 
-Okay, so we provided some _custom variables_ to our style by writing `var(--name)`. We did this to vary the colors and animated motions of the dots. Now, we need to define these custom variables in our code to be able to access them in the CSS. They are defined in JavaScript using the `style` property of the dot element: `dot.style.setProperty(propertyName, value);`
+Okay, so we provided some [custom variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to our style by writing `var(--name)`. We did this to vary the colors and animated motions of the dots. Now, we need to define these custom variables in our code to be able to access them in the CSS. They are defined in JavaScript using the [style property](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration) of the dot element: `dot.style.setProperty(propertyName, value);`
 
 We want the confetti dots to start from the same source, but end up in different, seemingly random x and y positions.
 
@@ -138,4 +147,4 @@ Puh! Let’s take a look at the result:
 
 There you go! Awesome confetti with a few lines of code and no sweat. How about playing around with some confetti this holiday? Feel free to use it in your own project, and play with the different variables to customise it.
 
-And remember: _With great confetti comes great joy!_ 🎉🤩
+And remember: _With great confetti comes great joy!_ :tada: :star_struck:
