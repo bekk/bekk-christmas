@@ -5,10 +5,10 @@ post_day: 2
 title: The Three Ways of Fetching
 image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
 ingress: "I'm part of a group that holds introductory courses on web development
-  for students and new employees in Bekk. Somewhere in the course we say that
-  there are three ways to retrieve data in JavaScript: **callbacks, promises and
-  async / await**. I noticed that we do not explain all three in the workshop,
-  so here it comes."
+  for students and new employees in Bekk. In the course we say that there are
+  three ways to retrieve data in JavaScript: **callbacks, promises and async /
+  await**. I was curious to see them measured up against each other, so here it
+  comes."
 description: "An introduction to three different ways of fetching data in
   JavaScript: callbacks, promises and async / await."
 links:
