@@ -9,7 +9,7 @@ ingress: "I work on the internal applications in Bekk, including a front page
   sections shows upcoming birthdays, so you can congratulate your colleagues on
   their big day. But something was missing. You know, that little extra that
   tends to light up people’s faces. How about some confetti bursting out the top
-  of your head? :tada: "
+  of your head? :tada:"
 links:
   - url: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
     title: Introduction to the DOM
