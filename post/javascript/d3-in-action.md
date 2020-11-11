@@ -3,11 +3,10 @@ calendar: javascript
 post_year: 2018
 post_day: 20
 title: D3 in action
-ingress: >-
-  [D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript library that's
-  well suited to create data visualizations on the web. It brings data to life
-  using HTML, SVGs and CSS. You can make everything from static graphs to
-  interactive articles.  
+ingress: "[D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript
+  library that's well suited to create data visualizations on the web. It brings
+  data to life using HTML, SVGs and CSS. You can make everything from static
+  graphs to interactive articles."
 authors:
   - Svein Petter Gjøby
 ---
