@@ -19,6 +19,8 @@ links:
     title: Fetch API
   - url: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
     title: Asynchronous JavaScript
+  - url: https://zellwk.com/blog/nested-callbacks/
+    title: Dealing with nested callbacks
 authors:
   - Ida Marie Vestgøte Bosch
 ---
