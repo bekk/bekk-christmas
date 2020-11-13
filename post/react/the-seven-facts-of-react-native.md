@@ -23,7 +23,7 @@ According to the [Semantic Versioning](https://semver.org/), you should bump the
 
 There have been some questions about when they will version to properly semver versions, and they said earlier that they may bump to [version 1.0.0 as a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/), but has not been done yet. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html). That is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
-# \<View/> and \<Text/> and other components
+# <View/> and <Text/> and other components
 
 React Native has a syntax that are pretty much equal to React, but with some differences. Instead of tags such as `<div>` and `<p>`, you have `<View>` and `<Text>`. You need to import these components for each file you are writing layout specific code. Take a look at the example below:
 
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         ...Platform.select({
             ios: {
                 marginBottom: 16,
-            }
+            },
             android: {
                 marginBottom: 8,
             }
@@ -131,7 +131,11 @@ React Native was born after an internal hackathon in Facebook in 2013, where Jor
 
 React Native is used in many applications in production, but few of them can say that the complete App is based on React Native.
 
-As mentioned in the introduction, React Native is developed by Facebook, and earlier this year, Facebook announced that they would release the Messenger app, [written in native](https://engineering.fb.com/data-infrastructure/messenger/) where they would save lots of lots of memory.
+As mentioned in the introduction, React Native is developed by Facebook, and earlier this year, Facebook announced that they would release the Messenger app, [written in native](https://engineering.fb.com/data-infrastructure/messenger/) where:
+
+> Rewriting the Messenger codebase for a faster, smaller, and simpler messaging app
+
+So what will happen if Facebook don't use React Native anymore? 
 
 # That was it!
 
