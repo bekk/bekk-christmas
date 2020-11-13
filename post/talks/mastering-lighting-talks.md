@@ -2,7 +2,7 @@
 calendar: talks
 post_year: 2020
 post_day: 5
-title: Mastering lighting-talks
+title: Mastering lighting talks
 ingress: Short and succinct presentations conveying a message crafted with
   flawless precision. Accompanied by a set number of slides shown for a limited
   time. Presenters pacing their speech to line up with perfection as the next
