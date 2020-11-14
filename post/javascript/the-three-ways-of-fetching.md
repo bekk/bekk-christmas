@@ -4,10 +4,11 @@ post_year: 2020
 post_day: 2
 title: The Three Ways of Fetching
 image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
-ingress: "I'm part of a group that holds introductory courses on web development
+ingress: I'm part of a group that holds introductory courses on web development
   for students and new employees in Bekk. In the course we say that there are
-  three ways to retrieve data in JavaScript: **callbacks, promises and async /
-  await**, but only the latter is explained. Let's see how each of them works!"
+  three ways to retrieve data in JavaScript, but we only explain one of the
+  methods. Now, let's see how each of them works – **callbacks, promises and
+  async / await**.
 description: "An introduction to three different ways of fetching data in
   JavaScript: callbacks, promises and async / await."
 links:
@@ -24,12 +25,17 @@ links:
 authors:
   - Ida Marie Vestgøte Bosch
 ---
-In the spirit of Christmas, we'll use a suiting analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
+In the spirit of Christmas, we'll use a suitable analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
 
-Our elf in this analogy will be represented by the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child. We also have access to the global array `bagOfToys`, which is to be filled up with Christmas presents before Santa is on his way.
+Our elf in this analogy will be represented by the function `getGiftForChild()`, which we will define for each of the three methods. The elf will retrieve the gifts using the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child's name. We also have access to the global array `bagOfToys`, which is to be filled up with Christmas presents before Santa is on his way.
 
 ```javascript
 const bagOfToys = [];
+
+const getGiftForChild = (name) => {
+    const url = `https://santas-gift-storage.northpole/gifts/${name}`;
+    // Fetch gift
+}
 ```
 
 ## Callbacks
@@ -38,12 +44,24 @@ The first way to fetch data utilises that we can pass a reference to a function 
 
 There are multiple ways to fetch data, but we're going to look at the classic, well-used API [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). If you're not familiar with it, don't worry – the details aren't too important. We're interested in the way we use our callback, and I'll explain it below.
 
-First, we define our main function `fetchChristmasGift` to fetch a Christmas gift for a child. We need the name of the child to fetch the correct gift, so we'll take that as a parameter. Then, we create a new request:
+First, let's define the main function `fetchChristmasGift()`, which Santa can use to send an elf on his way with a child's name.  
 
 ```javascript
 const fetchChristmasGift = (name) => {
-    const request = new XMLHttpRequest();
+    getGiftForChild(name);
+}
+
+const getGiftForChild = (name) => {
     const url = `https://santas-gift-storage.northpole/gifts/${name}`;
+    // Fetch gift
+}
+```
+Then, we implement the gift retrieval using an `XMLHttpRequest`:
+
+```javascript
+const getGiftForChild = (name) => {
+    const url = `https://santas-gift-storage.northpole/gifts/${name}`;
+    const request = new XMLHttpRequest();
 
     request.onreadystatechange = function() {
         if (request.readyState === 4) {
@@ -55,8 +73,7 @@ const fetchChristmasGift = (name) => {
     request.send();
 }
 ```
-
-The event `onreadystatechange` is triggered when the state of the request changes. We assign a function to this event, which will be called when it occurs. We check if the state has changed to `4 = DONE`, and if it has we want to do something: we want to call a callback function!
+The event `onreadystatechange` is triggered when the state of the request changes. We assign a function to this event, which will be called when it occurs. If the state has changed to `4 = DONE`, we want to do something: we want to call a callback function!
 
 So let's create a callback function, to decide what happens when we have fetched our gift. Our instructions were to add it to Santa's bag of gifts, so we'll do that. While we're at it, let's include a check to see if we actually got the gift:
 
@@ -70,22 +87,36 @@ const callbackFunction = (request) => {
     }
 }
 ```
+In order for the elf to know what to do with the gift, he must be sent some instructions. Therefore, we must pass the callback function to the higher order function `getGiftForChild()`. Let's take a look at the final result: 
 
-Let's call this function in our code above:
+```
+const bagOfToys = [];
 
-```javascript
 const fetchChristmasGift = (name) => {
-    const request = new XMLHttpRequest();
+    getGiftForChild(name, callbackFunction);
+}
+
+const getGiftForChild = (name, callback) => {
     const url = `https://santas-gift-storage.northpole/gifts/${name}`;
+    const request = new XMLHttpRequest();
 
     request.onreadystatechange = function() {
         if (request.readyState === 4) {
-            callbackFunction(request);
+            callback(request);
         }
     }
 
     request.open('GET', url);
     request.send();
+}
+
+const callbackFunction = (request) => {
+    if (request.status == 200) {
+        const gift = request.response;
+        bagOfToys.push(gift);
+    } else {
+        console.log("Oops! No gift for this child");
+    }
 }
 ```
 
@@ -95,9 +126,9 @@ But callbacks can easily get messy. There is a reason why there is something cal
 
 ## Promises
 
-The second way to fetch data uses [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) to handle asynchronous calls. Promises are objects that make asynchronity a bit more tidy. For this purpose we use a function called `fetch()` from the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). Unlike the previous method, the responses are wrapped in Promises, so you don't have to explicitly handle all the nitty-gritty details anymore!
+The second way to fetch data uses [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) to handle asynchronous calls. Promises are objects that make asynchronicity a bit more tidy. For this purpose we use a function called `fetch()` from the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). Unlike the previous method, the responses are wrapped in Promises, so you don't have to explicitly handle all the nitty-gritty details anymore!
 
-We start by defining the function `getGiftForChild()` which takes a child's name as input and fetches the gift from our URL using `fetch()`. This function will return a response in the form of a `Promise`.
+We start by defining the elf function `getGiftForChild()` which takes a child's name as input and fetches the gift from our URL using `fetch()`. This function will return a response in the form of a `Promise`.
 
 ```javascript
 const getGiftForChild = (name) => fetch(`https://santas-gift-storage.northpole/gifts/${name}`);
@@ -136,8 +167,7 @@ const fetchChristmasGift = async (name) => {
     bagOfToys.push(gift);
 }
 ```
-
-To be sure, we can wrap it in a `try / catch` block to handle if the Promise is rejected:
+We wait until we've retrieved a gift successfully, and then we'll add it to the bag :gift: To be sure, we can wrap it in a `try / catch` block to handle if the Promise is rejected:
 
 ```javascript
 const fetchChristmasGift = async (name) => {
@@ -150,9 +180,6 @@ const fetchChristmasGift = async (name) => {
     }
 }
 ```
-
-We'll wait until we've retrieved a gift successfully, and then we'll add it to the bag :gift:
-
-We have to declare `fetchChristmasGift()` asynchronous with `async`, since we're using `await` within. That way, we'll know that something is being awaited where we call our async function `fetchChristmasGift()`. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
+We have to declare `fetchChristmasGift()` asynchronous with `async`, since it's using `await` within. That way, it's clear that something is being awaited where the async function `fetchChristmasGift()` is called. We can decide if we want to await that function as well, or go on with our business as usual in parallel. After all, the North Pole is a busy place.
 
 And that's about it! I hope you learned something new about fetching data from this quick introduction, whether you're new to JavaScript or a veteran who has long since forgotten why you write code the way you're used to. Hopefully, Santa read this too and was able to find your gift in time for Christmas Eve :christmas_tree:
