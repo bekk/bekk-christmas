@@ -4,11 +4,11 @@ post_year: 2020
 post_day: 2
 title: The Three Ways of Fetching
 image: https://images.unsplash.com/photo-1480819031369-4710cf00b8d7
-ingress: I'm part of a group that holds introductory courses on web development
+ingress: "I'm part of a group that holds introductory courses on web development
   for students and new employees in Bekk. In the course we say that there are
   three ways to retrieve data in JavaScript, but we only explain one of the
-  methods. Now, let's see how each of them works – **callbacks, promises and
-  async / await**.
+  methods. Now, let's see how each of them works: **callbacks, promises and
+  async / await**."
 description: "An introduction to three different ways of fetching data in
   JavaScript: callbacks, promises and async / await."
 links:
@@ -16,8 +16,6 @@ links:
     title: The Promise of Christmas
   - url: https://javascript.christmas/2019/9
     title: A brief look at async-await
-  - url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-    title: Fetch API
   - url: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
     title: Asynchronous JavaScript
   - url: https://zellwk.com/blog/nested-callbacks/
@@ -25,7 +23,7 @@ links:
 authors:
   - Ida Marie Vestgøte Bosch
 ---
-In the spirit of Christmas, we'll use a suitable analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task.
+In the spirit of Christmas, we'll use a suitable analogy. Let's say Santa requests that an elf fetches a gift for a child on his list. He does not know when the elf will be back, but when it does he wants to put the gift into his bag of toys. This is 2020, after all, so of course he uses JavaScript to complete the task :santa:
 
 Our elf in this analogy will be represented by the function `getGiftForChild()`, which we will define for each of the three methods. The elf will retrieve the gifts using the magical url `https://santas-gift-storage.northpole/gifts/nameOfChild`, which returns a gift for a given child's name. We also have access to the global array `bagOfToys`, which is to be filled up with Christmas presents before Santa is on his way.
 
@@ -89,7 +87,7 @@ const callbackFunction = (request) => {
 ```
 In order for the elf to know what to do with the gift, he must be sent some instructions. Therefore, we must pass the callback function to the higher order function `getGiftForChild()`. Let's take a look at the final result: 
 
-```
+```javascript
 const bagOfToys = [];
 
 const fetchChristmasGift = (name) => {
@@ -167,7 +165,8 @@ const fetchChristmasGift = async (name) => {
     bagOfToys.push(gift);
 }
 ```
-We wait until we've retrieved a gift successfully, and then we'll add it to the bag :gift: To be sure, we can wrap it in a `try / catch` block to handle if the Promise is rejected:
+We wait until we've retrieved a gift successfully, and then we'll add it to the bag :gift: 
+To be sure, we can wrap it in a `try / catch` block to handle if the Promise is rejected:
 
 ```javascript
 const fetchChristmasGift = async (name) => {
