@@ -12,6 +12,8 @@ links:
     title: Core Components and APIs
   - url: https://www.monterail.com/blog/react-native-development-pros-cons
     title: Pros And Cons of React Native Development in 2020
+  - url: https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx
+    title: Airbnb, Udacity Abandon React Native
 authors:
   - Caroline Odden
 ---
@@ -25,7 +27,7 @@ According to the [Semantic Versioning](https://semver.org/), you should bump the
 
 There have been some questions about when they will version to properly semver conventions, and they said earlier that they may bump to [version 1.0.0 when a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) is reached, but this has not been done yet. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html), which is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
-# <View/> and <Text/> and other components
+# \<View/> and \<Text/> and other components
 
 React Native has a syntax that are pretty much equal to React, but with some differences. Instead of tags such as `<div>` and `<p>`, you have `<View>` and `<Text>` components. You need to import these components for each file you are writing layout specific code. Take a look at the example below:
 
