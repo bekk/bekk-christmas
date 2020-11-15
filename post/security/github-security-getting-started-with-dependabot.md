@@ -6,9 +6,8 @@ title: "Github Security: Getting started with Dependabot"
 ingress: Integrating security as a part of application development is considered
   a good idea, but it is often overlooked in practice. In an attempt to increase
   our focus on security during development, we took advantage of one of Github's
-  native security features. In this article, I present our motivation for
-  enabling Github's Dependabot and show you how to get started in a matter of
-  minutes.
+  native security features. In this article, I present our motivation and show
+  you how to enable Dependabot in a matter of minutes.
 authors:
   - Gaute Solbu Kleiven
 ---
