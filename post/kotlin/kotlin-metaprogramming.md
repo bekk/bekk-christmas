@@ -17,15 +17,15 @@ _Disclaimer_: This article focuses on source code generation, and does not make 
 
 Today we're going to take a look at kotlinpoet and some of the possibilities code generation offers. 
 
-In it's most simple form codegeneration can simply be any program, that when executed spits out valid sourcecode. In a basic example we imagine a simple function;
+In it's most simple form codegeneration can simply be any program, that when executed spits out valid sourcecode. As an example, a simple function which returns a print statement;
 ```kotlin
 fun createHello(who: String) = "println(\"Hello, $who\")"
 
 createHello("world") // return println("Hello, world")
 ```
 
-Nothing spectacular going on here. But when executed it prints out some valid code, that we potentially could use in our project. 
-But, lets make it more complex and at the same time introduce todays star **kotlinpoet** by creating a simple class;
+There is nothing spectacular going on here. When it is executed it prints out some valid code, that we potentially could use later. 
+But, lets make it more complex and at the same time introduce todays star **kotlinpoet**;
 ```kotlin
 val packageName = "com.christmas.kotlin"
 val className = "Code"
@@ -44,7 +44,7 @@ package com.christmas.kotlin
 public class Code
 ```
 
-Underwhelming, I know. But once we got a `TypeSpec` we can start adding in more stuff like properties, constructors and other functions.
+Kotlinpoet doesn't do much in the example above, but as we'll see it will help us more further down the line. `FileSpec` and `TypeSpec` are kotlinpoet's representations of files and classes, and once we got a `TypeSpec` we can add in more stuff like properties, constructors and other functions.
 
 To add a simple property to our `Code` class we use define a `PropertySpec` and add it to our already existing `TypeSpec`;
 ```kotlin
@@ -68,7 +68,7 @@ public class Code {
 }
 ```
 
-And suddenly, our class has a property, and even some imports. The complexity at this point is somewhat limited, but even now we get some help from the library. 
+All of a sudden our class has a property and some import statements. Kotlinpoet keeps track of which import statements are needed to make our code work without us programming it explicitly. The complexity at this point is somewhat limited, but even now we get some help from the library.
 
 Adding a function to our class continues in a similar vein;
 ```kotlin
@@ -99,7 +99,7 @@ public class Code {
 }
 ```
 
-**Kotlinpoet** correctly identified that the `Code` class is visible, and thus didn't add an import or use the fully qualified name for the class. However, if we change the return type of our function to `LONG` it would include it as an import. Consequently it would also generate code that wouldn't compile as our function has `return this` which isn't a `Long` , whoopsi. Fortunately, we are generating kotlin source code, and the kotlin compiler would probably tell us that something was wrong. 
+**Kotlinpoet** correctly identified that the `Code` class is visible within our class, and thus didn't add an import or use the fully qualified name for the class. However, if we change the return type of our function to `LONG` it would include it as an import. Consequently it would also generate code that wouldn't compile as our function has `return this` which isn't a `Long` , whoopsi. Fortunately, we are generating kotlin source code, and the kotlin compiler would probably tell us that something was wrong. 
 
-This might seems like quite alot of work to get a small class. And while I tend to agree, it also opens up the possibility to automate some really cool stuff. 
-As of writing this **kotlinpoet** is listed as a dependency by 285 packages on [mvnrepository.com](https://mvnrepository.com/artifact/com.squareup/kotlinpoet/usages), most notably: [Arrow (Arrow-Meta)](https://arrow-kt.io/docs/0.10/apidocs/arrow-meta/arrow.meta.encoder/-meta-api/index.html), [Microsoft Thrifty compiler plugin](https://github.com/microsoft/thrifty/tree/master/thrifty-compiler-plugins), the [apollo-compiler](https://github.com/apollographql/apollo-android/tree/main/apollo-compiler) and [ExpediaGroup's graphql-kotlin](https://github.com/ExpediaGroup/graphql-kotlin). 
+This might seems like quite alot of work to get a small class. And while that might be true, it also opens up the possibility to automate some really cool stuff. Looking through the usage of **kotlinpoet** on [mvnrepository](https://mvnrepository.com/artifact/com.squareup/kotlinpoet/usages) we can see it being used by [Arrow (Arrow-Meta)](https://arrow-kt.io/docs/0.10/apidocs/arrow-meta/arrow.meta.encoder/-meta-api/index.html), [Microsoft Thrifty compiler plugin](https://github.com/microsoft/thrifty/tree/master/thrifty-compiler-plugins), the [apollo-compiler](https://github.com/apollographql/apollo-android/tree/main/apollo-compiler) and [ExpediaGroup's graphql-kotlin](https://github.com/ExpediaGroup/graphql-kotlin).
+
