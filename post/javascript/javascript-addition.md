@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 1
 title: Javascript Addition
-image: https://images.unsplash.com/photo-1548175551-1edaea7bbf0d
+image: https://images.unsplash.com/photo-1600493033157-eed3fbe95d96
 ingress: >-
   **JavaScript:** *Do you know addition?*
 
