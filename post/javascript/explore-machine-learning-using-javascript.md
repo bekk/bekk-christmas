@@ -2,21 +2,27 @@
 calendar: javascript
 post_year: 2020
 post_day: 5
-title: Explore machine learning using JavaScript
-ingress: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisl
-  tempor erat fermentum molestie eu eu urna. Nulla vel condimentum sem. Nunc id
-  metus eget mauris aliquet volutpat. Orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. Donec faucibus purus sit amet
-  libero pellentesque pharetra. Maecenas id erat blandit, pretium leo eget,
-  eleifend arcu. Vivamus lacinia suscipit luctus. Duis enim felis, sodales ac
-  rhoncus a, dignissim ut turpis. In hac habitasse platea dictumst. Duis mattis
-  lorem eget imperdiet hendrerit. Phasellus auctor ornare dolor, vel euismod
-  magna accumsan sit amet.
+title: Machine learning with JavaScript
+ingress: If you have been following our JavaScript Christmas calendar, chances
+  are you have some interest, and perhaps even proficiency, in the JavaScript
+  programming language. For this blog entry in particular, I hope you also have
+  at least some interest in data science and machine learning. I will
+  demonstrate how you can use your JavaScript skills to develop entry-level data
+  science and machine learning applications, and provide you with tons of
+  additional resources to further expand your knowledge of this subject.
 authors:
   - Herman Wika Horn
 ---
-In consequat risus sit amet iaculis finibus. Vivamus eu ipsum condimentum, porta orci sit amet, pharetra urna. Aenean libero justo, lobortis et dapibus a, lobortis ac turpis. Vestibulum hendrerit sagittis orci, quis faucibus urna malesuada eu. Maecenas sagittis, nibh vitae consequat finibus, dolor dui rhoncus eros, facilisis finibus tortor urna eu dolor. Duis congue metus erat. Morbi facilisis bibendum dolor. Pellentesque dictum turpis sed purus mollis, id tempus erat tristique. Duis eu mi massa. Quisque erat turpis, porttitor in libero a, porttitor ornare lectus. Vestibulum a libero viverra, auctor elit eget, consectetur ipsum. Nunc tincidunt nisi quam, sit amet hendrerit velit vehicula eleifend. Curabitur faucibus velit ut nisi iaculis, in feugiat arcu vulputate. Vivamus at vulputate eros, quis sodales dolor. Nulla pharetra nunc at consectetur congue.
+For those unaware, machine learning is a field focusing on the development of algorithms which are trained rather than explicitly programmed. Interest in machine learning has skyrocketed the last couple of decades, much thanks to the increased processing capabilities of modern computers. Machine learning algorithms can be used to solve problems like [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), [sequence mining](https://en.wikipedia.org/wiki/Sequential_pattern_mining), [computer vision](https://en.wikipedia.org/wiki/Computer_vision), [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) and more. Tools like [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) have made machine learning accessible for the masses, by enabling users with consumer grade GPUs or even CPUs to experiment with state-of-the-art machine learning methods. Some popular libraries are [ConvNet.js](https://cs.stanford.edu/people/karpathy/convnetjs/) for deep learning, [Brain.js](https://brain.js.org/#/) for neural networks, and [TensorFlow.js](https://www.tensorflow.org/js) for machine learning in general.
 
-Nulla pretium aliquet est, in mattis augue egestas eget. Vestibulum feugiat non elit et interdum. Proin nibh ligula, varius vitae diam sed, lacinia pulvinar ante. Morbi cursus purus elit. Mauris tincidunt risus eu urna pellentesque, in convallis augue condimentum. Ut hendrerit, eros vel placerat tempus, massa augue sagittis lectus, quis auctor mauris turpis vel nibh. Curabitur dictum euismod dapibus. Nulla eu arcu urna. Nulla tincidunt felis nec ullamcorper scelerisque. Ut varius, sem eu semper commodo, tortor orci pulvinar neque, sit amet finibus nisi massa in sapien. Etiam vehicula ligula eros, ut porttitor lectus faucibus sed. In maximus ex a ligula ullamcorper accumsan ut eget eros. Cras laoreet massa fringilla ligula ornare rhoncus.
+Considering that JavaScript is widely and primarily used to develop interactive web pages, one might ask why you should use JavaScript for machine learning? After all, there are more popular options readily available, like Python or R. Firstly, the interactivity of JavaScript is very sought-after and useful when using educational or entry-level applications. Additionally, if JavaScript is your primary programming language, the entry barrier for starting with machine learning using a library like TensorFlow.js is almost non-existent.
 
-Quisque tincidunt quam arcu, vitae malesuada neque interdum a. Maecenas laoreet ante ut eros pretium fermentum. Aliquam eleifend volutpat tincidunt. Sed tortor mi, vulputate et est pretium, faucibus aliquet mi. Quisque eu fringilla felis. Duis tincidunt enim dolor, feugiat tristique metus tristique in. Donec auctor mauris vulputate mauris maximus, a posuere nibh viverra.
+We could only dream of covering all parts of machine learning with a hundred blog posts like this, and so...
+
+Some more text.
+
+Some more text.
+
+Some more text.
+
+Some more text.
