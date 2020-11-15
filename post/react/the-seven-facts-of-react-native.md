@@ -10,6 +10,8 @@ ingress: React Native is a React framework developed by Facebook to write code
 links:
   - url: "https://reactnative.dev/docs/components-and-apis "
     title: Core Components and APIs
+  - url: https://www.monterail.com/blog/react-native-development-pros-cons
+    title: Pros And Cons of React Native Development in 2020
 authors:
   - Caroline Odden
 ---
@@ -23,7 +25,7 @@ According to the [Semantic Versioning](https://semver.org/), you should bump the
 
 There have been some questions about when they will version to properly semver conventions, and they said earlier that they may bump to [version 1.0.0 when a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) is reached, but this has not been done yet. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html), which is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
-# <View/> and <Text/> and Other Components
+# <View/> and <Text/> and other components
 
 React Native has a syntax that are pretty much equal to React, but with some differences. Instead of tags such as `<div>` and `<p>`, you have `<View>` and `<Text>` components. You need to import these components for each file you are writing layout specific code. Take a look at the example below:
 
@@ -66,7 +68,7 @@ const styles = StyleSheet.create({ // Creating the StyleSheet object
 
 As mentioned in the section about the components, you need to import the Text component from React Native when adding text to your layout. I assume you want to have the same font for your whole application, not different based on what the developer has remembered to add when developing the component. So one pro tip regarding font styles is to create your own component, let's call it `MyText`, which uses the Text component and add the correct font here. This way you can rely on the font being correct through your application. Write it once, use it everywhere.
 
-# Flexing the Boxes
+# Flexing the boxes
 
 Flexbox came and swept us off our feet after being accepted by the [W3C in 2013](https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2). By being able to easily arrange your elements where you want inside container regardless of size was a nice addition to the CSS.
 
@@ -115,7 +117,7 @@ const styles = StyleSheet.create({
 })
 ```
 
-# The Origin of React Native
+# The origin of React Native
 
 In 2012, [Mark Zuckerberg said](https://mashable.com/2012/09/11/html5-biggest-mistake/)
 
@@ -123,7 +125,7 @@ In 2012, [Mark Zuckerberg said](https://mashable.com/2012/09/11/html5-biggest-mi
 
 This was because Facebook was eager to use HTML5 for iOS and Android. However, this was not optimal for the stability and speed. So they were interested in making applications more natively to get better user experiences. Then, a man named Jordan Walke had been working on how to [generate UI components natively from JavaScript](https://jobninja.com/blog/short-story-react-native/). Since it was a success, there was arranged an internal hackathon in Facebook based on this work, creating a prototype for React Native. As a result of this great work, they presented an introduction for[ React Native at React Conf](https://www.youtube.com/watch?v=KVZ-P-ZI6W4) in 2015!
 
-# Will it Survive?
+# Not used in the Messenger App
 
 As mentioned in the introduction, React Native is developed by Facebook. Earlier this year, Facebook announced that they would release the Messenger app, [written in native](https://engineering.fb.com/data-infrastructure/messenger/). So how is the future of this framework when even the creators won't use it to rewrite their own native app?
 
