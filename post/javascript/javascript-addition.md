@@ -16,7 +16,7 @@ ingress: >-
 
   ```javascript
 
-  true + \[] = ?
+  true + [] = ?
 
   ```
 
@@ -25,6 +25,7 @@ ingress: >-
 
 
   **JavaScript:** *Welcome to JavaScript addition!*
+description: Javascript addition plus operator boolean object number string
 links:
   - url: https://tc39.es/ecma262/#sec-addition-operator-plus
     title: https://tc39.es/ecma262/
@@ -33,11 +34,11 @@ links:
 authors:
   - Charlie Midtlyng
 ---
-If you have been working with JavaScript you have probably seen a lot of usage with the `+` operator and discovered that the output is not necessarily what you expected.
+If you have been working with JavaScript, you have probably seen a lot of usage with the `+` operator and discovered that the output is not necessarily what you expected.
 
-The language supports using the `+` operator between (almost) all kinds of types - the results might therefore be confusing. In JavaScript, there is no compiler to hold your hand on your “addition journey”.
+The language supports using the `+` operator between (almost) all of the different data types - the results might therefore be confusing. In JavaScript, there is no compiler to hold your hand on your “addition journey”.
 
-> The addition operator either performs string concatenation or numeric addition. 
+> _*The addition operator either performs string concatenation or numeric addition. *_
 
 With the rule above you should be able to understand all additions in JavaScript, but some of us need to see examples and explanations to fully understand the different scenarios.
 
@@ -66,7 +67,7 @@ So far, so good!
 The most important “rules” with addition in JavaScript is:
 
 * Adding a non-numeric value to a numeric value will try to convert the non-numeric value to a numeric value, if possible. If not, both are converted to strings.
-* Adding a non-numeric value to some value will convert both values to strings before adding them
+* Adding a non-numeric value to some value will convert both values to strings before adding them.
 
 So, what happens when you combine these?
 
@@ -78,22 +79,22 @@ So, what happens when you combine these?
 
 Confused? At least I am…
 
-First line - a numeric value and non-numeric value is added - both are converted to strings before they are added
+The first line - a numeric value and non-numeric value is added - both are converted to strings before they are added
 
 ```"1" + "2" = "12"```
 
-Second line - there are both numeric addition and string concatenation
+The second line - there are both numeric addition and string concatenation
 
 ```javascript
 1 + 1 = 2
 2 + "2" = "2" + "2" = "22"
 ```
 
-Third line only contains string concatenation
+The third line only contains string concatenation
 
 `"1" + "1" + "2" => "112"`
 
-Unfortunately, it doesn’t end here. Some other types in JavaScript behave in a rather non-typical way when used for addition.
+Unfortunately, it doesn’t end here. Some other data types in JavaScript behave in a rather non-typical way when used for addition.
 
 ## Boolean
 
@@ -110,26 +111,27 @@ false + false = 0
 
 Boolean values can be converted to numeric values in JavaScript and the result of the conversion is:
 
-***true*** => ***1***
+```javascript
+true => 1
+false => 0
+```
 
-***false*** => ***0***
-
-Combining a boolean and a string value converts true to “true” and false to “false”.
+Combining a boolean and a string value converts `true` to “true” and `false` to “false”.
 
 ## Objects, arrays and functions
 
 When one of the values in an addition is an object, array or function it will try to convert it to a primitive value.
 1) Execute the `valueOf()`-function and use that value if it is a primitive
-2) Execute the  `toString()`-function
+2) Execute the `toString()`-function
 
 ```javascript
 const me = { name: "Charlie", age: 34 }
 me + 1 = "[object Object]1"
 ```
 
-The default `valueOf()`-implementation is an empty object `{}` - which is not a primitive and it will try to convert it using `toString()`. The default toString-value for an object is “\[object Object]” - not very useful for addition. Unfortunately, I have seen this many times during my time as a developer - it usually happens when I forget to specify the property of the object that should be part of the addition.
+The default `valueOf()`-implementation is an empty object `{}` - which is not a primitive and it will try to convert it using `toString()`. The default toString-value for an object is “\[object Object]” - not very useful for addition. Unfortunately, I have seen this output many times during my time as a developer - it usually happens when I forget to specify the property of the object that should be part of the addition.
 
-Sometimes, it might be handy to override the valueOf-function and make it return something useful.
+Sometimes, it might be handy to override the `valueOf()` or `toString()`-function and make it return something useful.
 
 ```javascript
 const me = { name: "Charlie", age: 34 }
@@ -153,7 +155,7 @@ function BekkEmployee(name, age) {
 new BekkEmployee("Charlie", 34) + 100 = "Charlie is 34 years old100"
 ```
 
-For arrays `valueOf` returns the array which is not a primitive. The output of its `toString()` is the content joined with a comma. An empty array is the same as an empty string.
+For arrays, `valueOf` returns the array - which is not a primitive value. The output of its `toString()` is the content joined with a comma. An empty array is the same as an empty string.
 
 ```javascript
 [] + 1 = "1"
@@ -162,7 +164,7 @@ For arrays `valueOf` returns the array which is not a primitive. The output of i
 
 Since you have been reading all along - here is a quiz for you:
 
-PS: try to solve it before you check the console in the browser
+PS: try to solve it before you check the browser console
 
 ```javascript
 const me = { name: "Charlie", age: 34 }
@@ -171,9 +173,23 @@ me.toString = function () { return this.age }
 true + me + 65 + [2] + false + me + "merry christmas"
 ```
 
+## Date
+All rules have some exceptions...
+> All native ECMAScript objects except Date objects handle the absence of a hint as if the hint Number were given; Date objects handle the absence of a hint as if the hint String were given.
+
+`Date.valueOf` returns a numeric type, but a date will be transformed into a string type when using the `+` operator.
+
+```javascript
+new Date(2020, 11, 1) + 12345 = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central European Standard Time)12345"
+new Date(2020, 11, 1) + "12345" = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central European Standard Time)12345"
+
+new Date(2020, 11, 1).toString() = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+new Date(2020, 11,1 ).valueOf() = 1606777200000
+```
+
 ## Weirdos
 
-Now that you know the important rules of addition, there are some types you also should be aware of:
+Now that you know the important rules of addition, there are some data types you also should be aware of:
 
 ```javascript
 undefined + 1 = NaN // undefined is converted to numeric => NaN
@@ -199,4 +215,4 @@ These values will be converted to numeric values when added with a numeric value
 | NaN               | NaN           |
 
 
-Wrapping up, addition is not as easy as we know from mathematics. However, if you remember some of the most important conversion you will save yourself from some headaches from time to time!
+Wrapping up, addition is not as easy as we know from mathematics. However, if you remember some of the conversion rules above you might save yourself from some headaches in the future!
