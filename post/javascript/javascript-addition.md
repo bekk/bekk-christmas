@@ -38,7 +38,7 @@ If you have been working with JavaScript, you have probably seen a lot of usage 
 
 The language supports using the `+` operator between (almost) all of the different data types - the results might therefore be confusing. In JavaScript, there is no compiler to hold your hand on your “addition journey”.
 
-> _*The addition operator either performs string concatenation or numeric addition. *_
+> ***The addition operator either performs string concatenation or numeric addition. ***
 
 With the rule above you should be able to understand all additions in JavaScript, but some of us need to see examples and explanations to fully understand the different scenarios.
 
@@ -54,22 +54,22 @@ Step-by-step example
 
 ----
 
-As the rule states - with two numeric elements the output is a numeric value
+As the rule states - with two numeric elements, the output is a numeric value:
 
 ```1 + 1 = 2```
 
-String concatenation is common between different programming languages and is reasonable
+String concatenation is common between different programming languages and is reasonable usage of the `+` operator:
 
 `"Santa" + " " + "Claus" = "Santa Claus"`
 
 So far, so good!
 
-The most important “rules” with addition in JavaScript is:
+The most important “rules” with _addition_ in JavaScript are:
 
 * Adding a non-numeric value to a numeric value will try to convert the non-numeric value to a numeric value, if possible. If not, both are converted to strings.
 * Adding a non-numeric value to some value will convert both values to strings before adding them.
 
-So, what happens when you combine these?
+So, what does that actually mean?
 
 ```javascript
 1 + "2" = "12"
@@ -79,18 +79,18 @@ So, what happens when you combine these?
 
 Confused? At least I am…
 
-The first line - a numeric value and non-numeric value is added - both are converted to strings before they are added
+In the first line, a numeric and non-numeric value is added. Both are converted to strings before they are added
 
 ```"1" + "2" = "12"```
 
-The second line - there are both numeric addition and string concatenation
+In the second line, there are both numeric addition and string concatenation. Remember, addition goes from left to right. 
 
 ```javascript
 1 + 1 = 2
 2 + "2" = "2" + "2" = "22"
 ```
 
-The third line only contains string concatenation
+The third line only contains string concatenation.
 
 `"1" + "1" + "2" => "112"`
 
@@ -109,7 +109,7 @@ false + false = 0
 "1" + false = "1false"
 ```
 
-Boolean values can be converted to numeric values in JavaScript and the result of the conversion is:
+Boolean values can be converted to numeric values in JavaScript, and the result of the conversion is either 1 or 0.
 
 ```javascript
 true => 1
@@ -200,6 +200,7 @@ NaN + 1 = NaN
 NaN + "1" = "NaN1"
 Symbol(1) + 1 // TypeError: Cannot convert a Symbol value to a number
 BigInt(1) + 1 // TypeError: Cannot mix BigInt and other types, use explicit conversions
+BigInt(1) + "2" = "12"
 ```
 
 ## Numeric conversion
@@ -215,4 +216,4 @@ These values will be converted to numeric values when added with a numeric value
 | NaN               | NaN           |
 
 
-Wrapping up, addition is not as easy as we know from mathematics. However, if you remember some of the conversion rules above you might save yourself from some headaches in the future!
+As you have read, addition is not as easy as we know from mathematics. However, if you remember some of the conversion rules above you might save yourself from some headaches in the future!
