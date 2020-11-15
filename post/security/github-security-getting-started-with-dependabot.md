@@ -4,10 +4,9 @@ post_year: 2020
 post_day: 2
 title: "Github Security: Getting started with Dependabot"
 ingress: Integrating security as a part of application development is considered
-  a good idea, but it is often overlooked in practice. In an attempt to increase
-  our focus on security during development, we took advantage of one of Github's
-  native security features. In this article, I present our motivation and show
-  you how to enable Dependabot in a matter of minutes.
+  a good idea, but it is often forgotten or dismissed in practice. Dependabot is
+  a Github feature that will help you keep all your dependencies invulnerable
+  and up-to-date, and you can enable it in just a few clicks!
 authors:
   - Gaute Solbu Kleiven
 ---
@@ -23,7 +22,7 @@ In may 2019, Github acquired Dependabot. In their own words, “Dependabot allev
 
 Following the acquisition of Dependabot, it was added natively to Github. With only a few clicks, Dependabot can easily be enabled and configured to keep your application’s dependencies up-to-date.
 
-**Setting up Dependabot**
+## **Setting up Dependabot**
 
 Enough background information, let’s talk about how to get started. The security settings can be configured for an [entire organization](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/managing-security-and-analysis-settings-for-your-organization), applying to all of the organization’s repositories, or it can be configured [per repository](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-security-and-analysis-settings-for-your-repository). Which is the better option depends on your context. If you are the owner of your organization and it is desirable to enable the security features across all its repositories, obviously it will be less time consuming to configure this on the organization level than for each repository individually. However if you are a part of a large organization with lots of teams and projects, enabling Dependabot on the repository level might be the only option.
 
