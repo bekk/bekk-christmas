@@ -1,5 +1,5 @@
 ---
 title: Gaute Solbu Kleiven
-socialMediaLink: https://github.com/gautesk
+socialMediaLink: ""
 company: Bekk
 ---
