@@ -23,7 +23,7 @@ In general, machine learning consists of gathering a set of data from a domain o
 
 ```javascript
 var machineLearningParameters = loadMachineLearningParameters();
-var training_data = loadDataFromSource();
+var data = loadDataFromSource();
 
 data = preprocess(data);
 
