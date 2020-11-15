@@ -9,5 +9,10 @@ ingress: Kotlin introduces a lot of new language features for us developers.
   DSLs, and in this article we're taking a look at how we can create our own
   DSLs.
 description: kotlin dsl type-safe builder pattern
+links:
+  - title: Type-Safe Builders
+    url: https://kotlinlang.org/docs/reference/type-safe-builders.html
+authors:
+  - Nicklas Utgaard
 ---
 Kotlin DSLs are widely used within the kotlin ecosystem, and you'll find them anywhere from your build-config (`.build.gradle.kts` file) to how you configure your webserver (e.g ktor). 
