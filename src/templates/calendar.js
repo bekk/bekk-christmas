@@ -75,8 +75,7 @@ const Template = ({ data, pageContext }) => {
                                 }
                                 imageUrl={getWindowImagePlaceholder(
                                     pageContext.calendar,
-                                    calendarWindow.day,
-                                    pageContext.year
+                                    calendarWindow.day
                                 )}
                                 title={`${calendarWindow.day}: ${calendarWindow.title}`}
                             />

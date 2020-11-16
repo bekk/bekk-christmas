@@ -1,6 +1,6 @@
 import { Index } from 'elasticlunr';
 
-const getCalendarNumber = (calendar, year) => {
+const getCalendarNumber = (calendar) => {
     switch (calendar) {
         case 'css':
         case 'talks':
@@ -13,6 +13,7 @@ const getCalendarNumber = (calendar, year) => {
         case 'dot-net':
             return '04';
         case 'java':
+        case "elm":
             return '05';
         case 'kotlin':
             return '06';
@@ -23,6 +24,7 @@ const getCalendarNumber = (calendar, year) => {
         case 'product':
             return '09';
         case 'ml':
+        case 'strategy':
             return '10';
         case 'javascript':
             return '11';
@@ -42,17 +44,10 @@ const getDayNumber = (day) => {
 };
 
 export const getChristmasTree = (calendar, year) => {
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
-        calendar,
-        year
-    )}/tre.png`;
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(calendar)}/tre.png`;
 };
 
-export const getWindowImagePlaceholder = (calendar, day, year) => {
-    if (year < 2019) {
-        return `/assets/generated/${day}.png`;
-    }
-
+export const getWindowImagePlaceholder = (calendar, day) => {
     return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
         calendar
     )}/small/${getDayNumber(day)}.jpeg`;
