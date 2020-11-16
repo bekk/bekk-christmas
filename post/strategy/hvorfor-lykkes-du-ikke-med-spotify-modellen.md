@@ -5,13 +5,13 @@ post_day: 2
 title: Hvorfor lykkes du ikke med Spotify-modellen?
 image: https://unsplash.com/photos/9VpI3gQ1iUo
 ingress: >-
-  I 2012 publiserte smidige coacher i Spotify en bloggpost der de beskrev
-  hvordan de skalerte smidig praksis i strømmetjenesten. Spotify var midt i en
-  aggressiv vekstperiode, og ble ansett som et vellykket eksempel på digital
-  produktutvikling. De organiserte sin produktutvikling i autonome,
-  kryssfunksjonelle produktteam med ansvar for hver sine funksjoner.
-  Produktteamene ble beskrevet som squads, og samhandling på kryss og tvers av
-  organisasjonen ble detaljert ut.
+  I 2012 publiserte smidige coacher i Spotify en bloggpost hvor de beskrev
+  hvordan de skalerte smidig praksis i strømmetjenesten. Her tok de for seg
+  hvordan de organiserte produktutviklingen i autonome, kryssfunksjonelle
+  produktteam med ansvar for hver sine funksjonsområder. Produktteamene ble
+  beskrevet som squads, og samhandling på kryss og tvers av organisasjonen ble
+  detaljert ut. Spotify var midt i en aggressiv vekstperiode, og ble ansett som
+  et vellykket eksempel på digital produktutvikling.
 
 
   Det vi ser de neste årene er at coacher, konsulenter og andre fagfolk raskt er ute med å anbefale Spotify sin modell som en blueprint på hvordan *din* organisasjon skal lykkes med å bli mer smidig. Og konsekvensen av dette er at det i mange norske bedrifter nå eksisterer squads, tribes, chapters og guilds. Dessverre er det ikke like mange som klarer å hente ut effektene fra dette i form av hurtighet og tilpasningsdyktighet. Jeg har gjort meg noen refleksjoner rundt hvorfor.
