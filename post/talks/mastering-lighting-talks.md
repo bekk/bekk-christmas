@@ -12,15 +12,11 @@ description: >-
   by a set number of slides shown for a limited time. Presenters pacing their
   speech to line up perfectly as the next slide appears. 
 
-  Lightning-talks are just like regular talks. On steroids. Ripe with constraints.
+  Lightning talks are just like regular talks. On steroids. Ripe with constraints.
 authors:
   - Håvard Hvassing
 ---
 Ripe with constraints, mastering lightning-talks requires focus and keeping out distractions. They should spark curiosity and even a sense of wonder and interest. Leaving your audience eager to find out more about this in their own. 
-
-* Get to the point!
-* Passion and a strong story!
-* It’s not about you. It’s all for them
 
 ## Stay clear of the woods
 
@@ -34,7 +30,11 @@ Sticking to a single idea or concept will make it easier to get to the point ear
 
 > This talk is about \[insert topic here], and how this will make the world a better place for \[us/them/everyone]
 
-## Designing the presentation
+## Designing for brevity and clarity
+
+With limited time, and maybe a fixed number of slides, each of them must be designed with intent and focus. The slides should always support the story you are telling and enhance your message. 
+
+Consider what is the one thing you want your audience to take away from each slide. If you are using images, consider what connotations the audience will make of the imagery, or what feeling they will be left with. 
 
 Filling the slides with text is never a good idea, and even more so when it comes to lightning talks. You are running the risk of having the audience only reaching half-way down the slide before it changes. Be precise and terse when using text.
 
