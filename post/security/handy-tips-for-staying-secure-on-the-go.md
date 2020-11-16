@@ -3,10 +3,12 @@ calendar: security
 post_year: 2020
 post_day: 6
 title: Handy tips for staying secure on the go
+image: https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
 ingress: We wrote about ["Safe travels for the road
   warrior"](https://security.christmas/2019/21) last year, and this year we
   offer one more trick, and expand on this list for staying safe and secure on
   the road.
+description: "shoulder surfing, tips for safe traveling, mikado-security, "
 links:
   - url: https://security.christmas/2019/21
     title: Safe travels for the road warrior
