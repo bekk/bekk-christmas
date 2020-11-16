@@ -11,7 +11,7 @@ links:
   - url: https://security.christmas/2019/21
     title: Safe travels for the road warrior
 authors:
-  - Caroline Odden
+  - Didrik Sæther
 ---
 *Firstly: Stay at home if you can. This new type of virus that is going around is not cool, and not yet patched..* 
 
