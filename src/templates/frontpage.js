@@ -184,8 +184,7 @@ const Frontpage = ({ data, pageContext }) => {
                             }
                             imageUrl={getWindowImagePlaceholder(
                                 calendar.calendar,
-                                calendar.post_day,
-                                calendar.post_year
+                                calendar.post_day
                             )}
                             calendarName={calendar.calendar}
                             title={isDecember && calendar.title}
