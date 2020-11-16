@@ -4,14 +4,22 @@ post_year: 2020
 post_day: 6
 title: Handy tips for staying secure on the go
 image: https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
-ingress: We wrote about ["Safe travels for the road
+ingress: >-
+  We wrote about ["Safe travels for the road
   warrior"](https://security.christmas/2019/21) last year, and this year we
-  offer one more trick, and expand on this list for staying safe and secure on
-  the road.
+  offer more tricks, and expand on this list for staying safe and secure on the
+  road.
+
+
+  Watch out for shoulder surfers, and protect your equipment if you have to leave it in ie. your hotel room.
 description: "shoulder surfing, tips for safe traveling, mikado-security, "
 links:
-  - url: https://security.christmas/2019/21
-    title: Safe travels for the road warrior
+  - url: https://resources.infosecinstitute.com/topic/30-cybersecurity-tips-for-travelers/
+    title: 30 Cybersecurity tips for travelers
+  - url: https://us.norton.com/internetsecurity-mobile-8-cyber-security-tips-for-business-travelers.html
+    title: 8 Cyber Security Tips For Business Travelers
+  - url: https://en.wikipedia.org/wiki/Shoulder_surfing_(computer_security)
+    title: Shoulder surfing (Wikipedia)
 authors:
   - Didrik Sæther
 ---
@@ -24,15 +32,15 @@ A shoulder surfer means that someone is peaking over your shoulder to get inform
 
 To protect your information, you can, and should invest in a privacy shield for you screen. They cost basicly nothing, but reduce/limit the viewing angle of your display.
 
-![privacy shield](assets/privacy-screen-protector-angle-2.jpg)
+![privacy screen protector](https://cdn57.androidauthority.net/wp-content/uploads/2019/04/privacy-screen-protector-angle-2.jpg)
 
-Reduce the number of apps visible on your computer. On a Mac I recommend that you use [Bartender](https://www.macbartender.com/). It hides all the running apps from the menu bar, so that it looks like this: 
+Reduce the number of apps visible on your computer. On a Mac I recommend that you use [Bartender](https://www.macbartender.com/), but there are Windows and *Nix options as well. The point of this application is that it hides all the running apps from the menu bar, so that it looks like this: 
 
-![a neat navigation bar](assets/navbar.png)
+![a neat menubar](assets/navbar.png)
 
-And not this abomination: 
+rather than this abomination of a menubar: 
 
-![an untidy and talkative navigation bar](assets/1password1280.jpg)
+![an untidy and talkative menuebar](https://eshop.macsales.com/blog/wp-content/uploads/2019/05/1password1280.jpg)
 
 The reason I mean that you should hide this information from shoulder surfers is that if someone knows what applications you are running on your computer, they will know a lot about you. Lots of developer tools, Automator scripts, and a password manager? That is a whole lot of attack surface.. 
 
