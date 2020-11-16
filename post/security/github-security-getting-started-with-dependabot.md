@@ -13,8 +13,6 @@ links:
 authors:
   - Gaute Solbu Kleiven
 ---
-![]()
-
 During my years at university studying information security, I was taught about the importance of integrating security as a role in application development. The idea of security as a continuous process and a shared responsibility, rather than an isolated, fixed period of time with testing, performed by a security team, was imprinted in my brain. As I started working as a professional developer, I quickly experienced that security was given a low priority, both by my co-workers and myself. I do not believe it was a conscious decision to ignore security during development, but we had a tendency of estimating progress solely by looking at an application’s new features.
 
 In my scenario, my colleagues and I were in agreement that we would benefit from integrating security in our development lifecycle. But how could this be achieved in a way that was not perceived as invasive or complicating to our day-to-day work? Obviously we could implement strict rules and enforce them in our build and deploy pipelines, but we were hesitant to bite off more than we could chew. If the changes were too dramatic, they might be considered overwhelming. Instead, we wanted to make small steps in the right direction, that would be easy to follow and build on over time. As we were already using Github in our everyday work life, enabling Github Security’s Dependabot was considered a good place to start.
