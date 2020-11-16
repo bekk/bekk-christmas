@@ -4,17 +4,7 @@ post_year: 2020
 post_day: 2
 title: Hvorfor lykkes du ikke med Spotify-modellen?
 image: https://unsplash.com/photos/9VpI3gQ1iUo
-ingress: >-
-  I 2012 publiserte smidige coacher i Spotify en bloggpost hvor de beskrev
-  hvordan de skalerte smidig praksis i strømmetjenesten. Her tok de for seg
-  hvordan de organiserte produktutviklingen i autonome, kryssfunksjonelle
-  produktteam med ansvar for hver sine funksjonsområder. Produktteamene ble
-  beskrevet som squads, og samhandling på kryss og tvers av organisasjonen ble
-  detaljert ut. Spotify var midt i en aggressiv vekstperiode, og ble ansett som
-  et vellykket eksempel på digital produktutvikling.
-
-
-  Det vi ser de neste årene er at coacher, konsulenter og andre fagfolk raskt er ute med å anbefale Spotify sin modell som en blueprint på hvordan *din* organisasjon skal lykkes med å bli mer smidig. Og konsekvensen av dette er at det i mange norske bedrifter nå eksisterer squads, tribes, chapters og guilds. Dessverre er det ikke like mange som klarer å hente ut effektene fra dette i form av hurtighet og tilpasningsdyktighet. Jeg har gjort meg noen refleksjoner rundt hvorfor.
+ingress: ""
 links:
   - title: "IT-løsninger i rekordfart: – Hadde ikke gått for to år siden"
     url: https://memu.no/artikler/it-losninger-i-rekordfart-hadde-ikke-gatt-for-to-ar-siden/
@@ -24,6 +14,10 @@ links:
 authors:
   - Hilde Marie Flesland Torall
 ---
+I 2012 publiserte smidige coacher i Spotify en bloggpost hvor de beskrev hvordan de skalerte smidig praksis i strømmetjenesten. Her tok de for seg hvordan de organiserte produktutviklingen i autonome, kryssfunksjonelle produktteam med ansvar for hver sine funksjonsområder. Produktteamene ble beskrevet som squads, og samhandling på kryss og tvers av organisasjonen ble detaljert ut. Spotify var midt i en aggressiv vekstperiode, og ble ansett som et vellykket eksempel på digital produktutvikling.
+
+Det vi ser de neste årene er at coacher, konsulenter og andre fagfolk raskt er ute med å anbefale Spotify sin modell som en blueprint på hvordan *din* organisasjon skal lykkes med å bli mer smidig. Og konsekvensen av dette er at det i mange norske bedrifter nå eksisterer squads, tribes, chapters og guilds. Dessverre er det ikke like mange som klarer å hente ut effektene fra dette i form av hurtighet og tilpasningsdyktighet. Jeg har gjort meg noen refleksjoner rundt hvorfor.
+
 ### 1. Har du definert et tydelig hvorfor?
 Smidige produktteam er en løsning på et problem eller et behov. Og det er det mange som glemmer å tydelig definere, som en rettesnor som skal veilede gjennom en større omorganisering. Det kan for eksempel være å øke innovasjongraden, korte ned time-to-market, treffe markedet bedre med nye tjenester eller øke eierskap og motivasjon i digital utvikling. Hva du ønsker å oppnå betyr noe for hvordan din produktutviklingsrigg bør organiseres. 
 
