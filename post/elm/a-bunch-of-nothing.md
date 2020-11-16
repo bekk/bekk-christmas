@@ -1,7 +1,7 @@
 ---
 calendar: elm
 post_year: 2020
-post_day: 2
+post_day: 16
 title: A Bunch of Nothing
 image: https://unsplash.com/photos/BkigsnKJK34
 ingress: One of the great advantages of elm is its strong runtime guarantees,
