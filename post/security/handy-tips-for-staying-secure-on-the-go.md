@@ -59,4 +59,4 @@ In the event that the sticks are not as you left them, you can escalate the prob
 This trick relies on the same principles as we rely on for computer security. Prime number factoring, traveling salesman problem and SAT are hard to solve if P != NP, but easy to verify. 
 An example of this is a sudoku board. It is hard for both humans and computers to solve, but if I hand you a board, it is easy for you to verify if I did it correct. 
 
-![](https://i.imgur.com/bqlY6Nn.png "Hard to solve / Easy to verify")
+![](https://i.imgur.com/fibOzob.png "Hard to solve / Easy to verify")
