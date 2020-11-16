@@ -28,7 +28,7 @@ authors:
 
 ## Shoulder surfers:
 
-Be aware of your soundings and reduce the risk of shoulder surfers. A shoulder surfer describes someone is peaking over your shoulder to get information. I see people prone for this type of sosial engeneering attack all the time. When using public transport, in cafees, or on air planes. People use their laptop to check out some work stuff,  and don’t care if someone is looking.
+Be aware of your soundings and reduce the risk of shoulder surfers. A shoulder surfer describes someone is peaking over your shoulder to get information. I see people prone for this type of sosial engeneering attack all the time. When using public transport, in cafees, or on air planes. People use their laptop to check out some work stuff, and don’t care if someone is looking.
 
 To protect your information, you can, and should invest in a privacy shield for you screen. They cost next to nothing, but reduce/limit the viewing angle of your display.
 
@@ -51,12 +51,12 @@ The other tips is to not leave your computer laying around. This goes by itself,
 ![](https://live.staticflickr.com/5475/9350249910_6aeb4b5d85_h.jpg)
 [Mikado](https://flic.kr/p/ffftxm) by [Balazs Koren](https://www.flickr.com/photos/kobakpontorg/), on Flickr
 
-Mikado (also known as “pick-up sticks game”) is a game where players drop a bundle of sticks as a loose bunch onto a table top. Each player in turn tries to remove a stick from the pile without  disturbing any of the others.
+Mikado (also known as “pick-up sticks game”) is a game where players drop a bundle of sticks as a loose bunch onto a table top. Each player in turn tries to remove a stick from the pile without disturbing any of the others.
 
 MikadoSecurity is where you spread the sticks, over the object that you want to protect. You then take a picture of it, and when you return, you can verify that no one has tampered with your device. 
-In the event that the sticks are not as you left them, you can escalate the problem. Either to do forensics, or discard the computer if  you need to.
+In the event that the sticks are not as you left them, you can escalate the problem. Either to do forensics, or discard the computer if you need to.
 
-This trick relies on the same principles as we rely on for computer  security. Prime number factoring, traveling salesman problem and SAT are hard to solve if P != NP, but easy to verify. 
+This trick relies on the same principles as we rely on for computer security. Prime number factoring, traveling salesman problem and SAT are hard to solve if P != NP, but easy to verify. 
 An example of this is a sudoku board. It is hard for both humans and computers to solve, but if I hand you a board, it is easy for you to verify if I did it correct. 
 
 ![](https://i.imgur.com/bqlY6Nn.png "Hard to solve / Easy to verify")
