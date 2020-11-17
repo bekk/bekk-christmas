@@ -13,18 +13,24 @@ ingress: Records in Elm are quite similar to the trusty old objects in
 authors:
   - Jørgen Tu Sveli
 ---
-In this article we will look at destructuring records when they appear as function parameters. The basic syntax for this is:
+In this article we will look at destructuring or pattern matching as it is commonly referred to within Elm, of records when they appear as function parameters. The focus is on functions for now, even though the technique can be applied in other cases as well. The basic syntax for this is presented in the example below. The code declares a type for a shopping cart item and a function that calculates the total for that cart item:
 
 ```elm
+type alias CartItem = 
+    { unitPrice: Int
+    , amount: Int
+    }
+
 cartItem = { unitPrice = 19, amount = 2 }
 
+calculateTotal : CartItem -> Int
 calculateTotal { unitPrice, amount } =
     unitPrice * amount
 
 calculateTotal cartItem -- 38
 ```
 
-If we are after 2 properties of the record but also want to retain a reference to the whole of the record, Elm allows this:
+If we would like shorthand access to a subset of the fields but also want to retain a reference to the whole of the record, we're in luck since Elm allows this:
 
 ```elm
 type alias CartItem = 
@@ -37,14 +43,14 @@ cartItem = { unitPrice = 19, amount = 2, description = "Washable, reusable face 
 
 calculateTotal ({unitPrice, amount} as wholeItem) =
     unitPrice * amount\
-        |> debug wholeItem
+        |> otherFunction wholeItem
 ```
 
-Here we unwrap unitPrice and amount to calculate the total, but keep a reference to the whole record. The debug function needs access to the rest of the record, to print the description and the total, but we let the first function handle calculating the total.
+Here we unwrap unitPrice and amount to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record, but calculating the total.
 
-Let’s look at a more realistic example. Records appear somewhere in the model of most elm apps. The model is used differently throughout an elm app: In some functions, the model is updated and only one or a few of the members are touched. In other functions, larger numbers of members of the model are read at the same time. This is seen typically in view code.
+Let’s move on to an example from the real world. Records appear somewhere in the model of most elm apps. The model is used differently throughout an elm app: In some functions, the model is updated and only one or a few of the members are touched. In other functions, larger numbers of members of the model are read at the same time. This is seen typically in view code.
 
-Behold the Model of the Elm todomvc app.
+Behold the Model of the [Elm todomvc app](https://github.com/evancz/elm-todomvc/blob/master/src/Main.elm).
 
 ```elm
 type alias Model =
@@ -75,8 +81,6 @@ view model =
 ```
 
 We could apply some pattern matching here to avoid repeating `model.`:
-
-
 
 ```elm
 view : Model -> Html Msg
