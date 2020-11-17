@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 2
 title: Unpacking Records
-image: https://unsplash.com/photos/IkjROahgUoo
+image: https://source.unsplash.com/IkjROahgUoo/2000x400
 ingress: Records in Elm are quite like JavaScript objects. In ES6, destructuring
   objects can produce compact and concise code. This article invites you to take
   a look at some techniques that Elm offers to that same end.
