@@ -10,7 +10,7 @@ links:
 authors:
   - Harald Ringvold
 ---
-xToday I want to make the case for the programming language Elixir. We will be looking at the basic features of the languages, notable projects and use cases and look a bit under the hood to why Elixir is so compelling.
+Today I want to make the case for the programming language Elixir. We will be looking at the basic features of the languages, notable projects and use cases and look a bit under the hood to why Elixir is so compelling.
 
 First things first. Elixir is a functional language with syntax inspired by Ruby. It inherits a lot its data structure and related syntax from Erlang which in many ways is its biggest influence.
 
@@ -61,4 +61,4 @@ As they say on the project web site:
 As mentioned earlier Elixir runs on the Erlang VM which is often called BEAM (Bogdan's Erlang Abstract Machine) and is in many ways the biggest selling point for Elixir. Erlang has proved its resiliency over many years examplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch ([ "Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)). It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
 
 ### Everything is a process
-Erlangs design and application structure lays the fundation for 
+Erlangs design and application structure lays the foundation for
