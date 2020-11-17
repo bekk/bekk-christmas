@@ -10,7 +10,7 @@ links:
 authors:
   - Harald Ringvold
 ---
-Today I want to make the case for the programming language Elixir. We will be looking at the basic features of the languages, notable projects and use cases and look a bit under the hood to why Elixir is so compelling.
+xToday I want to make the case for the programming language Elixir. We will be looking at the basic features of the languages, notable projects and use cases and look a bit under the hood to why Elixir is so compelling.
 
 First things first. Elixir is a functional language with syntax inspired by Ruby. It inherits a lot its data structure and related syntax from Erlang which in many ways is its biggest influence.
 
@@ -28,7 +28,7 @@ The article [Elixir Design Goals](https://elixir-lang.org/blog/2013/08/08/elixir
 
 A hello world example in Elixir might look something like this:
 
-```ruby
+```elixir
 defmodule Helloer
   def hello_world do
     IO.puts("Hello, World!")
@@ -40,12 +40,13 @@ As for other inspirations Elixir has syntax inspired from Ruby and Erlang, docst
 
 ## Killer applications
 
-Most programming languages has their ["killer application"](https://en.wikipedia.org/wiki/Killer_application); Libraries or framework which in itself is enough to make the transition or try it out. For Ruby it was the web framework Ruby on Rails and in many ways Elixir has its own Rails: Phoenix.
+Many programming languages has a ["killer application"](https://en.wikipedia.org/wiki/Killer_application); Libraries, frameworks or use cases which in itself is enough to make the transition or try it out. For Ruby it was the web framework Ruby on Rails and in many ways Elixir has its own Rails: Phoenix.
 
 ### Phoenix web framework
 
 [Phoenix](https://www.phoenixframework.org/) is inspired by Rails (the team originally behind Elixir was previously a Ruby shop) and was an early addition to the Elixir community but has learned from years of Rails development and made its own opinions in addition to the natural changes needed when going from and object oriented language to a functional language.
 Compared to Rails, Phoenix has, with the help of the Erlang VM, great performance and some of you might have heard about Phoenix' amazing [2 million simultaneous web sockets](https://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections) benchmark!
+
 
 ### The Nerves Project
 
@@ -54,6 +55,10 @@ As they say on the project web site:
 
 > Nerves is a complete IoT platform and infrastructure for you to build and deploy maintainable embedded systems.
 
+
 ## The BEAM
 
-As mentioned earlier Elixir runs on the Erlang VM which is often called BEAM (Bogdan's/Björn's Erlang Abstract Machine) and is in many ways the biggest selling point for Elixir. Erlang and the BEAM has over
+As mentioned earlier Elixir runs on the Erlang VM which is often called BEAM (Bogdan's Erlang Abstract Machine) and is in many ways the biggest selling point for Elixir. Erlang has proved its resiliency over many years examplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch ([ "Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)). It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
+
+### Everything is a process
+Erlangs design and application structure lays the fundation for 
