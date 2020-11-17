@@ -23,11 +23,11 @@ links:
 authors:
   - Didrik Sæther
 ---
-*PANDEMIC WARNING: Stay at home if you can. A virus has for the better part of 2020 attacked physical infrastructure (people). We have no patch or hotfix, so while that is beeing worked out, we advice you to travel as little as possible.* 
+*PANDEMIC WARNING: Stay at home if you can. A virus has for the better part of 2020 attacked physical infrastructure (people). We have no patch or hotfix, so while that is being worked out, we advice you to travel as little as possible.* 
 
 ## Shoulder surfers:
 
-Be aware of your soundings and reduce the risk of shoulder surfers. A shoulder surfer describes someone is peaking over your shoulder to get information. I see people prone for this type of sosial engeneering attack all the time. When using public transport, in cafees, or on air planes. People use their laptop to check out some work stuff, and don’t care if someone is looking.
+Be aware of your surroundings and reduce the risk of shoulder surfers. A shoulder surfer describes someone who is peaking over your shoulder to get information. I see people prone for this type of social engineering attack all the time. When using public transport, in cafees, or on air planes. People use their laptop to check out some work stuff, and don’t care if someone is looking.
 
 To protect your information, you can, and should invest in a privacy shield for you screen. They cost next to nothing, but reduce/limit the viewing angle of your display.
 
@@ -35,24 +35,24 @@ To protect your information, you can, and should invest in a privacy shield for 
 
 Reduce the number of apps visible on your computer. On a Mac I recommend that you use [Bartender](https://www.macbartender.com/), but there are Windows and *Nix options as well. The point of this application is that it hides all the running apps from the menu bar, so that it looks like this: 
 
-![a neat menubar](https://i.imgur.com/QsbNjHu.png)
+![a neat menu bar](https://i.imgur.com/QsbNjHu.png)
 
-rather than this abomination of a menubar: 
+rather than this abomination of a menu bar: 
 
-![an untidy and talkative menuebar](https://eshop.macsales.com/blog/wp-content/uploads/2019/05/1password1280.jpg)
+![an untidy and talkative menue bar](https://eshop.macsales.com/blog/wp-content/uploads/2019/05/1password1280.jpg)
 
-The reason for hiding this information from shoulder surfers is that it tells alot about you. If someone knows what applications you are running, they know a lot about you. Developer tools, Automator scripts, and a password manager? You presumably work in IT. Bluetooth enabled, an old version of Outlook and a TorrentClient. You are prone for Metasploit. 
+The reason for hiding this information from shoulder surfers is that it tells a lot about you. If someone knows what applications you are running, they know a lot about you. Developer tools, Automator scripts, and a password manager? You presumably work in IT. Bluetooth enabled, an old version of Outlook and a TorrentClient? You are prone for Metasploit. 
 
 ## Mikado security
 
-The other tips is to not leave your computer laying around. This goes by itself, but there are times when this is impossible. There will be events where you have super secret stuff on your computer, and must step away for a period of time. For instance in a hotel room while you are away for an hour, or go to a resturant.
+The other tip is to not leave your computer laying around. This goes by itself, but there are times when this is impossible. There will be events where you have super secret stuff on your computer, and must step away for a period of time. For instance in a hotel room while you are away for an hour, or go to a resturant.
 
 ![](https://live.staticflickr.com/5475/9350249910_6aeb4b5d85_h.jpg)
 [Mikado](https://flic.kr/p/ffftxm) by [Balazs Koren](https://www.flickr.com/photos/kobakpontorg/), on Flickr
 
 Mikado (also known as “pick-up sticks game”) is a game where players drop a bundle of sticks as a loose bunch onto a table top. Each player in turn tries to remove a stick from the pile without disturbing any of the others.
 
-MikadoSecurity is where you spread the sticks, over the object that you want to protect. You then take a picture of it, and when you return, you can verify that no one has tampered with your device. 
+MikadoSecurity is where you spread the sticks over the object that you want to protect. You then take a picture of it, and when you return, you can verify that no one has tampered with your device. 
 In the event that the sticks are not as you left them, you can escalate the problem. Either to do forensics, or discard the computer if you need to.
 
 This trick relies on the same principles as we rely on for computer security. Prime number factoring, traveling salesman problem and SAT are hard to solve if P != NP, but easy to verify. 
