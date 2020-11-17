@@ -6,9 +6,9 @@ title: Handy tips for staying secure on the go
 image: https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
 ingress: >-
   We wrote about ["Safe travels for the road
-  warrior"](https://security.christmas/2019/21) last year, and this year we
-  offer more tricks. This year we offer one more trick, and expand on this list
-  for staying safe and secure on the road.
+  warrior"](https://security.christmas/2019/21) last year. This year we offer
+  one more trick, and expand on this list for staying safe and secure on the
+  road.
 
 
   Watch out for shoulder surfers, and protect your equipment if you have to leave it in ie. your hotel room.
