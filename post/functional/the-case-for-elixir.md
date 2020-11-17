@@ -24,7 +24,7 @@ The article [Elixir Design Goals](https://elixir-lang.org/blog/2013/08/08/elixir
 >
 > Elixir runs in the same virtual machine and is compatible with OTP. Not only that, all the tools and libraries available in the Erlang ecosystem are also available in Elixir, simply because there is no conversion cost from calling Erlang from Elixir and vice-versa.
 
-(You can think of Elixirs relationship to Erlang as Kotlin to Java and the JVM. But where the underlying VM for Kotlin is made for a object oriented language and therefor constrains Kotlin in many ways, Elixir and Erlang is much more similar.)
+(You can think of Elixirs relationship to Erlang as Kotlin to Java and the JVM. But where the underlying VM for Kotlin is made for a object oriented language and therefor constrains Kotlin in many ways, whereas Elixir and Erlang is much more similar.)
 
 A hello world example in Elixir might look something like this:
 
@@ -40,12 +40,12 @@ As for other inspirations Elixir has syntax inspired from Ruby and Erlang, docst
 
 ## Killer applications
 
-Most programming languages has their ["killer application"](https://en.wikipedia.org/wiki/Killer_application); Libraries or framework which in itself is enough to make the transistion or try it out. For Ruby it was the web framework Ruby on Rails and in many ways Elixir has its own Rails: Phoenix.
+Most programming languages has their ["killer application"](https://en.wikipedia.org/wiki/Killer_application); Libraries or framework which in itself is enough to make the transition or try it out. For Ruby it was the web framework Ruby on Rails and in many ways Elixir has its own Rails: Phoenix.
 
 ### Phoenix web framework
 
-\[Phoenix] is inspired by Rails (the team originally behind Elixir was previously a Ruby shop) and was an early addition to the Elixir community but has learned from years of Rails development and made its own opinions in addition to the natural changes needed when going from and object oriented language to a functional language.
-Compared to Rails, Phoenix has, with the help of the Erlang VM, great performance and some of you might have heard about Phoenix' amazing [2 million simultanious web sockets](https://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections) benchmark!
+[Phoenix](https://www.phoenixframework.org/) is inspired by Rails (the team originally behind Elixir was previously a Ruby shop) and was an early addition to the Elixir community but has learned from years of Rails development and made its own opinions in addition to the natural changes needed when going from and object oriented language to a functional language.
+Compared to Rails, Phoenix has, with the help of the Erlang VM, great performance and some of you might have heard about Phoenix' amazing [2 million simultaneous web sockets](https://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections) benchmark!
 
 ### The Nerves Project
 
