@@ -14,9 +14,9 @@ links:
 authors:
   - Robin Heggelund Hansen
 ---
-Imagine we're creating game and we're adding a feature that will display the player's high score at the end of the game. If this is the first time the game is being played, there will be no high score recorded. It seems reasonable then to use `Maybe Int` to represent a high score.
+Imagine we're creating game and we're adding a feature that will display the player's high score at the end of a run. If this is the first time the game is being played, there will be no high score recorded. It seems reasonable then to use `Maybe Int` to represent a high score.
 
-To display this on screen, we would first have to convert the value to a string and then wrap it within an Html element. That could all be done like this:
+To display this on screen, we would first have to convert the value to a string and then wrap it within an html element. That could all be done like this:
 
 ```elm
 viewHighScore : Maybe Int -> Html a
@@ -76,7 +76,11 @@ viewHighScore highscore =
     |> Html.text
 ```
 
-Compare this to our original attempt. What have we gained? I'd argue that it's more clear what this function does now. You can see at the bottom line of the function that no matter what happens in the lines above, we're going to return a value wrapped in `Html.text`. It's also clear that if we have a high score, we're going to convert it to a `String` and if we don't have a high score, we'll simply return the empty `String`. You can of course see this in our first attempt too, but only after you've mentally parsed each branch of the `case of` statement.
+Compare this to our original attempt. What have we gained?
+
+I'd argue that it's more clear what this function does now. You can see at the bottom line of the function that no matter what happens in the lines above, we're going to return a value wrapped in `Html.text`.
+
+It's also clear that if we have a high score, we're going to convert it to a `String` and if we don't have a high score, we'll simply return the empty `String`. You can of course see this in our first attempt too, but only after you've mentally parsed each branch of the `case of` statement.
 
 This was just a simple example. More complex uses of `Maybe` will benefit more from use of `Maybe.map` and `Maybe.andThen`.
 
