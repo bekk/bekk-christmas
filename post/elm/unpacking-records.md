@@ -98,3 +98,5 @@ view { entries, field, visibility } =
         , infoFooter
         ]
 ```
+
+It's worth to consider that if you over-apply the technique, you might lose track of where each field in the function body originates from. Nevertheless, it's a useful tool to keep if not in your belt, at least within reach in the tool box.
