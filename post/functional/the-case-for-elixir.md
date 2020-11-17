@@ -28,7 +28,7 @@ The article [Elixir Design Goals](https://elixir-lang.org/blog/2013/08/08/elixir
 
 A hello world example in Elixir might look something like this:
 
-```python
+```ruby
 defmodule Helloer
   def hello_world do
     IO.puts("Hello, World!")
