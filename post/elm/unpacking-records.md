@@ -5,8 +5,8 @@ post_day: 2
 title: Unpacking Records
 image: https://source.unsplash.com/IkjROahgUoo/2000x800
 ingress: Records in Elm are quite like JavaScript objects. In ES6, destructuring
-  objects can produce compact and concise code. This article invites you to take
-  a look at some techniques that Elm offers to that same end.
+  objects can produce compact and concise code. This article invites readers to
+  take a look at some techniques that Elm offers to that same end.
 links:
   - title: Pattern Matching Records @ Beginning Elm
     url: https://elmprogramming.com/pattern-matching.html#pattern-matching-records
@@ -15,7 +15,7 @@ links:
 authors:
   - Jørgen Tu Sveli
 ---
-In this article we will look at destructuring or pattern matching as it is commonly referred to within Elm, of records when they appear as function parameters. The focus is on functions for now, even though the technique can be applied in other cases as well. The basic syntax for this is presented in the example below. The code declares a type for a shopping cart item and a function that calculates the total for that cart item:
+What in ES6 is known as destructuring, is referred to as pattern matching within Elm. Pattern matching records when they appear as function parameters is our focus for now. Yet, the technique is applicable in other cases as well. The example below oresents the basic syntax. The code declares a type for a shopping cart item and a function that calculates the total for that cart item:
 
 ```elm
 type alias CartItem = 
