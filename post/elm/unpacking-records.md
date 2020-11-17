@@ -48,9 +48,9 @@ calculateTotal ({unitPrice, amount} as wholeItem) =
         |> otherFunction wholeItem
 ```
 
-Here we unwrap `unitPrice` and `amount` to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record, but receives the calculated total as an argument.
+Here we unwrap `unitPrice` and `amount` to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record. It also receives the calculated total as an argument.
 
-Let’s move on to an example from the real world. Records appear somewhere in the model of most elm apps. The model is used differently throughout an elm app: In some functions, the model is updated and only one or a few of the members are touched. In other functions, larger numbers of members of the model are read at the same time. This is seen typically in view code.
+Let’s move on to an example from the real world. Records appear somewhere in the model of most elm apps. Different parts of an elm app uses the model in different ways. Some functions update the model and change only one or a few of the fields. Other functions, read larger numbers of members of the model at the same time. This happens often in view code.
 
 Behold the Model of the [Elm todomvc app](https://github.com/evancz/elm-todomvc/blob/master/src/Main.elm).
 
@@ -63,7 +63,7 @@ type alias Model =
     }
 ```
 
-The top-level view function in todomvc defines the top level structure of the view and delegates parts of the model for rendering:
+todomvc's view function defines the top level structure of the view. Through varius calls, it delegates parts of the model for rendering:
 
 ```elm
 view : Model -> Html Msg
@@ -82,7 +82,7 @@ view model =
         ]
 ```
 
-We could apply some pattern matching here to avoid repeating `model.`:
+We could apply pattern matching to avoid repeating `model.`:
 
 ```elm
 view : Model -> Html Msg
@@ -101,4 +101,4 @@ view { entries, field, visibility } =
         ]
 ```
 
-It's worth to consider that if you over-apply the technique, you might lose track of where each field in the function body originates from. Nevertheless, it's a useful tool to keep if not in your belt, at least within reach in the tool box.
+Finally, it's worth to consider a caveat. Over-applying the technique obscures the origins of each field in the function body. This happens quicker as functions bodies grow. Still, pattern matching is a necessary and useful tool to grasp
