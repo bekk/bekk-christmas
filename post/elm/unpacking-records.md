@@ -4,12 +4,9 @@ post_year: 2020
 post_day: 2
 title: Unpacking Records
 image: https://unsplash.com/photos/IkjROahgUoo
-ingress: Records in Elm are quite similar to the trusty old objects in
-  JavaScript. Consider objects with a type as in TypeScript and the comparison
-  is even closer. If you’ve worked with React and/or ES6, you may have used
-  destructuring to compact and increase the clarity of your code that deals with
-  objects. This article invites you to take a look at some techniques that Elm
-  offers to that same end.
+ingress: Records in Elm are quite like JavaScript objects. In ES6, destructuring
+  objects can produce compact and concise code. This article invites you to take
+  a look at some techniques that Elm offers to that same end.
 links:
   - title: Pattern Matching Records @ Beginning Elm
     url: https://elmprogramming.com/pattern-matching.html#pattern-matching-records
