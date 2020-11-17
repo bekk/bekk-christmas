@@ -1,7 +1,7 @@
 ---
 calendar: elm
 post_year: 2020
-post_day: 9
+post_day: 12
 title: Operators are functions, too
 image: https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 ingress: Much of Elm's power stems from the fact that most things are just
