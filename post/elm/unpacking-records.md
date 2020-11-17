@@ -15,7 +15,7 @@ links:
 authors:
   - Jørgen Tu Sveli
 ---
-What in ES6 is known as destructuring, is referred to as pattern matching within Elm. Pattern matching records when they appear as function parameters is our focus for now. Yet, the technique is applicable in other cases as well. The example below oresents the basic syntax. The code declares a type for a shopping cart item and a function that calculates the total for that cart item:
+What in ES6 is known as destructuring, is referred to as pattern matching within Elm. Pattern matching records appearing as function parameters is our focus for now. Yet, the technique is applicable in other cases as well. The example below presents the basic syntax. The code declares a type for a shopping cart item and a function that calculates the total for that cart item:
 
 ```elm
 type alias CartItem = 
@@ -32,7 +32,7 @@ calculateTotal { unitPrice, amount } =
 calculateTotal cartItem -- 38
 ```
 
-If we would like shorthand access to a subset of the fields but also want to retain a reference to the whole of the record, we're in luck since Elm allows this:
+We now have shorthand access to the fields of the record. The calculation presents itself uncluttered. There might be cases where a record contains more fields than interest us. We can create shorthands for a subset of the fields while also retaining a reference to the whole of the record.
 
 ```elm
 type alias CartItem = 
@@ -48,7 +48,7 @@ calculateTotal ({unitPrice, amount} as wholeItem) =
         |> otherFunction wholeItem
 ```
 
-Here we unwrap unitPrice and amount to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record, but calculating the total.
+Here we unwrap `unitPrice` and `amount` to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record, but receives the calculated total as an argument.
 
 Let’s move on to an example from the real world. Records appear somewhere in the model of most elm apps. The model is used differently throughout an elm app: In some functions, the model is updated and only one or a few of the members are touched. In other functions, larger numbers of members of the model are read at the same time. This is seen typically in view code.
 
