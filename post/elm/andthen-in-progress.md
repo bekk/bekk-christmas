@@ -18,10 +18,10 @@ We implement the function by splitting the string on space, reversing the list a
 ```elm
 toLastName name =
     name
-    |> Maybe.map (String.split " ")
-    |> Maybe.map List.reverse
-    |> Maybe.map List.head
-    |> Maybe.withDefault Nothing
+        |> Maybe.map (String.split " ")
+        |> Maybe.map List.reverse
+        |> Maybe.map List.head
+        |> Maybe.withDefault Nothing -- 🤮
 ```
 
 As you can see, we end up with Maybe (Maybe String) after List.head operation, because List.head returns a Maybe List. Therefore, we have to use a Maybe.withDefault, in order to extract the inner Maybe.
@@ -31,9 +31,9 @@ However, if we use andThen, we can do it like this:
 ```elm
 toLastName name =
     name
-    |> Maybe.map (String.split " ")
-    |> Maybe.map List.reverse
-    |> Maybe.andThen List.head
+        |> Maybe.map (String.split " ")
+        |> Maybe.map List.reverse
+        |> Maybe.andThen List.head
 ```
 
 Using andThen, we see that List.head is only executed if name is Just. 
