@@ -17,7 +17,7 @@ In elm you can start by calling the function with one of several arguments, allo
 Let's see a simple example. 
 
 We all want hard presents for christmas, lets write a simple function to check that a present is hard using currying.
-We will use the function `String.contains` from the String Elm library. This is the type signature of contains
+We will use the function `String.contains` from the String Elm library. This is the type signature of ``contains
 ```elm
 contains : String -> String -> Bool
 ```
@@ -29,13 +29,10 @@ isHardPresent =
 ```
 We partially apply the String.contains function to write a function to check if a present is desirable or not. The second String will be supplied to the `String.contains` function where the `isHardPresent` function is used.
 ```elm
-isHardPresent “A sweather from grandma, soft” 
-> False
-isHardPresent “A playstation 5 game, hard” 
-> True
+isHardPresent “A sweather from grandma, soft” -- False
+isHardPresent “A playstation 5 game, hard” -- True
 ```
-When looking for a christmas present to buy for a kid, this function will tell you if you should buy it or not.
-
+Simply supply the description of the present and the function will tell you if the present is worth buying.
 If we want to be a little more effective when christmas shopping, we can do this operation with lists of presents by using the function `List.filter`.
 ```elm
 filter : (a -> Bool) -> List a -> List a
@@ -46,6 +43,7 @@ filterHardPresents : List String -> List String
 filterHardPresents =
   List.filter isHardPresent
 ```
+We only supply the predicate argument to the `List.filter` function here, and can now use this function on all our lists of presents.
 As you can see, currying can be used in a number of useful ways! And just like that you have good present/bad present filter function ready to accompany you when christmas shopping🎅
 ```elm
 filterHardPresents [ "Soft sweather from grandma", "Hard playstation game", "Hard fun toy", "Soft pillow", "Useless soft clothes" ]
