@@ -47,7 +47,7 @@ We only supply the predicate argument to the `List.filter` function here, and ca
 As you can see, currying can be used in a number of useful ways! And just like that you have good present/bad present filter function ready to accompany you when christmas shopping🎅
 ```elm
 filterHardPresents [ "Soft sweather from grandma", "Hard playstation game", "Hard fun toy", "Soft pillow", "Useless soft clothes" ]
-> True [ "Hard playstation game", "Hard fun toy" ]
+> [ "Hard playstation game", "Hard fun toy" ]
 ```
 
 
