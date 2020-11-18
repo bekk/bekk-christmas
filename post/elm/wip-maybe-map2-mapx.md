@@ -5,6 +5,9 @@ post_day: 14
 title: Combining Maybe's in Elm
 ingress: Ever needed to combine different Maybe-values to produce another value?
   In this article, we explore just that.
+links:
+  - url: https://package.elm-lang.org/packages/elm/core/latest/Maybe#map2
+    title: Maybe.map2
 authors:
   - Fredrik Løberg
 ---
