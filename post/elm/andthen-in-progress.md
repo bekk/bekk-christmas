@@ -10,12 +10,12 @@ authors:
 ---
 We want to implement a function which gives the last name of a string, if it exist. In form of a Maybe String. 
 
-```
+```elm
 toLastName : Maybe String -> Maybe String
 ```
 We implement the function by splitting the string on space, reversing the list and finally using list head to get the first element in the reversed list. By using Maybe.map, we can do it like this:
 
-```
+```elm
 toLastName name =
     name
     |> Maybe.map (String.split " ")
@@ -28,7 +28,7 @@ As you can see, we end up with Maybe (Maybe String) after List.head operation, b
 
 However, if we use andThen, we can do it like this:
 
-```
+```elm
 toLastName name =
     name
     |> Maybe.map (String.split " ")
