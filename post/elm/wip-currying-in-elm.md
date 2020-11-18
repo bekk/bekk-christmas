@@ -29,10 +29,10 @@ isHardPresent =
 ```
 We partially apply the String.contains function to write a function to check if a present is desirable or not. The second String will be supplied to the `String.contains` function where the `isHardPresent` function is used.
 ```elm
-> isHardPresent “A sweather from grandma, soft” 
-False
-> isHardPresent “A playstation 5 game, hard” 
-True
+isHardPresent “A sweather from grandma, soft” 
+> False
+isHardPresent “A playstation 5 game, hard” 
+> True
 ```
 When looking for a christmas present to buy for a kid, this function will tell you if you should buy it or not.
 
@@ -46,8 +46,11 @@ filterHardPresents : List String -> List String
 filterHardPresents =
   List.filter isHardPresent
 ```
-As you can see, currying can be used in a number of useful ways🎅
-
+As you can see, currying can be used in a number of useful ways! And just like that you have good present/bad present filter function ready to accompany you when christmas shopping🎅
+```elm
+filterHardPresents [ "Soft sweather from grandma", "Hard playstation game", "Hard fun toy", "Soft pillow", "Useless soft clothes" ]
+> True [ "Hard playstation game", "Hard fun toy" ]
+```
 
 
 
