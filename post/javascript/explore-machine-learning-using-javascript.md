@@ -8,16 +8,23 @@ ingress: If you have been following our JavaScript Christmas calendar, chances
   programming language. For this blog entry in particular, I hope you also have
   at least some interest in data science and machine learning. I will
   demonstrate how you can use your JavaScript skills to develop entry-level data
-  science and machine learning applications, and provide you with lots of
-  external resources to further expand your knowledge of this subject.
+  science and machine learning applications, argue why you may want to do so,
+  and provide you with lots of external resources to further expand your
+  knowledge of this subject.
 authors:
   - Herman Wika Horn
 ---
-For those unaware, machine learning is a field focusing on the development of algorithms which are trained rather than explicitly programmed. Interest in machine learning has skyrocketed the last couple of decades, much thanks to the increased processing capabilities of modern computers. Machine learning algorithms can be used to solve problems like [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), [sequence mining](https://en.wikipedia.org/wiki/Sequential_pattern_mining), [computer vision](https://en.wikipedia.org/wiki/Computer_vision), [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) and more. Tools like [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) have made machine learning accessible for the masses, by enabling users with consumer grade GPUs or even CPUs to experiment with state-of-the-art machine learning methods. Some popular libraries are [ConvNet.js](https://cs.stanford.edu/people/karpathy/convnetjs/) for deep learning, [Brain.js](https://brain.js.org/#/) for neural networks, and [TensorFlow.js](https://www.tensorflow.org/js) for machine learning in general.
+For those unaware, machine learning is a field focusing on the development of models which are trained rather than explicitly programmed. Interest in machine learning has skyrocketed the last couple of decades, much thanks to the increased processing capabilities of modern computers. Machine learning algorithms can be used to solve problems like [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), [sequence mining](https://en.wikipedia.org/wiki/Sequential_pattern_mining), [computer vision](https://en.wikipedia.org/wiki/Computer_vision), [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) and more. Tools like [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) have made machine learning accessible for the masses, by enabling users with consumer grade GPUs or even CPUs to experiment with state-of-the-art machine learning methods. Some popular libraries are [ConvNet.js](https://cs.stanford.edu/people/karpathy/convnetjs/) for deep learning, [Brain.js](https://brain.js.org/#/) for neural networks, and [TensorFlow.js](https://www.tensorflow.org/js) for machine learning in general.
 
-Considering that JavaScript is widely and primarily used to develop interactive web pages, one might ask why you should use JavaScript for machine learning? After all, there are more popular options readily available, like Python or R. Firstly, the interactivity of JavaScript is very sought-after and useful when using educational or entry-level applications. When doing machine learning in JavaScript, you can combine this with all the other useful features of web development that you are perhaps already familiar with, such as graphs, tables, tabs, user interactivity and much more. Additionally, if JavaScript is your primary programming language, the entry barrier for starting with machine learning using a library like TensorFlow.js is almost non-existent, given you are willing to do some theoretical research first.
+Considering that JavaScript is widely and primarily used to develop interactive web pages, one might ask why you should use JavaScript for machine learning? After all, there are more popular options readily available, like Python or R. Firstly, the interactivity of JavaScript is very sought-after and useful when making educational or entry-level applications. Furthermore, numerous helpful packages are available through package managers like npm or yarn. Lastly, if JavaScript is your primary programming language, the entry barrier for starting with machine learning using a library like TensorFlow.js is almost non-existent, given you are willing to do some theoretical research first.
 
-_A small disclaimer before I move on_: If you are a JavaScript developer, familiar with React in particular, and you are not in the mood for theoretical explanations, I propose you skim this article very briefly, and instead have a look on the React project I prepared as an example of using TensorFlow.js. The repository on GitHub can be found [here](https://github.com/hermanwh/tfjs-example). Perhaps you will want to come back to the article after checking it out!
+Supplementary to this blog post, I have written a small machine learning application using React and TensorFlow.js which I encourage you to check out. You can try the application [here](https://hermanwh.github.io/tfjs-example/), and see the code [here](https://github.com/hermanwh/tfjs-example). It implements a simple GUI, and allows user to upload a .csv file (given it has appropriate formatting...), select some desired input and output parameters, and train a predefined neural network regression model. This application, although very simplistic and specific, highlights some benefits of machine learning in the browser compared to other platforms:
+- It is very accessible, and (arguably) easy to use
+- Users without any programming experience can run the program, without the need for .py-scripts or code editors
+- It is easy to prototype input and output combinations
+- Increasing the usability or enhancing the design is very simple through the use of various npm/yarn-packages and css-styling
+
+_A small disclaimer before I move on_: If you are a JavaScript developer, familiar with React in particular, and you are not in the mood for theoretical explanations, I suggest you skim this article very briefly, and instead focus on the previously mentioned application. Perhaps you will want to come back to the article after checking it out!
 
 In general, machine learning consists of gathering a set of data from a domain of interest, performing actions and transformations on this data for it to meet certain desirable properties, train some machine learning model, and interpret the results to draw some form of conclusion. In pseudocode, this may look something like this:
 
@@ -34,11 +41,11 @@ model.train(data)
 calculateAndPresentResults(data, model);
 ```
 
-To keep this blog somewhat short and concise, I will explain and demonstrate an entry-level example of neural networks for regression analysis. This is a good starting point for any beginner in the machine learning domain. Unfortunately (or perhaps fortunately, if you are not a fan of maths or theory), I cannot go into too great detail, however some theoretical knowledge is required to understand what is going on.
+To keep this blog somewhat short and concise, I will explain and demonstrate an entry-level example of neural networks for regression analysis. This is a good starting point for any beginner in the machine learning domain. Unfortunately (or perhaps fortunately, if you are not a fan of maths or theory), I cannot go into too great detail. Even so, some theoretical knowledge is required to understand what is going on.
 
-Data preprocessing means preparing your data to be used with your defined machine learning method. Firstly and most importantly, null-values or empty data entries have to be removed. Additionally, you may want your data to meet certain statistical properties which can help your machine learning model train better. This is called [feature scaling](https://en.wikipedia.org/wiki/Feature_scaling). Another commonly used technique is data transformation, for which data is transformed using some desirable function. 
+Data preprocessing means preparing your data to be used with your defined machine learning method. Firstly and most importantly, null-values or empty data entries have to be removed. Additionally, you may want your data to meet certain statistical properties which can help your machine learning model train better. This is called [feature scaling](https://en.wikipedia.org/wiki/Feature_scaling).
 
-In regression analysis, the goal is to find some function which maps a set of input variables to some dependent output variables as accurately as possible. This approximation may be found through the training of a neural network. A neural network takes as input a set of parameters, passes those parameters through a series of connected layers, and finds a corresponding set of output parameters by performing mathematical calculations. Training of the neural network means tuning the variables used in these mathematical calculates, called weights, so that the difference between calculated and expected output decreases.
+In regression analysis, the goal is to find some function which maps a set of input variables to some dependent output variables as accurately as possible. This approximation may be found through the training of a neural network. A neural network takes as input a set of parameters, passes those parameters through a series of connected layers, and finds a corresponding set of output parameters by performing mathematical calculations. Training a neural network means tuning the variables used in these mathematical calculates, called weights, so that the difference between calculated and expected output decreases.
 
 <img src="https://i.imgur.com/kLk3Cm1.png" alt="drawing" width="400"/>
 
@@ -46,7 +53,7 @@ The above figure is taken from the book "Neural Networks and Learning Machines" 
 
 Some required parameters when defining a machine learning are as follows (NB: do not be frightened and think you need to know about all these things! Typically, elementary default values can be used to great success):
 
-- **Network structur**e: the number of neural network layers, and the number of units in each layer
+- **Network structure**: the number of neural network layers, and the number of units in each layer
 - **Epochs**: the number of iterations for which your machine learning model should train
 - **Batch size**: the number of training samples your model should use for each time weights are updated
 - **Error/loss metric**: the way which the performance of your model should be measured
@@ -57,16 +64,9 @@ The last thing you need to know is that data is usually split into three categor
 
 Hopefully you have made it this far, alive and well! Finally, you are ready to see some code examples using TensorFlow.js. Note that the syntax and arguments are very similar to anything you would see in e.g. Python or R.
 
-First, you must load your data into your program. Using JavaScript, loading and parsing your data to the desired format may be the most challenging task of programming and entry-level application, at least in my experience. No, I'm not joking! In Python, you can simply use [Pandas](https://pandas.pydata.org/) and type:
+First, you must load your data into your program. Using JavaScript, loading and parsing your data to the desired format may be the most challenging task of programming an entry-level application, at least in my experience. TensorFlow.js offers some functionality for this purpose, however it is not trivial to use when loading data uploaded through the frontend. Feel free to try it out for yourself using [the TensorFlow documentation](https://js.tensorflow.org/api/0.14.1/#data.csv). If you instead want to rely on your own JavaScript parsing skills, I wrote a small guide how to do this with [react-csv-reader](https://www.npmjs.com/package/react-csv-reader), available in [this GitHub readme file.](https://github.com/hermanwh/tfjs-example).
 
-```python
-import pandas as pd
-csvDataset = pd.read_csv(path_to_local_file).values
-```
-
-In JavaScript, it is not as simple (at least not from what I have found). TensorFlow.js offers a similar method, but it uses [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) under the hood, and thus requires 1) that your data is stored at some URL, and 2) that despite using this method, the data has to be flattened in a particular way. Feel free to try it out for yourself using [the TensorFlow documentation](https://js.tensorflow.org/api/0.14.1/#data.csv). If you instead want to rely on your own JavaScript parsing skills, I wrote a small guide how to do this (e.g. with [react-csv-reader](https://www.npmjs.com/package/react-csv-reader)) [here](https://github.com/hermanwh/tfjs-example).
-
-Assuming you made it past the hurdle of loading your data using the guide above, you should now be left with four JavaScript arrays: _x_train_, _x_test_, _y_train_, and _y_test_. Arrays prefixed with _x_ are inputs, while _y_ are outputs. We will use the training data to fit our machine learning model, and keep the testing data for later in order to evaluate the model performance. Propose all loading and preprocessing was done using an imaginary _loadAndPreprocessData_ method:
+Assuming you made it past the hurdle of loading your data using the above guidelines and have managed to split it based on your input and output parameters, you should be left with four JavaScript arrays: _x_train_, _x_test_, _y_train_, and _y_test_. Arrays prefixed with _x_ are inputs, while _y_ are outputs. We will use the training data to fit our machine learning model, and keep the testing data for later in order to evaluate the model performance. Suppose all loading and preprocessing was done using an imaginary _loadAndPreprocessData_ method:
 
 ```javascript
 const [x_train, x_test, y_train, y_test] = loadAndPreprocessData(...)
@@ -102,11 +102,13 @@ model.add(
     })
 );
 ```
-We compile our model using the desired optimizer (how the model will update weights) and loss (the metric which will be used to measure model performance):
+Note that we do not have to explicitly define the input layer. "Relu" is a [rectifier](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) used as activation function in the hidden layers. Meanwhile, a linear activation function is required in the output layer.
+
+We compile our model using the desired optimizer (how the model will update weights) and loss (the metric which will be used to measure model performance). We use the [Adam optimizer](https://arxiv.org/abs/1412.6980) with an initial [learning rate](https://en.wikipedia.org/wiki/Learning_rate) of 0.01 and [mean absolute error](https://en.wikipedia.org/wiki/Mean_absolute_error) loss metric:
 ```javascript
 model.compile({
-    optimizer: modelParams.optimizer,
-    loss: modelParams.loss
+    optimizer: tf.train.adam(0.01),
+    loss: "meanAbsoluteError"
 });
 ```
 Then, we define some callbacks which will continuously update a graph bound to a div with id "lossCanvas" on our frontend with loss and validation loss values as our model trains through its epochs and batches:
@@ -122,14 +124,14 @@ const callbacks = tfvis.show.fitCallbacks(
 ```
 Finally, the model can be fitted:
 ```javascript
-model.fit(xTrain, yTrain, {
+model.fit(tensors.trainFeatures, tensors.trainTargets, {
     batchSize: 128,
     epochs: 10,
     validationSplit: 0.25,
     callbacks: callbacks
 });
 ```
-When the model is done training, it can be used to make predictions for previously unseen data samples, such as the training data we defined previously:
+The "validationSplit" parameter of 0.25 ensured 25% of the training data is used for model validation instead of training. When the model is done training, it can be used to make predictions for previously unseen data samples, such as the training data we defined previously:
 
 ```javascript
 const predictions = model.predict(tensors.testFeatures)
@@ -137,4 +139,4 @@ const predictions = model.predict(tensors.testFeatures)
 
 We may now evaluate how well the function defined by the neural network approximates the relation between input and output variables, for instance by calculating the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination).
 
-Reaching the conclusion of this blog post, I have come to realize that perhaps it was too ambitious to present and demonstrate regression analysis and neural networks with JavaScript in a single blog post. Unfortunately, we barely scratched the surface of a small domain of machine learning. Even so, if you made it this far, I hope you are left with increased interest in machine learning, and encourage you to seek out additional literature!
+Reaching the conclusion of this blog post, I have come to realize that perhaps it was too ambitious to present and demonstrate regression analysis and neural networks with JavaScript in a single blog post. There are numerous interesting areas for which frameworks like TensorFlow.js can be applied, perhaps most successful if combined with appropriate backend frameworks for model training. Unfortunately, we barely scratched the surface of a small domain of machine learning. Even so, if you made it this far, I hope you are left with increased interest in machine learning, and encourage you to seek out additional literature!
