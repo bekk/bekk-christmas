@@ -7,6 +7,8 @@ ingress: A function that takes several arguments can often be tiresome to read,
   and not logically satisfying to use. By utilising currying you can split up
   such functions into small logical building blocks that makes such pieces of
   code easier to both read and work with.
+authors:
+  - Vetle Bu Solgård
 ---
 Simply put, currying is to partially apply a function. In programming languages where you don't have currying and you don't supply all the arguments when you call it, you will get a compile error. 
 
