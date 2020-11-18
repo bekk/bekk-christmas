@@ -34,7 +34,7 @@ But what if we made JavaScript type-safe, and had a real compiler that would che
 
 It already exists: 
 
-***TypeScript*** (type-safe JavaScript, get it?)
+***TypeScript*** (typed JavaScript, get it?)
 
 To revisit our absurd code sample from above, TypeScript would see it written something like this:
 
