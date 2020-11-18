@@ -4,23 +4,7 @@ post_year: 2020
 post_day: 1
 title: Why spend time teaching away?
 image: https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
-ingress: >-
-  # About this calendar
-
-  A warm welcome to this brand new **talks.christmas-calendar**! This calendar will throughout December give introduction to a lot of aspects of **talks**:
-
-
-  - How to cope with stage fright
-
-  - Tips & Tricks when holding presentations
-
-  - Our analysis of different people holding talks
-
-  - How to create a great slide deck
-
-  - Retoric and persuasion
-
-  - How to improvise 
+ingress: ""
 authors:
   - Nicolai August Hagen
 ---
@@ -41,3 +25,13 @@ By gaining experience through holding talks to others, you become much more awar
 ### 4. You will always need talk-like skills
 
 You will always need talk-like skills to cope with everyday situations, such as wedding speeches, deliver a memorial speech at a funeral, or in your childrens confirmation. Why not start now?
+
+# About this calendar
+A warm welcome to this brand new **talks.christmas-calendar**! This calendar will throughout December give introduction to a lot of aspects of **talks**:
+
+- How to cope with stage fright
+- Tips & Tricks when holding presentations
+- Our analysis of different people holding talks
+- How to create a great slide deck
+- Retoric and persuasion
+- How to improvise 
