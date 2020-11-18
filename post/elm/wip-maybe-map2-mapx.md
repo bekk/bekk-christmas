@@ -9,16 +9,16 @@ authors:
   - Fredrik Løberg
 ---
 Let us say that you are given the task to implement a function which combines two values to some other type if, and only if, both values are present.
-For example, consider the following function:
+For example, consider the following `toContactPerson` function:
 
 ```elm
 type alias ContactPerson =
-    { firstname: String
-    , lastname: String
+    { firstName: String
+    , lastName: String
     }
 
 toContactPerson : Maybe String -> Maybe String -> Maybe ContactPerson
-toContactPerson firstname lastname =
+toContactPerson firstName lastName =
     ...
 ```
 
@@ -27,16 +27,16 @@ With standard pattern-matching, `toContactPerson` can be implemented like this:
 
 ```elm
 toContactPerson : Maybe String -> Maybe String -> Maybe ContactPerson
-toContactPerson maybeFirstname maybeLastname =
-    case ( maybeFirstname, maybeLastname ) of
-        ( Just firstname, Just lastname ) ->
-            Just (ContactPerson firstname lastname)
+toContactPerson maybeFirstName maybeLastName =
+    case ( maybeFirstName, maybeLastName ) of
+        ( Just firstName, Just lastName ) ->
+            Just (ContactPerson firstName lastName)
 
         _ ->
             Nothing
 ```
 
-This implementation is already somewhat strenuous to read. Now, imaging how it reads when we expand the `ContactPerson` with additional fields such as phoneNumber, email, address, etc. Not very pleasant!
+Simple enough, but you may have already noticed that this implementation is somewhat strenuous to read. Now, imagine how it would read if we expanded the `ContactPerson` record with additional fields such as phoneNumber, email, address, etc. Not very pleasant!
 
 
 Another, arguably much more readable, approach is to use the utility functions `Maybe.map2`, `Maybe.map3`, `Maybe.map4`, and so on.
@@ -46,8 +46,8 @@ The mapping function is applied if, and only if, both values are present. With `
 
 ```elm
 toContactPerson : Maybe String -> Maybe String -> Maybe ContactPerson
-toContactPerson maybeFirstname maybeLastname =
-    Maybe.map2 ContactPerson maybeFirstname maybeLastname
+toContactPerson maybeFirstName maybeLastName =
+    Maybe.map2 ContactPerson maybeFirstName maybeLastName
 ```
 
 or if we exploit partial application:
