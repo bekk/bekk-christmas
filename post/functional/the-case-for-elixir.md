@@ -90,16 +90,16 @@ Back to the main story! :sweat_smile: These uniqe principles for processes lays 
 ### OTP - The Open Telecom Platform
 As with so many other parts of this article OTP is a big topic and could be a separate article, but I'll try make it short!
 
-What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[1](#whatisotp)</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
+What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^1]</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
 
 
 ## The take-away
 
-After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and recilient IoT applications without a deep knowledge the BEAM or OTP. It would ceratinly help but not a pre requisite. And thats the great thing about Elixir: it is an approachable language with battle tested underpinnings! :muscule:
+After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and recilient IoT applications without a deep knowledge the BEAM or OTP. It would ceratinly help but not a pre requisite. And that is the great thing about Elixir: it is an approachable language with battle tested underpinnings! :muscule:
 
 It might not be your idea of a perfect language. It is not mine either, but that should not stop us from using the great tools at our disposal.
 
 If you would like to check Elixir out I recommend checking out [the official Getting started guide](https://elixir-lang.org/getting-started/introduction.html) and trying out Phoenix or Nerves.
 
-----
-1. [whatisotp](https://learnyousomeerlang.com/what-is-otp)
+
+[^1]: https://learnyousomeerlang.com/what-is-otp
