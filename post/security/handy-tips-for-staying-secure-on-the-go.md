@@ -10,7 +10,7 @@ ingress: >-
   one more trick, and expand our list for staying safe and secure on the road.
 
 
-  Watch out for shoulder surfers, and protect your equipment if you have to leave it in ie. your hotel room.
+  Watch out for shoulder surfers, and protect your equipment if you have to leave it in for example your hotel room.
 description: "HOWTO: Protect your equiptment when you are traveling, and learn
   how to fend off shoulder surfers"
 links:
@@ -27,7 +27,7 @@ authors:
 
 ## Shoulder surfers:
 
-Be aware of your surroundings and reduce the risk of shoulder surfers. A shoulder surfer describes someone who is peaking over your shoulder to get information. I see people prone for this type of social engineering attack all the time. When using public transport, in cafees, or on air planes. People use their laptop to check out some work stuff, and don’t care if someone is looking.
+Be aware of your surroundings and reduce the risk of shoulder surfers. A shoulder surfer is someone who is peaking over your shoulder to get information. We can spot people prone to this type of social engineering attack all the time. When people are visiting a cafee, are on public transport, or on air planes they will use their laptop for work stuff. And they don’t notice, or care if someone is looking.
 
 To protect your information, you can, and should invest in a privacy shield for you screen. They cost next to nothing, but reduce/limit the viewing angle of your display.
 
@@ -41,11 +41,14 @@ rather than this abomination of a menu bar:
 
 ![an untidy and talkative menue bar](https://eshop.macsales.com/blog/wp-content/uploads/2019/05/1password1280.jpg)
 
-The reason for hiding this information from shoulder surfers is that it tells a lot about you. If someone knows what applications you are running, they know a lot about you. Developer tools, Automator scripts, and a password manager? You presumably work in IT. Bluetooth enabled, an old version of Outlook and a TorrentClient? You are prone for Metasploit. 
+The reason for hiding this information from shoulder surfers is that it reveals many of your attack vector. If someone knows what applications you are running, they know a lot about you. Developer tools, Automator scripts, and a password manager? You presumably work in IT. Bluetooth enabled, an old version of Outlook and a TorrentClient? The bad guys already have tools for these applications.  
 
 ## Mikado security
 
-The other tip is to not leave your computer laying around. This goes by itself, but there are times when this is impossible. There will be events where you have super secret stuff on your computer, and must step away for a period of time. For instance in a hotel room while you are away for an hour, or go to a resturant.
+The other tip is to not leave your computer laying around. This may seem obvious, but there are times when this is impossible. There will be events where you have super secret stuff on your computer, and must step away for a period of time. For instance in a hotel room while you are away for an hour, or go to a resturant.
+
+If an adversary has physical access to your device, they can do all sort of damage. [A poker player had this happen to him](https://www.theregister.com/2013/12/11/poker_pros_call_shenanigans_over_hotel_malware_infections/), where someone broke into his hotel room to install malware on his laptop. This is only one of the cases, but we suspect there are many more based on  the fact that hotel room locks are [ridiculously insecure](https://youtu.be/-Bazy3Ew6D4), and [easy to bypass](https://youtu.be/RX-O4XuCW1Y).\
+So to combat this problem, we have devised a nice little trick to help you stay safe if you have to leave your device behind.
 
 ![](https://live.staticflickr.com/5475/9350249910_6aeb4b5d85_h.jpg)
 [Mikado](https://flic.kr/p/ffftxm) by [Balazs Koren](https://www.flickr.com/photos/kobakpontorg/), on Flickr
