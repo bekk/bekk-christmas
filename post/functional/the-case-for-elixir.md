@@ -7,6 +7,8 @@ ingress: ""
 links:
   - url: https://elixir-lang.org/blog/2013/08/08/elixir-design-goals/
     title: Elixir Design Goals
+  - title: Intro to OTP
+    url: https://www.youtube.com/watch?v=CJT8wPnmjTM
 authors:
   - Harald Ringvold
 ---
