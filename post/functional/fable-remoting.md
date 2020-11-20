@@ -5,6 +5,15 @@ post_day: 6
 title: Fable Remoting
 image: ""
 ingress: ""
+links:
+  - title: Fable Remoting github
+    url: https://github.com/Zaid-Ajaj/Fable.Remoting
+  - title: SAFE-STACK
+    url: https://safe-stack.github.io/
+  - title: The Elmish Book
+    url: https://zaid-ajaj.github.io/the-elmish-book/#/
+authors:
+  - Bjørn-Ivar Strøm
 ---
 I am a big fan of F#
 It is very enjoyable to code in and I really like its domain modelling capabilities.
@@ -236,7 +245,6 @@ Here we have it. We added a delete route for our todos.
 
 Heres a quick demo!
 
-
 ![Deletion demo](assets/working.gif)
 
 It is important to keep in mind that under the hood this is just normal HTTP requests going backwards and forwards. That means you can still test them using Postman and similar tools.
@@ -284,6 +292,6 @@ Hopefully you found it interesting too!
 
 Check the source code for this [github](https://github.com/Bjorn-Strom/Holiday)
 
-If you want to read more about Fable Remoting you can check out [this blog post](https://github.com/Zaid-Ajaj/Fable.Remoting) by the author of Fable Remoting Zaid Ajaj or go check out [SAFE stack](https://safe-stack.github.io/).
+If you want to read more about Fable Remoting you can check out [](https://github.com/Zaid-Ajaj/Fable.Remoting)its [github](https://github.com/Zaid-Ajaj/Fable.Remoting).
 
 Zaid has also written an [excellent and free book](https://zaid-ajaj.github.io/the-elmish-book/#/) about Elmish, If you want to learn more I suggest you go take a look!
