@@ -32,6 +32,8 @@ authors:
 ---
 ## Sykehuspartner
 
+![Sykehuspartner logo](assets/skjermbilde-2020-11-20-kl.-07.30.21.png "Sykehuspartner")
+
 Sykehuspartner deliver IT, HR, project and logistics services to all hospitals in the Norwegian health region called Helse Sør-Øst (Health South East). It manages vital IT systems for the hospitals, both clinical and administrative applications, as well as infrastructure and networks.
 
 On august 22 2020 several of Sykehuspartners applications were targeted by an unknown threat actor. Only one hospital (Sykehuset Innlandet) was targeted in this attack. Not much is known by the type and scope of the attack, except for what type of data might possibly have been stolen. The potentially stolen data might include:
@@ -45,11 +47,15 @@ From reports about the incident, we know that 25 patients and several employees 
 
 ## NHH
 
+![NHH logo](assets/skjermbilde-2020-11-20-kl.-07.32.06.png "NHH logo")
+
 In august this year, Norges handelshøgskole (NHH, English: Norwegian School of Economics), experienced a data heist. The school is one of the leading business schools in Europe and is located in the city of Bergen. 
 
 Usernames and passwords of both students and employees was compromised. The break in was discovered when the stolen credentials were uploaded to a “hacker” forum. The attack targeted a known vulnerability in an old version of the VPN service called Pulse Secure. An updated version that patches this vulnerability has been available since April 2019, but NHH is in the process of decommissioning the service and has therefore been neglecting to update it. All students and employees were asked to change their passwords after the incident.
 
 ## ISS
+
+![ISS logo](assets/skjermbilde-2020-11-20-kl.-07.32.38.png "ISS logo")
 
 In the middle of February this year, ISS was hit by a ransomware attack. ISS is global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
 
