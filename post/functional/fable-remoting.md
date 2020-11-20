@@ -3,7 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 6
 title: Fable Remoting
-image: https://unsplash.com/photos/0qn41654miY
+image: ""
 ingress: ""
 ---
 I am a big fan of F#
