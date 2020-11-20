@@ -47,7 +47,7 @@ From reports about the incident, we know that 25 patients and several employees 
 
 ## NHH
 
-![NHH logo](https://i.ibb.co/KzZ1s9v/Skjermbilde-2020-11-20-kl-07-32-06.png "NHH logo")
+![NHH logo](https://i.ibb.co/sjQnhNF/imageedit-10-3684463812.png "NHH logo")
 
 In august this year, Norges handelshøgskole (NHH, English: Norwegian School of Economics), experienced a data heist. The school is one of the leading business schools in Europe and is located in the city of Bergen. 
 
