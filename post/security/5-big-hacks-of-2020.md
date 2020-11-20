@@ -32,7 +32,7 @@ authors:
 ---
 ## Sykehuspartner
 
-![Sykehuspartner logo](assets/skjermbilde-2020-11-20-kl.-07.30.21.png "Sykehuspartner")
+![Sykehuspartner logo](https://i.ibb.co/hyMVdWh/Skjermbilde-2020-11-20-kl-07-30-21.png "Sykehuspartner")
 
 Sykehuspartner deliver IT, HR, project and logistics services to all hospitals in the Norwegian health region called Helse Sør-Øst (Health South East). It manages vital IT systems for the hospitals, both clinical and administrative applications, as well as infrastructure and networks.
 
@@ -47,7 +47,7 @@ From reports about the incident, we know that 25 patients and several employees 
 
 ## NHH
 
-![NHH logo](assets/skjermbilde-2020-11-20-kl.-07.32.06.png "NHH logo")
+![NHH logo](https://i.ibb.co/KzZ1s9v/Skjermbilde-2020-11-20-kl-07-32-06.png "NHH logo")
 
 In august this year, Norges handelshøgskole (NHH, English: Norwegian School of Economics), experienced a data heist. The school is one of the leading business schools in Europe and is located in the city of Bergen. 
 
@@ -55,7 +55,7 @@ Usernames and passwords of both students and employees was compromised. The brea
 
 ## ISS
 
-![ISS logo](assets/skjermbilde-2020-11-20-kl.-07.32.38.png "ISS logo")
+![ISS logo](https://i.ibb.co/pJJfN85/Skjermbilde-2020-11-20-kl-07-32-38.png "ISS logo")
 
 In the middle of February this year, ISS was hit by a ransomware attack. ISS is global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
 
@@ -71,7 +71,7 @@ Twitter stated that "This attack relied on a significant and concerted attempt t
 
 The phish was used to get access to certain high-profile accounts. The compromised accounts were used to promote a bitcoin scam.
 
-![Tweets from Joe Biden and Barack Obama promoting a bitcoin scam](assets/external-content.duckduckgo.com.png "Biden and Obamas twitter profiles were hacked to promote a bitcoin scam")
+![Tweets from Joe Biden and Barack Obama promoting a bitcoin scam](https://i.ibb.co/sPXDZK7/external-content-duckduckgo-com.png "Biden and Obamas twitter profiles were hacked to promote a bitcoin scam")
 
 ## CWT
 
@@ -79,4 +79,4 @@ CWT is a travel management company that manages business travel, meetings, etc. 
 
 One of the fascinating things about this hack was that the negotiation chat, where the company and the hackers met to talk, was left open to the public after the negotiations ended. This gives us a never before seen insight into how the negotiations between hacker and hacked in a high profile attack like this, can be delt with.
 
-![Screen shot of chat between hackers and CWT](assets/cwt_chat.jpg "Screen shot of the negotiation chat between hackers and CWT")
+![Screen shot of chat between hackers and CWT](https://i.ibb.co/QC7f7MJ/cwt-chat.jpg "Screen shot of the negotiation chat between hackers and CWT")
