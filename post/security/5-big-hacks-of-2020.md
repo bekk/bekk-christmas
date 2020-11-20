@@ -55,7 +55,7 @@ Usernames and passwords of both students and employees was compromised. The brea
 
 ## ISS
 
-![ISS logo](https://i.ibb.co/pJJfN85/Skjermbilde-2020-11-20-kl-07-32-38.png "ISS logo")
+![ISS logo](https://i.ibb.co/XDJVmgQ/imageedit-12-3910494650.png "ISS logo")
 
 In the middle of February this year, ISS was hit by a ransomware attack. ISS is global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
 
