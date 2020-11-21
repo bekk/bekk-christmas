@@ -14,7 +14,7 @@ links:
 authors:
   - Gaute Solbu Kleiven
 ---
-The importance of integrating security as a role and shared responsibility in application development is often emphasized as a key success factor. Yet, in my experience, security is frequently given a low priority. Progress is primarily estimated by looking at an application's new features, and security measures are considered invasive and complicating to our day-to-day-work. Luckily, there are tools that requires little effort to increase our focus on security, such as Github's Dependabot  
+I've often been told that integrating security as a role and shared responsibility in application development is important. Yet, in my experience, security is frequently given a low priority. Progress is primarily estimated by looking at an application's new features, and security measures are considered invasive and complicating to our day-to-day-work. Luckily, there are tools that requires little effort to increase our focus on security, such as Github's Dependabot  
 
 ## What is Dependabot?
 
