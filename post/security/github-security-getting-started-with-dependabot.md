@@ -44,11 +44,11 @@ In the security overview, there is a row titled “Dependabot alerts”. If not 
 
 The dependency graph is a summary of the manifest and lock files stored in a repository. Enabling this feature is a prerequisite for the other options, as Dependabot requires access to the dependency graph in order to create alerts and updates.
 
-![Security: Dependabot alerts](https://preview.bekk.christmas/assets/screenshot-2020-11-16-at-19.59.16.png "Unresolved Dependabot alerts are listed in the repository.")
-
 ### Dependabot alerts
 
 The alerts allows Dependabot to notify you when it finds a weakness. This is probably the key feature that you are here for. When activated, the number of unresolved alerts is highlighted in the "Security" button that we previously clicked. On the security tab, the alerts highlighting currently outdated dependencies are listed. By clicking on an alert, you will find more details on it, such as a description of the vulnerability and in what version of the dependency it was patched.
+
+![Security: Dependabot alerts](https://preview.bekk.christmas/assets/screenshot-2020-11-16-at-19.59.16.png "Unresolved Dependabot alerts are listed in the repository.")
 
 ### Dependabot security updates
 
