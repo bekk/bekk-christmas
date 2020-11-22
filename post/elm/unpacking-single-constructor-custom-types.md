@@ -87,3 +87,6 @@ bodyMassIndex (Weight weight) (Height height) =
     weight / (height * height)
 ```
 
+The overhead of making a refactor like this is now almost nothing, and can, in certain situations give your code guarantees that it otherwise wouldn't have.
+
+Worth noting is that this pattern mathing only works with single-constructor, not custom types with multiple constructors. And, as mentioned above, we will see another use for this technique of using single-constructor custom types, later in December.
