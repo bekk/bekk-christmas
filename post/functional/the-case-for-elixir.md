@@ -117,6 +117,6 @@ If you would like to check Elixir out I recommend checking out [the official Get
 Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and now lately some work on [strong staticly compiled ML-like languges](https://gleam.run/) if you are into that!
 
 
-[^']: https://learnyousomeerlang.com/what-is-otp
+[^']: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
 [^2]: [Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)
-[^3]: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
+[^3]: [What is OTP?](https://learnyousomeerlang.com/what-is-otp)
