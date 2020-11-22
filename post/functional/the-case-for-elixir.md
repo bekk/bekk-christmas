@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 5
 title: The case for Elixir
 ingress: Today I want to give you an intro to the programming language Elixir,
-  some of it features and why you might want to check it out!
+  some of its features and why you might want to check it out!
 links:
   - url: https://elixir-lang.org/blog/2013/08/08/elixir-design-goals/
     title: Elixir Design Goals
