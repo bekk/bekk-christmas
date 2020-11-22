@@ -8,7 +8,7 @@ ingress: >-
   
   You've got a Kubernetes cluster running your application on Google Cloud Platform (GCP), managed by Terraform.
 
-  Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However - this can also be managed with Terraform, allowing a lot more control over your monitoring.
+  Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However, this can also be managed with Terraform, allowing a lot more control over your monitoring.
 links: []
 authors:
   - Ole Magnus Lie
