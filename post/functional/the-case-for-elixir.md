@@ -36,11 +36,11 @@ Elixir inherits a lot its data structures and related syntax from Erlang which i
 
 This is a great feature of Elixir that we will talk more about later.
 
-As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. 
+As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. <sup>[^inspiration]</sup>
 
 ### Hello World!
 
-As said, Elixir is concurrent functional programming language. For the functional part it means that Elixir mainly uses functions and modules for code structure and and has other features that often are assositated with functional languages. We'll talk about the concurrent part later. 
+As said, Elixir is concurrent functional programming language. For the functional part it means that Elixir mainly uses functions and modules for code structure and has other features that often are assositated with functional languages. We'll talk about the concurrent part later. 
 
 A hello world example in Elixir might look something like this:
 
@@ -54,7 +54,7 @@ end
 
 Here we define a module with a function that simply writes "Hello, World!" to the console.
 
-Elixirs types are immutable, but variables can be reassigned/rebound which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants. <sup>[^rebinding](https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable)</sup>
+Elixirs types are immutable, but variables can be reassigned/rebound which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants. <sup>[^rebinding]</sup>
 
 ## Killer applications
 
@@ -108,9 +108,10 @@ After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is
 
 It might not be your idea of a perfect language. It is not mine either, but that should not stop me from using the great tools at my disposal. If you are all into Haskell or the likes it might not be something you would use and that is OK. Whatever your preferences are you now might know a little more about Elixir and Erlang and some more knowledge is always a good thing. 😄
 
-If you would like to check Elixir out I recommend checking out [the official Getting started guide](https://elixir-lang.org/getting-started/introduction.html) or the interactice guide [Try Elixir](https://try-elixir.herokuapp.com/) and trying out a project Phoenix or Nerves. Hands-on experience is always better than something you read on the internet! 🤓
+If you would like to check Elixir out I recommend checking out [the official Getting started guide](https://elixir-lang.org/getting-started/introduction.html) or the interactice guide [Try Elixir](https://try-elixir.herokuapp.com/) and trying out a project with Phoenix or Nerves. Hands-on experience is always better than something you read on the internet! 🤓
 
 Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and lately some work on [strong statically compiled ML-like languges](https://gleam.run/) if you are into that!
 
+[^inspiration]: [What languages inspired the design of Elixir (programming language)? - Quora](https://www.quora.com/What-languages-inspired-the-design-of-Elixir-programming-language/answer/Ian-Heggie)
 [^nine9s]: [Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)
 [^otp]: [What is OTP?](https://learnyousomeerlang.com/what-is-otp)
