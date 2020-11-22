@@ -84,7 +84,7 @@ Elixirs creator, Jose Valim, attributes one the motivation factors for the creat
 
 ### Everything is a process
 
-Everything in the BEAM is a process. These are not OS processes, but lightweight processes which can be cheaply spawned and killed, smililar to goroutines in Go and koroutines in Kotlin, but the similarities stops there. In his PhD thesis the co-inventor of Erlang, Joe Armstrong, summarized Erlangs principles regarding processes:
+Everything in the BEAM is a process. These are not OS processes, but lightweight processes which can be cheaply spawned and killed. In his PhD thesis the co-inventor of Erlang, Joe Armstrong, summarized Erlangs principles regarding processes:
 
 - Everything is a process.
 - Processes are strongly isolated.
