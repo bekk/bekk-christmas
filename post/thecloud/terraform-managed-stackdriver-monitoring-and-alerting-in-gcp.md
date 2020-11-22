@@ -2,13 +2,13 @@
 calendar: thecloud
 post_year: 2020
 post_day: 10
-title: Terraform managed Stackdriver monitoring and alerting in GCP
+title: Terraform managed monitoring and alerting in GCP Stackdriver
 image: https://images.unsplash.com/photo-1505139229755-18651479b8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80
 ingress: >-
   
   You've got a Kubernetes cluster running your application on Google Cloud Platform (GCP), managed by Terraform.
 
-  Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your dashboard. However - this can also be defined in Terraform, allowing a lot more control over the metrics that you monitor.
+  Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However - this can also be managed with Terraform, allowing a lot more control over your monitoring.
 links: []
 authors:
   - Ole Magnus Lie
