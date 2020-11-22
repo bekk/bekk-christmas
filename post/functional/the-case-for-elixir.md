@@ -108,13 +108,13 @@ What exactly OTP is and how it relates Erlang might be a bit hard to understand 
 
 ## The take-away
 
-After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and resilient IoT applications without a deep knowledge the BEAM or OTP. It would ceratinly help but not a pre requisite. And that is the great thing about Elixir: it is an approachable language with battle tested underpinnings! 💪
+After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and resilient IoT applications without a deep knowledge the BEAM or OTP. It would certainly help but not a pre requisite. And that is the great thing about Elixir: it is an approachable language with battle tested underpinnings! 💪
 
-It might not be your idea of a perfect language. It is not mine either, but that should not stop me from using the great tools at my disposal. If you are all into Haskell or the likes it might not be something you would use and that is OK. 😄 Now might know a little more about Elixir and Erlang and some more knowledge is always a good thing.
+It might not be your idea of a perfect language. It is not mine either, but that should not stop me from using the great tools at my disposal. If you are all into Haskell or the likes it might not be something you would use and that is OK. Whatever your preferences are you now might know a little more about Elixir and Erlang and some more knowledge is always a good thing. 😄
 
 If you would like to check Elixir out I recommend checking out [the official Getting started guide](https://elixir-lang.org/getting-started/introduction.html) or the interactice guide [Try Elixir](https://try-elixir.herokuapp.com/) and trying out a project Phoenix or Nerves. Hands-on experience is always better than something you read on the internet! 🤓
 
-Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and now lately some work on [strong staticly compiled ML-like languges](https://gleam.run/) if you are into that!
+Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and lately some work on [strong statically compiled ML-like languges](https://gleam.run/) if you are into that!
 
 
 [^1]: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
