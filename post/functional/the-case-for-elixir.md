@@ -36,8 +36,8 @@ Elixir inherits a lot its data structures and related syntax from Erlang which i
 
 This is a great feature of Elixir that we will talk more about later.
 
-As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. <sup>[^inspiration]</sup>
-
+As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. <sup>[Å]</sup>
+https://www.quora.com/What-languages-inspired-the-design-of-Elixir-programming-language
 ### Hello World!
 
 As said, Elixir is concurrent functional programming language. For the functional part it means that Elixir mainly uses functions and modules for code structure and has other features that often are assositated with functional languages. We'll talk about the concurrent part later. 
@@ -113,5 +113,6 @@ If you would like to check Elixir out I recommend checking out [the official Get
 Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and lately some work on [strong statically compiled ML-like languges](https://gleam.run/) if you are into that!
 
 [^inspiration]: [What languages inspired the design of Elixir (programming language)? - Quora](https://www.quora.com/What-languages-inspired-the-design-of-Elixir-programming-language/answer/Ian-Heggie)
+[^rebinding]: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
 [^nine9s]: [Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)
 [^otp]: [What is OTP?](https://learnyousomeerlang.com/what-is-otp)
