@@ -155,3 +155,5 @@ file("com.christmas.kotlin", "Code.kt") {
 ```
 
 
+We have used;
+extensions functions, lambdas with receivers, variable number parameters (`vararg`), infix functions 
