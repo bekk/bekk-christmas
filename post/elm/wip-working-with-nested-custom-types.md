@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 6
 title: "WIP: Working with nested custom types"
-image: https://unsplash.com/photos/_wDRxQA0T-A
+image: https://pixabay.com/no/photos/treet-tree-top-grenen-nakne-grenen-3044200/
 ingress: Custom types are powerful data structures that might feel somewhat
   complicated to work with, at least if they are nested. Well, they aren't! Once
   you learn the tricks you will realise how elegantly they can be manipulated.
