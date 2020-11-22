@@ -26,11 +26,12 @@ type CitrusFruit
 	| Lime
 ```
 
-The `Fruit` type contains different variants of a fruit, one of them being `Citrus`. `Citrus` itself contains another custom type, namely `CitrusFruit`, which can be either `Orange`, `Lemon`, or `Lime`. 
+The `Fruit` type contains different variants of a fruit, one of them being `Citrus`. `Citrus` itself contains another custom type, namely `CitrusFruit`, which can be either `Orange`, `Lemon`, or `Lime`. This makes `Fruit` an example of a nested custom type.
 
-What if we want to write a function that returns a png-image of a given fruit? Then we would have to unwrap the fruit using a `case..of` expression. This could be done like this:
+What if we want to write a function that returns a png-image of a given fruit? Then we would have to destructure the fruit using a `case..of` expression. This could be done like this:
 
 ```elm
+image : Fruit -> String
 image fruit =
     case fruit of
         Fruit Apple ->
@@ -47,9 +48,10 @@ image fruit =
                     "lime.png"
 ```
 
-Destructuring a nested custom type like this is both unnecessary and ineffective. In fact, this case-expression can be significantly simplified by just pattern matching on the different variants of `Citrus` in the outer case-expression like this:
+As you can see, this way of unwrapping the `Fruit` requires two `case..of` expressions. The resulting code is not very readable and can, in fact, be written in a much simpler way! We can simply destructure the whole `Fruit` in one `case..of` expression like this:
 
 ```elm
+imageImproved : Fruit -> String
 imageImproved fruit = 
     case fruit of 
         Fruit Apple -> 
@@ -64,4 +66,4 @@ imageImproved fruit =
             "lime.png"
 ```
 
-See now how this function is much easier to scan, as all the different cases are at the same level? Knowing this little "trick" will both make your code more readable, and you will feel like you're telling a secret the next time you show this to someone else. At least, that's how I feel 😉
+See now how much easier this function is to scan? 🧐 Knowing this little "trick" will both make your code more readable, and you will feel like you're telling a secret the next time you show this to someone else. At least, that's how I feel 😉
