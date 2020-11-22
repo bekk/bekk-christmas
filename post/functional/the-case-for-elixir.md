@@ -34,7 +34,7 @@ Elixir inherits a lot its data structures and related syntax from Erlang which i
 >
 > Elixir runs in the same virtual machine and is compatible with OTP. Not only that, all the tools and libraries available in the Erlang ecosystem are also available in Elixir, simply because there is no conversion cost from calling Erlang from Elixir and vice-versa.
 
-This is a great feature of Elixir and we are going to talk more about it later.
+This is a great feature of Elixir that we will talk more about later.
 
 As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. 
 
