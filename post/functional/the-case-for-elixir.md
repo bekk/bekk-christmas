@@ -6,8 +6,6 @@ title: The case for Elixir
 ingress: Today I want to give you an intro to the programming language Elixir,
   some of its features and why you might want to check it out!
 links:
-  - url: https://elixir-lang.org/blog/2013/08/08/elixir-design-goals/
-    title: Elixir Design Goals
   - title: Intro to OTP
     url: https://www.youtube.com/watch?v=CJT8wPnmjTM
   - url: https://www.youtube.com/watch?v=zL2wcqS78UA
