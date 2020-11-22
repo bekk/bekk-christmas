@@ -57,7 +57,7 @@ toLastName name =
         |> Maybe.andThen List.head
 ```
 
-As we have seen so far in this article, `andThen` is suitable for transformations that may fail, in contrary to map. `map` is fit for transformations that cannot fail. As such, we can also use `andThen` as a filter. By forcing the transformation to fail, by returning `Nothing`, when the value does not satisfy some condition, we have created a filter. 
+As we have seen so far in this article, `andThen` is suitable for transformations that may fail, in contrary to `map`. `map` is fit for transformations that cannot fail. As such, we can also use `andThen` as a filter. By forcing the transformation to fail, by returning `Nothing`, when the value does not satisfy some condition, we have created a filter. 
 
 Let’s say that we reimplement the same `toLastName` function, but this time we want to return `Nothing` if the last last name is less than seven characters. Using `map`, we can implement it like this:
 
