@@ -17,7 +17,7 @@ Consider that we want to implement a function that takes a `String` name which c
 ```elm
 toLastName : Maybe String -> Maybe String
 ```
-We implement the toLastName function by splitting the `String` on space, reversing the list, and finally collecting the first element in the reversed list. Using `Maybe.map`, we can do it like this:
+We implement the `toLastName` function by splitting the `String` on space, reversing the list, and finally collecting the first element in the reversed list. Using `Maybe.map`, we can do it like this:
 
 ```elm
 toLastName name =
@@ -42,42 +42,42 @@ toLastName name =
 
 Using andThen, we see that List.head is only executed if name is Just. 
 
-We can also use andThen to filter.
-```elm
-toLastName : Maybe String -> Maybe String
-```
+As we have seen so far in this article, `andThen` is suitable for transformations that may fail, in contrary to map. `map` is fit for transformations that cannot fail. As such, we can also use `andThen` as a filter. By forcing the transformation to fail, by returning `Nothing`, when the value does not satisfy some condition, we have created a filter. 
+
+Let’s say that we reimplement the same `toLastName` function, but this time we want to provide an error message if the last last name is less than seven characters. Using `map`, we can implement it like this:
 
 ```elm
-nameWithSevenChars2 =
-    Just "Simen Fonnes"
+toLastName name =
+    name
         |> Maybe.map (String.split " ")
+        |> Maybe.map List.reverse
         |> Maybe.andThen List.head
         |> Maybe.map
-            (\e ->
-                if String.length e >= 7 then
-                    Just e
+            (\lastName ->
+                if String.length lastName >= 7 then
+                    Just lastName
 
                 else
                     Nothing
             )
-        |> Maybe.withDefault (Just "Mindre enn sju sjars")
-        |> Maybe.withDefault "Mindre enn sju sjars"
+        |> Maybe.withDefault Nothing
+        |> Maybe.withDefault "Last name is less than seven characters."
 ```
 
-And here, using andThen:
+In this example, we also end up with a `Maybe String` and thus need an additional `withDefault` expression. If we, on the other hand, make use of `andThen`, we remove this line:
 
 ```elm
-nameWithSevenChars =
-    Just "Simen Fonnes"
+toLastName name =
+    name
         |> Maybe.map (String.split " ")
+        |> Maybe.map List.reverse
         |> Maybe.andThen List.head
-        |> Maybe.andThen
-            (\e ->
-                if String.length e >= 7 then
-                    Just e
+            (\lastName ->
+                if String.length lastName >= 7 then
+                    Just lastName
 
                 else
                     Nothing
             )
-        |> Maybe.withDefault "Mindre enn sju sjars"
+        |> Maybe.withDefault "Last name is less than seven characters."
 ```
