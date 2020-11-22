@@ -36,8 +36,8 @@ Elixir inherits a lot its data structures and related syntax from Erlang which i
 
 This is a great feature of Elixir that we will talk more about later.
 
-As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. <sup>[Å]</sup>
-https://www.quora.com/What-languages-inspired-the-design-of-Elixir-programming-language
+As for other inspirations Elixir has docstrings from Python, polymorphism and protocols from Clojure, macros and meta-programming from different Lisps, just to name a few. <sup>[^inspiration]</sup>
+
 ### Hello World!
 
 As said, Elixir is concurrent functional programming language. For the functional part it means that Elixir mainly uses functions and modules for code structure and has other features that often are assositated with functional languages. We'll talk about the concurrent part later. 
