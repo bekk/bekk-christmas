@@ -10,13 +10,7 @@ ingress: Custom types are powerful data structures that might feel somewhat
 authors:
   - Ragnhild Aalvik
 ---
-
-- hva er det 
-- hva er problemet
-- hvordan løse det
-- oppsummering 
-
-Custom types in Elm are used for defining our own data types that can have different possible *variants*. This data structure can be viewed as a tree, with each branch representing one variant of the type. Each variant, or branch, can itself contain a new custom type, resulting in a recursive tree structure. We call this a nested custom type. 
+Custom types in Elm are used for defining our own data types that can have different possible *variants*. This data structure can be viewed as a tree, with each branch representing one variant of the data type. Each variant, or branch, can itself contain a new custom type, resulting in a recursive tree structure. We call this a nested custom type. 
 
 Let's look at an example. Say we have a, very simplified, custom type `Fruit`:
 
