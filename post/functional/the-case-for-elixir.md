@@ -6,10 +6,10 @@ title: The case for Elixir
 ingress: Today I want to give you an intro to the programming language Elixir,
   some of its features and why you might want to check it out!
 links:
-  - title: Intro to OTP
+  - title: "Video: Intro to OTP"
     url: https://www.youtube.com/watch?v=CJT8wPnmjTM
   - url: https://www.youtube.com/watch?v=zL2wcqS78UA
-    title: Why we adopted Elixir
+    title: "Video: Why we adopted Elixir"
   - url: https://blog.discord.com/scaling-elixir-f9b8e1e7c29b
     title: "Elixir at Discord: Scaling Elixir"
   - url: https://www.fastcompany.com/3026758/inside-erlang-the-rare-programming-language-behind-whatsapps-success
