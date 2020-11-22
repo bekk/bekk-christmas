@@ -6,12 +6,12 @@ title: The case for Elixir
 ingress: Today I want to give you an intro to the programming language Elixir,
   some of its features and why you might want to check it out!
 links:
-  - title: "Video: Intro to OTP"
-    url: https://www.youtube.com/watch?v=CJT8wPnmjTM
   - url: https://www.youtube.com/watch?v=zL2wcqS78UA
     title: "Video: Why we adopted Elixir"
   - url: https://blog.discord.com/scaling-elixir-f9b8e1e7c29b
     title: "Elixir at Discord: Scaling Elixir"
+  - title: "Video: Intro to OTP"
+    url: https://www.youtube.com/watch?v=CJT8wPnmjTM
   - url: https://www.fastcompany.com/3026758/inside-erlang-the-rare-programming-language-behind-whatsapps-success
     title: "Erlang at Whatsapp: Inside Erlang, The Rare Programming Language Behind
       WhatsApp’s Success"
@@ -96,19 +96,19 @@ Everything in the BEAM is a process. These are not OS processes, but lightweight
 - Error handling is non-local.
 - Processes do what they are supposed to do or fail.
 
-Sidenote: For some this may sound vaguely familiar. Some object oriented languages has had similar prinsiples, but instead of processes they are applied to objects. Smalltalk is reported to be one of the inspirations to Erlang and it is fun to think about Erlang/Elixir being a functional language but still be more object oriented than some object origented languages. This is of course not the case as the definition of OOP has changed over time and Elixir/Erlang is a functional language, but it is fun to ponder the similarities. 😄 Back to the main story! 😅
+Sidenote: For some this may sound vaguely familiar. Some object oriented languages has had similar principles, but instead of processes they are applied to objects. Smalltalk is reported to be one of the inspirations to Erlang and it is fun to think about Erlang/Elixir being a functional language but still be more object oriented than some object origented languages. This is of course not the case as the definition of OOP has changed over time and Elixir/Erlang is a functional language, but it is fun to ponder the similarities. 😄 Back to the main story! 😅
 
 These unique principles for processes where they communicate through messages lays a great foundation for creating concurrent application, but there is one more piece to the puzzle: OTP.
 
 ### OTP - The Open Telecom Platform
 As with so many other parts of this article OTP is a big topic and could be a separate article, but I'll try make it short! The name is a bit weird now but it was created by Ericsson for their telephone switches in the 80s and 90s so in that context in makes more sense.
 
-What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^otp]</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
+What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^otp]</sup> Since Elixir is compatible with OTP we can leverage these principles and technologies that has been battle tested in high pressure and critical application for decades!
 
 
 ## The take-away
 
-After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and resilient IoT applications without a deep knowledge the BEAM or OTP. It would certainly help but not a pre requisite. And that is the great thing about Elixir: it is an approachable language with battle tested underpinnings! 💪
+After all this talk about Erlang, BEAM og OTP I can gladly inform you that it is stricly something you need to understand or know to much about. You can reap the benefits of highly performing web applications and resilient IoT applications without a deep knowledge the BEAM or OTP. It would certainly help but not a prerequisite. And that is the great thing about Elixir: it is an approachable language with battle tested underpinnings! 💪
 
 It might not be your idea of a perfect language. It is not mine either, but that should not stop me from using the great tools at my disposal. If you are all into Haskell or the likes it might not be something you would use and that is OK. Whatever your preferences are you now might know a little more about Elixir and Erlang and some more knowledge is always a good thing. 😄
 
