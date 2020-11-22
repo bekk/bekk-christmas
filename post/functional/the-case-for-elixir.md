@@ -101,7 +101,7 @@ Sidenote: For some this may sound vaguely familiar. Some object oriented languag
 These unique principles for processes where they communicate through messages lays a great foundation for creating concurrent application, but there is one more piece to the puzzle: OTP.
 
 ### OTP - The Open Telecom Platform
-As with so many other parts of this article OTP is a big topic and could be a separate article, but I'll try make it short! The name is a bit weird now but it was created by Ericsson for their telephone switches in the 80s and 90s so i guess it makes sense. 🤷‍♂️
+As with so many other parts of this article OTP is a big topic and could be a separate article, but I'll try make it short! The name is a bit weird now but it was created by Ericsson for their telephone switches in the 80s and 90s so in that context in makes more sense.
 
 What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^3]</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
 
