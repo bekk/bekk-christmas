@@ -5,12 +5,13 @@ post_day: 6
 title: "WIP: Working with nested custom types"
 image: https://unsplash.com/photos/_wDRxQA0T-A
 ingress: Custom types are powerful data structures that might feel somewhat
-  complicated to work with. Well, they aren't! Once you learn the tricks you
-  will realise how elegantly they can be manipulated. 🤫
+  complicated to work with, at least if they are nested. Well, they aren't! Once
+  you learn the tricks you will realise how elegantly they can be manipulated.
+  🤫
 authors:
   - Ragnhild Aalvik
 ---
-Custom types in Elm are used for defining our own data types that can have different possible *variants*. This data structure can be viewed as a tree, with each branch representing one variant of the data type. Each variant, or branch, can itself contain a new custom type, resulting in a recursive tree structure. We call this a nested custom type. 
+Custom types in Elm are used when defining our own data types that can have different possible *variants*. We can think of this data structure as a tree, with each branch representing one variant of the data type. Each variant, or branch, can itself contain a new custom type, resulting in a recursive tree structure. We call this a nested custom type. But how can we handle these types?
 
 Let's look at an example. Say we have a, very simplified, custom type `Fruit`:
 
@@ -26,7 +27,7 @@ type CitrusFruit
 	| Lime
 ```
 
-The `Fruit` type contains different variants of a fruit, one of them being `Citrus`. `Citrus` itself contains another custom type, namely `CitrusFruit`, which can be either `Orange`, `Lemon`, or `Lime`. This makes `Fruit` an example of a nested custom type.
+The `Fruit` type contains different variants of a fruit, with one of them being `Citrus`. `Citrus` itself contains another custom type, namely `CitrusFruit`, which can be either `Orange`, `Lemon`, or `Lime`. This makes `Fruit` an example of a nested custom type.
 
 What if we want to write a function that returns a png-image of a given fruit? Then we would have to destructure the fruit using a `case..of` expression. This could be done like this:
 
@@ -66,4 +67,4 @@ imageImproved fruit =
             "lime.png"
 ```
 
-See how much easier this function is to scan? 🧐 Knowing this "trick" will make your code more readable, and you will feel like you're telling a little secret the next time you show this to someone else. At least, that's how I feel. 😉
+See how much easier this function is to scan? 🧐 This little "trick" is something people new to Elm often don't know about, which is a pity as it makes the code both easier to write and more readable. A win-win!
