@@ -20,9 +20,9 @@ authors:
 ---
 ## The basics
 
-First things first: Elixir is a concurrent functional language that runs on the Erlang VM. It is inspired by many different languages where Ruby and Erlang probably is the most obvious based on the syntax.
+First things first: Elixir is a concurrent functional language that runs on the Erlang VM. It is inspired by many different languages where Ruby and Erlang are most obvious ones based on the syntax.
 
-Elixir is a strongly dynamically typed language. This puts it in the same category as Ruby and Python, but it also has optional functionality for compile time type checking. 
+Elixir is a [strong, dynamically typed language](https://thinkingelixir.com/elixir-in-the-type-system-quadrant/). This puts it in the same category as Ruby and Python, but it also has optional functionality for compile time type checking. 
 
 Elixir inherits a lot its data structures and related syntax from Erlang which in many ways is its biggest influence. [Elixir Design Goals](https://elixir-lang.org/blog/2013/08/08/elixir-design-goals/) describes the relation to Erlang like this:
 
