@@ -36,6 +36,54 @@ viewBmu model ->
     text (bodyMassIndex model.height model.weight)
 ```
 
-Did you spot the error? No? Well, neither would the Elm compiler. The error is that our `bodyMassIndex` function expects the _first_ argument to be `weight`, but we passed `height`  as the first argument. While the person using our `bodyMassIndex` function would probably notice their error quite fast, it would is still unnecessary that we allow for the error to be made. This is an example of where we could use single-constructor custom types.
+Did you spot the error? No? Well, neither would the Elm compiler. The error is that our `bodyMassIndex` function expects the _first_ argument to be `weight`, but we passed _`height`_  as the first argument. While the person using our `bodyMassIndex` function would probably notice their error quite fast, it is still unnecessary that we allow for the error to be made. This is an example of where we could use single-constructor custom types.
 
-We can start by 
+We can start by making two single-constructor custom types:
+
+```elm
+type Weight
+    = Weight Float
+
+type Height
+    = Height Float
+```
+
+Both constructors in the custom types have the same name as the name of the custom type, which is customary to do with single-constructor custom types.
+Next, let's say we change our `bodyMassIndex` function to have the following signature:
+
+```elm
+bodyMassIndex : Weight -> Height -> Float
+```
+
+Now we can use the new version of `bodyMassIndex` in the view:
+
+```elm
+viewBmi : Model -> Html a
+viewBmu model ->
+    text (bodyMassIndex (Height model.height) (Weight model.weight))
+```
+
+If we did this, we would get a compilation error, saying that `bodyMassIndex` expects it's first argument to be a `Weight`, not a `Height`, which is what we wanted!
+
+The price of this refactor, however, is the added complexity to our `bodyMassIndex` function, since the most basic implementation of the new type signature would be something like the following:
+
+```elm
+bodyMassIndex : Weight -> Height -> Float
+bodyMassIndex weight height =
+    case weight of
+        Weight weightFloat ->
+            case height of
+                Height heightFloat
+                    weightFloat / (heightFloat * heightFloat)
+```
+
+At this point, you are probably thinking that this isn't worth it. Because that is one _ugly_ function. But don't worry, Elm has a neat trick for making this function _almost_ as simple as the first version, which had only `Float`s as arguments.
+
+Similarly to the technique described in [yesterday's post](https://elm.christmas/2020/1), where Jørgen showed that we can pattern match on fields in a record _in the argument definition_ of a function, we can also do this with single-constructor custom types. The name of the constructor and the variable name you want to use is written inside parenthesis in the function definition, which makes the function almost identical to the first version of the function:
+
+```elm
+bodyMassIndex : Weight -> Height -> Float
+bodyMassIndex (Weight weight) (Height height) =
+    weight / (height * height)
+```
+
