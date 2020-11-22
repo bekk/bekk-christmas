@@ -92,7 +92,7 @@ Applying this Terraform module creates your dashboard, `My christmas dashboard`,
 
 Adding more widgets is as simple as filtering and aggregating the metrics as one wishes to.
 
-## The application is not working as expected - ALERT ME!!
+## Something is wrong - ALERT ME!!
 
 To set up alerting in GCP Stackdriver, you'll need a notification channel. This can be manually set up in Stackdriver, but Terraform can handle this as well.
 
