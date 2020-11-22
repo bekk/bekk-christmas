@@ -19,5 +19,50 @@ links:
 authors:
   - Nicklas Utgaard
 ---
-Kotlin DSLs are widely used within the kotlin ecosystem, and you'll find them anywhere from your [build-config](https://docs.gradle.org/current/userguide/kotlin_dsl.html) (e.g `.build.gradle.kts`) to how you configure your webserver (e.g [ktor](https://ktor.io/docs/routing.html#extensibility)). But in this article we're going to use them to create our own access control DSL.
+First things first, lets talk about what we mean by domain specific language (DSL). In alot of ways we can think of it as a mini-language, or an API specifically designed to solve a very specific problem. Looking around the internet you'll find example of DSLs being used to [instantiate complex datastructures](https://github.com/kotlin/kotlinx.html/wiki/DOM-trees), configuring the [build-system](https://docs.gradle.org/current/userguide/kotlin_dsl.html), configuring [webserver](https://ktor.io/docs/routing.html#extensibility), building [layouts for android app](https://github.com/Kotlin/anko/wiki/Anko-Layouts#basics), and a whole lot more.
+
+In this article however we're taking a crack at retrofitting a DSL to kotlinpoet. Those of you who have read "[Kotlin metaprogramming with kotlinpoet
+](https://preview.bekk.christmas/kotlin/2020/12)" have gotten a small introduction. But to recap, **kotlinpoet** is Java/Kotlin API for generating .kt source files. And as we'll see it comes with a "java-ish" API, but maybe we can make it feel a bit more like kotlin-cosyness.
+
+The article introducing **kotlinpoet** ended with an example of generating a simple class containing a single property and a single function. 
+```kotlin
+val packageName = "com.christmas.kotlin"
+val className = "Code"
+
+val cls = TypeSpec.classBuilder(className)
+        .addProperty(PropertySpec
+                .builder("statements", MUTABLE_LIST.parameterizedBy(STRING))
+                .initializer("mutableListOf()")
+                .build()
+        )
+        .addFunction(FunSpec
+                .builder("addState")
+                .returns(ClassName(packageName, className))
+                .addParameter("statement", STRING)
+                .addStatement("this.statements += statement")
+                .addStatement("return this")
+                .build()
+        )
+
+val file = FileSpec.get(packageName, cls.build())
+
+println(file.toString())
+```
+
+Whichs prints;
+```kotlin
+package com.christmas.kotlin
+
+import kotlin.String
+import kotlin.collections.MutableList
+
+public class Code {
+  public val statements: MutableList<String> = mutableListOf()
+
+  public fun addState(statement: String): Code {
+    this.statements += statement
+    return this
+  }
+}
+```
 
