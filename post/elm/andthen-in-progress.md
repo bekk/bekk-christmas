@@ -33,7 +33,7 @@ toLastName name =
 
 As you can see, we end up with `Maybe (Maybe String)` after `List.head` operation, because `head` operation returns a `Maybe List`. Therefore, we have to use a `Maybe.withDefault`, in order to extract the inner `Maybe`. To remove this line of unnecessary code, we can use the `andThen` function:
 
-```
+```elm
 andThen : (a -> Maybe b) -> Maybe a -> Maybe b
 andThen callback maybe =
     case maybe of
