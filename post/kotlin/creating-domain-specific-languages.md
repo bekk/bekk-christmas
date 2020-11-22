@@ -114,17 +114,16 @@ fun TypeSpec.Builder.function(name: String, vararg parameters: Pair<String, Type
 }
 ```
 
-These four function work in a very similar way, by the fact that they all first create a `Builder`, applies our "DSL-function block", and lastly either returns the built type or adds it to the parent context. Whenever we want to add the type to a parent context we need access to that context, and that is why `clazz`, `property` and `function` are implemented as extention functinon on their respective parent context.
+These four function work in a very similar way, by the fact that they all first create a `Builder`, then applies the customization, and lastly either returns the built type or adds it to the parent context. Whenever we want to add the type to a parent context we need access to that context, and that is why `clazz`, `property` and `function` are implemented as extention functions on their respective parent context.
 
-
-Infix function, specialization of `A.to(that: B)` just added to make things more readable
+In order to support writing `"statement" withType STRING` we need need to add another function to our codebase. 
 ```kotlin
 infix fun String.withType(that: TypeName) = Pair(this, that)
 ```
+This is a specialization of kotlin's predefined `to` function. But we add `withType` simply to help readability in this case.
 
-BodySpec isnt a thing in **kotlinpoet**, so added to make the creation of function-bodies a bit easier on the eyes.
 
-Used the `operator unaryPlus`-overloading, as we need a way of capturing the strings within the `body` context.
+The last thing we'll look at is the `body`. Since `BodySpec` isn't something **kotlinpoet** provides we'll create our own abstraction in this case;
 ```kotlin
 class BodySpecBuilder(val funSpec: FunSpec.Builder) {
     operator fun String.unaryPlus() {
@@ -136,16 +135,9 @@ fun FunSpec.Builder.body(block: BodySpecBuilder.() -> Unit) {
     builder.apply(block)
 }
 ```
+Here we add `BodySpecBuider` as a stand in for the original `FunSpec.Builder` in order to add an easy way of defining the function body. We also borrow the concept of using `String.unaryPlus` from [kotlinx.html](https://github.com/Kotlin/kotlinx.html). This is needed to turn the simple string statements into function call expressions.
 
-Second `clazz` overload, scoped to `TypeSpec.Builder` insteadof `FileSpec.Builder` to limit where it can be used. But is needed for the `returns = class("Code")` syntax
-```kotlin
-fun TypeSpec.Builder.clazz(name: String): TypeName {
-    return ClassName("", name)
-}
-```
-
-
-Final code;
+And by now our final code looks something like this;
 ```kotlin
 file("com.christmas.kotlin", "Code.kt") {
     clazz("Code") {
