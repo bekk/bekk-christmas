@@ -79,7 +79,7 @@ As they say on the project web site:
 
 ## The BEAM and OTP
 
-When talking about the advantages of Elixir it is hard to not talk about the advantages of Erlang and is VM, BEAM (Bogdan's Erlang Abstract Machine) and this is where the concurrent part of Elixir comes in. It is in many ways the biggest selling point for Elixir. Erlang and the BEAM has proved its resiliency over many years, exemplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch.<sup>[^2]</sup> It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
+When talking about the advantages of Elixir it is hard to not talk about the advantages of Erlang and its VM, BEAM (Bogdan's Erlang Abstract Machine) and this is where the concurrent part of Elixir comes in. It is in many ways the biggest selling point for Elixir. Erlang and the BEAM has proved its resiliency over many years, exemplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch.<sup>[^2]</sup> It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
 
 Elixirs creator, Jose Valim, attributes one the motivation factors for the creation of Elixir to the rise of multi-core CPUs and the need to utilize these. Ruby and other languages with a global interperter lock (GIL) limits this, but the Erlang VM and the tools and design prinsiples of OTP has proven to be a great choice for creating concurrent, performant and resilient applications.
 
