@@ -15,7 +15,7 @@ authors:
 ---
 ## Defining a Stackdriver monitoring dashboard
 
-While Terraform has a lot of thorughly documented resources - the resource defining a dashboard in GCP is really basic.
+While Terraform has a lot of thoroughly documented resources - the resource defining a dashboard in GCP is really basic.
 The [`google_monitoring_dashboard`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_dashboard) resource takes only one argument - the dashboard configuration defined as JSON.
 
 ```
@@ -39,7 +39,7 @@ Equally, the filter for the frontend pod is:
 
 ```
 {
-  "displayName": "My christmas dashboard",
+  "displayName": "My Christmas dashboard",
   "gridLayout": {
     "columns": "2",
     "widgets": [
@@ -88,7 +88,7 @@ Equally, the filter for the frontend pod is:
 }
 ```
 
-Applying this Terraform module creates your dashboard, `My christmas dashboard`, where the widgets are shown in a grid.
+Applying this Terraform module creates your dashboard, `My Christmas dashboard`, where the widgets are shown in a grid.
 
 Adding more widgets is as simple as filtering and aggregating the metrics as one wishes to.
 
