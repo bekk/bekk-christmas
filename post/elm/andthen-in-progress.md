@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 15
 title: Reducing boilerplate code in Elm with Maybe.andThen
-ingress: Working with the `Maybe` type in Elm might result in excessive pattern
+ingress: Working with the `Maybe` type in Elm may result in excessive pattern
   matching because Elm forces us to handle every outcome of a `Maybe`. In this
   article, we investigate how the `Maybe.andThen` function can be used to
   improve readability by reducing unnecessary pattern matching and boilerplate
@@ -31,7 +31,19 @@ toLastName name =
         |> Maybe.withDefault Nothing
 ```
 
-As you can see, we end up with `Maybe (Maybe String)` after `List.head` operation, because `head` operation returns a `Maybe List`. Therefore, we have to use a `Maybe.withDefault`, in order to extract the inner `Maybe`. To remove this line of unnecessary code, we can use the `andThen` function.
+As you can see, we end up with `Maybe (Maybe String)` after `List.head` operation, because `head` operation returns a `Maybe List`. Therefore, we have to use a `Maybe.withDefault`, in order to extract the inner `Maybe`. To remove this line of unnecessary code, we can use the `andThen` function:
+
+```
+andThen : (a -> Maybe b) -> Maybe a -> Maybe b
+andThen callback maybe =
+    case maybe of
+        Just value ->
+            callback value
+
+        Nothing ->
+            Nothing
+```
+[https://package.elm-lang.org/packages/elm/core/latest/Maybe#andThen](andThen implementation)
 
 `andThen` is a function in which you may provide two parameters. The first parameter is a transformation function `(a -> Maybe b)`, and the second parameter is a `(Maybe a)`. The idea here is that the transformation function we supply as parameter one is only applied if parameter two is present (i.e., a `Just`). `andThen` returns the return type in the transformation function, but if `Maybe a` is `Nothing`, `andThen` returns `Nothing` and thus proceeds to the next chain in the pipeline. Essentially, this means that you don’t have to pattern match the `Maybe` you are working with, which reduces boilerplate code.
 
@@ -43,11 +55,9 @@ toLastName name =
         |> Maybe.andThen List.head
 ```
 
-Using andThen, we see that List.head is only executed if name is Just. 
-
 As we have seen so far in this article, `andThen` is suitable for transformations that may fail, in contrary to map. `map` is fit for transformations that cannot fail. As such, we can also use `andThen` as a filter. By forcing the transformation to fail, by returning `Nothing`, when the value does not satisfy some condition, we have created a filter. 
 
-Let’s say that we reimplement the same `toLastName` function, but this time we want to provide an error message if the last last name is less than seven characters. Using `map`, we can implement it like this:
+Let’s say that we reimplement the same `toLastName` function, but this time we want to return `Nothing` if the last last name is less than seven characters. Using `map`, we can implement it like this:
 
 ```elm
 toLastName name =
@@ -64,7 +74,6 @@ toLastName name =
                     Nothing
             )
         |> Maybe.withDefault Nothing
-        |> Maybe.withDefault "Last name is less than seven characters."
 ```
 
 In this example, we also end up with a `Maybe String` and thus need an additional `withDefault` expression. If we, on the other hand, make use of `andThen`, we remove this line:
@@ -82,5 +91,4 @@ toLastName name =
                 else
                     Nothing
             )
-        |> Maybe.withDefault "Last name is less than seven characters."
 ```
