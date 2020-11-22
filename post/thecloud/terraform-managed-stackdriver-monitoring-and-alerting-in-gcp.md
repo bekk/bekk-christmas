@@ -162,4 +162,4 @@ This article highlights how to monitor and alert based on metrics from a Kuberne
 
 ## Go ahead, do it!
 
-Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ _when_ you f#@k up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and Terraform the monitoring! You and your team will not regret it.
+Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ _when_ you screw up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and Terraform the monitoring! You and your team will not regret it.
