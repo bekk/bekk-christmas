@@ -154,6 +154,4 @@ file("com.christmas.kotlin", "Code.kt") {
 }
 ```
 
-
-We have used;
-extensions functions, lambdas with receivers, variable number parameters (`vararg`), infix functions 
+In this article we've used extensions functions, lambdas with receivers, and infix functions to implement our DSL. All of which are really cool features of the Kotlin language. They enables us to write expressive and readable code in a new way, and we've seen how we can use these to features to change how we interact with already predefined APIs.
