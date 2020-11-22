@@ -27,6 +27,7 @@
         "gatsby-plugin-react-helmet": "^3.3.10",
         "gatsby-plugin-styled-components": "^3.3.10",
         "gatsby-remark-emoji": "0.0.3",
+        "gatsby-remark-numbered-footnotes": "^1.0.1",
         "gatsby-remark-prismjs": "^3.5.11",
         "gatsby-remark-responsive-iframe": "^2.4.12",
         "gatsby-source-filesystem": "^2.3.27",
