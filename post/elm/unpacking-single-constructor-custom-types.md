@@ -6,7 +6,7 @@ title: Unpacking single-constructor custom types
 authors:
   - Aksel Wester
 ---
-One of the great things about Elm, is the ability to easily and accurately model your data with the use of custom types. Custom types are usually use when a type can have multiple shapes, or represent multiple state. For instance, you can create a custom type to represent the state of a user in your webapp, like this:
+One of the great things about Elm, is the ability to easily and accurately model your data with the use of custom types. Custom types are normally used when a type can have multiple shapes, or represent multiple state. For instance, you can create a custom type to represent the state of a user in your webapp, like this:
 
 ```elm
 type UserState
@@ -14,13 +14,13 @@ type UserState
     | LoggedIn UserData
 ```
 
-In this example, a user is either not logged in, in which case we don't have any data about the user, or the user is logged in, and we have some user data. We call the two "variants" of the custom type (`NotLoggedIn` and `LoggedIn`) the custom type's _constructors_. Since the are in fact functions that return a value of type `UserState`.
+In this example, a user is either not logged in, in which case we don't have any data about the user, or the user _is_ logged in, and we have some user data. We call the two "variants" of the custom type (`NotLoggedIn` and `LoggedIn`) the custom type's _constructors_. Since they are, in fact, functions that return a value of type `UserState`.
 
-## Single-constructor custom types
+## Single-constructor Custom Types
 
-Even though custom types in Elm usually have at least two constructors, you _can_ actually create custom types in Elm with only one constructor. This might seem pointless the first time you hear about it, but it can actually quite useful in certain situations.
+Even though custom types in Elm usually have at least two constructors, you can actually create custom types in Elm with only one constructor. This might seem pointless the first time you hear about it, but it can actually be quite useful in certain situations. We will examine one use for these single-constructor custom types in this post, while we will look at another, probably more widely used use for them in a post later in December.
 
-Consider, for instance, that you have function for calculating [BMI](https://en.wikipedia.org/wiki/Body_mass_index) in your app. A person's BMI depends on their weight and height, and can be written like this in Elm (using kilos for weight and meters for height):
+In our use case, we will consider the situation where we have a function for calculating [body mass index (BMI)](https://en.wikipedia.org/wiki/Body_mass_index) in our app. A person's BMI depends on their weight and height, and can be written like this in Elm (using kilos for weight and meters for height):
 
 ```elm
 bodyMassIndex : Float -> Float -> Float
@@ -28,7 +28,7 @@ bodyMassIndex weight height =
     weight / (height * height)    
 ```
 
-Now, while this function works correctly, it's not exactly a pleasant experience to use. Consider the following code:
+Now, while this function works correctly, it's not exactly a pleasant experience to use. Consider, for example, the following code, where we use the `bodyMassIndex` function:
 
 ```elm
 viewBmi : Model -> Html a
@@ -48,7 +48,7 @@ type Height
     = Height Float
 ```
 
-Both constructors in the custom types have the same name as the name of the custom type, which is customary to do with single-constructor custom types.
+Both constructors of the custom types have the same name as the name of the custom type, which is normal to do with single-constructor custom types.
 Next, let's say we change our `bodyMassIndex` function to have the following signature:
 
 ```elm
@@ -63,7 +63,7 @@ viewBmu model ->
     text (bodyMassIndex (Height model.height) (Weight model.weight))
 ```
 
-If we did this, we would get a compilation error, saying that `bodyMassIndex` expects it's first argument to be a `Weight`, not a `Height`, which is what we wanted!
+If we did this, we would get a compilation error, saying that `bodyMassIndex` expects it's first argument to be a `Weight`, not a `Height`, which is what we wanted to achieve!
 
 The price of this refactor, however, is the added complexity to our `bodyMassIndex` function, since the most basic implementation of the new type signature would be something like the following:
 
