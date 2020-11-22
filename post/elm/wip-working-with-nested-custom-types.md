@@ -66,4 +66,4 @@ imageImproved fruit =
             "lime.png"
 ```
 
-See now how much easier this function is to scan? 🧐 Knowing this little "trick" will both make your code more readable, and you will feel like you're telling a secret the next time you show this to someone else. At least, that's how I feel 😉
+See how much easier this function is to scan? 🧐 Knowing this "trick" will make your code more readable, and you will feel like you're telling a little secret the next time you show this to someone else. At least, that's how I feel. 😉
