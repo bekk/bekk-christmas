@@ -54,7 +54,7 @@ end
 
 Here we define a module with a function that simply writes "Hello, World!" to the console.
 
-Elixirs types are immutable, but variables can be reassigned/rebound <sup>[^1]</sup> which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants.
+Elixirs types are immutable, but variables can be reassigned/rebound which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants.<sup>[^1]</sup>
 
 
 ## Killer applications
