@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 15
-title: Reducing boilerplate code in Elm using Maybe.andThen function
+title: Reducing boilerplate code in Elm with Maybe.andThen
 ingress: Working with the `Maybe` type in Elm might result in excessive pattern
   matching because Elm forces us to handle every outcome of a `Maybe`. In this
   article, we investigate how the `Maybe.andThen` function can be used to
