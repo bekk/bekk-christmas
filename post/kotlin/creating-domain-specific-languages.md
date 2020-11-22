@@ -84,7 +84,7 @@ file("com.christmas.kotlin", "Code.kt") {
 
 Our idealized code does however have some major flaws. Most notably using the keywords `class` and `as` in a way that the compiler really disapproves of. Renaming `class -> clazz` and `as -> withType`, we do however reach a point at which it is actually possible to implement a working example.
 
-We'll start by implementing the major function `file`, `class`, `property` and `function`, as these will pretty similar to each other, and only differentiate based on the required parameters to their respective builder.
+We'll start by implementing the major function `file`, `class`, `property` and `function`, as these are pretty similar to each other.
 
 ```kotlin
 fun file(packageName: String, fileName: String, block: FileSpec.Builder.() -> Unit = {}): FileSpec {
@@ -107,9 +107,57 @@ fun TypeSpec.Builder.property(prop: Pair<String, TypeName>, block: PropertySpec.
 
 fun TypeSpec.Builder.function(name: String, vararg parameters: Pair<String, TypeName>, returns: TypeName, block: FunSpec.Builder.() -> Unit) {
     val builder = FunSpec.builder(name)
+    parameters.forEach { (name, type) -> builder.addParameter(name, type) }
+    builder.returns(returns)
     builder.apply(block)
     this.addFunction(builder.build())
 }
 ```
 
-These four function work in a very similar way, by the fact that they all first create a `Builder`, secondly applies out "DSL-function block", and lastly either returns the built type or adds it to the parent context.
+These four function work in a very similar way, by the fact that they all first create a `Builder`, applies our "DSL-function block", and lastly either returns the built type or adds it to the parent context. Whenever we want to add the type to a parent context we need access to that context, and that is why `clazz`, `property` and `function` are implemented as extention functinon on their respective parent context.
+
+
+Infix function, specialization of `A.to(that: B)` just added to make things more readable
+```kotlin
+infix fun String.withType(that: TypeName) = Pair(this, that)
+```
+
+BodySpec isnt a thing in **kotlinpoet**, so added to make the creation of function-bodies a bit easier on the eyes.
+
+Used the `operator unaryPlus`-overloading, as we need a way of capturing the strings within the `body` context.
+```kotlin
+class BodySpecBuilder(val funSpec: FunSpec.Builder) {
+    operator fun String.unaryPlus() {
+        funSpec.addStatement(this)
+    }
+}
+fun FunSpec.Builder.body(block: BodySpecBuilder.() -> Unit) {
+    val builder = BodySpecBuilder(this)
+    builder.apply(block)
+}
+```
+
+Second `clazz` overload, scoped to `TypeSpec.Builder` insteadof `FileSpec.Builder` to limit where it can be used. But is needed for the `returns = class("Code")` syntax
+```kotlin
+fun TypeSpec.Builder.clazz(name: String): TypeName {
+    return ClassName("", name)
+}
+```
+
+
+Final code;
+```kotlin
+file("com.christmas.kotlin", "Code.kt") {
+    clazz("Code") {
+        property("statements" withType MUTABLE_LIST.parameterizedBy(STRING)) {
+            initializer("mutableListOf()")
+        }
+        function("addStatement", "statement" withType STRING, returns = clazz("Code")) {
+            body {
+                +"this.stements += statement"
+                +"return this"
+            }
+        }
+    }
+}
+```
