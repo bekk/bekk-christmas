@@ -9,12 +9,13 @@ ingress: >-
   You've got a Kubernetes cluster running your application on Google Cloud Platform (GCP), managed by Terraform.
 
   Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your dashboard. However - this can also be defined in Terraform, allowing a lot more control over the metrics that you monitor.
+links: []
 authors:
   - Ole Magnus Lie
 ---
 ## Defining a Stackdriver monitoring dashboard
 
-While Terraform have a lot of thorughly documented resources - the resource defining a dashboard in GCP is really basic.
+While Terraform has a lot of thorughly documented resources - the resource defining a dashboard in GCP is really basic.
 The [`google_monitoring_dashboard`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_dashboard) resource takes only one argument - the dashboard configuration defined as JSON.
 
 ```
@@ -23,7 +24,7 @@ resource "google_monitoring_dashboard" "dashboard" {
 }
 ```
 
-As you might've guessed, most of the complexity is in this JSON file. Let's create a dashboard that displays when our pods restarts.
+You might already have guessed that most of the complexity is in this JSON file. Let's create a dashboard that displays when our pods restarts.
 We want a dashboard that displays the graphs in a grid with 2 columns. This is defined in `gridLayout`.
 In our cluster we have two pods - one frontend pod and one backend pod. We want to display a graph for each - showing the restart count of each one.
 Thus, two widgets have to be created. For each widget to display the desired metric, the correct `filter` have to be applied.
@@ -87,9 +88,7 @@ Equally, the filter for the frontend pod is:
 }
 ```
 
-Applying this Terraform module creates your dashboard, `My christmas dashboard`, where the widgets are shown in a grid, looking like the graphic below.
-
-![](backend-restart.png)
+Applying this Terraform module creates your dashboard, `My christmas dashboard`, where the widgets are shown in a grid.
 
 Adding more widgets is as simple as filtering and aggregating the metrics as one wishes to.
 
@@ -156,6 +155,10 @@ resource "google_monitoring_alert_policy" "frontend_restart_count_alert" {
 ```
 
 These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. A alert message is then sent to the selected notification channel, the Slack channel in our case.
+
+## Further reading
+
+This article highlights how to monitor and alert based on metrics from a Kubernetes container. These metrics are automatically exported to Stackdriver. If Prometheus, for example, is scraping metrics from your applications, you'll need the [`Stackdriver Prometheus sidecar`](https://github.com/Stackdriver/stackdriver-prometheus-sidecar) to export the metrics to Stackdriver. The sidecar is added [`here`](https://github.com/prometheus-community/helm-charts/blob/933cfcb/charts/kube-prometheus-stack/values.yaml#L2072).
 
 ## Go ahead, do it!
 
