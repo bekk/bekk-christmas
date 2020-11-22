@@ -49,6 +49,7 @@ module.exports = {
                         },
                     },
                     `gatsby-remark-emoji`,
+                    `gatsby-remark-numbered-footnotes`,
                 ],
             },
         },
