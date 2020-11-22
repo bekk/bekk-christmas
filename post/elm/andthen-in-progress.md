@@ -2,13 +2,16 @@
 calendar: elm
 post_year: 2020
 post_day: 15
-title: andThen *IN PROGRESS*
-ingress: Working with `Maybe` type in Elm might result in excessive pattern
+title: Reducing boilerplate code in Elm using `Maybe.andThen` function
+ingress: Working with the `Maybe` type in Elm might result in excessive pattern
   matching because Elm forces us to handle every outcome of a `Maybe`. In this
-  article, we investigate how we can use the `Maybe.andThen` function to reduce
-  pattern matching and in turn get less boilerplate code with improved
-  readability.
+  article, we investigate how the `Maybe.andThen` function can be used to
+  improve readability by reducing unnecessary pattern matching and boilerplate
+  code.
 description: ""
+links:
+  - url: https://package.elm-lang.org/packages/elm/core/latest/Maybe#andThen
+    title: andThen documentation
 authors:
   - Simen Fonnes
 ---
