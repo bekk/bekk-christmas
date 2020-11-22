@@ -22,9 +22,7 @@ authors:
 First things first, lets talk about what we mean by domain specific language (DSL). In alot of ways we can think of it as a mini-language, or an API specifically designed to solve a very specific problem. Looking around the internet you'll find example of DSLs being used to [instantiate complex datastructures](https://github.com/kotlin/kotlinx.html/wiki/DOM-trees), configuring the [build-system](https://docs.gradle.org/current/userguide/kotlin_dsl.html), configuring [webserver](https://ktor.io/docs/routing.html#extensibility), building [layouts for android app](https://github.com/Kotlin/anko/wiki/Anko-Layouts#basics), and a whole lot more.
 
 In this article however we're taking a crack at retrofitting a DSL to kotlinpoet. Those of you who have read "[Kotlin metaprogramming with kotlinpoet
-](https://preview.bekk.christmas/kotlin/2020/12)" have gotten a small introduction. But to recap, **kotlinpoet** is Java/Kotlin API for generating .kt source files. And as we'll see it comes with a "java-ish" API, but maybe we can make it feel a bit more like kotlin-cosyness.
-
-The article introducing **kotlinpoet** ended with an example of generating a simple class containing a single property and a single function. 
+](https://preview.bekk.christmas/kotlin/2020/12)" have gotten a small introduction. But to recap, **kotlinpoet** is Java/Kotlin API for generating .kt source files. And as we'll see it comes with a "java-ish" API, but maybe we can make it feel a bit more like kotlin-happiness. The article ended with an example of generating a simple class containing a single property and a single function. 
 ```kotlin
 val packageName = "com.christmas.kotlin"
 val className = "Code"
@@ -65,4 +63,5 @@ public class Code {
   }
 }
 ```
+
 
