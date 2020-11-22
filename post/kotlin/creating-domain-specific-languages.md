@@ -34,7 +34,7 @@ val cls = TypeSpec.classBuilder(className)
                 .build()
         )
         .addFunction(FunSpec
-                .builder("addState")
+                .builder("addStatement")
                 .returns(ClassName(packageName, className))
                 .addParameter("statement", STRING)
                 .addStatement("this.statements += statement")
@@ -57,11 +57,59 @@ import kotlin.collections.MutableList
 public class Code {
   public val statements: MutableList<String> = mutableListOf()
 
-  public fun addState(statement: String): Code {
+  public fun addStatement(statement: String): Code {
     this.statements += statement
     return this
   }
 }
 ```
 
+At this point we know the output we want, and we pretty much know how to achieve it using **kotlintpoet**'s API. The thing we need to figure out is how our custom kotlin-kotlinpoet-dsl is going to work. And this, to me, shows off one of the best features of the kotlin language; its flexibility. Prettymuch regardless of how we want our DSL to work, look and feel, it would be possible to create it. So lets start with the dream scenario;
 
+```kotlin
+file("com.christmas.kotlin", "Code.kt") {
+  class("Code") {
+    property("statements" as MUTABLE_LIST.parameterizedBy(STRING)) {
+      initializer("mutableListOf()")
+    }
+    function("addStatement", "statement" as STRING, returns = class("Code")) {
+      body {
+        "this.stements += statement"
+        "return this"
+      }
+    }
+  }
+}
+```
+
+Our idealized code does however have some major flaws. Most notably using the keywords `class` and `as` in a way that the compiler really disapproves of. Renaming `class -> clazz` and `as -> withType`, we do however reach a point at which it is actually possible to implement a working example.
+
+We'll start by implementing the major function `file`, `class`, `property` and `function`, as these will pretty similar to each other, and only differentiate based on the required parameters to their respective builder.
+
+```kotlin
+fun file(packageName: String, fileName: String, block: FileSpec.Builder.() -> Unit = {}): FileSpec {
+    val builder = FileSpec.builder(packageName, fileName)
+    builder.apply(block)
+    return builder.build()
+}
+
+fun FileSpec.Builder.clazz(className: String, block: TypeSpec.Builder.() -> Unit) {
+    val builder = TypeSpec.classBuilder(className)
+    builder.apply(block)
+    this.addType(builder.build())
+}
+
+fun TypeSpec.Builder.property(prop: Pair<String, TypeName>, block: PropertySpec.Builder.() -> Unit) {
+    val builder = PropertySpec.builder(prop.first, prop.second)
+    builder.apply(block)
+    this.addProperty(builder.build())
+}
+
+fun TypeSpec.Builder.function(name: String, vararg parameters: Pair<String, TypeName>, returns: TypeName, block: FunSpec.Builder.() -> Unit) {
+    val builder = FunSpec.builder(name)
+    builder.apply(block)
+    this.addFunction(builder.build())
+}
+```
+
+These four function work in a very similar way, by the fact that they all first create a `Builder`, secondly applies out "DSL-function block", and lastly either returns the built type or adds it to the parent context.
