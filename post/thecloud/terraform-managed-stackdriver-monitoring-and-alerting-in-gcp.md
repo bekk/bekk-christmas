@@ -27,7 +27,7 @@ As you might've guessed, most of the complexity is in this JSON file. Let's crea
 We want a dashboard that displays the graphs in a grid with 2 columns. This is defined in `gridLayout`.
 In our cluster we have two pods - one frontend pod and one backend pod. We want to display a graph for each - showing the restart count of each one.
 Thus, two widgets have to be created. For each widget to display the desired metric, the correct `filter` have to be applied.
-Both pods are correspondingly labelled with `backend` and `frontend`.
+Both pods are correspondingly labelled with `app=backend` and `app=frontend`.
 For the backend pod this is:
 
 `"filter": "resource.type="k8s_container" AND metric.type="kubernetes.io/container/restart_count" AND metadata.user_labels.app="backend""`
@@ -87,7 +87,7 @@ Equally, the filter for the frontend pod is:
 }
 ```
 
-Applying this Terraform module creates your dashboard, `My christmas dashboard`, where the widgets are shown in a grid, lokking like the graphic below.
+Applying this Terraform module creates your dashboard, `My christmas dashboard`, where the widgets are shown in a grid, looking like the graphic below.
 
 ![](backend-restart.png)
 
@@ -97,7 +97,7 @@ Adding more widgets is as simple as filtering and aggregating the metrics as one
 
 To set up alerting in GCP Stackdriver, you'll need a notification channel. This can be manually set up in Stackdriver, but Terraform can handle this as well.
 
-The [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_notification_channel) Terraform resource is used to create a notification channel. Notification channels can be e-mails, S A Slack-channel can be added as follows:
+The [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_notification_channel) Terraform resource is used to create a notification channel. Notification channels can be channels such as e-mails, SMS' or Slack channel. For example, a Slack notification channel can be added as follows:
 
 ```
 resource "google_monitoring_notification_channel" "slack-channel" {
@@ -155,8 +155,8 @@ resource "google_monitoring_alert_policy" "frontend_restart_count_alert" {
 }
 ```
 
-These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. A alert message is then sent to the selected notification channel, the slack channel in our case.
+These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. A alert message is then sent to the selected notification channel, the Slack channel in our case.
 
 ## Go ahead, do it!
 
-Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ _when_ you f#@k up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and terraform the monitoring! You and your team will not regret it.
+Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ _when_ you f#@k up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and Terraform the monitoring! You and your team will not regret it.
