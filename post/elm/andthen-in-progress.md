@@ -43,7 +43,7 @@ andThen callback maybe =
         Nothing ->
             Nothing
 ```
-[https://package.elm-lang.org/packages/elm/core/latest/Maybe#andThen](andThen implementation)
+[andThen implementation](https://package.elm-lang.org/packages/elm/core/latest/Maybe#andThen)
 
 `andThen` is a function in which you may provide two parameters. The first parameter is a transformation function `(a -> Maybe b)`, and the second parameter is a `(Maybe a)`. The idea here is that the transformation function we supply as parameter one is only applied if parameter two is present (i.e., a `Just`). `andThen` returns the return type in the transformation function, but if `Maybe a` is `Nothing`, `andThen` returns `Nothing` and thus proceeds to the next chain in the pipeline. Essentially, this means that you don’t have to pattern match the `Maybe` you are working with, which reduces boilerplate code.
 
