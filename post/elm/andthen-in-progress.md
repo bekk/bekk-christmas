@@ -3,10 +3,10 @@ calendar: elm
 post_year: 2020
 post_day: 15
 title: andThen *IN PROGRESS*
-ingress: Working with Maybes in Elm might result in excessive pattern matching
-  because Elm forces us to handle every outcome of a Maybe. In this article, we
-  investigate how we can use andThen function to reduce pattern matching and in
-  turn get less boilerplate code with improved readability.
+ingress: Working with `Maybes` in Elm might result in excessive pattern matching
+  because Elm forces us to handle every outcome of a `Maybe`. In this article,
+  we investigate how we can use the `Maybe.andThen` function to reduce pattern
+  matching and in turn get less boilerplate code with improved readability.
 description: ""
 authors:
   - Simen Fonnes
