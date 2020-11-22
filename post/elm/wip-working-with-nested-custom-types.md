@@ -6,7 +6,8 @@ title: "WIP: Working with nested custom types"
 image: https://pixabay.com/no/photos/treet-tree-top-grenen-nakne-grenen-3044200/
 ingress: Custom types are powerful data structures that might feel somewhat
   complicated to work with, at least if they are nested. Well, they aren't! In
-  this article we take a look at how to work with nested custom types. 🍊
+  this article we take a look at how simple it can be to work with nested custom
+  types. 🍊
 authors:
   - Ragnhild Aalvik
 ---
