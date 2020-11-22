@@ -54,7 +54,7 @@ end
 
 Here we define a module with a function that simply writes "Hello, World!" to the console.
 
-Elixirs types are immutable, but variables can be reassigned/rebound which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants. <sup>[^1]</sup>
+Elixirs types are immutable, but variables can be reassigned/rebound which was a bit weird for someone like me who got started with FP through Elm where there are no variables, just constants. <sup>[^rebinding]</sup>
 
 
 ## Killer applications
@@ -77,7 +77,7 @@ As they say on the project web site:
 
 ## The BEAM and OTP
 
-When talking about the advantages of Elixir it is hard to not talk about the advantages of Erlang and its VM, BEAM (Bogdan's Erlang Abstract Machine) and this is where the concurrent part of Elixir comes in. It is in many ways the biggest selling point for Elixir. Erlang and the BEAM has proved its resiliency over many years, exemplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch.<sup>[^2]</sup> It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
+When talking about the advantages of Elixir it is hard to not talk about the advantages of Erlang and its VM, BEAM (Bogdan's Erlang Abstract Machine) and this is where the concurrent part of Elixir comes in. It is in many ways the biggest selling point for Elixir. Erlang and the BEAM has proved its resiliency over many years, exemplified in giving Ericssons 9 nines (99.9999999%) availability in their AXD301 switch.<sup>[^nine9s]</sup> It is known for its "let it break" philosophy and self-healing properties and by being compatible with Erlang, Elixir inherits a lot of these traits.
 
 Elixirs creator, Jose Valim, attributes one the motivation factors for the creation of Elixir to the rise of multi-core CPUs and the need to utilize these. Ruby and other languages with a global interperter lock (GIL) limits this, but the Erlang VM and the tools and design prinsiples of OTP has proven to be a great choice for creating concurrent, performant and resilient applications.
 
@@ -103,7 +103,7 @@ These unique principles for processes where they communicate through messages la
 ### OTP - The Open Telecom Platform
 As with so many other parts of this article OTP is a big topic and could be a separate article, but I'll try make it short! The name is a bit weird now but it was created by Ericsson for their telephone switches in the 80s and 90s so in that context in makes more sense.
 
-What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^3]</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
+What exactly OTP is and how it relates Erlang might be a bit hard to understand as it is such a integral part of many Erlang applications. In essence OTP is a set of design principles and standards, and the tools and libraries to make it easier to create applications that adheres to them.<sup>[^otp]</sup> Since Elixir is compatible with OTP we can leverage these prinsiples and technologies that has been battle tested in high pressure and critical application for decades!
 
 
 ## The take-away
@@ -117,6 +117,6 @@ If you would like to check Elixir out I recommend checking out [the official Get
 Psst! By the way: there are other languages that run on the BEAM. [Lisp variants](https://lfe.io/) and lately some work on [strong statically compiled ML-like languges](https://gleam.run/) if you are into that!
 
 
-[^1]: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
-[^2]: [Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)
-[^3]: [What is OTP?](https://learnyousomeerlang.com/what-is-otp)
+[^rebinding]: https://stackoverflow.com/questions/29967086/are-elixir-variables-really-immutable
+[^nine9s]: [Concurrency Oriented Programming in Erlang, p27](https://www.rabbitmq.com/resources/armstrong.pdf)
+[^otp]: [What is OTP?](https://learnyousomeerlang.com/what-is-otp)
