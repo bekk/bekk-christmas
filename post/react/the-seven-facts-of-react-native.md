@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 1
-title: Seven Things I Find Interesting with React Native
+title: Seven Things I Find Interesting About React Native
 image: https://images.unsplash.com/photo-1510151490593-aa277bc49f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80
 ingress: React Native is a React framework developed by Facebook to write code
   for mobile applications. In this article I will share some things I found
