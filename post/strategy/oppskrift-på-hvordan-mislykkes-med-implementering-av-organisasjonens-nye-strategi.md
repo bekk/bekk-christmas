@@ -12,7 +12,7 @@ authors:
 ---
 Jeg så Rune Bjerke snakke om implementering av strategi i DnB på Lehmkuhlforelesningen på NHH 28. oktober 2020. Han snakket om hvordan blåskjortene (han selv og daværende CFO) satt på bakrommet og utarbeidet fine foiler med revolusjonerende tanker rundt hvordan DnB skulle lykkes i det utfordrende landskapet som lå foran dem. Han forteller om hvordan de inviterte til heldagssamling for å presentere disse tankene, hvor mye de forberedte seg og hvor utrolig bra presentasjonen gikk. Det virket nesten som at de på et tidspunkt hadde tenkt at heldagssamlingen var leveransen, og at etter denne var jobben deres gjort. Når de kom tilbake til kontoret, innså de fort at jobben omtrent ikke var begynt.
 
-Foredraget fikk meg til å reflektere over hvilke faktorer som bidrar til en mislykket implementering av en ny strategi. Kombinert med Rune Bjerkes refleksjoner, har jeg laget en oppskrift for hvordan sikre at du *mislykkes* med å implementere den nye strategien i organisasjonen:
+Foredraget fikk meg til å reflektere over hvilke faktorer som bidrar til en mislykket implementering av en ny strategi. Kombinert med Rune Bjerkes refleksjoner, har jeg laget en oppskrift (i tråd med månedens juletema) for hvordan sikre at du *mislykkes* med å implementere den nye strategien i organisasjonen:
 
 1. Utarbeid strategien bak lukkede dører og lanser med et Big Bang i resten av organisasjonen. Gjerne på heldagssamling utenfor kontoret uten noe knytning til en vanlig arbeidsdag. Forvent samme engasjement og forståelse for de velvalgte ordene i strategien som du selv har.
 2. Gjør det så fluffy som mulig, for å sikre at ingen forstår hva strategien egentlig betyr, men bruk konfetti når du presenterer – det funker alltid.
