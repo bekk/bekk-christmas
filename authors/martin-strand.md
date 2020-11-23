@@ -1,5 +1,5 @@
 ---
 title: Martin Strand
-socialMediaLink: "@martinstrand"
+socialMediaLink: https://twitter.com/martinstrand
 company: FHI
 ---
