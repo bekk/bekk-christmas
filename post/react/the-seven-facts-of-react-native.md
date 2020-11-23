@@ -131,10 +131,10 @@ As mentioned in the introduction, React Native is developed by Facebook. Earlier
 
 Further on, AirBnb and Udacity said in 2018 they will no longer [be developing their applications in React Native](https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx). The main reasons for this decision was more or less the immaturity of React Native. 
 
-There are several pros and cons about React Native. The easy setup and React-like syntax really gives it an advantage. But the differences between platforms (i.e. as i mentioned over with the accessibility) and the lack of some native components (i.e. push-notification and FaceId), it has a way to evolve. It will be interesting to follow this technology in the years to come!
+There are several pros and cons with React Native. The easy setup and React-like syntax really gives it an advantage. But the differences between platforms (i.e. as I mentioned over with the accessibility) and the lack of some native components (i.e. push-notification and FaceId), it has a way to evolve. It will be interesting to follow this technology in the years to come!
 
 ## That was it!
 
-This was a little list of the most interesting facts in React Native I have experienced over the years.
+This was a little list of the most interesting things in React Native I have experienced over the years.
 
 Hope you liked it!
