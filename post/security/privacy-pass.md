@@ -28,11 +28,15 @@ tracking
 
 metadata-analysis
 
-
-
 ## How it works
 
 Protocol & math
+
+## How should we define "privacy"?
+
+as a built-in property and characteristic of a system.
+
+protecting users from the system-owners
 
 ## Use-cases for Privacy Pass
 
