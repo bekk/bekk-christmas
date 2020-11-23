@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 1
+post_day: 2
 title: Characteristics of the Perfect Programming Language
 ingress: >-
   This is an opinionated post. Consider yourself warned. You will probably
