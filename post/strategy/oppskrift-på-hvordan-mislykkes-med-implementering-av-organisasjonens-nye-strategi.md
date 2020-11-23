@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 3
-title: Juleoppskrift på hvordan mislykkes med implementering av ny strategi
+title: Hvordan mislykkes med implementering av ny strategi?
 image: https://unsplash.com/photos/smgTvepind4
 links:
   - url: https://www.youtube.com/watch?v=nvkr4oP2xPE&feature=youtu.be
