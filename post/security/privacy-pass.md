@@ -15,6 +15,8 @@ links:
     title: Anonymous tokens
 authors:
   - Henrik Walker Moe
+  - Tjerand Silde
+  - Martin Strand
 ---
 ## Introducing Privacy Pass
 
