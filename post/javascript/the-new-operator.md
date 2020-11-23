@@ -109,7 +109,7 @@ console.log(jane.fullName()); // Jane Doe
 ## Summary
 I hope this gives you a better understanding of how the `new` operator works, in a nutshell. We have only scratched the surface of "the secret life of Objects" in JavaScript. And if you want to know more, I recommend you dive deeper into the documentation on MDN, read [Eloquent JavaScript](https://eloquentjavascript.net/06_object.html), or [YDKJS](https://github.com/getify/You-Dont-Know-JS) series. To summarize, as documented on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new), the new-operator:
 
-> Creates a blank, plain JavaScript object;
+> * Creates a blank, plain JavaScript object;
 > * Links (sets the constructor of) the newly created object to another object by setting the other object as its parent prototype;
 > * Passes the newly created object from Step 1 as the this context;
 > * Returns this if the function doesn't return an object.
