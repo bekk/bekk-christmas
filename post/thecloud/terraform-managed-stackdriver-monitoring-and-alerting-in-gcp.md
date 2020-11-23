@@ -18,7 +18,7 @@ authors:
 While Terraform has a lot of thoroughly documented resources - the resource defining a dashboard in GCP is really basic.
 The [`google_monitoring_dashboard`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_dashboard) resource takes only one argument - the dashboard configuration defined as JSON.
 
-```
+```json
 resource "google_monitoring_dashboard" "dashboard" {
   dashboard_json = file("${path.module}/dashboard-config.json")
 }
@@ -37,7 +37,7 @@ Equally, the filter for the frontend pod is:
 
 `"filter": "resource.type="k8s_container" AND metric.type="kubernetes.io/container/restart_count" AND metadata.user_labels.app="frontend""`.
 
-```
+```json
 {
   "displayName": "My Christmas dashboard",
   "gridLayout": {
@@ -98,7 +98,7 @@ To set up alerting in GCP Stackdriver, you'll need a notification channel. This 
 
 The [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_notification_channel) Terraform resource is used to create a notification channel. Notification channels can be channels such as e-mails, SMS' or Slack channel. For example, a Slack notification channel can be added as follows:
 
-```
+```json
 resource "google_monitoring_notification_channel" "slack-channel" {
   display_name = "slack-notifications"
   type         = "slack"
@@ -114,7 +114,7 @@ resource "google_monitoring_notification_channel" "slack-channel" {
 Now, we can use this notification channel when we define our alerting policies. We'll define alerts for the widgets we created in the dashboard.
 A alerting policy is created with the [`google_monitoring_alert_policy`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_alert_policy), like this:
 
-```
+```json
 resource "google_monitoring_alert_policy" "backend_restart_count_alert" {
   combiner              = "OR"
   display_name          = "Backend pod keeps restarting"
@@ -162,4 +162,4 @@ This article highlights how to monitor and alert based on metrics from a Kuberne
 
 ## Go ahead, do it!
 
-Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ _when_ you screw up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and Terraform the monitoring! You and your team will not regret it.
+Managing monitoring and alerting with Terraform is super easy, and versioning the monitoring of your cluster is so helpful ~~if~~ *when* you screw up. Instead of messing around in the metrics explorer and creating monitoring resources on-the-fly; mess around in the metrics explorer and Terraform the monitoring! You and your team will not regret it.
