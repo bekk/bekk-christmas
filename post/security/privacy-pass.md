@@ -13,6 +13,8 @@ ingress: This year we've seen how the need for efficient contact tracing during
 links:
   - url: https://github.com/HenrikWM/anonymous-tokens
     title: Anonymous tokens
+  - url: https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf
+    title: "Privacy Pass: Bypassing Internet Challenges Anonymously"
 authors:
   - Henrik Walker Moe
   - Tjerand Silde
