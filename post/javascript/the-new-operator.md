@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 21
 title: The new Operator
+image: https://unsplash.com/photos/RRh6wyEU_4Q
 ingress: You probably came here to read about something cutting edge in
   JavaScript, but today we’re going to do a deep dive into one of the
   fundamental operators of JavaScript, `new`.
@@ -25,7 +26,7 @@ Way back when, in my first encounters with JavaScript I really did not see the p
 ## Objects
 Objects in JavaScript are just key/value pairs, which make up the properties of the objects. Values can be primitive, array, functions or any other object. Functions are called methods when they are used in objects. The easiest, and most common way to create an object in JavaScript is by using the literal notation known as "object initializer".
 
-```
+```js
 const person = {
   firstName: ‘John’,
   lastName: ‘Doe’,
@@ -37,7 +38,7 @@ console.log(person.firstName); // John
 
 Under the hood, the equivalent of using the literal notation is creating a new object and setting properties on that object. So even though you’ve never really explicitly created objects with `new`, it’s been done for you.
 
-```
+```js
 const person = new Object();
 person.firstName = ‘Jane’;
 person.lastName = ‘Doe’;
@@ -49,7 +50,7 @@ console.log(person.firstName); // Jane
 ## Functions
 So what about functions? What happens when you don’t use the `new` operator on functions? Functions in JavaScript are also objects, they are instances of the `Function` object.
 
-```
+```js
 function myFunction () {};
 console.log(myFunction.constructor === Function); // true
 ```
@@ -60,7 +61,7 @@ A function is defined in MDN as “a set of statements that performs a task or c
 
 Unless a function has an explicit return, a default value is returned from the function. And here is where the `new` operator comes into play. The default return value of a function is undefined if the function is not a constructor function. A function is a constructor if it is called with the `new` operator. For a constructor function the default value is this. So for functions that are not called with the `new` operator. The statements of the function are executed and the explicit return value or undefined is returned. By using the `new` operator the function will return a newly created object which is bound to this.
 
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -90,7 +91,7 @@ function Person(firstName, lastName, age) {
 
 Back to our example of the `Person` constructor function, objects created with this function will first inherit from `Person.prototype`, then `Object.prototype` (and lastly `null`). When invoking a property on the object, JavaScript will walk this path to find the property. If it was not defined on the `Person` object, it would look at `Object`, and so on. This makes it easier for us to extend `Person` objects with new methods, which will apply to all instances of `Person`.
 
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
