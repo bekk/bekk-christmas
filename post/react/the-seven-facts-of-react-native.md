@@ -17,7 +17,7 @@ links:
 authors:
   - Caroline Odden
 ---
-I have worked with React Native for some years now, and have encountered one or two things that got me thinking “*huh, so that’s how it is*”. At my current project, we have developed an application that is developed in React Native. Therefore I have chosen some things that I think are interesting (or a little bit frustrating) to present to you for this first article of react.christmas 2020.
+I have worked with React Native for some years now, and have encountered one or two things that got me thinking “*huh, so that’s how it is*”. At my current project, we are developing an application in React Native. Therefore I have chosen some things that I think are interesting (or a little bit frustrating) to present to you for this first article of react.christmas 2020.
 
 ## Five years and still version 0.63
 
@@ -41,9 +41,9 @@ import { View, Text } from 'react-native'
 
 `View` is used to group your components, and structure them the way you like. In addition, React has made it mandatory to put all your strings inside a `Text` component. And we are not done yet! When creating an app with lots of information that goes outside the screen vertically, you need to wrap your components in a `ScrollView` to manage to scroll to the bottom. So a piece of advice from my experience: Always test your application with different screen sizes. I *may* have published an app perfect for iPhone X, where you were not able to see the bottom text for an iPhone 5...
 
-Let’s continue! You have an out-of-the box `Button` component, which look natively of iOS and Android, but you can always add styling to get the layout you want. And if you want to create your own *pressable* areas, you can use `TouchableOpacity` which responds to touches on components you wrap it with.
+Let’s continue! You have an out-of-the box `Button` component in the style of native iOS and Android, but you can always add styling to get the look you want. And if you want to create your own *pressable* areas, you can use `TouchableOpacity` which responds to touches on components you wrap it with.
 
-I will recommend you to check out the [common components documentation](https://reactnative.dev/docs/components-and-apis) for React Native if you want to know more!
+I recommend having a look at the [common components documentation](https://reactnative.dev/docs/components-and-apis) for React Native if you want to know more!
 
 ## StyleSheet.create()
 
@@ -127,9 +127,7 @@ This was because Facebook was eager to use HTML5 for iOS and Android. However, t
 
 ## Not used in the Messenger App
 
-As mentioned in the introduction, React Native is developed by Facebook. Earlier this year, Facebook announced that they would release the Messenger app, [written as native iOS and Android apps](https://engineering.fb.com/data-infrastructure/messenger/). So how is the future of this framework when even the creators won't use it to rewrite their own native app?
-
-Further on, AirBnb and Udacity said in 2018 they will no longer [be developing their applications in React Native](https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx). The main reasons for this decision was more or less the immaturity of React Native. 
+As mentioned in the introduction, React Native is developed by Facebook. Earlier this year, Facebook announced that they would release the Messenger app, [written as native iOS and Android apps](https://engineering.fb.com/data-infrastructure/messenger/). Further on, AirBnb and Udacity said in 2018 they will no longer [be developing their applications in React Native](https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx). The main reasons for this decision was more or less the immaturity of React Native. 
 
 There are several pros and cons with React Native. The easy setup and React-like syntax really gives it an advantage. But the differences between platforms (i.e. as I mentioned over with the accessibility) and the lack of some native components (i.e. push-notification and FaceId), it has a way to evolve. It will be interesting to follow this technology in the years to come!
 
