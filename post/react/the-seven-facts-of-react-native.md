@@ -2,11 +2,11 @@
 calendar: react
 post_year: 2020
 post_day: 1
-title: The Seven Facts of React Native
+title: Seven Things I Find Interesting with React Native
 image: https://images.unsplash.com/photo-1510151490593-aa277bc49f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80
 ingress: React Native is a React framework developed by Facebook to write code
-  for mobile applications. In this article I will share some facts I have
-  experienced over the years working with this technology.
+  for mobile applications. In this article I will share some things I found
+  interesting over the years working with this technology.
 links:
   - url: "https://reactnative.dev/docs/components-and-apis "
     title: Core Components and APIs
@@ -17,13 +17,11 @@ links:
 authors:
   - Caroline Odden
 ---
-I have worked with React Native for some years now, and have encountered one or two things that got me thinking “*huh, so that’s how it is*”. At my current project, we have developed an application that is 100 % developed in React Native. Therefore I have chosen some facts, or quirks if you want, that I think are funny (or and a little bit frustrating) to present to you for this first article of react.christmas 2020.
+I have worked with React Native for some years now, and have encountered one or two things that got me thinking “*huh, so that’s how it is*”. At my current project, we have developed an application that is developed in React Native. Therefore I have chosen some things that I think are interesting (or a little bit frustrating) to present to you for this first article of react.christmas 2020.
 
 ## Five years and still version 0.63
 
 React Native was released five years ago, in 2015, as a stable release. Today it is widely used in production by lots of both small and big companies, like [](https://wiredelta.com/10-most-popular-react-native-apps-of-2020/)[Facebook, Discord and Tesla](https://reactnative.dev/showcase). With over almost 10,000 pull requests, and nearly 20,000 closed issues on [Github](https://github.com/facebook/react-native), it has still not reached a major version following the [semver](https://semver.org/) convention. Per December 1st 2020, React Native is on version 0.63.3.
-
-According to [Semantic Versioning](https://semver.org/), you should bump the major version *“when you make incompatible API changes”*. And trust me, there have been some breaking changes…
 
 There have been some questions about when they will start using major version numbers, and they said earlier that they may bump to [version 1.0.0 when a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) is reached, but this has yet to be done. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html), which is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
@@ -53,7 +51,7 @@ Let’s talk about styles. Many of you may have a love/hate relationship with CS
 
 In React Native, you lose the concept of inheritance, because the styling for a component is declared in a `StyleSheet` object, and need to be added to each view.[](https://reactnative.dev/docs/style) The stylesheet object is [an abstraction of CSS stylesheet](https://reactnative.dev/docs/style) and has a little bit different syntax. For instance, instead of kebab-case you need to use camelCase to declare your styling. In addition, everything except numbers needs to be written as a string. Look at the example below!
 
-```
+```jsx
 import { StyleSheet } from 'react-native'
 
 <View style={styles.container}> // Adding your style to the View
@@ -86,14 +84,14 @@ For instance, when making your application accessible, not everything is equal f
 
 Fortunately, React Native gives you the possibility to select which code you want to apply for iOS or Android by using [Platform](https://reactnative.dev/docs/platform-specific-code). By using it you can apply the part of code you want to execute for the given platform. Look at the Hello World example below!
 
-```
+```javascript
 import { Platform } from 'react-native'
 
 const myFunction = () => {
     Platform.select({
-        ios: console.log('Hello iOS')
-        android: console.log('Hello Android')
-        default: console.log('Hey everyone else')
+        ios: console.log('Hello iOS'),
+        android: console.log('Hello Android'),
+        default: console.log('Hey everyone else'),
     })
 }
 ```
@@ -132,6 +130,8 @@ This was because Facebook was eager to use HTML5 for iOS and Android. However, t
 As mentioned in the introduction, React Native is developed by Facebook. Earlier this year, Facebook announced that they would release the Messenger app, [written as native iOS and Android apps](https://engineering.fb.com/data-infrastructure/messenger/). So how is the future of this framework when even the creators won't use it to rewrite their own native app?
 
 Further on, AirBnb and Udacity said in 2018 they will no longer [be developing their applications in React Native](https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx). The main reasons for this decision was more or less the immaturity of React Native. 
+
+There are several pros and cons about React Native. The easy setup and React-like syntax really gives it an advantage. But the differences between platforms (i.e. as i mentioned over with the accessibility) and the lack of some native components (i.e. push-notification and FaceId), it has a way to evolve. It will be interesting to follow this technology in the years to come!
 
 ## That was it!
 
