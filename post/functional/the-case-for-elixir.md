@@ -22,7 +22,7 @@ authors:
 
 First things first: Elixir is a concurrent functional language that runs on the Erlang VM. It is inspired by many different languages where Ruby and Erlang are most obvious ones based on the syntax.
 
-Elixir is a [strong, dynamically typed language](https://thinkingelixir.com/elixir-in-the-type-system-quadrant/). This puts it in the same category as Ruby and Python and it has optional functionality for compile time type checking as well. 
+Elixir is a [strong, dynamically typed language](https://thinkingelixir.com/elixir-in-the-type-system-quadrant/). This puts it in the same category as Ruby and Python and it has optional functionality for compile time type checking as well. Elixirs types are immutable, but variables can be reassigned/rebound. <sup>[^rebinding]</sup> This was a bit strange for me in that I got started with FP through Elm where there are no variables, just constants.
 
 Elixir inherits a lot its data structures and related syntax from Erlang which in many ways is its biggest influence. [Elixir Design Goals](https://elixir-lang.org/blog/2013/08/08/elixir-design-goals/) describes the relation to Erlang like this:
 
@@ -53,8 +53,7 @@ end
 ```
 
 Here we define a module with a function that simply writes "Hello, World!" to the console.
-
-Elixirs types are immutable, but variables can be reassigned/rebound. <sup>[^rebinding]</sup> This was a bit strange for me in that I got started with FP through Elm where there are no variables, just constants. 
+ 
 
 ## Killer applications
 
