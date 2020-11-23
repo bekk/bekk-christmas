@@ -1,4 +1,5 @@
 ---
 title: Martin Strand
-company: todo
+socialMediaLink: "@martinstrand"
+company: FHI
 ---
