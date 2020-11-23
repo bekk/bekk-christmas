@@ -3,6 +3,9 @@ calendar: kotlin
 post_year: 2020
 post_day: 16
 title: Destructuring
+links:
+  - url: https://kotlinlang.org/docs/reference/multi-declarations.html
+    title: Destructuring Declarations
 authors:
   - Matias Vinjevoll
 ---
