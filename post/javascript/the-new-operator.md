@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 21
 title: The new Operator
-image: https://unsplash.com/photos/RRh6wyEU_4Q
+image: https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd
 ingress: You probably came here to read about something cutting edge in
   JavaScript, but today we’re going to do a deep dive into one of the
   fundamental operators of JavaScript, `new`.
