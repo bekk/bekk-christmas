@@ -49,7 +49,7 @@ I recommend having a look at the [common components documentation](https://react
 
 Let’s talk about styles. Many of you may have a love/hate relationship with CSS. Sometimes inheritance may be a bit of a struggle, sometimes it is nice to not write the same styling all over again, time after time.
 
-In React Native, you lose the concept of inheritance, because the styling for a component is declared in a `StyleSheet` object, and need to be added to each view.[](https://reactnative.dev/docs/style) The stylesheet object is [an abstraction of CSS stylesheet](https://reactnative.dev/docs/style) and has a little bit different syntax. For instance, instead of kebab-case you need to use camelCase to declare your styling. In addition, everything except numbers needs to be written as a string. Look at the example below!
+In React Native, you lose the concept of inheritance, because the styling for a component is declared in a `StyleSheet` object, and need to be added to each view.[](https://reactnative.dev/docs/style) The stylesheet object is [an abstraction of CSS stylesheet](https://reactnative.dev/docs/style) and has a little bit different syntax. In React Native you use JavaScript to to style your components. For instance, instead of kebab-case you need to use camelCase to declare your styling. In addition, everything except numbers needs to be written as a string. Look at the example below!
 
 ```jsx
 import { StyleSheet } from 'react-native'
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({ // Creating the StyleSheet object
     container: {
         backgroundColor: 'blue',
         padding: 16,
-    }
+        position: 'absolute',
+    },
 })
 ```
 
@@ -111,9 +112,9 @@ const styles = StyleSheet.create({
             },
             android: {
                 marginBottom: 8,
-            }
-        })
-    }
+            },
+        }),
+    },
 })
 ```
 
