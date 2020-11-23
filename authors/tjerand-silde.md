@@ -1,4 +1,5 @@
 ---
 title: Tjerand Silde
-company: todo
+socialMediaLink: https://twitter.com/TjerandSilde
+company: NTNU
 ---
