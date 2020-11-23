@@ -57,7 +57,7 @@ console.log(myFunction.constructor === Function); // true
 
 Unlike the constructor of `Object` (`new Object`), calling the constructor of `Function` (`new Function`), is not the same as using function declarations (`function () {}`). You can read more to get a deeper understanding of the differences at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
 
-A function is defined in MDN as “a set of statements that performs a task or calculates a value”, a procedure. Furthermore to qualify as a function, the procedure should return an output which has some relationship to the input of the function.
+A function is defined in MDN as “a set of statements that performs a task or calculates a value”, also called a procedure. Furthermore to qualify as a function, the procedure should return an output which has some relationship to the input of the function.
 
 Unless a function has an explicit return, a default value is returned from the function. And here is where the `new` operator comes into play. The default return value of a function is `undefined` if the function is not a constructor function. A function is a constructor if it is called with the `new` operator. For a constructor function the default value is `this`. So for functions that are not called with the `new` operator. The statements of the function are executed and the explicit return value or `undefined` is returned. By using the `new` operator the function will return a newly created object which is bound to `this`.
 
