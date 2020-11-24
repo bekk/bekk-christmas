@@ -17,7 +17,8 @@ description: Over the years, I have noticed there is a small set of features I
   value more than others in programming languages. These features allow me to
   express myself in a concise and clear manner, makes my code more readable, and
   minimizes the amounts of errors I make. Read on to see which!
-authors: []
+authors:
+  - Bendik Solheim
 ---
 ## Expressive type system
 
