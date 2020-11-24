@@ -32,9 +32,9 @@ I remember the first time I enountered sum types. My first response was «but.. 
 
 ## First class functions
 
-I don’t even understand why this is subject to discussion anymore, but functions should be treated just like any other value [1] in a programming language. Returning functions and accepting functions as parameters is a fundamental feature to create abstractions and solve problems with composition. This just isn’t up for debate – I would take first class functions over any other feature any day of the week!
+I don’t even understand why this is subject to discussion anymore, but functions should be treated just like any other value [^1] in a programming language. Returning functions and accepting functions as parameters is a fundamental feature to create abstractions and solve problems with composition. This just isn’t up for debate – I would take first class functions over any other feature any day of the week!
 
-[1] – I use the term "value" loosely here. I don’t mean to debate value types, reference types, and pass by value or reference. Those are implementation details. The point is to see what advantages you get when a language treats simple values and functions the same. 
+[^1] – I use the term "value" loosely here. I don’t mean to debate value types, reference types, and pass by value or reference. Those are implementation details. The point is to see what advantages you get when a language treats simple values and functions the same. 
 
 ## Functional Programming
 
