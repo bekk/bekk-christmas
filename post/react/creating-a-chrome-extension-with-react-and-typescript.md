@@ -23,7 +23,7 @@ There are three main components of an extension; popup, content script and backg
 
 - **Popups** are the content that's shown when the extension's icon is pressed.
 - **Content script** is code, JavaScript or CSS, that's injected into the context of the current webpage.
-- **Background script** is JavaScript code that's run as a separate instance in the browser, and it's mostly used for listening to events and to handle browser-wide state.
+- **Background script** is JavaScript code that's run as a separate instance in the browser, and it's mostly used for listening to events and to handle a browser wide state.
 
 We are going to develop an extension that's utilizing these three types of components. The popup will be created with React and TypeScript and the content- and background script will be created with TypeScript. It's also possible to inject a website with React code through the content scripts, but we will not be doing that in our project.
 
@@ -34,7 +34,7 @@ There are several ways to initialize our React project, one of which is with `cr
 Create a project directory with the boilerplate by running the following command. This will create a directory named `snow-extension` and add the boilerplate.
 
 ```
-$ npx degit https://github.com/sivertschou/react-TypeScript-chrome-extension-boilerplate.git#christmas snow-extension
+$ npx degit https://github.com/sivertschou/react-typescript-chrome-extension-boilerplate.git#christmas snow-extension
 ```
 
 [`degit`](https://github.com/Rich-Harris/degit) is a tool for cloning a repository and removing the git files, which is useful when you want to base your project on some boilerplate code.
@@ -74,6 +74,8 @@ Let's have a look at our `manifest.json` file!
 `name`, `version`, and `manifest_version` are the only required fields in `manifest.json`. `manifest_version` should always be `2`, and the rest should be reasonable strings. We are going to create an extension that makes it snow in the browser, and we are going to name fields thereafter.
 
 ```json
+// public/manifest.json
+
 {
   "name": "Snow Extension",
   "description": "Chrome Extension for making it snow in your browser!",
@@ -85,6 +87,8 @@ Let's have a look at our `manifest.json` file!
 `icons` provides an icon-to-file mapping for Chrome that is used in various situations. These icons should be square to ensure correct displaying, and you should always provide at least an `x16`, `x48`, and `x128` icon. You can [read more about the icons here](https://developer.chrome.com/extensions/manifest/icons).
 
 ```json
+// public/manifest.json
+
   ...
   "icons": {
     "16": "icon16.png",
@@ -99,6 +103,8 @@ Let's have a look at our `manifest.json` file!
 `default_icon` is used as your extension's clickable icon to the right of the address bar, and `default_popup` is rendered when the icon is clicked. As we mentioned earlier, we will be mounting our React code to this popup.
 
 ```json
+// public/manifest.json
+
   ...
   "browser_action": {
     "default_icon": {
@@ -115,6 +121,8 @@ Let's have a look at our `manifest.json` file!
 Note that we have specified `background.js`, and not `background.ts`. This is because `background.ts` will be compiled to JavaScript code before it is packaged together with the rest of the build.
 
 ```json
+// public/manifest.json
+
   ...
   "background": {
     "scripts": [
@@ -128,6 +136,8 @@ Note that we have specified `background.js`, and not `background.ts`. This is be
 `content_scripts` lets us specify the scripts that should be able to access the given webpages, and their context. `matches` specifies which websites these scripts should have access to, and currently, this is set to every page. You can read more about these [Match Patterns here](https://developer.chrome.com/extensions/match_patterns). Similar to how we defined the background scripts, we define the JavaScript code to be injected in the by the `js` key. Note `content_scripts` is an array of objects, which means that we could inject different scripts based on the URL matches.
 
 ```json
+// public/manifest.json
+
   ...
   "content_scripts": [
     {
@@ -452,7 +462,7 @@ export default App;
 ```
 
 ```js
-// src/components/Button.tsx
+// src/components/Button/Button.tsx
 
 import * as React from "react";
 import "./Button.css";
@@ -498,7 +508,7 @@ export const Button = () => {
 Now, this button is only cosmetic, and the only thing it does is toggle between our local `snowing` state. Let's make it send a message to the background script! We will change the `onClick` function to make it send a message.
 
 ```js
-// src/components/Button.tsx
+// src/components/Button/Button.tsx
 
 const onClick = () => {
   setSnowing(!snowing);
@@ -513,7 +523,7 @@ To be able to see the background's print, we have to open its console. We can do
 Great! We can now communicate from the popup to the background. Since the popup's state is cleared every time it is closed, we should ask the background whether it is snowing or not. For this, we will define some types that will be used for all the communication.
 
 ```ts
-// types.ts
+// src/types.ts
 
 // Popup or content script requesting the current status
 interface SnowRequest {
@@ -548,11 +558,14 @@ const sendSnowStatus = (snowing: boolean) => {
 
 let snowing = false;
 
-// Get locally stored value, if undefined: update it as false
+// Get locally stored value
 chrome.storage.local.get("snowing", (res) => {
-  snowing = !res ? false : true;
+  if (res["snowing"]) {
+    snowing = true;
+  } else {
+    snowing = false;
+  }
 });
-chrome.storage.local.set({ snowing: snowing });
 
 chrome.runtime.onMessage.addListener((message: MessageType) => {
   switch (message.type) {
@@ -575,6 +588,8 @@ To make sure the popup is up to date, it will ask for the snow status when it is
 We have to specify our use of `chrome.storage` in `manifest.json`. We do that by specifying it in our `permission` array. There are several other parts of the Chrome API that requires permission specification, and you can [read more about these here](https://developer.chrome.com/extensions/declare_permissions).
 
 ```json
+// public/manifest.json
+
 {
   "name": "Snow Extension",
   "description": "Chrome Extension for making it snow in your browser!",
@@ -607,7 +622,7 @@ We have to specify our use of `chrome.storage` in `manifest.json`. We do that by
 ```
 
 ```js
-// src/components/Button.tsx
+// src/components/Button/Button.tsx
 
 import * as React from "react";
 import { MessageType } from "../../types";
@@ -722,11 +737,14 @@ const sendSnowStatus = (snowing: boolean) => {
 
 let snowing = false;
 
-// Get locally stored value, if undefined: update it as false
+// Get locally stored value
 chrome.storage.local.get("snowing", (res) => {
-  snowing = !res ? false : true;
+  if (res["snowing"]) {
+    snowing = true;
+  } else {
+    snowing = false;
+  }
 });
-chrome.storage.local.set({ snowing: snowing });
 
 chrome.runtime.onMessage.addListener((message: MessageType) => {
   switch (message.type) {
@@ -752,6 +770,6 @@ You should now be able to toggle the snow with the popup button! Remember that y
 
 This was only a quick introduction to how you can get started developing Chrome Extensions with React and TypeScript. Have a look at [https://developer.chrome.com/extensions](https://developer.chrome.com/extensions) for more information and samples.
 
-If you develop an extension of your own, you can of course also share it on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). You can actually also find this extension there as well! [TODO: LITTA LENKE TIL STORE-SIDEN]
+If you develop an extension of your own, you can of course also share it on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). You can actually [find this extension there as well!](https://chrome.google.com/webstore/detail/snow-extension/hngdnbnepjjamanhmkgolabelaaladjk)
 
-You can also find [the complete project on GitHub](https://github.com/sivertschou/snow-extension) ❄️
+You can also find [the complete project on GitHub](https://github.com/sivertschou/snow-extension). ❄️
