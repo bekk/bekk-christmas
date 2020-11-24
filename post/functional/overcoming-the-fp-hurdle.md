@@ -23,7 +23,7 @@ My second attempt, now even being firmly handheld by the once fiery co-student w
 
 >(...)
 
-That form is not very useful when we just want to bake some pie once in a while. It would be very useful if we wanted to become career bakers, or maybe even build a baking factory. That form of a pie recipe forces us to think hard about the pie and define exactly _what a pie_ is at any stage of the production(this is very zen-like). If we used a traditional imperative recipe like described earlier and tried to flesh out the pie-making details, we would probably focus on splitting the process into more and more granular tasks and it might deteriorate to irrelevant questions like "which hand do we use to add salt?".
+That form is not very useful when we only want to bake some pie once in a while. It would be very useful if we wanted to become career bakers, or maybe even build a baking factory. That form of a pie recipe forces us to think hard about the pie and define exactly _what a pie_ is at any stage of the production(this is very zen-like). If we used a traditional imperative recipe like described earlier and tried to flesh out the pie-making details, we would probably focus on splitting the process into more and more granular tasks and it might deteriorate to irrelevant questions like "which hand do we use to add salt?".
 
 ## Jargonitis
 
@@ -31,7 +31,7 @@ Another big reason is the wall of jargon mentioned earlier. Haskell for example,
 
 ## Accustomization
 
-Besides some of the paradigm specific issues outlined, I also feel some hindrance occurs at the personal level. At the time of my second attempt I had spent the last 3 years of my intellectual spare time learning to program, and I felt like I had at least started to gain a minimum level of mastery. Boy, how wrong was I... Being faced with FP again I was basically back to scratch, a complete noob. And even being fully aware of my relative inexperience one of my first attempts with FP in action was to use concurrent threads for a networking assignment at school. And while FP in many ways is very suited for concurrency, attempting it with no prior knowledge of syntax or concepts is an experience I wish on no one. Learning to walk before you run is an expression that had completely fallen out of my mind at the time. This is a pitfall I in retrospect have always tried to avoid, as in the wise words of Michael J. Jordan,
+Besides some of the paradigm specific issues outlined, I also feel some hindrance occurs at the personal level. At the time of my second attempt I had spent the last 3 years of my intellectual spare time learning to program, and I felt like I had at least started to gain a minimum level of mastery. Boy, how wrong was I... Being faced with FP again I was basically back to scratch, a complete noob. And even being fully aware of my relative inexperience one of my first attempts with FP in action was to use concurrent threads for a networking assignment at school. And while FP in many ways is very suited for concurrency, attempting it with no prior knowledge of syntax or concepts is an experience I would not wish for anyone. Learning to walk before you run is an expression that had completely fallen out of my mind at the time. This is a pitfall I in retrospect have always tried to avoid, as in the wise words of Michael J. Jordan,
 
 
 >You can practice shooting eight hours a day, but if your technique is wrong, then all you become is very good at shooting the wrong way. Get the fundamentals down and the level of everything you do will rise.
@@ -39,4 +39,6 @@ Besides some of the paradigm specific issues outlined, I also feel some hindranc
 
 Another part of the issue I had was that I had in many ways been indoctrinated in the OOP way of thinking. I already had biased ideas of how certain problems should be solved and would often bang my head against wall trying to solve issues the OOP way. This was a bad approach in hindsight. Instead of mapping my thought process to what I already _knew_, I should have followed the FP method without too much comparison. If you're like me think back to when you first learnt to program, you had no preconceived notion of how problems should be approached, you just did as you were told (metaphorically speaking). This blank slate approach let you freely digest the information without too much questioning.
 
-To summarize my message to you dear reader is that if I could FP to some degree, so can you! My shortened tips for your trip in the FP world would be wary and evade languages suffering of jargonitis, learn to walk before you run, to keep a blank slate and finally to be open to asking yourself what a pie is.
+
+
+To summarize my message to you dear reader is that if I could learn FP to some degree, so can you! My shortened tips for your trip in the FP world would be: evade and be wary of languages suffering of jargonitis, learn to walk before you run, to keep a blank slate and finally to be open to asking yourself what a pie is.
