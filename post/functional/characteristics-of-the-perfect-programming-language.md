@@ -38,7 +38,7 @@ I don’t even understand why this is subject to discussion anymore, but functio
 
 ## Functional Programming
 
-Functional programming taught me to value these features. Sure, you will find imperative languages with these features as well, but they never feel like a core feature of the language. Even Java comes with some sort of primitive type inference these days, but it mostly feels tacked onto the language, and not like some core part of it.
+Functional programming taught me to value these features. Sure, you will find imperative languages with these features as well, but they never feel like a core feature of the language. Even Java comes with some sort of primitive type inference these days, but it mostly feels tacked onto the language.
 
 With some notable exceptions (looking at you, LISP), these are core features in all functional programming languages I use. They make my day better, so I would think hard before adopting a language without them these days.
 
