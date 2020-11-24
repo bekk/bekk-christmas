@@ -31,7 +31,7 @@ Another big reason is the wall of jargon mentioned earlier. Haskell for example,
 
 ## Fundamentals
 
-Besides some of the paradigm specific issues outlined, I also feel some hindrance occurs at the personal level. At the time of my second attempt I had spent the last 3 years of my intellectual spare time learning to program, and I felt like I had at least started to gain a minimum level of mastery. Boy, how wrong was I... Being faced with FP again I was basically back to scratch, a complete noob. And even being fully aware of my relative inexperience one of my first attempts with FP in action was to use concurrent threads for a networking assignment at school. And while FP in many ways is very suited for concurrency, attempting it with no prior knowledge of syntax or concepts is an experience I would not wish for anyone. Learning to walk before you run is an expression that had completely vacated my mind at that point. This is a pitfall I in retrospect have always tried to avoid, as in the wise words of Michael J. Jordan,
+Besides some of the paradigm specific issues outlined, I also feel some hindrance occurs at the personal level. At the time of my second attempt I had spent the last 3 years of my intellectual spare time learning to program, and I felt like I had at least started to gain a minimum level of mastery. Boy, how wrong was I... Being faced with FP again I was basically back to scratch, a complete noob. Even being fully aware of my relative inexperience one of my first attempts with FP in action was to use concurrent threads for a networking assignment at school. While FP in many ways is very suited for concurrency, attempting it with no prior knowledge of syntax or concepts is an experience I would not wish for anyone. Learning to walk before you run is an expression that had completely vacated my mind at that point. This is a pitfall I in retrospect have always tried to avoid, as in the wise words of Michael J. Jordan,
 
 
 >You can practice shooting eight hours a day, but if your technique is wrong, then all you become is very good at shooting the wrong way. Get the fundamentals down and the level of everything you do will rise.
@@ -42,4 +42,4 @@ Another part of the issue I had was that I had in many ways been indoctrinated i
 
 
 
-To summarize my message to you dear reader is that if I could learn FP to some degree, so can you! My shortened tips for your trip in the FP world would be: evade and be wary of languages suffering of jargonitis, learn to walk before you run, to keep a blank slate and finally to be open to asking yourself what a pie is.
+Summarized my tips for your journey into the FP world are: evade or be wary of languages suffering of jargonitis, learn to walk before you run, to keep a blank slate and finally to be open to asking yourself what a pie is.
