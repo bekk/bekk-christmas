@@ -15,7 +15,7 @@ When I first started working, I was almost completely new to React. I had only a
 
 I had no idea what hooks were when I started out, and it didn't help that I couldn't tell the new and old React code from each other. But, with a guiding hand from my colleague, we jumped right into it and started pair-programming on smaller tasks such as “Add a new button” or “Create a new filter”. These tasks were easy to start with, because I could study similar code from other places in the application and try to replicate the logic. Along the way, my colleague and mentor explained concepts such as hooks and components. I also used the [React docs](https://reactjs.org/) actively to better understand the theoretical concepts I was introduced to and wrote down key takeaways from our solutions.
 
-Next, we began refactoring older React into modern React. This helped me understand how Hooks works, and how they are actually used. It was mind blowing to see how many lines of code that could now be replaced with a simple Hook. My experience with this approach was good. After spending some time on coding new functionality and at the same time trying to learn a new language, it was nice to focus more on syntax and understanding the different versions of React.
+Next, we began refactoring older React into modern React. This helped me understand how Hooks work, and how they are actually used. It was mind blowing to see how many lines of code that could now be replaced with a simple Hook. My experience with this approach was good. After spending some time on coding new functionality and at the same time trying to learn a new language, it was nice to focus more on syntax and understanding the different versions of React.
 
 ## Online courses, another approach?
 
