@@ -8,10 +8,6 @@ ingress: You probably came here to read about something cutting edge in
   JavaScript, but today we’re going to do a deep dive into one of the
   fundamental operators of JavaScript, `new`.
 links:
-  - title: Function - MDN
-    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
-  - title: Prototype Chain - MDN
-    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
   - url: https://eloquentjavascript.net/06_object.html
     title: Objects - Eloquent JavaScript
   - title: YDKJS
@@ -75,13 +71,15 @@ const jane = new Person(‘Jane’, ‘Doe’, 26);
 console.log(jane.firstName); // Jane
 ```
 
+It is important to note that this does not apply to arrow functions (`const fun = () => {}`). Arrow functions cannot be used as a constructor function and will yiled a `TypeError` when used in conjunction with `new`. One of the reasons is how arrow functions handle `this`, which will be bound to the scope where the arrow function is used. Therefore we cannot create new instances of arrow functions since the `new` operator will bind `this` of the function to the instance. You can read more about [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) at MDN.
+
 ## Prototypes
-The last thing we need to discuss are prototypes. JavaScript inheritance works by prototype chaining. I’m not going to reiterate all the properties of how proptypes and prototype chaining works. You can read more about it over at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+The last thing we need to discuss are prototypes. JavaScript inheritance works by prototype chaining. I’m not going to reiterate all the properties of how prototypes and prototype chaining works. You can read more about it over at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 
 In broad strokes an objects in JavaScript (almost) always inherits from the `Object.prototype`. 
 Objects created with "object initializer" or `new Object` is no exception. Neither are objects created using constructor functions. But unlike "object initializer" and `new Object`, the constructor functions links the prototype of the returned object to the constructor as it’s parent prototype. The created object still inherits from the `Object.prototype`, but not as it’s parent prototype.
 
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
