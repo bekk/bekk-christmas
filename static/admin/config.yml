@@ -9,6 +9,24 @@ collections:
       folder: post/javascript
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'javascript' }
           - {
@@ -58,6 +76,24 @@ collections:
       folder: post/react
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'react' }
           - {
@@ -107,6 +143,24 @@ collections:
       folder: post/kotlin
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'kotlin' }
           - {
@@ -156,6 +210,24 @@ collections:
       folder: post/opensource
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'opensource' }
           - {
@@ -205,6 +277,24 @@ collections:
       folder: post/functional
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'functional' }
           - {
@@ -254,6 +344,24 @@ collections:
       folder: post/java
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'java' }
           - {
@@ -303,6 +411,24 @@ collections:
       folder: post/ml
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'ml' }
           - {
@@ -352,6 +478,24 @@ collections:
       folder: post/product
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'product' }
           - {
@@ -401,6 +545,24 @@ collections:
       folder: post/security
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'security' }
           - {
@@ -450,6 +612,24 @@ collections:
       folder: post/thecloud
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'thecloud' }
           - {
@@ -499,6 +679,24 @@ collections:
       folder: post/ux
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'ux' }
           - {
@@ -548,6 +746,24 @@ collections:
       folder: post/css
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'css' }
           - {
@@ -597,6 +813,24 @@ collections:
       folder: post/talks
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'talks' }
           - {
@@ -646,6 +880,24 @@ collections:
       folder: post/dot-net
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'dot-net' }
           - {
@@ -695,6 +947,24 @@ collections:
       folder: post/elm
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'elm' }
           - {
@@ -744,6 +1014,24 @@ collections:
       folder: post/strategy
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      view_groups:
+          - label: Year
+            field: post_year
+            # groups items based on the value matched by the pattern
+            pattern: \d{4}
+      view_filters:
+          - label: '2020'
+            field: post_year
+            pattern: '2020'
+          - label: '2019'
+            field: post_year
+            pattern: '2019'
+          - label: '2018'
+            field: post_year
+            pattern: '2018'
+          - label: '2017'
+            field: post_year
+            pattern: '2017'
       fields:
           - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'strategy' }
           - {
