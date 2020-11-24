@@ -2,8 +2,8 @@
 calendar: kotlin
 post_year: 2020
 post_day: 19
-title: "WIP: Using the Bytecode Viewer and Decompiler plugins in IntelliJ to
-  lift the veil of Kotlin's magic"
+title: "WIP: Using the Bytecode Viewer and Decompiler tools in IntelliJ to lift
+  the veil of Kotlin's magic"
 image: ""
 ingress: IDE's commonly include a lot of useful tools that can make our lives as
   developers easier. Some are pure productivity tools to speed up our
