@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 6
+post_day: 7
 title: Overcoming the FP hurdle
 ingress: ""
 description: ""
