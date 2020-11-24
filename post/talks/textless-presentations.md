@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 6
 title: Textless Presentations
 image: https://images.unsplash.com/photo-1587731556938-38755b4803a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2714&q=80
-ingress: When creating a presentation it's good to have your own style, having
+ingress: When creating a presentation it's good to have your own style, adding
   your own touch. Over the years creating different presentations for
   conferences or for demo, I have developed my own approach when creating
   presentation slides. I want to present this for you, and I hope you like it!
@@ -16,19 +16,17 @@ There are several ways to design your slides when creating a presentation. I.e d
 
 Disclaimer: This is my point of view regarding. I'm not saying that other ways of creating presentations is wrong, but rather they way I prefer when making a presentation.
 
-## Remove Text-Heavy Slides
+## Remove Wall of Text
 
 I agree that remembering what to say in a long presentation is hard, for instance if there are a technical talk and you need to have all your facts right. However, by removing the wall of text, you will free yourself from the screen and you are able to focus on the listeners instead.
 
 With a slide full of text you are making it harder for the listener to focus. It's hard to both read the slide while trying to listen to everything the speaker is saying. It's also less interesting when the speaker is copying word-for-word the content of each slide.
 
-![Example text](assets/screenshot-2020-11-24-at-17.25.29.png "Example of wall-of-text")
-
 If you remove the huge blocks of text from the slides, it's easier for the audience to keep up with what you are about to say. 
 
-## Use Informative Pictures/Illustrations
+## Use Informative Pictures and Illustrations
 
-I find it more successful to use pictures or illustration in my presentation to catch the attention of the listeners. Can you use a screenshot or illustrate the things you want to explain? 
+I find it more successful to use pictures or illustration in my presentation to catch the attention of the listeners. Can you use a screenshot or illustrate the things you want to explain? What about videos or gifs?
 
 The best part about doing it this way is that your presentation will be more fluent. You are not reading from a manuscript, and you wont throw yourself off guard if you are forgetting an insignificant sentence. When you are not reading from a wall of text, you are able to look out at the people listening to what you are saying. 
 
@@ -52,4 +50,4 @@ It requires that you have time to practice on your presentation multiple times, 
 
 Removing the wall of text in your presentation, enriching the slides with illustrations and pictures, and using every slide change as a reminder of what you are going to talk about. This way you have created your own textless presentation, which are helping you become more free of your presentation notes. 
 
-Hope you liked my guideline for Textless Presentations!
+This was a little introduction to how I make my presentations. Hope you liked it!
