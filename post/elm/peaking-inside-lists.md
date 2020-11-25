@@ -84,4 +84,4 @@ view somethings =
 
 Doesn't this look way better?
 
-There are many more things you can do with pattern matching on lists, which we don't have time to get into today. But I suggest that you experiment to see what is possible! You could for instance get access to multiple elements (`first :: second :: rest`), reverse the list (with `List.reverse`) and get access to the elements from the back. The possibilities aren't endless, but there are at least a long list of them.
+There are many more things you can do with pattern matching on lists, which we don't have time to get into today. But I suggest that you experiment to see what is possible! You could for instance get access to multiple elements (`first :: second :: rest`), or reverse the list (with `List.reverse`) and get access to the elements from the back. The possibilities aren't quite endless, but there are at least a long list of them.
