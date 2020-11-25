@@ -17,7 +17,7 @@ links:
   - url: https://create-react-app.dev/docs/available-scripts/
     title: Create react app script documentation
   - url: https://dev.to/nikhilkumaran/don-t-use-create-react-app-how-you-can-set-up-your-own-reactjs-boilerplate-43l0
-    title: Alternative to CRA and some interesting discussion
+    title: Alternatives to CRA and some interesting discussion
 authors:
   - Joakim Gyllenskepp
 ---
