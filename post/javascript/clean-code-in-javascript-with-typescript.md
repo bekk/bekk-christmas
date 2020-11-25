@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2020
 post_day: 6
-title: Clean Code in JavaScript with TypeScript and Automatic Type Generation
+title: Clean Code™ in JavaScript with TypeScript and Automatic Type Generation
 ingress: Even today, many people shy away from JavaScript because it is seen as
   unreliable or unpredictable. Without strong typing and compiling, unexpected
   problems can arise at runtime that nobody will see until it gets uncovered as
