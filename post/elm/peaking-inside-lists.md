@@ -44,14 +44,14 @@ Before we get to the solution, let's take a short detour through list making. In
 
 ```elm
 1 :: [ 2, 3 ]
--- Results in: [1, 2, 3]
+-- Results in: [ 1, 2, 3 ]
 
 1 :: []
 -- Results in: [ 1 ]
 
 a = [ 2, 3 ]
 1 :: a
--- Results in: [1, 2, 3]
+-- Results in: [ 1, 2, 3 ]
 ```
 
 Now, the `::` operator is used for creating lists, but it can also be used to pattern match on lists in case-statements! Let's take a look at an example:
