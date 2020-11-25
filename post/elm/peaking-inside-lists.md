@@ -40,7 +40,7 @@ Wouldn't it be nice if we could get access to the elements inside the list _at t
 
 ## Pattern Matching on Lists
 
-Before we get to the solution, we will take a short detour through list making. In Elm, we can create lists in multiple ways. We can use square brackets to create them: `[ 1, 2, 3 ]`. We can use functions, like `List.singleton 1` (which results in the list `[ 1 ]`). We can also use the [`::` operator](https://package.elm-lang.org/packages/elm/core/latest/List#::). The `::` operator works by adding an element to the start of a list, like this:
+Before we get to the solution, let's take a short detour through list making. In Elm, we can create lists in multiple ways. We can use square brackets to create them: `[ 1, 2, 3 ]`. We can use functions, like `List.singleton 1` (which results in the list `[ 1 ]`). We can also use the [`::` operator](https://package.elm-lang.org/packages/elm/core/latest/List#::). The `::` operator works by adding an element to the start of a list, like this:
 
 ```elm
 1 :: [ 2, 3 ]
