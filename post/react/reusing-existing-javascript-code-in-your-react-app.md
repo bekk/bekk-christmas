@@ -3,7 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 14
 title: Reusing existing JavaScript-code in your React app
-image: https://unsplash.com/photos/EwaV3HjwmUo
+image: https://images.unsplash.com/photo-1540303795566-d6d68e274b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80
 ingress: WIP
 description: React
 authors:
