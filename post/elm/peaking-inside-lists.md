@@ -3,11 +3,13 @@ calendar: elm
 post_year: 2020
 post_day: 8
 title: Peaking Inside Lists
+ingress: Working with lists in Elm is often quite nice, but sometimes it can
+  feel a bit difficult to get a sense of what is inside a list. In this article
+  we will look at a techinque that allows us to get access to elements inside a
+  list.
 authors:
   - Aksel Wester
 ---
-Working with lists in Elm is often quite nice, but sometimes it can feel a bit difficult to get a sense of what is inside a list. In this article we will look at a techinque that allows us to get access to elements inside a list.
-
 We will start by looking at a somewhat tricky example. Let's say we have a list of somethings in our app, that we want to display. If there are multiple somethings inside the list, we would like to show all the elements in their minimized form. If there is only one something in the list, we would like to show a maximized view of that something, since showing a list with only one element is a waste in that case. And lastly, if the list is empty, we would like to display a message saying that the list is empty.
 
 To meet those requirements, we would have to write something like this:
