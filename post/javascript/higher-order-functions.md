@@ -5,12 +5,12 @@ post_day: 14
 title: Higher-order functions in JavaScript
 ingress: >-
   If you are well-versed in the JavasScript-universe, you probably know that
-  functions are also objects in JavaScript. This means that everything you can
-  do with regular objects and values, you can do with functions as well. You can
-  pass them as parameters to other functions, declare them as variables or pass
-  them around as you’d like. Since functions can be passed as parameters or
-  returned as an output from another function, this has enabled *higher-order
-  functions* to be built into the language.
+  functions are also objects in JavaScript. Everything you can do with regular
+  objects and values, you can do with functions as well. You can pass them as
+  parameters to other functions, declare them as variables or pass them around
+  as you’d like. Since functions can be passed as parameters or returned as an
+  output from another function, this has enabled *higher-order functions* to be
+  built into the language.
 
 
   In this article I will demonstrate how higher-order functions have allowed me to write more readable, maintainable and versatile code with fewer bugs, and how it coincidentally completely removed the need to write for-loops in my code!
