@@ -17,8 +17,7 @@ links:
     title: What is a Zero Trust Architecture (Palo Alto Networks)
 authors: []
 ---
-
-I found the most reliable source of information on Zero Trust to be [Zero Trust Networks by Evan Gilman, Doug Barth](https://www.oreilly.com/library/view/zero-trust-networks/9781491962183/ch01.html). The first chapter in this book gives a great introduction to Zero Trust networks without muddling the content by dragging products into the mix. The authors define a Zero Trust network as a network built on five fundamental assertions:
+In [Zero Trust Networks by Evan Gilman, Doug Barth](https://www.oreilly.com/library/view/zero-trust-networks/9781491962183/ch01.html), a Zero Trust network is defined as as a network built on five fundamental assertions:
 
 1. The network is always assumed to be hostile
 2. External and internal threats exist on the network at all times
