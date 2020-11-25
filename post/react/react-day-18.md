@@ -25,44 +25,27 @@ authors:
 
 After running `create-react-app` your root folder will look something like this:
 
-- Root
-  - `node_modules/`
-  - `public/`
-  - `src/`
-  - `.gitignore`
-  - `package.json`
-  - `README.md`
-  - `yarn.lock`.
+* Root
 
-## public
+  * `node_modules/`
+  * `public/`
+  * `src/`
+  * `package.json`
+  * `yarn.lock`
+  * `README.md`
+  * `.gitignore`
 
-This folder contains files that we want the user to be able to directly access in the web browser, for example `robots.txt` that is used by search engine crawlers, and `index.html` which React will mount itself to.
+You’re probably familiar with `node_modules`, where the code for all dependencies and peer dependencies of the project are stored.
 
-## src
+This `public` folder contains files that we want the user to be able to directly access in the web browser, for example `robots.txt` that is used by search engine crawlers, and `index.html` which React will mount itself to.
 
-In the source folder we find the initial React code, css-files, Jest test-files, a logo, etc.
+In the `src/` folder we find our React code, css-files, Jest test-files, a logo, etc.
 
-## node_modules
+`package.json` contains some scripts, all of the dependencies of a project, and some eslint config and a browser-list. As of CRA version 4 we can find the following dependencies: `@testing-library`, `react`, `react-dom`, `web-vitals`, and last but not least the `react-scripts` package which contains scripts and configurations used by CRA. There are also four scripts: `start`, `build`, `test`, and `eject`. We can see that all of these scripts are dependent on `react-scripts` which we found in the dependencies. 
 
-You’re probably familiar with node modules, this folder contains the code of all the dependencies and peer dependencies that the project requires to run, which are specified in `package.json`.
+Finally we have the `yarn.lock/package-lock.json`, `README.md`, and `.gitignore` which aren't all that unique to CRA.
 
-## package.json
-
-In `package.json` you can find all of the dependencies of a project, some scripts that you can run
-
-Dependencies: In this version of CRA we can find 3 dependencies starting with `@testing-library` which are used for testing. We also have React itself in the packages `react` and `react-dom`. There is the `web-vitals ` package used to measure the performance of the website. Finally we have the `react-scripts` package which contains scripts and configuration used by CRA.
-
-Scripts: In a fresh CRA project we can find the four scripts `start`, `build`, `test`, and `eject`. We can see that all of these scripts are dependent on `react-scripts` which we found in the dependencies.
-
-We also have `eslint-config` and `browser-list`.
-
-## Other files
-
-`.gitignore`, `README.md`, and `yarn.lock`/`package-lock.json`.
-
-# typescript
-
-If you use the CRA typescript template you will see some extra dependencies in `package.json`, typescript itself and some @types-dependencies that add ts support to packages without it. here will also be a `tsconfig.json` in root, as well as `react-app-env.d.ts` in the `src`-folder which will also be filled with React written in Typescript instead of Javascript.
+If you use the typescript template for CRA, `package.json` will additionaly contain the dependencies `typescript` and some `@types`-dependencies that add ts support to packages that doesn't support typescript out of the box. You will also find `tsconfig.json`, `src/react-app-env.d.ts`, and all the code will be written in Typescript.
 
 # So what happens if you eject the app?
 
