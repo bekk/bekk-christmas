@@ -20,7 +20,7 @@ person = ("Arnie", 23) : ( String, number ) -- A 2-Tuple
 (12, 24, 18) : ( number, number1, number2 ) -- A 3-Tuple or Triple(t)
 ```
 
-Given a tuple, `Tuple.first` and `Tuple.second` extract the respective values. 
+The core module `Tuple` has helper functions for working with 2-tuples. E.g. `Tuple.first` and `Tuple.second` extract the respective values. 
 
 ```elm
 Tuple.first person   -- 23
@@ -46,7 +46,7 @@ canDrive ageAndLicenseStatus =
     "Not allowed to drive"
 ```
 
-Using pattern matching in the function declaration improves the wordiness of the above code.
+Pattern matching the received tuple debloats the code considerably.
 
 ```elm
 canDrive: (Bool, Bool) -> String
