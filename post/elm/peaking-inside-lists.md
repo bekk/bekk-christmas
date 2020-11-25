@@ -34,7 +34,7 @@ view somethings =
         viewMinimizedSomethings somethings
 ```
 
-Now, this function is _fine_, But it could be a lot simpler! The main problem is in the case where we have only one something. When we have entered the first branch of the if-statement, we _know_ that there is exactly one element in the list, but we still have to use `List.first` to get access to that element. And since the compiler doesn't know that there is a first element in the list, we still have to account for the `Nothing`-case.
+Now, this function is _fine_. But it could be a lot simpler! The main problem is in the case where we have only one something. When we have entered the first branch of the if-statement, we _know_ that there is exactly one element in the list, but we still have to use `List.first` to get access to that element. And since the compiler doesn't know that there is a first element in the list, we still have to account for the `Nothing`-case.
 
 Wouldn't it be nice if we could get access to the elements inside the list _at the same time_ as we got information about the structure of the list? Well sure, and there is actually a way to do this in Elm.
 
