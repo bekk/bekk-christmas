@@ -12,7 +12,7 @@ authors:
 ---
 We will start by looking at a somewhat finicky example. Let's say we have a list of somethings in our app, that we want to display. If there are multiple somethings in the list, we would like to show all the elements in their minimized form. If there is only one something in the list, we would like to show a maximized view of that something, since showing a list with only one element is a waste in that case. And lastly, if the list is empty, we would like to display a message saying that the list is empty.
 
-To meet those requirements, we would have to write something like this:
+To meet those requirements, we could write something like this:
 
 ```elm
 view : List Something -> Html a
