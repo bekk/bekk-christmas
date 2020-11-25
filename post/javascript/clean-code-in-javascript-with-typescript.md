@@ -2,14 +2,8 @@
 calendar: javascript
 post_year: 2020
 post_day: 6
-title: Clean Code in JavaScript with TypeScript
-ingress: >-
-  
-
-  When I started a career in web development in 2011, JavaScript was in its comeback phase. There were still people who disabled JS in their browsers. When we wanted to do dynamic frontend work we relied upon frameworks like Razor as much as we could and did the lion's share of processing serverside. After all, people's home computers are slow and we should use our servers' processing power where possible, right?
-
-
-  A few years down the line, JavaScript started getting more traction. We had seen that you could do some neat things with it, and when you used jQuery it didn't seem so complicated. Whole frontend frameworks like Knockout, Backbone and Angular were becoming popular, but was shifting to processing in the front end a good idea? After all, JavaScript is still the wild west. Anything goes. A variable can be a bool one second, a string the next, then an integer (or, just a number, we don't even discriminate).
+title: Clean Code in JavaScript with TypeScript and Automatic Type Generation
+ingress: "\n\n"
 description: javascript typescript clean code nswag type safe
 links:
   - url: https://www.typescriptlang.org/docs/
@@ -19,6 +13,9 @@ links:
 authors:
   - Fred Heggenes
 ---
+When I started a career in web development in 2011, JavaScript was in its comeback phase. There were still people who disabled JS in their browsers. When we wanted to do dynamic frontend work we relied upon frameworks like Razor as much as we could and did the lion's share of processing serverside. After all, people's home computers are slow and we should use our servers' processing power where possible, right?
+
+A few years down the line, JavaScript started getting more traction. We had seen that you could do some neat things with it, and when you used jQuery it didn't seem so complicated. Whole frontend frameworks like Knockout, Backbone and Angular were becoming popular, but was shifting to processing in the front end a good idea? After all, JavaScript is still the wild west. Anything goes. A variable can be a bool one second, a string the next, then an integer (or, just a number, we don't even discriminate).
 
 A cowboy language such as this surely cannot be used by an enterprise that prides itself on writing Clean Code™. After all, allowing something like this to run: 
 ```javascript
@@ -52,50 +49,7 @@ capitalize(42)
 
 will not work, and our compiler complains. In a decent IDE, you'd know this call won't work before you even try to run a compiler. It might even offer constructive criticism.
 
-In addition to primitive types, Typescript also supports custom types and interfaces, enums, arrays and tuples:
-
-### Basics
-
-```typescript
-const a: number = 1;
-const b: number = 1.5;
- 
-const c: string = 'hello';
- 
-const f: boolean = true;
-const g: boolean = false;
-```
-
-### Arrays and Tuples
-
-```typescript 
-const myArray: number[] = [1, 2, 3];
- 
-const myTuple: [number, number] = [800, 600];
-```
-
-### Types and Interfaces
-
-```typescript
-type Person = {
-  name: string,
-  age: number
-};
- 
- interface Animal = {
-     legs: number;
-     carnivore: boolean;
- }
- ```
-
-You can also do stuff like this with generic types:
-
-```typescript
-
-function identity<T>(t: T): T {
-    return t;
-}
-```
+In addition to primitive types, Typescript also supports custom types and interfaces, enums, arrays and tuples.
 
 
 >But I have large chunks of json coming from API endpoints that I have written in C#, do I have to create typed interfaces for these objects on my frontend now? That seems like a huge waste of time.
