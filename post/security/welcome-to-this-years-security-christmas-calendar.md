@@ -11,12 +11,11 @@ ingress: We are really excited to present this year's calendar. We hope that you
 authors:
   - Robert Larsen
 ---
-We start by presenting a list of a few reminders to you as a developer, to help ensure that your applications stay as secure as possible. The tips in the list are not, new ground-breaking stuff, 
-and hopefully you are familiar with many of them already. But, we hope that they can serve as a reminder for you, and that you can spend some time checking them out in the light of your own projects!
+We start by presenting a list of a few reminders and tips to you as a developer, to help ensure that your applications stay as secure as possible. This is not new, ground-breaking stuff, 
+and hopefully you are familiar with much of it already. But, we hope that they can serve as a reminder for you, and that you can spend some time checking them out in the light of your own projects!
 
-1. Get to know OWASP Top 10
-   OWASP Top 10 is a list of the most critical security risks for web applications. The last OWASP Top 10 came out in 2017, and OWASP is currently working on a 2020 edition. It is good habit to
-   every now and then take a look at your own projects and see how these risks are beeing adressed. Check out the OWASP Top 10 project website, https://owasp.org/www-project-top-ten/
+1. OWASP Top 10
+   OWASP Top 10 is a list of the most critical security risks for web applications. The last OWASP Top 10 came out in 2017, and OWASP is currently working on a 2020 edition. We encourage you to check out the OWASP Top 10 project website at <https://owasp.org/www-project-top-ten/>, and take a look at your own projects and see how these risks are being addressed. 
 2. Be creative
    The one that knows most about how your application is supposed to be used is you, the developer. While you develop and test it, you will most probably An attacker will have different mindset, and try to use it illogically and in ways that you
    might not have thought about. 
