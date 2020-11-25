@@ -4,15 +4,13 @@ post_year: 2020
 post_day: 8
 title: Create your first NPM package!
 image: https://images.unsplash.com/photo-1512909481869-0eaa1e9817ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
-ingress: >-
-  <!--StartFragment-->
-
-
-  NPM packages are used by most frontend developers, but only a few have attempted to create them. Do you want to be one of them? Then follow along!
-
-
-  <!--EndFragment-->
+ingress: NPM packages are used by most frontend developers, but only a few have attempted to create them. Do you want to be one of them? Then follow along!
 description: ""
+links:
+  - url: https://docs.npmjs.com/creating-node-js-modules
+    title: Creating Node.js modules
+  - title: The official NPM documentation
+    url: https://docs.npmjs.com/
 authors:
   - Niklas Molnes Hole
 ---
@@ -71,7 +69,9 @@ This is the last step:
 npm publish
 ```
 
-And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>), as well as adding it to your next project using `npm install <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility). Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
+And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>), as well as adding it to your next project using `npm install <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
+
+Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
 
 # `npm install <insert something here...>`
 
