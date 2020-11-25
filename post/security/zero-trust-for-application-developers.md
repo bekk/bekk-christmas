@@ -17,7 +17,6 @@ links:
     title: What is a Zero Trust Architecture (Palo Alto Networks)
 authors: []
 ---
-> There are no Zero Trust products. There are products that work well in Zero Trust environments and those that don't. — [Palo Alto Networks](https://www.paloaltonetworks.com/cyberpedia/what-is-a-zero-trust-architecture)
 
 I found the most reliable source of information on Zero Trust to be [Zero Trust Networks by Evan Gilman, Doug Barth](https://www.oreilly.com/library/view/zero-trust-networks/9781491962183/ch01.html). The first chapter in this book gives a great introduction to Zero Trust networks without muddling the content by dragging products into the mix. The authors define a Zero Trust network as a network built on five fundamental assertions:
 
@@ -37,5 +36,7 @@ Given that all hosts are regarded as Internet-facing, we need to ensure that all
 By delegating authentication and authorization to a supporting system (control plane), it is possible to enable centralized access auditing and policy enforcement based on selected criteria. This means that we don't need to create complex logic to verify devices and users in each application as it will be handled by the control plane. In a more practical sense, we should opt for federated identity combined with standardized authorization protocols like [OAuth 2.0](https://oauth.net/2/). In modern web applications, it may we worth looking into [JWT](https://jwt.io/) to represent claims securely.
 
 Regardless of which authorization method you choose, make sure that each client that is granted access will be given its own account. Never share credentials between services or users. One account per client makes it possible to remove access if one client is compromised, and makes it possible to trace traffic back to a single source when investigating an incident, or analyzing traffic in general.
+
+> There are no Zero Trust products. There are products that work well in Zero Trust environments and those that don't. — [Palo Alto Networks](https://www.paloaltonetworks.com/cyberpedia/what-is-a-zero-trust-architecture)
 
 That should cover the basics. If you would like to dive deeper into the subject, I highly recommend [Zero Trust Networks by Evan Gilman, Doug Barth](https://www.oreilly.com/library/view/zero-trust-networks/9781491962183/ch01.html).
