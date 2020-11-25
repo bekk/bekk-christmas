@@ -1,7 +1,7 @@
 ---
 calendar: react
 post_year: 2020
-post_day: 18
+post_day: 16
 title: "[UTKAST] Underneath Create React App"
 image: https://images.unsplash.com/photo-1484603738253-e5b73679e8cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
 ingress: Ever since I started coding, Create React App (CRA) has been my go-to
