@@ -11,16 +11,16 @@ We will start by looking at a somewhat tricky example. Let's say we have a list 
 To meet those requirements, we would have to write something like this:
 
 ```elm
-view: List Something -> Html a
+view : List Something -> Html a
 view somethings =
     if List.length somethings == 1 then
         case List.first somethings of
             Just first ->
-                 viewSomething first
+                viewSomething first
 
             Nothing ->
-                 -- This should never happen
-                 text ""
+                -- This should never happen
+                text ""
 
     else if List.length > 1 then
         viewMinimizedSomethings somethings
@@ -34,5 +34,19 @@ Now, this function is _fine_, But it could be a lot simpler! The main problem is
 
 Wouldn't it be nice if we could get access to the elements inside the list _at the same time_ as we got information about the structure of the list? Well sure, and there is actually a way to do this in Elm.
 
-## Pattern matching on lists
+## Pattern Matching on Lists
+
+Before we get to the solution, we will take a short detour through list making. In Elm, we can create lists in many different ways. We can use square brackets to create them: `[ 1, 2, 3 ]`. We can use functions, like `List.singleton 1` (which results in the list `[ 1 ]`). We can also use the [`::` operator](https://package.elm-lang.org/packages/elm/core/latest/List#::). The `::` operator works by adding an element to the start of a list, like this:
+
+```elm
+1 :: [ 2, 3 ]
+-- Results in: [1, 2, 3]
+
+1 :: []
+-- Results in: [ 1 ]
+
+a = [ 2, 3 ]
+1 :: a
+-- Results in: [1, 2, 3]
+```
 
