@@ -7,7 +7,7 @@ image: https://unsplash.com/photos/-KWTvrNiYOE/download?force=true&w=1920
 ingress: >
   Zero Trust is a security model where each component has its own perimeter.
   This is different from a traditional security model where all components
-  inside of a given perimeter is regarded as safe or trusted. It was introduced
+  inside of a given perimeter are regarded as safe or trusted. It was introduced
   as a reaction to the traditional network security model as a measure against
   lateral movement after a breach.
 links:
@@ -18,9 +18,6 @@ links:
 authors:
   - Stian Liknes
 ---
-
-Zero Trust is a security model where each component has its own perimeter. This is different from a traditional security model where all components inside of a given perimeter are regarded as safe or trusted. It was introduced as a reaction to the traditional network security model as a measure against lateral movement after a breach.
-
 In [Zero Trust Networks by Evan Gilman, Doug Barth](https://www.oreilly.com/library/view/zero-trust-networks/9781491962183/ch01.html), a Zero Trust network is defined as a network built on five fundamental assertions:
 
 1. The network is always assumed to be hostile
