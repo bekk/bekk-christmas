@@ -3,6 +3,8 @@ calendar: elm
 post_year: 2020
 post_day: 8
 title: Peaking Inside Lists
+authors:
+  - Aksel Wester
 ---
 Working with lists in Elm is often quite nice, but sometimes it can feel a bit difficult to get a sense of what is inside a list. In this article we will look at a techinque that allows us to get access to elements inside a list.
 
