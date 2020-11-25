@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 7
 title: Zero Trust for application developers
-image: https://unsplash.com/photos/-KWTvrNiYOE
+image: https://unsplash.com/photos/-KWTvrNiYOE/download?force=true&w=1920
 ingress: >
   Zero Trust is a security model where each component has its own perimeter.
   This is different from a traditional security model where all components
