@@ -7,7 +7,8 @@ image: https://source.unsplash.com/S0j-5wSN3YQ/2000x800
 links:
   - title: core/Tuple
     url: https://package.elm-lang.org/packages/elm/core/latest/Tuple
-authors: []
+authors:
+  - Jørgen Tu Sveli
 ---
 Tuples allow us to join values together into a single value. Elm, as of version 0.19, allows tuples of no more than 3 values. A function can receive a tuple as an argument or it can return one. The latter enables returning more than one value from a function. This requires more work in languages without tuples. 
 
