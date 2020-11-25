@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2020
 post_day: 4
-title: 5 big hacks of 2020
+title: Five big hacks of 2020
 image: https://cdn.pixabay.com/photo/2017/10/24/07/12/hacker-2883632_960_720.jpg
 ingress: "In todays article we are going to explore 5 big hacks that took place
   in 2020. First we'll cover two hacks that targeted Norwegian companies
