@@ -21,7 +21,7 @@ Given a tuple, `Tuple.first` and `Tuple.second` extract the respective values.
 Tuple.first person   -- 23
 ```
 
-The pattern of types of its member values constitute the tuple's type as a whole. Hence, a tuple of String and Int cannot serve as a tuple of Int and String.
+The pattern of types of its values make up the tuple's type as a whole. Hence, a tuple of String and Int cannot serve as a tuple of Int and String.
 
 ## Pattern matching tuples
 
@@ -63,4 +63,14 @@ canDrive (oldEnough, hasLicense) =
   -- ...
 ```
 
-After establishing a basic understanding of a concept, it may be rewarding to look at API source code related to that concept.
+After establishing a basic understanding of a concept, I find it rewarding to look at API source code related to that concept. We saw how we could use `Tuple.first` to extract the first value from a tuple. Here is its [source code](https://github.com/elm/core/blob/master/src/Tuple.elm).
+
+```elm
+first : (a, b) -> a
+first (x,_) =
+  x
+```
+
+Reading these type signatures can feel daunting at first. But let's apply what we know about tuples and how `first` works. Regarding the type annotation, `(a, b)` merely states that `first` takes a tuple of two values that might not be the same type. The return type is `a`, referring to the type of the first element of the incoming tuple. The type declaration is telling us: "I take a tuple of two values and return whatever type the tuple's first value had".
+
+In line 2, we see that `first` makes use of pattern matching, albeit with a twist. `first` only needs the first value. The second value need not be named, but must be matched using the placeholder `_`.
