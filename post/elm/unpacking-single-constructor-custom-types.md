@@ -77,7 +77,7 @@ bodyMassIndex weight height =
                     weightFloat / (heightFloat * heightFloat)
 ```
 
-At this point, you are probably thinking that this isn't worth it. Because that is one _ugly_ function. But don't worry, Elm has a neat trick for making this function _almost_ as simple as the first version, which had only `Float`s as arguments.
+At this point, you are probably thinking that this just isn't worth it. Because that is one _ugly_ function. But don't worry, Elm has a neat trick for making this function _almost_ as simple as the first version, which had only `Float`s as arguments.
 
 Similarly to the technique described in [yesterday's post](https://elm.christmas/2020/1), where Jørgen showed that we can pattern match on fields in a record _in the argument definition_ of a function, we can also do this with single-constructor custom types. The name of the constructor and the variable name you want to use is written inside parenthesis in the function definition, which makes the function almost identical to the first version of the function:
 
