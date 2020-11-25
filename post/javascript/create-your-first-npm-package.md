@@ -4,7 +4,8 @@ post_year: 2020
 post_day: 8
 title: Create your first NPM package!
 image: https://images.unsplash.com/photo-1512909481869-0eaa1e9817ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
-ingress: NPM packages are used by most frontend developers, but only a few have attempted to create them. Do you want to be one of them? Then follow along!
+ingress: NPM packages are used by most frontend developers, but only a few have
+  attempted to create them. Do you want to be one of them? Then follow along!
 description: ""
 links:
   - url: https://docs.npmjs.com/creating-node-js-modules
