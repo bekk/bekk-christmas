@@ -4,6 +4,10 @@ post_year: 2020
 post_day: 1
 title: Once, twice, three times a value
 image: https://source.unsplash.com/S0j-5wSN3YQ/2000x800
+links:
+  - title: core/Tuple
+    url: https://package.elm-lang.org/packages/elm/core/latest/Tuple
+authors: []
 ---
 Tuples allow us to join values together into a single value. Elm, as of version 0.19, allows tuples of no more than 3 values. A function can receive a tuple as an argument or it can return one. The latter enables returning more than one value from a function. This requires more work in languages without tuples. 
 
@@ -62,6 +66,8 @@ canDrive: DrivingRequirements -> String
 canDrive (oldEnough, hasLicense) =
   -- ...
 ```
+
+## A look at core/Tuple
 
 After establishing a basic understanding of a concept, I find it rewarding to look at API source code related to that concept. We saw how we could use `Tuple.first` to extract the first value from a tuple. Here is its [source code](https://github.com/elm/core/blob/master/src/Tuple.elm).
 
