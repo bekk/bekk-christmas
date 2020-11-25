@@ -15,6 +15,8 @@ We will start by looking at a somewhat finicky example. Let's say we have a list
 To meet those requirements, we would have to write something like this:
 
 ```elm
+view : List Something -> Html a
+view somethings =
     if List.length somethings == 1 then
         case List.first somethings of
             Just first ->
