@@ -25,8 +25,6 @@ Blablabla customization and other things
 
 First of all, this code is not in any package registry, so in order to have something to work with I simply put the git url into my package.json. Since the code is from a workshop, and I don’t intend to implement the algorithms *again* I choose the solution-branch.
 
- 
-
 ```
 "name": "dummy-app",
 "version": "0.1.0",
@@ -39,8 +37,6 @@ First of all, this code is not in any package registry, so in order to have some
   },
   ...
 ```
-
- 
 
 ### And so it begins..
 
@@ -80,7 +76,6 @@ const sharpen = require('./effects/sharpen');
 /*const editor = new Editor();...*/
 
 module.exports = [Editor, histogramequalization, medianfilter, invert, colorfilter, sharpen];
-
 ```
 
  Then we can just use these functions in our code:
@@ -116,7 +111,6 @@ export default class MyClassEditor extends React.Component {
         )
     }
 }
-
 ```
 
 And success! I get my own version of photoshop inside my React app!
