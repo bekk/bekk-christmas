@@ -58,8 +58,8 @@ Now, the `::` operator is used for creating lists, but it can also be used to pa
 
 ```elm
 case list of
-    firstElement :: rest ->
-        "There is at least one element in the list, and the first element is: " ++ firstElement
+    first :: rest ->
+        "There is at least one element in the list, and the first element is: " ++ first
     [] ->
         "The list is empty"
 ```
@@ -72,8 +72,8 @@ Let's use this technique to rewrite our `view` function from before:
 view : List Something -> Html a
 view somethings =
     case somethings of
-        first :: [] ->
-            viewSomething first
+        firstSomething :: [] ->
+            viewSomething firstSomething
 
         [] ->
             viewEmptyList
