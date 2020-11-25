@@ -15,7 +15,7 @@ person = ("Arnie", 23) : ( String, number ) -- A 2-Tuple
 (12, 24, 18) : ( number, number1, number2 ) -- A 3-Tuple or Triple(t)
 ```
 
-Given a tuple, `Tuple.first`, `Tuple.second` or `Tuple.third` extracts the respective values from the tuple.
+Given a tuple, `Tuple.first` and `Tuple.second` extract the respective values. 
 
 ```elm
 Tuple.first person   -- 23
@@ -62,3 +62,5 @@ canDrive: DrivingRequirements -> String
 canDrive (oldEnough, hasLicense) =
   -- ...
 ```
+
+After establishing a basic understanding of a concept, it may be rewarding to look at API source code related to that concept.
