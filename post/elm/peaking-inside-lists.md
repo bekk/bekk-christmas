@@ -64,7 +64,7 @@ case list of
         "The list is empty"
 ```
 
-As we can see from the example, pattern matching on lists give us information about the shape of the list _at the same time_ that we get access to the elements in the list!
+As we can see from the example, pattern matching on lists gives us information about the shape of the list _at the same time_ that we get access to the elements in the list!
 
 Let's use this technique to rewrite our `view` function from before:
 
