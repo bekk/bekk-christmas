@@ -19,7 +19,7 @@ view somethings =
                  viewSomething first
 
             Nothing ->
-                 -- This shouldn't never happen
+                 -- This should never happen
                  text ""
 
     else if List.length > 1 then
