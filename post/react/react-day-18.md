@@ -23,7 +23,16 @@ authors:
 ---
 # A fresh CRA project
 
-After running `create-react-app` your root folder will contain the folders `node_modules`, `public` and `src/`, as well as the files `.gitignore`, `package.json`, `README.md`, and `yarn.lock`.
+After running `create-react-app` your root folder will look something like this:
+
+- Root
+  - `node_modules/`
+  - `public/`
+  - `src/`
+  - `.gitignore`
+  - `package.json`
+  - `README.md`
+  - `yarn.lock`.
 
 ## public
 
