@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 4
-title: Hvorfor er riktig problemdefinisjon viktige for nyskaping?
+title: Hvorfor er riktig problemdefinisjon viktig for nyskaping?
 image: https://unsplash.com/photos/aYPtEknQmXE
 ingress: "*Du har kanskje hørt ordtaket «Love the problem, not the solution»?
   Virksomheter lever av å løse kundens problemer. Men det er ikke så enkelt som
