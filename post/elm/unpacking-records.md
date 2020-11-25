@@ -5,8 +5,8 @@ post_day: 2
 title: Unpacking Records
 image: https://source.unsplash.com/IkjROahgUoo/2000x800
 ingress: Records in Elm are quite like JavaScript objects. In ES6, destructuring
-  objects can produce compact and concise code. This article invites readers to
-  take a look at some techniques that Elm offers to that same end.
+  objects can produce compact and concise code. This article explores some
+  techniques that Elm offers to the same effect.
 links:
   - title: Pattern Matching Records @ Beginning Elm
     url: https://elmprogramming.com/pattern-matching.html#pattern-matching-records
@@ -26,13 +26,21 @@ type alias CartItem =
 cartItem = { unitPrice = 19, amount = 2 }
 
 calculateTotal : CartItem -> Int
-calculateTotal { unitPrice, amount } =
-    unitPrice * amount
+calculateTotal cartItem =
+    cartItem.unitPrice * cartItem.amount
 
 calculateTotal cartItem -- 38
 ```
 
-We now have shorthand access to the fields of the record. The calculation presents itself uncluttered. There might be cases where a record contains more fields than interest us. We can create shorthands for a subset of the fields while also retaining a reference to the whole of the record.
+By changing `calculateTotal`'s declaration somewhat, we extract shorthands for the values we are interested in. This declutters the calculation, only the important parts remain.
+
+```elm
+calculateTotal { unitPrice, amount } =
+    unitPrice * amount
+
+```
+
+There might be cases where a record contains more fields than interest us. We can create shorthands for a subset of the fields while also retaining a reference to the whole of the record.
 
 ```elm
 type alias CartItem = 
@@ -43,9 +51,8 @@ type alias CartItem =
 
 cartItem = { unitPrice = 19, amount = 2, description = "Washable, reusable face mask" }
 
-calculateTotal ({unitPrice, amount} as wholeItem) =
-    unitPrice * amount\
-        |> otherFunction wholeItem
+calculateTotal ({ unitPrice, amount } as wholeItem) =    
+    otherFunction wholeItem (unitPrice * amount)
 ```
 
 Here we unwrap `unitPrice` and `amount` to calculate the total, but keep a reference to the whole record. The `otherFunction` needs access to the rest of the record. It also receives the calculated total as an argument.
