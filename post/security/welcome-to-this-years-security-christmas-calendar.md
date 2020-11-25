@@ -2,15 +2,12 @@
 calendar: security
 post_year: 2020
 post_day: 1
-title: Welcome to this year's Security Christmas Calendar!
-ingress: >-
-  We are really excited to present this year's calendar. We hope that you will
-  enjoy reading it as much as we enjoyed writing it.Security as a topic is
+title: Welcome to the Security Christmas Calendar!
+ingress: We are really excited to present this year's calendar. We hope that you
+  will enjoy reading it as much as we enjoyed writing it. Security as a topic is
   hotter than ever. While we count down the days until Christmas Eve you will be
-  given new, original security content each day. We hope that you will learn
-  something,
-
-  get excited about something, get reminded about something, and of course enjoy the countdown together with us.
+  given new, original security content each day. We hope that you will enjoy the
+  countdown together with us!
 authors:
   - Robert Larsen
 ---
