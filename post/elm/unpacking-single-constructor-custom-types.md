@@ -65,7 +65,7 @@ viewBmu model ->
 
 If we did this, we would get a compilation error, saying that `bodyMassIndex` expects it's first argument to be a `Weight`, not a `Height`, which is what we wanted to achieve!
 
-The price of this refactor, however, is the added complexity to our `bodyMassIndex` function, since the most basic implementation of the new type signature would be something like the following:
+The price of this refactor, however, is the added complexity to our `bodyMassIndex` function, since the most basic implementation of the new type signature would look something like this:
 
 ```elm
 bodyMassIndex : Weight -> Height -> Float
