@@ -17,11 +17,11 @@ Spek Framework is a specification testing framework written in Kotlin. Being a *
 ```kotlin
 object SantasListFeature: Spek({
     Feature("SantasList") {
-	lateinit var santasList: SantasList
+        lateinit var santasList: SantasList
 
-	beforeEachTest {
+        beforeEachTest {
     	    santasList = SantasList()
-	}
+        }
 
         Scenario("adding children to Santa's list") {
             When("adding Peter") {
@@ -33,7 +33,7 @@ object SantasListFeature: Spek({
             }
 
             Then("it should contain Peter") {
-		santasList.contains(Child("Peter", NICE)) `should be` true
+                santasList.contains(Child("Peter", NICE)) `should be` true
             }
         }
     }
@@ -49,14 +49,14 @@ object ChristmasGreeterSpec: Spek({
 
         describe("greet") {
             it("returns a greeting for a given name") {
-		christmasGreeter.greet("Anna") `should equal` "Merry Christmas, Anna!"
+                christmasGreeter.greet("Anna") `should equal` "Merry Christmas, Anna!"
             }
         }
     }
 })
 ```
 
-However, Spek is fairly flexible, and you are free to write your tests in other styles as well. 
+Don't like the default styles? Spek also makes it possible to write your tests in different styles than the standard ones.
 
 An easy way of running blocks of code before and after test execution is essential in any testing framework. Spek provides the following options: 
 
