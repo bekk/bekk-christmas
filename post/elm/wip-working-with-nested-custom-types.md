@@ -76,21 +76,18 @@ imageImproved fruit =
 
 See how much easier this function is to scan? 🧐 This little "trick" is something people new to Elm often don't know about, which is a pity as it makes the code both easier to write and more readable. A win-win!
 
-Finally, Let's look at a real-life example of how this technique can help us make the `update`-function more readable. When writing Elm applications the custom type `Msg` is likely to become nested at some point. One example is when making a `Msg` for data received from an http request, let's call it `RagnhildsFavoriteFruitsReceived`. This `Msg` would typically contain the requested data wrapped in a `Result`, as the http request could fail. Using the technique described above, the `Result` can be unwrapped directly, by creating two branches for `RagnhildsFavoriteFruitsReceived` in the update function, like this: 
+Finally, let's look at a real-life example of how this technique can help us make the `update`-function more readable. When writing Elm applications the custom type `Msg` is likely to become nested at some point. One example is when making a `Msg` for data received from an http request, let's call it `RagnhildsFavoriteFruitsReceived`. This `Msg` would typically contain the requested data wrapped in a `Result`, as the http request could fail. Using the technique described above, the `Result` can be unwrapped directly, by creating two branches for `RagnhildsFavoriteFruitsReceived` in the update function, like this: 
 
 ```elm
 update msg model = 
     case msg of 
-        RagnhildsFavoriteFruitsReceived (Ok []) -> 
-            -- do something if the list of fruits is empty 🤔
-
         RagnhildsFavoriteFruitsReceived (Ok fruits) -> 
             -- do something meaningful with the fruits
 
         RagnhildsFavoriteFruitsReceived (Err err) -> 
             -- do something with the error
-
+        
         ...
 ```
 
-Notice the first branch with an empty list? This is a bonus-trick for even more explicit pattern matching. As the compiler scans the branches from top to bottom, if the received list of fruits is empty it will hit the first branch and do something special in this case. This illustrates that the described technique is not limited to custom types but can be used on all sorts of values. Try it out the next time you climb some trees!
+Try this out the next time you climb some trees!
