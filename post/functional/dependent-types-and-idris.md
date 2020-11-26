@@ -56,7 +56,7 @@ Of course, we could always add a wildcard-match at the bottom such as `_ -> ...`
 A very nice result of this is that if we add another variant to the union type (or discriminated union, tagged union, sum type, or any of the many other names it goes by), we know the code won't compile if we haven't covered all cases.
 For the most part, this is awesome.
 It makes refactoring code so much simpler as you can just recompile and follow the trail of errors after changing, adding or removing variants of union types.
-However, you often stumple upon situations where you as the programmer know that a situation can't happen, but the compiler insists that it could. Let's see an example:
+However, you often stumble upon situations where you as the programmer know that a situation can't happen, but the compiler insists that it could. Let's see an example:
 
 ```elm
 displayAges : List Int -> Html msg
