@@ -60,6 +60,7 @@ Now, the `::` operator is used for creating lists, but it can also be used to pa
 case list of
     first :: rest ->
         "There is at least one element in the list, and the first element is: " ++ first
+
     [] ->
         "The list is empty"
 ```
