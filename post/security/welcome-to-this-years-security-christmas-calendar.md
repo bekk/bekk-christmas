@@ -3,13 +3,16 @@ calendar: security
 post_year: 2020
 post_day: 1
 title: Welcome to the Security Christmas Calendar!
+image: https://unsplash.com/photos/QKo-op_gR9I
 ingress: We are really excited to present this year's calendar. We hope that you
   will enjoy reading it as much as we enjoyed writing it. Security as a topic is
   hotter than ever. While we count down the days until Christmas Eve you will be
   given new, original security content each day. We hope that you will enjoy the
   countdown together with us!
+description: security, christmas, calendar, owasp, zap, dependency, http,
+  headers, security.txt
 authors:
-  - Stian Liknes
+  - Robert Larsen
 ---
 We start by presenting a list of a few tips you as a developer can use to help your applications stay as secure as possible. This is not new, ground-breaking stuff, and hopefully you are familiar with much of it already. But, we hope that they can serve as a reminder for you, and that you can spend some time checking them out in the light of your own projects!
 
