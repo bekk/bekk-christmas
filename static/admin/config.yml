@@ -61,7 +61,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_react
       label: 'Post: React'
       folder: post/react
@@ -119,7 +119,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_kotlin
       label: 'Post: Kotlin'
       folder: post/kotlin
@@ -177,7 +177,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_opensource
       label: 'Post: Open source'
       folder: post/opensource
@@ -235,7 +235,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_functional
       label: 'Post: Functional'
       folder: post/functional
@@ -293,7 +293,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_java
       label: 'Post: Java'
       folder: post/java
@@ -351,7 +351,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_ml
       label: 'Post: Machine Learning'
       folder: post/ml
@@ -409,7 +409,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_product
       label: 'Post: Product'
       folder: post/product
@@ -467,7 +467,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_security
       label: 'Post: Security'
       folder: post/security
@@ -525,7 +525,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_thecloud
       label: 'Post: The Cloud'
       folder: post/thecloud
@@ -583,7 +583,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_ux
       label: 'Post: UX'
       folder: post/ux
@@ -641,7 +641,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_css
       label: 'Post: CSS'
       folder: post/css
@@ -699,7 +699,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_talks
       label: 'Post: Talks'
       folder: post/talks
@@ -757,7 +757,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_dot-net
       label: 'Post: .net'
       folder: post/dot-net
@@ -815,7 +815,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_elm
       label: 'Post: Elm'
       folder: post/elm
@@ -873,7 +873,7 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
     - name: post_strategy
       label: 'Post: Strategy'
       folder: post/strategy
@@ -931,4 +931,4 @@ collections:
           - name: authors
             label: 'Authors'
             widget: list
-            min: 1
+            field: { label: Name, name: name, widget: string }
