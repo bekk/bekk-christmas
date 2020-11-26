@@ -13,11 +13,12 @@ authors:
 1. Console output
 
    Pipelines usually print some kind of console output, which can be very useful when something goes wrong and we need to debug. However, this output might also be of great interest to a potential attacker. Especially if it happens to contain any credentials or other sensitive information. This can typically be passwords or tokens needed to access code repositories, image/package-registries and so on. Such secrets are often placed in some kind of vault, but that is worthless if the pipeline prints it anyway. Do also take into consideration who has access to read the output from the pipeline. 
-2. Check for outdated dependencies
+2. Check for vulnerable dependencies
 
+   Your pipeline should include some kind of mechanism to check for vulnerable dependencies. OWASP Dependency-Check is a tool for that purpose, and can be triggered by your pipeline. Snyk is also an alternative that is widely used. 
+3. Automated testing
 
-
-Run automated tests testing application security.
+   Run automated tests testing application security.
 
 Use specific versions of every dependency, including containers. Make sure the versions you use are not outdated and contain vulnerabilities. 
 
