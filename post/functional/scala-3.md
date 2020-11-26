@@ -3,6 +3,8 @@ calendar: functional
 post_year: 2020
 post_day: 9
 title: Scala 3
+authors:
+  - Per
 ---
 A new year is closing up and so is a new release of Scala. Release candidate 1
 is expected to be found some time this December!
