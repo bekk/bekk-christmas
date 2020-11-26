@@ -28,7 +28,7 @@ getName =
     firstName ++ " " ++ lastName
 ```
 
-This is fine, but let expressions are more powerful than just defining single constants! They can be used to destructure compound values such as tuples, records, and custom types. To illustrate this, we look at examples from the three previous articles of this series and modify them by moving the destructuring into a let expression. If you haven't read the previous articles you should take a look at them now to get some context.
+This is fine, but let expressions are more powerful than just defining single constants! 💪 They can be used to destructure compound values such as tuples, records, and custom types. To illustrate this, we look at examples from the three previous articles of this series and modify them by moving the destructuring into a let expression. If you haven't read the previous articles you should take a look at them now to get some context.
 
 ### Destructuring tuples (from [day 1](https://bekk.christmas/elm/2020/1))
 In the first article of this series we saw how to destructure tuples in the function arguments. Now, we use the same example to do the same destructuring in a let expression:
@@ -104,9 +104,10 @@ viewSituationMessage : Severity -> Html msg
 ...
 ```
 
-Here, we define three values which are all based on the state of `severity`. By using a tuple we can define all three values at the same time, using only one case expression. In comparison, look how repetitive this code is, where the same check is done for all three values:
+Here, we define three values which are all based on the state of `severity`. By using a tuple in the let expression, we can define all three values at the same time using only one case expression. In comparison, look how repetitive this code is, where the same check is done for all three values:
 
 ```elm
+...
 let 
     icon =
         case severity of
@@ -136,3 +137,5 @@ in
 ```
 
 Scenarios like this, where multiple values are based on the same condition, are where I use this kind of destructuring the most. Other than reducing duplicated code, one great thing about this pattern is that one can easily see what values are "connected" and that will change under the same conditions. Pretty neat, huh?
+
+P.S: The dog has nothing to do with the article. It's just here for cuteness 🐶
