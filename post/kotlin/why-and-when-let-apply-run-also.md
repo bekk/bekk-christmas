@@ -17,7 +17,7 @@ authors:
 The two things they all have in common is that they create a new scope where we can do stuff and that we can use them on all the types. If we look at the signature of the different methods some of them are more similar than others. 
 
 
-```
+```kotlin
 Generic      method    f input            f output  return
 ----------------------------------------------------------
 <T, R>       T.let     (block: (T)   ->   R):       R
@@ -35,7 +35,7 @@ So if we take a closer look at what the definition of let is we can see it uses 
 Let's take a look on what this means in practise: 
 
 
-```
+```kotlin
 data class User(val name: String, val age: Int)
 val user = User(“Santa”, 1749)
 
@@ -57,7 +57,7 @@ So the big question is when and what should you use? After working with Kotlin f
 ### Apply
 The example often used to highlight the power of `apply` is changing properties on a class, which assumes that we are working with mutable data. If we are talking about a Kotlin project with minimal Java code in the code base then that might be a code smell, but apply is useful when interfacing with the Java builder pattern modifying properties that typically are mutable.
 
-```
+```kotlin
 SoapRequestBuilder().apply {
         fieldA = "hello"
         fieldB = "world"
@@ -76,7 +76,7 @@ Also works very similar to apply, except that instead of having implicit access 
 
 A good example for when to use also is when you want to log some information while doing a chain of operations. 
 
-```
+```kotlin
 val averageAge = userService.getUsers()
         .also { log("Got ${it.size} users") }
         .map { it.age }
@@ -93,14 +93,14 @@ Here we see the beauty of the standard library. By using .also we avoid assignin
 
 But back to .apply, why shouldn’t we use apply in this context?
 
-```
+```kotlin
 val averageAge = userService.getUsers()
         .apply { log("Got $size users") }
 ```
 
 For this simple example using apply is totally fine, but once we start nesting expressions this will get pretty messy pretty fast.
 
-```
+```kotlin
 getConfig().apply {
     getUsers().apply { 
         log("Got $size, with $maxSize") 
@@ -121,7 +121,7 @@ Let is very useful and can be used for a range of things. You can use it for nul
 
 Normally you would use the elvis operator for null checks, but if your code needs to do something more than just returning a default value it might not be feasible to use the elvis operator. 
 
-```
+```kotlin
 val name = user.name ?: "Unknown"
 val name = user.name?.let {
      ... omitted code
@@ -135,7 +135,7 @@ val name = user.name?.let {
 
 Here .let allows us to nest code and do more than what you would normally be able to do when using just the elvis operator. Let is also great for when we want to chain operations.
 
-```
+```kotlin
 val ordersForBob = getUsers()
     .first { it.name == “Bob” }
     .let { user -> getOrders(user) }
@@ -143,7 +143,7 @@ val ordersForBob = getUsers()
 
 One thing to be weary of when using let is that creating new scopes aren’t always the way to go. Moving some logic to a function, instead of having everything in a single expression, may make the code easier to follow.
 
-```
+```kotlin
 user.name?.let { 
     ....
     when (...) { ... }
@@ -151,7 +151,7 @@ user.name?.let {
 ```
 vs 
 
-```
+```kotlin
 user.name ?: handleNullName(user)
 ```
 
@@ -159,7 +159,7 @@ user.name ?: handleNullName(user)
 ### Run
 Run is kind of weird. It’s a mix of both .apply and .let, it has the behaviour of let and the implicit nature of .apply. What this means is that we can use properties without explicitly referring to the object and the last line of the code block will be returned.
 
-```
+```kotlin
 val config = defaultConfig().apply {
    name = “bob”
 }
@@ -173,7 +173,7 @@ val server = defaultConfig().run {
 
 At first glance it looks pretty useful when the object you are working with both has some mutable variables you want to change and you also want to create something based on what you changed. Let's take a closer at another example:
 
-```
+```kotlin
 Server().run {
    port = 3000
    createServer()
@@ -184,14 +184,14 @@ Here we create an instance of Server, mutate the port variable and call the func
 
 **Better**
 
-```
+```kotlin
 val serverConfig = Server().apply { port = 3000 }
 serverConfig.createServer()
 ```
 
 **Best**
 
-```
+```kotlin
 Server().let {
     it.port = 3000
     it.createServer()
