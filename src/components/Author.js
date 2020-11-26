@@ -51,18 +51,8 @@ const AuthorInfo = (props) => {
                 {showReadingTime ? `A ${readingTime} minute read written by` : 'Created by'}
                 <br />
                 {authors.map((author, index) => (
-                    <Fragment key={author.title}>
-                        {author.socialMediaLink ? (
-                            <AuthorLink
-                                target="_blank"
-                                href={enhancedLinkGuesser(author.socialMediaLink)}
-                            >
-                                {author.title}
-                            </AuthorLink>
-                        ) : (
-                            <strong>{author.title}</strong>
-                        )}
-                        {author.company && author.company !== 'Bekk' && ` (${author.company})`}
+                    <Fragment key={author}>
+                        <strong>{author}</strong>
                         {index < authors.length - 2 && ', '}
                         {index === authors.length - 2 && ' and '}
                     </Fragment>

@@ -95,9 +95,8 @@ const Template = ({ data, pageContext }) => {
         links,
         post_day,
         post_year,
+        authors
     } = frontmatter;
-
-    const authors = frontmatter.authors && frontmatter.authors.map((author) => author.frontmatter);
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
     while (uniqueLinkImageNumbers.length < 4) {
@@ -205,13 +204,7 @@ export const aboutPageQuery = graphql`
                     title
                     url
                 }
-                authors {
-                    frontmatter {
-                        title
-                        socialMediaLink
-                        company
-                    }
-                }
+                authors
             }
         }
     }

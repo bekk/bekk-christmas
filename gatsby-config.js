@@ -27,12 +27,6 @@ module.exports = {
     siteMetadata: getMetadataForSite(envCalendar),
     plugins: [
         ...(isPreview ? [`gatsby-plugin-netlify-cms`] : []),
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/authors`,
-            },
-        },
         ...calendarPlugins,
         {
             resolve: `gatsby-transformer-remark`,
@@ -84,7 +78,4 @@ module.exports = {
             },
         },
     ],
-    mapping: {
-        'MarkdownRemark.frontmatter.authors': 'MarkdownRemark.frontmatter.title',
-    },
 };
