@@ -3,6 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 9
 title: Hurry, curry!
+image: https://images.unsplash.com/photo-1565280654386-36c3ea205191?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 ingress: Today we're going to take a closer look at an interesting property of
   Elm called currying. We will only explain the principle today, then spend the
   next two days seeing how it can be useful in practise.
