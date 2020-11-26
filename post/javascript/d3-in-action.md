@@ -8,7 +8,7 @@ ingress: "[D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript
     data to life using HTML, SVGs and CSS. You can make everything from static
     graphs to interactive articles."
 authors:
-    - Svein Petter Gjøb
+    - Svein Petter Gjøby
 ---
 
 D3.js has been around for a long time, it was initially released in 2011, and has gained a lot of traction during these years. Nowadays, it is the de facto standard of data visualization and has a large community. Just take a look at this [list of examples](https://github.com/d3/d3/wiki/Gallery).
