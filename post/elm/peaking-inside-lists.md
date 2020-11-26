@@ -73,8 +73,8 @@ Let's use this technique to rewrite our `view` function from before:
 view : List Something -> Html a
 view somethings =
     case somethings of
-        firstSomething :: [] ->
-            viewSomething firstSomething
+        onlySomething :: [] ->
+            viewSomething onlySomething
 
         [] ->
             viewEmptyList
