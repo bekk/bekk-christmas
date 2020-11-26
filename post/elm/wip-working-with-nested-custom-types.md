@@ -74,20 +74,4 @@ imageImproved fruit =
             "lime.png"
 ```
 
-See how much easier this function is to scan? 🧐 This little "trick" is something people new to Elm often don't know about, which is a pity as it makes the code both easier to write and more readable. A win-win!
-
-Finally, let's look at a real-life example of how this technique can help us make the `update`-function more readable. When writing Elm applications the custom type `Msg` is likely to become nested at some point. One example is when making a `Msg` for data received from an http request, let's call it `RagnhildsFavoriteFruitsReceived`. This `Msg` would typically contain the requested data wrapped in a `Result`, as the http request could fail. As described above, the `Result` can be unwrapped directly by creating two branches for `RagnhildsFavoriteFruitsReceived` in the update function, like this: 
-
-```elm
-update msg model = 
-    case msg of 
-        RagnhildsFavoriteFruitsReceived (Ok fruits) -> 
-            -- do something meaningful with the fruits
-
-        RagnhildsFavoriteFruitsReceived (Err err) -> 
-            -- do something with the error
-        
-        ...
-```
-
-Try this out the next time you climb some trees!
+See how much easier this function is to scan? 🧐 This little "trick" is something people new to Elm often don't know about, which is a pity as it makes the code both easier to write and more readable. It is especially helpful in the `update` function if you have a nested `Msg`. Try it out the next time you climb trees!
