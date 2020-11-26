@@ -42,7 +42,7 @@ const SiteFooter = () => (
     <Container>
         <BekkLogo />
         <Description>
-            Bekk is all about craftmanship and the people crafting it. This year, we're creating 11
+            Bekk is all about craftmanship and the people crafting it. This year, we're creating 12
             advent calendars, each with daily original content made by us.
         </Description>
         <FlatList>
