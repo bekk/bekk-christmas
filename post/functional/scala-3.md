@@ -6,10 +6,17 @@ title: Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
+
+<!-- intro - total omskriving dot calculus -> Dotty -> Scala 3 -->
+
+<!-- TODO -->
+<!-- <sup>[^otp]</sup> -->
+<!-- [^otp]: Noe å si her -->
+
 A new year is closing up and so is a new release of Scala. Release candidate 1
 is expected to be found some time this December!
 
-Version two of the language was released in 2006 and up to now it has seen a
+Version two of the language was released in 2006 and so far it has seen a
 total of thirteen minor releases, and many smaller. Throughout these changes the
 language has evolved to places not foreseen. Implicits that were first introduces
 for implicit conversions gave rise to type classes, built upon to create
@@ -158,57 +165,58 @@ functionality defined ad hoc for a type is a type class.
 In Scala 2 this could look like the following (if you are new to the language,
 do not ponder on this example for too long!):
 
-// TODO bytt til Monoids og link til den gamle artikklen??
+<!-- // TODO bytt til Monoids og link til den gamle artikklen?? -->
 
 
 ```scala
-object TheOldShow {
-  // Our type class that is a function to run `show` on some unknown generic A
-  trait Show[A] {
-    def show(value: A) : String
-  }
-
-  // Our instance for the String type
-  implicit val showString: Show[String] = new Show[String] {
-     def show(in: String): String = in
-  }
-
-  // Our instance for the Int type
-  implicit val showInt: Show[Int] = new Show[Int] {
-     def show(in: Int): String = in.toString
-  }
-
-  // To create extensions method capability
-  implicit class ShowOps[A](in: A)(implicit show: Show[A]) {
-    def show: String = show.show(in)
-  }
-
-  val myValue: String = 1.show
+// Our type class that is a function to run `show` on some unknown generic A
+trait Show[A] {
+  def show(value: A) : String
 }
+
+// Our instance for the String type
+implicit val showString: Show[String] = new Show[String] {
+   def show(in: String): String = in
+}
+
+// Our instance for the Int type
+implicit val showInt: Show[Int] = new Show[Int] {
+   def show(in: Int): String = in.toString
+}
+
+// To create extensions method capability
+implicit class ShowOps[A](in: A)(implicit showImpl: Show[A]) {
+  def show: String = showImpl.show(in)
+}
+
+val result: String = 1.show
+
+@main
+def run = println(result)
 ```
 
 Yet again this works fine, but there is a lot of concepts to grasp here, and
 what should I Google to get a better understanding? Help..
 
 ```scala
-object TheNewShow {
-  trait Show[A] {
-    extension (value: A) def show: String
-  }
-
-  given Show[String] {
-    extension (value: String) def show: String =
-      value
-  }
-
-  given Show[Int] {
-    extension (value: Int) def show: String =
-      value.toString
-  }
-
-
-  val myValue: String = 1.show
+trait Show[A] {
+  extension (value: A) def show: String
 }
+
+given Show[String] {
+  extension (value: String) def show: String =
+    value
+}
+
+given Show[Int] {
+  extension (value: Int) def show: String =
+    value.toString
+}
+
+val result: String = 1.show
+
+@main
+def run = println(result)
 ```
 
 One of the many small but important differences here is that one does not need
@@ -219,21 +227,25 @@ The keyword `given` is now used to define that something is implicitly available
 `given` value for some type then `using` is the new keyword:
 
 ```scala
-  import math.Numeric.Implicits._
+import math.Numeric.Implicits._
 
-  def myGenericFunction[A : Show](in: A)(using numeric: Numeric[A]) = {
-    val result = in * numeric.fromInt(2)
+def myGenericFunction[A : Show](in: A)(using numeric: Numeric[A]) = {
+  val result = in * numeric.fromInt(2)
 
-    println(in.show)
+  println(in.show)
 
-    result
-  }
-
-  myGenericFunction(2.2) // Type is Double
-
-  myGenericFunction(2) // Type in Int
+  result
 }
+
+val result = myGenericFunction(2.2) // Type is Double
+
+val result1 = myGenericFunction(2) // Type in Int
+
+@main
+def run = println(result)
 ```
+
+<!-- TODO inform on Show and adding SHow[Double] -->
 
 For `myGenericFunction` we have defined a function where we operate on one type `A`
 that has an implementation of `Show` that is unnamed and defined numeric operations
@@ -249,6 +261,7 @@ library then we can just implement
 are none the last a fantastic tool for many contexts. Such examples can be to
 define specific functionality for types in generic code like `myGenericFunction`
 or to defined behaviour for another libraries datatypes. 
+
 <!-- TODO MONOIDS EXAMPLE. -->
 
 
@@ -268,28 +281,29 @@ type MyCoproduct = Int | String
 Some of the possibilities this opens up is to create type safe error handling simpler!
 
 ```scala
-object ErrorHandling {
-  case class OhNoYouDidNot(error: String)
-  object EvilState
+case class OhNoYouDidNot(error: String)
+object EvilState
 
-  type MyErrors = OhNoYouDidNot | EvilState.type
+type MyErrors = OhNoYouDidNot | EvilState.type
 
-  def doTheThing(received: Int): Either[MyErrors, String] =
-    Either.cond(
-      received >= 1337,
-      right = "It's working!",
-      left = OhNoYouDidNot(s"$received is not sufficient stuff")
-    )
+def doTheThing(received: Int): Either[MyErrors, String] =
+  Either.cond(
+    received >= 1337,
+    right = "It's working!",
+    left = OhNoYouDidNot(s"$received is not sufficient stuff")
+  )
 
-  doTheThing(9000) match {
-    case Right(result) =>
-      println(result)
-    case Left(OhNoYouDidNot(thisThing)) =>
-      println(s"You tried do that thing! $thisThing")
-    case Left(EvilState) =>
-      println("I do not like this.")
-  }
+val message = doTheThing(9000) match {
+  case Right(result) =>
+    result
+  case Left(OhNoYouDidNot(thisThing)) =>
+    s"You tried do that thing! $thisThing"
+  case Left(EvilState) =>
+    "I do not like this."
 }
+
+@main
+def run = println(message)
 ```
 
 <!-- Missing branches would incur not exhaustiveness warnings from the compiler. -->
@@ -319,7 +333,12 @@ object MyLib {
 
 import MyLib._
 
-Percent(10) * Percent(40)
+val result = Percent(10) * Percent(40)
+
+@main
+def run = println(result)
+
+// If we try do something we are not allowed to:
 
 //Percent(10) * 40 // type error
 //[error] 76 |    Percent(10) * 40 // type error
