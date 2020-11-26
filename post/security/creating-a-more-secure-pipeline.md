@@ -8,5 +8,7 @@ ingress: Many of us use a pipeline to build and deploy our applications. They
   can be build using tools like Jenkins, CircleCI or Github Actions. Have you
   thought about that your pipelines can have security vulnerabilities? We will
   share some recommendations so you can create more secure pipelines.
+authors:
+  - Robert Larsen
 ---
 Creating a more secure pipeline...
