@@ -9,6 +9,9 @@ ingress: I juli falt en dom i den europeiske domstolen som vil få store
   søksmål mot Facebook, hvor han mente at overføring av hans persondata til USA
   var ulovlig. Denne avgjørelsen endrer ikke bare hvordan Facebook opererer, men
   kan potensielt forby bruk av de fleste store skytjenestene.
+description: Hvordan vil Schrems-II-dommen påvirke muligheten til å benytte
+  skytjenester for europeiske selskaper? Den mest ytterliggående tolkningen
+  tilsier full stans, men det er ikke hele bildet.
 links:
   - title: Anbefalingene fra det europeiske personvernrådet (EDPB)
     url: https://www.notion.so/hanskhe/Schrems-II-f39c7f10965446a7a4c4ec830da2b192#e8b3959183494383bfd4440a02a5c87c
@@ -67,7 +70,23 @@ Det er allikevel åpne spørsmål rundt hvorvidt man må sikre at krypteringsnø
 
 ## Veien videre
 
+Det er vanskelig å se for seg at EU kan leve med worst-case-utfallet av denne dommen, i alle fall på kort sikt. Det virker overveiende sannsynlig at en domstol må gripe inn og begrense omfanget av presedensen som nå er satt. Om det ikke skjer vil mer eller mindre alle større selskaper i EU måtte haste-flytte sine data til nasjonale eller rent europeiske leverandører. Husk at det ved denne tolkningen ikke er tilstrekkelig at dataene lagres i EU eller ditt eget land, det er eierstrukturen i morselskapet som anses som avgjørende.
+
+Domstoler er normalt sett mer pragmatiske enn datatilsyn. Dette ser man i [den relaterte dommen](https://www.privacy-ticker.com/first-judicial-application-of-schrems-ii-in-france/) i det franske rettssystemet hvor det franske datatilsynet brukte Schrems-II-dommen til å stanse den franske sentraliserte helseplattformen Health Data Hub (HDH) i bruk av Microsoft Azure. Den høyeste administrative domstolen i Frankrike har avvist dette på flere grunnlag:
+
+- Schrems-II tar ikke direkte stilling til data som behandles i EU av et europeisk foretak, kun til faktisk intensjonell overføring til tredjeland.
+- Domstolen mente at amerikanske myndigheters interesse for dataene i HDH var rent hypotetisk.
+- Dataene som sendes til HDH er pseudonymiserte, og er også kryptert av Azure.
+
+Dommen pålegger allikevel HDH å - i samarbeid med Microsoft - styrke personvernbeskyttelsen i løsningen ytterligere.
+
+Denne dommen kom imidlertid før veiledningen til EDPB, og her bør man merke seg at EDPB ikke mener en subjektiv vurdering av interessen til en tredjestats myndighet er relevant.
+
 ## EuroCloud
+
+Et alternativ som stikker seg frem er fremveksten av flere rent europeiske skyleverandører, som vi samlet kan omtale som "EuroCloud". Om den mest ytterliggående tolkningen av Schrems-II blir stående vil den danne et solid grunnlag for rent europeiske skyløsninger, uten eierinteresser utenfor EU-området. Det finnes i dag en rekke slike leverandører, men ingen som er i størrelsesorden av de tre store amerikanske leverandørene. 
+
+Det er også en rekke utfordringer med EuroCloud. Hvordan skal man drive 24/7-support uten å ha noen ansatte som fysisk befinner seg utenfor EU-land? Det vil heve kostnaden med å drive skytjenester, og det vil kreve at man har fulle skift med ansatte som jobber natt. Vil det bli tilstrekkelig satsning på en slik løsning om det eneste som holder liv i den er en tolkningsdom? Leverandørene vil være sårbare for at vinden snur, og at EU plutselig tillater utenlandske skyløsninger å bruke dagens eierstruktur, eller godkjenner andre former for organisatoriske løsninger. 
 
 ## Hva gjør Datatilsynet
 
@@ -80,4 +99,10 @@ Max Schrems sin organisasjon NOYB har sendt inn 101 varsler til datatilsyn over 
 Datatilsynet annerkjenner at selskaper som drifter IT-løsnigner i offentlig sky nå er i en krevende situasjon, men er tydelige på at det ikke fritar dem fra å måtte følge til enhver tid gjeldende lovgivning. 
 
 ## Hva blir utfallet av alt dette bråket?
+
+Den mest ytterliggående tolkningen vil skape store utfordringer i Europa, og det virker ikke sannsynlig at denne får stå uten modifikasjoner. Et mer realistisk utfall er at EU på det nåværende tidspunkt ikke forbyr bruk av skyplattformer med eierinteresser utenfor EU, men heller formulerer unntak som naturlig vil innskrenkes etterhvert som "EuroCloud" blir mer konkurransedyktig. Det vil skape insentiver til å bygge ut denne typen tjenester i Europa, noe som gir arbeidsplasser, kompetanse og inntekter, samtidig som det over tid styrker personvernet til EU-borgere. 
+
+Når det er sagt har EU de siste årene vist at de er en seriøs pådriver for personvern, og ikke er villige til å bøye av for press fra store kommersielle interesser. Det kan tenkes at EU ønsker å bruke denne saken til å statuere et eksempel som viser hvor viktig personvernet er i EU, og at man kan stole på at dette ikke vil bli svekket.
+
+Og uansett hvilken vei det går kan vi nok slå fast en ting med 100% sikkerhet. I 2021 kommer Datatilsynet på tilsyn til en behandlingsansvarlig nær deg!
 
