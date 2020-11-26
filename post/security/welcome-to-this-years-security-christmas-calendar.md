@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 1
 title: Welcome to the Security Christmas Calendar!
-image: https://unsplash.com/photos/QKo-op_gR9I
+image: https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1988&q=80
 ingress: We are really excited to present this year's calendar. We hope that you
   will enjoy reading it as much as we enjoyed writing it. Security as a topic is
   hotter than ever. While we count down the days until Christmas Eve you will be
