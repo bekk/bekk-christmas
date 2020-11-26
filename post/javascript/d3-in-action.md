@@ -4,12 +4,13 @@ post_year: 2018
 post_day: 20
 title: D3 in action
 ingress: "[D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript
-  library that's well suited to create data visualizations on the web. It brings
-  data to life using HTML, SVGs and CSS. You can make everything from static
-  graphs to interactive articles."
+    library that's well suited to create data visualizations on the web. It brings
+    data to life using HTML, SVGs and CSS. You can make everything from static
+    graphs to interactive articles."
 authors:
-  - Svein Petter Gjøby
+    - Svein Petter Gjøby
 ---
+
 D3.js has been around for a long time, it was initially released in 2011, and has gained a lot of traction during these years. Nowadays, it is the de facto standard of data visualization and has a large community. Just take a look at this [list of examples](https://github.com/d3/d3/wiki/Gallery).
 
 ## What's the fuss about?
@@ -60,7 +61,7 @@ Then we use the `data` method of D3 to join each datum in our dataset to a `circ
 let circles = d3
     .select('#mySVG')
     .selectAll('circle')
-    .data(data, d => d.name);
+    .data(data, (d) => d.name);
 ```
 
 Wait, what?! There are no `circle` elements in the SVG.
