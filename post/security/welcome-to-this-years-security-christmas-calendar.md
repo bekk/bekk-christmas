@@ -58,6 +58,6 @@ We start by presenting a list of a few tips you as a developer can use to help y
 
    To make things easier, there is a proposed standard, security.txt, for how to easily get in touch about security issues. It is currently a RFC-draft submitted for review at IETF. The proposal is to put a file named security.txt under the path `/.well-known/security.txt`. It should at least contain information about how to get in touch, but comes with some other fields as well, like e.g. pointer to an encryption key needed to talk you. You can read more at the project website <https://securitytxt.org>, and the RFC-draft at <https://tools.ietf.org/html/draft-foudil-securitytxt-10>.
 
-   Even though the RFC is still a draft, it has been adopted quite well by major websites like Facebook, Dropbox and Github. So, you should do it too, and create a security.txt if you don't already have one. It builds trust and sends a signal that you take security seriously. 
+   Even though the RFC is still a draft, it has been adopted widely by major websites like Facebook, Dropbox and Github. So, you should do it too, and create a security.txt if you don't already have one. It builds trust and sends a signal that you take security seriously. 
 
 How to create more secure applications is of course not limited to this short list, and we have more to come. Stay tuned! Also remember to visit our other calendars.
