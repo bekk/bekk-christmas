@@ -46,7 +46,7 @@ start migrating now take a look at [5].
 
 ```scala
 @main
-def hello = println("world)
+def hello = println("world")
 ```
 
 
