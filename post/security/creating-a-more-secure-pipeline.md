@@ -4,16 +4,18 @@ post_year: 2020
 post_day: 3
 title: Creating a more secure pipeline
 image: https://images.unsplash.com/photo-1559510981-10719ce4266a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
-ingress: Many of us use a pipeline to build and deploy our applications. They
-  can be build using tools like Jenkins, CircleCI or Github Actions. Have you
-  thought about that your pipelines can have security vulnerabilities? We will
-  share some recommendations so you can create more secure pipelines.
+ingress: Many of us has pipeline to build and deploy our applications, and tools
+  like Circle CI, Gitlab CI/CD or Github Actions are popular. Have you thought
+  about your pipelines might have security vulnerabilities?
 authors:
-  - Henrik Walker Moe
-  - Tjerand Silde
-  - Martin Strand
+  - Robert Larsen
 ---
-Make sure the pipeline does not print any credentials or other sensitive information in its console output.
+1. Console output
+
+   Pipelines usually print some kind of console output, which can be very useful when something goes wrong and we need to debug. However, this output might also be of great interest to a potential attacker. Especially if it happens to contain any credentials or other sensitive information. This can typically be passwords or tokens needed to access code repositories, image/package-registries and so on. Such secrets are often placed in some kind of vault, but that is worthless if the pipeline prints it anyway. Do also take into consideration who has access to read the output from the pipeline. 
+2. Check for outdated dependencies
+
+
 
 Run automated tests testing application security.
 
@@ -24,8 +26,6 @@ Have routines on how to ensure that what is supposed to end up in production act
 If you have automated deploy from your main-branch, make sure that pushing directly to that branch without PR is rejected.
 
 Not directly security-related, but validate you are compatible with the licenses in your dependencies.
-
-Check for outdated dependencies
 
 Certificate renewal
 
