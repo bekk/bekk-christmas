@@ -4,10 +4,10 @@ post_year: 2020
 post_day: 4
 title: "WIP: The power of let expressions"
 image: https://images.unsplash.com/photo-1601543541912-d8e7bd4006e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3916&q=80
-ingress: In the christmas articles up until now we have seen how to destructure
-  tuples, records and single-value custom types in the function definition.
+ingress: In the previous christmas articles we have seen how to destructure
+  tuples, records, and single-value custom types in the function arguments.
   Today we take a look at how to destructure values in let expressions, along
-  with specific use-cases where I find this the most useful.
+  with specific use-cases where I find this most useful.
 links:
   - url: https://elm-lang.org/docs/syntax#let-expressions
     title: Let expressions @ elm-lang.org
@@ -28,10 +28,10 @@ getName =
     firstName ++ " " ++ lastName
 ```
 
-But let expressions are more powerful than just defining single constants! They can also be used to destructure compound values such as tuples, records, and custom types. To illustrate this, we look at examples from the three previous articles and modify them by doing the destructuring in let expressions instead of in the function arguments.
+This is fine, but let expressions are more powerful than just defining single constants! They can be used to destructure compound values such as tuples, records, and custom types. To illustrate this, we look at examples from the three previous articles of this series and modify them by moving the destructuring into a let expression. If you haven't read the previous articles you should take a look at them now to get some context.
 
-### Destructuring tuples (from day 1)
-In the first article of this article series we saw how tuples can be destructured in the function arguments. Now, we use the same example to destructure the tuple in a let expression:
+### Destructuring tuples (from [day 1](https://bekk.christmas/elm/2020/1))
+In the first article of this series we saw how to destructure tuples in the function arguments. Now, we use the same example to do the same destructuring in a let expression:
 ```elm
 canDrive: (Bool, Bool) -> String
 canDrive ageAndLicenceStatus =
@@ -46,7 +46,9 @@ canDrive ageAndLicenceStatus =
         "Not allowed to drive"
 ```
 
-### Destructuring records (from day 2)
+In this example it would probably be just as simple to destructure the tuple directly in the function arguments, but now you know that this is possible, too!
+
+### Destructuring records (from [day 2](https://bekk.christmas/elm/2020/2))
 We can do the same thing with records, inspired by the example in the second article of this series: 
 ```elm
 type alias CartItem = 
@@ -63,8 +65,9 @@ calculateTotal wholeItem =
     in
     unitPrice * amount
 ```
+Also here one could ask _Why not just destructure the record directly in the arguments?_ One could just do that, but what technique to use and when is often based on personal preferences. In the case of records, I would personally prefer destructuring it in a let expression.
 
-### Destructuring single-constructor custom types (from day 3)
+### Destructuring single-constructor custom types (from [day 3](https://bekk.christmas/elm/2020/3))
 I guess you see the pattern now, and that you already see that the example from yesterday can also be destructured like this:
 ```elm
 type Weight
@@ -86,17 +89,18 @@ bodyMassIndex height weight =
 ```
 
 ### My best use-cases
-Having shown what possibilities lie in let expressions, I want to give a real-life example of where I find this power the most useful. I am so lucky that I get to write Elm every day at work, and the following is a piece of code from our code base: 
+Having shown the power of let expressions, I want to give a real-life example of what I find the most useful about this. I lucky to get to write Elm every day at work, and the following is a piece of code from our code base: 
 ```elm
-let 
-    ( icon, backgroundColor, focusColor ) =
-        case severity of
-            Info ->
-                ( Icon.Info, Colors.Blue40, Colors.Blue80 )
+viewSituationMessage : Severity -> Html msg
+    let 
+        ( icon, backgroundColor, focusColor ) =
+            case severity of
+                Info ->
+                    ( Icon.Info, Colors.Blue40, Colors.Blue80 )
 
-            Warn ->
-                ( Icon.Warn, Colors.Yellow40, Colors.Yellow80 )
-in
+                Warn ->
+                    ( Icon.Warn, Colors.Yellow40, Colors.Yellow80 )
+    in
 ...
 ```
 
