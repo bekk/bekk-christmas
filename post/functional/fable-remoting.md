@@ -96,7 +96,7 @@ let init(): Model * Cmd<Msg> =
 
 This sets up the MVU model and asks the backend for all the todos.
 Once this async function is resolved the `GotTodos` command is executed. 
-In `GotTodos` is also where the todos gets stored in our model.
+`GotTodos` is what stores the todos we get from the server in our model.
 
 Performing requests with Fable remoting is that easy!
 No strings, no serialization, no deserialization, none of that boring stuff!
@@ -121,22 +121,21 @@ let todosApi =
         } }
 ```
 
-This is an implementation of the interface defined in the shared file.
-In this example all the functions are declared within the type, but they could just as well be separate as long as they match the interface.
+In this is an implementation of the interface functions are declared within the type, but they could just as well be separate as long as they match the interface.
 
 So before we head on lets do a quick recap:
 
-* We saw the model defining our todos - this is what we will send backwards and forwards in our app.
+* We saw the model defining our todos.
 * There is a function that creates and handles the routes for us
-* Explored the interface defining what functions we can use to interact with the server
-* Saw the interace implementation on the server!
+* We explored the interface defining what functions we can use to interact with the server
+* Saw the interface implementation on the server
 
 Cool! Now that we are all caught up lets start editing this API and expanding it a little bit.
 Here we go... Lets delete a todo!
 
 ### Deletion time
 
-Lets start by adding a function to the interface in `Shared.fs`.
+Lets start by adding a function definition to the interface in `Shared.fs`.
 
 ```fsharp
 // shared.fs
