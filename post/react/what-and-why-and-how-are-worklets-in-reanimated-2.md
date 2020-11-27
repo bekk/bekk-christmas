@@ -4,6 +4,11 @@ post_year: 2020
 post_day: 7
 title: What and why and how are worklets in Reanimated 2?
 description: "Worklets in Reanimated 2: What are they?"
+links:
+  - title: Reanimated documentation
+    url: https://docs.swmansion.com/react-native-reanimated/
+  - title: React Native Redash
+    url: https://wcandillon.gitbook.io/redash/
 authors: []
 ---
 Reanimated has been part of the React Native ecosystem for quite some time. It gives developers the opportunity to run animations on the native thread, making the dream of a constant 60 fps not too distant at all. The downside of Reanimated was it's quite difficult to learn API. But this is all about to change with the soon to be released version 2 of this popular library.
