@@ -10,21 +10,17 @@ ingress: Many of us has pipeline to build and deploy our applications, and tools
 authors:
   - Robert Larsen
 ---
-1. Console output
+Pipelines usually print some kind of console output, which can be very useful when something goes wrong and we need to debug. However, this output might also be of great interest to an attacker. Especially if it happens to contain any credentials or other sensitive information. This can typically be passwords or tokens needed to access code repositories, container-image/package-registries and so on. Such secrets are often placed in some kind of vault, a mechanism in the pipeline tools for storing secrets, but that is worthless if the pipeline prints it anyway. Do also take into consideration who has access to read the output from the pipeline. 
 
-   Pipelines usually print some kind of console output, which can be very useful when something goes wrong and we need to debug. However, this output might also be of great interest to a potential attacker. Especially if it happens to contain any credentials or other sensitive information. This can typically be passwords or tokens needed to access code repositories, image/package-registries and so on. Such secrets are often placed in some kind of vault, but that is worthless if the pipeline prints it anyway. Do also take into consideration who has access to read the output from the pipeline. 
-2. Check for vulnerable dependencies
+Your pipeline should include some kind of mechanism to check for vulnerable dependencies. OWASP Dependency-Check is a tool for that purpose, and can be triggered by your pipeline. Snyk is also an alternative that is widely used, the same is Github Dependabot which we talked about [yesterday](https://security.christmas/2020/2). Just as important as just having the tools, you also need to establish routines on how to act when they report something is wrong. 
 
-   Your pipeline should include some kind of mechanism to check for vulnerable dependencies. OWASP Dependency-Check is a tool for that purpose, and can be triggered by your pipeline. Snyk is also an alternative that is widely used. 
-3. Automated testing
+If you have automated build or deploy from your main-branch, make sure that pushing directly to that branch without going through a pull-request first is being rejected. Otherwise, that is a highway into your environments, and will let others run and deploy their code. If you have your code in a public repository, you should never let automated builds be triggered by opening a pull-request. That is basically the same as triggering on direct push. You should instead wait until the pull-request is merged by someone authorized to do so.
 
-   Run automated tests testing application security.
+Applications usually have some sort of unit- or integration-tests, and these tests are usually run when the application is built. Thus, these tests is also running when your pipeline builds your code. A good idea is to have tests that verifies that authentication and authorization works as intended. You should also have tests that covers how the application handles invalid input. These tests should, as far as possible test the real implementations and cases. They should preferably not require the application to run in a special "local", "mock" or "test"-mode, disabling most of the security mechanisms. 
+
+
 
 Use specific versions of every dependency, including containers. Make sure the versions you use are not outdated and contain vulnerabilities. 
-
-Have routines on how to ensure that what is supposed to end up in production actually does, and somehing not going there doesn't. Don't trigger builds automatically on pull-requests on public repositories.
-
-If you have automated deploy from your main-branch, make sure that pushing directly to that branch without PR is rejected.
 
 Not directly security-related, but validate you are compatible with the licenses in your dependencies.
 
