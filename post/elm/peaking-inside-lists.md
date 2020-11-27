@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 8
-title: Peaking Inside Lists
+title: Peeking Inside Lists
 ingress: Working with lists in Elm is often quite nice, but sometimes it can
   feel a bit difficult to get a sense of what is inside a list. In this article
   we will look at a techinque that allows us to get access to the elements
@@ -49,9 +49,9 @@ Before we get to the solution, let's take a short detour through list making. In
 1 :: []
 -- Results in: [ 1 ]
 
-a = [ 2, 3 ]
-1 :: a
--- Results in: [ 1, 2, 3 ]
+a = [ 3, 4 ]
+1 :: 2 :: a
+-- Results in: [ 1, 2, 3, 4 ]
 ```
 
 Now, the `::` operator is used for creating lists, but it can also be used to pattern match on lists in case-statements! Let's take a look at an example:
