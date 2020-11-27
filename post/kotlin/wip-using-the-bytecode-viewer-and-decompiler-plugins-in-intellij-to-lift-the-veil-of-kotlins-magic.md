@@ -22,6 +22,10 @@ authors:
 
 First of all it is required that you have the IntelliJ IDE installed. You may use either one of the Community or Ultimate edition, since [both come bundled](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html) with the necessary tools. Then simply create or open a Kotlin file of your chosing and select **Tools > Kotlin > Show Kotlin Bytecode** from the menu. A new side panel will open and, given that you have a Kotlin file currently selected, will display the corresponding bytecode generated for that specific file.From here you can study the actual bytecode, or jump to another Kotlin file of your liking. The Bytecode Viewer will update automatically according to the Kotlin file currently being viewed.
 
+![IntelliJ IDEA 2020.2.1 CE Bytecode Viewer with TopLevel.kt file open](assets/intellij-idea-ce-2020.2.1-bytecode-viewer-1.png "The Bytecode Viewer with the TopLevel.kt file open")
+
+![IntelliJ IDEA 2020.2.1 CE Bytecode Viewer with a Kotlin file open](assets/intellij-idea-ce-2020.2.1-bytecode-viewer-2.png "IntelliJ IDEA 2020.2.1 CE Bytecode Viewer with a another Kotlin file open")
+
 Now, the bytecode itself might not make much sense, unless you're already adept in interpreting it. However, if you're keen on making sense of the what the different statements actually mean though, take a look at [this](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) excellent overview of the different bytecode instructions. Where things really start getting interesting, though, is when you utilize the decompilation functionality provided by clicking the **Decompile** button. Upon clicking the button, a file with a `.decompiled.java` extension will be generated for the currently selected Kotlin file. Behind the scenes, IntelliJ uses the [Fernflower Java Decompiler](https://github.com/JetBrains/intellij-community/blob/master/plugins/java-decompiler/engine/README.md) to, in a sense, "reconstruct" Java code from the compiled bytecode. Essentially, we're able to compare our Kotlin code to a corresponding Java representation of the same code, on-the-fly. How cool is that!
 
 ## A practical example
