@@ -20,12 +20,4 @@ If you have automated build or deploy from your main-branch, make sure that push
 
 Applications usually have some sort of unit- or integration-tests, and these tests are usually run when the application is built. Thus, these tests is also running when your pipeline builds your code. A good idea is to have tests that verifies that authentication and authorization works as intended. You should also have tests that covers how the application handles invalid input. These tests should, as far as possible test the real implementations and cases. They should preferably not require the application to run in a special "local", "mock" or "test"-mode, disabling most of the security mechanisms. To have such tests run in an automated way by a pipeline will give you lots of security-bang for the buck.
 
-Even if we all know that we should keep credentials and other potentially sensitive data away from our source code, it ends up there from time to time anyway. The probability can be reduced by enabling a pre-commit hook 
-
-Not directly security-related, but validate you are compatible with the licenses in your dependencies.
-
-Certificate renewal
-
-Secrets
-
-How to prevent credentials and other potentially sensitive data are ending up in the source code.
+Even if we all know that we should keep credentials and other potentially sensitive data away from our source code, it ends up there from time to time anyway. The probability can be heavily reduced by enabling a pre-commit hook, scanning for sensitive data in places it should not be, before the code is committed. This puts more responsibility on the developers, demanding that they enable the hook on their own computers. While they definitely should do so, it is a good idea to also have a mechanism in the pipeline that will reject to build your code if it contains sensitive data. You can argue that it is too late if the pipeline detects it, as the code already will have been committed and pushed. But, it will give you a chance to act - to remove it and re-write the commit history.
