@@ -14,6 +14,9 @@ ingress: IDE's commonly include a lot of useful tools that can make our lives as
   Decompiler* integrated tools in IntelliJ, and how the may help us in getting a
   better understanding of how our Kotlin code is represented on the JVM, and how
   it could look in Java.
+links: []
+authors:
+  - Sondre Larsen Ovrid
 ---
 ## How to use the tools
 
