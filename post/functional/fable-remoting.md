@@ -149,7 +149,7 @@ Our interface now supports deletion!
 All the functions we define in this interface have to return an async and we want to know if the delete succeeded. So we return the `guid` of the deleted todo item if it succeeds.
 
 In order to make the backend delete todos we need to edit the storage class SAFE Stack provided for us. 
-So we add this function right here. For more context on this class feel free to checkout the [code](<>) on github.
+So we add this function right here. For more context on this class feel free to checkout the [code](https://github.com/Bjorn-Strom/Holiday) on github.
 
 ```fsharp
 // shared.fs
