@@ -21,7 +21,7 @@ authors:
 ---
 ## A brief introduction to type erasure
 
-In order to get a good picture of how and when reification can help us, a little background is needed. As with Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic type parameters when our code is compiled. In other words, information about our generic type parameters are _by default_ not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following  generic functions which simply takes an argument of a generic type `G` and returns it:
+In order to get a good picture of how and when reification can help us, a little background is needed. As with Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic type parameters when our code is compiled. In other words, information about our generic type parameters are *by default* not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following  generic functions which simply takes an argument of a generic type `G` and returns it:
 
 ```kotlin
 fun <G> simpleGenericFunctionWithoutBound(thing: G) = thing
@@ -29,7 +29,7 @@ fun <G> simpleGenericFunctionWithoutBound(thing: G) = thing
 fun <G : ExtendableClass> simpleGenericFunctionWithBound(thing: G) = thing
 ```
 
-To see what actually happens "under the hood" we can look at the decompiled bytecode (\*). The functions we declared above will be decompiled to the following Java code (note that some annotations and other generated artifacts have been removed in this and the following examples, in order to make the them more terse):
+To see what actually happens "under the hood" we can look at the decompiled bytecode (*). The functions we declared above will be decompiled to the following Java code (note that some annotations and other generated artifacts have been removed in this and the following examples, in order to make the them more terse):
 
 ```java
 public static final Object simpleGenericFunctionWithoutBounds(Object thing) {
@@ -43,11 +43,11 @@ public static final ExtendableClass simpleGenericFunctionWithBound(ExtendableCla
 
 Here we're observing how type erasure and [bounded/unbounded type substitution](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) have been applied by the compiler. Our `simpleGenericFunctionWithoutBound`-function has had its generic type parameter replaced by `Object`. Similarly in `simpleGenericFunctionWithBound` it has been replaced by `ExtendableClass`, which we defined as the upper limit for our generic type parameter.
 
-As a result of this substitution, there is no way for us to derive any information at runtime about the concrete type of the supplied argument when these functions are being invoked. Put in another way, generic function type parameters are defined as _non-reifiable_.
+As a result of this substitution, there is no way for us to derive any information at runtime about the concrete type of the supplied argument when these functions are being invoked. Put in another way, generic function type parameters are defined as *non-reifiable*.
 
-\* _The IntelliJ IDE comes with a handy tool for inspecting kotlin bytecode and its decompiled Java counterpart. This can be found under "Tools > Kotlin > Show Kotlin Bytecode"._
+\* *The IntelliJ IDE comes with a handy tool for inspecting kotlin bytecode and its decompiled Java counterpart. This can be found under "Tools > Kotlin > Show Kotlin Bytecode".*
 
-## The _reified_ modifier keyword
+## The *reified* modifier keyword
 
 So how can we reify our type parameters in the generic functions we defined above?
 Unfortunately there's no escaping the type erasure that the compiler applies. Instead, Kotlin can help us yet again with some of its language specific magic. We can modify the generic functions we defined earlier like so, and invoke it:
@@ -63,9 +63,9 @@ fun main() {
 }
 ```
 
-The _inline_ modifier keyword tells the Kotlin compiler that we want to perform [inline expansion](https://en.wikipedia.org/wiki/Inline_expansion) of the function at the callsite. We will not go into the details of inlining (\*), but it has some interesting implications which Kotlin can take advantage of to get around type erasure. Essentially what happens is that the content of the declared function body is duplicated and included wherever we're invoking the function.
+The *inline* modifier keyword tells the Kotlin compiler that we want to perform [inline expansion](https://en.wikipedia.org/wiki/Inline_expansion) of the function at the callsite. We will not go into the details of inlining (*), but it has some interesting implications which Kotlin can take advantage of to get around type erasure. Essentially what happens is that the content of the declared function body is duplicated and included wherever we're invoking the function.
 
-Since we have information about the generic type parameter at time of invokation, maybe there is some way to carry over this information to runtime? This is what the _reified_ modifier keyword instructs the compiler to do. Let's invoke our updated function and take another look at the decompiled byte code:
+Since we have information about the generic type parameter at time of invokation, maybe there is some way to carry over this information to runtime? This is what the *reified* modifier keyword instructs the compiler to do. Let's invoke our updated function and take another look at the decompiled byte code:
 
 ```kotlin
     // Function declaration
@@ -88,6 +88,8 @@ Since we have information about the generic type parameter at time of invokation
     }
 ```
 
-Here we see how Kotlin has gotten around the erasure of parameterized types: since inline expansion is performed, additional information can be included at the callsite - i.e. Kotlin can provide us with runtime information about the actual type of the argument we invoked the function with! We can take advantage of this to do things we otherwise would not be able to, like using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth.
+Here we see how Kotlin has gotten around the erasure of parameterized types: since inline expansion is performed, additional information can be included at the callsite - i.e. Kotlin can provide us with runtime information about the actual type of the argument we invoked the function with! Specifically, in this example we now have access to the concrete type information about the parameter we invoked the function with: `ExtendableClass`, on which we're accessing the `.class` property through reflection. 
 
-\* _You can read more about the inline modifier keyword in the [Kotlin docs](https://kotlinlang.org/docs/reference/inline-functions.html)._
+Hopefully this article has helped in demystifying the concept of reification a little, and illustrated how we may take advantage of this concept to do things we otherwise would not be able to through the use of the reified keyword. Whether it is using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth.
+
+\* *You can read more about the inline modifier keyword in the [Kotlin docs](https://kotlinlang.org/docs/reference/inline-functions.html).*
