@@ -16,6 +16,8 @@ ingress: _Reification_. Like many other concepts, it can be applied in a number
   reification and type erasure are connected, and more specifically how we can
   combine _inline functions_ and _reified_ generic type parameters in Kotlin to
   achieve things in generic functions that we normally would not be able to.
+authors:
+  - Sondre Larsen Ovrid
 ---
 ## A brief introduction to type erasure
 
