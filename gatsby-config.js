@@ -84,7 +84,7 @@ module.exports = {
                     node.frontmatter.post_year < currentYear ||
                     (node.frontmatter.post_year === currentYear &&
                         currentMonth === 11 &&
-                        node.frontmatter.post_day < currentDay),
+                        node.frontmatter.post_day <= currentDay),
             },
         },
     ],
