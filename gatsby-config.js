@@ -23,6 +23,11 @@ const calendarPlugins = fs
 const envCalendar = process.env.CALENDAR_ENV;
 const isPreview = envCalendar === 'preview';
 
+const currentDate = new Date();
+const currentYear = currentDate.getUTCFullYear();
+const currentMonth = currentDate.getUTCMonth();
+const currentDay = currentDate.getUTCDate();
+
 module.exports = {
     siteMetadata: getMetadataForSite(envCalendar),
     plugins: [
@@ -63,7 +68,7 @@ module.exports = {
         {
             resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {
-                fields: [`title`],
+                fields: [`title`, 'authors'],
                 resolvers: {
                     MarkdownRemark: {
                         title: (node) => node.frontmatter.title,
@@ -75,6 +80,11 @@ module.exports = {
                         post_day: (node) => node.frontmatter.post_day,
                     },
                 },
+                filter: (node) =>
+                    node.frontmatter.post_year < currentYear ||
+                    (node.frontmatter.post_year === currentYear &&
+                        currentMonth === 11 &&
+                        node.frontmatter.post_day < currentDay),
             },
         },
     ],
