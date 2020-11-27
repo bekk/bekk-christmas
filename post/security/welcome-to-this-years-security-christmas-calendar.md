@@ -4,11 +4,11 @@ post_year: 2020
 post_day: 1
 title: Welcome to the Security Christmas Calendar!
 image: https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1988&q=80
-ingress: We are really excited to present this year's calendar. We hope that you
-  will enjoy reading it as much as we enjoyed writing it. Security as a topic is
-  hotter than ever. While we count down the days until Christmas Eve you will be
-  given new, original security content each day. We hope that you will enjoy the
-  countdown together with us!
+ingress: We are really excited to present this year's calendar, and hope that
+  you will enjoy reading it as much as we enjoyed writing it. Security as a
+  topic is hotter than ever. While we count down the days until Christmas Eve
+  you will be given new, original security content each day. Enjoy the countdown
+  together with us!
 description: security, christmas, calendar, owasp, zap, dependency, http,
   headers, security.txt
 authors:
@@ -28,7 +28,7 @@ We start by presenting a list of a few tips you as a developer can use to help y
 
    We tend to have lots of dependencies in our applications. These dependencies can of course contain vulnerabilities, which thankfully might be discovered and patched in newer versions. However, if we don't continuously bump to the newest versions we get no advantage of those patches, and our applications are still as vulnerable as before. 
 
-   If we let bumping dependencies be a manual task, it is easy to postpone it. A good idea is to let an automated tool, that either warns you, or tries to fix it, if there is something wrong, continuously monitor your dependencies. There are several tools available, e.g. Github Security, Snyk or OWASP Dependency-check. Without revealing too much, there is a chance we will give you a more thorough introduction to one of these tools in the coming days.
+   If we let bumping dependencies be a manual task, it is easy to postpone it. A good idea is to let an automated tool, that either warns you, or tries to fix it, if there is something wrong, continuously monitor your dependencies. There are several tools available, e.g. Github Security, Snyk and OWASP Dependency-check. Without revealing too much, there is a chance we will give you a more thorough introduction to one of these tools in the coming days.
 
    If you have an automated tool in place, there is important to also have a regime to monitor and take action when the dependency checker tries to tell you something. You should also keep an eye on dead dependencies - dependencies that no longer are being patched. They most likely contain vulnerabilities, and you should look for something else to pull in instead.
 4. Know your HTTP-headers
@@ -54,7 +54,7 @@ We start by presenting a list of a few tips you as a developer can use to help y
    You can check the HTTP-headers on your own site at <https://securityheaders.io> , a project by Scott Helme.  It will generate a report based on the findings on your site, and give you recommendations and guidelines on how to fix any problems.
 5. Create a security.txt
 
-   If somebody find a security vulnerability in your application, you most probably would like to know about it so you can fix it. To make that happen, it is crucial that you let people know how to contact you. There are many examples that communication between someone finding a vulnerability and the organization or person behind the vulnerable site or app, can be cumbersome.
+   If somebody find a security vulnerability in your application, you probably would like to know about it so you can fix it. To make that happen, it is crucial that you let people know how to contact you. There are many examples that communication between someone finding a vulnerability and the organization or person behind the vulnerable site or app, can be cumbersome.
 
    To make things easier, there is a proposed standard, security.txt, for how to easily get in touch about security issues. It is currently a RFC-draft submitted for review at IETF. The proposal is to put a file named security.txt under the path `/.well-known/security.txt`. It should at least contain information about how to get in touch, but comes with some other fields as well, like e.g. pointer to an encryption key needed to talk you. You can read more at the project website <https://securitytxt.org>, and the RFC-draft at <https://tools.ietf.org/html/draft-foudil-securitytxt-10>.
 
