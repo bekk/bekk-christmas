@@ -289,8 +289,10 @@ You can just focus on your domain models and doman logic.
 I find it really neat!
 Hopefully you found it interesting too!
 
+If you did you can:
+
 Check the source code for this [github](https://github.com/Bjorn-Strom/Holiday)
 
 If you want to read more about Fable Remoting you can check out [](https://github.com/Zaid-Ajaj/Fable.Remoting)its [github](https://github.com/Zaid-Ajaj/Fable.Remoting).
 
-Zaid has also written an [excellent and free book](https://zaid-ajaj.github.io/the-elmish-book/#/) about Elmish, If you want to learn more I suggest you go take a look!
+The author of Fable Remoting has also written an [excellent and free book](https://zaid-ajaj.github.io/the-elmish-book/#/) about Elmish, If you want to learn more I suggest you go take a look!
