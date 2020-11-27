@@ -31,6 +31,10 @@ const ResultListItem = styled.li`
     }
 `;
 
+const FadedText = styled.span`
+    opacity: 0.8;
+`;
+
 const QueryLink = styled(Link)`
     display: block;
     margin: 10px 0;
@@ -54,7 +58,7 @@ const ResultList = ({ query, results, isPreview }) => (
                                 page.post_day
                             )}
                         >
-                            {page.title}
+                            {page.title} <FadedText>- {page.authors.join(', ')}</FadedText>
                         </Link>
                     </ResultListItem>
                 );
