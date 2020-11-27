@@ -219,10 +219,10 @@ We now have 2 new commands to implement in the `update` function. They look like
 
 Again we use the endpoint with the same pattern. We call the function, and when it resolves, perform a command.
 
-Finally we need to have some way of actually calling this function and deleting it from the view.
+Finally we need to have some way of actually calling this function and deleting todos from the view.
 
 In the `containerBox` function we list each todo and we want to add a button there.
-Lets also add some inline styling (you might want to look away).
+Lets also add some inline styling (⚠️ viewer discretion is advised ).
 
 ```fsharp
 // index.fs
