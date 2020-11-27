@@ -57,9 +57,9 @@ And finally the interface defining our API.
 
 ```fsharp
 // shared.fs
-Type ITodosApi =
+type ITodosApi =
     { getTodos : unit -> Async<Todo list>
-      addTodo : Todo -> Async<Todo> }
+      addTodo : Todo -> Async<Todo>}
 ```
 
 As you can see the todo list supports two operations already.
