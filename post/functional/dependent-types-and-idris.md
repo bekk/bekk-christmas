@@ -5,6 +5,13 @@ post_day: 8
 title: Dependent types and Idris
 image: https://images.unsplash.com/photo-1482003297000-b7663a1673f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80
 description: ""
+links:
+  - url: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+    title: Parse, don't validate
+  - url: https://fsharpforfunandprofit.com/posts/designing-with-types-making-illegal-states-unrepresentable/
+    title: "Designing with types: Making illegal states unrepresentable"
+  - url: " https://www.manning.com/books/type-driven-development-with-idris"
+    title: Type-Driven Development with Idris
 authors:
   - Isak Sunde Singh
 ---
@@ -189,7 +196,4 @@ head (NonEmpty x xs) =
     x
 ```
 
-This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material such as [Parse, don't validate](parse-dont-validate) and [Designing with types: Making illegal states unrepresentable](illegal-states-unrepresentable). For longer reads, the book [_Type-Driven Development with Idris_](https://www.manning.com/books/type-driven-development-with-idris) by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅
-
-[parse-dont-validate]: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
-[illegal-states-unrepresentable]: https://fsharpforfunandprofit.com/posts/designing-with-types-making-illegal-states-unrepresentable/
+This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material such as _Parse, don't validate_ and _Designing with types: Making illegal states unrepresentable_. For longer reads, the book _Type-Driven Development with Idris_ by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅
