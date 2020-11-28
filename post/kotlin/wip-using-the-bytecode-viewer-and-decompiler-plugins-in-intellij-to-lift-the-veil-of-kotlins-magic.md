@@ -9,11 +9,11 @@ ingress: IDE's commonly include a lot of useful tools that can make our lives as
   developers easier. Some are pure productivity tools to speed up our
   development, while others may actually help our understanding of the code we
   are implementing. The toolset included with the [IntelliJ
-  IDEA](https://www.jetbrains.com/idea/) IDE is no exception, and in this
-  article we will take a look at the *Bytecode Viewer* and *Java Bytecode
-  Decompiler* integrated tools in IntelliJ, and how the may help us in getting a
-  better understanding of how our Kotlin code is represented on the JVM, and how
-  it could look in Java.
+  IDEA](https://www.jetbrains.com/idea/) IDE is no exception. In this article we
+  will take a look at the *Bytecode Viewer* and *Java Bytecode Decompiler*
+  integrated tools in IntelliJ, and how the may help us in getting a better
+  understanding of how our Kotlin code is represented on the JVM, and how it
+  could potentially look in Java.
 links: []
 authors:
   - Sondre Larsen Ovrid
