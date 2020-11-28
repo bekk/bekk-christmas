@@ -43,7 +43,7 @@ public static final ExtendableClass simpleGenericFunctionWithBound(ExtendableCla
 
 Here we're observing how type erasure and [bounded/unbounded type substitution](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) have been applied by the compiler. Our `simpleGenericFunctionWithoutBound`-function has had its generic type parameter replaced by `Object`. Similarly in `simpleGenericFunctionWithBound` it has been replaced by `ExtendableClass`, which we defined as the upper limit for our generic type parameter.
 
-As a result of this substitution, there is no way for us to derive any information at runtime about the concrete type of the supplied argument when these functions are being invoked. Put in another way, generic function type parameters are defined as *non-reifiable*.
+As a result of this substitution, there is no way for the JVM runtime to derive any information about the concrete type of the supplied argument when these functions are being invoked. Put in another way, generic function type parameters are by-default defined as *non-reifiable*.
 
 \* *The IntelliJ IDE comes with a handy tool for inspecting kotlin bytecode and its decompiled Java counterpart. This can be found under "Tools > Kotlin > Show Kotlin Bytecode".*
 
@@ -65,7 +65,7 @@ fun main() {
 
 The *inline* modifier keyword tells the Kotlin compiler that we want to perform [inline expansion](https://en.wikipedia.org/wiki/Inline_expansion) of the function at the callsite. We will not go into the details of inlining (*), but it has some interesting implications which Kotlin can take advantage of to get around type erasure. Essentially what happens is that the content of the declared function body is duplicated and included wherever we're invoking the function.
 
-Since we have information about the generic type parameter at time of invokation, maybe there is some way to carry over this information to runtime? This is what the *reified* modifier keyword instructs the compiler to do. Let's invoke our updated function and take another look at the decompiled byte code:
+Since we have information about the generic type parameter at the call site, maybe there is some way to carry over this information to runtime? This is what the *reified* modifier keyword instructs the compiler to do. Let's invoke our updated function and take another look at the decompiled byte code:
 
 ```kotlin
     // Function declaration
