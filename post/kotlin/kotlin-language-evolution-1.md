@@ -9,6 +9,13 @@ ingress: >+
 
   In March we got the 1.3.70 version, an incremental release, which included some new functions and classes in the standard library. And after the summer break we got the all new 1.4.0 version, a feature release, which came with some really sought after changes to the language and even more changes to the standard library.
 
+links:
+  - title: Kotlin 1.3.70 Released
+    url: https://blog.jetbrains.com/kotlin/2020/03/kotlin-1-3-70-released/
+  - title: What's New in Kotlin 1.4.0
+    url: https://kotlinlang.org/docs/reference/whatsnew14.html#new-functions-for-arrays-and-collections
+  - title: Kotlin Roadmap
+    url: https://kotlinlang.org/roadmap.html
 authors:
   - Nicklas Utgaard
 ---
@@ -136,13 +143,9 @@ Version 1.4 continues to add even more stuff into the `kotlin.collections` packa
 
 This was just a quick overview of what I personally found interesting in the changelog, and a lot of things were left out. I encourage everytone to take a look the [full changelog](https://kotlinlang.org/docs/reference/whatsnew14.html) for a more comprehensive list of changes.
 
-# 1.5.0 release future
+# 1.5.0 and future roadmap
+The Kotlin roadmap outlines a few areas where we can expect changes, including further work on the new compiler and extra improvements in tooling and multiplatform support. 
 
-As Java and the JVM continues to evolve it opens up a plethora of potential optimisations. 
-- Java Records
-- JVM Sealed classes
-- Inline classes (valhalla)
+Perhaps we'll see support for functions with multiple receivers ([KT-42435](https://youtrack.jetbrains.com/issue/KT-42435)), JVM sealed classes ([KT-42433](https://youtrack.jetbrains.com/issue/KT-42433)) and JVM records ([KT-42430](https://youtrack.jetbrains.com/issue/KT-42430)). Or perhaps we'll get Kotlin/WASM ([KT-42292](https://youtrack.jetbrains.com/issue/KT-42292)), only time will tell.
 
-Other changes;
-- Multiple receivers
-- Improvements to `kotlinx.datetime`, `kotlinx.serialization` and `kotlinx.coroutines`
+The next feature release is scheduled for March 2021, and we'll be eagerly await its arrival.
