@@ -14,8 +14,6 @@ D3.js has been around for a long time, it was initially released in 2011, and ha
 
 ## What's the fuss about?
 
-![](/assets/3-iojs-logos.jpeg)
-
 The core idea of D3 is to connect data with HTML and/or SVG. Let's say we have some data about the population in some countries and we want to visualize it.
 
 ```js
