@@ -71,18 +71,70 @@ fun main() {
 ```
 
 ## Mixed named and positional arguments
+When using named arguments in kotlin 1.3 you were forced place all positional arguments before the named ones, e.g you could do `quadraticEquation(5, 6, c = 1)` but not `quadraticEquation(5, b = 6, 1)`. In kotlin 1.4 this restriction is relaxed, you you may mix positional and named arguments as you please as long as the arguments are in the correct order.
+
+This can be especially helpful if you have a function with a couple of boolean flags;
+```kotlin
+fun split(value: String, trimPrefix: Boolean, trimSuffix: Boolean, delimiter: String): Array<String) = TODO()
+split(
+  "  Hello, World",
+  trimPrefix = true,
+  trimSuffix = false,
+  ", "
+)
+```
+
 ## Trailing comma
-## New compiler with better type inference
-## Standard libary
-- `setOfNotNull` complementing `listOfNotNull`
-- `shuffled`
-- `*Indexed`
-- `minOf` `maxOf` `sumOf`, `minOrNull` replacing `min` and same for `max` 
-- `Array` gets some love
-- `kotlinx.serialization` is in RC-mode
+Kotlin 1.4 also adds a possibly contentious new feature with its trailing commas, e.g `listOf("A", "B", "C",)`. The feature affects arguments and parameter lists, when entries and components of destructuring declarations.
 
-The [changelog](https://kotlinlang.org/docs/reference/whatsnew14.html) contains more details and in-depth explainations.
+```kotlin
+fun sum(
+  a: Int, 
+  b: Int,
+) = a + b
 
+val list = listOf(
+  1,
+  2,
+  3,
+)
+
+val isPrimse = when (Random.nextInt()) {
+    2, 3, 5, 7, 11, -> true
+    else -> false
+}
+
+val (a, b,) = Pair(0, 1)
+``` 
+
+
+## New compiler
+The new compiler was available behind a feature-flag in version 1.3, but is now the new default. With it comes a new type inference algorithm which is even better than the previous version at inferring types, smart-casting and SAM conversions.
+
+```kotlin
+val result = run {
+    var str = currentValue()
+    if (str == null) {
+        str = "test"
+    }
+    str
+}
+
+// This fails in kotlin 1.3 since it believes that `result` still can be nullable.
+println(result.toUpperCase()) 
+```
+
+## Additions to the standard library
+
+Version 1.4 continues to add even more stuff into the `kotlin.collections` package; 
+- `setOfNotNull()` is added, mirroring its sibling `listOfNotNull`
+- `shuffled()` is added to `Sequence`, whereas it was previously only available on `Iterable`
+- `min()` and `max()` has gotten a deprecation notice, guiding you to use `minOrNull()` and `maxOrNull()`
+- The arrays have gotten some love as well, introducing `shuffle()`, `onEach()`, `reverse()` and more.
+- The first stable version of `kotlinx.serialization` is shipped - version 1.0.0-RC. Is this the end of weird serialization bugs in kotlin? We'll see.
+
+
+This was just a quick overview of what I personally found interesting in the changelog, and a lot of things were left out. I encourage everytone to take a look the [full changelog](https://kotlinlang.org/docs/reference/whatsnew14.html) for a more comprehensive list of changes.
 
 # 1.5.0 release future
 
