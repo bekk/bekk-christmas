@@ -21,7 +21,7 @@ authors:
 ---
 ## A brief introduction to type erasure
 
-In order to get a good picture of how and when reification can help us, a little background is needed. As with Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic type parameters when our code is compiled. In other words, information about our generic type parameters are *by default* not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following  generic functions which simply takes an argument of a generic type `G` and returns it:
+In order to get a good picture of how and when reification can help us, a little background is needed. Just like Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic function type parameters when our code is compiled. In other words, information about the actual type of our generic parameters are *by default* not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following  generic functions which simply takes an argument of a generic type `G` and returns it:
 
 ```kotlin
 fun <G> simpleGenericFunctionWithoutBound(thing: G) = thing
