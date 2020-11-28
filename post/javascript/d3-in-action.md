@@ -10,10 +10,11 @@ ingress: "[D3 (Data Driven Documents)](https://d3js.org/) is a JavaScript
 authors:
   - "Svein Petter Gjøby "
 ---
-
 D3.js has been around for a long time, it was initially released in 2011, and has gained a lot of traction during these years. Nowadays, it is the de facto standard of data visualization and has a large community. Just take a look at this [list of examples](https://github.com/d3/d3/wiki/Gallery).
 
 ## What's the fuss about?
+
+![](/assets/3-iojs-logos.jpeg)
 
 The core idea of D3 is to connect data with HTML and/or SVG. Let's say we have some data about the population in some countries and we want to visualize it.
 
