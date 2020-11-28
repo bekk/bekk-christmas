@@ -12,6 +12,42 @@ ingress: >+
 authors:
   - Nicklas Utgaard
 ---
-1.3.70 - 1.3.72 - Whats new here
-1.4.00 - 1.4.20 - Whats new here
-1.5.00 - What does the future hold
+# 1.3.70 release
+This version introduces a new `kotlin.collections.ArrayDeque`, which is conceptually similar to `java.util.ArrayDeque`, but it has its own implementation. And as such it is now possible to use if you're targeting a Kotlin/JS or Kotlin/Native. 
+
+Some other neat additions are the builder functions for common collections; `buildList`, `buildSet` and `buildMap`. And of course you can do whatever you want within the lambda, so this makes it really easy to conditionally add elements to our collections.
+
+```kotlin
+val list = buildList {
+    add("Hello, ")
+    if (isHelloWorld) {
+        add("World")
+    } else {
+        add("Kotlin")
+    }
+}
+
+val set = buildSet {
+    add("Hello")
+    add("World")
+}
+
+val map = buildMap<String, String> { 
+    put("Hello", "World")
+}
+```
+
+As if that wasn't enough this release also introduces `scan` and `scanReduce`. Functions who are closely related to `fold` and `reduce`, but returns the whole sequence of intermediate results instead of just the final result.
+```kotlin
+val list = 0..5
+val sum: (Int, Int) -> Int = { a, b -> a + b }
+
+val fold = list.fold(0, sum) // Returns 15
+val scan = list.scan(0, sum) // Returns [0, 1, 3, 6, 10, 15]
+```
+
+This is by no means an exhaustive list of changes, and we recommend taking a closer look at [the changelog](https://blog.jetbrains.com/kotlin/2020/03/kotlin-1-3-70-released/)
+
+# 1.4.0 release
+
+# 1.5.0 release future
