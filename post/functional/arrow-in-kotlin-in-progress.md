@@ -16,6 +16,8 @@ links:
 authors:
   - Simen Fonnes
 ---
-Either is great for handling errors because we can easily switch in a neat manner. The type consists of either a success or an error. This way we are forced to check both cases, which might make the code more reliable and prone to human error.
+Traditionally, we might use exceptions to handle errors. We perform some action and throw an exception if something goes wrong. However, the problem with exceptions is that we might lose control of where the error is handled because the error might be caught somewhere completely different in the project. Enter Either:
 
-In Arrow, Result<T, E> is implemented by using the type Either. Either has a left and right value. The Left contains an error and the Right contains a success value. 
+Either is a monadic alternative to handling errors. Either holds either a success or an error. When we call a function which returns an Either, we are forced to handle both a successful and a nonsuccessful case, and get a more direct engagement to the error handling.
+
+In Arrow, Either has a left and right value. The Left contains an error and the Right contains a success value.
