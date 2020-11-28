@@ -5,7 +5,7 @@ post_day: 12
 title: Kotlin metaprogramming with kotlinpoet
 ingress: Wouldn't it be sweet if you could automate writing code. Well, that's
   what we're taking a look at today. Metaprogramming, code generation, or in
-  short; writing kotlin code that generates even more kotlin code :mind_blown:.
+  short; writing kotlin code that generates even more kotlin code 🤯.
 description: kotlin metaprogramming meta kotlinpoet
 links:
   - url: https://square.github.io/kotlinpoet/
