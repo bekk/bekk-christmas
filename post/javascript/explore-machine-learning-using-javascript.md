@@ -14,22 +14,16 @@ ingress: If you have been following our JavaScript Christmas calendar, chances
 authors:
   - Herman Wika Horn
 ---
-For those unaware, machine learning is a field focusing on the development of models which are trained rather than explicitly programmed. Interest in machine learning has skyrocketed the last couple of decades, much thanks to the increased processing capabilities of modern computers. Machine learning algorithms can be used to solve problems like [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), [sequence mining](https://en.wikipedia.org/wiki/Sequential_pattern_mining), [computer vision](https://en.wikipedia.org/wiki/Computer_vision), [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) and more. Tools like [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) have made machine learning accessible for the masses, by enabling users with consumer grade GPUs or even CPUs to experiment with state-of-the-art machine learning methods. Some popular libraries are [ConvNet.js](https://cs.stanford.edu/people/karpathy/convnetjs/) for deep learning, [Brain.js](https://brain.js.org/#/) for neural networks, and [TensorFlow.js](https://www.tensorflow.org/js) for machine learning in general.
+### What is machine learning?
+For those unaware, machine learning is a field focusing on the development of algorithms, and resulting models, which are trained rather than explicitly programmed. Interest in machine learning has skyrocketed the last decades, much thanks to the increased processing capabilities of modern computers. Machine learning algorithms can be used to solve problems like [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), [sequence mining](https://en.wikipedia.org/wiki/Sequential_pattern_mining), [computer vision](https://en.wikipedia.org/wiki/Computer_vision), [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) and more. Tools like [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) have made machine learning accessible for the masses, by enabling users with consumer grade GPUs or even CPUs to experiment with state-of-the-art machine learning methods. Some popular libraries are [ConvNet.js](https://cs.stanford.edu/people/karpathy/convnetjs/) for deep learning, [Brain.js](https://brain.js.org/#/) for neural networks, and [TensorFlow.js](https://www.tensorflow.org/js) for machine learning in general.
 
 Considering that JavaScript is widely and primarily used to develop interactive web pages, one might ask why you should use JavaScript for machine learning? After all, there are more popular options readily available, like Python or R. Firstly, the interactivity of JavaScript is very sought-after and useful when making educational or entry-level applications. Furthermore, numerous helpful packages are available through package managers like npm or yarn. Lastly, if JavaScript is your primary programming language, the entry barrier for starting with machine learning using a library like TensorFlow.js is almost non-existent, given you are willing to do some theoretical research first.
 
-Supplementary to this blog post, I have written a small machine learning application using React and TensorFlow.js which I encourage you to check out. You can try the application [here](https://hermanwh.github.io/tfjs-example/), and see the code [here](https://github.com/hermanwh/tfjs-example). It implements a simple GUI, and allows user to upload a .csv file (given it has appropriate formatting...), select some desired input and output parameters, and train a predefined neural network regression model. This application, although very simplistic and specific, highlights some benefits of machine learning in the browser compared to other platforms:
-- It is very accessible, and (arguably) easy to use
-- Users without any programming experience can run the program, without the need for .py-scripts or code editors
-- It is easy to prototype input and output combinations
-- Increasing the usability or enhancing the design is very simple through the use of various npm/yarn-packages and css-styling
-
-_A small disclaimer before I move on_: If you are a JavaScript developer, familiar with React in particular, and you are not in the mood for theoretical explanations, I suggest you skim this article very briefly, and instead focus on the previously mentioned application. Perhaps you will want to come back to the article after checking it out!
-
+### A brief introduction
 In general, machine learning consists of gathering a set of data from a domain of interest, performing actions and transformations on this data for it to meet certain desirable properties, train some machine learning model, and interpret the results to draw some form of conclusion. In pseudocode, this may look something like this:
 
 ```javascript
-var machineLearningParameters = loadMachineLearningParameters();
+var machineLearningParameters = { ... };
 var data = loadDataFromSource();
 
 data = preprocess(data);
@@ -62,8 +56,10 @@ Some required parameters when defining a machine learning are as follows (NB: do
 
 The last thing you need to know is that data is usually split into three categories. Training data is used for model training. Validation data is used during training to validate the model on data not used for training. Testing data is used to evaluate the performance of the trained model, by measuring the difference between the calculated output by the model and the expected output in the testing data. Crucially, each of these partitions must have the same statistical properties. A usual strategy is to shuffle the data, before using perhaps 60% for training, 20% for validation and 20% for testing. 
 
-Hopefully you have made it this far, alive and well! Finally, you are ready to see some code examples using TensorFlow.js. Note that the syntax and arguments are very similar to anything you would see in e.g. Python or R.
+### A practical example
+Finally, you are ready to see some code examples using TensorFlow.js. Note that the syntax and arguments are very similar to anything you would see in e.g. Python or R.
 
+#### Loading, parsing and transforming data
 First, you must load your data into your program. Using JavaScript, loading and parsing your data to the desired format may be the most challenging task of programming an entry-level application, at least in my experience. TensorFlow.js offers some functionality for this purpose, however it is not trivial to use when loading data uploaded through the frontend. Feel free to try it out for yourself using [the TensorFlow documentation](https://js.tensorflow.org/api/0.14.1/#data.csv). If you instead want to rely on your own JavaScript parsing skills, I wrote a small guide how to do this with [react-csv-reader](https://www.npmjs.com/package/react-csv-reader), available in [this GitHub readme file.](https://github.com/hermanwh/tfjs-example).
 
 Assuming you made it past the hurdle of loading your data using the above guidelines and have managed to split it based on your input and output parameters, you should be left with four JavaScript arrays: _x_train_, _x_test_, _y_train_, and _y_test_. Arrays prefixed with _x_ are inputs, while _y_ are outputs. We will use the training data to fit our machine learning model, and keep the testing data for later in order to evaluate the model performance. Suppose all loading and preprocessing was done using an imaginary _loadAndPreprocessData_ method:
@@ -82,6 +78,7 @@ tensors.testFeatures = tf.tensor2d(x_test);
 tensors.testTargets = tf.tensor2d(y_test);
 ```
 
+#### Defining a neural network model
 Next, we define our neural network model with a desirable structure, in this case a single hidden layer of 128 units, and input and output layers according to the size of our training data:
 
 ```javascript
@@ -122,6 +119,8 @@ const callbacks = tfvis.show.fitCallbacks(
     }
 );
 ```
+
+#### Model training and evaluation
 Finally, the model can be fitted:
 ```javascript
 model.fit(tensors.trainFeatures, tensors.trainTargets, {
@@ -139,4 +138,7 @@ const predictions = model.predict(tensors.testFeatures)
 
 We may now evaluate how well the function defined by the neural network approximates the relation between input and output variables, for instance by calculating the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination).
 
+### Final thoughts
 Reaching the conclusion of this blog post, I have come to realize that perhaps it was too ambitious to present and demonstrate regression analysis and neural networks with JavaScript in a single blog post. There are numerous interesting areas for which frameworks like TensorFlow.js can be applied, perhaps most successful if combined with appropriate backend frameworks for model training. Unfortunately, we barely scratched the surface of a small domain of machine learning. Even so, if you made it this far, I hope you are left with increased interest in machine learning, and encourage you to seek out additional literature!
+
+Supplementary to this blog post, I have written a small machine learning application using React and TensorFlow.js which I encourage you to check out. You can try the application [here](https://hermanwh.github.io/tfjs-example/), and see the code [here](https://github.com/hermanwh/tfjs-example). It implements a simple GUI, and allows user to upload a .csv file (given it has appropriate formatting), select some desired input and output parameters, train a predefined neural network regression model, and evaluate its performance.
