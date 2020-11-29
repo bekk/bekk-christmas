@@ -14,7 +14,7 @@ authors:
 ---
 If you by any chance don't know what ARM templates are and you're still reading, here is a really short introduction: An [ARM-template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/) is essentially a JSON-object that describes your resources in Azure. Besides it can take parameters as input and return certain values as outputs. There also exists various constructs for doing some simple conditional logic, loops, string manipulations, and more. Resources are created or updated using the template in a `deployment` that you submit to the [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview), Azure's deployment and management service. A simple template may look like this:
 
-```jsonc
+```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0",
