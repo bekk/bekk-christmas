@@ -65,7 +65,7 @@ The beauty of ARM templates is that any template can be used as a part of anothe
 
 A deployment resource must have a unique name in the context of the template, as it is used as an identifier when referencing it. You may also pass parameters to the deployment. This particular template takes a single required parameter, `storageAccountNameBase`, and it is therefore specified in the `parameters` section of the deployment's `properties`. Additionally, since a linked template is a resource like any other, you can use all the same constructs as with other resource types (conditions, loops, and so on). 
 
-Templates can define values to output as a result of the deployment. This comes in handy when composing larger templates using several, smaller linked templates. To reference outputs from a deployment, you need to `reference` it, and the simplest way of doing this is through its name: 
+Templates can define values to output as a result of the deployment. This comes in handy when composing larger templates using several, smaller linked templates. To use outputs from a deployment, you need to `reference` it, and the simplest way of doing this is through its name: 
 
 ```json
 {
