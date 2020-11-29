@@ -27,6 +27,8 @@ data class RawUser(
     val email: String
 )
 
+class InvalidEmailException: java.lang.RuntimeException("Invalid email")
+
 class ValidatedUser private constructor(
     val email: String
 ) {
@@ -35,7 +37,7 @@ class ValidatedUser private constructor(
             if (EMAIL_REGEX.matches(rawUser.email)) {
                 ValidatedUser(rawUser.email)
             } else {
-                throw RuntimeException("Invalid email")
+                throw InvalidEmailException()
             }
     }
 }
