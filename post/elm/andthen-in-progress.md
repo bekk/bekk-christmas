@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 15
 title: Reducing boilerplate code in Elm with Maybe.andThen
 ingress: Working with the `Maybe` type in Elm may result in excessive pattern
-  matching because Elm forces us to handle every outcome of a `Maybe`. In this
+  matching because Elm forces us to handle all possible outcomes. In this
   article, we investigate how the `Maybe.andThen` function can be used to
   improve readability by reducing unnecessary pattern matching and boilerplate
   code.
@@ -15,7 +15,7 @@ links:
 authors:
   - Simen Fonnes
 ---
-Consider that we want to implement a function that takes a `String` name which consists of several names and returns the last name in this `String` if it exists. The signature can look something like this:
+Consider that we want to implement a function that takes a `String` name which consists of several names and returns the last name if it exists. The signature can look something like this:
 
 ```elm
 toLastName : Maybe String -> Maybe String
@@ -23,6 +23,7 @@ toLastName : Maybe String -> Maybe String
 We implement the `toLastName` function by splitting the `String` on space, reversing the list, and finally collecting the first element in the reversed list. Using `Maybe.map`, we can do it like this:
 
 ```elm
+toLastName : Maybe String -> Maybe String
 toLastName name =
     name
         |> Maybe.map (String.split " ")
@@ -31,7 +32,7 @@ toLastName name =
         |> Maybe.withDefault Nothing
 ```
 
-As you can see, we end up with `Maybe (Maybe String)` after `List.head` operation, because `head` operation returns a `Maybe List`. Therefore, we have to use a `Maybe.withDefault`, in order to extract the inner `Maybe`. To remove this line of unnecessary code, we can use the `andThen` function:
+As you can see, we end up with `Maybe (Maybe String)` after `List.head` operation, because `head` operation returns a `Maybe String`. Therefore, we have to use a `Maybe.withDefault`, in order to extract the inner `Maybe`. To remove this line of unnecessary code, we can use the `andThen` function:
 
 ```elm
 andThen : (a -> Maybe b) -> Maybe a -> Maybe b
@@ -50,6 +51,7 @@ andThen callback maybe =
 By using `andThen` function, we can remove the excessive line in the previous implementation:
 
 ```elm
+toLastName : Maybe String -> Maybe String
 toLastName name =
     name
         |> Maybe.map (String.split " ")
@@ -62,6 +64,7 @@ As we have seen so far in this article, `andThen` is suitable for transformation
 Let’s say that we reimplement the same `toLastName` function, but this time we want to return `Nothing` if the last last name is less than seven characters. Using `map`, we can implement it like this:
 
 ```elm
+toLastName : Maybe String -> Maybe String
 toLastName name =
     name
         |> Maybe.map (String.split " ")
@@ -81,11 +84,13 @@ toLastName name =
 In this example, we also end up with a `Maybe String` and thus need an additional `withDefault` expression. If we, on the other hand, make use of `andThen`, we remove this line:
 
 ```elm
+toLastName : Maybe String -> Maybe String
 toLastName name =
     name
         |> Maybe.map (String.split " ")
         |> Maybe.map List.reverse
         |> Maybe.andThen List.head
+        |> Maybe.andThen
             (\lastName ->
                 if String.length lastName >= 7 then
                     Just lastName
