@@ -2,12 +2,10 @@
 calendar: functional
 post_year: 2020
 post_day: 15
-title: Arrow in Kotlin *IN PROGRESS*
-ingress: Arrow is a library that provides functional types out of the box in
-  Kotlin. These functional types are typed and resemble popular functional types
-  such as `Functor`, `Monad`, etc. In this article, we take a closer look at
-  Arrow's `Either` type and how it is often used as an Error monad, the pros,
-  the cons, and alternatives.
+title: On Monadic Error Handling
+ingress: "In this article, we compare the use of exceptions, `Either`, and
+  `Result`: the good and the bad."
+description: ""
 links:
   - url: https://arrow-kt.io/
     title: Arrow
@@ -16,11 +14,11 @@ links:
 authors:
   - Simen Fonnes
 ---
-Traditionally, we may use exceptions to handle errors. We perform some action and throw an exception if something goes wrong. However, the problem with exceptions is that we might lose control of where the error is handled because the error might be caught somewhere completely different in the project. Also, if you are calling a function which may throw an exception, it is difficult to know what kind of exception is thrown. Enter Either:
+Traditionally, we may use exceptions to handle errors. We perform some action and throw an exception if something goes wrong. However, the problem with exceptions is that we might lose control of where the error is handled because the error might be caught somewhere completely different in the project. Also, if you are calling a function, how do you know if it can throw and exception? And if it does, what kind of exception? These are hard questions to answer, enter `Either`:
 
-Either can be used as a typesafe alternative for error handling. `Either` holds one of two values, a Left or a Right. When we call a function which returns an Either, we are forced to handle both a successful and an unsuccessful case, and get a more direct engagement to the error handling. The return type will be Either, showing the developer exactly what cases may occur. If we were to use exceptions, there is no method signature for the developer to see what cases may occur. This leads to the developer either ignoring the exception or having to interpret the function body and all possible underlying method calls.
+`Either` can be used as a typesafe alternative for error handling. `Either` holds one of two values, a `Left` or a `Right`. When we call a function which returns an `Either`, we are forced to handle both a successful and an unsuccessful case, and get know exactly what this function returns. On the other hand, if we were to use exceptions, there is no method signature for the developer to see what cases may occur. With a lack of a complete method signature, developer must either ignore the exception or interpret the function body and all possible underlying method calls.
 
-Let us say that we want to return a `ValidatedUser` if the email address of a `RawUser` matches a given regex pattern. Using exceptions, we can implement it by calling the `matches` function and throwing a `InvalidEmailException` if the email does not match the regex:
+Let us say that we want to validate an email address using an _opaque type_. Look at the code below. The only way to obtain an instance of `ValidatedUser` is to provide a `RawUser` with a valid email address to the static `validate` function.
 
 ```kotlin
 data class RawUser(
