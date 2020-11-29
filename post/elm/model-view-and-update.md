@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 19
-title: Model, view and update
+title: "WIP: Model, view and update"
 ingress: >-
   Elm and other functional programming languages might look weird and scary to
   newcomers, but once you get to know them, functional languages becomes very
