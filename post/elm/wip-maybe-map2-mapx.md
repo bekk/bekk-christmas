@@ -80,4 +80,4 @@ toContactPerson =
     Maybe.map5 ContactPerson
 ```
 
-Notice that there is no `Maybe.map6` or above in the standard library of Elm. Consequently, if we shall ever need them, we have to get them elsewhere. We can either implement them ourselves or just use the `Maybe.mapN`-capabilities of the [`Maybe.Extra`-library](https://package.elm-lang.org/packages/elm-community/maybe-extra/latest/Maybe-Extra).
+Notice that there is no `Maybe.map6` or above in the standard library of Elm. Consequently, if we shall ever need them, we have to get them elsewhere. We can either implement them ourselves or just use the `Maybe.mapN`-capabilities of the [`Maybe.Extra`-library](https://package.elm-lang.org/packages/elm-community/maybe-extra/latest/Maybe-Extra#andMap).
