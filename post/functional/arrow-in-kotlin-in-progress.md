@@ -90,6 +90,6 @@ when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
 }
 ```
 
-`Either` is rather generic, and thus, `Left` and `Right` may not make sense for the reader by itself. Additionally, you may also notice that `left` and `right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
+`Either` is rather generic, and thus, `Left` and `Right` may not make sense for the reader by itself. Additionally, you may also notice that `Left` and `Right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
 
-If you want all the advantages of `Either`, but also want to stay semantically accurate in the context of error handling, check out [`Result<T, E>`](https://github.com/michaelbull/kotlin-result). Right changes to `Ok`, and `Left` to `Err`. It makes it significantly harder to confuse `Left` and Right as Ok and Err makes sense in their own right.
+If you want all the advantages of `Either`, but also want to stay semantically accurate in the context of error handling, check out [`Result<T, E>`](https://github.com/michaelbull/kotlin-result). `Right` changes to `Ok`, and `Left` to `Err`. It makes it significantly harder to confuse `Left` and `Right` as `Ok` and `Err` makes sense in their own right (pun intended).
