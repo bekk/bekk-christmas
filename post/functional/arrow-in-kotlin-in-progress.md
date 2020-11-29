@@ -16,8 +16,8 @@ links:
 authors:
   - Simen Fonnes
 ---
-Traditionally, we might use exceptions to handle errors. We perform some action and throw an exception if something goes wrong. However, the problem with exceptions is that we might lose control of where the error is handled because the error might be caught somewhere completely different in the project. Enter Either:
+Traditionally, we may use exceptions to handle errors. We perform some action and throw an exception if something goes wrong. However, the problem with exceptions is that we might lose control of where the error is handled because the error might be caught somewhere completely different in the project. Also, if you are calling a function which may throw an exception, it is difficult to know what kind of exception is thrown. Enter Either:
 
-Either is a monadic alternative to handling errors. Either holds either a success or an error. When we call a function which returns an Either, we are forced to handle both a successful and a nonsuccessful case, and get a more direct engagement to the error handling.
+Either can be used as a typesafe alternative for error handling. `Either` holds one of two values, a Left or a Right. When we call a function which returns an Either, we are forced to handle both a successful and an unsuccessful case, and get a more direct engagement to the error handling. The return type will be Either, showing the developer exactly what cases may occur. If we were to use exceptions, there is no method signature for the developer to see what cases may occur. This leads to the developer either ignoring the exception or having to interpret the function body and all possible underlying method calls.
 
 In Arrow, Either has a left and right value. The Left contains an error and the Right contains a success value.
