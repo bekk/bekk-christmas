@@ -40,7 +40,7 @@ If you by any chance don't know what ARM templates are and you're still reading,
 
 The beauty of ARM templates is that any template can be used as a part of another larger template. When you do this, you are _linking_ a template into another – thus the name _linked templates_. To use another template as a linked template, you specify a resource of type `deployment`:
 
-```jsonc
+```json
 {
   "resources": [
     {
@@ -67,7 +67,7 @@ A deployment resource must have a unique name in the context of the template, as
 
 Templates can define values to output as a result of the deployment. This comes in handy when composing larger templates using several, smaller linked templates. To reference outputs from a deployment, you need to `reference` it, and the simplest way of doing this is through its name: 
 
-```jsonc
+```json
 {
   "outputs": {
     "storageAccountName": {
@@ -80,7 +80,7 @@ Templates can define values to output as a result of the deployment. This comes 
 
 Now you know the basics on how to break apart your monolithic ARM-templates into modularized components. But one question remains: How to share your linked templates with the world? Well, the keyword is in the name: _"Linked"_ templates. Each resource of type `deployment` has a crucial property that you may have noticed already:
 
-```jsonc
+```json
 {
   "templateLink": {
     "uri": "URL to the actual template file"
@@ -92,7 +92,7 @@ If the `templateLink` has the value of an URL that can be reached through the in
 
 First of all, you need some form of storage. This is an Azure blog post, so we will use a [Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) for this purpose. You can create one using the Azure CLI like this (or use an ARM template 😉):
 
-```powershell
+```
 # create a resource group for your "registry"
 az group create -n MyTemplatesRegistryRG -l westeurope
 # create storage account
@@ -145,7 +145,7 @@ az storage container set-permission --account-name mytemplateregistry --name fee
 
 Having the templates anonymously available makes consuming them a lot easier as you can hard code the full URL in the consuming templates like this:
 
-```jsonc
+```json
 {
   "templateLink": {
     "uri": "https://mytemplateregistry.blob.core.windows.net/feed/keyvault/vault/1.0.0/template.json"
