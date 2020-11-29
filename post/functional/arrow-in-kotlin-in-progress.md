@@ -18,7 +18,7 @@ Traditionally, we may use exceptions to handle errors. We perform some action an
 
 `Either` can be used as a typesafe alternative for error handling. `Either` holds one of two values, a `Left` or a `Right`. When we call a function which returns an `Either`, we are forced to handle both a successful and an unsuccessful case, and get to know exactly what this function returns. On the other hand, if we were to use exceptions, there is no method signature for the developer to see what cases may occur. Developers may annotate a function with `@Throws("")`, but since this is optional, it is not dependable. Therefore, with lack of a complete method signature, developers must either ignore the exception or interpret the function body and all possible underlying method calls.
 
-Let us say that we want to validate an email address using an _opaque type_. Look at the code below. The only way to obtain an instance of `ValidatedUser` is to provide a `RawUser` with a valid email address to the static `validate` function.
+Let us say that we want to validate an email address using an [_opaque type_](https://en.wikipedia.org/wiki/Opaque_data_type). Look at the code below. The only way to obtain an instance of `ValidatedUser` is to provide a `RawUser` with a valid email address to the static `validate` function.
 
 ```kotlin
 data class RawUser(
@@ -51,7 +51,7 @@ try {
 }
 ```
 
-You may have already noticed that we catch `Exception` and not `InvalidEmailException`. This illustrate the main issue with exceptions, they are dynamically typed. The only way to know which exceptions might be thrown is to manually check the function body (and the body of any internal function calls). This may not always be trivial, for example, if you are using an external library.
+You may have already noticed that we catch `Exception` and not `InvalidEmailException`. This illustrates the main issue with exceptions, they are dynamically typed. The only way to know which exceptions might be thrown is to manually parse the function body (and the body of any internal function calls). This may not always be trivial, for example, if you are calling a function from an external library.
 
 Luckily, there is neat solution to this problem. Using the same `RawUser` class, we can implement it using `Either` from the [Arrow library](https://arrow-kt.io/docs/apidocs/arrow-core-data/arrow.core/-either/):
 
