@@ -51,9 +51,9 @@ try {
 }
 ```
 
-We do not know what exception to catch, therefore we have to catch Exception and log. You can check the implementation of `validate` function, but most developers wont. Also, if this would be an external library it might be hard to navigate and find what exception is thrown.
+You may have already noticed that we catch `Exception` and not `InvalidEmailException`. This illustrate the main issue with exceptions, they are dynamically typed. The only way to know which exceptions might be thrown is to manually check the function body (and the body of any internal function calls). This may not always be trivial, for example, if you are using an external library.
 
-However, using the same RawUser class, we can implement using Either like this:
+However, using the same `RawUser` class, we can implement using Either like this:
 
 ```kotlin
 enum class ValidationError {
