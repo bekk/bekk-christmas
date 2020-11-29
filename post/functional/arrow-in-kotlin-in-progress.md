@@ -53,7 +53,7 @@ try {
 
 You may have already noticed that we catch `Exception` and not `InvalidEmailException`. This illustrates the main issue with exceptions, they are dynamically typed. The only way to know which exceptions might be thrown is to manually parse the function body (and the body of any internal function calls). This may not always be trivial, for example, if you are calling a function from an external library.
 
-Luckily, there is neat solution to this problem. Using the same `RawUser` class, we can implement it using `Either` from the [Arrow library](https://arrow-kt.io/docs/apidocs/arrow-core-data/arrow.core/-either/):
+Luckily, there is a neat solution to this problem. Using the same `RawUser` class, we can implement it using `Either` from the [Arrow library](https://arrow-kt.io/docs/apidocs/arrow-core-data/arrow.core/-either/):
 
 ```kotlin
 enum class ValidationError {
@@ -90,6 +90,6 @@ when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
 }
 ```
 
-`Either` is rather generic, and thus, left and right may not make sense for the reader by itself. Additionally, you may also notice that `left` and `right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
+`Either` is rather generic, and thus, `Left` and `Right` may not make sense for the reader by itself. Additionally, you may also notice that `left` and `right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
 
 If you want all the advantages of `Either`, but also want to stay semantically accurate in the context of error handling, check out [`Result<T, E>`](https://github.com/michaelbull/kotlin-result). Right changes to `Ok`, and `Left` to `Err`. It makes it significantly harder to confuse `Left` and Right as Ok and Err makes sense in their own right.
