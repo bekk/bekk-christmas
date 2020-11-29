@@ -24,7 +24,7 @@ public fun Iterable<Int>.sum(): Int {
 }
 ```
 
-Say we wanted to sum a list of `java.math.BigDecimal`, `listOf(BigDecimal(1), BigDecimal(2), BigDecimal(3),).sum()`.
+Say we wanted to sum a list of `java.math.BigDecimal`, `listOf(BigDecimal(1), BigDecimal(2), BigDecimal(3)).sum()`.
 This does not compile because the function `sum` does not exist for `BigDecimal`.
 We could define it like the following code snippet, which is exactly the same as the implementation for `Int` except from swapping `Int` with `BigDecimal`:
 
