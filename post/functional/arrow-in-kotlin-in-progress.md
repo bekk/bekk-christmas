@@ -53,7 +53,7 @@ try {
 
 However, using the same RawUser class, we can implement using Either like this:
 
-```
+```kotlin
 class ValidatedUser private constructor(
     val email: String
 ) {
@@ -68,7 +68,7 @@ class ValidatedUser private constructor(
 }
 ```
 
-```
+```kotlin
 when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
     is Left -> println(validatedUser.a.name)
     is Right -> println(validatedUser.b)
