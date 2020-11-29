@@ -8,6 +8,8 @@ ingress: Have you ever needed to combine different Maybe-values to produce
 links:
   - url: https://package.elm-lang.org/packages/elm/core/latest/Maybe#map2
     title: Maybe.map2
+  - url: https://package.elm-lang.org/packages/elm-community/maybe-extra/latest/Maybe-Extra
+    title: Maybe.Extra
 authors:
   - Fredrik Løberg
 ---
