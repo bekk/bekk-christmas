@@ -81,7 +81,7 @@ It is crystal clear what this function does from the signature alone. You either
 
 There are cons to this approach as well as with exceptions. The choice of whether error value is in the left of right slot is completely dependent on convention. It may be easily confused by new developers but also more senior developers. Consider this, which of these cases prints the error?
 
-```elm
+```kotlin
 when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
     is Left -> println(validatedUser.a)
     is Right -> println(validatedUser.b)
