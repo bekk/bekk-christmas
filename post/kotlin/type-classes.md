@@ -150,5 +150,4 @@ new `extension` keyword to define instances of interfaces, and mechanisms to ret
 keyword. These changes could make it more convenient to use type classes in Kotlin in the future. For the above example, 
 by enabling invocation of `sum()` without providing the type class instance of `bigDecimalAddable()`.
 
-This was a short introduction to type classes in Kotlin. If you found this interesting, it is worth taking a look at 
-the [Arrow library](https://arrow-kt.io/docs/typeclasses/intro/), which implements a number of type classes.
+If you found this short introduction to type classes in Kotlin interesting, you should definitely check out the [Arrow library](https://arrow-kt.io/docs/typeclasses/intro/), which implements a number of type classes.
