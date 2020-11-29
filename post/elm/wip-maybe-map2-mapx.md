@@ -60,3 +60,22 @@ toContactPerson : Maybe String -> Maybe String -> Maybe ContactPerson
 toContactPerson =
     Maybe.map2 ContactPerson
 ```
+
+Expanding `ContactPerson` further with more properties is also trivial:
+
+```elm
+toContactPerson : Maybe String -> Maybe String -> Maybe String -> Maybe ContactPerson
+toContactPerson =
+    Maybe.map3 ContactPerson
+
+toContactPerson : Maybe String -> Maybe String -> Maybe String -> Maybe String -> Maybe ContactPerson
+toContactPerson =
+    Maybe.map4 ContactPerson
+
+
+toContactPerson : Maybe String -> Maybe String -> Maybe String -> Maybe String -> Maybe String -> Maybe ContactPerson
+toContactPerson =
+    Maybe.map5 ContactPerson
+```
+
+Notice that there is no `Maybe.map6` or above in the standard library of elm. Consequently, if we shall ever need them, we have to get them elsewhere. We can either implement them ourselves, or just use the `Maybe.mapN`-capabilities of the `Maybe.Extra`-library.
