@@ -14,7 +14,7 @@ Lets use the example of finding the sum of something, like integers. From the st
 function that can be applied to lists, `listOf(1,2,3).sum()`, resulting in `6`. The `sum` function is implemented 
 in the standard library as an extension function on `Iterable`:
 
-```
+```kotlin code
 public fun Iterable<Int>.sum(): Int {
     var sum: Int = 0
     for (element in this) {
@@ -28,7 +28,7 @@ Say we wanted to sum a list of `java.math.BigDecimal`, `listOf(BigDecimal(1), Bi
 This does not compile because the function `sum` does not exist for `BigDecimal`.
 We could define it like the following code snippet, which is exactly the same as the implementation for `Int` except from swapping `Int` with `BigDecimal`:
 
-```
+```kotlin code
 public fun Iterable<BigDecimal>.sum(): BigDecimal {
     var sum: Int = BigDecimal(0)
     for (element in this) {
@@ -41,7 +41,7 @@ public fun Iterable<BigDecimal>.sum(): BigDecimal {
 To avoid repeating this implementation for all the types we want to sum, let's try creating an interface `Addable`
 so that we can make the sum function generic for subtypes of `Addable`:
 
-```
+```kotlin code
 interface Addable<T> {
     fun plus(other: T): T
 }
@@ -51,7 +51,7 @@ The `Addable` interface has one function `plus`, adding two instances of `T` and
 
 Using the `Addable` interface, our sum function on `Iterable` would look like this:
 
-```
+```kotlin code
 fun <T : Addable<T>> Iterable<T>.sum(): T? {
     var sum: T? = null
     for (element in this) {
@@ -68,7 +68,7 @@ This is a problem when the iterable is empty, so we'll have to change the return
 A second problem is that we cannot make `BigDecimal` extend our new `Addable` interface - or any other types that
 we use from other libraries. So to make this work for `BigDecimal`, we'll have to make a wrapper that can extend `Addable`:
 
-```
+```kotlin code
 inline class BigDecimal(val value: java.math.BigDecimal) : Addable<BigDecimal> {
     override fun add(other: BigDecimal): BigDecimal = BigDecimal(value + other.value)
 }
@@ -79,7 +79,7 @@ convenient to use. In fact, the function `sum` is duplicated for `Byte`, `Short`
 in the standard library.
 However, let's try to redefine our `Addable` interface to a type class:
 
-```
+```kotlin code
 interface Addable<T> {
     fun T.plus(t: T): T
     fun zero(): T
@@ -97,7 +97,7 @@ by adding the function `zero` to the type class.
 
 This is how the implementation of `sum` could be, using the `Addable` type class: 
 
-```
+```kotlin code
 fun <A> Iterable<T>.sum(addable: Addable<T>): T {
     var sum: T = addable.zero()
     for (element in this) {
@@ -117,7 +117,7 @@ extension function `plus` available for instances of `T`.
 To make it more convenient to create instances of the `Addable` type class, we can add a function `instance` to its
 companion object, taking the two functions `zero` and `plus` as parameters, and returning a new instance of `Addable`:
 
-```
+```kotlin code
 interface Addable<T> {
     fun T.plus(t: T): T
     fun zero(): T
@@ -135,13 +135,14 @@ interface Addable<T> {
 
 Now, it is easy to create an instance of `Addable` for `BigDecimal`: 
 
-```
-fun bigDecimalAddable(): Addable<BigDecimal> = Addable.instance({ a, b -> a + b },  { BigDecimal(0) })
+```kotlin code
+fun bigDecimalAddable(): Addable<BigDecimal> =
+    Addable.instance({ a, b -> a + b },  { BigDecimal(0) })
 ```
 
 Which can be used like this:
 
-```
+```kotlin code
 listOf(BigDecimal(1), BigDecimal(2), BigDecimal(3)).sum(bigDecimalAddable())
 ```
 
