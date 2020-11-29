@@ -12,7 +12,7 @@ ingress: This blog post will not focus on how or even why you should write your
 authors:
   - Kristian Johannessen
 ---
-If you by any chance don't know what ARM templates are and you're still reading, here is a really short introduction: An [ARM-template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/) is essentially a JSON-object that describes your resources in Azure. Besides it can take parameters as input and return certain values as outputs. There also exists various constructs for doing some simple conditional logic, loops, string manipulations, and more. Resources are created or updated using the template in a `deployment` that you submit to the [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview), Azure's deployment and management service. A simple template may look like this:
+If you by any chance don't know what ARM templates are and you're still reading, here is a really short introduction: An [ARM-template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/) is essentially a JSON-object that describes your resources in Azure. It can take parameters as input and return certain values as outputs. There also exists various constructs for doing some simple conditional logic, loops, string manipulations, and more. Resources are created or updated using the template in a `deployment` that you submit to the [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview), Azure's deployment and management service. A simple template may look like this:
 
 ```json
 {
