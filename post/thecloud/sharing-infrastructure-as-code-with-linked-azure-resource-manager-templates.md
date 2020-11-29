@@ -92,7 +92,7 @@ If the `templateLink` has the value of an URL that can be reached through the in
 
 First of all, you need some form of storage. This is an Azure blog post, so we will use a [Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) for this purpose. You can create one using the Azure CLI like this (or use an ARM template 😉):
 
-```
+```bash
 # create a resource group for your "registry"
 az group create -n MyTemplatesRegistryRG -l westeurope
 # create storage account
