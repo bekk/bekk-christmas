@@ -8,6 +8,10 @@ authors:
 ---
 Born from constraints and out of necessity, the Takahasi method is a way of designing text-only presentations. Using one word. Maybe two. Per slide. 
 
+
+
+![The above intro in Takahashi-style presentation](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-09/takahashi-intro.gif)
+
 A method for creating presentations when you have no intentions of dealing with graphic design. The Takahashi-method is a bare-bone style, using words alone or short sentences as visuals. There is room only for the bare minimum, and whatever is on display should underline the spoken word and be a point worth making. 
 
 Lawrence Lessig is one of the more notable presenters who borrow from this style. The clip below is an example of Lessig in action with his distinct way of presenting. 
