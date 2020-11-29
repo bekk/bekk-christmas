@@ -3,14 +3,12 @@ calendar: thecloud
 post_year: 2020
 post_day: 23
 title: Sharing infrastructure as code with linked Azure Resource Manager templates
-ingress: >-
-  <!--StartFragment-->
-
-
-  This blog post will not focus on how or even why you should write your infrastructure as code. Rather, it will focus on how you, a curious developer working with Azure Resource Manager (ARM), can modularize your infrastructure code and share it with others through linked ARM templates. I will also show you the basic parts of a self-made "repository" of templates which makes using shared templates a breeze.
-
-
-  <!--EndFragment-->
+ingress: This blog post will not focus on how or even why you should write your
+  infrastructure as code. Rather, it will focus on how you, a curious developer
+  working with Azure Resource Manager (ARM), can modularize your infrastructure
+  code and share it with others through linked ARM templates. I will also show
+  you the basic parts of a self-made "repository" of templates which makes using
+  shared templates a breeze.
 authors:
   - Kristian Johannessen
 ---
