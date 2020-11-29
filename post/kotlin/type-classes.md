@@ -11,7 +11,7 @@ inheritance, the implementation of the behaviour for a type is decoupled from th
 In this post, we'll walk through an example that demonstrates this in Kotlin. 
 
 Lets use the example of finding the sum of something, like integers. From the standard library we have the `sum`
-function that can be applied to lists, `listOf(1,2,3).sum()`, resulting in `6`. The `sum` function is implemented 
+function that can be applied to lists, `listOf(1, 2, 3).sum()`, resulting in `6`. The `sum` function is implemented 
 in the standard library as an extension function on `Iterable`:
 
 ```kotlin code
