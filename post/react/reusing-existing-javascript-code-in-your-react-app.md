@@ -46,19 +46,7 @@ Taking the naive approach, I want to import the code to use it in my dummy-app*.
 import React from "react";
 import workshop from "image-workshop";
 
-export default class MyClassEditor extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-    }
-
-    render() {
-        return (
-            <h1>Photoshop</h1>
-        )
-    }
-}
+export default class MyClassEditor extends React.Component {...}
 ```
 
 Uh oh, *TypeError: document.querySelector(...)* is null. So the main problem here is that this code is not really made for being used in other applications. It does a bunch of stuff in *index.js* as it is imported, and it does not export any of the functions I wanted to reuse. Yikes. 
@@ -75,7 +63,7 @@ const sharpen = require('./effects/sharpen');
 
 /*const editor = new Editor();...*/
 
-module.exports = [Editor, histogramequalization, medianfilter, invert, colorfilter, sharpen];
+module.exports = {Editor, histogramequalization, medianfilter, invert, colorfilter, sharpen};
 ```
 
  Then we can just use these functions in our code:
@@ -115,7 +103,4 @@ export default class MyClassEditor extends React.Component {
 
 And success! I get my own version of photoshop inside my React app!
 
-![The sea, illustrating the usage of the functions imported from a different project](assets/ocean.png "Comparison of edited and final image after I have played around with my new photoshop! ")
-
-\
-Original photo by [Photoholgic](https://unsplash.com/@photoholgic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png)
