@@ -30,7 +30,7 @@ We could define it like the following code snippet, which is exactly the same as
 
 ```kotlin code
 public fun Iterable<BigDecimal>.sum(): BigDecimal {
-    var sum: Int = BigDecimal(0)
+    var sum: BigDecimal = BigDecimal(0)
     for (element in this) {
         sum += element
     }
@@ -55,7 +55,7 @@ Using the `Addable` interface, our sum function on `Iterable` would look like th
 fun <T : Addable<T>> Iterable<T>.sum(): T? {
     var sum: T? = null
     for (element in this) {
-        sum = sum?.add(element) ?: element 
+        sum = sum?.plus(element) ?: element 
     }
     return sum
 }
@@ -70,7 +70,7 @@ we use from other libraries. So to make this work for `BigDecimal`, we'll have t
 
 ```kotlin code
 inline class BigDecimal(val value: java.math.BigDecimal) : Addable<BigDecimal> {
-    override fun add(other: BigDecimal): BigDecimal = BigDecimal(value + other.value)
+    override fun plus(other: BigDecimal): BigDecimal = BigDecimal(value + other.value)
 }
 ```
 
@@ -98,7 +98,7 @@ by adding the function `zero` to the type class.
 This is how the implementation of `sum` could be, using the `Addable` type class: 
 
 ```kotlin code
-fun <A> Iterable<T>.sum(addable: Addable<T>): T {
+fun <T> Iterable<T>.sum(addable: Addable<T>): T {
     var sum: T = addable.zero()
     for (element in this) {
         addable.run {
@@ -126,7 +126,7 @@ interface Addable<T> {
         fun <T> instance(plus: (T,T) -> T, zero: () -> T): Addable<T> {
             return object : Addable<T> {
                 override fun T.plus(t: T) = plus(this, t)
-                override fun zero(): T = empty()
+                override fun zero(): T = zero()
             }
         }
     }
