@@ -41,3 +41,13 @@ class ValidatedUser private constructor(
 }
 ```
 
+And we may call it like so:
+
+```kotlin
+try {
+    println(ValidatedUser.validate(RawUser(emailAddress)).email)
+} catch (e: Exception) {
+    println(e.message)
+}
+```
+
