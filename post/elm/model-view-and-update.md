@@ -23,7 +23,7 @@ type alias Model =
 ```
 
 The state of the program is currently represented by two properties, a counter of how many gifts someone has received that is represented by an `Int` type, and an overview of gifts that has been received represented by a `List String` type.
-The `Model` is in elm represented by what is called a **record**, and is a central store for all the data we use to represent the state of our application. The `Model` will (or at least should) at all times contain the most recent data that we want to use in our program. So if a user has clicked something that changes  the state of our program this should create a new state which will be the current state of the program.
+The `Model` is in elm represented by what is called a **record**, and is a central store for all the data we use to represent our application with. The `Model` will at all times contain the most recent data that we want to use in our program. So if a user has clicked something that changes  the state of our program this should create a new state which will be the current state of the program.
 
 So how is the `Model` updated? The state of a program should not be manipulated from all over the place, so the only place that we can use to directly manipulate the `Model` is in the `update` function. This collects messages from our program which is handled in the \`update\` function, so that all updates to the state is collected into one place.
 
@@ -42,10 +42,10 @@ update msg model =
 
 As we can see from the signature of the \`update\` function it takes a `Msg`, and the `Model`, the state of the program. The `Msg` defines what is to be updated, and is a type that is a collection of all the different ways we can update the `Model`. Our central state is then updated in accordance with how `update` handles the specific `Msg` that is received, and the new state is outputted as part of the tuple `( Model, Cmd Msg)`.
 
-The second part of the tuple that is returned is the `Cmd Msg`, which can seem a little cryptical at first. To be able to do operations separate from the elm, "model, view, update" lifecycle we need to use commands depicted as the type `Cmd`. These commands will be operations like changing the url path, or fetching some data from an API. As we can see the type `Cmd` also takes a `msg`, which represents an arbitrary message. In our case we have defined this as `Msg` which is the type of messages that can update our `Model` in the `update` function. This `Msg` part of `Cmd Msg` is an important element of understanding commands in elm as this is a way of saying "do this command, and give it back to my `update` function". The program then proceeds to update the `Model` in the way that \`update\` is defined to handle that specific \`Msg\` that is provided to the \`Cmd\` type.
+The second part of the tuple that is returned is the `Cmd Msg`, which can seem a little cryptical at first. To be able to do operations separate from elm's "model, view, update" lifecycle we need to use commands depicted as the type `Cmd`. These commands will be operations like changing the url path, or fetching some data from an API. As we can see the type `Cmd` also takes a `msg`, which represents an arbitrary message. Notice that \`msg\` and \`Msg\` are different, \`msg\` (with first letter lower cased) represents any arbitrary type, while \`Msg\` (with first letter upper cased) represents an actual type, in this case defined by us. In our case we have defined this as `Msg` which is the type of messages that can update our `Model` in the `update` function. This `Msg` part of `Cmd Msg` is an important element of understanding commands in elm as this is a way of saying "do this command, and give it back to my `update` function". The program then proceeds to update the `Model` in the way that \`update\` is defined to handle that specific \`Msg\` that is provided to the \`Cmd\` type.
 
+The last element in the **MVU**, **the model, view and update** architecture, is the **view.** This is where the html is defined, where we decide how we want the page to look, and how the various html elements should be arranged.
 
-The last element in the **MVU**, **the model, view and update**, is the **view.** This is where the html is defined, how we want the page to look, and how the various html elements should be arranged.
 ```elm
 -- VIEW
 
@@ -53,7 +53,14 @@ view : Model -> Html Msg
 view model = 
     Html.div [] []
 ```
+
 If we didn't have any elements to interact with, or didn't need anything to change in our application, then we would not really need to pay much attention to the other 2 elements in the **MVU architecture**. But like most applications we do off course want to build a webpage that changes as the user interacts with elements in our application.
 We can see from the definition of the `view` function that it receives a parameter of the `Model` type which we have learned is the state of our program. The `view` will use the data we have chosen that resides in the `Model` to represent the application correctly. This will always be the newest version of the state, so whenever a `Msg` type is dispatched to the `update` function, this `Msg` will proceed to update the `Model` and the `view` will be rendered with the newly updated `Model`.
-The return type of the `view` function is also interesting. This is `Html`
+The return type of the `view` function is also interesting. This is `Html Msg` where `Html` is the core building block of html code. `Msg` is the `Msg` type that we have defined ourselves and represents `Msg` that we place in our Html code to be able to call back to our `update` function when something specific happens.
+For example when a user clicks a button to register another gift received
 
+EXAMPLE 
+
+```elm
+
+```
