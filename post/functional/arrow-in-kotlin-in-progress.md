@@ -51,3 +51,26 @@ try {
 }
 ```
 
+However, using the same RawUser class, we can implement using Either like this:
+
+```
+class ValidatedUser private constructor(
+    val email: String
+) {
+    companion object {
+        fun validate(rawUser: RawUser): Either<ValidationError, ValidatedUser> =
+            if (EMAIL_REGEX.matches(rawUser.email)) {
+                Either.right(ValidatedUser(rawUser.email))
+            } else {
+                Either.left(ValidationError.INVALID_EMAIL)
+            }
+    }
+}
+```
+
+```
+when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
+    is Left -> println(validatedUser.a.name)
+    is Right -> println(validatedUser.b)
+}
+```
