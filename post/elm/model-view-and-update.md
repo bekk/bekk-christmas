@@ -17,12 +17,10 @@ We'll start with the model. This contains the state of the program.
 -- Model
 
 type alias Model = 
-    { presentCounter : Int
-    , receivedGifts : List String
-    }
+    { presentCounter : Int }
 ```
 
-The state of the program is currently represented by two properties, a counter of how many gifts someone has received that is represented by an `Int` type, and an overview of gifts that has been received represented by a `List String` type.
+The state of the program is currently represented by one property, a counter of how many gifts someone has received that is represented by an `Int` type.
 The `Model` is in elm represented by what is called a **record**, and is a central store for all the data we use to represent our application with. The `Model` will at all times contain the most recent data that we want to use in our program. So if a user has clicked something that changes  the state of our program this should create a new state which will be the current state of the program.
 
 So how is the `Model` updated? The state of a program should not be manipulated from all over the place, so the only place that we can use to directly manipulate the `Model` is in the `update` function. This collects messages from our program which is handled in the \`update\` function, so that all updates to the state is collected into one place.
@@ -31,7 +29,6 @@ So how is the `Model` updated? The state of a program should not be manipulated 
 -- UPDATE
 type Msg
     = ReceivePresent
-    | 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
@@ -57,10 +54,14 @@ view model =
 If we didn't have any elements to interact with, or didn't need anything to change in our application, then we would not really need to pay much attention to the other 2 elements in the **MVU architecture**. But like most applications we do off course want to build a webpage that changes as the user interacts with elements in our application.
 We can see from the definition of the `view` function that it receives a parameter of the `Model` type which we have learned is the state of our program. The `view` will use the data we have chosen that resides in the `Model` to represent the application correctly. This will always be the newest version of the state, so whenever a `Msg` type is dispatched to the `update` function, this `Msg` will proceed to update the `Model` and the `view` will be rendered with the newly updated `Model`.
 The return type of the `view` function is also interesting. This is `Html Msg` where `Html` is the core building block of html code. `Msg` is the `Msg` type that we have defined ourselves and represents `Msg` that we place in our Html code to be able to call back to our `update` function when something specific happens.
-For example when a user clicks a button to register another gift received
 
-EXAMPLE 
+For example when a user wants to update his gift-receiving counter. The `Msg` `ReceivePresent` is dispatched to our `update` function, the `Model` is updated, which causes a refresh of the `view`, which at this point shows the updated `view` with the correct and updated model 🎁🎅
 
 ```elm
+view : Model -> Html Msg
+view model =
+    Html.button
+        [ Events.onClick ReceivePresent ]
+        [ Html.text "Number of gifts received: " ++ (String.fromInt model.presentCounter) ]
 
 ```
