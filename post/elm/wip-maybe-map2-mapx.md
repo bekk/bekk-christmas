@@ -73,7 +73,6 @@ toContactPerson : Maybe String -> Maybe String -> Maybe String -> Maybe String -
 toContactPerson =
     Maybe.map4 ContactPerson
 
-
 toContactPerson : Maybe String -> Maybe String -> Maybe String -> Maybe String -> Maybe String -> Maybe ContactPerson
 toContactPerson =
     Maybe.map5 ContactPerson
