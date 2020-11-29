@@ -17,4 +17,4 @@ Today I want to use the words and pictures of Russ Olsen and highlight his talk 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0if71HOyVjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Link: https://www.youtube.com/watch?v=0if71HOyVjY
 
-What is you favorite FP intro talk?
+What is your favorite FP intro talk?
