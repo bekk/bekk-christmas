@@ -27,7 +27,7 @@ data class RawUser(
     val email: String
 )
 
-class InvalidEmailException: java.lang.RuntimeException("Invalid email")
+class InvalidEmailException: RuntimeException("Invalid email")
 
 class ValidatedUser private constructor(
     val email: String
@@ -56,6 +56,10 @@ try {
 However, using the same RawUser class, we can implement using Either like this:
 
 ```kotlin
+enum class ValidationError {
+    INVALID_EMAIL
+}
+
 class ValidatedUser private constructor(
     val email: String
 ) {
