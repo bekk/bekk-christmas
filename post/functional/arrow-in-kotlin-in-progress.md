@@ -75,16 +75,20 @@ class ValidatedUser private constructor(
     }
 }
 
+```
+
+It is crystal clear what this function does from the signature alone. You either get an `ValidationError` or a `ValidatedUser`. Because Either inherits from a sealed class, we also get exhaustive pattern matching using when. Additionally, we get smart casting which automatically gives us an `a` if it is left or a `b` if it is right.
+
+There are cons to this approach as well as with exceptions. The choice of whether error value is in the left of right slot is completely dependent on convention. It may be easily confused by new developers but also more senior developers. Consider this, which of these cases prints the error?
+
+```
 when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
     is Left -> println(validatedUser.a)
     is Right -> println(validatedUser.b)
 }
 ```
 
-It is crystal clear what this function does from the signature alone. You either get an `ValidationError` or a `ValidatedUser`. Because Either inherits from a sealed class, we also get exhaustive pattern matching using when. Additionally, we get smart casting which automatically gives us an `a` if it is left or a `b` if it is right.
+Either is rather generic, and thus left and right might not make direct sense for the reader. It is inconsistent to use a and b to represent the left and right slot. 
 
-There are some cons with this approach as well as with exceptions. Either is very generic 
-
-Generelt er ikke either så bra
 
 så gi en anbefaling til kotlin-result med link til artikkel
