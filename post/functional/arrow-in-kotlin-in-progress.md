@@ -77,18 +77,17 @@ class ValidatedUser private constructor(
 
 ```
 
-It is crystal clear what this function does from the signature alone. You either get an `ValidationError` or a `ValidatedUser`. Because Either inherits from a sealed class, we also get exhaustive pattern matching using when. Additionally, we get smart casting which automatically gives us an `a` if it is left or a `b` if it is right.
+It is crystal clear what this function does from the signature alone. You either get an `ValidationError` or a `ValidatedUser`. Because `Either` inherits from a sealed class, we also get exhaustive pattern matching using when. Additionally, we get smart casting which automatically gives us an `a` if it is left or a `b` if it is right.
 
 There are cons to this approach as well as with exceptions. The choice of whether error value is in the left of right slot is completely dependent on convention. It may be easily confused by new developers but also more senior developers. Consider this, which of these cases prints the error?
 
-```
+```elm
 when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
     is Left -> println(validatedUser.a)
     is Right -> println(validatedUser.b)
 }
 ```
 
-Either is rather generic, and thus left and right might not make direct sense for the reader. It is inconsistent to use a and b to represent the left and right slot. 
+`Either` is rather generic and thus left and right may not make sense for the reader. Additionally, `left` and `right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
 
-
-så gi en anbefaling til kotlin-result med link til artikkel
+If you want all the advantages of Either, but also want to stay semantically accurate in relation to error handling, check out `Result<T, E>`. Right changes to Ok, and Left to Err. It makes it significantly harder to confuse Left and Right as Ok and Err makes sense in their own right. For such a type check out [Kotlin-result](https://github.com/michaelbull/kotlin-result).
