@@ -3,7 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 1
 title: Immutability
-image: ""
+image: https://images.unsplash.com/photo-1500472141701-084e6fa44840?w=1226&h=400&fit=crop&crop=edges
 ingress: Welcome to the second year of the Bekk’s Kotlin advent calendar. If you
   followed us last year welcome back, and if you’re new this year you’re in for
   a treat. Each day leading up to Christmas Eve there will be a new post about
