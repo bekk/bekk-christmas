@@ -11,7 +11,7 @@ Ved enhver endringsprosess vil man som initiativtaker ofte oppleve negative tank
 
 Noen typiske årsaker til endringsmotstand er:
 
-
+![4 steg for å gjennomføre en vekstsprint](/assets/)
 
 **Ja, endringsmotstand er en ressurs**
 
