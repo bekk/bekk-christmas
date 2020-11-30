@@ -43,33 +43,34 @@ Tools and packages readily available in JavaScript, together with some HTML and 
 - Model evaluation can be performed interactively
 - ... and much more!
 
-## A brief introduction
+## Theoretical and practical example
 To keep this blog somewhat short and concise, I will explain and demonstrate an entry-level example of [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) for [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis). This is a good starting point for any beginner in the machine learning domain. Even without going into great detail, some theoretical knowledge is required to understand what is going on.
 
-Data preprocessing means preparing your data to be used with your defined machine learning method. Firstly and most importantly, null-values or empty data entries have to be removed. Additionally, you may want your data to meet certain statistical properties which can help your machine learning model train better. This is called [feature scaling](https://en.wikipedia.org/wiki/Feature_scaling). A popular form of feature scaling is to use standardization, for which each dataset column is scaled so that the mean value is zero and variance is one.
+### A brief theoretical introduction to neural networks
+Data preprocessing means preparing your data to be used with your defined machine learning method. Firstly and most importantly, null-values or empty data entries have to be removed. Additionally, you may want your data to meet certain statistical properties which can help your machine learning model train better. This is called [feature scaling](https://en.wikipedia.org/wiki/Feature_scaling). A popular form of feature scaling is to use [standardization](https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization)), for which each dataset column is scaled so that the mean value is zero and variance is one.
 
-In regression analysis, the goal is to find some function which maps a set of input variables to some dependent output variables as accurately as possible. This approximation may be found through the training of a neural network. A neural network takes as input a set of parameters, passes those parameters through a series of connected layers, and finds a corresponding set of output parameters by performing mathematical calculations. Training a neural network means tuning the variables used in these mathematical calculates, called weights, so that the difference between calculated and expected output decreases.
+In regression analysis, the goal is to find some function which maps a set of input variables **x** to some dependent output variables **y** as accurately as possible. This approximation may be found through the training of a neural network. A neural network takes as input a set of parameters, passes those parameters through a series of connected layers, and finds a corresponding set of output parameters by performing mathematical calculations. Training a neural network means tuning the variables used in these mathematical calculates, called weights, so that the difference between calculated and expected output decreases.
 
 <img src="https://i.imgur.com/kLk3Cm1.png" alt="drawing" width="400"/>
 
 The above figure is taken from the book "Neural Networks and Learning Machines" by Simon Haykin, and shows an example of a neural network consisting of an input layer of 10 variables, one hidden layer (meaning it is neither an input nor output layer) of four units, and an output layer of two variables. In general, there can be any number of inputs, units and outputs, as well as any number of hidden layers. Each unit is connected to every unit in the following layer. For each of these connections, the model stores a weight which the incoming value is multiplied with. Additionally, some (potentially nonlinear) transformation may be applied to the sum of all incoming connections at each individual unit. This means the network is able to calculate an output as a nonlinear transformation of the input values.
 
-Some required parameters when defining a machine learning are as follows:
+Some required parameters when defining a machine learning model are as follows:
 
-- **Network structure**: the number of neural network layers, and the number of units in each layer
-- **Epochs**: the number of iterations for which your machine learning model should train
-- **Batch size**: the number of training samples your model should use for each time weights are updated
-- **Error/loss metric**: the way which the performance of your model should be measured
-- **Optimizer**: the algorithm explaining how your model should perform weight updates
-- **Activation function**: the transformation applied at each layer unit
+- **Network structure**: the number of neural network layers, and the number of units in each layer. A model may for instance have an input layer of four features **x**, one hidden layer of 128 units, and an output layer of two targets **y**.
+- **Epochs**: the number of iterations for which your machine learning model should train. This number must be high enough to ensure model convergence, but an excessive number of epochs can be very time consuming
+- **Batch size**: the number of training samples your model should use for each weight update. Because the batch size typically is set much lower than the number of dataset samples, the weights are updated multiple times within the same epoch. This ensures faster convergence
+- **Error/loss metric**: the way which the performance of your model should be measured. This is typically some type of difference between expected and calculated output 
+- **Optimizer**: the algorithm explaining how your model should perform weight updates. [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) or certain variations of this algorithm are typically used
+- **Activation function**: the transformation applied at each layer unit, allowing the neural network to find nonlinear relations between its input and output
 - **Callbacks**: specific actions which your model should perform while it is training, such as reporting back its current loss
 
 The last thing you need to know is that data is usually split into three categories. Training data is used for model training. Validation data is used during training to validate the model on data which was not used for training. Testing data is used to evaluate the performance of the trained model, by measuring the difference between the calculated and the expected output. Crucially, each of these partitions must have the same statistical properties. A usual strategy is to shuffle the data, before using perhaps 60% for training, 20% for validation and 20% for testing. 
 
-## A practical example
+### Practical example using TensorFlow.js
 Finally, you are ready to see some code examples using TensorFlow.js. Note that the syntax and arguments are very similar to anything you would see in e.g. Python or R.
 
-### Loading, parsing and transforming data
+#### Loading, parsing and transforming data
 First, you must load your data into your program. Using JavaScript, this is unfortunately not entirely straight forward. TensorFlow.js offers some functionality for this purpose, however it is not trivial to use when loading data uploaded through the frontend. Feel free to try it out for yourself using [the TensorFlow documentation](https://js.tensorflow.org/api/0.14.1/#data.csv). If you instead want to rely on your own JavaScript parsing skills, I wrote a small guide how to do this with [react-csv-reader](https://www.npmjs.com/package/react-csv-reader), available in [this GitHub readme file](https://github.com/hermanwh/tfjs-example).
 
 Assuming you made it past the hurdle of loading your data using the above guidelines and have managed to split it based on your input and output parameters, you should be left with four JavaScript arrays: _x_train_, _x_test_, _y_train_, and _y_test_. Arrays prefixed with _x_ are inputs, while _y_ are outputs. We will use the training data to fit our machine learning model, and keep the testing data for later in order to evaluate the model performance. Suppose all loading and preprocessing was done using an imaginary _loadAndPreprocessData_ method:
@@ -89,7 +90,7 @@ const tensors = {
 };
 ```
 
-### Defining a neural network model
+#### Defining a neural network model
 Next, we define our neural network model with a desirable structure, in this case a single hidden layer of 128 units, and input and output layers according to the size of our training data:
 
 ```javascript
@@ -131,21 +132,25 @@ const callbacks = tfvis.show.fitCallbacks(
 );
 ```
 
-### Model training and evaluation
+#### Model training and evaluation
 Finally, the model can be fitted:
 ```javascript
+let samplesInEachBatch = 128;
+let numberOfEpochs = 10;
+let trainValidationSplit = 0.25;
+
 model.fit(
     tensors.trainFeatures,
     tensors.trainTargets,
     {
-        batchSize: 128,
-        epochs: 10,
-        validationSplit: 0.25,
+        batchSize: samplesInEachBatch,
+        epochs: numberOfEpochs,
+        validationSplit: trainValidationSplit,
         callbacks: callbacks
     }
 );
 ```
-The "validationSplit" parameter of 0.25 ensures 25% of the training data is used for model validation instead of training. When the model is done training, it can be used to make predictions for previously unseen data samples, such as the training data we defined previously:
+The "trainValidationSplit" parameter of 0.25 ensures 25% of the training data is used for model validation instead of training. When the model is done training, it can be used to make predictions for previously unseen data samples, such as the training data we defined previously:
 
 ```javascript
 const predictions = model.predict(tensors.testFeatures)
