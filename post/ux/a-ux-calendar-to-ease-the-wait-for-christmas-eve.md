@@ -24,12 +24,12 @@ In our world of design, we do a lot of manipulation to get different experiences
 ## Three elements for a designer to consider working with time 
 From Chris Kiess’s articles about The UX of Waiting and the Perception of Time* I found that you have three different elements you can manipulate if you are working with time. Actual measured speed, the perception of speed, and the tolerance of speed.  
 
-Actual measured speed might be the most obvious. If there is something that takes a long time to load you could always ask the developers really nicely if they can make the code more efficient and make the actual measured speed faster. This might be easy to do and a good solution, but sometimes it’s difficult, time-consuming, or impossible for the developers. Then you have to consider the other solutions. 
+*Actual measured speed* might be the most obvious. If there is something that takes a long time to load you could always ask the developers really nicely if they can make the code more efficient and make the actual measured speed faster. This might be easy to do and a good solution, but sometimes it’s difficult, time-consuming, or impossible for the developers. Then you have to consider the other solutions. 
 
-The next element is the user's perception of speed. To change the perception of speed you have to work with the context around so the user perceives the time to go faster.\
+The next element is the user's *perception of speed*. To change the perception of speed you have to work with the context around so the user perceives the time to go faster.\
 As they say, time flies when you're having fun. If you are waiting for the gløgg to boil and you just stand there watching it, it feels really slow. But if you turn on the TV and start watching an episode of The Julekalender* the gløgg will boil before you can say “Olaaaaf”. The change of context has changed their perception of the 5 minutes from feeling like forever to something blazing fast. There are several ways we as designers can do this. For instance, we can disguise the wait with other tasks the user has to do. Maybe there is important information that the user has to read. Why not prompt the user to read it while waiting for something? Or you could give them an awesome animation, fun facts, or a riddle to focus on instead of waiting.
 
-The last element is the user's tolerance of speed. When you don’t want to disguise the time the way you do by changing the perception of time, you have to increase the user’s tolerance of time. The most common example might be the progress bar. Giving the user a visual estimate of the time assures the user that even though it’s taking time, it's working and it will happen soon. You also have the electronic boards counting down minutes until the next bus arrives. They have to wait, and we don’t want to disguise the duration, but show it to calm and reassure the users that everything is under control. 
+The last element is the user's *tolerance of speed*. When you don’t want to disguise the time the way you do by changing the perception of time, you have to increase the user’s tolerance of time. The most common example might be the progress bar. Giving the user a visual estimate of the time assures the user that even though it’s taking time, it's working and it will happen soon. You also have the electronic boards counting down minutes until the next bus arrives. They have to wait, and we don’t want to disguise the duration, but show it to calm and reassure the users that everything is under control. 
 
 As a designer, you can play around with these elements and combine them to make a good user experience of time.
 
@@ -41,7 +41,8 @@ As a designer, you can play around with these elements and combine them to make 
 ## So what about advent calendars? 
 First I thought it was only a perception of time thing, kind of “why not have a bit of fun while we are waiting?”. But remembering my childhood, considering that the target group for an advent calendar often is children, I also think it has a lot to do with tolerance. Children don’t have the same understanding of time as we grownups have. They are reallllly looking forward to Christmas Eve. A calendar might be a way to increase the children's tolerance to be able to wait for 24 days. We don't want to trick them by disguising it with something else, but to help them visualize the 24 days that probably would have felt like a million days of waiting without a calendar! 
 
-So that's my little UX perspective on advent calendars. I hope this year's calendars from Bekk can help you to withstand the long wait until Christmas Eve ☺️
+So that's my little UX perspective on advent calendars. I hope this year's calendars from Bekk can help you to withstand the long wait until Christmas Eve.
+
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
