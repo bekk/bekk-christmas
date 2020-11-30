@@ -16,7 +16,7 @@ authors:
   - Isak Sunde Singh
 ---
 Often when we write code we have a clear idea in our minds of how to write the code, but when we actually write it, the compiler steps in and points out a few things for us.
-In strong, statically typed programming languages, we can get a lot of help from the compiler.
+In statically-typed programming languages, we can get a lot of help from the compiler.
 One especially nice feature is compile-time checked exhaustive pattern-matching.
 As an example, let's look at some Elm code:
 
