@@ -19,9 +19,17 @@ authors:
 ---
 I have worked with React Native for some years now, and have encountered one or two things that got me thinking “*huh, so that’s how it is*”. At my current project, we are developing an application in React Native. Therefore I have chosen some things that I think are interesting (or a little bit frustrating) to present to you for this first article of react.christmas 2020.
 
+## The origin of React Native
+
+In 2012, [Mark Zuckerberg said](https://mashable.com/2012/09/11/html5-biggest-mistake/):
+
+> The biggest mistake we made as a company was betting too much on HTML as opposed to native
+
+This was because Facebook was eager to use HTML5 for iOS and Android. However, this was not optimal for the stability and speed. So they were interested in making applications more natively to get better user experiences. Then, a man named Jordan Walke had been working on how to [generate UI components natively from JavaScript](https://jobninja.com/blog/short-story-react-native/). Since it was a success, there was arranged an internal hackathon in Facebook based on this work, creating a prototype for React Native. As a result of this great work, they presented an introduction for [React Native at React Conf](https://www.youtube.com/watch?v=KVZ-P-ZI6W4) in 2015!
+
 ## Five years and still version 0.63
 
-React Native was released five years ago, in 2015, as a stable release. Today it is widely used in production by lots of both small and big companies, like [](https://wiredelta.com/10-most-popular-react-native-apps-of-2020/)[Facebook, Discord and Tesla](https://reactnative.dev/showcase). With over almost 10,000 pull requests, and nearly 20,000 closed issues on [Github](https://github.com/facebook/react-native), it has still not reached a major version following the [semver](https://semver.org/) convention. Per December 1st 2020, React Native is on version 0.63.3.
+React Native was released five years ago, in 2015, as a stable release. Today it is widely used in production by lots of both small and big companies, like [](https://wiredelta.com/10-most-popular-react-native-apps-of-2020/)[Facebook, Discord and Tesla](https://reactnative.dev/showcase). With over almost 10,000 pull requests, and nearly 20,000 closed issues on [Github](https://github.com/facebook/react-native), it has still not reached a major version following the [semver](https://semver.org/) convention. Per December 1st 2020, React Native is on version 0.63.4.
 
 There have been some questions about when they will start using major version numbers, and they said earlier that they may bump to [version 1.0.0 when a milestone](https://www.facebook.com/groups/reactnativeoss/permalink/1604716516491643/) is reached, but this has yet to be done. Maybe they will do like React, which went [from version 0.14 to 15.0](https://reactjs.org/blog/2016/04/07/react-v15.html), which is quite a leap! [](https://reactjs.org/blog/2016/04/07/react-v15.html)
 
@@ -32,11 +40,14 @@ React Native has a syntax that are pretty much equal to React, but with some dif
 ```jsx
 import { View, Text } from 'react-native'
 
-<View>
-    <Text>
-        Hello Bekk Christmas!
-    </Text>
-</View>
+const MyComponent = () => (
+    <View>
+        <Text>
+            Hello Bekk Christmas!
+        </Text>
+    </View>
+)
+
 ```
 
 `View` is used to group your components, and structure them the way you like. In addition, React has made it mandatory to put all your strings inside a `Text` component. And we are not done yet! When creating an app with lots of information that goes outside the screen vertically, you need to wrap your components in a `ScrollView` to manage to scroll to the bottom. So a piece of advice from my experience: Always test your application with different screen sizes. I *may* have published an app perfect for iPhone X, where you were not able to see the bottom text for an iPhone 5...
@@ -54,9 +65,12 @@ In React Native, you lose the concept of inheritance, because the styling for a 
 ```jsx
 import { StyleSheet } from 'react-native'
 
-<View style={styles.container}> // Adding your style to the View
-   {/* Your content here */}
-</View>
+const MyComponent = () => (
+    {/* Adding your style to the View */}
+    <View style={styles.container}>
+       {/* Your content here */}
+    </View>
+)
 
 const styles = StyleSheet.create({ // Creating the StyleSheet object
     container: {
@@ -81,20 +95,18 @@ Why, you ask? Well, I would assume that for the web applications, often designed
 
 The concept of React Native is to write code once to target several platforms. Even though this works in most cases, there are still some pain points when developing for both iOS and Android. Having developed an application in React Native over the past years, I have experienced the “but it's working differently for iOS” moment when debugging the Android app, countless times.
 
-For instance, when making your application accessible, not everything is equal for both platforms. React Native has added support for different [accessibility use cases](https://reactnative.dev/docs/accessibility), but not every one of them is supported for both platforms. There was one case, where I wanted the application to read the changes on the screen for the user, even though the user is not focusing on that given component. For instance when the time of departure for a bus changes, it is crucial to notify the user. This resulted in adding two ways to get the voiceover feature to read the changes. One way to notify the iPhone users, another to help the Android users.
+For instance, when making your application accessible, not everything is equal for both iOS and Android. React Native has added support for different [accessibility use cases](https://reactnative.dev/docs/accessibility), but not every one of them is supported for both platforms. There was one case, where I wanted the application to read the changes on the screen for the user, even though the user is not focusing on that given component. For instance when the time of departure for a bus changes, it is crucial to notify the user. This resulted in adding two ways to get the voiceover feature to read the changes. One way to notify the iPhone users, another to help the Android users.
 
 Fortunately, React Native gives you the possibility to select which code you want to apply for iOS or Android by using [Platform](https://reactnative.dev/docs/platform-specific-code). By using it you can apply the part of code you want to execute for the given platform. Look at the Hello World example below!
 
 ```javascript
 import { Platform } from 'react-native'
 
-const myFunction = () => {
-    Platform.select({
-        ios: console.log('Hello iOS'),
-        android: console.log('Hello Android'),
-        default: console.log('Hey everyone else'),
-    })
-}
+const myFunction = Platform.select({
+    ios: () => console.log('Hello iOS'),
+    android: () => console.log('Hello Android'),
+    default: () => console.log('Hey everyone else'),
+})
 ```
 
 It is also nice to use to apply the correct styling for your code. For example, at the bottom of the screen on an iPhone X where the home button used to be, there is this swipe indicator you can use to close your app. When placing buttons at the bottom of your page, it will be good on Android but will overlap with the swipe indicator. This results in the need for adding different margins for the different platforms, look at the example:
@@ -117,14 +129,6 @@ const styles = StyleSheet.create({
     },
 })
 ```
-
-## The origin of React Native
-
-In 2012, [Mark Zuckerberg said](https://mashable.com/2012/09/11/html5-biggest-mistake/):
-
-> The biggest mistake we made as a company was betting too much on HTML as opposed to native
-
-This was because Facebook was eager to use HTML5 for iOS and Android. However, this was not optimal for the stability and speed. So they were interested in making applications more natively to get better user experiences. Then, a man named Jordan Walke had been working on how to [generate UI components natively from JavaScript](https://jobninja.com/blog/short-story-react-native/). Since it was a success, there was arranged an internal hackathon in Facebook based on this work, creating a prototype for React Native. As a result of this great work, they presented an introduction for [React Native at React Conf](https://www.youtube.com/watch?v=KVZ-P-ZI6W4) in 2015!
 
 ## Not used in the Messenger App
 
