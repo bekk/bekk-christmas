@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 3
-title: 🎶On the third day of christmas a developer sent to me.. 3 React security tips!
+title: On the third day of christmas a developer sent to me.. 3 React security tips!
 image: https://unsplash.com/photos/0Yiy0XajJHQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 ingress: As frontend developers, we tend to focus on the users experience with
   our application. We all might say that security on our minds, but we rely more
