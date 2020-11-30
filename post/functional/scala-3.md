@@ -6,6 +6,7 @@ title: Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
+
 A new year is closing up and so is a new release of Scala. Release candidate 1
 is expected to be found some time this December!
 
@@ -270,10 +271,6 @@ or modeling abstractions[^applicatives].
 <!-- TODO MONOIDS EXAMPLE. -->
 
 
-### Built in type class derivation
-
-TODO
-
 ### Union types
 
 To represent a coproduct of types.
@@ -343,40 +340,32 @@ val result = Percent(10) * Percent(40)
 @main
 def run = println(result)
 
-// If we try do something we are not allowed to:
+// There are no ways to get on Santa's naughty list:
 
-//Percent(10) * 40 // type error
-//[error] 76 |    Percent(10) * 40 // type error
-//[error]    |                  ^^
-//[error]    |                  Found:    (40 : Int)
+//Percent(10) * 400 // type error
+//[error] 76 |    Percent(10) * 400 // type error
+//[error]    |                  ^^^
+//[error]    |                  Found:    (400 : Int)
 //[error]    |                  Required: Main.TestNumeric.MyLib.Percent
-
 ```
-
-### Export clauses
-
-TODO
-
-### inlining
-
-TODO
-
-### macros
-
-TODO
 
 
 <!-- DO not mention? 
 - intersection types
 - singleton types ops?
+### inlining
 
 Some upcoming changes
 - Explicit nulls
 -->
 
-There is a lot more waiting to be explored including working GADT's, macros,
-explicit null, export clauses, etc. Eager to try it out [^scastieHelloWorld]?
+## And lots more
 
+Other interesting themes to dive into are intersection types, the new built in type class derivation
+support, ADT modeling with enums that also supports working GADT's, explicit
+null handling, export clauses, and a new macro system. While the details are still being
+hammered on, it is interesting to ponder where all of this will take the language?
+Eager to try it out [^scastieHelloWorld]?
 
 [^implicitConvesrion]: https://dotty.epfl.ch/docs/usage/language-versions.html
 
@@ -395,3 +384,5 @@ https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 [^scastieHelloWorld]: https://scastie.scala-lang.org/mW9PAGSVSAyFbljRMzVlBw
 
 [^applicatives]: https://functional.christmas/2019/21
+
+
