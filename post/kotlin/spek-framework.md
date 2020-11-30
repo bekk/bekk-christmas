@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 10
+post_day: 11
 title: Spek Framework
 ingress: Most of us use JUnit as our go-to testing framework, often without
   really considering the alternatives. Are you ready to try something new? Why
