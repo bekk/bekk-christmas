@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 12
+post_day: 14
 title: Kotlin metaprogramming with kotlinpoet
 ingress: Wouldn't it be sweet if you could automate writing code. Well, that's
   what we're taking a look at today. Metaprogramming, code generation, or in
