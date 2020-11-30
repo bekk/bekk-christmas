@@ -29,19 +29,30 @@ console.log(newString);
 This method also comes with a performance improvement as it uses string comparisons instead of regular expressions matching.
 
 ## Logical Assignment Operator
-The Logical Assignment Operator combines Logical Operators ( ```&&, ||, or ??```) with Assignment Expressions (```=```). The code example below shows this feature in use.
+The Logical Assignment Operator combines Logical Operators ( ```&&, ||, ??```) with Assignment Expressions (```=```). 
+
+The code example below shows this feature in use on the operators AND (```&&```), OR (```||```) and the Nullish Coalescing Operator (```??```) as well.
 
 ```javascript
-//Old approach, only assigns if a is Truthy
-if(a){ a = b } 
-//Or
+//Only assigns if left-hand side is Truthy
+//Old approach
 a && (a = b)
-
 //Logical assignment operator
 a &&=b
-```
 
-This approach can be used on OR (```||```) and the Nullish Coalescing Operator (```??```) as well.
+//Only assigns if left hand-side is Falsy
+//Old approach
+a || (a = b)
+
+//Logical assignment operator
+a ||=b
+
+//Only assigns if left hand side is Nullish (null / undefined)
+//Old approach
+a ?? (a = b)
+//Logical assignment operator
+a ??=b
+```
 
 ## Numeric Separators
 Large numbers may be challenging to read with a first glance, especially when there are repeating digits. The Numeric Separator is a useful tool that separates digits with an underscore (```_```) in numeric literals, thus making numeric literals more readable. The separator can be used in different positions., with as many separators as you want, in groups of any size.
