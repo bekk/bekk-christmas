@@ -12,12 +12,6 @@ module.exports = function getMetadataForSite(siteName = 'bekk') {
                 description: 'A Christmas calendar all about CSS',
                 siteUrl: 'https://css.christmas',
             };
-        case 'dot-net':
-            return {
-                title: '.net Christmas',
-                description: 'A Christmas calendar all about .net',
-                siteUrl: 'https://dot-net.christmas',
-            };
         case 'functional':
             return {
                 title: 'A Functional Christmas',

@@ -10,10 +10,9 @@ const getCalendarNumber = (calendar) => {
         case 'thecloud':
             return '03';
         case 'opensource':
-        case 'dot-net':
             return '04';
         case 'java':
-        case "elm":
+        case 'elm':
             return '05';
         case 'kotlin':
             return '06';
@@ -44,7 +43,9 @@ const getDayNumber = (day) => {
 };
 
 export const getChristmasTree = (calendar, year) => {
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(calendar)}/tre.png`;
+    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
+        calendar
+    )}/tre.png`;
 };
 
 export const getWindowImagePlaceholder = (calendar, day) => {
@@ -99,8 +100,6 @@ export const mapCalendarToName = (calendar) => {
             return 'CSS';
         case 'talks':
             return 'Talks';
-        case 'dot-net':
-            return '.NET';
         case 'elm':
             return 'Elm';
         case 'strategy':
