@@ -4,14 +4,15 @@ post_year: 2020
 post_day: 9
 title: Hva kan etablerte selskaper lære av vekstselskaper?
 image: https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1949&q=80
-ingress: "Vekst er på mange måter livsnerven i ethvert selskap. "
+ingress: "Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
+  vekst, vil et selskap stagnere og etterhvert forvitre. "
 links:
   - url: https://preview.bekk.christmas/1cb2692c-badb-4562-9f48-8329f46c3b49
     title: Eksperimentkort
 authors:
   - Vinh Nguyen
 ---
-I fraværet av vekst, vil et selskap stagnere og etterhvert forvitre. Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan ta inspirasjon fra vekstselskaper rundt bruken av eksperimenter.
+Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan ta inspirasjon fra vekstselskaper rundt bruken av eksperimenter.
 
 ## Hva er Growth hacking
 
