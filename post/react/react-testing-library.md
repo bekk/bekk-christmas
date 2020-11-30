@@ -3,6 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 6
 title: React Testing Library
+image: https://images.unsplash.com/photo-1602479809918-7d8191119b45?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80
 ingress: Do you feel compelled to manually test your React frontend after each
   deploy, because it’s not tested as well as your backend? Or perhaps you
   already have frontend tests, but you feel that they only serve as a hindrance,
@@ -75,7 +76,7 @@ test("can load data on click", async () => {
 
   userEvent.click(button);
 
-  const content = await findByRole("heading", { name: /your data/i });
+  const content = await screnn.findByRole("heading", { name: /your data/i });
 
   expect(content).toBeInTheDocument();
 });
