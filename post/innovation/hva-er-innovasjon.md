@@ -3,7 +3,7 @@ calendar: innovation
 post_year: 2020
 post_day: 1
 title: Hva er innovasjon?
-image: https://unsplash.com/photos/Lyl8RL7imrw
+image: https://images.unsplash.com/photo-1589828994379-7a8869c4f519?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2586&q=80
 ingress: >-
   Alle snakker om innovasjon, men hva er det egentlig? Finnes det noen gode
   definisjoner som dekker et så sammensatt område?\
