@@ -14,10 +14,6 @@ authors:
   - Sigurd Rognhaugen
   - Citona Marie Rygg
 ---
-As two graduates who recently got a job as UX designers, we’ve learnt a lot these past five months. In this article we’re sharing five things we would have liked to have known before starting our careers.
-
-
-
 # **1. Business and politics**
 
 It might sound a bit strange, when working as a UX designer, everything doesn’t actually evolve around the needs of the users. We know: mind blowing, right? The need of the client, whether that is to make more money, a social mission or implementing new laws and regulations is often equally as important. This means that as designers we might have to think “how can we, with these business needs, make a good user experience?”.
@@ -35,8 +31,6 @@ The design process, as taught in our education, was mainly focused on the gather
 **Asking questions about changes you’ve made –** Receiving feedback on ideas and gathering insights is essential when designing. That’s probably why conducting interviews or surveys is a popular way to find out if you’re on the right track with what you’re designing. Additionally, you should ask questions about recent changes you’ve made to the product in order to iterate on the existing design.
 
 **Fake doors –** Try to create a “fake door” by implementing a button or a tiny bit of functionality in order to gain the users attention. When the user clicks the button you can tell them that the functionality isn’t done yet, and proceed to ask them questions about what they would like to see or which functionality that would be relevant to them.
-
-
 
 # **3. Including developers in the design process**
 
