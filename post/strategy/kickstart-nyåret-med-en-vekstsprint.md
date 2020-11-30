@@ -69,7 +69,7 @@ I det siste steget skal dere prioritere hvilke av eksperimentene som skal gjenno
 
 Etter prioriteringsøvelsen sitter teamet igjen med en prioritert liste med eksperimenter, samt en backlog som kan tas tak i senere. Den store jobben er å gjennomføre og lære av eksperimentene.
 
-Det anbefales å:
+**Det anbefales å:**
 
 * Lage en konkret plan over hvordan eksperimentene skal gjennomføres, samt hvem som skal gjøre hva. Hver konkret på deadlines og når dere eventuelt skal gjennomgå resultatene. Send gjerne ut kalenderinvitasjoner for å sikre at eksperimentene gjennomføres og gjennomgås.
 * Gjennomføre slike vekstsprinter med jevne mellomrom. Eksempelvis hvert kvartal for å fylle opp backlogen med eksperimenter.
