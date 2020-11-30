@@ -7,7 +7,7 @@ authors:
   - Per Øyvind Kanstrøm
 ---
 
-A new year is closing up and so is a new release of Scala. Release candidate 1
+A new year is closing in and so is a new release of Scala. Release candidate 1
 is expected to be found some time this December!
 
 Version two of the language was released in 2006 and has so far seen a
