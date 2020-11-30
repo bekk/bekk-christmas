@@ -62,10 +62,10 @@ String concatenation is well known between different programming languages and i
 
 So far, so good!
 
-The most important “rules” with _addition_ in JavaScript are:
+## The most important “rules” with _addition_ in JavaScript
 
-* Adding a non-numeric value to a numeric value will try to convert the non-numeric value to a numeric value, if possible. If not, both are converted to strings.
-* Adding a non-numeric value to some value will convert both values to strings before adding them.
+1. Adding a non-numeric value to a numeric value will try to convert the non-numeric value to a numeric value, if possible. If not, both are converted to strings.
+2. Adding a non-numeric value to some value will convert both values to strings before adding them.
 
 So, what does that actually mean?
 
@@ -200,18 +200,6 @@ Symbol(1) + 1 // TypeError: Cannot convert a Symbol value to a number
 BigInt(1) + 1 // TypeError: Cannot mix BigInt and other types, use explicit conversions
 BigInt(1) + "2" = "12"
 ```
-
-## Numeric conversion
-
-These values will be converted to numeric values when added with a numeric value:
-
-| non-numeric value | numeric value |
-| ----------------- | ------------- |
-| true              | 1             |
-| false             | 0             |
-| undefined         | NaN           |
-| null              | 0             |
-| NaN               | NaN           |
 
 
 As you have read, addition is not as easy as we know from mathematics. However, if you remember some of the conversion rules above you might save yourself from some headaches in the future!
