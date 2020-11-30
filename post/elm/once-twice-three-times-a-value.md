@@ -4,11 +4,12 @@ post_year: 2020
 post_day: 1
 title: Once, twice, three times a value
 image: https://source.unsplash.com/S0j-5wSN3YQ/2000x800
-ingress: Welcome to the first of this year's strain of articles about Elm.
-  Through 24 articles, we will build up both a festive mood and some deeper
-  knowledge of Elm. Today we are discussing Tuples. It is perhaps Elm's simplest
-  out of many ways of structuring data. We also introduce the concept of pattern
-  matching or destructuring of tuples in function declarations specifically.
+ingress: Welcome to the Elm christmas calendar, and to the first of 24 articles
+  that will teach you some tricks and useful concepts you might not already
+  know. Today we are discussing Tuples. It is perhaps Elm's simplest way of
+  structuring data. We also introduce a concept recurring across several days;
+  pattern matching, or destructuring. The first use-case is pattern matching of
+  tuples in function declarations.
 description: Elm Tuple Tuples destructuring "pattern matching"
 links:
   - title: core/Tuple
@@ -21,9 +22,12 @@ Tuples allow us to join values together into a single value. Elm, as of version 
 Here are som tuples:
 
 ```elm
-person = ("Arnie", 23) : ( String, number ) -- A 2-Tuple
+governator : ( String, Int )
+governator = ("Arnie", 73) -- A 2-Tuple
 
-(12, 24, 18) : ( number, number1, number2 ) -- A 3-Tuple or Triple(t)
+numbers : ( Int, Int, Int )
+numbers = ( 12, 24, 18 ) -- A 3-tuple
+
 ```
 
 The core module `Tuple` has helper functions for working with 2-tuples. E.g. `Tuple.first` and `Tuple.second` extract the respective values. 
@@ -90,6 +94,6 @@ In line 2, we see that `first` makes use of pattern matching, albeit with a twis
 
 Curious readers will notice the function `Tuple.pair` which combines two values into a tuple. This might seem odd since we now know there is built-in syntax for creating Tuples. Stay tuned in the coming days and all will become clear 😉.
 
-## Conclusion
+## Conclusion / TLDR
 
-Elm has built-in syntax for creating tuples to structure data. I advise heeding the notes in core/Tuple. When you need a little complexity in your data structure, tuples are usually not the right choice.
+Elm has built-in syntax for creating tuples to structure data. When receiving a tuple as a parameter a similar syntax can be used to extract the tuple's values into separate variables. Heeding the notes in [core/Tuple](https://package.elm-lang.org/packages/elm/core/latest/Tuple) is advisable. When you need a little complexity in your data structure, tuples are rarely the right choice.
