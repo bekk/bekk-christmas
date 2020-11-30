@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 7
+post_day: 8
 title: Hvordan mislykkes med implementering av ny strategi?
 image: https://images.unsplash.com/photo-1589997264694-5f6bf034c0f6
 links:
