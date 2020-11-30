@@ -29,28 +29,22 @@ Redux has a very steep learning curve. I have worked with redux for many years a
 
 ## How does Recoil work and why should I use it
 
-\
-Its easy to learn and use. The API is simple and a natural extension of React. To get started all we need is to wrap our application with a `RecoilRoot` and we are ready to roll.
+
+First of all I`ts very easy to learn and to use. The API is simple and feels like a natural extension of React. All we need to get started is to wrap our application with a `RecoilRoot`.
+
+### Atoms
+
+In Recoil we store state in atoms - which is 
 
 ```jsx
 export const myState = atom({
   key: "myState",
   default: "",
 });
-
-const App = () => {
-
-  return <div>
-
-</div>
-}
 ```
 
-\
-\
-\
-\
-\
+
+
 Recoil was unveiled at ReactConf 2020 and has already received a lot of attention. Thousands of stars on github, several blog posts and videos have appeared that brags of Recoil’s simplicity and flexibility.
 
 In recoil we use atoms to store
