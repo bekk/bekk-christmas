@@ -3,6 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 2
 title: Hæ, maskinlæring nyttig for strategi?
+image: https://images.unsplash.com/photo-1582547704707-10eafd5d4a37?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHJvYm90fGVufDB8fDB8&auto=format&fit=crop&w=800&q=60
 ingress: "Maskinlæring er ikke lenger bare en
   *[hype](https://images-cdn.newscred.com/Zz1mOWJhNzlkNDA2ZTMxMWViYjRiOGFiM2IyM\
   jQ1YmMwZQ==)*, men i ferd med å bli etablert, velprøvd og kraftig teknologi
