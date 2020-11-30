@@ -10,6 +10,7 @@ ingress: «Hvis du ikke betaler for produktet, er du produktet». De som har set
   eksponert for annonser. For aktører i dagens mer og mer digitaliserte verden
   finnes det mange innovative inntektsmodeller å basere seg på – men kan et
   hvilket som helst selskap finne nye måter å tjene penger?
+description: inntektsmodeller, innovasjon, revenue models, tuckify, abonnement, freemium
 authors:
   - Tobias R. Pettrém
 ---
