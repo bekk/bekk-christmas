@@ -12,30 +12,27 @@ ingress: >-
 
 
   One way of doing this would be to rewrite the whole thing, and to be honest, it probably would not have been that much work. But it got me thinking, how would I go about injecting the already written code into my React application? I haven't done anything like this before, and if you haven't either, this is a blog post for you!
-description: A small description of how I integrated a JavaScript application
+description: A small article about how I integrated a JavaScript application
   into React code.
 authors:
   - Sissel Fladby
 ---
-A couple of years ago, a colleague and I created a small JavaScript application to toy around with some image processing techniques. I really enjoyed the project, and the other day I decided put the same functionality in my new React code.
-
-One way of doing this would be to rewrite the whole thing, and to be honest, it probably would not have been that much work. But it got me thinking, how would I go about injecting the already written code into my React application? I haven't done anything like this before, and if you haven't either, this is a blog post for you!
-
 ## **The simple way**
 
-The easiest possible way I could imagine this being done, would be to include the html and the JavaScript needed into my `index.html`, so that is where I will start.
+The easiest possible way I could imagine this being done, would be to include the html and the *built* JavaScript needed into my `index.html`, so that is where I will start.
 
 The JavaScript depends on some html, so that has to be included as well.
 
 ```
 <body>
   <!-- The image workshop -->
-  <script src="https://raw.githubusercontent.com/Matsemann/image-workshop/solution/src/index.js"></script>
   <h1>AlgPip > Photoshop</h1>
   <a href="https://github.com/Matsemann/image-workshop">Se oppgavene / implementasjonen her</a>
   ...
   <!-- Defines some buttons to load images and use effects on them, and canvases to load images into -->
   ...
+  <script src="image-workshop.js"></script>
+  
   <!-- My new React app is loaded into the div below -->
   <div id="root"></div>
 </body>
@@ -142,9 +139,6 @@ const MyFunctionalEditor = () => {
 }
 
 export default MyFunctionalEditor;
-
 ```
-
-
 
 ![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png "And success! I get my own version of photoshop inside my React app!")
