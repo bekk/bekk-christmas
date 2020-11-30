@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 8
+post_day: 13
 title: Dependent types and Idris
 image: https://images.unsplash.com/photo-1482003297000-b7663a1673f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80
 description: ""
