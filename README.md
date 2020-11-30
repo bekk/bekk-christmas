@@ -12,7 +12,7 @@ Dette repoet er kildekoden til disse sidene:
 -   [kotlin.christmas](https://kotlin.christmas)
 -   [ml.christmas](https://ml.christmas)
 -   [opensource.christmas](https://opensource.christmas)
--   [product.christmas](https://product.christmas)
+-   [innovation.christmas](https://innovation.christmas)
 -   [react.christmas](https://react.christmas)
 -   [security.christmas](https://security.christmas)
 -   [thecloud.christmas](https://thecloud.christmas)

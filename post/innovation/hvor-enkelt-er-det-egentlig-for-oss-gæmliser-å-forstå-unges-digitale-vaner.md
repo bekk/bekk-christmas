@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 22
 title: Hvor enkelt er det egentlig for oss gæmliser å forstå unges digitale vaner?

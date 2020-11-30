@@ -410,9 +410,9 @@ collections:
             label: 'Authors'
             widget: list
             field: { label: Name, name: name, widget: string }
-    - name: post_product
-      label: 'Post: Product'
-      folder: post/product
+    - name: post_innovation
+      label: 'Post: Innovation'
+      folder: post/innovation
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
       view_groups:
@@ -434,7 +434,7 @@ collections:
             field: post_year
             pattern: '2017'
       fields:
-          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'product' }
+          - { label: 'Calendar', name: 'calendar', widget: 'hidden', default: 'innovation' }
           - {
                 label: 'Year',
                 name: 'post_year',

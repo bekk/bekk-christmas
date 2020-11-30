@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 20
 title: Hva er forskjellen mellom design og designer?

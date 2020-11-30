@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 13
 title: En spøkelseshistorie fra fortiden. Var det verre før?

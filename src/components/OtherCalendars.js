@@ -13,7 +13,7 @@ const calendars = [
     'kotlin',
     'ml',
     'opensource',
-    'product',
+    'innovation',
     'react',
     'security',
     'talks',
