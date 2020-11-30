@@ -16,6 +16,9 @@ ingress: Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
   eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg
   introdusere dere for growth hacking og hvordan vi i Bekk hjelper våre kunder
   med å identifisere de viktigste veksteksperimentene.
+links:
+  - url: https://preview.bekk.christmas/1cb2692c-badb-4562-9f48-8329f46c3b49
+    title: Eksperimentkort
 ---
 # **Hva er Growth hacking**
 
@@ -31,7 +34,7 @@ Vi bistår våre kunder med å identifisere og gjennomføre veksteksperimenter, 
 
 Vi har identifisert 4 steg for enkelt å komme i gang med å identifisere veksteksperimenter. De kan oppsummeres i følgende figur:
 
-![4 steg for å gjennomføre en vekstsprint](blob:https://preview.bekk.christmas/481e20bc-eaa7-4501-ba41-cd3869c95002)
+![4 steg for å gjennomføre en vekstsprint](blob:https://preview.bekk.christmas/5b6a085a-784b-4297-a3f7-5dd1572a64fd)
 
 ## **1) Identifiser vekstmålet – din nordstjernemetrikk**
 
@@ -67,6 +70,8 @@ Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide s
 ## **4) Prioriter og planlegg gjennomføringen av eksperimentene**
 
 I det siste steget skal dere prioritere hvilke av eksperimentene som skal gjennomføres basert på tre parametre: Impact, Ease og Confident - en såkalt ICE-Score. De beste eksperimentene løser vekstutfordringene, er enkel å gjennomføre og dere har stor tro på det som team. Skalaen går fra 1 til 10, hvor 1 er dårlig og 10 er bra.
+
+![Prioriter eksperimentene etter ICE-skalaen](blob:https://preview.bekk.christmas/6e1674ae-991e-4548-9b72-5cf6d3a7ac78)
 
 Etter prioriteringsøvelsen sitter teamet igjen med en prioritert liste med eksperimenter, samt en backlog som kan tas tak i senere. Den store jobben er å gjennomføre og lære av eksperimentene.
 
