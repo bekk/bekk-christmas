@@ -32,11 +32,11 @@ Growth hacking slår ned de usynlige veggene mellom dataanalyse, programmering, 
 
 Vi bistår våre kunder med å identifisere og gjennomføre veksteksperimenter, gjennom en *vekstsprint*. En vekstsprint er en 4 stegs-øvelse som typisk gjennomføres av tverrfaglige produktteam eller vekstteam som utvikler nye produkter eller som ønsker å skape vekst på områder som stagnerer. Målet er å identifisere [nordstjernemetrikken](https://blog.growthhackers.com/what-is-a-north-star-metric-b31a8512923f)– den ene og viktigste metrikken for vekst og som best fanger verdiskapningen produktet leverer til kundene, og dermed skaper vekst for bedriften. Vekstsprinten bidrar også til å identifisere veksthindringer, det vil si friksjoner i kundereisen som hindrer vekst. Etter vekstsprinten vil teamet typisk sitte igjen med følgende:
 
-![Hva produktteam typisk sitter igjen med etter en vekstsprint](blob:https://preview.bekk.christmas/14cc7017-6690-442c-ac9e-d6b096541476)
+![Hva produktteam typisk sitter igjen med etter en vekstsprint](/assets/01output.png)
 
 Vi har identifisert 4 steg for enkelt å komme i gang med å identifisere veksteksperimenter. De kan oppsummeres i følgende figur:
 
-![4 steg for å gjennomføre en vekstsprint](blob:https://preview.bekk.christmas/5b6a085a-784b-4297-a3f7-5dd1572a64fd)
+![4 steg for å gjennomføre en vekstsprint](/assets/02vekstsprint.png)
 
 ## **1) Identifiser vekstmålet – din nordstjernemetrikk**
 
@@ -48,12 +48,11 @@ Diskutert innad i teamet hva denne metrikken er og ha den i bakhodet i hele veks
 
 Growth hacking handler om å forstå hvor de største vekstmulighetene ligger i kundereisen. Det er derfor essensielt å forstå kundereisen og eventuelt hvor problemene oppstår for kundene. En måte å visualisere en slik kundereise på er å bruke *pirate metrics*. Den viser de viktigste vekstmetrikkene i kundereisen fra en kunde får vite om produktet ditt, til de eventuelt anbefaler det til andre. Figuren under viser hva de ulike metrikkene betyr.
 
-![Figuren viser fem typiske metrikker som er viktig for vekst. Disse vekstmetrikkene knyttes opp mot problemer i kundereisen som hindrer vekst.](blob:https://preview.bekk.christmas/c6d69f3f-6d8a-4e2c-bb85-3ede3a8d8730)
-
+![Figuren viser fem typiske metrikker som er viktig for vekst. Disse vekstmetrikkene knyttes opp mot problemer i kundereisen som hindrer vekst.](/assets/03veksthindringer.png)
 
 Velg en relevant kundereise som er viktig for vekstmålet. Her er det en fordel å gå gjennom hver av de fem delene av kundereisen systematisk og i rekkefølge. Still deg følgende to spørsmål for hver del og kom opp med så mange veksthindringer som mulig:
 
-1. **Hindringer**: Hva er det som hindrer at vi får vekst i [sett inn en pirate metric: Acquisition/Activation/Retention/Revenue/Referal]?
+1. **Hindringer**: Hva er det som hindrer at vi får vekst i \[sett inn en pirate metric: Acquisition/Activation/Retention/Revenue/Referal]?
 2. **Muligheter**: Hvilke vekstmuligheter har vi ikke utforsket enda eller bør utforske mer?
 
 Det kan også være en idé å reformulere problemområdene til spørsmål, såkalt ["How might we-statements"](https://www.designkit.org/methods/3). Dette hindrer at teamet graver seg for langt ned i problemene og åpne opp for nye muligheter. Etter endt brainstorming kan dere være hensiktsmessige å prioritere hvilke veksthindringer som skal utforskes videre i sprinten, for eksempel ved avstemning.
@@ -74,14 +73,14 @@ Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide s
 
 I det siste steget skal dere prioritere hvilke av eksperimentene som skal gjennomføres basert på tre parametre: Impact, Ease og Confident - en såkalt ICE-Score. De beste eksperimentene løser vekstutfordringene, er enkel å gjennomføre og dere har stor tro på det som team. Skalaen går fra 1 til 10, hvor 1 er dårlig og 10 er bra.
 
-![Prioriter eksperimentene etter ICE-skalaen](blob:https://preview.bekk.christmas/6e1674ae-991e-4548-9b72-5cf6d3a7ac78)
+![Prioriter eksperimentene etter ICE-skalaen](/assets/04ice.png)
 
 Etter prioriteringsøvelsen sitter teamet igjen med en prioritert liste med eksperimenter, samt en backlog som kan tas tak i senere. Den store jobben er å gjennomføre og lære av eksperimentene.
 
 Det anbefales å:
 
-- Lage en konkret plan over hvordan eksperimentene skal gjennomføres, samt hvem som skal gjøre hva. Hver konkret på deadlines og når dere eventuelt skal gjennomgå resultatene. Send gjerne ut kalenderinvitasjoner for å sikre at eksperimentene gjennomføres og gjennomgås.
-- Gjennomføre slike vekstsprinter med jevne mellomrom. Eksempelvis hvert kvartal for å fylle opp backlogen med eksperimenter.
-- Mål antall eksperimenter gjennomført hver uke og ha et bevist forhold til denne metrikken. Gjennomfører teamet mange nok eksperimenter, så skapes det en kultur for testing og feiling, samt at teamene lærer noe nytt ofte.
+* Lage en konkret plan over hvordan eksperimentene skal gjennomføres, samt hvem som skal gjøre hva. Hver konkret på deadlines og når dere eventuelt skal gjennomgå resultatene. Send gjerne ut kalenderinvitasjoner for å sikre at eksperimentene gjennomføres og gjennomgås.
+* Gjennomføre slike vekstsprinter med jevne mellomrom. Eksempelvis hvert kvartal for å fylle opp backlogen med eksperimenter.
+* Mål antall eksperimenter gjennomført hver uke og ha et bevist forhold til denne metrikken. Gjennomfører teamet mange nok eksperimenter, så skapes det en kultur for testing og feiling, samt at teamene lærer noe nytt ofte.
 
 Nå har dere en oppskrift på hvordan teamet ditt kan komme i gang med å identifisere veksteksperimenter. Hvorfor ikke kickstarte nyåret med en vekstsprint!
