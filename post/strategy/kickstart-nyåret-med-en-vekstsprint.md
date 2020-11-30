@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 9
-title: Kickstart nyåret med en vekstsprint!
+title: Hva kan etablerte selskaper lære av vekstselskaper?
 image: https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1949&q=80
 ingress: Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
   vekst, vil et selskap stagnere og etterhvert forvitre. Det er ikke rart at
@@ -11,11 +11,11 @@ ingress: Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
   investorer. Til tross for at vi har tilgang til mer kundedata, metoder og
   dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe
   målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har
-  vokst frem som et resultat av dette, er growth hacking. Målet er å skape
+  vokst frem som et tilsvar til dette er growth hacking. Målet er å skape
   viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og
   eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg
-  introdusere dere for growth hacking og hvordan vi i Bekk hjelper våre kunder
-  med å identifisere de viktigste veksteksperimentene.
+  introdusere dere for growth hacking og hvordan etablerte selskaper kan ta
+  inspirasjon fra vekstselskaper rundt bruken av eksperimenter.
 links:
   - url: https://preview.bekk.christmas/1cb2692c-badb-4562-9f48-8329f46c3b49
     title: Eksperimentkort
@@ -26,7 +26,7 @@ authors:
 
 Det var i 2010 at gründeren Sean Ellis introduserte verden for begrepet growth hacking og siden har fagfeltet eksplodert, særlig i startupverden. Kort fortalt er growth hacking et paraplybegrep for strategier, metoder og et tankesett for å oppnå massiv vekst, på relativt beskjedne budsjetter og kort tid. Hyppige eksperimenter er et nøkkelord. Selskaper som ønsker å øke fokuset på vekst, bør ha et bevisst forhold til antall eksperimenter som gjennomføres hver uke. Gjennomføres nok eksperimenter over tid bidrar dette til å styrke kompetansen og kulturen på dette området, og det er nesten helt sikkert at noen av eksperimentene vil gi gevinst for bedriften.
 
-Growth hacking slår ned de usynlige veggene mellom dataanalyse, programmering, produktutvikling og markedsføring. Det er få enkeltindivider som behersker alle disse fagfeltene godt, og det er derfor ikke uvanlig med såkalte *growth teams* som typisk jobber med å drive vekst eller utvikling av nye vekstinitiativer. I en jungel av data, strategier, verktøy og teknologi er det lett å miste fokus på de tingene som faktisk gir vekst. Vi i Bekk foreslår å ta et skritt tilbake for å identifisere vekstmålet og gjennomføre de eksperimentene som bidrar å nå dette målet.
+Growth hacking slår ned de usynlige veggene mellom dataanalyse, programmering, produktutvikling og markedsføring. Det er få enkeltindivider som behersker alle disse fagfeltene godt, og det er derfor ikke uvanlig med såkalte *growth teams* som typisk jobber med å drive vekst eller utvikling av nye vekstinitiativer. I en jungel av data, strategier, verktøy og teknologi er det lett å miste fokus på de tingene som faktisk gir vekst. Vi i Bekk foreslår å ta et skritt tilbake for å identifisere vekstmålet og gjennomføre de eksperimentene som bidrar å nå dette målet - slik mange vekstselskaper gjør det!
 
 # **Vekstsprint** **i fire steg**
 
