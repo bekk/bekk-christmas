@@ -186,7 +186,7 @@ new Date(2020, 11, 1) + 12345 = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central Euro
 new Date(2020, 11, 1) + "12345" = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central European Standard Time)12345"
 
 new Date(2020, 11, 1).toString() = "Tue Dec 01 2020 00:00:00 GMT+0100 (Central European Standard Time)"
-new Date(2020, 11,1 ).valueOf() = 1606777200000
+new Date(2020, 11, 1).valueOf() = 1606777200000
 ```
 
 ## Weirdos
