@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 3
-title: On the third day of christmas a developer sent to me.. 3 React security tips!
+title: 🎶On the third day of christmas a developer sent to me.. 3 React security tips!
 image: https://unsplash.com/photos/0Yiy0XajJHQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 ingress: As frontend developers, we tend to focus on the users experience with
   our application. We all might say that security on our minds, but we rely more
@@ -37,9 +37,9 @@ Will end up like: 
 &lt;script&gt;alert('Merry Christmas from your attacker🎅')&lt;/script&gt;
 ```
 
-With Reacts escaping it is safe to place untrusted data in JSX` return ( <p>{ christmasCarol }</p> );` Even if there is a script in the `christmasCarol`, it wil not be executed. 
+With Reacts escaping it is safe to place untrusted data in JSX`return ( <p>{ christmasCarol }</p> );` Even if there is a script in the `christmasCarol`, it wil not be executed. 
 
-The same with the use of Reacts API and the use of` React.createElement("p", {}, christmasCarols).` React will escape all children, meaning the third argument in the `createElement` function.
+The same with the use of Reacts API and the use of`React.createElement("p", {}, christmasCarols).` React will escape all children, meaning the third argument in the `createElement` function.
 
 React is great when it comes to security and handle a lot of vulnerabilities for us. But React can’t be responsible for it all. And by using something secure incorrectly can be insecure fast. So which pitfalls should we be mindful of and what should we look for in our code?
 
@@ -51,9 +51,7 @@ According to Reacts own documentation dangerouslySetInnerHtml is Reacts replacem
 This is how it is used
 ```
 
-DangerouslySetInnerHtml is something that should be used with caution. The name of the function is not there by accident and is a name to scare developers away from using it.  Directly placing code from either an external source like an API with formatted HTML in the response or letting a user build their own web page or whatever the case may be is a serious risk to take. Although the function does not run <script> tags out of the box, there are other ways of triggering the scripts. Some html-elements' eventhandlers can be used. Especially onerror event. One example is using 
-
-
+DangerouslySetInnerHtml is something that should be used with caution. The name of the function is not there by accident and is a name to scare developers away from using it.  Directly placing code from either an external source like an API with formatted HTML in the response or letting a user build their own web page or whatever the case may be is a serious risk to take. Although the function does not run` <script>` tags out of the box, there are other ways of triggering the scripts. Some html-elements' eventhandlers can be used. Especially onerror event. One example is using 
 
 ```
 Example here
@@ -68,8 +66,6 @@ Example on how to use it:
 ```
 
 **Handling Urls**
-
-
 
 **Keep your framework updated!**
 
