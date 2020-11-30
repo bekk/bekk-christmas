@@ -14,5 +14,7 @@ ingress: When using fully-managed Azure SQL databases there are several choices
   would be a candidate for the Serverless tier which automatically scales the
   database on demand and then you only pay per use. Could we achieve the same
   performance at reduced cost?
+authors:
+  - Christian Young
 ---
 Test
