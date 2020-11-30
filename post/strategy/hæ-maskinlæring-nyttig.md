@@ -4,8 +4,9 @@ post_year: 2020
 post_day: 11
 title: Hæ, maskinlæring nyttig?
 ingress: >-
-  Maskinlæring er ikke lenger bare en *hype* \[link til Gartner-kurven], men
-  etablert, velprøvd og kraftig teknologi som utnytter potensialet i store
+  Maskinlæring er ikke lenger bare en
+  *[hype](https://images-cdn.newscred.com/Zz1mOWJhNzlkNDA2ZTMxMWViYjRiOGFiM2IyMjQ1YmMwZQ==)*,
+  men etablert, velprøvd og kraftig teknologi som utnytter potensialet i store
   datamengder. Samtidig sliter mange selskaper med å forstå og utnytte det
   strategiske mulighetsrommet for maskinlæring. De siste årene har vi sett
   utallige halvhjertede og irriterende chat-roboter som skal kunne «svare på
@@ -19,6 +20,8 @@ ingress: >-
 
 
   Vi trekker frem noen områder der de aller fleste bedrifter vil ha potensiale for å ta i bruk maskinlæring.
+authors:
+  - Morten Winther Wold
 ---
 **Kundesegmentering**
 
