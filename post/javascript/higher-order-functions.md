@@ -142,7 +142,8 @@ const prizeMoney = contestants.reduce((accumulatedPriceMoney, contestant) => {
 console.log(prizeMoney)
 ```
 
-\
+## Summary
+
 The ability to pass functions as values to other functions is a very useful aspect of JavaScript, and higher-order functions allow for abstraction of iteration, filtering and value accumulation, and allows for developers to instead focus on clean and readable code.\
 The fact that higher-order functions are data-type agnostic when operating on data is also a nice feature, meaning that the filter-method works just as well filtering on strings as it does on numbers or any other data type you might specify in your function argument.\
 \
