@@ -4,21 +4,14 @@ post_year: 2020
 post_day: 4
 title: Hvorfor er riktig problemdefinisjon viktig for nyskaping?
 image: https://images.unsplash.com/photo-1586527155314-1d25428324ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
-ingress: "*Du har kanskje hørt ordtaket «Love the problem, not the solution»?
-  Virksomheter lever av å løse kundens problemer. Men det er ikke så enkelt som
-  det høres ut som. Vi har sett storslåtte selskaper gå dukken som følge av at
-  de har forelsket seg i sin **løsning** på kundens problemer og blitt forbigått
-  av konkurrenter som har forelsket seg i selve **problemet**, og dermed i
-  større grad evnet å innovere rundt løsningen. BlackBerry og deres
-  «fulltastaturtelefon» er et ofte brukt eksempel på dette. For  å drive med
-  kontinuerlig forbedring og innovasjon rundt et problem, er det helt sentralt å
-  forstå brukerens virkelige behov og problemer. Altså å jobbe brukersentrisk.
-  Gjennom mine første måneder i Bekk har jeg gjort meg opp noen refleksjoner
-  rundt brukersentrisk tilnærming, og hvorfor det er fånyttes dersom problem- og
-  behovsdefinisjonene er feilformulert.*"
+ingress: ""
 authors:
   - Isak Solli Iveland
 ---
+*Du har kanskje hørt ordtaket «Love the problem, not the solution»? Virksomheter lever av å løse kundens problemer. Men det er ikke så enkelt som det høres ut som. Vi har sett storslåtte selskaper gå dukken som følge av at de har forelsket seg i sin **løsning** på kundens problemer og blitt forbigått av konkurrenter som har forelsket seg i selve **problemet**, og dermed i større grad evnet å innovere rundt løsningen. BlackBerry og deres «fulltastaturtelefon» er et ofte brukt eksempel på dette. For  å drive med kontinuerlig forbedring og innovasjon rundt et problem, er det helt sentralt å forstå brukerens virkelige behov og problemer. Altså å jobbe brukersentrisk. Gjennom mine første måneder i Bekk har jeg gjort meg opp noen refleksjoner rundt brukersentrisk tilnærming, og hvorfor det er fånyttes dersom problem- og behovsdefinisjonene er feilformulert.*
+
+
+
 ### Å forstå problemet
 
 Produkt- og tjenesteutvikling handler om å forstå kunden. Vi bør identifisere hvem de er, hvilke problemer de har og hvilke behov problemene er knyttet til. Basert på observasjoner og erfaring bygger vi noen hypoteser om dette, før vi tester det ut mot reelle kunder eller brukere. 
