@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 13
+post_day: 8
 title: "Gson and Kotlin: The nightmare before christmas!"
 ingress: "Does it really matter which serialization library you choose for your
   application? They're all pretty much the same, right? Right... It's story
