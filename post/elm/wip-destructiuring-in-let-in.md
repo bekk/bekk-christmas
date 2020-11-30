@@ -2,12 +2,12 @@
 calendar: elm
 post_year: 2020
 post_day: 4
-title: "WIP: The power of let expressions"
+title: The power of let expressions
 image: https://images.unsplash.com/photo-1601543541912-d8e7bd4006e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3916&q=80
 ingress: In the previous christmas articles we have seen how to destructure
   tuples, records, and single-value custom types in the function arguments.
   Today we take a look at how to destructure values in let expressions, along
-  with specific use-cases where I find this most useful.
+  with some of the use-cases where I find this the most helpful.
 links:
   - url: https://elm-lang.org/docs/syntax#let-expressions
     title: Let expressions @ elm-lang.org
@@ -88,8 +88,28 @@ bodyMassIndex height weight =
     weight / (height * height)
 ```
 
-### My best use-cases
-Having shown the power of let expressions, I want to give a real-life example of what I find the most useful about this. I lucky to get to write Elm every day at work, and the following is a piece of code from our code base: 
+### My favourite use-cases
+Having shown the power of let expressions, I want to share my favourite use-cases for them. I'm lucky to get to write Elm every day at work, and the following two examples are taken from an Elm app for doing journey searches.
+
+First, let's take a look at the update function. The Model contains a passenger picker which handles everything related to adding passengers to a journey search. The passenger picker has its own Model and a typical update function returning a Model and a Cmd. When calling this update function from the outer update function, then let expressions come in very handy:
+
+```elm
+update msg model =
+    case msg of 
+        PassengerPickerMsg subMsg ->
+            let
+                (updatedPassengerPicker, passengerPickerCmd) =
+                    PassengerPicker.update subMsg model.passengerPicker
+            in
+            ( { model | passengerPicker = updatedPassengerPicker }
+            , Cmd.map PassengerPickerMsg passengerPickerCmd
+            )
+```
+
+Here the return value from calling `PassengerPicker.update` is destructured directly in the let expression. This way we can easily put the updated passenger picker into the Model while at the same time returning the passenger picker Cmd.
+
+Next is an example where we decide what type of situation message to display on a journey suggestion:
+
 ```elm
 viewSituationMessage : Severity -> Html msg
     let 
@@ -131,11 +151,11 @@ let
                 Colors.Blue80
 
             Warn ->
-                Colors.Yellow80 )
+                Colors.Yellow80
 in
 ...
 ```
 
 Scenarios like this, where multiple values are based on the same condition, are where I use this kind of destructuring the most. Other than reducing duplicated code, one great thing about this pattern is that one can easily see what values are "connected" and that will change under the same conditions. Pretty neat, huh?
 
-P.S: The dog has nothing to do with the article. It's just here for cuteness 🐶
+P.S. The dog has nothing to do with the article. It's just here for cuteness 🐶
