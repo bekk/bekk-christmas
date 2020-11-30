@@ -11,13 +11,13 @@ authors:
   - Ole Reidar Holm
 ---
  
-We have all heard scary stories about IoT devices and how easily they are hacked. This blog post tries to make a comprehensive “do-it-yourself” guide to the most of IoT devices out there. 
+We've all heard the horror stories. Whether it's [hacked baby monitors](https://www.nbcnews.com/news/us-news/stranger-hacks-baby-monitor-tells-child-i-love-you-n1090046) or [talking toys](<https://www.theguardian.com/technology/2017/nov/14/retailers-urged-to-withdraw-toys-that-allow-hackers-to-talk-to-children >), [consumers and developers seem to agree](<https://auth0.com/blog/surprised-turns-out-consumers-dont-trust-iot-security/ >) on one thing; *don’t blindly trust your IoT devices*. This blog post tries to explain common security flaws with IoT-devices and makes a comprehensive “do-it-yourself” guide on how you can minimize the security threat. 
 
 Before we dive into the guide, we should know that there exists some security concerns to IoT devices: 
 
 **Default / Weak passwords**
 
-If your device has a weak or easy to guess password then it will be susceptible to guessing attacks. 
+“Box fresh” devices often have a default password. If your device has a weak or easy to guess password then it will be susceptible to guessing attacks. Default passwords is easily obtained from the Internet (https://www.routerpasswords.com/)
 
 **Missing security updates**
 
@@ -25,7 +25,7 @@ IoT devices are often built on pre-existing technologies such as the Linux opera
 
 **Insecure web administration**
 
-Most devices offer some form of web application to provision and administer the device. These interfaces are vulnerable to the same risks as enterprise applications or Internet sites. 
+Some devices offer some form of web application to provision and administer the device. These interfaces are vulnerable to the same risks as enterprise applications or Internet sites. 
 
 **Use of insecure protocols**
 
@@ -49,29 +49,34 @@ If your device can store data locally then you need to be aware of the risks of 
 * **Check for firmware and system updates:** 
 
   Even a brand new device could need a security update. Refer to the manual, do an online search, or contact the manufacturer for advice.
-
 * **Apply updates regulary:**
 
   Manufacturers patch bugs and flaws on an ongoing basis – and so should you.Sign up for automatic updates or software update alerts when possible.
-
 * **Set up a guest WiFi network for IoT devices to connect to:**
 
   Isolate your IoT devices from your home computers to reduce risk to important data. If you need advice, start with an online search for your WiFi router model. Many devices make it easy to set up a guest network.
-
 * **Disable Universal Plug-and-Play (UPnP) functionality on your wireless router:**
 
   Some IoT devices can leave your home firewall vulnerable to attack via UPnP. Unless you specifically need it for an IoT device, turn off UPnP. An online search can help you find advice for your specific model.
-
 * **Google *{name of the device}* + CVE:**
 
+  You should see if there exists one or more [Common Vulnerabilities and Exposures (CVE) ](https://www.cvedetails.com/) for your device. If there is, see if the manufacturer of your device has patched the CVE in one of the software updates, or consider sending them an email letting them know. If the CVE is serious, you should consider turning your IoT off until there is a fix available. 
 
-  *todo description*
-
-  https://www.cvedetails.com/
 
 * **Check for open ports:**
 
-  *todo description*
-* **Do a service scan on device:**
+  Nmap-cheatsheet here: https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67
 
-  https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67
+
+  First obtain the IP-adress of your device. This can be done by looking for “connected devices” on your router or do a network scan with nmap (https://nmap.org/).
+
+
+  * Does your device expose any ports? 
+
+  * What does that port do? (google port + {portnumber})
+
+  * Can you connect to your device through the port? For example through your web browser, ftp client, ssh?
+
+
+  Secondly do a full service scan on your device: 
+  Grab a cup of coffee, this usually takes some time.
