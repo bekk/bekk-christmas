@@ -12,13 +12,13 @@ description: Hvis du låner en krone, og det er den første kronen som eksistere
 authors:
   - Jonas Gürrich
 ---
-<!--\\\\\\[if gte mso 9]><xml>
+<!--\\\\\\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\\\\\\[endif]-->
+</xml><!\\\\\\\[endif]-->
 
-<!--\\\\\\[if gte mso 9]><xml>
+<!--\\\\\\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -58,9 +58,9 @@ authors:
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\\\\\\[endif]-->
+</xml><!\\\\\\\[endif]-->
 
-<!--\\\\\\[if gte mso 9]><xml>
+<!--\\\\\\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -639,9 +639,9 @@ authors:
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\\\\\\[endif]-->
+</xml><!\\\\\\\[endif]-->
 
-<!--\\\\\\[if gte mso 10]>
+<!--\\\\\\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -668,16 +668,16 @@ authors:
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\\\\\\[endif]-->
+<!\\\\\\\[endif]-->
 
-<!--\\\\\\[if gte mso 9]><xml>
+<!--\\\\\\\[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><!\\\\\\[endif]-->
+</xml><!\\\\\\\[endif]-->
 
-<!--\\\\\\[if gte mso 9]><xml>
+<!--\\\\\\\[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><!\\\\\\[endif]-->
+ </o:shapelayout></xml><!\\\\\\\[endif]-->
 
 <!--StartFragment-->
 
@@ -695,7 +695,7 @@ Forestill deg en verden uten penger! For 500 år siden var Inkariket det mektigs
 
 > *I 1532 A.D. ankom Francisco Pizarro og hans conquistadors, «erobrere». De hadde reist fra Spania, inspirert av legenden om ELDORADO. Etter å ha nedkjempet inkaene, gjorde de en oppdagelse i Bolivia, «Cerro Rico», pengefjellet! Over de neste 250 årene under Spansk styre, ble 2 billioner unse med sølv hentet ut fra gruvene (ca 56,7 milliarder kilo). Sølv var for Inkaene, ikke noe mer enn skinnende metal: men dette skinnende metallet kunne en lage mynter av, med andre ord, en transportabel MAKT. Selve oppdagelsen hadde gjord det spanske imperiet rikere enn rikest, men selv med alt dette sølvet, kunne det ikke stoppe den økonomiske og politiske nedgangen til det spanske imperiet. Spanjolene hadde gravd opp så mye sølv til å finansiere sine erobringer, at metallet i seg selv opplevde et eksepsjonelt verdifall. Myntene gjorde ikke Spania rikere, men prisene høyere – ettersom en økning i pengemengden jaget en uendret mengde av varer og tjenester.*
 
-###### **The Ascent of Money – Niall Ferguson**
+###### The Ascent of Money – Niall Ferguson
 
 ## Det spanjolene ikke forstod da, er at penger er bare verdt hva andre vil gi i bytte mot det.
 
