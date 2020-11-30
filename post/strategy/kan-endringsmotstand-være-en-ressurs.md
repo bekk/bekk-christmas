@@ -3,7 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 10
 title: Kan endringsmotstand være en ressurs?
-image: ""
+image: blob:https://preview.bekk.christmas/7d3ff53b-f36b-4a96-88ab-973b2986fc4a
 ingress: ""
 authors:
   - Simen Sæther Jørgensen
