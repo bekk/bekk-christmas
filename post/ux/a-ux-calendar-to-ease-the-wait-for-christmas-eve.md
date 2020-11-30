@@ -6,13 +6,13 @@ title: "A UX calendar to ease the wait for Christmas Eve! "
 ingress: >-
   Welcome to this year's UX advent calendar! 
 
-  Last year was the premier for ux.christmas and this year we are doing it again. 24 days, 24 articles. Windows of inspiration, facts, a little insight into our world, and other things that we have worked with during this strange year of 2020. Herman is going to tell you a little about Figma. Citona and Sigurd are discussing how we as designers have to manage a lot of things and how to keep track of it all, and Espen is writing about inspiration.
+  Last year was the premier for ux.christmas and this year we are doing it again. 24 days, 24 articles. Windows of inspiration, facts, a little insight into our world, and other things that we have worked with during this strange year of 2020. Herman is going to tell you a little about Figma. Citona and Sigurd share 5 things they wish they knew about working as a UX designer before they started, and Espen is writing about inspiration.
 description: "An article about a UX advent calendar and the experience of time
   and speed in UX. "
 authors:
   - Ola Claussen
 ---
-Some articles are written in English, others Norwegian. They are just short enough (2-3 minute read) to squeeze in while you wait for the gløgg* to be ready to drink at your home office. If you are hungry for more articles to devour we have lots to offer because the UX-calendar is not alone. This year, we have made 11 advent calendars(!), each with its own daily dose of original content made by people in Bekk. Head over to bekk.christmas to get an overview of it all! 
+Some articles are written in English, others Norwegian. They are just short enough (2-3 minute read) to squeeze in while you wait for the gløgg* to be ready to drink at your home office. If you are hungry for more articles to devour we have lots to offer because the UX-calendar is not alone. This year, we have made 12 advent calendars(!), each with its own daily dose of original content made by people in Bekk. Head over to bekk.christmas to get an overview of it all! 
 
 <p>&nbsp;</p>
 
