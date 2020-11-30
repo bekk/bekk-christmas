@@ -3,7 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 3
 title: Hvordan mislykkes med implementering av ny strategi?
-image: https://unsplash.com/photos/smgTvepind4
+image: https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2167&q=80
 links:
   - url: https://www.youtube.com/watch?v=nvkr4oP2xPE&feature=youtu.be
     title: "LEHMKUHLFØRELESINGA 2020: Rune Bjerke"
