@@ -38,7 +38,7 @@ If you have been working with JavaScript, you have probably seen a lot of usage 
 
 The language supports using the `+` operator between (almost) all of the different data types - the results might therefore be confusing. In JavaScript, there is no compiler to hold your hand on your “addition journey”.
 
-> **The addition operator either performs string concatenation or numeric addition.**
+**The addition operator either performs string concatenation or numeric addition.**
 
 With the rule above you should be able to understand all additions in JavaScript, but some of us need to see examples and explanations to fully understand the different scenarios.
 
@@ -51,8 +51,6 @@ Step-by-step example
 3 + 7
 10
 ```
-
-----
 
 As the rule states - with two numeric elements, the output is a numeric value:
 
@@ -161,8 +159,6 @@ For arrays, `valueOf` returns the array - which is not a primitive value. The ou
 [] + 1 = "1"
 [1, 2, 3] + [4, 5, 6] = "1,2,3" + "3,4,5" = "1,2,34,5,6"
 ```
-
-----
 
 Since you have been reading all along - here is a quiz for you:
 
