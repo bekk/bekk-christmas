@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 14
+post_day: 10
 title: Bring your type parameters back to life with the reified keyword
 ingress: _Reification_. Like many other concepts, it can be applied in a number
   of different ways and it might carry slightly different meanings depending on
