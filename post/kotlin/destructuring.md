@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 16
+post_day: 4
 title: Destructuring
 links:
   - url: https://kotlinlang.org/docs/reference/multi-declarations.html
