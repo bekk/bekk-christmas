@@ -19,6 +19,8 @@ ingress: Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
 links:
   - url: https://preview.bekk.christmas/1cb2692c-badb-4562-9f48-8329f46c3b49
     title: Eksperimentkort
+authors:
+  - Vinh Nguyen
 ---
 # **Hva er Growth hacking**
 
