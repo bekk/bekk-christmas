@@ -4,11 +4,13 @@ post_year: 2020
 post_day: 7
 title: 'Kan vi "dultes" i en grønnere retning? '
 image: https://images.unsplash.com/photo-1554976326-7b74d5ea44e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=728&q=80
+ingress: "Stadig flere retter fokus mot klimaendringene, og vi som forbrukere og
+  privatpersoner ytrer et ønske om å bli mer bærekraftige. "
 description: grønn, nudging, bærekraft
 authors:
   - Hedvig Berg
 ---
-Stadig flere retter fokus mot klimaendringene, og vi som forbrukere og privatpersoner ytrer et ønske om å bli mer bærekraftige. Samtidig observerer vi et gap mellom holdninger (hva folk ønsker å gjøre), og adferd (hva vi faktisk gjør). Mange av oss vil gjerne velge bærekraftig, men når det kommer til stykket kan det være andre behov som føles viktigere. Plutselig kan det å komme seg raskere til jobb eller anskaffe nye høyttalere til en god deal på Black Friday trumfe vårt iboende ønske om å handle bærekraftig. Kan grønn nudging benyttes som verktøy for å gi oss en dult i grønn retning?
+Samtidig observerer vi et gap mellom holdninger (hva folk ønsker å gjøre), og adferd (hva vi faktisk gjør). Mange av oss vil gjerne velge bærekraftig, men når det kommer til stykket kan det være andre behov som føles viktigere. Plutselig kan det å komme seg raskere til jobb eller anskaffe nye høyttalere til en god deal på Black Friday trumfe vårt iboende ønske om å handle bærekraftig. Kan grønn nudging benyttes som verktøy for å gi oss en dult i grønn retning?
 
 Det er ingen hemmelighet at vi mennesker ikke tar 100 % rasjonelle valg absolutt hele tiden. Vi favoriserer blant annet gevinster i nåtid fremfor langsiktige gevinster, vi favoriserer *status quo* fremfor forandring, og vi favoriserer personlige gevinster fremfor gevinster for samfunnet. Alle disse vurderingsskjevhetene vil isolert sett gi lavere prioritet til bærekraftig verdiskaping, da denne i stor grad gir gevinster frem i tid, krever forandring og gir verdier på samfunnsnivå.
 
