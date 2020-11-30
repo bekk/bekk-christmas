@@ -3,14 +3,14 @@ calendar: functional
 post_year: 2020
 post_day: 1
 title: What is Functional Programming?
-ingress: Welcome to another year of functional programming advent calendar!
-  Every day until December 24th you will get a article, video or other
+ingress: Welcome to another year of the functional programming advent calendar!
+  Every day until December 24th you will get an article, video or other
   functional programming related content that hopefully will make the waiting
   feel a bit shorter! 😄
 ---
-As previous year the articles will span a big range of topics and complexity. If you are looking for something beginner friendly or more advanced topics there should be something for everyone these next 23 days.
+As previous years the articles will span a large range of topics and complexity. If you are looking for something beginner friendly, or more advanced topics, there should be something for everyone these next 23 days.
 
-Lets start this advent of with a look at the basics: What is functional programming (FP)? This question has been answered a lot of times, in a lot of different ways. [We took our own stab at it last year](https://functional.christmas/2019/1). Even though there are no single definition for FP and many different ways to approach it there are some things that are shared throughout the related communities.
+Let’s start this advent of with a look at the basics: what is functional programming (FP)? This question has been answered many times before, in many different ways. [We took our own stab at it last year](https://functional.christmas/2019/1). Even though there are no single definition for FP and many different ways to approach it, there are some things that are shared throughout the related communities.
 
 # Functional programming in 40 minutes
 
