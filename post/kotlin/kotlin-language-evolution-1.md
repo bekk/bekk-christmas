@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 2
 title: Kotlin changelog
+image: https://images.unsplash.com/photo-1584907797015-7554cd315667?w=1226&h=400&fit=crop&crop=edges
 ingress: >+
   The year 2020 has certainly been a special one, but that hasn't stopped
   Jetbrains from continuing its work on the Kotlin language and its ecosystem.
