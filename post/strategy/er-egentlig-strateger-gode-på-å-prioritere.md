@@ -4,12 +4,10 @@ post_year: 2020
 post_day: 5
 title: Er egentlig strateger gode på å prioritere?
 image: https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXl8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60
-ingress: ""
+ingress: I´ve never heard an intelligent discussion about “cost of capital”.
 authors:
   - Oscar Hafstad
 ---
-***I´ve never heard an intelligent discussion about “cost of capital”.***
-
 Sitatet kommer fra en 96-åring ved navn Charlie Munger. Siden 1978 har han jobbet med å håndtere investeringene til Berkshire Hathaway. Selskapet er nå et av de høyest verdsatte selskapene på S&P 500, etter å ha oppnådd dobbelt så høy avkastning som indeksen mellom 1965 og 2019. En slik uttalelse fra en så sentral skikkelse i selskapet er med andre ord oppsiktsvekkende, og bør vekke interessen for alle som jobber med strategi og forretningsutvikling.
 
 Strategiutvikling handler nemlig i grove trekk om å foreta velbegrunnede prioriteringer. Ingen selskaper kan satse på alle produkter, i alle geografiske markeder, til alle segmenter. Til det er den tilgjengelige kapitalen for liten.
