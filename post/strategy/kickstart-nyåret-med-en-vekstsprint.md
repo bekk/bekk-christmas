@@ -27,11 +27,11 @@ Growth hacking slår ned de usynlige veggene mellom dataanalyse, programmering, 
 
 Vi bistår våre kunder med å identifisere og gjennomføre veksteksperimenter, gjennom en *vekstsprint*. En vekstsprint er en 4 stegs-øvelse som typisk gjennomføres av tverrfaglige produktteam eller vekstteam som utvikler nye produkter eller som ønsker å skape vekst på områder som stagnerer. Målet er å identifisere [nordstjernemetrikken](https://blog.growthhackers.com/what-is-a-north-star-metric-b31a8512923f)– den ene og viktigste metrikken for vekst og som best fanger verdiskapningen produktet leverer til kundene, og dermed skaper vekst for bedriften. Vekstsprinten bidrar også til å identifisere veksthindringer, det vil si friksjoner i kundereisen som hindrer vekst. Etter vekstsprinten vil teamet typisk sitte igjen med følgende:
 
-Figuren viser hva produktteam typisk sitter igjen med etter en vekstsprint.
+![Hva produktteam typisk sitter igjen med etter en vekstsprint](blob:https://preview.bekk.christmas/14cc7017-6690-442c-ac9e-d6b096541476)
 
 Vi har identifisert 4 steg for enkelt å komme i gang med å identifisere veksteksperimenter. De kan oppsummeres i følgende figur:
 
-Figuren viser 4 steg for å gjennomføre en vekstsprint
+![4 steg for å gjennomføre en vekstsprint](blob:https://preview.bekk.christmas/481e20bc-eaa7-4501-ba41-cd3869c95002)
 
 ## **1) Identifiser vekstmålet – din nordstjernemetrikk**
 
