@@ -20,5 +20,5 @@ Noen typiske årsaker til endringsmotstand er:
 
 Endringsmotstand er en viktig ressurs for deg som initiativtaker fordi det gir deg svært nyttig innsikt om hvordan du bør gå frem videre med endringen og hvilke problemer som må løses. Snakk med endringsmotstanderne, bruk tid på å forstå deres perspektiv og analyser deg fram til den faktiske årsaken til motstanden. Det vil hjelpe deg med å gjøre treffende justeringene i løpet av endringsreisen og øke sannsynligheten for en vellykket prosess. 
 
-Kilder:\
+**Kilder:**\
 *Choosing strategies for change* av John Kotter og Leonard A.Schlesinger. Harvard Business Review, 2008. <https://hbr.org/2008/07/choosing-strategies-for-change>
