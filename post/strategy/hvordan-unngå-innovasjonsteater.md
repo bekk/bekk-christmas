@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 4
+post_day: 7
 title: Hvordan unngå innovasjonsteater?
 image: https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGhlYXRlcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60
 ingress: «Alle» driver med innovasjon, og det legges mye penger i tiltak som
