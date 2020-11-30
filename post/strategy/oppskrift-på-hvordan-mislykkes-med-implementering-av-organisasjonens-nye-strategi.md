@@ -15,10 +15,10 @@ Jeg så Lehmkuhlforelesningen på NHH 28. oktober 2020, hvor Rune Bjerke snakket
 Foredraget fikk meg til å reflektere over hva som gjør at organisasjoner mislykkes med implementering av en ny strategi. Jeg har basert på dette laget en oppskrift til jul (i tråd med månedens juletema), som i syv steg beskriver hva du kan gjøre for å *ikke* lykkes med implementering av ny strategi i organisasjonen:
 
 Steg #1:\
-Utarbeid strategien bak lukkede dører og lanser med et Big Bang i resten av organisasjonen. Gjerne på heldagssamling utenfor kontoret uten noe knytning til en vanlig arbeidsdag. Forvent samme engasjement og forståelse for de velvalgte ordene i strategien som du selv har.
+Utarbeid strategien bak lukkede dører og lanser med et Big Bang i resten av organisasjonen. Gjerne på heldagssamling utenfor kontoret uten noe knytning til en vanlig arbeidsdag. Forvent samme engasjement og forståelse for de velvalgte ordene i strategien som du selv har i etterkant av samlingen.
 
 Steg #2: \
-Gjør det så fluffy som mulig, for å sikre at ingen forstår hva strategien egentlig betyr, men bruk konfetti når du presenterer – det funker alltid for maksimal forvirring.
+Gjør det så fluffy som mulig, for å sikre at ingen forstår hva strategien egentlig betyr, men bruk konfetti når du presenterer – det funker alltid for å maksimere forvirringen.
 
 Steg #3: \
 Sørg for at strategien ikke er i tråd med kulturen, og ikke kast bort tiden på å jobbe med organisasjonens kultur hvis det skulle vise seg å være et gap. Var det ikke noen som sa Strategy eats culture for breakfast...?
