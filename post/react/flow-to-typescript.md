@@ -2,8 +2,86 @@
 calendar: react
 post_year: 2020
 post_day: 2
-title: Flow To TypeScript
+title: "War stories: The why and how we moved from Flow to TypeScript"
 authors:
   - Kent Andersen
 ---
-Flow to TS
+Some background…
+
+We are 8 full time developers contributing to the code base. Bla bla bla
+
+## The why
+
+Flows ease of use with React / React Native, and gradual approach
+
+I was not in the room when the decision to adapt Flow over TypeScript was made. But I recon the discussion went like this. How will this affect our current speed? Do we need to change the build pipeline? What new dependencies will we need to include? The answer is of course none, no, and babel-flow-plugin. 
+
+Fast forward two years and the decision made that day was still with us, despite everything else had changed. The app had grown to three clients (bundle entry points) roughly 1300 files, spread across 5 domains. 
+
+Some of Flows momentum had disappeared over the years. In November 2020 11 authors have pushed 44 commits to Flow’s master branch and merged 0 pull-requests, compared to 23 authors and 100 commits to TypeScript’s master branch and 85 merged pull requests. Editor integration and developer experience left a lot to be desired. Our team is splitt 50/50 between IntelliJ IDEA and Visual Studio Code, both with built in autocomplete, type checking and refactoring support, for TypeScript, but with Flow that help was generally not usable. 
+
+Flow had done a pretty good job, but it was time to move on.
+
+## Getting ready to convert
+
+What is the current state of out application? What do we need to do get it ready?
+
+In the clients repository there is tree clients, web - app - widget. Code is grouped by domain and module, with platform specific implementations residing next to each other. Up until that point we used custom file extensions to separate web and native implementations. The native bundler would look for files with extensions .native.js and .js and web bundler would look for .web.js and .js. A component folder could contain both a index.web.js and a index.native.js and when importing said component you would refer only refer to the base folder and let the bundler pick the correct implementation. This worked great and ensured correct files where bundle for the platform. However, static code analyses, ESlint and Flow, would get lost when importing and often pick the wrong implementation. Resulting import being resolved to the wrong platform and a lot of false negatives and false positives.
+
+It is easy to regarded this as a limitation in the utilities, but actually it is symptoms of how much a anti pattern the platform extensions is. It became apparent that it had to go. All index.native.js and index.web.js was renamed to native.js and web.js. As a result imports was extended with /native /web. The result was rather nice. Instead of hiding the complexity of a dual implementation, it was highlighted.   
+
+With improved ability for static analyses, it was time put it to use, find unused code. The easiest code to convert is the code that does not exist. ESlint can detect if a variable or method is unused within the file, which is great. However once you add a export in front of it your on your own. Finding unused code across the whole repository has usually been a combination of gut feeling and find in all files. The goal was to detect all unused exports and remove it. Luckily this is not a new problem there are several packages available. The implementation in js-unused-exports was relatively easy to understand, so I forked the hell out of it. Sure sex is great, but have you ever pruned 812 unused exports. 
+
+## Choosing a strategy
+
+With the code base pruned, and statically analysable there was time to choose migration path. As with all migration there are really only two approaches; Big bang where nothing works until everything works, or hybrid where both systems exists side by side. Its really a question of where do you want to place the additional complexity and how long do you want to spend in the transition phase.
+
+In a big bang approach there is only one type system. Which gives you low complexity in build, but high complexity in the application. The transition phase is short, but intense, as all code needs to be rewritten before anything can be released. 
+
+In a hybrid approach there is two type systems. Which gives you high complexity in build, but low complexity in the application. The transition phase is longer, with code remaining unchanged until you choose to convert it, but no block on release.
+
+Generally I prefer the big bang, just get done with it. But a hybrid approach seemed alluring. I decided to give it a try. The setup is quite easy. Building the application with both type systems is pretty straight forward. React Native supports it out of the box, for webpack you need to enable the "@babel/typescript” preset for \*.ts and \*.tsx files using overrides (https://babeljs.io/docs/en/options#overrides). The hard part it getting the two type systems to talk to each other. There is no built in support for TypeScript in Flow or vice-versa. The only way for the two systems to understand each other is by manually bridging the gap by adding declaration files. Creating a declaration file is tedious but not hard, having to keep that declaration file in sync with the implementation that’s a recipe for disaster. 
+
+For example; Lets say Flow imports a module implemented in TypeScript. That module takes one parameter, a string, and returns another string. This is defined in the declaration file. Then one day we need to change the implementation so that it returns an object of strings, one for each supported language, instead. Usually you would change the implementation, run type check to se where it crashes, and update the usages. But now the TypeScript implementation differs from the Flow declaration file. Flow still think it receives a string and calls all clear, regardless of what TypeScript says. Its like you have erected a iron curtain across your application, and every time you jump from one side to the other your risk of getting shot in the foot.
+
+This is a fundamental problem with the hybrid approach, and grows the longer you’re in the transition phase. After this realisation it was time for a U turn, lets do a big bang instead.
+
+## Lets do what we came here to do 
+
+We have groomed, added support structures, and made planes, but the goal 100% TypeScript is still there in the distance. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, not so secret, master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
+
+In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn academy provides a great utility, flow-to-ts, that automatically translates Flow to TypeScript, and renames the file to .ts or .tsx. Of our 1300 source files only 10 needed any manual work. 
+
+Because of the changed file extension git has to detect that the file has been moved, not removed, to preserve the history. As long as the file is roughly equal this is not a problem. Even though flow-to-ts has built in support for prettier, it did not work with our eslint - prettier combo. Resulting in a different code formatting, 20 000 eslint errors, and git giving up and regarding all files as removed + added. Luckily eslint —fix fixes all formatting issues, letting git do its thing. A small number of files had so many changes that just git gave up. It sucks to loose history
+
+Oi her var det stopp! Dette gjennstår
+
+\* Alle på lint
+
+\* Tre team
+
+\* Test og verifiseringsscript
+
+\* Bygging / bundeling
+
+\* Type-feil
+
+\* Oppdeling
+
+\* Fart
+
+\* Motivasjon, ts-status
+
+
+
+
+
+\* Rulle av folk
+
+Hvordan gikk det, oppsummering
+
+\* Tiden det tok
+
+\* Oppnådd (kortsiktig) gevinst
+
+\* @ts-ignore
