@@ -44,7 +44,7 @@ Tools and packages readily available in JavaScript, together with some HTML and 
 - ... and much more!
 
 ## Theoretical and practical example
-To keep this blog somewhat short and concise, I will explain and demonstrate an entry-level example of [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) for [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis). This is a good starting point for any beginner in the machine learning domain. Even without going into great detail, some theoretical knowledge is required to understand what is going on.
+To keep this blog somewhat short and concise, I will explain and demonstrate an entry-level example of [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) for [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis). This is a good starting point for any beginner in the machine learning domain. Even without going into great detail, some theoretical knowledge is required to understand what is going on. Hence, I give a brief explanation of the most critical concepts in neural networks, before we look at implementing and training a neural network model using TensorFlow.js. 
 
 ### A brief theoretical introduction to neural networks
 Data preprocessing means preparing your data to be used with your defined machine learning method. Firstly and most importantly, null-values or empty data entries have to be removed. Additionally, you may want your data to meet certain statistical properties which can help your machine learning model train better. This is called [feature scaling](https://en.wikipedia.org/wiki/Feature_scaling). A popular form of feature scaling is to use [standardization](https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization)), for which each dataset column is scaled so that the mean value is zero and variance is one.
@@ -70,7 +70,7 @@ The last thing you need to know is that data is usually split into three categor
 ### Practical example using TensorFlow.js
 Finally, you are ready to see some code examples using TensorFlow.js. Note that the syntax and arguments are very similar to anything you would see in e.g. Python or R.
 
-##### Loading, parsing and transforming data
+##### 1. Loading, parsing and transforming data
 First, you must load your data into your program. Using JavaScript, this is unfortunately not entirely straight forward. TensorFlow.js offers some functionality for this purpose, however it is not trivial to use when loading data uploaded through the frontend. Feel free to try it out for yourself using [the TensorFlow documentation](https://js.tensorflow.org/api/0.14.1/#data.csv). If you instead want to rely on your own JavaScript parsing skills, I wrote a small guide how to do this with [react-csv-reader](https://www.npmjs.com/package/react-csv-reader), available in [this GitHub readme file](https://github.com/hermanwh/tfjs-example).
 
 Assuming you made it past the hurdle of loading your data using the above guidelines and have managed to split it based on your input and output parameters, you should be left with four JavaScript arrays: _x_train_, _x_test_, _y_train_, and _y_test_. Arrays prefixed with _x_ are inputs, while _y_ are outputs. We will use the training data to fit our machine learning model, and keep the testing data for later in order to evaluate the model performance. Suppose all loading and preprocessing was done using an imaginary _loadAndPreprocessData_ method:
@@ -90,7 +90,7 @@ const tensors = {
 };
 ```
 
-##### Defining a neural network model
+##### 2. Defining a neural network model
 Next, we define our neural network model with a desirable structure, in this case a single hidden layer of 128 units, and input and output layers according to the size of our training data:
 
 ```javascript
@@ -132,11 +132,7 @@ const callbacks = tfvis.show.fitCallbacks(
 );
 ```
 
-##### Model training and evaluation
-
-##### **Test1**
-###### Test2
-###### **Test3**
+##### 3. Model training and evaluation
 
 Finally, the model can be fitted:
 ```javascript
