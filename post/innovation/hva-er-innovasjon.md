@@ -14,5 +14,9 @@ links:
     url: https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL?si=D3UZL1vwQ0yCwSxhmJXV1A
   - title: Drypp på Apple podcasts
     url: https://podcasts.apple.com/us/podcast/drypp-fra-bekk/id1488818165
+authors:
+  - Jens Andreas Huseby
+  - Moquan Chen
+  - Pia Solheim
 ---
 Julekalenderen 2020 om innovasjon kan du følge på podcasten Drypp fra Bekk.
