@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
 })
 ```
 
-## Not used in the Messenger App
+## Not used in the Messenger app
 
 As mentioned in the introduction, React Native is developed by Facebook. Earlier this year, Facebook announced that they would release the Messenger app, [written as native iOS and Android apps](https://engineering.fb.com/data-infrastructure/messenger/). Further on, AirBnb and Udacity said in 2018 they will no longer [be developing their applications in React Native](https://adtmag.com/articles/2018/07/10/abandon-react-native.aspx). The main reasons for this decision was more or less the immaturity of React Native. 
 
