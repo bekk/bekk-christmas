@@ -95,7 +95,7 @@ First, let's take a look at the update function. The Model contains a passenger 
 
 ```elm
 update msg model =
-    case msg of 
+    case msg of
         PassengerPickerMsg subMsg ->
             let
                 (updatedPassengerPicker, passengerPickerCmd) =
@@ -104,6 +104,8 @@ update msg model =
             ( { model | passengerPicker = updatedPassengerPicker }
             , Cmd.map PassengerPickerMsg passengerPickerCmd
             )
+
+        ...
 ```
 
 Here the return value from calling `PassengerPicker.update` is destructured directly in the let expression. This way we can easily put the updated passenger picker into the Model while at the same time returning the passenger picker Cmd.
