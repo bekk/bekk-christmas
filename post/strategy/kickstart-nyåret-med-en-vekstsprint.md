@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 4
+post_day: 5
 title: Hva kan etablerte selskaper lære av vekstselskaper?
 image: https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1949&q=80
 ingress: "Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
