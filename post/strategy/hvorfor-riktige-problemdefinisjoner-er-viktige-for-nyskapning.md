@@ -52,7 +52,7 @@ Svake behovsdefinisjoner er typisk formulert som et problem eller inneholder ant
 
 Når vi har gjort øvelsen gjennom stegene, gjerne for flere kundegrupper og identifisert mange potensielle behov, så må vi teste usikkerheter mot bruker. Jeg har opplevd at testing er uendelig mye lettere dersom vi har gode problem- og behovsdefinisjoner. Er det viktigst for brukeren å kunne dyrke musikkinteresse generelt? Da er det kanskje hensiktsmessig å fokusere på en løsning som lar brukeren utforske. Er det å bygge identitet som er viktigst?  Da bør vi kanskje legge til rette for at brukeren kan vise andre mennesker hva man lytter til. Dette var tilfeldige eksempler på hvordan vi kan ta i bruk tankesettet. Finner vi ut hvilke behov som er viktigst for kunden, kan vi prioritere funksjonalitet som løser problemet inn i produkt- og tjenestedesign.  
 
-![](assets/blogg-v1.0.png "Modell for å definere kunder, problemer og behov")
+![](https://preview.bekk.christmas/assets/blogg-v1.0.png "Modell for å definere kunder, problemer og behov")
 
 ### Problemer forblir problemer
 
