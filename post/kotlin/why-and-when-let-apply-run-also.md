@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 2
+post_day: 3
 title: "Why and When: let, apply, run, also"
 ingress: The Kotlin standard library has a lot of amazing stuff and today we
   will take a closer look at what let, run, also and apply is and when to use
