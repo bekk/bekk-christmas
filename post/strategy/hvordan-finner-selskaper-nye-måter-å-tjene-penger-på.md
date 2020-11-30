@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 7
+post_day: 8
 title: Hvordan finner selskaper nye måter å tjene penger på?
 ingress: «Hvis du ikke betaler for produktet, er du produktet». De som har sett
   filmen *The Social Dilemma* fra 2020 vil garantert kjenne seg igjen i dette
