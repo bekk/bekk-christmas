@@ -129,7 +129,7 @@ const me = { name: "Charlie", age: 34 }
 me + 1 = "[object Object]1"
 ```
 
-The default `valueOf()`-implementation is an empty object `{}` - which is not a primitive and it will try to convert it using `toString()`. The default toString-value for an object is “\[object Object]” - not very useful for addition. Unfortunately, I have seen this output many times during my time as a developer - it usually happens when I forget to specify the property of the object that should be part of the addition.
+The default `valueOf()`-implementation is an empty object `{}` - which is not a primitive and it will try to convert it using `toString()`. The default `toString()-value for an object is `"[object Object]"` - not very useful for addition. Unfortunately, I have seen this output many times during my time as a developer - it usually happens when I forget to specify the property of the object that should be part of the addition.
 
 Sometimes, it might be handy to override the `valueOf()` or `toString()`-function and make it return something useful.
 
@@ -141,7 +141,7 @@ me + 1 = 35
 
 The return type is now a numeric value and it will add 34 with 1 - which is 35.
 
-The same can be done for a function or a class.
+The same can be done for a function or a class - for both `valueOf` and `toString`.
 
 ```javascript
 function BekkEmployee(name, age) {
