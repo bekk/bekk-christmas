@@ -3,7 +3,8 @@ calendar: strategy
 post_year: 2020
 post_day: 7
 title: 'Kan vi "dultes" i en grønnere retning? '
-image: https://images.unsplash.com/photo-1562638863-ef1c7ffea8ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80
+image: https://images.unsplash.com/photo-1554976326-7b74d5ea44e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=728&q=80
+description: grønn, nudging, bærekraft
 authors:
   - Hedvig Berg
 ---
