@@ -4,10 +4,9 @@ post_year: 2020
 post_day: 7
 title: Hvordan unngå innovasjonsteater?
 image: https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGhlYXRlcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60
-ingress: «Alle» driver med innovasjon, og det legges mye penger i tiltak som
-  skal bidra både til innovasjon i seg selv og til økt innovasjonsevne for
-  bedriften. Men gjøres det innovasjon, eller er det mest teater? Og hvordan kan
-  man unngå teateret?
+ingress: Det legges mye penger i tiltak som skal bidra både til innovasjon i seg
+  selv og til økt innovasjonsevne for bedriften. Men gjøres det innovasjon,
+  eller er det mest teater? Og hvordan kan man unngå teateret?
 ---
 Se for deg at du jobber i et tradisjonelt selskap. Forretningen surrer og går, men nye selskaper, produkter og tjenester popper stadig opp og truer det etablerte. Valget står mellom å «innovere eller dø». Ledelsen hiver seg rundt. Vegger rives, og der det før var cellekontorer finnes det nå beanbags i spreke farger, palmer, whiteboards og post-its. Innimellom kan man også se folk i lokalet. Da har noen gått inn i kalenderen og booket dette rommet, som kanskje heter «Innovasjon» eller «Kreativitet». De skal ha workshop, og det skal innoveres. 
 
