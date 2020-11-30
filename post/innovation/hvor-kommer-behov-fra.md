@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 18
 title: Hvor kommer behov fra?

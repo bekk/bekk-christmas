@@ -43,7 +43,7 @@ const AuthorInfo = (props) => {
         return null;
     }
 
-    const showReadingTime = calendar !== 'product';
+    const showReadingTime = calendar !== 'innovation';
 
     return (
         <Container>

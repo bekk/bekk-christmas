@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 16
 title: Når bør innovasjon skilles ut fra daglig drift?

@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 17
 title: Hvorfor tenke bærekraft i produktutvikling?

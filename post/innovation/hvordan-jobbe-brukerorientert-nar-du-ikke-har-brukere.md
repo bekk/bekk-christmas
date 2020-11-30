@@ -1,5 +1,5 @@
 ---
-calendar: product
+calendar: innovation
 post_year: 2019
 post_day: 21
 title: Hvordan jobbe brukerorientert når du ikke har brukere?

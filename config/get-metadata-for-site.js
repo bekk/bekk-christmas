@@ -48,11 +48,11 @@ module.exports = function getMetadataForSite(siteName = 'bekk') {
                 description: 'A Christmas calendar all about Open Source',
                 siteUrl: 'https://opensource.christmas',
             };
-        case 'product':
+        case 'innovation':
             return {
-                title: 'Product Christmas',
-                description: 'A Christmas calendar all about product development',
-                siteUrl: 'https://product.christmas',
+                title: 'innovation Christmas',
+                description: 'A Christmas calendar all about innovation',
+                siteUrl: 'https://innovation.christmas',
             };
         case 'react':
             return {

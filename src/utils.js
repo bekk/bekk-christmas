@@ -20,7 +20,7 @@ const getCalendarNumber = (calendar) => {
             return '07';
         case 'ux':
             return '08';
-        case 'product':
+        case 'innovation':
             return '09';
         case 'ml':
         case 'strategy':
@@ -88,8 +88,8 @@ export const mapCalendarToName = (calendar) => {
             return 'Java';
         case 'ml':
             return 'Machine Learning';
-        case 'product':
-            return 'Product';
+        case 'innovation':
+            return 'Innovation';
         case 'security':
             return 'Security';
         case 'thecloud':
