@@ -30,7 +30,23 @@ Redux has a very steep learning curve. I have worked with redux for many years a
 ## How does Recoil work and why should I use it
 
 \
-Recoil \
+Its easy to learn and use. The API is simple and a natural extension of React. To get started all we need is to wrap our application with a `RecoilRoot` and we are ready to roll.
+
+```jsx
+export const myState = atom({
+  key: "myState",
+  default: "",
+});
+
+const App = () => {
+
+  return <div>
+
+</div>
+}
+```
+
+\
 \
 \
 \
