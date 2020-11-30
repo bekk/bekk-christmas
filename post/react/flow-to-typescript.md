@@ -56,32 +56,17 @@ Because of the changed file extension git has to detect that the file has been m
 
 Oi her var det stopp! Dette gjennstår
 
-\* Alle på lint
+* Alle på lint
+* Tre team
+* Test og verifiseringsscript
 
-\* Tre team
-
-\* Test og verifiseringsscript
-
-\* Bygging / bundeling
-
-\* Type-feil
-
-\* Oppdeling
-
-\* Fart
-
-\* Motivasjon, ts-status
-
-
-
-
-
-\* Rulle av folk
-
-Hvordan gikk det, oppsummering
-
-\* Tiden det tok
-
-\* Oppnådd (kortsiktig) gevinst
-
-\* @ts-ignore
+  * Bygging / bundeling
+  * Type-feil
+  * Oppdeling
+* Fart
+* Motivasjon, ts-status
+* Rulle av folk
+* Hvordan gikk det, oppsummering
+* Tiden det tok
+* Oppnådd (kortsiktig) gevinst
+*  @ts-ignore
