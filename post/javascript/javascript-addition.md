@@ -162,6 +162,8 @@ For arrays, `valueOf` returns the array - which is not a primitive value. The ou
 [1, 2, 3] + [4, 5, 6] = "1,2,3" + "3,4,5" = "1,2,34,5,6"
 ```
 
+----
+
 Since you have been reading all along - here is a quiz for you:
 
 PS: try to solve it before you check the browser console
