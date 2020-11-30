@@ -12,7 +12,7 @@ description: "An article about a UX advent calendar and the experience of time
 ---
 Some articles are written in English, others Norwegian. They are just short enough (2-3 minute read) to squeeze in while you wait for the gløgg* to be ready to drink at your home office. If you are hungry for more articles to devour we have lots to offer because the UX-calendar is not alone. This year, we have made 12 advent calendars(!), each with its own daily dose of original content made by people in Bekk. Head over to bekk.christmas to get an overview of it all! 
 
-
+<p>&nbsp;</p>
 ## Advent calendar and design? 
 There is something about advent calendars that makes me happy. So many memories from my childhood when I and my brothers shared an advent calendar our mother made for us. One day at a time counting down to the big day, Christmas Eve with Santa Claus and presents! 
 
@@ -20,7 +20,7 @@ And that is exactly what an advent calendar is, it’s a kind of countdown that 
 
 In our world of design, we do a lot of manipulation to get different experiences of time. In a workshop, we can use a countdown to make people stressed so they are focusing on getting as many ideas as possible instead of letting critical thoughts stop the creative flow. If an application is loading slowly we’ll make a progress bar so the user can feel reassured and relaxed that everything is working though it takes time. All of this has to do with the experience of time. As a designer, you can’t change time itself, but you can change the experience of it. 
 
-
+<p>&nbsp;</p>
 ## Three elements for a designer to consider working with time 
 From Chris Kiess’s articles about The UX of Waiting and the Perception of Time* I found that you have three different elements you can manipulate if you are working with time. Actual measured speed, the perception of speed, and the tolerance of speed.  
 
@@ -36,15 +36,15 @@ As a designer, you can play around with these elements and combine them to make 
 <img class="light-theme-image" src="https://ibb.co/QjSxGMj" />
 <img class="dark-theme-image" src=<"https://ibb.co/3fTh7FH" />
 
-
+<p>&nbsp;</p>
 
 ## So what about advent calendars? 
 First I thought it was only a perception of time thing, kind of “why not have a bit of fun while we are waiting?”. But remembering my childhood, considering that the target group for an advent calendar often is children, I also think it has a lot to do with tolerance. Children don’t have the same understanding of time as we grownups have. They are reallllly looking forward to Christmas Eve. A calendar might be a way to increase the children's tolerance to be able to wait for 24 days. We don't want to trick them by disguising it with something else, but to help them visualize the 24 days that probably would have felt like a million days of waiting without a calendar! 
 
 So that's my little UX perspective on advent calendars. I hope this year's calendars from Bekk can help you to withstand the long wait until Christmas Eve ☺️
 
-
-
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 - - -
 
