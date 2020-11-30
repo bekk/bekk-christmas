@@ -1,0 +1,40 @@
+---
+calendar: strategy
+post_year: 2020
+post_day: 10
+title: Hvordan unngå innovasjonsteater?
+image: https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGhlYXRlcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60
+ingress: «Alle» driver med innovasjon, og det legges mye penger i tiltak som
+  skal bidra både til innovasjon i seg selv og til økt innovasjonsevne for
+  bedriften. Men gjøres det innovasjon, eller er det mest teater? Og hvordan kan
+  man unngå teateret?
+---
+Se for deg at du jobber i et tradisjonelt selskap. Forretningen surrer og går, men nye selskaper, produkter og tjenester popper stadig opp og truer det etablerte. Valget står mellom å «innovere eller dø». Ledelsen hiver seg rundt. Vegger rives, og der det før var cellekontorer finnes det nå beanbags i spreke farger, palmer, whiteboards og post-its. Innimellom kan man også se folk i lokalet. Da har noen gått inn i kalenderen og booket dette rommet, som kanskje heter «Innovasjon» eller «Kreativitet». De skal ha workshop, og det skal innoveres. 
+
+Rommet er ikke problemet. Det er kjekt å ha rom tilrettelagt for kreativt arbeid. Problemet er når det man kaller innovasjon kun skjer i dette rommet, og hverken før man går inn i rommet eller etter man har forlatt rommet. Når den gode idéen henger igjen på tavlen eller gjemmes bort mellom to sider i en notatbok driver man ikke med reell innovasjon, men med innovasjonsteater. Jeg synes Marte Gråberg får fram poenget godt i sin [innovasjonsbuzzordliste](https://medium.com/y-oslo/den-ultimate-innovasjonsbuzzordliste-e20bf6c8d336), der hun beskriver innovasjonsteater som «Å etablere en innovasjonslab med gule og blå puter, VR-briller og shuffleboard, for deretter å rapportere til styret at vi er i gang med innovasjonen.»
+
+Jeg tror ikke bedrifter bevisst driver med innovasjonsteater. Innovasjon er ønsket, og ledelsen forsøker så godt de kan å legge til rette for innovasjon; men tiltakene strekker ikke alltid til. Det kan være flere grunner til det, men jeg mener mange selskaper har forbedringspotensiale på spesielt to områder: 1) Tydelighet rundt hvorfor man ønsker innovasjon, hva man legger i ordet innovasjon, og hva man forventer, og 2) tilrettelegging for innovasjon gjennom organisering, måling, belønning, ledelse og kulturbygging.   
+
+### Retning og rammer for innovasjon
+
+De som har tatt del i kreative prosesser eller idégenereringsøvelser vet at det er vanskelig å komme opp med gode idéer uten å ha noe å ta utgangspunkt i. Kreativitet kommer ikke ut av det blå; men fordi man kjenner på et behov som ikke er godt nok dekket, eller man opplever et problem som man ønsker å finne en løsning på (se også forrige luke om Hvorfor er riktig problemdefinisjon viktig for nyskaping?). Vi arbeider gjerne mye og lenge med å forstå kunders behov og problemer, men bruker vi nok tid på å forstå selskapets behov og problemer, og hvilke av disse vi bør løse? 
+
+Min opplevelse er at smidig produkt- og tjenesteutvikling kan gå på bekostning av strategiarbeid. Jeg mener på ingen måte at smidig er feil og at vi skal tilbake til produktbestilling, men jeg har troen på en gylden middelvei. Før man setter i gang å utforske nye produkter og tjenester må man forstå hvilken retning selskapet ønsker å bevege seg i og hvorfor: Hva er det man som selskap ønsker å oppnå? Hva skal man være, for hvem? Og hva skal man ikke være? 
+
+Dette er etter min mening spørsmål som er helt sentrale å stille seg før man setter i gang innovasjonsinitiativer, fordi det både gir retning til innovasjonsarbeidet og setter rammer. *No Isolation* skal bidra til mindre ensomhet. De kunne sikker videreutviklet roboten sin til å bli resepsjonist i et hotell, men i stedet har de laget et nytt produkt til en ny målgruppe der isolasjon og ensomhet er et problem. *reMarkable* kunne bygget inn e-post og meldingstjenester i sitt skrivebrett, men de skal bidra til bedre tenkning og har derfor ikke rom til sosiale medier eller andre distraksjoner.
+
+I tillegg til å være bevisst hvor man vil med selskapet, kan det også være verdt å stille seg spørsmål om hva man legger i ordet innovasjon. Skal det være radikalt? Inkrementelt? Nært kjerne? Helt nytt? Er det ok å foreslå en helt ny forretningsmodell, eller er dagens forretningsmodell «urørlig» og noe man må holde seg innenfor? Dette er ikke bare viktige rammer for innovasjonsarbeidet, men også for å kunne designe en organisasjon og strukturer som legger til rette for den typen innovasjon man ønsker.
+
+### Organisering og struktur for innovasjon
+
+Hvordan man bør organisere seg for innovasjon henger sammen med hva man ønsker å oppnå. Altså retningen og rammene for innovasjon. Så langt har jeg ikke sett noen firmaer som gjør innovasjon helt likt, men jeg forsøker meg likevel på en grov inndeling av typiske organiseringer for innovasjon, og noen fordeler og ulemper knyttet til disse:
+
+**1. Innovasjon i linja.** Kan passe dersom området du ønsker å innovere på er nært kjerne og krever dyp domenekunnskap. Dette krever imidlertid at de ansatte gis rom til å drive med nytenkning og innovasjon; men min erfaring er dessverre at mange ledere tar for lett på dette og tenker at dette er noe man kan gjøre «innimellom» eller på kveldstid (på sin egen fritid!). Noen vil påstå at linja ikke er egnet for mer radikal innovasjon, fordi man sitter så «inne i boksen», men mange innovasjoner kommer nettopp fra mennesker som har sittet i linja, som kjenner materien godt, og som har klødd seg i hodet og lurt på om man ikke kan gjøre dette bedre, enklere, raskere. Men, fordi disse ikke får rom til å utvikle idéen tar de den med seg ut av selskapet og starter opp konkurrerende virksomhet for seg selv – og slik fører ikke innovasjon i linja til en fordel for selskapet der idéskaperen opprinnelig jobbet.
+
+**2. Autonome team.** For å gi de ansatte rom til å utforske ulike fasetter av et behov eller problem kan man etablere mindre, autonome team. Teamet skal ikke være større enn at de kan dele to pizza, og når de samtidig skal jobbe autonomt og ta de fleste beslutninger selv blir det ekstremt viktig at teamet innehar den kompetansen som trengs innen design, teknologi, forretning og domene. Et autonomt team skjermes mer fra daglig drift, og kan dermed jobbe mer fokusert og friere. Men, en fare når teamet er lite samtidig som de forventes å levere store ting raskt, er at det går på bekostning av hvor bredt man søker etter nye løsninger og hvorvidt man faktisk evner å lukke dører underveis. Det kan være lett å forelske seg i den ene idéen. 
+
+**3. Innovasjonsenhet.** For at ansatte skal få tid til å drive med innovasjon velger mange selskaper å etablere en innovasjonsenhet eller «lab». Denne kan være innenfor eller utenfor enheten, og er som autonome team gjerne bemannet med kompetanse innen design, teknologi, forretning og domene. I tillegg har man gjerne egne personer som er gode på prosess og metode for innovasjon, og anledning til å involvere andre fra organisasjonen ved behov. Innovasjonsenheter har gjerne mulighet til å utforske mange idéer i et hurtig tempo, og til å forvalte en mer balansert portefølje av idéer og initiativer enn det et autonomt team har ressurser til. En fare med innovasjonsenheter er imidlertid dersom idér og konsepter «overleveres» til linja for realisering, så her gjelder det å tenke gjennom hvordan idéer skal tas videre, av hvem, og hvorvidt ressursene i enheten skal være faste eller mer fleksible – slik at de kan følge med et produkt ut i linja for realisering. 
+
+En liten oppfordring til sist, som tåler gjentakelse: Organisering av innovasjon avhenger av hva du ønsker å oppnå. Bruk tid på å finne ut av dette først, så tror jeg sjansene for å lykkes med innovasjon og unngå teater er langt større!
+
+Ønsker du å lære mer om innovasjon? Lytt til vår mini-podcast [Drypp](https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL?si=QjhMrg8FQbKwBbk8X9zxXA), der vi i desember har viet 24 episoder til snakk om innovasjon.
