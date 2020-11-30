@@ -38,24 +38,24 @@ The code example below shows this feature in use on the operators AND (```&&```)
 //Old approach
 a && (a = b)
 //Logical assignment operator
-a &&=b
+a && = b
 
 //Only assigns if left hand-side is Falsy
 //Old approach
 a || (a = b)
 
 //Logical assignment operator
-a ||=b
+a || = b 
 
 //Only assigns if left hand side is Nullish (null / undefined)
 //Old approach
 a ?? (a = b)
 //Logical assignment operator
-a ??=b
+a ?? = b
 ```
 
 ## Numeric Separators
-Large numbers may be challenging to read with a first glance, especially when there are repeating digits. The Numeric Separator is a useful tool that separates digits with an underscore (```_```) in numeric literals, thus making numeric literals more readable. The separator can be used in different positions., with as many separators as you want, in groups of any size.
+Large numbers may be challenging to read with a first glance, especially when there are repeating digits. The Numeric Separator is a useful tool that separates digits with an underscore (```_```) in numeric literals, thus making numeric literals more readable. The separator can be used in different positions, with as many separators as you want, in groups of any size.
 
  ```javascript
 const oneMillion = 1000000;
@@ -82,11 +82,11 @@ Promise.any(promises).then((value) => console.log(value));
 // Expected output: "first"
  ```
 
-If none of the promises resolve, then a new type of exception, the ```AggregateError``` exception is thrown. ```AggregateError``` groups together individual errors into a single error in the form of an array of objects.
+If none of the promises resolve, then a new type of exception, the ```AggregateError``` exception is thrown. ```AggregateError``` groups together individual errors into a single error in the form of an array of objects. Pretty neat!
 
 
 ## WeakRef
-In JavaScript. references to objects are strongly held. This means that as long as a reference to the object exists, the object won´t be garbage-collected but keeps the object in memory. In scenarios where we do not want to keep objects in memory indefinitely, the ```WeakRef``` (Weak Reference) can be used to implement caches or mappings to large objects. When not in use, the memory can be garbage collected and generate a fresh cache when needed again.
+In JavaScript. references to objects are strongly held. This means that as long as a reference to the object exists, the object will not be garbage-collected but keeps the object in memory. In scenarios where we do not want to keep objects in memory indefinitely, the ```WeakRef``` (Weak Reference) can be used to implement caches or mappings to large objects. When not in use, the memory can be garbage collected and generate a fresh cache when needed again.
 
  ```javascript
 var a, b;
