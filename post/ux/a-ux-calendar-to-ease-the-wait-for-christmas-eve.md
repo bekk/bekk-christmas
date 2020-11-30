@@ -38,7 +38,7 @@ The last element is the user's *tolerance of speed*. When you don’t want to di
 As a designer, you can play around with these elements and combine them to make a good user experience of time.
 
 <img class="light-theme-image" src="https://ibb.co/QjSxGMj" />
-<img class="dark-theme-image" src=<"https://ibb.co/3fTh7FH" />
+<img class="dark-theme-image" src="https://ibb.co/3fTh7FH" />
 
 <p>&nbsp;</p>
 
