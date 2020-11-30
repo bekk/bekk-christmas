@@ -14,25 +14,25 @@ Jeg så Lehmkuhlforelesningen på NHH 28. oktober 2020, hvor Rune Bjerke snakket
 
 Foredraget fikk meg til å reflektere over hva som gjør at organisasjoner mislykkes med implementering av en ny strategi. Jeg har basert på dette laget en oppskrift til jul (i tråd med månedens juletema), som i syv steg beskriver hva du kan gjøre for å *ikke* lykkes med implementering av ny strategi i organisasjonen:
 
-Steg #1:\
+**Steg 1:**\
 Utarbeid strategien bak lukkede dører og lanser med et Big Bang i resten av organisasjonen. Gjerne på heldagssamling utenfor kontoret uten noe knytning til en vanlig arbeidsdag. Forvent samme engasjement og forståelse for de velvalgte ordene i strategien som du selv har i etterkant av samlingen.
 
-Steg #2: \
+**Steg 2:** \
 Gjør det så fluffy som mulig, for å sikre at ingen forstår hva strategien egentlig betyr, men bruk konfetti når du presenterer – det funker alltid for å maksimere forvirringen.
 
-Steg #3: \
+**Steg 3:** \
 Sørg for at strategien ikke er i tråd med kulturen, og ikke kast bort tiden på å jobbe med organisasjonens kultur hvis det skulle vise seg å være et gap. Var det ikke noen som sa Strategy eats culture for breakfast...?
 
-Steg #4: \
+**Steg 4:** \
 La det være opp til tilfeldighetene hvordan strategien spres i organisasjonen. Skulle du være så uheldig at du har laget en kommunikasjonsplan, ikke la den dra for langt ut i tid. Tenk heller på den som en sjekkliste, og at det er fint med alt du kan sjekke av og bli ferdig med.
 
-Steg #5:\
+**Steg 5:**\
 La det være opp til folket å oversette den nye strategien til sin arbeidshverdag. Ikke spill mellomlederne gode – det er synd om de faktisk kan svare på alle spørsmålene de vil få (det øker sannsynligheten for å lykkes).
 
-Steg #6:\
+**Steg 6:**\
 Hvis noen som ikke kunne være med på samlingen skulle spørre hva den nye strategien er, send den på e-post til dem – og sørg for å ikke ha noe tilgjengelig tid i kalenderen til å gå igjennom den.
 
-Steg #7: \
+**Steg 7:** \
 Sørg for at de ansatte blir målt på helt andre ting – eventuelt kan du bare la være å endre det de blir målt på i dag. Det er et sikkert knep for å få folk til å fortsette som før.
 
 Dette var mine beste råd samlet i en stegvis oppskrift, som på en enkel måte øker sannsynligheten for å *ikke lykkes* med å implementere ny strategi i organisasjonen din. 
