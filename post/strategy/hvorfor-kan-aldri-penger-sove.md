@@ -12,13 +12,13 @@ description: Hvis du låner en krone, og det er den første kronen som eksistere
 authors:
   - Jonas Gürrich
 ---
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -58,9 +58,9 @@ authors:
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -639,9 +639,9 @@ authors:
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 10]>
+<!--\\\\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -668,34 +668,34 @@ authors:
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\\\\[endif]-->
+<!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><!\\\\[endif]-->
+ </o:shapelayout></xml><!\\\\\[endif]-->
 
 <!--StartFragment-->
 
-### ***Hvis du låner en krone, og det er den første kronen som eksisterer. Hvor er den andre kronen du må ha for å betale renten på den første kronen?***
+#### Hvis du låner en krone, og det er den første kronen som eksisterer. Hvor er den andre kronen du må ha for å betale renten på den første kronen?
 
-Min samboer og jeg abonnerer på 2 aviser, Finansavisen og Klassekampen. I en annen situasjon hadde disse motsetningene gjerne vært oppskriften på opphetede diskusjoner om kapitalisme, grådighet og hva som er kjennetegnet til et bærekraftig samfunn. Men vi har ikke disse diskusjonene eller uenighetene. Begge avisene tilbyr god journalistikk, men som oftest med vidt forskjellig perspektiv eller meninger. Mens Klassekampen tordner med overskrifter som «*Skattefesten for eliten»*, hånler og harselerer Hegnar i sine meningsinnlegg om uvitenheten og enfoldigheten hos alle som tilsynelatende ikke deler hans syn om markedsøkonomi og fri konkurranse.
+Min samboer og jeg abonnerer på 2 aviser, Finansavisen og Klassekampen. I en annen situasjon hadde disse motsetningene gjerne vært oppskriften på opphetede diskusjoner om kapitalisme, grådighet og hva som er kjennetegnet til et bærekraftig samfunn. Men det er heldigvis ikke dette som det diskuteres over matbordet. Begge avisene tilbyr god journalistikk, men som oftest med vidt forskjellig perspektiv eller meninger. Mens Klassekampen tordner med overskrifter som «*Skattefesten for eliten»*, hånler og harselerer Hegnar i sine meningsinnlegg om uvitenheten og enfoldigheten hos alle som tilsynelatende ikke deler hans syn om markedsøkonomi og fri konkurranse.
 
 Det er ikke alltid lett å enes om hva det er som får verden til å gå rundt, eller hva det er som er bærekraftig. Men når diskusjonen blir innviklet og meningene sterke, syntes jeg ofte det enkleste er å først etablere en felles grunnleggende forståelse. Et enkelt og sant bilde som begge parter kan være enige om.
 
 Til denne artikkelen, ønsker jeg derfor å dele en grunnleggende forståelse om penger – hvor de kommer fra, og hvorfor penger har kneblet oss til en levemåte der penger må brukes, penger må bytte hender, og penger aldri kan sove.
 
-### *Penger vokser ikke på trær – eller?*
+#### Penger vokser ikke på trær – eller?
 
 Forestill deg en verden uten penger! For 500 år siden var Inkariket det mektigste samfunnet i Sør-Amerika, og dette uten noe som helst forhold til penger. På samme måte som kommunisme, var arbeidskraft verdienheten, og denne kunne både lånes bort (tjeneste for tjeneste) eller handles med (slaver).
 
 > *I 1532 A.D. ankom Francisco Pizarro og hans conquistadors, «erobrere». De hadde reist fra Spania, inspirert av legenden om ELDORADO. Etter å ha nedkjempet inkaene, gjorde de en oppdagelse i Bolivia, «Cerro Rico», pengefjellet! Over de neste 250 årene under Spansk styre, ble 2 billioner unse med sølv hentet ut fra gruvene (ca 56,7 milliarder kilo). Sølv var for Inkaene, ikke noe mer enn skinnende metal: men dette skinnende metallet kunne en lage mynter av, med andre ord, en transportabel MAKT. Selve oppdagelsen hadde gjord det spanske imperiet rikere enn rikest, men selv med alt dette sølvet, kunne det ikke stoppe den økonomiske og politiske nedgangen til det spanske imperiet. Spanjolene hadde gravd opp så mye sølv til å finansiere sine erobringer, at metallet i seg selv opplevde et eksepsjonelt verdifall. Myntene gjorde ikke Spania rikere, men prisene høyere – ettersom en økning i pengemengden jaget en uendret mengde av varer og tjenester.*
 
-The Ascent of Money – Niall Ferguson
+###### The Ascent of Money – Niall Ferguson
 
 #### Det spanjolene ikke forstod da, er at penger er bare verdt hva andre vil gi i bytte mot det.
 
@@ -707,14 +707,14 @@ Sentralbanken styrer ikke størrelsen på pengemengden. Pengene du låner av ban
 
 Før trodde man at bankene låner ut penger andre sparer, men bankinnskudd er bankenes gjeld og ikke en formuesgjenstand som kan lånes ut.
 
-Penger skapes i form av nye innskudd når bankene gir nye lån:
+#### Penger skapes i form av nye innskudd når bankene gir nye lån:
 
 1. Når en låntaker får innvilget et lån, gir personen et gjeldsbrev til banken
 2. Banken på sin side gir låntakeren et gjeldsbrev i form av et innskudd i banken
 
 Slik sett omgjør banken gjeldsbrevet fra låntaker til penger låntakeren kan handle med – **og det er i dette øyeblikket nye penger er skapt!** For når en bank innvilger et lån, godskriver den samtidig kundens konto tilsvarende lånebeløpet. Dermed er penger, i form av innskudd skapt.
 
-For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes opprinnelse – da gull var penger.
+#### For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes opprinnelse – da gull var penger.
 
 > *Folk trengte et sted å oppbevare sitt gull, og gikk til gullsmeden som trygt kunne oppbevare det i bankhvelvet. Kunden fikk da en kvittering på verdien i form av sedler, og dette fungerte godt i handel. Gullsmedene begynte etterhvert å låne ut penger – ikke gullet, men disse kvitteringene. Dette gav ekstrainntekt ettersom gullsmeden kunne kreve renter.*
 >
@@ -728,7 +728,7 @@ For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes
 >
 > *De rike bankmennene klarte til og med å overtale myndighetene til å opprette sentralbanken som skulle forsyne bankene med likviditet, i form av gull, Dette i tilfelle et "bank run" skulle skje igjen.*
 
-### Så tilbake til det gjennomgående spørsmålet om hvor den andre kronen er?
+#### Så tilbake til det gjennomgående spørsmålet om hvor den andre kronen er?
 
 Svaret er at du må låne en ny krone for å betale renten på den første kronen, og den andre kronen må du igjen betale renter på, som igjen krever et nytt lån, og slik fortsetter det inn i evigheten.
 
