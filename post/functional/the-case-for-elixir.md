@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 5
+post_day: 4
 title: The case for Elixir
 ingress: Today I want to give you an introduction to the programming language
   Elixir, some of its features and why you might want to check it out!
