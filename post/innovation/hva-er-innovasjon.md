@@ -25,3 +25,5 @@ authors:
   - Pia Solheim
 ---
 <iframe src="https://anchor.fm/drypp/embed/episodes/--en5j6k" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+Photo by [Matt Ridley](https://unsplash.com/@mattwridley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
