@@ -3,6 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 10
 title: Kan endringsmotstand være en ressurs?
+image: ""
 ingress: ""
 authors:
   - Simen Sæther Jørgensen
@@ -11,7 +12,7 @@ Ved enhver endringsprosess vil man som initiativtaker ofte oppleve negative tank
 
 Noen typiske årsaker til endringsmotstand er:
 
-![4 steg for å gjennomføre en vekstsprint](/assets/)
+![Årsaker til endringsmotstand](/assets/Endring2.png)
 
 **Ja, endringsmotstand er en ressurs**
 
