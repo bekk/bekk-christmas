@@ -64,7 +64,7 @@ Even though this solution does the trick, wouldn’t it be better if JavaScript 
 
 ## Introducing the Map-method
 
-As I mentioned earlier, a number of higher-order functions is available to the Array-prototype, and the *[Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)*-method might do wonders for us in this example. *map()* is a non-destructive transformation method which takes an existing array as input and produces an output array, based on a callback function which controls how the new array should be transformed. The callback function is called on each item in the existing array and the return value of this function is added to a newly created array. The map-method returns the transformed array while leaving the original array unchanged!
+As I mentioned earlier, a number of higher-order functions is available to the Array-prototype, and the *[Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)* might do wonders for us in this example. *`map()`* is a non-destructive transformation method which takes an existing array as input and produces an output array, based on a callback function which controls how the new array should be transformed. The callback function is called on each item in the existing array and the return value of this function is added to a newly created array. The map-method returns the transformed array while leaving the original array unchanged!
 
 In our task of displaying the names of the contestants in the lottery, we can now specify a callback function to be run on each item in the contestant-array, and all it has to do is return the name-property of a given contestant:
 
@@ -101,9 +101,9 @@ Now, this is quite a mess. Double for-loops are rarely a pleasant sight to behol
 
 ## Filter to the rescue!
 
-*[The Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)*-method works similarly to *map()*, being a non-destructive function which iterates through each item in an existing array. The key difference between filter and map is that filter accepts a *function predicate* as the callback function, which is a function that returns a boolean value. The result of this predicate function determines whether the element should be included in the array. In short, it filters out values that do not pass the function predicate-test.\
+*[Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)* works similarly to *`map()`*, being a non-destructive function which iterates through each item in an existing array. The key difference between filter and map is that filter accepts a *function predicate* as the callback function, which is a function that returns a boolean value. The result of this predicate function determines whether the element should be included in the array. In short, it filters out values that do not pass the function predicate-test.\
 \
-Another method available to us on the Array-prototype is the Array.prototype.every(). This method returns a boolean value, and it tests whether every element in the array passes the test implemented by the provided function. If every element passes the test, it returns the value true.\
+Another method available to us on the Array-prototype is the [Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every). This method returns a boolean value, and it tests whether every element in the array passes the test implemented by the provided function. If every element passes the test, it returns the value true.\
 \
 Now, let’s try to apply these higher-order functions to our lottery application to determine the winner(s) of the lottery.
 
@@ -117,7 +117,7 @@ const winners = contestants.filter(contestant =>
 console.log(winners)
 ```
 
-While the previous example consisted of double for-loops and manual iteration of the two arrays, this solution actually accomplishes the same feature as the previous example in just one line, by using two of the built-in higher-order functions in JavaScript! Since the *filter()* can transform our contestants-array the way we want, we can apply the every-method as the function predicate to our filter function. This method  returns true if all lottery-numbers are included in the winning-numbers-array, and thus only the winners of the lottery are added to our winners-array.
+While the previous example consisted of double for-loops and manual iteration of the two arrays, this solution actually accomplishes the same feature as the previous example in just one line, by using two of the built-in higher-order functions in JavaScript! Since the *`filter()`* can transform our contestants-array the way we want, we can apply `every()` as the function predicate to our filter function. This method  returns true if all lottery-numbers are included in the winning-numbers-array, and thus only the winners of the lottery are added to our winners-array.
 
 
 
