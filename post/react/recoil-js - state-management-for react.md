@@ -10,18 +10,31 @@ ingress: Recoil is a new state management library for React — offering a
 description: ""
 authors: []
 ---
-In the last years of state management evolution there have been many ways of dealing with state, but we eventually got a “industry standard” when Redux was released in 2015. The past years React have moved fast, and my experience is that Redux 
+In the last years of state management evolution there have been many ways of dealing with state, but we eventually got a “industry standard” when Redux was released in 2015. Redux solved many state challenges with its one-way data flow, but today things have changed and Redux is no longer my goto library for dealing with state.
 
-## **Why I am leaving Redux**
+## Why I am leaving Redux
 
 ![its hard getting started with redux](/assets/big_book.jpeg)
-
-### **Boilercode**
+\
+\
+ Boilercode
 
 Although Redux has improved with Redux hooks, we still need to add alot of Redux spesific setup code. If you want to be able to handle asynchronous actions or caching, you need to set up third party libraries as well.
 
-### **Difficult**
+It's damn hard
 
-Redux has a very steep learning curve. I have worked with redux for many years and still struggle to understand my own code. I see that new developers struggle really hard to wrap their heads around actions and reducers wrapped into each other, with good reason. Writing scalable and idiomatic state handling with Redux is not easy.
+Redux has a very steep learning curve. I have worked with redux for many years and still struggle to understand my own code. I see that new developers struggle really hard to wrap their heads around actions and reducers wrapped into each other, with good reason. Writing scalable and idiomatic state handling with Redux is damn hard.
 
-> When I saw Recoil I realized how complicated and difficult redux really was
+> Redux is still a great library! But the moment I saw Recoil I realized how complicated and difficult redux really was. 
+
+## How does Recoil work and why should I use it
+
+\
+Recoil \
+\
+\
+\
+\
+Recoil was unveiled at ReactConf 2020 and has already received a lot of attention. Thousands of stars on github, several blog posts and videos have appeared that brags of Recoil’s simplicity and flexibility.
+
+In recoil we use atoms to store
