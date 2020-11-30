@@ -38,20 +38,20 @@ We start by presenting a list of a few tips you as a developer can use to help y
 
    The HTTP-protocol comes with a set of headers that can help mitigate attacks and security vulnerabilities. Used correctly, they can enhance the security considerably. The following five headers are interesting to check out.
 
-### * Content-Security-Policy
+ * ### Content-Security-Policy
 
   Protects you from XSS attacks. It prevents the browser from loading content from other sources than the ones you have specified.
 
-### * Strict-Transport-Security
+* ### Strict-Transport-Security
 
   Enforces the browser to use TLS, e.g. ensures that the communication takes place over a secure transport channel like HTTPS.
-### * X-Content-Type-Options
+* ### X-Content-Type-Options
 
   Stops the browser from trying to sniff the content type from MIME, and forces it to deal with the declared content-type only. `nosniff` is the only useful value here.
-### * X-Frame-Options
+* ### X-Frame-Options
 
   Tells the browser whether you allow your site to be framed or not. By setting it to `SAMEORIGIN`, it will be allowed to frame your site at the same origin only.
-### * Referrer-Policy
+* ### Referrer-Policy
 
   Controls how much information the browser includes when navigating from one document to another. By setting it to `no-referrer`, the browser will never send the referrer-header with requests that are made from your site. The Referrer-Policy can also be set in the Content-Security-Policy.
 
