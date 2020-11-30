@@ -58,7 +58,7 @@ As the rule states - with two numeric elements, the output is a numeric value:
 
 ```1 + 1 = 2```
 
-String concatenation is common between different programming languages and is reasonable usage of the `+` operator:
+String concatenation is well known between different programming languages and is a  reasonable usage of the `+` operator:
 
 `"Santa" + " " + "Claus" = "Santa Claus"`
 
