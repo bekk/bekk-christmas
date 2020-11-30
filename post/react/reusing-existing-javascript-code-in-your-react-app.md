@@ -74,7 +74,7 @@ const MyFunctionalEditor = () => {...}
 
 Uh oh, *TypeError: document.querySelector(...)* is null. So the main problem here is that this code is not really made for being used in other applications. It does a bunch of stuff in *index.js* as it is imported, and it does not export any of the functions I wanted to reuse. Yikes. 
 
-However, since I co-authored the code, I can fork it and fix it for my usage! The same would be alright with any other code as well as long as the license allows it. So: I fork the project, and remove all the noise in index.js and export the functions I need.
+However, since I co-authored the code, I can fork it and tweak on it a bit for my usage! The same would be alright with any other code as well as long as the license allows it. So: I fork the project, and remove all the noise in `index.js` and export the functions I need.
 
 ```
 const Editor = require('./Editor');
@@ -141,4 +141,6 @@ const MyFunctionalEditor = () => {
 export default MyFunctionalEditor;
 ```
 
-![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png "And success! I get my own version of photoshop inside my React app!")
+![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png)
+
+And success! I get my own version of photoshop inside my React app! And that is pretty much it. Thank you for reading!
