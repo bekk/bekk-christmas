@@ -3,6 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 8
 title: Hvordan finner selskaper nye måter å tjene penger på?
+image: https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80
 ingress: «Hvis du ikke betaler for produktet, er du produktet». De som har sett
   filmen *The Social Dilemma* fra 2020 vil garantert kjenne seg igjen i dette
   ordspråket. Det er en spissformulering på en stadig vanligere inntektsmodell
