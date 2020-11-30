@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 1
 title: Once, twice, three times a value
-image: https://source.unsplash.com/S0j-5wSN3YQ/2000x800
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Lionel_Ritchie_Acer_Arena_Sydney_2011_%285550533944%29.jpg/1200px-Lionel_Ritchie_Acer_Arena_Sydney_2011_%285550533944%29.jpg
 ingress: Welcome to the Elm christmas calendar, and to the first of 24 articles
   that will teach you some tricks and useful concepts you might not already
   know. Today we are discussing Tuples. It is perhaps Elm's simplest way of
