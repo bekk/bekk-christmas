@@ -46,7 +46,8 @@ Diskutert innad i teamet hva denne metrikken er og ha den i bakhodet i hele veks
 
 Growth hacking handler om å forstå hvor de største vekstmulighetene ligger i kundereisen. Det er derfor essensielt å forstå kundereisen og eventuelt hvor problemene oppstår for kundene. En måte å visualisere en slik kundereise på er å bruke *pirate metrics*. Den viser de viktigste vekstmetrikkene i kundereisen fra en kunde får vite om produktet ditt, til de eventuelt anbefaler det til andre. Figuren under viser hva de ulike metrikkene betyr.
 
-Figuren viser fem typiske metrikker som er viktig for vekst. Disse vekstmetrikkene knyttes opp mot problemer i kundereisen som hindrer vekst.
+![Figuren viser fem typiske metrikker som er viktig for vekst. Disse vekstmetrikkene knyttes opp mot problemer i kundereisen som hindrer vekst.](blob:https://preview.bekk.christmas/c6d69f3f-6d8a-4e2c-bb85-3ede3a8d8730)
+
 
 Velg en relevant kundereise som er viktig for vekstmålet. Her er det en fordel å gå gjennom hver av de fem delene av kundereisen systematisk og i rekkefølge. Still deg følgende to spørsmål for hver del og kom opp med så mange veksthindringer som mulig:
 
