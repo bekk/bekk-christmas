@@ -16,17 +16,17 @@ authors:
 ---
 We start by presenting a list of a few tips you as a developer can use to help your applications stay as secure as possible. This is not new, ground-breaking stuff, and hopefully you are familiar with much of it already. But, we hope that it can serve as a reminder for you, and that you can spend some time checking it out in the light of your own projects!
 
-##### 1. Get to know the current OWASP Top 10
+## 1. Get to know the current OWASP Top 10
 
    OWASP Top 10 is a list of the most critical security risks for web applications. The last OWASP Top 10 came out in 2017, and OWASP is currently working on a 2020 edition. We encourage you to check out the OWASP Top 10 project website at <https://owasp.org/www-project-top-ten/>, and take a look at your own projects and see how these risks are being addressed.
 
-##### 2. Be creative
+## 2. Be creative
 
    The one that knows most about how your application is supposed to be used is you, the developer. An attacker will have a different mindset. He or she will try to use your app in illogical ways, and in ways you might not have thought about. While you develop and test your applications, try to be a bit creative. Send unexpected input, navigate in illogical ways, and try to provoke errors. Chances are that you will discover a vulnerability or two.
 
    Trying to hack your own applications is a fun exercise. A handy tool is the OWASP Zed Attack Proxy (ZAP), which is a free, open source tool. Check out <https://zaproxy.org>. You can also check out our post about Zap from last year, at <https://security.christmas/2019/9>
 
-##### 3. Automated dependency checking
+## 3. Automated dependency checking
 
    We tend to have lots of dependencies in our applications. These dependencies can of course contain vulnerabilities, which thankfully might be discovered and patched in newer versions. However, if we don't continuously bump to the newest versions we get no advantage of those patches, and our applications are still as vulnerable as before. 
 
@@ -34,29 +34,30 @@ We start by presenting a list of a few tips you as a developer can use to help y
 
    If you have an automated tool in place, there is important to also have a regime to monitor and take action when the dependency checker tries to tell you something. You should also keep an eye on dead dependencies - dependencies that no longer are being patched. They most likely contain vulnerabilities, and you should look for something else to pull in instead.
 
-##### 4. Know your HTTP-headers
+## 4. Know your HTTP-headers
 
    The HTTP-protocol comes with a set of headers that can help mitigate attacks and security vulnerabilities. Used correctly, they can enhance the security considerably. The following five headers are interesting to check out.
 
-* ###### Content-Security-Policy
+### * Content-Security-Policy
 
-  Protects you from XSS attacks. It prevents the browser from loading content from other sources than the ones you have specified. 
-* ###### Strict-Transport-Security
+  Protects you from XSS attacks. It prevents the browser from loading content from other sources than the ones you have specified.
+
+### * Strict-Transport-Security
 
   Enforces the browser to use TLS, e.g. ensures that the communication takes place over a secure transport channel like HTTPS.
-* ###### X-Content-Type-Options
+### * X-Content-Type-Options
 
   Stops the browser from trying to sniff the content type from MIME, and forces it to deal with the declared content-type only. `nosniff` is the only useful value here.
-* ###### X-Frame-Options
+### * X-Frame-Options
 
   Tells the browser whether you allow your site to be framed or not. By setting it to `SAMEORIGIN`, it will be allowed to frame your site at the same origin only.
-* ###### Referrer-Policy
+### * Referrer-Policy
 
   Controls how much information the browser includes when navigating from one document to another. By setting it to `no-referrer`, the browser will never send the referrer-header with requests that are made from your site. The Referrer-Policy can also be set in the Content-Security-Policy.
 
    You can check the HTTP-headers on your own site at <https://securityheaders.io> , a project by Scott Helme.  It will generate a report based on the findings on your site, and give you recommendations and guidelines on how to fix any problems.
 
-##### 5. Create a security.txt
+## 5. Create a security.txt
 
    If somebody finds a security vulnerability in your application, you probably would like to know about it so you can fix it. To make that happen, it is crucial that you let people know how to contact you. There are many examples that communication between someone finding a vulnerability and the organization or person behind the vulnerable site or app, can be cumbersome.
 
