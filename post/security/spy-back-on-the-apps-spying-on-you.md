@@ -10,7 +10,7 @@ ingress: >-
   municipal, or your smart vacuum cleaner is not sending your data back to the
   developers?
 
-  Often, we have no idea, and until recently iOS-users had no good way of inspecting the traffic that was sent from their devices. 
+  Often, we have no idea, and until recently iOS-users had no good way of inspecting the traffic that was sent from their devices.
 links:
   - url: https://www.charlesproxy.com/documentation/ios/
     title: Charles Proxy Documentation iOS
