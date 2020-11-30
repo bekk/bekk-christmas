@@ -44,7 +44,7 @@ Før trodde man at bankene låner ut penger andre sparer, men bankinnskudd er ba
 
 Slik sett omgjør banken gjeldsbrevet fra låntaker til penger låntakeren kan handle med – **og det er i dette øyeblikket nye penger er skapt!** For når en bank innvilger et lån, godskriver den samtidig kundens konto tilsvarende lånebeløpet. Dermed er penger, i form av innskudd skapt.
 
-### For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes opprinnelse – da gull var penger.
+For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes opprinnelse – da gull var penger:
 
 > *Folk trengte et sted å oppbevare sitt gull, og gikk til gullsmeden som trygt kunne oppbevare det i bankhvelvet. Kunden fikk da en kvittering på verdien i form av sedler, og dette fungerte godt i handel. Gullsmedene begynte etterhvert å låne ut penger – ikke gullet, men disse kvitteringene. Dette gav ekstrainntekt ettersom gullsmeden kunne kreve renter.*
 >
