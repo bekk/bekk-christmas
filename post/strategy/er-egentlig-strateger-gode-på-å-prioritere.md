@@ -3,7 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 5
 title: Er egentlig strateger gode på å prioritere?
-image: https://images.unsplash.com/photo-1601296200639-89349ce76a48?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
+image: https://images.unsplash.com/photo-1516348967042-25fa96938f37?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGRpcmVjdGlvbnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60
 ingress: ""
 authors:
   - Oscar Hafstad
