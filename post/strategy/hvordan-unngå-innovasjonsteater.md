@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 10
+post_day: 4
 title: Hvordan unngå innovasjonsteater?
 image: https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGhlYXRlcnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60
 ingress: «Alle» driver med innovasjon, og det legges mye penger i tiltak som
@@ -17,7 +17,7 @@ Jeg tror ikke bedrifter bevisst driver med innovasjonsteater. Innovasjon er øns
 
 ### Retning og rammer for innovasjon
 
-De som har tatt del i kreative prosesser eller idégenereringsøvelser vet at det er vanskelig å komme opp med gode idéer uten å ha noe å ta utgangspunkt i. Kreativitet kommer ikke ut av det blå; men fordi man kjenner på et behov som ikke er godt nok dekket, eller man opplever et problem som man ønsker å finne en løsning på (se også forrige luke om Hvorfor er riktig problemdefinisjon viktig for nyskaping?). Vi arbeider gjerne mye og lenge med å forstå kunders behov og problemer, men bruker vi nok tid på å forstå selskapets behov og problemer, og hvilke av disse vi bør løse? 
+De som har tatt del i kreative prosesser eller idégenereringsøvelser vet at det er vanskelig å komme opp med gode idéer uten å ha noe å ta utgangspunkt i. Kreativitet kommer ikke ut av det blå; men fordi man kjenner på et behov som ikke er godt nok dekket, eller man opplever et problem som man ønsker å finne en løsning på (se også forrige luke om hvorfor  riktig problemdefinisjon er viktig for nyskaping). Vi arbeider gjerne mye og lenge med å forstå kunders behov og problemer, men bruker vi nok tid på å forstå selskapets behov og problemer, og hvilke av disse vi bør løse? 
 
 Min opplevelse er at smidig produkt- og tjenesteutvikling kan gå på bekostning av strategiarbeid. Jeg mener på ingen måte at smidig er feil og at vi skal tilbake til produktbestilling, men jeg har troen på en gylden middelvei. Før man setter i gang å utforske nye produkter og tjenester må man forstå hvilken retning selskapet ønsker å bevege seg i og hvorfor: Hva er det man som selskap ønsker å oppnå? Hva skal man være, for hvem? Og hva skal man ikke være? 
 
