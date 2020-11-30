@@ -23,3 +23,5 @@ authors:
 Vi har stilt spørsmålet til mange flinke folk som har ulike tilnærminger og prøver oss på en oppsummering. Med Moquan Chen, Pia Solheim, Jens Andreas Huseby - og mange flinke folk.\
 \
 Julekalenderen 2020 om innovasjon kan du følge på podcasten Drypp fra Bekk.
+
+<iframe src="https://anchor.fm/kaffeprathosbekk/embed/episodes/--en5j6k" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
