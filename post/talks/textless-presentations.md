@@ -32,7 +32,7 @@ I find it more successful to use pictures or illustration in my presentation to 
 
 The best part about doing it this way is that your presentation will be more fluent. You are not reading from a manuscript, and you wont throw yourself off guard if you are forgetting an insignificant sentence. 
 
-## Multiple slides, frequent switches
+## Multiple slides and frequent switches
 
 So we have gotten rid of the text-heavy pages, and added the informative pictures to our slides instead. How are we now suppose to remember all we want to say?
 
