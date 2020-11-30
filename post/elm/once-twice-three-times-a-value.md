@@ -4,6 +4,12 @@ post_year: 2020
 post_day: 1
 title: Once, twice, three times a value
 image: https://source.unsplash.com/S0j-5wSN3YQ/2000x800
+ingress: Welcome to the first of this year's strain of articles about Elm.
+  Through 24 articles, we will build up both a festive mood and some deeper
+  knowledge of Elm. Today we are discussing Tuples. It is perhaps Elm's simplest
+  out of many ways of structuring data. We also introduce the concept of pattern
+  matching or destructuring of tuples in function declarations specifically.
+description: Elm Tuple Tuples destructuring "pattern matching"
 links:
   - title: core/Tuple
     url: https://package.elm-lang.org/packages/elm/core/latest/Tuple
