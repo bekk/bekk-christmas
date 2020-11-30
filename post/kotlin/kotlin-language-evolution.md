@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 3
+post_day: 23
 title: Kotlin language evolution
 ingress: >+
   The year 2020 has certainly been a special one, but that hasn't stopped
