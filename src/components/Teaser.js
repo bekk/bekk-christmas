@@ -119,17 +119,17 @@ export const Teaser = () => {
                 <title>Introducing Bekk Christmas…</title>
                 <meta
                     property="description"
-                    content="Bekk is all about craftmanship and the people crafting it. This year, we're creating 12 advent calendars, each with daily original content made by us."
+                    content="Bekk is all about craftmanship and the people crafting it. This year, we're creating 11 advent calendars, each with daily original content made by us."
                 />
             </Helmet>
             <Container>
                 <SpectacularEntrance fade>
-                    <Heading>12 calendars. 24 days. 288 articles.</Heading>
+                    <Heading>11 calendars. 24 days. 264 articles.</Heading>
                 </SpectacularEntrance>
                 <SpectacularEntrance fade delay="0.5s">
                     <Paragraph>
                         Bekk is all about craftmanship and the people crafting it. This year, we're
-                        creating 12 advent calendars, each with daily original content made by us.
+                        creating 11 advent calendars, each with daily original content made by us.
                     </Paragraph>
                 </SpectacularEntrance>
                 <SpectacularEntrance fade delay="2s">

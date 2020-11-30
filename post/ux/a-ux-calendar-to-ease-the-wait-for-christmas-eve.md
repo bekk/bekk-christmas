@@ -12,7 +12,7 @@ description: "An article about a UX advent calendar and the experience of time
 authors:
   - Ola Claussen
 ---
-Some articles are written in English, others Norwegian. They are just short enough (2-3 minute read) to squeeze in while you wait for the gløgg* to be ready to drink at your home office. If you are hungry for more articles to devour we have lots to offer because the UX-calendar is not alone. This year, we have made 12 advent calendars(!), each with its own daily dose of original content made by people in Bekk. Head over to bekk.christmas to get an overview of it all! 
+Some articles are written in English, others Norwegian. They are just short enough (2-3 minute read) to squeeze in while you wait for the gløgg* to be ready to drink at your home office. If you are hungry for more articles to devour we have lots to offer because the UX-calendar is not alone. This year, we have made 11 advent calendars(!), each with its own daily dose of original content made by people in Bekk. Head over to bekk.christmas to get an overview of it all! 
 
 <p>&nbsp;</p>
 

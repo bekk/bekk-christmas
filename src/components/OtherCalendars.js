@@ -7,7 +7,6 @@ import { mapCalendarToName } from '../utils';
 
 const calendars = [
     'css',
-    'dot-net',
     'functional',
     'java',
     'javascript',
@@ -21,7 +20,7 @@ const calendars = [
     'thecloud',
     'ux',
     'elm',
-    'strategy', 
+    'strategy',
 ];
 
 const Container = styled.div``;
