@@ -133,6 +133,11 @@ const callbacks = tfvis.show.fitCallbacks(
 ```
 
 ##### Model training and evaluation
+
+##### **Test1**
+###### Test2
+###### **Test3**
+
 Finally, the model can be fitted:
 ```javascript
 let samplesInEachBatch = 128;
