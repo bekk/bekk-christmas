@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 15
+post_day: 16
 title: Creating domain-specific languages
 ingress: Kotlin introduces a lot of new language features for us developers.
   Those features allows us to create code that is type-safe, easy to write and
