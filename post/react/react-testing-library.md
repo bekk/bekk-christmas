@@ -76,7 +76,7 @@ test("can load data on click", async () => {
 
   userEvent.click(button);
 
-  const content = await screnn.findByRole("heading", { name: /your data/i });
+  const content = await screen.findByRole("heading", { name: /your data/i });
 
   expect(content).toBeInTheDocument();
 });
