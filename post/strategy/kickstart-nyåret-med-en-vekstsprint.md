@@ -29,13 +29,13 @@ Vi har identifisert 4 steg for enkelt å komme i gang med å identifisere vekste
 
 ![4 steg for å gjennomføre en vekstsprint](/assets/02vekstsprint.png)
 
-## 1) Identifiser vekstmålet – din nordstjernemetrikk
+### 1) Identifiser vekstmålet – din nordstjernemetrikk
 
 Formålet med det første steget er å identifisere hva som er teamets nordstjernemetrikk og dermed den metrikken som teamet ønsker å forbedre. For Facebook var den viktigste vekstmetrikken i starten antall brukere som la til [7 venner i løpet av de 10 første dagene](https://blog.modeanalytics.com/facebook-aha-moment-simpler-than-you-think/). De fant ut at dette var den metrikken som best forklarte om de klarte å skape nettverkseffekter og viralvekst. Airbnb sin vekstmetrikk er antall netter reservert på plattformen. Dette fanger verdien som leveres til både gjester og utleiere, og dermed et godt tall på vekst for Airbnb.
 
 Diskutert innad i teamet hva denne metrikken er og ha den i bakhodet i hele vekstsprinten.
 
-## 2) Kartlegg veksthindringer i kundereisen
+### 2) Kartlegg veksthindringer i kundereisen
 
 Growth hacking handler om å forstå hvor de største vekstmulighetene ligger i kundereisen. Det er derfor essensielt å forstå kundereisen og eventuelt hvor problemene oppstår for kundene. En måte å visualisere en slik kundereise på er å bruke *pirate metrics*. Den viser de viktigste vekstmetrikkene i kundereisen fra en kunde får vite om produktet ditt, til de eventuelt anbefaler det til andre. Figuren under viser hva de ulike metrikkene betyr.
 
@@ -48,7 +48,7 @@ Velg en relevant kundereise som er viktig for vekstmålet. Her er det en fordel 
 
 Det kan også være en idé å reformulere problemområdene til spørsmål, såkalt ["How might we-statements"](https://www.designkit.org/methods/3). Dette hindrer at teamet graver seg for langt ned i problemene og åpne opp for nye muligheter. Etter endt brainstorming kan dere være hensiktsmessige å prioritere hvilke veksthindringer som skal utforskes videre i sprinten, for eksempel ved avstemning.
 
-## 3) Utarbeid eksperimenter
+### 3) Utarbeid eksperimenter
 
 Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide så mange eksperimenter som mulig. Hent inspirasjon av andre som har gjort det før. Vi i [Bekk](https://blogg.bekk.no/smarte-eksperimenter-for-effektiv-produktutvikling-b8eb936db0b1) har skrevet om dette tidligere og det finnes mange [andre](https://growthhackers.com/growth-studies) ressurser tilgjengelig. Eksperimentene består blant annet av hypoteser, konkrete handlinger og suksesskriterier. Se vedlagt eksperimentkort. Kortet består av 7 deler:
 
@@ -60,7 +60,7 @@ Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide s
 6. **Dette har vi lært av å utføre eksperimentet:** Hva observerte dere helt konkret? Hvilke læringspunkter sitter teamet igjen med etter å ha gjennomført eksperimentet?
 7. **Veien videre blir:** Hvordan skal teamet konkret ta tak i den læringen dere fikk og hva som er planen videre for agere på denne kunnskapen.
 
-## 4) Prioriter og planlegg gjennomføringen av eksperimentene
+### 4) Prioriter og planlegg gjennomføringen av eksperimentene
 
 I det siste steget skal dere prioritere hvilke av eksperimentene som skal gjennomføres basert på tre parametre: Impact, Ease og Confident - en såkalt ICE-Score. De beste eksperimentene løser vekstutfordringene, er enkel å gjennomføre og dere har stor tro på det som team. Skalaen går fra 1 til 10, hvor 1 er dårlig og 10 er bra.
 
