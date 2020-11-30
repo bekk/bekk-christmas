@@ -1,0 +1,20 @@
+---
+calendar: strategy
+post_year: 2020
+post_day: 7
+title: Hvordan finner selskaper nye måter å tjene penger på?
+ingress: «Hvis du ikke betaler for produktet, er du produktet». De som har sett
+  filmen *The Social Dilemma* fra 2020 vil garantert kjenne seg igjen i dette
+  ordspråket. Det er en spissformulering på en stadig vanligere inntektsmodell
+  hvor selskaper tilbyr tjenestene sine gratis mot at brukerne aksepterer å bli
+  eksponert for annonser. For aktører i dagens mer og mer digitaliserte verden
+  finnes det mange innovative inntektsmodeller å basere seg på – men kan et
+  hvilket som helst selskap finne nye måter å tjene penger?
+authors:
+  - Tobias R. Pettrém
+---
+En inntektsmodell er komponenten i en bedrifts forretningsmodell som beskriver måten de ønsker å ta seg betalt for produktene sine. Den skal gjerne si noe om hvem som betaler, på hvilken måte de betaler, hva de betaler med, og når. Bedrifter og produkter kan ha flere inntektsmodeller – *[freemium](https://hbr.org/2014/05/making-freemium-work)* er et kjent eksempel som gjerne kombinerer annonseinntekter for gratisbrukere med abonnementsinntekter fra «premium»-brukere. Når man har valgt en inntektsmodell, kan man sette opp en prisstrategi. Denne skal maksimere profitten innenfor rommet som inntektsmodellen tillater. Uber er et enkelt eksempel for å illustrere forskjellen: Inntektsmodellen deres er å ta en andel av transaksjonen mellom passasjer og sjåfør for turen, mens prisstrategien er dynamisk prising basert på tilbud og etterspørsel i et gitt område til enhver tid.
+
+For mange forretningsmodeller har inntektsmodellen stått uendret i lang tid. Vi kjøper matvarer på butikken og betaler for dem der. Vi går til frisøren, får en hårklipp og betaler for den. Bedrifter kjøper maskindeler av underleverandører ved behov og betaler stykkpris. Men det blir stadig klarere at disse «tradisjonelle» inntektsmodellene hverken er uerstattelige eller optimale. Spesielt «as-a-Service»-tankegangen har spredt seg til stadig flere bransjer, hvor man ofte ser en innføring av abonnementsmodeller (gjerne kombinert med heldigitale kjøpsopplevelser og hjemlevering) eller betal-per-bruk i stedet for tradisjonell stykkpris gjennom detaljhandel. [Matkasser](https://www.dinside.no/okonomi/prissjekk-pa-matkasser/72106400) er et godt eksempel på dette i dagligvarebransjen. Massasjetjenesten [Squeeze](https://shifter.no/nyheter/slik-snudde-squeeze-fra-stengte-dorer-til-rekordvekst-na-utvider-massasje-startupen-til-flere-byer/190409) er et tilsvarende eksempel i servicenæringen, hvor kundene betaler en fast medlemspris i måneden for én massasje med opsjon på flere til en rabattert pris. I B2B-markedet kan vi se til flymotorleverandøren Rolls Royce, som tar seg betalt for timer i lufta i stedet for per motor de selger. Kunden betaler dermed kun for bruk, mens leverandøren tar ansvar for alt av vedlikehold, reparasjoner og oppfølging. Idéen strekker seg faktisk så langt tilbake som [1962](https://www.rolls-royce.com/media/press-releases-archive/yr-2012/121030-the-hour.aspx)!
+
+Eksemplene over viser oss at nye inntektsmodeller dukker opp overalt. Hvor skal man begynne hvis man vil innovere i sin egen inntektsmodell? For det første er det viktig å se til andre bransjer for inspirasjon. Abonnementsmodellen ble opprinnelig kun brukt for aviser og trykksaker, men brukes nå for å få tilgang på alt fra [barneklær](https://tuckify.com/) til [biler](https://www.sparebank1.no/nb/bank/privat/tips-og-rad/bilabonnement.html). Videre er det viktig å forstå kundens faktiske behov. Det gjorde Rolls Royce med sin betal-for-bruk-modell: Kundene er opptatte av at flyene deres fungerer når de skal, ikke av flymotorer eller serviceavtaler. Til slutt er det viktig å utfordre etablerte sannheter og tørre å tenke utenfor boksen. Hvorfor kan man for eksempel ikke [fly gratis](http://www.passengerwise.com/much-flight-advertising-watch-free-flight/) mot å se reklame hele flyturen? Kun fantasien setter grenser!
