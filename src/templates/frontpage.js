@@ -11,7 +11,6 @@ import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import Search from '../components/search/Search';
 
 import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
-import PreviousCalendars from '../components/PreviousCalendars';
 import { Teaser } from '../components/Teaser';
 import ogImageSrc from '../images/teaser-1.jpg';
 import treeImage from '../images/frontpage-tree.png';
@@ -192,8 +191,6 @@ const Frontpage = ({ data, pageContext }) => {
                     </li>
                 ))}
             </Calendar>
-            <CalendarHeading>Previous Calendars</CalendarHeading>
-            <PreviousCalendars calendarsWithContent={pageContext.calendarsWithContent} />
         </Layout>
     );
 };
