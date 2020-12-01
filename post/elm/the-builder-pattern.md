@@ -26,9 +26,44 @@ label []
     , input
         [ type_ "text"
         , value {value}
-        , onChange {msg}
+        , onChange {onChange}
         ]
     ]
 ```
 
+We will keep all the functionality related to text inputs in one file, which we will call `Input.elm`, and we will structure our code around an opaque type called `Input`, which will hold all of our options for the text field. `Input` has the following type signature:
 
+```elm
+type Input msg
+    = Input
+        { value : String
+        , onChange : String -> msg
+        , label : String
+        }
+```
+
+And to create an `Input` we will create a single constructor:
+```elm
+input : { label : String, onChange : String -> msg } -> String -> Input msg
+input inputOptions valueString =
+    Input
+        { value = valueString
+        , onChange = inputOptions.onChange
+        , label = inputOptions.label
+        }
+```
+
+To transform an `Input` into `Html`, we will use the following function:
+
+```elm
+toHtml : Input msg -> Html msg
+toHtml (Input options) =
+    label []
+        [ options.label
+        , input
+            [ type_ "text"
+            , value options.value
+            , onChange options.onChange
+            ]
+        ]
+```
