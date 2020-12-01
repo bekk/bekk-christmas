@@ -69,10 +69,40 @@ toHtml (Input options) =
         ]
 ```
 
-So to use our new view element, you do the following:
+So to use our new view element, you do the following (where `NameChanged` is a message that takes a `String` as an argument):
 
 ```elm
 view =
     Input.input { label = "Name", onChange = NameChanged } "Aksel"
         |> Input.toHtml
 ```
+
+If that's the way all our text fields were supposed to look, this would have been an overengineered solution. But the momunent we have different need in different text fields, this solution starts to shine.
+
+## Expanding Capabilities
+
+We can continue by adding the ability for our text fields to have a placeholder text. Placeholder texts shouldn't be required in all text fields in our app, so we will add it as a `Maybe String` in our options record:
+
+```elm
+type Input msg
+    = Input
+        { value : String
+        , onChange : String -> msg
+        , label : String
+        , placeholder: Maybe String
+        }
+```
+
+Then we have to add it to our constructor. But crucially, we won't require it as an argument, we will just initialize it to `Nothing`:
+
+```elm
+input : { label : String, onChange : String -> msg } -> String -> Input msg
+input inputOptions valueString =
+    Input
+        { value = valueString
+        , onChange = inputOptions.onChange
+        , label = inputOptions.label
+        , placeholder = Nothing
+        }
+```
+
