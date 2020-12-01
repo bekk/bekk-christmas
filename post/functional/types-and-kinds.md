@@ -33,13 +33,13 @@ The `a` here is a parametrically polymorphic type parameter. In languages like J
 
 The *kind* of a type is an abstraction over its "shape" in terms of types. Concrete types are the simplest types, and they have kind `*`, pronounced "type".
 
-`Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type. It follows that a type like `Either` has kind `* -> * -> *`:
+`Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type.
 
 ```
 data Either a b = Left a | Right b
 ```
 
-You get the idea.
+It follows that a type like `Either` has kind `* -> * -> *`. You get the idea.
 
 ### Higher-kinded types
 
@@ -55,7 +55,7 @@ In an analogous way, a higher-kinded type is a type that operates on other types
 data StringContainerContainer c = { value :: c String }
 ```
 
-Exactly what we were looking for - a contrived example! Let's do a quick analysis of its kind: The `StringContainerContainer` clearly takes a polymorphic type argument, so it has to be a "type" to *something*. But that *something* is clearly not a concrete type since it has to take `String` as a type parameter. `String` has kind `*`, so `c` must have kind `* -> *`, and `StringContainerContainer` therefore has kind `(* -> *) -> *`. We have found a type that operates on a more complex type than concrete types, so it is a higher-kinded type!
+Exactly what we were looking for - a contrived example! Let's do a quick analysis of its kind: The `StringContainerContainer` clearly takes a polymorphic type argument, so it has to be a "type" to *something*; `* -> ?!`. But that *something* cannot be a concrete type since it has to take `String` as a type parameter. `String` has kind `*`, so `c` must have kind `* -> *`, and `StringContainerContainer` therefore has kind `(* -> *) -> *`. We have found a type that operates on a more complex type than concrete types, so it is a higher-kinded type!
 
 Note how this is fundamentally different from the kind of `Either`. `Either` is not a higher-kinded type since it only operates on concrete types: `Either String` must have kind `* -> *`, so `* -> * -> *` is equivalent to `* -> (* -> *)` - the language also supports partial application in the type domain and the kind signatures are curried.
 
@@ -68,6 +68,6 @@ class Functor f where
 	fmap :: (a -> b) -> f a -> f b
 ```
 
-From the signature of `fmap` we see that it is polymorphic in another type `a`, but is itself polymorphic! This is a tricky concept to implement in a compiler because it requires an actual abstraction over polymorphic types rather than simply casting its usage compile-time and checking the resulting concrete types.
+In the signature of `fmap` we see that the type instance `f` is polymorphic in another type `a`, but is itself polymorphic! This is a tricky concept to implement in a compiler because it requires an actual abstraction over polymorphic types rather than simply casting its usage compile-time and checking the resulting concrete types.
 
 However, it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively (Yallop & White, [*Lightweight higher-kinded polymorphism*](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf), 2014). If you have half an hour to spare, I recommend [this talk on how the concept is realised in *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>), the functional companion to Kotlin.
