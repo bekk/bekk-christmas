@@ -68,6 +68,6 @@ class Functor f where
 	fmap :: (a -> b) -> f a -> f b
 ```
 
-In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type `a`. This is a tricky concept to implement in a compiler because it requires an actual abstraction over polymorphic types rather than simply casting its usage compile-time and checking the resulting concrete types.
+In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type. This is a tricky concept to implement in a compiler because it requires an actual abstraction over polymorphic types rather than simply casting its usage compile-time and type checking the resulting concrete types.
 
-However, it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively (Yallop & White, [*Lightweight higher-kinded polymorphism*](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf), 2014). If you have half an hour to spare, I recommend [this talk on how the concept is realised in *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>), the library with functional abstractions for Kotlin.
+However, it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively (Yallop & White, [*Lightweight higher-kinded polymorphism*](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf), 2014). If you have half an hour to spare, I recommend [this talk on how the concept is realised in *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>), a library with functional abstractions for Kotlin.
