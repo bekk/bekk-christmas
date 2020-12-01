@@ -3,7 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 2
 title: "War stories: The move from Flow to TypeScript"
-image: https://images.unsplash.com/photo-1483794344563-d27a8d18014e?ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+image: https://images.unsplash.com/photo-1466186897344-60bee3a35593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
 ingress: |-
   Some background…
 
