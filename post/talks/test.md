@@ -10,7 +10,9 @@ ingress: |
   He’s nervous, but on the surface he looks calm and ready
   To drop bombs, but he keeps on forgettin’*
 
-  **Eminem, “Lose yourself”**
+  // **Eminem, “Lose yourself”**
+authors:
+  - Hein Haraldsen
 ---
 As often - a rap artist articulates it the best.
 How often have you heard that the average persons biggest fear is to stand in front of others and present something?
