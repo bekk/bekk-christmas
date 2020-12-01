@@ -20,23 +20,23 @@ links:
 authors:
   - Hans Kristian Henriksen
 ---
-Først, en advarsel: Jeg er ikke advokat, og innholdet i denne posten er min oppfattelse av situasjonen slik den står pr 4. desember 2020 etter å ha lest informasjonen fra EU og en rekke andre, samt hatt samtaler og vært på foredrag med ulike advokater om temaet. Det er mye usikkerhet knyttet til konsekvensene av denne dommen, og betydningen av den veiledningen EU har publisert. **Du bør kontakte juridisk bistand for å vurdere hvordan dette påvirker ditt selskap.**
+Først, en advarsel: Jeg er ikke advokat, og innholdet i denne posten er min oppfattelse av situasjonen slik den står pr 4. desember 2020. Det er mye usikkerhet knyttet til konsekvensene av denne dommen, og betydningen av den veiledningen EU har publisert. **Du bør kontakte juridisk bistand for å vurdere hvordan dette påvirker ditt selskap.**
 
 ## Bakgrunn
 
 Dommen som vi omtaler som Schrems-II er en domsavsigelse i EU-domstolen som omfatter Facebooks overføring av persondata for en europeisk bruker til USA. Dommen gjør i korte trekk en vurdering av hvorvidt en overføring til USA kan ivareta de grunnleggende rettigheter europeiske borgere har. For overføringer til USA har man frem til dette punktet kunne velge om man vil bruke Privacy Shield eller såkalte Standard Contractual Clauses (SCC) som det juridiske overføringsgrunnlaget til USA. 
 
-Schrems-II-dommen gjør det klart at amerikansk lovgivning, spesielt FISA 702, gjør det umulig for amerikanske selskaper å tilby den nødvendige beskyttelsen for europeiske borgere. Dette går på tverrs av kjernen i Privacy Shield, og denne ble dermed ugyldiggjort av retten.
+Schrems-II-dommen gjør det klart at amerikansk lovgivning, spesielt FISA 702, gjør det umulig for amerikanske selskaper å tilby den nødvendige beskyttelsen for europeiske borgere. Dette går på tvers av kjernen i Privacy Shield, og denne avtalen ble dermed ugyldiggjort av retten.
 
 ## Amerikansk lovgivning
 
-Amerikanske overvåkningslover er svært omfattende. Det er i utgangspunktet ikke noe uvanlig i det, men det er noen utfordringen med FISA 702 som gjør at den ikke er mulig å svelge for europeiske personvernmyndigheter. Loven pålegger enhver "electronic communications provider" å etterkomme krav om utlevering fra FISA-domstolen. 
+Amerikanske overvåkningslover er svært omfattende. Det er i utgangspunktet ikke noe uvanlig i det, men det er noen utfordringer med FISA 702 som gjør at den ikke er mulig å svelge for europeiske personvernmyndigheter. Loven pålegger enhver "electronic communications provider" å etterkomme krav om utlevering fra FISA-domstolen. 
 
-For det første er loven uten geografisk avgrensning. Det spiller ingen rolle hvor dataen er lagret, et amerikansk selskap må hente dem ut uavhengig av dette. Her vil man kunne se likheter til lovgivning i andre land. Selv om et norsk selskap oppbevarer dataene sine i Sverige, kan selskapet fortsatt bli pålagt å hente ut dataene. 
+For det første er loven uten geografisk avgrensning. Det spiller ingen rolle hvor dataene er lagret, et amerikansk selskap må hente dem ut uavhengig av dette. Her vil man kunne se likheter til lovgivning i andre land. Selv om et norsk selskap oppbevarer dataene sine i Sverige, kan selskapet fortsatt bli pålagt å hente ut dataene. 
 
 Problemene blir større når vi ser på hemmeligholdet rundt FISA-dommer. Dommene er i det store og hele hemmelige, og man kan pålegges taushetsplikt ved utlevering. Dette betyr at den som får sine data utlevert ikke kan forsvare sine rettigheter på en effektiv måte.
 
-Schrems-II har _ikke_ uugyldiggjort SCC som overføringsgrunnlag, men ut fra dommen er det tydelig at det å ha en SCC på plass ikke er tilstrekkelig. Vi kommer tilbake til dette.
+Dette medfører at det i praksis er blitt nesten umulig å overføre persondata fra EU til USA. Med Privacy Shield ugyldig vil man måtte basere seg på SCC som overføringsgrunnlag. Men også her er det et krav til at man gjør vurderinger av hvorvidt rettighetene til EU-borgere vil kunne bli ivaretatt. Og domstolen har jo langt på vei sagt i klartekst at det ikke er tilfellet i USA. Dermed skal man gjør grundige vurderinger før man evt. overfører persondata til USA.
 
 ## Bruk av tjenester fra amerikanske selskaper
 
@@ -49,7 +49,7 @@ I slike tilfeller vil det ikke være tilstrekkelig at selskapet man har avtale m
 En helt reell konsekvens av denne forståelsen er at **all bruk av tjenester med et amerikansk selskap i eierkjeden er forbudt**. Dette er en ekstrem konsekvens av Schrems-II-dommen som i praksis vil legge ned store deler av europeiske IT-selskaper i en lengre periode. Man ser antydninger til at flere forsøker å tolke kjennelsen dithen, og dette er nok også en av grunnene til at det europeiske personvernrådet har kommet med veiledning for å fortsatt sikre trygg overføring til tredjeland, som også kan brukes i denne typen tilfeller. 
 
 ## Anbefalinger fra det europeiske personvernrådet
-Det europeiske personvernrådet (EDPB) har kommet med et sett anbefalinger for hvordan man skal gå frem om man ønsker å overføre data til tredjeland. I denne sammenhengen er det viktig å være klar over at all tilgang regnes som overføring. Hvis driftsleverandøren har en ansatt stasjonert utenfor EU, så regnes det som at data er overført ut av EU om denne ansatte har tilgang til dataene. Tilsvarende regnes utlevering uten dataansvarliges kjennskap til tredjelands myndigheter som et scenario man må ta høyde for.
+Det europeiske personvernrådet (EDPB) har kommet med et sett anbefalinger for hvordan man skal gå frem om man ønsker å overføre data til tredjeland. I denne sammenhengen er det viktig å være klar over at all tilgang regnes som overføring. Hvis driftsleverandøren har en ansatt stasjonert utenfor EU, så regnes det som at data er overført ut av EU om denne ansatte har tilgang til dataene. I tillegg regnes utlevering uten dataansvarliges kjennskap til tredjelands myndigheter som et scenario man må ta høyde for.
 
 EDPB har kommet med en anbefaling for hvordan man skal gå frem for å vurdere om man er rammet av Schrems-avgjørelsen, og setter her også frem forslag til tiltak.
 
@@ -60,7 +60,7 @@ EDPB har kommet med en anbefaling for hvordan man skal gå frem for å vurdere o
 5. Iverksett formelle prosedyrer
 6. Re-evaluer og overvåk løpende
 
-Punkt 1 er allerede en del av GDPR. Alle selskaper er pliktige til å føre protokoll over overføringene sine av personopplysninger. Dette steget skal derfor bare være å sjekke protokollen for overføringer til tredjeland, eller til selskaper der utenlandske eierinteresser gjør det aktuelt å vurdere tredjelandslovverk ytterligere. Tilsvarende er punkt 6, at man løpende skal overvåke situasjonen med tanke på endringer som påvirker personvernet, noe GDPR allerede legger opp til - personvern er en kontinuerlig prosess, ikke en punktøvelse.
+Punkt 1 er allerede en del av GDPR. Alle selskaper er pliktige til å føre protokoll over overføringene sine av personopplysninger. Dette steget skal derfor bare være å sjekke protokollen for overføringer til tredjeland, eller til selskaper der utenlandske eierinteresser gjør det aktuelt å vurdere tredjelandslovverk ytterligere. Tilsvarende er punkt 6, at man løpende skal overvåke situasjonen med tanke på endringer som påvirker personvernet, noe GDPR allerede legger opp til - personvern er en kontinuerlig prosess, ikke en engangsøvelse.
 
 De to mest krevende punktene her er 3 og 4. Å gjøre en vurdering av andre lands lover faller langt utenfor kompetansen til de fleste selskaper som ikke driver med juss, så her tvinges man til å leie inn advokater. Det blir påpekt at man skal gjøre denne vurderingen i samråd med leverandøren, og store leverandører vil uten tvil sette sammen standardskriv for dette så fort som mulig. 
 
@@ -70,7 +70,7 @@ Det er allikevel åpne spørsmål rundt hvorvidt man må sikre at krypteringsnø
 
 ## Veien videre
 
-Det er vanskelig å se for seg at EU kan leve med worst-case-utfallet av denne dommen, i alle fall på kort sikt. Det virker overveiende sannsynlig at en domstol må gripe inn og begrense omfanget av presedensen som nå er satt. Om det ikke skjer vil mer eller mindre alle større selskaper i EU måtte haste-flytte sine data til nasjonale eller rent europeiske leverandører. Husk at det ved denne tolkningen ikke er tilstrekkelig at dataene lagres i EU eller ditt eget land, det er eierstrukturen i morselskapet som anses som avgjørende.
+Det er vanskelig å se for seg at EU kan leve med worst-case-utfallet av denne dommen, i alle fall på kort sikt. Det er heller ikke klart at det er denne ytterliggående tolkningen som er den riktige. Skulle det være tilfelle vil det også være overveiende sannsynlig at en domstol vil gripe inn og begrense omfanget av tolkningen. Om det ikke skjer vil mer eller mindre alle større selskaper i EU måtte haste-flytte sine data til nasjonale eller rent europeiske leverandører. Husk at det ved denne tolkningen ikke er tilstrekkelig at dataene lagres i EU eller ditt eget land, det er eierstrukturen i morselskapet som anses som avgjørende.
 
 Domstoler er normalt sett mer pragmatiske enn datatilsyn. Dette ser man i [den relaterte dommen](https://www.privacy-ticker.com/first-judicial-application-of-schrems-ii-in-france/) i det franske rettssystemet hvor det franske datatilsynet brukte Schrems-II-dommen til å stanse den franske sentraliserte helseplattformen Health Data Hub (HDH) i bruk av Microsoft Azure. Den høyeste administrative domstolen i Frankrike har avvist dette på flere grunnlag:
 
@@ -96,11 +96,11 @@ For det første understrekr Schrems-II-dommen datatilsynene (DPAene) sin plikt t
 
 Max Schrems sin organisasjon NOYB har sendt inn 101 varsler til datatilsyn over hele europa for brudd på loven om overføring av personopplysninger til USA ved bruk av Google Analytics og Facebook Connect. I Norge har de klaget inn Sbanken, samt selskapene bak gamer.no og at.no. DPAene i Europa behandler nå disse klagene i fellesskap.
 
-Datatilsynet annerkjenner at selskaper som drifter IT-løsnigner i offentlig sky nå er i en krevende situasjon, men er tydelige på at det ikke fritar dem fra å måtte følge til enhver tid gjeldende lovgivning. 
+Datatilsynet anerkjenner at selskaper som drifter IT-løsnigner i offentlig sky nå er i en krevende situasjon, men er tydelige på at det ikke fritar dem fra å måtte følge til enhver tid gjeldende lovgivning. 
 
 ## Hva blir utfallet av alt dette bråket?
 
-Den mest ytterliggående tolkningen vil skape store utfordringer i Europa, og det virker ikke sannsynlig at denne får stå uten modifikasjoner. Et mer realistisk utfall er at EU på det nåværende tidspunkt ikke forbyr bruk av skyplattformer med eierinteresser utenfor EU, men heller formulerer unntak som naturlig vil innskrenkes etterhvert som "EuroCloud" blir mer konkurransedyktig. Det vil skape insentiver til å bygge ut denne typen tjenester i Europa, noe som gir arbeidsplasser, kompetanse og inntekter, samtidig som det over tid styrker personvernet til EU-borgere. 
+Den mest ytterliggående tolkningen vil skape store utfordringer i Europa, og det virker ikke sannsynlig at denne får stå uten modifikasjoner. Et mer realistisk utfall er at EU på det nåværende tidspunkt ikke forbyr bruk av skyplattformer med eierinteresser utenfor EU, men heller formulerer unntak som naturlig vil innskrenkes etterhvert som "EuroCloud" blir mer konkurransedyktig. Det vil skape incentiver til å bygge ut denne typen tjenester i Europa, noe som gir arbeidsplasser, kompetanse og inntekter, samtidig som det over tid styrker personvernet til EU-borgere. 
 
 Når det er sagt har EU de siste årene vist at de er en seriøs pådriver for personvern, og ikke er villige til å bøye av for press fra store kommersielle interesser. Det kan tenkes at EU ønsker å bruke denne saken til å statuere et eksempel som viser hvor viktig personvernet er i EU, og at man kan stole på at dette ikke vil bli svekket.
 
