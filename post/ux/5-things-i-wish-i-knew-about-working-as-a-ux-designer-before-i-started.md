@@ -20,7 +20,7 @@ authors:
   - Sigurd Rognhaugen
   - Citona Marie Rygg
 ---
-👩‍💼
+## 👩‍💼
 # 1. Understanding business and politics is just as important as understanding users
 
 It might sound a bit strange, but when working as a UX designer, everything doesn’t revolve around the needs of the users. We know. Mind-blowing, right? The needs of the client are often equally as important – whether they need to make money, have a social mission, or need to implement changes due to new laws and regulations. This means that as designers we might have to think “how can we, with these business needs, make a good user experience?”.
@@ -29,7 +29,7 @@ When we started working as designers, we noticed how our colleagues were talking
 
 “But how do I prepare for this?”, you may ask. Our best tip is simply to be aware of it when you start working. Look out for the different stakeholders, their needs, decision-making powers, what defines their success, and what engages them. Then, as with many things in life, you learn as you go!
 
-∞
+## ∞
 # 2. You can improve a design after its release by continuously gathering insight
 
 In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys, then designing a prototype to hand over to developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. In the past five months we’ve tried this out in three different ways:
@@ -46,19 +46,19 @@ Getting feedback on ideas and gathering insights is essential when designing. Th
 
 You can create a “fake door” by implementing a button or a tiny bit of functionality to gain the users' attention. When the user clicks the button you can tell them that the functionality isn’t done yet, and proceed to ask them questions about what they would like to see or which functionality that would be relevant to them. This way you can receive feedback on functionality before it’s done.
 
-👨‍💻
+## 👨‍💻
 # 3. Why you should include developers in the design process
 
 At school, we often worked in groups of designers. This is a fun and educational form of learning. What we found through our recent months of working is that including developers can also yield several benefits that you should be aware of.
 
 Involving developers in your design process can provide the technical insight needed to make sure your designs are technically feasible. As team members, they are also invested in the product and can provide valuable feedback. When developers are included in your design research process, they can be your allies and share an understanding of why certain features are more important than others. This is of course a vital part of working in a team. You can also find out what they are interested in. Maybe one of your developer colleagues wants to learn how to make animations or another would like to focus on software architecture. Knowing this allows you to tailor tasks according to your team and thus working with their strengths and interests.
 
-👩‍🎨
+## 👩‍🎨
 # 4. Sketches are a valuable tool for communication
 
 Sketches are simple drawings, usually drawn by hand, used to explore product ideas in the early stages of the design process. They are known for being useful because they are quick and easy to make and communicates your idea without costing too much time and effort. While this is very true, the real value of sketches are as a tool for communication. When talking with various stakeholders that are part of the product development process it is easy to assume that there exists a mutual understanding. However, as we designers know, everyone can have different mental models. Having rough sketches in front of everyone or making them on-the-fly in the meeting (sounds intimidating, but is so useful) ensures that everyone is more likely to be on the same page. If a developer is present too, it can help uncover unknown technical complexities that you were unaware of. The sketches can then be used to talk about technical complications and how you might solve or work around them (yet another example of why developers should be included in the design process).
 
-📝
+## 📝
 # 5. Writing lists will help you keep on top of your work
 
 A short and concise tip from us and many other designers in Bekk is to write lists! As I’m sure you can gather from everything we have written about thus far, a designer's role is multi-faceted and includes keeping on top of many things at once. Having a way to keep track of decisions being made, tasks to do, people to talk to, and meetings to attend will not only help you remember everything you have to do, but will also show you everything you have achieved! Sometimes, if you have had a day full of meetings, it can feel as if you haven’t done much work. By looking at your list you can see all the meetings you have attended, people you have talked to, and decisions that have been made: all important aspects of the work.
