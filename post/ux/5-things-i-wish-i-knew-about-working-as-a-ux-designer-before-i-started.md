@@ -50,7 +50,7 @@ Getting feedback on ideas and gathering insights is essential when designing. Th
 
 ### Consider creating fake doors
 
-You can create a “fake door” by implementing a button or a tiny bit of functionality to gain the users' attention. When the user clicks the button you can tell them that the functionality isn’t done yet, and proceed to ask them questions about what they would like to see or which functionality that would be relevant to them. This way you can receive feedback on functionality before it’s done.
+You can create a “fake door” by implementing a button or a tiny bit of functionality to gain the users' attention. When the user clicks the button it is explained how the functionality isn’t done yet. They are also presented with a small questionnaire asking about what they would like to see or which functionality that would be relevant to them. This may result in feedback on the concept before it’s fully implemented.
 
 <p>&nbsp;</p>
 
@@ -60,7 +60,7 @@ You can create a “fake door” by implementing a button or a tiny bit of funct
 
 At school, we often worked in groups of designers. This is a fun and educational form of learning. What we found through our recent months of working is that including developers can also yield several benefits that you should be aware of.
 
-Involving developers in your design process can provide the technical insight needed to make sure your designs are technically feasible. As team members, they are also invested in the product and can provide valuable feedback. When developers are included in your design research process, they can be your allies and share an understanding of why certain features are more important than others. This is of course a vital part of working in a team. You can also find out what they are interested in. Maybe one of your developer colleagues wants to learn how to make animations or another would like to focus on software architecture. Knowing this allows you to tailor tasks according to your team and thus working with their strengths and interests.
+Involving developers in your design process can provide the technical insight needed to make sure your designs are technically feasible. As team members, they are also invested in the product and can provide valuable feedback. When developers are included in your design research process, they can be your allies and share an understanding of why certain features are more important than others. This is of course a vital part of working in a team. You can also find out what each developer is interested in. Maybe one of your developer colleagues wants to learn how to make animations or another would like to focus on software architecture. Knowing this allows you to tailor tasks according to your team and thus working with their strengths and interests.
 
 <p>&nbsp;</p>
 
@@ -68,7 +68,7 @@ Involving developers in your design process can provide the technical insight ne
 
 ## 4. Sketches are a valuable tool for communication
 
-Sketches are simple drawings, usually drawn by hand, used to explore product ideas in the early stages of the design process. They are known for being useful because they are quick and easy to make and communicates your idea without costing too much time and effort. While this is very true, the real value of sketches are as a tool for communication. When talking with various stakeholders that are part of the product development process it is easy to assume that there exists a mutual understanding. However, as we designers know, everyone can have different mental models. Having rough sketches in front of everyone or making them on-the-fly in the meeting (sounds intimidating, but is so useful) ensures that everyone is more likely to be on the same page. If a developer is present too, it can help uncover unknown technical complexities that you were unaware of. The sketches can then be used to talk about technical complications and how you might solve or work around them (yet another example of why developers should be included in the design process).
+Sketches are simple drawings, usually drawn by hand, used to explore product ideas in the early stages of the design process. They are known for being useful because they are quick and easy to make and communicates your idea without costing too much time and effort. While this is very true, we find the real value of sketches to be as a tool for communication. When talking with various stakeholders that are part of the product development process it is easy to assume that there exists a mutual understanding. However, as we designers know, everyone can have different mental models. Having rough sketches in front of everyone or making them on-the-fly in the meeting (sounds intimidating, but is so useful) ensures that everyone is more likely to be on the same page. If a developer is present too, it can help uncover unknown technical complexities that you were unaware of. The sketches can then be used to talk about technical complications and how you might solve or work around them (yet another example of why developers should be included in the design process).
 
 <p>&nbsp;</p>
 
@@ -76,7 +76,7 @@ Sketches are simple drawings, usually drawn by hand, used to explore product ide
 
 ## 5. Writing lists will help you keep on top of your work
 
-A short and concise tip from us and many other designers in Bekk is to write lists! As I’m sure you can gather from everything we have written about thus far, a designer's role is multi-faceted and includes keeping on top of many things at once. Having a way to keep track of decisions being made, tasks to do, people to talk to, and meetings to attend will not only help you remember everything you have to do, but will also show you everything you have achieved! Sometimes, if you have had a day full of meetings, it can feel as if you haven’t done much work. By looking at your list you can see all the meetings you have attended, people you have talked to, and decisions that have been made: all important aspects of the work.
+A short and concise tip from us and many other designers in Bekk is to write lists! As we're sure you can gather from everything we have written about until now, a designer's role is multi-faceted and includes staying on top of many things at once. Having a way to keep track of decisions being made, tasks to do, people to talk to, and meetings to attend will not only help you remember everything you have to do, but will also show you everything you have achieved! Sometimes, if you have had a day full of meetings, it can feel as if you haven’t done much work. By looking at your list you can see all the meetings you have attended, people you have talked to, and decisions that have been made: all important aspects of the work.
 
 <p>&nbsp;</p>
 
