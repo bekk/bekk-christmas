@@ -75,10 +75,11 @@ export default () => {
 
 As shown in the Built-in defences section, escaping converts characters like `<` and `>` into `&lt;` and `&gt;` and making the rendering of this as string instead of code to be interpreted. As the point of `dangerouslySetInnerHtml` is to render the HTML given, React cannot escape the input as usual, leaving your component vulnerable for attacks.
 
-Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`-tags by default, there are other ways of triggering a script to run. One example is using an event handler on the`img`- or `svg`-tag like this:
+Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`-tags by default, there are other ways of triggering a script to run. One example is using an event handler on the`img`- or in this case `iframe`-tag like this:
 
 ```jsx
-<img onerror=alert("Bad 🎅 was here!") src="error">
+<iframe onload=alert("Bad_🎅_was_here!") src="error">
+
 ```
 
 Because of the vulnerabilities attached to this function React has given it an ominous name and making sure developers see the documentation by enforcing the input to be given in a prop called `__html`. However, enforcing the input in a prop might make developers believe that this value is being escaped, like props normally are when passed through functions in the React API such as createElement.
@@ -86,35 +87,42 @@ Because of the vulnerabilities attached to this function React has given it an o
 In most cases, you should avoid using this function and gain the same result by using the react framework. In cases where you find no other options be sure to sanitize the input. Unlike escaping, a sanitizer does not convert or replace characters. What it does instead is look for the unsafe parts in HTML and remove them, leaving our example above like this: 
 
 ```jsx
-<img src="error"> 
+<iframe src="error">
 ```
 
 ## \#2 URLs should never be from an external source
 
-Urls is one of the nutorious pitfalls for any front-end developer. In many cases getting data from other sources or navigating to a different domain is possible in web applications. As far as navigation goes you will probably use an a-tag like this `<a href=”some link” /a>`. This is all good, but the risk enters when you have untrusted data in your link.
+We have covered how escaping and sanitizing the untrusted data covers security issues on the web, unfortunately it does not cover the issues linked to URLs.
 
-Even though React escapes the props in your a-tag there are still valid ways of triggering malicious code which is not handled by Reacts escaping. The javascript: 
-
-So as mentioned earlier escaping remove potentially harmful characters with something else. But what then when the danger is regular characters in the alphabet? 
-
-If you let users build or add their own URLs the chances are you will be exploited. 
-
-Here is an example:
+URLs is widely used in a web application. It can be used for navigation with an a-tag or for getting resources like an image, video or content from another domain in an iframe.  Lets use the example with the iframe again only now the iframe is in the application and tying to display content from another page:
 
 ```jsx
-<a href={ “javascript: alert(‘not good’)”} />
+ <iframe src="https://bekk.christmas" />
+
 ```
 
-It is not just a React problem, but It is important to mention to show that React can’t handle every scenario end every threat. It is neither just an a-tag problem. The same problem occurs in src attributes like on images or iframes. Trying to fix this by looking for the word javascript and remove it will not suffice. The same can b done by using data: like this: 
+This is perfectly safe... As long as you control the url.
+
+Even though React escapes the props in your a-tag there are still valid ways of triggering malicious code which is not handled by Reacts escaping. The` javascript: `
+
+If you let users add their own URLs the chances are you will be exploited. Here is an example:
 
 ```jsx
-<iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+<iframe src="javascript:alert("Bad_🎅_was_here!")" />
 ```
 
-If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite .christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not suffice use a sanitizer or check that the URL starts with what you except. Like http or https as an example.
+It is not just a React problem, but it is important to mention to show that React can’t handle every scenario end every threat. It is neither just an `iframe`-tag problem. The same problem occurs in `src`-attributes e.g on images and the `href`-attribute on an a-tag. Trying to fix this by banning the word javascript and remove it will not suffice. The same can be done by using `data:` like this: 
+
+```jsx
+<iframe src="data:text/html,<script>alert("Bad_🎅_was_here!")</script>"/>
+```
+
+If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite bekk.christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not suffice check that the URL starts with what you except e.g http or https. 
 
 ## \#3 Keep your framework updated!
 
 This might seem to be an obvious one, but is still an important reminder. 
 
 In Whitehat security's annual security report, they found that in one year there has been a 50% increase in vulnerabilities due to unpatched libraries. We use third-party libraries more and more, but it can be hard to be sure if the library has security vulnerabilities or not. In fact, another finding states that as much as 1/3 of all application security vulnerabilities are inherited rather than written in the application. Although Reacts developer team strive for security, errors can and will be made. Keep your framework updated as well as other third-party libraries you may use. Another tip for keeping the framework secure and your team updated on known vulnerabilities in your libraries is to use githubs dependabot on your repository. To read more about that check out the blogpost from the 2nd of December.
+
+I will leave you with this: Never trust data from an external source. It does not matter if it is from a user, an API or the address bar in the browser. Handle this data as malicious and take security measures based on where this data is embedded in your code.
