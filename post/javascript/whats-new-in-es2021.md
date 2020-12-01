@@ -10,6 +10,10 @@ ingress: The new version of ECMAScript, ES2021 is expected to be released in
 links:
   - url: https://github.com/tc39/proposals
     title: JavaScript Proposals
+  - title: The Promise of Christmas
+    url: https://javascript.christmas/2019/8
+authors:
+  - Henriette Chiem
 ---
 ## String replaceAll()
 This feature is perhaps the feature I am most excited about. With the old approach, in order to replace all occurrences of a substring, the method  ```replace() ``` combined with a global regular expression has been the way to go.
@@ -54,6 +58,8 @@ a ?? (a = b)
 a ?? = b
 ```
 
+Curious about Operators? Stay tuned, there might be an article about the topic during this JavaScript Christmas calendar :angel:.
+
 ## Numeric Separators
 Large numbers may be challenging to read with a first glance, especially when there are repeating digits. The Numeric Separator is a useful tool that separates digits with an underscore (```_```) in numeric literals, thus making numeric literals more readable. The separator can be used in different positions, with as many separators as you want, in groups of any size.
 
@@ -66,6 +72,8 @@ const oneMillionAndALittleMore = 1_000_000.123_456;
 As we can see, the code becomes a lot more readable. Numeric separators also work for octal integer literals
 
 ## Promise.any()
+*Want to know more about promises? Visit this [article](https://javascript.christmas/2019/8) from the 2019 Christmas calendar.*
+
 In short, this method is the opposite of ```Promise.all()```. ```Promise.any()``` takes an iterable of promise objects, and resolves if any of the supplied objects resolves. It returns a single promise, the first one to resolve, with the value from that promise.
 
 Consider the example below, we create three promises which we feed into ```Promise.any()```.
@@ -86,15 +94,15 @@ If none of the promises resolve, then a new type of exception, the ```AggregateE
 
 
 ## WeakRef
-In JavaScript. references to objects are strongly held. This means that as long as a reference to the object exists, the object will not be garbage-collected but keeps the object in memory. In scenarios where we do not want to keep objects in memory indefinitely, the ```WeakRef``` (Weak Reference) can be used to implement caches or mappings to large objects. When not in use, the memory can be garbage collected and generate a fresh cache when needed again.
+In JavaScript, references to objects are strongly held. This means that as long as a reference to the object exists, the object will not be garbage-collected but keeps the object in memory. In scenarios where we do not want to keep objects in memory indefinitely, the ```WeakRef``` (Weak Reference) can be used to implement caches or mappings to large objects. When not in use, the memory can be garbage collected and generate a fresh cache when needed again.
 
- ```javascript
+ ```javascript
 var a, b;
 a = b = document.querySelector('.someClass')
 a = undefined
 // ... GarbageCollecting...
 // b is still references to the DOM-object .someClass
- ```
+```
 
 A WeakRef is created using ```new WeakRef```, and the reference is read with ```.deref()```.
 
