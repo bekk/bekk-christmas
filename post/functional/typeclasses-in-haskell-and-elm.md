@@ -93,7 +93,7 @@ And we can now use this to again define our list sort:
 listSort : Ord a -> List a -> List a
 ```
 
-Not too far off from our Haskell listSort!
+Not too far off from our Haskell `listSort`!
 
 You still can't extend the built-in typeclasses and the typeclass functions aren't provided implicitly, but you can write functions using a constrained type as you know that the caller has to provide the instance for your typeclass.
 
