@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 2
 title: "War stories: The move from Flow to TypeScript"
 image: https://images.unsplash.com/photo-1466186897344-60bee3a35593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
-ingress: 8 developers, 1300 files, balblb lines of code. This is the story of
+ingress: 8 developers, 1240 files, 102 665 lines of code. This is the story of
   how we translated our entire code base from Flow to TypeScript and lived to
   tell the tale
 links:
