@@ -31,7 +31,7 @@ case size of
     Small ->
         case color of
             Just colorName ->
-                "A lustrous " ++ colorName
+                "A modest " ++ colorName
             Nothing ->
                 "Don't worry! We will find a color for you"
 
