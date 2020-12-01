@@ -40,7 +40,7 @@ type Input msg
         }
 ```
 
-And to create an `Input` we will create a constructor which will be exposed by our module:
+We will create a constructor function for making an `Input`, which will be exposed by our module:
 
 ```elm
 input : { label : String, onChange : String -> msg } -> String -> Input msg
@@ -52,7 +52,7 @@ input inputOptions valueString =
         }
 ```
 
-To transform an `Input` into `Html`, we will use the following function:
+To transform an `Input` into `Html`, we create the following function:
 
 ```elm
 toHtml : Input msg -> Html msg
