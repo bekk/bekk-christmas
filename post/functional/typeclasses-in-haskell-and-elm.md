@@ -33,7 +33,7 @@ instance Eq AnalogTime where
 
 Note that by just implementing `(==)`, we can also use the `(/=)` operator for AnalogTime values.
 Now that AnalogTime has an instance for the `Eq` typeclass, we
-can also provide an instance for the `Ord` typeclass. The `Ord` typeclass has functions for types with an _ordering_, or in other words types that can be compared with for example `>` or `<`. This is because all `Ord` instances are required to have an `Eq`instance, as we can see from the definition:
+can also provide an instance for the `Ord` typeclass. The `Ord` typeclass has functions for types with an _ordering_, or in other words types that can be compared with for example `>` or `<`. This is because all `Ord` instances are required to have an `Eq` instance, as we can see from the definition:
 
 ```haskell
 class Eq a => Ord a where
