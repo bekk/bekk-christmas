@@ -62,9 +62,9 @@ Vi som driver med moderne softwareutvikling har grått, lengtet og ønsket oss s
 Et ikke helt utenkelig scenario:
 
 * Offentlige virksomheter stanser sine planer om skysetting i påvente av nasjonal sky.
-* Etableringen av nasjonal sky tar 3-5 år.
-* Når nasjonal sky er på plass, får vi et A-lag av private virksomheter som benytter skytjenester fra AWS/GCP/Azure, og et B-lag av offentlige aktører på nasjonal sky.
+* Etableringen av nasjonal sky tar 2-4 år.
+* Nasjonal sky er klar for bruk. Får vi et A-lag av private virksomheter som benytter skytjenester fra AWS/GCP/Azure, og et B-lag av offentlige aktører på nasjonal sky?
 
-Er det hit vi ønsker oss?
+Er det dette vi ønsker oss?
 
 P.S. Denne artikkelen diskuterer ikke konsekvensene av SchremsII, som også vil påvirke hvordan offentlige og private virksomheter benytter skytjenester. Mer om det i en annen luke.
