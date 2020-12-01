@@ -41,6 +41,9 @@ Still – Deno is a new take on Node, offering a set of modern approaches:
 
 The built-in utilities may be the biggest selling point of Deno. Surely, with Node's enormous ecosystem, you can get all of these tools from NPM. Format your code with *Prettier*, check it with *ESLint*, use *Nodemon* to watch for changes, bundle your files with *Webpack*, test your code with *Jest* and so on. But Deno tries to bake all these features into a single executable – like a Swiss army knife of JavaScript development.
 
+![List of subcommands available in Deno: bundle, cache, completions, doc, eval, fmt, help, info, install, lint, repl, run, test, types, upgrade.](https://i.imgur.com/mhOzA8y.png)
+*Just look at all these tools! 🛠*
+
 ## Kill the package manager!
 
 So, Node can do a lot of the things you get from Deno, using the right configuration and third-party dependencies. To install these dependencies, you use the included Node Package Manager, or NPM for short. NPM has seen some criticism over the years, regarding both the centralized registry and the comically large `node_modules` folder. Despite these challenges, it remains a user-friendly method of bundling other people's code into your own application.
