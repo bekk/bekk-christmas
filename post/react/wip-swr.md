@@ -30,6 +30,20 @@ const { data, error, isValidating } = useSWR(URL, fetcher);
 ``` 
 The `useSWR` hook exposes the revalidation status through the hook, which can be used to show some loading state.
 
+## Mutation
+Cool, you've got a great way of fetching and caching data. But now, you might want to change some of that data. Perhaps you've sent an update request to the backend resource but don't want the UI to feel slow by waiting for another update of the data from that backend. 
+
+A mutate function is available through the library, and it gives us a few really convenient pieces of functionality. The mutate function signature looks like this:
+```js
+mutate(key, data?, shouldRevalidate?)
+```
+The `key` is the cache key, data is the changed data, and `shouldRevalidate` is whether or not to trigger revalidation of the data against the resource after mutating the data.
+
+For an even tidier usage, you can pull out the swiss army knife again, as the mutate function with a predefined key is given through the `useSWR` hook; all you've got to do is simply ask!
+```js
+const { data, error, isValidating, mutate } = useSWR(URL, fetcher);
+``` 
+
 ## Deduplication
 One of my favorite features of the library SWR is the deduplication feature. Deduplication is a long word, which essentially means SWR will prevent multiple uses of the `useSWR` hook with the same key to revalidate the same resource within a configured interval. Instead, a single request will be sent, and the result returned to each of the requestèes.
 
@@ -37,9 +51,8 @@ This will allow you to use the same SWR hook across multiple components without 
 
 Deduplication is, of course, configurable, and you can decide how long the interval should be.
 
-## Direct mutation
-
-## Errors and retrying
+## Automatic retries
+By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging integrations or any other custom behavior.
 
 ## Configuration
 
