@@ -38,11 +38,11 @@ Minimum => 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours)
 ```
 I sure hoped this wasn't running on max most of the time!
 
-One of my concerns was regarding a feature called Autopause. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. Therefore I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
+One of my concerns was regarding a feature called Autopause. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. That means there is more money to save, but there is a catch. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. Therefore I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
 
 All our infrastructure is written as a mix of Powershell and ARM(Azure Resource Manager) templates, so I didn't click save when fiddling with the GUI in the Azure Portal. I changed our ARM template to reflect my changes and reprovisioned the database. The configuration looks something like this:
 
-```
+```jsonnet
 "resources": [
         {
             "type": "Microsoft.Sql/servers/databases",
