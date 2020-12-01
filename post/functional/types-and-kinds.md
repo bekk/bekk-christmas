@@ -49,7 +49,7 @@ A step up from values we have what are normally considered functions; a construc
 
 A higher-order function is a function with order > 1 (who'd-a thunk it!) - in other words a function that operates on other functions.
 
-In an analogous way, a higher-kinded type is a type that operates on other types so that their level of abstraction is greater than 1.
+In an analogous way, a higher-kinded type is a type that operates on other types so that their level of abstraction from concrete types is greater than 1.
 
 ```
 data StringContainerContainer c = { value :: c String }
