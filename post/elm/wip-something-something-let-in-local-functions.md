@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 5
-title: "WIP: Something something let-in/local functions"
+title: Letting functions in
 image: https://images.unsplash.com/photo-1605329540489-afc28d074eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 links:
   - url: https://elm-lang.org/docs/syntax#let-expressions
@@ -71,3 +71,50 @@ shoppingCart items translate =
 ```
 
 And now our view-logic for the shopping cart should be more clear while not cluttering our global scope!
+We can also keep going and move our lambda function into a local function:
+
+```elm
+shoppingCart : List Item -> Translator -> List (Html msg)
+shoppingCart items translate =
+    let
+        showPrice price =
+            formatPrice "€" (formatNumberWithSeparator "," price)
+
+        showItems item =
+            div []
+                [ h3 [] [ text item.name ]
+                , p [] [ text <| translate item.description ]
+                , p [] [ text <| showPrice item.price ]
+                ]
+    in
+    items
+        |> List.map showItems
+```
+
+This makes it even clearer what the actual view-logic is, as we can more easily separate view-logic from the logic that generates the view for each item.
+Additionally, local functions can be type-annotated, as such:
+
+```elm
+shoppingCart : List Item -> Translator -> List (Html msg)
+shoppingCart items translate =
+    let
+        showPrice : Float -> String
+        showPrice price =
+            formatPrice "€" (formatNumberWithSeparator "," price)
+
+        showItems : Item -> Html msg
+        showItems item =
+            div []
+                [ h3 [] [ text item.name ]
+                , p [] [ text <| translate item.description ]
+                , p [] [ text <| showPrice item.price ]
+                ]
+    in
+    items
+        |> List.map showItems
+```
+
+This can make it clearer what the code does, but can also hurt readability.
+Remember to think about whether the type annotation helps making the code clearer, or if it just introduces visual clutter.
+
+Now go on and let the functions in!
