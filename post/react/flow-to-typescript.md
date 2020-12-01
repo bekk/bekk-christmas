@@ -22,13 +22,13 @@ Bla bla bla
 
 ## The why
 
-Flows ease of use with React / React Native, and gradual approach
+Flows ease of use with React / React Native, and gradual approach to typing made it an ideal framework to help us detect type errors and stay consistent. 
 
-I was not in the room when the decision to adapt Flow over TypeScript was made. But I recon the discussion went like this. How will this affect our current speed? Do we need to change the build pipeline? What new dependencies will we need to include? The answer is of course none, no, and babel-flow-plugin. 
+I was not in the room when the decision to adapt Flow was made. But I recon the discussion went like this. How will this affect our current speed? Do we need to change the build pipeline? What new dependencies will we need to include? The answer is of course none, no, and babel-flow-plugin. 
 
-Fast forward two years and the decision made that day was still with us, despite everything else had changed. The app had grown to three clients (bundle entry points) roughly 1300 files, spread across 5 domains. 
+Fast forward two years and Flow was still with us, however it was getting harder and harder ignore the elephant in the room. Flows momentum was not what it one was. Other Facebook product had started to[ make the switch](https://github.com/facebook/jest/pull/7554), and in the community [Facebooks commitment was being questioned](https://github.com/facebook/flow/issues/7365). As of November 2020 11 authors have pushed 44 commits to Flow’s master branch and merged 0 pull-requests, compared to 23 authors and 100 commits to TypeScript’s master branch with 85 merged pull requests.
 
-Some of Flows momentum had disappeared over the years. In November 2020 11 authors have pushed 44 commits to Flow’s master branch and merged 0 pull-requests, compared to 23 authors and 100 commits to TypeScript’s master branch and 85 merged pull requests. Editor integration and developer experience left a lot to be desired. Our team is splitt 50/50 between IntelliJ IDEA and Visual Studio Code, both with built in autocomplete, type checking and refactoring support, for TypeScript, but with Flow that help was generally not usable. 
+Editor integration and developer experience with Flow left a lot to be desired. Our team is splitt 50/50 between IntelliJ IDEA and Visual Studio Code. Both editors has extensive support for autocomplete, type checking and refactoring for TypeScript, with Flow not so much. 
 
 Flow had done a pretty good job, but it was time to move on.
 
@@ -81,11 +81,7 @@ We defined tree goals; Getting all tests to pass. Getting the application to bui
 
 At the start of day tree, with only TypeScript errors left, it  
 
-
-
  everyone was focus on getting that number to 0. 
-
-
 
 Oi her var det stopp! Dette gjennstår
 
