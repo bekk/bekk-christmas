@@ -37,11 +37,11 @@ The *kind* of a type is an abstraction over its "shape" in terms of other types.
 
 ### Higher-kinded types
 
-An `Int` or `String` value is just that - a value. In a pure functional program there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions, let's assign them a complexity, or *order*, of 0.
+An `Int` or `String` value is just that - a value. In a pure functional program there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions, let's assign them a complexity score, or *order*, of 0.
 
 A step up from values we have what are normally considered functions; a construct that takes one or more values and returns a value. They operate on values, so their complexity is higher; they are of order 1.
 
-A higher-order function is a function with order > 1 (who'd-a thunk it!), so a function that operates on other functions. A higher-kinded type is a type that operates on other complex types, so that their complexity is greater than 1.
+A higher-order function is a function with order > 1 (who'd-a thunk it!) - in other words a function that operates on other functions. A higher-kinded type is a type that operates on other complex types, so that their complexity is greater than 1.
 
 ```
 data StringContainerContainer c = { value :: c String }
@@ -49,7 +49,7 @@ data StringContainerContainer c = { value :: c String }
 
 Exactly what we were hoping for - a contrived example! Let's do a quick analysis of its kind: The `StringContainerContainer` clearly takes a polymorphic type argument, so it has to be a "type" to *something*. But that *something* is clearly not a concrete type since it has to take `String` as a type parameter. `String` has kind `*`, so `c` must have kind `* -> *`, and `StringContainerContainer` therefore has kind `(* -> *) -> *`. We have found a type that operates on a more complex type than concrete types, so it is a higher-kinded type!
 
-Note how this is fundamentally different from the kind of `Either`. `Either` is not a higher-kinded type since it only operates on concrete types: `Either String` must have kind `* -> *`, so `* -> * -> *` is equivalent to `* -> (* -> *)` because the language also supports partial application in the type domain and the signatures are curried.
+Note how this is fundamentally different from the kind of `Either`. `Either` is not a higher-kinded type since it only operates on concrete types: `Either String` must have kind `* -> *`, so `* -> * -> *` is equivalent to `* -> (* -> *)` - the language also supports partial application in the type domain and the kind signatures are curried.
 
 ### Higher-kinded polymorphism
 
