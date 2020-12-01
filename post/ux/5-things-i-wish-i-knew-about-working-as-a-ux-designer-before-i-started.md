@@ -26,7 +26,7 @@ authors:
 
 # 1. Understanding business and politics is just as important as understanding users
 
-It might sound a bit strange, but when working as a UX designer, everything doesn’t revolve around the needs of the users. We know. Mind-blowing, right? The needs of the client are often equally as important – whether they need to make money, have a social mission, or need to implement changes due to new laws and regulations. This means that as designers we might have to think “how can we, with these business needs, make a good user experience?”.
+It might sound a bit strange, but when working as a UX designer, everything doesn’t revolve around the needs of the users. We know. Mind-blowing, right? The needs of the client are often equally as important – whether they need to make money, have a social mission, or need to implement changes due to new laws and regulations. This means that we, as designers, might have to think “how can we, with these business needs, design for good user experiences?”.
 
 When we started working as designers, we noticed how our colleagues were talking about politics. We eventually understood this to mean the power dynamics between various stakeholders in the organization in which you work. Finding out what responsibilities these stakeholders have, how their success is measured, and what engages them is an important part of understanding the needs of the client. Understanding the stakeholders will help you gain a position in which you can execute your design. Because even if you were to know everything about UX-design, without the position to execute your design, making change can be difficult.
 
