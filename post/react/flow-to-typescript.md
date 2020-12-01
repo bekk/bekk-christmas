@@ -85,8 +85,6 @@ At the start of day tree, with only TypeScript errors left, it
 
 Oi her var det stopp! Dette gjennstår
 
-* Fart
-* Motivasjon, ts-status
 * Rulle av folk
 * Hvordan gikk det, oppsummering
 * Tiden det tok
