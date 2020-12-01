@@ -69,6 +69,14 @@ All our infrastructure is written as a mix of Powershell and ARM(Azure Resource 
         },
 ```
 
+### After deploying
+What I was most interested in after deploying was the following
+- Is there any performance degrade while scaling to meet increase in load?
+- Would consumers notice anything in terms of response times or performance?
+- How much would this actually cost us? Can we save money?
+To answer my first question I did some manual analysis by watching known operations and how long they take after the change compared to before. I found it to be of totally equal performance if not actually better.
+My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware and give immediate feedback if their analytic tasks, reports etc. behaved any differently in terms of performance. I heard nothing :D
+Then to the most important part of my experiment. How much does it cost? To find this out I had to manually monitor my "vCore second" usage. The first day I could calculate a prediction 
  
 
 
