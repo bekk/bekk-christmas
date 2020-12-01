@@ -69,23 +69,23 @@ Because the file extension had changed it was important that git marked the file
 
 The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no code changes. The outputted code should be close to identical to pre TypeScript. By converting all source files to TypeScript we take on a lot of risk, and the last thing we needed was additional risk in the form of changes to the application.
 
-There was a lot of work to be done, almost 5000 TypeScript errors, and over 800 ESLint. Moral is important with a task this enormous, therefor I wanted an early win. 
+There was a lot of work to be done, roughly 5000 TypeScript errors, 800 ESLint errors and 250 . 
 
-The first order of business was getting rid of all ESLint errors. We could have all started in 
+Moral is important with a task this enormous, therefor I wanted an early win.
+
+To my surprise, we reached 0 ESLint errors in under one day. 
+
+With ESLint errors gone we where free to 
+
+When using TypeScript with Babel type checking and transpiling is two separate tasks. Babel strips away the TypeScript semantics regardless of whether or not it passes type checking. This ment we could split into tree teams; getting all getting the application to build,  and passing the typecheck
 
 
 
-
-
-Each developer claimed their package, and work on getting the number of errors close to zero. The idea was t was a     to work on, as way to isolate changes and prevent p
+could have one team focusing on getting a
 
 
 
-unintentionally fixing the same tings.
-
-To my surprise, we reach 0 eslint ESLint errors in under one day. 
-
-Winter is comming TheStarting the all get that number down to 0
+Your app will build 
 
 Oi her var det stopp! Dette gjennstår
 
