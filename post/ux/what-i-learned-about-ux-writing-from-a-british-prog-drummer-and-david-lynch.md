@@ -8,6 +8,8 @@ ingress: "*There are so many brilliantly written articles about UX Writing out
   there so I decided to take a look at it from a more personal point of view.*"
 description: |
   The subtle art of listening and finding rewarding embellishments.
+authors:
+  - Erik Mathisen
 ---
 > “I mean it like it is, like it sounds.”
 
