@@ -54,9 +54,9 @@ Deno, on the other hand, has taken a very different approach. Dependencies must 
 import { serve } from "https://deno.land/std@0.79.0/http/server.ts";
 ```
 
-(Speaking of dependencies – Deno does not support `require()`, as we all know from Node. Rather, it uses the superior syntax of ES Modules! That means you can `import` and `export` dependencies just like you would in a browser app.)
+Speaking of dependencies – Deno does not support `require()`, as we all know from Node. Rather, it uses the superior syntax of ES Modules! That means you can `import` and `export` dependencies just like you would in a browser app.
 
-The design decision of importing full URLs has a bunch of consequences. First, there is no need for a centralized package repository. There is no NPM equivalent in Deno, there are only URLs. In addition, since the version is also included in this URL, there is no `package.json` file for listing dependencies.
+Anyway, this design decision of importing full URLs has a bunch of consequences. First, there is no need for a centralized package repository. There is no NPM equivalent for Deno, there are only URLs. In addition, since the version is also included in this URL, there is no `package.json` file for listing dependencies.
 
 I must admit, this didn't sound very compelling to me. Imports getting more verbose, and no common registry to search for dependencies? But here's the thing. As explained in their documentation, Deno doesn't try to be a full replacement to Node. And they do admit Node and NPM is likely to exist for a while. Rather, Deno tries to be an alternative JavaScript framework, a toolkit better designed for certain tasks.
 
