@@ -57,7 +57,7 @@ You can create a “fake door” by implementing a button or a tiny bit of funct
 
 <h2 style="text-align: center">👨‍💻</h2>
 
-## 3. The many benefits of including developers in your design process
+## 3. The many benefits of including developers in your design process*
 
 At school, we often worked in groups of designers. This is a fun and educational form of learning. What we found through our recent months of working is that including developers can also yield several benefits that you should be aware of.
 
@@ -82,6 +82,10 @@ A short and concise tip from us and many other designers in Bekk is to write lis
 <p>&nbsp;</p>
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+<p>&nbsp;</p>
+
+* Including business developers in your design process is also very beneficial, but is a topic for another time.
 
 <p>&nbsp;</p>
 
