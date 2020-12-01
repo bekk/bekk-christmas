@@ -7,13 +7,13 @@ image: https://unsplash.com/photos/TVSRWmnW8Us/download?force=true&w=1920
 ingress: We thought we were ready. We finished our degrees, had done quite a few
   design projects, and read books about UX. Little did we know that there are
   many aspects of being a UX designer that our degrees did not prepare us for.
-  As we now approach our five-month mark working at Bekk, we have reflected on
+  As we now approach our four-month mark working at Bekk, we have reflected on
   five aspects of working as UX designers we wish we had known about before
   starting. Maybe they can help you as an aspiring designer?
 description: We thought we were ready. We finished our degrees, had done quite a
   few design projects, and read books about UX. Little did we know that there
   are many aspects of being a UX designer that our degrees did not prepare us
-  for. As we now approach our five-month mark working at Bekk, we have reflected
+  for. As we now approach our four-month mark working at Bekk, we have reflected
   on five aspects of working as UX designers we wish we had known about before
   starting. Maybe they can help you as an aspiring designer?
 authors:
@@ -60,4 +60,4 @@ A short and concise tip from us and many other designers in Bekk is to write lis
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-These are five different topics that we have learned a lot about during our first five months as UX-designers. Had we known this before, starting our careers might have been a tad easier. But what’s life without a challenge, eh?
+These are five different topics that we have learned a lot about during our first four months as UX-designers. Had we known this before, starting our careers might have been a tad easier. But what’s life without a challenge, eh?
