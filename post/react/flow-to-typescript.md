@@ -2,7 +2,10 @@
 calendar: react
 post_year: 2020
 post_day: 2
-title: "War stories: The why and how we moved from Flow to TypeScript"
+title: "War stories: The move from Flow to TypeScript"
+links:
+  - url: https://skovhus.github.io/blog/flow-to-typescript-migration/
+    title: Migrating from Flow to TypeScript using flow-to-ts
 authors:
   - Kent Andersen
 ---
@@ -26,11 +29,11 @@ Flow had done a pretty good job, but it was time to move on.
 
 What is the current state of out application? What do we need to do get it ready?
 
-In the clients repository there is tree clients, web - app - widget. Code is grouped by domain and module, with platform specific implementations residing next to each other. Up until that point we used custom file extensions to separate web and native implementations. The native bundler would look for files with extensions .native.js and .js and web bundler would look for .web.js and .js. A component folder could contain both a index.web.js and a index.native.js and when importing said component you would refer only refer to the base folder and let the bundler pick the correct implementation. This worked great and ensured correct files where bundle for the platform. However, static code analyses, ESlint and Flow, would get lost when importing and often pick the wrong implementation. Resulting import being resolved to the wrong platform and a lot of false negatives and false positives.
+In the clients repository there is tree clients, web - app - widget. Code is grouped by domain and module, with platform specific implementations residing next to each other. Up until that point we used custom file extensions to separate web and native implementations. The native bundler would look for files with extensions .native.js and .js and web bundler would look for .web.js and .js. A component folder could contain both a index.web.js and a index.native.js and when importing said component you would refer only refer to the base folder and let the bundler pick the correct implementation. This worked great and ensured correct files where bundle for the platform. However, static code analyses, ESLint and Flow, would get lost when importing and often pick the wrong implementation. Resulting import being resolved to the wrong platform and a lot of false negatives and false positives.
 
 It is easy to regarded this as a limitation in the utilities, but actually it is symptoms of how much a anti pattern the platform extensions is. It became apparent that it had to go. All index.native.js and index.web.js was renamed to native.js and web.js. As a result imports was extended with /native /web. The result was rather nice. Instead of hiding the complexity of a dual implementation, it was highlighted.   
 
-With improved ability for static analyses, it was time put it to use, find unused code. The easiest code to convert is the code that does not exist. ESlint can detect if a variable or method is unused within the file, which is great. However once you add a export in front of it your on your own. Finding unused code across the whole repository has usually been a combination of gut feeling and find in all files. The goal was to detect all unused exports and remove it. Luckily this is not a new problem there are several packages available. The implementation in js-unused-exports was relatively easy to understand, so I forked the hell out of it. Sure sex is great, but have you ever pruned 812 unused exports. 
+With improved ability for static analyses, it was time put it to use, find unused code. The easiest code to convert is the code that does not exist. ESLint can detect if a variable or method is unused within the file, which is great. However once you add a export in front of it your on your own. Finding unused code across the whole repository has usually been a combination of gut feeling and find in all files. The goal was to detect all unused exports and remove it. Luckily this is not a new problem there are several packages available. The implementation in js-unused-exports was relatively easy to understand, so I forked the hell out of it. Sure sex is great, but have you ever pruned 812 unused exports. 
 
 ## Choosing a strategy
 
@@ -48,25 +51,41 @@ This is a fundamental problem with the hybrid approach, and grows the longer you
 
 ## Lets do what we came here to do 
 
-We have groomed, added support structures, and made planes, but the goal 100% TypeScript is still there in the distance. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, not so secret, master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
+We have groomed, added support structures, and made plans, but the goal of 100% TypeScript is still there in the distance. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, secret (not really), master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
 
-In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn academy provides a great utility, flow-to-ts, that automatically translates Flow to TypeScript, and renames the file to .ts or .tsx. Of our 1300 source files only 10 needed any manual work. 
+In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn Academy saved me an unbelievable amount of work with their  flow-to-ts utility. It translates Flow to TypeScript keeping almost all of the type information, and renames the file to .ts or .tsx (depending on jsx usage). Translating the 1300 pluss source files took under two minutes with only 10 needed any manual touch. 
 
-Because of the changed file extension git has to detect that the file has been moved, not removed, to preserve the history. As long as the file is roughly equal this is not a problem. Even though flow-to-ts has built in support for prettier, it did not work with our eslint - prettier combo. Resulting in a different code formatting, 20 000 eslint errors, and git giving up and regarding all files as removed + added. Luckily eslint —fix fixes all formatting issues, letting git do its thing. A small number of files had so many changes that just git gave up. It sucks to loose history
+Once all files had been converted I could start work on getting support frameworks up and running, mainly ESLint. ESLint is built around a plugin architecture. It comes bundled with a standard javascript-parser and the built in rule set, everything else is a plugin. 
+
+
+
+
+
+
+
+To not get overrun with errors I recommend starting the ESLint on a subfolder with only few files and work outwards from there. The first time I ran ESLint I on the whole codebase I got 20 000 errors
+
+
+
+Because of the changed file extension git has to detect that the file has been moved, not removed, to preserve the history. As long as the file is roughly equal this is not a problem. Even though flow-to-ts has built in support for prettier, it did not work with our ESLint - prettier combo. Resulting in a different code formatting, 20 000 ESLint errors, and git giving up and regarding all files as removed + added. Luckily `eslint --fix` fixes all formatting issues, letting git do its thing. 
+
+
+
+
 
 Oi her var det stopp! Dette gjennstår
 
 * Alle på lint
 * Tre team
-* Test og verifiseringsscript
 
+  * Test og verifiseringsscript
   * Bygging / bundeling
   * Type-feil
-  * Oppdeling
+* Oppdeling
 * Fart
 * Motivasjon, ts-status
 * Rulle av folk
 * Hvordan gikk det, oppsummering
 * Tiden det tok
 * Oppnådd (kortsiktig) gevinst
-*  @ts-ignore
+* @ts-ignore
