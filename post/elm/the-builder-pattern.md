@@ -16,7 +16,7 @@ If we were to write separate functions for each of these variants of view elemen
 
 There are multiple strategies to deal with this challenge in Elm, and Brian Hicks examines many of them his excellent talk [_Robot Buttons from Mars_](https://youtu.be/PDyWP-0H4Zo), which is where I first learned about the builder pattern in Elm. To see the alternatives to the builder pattern, and their limitations, I would encourage you to watch that talk.
 
-## A Text Field
+## A Simple Text Field
 
 We will examine this technique by creating a element for text input fields. We will start out just having required arguments, and build out the capabilities from there. We want our text field to take 3 required arguments: `value` (the text the user has types), `onChange` (the message to be sent when the user types), and a `label` text, to help with accessibility. In our example we will start with the following, simplefied HTML, where the our arguments will be in the braces:
 
