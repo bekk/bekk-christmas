@@ -10,6 +10,9 @@ ingress: >+
   og utforskning av revolusjonerende forretningsideer har en investeringskostnad
   igjennom arbeidet for å realisere planene. Og genvinstrealiseringen i ulike
   strategiske miljøer har ulik hastighet.
+
+authors:
+  - Stian Krosby
 ---
 Den kreative tankegangen som må til for å utvikle prosjekter innen de 4 mest nærliggende strategimiljøene beskrevet i «Your strategy needs a strategy»* sier oss litt om hvor mye arbeid som går med til utvikling og hvor fort det går å hente ut gevinster.
 
@@ -61,4 +64,5 @@ Men denne tankegangen bærer frukter. Grundig og strukturert kognitiv utforsknin
 
 ![](/assets/screenshot-2020-11-30-at-10.06.45-pm.png)
 
-\*Skrevet av Janmejaya Sinha, Knut Haanaes, and Martin Reeves
+Kilde:
+Your strategy needs a strategy, av Janmejaya Sinha, Knut Haanaes og Martin Reeves
