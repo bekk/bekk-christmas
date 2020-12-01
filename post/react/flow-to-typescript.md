@@ -3,7 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 2
 title: "War stories: The move from Flow to TypeScript"
-image: https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
+image: https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2262&q=80
 links:
   - url: https://skovhus.github.io/blog/flow-to-typescript-migration/
     title: Migrating from Flow to TypeScript using flow-to-ts
