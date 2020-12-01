@@ -19,7 +19,7 @@ Clearly, ransomware is a growing problem with an increase in both attacks and in
 
 But how to the criminals make their attacks so successful, either forcing a victim to pay or having to accept the loss of their data? The main principle of ransomware is that attackers will encrypt all the files rendering them unreadable, and only by buying the key to decrypt the files will they be accessible again. The first step to achieve this, is to obtain access to a computer or network in order to install the ransomware. 
 
-### How does ransomware get installed on my computer?
+## How does ransomware get installed on my computer?
 
 Ransomware is a type of malware, which is a malicious piece of software that installs itself without permission on someone’s computer or even an organization’s whole system. The most common ways the attackers get access to your computer are:
 
@@ -27,7 +27,7 @@ Ransomware is a type of malware, which is a malicious piece of software that ins
 2.	Drive by downloads – visiting compromised websites that then installs the malware on your computer.
 3.	Security vulnerabilities – if systems are not up to date and are known to have weaknesses, then attackers will exploit these to install their malware. 
 
-### How does ransomware encrypt my files? 
+## How does ransomware encrypt my files? 
 
 Once the ransomware is installed, it encrypts all the data on your computer. Unfortunately, the encryption methods used now are so complex that it is unfeasible to decrypt the files without the decryption key, which is known only to the attackers. To achieve a secure encryption of your data, the attackers use a combination of symmetric and asymmetric encryption. 
 
@@ -51,11 +51,11 @@ One of the most common ways a ransomware takes over your computer, is through th
 
 This makes the whole process fast and yet very secure, and almost impossible to decrypt without paying the ransom. 
 
-### Victims of ransomware
+## Victims of ransomware
 
 Originally, ransomware was used to target individuals, with a low enough ransom so most people would choose to pay. While individuals are still affected, organizations are targeted on a more regular basis, and can offer a more lucrative pay-off if successful. In fact, [one study](https://news.sophos.com/en-us/2020/05/12/the-state-of-ransomware-2020/) showed that over half of the companies had been subjected to a ransomware attack in the past year, and that 73% of these attacks were successful. A recent trend also shows an increase in attacks targeting [government institutions and hospitals](https://edition.cnn.com/2020/10/28/politics/hospitals-targeted-ransomware-attacks/index.html).  
 
-### Costs and solutions
+## Costs and solutions
 
 An estimate shows that total ransom demands will reach a staggering [20 billion USD by 2021](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-20-billion-usd-by-2021/). 
 
