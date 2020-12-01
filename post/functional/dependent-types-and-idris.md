@@ -205,7 +205,7 @@ The `Nil`-case is simple, it has no input and returns a list that is dependent o
 `(::)` accepts an element, then another `Vect` `xs` that already has `len` elements, and the constructor finally returns `Vect (S len) elem`, meaning a list that has _one_ more element than the input `xs`.
 This means the compiler can follow the size of vectors as they are constructed:
 
-````idris
+```idris
 one : Vect Z String
 one = [ "One string" ]
 
