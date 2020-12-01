@@ -53,7 +53,7 @@ const OtherCalendars = ({ calendarName }) => {
                     </ListItem>
                 ))}
             </Calendar>
-            <Heading>Visit the blogs of christmas past</Heading>
+            <Heading>Visit the blogs of Christmas past</Heading>
             <Calendar>
                 {filteredCalendarsFromThePast.map((calendar) => (
                     <ListItem key={calendar}>
