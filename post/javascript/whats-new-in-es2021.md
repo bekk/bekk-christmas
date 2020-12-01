@@ -66,7 +66,7 @@ Large numbers may be challenging to read with a first glance, especially when th
 
  ```javascript
 const oneMillion = 1000000;
-const oneMillion = 1_000_000;
+const oneMillionWithSeparators = 1_000_000;
 const oneMillionAndALittleMore = 1_000_000.123_456;
  ```
 
