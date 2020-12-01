@@ -133,7 +133,7 @@ const Frontpage = ({ data, pageContext }) => {
                         </ChristmasTreeMobile>
                     </HeaderContainer>
                     <Description>
-                        288 articles, 24 days.
+                        264 articles, 24 days.
                         <br />
                         Made with{' '}
                         <span role="img" aria-label="christmas spirit">
