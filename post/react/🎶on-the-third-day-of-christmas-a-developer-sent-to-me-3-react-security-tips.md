@@ -24,13 +24,11 @@ One of the most common security issues found in web applications is XSS vulnerab
 
 The most successful way to prevent this attack is to never let untrusted data be a part of your application. This is however not feasible in most cases. Web applications today is often based on user input like comments and status or fields for entering information needed to give the users the services they are requesting. 
 
-Another way to protect against XXS attacks is to be conscious of where the untrusted, meaning external, data are used in your application. Whether the data are placed inside two HTML-tags, in an attribute or an event handler of an HTML-tag or in other JavaScript-functions. All untrusted data should be encoded based on where this data are used in your code to ensure that the application only interprets this as data and never as actual application code. If malicious scripts are entered in your application you can make sure the scripts are rendered, but never executed. 
+Another way to protect against XSS attacks is to be conscious of where the untrusted, meaning external, data are used in your application. Whether the data are placed inside two HTML-tags, in an attribute or an event handler of an HTML-tag or in other JavaScript-functions. All untrusted data should be encoded based on where this data are used in your code to ensure that the application only interprets this as data and never as actual application code. If malicious scripts are entered in your application you can make sure the scripts are rendered, but never executed. 
 
 ## Built-in defences
 
-React is one of the modern frameworks that has built-in defences against XSS vulnerabilities. When a component is created, React is aware of the potential of malicious code injection. By default, React will escape all data embedded in JSX. Escaping basically means to remove or replace characters that can be interpreted as code.
-
-Thus, insuring that nothing can be executed unless explicitly written code in your application.
+React is one of the modern frameworks that has built-in defences against XSS vulnerabilities. When a component is created, React is aware of the potential of malicious code injection. By default, React will escape all data embedded in JSX. Escaping basically means to remove or replace characters that can be interpreted as code. Thus, insuring that nothing can be executed unless explicitly written code in your application.
 
 One example of an inserted script: 
 
@@ -44,33 +42,49 @@ will with escaping output like this: 
 &lt;script&gt;alert('Merry Christmas from your attacker🎅')&lt;/script&gt;
 ```
 
-With Reacts escaping it is safe to place untrusted data in JSX like this:` return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
+Because of this escaping it is safe to place untrusted data in JSX like this:` return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
 
-The same also applies with the use of Reacts API and `React.createElement("p", {}, cristmasCarolFromUntrustedSource)`. React will escape all children, meaning the third argument in the `createElement` function.
+The same also applies with the use of Reacts API and `React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. React will escape the props and children, meaning all the arguments in the `createElement` function.
 
 React is great when it comes to security and handle a lot of vulnerabilities for us. But React can’t be responsible for it all. By using something secure incorrectly can be insecure fast. So which pitfalls should we be mindful of and what should we look for in our code?
 
+So far React seems quite safe in regards to XSS vulnerabilities, which it is. But what happens when you find yourself outside the scope of React auto-escaping?
+
 ## DangerouslySetInnerHtml
 
-According to Reacts own documentation dangerouslySetInnerHtml is Reacts replacement for innerHtml. This can be used if we must set HTML from an external source or programmatically.   
+According to Reacts own documentation `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`. One use case for this function is if a response from an external source is formatted with HTML and you want to render it as originally intended. 
 
-```
-This is how it is used
+```jsx
+export default () => {
+    const [inputText, setIputText] = useState('');
+
+    return (
+        <>
+          <textarea
+            onChange={ (e) => setIputText(e.target.value) }
+            value={ inputText }
+            placeholder="Write a christmas card in HTML to your loved ones!🎅"
+          />
+          <div
+            dangerouslySetInnerHTML={ {"__html": inputText } }
+          />
+       </>
+    )
+}
 ```
 
-DangerouslySetInnerHtml is something that should be used with caution. The name of the function is not there by accident and is a name to scare developers away from using it.  Directly placing code from either an external source like an API with formatted HTML in the response or letting a user build their own web page or whatever the case may be is a serious risk to take. Although the function does not run`<script>` tags out of the box, there are other ways of triggering the scripts. Some html-elements' eventhandlers can be used. Especially onerror event. One example is using 
+As shown in the Built-in defences section, escaping converts characters like `<` and `>` into `&lt;` and `&gt;` and making the rendering of this as string instead of code to be interpreted. As the point of `dangerouslySetInnerHtml` is to render the HTML given, React cannot escape the input as usual, leaving your component vulnerable for attacks.
 
-```
-Example here
+Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`-tags by default, there are other ways of triggering a script to run. One example is using an event handler on the` img`- or `svg`-tag like this:
+
+```jsx
+<img onerror=alert("Bad 🎅 was here!") src="error">
 ```
 
-Another reason why using dangerouslySetInnerHtml is risky is the fact that since we set the value on a prop value  `__html: value` it can indicate sanitized or escaped data. Which it is not as this is ignored by Reacts auto-escaping mechanisms.  
+Because of the vulnerabilities attached to this function React has given it an ominous name and making sure developers see the documentation by enforcing the input to be given in a prop called `__html`. However, enforcing the input in a prop might make developers believe that this value is being escaped, like props normally are when passed through functions in the React API such as createElement.
 
-In most cases you should avoid using this function and gain the same result with using the react framework. In cases where you find no other options be sure to sanitize the input. The most popular sanitizer is DOMPurify which can be added using NPM.
+In most cases, you should avoid using this function and gain the same result by using the react framework. In cases where you find no other options be sure to sanitize the input. Unlike escaping, a sanitizer does not convert or replace characters. What it does instead is look for the unsafe parts in HTML and remove them, leaving our example above like this: ` <img src="error">`
 
-```
-Example on how to use it:
-```
 
 ## Handling Urls
 
