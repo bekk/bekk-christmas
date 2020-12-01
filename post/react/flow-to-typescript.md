@@ -11,7 +11,11 @@ authors:
 ---
 Some background…
 
-We are 8 full time developers contributing to the code base. Bla bla bla
+We are 8 full time developers contributing to the code base. 
+
+The app is broken up into packages 24 packages
+
+Bla bla bla
 
 ## The why
 
@@ -51,23 +55,35 @@ This is a fundamental problem with the hybrid approach, and grows the longer you
 
 ## Lets do what we came here to do 
 
-We have groomed, added support structures, and made plans, but the goal of 100% TypeScript is still not within reach. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, secret (not really), master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
+We have groomed, added support structures, and made plans, but the goal of 100% TypeScript is still not within reach. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same things. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, secret (not really), master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
 
 In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn Academy saved me an unbelievable amount of work with their  flow-to-ts utility. It translates Flow to TypeScript keeping almost all of the type information, and renames the file to .ts or .tsx (depending on jsx usage). Translating the 1300 pluss source files took under two minutes with only 10 needed any manual touch. 
 
-Once all files had been converted I could start work on getting support frameworks up and running, mainly ESLint. ESLint is built around a plugin architecture. It comes bundled with a standard javascript-parser and the built in rule set, everything else is a plugin. Robert Cooper has written a great [in depth on configuring ESLint](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project). In our setup it was essentially changing parser from `babel-eslint` to `@typescript-eslint/parser`, replacing the   `flowtype/recommended` with `@typescript-eslint/recommended` and `@typescript-eslint/eslint-recommended`  extensions. To not get overrun with errors I recommend starting the ESLint on a subfolder with only few files and work your way from there.
+Once all files had been converted I could start work on getting support frameworks up and running, mainly ESLint. ESLint is built around a plugin architecture. It comes bundled with a standard javascript-parser and the built in rule set, everything else is a plugin. Robert Cooper has written a great [in depth on configuring ESLint with TypeScript](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project). In our setup it was essentially changing parser from `babel-eslint` to `@typescript-eslint/parser`, replacing the   `flowtype/recommended` with `@typescript-eslint/recommended` and `@typescript-eslint/eslint-recommended`  extensions. To not get overrun with errors I recommend starting the ESLint on a subfolder with only few files and work your way from there.
 
 With ESLint up and running, it was time to fix formatting issues. `flow-to-ts` has built in support for Prettier, but it did not work with our ESLint - Prettier combo, and defaulted to standard code formatting. The result was  a lot of formatting errors. The solution was as easy as running `eslint --fix` which cleaned all formatting issues, and made files look somewhat similar as before the translation. 
 
 Because the file extension had changed it was important that git marked the file as being moved, not removed + added, to preserve the history. Since Flow and TypeScript syntax is roughly equal, and ESLint ensured correct formatting, 99% of files preserved history. 
 
-## Winter is coming
+## The big freeze
 
-The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no change in logic. The output from 
+The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no code changes. The outputted code should be close to identical to pre TypeScript. By converting all source files to TypeScript we take on a lot of risk, and the last thing we needed was additional risk in the form of changes to the application.
+
+There was a lot of work to be done, almost 5000 TypeScript errors, and over 800 ESLint. Moral is important with a task this enormous, therefor I wanted an early win. 
+
+The first order of business was getting rid of all ESLint errors. We could have all started in 
 
 
 
 
+
+Each developer claimed their package, and work on getting the number of errors close to zero. The idea was t was a     to work on, as way to isolate changes and prevent p
+
+
+
+unintentionally fixing the same tings.
+
+To my surprise, we reach 0 eslint ESLint errors in under one day. 
 
 Winter is comming TheStarting the all get that number down to 0
 
