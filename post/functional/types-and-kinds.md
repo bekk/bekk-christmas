@@ -11,7 +11,7 @@ authors:
 ---
 ## Type systems
 
-Type systems are cool. Or - some are cool, others can be a bit of a hassle, but what they strive to accomplish is for the compiler to be able to check that your intentions (type annotations) match your implementation (actual code). So types are there to allow us to catch bugs even before our programs run. Pretty neat! The more advanced the type system, the more logic can be declared in types and the more bugs you can catch with the help of your trusty compiler beforehand. 
+Type systems are cool. Or - some are cool, others can be a bit of a hassle, but they all strive to let your compiler check that your intentions (type annotations) match your implementation (actual code). So types are there to allow us to catch bugs even before our programs run. Pretty neat! The more advanced the type system, the more logic can be declared in types and the more bugs you can catch with the help of your trusty compiler beforehand. 
 
 Now, type systems were not created equal, and there are limits to which guarantees your types can provide. Haskell is an example of a language with a very sophisticated type system, more or less derived from the mathematical field of category theory, which is closely related to formal logic. Unsurprisingly this allows for a bunch of fancy type magic that lets the compiler check a lot of complex logic on your programs.
 
@@ -62,4 +62,4 @@ class Functor f where
 
 From the signature of `fmap` we see that it is polymorphic in another type `a`, but is itself polymorphic! This is a tricky concept to implement in a compiler because it requires an actual abstraction over generics rather than simply casting its usage compile-time and checking the resulting concrete types.
 
-However it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively [(Yallop & White*, Lightweight higher-kinded polymorphism*, 2014)](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf). If you have half an hour to spare, I recommend [this talk on how the concept is implemented in *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>)*,* the functional companion to Kotlin.
+However it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively [(Yallop & White*, Lightweight higher-kinded polymorphism*, 2014)](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf). If you have half an hour to spare, I recommend [this talk on how the concept is implemented in *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>), the functional companion to Kotlin.
