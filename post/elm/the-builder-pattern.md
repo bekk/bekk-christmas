@@ -16,7 +16,7 @@ There are multiple strategies to deal with this challenge in Elm, and Brian Hick
 
 ## A Simple Text Field
 
-We will examine this technique by creating a element for text input fields. We will start out with only required arguments, and build out the capabilities from there. We want our text field to take 3 required arguments: `value` (the text the user has typed), `onChange` (the message to be sent when the user types), and a `label` text, to help with accessibility. In our example we will start with the following, simplified HTML, where the our arguments will be in the braces:
+We will examine this technique by creating a element for text input fields. We will start out with only required arguments, and build out the capabilities from there. We want our text field to take 3 required arguments: `value` (the text the user has typed), `onChange` (the message to be sent when the user types), and a `label` text, to help with accessibility. In our example we will start with the following, simplified HTML, where our required arguments are shown in braces:
 
 ```elm
 label []
