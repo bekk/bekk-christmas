@@ -42,7 +42,7 @@ In the traditional design process that we were taught, a designer figures out ho
 
 ### Observe and measure real behavior with Hotjar
 
-Hotjar is a tool that can be integrated into your product to learn more about users' behavior. Among other things, you can create heatmaps of where users click, scroll or move their cursor to learn which functionality is used the most, find out what piece of information is the most popular, and so on. This can help you design better experiences for users by prioritizing which information to show in a particular place. Hotjar can also record how users navigate your product, making you able to see how real users interact with the product.
+Hotjar is a tool that can be integrated into your product to learn more about users' behavior. Among other things, you can create heatmaps of where users click, scroll or move their cursor to learn which functionality is used the most, find out what piece of information is the most popular, and so on. This can help you design for better user experiences by prioritizing which information to show in a particular place. Hotjar also records how users navigate your product, making you able to see how real users interact with the product.
 
 ### Ask questions about changes you’ve made
 
