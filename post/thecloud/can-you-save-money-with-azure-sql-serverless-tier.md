@@ -15,15 +15,17 @@ ingress: >-
   One of our important production databases uses a lot of computing power while performing various tasks once every morning, and then smaller sporadical load the rest of the day and night. A good fit for the Serverless tier? Could we achieve the same performance at reduced cost? Read on and I will let you in on what I figured out!
 links:
   - url: https://docs.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview
-    title: Serverless compute tier
+    title: "Microsoft: Azure SQL Serverless compute tier"
 authors:
   - Christian Young
 ---
-First let's talk about the Standard tier. It has a simple method of deciding how much power you need by saying how many [DTU](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu) (Data Transfer Units) you want in eight different intervals from S0(10 DTU) to S12(3000 DTU). Our database, which actually works as both an analytical platform as well as having operational dependencies to different systems, is on the S9 (1600 DTU) tier. This means the database has a list price of around 20 000 NOK/month. This is needed to be able to cope with its many tasks as well as have headroom for reporting, systems running queries and other stuff.
+First let's talk about the Standard tier. It has a simple method of deciding how much power you need by saying how many [DTU](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu) (Data Transfer Units) you want in eight different intervals from S0(10 DTU) to S12(3000 DTU). Our database is on the S9 (1600 DTU) tier. This means the database has a list price of around 20 000 NOK/month. This is needed to be able to cope with its many tasks serving as an analytical platform as well as have headroom for analytical reporting, operational dependencies, systems running queries and other stuff. The following picture show how the Standard tier along side its close relatives Basic and Premium can be configured in the Azure portal.
 
 ![S9 tier](https://user-images.githubusercontent.com/920028/100767431-0d206700-33fa-11eb-8c18-9a861cd5b099.PNG)
 
-Moving on to the Serverless tier which is found under the much more configurable vCore based tier categories. The General Purpose category looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive. The main price driver here is the amount of vCores you want. But how do you know the equivalent vCores to your DTU found in the Standard tier? A quick Google search yielded that `100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 to see how it performed.
+But there is another whole category of tiers that offers much more flexibility, and that is the vCore tiers. They are structured around vCores (virtual cores) as the unit of compute power instead of DTU. Think of vCores as cores in a CPU. Here is where we find the Serverless compute tier inside the category tier General Purpose. The General Purpose tier looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive. 
+
+The main price driver here is the amount of vCores you want. But how do you know the equivalent vCores to your DTU found in the Standard tier? A quick Google search told me that ~`100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 that had around equal price as we pay now to see how it performed. Previously we have been using the one before S9 - S6 with 800DTU, but we experienced load problems and had to bump it up, so 12 might be okay.
 
 ![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
 
@@ -62,9 +64,9 @@ All our infrastructure is written as a mix of Powershell and ARM(Azure Resource 
                 "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
                 "zoneRedundant": false,
                 "readScale": "Disabled",
-                "autoPauseDelay": -1, // -1 means Autopause feature disabled
+                "autoPauseDelay": -1,
                 "storageAccountType": "GRS",
-                "minCapacity": 1.5 // min VCores
+                "minCapacity": 1.5
             }
         },
 ```
