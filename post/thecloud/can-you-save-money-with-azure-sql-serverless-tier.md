@@ -13,6 +13,9 @@ ingress: >-
 
 
   One of our important production databases uses a lot of computing power while performing various tasks once every morning, and then smaller sporadical load the rest of the day and night. A good fit for the Serverless tier? Could we achieve the same performance at reduced cost? Read on and I will let you in on what I figured out!
+links:
+  - url: https://docs.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview
+    title: Serverless compute tier
 authors:
   - Christian Young
 ---
@@ -30,6 +33,6 @@ First I tested our normal operations with 12 vCores in the _Provisioned_ tier to
 
 I configured max vCores to 12, as I knew that would be performant enough for our most heavy operations, and let the minimum stay on 1.5. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that if we are running at maximum cores the price would be `0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK`, and the minimum would be ` 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK`. I sure hoped this wasn't running on max most of the time!
 
-
+One of my concerns was regarding a feature called Autopause. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. Therefore I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
 
  
