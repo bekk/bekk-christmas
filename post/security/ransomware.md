@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2020
 post_day: 11
-title: Ransomware
+title: "Ransomware - a Devastating Form of Digital Extortion "
 image: https://cdn.pixabay.com/photo/2020/11/09/14/24/security-5726869_1280.jpg
 ingress: "We live in a digital area where the most precious commodity no longer
   is oil or gold, but data. But what if this data, including personal files,
