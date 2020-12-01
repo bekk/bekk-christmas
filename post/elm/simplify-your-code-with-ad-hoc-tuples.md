@@ -32,6 +32,7 @@ case size of
         case color of
             Just colorName ->
                 "A modest " ++ colorName
+
             Nothing ->
                 "Don't worry! We will find a color for you"
 
@@ -39,6 +40,7 @@ case size of
         case color of
             Just colorName ->
                 "A big great " ++ colorName
+
             Nothing ->
                 "Don't worry! We will find a color for you" -- Oh no, duplication!
 ```
@@ -63,10 +65,13 @@ Or consider if this `if .. else` expression for the email adress of a fictional 
 email = 
     if (userDepartment == Technology && reportTitle == "Incident") then
         "brent@phoenix.com"
+
     else if userDepartment == Operations then
         "office@phoenix.com"
+
     else if (userDepartment == Sales && reportTitle == "Big sales lead") then
         "yuppie@phoenix.com"
+
     else
         "mail@phoenix.com"
 ```
@@ -78,10 +83,13 @@ email =
     case (userDepartment, reportTitle) of
         (Technology, "Critical incident") ->
             "brent@phoenix.com"
+
         (Operations, _) ->
             "office@phoenix.com"
+
         (Sales, "Big sales lead") ->
             "yuppie@phoenix.com"
+
         _ ->
             "mail@phoenix.com"
 ```
