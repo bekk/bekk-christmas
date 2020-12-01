@@ -62,7 +62,7 @@ console.log(names)
 
 Even though this solution does the trick, wouldn’t it be better if JavaScript could abstract some of this logic away for us? It seems bothersome to have to create a new array manually each time we want to access properties from an existing array.
 
-## Introducing the Map-method
+## Introducing map()
 
 As mentioned earlier, a number of higher-order functions is available to the Array-prototype, and *[Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)* might do wonders for us in this example. *`map()`* is a non-destructive transformation method which takes an existing array as input and produces an output array, based on a callback function which controls how the new array should be transformed. The callback function is called on each item in the existing array and the return value of this function is added to a newly created array. The map-method returns the transformed array while leaving the original array unchanged!
 
