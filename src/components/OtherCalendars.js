@@ -6,13 +6,9 @@ import Calendar from './Calendar';
 import { mapCalendarToName } from '../utils';
 
 const calendars = [
-    'css',
     'functional',
-    'java',
     'javascript',
     'kotlin',
-    'ml',
-    'opensource',
     'innovation',
     'react',
     'security',
@@ -22,6 +18,8 @@ const calendars = [
     'elm',
     'strategy',
 ];
+
+const calendarsFromThePast = ['css', 'java', 'ml', 'opensource'];
 
 const Container = styled.div``;
 
@@ -37,6 +35,9 @@ const ListItem = styled.li`
 
 const OtherCalendars = ({ calendarName }) => {
     const filteredCalendars = calendars.filter((calendar) => calendar !== calendarName);
+    const filteredCalendarsFromThePast = calendarsFromThePast.filter(
+        (calendar) => calendar !== calendarName
+    );
 
     return (
         <Container>
@@ -45,6 +46,16 @@ const OtherCalendars = ({ calendarName }) => {
             </Heading>
             <Calendar>
                 {filteredCalendars.map((calendar) => (
+                    <ListItem key={calendar}>
+                        <Link href={`https://${calendar}.christmas`}>
+                            {mapCalendarToName(calendar) + ' Christmas'}
+                        </Link>
+                    </ListItem>
+                ))}
+            </Calendar>
+            <Heading>Visit the blogs of Christmas past</Heading>
+            <Calendar>
+                {filteredCalendarsFromThePast.map((calendar) => (
                     <ListItem key={calendar}>
                         <Link href={`https://${calendar}.christmas`}>
                             {mapCalendarToName(calendar) + ' Christmas'}
