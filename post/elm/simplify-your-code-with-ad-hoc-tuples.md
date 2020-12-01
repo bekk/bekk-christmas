@@ -57,7 +57,7 @@ case ( size, color ) of
         "Don't worry! We will find a color for you"
 ```
 
-Or consider if this if-else-expression for the email adress of a fictional company:
+Or consider if this `if .. else` expression for the email adress of a fictional company:
 
 ```elm
 email = 
