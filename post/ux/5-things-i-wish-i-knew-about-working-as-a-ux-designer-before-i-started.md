@@ -30,7 +30,7 @@ It might sound a bit strange, but when working as a UX designer, everything does
 
 When we started working as designers, we noticed how our colleagues were talking about politics. We eventually understood this referred to the power dynamics between various stakeholders in the organization in which you work. Figuring out what responsibilities these stakeholders have, how their success is measured, and what engages them is an important part of understanding the needs of the client. Understanding the stakeholders will help you gain a position in which you can execute your design. If you’re not in the position to execute your design, making an impact can be difficult – regardless of knowledge or skill. 
 
-“But how do I prepare for this?”, you may ask. Our best tip is simply to be aware of it when you start working. Look out for the different stakeholders, their needs, decision-making powers, what defines their success, and what engages them. Then, as with many things in life, you learn as you go!
+“But how do I prepare for this?”, you may ask. Our best tip is simply to be aware of this insight when you start working. Look out for the different stakeholders, their needs, decision-making powers, what defines their success, and what engages them. Then, as with many things in life, you learn as you go!
 
 <p>&nbsp;</p>
 
