@@ -3,6 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 11
 title: "[Draft] Back to basics"
+image: https://images.unsplash.com/photo-1531346878377-a5be20888e57?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80
 description: "Bekk Christms Webpack Babel React "
 links:
   - title: Webpack
