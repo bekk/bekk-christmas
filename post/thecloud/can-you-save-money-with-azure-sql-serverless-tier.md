@@ -18,3 +18,10 @@ authors:
 ---
 First let's talk about the Standard tier. It has a simple method of deciding how much power you need by saying how many [DTU](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu) (Data Transfer Units) you want in eight different intervals from S0(10 DTU) to S12(3000 DTU). Our database, which actually works as both an analytical platform as well as having operational dependencies to different systems, is on the S9 tier. This means the database has a list price of around 20 000 NOK/month. This is needed to be able to cope with its many tasks as well as have headroom for reporting, systems running queries and other stuff.
 
+![S9 tier](https://user-images.githubusercontent.com/920028/100767431-0d206700-33fa-11eb-8c18-9a861cd5b099.PNG)
+
+Moving on to the Serverless tier which is found under the much more configurable vCore based tier categories. The General Purpose category looked okay for our usage knowing that Hyperscale or Business Critical would be more expensive. The main price driver here is the amount of vCores you want. I went by the extremely complex strategy of just dragging the slider up until I hit the current amount of money we use and that number was 12.
+
+![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
+
+I actually tested the Provisioned tier as well, and I found it to 
