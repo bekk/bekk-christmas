@@ -42,6 +42,8 @@ It is easy to regarded this as a limitation in the utilities, but actually it is
 
 Another issue with any codebase of a given size is unused code. ESLint can detect if a variable or method is unused within the file, which is great, however once you add a export in front of it your on your own. Finding unused code across the whole repository has been a combination of gut feeling and find in all files. The goal was to detect all unused exports as part of the testing process. Luckily this is not a new problem. There are several packages available. The code in [js-unused-exports](https://github.com/devbridge/js-unused-exports) was relatively easy to understand, so I [forked the hell out of it](https://github.com/kentandersen/js-unused-exports). Sure sex is great, but have you ever removed 812 unused exports.
 
+![](/assets/86808150-image.png)
+
 ## Choosing a strategy
 
 With the code base pruned and in shipshape, there was time to choose migration path. As with all migration there are really only two approaches; Big bang where nothing works until everything works, or hybrid where both systems exists side by side. It's really a question of where do you want to place the additional complexity and how long do you want to spend in the transition phase.
