@@ -70,7 +70,7 @@ toHtml (Input options) =
 So to use our new view element, we do the following (where `NameChanged` is a message that takes a `String` as an argument):
 
 ```elm
-view =
+view model =
     Input.input { label = "Name", onChange = NameChanged } "Aksel"
         |> Input.toHtml
 ```
