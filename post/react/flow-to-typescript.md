@@ -5,7 +5,7 @@ post_day: 2
 title: "War stories: The move from Flow to TypeScript"
 image: https://images.unsplash.com/photo-1466186897344-60bee3a35593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
 ingress: 8 developers, 1240 files, 102 665 lines of code. This is the story of
-  how we translated our entire code base from Flow to TypeScript and lived to
+  how we translated our entire codebase from Flow to TypeScript and lived to
   tell the tale.
 links:
   - title: flow-to-ts playground
@@ -41,7 +41,7 @@ Another issue with any codebase of a given size is unused code. ESLint can detec
 
 ## Choosing a strategy
 
-With the code base pruned and in shipshape, there was time to choose a migration path. As with all migration there are really only two approaches; Big bang where nothing works until everything works, or hybrid where both systems exists side by side. It's really a question of where do you want to place the additional complexity and how long do you want to spend in the transition phase.
+With the codebase pruned and in shipshape, there was time to choose a migration path. As with all migration there are really only two approaches; Big bang where nothing works until everything works, or hybrid where both systems exists side by side. It's really a question of where do you want to place the additional complexity and how long do you want to spend in the transition phase.
 
 In a big bang approach there is only one type system, which gives you low complexity in build, but high complexity in the application. The transition phase is short, but intense, as all code needs to be rewritten before anything can be released. 
 
