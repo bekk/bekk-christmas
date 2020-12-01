@@ -42,7 +42,8 @@ type Input msg
         }
 ```
 
-And to create an `Input` we will create a single constructor:
+And to create an `Input` we will create a constructor which will be exposed by our module:
+
 ```elm
 input : { label : String, onChange : String -> msg } -> String -> Input msg
 input inputOptions valueString =
