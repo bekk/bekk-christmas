@@ -67,3 +67,11 @@ toHtml (Input options) =
             ]
         ]
 ```
+
+So to use our new view element, you do the following:
+
+```elm
+view =
+    Input.input { label = "Name", onChange = NameChanged } "Aksel"
+        |> Input.toHtml
+```
