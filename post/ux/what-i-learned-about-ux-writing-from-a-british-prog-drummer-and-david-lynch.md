@@ -42,8 +42,6 @@ To me clarity is not the equivalent of writing short and efficient sentences. It
 
 But clarity is also this
 
-
-
 ![Airbnb safely disarming thousands of anxious customers with one single line of text.](https://miro.medium.com/max/1660/1*_pOIZ5e4OVW8mpSHrj55qA.png "Airbnb safely disarming thousands of anxious customers with one single line of text.")
 
 The real challenge is to fuse the two worlds into one. For that to happen you’ll need to sit down, relax, focus, open your mind and just…
@@ -61,8 +59,6 @@ Jobs did this and was not afraid to change his mind should it benefit his creati
 # Enough about Jobs, tell us about the drummer
 
 [In an interview with Drumeo,](https://youtu.be/woI6t8dCQcQ?t=594) drummer Gavin Harrison, known for his musicality and passion for rhythmic design, shared his tips and methods for coming up with tasteful drum parts, improving your creativity, and your general mindset when playing the drums. While talking about his references from his younger days, he begins talking about drummers who play with time.
-
-
 
 ![Gavin Harrison exploring rhytmic designs in his natural habitat.](https://miro.medium.com/max/1500/1*IX7QE5zUqs3uLgxlMfOH8A.jpeg "Gavin Harrison exploring rhytmic designs in his natural habitat.")
 
@@ -85,15 +81,9 @@ And just be part of those.
 
 **👇🏻**
 
-
-
 ![On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.](https://miro.medium.com/max/1264/1*aGPOYv-iPlDk2McMTjsHGg.png "On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.")
 
-
-
 ![Image for post](https://miro.medium.com/max/1260/1*rKSCV2HRFOV_kw-3kFifbQ.png)
-
-
 
 # The delicate sound of raging customers
 
@@ -117,25 +107,19 @@ Our understanding of the world is layered in mental concepts. Everything can be 
 
 Whenever I write, my goal is always to find the simplest version of the truth intended. By truth, I mean the pieces of information I relay to people who desire an outcome of some sort, typically in an app or landing page. Sometimes I need to let function dictate what I write; other times, it feels like a good time to sparkle with some creativity.
 
-
-
 ![Image for post](https://miro.medium.com/max/2238/1*r7e4HbF2CWByVxNXGxryTg.png "A good example of creative microcopy. It could not have been created without insight from the parents, the kids and the restaurants point of view. Origin unknown. Let me know if you know and I’ll include it.")
-
-
 
 Bill Bernbach, a legendary copywriter responsible for the famous Think Small ads for Volkswagen, once said that *creativity is the intangible thing that makes the difference.* It’s just something that feels right. Right? But at the same time, creativity is an extra layer for people to decode and make sense of. What I’m saying is being creative for creativity’s sake is not enough. It has to add meaning or value.
 
-
-
 ![Image for post](https://miro.medium.com/max/1240/1*FR-AXV2uHBXBRiJb8S2M0w.jpeg)
-
-
 
 ![Image for post](https://miro.medium.com/max/1198/1*dH1cHTB6s__0msGlLFjBUQ.jpeg)
 
-Bill Bernbach also said that* **advertising is fundamentally persuasion, and persuasion happens to be not a science but an art.*** This is also something I hold to be true. Although much progress has been made in science since this quote was published, I believe it is just as accurate today. What’s new is that originality is being copied much faster. And mediocrity shines like never before, radiating in front of the good stuff.
+Bill Bernbach also said that **"advertising is fundamentally persuasion, and persuasion happens to be not a science but an art".** This is also something I hold to be true. Although much progress has been made in science since this quote was published, I believe it is just as accurate today. What’s new is that originality is being copied much faster. And mediocrity shines like never before, radiating in front of the good stuff.
 
-> So, don’t feel bad about procrastinating when you need to write. Humans put the whole thing of for a couple of hundred thousand years. By a conservative estimate, we’ve had writing for 4 % of the time we’ve been humans. Chatting is easy, writing is an arduous chore.
+
+
+> *So, don’t feel bad about procrastinating when you need to write. Humans put the whole thing of for a couple of hundred thousand years. By a conservative estimate, we’ve had writing for 4 % of the time we’ve been humans. Chatting is easy, writing is an arduous chore.*
 >
 > — Erika Hall, Conversational Design
 
@@ -146,8 +130,6 @@ This post is by no means an answer to anything. That is for you to decide. Whate
 One thing I do know from watching David Lynch’s work, is that I come to the same conclusion, time and time again, and that is that closure is never what we really want. For better or worse, life is just more interesting when everything is ever-changing.
 
 So, stay curious. Embrace clarity. Worship creativity.
-
-
 
 *Through the darkness of future’s past,*
 
