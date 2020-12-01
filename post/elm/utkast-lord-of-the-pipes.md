@@ -30,7 +30,7 @@ nFirstSum n =
     |> List.sum
 ```
 
-The improvement might not be apparent, but now, the steps are shown in order. Let's assume we instead wanted the sum of the squares of the first n numbers: `( 1<sup>2</sup> + 2^2 + 3^2 + .. n^2 = ? ).`
+The improvement might not be apparent, but now, the steps are shown in order. Let's assume we instead wanted the sum of the squares of the first n numbers: `( 1^^2 + 2^2 + 3^2 + .. n^2 = ? ).`
 
 ```elm
 square: Int -> Int
@@ -52,7 +52,7 @@ nFirstSum n =
 
 While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.*
 
-The type signatures of the functions you intend to use speak to if and how they lend themselves to forming part of a pipeline. Most list functions
+
 
 
 
