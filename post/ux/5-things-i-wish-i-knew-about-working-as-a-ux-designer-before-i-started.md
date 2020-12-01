@@ -47,7 +47,7 @@ Hotjar is a tool that can be integrated into your product to learn more about us
 
 ### Ask questions about changes you’ve made
 
-Getting feedback on ideas and gathering insights is essential when designing. That’s probably why conducting interviews or surveys are popular ways to find out if you’re on the right track. We encourage you to continue questioning users also after the initial design is released. By doing this you can receive feedback on how users reacted to the change and how it affected their task. This might lead to a beneficial adjustment to your design.
+Getting feedback on ideas and gathering insights is essential when designing. That’s probably why conducting interviews or surveys are popular ways to find out if you’re on the right track. We encourage you to continue questioning users also after the initial design is released. By doing this you can receive feedback on how users reacted to the change and how it affected their task. This can lead you to continuously making adjustments to your design.
 
 ### Consider creating fake doors
 
