@@ -22,7 +22,7 @@ You can get far by just using React together with Webpack and Babel, and that is
 Lets start off by just adding an empty HTML file that imports Lodash:\
 `index.html` 
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,9 +36,9 @@ Lets start off by just adding an empty HTML file that imports Lodash:\
 </html>
 ```
 
-Let's now add some text to the site using Javascript. Consider the following file index.js
+Let's now add some text to the site using Javascript. Consider the following file `index.js`
 
-```
+```javascript
 // src/index.js
 function component() {
   const element = document.createElement("div");
@@ -52,7 +52,7 @@ function component() {
 document.body.appendChild(component());
 ```
 
-```
+```html
 ...
 <body>
     <script src="./src/index.js"></script>
@@ -82,7 +82,7 @@ We will recreate the code sample above but this time using modules and webpack.
 2. Install webpack along with a html plugin, `npm install webpack html-webpack-plugin --save-dev`
 3. For webpack to know what to do, we need to specify a configuration file `webpack.config.js`:
 
-```
+```javascript
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
@@ -104,7 +104,7 @@ In the configuration file above, we tell webpack to look for the `index.js` file
 
 Now that webpack is in place, we can rewrite our `index.js` file to use the installed version of Lodash that we got through npm.
 
-```
+```javascript
 import _ from "lodash"; // Use lodash installed from npm
 
 function component() {
@@ -143,7 +143,7 @@ Now go ahead and run:
 
 Then add the presets to your `.babelrc`  configuration file:
 
-```
+```javascript
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
@@ -151,7 +151,7 @@ Then add the presets to your `.babelrc`  configuration file:
 
 Lastly, we need to update our webpack config file and tell webpack to use babel during its bundling process.
 
-```
+```javascript
 module: {
     ...
     rules: [
@@ -175,7 +175,7 @@ We have almost everything we need! The last missing piece is obviously incorpora
 Go ahead and install React: `npm install react react-dom`\
 And then rewrite the old pesky JavaScript code in `src/index.js` using React:
 
-```
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 
