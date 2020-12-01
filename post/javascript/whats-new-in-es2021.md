@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 7
 title: Whats new in ES2021?
+image: https://unsplash.com/photos/vZz_kRDWHIc
 ingress: The new version of ECMAScript, ES2021 is expected to be released in
   June 2021. What new features can we expect from the new release? This article
   covers some of the features in the upcoming release, and how we can put them
@@ -58,7 +59,7 @@ a ?? (a = b)
 a ?? = b
 ```
 
-Curious about Operators? Stay tuned, there might be an article about the topic during this JavaScript Christmas calendar :angel:.
+Curious about Operators? Stay tuned, there might be an article about the topic further into this JavaScript Christmas calendar :angel:.
 
 ## Numeric Separators
 Large numbers may be challenging to read with a first glance, especially when there are repeating digits. The Numeric Separator is a useful tool that separates digits with an underscore (```_```) in numeric literals, thus making numeric literals more readable. The separator can be used in different positions, with as many separators as you want, in groups of any size.
