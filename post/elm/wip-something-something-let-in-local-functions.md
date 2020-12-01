@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 5
 title: Letting functions in
-image: https://images.unsplash.com/photo-1605329540489-afc28d074eb8?w=1226&h=400&fit=max&crop=edges
+image: https://images.unsplash.com/photo-1605329540489-afc28d074eb8?w=1839&h=600&fit=max&crop=edges
 links:
   - url: https://elm-lang.org/docs/syntax#let-expressions
     title: Let expressions and local functions
