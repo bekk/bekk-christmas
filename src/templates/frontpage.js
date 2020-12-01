@@ -178,7 +178,7 @@ const Frontpage = ({ data, pageContext }) => {
                                     calendar.calendar,
                                     calendar.post_year,
                                     calendar.post_day,
-                                    isDecember
+                                    !isDecember
                                 )
                             }
                             imageUrl={getWindowImagePlaceholder(
