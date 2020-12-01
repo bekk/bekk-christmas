@@ -22,13 +22,13 @@ Besides us being able to write our animations in JS with a very slick new API, w
 Really, a Worklet is a JS function we define in our code that we can run on the UI thread. Defining a Worklet is as easy as using the "worklet" directive, like so:
 
 ```
-function myFunction() {
+function myWorklet() {
     "worklet"
     // do cool stuff
 }
 ```
 
-Let's pretend for a second that we really want to clamp an animation. And we decide that this is a perfect use-case for a worklet. We would make that work like this:
+Let's pretend for a second that we want to clamp an animation. And we decide that this is a perfect use-case for a worklet. We could make a rather naïve version that work like this:
 
 ```
 function clamp(min: number, max: number, val: number) {
@@ -42,12 +42,10 @@ function clamp(min: number, max: number, val: number) {
 And to use this in our animation:
 
 ```
-const minValue = useSharedValue(0)
-const maxValue = useSharedValue(10)
-const clampedAnimationValue = clamp(val, minValue.value, maxValue.value)
+const clampedAnimationValue = clamp(val, 0, 10)
 ```
 
-You might not use worklets frequently while writing Reanimated 2 as quite a lot can be achieved within the hooks provided by the library, but there's definitely use-cases for when to use them.
+You might not use worklets frequently while writing Reanimated 2 as quite a lot can be achieved within the hooks provided by the library, this is even [stated by Software Mansion themselves](https://docs.swmansion.com/react-native-reanimated/docs/worklets#using-hooks). But there are definitely use-cases for when to use them.
 
 We could take a little peek on [William Candillon's](https://twitter.com/wcandillon) amazing toolbet for Reanimated: [Redash](https://github.com/wcandillon/react-native-redash). Here we'll see a fair few examples of worklets creating to make our day a little easier:
 
@@ -57,3 +55,7 @@ export function toDeg(rad: number) {
   return (rad * 180) / Math.PI
 }
 ```
+
+Just a neat little function to convert radians, which you might be used to work with if you've been using Reanimated 1 previously.
+
+In conclusion worklets are a really neat addition to the Reanimated environment. Long gone is the verbose way of writing our animations and the learning curve to implement awesome animations has never been lower.
