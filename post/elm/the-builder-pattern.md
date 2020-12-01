@@ -67,7 +67,7 @@ toHtml (Input options) =
         ]
 ```
 
-So to use our new view element, you do the following (where `NameChanged` is a message that takes a `String` as an argument):
+So to use our new view element, we do the following (where `NameChanged` is a message that takes a `String` as an argument):
 
 ```elm
 view =
