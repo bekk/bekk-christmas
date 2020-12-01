@@ -106,3 +106,34 @@ input inputOptions valueString =
         }
 ```
 
+To use the placeholder in the HTML, we modify the `toHtml` function to take the option into account:
+
+```elm
+toHtml : Input msg -> Html msg
+toHtml (Input options) =
+    label []
+        [ options.label
+        , input
+            [ type_ "text"
+            , value options.value
+            , onChange options.onChange
+            , case option.placeholder of
+                Just placeholderString ->
+                    placeholder placeholderString
+
+                Nothing ->
+                    -- This is an attribute that doesn't change the html
+                    classList []
+            ]
+        ]
+```
+
+To actually set a placeholder on a text field, we create the following function:
+
+```elm
+withPlaceholder : String -> Input msg -> Input msg
+withPlaceholder placeholderString (Input options) =
+    Input { options | placeholder = Just placeholderString }
+```
+
+This effec
