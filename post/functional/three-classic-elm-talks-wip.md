@@ -6,7 +6,7 @@ title: "Video spotlight: Elm Classics"
 authors:
   - Harald Ringvold
 ---
-Elm is still a very young programming language in the grand scheme of programming languages, but the community has still managed to produce some classic and defining talks. For some people in the community these are well known and for others these might be a discovery.
+Elm is young language in the grand scheme of programming languages, but the community has still managed to produce some classic and defining talks. For some people in the community these are well known and for others these might be a discovery.
 
 Even though these talks are Elm talks they have lessons that can be applied to other languages as well.
 
@@ -36,4 +36,4 @@ For those interested in nerding out on these topic I would recommend checking ou
 
 ## In closing
 
-What are some need-to-watch talks for you language of choice? Are there other talks in Elm that you would highlight?
+What are some need-to-watch talks for you language of choice? Are there other talks in the Elm community that you would highlight?
