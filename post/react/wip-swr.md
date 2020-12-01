@@ -6,7 +6,7 @@ title: "[WIP] SWR"
 authors:
   - Jon Johansen
 ---
-SWR has quickly become one of my favorite tools in my toolbox. The name SWR refers to the caching strategy Stale while revalidate, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
+SWR has quickly become one of my favorite tools in my toolbox. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
 
 SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
 
@@ -36,3 +36,11 @@ One of my favorite features of the library SWR is the deduplication feature. Ded
 This will allow you to use the same SWR hook across multiple components without any thought to data-flow. Where previously the resource would have been fetched in a parent component and passed down to the child components, you can now simply ask for the resource, and the resource will be made available. 
 
 Deduplication is, of course, configurable, and you can decide how long the interval should be.
+
+## Direct mutation
+
+## Errors and retrying
+
+## Configuration
+
+## Tips and tricks
