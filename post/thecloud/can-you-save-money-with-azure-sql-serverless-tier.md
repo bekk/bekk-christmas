@@ -24,6 +24,12 @@ Moving on to the Serverless tier which is found under the much more configurable
 
 ![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
 
-First I tested our normal operations with 12 vCores in the _Provisioned_ tier to se that it was performant enough and it was. The vCore model is more expensive, so I was not after just changing to vCores although that also sometimes has its purpose which I will not dwelve into here. I was after the Serverless tier.
+First I tested our normal operations with 12 vCores in the _Provisioned_ tier to se that it was performant enough, and it was. The vCore model is more expensive, so I was not after just changing to vCores although that also sometimes has its purpose which I will not dwelve into here. I was after the Serverless tier.
+
+![serverless](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
+
+I configured max vCores to 12, as I knew that would be performant enough for our most heavy operations, and let the minimum stay on 1.5. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that if we are running at maximum cores the price would be `0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK`, and the minimum would be ` 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK`. I sure hoped this wasn't running on max most of the time!
+
+
 
  
