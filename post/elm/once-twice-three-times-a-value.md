@@ -27,7 +27,6 @@ governator = ("Arnie", 73) -- A 2-Tuple
 
 numbers : ( Int, Int, Int )
 numbers = ( 12, 24, 18 ) -- A 3-tuple
-
 ```
 
 The core module `Tuple` has helper functions for working with 2-tuples. E.g. `Tuple.first` and `Tuple.second` extract the respective values. 
@@ -91,8 +90,6 @@ first (x,_) =
 Reading these type signatures can feel daunting at first. But let's apply what we know about tuples and how `first` works. Regarding the type annotation, `(a, b)` merely states that `first` takes a tuple of two values that might not be the same type. The return type is `a`, referring to the type of the first element of the incoming tuple. The type declaration is telling us: "I take a tuple of two values and return whatever type the tuple's first value had".
 
 In line 2, we see that `first` makes use of pattern matching, albeit with a twist. `first` only needs the first value. The second value need not be named, but must be matched using the placeholder `_`.
-
-Curious readers will notice the function `Tuple.pair` which combines two values into a tuple. This might seem odd since we now know there is built-in syntax for creating Tuples. Stay tuned in the coming days and all will become clear 😉.
 
 ## Conclusion / TLDR
 
