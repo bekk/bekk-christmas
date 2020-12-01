@@ -38,7 +38,7 @@ When we started working as designers, we noticed how our colleagues were talking
 
 ## 2. You can improve a design after its release by continuously gathering insight
 
-In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys. Then he or she starts designing a prototype to hand over to the developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. In the past four months we’ve tried this way of working in three different ways:
+In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys. Then he or she starts designing a prototype to hand over to the developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. Here are three ways of working with continuous design that we've tried out:
 
 ### Observe and measure real behavior with Hotjar
 
