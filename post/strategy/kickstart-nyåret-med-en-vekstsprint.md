@@ -6,9 +6,7 @@ title: Hva kan etablerte selskaper lære av vekstselskaper?
 image: https://images.unsplash.com/photo-1457530378978-8bac673b8062?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Z3Jvd3RofGVufDB8fDB8&auto=format&fit=crop&w=800&q=60
 ingress: "Vekst er på mange måter livsnerven i ethvert selskap. I fraværet av
   vekst, vil et selskap stagnere og etterhvert forvitre. "
-links:
-  - url: https://preview.bekk.christmas/1cb2692c-badb-4562-9f48-8329f46c3b49
-    title: Eksperimentkort
+links: []
 authors:
   - Vinh Nguyen
 ---
@@ -51,7 +49,7 @@ Det kan også være en idé å reformulere problemområdene til spørsmål, såk
 
 ### 3) Utarbeid eksperimenter
 
-Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide så mange eksperimenter som mulig. Hent inspirasjon av andre som har gjort det før. Vi i [Bekk](https://blogg.bekk.no/smarte-eksperimenter-for-effektiv-produktutvikling-b8eb936db0b1) har skrevet om dette tidligere og det finnes mange [andre](https://growthhackers.com/growth-studies) ressurser tilgjengelig. Eksperimentene består blant annet av hypoteser, konkrete handlinger og suksesskriterier. Se vedlagt eksperimentkort. Kortet består av 7 deler:
+Benytt listen med prioriterte veksthindringer som inspirasjon til å utarbeide så mange eksperimenter som mulig. Hent inspirasjon av andre som har gjort det før. Vi i [Bekk](https://blogg.bekk.no/smarte-eksperimenter-for-effektiv-produktutvikling-b8eb936db0b1) har skrevet om dette tidligere og det finnes mange [andre](https://growthhackers.com/growth-studies) ressurser tilgjengelig. Eksperimentene består blant annet av hypoteser, konkrete handlinger og suksesskriterier. [Eksperimentkorte](https://www.dropbox.com/s/aaidw5gcbmxppul/Eksperimentkort.pdf?dl=0)t består av 7 deler:
 
 1. **Vi skal utforske følgende veksthindring:** Veksthindringen som teamet ønsker å løse og utforske videre.
 2. **Dette eksperiment går ut på:** En kort beskrivelse av eksperimentet teamet skal gjennomføre.
