@@ -136,4 +136,17 @@ withPlaceholder placeholderString (Input options) =
     Input { options | placeholder = Just placeholderString }
 ```
 
-This effec
+And to use the `withPlaceholder` function in our view, we simply add one line:
+
+```elm
+view =
+    Input.input { label = "Name", onChange = NameChanged } "Aksel"
+        |> Input.withPlaceholder "Type your name here..."
+        |> Input.toHtml
+```
+
+The handy thing here is that adding the placeholder capability to our text field doesn't have to result in any other code changes to places that use the text field without a placeholder! This is especially important as your app starts to grow, and you are using a view element in tens or hundreds of places in your code!
+
+## Conclusion
+
+In this article I have hopefully shown that builder pattern is a nice way to handle optional arguments in Elm. Whether using the builder pattern is right for you in your app depends on the size and complexity of your code base. But if you find yourself adding a lot of helper functions for different variations of view elements, I hope you will give it a try. I have at least enjoyed working with it a lot.
