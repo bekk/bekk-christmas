@@ -78,7 +78,7 @@ colorToString color =
             -- Elided for brevity
 ```
 
-Now the compiler doesn't complain, so all our bases are covered!
+Now the compiler doesn't complain, so all our cases are covered!
 
 A very nice result of exhaustive pattern-matching is that if we add another variant to the union type (or discriminated union, tagged union, sum type, or any of the many other names it goes by), and haven't covered the new variant, and thus all cases, the code won't compile.
 For the most part, this is awesome.
