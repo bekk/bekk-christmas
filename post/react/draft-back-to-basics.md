@@ -76,7 +76,7 @@ Webpack is a \*module bundler\* for the web, which in practice means that it tak
 
 **Why**
 
-To execute javascript code in the browser we have to include every `.js` file in a script tag in the html page, make sure they are loaded in the correct order so e.g utility functions are loaded before other parts of the code that rely on them and so on. This is tedious, error prone and hardly scales well. It is much easier to work with modules but the problem is that browser don't understand them, well not unless you use a module bundler.
+To execute javascript code in the browser we have to include every `.js` file in a script tag in the html page, make sure they are loaded in the correct order so e.g utility functions are loaded before other parts of the code that rely on them and so on. This is tedious, error prone and hardly scales well. It is much easier to work with modules but the problem is that browser don't understand them, well not unless you translate it for them.
 
 We will recreate the code sample above but this time using modules and webpack.
 
