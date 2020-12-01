@@ -29,7 +29,7 @@ label []
     ]
 ```
 
-We will keep all the functionality related to text inputs in one file, which we will call `Input.elm`, and we will structure our code around an opaque type called `Input`, which will hold all of our options for the text field. `Input` has the following type signature:
+We will keep all the functionality related to text inputs in one file, which we will call `Input.elm`. And we will structure our code around an opaque type called `Input`, which will hold all of our options for the text field. `Input` has the following type signature:
 
 ```elm
 type Input msg
