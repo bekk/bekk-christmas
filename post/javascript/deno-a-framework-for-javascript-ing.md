@@ -12,7 +12,7 @@ ingress: >-
   development.
 
 
-  The new project is called *Deno.* And this year, Deno finally left the alpha stage, offering a stable CLI and solid documentation. Which means it's a perfect time to have a closer look!
+  The new project is called *Deno.* And this year, Deno finally left the alpha stage, offering a stable CLI and solid documentation. Which means it's the perfect time to have a closer look!
 description: This year, Deno finally left the alpha stage, offering a stable CLI
   and solid documentation. Which means it's a perfect time to have a closer
   look!
