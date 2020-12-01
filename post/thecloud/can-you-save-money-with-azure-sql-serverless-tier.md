@@ -62,9 +62,9 @@ All our infrastructure is written as a mix of Powershell and ARM(Azure Resource 
                 "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
                 "zoneRedundant": false,
                 "readScale": "Disabled",
-                "autoPauseDelay": -1,
+                "autoPauseDelay": -1, // -1 means Autopause feature disabled
                 "storageAccountType": "GRS",
-                "minCapacity": 1.5
+                "minCapacity": 1.5 // min VCores
             }
         },
 ```
