@@ -63,7 +63,7 @@ Or consider if this `if .. else` expression for the email adress of a fictional 
 email = 
     if (userDepartment == Technology && reportTitle == "Incident") then
         "brent@phoenix.com"
-    else if (userDepartment == Operations) then
+    else if userDepartment == Operations then
         "office@phoenix.com"
     else if (userDepartment == Sales && reportTitle == "Big sales lead") then
         "yuppie@phoenix.com"
