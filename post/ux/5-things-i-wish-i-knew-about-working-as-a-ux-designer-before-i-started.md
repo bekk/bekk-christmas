@@ -85,8 +85,8 @@ A short and concise tip from us and many other designers in Bekk is to write lis
 
 <p>&nbsp;</p>
 
-* Including business developers in your design process is also very beneficial, but is a topic for another time.
+These are five different topics that we have learned a lot about during our first four months as UX-designers. Had we known this before, starting our careers might have been a tad easier. But what’s life without a challenge, eh?
 
 <p>&nbsp;</p>
 
-These are five different topics that we have learned a lot about during our first four months as UX-designers. Had we known this before, starting our careers might have been a tad easier. But what’s life without a challenge, eh?
+\* We also believe that including business developers in your design process is highly valuable, but that's a topic for another time.
