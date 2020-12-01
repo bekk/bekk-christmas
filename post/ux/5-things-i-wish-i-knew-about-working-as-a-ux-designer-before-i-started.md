@@ -36,7 +36,7 @@ When we started working as designers, we noticed how our colleagues were talking
 
 In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys, then designing a prototype to hand over to developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. In the past five months we’ve tried this out in three different ways:
 
-## See real behavior with Hotjar
+## Observe and measure real behavior with Hotjar
 
 Hotjar is a tool that can be integrated into your product to learn more about users' behavior. Among other things, you can create heatmaps of where users click, scroll or move their cursor to learn which functionality is used the most, find out what piece of information is the most popular, and so on. This can help you design better experiences for users by prioritizing which information to show in a particular place. Hotjar can also record how users navigate your product, making you able to see how real users interact with the product.
 
