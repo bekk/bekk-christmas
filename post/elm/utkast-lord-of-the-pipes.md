@@ -9,7 +9,7 @@ ingress: If the bulk of your programming experience comes from C-like languages,
   features of Elm. Fold up your heels and dig your sleeves in, it's time to
   master the art of piping.
 ---
-If C-like languages form the bulk of your programming experience, there’s a chance you find pipes, `|>`and `<|` to be some of the most distinct features of Elm. You often find them in the most important parts of the code. This is often code that transform some data. Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm.
+If C-like languages form the bulk of your programming experience, there’s a chance you find pipes, `|>`and `<|` to be some of the most distinct features of Elm. Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm. They have the role of operators in Elm and they control function application. 
 
 Below is one way of calculating the sum of the n first natural numbers `( 1 + 2 + 3 + .. n = ? )`
 
@@ -30,7 +30,7 @@ nFirstSum n =
     |> List.sum
 ```
 
-The improvement might not be apparent, but now, the steps are shown in order. Let's assume we instead wanted the sum of the squares of the first n numbers: `( 1^^2 + 2^2 + 3^2 + .. n^2 = ? ).`
+The improvement might not be apparent. Now, at least the steps are shown in order. Let's assume we instead wanted the sum of the squares of the first n numbers: `( 1² + 2² + 3² + .. n² = ? ).`
 
 ```elm
 square: Int -> Int
@@ -38,25 +38,59 @@ square x =
   x * x
 
 -- No pipes
-nFirstSum: Int -> Int
-nFirstSum n =
+nFirstSquaresSum: Int -> Int
+nFirstSquaresSum n =
   List.sum (List.map square (List.range 1 n))
     
 -- With pipes
-nFirstSum: Int -> Int
-nFirstSum n =
+nFirstSquaresSum: Int -> Int
+nFirstSquaresSum n =
   List.range 1 n
     |> List.map square
     |> List.sum 
 ```
 
-While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.*
+While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.* 
+
+The backwards pipe, `<|` can be used to express the same sequence of calls as its brother. Rewriting the example above, that would put `List.sum `first and on a line of its own. This can be confusing since in reality it is the last function called. Reformatted, this would become:
+
+```elm
+nFirstSquaresSum: Int -> Int
+nFirstSquaresSum n =   
+    List.sum <| List.map square <| List.range 1 n
+```
+
+This is closer to how one would write in a language that uses parens for function calls. Though it leads to long lines or confusion if broken up onto separate lines. My personal rules of thumb are:
+
+1 Expressing things vertically with |>
+
+2 Dont mix |> and <| in the same expression
+
+3 Use a single <| in an expression to avoid parens
+
+Of these, number 3 deserves additional examples. 
 
 
 
 
 
+```elm
+nFirstSum : SumType -> Int -> Int
+nFirstSum sumType n =
+    let
+        numbers =
+            List.range 1 n
+    in
+    List.sum <|
+        case sumType of
+            Normal ->
+                numbers
 
+            Squares ->                
+                List.map square numbers
+
+
+```
 
 \|> is one of Elm’s operators. Like + it’s an infix operator which gets its two operands from either side. + adds the left and right operand together. You might have already guessed it, + and all other operators are functions in Elm. This is the type signature for +
 
