@@ -31,8 +31,46 @@ First I tested our normal operations with 12 vCores in the _Provisioned_ tier to
 
 ![serverless](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
 
-I configured max vCores to 12, as I knew that would be performant enough for our most heavy operations, and let the minimum stay on 1.5. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that if we are running at maximum cores the price would be `0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK`, and the minimum would be ` 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK`. I sure hoped this wasn't running on max most of the time!
+I configured max vCores to 12, as I knew that would be performant enough for our most heavy operations, and let the minimum stay on 1.5. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that the cost calculations at maximum and minimum is as follows:
+```
+Maximum => 0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK
+Minimum => 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK
+```
+I sure hoped this wasn't running on max most of the time!
 
 One of my concerns was regarding a feature called Autopause. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. Therefore I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
+
+All our infrastructure is written as a mix of Powershell and ARM(Azure Resource Manager) templates, so I didn't click save when fiddling with the GUI in the Azure Portal. I changed our ARM template to reflect my changes and reprovisioned the database. The configuration looks something like this:
+
+```
+"resources": [
+        {
+            "type": "Microsoft.Sql/servers/databases",
+            "apiVersion": "2020-08-01-preview",
+            "name": "[concat(parameters('production_sql_server'), '/my-important-production-database')]",
+            "location": "westeurope",
+            "sku": {
+                "name": "GP_S_Gen5",
+                "tier": "GeneralPurpose",
+                "family": "Gen5",
+                "capacity": 12
+            },
+            "kind": "v12.0,user,vcore,serverless",
+            "properties": {
+                "collation": "SQL_Latin1_General_CP1_CI_AS",
+                "maxSizeBytes": 268435456000,
+                "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+                "zoneRedundant": false,
+                "readScale": "Disabled",
+                "autoPauseDelay": -1,
+                "storageAccountType": "GRS",
+                "minCapacity": 1.5
+            }
+        },
+```
+
+ 
+
+
 
  
