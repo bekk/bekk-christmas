@@ -74,11 +74,23 @@ What I was most interested in after deploying was the following
 - Is there any performance degrade while scaling to meet increase in load?
 - Would consumers notice anything in terms of response times or performance?
 - How much would this actually cost us? Can we save money?
+
 To answer my first question I did some manual analysis by watching known operations and how long they take after the change compared to before. I found it to be of totally equal performance if not actually better.
+
 My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware and give immediate feedback if their analytic tasks, reports etc. behaved any differently in terms of performance. I heard nothing :D
-Then to the most important part of my experiment. How much does it cost? To find this out I had to manually monitor my "vCore second" usage. The first day I could calculate a prediction 
+
+Then to the most important part of my experiment. How much does it cost? To find this out I had to manually monitor my "vCore second" usage. Not so glamourous other than staring at a graph in the Azure portal several times a day. By knowing how many vCore seconds we had used the first hour, the first day and so on, I could multiply that to calculate predictions about how our monthly cost would look if our current load pattern continued.
  
+![seconds2](https://user-images.githubusercontent.com/920028/100775234-490bfa00-3403-11eb-8186-9dc23c68f979.PNG)
 
+This picture shows vCore seconds used over a pretty average week for our database. Notice the spikes in load that reflects the major jobs I have been talking about, as well as the reduced load during the weekend. If all weeks were like this week, our database would cost `0.001294 NOK * 1550000 vCore seconds * 4 weeks = 8022 NOK/month`. This is actually not very far from the truth! We have had Serverless tier running on this database for a little over a month now and the cost has been 10895 NOK/month.
 
+_Note that all prices in this article is using the public Azure list prices._
 
- 
+Now, that we actually managed to cut the price in half is dependant on a few things. Remember that we did not go 1-1 on the DTU to vCore conversion, we managed with 12 vCores equivalent to 1200 DTU instead of 16 vCores equivalent to 1600 DTU. This was also because the previous Standard tier S6 only sport 800 DTU, which caused too much load problems for us.
+Next, the nature of our load patterns seem to be a very good fit for this kind of elastic and scalable approach. We require a lot of power when we are performing some of our important operations and not so much rest of the time.
+
+I have overheard others seeing a lot of increase in cost by going to vCore Provisioned or Serverless compute tier. If you consider moving away from the DTU model, make sure you actually need the features and the increased flexibility of the vCore tiers. DTU might be sufficient and cheaper for your case.
+
+## Conslusion 
+On this particlar database with its spikey load patterns, we actually managed to cut our cost in half without degrading performance. My experience is that Azure SQL Serverless scales fast when you need it, and backs down nicely when load decreases. Having this on-demand resource strategy is all about saving money, and for us it did, but be careful if you attempt to try this out. Pay close attention to your vCore second usage after deploying and do forecast calculations when the database has experienced normal load after a few hours or days.
