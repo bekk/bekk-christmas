@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 3
-title: Single-constructor custom types
+title: Single-constructor Custom Types
 authors:
   - Aksel Wester
 ---
@@ -16,7 +16,7 @@ type UserState
 
 In this example, a user is either not logged in, in which case we don't have any data about the user, or the user _is_ logged in, and we have some user data. We call the two "variants" of the custom type (`NotLoggedIn` and `LoggedIn`) the custom type's _constructors_. Since they are, in fact, functions that return a value of type `UserState`.
 
-## Single-constructor Custom Types
+## Single Constructor
 
 Even though custom types usually have at least two constructors, you can actually create custom types with only one constructor. This might seem pointless the first time you hear about it, but it _can_ be quite useful in certain situations. We will examine one use for these single-constructor custom types in this post, while we will look at another (probably more widely used) use for them in a post later in December.
 
@@ -76,6 +76,8 @@ bodyMassIndex weight height =
                 Height heightFloat
                     weightFloat / (heightFloat * heightFloat)
 ```
+
+## Cleaning Up
 
 At this point, you are probably thinking that this just isn't worth it. Because that is one _ugly_ function. But don't worry, Elm has a neat trick for making this function _almost_ as simple as the first version, which had only `Float`s as arguments.
 
