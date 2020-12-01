@@ -16,6 +16,7 @@ description: We thought we were ready. We finished our degrees, had done quite a
   for. As we now approach our four-month mark working at Bekk, we have reflected
   on five aspects of working as UX designers we wish we had known about before
   starting. Maybe they can help you as an aspiring designer?
+links: []
 authors:
   - Sigurd Rognhaugen
   - Citona Marie Rygg
@@ -38,7 +39,7 @@ When we started working as designers, we noticed how our colleagues were talking
 
 ## 2. You can improve a design after its release by continuously gathering insight
 
-In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys. Then he or she starts designing a prototype to hand over to the developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. Here are three ways of working with continuous design that we've tried out:
+In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys. Then he or she starts designing a prototype to hand over to the developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called [continuous design](https://hackernoon.com/continuous-design-dba3e3b9eff1). Here are three ways of working with continuous design that we've tried out:
 
 ### Observe and measure real behavior with Hotjar
 
