@@ -19,7 +19,7 @@ Den alarmerende lyden av bjelleklang varsler at nå er sesongen her på ny. Seso
 
 Det er i slike stressende stunder det er fristende å drømme seg bort til en situasjon der man bare kunne tatt opp mobilen og sendt en vipps-overføring, gjerne fulgt av noen hyggelige ord, til alle de som står på gavelista. 
 
-![Er det ikke mer praktisk å vippse alle julegavene?](https://preview.bekk.christmas/assets/vipps.png)
+![Er det ikke mer praktisk å vippse alle julegavene?](/assets/vipps.png)
 
 
 
@@ -33,7 +33,7 @@ Vel, det kommer an på. Dan Ariely, professor ved Duke University, peker på at 
 
 Arielys tankegang er lettere å skjønne om vi ser på et eksempel. Tenk deg at du er på julemiddag hos svigers. Når maten er spist opp, reiser du deg og spør svigermor hvor mye du skal betale. «Vil 250 per pers dekke måltidet?». Jeg tror ikke jeg er alene om å grøsse av tanken på stillheten som ville etterfulgt et slikt spørsmål på julaften. Hadde jeg derimot tatt med en fin blomsteroppsats eller en flaske med godt innhold som en gave til vertskapet hadde nok reaksjonen vært en ganske annen.
 
-![Når julemiddagen er fortært er det bare å dra frem lommeboka og spørre hva du skal betale for gildet!](https://preview.bekk.christmas/assets/julemiddag.png)
+![Når julemiddagen er fortært er det bare å dra frem lommeboka og spørre hva du skal betale for gildet!](/assets/julemiddag.png)
 
 
 I boken Predictably Irrational forklarer Dan Ariely at grunnen til at en slik situasjon kan oppstå, på tross av at vi i andre situasjoner foretrekker penger fremfor gaver fra en ønskeliste, er at vi her endrer en sosial relasjon til en markeds- eller transaksjonsrelasjon. Det sosiale forholdet som er preget av høflighet og gavmildhet blir plutselig endret til et markedsbasert forhold der enhver tjeneste og ytelse har en pris.
