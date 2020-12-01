@@ -74,8 +74,6 @@ The need to know the types is easier to see if you look at the `map`-functions i
 
 ## Custom typeclasses in Elm?
 
-Revisiting our `listSort` from Elm, we can see that there are other ways of solving this problem. We could for instance require that a comparison function be provided immediatly, with a signature
-
 In some ways you are able to do a similar thing to typeclasses in Elm by passing around records containing the necessary definitions for a typeclass:
 
 ```elm
