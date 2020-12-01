@@ -200,7 +200,7 @@ data Vect : (len : Nat) -> (elem : Type) -> Type where
   (::) : (x : elem) -> (xs : Vect len elem) -> Vect (S len) elem
 ```
 
-The top line describes that `Vect` is a type that first accepts the type-parameter `len` of type `Nat`, then the element's type `Type` (a [universe-type](http://docs.idris-lang.org/en/latest/faq/faq.html#does-idris-have-universe-polymorphism-what-is-the-type-of-type)), and finally returns a new type of type `Type` describing the actual vector with element's type.
+The top line describes that `Vect` is a type that first accepts the type-parameter `len` of type `Nat`, then the element's type `Type` (a [universe-type](http://docs.idris-lang.org/en/latest/faq/faq.html#does-idris-have-universe-polymorphism-what-is-the-type-of-type)), and finally returns a new type of type `Type` describing the actual vector with elements' type.
 As we see, it also has two constructors, `Nil` and `(::)`, the list append-constructor.
 The `Nil`-case is simple, it has no input and returns a list that is dependent on `Z`, or 0, meaning an empty list is returned.
 `(::)` accepts an element, then another `Vect` `xs` that already has `len` elements, and the constructor finally returns `Vect (S len) elem`, meaning a list that has _one_ more element than the input `xs`.
