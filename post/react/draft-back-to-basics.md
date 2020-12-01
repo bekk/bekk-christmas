@@ -10,6 +10,8 @@ links:
     url: https://webpack.js.org/
   - title: Babel
     url: https://babeljs.io/
+  - url: https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+    title: Modern javascript explained for dinosaurs
 authors:
   - Aryan Iranzamini
 ---
