@@ -120,7 +120,7 @@ toHtml (Input options) =
                     placeholder placeholderString
 
                 Nothing ->
-                    -- This is an attribute that doesn't change the html
+                    -- This is just an attribute that doesn't change the html
                     classList []
             ]
         ]
