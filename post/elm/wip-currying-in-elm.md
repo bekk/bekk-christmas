@@ -3,27 +3,24 @@ calendar: elm
 post_year: 2020
 post_day: 10
 title: "WIP: Partial application in Elm"
-ingress: A function that takes several arguments can often be tiresome to read,
-  and not logically satisfying to use. By utilising currying you can split up
-  such functions into small logical building blocks that makes such pieces of
-  code easier to both read and work with.
+ingress: Currying (👈 which you read about in yesterday's
+  [post](elm.christmas/2020/9)) enables partial application, which lets us split
+  up functions into small logical building blocks which are easier to both read
+  and work with.
 authors:
   - Vetle Bu Solgård
 ---
-Simply put, currying is to partially apply a function. In programming languages where you don't have currying and you don't supply all the arguments when you call it, you will get a compile error. 
-
-In elm you can start by calling the function with one of several arguments, allowing you to supply the other arguments at a later time. The function will then return a partially applied function, which you can use to build a logically better program.
+In programming languages where you don't have currying, you'll get a compiler error if you do not provide all the arguments to a function. As you've just learned yesterday, however, currying will instead return a new function if you provide a subset of its arguments. Such a function is known as a partially applied function.
 
 Let's see a simple example. 
 
-We all want hard presents for christmas, lets write a simple function to check that a present is hard using currying.
-We will use the function `String.contains` from the String Elm library. This is the type signature of contains
-
+We all want hard presents for christmas, lets write a function to check that a present is hard using currying.
+We will use the function `String.contains` from the Elm core library. This is it's type signature👇
 ```elm
 contains : String -> String -> Bool
 ```
 
-It takes 2 strings, checking to see if the first string is part of the second string, then returning a Bool of True or False. Here we can use currying to see if a present is hard or soft by making a function that receives the description of a present.
+It takes two `String`s, checking to see if the first `String´ is part of the second `String, then returning a `Bool` of `True` or `False`. Here we can make use of partial application to see if a present is hard or soft by making a function that receives the description of a present.
 
 ```elm
 isHardPresent : String -> Bool 
@@ -31,7 +28,7 @@ isHardPresent =
     String.contains "hard"
 ```
 
-We partially apply the String.contains function to write a function to check if a present is desirable or not. The second String will be supplied to the `String.contains` function where the `isHardPresent` function is used.
+We partially apply the `String.contains` function to write a function to check if a present is desirable or not. The second `String` will be supplied to the `String.contains` function where the `isHardPresent` function is used.
 
 ```elm
 isHardPresent “A sweather from grandma, soft”
@@ -56,7 +53,7 @@ filterHardPresents =
 ```
 
 We only supply the predicate argument to the `List.filter` function here, and can now use this function on all our lists of presents.
-As you can see, currying can be used in a number of useful ways! And just like that you have good present/bad present filter function ready to accompany you when christmas shopping🎅
+As you can see, partial application can be used in a number of useful ways! And just like that you have good present/bad present filter function ready to accompany you when christmas shopping🎅
 
 ```elm
 filterHardPresents [ "Soft sweather from grandma", "Hard playstation game", "Hard fun toy", "Soft pillow", "Useless soft clothes" ]
