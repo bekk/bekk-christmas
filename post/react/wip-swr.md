@@ -56,6 +56,7 @@ const changeUsername = (username) => {
   mutate()
 }
 ```
+You may notice that we prevent revalidation in the first mutation. This is because a revalidation would revalidate the data back to its initial state, as the update request might not have gone through yet.
 
 ### But what about the other places using the same data?
 Mutating the cache will cause the data in all the places using the same cache to be updated automatically! 
