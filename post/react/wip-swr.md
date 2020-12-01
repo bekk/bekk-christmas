@@ -48,12 +48,12 @@ Combining these to achieve the initial goal of a fast change while updating a re
 
 ```js
 const changeUsername = (username) => {
-	// Mutate local data
-        mutate('/api/user', { ...data, username}, false)
-	// Update resource
-        await updateUserName(username)
-	// Optional: Trigger revalidation to ensure we have correct data
-        mutate()
+  // Mutate local data
+  mutate('/api/user', { ...data, username}, false)
+  // Update resource
+  await updateUserName(username)
+  // Optional: Trigger revalidation to ensure we have correct data
+  mutate()
 }
 ```
 
