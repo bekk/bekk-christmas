@@ -62,7 +62,9 @@ I must admit, this didn't sound very compelling to me. Imports getting more verb
 
 ## Try it today
 
-I'm sold on one thing. Over the years, I've come to love JavaScript, and TypeScript even more so. To me, it's the perfect language for hobby projects, scripting, automation, app development and so on. I've had my fair share of Python for scripting as well, even Bash, but I prefer TypeScript every day. However, Node is not always a pleasure to work with. You cannot use ES Modules out of the box. To  compile TypeScript, you need a plugin. To test your code, you need an external testing framework. Deno offers all of these, plus more, in a single executable.
+I'm sold on one thing. Over the years, I've come to love JavaScript, and TypeScript even more so. To me, it's the perfect language for hobby projects, scripting, automation, app development and so on. For scripting, I've had my fair share of Python and Bash, but I still prefer TypeScript any day.
+
+Yet, Node is not always a pleasure to work with. You cannot use ES Modules out of the box. To compile TypeScript, you need a plugin. To test your code, you need an external testing framework. Deno offers all of these tools, plus more, in a single executable.
 
 Then there's the little things, like the `window` global. In Deno, you can use `alert`, `prompt` and `confirm` like you would in a browser, and it just works:
 
