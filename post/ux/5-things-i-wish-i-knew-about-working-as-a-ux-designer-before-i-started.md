@@ -87,4 +87,4 @@ A short and concise tip from us and many other designers in Bekk is to write lis
 
 These are five different topics that we have learned a lot about during our first four months as UX-designers. Had we known this before, starting our careers might have been a tad easier. But what’s life without a challenge, eh?
 
-\* We also believe that including business developers in your design process is highly valuable, but that's a topic for another time.
+_\* We also believe that including business developers in your design process is highly valuable, but that's a topic for another time._
