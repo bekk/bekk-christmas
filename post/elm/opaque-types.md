@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 17
-title: Opaque types
+title: "WIP: Opaque types"
 ingress: ""
 authors:
   - Vetle Bu Solgård
