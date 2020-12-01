@@ -12,7 +12,7 @@ links:
 authors:
   - Vinh Nguyen
 ---
-Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan ta inspirasjon fra vekstselskaper rundt bruken av eksperimenter.
+Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan lære av vekstselskaper og deres tilnærming til vekst og eksperimenter.
 
 ## Hva er Growth hacking
 
