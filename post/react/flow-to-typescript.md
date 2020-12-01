@@ -6,7 +6,7 @@ title: "War stories: The move from Flow to TypeScript"
 image: https://images.unsplash.com/photo-1466186897344-60bee3a35593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80
 ingress: 8 developers, 1240 files, 102 665 lines of code. This is the story of
   how we translated our entire code base from Flow to TypeScript and lived to
-  tell the tale
+  tell the tale.
 links:
   - title: flow-to-ts playground
     url: https://flow-to-ts.netlify.app/
@@ -21,7 +21,7 @@ Flows is ease of use with React / React Native, and gradual approach to typing m
 
 I was not in the room when the decision to adapt Flow was made. But I recon the discussion went like this. How will this affect our current speed? Do we need to change the build pipeline? What new dependencies will we need to include? The answer is of course none, no, and babel-flow-plugin. 
 
-Fast forward two years and Flow was still with us, however it was getting harder and harder to ignore the elephant in the room. Flows momentum was not what it once was. Other Facebook products has[ make the switch](https://github.com/facebook/jest/pull/7554) to TypeScript, and in the community [Facebooks commitment was being questioned](https://github.com/facebook/flow/issues/7365). During November 2020 11 authors have pushed 44 commits to Flow’s master branch and merged 0 pull-requests, compared to 23 authors and 100 commits to TypeScript’s master branch with 85 merged pull requests.
+Fast forward two years and Flow was still with us, however it was getting harder and harder to ignore the elephant in the room. Flows momentum was not what it once was. Other Facebook products had [made the switch](https://github.com/facebook/jest/pull/7554) to TypeScript, and in the community [Facebooks commitment was being questioned](https://github.com/facebook/flow/issues/7365). During November 2020 11 authors have pushed 44 commits to Flow’s master branch and merged 0 pull-requests, compared to 23 authors and 100 commits to TypeScript’s master branch with 85 merged pull requests.
 
 Editor integration and developer experience with Flow left a lot to be desired. Our team is splitt 50/50 between IntelliJ IDEA and Visual Studio Code. Both editors has extensive support for autocomplete, type checking and refactoring for TypeScript, with Flow not so much. 
 
