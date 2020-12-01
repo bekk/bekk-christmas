@@ -32,15 +32,15 @@ When we started working as designers, we noticed how our colleagues were talking
 
 In the traditional design process that we were taught, a designer figures out how the product should work, perhaps by conducting interviews and surveys, then designing a prototype to hand over to developers. One shortcoming of ending the design process after design handoff is that many insights await after a product is launched. Continuously learning and adjusting a design is called continuous design. In the past five months we’ve tried this out in three different ways:
 
-## See real behavior with Hotjar
+### See real behavior with Hotjar
 
 Hotjar is a tool that can be integrated into your product to learn more about users' behavior. Among other things, you can create heatmaps of where users click, scroll or move their cursor to learn which functionality is used the most, find out what piece of information is the most popular, and so on. This can help you design better experiences for users by prioritizing which information to show in a particular place. Hotjar can also record how users navigate your product, making you able to see how real users interact with the product.
 
-## Ask questions about changes you’ve made
+### Ask questions about changes you’ve made
 
 Getting feedback on ideas and gathering insights is essential when designing. That’s probably why conducting interviews or surveys is a popular way to find out if you’re on the right track. But you should also include questions in your interviews or surveys about changes that have already been done. This way you can get feedback on how a user reacted to the change and how it affected their task.
 
-## Create fake doors
+### Create fake doors
 
 You can create a “fake door” by implementing a button or a tiny bit of functionality to gain the users' attention. When the user clicks the button you can tell them that the functionality isn’t done yet, and proceed to ask them questions about what they would like to see or which functionality that would be relevant to them. This way you can receive feedback on functionality before it’s done.
 
