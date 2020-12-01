@@ -6,8 +6,6 @@ title: Typeclasses in Haskell (and Elm?!)
 authors:
   - Øyvind Stette Haarberg
 ---
-# Typeclasses
-
 Typeclasses are a way to allow functions to take constraints on the type of arguments, allowing for ad hoc polymorphic functions (we say ad hoc as the function for the concrete type is provided when invoked).
 They were originally introduced as a way to overload arithmetic and equality operators in Haskell, but they have many other uses as well.
 Interfaces are a similar concept in object-oriented languages.
