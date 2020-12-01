@@ -1,19 +1,16 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
-
-import * as mediaQueries from '../constants/media-queries';
-
-import Layout from '../components/Layout';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
+import Layout from '../components/Layout';
 import Search from '../components/search/Search';
-
-import { getWindowImagePlaceholder, getCalendarPostLink } from '../utils';
 import { Teaser } from '../components/Teaser';
-import ogImageSrc from '../images/teaser-1.jpg';
+import * as mediaQueries from '../constants/media-queries';
 import treeImage from '../images/frontpage-tree.png';
+import ogImageSrc from '../images/teaser-1.jpg';
+import { getCalendarPostLink, getWindowImagePlaceholder } from '../utils';
 
 const Header = styled.h1`
     font-size: 4.1rem;
@@ -144,7 +141,10 @@ const Frontpage = ({ data, pageContext }) => {
                     <Description>
                         Read about this project
                         <br />
-                        <a href="https://link.medium.com/AdCsZLiM31">on our blog</a>.
+                        <a href="https://blogg.bekk.no/wishing-you-all-a-very-bekk-christmas-8505a0a332e2">
+                            on our blog
+                        </a>
+                        .
                     </Description>
                 </div>
                 <ChristmasTreeDesktop>
