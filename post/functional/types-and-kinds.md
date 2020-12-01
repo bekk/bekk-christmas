@@ -31,7 +31,7 @@ The `a` here is a parametrically polymorphic type parameter. In languages like J
 
 ## Kinds
 
-The *kind* of a type is an abstraction over its "shape" in terms of other types. Concrete types are the simplest types, and they have kind `*`, pronounced "type".
+The *kind* of a type is an abstraction over its "shape" in terms of types. Concrete types are the simplest types, and they have kind `*`, pronounced "type".
 
 `Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type. It follows that a type like `Either a b` has kind `* -> * -> *`; you get the idea.
 
