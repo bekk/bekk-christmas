@@ -31,7 +31,7 @@ authors:
 ---
 NSM er i utgangspunktet positive til skytjenester, forutsatt at det blir gjennomført gode og riktige vurderinger i forkant. Det som nå bekymrer NSM mest er at virksomheter som er avgjørende for at samfunnet skal fungere, spesielt i krisesituasjoner, har gjort seg avhengige av tjenester som er drifta fra utlandet.
 
-Datasystemer underlagt sikkerhetsloven må kjøre i Norge. Sett bort fra disse, har offentlige virksomheter de siste årene langt på vei kunnet velge om de vil skysette sine applikasjoner. Brorparten har imidlertid intern drift eller kjøper driftstjenester av en norsk driftsleverandør. Enkelte, som NAV og Lånekassen, har vært tidlig ute og kommet et godt stykke. Det må da være disse som NSM er bekymret for.
+Datasystemer underlagt sikkerhetsloven må kjøre i Norge. Sett bort fra disse, har offentlige virksomheter de siste årene langt på vei kunnet velge om de vil skysette sine applikasjoner. Brorparten har imidlertid intern drift eller kjøper driftstjenester av en norsk driftsleverandør. Enkelte, som NAV og Lånekassen, har vært tidlig ute og kommet et godt stykke. Det må være disse som NSM er bekymret for.
 
 Det finnes ikke et enkelt svar på om en nasjonal sky er en god idé, men her er noen betraktninger.
 
@@ -43,13 +43,13 @@ TietoEVRY tilbyr skytjenester, men blir ikke nevnt sammen med Azure, AWS og GCP.
 
 ## Statens Datasentral 2.0
 
+Det er åpenbart mulig å tenke seg en moderne nasjonal PaaS-platform. [Offentlig PaaS Norge](https://offentlig-paas.no/) er et fagnettverk for offentlige etater og halv-offentlige selskaper som lager nye og moderne IT-plattformer basert på PaaS. Typisk er dette basert på Kubernetes-økosystemet. Det finnes et rikt og modent utvalg åpen-kildekode-produkter som kan gi plattformen en fin tjenestebredde.
+
+En variant som diskuteres er å konsolidere de interne driftsmiljøene i offentlige virksomheter til en felles driftsorganisasjon. Teoretisk kan dette gi mening; hvorfor sitte på hver sin tue med folk og infrastruktur? Utfordringen her er nok bagasjen av etablerte systemer, være seg stormaskiner, databaser, skreddersydde kjernesystemer og liknende. Disse vil ikke kunne gaffeltruckes over på en moderne PaaS uten vesentlig modernisering. Slike legacysystemer er det mange av der ute.
+
 Jeg har vanskelig for å se for meg at en nyetablert nasjonal driftsleverandør skal kunne levere vesentlig bedre driftstjenester sammenliknet med dagens norske driftsleverandører og intern drift. Hvis det var enkelt og mulig, hvorfor finnes det ikke allerede i dagens marked?
 
-Når det er sagt, er det åpenbart mulig å tenke seg en moderne nasjonal PaaS-platform. [Offentlig PaaS Norge](https://offentlig-paas.no/) er et fagnettverk for offentlige etater og halv-offentlige selskaper som lager nye og moderne IT-plattformer basert på PaaS. Typisk er dette basert på Kubernetes-økosystemet. Det finnes et rikt og modent utvalg av produkter basert på åpen kildekode som man kan tilby.
-
-En variant som diskuteres er å konsolidere de interne driftsmiljøene i offentlige virksomheter til en felles driftsorganisasjon. Teoretisk kan dette gi mening; hvorfor sitte på hver sin tue med folk og infrastruktur? Utfordringen her er nok bagasjen av etablerte systemer, være seg stormaskiner, databaser, skreddersydde kjernesystemer og liknende. Disse vil ikke kunne gaffeltruckes over på en moderne PaaS uten vesentlig modernisering. Disse systemene er det mange av der ute.
-
-Den største utfordringen vil nok uansett være styringen av et sånt samarbeid. Når var sist man hørte om et vellykket, mange-milliarders, toppstyrt samarbeidsprosjekt mellom mange titalls offentlige virksomheter? Hvordan og hvorfor kan dette lykkes bedre enn det man har klart hittil?
+Den største utfordringen vil nok være styringen av et sånt samarbeid. Når var sist man hørte om et vellykket, mange-milliarders, toppstyrt samarbeidsprosjekt mellom mange titalls offentlige virksomheter? Hvordan og hvorfor kan dette lykkes bedre enn det man har klart hittil?
 
 Etablering av en nasjonal sky vil nok også måtte skubbe seg på lover og regler for anskaffelse og konkurranse. 
 
@@ -57,7 +57,7 @@ Hvis Norge velger å etablere en nasjonal sky, får vi krysse fingeren for at re
 
 ## Farvel, sky?
 
-Vi som driver med moderne softwareutvikling har grått, lengtet og ønsket oss skytjenester i mange år. Mange offentlige virksomheter har ventet lenge, og dette signalet fra NSM kan nok være kjærkomment for alle som ønsker fortsatt intern drift.
+Vi som driver med moderne softwareutvikling har grått, lengtet og ønsket oss skytjenester i mange år. Mange offentlige virksomheter har utsatt skysetting lenge, og dette signalet fra NSM kan nok være kjærkomment for alle som ønsker fortsatt intern drift.
 
 Et ikke helt utenkelig scenario:
 
