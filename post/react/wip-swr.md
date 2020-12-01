@@ -37,12 +37,28 @@ A mutate function is available through the library, and it gives us a few really
 ```js
 mutate(key, data?, shouldRevalidate?)
 ```
-The `key` is the cache key, data is the changed data, and `shouldRevalidate` is whether or not to trigger revalidation of the data against the resource after mutating the data.
+The `key` is the cache key, `data` is the changed data object, and `shouldRevalidate` is whether or not to trigger revalidation of the data against the resource after mutating the data.
 
 For an even tidier usage, you can pull out the swiss army knife again, as the mutate function with a predefined key is given through the `useSWR` hook; all you've got to do is simply ask!
 ```js
 const { data, error, isValidating, mutate } = useSWR(URL, fetcher);
 ``` 
+
+Combining these to achieve the initial goal of a fast change while updating a resource, your function would look like this:
+
+```js
+const changeUsername = (username) => {
+	// Mutate local data
+        mutate('/api/user', { ...data, username}, false)
+	// Update resource
+        await updateUserName(username)
+	// Optional: Trigger revalidation to ensure we have correct data
+        mutate()
+}
+```
+
+### But what about the other places using the same data?
+Mutating the cache will cause the data in all the places using the same cache to be updated automatically! 
 
 ## Deduplication
 One of my favorite features of the library SWR is the deduplication feature. Deduplication is a long word, which essentially means SWR will prevent multiple uses of the `useSWR` hook with the same key to revalidate the same resource within a configured interval. Instead, a single request will be sent, and the result returned to each of the requestèes.
