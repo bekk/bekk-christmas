@@ -42,7 +42,7 @@ Hotjar is a tool that can be integrated into your product to learn more about us
 
 Getting feedback on ideas and gathering insights is essential when designing. That’s probably why conducting interviews or surveys is a popular way to find out if you’re on the right track. But you should also include questions in your interviews or surveys about changes that have already been done. This way you can get feedback on how a user reacted to the change and how it affected their task.
 
-## Create fake doors
+## Consider creating fake doors
 
 You can create a “fake door” by implementing a button or a tiny bit of functionality to gain the users' attention. When the user clicks the button you can tell them that the functionality isn’t done yet, and proceed to ask them questions about what they would like to see or which functionality that would be relevant to them. This way you can receive feedback on functionality before it’s done.
 
