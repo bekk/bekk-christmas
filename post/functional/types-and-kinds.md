@@ -33,7 +33,13 @@ The `a` here is a parametrically polymorphic type parameter. In languages like J
 
 The *kind* of a type is an abstraction over its "shape" in terms of types. Concrete types are the simplest types, and they have kind `*`, pronounced "type".
 
-`Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type. It follows that a type like `Either a b` has kind `* -> * -> *`; you get the idea.
+`Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type. It follows that a type like `Either` has kind `* -> * -> *`:
+
+```
+data Either a b = Left a | Right b
+```
+
+You get the idea.
 
 ### Higher-kinded types
 
