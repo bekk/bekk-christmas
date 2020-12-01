@@ -51,7 +51,7 @@ This is a fundamental problem with the hybrid approach, and grows the longer you
 
 ## Lets do what we came here to do 
 
-We have groomed, added support structures, and made plans, but the goal of 100% TypeScript is still there in the distance. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, secret (not really), master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
+We have groomed, added support structures, and made plans, but the goal of 100% TypeScript is still not within reach. We had blocked out tree weeks, full freeze, all hands on deck. I had two fears; cross cutting issues halting all work, and people unintentionally fixing the same tings. When you have the luxury of full focus, it is important to utilise the time as best as possible. A week before work was scheduled to begun I created a parallell, secret (not really), master branch to prepare the work. The plan was come Monday, all code would have been converted, and all supporting structures would be configured. 
 
 In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn Academy saved me an unbelievable amount of work with their  flow-to-ts utility. It translates Flow to TypeScript keeping almost all of the type information, and renames the file to .ts or .tsx (depending on jsx usage). Translating the 1300 pluss source files took under two minutes with only 10 needed any manual touch. 
 
@@ -61,7 +61,15 @@ With ESLint up and running, it was time to fix formatting issues. `flow-to-ts` h
 
 Because the file extension had changed it was important that git marked the file as being moved, not removed + added, to preserve the history. Since Flow and TypeScript syntax is roughly equal, and ESLint ensured correct formatting, 99% of files preserved history. 
 
+## Winter is coming
 
+The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no change in logic. The output from 
+
+
+
+
+
+Winter is comming TheStarting the all get that number down to 0
 
 Oi her var det stopp! Dette gjennstår
 
