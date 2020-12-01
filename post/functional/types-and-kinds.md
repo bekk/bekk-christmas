@@ -9,7 +9,7 @@ links: []
 authors:
   - Jørgen Granseth
 ---
-## Type systems
+## Types
 
 Type systems are cool. Or - some are cool, others can be a bit of a hassle, but they all strive to let your compiler check that your intentions (type annotations) match your implementation (actual code). So types are there to allow us to catch bugs even before our programs run. Pretty neat! The more advanced the type system, the more logic can be declared in types and the more bugs you can catch with the help of your trusty compiler beforehand. 
 
@@ -17,7 +17,7 @@ Now, type systems were not created equal, and there are limits to which guarante
 
 You may have heard buzz words like "higher-kinded types" thrown around, so today we take a closer look at *kinds*.
 
-## Concrete Types
+### Concrete Types
 
 At the base level of our programs we have values, and these values have types. `Int`, `String` and `Maybe [Bool]` are all concrete types, which means that values in your program can be these things. Everything else is abstractions over concrete types.
 
