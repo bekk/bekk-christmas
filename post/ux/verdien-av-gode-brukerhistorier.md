@@ -54,7 +54,7 @@ I vårt tilfelle bestemte vi oss for disse fasene: 
 
 Det hører også til historien at vi var ganske inspirert av typisk kundereisekartlegging, også kalt customer journey mapping, som dette:
 
-![Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps](/assets/screen-shot-2020-11-03-at-15.23.45.png)
+![Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps](/assets/screen-shot-2020-11-03-at-15.23.45.png "Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps")
 
 #### Sett historien opp som et manus
 
