@@ -57,7 +57,7 @@ data StringContainerContainer c = { value :: c String }
 
 Exactly what we were looking for - a contrived example! Let's do a quick analysis of its kind: The `StringContainerContainer` clearly takes a polymorphic type argument, so it has to be a "type" to *something*; `* -> ?!`. But that *something* cannot be a concrete type since it has to take `String` as a type parameter. `String` has kind `*`, so `c` must have kind `* -> *`, and `StringContainerContainer` therefore has kind `(* -> *) -> *`. We have found a type that operates on a more complex type than concrete types, so it is a higher-kinded type!
 
-Note how this is fundamentally different from the kind of `Either`. `Either` is not a higher-kinded type since it only operates on concrete types: `Either String` must have kind `* -> *`, so `* -> * -> *` is equivalent to `* -> (* -> *)`; the language also supports partial application in the type domain and the kind signatures are curried.
+Note how this is fundamentally different from the kind of `Either`. `Either` is not a higher-kinded type since it only operates on concrete types: `Either String` must have kind `* -> *`, so `* -> * -> *` is equivalent to `* -> (* -> *)`; Haskell also supports partial application in the type domain and the kind signatures are curried.
 
 ### Higher-kinded polymorphism
 
