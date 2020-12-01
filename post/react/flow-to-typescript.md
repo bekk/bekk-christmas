@@ -55,21 +55,11 @@ We have groomed, added support structures, and made plans, but the goal of 100% 
 
 In order to achieve this I have to spend as much time possible configuring supports and fixing cross cutting issues and as little converting Flow code. Kahn Academy saved me an unbelievable amount of work with their  flow-to-ts utility. It translates Flow to TypeScript keeping almost all of the type information, and renames the file to .ts or .tsx (depending on jsx usage). Translating the 1300 pluss source files took under two minutes with only 10 needed any manual touch. 
 
-Once all files had been converted I could start work on getting support frameworks up and running, mainly ESLint. ESLint is built around a plugin architecture. It comes bundled with a standard javascript-parser and the built in rule set, everything else is a plugin. 
+Once all files had been converted I could start work on getting support frameworks up and running, mainly ESLint. ESLint is built around a plugin architecture. It comes bundled with a standard javascript-parser and the built in rule set, everything else is a plugin. Robert Cooper has written a great [in depth on configuring ESLint](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project). In our setup it was essentially changing parser from `babel-eslint` to `@typescript-eslint/parser`, replacing the   `flowtype/recommended` with `@typescript-eslint/recommended` and `@typescript-eslint/eslint-recommended`  extensions. To not get overrun with errors I recommend starting the ESLint on a subfolder with only few files and work your way from there.
 
+With ESLint up and running, it was time to fix formatting issues. `flow-to-ts` has built in support for Prettier, but it did not work with our ESLint - Prettier combo, and defaulted to standard code formatting. The result was  a lot of formatting errors. The solution was as easy as running `eslint --fix` which cleaned all formatting issues, and made files look somewhat similar as before the translation. 
 
-
-
-
-
-
-To not get overrun with errors I recommend starting the ESLint on a subfolder with only few files and work outwards from there. The first time I ran ESLint I on the whole codebase I got 20 000 errors
-
-
-
-Because of the changed file extension git has to detect that the file has been moved, not removed, to preserve the history. As long as the file is roughly equal this is not a problem. Even though flow-to-ts has built in support for prettier, it did not work with our ESLint - prettier combo. Resulting in a different code formatting, 20 000 ESLint errors, and git giving up and regarding all files as removed + added. Luckily `eslint --fix` fixes all formatting issues, letting git do its thing. 
-
-
+Because the file extension had changed it was important that git marked the file as being moved, not removed + added, to preserve the history. Since Flow and TypeScript syntax is roughly equal, and ESLint ensured correct formatting, 99% of files preserved history. 
 
 
 
