@@ -98,4 +98,4 @@ email =
 
 Before we run off with our newly acquired hammer and see a world of nails, beware that tuples in Elm are intentionally restricted to _maximum three members_. 
 
-The reasoning is that if you combine more values than this, you are probably better off with a proper data structure like a record where the fields are named, or a list where the members have order. This is a strong restriction, but all the good kids will get the gift of clean readable code.
+The reasoning is that if you combine more values than this, you are probably better off with a proper data structure like a record where the fields are named. This is a strong restriction, but all the good kids will get the gift of clean readable code.
