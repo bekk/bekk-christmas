@@ -43,7 +43,7 @@ You get the idea.
 
 ### Higher-kinded types
 
-An `Int` or `String` value is just that - a value. In a pure functional language there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions, let's assign them a complexity score, or *order*, of 0.
+An `Int` or `String` value is just that - a value. In a pure functional language there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions, so we assign them a complexity score, or *order*, of 0.
 
 A step up from values we have what are normally considered functions; a construct that takes one or more values and returns a value. They operate on values, so their complexity is higher; they are of order 1.
 
