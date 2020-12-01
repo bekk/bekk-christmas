@@ -18,9 +18,9 @@ Let’s start this advent of with a look at the basics: what is functional progr
 
 Today I want to use the words and pictures of Russ Olsen and highlight his talk from GOTO 2018. Russ is a great communicator and I love the down to earth and practical perspective he brings in this talk. He explains functional programming in an understandable way and shows why people prefer FP. I hope you enjoy! 
 
+Link: <https://youtu.be/0if71HOyVjY>
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0if71HOyVjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-Link: <https://youtu.be/0if71HOyVjY>
 
 What is your favorite FP intro talk?
