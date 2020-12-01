@@ -14,7 +14,7 @@ ingress: >+
 authors:
   - Stian Krosby
 ---
-Den kreative tankegangen som må til for å utvikle prosjekter innen de 4 mest nærliggende strategimiljøene beskrevet i «Your strategy needs a strategy»* sier oss litt om hvor mye arbeid som går med til utvikling og hvor fort det går å hente ut gevinster.
+Den kreative tankegangen som må til for å utvikle prosjekter innen de 4 mest nærliggende strategimiljøene beskrevet i «Your strategy needs a strategy» sier oss litt om hvor mye arbeid som går med til utvikling og hvor fort det går å hente ut gevinster.
 
 ## **4 kreative tankesett**
 
@@ -42,8 +42,6 @@ Divergent tankesett benyttes mye i forskning der verdiskapningen er kjent, men l
 
 Men kjenner du til modellen for divergent tankegang, kan du kanskje komme raskere til antagelser om hvilken verdi som er attraktiv å realisere, og på den måten velge en lønnsom fremtidsvisjon å utforske.
 
-
-
 ### **Adaptivt miljø – assosiativ tankegang**
 
 De fleste som har jobbet med markedsføring er godt vant til assosiativ tankegang. Å forestille seg en liknende løsning som sine beste konkurrenter, med en liten vri kan gi en unik posisjon i markedet. Det er ikke alltid så viktig å tenke at løsningen du velger skal tilby en forbedret verdi eller reel innovasjon for kunden. Hvis kundene flokker seg rundt deg, så vinner du. I alle fall inntil videre.
@@ -65,4 +63,5 @@ Men denne tankegangen bærer frukter. Grundig og strukturert kognitiv utforsknin
 ![](/assets/screenshot-2020-11-30-at-10.06.45-pm.png)
 
 Kilde:
-Your strategy needs a strategy, av Janmejaya Sinha, Knut Haanaes og Martin Reeves
+
+«Your strategy needs a strategy» (Janmejaya Sinha, Knut Haanaes og Martin Reeves)
