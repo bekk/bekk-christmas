@@ -4,14 +4,13 @@ post_year: 2020
 post_day: 10
 title: Hvorfor kan kultur spise strategi til frokost, egentlig?
 image: https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80
-ingress: Vi har skrevet om det velkjente sitatet til Peter Drucker før; at
-  kultur spiser strategi til frokost. Vi har blant annet snakket om at dersom
-  det finnes et gap mellom selskapets strategi og kultur, vil det være vanskelig
-  å lykkes med målene vi setter oss. I dette julekalenderinnlegget tar vi et
-  steg tilbake, til der det begynner.
+ingress: "Vi har skrevet om det velkjente sitatet til Peter Drucker før; at
+  kultur spiser strategi til frokost. "
 authors:
   - Thilde Hexeberg Evensen
 ---
+Vi har blant annet snakket om at dersom det finnes et gap mellom selskapets strategi og kultur, vil det være vanskelig å lykkes med målene vi setter oss. I dette julekalenderinnlegget tar vi et steg tilbake, til der det begynner.
+
 ### Det begynner med menneskene
 
 En organisasjon virker ikke uten menneskene, og når vi snakker om mennesker blir ting med en gang komplekst.
