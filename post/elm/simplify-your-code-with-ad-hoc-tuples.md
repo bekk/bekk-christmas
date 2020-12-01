@@ -3,6 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 7
 title: Simplify your code with ad hoc tuples
+image: https://images.unsplash.com/photo-1577911997399-ec915ff52ee9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
 ingress: With Elm's strong types, we must be precise when writing our business
   code. Precision is a good thing, but it often has the drawback of being
   verbose. Ad hoc tuples can save the day with clear and precise syntax!
