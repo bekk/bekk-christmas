@@ -4,16 +4,15 @@ post_year: 2020
 post_day: 15
 title: Kreativt tankesett styres av strategivalg
 image: https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2251&q=80
-ingress: >-
+ingress: >+
   Det er viktig å forstå hvilket strategimiljø du opererer i når du staker ut
   retning for fremtidig lønnsomhet. Både effektivisering for å redusere utgifter
   og utforskning av revolusjonerende forretningsideer har en investeringskostnad
   igjennom arbeidet for å realisere planene. Og genvinstrealiseringen i ulike
   strategiske miljøer har ulik hastighet.
-
-
-  Den kreative tankegangen som må til for å utvikle prosjekter innen de 4 mest nærliggende strategimiljøene beskrevet i «Your strategy needs a strategy»* sier oss litt om hvor mye arbeid som går med til utvikling og hvor fort det går å hente ut gevinster.
 ---
+Den kreative tankegangen som må til for å utvikle prosjekter innen de 4 mest nærliggende strategimiljøene beskrevet i «Your strategy needs a strategy»* sier oss litt om hvor mye arbeid som går med til utvikling og hvor fort det går å hente ut gevinster.
+
 ## **4 kreative tankesett**
 
 Hva kreves det av tankearbeid for å finne en lønnsom mulighet i et av disse fire strategimiljøene? Her følger eksempler på hvordan du må tenke, og en lettbeint analyse av hva det vil koste å nå frem til lønnsomhet i realisering.
