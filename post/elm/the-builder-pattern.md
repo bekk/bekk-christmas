@@ -75,7 +75,7 @@ view model =
         |> Input.toHtml
 ```
 
-If that's the only way our text fields look and behave, this would have been an extremely overengineered solution. But the momunent we have different need in different text fields, this solution starts to shine.
+If that's the only way our text fields look and behave, this would have been an extremely overengineered solution. But the moment we have different needs in different text fields, this solution starts to shine.
 
 ## Expanding Capabilities
 
