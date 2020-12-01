@@ -42,7 +42,7 @@ will with escaping output like this: 
 &lt;script&gt;alert('Merry Christmas from your attacker🎅')&lt;/script&gt;
 ```
 
-Because of this escaping it is safe to place untrusted data in JSX like this:` return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
+Because of this escaping it is safe to place untrusted data in JSX like this:`return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
 
 The same also applies with the use of Reacts API and `React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. React will escape the props and children, meaning all the arguments in the `createElement` function.
 
@@ -50,9 +50,9 @@ React is great when it comes to security and handle a lot of vulnerabilities for
 
 So far React seems quite safe in regards to XSS vulnerabilities, which it is. But what happens when you find yourself outside the scope of React auto-escaping?
 
-## DangerouslySetInnerHtml
+## \#1 Data passed to dangerouslySetInnerHtml must be sanitized
 
-According to Reacts own documentation `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`. One use case for this function is if a response from an external source is formatted with HTML and you want to render it as originally intended. 
+According to Reacts own documentation `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`. One use case for this function is if a response from an external source is formatted with embedded HTML styling and you want to render it as originally intended. 
 
 ```jsx
 export default () => {
@@ -75,7 +75,7 @@ export default () => {
 
 As shown in the Built-in defences section, escaping converts characters like `<` and `>` into `&lt;` and `&gt;` and making the rendering of this as string instead of code to be interpreted. As the point of `dangerouslySetInnerHtml` is to render the HTML given, React cannot escape the input as usual, leaving your component vulnerable for attacks.
 
-Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`-tags by default, there are other ways of triggering a script to run. One example is using an event handler on the` img`- or `svg`-tag like this:
+Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`-tags by default, there are other ways of triggering a script to run. One example is using an event handler on the`img`- or `svg`-tag like this:
 
 ```jsx
 <img onerror=alert("Bad 🎅 was here!") src="error">
@@ -83,10 +83,13 @@ Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`
 
 Because of the vulnerabilities attached to this function React has given it an ominous name and making sure developers see the documentation by enforcing the input to be given in a prop called `__html`. However, enforcing the input in a prop might make developers believe that this value is being escaped, like props normally are when passed through functions in the React API such as createElement.
 
-In most cases, you should avoid using this function and gain the same result by using the react framework. In cases where you find no other options be sure to sanitize the input. Unlike escaping, a sanitizer does not convert or replace characters. What it does instead is look for the unsafe parts in HTML and remove them, leaving our example above like this: ` <img src="error">`
+In most cases, you should avoid using this function and gain the same result by using the react framework. In cases where you find no other options be sure to sanitize the input. Unlike escaping, a sanitizer does not convert or replace characters. What it does instead is look for the unsafe parts in HTML and remove them, leaving our example above like this: 
 
+```jsx
+<img src="error"> 
+```
 
-## Handling Urls
+## \#2 URLs should never be from an external source
 
 Urls is one of the nutorious pitfalls for any front-end developer. In many cases getting data from other sources or navigating to a different domain is possible in web applications. As far as navigation goes you will probably use an a-tag like this `<a href=”some link” /a>`. This is all good, but the risk enters when you have untrusted data in your link.
 
@@ -110,6 +113,8 @@ It is not just a React problem, but It is important to mention to show that Reac
 
 If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite .christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not suffice use a sanitizer or check that the URL starts with what you except. Like http or https as an example.
 
-## Keep your framework updated!
+## \#3 Keep your framework updated!
 
-In Whitehat security's annual application security report, which analyses around 17 million security scans, they found that in one year there has been a 50% increase in vulnerabilities due to unpatched libraries. We use third-party libraries more and more, but sometime it can be hard to be sure if the library has vulnerabilities or not. In fact was a finding that 1/3 of all application security risk is inherited than written itself. React is no exception. Although React focus on security and strive for keeping React secure errors can and will be done. So keep your framework updated as well as other third-party libraries you may use.
+This might seem to be an obvious one, but is still an important reminder. 
+
+In Whitehat security's annual security report, they found that in one year there has been a 50% increase in vulnerabilities due to unpatched libraries. We use third-party libraries more and more, but it can be hard to be sure if the library has security vulnerabilities or not. In fact, another finding states that as much as 1/3 of all application security vulnerabilities are inherited rather than written in the application. Although Reacts developer team strive for security, errors can and will be made. Keep your framework updated as well as other third-party libraries you may use. Another tip for keeping the framework secure and your team updated on known vulnerabilities in your libraries is to use githubs dependabot on your repository. To read more about that check out the blogpost from the 2nd of December.
