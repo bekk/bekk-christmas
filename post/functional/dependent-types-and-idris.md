@@ -152,6 +152,7 @@ Now, let's break down that code.
 `head1` is the name of the function, then comes the input and output types.
 `Vect (S n) a` is the type of the input value, a dependent list-type.
 `S n` is the successor of `n`, where a successor of a number just means the next in-line.
+`S n` and `n` is a natural number, or the type `Nat` as it is called in Idris.
 The successor of 0 is 1, so even if `n` is 0 or something greater, `S n` will always be at least 1.
 
 Let's take a look at the definition of `Nat` to see if we better understand how this all works (stolen directly from the [source](https://github.com/idris-lang/Idris-dev/blob/a59c371b5dfe1bbeebc0ecccbfd094a6ae27628f/libs/prelude/Prelude/Nat.idr#L15-L21)):
