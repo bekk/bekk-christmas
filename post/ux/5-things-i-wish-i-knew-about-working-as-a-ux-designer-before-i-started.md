@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 2
 title: 5 things we wish we knew about working as a UX designer before we started
-image: https://unsplash.com/photos/TVSRWmnW8Us/download?force=true&w=1920
+image: https://i.ibb.co/9rVyK44/bg.png
 ingress: We thought we were ready. We finished our degrees, had done quite a few
   design projects, and read books about UX. Little did we know that there are
   many aspects of being a UX designer that our degrees did not prepare us for.
