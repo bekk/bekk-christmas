@@ -83,6 +83,10 @@ At the start of day tree, with only TypeScript errors left, it
 
  everyone was focus on getting that number to 0. 
 
+![](/assets/screenshot-2020-12-01-at-20.18.50.png)
+
+
+
 Oi her var det stopp! Dette gjennstår
 
 * Rulle av folk
