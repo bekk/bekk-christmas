@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 7
 title: Whats new in ES2021?
-image: https://unsplash.com/photos/vZz_kRDWHIc
+image: https://images.unsplash.com/photo-1606769437071-5e162ce4cb99?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 ingress: The new version of ECMAScript, ES2021 is expected to be released in
   June 2021. What new features can we expect from the new release? This article
   covers some of the features in the upcoming release, and how we can put them
