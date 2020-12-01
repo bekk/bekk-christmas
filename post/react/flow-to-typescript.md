@@ -6,6 +6,8 @@ title: "War stories: The move from Flow to TypeScript"
 links:
   - url: https://skovhus.github.io/blog/flow-to-typescript-migration/
     title: Migrating from Flow to TypeScript using flow-to-ts
+  - title: flow-to-ts playground
+    url: https://flow-to-ts.netlify.app/
 authors:
   - Kent Andersen
 ---
@@ -67,35 +69,25 @@ Because the file extension had changed it was important that git marked the file
 
 ## The big freeze
 
-The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no code changes. The outputted code should be close to identical to pre TypeScript. By converting all source files to TypeScript we take on a lot of risk, and the last thing we needed was additional risk in the form of changes to the application.
+The 3 week freeze was upon us. All that matters was getting the number of errors down to 0. There was no time for refactoring, and little to no code changes. By converting all source files to TypeScript we take on a lot of risk, and the last thing we needed was additional risk in the form of changes to the application. The outputted code should be close to identical to pre TypeScript. 
 
-There was a lot of work to be done, roughly 5000 TypeScript errors, 800 ESLint errors and 250 . 
+There was a lot of work to be done. Roughly 5000 TypeScript errors, 800 ESLint errors and 250 failing tests. To get one thing out of the way, and boost moral, we went all in on fixing ESLint errors. There was a lot of recurring errors "Unexpected any" and "Don't use \`Object\` as a type". None of these errors was hard to fix, but after a couple of hundred of them it starts to become quite dull.\
+To my surprise, we reached 0 ESLint errors before the end of the first day.
 
-Moral is important with a task this enormous, therefor I wanted an early win.
+With ESLint errors gone it was time to parallelise. When using TypeScript with Babel, type checking and transpiling are two separate tasks. Babel strips away the TypeScript semantics regardless of whether or not it passes type check. Getting the applications to build was not dependent on passing type checking
 
-To my surprise, we reached 0 ESLint errors in under one day. 
+We defined tree goals; Getting all tests to pass. Getting the application to build, Passing type check. Two developers focused on getting the tests to pass, two on fixing the build, and the remaining four worked on reducing TypeScript errors. At the end of day two fixing tests and fixing build, was done. 
 
-With ESLint errors gone we where free to 
-
-When using TypeScript with Babel type checking and transpiling is two separate tasks. Babel strips away the TypeScript semantics regardless of whether or not it passes type checking. This ment we could split into tree teams; getting all getting the application to build,  and passing the typecheck
-
-
-
-could have one team focusing on getting a
+At the start of day tree, with only TypeScript errors left, it  
 
 
 
-Your app will build 
+ everyone was focus on getting that number to 0. 
+
+
 
 Oi her var det stopp! Dette gjennstår
 
-* Alle på lint
-* Tre team
-
-  * Test og verifiseringsscript
-  * Bygging / bundeling
-  * Type-feil
-* Oppdeling
 * Fart
 * Motivasjon, ts-status
 * Rulle av folk
