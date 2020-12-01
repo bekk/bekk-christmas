@@ -96,4 +96,4 @@ I have overheard others seeing a lot of increase in cost by going to vCore Provi
 ## Conslusion 
 On this particlar database with its spikey load patterns, we actually managed to cut our cost in half without degrading performance using Azure SQL Serverless tier. My experience is that the database scales fast when you need it, and backs down nicely when load decreases. Having this on-demand resource strategy is all about saving money, and for us it did, but be careful if you attempt to try this out as vCores, and especially the Serverless tier vCores, are more expensive than e.g. tiers using DTU. Pay close attention to your vCore second usage after deploying and do forecast calculations when the database has experienced normal load after a few hours or days. Good luck!
 
-_Note that all prices in this article are from the public Azure list prices available to everyone._
+_Prices used in this article are public list prices taken from Azure's websites_
