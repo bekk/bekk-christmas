@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 7
 title: Whats new in ES2021?
-image: https://images.unsplash.com/photo-1606769437071-5e162ce4cb99?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
+image: https://images.unsplash.com/photo-1505235687559-28b5f54645b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1780&q=80
 ingress: The new version of ECMAScript, ES2021 is expected to be released in
   June 2021. What new features can we expect from the new release? This article
   covers some of the features in the upcoming release, and how we can put them
@@ -31,7 +31,7 @@ console.log(newString);
 //I love Dogs. Dogs are supercute, especially when they are doing Dogstuff
 ```
 
-This method also comes with a performance improvement as it uses string comparisons instead of regular expressions matching.
+This method also comes with a performance improvement as it uses string comparisons instead of regular expression matching.
 
 ## Logical Assignment Operator
 The Logical Assignment Operator combines Logical Operators ( ```&&, ||, ??```) with Assignment Expressions (```=```). 
