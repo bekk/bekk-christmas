@@ -96,5 +96,5 @@ As you might have understood by now, the `useSWR` hook comes with a lot of possi
 
 **Another tip** is to abstract some of the most used caches into custom hooks for easier reuse. If you have a specific configuration for a cache and plan to reuse it, I really recommended doing so.
 
-# 🏎 Want to take it out for a spin?
+# 🏎 Ready to take it out for a spin?
 The best way of getting to know SWR is to head over to the documentation. There are great examples and a long list of features to get to know. One of the latest exciting features is integration with the new Suspense api from React, which rethinks error patterns!
