@@ -2,7 +2,8 @@
 calendar: elm
 post_year: 2020
 post_day: 3
-title: Single-constructor Custom Types
+title: Single-Constructor Custom Types
+image: https://unsplash.com/photos/vJz7tkHncFk/info
 authors:
   - Aksel Wester
 ---
