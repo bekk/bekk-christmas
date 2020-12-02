@@ -88,13 +88,13 @@ Sometimes, we need our data to be up to date, and you've probably already guesse
 
 # 🔧 Keeping track of the configurations
 As you might have understood by now, the `useSWR` hook comes with a lot of possible configurations. If you want to configure these globally for your react app, you can do so just that by wrapping your app with the `SWRConfig` like so:
-```js
+```jsx
 <SWRConfig value={config}>
   <App/>
 </SWRConfig>
 ```
 
-Another tip is to abstract some of the most used caches into custom hooks for easier reuse. If you have a specific configuration for a cache and plan to reuse it, I recommended doing so.
+**Another tip** is to abstract some of the most used caches into custom hooks for easier reuse. If you have a specific configuration for a cache and plan to reuse it, I really recommended doing so.
 
 # 🏎 Want to take it out for a spin?
 The best way of getting to know SWR is to head over to the documentation. There are great examples and a long list of features to get to know. One of the latest exciting features is integration with the new Suspense api from React, which rethinks error patterns!
