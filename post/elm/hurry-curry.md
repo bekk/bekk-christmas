@@ -20,15 +20,15 @@ Have you ever wondered why type signatures look the way they do? They seem intui
 aboveZero : Int -> Bool
 ```
 
-\`aboveZero\` is a function which takes an \`Int\` and returns a \`Bool\`. Simple, right? Now look at this function:
+`aboveZero` is a function which takes an `Int` and returns a `Bool`. Simple, right? Now look at this function:
 
 ```elm
 isBetween : Int -> Int -> Int -> Bool
 ```
 
-Many will read this type signature in a different way compared the the easier definition we saw earlier. They might say that \`isBetween\` is a function which takes three \`Int\`s and returns a \`Bool\`. But if that's the case, why are we forced to write all those arrows? Especially considering arrows seemingly work both as a input seperator \_and\_ as a seperator between inputs and inputs.
+Many will read this type signature in a different way compared the the easier definition we saw earlier. They might say that `isBetween` is a function which takes three `Int`s and returns a `Bool`. But if that's the case, why are we forced to write all those arrows? Especially considering arrows seemingly work both as a input seperator _and_ as a seperator between inputs and inputs.
 
-Actually, arrows \_only\_ seperate one input value and a return value. The type signature for \`isBetween\` should be read as 'a function that takes an \`Int\` \_and returns a function\_ that takes an \`Int\` and returns a function that takes an \`Int\` and returns \`Bool\`'. This is the same type signature, but written differently:
+Actually, arrows _only_ seperate one input value and a return value. The type signature for `isBetween` should be read as 'a function that takes an `Int` _and returns a function_ that takes an `Int` and returns a function that takes an `Int` and returns `Bool`'. This is the same type signature, but written differently:
 
 ```elm
 isBetween : Int -> (Int -> (Int -> Bool))
@@ -36,7 +36,7 @@ isBetween : Int -> (Int -> (Int -> Bool))
 
 For esthetic reasons, Elm allow us to write the type signature without the parenthesis.
 
-There is no such thing as a function taking multiple arguments. All functions take exactly one argument, and returns something else. That something else might be another function. That also means that when calling a function that takes multiple arguments, it's not only \_valid\_ to call it in the following way, it's also conceptually what happens:
+There is no such thing as a function taking multiple arguments. All functions take exactly one argument, and returns something else. That something else might be another function. That also means that when calling a function that takes multiple arguments, it's not only _valid_ to call it in the following way, it's also conceptually what happens:
 
 ```elm
 (((isBetween 1) 2) 3)
