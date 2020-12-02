@@ -85,7 +85,6 @@ Although injecting HTML with dangerouslySetInnerHtml will not execute `<script>`
 
 ```jsx
 <iframe onload=alert("Bad_🎅_was_here!") src="error">
-
 ```
 
 Because of the vulnerabilities attached to this function React has given it an ominous name and making sure developers see the documentation by enforcing the input to be given in a prop called `__html`. However, enforcing the input in a prop might make developers believe that this value is being escaped, like props normally are when passed through functions in the React API such as createElement.
@@ -104,12 +103,11 @@ URLs is widely used in a web application. It can be used for navigation with an 
 
 ```jsx
  <iframe src="https://bekk.christmas" />
-
 ```
 
 This is perfectly safe... As long as you control the url.
 
-Even though React escapes the props in your a-tag there are still valid ways of triggering malicious code which is not handled by Reacts escaping. The` javascript: `
+Even though React escapes the props in your a-tag there are still valid ways of triggering malicious code which is not handled by Reacts escaping. The`javascript:`
 
 If you let users add their own URLs the chances are you will be exploited. Here is an example:
 
@@ -123,7 +121,7 @@ It is not just a React problem, but it is important to mention to show that Reac
 <iframe src="data:text/html,<script>alert("Bad_🎅_was_here!")</script>"/>
 ```
 
-If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite bekk.christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not satisfy requirements check that the URL starts with what you except e.g http or https. 
+If you need to let the users add urls, try to control as much as possible yourself. For instance, if users are adding links of their favourite react.christmas article, the first part:` https://react.christmas/` can already be coded and the user input can then be year and day. Then, `javascript:` or `data:` will just be a part of a string and not harmfull.  If this does not satisfy requirements check that the URL starts with what you expect i.e http or https. 
 
 ## \#3 Keep your framework updated!
 
