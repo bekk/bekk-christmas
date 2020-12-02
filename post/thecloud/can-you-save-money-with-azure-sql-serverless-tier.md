@@ -28,15 +28,15 @@ First let's talk about the Standard tier. It has a simple method of deciding how
 
 But there is another whole category of tiers that offers much more flexibility, and that is the vCore tiers. They are structured around vCores (virtual cores) as the unit of compute power instead of DTU. Think of vCores as cores in a CPU. Here is where we find the Serverless compute tier inside the category tier General Purpose. The General Purpose tier looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive. 
 
-The main price driver here is the amount of vCores you want. But how do you know the equivalent vCores to your DTU found in the Standard tier? A quick Google search told me that ~`100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 that had around equal price as we pay now to see how it performed. Previously we have been using the one before S9 - S6 with 800DTU, but we experienced load problems and had to bump it up, so 12 might be okay.
+![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
+
+The main price driver here is the amount of vCores you want. But how do you know the equivalent vCores to your DTU found in the Standard tier? A quick Google search told me that ~`100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 that had around equal price as we pay now to see how it performed. Previously we have been using the one before S9, S6 with 800DTU, but we experienced load problems and had to bump it up, so 12 might be okay.
 
 ### Testing vCore amount in the Provisioned tier
 
-![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
-
 First I tested our normal daily operations that I know require a lot of power with 12 vCores in the _Provisioned_ tier to se that it was performant enough. I was happy to see that the execution time was equal! The vCore model is more expensive, so I was not plainly after changing to a vCore tier, although that also sometimes has its purpose which I will not delve into here. Having locked down my vCore count without blasting through my budget, I went on the configure the Serverless tier.
 
-### What does the Serverless tier cost?
+### The cost of the Serverless tier
 
 ![Serverless vCore](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
 
