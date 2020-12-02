@@ -11,12 +11,12 @@ ingress: "Every now and then, a library surfaces that change the way you're used
 authors:
   - Jon Johansen
 ---
-SWR has quickly become one of my favorite tools in my tool chest. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
+SWR has quickly become one of my favorite tools in my toolbox. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
 
 SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching, and stores it for you. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
 
 ## ✨ Getting the data
-Fetching data through the SWR is simple. The `useSWR` hook is your swiss army knife.
+Fetching data through the SWR is simple. The `useSWR` hook is your Swiss army knife.
 
 ```js
 const { data, error } = useSWR(URL, fetcher);
@@ -49,7 +49,7 @@ mutate(key, data?, shouldRevalidate?)
 ```
 The `key` is the cache key, `data` is the changed data object, and `shouldRevalidate` is whether or not to trigger revalidation of the data against the resource after mutating the data.
 
-For an even tidier usage, you can pull out the swiss army knife again, as the mutate function with a pre-set `key` is given through the `useSWR` hook; all you've got to do is ask!
+For an even tidier usage, you can pull out the Swiss army knife again, as the mutate function with a pre-set `key` is given through the `useSWR` hook; all you've got to do is ask!
 ```js
 const { data, error, isValidating, mutate } = useSWR(URL, fetcher);
 ``` 
