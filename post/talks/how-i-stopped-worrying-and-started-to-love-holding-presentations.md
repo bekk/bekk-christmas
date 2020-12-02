@@ -3,8 +3,8 @@ calendar: talks
 post_year: 2020
 post_day: 3
 title: How i stopped worrying and started to love holding presentations.
-image: https://images.unsplash.com/photo-1564522365984-c08ed1f78893?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YXVkaWVuY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60
-ingress: >+
+image: https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YXVkaWVuY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60
+ingress: >
   I had been working as a developer for a good 12 years when I was approached by
   my manager, and asked if I could assume the position of team lead for a
   while. 
