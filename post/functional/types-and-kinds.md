@@ -52,7 +52,7 @@ A higher-order function is a function with order > 1 (who'd-a thunk it!) - in ot
 In an analogous way, a higher-kinded type is a type that operates on other types so that their level of abstraction from concrete types is greater than 1.
 
 ```
-data StringContainerContainer c = { value :: c String }
+data StringContainerContainer c = AptlyNamedConstructor { value :: c String }
 ```
 
 Exactly what we were looking for - a contrived example! Let's do a quick analysis of its kind: The `StringContainerContainer` clearly takes a polymorphic type argument, so it has to be a "type" to *something*; `* -> ?!`. But that *something* cannot be a concrete type since it has to take `String` as a type parameter. `String` has kind `*`, so `c` must have kind `* -> *`, and `StringContainerContainer` therefore has kind `(* -> *) -> *`. We have found a type that operates on a more complex type than concrete types, so it is a higher-kinded type!
