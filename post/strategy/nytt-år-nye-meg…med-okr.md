@@ -27,8 +27,6 @@ Ok, det er ikke nyttår riktig enda, men siden dette er siste luke i kalenderen 
 
 Vi har alle hørt dem, hatt dem og kanskje til og med mislyktes i å nå dem. Hva kjennetegner egentlig de som lykkes med å trene hver dag, som faktisk går ned 10 kg, får kjæreste OG blir rik? Personlig har jeg en følelse av at OKR kan være en del av forklaringen. Eller i hvert fall at teknikker eller prinsipper som OKR bygger på som målstyringsverktøy, kan hjelpe oss i riktig retning.
 
-God lesning, god jul og godt nyttårsforsett!
-
 ### Nyttårsaften markerer en ny tid, med blanke ark
 
 Et nyttårsforsett er et mål man setter seg, og som er ment å gjelde fra årsskiftet. Årsskiftet kan gjerne oppfattes som en spesielt god anledning til å foreta endringer i livet. Mennesker fungerer generelt litt på den måten. Vi trenger gjerne en større endring, et tidspunkt av betydning eller andre eksterne sjokk for at vi skal endre livsstilen vår. Litt slik som korona har endret måten vi jobber på, trener på og sosialiserer oss på. Disse koronatider (som for øvrig er et begrep som ikke skal benyttes flere ganger i dette innlegget) har for mange vært det perfekte tidspunktet for å lære nye ting, utforske ukjente områder og leve på en måte som det tidligere ikke var behov for. 
@@ -109,6 +107,6 @@ Målstyring er kult, både for bedrifter og for enkeltpersoner. Man ser ofte bed
 
 I år har jeg planer om å oppnå nyttårsforsettene mine! Bli med du også!
 
-Lykke til! Og ikke minst, godt nyttårsforsett!
+Lykke til! Og ikke minst, god jul og godt nyttårsforsett!
 
 ![Iiiiiik!](/assets/Final_picture.png)
