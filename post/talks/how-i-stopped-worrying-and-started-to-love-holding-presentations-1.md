@@ -11,6 +11,8 @@ ingress: >
 
 
   I was humbled to be asked - however the mere thought of performing some of the tasks required by someone in that position in that particular setting was very frightening.
+authors:
+  - Hein Haraldsen
 ---
 I had been working with the former team leader, who left on maternity leave. She had to perform public speaking in different situations. One were the daily standups where a relatively small group of coworkers briefly discusses their various day-to-day tasks. To be in charge of this, and make people listen to you, felt somewhat more challenging than just be one of the contributors to the standup.
 
