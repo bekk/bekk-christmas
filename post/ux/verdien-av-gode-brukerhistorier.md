@@ -31,7 +31,7 @@ og..
 
 ### Ikke brukerhistorier-historier. Men tjenestedesign.
 
-Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reelle innspill fra innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie, som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. 
+Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reelle innspill under innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie, som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. 
 
 Alt i alt dreier dette seg om å kartlegge en kundereise gjennom en persons historie, en såkalt persona. Historien forteller noe om hvordan personen blir klar over merkevaren, tar i bruk produktet, kanskje kommer tilbake for mer og forteller andre om det (word of mouth-effekten).
 
@@ -59,9 +59,9 @@ I vårt tilfelle bestemte vi oss for disse fasene: 
 
 * Awareness – hvordan blir kunden oppmerksom på produktet?
 * Bestilling – hvordan bestiller kunden produktet, og hvordan føles det?
-* pre-installering  –  hva slags kontakt har kunden med merkevaren før produktet blir installert?
-* installering – hvordan foregår installeringen fra kundens perspektiv?
-* bruk  – hvordan blir produktet tatt i bruk av kunden videre? Hvordan er livet til kunden etter at produktet kom i det?
+* Pre-installering  –  hva slags kontakt har kunden med merkevaren før produktet blir installert?
+* Installering – hvordan foregår installeringen fra kundens perspektiv?
+* Bruk  – hvordan blir produktet tatt i bruk av kunden videre? Hvordan er livet til kunden etter at produktet kom i det?
 
 Det hører også til historien at vi var ganske inspirert av typisk kundereisekartlegging, også kalt customer journey mapping, som dette:
 
