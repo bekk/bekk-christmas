@@ -244,7 +244,7 @@ Here we have it. We added a delete route for our todos.
 
 Heres a quick demo!
 
-![Deletion gif](assets/working.gif)
+![](/assets/working.gif)
 
 It is important to keep in mind that under the hood this is just normal HTTP requests going backwards and forwards. That means you can still test them using Postman and similar tools.
 
