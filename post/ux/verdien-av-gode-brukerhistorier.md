@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 3
 title: Verdien av gode brukerhistorier
-image: ""
+image: https://unsplash.com/photos/RTCJqv9AFuA
 ingress: "## Blås i [dævve](https://www.betydning-definisjoner.com/D%C3%A6vve)
   personas. Blås heller liv i innsiktsarbeidet, og lag historier du tror på
   selv. Det er først da du kommer nærmere de faktiske folka som bruker produktet
