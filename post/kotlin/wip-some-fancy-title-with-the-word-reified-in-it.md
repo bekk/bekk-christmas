@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 10
 title: Bring your type parameters back to life with the reified keyword
+image: https://images.unsplash.com/photo-1516382799247-87df95d790b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3306&q=80
 ingress: _Reification_. Like many other concepts, it can be applied in a number
   of different ways and it might carry slightly different meanings depending on
   the context. According to [this
