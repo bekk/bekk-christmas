@@ -66,7 +66,7 @@ Over the years, I've come to love JavaScript, and TypeScript even more so. To me
 
 Node is not always a pleasure to work with. You cannot use ES Modules out of the box. To compile TypeScript, you need a plugin like `ts-node`. You format your code with `Prettier`, check it using `ESLint`, use `Nodemon` to watch for file changes and `Webpack` for bundling your files. To test your code, you need an external framework like `Jest`. The list goes on. Deno offers all of these tools, plus more, in a single executable – like a Swiss army knife of JavaScript development.
 
-Then there's the little things, like the `window` global. In Deno, you can use `alert`, `prompt` and `confirm` like you would in a browser, and it just works:
+Then there's the little things, such as the `window` global. In Deno, you can use `alert`, `prompt` and `confirm` just like you would in a browser:
 
 ```jsx
 const name = await window.prompt("What is your name?"); // > What is your name? Kjetil
@@ -77,4 +77,4 @@ You also get an implementation of `fetch`for doing network requests. You can gra
 
 ![Installing a script with Deno](https://i.imgur.com/cF9AERr.png)
 
-All these features amount to a great developer experience in JavaScript's matured ecosystem. And for that, I think Deno deserves a place in my toolkit, alongside Node.
+All these features amount to a great developer experience in JavaScript's matured ecosystem. And for that, I think Deno deserves a place in our toolkit, alongside Node.
