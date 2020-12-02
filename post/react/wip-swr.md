@@ -8,10 +8,11 @@ ingress: "Every now and then, a library surfaces that change the way you're used
   to thinking. In this case, it is rethinking the data flow in your React app.
   SWR provides a complex data store with a simple interface, helping you write
   simple patterns and less code.  "
+links: []
 authors:
   - Jon Johansen
 ---
-SWR has quickly become one of my favorite tools in my toolbox. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
+[SWR](https://swr.vercel.app/) has quickly become one of my favorite tools in my toolbox. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by [Vercel](https://vercel.com/), the creators of [Next.js](https://nextjs.org/), and has excellent documentation.
 
 SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching, and stores it for you. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
 
@@ -23,7 +24,7 @@ const { data, error } = useSWR(URL, fetcher);
 ``` 
 The first argument is the cache *key*, and the second argument is the *fetcher function* used to fetch data. Noteworthy here is that the fetcher function parameters must match the cache key argument.
 
-The data object is either `undefined` (which happens when initially loading) or data from the cache. Error is `undefined` unless the fetcher function has thrown an exception or rejected the promise.
+The `data object is either `undefined` (which happens when initially loading) or data from the cache. `error is `undefined` Unless the fetcher function has thrown an exception or rejected the promise.
 
 A typical fetcher function can look along the lines of this:
 ```js
