@@ -6,7 +6,6 @@ title: Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
-
 A new year is closing in and so is a new release of Scala. Release candidate 1
 is expected to be found some time this December!
 
@@ -23,10 +22,9 @@ The original vision of the language has been on unifying Object Oriented Program
 Functional Programming. In doing this it was found that the theoretical
 foundation was not sound; combining subtyping with dependent types was not a easy challenge
 [^subtypingPath]. In 2016 the DOT Calculus (Dependent Object Types) was presented as a new
-theoretical foundation. With that came Dotty, a reference implementation
-that translates a Scala-like language to DOT calculus. Dotty was later
-revealed to be the next iteration of the language. Scala 3 is not just a new
-major release, but a complete rewrite with a new foundation.
+theoretical foundation. With that came Dotty, a reference implementation of a
+language translating to the DOT calculus and now soon to be Scala 3. 
+ <!-- Scala 3 is not just a new major release, but a complete rewrite with a new foundation. -->
 
 If migration issues is a worrying factor then it should please you to know that
 most code bases seems to be easy to port. To ease the process a lot of the
@@ -384,5 +382,4 @@ https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 [^scastieHelloWorld]: https://scastie.scala-lang.org/mW9PAGSVSAyFbljRMzVlBw
 
 [^applicatives]: https://functional.christmas/2019/21
-
 
