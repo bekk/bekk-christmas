@@ -71,12 +71,8 @@ Deduplication is, of course, configurable, and you can decide how long the inter
 ## Automatic retries
 By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging integrations or any other custom behavior.
 
-## Stay fresh!
-Sometimes, we need our data to be updated, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there's multiple strategies for keeping your screen filled with the latest and greatest of data. 
+## Staying fresh!
+Sometimes, we need our data to be up to date, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there are multiple strategies for keeping your screen filled with the latest and greatest of data. 
 - There's revalidation upon **browser-tab focus**, which is pretty self-explanatory. This gives you new data when you actually want it. 
 - There's a revalidate upon **reconnection**, which gives clients with unstable and slow connections a break. 
-- The more classic: revalidation of data upon set **intervals**. This one is smarter, though, and won't revalidate data that are not rendered on screen, and won't try to revalidate unfocused tabs or when the internet is disconnected *(unless you tell it to)*.
-
-## Configuration
-
-## Tips and tricks
+- The more classic: revalidation of data upon set **intervals**. This one is smart, and won't revalidate data that are not rendered on screen, and won't try to revalidate unfocused tabs or when the internet is disconnected *(unless you tell it to)*.
