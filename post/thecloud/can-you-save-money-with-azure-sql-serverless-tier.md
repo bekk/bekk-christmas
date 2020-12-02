@@ -53,7 +53,7 @@ I sure hoped this wasn't running on max most of the time, because that would be 
 One of my concerns was regarding a feature called Autopause, which is enabled by default. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. That means there is more money to save, but there is a catch. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. So, I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
 
 ### Deploying to production
-All our infrastructure is configured in code written as a mix of Powershell and ARM(Azure Resource Manager) templates, so I didn't click save when fiddling with the GUI in the Azure Portal. I changed our ARM template to reflect my changes and re-provisioned the database. The configuration looks something like this:
+All our infrastructure is configured in code written as a mix of Powershell and ARM(Azure Resource Manager) templates. I didn't click save when fiddling with the GUI in the Azure Portal. I changed our ARM template to reflect my changes and re-provisioned the database to deploy my change. The configuration looks something like this:
 
 ```jsonnet
 "resources": [
@@ -90,23 +90,23 @@ What I was most interested in after deploying was the following
 
 To answer my first question I did some manual analysis by timing known operations and how long they take after the change compared to before. I found it to be of equal performance if not actually better.
 
-My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware and give immediate feedback if systems, reports, queries, etc. behaved any differently in terms of performance. I am pleased to say no one complained once!
+My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware while doing operations. I asked and give immediate feedback if systems, reports, queries, etc. behaved any differently in terms of performance. I am pleased to say no one complained once!
 
 ### Cost analysis of our database
 
-Then to the most important part of my experiment. How much does it cost? To find this out I had to manually monitor my "vCore second" usage. Not so glamorous other than staring at a graph in the Azure portal several times a day. By knowing how many vCore seconds we had used the first hour, the first day, and so on, I could multiply that to calculate predictions about how our monthly cost would look if our current load pattern continued.
+Then to the most important part of my experiment. How much does it cost? To find this out I had to manually monitor my "vCore second" usage. Not so glamorous other than staring at a graph in the Azure portal several times a day. By knowing how many vCore seconds we had used the first hour I could multiply that to calculate predictions about how our monthly cost would look if our current load pattern continued. I then continued calculating such forecasts as the hours and days passed on. That way the cost was under control and I didn't exceed my budget. If the numbers after say, a week would show that this is in fact not cost-effective, I would have reverted my change.
  
 ![seconds2](https://user-images.githubusercontent.com/920028/100775234-490bfa00-3403-11eb-8186-9dc23c68f979.PNG)
 
 This picture shows vCore seconds used over a pretty average week for our database. Notice the spikes in the load that reflects the daily tasks I mentioned previously, as well as the reduced load during the weekend. If all weeks were like this week, our database would cost `0.001294 NOK * 1.55 mil vCore seconds * 4 weeks = 8022 NOK/month`. This is actually not very far from the truth! We have had the Serverless tier running on this database for a little over a month now and the cost has been *10895 NOK/month*. That is nearly half the price of the S9 1600DTU tier!
 
-Now, that we actually managed to cut the price in half is dependent on a few things. Remember that we did not go 1-1 on the DTU to vCore conversion. We managed with 12 vCores equal to 1200 DTU instead of 16 vCores equal to 1600 DTU. This was also because the previous Standard tier S6 only sport 800 DTU, which caused too much load problems for us, and there is nothing in between until S9 with 1600 DTU.
+Now, that we actually managed to cut the price in half is dependent on a few things. Remember that we did not go 1-1 on the DTU to vCore conversion. We managed with 12 vCores equal to 1200 DTU instead of 16 vCores equal to 1600 DTU. This was also because the previous Standard tier S6 only sport 800 DTU. That caused too much load problems for us, and there is nothing in the middle before S9 with 1600 DTU.
 
 Next, the nature of our load patterns seems to be a very good fit for this kind of elastic and scalable approach. We require a lot of power when we are performing some of our important operations and not so much the rest of the time.
 
 ### Is Serverless tier always cheaper?
 
-I have overheard others seeing a lot of increase in cost by going to vCore Provisioned or Serverless compute tier, so this is certainly not the way for all use cases. If you consider moving away from the DTU model, make sure you actually need the features and the increased flexibility of the vCore tiers or that your load patterns make a good fit for a serverless approach. DTU might be sufficient and cheaper for your case.
+I have overheard others seeing a lot of increase in cost by going to the vCore Provisioned or Serverless compute tier. This approach is certainly not the way for all use cases. If you consider moving away from the DTU model, make sure you actually need the features and the increased flexibility of the vCore tiers. Or that your load patterns make a good fit for a serverless approach. DTU might be sufficient and cheaper for your case.
 
 ### Conslusion 
 On this particular database with its spiky load patterns, we actually managed to cut our cost in half without degrading performance using the Azure SQL Serverless tier. My experience is that the database scales fast when required, and backs down nicely when the load decreases. Having this on-demand resource strategy is all about saving money, and for us it did. Be careful if you attempt to try this out, as vCores and especially Serverless tier vCores, are more expensive than e.g. tiers using DTU. Pay close attention to your vCore second usage after deploying and do forecast calculations when the database has experienced normal load after a few hours or days. Good luck!
