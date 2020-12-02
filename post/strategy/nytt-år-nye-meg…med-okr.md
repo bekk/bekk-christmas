@@ -23,6 +23,8 @@ links:
 authors:
   - Martin Jøndal Digranes
 ---
+ 
+
 Ok, det er ikke nyttår riktig enda, men siden dette er siste luke i kalenderen vår tar vi det likevel opp: Nyttårsforsetter! 
 
 Vi har alle hørt dem, hatt dem og kanskje til og med mislyktes i å nå dem. Hva kjennetegner egentlig de som lykkes med å trene hver dag, som faktisk går ned 10 kg, får kjæreste OG blir rik? Personlig har jeg en følelse av at OKR kan være en del av forklaringen. Eller i hvert fall at teknikker eller prinsipper som OKR bygger på som målstyringsverktøy, kan hjelpe oss i riktig retning.
@@ -41,7 +43,7 @@ Ny kalender og blanke ark --> Økt motivasjon og søkelys på endring = Endring.
 
 Men er det bare en god anledning som skal til for at vi skal nå målene våre? I en undersøkelse gjort av den britiske psykologiprofessoren Richard Wisemen (New Year’s Resolution Project), kommer det frem at hele 88% av de som setter seg nyttårsforsett mislykkes i å nå dem! 1. januar er rundt halvparten helt sikre på at de skal nå målene sine, mens kun 12% faktisk når dem.
 
-### Hvor feiler vi?
+## Hvor feiler vi?
 
 En utfordring kan være at vi ofte tenker på nyttårsforsett som ett eller flere hårete mål. Vi snøvler ut noen målsettinger i det fyrverkeriet farger himmelen på nyttårsaften, men vi glemmer kanskje at mål sjeldent kommer alene. I tillegg til mål trenger vi gjerne også en strategi og en form for målstyring. 
 
@@ -53,7 +55,7 @@ Dette høres kanskje ut som ufattelig mye arbeid. Det er i hvert fall slik det k
 
 ![](/assets/Avnistt2.png)
 
-### Og her kommer OKR inn i bildet
+## Og her kommer OKR inn i bildet
 
 Hold on there! Hvor kommer egentlig OKR inn i bildet, og hva er egentlig denne OKR?
 
