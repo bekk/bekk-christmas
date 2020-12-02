@@ -3,6 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 17
 title: A Tale of a React Newbie
+image: https://images.unsplash.com/photo-1513197723981-f7ea5d71474e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: My name is Tora, and I started working at Bekk this fall as a new React
   developer with a fresh Computer Science degree. I would like to share my
   journey into this new and exciting world with you!
