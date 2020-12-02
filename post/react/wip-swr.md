@@ -29,7 +29,7 @@ A typical fetcher function can look along the lines of this:
 const fetcher = (url) => fetch(url).then((res) => res.json());
 ```
 
-## 🤔 But where is the cache and the strategy?
+## 🤔 ...where is the *cache* and the *strategy*?
 The caching strategy *stale while revalidating* essentially means that the data will be stored in the cache with the *key* as the identifier. As mentioned, the data will be `undefined` the first time the `useSWR` hook is used until it is loaded.
 
 If the same key is used again, the *stale* data will be returned immediately, while the internals of SWR *revalidates* the data in the background. Once revalidation is done and the cache is refreshed, the new data will be reflected in the data object. This way, you can provide stale data _while_ loading new data. 
