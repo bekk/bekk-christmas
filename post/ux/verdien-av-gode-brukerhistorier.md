@@ -4,11 +4,9 @@ post_year: 2020
 post_day: 3
 title: Verdien av gode brukerhistorier
 image: ""
-ingress: >-
-  ![](/assets/image-from-ios-17-.jpg)
-
-
-  #### Blås i [dævve](https://www.betydning-definisjoner.com/D%C3%A6vve) personas. Blås heller liv i innsiktsarbeidet og lag historier du tror på selv. Det er da du kommer nærmere de faktiske folka som bruker produktene dine.
+ingress: "#### Blås i [dævve](https://www.betydning-definisjoner.com/D%C3%A6vve)
+  personas. Blås heller liv i innsiktsarbeidet og lag historier du tror på selv.
+  Det er da du kommer nærmere de faktiske folka som bruker produktene dine."
 description: "Skriver du brukerhistorier basert på ekte innsikt, kommer du
   nærmere brukerne av produktet og tjenestene dine. "
 authors:
