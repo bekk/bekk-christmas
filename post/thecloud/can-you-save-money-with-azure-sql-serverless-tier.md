@@ -20,17 +20,17 @@ authors:
   - Christian Young
 ---
 ### Standard tier
-First, let's talk about the Standard tier. It has a simple method of deciding how much power you need by saying how many [DTU](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu) (Data Transfer Units) you want in eight different intervals from S0(10 DTU) to S12(3000 DTU). Our database is on the S9 (1600 DTU) tier. This means the database has a list price of around 20 000 NOK/month. This is needed to be able to cope with its many tasks serving as an analytical platform as well as have headroom for analytical reporting, operational dependencies, systems running queries, and other stuff. The following picture shows how the Standard tier alongside its close relatives Basic and Premium can be configured in the Azure portal.
+First, let's talk about the Standard tier. It has a simple method of deciding how much power you need by saying how many [DTU](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu) (Data Transfer Units) you want. This divides into eight different intervals from S0(10 DTU) to S12(3000 DTU). Our database is on the S9 (1600 DTU) tier. This means the database has a list price of around 20 000 NOK/month. The power is needed to be able to cope with its many tasks serving as an analytical platform. We need capacity for analytical reporting, operational dependencies, systems running queries, and other stuff. The following picture shows how the Standard tier alongside its close relatives Basic and Premium can be configured in the Azure portal.
 
 ![S9 tier](https://user-images.githubusercontent.com/920028/100767431-0d206700-33fa-11eb-8c18-9a861cd5b099.PNG)
 
 ### The flexible vCore tiers
 
-But there is another whole category of tiers that offers much more flexibility, and that is the vCore tiers. They are structured around vCores (virtual cores) as the unit of computing power instead of DTU. Think of vCores as cores in a CPU. Here is where we find the Serverless compute tier inside the category tier General Purpose. The General Purpose tier looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive. 
+But there is another whole category of tiers that offers much more flexibility, and that is the vCore tiers. They are structured around vCores (virtual cores) as the unit of computing power instead of DTU. Think of vCores as cores in a CPU. Here is where we find the Serverless compute tier inside the category tier General Purpose. The General Purpose tier looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive.
 
 ![Provisioned vCore](https://user-images.githubusercontent.com/920028/100767340-ef530200-33f9-11eb-8bec-7a543aa40654.PNG)
 
-The main price driver here is the number of vCores you want. But how do you know the equivalent vCores to your DTU found in the Standard tier? A quick Google search told me that ~`100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 that had around equal price as we pay now to see how it performed. Previously we have been using the one before S9, S6 with 800DTU, but we experienced load problems and had to bump it up, so 12 might be okay.
+The main price driver here is the number of vCores you want. But how do you know the equal vCores to your DTU found in the Standard tier? A quick Google search told me that ~`100 DTU = 1 vCore`. Our current tier S9 is 1600 DTU. 16 vCores would be 6000 NOK/month more expensive, so I went with 12 that had around equal price as we pay now to see how it performed. Previously we have been using the one before S9, S6 with 800DTU, but we experienced load problems and had to bump it up, so 12 might be okay.
 
 ### Testing vCore amount in the Provisioned tier
 
@@ -46,7 +46,7 @@ As shown in the image below I configured maximum vCores to 12. I knew that would
 // Minimum (using 1.5 cores all the time)
 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK/month
 ```
-I sure hoped this wasn't running on max most of the time, because that would be twice as expensive as our current solution and I am really here to save money!
+I sure hoped this wasn't running on max most of the time, because that would be twice as expensive as our current solution and I am here to save money!
 ![Serverless vCore](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
 
 ### The Autopause feature
