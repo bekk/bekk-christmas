@@ -31,7 +31,7 @@ Vi har alle hørt dem, hatt dem og kanskje til og med mislyktes i å nå dem. Hv
 
 Et nyttårsforsett er et mål man setter seg, og som er ment å gjelde fra årsskiftet. Årsskiftet kan gjerne oppfattes som en spesielt god anledning til å foreta endringer i livet. Mennesker fungerer generelt litt på den måten. Vi trenger gjerne en større endring, et tidspunkt av betydning eller andre eksterne sjokk for at vi skal endre livsstilen vår. Litt slik som korona har endret måten vi jobber på, trener på og sosialiserer oss på. Disse koronatider (som for øvrig er et begrep som ikke skal benyttes flere ganger i dette innlegget) har for mange vært det perfekte tidspunktet for å lære nye ting, utforske ukjente områder og leve på en måte som det tidligere ikke var behov for. 
 
-![Sitat](/assets/Avnistt1.png)
+![](/assets/Avnistt1.png)
 
 Korona skaper isolasjon --> Isolasjon skaper behov for luft og frihet --> Folk tilbringer mer tid i marka og ute på løpetur = Korona (sjokket) har påvirket enkeltes livsstil til å bli mer aktiv.
 
@@ -51,7 +51,7 @@ Det er her jeg tror de 12% som lykkes i å nå nyttårsforsettene sine har skjø
 
 Dette høres kanskje ut som ufattelig mye arbeid. Det er i hvert fall slik det kan føles dersom målsettingen er stor, året er langt eller organisasjonen du jobber i er stor og kompleks. Men hvis vi bryter ned problemstillingen så er det egentlig ikke så veldig vanskelig; men det krever litt mer planlegging på forhånd.  Og tro meg! Denne planleggingen sparer deg på sikt for en del tid, og til syvende og sist kan det være den avgjørende faktoren for om du når målet ditt eller ikke. Hvis du når målet er du basically «top 12%». I mine ører høres dette ut som en driver for litt herlig mestringsfølelse. 
 
-![Sitat](/assets/Avnistt2.png)
+![](/assets/Avnistt2.png)
 
 ### Og her kommer OKR inn i bildet
 
@@ -99,4 +99,4 @@ I år har jeg planer om å oppnå nyttårsforsettene mine! Bli med du også!
 
 Lykke til! Og ikke minst, god jul og godt nyttårsforsett!
 
-![Iiiiiik!](/assets/Final_picture.png)
+![](/assets/Final_picture.png)
