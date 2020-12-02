@@ -24,9 +24,11 @@ So far, my approach has been to dive right into a problem and use React to solve
 
 Sometimes I didn’t understand that I had learned about certain React concepts already, simply because we had not discussed the concept of what we were implementing. For instance, my colleague and I would write a Hook to store some component specific state, without ever mentioning the word "hook". I knew what we were trying to achieve, but I didn’t understand at the time that useState was the hook that I had read about earlier. Nonetheless, an online course will not give you the same practical experience as working on a more complex project, so it’s necessary to find a balance that works for you.
 
-Personally, I learn best by reading and writing, and not just by viewing and listening to other people explain things to me. I have previously tried online courses with other technologies, but my experience is that I generally don’t really learn what I am supposed to because of the lack of repetition and experience. Pair-programming with a more experienced colleague has been great. I feel that I can challenge myself and try what I think is a possible solution. At the same time I have my colleague besides me who can give me small hints and explain when I stumble across something new.
 
 ![Pair-programming](https://i.ibb.co/nwgR5p1/react-kalender.jpg)
+
+
+Personally, I learn best by reading and writing, and not just by viewing and listening to other people explain things to me. I have previously tried online courses with other technologies, but my experience is that I generally don’t really learn what I am supposed to because of the lack of repetition and experience. Pair-programming with a more experienced colleague has been great. I feel that I can challenge myself and try what I think is a possible solution. At the same time I have my colleague besides me who can give me small hints and explain when I stumble across something new.
 
 As with anything that you are trying to learn, I recommend that you reflect on which learning style suits you best. If you would like to just dive right into a project like me, but you’re unsure of where to start, [this page](https://www.frontendmentor.io/) can be useful. And if you’re the type that likes to start from scratch and have small explanations for everything you do, maybe some of these workshops can be useful:
 
