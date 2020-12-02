@@ -37,7 +37,6 @@ By changing `calculateTotal`'s declaration somewhat, we extract shorthands for t
 ```elm
 calculateTotal { unitPrice, amount } =
     unitPrice * amount
-
 ```
 
 There might be cases where a record contains more fields than interest us. We can create shorthands for a subset of the fields while also retaining a reference to the whole of the record.
@@ -46,7 +45,7 @@ There might be cases where a record contains more fields than interest us. We ca
 type alias CartItem = 
     { unitPrice: Int
     , amount: Int
-    , description
+    , description: String
     }
 
 cartItem = { unitPrice = 19, amount = 2, description = "Washable, reusable face mask" }
