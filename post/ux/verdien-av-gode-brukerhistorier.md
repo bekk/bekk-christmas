@@ -17,7 +17,7 @@ Så kult at du ramlet inn på denne artikkelen, a! Hvor ble du klar over at den 
 
 Kanskje du til og med nå tenker “ja, dette har jeg jo vært borti før. Skrive sånne dølle greier liknende ‘som en innholdsprodusent vil jeg ha et ingressfelt i CMS-et, slik at jeg kan skrive ingresser til rådgivningsartiklene.’ Tror ikke jeg får noe særlig ut av å lese denne artikkelen, altså..”
 
-Og ja, kanskje akkurat dét er litt dølt. Men det hjelper nå utviklerne å sette seg inn i kontekst og forstå hva en person i en bestemt rolle trenger rent teknisk sett. Og hvor dølt hadde det ikke vært for deg å gå glipp av det jeg egentlig skal fortelle om, på grunn av din forutinntatte antakelse? For er det noe vi ofte gjør, kanskje uten å registrere det engang, er det å anta både det ene og det andre.  
+Og før du trykker på back-knappen, eller brygger deg kaffe i stedet, vil jeg bare si at ja, kanskje akkurat dét er litt dølt. Men det hjelper nå utviklerne å sette seg inn i kontekst og forstå hva en person i en bestemt rolle trenger rent teknisk sett. Og hvor dølt hadde det ikke vært for deg å gå glipp av det jeg egentlig skal fortelle om, på grunn av din forutinntatte antakelse? For er det noe vi ofte gjør, kanskje uten å registrere det engang, er det å anta både det ene og det andre.  
 
 ![](/assets/image-from-ios-17-.jpg)
 
