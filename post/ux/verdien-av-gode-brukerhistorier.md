@@ -85,4 +85,10 @@ Så dette var altså min beskrivelse av personaen Anne på 47 år. Anne som blir
 
 Det tar gjerne et liv å bli ordentlig kjent med en person, sies det (okei, jeg sa det i hvert fall nå). Men forteller du en historie av en persons liv grundig og interessant nok, kan det være det som nettopp trengs i en merkevare- og markedsføringsammenheng.
 
-Derfor er det gull verdt å lage unike historier om halvfiktive personer som representerer en bestemt målgruppe knyttet til ditt produkt, når du ønsker å forstå mer om dem. Og det gjør du ved å servere små gullkorn, detaljer og beskrivelser i historien. Du trenger absolutt ikke å bære tittelen tekstforfatter for å gjøre dette. Men du trenger et prosjekt som forstår verdien av gode brukerhistorier, og som er villig til å sette av tid til å skape dem. Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder.
+Derfor er det gull verdt å lage unike historier om halvfiktive personer som representerer en bestemt målgruppe knyttet til ditt produkt, når du ønsker å forstå mer om dem. Og det gjør du ved å servere små gullkorn, detaljer og beskrivelser i historien. Du trenger absolutt ikke å bære tittelen tekstforfatter for å gjøre dette. Men du trenger:
+
+1. skrivelyst
+2. et prosjekt som forstår verdien av gode brukerhistorier
+3. et prosjekt som er villig til å sette av tid til å skape dem
+
+Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder.
