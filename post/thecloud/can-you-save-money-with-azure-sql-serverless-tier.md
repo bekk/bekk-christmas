@@ -108,7 +108,7 @@ Next, the nature of our load patterns seems to be a very good fit for this kind 
 
 I have overheard others seeing a lot of increase in cost by going to the vCore Provisioned or Serverless compute tier. This approach is certainly not the way for all use cases. If you consider moving away from the DTU model, make sure you actually need the features and the increased flexibility of the vCore tiers. Or that your load patterns make a good fit for a serverless approach. DTU might be sufficient and cheaper for your case.
 
-### Conslusion 
+### Conclusion 
 On this particular database with its spiky load patterns, we actually managed to cut our cost in half without degrading performance using the Azure SQL Serverless tier. My experience is that the database scales fast when required, and backs down nicely when the load decreases. Having this on-demand resource strategy is all about saving money, and for us it did. Be careful if you attempt to try this out, as vCores and especially Serverless tier vCores, are more expensive than e.g. tiers using DTU. Pay close attention to your vCore second usage after deploying and do forecast calculations when the database has experienced normal load after a few hours or days. Good luck!
 
 _Prices used in this article are public list prices taken from Azure's websites_
