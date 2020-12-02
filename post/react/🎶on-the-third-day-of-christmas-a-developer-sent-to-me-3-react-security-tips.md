@@ -110,13 +110,13 @@ If you let users add their own URLs the chances are you will be exploited. Here
 <iframe src="javascript:alert("Bad_🎅_was_here!")" />
 ```
 
-It is not just a React problem, but it is important to mention to show that React can’t handle every scenario end every threat. It is neither just an `iframe`-tag problem. The same problem occurs in `src`-attributes e.g on images and the `href`-attribute on an a-tag. Trying to fix this by banning the word javascript and remove it will not suffice. The same can be done by using `data:` like this: 
+It is not just a React problem, but it is important to mention to show that React can’t handle every scenario end every threat. It is neither just an `iframe`-tag problem. The same problem occurs in `src`-attributes and the `href`-attribute of tags in general. Trying to fix this by banning the word javascript and remove it will not suffice. The same can be done by using `data:` like this: 
 
 ```jsx
 <iframe src="data:text/html,<script>alert("Bad_🎅_was_here!")</script>"/>
 ```
 
-If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite bekk.christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not suffice check that the URL starts with what you except e.g http or https. 
+If you need to let the users add the urls try adding as much as it yourself. For instance if they are adding a link to their favourite bekk.christmas article, let them only ad the calendar, year and day instead of the whole url. If this does not satisfy requirements check that the URL starts with what you except e.g http or https. 
 
 ## \#3 Keep your framework updated!
 
