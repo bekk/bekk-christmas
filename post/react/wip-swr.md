@@ -14,7 +14,7 @@ SWR has quickly become one of my favorite tools in my tool chest. The name SWR r
 
 SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
 
-## Data, loading and error
+## Getting the data
 Fetching data through the SWR is simple. The `useSWR` hook is your swiss army knife.
 
 ```js
