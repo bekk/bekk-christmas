@@ -91,4 +91,4 @@ Derfor er det gull verdt å lage unike historier om halvfiktive personer som rep
 2. et prosjekt som forstår verdien av gode brukerhistorier
 3. et prosjekt som er villig til å sette av tid til å skape dem
 
-Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder.
+Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder. Da skal du se det blir liv i merkevaren din, også!
