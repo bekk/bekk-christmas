@@ -11,7 +11,7 @@ links:
   - title: "Code examples "
     url: https://github.com/module-federation/module-federation-examples
 ---
-In webpack v5 a new feature was released; Module Federation. Module Federation is a javascript architecture allowing you to dynamically load code from a different webpack build. This way of sharing code between webpack applications leaves you with a sea of possibilities. You can reuse a component from a different project without having to go through the process of publishing it. It can be used to share util functions and constants across projects. Or if you are creating a website consisting of many applications, you can have a dedicated app to route between all projects. Perhaps relieving you of the need for a CMS system! Furthermore, it can allow you to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying. The applications can also be set up to share dependencies, to avoid duplicate code.
+In WebPack 5 a new feature was released; Module Federation. Module Federation is a javascript architecture allowing you to dynamically load code from a different webpack build. This way of sharing code between webpack applications leaves you with a sea of possibilities. You can reuse a component from a different project without having to go through the process of publishing it. It can be used to share util functions and constants across projects. Or if you are creating a website consisting of many applications, you can have a dedicated app to route between all projects. Perhaps relieving you of the need for a CMS system! Furthermore, it can allow you to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying. The applications can also be set up to share dependencies, to avoid duplicate code.
 
 ## Example
 
@@ -69,9 +69,7 @@ export default CalendarWindow;
 
 Now that we have two components in separate applications we are ready to set up the module federation. This is done in each app's `webpack.config.js` utilizing webpack's `ModuleFederation`-plugin. 
 
-In the `webpack.config.js` in `app2` we need to expose the container that we want to use in `app1`. 
-
-First, we need to add the `ModuleFederationPluging` to the list of plugins. In the config we need to give the app a filename, this will let the module federation know to emit a special remote entry for app2. Then we must expose the component we want to use, in our case, we will expose the `CalendarWindow`-component.  Finally, we will add `react` and `react-dom` to the list of shared dependencies. That way, `app1` will use its own  `react` and `react-dom` dependencies if available. If a shared dependency is not avaialble in the host app, module federation will provide a fallback dependency from `app2` anyway. 
+In the `webpack.config.js` in `app2` we need to expose the container that we want to use in `app1`. First, we need to add the `ModuleFederationPluging` to the list of plugins. In the config we need to give the app a filename, this will let the module federation know to emit a special remote entry for app2. Then we must expose the component we want to use, in our case, we will expose the `CalendarWindow`-component.  Finally, we will add `react` and `react-dom` to the list of shared dependencies. That way, `app1` will use its own  `react` and `react-dom` dependencies if available. If a shared dependency is not avaialble in the host app, module federation will provide a fallback dependency from `app2` anyway. 
 
 You also need to make sure that your public path is set to the URL it comes from. Otherwise, `app1`  will try to fetch the code from its own path and it will not find the remote entry. There is an update coming so that you can set up this dynamically in the host app. 
 
@@ -182,3 +180,5 @@ const App = () => {
 
 export default App;
 ```
+
+And voilà! We have a Christmas calendar in `app1` that imports its calendar windows from a seperate application!
