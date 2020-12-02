@@ -19,7 +19,7 @@ links:
   - title: Veiledning fra det norske Datatilsynet
     url: https://www.notion.so/hanskhe/Schrems-II-f39c7f10965446a7a4c4ec830da2b192#836e2910ab6643e18a56eb8a6fb9f889
 authors:
-  - Hans Kristian Henriksen
+  - Trond Arve Wasskog
 ---
 **Disclaimer**: Undertegnede er ikke jurist, og innholdet i denne artikkelen er en tolkning av situasjonen slik den står pr 4. desember 2020. Det er mye usikkerhet knyttet til konsekvensene av denne dommen, og betydningen av den veiledningen EU har publisert. **Du bør kontakte juridisk bistand for å vurdere hvordan dette påvirker ditt selskap.**
 
