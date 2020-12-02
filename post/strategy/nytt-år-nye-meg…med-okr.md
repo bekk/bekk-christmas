@@ -23,9 +23,9 @@ links:
 authors:
   - Martin Jøndal Digranes
 ---
-Ok, det er ikke nyttår riktig enda, men siden dette er siste luke i kalenderen vår tar vi det likevel opp: 
+Ok, det er ikke nyttår riktig enda, men siden dette er siste luke i kalenderen vår tar vi det likevel opp: Nyttårsforsetter! 
 
-Nyttårsforsetter! Vi har alle hørt dem, hatt dem og kanskje til og med mislyktes i å nå dem. Hva kjennetegner egentlig de som lykkes med å trene hver dag, som faktisk går ned 10 kg, får kjæreste OG blir rik? Personlig har jeg en følelse av at OKR kan være en del av forklaringen. Eller i hvert fall at teknikker eller prinsipper som OKR bygger på som målstyringsverktøy, kan hjelpe oss i riktig retning.
+Vi har alle hørt dem, hatt dem og kanskje til og med mislyktes i å nå dem. Hva kjennetegner egentlig de som lykkes med å trene hver dag, som faktisk går ned 10 kg, får kjæreste OG blir rik? Personlig har jeg en følelse av at OKR kan være en del av forklaringen. Eller i hvert fall at teknikker eller prinsipper som OKR bygger på som målstyringsverktøy, kan hjelpe oss i riktig retning.
 
 God lesning, god jul og godt nyttårsforsett!
 
