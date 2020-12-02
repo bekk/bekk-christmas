@@ -9,8 +9,8 @@ ingress: As frontend developers, our focus is on the users experience in our
   functionality can be. We all might say security on our minds, but we often
   rely on somebody else to handle this. Luckily, modern web frameworks, like
   React, come with built-in security against one of the dangers of the web –
-  Cross Site Scripting (XSS) attacks. What does React defend us from and more
-  importantly what does it not?
+  Cross Site Scripting (XSS) attacks. But what does React actually defend us
+  from and more importantly what does it not?
 links:
   - title: "OWASP top ten: Cross site scripting"
     url: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS)
