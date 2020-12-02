@@ -9,18 +9,19 @@ ingress: As frontend developers, our focus is on the users experience in our
   functionality can be. We all might say security on our minds, but we often
   rely on somebody else to handle this. Luckily, modern web frameworks, like
   React, come with built-in security against one of the dangers of the web –
-  Cross Site Scripting (XSS) attacks. This means that the components in our
-  application is secure, right? No. What does React defend us from and more
+  Cross Site Scripting (XSS) attacks. What does React defend us from and more
   importantly what does it not?
 links:
   - title: "OWASP top ten: Cross site scripting"
     url: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS)
+  - url: https://snyk.io/blog/10-react-security-best-practices/
+    title: 10-react-security-best-practices
 authors:
   - Julie Hill Roa
 ---
 ## The danger
 
-One of the most common security issues found in web applications is XSS vulnerabilities. XSS is a type of vulnerability that enables an untrusted source to place malicious data or scripts into a web application viewed by other users.  Because the browser interprets these scripts as a legitimate part of the code, the attacker gets full access of the current application running in the users’ browser. With this access the attacker can bypass access controls, steal the users’ secrets like passwords or credit cards or do unwanted action on behalf of another user.
+One of the most common security issues found in web applications is XSS vulnerabilities. XSS is a type of vulnerability that enables an untrusted source to place malicious data or scripts into a web application viewed by other users.  Because the browser interprets these scripts as a legitimate part of the code, the attacker gains full access to the current application running in the users' browser. With this access the attacker can bypass access controls, steal the users’ secrets like passwords or credit cards or do unwanted action on behalf of this user.
 
 The most successful way to prevent this attack is to never let untrusted data be a part of your application. This is however not feasible in most cases. Web applications today is often based on user input like comments and status or fields for entering information needed to give the users the services they are requesting. 
 
@@ -28,7 +29,7 @@ Another way to protect against XSS attacks is to be conscious of where the untru
 
 ## Built-in defences
 
-React is one of the modern frameworks that has built-in defences against XSS vulnerabilities. When a component is created, React is aware of the potential of malicious code injection. By default, React will escape all data embedded in JSX. Escaping basically means to remove or replace characters that can be interpreted as code. Thus, insuring that nothing can be executed unless explicitly written code in your application.
+React is one of the modern frameworks that has built-in defences against XSS vulnerabilities. When a component is created, React is aware of the potential of malicious code injection. By default, \[React will escape all data embedded in JSX](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks). Escaping basically means to remove or replace characters that can be interpreted as code. Thus, insuring that nothing can be executed unless explicitly written code in your application.
 
 One example of an inserted script: 
 
@@ -44,15 +45,13 @@ will with escaping output like this: 
 
 Because of this escaping it is safe to place untrusted data in JSX like this:`return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
 
-The same also applies with the use of Reacts API and `React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. React will escape the props and children, meaning all the arguments in the `createElement` function.
+The same also applies with the use of Reacts API and `React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. React will escape the children and protect the props, meaning the arguments in the `createElement` function.
 
-React is great when it comes to security and handle a lot of vulnerabilities for us. But React can’t be responsible for it all. By using something secure incorrectly can be insecure fast. So which pitfalls should we be mindful of and what should we look for in our code?
-
-So far React seems quite safe in regards to XSS vulnerabilities, which it is. But what happens when you find yourself outside the scope of React auto-escaping?
+React is great when it comes to security and handle a lot of vulnerabilities for us. But React can’t be responsible for it all. Using something secure incorrectly can turn insecure fast. So far React seems quite safe in regards to XSS vulnerabilities, which it is. But what happens when you find yourself outside the scope of React auto-escaping?
 
 ## \#1 Data passed to dangerouslySetInnerHtml must be sanitized
 
-According to Reacts own documentation `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`. One use case for this function is if a response from an external source is formatted with embedded HTML styling and you want to render it as originally intended. 
+[According to Reacts own documentation, `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`.](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) One use case for this function is if a response from an external source is formatted with embedded HTML styling and you want to render it as originally intended. 
 
 ```jsx
 export default () => {
@@ -123,6 +122,6 @@ If you need to let the users add the urls try adding as much as it yourself. For
 
 This might seem to be an obvious one, but is still an important reminder. 
 
-In Whitehat security's annual security report, they found that in one year there has been a 50% increase in vulnerabilities due to unpatched libraries. We use third-party libraries more and more, but it can be hard to be sure if the library has security vulnerabilities or not. In fact, another finding states that as much as 1/3 of all application security vulnerabilities are inherited rather than written in the application. Although Reacts developer team strive for security, errors can and will be made. Keep your framework updated as well as other third-party libraries you may use. Another tip for keeping the framework secure and your team updated on known vulnerabilities in your libraries is to use githubs dependabot on your repository. To read more about that check out the blogpost from the 2nd of December.
+In \[Whitehat security's annual security report](https://info.whitehatsec.com/Content-2019-StatsReport_LP.html?utm_source=website&utm_medium=0819-Website-WhiteHat2019StatisticsReport), they found that in one year there has been a 50% increase in vulnerabilities due to unpatched libraries. We use third-party libraries more and more, but it can be hard to be sure if the library has security vulnerabilities or not. In fact, another finding states that as much as 1/3 of all security vulnerabilities are inherited rather than written in the application. Although Reacts developer team strive for security, errors can and will be made. Keep your framework updated as well as other third-party libraries you may use. Another tip for keeping the framework secure and your team updated on known vulnerabilities in your libraries is to use githubs dependabot on your repository. To read more about that check out the blogpost from the \[2nd of December in security.christmas](https://security.christmas/2020/2).
 
 I will leave you with this: Never trust data from an external source. It does not matter if it is from a user, an API or the address bar in the browser. Handle this data as malicious and take security measures based on where this data is embedded in your code.
