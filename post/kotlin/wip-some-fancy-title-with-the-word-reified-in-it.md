@@ -16,8 +16,8 @@ ingress: _Reification_. Like many other concepts, it can be applied in a number
   Additionally, in Kotlin we actually have a modifier keyword built into the
   language, namely _reified_. In this article we'll take a closer look at how
   reification and type erasure are connected, and more specifically how we can
-  combine _inline functions_ and _reified_ generic type parameters in Kotlin to
-  achieve things in generic functions that we normally would not be able to.
+  combine _inline functions_ and _reified_ type parameters in Kotlin to achieve
+  things in generic functions that we normally would not be able to.
 authors:
   - Sondre Larsen Ovrid
 ---
