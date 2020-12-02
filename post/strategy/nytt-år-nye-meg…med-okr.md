@@ -33,21 +33,11 @@ Et nyttårsforsett er et mål man setter seg, og som er ment å gjelde fra årss
 
 ![Sitat](/assets/Avnistt1.png)
 
-1. Korona skaper isolasjon
-
-2. Isolasjon skaper behov for luft og frihet 
-
-3. Folk tilbringer mer tid i marka og ute på løpetur 
-
-4. = Korona (sjokket) har påvirket enkeltes livsstil til å bli mer aktiv.
+Korona skaper isolasjon --> Isolasjon skaper behov for luft og frihet --> Folk tilbringer mer tid i marka og ute på løpetur = Korona (sjokket) har påvirket enkeltes livsstil til å bli mer aktiv.
 
 Litt på samme måte opplever vi kanskje årsskiftet: 
 
-1. Ny kalender og blanke ark 
-
-2. Økt motivasjon og søkelys på endring
-
-3. =Endring. 
+Ny kalender og blanke ark --> Økt motivasjon og søkelys på endring = Endring.
 
 Men er det bare en god anledning som skal til for at vi skal nå målene våre? I en undersøkelse gjort av den britiske psykologiprofessoren Richard Wisemen (New Year’s Resolution Project), kommer det frem at hele 88% av de som setter seg nyttårsforsett mislykkes i å nå dem! 1. januar er rundt halvparten helt sikre på at de skal nå målene sine, mens kun 12% faktisk når dem.
 
