@@ -31,7 +31,7 @@ og..
 
 ### Ikke brukerhistorier-historier. Men tjenestedesign.
 
-Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reelle innspill under innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie, som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. 
+Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reelle innspill under innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie, som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. Og hvordan du fortsetter å bruke det. 
 
 Alt i alt dreier dette seg om å kartlegge en kundereise gjennom en persons historie, en såkalt persona. Historien forteller noe om hvordan personen blir klar over merkevaren, tar i bruk produktet, kanskje kommer tilbake for mer og forteller andre om det (word of mouth-effekten).
 
@@ -49,7 +49,7 @@ Men la oss ta det første først: Jeg jobbet sammen med en tjenestedesigner da l
 
 Så for at disse personaene ikke skulle bli like stive, tamme og tradisjonelle som kaldt, ferdigkinna smør uten salt, måtte det troverdige historier til. Historier fulle av følelser og detaljer. For er det noe vi ønsker å få ut av en innsiktsfase der kundereisen kartlegges, er det å virkelig se hva den totale opplevelsen av merkevaren gjør med menneskene som kommer borti den. Altså ikke å anta, men å vite.
 
-Derfor brukte vi informasjonen vi fikk fra brukertestene og -intervjuene med ekte folk som alle representerte hver sin målgruppe, til å lage historier som stemte godt overens med de viktigste detaljene fra intervjuene. Vi brukte personene til å inspirere oss i valg av alder, bosted, fritidsaktiviteter, øyeblikket der personen fattet interesse for produktet, installerte det og brukte det. Vi brukte deres sjargong og tilpasset oss språket i hver enkelt historie etter hvilke ord de selv brukte. Og så la vi til ulike opplevelser og følelser knyttet til hver situasjon basert på hva som kom frem i intervjuene. 
+Derfor brukte vi informasjonen vi fikk fra brukertestene og -intervjuene med ekte, eksisterende kunder som alle representerte hver sin målgruppe, til å lage historier som stemte godt overens med de viktigste detaljene fra intervjuene. Vi brukte personene til å inspirere oss i valg av alder, bosted, fritidsaktiviteter, øyeblikket der personen fattet interesse for produktet, installerte det og brukte det. Vi brukte deres sjargong og tilpasset oss språket i hver enkelt historie etter hvilke ord de selv brukte. Og så la vi til ulike opplevelser og følelser knyttet til hver situasjon basert på hva som kom frem i intervjuene. 
 
 ### Awareness, bestilling, pre-installering, installering, i bruk 
 
@@ -67,13 +67,13 @@ Det hører også til historien at vi var ganske inspirert av typisk kundereiseka
 
 ![Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps](/assets/screen-shot-2020-11-03-at-15.23.45.png "Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps")
 
-Så vi var vel litt preget av språket da vi selv definerte faser, prøver jeg vel kanskje å si her.  
+Så vi var vel litt preget av språket da vi selv definerte fasene, prøver jeg vel kanskje å si her.  
 
 ### Sett historien opp som et manus
 
 Etter intervjuene ble vi enige om hva slags inntrykk personene ga. Igjen satt vi med beskrivelser på deres personlighet. Nå var den største jobben foran meg som tekstforfatter: La personligheten, språket, følelsene og opplevelsen av merkevaren skinne gjennom i historiene. 
 
-Jeg skrev historiene fra start til slutt i et tekstdokument. Lot tastene sprette og poengene fare, uten å ta hensyn til hvilken fase personen jeg skrev om var i. Da historien var skrevet ferdig, satte jeg de ulike scenene inn i faser. Jeg sørget også for at hver enkelt scenen hadde nok detaljer til at det hele kunne eventuelt tegnes — ja, til og med filmes, om noen ville! På den måten kunne kunden velge ulike måter å formidle historiene på. 
+Jeg skrev historiene fra start til slutt i et tekstdokument. Lot tastene sprette og poengene fare, uten å ta hensyn til hvilken fase personen jeg skrev om var i. Da historien var skrevet ferdig, satte jeg de ulike scenene inn i faser. Jeg sørget også for at hver enkelt scenen hadde nok detaljer til at det hele kunne eventuelt tegnes —  ja, til og med filmes, om noen ville! På den måten kunne kunden velge ulike måter å formidle historiene på. 
 
 Ett av fem resultater kan du se nedenfor. Da kan du forsøke å holde et ark over fanene til høyre, og kun lese den flytende teksten nedover, for så å lese scenene beskrevet, og hvilken fase de er i etterpå. Stemmer det overens med inntrykket du får i selve teksten?
 
@@ -85,4 +85,4 @@ Så dette var altså min beskrivelse av personaen Anne på 47 år. Anne som blir
 
 Det tar gjerne et liv å bli ordentlig kjent med en person, sies det (okei, jeg sa det i hvert fall nå). Men forteller du en historie av en persons liv grundig og interessant nok, kan det være det som nettopp trengs i en merkevare- og markedsføringsammenheng.
 
-Derfor er det gull verdt å lage unike historier om halvfiktive personer som representerer en bestemt målgruppe knyttet til ditt produkt, når du ønsker å forstå mer om dem. Og det gjør du ved å servere små gullkorn, detaljer og beskrivelser i historien. Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder.
+Derfor er det gull verdt å lage unike historier om halvfiktive personer som representerer en bestemt målgruppe knyttet til ditt produkt, når du ønsker å forstå mer om dem. Og det gjør du ved å servere små gullkorn, detaljer og beskrivelser i historien. Du trenger absolutt ikke å bære tittelen tekstforfatter for å gjøre dette. Men du trenger et prosjekt som forstår verdien av gode brukerhistorier, og som er villig til å sette av tid til å skape dem. Litt etter litt vil du få et klarere bilde av hele kundereisen til personen du har med å gjøre. Og dette er ikke noe du bare finner på; det har selvfølgelig en viss grodd rot til virkeligheten. Og hvorfor har det det, tro? Jo, fordi du har brukt reell, kvalitativ innsikt. Som igjen har gitt en unik mulighet til å utøve empati når dere fremover har kontakt med både potensielle og eksisterende kunder.
