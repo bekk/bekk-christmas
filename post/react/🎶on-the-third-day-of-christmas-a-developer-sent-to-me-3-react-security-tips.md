@@ -43,15 +43,20 @@ will with escaping output like this: 
 &lt;script&gt;alert('Merry Christmas from your attacker🎅')&lt;/script&gt;
 ```
 
-Because of this escaping it is safe to place untrusted data in JSX like this:`return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  as everything is converted and rendered as string. Even if there is a script in `cristmasCarolFromUntrustedSource`, it will not be executed. 
+Because of this escaping it is safe to place untrusted data in JSX like this:
+`return ( <p>{ cristmasCarolFromUntrustedSource }</p> );`  
+as everything is converted and rendered as string. Even if there is a script in
+`cristmasCarolFromUntrustedSource`, it will not be executed. 
 
-The same also applies with the use of Reacts API and `React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. React will escape the children and protect the props, meaning the arguments in the `createElement` function.
+The same also applies with the use of Reacts API and 
+`React.createElement("p", { props }, cristmasCarolFromUntrustedSource)`. 
+React will escape the children and protect the props, meaning the arguments in the `createElement` function.
 
 React is great when it comes to security and handle a lot of vulnerabilities for us. But React can’t be responsible for it all. Using something secure incorrectly can turn insecure fast. So far React seems quite safe in regards to XSS vulnerabilities, which it is. But what happens when you find yourself outside the scope of React auto-escaping?
 
 ## \#1 Data passed to dangerouslySetInnerHtml must be sanitized
 
-[According to Reacts own documentation, `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`.](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) One use case for this function is if a response from an external source is formatted with embedded HTML styling and you want to render it as originally intended. 
+[According to Reacts own documentation](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml),  `dangerouslySetInnerHtml` is Reacts replacement for `innerHtml`. One use case for this function is if a response from an external source is formatted with embedded HTML styling and you want to render it as originally intended. 
 
 ```jsx
 export default () => {
