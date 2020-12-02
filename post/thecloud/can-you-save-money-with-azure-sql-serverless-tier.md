@@ -40,11 +40,13 @@ First I tested our normal daily operations that I know require a lot of power wi
 
 As shown in the image below I configured maximum vCores to 12. I knew that would be performant enough for our most heavy operations, and I let the minimum stay on 1.5 vCores to allow maximum scalability. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that the cost calculations at maximum and minimum is as follows:
 ```
-Maximum => 0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK
-Minimum => 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK
+// Maximum (using 12 cores all the time)
+0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK/month
+
+// Minimum (using 1.5 cores all the time)
+0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK/month
 ```
 I sure hoped this wasn't running on max most of the time, because that would be twice as expensive as our current solution and I am really here to save money!
-
 ![Serverless vCore](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
 
 ### The Autopause feature
