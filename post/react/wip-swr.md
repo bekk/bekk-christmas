@@ -101,4 +101,4 @@ As you might have understood by now, the `useSWR` hook comes with a lot of possi
 # 🏎 Ready to take it out for a spin?
 The best way of getting to know SWR is to head over to the documentation and get started yourself. There are great examples and a long list of features to get to know. One of the latest exciting features is integration with the new [Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html) API from React, which connects component loading with data fetching.
 
-That's it for me, happy holidays! 🎅🎄⛄️
+That's it for me, thank you for reading and happy holidays! 🎅🎄⛄️
