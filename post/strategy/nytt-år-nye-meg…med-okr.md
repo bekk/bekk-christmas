@@ -4,14 +4,19 @@ post_year: 2020
 post_day: 16
 title: Nytt år, nye meg…med OKR?
 image: https://images.unsplash.com/photo-1603979131947-e60fe57ac080?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80
-ingress: |-
-  Jeg skal trene hver dag. 
+ingress: "Jeg skal trene hver dag. 
+
 
   Jeg skal gå ned 10 kg. 
 
+
   Jeg skal få kjæreste.
 
+
   Jeg skal bli rik.
+
+
+  \  "
 authors:
   - Martin Jøndal Digranes
 ---
