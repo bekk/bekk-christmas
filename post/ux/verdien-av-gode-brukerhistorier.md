@@ -51,20 +51,23 @@ Så for at disse personaene ikke skulle bli like stive, tamme og tradisjonelle s
 
 Derfor brukte vi informasjonen vi fikk fra brukertestene og -intervjuene med ekte folk som alle representerte hver sin målgruppe, til å lage historier som stemte godt overens med de viktigste detaljene fra intervjuene. Vi brukte personene til å inspirere oss til valg av alder, bosted, fritidsaktiviteter, øyeblikket der personen fattet interesse for produktet, installerte det og brukte det. Vi brukte deres sjargong og tilpasset oss språket i hver enkelt historie etter hvilke ord de selv brukte. Og så la vi til ulike opplevelser og følelser knyttet til hver situasjon basert på hva som kom frem av sannhet i intervjuene. 
 
-### Awareness, pre-installering, installering, bruk 
+### Awareness, bestilling, pre-installering, installering, i bruk 
 
 Når du skal kartlegge en kundereise for en bestemt merkevare, bør fasene tilpasses produktet. Er det noe som må lastes ned? Sendes fysisk? Installeres? Monteres? Dersom en slik situasjon tar stor plass i kundereisen, bør det som foregår der vies en hel fase til. 
 
 I vårt tilfelle bestemte vi oss for disse fasene: 
 
-* Awareness – hvordan ble kunden oppmerksom på produktet?
-* pre-installering  –  hva slags kontakt hadde kunden til merkevaren før produktet ble installert?
+* Awareness – hvordan blir kunden oppmerksom på produktet?
+* Bestilling – hvordan bestiller kunden produktet, og hvordan føles det?
+* pre-installering  –  hva slags kontakt har kunden med merkevaren før produktet blir installert?
 * installering – hvordan foregår installeringen fra kundens perspektiv?
 * bruk  – hvordan blir produktet tatt i bruk av kunden videre? Hvordan er livet til kunden etter at produktet kom i det?
 
 Det hører også til historien at vi var ganske inspirert av typisk kundereisekartlegging, også kalt customer journey mapping, som dette:
 
 ![Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps](/assets/screen-shot-2020-11-03-at-15.23.45.png "Eksempel på kundereisekartlegging, fra https://blog.hurree.co/blog/customer-journey-maps")
+
+Så vi var vel litt preget av språket da vi selv definerte faser, prøver jeg vel kanskje å si her.  
 
 ### Sett historien opp som et manus
 
