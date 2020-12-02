@@ -12,9 +12,9 @@ authors:
 ---
 SWR has quickly become one of my favorite tools in my tool chest. The name SWR refers to the caching strategy *stale-while-revalidate*, and in its essence, the library provides just this, a caching strategy. The library is made by Vercel, the creators of Next.js, and has excellent documentation.
 
-SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
+SWR has interfaces to easily cache resources from your backend, regardless of which underlying data fetching library you're using. You provide the data fetching, SWR handles the caching, and stores it for you. As one would expect from a caching library. However, SWR delivers a much more useful set of tools to manage the whole process of using remote resources.
 
-## Getting the data
+## ✨ Getting the data
 Fetching data through the SWR is simple. The `useSWR` hook is your swiss army knife.
 
 ```js
@@ -29,7 +29,7 @@ A typical fetcher function can look along the lines of this:
 const fetcher = (url) => fetch(url).then((res) => res.json());
 ```
 
-## But where is the cache and the strategy?
+## 🤔 But where is the cache and the strategy?
 The caching strategy *stale while revalidating* essentially means that the data will be stored in the cache with the *key* as the identifier. As mentioned, the data will be `undefined` the first time the `useSWR` hook is used until it is loaded.
 
 If the same key is used again, the *stale* data will be returned immediately, while the internals of SWR *revalidates* the data in the background. Once revalidation is done and the cache is refreshed, the new data will be reflected in the data object. This way, you can provide stale data _while_ loading new data. 
@@ -39,7 +39,7 @@ const { data, error, isValidating } = useSWR(URL, fetcher);
 ``` 
 The `useSWR` hook exposes the revalidation status through the hook, which can be used to show some loading state.
 
-## Mutation
+## ☢️ Mutation
 Cool, you've got a great way of fetching and caching data. But now, you might want to change some of that data. Perhaps you've sent an update request to the backend resource but don't want the UI to feel slow by waiting for another update of the data from that backend. 
 
 A mutate function is available through the library, and it gives us a few really convenient pieces of functionality. The mutate function signature looks like this:
@@ -70,17 +70,17 @@ You may notice that we prevent revalidation in the first mutation. This is becau
 ### But what about the other places using the same data?
 Mutating the cache will cause the data in all the places using the same cache to be updated automatically! 
 
-## Deduplication
+## ⛔️ Deduplication
 One of my favorite features of the library SWR is the deduplication feature. Deduplication is a long word, which essentially means SWR will prevent multiple uses of the `useSWR` hook with the same key to revalidate the same resource within a configured interval. Instead, a single request will be sent, and the result returned to each of the requestèes.
 
 This will allow you to use the same SWR hook across multiple components without any thought to data-flow. Where previously the resource would have been fetched in a parent component and passed down to the child components, you can now simply ask for the resource, and the resource will be made available. 
 
 Deduplication is, of course, configurable, and you can decide how long the interval should be.
 
-## Automatic retries
+## ♻️ Automatic retries
 By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging integrations or any other custom behavior.
 
-## Staying fresh!
+## 🧊 Staying fresh!
 Sometimes, we need our data to be up to date, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there are multiple strategies for keeping your screen filled with the latest and greatest of data. 
 - There's revalidation upon **browser-tab focus**, which is pretty self-explanatory. This gives you new data when you actually want it. 
 - There's a revalidate upon **reconnection**, which gives clients with unstable and slow connections a break. 
