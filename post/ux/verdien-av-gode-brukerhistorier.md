@@ -6,8 +6,8 @@ title: Verdien av gode brukerhistorier
 image: ""
 ingress: "## Blås i [dævve](https://www.betydning-definisjoner.com/D%C3%A6vve)
   personas. Blås heller liv i innsiktsarbeidet, og lag historier du tror på
-  selv. Det er først da vi begynner å snakke. Og kommer nærmere de faktiske
-  folka som bruker produktene dine."
+  selv. Det er først da du kommer nærmere de faktiske folka som bruker produktet
+  ditt."
 description: "Skriver du brukerhistorier basert på ekte innsikt, kommer du
   nærmere brukerne av produktet og tjenestene dine. "
 authors:
