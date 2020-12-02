@@ -10,7 +10,7 @@ ingress: >-
   with over *1.5 million packages* on NPM.
 
 
-  9 years later, during JSConf 2018, he enters the stage again. This time, he apologizes to the JavaScript community and discusses the *10 things [he] regrets about Node.* Towards the end, he reveals his new project, an alternative framework for JavaScript development.
+  9 years later, during JSConf 2018, he enters the stage again. This time, he apologizes to the JavaScript community and discusses the [10 things he regrets about Node](https://www.youtube.com/watch?v=M3BM9TB-8yA). Towards the end, he reveals his new project, an alternative framework for JavaScript development.
 
 
   The new project is called Deno. And this year, Deno finally left the alpha stage, offering a stable CLI and solid documentation. Which means it's the perfect time to have a closer look!
