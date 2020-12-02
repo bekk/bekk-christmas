@@ -48,7 +48,7 @@ mutate(key, data?, shouldRevalidate?)
 ```
 The `key` is the cache key, `data` is the changed data object, and `shouldRevalidate` is whether or not to trigger revalidation of the data against the resource after mutating the data.
 
-For an even tidier usage, you can pull out the swiss army knife again, as the mutate function with a predefined key is given through the `useSWR` hook; all you've got to do is ask!
+For an even tidier usage, you can pull out the swiss army knife again, as the mutate function with a pre-set `key` is given through the `useSWR` hook; all you've got to do is ask!
 ```js
 const { data, error, isValidating, mutate } = useSWR(URL, fetcher);
 ``` 
@@ -65,7 +65,7 @@ const changeUsername = (username) => {
   mutate()
 }
 ```
-You may notice that we prevent revalidation in the first mutation. This is because a revalidation would revalidate the data back to its initial state, as the update request might not have gone through yet.
+You may notice that we prevent revalidation in the first mutation. This is because a revalidation would load the data back to its initial state, as the update request might not have gone through yet.
 
 ### But what about the other places using the same data?
 Mutating the cache will cause the data in all the places using the same cache to be updated automatically! 
@@ -78,9 +78,9 @@ This will allow you to use the same SWR hook across multiple components without 
 Deduplication is, of course, configurable, and you can decide how long the interval should be.
 
 ## ♻️ Automatic retries
-By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging integrations or any other custom behavior.
+By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging or error tracking integrations, or any other custom behavior 🤷🏻‍♂️. 
 
-## 🧊 Staying fresh!
+## 🏝 Staying fresh is a breeze
 Sometimes, we need our data to be up to date, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there are multiple strategies for keeping your screen filled with the latest and greatest of data. 
 - There's revalidation upon **browser-tab focus**, which is pretty self-explanatory. This gives you new data when you actually want it. 
 - There's a revalidate upon **reconnection**, which gives clients with unstable and slow connections a break. 
