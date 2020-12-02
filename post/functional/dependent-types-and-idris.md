@@ -278,7 +278,7 @@ type NonEmpty a
     = NonEmpty a (List a)
 ```
 
-This single-case union ensures that we have at least one instanse of the type `a`, and is such a non-empty list!
+This single-case union ensures that we have at least one instance of the type `a`, and is such a non-empty list!
 A clean `head`-function could be written easily as:
 
 ```elm
@@ -287,5 +287,5 @@ head (NonEmpty x xs) =
     x
 ```
 
-This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material such as [Parse, don't validate](parse-dont-validate) and [Designing with types: Making illegal states unrepresentable](illegal-states-unrepresentable).
-For longer reads, the book [_Type-Driven Development with Idris_](https://www.manning.com/books/type-driven-development-with-idris) by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅
+This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material, all linked below, such as _Parse, don't validate_ and _Designing with types: Making illegal states unrepresentable_.
+For longer reads, the book _Type-Driven Development with Idris_ by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅
