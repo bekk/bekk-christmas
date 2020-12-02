@@ -16,6 +16,8 @@ links:
     url: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS)
   - url: https://snyk.io/blog/10-react-security-best-practices/
     title: 10-react-security-best-practices
+  - title: Preventing XSS in React
+    url: https://pragmaticwebsecurity.com/articles/spasecurity/react-xss-part1.html
 authors:
   - Julie Hill Roa
 ---
