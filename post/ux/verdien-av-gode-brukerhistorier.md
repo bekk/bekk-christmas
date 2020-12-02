@@ -3,18 +3,21 @@ calendar: ux
 post_year: 2020
 post_day: 3
 title: Verdien av gode brukerhistorier
-image: https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F2402%2F1*aRiQ9uLNqlvH5zUE1BSc8Q.png&imgrefurl=https%3A%2F%2Fmedium.com%2F%40priyank.it%2Fuser-story-mapping-product-backlog-creation-7ea9a54f7f0e&tbnid=RUmgkoaV86mR5M&vet=12ahUKEwjHrcC1sa_tAhVdBncKHWgqCP4QMygFegUIARDbAQ..i&docid=sl8RlJ1I2izlrM&w=1201&h=890&q=user%20story&ved=2ahUKEwjHrcC1sa_tAhVdBncKHWgqCP4QMygFegUIARDbAQ
+image: ""
 ingress: >-
   ![](/assets/image-from-ios-17-.jpg)
-
-
-  ![]()
 
 
   #### Blås i [dævve](https://www.betydning-definisjoner.com/D%C3%A6vve) personas. Blås heller liv i innsiktsarbeidet og lag historier du tror på selv. Det er da du kommer nærmere de faktiske folka som bruker produktene dine.
 description: "Skriver du brukerhistorier basert på ekte innsikt, kommer du
   nærmere brukerne av produktet og tjenestene dine. "
 ---
+
+
+![](/assets/image-from-ios-17-.jpg)
+
+
+
 Så kult at du ramlet inn på denne artikkelen, a! Hvor ble du klar over at den fantes, tro? Uansett. Før du kom helt ned hit leste du sikkert så vidt den tørre tittelen (kom ikke på noe bedre) som inneholder ordet "brukerhistorier”. 
 
 Kanskje du til og med tenkte “ja, dette har jeg jo vært borti før. Skrive sånne dølle greier liknende ‘som en innholdsprodusent vil jeg ha et ingressfelt i CMS-et, slik at jeg kan skrive ingresser til rådgivningsartiklene.’ Tror ikke jeg får noe særlig ut av å lese denne artikkelen, altså. Jeg gjør nok ikke det.”
