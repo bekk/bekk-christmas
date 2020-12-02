@@ -27,10 +27,6 @@ Personally, I learn best by reading and writing, and not just by viewing and lis
 
 ![Pair-programming](https://i.ibb.co/nwgR5p1/react-kalender.jpg)
 
-test2 
-
-<img class="wide-image" src="https://i.ibb.co/nwgR5p1/react-kalender.jpg" />
-
 As with anything that you are trying to learn, I recommend that you reflect on which learning style suits you best. If you would like to just dive right into a project like me, but you’re unsure of where to start, [this page](https://www.frontendmentor.io/) can be useful. And if you’re the type that likes to start from scratch and have small explanations for everything you do, maybe some of these workshops can be useful:
 
 * [React and TypeScript](https://github.com/bekk/typet-javascript-workshop)
