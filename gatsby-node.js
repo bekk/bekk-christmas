@@ -85,6 +85,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     context: {
                         id: node.id,
                         isPreview,
+                        showJsMystery:
+                            post_day === 24 && post_year === 2020 && calendar === 'javascript',
                         showPrevLink: post_day > 1,
                         showNextLink: post_day !== hideWindowsAfterDay,
                     },

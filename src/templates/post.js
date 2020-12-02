@@ -13,6 +13,7 @@ import PrismThemer from '../components/PrismThemer';
 import Calendar from '../components/Calendar';
 import CalendarWindowOpen from '../components/CalendarWindowOpen';
 import OtherCalendars from '../components/OtherCalendars';
+import JsMysteryPage from '../components/jsMystery/index';
 
 import { setImageWidth, getWindowImagePlaceholder } from '../utils';
 import * as mediaQueries from '../constants/media-queries';
@@ -95,7 +96,7 @@ const Template = ({ data, pageContext }) => {
         links,
         post_day,
         post_year,
-        authors
+        authors,
     } = frontmatter;
     const firstFourLinks = links != null && links.slice(0, 4);
     const uniqueLinkImageNumbers = [];
@@ -157,6 +158,7 @@ const Template = ({ data, pageContext }) => {
                     <ArticleBody>
                         <section dangerouslySetInnerHTML={{ __html: html }} />
                     </ArticleBody>
+                    {pageContext.showJsMystery && <JsMysteryPage />}
                 </PrismThemer>
                 <PostNavigation>
                     {pageContext.showNextLink && (
