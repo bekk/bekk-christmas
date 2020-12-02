@@ -47,9 +47,9 @@ Men la oss ta det første først: Jeg jobbet sammen med en tjenestedesigner da l
 
 ### Sanne historier basert på brukertester og -intervjuer
 
-Så for at disse personaene ikke skulle bli like stive, tamme og tradisjonelle som kaldt, ferdigkinna smør uten salt, måtte det troverdige historier til. Historier fulle av følelser og detaljer. For er det noe vi ønsker å få ut av en innsiktsfase der kundereisen kartlegges, er det å virkelig se hva den totale opplevelsen av merkevaren gjør med menneskene som kommer borti den.
+Så for at disse personaene ikke skulle bli like stive, tamme og tradisjonelle som kaldt, ferdigkinna smør uten salt, måtte det troverdige historier til. Historier fulle av følelser og detaljer. For er det noe vi ønsker å få ut av en innsiktsfase der kundereisen kartlegges, er det å virkelig se hva den totale opplevelsen av merkevaren gjør med menneskene som kommer borti den. Altså ikke å anta, men å vite.
 
-Derfor brukte vi informasjonen vi fikk fra brukertestene og -intervjuene med ekte folk som alle representerte hver sin målgruppe, til å lage historier som stemte godt overens med de viktigste detaljene fra intervjuene. Vi brukte personene til å inspirere oss til valg av alder, bosted, fritidsaktiviteter, øyeblikket der personen fattet interesse for produktet, installerte det og brukte det. Vi brukte deres sjargong og tilpasset oss språket i hver enkelt historie etter hvilke ord de selv brukte. Og så la vi til ulike opplevelser og følelser knyttet til hver situasjon basert på hva som kom frem av sannhet i intervjuene. 
+Derfor brukte vi informasjonen vi fikk fra brukertestene og -intervjuene med ekte folk som alle representerte hver sin målgruppe, til å lage historier som stemte godt overens med de viktigste detaljene fra intervjuene. Vi brukte personene til å inspirere oss i valg av alder, bosted, fritidsaktiviteter, øyeblikket der personen fattet interesse for produktet, installerte det og brukte det. Vi brukte deres sjargong og tilpasset oss språket i hver enkelt historie etter hvilke ord de selv brukte. Og så la vi til ulike opplevelser og følelser knyttet til hver situasjon basert på hva som kom frem i intervjuene. 
 
 ### Awareness, bestilling, pre-installering, installering, i bruk 
 
