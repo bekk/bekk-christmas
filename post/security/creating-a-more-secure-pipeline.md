@@ -5,7 +5,7 @@ post_day: 3
 title: How secure is your build pipeline?
 image: https://images.unsplash.com/photo-1559510981-10719ce4266a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ingress: As developers, we usually use some sort of pipeline to build and deploy
-  our code. Tools like Circle CI, Gitlab CI/CD or Github Actions are popular.
+  our code. Tools like Circle CI, Gitlab CI/CD and Github Actions are popular.
   Can your pipelines be a security vulnerability? Can you use your pipeline to
   create a more secure application?
 description: build, pipeline, dependencies, github actions, snyk, owasp,
