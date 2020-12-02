@@ -80,7 +80,7 @@ Since we have information about the generic type parameter at the call site, may
         return thing;
     }
 
-    // Invokation
+    // Invocation
     public static final void main() {
         new ExtendableClass();
         ...
