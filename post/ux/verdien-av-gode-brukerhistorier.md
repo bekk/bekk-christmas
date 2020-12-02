@@ -15,9 +15,11 @@ authors:
 ---
 Så kult at du ramlet inn på denne artikkelen, a! Hvor ble du klar over at den fantes, tro? Uansett. Før du kom helt ned hit leste du sikkert så vidt den tørre tittelen (i manko på å komme på noe bedre), som inneholder ordet "brukerhistorier”. 
 
-Kanskje du til og med tenkte “ja, dette har jeg jo vært borti før. Skrive sånne dølle greier liknende ‘som en innholdsprodusent vil jeg ha et ingressfelt i CMS-et, slik at jeg kan skrive ingresser til rådgivningsartiklene.’ Tror ikke jeg får noe særlig ut av å lese denne artikkelen, altså. Jeg gjør nok ikke det.”
+Kanskje du til og med tenkte “ja, dette har jeg jo vært borti før. Skrive sånne dølle greier liknende ‘som en innholdsprodusent vil jeg ha et ingressfelt i CMS-et, slik at jeg kan skrive ingresser til rådgivningsartiklene.’ Tror ikke jeg får noe særlig ut av å lese denne artikkelen, altså..”
 
-Og ja, kanskje akkurat dét er litt dølt. Men det hjelper nå utviklerne å sette seg inn i kontekst og forstå hva en person i en bestemt rolle trenger rent teknisk sett. 
+![](/assets/image-from-ios-17-.jpg)
+
+Og ja, kanskje akkurat dét er litt dølt. Men det hjelper nå utviklerne å sette seg inn i kontekst og forstå hva en person i en bestemt rolle trenger rent teknisk sett. Og hvor dølt hadde det ikke vært for deg å gå glipp av det jeg egentlig skal fortelle om, på grunn av din forutinntatte antakelse? For er det noe vi ofte gjør, kanskje uten å registrere det engang, er det å anta både det ene og det andre.  
 
 Uansett kan jeg fortelle deg nå, med en eneste gang, at:
 
@@ -29,7 +31,7 @@ og..
 
 #### Ikke brukerhistorier-historier. Men tjenestedesign.
 
-Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reale innspill fra innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. 
+Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenestedesign, da jeg jobbet for en leverandør av TV-kanaler. Men ikke ulikt tekniske brukerhistorier, setter du brukerens behov i fokus. Gjennom gode, troverdige historier basert på reale innspill fra innsiktsfasen, ser du ditt produkt og din merkevare gjennom en reell persons ståsted. Alle som bruker ditt produkt eller din tjeneste har hver sin historie, som forteller hvorfor og hvordan de endte opp med å bruke nettopp ditt produkt. 
 
 Alt i alt dreier dette seg om å kartlegge en kundereise gjennom en persons historie, en såkalt persona. Historien forteller noe om hvordan personen blir klar over merkevaren, tar i bruk produktet, kanskje kommer tilbake for mer og forteller andre om det (word of mouth-effekten).
 
