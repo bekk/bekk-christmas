@@ -35,9 +35,11 @@ Dette dreier seg om historier jeg lærte meg å lage som en metode innen tjenest
 
 Alt i alt dreier dette seg om å kartlegge en kundereise gjennom en persons historie, en såkalt persona. Historien forteller noe om hvordan personen blir klar over merkevaren, tar i bruk produktet, kanskje kommer tilbake for mer og forteller andre om det (word of mouth-effekten).
 
-Og kanskje du nå tenker “ja, men persona, a, du. Det er så 2012. Har laget mange verdiløse personas opp igjennom, skal jeg si deg!”. 
+Og kanskje du nå tenker “ja, men persona, a, du. Det er så 2012. Har laget mange verdiløse personas opp igjennom, skal jeg si deg!”. Etterfulgt av en sånn latter til hun Signe i NRK-programmet Parterapi (stakkars Tormod).
 
-#### Blås liv i og skap en verdifull persona
+![](/assets/image-from-ios-18-.jpg)
+
+#### Skap en verdifull persona
 
 Og det er nettopp dette jeg ønsket å utfordre med noen litt.. ikke uortodokse, men kanskje mer autentiske teknikker. 
 
