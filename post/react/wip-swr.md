@@ -87,7 +87,7 @@ Sometimes, we need our data to be up to date, and you've probably already guesse
 - The more classic: revalidation of data upon set **intervals**. This one is smart, and won't revalidate data that are not rendered on screen, and won't try to revalidate unfocused tabs or when the internet is disconnected *(unless you tell it to)*.
 
 # 🔧 Keeping track of the configurations
-As you might have understood by now, the `useSWR` hook comes with a lot of possible configurations. If you want to configure these globally for your react app, you can do so just that by wrapping your app with the `SWRConfig` like so:
+As you might have understood by now, the `useSWR` hook comes with a lot of possible configurations. If you want to configure these globally for your react app, you can do so just that by wrapping a part of your app with the `SWRConfig` like so:
 ```jsx
 <SWRConfig value={config}>
   <App/>
