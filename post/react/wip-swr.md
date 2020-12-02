@@ -80,7 +80,7 @@ This will allow you to use the same SWR hook across multiple components without 
 Deduplication is, of course, configurable, and you can decide how long the interval should be.
 
 ## ♻️ Automatic retries
-By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging or error tracking integrations, or any other custom behavior 🤷🏻‍♂️. 
+By default, SWR provides automatic retry of a failed fetches. By default, this comes with a smart backoff mechanism to avoid retrying too often. You can also roll your own retry functions, which is a great place to insert logging or error tracking integrations, or any other custom behavior. 🤷🏻‍♂️ 
 
 ## 🏝 Staying fresh is a breeze
 Sometimes, we need our data to be up to date, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there are multiple strategies for keeping your screen filled with the latest and greatest of data. 
@@ -100,3 +100,5 @@ As you might have understood by now, the `useSWR` hook comes with a lot of possi
 
 # 🏎 Ready to take it out for a spin?
 The best way of getting to know SWR is to head over to the documentation and get started yourself. There are great examples and a long list of features to get to know. One of the latest exciting features is integration with the new [Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html) API from React, which connects component loading with data fetching.
+
+That's it for me, happy holidays! 🎅🎄⛄️
