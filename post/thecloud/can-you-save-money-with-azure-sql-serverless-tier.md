@@ -24,7 +24,7 @@ First let's talk about the Standard tier. It has a simple method of deciding how
 
 ![S9 tier](https://user-images.githubusercontent.com/920028/100767431-0d206700-33fa-11eb-8c18-9a861cd5b099.PNG)
 
-### The more flexible vCore tiers
+### The flexible vCore tiers
 
 But there is another whole category of tiers that offers much more flexibility, and that is the vCore tiers. They are structured around vCores (virtual cores) as the unit of compute power instead of DTU. Think of vCores as cores in a CPU. Here is where we find the Serverless compute tier inside the category tier General Purpose. The General Purpose tier looked okay for our usage knowing that Hyperscale or Business Critical would be much more expensive. 
 
@@ -38,14 +38,14 @@ First I tested our normal daily operations that I know require a lot of power wi
 
 ### The cost of the Serverless tier
 
-![Serverless vCore](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
-
-I configured max vCores to 12, as I knew that would be performant enough for our most heavy operations, and let the minimum stay on 1.5 to allow maximum scalability. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that the cost calculations at maximum and minimum is as follows:
+As shown in the image below I configured maximum vCores to 12. I knew that would be performant enough for our most heavy operations, and I let the minimum stay on 1.5 vCores to allow maximum scalability. The cost for the Serverless tier is `0.001294 NOK / vCore / second`. This means that the cost calculations at maximum and minimum is as follows:
 ```
 Maximum => 0.001294 NOK * 12 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 40249 NOK
 Minimum => 0.001294 NOK * 1.5 (cores) * 60 (seconds) * 60 (minutes) * 24 (hours) * ~30 (days) = 5031 NOK
 ```
 I sure hoped this wasn't running on max most of the time, because that would be twice as expensive as our current solution and I am really here to save money!
+
+![Serverless vCore](https://user-images.githubusercontent.com/920028/100769681-afd9e500-33fc-11eb-8242-060160e6d954.PNG)
 
 ### The Autopause feature
 One of my concerns was regarding a feature called Autopause, which is enabled by default. Enabling this will put the whole database to sleep when there is no activity after a given amount of time. That means there is more money to save, but there is a catch. I found an [article](https://kohera.be/blog/azure-cloud/should-i-use-serverless-for-all-my-azure-sql-databases/) where I read that the first connection to the database *would fail*. Therefore I disabled this feature to not cause any unwanted interruptions for systems or other consumers.
