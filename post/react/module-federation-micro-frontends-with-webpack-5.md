@@ -6,14 +6,12 @@ title: "Module Federation: Micro-frontends with webpack 5 "
 links:
   - title: "Documentation "
     url: https://webpack.js.org/concepts/module-federation/
-  - title: "Code examples "
-    url: https://github.com/module-federation/module-federation-examples
   - url: https://www.youtube.com/watch?v=D3XYAx30CNc&feature=youtu.be
     title: Introduction video
+  - title: "Code examples "
+    url: https://github.com/module-federation/module-federation-examples
 ---
-In webpack v5 a new feature was released; Module Federation. Module Federation is a javascript architechture allowing you to dynamically load code from a different webpack build. This way of sharing code between webpack applications leaves you with a sea of possibilities. You can reuse a component from a different project without having to go through the process of publishing it. It can be used to share util functions and constants across projects. Or if you are creating a website existing of many applications, you can have a dedicated app to route between all projects. Perhaps releaving you of the need for a CMS system! Furthermore, it can allow you to incorparate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest latest version from your design system without rebuilding and deploying. The applications can also be set up to share dependencies, to avoid duplicate code. \
-\
-TODO
+In webpack v5 a new feature was released; Module Federation. Module Federation is a javascript architecture allowing you to dynamically load code from a different webpack build. This way of sharing code between webpack applications leaves you with a sea of possibilities. You can reuse a component from a different project without having to go through the process of publishing it. It can be used to share util functions and constants across projects. Or if you are creating a website consisting of many applications, you can have a dedicated app to route between all projects. Perhaps relieving you of the need for a CMS system! Furthermore, it can allow you to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying. The applications can also be set up to share dependencies, to avoid duplicate code.
 
 ## Example
 
@@ -21,7 +19,7 @@ I am more of a learn-by-doing kind of gal, so let's have a look at an example. I
 
 ### App 1: The Container
 
-`app1` is a simple react application that will run on `localhost:3001`. In the `App`-componenet we have a simple container with a header for the calendar. 
+`app1` is a simple react application that will run on `localhost:3001`. In the `App`-component we have a simple container with a header for the calendar. 
 
 ```javascript
 // app1/src/App
@@ -39,9 +37,9 @@ const App = () => {
 export default App;
 ```
 
-### App 2: Calender Window
+### App 2: Calendar Window
 
-In `app2` we will create the calendar content  in a component called `CalendarWindow`. Initially you will only see the day of the month the window is hiding, but if you click the box it will tell you how many days there are until Christmas. 
+In `app2` we will create the calendar content  in a component called `CalendarWindow`. Initially, you will only see the day of the month the window is hiding, but if you click the box it will tell you how many days there are until Christmas. 
 
 ```javascript
 // app2/src/CalendarWindow
@@ -73,9 +71,9 @@ Now that we have two components in separate applications we are ready to set up 
 
 In the `webpack.config.js` in `app2` we need to expose the container that we want to use in `app1`. 
 
-First we need to add the `ModuleFederationPluging` to the list of plugins. In the config we need to give the app a filename, this will let the module federation know to emit a special remote entry for app2. Then we must expose the component we want to use, in our case we will expose the `CalendarWindow`-component.  Finally we will add `react` and `react-dom` to the list of shared dependencies. That way, `app1` will use its own  `react` and `react-dom` dependencies if available. If a shared dependency is not avaialble in the host app, module federation will provide a fallback dependency from `app2` anyway. 
+First, we need to add the `ModuleFederationPluging` to the list of plugins. In the config we need to give the app a filename, this will let the module federation know to emit a special remote entry for app2. Then we must expose the component we want to use, in our case, we will expose the `CalendarWindow`-component.  Finally, we will add `react` and `react-dom` to the list of shared dependencies. That way, `app1` will use its own  `react` and `react-dom` dependencies if available. If a shared dependency is not avaialble in the host app, module federation will provide a fallback dependency from `app2` anyway. 
 
-You also need to make sure that your public path is set to the url it comes from. Otherwise `app1`  will try to fetch the code from its own path and it will not find the remote entry. There is an update coming so that you can set up this dynamically in the host app. //TODO: check if change is published 
+You also need to make sure that your public path is set to the URL it comes from. Otherwise, `app1`  will try to fetch the code from its own path and it will not find the remote entry. There is an update coming so that you can set up this dynamically in the host app. 
 
 ```javascript
 // app2/webpack.config.js 
@@ -102,7 +100,7 @@ module.exports = {
 }
 ```
 
-Now that the component is exposed, we need to tell `app1` where to find it. The set up is similar to `app2`, but we let webpack know that it is expecting a remote module called `app2`. We also lists the shared dependecies in `app1`, to let `app2` know it will not need to provide them as fallback dependencies.
+Now that the component is exposed, we need to tell `app1` where to find it. The set up is similar to `app2`, but we let webpack know that it is expecting a remote module called `app2`. We also list the shared dependencies in `app1`, to let `app2` know it will not need to provide them as fallback dependencies.
 
 ```javascript
 // app1/webpack.config.js  
@@ -128,7 +126,7 @@ module.exports = {
 
 ### Putting it all together
 
-First we specify in `app1` that the `remoteEntry.js`-file is from a remote host. This is done by including a script in the `index.html`: 
+First, we specify in `app1` that the `remoteEntry.js`-file is from a remote host. This is done by including a script in the `index.html`: 
 
 ```html
 <!-- app1/src/index.html -->
@@ -143,7 +141,7 @@ First we specify in `app1` that the `remoteEntry.js`-file is from a remote host.
 </html>
 ```
 
-We also want an async way to load the application, which can by done by creating a `bootstrap.js`-file and move all the code from `index.js`. Then we dynamically import the content in `index.js`:  
+We also want an async way to load the application, which can be done by creating a `bootstrap.js`-file and move all the code from `index.js`. Then we dynamically import the content in `index.js`:  
 
 ```javascript
 // app1/src/bootstrap.js
@@ -184,7 +182,3 @@ const App = () => {
 
 export default App;
 ```
-
-## Conclusion
-
-TODO
