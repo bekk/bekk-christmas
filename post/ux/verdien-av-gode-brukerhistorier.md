@@ -70,7 +70,7 @@ Det hører også til historien at vi var ganske inspirert av typisk kundereiseka
 
 Etter intervjuene ble vi enige om hva slags inntrykk personene ga. Igjen satt vi med beskrivelser på deres personlighet. Nå var den største jobben foran meg som tekstforfatter: La personligheten, språket, følelsene og opplevelsen av merkevaren skinne gjennom i historiene. 
 
-Jeg skrev historiene fra start til slutt i et tekstdokument. Lot tastene sprette og poengene fare, uten å ta hensyn til hvilken fase personen jeg skrev om var i. Da historien var skrevet ferdig, satte jeg de ulike scenen inn i faser. Jeg sørget også for at scenen hadde nok detaljer til at det hele kunne eventuelt tegnes — ja, til og med filmes, om noen ville! På den måten kunne kunden velge ulike måter å formidle historiene på. 
+Jeg skrev historiene fra start til slutt i et tekstdokument. Lot tastene sprette og poengene fare, uten å ta hensyn til hvilken fase personen jeg skrev om var i. Da historien var skrevet ferdig, satte jeg de ulike scenene inn i faser. Jeg sørget også for at scenen hadde nok detaljer til at det hele kunne eventuelt tegnes — ja, til og med filmes, om noen ville! På den måten kunne kunden velge ulike måter å formidle historiene på. 
 
 Ett av fem resultater kan du se nedenfor. Da kan du forsøke å holde et ark over fanene til høyre, og kun lese den flytende teksten nedover, for så å lese scenene beskrevet, og hvilken fase de er i etterpå. Stemmer det overens med inntrykket du får i selve teksten?
 
