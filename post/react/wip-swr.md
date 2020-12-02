@@ -86,7 +86,7 @@ By default, SWR provides automatic retry of a failed fetches. By default, this c
 Sometimes, we need our data to be up to date, and you've probably already guessed that SWR provides some cool ways of doing this. In fact, there are multiple strategies for keeping your screen filled with the latest and greatest of data. 
 - There's revalidation upon **browser-tab focus**, which is pretty self-explanatory. This gives you new data when you actually want it. 
 - There's a revalidate upon **reconnection**, which gives clients with unstable and slow connections a break. 
-- The more classic: revalidation of data upon set **intervals**. This one is smart, and won't revalidate data that are not rendered on screen, and won't try to revalidate unfocused tabs or when the internet is disconnected *(unless you tell it to)*.
+- The more classic: revalidation of data upon set **intervals**. This one is smart, and won't revalidate data that isn't rendered on screen, and won't try to revalidate unfocused tabs or when the internet is disconnected *(unless you tell it to)*.
 
 # 🔧 Keeping track of the configurations
 As you might have understood by now, the `useSWR` hook comes with a lot of possible configurations. If you want to configure these globally for your react app, you can do so just that by wrapping a part of your app with the `SWRConfig` like so:
