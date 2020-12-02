@@ -71,7 +71,7 @@ You may notice that we prevent revalidation in the first mutation. This is becau
 Mutating the cache will cause the data in all the places using the same cache to be updated automatically! 
 
 ## ⛔️ Deduplication
-One of my favorite features of the library SWR is the deduplication feature. Deduplication is a long word, which essentially means SWR will prevent multiple uses of the `useSWR` hook with the same key to revalidate the same resource within a configured interval. Instead, a single request will be sent, and the result returned to each of the requestèes.
+One of my favorite features of the library SWR is the deduplication feature. Deduplication is a long word, which essentially means SWR will prevent multiple uses of the `useSWR` hook with the same key to revalidate the same resource within a configured interval. In simple words: Preventing the same request from being sent multiple times in a short period of time. Instead, a single request will be sent, and the result returned to each of the requestees. 
 
 This will allow you to use the same SWR hook across multiple components without any thought to data-flow. Where previously the resource would have been fetched in a parent component and passed down to the child components, you can now simply ask for the resource, and the resource will be made available. 
 
