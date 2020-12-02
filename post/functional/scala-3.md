@@ -13,26 +13,28 @@ Version two of the language was released in 2006 and has so far seen a
 total of thirteen larger minor releases. Throughout these changes the
 language has evolved to places not foreseen. Implicits that were first introduces
 for implicit conversions gave rise to type classes, built upon to create
-implicit classes for extension methods, and macros that to this day is still locked behind
+implicit classes for extension methods, and macros for metaprogramming that to this day is still locked behind
 experimental flags; though still considered a key part of the language. A key
 part of version 3 is to formalize these patterns, make the syntax more obvious, and be more
 opinionated. But under the hood there are lots more going on!
 
 The original vision of the language has been on unifying Object Oriented Programming and
 Functional Programming. In doing this it was found that the theoretical
-foundation was not sound; combining subtyping with dependent types was not a easy challenge
+foundation was not sound; combining subtyping with dependent types has been a problematic challenge
 [^subtypingPath]. In 2016 the DOT Calculus (Dependent Object Types) was presented as a new
 theoretical foundation. With that came Dotty, a reference implementation of a
-language translating to the DOT calculus and now soon to be Scala 3. 
+language translating to the DOT calculus, and now soon to be Scala 3. 
  <!-- Scala 3 is not just a new major release, but a complete rewrite with a new foundation. -->
 
 If migration issues is a worrying factor then it should please you to know that
-most code bases seems to be easy to port. To ease the process a lot of the
-bigger user facing changes are delayed to version 3.1. Most of the difficulties will be
+most application code bases seems easy to port. To ease the process a lot of the
+bigger user facing changes are delayed to version 3.1. Scala 3 will also be able
+to use Scala 2.13.4 binaries and vica versa. Most of the difficulties will be
 on the ecosystem migrating base libraries, which is well on it's way! The
 community builds[^scala2CommunityBuilds] has been a huge success for Scala 2 and the one for Scala 3
-is soon up to 40 community libraries [^scala3CommunityBuilds]! Not bad for a unreleased language. To
-start migrating now take a look at [^migration].
+is soon up to 40 community libraries [^scala3CommunityBuilds]! Not bad for a
+unreleased software. Documentation on the migration process is being worked on
+the by the Scala Center[^migration].
 
 ## New Features
 
@@ -41,54 +43,55 @@ start migrating now take a look at [^migration].
 def hello = println("world")
 ```
 
-
 <!-- Now, with the formalities gone we can take a dive into some of the new features. -->
-Simplicity and being opinionated is one of the bigger design goals. In the example
-above we have started a small program in two lines of concise code! Try it out yourself
-through Scastie[^scastieHelloWorld]. But lines of code is far from everything regarding simplicity! Ehe error
+Simplicity and more opinionated patterns is one of the bigger design goals. In the example
+above we have started a small program in two lines of code. Try it out yourself
+through Scastie[^scastieHelloWorld]. But lines of code is far from everything regarding simplicity! The error
 messages are improved and the type system will do a much better jobbing
 assisting you while keeping the code sound. 
 One example of that is that the compiler will give suggestions of what to import
 when implicits are missing from the scope. In the example error below we can see
-a detailed error message of a missing execution context. As before, the message
-contains a hint of what to import, but below it we can see the message again.
-This is what the compiler found itself! 
+a detailed error message from trying to use an extension method from the
+fantastic Cats[^cats] library. Learning which imports to use in libraries which are heavy on
+implicit usage have always been a sore spot for beginners. Now we immediately
+get a helping hand to continue.
 
 
 ```scala
-someFuture.flatMap(current => Future(current + 1))
-// [error] -- Error: /Main.scala:185:52
-// [error] 185 |  someFuture.flatMap(current => Future(current + 1))
-// [error]     |                                                    ^
-// [error]     |Cannot find an implicit ExecutionContext. You might pass
-// [error]     |an (implicit ec: ExecutionContext) parameter to your method.
+ List(1, 2, 3)
+    .foldMap(number => Option.when(number > 1)(number - 1))
+// [error] -- [E008] Not Found Error: /home/perok/dev/private/dotty-example-project/src/main/scala/Main.scala:365:5 
+// [error] 364 |  List(1, 2, 3)
+// [error] 365 |    .foldMap(number => Option.when(number > 1)(number - 1))
+// [error]     |  ^
+// [error]     |value foldMap is not a member of List[Int], but could be made available as an extension method.
 // [error]     |
-// [error]     |The ExecutionContext is used to configure how and on which
-// [error]     |thread pools Futures will run, so the specific ExecutionContext
-// [error]     |that is selected is important.
+// [error]     |One of the following imports might fix the problem:
 // [error]     |
-// [error]     |If your application does not define an ExecutionContext elsewhere,
-// [error]     |consider using Scala's global ExecutionContext by defining
-// [error]     |the following:
+// [error]     |  import cats.Foldable.nonInheritedOps.toFoldableOps
+// [error]     |  import cats.Foldable.ops.toAllFoldableOps
+// [error]     |  import cats.Traverse.ops.toAllTraverseOps
+// [error]     |  import cats.implicits.toFoldableOps
+// [error]     |  import cats.syntax.all.toFoldableOps
+// [error]     |  import cats.syntax.foldable.toFoldableOps
 // [error]     |
-// [error]     |implicit val ec: scala.concurrent.ExecutionContext = scala.concurrent.ExecutionContext.global
-// [error]     |
-// [error]     |The following import might fix the problem:
-// [error]     |
-// [error]     |  import concurrent.ExecutionContext.Implicits.global
-// [error]     |
+// [error] one error found
 ```
 
+?TODO link til kalenderuke 9?
 <!-- TODOD dobbelsjekk feilmelding mot scalac. Finnes bedre eksempel? -->
 
 All of the examples can be run through Scastie and I can recommend trying them
-out. Note that they are a unprioritized random subset of all the new features. An up to date list of changes to the language can be found here [^scala3Docs].
+out. Note that they are a unprioritized random subset of all the new features.
+An up to date list of changes to the language can be found on the Dotty site[^scala3Docs].
 
 ### Enums
 
 In previous versions the de facto standard of enums have been to
 create a Java file with a enum, or create a `sealed trait`, or use some
-macro based library.
+macro library. While sealed trait hierarchy do provide a working solution
+with exhaustive checking, it is far more general and requires a lot more
+boilerplate if one needs ordinality, hence the macro based solutions.
  <!-- The downside of using `sealed trait`s that are meant to
 model ADTs is that they, among others, have no inherent concept of ordinality. -->
 
@@ -100,8 +103,26 @@ enum Color(val rgb: Int) {
 }
 
 Color.fromOrdinal(1) == Color.valueOf("Red")
+
+// Or just
+
+enum House {
+  case House, Apartment
+}
 ```
 
+It is worth noting that enums are syntactic sugar that is translated to a 
+`sealed trait` at compile time. Enums will therefore also support modeling of
+ADT's (Abstract Data Types) and GADT's (Generalized ADT's). 
+
+A homemade implementation of the Option ADT can now be as following.
+
+```scala
+enum Option[+T] {
+  case Some(x: T) extends Option[T]
+  case None       extends Option[Nothing]
+}
+```
 
 
 <!-- TODO fromOrdinal(1)? -->
@@ -365,13 +386,14 @@ null handling, export clauses, and a new macro system. While the details are sti
 hammered on, it is interesting to ponder where all of this will take the language?
 Eager to try it out [^scastieHelloWorld]?
 
+<!-- TODO nevn braceless syntax? -->
+
 [^implicitConvesrion]: https://dotty.epfl.ch/docs/usage/language-versions.html
 
 [^subtypingPath]: https://www.scala-lang.org/blog/2016/02/03/essence-of-scala.html
 https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 
 [^scala3CommunityBuilds]: https://github.com/lampepfl/dotty/tree/master/community-build/community-projects
-
 
 [^scala2CommunityBuilds]: https://www.scala-lang.org/2020/02/20/community-build.html
 
@@ -382,4 +404,6 @@ https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 [^scastieHelloWorld]: https://scastie.scala-lang.org/mW9PAGSVSAyFbljRMzVlBw
 
 [^applicatives]: https://functional.christmas/2019/21
+
+[^cats]: https://github.com/typelevel/cats
 
