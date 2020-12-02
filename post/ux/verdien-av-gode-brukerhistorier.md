@@ -3,6 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 3
 title: Verdien av gode brukerhistorier
+image: https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F2402%2F1*aRiQ9uLNqlvH5zUE1BSc8Q.png&imgrefurl=https%3A%2F%2Fmedium.com%2F%40priyank.it%2Fuser-story-mapping-product-backlog-creation-7ea9a54f7f0e&tbnid=RUmgkoaV86mR5M&vet=12ahUKEwjHrcC1sa_tAhVdBncKHWgqCP4QMygFegUIARDbAQ..i&docid=sl8RlJ1I2izlrM&w=1201&h=890&q=user%20story&ved=2ahUKEwjHrcC1sa_tAhVdBncKHWgqCP4QMygFegUIARDbAQ
 ingress: >-
   ![](/assets/image-from-ios-17-.jpg)
 
