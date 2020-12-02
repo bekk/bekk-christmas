@@ -5,8 +5,8 @@ post_day: 4
 title: "[WIP] SWR"
 ingress: "Every now and then, a library surfaces that change the way you're used
   to thinking. In this case, it is rethinking the data flow in your React app.
-  SWR provides a complex data store with a simple interface, aiding you with
-  following simple patterns and write less code.  "
+  SWR provides a complex data store with a simple interface, helping you write
+  simple patterns and less code.  "
 authors:
   - Jon Johansen
 ---
