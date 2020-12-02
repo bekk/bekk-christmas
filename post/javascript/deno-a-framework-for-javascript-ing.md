@@ -42,7 +42,7 @@ Still – Deno is a new take on server-side JavaScript, offering a more modern 
 
 The built-in utilities may be the biggest selling point of Deno, supplying the developer with a set of commands only available in Node through a large number of third-party dependencies. Just look at all these tools! 🛠️
 
-![https://i.imgur.com/mhOzA8y.png](https://i.imgur.com/mhOzA8y.png)
+![List of available subcommands in Deno](https://i.imgur.com/mhOzA8y.png)
 
 ## Kill the package manager
 
@@ -75,6 +75,6 @@ console.log(`Good morning, ${name}!`); // > Good morning, Kjetil!
 
 You also get an implementation of `fetch`for doing network requests. You can gracefully manage lifecycle events just like you would in the browser. When you're done, you can even install your script as an executable for your shell environment, with the `deno install` command.
 
-![Installing a script with Deno]([https://i.imgur.com/cF9AERr.png](https://i.imgur.com/cF9AERr.png))
+![Installing a script with Deno](https://i.imgur.com/cF9AERr.png)
 
 All these features amount to a great developer experience in JavaScript's matured ecosystem. And for that, I think Deno deserves a place in my toolkit, alongside Node.
