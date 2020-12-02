@@ -34,7 +34,7 @@ The main price driver here is the number of vCores you want. But how do you know
 
 ### Testing vCore amount in the Provisioned tier
 
-First I tested our normal daily operations that I know require a lot of power with 12 vCores in the _Provisioned_ tier to see that it was performant enough. I was happy to see that the execution time was equal! The vCore model is more expensive, so I was not plainly after changing to a vCore tier, although that also sometimes has its purpose which I will not delve into here. Having locked down my vCore count without blasting through my budget, I went on to configure the Serverless tier.
+First I tested our normal daily operations that I know require a lot of power with 12 vCores in the _Provisioned_ tier to see that it was performant enough. I was happy to see that the execution time was equal! My goal was not simply to change to a vCore tier, although it has interesting features that I will not talk further about here. I wanted to specifically test the Serverless tier. Having locked down my vCore count without exceeding my budget, I went on to configure the Serverless tier.
 
 ### The cost of the Serverless tier
 
