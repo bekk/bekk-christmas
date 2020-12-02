@@ -27,7 +27,7 @@ links:
 authors:
   - Kjetil Svalestuen
 ---
-## Server-side development reimagined
+## Server-side development, reimagined
 
 Deno's official philosophy is to be a *productive and secure scripting environment for the modern programmer*. Simply put, Deno enables you to execute JavaScript straight in your terminal, without the need for a web browser.
 
