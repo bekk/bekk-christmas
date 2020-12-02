@@ -28,28 +28,28 @@ Forestill deg en verden uten penger! For 500 år siden var Inkariket det mektigs
 >
 > The Ascent of Money - Niall Ferguson
 
-Spanjolene hadde gravd opp så mye sølv til å finansiere sine erobringer, at metallet i seg selv opplevde et eksepsjonelt verdifall. Myntene gjorde ikke Spania rikere, men prisene dyrere – ettersom en økning i pengemengden jaget en uendret mengde av varer og tjenester.
-
 ### Det spanjolene ikke forstod da, er at penger er bare verdt hva andre vil gi i bytte mot det.
 
-I dagens samfunn, er vi ganske fornøyd med sedler og mynter som penger, vi er til-og-med fornøyd med penger vi ikke kan ta på og som kun eksisterer i nettbanken, og i noen få tilfeller er vi også fornøyd med penger vi ikke engang forstår, så lenge en ikke mister passordet til den krypterte valutaen. Men hvor kommer alle disse pengene fra? Banken? Sentralbanken?
+Spanjolene hadde gravd opp så mye sølv til å finansiere sine erobringer, at metallet i seg selv opplevde et eksepsjonelt verdifall. Myntene gjorde ikke Spania rikere, men prisene dyrere – ettersom en økning i pengemengden jaget en uendret mengde av varer og tjenester.
 
 > *Hvis du låner en krone, og det er den første kronen som eksisterer. Hvor er den andre kronen du må ha for å betale renten på den første kronen?*
 
-Sentralbanken styrer ikke størrelsen på pengemengden. Pengene du låner av banken fantes ikke før du tok opp lånet. Det er når banken gir et lån, at penger skapes.
+I dagens samfunn, er vi ganske fornøyd med sedler og mynter som penger, vi er til-og-med fornøyd med penger vi ikke kan ta på og som kun eksisterer i nettbanken, og i noen få tilfeller er vi også fornøyd med penger vi ikke engang forstår, så lenge en ikke mister passordet til den krypterte valutaen. 
 
-Før trodde man at bankene låner ut penger andre sparer, men bankinnskudd er bankenes gjeld og ikke en formuesgjenstand som kan lånes ut.
+### Men hvor kommer alle disse pengene fra? Banken? Sentralbanken?
 
-### Penger skapes i form av nye innskudd når bankene gir nye lån:
+Sentralbanken styrer ikke størrelsen på pengemengden. Pengene du låner av banken fantes ikke før du tok opp lånet. Før trodde man at bankene låner ut penger andre sparer, men bankinnskudd er bankenes gjeld og ikke en formuesgjenstand som kan lånes ut.
+
+Men det er altså når banken gir et nytt lån, at penger skapes. Penger skapes i form av nye innskudd når bankene gir nye lån:
 
 1. Når en låntaker får innvilget et lån, gir personen et gjeldsbrev til banken
-2. Banken på sin side gir låntakeren et gjeldsbrev i form av et innskudd i banken
+2. Banken på sin side underskriver gjeldsbrevet i form av et innskudd i banken
 
 Slik sett omgjør banken gjeldsbrevet fra låntaker til penger låntakeren kan handle med – **og det er i dette øyeblikket nye penger er skapt!** For når en bank innvilger et lån, godskriver den samtidig kundens konto tilsvarende lånebeløpet. Dermed er penger, i form av innskudd skapt.
 
 For å forstå hvordan dette logisk kan fungere, kan man se tilbake til bankenes opprinnelse – da gull var penger:
 
-> *Folk trengte et sted å oppbevare sitt gull, og gikk til gullsmeden som trygt kunne oppbevare det i bankhvelvet. Kunden fikk da en kvittering på verdien i form av sedler, og dette fungerte godt i handel. Gullsmedene begynte etterhvert å låne ut penger – ikke gullet, men disse kvitteringene. Dette gav ekstrainntekt ettersom gullsmeden kunne kreve renter.*
+> *Folk trengte et sted å oppbevare sitt gull, og gikk til gullsmeden som trygt kunne oppbevare det i hvelvet. Kunden fikk da en kvittering på verdien i form av sedler, og dette fungerte godt i handel. Gullsmedene begynte etterhvert å låne ut penger – ikke gullet, men disse kvitteringene. Dette gav ekstrainntekt ettersom gullsmeden kunne kreve renter.*
 >
 > *Men gullsmedene begynte etterhvert å oppdage at kundene sjeldent kom tilbake for å kreve gullet tilbake, fordi alt kundene trengte var kvitteringene. Og for å tjene enda mer, kunne gullsmeden utstede flere kvitteringer enn det var gull i hvelvet. Gullsmeden kunne i tillegg kreve renter på disse. Renter på gull som ikke fantes. Så lenge lånene ble tilbakebetalt, var dette god butikk og ingen ville legge merke til det. Gullsmedene ble rike, og dette var starten på det moderne banksystemet vi kjenner i dag.*
 >
@@ -61,15 +61,15 @@ Allikevel, så likte myndighetene hva denne kredittveksten hadde gjort for økon
 
 Svaret er at du må låne en ny krone for å betale renten på den første kronen, og den andre kronen må du igjen betale renter på, som igjen krever et nytt lån, og slik fortsetter det inn i evigheten!
 
-Man kan si at pengene har kneblet oss til en levemåte der vi stadig må ta opp mer gjeld enn det vi nedbetaler. Men i dagens samfunn er diskusjonstemaet gjerne at det er alt for høye gjeldsnivåer. Og mange har gjerne et syn på at gjeld er noe man skylder, og iboende i vår norske folkeånd skal man vel helst ikke stå i gjeld til noen. Selv med rentenivåer tilnærmet lik null.
+Man kan si at penger har kneblet oss til en levemåte der vi stadig må ta opp mer gjeld enn det vi nedbetaler. Men i dagens samfunn er diskusjonstemaet gjerne at det er alt for høye gjeldsnivåer. Og mange har gjerne et syn på at gjeld er noe man skylder, og iboende i vår norske folkeånd skal man vel helst ikke stå i gjeld til noen. Selv med rentenivåer tilnærmet lik null.
 
 Sant nok som det er, så kommer det en dag hvor gjeld skal betales. Men hvis alle hadde gjort dette ville det ført til økonomisk depresjon. For hvis vi nedbetaler mer gjeld enn vi tar opp nye lån, er det ingen penger som skapes som vi kan bruke til å nedbetale eksisterende gjeld pluss rentene!
 
 ### For å oppsummere, er det følgende grunnleggende forståelse å ta med seg videre:
 
-* Penger skapes av gjeld
+* Penger skapes av gjeld, og
 * Dagens system har bare en begrensning – den totale mengden gjeld
 
-...men gjeld er heldigvis ubegrenset, derfor er også pengemengden ubegrenset, og den må konstant vokse. Men som vi lærte av spanjolene om hva som skjer når pengemengden vokser raskere enn mengden varer og tjenester vokser. Jo da stiger prisene og pengene blir mindre verdt, og det er dette som er balansekunsten; penger og forbruk.
+...men gjeld er heldigvis ubegrenset, derfor er også pengemengden ubegrenset, og den må konstant vokse. Men som vi lærte av spanjolene om hva som skjer når pengemengden vokser raskere enn mengden varer og tjenester vokser. Jo da stiger prisene og pengene blir mindre verdt, og det er dette som er balansekunsten; penger og forbruk. 
 
 *"Money never sleeps"* sa Michael Douglas sin tolkning av den griske finansmannen ´Gordon Gekko´ i filmen Wall Street fra 1987. Og rett som det er, penger er til for å brukes, penger må bytte hender, og penger kan-og må aldri sove – Det er stillstand som ikke er bærekraftig, noe det siste året har gitt oss en dyrekjøpt påminnelse om.
