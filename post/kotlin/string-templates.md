@@ -55,12 +55,12 @@ Notice that string templates are evaluated when the statement executes. In some 
 log.debug(“The number of presents in Santa’s sleigh is ${presents.size}”)
 ```
 
-If the log level is higher than debug, the expression would be evaluated and the string assembled even though the logger would not write anything to the appender. Most log frameworks has functions similar to String.format:
+If the log level is higher than debug, the expression would be evaluated and the string assembled even though the logger would not write anything to the appender. Most log frameworks has functions similar to `String.format`:
 
 ```kotlin
 log.debug(“The number of presents in Santa’s sleigh is %d”, presents.size)
 ```
 
-which ensures the string assembly happens only if the log level is DEBUG. However, like for String.format, it comes with a performance penalty when string building actually occurs.
+which ensures the string assembly happens only if the log level is DEBUG. However, like for `String.format`, it comes with a performance penalty when string building actually occurs.
 
 In conclusion, string templates make embedding expressions in strings easier and more readable than other techniques. But it boils down to string building ye olde way, and in some cases, as for logging, it may be more efficient to delay the work till it is actually needed.
