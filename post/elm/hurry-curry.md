@@ -36,12 +36,12 @@ isBetween : Int -> (Int -> (Int -> Bool))
 
 For esthetic reasons, Elm allow us to write the type signature without the parentheses.
 
-There is no such thing as a function taking multiple arguments. All functions take exactly one argument, and returns something else. That something else might be another function. That also means that when calling a function that takes multiple arguments, it's not only _valid_ to call it in the following way, it's also conceptually what happens:
+The key thing to learn from this is that there is no such thing as a function taking multiple arguments. All functions take _exactly_ one argument, and returns something else. That something else might be another function. This also means that when calling a function with more than one argument, it's not only _valid_ to call it in the following way, it's also what conceptually happens:
 
 ```elm
 (((isBetween 1) 2) 3)
 ```
 
-This property of functions ever only taking one argument is known as currying, and is a defining feature of languages like Elm and Haskell. But when is it ever useful? 
+This property of functions only taking one argument is known as currying, and is a defining feature of languages like Elm and Haskell. But why should you care about this? When is this knowledge ever useful?
 
 That's what we'll explore in the coming days.
