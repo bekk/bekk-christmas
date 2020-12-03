@@ -80,7 +80,7 @@ The phish was used to get access to certain high-profile accounts. The compromis
 
 CWT is a travel management company that manages business travel, meetings and so on. The 27 of July this year, the company was hit by a massive ransomware attack that knocked 30,000 computers offline. The hackers claimed to have stolen two terabytes of files, including financial reports, security documents and employees’ personal data. CWT paid $4.5 million to the hackers to restore their systems. 
 
-One of the fascinating things about this hack was that the negotiation chat, where the company and the hackers met to talk, was left open to the public after the negotiations ended. This gives us a never before seen insight into how the negotiations between hacker and hacked works. As many others have noted after the chat became public, it is rarely advised to actually pay the hackers like CWT did. That is because of the precedence it sets and that the chance of getting scamed is very high.
+One of the fascinating things about this hack was that the negotiation chat, where the company and the hackers met to talk, was left open to the public after the negotiations ended. This gives us a never before seen insight into how the negotiations between hacker and hacked works. As many others have noted after the chat became public, it is rarely advised to actually pay the hackers like CWT did. This is, of course, because of the precedence it sets and that the chance of getting scamed is very high.
 
 ![Screenshot of chat between hackers and CWT](https://i.ibb.co/QC7f7MJ/cwt-chat.jpg "Screenshot of the negotiation chat between hackers and CWT")
 
