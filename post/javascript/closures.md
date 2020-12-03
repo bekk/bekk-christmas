@@ -34,7 +34,7 @@ function myFunc() {
 myFunc();
 ```
 
-To most developers this is pretty straightforward, especially if you've worked a bit with JavaScript. We create a function, inside of which we create a variable `value` and a function `alertValue`. This inner function will run `alert(value)`, and we see this function is ran right after it is created. Finally we run `myFunc()`, and we all sort of just know we will now get an alert box with the text "Hello world".
+To most developers this is pretty straightforward, especially if you've worked a bit with JavaScript. We create a function, inside of which we create a variable `value` and a function `alertValue`. This inner function will run `alert(value)`, and we see this function is run right after it is created. Finally we run `myFunc()`, and we all sort of just know we will now get an alert box with the text "Hello world".
 
 To me, having worked a fair bit with JavaScript, I kind of just take this for granted.
 
@@ -100,7 +100,7 @@ The scope of `sum2` is its local scope, which contains `b` and the returned func
 
 The scope of `sum3` is its local scope, which contains `c` and the returned function `sum4`, but also its lexical environment, which is the scope of `sum2`. So we can also access `b` and `sum3`, in addition to the lexical environment of `sum2`, which is the scope of `sum`. So we can also access `a` and `sum2` from within `sum3`.
 
-Phew! I'm not even going to try to explain the scope of `sum4` in such detail. The point is that a function's scope includes its out function's scope, and this results in a chain of function scopes.
+Phew! I'm not even going to try to explain the scope of `sum4` in such detail. The point is that a function's scope includes its outer function's scope, and this results in a chain of function scopes.
 
 This is also how recursion is possible. Like I said, the scope of `sum2` contains `sum2`, so we are free to call or return `sum2` from within `sum2`.
 
