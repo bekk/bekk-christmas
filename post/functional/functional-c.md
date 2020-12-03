@@ -2,9 +2,120 @@
 calendar: functional
 post_year: 2020
 post_day: 5
-title: Functional C#?
+title: Functional ... C#?
 ingress: TODO, ingress
+description: "TODO: SEO Desc"
 authors:
   - Runar Ovesen Hjerpbakk
 ---
-TODO, text
+I really love C#. It's by far [my favorite programming language](https://hjerpbakk.com/tag/csharp/). And who wouldn't agree? I mean with a piffy, roll of the tounge [Wikipedia description](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) like this, what is not to love?
+
+> C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+
+"Yeah, yeah", I hear you say dear reader. "I know C# is great to use if you want to write better Java apps, even so, this is the Bekk Functional advent calendar. What are you rambling about?"
+
+I know you love your pure, scalable functions in [Haskell](https://wiki.haskell.org/Functional_programming#Purity) and your fancy web pages written in [Elm](https://www.elm.christmas/2020), but did you spot the magic word in the description above? It said:
+
+> ... **functional** ...
+
+Yes!
+
+![The day is mine!](https://hjerpbakk.com/img/christmas/the-day-is-mine.jpeg)
+
+C# is not only useful on the [backend](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-5.0), while writing [iOS and Android apps](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0), [replacing JS in the browser](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0) or as a [scripting language](https://github.com/filipw/dotnet-script), it also becomes more and more functional-friendly with every new language version!
+
+And what does it mean to be a *functional-friendly* programming language?
+
+## Functional advantages
+
+TODO: fordeler med functional stil
+
+TODO: Functional features i C# og .Net
+
+And there's even [a whole book about it now](https://www.amazon.com/Functional-Programming-write-better-code/dp/1617293954/).
+
+Despite that, the core functional tenet of *immutability of data* has always been a C# pain point. Until now.
+
+## Immutability in C#
+
+C# second greatest error[1] was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
+
+```csharp
+public class Person
+{
+    public uint Age { get; set; }
+}
+```
+
+And making it immutable amounted to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example:
+
+```csharp
+public class Person
+{
+    private readonly uint age;
+
+    public Person(uint age)
+    {
+        this.age = age;
+    }
+
+    public uint Age { return age; }
+}
+```
+
+[C# 6](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#expression-body-definitions) made the pit of success a bit deeper by introducing read-only properties using only a `get` accessor:
+
+```csharp
+public class Person
+{
+    public Person(uint age)
+    {
+        Age = age;
+    }
+
+    public uint Age { get; }
+}
+```
+
+[C# 7.2](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct) made declaring our intent more explicit by allowing a `struct` to be marked as `readonly`:
+
+```csharp
+public readonly struct Person
+{
+    public Person(uint age)
+    {
+        Age = age;
+    }
+
+    public uint Age { get; }
+}
+```
+
+This is all well and good, yet consider when our class or struct has multiple readonly properties and we need to construct a new copy with an updated value in one or more of them. My head hurts just by thinking about it. The boilerplate has tested my Christmas spirit, why must we endure this error prone manual waste? A better way must exist!
+
+## Records in C# 9
+
+And finally this year, at the end of the [worst year ever](https://www.youtube.com/watch?v=zu3k2PJumfI), it does! Microsoft bestowed [.Net 5 and C# 9](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9) upon us, giving us my most requested feature: *language support for immutable data types*, [Record types](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types)!
+
+```csharp
+public record Person(uint Age);
+// No, really, this the complete example!
+```
+
+A `record` is immutable in that none of the properties can be modified once it's been created. When we define a record type, the compiler provides several useful methods for us:
+
+- Methods for value-based equality comparisons
+- Override for `GetHashCode()`
+- Copy and Clone members
+- `PrintMembers` and `ToString()`
+
+Seems like we're finally winning the war against boilerplate, and if we need to create a copy with an updated value, we can now easily use the `with` keyword:
+
+```csharp
+var me = new Person(37);
+Person meAYearOlder = me with { Age = 38 };
+```
+
+And with such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards 40 can break this developers Christmas spirit!
+
+[1]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
