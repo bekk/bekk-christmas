@@ -4,10 +4,10 @@ post_year: 2020
 post_day: 4
 title: Five big hacks of 2020
 image: https://cdn.pixabay.com/photo/2017/10/24/07/12/hacker-2883632_960_720.jpg
-ingress: "Today we are going to explore 5 big hacks that took place in 2020.
+ingress: "Today we are going to explore five big hacks that took place in 2020.
   First we'll cover two hacks that targeted Norwegian companies Sykehuspartner
   and NHH. Then we'll take a look at a hack that targeted the Danish company
-  ISS. And lastly we'll cover probably the two most commented and high profile
+  ISS. To end things of we'll cover what is probably the two most high profile
   hacks of 2020: the Twitter phish and the CWT ransom."
 description: Twitter, phish, CWT, ransom, Sykehuspartner, ISS, CWT, hack
 links: []
