@@ -20,7 +20,7 @@ authors:
 
 Sykehuspartner deliver IT, HR, project and logistics services to all hospitals in the Norwegian health region Helse Sør-Øst (Health South East). It manages vital IT systems for the hospitals, both clinical and administrative applications, as well as infrastructure and networks.
 
-On august 22 2020 several of Sykehuspartners applications became the target of an unknown threat actor. Only one hospital (Sykehuset Innlandet) was targeted in this attack. Not much is known by the type and scope of the attack, except for what type of data might possibly have been stolen. The potentially stolen data might include:
+On august 22 2020 several of Sykehuspartners applications became the target of an unknown malicious actor. Only one hospital (Sykehuset Innlandet) was targeted in this attack. Not much is known by the type and scope of the attack, except for what type of data might possibly have been stolen. The potentially stolen data might include:
 
 * Information about the deceased
 * Health information about patients from research projects
