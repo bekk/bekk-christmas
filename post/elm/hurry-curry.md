@@ -20,7 +20,7 @@ Have you ever wondered why type signatures look the way they do? They seem intui
 aboveZero : Int -> Bool
 ```
 
-`aboveZero` is a function which takes an `Int` and returns a `Bool`. Simple, right? Now look at this function:
+Here we can see that `aboveZero` is a function which takes an `Int` and returns a `Bool`. Seems straightforward. Now look at this function:
 
 ```elm
 isBetween : Int -> Int -> Int -> Bool
@@ -42,6 +42,6 @@ There is no such thing as a function taking multiple arguments. All functions ta
 (((isBetween 1) 2) 3)
 ```
 
-This property of functions ever only taking one argument is known as currying, and is a pretty defining feature of languages like Elm and Haskell. But when is it ever useful? 
+This property of functions ever only taking one argument is known as currying, and is a defining feature of languages like Elm and Haskell. But when is it ever useful? 
 
 That's what we'll explore in the coming days.
