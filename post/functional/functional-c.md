@@ -24,7 +24,7 @@ Yes!
 
 C# is not only useful on the [backend](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-5.0), while writing [iOS and Android apps](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0), [replacing JS in the browser](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0) or as a [scripting language](https://github.com/filipw/dotnet-script), it also becomes more and more functional-friendly with every new language version!
 
-And what does it mean to be a *functional-friendly* programming language?
+However, what does it mean to be a *functional-friendly* programming language?
 
 ## Functional advantages
 
@@ -32,7 +32,7 @@ TODO: fordeler med functional stil
 
 TODO: Functional features i C# og .Net
 
-And there's even [a whole book about it now](https://www.amazon.com/Functional-Programming-write-better-code/dp/1617293954/).
+There's even [a whole book about it now](https://www.amazon.com/Functional-Programming-write-better-code/dp/1617293954/).
 
 Despite that, the core functional tenet of *immutability of data* has always been a C# pain point. Until now.
 
@@ -47,7 +47,9 @@ public class Person
 }
 ```
 
-And making it immutable amounted to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example:
+![Listen to the wolf](https://hjerpbakk.com/img/christmas/the-wolf.png)
+
+Alas, aging can take its toll and we should've listen the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
 
 ```csharp
 public class Person
@@ -62,6 +64,8 @@ public class Person
     public uint Age { return age; }
 }
 ```
+
+But at least we cannot:
 
 [C# 6](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#expression-body-definitions) made the pit of success a bit deeper by introducing read-only properties using only a `get` accessor:
 
@@ -91,7 +95,7 @@ public readonly struct Person
 }
 ```
 
-This is all well and good, yet consider when our class or struct has multiple readonly properties and we need to construct a new copy with an updated value in one or more of them. My head hurts just by thinking about it. The boilerplate has tested my Christmas spirit, why must we endure this error prone manual waste? A better way must exist!
+This is all well and good, yet consider when our class or struct has multiple readonly properties and we need to construct a new copy with an updated value in one or more of them. My head hurts just by thinking about it. The boilerplate has tested my Christmas spirit, why must we endure this error prone, manual waste? A better way must exist!
 
 ## Records in C# 9
 
@@ -116,6 +120,6 @@ var me = new Person(37);
 Person meAYearOlder = me with { Age = 38 };
 ```
 
-With such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards 40 can break this developers Christmas spirit!
+With such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards my 40th birthday and usage of 24(!) year old memes can break this aging developer's Christmas spirit!
 
 [1]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
