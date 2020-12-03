@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 4
-title: Intelligent fetching and caching with SWR
+title: Intelligent data fetching and caching with SWR
 image: https://images.unsplash.com/photo-1488301573961-2c3f346509d6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2400&q=80
 ingress: "Every now and then, a library surfaces that change the way you're used
   to thinking. In this case, it is rethinking the data flow in your React app.
