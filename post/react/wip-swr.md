@@ -24,7 +24,7 @@ const { data, error } = useSWR(URL, fetcher);
 ``` 
 The first argument is the cache *key*, and the second argument is the *fetcher function* used to fetch data. Noteworthy here is that the fetcher function parameters must match the cache key argument.
 
-The `data object is either `undefined` (which happens when initially loading) or data from the cache. `error is `undefined` Unless the fetcher function has thrown an exception or rejected the promise.
+The `data object is either `undefined` (which happens when initially loading) or data from the cache. `error` is `undefined` unless the fetcher function has thrown an exception or rejected the promise.
 
 A typical fetcher function can look along the lines of this:
 ```js
