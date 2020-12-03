@@ -9,7 +9,8 @@ ingress: >-
   svært høyt i utviklingen av appen.*
 
 
-  Ulike varianter av dette sitatet finner vi mange intervjuer om Smittestopp. [Politikere](https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qid=80243), [helsebyråkrater](https://www.dagensmedisin.no/artikler/2020/04/02/massiv-kritikk-mot-korona-app/) og [forskere/utviklere](https://www.vg.no/nyheter/meninger/i/b5xzll/simula-smittestopp-virker) forsikrer at sikkerhet og personvern er ivaretatt. Kontrasten til Smittestopp-havariet er oppsiktsvekkende. Hvordan kan dette forstås?
+  Ulike varianter av dette sitatet finner vi mange intervjuer om Smittestopp. [Politikere](https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qid=80243), [helsebyråkrater](https://www.dagensmedisin.no/artikler/2020/04/02/massiv-kritikk-mot-korona-app/) og [utviklerne](https://www.vg.no/nyheter/meninger/i/b5xzll/simula-smittestopp-virker) forsikrer at sikkerhet og personvern er ivaretatt. Kontrasten til Smittestopp-havariet er oppsiktsvekkende. Hvordan kan dette forstås?
+description: ""
 links:
   - url: https://www.aftenposten.no/meninger/debatt/i/mBRlMv/personvernsverstingen-norge
     title: "Personvernsverstingen Norge? "
