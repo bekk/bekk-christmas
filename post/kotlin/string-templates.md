@@ -52,7 +52,7 @@ Performance-wise the first statement using `String.format` is by far the slowest
 
 As we can see, under the hood Kotlin uses the Java `StringBuilder`. The main argument for using string templates over ‘+’ is that they read better. 
 
-Notice that string templates are evaluated when the statement executes. In some cases you want the string building to happen as late as possible. An example is logging, where a typical log statement using string templates would look like something like.
+String templates are evaluated when the statement executes. In some cases you want the string building to happen as late as possible. An example is logging, where a typical log statement using string templates would look like something like.
 
 ```kotlin
 log.debug(“The number of presents in Santa’s sleigh is ${presents.size}”)
