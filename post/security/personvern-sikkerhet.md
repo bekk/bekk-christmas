@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 9
 title: Personvern != Sikkerhet
-image: https://unsplash.com/photos/gpjvRZyavZc
+image: https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1
 ingress: >-
   Simula har, sammen med FHI, fra starten prioritert sikkerhet og personvern
   svært høyt i utviklingen av appen.
