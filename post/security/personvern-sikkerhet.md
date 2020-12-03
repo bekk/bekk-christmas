@@ -21,7 +21,7 @@ links:
   - title: Regjeringen utsetter de kontroversielle delene av e-tjenesteloven
     url: https://rett24.no/articles/regjeringen-utsetter-de-kontroversielle-delene-av-e-tjenesteloven
 ---
-### Personvern og Smittestopp
+## Personvern og Smittestopp
 
 Den primære årsaken er en grunnleggende mangel på forståelse for personvern. Spørsmål og innsigelser om personvern besvares med utsagn om at sikkerheten er ivaretatt. Men personvern er noe annet - og mye mer - enn sikkerhet.
 
