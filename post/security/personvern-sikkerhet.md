@@ -5,8 +5,8 @@ post_day: 9
 title: Personvern != Sikkerhet
 image: https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1
 ingress: >-
-  Simula har, sammen med FHI, fra starten prioritert sikkerhet og personvern
-  svært høyt i utviklingen av appen.
+  > *Simula har, sammen med FHI, fra starten prioritert sikkerhet og personvern
+  svært høyt i utviklingen av appen.*
 
 
   Ulike varianter av dette sitatet finner vi mange intervjuer om Smittestopp. [Politikere](https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qid=80243), [helsebyråkrater](https://www.dagensmedisin.no/artikler/2020/04/02/massiv-kritikk-mot-korona-app/) og [forskere/utviklere](https://www.vg.no/nyheter/meninger/i/b5xzll/simula-smittestopp-virker) forsikrer at sikkerhet og personvern er ivaretatt. Kontrasten til Smittestopp-havariet er oppsiktsvekkende. Hvordan kan dette forstås?
