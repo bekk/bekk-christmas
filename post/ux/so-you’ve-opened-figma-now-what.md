@@ -21,7 +21,7 @@ authors:
 
 An excellent question! While you were fast asleep getting your regular six to seven hours, I was up all night making a Figma course for you. So kick back, relax and enjoy your raw cocoa and bee pollen coffee. You can't slack too much though because you have to do most of the work from here on out…
 
-I believe the quickest way to learn something is to try it for yourself. Therefore, I’ve decided that the best way to introduce you to Figma is to make a Figma file **filled to the brim** with practical exercises for you to explore and learn from. My goal is at the end of the course, you know enough Figma to start creating sketches and wireframes of your own. The tutorial is inside [this downloadable Figma-file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0), so you can add it to your own files and look at it whenever you want. You’re welcome.
+I believe the quickest way to learn something is to try it for yourself. Therefore, I’ve decided that the best way to introduce you to Figma is to make a Figma file **filled to the brim** with practical exercises for you to explore and learn from. My goal is at the end of the course, you'll know enough Figma to start creating sketches and wireframes of your own. The tutorial is inside [this downloadable Figma-file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0), so you can add it to your own files and look at it whenever you want. You’re welcome.
 
 <br/>
 
