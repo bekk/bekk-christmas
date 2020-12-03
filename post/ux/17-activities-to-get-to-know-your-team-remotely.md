@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 5
 title: 17 activities to get to know your team remotely
-image: https://ibb.co/yqdYP41
+image: https://i.ibb.co/RcYBbjm/17-remote-activites.png
 authors:
   - Thea Sommersletta
 ---
