@@ -26,7 +26,7 @@ Web accessibility aims to include everyone - to the best of their abilities - in
 
 ## Legibility and readability
 
-I must admit that it’s not that long ago that I realized that legibility and readability aren’t synonyms. So, before we move on, some clarification is necessary. Readability refers to the text’s overall accessibility. In other words, how easy it is to read/receive a chunk of text. Legibility, on the other hand, refers to how easy it is for the reader to decode and differentiate individual letters in a word. I will refer to both terms in this article.
+I must admit that I for a long time believed that legibility and readability were synonyms. So, before we move on, some clarification is necessary. Readability refers to the text’s overall accessibility. In other words, how easy it is to read/receive a chunk of text. Legibility, on the other hand, refers to how easy it is for the reader to decode and differentiate individual letters in a word. I will refer to both terms in this article.
 
 ## The design of legible and readable typefaces
 
