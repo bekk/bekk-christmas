@@ -30,8 +30,9 @@ On august 22 2020 several of Sykehuspartners applications became the target of a
 From reports about the incident, we know that 25 patients and several employees has been notified that personal information have been stolen. Following the attack, the hospital has carried out a forced password change for all employees.
 
 **Sources**
-- [Sykehuspartner announcing attack](https://sykehuspartner.no/nyheter/dataangrep-mot-sykehuset-innlandet-hf)
-- [Sykehuspartners analysis of attack](https://sykehuspartner.no/nyheter/analysearbeidet-etter-dataangrepet-mot-sykehuset-innlandet-er-avsluttet)
+
+* [Sykehuspartner announcing attack](https://sykehuspartner.no/nyheter/dataangrep-mot-sykehuset-innlandet-hf)
+* [Sykehuspartners analysis of attack](https://sykehuspartner.no/nyheter/analysearbeidet-etter-dataangrepet-mot-sykehuset-innlandet-er-avsluttet)
 
 ## NHH
 
@@ -42,7 +43,8 @@ In august this year, Norges handelshøgskole (NHH, English: Norwegian School of 
 Usernames and passwords of both students and employees was compromised. The break in was discovered when the stolen credentials were uploaded to a “hacker” forum. The attack targeted a known vulnerability in an old version of the VPN service called Pulse Secure. An updated version that patches this vulnerability has been available since April 2019. But NHH is decommissioning the service and has thus been neglecting to update it. All students and employees were asked to change their passwords after the incident.
 
 **Sources**
-- [Norwegian news article about NHH attack](https://www.dn.no/utdannelse/nhh/datakriminalitet/nhh-oppdaterte-ikke-sikkerhetshull-kjent-siden-april-2019-na-er-handelshoyskolen-rammet-av-internasjonalt-dataangrep/2-1-853329)
+
+* [Norwegian news article about NHH attack](https://www.dn.no/utdannelse/nhh/datakriminalitet/nhh-oppdaterte-ikke-sikkerhetshull-kjent-siden-april-2019-na-er-handelshoyskolen-rammet-av-internasjonalt-dataangrep/2-1-853329)
 
 ## ISS
 
@@ -55,8 +57,9 @@ The ransomware was a massive malware attack across IT-systems and networks. Imme
 It was reported that customer data was not stolen.
 
 **Sources**
-- [Norwegian news article about ISS attack](https://www.digi.no/artikler/dansk-servicegigant-rammet-etter-skadevareangrep/485762)
-- [Norwegian news article about aftermath of ISS attack](https://www.digi.no/artikler/iss-venter-milliardsmell-etter-cyberangrepet-i-februar/488264)
+
+* [Norwegian news article about ISS attack](https://www.digi.no/artikler/dansk-servicegigant-rammet-etter-skadevareangrep/485762)
+* [Norwegian news article about aftermath of ISS attack](https://www.digi.no/artikler/iss-venter-milliardsmell-etter-cyberangrepet-i-februar/488264)
 
 ## Twitter
 
@@ -69,8 +72,9 @@ The phish was used to get access to certain high-profile accounts. The compromis
 ![Tweets from Joe Biden and Barack Obama promoting a bitcoin scam](https://i.ibb.co/sPXDZK7/external-content-duckduckgo-com.png "Biden and Obamas twitter profiles were hacked to promote a bitcoin scam")
 
 **Sources**
-- [News article about Twitter hack](https://edition.cnn.com/2020/07/15/tech/twitter-hack-elon-musk-bill-gates/index.html)
-- [News article about Twitter hack - two weeks later](https://edition.cnn.com/2020/07/30/tech/twitter-hack-update/index.html)
+
+* [News article about Twitter hack](https://edition.cnn.com/2020/07/15/tech/twitter-hack-elon-musk-bill-gates/index.html)
+* [News article about Twitter hack - two weeks later](https://edition.cnn.com/2020/07/30/tech/twitter-hack-update/index.html)
 
 ## CWT
 
@@ -81,9 +85,13 @@ One of the fascinating things about this hack was that the negotiation chat, whe
 ![Screenshot of chat between hackers and CWT](https://i.ibb.co/QC7f7MJ/cwt-chat.jpg "Screenshot of the negotiation chat between hackers and CWT")
 
 **Sources**
-- [News article about CWT attack](https://www.reuters.com/article/us-cyber-cwt-ransom-idUSKCN24W25W)
+
+* [News article about CWT attack](https://www.reuters.com/article/us-cyber-cwt-ransom-idUSKCN24W25W)
+
+# In conclusion
 
 This is of course not a complete list of all the major hacks that were reported in 2020. It sure has been a very active year in this regard. As you can see, there are many ways of being vulnerable on the internet. If you want to better understand how to prevent some of these things happening to you, take a look at the previous three posts:
+
 1. [Application security check list](https://security.christmas/2020/1)
 2. [Github Security: Getting started with Dependabot](https://security.christmas/2020/2)
 3. [How secure is your build pipeline?](ttps://security.christmas/2020/3)
