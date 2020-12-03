@@ -6,7 +6,7 @@ title: From Coils to Curves
 image: ""
 ingress: Elliptic curves are seemingly ubiquitous in modern cryptographic
   protocols, and may turn up again later this December. Let’s take this
-  opportunity to gain some insight on what they are and why they are used.
+  opportunity to gain insight on what they are and why they are used.
 links: []
 authors:
   - Tjerand Silde
