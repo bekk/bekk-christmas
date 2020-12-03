@@ -24,13 +24,9 @@ Web accessibility aims to include everyone - to the best of their abilities - in
 
 *Side note: There are ways to facilitate “reading” for people who are e.g. partially or completely blind, as well, but this is outside the scope of this article. I do, however, strongly recommend that you research this topic as well!*
 
-
-
 ## Legibility and readability
 
 I must admit that it’s not that long ago that I realized that legibility and readability aren’t synonyms. So, before we move on, some clarification is necessary. Readability refers to the text’s overall accessibility. In other words, how easy it is to read/receive a chunk of text. Legibility, on the other hand, refers to how easy it is for the reader to decode and differentiate individual letters in a word. I will refer to both terms in this article.
-
-
 
 ## The design of legible and readable typefaces
 
@@ -57,8 +53,6 @@ Slight differences in a letter’s internal contrast - i.e. different thickness 
 ![Fonts with low general contrast, for example a ultra light font, are more difficult to read.](/assets/general-contrast.png)
 
 Even though thin or light fonts can make your design seem minimalistic, clean, and airy, they do not promote good readability. Light and ultra-light fonts are usually difficult to read as they have too little contrast to the background. However, too much contrast – i.e. black or heavy fonts – results in a low degree of airy and openness (see point number 2), which again lowers legibility. Balance is key.
-
-
 
 ## The design of readable texts
 
@@ -100,4 +94,4 @@ The second is centered text: when the text is symmetrically aligned along the ax
 
 ## Conclusion
 
-As you can see, many factors influence the accessibility of text. If you are lucky enough to work with a design system, many of these guidelines are likely a default part of the components you work with. However, it is always got to bear in mind these guidelines and that you have a commitment to make digital content receivable and understandable. Easy measures can make a lot of difference for your users, whether they are visually impaired, stressed, dyslexic, tired, color blind, or so on. Good luck!
+As you can see, many factors influence the accessibility of text. If you are lucky enough to work with a design system, many of these guidelines are likely a default part of the components you work with. However, it is always good to bear in mind these guidelines and that you have a commitment to make digital content receivable and understandable. Easy measures can make a lot of difference for your users, whether they are visually impaired, stressed, dyslexic, tired, color blind, or so on. Good luck!
