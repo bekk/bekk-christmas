@@ -18,7 +18,7 @@ The statements are four different ways of obtaining exactly the same string:
 
 **All I want for Christmas is $ 100.0!**
 
-The latter two are using the string template construct of Kotlin, in an *escaped string* and a *raw string*, respectively. The `$` symbol indicates the start of a template, and if you need a ‘$’ symbol in your text it needs to be handled separately, in an escaped string by escaping (what else) the character, or by doing some small trickery in a raw string. 
+The latter two are using the string template construct of Kotlin, in an *escaped string* and a *raw string*, respectively. The `$` symbol indicates the start of a template, and if you need a ‘$’ symbol in your text it needs to be handled separately, in an escaped string by escaping (what else) the character, or by doing some small trickery in the case of a raw string. 
 
 In this case the string template is simple, with the `$` immediately followed by the variable. In more complex cases the expression needs to be put in curly brackets, for example:
 
@@ -28,7 +28,7 @@ val s6 = "All you get for Christmas is \$ ${if (hasBeenGood) dollars else 0.0}!"
 val s7="${i++} ... ${i++} ... ${i++} - here’s Santa!"
 ```
 
-The contents of the string template should be a Kotlin expression, or a block ending with an expression. An expression is any code construct that returns a single value. Statements and blocks can be used without compilation errors, but results in a Unit being returned, which isn’t very useful normally.  
+The contents of the string template should be a Kotlin expression, or a block ending with an expression. An expression is any code construct that returns a single value. Statements and blocks can be used without compilation errors, but results in a Unit being returned, which isn’t very useful, normally.  
 
 Performance-wise the first statement using `String.format` is by far the slowest, since it is a thin layer on top of Java’s `string.format`, which in turns parses the string for arguments on each invocation. Of curse, it offers advanced formatting options for things like numbers, currencies and dates. String templates do no such thing. In fact, the three other statements compiles to exactly the same Kotlin bytecode:
 
