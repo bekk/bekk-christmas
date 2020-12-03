@@ -34,7 +34,7 @@ Actually, arrows _only_ seperate one input value and a return value. The type si
 isBetween : Int -> (Int -> (Int -> Bool))
 ```
 
-For esthetic reasons, Elm allow us to write the type signature without the parenthesis.
+For esthetic reasons, Elm allow us to write the type signature without the parentheses.
 
 There is no such thing as a function taking multiple arguments. All functions take exactly one argument, and returns something else. That something else might be another function. That also means that when calling a function that takes multiple arguments, it's not only _valid_ to call it in the following way, it's also conceptually what happens:
 
