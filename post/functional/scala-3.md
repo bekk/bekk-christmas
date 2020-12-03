@@ -6,33 +6,33 @@ title: Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
-A new year is closing in and so is a new release of Scala. Release candidate 1
-is expected to be found some time this December!
+A new year is closing in and so is a new release from Scala. Release candidate 1
+is expected to be found sometime this December!
 
 Version two of the language was released in 2006 and has so far seen a
 total of thirteen larger minor releases. Throughout these changes the
-language has evolved to places not foreseen. Implicits that were first introduces
+language has evolved to places not foreseen. Implicits that were first introduced
 for implicit conversions gave rise to type classes, built upon to create
 implicit classes for extension methods, and macros for metaprogramming that to this day is still locked behind
-experimental flags; though still considered a key part of the language. A key
+experimental flags, though still considered a key part of the language. A key
 part of version 3 is to formalize these patterns, make the syntax more obvious, and be more
-opinionated. But under the hood there are lots more going on!
+opinionated. But under the hood there is lots more going on!
 
 The original vision of the language has been on unifying Object Oriented Programming and
 Functional Programming. In doing this it was found that the theoretical
-foundation was not sound; combining subtyping with dependent types has been a problematic challenge
+foundation was not sound, combining subtyping with dependent types has been a problematic challenge
 [^subtypingPath]. In 2016 the DOT Calculus (Dependent Object Types) was presented as a new
 theoretical foundation. With that came Dotty, a reference implementation of a
 language translating to the DOT calculus, and now soon to be Scala 3. 
  <!-- Scala 3 is not just a new major release, but a complete rewrite with a new foundation. -->
 
-If migration issues is a worrying factor then it should please you to know that
-most application code bases seems easy to port. To ease the process a lot of the
-bigger user facing changes are delayed to version 3.1. Scala 3 will also be able
-to use Scala 2.13.4 binaries and vica versa. Most of the difficulties will be
-on the ecosystem migrating base libraries, which is well on it's way! The
-community builds[^scala2CommunityBuilds] has been a huge success for Scala 2 and the one for Scala 3
-is soon up to 40 community libraries [^scala3CommunityBuilds]! Not bad for a
+If migration issues are a worrying factor, then it should please you to know that
+most application code bases seem easy to port. To ease the process a lot of the
+bigger users facing changes are delayed to version 3.1. Scala 3 will also be able
+to use Scala 2.13.4 binaries and vice versa. Most of the difficulties will be
+in the ecosystem migrating base libraries, which is well on its way! The
+community builds[^scala2CommunityBuilds] has been an enormous success for Scala 2 and the one for Scala 3
+is soon up to 40 community libraries [^scala3CommunityBuilds]! Not bad for
 unreleased software. Documentation on the migration process is being worked on
 the by the Scala Center[^migration].
 
@@ -44,16 +44,16 @@ def hello = println("world")
 ```
 
 <!-- Now, with the formalities gone we can take a dive into some of the new features. -->
-Simplicity and more opinionated patterns is one of the bigger design goals. In the example
+Simplicity and more opinionated patterns are one of the bigger design goals. In the example
 above we have started a small program in two lines of code. Try it out yourself
-through Scastie[^scastieHelloWorld]. But lines of code is far from everything regarding simplicity! The error
-messages are improved and the type system will do a much better jobbing
-assisting you while keeping the code sound. 
+through Scastie[^scastieHelloWorld]. But lines of code are far from everything regarding simplicity! The error
+messages are improved, and the type system will do a much better job
+aiding you while keeping the code sound. 
 One example of that is that the compiler will give suggestions of what to import
-when implicits are missing from the scope. In the example error below we can see
+when implicits are missing from the scope. In the example error below, we can see
 a detailed error message from trying to use an extension method from the
 fantastic Cats[^cats] library. Learning which imports to use in libraries which are heavy on
-implicit usage have always been a sore spot for beginners. Now we immediately
+implicit usage has always been a sore spot for beginners. Now we immediately
 get a helping hand to continue.
 
 
@@ -81,17 +81,17 @@ get a helping hand to continue.
 ?TODO link til kalenderuke 9?
 <!-- TODOD dobbelsjekk feilmelding mot scalac. Finnes bedre eksempel? -->
 
-All of the examples can be run through Scastie and I can recommend trying them
-out. Note that they are a unprioritized random subset of all the new features.
-An up to date list of changes to the language can be found on the Dotty site[^scala3Docs].
+All the examples can be run through Scastie and I can recommend trying them
+out. Note that they are an unprioritized random subset of all the new features.
+An up-to-date list of changes to the language can be found on the Dotty site[^scala3Docs].
 
 ### Enums
 
-In previous versions the de facto standard of enums have been to
-create a Java file with a enum, or create a `sealed trait`, or use some
+In earlier versions the de facto standard of enums have been to
+create a Java file with an enum, or create a `sealed trait`, or use some
 macro library. While sealed trait hierarchy do provide a working solution
 with exhaustive checking, it is far more general and requires a lot more
-boilerplate if one needs ordinality, hence the macro based solutions.
+boilerplate if one needs ordinality, hence the macro-based solutions.
  <!-- The downside of using `sealed trait`s that are meant to
 model ADTs is that they, among others, have no inherent concept of ordinality. -->
 
@@ -111,11 +111,11 @@ enum House {
 }
 ```
 
-It is worth noting that enums are syntactic sugar that is translated to a 
-`sealed trait` at compile time. Enums will therefore also support modeling of
+It is worth noting that enums are syntactic sugar that is translated to a
+`sealed trait` at compile time. Enums will therefore also support the modeling of
 ADT's (Abstract Data Types) and GADT's (Generalized ADT's). 
 
-A homemade implementation of the Option ADT can now be as following.
+A homemade implementation of the Option ADT can now be as follows:
 
 ```scala
 enum Option[+T] {
@@ -131,17 +131,17 @@ enum Option[+T] {
 ### The new implicits: using/given and extension methods
 
 One of the bigger sources of confusion have been `implicits` and all the
-contexts it's usable in. Need implicit conversion? Check. Type classes? Check.
-Extension methods? check. Sending some contextual information? check.
+contexts it is usable in. Need implicit conversion? Check. Type classes? Check.
+Extension methods? Check. Sending some contextual information? Check.
 
 
 #### Extension Methods
 
 Extension methods can shortly be explained as extending methods on types after
 they have been defined. This can be usable for extending the functionality of
-third party libraries or for creating DSLs.
+third-party libraries or for creating DSLs.
 
-Let's say one want to count the occurrences of a word in a list, say
+Let us say one wants to count the occurrences of a word in a list, say
 
 ```scala
 val myList = "My cat knows how to not disturgbdds mejkljljlsdjflkds"
@@ -149,7 +149,7 @@ val myList = "My cat knows how to not disturgbdds mejkljljlsdjflkds"
 myList.countWord("cat")
 ```
 
-The function `countWords` does not exist. Previously  with the following in
+The function `countWords` does not exist. Previously with the following in
 scope the code would have compile.
 
 ```scala
@@ -169,11 +169,11 @@ extension (sentence: String) def countWord(word: String): Int =
 
 #### Type classes
 
-Type classes are in short a way to do ad hoc polymorphism. One typical example
-of a type class is the `Show` type class. In Java every class
+Type classes are, in short, a way to do ad hoc polymorphism. One typical example
+of a type class is the `Show` type class. In Java, every class
 extends from `Object` and on `Object` we find a `toString` method. Being
 available everywhere is practical, but does it make sense for _everything_?
-i'm not going to jump into that debate, but what if we could define something
+I am not going to jump into that debate, but what if we could define something
 that gave us a `def show: String` method on every type that we find necessary,
 and if not defined then give us a compile error? To have such a class of
 functionality defined ad hoc for a type is a type class.
@@ -211,8 +211,8 @@ val result: String = 1.show
 def run = println(result)
 ```
 
-This works for it's purpose, but there is a lot of concepts to grasp.
-If finding this in your codebase is the first introduction to these concepts
+This works for its purpose, but there are a lot of concepts to grasp.
+If finding this in your codebase is the first introduction to these concepts,
 then good luck guessing what to google to understand it.
 
 A rewrite of the same functionality to Scala 3 would use the new `given` keyword
@@ -241,7 +241,7 @@ val result: String = 1.show
 def run = println(result)
 ```
 
-One of the many small but important differences to note is that there is no
+One of the many small but significant differences to note is that there is no
 explicitly named reference to the `given` instance of the type class instances like
 `showInt` and `showString` in the Scala 2 example.
 
@@ -271,18 +271,18 @@ def run = println(result)
 
 <!-- TODO inform on Show and adding SHow[Double] -->
 
-For `myGenericFunction` we have defined a function where we operate on one type `A`
+For `myGenericFunction` we have defined a function where we work on one type `A`
 that has an implementation of `Show` that is unnamed and defined numeric operations
 through a new type class, `Numeric`. The power of this is that within the function we
-have a well defined set of possible things to do. If this had been from separate
-library then we could just implement the `given` instances for our own types.
+have a well-defined set of things to do. If this had been from separate
+library, then we could just implement the `given` instances for our own types.
 
 <!-- - TODO explain Numeric -->
 
 <!-- - TODO! new scope rules -->
 
 `Show` is not one of the conceptually important examples, but the use case for type classes
-are none the less a fantastic tool for many abstractions. Such examples can be to
+is none the less a fantastic tool for many abstractions. Such examples can be to
 define specific functionality for types in generic code like `myGenericFunction`
 or modeling abstractions[^applicatives].
 
@@ -291,6 +291,7 @@ or modeling abstractions[^applicatives].
 
 
 ### Union types
+<!-- TODO bedre intro -->
 
 To represent a coproduct of types.
 
@@ -299,11 +300,15 @@ type MyCoproduct = Int | String
 ```
 
 
-Some of the possibilities this opens up is to create type safe error handling simpler!
+Some of the possibilities this opens is to make type safe error handling simpler!
 
 ```scala
-case class OhNoYouDidNot(error: String)
-object EvilState
+object SomeThirdPartyLibrary {
+  object EvilState
+}
+import SomeThirdPartyLibrary._
+
+case class OhNoYouDidNot(error: String) 
 
 type MyErrors = OhNoYouDidNot | EvilState.type
 
@@ -338,7 +343,7 @@ Another mechanism to help with type safety in our applications is `opaque types`
 are type definitions where the enclosing type is only known within the same scope.
 
 ```scala
-object MyLib {
+object MyMathLibrary {
   opaque type Percent = Double
 
   object Percent {
@@ -352,7 +357,7 @@ object MyLib {
   }
 }
 
-import MyLib._
+import MyMathLibrary ._
 
 val result = Percent(10) * Percent(40)
 
@@ -379,11 +384,13 @@ Some upcoming changes
 -->
 
 ## And lots more
+<!--  scratched into some concepts, hope it have piquied your interest. Lots more that deserve attention. Check that out here -->
 
-Other interesting themes to dive into are intersection types, the new built in type class derivation
-support, ADT modeling with enums that also supports working GADT's, explicit
-null handling, export clauses, and a new macro system. While the details are still being
-hammered on, it is interesting to ponder where all of this will take the language?
+Other interesting themes to dive into are intersection types, the newly built-in type class derivation
+support, 
+<!-- ADT modeling with enums that also supports working GADT's,  -->
+explicit null handling, export clauses, and a new macro system. While the details are still being
+hammered on, it is interesting to ponder where all of this will take the language.
 Eager to try it out [^scastieHelloWorld]?
 
 <!-- TODO nevn braceless syntax? -->
@@ -394,6 +401,7 @@ Eager to try it out [^scastieHelloWorld]?
 https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 
 [^scala3CommunityBuilds]: https://github.com/lampepfl/dotty/tree/master/community-build/community-projects
+
 
 [^scala2CommunityBuilds]: https://www.scala-lang.org/2020/02/20/community-build.html
 
