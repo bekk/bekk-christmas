@@ -58,7 +58,7 @@ Notice that string templates are evaluated when the statement executes. In some 
 log.debug(“The number of presents in Santa’s sleigh is ${presents.size}”)
 ```
 
-If the log level is higher than debug, the expression would be evaluated and the string assembled even though the logger would not write anything to the appender. Most log frameworks has functions similar to `String.format`:
+If the log level is higher than DEBUG, the expression would be evaluated and the string assembled even though the logger would not write anything to the appender. Most log frameworks has functions similar to `String.format`:
 
 ```kotlin
 log.debug(“The number of presents in Santa’s sleigh is %d”, presents.size)
