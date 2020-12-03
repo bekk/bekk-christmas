@@ -29,7 +29,7 @@ I’m glad you asked, friend! Inside the course I’ll show you the layout and f
 
 
 
-# How do I begin?
+# Where do I begin?
 
 [Download the file]() and import it into Figma. Then it’s just a matter of opening the file and we’re off!
 
