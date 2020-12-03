@@ -22,7 +22,7 @@ The statements are four different ways of obtaining exactly the same string:
 
 **All I want for Christmas is $ 100.0!**
 
-The latter two are using the string template construct of Kotlin, in an *escaped string* and a *raw string*, respectively. The `$` symbol indicates the start of a template, and if you need a ‘$’ symbol in your text it needs to be handled separately, in an escaped string by escaping (what else) the character, or by doing some small trickery in the case of a raw string. 
+The latter two are using the string template construct of Kotlin, in an *escaped string* and a *raw string*, respectively. The `$` symbol indicates the start of a template, and if you need a ‘$’ symbol in your text it needs to be handled separately, in an escaped string by escaping (what else) the character, or by doing a little bit of Christmas magic in a raw string. 
 
 In this case the string template is simple, with the `$` immediately followed by the variable. In more complex cases the expression needs to be put in curly brackets, for example:
 
