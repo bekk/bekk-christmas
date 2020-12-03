@@ -94,6 +94,6 @@ This is of course not a complete list of all the major hacks that were reported 
 
 1. [Application security check list](https://security.christmas/2020/1)
 2. [Github Security: Getting started with Dependabot](https://security.christmas/2020/2)
-3. [How secure is your build pipeline?](ttps://security.christmas/2020/3)
+3. [How secure is your build pipeline?](https://security.christmas/2020/3)
 
 Also, be sure to follow this advent calendar for even more articles leading up to Christmas day!
