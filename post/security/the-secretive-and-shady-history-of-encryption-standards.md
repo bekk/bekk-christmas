@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 8
 title: The secretive and shady history of encryption standards
-image: https://unsplash.com/photos/EZOxj183uCM
+image: https://images.unsplash.com/photo-1577866906674-06078312b748?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzd8fHNlY3JldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
 ingress: "Cryptography is the science of hiding information with algorithms
   called ciphers. When data is encrypted with a secure cipher, no one should be
   able to read it without the decryption key. However, the promise of security
