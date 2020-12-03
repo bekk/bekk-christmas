@@ -35,6 +35,6 @@ I’m glad you asked, friend! Inside the course, I’ll show you the layout and 
 
 [Download the file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) and import it into Figma. Then it’s just a matter of opening the file and we’re off!
 
-If you don’t know how to import files into Figma yet, don’t you worry! Our good friends over at Figma have put together an easy tutorial for just that [here](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma).
+If you don’t know how to import files into Figma yet, don’t worry! Our good friends over at Figma have put together an easy tutorial for just that right [here](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma).
 
 This course is based on a course by Martin Sangolt. If you know him you also know I have a lot to live up to, so let's go!
