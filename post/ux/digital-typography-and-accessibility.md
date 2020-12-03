@@ -22,7 +22,7 @@ authors:
 ---
 Web accessibility aims to include everyone - to the best of their abilities - in the digital world. If you’ve ever stumbled upon WCAG 2.1 or other frameworks or guidelines for accessibility, you might have noticed that it's often about text. It might be about typefaces, fonts, visual appearance or hierarchy, or about code and what’s happening “behind the scenes”. This article aims to give you some clues about what makes typefaces and texts legible and readable. More specifically, the emphasis is on how to make text accessible for those who are able to receive textual content through their sight – e.g. those who can read without the help of screen readers. 
 
-*Side note: There are ways to facilitate “reading” for people who are e.g. partially or completely blind, as well, but this is outside the scope of this article. I do, however, strongly recommend that you research this topic as well!*
+*Side note: There are ways to facilitate “reading” for people who are e.g. partially or completely blind, as well, but this is outside the scope of this article. I do, however, strongly recommend that you research this topic also!*
 
 ## Legibility and readability
 
