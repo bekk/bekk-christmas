@@ -116,6 +116,6 @@ var me = new Person(37);
 Person meAYearOlder = me with { Age = 38 };
 ```
 
-And with such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards 40 can break this developers Christmas spirit!
+With such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards 40 can break this developers Christmas spirit!
 
 [1]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
