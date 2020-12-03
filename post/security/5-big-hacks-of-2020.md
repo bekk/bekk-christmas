@@ -20,7 +20,7 @@ authors:
 
 Sykehuspartner deliver IT, HR, project and logistics services to all hospitals in the Norwegian health region Helse Sør-Øst (Health South East). It manages vital IT systems for the hospitals, both clinical and administrative applications, as well as infrastructure and networks.
 
-On august 22 2020 several of Sykehuspartners applications were targeted by an unknown threat actor. Only one hospital (Sykehuset Innlandet) was targeted in this attack. Not much is known by the type and scope of the attack, except for what type of data might possibly have been stolen. The potentially stolen data might include:
+On august 22 2020 several of Sykehuspartners applications became the target of an unknown threat actor. Only one hospital (Sykehuset Innlandet) was targeted in this attack. Not much is known by the type and scope of the attack, except for what type of data might possibly have been stolen. The potentially stolen data might include:
 
 * Information about the deceased
 * Health information about patients from research projects
@@ -39,7 +39,7 @@ From reports about the incident, we know that 25 patients and several employees 
 
 In august this year, Norges handelshøgskole (NHH, English: Norwegian School of Economics), experienced a data heist. The school is one of the leading business schools in Europe and is located in the city of Bergen. 
 
-Usernames and passwords of both students and employees was compromised. The break in was discovered when the stolen credentials were uploaded to a “hacker” forum. The attack targeted a known vulnerability in an old version of the VPN service called Pulse Secure. An updated version that patches this vulnerability has been available since April 2019, but NHH is in the process of decommissioning the service and has therefore been neglecting to update it. All students and employees were asked to change their passwords after the incident.
+Usernames and passwords of both students and employees was compromised. The break in was discovered when the stolen credentials were uploaded to a “hacker” forum. The attack targeted a known vulnerability in an old version of the VPN service called Pulse Secure. An updated version that patches this vulnerability has been available since April 2019. But NHH is decommissioning the service and has thus been neglecting to update it. All students and employees were asked to change their passwords after the incident.
 
 **Sources**
 - [Norwegian news article about NHH attack](https://www.dn.no/utdannelse/nhh/datakriminalitet/nhh-oppdaterte-ikke-sikkerhetshull-kjent-siden-april-2019-na-er-handelshoyskolen-rammet-av-internasjonalt-dataangrep/2-1-853329)
@@ -50,7 +50,7 @@ Usernames and passwords of both students and employees was compromised. The brea
 
 In the middle of February this year, ISS was hit by a ransomware attack. ISS is global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
 
-The ransomware was a massive malware attack across IT-systems and networks. The company reported that the “IT-access” was removed immediately after the attack was discovered to isolate the indecent. Regardless of the actions taken, the company had to write down and change big parts of the IT-infrastructure. It is estimated that the attack will cost the company between 750 and 1340 million Norwegian kroner (NOK).
+The ransomware was a massive malware attack across IT-systems and networks. Immediately after the attack was discovered, IT-access was removed to isolate the indicent. As reported by the company. Regardless of the actions taken, the company had to write down and change big parts of the IT-infrastructure. It is estimated that the attack will cost the company between 750 and 1340 million Norwegian kroner (NOK).
 
 It was reported that customer data was not stolen.
 
@@ -74,7 +74,7 @@ The phish was used to get access to certain high-profile accounts. The compromis
 
 ## CWT
 
-CWT is a travel management company that manages business travel, meetings, etc. The 27 of July this year, the company was hit by a massive ransomware attack that knocked 30,000 computers offline. The hackers claimed to have stolen two terabytes of files, including financial reports, security documents and employees’ personal data. CWT paid $4.5 million to the hackers to restore their systems. 
+CWT is a travel management company that manages business travel, meetings and so on. The 27 of July this year, the company was hit by a massive ransomware attack that knocked 30,000 computers offline. The hackers claimed to have stolen two terabytes of files, including financial reports, security documents and employees’ personal data. CWT paid $4.5 million to the hackers to restore their systems. 
 
 One of the fascinating things about this hack was that the negotiation chat, where the company and the hackers met to talk, was left open to the public after the negotiations ended. This gives us a never before seen insight into how the negotiations between hacker and hacked works. As many others have noted after the chat became public, it is rearly advised to actually pay the hackers like CWT did. That us because of the precedence it sets and that the chance of getting scamed is very high.
 
@@ -88,4 +88,4 @@ This is of course not a complete list of all the major hacks that were reported 
 2. [Github Security: Getting started with Dependabot](https://security.christmas/2020/2)
 3. [How secure is your build pipeline?](ttps://security.christmas/2020/3)
 
-Also, be sure to follow this advent calendar for even more articles leading up to christmas day!
+Also, be sure to follow this advent calendar for even more articles leading up to Christmas day!
