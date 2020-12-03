@@ -9,8 +9,8 @@ ingress: Maybe you have just been hired by a company and you are forced to use
   you even have used Figma for a while and you’re curious if maybe there still
   are some tricks you haven’t yet learned? Well, look no further! The answers to
   ~~all~~ some of your questions lie ahead!
-description: An interactive introduction to Figma. Learn enough to use Figma to
-  make your own wireframes and sketches.
+description: An interactive introduction to Figma. Learn enough about how to use
+  Figma so that you can make your own wireframes and sketches.
 links: []
 authors:
   - Herman Slyngstadli
