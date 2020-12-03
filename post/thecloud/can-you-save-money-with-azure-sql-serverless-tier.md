@@ -12,7 +12,7 @@ ingress: >-
   database on demand, and instead, you pay-per-use.
 
 
-  One of our important production databases uses a lot of computing power while performing various tasks once every morning, and then smaller sporadic load the rest of the day and night. A good fit for the Serverless tier? Could we achieve the same performance at a reduced cost? Read on, and I will let you in on what I figured out!
+  One of our important production databases uses a lot of computing power while performing various tasks once every morning, and then smaller sporadic load the rest of the day and night. A good fit for the Serverless tier? Could we achieve the same performance at a reduced cost? Read on, and I will let you in on what I figured out.
 links:
   - url: https://docs.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview
     title: "Microsoft: Azure SQL Serverless compute tier"
@@ -34,7 +34,7 @@ The main price driver here is the number of vCores you want. But how do you know
 
 ### Testing vCore amount in the Provisioned tier
 
-First, I tested our normal daily operations that require a lot of power with 12 vCores in the _Provisioned_ tier to see that it was performant enough. I was happy to see that the execution time was equal! My goal was not simply to change to a vCore tier, although it has interesting features that I will not talk further about here. I wanted to specifically test the Serverless tier. Having locked down my vCore count without exceeding my budget, I went on to configure the Serverless tier.
+First, I tested our normal daily operations that require a lot of power with 12 vCores in the _Provisioned_ tier to see that it was performant enough. I was happy to see that the execution time was equal. My goal was not simply to change to a vCore tier, although it has interesting features that I will not talk further about here. I wanted to specifically test the Serverless tier. Having locked down my vCore count without exceeding my budget, I went on to configure the Serverless tier.
 
 ### The cost of the Serverless tier
 
@@ -90,15 +90,15 @@ What I was most interested in after deploying was the following
 
 To answer my first question, I did some manual analysis by timing known operations and how long they take after the change compared to before. I found it to be of equal performance, if not actually better.
 
-My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware while doing operations. I asked them to give immediate feedback if systems, reports, queries, etc. behaved any differently in terms of performance. I am pleased to say no one complained once!
+My second question is a bit tied to the first. I notified all our consumers of what I have changed and made them be extra aware while doing operations. I asked them to give immediate feedback if systems, reports, queries, etc. behaved any differently in terms of performance. I am pleased to say no one complained once.
 
 ### Cost analysis of our database
 
-Then to the most important part of my experiment. How much does it cost? To find this out, I had to monitor my "vCore second" usage manually. Not so glamorous other than staring at a graph in the Azure portal several times a day. By knowing how many vCore seconds we had used the first hour, I could multiply that to calculate predictions about how our monthly cost would look if our current load pattern continued. I then continued calculating such forecasts as the hours and days passed on. That way the cost was under control, and I didn't exceed my budget. If the numbers after say, a showed that this is in fact not cost-effective, I would have reverted my change.
+Then to the most important part of my experiment. How much does it cost? To find this out, I had to monitor my "vCore second" usage manually. Not so glamorous other than staring at a graph in the Azure portal several times a day. By knowing how many vCore seconds we had used the first hour, I could multiply that to calculate predictions about how our monthly cost would look if our current load pattern continued. I then continued calculating such forecasts as the hours and days passed on. That way the cost was under control, and I didn't exceed my budget. If the numbers after say, a few days, showed that this is in fact not cost-effective, I would have reverted my change.
  
 ![seconds2](https://user-images.githubusercontent.com/920028/100775234-490bfa00-3403-11eb-8186-9dc23c68f979.PNG)
 
-This picture shows vCore seconds used over a pretty average week for our database. Notice the spikes in the load that reflects the daily tasks I mentioned previously, as well as the reduced load during the weekend. If all weeks were like this week, our database would cost `0.001294 NOK * 1.55 mil vCore seconds * 4 weeks = 8022 NOK/month`. This is actually not very far from the truth! We have had the Serverless tier running on this database for a little over a month now, and the cost has been *10895 NOK/month*. That is nearly half the price of the S9 1600DTU tier!
+This picture shows vCore seconds used over a pretty average week for our database. Notice the spikes in the load that reflects the daily tasks I mentioned previously, as well as the reduced load during the weekend. If all weeks were like this week, our database would cost `0.001294 NOK * 1.55 mil vCore seconds * 4 weeks = 8022 NOK/month`. This is actually not very far from the truth. We have had the Serverless tier running on this database for a little over a month now, and the cost has been *10895 NOK/month*. That is nearly half the price of the S9 1600DTU tier!
 
 Now, that we actually managed to cut the price in half is dependent on a few things. Remember that we did not go 1-1 on the DTU to vCore conversion. We managed with 12 vCores equal to 1200 DTU instead of 16 vCores equal to 1600 DTU. This was also because the previous Standard tier S6 only sport 800 DTU. That caused too much load problems for us, and there is nothing in the middle before S9 with 1600 DTU.
 
