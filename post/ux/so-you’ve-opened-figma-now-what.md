@@ -37,4 +37,4 @@ I’m glad you asked, friend! Inside the course, I’ll show you the layout and 
 
 If you don’t know how to import files into Figma yet, don’t worry! Our good friends over at Figma have put together an easy tutorial for just that right [here](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma).
 
-This course is based on a course by Martin Sangolt. If you know him you also know I have a lot to live up to, so let's go!
+This course is based on a course by Martin Sangolt. If you know him you also know I have a lot to live up to, so let's go! No time to lose!
