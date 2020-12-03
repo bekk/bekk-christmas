@@ -9,7 +9,7 @@ links:
 authors:
   - Matias Vinjevoll
 ---
-A handy feature in Kotlin is the ability to destrucure datatypes into multiple variables.
+A handy feature in Kotlin is the ability to destructure datatypes into multiple variables.
 Given a data class `Country`:
 
 ```kotlin
