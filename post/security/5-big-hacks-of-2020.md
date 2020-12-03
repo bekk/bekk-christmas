@@ -27,7 +27,7 @@ On august 22 2020 several of Sykehuspartners applications became the target of a
 * Personal information about employees
 * Name and social security number (fødselsnummer) of students
 
-From reports about the incident, we know that 25 patients and several employees has been notified that personal information have been stolen. Following the attack, the hospital has carried out a forced password change for all employees.
+From reports about the incident, we know that 25 patients and several employees have been notified of personal information having been stolen. Following the attack, the hospital has carried out a forced password change for all employees.
 
 **Sources**
 
@@ -50,7 +50,7 @@ Usernames and passwords of both students and employees was compromised. The brea
 
 ![ISS logo](https://i.ibb.co/XDJVmgQ/imageedit-12-3910494650.png "ISS logo")
 
-In the middle of February this year, ISS was hit by a ransomware attack. ISS is global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
+In the middle of February this year, ISS was hit by a ransomware attack. ISS is a global facility services company, founded in Copenhagen, Denmark. The company has 450,000 employees.
 
 The ransomware was a massive malware attack across IT-systems and networks. Immediately after the attack was discovered, IT-access was removed to isolate the indicent. As reported by the company. Regardless of the actions taken, the company had to write down and change big parts of the IT-infrastructure. It is estimated that the attack will cost the company between 750 and 1340 million Norwegian kroner (NOK).
 
