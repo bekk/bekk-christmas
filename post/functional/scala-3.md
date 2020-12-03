@@ -60,7 +60,7 @@ get a helping hand to continue.
 ```scala
  List(1, 2, 3)
     .foldMap(number => Option.when(number > 1)(number - 1))
-// [error] -- [E008] Not Found Error: /home/perok/dev/private/dotty-example-project/src/main/scala/Main.scala:365:5 
+// [error] -- [E008] Not Found Error: Main.scala:365:5 
 // [error] 364 |  List(1, 2, 3)
 // [error] 365 |    .foldMap(number => Option.when(number > 1)(number - 1))
 // [error]     |  ^
