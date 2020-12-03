@@ -8,7 +8,7 @@ ingress: Maybe you have just been hired in a company and you are forced to use
   heard some good things about this new, up and coming design tool? Hell, maybe
   you even have used Figma for a while and you’re curious if maybe there still
   are some tricks you haven’t yet learned? Well, look no further! The answers to
-  ~~all~~ some of your questions lie beyond!
+  ~~all~~ some of your questions lie ahead!
 description: An interactive introduction to Figma. Learn enough to use Figma to
   make your own wireframes and sketches.
 links: []
