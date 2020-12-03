@@ -5,6 +5,8 @@ post_day: 6
 title: String templates
 image: https://images.unsplash.com/photo-1512766483272-0efe0291eea0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080
 ingress: ""
+authors:
+  - Jørn Ola Birkeland
 ---
 Consider the following snippet of code:
 
