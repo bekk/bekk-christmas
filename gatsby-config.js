@@ -67,7 +67,7 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: feedPluginConfig(envCalendar),
         },
-        {
+        isPreviewOrBekk && {
             resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {
                 fields: [`title`, 'authors'],
@@ -89,5 +89,5 @@ module.exports = {
                         node.frontmatter.post_day <= currentDay),
             },
         },
-    ],
+    ].filter(Boolean),
 };

@@ -4,6 +4,10 @@ const path = require(`path`);
 const THIS_YEAR = 2020;
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
+    const envCalendar = process.env.CALENDAR_ENV;
+    const isPreview = envCalendar === 'preview';
+    const isPreviewOrBekk = !envCalendar || isPreview;
+
     const frontpageTemplate = path.resolve(`src/templates/frontpage.js`);
     const blogPostTemplate = path.resolve(`src/templates/post.js`);
     const calendarTemplate = path.resolve(`src/templates/calendar.js`);
@@ -12,32 +16,44 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     const { createPage } = actions;
 
-    const result = await graphql(`
-        {
-            allMarkdownRemark(limit: 1000) {
-                nodes {
-                    frontmatter {
-                        post_day
-                        post_year
-                        calendar
-                    }
-                    id
-                }
-            }
-            siteSearchIndex {
-                index
-            }
-        }
-    `);
+    const result = isPreviewOrBekk
+        ? await graphql(`
+              {
+                  allMarkdownRemark(limit: 1000) {
+                      nodes {
+                          frontmatter {
+                              post_day
+                              post_year
+                              calendar
+                          }
+                          id
+                      }
+                  }
+                  siteSearchIndex {
+                      index
+                  }
+              }
+          `)
+        : await graphql(`
+              {
+                  allMarkdownRemark(limit: 1000) {
+                      nodes {
+                          frontmatter {
+                              post_day
+                              post_year
+                              calendar
+                          }
+                          id
+                      }
+                  }
+              }
+          `);
 
     // Handle errors
     if (result.errors) {
         reporter.panicOnBuild(`Error while running GraphQL query.`);
         return;
     }
-
-    const envCalendar = process.env.CALENDAR_ENV;
-    const isPreview = envCalendar === 'preview';
     const calendarsWithContent = new Set();
 
     const currentDate = new Date();
@@ -191,12 +207,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     // Search results page
-    createPage({
-        path: '/search',
-        component: searchTemplate,
-        context: {
-            isPreview,
-            siteSearchIndex: result.data.siteSearchIndex,
-        },
-    });
+    if (!envCalendar || isPreview) {
+        createPage({
+            path: '/search',
+            component: searchTemplate,
+            context: {
+                isPreview,
+                siteSearchIndex: result.data.siteSearchIndex,
+            },
+        });
+    }
 };
