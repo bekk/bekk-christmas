@@ -390,7 +390,7 @@ Other interesting themes to dive into are intersection types, the newly built-in
 support, 
 <!-- ADT modeling with enums that also supports working GADT's,  -->
 explicit null handling, export clauses, and a new macro system. While the details are still being
-hammered on, it is interesting to ponder where all of this will take the language.
+hammered out, it is interesting to ponder where all of this will take the language.
 Eager to try it out [^scastieHelloWorld]?
 
 <!-- TODO nevn braceless syntax? -->
