@@ -2,10 +2,10 @@
 calendar: security
 post_year: 2020
 post_day: 5
-title: Elliptic Curves in Cryptography
+title: From Coils to Curves
 image: ""
 ingress: Elliptic curves are seemingly ubiquitous in modern cryptographic
-  protocols, and may also turn up again later this December. Let’s take the
+  protocols, and may turn up again later this December. Let’s take this
   opportunity to gain some insight on what they are and why they are used.
 links: []
 authors:
