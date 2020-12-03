@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 6
 title: String templates
+image: https://unsplash.com/photos/a4_NSbjHpOo
 ---
 Consider the following snippet of code:
 
