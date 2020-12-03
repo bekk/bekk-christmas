@@ -27,7 +27,7 @@ I believe the quickest way to learn something is to try it for yourself. Therefo
 
 # Cool! So what’s in this course?
 
-I’m glad you asked, friend! Inside the course, I’ll show you the layout and features of Figma and how to use them. You will be introduced to a plethora of different tools and menus, and get an overview of shortcuts and other techniques for making your life easier.
+I’m glad you asked, friend! Inside the course, I’ll show you the layout and features of Figma and how to use them. You will be introduced to a plethora of different tools and menus, and get an overview of shortcuts and other techniques for making your life easier. This course will not make you a seasoned professional ready to tackle the most complex responsive layouts and modular design systems. It will, however, give you the skills necessary to continue experimenting and creating on your own.
 
 <br/>
 
