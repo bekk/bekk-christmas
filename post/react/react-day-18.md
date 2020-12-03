@@ -22,7 +22,7 @@ authors:
   - Joakim Gyllenskepp
 ---
 # A fresh CRA project
-Note: This article is based on create react app version 4.
+(create react app version 4)
 
 After running `create-react-app` your root folder will look something like this:
 
