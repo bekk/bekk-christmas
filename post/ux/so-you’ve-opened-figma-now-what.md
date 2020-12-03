@@ -31,7 +31,7 @@ I’m glad you asked, friend! Inside the course, I’ll show you the layout and 
 
 <br/>
 
-# Where do I begin?
+# So, where do I begin?
 
 [Download the file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) and import it into Figma. Then it’s just a matter of opening the file and we’re off!
 
