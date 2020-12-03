@@ -90,6 +90,8 @@ Smittestopp hadde forøvrig også [en rekke rene sikkerhetssårbarheter og -svak
 * API nøkler og passord i kildekoden og Git-historikken.
 * Disse funnene indikerer manglende sikkerhetskompetanse og -kultur. Det er ikke akseptabelt når man skal passe på sensitive data om store deler av befolkningen.
 
+Det er nærmest parodisk når Simula hevder at "*[Appen er akkurat like sikker som andre tjenester](https://www.tv2.no/a/11382291/)*".
+
 ## Skrikende behov for personvernkompetanse
 
 Det er underlig og skremmende å lese at personvern har vært prioritert svært høyt i utviklingen av Smittestopp. Selv med tydelige tilbakemeldinger fra Datatilsynet, Amnesty, EUs personvernsråd, ekspertgruppen samt eksperter på teknologi og personvern, fortsetter [Helseministeren](https://www.dagbladet.no/meninger/hoie-bommer-om-smittestopp/72908271) og [FHI](https://www.aftenposten.no/norge/i/mRAyz0/fhi-sletter-alle-data-fra-appen-smittestopp) å si at de er uenige i Datatilsynets vurdering. Simula prøver å redde stumpene ved å hevde at Smittestopp havarerte [fordi inngrepet ikke lenger var forholdsmessig når smittetallene hadde blitt så lave](https://www.simula.no/news/smittestopp-og-erfaringer-fra-digital-smittesporing). Dette er åpenbart ikke sant.
