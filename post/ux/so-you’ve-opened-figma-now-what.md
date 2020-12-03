@@ -19,7 +19,7 @@ authors:
 
 An excellent question! While you were fast asleep getting your regular six to seven hours, I was up all night making a Figma course for you. So kick back, relax and enjoy your raw cocoa and bee pollen coffee. You can't slack too much though because you have to do most of the work from here on out…
 
-I believe the quickest way to learn something is to try it for yourself. Therefore, I’ve decided that the best way to introduce you to Figma is to make a Figma file **filled to the brim** with practical exercises for you to explore and learn from. My goal is at the end of the course, you know enough Figma to start creating sketches and wireframes of your own. The tutorial is inside [this downloadable Figma-file]() so you can add it to your own files and look at it whenever you want. You’re welcome.
+I believe the quickest way to learn something is to try it for yourself. Therefore, I’ve decided that the best way to introduce you to Figma is to make a Figma file **filled to the brim** with practical exercises for you to explore and learn from. My goal is at the end of the course, you know enough Figma to start creating sketches and wireframes of your own. The tutorial is inside [this downloadable Figma-file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) so you can add it to your own files and look at it whenever you want. You’re welcome.
 
 
 
@@ -31,6 +31,8 @@ I’m glad you asked, friend! Inside the course I’ll show you the layout and f
 
 # Where do I begin?
 
-[Download the file]() and import it into Figma. Then it’s just a matter of opening the file and we’re off!
+[Download the file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) and import it into Figma. Then it’s just a matter of opening the file and we’re off!
 
 If you don’t know how to import files into Figma yet, don’t you worry! Our good friends over at Figma have put together an easy tutorial for just that [here](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma).
+
+This course is based on a course by Martin Sangolt. If you know him you also know I have a lot to live up to, so let's go!
