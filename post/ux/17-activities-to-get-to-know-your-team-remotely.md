@@ -3,10 +3,12 @@ calendar: ux
 post_year: 2020
 post_day: 5
 title: 17 activities to get to know your team remotely
-image: https://i.ibb.co/RcYBbjm/17-remote-activites.png
+image: ""
 authors:
   - Thea Sommersletta
 ---
+![](/assets/17_remote_activites.png)
+
 In March our team started working remotely, as many other teams did. Suddenly our new norm in communication was slack messages, sub-par video chats, and tagging each other in Trello. 
 
 Despite not being able to see each other physically, it was still important for me as a designer that our team was able to communicate well. In creative workshops, I wanted everyone to feel that they could openly share their thoughts. In morning meetings, I strived to create a good atmosphere where everyone felt safe talking to the camera. When prioritizing tasks, I focused on getting everyone to feel that they were being heard. To achieve this, it was beneficial to get to know each other on a personal level, and not just through the tasks we are working on.
