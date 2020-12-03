@@ -22,32 +22,40 @@ authors:
   - Joakim Gyllenskepp
 ---
 # A fresh CRA project
+Note: This article is based on create react app version 4.
 
 After running `create-react-app` your root folder will look something like this:
 
 * Root
-
-  * `node_modules/`
-  * `public/`
   * `src/`
+  * `public/`
   * `package.json`
-  * `yarn.lock`
-  * `README.md`
-  * `.gitignore`
+  * `node_modules/`
+  * `.gitignore` / `README.md`
 
-`yarn.lock/package-lock.json`, `README.md`, and `.gitignore` aren't all that interesting. And you’re probably familiar with `node_modules`, where the code of all dependencies and peer dependencies of the project are stored.
+You're probably quite familiar with all of these folders. The `src/` folder contains React code, CSS, and some test files. There's also the `public` folder that will be 
+publicly available from the web browser, for example `robots.txt` that is used by search engine crawlers, and `index.html` which React will mount itself to. Furthermore there's `README.md`, `yarn.lock/package-lock.json`, and `.gitignore`.
 
-This `public` folder contains files that we want the user to be able to directly access in the web browser, for example `robots.txt` that is used by search engine crawlers, and `index.html` which React will mount itself to.
+That leaves us with `package.json` which contains some scripts and all of the dependencies of the application, and `node_modules` where all of these dependencies and their peer dependencies will be stored. Slightly related, the `yarn.lock/package-lock.json` files are used to get consistent installs of the application across different machines.
 
-In the `src/` folder we find the React code, css-files, Jest test-files, etc.
+So how can we get all of these files up and running in someone's web browser?
 
-`package.json` contains some scripts, all of the dependencies of a project, and some eslint config and a browser-list. As of CRA version 4 we can find the following dependencies: `@testing-library`, `react`, `react-dom`, `web-vitals`, and last but not least the `react-scripts`. There are also four scripts: `start`, `build`, `test`, and `eject`. Note that all of these scripts are dependent on `react-scripts`. Interesting... What is actually going on here?
+# Lets inspect package.json
 
-Note: If you use the typescript template for CRA, `package.json` will additionaly contain the dependencies `typescript` and some `@types`-dependencies that add ts support to packages that doesn't support typescript out of the box. You will also find `tsconfig.json`, `src/react-app-env.d.ts`, and all the code will be written in Typescript.
+First of all `package.json` contains some crucial dependencies such as `react` and `react-dom`. There's also `@testing-library` for testing your code, `web-vitals` for measuring the performance of the app, and finally `react-scripts` which I will get back to in a bit.
 
-# So what happens if you eject the app?
+Secondly, there are 4 scripts: `start`, `build`, `test`, and `eject`. The `start` script is used to run the application locally, `build` will build an optimized version of the application into the `build`-folder, and `test` is used to run all of the test files in the app. More on the `eject` script later. Note that all of these scripts are dependent on `react-scripts`. Interesting... What is actually going on here?
 
-By browsing into `package.json` we can immediately see that a lot have changed. We went from fewer than 10 to more than 60 dependencies! what actually happened is that `react-scripts` and all of its configuration and peer dependencies got replaced by moving all the configuration and dependencies into our project. A lot of these things were put into the `config`- and  `scripts`-folder. There is also some more configuration for `jest` and `babel`.
+# React scripts
+The `react-scripts` package is the core of create react app. When `react-scripts` is defined in `package.json`, all of the customs scripts and configuration used by create app will be downloaded into `node_modules` and used by the application. These configuration makes it possible to use `scss`, `eslint`, `jest`, `dotenv`, `babel`, and `webpack` in a CRA application. 
+
+As mentioned above, all of the scripts in `package.json` are dependent on `react-scripts`. The code for all of those scripts can actually be found inside the configuration of `react-scripts`, and even though they might seem really simple from your own application, these scripts are actually quite lengthy and complex.
+
+# Lets get back to the eject script
+
+This script will remove `react-scripts` from your application by moving all of the functionality from `react-scripts` into your own application.
+
+After ejecting, it is clear that a lot has changed by opening `package.json`. The number of dependencies went from fewer than 10 to more than 60! That means that there are over 50 dependencies hidden inside `react-scripts`. There's also a heap of other configuration that got replaced by moving all the configuration and dependencies into our project. A lot of these things were put into a `config`- and  `scripts`-folder.
 
 ## scripts
 
