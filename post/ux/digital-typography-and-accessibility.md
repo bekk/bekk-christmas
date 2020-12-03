@@ -11,11 +11,11 @@ ingress: "**Have you ever realized how important text is in the digital sphere?
   their abilities or disabilities. If you design or develop digital content, you
   have a responsibility to do so. And I’m here to help!**"
 links:
-  - title: Web Design is 95% Typography
+  - title: (1) Web Design is 95% Typography
     url: https://ia.net/topics/the-web-is-all-about-typography-period
-  - title: "Understanding Success Criterion 1.4.3: Contrast (Minimum)"
+  - title: "(2) Understanding Success Criterion 1.4.3: Contrast (Minimum)"
     url: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
-  - title: Can you easily read and comprehend textual information on the page?
+  - title: (3) Can you easily read and comprehend textual information on the page?
     url: https://accessibility.digital.gov/visual-design/typography/
 authors:
   - Ragnhild Finsveen Liven
