@@ -69,19 +69,19 @@ In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. 
 
 ## Elliptic Curve Diffie-Hellman Key-Exchange
 
-![](https://lh5.googleusercontent.com/6gfnHTxvtlNAOsBFmR3qQJK8QIiSWnssefhpW04J_JUEpZVhwc_gBDKh9IR6fkehJAXy8yfewo7I5uSZJNHVcqrOmakoJflIdaGCk-n6f3ojYynagqNNBnOawb1fm49P6Q)
+![](/assets/dh2.png)
 
 The Diffie-Hellman key-exchange protocol is widely used today, and its instantiation using elliptic curves is ranked as the best choice in modern cryptographic protocols like TLS and SSH. The protocol is fairly simple. The public information is an elliptic curve *E* and a generator *G* for the points on this curve. One party, Alice, samples a random integer *a* and computes a point *A* = *a* *G*. Another party, Bob, samples a random integer *b* and computes *B* = *b* *G*. Then they exchange the values *A* and *B*, and compute the shared key *K* = *b* *A* = *a* *B* = *a* *b* *G*. As long as both *a* and *b* stay secret, even when an attacker knows *G*, *A* and *B*, then the key is secure.
 
 ![](/assets/dh.png)
 
-Reference: <https://asecuritysite.com/encryption/go_x3dh>. Used with permission.
+*Reference: <https://asecuritysite.com/encryption/go_x3dh>. Used with permission.*
 
 To achieve long-term security, to protect previous messages in the case where someone’s secret keys are leaked after the fact, Alice and Bob can do an ephemeral key-exchange every time they communicate. If *a* and *A* is Alice’s long term key pair where *A* is public to everyone, and similar for Bob, they can run the following protocol to agree upon a one-time session-key. Alice samples a random integer *c* and computes *C* = *c* *G*, and Bob samples a random integer *d* and computes *D* = *d* *G*. Then they exchange *C* and *D*, and compute the shared key as (*a* *b* + *c* *d* )*G*.
 
 The interested reader can check out this [simple example written in Go](https://play.golang.org/p/qJBI0_2lsGP). Are you able to extend the basic protocol to the ephemeral key-exchange on behalf of Alice and Bob?
 
-We finally point out that this protocol is vulnerable to a man-in-the-middle attack, and we need to also send signatures computed on the messages to ensure that the communication is authentic. Are you able to attack the protocol as described above, when signatures are not used? If you found these problems interesting, we encourage you to check out similar challenges at [\[cryptohack.org](https://cryptohack.org/)](https://cryptohack.org).
+We finally point out that this protocol is vulnerable to a man-in-the-middle attack, and we need to also send signatures computed on the messages to ensure that the communication is authentic. Are you able to attack the protocol as described above, when signatures are not used? If you found these problems interesting, we encourage you to check out similar challenges at [[cryptohack.org](https://cryptohack.org/)](https://cryptohack.org).
 
 ## Common Curves
 
