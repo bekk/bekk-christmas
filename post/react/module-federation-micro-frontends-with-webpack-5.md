@@ -7,9 +7,9 @@ image: https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixid=MXwxMjA
 ingress: In this article, we will look at one of webpack's exciting new
   features, Module Federation. This feature will allow dynamic code reloading
   from another project at runtime. Using module federation will enable sharing
-  and code import from other projects with only a little tweaking in your
-  webpack config. It can make a website consisting of multiple frontend
-  applications appear as one seamless SPA. Neat, huh?
+  code from other projects with only a little tweaking in your webpack config.
+  It can make a website consisting of multiple frontend applications appear as
+  one seamless SPA. Neat, huh?
 links:
   - title: "Documentation "
     url: https://webpack.js.org/concepts/module-federation/
@@ -22,9 +22,9 @@ authors:
 ---
 > [webpack](https://webpack.js.org/concepts/) is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
-In webpack 5, a new exciting feature was released. \*\*Module Federation\*\*, a webpack plugin enabling dynamic code loading from multiple webpack builds at runtime. It supports dependency sharing, for example:
+In webpack 5, a new exciting feature was released. **Module Federation**, a webpack plugin enabling dynamic code loading from multiple webpack builds at runtime. It supports dependency sharing, for example:
 
-\*Application A, importing code from application B, will attempt to use its own dependencies before downloading payloads from B. Nevertheless, A will download the dependencies from B if they are missing from A.\*
+*Application A, importing code from application B, will attempt to use its own dependencies before downloading payloads from B. Nevertheless, A will download the dependencies from B if they are missing from A.*
 
 This way of sharing code between webpack applications opens up a sea of possibilities. For instance, you may use react components from other projects while receiving updates, both during build and runtime.
 
