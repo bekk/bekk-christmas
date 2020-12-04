@@ -38,7 +38,7 @@ C# supports a lot of [functional building blocks](https://functionalprogrammingc
 
 ## Immutability in C#
 
-C# second greatest error[1] was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
+C# second greatest error[^error] was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
 
 ```csharp
 public class Person
@@ -120,4 +120,5 @@ Person meAYearOlder = me with { Age = 38 };
 
 With such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards my 40th birthday and usage of 24(!) year old memes can break this aging developer's Christmas spirit!
 
-[1]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
+
+[^error]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
