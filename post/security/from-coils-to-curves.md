@@ -79,7 +79,7 @@ To achieve long-term security, to protect previous messages in the case where so
 
 The interested reader can check out this [simple example written in Go](https://play.golang.org/p/qJBI0_2lsGP). Are you able to extend the basic protocol to the ephemeral key-exchange on behalf of Alice and Bob?
 
-We finally point out that this protocol is vulnerable to a man-in-the-middle attack, and we need to also send signatures computed on the messages to ensure that the communication is authentic. Are you able to attack the protocol as described above, when signatures are not used? If you found these problems interesting, we encourage you to check out similar challenges at [cryptohack.org](https://cryptohack.org/).
+We finally point out that this protocol is vulnerable to a man-in-the-middle attack, and we need to also send signatures computed on the messages to ensure that the communication is authentic. Are you able to attack the protocol as described above, when signatures are not used? If you found these problems interesting, we encourage you to check out similar challenges at [cryptohack.org](https://cryptohack.org/challenges/ecc/).
 
 ## Common Curves
 
