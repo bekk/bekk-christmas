@@ -3,8 +3,9 @@ calendar: functional
 post_year: 2020
 post_day: 5
 title: Functional ... C#?
-ingress: TODO, ingress
-description: "TODO: SEO Desc"
+ingress: ""
+description: C# 9 introduces records, finally making immutable classes first
+  class citizens of the language.
 authors:
   - Runar Ovesen Hjerpbakk
 ---
@@ -18,11 +19,11 @@ I know you love your pure, scalable functions in [Haskell](https://wiki.haskell.
 
 > ... **functional** ...
 
-Yes!
+Yes! As the late Sean Connery [said so excitedly](https://youtu.be/hKJZ9pzDMCk):
 
 ![The day is mine!](https://hjerpbakk.com/img/christmas/the-day-is-mine.jpeg)
 
-C# is not only useful on the [backend](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-5.0), while writing [iOS and Android apps](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0), [replacing JS in the browser](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0) or as a [scripting language](https://github.com/filipw/dotnet-script), it also becomes more and more functional-friendly with every new language version!
+C# is not only useful on the [backend](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-5.0), while writing [iOS and Android apps](https://docs.microsoft.com/en-us/xamarin/), [replacing JS in the browser](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0) or as a [scripting language](https://github.com/filipw/dotnet-script), it also becomes more and more functional-friendly with every new language version!
 
 However, what does it mean to be a *functional-friendly* programming language?
 
@@ -49,7 +50,7 @@ public class Person
 
 ![Listen to the wolf](https://hjerpbakk.com/img/christmas/the-wolf.png)
 
-Alas, premature aging can take its toll and we should've listen the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
+Alas, premature aging can take its toll and we should've listened the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
 
 ```csharp
 public class Person
@@ -119,6 +120,5 @@ Person meAYearOlder = me with { Age = 38 };
 ```
 
 With such quality functional features in C# like *immutable records*, not even time's inevitable flowing towards my 40th birthday and usage of 24(!) year old memes can break this aging developer's Christmas spirit!
-
 
 [^error]: C#'s greatest error was to introduce the concept of null and not fixing it until [C# 8](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references).
