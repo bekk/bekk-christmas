@@ -28,14 +28,14 @@ In webpack 5, a new exciting feature was released. **Module Federation**, a webp
 
 This way of sharing code between webpack applications opens up a sea of possibilities. For instance, you may use react components from other projects while receiving updates, both during build and runtime. Moreover, if your website consists of many applications, you can have a dedicated app to load and route between all projects. Another use case is to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying.
 
-# Example 
+# Example
 
 I am more of a learning by doing kind of gal, so let us have a look at an example to see how it is done. We will create a Christmas calendar using module federation. For illustrative purposes, we will be using two separate npm projects:
 
 * `calendar-container`: Contains the calendar component.
 * `calendar-card`: Contains the calendar card component.
 
-We will use module federation to import components from `calendar-card `into the `calendar-container` during runtime.
+We will use module federation to import components from `calendar-card`into the `calendar-container` during runtime.
 
 The wonderful thing about module federation is that we can easily outsource the development of various card components to fellow programmers, and reap the fruits of their efforts later on.
 
@@ -43,11 +43,9 @@ The complete example can be found [here](https://github.com/hegehaav/christmas-c
 
 ![Figure of example architecture](/assets/ex_white.svg)
 
-The complete example can be found [here](https://github.com/hegehaav/christmas-calendar)! 
-
 ### App 1: The Container
 
-`app1` is a simple react application that will run on `localhost:3001`. In the `App`-component we have a simple container with a header for the calendar. 
+Let's start by creating our first application, `calendar-container`. `calendar-container` will be a simple react application containing a title and a container that, later on, will render the calendar cards. The application will run on `localhost:3001`.
 
 ```javascript
 // calendar-container/src/App
@@ -152,7 +150,6 @@ import ReactDOM from 'react-dom';
 import App from './App'; 
 
 ReactDOM.render(<App />, document.getElementById('calendar-container'));
-
 ```
 
 Then we dynamically import the content in `index.js`:
