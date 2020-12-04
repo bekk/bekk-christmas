@@ -46,6 +46,6 @@ En liten oppfordring til sist, som tåler gjentakelse: Organisering av innovasjo
 
 Lurer du på hvorfor jeg nesten bare har skrevet om organisering, og ikke om måling, belønning, ledelse og kultur? 
 
-* Du kan lære mer om måling som er i tråd med de strategiske ambisjonene ved å lese vårt blogginnlegg om [OKR for å lykkes med smidig produktutvikling](https://blogg.bekk.no/er-okr-n%C3%B8kkelen-for-%C3%A5-lykkes-med-smidig-produktutvikling-69b8f777cc1b) og høre om hvorvidt [OKR er for toppstyrt](https://open.spotify.com/episode/3kfxv3u6IR4LJEh3XgxLOJ?si=OKY06iU_QnG0pADNp1IFdA) på Drypp.
+* Du kan lære mer om måling i vårt blogginnlegg om [OKR for å lykkes med smidig produktutvikling](https://blogg.bekk.no/er-okr-n%C3%B8kkelen-for-%C3%A5-lykkes-med-smidig-produktutvikling-69b8f777cc1b) og høre om hvorvidt [OKR er for toppstyrt](https://open.spotify.com/episode/3kfxv3u6IR4LJEh3XgxLOJ?si=OKY06iU_QnG0pADNp1IFdA) på Drypp.
 * Du kan lese om [hvorfor du ikke bør glemme kultur i en krevende hverdag](https://blogg.bekk.no/ikke-glem-kultur-i-en-krevende-hverdag-1436f7d18f2b) på bloggen vår, du kan høre om kultur og [OCAI](https://open.spotify.com/episode/1LtoDL5FASEZ5AH23uMuuk?si=m2s1yJIRTdCwYkPxVIW3eQ) på Drypp, og vi vil også komme innom kultur og lederens rolle som kulturell arkitekt senere i denne kalenderen. 
 * Du kan lære mer om innovasjon ved å lytte til hele 24 luker om temaet på [Drypp](https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL?si=QjhMrg8FQbKwBbk8X9zxXA) nå i desember!
