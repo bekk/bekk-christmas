@@ -37,7 +37,7 @@ Enrico Buonanno argues in his book [Functional Programming in C#: How to write b
 
 C# supports a lot of [functional building blocks](https://functionalprogrammingcsharp.com/functional-features-of-c-sharp), such as *function delegates*, *higher order functions*, *expressions instead of statements*, *method chaining*, *extension methods*, *yield*, *LINQ*, *tuples* and *local functions*. Despite all that, the core functional tenet of *immutability of data* has always been a C# pain point. Until now.
 
-## Immutability in C#
+## Immutability in C\#
 
 C# second greatest error<sup>[^error]</sup> was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
 
