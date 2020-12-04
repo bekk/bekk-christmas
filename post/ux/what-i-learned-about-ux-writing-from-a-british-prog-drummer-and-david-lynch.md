@@ -81,9 +81,9 @@ And just be part of those.
 
 **👇🏻**
 
-![On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.](https://miro.medium.com/max/1264/1*aGPOYv-iPlDk2McMTjsHGg.png "On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.")
+![On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.](/assets/skjermbilde-2020-12-04-kl.-17.14.58.png "On the left you’ll see what the people at Slack think their users feel after completing a task. On the right you’ll see the different responses they’ve come up with to align with that feeling.")
 
-![Image for post](https://miro.medium.com/max/1260/1*rKSCV2HRFOV_kw-3kFifbQ.png)
+![Image for post](/assets/skjermbilde-2020-12-04-kl.-17.15.21.png)
 
 # The delicate sound of raging customers
 
@@ -116,8 +116,6 @@ Bill Bernbach, a legendary copywriter responsible for the famous Think Small ads
 ![Image for post](https://miro.medium.com/max/1198/1*dH1cHTB6s__0msGlLFjBUQ.jpeg)
 
 Bill Bernbach also said that **"advertising is fundamentally persuasion, and persuasion happens to be not a science but an art".** This is also something I hold to be true. Although much progress has been made in science since this quote was published, I believe it is just as accurate today. What’s new is that originality is being copied much faster. And mediocrity shines like never before, radiating in front of the good stuff.
-
-
 
 > *So, don’t feel bad about procrastinating when you need to write. Humans put the whole thing of for a couple of hundred thousand years. By a conservative estimate, we’ve had writing for 4 % of the time we’ve been humans. Chatting is easy, writing is an arduous chore.*
 >
