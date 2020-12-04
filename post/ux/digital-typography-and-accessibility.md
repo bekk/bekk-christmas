@@ -76,7 +76,7 @@ Keep your line length between 45-75 characters per line (including spacing) (3).
 
 ![](/assets/line-height.png)
 
-Line height is the spacing between each line in your text. If the line-height becomes too small, the text will become cramped and blurred together. If it’s too big it is easy to get lost.
+Line height is the spacing between each line in your text. If the line-height becomes too small, the text can become cramped and blurred together. If it’s too big it is easy to get lost.
 
 Line height is usually set as a percentage of the text size. Generally, the preferred line-height is about 150 % of the text size (3). So, if you have text that is 16 px, you could set your line-height to 24, which is 150 % of 16.
 
