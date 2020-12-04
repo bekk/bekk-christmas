@@ -20,6 +20,6 @@ authors:
 ---
 Hvordan beskytter man seg når innovasjon skjer i åpen dialog med kunder, partnere og omverdenen?
 
-Pia Solheim, Fredrik Matheson og Jens Andreas Huseby i samtale med Joakim Marstrander som jobber med IPR og innovasjon hos EY.  
+Pia Solheim, Fredrik Matheson og Jens Andreas Huseby i samtale med Joakim Marstrander som jobber med IPR og innovasjon som partner i EY.  
 
 <iframe src="https://anchor.fm/drypp/embed/episodes/--emucu1" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
