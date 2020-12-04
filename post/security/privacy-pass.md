@@ -69,8 +69,6 @@ In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. 
 
 ## Elliptic Curve Diffie-Hellman Key-Exchange
 
-![](/assets/dh2.png)
-
 The Diffie-Hellman key-exchange protocol is widely used today, and its instantiation using elliptic curves is ranked as the best choice in modern cryptographic protocols like TLS and SSH. The protocol is fairly simple. The public information is an elliptic curve *E* and a generator *G* for the points on this curve. One party, Alice, samples a random integer *a* and computes a point *A* = *a* *G*. Another party, Bob, samples a random integer *b* and computes *B* = *b* *G*. Then they exchange the values *A* and *B*, and compute the shared key *K* = *b* *A* = *a* *B* = *a* *b* *G*. As long as both *a* and *b* stay secret, even when an attacker knows *G*, *A* and *B*, then the key is secure.
 
 ![](/assets/dh.png)
