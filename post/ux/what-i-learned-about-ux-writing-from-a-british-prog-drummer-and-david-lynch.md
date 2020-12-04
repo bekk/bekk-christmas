@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 6
 title: What I Learned About UX Writing From a British Prog Drummer and David Lynch
-image: https://media.newyorker.com/photos/590971622179605b11ad7a6a/master/w_2560%2Cc_limit/Lim-DavidLynchsElusiveLanguage1.jpg
+image: https://the-talks.com/wp-content/uploads/2014/10/David-Lynch-01.jpg
 ingress: "*There are so many brilliantly written articles about UX Writing out
   there so I decided to take a look at it from a more personal point of view.*"
 description: |
