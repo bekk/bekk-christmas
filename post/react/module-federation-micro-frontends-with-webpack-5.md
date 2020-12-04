@@ -2,13 +2,13 @@
 calendar: react
 post_year: 2020
 post_day: 5
-title: "Module Federation: Micro-frontends with WebPack 5 "
+title: "Module Federation: Micro-frontends with webpack 5 "
 image: https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80
-ingress: In this article, we will take a look at one of WebPack's exciting new
-  features, Module Federation. This feature will allow you to dynamically load
-  code from another project at runtime. Using module federation will allow you
-  to share or import code from other projects with only a little tweaking in
-  your webpack config. It can make a website consisting of multiple frontend
+ingress: In this article, we will look at one of webpack's exciting new
+  features, Module Federation. This feature will allow dynamic code reloading
+  from another project at runtime. Using module federation will enable sharing
+  and code import from other projects with only a little tweaking in your
+  webpack config. It can make a website consisting of multiple frontend
   applications appear as one seamless SPA. Neat, huh?
 links:
   - title: "Documentation "
@@ -20,17 +20,32 @@ links:
 authors:
   - Hege Haavaldsen
 ---
-WebPack is a module builder, a powerful tool that maps every module your project needs and bundles your javascript files for usage in the browser. In WebPack 5 a new exciting feature was released; Module Federation. Module Federation is a javascript architecture allowing you to dynamically load code from a different webpack build. It supports dependency sharing, i.e., the application importing the code will attempt to use its own dependencies before downloading more payload. But it will download the required dependencies if they are not available.  
+> [webpack](https://webpack.js.org/concepts/) is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
-This way of sharing code between webpack applications opens up a sea of possibilities. You can reuse a component from a different project without having to go through the process of publishing it. It can be used to share util functions and constants across projects. Moreover, if your website consists of many applications, you can have a dedicated app to load and route between all projects. Another use case is to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying. 
+In webpack 5, a new exciting feature was released. \*\*Module Federation\*\*, a webpack plugin enabling dynamic code loading from multiple webpack builds at runtime. It supports dependency sharing, for example:
+
+\*Application A, importing code from application B, will attempt to use its own dependencies before downloading payloads from B. Nevertheless, A will download the dependencies from B if they are missing from A.\*
+
+This way of sharing code between webpack applications opens up a sea of possibilities. For instance, you may use react components from other projects while receiving updates, both during build and runtime.
+
+Moreover, if your website consists of many applications, you can have a dedicated app to load and route between all projects. Another use case is to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying.
 
 # Example 
 
-I am more of a learning by doing kind of gal, so let us have a look at an example to see how it is done. In the example, we will create a simple Christmas calendar using module federation. To keep it simple all days will be made from the same component. But the wonderful thing about module federation is that we can easily outsource the remaining days to fellow programmers and import their applications later on. 
+I am more of a learning by doing kind of gal, so let us have a look at an example to see how it is done. We will create a Christmas calendar using module federation. For illustrative purposes, we will be using two separate npm projects:
 
-We will create one application that will be the container for all the calendar cards and a separate application to host the content of a calendar card. Then we will use module federation to import the calendar cards into the container at runtime. 
+* `calendar-container`: Contains the calendar component.
+* `calendar-card`: Contains the calendar card component.
 
-![Figure of example architecture](/assets/example.svg)
+We will use module federation to import components from `calendar-card`
+
+ into the `calendar-container` during runtime.
+
+The wonderful thing about module federation is that we can easily outsource the development of various card components to fellow programmers, and reap the fruits of their efforts later on.
+
+The complete example can be found \[here](https://github.com/hegehaav/christmas-calendar)!
+
+![Figure of example architecture](/assets/ex_white.svg)
 
 The complete example can be found [here](https://github.com/hegehaav/christmas-calendar)! 
 
@@ -183,4 +198,6 @@ export default App;
 
 And voilà! We have a Christmas calendar that imports code from a separate application at runtime!
 
-In this article, we took a quick look at WebPack 5's new feature, Module Federation. A plugin that allows you to share code between applications at run time. This is an exciting new feature that can help build micro-frontends and sharing code across platforms. We have worked with calendars and cards, but in the real world, you can imagine those being shopping carts, users, etc. We only looked at sharing code in one direction, but module federation supports multidirectional sharing of code as well. The next step could be to share code in different directions, or perhaps create more applications and set up routing between them in the container app.
+In this article, we took a quick look at webpack 5's Module Federation feature, enabling runtime code sharing between applications. This is an exciting new feature that can assist in building micro-frontends and cross-platform code sharing.
+
+We made a simple Christmas calendar showcasing some Module Federation based features. There are still other features to explore. The next step could be to share code in both directions, or perhaps create several applications and add routing between them in a container app.
