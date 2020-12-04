@@ -40,7 +40,7 @@ Clearly distinguishable letters in a typeface make it easier for the reader to d
 
 ![](/assets/airy-and-open-letters.png)
 
-When using airy and open typefaces, the reader is less likely to perceive each letter as a blurry, closed shape. This makes the typeface more legible. “Impact” is an example of a typeface that has a low degree of airy- and openness. In general, such typefaces do best in large sizes and short sentences, e.g. as headlines.
+When using airy and open typefaces, the reader is less likely to perceive each letter as a blurry, closed shape. A dense C can for example be mistaken for being an O. “Impact” is an example of a typeface that has a low degree of airy- and openness. In general, such typefaces do best in large sizes and short sentences, e.g. as headlines.
 
 ### The letterforms in a typeface should have an adequate internal contrast
 
