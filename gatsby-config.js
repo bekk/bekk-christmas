@@ -16,7 +16,7 @@ const isPreviewOrBekk = !envCalendar || isPreview;
 const calendarPlugins = fs
     .readdirSync(`${__dirname}/post`, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
-    .filter((dirent) => isPreviewOrBekk || dirent.name === envCalendar) // Only source current calendar
+    .filter((dirent) => isPreviewOrBekk || dirent.name === envCalendar || dirent.name === 'dummy') // Only source current calendar
     .map((dirent) => dirent.name)
     .map((calendar) => ({
         resolve: `gatsby-source-filesystem`,
