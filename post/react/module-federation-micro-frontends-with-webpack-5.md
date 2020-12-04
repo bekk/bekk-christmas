@@ -56,7 +56,7 @@ const App = () => {
 	return (
 		<main>
 			<h1>Christmas Calendar</h1>
-			<p> Here we will put content from app 2 </p>		 
+			<p> Here we will put content from calendar-card </p>		 
 		</main>
 	);
 };
@@ -176,7 +176,7 @@ const App = () => {
 			<div>
 				{calendarCards.map((day) => (
 					<React.Suspense
-						fallback={<p>Loading content from app 2...</p>}
+						fallback={<p>Loading content from calendar-card...</p>}
 						key={day}
 					>
 						<CalendarCard  dayOfDecember={day + 1}  />
