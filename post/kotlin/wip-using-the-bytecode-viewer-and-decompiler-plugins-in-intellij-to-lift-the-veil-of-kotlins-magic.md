@@ -11,7 +11,7 @@ ingress: IDE's commonly include a lot of useful tools that can make our lives as
   are implementing. The toolset included with the [IntelliJ
   IDEA](https://www.jetbrains.com/idea/) IDE is no exception. In this article we
   will take a look at the *Bytecode Viewer* and *Java Bytecode Decompiler*
-  integrated tools in IntelliJ, and how the may help us in getting a better
+  integrated tools in IntelliJ, and how they may help us getting a better
   understanding of how our Kotlin code is represented on the JVM, and how it
   could potentially look in Java.
 links: []
@@ -20,7 +20,7 @@ authors:
 ---
 ## How to use the tools
 
-First of all it is required that you have IntelliJ IDEA installed. You can use both  the Community or Ultimate edition, since [they come bundled](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html) with the necessary tools. Then simply create or open a Kotlin file of your chosing and select **Tools > Kotlin > Show Kotlin Bytecode** from the menu. A new side panel will open and, given that you have a Kotlin file currently selected, will display the corresponding bytecode generated for that specific file. From here you can study the actual bytecode, or jump to another Kotlin file of your liking. The Bytecode Viewer will update automatically with the Kotlin file currently being viewed:
+First of all it is required that you have IntelliJ IDEA installed. You can use the Community or Ultimate edition, since [both come bundled](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html) with the necessary tools. Then simply create or open a Kotlin file of your chosing and select **Tools > Kotlin > Show Kotlin Bytecode** from the menu. A new side panel will open and, given that you have a Kotlin file currently selected, will display the corresponding bytecode generated for that specific file. From here you can study the actual bytecode, or jump to another Kotlin file of your liking. The Bytecode Viewer will update automatically with the Kotlin file currently being viewed:
 
 ![TopLevel.kt opened in the Bytecode Viewer](https://i.ibb.co/LS7nvZc/Intelli-J-IDEA-CE-2020-2-1-Bytecode-Viewer-1.png "TopLevel.kt opened in the Bytecode Viewer")
 ![Another Kotlin file opened in the Bytecode Viewer](https://i.ibb.co/tDrV5yG/Intelli-J-IDEA-CE-2020-2-1-Bytecode-Viewer-2.png "Another Kotlin file opened in the Bytecode Viewer")
