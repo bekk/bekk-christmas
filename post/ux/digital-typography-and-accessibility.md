@@ -34,7 +34,7 @@ I must admit that I for a long time believed that legibility and readability wer
 
 ![A capital i and a lowercase l can in some typefaces easily be confused for the same letter.](/assets/unique-letters.png)
 
-Clearly distinguishable letters in a typeface make it easier for the reader to decode a word within a sentence. In the examples shown above, it is quite clear which letters are distinguishable and not. The most common examples of similar letters are I and l (i.e. a capital i and a lowercase l). Helvetica, Arial, and Gill Sans are all popular and common typefaces. However, their legibility is weakened due to this problem. Even if there is a slight difference in the thickness and height of the two letters, these differences are so small that you don’t need to have bad sight or dyslexia to struggle to tell them apart. 
+Clearly distinguishable letters in a typeface make it easier for the reader to decode a word within a sentence. In the examples shown above, it is quite clear which letters are distinguishable and not. The most common examples of similar letters are I and l (i.e. a capital i and a lowercase l). Helvetica, Arial, and Gill Sans are all popular and common typefaces. However, their legibility is weakened due to this problem. Even if there is a slight difference in the thickness and height of the two letters, these differences are so small that most of us struggle telling them apart. 
 
 ### The letters in a typeface should be airy and open
 
