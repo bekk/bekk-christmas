@@ -4,8 +4,8 @@ post_year: 2020
 post_day: 5
 title: Capture your Audience's Attention by Doing Less
 image: ""
-ingress: On how you're unintentionnaly testing people's multitasking skills
-  during presentations
+ingress: On how you might unintentionnaly test people's multitasking skills
+  during your presentations
 authors:
   - Erlend Morthen
 ---
