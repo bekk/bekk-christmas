@@ -29,7 +29,7 @@ Now, the bytecode itself might not make much sense, unless you're already adept 
 
 ## A practical example
 
-Kotlin expands upon Java by offering [additional language features](https://kotlinlang.org/docs/reference/comparison-to-java.html), while at the same time providing [interoperability](https://kotlinlang.org/docs/reference/java-interop.html). It's easy to take this fact for granted, and it might seem as a bit of magic sometimes. By combining the Bytecode Viewer and Decompiler tools we now have the ability to compare Kotlin source code side-by-side with Java. If you're coming from a Java background, and is just starting with Kotlin, this can be very convenient if you quickly want to compare your Kotlin code to something more familiar.
+Kotlin expands upon Java by offering [additional language features](https://kotlinlang.org/docs/reference/comparison-to-java.html), while at the same time providing [interoperability](https://kotlinlang.org/docs/reference/java-interop.html). It's easy to take this fact for granted, and it might seem as a bit of magic sometimes. By combining the Bytecode Viewer and Decompiler tools we now have the ability to compare Kotlin source code side-by-side with Java. If you're coming from a Java background, and you've just started with Kotlin, this can be very convenient if you quickly want to compare your Kotlin code to something more familiar.
 
 Let's take a look at a concrete example with [top-level functions in Kotlin, which Java currently do not support](https://kotlinlang.org/docs/reference/functions.html#function-scope). Let's say we want to get an idea of how this could be represented in Java. We'll define a Kotlin file, `TopLevel.kt`, and declare the following top-level function:
 
