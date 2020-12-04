@@ -94,4 +94,4 @@ The second is centered text: when the text is symmetrically aligned along the ax
 
 ## Conclusion
 
-As you can see, many factors influence the accessibility of text. If you are lucky enough to work with a design system, many of these guidelines are likely a default part of the components you work with. However, it is always good to bear in mind these guidelines and that you have a commitment to make digital content receivable and understandable. Easy measures can make a lot of difference for your users, whether they are visually impaired, stressed, dyslexic, tired, color blind, or so on. Good luck!
+As you can see, many factors influence the accessibility of text. If you are lucky enough to work with a design system, many of these guidelines are likely a default part of the components you work with. However, it is always good to bear in mind these guidelines and that you have a commitment to make digital content receivable and understandable. Easy measures can make a lot of difference for your users, whether they are visually impaired, stressed, dyslexic, tired, color blind, distracted or so on. Good luck!
