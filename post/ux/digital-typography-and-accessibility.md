@@ -60,7 +60,7 @@ Even though thin or light fonts can make your design seem minimalistic, clean, a
 
 ![White text on light grey background has low contrast and is difficult to read.](/assets/contrast.png)
 
-The contrast between the text color and background color is important to promote readability. Too low contrast can make the text difficult to see. Too much contrast can strain the eyes and lead to fatigue. The latter especially goes for texts that you read over an extended time period.
+The contrast between the text color and background color is important to promote readability. Too low contrast can make the text difficult to see. Too much contrast can strain the eyes and lead to fatigue (for example 100 % black text on 100 % white background). The latter especially goes for texts that you read over an extended time period.
 
 Luckily, guidelines such as WCAG 2.1 provides us with a standard. The contrast ratio should be at least 4.5:1 for small-sized text and 3:1 for large-sized text. Text from 18 px and larger are considered “large text” (2).
 
