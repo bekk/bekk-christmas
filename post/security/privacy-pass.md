@@ -7,83 +7,86 @@ image: ""
 ingress: Elliptic curves are seemingly ubiquitous in modern cryptographic
   protocols, and may turn up again later this December. Let’s take this
   opportunity to gain insight on what they are and why they are used.
-links: []
+links:
+  - url: https://asecuritysite.com/encryption/go_x3dh
+    title: X3DH (Extended Triple Diffie-Hellman) in Go
+  - url: https://gfycat.com/immaterialcompetentcanine
+    title: A Look Into Elliptic Curve Cryptography (ECC) GIF
+  - url: https://cryptohack.org/challenges/ecc/
+    title: Elliptic Curves challenges on cryptohack.org
+  - url: https://www.ias.edu/ideas/2012/taylor-modular-arithmetic
+    title: "Modular Arithmetic: Driven by Inherent Beauty and Human Curiosity"
+  - url: https://hackernoon.com/what-is-the-math-behind-elliptic-curve-cryptography-f61b25253da3
+    title: What is the math behind elliptic curve cryptography?
+  - url: https://csrc.nist.gov/publications/detail/fips/186/4/final
+    title: Digital Signature Standard (DSS)
 authors:
   - Tjerand Silde
   - Martin Strand
 ---
-It is well known that prime numbers are important for cryptography, although it has not always been true. The advent of primes came with several ground-breaking papers almost 50 years ago. Pioneers in introducing asymmetric cryptography, Whit Diffie, Martin Hellman, Ron Rivest, Adi Shamir and Leonard Adleman, used results from number theory to build key agreement, encryption, and signatures. Prime numbers hold a very special position in number theory, and this carried over to cryptography.
+It is well known that prime numbers are important for cryptography, although it has not always been true. The advent of primes came with several groundbreaking papers almost 50 years ago. Pioneers in introducing asymmetric cryptography, Whit Diffie, Martin Hellman, Ron Rivest, Adi Shamir and Leonard Adleman, used results from number theory to build key agreement, encryption, and signatures. Prime numbers hold a very special position in number theory, and this carried over to cryptography.
 
 ## From Primes to Crypto
 
-Cryptographic protocols are typically working \_modulo\_ some prime \_p\_. This can be likened to turning the number line into a coil, such that 0, \_p\_, 2\_p\_, etc. all join at the same place. From then on, whenever we add or multiply the number such that we go beyond \_p\_, we can simply remove as many multiples of \_p\_ as necessary until we come between 0 and \_p\_ again.
+Cryptographic protocols are typically working *modulo* some prime *p*. This can be likened to turning the number line into a coil, such that 0, *p*, 2*p*, etc. all join at the same place. From then on, whenever we add or multiply the number such that we go beyond *p*, we can simply remove as many multiples of *p* as necessary until we come between 0 and *p* again.
 
-Now, imagine that we used a composite number instead, for example 12. Then 0 and 12 are “the same” in this situation, but that also means that 3 multiplied by 4 is ... 0! One of the intuitions when working with normal numbers is that if \_ab\_ = 0, then either \_a\_ or \_b\_ would have to be 0. Hence, when using composite numbers, there is simply stuff that no longer works the way we’re used to. Fortunately, this is not the case when using the primes -- for instance 7 -- as our so-called modulus.
+Now, imagine that we used a composite number instead, for example 12. Then 0 and 12 are “the same” in this situation, but that also means that 3 multiplied by 4 is ... 0! One of the intuitions when working with normal numbers is that if *ab* = 0, then either *a* or *b* would have to be 0. Hence, when using composite numbers, there is simply stuff that no longer works the way we’re used to. Fortunately, this is not the case when using the primes -- for instance 7 -- as our so-called modulus.
 
 ![](/assets/curves.png)
 
-Let’s make a rule, and let’s call it \_m\_. We take the coil we just made from the number line, and since we can always reduce numbers to below \_p\_, we label our points on this circle from 0 to \_p\_-1. Given two points \_a\_ and \_b\_ on the circle, we decided that the output of the rule \_m\_(\_a\_, \_b\_) should be the point which is represented by the product \_ab\_, possibly after reducing modulo \_p\_. It may look like a very natural rule, but it is nonetheless a rule we just agreed on. If you play around with this rule a bit, you will notice some properties:
+Let’s make a rule, and let’s call it *m*. We take the coil we just made from the number line, and since we can always reduce numbers to below *p*, we label our points on this circle from 0 to *p*-1. Given two points *a* and *b* on the circle, we decided that the output of the rule *m*(*a*, *b*) should be the point which is represented by the product *ab*, possibly after reducing modulo *p*. It may look like a very natural rule, but it is nonetheless a rule we just agreed on. If you play around with this rule a bit, you will notice some properties:
 
-* If \_a\_ = 1, then \_m\_(\_a\_, \_b\_) = \_b\_ (and the other way around).
-* For any \_a\_, \_b\_ not equal to 0, \_m\_(\_a\_, \_b\_) is never zero. So, if we removed 0 from the circle entirely, no harm would happen -- the rule would still be well-defined.
-* For any nonzero \_a\_, there is always some \_b\_ such that \_m\_(\_a\_, \_b\_) = 1.
+* If *a* = 1, then *m*(*a*, *b*) = *b* (and the other way around).
+* For any *a*, *b* not equal to 0, *m*(*a*, *b*) is never zero. So, if we removed 0 from the circle entirely, no harm would happen -- the rule would still be well-defined.
+* For any nonzero *a*, there is always some *b* such that *m*(*a*, *b*) = 1.
 
 These nice properties -- together with a property called associativity -- are the properties we need to be able to do cryptographic computations.
 
-Now focus on a particular number on the circle, and let’s call it \_g\_. If we take \_m\_(\_g\_, \_g\_), or -- to return to the more usual notation -- \_g\_<sup>2</sup>, we will reach a new point on the circle. We can continue this process and compute \_g\_<sup>3</sup>, \_g\_<sup>4</sup>, etc. At some point, we will reach 1. All the points we have visited in this process are members of the set of numbers \_generated\_ by \_g\_, and if the number of points on the coil is a large prime, then we have a very good candidate for doing cryptography, for example Diffie-Hellman key exchange. Let \_h\_ be some number in this set generated by \_g\_. That means that \_h\_ = \_g\_<sup>e</sup> for some exponent \_e\_. If it is easy to find this \_e\_ from \_g\_ and \_h\_, we would have trouble. Fortunately, it turns out that if we use \_large enough\_ primes, then this \_e\_ appears to be very difficult to find.
+Now focus on a particular number on the circle, and let’s call it *g*. If we take *m*(*g*, *g*), or -- to return to the more usual notation -- *g²*, we will reach a new point on the circle. We can continue this process and compute *g*³, *g*⁴, etc. At some point, we will reach 1. All the points we have visited in this process are members of the set of numbers *generated* by *g*, and if the number of points on the coil is a large prime, then we have a very good candidate for doing cryptography, for example Diffie-Hellman key exchange. Let *h* be some number in this set generated by *g*. That means that *h* = *g*ᵉ for some exponent *e*. If it is easy to find this *e* from *g* and *h*, we would have trouble. Fortunately, it turns out that if we use *large enough* primes, then this *e* appears to be very difficult to find.
 
 ## From Coils to Curves
 
 Coiling up the number line is not the only way of finding suitable primitives for cryptography. Let’s make a new rule. Instead of using a circle like we did in the previous section, we consider the following equation:
 
-\_y\_<sup>2</sup> = \_x\_<sup>3</sup> + \_ax\_ + \_b\_, where \_a\_ and \_b\_ are fixed constants.
+*y*² = *x*³ + *ax* + *b*, where *a* and *b* are fixed constants.
 
 If we graph this in our usual coordinate system, it may look like this curve:
 
 ![](/assets/curves2.png)
 
-We will now make a rule on how to combine two distinct points \_P\_ and \_Q\_ on this curve. The agreed upon notation is to call this rule addition, but we will have to define what we mean by that. Programming languages often include this mental concept as operation overloading. Draw the straight line between \_P\_ and \_Q\_. It will intersect at a third point, say, \_R\_. This could have been a nice candidate for \_P\_ + \_Q\_, but since we are making the rules, let’s make this a bit more interesting. Draw a vertical line through \_R\_. It will intersect the curve on the opposite side of the \_x\_-axis, and we define this point as \_P\_ + \_Q\_. Just as before, this is a rule we’re deciding here and now. However, this also turns out to be a very useful rule, with the same properties as before:
+We will now make a rule on how to combine two distinct points *P* and *Q* on this curve. The agreed upon notation is to call this rule addition, but we will have to define what we mean by that. Programming languages often include this mental concept as operation overloading. Draw the straight line between *P* and *Q*. It will intersect at a third point, say, *R*. This could have been a nice candidate for *P* + *Q*, but since we are making the rules, let’s make this a bit more interesting. Draw a vertical line through *R*. It will intersect the curve on the opposite side of the *x*-axis, and we define this point as *P* + *Q*. Just as before, this is a rule we’re deciding here and now. However, this also turns out to be a very useful rule, with the same properties as before:
 
-* Instead of having the point 1 on the circle, we imagine a point infinitely far up. (Remember what you see when looking at railway tracks: parallel lines actually meet beyond the horizon, at infinity.) So, now the line intersecting \_R\_ and \_P\_ + \_Q\_ is indeed also intersecting a third point: the point at infinity. This can be made precise, but requires maths from algebraic geometry, which is far beyond the scope of this blog post. This point at infinity has all the same properties as 1 had above.
-* For any point \_S\_ on the curve, there is always a point \_T\_ such that we get a line intersecting \_S\_, \_T\_ and the point at infinity. This means that for any point \_S\_, we can find a point we can call -\_S\_.
+* Instead of having the point 1 on the circle, we imagine a point infinitely far up. (Remember what you see when looking at railway tracks: parallel lines actually meet beyond the horizon, at infinity.) So, now the line intersecting *R* and *P* + *Q* is indeed also intersecting a third point: the point at infinity. This can be made precise, but requires maths from algebraic geometry, which is far beyond the scope of this blog post. This point at infinity has all the same properties as 1 had above.
+* For any point *S* on the curve, there is always a point *T* such that we get a line intersecting *S*, *T* and the point at infinity. This means that for any point *S*, we can find a point we can call -*S*.
 
-You can test this rule interactively in a simple \[GeoGebra demonstration](https://www.geogebra.org/m/ukhajwzs).
+You can test this rule interactively in a simple [GeoGebra demonstration](https://www.geogebra.org/m/ukhajwzs).
 
 ![](/assets/ec_group_law.gif)
 
-We just assumed that \_P\_ and \_Q\_ were distinct. If \_P\_ = \_Q\_, then we simply use the tangent to the curve at point \_P\_ instead, and proceed as before.
+We just assumed that *P* and *Q* were distinct. If *P* = *Q*, then we simply use the tangent to the curve at point *P* instead, and proceed as before.
 
-In particular, take a point \_G\_, and compute 2\_G\_ = \_G\_ + \_G\_, 3\_G\_, 4\_G\_, etc. Eventually, we reach the point at infinity, and then back to \_G\_. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above, and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that “large enough” is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
+In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. Eventually, we reach the point at infinity, and then back to *G*. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above, and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that “large enough” is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
 
 ## Elliptic Curve Diffie-Hellman Key-Exchange
 
 ![](https://lh5.googleusercontent.com/6gfnHTxvtlNAOsBFmR3qQJK8QIiSWnssefhpW04J_JUEpZVhwc_gBDKh9IR6fkehJAXy8yfewo7I5uSZJNHVcqrOmakoJflIdaGCk-n6f3ojYynagqNNBnOawb1fm49P6Q)
 
-The Diffie-Hellman key-exchange protocol is widely used today, and its instantiation using elliptic curves is ranked as the best choice in modern cryptographic protocols like TLS and SSH. The protocol is fairly simple. The public information is an elliptic curve \_E\_ and a generator \_G\_ for the points on this curve. One party, Alice, samples a random integer \_a\_ and computes a point \_A\_ = \_a\_ \_G\_. Another party, Bob, samples a random integer \_b\_ and computes \_B\_ = \_b\_ \_G\_. Then they exchange the values \_A\_ and \_B\_, and compute the shared key \_K\_ = \_b\_ \_A\_ = \_a\_ \_B\_ = \_a\_ \_b\_ \_G\_. As long as both \_a\_ and \_b\_ stay secret, even when an attacker knows \_G\_, \_A\_ and \_B\_, then the key is secure.
+The Diffie-Hellman key-exchange protocol is widely used today, and its instantiation using elliptic curves is ranked as the best choice in modern cryptographic protocols like TLS and SSH. The protocol is fairly simple. The public information is an elliptic curve *E* and a generator *G* for the points on this curve. One party, Alice, samples a random integer *a* and computes a point *A* = *a* *G*. Another party, Bob, samples a random integer *b* and computes *B* = *b* *G*. Then they exchange the values *A* and *B*, and compute the shared key *K* = *b* *A* = *a* *B* = *a* *b* *G*. As long as both *a* and *b* stay secret, even when an attacker knows *G*, *A* and *B*, then the key is secure.
 
 ![](/assets/dh.png)
 
 Reference: <https://asecuritysite.com/encryption/go_x3dh>. Used with permission.
 
-To achieve long-term security, to protect previous messages in the case where someone’s secret keys are leaked after the fact, Alice and Bob can do an ephemeral key-exchange every time they communicate. If \_a\_ and \_A\_ is Alice’s long term key pair where \_A\_ is public to everyone, and similar for Bob, they can run the following protocol to agree upon a one-time session-key. Alice samples a random integer \_c\_ and computes \_C\_ = \_c\_ \_G\_, and Bob samples a random integer \_d\_ and computes \_D\_ = \_d\_ \_G\_. Then they exchange \_C\_ and \_D\_, and compute the shared key as (\_a\_ \_b\_ + \_c\_ \_d\_ )\_G\_.
+To achieve long-term security, to protect previous messages in the case where someone’s secret keys are leaked after the fact, Alice and Bob can do an ephemeral key-exchange every time they communicate. If *a* and *A* is Alice’s long term key pair where *A* is public to everyone, and similar for Bob, they can run the following protocol to agree upon a one-time session-key. Alice samples a random integer *c* and computes *C* = *c* *G*, and Bob samples a random integer *d* and computes *D* = *d* *G*. Then they exchange *C* and *D*, and compute the shared key as (*a* *b* + *c* *d* )*G*.
 
-The interested reader can check out this \[simple example written in Go](<https://play.golang.org/p/qJBI0_2lsGP>). Are you able to extend the basic protocol to the ephemeral key-exchange on behalf of Alice and Bob?
+The interested reader can check out this [simple example written in Go](https://play.golang.org/p/qJBI0_2lsGP). Are you able to extend the basic protocol to the ephemeral key-exchange on behalf of Alice and Bob?
 
 We finally point out that this protocol is vulnerable to a man-in-the-middle attack, and we need to also send signatures computed on the messages to ensure that the communication is authentic. Are you able to attack the protocol as described above, when signatures are not used? If you found these problems interesting, we encourage you to check out similar challenges at [\[cryptohack.org](https://cryptohack.org/)](https://cryptohack.org).
 
 ## Common Curves
 
-Not all elliptic curves are suitable for cryptography. There could also be power in choosing a curve and the distinguished base point(s). Hence, implementations tend to choose among a small number of well-known curves. The US National Institute of Standards and Technology \[maintains a list](https://csrc.nist.gov/publications/detail/fips/186/4/final) of recommended curves; P-256 is perhaps the most popular among these. 
+Not all elliptic curves are suitable for cryptography. There could also be power in choosing a curve and the distinguished base point(s). Hence, implementations tend to choose among a small number of well-known curves. The US National Institute of Standards and Technology [maintains a list](https://csrc.nist.gov/publications/detail/fips/186/4/final) of recommended curves; P-256 is perhaps the most popular among these. 
 
-Among others, there is also the \[SafeCurves](https://safecurves.cr.yp.to) collection proposed by Dan Bernstein and Tanja Lange. In particular, their Curve25519 has proven to be a popular choice.
+Among others, there is also the [SafeCurves](https://safecurves.cr.yp.to) collection proposed by Dan Bernstein and Tanja Lange. In particular, their Curve25519 has proven to be a popular choice.
 
 Elliptic curve libraries will typically have tailored support for certain curves.
-
-## References
-
-* <https://gfycat.com/immaterialcompetentcanine>
-* [Elliptic Curves challenges on cryptohack.org](https://cryptohack.org/challenges/ecc/)
-* <https://www.ias.edu/ideas/2012/taylor-modular-arithmetic>
-* <https://hackernoon.com/what-is-the-math-behind-elliptic-curve-cryptography-f61b25253da3> 
-* <https://twitter.com/davidtavarez/status/1109613825484095488> 
-* https://csrc.nist.gov/publications/detail/fips/186/4/final
