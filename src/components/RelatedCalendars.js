@@ -18,7 +18,7 @@ export const RelatedCalendars = ({ paths }) => {
             Want more? Check out the calendar{paths.length > 1 && 's'} from{' '}
             {paths.map((path, index) => (
                 <>
-                    {index === paths.length - 1 && ' and '}
+                    {index === paths.length - 1 && index !== 0 && ' and '}
                     <Link key={path} to={path}>
                         {path.split('/').pop()}
                     </Link>
