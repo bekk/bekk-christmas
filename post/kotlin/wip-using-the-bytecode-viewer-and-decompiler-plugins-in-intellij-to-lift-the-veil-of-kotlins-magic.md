@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 5
 title: Using the Bytecode Viewer and Decompiler tools in IntelliJ to lift the
   veil of Kotlin's magic
-image: https://images.unsplash.com/photo-1563089144-b764c97a24e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
+image: https://images.unsplash.com/photo-1521619717319-20a72822e833?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2330&q=80
 ingress: IDE's commonly include a lot of useful tools that can make our lives as
   developers easier. Some are pure productivity tools to speed up our
   development, while others may actually help our understanding of the code we
