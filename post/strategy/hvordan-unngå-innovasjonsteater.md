@@ -38,6 +38,12 @@ Hvordan man bør organisere seg for innovasjon henger sammen med hva man ønsker
 
 En liten oppfordring til sist, som tåler gjentakelse: Organisering av innovasjon avhenger av hva du ønsker å oppnå. Bruk tid på å finne ut av dette først, så tror jeg sjansene for å lykkes med innovasjon og unngå teater er langt større!
 
+
+
+...
+
+
+
 Lurer du på hvorfor jeg nesten bare har skrevet om organisering, og ikke om måling, belønning, ledelse og kultur? 
 
 * Du kan lære mer om måling som er i tråd med de strategiske ambisjonene ved å lese vårt blogginnlegg om [OKR for å lykkes med smidig produktutvikling](https://blogg.bekk.no/er-okr-n%C3%B8kkelen-for-%C3%A5-lykkes-med-smidig-produktutvikling-69b8f777cc1b) og høre om hvorvidt [OKR er for toppstyrt](https://open.spotify.com/episode/3kfxv3u6IR4LJEh3XgxLOJ?si=OKY06iU_QnG0pADNp1IFdA) på Drypp.
