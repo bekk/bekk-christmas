@@ -271,7 +271,7 @@ def run = println(result)
 
 <!-- TODO inform on Show and adding SHow[Double] -->
 
-For `myGenericFunction` we have defined a function where we work on one type `A`
+For `myGenericFunction` we have defined a function where we work on a type `A`
 that has an implementation of `Show` that is unnamed and defined numeric operations
 through a new type class, `Numeric`. The power of this is that within the function we
 have a well-defined set of things to do. If this had been from separate
