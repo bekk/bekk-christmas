@@ -107,7 +107,7 @@ module.exports = {
 	plugins: [
 		new  HtmlWebpackPlugin({ template: "./public/index.html" }),
 		new  ModuleFederationPlugin({
-			name: "calendar-card",
+			name: "calendar_card",
 			filename: "remoteEntry.js",
 			exposes: {
 				"./CalendarCard": "./src/CalendarCard" 
@@ -118,7 +118,7 @@ module.exports = {
 }
 ```
 
-Now that the `CalendarCard` is exposed, we need to tell `calendar-container` where to find it. This is done in `calendar-container`'s `webpack.config.js`. The set up is similar to `calendar-card`, but we let webpack know that it is expecting a remote module called `calendar-card`. This is done in the `remotes`-field. Here, we also specify the location of the app, which is  `http://localhos:3002/remoteEntry.js`.  As no other project is importing code from `calendar-container` - yet - there is no need to expose anything in this application. We need to list the shared dependencies in `calendar-container`  as well, to let `calendar-card` know it will not need to provide them as fallback dependencies.
+Now that the `CalendarCard` is exposed, we need to tell `calendar-container` where to find it. This is done in `calendar-container`'s `webpack.config.js`. The set up is similar to `calendar-card`, but we let webpack know that it is expecting a remote module called `calendar_card`. This is done in the `remotes`-field. Here, we also specify the location of the remote entry, which is  `http://localhos:3002/remoteEntry.js`.  As no other project is importing code from `calendar-container` - yet - there is no need to expose anything in this application. We need to list the shared dependencies in `calendar-container`  as well, to let `calendar-card` know it will not need to provide them as fallback dependencies.
 
 ```javascript
 // calendar-container/webpack.config.js  
@@ -131,9 +131,9 @@ module.exports = {
 	plugins: [
 		new  HtmlWebpackPlugin({ template: "./public/index.html" }),
 		new  ModuleFederationPlugin({
-			name: "calendar-container",
+			name: "calendar_container",
 			filename: "remoteEntry.js",
-			remotes: { calendar-card: "calendar_card@http://localhost:3002/remoteEntry.js" },
+			remotes: { calendar_card: "calendar_card@http://localhost:3002/remoteEntry.js" },
 			shared: [ "react", "react-dom" ]
 		})
 	]	
