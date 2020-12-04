@@ -38,7 +38,7 @@ C# supports a lot of [functional building blocks](https://functionalprogrammingc
 
 ## Immutability in C#
 
-C# second greatest error[^error] was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
+C# second greatest error<sup>[^error]</sup> was to one-up Java and introduce the concept of properties as a first class language feature with the poorest defaults of all time: the default property syntax made it all too easy to create classes with mutable properties. The deed is as simple as:
 
 ```csharp
 public class Person
