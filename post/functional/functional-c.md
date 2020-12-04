@@ -28,13 +28,13 @@ However, what does it mean to be a *functional-friendly* programming language?
 
 ## Functional advantages
 
-TODO: fordeler med functional stil
+Enrico Buonanno argues in his book [Functional Programming in C#: How to write better C# code](https://www.amazon.com/Functional-Programming-write-better-code/dp/1617293954/) that we should care about functional programming because it gives us the following:
 
-TODO: Functional features i C# og .Net
+- **Power:** We can get more done with less code. Functional programming raises the level of abstraction, allowing us to write high-level code while freeing us from low-level technicalities that add complexity but no value.
+- **Safety:** A program written in the imperative style may work well in a single-threaded implementation but due to the mutable state that is in its nature, cause all sorts of bugs when concurrency comes in. Code in the functional style might offer better guarantees in concurrent scenarios.
+- **Clarity:** We spend more time maintaining and consuming existing code than writing new code, so it’s important that our code be clear and intention-revealing. As we learn to think functionally, achieving this clarity will become more natural.
 
-There's even [a whole book about it now](https://www.amazon.com/Functional-Programming-write-better-code/dp/1617293954/).
-
-Despite that, the core functional tenet of *immutability of data* has always been a C# pain point. Until now.
+C# supports a lot of [functional building blocks](https://functionalprogrammingcsharp.com/functional-features-of-c-sharp), such as *function delegates*, *higher order functions*, *expressions instead of statements*, *method chaining*, *extension methods*, *yield*, *LINQ*, *tuples* and *local functions*. Despite all that, the core functional tenet of *immutability of data* has always been a C# pain point. Until now.
 
 ## Immutability in C#
 
@@ -49,7 +49,7 @@ public class Person
 
 ![Listen to the wolf](https://hjerpbakk.com/img/christmas/the-wolf.png)
 
-Alas, aging can take its toll and we should've listen the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
+Alas, premature aging can take its toll and we should've listen the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
 
 ```csharp
 public class Person
@@ -64,8 +64,6 @@ public class Person
     public uint Age { return age; }
 }
 ```
-
-But at least we cannot:
 
 [C# 6](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#expression-body-definitions) made the pit of success a bit deeper by introducing read-only properties using only a `get` accessor:
 
