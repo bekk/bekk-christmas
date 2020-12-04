@@ -30,7 +30,7 @@ It is well known that prime numbers are important for cryptography, although it 
 
 Cryptographic protocols are typically working *modulo* some prime *p*. This can be likened to turning the number line into a coil, such that 0, *p*, 2*p*, etc. all join at the same place. From then on, whenever we add or multiply the number such that we go beyond *p*, we can simply remove as many multiples of *p* as necessary until we come between 0 and *p* again.
 
-Now, imagine that we used a composite number instead, for example 12. Then 0 and 12 are “the same” in this situation, but that also means that 3 multiplied by 4 is ... 0! One of the intuitions when working with normal numbers is that if *ab* = 0, then either *a* or *b* would have to be 0. Hence, when using composite numbers, there is simply stuff that no longer works the way we’re used to. Fortunately, this is not the case when using the primes -- for instance 7 -- as our so-called modulus.
+Now, imagine that we used a composite number instead, for example 12. Then 0 and 12 are "the same" in this situation, but that also means that 3 multiplied by 4 is ... 0! One of the intuitions when working with normal numbers is that if *ab* = 0, then either *a* or *b* would have to be 0. Hence, when using composite numbers, there is simply stuff that no longer works the way we’re used to. Fortunately, this is not the case when using the primes -- for instance 7 -- as our so-called modulus.
 
 ![](/assets/curves.png)
 
@@ -65,7 +65,7 @@ You can test this rule interactively in a simple [GeoGebra demonstration](https:
 
 We just assumed that *P* and *Q* were distinct. If *P* = *Q*, then we simply use the tangent to the curve at point *P* instead, and proceed as before.
 
-In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. Eventually, we reach the point at infinity, and then back to *G*. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above, and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that “large enough” is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
+In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. Eventually, we reach the point at infinity, and then back to *G*. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above, and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that "large enough" is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
 
 ## Elliptic Curve Diffie-Hellman Key-Exchange
 
