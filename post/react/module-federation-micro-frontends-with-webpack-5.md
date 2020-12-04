@@ -22,13 +22,11 @@ authors:
 ---
 > [webpack](https://webpack.js.org/concepts/) is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
-In webpack 5, a new exciting feature was released. **Module Federation**, a webpack plugin enabling dynamic code loading from multiple webpack builds at runtime. It supports dependency sharing, for example:
+In webpack 5, a new exciting feature was released. **Module Federation**, a webpack plugin enabling dynamic code loading from multiple webpack builds at runtime. It supports dependency sharing, i.e.:
 
 *Application A, importing code from application B, will attempt to use its own dependencies before downloading payloads from B. Nevertheless, A will download the dependencies from B if they are missing from A.*
 
-This way of sharing code between webpack applications opens up a sea of possibilities. For instance, you may use react components from other projects while receiving updates, both during build and runtime.
-
-Moreover, if your website consists of many applications, you can have a dedicated app to load and route between all projects. Another use case is to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying.
+This way of sharing code between webpack applications opens up a sea of possibilities. For instance, you may use react components from other projects while receiving updates, both during build and runtime. Moreover, if your website consists of many applications, you can have a dedicated app to load and route between all projects. Another use case is to incorporate a design system at runtime. Since you are fetching the components from a different origin at runtime, you can get the latest version from your design system without rebuilding and deploying.
 
 # Example 
 
@@ -37,13 +35,11 @@ I am more of a learning by doing kind of gal, so let us have a look at an exampl
 * `calendar-container`: Contains the calendar component.
 * `calendar-card`: Contains the calendar card component.
 
-We will use module federation to import components from `calendar-card`
-
- into the `calendar-container` during runtime.
+We will use module federation to import components from `calendar-card `into the `calendar-container` during runtime.
 
 The wonderful thing about module federation is that we can easily outsource the development of various card components to fellow programmers, and reap the fruits of their efforts later on.
 
-The complete example can be found \[here](https://github.com/hegehaav/christmas-calendar)!
+The complete example can be found [here](https://github.com/hegehaav/christmas-calendar)!
 
 ![Figure of example architecture](/assets/ex_white.svg)
 
