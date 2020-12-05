@@ -11,7 +11,7 @@ ingress: Cloud environments quickly grow in size. There’s tons of services and
 authors:
   - Halvor Hølmebakk Mangseth
 ---
-However fun and games. With a lower bar for creating new resources we can easily end up with clutter. There’s also limitations to using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
+But everything that glitters isn't gold. With a lower bar for creating new resources we can easily end up with clutter. There’s also limitations to using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
 
 <br />
 So, we end up writing a bunch of small scripts and cloud functions scattered around. Maintaining this can be a pain for various reasons, like “which service is deleting my logs here too early?”
