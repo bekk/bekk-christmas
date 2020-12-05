@@ -5,14 +5,14 @@ post_day: 6
 title: Cloud Janitors
 image: https://images.unsplash.com/photo-1603618090554-f7a5079ffb54
 ingress: Cloud environments quickly grow in size. There’s tons of services and
-  we start utilising SaaS solutions for different problems. Solving problems
-  through infrastructure and SaaS is after all one of the main reasons we are in
+  we start utilizing SaaS solutions for different problems. Solving problems
+  through infrastructure and SaaS is after all one of the main reasons we're in
   the cloud in the first place.
 authors:
   - Halvor Hølmebakk Mangseth
 ---
 ## The problem
-But everything that glitters isn't gold. With a lower bar for creating new resources we can easily end up with clutter. There’s also limitations to using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
+But everything that glitters isn't gold. With a lower bar for creating new resources we can easily end up with clutter. There are also limitations when using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
 
 Personally we end up writing a bunch of small scripts and cloud functions that was scattered all around. Maintaining it turned into a pain for various reasons. Sometimes it was hard figuring out if something similar was already running. Other times services was forgotten. The point being, keeping control of everything wasn't always easy.
 
