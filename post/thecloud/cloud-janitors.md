@@ -24,7 +24,7 @@ There is, after all, always some general maintenance that needs doing. Tasks lik
 
 
 
-To try and make this fluffy subject a bit more tangible, let’s look at some examples I use today in our AWS cloud!  
+To try and make this fluffy subject a bit more tangible let’s look at some examples we use today in our AWS cloud. 
 <br />
 
 
