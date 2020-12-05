@@ -36,7 +36,6 @@ Schedule: Once a day
 Tasks: 
 
 Loop through the image repository and:
-
 * Delete any untagged images
 * Delete pre-release images older than X days (we’ve got a limit of 60 at the moment), but not our releases as we want to preserve these.
 * Make sure the images are accessible to other cloud accounts if wanted
@@ -47,9 +46,7 @@ Loop through the image repository and:
 While log retention is easy to set in most systems, there’s always the oddball out. It's always nice to collect the log cleaning somewhere. Removing unused logs reduces unnecessary cost as well. 
 
 Schedule: Daily or hourly, depending on needs
-
 Tasks: 
-
 * Set retention rate on logs where it isn’t set.
 * Delete old logs!
 
@@ -57,11 +54,8 @@ Tasks: 
 ### The Pod janitor
 
 We run a couple of janitors in our kubernetes cluster. One of those is the pod janitor. Today it’s running with a couple of tasks. 
-
 Schedule: every 10 minutes
-
 Tasks:
-
 * Normalize and make sure the memory and cpu limits for our Docker containers follow the standard.
 * Look for a max_age tag on the pod. If the age of the pod exceeds this, delete it, given that all other replicas of the app are running and healthy. 
 
