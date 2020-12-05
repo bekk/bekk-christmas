@@ -29,7 +29,7 @@ To try and make this fluffy subject a bit more tangible let’s look at some exa
 
 ### The container registry janitor
 
-We have a centralised container registry where we keep all our images. However we really don’t need to keep every build saved for eternity. We also want to make sure all images are accessible to all our accounts. This is mostly done at publication of a new image, but checking this routinely as well handles images pushed from non-standard sources. 
+We have a centralized container registry where we keep all our images. However we really don’t need to keep every build saved for eternity. We also want to make sure all images are accessible to all our accounts. This is mostly done at publication of a new image, but checking this routinely as well handles images pushed from non-standard sources. 
 
 Schedule: Once a day
 
