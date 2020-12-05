@@ -43,7 +43,7 @@ Loop through the image repository and:
 
 ### The log cleaning janitor
 
-While log retention is easy to set in most systems, there’s always the oddball out. It's always nice to collect the log cleaning somewhere. Removing unused logs reduces unnecessary cost as well. 
+While log retention is easy to set in most systems, there’s always the oddball out. It's can be beneficial to collect the log cleaning in one place. Removing unused logs reduces unnecessary cost as well. 
 
 Schedule: Daily or hourly, depending on needs
 Tasks: 
