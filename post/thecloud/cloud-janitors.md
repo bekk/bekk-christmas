@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 6
 title: Cloud Janitors
-image: https://images.unsplash.com/photo-1603618090554-f7a5079ffb54
+image: https://images.unsplash.com/photo-1543936014-81db3ef51ba2
 ingress: Cloud environments quickly grow in size. There’s tons of services and
   we start utilising SaaS solutions for different problems. Solving problems
   through infrastructure and SaaS is after all one of the main reasons we are in
