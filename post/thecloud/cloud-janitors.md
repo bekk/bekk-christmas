@@ -53,7 +53,7 @@ Tasks: 
 
 ### The Pod janitor
 
-We run a couple of janitors in our kubernetes cluster. One of those is the pod janitor. Today it’s running with a couple of tasks. 
+We run a couple of janitors in our kubernetes cluster. One of these is the pod janitor. Today it’s running with a couple of tasks. 
 Schedule: every 10 minutes
 Tasks:
 * Normalize and make sure the memory and cpu limits for our Docker containers follow the standard.
