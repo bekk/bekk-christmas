@@ -50,7 +50,7 @@ public class Person
 
 ![Listen to the wolf](https://hjerpbakk.com/img/christmas/the-wolf.png)
 
-Alas, premature aging can take its toll and we should've listened the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
+Alas, premature aging can take its toll and we should've listened to the dog, hound, wolf or whatever, and make the `age` property immutable. It came with a cost however, amounting to a lot more work and boilerplate code. I mean, I got bored by just writing out this small example from the past:
 
 ```csharp
 public class Person
