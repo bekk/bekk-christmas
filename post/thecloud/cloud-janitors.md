@@ -11,22 +11,22 @@ ingress: Cloud environments quickly grow in size. There’s tons of services and
 authors:
   - Halvor Hølmebakk Mangseth
 ---
-However it’s not all gold and green forests. With a lower bar for creating new resources we can easily end up with clutter. There’s also limitations to using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
+However fun and games. With a lower bar for creating new resources we can easily end up with clutter. There’s also limitations to using SaaS-solutions. The built-in functionality doesn’t fully cover our needs, so we add on to it, to work as needed. Storage is created to test different stuff, but developers forget to delete it afterwards. Maybe resources aren’t tagged correctly. 
 
-
-
+<br />
 So, we end up writing a bunch of small scripts and cloud functions scattered around. Maintaining this can be a pain for various reasons, like “which service is deleting my logs here too early?”
 
 
 
-Enter the janitor concept! To group these tasks, we’re structuring them under the “janitor” concept. 
+## Enter the janitor concept! 
+To group these tasks, we’re structuring them under the “janitor” concept. 
 
 There is, after all, always some general maintenance that needs doing. Tasks like sweeping, making sure the message board is updated, or shutting off the lights can easily be transferred to deleting unused logs, setting the correct tags for resources or scaling down services at night.
 
 
 
-To try and make this fluffy subject a bit more tangible, let’s look at some examples I use today in our AWS cloud! 
-
+To try and make this fluffy subject a bit more tangible, let’s look at some examples I use today in our AWS cloud!  
+<br />
 
 
 ### The container registry janitor
@@ -43,6 +43,7 @@ Loop through the image repository and:
 * Delete pre-release images older than X days (we’ve got a limit of 60 at the moment), but not our releases as we want to preserve these.
 * Make sure the images are accessible to other cloud accounts if wanted
 
+
 ### The log cleaning janitor
 
 While log retention is easy to set in most systems, there’s always the oddball out. It's always nice to collect the log cleaning somewhere. Removing unused logs reduces unnecessary cost as well. 
@@ -53,6 +54,7 @@ Tasks: 
 
 * Set retention rate on logs where it isn’t set.
 * Delete old logs!
+
 
 ### The Pod janitor
 
@@ -65,6 +67,7 @@ Tasks:
 * Normalize and make sure the memory and cpu limits for our Docker containers follow the standard.
 * Look for a max_age tag on the pod. If the age of the pod exceeds this, delete it, given that all other replicas of the app are running and healthy. 
 
+
 ### Cluster Janitor
 
 In an environment with multiple kubernetes clusters and morphs and changes it can be very useful with a custodian. One thing we’ve experienced is that setting “tags” on our resources is a great help. Tags are generally easy to access for interested parties, so we use these to describe different resources. 
@@ -75,6 +78,7 @@ Tasks:
 
 * Based on the load balancer version, set “tags” (annotations), that’s read by our deploy-scripts to know which type of ingress objects should be created. 
 * Set tags on namespaces based on naming rules. These are used by deploy-scripts to determine which cluster to deploy to in a multi-cluster environment. 
+
 
 ## How to get started
 
