@@ -62,7 +62,7 @@ Tasks:
 
 ### Cluster Janitor
 
-In an environment with multiple kubernetes clusters and morphs and changes it can be very useful with a custodian. One thing we’ve experienced is that setting “tags” on our resources is a great help. Tags are generally easy to access for interested parties, so we use these to describe different resources. 
+In an environment with multiple kubernetes clusters that morphs and changes a custodian can help keep things in order. One thing we’ve experienced is that setting “tags” on our resources is a great help. Tags are generally easy to access for interested parties, so we use these to describe different resources. 
 
 Schedule: frequently
 
@@ -74,7 +74,7 @@ Tasks:
 
 ## How to get started
 
-Well, for us we ended up just creating a set of small FaaS python functions we run on a cron job schedule, since that was the easiest to get going with our existing system. There is however a bunch of systems out there like the [cloud custodian](<https://cloudcustodian.io/docs/index.html>). 
+Well, for us we ended up just creating a set of small FaaS python functions we run on a cron job schedule, since that was the easiest way to get going with our existing system. There is however a bunch of systems out there like the [cloud custodian](<https://cloudcustodian.io/docs/index.html>). 
 
 ## 👋
 
