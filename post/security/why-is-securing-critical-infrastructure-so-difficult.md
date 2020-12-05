@@ -17,7 +17,7 @@ authors:
   - Sara Waaler Eriksen
   - Sarmilan Gunabala
 ---
-#### **Digitalization**
+#### Digitalization
 
 The digitalization of critical infrastructures increases efficiency, safety and availability and lowers costs. It does however also enable the possibility of cyber attacks, which we unfortunately have witnessed on power grids, oil and gas companies and shipping companies among others. This shows that securing critical infrastructure against cyber attacks is very important and highly relevant, but also incredibly difficult.
 
