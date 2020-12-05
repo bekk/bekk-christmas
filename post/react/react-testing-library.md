@@ -60,7 +60,7 @@ This is no doubt a more specific query, and it also has an additional advantage:
 
 ## User interaction and asynchronicity
 
-Let’s say that when our button is clicked, it triggers the loading of some data, which is then rendered somehow. We can test this scenario with the user-event utility. We’ll find the button, click it, and then assert that the content eventually shows up. Let’s assume that the component \`MyComponent\` includes a button with the label "Load Data" and that the loaded content has the header "Your Data*"*.
+Let’s say that when our button is clicked, it triggers the loading of some data, which is then rendered somehow. We can test this scenario with the user-event utility. We’ll find the button, click it and then assert that the content eventually shows up. Let’s assume that the component `MyComponent` includes a button with the label "Load Data" and that the loaded content has the header "Your Data*"*.
 
 ```jsx
 import userEvent from "@testing-library/user-event";
