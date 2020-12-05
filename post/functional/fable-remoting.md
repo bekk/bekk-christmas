@@ -271,7 +271,7 @@ let todosApiDocs =
         ]
 ```
 
-![Docs gif](assets/docs.gif)
+![](/assets/docs.gif)
 
 ### And thats it!
 
