@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 6
 title: Cloud Janitors
-image: https://images.unsplash.com/photo-1543936014-81db3ef51ba2
+image: https://images.unsplash.com/photo-1603618090554-f7a5079ffb54
 ingress: Cloud environments quickly grow in size. There’s tons of services and
   we start utilising SaaS solutions for different problems. Solving problems
   through infrastructure and SaaS is after all one of the main reasons we are in
@@ -21,7 +21,6 @@ Personally we end up writing a bunch of small scripts and cloud functions that w
 To group these tasks, we’re structuring them under the “janitor” concept. 
 
 There is, after all, always some general maintenance that needs doing. Tasks like sweeping, making sure the message board is updated, or shutting off the lights can easily be transferred to deleting unused logs, setting the correct tags for resources or scaling down services at night.
-
 
 
 To try and make this fluffy subject a bit more tangible let’s look at some examples we use today in our AWS cloud. 
