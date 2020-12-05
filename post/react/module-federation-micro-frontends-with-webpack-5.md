@@ -145,6 +145,8 @@ module.exports = {
 We need an async way to load the application, this can be done by moving all the code from `index.js` into a new file `bootstrap.js`. We do this in both applications:
 
 ```javascript
+// src/bootstrap
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'; 
@@ -155,7 +157,7 @@ ReactDOM.render(<App />, document.getElementById('calendar-container'));
 Then we dynamically import the content in `index.js`:
 
 ```javascript
-// app1/src/index.js
+// src/index.js
 import('./bootstrap')
 ```
 
