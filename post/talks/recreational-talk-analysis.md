@@ -37,6 +37,8 @@ You may also take notes during the presentation along various dimensions:
 **Speaker's style** - Does this specific presenter have a particular style? What is your style?
 **Remedies** - Do the person use a physical object to underpin his/hers arguments? Are they using the audience actively?
 
+[![](https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80)](images.unsplash.com)
+
 ### Analysis of each others
 
 There is a lot of different kind of talks you can analyse! You may analyse the next american inaguration speech in January, a lightening talk at the next Javazone, or even a presentation in your team. In Bekk's competency group for talks, we have found it useful to lower the bar and give each other feedbacks, and provide your own analysis after you have listened to your colleagues present. Focus on what the person did well, and give a pointer towards what the person can focus on in the next presentation. Just remember to ask first if it's OK that you give your feedback.
