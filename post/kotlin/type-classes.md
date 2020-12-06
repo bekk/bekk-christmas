@@ -75,8 +75,7 @@ inline class BigDecimal(val value: java.math.BigDecimal) : Addable<BigDecimal> {
 ```
 
 This does not seem to be an ideal solution, whereas duplication of the function for different types will make it more
-convenient to use. In fact, the function `sum` is duplicated for `Byte`, `Short`, `Int`, `Long`, `Float`, `Double`,
-in the standard library.
+convenient to use. In fact, the function `sum` is duplicated for `Byte`, `Short`, `Int`, `Long`, `Float` and `Double` in the standard library.
 However, let's try to redefine our `Addable` interface to a type class:
 
 ```kotlin
