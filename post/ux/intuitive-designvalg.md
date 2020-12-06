@@ -17,7 +17,7 @@ Innovasjonstakten har økt med lean startup-metodikk, hvor vi tester forretnings
 Vi har blitt dyktige på rammeverk, metoder, organisasjon og å skape produkter. Men i skogen av alle disse fremmedordene, titlene og prossesene har menneskene som lager produktene fått lite fokus. Vi er kanskje kundesentrert, men sjeldent menneskesentrerte. Med en verktøykasse som blir utdatert annenhver måned, mål for selskapet som byttes ut kvartalsvis, organisasjoner i konstant omstrukturering, og et globalt marked hvor terrenget ser ulikt ut for hvert øyeblikk — har menneskene og kulturren blitt det viktigste konkurransefortrinnet. La oss se på hvordan vi kan ta bedre vare på menneskene. Kollegaene våre. Skape en kultur skaper psykologisk trygghet.
 
 
-<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122899544&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe></div>
+<p><iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122899544&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe></p>
 
 
 Hva er psykologsik trygghet?
