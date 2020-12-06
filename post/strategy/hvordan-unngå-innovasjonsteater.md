@@ -42,7 +42,7 @@ Et autonomt team skjermes i større grad fra daglig drift, slik at de ansatte f�
 
 For at ansatte skal få tid til å drive med innovasjon velger mange selskaper å etablere en egen innovasjonsenhet eller «lab». Denne kan være innenfor eller utenfor selskapet, og må som autonome team  bemannes med kompetanse innen design, teknologi, forretning og domene. I tillegg har man gjerne egne personer som er gode på prosess og metode for innovasjon, og anledning til å involvere andre fra organisasjonen ved behov. Innovasjonsenheter har gjerne mulighet til å utforske mange idéer i et hurtig tempo, og til å forvalte en mer balansert portefølje av idéer og initiativer enn det et autonomt team har ressurser til. En fare med innovasjonsenheter er imidlertid dersom ideér og konsepter «overleveres» til linja for realisering; så her gjelder det å tenke gjennom hvordan idéer skal tas videre, av hvem, og hvorvidt ressursene i enheten skal være faste eller mer fleksible. For et praktisk eksempel kan du lytte til vår Drypp-episode om [hvordan Storebrand har rigget seg for innovasjon](https://open.spotify.com/episode/3Dzo5IACvPVa1moEfPCuqX?si=abJiq-ZYQqiKLkH5TLTMGg).
 
-Dette er tre ofte brukte organsisasjonsformer, og i tillegg finnes nok en hel del hybrider. Som nevnt innledningsvis: Organisering av innovasjon avhenger av hva du ønsker å oppnå. Bruk tid på å finne ut av dette først, så tror jeg sjansene for å lykkes med innovasjon og unngå teater er langt større!
+Avslutningsvis ønsker jeg å gjenta det som ble sagt innledningsvis: Organisering av innovasjon avhenger av hva du ønsker å oppnå. Bruk tid på å finne ut av dette først, så tror jeg sjansene for å lykkes med innovasjon og unngå teater er langt større!
 
 ...
 
