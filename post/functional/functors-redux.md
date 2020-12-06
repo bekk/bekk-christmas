@@ -9,6 +9,8 @@ ingress: >
   have been well recieved but some felt it were lacking in details which is true
   and by design. There is more to be said and some crucial details that I
   glossed over so I will try to address some of them now. Let get nerdy!
+authors:
+  - Harald Ringvold
 ---
 ## Functor as a context
 
