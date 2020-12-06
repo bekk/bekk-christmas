@@ -10,8 +10,8 @@ ingress: 2020 has been, and still is a special year for us because of the
   it has still been a special year also for Santa Claus. 2020 is the year when
   he begun his journey towards the cloud for his on-northpole infrastructure.
 links:
-  - title: Santa Claus is immune
-    url: https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/
+  - title: Example repository for Hybrid Connection
+    url: https://github.com/espenekvang/hybrid-christmas
 authors:
   - Espen Ekvang
 ---
@@ -125,3 +125,9 @@ Finally, to make the outbound connection to Azure, Santa Claus had to download t
 ![No endpoint configured](/assets/notconfigured.png "No endpoint configured")
 
 With this error it is not possible to connect to Azure and after some research it turns out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using https://portal.azure.com on the Web App itself.
+
+Manually adding the hybrid connection on the Web App towards the Relay solves the endpoint configuration failure, consequently allowing the Hybrid Connection Manager to establish the connection towards Azure.
+
+## Conclusion
+
+Using Azure Hybrid Connections and Terraform Santa Claus is able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, Santa Claus manage to expose data from on-prem and his has successfully started is cloud journey - whether the hybrid connection will remain as part of his infrastructure or not we'll have to see next Christmas.
