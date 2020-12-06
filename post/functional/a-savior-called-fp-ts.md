@@ -92,7 +92,10 @@ const usernameOne = map(getUserName)(userOne) // -> right("user-name")
 const usernameTwo = map(getUserName)(userTwo) // -> left("UserNotFound")
 ```
 
-This is not too far from the first example with the `Option`, with the added value that we now also know why it failed. This does‘t mean that `Either` is more preferable than `Option` in all cases. It all depends on how the operation might fail, and what you would like to do when it fails. It also boils down to semantics – is the lack of a value valid in your domain, or is it an error?
+This is not too far from the first example with the `Option`, with the added value that we now also know why it failed. Just as with the `Option`, `Either` is also a wrapper around your value(s), abstracting away the error case. You also need to use one of the supplied, safe, functions to extract your actual value. I’ll leave you with the task of implementing this – if you need a hint, I can tell you it’s more or less the same as with `Option`!
+
+So, which type should you use? It’s the usual, booring answer: it all the depends! It all depends on how the operation might fail, and what you would like to do when it fails. It also boils down to semantics – is the lack of a value valid in your domain, or is it an error? In the former case, and `Option` is more suitable. In the latter, an `Either` might be better.
+
 
 ### Pipes and flows
 
