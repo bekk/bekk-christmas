@@ -33,8 +33,11 @@ Not much is needed in order to structure (and enhance) the analysis of a particu
 You may also take notes during the presentation along various dimensions:
 
 **Body Language** - How did the presenter use his/hers body language? Did it have something to say in terms of your learning?
+
 **Pitch of voice** - How did the presenter utilize his/hers tone/pitch of voice?
+
 **Speaker's style** - Does this specific presenter have a particular style? What is your style?
+
 **Remedies** - Do the person use a physical object to underpin his/hers arguments? Are they using the audience actively?
 
 [![](https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80)](images.unsplash.com)
