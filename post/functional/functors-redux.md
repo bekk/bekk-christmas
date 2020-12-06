@@ -16,14 +16,12 @@ authors:
 
 In the previous article I said you could think of a functor as a structure or container that has a mapping function. This is not stricly wrong as it is one way of thinking about the concept, but can be confusing as it does not fit all situations. For example a functions can in some cases be a functor. A structure might give us thoughts about data structures or types. Containers is fitting when talking about lists or other types that can contain data. Is a function a structure or container? For this reason it is common to refer to some of the general concepts and abstractions we use in FP (functor, monad etc.) as contexts which has some properties.
 
-
 ## The functor laws
 
 Unlike my vague explanation in the previous article a functor is actually a very spesific thing and is defined by rules or properties the context has to adhear to. These laws come from mathematics, spesifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
 
 In addition to having a `map` function, functors needs to follow some rules.
 The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
-
 
 ### 1. Law of preservation of identity
 
@@ -38,7 +36,7 @@ List.map identity [1,2,3,4] == [1,2,3,4]
 
 For the javascript example we will add the identify function inline:
 
-```javacript
+```javascript
 [1,2,3,4].map((x) => x) == [1,2,3,4]
 ```
 
@@ -64,6 +62,7 @@ type alias User =
 To get the name of a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signatur `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the name field.
 
 Go get the age from a user you would to: 
+
 ```elm
 -- Lets first define a User record to work with
 user = { name = "John", age = 20 }
@@ -88,7 +87,7 @@ ageAsString = .age >> fromInt
 
 When the output of a function matches the input of another we can compose them together and make a new function that has the input of the first and output of the second. Note that `>>` is the rightwards compose operator.<sup>[^composeop]</sup>
 
-#### The second law 
+#### The second law
 
 Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that funtion over the functor should produce the same result as mapping the individual functions over the functor in sequense. Lets look as some code to make sense of it:
 
@@ -109,27 +108,23 @@ agesThroughMaps =
 agesThroughComposeAndMap : List String
 agesThroughComposeAndMap = 
 	List.map (.age >> String.fromInt) users
-
 ```
 
 In the example above we have a list of users and two constants[^const] that both are a list of the users ages as strings. 
 
 The first contant, `agesThroughMaps`, is defined using two map operations. The first run passes the `.age` accessor function to `map` and gives us a list of ages (of type `Int`). In the second map operation the `String.fromInt`is used to create a list of the users ages as `String`. 
 
-For the last constant, ´agesTthroughMaps`, the list of the users age is created with one map operation where the function passed in to `map` is composed of the `.age` and `fromInt` functions with the compose operator (`>>`). 
+For the last constant, ´agesTthroughMaps`, the list of the users age is created with one map operation where the function passed in to`map`is composed of the`.age`and`fromInt`functions with the compose operator (`>>`). 
 
 And this is the result of the second law: the values in the two constants should be equal. A list of strings: `[‘20’, ‘22’, ‘30’]`
 
 See full example in ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
-
 
 ## The consequenses of the laws
 
 The laws might seem a bit random and not very helpfull at first glance, but it can actually helps us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function and similatly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
 
 With these rules in place for what constitutes a functor makes it very clear how a functor behaves. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
-
-
 
 [^accessor]: You could use the syntax record.field_name as with JS objects (ex:`user.age`) as well but that does not serve our example that well. :P
 [^composeop]: There is a left compose as well. For our example it would look like: `fromInt << .age` and would create the same function.
