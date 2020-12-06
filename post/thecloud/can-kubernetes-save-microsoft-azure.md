@@ -28,7 +28,7 @@ I could continue the list with Azure AD, Redis cache, and so on, but you get the
 
 Accessing or running services inside a VPC / Virtual network is incredibly difficult and expensive. There are 3 ways to achieving it and they are all bad:
 
-* Application Service Environment (v2)
+* [Application Service Environment](https://github.com/uglide/azure-content/blob/master/articles/app-service-web/app-service-web-how-to-create-an-app-service-environment.md) (v2)
 
   * Slow
   * Limited in terms of functionality
@@ -49,7 +49,7 @@ Consequently, many organizations choose to ignore that exposing databases direct
 
 Many years ago, I worked with the Azure Classic deployment model (sometimes referred to as ASM) where automation was extremely limited. In 2015, I switched completely to Azure Resource Manager (ARM) deployment model with PowerShell and JSON templates. Now, five years later, [infrastructure as code](https://martinfowler.com/bliki/InfrastructureAsCode.html) is still a struggle for Azure, [click-ops](https://www.august.com.au/blog/killing-click-ops-what-it-is-why-its-problematic-and-how-to-avoid-it/) seems to be a standard approach for many organizations. 
 
-The tooling (ARM templates, PowerShell, Azure CLI, and now Biceps DSL) is just not good enough. I recommend everybody to adopt Terraform which has much better readability and modularity. In fact, Microsoft uses terraform to create and share landing zones (i.e. infrastructure blueprints) with customers and partners: <https://github.com/Azure/caf-terraform-landingzones>
+The tooling (ARM templates, PowerShell, Azure CLI, and now [Biceps DSL](https://github.com/Azure/bicep)) is just not good enough. I recommend everybody to adopt Terraform which has much better readability and modularity. In fact, Microsoft uses terraform to create and share landing zones (i.e. infrastructure blueprints) with customers and partners: <https://github.com/Azure/caf-terraform-landingzones>
 
 # Azure support
 
