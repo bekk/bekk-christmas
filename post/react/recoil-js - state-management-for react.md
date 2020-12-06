@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 10
-title: Recoil.js - State management for React 🔥
+title: "[Draft] Recoil.js - State management for React 🔥"
 image: https://images.unsplash.com/photo-1496816877232-460195b16fb8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1554&q=80
 ingress: Recoil is a new state management library for React — offering a
   React-ish API and a simple and powerful way of dealing with global,
@@ -10,41 +10,111 @@ ingress: Recoil is a new state management library for React — offering a
 description: ""
 authors: []
 ---
-In the last years of state management evolution there have been many ways of dealing with state, but we eventually got a “industry standard” when Redux was released in 2015. Redux solved many state challenges with its one-way data flow, but today things have changed and Redux is no longer my goto library for dealing with state.
+### What is Recoil ?
 
-## Why I am leaving Redux
+Recoil is a new state management library for React  (link)— offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state.
 
-![its hard getting started with redux](/assets/big_book.jpeg)
-\
-\
- Boilercode
+Recoil aims to solve some specific challenges when working with modern React apps like flexible shared state, derived state and global observation.
 
-Although Redux has improved with Redux hooks, we still need to add alot of Redux spesific setup code. If you want to be able to handle asynchronous actions or caching, you need to set up third party libraries as well.
+### What's great about Recoil ?
 
-It's damn hard
+State libraries for Ready are constantly appearing, but I quickly realized that Recoil was much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
 
-Redux has a very steep learning curve. I have worked with redux for many years and still struggle to understand my own code. I see that new developers struggle really hard to wrap their heads around actions and reducers wrapped into each other, with good reason. Writing scalable and idiomatic state handling with Redux is damn hard.
+##### Tailored for React
 
-> Redux is still a great library! But the moment I saw Recoil I realized how complicated and difficult redux really was. 
+Recoil is made specifically for React and offers close compatibility with React Suspense, Concurrent mode and claims to support new React features as they become available.
 
-## How does Recoil work and why should I use it
+* react suspense
+* Concurrent mode
 
+##### Easy to learn
 
-First of all I`ts very easy to learn and to use. The API is simple and feels like a natural extension of React. All we need to get started is to wrap our application with a `RecoilRoot`.
+When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was. 
 
-### Atoms
+* The API is 
+* Boilerfree
 
-In Recoil we store state in atoms - which is 
+Recoil offers a boilerplate-free API where shared state has the same simple get/set interface as React local state. All you need is to wrap you code with RecoilRoot:
 
-```jsx
-export const myState = atom({
-  key: "myState",
-  default: "",
+```js
+import { RecoilRoot } from "recoil";
+import App from "./App";
+
+ReactDOM.render(
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>,
+  document.getElementById("root")
+);
+```
+
+### Example and code
+
+I have made a demo application with React and Recoil which I use as a starting point to illustrate the use of Recoil. The app lets you sort, filter and search for recipes. Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
+
+##### Atoms
+
+An atom is simply a piece of state. It's exactly like react setState, except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use an atom to store our search text value:
+
+```js
+import { atom } from "recoil";
+
+export const searchState = atom({
+  key: "searchStateKey",
+  default: "",
 });
+```
+
+To read and write to this atom we use a hook called `useRecoilState`.
+
+```js
+import { useRecoilState } from "recoil";
+
+export default () => {
+  const [search, setSearch] = useRecoilState(searchState);
+
+  return (
+      <input
+        value={search}
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
+      />
+};
 ```
 
 
 
-Recoil was unveiled at ReactConf 2020 and has already received a lot of attention. Thousands of stars on github, several blog posts and videos have appeared that brags of Recoil’s simplicity and flexibility.
+##### Selectors
 
-In recoil we use atoms to store
+Selectors is a piece of derived state. Just like a pure function, selectors can modify existing state and return something new instead. In our recipe application we use a selector to combine different filters to return a filtered list of recipipes.
+
+```
+import { selector } from "recoil";
+
+export const filteredRecipesState = selector({
+    key: "filteredRecipes",
+    get: ({ get }) => {
+      const recipes = await fetchRecipes(); // async
+    
+      const searchValue = get(searchState); // sync
+  
+      return recipes
+          .filter(r => r.name.indexOf(searchValue) >= 0);
+    },
+  });
+```
+
+We can use the useRecoilValue() hook to read the value of filteredRecipesState.
+The cool thing here is that if our search state changes, our selector state will trigger a change as well. 
+
+```js
+const { useRecoilValue } from 'recoil';
+
+const Recipes = () => {
+  const filteredItems = useRecoilValue(filteredItemsState);
+
+  ...
+};
+
+```
