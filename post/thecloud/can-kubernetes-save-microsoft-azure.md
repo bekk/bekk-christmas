@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 7
 title: Can Kubernetes save Microsoft Azure?
-image: https://images.unsplash.com/photo-1547058337-e8679fe091dd?w=1226&h=400&fit=crop&crop=edges
+image: https://images.unsplash.com/photo-1547058337-e8679fe091dd
 ingress: Azure has been growing rapidly in the enterprise in recent years. But
   its App services offering, which is the most important service for developers,
   is still mediocre. Kubernetes is, in my opinion, the only viable alternative
