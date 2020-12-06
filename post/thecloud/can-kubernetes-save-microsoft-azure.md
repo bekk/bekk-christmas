@@ -61,7 +61,7 @@ Things have gotten better with the years, but I’ve still experienced 2 major d
 
 > *Upon investigation, engineers discovered one of the workers that your site was running on was unable to download the AAD Open ID configuration that is required for the feature to function. When it cannot download this configuration, the component returns 500s, as it has no way to safely authenticate the users. Unfortunately, this specific failure to download the configuration happens very rarely in our platform, and we have been unable to reproduce the issue for further investigation.*
 
-This is not what we expect from PaaS services.
+This is not what people expect when they pay for PaaS.
 
 # Kubernetes, hallelujah!
 
