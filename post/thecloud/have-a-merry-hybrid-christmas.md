@@ -27,7 +27,3 @@ The on-northpole infrastructure consists of mainly windows servers and he chose 
 Santa Claus resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - making them a candidate for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure.
 
 ![](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
-
-\- hybrid solution - elves api
-
-\- avoid clickops where possible
