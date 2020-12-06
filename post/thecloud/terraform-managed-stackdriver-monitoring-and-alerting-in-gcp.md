@@ -5,10 +5,10 @@ post_day: 10
 title: Terraform managed monitoring and alerting in GCP Stackdriver
 image: https://images.unsplash.com/photo-1505139229755-18651479b8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80
 ingress: >-
-  
-  You've got a Kubernetes cluster running your application on Google Cloud Platform (GCP), managed by Terraform.
+  You've got a Kubernetes cluster running your application on Google Cloud
+  Platform (GCP), managed by Terraform.
 
-  Those metrics, be it from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Sure, you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However, this can also be managed with Terraform, allowing a lot more control over your monitoring.
+  Metrics from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Or you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However, this can also be managed with Terraform, allowing a lot more control over your monitoring.
 links: []
 authors:
   - Ole Magnus Lie
@@ -90,13 +90,13 @@ Equally, the filter for the frontend pod is:
 
 Applying this Terraform module creates your dashboard, `My Christmas dashboard`, where the widgets are shown in a grid.
 
-Adding more widgets is as simple as filtering and aggregating the metrics as one wishes to.
+Adding more widgets is as simple as filtering and aggregating the metrics as you wish.
 
 ## Something is wrong - ALERT ME!!
 
 To set up alerting in GCP Stackdriver, you'll need a notification channel. This can be manually set up in Stackdriver, but Terraform can handle this as well.
 
-The [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_notification_channel) Terraform resource is used to create a notification channel. Notification channels can be channels such as e-mails, SMS' or Slack channel. For example, a Slack notification channel can be added as follows:
+The [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_notification_channel) Terraform resource is used to create a notification channel. Notification channels can be channels such as e-mails, SMS' or a Slack channel. For example, a Slack notification channel can be added as follows:
 
 ```json
 resource "google_monitoring_notification_channel" "slack-channel" {
@@ -112,7 +112,7 @@ resource "google_monitoring_notification_channel" "slack-channel" {
 ```
 
 Now, we can use this notification channel when we define our alerting policies. We'll define alerts for the widgets we created in the dashboard.
-A alerting policy is created with the [`google_monitoring_alert_policy`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_alert_policy), like this:
+An alerting policy is created with the [`google_monitoring_alert_policy`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_alert_policy), like this:
 
 ```json
 resource "google_monitoring_alert_policy" "backend_restart_count_alert" {
@@ -154,7 +154,7 @@ resource "google_monitoring_alert_policy" "frontend_restart_count_alert" {
 }
 ```
 
-These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. A alert message is then sent to the selected notification channel, the Slack channel in our case.
+These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. An alert message is then sent to the selected notification channel, the Slack channel in our case.
 
 ## Further reading
 
