@@ -56,7 +56,7 @@ export function toDeg(rad: number) {
 }
 ```
 
-Just a neat little function to convert radians, which you might be used to work with if you've previously been using Reanimated 1 as it .
+Just a neat little function to convert radians, which you might be used to work with if you've previously been using Reanimated 1.
 
 Or we can take a look at a slightly more advanced example:
 
