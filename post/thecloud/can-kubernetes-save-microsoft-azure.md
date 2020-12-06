@@ -29,13 +29,16 @@ I could continue the list with Azure AD, Redis cache, and so on, but you get the
 Accessing or running services inside a VPC / Virtual network is incredibly difficult and expensive. There are 3 ways to achieving it and they are all bad:
 
 * Application Service Environment (v2)
+
   * Slow
   * Limited in terms of functionality
   * Expensive.
 * Private Endpoints & regional VNET integration
+
   * Complicated to set up and maintain
   * Expensive 
 * IP Source Whitelisting
+
   * Complicated to maintain
   * Not as secure as other solutions
   * Some resources don’t have static IPs 
@@ -56,7 +59,7 @@ There are no words to describe how bad it is. 
 
 Things have gotten better with the years, but I’ve still experienced 2 major disruptions of service in 2020 where Microsoft was unable to provide a clear root cause analysis. Here is one of them (App Services):
 
-> Upon investigation, engineers discovered one of the workers that your site was running on was unable to download the AAD Open ID configuration that is required for the feature to function. When it cannot download this configuration, the component returns 500s, as it has no way to safely authenticate the users. Unfortunately, this specific failure to download the configuration happens very rarely in our platform, and we have been unable to reproduce the issue for further investigation.
+> *Upon investigation, engineers discovered one of the workers that your site was running on was unable to download the AAD Open ID configuration that is required for the feature to function. When it cannot download this configuration, the component returns 500s, as it has no way to safely authenticate the users. Unfortunately, this specific failure to download the configuration happens very rarely in our platform, and we have been unable to reproduce the issue for further investigation.*
 
 This is not what we expect from PaaS services.
 
