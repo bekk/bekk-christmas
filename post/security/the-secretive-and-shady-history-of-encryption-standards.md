@@ -37,7 +37,7 @@ The cipher was also altered to be resistant to attacks using differential crypta
 
 In 1977 the NBS presented an altered version of the IBM cipher as the new standard, which they named the _Data Encryption Standard (DES)_. It became the first modern, public, freely available encryption algorithm. All details regarding DES were made public, which is good practice since it allows researchers to scrutinize the mathematical details. However, the motivation for the design criteria remained secret. The public never learned why the key size was reduced, and this was the main cause for suspicion regarding the involvement of the NSA.
 
-## DES cracked by brute force attack
+## DES cracked through brute force attack
 
 DES was initially meant to be the standard cipher for encryption for 10 years; from 1977 to 1987. But no serious weakness was found, and DES went on to reign as the standard algorithm for more than a decade past its due; until 1999. In the final years of DES, several attempts were made to design and build a machine to brute force it. Building such a machine would cost millions of dollars. It was speculated that only government agencies would have the necessary financial resources to build it, and by this time it was widely believed that the NSA could in fact crack DES.
 
