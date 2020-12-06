@@ -65,7 +65,7 @@ This is not what people expect when they pay for PaaS.
 
 # Kubernetes, hallelujah!
 
-First and foremost, yes, Kubernetes is complex. But, some of the complexity is abstracted away when using a managed Kubernetes service such as AKS (Azure Kubernetes Service).
+First and foremost, yes, Kubernetes is complex. But, some of the complexity can be abstracted away by using a managed Kubernetes service such as AKS (Azure Kubernetes Service).
 
 AKS is fairly new and not the best on the market, but it solves the majority of the problems I’ve talked about in this blog post. AKS is getting full attention from Microsoft while App Services are stagnating. On top of that, Kubernetes benefits from a rich ecosystem supported by a vibrant community and a number of commercial companies. 
 
