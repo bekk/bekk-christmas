@@ -62,7 +62,7 @@ a ??= b
 In the example below we have the variable ```money```  where the default value is ```null```.
 
  ```javascript
-let counter = null;
+let money = null;
 money = money ?? 1;
 
 //Using the Logical assignment operator
