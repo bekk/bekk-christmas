@@ -33,10 +33,67 @@ Santa Claus want to expose a new API providing information about his elves. The 
 * an [Azure Relay](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) to work as the hybrid connection between on-northpole and the cloud
 * to install the Hybrid Connection Manager on the server on-northpole which holds that data needed for the new API
 
-These three parts are illustrated in the figure below taken from the documentation of Azure App Service Hybrid Connection
+These three parts are illustrated in the figure below taken from the documentation of Azure App Service Hybrid Connection.
 
 ![](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
 
-In order to make this work Santa Claus needed the following:
+## Provisioning the infrastructure
 
-* A resource group in Azure holding the new Web App and the relay for the Hybrid connection
+Santa Claus is no fan of click-ops, which basically is the process of having manual routines for setting up and maintaining infrastructure. Therefor he chose [Terraform](https://terraform.io) as his infrastructure-as-code tool for provisioning the infrastructure needed for the hybrid connection to be established.
+
+### The Web App
+
+The Web App is a simple API and can be hosted in a PaaS in Azure. In order to provision a app service using Terraform this is what is required:
+
+```jsonc
+resource "azurerm_app_service" "app_hybrid_christmas" {
+  name                      = var.app_name
+  location                  = var.location
+  resource_group_name       = azurerm_resource_group.rg_hybrid_christmas.name
+  app_service_plan_id       = var.service_plan_id  
+
+  app_settings              = {    
+    ASPNETCORE_ENVIRONMENT  = "Staging"    
+  }
+
+  identity {
+    type                    = "SystemAssigned"
+  }
+  
+  tags                      = {
+    source                  = var.source_tag
+  }
+}
+```
+
+### The Relay
+
+In order to send messages through to on-northpole we need a relay to forward these messages, or requests as they will appear to the user, we need to provision this relay.
+
+```jsonc
+resource "azurerm_relay_namespace" "sb_northpole" {
+  name                = var.relay_name
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg_hybrid_christmas.name
+
+  sku_name            = "Standard"
+
+  tags                = {
+    source            = var.source_tag
+  }
+}
+```
+
+The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a host and port number combination. Below we define the connection from the relay to the service on-northpole.
+
+```jsonc
+resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
+  name                          = "hcn-northpole"
+  resource_group_name           = azurerm_resource_group.rg_hybrid_christmas.name
+  relay_namespace_name          = azurerm_relay_namespace.sb_northpole.name
+  requires_client_authorization = true
+  user_metadata                 = "{'key':'endpoint','value':'${var.northpole_hostname}:${var.northpole_hostport}'}"
+}
+```
+
+It is worth making note of the fact that we are specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
