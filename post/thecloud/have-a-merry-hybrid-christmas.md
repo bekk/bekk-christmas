@@ -68,7 +68,7 @@ resource "azurerm_app_service" "app_hybrid_christmas" {
 
 ### The Relay
 
-In order to send messages through to on-northpole we need a relay to forward these messages, or requests as they will appear to the user, we need to provision this relay.
+In order to send messages through to on-northpole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user, he needs to provision this relay.
 
 ```jsonc
 resource "azurerm_relay_namespace" "sb_northpole" {
@@ -84,7 +84,7 @@ resource "azurerm_relay_namespace" "sb_northpole" {
 }
 ```
 
-The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a host and port number combination. Below we define the connection from the relay to the service on-northpole.
+The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a host and port number combination. Below the connection from the relay to the service on-northpole is defined in Terraform.
 
 ```jsonc
 resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
@@ -96,7 +96,7 @@ resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
 }
 ```
 
-It is worth making note of the fact that we are specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
+It is worth making note of the fact that Santa Claus is specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
 
 ### Connecting the Web App and the Relay
 
@@ -112,10 +112,12 @@ resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
 }
 ```
 
-Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* you will see the following status for the connection we just made from the Web App to the Relay.
+Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* Santa Claus sees the following status for the connection he just made from the Web App to the Relay.
 
 ![Not connected](/assets/notconnected.png "Not connected")
 
-It basically says it is *Not Connected* and we need to perform the last step in the configuration.
+It basically says it is *Not Connected* and he needs to perform the last step in the configuration.
 
 ## The last (and manual) step
+
+Finally, to make the outbound connection to Azure, Santa Claus had to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server that was to be connected to Azure. Running the Hybrid Connection Manager on this server he discovered that something went wrong in the provisioning. The hybrid connection manager reports "No endpoint configured"
