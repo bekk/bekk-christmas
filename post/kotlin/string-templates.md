@@ -25,17 +25,15 @@ The statements are four different ways of obtaining exactly the same string:
 The latter two are using the string template construct of Kotlin, in an *escaped string* and a *raw string*, respectively. The `$` symbol indicates the start of a template, and if you need a '$' symbol in your text it needs to be handled separately, in an escaped string by escaping (what else) the character, or by doing a little bit of Christmas magic in a raw string. Other than the '$' character, a raw string preserves everything, including whitespace. Often an editor will format the code by adding extra indentation, which will affect a raw string, too. `trimIndent` fixes this problem by removing the whitespace up to and including the '|' from the start of the line, like so:
 
 ```
-object Main {
-    @JvmStatic
-    fun main(args: Array<String>) {
+fun main(args: Array<String>) {
 
-        val dollars = 100.00
-        val s5 = """
-            |All I want for Christmas is ${'$'} $dollars!
-            |And a red-nosed reindeer, of course.
-        """.trimIndent()
-    }
- }
+    val dollars = 100.00
+    val s5 = """
+        |All I want for Christmas is ${'$'} $dollars!
+        |And a red-nosed reindeer, of course.
+    """.trimIndent()
+}
+
 ```
 
 In the examples the string template is simple, with the `$` immediately followed by the variable. In more complex cases the expression needs to be put in curly brackets, for example:
