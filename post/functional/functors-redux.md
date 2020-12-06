@@ -19,14 +19,14 @@ In the previous article I said you could think of a functor as a structure or co
 
 Unlike my vague explanation in the previous article a functor is actually a very spesific thing and is defined by rules or properties the context has to adhear to. These laws come from mathematics, spesifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
 
-In addition to having a `map` function functors needs to follow some rules.
-The rules for functor are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
+In addition to having a `map` function, functors needs to follow some rules.
+The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
 
 
 ### 1. Law of preservation of identity
 
 The first law or rule of functors is that if the `map` function is given the identity function as its mapping function it will return the same functor. 
-Said another say if we map the identity function over a functor we should get back the same original functor. The identity function is just a function that has one argument and just return it right back (`\x -> x` in Elm or `function(x){return x;}` in JS).
+The identity function is just a function that has one argument and just return it right back (`\x -> x` in Elm or `function(x){return x;}` in JS).
 
 Lets use lists to visualize this a bit more. Elm actually has a identity function in its standard library so we will just use that one:
 
