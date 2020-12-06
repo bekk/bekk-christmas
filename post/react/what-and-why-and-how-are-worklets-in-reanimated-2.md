@@ -3,13 +3,15 @@ calendar: react
 post_year: 2020
 post_day: 7
 title: What and why and how are worklets in Reanimated 2?
+image: https://images.unsplash.com/photo-1576545535503-2b80d4b6d925?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 description: "Worklets in Reanimated 2: What are they?"
 links:
   - title: Reanimated documentation
     url: https://docs.swmansion.com/react-native-reanimated/
   - title: React Native Redash
     url: https://wcandillon.gitbook.io/redash/
-authors: []
+authors:
+  - Hannes Waller
 ---
 Reanimated has been part of the React Native ecosystem for quite some time. It gives developers the opportunity to run animations on the native thread, making the dream of a constant 60 fps not too distant at all. The downside of Reanimated was it's quite difficult to learn API. A simple calculation like 10 + 8 * 4 would be \`add(10, multiply(8, 4))\`. But this is all about to change with version 2 of Reanimated, currently in its first release candidate.
 
