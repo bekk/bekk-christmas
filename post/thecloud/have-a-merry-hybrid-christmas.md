@@ -5,7 +5,7 @@ post_day: 15
 title: Have a merry hybrid Christmas
 ingress: 2020 has been, and still is a special year for us because of the
   pandemic dominating most of the news (fake or not). Despite the fact that he
-  apparently is immune, is has still been a special year also for Santa Claus.
+  apparently is immune, it has still been a special year also for Santa Claus.
   2020 is the year when he begun his journey towards the cloud for his
   on-northpole infrastructure.
 links:
@@ -14,13 +14,9 @@ links:
 authors:
   - Espen Ekvang
 ---
-2020 turned out the be special year for all of us with covid-19 dominating the news (fake or not) throughout the whole world. A virus like covid-19 would have been a huge headache for Santa Clause if it were not for his innate immunity told by Dr. Anthony Fauci in an article publi[](https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/)shed by USA Today in late November - that said Santa has had his own challenges this year
-
-
-
-With a growing number of people on the planet, every year the number of presents to be made by Santa Claus and his elves are increasing. Consequently Santa Claus needs to improve his efficiency and 2020 is the year were his is taking the first steps towards the cloud
-
 ## The challenge
+
+With a growing number of people on the planet, every year the number of presents to be made by Santa Claus and his elves are increasing. Consequently Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts but also the way he and his team maintains, improves and extends the on-northpole infrastructure. An increased number of servers, of course requires more man hours to maintain and assure that everything is working as expected. Moving parts of this to the cloud will help him be prepared for growth and hopefully also free up time from his valuable elves.
 
 ## First steps
 
