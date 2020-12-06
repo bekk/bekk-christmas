@@ -33,7 +33,7 @@ Accessing or running services inside a VPC / Virtual network is incredibly diffi
   * Slow
   * Limited in terms of functionality
   * Expensive.
-* Private Endpoints & regional VNET integration
+* [Private Endpoints & regional VNET integration](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet)
 
   * Complicated to set up and maintain
   * Expensive 
@@ -41,7 +41,7 @@ Accessing or running services inside a VPC / Virtual network is incredibly diffi
 
   * Complicated to maintain
   * Not as secure as other solutions
-  * Some resources don’t have static IPs 
+  * [Some resources don’t have static IPs ](https://docs.microsoft.com/en-us/azure/app-service/overview-inbound-outbound-ips)
 
 Consequently, many organizations choose to ignore that exposing databases directly to the internet is not recommended and simply run all their services without any virtual network. Authentication is then the only layer of security protecting those resources.
 
