@@ -49,7 +49,7 @@ And to use this in our animation:
 const clampedAnimationValue = clamp(val, 0, 10)
 ```
 
-You might not use worklets frequently while writing Reanimated 2, as quite a lot can be achieved within the hooks provided by the library, this is even [stated by Software Mansion themselves](https://docs.swmansion.com/react-native-reanimated/docs/worklets#using-hooks). But there are definitely use-cases for when to use them and I've found myself to write a fair few of them to help out when developing an app.
+You might not use worklets frequently while writing Reanimated 2, as quite a lot can be achieved within the hooks provided by the library, this is even [stated](https://docs.swmansion.com/react-native-reanimated/docs/worklets#using-hooks) by Software Mansion, the makers of Reanimated, themselves. But there are definitely use-cases for when to use them and I've found myself to write a fair few of them to help out when developing an app.
 
 We could take a little peek on [William Candillon's](https://twitter.com/wcandillon) amazing toolbelt for Reanimated: [Redash](https://github.com/wcandillon/react-native-redash), which by the way I can't recommend enough. Here we'll see a fair few examples of worklets creating to make our day a little easier:
 
