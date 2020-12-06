@@ -59,14 +59,16 @@ a ?? (a = b)
 //Logical assignment operator
 a ??= b
 ```
-In the example below we have the variable ```money```  where the default value is ```null```.
-
+In the example below we have the variable ```money```. Using the nullish coalescing operator, the ```defaultValue``` is only applied if the variable is ```undefined``` or ```null```:
  ```javascript
+const defaultValue = 1;
 let money = null;
-money = money ?? 1;
 
-//Using the Logical assignment operator
-money ??= 1
+money = money ?? defaultValue;
+ ```
+Using the Logical assignment operator, we get a slightly shorter syntax:
+ ```javascript
+money ??= defaultValue;
  ```
 
 Curious about Operators? Stay tuned, there might be an article about the topic further into this JavaScript Christmas calendar :angel:.
