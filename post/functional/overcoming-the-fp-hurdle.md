@@ -19,6 +19,7 @@ I still remember the day I first heard murmurs of functional programming. Just t
 As anyone that has at least spent some time roaming the more primitive sides of the internet can attest, there is nothing more vicious than watching two developers argue over their pet preferences. Be it vim vs emacs, programming languages, version control systems or even source code indent style, these digital wars show no mercy.
 
 Still curious, but afraid to interject, I quietly looked up functional programming for myself. To my shock and horror, I was met by an onslaught of jargon that bounced squarely off my head. Monad, Side Effects, Lambda, Currying, Purity, etc. Some words even seemingly imaginary.
+
 Thoroughly put off, I slowly crawled back to my cozy and safe imperative den. It would take another two whole years before I even attempted to conquer this mountain again.
  
 ## What is a Pie?
