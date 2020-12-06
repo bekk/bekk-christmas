@@ -2,7 +2,7 @@
 calendar: security
 post_year: 2020
 post_day: 8
-title: The secretive history of encryption standards
+title: The secretive history of modern encryption
 image: https://images.unsplash.com/photo-1455368109333-ebc686ad6c58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80
 ingress: "Cryptography is the science of hiding information with algorithms
   called ciphers. When data is encrypted with a secure cipher, no one should be
