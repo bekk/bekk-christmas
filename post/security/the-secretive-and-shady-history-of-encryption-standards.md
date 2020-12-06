@@ -28,7 +28,7 @@ The most promising candidate was contributed by a team of cryptographers working
 
 ## Speculation of NSA backdoors
 
-When the NBS examined the security of the cipher candidates, they reached out to the National Security Agency (NSA) for assistance. At this point in time the NSA did not even admit their own existence. The involvement of the NSA lead to speculation and rumors, since the cipher went through a couple of peculiar alterations during the cooperation between NSA and IBM. 
+When the NBS examined the security of the cipher candidates, they reached out to the _National Security Agency (NSA)_ for assistance. At this point in time the NSA did not even admit their own existence. The involvement of the NSA lead to speculation and rumors, since the cipher went through a couple of peculiar alterations during the cooperation between NSA and IBM. 
 
 The most worrying change was that the key size was reduced from 128 bits to 56 bits. This made the cipher considerably less resistant to brute force attacks. Concerns were raised that this change was motivated by the NSA, in order to provide themselves with a backdoor. Maybe their computers were powerful enough to brute force a key size of 56 – but not quite powerful enough to brute force a key size of 128? 
 
