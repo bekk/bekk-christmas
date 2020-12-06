@@ -97,3 +97,5 @@ resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
 ```
 
 It is worth making note of the fact that we are specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
+
+### Connecting the Web App and the Relay
