@@ -99,3 +99,15 @@ resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
 It is worth making note of the fact that we are specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
 
 ### Connecting the Web App and the Relay
+
+The last step to be done is to create a hybrid connection between the Web App and the Relay. According to the documentation this can be done using the following Terraform:
+
+```jsonc
+resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
+  app_service_name    = azurerm_app_service.app_hybrid_christmas.name
+  resource_group_name = azurerm_resource_group.rg_hybrid_christmas.name
+  relay_id            = azurerm_relay_hybrid_connection.hcn_northpole.id
+  hostname            = var.northpole_hostname
+  port                = var.northpole_hostport  
+}
+```
