@@ -123,3 +123,5 @@ It basically says it is *Not Connected* and he needs to perform the last step in
 Finally, to make the outbound connection to Azure, Santa Claus had to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server that was to be connected to Azure. Running the Hybrid Connection Manager on this server he discovered that something went wrong in the provisioning. The hybrid connection manager reports "No endpoint configured"
 
 ![No endpoint configured](/assets/notconfigured.png "No endpoint configured")
+
+With this error it is not possible to connect to Azure and after some research it turns out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using https://portal.azure.com on the Web App itself.
