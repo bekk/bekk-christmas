@@ -3,7 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 8
 title: Functors - Redux
-ingress: >+
+ingress: >
   Last year I wrote [an article](https://functional.christmas/2019/20) trying
   explaining functors in simple terms and show why they are useful. It seem to
   have been well recieved but some felt it were lacking in details which is true
@@ -12,9 +12,7 @@ ingress: >+
 ---
 ## Functor as a context
 
-In the previous article I said you could think of a functor as a structure or container that has a mapping function. This is not stricly wrong as it is one way of thinking about a concept but can be confusing as it does not fit all situations. For example a functions canin some cases be a functor. A structure might give us thoughts about data structures or types and container is fitting when talking about lists or other types that can contain data. Is a function a structure or container? For this reason it is common to refer to some of the general concepts and abstractions we use in FP (functor, monad etc.) as contexts which has some properties.
-
-[Notat om abstraksjon og forskjeller mellom CT abstraksjonen og abstraksjonen vi bruker i programmeringen.]
+In the previous article I said you could think of a functor as a structure or container that has a mapping function. This is not stricly wrong as it is one way of thinking about the concept, but can be confusing as it does not fit all situations. For example a functions can in some cases be a functor. A structure might give us thoughts about data structures or types. Containers is fitting when talking about lists or other types that can contain data. Is a function a structure or container? For this reason it is common to refer to some of the general concepts and abstractions we use in FP (functor, monad etc.) as contexts which has some properties.
 
 
 ## The functor laws
@@ -25,7 +23,7 @@ In addition to having a `map` function functors needs to follow some rules.
 The rules for functor are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
 
 
-## 1. Law of preservation of identity
+### 1. Law of preservation of identity
 
 The first law or rule of functors is that if the `map` function is given the identity function as its mapping function it will return the same functor. 
 Said another say if we map the identity function over a functor we should get back the same original functor. The identity function is just a function that has one argument and just return it right back (`\x -> x` in Elm or `function(x){return x;}` in JS).
@@ -42,11 +40,11 @@ For the javascript example we will add the identify function inline:
 [1,2,3,4].map((x) => x) == [1,2,3,4]
 ```
 
-## 2. Law of composition
+### 2. Law of composition
 
 The second law is not very complicated either but assumes that you know about composition. Lets quickly go through composition before looking at the next law.
 
-### Composition
+#### Composition
 
 Composition in functional programming (FP) is the ability to compose multiple functions into one single function. This is not so often used in object oriented programming (OOP) but quite common in FP. 
 
@@ -88,7 +86,7 @@ ageAsString = .age >> fromInt
 
 When the output of a function matches the input of another we can compose them together and make a new function that has the input of the first and output of the second. Note that `>>` is the rightwards compose operator.<sup>[^composeop]</sup>
 
-### The second law 
+#### The second law 
 
 Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that funtion over the functor should produce the same result as mapping the individual functions over the functor in sequense. Lets look as some code to make sense of it:
 
