@@ -30,7 +30,7 @@ The most promising candidate was contributed by a team of cryptographers working
 
 When the NBS examined the security of the cipher candidates, they reached out to the _National Security Agency (NSA)_ for assistance. At this point in time the NSA did not even admit their own existence. The involvement of the NSA lead to speculation and rumors, since the cipher went through a couple of peculiar alterations during the cooperation between NSA and IBM. 
 
-The most worrying change was that the key size was reduced from 128 bits to 56 bits. This made the cipher considerably less resistant to brute force attacks. Concerns were raised that this change was motivated by the NSA, in order to provide themselves with a backdoor. Maybe their computers were powerful enough to brute force a key size of 56 – but not quite powerful enough to brute force a key size of 128? 
+The most worrying change was that the key size was reduced from 128 bits to 56 bits. This made the cipher considerably less resistant to brute force attacks. Concerns were raised that this change was motivated by the NSA, in order to provide themselves with a backdoor. Maybe their computers were powerful enough to brute force a key size of 56 bits – but not quite powerful enough to brute force a key size of 128 bits? 
 
 The cipher was also altered to be resistant to attacks using differential cryptanalysis. That doesn’t sound too bad, but this particular attack was not known to the public until 1990 – almost 20 years later! If the NSA were familiar with an attack the world needed 20 more years to discover, it is not too unlikely that they also had exceptionally powerful computers. On the other hand, it should be noted that none of these claims have been proven. 
 
