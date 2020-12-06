@@ -22,7 +22,11 @@ Performing a lift-and-shift operation was not possible for several reasons, henc
 
 The on-northpole infrastructure consists of mainly windows servers and he chose the cloud platform to be Micrsoft Azure. In this post we will look into how he established the connection between Azure and on-northpole to assure data from on-northpole would be available seemlessly in the cloud.
 
-## Microsoft Azure Hybrid Connection
+## Azure App Service Hybrid Connection
+
+Santa Claus resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - making them a candidate for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure.
+
+![](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
 
 \- hybrid solution - elves api
 
