@@ -4,6 +4,8 @@ post_year: 2020
 post_day: 7
 title: What and why and how are worklets in Reanimated 2?
 image: https://images.unsplash.com/photo-1576545535503-2b80d4b6d925?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
+ingress: A brief introduction to Reanimated 2's worklet directive and how it can
+  help us animate.
 description: "Worklets in Reanimated 2: What are they?"
 links:
   - title: Reanimated documentation
@@ -81,6 +83,6 @@ export const interpolateColor = (
 };
 ```
 
-Here we can interpolate colours.  I'm not going to go through the entire thing. But one thing worth noting are the  \`processColor\`, \`interpolateColorsHSV\` and \`interpolateColorsRGB\` functions as these are also worklets. Meaning that worklets can depend on each other and share information between one another.
+Here we can interpolate colours.  I'm not going to go through the entire thing. But one thing worth noting are the  `processColor`, `interpolateColorsHSV` and `interpolateColorsRGB` functions as these are also worklets. Meaning that worklets can depend on each other and share information between one another.
 
 In conclusion, worklets are neat little helper functions to assist you while animating in Reanimated 2 without having to worry about it being ran on the JS-thread. They're a very nice addition to  the Reanimated environment. Long gone is the verbose way of writing our animations and the learning curve to implement awesome animations has never been lower.
