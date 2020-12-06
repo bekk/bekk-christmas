@@ -112,6 +112,10 @@ resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
 }
 ```
 
-Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Looking up in Azure the status would be something like this:
+Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* you will see the following status for the connection we just made from the Web App to the Relay.
 
 ![Not connected](/assets/notconnected.png "Not connected")
+
+It basically says it is *Not Connected* and we need to perform the last step in the configuration.
+
+## The last (and manual) step
