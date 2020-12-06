@@ -11,15 +11,15 @@ links:
     url: https://wcandillon.gitbook.io/redash/
 authors: []
 ---
-Reanimated has been part of the React Native ecosystem for quite some time. It gives developers the opportunity to run animations on the native thread, making the dream of a constant 60 fps not too distant at all. The downside of Reanimated was it's quite difficult to learn API. But this is all about to change with the soon to be released version 2 of this popular library.
+Reanimated has been part of the React Native ecosystem for quite some time. It gives developers the opportunity to run animations on the native thread, making the dream of a constant 60 fps not too distant at all. The downside of Reanimated was it's quite difficult to learn API. A simple calculation like 10 + 8 * 4 would be \`add(10, multiply(8, 4))\`. But this is all about to change with version 2 of Reanimated, currently in its first release candidate.
 
-In version to we write JavaScript. But fear not, the brilliant people of at Software Mansion who are developing this as granted us our very our JS-thread to make sure that we won't be affected by potential obstacles our "normal" JS-code are throwing out there. 
+In the new version we write JavaScript. But fear not, the brilliant people of at Software Mansion who are developing this as granted us our very our JS-thread to make sure that we won't be affected by potential obstacles our "normal" JS-code might be throwing out there. 
 
-Besides us being able to write our animations in JS with a very slick new API, we are also introduced to a few new concepts within the Reanimated sphere. One of these concepts being Worklets.
+Besides us being able to write our animations in JS and a very slick new API, we are also introduced to a few new concepts within the Reanimated sphere. One of these concepts being Worklets.
 
 ## Worklets, you say?
 
-Really, a Worklet is a JS function we define in our code that we can run on the UI thread. Defining a Worklet is as easy as using the "worklet" directive, like so:
+Really, a Worklet is a JS function we define in our code that that gets compiled at runtime to run on its own JS-thread, far and away from React Natives one. Defining a Worklet is as easy as using the "worklet" directive, like so:
 
 ```
 function myWorklet() {
@@ -45,9 +45,9 @@ And to use this in our animation:
 const clampedAnimationValue = clamp(val, 0, 10)
 ```
 
-You might not use worklets frequently while writing Reanimated 2 as quite a lot can be achieved within the hooks provided by the library, this is even [stated by Software Mansion themselves](https://docs.swmansion.com/react-native-reanimated/docs/worklets#using-hooks). But there are definitely use-cases for when to use them.
+You might not use worklets frequently while writing Reanimated 2, as quite a lot can be achieved within the hooks provided by the library, this is even [stated by Software Mansion themselves](https://docs.swmansion.com/react-native-reanimated/docs/worklets#using-hooks). But there are definitely use-cases for when to use them and I've found myself to write a fair few of them to help out when developing an app.
 
-We could take a little peek on [William Candillon's](https://twitter.com/wcandillon) amazing toolbet for Reanimated: [Redash](https://github.com/wcandillon/react-native-redash). Here we'll see a fair few examples of worklets creating to make our day a little easier:
+We could take a little peek on [William Candillon's](https://twitter.com/wcandillon) amazing toolbelt for Reanimated: [Redash](https://github.com/wcandillon/react-native-redash), which by the way I can't recommend enough. Here we'll see a fair few examples of worklets creating to make our day a little easier:
 
 ```
 export function toDeg(rad: number) {
@@ -56,6 +56,29 @@ export function toDeg(rad: number) {
 }
 ```
 
-Just a neat little function to convert radians, which you might be used to work with if you've been using Reanimated 1 previously.
+Just a neat little function to convert radians, which you might be used to work with if you've previously been using Reanimated 1 as it .
 
-In conclusion worklets are a really neat addition to the Reanimated environment. Long gone is the verbose way of writing our animations and the learning curve to implement awesome animations has never been lower.
+Or we can take a look at a slightly more advanced example:
+
+```
+export const interpolateColor = (
+  value: number,
+  inputRange: number[],
+  rawOutputRange: string[],
+  colorSpace: ColorSpace = ColorSpace.RGB
+) => {
+  "worklet";
+  const outputRange = rawOutputRange.map((c) =>
+    typeof c === "number" ? c : processColor(c)
+  );
+  if (colorSpace === ColorSpace.HSV) {
+    return interpolateColorsHSV(value, inputRange, outputRange);
+  }
+  const result = interpolateColorsRGB(value, inputRange, outputRange);
+  return result;
+};
+```
+
+Here we can interpolate colours.  I'm not going to go through the entire thing. But one thing worth noting are the  \`processColor\`, \`interpolateColorsHSV\` and \`interpolateColorsRGB\` functions as these are also worklets. Meaning that worklets can depend on each other and share information between one another.
+
+In conclusion, worklets are neat little helper functions to assist you while animating in Reanimated 2 without having to worry about it being ran on the JS-thread. They're a very nice addition to  the Reanimated environment. Long gone is the verbose way of writing our animations and the learning curve to implement awesome animations has never been lower.
