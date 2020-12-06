@@ -17,7 +17,7 @@ When working with the primitive types in Kotlin, all  operators work in a sensib
 But what about the user defined types. Lets say we have a date class defined as
 
 ```kotlin
-data class MyDate(val year, val month, val day)
+data class MyDate(val year: Number, val month: Number, val day: Number)
 ```
 
 What happens when we try to add two MyDate objects or check for equality? We get an error because we have not defined the operator function for this data class. Operator overloading comes to the rescue. 
@@ -25,10 +25,25 @@ What happens when we try to add two MyDate objects or check for equality? We get
 We can define the operator function for equality as an extension function:
 
 ```kotlin
-fun MyDate.equals(date: MyDate) = 
+operator fun MyDate.equals(date: MyDate) = 
   this.year == date.year && 
   this.month == date.month && 
   this.day == date.day
+```
+
+That's all. Easy, right? The operator function can also be defined as a member function on the data class itself. Let us say we want to be able to check whether a date is within a specific date range or not.
+
+```kotlin
+data class MyDate(
+  val year: Number, 
+  val month: Number, 
+  val day: Number
+){
+ operator fun rangeTo(endDate: MyDate) {
+   val range = M
+   while (endDate != this) 
+ }
+}
 ```
 
 Kotlin allows us to specify how a specific operator should work for user defined types by defining its   
