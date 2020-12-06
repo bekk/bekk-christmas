@@ -13,7 +13,7 @@ description: azure, kubernetes
 authors:
   - Nordine Ben Bachir
 ---
-# The expensive cloud
+# Azure, the expensive cloud
 
 Users are forced into buying “Premium tier” to enable key functionality such as VPC/VNET integration:
 
