@@ -47,7 +47,7 @@ Consequently, many organizations choose to ignore that exposing databases direct
 
 # Automation & Infrastructure as code 
 
-Many years ago, I worked with the Azure Classic deployment model (sometimes referred to as ASM) where automation was extremely limited. In 2015, I switched completely to Azure Resource Manager (ARM) deployment model with PowerShell and JSON templates. Now, five years later, [infrastructure as code](https://martinfowler.com/bliki/InfrastructureAsCode.html) is still a struggle for Azure, [click-ops](https://www.august.com.au/blog/killing-click-ops-what-it-is-why-its-problematic-and-how-to-avoid-it/) is still the standard approach for many organizations. 
+Many years ago, I worked with the Azure Classic deployment model (sometimes referred to as ASM) where automation was extremely limited. In 2015, I switched completely to Azure Resource Manager (ARM) deployment model with PowerShell and JSON templates. Now, five years later, [infrastructure as code](https://martinfowler.com/bliki/InfrastructureAsCode.html) is still a struggle for Azure, [click-ops](https://www.august.com.au/blog/killing-click-ops-what-it-is-why-its-problematic-and-how-to-avoid-it/) seems to be a standard approach for many organizations. 
 
 The tooling (ARM templates, PowerShell, Azure CLI, and now Biceps DSL) is just not good enough. I recommend everybody to adopt Terraform which has much better readability and modularity. In fact, Microsoft uses terraform to create and share landing zones (i.e. infrastructure blueprints) with customers and partners: <https://github.com/Azure/caf-terraform-landingzones>
 
