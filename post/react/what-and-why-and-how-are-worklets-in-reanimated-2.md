@@ -5,7 +5,7 @@ post_day: 7
 title: What and why and how are worklets in Reanimated 2?
 image: https://images.unsplash.com/photo-1576545535503-2b80d4b6d925?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: A brief introduction to Reanimated 2's worklet directive and how it can
-  help us animate.
+  help us animate our apps.
 description: "Worklets in Reanimated 2: What are they?"
 links:
   - title: Reanimated documentation
