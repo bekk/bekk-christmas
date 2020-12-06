@@ -15,7 +15,7 @@ ingress: "Cryptography is the science of hiding information with algorithms
 authors:
   - Gunvor Lemvik
 ---
-The world’s first encryption ciphers often used algorithms that were themselves secret. The intuition that security increases if the encryption details are hidden is a misconception, and is often referred to as _security by obscurity_. The algorithms that dominate the modern era rely on full openness, in accordance with _Kerckhoffs's principle_:
+The world’s first encryption ciphers often used algorithms that were themselves secret. The rather intuitive belief that security increases if the encryption details are hidden is a misconception, and is often referred to as _security by obscurity_. The algorithms that dominate the modern era rely on full openness, in accordance with _Kerckhoffs's principle_:
 > A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.
 
 This transparency allows the rest of the world to attempt to break the cipher. Every failed attempt at breaking a cipher reinforces the belief that it is secure. While there is a chance that someone breaks a cipher and does not report it, there is a far greater chance that a homemade algorithm will be broken easily.
@@ -24,7 +24,7 @@ This transparency allows the rest of the world to attempt to break the cipher. E
 
 Up until 1972 there was no standard cipher for encrypting secret messages. The US _National Bureau of Standards_ (NBS, which later became NIST) started an initiative for finding a single secure algorithm. This was rather revolutionary. The American government had traditionally kept their knowledge of cryptography to themselves - they considered it to be crucial to national security. As a result of the NBS initiative, several ciphers were proposed as candidates for the first encryption standard.
 
-The most promising candidate was contributed by a team of cryptographers working at IBM. They developed a refined version of an earlier encryption cipher called Lucifer, which was first developed by Horst Feistel in the late 1960s. Their candidate was a block cipher with a key size of 128 bits. A block cipher is an algorithm that encrypts several bits at a time, i.e. a _block_ of bits. A sufficiently large key size is necessary for a cipher to withstand brute force attacks, since these attacks generate all possible decryption keys. In context of a brute force attack, one would say that the larger the key size the more robust the cipher.
+The most promising candidate was contributed by a team of cryptographers working at IBM. They developed a refined version of an earlier encryption cipher called Lucifer, which was first developed by Horst Feistel in the late 1960s. Their candidate was a block cipher with a key size of 128 bits. A block cipher is an algorithm that encrypts a block of several bits at a time, as opposed to stream ciphers that encrypts bit by bit. A sufficiently large key size is necessary for a cipher to withstand brute force attacks, since these attacks generate all possible decryption keys. In context of a brute force attack, one would say that the larger the key size the more robust the cipher.
 
 ## Speculation of NSA backdoors
 
