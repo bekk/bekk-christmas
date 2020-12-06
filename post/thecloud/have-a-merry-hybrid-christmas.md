@@ -111,3 +111,7 @@ resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
   port                = var.northpole_hostport  
 }
 ```
+
+Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Looking up in Azure the status would be something like this:
+
+![Not connected](/assets/notconnected.png "Not connected")
