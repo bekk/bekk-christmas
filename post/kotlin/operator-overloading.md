@@ -21,7 +21,7 @@ When working with the primitive types in Kotlin, all  operators work in a sensib
 But what about the user-defined types. Let's say we have a date class defined as
 
 ```kotlin
-data class MyDate(
+data class MyDate (
   val year: Int, 
   val month: Int, 
   val day: Int
