@@ -22,8 +22,7 @@ links:
 authors:
   - Niklas Molnes Hole
 ---
-
-NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
+NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
 
 The NPM library is huge! Some developers have even created a [drinking game](https://npmdrinkinggame.party/) because of this. However, where does these packages come from? And how can I create one? I am glad you asked! To answer this, we have to travel to the NPM package factory at the North Pole and gain Santa's tr... No, but seriously, how are they made?
 
@@ -83,7 +82,12 @@ The most important configuration to note here is the `main` value, which is set 
 
 Side note: *Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your [`node_modules`](https://docs.npmjs.com/cli/v6/configuring-npm/folders#node-modules) folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit).*
 
-To make this file you can either copy the code above into a `package.json` in your folder, or type `npm init` into your terminal (which will guide you when creating the file).
+To make the `package.json` file, you get two choices:
+
+1. Create a file with that name in your package folder. Then copy the code above into it.
+2. Or type `npm init` into your terminal. You will then be prompted with a few questions which results in a generated `package.json` file.
+
+Choose what you feel the most comfortable with.
 
 ### Add some code into your `index.js` file
 
@@ -143,16 +147,16 @@ npm publish
 
 And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>) (you might also get some seconds of fame on the [NPM frontpage](https://www.npmjs.com/) 🤩), as well as adding it to your next project using `npm install --save <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
 
-Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
+Here is also a demo of the [`days-until-christmas`](https://www.npmjs.com/package/days-until-christmas) package from the example which could be worth to check out:
 
-Here is also a demo of the [`days-until-christmas`](https://www.npmjs.com/package/days-until-christmas) package from the example:
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="Days Until Christmas package" src="https://codepen.io/niklasmh/embed/wvzWqgO?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="265" style="width: 100%;" scrolling="no" title="Days Until Christmas package" src="https://codepen.io/niklasmh/embed/wvzWqgO?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/niklasmh/pen/wvzWqgO'>Days Until Christmas package</a> by Niklas Molnes Hole
   (<a href='https://codepen.io/niklasmh'>@niklasmh</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 The source code can be found here: [https://github.com/niklasmh/days-until-christmas](https://github.com/niklasmh/days-until-christmas)
+
+Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
 
 # What to do now
 
