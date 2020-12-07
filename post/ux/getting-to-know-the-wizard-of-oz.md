@@ -22,8 +22,8 @@ Making a voice interface is not easy, and probably expensive. So before you deci
 The good news is that testing it might not be that hard! Instead of actually making a working code to understand and process language, you could just have someone listening with a microphone, writing or doing the commands from the user, pretending to be a machine. Then you would get insights into how “smart” this voice interface have to be, and if it’s actually working as you hoped.
 
 ILLUSTRATION - AØEXA
-<img class="light-theme-image" src="https://i.ibb.co/WP3Hsrd/woz.png" />
-<img class="dark-theme-image" src="https://i.ibb.co/WP3Hsrd/woz.png" />
+<img class="light-theme-image" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" />
+<img class="dark-theme-image" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" />
 
 The Wizard of Oz method is perfect in the situation where functionality is expensive or very difficult to make, but faking it is easy. 
 
@@ -45,8 +45,8 @@ When a month, and probably a half, had gone we launched!
 The product we launched was an office form where you could sign up to get notifications. The notifications were e-mails. One of our developers had to manually check all the responses from the form to see what notifications the user had signed up for. Then register their e-mail address into a very simple* code he had made for the purpose of the prototype. If they wanted to stop the notifications they had to answer the e-mail with “stop” so we could remove them from the code again. 
 
 ILLUSTRATION
-<img class="light-theme-image" src="https://i.ibb.co/WP3Hsrd/woz.png" />
-<img class="dark-theme-image" src="https://i.ibb.co/WP3Hsrd/woz.png" />
+<img class="light-theme-image" src="https://i.ibb.co/SyDZxmC/Woz2.png" />
+<img class="dark-theme-image" src="https://i.ibb.co/SyDZxmC/Woz2.png" />
 
 Our plan was to run this for a month to collect feedback and data. Then use that feedback to actually begin making a “real” notification system. This did not happen. This Wizard of Oz prototype did run for almost a year. So what did go wrong? And what worked? 
 
