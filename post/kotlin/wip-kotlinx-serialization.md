@@ -17,4 +17,8 @@ authors:
 Usikker på om dette er riktig vinkling
 
 Serialization and deserialization is hard, and if used incorrectly you may have just inadvertently introduced a [sneaky bug](https://kotlin.christmas/2020/8) or even a [security flaw](https://www.cvedetails.com/product/42991/Fasterxml-Jackson-databind.html?vendor_id=15866) into your application. 
+
+Java Classes require a custom KSerializer, written by hand.
+
+Adapt Moshi, none of the flaws from gson or jackson, and still typesafe.
 </pre>
