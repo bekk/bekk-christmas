@@ -112,13 +112,13 @@ agesThroughComposeAndMap =
 	List.map (.age >> String.fromInt) users
 ```
 
-In the example above we have a list of users and two constants[^const] that both are a list of the users ages as strings. 
+In the example above we have a list of users and two constants[^const] that both are a list of the users’ ages as strings. 
 
-The first constant, `agesThroughMaps`, is defined using two map operations. The first run passes the `.age` accessor function to `map` and gives us a list of ages (of type `Int`). In the second map operation the `String.fromInt`is used to create a list of the users ages as `String`. 
+The first constant, `agesThroughMaps`, is defined using two map operations. The first run passes the `.age` accessor function to `map` and gives us a list of ages (of type `Int`). In the second map operation the `String.fromInt` is used to create a list of the users’ ages as `String`. 
 
 For the last constant, `agesTthroughMaps`, the list of the users age is created with one map operation where the function passed in to `map` is composed of the `.age` and `fromInt` functions with the compose operator (`>>`). 
 
-And this is the result of the second law: the values in the two constants should be equal. A list of strings: `[‘20’, ‘22’, ‘30’]`
+And this is the result of the second law: the values in the two constants should be equal. A list of strings: `["20", "22", "30"]`
 
 See full example in Ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
 
@@ -126,7 +126,7 @@ See full example in Ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
 
 The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the value/values in it or the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function to and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
 
-With these rules for what constitutes a functor in place the behaviour of functors become predictable. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
+With these rules for what constitutes a functor in place the behavior of functors become predictable. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
 
 [^accessor]: You could use the syntax record.field_name as with JS objects (ex:`user.age`) as well but that does not serve our example that well. :P
 [^composeop]: There is a left compose as well. For our example it would look like: `fromInt << .age` and would create the same function.
