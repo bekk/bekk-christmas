@@ -9,34 +9,34 @@ ingress: A special year is coming to its end, we look back at the pandemic
   is
   [immune](https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/),
   it is still a special year for Santa Claus. This year he began his journey
-  towards the cloud for his on-northpole infrastructure.
+  towards the cloud for his on-north-pole infrastructure.
 links: []
 authors:
   - Espen Ekvang
 ---
 ## The challenge
 
-With a growing number of people on the planet, every year the number of presents to be made by Santa Claus and his elves are increasing. As a consequence Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts, but also the way he and his team maintains, improves and extends the on-northpole infrastructure. An increased number of servers, of course requires more man-hours to maintain and assure everything is working as expected. Moving parts of the infrastructure to the cloud will help him to be prepared for growth and hopefully also free up time from his valuable elves.
+With a growing number of people on the planet, every year the number of presents made by Santa Claus and his elves are increasing. As a consequence Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts, but also the way he and his team maintain, improve and extend the on-north-pole infrastructure. An increased number of servers require more man-hours to maintain and assure everything is working as expected. Moving parts of the infrastructure to the cloud will help him prepare for growth and hopefully also free up time for his valuable elves.
 
-Performing a lift-and-shift operation was not possible for several reasons, hence he wanted to make sure all new work was done in the cloud - but still being able to have existing infrastructure on-northpole - resulting in a hybrid approach.
+Performing a lift-and-shift operation is not possible for several reasons, hence he decided to make sure all new work is done in the cloud - but still being able to have existing infrastructure on-north-pole - resulting in a hybrid approach.
 
-The on-northpole infrastructure consists of mainly windows servers and he chose the cloud platform to be Microsoft Azure. In this post we will look into how he established the connection between Azure and on-northpole to assure data from on-northpole would be available seamlessly in the cloud.
+The on-north-pole infrastructure consists of mainly Windows servers and he chose Microsoft Azure as his cloud platform. In this post we look into how he established the connection between Azure and on-north-pole to assure data from on-north-pole is available seamlessly in the cloud.
 
 ## Azure App Service Hybrid Connection
 
-Santa Claus's resources are not available on the internet, but they are able to make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
+Santa Claus's resources are not available on the Internet, but the servers are can make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
-Santa Claus wants to expose a new API providing information about his elves. The API will be created in the cloud as a Web App, but some of the data needed for the API is only available from servers on-northpole at the moment. To establish this Santa Claus needs:
+Santa Claus wants to expose a new API providing information about his elves. The API should be created in the cloud as a Web App, but some of the data he needs is only available from servers on-north-pole. To establish this Santa Claus needs:
 
 * a Web App to expose the new API in the cloud
-* an [Azure Relay](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) to work as the hybrid connection between on-northpole and the cloud
-* to install the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) on the server on-northpole which holds that data needed for the new API
+* an [Azure Relay](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) to work as the hybrid connection between on-north-pole and the cloud
+* to install the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) on the server on-north-pole 
 
 ![How the hybrid connection works](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
 
 ## Provisioning the infrastructure
 
-Santa Claus is no fan of click-ops, which basically is the process of having manual routines for setting up and maintaining infrastructure. Therefor he chose [Terraform](https://terraform.io) as his infrastructure-as-code tool for provisioning the infrastructure needed for the hybrid connection to be established.
+Santa Claus is no fan of click-ops, which basically is the process of having manual routines for setting up and maintaining infrastructure. Therefore he chose [Terraform](https://terraform.io) as his infrastructure-as-code tool.
 
 ### The Web App
 
@@ -65,7 +65,7 @@ resource "azurerm_app_service" "app_hybrid_christmas" {
 
 ### The Relay
 
-In order to send messages through to on-northpole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
+In order to send messages through to on-north-pole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
 
 ```jsonc
 resource "azurerm_relay_namespace" "sb_northpole" {
@@ -81,7 +81,7 @@ resource "azurerm_relay_namespace" "sb_northpole" {
 }
 ```
 
-The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a combination of host and port number. Below the connection from the relay to the service on-northpole is defined in Terraform.
+The relay is the service bus namespace which can have one or more connections to a host on-north-pole. One connection is bound to a combination of host and port number. Below, the connection from the relay to the service on-north-pole is defined in Terraform.
 
 ```jsonc
 resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
@@ -93,11 +93,11 @@ resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
 }
 ```
 
-An observant eye will see that the tag *user_metadata* contains a key-value-paired JSON holding the host and port number combination on-northpole. This is needed to make the connection valid once established in Azure.
+An observant eye will see that the tag *user_metadata* contains a key-value-paired JSON holding the host and port number combination on-north-pole. Santa needs this to make the connection valid once established in Azure.
 
 ### Connecting the Web App and the Relay
 
-The last step to be done is to create a hybrid connection between the Web App and the Relay. According to the documentation this can be done using the following Terraform:
+Santa creates a hybrid connection between the Web App and the Relay as the last step. According to the documentation this can be done using the following Terraform:
 
 ```jsonc
 resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
@@ -109,7 +109,7 @@ resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
 }
 ```
 
-Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. 
+Santa runs it and it completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay, which is configured to talk to on-north-pole. 
 
 Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* Santa Claus sees the following status for the connection he just made from the Web App to the Relay.
 
@@ -131,6 +131,6 @@ Manually adding the hybrid connection from the Web App towards the Relay solves 
 
 ## Conclusion
 
-Using Azure Hybrid Connections and Terraform Santa Claus and his team is able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, they manage to expose data from on-northpole and they have successfully started their cloud journey - whether the hybrid connection will remain as part of their infrastructure or not we'll have to see next Christmas. 
+Using Azure Hybrid Connections and Terraform Santa Claus and his team is able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, they manage to expose data from on-north-pole and they have successfully started their cloud journey - whether the hybrid connection will remain as part of their infrastructure or not we'll have to see next Christmas. 
 
 The complete Terraform for this can be found in the repository [here](https://github.com/espenekvang/hybrid-christmas).
