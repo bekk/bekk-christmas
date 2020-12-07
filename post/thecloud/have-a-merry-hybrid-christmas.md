@@ -18,7 +18,7 @@ authors:
 
 With a growing number of people on the planet, every year the number of presents made by Santa Claus and his elves are increasing. As a consequence Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts, but also the way he and his team maintain, improve and extend the on-north-pole infrastructure. An increased number of servers require more man-hours to maintain and assure everything is working as expected. Moving parts of the infrastructure to the cloud will help him prepare for growth and hopefully also free up time for his valuable elves.
 
-Performing a lift-and-shift operation is not possible for several reasons, hence he decided to make sure all new work is done in the cloud - but still being able to have existing infrastructure on-north-pole - resulting in a hybrid approach.
+Performing a [lift-and-shift](https://www.netapp.com/knowledge-center/what-is-lift-and-shift/) operation is not possible for several reasons, hence he decided to make sure all new work is done in the cloud - but still being able to have existing infrastructure on-north-pole - resulting in a hybrid approach.
 
 The on-north-pole infrastructure consists of mainly Windows servers and he chose Microsoft Azure as his cloud platform. In this post we look into how he established the connection between Azure and on-north-pole to assure data from on-north-pole is available seamlessly in the cloud.
 
