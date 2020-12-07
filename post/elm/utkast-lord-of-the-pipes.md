@@ -9,7 +9,7 @@ ingress: If the bulk of your programming experience comes from C-like languages,
   features of Elm. Fold up your heels and dig your sleeves in, it's time to
   master the art of piping.
 ---
-If C-like languages form the bulk of your programming experience, there’s a chance you find pipes, `|>`and `<|` to be some of the most distinct features of Elm. Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm. They have the role of operators in Elm and they control function application. 
+Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm. They have the role of operators in Elm and they control function application. 
 
 Below is one way of calculating the sum of the n first natural numbers `( 1 + 2 + 3 + .. n = ? )`
 
