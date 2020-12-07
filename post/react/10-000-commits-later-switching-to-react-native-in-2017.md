@@ -4,44 +4,26 @@ post_year: 2020
 post_day: 8
 title: 10,000 Commits Later - Switching to React Native in 2017
 image: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
-ingress: >-
-  Back in 2017, my team were working on a feature-packed, widely used mobile app
-  with a legacy codebase. The app had way too much logic, logic of the complex
-  sort, with loads of very old code calling old APIs. Build times were terrible.
-  Noone had a complete understanding of the code. 
-
-
-
-
-  To make matters worse: the company behind the app were in the middle of a perfect storm. The business was being changed by regulation. The core business idea were changing. This meant large changes coming to the digital side, including the app.
-
-
-
-
-  Naturally, we had quite mixed feelings about our ability to meet delivery expectations from the business side, given the bad state of the app codebase. We were at a crossroads, and felt we had to pick one of the following:
-
-
-
-
-  1. Negotiate a feature timeout while we frantically renovate the core code, or
-
-  2. Start a long-term migration plan towards a hybrid app, or
-
-  3. Write new features in React Native and eventually move all the JS code over to a new app shell
-
-
-
-
-  We decided to try out React Native. Roughly three years later, the app is now 100% JavaScript. The big business transformation has come a long way, and I’ve experienced that React Native as a technology has played a key role in that success.
-
-
-
-
-  This article contains some reflections on *why* switching from pure native technologies to React Native worked so well for us.
+ingress: Back in 2017, my team were working on a feature-packed, widely used
+  mobile app with a legacy codebase. The app had way too much logic, logic of
+  the complex sort, with loads of very old code calling old APIs. Build times
+  were terrible. Noone had a complete understanding of the code.
 description: react-native
 authors:
   - Erik Wendel
 ---
+To make matters worse: the company behind the app were in the middle of a perfect storm. The business was being changed by regulation. The core business idea were changing. This meant large changes coming to the digital side, including the app.
+
+Naturally, we had quite mixed feelings about our ability to meet delivery expectations from the business side, given the bad state of the app codebase. We were at a crossroads, and felt we had to pick one of the following:
+
+1. Negotiate a feature timeout while we frantically renovate the core code, or
+2. Start a long-term migration plan towards a hybrid app, or
+3. Write new features in React Native and eventually move all the JS code over to a new app shell
+
+We decided to try out React Native. Roughly three years later, the app is now 100% JavaScript. The big business transformation has come a long way, and I’ve experienced that React Native as a technology has played a key role in that success.
+
+This article contains some reflections on *why* switching from pure native technologies to React Native worked so well for us.
+
 ## Starting Out Small Felt Really Safe
 
 We gave React Natives two tests. First, we wrote a small feature with a few developers. Futhermore, we did a larger, several-month feature where the entire team participated. A critical part of the tests was making sure that React Native would work as the small cogwheel it would necessarily start out as, inside of the large legacy app monster.
