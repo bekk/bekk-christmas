@@ -3,7 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 11
 title: Lord of the pipes
-image: https://source.unsplash.com/_R95VMWyn7A/2000x800
+image: https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=2000&h=800&fit=crop
 ingress: If the bulk of your programming experience comes from C-like languages,
   there’s a chance you find pipes, `|>`and `<|` some of the most distinct
   features of Elm. Fold up your heels and dig your sleeves in, it's time to
