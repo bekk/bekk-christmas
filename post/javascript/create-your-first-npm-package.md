@@ -22,7 +22,7 @@ links:
 authors:
   - Niklas Molnes Hole
 ---
-NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
+NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
 
 The NPM library is huge! Some developers have even created a [drinking game](https://npmdrinkinggame.party/) because of this. However, where does these packages come from? And how can I create one? I am glad you asked! To answer this, we have to travel to the NPM package factory at the North Pole and gain Santa's tr... No, but seriously, how are they made?
 
@@ -78,14 +78,9 @@ In every NPM project, there exists a file called `package.json`:
 
 This is necessary as it first of all gives a `name` to your package. Secondly, it contains information about the `version` of the project - such that users of this package can ensure they are using the correct version. You can find information of all the configurations [here](https://docs.npmjs.com/cli/v6/configuring-npm/package-json).
 
-The most important configuration to note here is the `main` value, which is set to `index.js`. `index.js` will now be the entry file for the NPM package, meaning this is where you need to **place your code**. You can add more files later, but the entry file will always be the heart of your package.
+The most important configuration to note here is the `main` value, which is set to `index.js`. `index.js` will now act as the entry file for the NPM package, meaning this is where you need to **place your code**. You can add more files later, but the entry file will always be the heart of your package and all other files needs to be connected to this file somehow.
 
-<details>
-<summary>Side note about `dependencies`</summary>
-
-_Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your `node\_modules` folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit)._
-
-</details>
+Side note: _Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your [`node_modules`](https://docs.npmjs.com/cli/v6/configuring-npm/folders#node-modules) folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit)._
 
 To make this file you can either copy the code above into a `package.json` in your folder, or type `npm init` into your terminal (which will guide you when creating the file).
 
