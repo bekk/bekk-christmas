@@ -34,7 +34,7 @@ I’m glad you asked, friend! In the course, I’ll show you the layout and feat
 
 # So, where do I begin?
 
-[Download the file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) and import it into Figma. Then it’s just a matter of opening the file and we’re off!
+You can either duplicate the file from [Figma Community](https://www.figma.com/community/file/917793002372330875) or [download the file](https://www.dropbox.com/s/kwjs6u4wis28dqc/Figma%20101.fig?dl=0) and import it to Figma. Then it’s just a matter of opening the file and we’re off!
 
 If you don’t know how to import files into Figma yet, don’t worry! Our good friends over at Figma have put together an easy tutorial for just that right [here](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma).
 
