@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 11
 title: Operator Overloading
+ingress: ""
 authors:
   - Eivind Reime
 ---
@@ -31,35 +32,28 @@ operator fun MyDate.equals(date: MyDate) =
   this.day == date.day
 ```
 
-That's all. Easy, right? The operator function can also be defined as a member function on the data class itself. Let us say we want to be able to check whether a date is within a specific date range or not.
+That's all. Easy, right? The operator function can also be defined as a member function on the data class itself. Let us say we want to be able to check whether a `House` is smaller or bigger compared to another `House`, we could write is as follows:
 
 ```kotlin
-data class MyDate(
-  val year: Number, 
-  val month: Number, 
-  val day: Number
-){
- operator fun rangeTo(endDate: MyDate) {
-   val range = M
-   while (endDate != this) 
- }
+data class House (
+        val size: Int,
+        val numOfBedrooms: Int,
+        val numOfBathrooms: Int,
+        val garage: Boolean
+) {
+    operator fun compareTo(other: House): Int {
+        if (this.size < other.size) {
+            return -1
+         } else if (this.size == other.size) {
+            return 0
+        }
+        return 1
+    }
+}
+
+val myHouse = House(122, 4, 2, true)
+val neighboursHouse = House(157, 3, 3, true)
+
+print(myHouse < neighboursHouse) // true
 }
 ```
-
-Kotlin allows us to specify how a specific operator should work for user defined types by defining its   
-
-What’s an operator? What kinds?
-
-What’s overloading?
-
-What operators can be overloaded?
-
-Examples
-
-Date in Date..Date
-
-Date - Date = number of days between
-
-Team + TeamMember
-
-x in 4..10
