@@ -71,7 +71,7 @@ document.body.appendChild(component());
 ...
 ```
 
-Now if we call our javascript code from an inline script in the html file, we can display some text.
+Now if we call our JavaScript code from an inline script in the html file, we can display some text.
 
 Cool, but we can do better!
 
