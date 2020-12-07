@@ -4,12 +4,8 @@ post_year: 2020
 post_day: 16
 title: Hvorfor starter folk egentlig flyselskaper?
 image: https://images.unsplash.com/photo-1601236747895-291942f625b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZsaWdodHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
-ingress: >-
-  *«If you want to be a millionaire, start with a billion dollars and launch a
-  new airline.”*
-
-
-  – Richard Branson
+ingress: "*«If you want to be a millionaire, start with a billion dollars and
+  launch a new airline.*»"
 links:
   - url: https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy
     title: The Five Competitive Forces That Shape Strategy (Porter, 2008)
@@ -19,7 +15,9 @@ links:
 authors:
   - Jonas Løvås
 ---
-Fra Richard Branson og Bjørn Kjos til Erik Braathen – gründere og kapitalsterke investorer har gjennom tidene tatt den store utfordringen det er å etablere et flyselskap, til tross for at det er en bransje med lav lønnsomhet og høy risiko. Hvorfor starter folk egentlig flyselskaper? 
+– Richard Branson
+
+**Fra Richard Branson og Bjørn Kjos til Erik Braathen – gründere og kapitalsterke investorer har gjennom tidene tatt den store utfordringen det er å etablere et flyselskap, til tross for at det er en bransje med lav lønnsomhet og høy risiko. Hvorfor starter folk egentlig flyselskaper?** 
 
 ![](/assets/capture.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
 
