@@ -20,11 +20,11 @@ With a growing number of people on the planet, every year the number of presents
 
 Performing a [lift-and-shift](https://www.netapp.com/knowledge-center/what-is-lift-and-shift/) migration is not possible for several reasons so he decided to adopt a hybrid approach. All new work is developed in the cloud while his existing infrastructure on-north-pole continues to support the legacy software.
 
-The on-north-pole infrastructure consists of mainly Windows servers and he chose Microsoft Azure as his cloud platform. In this post we look into how he established the connection between Azure and on-north-pole to assure data from on-north-pole is available seamlessly in the cloud.
+The on-north-pole infrastructure consists of mainly Windows servers and he chose Microsoft Azure as his cloud platform. In this post we look into how he established the connection between Azure and on-north-pole to ensure data from on-north-pole is available seamlessly in the cloud.
 
 ## Azure App Service Hybrid Connection
 
-Santa Claus's resources are not available on the Internet, but the servers are can make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
+Santa Claus's resources are not available on the Internet, but the servers can make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
 Santa Claus wants to expose a new API providing information about his elves. The API should be created in the cloud as a Web App, but some of the data he needs is only available from servers on-north-pole. To establish this Santa Claus needs:
 
