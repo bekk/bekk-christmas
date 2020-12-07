@@ -156,8 +156,3 @@ Cloud Composer / Airflow is a very powerful tool, but it might not be the right 
 * Self hosting is always an option.
 * Combining managed services such as Cloud Scheduler and Cloud Functions (or similar services from other cloud providers)
 * Kubernetes CronJobs
-
-## Links
-
-* AWS Managed Airflow
-*
