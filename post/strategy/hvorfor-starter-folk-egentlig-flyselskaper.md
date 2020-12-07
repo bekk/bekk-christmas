@@ -25,6 +25,7 @@ authors:
 ---
 ![](/assets/capture.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
 
+![](/assets/Flybransjen.jpg)
 
 ### Ting du burde tenke på hvis du vurderer å starte et flyselskap
 
