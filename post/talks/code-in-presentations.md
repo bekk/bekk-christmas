@@ -6,22 +6,22 @@ title: Code in presentations
 ingress: At Bekk we do a lot of sharing, both internally and at conferences.
   Being a tech-company it is inevitable that we will have to show code in our
   presentations at some point, which often leads to the question; how do I make
-  code look good in my presentations?
+  my code look good in presentations?
 authors:
   - Håvard Hvassing
 ---
-Manually formatting your code to make it look good is not really a viable option of you are thinking of adding more than a select few lines of code. Even then colour coding is going to be a pain.
+Formatting your code by hand to make it look good is not a viable option if you are thinking of adding more than a few lines of code. And even with just a few lines, colour coding is going to be a pain.
 
-Possibly the easiest way, is simply making a screenshot of the bit of code you need. This will, however, be somewhat cumbersome if you have to make edits to your code and might result in different font sizes and other oddities. 
+The easiest way is to take a screenshot of the bit of code you need. This convenience comes with certain trade-offs, such as different font sizes between images, scaling and other oddities. 
 
 ## Enter Visual Studio Code
 
-What seems to be the best way, is copying the code directly from Visual Studio Code and pasting it into your presentation. 
+What seems to be the best way, is copying the code directly from [Visual Studio Code](https://code.visualstudio.com) and pasting it into your presentation. 
 In Visual Studio Code, press `F1` to find your keyboard shortcuts, and search for `@command:editor.action.clipboardCopyWithSyntaxHighlightingAction`(or start typing “CopyWith” and it should appear). This will, as the name suggests, copy editor text with syntax highlighted to your clipboard.
 
+![Enable Copy with syntax highlighting in Visual Sudio Code](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/VisualStudioCopyWithFormatting.png)
+
 Assign a keybinding to it, like `Cmd+Shift+C` and you are ready to copying code with proper formatting. Back in your presentation tool of choice, you can simply paste your code and hey’presto there it is in all its colour coded glory. Or close enough. In the image below you can see the difference between code pasted into PowerPoint and Keynote. 
-
-
 
 ![Code pasted from Visual Studio in a side-by-side comparison between PowerPoint and Keynote ](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/Code%20in%20presentations%20-%20Visual%20Studio.png)
 
@@ -33,14 +33,22 @@ Sublime 3 has the same type of support using one of the many highlighting packag
 
 There should be a number of options to chose from. The first candidate lets you copy colour coded syntax either as rich text or as HTML. Simply select the code and right click to access the two options. 
 
-
-
 ![Code pasted from Sublime3 in a side-by-side comparison between PowerPoint and Keynote ](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/Code%20in%20presentations%20-%20Sublime.png)
 
 PowerPoint disregarded the new lines, but the code is coloured correctly. 
 
-## For the invested ones
+## Taking it up a notch
 
-If you really want to control the output of your code or you intend to turn heaps of code into presentations, Pandoc might be the tool for you. 
+If you really want to control the output of your code or you intend to turn use markdown to write your presentations, [Pandoc](https://pandoc.org) is the tool for you. 
 
-Converting code to presentations is as easy as  `pandoc -o presentation.pptx code.md`. As with most command line tools, that’s just the tip of the iceberg. Pandoc is an immensely powerful tool for converting text and documents into a variety of different formats.
+Converting code to presentations is as easy as  `pandoc -o presentation.pptx code.md`. This will convert a Markdown formatted document (`code.md`) into a PowerPoint document (`presentation.pptx`). 
+
+As with most command line tools, that’s just the tip of the iceberg. Pandoc is an immensely powerful tool for converting text and documents into a variety of different formats. Pandoc allows you to write your entire presentation as Markdown, with code included. 
+![Markdown document with a heading and code block](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/VisualStudioCodeMarkdownDocument.png)
+
+This document can then be parsed using the following command: `pandoc -o presentation.pptx code.md`
+
+Which should result in somehing like this:
+![PowerPoint created by converting Markdown with Pandoc](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/PandocConvertedMarkdown.png)
+
+It's not perfect right out of the box, but with minimal effort your slides and code will look the part.
