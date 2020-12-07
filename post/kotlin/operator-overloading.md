@@ -16,9 +16,9 @@ From Wikipedia:
 
 The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, and they are widely used in all sorts of programming languages. But these are only a few of all the operators defined in Kotlin (for a full list of Kotlin operators, take a look at the official documentation [here](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)). All operators have a fixed symbolic representation, such as `+` and `-`, and a function with a fixed name that specifies its functionality. For `-` it's `minus()` and for `..` it's `rangeTo()`. 
 
-When working with the primitive types in Kotlin, all  operators work in a sensible way. We can write `2 + 2` and Kotlin calculates the sum 4 and we can compare strings with an equality operator `"myfantasticstring" == "myfantasticstring"`. 
+When working with the primitive types in Kotlin, all operators work in a sensible way. We can for example write `2 + 2` and Kotlin calculates the sum 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
 
-But what about the user-defined types. Let's say we have a simple date class defined as
+But what about the user-defined types? Let's say we have a simple date class defined as
 
 ```kotlin
 data class MyDate (
