@@ -2,11 +2,11 @@
 calendar: talks
 post_year: 2020
 post_day: 8
-title: Code in presentations
-ingress: At Bekk we do a lot of sharing, both internally and at conferences.
-  Being a tech-company it is inevitable that we will have to show code in our
-  presentations at some point, which often leads to the question; how do I make
-  my code look good in presentations?
+title: Showing code in presentations
+ingress: Showing the audience a snippet of code can be an easy way of getting a
+  complex concept across. Bekk being a tech-company it is inevitable that we
+  will have to show code in our presentations at some point, which often leads
+  to the question; how do I make my code look good?
 authors:
   - Håvard Hvassing
 ---
