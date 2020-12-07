@@ -20,7 +20,7 @@ As an evolutionary biologist who’s been fortunate to appear on some tv- and ra
 
 ### Mismatch
 
-Evolution is a very slow design process as it takes many generations for even the most important adaptations to become a part of our nature. Even fundamental traits like [being able to digest a new easily available energy source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048992/) will take one hundred thousand years to become common. (URL: )
+Evolution is a very slow design process as it takes many generations for even the most important adaptations to become a part of our nature. Even fundamental traits like [being able to digest a new easily available energy source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048992/) will take one hundred thousand years to become common. 
 As a result, our emotions are not perfectly designed to reflect how dangerous a situation really is in modern life.
 Speaking up in front of an audience is not a matter of life and death. Not now.. but it probably was in most of our earlier history. And because evolution takes ages to redesign us to match this new reality, “stage fright” is still part of our psychological wiring.
 
@@ -31,7 +31,9 @@ One of my favorite recent scientific discoveries highlight just how extremely wi
 
 ### The Brain’s default mode network
 
-For several decades scientists have used MRI-machines to study how different areas in the brain get activated when a person is given a specific task. Some areas, aka “language centers”, light up when the research subject is asked to speak or read. Other areas are activated when solving math problems or listening to Beethoven. But what happens in the brain when a person is resting? Does the brain deactivate?\
+For several decades scientists have used MRI-machines to study how different areas in the brain get activated when a person is given a specific task. Some areas, aka “language centers”, light up when the research subject is asked to speak or read. Other areas are activated when solving math problems or listening to Beethoven. 
+
+But what happens in the brain when a person is resting? Does the brain deactivate?\
 \
 Some researchers continued the scan after telling the person in the MRI-machine to relax. What they found was that other areas in the brain lit up.
 It turned out that this was not some random brain activity, but areas that are active in most people when they relax and do nothing. It’s like a default state that the brain returns to after finishing work. Because of this it was called [“The Brain’s default mode network”](<### https://en.wikipedia.org/wiki/Default_mode_network>) and thought to be like a screensaver that keeps the brain healthy until it gets something useful to do again.
