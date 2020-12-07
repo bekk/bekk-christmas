@@ -27,7 +27,7 @@ Another thing about documentation, is that it needs to be readily available when
 
 Luckily, there's a solution that makes all of this possible, and it's built into your favorite editors: JSDoc.
 
-Before we dive into what JSDoc is the bees knees though, let's look at how a component documented with JSDoc looks like when it's used:
+Before we dive into why JSDoc is the bees knees though, let's look at how a component documented with JSDoc looks like when it's used:
 
 ![A screencast showing how JSDoc will show up in your editor when you use a React component](https://s8.gifyu.com/images/2020-12-03-20.57.09.gif)
 
@@ -41,7 +41,7 @@ My favorite example from "the wild" is Firebase's JavaScript SDK - they have ton
 
 ## How to JSDoc
 
-So how do you make this magic text to show up whenever people use your code? It's as easy as `/**`/.
+So how do you make this magic text to show up whenever people use your code? It's as easy as `/**/`.
 
 Let's start with an example React component:
 
@@ -65,7 +65,7 @@ const MessageBox = (props) => {
 
 If you ever use your `MessageBox` component, that text will show up right when you need it - that is, when you're using it.
 
-Note that this block has **full support for markdown**, so you can add formatting like code highlighting, text formatting and even images(!) that'll show up when you need it most.
+Note that this block has **full support for markdown**, so you can add formatting like code highlighting, links, tables, text formatting and even images if you want.
 
 Next, let's document those props! It uses the same slash and double star syntax, and supports the same Markdown:
 
