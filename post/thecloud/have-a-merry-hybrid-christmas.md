@@ -25,17 +25,15 @@ The on-northpole infrastructure consists of mainly windows servers and he chose 
 
 ## Azure App Service Hybrid Connection
 
-Santa Claus's resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - making them a candidate for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. The illustration below is taken from the documentation, as shown in the illustration there are few moving parts and it is quick and easy to set up.
+Santa Claus's resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
 Santa Claus want to expose a new API providing information about his elves. The API will be created in the cloud as a Web App, but some of the data needed for the API is only available from servers on-northpole at the moment. To establish this Santa Claus needs:
 
 * a Web App to expose the new API in the cloud
 * an [Azure Relay](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) to work as the hybrid connection between on-northpole and the cloud
-* to install the Hybrid Connection Manager on the server on-northpole which holds that data needed for the new API
+* to install the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) on the server on-northpole which holds that data needed for the new API
 
-These three parts are illustrated in the figure below taken from the documentation of Azure App Service Hybrid Connection.
-
-![](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
+![How the hybrid connection works](/assets/hybridconn-connectiondiagram.png "How the hybrid connection works")
 
 ## Provisioning the infrastructure
 
@@ -68,7 +66,7 @@ resource "azurerm_app_service" "app_hybrid_christmas" {
 
 ### The Relay
 
-In order to send messages through to on-northpole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user, he needs to provision this relay.
+In order to send messages through to on-northpole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
 
 ```jsonc
 resource "azurerm_relay_namespace" "sb_northpole" {
@@ -84,7 +82,7 @@ resource "azurerm_relay_namespace" "sb_northpole" {
 }
 ```
 
-The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a host and port number combination. Below the connection from the relay to the service on-northpole is defined in Terraform.
+The relay is the service bus namespace which can have one or more connections to a host on-northpole in this case. One connection is bound to a combination of host and port number. Below the connection from the relay to the service on-northpole is defined in Terraform.
 
 ```jsonc
 resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
@@ -96,7 +94,7 @@ resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
 }
 ```
 
-It is worth making note of the fact that Santa Claus is specifying a JSON inside the *user_metadata* tag. This is needed to make the connection valid once established in Azure.
+An observant eye will see that the tag *user_metadata* contains a key-value-paired JSON holding the host and port number combination on-northpole. This is needed to make the connection valid once established in Azure.
 
 ### Connecting the Web App and the Relay
 
@@ -112,11 +110,13 @@ resource "azurerm_app_service_hybrid_connection" "hcn_app_connection" {
 }
 ```
 
-Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* Santa Claus sees the following status for the connection he just made from the Web App to the Relay.
+Running this completes successfully and everything seems to work as intended. Now the infrastructure is established with the Web App talking to the Relay which is configured to talk to on-northpole. 
+
+Navigating into Azure and to the newly created Web App, select *Networking* in the side menu followed by *Configure your hybrid connection endpoints* Santa Claus sees the following status for the connection he just made from the Web App to the Relay.
 
 ![Not connected](/assets/notconnected.png "Not connected")
 
-It basically says it is *Not Connected* and he needs to perform the last step in the configuration.
+It basically says it is *Not Connected* and he needs to perform the last step in the hybrid connection configuration.
 
 ## The last (and manual) step
 
@@ -124,9 +124,11 @@ Finally, to make the outbound connection to Azure, Santa Claus had to download t
 
 ![No endpoint configured](/assets/notconfigured.png "No endpoint configured")
 
-With this error it is not possible to connect to Azure and after some research it turns out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using https://portal.azure.com on the Web App itself.
+With this error it is not possible to connect to Azure, and after some research it turned out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using <https://portal.azure.com> on the Web App itself.
 
-Manually adding the hybrid connection on the Web App towards the Relay solves the endpoint configuration failure, consequently allowing the Hybrid Connection Manager to establish the connection towards Azure.
+![Manually adding a hybrid connection from the web app](/assets/newconnection.png "Manually adding a hybrid connection from the web app")
+
+Manually adding the hybrid connection from the Web App towards the Relay solves the endpoint configuration failure, consequently allowing the Hybrid Connection Manager to establish the connection towards Azure.
 
 ## Conclusion
 
