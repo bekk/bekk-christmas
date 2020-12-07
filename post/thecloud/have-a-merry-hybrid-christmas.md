@@ -17,15 +17,15 @@ authors:
 ---
 ## The challenge
 
-With a growing number of people on the planet, every year the number of presents to be made by Santa Claus and his elves are increasing. Consequently Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts but also the way he and his team maintains, improves and extends the on-northpole infrastructure. An increased number of servers, of course requires more man hours to maintain and assure that everything is working as expected. Moving parts of this to the cloud will help him be prepared for growth and hopefully also free up time from his valuable elves.
+With a growing number of people on the planet, every year the number of presents to be made by Santa Claus and his elves are increasing. As a consquence Santa Claus needs to improve his efficiency, not just the way he produces content for all the gifts, but also the way he and his team maintains, improves and extends the on-northpole infrastructure. An increased number of servers, of course requires more man-hours to maintain and assure everything is working as expected. Moving parts of the infrastructure to the cloud will help him to be prepared for growth and hopefully also free up time from his valuable elves.
 
-Performing a lift-and-shift operation was not possible for several reasons, hence he wanted to make sure all new work was done in the cloud - but still being able to have existing infrastructure on-northpole - making up a hybrid approach.
+Performing a lift-and-shift operation was not possible for several reasons, hence he wanted to make sure all new work was done in the cloud - but still being able to have existing infrastructure on-northpole - resulting in a hybrid approach.
 
-The on-northpole infrastructure consists of mainly windows servers and he chose the cloud platform to be Micrsoft Azure. In this post we will look into how he established the connection between Azure and on-northpole to assure data from on-northpole would be available seemlessly in the cloud.
+The on-northpole infrastructure consists of mainly windows servers and he chose the cloud platform to be Micrsoft Azure. In this post we will look into how he established the connection between Azure and on-northpole to assure data from on-northpole would be available seamlessly in the cloud.
 
 ## Azure App Service Hybrid Connection
 
-Santa Claus resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - making them a candidate for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. The illustration below is taken from the documentation, as shown in the illustration there are few moving parts and it is quick and easy to set up.
+Santa Claus's resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - making them a candidate for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. The illustration below is taken from the documentation, as shown in the illustration there are few moving parts and it is quick and easy to set up.
 
 Santa Claus want to expose a new API providing information about his elves. The API will be created in the cloud as a Web App, but some of the data needed for the API is only available from servers on-northpole at the moment. To establish this Santa Claus needs:
 
