@@ -22,8 +22,7 @@ links:
 authors:
   - Niklas Molnes Hole
 ---
-
-NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
+NPM, or Node Package Manager, is a software "library" where JavaScript developers can browse and find handy tools for their projects. These tools - or packages, to be more precise - could be frontend libraries (like [`react`][react]), a bunch of useful algorithms (like [`lodash`][lodash]), or command line tool enhancers (like [`chalk`][chalk] - actually made by a [Norwegian NPM legend](https://github.com/sindresorhus)).
 
 The NPM library is huge! Some developers have even created a [drinking game](https://npmdrinkinggame.party/) because of this. However, where does these packages come from? And how can I create one? I am glad you asked! To answer this, we have to travel to the NPM package factory at the North Pole and gain Santa's tr... No, but seriously, how are they made?
 
@@ -72,40 +71,46 @@ In every NPM project, there exists a file called `package.json`:
   "scripts": {},
   "dependencies": {},
   "keywords": [],
-  "author": "🎅 <santa@javascript.christmas>",
+  "author": "🎅 <santa@javascript.christmas> (https://javascript.christmas)",
   "license": "MIT"
 }
 ```
 
 This is necessary as it first of all gives a `name` to your package. Secondly, it contains information about the `version` of the project - such that users of this package can ensure they are using the correct version. You can find information of all the configurations [here](https://docs.npmjs.com/cli/v6/configuring-npm/package-json).
 
-The most important configuration to note here is the `main` value which is set to `index.js`. `index.js` will now be the entry file for the NPM package, meaning this is where you need to **place your code**. You can add more files later, but the entry file will always be the heart of your package.
+The most important configuration to note here is the `main` value, which is set to `index.js`. `index.js` will now be the entry file for the NPM package, meaning this is where you need to **place your code**. You can add more files later, but the entry file will always be the heart of your package.
 
-Side note: _Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your `node_modules` folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit)._
+<details>
+<summary>Side note about `dependencies`</summary>
 
-<!-- Skrive kort om hvordan man lager den -->
+_Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your `node\_modules` folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit)._
 
-This was much information! Lets do something. Type this into your terminal:
+</details>
 
-```bash
-npm init
+To make this file you can either copy the code above into a `package.json` in your folder, or type `npm init` into your terminal (which will guide you when creating the file).
+
+### Add some code into your `index.js` file
+
+At last, you need to add some JavaScript code to your package that other projects can use. In this tutorial, we are making a package that can calculate days until christmas.
+
+```javascript
+// Content of the index.js file
+function daysUntilChristmas() {
+  const timeInADay = 24 * 60 * 60 * 1000;
+  const now = new Date();
+  const thisYear = now.getFullYear();
+  const dateOfChristmas = new Date(thisYear, 11, 24).getTime();
+  return Math.ceil((dateOfChristmas - now) / timeInADay);
+}
+
+module.exports = daysUntilChristmas;
 ```
 
-You will now be prompted with a lot of questions. Usually you are good with the default values, and **all the values can be changed later**, so you can mostly just hit the `Enter ↵` button with no input, like this:
-
-<!-- Gif -->
-
-### Create something!!!
-
-At last, you need to add some code to your project. In this tutorial, we are making a package that can calculate the days until christmas - in case you need to be reminded of this:
-
-### ARE WE DONE ALREADY?!
-
-There is one more step! Bare with me:
+The last line will make the function `daysUntilChristmas` accessible by those who want to use your package. Be sure to remember to include this!
 
 ## Publishing your package to NPM
 
-This is the fun part. When you are ready to test your package, or actually release it, you will need to go through these steps:
+When you are ready to test your package, or actually release it, you will need to go through these steps:
 
 ### 1. Create a user on NPM and log in
 
@@ -140,6 +145,8 @@ npm publish
 And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>) (you might also get some seconds of fame on the [NPM frontpage](https://www.npmjs.com/) 🤩), as well as adding it to your next project using `npm install --save <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
 
 Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
+
+# Test out your package
 
 # What to do now
 
