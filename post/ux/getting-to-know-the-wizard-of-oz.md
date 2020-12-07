@@ -27,6 +27,7 @@ The Wizard of Oz method is perfect in the situation where functionality is expen
 
 The name “Wizard of Oz”  is a reference to the book *The Wonderful Wizard of Oz* written by author L. Frank Baum in 1900 (and the iconic 1939 live-action film). Where a man hides behind a curtain pretending to be a mighty wizard by using different methods of changing his voice and projecting himself as a huge green head. 
 
+<p>&nbsp;</p>
 ## So lest try this method!
 We got the task of making a notification system for a register we're responsible to maintain and develop. This register contains a lot of data collected from many different sources and the only way a user can find out if any of the data is changed is actually to search for it and look around. So our goal was to make the register more active in telling the user when something had changed. 
 
