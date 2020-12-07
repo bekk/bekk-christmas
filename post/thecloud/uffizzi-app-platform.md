@@ -35,7 +35,7 @@ Uffizzi watches our Github repository and automatically builds and deploys chang
 
 # Custom Domain
 
-Uffizzi is one of the few platforms that offer custom domains + SSL as a part of its free offering. It's always annoying to have to use Cloudflare or AWS Cloudfront on top of a website just to solve that problem. 
+Uffizzi is one of the few platforms that offers custom domains + SSL as a part of its free offering. It's always annoying to have to use Cloudflare or AWS Cloudfront on top of a website just to solve that problem. You got kudos for that, Uffizi.
 
 # Conclusion
 
