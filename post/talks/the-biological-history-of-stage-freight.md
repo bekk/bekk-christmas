@@ -41,6 +41,7 @@ It turned out that this was not some random brain activity, but areas that are a
 Only recently have neuroscientists discovered that the [default mode network overlaps almost perfectly with the brain areas that get active when people think about their social relationships](https://www.researchgate.net/publication/228071925_On_the_relationship_between_the_Default_Mode_Network_and_the_Social_Brain).
 
 This is mindblowing. Literally.
+
 Instead of going to a default “screensaver” when there is nothing better to do, our brain spends as much time as it can to think about other people. We simulate complex social relationships whenever we can. “What would he do if I said..”, “what if she knew, that I know..”, “how can I get back at that guy who told everyone that…”.
 This is what we, as humans, are designed to do when we relax. 
 
