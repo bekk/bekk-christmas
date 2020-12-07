@@ -9,9 +9,7 @@ ingress: 2020 has been, and still is, a special year for us because of the
   [immune](https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/),
   2020 has been a special year also for Santa Claus. This year he begun his
   journey towards the cloud for his on-northpole infrastructure.
-links:
-  - title: Example repository for Hybrid Connection
-    url: https://github.com/espenekvang/hybrid-christmas
+links: []
 authors:
   - Espen Ekvang
 ---
@@ -133,3 +131,5 @@ Manually adding the hybrid connection from the Web App towards the Relay solves 
 ## Conclusion
 
 Using Azure Hybrid Connections and Terraform Santa Claus is able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, Santa Claus manage to expose data from on-prem and his has successfully started is cloud journey - whether the hybrid connection will remain as part of his infrastructure or not we'll have to see next Christmas.
+
+The complete Terraform for this can be found in the repository [here](https://github.com/espenekvang/hybrid-christmas).
