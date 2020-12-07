@@ -3,12 +3,12 @@ calendar: thecloud
 post_year: 2020
 post_day: 15
 title: Have a merry hybrid Christmas
-ingress: 2020 has been, and still is a special year for us because of the
+ingress: 2020 has been, and still is, a special year for us because of the
   pandemic dominating most of the news (fake or not). Despite the fact that he
   apparently is
   [immune](https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/),
-  it has still been a special year also for Santa Claus. 2020 is the year when
-  he begun his journey towards the cloud for his on-northpole infrastructure.
+  2020 has been a special year also for Santa Claus. This year he begun his
+  journey towards the cloud for his on-northpole infrastructure.
 links:
   - title: Example repository for Hybrid Connection
     url: https://github.com/espenekvang/hybrid-christmas
