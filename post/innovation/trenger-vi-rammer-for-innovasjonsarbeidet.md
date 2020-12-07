@@ -3,7 +3,7 @@ calendar: innovation
 post_year: 2020
 post_day: 8
 title: Trenger vi rammer for innovasjonsarbeidet?
-image: https://www.dropbox.com/s/gb0e81g5120ewtk/framed%20glider.jpg
+image: https://postimg.cc/1n2djTgW
 ingress: ""
 links:
   - title: Drypp fra Bekk på Spotify
