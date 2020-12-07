@@ -23,15 +23,15 @@ Uffizzi proposes different paid plans for hosting, but I'm using the free enviro
 * Unlimited Build Minutes
 * Continuous Deployment
 
-The source code is on [Github](https://github.com/nordineb/Uffizzi-demo) and the application is live <https://uffizzi.bekkops.com/>
+The source code is on [Github](https://github.com/nordineb/Uffizzi-demo) and the application is live at <https://uffizzi.bekkops.com/>
 
 # CI/CD pipeline
 
-Uffizzi can set up and deploy an application directly from Github. There is no need for a Dockerfile either, Uffizzi is using Heroku buildpacks to detect the appropriate stack to build the application and the container:
+Uffizzi can set up and deploy an application directly from Github. There is no need for a Dockerfile, it uses Heroku buildpacks to detect the appropriate stack and build the container:
 
 <img src="https://github.com/nordineb/Uffizzi-demo/blob/main/images/buildpacks.png?raw=true" alt="build-log" width="600"/>
 
-Uffizzi watches our Github repository and automatically builds and deploys changes immediately. It worked very well for my simple application, but there is little debugging possibilities. Alternatively, Uffizzy can monitor a Dockerhub account and automatically deploy new images. 
+Uffizzi watches our Github repository and automatically builds and deploys changes immediately. It worked very well for my simple application, but there is no debugging possibility. Alternatively, Uffizzy can monitor a Dockerhub account and automatically deploy new images as soon as they are pushed.
 
 # Custom Domain
 
