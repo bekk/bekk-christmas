@@ -8,6 +8,15 @@ ingress: "Most organizations eventually encounter the need to automate and
   and cron jobs. This article is a quick introduction to an alternative way of
   doing this: By writing python code and using Cloud Composer."
 description: ""
+links:
+  - title: Cloud Composer Documentation
+    url: https://cloud.google.com/composer/docs/quickstart
+  - title: Airflow Home
+    url: https://airflow.apache.org/
+  - title: AWS Managed Airflow
+    url: https://aws.amazon.com/managed-workflows-for-apache-airflow/
+authors:
+  - Espen Meidell
 ---
 ## What is Cloud Composer?
 
@@ -42,9 +51,7 @@ The first step is visiting the [Google Cloud Console ](https://console.cloud.goo
 
 > Cloud Composer will create a Kubernetes cluster for your Airflow environment. If you want to avoid any costs, consider running [Airflow locally](https://airflow.apache.org/docs/apache-airflow/stable/start.html).
 
-**INSERT IMAGE**
-
-![]()
+![Airflow environments](/assets/9-thecloud-airflow-environments.png)
 
 Once the environment is created, you can click the *Airflow* link to visit the Airflow web server. Here you can see all DAGs, previous runs and trigger new runs manually. By default, Cloud Composer includes an `airflow_monitoring` DAG to monitor that the environment is working.
 
@@ -101,17 +108,17 @@ with airflow.DAG(
 
 In the DAG constructor we specify the name of the DAG and how often we want it to run (every 5 minutes). After uploading the file to GCS it will appear in the Airflow UI. This may take a few minutes.
 
-**IMAGE OF DAG APPEARING IN UI**
+![List of DAGs in Airflow UI](/assets/9-thecloud-airflow-dags.png)
 
 Clicking on the name of the DAG shows us more detailed information about the DAG. We can see a visual representation of the graph, historical runs, and even the code that defines the DAG. It is also possible to manually trigger a run from here.
 
-**IMAGE OF GRAPH**
+![Graph view of dag](/assets/9-thecloud-airflow-graph.png)
 
 After a short while the borders around the tasks should turn green. This indicates that the task executed successfully. Just above the graph there is a legend explaining the different colors codes.
 
 If we click on a task we can see the parameters passed to the task and access the logs. Below we can see the logs from the task pinging google.com.
 
-**IMAGE OF LOGS**
+![Image of logs](/assets/9-thecloud-airflow-logs.png)
 
 The task sent five pings to google, exactly what we expected it to do. The logs also include some information about the worker that ran the task.
 
@@ -153,5 +160,4 @@ Cloud Composer / Airflow is a very powerful tool, but it might not be the right 
 ## Links
 
 * AWS Managed Airflow
-* Cloud Composer Documentation
-* Airflow Documentation
+*
