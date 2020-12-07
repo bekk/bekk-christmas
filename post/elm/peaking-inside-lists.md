@@ -3,10 +3,9 @@ calendar: elm
 post_year: 2020
 post_day: 8
 title: Peeking Inside Lists
-ingress: Working with lists in Elm is often quite nice, but sometimes it can
-  feel a bit difficult to get a sense of what is inside a list. In this article
-  we will look at a techinque that allows us to get access to the elements
-  inside a list.
+ingress: Working with lists in Elm is nice, but getting a sense of what’s inside
+  a list can be tricky. In this article we will look at a techinque that allows
+  us to get access to the elements inside a list.
 authors:
   - Aksel Wester
 ---
