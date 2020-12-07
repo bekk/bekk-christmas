@@ -42,7 +42,7 @@ const camera = new THREE.PerspectiveCamera(fov, ratio);
 
 The `fov` is the field-of-view in degrees. All you gamers out there know that it can be very important!
 
-Then we make a scene, which is going to hold all the stuff that is to be shown on the screen. Like red christmas cubes, or other things:
+Then we make a scene, which is going to hold all the stuff to be shown on the screen; like red christmas cubes and other things:
 
 ```javascript
 const scene = new THREE.Scene();
@@ -103,7 +103,7 @@ It is beautiful! Look at those tight corners:
 
 Now that we have full frontal 3D on the web, we are of course going to animate it, right?
 
-Yes of course! Animations are simply many many renders in a row. Like a stop motion movie. We wrap our render call in a function that requests to be run again and again as fast as the browser can manage:
+Animations are simply many, many renders in a row. Like a stop motion movie. We wrap our render call in a function that requests to be run again and again as fast as the browser can manage:
 
 ```javascript
 function animate() {
