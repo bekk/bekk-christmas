@@ -18,7 +18,7 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 
 When working with the primitive types in Kotlin, all  operators work in a sensible way. We can write `2 + 2` and Kotlin calculates the sum 4 and we can compare strings with an equality operator `"myfantasticstring" == "myfantasticstring"`. 
 
-But what about the user-defined types. Let's say we have a date class defined as
+But what about the user-defined types. Let's say we have a simple date class defined as
 
 ```kotlin
 data class MyDate (
