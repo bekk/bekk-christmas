@@ -9,7 +9,8 @@ ingress: Maybe you are burning inside with an idea of an NPM package that could
   This article will be a simple tutorial on how you can get started with
   creating NPM packages - which I, personally, found to be a quite useful skill
   to have!
-description: ""
+description: Want to create a NPM package? Og just want to see what it is all
+  about? Then this is the guide for you.
 links:
   - title: Why publishing your own npm packages can make you a better developer
     url: https://dev.to/thegeoffstevens/why-publishing-your-own-npm-packages-can-make-you-a-better-developer-2lc6
@@ -147,7 +148,7 @@ npm publish
 
 And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>) (you might also get some seconds of fame on the [NPM frontpage](https://www.npmjs.com/) 🤩), as well as adding it to your next project using `npm install --save <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
 
-Here is also a demo of the [`days-until-christmas`](https://www.npmjs.com/package/days-until-christmas) package from the example which could be worth to check out:
+Here is also a demo of the [`days-until-christmas`](https://www.npmjs.com/package/days-until-christmas) package from the example which could be worth checking out:
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="Days Until Christmas package" src="https://codepen.io/niklasmh/embed/wvzWqgO?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/niklasmh/pen/wvzWqgO'>Days Until Christmas package</a> by Niklas Molnes Hole
