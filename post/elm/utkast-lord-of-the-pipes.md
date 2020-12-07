@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 11
-title: UTKAST Lord of the pipes
+title: Lord of the pipes
 image: https://source.unsplash.com/_R95VMWyn7A/2000x800
 ingress: If the bulk of your programming experience comes from C-like languages,
   there’s a chance you find pipes, `|>`and `<|` some of the most distinct
