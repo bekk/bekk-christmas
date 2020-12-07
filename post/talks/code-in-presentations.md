@@ -16,16 +16,17 @@ The easiest way is to take a screenshot of the bit of code you need. This conven
 
 ## Enter Visual Studio Code
 
-What seems to be the best way, is copying the code directly from [Visual Studio Code](https://code.visualstudio.com) and pasting it into your presentation. 
-In Visual Studio Code, press `F1` to find your keyboard shortcuts, and search for `@command:editor.action.clipboardCopyWithSyntaxHighlightingAction`(or start typing “CopyWith” and it should appear). This will, as the name suggests, copy editor text with syntax highlighted to your clipboard.
+What seems to be the best way, is copying the highlighted code directly from [Visual Studio Code](https://code.visualstudio.com) and pasting it into your presentation. 
+
+This does not work right out of the box, so you will have to enable this functionality first. In Visual Studio Code, press `F1` to find your keyboard shortcuts, and search for `@command:editor.action.clipboardCopyWithSyntaxHighlightingAction` (or start typing “CopyWith” and it should appear). This will, as the name suggests, allow the editor to add text with highlighted syntax to your clipboard.
 
 ![Enable Copy with syntax highlighting in Visual Sudio Code](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/VisualStudioCopyWithFormatting.png)
 
-Assign a keybinding to it, like `Cmd+Shift+C` and you are ready to copying code with proper formatting. Back in your presentation tool of choice, you can simply paste your code and hey’presto there it is in all its colour coded glory. Or close enough. In the image below you can see the difference between code pasted into PowerPoint and Keynote. 
+Assign a keybinding to it, like `Cmd+Shift+C` and you are ready to copying code with proper formatting. Back in your presentation tool of choice, you can now paste your code and hey’presto there it is in all its colour coded glory. Or close enough. In the image below you can see the difference between code pasted into PowerPoint and Keynote. 
 
 ![Code pasted from Visual Studio in a side-by-side comparison between PowerPoint and Keynote ](https://storage.googleapis.com/keen-electron-277310.appspot.com/public/talks-christmas-08/Code%20in%20presentations%20-%20Visual%20Studio.png)
 
-The font-size is minuscule in the Keynote-presentation, but it maintains indents which is nice. PowerPoint has a better grasp on font-size, but lacks the indenting. 
+The font-size is minuscule in the Keynote-presentation, but it maintains indents which is nice. PowerPoint has a better grasp on font-size, but lacks the indenting. Both issues are easy enough to fix.
 
 ## Not too keen on using Visual Studio?
 
