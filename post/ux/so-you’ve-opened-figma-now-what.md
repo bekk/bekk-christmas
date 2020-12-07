@@ -4,12 +4,12 @@ post_year: 2020
 post_day: 4
 title: So you’ve opened Figma, now what?
 image: https://i.ibb.co/LJDQJPt/bloggheadersmall.png
-ingress: Maybe you have just been hired by a company and you are forced to use
-  Figma? Maybe you have been using Sketch and Abstract for the last years and
-  heard some good things about this new, up and coming design tool? Hell, maybe
-  you even have used Figma for a while and you’re curious if maybe there still
-  are some tricks you haven’t yet learned? Well, look no further! The answers to
-  ~~all~~ some of your questions lie ahead!
+ingress: Maybe you have just been hired by a company that uses Figma? Maybe you
+  have been using Sketch and Abstract for the last years and heard some good
+  things about this new, up and coming design tool? Maybe you even have used
+  Figma for a while and you’re curious if maybe there still are some tricks you
+  haven’t yet learned? Well, look no further! The answers to ~~all~~ some of
+  your questions lie ahead!
 description: An interactive introduction to Figma. Learn enough about how to use
   Figma so that you can make your own wireframes and sketches.
 links: []
