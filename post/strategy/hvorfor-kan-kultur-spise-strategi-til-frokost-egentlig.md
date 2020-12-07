@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 10
+post_day: 9
 title: Hvorfor kan kultur spise strategi til frokost, egentlig?
 image: https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80
 ingress: "Vi har skrevet om det velkjente sitatet til Peter Drucker før; at
