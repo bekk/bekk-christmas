@@ -52,7 +52,7 @@ nFirstSquaresSum n =
 
 While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.* 
 
-The backwards pipe, `<|` can be used to express the same sequence of calls as its brother. Rewriting the example above, that would put `List.sum `first and on a line of its own. This can be confusing since in reality it is the last function called. Reformatted, this would become:
+The backwards pipe, `<|` *can* (don't confuse with *should*) be used to express the same sequence of calls as its brother `|>`. Rewriting the example above, that would put `List.sum` first and on a line of its own. This can become confusing since in reality it is the last function called. Reformatted, this would become:
 
 ```elm
 nFirstSquaresSum: Int -> Int
@@ -60,19 +60,13 @@ nFirstSquaresSum n =
     List.sum <| List.map square <| List.range 1 n
 ```
 
-This is closer to how one would write in a language that uses parens for function calls. Though it leads to long lines or confusion if broken up onto separate lines. My personal rules of thumb are:
+This is closer to how one would write in a language that uses parens for function calls. However, it leads to long lines or confusion if broken up onto separate lines. My personal rules of thumb are:
 
-1 Expressing things vertically with |>
+1. Try to express things vertically with |>
+2. Dont mix |> and <| in the same expression
+3. Use a single <| in an expression to avoid parens
 
-2 Dont mix |> and <| in the same expression
-
-3 Use a single <| in an expression to avoid parens
-
-Of these, number 3 deserves additional examples. 
-
-
-
-
+Of these, number 3 deserves additional examples. Here we 
 
 ```elm
 nFirstSum : SumType -> Int -> Int
@@ -88,18 +82,31 @@ nFirstSum sumType n =
 
             Squares ->                
                 List.map square numbers
-
-
 ```
 
-\|> is one of Elm’s operators. Like + it’s an infix operator which gets its two operands from either side. + adds the left and right operand together. You might have already guessed it, + and all other operators are functions in Elm. This is the type signature for +
+Recall [day 1](https://www.elm.christmas/2020/1), when we noticed that we can pair two values with both syntax `(1, "one")` and the function `Tuple.pair`. One way this function is useful is with pipes. In the code below, we pair an argument to the function tup with the result of some other expression. With a pipe and Tuple.pair it looks cleaner than if we would use normal tuple syntax.
 
-(+) : number -> number -> number
+```elm
+tup : Int -> (Int, String)
+tup number =
+    Tuple.pair number 
+        <| case number of
+            1 -> "one"
+            2 -> "two"
+            3 -> "three"
+            _ -> "something else"
+```
 
-\[The parens can be used when referring to the operator as a function, for example to pass as an argument  or to compose with another function that takes two numbers]
 
-\|> has its own type signature:
 
-(|>) : a -> (a -> b) -> b
+## Going deep
 
-This signature tells us that the left operand (first argument) is an \`a\` value, the second operand is something that changes an \`a\` value into a \`b\` value, and the result is a \`b\`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will allow you to identify where and how you can use pipes in your own code.
+\|> is one of Elm’s operators. Like + it’s an infix operator which gets its two *operands* from either side. + adds the left and right operand together. As you will learn more about in coming days, + and all other operators are functions in Elm. This is the type signature for +
+
+`(+) : number -> number -> number`
+
+`|>` has its own type signature:
+
+`(|>) : a -> (a -> b) -> b`
+
+This signature tells us that the left operand (first argument) is an \`a\` value, the second operand is something that changes an \`a\` value into a \`b\` value, and the result is a \`b\`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. I also find that the compiler became far more helpful when I started to understand the type signatures of the functions I tried to pipe things into.
