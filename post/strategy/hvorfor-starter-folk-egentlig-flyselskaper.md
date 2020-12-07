@@ -25,7 +25,7 @@ links:
 authors:
   - Jonas Løvås
 ---
-![](/assets/capture3.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
+![](/assets/roics.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
 
 <!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
