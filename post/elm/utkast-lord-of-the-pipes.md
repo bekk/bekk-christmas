@@ -91,4 +91,4 @@ tup number =
 
 `(|>) : a -> (a -> b) -> b`
 
-This signature tells us that the left operand (first argument) is an \`a\` value, the second operand is something that changes an \`a\` value into a \`b\` value, and the result is a \`b\`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. I also find that the compiler became far more helpful when I started to understand the type signatures of the functions I tried to pipe things into.
+This signature tells us that the left operand (first argument) is an `a` value, the second operand is something that changes an `a` value into a `b` value, and the result is a `b`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. I also find that the compiler became far more helpful when I started to understand the type signatures of the functions I tried to pipe things into.
