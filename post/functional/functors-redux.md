@@ -4,11 +4,11 @@ post_year: 2020
 post_day: 8
 title: Functors - Redux
 ingress: >
-  Last year I wrote [an article](https://functional.christmas/2019/20) trying to
-  explain functors in simple terms and show why they are useful. It seem to have
-  been well received, but some felt it were lacking in details which is true and
-  by design. There is more to be said and some crucial details that I glossed
-  over so I will try to address some of them now. Let get nerdy!
+  Last year I wrote [an article](https://functional.christmas/2019/20)
+  explaining functors in simple terms and show why they are useful. It has well
+  received, but some felt it were lacking in details which is true and by
+  design. There is more to be said and some crucial details that I glossed over
+  so I will try to address some of them now. Let get nerdy!
 authors:
   - Harald Ringvold
 ---
@@ -40,6 +40,8 @@ For the javascript example we will add the identify function inline:
 [1,2,3,4].map((x) => x) == [1,2,3,4]
 ```
 
+When following this law the functor can not make any weird changes to the result. `List.map someFunction [1,2,3,4]` can never return an empty list. It can only map the function over the values. When mapping over a 4 item list, the returning list will always be a 4 item list. 
+
 ### 2. Law of composition
 
 The second law is not very complicated either but assumes that you know about composition. Lets quickly go through composition before looking at the next law.
@@ -59,7 +61,7 @@ type alias User =
     }
 ```
 
-To get the ag tof a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signature `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
+To get the age of a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signature `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
 
 Go get the age from a user you would to: 
 
