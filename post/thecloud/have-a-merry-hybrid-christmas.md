@@ -4,8 +4,9 @@ post_year: 2020
 post_day: 15
 title: Have a merry hybrid Christmas
 image: https://images.unsplash.com/photo-1544277879-42659615e478?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1956&q=80
-ingress: This year is a special year because of the pandemic dominating most of
-  the news (fake or not). Despite the fact that he apparently is
+ingress: A special year is coming to its end, we look back at the pandemic
+  dominating most of the news (fake or not). Despite the fact that he apparently
+  is
   [immune](https://eu.usatoday.com/story/news/nation/2020/11/20/covid-19-and-christmas-santa-immune-coronavirus-fauci-says/3777871001/),
   it is still a special year for Santa Claus. This year he began his journey
   towards the cloud for his on-northpole infrastructure.
