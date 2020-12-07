@@ -61,4 +61,4 @@ Algorithms have matured to be practically unbreakable, but current legislative m
 
 In the modern era the goal of private digital communication is, from a technological standpoint, a solved problem. It remains to see if future citizens will be able to enjoy digital privacy in their lives. It’s a question of balancing power between the government and the people – and problems of that nature are not solved as elegantly as cryptographic puzzles.
 
-_Want to go further down the rabbit hole? Then I highly recommend listening to this episode of Darknet Diaries podcast: [Episode 12 - Crypto Wars](https://darknetdiaries.com/episode/12/)._
+_Want to go further down the rabbit hole? Then I highly recommend listening to this episode of the Darknet Diaries podcast: [Episode 12 - Crypto Wars](https://darknetdiaries.com/episode/12/)._
