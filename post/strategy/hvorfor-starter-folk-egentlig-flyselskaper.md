@@ -5,9 +5,8 @@ post_day: 16
 title: Hvorfor starter folk egentlig flyselskaper?
 image: https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1789&q=80
 ingress: >-
-  *"If you want to be a millionaire, start with a billion dollars and launch a
-  new airline"* 
-
+  "If you want to be a millionaire, start with a billion dollars and launch a
+  new airline" 
 
 
   – Richard Branson
