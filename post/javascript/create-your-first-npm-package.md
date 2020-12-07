@@ -33,8 +33,8 @@ To start from the basics you will need a computer with [Node.js][node] installed
 
 Next, you will have to make sure that when you open your terminal ([3 ways to open a terminal on Windows](https://www.wikihow.com/Open-Terminal-in-Windows), [7 ways to open a terminal on Mac](https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/), [Linux users should already know how to do this]()), write `npm` and press `Enter ↵`, it does not return an error, but rather:
 
-<img alt="Check that the `npm` command works." class="light-theme-image" src="https://media4.giphy.com/media/4KYtFWLBdyXN6ZmCQb/giphy.gif" />
-<img alt="Check that the `npm` command works." class="dark-theme-image" src="https://media1.giphy.com/media/evngs8qmOLkc21XYEY/giphy.gif" />
+<img alt="Check that the `npm` command works." class="light-theme-image" src="https://s8.gifyu.com/images/render1607352000960.gif" />
+<img alt="Check that the `npm` command works." class="dark-theme-image" src="https://s8.gifyu.com/images/render1607351226314.gif" />
 
 If this is how your terminal looks like now, then you are ready to move on. If not, you can try out [this link](https://docs.npmjs.com/common-errors).
 
@@ -44,28 +44,30 @@ Before we begin with using NPM, it important that you work inside a folder (or d
 
 As we have already opened our terminal from the previous step, we can easily create a folder just by typing in these commands:
 
+<!--
 ```bash
-# Create folder (mkdir = make directory)
 mkdir name-of-your-package
+# This will create a folder (mkdir = make directory)
 
-# Move terminal into the folder (cd = change directory)
 cd name-of-your-package
+# This will move the terminal into the folder (cd = change directory)
 ```
 
-See how it is done in the GIF below:
+See how that is done in the GIF below:
+-->
 
-<img alt="Create a folder in the terminal" class="light-theme-image" src="https://media3.giphy.com/media/N2NCG4puzLabq3ZaiT/giphy.gif" />
-<img alt="Create a folder in the terminal" class="dark-theme-image" src="https://media4.giphy.com/media/OUzBBeuK9ml8PkA535/giphy.gif" />
+<img alt="Create a folder in the terminal" class="light-theme-image" src="https://s8.gifyu.com/images/render1607294686732.gif" />
+<img alt="Create a folder in the terminal" class="dark-theme-image" src="https://s8.gifyu.com/images/render1607294600020.gif" />
 
-### `package.json`?
+### Create or generate a `package.json` file
 
-In every NPM project, there exists a file called `package.json`. Why is this necessary, you ask? First of all, it gives a `name` to your package. Secondly, it contains information about the `version` of the project. It may not be that interesting to list all the options, so I am just going to give you an example you can look at here:
+In every NPM project, there exists a file called `package.json`:
 
 ```json
 {
   "name": "days-until-christmas",
-  "version": "0.0.0",
-  "description": "I lost the count so I made this",
+  "version": "0.0.1",
+  "description": "I lost the count so I made this to keep myself up-to-date next time",
   "main": "index.js",
   "scripts": {},
   "dependencies": {},
@@ -75,9 +77,13 @@ In every NPM project, there exists a file called `package.json`. Why is this nec
 }
 ```
 
-The most important value to note here is the `main` value which is set to `index.js`. `index.js` will now be the entry file for the NPM package, meaning this is where you need to place your code. You can add more files later, but the entry file will always be the heart of your package.
+This is necessary as it first of all gives a `name` to your package. Secondly, it contains information about the `version` of the project - such that users of this package can ensure they are using the correct version. You can find information of all the configurations [here](https://docs.npmjs.com/cli/v6/configuring-npm/package-json).
 
-Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your `node_modules` folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). Use common sense.
+The most important configuration to note here is the `main` value which is set to `index.js`. `index.js` will now be the entry file for the NPM package, meaning this is where you need to **place your code**. You can add more files later, but the entry file will always be the heart of your package.
+
+Side note: _Even though we will not be using this configuration, it is worth mentioning that you can use `dependencies` to include other packages into your package. This enables you to use every single one of the 1.4 million packages in your project! You should probably not include every package in your project, though, as your `node_modules` folder (containing your `dependencies`) [can get quite big really fast](https://www.reddit.com/r/node/comments/4z48e2/is_it_normal_to_have_a_100k_files780_mb_in_the/), and [some packages can introduce potential security issues](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets). It is usually a good indication to use popular packages with few dependencies, and if that is not enough, you can use [`npm audit`](https://docs.npmjs.com/cli/v6/commands/npm-audit)._
+
+<!-- Skrive kort om hvordan man lager den -->
 
 This was much information! Lets do something. Type this into your terminal:
 
@@ -85,17 +91,17 @@ This was much information! Lets do something. Type this into your terminal:
 npm init
 ```
 
-You will now be prompted with a lot of questions. Usually you are good with the default values, so you can mostly just hit the `Enter ↵` button with no input, like this:
+You will now be prompted with a lot of questions. Usually you are good with the default values, and **all the values can be changed later**, so you can mostly just hit the `Enter ↵` button with no input, like this:
 
 <!-- Gif -->
 
 ### Create something!!!
 
-Now to actually creating the file. Do your magic.
+At last, you need to add some code to your project. In this tutorial, we are making a package that can calculate the days until christmas - in case you need to be reminded of this:
 
 ### ARE WE DONE ALREADY?!
 
-There is one last step! Bare with me:
+There is one more step! Bare with me:
 
 ## Publishing your package to NPM
 
@@ -131,7 +137,7 @@ This is the last step:
 npm publish
 ```
 
-And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>), as well as adding it to your next project using `npm install <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
+And tadaa! You will soon be able to see your package on [https://www.npmjs.com/package/\<your-package\>](https://www.npmjs.com/package/<your-package>) (you might also get some seconds of fame on the [NPM frontpage](https://www.npmjs.com/) 🤩), as well as adding it to your next project using `npm install --save <your-package>` or `yarn add <your-package>`. If you do not want your project to be publicly visible you can read about how it is done [here](https://docs.npmjs.com/creating-and-publishing-private-packages) and [here](https://docs.npmjs.com/package-scope-access-level-and-visibility).
 
 Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
 
@@ -140,8 +146,8 @@ Be also sure to check out the articles linked at the bottom if you want to dive 
 Now, you have few more things you can do in your future life:
 
 - Use your NPM package to revolutionize the world, or at least the developer world. [You can also read about how it can revolutionize you, as well](https://dev.to/thegeoffstevens/why-publishing-your-own-npm-packages-can-make-you-a-better-developer-2lc6).
-- Shrink your monolith of a project into something smaller and easier to work with by moving some of your code into a NPM package. Within reasonable bounds, of course. Too many NPM packages could be a nightmare to maintain too.
-- Contribute to other NPM packages. I can really recommend this!
+- Shrink your monolith of a project into something smaller and easier to work with by moving some of your code into NPM packages. Within reasonable bounds, of course. Too many NPM packages could be a nightmare to maintain too.
+- Contribute to other NPM packages. I can really recommend this! [\#hacktoberfest](https://hacktoberfest.digitalocean.com)
 - Copy your NPM package onto a USB stick and give it as a gift to your family and friends. I am sure they would appreciate it!
 
 <!-- Show a demo of how the package is used using an iframe. Use codepen of something -->
