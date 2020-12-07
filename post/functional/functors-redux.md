@@ -6,29 +6,29 @@ title: Functors - Redux
 ingress: >
   Last year I wrote [an article](https://functional.christmas/2019/20)
   explaining functors in simple terms and show why they are useful. It has well
-  received, but some felt it were lacking in details which is true and by
-  design. There is more to be said and some crucial details that I glossed over
-  so I will try to address some of them now. Let get nerdy!
+  received, but some felt it was lacking in details which is true and by design.
+  There is more to be said and some crucial details that I glossed over so I
+  will try to address some of them now. Let’s get nerdy!
 authors:
   - Harald Ringvold
 ---
 ## Functor as a context
 
-In the previous article I said you could think of a functor as a structure or container that has a mapping function. This is not strictly wrong as it is one way of thinking about the concept, but can be a bit misleading and confusing as it does not fit all situations. For example a functions can in some cases be a functor. A structure might give us thoughts about data structures or types. Containers is fitting when talking about lists or other types that can contain data. Is a function a structure or container? For this reason it is common to refer to some of the general concepts and abstractions we use in FP (functor, monad etc.) as contexts which has some properties.
+In the previous article I said you could think of a functor as a structure or container that has a mapping function. This is not strictly wrong as it is one way of thinking about the concept, but can be a bit misleading and confusing as it does not fit all situations. For example a functions can in some cases be a functor. A structure might give us thoughts about data structures or types. Container is fitting when talking about lists or other types that can contain data. Is a function a structure or container? For this reason it is common to refer to some of the general concepts and abstractions we use in FP (functor, monad etc.) as contexts which has some properties.
 
 ## The functor laws
 
-Unlike my vague explanation in the previous article a functor is actually a very specific thing and is defined by rules or properties the context has to adhere to. These laws come from mathematics, specifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
+Unlike my vague explanation in the previous article a functor is actually a very specific thing, and is defined by rules or properties the context has to adhere to. These laws come from mathematics, specifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
 
 In addition to having the `map` function, functors needs to follow some rules.
-The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
+The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Let’s get in on the sophistication!
 
 ### 1. Law of preservation of identity
 
 The first law or rule of functors is that if the `map` function is given the identity function as its mapping function it will return the same functor. 
 The identity function is just a function that has one argument which it returns right back (`\x -> x` in Elm or `function(x){return x;}` in JS).
 
-Lets use lists to visualize this a bit more. Elm actually has a identity function in its standard library so we will just use that one:
+Let’s use lists to visualize this a bit more. Elm actually has the identity function in its standard library so we will just use that one:
 
 ```elm
 List.map identity [1,2,3,4] == [1,2,3,4]
@@ -74,7 +74,7 @@ user = { name = "John", age = 20 }
 -- output: 20
 ```
 
-At some point in your program you might have a `User` and need to display the age on a webpage, print to in a log or anything else that needs the age to be a string. To convert a `Int` into a `String` we can use the built-in function `fromInt` in the String module. 
+At some point in your program you might have a `User` and need to display the age on a webpage, print it in a log or anything else that needs the age to be a string. To convert a `Int` into a `String` we can use the built-in function `fromInt` in the String module. 
 
 So where you have a user and need the age as a string you can use the compose operator in Elm to create a new function that gives you the user age as a string. I will write the type signatures for the functions as well so we can see how they fit together: 
 
@@ -124,9 +124,9 @@ See full example in Ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
 
 ## The consequences of the laws
 
-The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function to and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
+The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the value/values in it or the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function to and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
 
-With these rules in place for what constitutes a functor makes it very clear how a functor behaves. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
+With these rules for what constitutes a functor in place the behaviour of functors become predictable. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
 
 [^accessor]: You could use the syntax record.field_name as with JS objects (ex:`user.age`) as well but that does not serve our example that well. :P
 [^composeop]: There is a left compose as well. For our example it would look like: `fromInt << .age` and would create the same function.
