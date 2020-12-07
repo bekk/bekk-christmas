@@ -38,10 +38,12 @@ operator fun MyDate.minus(other: MyDate) =
             kotlin.math.abs(this.month - other.month) * 31 + // Assuming all months have 31 days
             kotlin.math.abs(this.day - other.day)
 
-    val date1 = MyDate(2020, 12, 16)
-    val date2 = MyDate(2019, 11, 12)
-    print(date1 - date2) // Prints the number of days between the two dates: 400
-}
+            
+val date1 = MyDate(2020, 12, 16)
+val date2 = MyDate(2019, 11, 12)
+
+print(date1 - date2) // Prints the number of days between the two dates: 400
+
 ```
 
 That's all. Easy, right? The operator function can also be defined as a member function on the data class itself. Let us say we want to be able to check whether a `House` is smaller or bigger compared to another `House`, we could write is as follows:
@@ -63,9 +65,9 @@ data class House (
     }
 }
 
+
 val myHouse = House(122, 4, 2, true)
 val neighboursHouse = House(157, 3, 3, true)
 
 print(myHouse < neighboursHouse) // true
-}
 ```
