@@ -4,14 +4,15 @@ post_year: 2020
 post_day: 8
 title: The secretive history of modern encryption
 image: https://images.unsplash.com/photo-1455368109333-ebc686ad6c58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80
-ingress: "Cryptography is the science of hiding information with algorithms
-  called ciphers. When data is encrypted with a secure cipher, no one should be
-  able to read it without the decryption key. However, the promise of security
-  falls apart if the encryption algorithm is weak, or if someone has created a
-  backdoor. In this article we’ll examine the modern history of encryption.
-  We’ll learn that while the mathematical underpinnings of modern encryption is
-  stronger than ever, government agencies have a history of thwarting efforts to
-  reach the goal of truly secure communication. "
+ingress: "Cryptography is the science of secret writing with the goal of hiding
+  the meaning of a message. When a message is encrypted with a secure algorithm,
+  i.e. an encryption cipher, no one should be able to read it without the
+  decryption key. However, the promise of security falls apart if the encryption
+  algorithm is weak, or if someone has created a backdoor. In this article we’ll
+  examine the modern history of encryption. We’ll learn that while the
+  mathematical underpinnings of modern encryption is stronger than ever,
+  government agencies have a history of thwarting efforts to reach the goal of
+  truly secure communication. "
 authors:
   - Gunvor Lemvik
 ---
