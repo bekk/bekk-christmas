@@ -7,13 +7,7 @@ image: https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixlib=rb-1.2
 ingress: Det legges mye penger i tiltak som skal bidra både til innovasjon i seg
   selv og til økt innovasjonsevne for bedriften. Men gjøres det innovasjon,
   eller er det mest teater? Og hvordan kan man unngå teateret?
-links:
-  - url: https://blogg.bekk.no/er-okr-n%C3%B8kkelen-for-%C3%A5-lykkes-med-smidig-produktutvikling-69b8f777cc1b
-    title: Er OKR nøkkelen for å lykkes med smidig produktutvikling?
-  - title: En smidig tilnærming til smidig organisering
-    url: https://blogg.bekk.no/en-smidig-tiln%C3%A6rming-til-smidig-organisering-d6b2e0acd4e7
-  - url: https://blogg.bekk.no/ikke-glem-kultur-i-en-krevende-hverdag-1436f7d18f2b
-    title: Ikke glem kultur i en krevende hverdag!
+links: []
 authors:
   - Pia Solheim
 ---
