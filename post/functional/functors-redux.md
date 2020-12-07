@@ -4,11 +4,11 @@ post_year: 2020
 post_day: 8
 title: Functors - Redux
 ingress: >
-  Last year I wrote [an article](https://functional.christmas/2019/20) trying
-  explaining functors in simple terms and show why they are useful. It seem to
-  have been well recieved but some felt it were lacking in details which is true
-  and by design. There is more to be said and some crucial details that I
-  glossed over so I will try to address some of them now. Let get nerdy!
+  Last year I wrote [an article](https://functional.christmas/2019/20) trying to
+  explain functors in simple terms and show why they are useful. It seem to have
+  been well received, but some felt it were lacking in details which is true and
+  by design. There is more to be said and some crucial details that I glossed
+  over so I will try to address some of them now. Let get nerdy!
 authors:
   - Harald Ringvold
 ---
@@ -18,7 +18,7 @@ In the previous article I said you could think of a functor as a structure or co
 
 ## The functor laws
 
-Unlike my vague explanation in the previous article a functor is actually a very spesific thing and is defined by rules or properties the context has to adhere to. These laws come from mathematics, specifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
+Unlike my vague explanation in the previous article a functor is actually a very specific thing and is defined by rules or properties the context has to adhere to. These laws come from mathematics, specifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
 
 In addition to having the `map` function, functors needs to follow some rules.
 The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
@@ -46,9 +46,9 @@ The second law is not very complicated either but assumes that you know about co
 
 #### Composition
 
-Composition in functional programming (FP) is the ability to compose multiple functions into one single function. This is not so often used in object oriented programming (OOP) but quite common in FP. 
+Composition in functional programming (FP) is the ability to compose multiple functions into one single function. This is not often used in object oriented programming (OOP) but quite common in FP. 
 
-Composition is "gluing" functions together into one function. This is such a common thing to do that many languages has dedicated operators for this. Lets look at an example to see it in action to see why this might be useful. I'll be doing the examples in Elm as composition is a bit awkward in javascript and not that common.
+Composition is "gluing" functions together into one function. This is such a common thing to do that many languages have dedicated operators for this. Lets look at an example to see it in action to see why this might be useful. I'll be doing the examples in Elm as composition is a bit awkward in javascript and not that common.
 
 Lets say you have a user record that has the fields name and age:
 
@@ -59,7 +59,7 @@ type alias User =
     }
 ```
 
-To get the name of a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signature `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
+To get the ag tof a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signature `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
 
 Go get the age from a user you would to: 
 
@@ -72,7 +72,7 @@ user = { name = "John", age = 20 }
 -- output: 20
 ```
 
-At some point in your program you might have a `User` and need to display the age on a the webpage, print to in a log or anything else that needs the age to be a string. To convert a `Int` into a `String` we can use the built-in function `fromInt` in the String module. 
+At some point in your program you might have a `User` and need to display the age on a webpage, print to in a log or anything else that needs the age to be a string. To convert a `Int` into a `String` we can use the built-in function `fromInt` in the String module. 
 
 So where you have a user and need the age as a string you can use the compose operator in Elm to create a new function that gives you the user age as a string. I will write the type signatures for the functions as well so we can see how they fit together: 
 
@@ -89,7 +89,7 @@ When the output of a function matches the input of another we can compose them t
 
 #### The second law
 
-Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that function over the functor should produce the same result as mapping the individual functions over the functor in sequense. Lets look as some code to make sense of it:
+Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that function over the functor should produce the same result as mapping the individual functions over the functor in sequence. Lets look as some code to make sense of it:
 
 ```elm
 users : List User
@@ -122,7 +122,7 @@ See full example in Ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
 
 ## The consequences of the laws
 
-The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
+The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function to and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
 
 With these rules in place for what constitutes a functor makes it very clear how a functor behaves. So if we see it in code or talk about it with fellow coders we know exactly how it should behave! 😄
 
