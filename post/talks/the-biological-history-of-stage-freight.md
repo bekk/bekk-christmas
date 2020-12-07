@@ -16,18 +16,21 @@ links:
 authors:
   - Jens Andreas Huseby
 ---
-As an evolutionary biologist who’s been fortunate to appear on several tv- and radio shows, I’ve wanted to understand why we feel so nervous before appearing in front of an audience and how to overcome it. To hack your stage fright away, you must first understand why your mind is designed this way.
+As an evolutionary biologist who’s been fortunate to appear on some tv- and radio shows, I’ve wanted to understand why we feel so nervous before appearing in front of an audience and how to overcome it. To hack your stage fright away, you must first understand why your mind is designed this way.
 
 ### Mismatch
+
 Evolution is a very slow design process as it takes many generations for even the most important adaptations to become a part of our nature. Even fundamental traits like [being able to digest a new easily available energy source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048992/) will take one hundred thousand years to become common. (URL: )
 As a result, our emotions are not perfectly designed to reflect how dangerous a situation really is in modern life.
 Speaking up in front of an audience is not a matter of life and death. Not now.. but it probably was in most of our earlier history. And because evolution takes ages to redesign us to match this new reality, “stage fright” is still part of our psychological wiring.
 
 ### Our natural environment consists of people
+
 Other humans and what they do are important parts of the environment for us humans. “People” is probably the most important environmental factor in our lives. To put it in evolutionary terms: the most important thing affecting the number of grandchildren a human could get, is other people. 
 One of my favorite recent scientific discoveries highlight just how extremely wired we are to care about what other people think. 
 
 ### The Brain’s default mode network
+
 For several decades scientists have used MRI-machines to study how different areas in the brain get activated when a person is given a specific task. Some areas, aka “language centers”, light up when the research subject is asked to speak or read. Other areas are activated when solving math problems or listening to Beethoven. But what happens in the brain when a person is resting? Does the brain deactivate?\
 \
 Some researchers continued the scan after telling the person in the MRI-machine to relax. What they found was that other areas in the brain lit up.
@@ -43,9 +46,11 @@ This is what we, as humans, are designed to do when we relax.
 Yup. That’s you putting your brain’s default mode network to work.)
 
 ### Stage fright
+
 Other people’s opinion of us affect who we can form an alliance with, who will protect you, who will go against us, who you can attract as a partner, which opportunities you get and much more. This is far from trivial. These are central evolutionary problems (https://ux.christmas/2019/4) for a social species such as ours. And that is why your brain and emotional systems get so fired up before talking to a crowd.
 
 ### The hack(s)
+
 So, doesn’t this mean that it’s only natural to be scared to death over a presentation? 
 Yes, it does. But realizing this is helpful. Because you have to trick your paleolithic mind into believing it’s in a slightly different situation. Here’s how I do it:
 
