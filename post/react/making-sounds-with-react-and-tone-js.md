@@ -21,10 +21,10 @@ authors:
 \
 For the rest of this article we will utilize the notes C, D, E, G and A. This creates what is known as the C Major Pentatonic Scale. Why these notes and this scale? In simple terms, it means all the notes sound good together, but the why is beyond the scope of this article. Thus increasing our chance of making something that sounds musical.
 
-First we’ll import Tone.JS, create a synth and play one of the five chosen notes when they’re pressed.\
-\
+First we’ll import Tone.JS, create a synth and play one of the five chosen notes when they’re pressed.
+
 <iframe src="https://codesandbox.io/embed/tonejs-react-part-1-x6463?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="ToneJS + React part 1"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -37,7 +37,7 @@ Now, let’s make a grid, with our five special notes stacked on top of each oth
 Then we’ll use `Tone.Sequence` to make our sequencer. As our potential hit machine now could play several tones simultaneously, we’ll first change our synth for a polysynth. Thus being able to play multiple (poly) tones at the same time. Our `triggerAttackRelease` function can now take an array of notes as its first parameter 
 
 <iframe src="https://codesandbox.io/embed/tonejs-react-part-2-fw9vt?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="ToneJS + React part 2"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
