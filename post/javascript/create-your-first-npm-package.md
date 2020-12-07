@@ -145,11 +145,14 @@ And tadaa! You will soon be able to see your package on [https://www.npmjs.com/p
 
 Be also sure to check out the articles linked at the bottom if you want to dive deeper into the NPM world. There is so much you can do, and this article only scratched the tip of the iceberg.
 
-Here is also a demo of the package from the example:
+Here is also a demo of the [`days-until-christmas`](https://www.npmjs.com/package/days-until-christmas) package from the example:
 
-<iframe src="https://codepen.io/niklasmh/pen/wvzWqgO"></iframe>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Days Until Christmas package" src="https://codepen.io/niklasmh/embed/wvzWqgO?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/niklasmh/pen/wvzWqgO'>Days Until Christmas package</a> by Niklas Molnes Hole
+  (<a href='https://codepen.io/niklasmh'>@niklasmh</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-You can find the source code here: https://github.com/niklasmh/days-until-christmas
+The source code can be found here: [https://github.com/niklasmh/days-until-christmas](https://github.com/niklasmh/days-until-christmas)
 
 # What to do now
 
