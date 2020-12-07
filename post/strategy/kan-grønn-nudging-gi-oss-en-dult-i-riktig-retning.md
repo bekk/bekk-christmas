@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 18
+post_day: 16
 title: 'Kan vi "dultes" i en grønnere retning? '
 image: https://images.unsplash.com/photo-1554976326-7b74d5ea44e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=728&q=80
 ingress: "Stadig flere retter fokus mot klimaendringene, og vi som forbrukere og
