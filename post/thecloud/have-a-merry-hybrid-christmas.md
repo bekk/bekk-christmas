@@ -23,7 +23,7 @@ The on-northpole infrastructure consists of mainly windows servers and he chose 
 
 ## Azure App Service Hybrid Connection
 
-Santa Claus's resources are not available on the internet, but the are able to make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
+Santa Claus's resources are not available on the internet, but they are able to make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
 Santa Claus want to expose a new API providing information about his elves. The API will be created in the cloud as a Web App, but some of the data needed for the API is only available from servers on-northpole at the moment. To establish this Santa Claus needs:
 
