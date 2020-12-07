@@ -4,6 +4,15 @@ post_year: 2020
 post_day: 11
 title: "[Draft] Back to basics"
 image: https://images.unsplash.com/photo-1492584115029-f633e64c61fa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2167&q=80
+ingress: It's so easy nowadays to get a web application up and running in just a
+  couple of minutes. We've got tools like Create-react-app, React boilerplate,
+  Slingshot etc., which let developers set up and prototype anything blazing
+  fast. These tools come with Webpack, Babel and more already configured for
+  you, so you don't have to know anything about it or what it is used for.  This
+  is obviously very valuable and cost-effective, but we also have to remember to
+  keep in touch with our roots and get some sense of what is going on under the
+  hood. So for today's topic we will be going back to the basics and see how we
+  can set up most of what we need from scratch!
 description: "Bekk Christms Webpack Babel React "
 links:
   - title: Webpack
@@ -15,11 +24,11 @@ links:
 authors:
   - Aryan Iranzamini
 ---
-It's so easy nowadays to get a web application up and running in just a couple of minutes. We've got tools like Create-react-app, React boilerplate, Slingshot etc., which let developers set up and prototype anything blazing fast. These tools come with Webpack, Babel and more already configured for you, so you don't have to know anything about it or what it is used for.  This is obviously very valuable and cost-effective, but we also have to remember to keep in touch with our roots and get some sense of what is going on under the hood. So for today's topic we will be going back to the basics and see how we can set up most of what we need from scratch!
+
 
 ### Introduction - Setting up the project
 
-You can get far by just using React together with Webpack and Babel, and that is exactly what we'll be looking at in this article. The way we will do this is by first setting up a simple application that is displaying some text using JavaScript and HTML. Then throughout the article we will be adding Webpack, Babel and React to see how one would go about it and what it actually does to the project.
+Today we will looking at how one could set up a simple React application from scratch. You can get far by just using React together with Webpack and Babel, and that is exactly what we'll be looking at. The way we will do this is by first setting up a simple application that is displaying some text using JavaScript and HTML. Then throughout the article we will be adding Webpack, Babel and React to see how one would go about it and how it affects the code/project.
 
 Lets start off by just adding an empty HTML file that imports Lodash:\
 `index.html` 
@@ -66,9 +75,9 @@ Now if we call our javascript code from an inline script in the html file, we ca
 
 Cool, but we can do better!
 
-### Configuring webpack
+### Configuring Webpack
 
-This part is not as scary as some people might think, and we will see here that it's quite easy to get a simple configuration that lets us get started with our application. But first and foremost, what is webpack and why do we need it?
+This part is not as scary as some people might think, and we will see here that it's quite easy to get a simple configuration that lets us get started with our application. But first and foremost, what is Webpack and why do we need it?
 
 ### What
 
@@ -76,13 +85,13 @@ Webpack is a \*module bundler\* for the web, which in practice means that it tak
 
 **Why**
 
-To execute javascript code in the browser we have to include every `.js` file in a script tag in the html page, make sure they are loaded in the correct order so e.g utility functions are loaded before other parts of the code that rely on them, and so on. This is tedious, error prone and hardly scales well. It is much easier to work with modules, but the problem is that browsers don't understand them - well not unless you translate it for them.
+To execute JavaScript code in the browser we have to include every `.js` file in a script tag in the html page, make sure they are loaded in the correct order so e.g utility functions are loaded before other parts of the code that rely on them, and so on. This is tedious, error prone and hardly scales well. It is much easier to work with modules, but the problem is that browsers don't understand them - well not unless you translate it for them.
 
-Let's recreate the code sample above but this time using modules and webpack.
+Let's recreate the code sample above but this time using modules and Webpack.
 
 1. Run `npm init` to initialize the package manager for the project
 2. Install webpack along with a html plugin, `npm install webpack html-webpack-plugin --save-dev`
-3. For webpack to know what to do, we need to specify a configuration file `webpack.config.js`:
+3. For Webpack to know what to do, we need to specify a configuration file `webpack.config.js`:
 
 ```javascript
 const path = require("path");
@@ -102,9 +111,9 @@ module.exports = {
 };
 ```
 
-In the configuration file above, we tell webpack to look for the `index.js` file in the src folder to start its bundling process, and that the output should be in a file called `main.js` in a new folder `/dist`. The purpose of the html plugin is that it generates an HTML5 file that includes all your webpack bundles in the body using script tags.
+In the configuration file above, we tell Webpack to look for the `index.js` file in the src folder to start its bundling process, and that the output should be in a file called `main.js` in a new folder `/dist`. The purpose of the html plugin is that it generates an HTML5 file that includes all your Webpack-bundles in the body using script tags.
 
-Now that webpack is in place, we can rewrite our `index.js` file to use the installed version of Lodash that we got through npm.
+Now that Webpack is in place, we can rewrite our `index.js` file to use the installed version of Lodash that we got through npm.
 
 ```javascript
 import _ from "lodash"; // Use lodash installed from npm
@@ -128,7 +137,7 @@ The next step is to configure Babel. But before we jump right into it, I'll try 
 
 **What**
 
-Babel is a "transpiler" for JavaScript. A transpiler is a tool used to take a high-level programming language and turn it into another (or same) high-level programming language. In our case, babel takes JavaScript code and turns it into backwards compatible JavaScript code.
+Babel is a "transpiler" for JavaScript. A transpiler is a tool used to take a high-level programming language and turn it into another (or same) high-level programming language. In our case, Babel takes JavaScript code and turns it into backwards compatible JavaScript code.
 
 **Why**
 
@@ -136,7 +145,7 @@ The JavaScript language is continuously being updated with new features and func
 
 Now that you're an expert on transpiling, let's set it up!
 
-Babel is configured using presets. There are two presets that we're interested in, babel-preset-env and preset-react, which we need to install. For Babel to work at all we also need to install the core-library. Lastly, for webpack to be able to talk to Babel during its bundling process, it needs babel-loader. We won't dive into webpack loaders in this article, but essentially what you need to know is that Babel is configured using presets and babel-loader is what helps webpack use Babel.
+Babel is configured using presets. There are two presets that we're interested in, babel-preset-env and preset-react, which we need to install. For Babel to work at all we also need to install the core-library. Lastly, for Webpack to be able to talk to Babel during its bundling process, it needs babel-loader. We won't dive into Webpack loaders in this article, but essentially what you need to know is that Babel is configured using presets and babel-loader is what helps Webpack use Babel.
 
 Now go ahead and run:
 
@@ -151,7 +160,7 @@ Then add the presets to your `.babelrc`  configuration file:
 }
 ```
 
-Lastly, we need to update our webpack config file and tell webpack to use babel during its bundling process.
+Lastly, we need to update our Webpack config file and tell Webpack to use babel during its bundling process.
 
 ```javascript
 module: {
@@ -168,7 +177,7 @@ module: {
   },
 ```
 
-The configuration above tells webpack to use Babel for files matching the regexp given in test, which are files ending with `.js` or `.jsx`.
+The configuration above tells Webpack to use Babel for files matching the regexp given in test, which are files ending with `.js` or `.jsx`.
 
 ### Putting the pieces together
 
