@@ -40,3 +40,5 @@ Uffizzi is one of the few platforms that offer custom domains + SSL as a part of
 # Conclusion
 
 Overall, Uffizzi provides a great experience for those who just want to run a web application without handling all the cloud infrastructure around.The free environment is fully functional and even provides custom domains with SSL. Give it a try if you are looking for a zero ops platform for your application.
+
+# 👋
