@@ -31,14 +31,14 @@ Uffizzi can set up and deploy an application directly from Github. There is no n
 
 <img src="https://github.com/nordineb/Uffizzi-demo/blob/main/images/buildpacks.png?raw=true" alt="build-log" width="600"/>
 
-Uffizzi watches our Github repository and automatically builds and deploys changes immediatly. It worked very well for my simple application, but there is little debugging possibilities. Alternatively, Uffizzy can monitor a Dockerhub account and automatically deploy new images. 
+Uffizzi watches our Github repository and automatically builds and deploys changes immediately. It worked very well for my simple application, but there is little debugging possibilities. Alternatively, Uffizzy can monitor a Dockerhub account and automatically deploy new images. 
 
 # Custom Domain
 
-Uffizzi is one of the few platforms that offer custom domains + SSL as a part of its free offering. It's always annoying to have to use Cloudflare or AWS Cloudfront on top of a website just to solve that problems. 
+Uffizzi is one of the few platforms that offer custom domains + SSL as a part of its free offering. It's always annoying to have to use Cloudflare or AWS Cloudfront on top of a website just to solve that problem. 
 
 # Conclusion
 
-Overall, Uffizzi provides a great experience for those who just want to run a web application without handling all the cloud infrastructure around.The free environment is fully functional and even provides custom domains with SSL. Give it a try if you are looking for a zero ops platform for your application.
+Overall, Uffizzi provides a great experience for those who just want to run a web application without handling all the cloud infrastructure around. The free environment is fully functional and even provides custom domains with SSL. Give it a try if you are looking for a zero ops platform for your application.
 
 # 👋
