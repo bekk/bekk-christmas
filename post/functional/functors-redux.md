@@ -18,9 +18,9 @@ In the previous article I said you could think of a functor as a structure or co
 
 ## The functor laws
 
-Unlike my vague explanation in the previous article a functor is actually a very spesific thing and is defined by rules or properties the context has to adhere to. These laws come from mathematics, spesifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
+Unlike my vague explanation in the previous article a functor is actually a very spesific thing and is defined by rules or properties the context has to adhere to. These laws come from mathematics, specifically a branch called Category Theory. This is an area that I will not claim much knowledge of but great minds have found similarities between this particular part of mathematics and what we do in programming. 
 
-In addition to having a `map` function, functors needs to follow some rules.
+In addition to having the `map` function, functors needs to follow some rules.
 The rules for functors are often called the functor laws. I'm not completely sure why. It might have something to do with math and also its sounds very sophisticated. :P Lets get in on the sophistication!
 
 ### 1. Law of preservation of identity
@@ -48,7 +48,7 @@ The second law is not very complicated either but assumes that you know about co
 
 Composition in functional programming (FP) is the ability to compose multiple functions into one single function. This is not so often used in object oriented programming (OOP) but quite common in FP. 
 
-Composition is "glueing" functions together into one function. This is such a common thing to do that many languages has dedicated operators for this. Lets look at an example to see it in action to see why this might be useful. I'll be doing the examples in Elm as composition is a bit akward in javascript and not that common.
+Composition is "gluing" functions together into one function. This is such a common thing to do that many languages has dedicated operators for this. Lets look at an example to see it in action to see why this might be useful. I'll be doing the examples in Elm as composition is a bit awkward in javascript and not that common.
 
 Lets say you have a user record that has the fields name and age:
 
@@ -59,7 +59,7 @@ type alias User =
     }
 ```
 
-To get the name of a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signatur `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
+To get the name of a User record we can in Elm use an accessor function which is available for every field defined in a record.<sup>[^accessor]</sup> For the `age` field this function is called `.age` and has the type signature `User -> Int`. It takes a `User` type as an argument and returns a `Int`. In this case it is the content of the age field.
 
 Go get the age from a user you would to: 
 
@@ -89,7 +89,7 @@ When the output of a function matches the input of another we can compose them t
 
 #### The second law
 
-Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that funtion over the functor should produce the same result as mapping the individual functions over the functor in sequense. Lets look as some code to make sense of it:
+Now that you hopefully know a bit about function composition lets look at the second law of functors. The rule says that composing functions into a single function and then mapping that function over the functor should produce the same result as mapping the individual functions over the functor in sequense. Lets look as some code to make sense of it:
 
 ```elm
 users : List User
@@ -118,9 +118,9 @@ For the last constant, `agesTthroughMaps`, the list of the users age is created 
 
 And this is the result of the second law: the values in the two constants should be equal. A list of strings: `[‘20’, ‘22’, ‘30’]`
 
-See full example in ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
+See full example in Ellie: <https://ellie-app.com/bKhq8M4vyjYa1>
 
-## The consequenses of the laws
+## The consequences of the laws
 
 The laws might seem a bit random and not very helpful at first glance, but it can actually help us a lot. To be a functor the structure/container/context has to follow these laws. It can not do anything weird with the function that is passed inn. The only thing it can do is apply the function to the value in the context. The functor might have some extra logic around when to apply the function. A list might be empty so there would be nothing to apply the function and similarly with `Maybe`. Take a look at [last years article](https://functional.christmas/2019/20) to see a more complex example.
 
