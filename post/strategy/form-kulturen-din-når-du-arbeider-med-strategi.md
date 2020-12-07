@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 11
+post_day: 10
 title: Kan man forme kulturen når man arbeider med strategi?
 image: https://images.unsplash.com/photo-1491911923017-19f90d8d7f83?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80
 ingress: I går skrev vi at kulturen i en organisasjon er avgjørende for å lykkes
