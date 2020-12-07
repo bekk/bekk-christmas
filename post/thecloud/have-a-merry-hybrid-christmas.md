@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 15
 title: Have a merry hybrid Christmas
+image: https://flic.kr/p/2jBv5xN
 ingress: 2020 has been, and still is, a special year for us because of the
   pandemic dominating most of the news (fake or not). Despite the fact that he
   apparently is
