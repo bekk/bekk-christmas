@@ -11,4 +11,4 @@ ingress: Uffuzzi is a new cloud platform that helps developers deploy and host
 authors:
   - Nordine Ben Bachir
 ---
-Uffizzi App Platform
+https://github.com/nordineb/Uffizzi-demo
