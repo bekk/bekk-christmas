@@ -3,7 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 16
 title: Hvorfor starter folk egentlig flyselskaper?
-image: https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80
+image: https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
 ingress: >-
   > "If you want to be a millionaire, start with a billion dollars and launch a
   new airline" 
