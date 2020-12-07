@@ -2,7 +2,7 @@
 calendar: talks
 post_year: 2020
 post_day: 10
-title: Tips and tricks to stay calm when entering the stage
+title: Tips & tricks staying calm on stage
 authors:
   - Julia Grundström
 ---
