@@ -52,7 +52,7 @@ nFirstSquaresSum n =
 
 While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.* 
 
-The backwards pipe, `<|` *can* (don't confuse with *should*) be used to express the same sequence of calls as its brother `|>`. Rewriting the example above, that would put `List.sum` first and on a line of its own. This can become confusing since in reality it is the last function called. Reformatted, this would become:
+The backwards pipe, `<|` *can* be used to express the same sequence of calls as its brother `|>`. Rewriting the example above with the same formatting, would put `List.sum` first and on a line of its own. This is confusing since in reality it is the last function called. Reformatted, this would become:
 
 ```elm
 nFirstSquaresSum: Int -> Int
@@ -66,25 +66,7 @@ This is closer to how one would write in a language that uses parens for functio
 2. Dont mix |> and <| in the same expression
 3. Use a single <| in an expression to avoid parens
 
-Of these, number 3 deserves additional examples. Here we 
-
-```elm
-nFirstSum : SumType -> Int -> Int
-nFirstSum sumType n =
-    let
-        numbers =
-            List.range 1 n
-    in
-    List.sum <|
-        case sumType of
-            Normal ->
-                numbers
-
-            Squares ->                
-                List.map square numbers
-```
-
-Recall [day 1](https://www.elm.christmas/2020/1), when we noticed that we can pair two values with both syntax `(1, "one")` and the function `Tuple.pair`. One way this function is useful is with pipes. In the code below, we pair an argument to the function tup with the result of some other expression. With a pipe and Tuple.pair it looks cleaner than if we would use normal tuple syntax.
+Of these, number 3 deserves additional examples. Recall [day 1](https://www.elm.christmas/2020/1), when we noticed that we can pair two values with both syntax `(1, "one")` and the function `Tuple.pair`. One way this function is useful is with pipes. In the code below, we pair an argument to the function tup with the result of some other expression. With a pipe and Tuple.pair it looks cleaner than if we would use normal tuple syntax.
 
 ```elm
 tup : Int -> (Int, String)
