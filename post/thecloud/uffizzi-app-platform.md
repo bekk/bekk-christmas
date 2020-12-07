@@ -4,12 +4,15 @@ post_year: 2020
 post_day: 8
 title: Uffizzi App Platform
 ingress: Uffizzi is a new cloud platform that helps developers deploy and host
-  applications with zero cloud infrastructure knowlege. Uffuzzi is similar to
+  applications with zero cloud infrastructure knowlege. Uffizzi is similar to
   Heroku in many ways, but it is built on top of GKE which means that it has a
   very solid and scalable foundation.
 authors:
   - Nordine Ben Bachir
 ---
+
+<img src="https://github.com/nordineb/Uffizzi-demo/blob/main/images/cloud-env.png?raw=true" alt="build-log" width="600"/>
+
 For this [demo](https://github.com/nordineb/Uffizzi-demo), I'm using the free enviroment from Uffizzi:
 * 0.5Gb
 * Custom Domain
