@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 12
+post_day: 11
 title: Kan endringsmotstand være en ressurs?
 image: ""
 ingress: ""
