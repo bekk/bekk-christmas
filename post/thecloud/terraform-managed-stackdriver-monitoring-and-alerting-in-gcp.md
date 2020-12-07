@@ -8,7 +8,7 @@ ingress: >-
   You've got a Kubernetes cluster running your application on Google Cloud
   Platform (GCP), managed by Terraform.
 
-  Metrics from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP. Or you can manually select the metrics, aggregations, alignments, etc. to be shown in your Stackdriver dashboard. However, this can also be managed with Terraform, allowing a lot more control over your monitoring.
+  Metrics from your cluster, from your app or any other instance in our cluster - what to do with them? Sure, you've got `Metrics Explorer` in GCP that lets you play around with the metrics. Another option is to create a monitoring dashboard by manually selecting the metrics, aggregations, alignments, etc. to be shown. However, this can also be managed with Terraform, allowing a lot more control over your monitoring.
 links: []
 authors:
   - Ole Magnus Lie
@@ -92,7 +92,7 @@ Applying this Terraform module creates your dashboard, `My Christmas dashboard`,
 
 Adding more widgets is as simple as filtering and aggregating the metrics as you wish.
 
-## Something is wrong - ALERT ME!!
+## Something is wrong - alert me!
 
 To set up alerting in GCP Stackdriver, you'll need a notification channel. This can be manually set up in Stackdriver, but Terraform can handle this as well.
 
@@ -156,7 +156,7 @@ resource "google_monitoring_alert_policy" "frontend_restart_count_alert" {
 
 These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. An alert message is then sent to the selected notification channel, the Slack channel in our case.
 
-## Further reading
+## Application specific metrics
 
 This article highlights how to monitor and alert based on metrics from a Kubernetes container. These metrics are automatically exported to Stackdriver. If Prometheus, for example, is scraping metrics from your applications, you'll need the [`Stackdriver Prometheus sidecar`](https://github.com/Stackdriver/stackdriver-prometheus-sidecar) to export the metrics to Stackdriver. The sidecar is added [`here`](https://github.com/prometheus-community/helm-charts/blob/933cfcb/charts/kube-prometheus-stack/values.yaml#L2072).
 
