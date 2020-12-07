@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 8
 title: Uffizzi App Platform
-image: https://images.unsplash.com/photo-1603287431940-718e4143f95a
+image: https://images.unsplash.com/photo-1466278313810-9aca9abea861
 ingress: Uffizzi is a new cloud platform that helps developers deploy and host
   applications with zero cloud infrastructure knowledge. Uffizzi is similar to
   Heroku in many ways, but it is built on top of GKE, which means that it has a
