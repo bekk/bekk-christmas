@@ -35,7 +35,7 @@ authors:
 
 
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" /></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" width="76px" height="100px" /></a>
 ### Ola
 
 
