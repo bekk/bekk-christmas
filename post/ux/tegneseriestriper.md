@@ -5,13 +5,12 @@ post_day: 13
 title: Ting du har hørt i møter i år
 image: ""
 ingress: >-
-  \
+  I år har vi i faggruppa *Tegning, form og animasjon* blant annet trent på våre
+  tegneskillz. Dagens luke består dermed av et knippe tegninger som visualiserer
+  «ting du har hørt i møter i år – og i fjor». 
 
-  I år har vi i faggruppa *Tegning, form og animasjon* blant annet trent på våre tegneskillz. Dagens luke består dermed av et knippe tegninger som visualiserer «ting du har hørt i møter i år». \
 
-  \
-
-  Noe faglig, litt til inspirasjon, mest for gøy. God jul 🎅
+  Noe til faglig ettertanke, litt som inspirasjon, mest for gøy. God jul 🎅
 links: []
 authors:
   - Helen Le
@@ -25,5 +24,7 @@ authors:
 ## Hørt på Teams:
 
 ![](/assets/gammelhånd.png)
+
+![](/assets/dyskord-digital.png)
 
 ![](/assets/taetskippertak.png)
