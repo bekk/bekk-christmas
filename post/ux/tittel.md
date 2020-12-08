@@ -112,13 +112,14 @@ Forrige lørdag fikk jeg en skikkelig god følelse. Jeg hadde på Nyhetsmorgen, 
 
 ##Linn
 
-Jeg er over middels glad i å planlegge hverdagene. Og den siste tiden, så kan jeg vel si at jeg har fått øvd meg på å ikke planlegge så mye. Ta en dag om gangen. Jeg kan late som at det liksom har vært deilig og rolig. Og det har det jo av og til vært. Men egentlig har det bare gjort meg latere. Det har blitt mindre trening og færre spennende ting som skjer gjennom dagene. 
+"Jeg er over middels glad i å planlegge hverdagen. Og den siste tiden, så kan jeg vel si at jeg har fått øvd meg på å ikke planlegge så mye. Ta en dag om gangen. Jeg kan late som at det liksom har vært deilig og rolig. Og det har det jo av og til vært. Men egentlig har det bare gjort meg latere. Det har blitt mindre trening og færre spennende ting som skjer gjennom dagene. 
 
 Jeg har lært og opplevd å ta hensyn til at folk reagerer på disse situasjonene helt forskjellig og at det er helt greit. Ingen shaming! At det som var helt greit og innafor én uke, plutselig ble sett på som en lite gjennomtenkt beslutning uka etterpå. En uke er en venn mer bekymret og ønsker ikke å møtes fysisk, en annen uke er det noen andre. Noen Bekkere ønsker å møte fysisk til fagdag, andre tenker det er det siste de ønsker å utsette seg for. Og jeg håper virkelig at vi kan være åpne og se alles behov og ønsker i dette.
 
-Jeg jobber i NAV og med fokus på arbeidssøkere. Å se tallene stige dag for dag. Time for time i de verste periodene. Det har vært rart og nesten uforståelig. Å vite at det var så mange skjebner og livssituasjoner som er endret. Da har jeg kjent på mange følelser. Blant annet både håpløshet og sterkt engasjement. 
+Jeg jobber i NAV og med fokus på arbeidssøkere. Å se tallene stige dag for dag, time for time i de verste periodene – det har vært rart og nesten uforståelig. Å vite at det er så mange skjebner og livssituasjoner som er endret. Da har jeg kjent på mange følelser. Blant annet både håpløshet og sterkt engasjement. 
 
-Synes det har vært skikkelig vanskelig at arbeidsplassen er samme sted som avslappingen. I sommer, da det var tre dager igjen av sommerferien, så gruet jeg meg skikkelig til å komme hjem i leiligheten. Det var jo der jobben var. Jeg var bekymret for at jeg ikke skulle klare å slappe av de siste feriedagene. Har blitt flinkere og flinkere til å virkelig rydde bort jobben når arbeidsdagen er over. Å bare se en tom postit lapp er nok for å få hjernen til å spinne og spinne.
+Jeg synes det har vært skikkelig vanskelig at arbeidsplassen er samme sted som avslappingen. I sommer, da det var tre dager igjen av sommerferien, så gruet jeg meg skikkelig til å komme hjem til leiligheten. Det var jo der jobben var. Jeg var bekymret for at jeg ikke skulle klare å slappe av de siste feriedagene. Nå har jeg blitt flinkere og flinkere til å virkelig rydde bort jobben når arbeidsdagen er over. Å bare se en tom post-it lapp er nok for å få hjernen til å spinne og spinne."
+
 
 
 
