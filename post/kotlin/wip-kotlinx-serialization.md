@@ -18,7 +18,10 @@ authors:
 
 To achieve this level of flexibility the process is split into two distinct phases; serialization and encoding. The serialization phase is shared between all data formats, and is responsible for converting a object into a serial sequence of primitives. The sequence of primitives is then passed on to encoding, where the data format specifics are located.
 
-
+<p>
+<img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/serialization-light.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
+<img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/serialization-dark.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
+</p>
 
 <pre style="display:none;">
 Usikker på om dette er riktig vinkling
