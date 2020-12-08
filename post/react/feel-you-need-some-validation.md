@@ -21,7 +21,8 @@ ingress: "He couldn't believe it. This certainly couldn't be true. Someone else
 links:
   - title: React Hook Form
     url: https://react-hook-form.com/
-authors: []
+authors:
+  - Markus Rauhut
 ---
 ## Validation to the Rescue
 
