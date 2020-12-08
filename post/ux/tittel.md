@@ -22,6 +22,12 @@ Og her kommer en sick body.
 <p>&nbsp;</p>
 
 
+
+<img class="light-theme-image" src=https://ibb.co/NSG3hF2"/>
+
+<img class="dark-theme-image" src=https://ibb.co/NSG3hF2"/>
+
+
 !\[alt text](https://ibb.co/NSG3hF2 “Ola")
 
 
