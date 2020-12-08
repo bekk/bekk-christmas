@@ -1,7 +1,7 @@
 ---
 calendar: kotlin
 post_year: 2020
-post_day: 12
+post_day: 13
 title: "WIP: Operator Overloading"
 ingress: ""
 links:
