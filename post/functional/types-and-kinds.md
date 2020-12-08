@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 18
 title: Types and Kinds
 ingress: There are plenty of buzz words when it comes to type systems. Today we
-  take a closer look at *kinds*.
+  explore the concepts related to *kinds*.
 description: ""
 links: []
 authors:
@@ -27,7 +27,7 @@ The definition of `Maybe` is essentially this:
 data Maybe a = Just a | Nothing
 ```
 
-The `a` here is a parametrically polymorphic type parameter. In languages like Java, a similar effect is achieved with generic types. In languages like English, this means that `Maybe` needs another type to become a concrete type. You can't have a value that's just (*sic.*) `Maybe`: It's a *type constructor*, which is akin to a function in the domain of types: it takes a type and returns another type.
+The `a` here is a parametrically polymorphic type parameter. In a language like Java, a similar effect is achieved with generic types. In a language like English, this means that `Maybe` needs another type to become a concrete type. You can't have a value that's just (*sic.*) `Maybe`: It's a *type constructor*, which is akin to a function in the domain of types: it takes a type and returns another type.
 
 ## Kinds
 
