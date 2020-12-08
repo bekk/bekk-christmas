@@ -119,7 +119,7 @@ It basically says it is *Not Connected* and he needs to perform the last step in
 
 ## The last (and manual) step
 
-Finally, to make the outbound connection to Azure, Santa Claus has to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server is to be connected to Azure. Running the Hybrid Connection Manager on this server he discovers that something went wrong with the provisioning. The hybrid connection manager reports "No endpoint configured".
+Finally, to make the outbound connection to Azure, Santa Claus has to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server to be connected to Azure. Running the Hybrid Connection Manager on this server he discovers that something went wrong with the provisioning. The hybrid connection manager reports "No endpoint configured".
 
 ![No endpoint configured](/assets/notconfigured.png "No endpoint configured")
 
