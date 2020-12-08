@@ -41,7 +41,7 @@ Vi kan kjenne igjen denne overoptimismen [fra et intervju med Olav Lysne i mai](
 >
 > *\- Om vi klarer det, kan vi gå tilbake til å ha fotballkamper, gå på festivaler og gi hverandre klemmer igjen. Appen vil være med og redusere, sier Lysne.*
 
-Vi kan imidlertid konkludere med at mobil smittesporing langt ifra har vært en gamechanger i noen land. Rotårsaken er at smittespredning og blåtann-nærkontakter er vesensforskjellig, som mange innvendte helt fra starten.
+Vi kan imidlertid konkludere med at mobil kontaktsporing langt ifra har vært en gamechanger i noen land. Rotårsaken er at smittespredning og Bluetooth-nærkontakter er vesensforskjellig, som mange innvendte helt fra starten.
 
 #### Forskrift, frivillighet og formål
 
@@ -67,17 +67,17 @@ Det er også interessant å lese [vurderingene fra FHIs personvernombud](https:/
 
 Smittestopp ville blitt den mest inngripende og omfattende masseovervåkningen av Norges befolkning gjennom tidene. Det er problematisk av mange grunner. I tillegg til risikoen for tyveri og lekkasje, var også formålsutglidning heftig diskutert. Data som finnes vil bli brukt. Nedkjølingseffekten er også en konsekvens, ved at befolkningen endrer adferd under overvåkning og begrenser privat og offentlig meningsbryting. På sikt er den mest alvorlige konsekvensen at vi ville endret toleransegrensen for når og hvorfor overvåkning var nødvendig. Det er ironisk at [Simulas Kyrre Lekve anerkjenner at masseovervåkningen er problematisk](https://podtail.com/no/podcast/waterhouse/-2-prat-med-kyrre-lekve-fra-simula-om-prosess-og-d/), men svarer ved å peke på sikkerhet samt oppfordre befolkningen til å stole på myndighetene: "*Det er veldig mange land jeg mener ikke bør ta i bruk den norske løsningen...*".
 
-Et [svar fra Simulas Smittestopp Q&A](https://www.simula.no/news/digital-smittesporing-sporsmal-og-svar) sier mye om hvordan de tenkte rundt masseinnsamlingen av data. Dette er hårreisende lesing.
+Et [svar fra Simulas Smittestopp Q&A](https://www.simula.no/news/digital-smittesporing-sporsmal-og-svar) sier mye om hvordan de tenkte rundt masseinnsamlingen av data. Simula bagatelliserer innsamlingen ved å framstille det som behandlingen starter først ved bruk. Dette er hårreisende lesing:
 
 > ***Blir jeg sporet hele tiden?***
 >
 > *Nei. Programmet søker bare etter tilfeller av nærkontakt etter at en bruker er testet og bekreftet smittet. Den følger ikke individers bevegelser og heller ikke hvor de befinner seg. Den finner bare tilfeller der en bruker har vært mindre enn 2 meters avstand for mer enn 15 min fra en konstatert smittet bruker. Telefonnumrene til telefonene som har vært i nærkontakt vil brukes av helsemyndighetene til å sende ut varsling.*
 
-Som en forutsetning for analyseløsningen skulle innsamlede data anonymiseres. Det første problemet var at FHI begynte å samle inn data før analyseløsningen var på plass. Store mengder personopplysninger ble fortløpende samlet inn, uten at FHI hadde praktisk mulighet til å gjøre bruk av dataene. [Datatilsynet fant dette særlig kritikkverdig](https://www.datatilsynet.no/contentassets/ae1905a8b88d4d869f1e059b60be35fd/Vedtak-om-midlertidig-forbud-mot-a-behandle-personopplysninger.pdf). Den andre problemstillingen, som man aldri fikk svar på, er om det faktisk er mulig å anonymisere dette datasettet. NRK viste i denne perioden [hvor enkelt det var å identifisere enkeltindivider](https://www.nrk.no/norge/xl/avslort-av-mobilen-1.14911685) ved å analysere lokasjonsdata. Sist men ikke minst viste det seg at [store deler av datasettet ble *pseudonymisert*](https://www.tekna.no/magasinet/10-sporsmal-og-svar-om-smittestoppappen/), ikke anonymisert. Pseudonymiserte data er fremdeles personopplysninger.
+Som en forutsetning for analyseløsningen skulle innsamlede data anonymiseres. Det første problemet var at FHI begynte å samle inn data før analyseløsningen var på plass. Store mengder personopplysninger ble fortløpende samlet inn, uten at FHI hadde praktisk mulighet til å gjøre bruk av dataene. [Datatilsynet fant dette særlig kritikkverdig](https://www.datatilsynet.no/contentassets/ae1905a8b88d4d869f1e059b60be35fd/Vedtak-om-midlertidig-forbud-mot-a-behandle-personopplysninger.pdf). Den andre problemstillingen, som man aldri fikk svar på, er om det faktisk er mulig å anonymisere dette datasettet. NRK viste i denne perioden [hvor enkelt det var å identifisere enkeltindivider](https://www.nrk.no/norge/xl/avslort-av-mobilen-1.14911685) ved å analysere lokasjonsdata. Sist men ikke minst fremsto det som uklart om [FHI forsto personvernsforskjellen mellom *pseudonymisering* og anonymisering](https://www.tekna.no/magasinet/10-sporsmal-og-svar-om-smittestoppappen/), og at pseudonymiserte  fremdeles er personopplysninger.
 
 ## Personvern != sikkerhet
 
-Smittestopp hadde altså en rekke personvernsproblemer. Sikkerhet er ikke relevant for brorparten av dem. Eksempelvis kan nytteverdien umulig bli bedre på grunn av sikkerhet. Problemene med forskrift, frivillighet og formål avhjelpes heller ikke med sikkerhet. Tilsvarende med dataminimering, innebygd personvern osv.
+Smittestopp hadde altså en rekke personvernsproblemer. Sikkerhet er ikke relevant for brorparten av dem. Eksempelvis kan nytteverdien umulig bli bedre på grunn av sikkerhet. Problemene med forskrift, frivillighet og formål avhjelpes heller ikke med sikkerhet. Tilsvarende kan ikke dataminimering eller innebygd personvern løses kun ved å forbedre sikkerheten.
 
 Når det er sagt, er det riktig at personvern forutsetter god sikkerhet og beskyttelse av personopplysningene som behandles. Autentisering, tilgangskontroll, innsynslogging og kryptering er viktige sikkerhetstiltak som brukes for å sikre dataene. Men selv om sikkerhet er en viktig del av personvern, er det bare en begrenset del. Sikkerhet kan bare i begrenset grad kompensere for noen av svakhetene beskrevet ovenfor.
 
@@ -90,16 +90,23 @@ Smittestopp hadde forøvrig også [en rekke rene sikkerhetssårbarheter og -svak
 * Dårlig kodekvalitet som gjør det vanskelig å vedlikeholde, forstå og feilsøke.
 * Manglende automatiserte tester.
 * API nøkler og passord i kildekoden og Git-historikken.
-* Disse funnene indikerer manglende sikkerhetskompetanse og -kultur. Det er ikke akseptabelt når man skal passe på sensitive data om store deler av befolkningen.
+
+Disse funnene indikerer manglende sikkerhetskompetanse og -kultur, og er fullstendig uakseptabelt når man skal passe på sensitive data om store deler av befolkningen.
 
 Det er nærmest parodisk når Simula hevder at "*[Appen er akkurat like sikker som andre tjenester](https://www.tv2.no/a/11382291/)*".
 
 ## Skrikende behov for personvernkompetanse
 
-Det er underlig og skremmende å lese at personvern har vært prioritert svært høyt i utviklingen av Smittestopp. Selv med tydelige tilbakemeldinger fra Datatilsynet, Amnesty, EUs personvernsråd, ekspertgruppen samt eksperter på teknologi og personvern, fortsetter [Helseministeren](https://www.dagbladet.no/meninger/hoie-bommer-om-smittestopp/72908271) og [FHI](https://www.aftenposten.no/norge/i/mRAyz0/fhi-sletter-alle-data-fra-appen-smittestopp) å si at de er uenige i Datatilsynets vurdering. Simula prøver å redde stumpene ved å hevde at Smittestopp havarerte [fordi inngrepet ikke lenger var forholdsmessig når smittetallene hadde blitt så lave](https://www.simula.no/news/smittestopp-og-erfaringer-fra-digital-smittesporing). Dette er åpenbart ikke sant.
+Det er underlig og skremmende å lese at personvern har vært prioritert svært høyt i utviklingen av Smittestopp. Selv med tydelige tilbakemeldinger fra Datatilsynet, Amnesty, EUs personvernsråd, ekspertgruppen samt eksperter på teknologi og personvern, fortsatte [Helseministeren](https://www.dagbladet.no/meninger/hoie-bommer-om-smittestopp/72908271) og [FHI](https://www.aftenposten.no/norge/i/mRAyz0/fhi-sletter-alle-data-fra-appen-smittestopp) å si at de var uenige i Datatilsynets vurdering. Simula prøvde å redde stumpene ved å hevde at Smittestopp havarerte [fordi inngrepet ikke lenger var forholdsmessig når smittetallene hadde blitt så lave](https://www.simula.no/news/smittestopp-og-erfaringer-fra-digital-smittesporing). Som vi har sett ovenfor var Smittestopp ulovlig av mange grunner.
 
-Det er forsåvidt greit å være uenig i Datatilsynets vedtak. Men da er man uenig i selve Personopplysningsloven. Det er forøvrig verdt å merke seg at det ikke ble innlevert klage på vedtaket fra Datatilsynet.
+Det er forsåvidt greit å være uenig i Datatilsynets vedtak. Men da er man sannsyligvis uenig i selve Personopplysningsloven. FHI valgte forøvrig ikke å klage på vedtaket fra Datatilsynet.
 
 Smittestopp har avslørt et skrikende behov om bedre personvernkompetanse i offentlig forvaltning. Sentrale politikere og beslutningstakere er ute av stand til å innse sin manglende kunnskap, mens de ignorerer faglig kritikk uten engang å forstå den.
 
-Men Smittestopps prislapp på 45 millioner er et røverkjøp hvis den har ført til økt kunnskap og forståelse for personvern i offentlig forvaltning og i befolkningen generelt.
+## Personvern er obligatorisk
+
+Smittestopp har vist at manglende forståelse og respekt for personvern kan velte en løsning. Behandling av personopplysninger starter ved innsamling, ikke ved bruk. Personopplysningsloven krever at den som behandler personopplysningene dokumenterer forholdsmessighet, nødvendighet og nytteverdi.
+
+Sikkerhet er viktig i personvernsammenheng, og det krever tid og kompetanse å lage sikre løsninger. Men sikkerhet kan ikke kompensere for de ulike kravene og praksisene som loven pålegger. Tilliten til en løsning krever åpenhet, at man erkjenner feil og viser at man lærer underveis. Sist men ikke minst: Personvern dreier seg om hva Personopplysningsloven sier, ikke om hva man synes.
+
+Smittestopps prislapp på 45 millioner er et røverkjøp hvis den har ført til økt kunnskap og forståelse for personvern i offentlig forvaltning og i befolkningen generelt.
