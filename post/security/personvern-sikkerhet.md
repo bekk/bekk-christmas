@@ -91,7 +91,7 @@ Smittestopp hadde forøvrig også [en rekke rene sikkerhetssårbarheter og -svak
 * Manglende automatiserte tester.
 * API nøkler og passord i kildekoden og Git-historikken.
 
-Disse funnene indikerer manglende sikkerhetskompetanse og -kultur. Dette er fullstendig uakseptabelt når man skal passe på sensitive data om store deler av befolkningen. En løsning som er hasteutviklet vil dessuten være mer utsatt for feil og sårbarheter enn løsninger som har hatt bedre tid til sikring og vært i bruk lenge. Det er nærmest parodisk når Simula hevder at "*[Appen er akkurat like sikker som andre tjenester](https://www.tv2.no/a/11382291/)*".
+Funnene indikerer manglende sikkerhetskompetanse og -kultur. Dette er fullstendig uakseptabelt når man skal passe på sensitive data om store deler av befolkningen. En løsning som er hasteutviklet vil dessuten være mer utsatt for feil og sårbarheter enn løsninger som har hatt bedre tid til sikring og vært i bruk lenge. Det er nærmest parodisk når Simula hevder at "*[Appen er akkurat like sikker som andre tjenester](https://www.tv2.no/a/11382291/)*".
 
 ## Skrikende behov for personvernkompetanse
 
