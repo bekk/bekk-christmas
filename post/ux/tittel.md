@@ -9,8 +9,8 @@ ingress: >+
   tre minutter, look further! Dette er ikke den artikkelen. Dette er en
   historie, eller en samling av historier, fra meg og fra mine kollegaer, til
   deg. Om hva året 2020 har gitt oss - på godt og vondt. Som ikke nødvendigvis
-  får deg til å rope heureka. Denne artikkelen skal det ikke konkluderes med noe
-  som helst. Tvert i mot, det skal bare fortelles og deles, rives og åpnes. Jeg
+  får deg til å rope heureka. Denne artikkelen skal ikke konkludere med noe som
+  helst. Tvert i mot, det skal bare fortelles og deles, rives og åpnes. Jeg
   håper du liker det du får!
 
 
