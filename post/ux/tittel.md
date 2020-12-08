@@ -33,13 +33,13 @@ authors:
 Den første historien starter en tirsdag, i midten av november i 2020.  Jeg sitter på sofaen i stua, og på skjermen ruller nok en episode av Friends av lerretet. Jeg ser på klokka og  innser at jeg har hatt lunsjpause i over en time. Litt skuffa ser jeg også at jeg fortsatt sitter i pysjbuksa. Det er 3 minutter til jeg skal være i et møte. Ikkeno stress tenker jeg, for kontoret mitt er knappe 13 skritt unna.
 
 
-Jeg setter meg ned ved arbeidspulten, og kollegaen min og jeg setter i gang med møtet. Vi går gjennom samme tørrprat-tralten – “Ja du er på hjemmekontoret? Ja, går vel for det mest i det. Var en tur innom kontor-kontoret for to uker siden, det var ganske sweet… Yes, la oss sette i gang med møtet”.
+Jeg setter meg ned ved arbeidspulten, og kollegaen min og jeg setter i gang med møtet. Vi går gjennom samme tørrprat-tralten – “Ja du er på hjemmekontoret? Ja, går vel for det meste i det. Var en tur innom kontor-kontoret for to uker siden, det var ganske sweet… Yes, la oss sette i gang med møtet”.
 
 
 Etter møtet sitter jeg igjen med hånden halvveis i været, med smilet limt på ansiktet frem til jeg er helt sikker på at videoen er slått av. Rommet fylles av stillheten og aleinetiden som bare hjemmekontoret kan by på.
 
 
-Jeg får lyst til å spole tilbake til mars i år. Norge er gått i sosial lockdown, og ingen av oss aner hva dette egentlig innebærer, sånn in the long run. «I disse koronatider» begynner å bli de mest beskrivende orda vi har.  Vår arts tilpasningsevne får muligheten til å virkelig briljere. Vi rigger oss til i den kroken vi har, med det hjemmekontoret vi trenger. Vi ringer hverandre over video, og forteller energisk om hvor deilig det er å gå en runde rundt blokka før dagen starter, for å skille mellom jobblivet og ikke-jobblivet. På internett ser vi filmsnutter fra hele verdenen av folk som danser til balkong-konserter, og vi klapper for helsearbeiderne. Sistnevnte dog for å overdøve den høye summetonen som kommer når 5G-nettet skal testes. Barn tegner regnbuer og henger de opp i vinduene, signert «Alt vil bli bra». Om ikke, så går det over sant? Sånn, etter sommeren i verste fall.
+La oss spole tilbake til mars i år. Norge er gått i sosial lockdown, og ingen av oss aner hva dette egentlig innebærer, sånn in the long run. «I disse koronatider» begynner å bli de mest beskrivende orda vi har.  Vår arts tilpasningsevne får muligheten til å virkelig briljere. Vi rigger oss til i den kroken vi har, med det hjemmekontoret vi trenger. Vi ringer hverandre over video, og forteller energisk om hvor deilig det er å gå en runde rundt blokka før dagen starter, for å skille mellom jobblivet og ikke-jobblivet. På internett ser vi filmsnutter fra hele verdenen av folk som danser til balkong-konserter, og vi klapper for helsearbeiderne. Sistnevnte dog for å overdøve den høye summetonen som kommer når 5G-nettet skal testes. Barn tegner regnbuer og henger de opp i vinduene, signert «Alt vil bli bra». Om ikke, så går det over sant? Sånn, etter sommeren i verste fall.
 
 **Nå er det november, og jeg sitter i møter med kollegaen min i pysjbuksa.** 
 
