@@ -34,8 +34,7 @@ authors:
 <p>&nbsp;</p>
 
 
-<img src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" 
-width="200px" height="201px">
+<img src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" >
 
 ## Live
 
