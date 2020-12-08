@@ -31,6 +31,8 @@ One of my favorite recent scientific discoveries highlight just how extremely wi
 
 ### The Brain’s default mode network
 
+![MRI scan of our brains default mode network](https://upload.wikimedia.org/wikipedia/commons/9/9a/Default_mode_network-WRNMMC.jpg)
+
 For several decades scientists have used MRI-machines to study how different areas in the brain get activated when a person is given a specific task. Some areas, aka “language centers”, light up when the research subject is asked to speak or read. Other areas are activated when solving math problems or listening to Beethoven. 
 
 But what happens in the brain when a person is resting? Does the brain deactivate?\
