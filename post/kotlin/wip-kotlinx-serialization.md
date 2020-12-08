@@ -53,7 +53,7 @@ At this point you are ready to convert your object to Json (or another data form
 data class MyFavoriteObject(val favoriteObject: String)
 
 val favorite = MyFavoriteObject("the computer")
-println(Json.encodeToString(favorite)) // prints; {"favoriteObject": "the computer"}
+println(Json.encodeToString(favorite)) // prints; {"favoriteObject": "the computer"}
 println(ProtoBuf.encodeToHexString(favorite)) // prints; 0a0c74686520636f6d7075746572
 ```
 
@@ -62,3 +62,4 @@ And of course you'll be able to convert the output back into an object;
 val fromJson = Json.decodeFromString<MyFavoriteObject>(jsonString)
 val fromProtobuf = ProtoBuf.decodeFromHexString<MyFavoriteObject>(protobufString)
 ```
+
