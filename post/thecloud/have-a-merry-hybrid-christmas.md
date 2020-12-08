@@ -65,7 +65,7 @@ resource "azurerm_app_service" "app_hybrid_christmas" {
 
 ### The Relay
 
-In order to send messages from the app, in the cloud, to on-north-pole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
+In order to send messages from the cloud app to on-north-pole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
 
 ```jsonc
 resource "azurerm_relay_namespace" "sb_northpole" {
