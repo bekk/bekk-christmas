@@ -63,3 +63,7 @@ val fromJson = Json.decodeFromString<MyFavoriteObject>(jsonString)
 val fromProtobuf = ProtoBuf.decodeFromHexString<MyFavoriteObject>(protobufString)
 ```
 
+One caveat to bear in mind is however to what degree your codebase uses java classes, whether they are defined in your codebase or provided by the java runtime environment. This relates to the fact that the framework is depends on having access to `KSerializer`'s in order to work, which classes defined in or by java does not provide. And as such if you try to convert a `java.util.UUID` you'll see a similar exception to the one we got before adding `@Serializable` to `MyFavoriteObject`.
+
+
+
