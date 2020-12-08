@@ -91,4 +91,4 @@ println(json.encodeToString(UUID.randomUUID()))
 In this example we reused the `String.serializer()` to implements our serializer, we registered the serializer, and then successfully converted a `UUID` to JSON. Being able to reuse the `String.serializer()` we could make the implementation rather simple, but more complex data structures will undoubtedly require [more complex serializers](https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/serializers.md#sequential-decoding-protocol-experimental).
 
 
-
+So, should you start porting all you apps to `kotlinx.serialization`? Possibly, if your app is entirely written in Kotlin it will probably work like a charm, and potentially even fix [some issues](https://kotlin.christmas/2020/8). However, if your app is heavily dependent on java classes it may be just easier to use [moshi](https://github.com/square/moshi#kotlin).
