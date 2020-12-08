@@ -17,6 +17,7 @@ ingress: >+
 
   <p>&nbsp;</p>
 
+  ***
 
 
 
@@ -39,7 +40,7 @@ Etter møtet sitter jeg igjen med hånden halvveis i været, med smilet limt på
 Jeg får lyst til å spole tilbake til mars i år. Norge er gått i sosial lockdown, og ingen av oss aner hva dette egentlig innebærer, sånn in the long run. «I disse koronatider» begynner å bli de mest beskrivende orda vi har.  Vår arts tilpasningsevne får muligheten til å virkelig briljere. Vi rigger oss til i den kroken vi har, med det hjemmekontoret vi trenger. Vi ringer hverandre over video, og forteller energisk om hvor deilig det er å gå en runde rundt blokka før dagen starter, for å skille mellom jobblivet og ikke-jobblivet. På internett ser vi filmsnutter fra hele verdenen av folk som danser til balkong-konserter, og vi klapper for helsearbeiderne. Sistnevnte dog for å overdøve den høye summetonen som kommer når 5G-nettet skal testes. Barn tegner regnbuer og henger de opp i vinduene, signert «Alt vil bli bra». Om ikke, så går det over sant? Sånn, etter sommeren i verste fall.
 
 
-Nå er det november, og jeg sitter i møter med kollegaen  min i pysjbuksa. 
+**Nå er det november, og jeg sitter i møter med kollegaen  min i pysjbuksa.** 
 
 
 Året så langt har vært bare myke pakker. Og ja, jeg er redd det er for sent å ta det pent. Jeg føler meg ikke helt ferdig snakka om hvor skoddete, seigt og spesielt det er å leve under en pandemi. Så det er det jeg har lyst til nå da - snakke, fortelle og dele. Jeg håper at ved å få flere til å dele, jo sterkere blir budskapet. Budskapet om at det er helt innafor å miste maska når du atter en gang strekker deg mot en myk pakke under juletreet med ditt navn på, og innser at det er hjemmestrikka grytekluter. Spesielt siden du har hundre av de fra før, og alt du ønska deg til jul var lego.
@@ -84,8 +85,9 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 
 <p>&nbsp;</p>
 
-<a href="https://ibb.co/gtH1N3t"><img src="https://i.ibb.co/ygGTtXg/ola.png" alt="ola" border="0" width="200px" height="201px"></a>
+<a href="https://ibb.co/gtH1N3t"><img src="https://i.ibb.co/ygGTtXg/ola.png" alt="ola" border="0" ></a>
 
+width="200px" height="201px
 
 ## Ola
 
