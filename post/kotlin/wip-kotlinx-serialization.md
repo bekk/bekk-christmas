@@ -6,13 +6,20 @@ title: "WIP: kotlinx.serialization"
 image: https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?w=1226&h=400&fit=crop&crop=edges
 ingress: >-
   With the release of Kotlin 1.4 we got a new treat; `kotlinx.serialization`. A
-  new tool to help us with the cumbersome task of serialization and
-  deserialization of our Kotlin (and Java?) objects. 
+  new tool to help us with the cumbersome task of converting our objects to and
+  from Json. 
 
   We've previously seen how some library may not support kotlin fully, but this is obviously not the case with `kotlinx.serialization` as it is written in Kotlin and available on all Kotlin multiplatform targets.
 authors:
   - Nicklas Utgaard
 ---
+`kotlinx.serialization` provides a framework for converting an object into a sequence of bits and bytes and of course a way of converting it back into an object. It ships with support for Json, Protobuf, CBOR, Properties and HOCON, albeit all except Json are at this point considered experimental. 
+
+
+To achieve this level of flexibility the process is split into two distinct phases; serialization and encoding. The serialization phase is shared between all data formats, and is responsible for converting a object into a serial sequence of primitives. The sequence of primitives is then passed on to encoding, where the data format specifics are located.
+
+
+
 <pre style="display:none;">
 Usikker på om dette er riktig vinkling
 
