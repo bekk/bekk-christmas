@@ -79,7 +79,7 @@ Som en forutsetning for analyseløsningen skulle innsamlede data anonymiseres. D
 
 Smittestopp hadde altså en rekke personvernsproblemer. Sikkerhet er ikke relevant for brorparten av dem. Eksempelvis kan nytteverdien umulig bli bedre på grunn av sikkerhet. Problemene med forskrift, frivillighet og formål avhjelpes heller ikke med sikkerhet. Tilsvarende kan ikke dataminimering eller innebygd personvern løses kun ved å forbedre sikkerheten.
 
-Når det er sagt, er det riktig at personvern forutsetter god sikkerhet og beskyttelse av personopplysningene som behandles. Autentisering, tilgangskontroll, innsynslogging og kryptering er viktige sikkerhetstiltak som brukes for å sikre dataene. Men selv om sikkerhet er en viktig del av personvern, er det bare en begrenset del. Sikkerhet kan bare i begrenset grad kompensere for noen av svakhetene beskrevet ovenfor.
+Når det er sagt, er det riktig at personvern forutsetter god sikkerhet og beskyttelse av personopplysningene som behandles. Autentisering, tilgangskontroll, innsynslogging og kryptering er viktige sikkerhetstiltak som brukes for å sikre dataene. Men selv om sikkerhet er en viktig del av personvern, er det bare en begrenset del. Sikkerhet kan bare på spesifikke områder kompensere for noen av personvernsvakhetene beskrevet ovenfor.
 
 Smittestopp hadde forøvrig også [en rekke rene sikkerhetssårbarheter og -svakheter](https://www.regjeringen.no/contentassets/88ec3360adae44a1a9635fd6c1a58fca/200520_rapport_ekspertgruppa_smittestopp.pdf):
 
