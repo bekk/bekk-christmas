@@ -54,6 +54,8 @@ Yup. That’s you putting your brain’s default mode network to work.)
 
 Other people’s opinion of us affect who we can form an alliance with, who will protect you, who will go against us, who you can attract as a partner, which opportunities you get and much more. This is far from trivial. These are central evolutionary problems (see our blog post [ux.christmas/2019/4](https://ux.christmas/2019/4)) for a social species such as ours. And that is why your brain and emotional systems get so fired up before talking to a crowd.
 
+![Audiences can be scary, paleolithically](https://2018.tri-conf.org/images/tri-conference/Impressions/critical-audience.jpg)
+
 ### The hack(s)
 
 So, doesn’t this mean that it’s only natural to be scared to death over a presentation? 
