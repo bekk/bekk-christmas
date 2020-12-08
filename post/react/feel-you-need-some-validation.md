@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 9
-title: Feel You Need Some Validation
+title: Validate Your Parking
 image: https://images.unsplash.com/photo-1493780758133-e5cfb0d00354?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2097&q=80
 ingress: "He couldn't believe it. This certainly couldn't be true. Someone else
   must have made a mistake here. He read the email a second time. Maybe he
@@ -26,7 +26,7 @@ authors:
 ---
 ## Validation to the Rescue
 
-In Norway, license plates for cars follow a certain pattern: they consist of two letters and five digits (there are some exceptions, such as personal license plates). Considering this, we realize that the above scenario could have been avoided merely by adding some form validation! For this, we will utilize [React Hook Form] (https://react-hook-form.com/), which has become quite popular over the last year. React Hook Form is easy to use, quite lightweight and very performant. It has built-in validation, but also supports schema-based form validation with other tools such as [Yup](https://github.com/jquense/yup), [Superstruct](https://github.com/ianstormtaylor/superstruct) and [Joi](https://github.com/sideway/joi).
+In Norway, license plates for cars follow a certain pattern: they consist of two letters and five digits (there are some exceptions, such as personal license plates). Considering this, we realize that the above scenario could have been avoided merely by adding some form validation! For this, we will utilize [React Hook Form](https://react-hook-form.com/), which has become quite popular over the last year. React Hook Form is easy to use, quite lightweight and very performant. It has built-in validation, but also supports schema-based form validation with other tools such as [Yup](https://github.com/jquense/yup), [Superstruct](https://github.com/ianstormtaylor/superstruct) and [Joi](https://github.com/sideway/joi).
 
 Let's assume we have this very basic skeleton for a parking app:
 
@@ -90,7 +90,7 @@ When registering the input field, we can add several options to adjust how the f
 {errors.licenseNo && errors.licenseNo.message}
 ```
 
-Alternatively, we can use a simple component, `ErrorMessage` (we must first install a seperate NPM package):
+Alternatively, we can use a simple component, `ErrorMessage` (we must first install a separate NPM package):
 
 ```javascript
 <ErrorMessage
@@ -118,7 +118,7 @@ React Hook Form is designed to work best with *uncontrolled components*. This me
 />
 ```
 
-We add a [React Select](https://github.com/JedWatson/react-select) for choosing the cars fuel type by wrapping it inside a `Controller` component using the `as` prop. The Controller automatically injects the `onChange`, `onBlur` and `value` props into the wrapped component. The same applies to other props that may be required by the underlying component (in this case the props `options` and `isClearable`). Validation rules are applied by setting the `rules` prop. Although this is the prefered syntax, you sometimes need to use the `render` prop instead of the `as` prop, which lets you customize events, value and ref:
+We add a [React Select](https://github.com/JedWatson/react-select) for choosing the cars fuel type by wrapping it inside a `Controller` component using the `as` prop. The Controller automatically injects the `onChange`, `onBlur` and `value` props into the wrapped component. The same applies to other props that may be required by the underlying component (in this case the props `options` and `isClearable`). Validation rules are applied by setting the `rules` prop. Although this is the preferred syntax, you sometimes need to use the `render` prop instead of the `as` prop, which lets you customize events, value and ref:
 
 ```javascript
 <Controller
@@ -171,6 +171,6 @@ Let's pack it all up, add a little more logic and styling and voilà – we have
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-
+   
 ## Like a Swiss Army Knife
-There is so much more you can do with React Hook Form! It's too bad I can't cover it all in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides many useful examples. Personally, I have been using this tool for about a year now and have never been in a situation where it couldn't solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind. And yes, it also supports IE11.
+There is so much more you can do with React Hook Form! It's too bad I can't cover it all in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides many useful examples. Personally, I have been using this tool for about a year now and have never been in a situation where it couldn't solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind.
