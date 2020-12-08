@@ -26,7 +26,7 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 |    %     |   rem()   |
 |   ..     | rangeTo() |
 
-When working with the basic types in Kotlin (such as Int, String, Boolean etc.), all operators work in a sensible way. We can for example write `2 + 2` and Kotlin calculates the sum 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
+When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
 
 But what about the user-defined types? Let's say we have a simple date class defined as
 
