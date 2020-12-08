@@ -35,8 +35,6 @@ authors:
 
 
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" maxwidth="76px" height="200px" / ></a>
-### Ola
 
 <p>&nbsp;</p>
 
@@ -48,6 +46,11 @@ authors:
 
 Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om de viktige tingene. Det er mindre “fluff” fordi det er mindre som skjer, og da dukker de ekte temaene opp i stedet. Alle er jo preget av det som skjer i større eller mindre grad, og jeg tror at det også gjør det lettere for oss å svare ordentlig på spørsmålet “Hvordan har du det?”. Når man først deler selv, kommer det ofte tilbake, og man blir dypere kjent. Men jeg har også merket en tendens til “jeg har jo ikke noe å klage over, for alle andre sitter i det samme”, og det er jeg ikke helt enig i. Om man har det bra eller ikke er ikke noe man skal finne ut av ved å sammenlikne seg selv med andre, synes jeg.” 
 
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+
 ### Åshild
 
 "2020 har lært meg at eg må konsentrere meg om meg sjølv og kva eg gjer og ikkje gjer – i starten blei eg så utruleg stressa av alle som ikkje fulgte korona-reglene at eg blei heilt bitter og sliten av det. Eg har lært at folk bretter opp ermene og bidrar. Eg hadde aldri i min villaste fantasi trudd at eg i året 2020 skulle ta på meg munnbind for ein snartur inn på Kiwi og antibace opp og ned i mente.”
@@ -58,3 +61,25 @@ Det har vore trist å ikkje kunne klemme vener og familie, og at eg ikkje har f�
 
 Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig deileg å stresse ned. Ikkje føle at ein må vere med på alt. Og berre vere heime."
 
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" width="150px" height="200px" /></a>
+### Ola
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+##Linn
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+##Anders
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
