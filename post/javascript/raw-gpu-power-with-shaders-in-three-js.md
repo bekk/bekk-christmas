@@ -9,7 +9,7 @@ ingress: "It is time to unleash the christmas spirit hiding behind that noisy
 authors:
   - Holger Ludvigsen
 ---
-All good developers will get presents from Santa. So I am absolutely sure that you have read the previous calendar entry [3D with WebGL and three.js](https://javascript.christmas/2020/9). Although, if you have dabbled in WebGL before, that is not strictly necessary.
+All good developers will get presents from Santa. So I am absolutely sure that you have read the previous calendar entry [3D with WebGL and three.js](https://javascript.christmas/2020/9). Although, if you have dabbled in WebGL before, that is not strictly necessary. All of the final code can be found in [our repository](https://github.com/bekk/webgl-christmas)
 
 ## A shady proposal
 
