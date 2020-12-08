@@ -2,7 +2,7 @@
 calendar: kotlin
 post_year: 2020
 post_day: 9
-title: "WIP: kotlinx.serialization"
+title: "Serialization: New player has joined"
 image: https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?w=1226&h=400&fit=crop&crop=edges
 ingress: >-
   With the release of Kotlin 1.4 we got a new treat; `kotlinx.serialization`. A
