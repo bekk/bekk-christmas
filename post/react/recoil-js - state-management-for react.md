@@ -14,7 +14,7 @@ authors: []
 
 [Recoil.js](https://recoiljs.org/) is a new state management library for [React](https://www.google.com/search?q=reactjs&rlz=1C5CHFA_enNO890NO890&oq=reactjs&aqs=chrome..69i57j0l4j69i60l3.1252j0j7&sourceid=chrome&ie=UTF-8) — offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state 🔥
 
-Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*.
+Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*. And like React, the original Recoil team works at facebook. 
 
 If you have worked with React it should seem familiar. Just take a look at this example. First we use React with useState() to increment a number:
 
@@ -58,7 +58,7 @@ Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.o
 
 #### Tailored for React
 
-Recoil is made specifically for React and offers close compatibility with features React Suspense, Concurrent mode and the team claims to support new React features as they become available.
+Recoil is made specifically for React and offers close compatibility with features like React Suspense, Concurrent mode and the team claims to support new React features as they become available.
 
 #### Easy to learn
 
