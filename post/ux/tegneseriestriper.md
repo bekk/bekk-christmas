@@ -4,12 +4,14 @@ post_year: 2020
 post_day: 13
 title: Ting du har hørt i møter i år
 image: ""
-ingress: |-
-  Noen striper til inspirasjon fra tegning, form og animasjonsgruppa. 
+ingress: >-
+  \
 
+  I år har vi i faggruppa *Tegning, form og animasjon* blant annet trent på våre tegneskillz. Dagens luke består dermed av et knippe tegninger som visualiserer «ting du har hørt i møter i år». \
 
+  \
 
-  ![]()
+  Noe faglig, litt til inspirasjon, mest for gøy. God jul 🎅
 links: []
 authors:
   - Helen Le
@@ -18,9 +20,10 @@ authors:
   - Maia Elisabeth Sirnes
   - Joel Chelliah
 ---
-![](/assets/stickie.png "Test av 760x362px")
+![](/assets/stickie.png)
 
-## \
-Hørt på Teams:
+## Hørt på Teams:
 
 ![](/assets/gammelhånd.png)
+
+![](/assets/taetskippertak.png)
