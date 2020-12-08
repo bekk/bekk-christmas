@@ -12,45 +12,81 @@ authors: []
 ---
 ### What is Recoil ?
 
-Recoil is a new state management library for React  (link)— offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state.
+[Recoil.js](https://recoiljs.org/) is a new state management library for [React](https://www.google.com/search?q=reactjs&rlz=1C5CHFA_enNO890NO890&oq=reactjs&aqs=chrome..69i57j0l4j69i60l3.1252j0j7&sourceid=chrome&ie=UTF-8) — offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state 🔥
 
-Recoil aims to solve some specific challenges when working with modern React apps like flexible shared state, derived state and global observation.
+Recoil aims to solve some specific challenges when working with modern React apps like _flexible shared state_, _derived state_ and _global observation_.
+
+And for anyone working with React it should seem familiar. First take a look at this example using React local state to increment a number:
+
+```js
+const Counter = () => {
+  const [count, setCount] = setState(0);
+
+  return (
+    <>
+      <span>Count: {count}</span>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </>
+  );
+};
+```
+
+Now, making our counter global is pretty streight forward using Recoil. All we need to do is replacing **setState** with **useRecoilState.**
+
+```js
+const Counter = () => {
+  const [count, setCount] = useRecoilState(myGlobalCounterState); ⬅
+
+  return (
+    <>
+      <span>Count: {count}</span>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </>
+  );
+};
+```
+
+Not convinced ? keep on reading cowboy.. 🤠
 
 ### What's great about Recoil ?
 
-State libraries for Ready are constantly appearing, but I quickly realized that Recoil was much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
+Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.org) is much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
 
-##### Tailored for React
+#### Tailored for React
 
-Recoil is made specifically for React and offers close compatibility with React Suspense, Concurrent mode and claims to support new React features as they become available.
+Recoil is made specifically for React and offers close compatibility with features React Suspense, Concurrent mode and claims to support new React features as they become available.
 
-* react suspense
-* Concurrent mode
+#### Easy to learn
 
-##### Easy to learn
+When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was.
 
-When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was. 
-
-* The API is 
-* Boilerfree
-
-Recoil offers a boilerplate-free API where shared state has the same simple get/set interface as React local state. All you need is to wrap you code with RecoilRoot:
+Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap you code with RecoilRoot:
 
 ```js
 import { RecoilRoot } from "recoil";
 import App from "./App";
 
 ReactDOM.render(
-    <RecoilRoot>
+    <RecoilRoot> ⬅️
       <App />
-    </RecoilRoot>,
+    </RecoilRoot>,⬅️
   document.getElementById("root")
 );
 ```
 
-### Example and code
+#### Handle derived state like a boss
 
-I have made a demo application with React and Recoil which I use as a starting point to illustrate the use of Recoil. The app lets you sort, filter and search for recipes. Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
+Derived state is state based on some other state. When you have both async and syncronous state, this can be challenging. With Recoil, state can be replaced with derived data without modifying the components that use it -
+
+### Using Recoil - Examples
+
+The examples below are taken from a simple demo application called I have made. The app lets you sort, filter and search for recipes.
+
+Its a simple app, but it solves some known challenges:
+
+- Derived state -
+
+Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
 
 ##### Atoms
 
@@ -83,8 +119,6 @@ export default () => {
 };
 ```
 
-
-
 ##### Selectors
 
 Selectors is a piece of derived state. Just like a pure function, selectors can modify existing state and return something new instead. In our recipe application we use a selector to combine different filters to return a filtered list of recipipes.
@@ -96,9 +130,9 @@ export const filteredRecipesState = selector({
     key: "filteredRecipes",
     get: ({ get }) => {
       const recipes = await fetchRecipes(); // async
-    
+
       const searchValue = get(searchState); // sync
-  
+
       return recipes
           .filter(r => r.name.indexOf(searchValue) >= 0);
     },
@@ -106,7 +140,7 @@ export const filteredRecipesState = selector({
 ```
 
 We can use the useRecoilValue() hook to read the value of filteredRecipesState.
-The cool thing here is that if our search state changes, our selector state will trigger a change as well. 
+The cool thing here is that if our search state changes, our selector state will trigger a change as well.
 
 ```js
 const { useRecoilValue } from 'recoil';
@@ -116,5 +150,4 @@ const Recipes = () => {
 
   ...
 };
-
 ```
