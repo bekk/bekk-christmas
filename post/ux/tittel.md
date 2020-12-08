@@ -88,7 +88,7 @@ Sist men ikkje minst: eg har lært at eigentid er gull – det har vore veldig d
 
 ## Ola
 
-"Ja, hva fanken har jeg lært av dette året. Jeg får litt dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Det gjør meg kanskje litt egoistisk?Jeg vet ikke om jeg har gjort andres eller min egen hverdag bedre, FAKK. Føler egentlig at 2019 Ola er ganske lik 2020 Ola…
+"Ja, hva fanken har jeg lært av dette året. Jeg får litt dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Det gjør meg kanskje litt egoistisk? Jeg vet ikke om jeg har gjort andres eller min egen hverdag bedre, FAKK. Føler egentlig at 2019 Ola er ganske lik 2020 Ola…
 
 Jeg hadde en liten meltdown etter påske. Da følte jeg at jeg ikke klarte å levere i hele tatt. Å lede kreative møter når alle kan slå av mic og video, det synes jeg var ganske tøft. Nå i høst har hjemmekontoret heldigvis gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi andre som satt i møtet kunne høre at han snorket. Og det første jeg tenkte var; åh heldiggris – det der vil jeg også. Prosjektlederen min brukte 10 minutter på å prøve å unmute han, for Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte, og hva som ikke er det. Når jeg kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at dette møtet trengte jeg kanskje ikke være med på.
 
