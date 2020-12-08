@@ -89,16 +89,19 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 <img class="light-theme-image" src="https://i.ibb.co/ygGTtXg/ola.png" alt="ola" border="0" >
 
 
-<img class="dark-theme-image" src="img src="https://i.ibb.co/7ysT0kZ/ola-dark-06.png" alt="ola-dark-06" border="0" >
+<img class="dark-theme-image" src="https://i.ibb.co/7ysT0kZ/ola-dark-06.png" alt="ola-dark-06" border="0" >
 
 
 ## Ola
 
-Ja, hva faen har jeg lært av dette året. Får dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Kjenner litt på den tilpasningsdyktigheten. Er egoistisk jeg, jeg har ikke gjort andres hverdag eller egen bedre. Føler egentlig at 2019 Ola er ganske lik 2020 Ola. Hygiene var viktig for meg i 2019 også altså, at folk skal begynne å vaske henda i 2020…  Jeg hadde en breakdown rundt påske. Følte at jeg ikke klarte å levere i hele tatt. Å lede møter når alle kan slå av mic og video, det synes jeg var ganske jævlig. Nå i høst har hjemmekontoret gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi kunne høre han snorket. Og det første jeg tenkte var; åh heldiggris. Det vil jeg også. Prosjektlederen brukte 10 min på å prøve å unmute han, Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte og hva som ikke er det. Når du kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at hm dette møtet trengte jeg kanskje ikke være med på.
+"Ja, hva faen har jeg lært av dette året. Jeg får litt dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Er egoistisk jeg, jeg har ikke gjort andres hverdag eller egen bedre. Føler egentlig at 2019 Ola er ganske lik 2020 Ola…
 
-Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for det. Spiser et eple, drikker 1,5 liter kaffe frem til 11-14, inni der en plass spiser jeg 2 brødskiver. Kl fire tar jeg ennå et eple, og slenger jeg meg på sofaen og scroller tiktok i 20 min. Jeg har kanskje blitt mer åpen for ungdommelige sosiale medier, hehe. Jeg er bare lei jeg, ønsker bare at det skal gå over. Ønsker at folk skal ta vaksiner og… Det er så kjedelig dette her. Den er så lite sexy den pandemien, det er så utrolig lite spennende. Hadde det vært. 3. verdenskrig hadde i hvert fall vært litt spennende! 
+Jeg hadde en “breakdown” rundt påske. Da følte jeg at jeg ikke klarte å levere i hele tatt. Å lede møter når alle kan slå av mic og video, det synes jeg var ganske tøft. Nå i høst har hjemmekontoret heldigvis gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi andre som satt i møtet kunne høre at han snorket. Og det første jeg tenkte var; åh heldiggris – det der vil jeg også. Prosjektlederen min brukte 10 minutter på å prøve å unmute han, for Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte, og hva som ikke er det. Når jeg kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at dette møtet trengte jeg kanskje ikke være med på.
 
-Jeg fikk en skikkelig god følelse på lørdag, hadde på nyhetsmorgen og en av FHI-toppene sa at hjerte og karsykdommer og slag og hjerteinfarkt har gått ned i denne perioden. Tenkte shit, kanskje året 2020 er året alle bare slapper av.
+Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for det. Spiser et eple, drikker 1,5 liter kaffe frem til kl. 11:00-14:00, inni der en plass spiser jeg 2 brødskiver. Kl. 16:00 tar jeg enda et eple, og slenger jeg meg på sofaen og scroller på TikTok i 20 minutter. Jeg har kanskje blitt mer åpen for ungdommelige sosiale medier dette året, hehe. Nei, jeg er bare lei jeg, ønsker bare at det skal gå over. Ønsker at folk skal ta vaksiner. Det er så kjedelig dette her. Den er så lite sexy den pandemien, den er så utrolig lite spennende. Hadde det vært. 3. verdenskrig hadde i hvert fall vært litt interessant! 
+
+Forrige lørdag fikk jeg en skikkelig god følelse. Jeg hadde på Nyhetsmorgen, og en av FHI-toppene sa at hjerte-og karsykdommer, slag og hjerteinfarkt har gått ned dette året. Da tenkte jeg: shit, kanskje 2020 er året alle bare slapper av.”
+
 
 
 <p>&nbsp;</p>
