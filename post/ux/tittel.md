@@ -66,11 +66,29 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 
 ## Ola
 
+Ja, hva faen har jeg lært av dette året. Får dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Kjenner litt på den tilpasningsdyktigheten. Er egoistisk jeg, jeg har ikke gjort andres hverdag eller egen bedre. Føler egentlig at 2019 Ola er ganske lik 2020 Ola. Hygiene var viktig for meg i 2019 også altså, at folk skal begynne å vaske henda i 2020…  Jeg hadde en breakdown rundt påske. Følte at jeg ikke klarte å levere i hele tatt. Å lede møter når alle kan slå av mic og video, det synes jeg var ganske jævlig. Nå i høst har hjemmekontoret gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi kunne høre han snorket. Og det første jeg tenkte var; åh heldiggris. Det vil jeg også. Prosjektlederen brukte 10 min på å prøve å unmute han, Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte og hva som ikke er det. Når du kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at hm dette møtet trengte jeg kanskje ikke være med på.
+
+Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for det. Spiser et eple, drikker 1,5 liter kaffe frem til 11-14, inni der en plass spiser jeg 2 brødskiver. Kl fire tar jeg ennå et eple, og slenger jeg meg på sofaen og scroller tiktok i 20 min. Jeg har kanskje blitt mer åpen for ungdommelige sosiale medier, hehe. Jeg er bare lei jeg, ønsker bare at det skal gå over. Ønsker at folk skal ta vaksiner og… Det er så kjedelig dette her. Den er så lite sexy den pandemien, det er så utrolig lite spennende. Hadde det vært. 3. verdenskrig hadde i hvert fall vært litt spennende! 
+
+Jeg fikk en skikkelig god følelse på lørdag, hadde på nyhetsmorgen og en av FHI-toppene sa at hjerte og karsykdommer og slag og hjerteinfarkt har gått ned i denne perioden. Tenkte shit, kanskje året 2020 er året alle bare slapper av.
+
+
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
 ##Linn
+
+Jeg er over middels glad i å planlegge hverdagene. Og den siste tiden, så kan jeg vel si at jeg har fått øvd meg på å ikke planlegge så mye. Ta en dag om gangen. Jeg kan late som at det liksom har vært deilig og rolig. Og det har det jo av og til vært. Men egentlig har det bare gjort meg latere. Det har blitt mindre trening og færre spennende ting som skjer gjennom dagene. 
+
+Jeg har lært og opplevd å ta hensyn til at folk reagerer på disse situasjonene helt forskjellig og at det er helt greit. Ingen shaming! At det som var helt greit og innafor én uke, plutselig ble sett på som en lite gjennomtenkt beslutning uka etterpå. En uke er en venn mer bekymret og ønsker ikke å møtes fysisk, en annen uke er det noen andre. Noen Bekkere ønsker å møte fysisk til fagdag, andre tenker det er det siste de ønsker å utsette seg for. Og jeg håper virkelig at vi kan være åpne og se alles behov og ønsker i dette.
+
+Jeg jobber i NAV og med fokus på arbeidssøkere. Å se tallene stige dag for dag. Time for time i de verste periodene. Det har vært rart og nesten uforståelig. Å vite at det var så mange skjebner og livssituasjoner som er endret. Da har jeg kjent på mange følelser. Blant annet både håpløshet og sterkt engasjement. 
+
+Synes det har vært skikkelig vanskelig at arbeidsplassen er samme sted som avslappingen. I sommer, da det var tre dager igjen av sommerferien, så gruet jeg meg skikkelig til å komme hjem i leiligheten. Det var jo der jobben var. Jeg var bekymret for at jeg ikke skulle klare å slappe av de siste feriedagene. Har blitt flinkere og flinkere til å virkelig rydde bort jobben når arbeidsdagen er over. Å bare se en tom postit lapp er nok for å få hjernen til å spinne og spinne.
+
+
+
 
 
 
