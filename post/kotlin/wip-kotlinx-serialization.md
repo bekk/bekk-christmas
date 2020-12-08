@@ -25,6 +25,7 @@ To achieve this level of flexibility the process is split into two distinct phas
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/serialization-light.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
 <img class="dark-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/serialization-dark.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
 </p>
+
 The process of serialization and deserialization are encapsulated within the `KSerializer<T>` interface, whereas encoding and decoding have their own aptly named interfaces; `Encoder` and `Decoder`.
 
 
