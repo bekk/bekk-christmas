@@ -20,7 +20,7 @@ authors:
 ---
 ## What is Cloud Composer?
 
-Cloud Composer is a managed Apache Airflow service running on Google Cloud. Apache Airflow was created by Airbnb to manage and monitor their workflows . It has since been added as an Apache Foundation project. Many traditional workflow orchestration systems which rely on XML configuration files. Airflow, on the other hand, lets a user write workflows using normal Python code. This simplifies integrations with other services (you can use normal Python libraries). I also makes it easier for developers to express logic in the workflows.
+Cloud Composer is a managed Apache Airflow service running on Google Cloud. Apache Airflow was created by Airbnb to manage and monitor their workflows . It has since been added as an Apache Foundation project. Many traditional workflow orchestration systems rely on XML configuration files. Airflow, on the other hand, lets a user write workflows using normal Python code. This simplifies integrations with other services (you can use normal Python libraries). I also makes it easier for developers to express logic in the workflows.
 
 Using a managed Airflow service eliminates the need for maintenance and operations. We also leverage the benefits of integration with GCP services such as authentication, monitoring, and logging.
 
@@ -53,7 +53,7 @@ The first step is visiting the [Google Cloud Console ](https://console.cloud.goo
 
 ![Airflow environments](/assets/9-thecloud-airflow-environments.png)
 
-Once the environment is created, you can click the *Airflow* link to visit the Airflow web server. Here you can see all DAGs, previous runs and trigger new runs manually. By default, Cloud Composer includes an `airflow_monitoring` DAG to monitor that the environment is working.
+Once the environment is created, you can click the *Airflow* link to visit the Airflow web server. Here you can see all DAGs, previous runs and trigger new runs manually. By default, Cloud Composer includes an `airflow_monitoring` DAG to monitor that the environment is working. The web server is protected by Google IAP, so only authorised users can access it. 
 
 To add new DAGs click the *DAGs* link in the right side of the environments table. This opens a storage bucket. By adding a python script here the DAG will be discovered and run by Cloud Composer.
 
@@ -154,5 +154,5 @@ Cloud Composer / Airflow is a very powerful tool, but it might not be the right 
 
 * AWS just launched a managed Airflow service.
 * Self hosting is always an option.
-* Combining managed services such as Cloud Scheduler and Cloud Functions (or similar services from other cloud providers)
-* Kubernetes CronJobs
+* Combining managed services such as Cloud Scheduler and Cloud Functions (or similar services from other cloud providers).
+* Kubernetes CronJobs.
