@@ -50,7 +50,7 @@ Yup. That’s you putting your brain’s default mode network to work.)
 
 ### Stage fright
 
-Other people’s opinion of us affect who we can form an alliance with, who will protect you, who will go against us, who you can attract as a partner, which opportunities you get and much more. This is far from trivial. These are central evolutionary problems (https://ux.christmas/2019/4) for a social species such as ours. And that is why your brain and emotional systems get so fired up before talking to a crowd.
+Other people’s opinion of us affect who we can form an alliance with, who will protect you, who will go against us, who you can attract as a partner, which opportunities you get and much more. This is far from trivial. These are central evolutionary problems (see our blog post [ux.christmas/2019/4](https://ux.christmas/2019/4)) for a social species such as ours. And that is why your brain and emotional systems get so fired up before talking to a crowd.
 
 ### The hack(s)
 
