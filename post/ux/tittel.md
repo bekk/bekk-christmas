@@ -42,11 +42,12 @@ Jeg får lyst til å spole tilbake til mars i år. Norge er gått i sosial lockd
 
 ** Nå er det november, og jeg sitter i møter med kollegaen  min i pysjbuksa. ** 
 
+Året så langt har vært bare myke pakker. Og ja, jeg er redd det er for sent å ta det pent. Jeg føler meg ikke helt ferdig snakka om hvor skoddete, seigt og spesielt det er å leve under en pandemi. 
 
-Året så langt har vært bare myke pakker. Og ja, jeg er redd det er for sent å ta det pent. Jeg føler meg ikke helt ferdig snakka om hvor skoddete, seigt og spesielt det er å leve under en pandemi. Så det er det jeg har lyst til nå da - snakke, fortelle og dele. Jeg håper at ved å få flere til å dele, jo sterkere blir budskapet. Budskapet om at det er helt innafor å miste maska når du atter en gang strekker deg mot en myk pakke under juletreet med ditt navn på, og innser at det er hjemmestrikka grytekluter. Spesielt siden du har hundre av de fra før, og alt du ønska deg til jul var lego.
-
+Så det er det jeg har lyst til nå da - snakke, fortelle og dele. Jeg håper at ved å få flere til å dele, jo sterkere blir budskapet om at det er helt innafor å miste maska når du atter en gang strekker deg mot en myk pakke under juletreet med ditt navn på, og innser at det er hjemmestrikka grytekluter. Spesielt siden du har hundre av de fra før, og alt du ønska deg til jul var lego.
 
 Som en liten inspirasjon, så har jeg nådd ut til mine design-kollegaer i Bekk og spurt om de vil dele hvordan dette året har vært for de. Jeg håper at dette setter i gang refleksjons-tannhjulene også hos deg som leser. For om ikke jula er tida for refleksjon og ettertanke, når da? 
+
 
 
 <p>&nbsp;</p>
