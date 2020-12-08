@@ -76,13 +76,13 @@ Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om
 
 ## Åshild
 
-"2020 har lært meg at eg må konsentrere meg om meg sjølv og kva eg gjer og ikkje gjer – i starten blei eg så utruleg stressa av alle som ikkje fulgte korona-reglene at eg blei heilt bitter og sliten av det. Eg har lært at folk bretter opp ermene og bidrar. Eg hadde aldri i min villaste fantasi trudd at eg i året 2020 skulle ta på meg munnbind for ein snartur inn på Kiwi og antibace opp og ned i mente.”
+"2020 har lært meg at eg må konsentrere meg om meg sjølv og kva eg gjer og ikkje gjer – i starten blei eg så utruleg stressa av alle som ikkje fulgte korona-reglene, at eg blei heilt bitter og sliten av det. Eg har lært at folk bretter opp ermene og bidrar. Eg hadde aldri i min villaste fantasi trudd at eg i året 2020 skulle ta på meg munnbind for ein snartur inn på Kiwi og antibace opp og ned i mente.
 
-Det har vore utruleg kjipt med alle jobb-arrangementene som har måtte blitt avlyst som jo ofte er høgdepunkt ila. året. Sommarfest, Bekk sitt 20-årsjubileum (som eg har gleda meg til sidan forrige jubileum i 2015), fagdager, julebord. Men eg vil berømme alle som har lagt ned ein innsats for at det likevel har blitt gjennomført enkelte arrangement og er veldig takknemleg for det. I koronaåret 2020 må me berre bukke, nikke og neie for alt me har fått til å gjennomføre.
+Det har vore utruleg kjipt med alle jobb-arrangementene som har måtte blitt avlyst som jo ofte er høgdepunkt i løpet av året. Sommarfest, Bekk sitt 20-årsjubileum (som eg har gleda meg til sidan forrige jubileum i 2015), fagdager, julebord…  Eg vil berømme alle som har lagt ned ein innsats for at det likevel har blitt gjennomført enkelte arrangement, og eg er veldig takknemleg for det. I koronaåret 2020 må me berre bukke, nikke og neie for alt me har fått til å gjennomføre.
 
-Det har vore trist å ikkje kunne klemme vener og familie, og at eg ikkje har fått sett dei like ofte som eg har ønska sjølv. Eg er jo utruleg ekstrovert, så eg merker jo godt at det kribler godt i sosialcellene mine etter ein meir normal kvardag.
+Det har vore trist å ikkje kunne klemme vener og familie, og at eg ikkje har fått sett dei like ofte som eg har ønska sjølv. Eg er jo utruleg ekstrovert, så eg merker jo godt at det kribler i sosial-cellene mine etter ein meir normal kvardag.
 
-Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig deileg å stresse ned. Ikkje føle at ein må vere med på alt. Og berre vere heime."
+Sist men ikkje minst: eg har lært at eigentid er gull – det har vore veldig deileg å stresse ned. Ikkje føle at ein må vere med på alt. Og berre vere heime."
 
 <p>&nbsp;</p>
 
