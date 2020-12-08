@@ -6,7 +6,7 @@
     "license": "MIT",
     "scripts": {
         "build": "cross-env gatsby build --log-pages",
-        "build:preview": "cross-env gatsby build",
+        "build:preview": "cross-env CALENDAR_ENV=preview gatsby build",
         "build:calendar": "cross-env gatsby clean && gatsby build",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "gatsby develop",
