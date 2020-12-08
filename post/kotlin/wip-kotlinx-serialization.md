@@ -4,12 +4,9 @@ post_year: 2020
 post_day: 9
 title: "Serialization: New player has joined"
 image: https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?w=1226&h=400&fit=crop&crop=edges
-ingress: >-
-  With the release of Kotlin 1.4 we got a new treat; `kotlinx.serialization`. A
-  new tool to help us with the cumbersome task of converting our objects to and
-  from Json. 
-
-  We've previously seen how some library may not support kotlin fully, but this is obviously not the case with `kotlinx.serialization` as it is written in Kotlin and available on all Kotlin multiplatform targets.
+ingress: "With the release of Kotlin 1.4 we got a new treat;
+  `kotlinx.serialization`. A new tool to help us with the cumbersome task of
+  converting our objects to and from Json. "
 links:
   - title: Kotlin serialization
     url: https://kotlinlang.org/docs/reference/serialization.html
@@ -18,9 +15,11 @@ links:
 authors:
   - Nicklas Utgaard
 ---
+We've previously seen how some libraries may not support kotlin completely, but this is obviously not the case with `kotlinx.serialization` as it is written in Kotlin and supported for all Kotlin multiplatform targets.
+
 `kotlinx.serialization` provides a framework for converting an object into a sequence of bits and bytes, and of course a way of converting it back into an object. It ships with support for Json, Protobuf, CBOR, Properties and HOCON, albeit all except Json are at this point considered experimental. 
 
-To achieve this level of flexibility the process is split into two distinct phases; serialization and encoding. The serialization phase is shared between all data formats, and is responsible for converting a object into a serial sequence of primitives. The sequence of primitives is then passed on to encoding, where the data format specifics are located.
+To achieve this level of flexibility the process is split into two distinct phases; serialization and encoding. The serialization phase is shared between all data formats, and is responsible for converting a object into a serial sequence of primitives. The sequence of primitives is then passed on to encoding, where the data format specifics are responsible for converting those primitives into their correct output format.
 
 <p>
 <img class="light-theme-image" src="https://github.com/nutgaard/gc-illu/raw/master/img/serialization-light.png" alt="The anatomy of the heap (eden, survivor, and tenured space)."/>
@@ -29,7 +28,7 @@ To achieve this level of flexibility the process is split into two distinct phas
 The process of serialization and deserialization are encapsulated within the `KSerializer<T>` interface, whereas encoding and decoding have their own aptly named interfaces; `Encoder` and `Decoder`.
 
 
-To get started using `kotlinx.serialization` you will have to make some changes to your build configuration. First you'll need to add the compiler plugin used to generate the serializers for you classes. This is needed as `kotlinx.serialization` does not rely on reflection, and as such needs to generate code at compile-time to know how a class should be serialized. Lastly, you'll need to add a dependency to the data format encoder, which in this example happens to be JSON.
+To get started using `kotlinx.serialization` you will have to make some changes to your build configuration. First you'll need to add the compiler plugin used to generate the serializers for you classes. This is needed as `kotlinx.serialization` does not rely on reflection, and as such needs to generate code at compile-time to know how a class should be serialized. Lastly, you'll need to add a dependency to the data format encoder, which in this example just so happens to be JSON.
 ```kotlin
 plugins {
   kotlin("jvm") version "1.4.21"
@@ -40,14 +39,15 @@ dependencies {
 }
 ```
 
-At this point you may try to convert an object into JSON, but you'll be disappointed when seeing this exception; 
+At this point you may try to convert an object into JSON, but unfortunately this exception will spoil all your Christmas jolly;
 ```kotlin
 kotlinx.serialization.SerializationException: Serializer for class 'MyFavoriteObject' is not found.
 Mark the class as @Serializable or provide the serializer explicitly.
 ```
-As briefly mentioned earlier this framework does not rely on reflection, and therefore needs to generate some code when compiling your code in order to work properly. But, how could the compiler ever know which classes it should support? Creating `KSerializer`s for every class seen in the classpath would make the compile time excruciating slow. And this is why it hints about adding `@Serializable` to your class. The `@Serializable` interface serves as the entrypoint to the serialization process, and instructs the serialization plugin to automatically generate the appropriate `KSerializer` for the annotated class. 
+As briefly mentioned earlier this framework does not rely on reflection, and therefore needs to generate some code during the compilation of your code in order to work. But, how could the compiler ever know which classes it should support? Creating `KSerializer`s for every class seen in the classpath would make the compile time excruciating slow (the hint is in the exception). 
+The `@Serializable` interface serves as the entrypoint to the serialization process, and instructs the serialization plugin to automatically generate the appropriate `KSerializer` for the annotated class. 
 
-At this point you are ready to convert your object to Json (or another data format);
+At this point you are ready to convert your object to Json (or Protobuf if you want);
 ```kotlin
 @Serializable
 data class MyFavoriteObject(val favoriteObject: String)
@@ -88,7 +88,7 @@ val json = Json {
 println(json.encodeToString(UUID.randomUUID()))
 ```
 
-In this example we reused the `String.serializer()` to implements our serializer, we registered the serializer, and then successfully converted a `UUID` to JSON. Being able to reuse the `String.serializer()` we could make the implementation rather simple, but more complex data structures will undoubtedly require [more complex serializers](https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/serializers.md#sequential-decoding-protocol-experimental).
+We've reused the `String.serializer()` to implements our serializer, we registered the serializer, and then successfully converted a `UUID` to JSON. Being able to reuse the `String.serializer()` we could make the implementation rather simple, but more complex data structures will undoubtedly require [more complex serializers](https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/serializers.md#sequential-decoding-protocol-experimental).
 
 
-So, should you start porting all you apps to `kotlinx.serialization`? Possibly, if your app is entirely written in Kotlin it will probably work like a charm, and potentially even fix [some issues](https://kotlin.christmas/2020/8). However, if your app is heavily dependent on java classes it may be just easier to use [moshi](https://github.com/square/moshi#kotlin).
+So, should you start porting all you apps to `kotlinx.serialization`? Possibly, if your app is entirely written in Kotlin it will probably work almost right out of the box, and potentially even fix [some issues](https://kotlin.christmas/2020/8). However, if your app is heavily dependent on java classes it may be better to just stick with what you got or switching to a library which do more of the heavy lifting for you.
