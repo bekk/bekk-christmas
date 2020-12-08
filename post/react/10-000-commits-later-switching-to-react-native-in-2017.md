@@ -94,4 +94,4 @@ From around March 2017 until June 2019 the app was in a state where some feature
 
 A total of **10,000 commits** have been made by **33 contributors** across **5 teams.**. Nearly 50 pull-requests from 14 authors was merged the past week. Our ability to deliver on business requirements have been strengthened. Looking back on our big choice of 2017, it’s truly awe-inspiring to see how big an effect a simple technology choice can have on helping teams reach lofty goals.
 
-No technology is a silver bullet. React Native surely isn’t either. But it does have some truly wonderful effects on an impatient, agile, modern development organization that Swift, Kotlin or C# currently can’t offer, in my opinion. It’ll be interesting to see the evolution of SwiftUI and Flutter over the next years!
+No technology is a silver bullet. React Native surely isn’t either. But it does have some truly wonderful effects on an impatient, agile, modern development organization that Swift, Kotlin or C# currently can’t offer, in my opinion.
