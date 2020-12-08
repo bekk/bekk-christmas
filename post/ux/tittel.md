@@ -29,6 +29,8 @@ authors:
   - Kjersti Bjelkarøy
 ---
 
+<p>&nbsp;</p>
+
 Den første historien starter en tirsdag, i midten av november i 2020.  Jeg sitter på sofaen i stua, og på skjermen ruller nok en episode av Friends av lerretet. Jeg ser på klokka og  innser at jeg har hatt lunsjpause i over en time. Litt skuffa ser jeg også at jeg fortsatt sitter i pysjbuksa. Det er 3 minutter til jeg skal være i et møte. Ikkeno stress tenker jeg, for kontoret mitt er knappe 13 skritt unna.
 
 
