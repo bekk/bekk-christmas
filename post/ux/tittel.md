@@ -8,8 +8,8 @@ ingress: >+
   For deg som er ute etter artikkelen om hvordan du kan bli en bedre designer på
   tre minutter – dette er ikke den artikkelen. Dette er en historie, eller en
   samling av historier, fra meg og fra mine kollegaer, til deg. Om hva året 2020
-  har gitt oss - på godt og vondt, hardt og mykt. Som ikke nødvendigvis får deg
-  til å rope heureka. Denne artikkelen skal ikke konkludere med noe som helst.
+  har gitt oss - på godt og vondt, hardt og mykt. Denne artikkelen skal ikke
+  konkludere med noe som helst, og får deg ikke nødvendigvis til å rope heureka.
   Tvert i mot, det skal bare fortelles og deles, rives og åpnes. Jeg håper du
   liker det du får!
 
