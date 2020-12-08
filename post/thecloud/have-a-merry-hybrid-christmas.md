@@ -36,11 +36,11 @@ Santa Claus wants to expose a new API providing information about his elves. The
 
 ## Provisioning the infrastructure
 
-Santa Claus is no fan of click-ops, which basically is the process of having manual routines for setting up and maintaining infrastructure. Therefore he chose [Terraform](https://terraform.io) as his infrastructure-as-code tool.
+Santa Claus is no fan of click-ops, which basically is the process of having manual routines for setting up and maintaining infrastructure. Instead, he prefers to use [Terraform](https://terraform.io) as his infrastructure-as-code tool for automating such mundane tasks.
 
 ### The Web App
 
-The Web App is a simple API and can be hosted in a PaaS in Azure. In order to provision a app service using Terraform this is what is required:
+The Web App is a simple API and can be hosted in a PaaS in Azure. In order to provision an app service using Terraform this is what is required:
 
 ```jsonc
 resource "azurerm_app_service" "app_hybrid_christmas" {
@@ -65,7 +65,7 @@ resource "azurerm_app_service" "app_hybrid_christmas" {
 
 ### The Relay
 
-In order to send messages through to on-north-pole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
+In order to send messages from the app, in the cloud, to on-north-pole Santa Claus needs a relay to forward these messages, or requests as they will appear to the user:
 
 ```jsonc
 resource "azurerm_relay_namespace" "sb_northpole" {
@@ -119,18 +119,18 @@ It basically says it is *Not Connected* and he needs to perform the last step in
 
 ## The last (and manual) step
 
-Finally, to make the outbound connection to Azure, Santa Claus had to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server that was to be connected to Azure. Running the Hybrid Connection Manager on this server he discovered that something went wrong in the provisioning. The hybrid connection manager reports "No endpoint configured"
+Finally, to make the outbound connection to Azure, Santa Claus has to download the [Hybrid Connection Manager](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager) onto the server is to be connected to Azure. Running the Hybrid Connection Manager on this server he discovers that something went wrong with the provisioning. The hybrid connection manager reports "No endpoint configured".
 
 ![No endpoint configured](/assets/notconfigured.png "No endpoint configured")
 
-With this error it is not possible to connect to Azure, and after some research it turned out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using <https://portal.azure.com> on the Web App itself. Santa promises to put the developer who fixes the issue twice on the nice-list.
+With this error it is not possible to connect to Azure, and after some research it turns out that this is a [known issue](https://github.com/terraform-providers/terraform-provider-azurerm/issues/9245) with the Terraform azurerm provider. Until it is fixed, the connection from the Web App to the Relay cannot be done using Terraform and must manually be done using <https://portal.azure.com> on the Web App itself. Santa promises to put the developer who fixes this issue twice on the nice-list.
 
 ![Manually adding a hybrid connection from the web app](/assets/newconnection.png "Manually adding a hybrid connection from the web app")
 
-Manually adding the hybrid connection from the Web App towards the Relay solves the endpoint configuration failure, consequently allowing the Hybrid Connection Manager to establish the connection towards Azure.
+Manually adding the hybrid connection between the Web App and the Relay solves the endpoint configuration failure, consequently allowing the Hybrid Connection Manager to establish the connection towards Azure.
 
 ## Conclusion
 
-Using Azure Hybrid Connections and Terraform Santa Claus and his team is able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, they manage to expose data from on-north-pole and they have successfully started their cloud journey - whether the hybrid connection will remain as part of their infrastructure or not we'll have to see next Christmas. 
+Using Azure Hybrid Connections and Terraform Santa Claus and his team are able to start utilizing the cloud without having to perform a large lift-and-shift operation. The Hybrid Connection is quick and easy to setup, but unfortunately requires a couple of manual steps which results in some click-ops that Santa Claus would like to be without. Despite the manual steps, they manage to expose data from on-north-pole and they have successfully started their cloud journey - whether the hybrid connection will remain as part of their infrastructure or not we'll have to see next Christmas. 
 
 The complete Terraform for this can be found in the repository [here](https://github.com/espenekvang/hybrid-christmas).
