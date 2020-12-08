@@ -107,6 +107,6 @@ Smittestopp har avslørt et skrikende behov om bedre personvernkompetanse i offe
 
 Smittestopp har vist at manglende forståelse og respekt for personvern kan velte en løsning. Behandling av personopplysninger starter ved innsamling, ikke ved bruk. Personopplysningsloven krever at den som behandler personopplysningene dokumenterer forholdsmessighet, nødvendighet og nytteverdi.
 
-Sikkerhet er viktig i personvernsammenheng, og det krever tid og kompetanse å lage sikre løsninger. Men sikkerhet kan ikke kompensere for de ulike kravene og praksisene som loven pålegger. Tilliten til en løsning krever åpenhet, at man erkjenner feil og viser at man lærer underveis. Sist men ikke minst: Personvern dreier seg om hva Personopplysningsloven sier, ikke om hva man synes.
+Sikkerhet er viktig i personvernsammenheng, og det krever tid og kompetanse å lage sikre løsninger. Men sikkerhet kan ikke kompensere for de ulike kravene og praksisene som loven pålegger. Tilliten til en løsning krever åpenhet, kritisk drøfting av tiltak, at man er villig til å erkjenne feil og viser at man lærer av dem. Sist men ikke minst: Personvern dreier seg om hva Personopplysningsloven sier, ikke om hva man synes.
 
 Smittestopps prislapp på 45 millioner er et røverkjøp hvis den har ført til økt kunnskap og forståelse for personvern i offentlig forvaltning og i befolkningen generelt.
