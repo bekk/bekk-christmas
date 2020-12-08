@@ -26,6 +26,9 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 | %      | rem()     |
 | ..     | rangeTo() |
 
+![Table showing all arithmetic operators with their corresponding functions](https://ibb.co/KxwYbWg)
+
+
 When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
 
 But what about the user-defined types? Let's say we have a simple date class defined as
@@ -82,4 +85,4 @@ val neighboursHouse = House(157, 3, 3, true)
 print(myHouse < neighboursHouse) // true
 ```
 
-These are just two basic examples of how you could use operator overloading in your application. 
+These are just two basic examples of how you could use operator overloading in your application. You can define the operator function both at a member function and an extension function on a data class. Just remember to mark the overloading operator function with the `operator` modifier. 
