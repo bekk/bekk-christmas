@@ -40,7 +40,7 @@ Santa Claus is no fan of click-ops, which basically is the process of having man
 
 ### The Web App
 
-The Web App is a simple API and can be hosted in a PaaS in Azure. In order to provision an app service using Terraform this is what is required:
+The Web App is a simple API and can be hosted in a [PaaS](https://azure.microsoft.com/en-gb/overview/what-is-paas/) in Azure. In order to provision an app service using Terraform this is what is required:
 
 ```jsonc
 resource "azurerm_app_service" "app_hybrid_christmas" {
