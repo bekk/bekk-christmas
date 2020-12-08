@@ -28,6 +28,7 @@ The Wizard of Oz method is perfect in the situation where functionality is expen
 The name “Wizard of Oz”  is a reference to the book *The Wonderful Wizard of Oz* written by author L. Frank Baum in 1900 (and the iconic 1939 live-action film). Where a man hides behind a curtain pretending to be a mighty wizard by using different methods of changing his voice and projecting himself as a huge green head. 
 
 <p>&nbsp;</p>
+
 ## So lest try this method!
 We got the task of making a notification system for a register we're responsible to maintain and develop. This register contains a lot of data collected from many different sources and the only way a user can find out if any of the data is changed is actually to search for it and look around. So our goal was to make the register more active in telling the user when something had changed. 
 
@@ -41,6 +42,7 @@ When a month, and probably a half, had gone we launched!
 The product we launched was an office form where you could sign up to get notifications. The notifications were e-mails. One of our developers had to manually check all the responses from the form to see what notifications the user had signed up for. Then register their e-mail address into a very simple* code he had made for the purpose of the prototype. If they wanted to stop the notifications they had to answer the e-mail with “stop” so we could remove them from the code again. 
 
 <p>&nbsp;</p>
+
 <img class="light-theme-image" src="https://i.ibb.co/SyDZxmC/Woz2.png" />
 <img class="dark-theme-image" src="https://i.ibb.co/SyDZxmC/Woz2.png" />
 
@@ -53,6 +55,7 @@ When we wanted to shut it down because of some errors that were invisible to the
 But on the happy side, we did get a lot of feedback from users that we normally struggled to get in touch with. And the feedback we got was of better “quality” and more relevant than we probably would have gotten just by asking. We got to test a lot of functionality and the user experience of using something “real”. Some of what we learned was that getting notifications on e-mail actually worked really nice because the users are familiar with it and they get everything in “one place”. Someone actually discovered something that looked like fraud from one of the notifications. And some of our notification missed information that we did not know that they needed. 
 
 Staring on this project again this coming year, we have much more knowledge and several users that already are invested. We have much more insights than I think we would have gotten out of a “normal” research phase. And we have not used that much money on doing it. Hopefully, we will also learn from our errors communicating projects like this in the future 😅
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
