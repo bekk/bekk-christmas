@@ -173,4 +173,4 @@ Let's pack it all up, add a little more logic and styling and voilà – we have
    ></iframe>
 
 ## Like a Swiss Army Knife
-There is so much more you can do with React Hook Form! It's too bad I can't cover it all in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides many useful examples. Personally, I have been using this tool for about a year now and have never been in a situation where it couldn't solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind.
+There is so much more you can do with React Hook Form! It's too bad I can't cover it all in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides many useful examples. Personally, I have been using this tool for about a year now and have never been in a situation where it couldn't solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind. And yes, it also supports IE11.
