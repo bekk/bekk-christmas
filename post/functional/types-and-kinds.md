@@ -3,7 +3,8 @@ calendar: functional
 post_year: 2020
 post_day: 18
 title: Types and Kinds
-ingress: ""
+ingress: There are plenty of buzz words when it comes to type systems. Let's
+  take a closer look at some of them!
 description: ""
 links: []
 authors:
