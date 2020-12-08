@@ -32,7 +32,7 @@ De dårlige nyhetene er at smidig organisering langt fra en engangsgreie, og det
 
 ### 4. Har du problemer med at resten av organisasjonen ikke jobber eller forstår smidig?
 
-Det er ikke uten problemer å rigge produktteamene for kontinuerlig endring i en ellers byråkratisk organisasjon, og denne problemstillingen er det mange norske bedrifter som nå står ovenfor. En ting er sikkert, hvis du velger å organisere deg for smidig produktutvikling, så må du også verne om den konstruksjonen du skaper, selv når byråkratiet kjemper imot. De som lykkes, er de produktteamene som klarer å skape armslag mot resten av organisasjonen – eksempelvis gjennom å inkludere folk med både organisatorisk og forretningsmessig forståelse i produktteamene med én oppgave; å skape en smidig lunge som gir teamet rom til å puste. I parallell er det naturlig å jobbe med å øke forståelsen i resten av organisasjonen, slik at de mekanismene som jobber imot vil endres over tid.
+Det er ikke problemfritt å rigge produktteamene for kontinuerlig endring i en ellers byråkratisk organisasjon, og denne problemstillingen er det mange norske bedrifter som nå står ovenfor. En ting er sikkert, hvis du velger å organisere deg for smidig produktutvikling, så må du også verne om den konstruksjonen du skaper, selv når byråkratiet kjemper imot. De som lykkes, er de produktteamene som klarer å skape armslag mot resten av organisasjonen – eksempelvis gjennom å inkludere folk med både organisatorisk og forretningsmessig forståelse i produktteamene med én oppgave; å skape en smidig lunge som gir teamet rom til å puste. I parallell er det naturlig å jobbe med å øke forståelsen i resten av organisasjonen, slik at de mekanismene som jobber imot vil endres over tid.
 
 ### There is no silver bullet
 
