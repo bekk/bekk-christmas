@@ -43,7 +43,7 @@ It follows that a type like `Either` has kind `* -> * -> *`. You get the idea.
 
 ### Higher-kinded types
 
-An `Int` or `String` is just a value. In a pure functional language there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions, so we assign them an abstraction score, or *order*, of 0.
+An `Int` or `String` is just a value. In a pure functional language there is no significant difference between a value and a function that takes no arguments, so we can think of values as functions that take no arguments and return a value. These are the simplest functions; they do not operate on any values, so we assign them an abstraction score - or *order* - of 0.
 
 A step up from values we have what are normally considered functions; a construct that takes one or more values and returns a value. They operate on arguments and outputs that are values, so their level of abstraction is higher; they are of order 1.
 
