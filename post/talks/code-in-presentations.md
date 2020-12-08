@@ -7,6 +7,9 @@ ingress: Showing the audience a snippet of code can be an easy way of getting a
   complex concept across. Bekk being a tech-company it is inevitable that we
   will have to show code in our presentations at some point, which often leads
   to the question; how do I make my code look good?
+links:
+  - url: https://buttondown.email/hillelwayne/archive/syntax-highlighting-is-a-waste-of-an-information/
+    title: Syntax highlighting is a waste of an information channel
 authors:
   - Håvard Hvassing
 ---
