@@ -26,7 +26,7 @@ The on-north-pole infrastructure consists of mainly Windows servers and he chose
 
 Santa Claus's resources are not available on the Internet, but the servers can make outbound calls to Azure over port 443 - thus qualifying them as candidates for exposure through what is called a [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections) in Azure. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
-Santa Claus wants to expose a new API providing information about his elves. The API should be created in the cloud as a Web App, but some of the data he needs is only available from servers on-north-pole. To establish this Santa Claus needs:
+Santa Claus wants to expose a new API providing information about his elves. The API should be created in the cloud as a [Web App](https://azure.microsoft.com/en-gb/services/app-service/), but some of the data he needs is only available from servers on-north-pole. To establish this Santa Claus needs:
 
 * a Web App to expose the new API in the cloud
 * an [Azure Relay](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) to work as the hybrid connection between on-north-pole and the cloud
