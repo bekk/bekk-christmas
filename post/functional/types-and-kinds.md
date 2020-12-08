@@ -3,8 +3,8 @@ calendar: functional
 post_year: 2020
 post_day: 18
 title: Types and Kinds
-ingress: There are plenty of buzz words when it comes to type systems. Today
-  we'll take a closer look at some of them.
+ingress: There are plenty of buzz words when it comes to type systems. Today we
+  take a closer look at *kinds*.
 description: ""
 links: []
 authors:
@@ -14,9 +14,8 @@ authors:
 
 Type systems are cool. Or - some are cool, others can be a bit of a hassle, but they all strive to let your compiler check that your intentions (type annotations) match your implementation (actual code). So types are there to allow us to catch bugs even before our programs run. Pretty neat! The more advanced the type system, the more logic can be declared in types and the more bugs you can catch with the help of your trusty compiler beforehand. 
 
-Now, type systems were not created equal, and there are limits to which guarantees your types can provide. Haskell is an example of a language with a very sophisticated type system, more or less derived from the mathematical field of category theory, which is closely related to formal logic. Unsurprisingly this allows for a bunch of fancy type magic that lets the compiler check a lot of complex logic on your programs.
+Now, type systems were not created equal, and there are limits to which guarantees your types can provide. Haskell is an example of a language with a very sophisticated type system, more or less derived from the mathematical field of category theory, closely related to formal logic. Unsurprisingly this allows for a bunch of fancy type magic that lets the compiler check a lot of complex logic on your programs if you just nudge it in the right direction.
 
-You may have heard buzz words like "higher-kinded types" thrown around, so today we take a closer look at *kinds*.
 
 ### Concrete Types
 
