@@ -123,8 +123,6 @@ const result2 = squareAndMultiply(3); // -> 90
 
 As I said in the beginning of this postt, JavaScripts standard library is in a bit of a weird position. If we take `Array` as an example, there is a distinction between functions that mutates in place, and functions that instead returns a new value. Things are moving to a better place, but we still have these old, mutating, functions that we have to live with. `fp-ts` fixes this by providing a consistent library even for JavaScript built-ins such as `Array` and `Map`. It’s not only consistent on the different types themselves, but also across the types thanks to extensive use of type classes [^1]. Every class that adheres to the `Functor` type class supports the `map` function, and every class that adheres to the `Filterable` type class can be filtered and partitioned. If this is greek to you, just ignore the lingo and appreciate the fact that most types has `map`, `filter`, `reduce` and loads of other functions implemented on them. You can even implement them on types you create yourself as well!
 
-[^1] – These are not «real» type classes, they are type classes implementet with interfaces. You can’t use the same `map` function on all `Functor`s, but all `Functor`s has a `map` function. You still need to use the type specific implementation of `map`, but at least it encourages the same pattern.
-
 ### ... and so much more
 
 We have only really scratched the surface here. These concepts should give you enough to get you started, and hopefully see the value in this library. When you’re ready, there are tons of other concepts to dive into, which can make your code even more readable and safe. I haven’t had the time to wade through it all myself, so I still keep finding small gems which makes my day just a bit easier.
@@ -132,3 +130,5 @@ We have only really scratched the surface here. These concepts should give you e
 If you want to know more, the [learning resources section](https://gcanti.github.io/fp-ts/learning-resources/) of the [documentation](https://gcanti.github.io/fp-ts/) is actually quite good. As the author states, fp-ts does not really aim to teach functional programming from the ground up, but the resources are still good and manages to convince at least me quite well.
 
 I also recommend reading the source code. It is surprisingly readable, even to me – a person who is neither fluent in advanced typescript or an FP zealot.
+
+[^1] – These are not «real» type classes, they are type classes implementet with interfaces. You can’t use the same `map` function on all `Functor`s, but all `Functor`s has a `map` function. You still need to use the type specific implementation of `map`, but at least it encourages the same pattern.
