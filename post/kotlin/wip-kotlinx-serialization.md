@@ -39,3 +39,16 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
 }
 ```
+
+At this point you may try to convert an object into JSON, but you'll be disappointed when seeing this exception; 
+```kotlin
+kotlinx.serialization.SerializationException: Serializer for class 'ExistingContainer' is not found.
+Mark the class as @Serializable or provide the serializer explicitly.
+```
+As briefly mentioned earlier this framework does not rely on reflection, and therefore needs to generate some code when compiling your code in order to work properly. But, how could the compiler ever know which classes it should support? Creating `KSerializer`s for every class seen in the classpath would make the compile time excruciating slow. And this is why it hints about adding `@Serializable` to your class.
+
+
+At this point you are ready to use the serialization API in your code. And you happily try to convert your favorite object into json;
+```kotlin
+Json.encodeToString(MyFavoriteObject("Its the best"))
+```
