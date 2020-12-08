@@ -17,6 +17,8 @@ From Wikipedia:
 
 The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, and they are widely used in all sorts of programming languages. But these are only a few of all the operators defined in Kotlin (for an exhaustive list, take a look at the official documentation [here](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)). All operators have a fixed symbolic representation, such as `+` and `-`, and a function with a fixed name that specifies its functionality. You can see all the arithmetic operators with their corresponding functions in the table below.
 
+![Table showing all arithmetic operators with their corresponding functions](https://i.ibb.co/7t4HjKD/Screenshot-2020-12-08-at-21-33-58.png)
+
 | Symbol | Function  |
 |--------|-----------|
 | -      | minus()   |
@@ -26,7 +28,7 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 | %      | rem()     |
 | ..     | rangeTo() |
 
-![Table showing all arithmetic operators with their corresponding functions](https://ibb.co/KxwYbWg)
+
 
 
 When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
