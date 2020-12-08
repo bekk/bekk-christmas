@@ -3,7 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 18
 title: Types and Kinds
-ingress: There are plenty of buzz words when it comes to type systems. Today we
+ingress: There are plenty of buzzwords when it comes to type systems. Today we
   take a closer look at the concepts related to *kinds*.
 description: ""
 links: []
