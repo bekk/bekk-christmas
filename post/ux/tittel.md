@@ -42,8 +42,7 @@ Etter møtet sitter jeg igjen med hånden halvveis i været, med smilet limt på
 
 Jeg får lyst til å spole tilbake til mars i år. Norge er gått i sosial lockdown, og ingen av oss aner hva dette egentlig innebærer, sånn in the long run. «I disse koronatider» begynner å bli de mest beskrivende orda vi har.  Vår arts tilpasningsevne får muligheten til å virkelig briljere. Vi rigger oss til i den kroken vi har, med det hjemmekontoret vi trenger. Vi ringer hverandre over video, og forteller energisk om hvor deilig det er å gå en runde rundt blokka før dagen starter, for å skille mellom jobblivet og ikke-jobblivet. På internett ser vi filmsnutter fra hele verdenen av folk som danser til balkong-konserter, og vi klapper for helsearbeiderne. Sistnevnte dog for å overdøve den høye summetonen som kommer når 5G-nettet skal testes. Barn tegner regnbuer og henger de opp i vinduene, signert «Alt vil bli bra». Om ikke, så går det over sant? Sånn, etter sommeren i verste fall.
 
-
-**Nå er det november, og jeg sitter i møter med kollegaen  min i pysjbuksa.** 
+**Nå er det november, og jeg sitter i møter med kollegaen min i pysjbuksa.** 
 
 Året så langt har vært bare myke pakker. Og ja, jeg er redd det er for sent å ta det pent. Jeg føler meg ikke helt ferdig snakka om hvor skoddete, seigt og spesielt det er å leve under en pandemi. 
 
@@ -51,12 +50,9 @@ Så det er det jeg har lyst til nå da - snakke, fortelle og dele. Jeg håper at
 
 Som en liten inspirasjon, så har jeg nådd ut til mine design-kollegaer i Bekk og spurt om de vil dele hvordan dette året har vært for de. Jeg håper at dette setter i gang refleksjons-tannhjulene også hos deg som leser. For om ikke jula er tida for refleksjon og ettertanke, når da? 
 
-
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 
 <img class="light-theme-image" src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" >
 <img class="dark-theme-image" src="https://i.ibb.co/26YCGN3/live-dark-05.png" alt="live-dark-05" border="0" >
@@ -68,13 +64,11 @@ Som en liten inspirasjon, så har jeg nådd ut til mine design-kollegaer i Bekk 
 Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om de viktige tingene. Det er mindre “fluff” fordi det er mindre som skjer, og da dukker de ekte temaene opp i stedet. Alle er jo preget av det som skjer i større eller mindre grad, og jeg tror at det også gjør det lettere for oss å svare ordentlig på spørsmålet “Hvordan har du det?”. Når man først deler selv, kommer det ofte tilbake, og man blir dypere kjent. Men jeg har også merket en tendens til “jeg har jo ikke noe å klage over, for alle andre sitter i det samme”, og det er jeg ikke helt enig i. Om man har det bra eller ikke er ikke noe man skal finne ut av ved å sammenlikne seg selv med andre, synes jeg.” 
 
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 
 <img class="light-theme-image" src="https://i.ibb.co/RSBywg0/ashild.png" alt="ashild" border="0" >
-
 <img class="dark-theme-image" src="https://i.ibb.co/wYVpGDq/ashild-dark-07.png" alt="ashild-dark-07" border="0" >
-
 
 ## Åshild
 
@@ -87,9 +81,8 @@ Det har vore trist å ikkje kunne klemme vener og familie, og at eg ikkje har f�
 Sist men ikkje minst: eg har lært at eigentid er gull – det har vore veldig deileg å stresse ned. Ikkje føle at ein må vere med på alt. Og berre vere heime."
 
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 
 <img class="light-theme-image" src="https://i.ibb.co/ygGTtXg/ola.png" alt="ola" border="0" >
 <img class="dark-theme-image" src="https://i.ibb.co/7ysT0kZ/ola-dark-06.png" alt="ola-dark-06" border="0" >
@@ -104,16 +97,12 @@ Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for d
 
 Forrige lørdag fikk jeg en skikkelig god følelse. Jeg hadde på Nyhetsmorgen, og en av FHI-toppene sa at hjerte-og karsykdommer, slag og hjerteinfarkt har gått ned dette året. Da tenkte jeg: shit, kanskje 2020 er året alle bare slapper av.”
 
-
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 
 <img class="light-theme-image" src="https://i.ibb.co/9bCxwzb/linn-07.png" alt="linn-07" border="0" >
-
-<img class="dark-theme-image" https://i.ibb.co/tqFJz40/linn-dark-11.png" alt="linn-dark-11" border="0" >
+<img class="dark-theme-image" src="https://i.ibb.co/tqFJz40/linn-dark-11.png" alt="linn-dark-11" border="0" >
 
 ##Linn
 
@@ -125,16 +114,9 @@ Jeg jobber i NAV og med fokus på arbeidssøkere. Å se tallene stige dag for da
 
 Jeg synes det har vært skikkelig vanskelig at arbeidsplassen er samme sted som avslappingen. I sommer, da det var tre dager igjen av sommerferien, så gruet jeg meg skikkelig til å komme hjem til leiligheten. Det var jo der jobben var. Jeg var bekymret for at jeg ikke skulle klare å slappe av de siste feriedagene. Nå har jeg blitt flinkere og flinkere til å virkelig rydde bort jobben når arbeidsdagen er over. Å bare se en tom post-it lapp er nok for å få hjernen til å spinne og spinne."
 
-
-
-
-
-
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 
 <img class="light-theme-image" src="https://i.ibb.co/zbGTcBs/anders-10.png" alt="anders-10" border="0" >
 <img class="dark-theme-image" src="https://i.ibb.co/t8ccMky/anders-dark-11.png" alt="anders-dark-11" border="0" >
