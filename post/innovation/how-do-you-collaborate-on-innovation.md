@@ -3,7 +3,7 @@ calendar: innovation
 post_year: 2020
 post_day: 11
 title: How do you collaborate on innovation?
-image: https://images.unsplash.com/photo-1524046997286-863495b9638e
+image: https://images.unsplash.com/photo-1558403194-611308249627
 ingress: ""
 links:
   - title: Drypp fra Bekk på Spotify
