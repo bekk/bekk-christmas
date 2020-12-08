@@ -77,25 +77,30 @@ ReactDOM.render(
 );
 ```
 
-#### Handle derived state like a boss
+#### Flexible and powerful
 
-Derived state is state based on some other state. When you have both async and syncronous state, this can be challenging. With Recoil, state can be replaced with derived data without modifying the components that use it
+Derived state is state based on some other state. Like a pure function with props. With Recoil state can easily be replaced with derived data without modifying the components. 
+
+```
+// Returns the value of an atom or selector (readonly or writeable)
+useRecoilValue<T>(recoilValue: RecoilValue<T>): T;
+```
+
+Need more motivation ? read his own motivations [here](https://recoiljs.org/docs/introduction/motivation).
+
 
 ### Using Recoil - Examples
 
 The examples below are taken from a simple demo application called FoodTalk. The app lets you sort, filter and search for recipes. Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
 
-
 ![](/assets/screen-shot-2020-12-08-at-8.40.35-pm.png)
 
-Its a simple app, but it uses Recoil to solve some known challenges pretty well:
-
-
+Its a simple app, but it uses Recoil to solve some known challenges pretty well.
 
 
 ##### Atoms
 
-An atom is simply a piece of state. It's exactly like react setState, except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use an atom to store our search text value:
+An atom is simply a piece of state. It's like using react useState, except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use an atom to store our search value:
 
 ```js
 import { atom } from "recoil";
@@ -106,7 +111,7 @@ export const searchState = atom({
 });
 ```
 
-To read and write to this atom we use a hook called `useRecoilState`.
+To read and write to this atom we use `useRecoilState`.
 
 ```js
 import { useRecoilState } from "recoil";
@@ -126,7 +131,7 @@ export default () => {
 
 ##### Selectors
 
-Selectors is a piece of derived state. Just like a pure function, selectors can modify existing state and return something new instead. In our recipe application we use a selector to combine different filters to return a filtered list of recipipes.
+The application also need to handle derived state, and that`s when we use a selector. In our recipe application we use a selector to return a filtered list of our recipipes. Selectors are also memoized, making sure our performance is maintained.
 
 ```js
 import { selector } from "recoil";
@@ -144,7 +149,7 @@ export const filteredRecipesState = selector({
   });
 ```
 
-We can use the useRecoilValue() hook to read the value of filteredRecipesState.
+We can use the useRecoilValue() to read the value of filteredRecipesState.
 The cool thing here is that if our search state changes, our selector state will trigger a change as well.
 
 ```js
@@ -156,3 +161,29 @@ const Recipes = () => {
   ...
 };
 ```
+
+Finally we can add some spinners with React Suspense, which is supported out of the box.
+
+```
+<ErrorBoundery>
+ <Suspense fallback={<span>Loading..</span>}>
+   <Recipes />
+ </Suspense>
+</ErrorBoundery>
+```
+
+Take a look at the [repo](https://github.com/emilmork/recoil-foodtalk-demo) to see all the code 😁
+
+
+### Final thoughts
+
+The consept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like an natural extension of React. 
+
+
+Recomented sources:
+[Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI)
+
+
+
+
+
