@@ -96,7 +96,7 @@ Jeg hadde en liten meltdown etter påske. Da følte jeg at jeg ikke klarte å le
 Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for det. Spiser et eple, drikker 1,5 liter kaffe frem til kl. 11:00-14:00, inni der en plass spiser jeg 2 brødskiver. Kl. 16:00 tar jeg enda et eple, og slenger jeg meg på sofaen og scroller på TikTok i 20 minutter. Jeg har kanskje blitt mer åpen for ungdommelige sosiale medier dette året, hehe. Nei, jeg er bare lei jeg, ønsker bare at det skal gå over. Ønsker at folk skal ta vaksiner. Det er så kjedelig dette her. Den er så lite sexy den pandemien, den er så utrolig lite spennende. Hadde det vært. En ny istid eller noe, hadde i hvert fall vært litt interessant! 
 
 Forrige lørdag fikk jeg en skikkelig god følelse. Jeg hadde på Nyhetsmorgen, og en av FHI-toppene sa at hjerte-og karsykdommer, slag og hjerteinfarkt har gått ned dette året. Da tenkte jeg: shit, kanskje 2020 er året alle bare slapper av.”
-
+ 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
