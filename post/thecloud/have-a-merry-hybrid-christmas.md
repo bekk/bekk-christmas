@@ -24,7 +24,7 @@ The on-north-pole infrastructure consists of mainly Windows servers and he chose
 
 ## Azure App Service Hybrid Connection
 
-How can Santa access on-north-pole services from Azure without opening the entire network to the internet? One alternative, called [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections), allows on-north-pole networks to be privately extend Azure Cloud. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
+How can Santa access on-north-pole services from Azure without opening the entire network to the internet? One alternative, called [Hybrid Connection](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections), allows on-north-pole networks to privately extend Azure Cloud. As shown in the illustration below, taken from the documentation, there are few moving parts and it is quick and easy to set up.
 
 Santa Claus wants to expose a new API providing information about his elves. The API should be created in the cloud as a [Web App](https://azure.microsoft.com/en-gb/services/app-service/), but some of the data he needs is only available from servers on-north-pole. To establish this Santa Claus needs:
 
