@@ -41,7 +41,8 @@ Etter møtet sitter jeg igjen med hånden halvveis i været, med smilet limt på
 
 Jeg får lyst til å spole tilbake til mars i år. Norge er gått i sosial lockdown, og ingen av oss aner hva dette egentlig innebærer, sånn in the long run. «I disse koronatider» begynner å bli de mest beskrivende orda vi har.  Vår arts tilpasningsevne får muligheten til å virkelig briljere. Vi rigger oss til i den kroken vi har, med det hjemmekontoret vi trenger. Vi ringer hverandre over video, og forteller energisk om hvor deilig det er å gå en runde rundt blokka før dagen starter, for å skille mellom jobblivet og ikke-jobblivet. På internett ser vi filmsnutter fra hele verdenen av folk som danser til balkong-konserter, og vi klapper for helsearbeiderne. Sistnevnte dog for å overdøve den høye summetonen som kommer når 5G-nettet skal testes. Barn tegner regnbuer og henger de opp i vinduene, signert «Alt vil bli bra». Om ikke, så går det over sant? Sånn, etter sommeren i verste fall.
 
-**Nå er det november, og jeg sitter i møter med kollegaen min i pysjbuksa.** 
+>**Nå er det november, og jeg sitter i møter med kollegaen min i pysjbuksa.** 
+>Nå er det november, og jeg sitter i møter med kollegaen min i pysjbuksa.
 
 Året så langt har vært bare myke pakker. Og ja, jeg er redd det er for sent å ta det pent. Jeg føler meg ikke helt ferdig snakka om hvor skoddete, seigt og spesielt det er å leve under en pandemi. 
 
