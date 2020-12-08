@@ -96,9 +96,9 @@ Sist men ikkje minst: eg har lært at eigentid er gull – det har vore veldig d
 
 ## Ola
 
-"Ja, hva fanken har jeg lært av dette året. Jeg får litt dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Er egoistisk jeg, jeg har ikke gjort andres hverdag eller egen bedre. Føler egentlig at 2019 Ola er ganske lik 2020 Ola…
+"Ja, hva fanken har jeg lært av dette året. Jeg får litt dårlig samvittighet når jeg blir spurt om noe er annerledes etter dette året. Føler at jeg burde ha sett kollegaer eller teamet mitt på en annen måte. Det gjør meg kanskje litt egoistisk?Jeg føler at jeg hverken har gjort andres eller min egen hverdag bedre, FAKK. Føler egentlig at 2019 Ola er ganske lik 2020 Ola…
 
-Jeg hadde en liten meltdown etter påske. Da følte jeg at jeg ikke klarte å levere i hele tatt. Å lede møter når alle kan slå av mic og video, det synes jeg var ganske tøft. Nå i høst har hjemmekontoret heldigvis gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi andre som satt i møtet kunne høre at han snorket. Og det første jeg tenkte var; åh heldiggris – det der vil jeg også. Prosjektlederen min brukte 10 minutter på å prøve å unmute han, for Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte, og hva som ikke er det. Når jeg kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at dette møtet trengte jeg kanskje ikke være med på.
+Jeg hadde en liten meltdown etter påske. Da følte jeg at jeg ikke klarte å levere i hele tatt. Å lede kreative møter når alle kan slå av mic og video, det synes jeg var ganske tøft. Nå i høst har hjemmekontoret heldigvis gått litt bedre. Jeg opplevde jo å være på et møte der noen sovnet, og vi andre som satt i møtet kunne høre at han snorket. Og det første jeg tenkte var; åh heldiggris – det der vil jeg også. Prosjektlederen min brukte 10 minutter på å prøve å unmute han, for Teams var nytt og greier. Man ser veldig fort hva som er et nyttig møte, og hva som ikke er det. Når jeg kan brette tøy og vaske på innsiden av skap, kjøre støvsugeren frem og tilbake, da tenker jeg at dette møtet trengte jeg kanskje ikke være med på.
 
 Jeg er utrolig dårlig på faste lunsjtider, spiser kun når jeg har behov for det. Spiser et eple, drikker 1,5 liter kaffe frem til kl. 11:00-14:00, inni der en plass spiser jeg 2 brødskiver. Kl. 16:00 tar jeg enda et eple, og slenger jeg meg på sofaen og scroller på TikTok i 20 minutter. Jeg har kanskje blitt mer åpen for ungdommelige sosiale medier dette året, hehe. Nei, jeg er bare lei jeg, ønsker bare at det skal gå over. Ønsker at folk skal ta vaksiner. Det er så kjedelig dette her. Den er så lite sexy den pandemien, den er så utrolig lite spennende. Hadde det vært. En ny istid eller noe, hadde i hvert fall vært litt interessant! 
 
@@ -109,6 +109,11 @@ Forrige lørdag fikk jeg en skikkelig god følelse. Jeg hadde på Nyhetsmorgen, 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
+
+
+<img class="light-theme-image" src="https://i.ibb.co/9bCxwzb/linn-07.png" alt="linn-07" border="0" >
+
+<img class="dark-theme-image" https://i.ibb.co/tqFJz40/linn-dark-11.png" alt="linn-dark-11" border="0" >
 
 ##Linn
 
