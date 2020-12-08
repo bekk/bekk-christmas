@@ -60,7 +60,7 @@ import { fold, getOrElse } from "fp-ts/Option"
 
 // Let’s calculate the length of the username
 const usernameLength = fold(
-    () => 0
+    () => 0,
     (username) => username.length
 );
 
