@@ -118,7 +118,7 @@ React Hook Form is designed to work best with *uncontrolled components*. This me
 />
 ```
 
-We add [React Select](https://github.com/JedWatson/react-select) by wrapping it inside a `Controller` component using the `as` prop. The Controller automatically injects the `onChange`, `onBlur` and `value` props into the wrapped component. The same applies to other props that may be required by the underlying component (in this case the props `options` and `isClearable`). Validation rules are applied by setting the `rules` prop. Although this is the prefered syntax, you sometimes need to use the `render` prop instead of the `as` prop, which lets you customize events, value and ref:
+We add a [React Select](https://github.com/JedWatson/react-select) for choosing the cars fuel type by wrapping it inside a `Controller` component using the `as` prop. The Controller automatically injects the `onChange`, `onBlur` and `value` props into the wrapped component. The same applies to other props that may be required by the underlying component (in this case the props `options` and `isClearable`). Validation rules are applied by setting the `rules` prop. Although this is the prefered syntax, you sometimes need to use the `render` prop instead of the `as` prop, which lets you customize events, value and ref:
 
 ```javascript
 <Controller
