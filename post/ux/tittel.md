@@ -57,10 +57,7 @@ Som en liten inspirasjon, så har jeg nådd ut til mine design-kollegaer i Bekk 
 
 
 <img class="light-theme-image" src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" >
-
-
 <img class="dark-theme-image" src="https://i.ibb.co/26YCGN3/live-dark-05.png" alt="live-dark-05" border="0" >
-
 
 ## Live
 
@@ -89,10 +86,7 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 
 
 <img class="light-theme-image" src="https://i.ibb.co/ygGTtXg/ola.png" alt="ola" border="0" >
-
-
 <img class="dark-theme-image" src="https://i.ibb.co/7ysT0kZ/ola-dark-06.png" alt="ola-dark-06" border="0" >
-
 
 ## Ola
 
