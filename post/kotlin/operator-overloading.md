@@ -15,16 +15,16 @@ From Wikipedia:
 
 > *Operators are constructs defined within programming languages which behave generally like functions, but differ syntactically or semantically.*
 
-The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, and they are widely used in all sorts of programming languages. But these are only a few of all the operators defined in Kotlin (for a full list of Kotlin operators, take a look at the official documentation [here](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)). All operators have a fixed symbolic representation, such as `+` and `-`, and a function with a fixed name that specifies its functionality. You can see all the arithmetic operators with corresponding functions in the table below.
+The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, and they are widely used in all sorts of programming languages. But these are only a few of all the operators defined in Kotlin (for an exhaustive list, take a look at the official documentation [here](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)). All operators have a fixed symbolic representation, such as `+` and `-`, and a function with a fixed name that specifies its functionality. You can see all the arithmetic operators with their corresponding functions in the table below.
 
-| Operator |  Function |
-|:--------:|:---------:|
-|    -     |  minus()  |
-|    +     |   plus()  |
-|    *     |  times()  |
-|    /     |   div()   |
-|    %     |   rem()   |
-|   ..     | rangeTo() |
+| Symbol | Function  |
+|--------|-----------|
+| -      | minus()   |
+| +      | plus()    |
+| *      | times()   |
+| /      | div()     |
+| %      | rem()     |
+| ..     | rangeTo() |
 
 When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
 
@@ -81,3 +81,5 @@ val neighboursHouse = House(157, 3, 3, true)
 
 print(myHouse < neighboursHouse) // true
 ```
+
+These are just two basic examples of how you could use operator overloading in your application. 
