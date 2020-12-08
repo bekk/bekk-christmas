@@ -27,7 +27,7 @@ The definition of `Maybe` is essentially this:
 data Maybe a = Just a | Nothing
 ```
 
-The `a` here is a parametrically polymorphic type parameter. In a language like Java, a similar effect is achieved with generic types. In a language like English, this means that `Maybe` needs another type to become a concrete type. You can't have a value that's just (*sic.*) `Maybe`: It's a *type constructor*, which is akin to a function in the domain of types: it takes a type and returns another type.
+The `a` here is a parametrically polymorphic type parameter. In a language like Java, a similar effect is achieved with generic types. In a language like English, this means that `Maybe` needs another type to become a concrete type. You can't have a value that's just (*sic.*) `Maybe`: It is a *type constructor*, which is akin to a function in the domain of types: it takes a type and returns another type.
 
 ## Kinds
 
