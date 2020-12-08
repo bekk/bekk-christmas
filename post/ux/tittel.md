@@ -69,6 +69,10 @@ Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om
 
 <p>&nbsp;</p>
 
+<img class="light-theme-image" src="https://i.ibb.co/RSBywg0/ashild.png" alt="ashild" border="0" >
+
+<img class="dark-theme-image" src="https://i.ibb.co/wYVpGDq/ashild-dark-07.png" alt="ashild-dark-07" border="0" >
+
 
 ## Åshild
 
