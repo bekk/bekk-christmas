@@ -30,14 +30,14 @@ The screen is of course a web site, and the image will actually be a `canvas`-el
 document.getElementById("ourContainerDiv").appendChild(renderer.domElement);
 ```
 
-Then we need to make a camera that will represent the view angle and perspective of what we are looking at. Doing that, we need to specify the height-to-width ratio of the screen:
+Then we need to make a camera that will represent the view angle and perspective of what we are looking at. Doing that, we need to specify the height-to-width `aspect` of the screen:
 
 ```javascript
 const context = renderer.getContext();
 const aspect = context.drawingBufferWidth / context.drawingBufferHeight;
 const fov = 60;
 
-const camera = new THREE.PerspectiveCamera(fov, ratio);
+const camera = new THREE.PerspectiveCamera(fov, aspect);
 ```
 
 The `fov` is the field-of-view in degrees. All you gamers out there know that it can be very important!
@@ -137,7 +137,7 @@ document.addEventListener("click", () => { animationTime = 0 });
 
 Now we can use `animationTime` to calculate the cube shake (brand new sentence!). To rotate something, we simply change the values of the field `.rotation`. It is a 3 part vector with the object's rotation around the X, Y and Z axis:
 
-```
+```javascript
 mesh.rotation.set(x, y, z);
 ```
 
