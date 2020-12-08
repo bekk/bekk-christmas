@@ -16,13 +16,13 @@ authors: []
 
 Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*.
 
-If you have worked with React it should seem familiar. Just take a look at this example. First we use plain React to increment a number:
+If you have worked with React it should seem familiar. Just take a look at this example. First we use React with useState() to increment a number:
 
 ```js
 // React and setState
 
 const Counter = () => {
-  const [count, setCount] = setState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -33,7 +33,7 @@ const Counter = () => {
 };
 ```
 
-Now, making our counter global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **setState** with **useRecoilState.**
+Now, making our counter global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **useState** with **useRecoilState.**
 
 ```js
 //React and Recoil
@@ -128,7 +128,7 @@ export default () => {
 
 Selectors is a piece of derived state. Just like a pure function, selectors can modify existing state and return something new instead. In our recipe application we use a selector to combine different filters to return a filtered list of recipipes.
 
-```
+```js
 import { selector } from "recoil";
 
 export const filteredRecipesState = selector({
