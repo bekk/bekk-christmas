@@ -68,6 +68,6 @@ class Functor f where
 	fmap :: (a -> b) -> f a -> f b
 ```
 
-In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type. The payoff is that we can write a rich ecosystem of functionality that will allow code reuse for *any* functor (or other type class) with the guarantees of strong, static typing.
+In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type. The payoff is that we can supply a rich ecosystem of functionality that will allow code reuse for *any* functor (or other type class member) with the guarantees of strong, static typing.
 
 Most languages do not support higher-kinded polymorphism. However, it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems do not support them natively (Yallop & White, [*Lightweight higher-kinded polymorphism*](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf), 2014). If you have half an hour to spare, I recommend [this talk on how the concept is realised in Kotlin's functional abstraction library, *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>).
