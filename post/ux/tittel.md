@@ -40,7 +40,7 @@ authors:
 
 <p>&nbsp;</p>
 
-### Live
+## Live
 
 “Jeg har lært utrolig mye om mitt eget sosiale behov, og hvor stort det egentlig er. Jeg er jo en introvert av natur, men en veldig sosial introvert. Tidlig i juli flyttet samboeren min midlertidig til en annen by i forbindelse med jobb, og jeg husker at da jeg la meg den kvelden, så tenkte jeg at det var første gang jeg hadde vært alene, sånn på ordentlig, siden 12. mars. Det varte heldigvis ikke så lenge. Jeg tror jeg hadde flere middagsbesøk i juli og august enn resten av året sammenlagt. Det jeg har lagt merke til, både på jobb og ellers, er at jeg har begynt å ta mye mer aktivt ansvar for å få litt sosialt påfyll. Enten gjennom å invitere venner på middag, sette opp en fast kaffeprat på jobb eller andre ting. For min del har rutine vært nøkkelen til hjemmekontor. Det å sminke seg og ta på seg kontortøy før man “går på jobb” er en veldig fin måte å sette seg i riktig mindset for dagen, synes jeg.
 
@@ -51,7 +51,7 @@ Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om
 <p>&nbsp;</p>
 
 
-### Åshild
+## Åshild
 
 "2020 har lært meg at eg må konsentrere meg om meg sjølv og kva eg gjer og ikkje gjer – i starten blei eg så utruleg stressa av alle som ikkje fulgte korona-reglene at eg blei heilt bitter og sliten av det. Eg har lært at folk bretter opp ermene og bidrar. Eg hadde aldri i min villaste fantasi trudd at eg i året 2020 skulle ta på meg munnbind for ein snartur inn på Kiwi og antibace opp og ned i mente.”
 
@@ -68,7 +68,7 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 width="150px" height="200px"
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0"  /></a>
-### Ola
+## Ola
 
 <p>&nbsp;</p>
 
@@ -76,11 +76,21 @@ width="150px" height="200px"
 
 ##Linn
 
+
+
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
 ##Anders
+
+"De første ukene av pandemien var jo nesten litt spennende. Jeg var på Hurtigruta, og her traff det kanskje hardest for Bekk. Det føltes som at vi håndterte noe viktig. Deretter kom bølge 2 rundt august, og det var veldig tøft å komme i gang igjen for folk flest. Den siste bølgen nå føles nok for mange som en slags resignasjon -  jeg har stor forståelse for at noen opplever det utmattende og krevende.
+ 
+I Bekk er det cirka 500 ansatte. Dette året har vært en solid bekreftelse på homo sapiens sin omstillingsevne til en veldig annerledes hverdag. At selskapet vårt i løpet av noen få uker fikk nesten 500 mennesker til å fortsette å opprettholde fremdrift i prosjektene, og kvalitet på leveransene, det var utrolig gøy å se på. Samtidig har det vært viktig å forstå at disse 500 er enkeltpersoner, og det som i utgangspunktet er superenkelt for en person kan være vanskelig for andre. Jeg er jo en særing. Jeg har lært at den isolasjonen som oppstår med et hjemmekontor, ikke preger meg så mye. Folk er flinke til å stå med lua i hånden, det er liksom skambelagt å klage. Det finnes nok fortsatt folk som ikke tør, eller føler de kan si at de hæler ikke å sitte på hjemmekontoret.
+
+Også er det nyanser på ulike fag. Satt på spissen – teknologene kan blomstre om de blir ikke forstyrra, gå inn i flyten sin og skrive poesi i kodeform. Dette er  ikke like lett for designerne - de trenger å møte løpende motstand og reaksjoner i arbeidet sitt og dette blir vanskeligere fra hjemmekontoret. Tavla og papiret har en viktig oppgave i det å vise arbeidet til en designer. Å designe i et vakuum er ikke like enkelt. Dette kan skape usikkerhet på eget arbeid. De små bekreftelsene på riktig eller feil kurs mister man i en sånn solo-greie som hjemmekontoret blir.
+
+Midt i koronakrisa sto jeg med kniven på strupen og skulle håndtere Bekk og smittevernsreglene - samtidig som at jeg hadde en far hjemme som venta på hjerteoperasjon. Han kunne jo på ingen måte få korona, og den generasjonen klarer jo ikke å ta dette på alvor. De tenker at å dyppe hendene i lunka vann, og klemme lett på kinnene så er man forsiktig. Men så har jo det gått fint, han har kommet seg gjennom det. Jeg har jo aldri før vært bekymra for at foreldra mine skal bli forkjøla. "
 
 <p>&nbsp;</p>
 
