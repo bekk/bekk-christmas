@@ -33,7 +33,7 @@ const Counter = () => {
 };
 ```
 
-Now, making our counter global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **useState** with **useRecoilState.**
+Now, making our state global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **useState** with **useRecoilState.**
 
 ```js
 //React and Recoil
