@@ -50,7 +50,7 @@ const Counter = () => {
 };
 ```
 
-TNot convinced ? keep on reading.. 😄
+Thats pretty cool! Not convinced ? keep on reading.. 😄
 
 ### What's great about Recoil ?
 
