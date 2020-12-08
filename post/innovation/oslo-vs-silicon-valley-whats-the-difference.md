@@ -3,7 +3,7 @@ calendar: innovation
 post_year: 2020
 post_day: 10
 title: Oslo vs Silicon Valley - what's the difference?
-image: https://postimg.cc/1n2djTgW
+image: https://images.unsplash.com/photo-1524046997286-863495b9638e
 ingress: ""
 links:
   - title: Drypp fra Bekk på Spotify
