@@ -56,21 +56,21 @@ The `Option` wraps a value, and allows operations to be performed through funct
 But what if you wanted to display, or use, the username? You can’t just extract the value from inside an `Option`, as you don’t know whether it is a `some` or a `none`. To get the actual value from the `Option`, you need to specify what to do both when it is a `none`, and a `some`. Let’s take a look at two safe ways of extracting your value from the `Option`.
 
 ```ts
-import { fold, getOrElse } from "fp-ts/Option"
+import { fold, getOrElse } from "fp-ts/Option";
 
 // Let’s calculate the length of the username
 const usernameLength = fold(
-    () => 0,
-    (username) => username.length
+  () => 0,
+  (username: string) => username.length
 );
 
-const usernameOneLength: number = usernameLength(usernameOne) // -> 9
-const usernameTwoLength: number = usernameLength(usernameTwo) // -> 0
+const usernameOneLength: number = usernameLength(usernameOne); // -> 9
+const usernameTwoLength: number = usernameLength(usernameTwo); // -> 0
 
-const getOrEmpty = getOrElse(() => "")
+const getOrEmpty = getOrElse(() => "");
 
-const usernameOneValue: string = getOrEmpty(usernameOne) // -> "user-name"
-const usernameTwoValue: string = getOrEmpty(usernameTwo) // -> ""
+const usernameOneValue: string = getOrEmpty(usernameOne); // -> "user-name"
+const usernameTwoValue: string = getOrEmpty(usernameTwo); // -> ""
 ```
 
 With both `fold` and `getOrElse`, the type system forces us to handle both the missing and the non-missing state. You now have a safe way of handling missing values, and even a safe way of getting them out as well – no more checking for `null` all over the place!
@@ -87,8 +87,8 @@ type UserError = "UserNotFound" | "UserExpired"
 function getUserById(id: number): Either<UserError, User> { .. }
 
 // Pretending that a user with ID 1 exists, but not with 2
-function userOne = getUserById(1) // -> right({id: 1, name: "user-name", expiration: "2099-01-01TT00:00:00Z'})
-function userTwo = getUserById(2) // -> left("UserNotFound")
+const userOne = getUserById(1) // -> right({id: 1, name: "user-name", expiration: "2099-01-01TT00:00:00Z'})
+const userTwo = getUserById(2) // -> left("UserNotFound")
 
 const usernameOne = map(getUserName)(userOne) // -> right("user-name")
 const usernameTwo = map(getUserName)(userTwo) // -> left("UserNotFound")
@@ -105,8 +105,10 @@ Function composition is a central concept in functional programming. It is the a
 You could of course just call your simple functions in succession in a larger function. Either by saving the result of each step, or wrapping your functions inside each other. Both of these gets more and more tedious the more functions you need to call, and hides the important details: the actual logic and transformation. Let’s take a look at two functions called `pipe` and `flow`, which both make composition easier. They are quite alike, but have different use cases.
 
 ```ts
-const square = (x) => x * x;
-const timesTen = (x) => x * 10;
+import { pipe, flow } from "fp-ts/function";
+
+const square = (x: number) => x * x;
+const timesTen = (x: number) => x * 10;
 
 const result = pipe(3, square, timesTen); // -> 90
 
@@ -119,7 +121,9 @@ const result2 = squareAndMultiply(3); // -> 90
 
 ### Extended built-ins
 
-As I said in the beginning of this postt, JavaScripts standard library is in a bit of a weird position. If we take `Array` as an example, there is a distinction between functions that mutates in place, and functions that instead returns a new value. Things are moving to a better place, but we still have these old, mutating, functions that we have to live with. `fp-ts` fixes this by providing a consistent library even for JavaScript built-ins such as `Array`, `Map`, and `Set`. It’s not only consistent on the different types themselves, but also across the types thanks to extensive use of type classes. Every class that adheres to the `Functor` type class supports the `map` function, and every class that adheres to the `Filterable` type class can be filtered and partitioned. If this is greek to you, just ignore the lingo and appreciate the fact that you can use `map`, `filter`, `reduce` and a bunch of other functions on loads of different types. You can even implement them on types you create yourself as well!
+As I said in the beginning of this postt, JavaScripts standard library is in a bit of a weird position. If we take `Array` as an example, there is a distinction between functions that mutates in place, and functions that instead returns a new value. Things are moving to a better place, but we still have these old, mutating, functions that we have to live with. `fp-ts` fixes this by providing a consistent library even for JavaScript built-ins such as `Array` and `Map`. It’s not only consistent on the different types themselves, but also across the types thanks to extensive use of type classes[^1]. Every class that adheres to the `Functor` type class supports the `map` function, and every class that adheres to the `Filterable` type class can be filtered and partitioned. If this is greek to you, just ignore the lingo and appreciate the fact that most types has `map`, `filter`, `reduce` and loads of other functions implemented on them. You can even implement them on types you create yourself as well!
+
+[^1] These are not «real» type classes, they are type classes implementet with interfaces. You can’t use the same `map` function on all `Functor`s, but all `Functor`s has a `map` function. You still need to use the type specific implementation of `map`, but at least it encourages the same pattern.
 
 ### ... and so much more
 
