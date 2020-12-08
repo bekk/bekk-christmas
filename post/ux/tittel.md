@@ -128,6 +128,10 @@ Jeg synes det har vært skikkelig vanskelig at arbeidsplassen er samme sted som 
 
 <p>&nbsp;</p>
 
+
+<img class="light-theme-image" src="https://i.ibb.co/zbGTcBs/anders-10.png" alt="anders-10" border="0" >
+<img class="dark-theme-image" src="https://i.ibb.co/t8ccMky/anders-dark-11.png" alt="anders-dark-11" border="0" >
+
 ##Anders
 
 "De første ukene av pandemien var jo nesten litt spennende. Jeg var på Hurtigruta, og her traff det kanskje hardest for Bekk. Det føltes som at vi håndterte noe viktig. Deretter kom bølge 2 rundt august, og det var veldig tøft å komme i gang igjen for folk flest. Den siste bølgen nå føles nok for mange som en slags resignasjon -  jeg har stor forståelse for at noen opplever det utmattende og krevende.
