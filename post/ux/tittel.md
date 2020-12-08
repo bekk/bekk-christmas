@@ -35,7 +35,7 @@ authors:
 
 
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" width="76px" height="100px" /></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" width="76px" height="100px" max-width: 100% / ></a>
 ### Ola
 
 <p>&nbsp;</p>
@@ -48,4 +48,4 @@ authors:
 
 “Det jeg synes har vært best med denne tiden er at jeg føler man snakker mer om de viktige tingene. Det er mindre “fluff” fordi det er mindre som skjer, og da dukker de ekte temaene opp i stedet. Alle er jo preget av det som skjer i større eller mindre grad, og jeg tror at det også gjør det lettere for oss å svare ordentlig på spørsmålet “Hvordan har du det?”. Når man først deler selv, kommer det ofte tilbake, og man blir dypere kjent. Men jeg har også merket en tendens til “jeg har jo ikke noe å klage over, for alle andre sitter i det samme”, og det er jeg ikke helt enig i. Om man har det bra eller ikke er ikke noe man skal finne ut av ved å sammenlikne seg selv med andre, synes jeg.” 
 
-
+### Åshild
