@@ -23,7 +23,7 @@ links:
     url: https://react-hook-form.com/
 authors: []
 ---
-### Validation to the Rescue
+## Validation to the Rescue
 
 In Norway, license plates for cars follow a certain pattern, they consist of two letters and five digits (there are some exceptions, such as personal license plates, but we will ignore those). Considering this, we realize that the above scenario could have been avoided merely by adding some form validation. For this, we will utilize [React Hook Form] (https://react-hook-form.com/), which has become quite popular over the last year. React Hook Form is easy to use, quite lightweight and very performant. It has built-in validation, but also supports schema-based form validation with other tools such as [Yup](https://github.com/jquense/yup), [Superstruct](https://github.com/ianstormtaylor/superstruct) and [Joi](https://github.com/sideway/joi).
 
@@ -99,7 +99,7 @@ Alternatively, we can use a simple component, `ErrorMessage` (we need to install
 
 This is all we need to avoid registering an invalid license number! However, there are some more concepts we should look at.
 
-### Controlled vs. Uncontrolled
+## Controlled vs. Uncontrolled
 React Hook Form is designed to work best with *uncontrolled components*. This means that form data is handled by the DOM itself and can be accessed directly using refs (this is why we put the `register` method there). *Controlled components* on the other side, use event handlers such as `onChange` to update values at state change. Many third-party libraries use controlled components, and luckily there is a way we can use those together with React Hook Form:
 
 ```javascript
@@ -120,7 +120,7 @@ React Hook Form is designed to work best with *uncontrolled components*. This me
 
 
 
-### Form Context
+## Form Context
 When moving input fields to shared components in order to make them reusable, you can of course pass all neccessary methods from `useForm` as props. In many cases, wrapping the whole form inside a `FormProvider` and accessing the form's context by using `useFormContext` might be a more elegant solution:
 
 ```javascript
@@ -147,5 +147,5 @@ Let's wrap up everything, add some styling and a little bit more logic and we go
 
 [LINK TO CODESANDBOX]
 
-### A Swiss Army Knife
+## A Swiss Army Knife
 There is so much more you can do with React Hook Form! It's too bad I can't cover everything in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides other useful examples. I personally have been using this tool for about a year now and have never been in a situation where it failed to solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind.
