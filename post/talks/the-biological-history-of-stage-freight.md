@@ -33,12 +33,12 @@ One of my favorite recent scientific discoveries highlight just how extremely wi
 
 For several decades scientists have used MRI-machines to study how different areas in the brain get activated when a person is given a specific task. Some areas, aka “language centers”, light up when the research subject is asked to speak or read. Other areas are activated when solving math problems or listening to Beethoven. 
 
-But what happens in the brain when a person is resting? Does the brain deactivate?\
-\
-Some researchers continued the scan after telling the person in the MRI-machine to relax. What they found was that other areas in the brain lit up.
-It turned out that this was not some random brain activity, but areas that are active in most people when they relax and do nothing. It’s like a default state that the brain returns to after finishing work. Because of this it was called [“The Brain’s default mode network”](https://en.wikipedia.org/wiki/Default_mode_network) and thought to be like a screensaver that keeps the brain healthy until it gets something useful to do again.
+But what happens in the brain when a person is resting? Does the brain deactivate?
 
 ![MRI scan of our brains default mode network](https://upload.wikimedia.org/wikipedia/commons/9/9a/Default_mode_network-WRNMMC.jpg)
+
+Some researchers continued the scan after telling the person in the MRI-machine to relax. What they found was that other areas in the brain lit up.
+It turned out that this was not some random brain activity, but areas that are active in most people when they relax and do nothing. It’s like a default state that the brain returns to after finishing work. Because of this it was called [“The Brain’s default mode network”](https://en.wikipedia.org/wiki/Default_mode_network) and thought to be like a screensaver that keeps the brain healthy until it gets something useful to do again.
 
 Only recently have neuroscientists discovered that the [default mode network overlaps almost perfectly with the brain areas that get active when people think about their social relationships](https://www.researchgate.net/publication/228071925_On_the_relationship_between_the_Default_Mode_Network_and_the_Social_Brain).
 
