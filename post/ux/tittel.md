@@ -39,6 +39,8 @@ authors:
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
+<img src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" 
+width="200px" height="201px">
 
 ## Live
 
@@ -65,7 +67,6 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 
 <p>&nbsp;</p>
 
-width="150px" height="200px"
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0"  /></a>
 ## Ola
