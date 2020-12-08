@@ -65,7 +65,9 @@ Sist men ikkje minst - eg har lært at eigentid er gull – det har vore veldig 
 
 <p>&nbsp;</p>
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0" width="150px" height="200px" /></a>
+width="150px" height="200px"
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2Np62F3/image-28.png" alt="image-28" border="0"  /></a>
 ### Ola
 
 <p>&nbsp;</p>
