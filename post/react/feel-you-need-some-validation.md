@@ -144,9 +144,14 @@ The `LicenseNoInput` component can then access the form methods as easy as this:
   const { errors, register } = useFormContext();
 ```
 
-Let's wrap up everything, add some styling and a little bit more logic and we got our very own parking app with working validation!
+Let's wrap it all up, add a little more logic and styling and voilà: we have a parking app with form validation that actually works!
 
-[LINK TO CODESANDBOX]
+<iframe src="https://codesandbox.io/embed/react-hook-formadvanced-f3mey?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.jsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-hook-form_advanced"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ## A Swiss Army Knife
 There is so much more you can do with React Hook Form! It's too bad I can't cover everything in a single article. I can recommend a look at the [official documentation](https://react-hook-form.com/api/), which also provides other useful examples. I personally have been using this tool for about a year now and have never been in a situation where it failed to solve a problem. If you are still not convinced, the fact that TypeScript is fully supported will hopefully change your mind.
