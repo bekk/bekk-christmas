@@ -86,7 +86,7 @@ Derived state is state based on some other state. Like a pure function with prop
 useRecoilValue<T>(recoilValue: RecoilValue<T>): T;
 ```
 
-Need more motivation ? read his own motivations [here](https://recoiljs.org/docs/introduction/motivation).
+read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
 
 
 ### Using Recoil - Examples
