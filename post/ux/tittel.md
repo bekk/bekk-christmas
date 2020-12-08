@@ -53,7 +53,11 @@ Som en liten inspirasjon, så har jeg nådd ut til mine design-kollegaer i Bekk 
 <p>&nbsp;</p>
 
 
-<img src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" >
+<img class="light-theme-image" src="https://i.ibb.co/7y762Ff/live.png" alt="live" border="0" >
+
+
+<img class="dark-theme-image" src="https://i.ibb.co/GMh5Rny/live-dark-05.png" alt="live-dark-05" border="0" >
+
 
 ## Live
 
