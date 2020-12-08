@@ -81,7 +81,7 @@ resource "azurerm_relay_namespace" "sb_northpole" {
 }
 ```
 
-The relay is the service bus namespace which can have one or more connections to a host on-north-pole. One connection is bound to a combination of host and port number. Below, the connection from the relay to the service on-north-pole is defined in Terraform.
+The relay is the [service bus namespace](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-create-namespace-portal) which can have one or more connections to a host on-north-pole. One connection is bound to a combination of host and port number. Below, the connection from the relay to the service on-north-pole is defined in Terraform.
 
 ```jsonc
 resource "azurerm_relay_hybrid_connection" "hcn_northpole" {
