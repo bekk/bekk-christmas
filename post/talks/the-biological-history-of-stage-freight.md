@@ -3,7 +3,7 @@ calendar: talks
 post_year: 2020
 post_day: 9
 title: Hack your paleolithic mind to overcome stage fright
-image: https://unsplash.com/photos/ZwI6tCPxOy4
+image: https://images.unsplash.com/photo-1586084531237-9afd318402e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80
 ingress: Most of us feel very uneasy before going on a stage or in front of a
   live tv-camera. Rationally you can tell yourself that even if it all goes
   wrong, in a few hours you will still be alive, that you’ll still have your
@@ -36,7 +36,7 @@ For several decades scientists have used MRI-machines to study how different are
 But what happens in the brain when a person is resting? Does the brain deactivate?\
 \
 Some researchers continued the scan after telling the person in the MRI-machine to relax. What they found was that other areas in the brain lit up.
-It turned out that this was not some random brain activity, but areas that are active in most people when they relax and do nothing. It’s like a default state that the brain returns to after finishing work. Because of this it was called [“The Brain’s default mode network”](<### https://en.wikipedia.org/wiki/Default_mode_network>) and thought to be like a screensaver that keeps the brain healthy until it gets something useful to do again.
+It turned out that this was not some random brain activity, but areas that are active in most people when they relax and do nothing. It’s like a default state that the brain returns to after finishing work. Because of this it was called [“The Brain’s default mode network”](https://en.wikipedia.org/wiki/Default_mode_network) and thought to be like a screensaver that keeps the brain healthy until it gets something useful to do again.
 
 Only recently have neuroscientists discovered that the [default mode network overlaps almost perfectly with the brain areas that get active when people think about their social relationships](https://www.researchgate.net/publication/228071925_On_the_relationship_between_the_Default_Mode_Network_and_the_Social_Brain).
 
