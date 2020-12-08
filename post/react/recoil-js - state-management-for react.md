@@ -14,11 +14,13 @@ authors: []
 
 [Recoil.js](https://recoiljs.org/) is a new state management library for [React](https://www.google.com/search?q=reactjs&rlz=1C5CHFA_enNO890NO890&oq=reactjs&aqs=chrome..69i57j0l4j69i60l3.1252j0j7&sourceid=chrome&ie=UTF-8) — offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state 🔥
 
-Recoil aims to solve some specific challenges when working with modern React apps like _flexible shared state_, _derived state_ and _global observation_.
+Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*.
 
-And for anyone working with React it should seem familiar. First take a look at this example using React local state to increment a number:
+If you have worked with React it should seem familiar. Just take a look at this example. First we use plain React to increment a number:
 
 ```js
+// React and setState
+
 const Counter = () => {
   const [count, setCount] = setState(0);
 
@@ -31,9 +33,11 @@ const Counter = () => {
 };
 ```
 
-Now, making our counter global is pretty streight forward using Recoil. All we need to do is replacing **setState** with **useRecoilState.**
+Now, making our counter global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **setState** with **useRecoilState.**
 
 ```js
+//React and Recoil
+
 const Counter = () => {
   const [count, setCount] = useRecoilState(myGlobalCounterState); ⬅
 
@@ -46,7 +50,7 @@ const Counter = () => {
 };
 ```
 
-Not convinced ? keep on reading cowboy.. 🤠
+TNot convinced ? keep on reading.. 😄
 
 ### What's great about Recoil ?
 
@@ -54,17 +58,16 @@ Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.o
 
 #### Tailored for React
 
-Recoil is made specifically for React and offers close compatibility with features React Suspense, Concurrent mode and claims to support new React features as they become available.
+Recoil is made specifically for React and offers close compatibility with features React Suspense, Concurrent mode and the team claims to support new React features as they become available.
 
 #### Easy to learn
 
 When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was.
 
-Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap you code with RecoilRoot:
+Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap your code with RecoilRoot.
 
 ```js
 import { RecoilRoot } from "recoil";
-import App from "./App";
 
 ReactDOM.render(
     <RecoilRoot> ⬅️
@@ -76,17 +79,19 @@ ReactDOM.render(
 
 #### Handle derived state like a boss
 
-Derived state is state based on some other state. When you have both async and syncronous state, this can be challenging. With Recoil, state can be replaced with derived data without modifying the components that use it -
+Derived state is state based on some other state. When you have both async and syncronous state, this can be challenging. With Recoil, state can be replaced with derived data without modifying the components that use it
 
 ### Using Recoil - Examples
 
-The examples below are taken from a simple demo application called I have made. The app lets you sort, filter and search for recipes.
+The examples below are taken from a simple demo application called FoodTalk. The app lets you sort, filter and search for recipes. Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
 
-Its a simple app, but it solves some known challenges:
 
-- Derived state -
+![](/assets/screen-shot-2020-12-08-at-8.40.35-pm.png)
 
-Take a look at the [demo](https://emilmork.github.io/recoil-foodtalk-demo/) or the source code on [github](https://github.com/emilmork/recoil-foodtalk-demo).
+Its a simple app, but it uses Recoil to solve some known challenges pretty well:
+
+
+
 
 ##### Atoms
 
