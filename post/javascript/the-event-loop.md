@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 13
 title: The Event Loop
+image: https://unsplash.com/photos/uQs1802D0CQ
 ingress: Today is St Lucia Day🕯. The bearer of light, which takes away the dark
   winter up north and brings joy, light and a common ground. Just like
   JavaScript did for browsers. Ok, that was a cheap shot, I promise it will be
