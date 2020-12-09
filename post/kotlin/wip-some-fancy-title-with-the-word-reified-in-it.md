@@ -90,7 +90,7 @@ Since we have information about the actual type of the type parameter at the cal
     }
 ```
 
-Here we see how Kotlin has gotten around type erasure of type parameters: since inline expansion is performed, additional information can be included at the call-site - i.e. Kotlin can provide us with runtime information about the actual type of generic function type arguments! Specifically, in this example we now have access to the concrete type information about the parameter we invoked `simpleGenericFunctionWithoutBounds : `ExtendableClass`, on which we're accessing `::class`. 
+Here we see how Kotlin has gotten around type erasure of type parameters: since inline expansion is performed, additional information can be included at the call-site - i.e. Kotlin can provide us with runtime information about the actual type of generic function type arguments! Specifically, in this example we now have access to the concrete type information about the parameter we invoked `simpleGenericFunctionWithoutBounds` with: `ExtendableClass`, on which we're accessing `::class`. 
 
 Hopefully this article has helped in demystifying the concept of reification a little, and illustrated how we may take advantage of this concept to do things we otherwise would not be able to through the use of the reified keyword. Whether it is using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth.
 
