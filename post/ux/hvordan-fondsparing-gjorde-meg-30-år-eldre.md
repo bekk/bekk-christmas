@@ -25,15 +25,15 @@ Til alle banker der ute: Ikke lek Facebook. Ikke tro at kontinuerlig design løs
 Fader, altså. Om jeg bare hadde investert i en skikkelig rynkekrem i stedet. 
 Da hadde jeg sikkert ledd hele veien til banken. Uten en eneste smilerynke. Som dette:
 
-![Selfie med Paris-filter](https://miro.medium.com/max/1400/1*WNQpgqGkoNbEtBIWxpHXkQ@2x.jpeg)
-*Ja, jeg har brukt Paris-filteret på Instagram.*
 
 ![Selfie med Paris-filter](https://i.ibb.co/svzzsGC/Hvordan-fondsparing-gjorde-meg-30-a-r-eldre1.png)
 *Ja, jeg har brukt Paris-filteret på Instagram.*
 
+<p>&nbsp;</p>
+
 Men i stedet for ser jeg slik ut:
 
-![Selfie med gammel person-filter](https://miro.medium.com/max/1280/1*UmVPDBujtueoi4BzTLWTOA@2x.jpeg)
+![Selfie med gammel person-filter](https://i.ibb.co/kgHGng3/Hvordan-fondsparing-gjorde-meg-30-a-r-eldre2.png)
 *Hanna (29), sparer i fond.*
 
 Jup, fondsparing har gitt meg rynker, du trenger ikke å si det. Jeg ser rett og slett gammel ut. Gammel og fortvila. Fondsparing har gått på helsa løs.
