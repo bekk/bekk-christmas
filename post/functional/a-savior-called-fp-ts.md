@@ -21,7 +21,7 @@ Not too long ago I came across this library named `fp-ts`, that together with `T
 
 [fp-ts](https://github.com/gcanti/fp-ts) introduces _many_ functional concepts. If you come from Java or Kotlin, you can compare it to [Vavr](https://www.vavr.io) or [Arrow](https://arrow-kt.io), respectively. It provides several well known data types, type classes, a consistent library of functions, and several other functional abstractions.
 
-Wading through every feature of fp-ts would be an enourmous task, and one way too overkill for this blog. Instead, I will take you through some of the simpler concepts that anyone can benefit from. My goal is to show you exactly how to use some of these concepts, so you can take use of them right after.
+Wading through every feature of fp-ts would be an enourmous task, and one way too overkill for this blog. Instead, I will take you through some of the simpler concepts that anyone can benefit from. My goal is to show you exactly how to make use of some of these concepts, so you can take use of them right after.
 
 Let’s get started!
 
