@@ -25,7 +25,7 @@ Til alle banker der ute: Ikke lek Facebook. Ikke tro at kontinuerlig design løs
 Fader, altså. Om jeg bare hadde investert i en skikkelig rynkekrem i stedet. 
 Da hadde jeg sikkert ledd hele veien til banken. Uten en eneste smilerynke. Som dette:
 
-<img class="light-theme-image" src="https://miro.medium.com/max/1400/1*WNQpgqGkoNbEtBIWxpHXkQ@2x.jpeg" />
+<img class="dark-theme-image" src="https://miro.medium.com/max/1400/1*WNQpgqGkoNbEtBIWxpHXkQ@2x.jpeg" />
 
 ![Selfie med Paris-filter](https://miro.medium.com/max/1400/1*WNQpgqGkoNbEtBIWxpHXkQ@2x.jpeg)
 *Ja, jeg har brukt Paris-filteret på Instagram.*
