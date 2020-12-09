@@ -1,7 +1,7 @@
 ---
 calendar: talks
 post_year: 2020
-post_day: 13
+post_day: 18
 title: The Takahashi-method
 authors:
   - Håvard Hvassing
