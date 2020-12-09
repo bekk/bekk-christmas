@@ -2,7 +2,7 @@
 calendar: kotlin
 post_year: 2020
 post_day: 13
-title: "WIP: Operator Overloading"
+title: Operator Overloading
 image: https://images.unsplash.com/photo-1548690596-f1722c190938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3453&q=80
 ingress: Have you ever tried to compare two instances of your self-made data
   class in Kotlin just to realize it is not possible? By employing operator
