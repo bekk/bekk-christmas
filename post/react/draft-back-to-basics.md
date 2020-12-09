@@ -81,7 +81,7 @@ This part is not as scary as some people might think, and we will see here that 
 
 ### What
 
-Webpack is a \*module bundler\* for the web, which in practice means that it takes all your assets (JS, CSS, Images, etc.) and packages them into bundles that browsers understand.
+Webpack is a "module bundler" for the web, which in practice means that it takes all your assets (JS, CSS, Images, etc.) and packages them into bundles that browsers understand.
 
 **Why**
 
