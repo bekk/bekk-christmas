@@ -23,7 +23,7 @@ At the base level of our programs we have values, and these values have types. `
 
 The definition of `Maybe` is essentially this:
 
-```
+```haskell
 data Maybe a = Just a | Nothing
 ```
 
@@ -35,7 +35,7 @@ The kind of a type is an abstraction over its "shape" in terms of types. Concret
 
 `Maybe` has kind `* -> *` because it takes a concrete type as an argument and gives you another concrete type.
 
-```
+```haskell
 data Either a b = Left a | Right b
 ```
 
@@ -51,7 +51,7 @@ A higher-order function is a function with order greater than 1 (who'd-a thunk i
 
 In an analogous way, a higher-kinded type is a type that operates on other types so that their level of abstraction from concrete types is greater than 1.
 
-```
+```haskell
 data StringContainerContainer c = AptlyNamedConstructor { value :: c String }
 ```
 
@@ -63,11 +63,11 @@ Note how this is fundamentally different from the kind of `Either`. `Either` is 
 
 Functors exist in many languages. The essence of a functor is some context that you can *map* over, i.e. lift a function into the context in a sensible manner and apply it there. A list is a straightforward example of a functor. In Haskell, they are abstracted as a type class:
 
-```
+```haskell
 class Functor f where
 	fmap :: (a -> b) -> f a -> f b
 ```
 
-In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type. The payoff is that we can supply a rich ecosystem of functionality based on these class operators that allow code reuse for *any* functor (or other type classes) while keeping the guarantees of strong, static typing.
+In the signature of `fmap` we see that the polymorphic type parameter `f` is simultaneously polymorphic in another type. The payoff is that we can supply a rich ecosystem of functionality based on these class operators that allow code reuse for *any* functor (or other type class) while keeping the guarantees of strong, static typing.
 
 Most languages do not support higher-kinded polymorphism. However, it turns out that it is possible to achieve a lightweight higher-kindedness in languages whose type systems only support first-order kinds through a process called type defunctionalisation (Yallop & White, [*Lightweight higher-kinded polymorphism*](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf), 2014). If you have half an hour to spare, I recommend [this talk on how the concept is realised in Kotlin's functional abstraction library, *Arrow*](<https://www.youtube.com/watch?v=ERM0mBPNLHc>).
