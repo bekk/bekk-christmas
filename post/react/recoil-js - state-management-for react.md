@@ -152,7 +152,7 @@ Recoil is made specifically for React and offers close compatibility with featur
 
 #### Easy to learn
 
-When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was.
+When I tried Recoil I realized how complicated and difficult other state libraries like Redux are.
 
 Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap your code with RecoilRoot.
 
