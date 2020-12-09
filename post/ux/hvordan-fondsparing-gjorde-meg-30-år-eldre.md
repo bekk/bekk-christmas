@@ -53,6 +53,7 @@ Det er rett og slett for mange veier til rom i form av en evig runddans for hvor
 
 ## Ikke aksjesparekonto vs. aksjesparekonto
 For ja! Det er dritlett å shoppe fra brukskontoen — altså sette brukskontoen opp som belastningskontoen! Det har jeg gjort lenge nå. Jeg følte meg som Jordan Belfort på Wallstreet, shoppet litt andeler her og der, fulgte nøye med på rentene hver dag, spekulerte i hva som kunne være lønnsomt å spare i, og tenkte at herfra går det bare oppover! Så opprettet jeg aksjesparekonto, og det var som om 2008 slo meg i trynet.
+
 Jeg fikk ikke pengene, altså de faste månedlige kjøpene som jeg ville sette opp, til å flyte gjennom aksjesparekontoen.
 
 Så jeg forsøkte manuelt, da. Og bare se her, se hvor knotete dét var:
