@@ -20,7 +20,7 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 ![Table showing all arithmetic operators with their corresponding functions](https://i.ibb.co/4SPK832/Arithmetic-operators-with-functions-in-Kotlin.png)
 
 | Symbol | Function  |
-|--------|-----------|
+|:--------:|:-----------:|
 | -      | minus()   |
 | +      | plus()    |
 | *      | times()   |
