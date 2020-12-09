@@ -1,7 +1,7 @@
 ---
 calendar: talks
 post_year: 2020
-post_day: 12
+post_day: 14
 title: How to Present Like Me
 image: https://pbs.twimg.com/profile_banners/21295249/1540032331/1500x500
 ingress: If you're curious about doing tech talks, chances are you're stressed
