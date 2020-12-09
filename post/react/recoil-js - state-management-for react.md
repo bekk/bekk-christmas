@@ -106,7 +106,7 @@ import { selector } from "recoil";
 
 export const filteredRecipesState = selector({
     key: "filteredRecipes",
-    get: ({ get }) => {
+    get: async ({ get }) => {
       const recipes = await fetchRecipes(); // async
 
       const searchValue = get(searchState); // sync
@@ -171,10 +171,6 @@ ReactDOM.render(
 
 Derived state is state based on some other state. Like a pure function with props. With Recoil state can easily be replaced with derived data without modifying the components. 
 
-```
-// Returns the value of an atom or selector (readonly or writeable)
-useRecoilValue<T>(recoilValue: RecoilValue<T>): T;
-```
 
 Read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
 
