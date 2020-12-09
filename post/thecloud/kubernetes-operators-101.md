@@ -23,6 +23,7 @@ authors:
   - Even Holthe
 ---
 The Operator pattern is best described in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/):
+
 > The Operator pattern aims to capture the key aim of a human operator who is managing a service or set of services. Human operators who look after specific applications and services have deep knowledge of how the system ought to behave, how to deploy it, and how to react if there are problems.
 >
 > People who run workloads on Kubernetes often like to use automation to take care of repeatable tasks. The Operator pattern captures how you can write code to automate a task beyond what Kubernetes itself provides.
@@ -37,16 +38,15 @@ Given an instance (`CR`) of `PostgresDatabase`, it's now the job of the controll
 
 Patching, reboots and failovers can be specified in the `CR` and taken care of by the controller, using methods recommended by experienced DBAs. The fact that complex operational knowledge can be encoded into the controller is a key enabler for many organizations who'd like to run complex software, but not necessarily invest countless hours into learning the nitty gritty details on how to operate it.
 
-
 Like any other software there will be bugs and abstractions will leak. There's no silver bullet.
 
 ## How do I create my own Operator?
 
 As with the rest of the Kubernetes community, multiple solutions exists.
 
-- For a declarative experience, check out [KUDU](https://kudo.dev/)
-- If you'd like a more official way to do it, see [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
-- The most popular option seems to be [Operator SDK](https://github.com/operator-framework/operator-sdk)
+* For a declarative experience, check out [KUDU](https://kudo.dev/)
+* If you'd like a more official way to do it, see [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
+* The most popular option seems to be [Operator SDK](https://github.com/operator-framework/operator-sdk)
 
 As with most cloud native software, Go seems to be the lingua franca. There is nothing stopping you from writing an Operator in Java, C#, Python or any other language that can communicate with the Kubernetes APIs.
 
@@ -54,7 +54,10 @@ As with most cloud native software, Go seems to be the lingua franca. There is n
 
 The community has produced a lot of Operators for about everything one can imagine. These are some popular examples:
 
-- [Argo CD](https://github.com/argoproj/argo-cd) - a  declarative, GitOps continuous delivery tool for Kubernetes.
-- [cert-manager](https://github.com/jetstack/cert-manager) - automatically provisions TLS certificates via the ACME protocol. Can be used with certificate issuers such as [Let's Encrypt](https://letsencrypt.org/), [Buypass](https://www.buypass.no/ssl/resources/acme-free-ssl) and [ZeroSSL](https://zerossl.com/documentation/acme/).
-- [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) - often used in combination with [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus) for a batteries included monitoring suite
-- [KubeDB](https://kubedb.com/) - a real-life implementation of the `PostgresDatabase` example, plus support for MySQL/MariaDB/MongoDB/Redis/Memcached and more
+* [Argo CD](https://github.com/argoproj/argo-cd) - a  declarative, GitOps continuous delivery tool for Kubernetes.
+* [cert-manager](https://github.com/jetstack/cert-manager) - automatically provisions TLS certificates via the ACME protocol. Can be used with certificate issuers such as [Let's Encrypt](https://letsencrypt.org/), [Buypass](https://www.buypass.no/ssl/resources/acme-free-ssl) and [ZeroSSL](https://zerossl.com/documentation/acme/).
+* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) - often used in combination with [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus) for a batteries included monitoring suite
+* [KubeDB](https://kubedb.com/) - a real-life implementation of the `PostgresDatabase` example, plus support for MySQL/MariaDB/MongoDB/Redis/Memcached and more
+
+---
+<small>Header image: RIA Novosti archive, image #305015 / Alexey Danichev / CC-BY-SA 3.0</small>
