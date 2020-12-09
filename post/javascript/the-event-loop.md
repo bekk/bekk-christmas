@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2020
 post_day: 13
-title: The Event Loop
+title: Let's cook up some events
 image: https://unsplash.com/photos/uQs1802D0CQ
 ingress: Today is St Lucia Day🕯. The bearer of light, which takes away the dark
   winter up north and brings joy, light and a common ground. Just like
@@ -16,7 +16,7 @@ ingress: Today is St Lucia Day🕯. The bearer of light, which takes away the da
 authors:
   - Henrietta Eide Bleness
 ---
-## H2 Even loop or cooking 🤔 ? 
+## Even loop or cooking 🤔 ? 
 
 First thing first, JavaScript is single-threaded. Which means it can only run one task at a time. Most of the time this is totally fine, but if the task takes more than a second, let's say one minute... then we have a problem. Since JavaScript then waits for the response before it continues with the rest of the tasks. And, as you might well know, JavaScript is used in the browser, that closely equals the interface with the user. So if JS is stuck, then the UI is stuck, and we don’t want that ❌. 
 
@@ -26,7 +26,7 @@ I promised you to make this article more edible, and therefore I will illustrate
 Furthermore, let's pretend we are single threaded as well. Therefore, we read the recipe and start the first task, which is preparing the ribbe.
 
 
-## H2 Cook up this event loop
+## Cook up this event loop
 
 In the preparation, we have to start with the seasoning. This should be done 3 days beforehand, and then it shall cook for 3 hours. If we could only execute one task at the time then all the other cooking, sausages, potatoes etc, would have to wait until the ribbe is done. With this logic, good luck impressing your family with an elegant delicious dinner. And hopefully ribbe is the first on the list and not the last 😱 Luckily, we’re not single threaded, and the same goes for JavaScript, in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
 
