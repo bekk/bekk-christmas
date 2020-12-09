@@ -48,6 +48,8 @@ If you live in Europe, you have probably heard of General Data Protection Regula
 
 As a consumer, you notice it best by having to accept the use of cookies on the web or by giving permissions to the apps of which data they can have access to. However, the government can only do so much if consumers keep accepting the usage. The web or phone applications often make it hard not to accept by writing the terms incomprehensible or too long. In some cases, you must even go to completely different applications to turn it all the way off. *As long as it is easier to accept, we will accept.* 
 
+It can also be difficult to investigate where the commercially sold data comes from because not all companies are located in Europe and in some cases the terms does not specify all the different ways your data can be spread. 
+
 ## Off the grid
 
 By highlighting some downsides of sharing data, you might feel the need to stop sharing data all together, but it is important to state that data sharing is not all bad. First of all, getting commercials tailored for you can be a good thing as you can get offers based off of previous purchases and get more effective services. Another great thing about sharing your data is that it can benefit scientists. Research on cancer be done studying patient data, why we are the way we are can be explored by looking at data from Facebook and so on. Looking at large sets of data can give us a better understanding of the world today.
