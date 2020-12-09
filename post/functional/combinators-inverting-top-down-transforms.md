@@ -3,6 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 10
 title: Combinators - Inverting Top-Down Transforms
+image: https://unsplash.com/photos/JPN6TlIdWko
 ingress: "Today and tomorrow we are excited to have a guest writer sharing some
   of his thoughts on the topic of functional programming: Dillon Kearns, known
   for projects such as elm-graphql, elm-typescript-interop, and the [Elm
