@@ -17,7 +17,7 @@ links: []
 authors:
   - Henrietta Eide Bleness
 ---
-## Even loop or cooking 🤔 ? 
+## Event loop or cooking 🤔 ? 
 
 First thing first, JavaScript is single-threaded. Which means it can only run one task at a time. Most of the time this is totally fine, but if the task takes more than a second, let's say one minute... then we have a problem. Since JavaScript then waits for the response before it continues with the rest of the tasks. And, as you might well know, JavaScript is used in the browser, that closely equals the interface with the user. So if JS is stuck, then the UI is stuck, and we don’t want that ❌. 
 
@@ -27,7 +27,7 @@ I promised you to make this article more edible, and therefore I will illustrate
 Furthermore, let's pretend we are single threaded as well. Therefore, we read the recipe and start the first task, which is preparing the ribbe.
 
 
-## Cook up this event loop
+## Could you pass me the callback?
 
 In the preparation, we have to start with the seasoning. This should be done 3 days beforehand, and then it shall cook for 3 hours. If we could only execute one task at the time then all the other cooking, sausages, potatoes etc, would have to wait until the ribbe is done. With this logic, good luck impressing your family with an elegant delicious dinner. And hopefully ribbe is the first on the list and not the last 😱 Luckily, we’re not single threaded, and the same goes for JavaScript, in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
 
