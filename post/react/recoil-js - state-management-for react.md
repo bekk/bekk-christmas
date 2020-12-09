@@ -66,7 +66,7 @@ Its a simple app, but it uses Recoil to solve some known challenges pretty well.
 
 ##### Atoms
 
-An atom is simply a piece of state. It's like using react useState(), except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search value:
+An atom is simply a piece of state. It's like using react `useState()`, except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search value:
 
 ```js
 import { atom } from "recoil";
@@ -116,7 +116,7 @@ export const filteredRecipesState = selector({
 ```
 
 
-We can use the same useRecoilValue() on selectors as we do on atoms.
+We can use the same `useRecoilValue()` on selectors as we do on atoms.
 The cool thing here is that if our search state changes, our selector state will trigger a change as well.
 
 ```js
