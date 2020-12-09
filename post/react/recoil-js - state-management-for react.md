@@ -99,7 +99,7 @@ export default () => {
 
 ##### Selectors
 
-The application also need to handle derived state, and that's when we use a selector. In our recipe application we use a selector to return a filtered list of our recipes. Selectors are also memoized, making sure our performance is maintained.
+Derived state is state based on other state. Our application also need to handle a combination of state, and that's when we use a selector. In our recipe application we use a selector to return a filtered list of our recipes. Selectors are also memoized, making sure our performance is maintained.
 
 ```js
 import { selector } from "recoil";
@@ -169,11 +169,10 @@ ReactDOM.render(
 
 #### Flexible and powerful
 
-Derived state is state based on some other state. Like a pure function with props. With Recoil, state can easily be replaced with derived data without modifying the components. 
+The concept of atoms let us isolate state in small pieces, making it very flexible. By using selectors we can easily combine pieces of state and move between being synchronous and asynchronous without modifying the components. It's also easy to observe and/or persist the entire state.
 
 
 Read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
-
 
 
 ### Final thoughts
