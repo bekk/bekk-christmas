@@ -13,6 +13,7 @@ ingress: Today is St Lucia Day🕯. The bearer of light, which takes away the da
   JavaScript more edible 🍔. You have probably heard about the event loop, but
   if it has not given you any headaches you might not have given it a lot of
   though.
+links: []
 authors:
   - Henrietta Eide Bleness
 ---
