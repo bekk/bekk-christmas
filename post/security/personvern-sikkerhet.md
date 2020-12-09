@@ -20,6 +20,8 @@ links:
     title: Personsikkerhet og personvern er ikke det samme
   - title: Regjeringen utsetter de kontroversielle delene av e-tjenesteloven
     url: https://rett24.no/articles/regjeringen-utsetter-de-kontroversielle-delene-av-e-tjenesteloven
+authors:
+  - Trond Arve Wasskog
 ---
 ## Personvern og Smittestopp
 
