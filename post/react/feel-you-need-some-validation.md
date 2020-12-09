@@ -84,7 +84,7 @@ As you can see, we don't need to add much code to set up React Hook Form. We hav
 />
 ```
 
-When registering the input field, we can add several options to adjust how the field should be validated. In the above example, we tell our form that the field is required and that the value must match a specific regex pattern. We also define some error messages. If we try to submit the form, but validation fails, the error message is returned by `useForm` as an object called `errors`. Every form field gets its own error message corresponding to the fields `name` attribute:
+When registering the input field, we can add several options to adjust how the field should be validated. In the above example, we tell our form that the field is required and that the value must match a specific regex pattern. We also define some error messages. If we try to submit the form, but validation fails, the error message is returned by `useForm` as an object called `errors`. Every form field gets its own error message corresponding to the field's `name` attribute:
 
 ```javascript 
 {errors.licenseNo && errors.licenseNo.message}
