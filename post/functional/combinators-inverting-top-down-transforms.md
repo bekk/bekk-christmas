@@ -134,8 +134,8 @@ Or if the name may have a different format, we just make that change within our 
 nameDecoder : Decoder String
 nameDecoder =
     Decode.oneOf [ Decode.string, firstLastDecoder ]
-        |> Decode.field "full-name"
         |> Decode.map normalizeName
+        |> Decode.field "full-name"
 
 firstLastDecoder : Decoder String
 firstLastDecoder =
@@ -152,7 +152,7 @@ Another quality of transforming data in an imperative style is that it can happe
 
 By using a Combinator, you can avoid passing data through various transformation stages. A Combinator represents a set of operations/transformations. You don't actually _use_ the Combinator until you've built it up. If you need to tweak something, you transform the Combinator. So the data is never exposed in your app in an intermediary format.
 
-In the case of a JSON Decoder, you are building up both the JSON Decoder and its type information at the same type, you are guaranteed to either
+We are building up both the JSON Decoder and its type information at the same time. Since the types and operations/transformations are in sync, we are guaranteed to either
 
 1. End up with well-typed data (happy path), or
 2. End up with a clear error
