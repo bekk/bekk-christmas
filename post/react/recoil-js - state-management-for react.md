@@ -144,7 +144,7 @@ Take a look at [github](https://github.com/emilmork/recoil-foodtalk-demo) to see
 
 ### So what's great about Recoil ?
 
-Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.org) is much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
+Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.org) is much more than “just another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
 
 #### Tailored for React
 
