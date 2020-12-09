@@ -177,7 +177,7 @@ Take a look at the [repo](https://github.com/emilmork/recoil-foodtalk-demo) to s
 
 ### Final thoughts
 
-The consept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like an natural extension of React. 
+The consept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like an natural extension of React. Its no silver buttet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 😁
 
 
 Recomented sources:
