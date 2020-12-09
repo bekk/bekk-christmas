@@ -69,9 +69,9 @@ Here is how the stripped down HttpClient interface looks like:
 
 ```kotlin
 interface HttpClient {
-    data class Resp<T>(val body: T, val status: Int)
+    data class Response<T>(val body: T, val status: Int)
     
-    fun <T> get(url: String): Resp<T>
+    fun <T> get(url: String): Response<T>
     fun <T> post(url: String, body: T): Unit
 }
 ```
