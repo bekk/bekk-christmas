@@ -25,7 +25,7 @@ links:
 authors:
   - Jonas Løvås
 ---
-![](/assets/roic_2.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
+![](/assets/roic3.png "Kilde: HBR The Five Competitive Forces That Shape Strategy (Porter)")
 
 ### Ting du burde tenke på hvis du vurderer å starte et flyselskap
 
