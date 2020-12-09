@@ -5,7 +5,7 @@ post_day: 10
 title: Combinators - Inverting Top-Down Transforms
 ingress: "Today and tomorrow we are grateful and excited to have a guest writer
   sharing some of his thoughts on the topic of functional programming: Dillon
-  Kearns, known for projects as elm-graphql, elm-typscript-interop, and the
+  Kearns, known for projects as elm-graphql, elm-typescript-interop, and the
   podcast [Elm Radio](https://elm-radio.com/). We hope you enjoy!"
 authors:
   - Dillon Kearns
