@@ -69,6 +69,7 @@ Its a simple app, but it uses Recoil to solve some known challenges pretty well.
 An atom is simply a piece of state. It's like using react's useState(), except that any component can subscribe to it. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search input:
 
 ```js
+// store.js
 import { atom } from "recoil";
 
 export const searchState = atom({
@@ -81,6 +82,7 @@ To read and write to this atom we use `useRecoilState`.
 
 ```js
 import { useRecoilState } from "recoil";
+import { searchState } from './store';
 
 export default () => {
   const [search, setSearch] = useRecoilState(searchState);
