@@ -14,8 +14,6 @@ ingress: "Today and tomorrow we are excited to have a guest writer sharing some
 authors:
   - Dillon Kearns
 ---
-# Combinators - Inverting Top-Down Transforms
-
 One of my favorite things about functional programming is the ability to work and think in a very localized area of code. Let's talk about some of the patterns that make that possible.
 
 I won't go into how immutability, managed effects, or lack of global variables help us reason locally - although they really do! What I want to focus on here is the power of individual transformations composed together, rather than making one big transformation. This concept is sometimes called a Combinator.
