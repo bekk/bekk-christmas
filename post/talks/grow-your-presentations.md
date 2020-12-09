@@ -1,7 +1,7 @@
 ---
 calendar: talks
 post_year: 2020
-post_day: 19
+post_day: 13
 title: GROW your presentations
 ingress: Presentations can be a powerful tool for setting common goals and
   encouraging action, much in the same way a coach will create a better team.
