@@ -6,7 +6,7 @@ title: Kubernetes Operators 101
 image: https://i.imgur.com/PRCyBqa.jpg
 ingress: Kubernetes has become the _de facto_ container orchestrator since it's
   initial release in 2014. It is a great tool for managing diverse workloads in
-  a clusters of machines, possibly spanning multiple availability zones. As the
+  clusters of machines, possibly spanning multiple availability zones. As the
   usage grows, new requirements for how to deploy and operate specialized
   software emerges. The Operator pattern is one of the more prominent responses
   to these new requirements.
@@ -36,7 +36,7 @@ An Operator consists at a minimum of one Custom Resource Definition (`CRD`) and 
 
 Given an instance (`CR`) of `PostgresDatabase`, it's now the job of the controller to ensure that the desired state is reconciled with the cluster. In this example one can assume that the controller will create a `StatefulSet` for running the database itself, along with needed configuration in a `ConfigMap`, certificates for mutual TLS in a `Secret`. Backup can be done by either mounting and writing to a volume defined in the `CR` or injecting a sidecar for sending backups to another location.
 
-Patching, reboots and failovers can be specified in the `CR` and taken care of by the controller, using methods recommended by experienced DBAs. The fact that complex operational knowledge can be encoded into the controller is a key enabler for many organizations who'd like to run complex software, but not necessarily invest countless hours into learning the nitty gritty details on how to operate it.
+Patching, reboots and failovers can be specified in the `CR` and taken care of by the controller, using methods recommended by experienced DBA's. The fact that complex operational knowledge can be encoded into the controller is a key enabler for many organizations who'd like to run complex software, but not necessarily invest countless hours into learning the nitty-gritty details on how to operate it.
 
 Like any other software there will be bugs and abstractions will leak. There's no silver bullet.
 
@@ -54,10 +54,9 @@ As with most cloud native software, Go seems to be the lingua franca. There is n
 
 The community has produced a lot of Operators for about everything one can imagine. These are some popular examples:
 
-* [Argo CD](https://github.com/argoproj/argo-cd) - a  declarative, GitOps continuous delivery tool for Kubernetes.
-* [cert-manager](https://github.com/jetstack/cert-manager) - automatically provisions TLS certificates via the ACME protocol. Can be used with certificate issuers such as [Let's Encrypt](https://letsencrypt.org/), [Buypass](https://www.buypass.no/ssl/resources/acme-free-ssl) and [ZeroSSL](https://zerossl.com/documentation/acme/).
-* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) - often used in combination with [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus) for a batteries included monitoring suite
-* [KubeDB](https://kubedb.com/) - a real-life implementation of the `PostgresDatabase` example, plus support for MySQL/MariaDB/MongoDB/Redis/Memcached and more
+* [Argo CD](https://github.com/argoproj/argo-cd) – a  declarative, GitOps continuous delivery tool for Kubernetes.
+* [cert-manager](https://github.com/jetstack/cert-manager) – automatically provisions TLS certificates via the ACME protocol. Can be used with certificate issuers such as [Let's Encrypt](https://letsencrypt.org/), [Buypass](https://www.buypass.no/ssl/resources/acme-free-ssl) and [ZeroSSL](https://zerossl.com/documentation/acme/).
+* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) – often used in combination with [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus) for a batteries included monitoring suite
+* [KubeDB](https://kubedb.com/) – a real-life implementation of the `PostgresDatabase` example, plus support for MySQL/MariaDB/MongoDB/Redis/Memcached and more
 
----
 <small>Header image: RIA Novosti archive, image #305015 / Alexey Danichev / CC-BY-SA 3.0</small>
