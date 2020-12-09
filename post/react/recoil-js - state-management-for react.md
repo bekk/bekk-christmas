@@ -17,7 +17,7 @@ authors: []
 
 Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*. And like React, the original Recoil team works at Facebook. 
 
-If you have worked with React it should seem familiar. Just take a look at this example. First we use React with useState() to increment a number:
+If you have worked with React it should seem familiar. Just take a look at this example. First we use React with `useState()` to increment a number:
 
 ```js
 // React and setState
@@ -34,7 +34,7 @@ const Counter = () => {
 };
 ```
 
-Now, making our state global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing **useState** with **useRecoilState.**
+Now, making our state global is pretty streight forward using Recoil. All we need to do (almost 😇) is replacing `useState` with `useRecoilState`.
 
 ```js
 //React and Recoil
