@@ -2,17 +2,17 @@
 calendar: react
 post_year: 2020
 post_day: 11
-title: "[Draft] Back to basics"
+title: Back to basics - Setting up a minimal React project from scratch
 image: https://images.unsplash.com/photo-1492584115029-f633e64c61fa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2167&q=80
 ingress: It's so easy nowadays to get a web application up and running in just a
   couple of minutes. We've got tools like Create-react-app, React boilerplate,
   Slingshot etc., which let developers set up and prototype anything blazing
   fast. These tools come with Webpack, Babel and more already configured for
-  you, so you don't have to know anything about it or what it is used for.  This
-  is obviously very valuable and cost-effective, but we also have to remember to
-  keep in touch with our roots and get some sense of what is going on under the
-  hood. So for today's topic we will be going back to the basics and see how we
-  can set up most of what we need from scratch!
+  you, so you don't have to know anything about them or what they are used for. 
+  This is obviously very valuable and cost-effective, but we also have to
+  remember to keep in touch with our roots and get some sense of what is going
+  on under the hood. So for today's topic we will be going back to the basics
+  and see how we can set up most of what we need from scratch!
 description: "Bekk Christms Webpack Babel React "
 links:
   - title: Webpack
