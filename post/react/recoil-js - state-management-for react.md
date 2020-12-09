@@ -34,7 +34,7 @@ const Counter = () => {
 };
 ```
 
-Now, making our state global is pretty straightforward using Recoil. All we need to do (almost 😇) is replacing `useState` with `useRecoilState`.
+Now, making our state global is pretty straightforward using Recoil. All we need to do (almost 😇) is to replace `useState` with `useRecoilState`.
 
 ```js
 //React and Recoil
@@ -140,7 +140,7 @@ Finally we need to add some spinners with React Suspense, which is supported out
  </Suspense>
 </ErrorBoundery>
 ```
-Take a look at [github](https://github.com/emilmork/recoil-foodtalk-demo) to see all the code, which is also written in TypeScript 😁
+Take a look at [github](https://github.com/emilmork/recoil-foodtalk-demo) to see all the code, which is also written in TypeScript. 😁
 
 ### So what's great about Recoil ?
 
@@ -148,11 +148,11 @@ Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.o
 
 #### Tailored for React
 
-Recoil is made specifically for React and offers close compatibility with features like React Concurrent mode and React Suspense as we saw in the example. The team also claim to support new React features as they become available.
+Recoil is made specifically for React and offers close compatibility with features like React Concurrent mode and React Suspense as we saw in the example. The team also claims to support new React features as they become available.
 
 #### Easy to learn
 
-When I tried Recoil I realized how complicated and difficult other state libraries like Redux are.
+When I tried Recoil I realized how complicated and difficult other state libraries like Redux were.
 
 Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap your code with RecoilRoot.
 
@@ -169,7 +169,7 @@ ReactDOM.render(
 
 #### Flexible and powerful
 
-Derived state is state based on some other state. Like a pure function with props. With Recoil state can easily be replaced with derived data without modifying the components. 
+Derived state is state based on some other state. Like a pure function with props. With Recoil, state can easily be replaced with derived data without modifying the components. 
 
 
 Read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
@@ -178,12 +178,12 @@ Read more about the motivation for Recoil [here](https://recoiljs.org/docs/intro
 
 ### Final thoughts
 
-The concept of derived state is very powerful, and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 👍
+The concept of derived state is very powerful, and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend. 👍
 
-Recoil is still in alpha and parts of the API might change, but based on the fact that Recoil is created by a Facebook team and currenty have 10k stars on github - I would say it’s pretty safe to try out  😄 
+Recoil is still in alpha and parts of the API might change, but based on the fact that Recoil is created by a Facebook team and currenty has 10k stars on github - I would say it’s pretty safe to try out.  😄 
 
 
-I recommend watching [Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI). He explains why they made Recoil and demonstrates the power of atoms and selectors.
+I recommend watching [Dave McCabe's presentation of Recoil](https://youtu.be/_ISAA_Jt9kI). He explains why they made Recoil and demonstrates the power of atoms and selectors.
 
 
 
