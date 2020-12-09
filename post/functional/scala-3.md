@@ -6,6 +6,7 @@ title: A peek into Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
+
 A new year is closing in and so is a new release from Scala. Release candidate 1
 is expected to be found sometime this December!
 
@@ -78,7 +79,7 @@ get a helping hand to continue.
 // [error] one error found
 ```
 
-?TODO link til kalenderuke 9?
+<!-- ?TODO link til kalenderuke 9? -->
 <!-- TODOD dobbelsjekk feilmelding mot scalac. Finnes bedre eksempel? -->
 
 All the examples can be run through Scastie and I can recommend trying them
@@ -154,7 +155,8 @@ scope the code would have compile.
 
 ```scala
 implicit class CountOps(sentence: String) {
-  def countWord(word: String): Int = sentence.split(" ").count(_.toLowerCase == word.toLowerCase)
+  def countWord(word: String): Int =
+    sentence.split(" ").count(_.toLowerCase == word.toLowerCase)
 }
 ```
 
@@ -163,8 +165,8 @@ to understand what is going on. So now we can instead use the keyword
 `extension`, thus making the intention a lot clearer and easier to Google!
 
 ```scala
-extension (sentence: String) def countWord(word: String): Int =
-  sentence.split(" ").count(_.toLowerCase == word.toLowerCase)
+extension (s: String) def countWord(w: String): Int =
+  s.split(" ").count(_.toLowerCase == w.toLowerCase)
 ```
 
 #### Type classes
@@ -201,8 +203,8 @@ implicit val showInt: Show[Int] = new Show[Int] {
 }
 
 // To create extensions method capability
-implicit class ShowOps[A](in: A)(implicit showImpl: Show[A]) {
-  def show: String = showImpl.show(in)
+implicit class ShowOps[A](in: A)(implicit show: Show[A]) {
+  def show: String = show.show(in)
 }
 
 val result: String = 1.show
@@ -251,18 +253,18 @@ The keyword `given` is now used to define that something is implicitly available
 ```scala
 import math.Numeric.Implicits._
 
-def myGenericFunction[A : Show](in: A)(using numeric: Numeric[A]) = {
-  val result = in * numeric.fromInt(2)
+def myFunc[A](in: A)(using Show[A], Numeric[A]) = {
+  val abs = Numeric[A].abs(in)
 
-  println(in.show)
+  println(s"Absolute of ${in.show}: ${abs.show}")
 
   result
 }
 
-val result = myGenericFunction(2.2) // Type is Double
+val result = myFunc(2.2) // Type is Double
 // > 2.2
 
-val result1 = myGenericFunction(2) // Type is Int
+val result1 = myFunc(2) // Type is Int
 // > 2
 
 @main
@@ -271,7 +273,7 @@ def run = println(result)
 
 <!-- TODO inform on Show and adding SHow[Double] -->
 
-For `myGenericFunction` we have defined a function where we work on a type `A`
+For `myFunc` we have defined a function where we work on a type `A`
 that has an implementation of `Show` that is unnamed and defined numeric operations
 through a new type class, `Numeric`. The power of this is that within the function we
 have a well-defined set of things to do. If this had been from separate
@@ -299,33 +301,42 @@ To represent a coproduct of types.
 type MyCoproduct = Int | String
 ```
 
+Some of the possibilities this opens is to make type safe error handling
+simpler!
 
-Some of the possibilities this opens is to make type safe error handling simpler!
+<script src="https://scastie.scala-lang.org/KM80d9GjRSOESTp9y7GCnA.js"></script>
 
 ```scala
 object SomeThirdPartyLibrary {
-  object EvilState
+  case class BadState(code: Int)
+  def getStuff: Either[BadState, Int] = Right(9000)
 }
+
+// My application:
+
 import SomeThirdPartyLibrary._
 
 case class OhNoYouDidNot(error: String) 
 
-type MyErrors = OhNoYouDidNot | EvilState.type
-
-def doTheThing(received: Int): Either[MyErrors, String] =
+def doTheThing(received: Int): Either[OhNoYouDidNot, String] =
   Either.cond(
     received >= 1337,
-    right = "It's working!",
-    left = OhNoYouDidNot(s"$received is not sufficient stuff")
+    "It's working!",
+    OhNoYouDidNot(s"$received is not sufficient stuff")
   )
 
-val message = doTheThing(9000) match {
+type MyErrors = OhNoYouDidNot | BadState
+
+val operations: Either[MyErrors, String] =
+   getStuff.flatMap(result => doTheThing(result + 1))
+
+val message = operations match {
   case Right(result) =>
     result
   case Left(OhNoYouDidNot(thisThing)) =>
-    s"You tried do that thing! $thisThing"
-  case Left(EvilState) =>
-    "I do not like this."
+    s"You tried do that thing: $thisThing"
+  case Left(BadState(code)) =>
+    s"Unexpected error: $code"
 }
 
 @main
@@ -402,7 +413,6 @@ https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 
 [^scala3CommunityBuilds]: https://github.com/lampepfl/dotty/tree/master/community-build/community-projects
 
-
 [^scala2CommunityBuilds]: https://www.scala-lang.org/2020/02/20/community-build.html
 
 [^migration]: https://scalacenter.github.io/scala-3-migration-guide/
@@ -414,4 +424,3 @@ https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 [^applicatives]: https://functional.christmas/2019/21
 
 [^cats]: https://github.com/typelevel/cats
-
