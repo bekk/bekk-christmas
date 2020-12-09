@@ -94,7 +94,7 @@ export default () => {
 
 ##### Selectors
 
-The application also need to handle derived state, and that`s when we use a selector. In our recipe application we use a selector to return a filtered list of our recipipes. Selectors are also memoized, making sure our performance is maintained.
+The application also need to handle derived state, and that`s when we use a selector. In our recipe application we use a selector to return a filtered list of our recipes. Selectors are also memoized, making sure our performance is maintained.
 
 ```js
 import { selector } from "recoil";
@@ -177,14 +177,12 @@ Read more about the motivation for Recoil [here](https://recoiljs.org/docs/intro
 
 ### Final thoughts
 
-The concept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 👍
+The concept of derived state is very powerful, and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 👍
 
-Recoil is still in alpha and parts of the API might change, but based on the fact that its created by a facebook team and currenty have 10k stars on github - I would say its pretty safe to try out 😄 
+Recoil is still in alpha and parts of the API might change, but based on the fact that Recoil is created by a facebook team and currenty have 10k stars on github - I would say it’s pretty safe to try out  😄 
 
 
-Recomented sources:
-- [Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI)
-- [Recoil.js documentation](https://recoiljs.org/)
+I recommend watching [Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI). He explains why they made Recoil and demonstrates the power of atoms and selectors.
 
 
 
