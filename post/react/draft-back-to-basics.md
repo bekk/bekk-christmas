@@ -145,7 +145,7 @@ The JavaScript language is continuously being updated with new features and func
 
 Now that you're an expert on transpiling, let's set it up!
 
-Babel is configured using presets. There are two presets that we're interested in, babel-preset-env and preset-react, which we need to install. For Babel to work at all we also need to install the core-library. Lastly, for Webpack to be able to talk to Babel during its bundling process, it needs babel-loader. We won't dive into Webpack loaders in this article, but essentially what you need to know is that Babel is configured using presets and babel-loader is what helps Webpack use Babel.
+Babel is configured using presets. There are two presets that we're interested in, `babel-preset-env` and `preset-react`, which we need to install. For Babel to work at all we also need to install the `core-library`. Lastly, for Webpack to be able to talk to Babel during its bundling process, it needs babel-loader. We won't dive into Webpack loaders in this article, but essentially what you need to know is that Babel is configured using presets and babel-loader is what helps Webpack use Babel.
 
 Now go ahead and run:
 
