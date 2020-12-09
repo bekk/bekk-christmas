@@ -3,7 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 10
 title: Combinators - Inverting Top-Down Transforms
-image: https://unsplash.com/photos/JPN6TlIdWko
+image: https://images.unsplash.com/photo-1577675396914-b32d06b30596?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&w=1226&h=400&fit=crop&crop=edges
 ingress: "Today and tomorrow we are excited to have a guest writer sharing some
   of his thoughts on the topic of functional programming: Dillon Kearns, known
   for projects such as
