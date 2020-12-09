@@ -6,15 +6,10 @@ title: Enhanced strings with tagged template literals
 authors:
   - Ole Anders Stokker
 ---
-## NOTE: Very early draft, uploaded to have _something to work from and to see how it looks_
+The template literal is a nice and useful addition to the javascript language.
+It lets you write multi line strings, and insert variables directly where they are used in the string.
 
-Did you ever wish you could do more with strings in javascript?
-
-The template literal is a much welcomed feature in the javascript family of string constructors.
-
-Javascript has gotten a lot of new features in the last few years, many of whom it is hard to picture the language without today.
-One of these much welcome features arrived with the rest of the bunch in 2015 with the landing of ECMAScript 2015, more commonly known as ES6.
-The template literal is a handy feature that lets write write strings with inserted variables, and they even let you write multi-line strings!
+Let me tell you out the template literals bigger sibling, the tagged template literal. They let you tap into the power of the template literal by augmenting the inserted variables and strings however you want!
 
 ## Spice them up with tagged templates
 
@@ -28,26 +23,7 @@ Tagged templates is like another level on top of regular template literals. They
 template`Hello, ${name}!`;
 ```
 
-## Writing other languages _inside_ of javascript
-
-One of the very useful features that can be created with tagged templates is paring of different languages inside javascript. Be it writing
-
-```typescript
-const name = "John";
-
-const introduction = md`
-# Hello, ${name}!
-
-Welcome to our site.
-`;
-```
-
-Using a markdown renderer the `md` tag could render our string directly to html of our required format without any extra hassle:
-
-```html
-<h1>Hello, John!</h1>
-<p>Welcome to our site.</p>
-```
+In this case `template` is the name of a tag. Tags are just functions that you can write for yourself, or download as part of a library or framework.
 
 ## Creating tagged templates for yourself
 
@@ -70,10 +46,33 @@ const template = (strings: TemplateStringsArray, ...values: string[]) => {
 };
 ```
 
+## Writing other languages _inside_ of javascript
+
+One of the very useful features that can be created with tagged templates is paring of different languages inside javascript. Be it writing
+
 ```typescript
+const name = "John";
+
+const introduction = md`
+# Hello, ${name}!
+
+Welcome to our site.
+`;
+```
+
+Using a markdown renderer the `md` tag could render our string directly to html of our required format without any extra hassle. The template can return whatever you want, it doesn't even have to be a string!
+
+```html
+<h1>Hello, John!</h1>
+<p>Welcome to our site.</p>
+```
+
+For a more in depth example we can try to construct our own tag which queries an SQL database. The template lets you write regular SQL queries, and insert values directly where they are used, while the `sql` tag builds the query, sanitizes the values and executes a query behind the scenes.
+
+```javascript
 const name = sql`SELECT name FROM users where id=${100}`;
 
-const sql = (strings: TemplateStringsArray, ...values: string[]) => {
+const sql = (strings, ...values) => {
   const sqlTemplate = strings.reduce(
     (accumulatedTemplate, i) => accumulatedTemplate + `$${i}`
   );
@@ -95,9 +94,10 @@ Some notable ones include:
 ```javascript
 const query = gql`
   {
-    user(id: 5) {
-      firstName
-      lastName
+    article(id: 11) {
+      title
+      ingress
+      body
     }
   }
 `;
@@ -106,11 +106,10 @@ const query = gql`
 ### [Styled Components](https://styled-components.com/)
 
 ```jsx
-const Button = styled.a`
-  width: 11rem;
-  color: blue;
-  border: 2px solid white;
-  border-radius: 3px;
+const Button = styled.button`
+  width: 8rem;
+  color: #0e0e0e;
+  border: 2px solid #fefefe;
 `;
 ```
 
