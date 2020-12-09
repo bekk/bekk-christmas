@@ -44,7 +44,7 @@ And this is where the event loop enters the saga. The event loop has one job, pu
 
 ## The end... no, too easy!
 
-Oh, I wish the article would end here, but sadly no. Because most likely you are busy mashing potatoes, and don’t have the capacity to take the ribbe out of the oven 😬. The ribbe will have to sit in the oven until your hands are free and you can take it out. And if you already have the queue stacked up with stuffing sausage or setting the table, the callback will be pushed to the queue. But it will be at the end. Maybe for hours. Until you are free to check in. 
+Oh, I wish the article would end here, but sadly no. Because most likely you _are_ busy mashing potatoes, and don’t have the capacity to take the ribbe out of the oven 😬. The ribbe will have to sit in the oven until your hands are free and you can take it out. And if you already have the queue stacked up with stuffing sausage or setting the table, the callback will be pushed to the queue. But it will be at the end. Maybe for hours. Until you are free to check in. 
 
 That’s it. If you’re not busy mashing potatoes or stuffing sausage you’ll save the ribbe from the oven, and christmas dinner will be the most delicious meal you’ll have all year. But if your hands are full, it will be stuck in the queue and wait in the oven until your call stack is cleared.
 
