@@ -15,21 +15,21 @@ authors:
   - Dillon Kearns
 ---
 One of my favorite things about functional programming is the ability to work and think in a very localized area of code. Let's talk about some of the patterns that make that possible.
-​
+
 I won't go into how immutability, managed effects, or lack of global variables help us reason locally - although they really do! What I want to focus on here is the power of individual transformations composed together, rather than making one big transformation. This concept is sometimes called a Combinator.
 ​
 ## Top-Down Vs. Bottom-Up Transformations
 ​
 In my JavaScript days, I remember a particularly tricky area of code where we had a big list of data in a format defined by the server. We needed to take product listings, pull out specific options and inventory information, normalize them, and then apply filters from the UI to show/hide and sort search results.
-​
+
 There were deeply nested fields, and some incongruities in the shape of the data. Some values were nullable. Some had specific normalization we needed to apply to get data from multiple sources to match.
-​
+
 We had a lot of big unit tests to make sure things were working. Even so, it was so difficult to go in to our series of lodash function calls and find _where_ you needed to make a change. And once you did, you would want to make sure you added several new test cases to make sure you didn't miss a spot or mishandle a special case.
-​
+
 We would sit in awe as the person most familiar with the codebase correctly traversed the nested arrays and objects to get to the exact right place and make a change on the first try. It was a lot to hold in our heads, and it was quite error prone.
-​
+
 The challenge was that using that paradigm to normalize JSON data required thinking of the data as a monolith. We certainly abstracted out functions to help with parts of the normalization. And we used lodash to do functional style mapping over the arrays of data and key-value objects. But mapping over arrays and objects only gets you part of the way there. We still needed to keep a map in our heads of the structure of the data so we could go into a specific area, traverse it, and change it.
-​
+
 We weren't using TypeScript at the time, but even if we had been, the challenge would remain of having to navigate the structure from the top down in order to add a new transformation. Type-safety is a huge help, but it only gets you part of the way there to the benefits of localized reasoning.
 ​
 ## What is a Combinator?
