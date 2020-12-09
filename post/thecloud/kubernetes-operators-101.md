@@ -32,7 +32,7 @@ The Operator pattern is best described in the [official Kubernetes documentation
 
 ## How does an Operator work?
 
-An Operator consists at a minimum of one Custom Resource Definition (`CRD`) and a Controller. The `CRD` describes the various configuration options for this kind of resource. Given a custom resource for a `PostgresDatabase`, one might find options for specifying custom `StorageClass`es, resource allocation, backup schedule (and destinations), authentication methods etc.
+An Operator consists at a minimum of one Custom Resource Definition (`CRD`) and a Controller. The `CRD` describes the various configuration options for this kind of resource. Given a custom resource for a `PostgresDatabase`, one might find options for specifying custom `StorageClass`es, resource allocation, backup schedule/destinations, authentication methods, etc.
 
 Given an instance (`CR`) of `PostgresDatabase`, it's now the job of the controller to ensure that the desired state is reconciled with the cluster. In this example one can assume that the controller will create a `StatefulSet` for running the database itself, along with needed configuration in a `ConfigMap`, certificates for mutual TLS in a `Secret`. Backup can be done by either mounting and writing to a volume defined in the `CR` or injecting a sidecar for sending backups to another location.
 
