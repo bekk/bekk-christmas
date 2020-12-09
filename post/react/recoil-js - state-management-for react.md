@@ -15,7 +15,7 @@ authors: []
 
 [Recoil.js](https://recoiljs.org/) is a new state management library for [React](https://www.google.com/search?q=reactjs&rlz=1C5CHFA_enNO890NO890&oq=reactjs&aqs=chrome..69i57j0l4j69i60l3.1252j0j7&sourceid=chrome&ie=UTF-8) — offering a React-ish API and a simple and powerful way of dealing with global, asynchronous and derived state 🔥
 
-Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*. And like React, the original Recoil team works at facebook. 
+Recoil aims to solve some specific challenges when working with modern React apps like *flexible shared state*, *derived state* and *global observation*. And like React, the original Recoil team works at Facebook. 
 
 If you have worked with React it should seem familiar. Just take a look at this example. First we use React with useState() to increment a number:
 
@@ -182,7 +182,7 @@ Read more about the motivation for Recoil [here](https://recoiljs.org/docs/intro
 
 The concept of derived state is very powerful, and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 👍
 
-Recoil is still in alpha and parts of the API might change, but based on the fact that Recoil is created by a facebook team and currenty have 10k stars on github - I would say it’s pretty safe to try out  😄 
+Recoil is still in alpha and parts of the API might change, but based on the fact that Recoil is created by a Facebook team and currenty have 10k stars on github - I would say it’s pretty safe to try out  😄 
 
 
 I recommend watching [Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI). He explains why they made Recoil and demonstrates the power of atoms and selectors.
