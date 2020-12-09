@@ -6,6 +6,9 @@ title: Recoil.js - State management for React 🔥
 image: https://images.unsplash.com/photo-1496816877232-460195b16fb8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1554&q=80
 ingress: ""
 description: ""
+links:
+  - url: https://youtu.be/_ISAA_Jt9kI
+    title: Dave McCabe`s presentation of Recoil
 authors: []
 ---
 ### What is Recoil ?
