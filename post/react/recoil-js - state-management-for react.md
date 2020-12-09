@@ -2,11 +2,9 @@
 calendar: react
 post_year: 2020
 post_day: 10
-title: "[Draft] Recoil.js - State management for React 🔥"
+title: Recoil.js - State management for React 🔥
 image: https://images.unsplash.com/photo-1496816877232-460195b16fb8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1554&q=80
-ingress: Recoil is a new state management library for React — offering a
-  React-ish API and a simple and powerful way of dealing with global,
-  asynchronous and derived state.
+ingress: ""
 description: ""
 authors: []
 ---
@@ -52,41 +50,6 @@ const Counter = () => {
 
 Thats pretty cool! Not convinced ? keep on reading.. 😄
 
-### What's great about Recoil ?
-
-Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.org) is much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
-
-#### Tailored for React
-
-Recoil is made specifically for React and offers close compatibility with features like React Suspense, Concurrent mode and the team claims to support new React features as they become available.
-
-#### Easy to learn
-
-When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was.
-
-Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap your code with RecoilRoot.
-
-```js
-import { RecoilRoot } from "recoil";
-
-ReactDOM.render(
-    <RecoilRoot> ⬅️
-      <App />
-    </RecoilRoot>,⬅️
-  document.getElementById("root")
-);
-```
-
-#### Flexible and powerful
-
-Derived state is state based on some other state. Like a pure function with props. With Recoil state can easily be replaced with derived data without modifying the components. 
-
-```
-// Returns the value of an atom or selector (readonly or writeable)
-useRecoilValue<T>(recoilValue: RecoilValue<T>): T;
-```
-
-Read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
 
 
 ### Using Recoil - Examples
@@ -100,7 +63,7 @@ Its a simple app, but it uses Recoil to solve some known challenges pretty well.
 
 ##### Atoms
 
-An atom is simply a piece of state. It's like using react useState, except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use an atom to store our search value:
+An atom is simply a piece of state. It's like using react useState(), except that it can be subscribed by any component. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search value:
 
 ```js
 import { atom } from "recoil";
@@ -149,7 +112,8 @@ export const filteredRecipesState = selector({
   });
 ```
 
-We can use the useRecoilValue() to read the value of filteredRecipesState.
+
+We can use the same useRecoilValue() on selectors as we do on atoms.
 The cool thing here is that if our search state changes, our selector state will trigger a change as well.
 
 ```js
@@ -162,7 +126,7 @@ const Recipes = () => {
 };
 ```
 
-Finally we can add some spinners with React Suspense, which is supported out of the box.
+Finally we need to add some spinners with React Suspense, which is supported out of the box.
 
 ```
 <ErrorBoundery>
@@ -171,17 +135,56 @@ Finally we can add some spinners with React Suspense, which is supported out of 
  </Suspense>
 </ErrorBoundery>
 ```
+Take a look at [github](https://github.com/emilmork/recoil-foodtalk-demo) to see all the code, which is also written in TypeScript 😁
 
-Take a look at the [repo](https://github.com/emilmork/recoil-foodtalk-demo) to see all the code 😁
+### So what's great about Recoil ?
+
+Libraries for React are constantly appearing, but [Recoil.js](https://recoiljs.org) is much more than just “another library”. Compared to other state libraries for React, Recoil feels like a fresh breath from the future - and it's great in so many ways:
+
+#### Tailored for React
+
+Recoil is made specifically for React and offers close compatibility with features like React Concurrent mode and React Suspense as we saw in the example. The team also claim to support new React features as they become available.
+
+#### Easy to learn
+
+When I tried Recoil I realized how complicated and difficult other state libraries like Redux really was.
+
+Recoil offers a simple API, with semantics and behavior in a known reactish manner. It also comes "boilerplate-free". All you need to get started is to wrap your code with RecoilRoot.
+
+```js
+import { RecoilRoot } from "recoil";
+
+ReactDOM.render(
+    <RecoilRoot> ⬅️
+      <App />
+    </RecoilRoot>,⬅️
+  document.getElementById("root")
+);
+```
+
+#### Flexible and powerful
+
+Derived state is state based on some other state. Like a pure function with props. With Recoil state can easily be replaced with derived data without modifying the components. 
+
+```
+// Returns the value of an atom or selector (readonly or writeable)
+useRecoilValue<T>(recoilValue: RecoilValue<T>): T;
+```
+
+Read more about the motivation for Recoil [here](https://recoiljs.org/docs/introduction/motivation).
+
 
 
 ### Final thoughts
 
-The consept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like an natural extension of React. Its no silver buttet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 😁
+The concept of derived state is very powerful and atoms and selectors let you build a flexible and maintainable application. Its super easy to get started, and it really feels like a natural extension of React. It might not be a silver bullet, but if you need a way to handle distributed state in a simple manner - Recoil is your friend 👍
+
+Recoil is still in alpha and parts of the API might change, but based on the fact that its created by a facebook team and currenty have 10k stars on github - I would say its pretty safe to try out 😄 
 
 
 Recomented sources:
-[Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI)
+- [Dave McCabe`s presentation of Recoil](https://youtu.be/_ISAA_Jt9kI)
+- [Recoil.js documentation](https://recoiljs.org/)
 
 
 
