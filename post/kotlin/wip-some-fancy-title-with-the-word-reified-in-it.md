@@ -45,7 +45,7 @@ public static final ExtendableClass simpleGenericFunctionWithBound(ExtendableCla
 
 Here we're observing how type erasure and [bounded/unbounded type substitution](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) have been applied by the compiler. Our `simpleGenericFunctionWithoutBound`-function has had its type parameter replaced by the concrete type `Object`. Similarly in `simpleGenericFunctionWithBound` it has been replaced by `ExtendableClass`, which we defined as the upper limit for our type parameter. 
 
-As a result there is no way for the JVM runtime to know what the original types were before substitution. We can invoke the generic functions with arguments of any type adhering to the bounds, but type information will ultimately be lost on the way. Put in another way, generic function type parameters are by-default defined as *non-reifiable*.
+As a result of this substitution, there is no way for the JVM runtime to derive any information about the concrete type of the supplied argument when these functions are being invoked. We can invoke the generic functions with arguments of any type adhering to the bounds, but type information will ultimately be lost on the way. Put in another way, generic function type parameters are by-default defined as *non-reifiable*.
 
 \* *The IntelliJ IDE comes with a handy tool for inspecting kotlin bytecode and its decompiled Java counterpart. This can be found under "Tools > Kotlin > Show Kotlin Bytecode".*
 
