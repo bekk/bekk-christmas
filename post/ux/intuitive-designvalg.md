@@ -1,7 +1,7 @@
 ---
 calendar: ux
 post_year: 2020
-post_day: 10
+post_day: 23
 title: Å designe en kultur med psykologisk trygghet
 ingress: Kultur spiser strategi til frokost. Særlig når den omfavner psykologisk
   trygghet blant de ansatte. La oss se på verktøyene vi trenger for å skape
