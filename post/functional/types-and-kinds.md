@@ -61,7 +61,7 @@ Note how this is fundamentally different from the kind of `Either`. `Either` is 
 
 ### Higher-kinded polymorphism
 
-Functors exist in many languages. The essence of a functor is some context that you can *map* over, i.e. lift a function into the context and apply it in a sensible manner. A list is a straightforward example of a functor. In Haskell, they are abstracted as a type class:
+Functors exist in many languages. The essence of a [functor](https://functional.christmas/2020/8) is some context that you can *map* over, i.e. lift a function into the context and apply it in a sensible manner. A list is a straightforward example of a functor. In Haskell, they are abstracted as a type class:
 
 ```haskell
 class Functor f where
