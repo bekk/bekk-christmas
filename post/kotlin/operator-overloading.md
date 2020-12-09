@@ -19,19 +19,7 @@ The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, an
 
 ![Table showing all arithmetic operators with their corresponding functions](https://i.ibb.co/D86wG9F/Arithmetic-operators-with-their-corresponding-functions.png)
 
-| Symbol | Function  |
-|:--------:|:-----------:|
-| -      | minus()   |
-| +      | plus()    |
-| *      | times()   |
-| /      | div()     |
-| %      | rem()     |
-| ..     | rangeTo() |
-
-
-
-
-When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4 and we can compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
+When working with the basic types in Kotlin (such as Int, String, Boolean, etc.), all operators work in a sensible way. We can, for example, write `2 + 2` and Kotlin calculates the sum of 4. We are also able to compare strings with an equality operator, such as `"myfantasticstring" == "myfantasticstring"`. 
 
 But what about the user-defined types? Let's say we have a simple date class defined as
 
@@ -43,7 +31,7 @@ data class MyDate (
 )
 ```
 
-What happens when we try to subtract two MyDate objects? We get an error because we have not defined the operator function for this data class. Operator overloading comes to the rescue. 
+What happens if we try to subtract two MyDate objects? We get an error because the operator function is not yet defined for this data class. Operator overloading comes to the rescue. 
 
 We can define the operator function for subtraction as an extension function:
 
@@ -61,7 +49,7 @@ print(date1 - date2) // Prints the number of days between the two dates: 400
 
 ```
 
-That's all. Easy, right? The operator function can also be defined as a member function on the data class itself. Let us say we want to be able to check whether a `House` is smaller or bigger compared to another `House`, we could write is as follows:
+That's all. Easy, right? Now we are able to calculate the number of days between two `MyDate`-objects just by subtracting them from another. The operator function can also be defined as a member function on the data class itself. Let us say we want to check whether a `House` is smaller or bigger compared to another `House`. We could implement it as follows:
 
 ```kotlin
 data class House (
@@ -87,4 +75,4 @@ val neighboursHouse = House(157, 3, 3, true)
 print(myHouse < neighboursHouse) // true
 ```
 
-These are just two basic examples of how you could use operator overloading in your application. You can define the operator function both at a member function and an extension function on a data class. Just remember to mark the overloading operator function with the `operator` modifier. 
+These are just two basic examples of how you could use operator overloading in your application. You can define the operator function both as a member function and an extension function on a data class. Just remember to mark the overloading operator function with the `operator` modifier. 
