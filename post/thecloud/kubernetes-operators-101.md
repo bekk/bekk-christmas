@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 11
 title: Kubernetes Operators 101
-image: https://i.imgur.com/PxdjKVQ.jpg
+image: https://i.imgur.com/PRCyBqa.jp
 ingress: Kubernetes has become the _de facto_ container orchestrator since it's
   initial release in 2014. It is a great tool for managing diverse workloads in
   a clusters of machines, possibly spanning multiple availability zones. As the
