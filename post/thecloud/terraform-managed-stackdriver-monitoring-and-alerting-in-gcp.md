@@ -24,18 +24,9 @@ resource "google_monitoring_dashboard" "dashboard" {
 }
 ```
 
-You might already have guessed that most of the complexity is in this JSON file. Let's create a dashboard that displays when our pods restarts.
-We want a dashboard that displays the graphs in a grid with 2 columns. This is defined in `gridLayout`.
-In our cluster we have two pods - one frontend pod and one backend pod. We want to display a graph for each - showing the restart count of each one.
-Thus, two widgets have to be created. For each widget to display the desired metric, the correct `filter` have to be applied.
-Both pods are correspondingly labelled with `app=backend` and `app=frontend`.
-For the backend pod this is:
+In this example we'll create a dashboard that displays the restarts of the pods in our cluster. There are two pods - one frontend pod and one backend pod. We want to display a graph for each - showing the restart count of each one.
+Thus, two widgets have to be created. Both pods are correspondingly labelled with `app=backend` and `app=frontend`. For each widget to display the desired metric, the correct `filter` have to be applied.
 
-`"filter": "resource.type="k8s_container" AND metric.type="kubernetes.io/container/restart_count" AND metadata.user_labels.app="backend""`
-
-Equally, the filter for the frontend pod is:
-
-`"filter": "resource.type="k8s_container" AND metric.type="kubernetes.io/container/restart_count" AND metadata.user_labels.app="frontend""`.
 
 ```json
 {
@@ -88,7 +79,9 @@ Equally, the filter for the frontend pod is:
 }
 ```
 
-Applying this Terraform module creates your dashboard, `My Christmas dashboard`, where the widgets are shown in a grid.
+Applying this Terraform module creates your dashboard, `My Christmas dashboard`, where the widgets are shown in a grid. It should look something like this:
+
+![Widgets displaying the restart rate](https://i.ibb.co/vjb2XvR/image.png)
 
 Adding more widgets is as simple as filtering and aggregating the metrics as you wish.
 
@@ -154,7 +147,7 @@ resource "google_monitoring_alert_policy" "frontend_restart_count_alert" {
 }
 ```
 
-These alerts will fire if the corresponding pod restarts more than the threshold value, 5, over a period of 60 seconds. An alert message is then sent to the selected notification channel, the Slack channel in our case.
+These alerts will fire if the threshold defined in `condition` is met. The `condition_threshold` for both pods, in this example, is when the pod restarts more than 5 times over a period of 60 seconds. An alert message is then sent to the selected notification channel, the Slack channel in our case.
 
 ## Application specific metrics
 
