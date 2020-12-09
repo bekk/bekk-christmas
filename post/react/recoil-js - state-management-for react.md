@@ -97,7 +97,7 @@ export default () => {
 
 ##### Selectors
 
-The application also need to handle derived state, and that`s when we use a selector. In our recipe application we use a selector to return a filtered list of our recipes. Selectors are also memoized, making sure our performance is maintained.
+The application also need to handle derived state, and that's when we use a selector. In our recipe application we use a selector to return a filtered list of our recipes. Selectors are also memoized, making sure our performance is maintained.
 
 ```js
 import { selector } from "recoil";
