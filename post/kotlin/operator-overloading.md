@@ -19,7 +19,7 @@ From Wikipedia:
 
 The most common operators are the arithmetic operators `+`, `-`, `/` and `%`, and they are widely used in all sorts of programming languages. But these are only a few of all the operators defined in Kotlin (for an exhaustive list, take a look at the official documentation [here](https://kotlinlang.org/docs/reference/keyword-reference.html#operators-and-special-symbols)). All operators have a fixed symbolic representation, such as `+` and `-`, and a function with a fixed name that specifies its functionality. You can see all the arithmetic operators with their corresponding functions in the table below.
 
-![Table showing all arithmetic operators with their corresponding functions](https://i.ibb.co/D86wG9F/Arithmetic-operators-with-their-corresponding-functions.png)
+
 ![Table showing all arithmetic operators with their corresponding functions](https://i.ibb.co/tp3t6pg/Screenshot-2020-12-09-at-19-04-50.png)
 
 
