@@ -129,7 +129,7 @@ function component() {
 document.body.appendChild(component());
 ```
 
-All we need to do now is to run `npx webpack` to the start the bundling process and serve our new files. Open the `./dist/index.html` and check to see that it works!
+All we need to do now is to run `npx webpack` to start the bundling process and serve our new files. Open the `./dist/index.html` and check to see that it works!
 
 ### Setting up Babel
 
