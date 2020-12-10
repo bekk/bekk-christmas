@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 11
 title: "Inspirasjon: En date med et fabeldyr"
-image: https://unsplash.com/photos/2k9w3bJT_jk
+image: https://images.unsplash.com/photo-1530218897813-82702baf2f9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80
 authors:
   - Espen Staver
 ---
