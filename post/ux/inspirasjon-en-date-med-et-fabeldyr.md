@@ -9,11 +9,17 @@ authors:
 ---
 ![](/assets/fabel-1-3.png)
 
-Noe skjer i bussvinduet. Tre diagonale former beveger seg i formasjon. Så fem til. Er det gjenskinnet fra vinduene i det kontorbygget? Vinduene fargelegges av reklameskilt og gatelys. «Hvor sitter du når du ser dette, da?», spør min kjære i telefonen. «Jeg sitter jo inne på bussen da», sier jeg. «Ja, i lotus i midtgangen da eller? Hvor sitter du i bussen liksom?». Hmm, lotus høres bra ut. Når jeg nå sitter her skulende mot midtgangen og skal skrive noe om inspirasjon, tenker jeg det vel så gjerne kunne vært et ode til Hanna...men det får bli i en annen kalender kanskje, heh. 
+Noe skjer i bussvinduet. Tre diagonale former beveger seg i formasjon. Så fem til. Er det gjenskinnet fra vinduene i det kontorbygget? 
+
+Vinduene fargelegges av reklameskilt og gatelys. 
+
+«Hvor sitter du når du ser dette, da?», spør min kjære i telefonen. «Jeg sitter jo inne på bussen da», sier jeg. «Ja, i lotus i midtgangen da eller? Hvor sitter du i bussen liksom?». Hmm, lotus høres bra ut. Når jeg nå sitter her skulende mot midtgangen og skal skrive noe om inspirasjon, tenker jeg det vel så gjerne kunne vært et ode til Hanna...men det får bli i en annen kalender kanskje, heh. 
 
 Nå svingte bussen, og vinduene ble til diamanter gitt. 
 
 Men hva er det der i mellom dem, som holder diamantene sammen og orkestrerer hele forestillingen? Edderkopper. Beksvarte edderkopper. Bena deres danner en litt skummel matrise. Hva om jeg satte typografien i den? Farger, grid, typo, bevegelse. Dette begynner å ligne noe. 
+
+
 Gleder meg til å prøve det ut kjenner jeg. Men nå har edderkoppene fått pels, og de slynger seg fra diamant til diamant? [«Imma come at you like a spidermonkey!!»](https://www.youtube.com/watch?v=AfLtst6mC0Q) hører jeg kid’en til Ricky Bobby AKA Will Ferrell si. Nei, det her sklir ut... «Er det dette som er inspirasjooon da asså?» spør spidermonkeyen fra vinduet, hånlig. Lille frekkas. Vet ikke? Kanskje en dagdrøm rett og slett, eller noe rart jeg fikk i kaffen. Hvordan vet man forskjellen? Mellom en dagdrøm, rar kaffe, inspirasjon, affeksjon, innsikt?
 
 I kreativt arbeid, og i annet arbeid og i livet i det hele tatt, har jeg opplevd å bli inspirert og u-inspirert på mange ulike måter. Jeg har gått langs kaia, sett på bølgesprut med vinden piskende i fjeset, og kjent på en følelse av mulighet og driv bruse opp i meg. Og så har jeg gått langs kaia, og bare kjent meg kald og våt egentlig. 
@@ -38,7 +44,7 @@ Det viser seg at inspirasjon og kreativitet er vanskelig å se forekomme i hjern
 
 Fra dette kan vi forstå at kreativitet og inspirasjon er komplekse konstellasjoner, alltid i bevegelse og vaskelige å måle med apparater. Hørt den gamle floskelen om at «kreativ tenkning, jo, det skjer i høyre hjernehalvdel det!», hm? Den tror jeg du trygt kan legge død. 
 
-Men der måleinstrumentene til nevroforskere har hatt utfordringer (vel å merke tror de ikke det er umulig å måle, de har bare ikke løst det ennå), har psykologien hatt mere hell. Og det med metoder kanskje gjennkjennbare for dere som har drevet med innsiktsarbeid for eksempel. Intervjuer, kontrollerte «brukertester», selv-rapportering og andre forsøk der en f.eks ser på hva som kjennetegner noen som ofte blir inspirert, eller leverer kreativitet ofte, har fremmet en betydelig mengde kunnskap. 
+Men der måleinstrumentene til nevroforskere har hatt utfordringer (vel å merke tror de ikke det er umulig å måle, de har bare ikke løst det ennå), har psykologien hatt mer hell. Og det med metoder kanskje gjennkjennbare for dere som har drevet med innsiktsarbeid for eksempel. Intervjuer, kontrollerte «brukertester», selv-rapportering og andre forsøk der en f.eks ser på hva som kjennetegner noen som ofte blir inspirert, eller leverer kreativitet ofte, har fremmet en betydelig mengde kunnskap. 
 
 I [denne artikkelen](https://www.frontiersin.org/articles/10.3389/fnhum.2014.00436/full#B61) refererer forskere fra College of William and Mary i Williamsburg til flere slike studier, bl.a denne:
 
