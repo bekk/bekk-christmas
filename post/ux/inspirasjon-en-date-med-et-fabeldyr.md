@@ -51,7 +51,7 @@ I [denne artikkelen](https://www.frontiersin.org/articles/10.3389/fnhum.2014.004
 
 > «In three studies of different types of writing (poetry, science, and fiction), self-reported state inspiration during the writing process uniquely predicted creativity of the final product, as assessed by expert judges…”
 
-Men prøver du å observere noe av denne inspirasjonen og kreativiteten utspille seg i gjennom bilder av hjerneaktivitet, er det som om den ikke eksisterer. Det er noe mystisk og fascinerende ved det aspektet, som minner meg om nettopp forholdet til inspirasjon. Du kan ikke tvinge det frem, men du kan la noe annet fremkalle det i deg dersom du åpner for det.
+Men prøver en å observere noe av denne inspirasjonen og kreativiteten utspille seg i gjennom bilder av hjerneaktivitet, er det som om den ikke eksisterer. Det er noe mystisk og fascinerende ved det aspektet, som minner meg om nettopp forholdet til inspirasjon. Du kan ikke tvinge det frem, men du kan la noe annet fremkalle det i deg dersom du åpner for det.
 
 Et liv i samspill med inspirasjon krever jobb altså, what else is new? Hva skal vi med den informasjonen egentlig? Men spør deg selv, neste gang du besøker en gammel kjenning av en inspirasjonskilde: Ble du inspirert der igjen? Eller var det heller trygghet i konvensjon, eller løsning du fant? Hvordan beveger du deg i denne dansen mon tro...er det lenge siden du og inspirasjonen fant på noe nytt?
 
