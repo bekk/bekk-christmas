@@ -5,6 +5,8 @@ post_day: 12
 title: MockK Library
 ingress: MockK is a mocking library for Kotlin, written in Kotlin. Because of this, it has extensive support for Kotlin-specific language features such as extension functions and companion objects.
 description: ""
+authors:
+  - Kristoffer Olsen
 ---
 ## What is mocking?
 Mocking is a technique that is primarily used in unit tests, or tests that validates the functionality of parts of the code in isolation. When running unit tests on classes, they are often *dependent* on other classes to function properly. 
