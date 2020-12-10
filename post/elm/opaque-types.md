@@ -19,35 +19,18 @@ Check out example
 
 
 
-What is wrong?
-
-Introduce opaque types 
+In all languages when we have some value, we expect that value to be in a certain format. Be it an age which we will at the very least expect to be above -1, or a name of a person which we will expect to have at least 2 names, one first name and a surname, the list goes on.
 
 ```elm
 type alias Person =
     { name : String
-    , hasBeard : Bool
-    , weight : Int
+    , age : Int
     }
 ```
 
-```elm
-type alias SantaClaus =
-    { name : String
-    , weight : Int
-    }
-```
+In this record called `Person` we have two properties, one `name` and one `age`
 
-```elm
-hirePersonAsSantaClaus : Person -> List SantaClaus -> List SantaClaus
-hirePersonAsSantaClaus person previouslyHiredSantas =
-    if person.hasBeard then
-        { name = person.name, weight = person.weight } :: previouslyHiredSantas
-    else
-        previouslyHiredSantas
-```
-
-This program is used to hire santa clauses, however the company using the program to hire the santa clauses has lately had some under-qualified people becoming santa clauses and they want to improve the hiring strategy.
+This type, however the company using the program to hire the santa clauses has lately had some under-qualified people becoming santa clauses and they want to improve the hiring strategy.
 How can we make it more secure to screen people who want to become santa clauses?
 
 
