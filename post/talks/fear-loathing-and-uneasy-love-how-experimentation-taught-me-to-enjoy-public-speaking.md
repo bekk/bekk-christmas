@@ -56,8 +56,6 @@ Crawling deeper into that rabbit hole, I created the [over-engineered monster](h
 
 For the record, building everything required for that presentation took about 90 hours for 10 minutes of presentation. And generally got lukewarm feedback. I had fun, though!
 
-![Screen grab from Presentasjon 2.0](https://i.ibb.co/Zzh12rz/Screenshot-2020-12-06-at-13-32-30.png "Just because you can, doesn't necessarily mean you should")
-
 
 ### Experiment 4: Bringing it all together
 
