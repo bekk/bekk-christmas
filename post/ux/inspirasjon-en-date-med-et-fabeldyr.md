@@ -56,3 +56,5 @@ Men prøver en å observere noe av denne inspirasjonen og kreativiteten utspille
 Et liv i samspill med inspirasjon krever jobb altså, what else is new? Hva skal vi med den informasjonen egentlig? Men spør deg selv, neste gang du besøker en gammel kjenning av en inspirasjonskilde: Ble du inspirert der igjen? Eller var det heller trygghet i konvensjon, eller løsning du fant? Hvordan beveger du deg i denne dansen mon tro...er det lenge siden du og inspirasjonen fant på noe nytt?
 
 Vent da, nå må jeg gå av her, og Hanna ringer vøtt. «Hjemme snart? Hva er planene dine i kveld a?» spør hun... «i kveld har jeg en date med en grid, noe typo og et fabeldyr, ikke bli sjalu da ❤️»
+
+![](/assets/diamonds-1.png)
