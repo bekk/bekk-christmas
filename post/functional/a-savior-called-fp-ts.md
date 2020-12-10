@@ -51,7 +51,9 @@ const usernameOne = map(getUserName)(userOne) // -> some("user-name")
 const usernameTwo = map(getUserName)(userTwo) // -> none
 ```
 
-The `Option` wraps a value, and allows operations to be performed through functions such as `map`, `filter`, `fold` and others. This example demonstrates a really nice property of the `Optional`: your business code can describe the "happy path" – error handling is abstracted into the `Option` itself. We never have to check for `null` values before getting the username from the user, because the function `getUserName` is run in a safe context. `map` runs the provided function on an `Option` only if it is a `some`, and not a `none`. The same is true for other functions on the `Option`.
+Before we go through the code, I’d just like to point out the use of [partial application](https://en.wikipedia.org/wiki/Partial_application) in the two last lines. Lots of functions in `fp-ts` are [curried](https://en.wikipedia.org/wiki/Currying) by default, as is often common in functional languages. This pattern is really convenient when you want to bind some, but not all, parameters of a function.
+
+So, an `Option` wraps a value, and allows operations to be performed through functions such as `map`, `filter`, `fold` and others. This example demonstrates a really nice property of the `Optional`: your business code can describe the "happy path" – error handling is abstracted into the `Option` itself. We never have to check for `null` values before getting the username from the user, because the function `getUserName` is run in a safe context. `map` runs the provided function on an `Option` only if it is a `some`, and not a `none`. The same is true for other functions on the `Option`.
 
 But what if you wanted to display, or use, the username? You can’t just extract the value from inside an `Option`, as you don’t know whether it is a `some` or a `none`. To get the actual value from the `Option`, you need to specify what to do both when it is a `none`, and a `some`. Let’s take a look at two safe ways of extracting your value from the `Option`.
 
