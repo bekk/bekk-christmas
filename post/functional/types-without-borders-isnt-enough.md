@@ -3,9 +3,12 @@ calendar: functional
 post_year: 2020
 post_day: 11
 title: Types Without Borders Isn't Enough
+links: []
 authors:
   - Dillon Kearns
 ---
+# Types Without Borders Isn't Enough
+
 At Elm Conf 2018, I gave a talk called [Types Without Borders](https://www.youtube.com/watch?v=memIRXFSNkU). In the talk, I discussed the idea of preserving type information when crossing the boundary between languages or environments.
 
 I gave a demo of two different libraries that follow that principle: [`elm-graphql`](https://github.com/dillonkearns/elm-graphql), and [`elm-typescript-interop`](https://github.com/dillonkearns/elm-typescript-interop). `elm-graphql` has stood the test of time quite well.
@@ -20,7 +23,7 @@ You define a port with a type annotation like this:
 
 ```elm
 -- this gives you a function to send a message to JavaScript
-showModal : { title : String, message : String, style : String } -> Cmd msg
+reportEvent : { title : String, message : String, kind : String } -> Cmd msg
 
 -- this gives you a subscription to listen for messages from JavaScript
 gotLocalStorage : ( { key : String, value : Json.Decode.Value } -> msg ) -> Sub msg
@@ -31,13 +34,10 @@ You can learn more in the [Elm Guide's section on ports](https://guide.elm-lang.
 And in your app, you would call
 
 ```elm
-showModal
+reportEvent
     { title = "Could not find that discount code"
-    , message =
-        "Could not found discount code "
-            ++ discountCode
-            ++ ". Please try again."
-    , style = "Warning"
+    , message = "Could not found discount code " ++ discountCode ++ "."
+    , kind = "Warning"
     }
 ```
 
@@ -52,8 +52,8 @@ Wiring up your ports looks something like this:
 ```js
 const app = Elm.Main.init({ flags: flagData });
 
-app.ports.showModal.subscribe(function (data) {
-  // show modal based on `data` we got from Elm
+app.ports.reportEvent.subscribe(function (data) {
+  // report event based on `data` we got from Elm
 });
 ```
 
@@ -70,38 +70,37 @@ So what that left you with was using `elm-typescript-interop` to be a serializat
 Let's take our example from above
 
 ```elm
-showModal
+reportEvent
     { title = "Could not find that discount code"
     , message =
         "Could not found discount code "
             ++ discountCode
             ++ ". Please try again."
-    , style = "Warning"
+    , kind = "Warning"
     }
 ```
 
 What if our ideal data type in Elm doesn't have that exact shape that we want to send to TypeScript? Let's say our ideal Elm type is this
 
 ```elm
-type ModalDialog
+type Error
   = FatalError ErrorCode
   | Warning { title : String, message : String }
-  | Info { title : String, message : String }
 ```
 
 Now we need a translation function to turn that data type into a format that our port can serialize.
 
 ```elm
-modalDialogToPort : ModalDialog -> Cmd msg
-modalDialogToPort modalDialog =
-    case modalDialog of
+reportElmErrorType : Error -> Cmd msg
+reportElmErrorType error =
+    case error of
         FatalError errorCode ->
-            showModal
+            reportEvent
                 { title = "Internal Error"
                 , message =
                     "Please contact support with code "
                         ++ errorCodeToString errorCode
-                , style = "Error"
+                , kind = "Error"
                 }
 ```
 
@@ -185,12 +184,6 @@ errorEncoder =
                         , message = details.message
                         , context = Nothing
                         }
-
-                    Info details ->
-                        { errorId = Nothing
-                        , message = details.message
-                        , context = Nothing
-                        }
             )
 
 
@@ -229,24 +222,21 @@ That means instead of remembering to register each port, but getting no warning 
 ```typescript
 app.ports.fromElm.subscribe((fromElm) => {
   switch (fromElm.tag) {
-    case "alert":
-      alert(fromElm.message);
-      break;
-    case "sendPresenceHeartbeat":
-      console.log("sendPresenceHeartbeat");
-      break;
-    case "bugsnag":
-      Bugsnag.notify(event);
+    case "reportEvent":
+      AnalyticsService.notify(fromElm.data);
       break;
     case "scrollIntoView":
-      document.getElementById(fromElm.id)?.scrollIntoView(fromElm.options);
+      document.getElementById(fromElm.id)?.scrollIntoView(fromElm.data);
       break;
+    // exhaustive check will fail if there are unhandled cases
   }
 });
 ```
 
-Again, this is because of the power of the Combinator pattern. Since a Combinator is just built up of other Combinators, we can build up very complex data serialization out of smaller pieces, and then _combine_ them into one type that's nice to work with in an exhaustive switch statement!
+Again, this is because of the power of the Combinator pattern. Since a Combinator is just built up of other Combinators, we can build up very complex data serialization out of smaller pieces, and then _combine_ them into one type that's nice to work with in an exhaustive switch statement<sup>[^exhaustive-switch]</sup>!
 
 ## Sneak peak of elm-ts-interop
 
 Thanks for reading! I'll be releasing `elm-ts-interop` very soon, so stay tuned. If you want a sneak peak, you can browse this [preview of the documentation](https://elm-doc-preview.netlify.app/TsInterop-Encode?repo=dillonkearns%2Felm-ts-interop&version=main). I'd love to hear your thoughts. Let me know what you think on Twitter [@dillontkearns](https://twitter.com/dillontkearns)!
+
+[^exhaustive-switch]: To make get errors if your switch statements are missing a case in TypeScript, you'll need to either use [this trick](https://stackoverflow.com/a/39419171), or use the [`@typescript-eslint/switch-exhaustiveness-check`](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md) `eslint` rule.
