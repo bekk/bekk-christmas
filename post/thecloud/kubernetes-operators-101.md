@@ -28,7 +28,7 @@ The Operator pattern is best described in the [official Kubernetes documentation
 >
 > People who run workloads on Kubernetes often like to use automation to take care of repeatable tasks. The Operator pattern captures how you can write code to automate a task beyond what Kubernetes itself provides.
 
-**TL;DR** automate operation of applications and services with human know-how.
+**TL;DR** Operators automate operation of applications and services with human know-how.
 
 ## How does an Operator work?
 
@@ -36,7 +36,7 @@ An Operator consists at a minimum of one Custom Resource Definition (`CRD`) and 
 
 Given an instance (`CR`) of `PostgresDatabase`, it's now the job of the controller to ensure that the desired state is reconciled with the cluster. In this example one can assume that the controller will create a `StatefulSet` for running the database itself, along with needed configuration in a `ConfigMap`, certificates for mutual TLS in a `Secret`. Backup can be done by either mounting and writing to a volume defined in the `CR` or injecting a sidecar for sending backups to another location.
 
-Patching, reboots and failovers can be specified in the `CR` and taken care of by the controller, using methods recommended by experienced DBA's. The fact that complex operational knowledge can be encoded into the controller is a key enabler for many organizations who'd like to run complex software, but not necessarily invest countless hours into learning the nitty-gritty details on how to operate it.
+Patching, reboots and failovers can be specified in the `CR` and taken care of by the controller, using methods recommended by experienced DBA's. The fact that complex operational knowledge can be encoded into the controller is a key enabler for many organizations that would like to run complex software, but not necessarily invest countless hours into learning the nitty-gritty details on how to operate it.
 
 Like any other software there will be bugs and abstractions will leak. There's no silver bullet.
 
