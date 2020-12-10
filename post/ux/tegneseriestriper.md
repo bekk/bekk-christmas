@@ -29,4 +29,4 @@ authors:
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
 
-![](/assets/dele-skjerm.jpg)
+![](/assets/dele-skjerm.png "test")
