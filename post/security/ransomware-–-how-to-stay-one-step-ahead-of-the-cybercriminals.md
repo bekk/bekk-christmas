@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 12
 title: Ransomware – How to stay one step ahead of the cybercriminals
-image: https://www.stockvault.net/photo/203783/digital-padlock-on-circuit-background
+image: https://www.stockvault.net/data/2016/07/04/203783/preview16.jpg
 ingress: "Ransomware is extremely costly and difficult to get rid of, and once
   your files are encrypted you may have lost that data permanently. Giving in to
   the ransom demand is expensive, gives no guarantee that your data will be
