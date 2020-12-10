@@ -44,10 +44,8 @@ Security management, the process of protecting assets and preparing for the wors
 
 Securing critical infrastructure is challenging, but the escalating number of attacks and their increased sophistication as well as the possible fatal consequences illustrates the importance of proper cyber security in our critical infrastructures.
 
-
-
 Eager to read more about the mentioned attacks? 
 
-* Ukraine power grid
+* [Ukraine power grid attack](https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/)
 * [Maersk: Springing back from a catastrophic cyber Attack](https://www.i-cio.com/management/insight/item/maersk-springing-back-from-a-catastrophic-cyber-attack)
-* Saudi Aramco Oil
+* [Saudi Aramco Oil](https://money.cnn.com/2015/08/05/technology/aramco-hack/)
