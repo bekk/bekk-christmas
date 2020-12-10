@@ -20,6 +20,9 @@ Every 3D game you play is made up of many three-pointed polygons that are render
 `three.js` comes with default shaders that cover the most basic use cases. But we are not basic, are we? No, we are special! To write our own shaders we simply replace each material with a special `ShaderMaterial`:
 
 ```javascript
+import fragmentShaderCode from './fragmentshader.glsl';
+import vertexShaderCode from './vertexshader.glsl';
+
 const material = new THREE.ShaderMaterial({
     uniforms,
     vertexShader: vertexShaderCode,
@@ -30,8 +33,8 @@ const material = new THREE.ShaderMaterial({
 These are the parameters:
 
 - `uniforms`: A record of global variables passed from the JavaScript code to the shader code. Useful for passing things like time, light positions or texture images
-- `vertexShader`: The shader program (string) to be run once for every point in all the polygons
-- `fragmentShader`: The shader program (string) to be run once for every pixel that make up those polygons
+- `vertexShader`: The shader program (as a string) to be run once for every point in all the polygons
+- `fragmentShader`: The shader program (also a string) to be run once for every pixel that make up those polygons
 
 We are going to make a sphere that wobbles when we press it. This is our shady proposal! We start with a sphere with diameter of 1, consisting of 128 times 256 facets. Like a disco ball!
 
