@@ -19,14 +19,14 @@ authors:
   - Maia Elisabeth Sirnes
   - Joel Chelliah
 ---
+![Tegning av en gammel hånd](/assets/gammelhånd.png "Gammel hånd")
+
+![Illustrasjon av skjerm som blir delt i to](/assets/dele-skjerm.png "Dele skjerm")
+
+![](/assets/dyskord-digital.png "Dyskord")
+
 ![](/assets/stickie.png)
-
-## Hørt på Teams:
-
-![](/assets/gammelhånd.png)
-
-![](/assets/dyskord-digital.png)
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
 
-![](/assets/dele-skjerm.png "test")
+![]()
