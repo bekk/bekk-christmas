@@ -27,4 +27,4 @@ authors:
 
 ![](/assets/dyskord-digital.png)
 
-![](/assets/taetskippertak.png)
+![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
