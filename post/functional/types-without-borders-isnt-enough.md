@@ -3,7 +3,13 @@ calendar: functional
 post_year: 2020
 post_day: 11
 title: Types Without Borders Isn't Enough
-links: []
+links:
+  - title: Types Without Borders
+    url: https://www.youtube.com/watch?v=memIRXFSNkU
+  - title: Vision for Data Interchange
+    url: https://gist.github.com/evancz/1c5f2cf34939336ecb79b97bb89d9da6
+  - title: elm-ts-interop
+    url: https://github.com/dillonkearns/elm-ts-interop
 authors:
   - Dillon Kearns
 ---
