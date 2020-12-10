@@ -19,6 +19,13 @@ ingress: >-
     "wtf" == "WTF" // false
   ```
 description: javascript equality equal double equal abstract equality comparison
+links:
+  - url: https://exploringjs.com/impatient-js/downloads/impatient-js-preview-book.pdf
+    title: JavaScript for impatient programmers
+  - url: https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison
+    title: Abstract equality comparison
+  - title: Object-to-primitive conversions
+    url: http://www.adequatelygood.com/Object-to-Primitive-Conversions-in-JavaScript.html
 ---
 First of all, JavaScript has two operators for equality: `==` and `===`. In order to understand equality, we have to understand the difference between these two options. As we know equality from other programming languages and mathematics, `===` behaves the way we are used to.
 
@@ -44,7 +51,7 @@ undefined == null // true
 null === undefined // false
 ```
 
-`null` and `undefined` are special cases and we have to accept that they are equal when using double quotes. But i’m not sure if I like it...
+`null` and `undefined` are special cases and we have to accept that they are equal when using double-quotes. But I’m not sure if I like it...
 
 #### 3 If `x` and `y` are the data types number and string - try to convert the string into number and perform ==
 
@@ -56,9 +63,9 @@ null === undefined // false
 BigInt(2) == "2" -> BigInt(2) == BigInt("2") // true
 ```
 
-If one value is a string type and the other is numeric, JavaScript compare the numeric value of the string. Remember, converting an empty string results in 0. 
+If one value is a string type and the other is numeric, JavaScript compares the numeric value of the string. Remember, converting an empty string results in 0. 
 
-#### 4 If `x` or `y` is a boolean type - convert it to number and perform `==`
+#### 4 If `x` or `y` is a boolean type - convert it to a number and perform `==`
 
 ```javascript
 false == 0  => 0 == 0 // true
@@ -67,9 +74,9 @@ true == 1 => 1 == 1 // true
 false == '' => 0 == '' => 0 == 0 // true
 ```
 
-Boolean values converted to number results in 0 (`false`) or 1 (`true`). Be aware of the second line, after converting `false` to 0 the comparison is now a numeric and string data type. Fortunately, you have just learned how this works!
+Boolean values converted to a number type results in 0 (`false`) or 1 (`true`). Be aware of the second line, after converting `false` to 0 the comparison is now a numeric and string data type. Fortunately, you have just learned how this works!
 
-#### 5 If `x` and `y` is respectively an Object and either String, Number, Bigint or Symbol - convert the Object to primitive and perform ==
+#### 5 If `x` and `y` is respectively an Object and either String, Number, Bigint or Symbol - convert the Object to primitive and perform `==`
 
 ```javascript
 ['1', '2', '3'] == '1,2,3' => ['1', '2', '3'].toString() === '1,2,3' // true
@@ -123,4 +130,4 @@ NaN == false // false
 undefined == false // false
 ```
 
-As mentioned above, avoid using `==` in your JavaScript code, please use `===` if you want to maintain it later! 
+As mentioned above, avoid using `==` in your JavaScript code. Unless all of the rules above fits in your, and your teammates, head - please use `===`! 
