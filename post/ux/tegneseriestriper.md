@@ -29,4 +29,10 @@ authors:
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
 
+  
+
+
+
+##### Klarer du å gjette hvilket ord eller uttrykk som står bak disse?
+
 ![](/assets/gjettordet.png "Gjett ordet")
