@@ -4,10 +4,9 @@ post_year: 2020
 post_day: 10
 title: Partial application of functions!
 image: https://images.unsplash.com/photo-1503416997304-7f8bf166c121?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80
-ingress: Currying (👈 which you read about in yesterday's
-  [post](elm.christmas/2020/9)) enables partial application, which lets us split
-  up functions into small logical building blocks which are easier to both read
-  and work with.
+ingress: Currying (👈 which you read about in yesterday's [post](/9)) enables
+  partial application, which lets us split up functions into small logical
+  building blocks which are easier to both read and work with.
 authors:
   - Vetle Bu Solgård
 ---
