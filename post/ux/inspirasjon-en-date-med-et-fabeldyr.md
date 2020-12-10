@@ -13,7 +13,7 @@ Noe skjer i bussvinduet. Tre diagonale former beveger seg i formasjon. Så fem t
 
 Vinduene fargelegges av reklameskilt og gatelys. 
 
-«Hvor sitter du når du ser dette, da?», spør min kjære i telefonen. «Jeg sitter jo inne på bussen da», sier jeg. «Ja, i lotus i midtgangen da eller? Hvor sitter du i bussen liksom?». Hmm, lotus høres bra ut. Når jeg nå sitter her skulende mot midtgangen og skal skrive noe om inspirasjon, tenker jeg det vel så gjerne kunne vært et ode til Hanna...men det får bli i en annen kalender kanskje, heh. 
+«Hvor sitter du når du ser dette, da?», spør min kjære i telefonen. «Jeg sitter jo inne på bussen da», sier jeg. «Ja, i lotus i midtgangen da eller? *Hvor* sitter du i bussen liksom?». Hmm, lotus høres bra ut. Når jeg nå sitter her skulende mot midtgangen og skal skrive noe om inspirasjon, tenker jeg det vel så gjerne kunne vært et ode til Hanna...men det får bli i en annen kalender kanskje, heh. 
 
 Nå svingte bussen, og vinduene ble til diamanter gitt. 
 
