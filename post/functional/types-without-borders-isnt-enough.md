@@ -14,8 +14,6 @@ links:
 authors:
   - Dillon Kearns
 ---
-# Types Without Borders Isn't Enough
-
 At Elm Conf 2018, I gave a talk called [Types Without Borders](https://www.youtube.com/watch?v=memIRXFSNkU). In the talk, I discussed the idea of preserving type information when crossing the boundary between languages or environments.
 
 I gave a demo of two different libraries that follow that principle: [`elm-graphql`](https://github.com/dillonkearns/elm-graphql), and [`elm-typescript-interop`](https://github.com/dillonkearns/elm-typescript-interop). `elm-graphql` has stood the test of time quite well.
