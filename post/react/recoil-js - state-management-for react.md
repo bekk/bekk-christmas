@@ -123,6 +123,7 @@ The cool thing here is that if our search state changes, our selector state will
 
 ```js
 const { useRecoilValue } from 'recoil';
+const { filteredItemsState } from './store';
 
 const Recipes = () => {
   const filteredItems = useRecoilValue(filteredItemsState);
