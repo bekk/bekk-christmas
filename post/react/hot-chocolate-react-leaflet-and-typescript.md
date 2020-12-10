@@ -3,6 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 13
 title: Hot Chocolate, React Leaflet and Typescript
+image: https://images.unsplash.com/photo-1577819445935-e773c99f8412?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: "For the last decade I've called Oslo my home. And aside from the usual
   goals of getting an education, landing a job and living my life, I've had a
   side quest: Finding the best places for hot chocolate in town."
