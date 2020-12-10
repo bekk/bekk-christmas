@@ -3,6 +3,7 @@ calendar: functional
 post_year: 2020
 post_day: 11
 title: Types Without Borders Isn't Enough
+image: https://images.unsplash.com/photo-1604936243528-8fc27e66ece6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=1238&h=400&crop=edges
 links:
   - title: Types Without Borders
     url: https://www.youtube.com/watch?v=memIRXFSNkU
