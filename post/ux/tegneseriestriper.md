@@ -28,3 +28,5 @@ authors:
 ![](/assets/dyskord-digital.png)
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
+
+![](/assets/dele-skjerm.jpg)
