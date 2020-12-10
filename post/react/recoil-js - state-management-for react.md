@@ -9,7 +9,8 @@ description: ""
 links:
   - url: https://youtu.be/_ISAA_Jt9kI
     title: Dave McCabe`s presentation of Recoil
-authors: []
+authors:
+  - Emil Mork
 ---
 ### What is Recoil ?
 
