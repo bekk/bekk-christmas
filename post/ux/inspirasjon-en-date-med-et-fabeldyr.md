@@ -24,4 +24,6 @@ Det er mye å lære ved å stå i dette forholdet da, erfaring etter erfaring fo
 
 Ja la oss forstå det bedre. Men, til et slikt foretak trenger vi nok profesjonell hjelp... ooog...(liten kunstpause for effekt)...her kommer den!  Dette er nevroforskerne Arne Dietrich og Riam Kanso i [en gjennomgang av mangfoldige studier](https://pdfs.semanticscholar.org/6cf6/ab06e974be445b89df045694ce0c4c4a39f8.pdf) der forskere, ved hjelp av EEG, scanning og annet, prøver å se kreativitet i hjernen – let’s go!
 
-> «To most neuroscientists, the prospect of looking for creativity in the brain must seem like trying to nail jelly to the wall.”
+> «To most neuroscientists, the prospect of looking for creativity in the brain must seem like trying to nail jelly to the wall.” 
+
+![](/assets/jellobrain.png)
