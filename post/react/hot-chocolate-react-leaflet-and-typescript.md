@@ -35,7 +35,7 @@ My personal preference is to make some additional folders in our project structu
 
 `mkdir src/components src/domain`
 
-Run the application with `npm run start` and let's begin programming! The barebones React app should open a new browser window with the app running. 
+Run the application with `npm run start` and let's begin programming! The barebones React app should open in a new browser window. 
 
 ## The map basics
 
@@ -48,8 +48,8 @@ import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
 import React from "react";
 
 export default function FavoritesMap() {
-	// Default coordinates set to Oslo
-	const position : LatLngExpression = [59.911491, 10.757933];
+	// Default coordinates set to Oslo Sentral station
+	const position : LatLngExpression = [59.91174337077401, 10.750425582038146];
 	const zoom : number = 15;
 
 	return (
@@ -63,10 +63,10 @@ export default function FavoritesMap() {
 			}
 		</MapContainer>
 		)
-}
+};
 ```
 
-Let's also simplify the `App.tsx,` our app's starting point, and include our `FavoritesMap` component:
+Let's also simplify `App.tsx,` our app's starting point, and include our `FavoritesMap` component:
 
 ```tsx
 import React from 'react';
@@ -85,7 +85,7 @@ function App() {
 export default App;
 ```
 
-Now we get to the part that *always* trips me up. Always. Because in theory, this should be everything required to make a basic map, right? Wrong. The Leaflet map needs a set height in order to display correctly. So let's add that to `App.css`:
+Now we get to the part that *always* trips me up. Always. Because in theory, this should be everything required to make a basic map, right? Wrong. The Leaflet map needs a set height in order to display correctly. So let's append that to `App.css`:
 
 ```css
 .leaflet-container {
@@ -95,18 +95,20 @@ Now we get to the part that *always* trips me up. Always. Because in theory, thi
 
 Huzzah! We have a map! 
 
-## The favorites list as markers
+## The hot chocolate favorites
 
-Now onto the markers. Let's have a look at my list of favorite hot chocolate places, how to make them into a Typescript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
+Let's have a look at my list of favorite hot chocolate places, how to make them into a Typescript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
 
-1. Varm belgisk sjokolade (Belgian Hot Chocolate) at Steam kaffebar
-2. Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
-3. Sjokolade på pinne (Hot chocolate on a stick) at Espresso House
+1. 🥇Varm belgisk sjokolade (Belgian Hot Chocolate) at Steam kaffebar
+2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
+3. 🥉Sjokolade på pinne (Hot chocolate on a stick) at Espresso House
 
-To make these into a custom Typescript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Make a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
+Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added the ones close to Steam kaffebar for convenience.
+ 
+Now onto the markers. To make these into a custom Typescript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
 
 ```typescript
-export interface HotChocolate{
+export interface HotChocolate {
     productName: string,
     englishProductName: string,
     vendor: string,
@@ -117,7 +119,7 @@ export interface HotChocolate{
 };
 ```
 
-Import the type `HotChocolate` in our FavoritesMap component.
+Import the type `HotChocolate` in our `FavoritesMap` component.
 
 `import { HotChocolate } from "../domain/domain";`
 
@@ -153,18 +155,17 @@ const list : HotChocolate[] = [
 ];
 ```
 
-Loop through these HotChocolate items and make markers. Replace the marker placeholder in the MapContainer with the finished marker list:
+Loop through these `HotChocolate` items and make markers. Replace the marker placeholder in the `MapContainer` with the finished marker list.
 
 ```tsx
 {list.map((item, index) => 
 	<Marker icon={icon} key={index} position={[item.lat, item.lon]} title={`${item.englishProductName} at ${item.vendor}`}>
 		<Popup>
-			<strong>{item.englishProductName} ({item.productName})</strong> at {item.vendor}<br />
-			<p>
-				{item.location}
-			</p>
+			<strong>{item.englishProductName} at {item.vendor}</strong><br />
+			<p>Look for <strong>{item.productName}</strong> on the menu.</p>
+			<p>{item.location}</p>
 			{item.description && 
-				<p>{item.description}</p>
+				<em>{item.description}</em>
 			}
 		</Popup>
 	</Marker>
