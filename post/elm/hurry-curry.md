@@ -26,7 +26,7 @@ Here we can see that `aboveZero` is a function which takes an `Int` and returns 
 isBetween : Int -> Int -> Int -> Bool
 ```
 
-Many will read this type signature in a different way compared the the easier definition we saw earlier. They might say that `isBetween` is a function which takes three `Int`s and returns a `Bool`. But if that's the case, why are we forced to write all those arrows? Especially considering arrows seemingly work both as a input seperator _and_ as a seperator between inputs and inputs.
+Many will read this type signature in a different way compared the the easier definition we saw earlier. They might say that `isBetween` is a function which takes three `Int`s and returns a `Bool`. But if that's the case, why are we forced to write all those arrows? Especially considering arrows seemingly work both as a input separator _and_ as a separator between inputs and outputs.
 
 Actually, arrows _only_ seperate one input value and a return value. The type signature for `isBetween` should be read as 'a function that takes an `Int` _and returns a function_ that takes an `Int` and returns a function that takes an `Int` and returns `Bool`'. This is the same type signature, but written differently:
 
