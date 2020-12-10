@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 13
 title: Let's cook up some events
-image: https://unsplash.com/photos/uQs1802D0CQ
+image: https://images.unsplash.com/photo-1466637574441-749b8f19452f
 ingress: Today is St Lucia Day🕯. The bearer of light, which takes away the dark
   winter up north and brings joy, light and a common ground. Just like
   JavaScript did for browsers. Ok, that was a cheap shot, I promise it will be
