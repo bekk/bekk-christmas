@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 12
+post_day: 14
 title: A peek into Scala 3
 authors:
   - Per Øyvind Kanstrøm
