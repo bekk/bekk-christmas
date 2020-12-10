@@ -11,16 +11,12 @@ ingress: >-
 
   Why? 
 
+
   ```javascript
-
-  false == 0 // true
-
-  ['1', '2', '3'] == '1,2,3' // true
-
-  undefined == null // true
-
-  "wtf" == "WTF" // false
-
+    false == 0 // true
+    ['1', '2', '3'] == '1,2,3' // true
+    undefined == null // true
+    "wtf" == "WTF" // false
   ```
 description: javascript equality equal double equal abstract equality comparison
 ---
