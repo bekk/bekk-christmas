@@ -54,6 +54,6 @@ I [denne artikkelen](https://www.frontiersin.org/articles/10.3389/fnhum.2014.004
 
 Men prøver du å observere noe av denne inspirasjonen og kreativiteten utspille seg i gjennom bilder av hjerneaktivitet, er det som om den ikke eksisterer. Det er noe mystisk og fascinerende ved det aspektet, som minner meg om nettopp forholdet til inspirasjon. Du kan ikke tvinge det frem, men du kan la noe annet fremkalle det i deg dersom du åpner for det.
 
-Et liv i samspill med inspirasjon krever jobb altså, what else is new? Hva skal vi med den informasjonen egentlig? Men spør deg selv, neste gang du besøker en gammel kjenning av en inspirasjonsside: Ble du inspirert? Eller var det heller trygghet i konvensjon, eller løsning du fant? Hvordan beveger du deg i denne dansen mon tro...er det lenge siden du og inspirasjonen fant på noe nytt?
+Et liv i samspill med inspirasjon krever jobb altså, what else is new? Hva skal vi med den informasjonen egentlig? Men spør deg selv, neste gang du besøker en gammel kjenning av en inspirasjonskilde: Ble du inspirert der igjen? Eller var det heller trygghet i konvensjon, eller løsning du fant? Hvordan beveger du deg i denne dansen mon tro...er det lenge siden du og inspirasjonen fant på noe nytt?
 
 Vent da, nå må jeg gå av her, og Hanna ringer vøtt. «Hjemme snart? Hva er planene dine i kveld a?» spør hun... «i kveld har jeg en date med en grid, noe typo og et fabeldyr, ikke bli sjalu da.»
