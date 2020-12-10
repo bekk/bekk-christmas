@@ -10,6 +10,8 @@ links:
     url: https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL?si=qKYBkrpzS9SUp9UJU3XBXQ
   - title: Drypp fra Bekk på Apple Podcasts
     url: https://podcasts.apple.com/us/podcast/drypp-fra-bekk/id1488818165
+  - url: https://executivegrowthalliance.com/
+    title: Executive Growth Alliance
 authors:
   - Jens Andreas Huseby
   - Moquan Chen
