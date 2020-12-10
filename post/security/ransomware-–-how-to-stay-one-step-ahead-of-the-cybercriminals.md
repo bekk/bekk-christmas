@@ -54,7 +54,7 @@ First off, it is not recommended to pay the ransom. This will only encourage thi
 
 That being said, some have chosen to recover the data by paying the fee, especially in the case of medical records or where there is no good backup to reinstall your files from. This is not an easy issue, and the pros and cons can be discussed at length. Again, take good backups of your data, and you will not have to be faced with this dilemma should you be so unfortunate to have all your files encrypted. 
 
-### Restoring your systems from backups
+### Restoring your system from backups
 
 Disconnect your infected computer or system from the Internet and other devices, and use an antivirus to remove the ransomware. Note, this will not recover your files, but should remove the virus from your system. Check if there are any deleted files you might recover. Also, finding the exact type of ransomware strain might help you decrypt the files (though not in most cases). There are some online tools like [ID Ransomware](https://id-ransomware.malwarehunterteam.com/) and [Crypto Sheriff](https://www.nomoreransom.org/crypto-sheriff.php) that will help you with this. There are also some decryption tools available for some strains, so checkout [No More Ransom](https://www.nomoreransom.org/en/index.html) if a decryption key exist for a specific strain. 
 
