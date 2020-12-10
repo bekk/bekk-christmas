@@ -4,6 +4,13 @@ post_year: 2020
 post_day: 11
 title: "Fear, loathing and uneasy love: how experimentation taught me to enjoy
   public speaking"
+links:
+  - url: https://waitbutwhy.com/2016/03/doing-a-ted-talk-the-full-story.html
+    title: "Wait But Why - Doing a TED Talk: The Full Story"
+  - title: How to cope with stage fright
+    url: https://www.talks.christmas/2020/2
+  - title: How Hein stopped worrying and started to love holding presentations
+    url: https://www.talks.christmas/2020/3
 authors:
   - Jøran Vagnby Lillesand
 ---
@@ -35,7 +42,7 @@ With stress becoming manageable, I was getting ready to consciously experiment w
 
 The first experiment was a talk about the now fairly exotic [CoffeeScript](https://coffeescript.org/) programming language. I signed up to do a 15 minute introduction of CoffeeScript to a group of fifty students. The caveat: I didn’t really know CoffeeScript. I promised myself I wasn’t going to spend more than 3 hours on preparations, all included.
 
-And the result? Well, it definitely wasn’t my best talk to date. But it wasn’t horrible either. And more importantly: it turns out the correlation between hours of preparation and quality of the talk isn’t linear! Unsurprisingly, you get better return of investment for the first 10 hours than the last 35 when preparing for a 45 minute talk.
+And the result? Well, it definitely wasn’t my best talk to date. But it wasn’t horrible either. And more importantly: it turns out the correlation between hours of preparation and quality of the talk isn’t linear! Unsurprisingly, you get better return of investment for the first 10 hours than the last 35 when preparing for a 45 minute talk. 
 
 I still keep the 1 hour per minute preparation rule in the back of my mind when giving talks, but I’m a lot more aware of when that’s actually required. The bigger the occasion, the better prepared I choose to be.
 
@@ -49,7 +56,7 @@ Crawling deeper into that rabbit hole, I created the [over-engineered monster](h
 
 For the record, building everything required for that presentation took about 90 hours for 10 minutes of presentation. And generally got lukewarm feedback. I had fun, though!
 
-<screenshot fra presentasjon 2.0>
+![Screen grab from Presentasjon 2.0](https://i.ibb.co/Zzh12rz/Screenshot-2020-12-06-at-13-32-30.png "Just because you can, doesn't necessarily mean you should")
 
 
 ### Experiment 4: Bringing it all together
