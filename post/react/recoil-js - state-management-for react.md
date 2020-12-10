@@ -66,7 +66,7 @@ Its a simple app, but it uses Recoil to solve some known challenges pretty well.
 
 ##### Atoms
 
-An atom is simply a piece of state. It's like using react's useState(), except that any component can subscribe to it. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search input:
+An atom is simply a piece of state. It's like using react's `useState()`, except that any component can subscribe to it. By updating the atom value, all subscribed components will be re-rendered. In our recipe application we use atoms to store different types of state, like a search input:
 
 ```js
 // store.js
@@ -133,7 +133,7 @@ const Recipes = () => {
 
 Finally we need to add some spinners with React Suspense, which is supported out of the box.
 
-```
+```js
 <ErrorBoundery>
  <Suspense fallback={<span>Loading..</span>}>
    <Recipes />
