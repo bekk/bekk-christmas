@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 15
 title: "Either's Fallacy: The Rise of The Result"
 ingress: "In this article, we compare error handling methods in Kotlin;
-  specifically: exceptions, `Either` and `Result`."
+  specifically: exceptions, `Either`, and `Result`."
 description: ""
 links:
   - url: https://arrow-kt.io/
