@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 11
+post_day: 12
 title: Functional TypeScript With fp-ts
 ingress: |
   I have a confession to make.
