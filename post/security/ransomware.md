@@ -37,11 +37,11 @@ Once the ransomware is installed, it encrypts all the data on your computer. Unf
 
 One of the oldest ciphers in history is the shift cipher, which shifts each letter a set number of times back or forth in the alphabet. Knowing this set number, also referred to as the “key”, is therefore enough to both encrypt and decrypt a text. Julius Caesar was believed to use a shift cipher, substituting each letter with the one 3 spaces to the right. This is one of the simplest examples of a symmetric encryption. 
 
-Today, there are more advanced versions, which can be broadly categorized as block ciphers (encrypts in byte-sized blocks) or stream ciphers (encrypts single digits). These methods are fast and only require the same key to encrypt and decrypt, though some argue it is less secure than asymmetric encryption as the same key is used. 
+Today, there are more advanced versions, which can be broadly categorized as block ciphers (encrypts in byte-sized blocks) or stream ciphers (encrypts single digits). These methods are fast and only require the same key to encrypt and decrypt. 
 
 #### Asymmetric encryption
 
-Asymmetric encryption is slower but is considered more secure. It uses two keys instead of one: one public and one private. The private key is only in the possession of the key pair owner, whereas the public one is widely distributed. When using the public key to encrypt a message it can only be decrypted using the private key, and vice versa.  
+Asymmetric encryption is slower and uses two keys instead of one: one public and one private. The private key is only in the possession of the key pair owner, whereas the public one is widely distributed. When using the public key to encrypt a message it can only be decrypted using the private key, and vice versa.  
 
 #### Ransomware take advantage of both encryption methods.
 
