@@ -197,4 +197,4 @@ every { spySanta.name } returns "Nick"
 
 ----------------------
 
-That covers the basics of using MockK! If you're still interested in learning more, check out the relevant links. Consider giving it a try in your tests.
+That covers the basics of using MockK! If you're still interested in learning more, check out the relevant links below for further reading.
