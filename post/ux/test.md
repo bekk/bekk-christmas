@@ -92,6 +92,10 @@ Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
 Med 68,2% som bruker Figma mest så er vi på god vei når vi nå skal starte det nye året. 
 
 ## Har vi lært noe da? 
+Og alle skriker et rungende JA! 
+
+![Kakediagramm med ja](https://i.ibb.co/PNzX0JF/ja.png)
+
 
 - Jeg har lært meg å tegne, sånn ish hvertfall.
 
