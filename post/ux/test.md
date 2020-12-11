@@ -71,7 +71,7 @@
 calendar: ux
 post_year: 2020
 post_day: 12
-title: test
+title: Litt av hvert fra 2020
 ingress: "Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp
   på avdelingen. Det førte til denne luken som skal dele erfaring fra til sammen
   6560 dager, eller 49200 timer med designere på hjemmekontor. Det er mye
@@ -89,7 +89,7 @@ Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort
 Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
 
 ![Kakediagramm med tegneprogram](https://i.ibb.co/2yBkSb8/figma.png)
-
+Med 68,2% som bruker Figma mest så er vi på god vei når vi nå skal starte det nye året. 
 
 ## Hvilke tips ville du gitt deg selv som designer hvis du kunne hoppe et år tilbake i tid?
 
