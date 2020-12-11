@@ -91,4 +91,15 @@ port deleteTodoById : Int -> Cmd msg
 port todosUpdated : (Json.Encode.Value -> msg) -> Sub msg
 ```
 
-E
+So you see that by changing our mindset a little, we can reduce the number of ports we need. This is good for several reasons:
+
+* Ports are not namespaced. Two ports with the same name, even when defined in different Elm modules, will cause one to overwrite the other.
+* Having many ports might make it difficult to keep track of how an application makes use of javascript.
+
+Actually, when looking at the one subscription we have left, you might realize that we don't actually need more ports than two: one for outgoing messages and one for incomming messages.
+
+Since you can send and receive json with ports, you can send any number of complex messages into and out of Elm. You also get greater control when encoding/decoding json. You can ignore values or be more strict, or even less strict, about what you expect from incomming values.
+
+## Conclusion
+
+When working with ports it's important to not be too specific. Clearly define your API, and only implement messages that actually matter to your application. At the same time, having many ports do not scale well. Try to keep to as few ports as you can. Remember, you only ever _need_ two.
