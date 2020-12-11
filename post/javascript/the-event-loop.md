@@ -44,8 +44,9 @@ When the ribbe is done, we can push the callback back on the call stack for exec
 And this is where the event loop enters the saga. The event loop has one job, pushing callbacks from the queue onto the call stack. If the call stack is empty, the event loop pushes the callback straight onto the stack. There you go, pretty easy right? 
 
 
-<img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:400px;"/><img src="https://i.ibb.co/pXnrMsR/Passing-from-the-queue-to-the-call-stack.png" alt="Shows how the Event loop pushes the function back onto the stack" style="width:400px;"/>
-
+<table>
+<tr><img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:400px;"/><img src="https://i.ibb.co/pXnrMsR/Passing-from-the-queue-to-the-call-stack.png" alt="Shows how the Event loop pushes the function back onto the stack" style="width:400px;"/></tr>
+</table>
 
 
 ## The plot twist
