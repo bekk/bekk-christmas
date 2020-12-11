@@ -61,7 +61,7 @@ Ettersom eierskapet til inntektsstrømmer og investeringer er distribuert rundt 
 
 Dette vil kreve store omstillinger internt i de aller fleste virksomheter, og tiden er knapp. Da lønner det seg å begynne forberedelsene allerede nå.
 
-![Er det ikke mer praktisk å vippse alle julegavene?](/assets/vipps.png)
+![]()
 
 ## Dette er det du bør gjøre:
 
