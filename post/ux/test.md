@@ -91,6 +91,94 @@ Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
 ![Kakediagramm med tegneprogram](https://i.ibb.co/2yBkSb8/figma.png)
 Med 68,2% som bruker Figma mest så er vi på god vei når vi nå skal starte det nye året. 
 
+## Har vi lært noe da? 
+
+- Jeg har lært meg å tegne, sånn ish hvertfall.
+
+- Har lært å brukerteste remote, og Adobe XD, virkelig jobbe agilt
+
+- Jobbe med designsystem i Figma! Og kommunikasjon/struktur på hjemmekontoret via Discord, Miro og Slack
+
+- Figma, Observasjon og alt i design upskill
+
+- Gjennomføring av remote brukertester
+
+- Visuelt design, lage informasjonsarkitektur, jobbe i team med kun andre designere...
+
+- Jeg har lært meg å snakke foran flere folk, å ta "kontroll" i møter og tørr nå å ringe folk spontant!
+
+- Lært meg Figma. Ikke direkte lært, men fått igjen oppleve energien og engasjementet ekte brukerintervjuer gir. Mer, mer av det! Tall og metrikker er viktig - men ikke alene!
+
+- Figma, ulike måter å mappe, Business Model Canvas, bruke hypotesekort
+
+- Lært meg de nye funksjonalitetene i Figma
+
+- Kontinuerlig design
+
+- Remote fasilitering av workshops, med verktøy som Miro. Brukerintervju via video. Onboarding av nye personer remote. Å sette sammen team og opprette produktteam.
+
+- Har lært meg Figma, Miro og å slappe av under videomøter
+
+- Lært den del mer Figma og kontinuerlige leveranser/team prosess.
+
+- Har lært mest om prosess og møtevirksomhet. Fått innblikk i utfordringer knyttet til å styre fremdriften i store komplekse prosjekter der det finnes mange parallelle prosesser som nødvendigvis ikke er koblet til hverandre eller samkjørte selv om det er mange avhegngiheter mellom dem.
+
+- Gjennomføre brukertester digitalt. Lage fyrstekake.
+
+- Jeg har blitt bedre på animasjon. Og lært mer om prosesser som treffer UX
+
+- Jeg har lært mye om å drive prosesser.
+
+- Jeg har lært Figma
+
+- Jeg har lært meg å skisse digitalt live fremfor masse folk på videokonferanse
+
+- Jeg har lært hvor viktig det er å jobbe tverrfaglig når man jobber med svært komplekse problemstillinger
+
+- Jeg har lært å jobbe med jurister
+
+- Jeg har lært å svelge enorme UX kameler fordi det har hastet med å få ting ut
+
+- Jeg har lært å holde gode digitale workshops
+
+- Jeg har lært at mange folk er litt mindre teknisk anlagte enn den jevne IT-konsulent
+Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke PR-er, Fikse små styling endringer i koden, Lærte meg bitte litt p5.js
+
+- Jeg har lært meg hvor viktig det er med pauser. Jeg har lært hvor mye konsentrasjon som kreves av videomøte.
+
+- Jeg har lært meg å sette ekstra stor pris på gode kollegaer, og bra teamsamhold.
+
+- Jeg har lært meg å fasilitere digital workshop, shortcuts i Figma, jobbe med kunde.
+
+- Jeg har lært meg Figma, prototyping i Figma, å gjennomføre digitale brukertester, gjennomføre brukertest i Teston.
+
+- Jeg har blitt litt bedre i illustrator, og litt flinkere til å snakke med skumle, voksne folk i Bekk. Også har jeg tenkt å lære mer om figma!
+
+- Digitale workshops, telefonintervjuer, optimize (verktøy for A/B-testing)
+
+- Jeg har lært mye om merkevarebygging, om prosjektledelse og prioritering av oppgaver
+
+- Å tegne i Procreate på iPad
+
+- Figma og Favro
+
+- Prosjektledelse. Noen nye verktøy bedre - miro, figma
+
+- 1. Brukertesting via Teams fungerer overraskende godt. 2. Vi er 2020 og det finnes fremdeles ikke gode verktøy for prototyping av interaktive skjema. 3. Noe så nerdete som lydforsinkelse (latency) er grunnen til at videomøter alltid er litt knotete.
+
+- lage varianter av komponenter i Figma, bruke GitHub, jobbe enda tettere med utviklere om design
+
+- Jeg har læst meg å bruke Teston!
+
+- Designsystemer, Prosjektledelse, Teamkultur, Typescript, Git
+
+- Bedre på å holde workshops remote
+
+- Lært å holde digitale workshops, hvordan jobbe aktivt med måling og eksperimenter, mer om OKR
+- Har lært meg Figma, og hvor bra Miro har fungert for å kartlegge flyt og diskutere flyt, ha workshops. Hvor mye tid man sparer på å ha brukertesting og -intervju via teams, selv om det byr på en del utfordringer.
+
+---
+
 ## Hvilke tips ville du gitt deg selv som designer hvis du kunne hoppe et år tilbake i tid?
 
 - Vær raus med deg selv.
