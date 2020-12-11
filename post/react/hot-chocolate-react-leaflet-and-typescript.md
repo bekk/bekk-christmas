@@ -29,7 +29,7 @@ This will be a React project written in TypeScript, requiring Node version 10 or
 
 We'll also need some NPM packages, so navigate into our newly created application folder and add them:
 
-`cd hot-chocolate-map && npm install leaflet react-leaflet @types/leaflet --save`
+`cd hot-chocolate-map && npm install leaflet react-leaflet @types/react @types/leaflet --save`
 
 My personal preference is to make some additional folders in our project structure. A `components` folder for our React components and a `domain` folder for any custom TypeScript types. Did you know you can make multiple new folders by typing in multiple folder names to `mkdir`?
 
