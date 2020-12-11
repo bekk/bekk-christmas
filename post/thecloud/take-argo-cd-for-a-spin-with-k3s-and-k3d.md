@@ -150,6 +150,7 @@ $ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 Navigate a browser to `https://localhost:8080` to find the Argo CD login screen.
 
+
 To login, use username `admin`. The first-time password is the name of the Argo CD Api Server pod, funny enough. That can be fetched like this:
 
 ```sh
@@ -174,7 +175,7 @@ From here, hook up a new Application with the following details:
 
 And hit create. This will start the deployment of a simple guestbook application with a service, endpoint and a deployment containing a single replica set. When everything is created, Argo CD will show a all-green, all synced up map of all Kubernetes objects.
 
-![](/Users/andreasmosti/Desktop/Screenshot 2020-12-07 at 20.10.39.png)
+![argo-cd-deployment](https://ibb.co/YjFv3M4)
 
 To access the deployed guestbook, set up a new port forward for the guestbook-service:
 
@@ -186,7 +187,7 @@ $ kubectl port-forward svc/guestbook-ui -n argocd 8081:80
 
 Hit up `http://localhost:8081` to see it.
 
-<img src="/Users/andreasmosti/Desktop/Screenshot 2020-12-01 at 19.28.49.png" style="zoom:50%;" />
+![example-guestbook-app](https://ibb.co/bdLH1mV)
 
 And thats it! We now have a glorified guestbook application deployed from Argo CD to Kubernetes, running as K3s via k3d on a local machine. Hopefully this spars some ideas on how to use K3s / k3d, Argo CD or hopefully both.
 
