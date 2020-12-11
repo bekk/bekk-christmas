@@ -103,7 +103,7 @@ Og alle skriker et rungende JA!
 
 <p>&nbsp;</p>
 
-### Hva folk har lært: 
+### Dette er hva folk deler at de har lært i år 😍: 
 
 - Jeg har lært meg å tegne, sånn ish hvertfall.
 
