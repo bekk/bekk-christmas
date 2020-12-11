@@ -25,6 +25,7 @@ The star of the Christmas dinner, for many Norwegian families, is the Christmas 
 
 As a thought experience, let’s say we are single threaded as well. Therefore, when we read the recipe for the Christmas dinner, we read the recipe from top to bottom, executing tasks as we go. 
 
+
 On this Christmas dinner recipe, the preparation and cooking of the ribbe is first on the list. So we start there, with the first task, seasoning. This should be done 3 days beforehand, and then the ribbe shall cook for 3 hours on Christmas Eve. If we could only execute one task at the time then all the other cooking, sausages or potatoes, would have to wait until the ribbe is done. By that logic, good luck impressing your family with an elegant delicious dinner. And just imagine if ribbe was the last task on the recipe, then your family would eat ribbe 3 days after the rest of the dinner 😱 Luckily, we’re not single threaded, the same goes for JavaScript... in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
 
 Before we dive into the Web API we have to establish that the JS engine uses a call stack for all tasks it has to execute. Since it’s a stack, it’s ``first in, last out``. Just like a stack of plates. Let's dive in. The Web API includes the DOM API, ``setTimeout``
