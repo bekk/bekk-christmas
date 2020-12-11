@@ -59,9 +59,9 @@ I tillegg, vil alle [børsnoterte foretak og virksomheter med flere enn 500](htt
 
 Ettersom eierskapet til inntektsstrømmer og investeringer er distribuert rundt i flere divisjoner og på ulike nivåer i en organisasjon, vil EU-taksonomien på ett eller annet tidspunkt påvirke ansatte på alle nivå av organisasjonen. Når du som forretningsutvikler skal pitche en ny investering til ledergruppen, vil du sannsynligvis være helt avhengig av å ha med en klassifiseringsvurdering knyttet til bærekraft, sammen med markeds- og lønnsomhetsvurderingene.
 
-Dette vil kreve store omstillinger internt i de aller fleste virksomheter, og tiden er knapp. Da lønner det seg å begynne forberedelsene allerede nå. 
+Dette vil kreve store omstillinger internt i de aller fleste virksomheter, og tiden er knapp. Da lønner det seg å begynne forberedelsene allerede nå.
 
-https://images.unsplash.com/photo-1558540473- 0f25bba817e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80
+![Er det ikke mer praktisk å vippse alle julegavene?](/assets/vipps.png)
 
 ## Dette er det du bør gjøre:
 
