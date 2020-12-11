@@ -5,9 +5,9 @@ post_day: 13
 title: Ting du har hørt i møter i år
 image: ""
 ingress: >-
-  I år har vi i faggruppa *Tegning, form og animasjon* blant annet hatt som mål
-  å tegne mer. Dagens luke består derfor av et knippe tegninger som visualiserer
-  «ting du har hørt i møter i år». 
+  I år har vi i faggruppa *Tegning, form og animasjon* hatt som mål å tegne mer.
+  Dagens luke består derfor av et knippe tegninger som visualiserer «ting du har
+  hørt i møter». 
 
 
   Noe til faglig ettertanke, litt som inspirasjon, mest for gøy. God jul 🎅
@@ -25,7 +25,7 @@ authors:
 
 ![](/assets/dyskord.png "Dyskord")
 
-![]()
+![](/assets/dissedager.png "I disse dager")
 
 ![](/assets/hårete-mål_tekst-1.png "Hårete mål ")
 
