@@ -4,7 +4,12 @@ post_year: 2020
 post_day: 13
 title: Take Argo CD for a spin with k3s and k3d
 image: https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80
-ingress: ""
+ingress: The container paradigm is upon us, and some of us love hacking and
+  writing code for Kubernetes - while others struggle, find maintaining or
+  releasing to it difficult. In this post we will have a look at how the
+  stripped-down Kubernetes variant k3s can be used to take the new hot container
+  continuous delivery tool Argo CD for a spin on your own laptop or personal
+  server - without much of the complexety Kubernetes requires.
 links:
   - url: https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/
     title: Will it cluster? k3s on your Raspberry Pi
