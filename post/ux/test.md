@@ -82,13 +82,13 @@ authors:
 ---
 ## To sprøsmål som kommer til å definere 2020 
 
-Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer den vaksinen?”. Nemlig “Hvilken videotjeneste synes du er best?” og “Har du kommet deg over på Figma?” 
+Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer vaksinen?”. Jeg tenker nemlig på *Hvilken videotjeneste synes du er best?* og *Har du kommet deg over på Figma?*
 
-
+![Kakediagramm med videotjenester](https://i.ibb.co/8KQZhqs/Video.png)
 
 Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
 
-
+![Kakediagramm med tegneprogram](https://i.ibb.co/2yBkSb8/figma.png)
 
 
 ## Hvilke tips ville du gitt deg selv som designer hvis du kunne hoppe et år tilbake i tid?
