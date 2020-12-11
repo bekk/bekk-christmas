@@ -82,12 +82,14 @@ authors:
 ---
 ## To sprøsmål som kommer til å definere 2020 
 
-Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer vaksinen?”. Jeg tenker nemlig på *Hvilken videotjeneste synes du er best?* og *Har du kommet deg over på Figma?*
+Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer vaksinen?”. Jeg tenker nemlig på "Hvilken videotjeneste synes du er best?" og "Har du kommet deg over på Figma?". Og her kommer svaret.
 
+### Hvilken videotjeneste synes du er best?
 ![Kakediagramm med videotjenester](https://i.ibb.co/8KQZhqs/Video.png)
 
 Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
 
+### Hvilket tegneprogram bruker du mest?
 ![Kakediagramm med tegneprogram](https://i.ibb.co/2yBkSb8/figma.png)
 Med 68,2% som bruker Figma mest så er vi på god vei når vi nå skal starte det nye året. 
 
@@ -96,6 +98,8 @@ Og alle skriker et rungende JA!
 
 ![Kakediagramm med ja](https://i.ibb.co/PNzX0JF/ja.png)
 
+
+### Hva folk har lært: 
 
 - Jeg har lært meg å tegne, sånn ish hvertfall.
 
@@ -181,7 +185,10 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 - Lært å holde digitale workshops, hvordan jobbe aktivt med måling og eksperimenter, mer om OKR
 - Har lært meg Figma, og hvor bra Miro har fungert for å kartlegge flyt og diskutere flyt, ha workshops. Hvor mye tid man sparer på å ha brukertesting og -intervju via teams, selv om det byr på en del utfordringer.
 
----
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 
 ## Hvilke tips ville du gitt deg selv som designer hvis du kunne hoppe et år tilbake i tid?
 
@@ -265,7 +272,9 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - Ha et mer åpent forhold til hvordan man har det og hvilke behov man har. Prioriter de oppgavene som gir deg den læringen og mestring du ønsker, og hvor du kjenner på at dette kunne jeg ha gjort i times hvis, fordi det er gøy! 
 
----
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 ## Hvis du trenger en Slack-kanal (litt internt for bekk da), blogg eller nettside så kommer anbefalingene her: 
 
 - https://www.instagram.com/collectcartoons/
@@ -276,7 +285,7 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - YT-kanalen til Figma!
 
-- #pelsdirektoratet😍
+- Slack -> pelsdirektoratet😍
 
 - https://eyeondesign.aiga.org/ https://abduzeedo.com/
 
@@ -286,7 +295,7 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - For Bekkere: slack-kanalen "ekte". For alle: instagramkontoen: norskehemmeligheter
 
-- #planteglede
+- Slack -> planteglede
 
 - Side hvor det legges ut bilder/videoer av ting som er utrolig godt gjennomført, men har et utrolig dårlig konsept/idé/smak. Awful taste but great execution: reddit.com/r/ATBGE
 
@@ -314,7 +323,7 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - https://danskdesigncenter.dk/da/vaerktoejskassen?fbclid=IwAR0Hkghjwv_C8smpNlFQ1pOEZ-KTGn-6c3iljRn0qa-8P6TID1ZJBpZx82o
 
-- #ekte <3
+- Slack -> ekte <3
 
 - https://growth.design/case-studies/ Disse artiklene. De er gøye og lettleste. Anbefaler også julespillelisten til Interactive, og slack-kanalene #ekte og #pelsedirektoratet
 
