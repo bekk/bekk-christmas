@@ -3,8 +3,17 @@ calendar: kotlin
 post_year: 2020
 post_day: 12
 title: MockK Library
-ingress: MockK is a mocking library for Kotlin, written in Kotlin. Because of this, it has extensive support for Kotlin-specific language features such as extension functions and companion objects.
+ingress: MockK is a mocking library for Kotlin, written in Kotlin. Because of
+  this, it has extensive support for Kotlin language features such as extension
+  functions and companion objects.
 description: ""
+links:
+  - url: https://mockk.io/
+    title: MockK Homepage
+  - title: MockK Guidebook
+    url: https://notwoods.github.io/mockk-guidebook/
+  - title: MockK Github
+    url: https://github.com/mockk/mockk
 authors:
   - Kristoffer Olsen
 ---
@@ -26,22 +35,21 @@ The bread and butter of MockK are the two functions `mockk` and `every`. You dec
 Let us consider a simple class for example demonstration purposes:
 ```kotlin
 // Example class
-class Santa(val title: String, val name: String) {
+class Santa(val title: String, val name: String): SantaI {
   fun getTitleAndName(): String = 
     "$title $name"
   
   fun laugh(n: Int): String =
     "${"ho ".repeat(n).trim().capitalize()}!"
 }
-```
-You can also just as well create mock objects from interfaces: 
-```kotlin
-// Example interface
-interface Santa(val title: String, val name: String) {
-  fun getTitleAndName: String
+
+// You can also make a mock object directly from an interface
+interface SantaI(val title: String, val name: String) {
+  fun getTitleAndName(): String
   fun laugh(n: Int): String
 }
 ```
+
 Below are two simple examples of how `mockk` can be used to declare mock objects of the class `Santa`, and how `every` can be used to stub behavior.
 
 ```kotlin
@@ -49,7 +57,7 @@ Below are two simple examples of how `mockk` can be used to declare mock objects
 val santaMock = mockk<Santa>()
 every { santaMock.title } returns "Saint"
 every { santaMock.name } returns "Nicholas"
-every { santaMock.getTitleAndName } returns "Sinterklaas"
+every { santaMock.getTitleAndName() } returns "Sinterklaas"
 every { santaMock.laugh(any()) } returns "Ho ho ho!"
 ```
 ```kotlin
@@ -57,7 +65,7 @@ every { santaMock.laugh(any()) } returns "Ho ho ho!"
 val santaMock: Santa = mockk {
   every { title } returns "Saint"
   every { name } returns "Nicholas"
-  every { getTitleAndName } returns "Sinterklaas"
+  every { getTitleAndName() } returns "Sinterklaas"
   every { laugh(any())} returns "Ho ho ho!"
 }
 ```
@@ -77,7 +85,7 @@ val santaMock: Santa = mockk {
 }
 ```
 ### Expected answers
-In addition to return, there are other keywords that control the behavior, or the *expected answer*, of a DOC. 
+In addition to `returns`, there are other keywords that control the behavior, or the *expected answer*, of a DOC. 
 
 The keywords `returnsMany` and `andThen` can be used to generate a sequence of canned responses from similar function calls. 
 
@@ -110,3 +118,83 @@ val santaMock: Santa = mockk {
 ```
 
 ### Verifying behavior
+While assertions and verification can typically be handled by your testing framework of choice (like Spek which was featured in [yesterday's post](https://preview.bekk.christmas/kotlin/2020/11)), MockK does feature quite a bit of functionality to help the test writer verify behavior.
+
+Behavior verification refers to checking if the mocked DOC's were called correctly from the SUT. Usually you want to put verification at the end of a test. You start a verification block by using any of the keywords `verify`, `verifyAll`, `verifySequence` and `verifyOrder`, and unlike `every`, you can specify multiple calls inside a single verification block.
+
+To check if certain calls happened at least once, use a simple `verify`:
+
+```kotlin
+verify { 
+  santaMock.name
+  santaMock.getTitleAndName()
+  santaMock.laugh(2)
+}
+```
+
+`verifyAll` does a similar check to `verify`, except it also checks if the calls specified are the *only* calls made on that mock. The following block checks if `laugh` was the *only* DOC called from the SUT:
+
+```kotlin
+verifyAll {
+  santaMock.laugh(any())
+}
+```
+
+`verifySequence` checks if an excact sequence of calls happened, with no other calls in between:
+
+```kotlin
+verifySequence { 
+  santaMock.laugh(1)
+  santaMock.laugh(2)
+  santaMock.laugh(3)
+}
+```
+
+`verifyOrder` is similar to `verifySequence`, but it only checks the order of the calls specified, while allowing for other calls to be possibly woven in between:
+```kotlin
+verifyOrder {
+  santaMock.laugh(1)
+  santaMock.laugh(2)
+  santaMock.laugh(3)
+}
+```
+
+`verify` also accepts arguments. You can check if a call to `laugh` happened in an interval of 2 to 4 times by supplying arguments to the parameters `atLeast` and `atMost`:
+
+```kotlin
+verify(atLeast = 2, atMost = 4) { 
+  santaMock.laugh(any())
+}
+```
+
+The parameter `exactly` specifies an exact number of calls to check for, and is the same as setting `atLeast` and `atMost` to the same value:
+
+```kotlin
+verify(exact = 1) { 
+  santaMock.laugh(any())
+}
+```
+
+To check if a call did not happen, you can either set `exactly = 0`, or you can use the special construct `wasNot Called`:
+
+```kotlin
+// These two blocks do the same thing
+verify(exactly = 0) { 
+  santaMock.laugh(any())
+}
+
+verify { 
+  santaMock.laugh(any()) wasNot Called
+}
+```
+
+Sometimes you want to execute calls to the real dependencies of an SUT. For this purpose, MockK also features `Spies`. A `Spy` can be seen as a hybrid between a mocked object and a "real" object. Any verification you can apply to mocked objects, you can also apply to spies. You can create a spy with the function `spyk`, and add some optional mocked behavior like so:
+
+```kotlin
+val spySanta = spyk(Santa("Saint", "Nicholas"))
+every { spySanta.name } returns "Nick"
+```
+
+----------------------
+
+That covers the basics of using MockK! If you're still interested in learning more, check out the relevant links. Consider giving it a try in your tests.
