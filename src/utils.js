@@ -43,15 +43,11 @@ const getDayNumber = (day) => {
 };
 
 export const getChristmasTree = (calendar, year) => {
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
-        calendar
-    )}/tre.png`;
+    return `/assets/lukebilder/${getCalendarNumber(calendar)}/tre.png`;
 };
 
 export const getWindowImagePlaceholder = (calendar, day) => {
-    return `https://cdn.jsdelivr.net/gh/kgolid/lukebilder@1ad5684/${getCalendarNumber(
-        calendar
-    )}/small/${getDayNumber(day)}.jpeg`;
+    return `/assets/lukebilder/${getCalendarNumber(calendar)}/${getDayNumber(day)}.jpeg`;
 };
 
 export const setImageWidth = (url) => {
