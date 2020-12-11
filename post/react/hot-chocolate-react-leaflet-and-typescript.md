@@ -202,7 +202,9 @@ And the CSS for the icon in `App.css`:
 }
 ```
 
-And then we're done. 
+And then we're done. Let's look at our finished map.
+
+<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?#show-markers"></iframe>
 
 ## End notes
 
