@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 13
 title: Let's cook up some events
-image: https://images.unsplash.com/photo-1466637574441-749b8f19452f
+image: https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80
 ingress: "**Have you ever wondered what the amazing Christmas dinner and the
   Event Loop in JavaScript have in common? Well, not much. But I will use the
   preparation of this delicious meal to make the event loop a bit more
