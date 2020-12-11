@@ -42,44 +42,44 @@ Run the application with `npm run start` and let's begin programming! The barebo
 We'll start by making our map component `FavoritesMap.tsx` inside the `components` folder. I'll add the basic setup for our React Leaflet map here, as well as the imports we’ll need later.
 
 ```tsx
-import L, { LatLngExpression } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
+import L, { LatLngExpression } from "leaflet";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import React from "react";
 
 export default function FavoritesMap() {
-	// Default coordinates set to Oslo Sentral station
-	const position : LatLngExpression = [59.91174337077401, 10.750425582038146];
-	const zoom : number = 15;
+    // Default coordinates set to Oslo Sentral station
+    const position : LatLngExpression = [59.91174337077401, 10.750425582038146];
+    const zoom : number = 15;
 
-	return (
-		<MapContainer center={position} zoom={zoom} scrollWheelZoom={false}>
-			<TileLayer
-			attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-			url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-			/>
-			{
-				// Placeholder, we'll put our markers here
-			}
-		</MapContainer>
-		)
+    return (
+        <MapContainer center={position} zoom={zoom} scrollWheelZoom={false}>
+            <TileLayer
+            attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {
+                // Placeholder, we'll put our markers here
+            }
+        </MapContainer>
+        )
 };
 ```
 
 Let's also simplify `App.tsx`, our app's starting point, and include our `FavoritesMap` component:
 
 ```tsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import FavoritesMap from "./components/FavoritesMap";
 
 function App() {
-  return (
-    <div className="App">
-    <h1>Top 3 hot chocolate locations in Oslo</h1>
-      <FavoritesMap />
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>Top 3 hot chocolate locations in Oslo</h1>
+            <FavoritesMap />
+        </div>
+    );
 }
 
 export default App;
@@ -89,7 +89,7 @@ Now we get to the part that *always* trips me up. Always. Because in theory, thi
 
 ```css
 .leaflet-container {
-	height: 500px
+    height: 380px;
 }
 ```
 
@@ -99,7 +99,7 @@ Huzzah! We have an empty map!
 
 ## The hot chocolate favorites
 
-Let's have a look at my list of favorite hot chocolate places, how to make them into a TypeScript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
+Let's have a look at my list of favorite hot chocolate places, how to describe them as a TypeScript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
 
 1. 🥇Varm belgisk sjokolade (Belgian Hot Chocolate) at Steam kaffebar
 2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
@@ -107,7 +107,9 @@ Let's have a look at my list of favorite hot chocolate places, how to make them 
 
 Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience.
 
-Now onto the markers. To make these into a custom TypeScript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
+Onto the TypeScript type. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field.
+
+Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
 
 ```typescript
 export interface HotChocolate {
@@ -129,31 +131,31 @@ Now we can add our hard coded list to FavoritesMap:
 
 ```tsx
 const list : HotChocolate[] = [
-	{
-		productName: "Varm belgisk sjokolade",
-		englishProductName: "Belgian hot chocolate",
-		vendor: "Steam kaffebar",
-		location: "Jernbanetorget 1, Østbanehallen",
-		lat: 59.91088362120013, 
-		lon: 10.752799203777597
-	},
-	{
-		productName: "Varm sjokolade",
-		englishProductName: "Hot chocolate",
-		vendor: "Kaffebrenneriet",
-		location: "Karl Johans gate 7, Arkaden",
-		lat: 59.91181003626315, 
-		lon: 10.747782602301388
-	},
-	{
-		productName: "Sjokolade på pinne",
-		englishProductName: "Hot chocolate on a stick",
-		vendor: "Espresso House",
-		location: "Jernbanetorget 1, Østbanehallen",
-		lat: 59.91201090441835, 
-		lon: 10.751298468298101,
-		description: "Seasonally available"
-	}
+    {
+        productName: "Varm belgisk sjokolade",
+        englishProductName: "Belgian hot chocolate",
+        vendor: "Steam kaffebar",
+        location: "Jernbanetorget 1, Østbanehallen",
+        lat: 59.91088362120013, 
+        lon: 10.752799203777597
+    },
+    {
+        productName: "Varm sjokolade",
+        englishProductName: "Hot chocolate",
+        vendor: "Kaffebrenneriet",
+        location: "Karl Johans gate 7, Arkaden",
+        lat: 59.91181003626315, 
+        lon: 10.747782602301388
+    },
+    {
+        productName: "Sjokolade på pinne",
+        englishProductName: "Hot chocolate on a stick",
+        vendor: "Espresso House",
+        location: "Jernbanetorget 1, Østbanehallen",
+        lat: 59.91201090441835, 
+        lon: 10.751298468298101,
+        description: "Seasonally available"
+    }
 ];
 ```
 
@@ -161,17 +163,16 @@ Loop through these `HotChocolate` items and make markers. Replace the marker pla
 
 ```tsx
 {list.map((item, index) => 
-	<Marker icon={icon} key={index} position={[item.lat, item.lon]} title={`${item.englishProductName} at ${item.vendor}`}>
-		<Popup>
-			<strong>{item.englishProductName} at {item.vendor}</strong><br />
-			<p>Look for <strong>{item.productName}</strong> on the menu.</p>
-			<p>
-{item.location}</p>
-			{item.description && 
-				<em>{item.description}</em>
-			}
-		</Popup>
-	</Marker>
+    <Marker icon={icon} key={index} position={[item.lat, item.lon]} title={`${item.englishProductName} at ${item.vendor}`}>
+        <Popup>
+            <strong>{item.englishProductName} at {item.vendor}</strong><br />
+            <p>Look for <strong>{item.productName}</strong> on the menu.</p>
+            <p>{item.location}</p>
+            {item.description && 
+                <em>{item.description}</em>
+            }
+        </Popup>
+    </Marker>
 )}
 ```
 
@@ -179,10 +180,10 @@ For extra holiday coziness, "koselig" as we say in Norwegian, I've added a custo
 
 ```tsx
 const icon : L.DivIcon = L.divIcon({
-	className: 'hot-chocolate-icon',
-	iconSize: [30, 30],
-	iconAnchor: [0, 0],
-	popupAnchor: [15, 0]
+    className: "hot-chocolate-icon",
+    iconSize: [30, 30],
+    iconAnchor: [0, 0],
+    popupAnchor: [15, 0]
 });
 ```
 
@@ -190,17 +191,17 @@ And the CSS for the icon in `App.css`:
 
 ```css
 .hot-chocolate-icon {
-	background: white;
-	border-radius: 50%;
-	box-shadow: 0px 0px 10px black;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
 }
 
 .hot-chocolate-icon:after {
-	display: block;
-	width: 30px;
-	height: 30px;
-	content: "☕";
-	font-size: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "☕";
+    font-size: 20px;
 }
 ```
 
