@@ -51,9 +51,9 @@ nFirstSquaresSum n =
     |> List.sum 
 ```
 
-The former requires us to parse the parens, to spot the order of the statements. The latter variant instantly reveals the different steps in perfect order. It forms a *pipeline.* 
+The former requires us to parse the parens, to spot the order of the statements. In this case the order is right to left. The latter variant instantly reveals the different steps in perfect order of execution. It forms a *pipeline.* 
 
-The backwards pipe, `<|` *can* be used to express the same sequence of calls as its brother `|>`. Rewriting the example above with the same formatting, would put `List.sum` first and on a line of its own. This is confusing since in reality it is the last function called. Reformatted, this would become:
+The backwards pipe, `<|` *could* be used to express the same sequence of calls as its brother `|>`, but in the opposite order. The example above, with the same formatting, would put `List.sum` first and on a line of its own. This is confusing since in reality it is the last function called. It is better expressed on one line:
 
 ```elm
 nFirstSquaresSum: Int -> Int
@@ -61,7 +61,7 @@ nFirstSquaresSum n =
     List.sum <| List.map square <| List.range 1 n
 ```
 
-This is closer to how one would write in a language that uses parens for function calls. However, it leads to long lines or confusion if broken up onto separate lines. My personal rules of thumb are:
+This is closer to how one would write in a language that uses parens for function calls. However, long sequences of `<|` quickly produce long lines. It is almost always possible to express the same sequence using `|>` . My personal rules of thumb are:
 
 1. Try to express things vertically with |>
 2. Dont mix |> and <| in the same expression
