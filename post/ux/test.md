@@ -72,10 +72,25 @@ calendar: ux
 post_year: 2020
 post_day: 12
 title: test
-ingress: "Her kommer det noe "
+ingress: "Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp
+  på avdelingen. Det førte til denne luken som skal dele erfaring fra til sammen
+  6560 dager, eller 49200 timer med designere på hjemmekontor. Det er mye
+  hjemmekontor det, på godt og vondt. Dette handler derimot mest om det som var
+  godt! "
 authors:
   - Mange mange nisser i Bekk 🎅 🤶
 ---
+## To sprøsmål som kommer til å definere 2020 
+
+Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer den vaksinen?”. Nemlig “Hvilken videotjeneste synes du er best?” og “Har du kommet deg over på Figma?” 
+
+
+
+Zoom går av med seieren, men her er kakediagrammet gankse fargerikt!
+
+
+
+
 ## Hvilke tips ville du gitt deg selv som designer hvis du kunne hoppe et år tilbake i tid?
 
 - Vær raus med deg selv.
