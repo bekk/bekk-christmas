@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 13
-title: Hot Chocolate, React Leaflet and Typescript
+title: A Hot Chocolate Map with React Leaflet and TypeScript
 image: https://images.unsplash.com/photo-1577819445935-e773c99f8412?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: "For the last decade I've called Oslo my home. And aside from the usual
   goals of getting an education, landing a job and living my life, I've had a
@@ -66,7 +66,7 @@ export default function FavoritesMap() {
 };
 ```
 
-Let's also simplify `App.tsx,` our app's starting point, and include our `FavoritesMap` component:
+Let's also simplify `App.tsx`, our app's starting point, and include our `FavoritesMap` component:
 
 ```tsx
 import React from 'react';
@@ -103,8 +103,8 @@ Let's have a look at my list of favorite hot chocolate places, how to make them 
 2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
 3. 🥉Sjokolade på pinne (Hot chocolate on a stick) at Espresso House
 
-Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added the ones close to Steam kaffebar for convenience.
- 
+Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience.
+
 Now onto the markers. To make these into a custom Typescript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
 
 ```typescript
@@ -163,7 +163,8 @@ Loop through these `HotChocolate` items and make markers. Replace the marker pla
 		<Popup>
 			<strong>{item.englishProductName} at {item.vendor}</strong><br />
 			<p>Look for <strong>{item.productName}</strong> on the menu.</p>
-			<p>{item.location}</p>
+			<p>
+{item.location}</p>
 			{item.description && 
 				<em>{item.description}</em>
 			}
@@ -205,6 +206,6 @@ And then we're done.
 
 ## End notes
 
-In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props.
+In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props or hooks.
 
 Thank you for following along, I hope you enjoyed this seasonally appropriate map. ☕
