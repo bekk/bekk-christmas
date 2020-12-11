@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 12
 title: Smooth Operators
-image: https://images.unsplash.com/photo-1573486433811-a9eb5b1688a1
+image: https://images.unsplash.com/photo-1573486433811-a9eb5b1688a1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1238&h=400&q=100
 ingress: Provided I didn't miscount (I am not the [Count von
   Count](https://www.youtube.com/watch?v=2AoxCkySv34&ab_channel=SesameStreet),
   so it's quite possible), there are 46 operators in JavaScript which are
