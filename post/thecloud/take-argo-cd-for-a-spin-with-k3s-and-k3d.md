@@ -56,7 +56,7 @@ $ brew install k3d
 With the `k3d` command, in place, set up a single-node cluster called `laptop`:
 
 ```sh
-x $ k3d cluster create laptop  INFO[0000] Created network 'k3d-laptop'  INFO[0000] Created volume 'k3d-laptop-images'  INFO[0001] Creating node 'k3d-laptop-server-0'  INFO[0009] Creating LoadBalancer 'k3d-laptop-serverlb'  INFO[0011] Pulling image 'docker.io/rancher/k3d-proxy:v3.3.0'  INFO[0015] Cluster 'laptop' created successfully!  INFO[0015] You can now use it like this:  kubectl cluster-info
+$ k3d cluster create laptop  INFO[0000] Created network 'k3d-laptop'  INFO[0000] Created volume 'k3d-laptop-images'  INFO[0001] Creating node 'k3d-laptop-server-0'  INFO[0009] Creating LoadBalancer 'k3d-laptop-serverlb'  INFO[0011] Pulling image 'docker.io/rancher/k3d-proxy:v3.3.0'  INFO[0015] Cluster 'laptop' created successfully!  INFO[0015] You can now use it like this:  kubectl cluster-info
 ```
 
 A quick `docker ps` shows two containers, `k3s` itself and a proxy. That's all we need.
