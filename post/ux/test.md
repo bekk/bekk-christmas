@@ -80,7 +80,7 @@ ingress: "Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp
 authors:
   - Mange nisser i Bekk 🎅 🤶
 ---
-## To sprøsmål som kommer til å definere 2020 
+## To spørsmål som kommer til å definere 2020 
 
 Jeg tror det er to spørsmål som kommer til å definere 2020 og da ser jeg bort i fra “Når kommer vaksinen?”. Jeg tenker nemlig på "Hvilken videotjeneste synes du er best?" og "Har du kommet deg over på Figma?". Og her kommer svaret.
 
