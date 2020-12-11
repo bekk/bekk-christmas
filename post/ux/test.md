@@ -307,7 +307,7 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - Slacken UX-Norge og twitterkontoen @SWatercolour
 
-- #ekte
+- Slack -> ekte
 
 - Daily dose of internet på Youtube. Ev. Ghana says goodbye på reddit.
 
