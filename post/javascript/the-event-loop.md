@@ -27,13 +27,15 @@ As a thought experience, let’s say we are single threaded as well. Therefore, 
 
 <table>
 <tr>
+
 <td>
-<img src="https://i.ibb.co/r4c5FnT/The-recipe-part-1.png" alt="Showing how JS reads the recipe for Christmas dinner" style="width:400px;"/></td>
+<img src="https://i.ibb.co/r4c5FnT/The-recipe-part-1.png" alt="Showing how JS reads the recipe for Christmas dinner" style="width:400px;"/>
+</td>
 
 <td>
 <img src="https://i.ibb.co/3R8yD1Y/The-recipe-part-2.png" alt="Shows how JS execute the first function called" style="width:400px;"/>
-</p>
 </td>
+
 <tr>
 <table>
 
@@ -54,8 +56,15 @@ And this is where the event loop enters the saga. The event loop has one job, pu
 
 <table>
 <tr>
-<td><img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:400px;"/></td
-<td><img src="https://i.ibb.co/pXnrMsR/Passing-from-the-queue-to-the-call-stack.png" alt="Shows how the Event loop pushes the function back onto the stack" style="width:400px;"/></td>
+
+<td>
+<img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:400px;"/>
+</td>
+
+<td>
+<img src="https://i.ibb.co/pXnrMsR/Passing-from-the-queue-to-the-call-stack.png" alt="Shows how the Event loop pushes the function back onto the stack" style="width:400px;"/>
+</td>
+
 </tr>
 </table>
 
