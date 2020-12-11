@@ -36,7 +36,8 @@ and HTTP request, among others. The stack won't take the task out of the stack b
 
 ## The oven event
 So, now we know that JavaScript can handle multiple events by using the features provided by the Web API. For simplicity we will only focus on the cooking, and then we can think of the oven as the Web API. We’re prepping the ribbe, using all our capacity on the seasoning. When the seasoning is done we’ll put the ribbe in the oven letting it cook for 3 hours. This action ``cookRibbe`` will invoke the ``setTimeout`` function, illustrated by the oven letting us know the ribbe is done. 
-<img src="https://i.ibb.co/sqMgx8v/Passing-function-to-Web-Api.png" alt="Showing how the call stack pushes the setTimout function onto the Web API" style="width:450px;"/>
+
+<img src="https://i.ibb.co/sqMgx8v/Passing-function-to-Web-Api.png" alt="Showing how the call stack pushes the setTimout function onto the Web API" style="width:500px;"/>
 
 When the ribbe is done, we can push the callback back on the call stack for execution. Although it sounds simple, this is where it gets a tad more complicated. The Web API is not allowed to push the callback straight back on the call stack. Why? Remember when we talked about JS being single threaded? Yeah... it’s still a thing. Therefore the Web API pushes the callback onto the queue. 
 
@@ -51,7 +52,7 @@ And this is where the event loop enters the saga. The event loop has one job, pu
 
 **Sadly, it’s always a twist.** Most likely you are busy mashing potatoes, and are not able to take the ribbe out of the oven right away when it’s done 😬. The ribbe will then sit in the oven until your hands are free and you can take it out. And if you already have the queue stacked up with stuffing sausage or setting the table, the callback will be pushed to the back of the queue. There it might wait, in this example, for hours. In the browser, for minutes. 
 
-<img src="https://i.ibb.co/tC7k7Bw/Full-stack-and-queue.png" alt="Shows how function is pushed on to the last place in the queue" style="width:400px;"/>
+<img src="https://i.ibb.co/tC7k7Bw/Full-stack-and-queue.png" alt="Shows how function is pushed on to the last place in the queue" style="width:500px;"/>
 
 When the stack is cleared and the queue is empty, then the task can be executed. Hopefully the ribbe did not have to wait for hours in the oven and you’ll be the family hero. But if the queue is full, the ribbe will be burned. Let’s just hope JustEat delivers on Christmas Eve. 
 
