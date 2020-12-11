@@ -93,7 +93,9 @@ Now we get to the part that *always* trips me up. Always. Because in theory, thi
 }
 ```
 
-Huzzah! We have a map! 
+Huzzah! We have an empty map! 
+
+<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?" scrolling="no" style="width:100%; height: 400px; border: 0; overflow:hidden;"></iframe>
 
 ## The hot chocolate favorites
 
@@ -204,10 +206,10 @@ And the CSS for the icon in `App.css`:
 
 And then we're done. Let's look at our finished map.
 
-<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?#show-markers"></iframe>
+<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?#show-markers" scrolling="no" style="width:100%; height: 500px; border: 0; overflow:hidden;"></iframe>
 
 ## End notes
 
-In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props or hooks.
+In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props or hooks. And the different TypeScript @types dependencies would also normally be added as developer dependencies.
 
 Thank you for following along, I hope you enjoyed this seasonally appropriate map. ☕
