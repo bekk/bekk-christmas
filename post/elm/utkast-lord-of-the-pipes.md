@@ -82,7 +82,7 @@ tup number =
 
 ## Going deep
 
-\|> is one of Elm’s operators. Like + it’s an infix operator which gets its two *operands* from either side. + adds the left and right operand together. As you will learn more about in coming days, + and all other operators are functions in Elm. This is the type signature for +
+\|> is one of Elm’s operators. Like +, it’s an infix operator which gets its two *operands* from either side. + adds the left and right operand together. As you will learn more about in coming days, + and all other operators are functions in Elm. This is the type signature for +
 
 `(+) : number -> number -> number`
 
@@ -90,4 +90,4 @@ tup number =
 
 `(|>) : a -> (a -> b) -> b`
 
-This signature tells us that the left operand (first argument) is an `a` value, the second operand is something that changes an `a` value into a `b` value, and the result is a `b`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. I also find that the compiler became far more helpful when I started to understand the type signatures of the functions I tried to pipe things into.
+This signature tells us that the left operand (first argument) is an `a` value, the second operand is something that changes an `a` value into a `b` value, and the result is a `b`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. In my experience the compiler becomes even more helpful with a basic understanding of what type each side of the pipe is expected to have.
