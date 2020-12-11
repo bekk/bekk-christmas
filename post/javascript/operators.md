@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 12
 title: Smooth Operators
-image: https://images.unsplash.com/photo-1573486433811-a9eb5b1688a1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1836&q=80
+image: https://images.unsplash.com/photo-1573486433811-a9eb5b1688a1
 ingress: Provided I didn't miscount (I am not the [Count von
   Count](https://www.youtube.com/watch?v=2AoxCkySv34&ab_channel=SesameStreet),
   so it's quite possible), there are 46 operators in JavaScript which are
@@ -92,10 +92,8 @@ This operator only returns the right operand if the left operand is nullish, and
 
 ## What's Yet to Come
 
-Those of you who have been following this Christmas calendar since December 1st have already read about the *logical assignment operator* a couple of days ago. You haven't? Then have a look at the [article about this and otnerh new features in ES2021](LINK TO ARTICLE)!
+Those of you who have been following this Christmas calendar since December 1st have already read about the *logical assignment operator* a couple of days ago. You haven't? Then have a look at the [article about this and other new features in ES2021](https://javascript.christmas/2020/7)!
 
-This is however not the final operator that will be added. We were writing about the [*pipeline operator*](https://javascript.christmas/2018/12) exactly two years ago while it was still a stage 1 proposal. And guess what, it still is. Things take time in the JavaScript world, but one day it will make your life as a JavaScript developer a little bit easier!
+This is however not the final operator that will be added. We were writing about the [*pipeline operator*](https://javascript.christmas/2018/12) exactly two years ago while it was still a stage 1 proposal. And guess what, it still is! Things take time in the JavaScript world, but one day it will make your life as a JavaScript developer a little bit easier!
 
-But this is not the last operator to be added. Exactly two years ago we wrote about the "pipeline operator" when it was a stage 1 proposal. Well, it still is. 
-
-If you want to learn more about all the other 44 operators in JavaScript, you should have a look at this amazing [Operator Lookup](https://joshwcomeau.com/operator-lookup/). 
+This article sums up two of the 46 operators in Javascript. If you want to learn more about the remaining 44, you should have a look at this amazing [Operator Lookup](https://joshwcomeau.com/operator-lookup/).
