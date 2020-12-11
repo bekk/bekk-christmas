@@ -15,4 +15,55 @@ links:
 authors:
   - Robin Heggelund Hansen
 ---
-TODO
+Now that you know about ports you might be wondering how you'd make use of them in an actual application. For the sake of this article, lets pretend that we're going to implement a todo application. We dont't want our todos to dissapear every time you leave the application, so we've decided to write a little bit of javascript to store our todos in local storage:
+
+```javascript
+function getTodos() {
+    return JSON.parse(localStorage.get('todos') || '{}');
+}
+
+function saveTodo(text) {
+    const id = JSON.parse(localStorage.get('index') || '0') + 1;
+    const todos = getTodos();
+
+    todos[id] = { 'id': id, 'text': text };
+
+    localStorage.put('index', id);
+    localStorage.put('todos', JSON.stringify(todos));
+}
+
+function deleteTodoById(id) {
+    const todos = getTodos();
+    delete todos[id];
+    localStorage.put('todos', JSON.stringify(todos));
+}
+```
+
+To access this code from the Elm side of our application, we'll need to use ports. One way to wrap this javascript code looks like this:
+
+```javascript
+import { Elm } from 'Main.elm';
+
+const app = Elm.Main.init({});
+
+app.ports.getTodos.subscribe(() => {
+    const todos = getTodos();
+    app.ports.getTodosComplete.send(todos);
+});
+
+app.ports.saveTodo.subscribe((text) => {
+    saveTodo(text);
+    app.ports.saveTodoComplete.send([]);
+});
+
+app.ports.deleteTodoById.subscribe((id) => {
+    deleteTodoById(id);
+    app.ports.deleteTodoByIdComplete.send([]);
+});
+```
+
+And on the Elm side of our code:
+
+```elm
+
+```
