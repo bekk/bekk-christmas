@@ -23,10 +23,11 @@ The main way ransomware gets installed on your computer is through [phishing](ht
 ## Social engineering – reduce the people factor
 
 1.	Do not click on any links that are not verified. These can come through a seemingly legit email or website. Downloads will usually start as soon as you click on a link, so use extra caution, and if in doubt do not click on it. 
-2.	Do not open email attachments from untrusted sources. Also, be aware that some phishing attacks are highly specialized and could be adapted for you specifically or the company you work in (so-called spear phishing). One tip is to use the show file extensions feature to see if any attachments are executable, e.g. ending in “.exe”. If so, do not open it. 
-3.	Only download from verified websites. Browsers will give an indication if the site is secure, usually in the form of a lock symbol or a shield. Also, make sure the site uses HTTPS instead of HTTP to ensure secure encryption of requests and responses. 
-4.	Be careful not to share personal information. Criminals may use this information to send personalized emails specifically to you, increasing the likelihood of doing what they ask of you. 
-5.	For companies, provide training for employees so that they can recognize malicious emails and phishing attempts more easily. 
+2.	Do not open email attachments from untrusted sources. Also, be aware that some phishing attacks are highly specialized and could be adapted for you specifically or the company you work in (so-called spear phishing). One tip is to use the show file extensions feature to see if any attachments are executable, e.g. ending in .bat, .sh, .dmg, or .exe. If so, do not open it. 
+3. If an colleague sends a genuine email that looks like phishing, let them know so that the culture for writing good a proper emails will improve in your company. 
+4.	Use caution when downloading from websites. Browsers will give an indication if the site is verified, usually in the form of a lock symbol or a shield. However, even verified websites may have security vulnerabilities or may even be phishing sites, so it is still necessary to exercise caution. Also, make sure the site uses HTTPS instead of HTTP to ensure secure encryption of requests and responses. 
+5.	Be careful not to share personal information. Criminals may use this information to send personalized emails specifically to you, increasing the likelihood of doing what they ask of you. 
+6.	For companies, provide training for employees so that they can recognize malicious emails and phishing attempts more easily. 
 
 Ransomware can also exploit technological vulnerabilities. There are a few dos and don’ts to make sure your technological routines are up to scratch. 
 
