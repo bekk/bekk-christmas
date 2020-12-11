@@ -58,7 +58,7 @@ And this is where the event loop enters the saga. The event loop has one job, pu
 <tr>
 
 <td style="border: inherit">
-<img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:400px;"/>
+<img src="https://i.ibb.co/sm9FwQJ/Passing-to-the-queue.png" alt="Showing how the Web API pushes the function onto the queue" style="width:410px;"/>
 </td>
 
 <td style="border: inherit">
