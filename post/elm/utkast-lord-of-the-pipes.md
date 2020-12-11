@@ -6,8 +6,7 @@ title: Lord of the pipes
 image: https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=2000&h=800&fit=crop
 ingress: If the bulk of your programming experience comes from C-like languages,
   there’s a chance you find pipes, `|>`and `<|` some of the most distinct
-  features of Elm. Fold up your heels and dig your sleeves in, it's time to
-  master the art of piping.
+  features of Elm. Roll up your sleeves, it's time to master the art of piping.
 authors:
   - Jørgen Tu Sveli
 ---
@@ -52,7 +51,7 @@ nFirstSquaresSum n =
     |> List.sum 
 ```
 
-While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.* 
+The former requires us to parse the parens, to spot the order of the statements. The latter variant instantly reveals the different steps in perfect order. It forms a *pipeline.* 
 
 The backwards pipe, `<|` *can* be used to express the same sequence of calls as its brother `|>`. Rewriting the example above with the same formatting, would put `List.sum` first and on a line of its own. This is confusing since in reality it is the last function called. Reformatted, this would become:
 
@@ -80,8 +79,6 @@ tup number =
             3 -> "three"
             _ -> "something else"
 ```
-
-
 
 ## Going deep
 
