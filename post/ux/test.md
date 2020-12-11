@@ -78,7 +78,7 @@ ingress: "Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp
   hjemmekontor det, på godt og vondt. Dette handler derimot mest om det som var
   godt! "
 authors:
-  - Mange mange nisser i Bekk 🎅 🤶
+  - Mange nisser i Bekk 🎅 🤶
 ---
 ## To sprøsmål som kommer til å definere 2020 
 
