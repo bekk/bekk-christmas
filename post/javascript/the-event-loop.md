@@ -23,7 +23,7 @@ The star of the Christmas dinner, for many Norwegian families, is the Christmas 
 
 **First thing first,**  JavaScript is single-threaded. Which means it can only run one task at a time. Most of the time this is totally fine, but if the task takes more than a second, let's say one minute... then we have a problem, since JavaScript then waits for the response before it continues with the rest of the tasks. If you’re new to JavaScript you might not see the problem with this. However, as a consumer of the internet you’ve probably been frustrated by a frozen browser, that may have been caused by this problem. Because when JavaScript is frozen, then the UI is frozen, and we do not want that ❌. 
 
-As a thought experience, let’s say we are single threaded as well. Therefore, when we read the recipe for the Christmas dinner, we read the recipe from top to bottom, executing tasks as we go. 
+As a thought experiment, let’s say we are single threaded as well. Therefore, when we read the recipe for the Christmas dinner, we read the recipe from top to bottom, executing tasks as we go. 
 
 <table>
 <tr>
