@@ -49,7 +49,7 @@ Since Argo CD itself runs on Kubernetes, it's quite easy to setup and works perf
 
 To test Argo CD with K3s on macOS, the easiest way is to run a single-node cluster via Docker and k3d. First, install k3d with [Homebrew](https://brew.sh/index_nb):
 
-```shell
+```sh
 $ brew install k3d
 ```
 
