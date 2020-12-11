@@ -72,11 +72,14 @@ calendar: ux
 post_year: 2020
 post_day: 12
 title: Litt av hvert fra 2020
-ingress: "Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp
-  på avdelingen. Det førte til denne luken som skal dele erfaring fra til sammen
-  6560 dager, eller 49200 timer med designere på hjemmekontor. Det er mye
-  hjemmekontor det, på godt og vondt. Dette handler derimot mest om det som var
-  godt! "
+ingress: >-
+  Jeg dristet meg til å sende ut et skjema for å ta en liten jule-temp på
+  avdelingen. Det førte til denne luken som deler erfaring fra til sammen 6560
+  dager(49200 timer) med designere på hjemmekontor. Det er mye hjemmekontor det,
+  på godt og vondt. Her handler det mest om det som var godt! 
+
+
+  Obs! Dette er en luke laget for å skrolle seg gjennom og kose seg med hva folk har delt. Så ikke hegn deg opp i at det står mange minutter! 
 authors:
   - Mange nisser i Bekk 🎅 🤶
 ---
