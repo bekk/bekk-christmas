@@ -8,13 +8,13 @@ ingress: ""
 authors:
   - Simen Sæther Jørgensen
 ---
-![Endringsmotstand](/assets/Endring1.png)
+![Endringsmotstand](/assets/endring1.jpg)
 
 Ved enhver endringsprosess vil man som initiativtaker ofte oppleve negative tanker, følelser og oppførsel mot endringsinitiativ fra enkeltpersoner eller ulike grupper i organisasjonen. Det oppstår med andre ord endringsmotstand som kompliserer, krever uforutsette ressurser og reduserer fremgangen.
 
 Noen typiske årsaker til endringsmotstand er:
 
-![Årsaker til endringsmotstand](/assets/Endring2.png)
+![Årsaker til endringsmotstand](/assets/endring2.jpg)
 
 ### Ja, endringsmotstand er en ressurs
 
