@@ -62,8 +62,33 @@ app.ports.deleteTodoById.subscribe((id) => {
 });
 ```
 
-And on the Elm side of our code:
+And on the Elm side of our code we need to define our ports:
 
 ```elm
+port getTodos : () -> Cmd msg
+port getTodosComplete : (Json.Encode.Value -> msg) -> Sub msg
 
+port saveTodo : String -> Cmd msg
+port saveTodoComplete : (() -> msg) -> Sub msg
+
+port deleteTodoById : Int -> Cmd msg
+port deleteTodoByIdComplete : (() -> msg) -> Sub msg
 ```
+
+For the sake of brevity, I'll leave out the Elm code which shows the actual implementation. We should have covered that in the past two days.
+
+While this works, you're probably thinking that this is _a lot_ of work for wrapping three functions. Is this really how javascript interop is supposed to work?
+
+The answer to that is yes, and no. Yes, all javascript integration is supposed to happen through ports but no, it's not supposed to be this much work. What we need to do is to think a bit differently about how we should interop with our javascript code. Instead of wrapping each and every function, what should do instead is to treat javascript as a service. A service with a well defined API, and which responds by sending us messages about important things.
+
+Take a look at the javascript code again. Is it really important to get a message each time one function has successfully run? Probably not. In fact, the only thing we really care about is the state of our todos. A better setup of ports is:
+
+```elm
+port loadTodos : () -> Cmd msg
+port saveTodo : String -> Cmd msg
+port deleteTodoById : Int -> Cmd msg
+
+port todosUpdated : (Json.Encode.Value -> msg) -> Sub msg
+```
+
+E
