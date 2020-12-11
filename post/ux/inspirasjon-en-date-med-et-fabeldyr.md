@@ -43,7 +43,7 @@ Det viser seg at inspirasjon og kreativitet er vanskelig å se forekomme i hjern
 
 >  “It is hard to believe that creative behavior, in all its manifestations, from carrying out exquisitely choreographed dance moves, to scientific discovery, constructing poems, and coming up with ingenious ideas of what to do with a brick, engages a common set of brain areas or depends on a limited set of mental processes”
 
-Fra dette kan vi forstå at kreativitet og inspirasjon er komplekse konstellasjoner, alltid i bevegelse og vaskelige å måle med apparater. Hørt den gamle floskelen om at «kreativ tenkning, jo, det skjer i høyre hjernehalvdel det!», hm? Den tror jeg du trygt kan legge død. 
+Fra dette kan vi forstå at kreativitet og inspirasjon er komplekse konstellasjoner, alltid i bevegelse og vanskelige å måle med apparater. Hørt den gamle floskelen om at «kreativ tenkning, jo, det skjer i høyre hjernehalvdel det!», hm? Den tror jeg du trygt kan legge død. 
 
 Men der måleinstrumentene til nevroforskere har hatt utfordringer (vel å merke tror de ikke det er umulig å måle, de har bare ikke løst det ennå), har psykologien hatt mer hell. Og det med metoder kanskje gjennkjennbare for dere som har drevet med innsiktsarbeid for eksempel. Intervjuer, kontrollerte «brukertester», selv-rapportering og andre forsøk der en f.eks ser på hva som kjennetegner noen som ofte blir inspirert, eller leverer kreativitet ofte, har fremmet en betydelig mengde kunnskap. 
 
