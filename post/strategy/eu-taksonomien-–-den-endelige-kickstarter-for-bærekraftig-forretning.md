@@ -61,23 +61,28 @@ Ettersom eierskapet til inntektsstrømmer og investeringer er distribuert rundt 
 
 Dette vil kreve store omstillinger internt i de aller fleste virksomheter, og tiden er knapp. Da lønner det seg å begynne forberedelsene allerede nå.
 
-![]()
+![](/assets/photo-1558540473-0f25bba817e1.jpeg)
 
 ## Dette er det du bør gjøre:
 
 ### 1. Identifiser hvilke krav som påvirker din bransje og ditt selskap spesifikt
+
 Det første du bør gå i gang med, er å sette deg inn i hvilke bransjer din virksomhet omfattes av, i henhold til taksonomiens definisjoner. Videre må du identifisere hvilke tekniske krav som stilles til bedriftens aktiviteter for å kunne defineres som bærekraftig. 
 
 ### 2. Kartlegg nåsituasjonen
+
 Med kravene som utgangspunkt, bør du kartlegge nåsituasjonen for alle dine inntektsstrømmer og investeringer, både kapitalkostnader (capex) og driftskostnader (opex). Det høres kanskje ut som et omfattende arbeid, og det kommer det også til å være. Her vil man være helt avhengig av å legge en god plan for arbeidet, foreta gode prioriteringer, og starte med det viktigste. Ettersom det er et nytt klassifiseringssystem, og bedriften din nødvendigvis ikke har gjort vurderingene før, vil øvelsen være krevende, men likevel nødvendig. 
 
 ### 3. Definer målbilde og strategi
+
 Ettersom kartlegging av nåsituasjon kan være et omfattende arbeid, bør startpunktet være å definere en tydelig strategi og et målbilde for bærekraft i selskapet. Hvor ønsker bedriften din å legge ambisjonsnivået? Taksonomien setter noen minimumskrav som må tilfredsstilles, men ønsker man å legge seg på dette nivået, eller ønsker man å innta en mer ledende posisjon? Minimumskravene vil fort bli hygienefaktorer i markedet for bærekraftig finans, og det kan gi et konkurransefortrinn dersom man forplikter seg til et mer ambisiøst målbilde. 
 
 ### 4. Kartlegg gapet
+
 Når nåsituasjonen og målbildet er på plass, bør man identifisere gapet som på sikt må tettes. Innenfor noen områder kan man ligge godt an, mens på andre områder har man kanskje en lengre vei å gå. Det er viktig å presisere at taksonomien ikke krever at alle økonomiske aktiviteter er bærekraftige. Den sier bare at dersom du ønsker å klassifisere den som bærekraftig, må den oppfylle taksonomiens krav. Det betyr også at gapet ikke nødvendigvis må tettes i sin helhet. Strategien og målbildet vil derfor være et essensielt fundament for å identifisere hvilke gap som skal tettes.
 
-### 5. Utforme tiltak som forankres i hele organisasjonen 
+### 5. Utforme tiltak som forankres i hele organisasjonen
+
 Med et grunnleggende kartleggingsarbeid i bunn, og en tydelig ambisjon som beskriver hvor bærekraftig selskapet skal være, er tiden kommet for å lage en tydelig plan for hvordan virksomheten skal jobbe seg mot målbildet som er definert. Her vil systematiske målstyringsverktøy, eksempelvis OKR, kunne være svært nyttig. På denne måten vil man få forankret og operasjonalisert strategien på alle nivå, slik man er omforent om hvor man skal og hva som skal til for å nå målbildet. Og det er her jobben starter. 
 
 Det helt sikkert at EU-Taksonomien vil komme i stor fart inn i næringslivet. Det er forventet at den vil utvikles over tid, og at skruene strammes til etter hvert som den forankres godt i hele det globale næringslivet. Stegene som er beskrevet ovenfor er på mange måter en stor engangsøvelse i implementeringsfasen, men rapporteringsplikten vil vedvare. Det samme vil markedskreftene i finansmarkedene og blant kundene, og disse vil mest sannsynlig belønne de som lykkes. 
