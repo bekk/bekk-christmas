@@ -25,9 +25,17 @@ The star of the Christmas dinner, for many Norwegian families, is the Christmas 
 
 As a thought experience, let’s say we are single threaded as well. Therefore, when we read the recipe for the Christmas dinner, we read the recipe from top to bottom, executing tasks as we go. 
 
-<p float="left">
-<img src="https://i.ibb.co/r4c5FnT/The-recipe-part-1.png" alt="Showing how JS reads the recipe for Christmas dinner" style="width:400px;  display: flex"/><img src="https://i.ibb.co/3R8yD1Y/The-recipe-part-2.png" alt="Shows how JS execute the first function called" style="width:400px;"/>
+<table>
+<tr>
+<td>
+<img src="https://i.ibb.co/r4c5FnT/The-recipe-part-1.png" alt="Showing how JS reads the recipe for Christmas dinner" style="width:400px;"/></td>
+
+<td>
+<img src="https://i.ibb.co/3R8yD1Y/The-recipe-part-2.png" alt="Shows how JS execute the first function called" style="width:400px;"/>
 </p>
+</td>
+<tr>
+<table>
 
 On this Christmas dinner recipe, the preparation and cooking of the ribbe is first on the list. So we start there, with the first task, seasoning. This should be done 3 days beforehand, and then the ribbe shall cook for 3 hours on Christmas Eve. If we could only execute one task at the time then all the other cooking, sausages or potatoes, would have to wait until the ribbe is done. By that logic, good luck impressing your family with an elegant delicious dinner. And just imagine if ribbe was the last task on the recipe, then your family would eat ribbe 3 days after the rest of the dinner 😱 Luckily, we’re not single threaded, the same goes for JavaScript... in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
 
