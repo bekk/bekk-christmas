@@ -91,6 +91,6 @@ This operator only returns the right operand if the left operand is nullish, and
 
 Those of you who have been following this Christmas calendar since December 1st have already read about the *logical assignment operator* a couple of days ago. You haven't? Then have a look at the [article about this and other new features in ES2021](https://javascript.christmas/2020/7)!
 
-This is however not the last operator to be added. We were writing about the [*pipeline operator*](https://javascript.christmas/2018/12) exactly two years ago while it was still a stage 1 proposal. And guess what, it still is! In the JavaScript world, everything takes its time. Someday, though, it will make your life as a JavaScript developer a little easier.
+This is however not the last operator to be added. We were writing about the [pipeline operator](https://javascript.christmas/2018/12) exactly two years ago while it was still a stage 1 proposal. And guess what, it still is! In the JavaScript world, everything takes its time. Someday, though, it will make your life as a JavaScript developer a little easier.
 
 This article summarized the two most recent of the 46 operators in Javascript. If you want to learn more about the remaining 44, you should take a look at this amazing [Operator Lookup](https://joshwcomeau.com/operator-lookup/).
