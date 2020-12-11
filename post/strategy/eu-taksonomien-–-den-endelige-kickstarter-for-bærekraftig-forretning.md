@@ -23,7 +23,7 @@ EU-Taksonomien er en del av EU-kommisjonens [handlingsplan](https://ec.europa.eu
 
 Bærekraftbegrepet vil som sådan gjennomgå en renselsesprosess, der bedrifters forsøk på grønnvasking ikke lenger vil være tilstrekkelig. Det bedrifter foretar seg av inntektsgivende aktiviteter og investeringer må oppfylle tre overordnede krav for å bli ansett som bærekraftige: 
 
-1. **Aktiviteten må oppfylle minst ett av EUs seks miljømål, vurdert etter bestemte krav:**
+1. ### Aktiviteten må oppfylle minst ett av EUs seks miljømål, vurdert etter bestemte krav:
 
    a. Begrensinger av klimaendringer
 
@@ -37,9 +37,9 @@ Bærekraftbegrepet vil som sådan gjennomgå en renselsesprosess, der bedrifters
 
    f. Beskyttelse og rehabilitering av biologisk mangfold og økosystemer
 
-2. **Aktiviteten kan ikke gjøre vesentlig skade på noen av de øvrige fem miljømålene, vurdert etter et sett med kriterier.**
+2. ### Aktiviteten kan ikke gjøre vesentlig skade på noen av de øvrige fem miljømålene, vurdert etter et sett med kriterier.
 
-3. **Aktiviteten må oppfylle sosiale minimumsstandarder basert på FNs prinsipper for næringsliv og menneskerettigheter, OECDs retningslinjer for flernasjonale selskaper og ILO-konvensjoner.**
+3. ### Aktiviteten må oppfylle sosiale minimumsstandarder basert på FNs prinsipper for næringsliv og menneskerettigheter, OECDs retningslinjer for flernasjonale selskaper og ILO-konvensjoner.
 
 I første omgang, har EU prioritert å utvikle tekniske krav for de bransjene som har størst påvirkning på klimagassutslippene per i dag. Dette er 1) land- og jordbruk, 2) industri, 3) elektrisitet, gass, damp og varmtvannsforsyning, 4) vannforsyning, avløps- og renovasjonsvirksomhet, 5) transport og lagring, 6) informasjon og kommunikasjon, 7) bygg og anlegg, 8) forsikringstjenester og 9) ingeniørtjenester.
 
