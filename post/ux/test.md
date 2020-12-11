@@ -351,7 +351,9 @@ Bruke frames og components i Figma, Holde workshop i Miro, Bruke Github, Sjekke 
 
 - Alt om selvfølelsen. Vi alle trenger en god selvutvikling, ha fokus på en selv, slik at man har det bra med seg selv.
 
----
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 ## Og til slutt noe random som folk hadde lyst til å dele: 
 
 - https://gfx.nrk.no/vqfXhsgyWZvEljSMdT1lcQLTVQQJDHHfdA_Lfx7GmoFw.jpg
