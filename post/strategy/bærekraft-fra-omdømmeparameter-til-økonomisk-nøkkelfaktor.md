@@ -4,11 +4,13 @@ post_year: 2020
 post_day: 17
 title: Bærekraft; fra omdømmeparameter til økonomisk nøkkelfaktor?
 image: https://images.unsplash.com/photo-1578604665675-9aee692f6ddc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2303&q=80
-ingress: "Den siste tiden har vi sett stadig økende forventinger til at
-  bedrifter skal ta samfunnsansvar og bidra til åpenhet knyttet til bærekraft. "
+ingress: Den siste tiden har vi sett stadig økende forventinger til at bedrifter
+  skal ta samfunnsansvar og bidra til åpenhet knyttet til bærekraft. Gode
+  intensjoner blir ikke lenger betraktet som tilstrekkelig, og dermed har
+  bærekraft blitt mye mer enn en omdømmeparameter eller en kuriositet på utsiden
+  av kjernedriften. Dette betyr at bærekraft i større og større grad utvikler
+  seg til å bli en økonomisk nøkkelfaktor som begynner å gi utslag på bunnlinja.
 ---
-Gode intensjoner blir ikke lenger betraktet som tilstrekkelig, og dermed har bærekraft blitt mye mer enn en omdømmeparameter eller en kuriositet på utsiden av kjernedriften. Dette betyr at bærekraft i større og større grad utvikler seg til å bli en økonomisk nøkkelfaktor som begynner å gi utslag på bunnlinja.
-
 ## Bærekraft som risikodriver
 
 Bærekraft er et tema som blir aktualisert og løftet frem av en rekke ulike interessenter. Blant disse finner man investorer og bedriftseiere. De begynner å fatte interesse for bærekraft som en investering og vekstdriver, ikke bare et spørsmål om ansvarlighet og samfunnsansvar. Investorer krever gjerne høyere avkastning på virksomheter med betydelig negativ miljøpåvirkning fordi denne typen investeringer bærer en høyere risiko. Som et eksempel, snakker finansbransjen om ESG-investeringer (forkortelse av *Environmental, Social and Governance*). Her blir bærekraft vurdert med utgangspunkt i bedriftens rapportering av bl.a. klimarisiko og -utslipp, og dermed blir disse parameterne viktige investeringskriterier. Finansmarkedet viser at ESG-investeringer får lavere avkastningskrav, og at investorer systematisk betaler et prispremium for aksjer i slike selskaper. Dette betyr at virksomheter som tar bærekraft alvorlig, og iverksetter konkrete tiltak for å bevege seg i en mer bærekraftig retning, blir belønnet med høyere selskapsverdi. 
