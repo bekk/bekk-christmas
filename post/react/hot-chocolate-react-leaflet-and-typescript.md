@@ -23,7 +23,7 @@ But before I present my top three list, let's make the React Leaflet map.
 
 ## Setup
 
-This will be a React project written in Typescript, requiring Node version 10 or up and NPM version 5.2.0 or higher (since we’ll be using npx). I'll be using `create-react-app` to set up our barebones React app, and will add the flag `--template typescript` to make it Typescript-based:
+This will be a React project written in TypeScript, requiring Node version 10 or up and NPM version 5.2.0 or higher (since we’ll be using npx). I'll be using `create-react-app` to set up our barebones React app, and will add the flag `--template typescript` to make it Typescript-based:
 
 `npx create-react-app hot-chocolate-map --template typescript`
 
@@ -31,7 +31,7 @@ We'll also need some NPM packages, so navigate into our newly created applicatio
 
 `cd hot-chocolate-map && npm install leaflet react-leaflet @types/leaflet --save`
 
-My personal preference is to make some additional folders in our project structure. A `components` folder for our React components and a `domain` folder for any custom Typescript types. Did you know you can make multiple new folders by typing in multiple folder names to `mkdir`?
+My personal preference is to make some additional folders in our project structure. A `components` folder for our React components and a `domain` folder for any custom TypeScript types. Did you know you can make multiple new folders by typing in multiple folder names to `mkdir`?
 
 `mkdir src/components src/domain`
 
@@ -97,7 +97,7 @@ Huzzah! We have a map!
 
 ## The hot chocolate favorites
 
-Let's have a look at my list of favorite hot chocolate places, how to make them into a Typescript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
+Let's have a look at my list of favorite hot chocolate places, how to make them into a TypeScript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
 
 1. 🥇Varm belgisk sjokolade (Belgian Hot Chocolate) at Steam kaffebar
 2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
@@ -105,7 +105,7 @@ Let's have a look at my list of favorite hot chocolate places, how to make them 
 
 Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience.
 
-Now onto the markers. To make these into a custom Typescript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
+Now onto the markers. To make these into a custom TypeScript type, we need to systemize the information. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field. Create a new file `domain.ts` inside our `domain` folder and add the following `HotChocolate` type definition:
 
 ```typescript
 export interface HotChocolate {
