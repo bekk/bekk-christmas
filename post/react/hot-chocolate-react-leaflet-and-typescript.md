@@ -95,7 +95,7 @@ Now we get to the part that *always* trips me up. Always. Because in theory, thi
 
 Huzzah! We have an empty map! 
 
-<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?" scrolling="no" style="width:100%; height: 400px; border: 0; overflow:hidden;"></iframe>
+<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?" scrolling="no" style="width:100%; height: 400px; border: 1px solid #f0f0f0; overflow:hidden;"></iframe>
 
 ## The hot chocolate favorites
 
@@ -206,7 +206,7 @@ And the CSS for the icon in `App.css`:
 
 And then we're done. Let's look at our finished map.
 
-<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?#show-markers" scrolling="no" style="width:100%; height: 500px; border: 0; overflow:hidden;"></iframe>
+<iframe src="https://hanneolsen.github.io/example-map-react-leaflet/?#show-markers" scrolling="no" style="width:100%; height: 400px; border: 1px solid #f0f0f0; overflow:hidden;"></iframe>
 
 ## End notes
 
