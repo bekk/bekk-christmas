@@ -48,7 +48,7 @@ import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import React from "react";
 
 export default function FavoritesMap() {
-    // Default coordinates set to Oslo Sentral station
+    // Default coordinates set to Oslo central station
     const position : LatLngExpression = [59.91174337077401, 10.750425582038146];
     const zoom : number = 15;
 
