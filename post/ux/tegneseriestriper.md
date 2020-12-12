@@ -25,12 +25,14 @@ authors:
 
 ![](/assets/dyskord.png "Dyskord")
 
+![Tegning av julenissen og snekker Andersen](/assets/mjuta.png "Du er mjuta, Andersen! ")
+
 ![](/assets/dissedager.png "I disse dager")
 
 ![](/assets/hårete-mål_tekst-1.png "Hårete mål ")
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
 
-##### Klarer du å gjette hvilket ord eller uttrykk som står bak disse?
+Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer du å gjette hva tegningen betyr?
 
 ![](/assets/gjettordet.png "Gjett ordet")
