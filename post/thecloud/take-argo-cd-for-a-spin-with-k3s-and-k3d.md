@@ -213,3 +213,5 @@ $ k3d cluster delete laptop
 When writing this article I went in total flux over whether to write "k3s", or "K3s" with a capital K. To find out, I reached out to the main author on Twitter, Darren Shepherd and asked him. The answer was quite amusing, I recommend reading the following Twitter-thread!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;d like to know too. I always wanted it to be lowercase but when people edit my writing they make it upper case, especially when starting a sentence. So I really have no clue. <a href="https://twitter.com/GuerillaNerd?ref_src=twsrc%5Etfw">@GuerillaNerd</a> do you know?</p>&mdash; Darren Shepherd (@ibuildthecloud) <a href="https://twitter.com/ibuildthecloud/status/1336302197462638599?ref_src=twsrc%5Etfw">December 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Ah, and one more thing: For more, in-depth use of Argo CD, watch out for the 16th.
