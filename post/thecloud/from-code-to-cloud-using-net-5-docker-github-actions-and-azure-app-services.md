@@ -14,19 +14,22 @@ authors:
 This article will look at one solution that utilizes several popular technologies to create a simple CI/CD pipeline for a simple dotnet web app. The finished pipeline is not perfect, but I think it can serve as a good starting point for your application. 
 
 ## Pre-requisites
+
 To do what this article describes, you will need the following:
+
 * [.Net 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * [Docker Desktop (regular Docker if on Linux)](https://docs.docker.com/get-docker/)
 
 I will stick to the command line to keep the article's steps working for all operating systems. 
 
 The full solution is available at these locations:
+
 * [Github](https://github.com/andersro93/dotnet5-docker-demo)
 * [Docker Hub](https://hub.docker.com/repository/docker/andersro93/dotnet5-docker-demo)
 * [Deployed App](https://dotnet5-docker-demo.azurewebsites.net)
 
-
 ## 1. Create a sample application
+
 To keep this as simple as possible, I suggest using one of the default applications that the dotnet cli gives us. The following command creates a new mvc solution in a folder called DockerSample.
 
 ```sh
@@ -41,13 +44,14 @@ dotnet run
 
 Now we should be able to open our browser and see the following on localhost port 5001.
 
-
 ## 2. Adding Docker support to your application
+
 Now that we have a working application, we can make sure the application builds and runs in a Docker container from a Docker image. To create our Docker image, we need to create a Dockerfile. Since Docker is supported by Microsoft, we can use the images they serve as a baseline for our image. We see that Microsoft has several images available that serves our purpose. Namely, SDK and AspNet Runtime. 
 
 We will use the SDK image to build our solution and the AspNet Runtime to run our solution. We are using both instead of just the SDK because the Runtime image is smaller. We want our image to be as small as possible. 
 
 The recipe for creating our image is to understand how the build progress of a typical .Net application work. Typically, we want to the following in the following:
+
 1. Download our dependencies (restore)
 2. Build our solution (build)
 3. Create an artifact of our application (publish)
@@ -122,12 +126,14 @@ ENTRYPOINT ["dotnet", "DockerSample.dll"]
 
 To build our docker image, we run `docker build . --tag dockersample:latest` in our terminal. The build output should look something like this.
 
-[IMAGE]
+![](https://i.imgur.com/f0eH8Lj.png)
 
 Now, to run this image, we run the following command: `docker run -p 8080:80 dockersample:latest .` Notice the `-p 8080:80`, meaning that we will forward our local port 8080 to port 80 in our container. Consequently, we can view our application in our browser at localhost:8080. 
 
+![](https://i.imgur.com/1P9o4oZ.png)
 
 ## 3. Github Actions and pipeline
+
 In the last step, we created a Dockerfile for our project. Moving on, we are going to take some shortcuts. If you want a short introduction to how Github Actions work, you may read [my introduction article](https://andersro93.medium.com/using-github-actions-with-docker-9ba1cc481ae1) that explains the concept in greater detail than here. 
 
 Before we move on, we need to know where we are going to store our 
@@ -173,8 +179,8 @@ As you can see in `main.yml` file, we are creating a workflow with one job that 
 
 Let's dive into the steps in our job. First of all, we checkout our code (fancy word for cloning our git repo). Next, we build and tag the docker image that we configured in the previous section. After that, we log in to our Docker registry before we push our final image in the last step. 
 
-
 ## 4. Creating and configuring our Azure App Service
+
 Now, let's provision our AppService. I assume you are familiar with Azure App Service and its capabilities. We are going to create a Web App that runs on Linux (in a Docker container). If you are using the portal, you should see the following when you create the Web App. 
 
 ![](https://i.imgur.com/xOIE1Kf.png)
@@ -183,4 +189,4 @@ Onward to the Docker tab. We need to configure what Docker image we should use a
 
 ![](https://i.imgur.com/OCGJKwy.png)
 
-We may configure to use that by selecting DockerHub, and then our image name. Hit "Review + create" and Voila! 
+We may configure to use that by selecting DockerHub, and then our image name. Hit "Review + create" and Voila!
