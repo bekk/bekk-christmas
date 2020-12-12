@@ -37,6 +37,8 @@ authors:
 
 ![Tegning av mål og et kamera](/assets/fokusere-på-mållbildet.png "Fokusere på målbildet")
 
+![Tegning av et møterom med pingviner der en viser en brannfakkel](/assets/brannfakkel.png "Brannfakkel!")
+
 ![Tegning av en død mann med en strek over seg – deadline](/assets/deadline.png "Deadline")
 
 ![En skipper som sitter på et hustak](/assets/skippertak.png "Ta et skippertak")
@@ -46,24 +48,5 @@ Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer d
 ![Collage med 6 tegninger der man skal gjette ordet! ](/assets/gjettordet.png "Gjett ordet! ")
 
 Ikke les videre hvis du ikke vil vite fasiten:\  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
 
 1. Hamburger-meny, 2. Dropdown, 3. Radioknapp, 4. Bug, 5. Sticke, 6. Musepeker
