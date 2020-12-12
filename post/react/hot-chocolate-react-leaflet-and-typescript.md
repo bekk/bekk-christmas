@@ -101,8 +101,8 @@ Huzzah! We have an empty map!
 
 Let's have a look at my list of favorite hot chocolate places, how to describe them as a TypeScript type and add them as markers on our map. These are all product names in Norwegian, with an English translation in parentheses.
 
-1. 🥇Varm belgisk sjokolade (Belgian Hot Chocolate) at Steam kaffebar
-2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
+1. 🥇Varm belgisk sjokolade (Belgian hot chocolate) at Steam kaffebar
+2. 🥈Varm sjokolade (Hot chocolate) at Kaffebrenneriet
 3. 🥉Sjokolade på pinne (Hot chocolate on a stick) at Espresso House
 
 Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience. Please note, given the current situation I haven't visited these shops recently. Some menus may have changed.
