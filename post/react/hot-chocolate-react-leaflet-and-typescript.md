@@ -211,6 +211,6 @@ And then we're done. Let's look at our finished map.
 
 ## End notes
 
-In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props or hooks. And the different TypeScript @types dependencies would also normally be added as developer dependencies.
+In the spirit of keeping it simple I’ve taken some shortcuts here. For instance, in a real world application one might need the favorites list for more than just displaying it on a map. Defining it in `App.tsx` would make more sense and passing it into components as needed with props or hooks. And the different TypeScript `@types` dependencies would also normally be added as developer dependencies.
 
-Thank you for following along, I hope you enjoyed this seasonally appropriate map. ☕
+Thank you for following along, I hope you enjoyed this seasonally appropriate map. Happy holidays! ☕
