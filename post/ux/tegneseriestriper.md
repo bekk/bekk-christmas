@@ -29,8 +29,6 @@ authors:
 
 ![Tegning av et hårete mål](/assets/hårete-mål.png "Hårete mål ")
 
-![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
-
 ![Tegning av en mann som tenker utafor boksen](/assets/tenke-utafor-boksen.png "Tenk utafor boksen! ")
 
 ![Tegning av en mann som drar en ball videre](/assets/ta-ballen-videre.png "Ta ballen videre! ")
@@ -41,23 +39,12 @@ authors:
 
 ![Tegning av en død mann med en strek over seg – deadline](/assets/deadline.png "Deadline")
 
-  
+![En skipper som sitter på et hustak](/assets/skippertak.png "Ta et skippertak")
+
 
 Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer du å gjette hva tegningen betyr?
 
 ![Collage med 6 tegninger der man skal gjette ordet! ](/assets/gjettordet.png "Gjett ordet! ")
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
 Ikke les videre hvis du ikke vil vite fasiten: 
 
