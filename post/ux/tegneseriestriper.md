@@ -5,10 +5,11 @@ post_day: 13
 title: Ting du har hørt i møter i år
 image: ""
 ingress: >-
-  I år har vi i faggruppa *Tegning, form og animasjon* hatt som mål å tegne mer.
-  Dagens luke består derfor av et knippe tegninger som visualiserer ting du har
-  hørt i møter i år. 
+  En liten julegave til dere fra oss i faggruppa *Tegning, form og animasjon*.
+  Vi har på hvert vårt hjemmekontor visualisert noen fraser, uttrykk og ting
+  dere har hørt i møter i år.  
 
+  \
 
   Noe til faglig ettertanke, litt som inspirasjon, mest for gøy. God jul 🎅
 links: []
@@ -21,17 +22,17 @@ authors:
 ---
 ![Illustrasjon av skjerm som blir delt i to](/assets/dele-skjerm.png "Dele skjerm")
 
-![Tegning av en gammel hånd](/assets/gammelhånd.png "Gammel hånd")
+![Tegning av en gammel hånd](/assets/gammelhand.png "Gammel hånd")
 
 ![](/assets/dyskord.png "Dyskord")
 
 ![Tegning av julenissen og snekker Andersen](/assets/mjuta.png "Du er mjuta, Andersen! ")
 
-![](/assets/dissedager.png "I disse dager")
+![Tegning av Bart Simpson som skriver "I disse dager" ](/assets/idissedager.png "I disse dager")
 
 ![Tegning av en fot i bakken og bruke hele verktøykassa](/assets/en-fot-i-bakken.png "En fot i bakken")
 
-![](/assets/hårete-mål_tekst-1.png "Hårete mål ")
+![Tegning av et hårete mål](/assets/hårete-mål.png "Hårete mål ")
 
 ![Dette er alt text](/assets/taetskippertak.png "Ta et skippertak")
 
