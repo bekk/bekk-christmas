@@ -16,6 +16,8 @@ links:
     title: Will it cluster? k3s on your Raspberry Pi
   - title: How Rancher Labs’ K3s Makes It Easy to Run Kubernetes at the Edge
     url: https://thenewstack.io/how-rancher-labs-k3s-makes-it-easy-to-run-kubernetes-at-the-edge/
+  - url: https://blog.zeerorg.site/post/k3d-kubernetes-dev-env
+    title: k3d - A fast kubernetes dev environment
 authors:
   - Andreas Mosti
 ---
