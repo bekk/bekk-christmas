@@ -29,7 +29,7 @@ authors:
 
 ![](/assets/dissedager.png "I disse dager")
 
-![](/assets/en-fot-i-bakken.png "En fot i bakken")
+![Tegning av en fot i bakken og bruke hele verktøykassa](/assets/en-fot-i-bakken.png "En fot i bakken")
 
 ![](/assets/hårete-mål_tekst-1.png "Hårete mål ")
 
