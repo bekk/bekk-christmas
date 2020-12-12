@@ -10,7 +10,7 @@ ingress: The container paradigm is upon us, and some love hacking and writing
   computer anyway? In this post we will have a look at how the stripped-down
   Kubernetes variant K3s can be used to take the new hot container continuous
   delivery tool Argo CD for a spin on your own laptop or personal server -
-  without much of the complexety Kubernetes requires.
+  without much of the complexity Kubernetes requires.
 links:
   - url: https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/
     title: Will it cluster? k3s on your Raspberry Pi
@@ -21,35 +21,35 @@ authors:
 ---
 ### Kubernetes: oh so wonderfull, but oh so complex
 
-Ah, Kubernetes. In the fast-paced realm of cloud computing, it seams a long time ago that Kubernetes, or K8s for short, came winning out of [the container orchestrator wars](https://www.seldon.io/hacker-noon-how-did-kubernetes-win-the-container-orchestration-war/). With the amount of hype it's had and it's seeming omnipresent, it's hard to belive that it's just been 3 years since K8s came out winning as the preferred container orchestrator, leaving other products like Docker Swarm and Mesosphere in it's wake.
+Ah, Kubernetes. In the fast-paced realm of cloud computing, it seams a long time ago that Kubernetes, or K8s for short, came winning out of [the container orchestrator wars](https://www.seldon.io/hacker-noon-how-did-kubernetes-win-the-container-orchestration-war/). With the amount of hype it's had and it's seeming omnipresent, it's hard to belive that it's just been 3 years since K8s came out on top as the preferred container orchestrator, leaving other products like Docker Swarm and Mesosphere in it's wake.
 
-The container paradigm hasn't been just smooth sailing. Many adopters have struggled with all the loose parts, [and has suffered lots of critique for it's complexity](https://www.ben-morris.com/do-you-really-need-kubernetes/). Lots of this criticism can be dedicated to projects too small to be using in the first place, surfing on the hype of "all the big players using K8s so we should too", but there is certainly a case to be made for the effort and knowledge going in to managing a cluster. On top of that, doing local development has been a bit clunky, and for some teams managing clusters for thinks like CI can be expensive.
+The container paradigm hasn't been just smooth sailing. Many adopters have struggled with all the loose parts, [and K8s has suffered lots of critique for it's complexity](https://www.ben-morris.com/do-you-really-need-kubernetes/). Lots of this criticism can be dedicated to projects too small to be using it in the first place, surfing on the hype of "all the big players using K8s so we should too", but there is certainly a case to be made for the effort and knowledge going in to managing a cluster. On top of that, doing local development has been a bit clunky, and for some teams, managing clusters for things like CI can be expensive.
 
-Thankfully, there is a solution for those who want to leverage the strengths of deploying applications and services with Kubernetes, but without big parts of the complexity: K3s. That's right, it's K8s - 5 = K3s.
+Thankfully, there is a solution for those who want to leverage the strengths of deploying applications and services declaratively with Kubernetes, but without big parts of the complexity: K3s. That's right, it's K8s - 5 = K3s.
 
 ### K3s and k3d
 
-[K3s is developed by Rancher Labs](https://k3s.io/) and is a Kubernetes built to bring the power of Kubernetes to the edge, IoT devices, local development or for usage in situations where, quote, 
+[K3s is developed by Rancher Labs](https://k3s.io/) and is a Kubernetes flavor built to bring the power of Kubernetes to the edge, IoT devices, local development or for usage in situations where, quote, 
 
 > "Situations where a PhD in K8s clusterology is infeasible".
 
-What does this mean? In practice, K3s is a "full" Kubernetes-compatible system with a single binary under 40Mb in size. Lots of [deprecated or optional parts of K8s has been removed](https://thenewstack.io/how-rancher-labs-k3s-makes-it-easy-to-run-kubernetes-at-the-edge/) to shrink it down, but the biggest differences is the replacement of etcd, the distributed key-value database, with the versatile SQLite database, a favorite among many developers for mobile and embedded solutions. For high availability clusters, SQLite can [optionally be swapped for another database, like MySql or PostgreSQL](https://rancher.com/docs/k3s/latest/en/installation/datastore/).
+What does this mean? In practice, K3s is a "full" Kubernetes-compatible system with a single binary under 40Mb in size. Lots of [deprecated or optional parts of K8s has been removed](https://thenewstack.io/how-rancher-labs-k3s-makes-it-easy-to-run-kubernetes-at-the-edge/) to shrink it down, but the biggest differences is the replacement of etcd, the distributed key-value database, in favor of the versatile SQLite database, a favorite among many developers for mobile and embedded solutions. For high availability clusters, SQLite can [optionally be swapped for another database, like MySql or PostgreSQL](https://rancher.com/docs/k3s/latest/en/installation/datastore/).
 
-Since K3s is designed to be simple and easy to install, it can also be run via Docker (fancy that, a container orchestrator tool that run in a container itself!). This project is, logically, called [k3d](https://k3d.io/). k3d makes it quite simple to run create single- and multi-node K3s clusters locally, as a part of CI systems, etc.
+Since K3s is designed to be simple and easy to install, it can also be run via Docker (fancy that, a container orchestrator tool that run in a container itself!). This project is, logically enough, called [k3d](https://k3d.io/). k3d makes it quite simple to create single- and multi-node K3s clusters locally, on a VM, as a part of CI systems, etc.
 
-To summarize, K3s and K3d removes a lot of the friction and complexity associated with running Kubernetes, making it a good choice for local Kubernetes development, edge computing devices or your local server. Sounds exiting? Let's use K3s to deploy apps with another hot product: The container continuous delivery tool [Argo CD](https://argoproj.github.io/argo-cd/).
+To summarize, K3s and K3d removes a lot of the friction and complexity associated with running Kubernetes, making it a good choice for local Kubernetes development, edge computing devices or your local server. Sounds exiting? Let's use K3s via k3d to deploy apps with another hot product: The container continuous delivery tool [Argo CD](https://argoproj.github.io/argo-cd/).
 
 ### Continuous Delivery with Argo CD
 
-Argo CD is a [GitOps tool](https://www.gitops.tech/) that has a simple, but powerful objective: To declaratively deploy applications to Kubernetes by reading the application's Kubernetes resource from version control, like a Git repository. Every commit to the repository is threated as a change that will be executed by Argo CD against the Kubernetes cluster, manually or automatic. In this way the entire deployment regime is controlled by files in version control, which substantiates an explicit release process. As an example, if a new version of the application is to be released, an update to the image tag is written to the resource files and checked in. Argo CD syncs with the repository and rolls out the new version.
+Argo CD is a [GitOps tool](https://www.gitops.tech/) that has a simple, but powerful objective: To declaratively deploy applications to Kubernetes by reading the application's Kubernetes-resources from version control, like a Git repository. Every commit to the repository is threated as a change that will be executed by Argo CD against the Kubernetes cluster, manually or automatic. In this way the entire deployment regime is controlled by files in version control, which substantiates an explicit release process. As an example, if a new version of the application is to be released, an update to the image tag is written to the resource files and checked in. Argo CD syncs with the repository and rolls out the new version.
 
 Since Argo CD itself runs on Kubernetes, it's quite easy to setup and works perfectly to deploy applications on K3s.
 
 ### Setup Time
 
-To test Argo CD with K3s on macOS, the easiest way is to run a single-node cluster via Docker and k3d. First, install k3d with [Homebrew](https://brew.sh/index_nb):
+To test Argo CD with K3s on macOS, the easiest way is to run a single-node cluster via Docker and k3d. First, install \`k3d\` with [Homebrew](https://brew.sh/index_nb):
 
-```sh
+```
 $ brew install k3d
 ```
 
@@ -61,7 +61,7 @@ $ k3d cluster create laptop  INFO[0000] Created network 'k3d-laptop'  INFO[0000]
 
 A quick `docker ps` shows two containers, `k3s` itself and a proxy. That's all we need.
 
-```sh
+```
 $ docker ps
   CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS                             NAMES
   c65025f1dec2        rancher/k3d-proxy:v3.3.0   "/bin/sh -c nginx-pr…"   58 minutes ago      Up 58 minutes       80/tcp, 0.0.0.0:54028->6443/tcp   k3d-laptop-serverlb
@@ -149,7 +149,6 @@ $ kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 
 Navigate a browser to `https://localhost:8080` to find the Argo CD login screen.
-
 
 To login, use username `admin`. The first-time password is the name of the Argo CD Api Server pod, funny enough. That can be fetched like this:
 
