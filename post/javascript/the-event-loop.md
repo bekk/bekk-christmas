@@ -39,15 +39,15 @@ As a thought experiment, let’s say we are single threaded as well. Therefore, 
 <tr>
 <table>
 
-On this Christmas dinner recipe, the preparation and cooking of the ribbe is first on the list. So we start there, with the first task, seasoning. This should be done 3 days beforehand, and then the ribbe shall cook for 3 hours on Christmas Eve. If we could only execute one task at the time then all the other cooking, sausages or potatoes, would have to wait until the ribbe is done. By that logic, good luck impressing your family with an elegant delicious dinner. And just imagine if ribbe was the last task on the recipe, then your family would eat ribbe 3 days after the rest of the dinner 😱 Luckily, we’re not single threaded, the same goes for JavaScript... in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
+On this Christmas dinner recipe, the preparation and cooking of the ribbe is first on the list. So we start there, with the first task, seasoning. This should be done 3 days beforehand, and then the ribbe shall cook for 4 hours on Christmas Eve. If we could only execute one task at the time then all the other cooking, sausages or potatoes, would have to wait until the ribbe is done. By that logic, good luck impressing your family with an elegant delicious dinner. And just imagine if ribbe was the last task on the recipe, then your family would eat ribbe 3 days after the rest of the dinner 😱 Luckily, we’re not single threaded, the same goes for JavaScript... in some way. The reason I can make such a bold statement is because the browser gives us some handy features we can use when executing our code, Web API. 
 
 Before we dive into the Web API we have to establish that the JS engine uses a call stack for all tasks it has to execute. Since it’s a stack, it’s ``first in, last out``. Just like a stack of plates. Let's dive in. The Web API includes the DOM API, ``setTimeout``
 and HTTP request, among others. The stack won't take the task out of the stack before it returns a value. This is where the ``setTimeout``, for example, comes in handy. By wrapping the function in a ``setTimeout`` the call stack sends the function to the Web API. Then the Web API holds on to the callback until the timer is done, before returning the function. Hence, the JS engine doesn't freeze.   
 
 ## The oven event
-So, now we know that JavaScript can handle multiple events by using the features provided by the Web API. For simplicity we will only focus on the cooking, and then we can think of the oven as the Web API. We’re prepping the ribbe, using all our capacity on the seasoning. When the seasoning is done we’ll put the ribbe in the oven letting it cook for 3 hours. This action ``cookRibbe`` will invoke the ``setTimeout`` function, illustrated by the oven letting us know the ribbe is done. 
+So, now we know that JavaScript can handle multiple events by using the features provided by the Web API. For simplicity we will only focus on the cooking, and then we can think of the oven as the Web API. We’re prepping the ribbe, using all our capacity on the seasoning. When the seasoning is done we’ll put the ribbe in the oven letting it cook for 4 hours. This action ``cookRibbe`` will invoke the ``setTimeout`` function, illustrated by the oven letting us know the ribbe is done. 
 
-<img src="https://i.ibb.co/sqMgx8v/Passing-function-to-Web-Api.png" alt="Showing how the call stack pushes the setTimout function onto the Web API" style="width:500px;"/>
+<img src="https://i.ibb.co/sqMgx8v/Passing-function-to-Web-Api.png" alt="Showing how the call stack pushes the setTimeout function onto the Web API" style="width:500px;"/>
 
 When the ribbe is done, we can push the callback back on the call stack for execution. Although it sounds simple, this is where it gets a tad more complicated. The Web API is not allowed to push the callback straight back on the call stack. Why? Remember when we talked about JS being single threaded? Yeah... it’s still a thing. Therefore the Web API pushes the callback onto the queue. 
 
@@ -75,6 +75,6 @@ And this is where the event loop enters the saga. The event loop has one job, pu
 
 <img src="https://i.ibb.co/tC7k7Bw/Full-stack-and-queue.png" alt="Shows how function is pushed on to the last place in the queue" style="width:500px;"/>
 
-When the stack is cleared and the queue is empty, then the task can be executed. Hopefully the ribbe did not have to wait for hours in the oven and you’ll be the family hero. But if the queue is full, the ribbe will be burned. Let’s just hope JustEat delivers on Christmas Eve. 
+When the stack is cleared and the queue is empty, then the task can be executed. Hopefully the ribbe did not have to wait for hours in the oven and you’ll be the family hero. But if the queue is full, the ribbe will be burned. Let’s just hope JustEat delivers on Christmas Eve.
 
 **That’s it.** This is why you as a developer may be a bit frustrated. Even though you set a timeout it might not be executed when you intended. And now you know why. 
