@@ -172,7 +172,7 @@ From here, hook up a new Application with the following details:
 | Cluster URL      | `https://kubernetes.default.svc`                |
 | Namespace        | `argocd`                                        |
 
-And hit create. This will start the deployment of a simple guestbook application with a service, endpoint and a deployment containing a single replica set. When everything is created, Argo CD will show a all-green, all synced up map of all Kubernetes objects.
+And hit create. This will start the deployment of a simple guestbook application with a service, endpoint and a deployment containing a single replica set. Everything is synced by Argo CD from the given Github repository. When everything is created, Argo CD will show a all-green, all synced up map of all Kubernetes objects.
 
 ![argo-cd-deployment](https://i.ibb.co/5cgq6yX/Screenshot-2020-12-01-at-19-34-53.png)
 
