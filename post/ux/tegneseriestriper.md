@@ -3,15 +3,10 @@ calendar: ux
 post_year: 2020
 post_day: 13
 title: Ting du har hørt i møter i år
-image: https://i.ibb.co/QCVDkt6/toppbilde.png
-ingress: >-
-  En liten julegave til dere fra oss i faggruppa *Tegning, form og animasjon*.
-  Vi har på hvert vårt hjemmekontor visualisert noen fraser, uttrykk og ting
-  dere har hørt i møter i år.  
-
-  \
-
-  Noe til faglig ettertanke, litt som inspirasjon, mest for gøy. God jul 🎅
+image: https://i.ibb.co/vwVC0Bx/Toppbildet.png
+ingress: En liten julegave til dere fra oss i faggruppa *Tegning, form og
+  animasjon*. Vi har på hvert vårt hjemmekontor visualisert noen fraser, uttrykk
+  og ting dere har hørt i møter i år. God jul 🎅
 links: []
 authors:
   - Øyvind Skaar
@@ -21,8 +16,6 @@ authors:
   - Helen Le
 ---
 ![Illustrasjon av skjerm som blir delt i to](/assets/dele-skjerm.png "Dele skjerm")
-
-
 
 ![Tegning av en gammel hånd](/assets/gammelhand.png "Gammel hånd")
 
@@ -40,21 +33,13 @@ authors:
 
 ![Tegning av en mann som tenker utafor boksen](/assets/tenke-utafor-boksen.png "Tenk utafor boksen! ")
 
- 
-
 ![Tegning av mål og et kamera](/assets/fokusere-på-mållbildet.png "Fokusere på målbildet")
 
 ![Tegning av en person som titter inn fra vinduet](/assets/innsiktsarbeid.png "Innsiktsarbeid")
 
- 
-
 ![Tegning av en død mann med en strek over seg – deadline](/assets/deadline.png "Deadline")
 
-  
-
 ![Tegning av en mann som drar en ball videre](/assets/ta-ballen-videre.png "Ta ballen videre! ")
-
-
 
 Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer du å gjette hva tegningen betyr?
 
@@ -62,7 +47,16 @@ Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer d
 
   
 
+  
 
+  
+
+  
+
+  
+
+  
 
 Ikke les videre hvis du ikke vil vite fasiten: 
+
 1. Hamburger-meny, 2. Dropdown, 3. Radioknapp, 4. Bug, 5. Sticke, 6. Musepeker
