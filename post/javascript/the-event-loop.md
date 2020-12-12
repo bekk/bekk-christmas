@@ -13,7 +13,7 @@ authors:
   - Henrietta Eide Bleness
 ---
 ## The Light Bearer
-But before we continue, today st. Lucia Day! St. Lucia Day is a big deal here in Norway. On this day we walk around the corridors with lights on our heads and hand out St. Lucia Day Buns! Google how to make them, and enjoy. St. Lucia is the bearer of light, who makes the dark winter disappear and brings joy, light and a common ground. Just like JavaScript did for browsers. Ok, that was a cheap shot, I promise it’ll be the only one, please keep reading.
+But before we continue, today is St. Lucia Day! St. Lucia Day is a big deal here in Norway. On this day we walk around the corridors with lights on our heads and hand out St. Lucia Day Buns! Google how to make them, and enjoy. St. Lucia is the bearer of light, who makes the dark winter disappear and brings joy, light and a common ground. Just like JavaScript did for browsers. Ok, that was a cheap shot, I promise it’ll be the only one, please keep reading.
 
 #### The dinner component 
 The star of the Christmas dinner, for many Norwegian families, is the Christmas Ribbe (pork belly). But you can’t shine like a star if you’re not accompanied by other great participants. For example the sausage, or the potato. With this trio, you can’t go too wrong with the dinner, so we are going to keep them in this saga. Now we have all the elements to learn about the event loop.
