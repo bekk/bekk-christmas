@@ -105,7 +105,7 @@ Let's have a look at my list of favorite hot chocolate places, how to describe t
 2. 🥈Varm sjokolade (Hot Chocolate) at Kaffebrenneriet
 3. 🥉Sjokolade på pinne (Hot chocolate on a stick) at Espresso House
 
-Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience.
+Both Kaffebrenneriet and Espresso House have multiple coffee shops in Oslo. I've added ones close to Steam kaffebar for convenience. Please note, given the current situation I haven't visited these shops recently. Some menus may have changed.
 
 Onto the TypeScript type. Per item we have a product name in Norwegian, a product name in English, a vendor, a location and (since we'll display it on a map) latitude and longitude. Let's also add a description and make it an optional field.
 
