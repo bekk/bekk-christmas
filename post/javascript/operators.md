@@ -12,6 +12,7 @@ ingress: Provided I didn't miscount (I am not the [Count von
   list doesn't end there and the family of operators is still growing. Let's
   have a brief look at the latest additions, and new operators which are just
   around the corner!
+description: JavaScript operators, optional chaining operator, nullish coalescing operator
 links:
   - url: https://v8.dev/features/optional-chaining
     title: Optional chaning
