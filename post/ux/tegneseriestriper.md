@@ -22,6 +22,8 @@ authors:
 ---
 ![Illustrasjon av skjerm som blir delt i to](/assets/dele-skjerm.png "Dele skjerm")
 
+
+
 ![Tegning av en gammel hånd](/assets/gammelhand.png "Gammel hånd")
 
 ![](/assets/dyskord.png "Dyskord")
@@ -56,4 +58,11 @@ authors:
 
 Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer du å gjette hva tegningen betyr?
 
-![](/assets/gjettordet.png "Gjett ordet")
+![Collage med 6 tegninger der man skal gjette ordet! ](/assets/gjettordet.png "Gjett ordet! ")
+
+  
+
+
+
+Ikke les videre hvis du ikke vil vite fasiten: 
+1. Hamburger-meny, 2. Dropdown, 3. Radioknapp, 4. Bug, 5. Sticke, 6. Musepeker
