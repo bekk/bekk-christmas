@@ -33,13 +33,15 @@ authors:
 
 ![Tegning av en mann som tenker utafor boksen](/assets/tenke-utafor-boksen.png "Tenk utafor boksen! ")
 
-![Tegning av mål og et kamera](/assets/fokusere-på-mållbildet.png "Fokusere på målbildet")
+![Tegning av en mann som drar en ball videre](/assets/ta-ballen-videre.png "Ta ballen videre! ")
 
 ![Tegning av en person som titter inn fra vinduet](/assets/innsiktsarbeid.png "Innsiktsarbeid")
 
+![Tegning av mål og et kamera](/assets/fokusere-på-mållbildet.png "Fokusere på målbildet")
+
 ![Tegning av en død mann med en strek over seg – deadline](/assets/deadline.png "Deadline")
 
-![Tegning av en mann som drar en ball videre](/assets/ta-ballen-videre.png "Ta ballen videre! ")
+  
 
 Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer du å gjette hva tegningen betyr?
 
