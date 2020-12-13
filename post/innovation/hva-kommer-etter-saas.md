@@ -25,4 +25,4 @@ I sitt forrige selskap lagde seriegründer Kyrre Wathne whitelabel-løsninger i 
 \
 Vi tenker høyt sammen.
 
-<iframe src="https://anchor.fm/drypp/embed/episodes/--enhfdj" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://anchor.fm/drypp/embed/episodes/--enhfs8" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
