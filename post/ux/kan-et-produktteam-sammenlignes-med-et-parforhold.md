@@ -23,8 +23,6 @@ Siden det er desember føler jeg meg ekstra kjærlig og gavmild. Jeg vil derfor 
 
 Disclaimer: La meg bare si at det ikke er meningen å dra alle over en kam, slik som de gjør i boken “Menn er fra Mars, kvinner Venus”. Jeg er fullt klar over at utviklere ikke er en homogen gruppe, ei heller interaksjonsdesignere. Vi er alle unike snøfnugg, og ting er ikke så verst på prosjektet heller. Sånn. La oss gå tilbake til historien.
 
-
-
 <p>&nbsp;</p>
 
 ## Hverdagsproblematikken
@@ -40,15 +38,11 @@ Når jeg står i disse prosessene og spør om hjelp, opplever jeg stadig at moti
 
 Hvorfor er ikke utvikleren interessert? Sa jeg noe feil? Burde jeg ha gjort prosessen på en annen måte? Har jeg en forventning om at utviklerne ikke er motivert, og at jeg gjør det til et større problem enn det det egentlig er? Til syvende og sist, sitter jeg igjen med spørsmålet: er det så vanskelig å bare hjelpe meg litt, vi skal jo tross alt utvikle tjenesten sammen?
 
-
 <p>&nbsp;</p>
 
 ## Oppvaskmøtet eller familierådet
 
 I dag har vi et slags oppvaskmøte eller familieråd, som oftest kalles for retro i vår bransje. Hver fredag tester vi ut ulike metodikker, for å snakke om hvordan samarbeidet går. Dette er et kjempefint utgangspunkt for å ta tempen på samarbeidet. Overordnet ligger fokuset på hva som fungerer bra, hva vi bør stoppe å gjøre, og hva vi bør begynne med. Jeg tar ofte opp mitt behov og ønske om hjelp fra utviklerne i innsiktsfasen, at de ikke kan forvente at det bare skal ligge en skisse klart til utvikling, og når vi først tar tak i en oppgave så skal vi kontinuerlig samarbeide frem til vi har satt den i produksjon. Der og da både føler og tror jeg at vi er enige. Vi ER så enige! Med ny giv og energi setter vi i gang med de nye tiltakene som nok en gang skal redde oss fra et litt dysfunksjonelt arbeidsforhold. Helt til det går noen dager – toppen en uke. Og vi er tilbake der vi startet. Med vår noe humpete, luggete og lite dynamiske forhold. Litt som i et parforhold. Noen vaner er vanskeligere å endre enn andre. 
-
-
-
 
 ![alt-tekst til bilde](https://i.ibb.co/M74PqZT/RETRO.png)
 
