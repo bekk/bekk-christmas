@@ -68,7 +68,7 @@ First of all, this code is not in any package registry, so in order to have some
 
 ### And so it begins..
 
-Taking the naive approach, I want to import the code to use it in my dummy-app. So what happens when I import it?
+Taking the naive approach, I want to import the code to use it in my dummy React app. So what happens when I import it?
 
 ```
 import React from "react";
@@ -94,7 +94,7 @@ const sharpen = require('./effects/sharpen');
 module.exports = {Editor, histogramequalization, medianfilter, invert, colorfilter, sharpen};
 ```
 
-Then we can just use these functions in our code:\
+Then we can just use these functions in our code. I have made a new "FunctionalEditor" in React that uses the Editor and all the effect functions from the image-workshop:\
 Note that I have to include the `<canvas id="..`. because the JS depends on it.
 
 ```
