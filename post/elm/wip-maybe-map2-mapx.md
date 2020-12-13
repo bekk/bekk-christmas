@@ -41,7 +41,7 @@ toContactPerson maybeFirstName maybeLastName =
             Nothing
 ```
 
-Simple enough, but you may have already noticed that this implementation is somewhat strenuous to read. Now, imagine how it would read if we expanded the `ContactPerson` record with additional fields such as phone number, email, address, etc. Not very pleasant!
+Simple enough, but you may have already noticed that this implementation is somewhat strenuous to read. Now, imagine how it would read if we expanded the `ContactPerson` record with additional fields such as address, phone number, email, etc. Not very pleasant!
 
 
 Another, arguably much more readable, approach is to use the utility functions `Maybe.map2`, `Maybe.map3`, `Maybe.map4`, and so on.
@@ -80,4 +80,4 @@ toContactPerson =
     Maybe.map5 ContactPerson
 ```
 
-Notice that there is no `Maybe.map6` or above in the standard library of Elm. Consequently, if we shall ever need them, we have to get them elsewhere. We can either implement them ourselves or just use the `Maybe.mapN`-capabilities of the [`Maybe.Extra`-library](https://package.elm-lang.org/packages/elm-community/maybe-extra/latest/Maybe-Extra#andMap).
+Notice that there is no `Maybe.map6` or above in the standard library of Elm. Consequently, if we shall ever need them, we have to get them elsewhere. We can either implement them ourselves or just use the `Maybe.mapN`-capabilities of the [`Maybe.Extra`-library](https://package.elm-lang.org/packages/elm-community/maybe-extra/latest/Maybe-Extra#andMap). Although, the need for `Maybe.map6` and above can often be avoided by handling the Maybe's at an earlier stage. If we, for example, are dealing with a form with multiple steps, we may be able to extract some of the values from their Maybe-wrapper before continuing to the next step in the form. At least the required fields, that is. In other words, it is often a good idea to check if the Maybe's can be handled at an earlier stage before reaching for these functions.
