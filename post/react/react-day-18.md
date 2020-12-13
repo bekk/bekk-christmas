@@ -81,7 +81,13 @@ With these type definitions added to the component, it's not necessary to go on 
 2. `props.child` is actually an object which contains information about `age` and `favouriteColor` in addition to `name`.
 3. The function `props.naughtyOrNice` as assumed takes `name` as an input, but it also gives some additional information which is that the output of the function can be either the string `Naugthy` or `Nice`.
 
-Even though you might need to write some extra code, type definitions will make it so much easier for your the next person working with your code (or your future self) that the extra lines are worth it a hundred times over!
+Even though you need to write some extra lines of code to add type definitions to your components, I'd say it's worth it a hundred times over! Well, maybe that's a bit exaggerated, but type definitions will most likely save a lot of time for the next person working with the code, and maybe even your future self.
+
+So that's my two cents when it comes to adding static typing to Javascript, either through Typescript or with some other tool such as Flow.
+
+Of course, there's a heap of other advantages that comes with typed languages. I'll post a short summary of some neat advantages below together with some relevant articles in the related material section.
+
+Stay typed!
 
 ## Other neat advantages
 
