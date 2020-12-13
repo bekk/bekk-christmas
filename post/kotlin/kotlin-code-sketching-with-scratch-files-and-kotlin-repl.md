@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 19
 title: Kotlin code sketching with Scratch files and Kotlin REPL
+image: https://images.unsplash.com/photo-1557243962-0a093922933f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80
 ingress: >-
   Imagine you're sitting on the train on your way to work, and you suddenly get
   an epiphany on how
