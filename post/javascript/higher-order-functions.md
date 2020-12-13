@@ -3,6 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 14
 title: Higher-order functions in JavaScript
+image: https://cdn.pixabay.com/photo/2019/10/03/12/12/javascript-4523100_1280.jpg
 ingress: >-
   If you are well-versed in the JavasScript-universe, you probably know that
   functions are also objects in JavaScript. Everything you can do with regular
