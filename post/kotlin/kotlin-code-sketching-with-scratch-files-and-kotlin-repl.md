@@ -30,10 +30,10 @@ and provided us with just the tools we need: _Scratch Files_, _Worksheets_ and _
 
 ## Scratches and Kotlin Worksheets
 
-If you want the whole suite of IntelliJ built in auxiliary coding tools, you pretty much have two types of alternatives for your code sketching needs. Firstly there's **Scratches**, which aren't tied to any particular project, and are stored in a separate area (\*). **Kotlin Worksheets** are similar, but will be tied to a specific project upon creation.
+If you want the whole suite of IntelliJ built in auxiliary coding tools, you pretty much have two types of alternatives for your code sketching needs. Firstly there's **Scratch Files** (or **Skratches** for short), which aren't tied to any particular project, and are stored in a separate area (\*). **Kotlin Worksheets** are similar, but will be tied to a specific project upon creation.
 Personally I tend to use mostly scratches, but it can be convenient to have them included in the project itself, in which case worksheets would be the go-to alternative. Additionally, scratches support a wide variety of different languages and extensions, in addition to Kotlin. We'll be focusing on Scratch files for this article.
 
-Scratches can be created either via the menu **File > New > Scratch File**, or by using the built in shortcut if you find that more convenient: **⌘ + Shift + N** or **Ctrl + Alt + Shift + Insert** for Mac and Windows respectively, if using the default keymap. Finally choose the **Kotlin** format for your scratch file, and you're good to go; a file with a `.kts` extension will be opened in a separate tab.
+Scratches can be created either via the menu **File > New > Scratch File**, or by using the built in shortcut if you find that more convenient: **⌘ + Shift + N** or **Ctrl + Alt + Shift + Insert** for Mac and Windows respectively, if using the default keymap. Finally choose the **Kotlin** format for your scratch file, and you're good to go; a file with a `.kts` extension will be opened in a separate tab. To avoid losing your scratches, it may be an idea to rename them and move (or copy) them into a more persistent location. 
 
 \* _Your cratches can be found under **Scratches and Consoles** in the IntelliJ project tree_
 
@@ -45,7 +45,7 @@ We're ready to put that ingenious Kotlin idea of ours to the test! With the scra
 
 ![A Kotlin scratch file opened in IntelliJ](https://i.ibb.co/Qmsbvr0/Intelli-J-IDEA-CE-2020-2-1-Scratch-File.png)
 
-We can see clearly that our Kotlin code has been syntax highlighted in addition to code completion being active, like we're used to when working with regular Kotlin files. In general we can write Kotlin code like we normally would otherwise. One thing to note here is that a Kotlin scratch file does not require us to create an entry point, i.e. a Kotlin application `main` method, so we're able to start typing and executing Kotlin code right away. The output will be conveniently displayed in a window to the right of our source code upon hitting **Run Scratch File**.
+We can see clearly that our Kotlin code has been syntax highlighted in addition to code completion being active, like we're used to when working with regular Kotlin files. In general we can pretty much write Kotlin code like we normally would in any other IntelliJ Kotlin project. One thing to note here is that a Kotlin scratch file does not require us to create an entry point, i.e. a Kotlin application `main` method, so we're able to start typing and executing Kotlin code right away. The output will be conveniently displayed in a window to the right of our source code upon hitting **Run Scratch File**.
 
 ### Including project modules
 
