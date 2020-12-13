@@ -16,6 +16,13 @@ ingress: >-
 
   In this article I will demonstrate how higher-order functions have allowed me to write readable and more maintainable code with fewer bugs, and how it coincidentally completely removed the need to write for-loops in my code!
 description: JavaScript, higher-order functions, array, map, filter, reduce
+links:
+  - title: Array.prototype.map()
+    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+  - title: Array.prototype.filter()
+    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+  - title: Array.prototype.reduce()
+    url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 authors:
   - Sander Sandøy
 ---
