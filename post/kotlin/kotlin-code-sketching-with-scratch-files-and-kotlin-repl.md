@@ -24,7 +24,7 @@ This example is arguably a little overdramatized (\*), and you would probably be
 down some pseudo-code in a arbitrary text file, instead of going through the process of setting up a new project.
 Although, there might be certain times where we want to have some code executed and output printed
 as fast as possible, to quickly be able to verify or refute some assumption. A quick feedback-loop like this is also very convenient in a learning phase, be it a new concept or a new language.  Luckily JetBrains has got our backs
-and provided us with just the tools we need: _Scratches_, _Worksheets_ and _REPL_ capabilities.
+and provided us with just the tools we need in the IntelliJ IDEA IDE: _Scratches_, _Worksheets_ and _REPL_ capabilities.
 
 \* _Besides, theres not really much commuting these days with mostly everyone working remote_
 
