@@ -42,11 +42,11 @@ And this works! However, while having the React code and the JavaScript code sid
 
 ## **Integrating with React**
 
-I wanted to integrate the methods and functions from the JavaScript with my React code, which meant having to import it into the React code.
+You see, while the JavaScript app in itself is nice enough, I actually wanted to "extract" the image processing functions from that app, and use those together with my React code, which meant having to import it into the React code.
 
 ### Importing the code
 
-First of all, this code is not in any package registry, so in order to have something to work with I simply put the git url into my package.json. Since the code is from a workshop, and I don’t intend to implement the algorithms *again* I choose the solution-branch.
+First of all, this code is not in any package registry, so in order to have something to work with I simply put the git url into my package.json.
 
 ```
 "name": "dummy-app",
@@ -63,7 +63,7 @@ First of all, this code is not in any package registry, so in order to have some
 
 ### And so it begins..
 
-Taking the naive approach, I want to import the code to use it in my dummy-app*.* So what happens when I import it?
+Taking the naive approach, I want to import the code to use it in my dummy-app. So what happens when I import it?
 
 ```
 import React from "react";
@@ -143,4 +143,4 @@ export default MyFunctionalEditor;
 
 ![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png)
 
-And success! I get my own version of photoshop inside my React app! And that is pretty much it. Thank you for reading!
+And success! I get my own version of photoshop inside my React app!
