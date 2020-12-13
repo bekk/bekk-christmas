@@ -23,7 +23,7 @@ ingress: >-
 This example is arguably a little overdramatized (\*), and you would probably be better off just scribbling
 down some pseudo-code in a arbitrary text file, instead of going through the process of setting up a new project.
 Although, there might be certain times where we want to have some code executed and output printed
-as fast as possible, to quickly be able to verify or refute some assumption. A quick feedback-loop like this is also very convenient in a learning phase, be it a new concept or a new language.  Luckily JetBrains has got our backs
+as fast as possible, to quickly be able to verify or refute some assumption. A quick feedback-loop like this is also very convenient in a learning phase, be it a new concept or a new language. Luckily JetBrains has got our backs
 and provided us with just the tools we need: _Scratch Files_, _Worksheets_ and _REPL_ capabilities.
 
 \* _Besides, theres not really much commuting these days with mostly everyone working remote_
@@ -33,7 +33,7 @@ and provided us with just the tools we need: _Scratch Files_, _Worksheets_ and _
 If you want the whole suite of IntelliJ built in auxiliary coding tools, you pretty much have two types of alternatives for your code sketching needs. Firstly there's **Scratch Files** (or **Skratches** for short), which aren't tied to any particular project, and are stored in a separate area (\*). **Kotlin Worksheets** are similar, but will be tied to a specific project upon creation.
 Personally I tend to use mostly scratches, but it can be convenient to have them included in the project itself, in which case worksheets would be the go-to alternative. Additionally, scratches support a wide variety of different languages and extensions, in addition to Kotlin. We'll be focusing on Scratch files for this article.
 
-Scratches can be created either via the menu **File > New > Scratch File**, or by using the built in shortcut if you find that more convenient: **⌘ + Shift + N** or **Ctrl + Alt + Shift + Insert** for Mac and Windows respectively, if using the default keymap. Finally choose the **Kotlin** format for your scratch file, and you're good to go; a file with a `.kts` extension will be opened in a separate tab. To avoid losing your scratches, it may be an idea to rename them and move (or copy) them into a more persistent location. 
+Scratches can be created either via the menu **File > New > Scratch File**, or by using the built in shortcut if you find that more convenient: **⌘ + Shift + N** or **Ctrl + Alt + Shift + Insert** for Mac and Windows respectively, if using the default keymap. Finally choose the **Kotlin** format for your scratch file, and you're good to go; a file with a `.kts` extension will be opened in a separate tab. To avoid losing your scratches, it may be an idea to rename them and move (or copy) them into a more persistent location.
 
 \* _Your cratches can be found under **Scratches and Consoles** in the IntelliJ project tree_
 
@@ -58,6 +58,10 @@ _\* If you get an `Unresolved reference` error in the Scratch Output, make sure 
 ### Customizing scratch file execution
 
 We have two additional options that can be toggled to alter how our scratches will be executed: **Interactive mode** and **Use REPL**, where the former simply enables our scratches to be run automatically if we stop typing. **Use REPL** means that we will switch to a [Read-Eval-Print-Loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) execution style, where each expression will we evaluated and its output printed individually. As a result if we append new expressions to an existing scratch file, IntelliJ doesn't have to execute the whole file, but rather only the last expression we added. Personally I like to toggle both options, which lets me sketch out code and see the resulting output instantly.
+
+## Use cases
+
+The example provided in the beginning, although a bit contrived but realistic nonetheless, is just one of many use cases. Depending on your work and learning process, using scratch files can be an excellent way to try out new Kotlin concepts, or simply using it as a place to dump some logic that you do not want polluting your project. If we look a little closer at the extension that IntelliJ uses for scratch files, `.kts`, it is implied that scratch files are simply [Kotlin Script](https://github.com/Kotlin/KEEP/blob/master/proposals/scripting-support.md) files opened in a particular IntelliJ context. Sharing code snippets now becomes a trivial operation, since we can create a arbitrary `.kts`-file and exchange it with a friend or collegue. Given that they are using IntelliJ the file can simply be dropped into **Scratches and Consoles** and they'll be able to execute it and see the output in a matter of seconds.
 
 ## Alternatives with even less overhead
 
