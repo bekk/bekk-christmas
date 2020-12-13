@@ -19,7 +19,7 @@ description: JavaScript, higher-order functions, array, map, filter, reduce
 authors:
   - Sander Sandøy
 ---
-But, what on earth is a higher-order function? Higher-order functions stem from the functional programming paradigm, and it is defined as *a function that receives a function as an argument, or returns the function as an output.* Higher-order functions are in contrast to first-order functions, which don’t take functions as arguments or return a function as an output.\
+But, what on earth is a higher-order function? Higher-order functions stem from the functional programming paradigm, and it is defined as *a function that receives a function as an argument, or returns the function as an output.*\
 \
 During the release of ES5, a number of higher-order functions were exposed as methods on the [Array-prototype](https://developer.mozilla.org/tr/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype), meaning that these functions became available to every array in the JavaScript-ecosystem. The introduction of these methods massively changed the way I work with data in JavaScript, and I will now provide examples from a simple application where I display both the power and simplicity of these higher-order functions.
 
@@ -98,7 +98,7 @@ for (let i = 0; i < contestants.length; i++) {
 console.log(winners)
 ```
 
-Now, this is quite a mess. Double for-loops are rarely a pleasant sight to behold. In this example we need multiple loops, one for contestants, and one for each contestant’s lottery-numbers. By iterating through the numbers and asserting that each number is included in the winning numbers array, we can determine that Gladstone Gander was lucky enough to win the lottery (who would’ve thought, right?).But, surely there must be a simpler way to accomplish this rather than double for-loops? Could there possibly exist some higher-order functions in JavaScript which can do the trick us?
+Now, this is quite a mess. Double for-loops are rarely a pleasant sight to behold. In this example we need multiple loops, one for contestants, and one for each contestant’s lottery-numbers. By iterating through the numbers and asserting that each number is included in the winning numbers array, we can determine that Gladstone Gander was lucky enough to win the lottery (who would’ve thought, right?). But, surely there must be a simpler way to accomplish this rather than double for-loops? Could there possibly exist some higher-order functions in JavaScript which can do the trick us?
 
 ## Filter to the rescue!
 
@@ -143,8 +143,8 @@ console.log(prizeMoney)
 
 ## Summary
 
-The ability to pass functions as values to other functions is a very useful aspect of JavaScript. Higher-order functions allow for abstraction of iteration, filtering and value accumulation, and allows for developers to instead focus on clean and readable code.\
-The fact that higher-order functions are data-type agnostic when operating on data is also a nice feature, meaning that the filter method works just as well filtering on strings as it does on numbers or any other data type you might specify in your function argument.\
+The ability to pass functions as values to other functions is a very useful aspect of JavaScript. Higher-order functions allow for abstraction of iteration, filtering and value accumulation, and enable developers to instead focus on clean and readable code.\
+The fact that higher-order functions are data-type agnostic when operating on data is also a nice feature, meaning that `filter()` works just as well filtering on strings as it does on numbers or any other data type you might specify in your function argument.\
 \
 Another key feature that the higher-order functions enforce is loose immutability. You never have to worry about mutating the existing array and having weird side effects, instead you create new values which you either can chain with another higher-order function or you can consume them later in your program.
 
