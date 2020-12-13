@@ -91,14 +91,6 @@ Stay typed!
 
 ## Other neat advantages
 
-1. Productivity+++
-
 Since Typescript gives more informations about functions and components, most popular IDEs uses this information to improve auto-completion and code navigation whilst you are writing your code. And to be honest, coding without auto-completion is just a pain.
 
-2. Speeds up refactoring
-
-When removing some code that's no longer necessary, it's often necessary to clean up in `props` since some input that is sent into the component might not be used anymore, and you don't want dead code to be laying around. With Typescript this is really easy. You simply remove any unused property from the type definition, and the compiler will help you find the places where the properties sent into the component does not match the type definition.
-
-> Property 'name' does not exist on type 'ThePerfectGift'.
-
-`Property 'name' is missing in type '{ name: string; }' but required in type 'ThePerfectGiftProps'.`
+The Typescript compiler also makes you a lot more confident when changing your code. When you add, remove, or change the input of a component, the compiler will output useful error messages that helps you understand how much impact such a change makes.
