@@ -136,7 +136,13 @@ Now, to run this image, we run the following command: `docker run -p 8080:80 doc
 
 In the last step, we created a Dockerfile for our project. Moving on, we are going to take some shortcuts. If you want a short introduction to how Github Actions work, you may read [my introduction article](https://andersro93.medium.com/using-github-actions-with-docker-9ba1cc481ae1) that explains the concept in greater detail than here. 
 
-Before we move on, we need to know where we are going to store our 
+Before we move on, we need to know where we are going to store our Docker image. In this article we are using DockerHub, therefore, we need to [create a repository at Dockerhub](https://hub.docker.com/repository/create). Actually, we could use whatever repository we have. Just note that the only requirement we have, for now, is that the repository is open. 
+
+Nevertheless, we need to authenticate with the repository in order to be able to push our image. With Dockerhub, this is quite simple. We may either use our username and password or, even better, use our [username and a token](docker.com/blog/docker-hub-new-personal-access-tokens/). 
+
+Storing our username and password/token in our code is something you should never do. Luckily, with Github Actions, we are able to use [secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets). 
+
+To configure our secrets, we navigate to Settings -> Secrets in our Github repository. Our secrets are encrypted, which means that once we have saved them, we are not able to view them again. However, we may replace or delete if we should need to in the future.
 
 Now, let's move on. We will add a file called main.yml into a new folder in `.github/workflows.` In short, this where we store our Github Actions. 
 
