@@ -46,4 +46,4 @@ authors:
   Marcus Hutchins, stopped WannaCry. Cybersecurity, malware, hacking, programming and infosec. <https://www.malwaretech.com>
 * [@secdefence](https://twitter.com/Secdefence)
 
-  Roar Thon in the Norwegian National Security Authority. Also co-hosting their podcast.
+  Roar Thon from the Norwegian National Security Authority. Also co-hosting their podcast.
