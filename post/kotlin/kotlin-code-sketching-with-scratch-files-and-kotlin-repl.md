@@ -57,7 +57,7 @@ _\* If you get an `Unresolved reference` error in the Scratch Output, make sure 
 
 ### Customizing scratch file execution
 
-We have two additional options that can be toggled to alter how our scratch will be evaluated: **Interactive mode** and **Use REPL**, where the former simply enables our scratches to be run automatically. **Use REPL** means that we will switch to a [Read-Eval-Print-Loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) execution style, where each expression will we evaluated and its output printed individually. As a result if we append new expressions to an existing scratch file, IntelliJ doesn't have to execute the whole file, but rather only the last expression we added. Personally I like to toggle both options, which lets me sketch out code and see the resulting output instantly.
+We have two additional options that can be toggled to alter how our scratches will be executed: **Interactive mode** and **Use REPL**, where the former simply enables our scratches to be run automatically if we stop typing. **Use REPL** means that we will switch to a [Read-Eval-Print-Loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) execution style, where each expression will we evaluated and its output printed individually. As a result if we append new expressions to an existing scratch file, IntelliJ doesn't have to execute the whole file, but rather only the last expression we added. Personally I like to toggle both options, which lets me sketch out code and see the resulting output instantly.
 
 ## Alternatives with even less overhead
 
