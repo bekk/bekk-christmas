@@ -19,14 +19,20 @@ authors:
 * [@thorsheim](https://twitter.com/thorsheim)
 
   Promoter of security & privacy, security evangelist. Founder of [PasswordsCon](https://passwordscon.org). [](https://twitter.com/thorsheim)
+* [@samykamkar](https://twitter.com/samykamkar)
 
-<https://twitter.com/samykamkar>
+  The man behind Samy Worm on MySpace, and a lot more. [](https://twitter.com/samykamkar)Also visit [samy.pl](https://samy.pl).
+* [@briankrebs](https://twitter.com/briankrebs)
 
-<https://twitter.com/briankrebs>
+  Independent investigative journalist. Covers cybercrime, security and privacy. Author of 'Spam Nation'. Visit his [blog](https://krebsonsecurity.com/).
+* [@kevinmitnick](https://twitter.com/kevinmitnick)
 
-<https://twitter.com/kevinmitnick>
+  Chief Hacking Officer, security consultant, public speaker and author. Previously on FBI's most wanted list. [https://www.mitnicksecurity.co](https://www.mitnicksecurity.com)
+* [@stokfredrik](https://twitter.com/stokfredrik)
 
-<https://twitter.com/stokfredrik>
+  YouTube BugBounty profile. Security expert, hacker, speaker. Check out his [YouTube-channel](https://www.youtube.com/stokfredrik) and <https://www.stokfredrik.com/>
+
+[](https://twitter.com/stokfredrik)
 
 <https://twitter.com/pati_gallardo>
 
