@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 14
 title: People we follow
 ingress: Looking for some inspiration? Something to learn? Here we give you a
-  list of interesting people we follow.
+  list of interesting people we follow. These people are worth listening to.
 authors:
   - Robert Larsen
 ---
