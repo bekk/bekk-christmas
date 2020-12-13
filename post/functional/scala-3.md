@@ -6,7 +6,6 @@ title: A peek into Scala 3
 authors:
   - Per Øyvind Kanstrøm
 ---
-
 A new year is closing in and so is a new release from Scala. Release candidate 1
 is expected to be found sometime this December!
 
@@ -15,25 +14,39 @@ total of thirteen larger minor releases. Throughout these changes the
 language has evolved to places not foreseen. Implicits that were first introduced
 for implicit conversions gave rise to type classes, built upon to create
 implicit classes for extension methods, and macros for metaprogramming that to this day is still locked behind
-experimental flags, though still considered a key part of the language. A key
-part of version 3 is to formalize these patterns, make the syntax more obvious, and be more
+experimental flags, though still considered an important part of the language. A key
+part of the coming version is to formalize these patterns and be more
 opinionated. But under the hood there is lots more going on!
 
-The original vision of the language has been on unifying Object Oriented Programming and
-Functional Programming. In doing this it was found that the theoretical
-foundation was not sound, combining subtyping with dependent types has been a problematic challenge
-[^subtypingPath]. In 2016 the DOT Calculus (Dependent Object Types) was presented as a new
-theoretical foundation. With that came Dotty, a reference implementation of a
-language translating to the DOT calculus, and now soon to be Scala 3. 
+<!-- The original vision has been on unifying object-oriented programming and
+functional programming. In doing this it was found that the theoretical
+foundation was not sound. Combining subtyping with dependent types proved to be a problematic challenge
+[^subtypingPath]. -->
+
+A unique challenge for Scala has been the combination of subtyping and
+dependent types. The theoretical foundation has been on rocky grounds up until
+2016 when DOT Calculus (Dependent Object Types) was presented[^subtypingPath].
+With that came Dotty, a reference implementation language translating to DOT
+calculus, and now soon to be Scala 3. Though going deep into these details is
+not important for end users, it is interesting to note that we are talking about a complete
+rewriting of the compiler.
+
+<!-- The next major release is thus a complete
+rewrite of the 
+
+ Though, these details are not important
+for end users. Though, going deeper into this 
+Going deeper into
+Tough, going deeper into these detai -->
  <!-- Scala 3 is not just a new major release, but a complete rewrite with a new foundation. -->
 
 If migration issues are a worrying factor, then it should please you to know that
-most application code bases seem easy to port. To ease the process a lot of the
+most application code bases seem simple to port. To ease the process a lot of the
 bigger users facing changes are delayed to version 3.1. Scala 3 will also be able
 to use Scala 2.13.4 binaries and vice versa. Most of the difficulties will be
 in the ecosystem migrating base libraries, which is well on its way! The
 community builds[^scala2CommunityBuilds] has been an enormous success for Scala 2 and the one for Scala 3
-is soon up to 40 community libraries [^scala3CommunityBuilds]! Not bad for
+is soon up to 50 community libraries [^scala3CommunityBuilds]! Not bad for
 unreleased software. Documentation on the migration process is being worked on
 the by the Scala Center[^migration].
 
@@ -304,12 +317,10 @@ type MyCoproduct = Int | String
 Some of the possibilities this opens is to make type safe error handling
 simpler!
 
-<script src="https://scastie.scala-lang.org/KM80d9GjRSOESTp9y7GCnA.js"></script>
-
 ```scala
 object SomeThirdPartyLibrary {
   case class BadState(code: Int)
-  def getStuff: Either[BadState, Int] = Right(9000)
+  def getStuff: Either[BadState, Int] = Right(9001)
 }
 
 // My application:
@@ -320,7 +331,7 @@ case class OhNoYouDidNot(error: String)
 
 def doTheThing(received: Int): Either[OhNoYouDidNot, String] =
   Either.cond(
-    received >= 1337,
+    received >= 9000,
     "It's working!",
     OhNoYouDidNot(s"$received is not sufficient stuff")
   )
@@ -396,10 +407,10 @@ Some upcoming changes
 
 ## And lots more
 <!--  scratched into some concepts, hope it have piquied your interest. Lots more that deserve attention. Check that out here -->
+<!-- ADT modeling with enums that also supports working GADT's,  -->
 
 Other interesting themes to dive into are intersection types, the newly built-in type class derivation
 support, 
-<!-- ADT modeling with enums that also supports working GADT's,  -->
 explicit null handling, export clauses, and a new macro system. While the details are still being
 hammered out, it is interesting to ponder where all of this will take the language.
 Eager to try it out [^scastieHelloWorld]?
@@ -409,7 +420,6 @@ Eager to try it out [^scastieHelloWorld]?
 [^implicitConvesrion]: https://dotty.epfl.ch/docs/usage/language-versions.html
 
 [^subtypingPath]: https://www.scala-lang.org/blog/2016/02/03/essence-of-scala.html
-https://dotty.epfl.ch/blog/_posts/2016-02-03-essence-of-scala.html ???
 
 [^scala3CommunityBuilds]: https://github.com/lampepfl/dotty/tree/master/community-build/community-projects
 
