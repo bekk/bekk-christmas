@@ -25,7 +25,6 @@ Disclaimer: La meg bare si at det ikke er meningen å dra alle over en kam, slik
 
 
 
-Illustrasjon 1 
 <p>&nbsp;</p>
 
 ## Hverdagsproblematikken
@@ -33,6 +32,7 @@ Illustrasjon 1
 Som interaksjonsdesigner opplever jeg ofte på prosjekt, og i prat med andre designere og utviklere, at samarbeidet mellom disse fagdisiplinene ofte byr på de samme og gjentagende utfordringene. Som eneste designer på teamet, har jeg behov for å gå gjennom en tankerekke, få feedback og forslag til hvordan utføre brukertester og intervju, idémyldre rundt løsninger på problemer, og sparring på skisser både fra et brukerperspektiv, men også fra et teknisk ståsted. 
 
 
+![alt-tekst til bilde](https://i.ibb.co/q9XhHCK/Perspektiver-som-krasjer.png)
 
 Når jeg står i disse prosessene og spør om hjelp, opplever jeg stadig at motivasjonen til å hjelpe meg er noe lav hos utviklerne.. “Det ser jo bra ut”, er svaret jeg ofte får, før de legger til at de absolutt ikke har noe mer å legge til. Thanks... Det er litt som når du spør om å få en mening fra typen om hva du skal ha på deg, og svaret er “alle kjolene ser fine ut”, før han vender blikket ned mot mobilen igjen. Jeg sitter ofte igjen og kjenner på en liten klump med ubehag. 
 
@@ -49,7 +49,8 @@ I dag har vi et slags oppvaskmøte eller familieråd, som oftest kalles for retr
 
 
 
-Illustrasjon 2
+
+![alt-tekst til bilde](https://i.ibb.co/M74PqZT/RETRO.png)
 
 Det var da det slo meg, den dagen i november. At i retroene har vi et for stort fokus på prosess, og på hva som ikke fungerer med den. Fokuset ligger på hvordan vi kan bli mer smidig, og få ting rett ut i produksjon. Generelt er mengden med negative post-it-lapper mye større enn de positive. Likeledes er fokuset vårt, etter at alle post-it-lappene er lest opp, på hva som ikke fungerer. Sjeldent hylles det som faktisk er bra i mer enn et par sekunder, før fokuset går over til det som ikke fungerer. 
 
@@ -68,19 +69,17 @@ Jeg får ikke den magiske følelsen som når man sitter i sofaen med kjæresten,
 
 Etter den magiske AHA-opplevelsen bestemte jeg meg for å kalle inn utviklerne til en litt uformell prat, for å forstå deres behov. Litt sånn som man gjør med kjæresten, hvor man innleder med “vi må snakke sammen”. Jeg ville spesielt forstå mer rundt hvordan det oppleves å være med på innsiktsfasen, og hvordan jeg kunne tilrettelegge og tilpasse meg, slik at jeg møter deres behov. Jeg trengte å få bekreftet/avkreftet om prosessen vår ikke bare føltes unaturlig ut for meg, men for resten av teamet, eller om jeg rett og slett har overtenkt alt, og at ting er fint for dem.
 
-Illustrasjon 3
+![alt-tekst til bilde](https://i.ibb.co/rxX3Kbm/Nyprosess.png)
 
 For å ikke overkomplisere det, tegnet jeg opp prosessen vår ekstremt overordnet i Miro – Innsikt, bygge og teste. Først satt vi hver for oss og skrev ned post-it-lapper om hva vi likte å jobbe med og hva som kunne oppleves som utfordrende i de ulike fasene innenfor produktutvikling. For hver lapp alle på teamet delte, stilte jeg oppfølgingsspørsmål for å virkelig forstå deres perspektiv, behov og motivasjon. Rett og slett for å kartlegge og forstå deres kjærlighetsspråk. Det var da jeg endelig fikk kjenne på den magiske følelsen av å forstå utviklerne på et nytt plan. De uttrykte at de veldig gjerne ville være med på innsiktsfasen, men følte ofte at de ikke hadde kompetansen til å bidra, som igjen forklarte den lave responsen. Og vi fikk snakket om hva som fungerte og ikke på en ny måte, fordi vi satt våre behov først. 
 
-
-
-Illustrasjon 4
 <p>&nbsp;</p>
 
-## Lykkelig avslutning
+## Lykkelig avslutning 
 
 Ikke tolk denne artikkelen som at du skal begynne å se på utviklerne på teamet ditt som kjærestene dine, men noen ganger kan det være fint å sammenligne team-relasjonen med et parforhold. I hverdagen har man mest fokus på hva som ikke fungerer, og hva som kan være bedre. Det er vel litt sånn vi mennesker er bygd opp. Og en gang iblant trenger man å faktisk ta seg tid til å snakke om hverandres behov, om de blir møtt, samt hva man ønsker mer av i forholdet. Og i disse corona-times, kan det være ekstra fint å dyrke og bruke tid det på det som faktisk er bra. 
 
+![alt-tekst til bilde](https://i.ibb.co/CmYXLnz/Perspektivene-m-tes.png)
  
 <p>&nbsp;</p>
 
