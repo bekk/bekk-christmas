@@ -144,6 +144,8 @@ Storing our username and password/token in our code is something you should neve
 
 To configure our secrets, we navigate to Settings -> Secrets in our Github repository. Our secrets are encrypted, which means that once we have saved them, we are not able to view them again. However, we may replace or delete if we should need to in the future.
 
+![](https://i.imgur.com/6DWqpRl.png)
+
 Now, let's move on. We will add a file called main.yml into a new folder in `.github/workflows.` In short, this where we store our Github Actions. 
 
 ```yaml
