@@ -21,9 +21,9 @@ Siden det er desember føler jeg meg ekstra kjærlig og gavmild. Jeg vil derfor 
 
 
 
-Disclaimer: La meg bare si at det ikke er meningen å dra alle over en kam, slik som de gjør i boken “Menn er fra Mars, kvinner Venus”. Jeg er fullt klar over at utviklere ikke er en homogen gruppe, ei heller interaksjonsdesignere. Vi er alle unike snøfnugg, og ting er ikke så verst på prosjektet heller. Sånn. La oss gå tilbake til historien.
+*Disclaimer: La meg bare si at det ikke er meningen å dra alle over en kam, slik som de gjør i boken “Menn er fra Mars, kvinner Venus”. Jeg er fullt klar over at utviklere ikke er en homogen gruppe, ei heller interaksjonsdesignere. Vi er alle unike snøfnugg, og ting er ikke så verst på prosjektet heller. Sånn. La oss gå tilbake til historien.*
 
-<p>&nbsp;</p>
+
 
 ## Hverdagsproblematikken
 
@@ -38,7 +38,6 @@ Når jeg står i disse prosessene og spør om hjelp, opplever jeg stadig at moti
 
 Hvorfor er ikke utvikleren interessert? Sa jeg noe feil? Burde jeg ha gjort prosessen på en annen måte? Har jeg en forventning om at utviklerne ikke er motivert, og at jeg gjør det til et større problem enn det det egentlig er? Til syvende og sist, sitter jeg igjen med spørsmålet: er det så vanskelig å bare hjelpe meg litt, vi skal jo tross alt utvikle tjenesten sammen?
 
-<p>&nbsp;</p>
 
 ## Oppvaskmøtet eller familierådet
 
@@ -57,7 +56,6 @@ Jeg deler mine behov og ønsker om tiltak, men jeg/teamet tar oss sjeldent tid t
 Jeg får ikke den magiske følelsen som når man sitter i sofaen med kjæresten, hvor man bare lytter til hverandre, og forstår at man har bare misforstått hverandre. Vi snakker to forskjellig språk. Gary Chapman (2001) sier at man tar imot og viser kjærlighet overfor hverandre på fem ulike språk, og når man forstår hvilken kjærlighetsspråk den andre parten uttrykker, åpner det seg en helt ny verden fylt av ny kjærlig. Sånn er det også for oss ux- og visuelle designere, forretningsutviklere, front-, back- og full stack-utviklere. Vi snakker forskjellig kjærlighetsspråk overfor tjenesten vi lager. Vi har ulike interesser og fokus, men vi vil alle lage den beste tjenesten. 
 
 
-<p>&nbsp;</p>
 
 ## Vi må snakke sammen 
 
@@ -67,7 +65,7 @@ Etter den magiske AHA-opplevelsen bestemte jeg meg for å kalle inn utviklerne t
 
 For å ikke overkomplisere det, tegnet jeg opp prosessen vår ekstremt overordnet i Miro – Innsikt, bygge og teste. Først satt vi hver for oss og skrev ned post-it-lapper om hva vi likte å jobbe med og hva som kunne oppleves som utfordrende i de ulike fasene innenfor produktutvikling. For hver lapp alle på teamet delte, stilte jeg oppfølgingsspørsmål for å virkelig forstå deres perspektiv, behov og motivasjon. Rett og slett for å kartlegge og forstå deres kjærlighetsspråk. Det var da jeg endelig fikk kjenne på den magiske følelsen av å forstå utviklerne på et nytt plan. De uttrykte at de veldig gjerne ville være med på innsiktsfasen, men følte ofte at de ikke hadde kompetansen til å bidra, som igjen forklarte den lave responsen. Og vi fikk snakket om hva som fungerte og ikke på en ny måte, fordi vi satt våre behov først. 
 
-<p>&nbsp;</p>
+
 
 ## Lykkelig avslutning 
 
@@ -75,7 +73,7 @@ Ikke tolk denne artikkelen som at du skal begynne å se på utviklerne på teame
 
 ![alt-tekst til bilde](https://i.ibb.co/CmYXLnz/Perspektivene-m-tes.png)
  
-<p>&nbsp;</p>
+
 
 ## Jeg lovet dere et aldri så lite tips også, og her kommer det:
 
