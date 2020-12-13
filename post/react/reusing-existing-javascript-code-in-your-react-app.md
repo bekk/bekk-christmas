@@ -152,7 +152,7 @@ And success! I get my own version of photoshop inside my React app!
 
 ### querySelector >:(
 
-And I am mostly happy with this, all is well *as long as I have HTML-elements with a certain id,* because the JavaScript code uses querySelector to find the DOM-elements to manipulate. This also puts restraints on my React code. In order to truly have customisable code, the JavaScript should not care what I name my elements or where I put them.
+And I am mostly happy with this. All is well *as long as I have HTML-elements with a certain id,* because the JavaScript code uses querySelector to find the DOM-elements to manipulate. This also puts restraints on my React code. In order to truly have customisable code, the JavaScript should not care what I name my elements or where I put them.
 
 Instead of having the render function in the image-workshop use querySelector to grab the canvasses, it would be better to refer to the elements directly. That way, I can also basically send any canvas to be rendered.
 
