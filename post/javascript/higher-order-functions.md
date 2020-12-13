@@ -14,7 +14,7 @@ ingress: >-
   built into the language.
 
 
-  In this article I will demonstrate how higher-order functions have allowed me to write readable, maintainable and versatile code with fewer bugs, and how it coincidentally completely removed the need to write for-loops in my code!
+  In this article I will demonstrate how higher-order functions have allowed me to write readable and more maintainable code with fewer bugs, and how it coincidentally completely removed the need to write for-loops in my code!
 description: JavaScript, higher-order functions, array, map, filter, reduce
 authors:
   - Sander Sandøy
