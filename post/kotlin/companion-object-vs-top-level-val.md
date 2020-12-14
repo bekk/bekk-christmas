@@ -63,7 +63,7 @@ public final class Northpole {
 ```
 That's a lot of fuzz for a simple static variable 🤯
 
-A top level const, like ```kotlin const val santa = "claus"``` results in a much less bloated Java block:
+A top level const, like `const val santa = "claus"`{:.kt} results in a much less bloated Java block:
 ```java
 public final class Northpole {
    @NotNull
