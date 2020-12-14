@@ -7,6 +7,8 @@ image: https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixid=MXwxMjA
 ingress: >
   The past few months in 2020 has provided us with completely new challenges
   talk-wise.
+authors:
+  - Hein Haraldsen
 ---
 My advice would be to try to stick to as normal procedure as possible, and in some way try to
 forget that the situation we are in, and that it is different from what we all want it to be.
