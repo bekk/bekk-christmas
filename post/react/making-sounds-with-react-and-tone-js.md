@@ -16,12 +16,13 @@ links:
 authors:
   - Nicolai Fredriksen
 ---
-[Tone.js](https://tonejs.github.io/) is, by their own description, a “Web Audio framework for creating interactive music in the browser”. Its API is quite low level, with good flexibility with regards to asynchronous tasks and extensibility of sounds to produce. Today we’ll create what’s known as a music sequencer, which is a way to sequence a series of notes
+[Tone.js](https://tonejs.github.io/) is, by their own description, a “Web Audio framework for creating interactive music in the browser”. Its API is quite low level, with good flexibility with regards to asynchronous tasks and extensibility of sounds to produce. Today we’ll create what’s known as a music sequencer, which is a way to sequence a series of notes.
 
 \
-For the rest of this article we will utilize the notes C, D, E, G and A. This creates what is known as the C Major Pentatonic Scale. Why these notes and this scale? In simple terms, it means all the notes sound good together, but the why is beyond the scope of this article. Thus increasing our chance of making something that sounds musical.
+First, some music theory. For the rest of this article we will utilize the notes C, D, E, G and A. This creates what is known as the C Major Pentatonic Scale. Why these notes and this scale? In simple terms, it means all the notes sound good together. Thus increasing our chance of making something that sounds musical. I wont go into why these notes sounds the way they do, as it is way beyond the scope of this article. You'll just have to trust me on this one.
 
-First we’ll import Tone.JS, create a synth and play one of the five chosen notes when they’re pressed.
+Now, let's bootstrap a project using [create-react-app](https://create-react-app.dev/), and then add Tone.js with `npm install tone` \
+Then we’ll import Tone.JS, create a synthesizer, or synth for short, which will generate our notes. Then attach our synth to five buttons, and play one of the five chosen notes when they’re pressed. 
 
 <iframe src="https://codesandbox.io/embed/tonejs-react-part-1-x6463?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
@@ -30,7 +31,7 @@ First we’ll import Tone.JS, create a synth and play one of the five chosen not
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-`triggerAttackRelease` takes two arguments: the note to be played, and its duration. The note is a combination of the note name (e.g C) and the number is which octave it is played in, meaning how high or low. The duration `8n` means an eighth-note, meaning, an eighth of the duration of the bar we’re currently in. 
+`triggerAttackRelease` takes two arguments: the note to be played, and its duration. The note is a combination of the note name (e.g C) and the number is which octave it is played in, meaning how high or low. The duration `8n` means an eighth-note, meaning, an eighth of the duration of the bar we’re currently in. (Side note: a bar is usually four beats of four quarter-notes, and by extension, the same bar can also hold eight eighth-notes)
 
 Now, let’s make a grid, with our five special notes stacked on top of each other in ascending order, and as we’re playing eighth-notes, let’s make the grid 8 spaces wide. For each eight note, a column in our grid will be played, and sequencing through a column at a time, before starting over at the start. Thus, we need to save the state of each note in the grid if it is going to be played or not.
 
@@ -43,4 +44,4 @@ Then we’ll use `Tone.Sequence` to make our sequencer. As our potential hit mac
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-That’s it for our musical sequencer. It’s not much, but it’ll get you going with Tone.js, which has great [documentation](https://tonejs.github.io/docs/14.7.58/index.html). You could also take a look at the [examples](https://tonejs.github.io/examples/) and [demos](https://tonejs.github.io/demos) on their website for more inspiration. Who knows, maybe your future is in making sick music in javascript? Bach better watch is back...
+That’s it for our musical sequencer. It’s not much, but it’ll get you going with Tone.js, which has great [documentation](https://tonejs.github.io/docs/14.7.58/index.html). You could also take a look at the [examples](https://tonejs.github.io/examples/) and [demos](https://tonejs.github.io/demos) on their website for more inspiration. Who knows, maybe your future is in making sick tunes with Tone.js? Somebody get Grammy on the phone!
