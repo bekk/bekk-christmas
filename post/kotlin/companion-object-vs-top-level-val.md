@@ -36,8 +36,8 @@ When creating a companion object and placing constants inside of it, the Kotlin 
 
 By using IntelliJ's Kotlin decompiler, which transforms Kotlin into Java bytecode, and then decompiles that bytecode into equivalent Java code, we can have a closer look at the companion object approach:
 
-```
-class Northpole {kotlin
+```kotlin
+class Northpole {
     companion object {
         const val rudolf = "the reindeer"
     }
