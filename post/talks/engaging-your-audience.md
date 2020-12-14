@@ -11,11 +11,15 @@ ingress: There are many ways to make sure that your audience is following along
 authors:
   - Nicolai August Hagen
 ---
+## Some examples of talk analysis
+
+At [December 7th](https://www.talks.christmas/2020/7), I introduced the concept of recreational talk analysis. In our competency group on **talks**, we have also done this in a more structured format, analyzing both each others on competency days, as well as more renowned  "third-party" speakers. In this article, I share the most important results!
+
 ## Know your audience!
 
 First and foremost, you need to go quickly through for yourself before your talk; who is your audience, really? Is the audience the steering group in a company wanting all the answers, your best friends at your bachelorette party wanting a good time, or children trying to learn coding?
 
-Giving it some minutes to in advance to understand who your audience is really helps when it comes to keeping them focused. If you organize your bachelorette-speech in the same way as the presentation to the steering group committee, they would get bored. The other way around, the steering group would perhaps raise some eyebrows on structuring laying out the Q3 numbers as a bachelorette-party-speech. 
+Giving it some minutes in advance to understand who your audience is really helps when it comes to keeping them focused. If you organize your bachelorette-speech in the same way as the presentation to the steering group committee, they would get bored. The other way around, the steering group would perhaps raise some eyebrows on structuring laying out the Q3 numbers as a bachelorette-party-speech. 
 
 ## Alternate style and break up your flow!
 
@@ -58,4 +62,4 @@ Lastly, some tips on gestures, body language:
 - Make sure to get direct eye contact with your audience
 - Try "preaching" to your audience
 
-As Trond will talk more about tomorrow, there is also a lot you can do with your pitch of voice during a presentation. More on this tomorrow 🚀
+As Trond will talk more about tomorrow, there is also a lot you can do with your pitch of voice during a presentation. More on this in the next article 🚀
