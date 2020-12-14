@@ -3,6 +3,7 @@ calendar: talks
 post_year: 2020
 post_day: 18
 title: How to improve your digital presentations.
+image: https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80
 ingress: >
   The past few months in 2020 has provided us with completely new challenges
   talk-wise.
