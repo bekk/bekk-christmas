@@ -16,9 +16,16 @@ First and foremost, you need to go quickly through for yourself before your talk
 
 Giving it some minutes to in advance to understand who your audience is really helps when it comes to keeping them focused. If you organize your bachelorette-speech in the same way as the presentation to the steering group committee, they would get bored. The other way around, the steering group would perhaps raise some eyebrows on structuring laying out the Q3 numbers as a bachelorette-party-speech. 
 
-### Alternate and break up your flow!
+### Alternate style and break up your flow!
 
+In every presentation, it can be good to do *something* that breaks with the normal flow in your presentation. Especially if it's a longer presentation. Your may for example "break up" by:
 
+- Play a video in one of the slides
+- Play a part of a song
+- Do something "live" at the scene
+- Ask somebody in the audience a question
+
+![Choose a different style in between slides](https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)
 
 ### Techniques
 
