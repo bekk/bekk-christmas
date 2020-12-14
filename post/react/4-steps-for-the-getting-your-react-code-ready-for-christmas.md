@@ -3,11 +3,12 @@ calendar: react
 post_year: 2020
 post_day: 20
 title: 4 steps for the getting your React code ready for Christmas
-image: https://i.ibb.co/bjVp5p5/Screen-Shot-2020-12-14-at-11-54-56-AM.png
-ingress: 🎶 It's beginning to look at lot like Christmas...🎶 You have put up
-  your favorite decorations, candle lights are the sparkling in the windows and
-  some Christmas cookies are baking in the oven making a nostalgic scent. You
-  can almost feel the Christmas spirit. But, wait a minute, what is that ruining
+image: /assets/20-react-advent-candles.png
+ingress: >
+  🎶 It's beginning to look at lot like Christmas...🎶 You have put up your
+  favorite decorations, candle lights are the sparkling in the windows and some
+  Christmas cookies are baking in the oven making a nostalgic scent. You can
+  almost feel the Christmas spirit. But, wait a minute, what is that ruining
   this perfect Christmas feeling? Is that dirty react code?! There are “this”, a
   looong render method and even “classes” all over the place. With only 4 days
   left it is probably time to do some proper refactoring of your react code.
@@ -27,7 +28,7 @@ Remember the feeling of a clean house or apartment, you know where everything is
 
 This years we are going to refactor this Advent Candles application:
  
-![alt text](https://i.ibb.co/bjVp5p5/Screen-Shot-2020-12-14-at-11-54-56-AM.png “Advent Candles")
+![](/assets/20-react-advent-candles.png)
 
 
 ```javascript
