@@ -27,7 +27,7 @@ There are a number of ways to make snow in your browser. For example, clever use
 
 For today's article we'll use my weapon of choice for creative coding, namely [p5.js](https://p5js.org/). It's a library quite literally made for creative coding, effectively offering a wrapper around the HTML Canvas API to make it easier to work with. As opposed to Canvas, most of the p5 API is fairly self-explanatory. For example, drawing a circle is as simple as `circle(x, y, diameter)`. Let's do that right now!
 
-<iframe src="https://codesandbox.io/embed/snow-0-wblcp?fontsize=14&hidenavigation=1&theme=dark"
+<iframe src="https://codesandbox.io/embed/snow-0-lli8m?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-0"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
