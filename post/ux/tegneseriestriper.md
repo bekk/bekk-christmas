@@ -49,8 +49,6 @@ Her er noen ord og uttrykk vi bruker i design- og utviklings-hverdagen. Klarer d
 
 Ikke les videre hvis du ikke vil vite fasiten:  
 
-  
-
  .
 
 .
@@ -81,6 +79,4 @@ Ikke les videre hvis du ikke vil vite fasiten:
 
 .
 
-  
-
-1. Hamburger-meny, 2. Dropdown, 3. Radioknapp, 4. Bug, 5. Sticke, 6. Musepeker
+1. Hamburger-meny, 2. Dropdown, 3. Radioknapp, 4. Bug, 5. Sticky, 6. Musepeker
