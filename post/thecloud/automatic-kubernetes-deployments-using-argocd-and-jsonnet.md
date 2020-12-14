@@ -80,9 +80,9 @@ function(name='echo-server', namespace='default', env)
   }.newAppAsList()
 ```
 
-If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will similar to YAML still allow you to:
+If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (similar to YAML) still allow you to do stuff like:
 
-* Validate the generated Kubernetes manifest:
+* Validate the resources:
   ```bash
   jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
   ```
@@ -97,9 +97,11 @@ If done right, all resources can still be fully patchable. And since the jsonnet
   jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
   ```
 
-## Putting it together (?)
+This is of course typically handled by ArgoCD, but it might still be useful as development tools.
 
-Using the app-of-apps pattern referred to above, it is possible to seed the ArgoCD-installation with a single Application
+## Putting the pieces together
+
+Using the app-of-apps pattern referred to above, it is possible to seed the ArgoCD-installation with a single `Application`
  which will transitively render all `Applications` for the system. It might look something like:   
 
 ```
@@ -111,7 +113,7 @@ argocd-root              # git repo
     apps.jsonnet         # renders all Applications according to vars/<env>.libsonnet, injecting tla for env etc
 ```
 
-The root-repo will, among others, render the echoserver `Application`, propagating relevant tlas such as `<env>`. *That* repo
+The root-repo will, render the echoserver `Application`, propagating relevant tlas such as `<env>`. *That* repo
 will in turn render the app-specific Kubernetes-manifests. It might look something like:
 
 ```
@@ -120,14 +122,15 @@ argocd-apps                 # git repo
     echoserver/
       lib/                  # libraries, managed by jsonnet-bundler or via git submodules
       vars/
-      vars/test.libsonnet   # per-env vars for imageTag, replicas and more app-specific stuff  
-      config/               # static configuration that goes into configmaps, possibly sealed-secrets
+      vars/test.libsonnet   # per-env vars for imageTag, replicas etc  
+      config/               # static configuration that goes into configmaps etc
       echoserver.jsonnet
     otherapp/...
     anotherapp/...
 ```
 
+New `Applications` are then added by pushing changes to `argocd-root` and deployments are triggered by pushing changes to `argocd-apps`.
+
 ## Summing up
 
-I have shown two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. They 
-are both interesting and powerful on their own,
+I have given you a taste of two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. Together they 
