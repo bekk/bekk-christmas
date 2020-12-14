@@ -3,19 +3,24 @@ calendar: thecloud
 post_year: 2020
 post_day: 18
 title: From code to cloud using .net 5, Docker, Github Actions and Azure App Services
-ingress: With the release of .Net 5 comes the work required to update the stack
-  to the “latest and greatest”. In the early days, getting a full CI/CD pipeline
-  could be a huge pain. The simple solutions often required the usage of
-  proprietary technology. Nowadays, there are many solutions to the same
-  problem, which makes finding "the right" solution difficult.
+image: https://i.imgur.com/pYwdXkw.png
+ingress: Have you ever had an application that you wanted to automate the
+  building, packing, and deployment for? In this article, I will show you how to
+  can utilize Docker, Github Actions, and Azure App Services in just a few
+  steps.
+description: Have you ever had an application that you wanted to automate the
+  building, packing, and deployment for? In this article, I will show you how to
+  can utilize Docker, Github Actions, and Azure App Services in just a few
+  steps.
 authors:
   - Anders Refsdal Olsen
 ---
-This article will look at one solution that utilizes several popular technologies to create a simple CI/CD pipeline for a simple dotnet web app. The finished pipeline is not perfect, but I think it can serve as a good starting point for your application. 
+## Introduction
+We are going to create a simple CI/CD pipeline. The pipeline or concept that we will focus on will touch upon multiple technologies that may at first look a bit overwhelming. Therefore, I am trying to make this as simple as possible. Nevertheless, in the end, we have a working pipeline that you may actually copy/steal/improve for your own project. 
+
 
 ## Pre-requisites
-
-To do what this article describes, you will need the following:
+You don't actually need anything to read this article and understand what's going on, but if you want to replicate this, then, this is the technology I have used.
 
 * [.Net 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * [Docker Desktop (regular Docker if on Linux)](https://docs.docker.com/get-docker/)
@@ -30,7 +35,7 @@ The full solution is available at these locations:
 
 ## 1. Create a sample application
 
-To keep this as simple as possible, I suggest using one of the default applications that the dotnet cli gives us. The following command creates a new mvc solution in a folder called DockerSample.
+To keep this as simple as possible, I suggest using one of the default applications that the `dotnet cli` gives us. The following command creates a new MVC solution in a folder called DockerSample.
 
 ```sh
 dotnet new mvc -n DockerSample
@@ -44,18 +49,20 @@ dotnet run
 
 Now we should be able to open our browser and see the following on localhost port 5001.
 
+![](https://i.imgur.com/S10arHd.png)
+
 ## 2. Adding Docker support to your application
 
-Now that we have a working application, we can make sure the application builds and runs in a Docker container from a Docker image. To create our Docker image, we need to create a Dockerfile. Since Docker is supported by Microsoft, we can use the images they serve as a baseline for our image. We see that Microsoft has several images available that serves our purpose. Namely, SDK and AspNet Runtime. 
+Now that we have a working application, we can make sure the application builds and runs in a Docker container from a Docker image. To create our Docker image, we need to create a Dockerfile. Since Docker is supported by Microsoft, we can use the [images they serve](https://hub.docker.com/_/microsoft-dotnet) as a baseline for our image. We see that Microsoft has several images available that serves our purpose. Namely, [SDK](https://hub.docker.com/_/microsoft-dotnet-sdk/) and [AspNet Runtime](https://hub.docker.com/_/microsoft-dotnet-aspnet/). 
 
-We will use the SDK image to build our solution and the AspNet Runtime to run our solution. We are using both instead of just the SDK because the Runtime image is smaller. We want our image to be as small as possible. 
+We will use the [SDK image](https://hub.docker.com/_/microsoft-dotnet-sdk/) to build our solution and the [AspNet Runtime](https://hub.docker.com/_/microsoft-dotnet-aspnet/) to run our solution. We are using both instead of just the SDK because the Runtime image is smaller. We want our final image to be as small as possible. 
 
 The recipe for creating our image is to understand how the build progress of a typical .Net application work. Typically, we want to the following in the following:
 
 1. Download our dependencies (restore)
 2. Build our solution (build)
 3. Create an artifact of our application (publish)
-4. Run the application
+4. Run the application (execute)
 
 Let’s start defining our image. We first need to tell Docker which image we want to use as a baseline. We can set the working directory at the same time. We can do that by adding the following to our Dockerfile.
 
@@ -92,7 +99,7 @@ FROM build AS publish
 RUN ["dotnet", "publish", "--no-restore", "--no-build", "--configuration", "Release", "--output", "artifacts"]
 ```
 
-Again, we are creating a new container, but this time it's called "publish" and it derives from the container called "build". We then run the dotnet publish command to create an artifact and place it in a folder called artifacts.
+Again, we are creating a new container, but this time it's called "publish" and it derives from the container called "build". We then run the `dotnet publish` command to create an artifact and place it in a folder called artifacts.
 
 Lastly, we need to run our artifact. That is where our runtime container comes in. In this step, we’ll take our artifact, copy it over to a new runtime container, and then set the entrypoint (which command to run when we start the container). 
 
@@ -198,3 +205,7 @@ Onward to the Docker tab. We need to configure what Docker image we should use a
 ![](https://i.imgur.com/OCGJKwy.png)
 
 We may configure to use that by selecting DockerHub, and then our image name. Hit "Review + create" and Voila!
+
+## Conclusion
+In this article, we got a brief introduction on how we may use Docker and Github Actions to package and publish a .Net 5 on Dockerhub. Thereafter, we consumed that image on Azure App Service to make the .Net application publically accessible from all over the world. 
+However, this pipeline is not complete, there are lots of things that could have been better. Nevertheless, I think that it may serve you in your current or your next project as a baseline that you will need to expand for your project to thrive. I hope that this has been helpful and that you now have another tool to use in the future. 
