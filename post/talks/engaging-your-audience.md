@@ -21,12 +21,15 @@ Giving it some minutes to in advance to understand who your audience is really h
 In every presentation, it can be good to do *something* that breaks with the normal flow in your presentation. Especially if it's a longer presentation. Your may for example "break up" by:
 
 - Play a video in one of the slides
+- Ask somebody in the audience a question
+- Do something completely different in just 1 slide
 - Play a part of a song
 - Do something "live" at the scene
-- Ask somebody in the audience a question
 
-![Choose a different style in between slides](https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)
+![Choose a different style in between slides](https://images.unsplash.com/photo-1445205170230-053b83016050?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80)
 
 ### Techniques
+
+
 
 ### Gestures, body language and pitch of voice
