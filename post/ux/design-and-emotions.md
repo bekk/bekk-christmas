@@ -5,8 +5,7 @@ post_day: 15
 title: Design and emotions
 ingress: The other day, a group of designers here at Bekk was so lucky to get a
   super interesting presentation about emotions from a psychologist. The
-  Psychologist was Lars Hære and he and a designer, Erling Håmsø, are writing a
-  book about design and psychology together.
+  Psychologist was Lars Hære.
 links:
   - url: https://designogpsykologi.no
     title: Design og Psykologi
@@ -34,4 +33,4 @@ Then to the Ted-talk, what if machines themselves could read these emotions, wha
 <p>&nbsp;</p>
 
 
-Lars presentation was much more exciting than this article, and if you are interested in the topic, I urge you to visit the webpage for their coming book: https://designogpsykologi.no
+Lars presentation was much more exciting than this article, and if you are interested in the topic, I urge you to visit the webpage for the coming book about design and psycology that he is writing togheter with deisgner, Erling Hamsø:  https://designogpsykologi.no
