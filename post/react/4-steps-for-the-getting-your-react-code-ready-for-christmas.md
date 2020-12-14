@@ -55,7 +55,6 @@ class App extends React.Component {
       clicked2: !this.state.clicked2
     });
   };
-
 ```
 
 Well, me neither, so let's work through this refactoring.
@@ -68,7 +67,7 @@ In the Advent Candles the `class` is replaced by a functional component and the 
 
 Resulting in a component that can look something like this after this first initial refactoring: 
 
-```
+```javascript
 export const App = () => {
   const [firstLight, setFirstLight] = useState(false);
   const [secondLight, setSecondLight] = useState(false);
@@ -80,14 +79,14 @@ export const App = () => {
 
 How we used the old states:
 
-```
+```javascript
 <button onClick={this.handleClick1} className="candlebutton">
   {this.state.clicked1 ? (
 ```
 
 Refactored code using the new states:
 
-```
+```javascript
 <button
   onClick={() => setFirstLight(!firstLight)}
   className="candlebutton"
@@ -100,8 +99,6 @@ From 32 lines to 5 for the part we have refactored, I call that a good beginning
 \
 [Here](https://codesandbox.io/s/advent-candles-2-uyqkz) is the code after the first refactoring.
 
-
-
 ## Let it DRY, let it DRY, let it DRY ❄️
 
 There are four candle lights and corresponding states for them all. Is there a pattern that  repeats itself? I would say yes, and we can refactor this. It is finally time to DRY the code. DRY, or “Do not Repeat Yourself” is a principle to reduce repetition and avoid redundancy. In our application we have four candles all rendered in one large return. There are several elements that are similar, making this a perfect candidate for DRYing and make new smaller and reusable components. So, from a single large implementation we can create a small reusable component called Candle. 
@@ -110,15 +107,75 @@ Let’s split this large component into smaller reusable components.
 
 In the return() there are four candles that have the same functionality, a state that keeps track if the light is on or off and number for which candle it is. We can create another component, Candle, that will do the same, and pass it the property of the candle number. It can look like [this](https://codesandbox.io/s/advent-candles-3-deucm): 
 
-
-
-https://codesandbox.io/s/advent-candles-3-deucm?fontsize=14&hidenavigation=1&theme=dark 
-
+```javascript
+const Candle = ({ description }) => {
+  const [light, setLight] = useState(false);
+  const toggleLight = () => setLight(!light);
+  return (
+    <div className="candle">
+      <button onClick={toggleLight} className="candlebutton">
+        {light ? (
+          <span role="img" aria-label="fireemoji">
+            🔥{" "}
+          </span>
+        ) : (
+          <div className="candletop"> ⎮ </div>
+        )}
+        <div className="candlestick"> {description} </div>
+      </button>
+    </div>
+  );
+};
 ```
-<iframe src="https://codesandbox.io/embed/advent-candles-3-deucm?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="Advent Candles 3"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+
+Now, if we want to make changes to the Candle we can do it one time at one place affecting all the candles. In the App we can now just include as many Candle components as we want and pass them the desired props. Sounds scalable?
+
+```javascript
+export const App = () => {
+  return (
+    <div className="App">
+      <h1>✨ Advent Candles ✨</h1>
+      <div className="candleContainer">
+        <Candle description={"1"} />
+        <Candle description={"2"} />
+        <Candle description={"3"} />
+        <Candle description={"4"} />
+      </div>
+      <h2>Click on the candles to light the fire</h2>
+    </div>
+  );
+};
 ```
+
+Every time you repeat yourself, and start copy paste, it should ring a bell. This will help you from ending up with large and bulky components that you have a hard time remembering what to do when scrolling through the component. Just, “Let it DRY, let it DRY, let it DRY”. 
+
+
+
+## Highlight the important and get rid of the unnecessary 
+
+Some refactoring changes are easier than others, but still important. Here is a bullet list i find useful to go through every once in a while: 
+
+* Get rid of comments, unused imports and unused code. 
+* Go through the names, will someone else understand what they mean a year from now? 
+* Improve readability with destructuring your props. Instead of (props) and props.description you can destructure and pass down the props like this ({description}) and description. 
+
+Our Advent Candles are getting cleaner and cleaner, just look at [them](https://codesandbox.io/s/advent-candles-3-deucm).
+
+## **Make it sparkle!**
+
+Let's sprinkle some magic on our application that will also be a gift to ourselves in the year to come. With adding tests to your application, your future you will thank you. Using [](https://testing-library.com/docs/react-testing-library/intro/)[react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) you can test your react components how a user would use them. React-testing-library is focused on the way the components are used, and not so much the implementation details of the components. Rather than having access to props and state, the tests are related to how the user interacts with the components. If you want to read further about react-testing-library, I can recommend [this]([https://react.Christmas/2020/6](https://react.christmas/2020/6)) article. 
+
+So, let's connect the dots, how does this relate to our refactoring? Tests can actually indicate if further refactoring is needed. If you have to write long tests in order to test your component, it is probably time to split the component. The Advent Candles application first had one single large implementation of the User Interface. However, when refactoring the code, we split the code into two functional components; App and Candle and we now have an application that is easier to test. So, in order to increase testability it is a good practice to split components into smaller independent components. 
+
+\
+[Here](https://codesandbox.io/s/advent-candles-4-up11x?file=/src/__tests__/App.js) is how our Advent Candles application looks like with some tests.
+
+Writing the tests based on the components behavior also has some advantages for future refactoring. What the component wants to accomplish. When refactoring the Advent Candle application, we did not change what the components did, only how they did this. This is a key element to be a support for refactoring instead of a redraw. When we a year from now want to refactor the application, we can do this without using a lot of time trying to understand how the tests worked, and what will make them pass. So, with behavior-based tests we can in the future do further refactoring and know that the tests will tell us only if we do changes that change the behavior. They can give you confidence knowing that you don't break anything, and you can work faster and write new functionality. We can now test the components individually, and when in the future we change the code we have a better understanding for where in the code the break is happening is something break. Neat huh? 
+
+## It's beginning to look a lot like Christmas
+
+Now it is actually beginning to look a lot like Christmas. We have refactored our Advent Candles Christmas decoration - thrown away the old class component, made a small reusable Candle component, removed the dust and refactored the application to something that sparks joy. 
+
+![](/assets/20-react.advent-candles.png)
+
+The Advent Candles still look the same and have the same functionality, but you know that underneath the code is more scalable, testable and easier to further implement new functionality. So, with no longer dirty code to get annoyed by, just code ready for future functionality and refactoring supported by our magic tests it's finally beginning to look a lot like Christmas.
