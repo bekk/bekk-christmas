@@ -128,7 +128,7 @@ We're getting very close to the end result here, but the sun isn't quite right. 
 
 That's not too bad! The layers of snow hide behind the mountain ridges, and it all looks kinda alright. The gradient in the sky is simply made by using the drawRidge function with different colors a few times before drawing the sun. The colors of the sky ridges are determined by blending the color of the sun with the color of the sky. 
 
-Now that we have a playground, let's play around with some parameters and see what we can get out of it:
+Now that we have a playground, let's play around with some parameters and see what we can get out of it! You can open the final sandbox yourselves [here](https://codesandbox.io/s/gsvls), tweak parameters, save, and the result should update. Here are some images I got from tweaking the parameters at the top:
 
 ![](https://i.ibb.co/yyDkKjt/Union-Result.png)
 
