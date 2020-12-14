@@ -24,29 +24,23 @@ In every presentation, it can be good to do *something* that breaks with the nor
 - Ask somebody in the audience a question
 - Do something completely different in just 1 slide
 - Play a part of a song
+- Say something humorous
 - Do something "live" at the scene
 
 ![Choose a different style in between slides](https://images.unsplash.com/photo-1445205170230-053b83016050?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80)
 
 ### Techniques
 
-abc
-
-#### Repetition
-
-abc
-
 #### Play on people emotions
 
-abc
+Make sure people feel that you are talking about them:
+
+- Address all the members of your audience directly in the beginning of your presentation
+- Let the audience know that you are seeing *each and one of them*.
+- Tell stories that people can relate to. Use examples from your audience's everyday life to explain something. Something that you think every member of the audience can relate to.
 
 #### Be humorous
 
-abc
-
-#### Tell stories that people can relate to 
-
-abc
-
+Humor has a natural way of keeping people focused during a talk! However, be careful not to use it *too much*. Also, only use humor if it comes natural to you. 
 
 ### Gestures, body language and pitch of voice
