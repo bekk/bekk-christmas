@@ -16,7 +16,8 @@ links:
     url: https://p5js.org/
   - title: The Nature of Code
     url: https://natureofcode.com/book/introduction/
-authors: []
+authors:
+  - Anders Larsen
 ---
 There are a number of ways to make snow in your browser. For example, clever use of HTML and SCSS can get you some fairly [dynamic snow](https://codepen.io/alphardex/pen/dyPorwJ). CSS really isn't built for that kind of thing though, and you'll often get some rough performance if you want a whole lot of particles. Plus, why stop at just snow? Let's make a nice winter landscape! 
 
