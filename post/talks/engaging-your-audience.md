@@ -11,13 +11,13 @@ ingress: There are many ways to make sure that your audience is following along
 authors:
   - Nicolai August Hagen
 ---
-### Know your audience!
+## Know your audience!
 
 First and foremost, you need to go quickly through for yourself before your talk; who is your audience, really? Is the audience the steering group in a company wanting all the answers, your best friends at your bachelorette party wanting a good time, or children trying to learn coding?
 
 Giving it some minutes to in advance to understand who your audience is really helps when it comes to keeping them focused. If you organize your bachelorette-speech in the same way as the presentation to the steering group committee, they would get bored. The other way around, the steering group would perhaps raise some eyebrows on structuring laying out the Q3 numbers as a bachelorette-party-speech. 
 
-### Alternate style and break up your flow!
+## Alternate style and break up your flow!
 
 In every presentation, it can be good to do *something* that breaks with the normal flow in your presentation. Especially if it's a longer presentation. Your may for example "break up" by:
 
@@ -30,9 +30,9 @@ In every presentation, it can be good to do *something* that breaks with the nor
 
 ![Choose a different style in between slides](https://images.unsplash.com/photo-1445205170230-053b83016050?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80)
 
-### Techniques
+## Techniques
 
-#### Play on people emotions
+### Play on people emotions
 
 Make sure people feel that you are talking about them:
 
@@ -40,17 +40,17 @@ Make sure people feel that you are talking about them:
 - Let the audience know that you are seeing *each and one of them*.
 - Tell stories that people can relate to. Use examples from your audience's everyday life to explain something. Something that you think every member of the audience can relate to.
 
-#### Be humorous
+### Be humorous
 
 Humor has a natural way of keeping people focused during a talk! Be spontaneous with your jokes. However, be careful not to use it *too much*. Also, only use humor if it comes natural to you. 
 
-#### Be personal and open
+### Be personal and open
 
 There are good reasons for the success of TV shows like Keeping up with the Kardashians, The Osbournes and Paradise hotel; we all love to listen to other's secrets! 
 
 If you are comfortable with it, being personal, open and honest on stage can really engage your audience. Especially curious human beings will really get their ears out.
 
-### Gestures, body language and pitch of voice
+## Gestures, body language and pitch of voice
 
 Lastly, some tips on gestures, body language:
 
