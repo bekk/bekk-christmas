@@ -23,7 +23,12 @@ There are a number of ways to make snow in your browser. For example, clever use
 
 For today's article we'll use my weapon of choice for creative coding, namely [p5.js](https://p5js.org/). It's a library quite literally made for creative coding, effectively offering a wrapper around the HTML Canvas API to make it easier to work with. As opposed to Canvas, most of the p5 API is fairly self-explanatory. For example, drawing a circle is as simple as `circle(x, y, diameter)`. Let's do that right now!
 
-<https://codesandbox.io/s/lli8m>
+<iframe src="https://codesandbox.io/embed/snow-0-lli8m?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-0"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 In addition to providing an API full of functions and values you can read from, P5 automatically looks for certain named functions in your code. The most important ones to know about are `setup()` and `draw()`:
 
@@ -33,7 +38,12 @@ Meanwhile, the draw function runs every time your screen renders a new frame. Th
 
 I won't go too in-depth on the p5 API, as you can find just about everything you need in the [reference](https://p5js.org/reference/) or the [examples](https://p5js.org/examples/). There's even an example of [simulating snowflakes](https://p5js.org/examples/simulate-snowflakes.html) there, which served as one of the main inspirations for this article. Speaking of which, let's get started on simulating snow.
 
-<https://codesandbox.io/s/vr9mo>
+<iframe src="https://codesandbox.io/embed/snow-1-vr9mo?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-1"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 At the top of the code I put some of the constants that can be tweaked for the sketch, making it easier to play around with values. In order to keep track of our snowflakes, I've created a very basic list of objects in the setup function where we'll store their position. At the start we'll just offer them a random spot on the canvas.
 
@@ -41,7 +51,12 @@ In the draw function we'll iterate through this list of objects and draw a circl
 
 This is a great start, but the snowflakes all seem fairly static. While their pattern is random, the pattern doesn't change and the looping can be very obvious as a result. Furthermore, our upcoming landscape scene is lacking in depth, so let's add some!
 
-<https://codesandbox.io/s/h8gww>
+<iframe src="https://codesandbox.io/embed/snow-2-h8gww?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-2"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 The snowflake data structure is now a list of lists, where the inner lists represent a layer of snowflakes. While we could have simply assigned a random layer to a snowflake at initialization, this structure will come in handy when we play around with depth again later. Now that the data structure is layered, we can make the snowflakes appear layered too. We've created the updateSnowflake() function to get all the snowflake computation in one place, and the first thing we'll do is adjust the size of the snowflakes. Things that are further away look smaller than they would if they were close by, so we'll base the size of the snowflakes on their layer.
 
@@ -53,11 +68,21 @@ Wind is sort of chaotic, so we need some sort of randomness. We've already used 
 
 Perlin noise kind of deserves an article of its own, as it really is just about the most powerful tool p5 has to offer (in my opinion). In the simplest of terms, Perlin noise can be described as “random, but smooth”. Let's look at a quick comparison:
 
-<https://codesandbox.io/s/wpe0p>
+<iframe src="https://codesandbox.io/embed/snow-perlin-wpe0p?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-perlin"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 The `noise()` function works similarly to `random()`, where both functions return a number between 0 and 1. The random function gives you a different result every time, and is great for when you want uniform distribution. The upside of the noise function is that when you call the function with the same parameters two times, you get the same result. Similarly, calling the function two times with _similar_ parameters offers a _similar_ result. If you really want to get into understanding the use cases of Perlin noise, then I highly recommend the introduction to Daniel Shiffman's [The Nature of Code](https://natureofcode.com/book/introduction/#intro_section6). He uses a language called Processing, which is what p5.js serves as sort of a port of. The syntax is pretty much Java and all the functions work in pretty much the same way, so the code should be easy to translate to p5. Anyway, let's make some wind!
 
-<https://codesandbox.io/s/0ev3x>
+<iframe src="https://codesandbox.io/embed/snow-3-0ev3x?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-3"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 The wind is computed in the latter half of our `updateSnowflake()` function. The noise function takes 1-3 parameters, representing dimensions. Or whatever you want them to, really. Let's dissect this line:
 
@@ -69,7 +94,12 @@ Finally, the noise() function returns a value between 0 and 1. We subtract -0.5 
 
 With the wind in order, we now have ourselves some pretty cool snow! Honestly, writing the explanation took ten times the amount of time it took to code the snow itself. Once you get into the groove and start to get familiar with the tools at your disposal, the possibilities are endless! With our snow in order, we can combine our depth system and Perlin noise to generate some landscape to go with it! Let's hide the snowflakes for now and get to work on this winter wonderland.
 
-<https://codesandbox.io/s/5wvvn>
+<iframe src="https://codesandbox.io/embed/snow-4-5wvvn?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-4"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 Now this is quite a different scene! We've added a more appropriate sky color, a sun, and some mountain ridges. The sun is drawn right on top of the background in the draw function. Our custom drawSun function is fairly simple, as it really is just a circle with some colored shadow. The shadow is an excellent example of how one can still use methods and properties of the Canvas API within p5, giving us this grossly incandescent sun!
 
@@ -83,7 +113,12 @@ Note that we step over some pixels to reduce the amount of computation needed. O
 
 We're getting very close to the end result here, but the sun isn't quite right. We could place the sun randomly, but I like how it looks just peeking over the ridges in the back. However, that implies it's sort of a sunrise or sunset, which is typically accompanied by a gradient in the sky! Oh, and we should also turn that snow back on.
 
-<https://codesandbox.io/s/gsvls>
+<iframe src="https://codesandbox.io/embed/snow-5-gsvls?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="snow-5"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 That's not too bad! The layers of snow hide behind the mountain ridges, and it all looks kinda alright. The gradient in the sky is simply made by using the drawRidge function with different colors a few times before drawing the sun. The colors of the sky ridges are determined by blending the color of the sun with the color of the sky. 
 
