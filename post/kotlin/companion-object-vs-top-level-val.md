@@ -11,7 +11,7 @@ authors:
 ---
 A static is a field or function that is independent of class instances and can be accessed directly, e.g. a global constant. Coming from a Java background, one often defaults to using companion objects - At least I do 🤷‍♂️ This will typically result in something like this: 
 
-```
+```kotlin
 class Foo {
     companion object Bar {
         const val baz = "foobar"
@@ -23,7 +23,7 @@ class Foo {
 
 Seeing that Kotlin allows for defining top level constants and functions, that is, constants and functions defined outside of any class, one can usually make do with something like this:
 
-```
+```kotlin
 const val baz = "foobar"
 
 class foo { ... }
@@ -37,7 +37,7 @@ When creating a companion object and placing constants inside of it, the Kotlin 
 By using IntelliJ's Kotlin decompiler, which transforms Kotlin into Java bytecode, and then decompiles that bytecode into equivalent Java code, we can have a closer look at the companion object approach:
 
 ```
-class Northpole {
+class Northpole {kotlin
     companion object {
         const val rudolf = "the reindeer"
     }
@@ -45,7 +45,7 @@ class Northpole {
 ```
 will yield bytecode equivalent to this Java code:
 
-```
+```java
 public final class Northpole {
    @NotNull
    public static final String rudolf = "the reindeer";
@@ -65,10 +65,12 @@ which contains a lot of superflous fuzz 🤯
 
 The top level const declaration however
 
-```const val santa = "claus"```
+```kotlin
+const val santa = "claus"
+```
 
 results in a much less bloated Java block:
-```
+```java
 public final class Northpole {
    @NotNull
    public static final String santa = "claus";
