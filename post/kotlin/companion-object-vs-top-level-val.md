@@ -6,6 +6,8 @@ title: Companion object vs top level val
 ingress: Ever wondered where to declare your constants, or static methods in
   Kotlin? Even though Kotlin has no explicit notion of statics, there are
   multiple ways of mimicking the same behavior.
+authors:
+  - Eirik Årseth
 ---
 A static is a field or function that is independent of class instances and can be accessed directly, e.g. a global constant. Coming from a Java background, one often defaults to using companion objects - At least I do 🤷‍♂️ This will typically result in something like this: 
 
