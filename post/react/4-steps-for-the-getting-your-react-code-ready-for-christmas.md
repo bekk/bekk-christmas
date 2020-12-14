@@ -13,9 +13,7 @@ ingress: 🎶 It's beginning to look at lot like Christmas...🎶 You have put u
   it's probably time to do some proper refactoring of your react code. Here are
   four steps which I have recognized to help me get going. It's time to roll up
   your sleeves.
-links:
-  - url: https://codesandbox.io/s/julekalender-3-deucm?file=/src/App.js
-    title: Advent Candles
+links: []
 authors:
   - Nora Futsæter
 ---
