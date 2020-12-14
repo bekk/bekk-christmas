@@ -16,6 +16,10 @@ links:
     url: https://p5js.org/
   - title: The Nature of Code
     url: https://natureofcode.com/book/introduction/
+  - title: r/generative
+    url: https://www.reddit.com/r/generative/top/?sort=top&t=all
+  - title: "#generativeart"
+    url: https://www.instagram.com/explore/tags/generativeart/
 authors:
   - Anders Larsen
 ---
