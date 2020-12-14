@@ -30,6 +30,23 @@ In every presentation, it can be good to do *something* that breaks with the nor
 
 ### Techniques
 
+abc
+
+#### Repetition
+
+abc
+
+#### Play on people emotions
+
+abc
+
+#### Be humorous
+
+abc
+
+#### Tell stories that people can relate to 
+
+abc
 
 
 ### Gestures, body language and pitch of voice
