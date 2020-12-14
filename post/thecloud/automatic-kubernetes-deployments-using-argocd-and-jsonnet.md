@@ -19,7 +19,7 @@ links:
 authors:
   - Gustav Karlsson
 ---
-## What is ArgoCD?
+## ArgoCD
 
 [ArgoCD](https://argoproj.github.io/argo-cd/) is a continuous delivery tool for Kubernetes that uses git-repos as the source-of-truth for the desired state of
 the cluster (following the [GitOps](https://www.weave.works/technologies/gitops/) philosophy). It runs inside the cluster and continuously monitor the git-repos for changes, rendering them into Kubernetes manifests and applying them to the cluster. So, contrary to the common pipeline approach where changes are pushed in, ArgoCD pulls them. As shown below, it comes with a UI for visualizing resources and their relations, which is particularly handy for newcomers to Kubernetes. (The UI *may* also be used to administer applications, repositories etc, but then you are engaging in ClickOps rather than GitOps).
@@ -79,17 +79,20 @@ function(name='echo-server', namespace='default', env)
 If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (similar to YAML) still allow you to do stuff like:
 
 * Validate the resources:
-    ```
-    jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
-    ```
+
+  ```
+  jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
+  ```
 * Dry-run against a cluster:
-    ```
-    jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
-    ```
+
+  ```
+  jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
+  ```
 * Diff against a cluster:
-    ```
-    jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
-    ```
+
+  ```
+  jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
+  ```
 
 This is of course typically handled by ArgoCD, but it might still be useful as development tools.
 
