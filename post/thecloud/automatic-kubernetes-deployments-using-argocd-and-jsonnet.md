@@ -2,8 +2,8 @@
 calendar: thecloud
 post_year: 2020
 post_day: 16
-title: Automatic Kubernetes deployments using ArgoCD and jsonnet
-image: https://unsplash.com/photos/KIZghFOEK40
+title: Making life simpler using ArgoCD and jsonnet
+image: https://images.unsplash.com/photo-1542735950-ff674376d161?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop
 ingress: >
   So you have a Kubernetes-cluster and a bunch of applications and you are
   looking for a way to automate deploys, keeping your sanity and avoiding
@@ -19,9 +19,9 @@ links:
 authors:
   - Gustav Karlsson
 ---
-## ArgoCD intro 
+## What is ArgoCD?
 
-ArgoCD is a continuous delivery tool for Kubernetes that uses git-repos as the source-of-truth for the desired state of
+[ArgoCD](https://argoproj.github.io/argo-cd/) is a continuous delivery tool for Kubernetes that uses git-repos as the source-of-truth for the desired state of
 your cluster. It will continuously monitor the git-repos for changes, render the manifests and apply them to your cluster. 
 It comes with a UI for visualizing your resources, something which is very handy, especially if you are new to Kubernetes.
 
@@ -33,12 +33,12 @@ Even though it supports rolling back to previously deployed versions, ArgoCD use
 
 <image of echo-server app?>
 
-## Cluster bootstrapping (app-of-apps)
+## App-of-apps (the making life simpler part)
 
 One of the gems of ArgoCD is the deployment-pattern which is referred to as the App-of-apps (https://argoproj.github.io/argo-cd/operator-manual/cluster-bootstrapping/#app-of-apps-pattern).
 An `Application` may point to a git-repo containing code that renders additional `Application` CRs (i.e. points to other git-repos), 
 continuing in as long a chain as you need. So you can effectively bootstrap your entire stack by seeding argo with a single 
-root-`Application` that transitively renders all your `Applications` and underlying manifests. You can of course also propagate
+root-`Application` that transitively renders all your `Applications` and underlying manifests. No clicking required. You can of course also propagate
 relevant parameters to all applications. 
 
 <image of app-of-apps, possibly from doc>
