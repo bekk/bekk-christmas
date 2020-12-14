@@ -63,7 +63,7 @@ public final class Northpole {
 ```
 That's a lot of fuzz for a simple static variable 🤯
 
-A top level const, like `const val santa = "claus"`{:.kt} results in a much less bloated Java block:
+A top level const, like `const val santa = "claus"` results in a much less bloated Java block:
 ```java
 public final class Northpole {
    @NotNull
@@ -71,4 +71,4 @@ public final class Northpole {
 }
 ```
 
-In addition to providing more efficient bytecode, the syntax of top level declarations is simply cleaner. So, unless you really need companion object specific behavior, stick to top level declarations 👌 
+In addition to providing more efficient bytecode, the syntax of top level declarations is simply cleaner. So, unless you really need companion object specific behavior, stick with top level declarations 👌 
