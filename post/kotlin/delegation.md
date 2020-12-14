@@ -65,7 +65,7 @@ For this example, the implementation is stripped down to save space and for read
 realistic enough to make sense. The actual http calls are _delegated_ to some `HttpClient`, _composed_ as a constructor
 parameter to `WishListHttpClient`. We do not delegate directly to the `HttpClient`, we provide information about the
 url, and in a real world implementation, we might have some more logic to handle the request and the response.
-Here is how the stripped down HttpClient interface looks like:
+Here is how the stripped down `HttpClient` interface looks like:
 
 ```kotlin
 interface HttpClient {
