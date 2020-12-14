@@ -47,7 +47,7 @@ When it comes to selecting a [tool/language](https://argoproj.github.io/argo-cd/
 
 I am a developer and I like to write code. I like to find the right abstractions and create generic, reusable pieces. I have always struggled with templating languages like Jinja2 or Go-templates because they are so limited and always "get in my way". After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f\*\*k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out jsonnet. I had heard it was a bit complex, but my initial skepticism was blown away after trying it. It felt much more familiar than the awkward templating languages and factoring the code into reusable components was a breeze (see for example [bitnami/kube-libsonnet](https://github.com/bitnami-labs/kube-libsonnet)).
 
-In jsonnet, it is quite easy to build a library allowing you to generate the full stack of Kubernetes objects (deployment, service, netpol, ingress, service monitor, etc) just by declaring the stack's config. Similar to what you would do in a helm values-file, but achieved with code rather than templating. Below is an example of what that _might_ look like.
+In jsonnet, it is quite easy to build a library allowing you to generate the full stack of Kubernetes objects (deployment, service, netpol, ingress, service monitor, etc) just by declaring the stack's config. Similar to what you would do in a helm values-file, but achieved with code rather than templating. Below is an example of what that *might* look like.
 
 ```json
 local lib = import 'lib/v2/lib.libsonnet';
@@ -79,16 +79,17 @@ function(name='echo-server', namespace='default', env)
 If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (similar to YAML) still allow you to do stuff like:
 
 * Validate the resources:
+
   ```bash
   jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
   ```
-
 * Dry-run against a cluster:
+
   ```bash
   jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
   ```
-
 * Diff against a cluster:
+
   ```bash
   jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
   ```
@@ -129,4 +130,4 @@ New `Applications` are then added by pushing changes to `argocd-root` and deploy
 
 ## Summing up
 
-I have given you a taste of two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. ...<TODO>
+I have given you a taste of two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. ...TODO
