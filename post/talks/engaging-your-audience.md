@@ -41,6 +41,20 @@ Make sure people feel that you are talking about them:
 
 #### Be humorous
 
-Humor has a natural way of keeping people focused during a talk! However, be careful not to use it *too much*. Also, only use humor if it comes natural to you. 
+Humor has a natural way of keeping people focused during a talk! Be spontaneous with your jokes. However, be careful not to use it *too much*. Also, only use humor if it comes natural to you. 
+
+#### Be personal and open
+
+There are good reasons for the success of TV shows like Keeping up with the Kardashians, The Osbournes and Paradise hotel; we all love to listen to other's secrets! 
+
+If you are comfortable with it, being personal, open and honest on stage can really engage your audience. Especially curious human beings will really get their ears out.
 
 ### Gestures, body language and pitch of voice
+
+Lastly, some tips on gestures, body language:
+
+- Use your hands to emphasize special points in your talk! 
+- Make sure to get direct eye contact with your audience
+- Try "preaching" to your audience
+
+As Trond will talk more about tomorrow, there is also a lot you can do with your pitch of voice during a presentation. More on this tomorrow 🚀
