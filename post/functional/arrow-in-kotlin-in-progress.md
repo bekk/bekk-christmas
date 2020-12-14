@@ -113,3 +113,5 @@ when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
     is Err -> println(validatedUser.error.name)
 }
 ```
+
+Ah, delightful!
