@@ -2,7 +2,7 @@
 calendar: functional
 post_year: 2020
 post_day: 15
-title: Error Handling in Kotlin without Exceptions
+title: Error Handling in Kotlin Without Exceptions
 ingress: "In this article, we compare error handling methods in Kotlin;
   specifically: exceptions, `Either`, and `Result`."
 description: ""
