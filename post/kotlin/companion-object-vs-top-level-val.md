@@ -61,15 +61,9 @@ public final class Northpole {
    }
 }
 ```
-which contains a lot of superflous fuzz 🤯
+That's a lot of fuzz for a simple static variable 🤯
 
-The top level const declaration however
-
-```kotlin
-const val santa = "claus"
-```
-
-results in a much less bloated Java block:
+A top level const, like ```kotlin const val santa = "claus"``` results in a much less bloated Java block:
 ```java
 public final class Northpole {
    @NotNull
