@@ -2,7 +2,7 @@
 calendar: functional
 post_year: 2020
 post_day: 15
-title: "Either's Fallacy: The Rise of The Result"
+title: Error Handling in Kotlin without Exceptions
 ingress: "In this article, we compare error handling methods in Kotlin;
   specifically: exceptions, `Either`, and `Result`."
 description: ""
@@ -93,3 +93,23 @@ when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
 `Either` is rather generic, and thus, `Left` and `Right` may not make sense for the reader by itself. Additionally, you may also notice that `Left` and `Right` suddenly change to `a` and `b`. Not a huge problem, but readability suffers nonetheless. 
 
 If you want all the advantages of `Either`, but also want to stay semantically accurate in the context of error handling, check out [`Result<T, E>`](https://github.com/michaelbull/kotlin-result). `Right` changes to `Ok`, and `Left` to `Err`. It makes it significantly harder to confuse `Left` and `Right` as `Ok` and `Err` makes sense in their own right (pun intended).
+
+```kotlin
+class ValidatedUser private constructor(
+    val email: String
+) {
+    companion object {
+        fun validate(rawUser: RawUser): Result<ValidatedUser, ValidationError> =
+            if (EMAIL_REGEX.matches(rawUser.email)) {
+                Ok(ValidatedUser(rawUser.email))
+            } else {
+                Err(ValidationError.INVALID_EMAIL)
+            }
+    }
+}
+
+when(val validatedUser = ValidatedUser.validate(RawUser(emailAddress))) {
+    is Ok -> println(validatedUser.value.email)
+    is Err -> println(validatedUser.error.name)
+}
+```
