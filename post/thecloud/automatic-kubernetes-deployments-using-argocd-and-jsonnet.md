@@ -59,7 +59,8 @@ As hinted about in [Using Jsonnet does not have to be complex](https://medium.co
 ```json
 local lib = import 'lib/v2/lib.libsonnet';
 
-function(name='echo-server', namespace='default', env)            # top-level arguments (tlas) can be injected here
+# top-level arguments (tlas) can be injected here
+function(name='echo-server', namespace='default', env)
   local vars = lib.loadVars(env);
 
   (import 'lib/v2/app.libsonnet') {
@@ -87,7 +88,7 @@ If done right, all resources can still be fully patchable. And after working a b
 * Validate the generated Kubernetes manifest:
 
   ```bash
-  jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict --ignore-missing-schemas
+  jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
   ```
 * Dry-run against a cluster:
 
@@ -97,7 +98,7 @@ If done right, all resources can still be fully patchable. And after working a b
 * Diff against a cluster:
 
   ```bash
-  jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f - | diff-so-fancy
+  jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
   ```
 
 ## Putting it together (?)
