@@ -79,20 +79,17 @@ function(name='echo-server', namespace='default', env)
 If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (similar to YAML) still allow you to do stuff like:
 
 * Validate the resources:
-
-  ```bash
-  jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
-  ```
+    ```
+    jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
+    ```
 * Dry-run against a cluster:
-
-  ```bash
-  jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
-  ```
+    ```
+    jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
+    ```
 * Diff against a cluster:
-
-  ```bash
-  jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
-  ```
+    ```
+    jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
+    ```
 
 This is of course typically handled by ArgoCD, but it might still be useful as development tools.
 
