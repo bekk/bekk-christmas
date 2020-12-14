@@ -32,7 +32,7 @@ class Foo { ... }
 
 Both of these approaches are acceptable for some usages, but unless you *really* want to tightly couple a field with some class, top level definitions is the way to go. For most uses, companion objects are simply expensive and overkill. Here's why: When creating a companion object and placing constants inside of it, the Kotlin compiler decorates🎄 its outer class with an object, namely the companion object, in addition to the structure needed for instantiating and accessing it.
 
-By using [IntelliJ’s Bytecode Viewer and Java Decompiler tools](<https://kotlin.christmas/2020/5>), we can compare our Kotlin source code to its equivalent Java counterpart. Let's have a closer look at the companion object approach:
+By using [IntelliJ’s Bytecode Viewer and Java Decompiler tools](https://kotlin.christmas/2020/5), we can compare our Kotlin source code to its equivalent Java counterpart. Let's have a closer look at the companion object approach:
 
 ```kotlin
 class Northpole {
@@ -73,3 +73,41 @@ public final class Northpole {
 ```
 
 In addition to providing more efficient bytecode, the syntax of top level declarations is simply cleaner. So, unless you really need companion object specific behavior, stick with top level declarations 👌
+
+If you want to group multiple constants within a single block, the [object constructor](https://kotlinlang.org/docs/reference/object-declarations.html#object-declarations) is useful. It creates a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) object that can encapsulate your constant, in a readable and efficient manner:
+
+
+
+```kotlin
+object Northpole {
+    const val alabaster = "Snowball"
+    const val bushy  = "Evergreen"
+    const val pepper = "Minstix"
+}
+```
+
+The three elves defined inside the Northpole object are all static members within a single class in the equvalent Java code:
+
+```java
+public final class Northpole {
+   @NotNull
+   public static final String alabaster = "Snowball";
+   @NotNull
+   public static final String bushy = "Evergreen";
+   @NotNull
+   public static final String pepper = "Minstix";
+   public static final Northpole INSTANCE;
+
+   private Northpole() {
+   }
+
+   static {
+      Northpole var0 = new Northpole();
+      INSTANCE = var0;
+   }
+}
+```
+
+### Conclusion
+
+There are multiple ways of mimicking statics in Kotlin. Companion objects gives you a static block within a class, but results in slow(er) bytecode, so unless you know what your are doing, be cautious. Instead you should make use of top level constants and functions, declared outside of any class. And if you have multiple related constants (or functions), consider wrapping them inside an object declaration.
