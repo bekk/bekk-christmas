@@ -102,7 +102,7 @@ There are four candle lights and corresponding states for them all. Is there a p
 
 Let’s split this large component into smaller reusable components.
 
-In the return() there are four candles that have the same functionality, a state that keeps track if the light is on or off and number for which candle it is. We can create another component, Candle, that will do the same, and pass it the property of the candle number. It can look like [this](https://codesandbox.io/s/advent-candles-3-deucm): 
+In the return() there are four candles that have the same functionality, a state that keeps track if the light is on or off and number for which candle it is. In addition, we will pass it the property of the candle number. It can look like [this](https://codesandbox.io/s/advent-candles-3-deucm): 
 
 ```javascript
 const Candle = ({ description }) => {
@@ -158,7 +158,7 @@ Our Advent Candles are getting cleaner and cleaner, just look at [them](https://
 
 ## **Make it sparkle!**
 
-Let's sprinkle some magic on our application that will also be a gift to ourselves in the year to come. With adding tests to your application, your future you will thank you. Using [](https://testing-library.com/docs/react-testing-library/intro/)[react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) you can test your react components how a user would use them. React-testing-library is focused on the way the components are used, and not so much the implementation details of the components. Rather than having access to props and state, the tests are related to how the user interacts with the components. If you want to read further about react-testing-library, I can recommend [this]([https://react.Christmas/2020/6](https://react.christmas/2020/6)) article. 
+Let's sprinkle some magic on our application that will also be a gift to ourselves in the year to come. With adding tests to your application, your future you will thank you. Using [](https://testing-library.com/docs/react-testing-library/intro/)[react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) you can test your react components how a user would use them. React-testing-library is focused on the way the components are used, and not so much the implementation details of the components. Rather than having access to props and state, the tests are related to how the user interacts with the components. If you want to read further about react-testing-library, I can recommend []([https://react.Christmas/2020/6](https://react.christmas/2020/6))[this](https://react.christmas/2020/6) article. 
 
 So, let's connect the dots, how does this relate to our refactoring? Tests can actually indicate if further refactoring is needed. If you have to write long tests in order to test your component, it is probably time to split the component. The Advent Candles application first had one single large implementation of the User Interface. However, when refactoring the code, we split the code into two functional components; App and Candle and we now have an application that is easier to test. So, in order to increase testability it's a good practice to split components into smaller independent components. 
 
