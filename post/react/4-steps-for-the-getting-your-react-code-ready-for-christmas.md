@@ -3,9 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 20
 title: 4 steps for the getting your React code ready for Christmas
-image: '  ![alt
-  text](https://i.ibb.co/bjVp5p5/Screen-Shot-2020-12-14-at-11-54-56-AM.png
-  “Advent Candles")'
+image: https://i.ibb.co/bjVp5p5/Screen-Shot-2020-12-14-at-11-54-56-AM.png
 ingress: 🎶 It's beginning to look at lot like Christmas...🎶 You have put up
   your favorite decorations, candle lights are the sparkling in the windows and
   some Christmas cookies are baking in the oven making a nostalgic scent. You
