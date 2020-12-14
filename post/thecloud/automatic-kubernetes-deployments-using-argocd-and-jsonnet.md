@@ -22,8 +22,9 @@ authors:
 ## What is ArgoCD?
 
 [ArgoCD](https://argoproj.github.io/argo-cd/) is a continuous delivery tool for Kubernetes that uses git-repos as the source-of-truth for the desired state of
-your cluster. It will continuously monitor the git-repos for changes, render the manifests and apply them to your cluster. 
-It comes with a UI for visualizing your resources, something which is very handy, especially if you are new to Kubernetes.
+the cluster (following the [GitOps](https://www.weave.works/technologies/gitops/) philosophy). It runs inside the cluster and continuously monitor the git-repos for changes, rendering them into Kubernetes manifests and applying them to the cluster. So, contrary to the common pipeline approach where changes are pushed in, ArgoCD pulls them. It comes with a UI for visualizing resources and their relations, which is particularly handy for newcomers to Kubernetes. The UI _may_ also be used to administer applications, repositories etc, but then you are engaging in ClickOps rather than GitOps.
+
+
 
 The central component is the custom resource `Application` which basically is a pointer to a git-repo containing code 
 that can be rendered into Kubernetes manifests. You may specify branch or tag, path, whether it should be automatically synced, 
