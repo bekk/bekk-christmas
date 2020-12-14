@@ -3,8 +3,8 @@ calendar: react
 post_year: 2020
 post_day: 20
 title: 4 steps for the getting your React code ready for Christmas
-image: <a href="https://ibb.co/J7pTnWL"><img
-  src="https://i.ibb.co/J7pTnWL/Screen-Shot-2020-12-14-at-1-25-48-PM.png"
+image: <a href="https://imgbb.com/"><img
+  src="https://i.ibb.co/SnmgNDT/Screen-Shot-2020-12-14-at-1-25-48-PM.png"
   alt="Screen-Shot-2020-12-14-at-1-25-48-PM" border="0" /></a>
 ingress: >
   🎶 It's beginning to look at lot like Christmas...🎶 You have put up your
