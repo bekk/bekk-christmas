@@ -3,7 +3,7 @@ calendar: react
 post_year: 2020
 post_day: 20
 title: 4 steps for the getting your React code ready for Christmas
-image: https://i.ibb.co/SnmgNDT/Screen-Shot-2020-12-14-at-1-25-48-PM.png
+image: ""
 ingress: >
   🎶 It's beginning to look at lot like Christmas...🎶 You have put up your
   favorite decorations, candle lights are the sparkling in the windows and some
@@ -25,8 +25,7 @@ authors:
 Remember the feeling of a clean house or apartment, you know where everything is, and you feel at ease. I find it as mentally comforting to have the same feeling when looking at my react code. You can do this bit by bit, or take a larger bunch, but I find the key to do it regularly. There are great benefits to having clean code. It is easier to read, write and update your code, making it faster for you to do what really matters with your application. The goal when coding is not just to solve your current problem and make it work, but to do it the right way. You want to be proud of your code and feel happiness when further working with it. 
 
 
-
-This years we are going to refactor this Advent Candles application:
+This year we are going to refactor this Advent Candles application:
  
 ![](/assets/20-react-advent-candles.png)
 
