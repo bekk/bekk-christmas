@@ -18,7 +18,7 @@ The topic Lars talked about was emotions. I’m not going to repeat everything h
 
 
 
-### The 5 basic emotions 
+## The 5 basic emotions 
 
 First of all, there are 5 basic emotions. And to everybody who has watched *Inside out* you might remember Joy, Fear, Sadness, Disgust, and Anger. The interesting thing that Lars pointed out is that there are four emotions that are “negative”, and only one that's positive, Joy. That's unfair 😫. But evolution and our instinct to survive might have some good reasons why.  
 
