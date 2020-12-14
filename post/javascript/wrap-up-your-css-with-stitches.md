@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 15
 title: Wrap up your CSS with Stitches!
-image: https://imgur.com/mQQ2tTn
+image: https://source.unsplash.com/vRGfB0Pxga0/1600x900
 ingress: "Have you ever struggled with CSS? Have you found it hard to structure
   a large CSS codebase, even when using methodologies like
   [BEM](http://getbem.com) or
