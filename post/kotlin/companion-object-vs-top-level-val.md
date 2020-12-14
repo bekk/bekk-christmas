@@ -110,4 +110,4 @@ public final class Northpole {
 
 ### Conclusion
 
-There are multiple ways of mimicking statics in Kotlin. Companion objects gives you a static block within a class, but results in slow(er) bytecode, so unless you know what your are doing, be cautious. Instead you should make use of top level constants and functions, declared outside of any class. And if you have multiple related constants (or functions), consider wrapping them inside an object declaration.
+There are multiple ways of mimicking statics in Kotlin. Companion objects gives you a "static" block within a class, but with a tiny bit of overhead compared to its Java counterpart. Instead you could make use of top level constants and functions, declared outside of any class. And if you have multiple related constants (or functions), consider wrapping them inside an object declaration.
