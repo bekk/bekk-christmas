@@ -10,4 +10,14 @@ ingress: There are many ways to make sure that your audience is following along
 authors:
   - Nicolai August Hagen
 ---
-test
+### Know your audience!
+
+First and foremost, you need to go quickly through for yourself before your talk; who is your audience, really? Is the audience the steering group in a company wanting all the answers, your best friends at your bachelorette party wanting a good time, or children trying to learn coding?
+
+Giving it some minutes to in advance to understand who your audience is really helps when it comes to keeping them focused. If you organize your bachelorette-speech in the same way as the presentation to the steering group committee, they would get bored. The other way around, the steering group would perhaps raise some eyebrows on structuring laying out the Q3 numbers as a bachelorette-party-speech. 
+
+### Alternate and break up your flow!
+
+### Techniques
+
+### Gestures, body language and pitch of voice
