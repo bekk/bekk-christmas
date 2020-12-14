@@ -22,9 +22,7 @@ authors:
 ## What is ArgoCD?
 
 [ArgoCD](https://argoproj.github.io/argo-cd/) is a continuous delivery tool for Kubernetes that uses git-repos as the source-of-truth for the desired state of
-the cluster (following the [GitOps](https://www.weave.works/technologies/gitops/) philosophy). It runs inside the cluster and continuously monitor the git-repos for changes, rendering them into Kubernetes manifests and applying them to the cluster. So, contrary to the common pipeline approach where changes are pushed in, ArgoCD pulls them. It comes with a UI for visualizing resources and their relations, which is particularly handy for newcomers to Kubernetes. The UI _may_ also be used to administer applications, repositories etc, but then you are engaging in ClickOps rather than GitOps.
-
-
+the cluster (following the [GitOps](https://www.weave.works/technologies/gitops/) philosophy). It runs inside the cluster and continuously monitor the git-repos for changes, rendering them into Kubernetes manifests and applying them to the cluster. So, contrary to the common pipeline approach where changes are pushed in, ArgoCD pulls them. It comes with a UI for visualizing resources and their relations, which is particularly handy for newcomers to Kubernetes. The UI *may* also be used to administer applications, repositories etc, but then you are engaging in ClickOps rather than GitOps.
 
 The central component is the custom resource `Application` which basically is a pointer to a git-repo containing code 
 that can be rendered into Kubernetes manifests. You may specify branch or tag, path, whether it should be automatically synced, 
@@ -32,7 +30,7 @@ inject parameters etc. See the doc for an example showing all the knobs (https:/
 Even though it supports rolling back to previously deployed versions, ArgoCD uses no database, it simply stores the necessary state on the 
 `Application` CR (i.e. in etcd).
 
-<image of echo-server app?>
+![The echoserver Application](/assets/screenshot-2020-12-14-at-21.31.29.png)
 
 ## App-of-apps (the making life simpler part)
 
@@ -49,17 +47,16 @@ relevant parameters to all applications.
 Now when it comes to selecting a tool/language for describing the Kubernetes-manifests there will be lots of opinions. Here is mine. 
 I am a developer and I like to write code. I like to find the right abstractions and create generic reusable pieces. I 
 have always struggled with templating languages like Jinja2 or Go-templates because they are so limited and always "get in my way". 
-After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f**k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out 
+After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f\*\*k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out 
 jsonnet. I had heard jsonnet was a bit complex, but my initial skepticism was blown away after trying it. It feels much more familiar
 than awkward templating languages and it is very easy creating libraries of reusable code (see for example [bitnami/kube-libsonnet](https://github.com/bitnami-labs/kube-libsonnet).
-    
 
 As hinted about in [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db),
  you could quite easily create reusable (and testable) pieces allowing you to generate the full stack of kubernetes objects 
  (deployment, service, netpol, ingress, service monitor, etc) by just declaring its config, similar to what you would to in a helm values-file. 
  An example of what such code could look like:
 
-```jsonnet
+```json
 local lib = import 'lib/v2/lib.libsonnet';
 
 function(name='echo-server', namespace='default', env)            # top-level arguments (tlas) can be injected here
@@ -88,17 +85,20 @@ If done right, all resources can still be fully patchable. And after working a b
  it will also let you (should you need to):
 
 * Validate the generated Kubernetes manifest:
-    ```bash
-    jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict --ignore-missing-schemas
-    ```
+
+  ```bash
+  jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict --ignore-missing-schemas
+  ```
 * Dry-run against a cluster:
-    ```bash
-    jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
-    ```
+
+  ```bash
+  jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
+  ```
 * Diff against a cluster:
-    ```bash
-    jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f - | diff-so-fancy
-    ``` 
+
+  ```bash
+  jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f - | diff-so-fancy
+  ```
 
 ## Putting it together (?)
 
@@ -114,7 +114,7 @@ argocd-root              # git repo
     apps.jsonnet         # renders all Applications according to vars/<env>.libsonnet, injecting tla for env etc
 ```
 
-The root-repo will, among others, render the echoserver `Application`, propagating relevant tlas such as `<env>`. _That_ repo
+The root-repo will, among others, render the echoserver `Application`, propagating relevant tlas such as `<env>`. *That* repo
 will in turn render the app-specific Kubernetes-manifests. It might look something like:
 
 ```
@@ -129,14 +129,8 @@ argocd-apps                 # git repo
     otherapp/...
     anotherapp/...
 ```
- 
 
- 
 ## Summing up
 
 I have shown two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. They 
-are both interesting and powerful on their own, 
-
-
-
-
+are both interesting and powerful on their own,
