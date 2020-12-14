@@ -45,21 +45,23 @@ root `Application` that transitively renders all your `Applications` and underly
 
 ## Jsonnet
 
-Now when it comes to selecting a tool/language for describing the Kubernetes-manifests there will be lots of opinions. Here is mine. 
-I am a developer and I like to write code. I like to find the right abstractions and create generic reusable pieces. I have always struggled with templating languages like Jinja2 or Go-templates because they are so limited and always "get in my way". After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f\*\*k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out jsonnet. I had heard jsonnet was a bit complex, but my initial skepticism was blown away after trying it. It feels much more familiar than awkward templating languages and it is very easy creating libraries of reusable code (see for example [bitnami/kube-libsonnet](https://github.com/bitnami-labs/kube-libsonnet).
+When it comes to selecting a tool/language for describing the Kubernetes-manifests there will be lots of opinions. This is currently mine:
 
-As hinted about in [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db), you could quite easily create reusable (and testable) pieces allowing you to generate the full stack of kubernetes objects (deployment, service, netpol, ingress, service monitor, etc) by just declaring its config, similar to what you would to in a helm values-file. 
+I am a developer and I like to write code. I like to find the right abstractions and create generic, reusable pieces. I have always struggled with templating languages like Jinja2 or Go-templates because they are so limited and always "get in my way". After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f\*\*k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out jsonnet. I had heard it was a bit complex, but my initial skepticism was blown away after trying it. It felt much more familiar than the awkward templating languages and factoring the code into reusable components was a breeze (see for example [bitnami/kube-libsonnet](https://github.com/bitnami-labs/kube-libsonnet)).
+
+In jsonnet, it is quite easy to build a library like `app.libsonnet` below, allowing you to generate the full stack of Kubernetes objects (deployment, service, netpol, ingress, service monitor, etc) just by declaring the stack's config. Similar to what you would do in a helm values-file, but achieved with code rather than templating.
 
 An example of what such code could look like:
 
 ```json
 local lib = import 'lib/v2/lib.libsonnet';
 
-# top-level arguments (tlas) can be injected here
+# top-level arguments (tlas) can be injected here:
 function(name='echo-server', namespace='default', env)
   local vars = lib.loadVars(env);
 
   (import 'lib/v2/app.libsonnet') {
+    # here we are patching the default _config:
     _config+: {
       name: name,
       namespace: namespace,
@@ -78,16 +80,18 @@ function(name='echo-server', namespace='default', env)
   }.newAppAsList()
 ```
 
-If done right, all resources can still be fully patchable. And after working a bit with jsonnet, you realize, since it speaks "native Kubernetes", it will also let you (should you need to):
+If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will similar to YAML still allow you to:
 
 * Validate the generated Kubernetes manifest:
   ```bash
   jsonnet echoserver.jsonnet --tla-str env="test" -J . | kubeval --strict
   ```
+
 * Dry-run against a cluster:
   ```bash
   jsonnet *.jsonnet --tla-str env="opstest" -J . | kubectl apply --dry-run=server -f -
   ```
+
 * Diff against a cluster:
   ```bash
   jsonnet *.jsonnet --tla-str env="opstest" -J . | k diff -f -
