@@ -27,7 +27,7 @@ initialModel =
     }
 ```
 
-This looks fine, but this strategy does pose some problems. One problem is that there is no way to know whether we are still waiting for the server to respond, or whether there actually are no articles. You could imagine a user being a little scared if we display a message saying "There are no articles" for a second, before actually get the articles and display them. The user might think that all their articles have been deleted, before realising that the server was just a little slow to respond.
+This looks fine, but this strategy does pose some problems. One problem is that there is no way to know whether we are still waiting for the server to respond, or whether there actually are no articles. You could imagine a user being a little scared if we display a message saying "There are no articles" for a second, before we actually get the articles and display them. The user might think that all their articles have been deleted, before realising that the server was just a little slow to respond.
 
 ## A Loading Field
 
