@@ -23,7 +23,7 @@ EU-Taksonomien er en del av EU-kommisjonens [handlingsplan](https://ec.europa.eu
 
 Bærekraftbegrepet vil som sådan gjennomgå en renselsesprosess, der bedrifters forsøk på grønnvasking ikke lenger vil være tilstrekkelig. Det bedrifter foretar seg av inntektsgivende aktiviteter og investeringer må oppfylle tre overordnede krav for å bli ansett som bærekraftige: 
 
-1. Aktiviteten må oppfylle minst ett av EUs seks miljømål, vurdert etter bestemte krav:
+1. Aktiviteten må bidra vesentlig til minst ett av EUs seks miljømål, vurdert etter bestemte krav:
 
    *a. Begrensinger av klimaendringer*
 
@@ -42,7 +42,7 @@ Bærekraftbegrepet vil som sådan gjennomgå en renselsesprosess, der bedrifters
 I første omgang, har EU prioritert å utvikle tekniske krav for de bransjene som har størst påvirkning på klimagassutslippene per i dag. Dette er 1) land- og jordbruk, 2) industri, 3) elektrisitet, gass, damp og varmtvannsforsyning, 4) vannforsyning, avløps- og renovasjonsvirksomhet, 5) transport og lagring, 6) informasjon og kommunikasjon, 7) bygg og anlegg, 8) forsikringstjenester og 9) ingeniørtjenester.
 
 Her er et eksempel på hva et bransjespesifikt, teknisk krav kan være: 
-For et offentlig transportmiddel, som er en del av transport- og lagringssektoren, gjelder følgende tekniske krav for å oppfylle EUs miljømål nr. 1 om å begrense klimaendringer: 
+For et offentlig transportmiddel, som er en del av transport- og lagringssektoren, gjelder følgende tekniske krav for å anses å bidra vesentlig til EUs miljømål nr. 1 om å begrense klimaendringer: 
 
 1. Transportmidler (f.eks. t-bane, trikk, buss og jernbane) som har null direkte utslipp, målt i gram CO2-ekvivalenter per passasjerkilometer (gCO2e/pkm), er kvalifisert. Blant annet hel-elektriske og hydrogenbaserte kjøretøy anses å ha null direkte utslipp.
 2. Andre flåter er kvalifisert hvis direkte utslipp er under 50 gCO2e/pkm frem til 2025 (ikke-kvalifisert deretter).
