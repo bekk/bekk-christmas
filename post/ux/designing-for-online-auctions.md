@@ -16,7 +16,7 @@ If I say “online auction”, I’m guessing that eBay is one of the first thin
 
 After scouring Dribbble, Pinterest, and Behance on the great search for inspiration, I soon realized that there are few insights and barely any data about online auctions and best practices, especially from a UX perspective. The online auctions I visited were often unorganized and, well, not very inspiring (hello, eBay 😬). I was left with lots of questions: how does online bidding work? What is a proxy bid? How do the users prefer to follow an auction? What type of information do they want? When do they want it?
 
-One of the first things my team of two developers, a product owner, and myself as a UX-designer did was get to know our users through interviews and surveys. It was difficult to get the user group to talk to us, and they just kept repeating “make it simple”. So, we realized that these farmers, truck drivers, and construction workers appreciate simple interfaces they can use while operating their machines, which they spend most of their days doing. They have a unique, close bond to their machines and a lot of knowledge about them, yet they are not particularly technical. What they want to be doing is using their machines, not spending lots of time online trying to place bids.
+One of the first things my team of two developers, a product owner, and myself as a UX designer did was get to know our users through interviews and surveys. It was difficult to get the user group to talk to us, and they just kept repeating “make it simple”. So, we realized that these farmers, truck drivers, and construction workers appreciate simple interfaces they can use while operating their machines, which they spend most of their days doing. They have a unique, close bond to their machines and *a lot* of knowledge about them, yet they are not particularly technical. What they want to be doing is using their machines, not spending lots of time online trying to place bids.
 
 ![](https://media.giphy.com/media/xT5LMESHbV1KLGMsq4/giphy.gif)
 
@@ -27,6 +27,7 @@ We spent many months designing and building the auction. Although we wanted to r
 <p>&nbsp;</p>
 
 ## All the information is important, so structure wisely
+
 ![](/assets/info6.png)
 
 When working on the information architecture for an active auction, we realized that pretty much all the information on the page is equally important for the users. This includes photos, information about the machine, and auction-specific information. Our hypothesis is that if users can’t find enough information, they won’t bother bidding. 
@@ -38,6 +39,7 @@ We compressed some information to save space, such as the picture carousel and a
 <p>&nbsp;</p>
 
 ## Proxy bidding is logical, yet so complicated
+
 ![](/assets/proxybid3.png)
 
 Proxy bidding *is* pretty straightforward - you enter the highest amount you are willing to buy the machine for and place the bid. The system then automatically bids for you until your maximum sum has been reached. Pretty simple, right? Well, we thought so to, but when writing the logic for proxy bidding we realized that there are plenty of edge cases. What happens when two users place the same proxy bid? What about when four users have submitted proxy bids and someone bids over all of them? We knew that about 50% of our users use proxy bidding, and if we thought it was complicated, it was definitely complicated for them.
@@ -47,6 +49,7 @@ To make it easier to understand we created separate input fields for regular bid
 <p>&nbsp;</p>
 
 ## Make bidding simple, and always give feedback
+
 ![](/assets/bidding2.png)
 
 Our main activation goal is for a user to place a bid, so we have focused on making bidding understandable and simple. By displaying two separate input fields for bidding, the user gets a feeling of control, and we can keep them updated by displaying personalized contextual information. 
@@ -58,6 +61,7 @@ We decided to add a fake 2-second delay after submitting a bid before showing th
 <p>&nbsp;</p>
 
 ## The bidding log can get long, so make it scannable and transparent
+
 ![](/assets/biddinglog5.png)
 
 Transparency is imperative in an auction. The users should always be able to see a complete log of the bids that have come in, down to the second they were placed. The log should be structured well and easy to scan. Also, don’t underestimate white space!
@@ -67,6 +71,7 @@ Based on user feedback we have iterated on our bidding log a few times. Users of
 <p>&nbsp;</p>
 
 ## Nudge the user, but stay away from dark design
+
 ![](/assets/nudge.png)
 
 As mentioned earlier, our ultimate goal is to get the users to place a bid. E-commerce websites sometimes use nudging to get users to buy something - such as stating that there are few items left, or that 20 people have bought the item in the last hour. We decided to use elements to nudge the user, such as saying that there have been many bids in the last hour, or that there is little time left, yet being aware of staying away from dark design. We never lie when displaying these numbers, and we don’t trick the users into placing bids in any way. We even get them to confirm their bids before actually submitting them, and letting them know when the sum seems too high. 
