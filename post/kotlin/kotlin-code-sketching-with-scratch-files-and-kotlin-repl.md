@@ -20,10 +20,10 @@ ingress: >-
 
   tool to quickly verify that code snippet, with less overhead!
 ---
-This example is arguably a little overdramatized (\*), and you would probably be better off just scribbling
-down some pseudo-code in a arbitrary text file, instead of going through the process of setting up a new project.
+This example is arguably a little overdramatised (\*), and you would probably be better off just scribbling
+down some pseudo-code in an arbitrary text file, instead of going through the process of setting up a new project.
 Although, there might be certain times where we want to have some code executed and output printed
-as fast as possible, to quickly be able to verify or refute some assumption. A quick feedback-loop like this is also very convenient in a learning phase, be it a new concept or a new language. Luckily JetBrains has got our backs
+as fast as possible, to be able to quickly verify or refute some assumption. A quick feedback-loop like this is also very convenient in a learning phase, be it a new concept or a new language. Luckily JetBrains has got our backs
 and provided us with just the tools we need: _Scratch Files_, _Worksheets_ and _REPL_ capabilities.
 
 \* _Besides, theres not really much commuting these days with mostly everyone working remote_
@@ -55,14 +55,14 @@ By default we have access to the native Kotlin language constructs as well as th
 
 _\* If you get an `Unresolved reference` error in the Scratch Output, make sure the functionality from your module is defined inside a [package](https://kotlinlang.org/docs/reference/packages.html#packages)._
 
-### Customizing scratch file execution
+### Customising scratch file execution
 
 We have two additional options that can be toggled to alter how our scratches will be executed: **Interactive mode** and **Use REPL**, where the former simply enables our scratches to be run automatically if we stop typing. **Use REPL** means that we will switch to a [Read-Eval-Print-Loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) execution style, where each expression will we evaluated and its output printed individually. As a result if we append new expressions to an existing scratch file, IntelliJ doesn't have to execute the whole file, but rather only the last expression we added. Personally I like to toggle both options, which lets me sketch out code and see the resulting output instantly.
 
 ## Use cases
 
-The example provided in the beginning, although a bit contrived but realistic nonetheless, is just one of many use cases. Depending on your work and learning process, using scratch files can be an excellent way to try out new Kotlin concepts, or simply using it as a place to dump some logic that you do not want polluting your project. If we look a little closer at the extension that IntelliJ uses for scratch files, `.kts`, it is implied that scratch files are simply [Kotlin Script](https://github.com/Kotlin/KEEP/blob/master/proposals/scripting-support.md) files opened in a particular IntelliJ context. Sharing code snippets now becomes a trivial operation, since we can create a arbitrary `.kts`-file and exchange it with a friend or collegue. Given that they are using IntelliJ the file can simply be dropped into **Scratches and Consoles** and they'll be able to execute it and see the output in a matter of seconds.
+The example provided in the beginning, although a bit contrived but realistic nonetheless, is just one of many use cases. Depending on your work and learning process, using scratch files can be an excellent way to try out new Kotlin concepts, or simply using it as a place to dump some logic that you do not want polluting your project. If we look a little closer at the extension that IntelliJ uses for scratch files, `.kts`, it is implied that scratch files are simply [Kotlin Script](https://github.com/Kotlin/KEEP/blob/master/proposals/scripting-support.md) files opened in a particular IntelliJ context. Sharing code snippets now becomes a trivial operation, since we can create a arbitrary `.kts`-file and exchange it with a friend or colleague. Given that they are using IntelliJ the file can simply be dropped into **Scratches and Consoles** and they'll be able to execute it and see the output in a matter of seconds. Additionally, scratches are a nice offline alternative to the [Kotlin Playground](https://play.kotlinlang.org/).
 
 ## Alternatives with even less overhead
 
-To create a Scratch file you have to at least get IntelliJ up and running with an existing project, so that we can access the scratches folder. If you're comfortable not having the auxiliary tools that IntelliJ provides, like syntax highlighting for instance, a more lightweight approach can be used. It's possible to use the Kotlin REPL to execute Kotlin code snippets directly on a command line and avoid IntelliJ and a corresponding project setup alltogether. Invoking `kotlinc` on a command line will give access to an interactive shell in the Kotlin compiler, where we may execute individual Kotlin code snippets and read output from the console. The standalone Kotlin compiler can be found here: https://github.com/JetBrains/kotlin/releases/tag/v1.4.21.
+To create a Scratch file you have to at least get IntelliJ up and running with an existing project, so that we can access the scratches folder. If you're comfortable not having the auxiliary tools that IntelliJ provides, like syntax highlighting for instance, a more lightweight approach can be used. It's possible to use the Kotlin REPL to execute Kotlin code snippets directly on a command line and avoid IntelliJ and a corresponding project setup all together. Invoking `kotlinc` on a command line will give access to an interactive shell in the Kotlin compiler, where we may execute individual Kotlin code snippets and read output from the console. The standalone Kotlin compiler can be found here: https://github.com/JetBrains/kotlin/releases/tag/v1.4.21.
