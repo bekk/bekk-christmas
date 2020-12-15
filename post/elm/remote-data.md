@@ -36,7 +36,7 @@ One way to distinguish between a request that's still loading, and a request tha
 ```elm
 type alias Model =
     { articles : List Article
-    , loading: Bool
+    , loading : Bool
     }
 ```
 
@@ -51,7 +51,7 @@ To solve this issue, we could add _another_ field to our model, called `error`. 
 ```elm
 type alias Model =
     { articles : List Article
-    , loading: Bool
-    , error: Maybe Http.Error
+    , loading : Bool
+    , error : Maybe Http.Error
     }
 ```
