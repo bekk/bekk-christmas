@@ -48,6 +48,8 @@ To make it easier to understand we created separate input fields for regular bid
 
 ### Make bidding simple, and always give feedback
 
+![](/assets/bidding2.png)
+
 Our main activation goal is for a user to place a bid, so we have focused on making bidding understandable and simple. By displaying two separate input fields for bidding, the user gets a feeling of control, and we can keep them updated by displaying personalized contextual information. 
 
 We observed that the users wanted more concrete feedback on how they were doing in the auction. Therefore we added instant feedback after they have submitted a bid, telling the user that their bid is accepted and if they are in the lead or have been outbid by a proxy bid.
