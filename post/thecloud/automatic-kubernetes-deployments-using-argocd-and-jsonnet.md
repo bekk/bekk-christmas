@@ -48,7 +48,7 @@ When it comes to selecting a [tool/language](https://argoproj.github.io/argo-cd/
 
 I am a developer and I like to write code. I like to find the right abstractions and create generic, reusable pieces. I have always struggled with templating languages like Jinja2 or Go-templates because they are so limited and always "get in my way". After reading [Using Jsonnet does not have to be complex](https://medium.com/@prune998/using-jsonnet-does-not-have-to-be-complex-54b1ad9b21db) and [Why the f\*\*k are we templating yaml?](https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html) I tried out jsonnet. I had heard it was a bit complex, but my initial skepticism was blown away after trying it. It felt much more familiar than awkward templating languages and factoring the code into reusable components was very easy (see for example [bitnami/kube-libsonnet](https://github.com/bitnami-labs/kube-libsonnet)).
 
-In jsonnet, it is quite easy to build a library allowing you to generate the full stack of Kubernetes objects (deployment, service, network policies, ingress, service monitor, etc) just by declaring the stack's config. Something similar to what you would do in a Helm values-file, but achieved with code rather than templating. Below is an example of what that *might* look like.
+In jsonnet, it is quite simple to build a library allowing you to generate the full stack of Kubernetes objects (deployment, service, network policies, ingress, service monitor, etc) just by declaring the stack's config. Something similar to what you would do in a Helm values-file, but achieved with code rather than templating. Below is an example of what that *might* look like.
 
 ```json
 local lib = import 'lib/v2/lib.libsonnet';
