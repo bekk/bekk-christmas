@@ -18,7 +18,7 @@ type alias Model =
     }
 ```
 
-This looks good, But we have to initialize the model somehow, and since we don't have any articles when starting off, because we havent made the request yet, we would have to initialize the model like this:
+This looks good, But we have to initialize the model somehow, and since we don't have any articles when starting off (because we haven't made the request yet) we would have to initialize the model like this:
 
 ```elm
 initialModel : Model
