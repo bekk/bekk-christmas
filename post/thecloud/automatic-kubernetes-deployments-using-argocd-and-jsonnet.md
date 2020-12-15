@@ -27,7 +27,7 @@ the cluster (following the [GitOps](https://www.weave.works/technologies/gitops/
 
 ![The echoserver Application](/assets/screenshot-2020-12-14-at-21.31.29.png)
 
-The central component is the custom resource `Application` which basically is a pointer to a Git repo containing code that can be rendered into Kubernetes manifests. You may specify branch/tag, path, whether it should be automatically synced, inject parameters etc. See the doc (which is excellent btw) for [an example](https://argoproj.github.io/argo-cd/operator-manual/application.yaml) showing all the knobs).
+The central component is the custom resource `Application` which basically is a pointer to a Git repo containing code that can be rendered into Kubernetes manifests. You may specify branch/tag, path, whether it should be automatically synced, inject parameters etc. See the doc (which is excellent btw) for [an example](https://argoproj.github.io/argo-cd/operator-manual/application.yaml) showing all the knobs.
 
 ## Deployment orchestration
 
@@ -40,7 +40,7 @@ Finally, one of the gems of ArgoCD is the pattern which is referred to as [App-o
 An `Application` may point to a Git repo that renders additional `Application` CRs (again pointing to other Git repo), continuing in as long a chain as necessary.
 
 So you can effectively bootstrap your entire stack by seeding ArgoCD with a single 
-root `Application` that transitively renders all your `Applications` and underlying resources. No clicking required. You can of course also propagate relevant parameters such as `<env>` to all applications. 
+root `Application` that transitively renders all your `Applications` and underlying resources. No clicking required. You can of course also propagate relevant parameters such as `<env>` to all applications as needed. 
 
 ## Jsonnet
 
