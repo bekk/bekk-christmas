@@ -44,7 +44,7 @@ fromString yearValue =
 
 `Year` is now a type and the property `yearValue` is unaccessible from other modules. We only expose the `fromString` function so that we control entirely how the `Year` type is created. From the definition of the `fromString` function we can see that we only return the `Year` type if the `String` input is indeed a year. 
 
-Now we also have a way of validating the "year" input part of the form where the user creates a `Person`. The `Person` record is now slightly improved of the `birthYear` property being of type `Year` when it is successfully created.
+Now we also have a way of validating the "year" input part of the form where the user creates a `Person`. The property `birthYear` is now guaranteed to be a year by the type system.
 
 ```elm
 type alias Person =
