@@ -31,7 +31,7 @@ This looks fine, but this strategy does pose some problems. One problem is that 
 
 ## A Loading Field
 
-One way to distinguish between a request that's still loading, and a request that return an empty list is to add a loading field to our model, like this:
+One way to distinguish between a request that's still loading, and a request that returned an empty list is to add a loading field to our model, like this:
 
 ```elm
 type alias Model =
