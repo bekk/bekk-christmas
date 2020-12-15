@@ -1,7 +1,7 @@
 ---
 post_year: 2020
 post_day: 20
-title: Fra analog til digital bøsse på speed
+title: Fra analog til digital bøsse på speed – test
 ingress: I en nasjonal dugnad, en søndag i året har over 100 000 mennsker banket
   på dører i hel Norge for en god sak. Hva skjer når man ikke lenger kan samles
   fysisk og hvordan erstatter vi denne aktiviteten digitalt, på seks uker?!
@@ -21,6 +21,6 @@ TV-aksjonen er verdens største innsamlingsaksjon og en stor nasjonal dugnad der
 
 Bøssebærerne representerer alle deler av den norske befolkningen, fra barnefamilier, besteforeldre til miljøengasjerte ungdommer. En av de viktigste prioriteringene var å gjøre det så enkelt som mulig for hvem som helst å komme i gang med en digital bøsse, både de som enkelt tar i bruk nye digitale tjenester og de som synes teknologi generelt sett er noe herk. Vi fokuserte mye på å gjøre registreringen, og det å opprette en digital bøsse, så sømløs som mulig. Blant annet ved å beholde registreringsskjemaet fra tidligere år og automatisk generere en ferdig digital bøsse med predefinert bilde, tekst, belønninger og ved å hente ut navn og postnummer fra registreringen.
 
-### 2. Få frem det personlige med å være digital bøssebærer
+#### 2. Få frem det personlige med å være digital bøssebærer
 
 Vi ønsket å gjøre den «digitale bøssebærer-opplevelsen» like personlig som det tradisjonelle møtet i døren, ved at de som ønsket kunne redigere bøssen ved å beskrive sitt engasjement for saken og legge til et bilde av seg selv. Det at de kunne endre på teksten og belønningene åpnet for at giverne i tillegg kunne bli litt bedre kjent med personen bak bøssen. Av erfaring fra Spleis vet vi også at personlige innsamlinger gjerne engasjerer mer når innsamlingen deles i nettverket
