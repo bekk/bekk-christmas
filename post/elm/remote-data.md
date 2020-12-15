@@ -80,7 +80,7 @@ But what does this mean? We have a list of articles, but we also have an error. 
 
 We are still loading, but we have an error? How did we manage to do that? I don't know, but there is probably a bug that makes this happen.
 
-How our app responds to this model is anyone's guess, but it's a recipe for disaster. And while we _could_ just be extra diligent, and double check that we never end up in this state, wouldn't it be better if it was _impossible_ to end up in this state?
+How our app responds to these models is anyone's guess, but it's a recipe for disaster. And while we _could_ just be extra diligent, and double check that we never end up in this state, wouldn't it be better if it was _impossible_ to end up in this state?
 
 ## Making Impossible States Impossible
 
