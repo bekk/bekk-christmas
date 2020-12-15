@@ -20,7 +20,7 @@ One of the first things my team of two developers, a product owner, and myself a
 
 ![](https://media.giphy.com/media/xT5LMESHbV1KLGMsq4/giphy.gif)
 
-I came to understand that there are several essential elements to an online auction, and that it is absolutely critical that they work well and are simple to use, especially when the user is committing himself to bids of *millions* of krones. Physical auctions are fast-paced and the prices rise quickly, and this is exactly what happens during the final minutes of an online auction as well. Therefore it is imperative that the user knows how to place a bid and that the site doesn’t go down (yes, we stress -ested this multiple times 😅). 
+I came to understand that there are several essential elements to an online auction, and that it is absolutely critical that they work well and are simple to use, especially when the user is committing himself to bids of *millions* of krones. Physical auctions are fast-paced and the prices rise quickly, and this is exactly what happens during the final minutes of an online auction as well. Therefore it is imperative that the user knows how to place a bid and that the site doesn’t go down (yes, we stress-tested this multiple times 😅). 
 
 We spent many months designing and building the auction. Although we wanted to release early to get direct feedback from users, there was a lot of functionality that had to be ready before a release. I regularly tested my designs and the flow I had made on the users I could get a hold of, iterating on everything from the information architecture to the microcopy, yet we launched with a slight uncertainty of how the product would be received. After launching our product in October we have been observing and monitoring how the auction is being used, as well as communicating with actual users. This is an attempt to summarize some challenges and key learnings of how to design for an online auction, or similar platforms, such as the article I would have wanted to read many months ago. 
 
@@ -28,13 +28,13 @@ We spent many months designing and building the auction. Although we wanted to r
 
 ## All the information is important, so structure wisely
 
-![](/assets/info6.png)
+![](/assets/info7.png)
 
 When working on the information architecture for an active auction, we realized that pretty much all the information on the page is equally important for the users. This includes photos, information about the machine, and auction-specific information. Our hypothesis is that if users can’t find enough information, they won’t bother bidding. 
 
 This is quite a lot of information, so we had to structure the page in an organized way, making it easy to scan while giving enough detail. We knew from a survey that photos were especially important, and placed a photo carousel at the top of the page, along with the name of the machine and the current highest bid. The user can get a quick overview of what they are looking at, and the status of the auction. We also located the input fields for placing bids at the top, considering this is what most users return to the auction to do - place a new bid. 
 
-We compressed some information to save space, such as the picture carousel and an expand/collapse box for the bidding log (which can get really long - the record is 165 bids!). By following up on emails and phone calls from users asking questions about the machines, we can keep iterating on the design and information architecture to give them what they need when they need it. 
+We compressed some information to save space, such as the photo carousel and an expand/collapse box for the bidding log (which can get really long - the record is 165 bids!). By following up on emails and phone calls from users asking questions about the machines, we can keep iterating on the design and information architecture to give them what they need when they need it. 
 
 <p>&nbsp;</p>
 
