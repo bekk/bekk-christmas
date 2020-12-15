@@ -1,4 +1,5 @@
 ---
+calendar: ux
 post_year: 2020
 post_day: 20
 title: Fra analog til digital bøsse på speed – test
