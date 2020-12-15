@@ -3,6 +3,8 @@ calendar: security
 post_year: 2020
 post_day: 15
 title: Hacking Like it's 1996 - a short history of the stack buffer overflow.
+authors:
+  - Mathias Rørvik
 ---
 The year was 1996, and it’s the 11th of November. Macarena is topping the charts, Bill Clinton wins his second presidential term, and an article in a very peculiar e-zine is published which would change the world of information security forever. The publication in question was Phrack, an e-zine for and by hackers. The article in question was Aleph One’s “Smashing the Stack for fun and profit”, thus began what many regards as the golden age of software exploitation.
 
