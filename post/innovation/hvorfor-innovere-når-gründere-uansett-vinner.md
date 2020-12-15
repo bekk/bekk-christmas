@@ -22,4 +22,4 @@ Men er trusselen reell? Og er å innovere selv riktig respons?\
 \
 Vi tok en prat med analytiker og rådgiver Salvador Baille.
 
-<iframe src="https://anchor.fm/drypp/embed/episodes/--enhgdr" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://anchor.fm/drypp/embed/episodes/--enhgva" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
