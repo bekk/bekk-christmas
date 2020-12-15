@@ -1,7 +1,7 @@
 ---
 post_year: 2020
 post_day: 20
-title: Analog til digital bøsse på speed
+title: Fra analog til digital bøsse på speed
 ingress: I en nasjonal dugnad, en søndag i året har over 100 000 mennsker banket
   på dører i hel Norge for en god sak. Hva skjer når man ikke lenger kan samles
   fysisk og hvordan erstatter vi denne aktiviteten digitalt, på seks uker?!
