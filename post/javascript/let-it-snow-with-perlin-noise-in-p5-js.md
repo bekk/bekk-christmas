@@ -27,6 +27,8 @@ There are a number of ways to make snow in your browser. For example, clever use
 
 For today's article we'll use my weapon of choice for creative coding, namely [p5.js](https://p5js.org/). It's a library quite literally made for creative coding, effectively offering a wrapper around the HTML Canvas API to make it easier to work with. As opposed to Canvas, most of the p5 API is fairly self-explanatory. For example, drawing a circle is as simple as `circle(x, y, diameter)`. Let's do that right now!
 
+## Drawing a delightful disk
+
 <iframe src="https://codesandbox.io/embed/snow-0-lli8m?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-0"
@@ -44,6 +46,8 @@ Meanwhile, the draw function runs every time your screen renders a new frame. Th
 
 I won't go too in-depth on the p5 API, as you can find just about everything you need in the [reference](https://p5js.org/reference/) or the [examples](https://p5js.org/examples/). There's even an example of [simulating snowflakes](https://p5js.org/examples/simulate-snowflakes.html) there, which served as one of the main inspirations for this article. Speaking of which, let's get started on simulating snow.
 
+## Simulating some static snow
+
 <iframe src="https://codesandbox.io/embed/snow-1-vr9mo?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-1"
@@ -57,6 +61,8 @@ In the draw function we'll iterate through this list of objects and draw a circl
 
 This is a great start, but the snowflakes all seem fairly static. While their pattern is random, the pattern doesn't change and the looping can be very obvious as a result. Furthermore, our upcoming landscape scene is lacking in depth, so let's add some!
 
+## Learning to love layers of lists
+
 <iframe src="https://codesandbox.io/embed/snow-2-h8gww?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-2"
@@ -69,6 +75,8 @@ The snowflake data structure is now a list of lists, where the inner lists repre
 In terms of movement we can also make snowflakes in the back move slightly slower than the ones in the front. Instead of a single static layer, we now have multiple static layers! To alleviate this we can assign each snowflake with a mass during the setup function, which factors into the speed at which the snowflakes fall. That way the pattern of snowflakes will change ever so slightly.
 
 Now we're really getting somewhere! We have layering and some fairly dynamic vertical movement. However, there's a whole other axis we can work with too! Let's get into making some wind. 
+
+## Working with wavy wind
 
 Wind is sort of chaotic, so we need some sort of randomness. We've already used “true” randomness for the positioning and mass of the snowflakes, but that won't necessarily help us here. If we were to randomly move the snowflakes now, it would look all jittery, so we need to somehow make it look smooth. Thankfully I have just the tool for the job, and its name is Perlin noise.
 
@@ -100,6 +108,8 @@ Finally, the noise() function returns a value between 0 and 1. We subtract -0.5 
 
 With the wind in order, we now have ourselves some pretty cool snow! Honestly, writing the explanation took ten times the amount of time it took to code the snow itself. Once you get into the groove and start to get familiar with the tools at your disposal, the possibilities are endless! With our snow in order, we can combine our depth system and Perlin noise to generate some landscape to go with it! Let's hide the snowflakes for now and get to work on this winter wonderland.
 
+## Making majestic mountains
+
 <iframe src="https://codesandbox.io/embed/snow-4-5wvvn?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-4"
@@ -119,6 +129,8 @@ Note that we step over some pixels to reduce the amount of computation needed. O
 
 We're getting very close to the end result here, but the sun isn't quite right. We could place the sun randomly, but I like how it looks just peeking over the ridges in the back. However, that implies it's sort of a sunrise or sunset, which is typically accompanied by a gradient in the sky! Oh, and we should also turn that snow back on.
 
+## Ready to reveal our riveting results
+
 <iframe src="https://codesandbox.io/embed/snow-5-gsvls?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-5"
@@ -134,17 +146,20 @@ Now that we have a playground, let's play around with some parameters and see wh
 
 Simply tweaking the noise amp and zoom can make a big visual difference. In the image above we can make the ridges more akin to sand dunes, dense forests, or the kind of hostile looking mountains that are one medieval castle away from being the home of a secluded vampire. Colors make a huge difference too, as the dunes may as well be the rolling hills of a Windows wallpaper or waves at sea.
 
-And that brings us to the end of this article! You can find the final source code in my generative art repository [here](https://github.com/plusk/generative-processing). We've really only scratched the surface of what p5 is capable of, and what can be done in the world of generative art. Describing the full breadth of possibilities would require an article all by itself. So instead of that, I'll recommend some places you can get some inspiration! These days I get most of my inspiration from the subreddit [r/generative](https://www.reddit.com/r/generative/top/?sort=top&t=all) as there are so many different people posting all kinds of crazy shit. There are also Instagram hashtags like [#generativeart](https://www.instagram.com/explore/tags/generativeart/) if that's more your kind of thing. For specific people to check out I'd recommend the following Instagram accounts:
+And that brings us to the end of this article! You can find the final source code in my generative art repository [here](https://github.com/plusk/generative-processing).
+
+## Advice for aspiring artists
+
+We've really only scratched the surface of what p5 is capable of, and what can be done in the world of generative art. Describing the full breadth of possibilities would require an article all by itself. So instead of that, I'll recommend some places you can get some inspiration! These days I get most of my inspiration from the subreddit [r/generative](https://www.reddit.com/r/generative/top/?sort=top&t=all) as there are so many different people posting all kinds of crazy shit. There are also Instagram hashtags like [#generativeart](https://www.instagram.com/explore/tags/generativeart/) if that's more your kind of thing. For specific people to check out I'd recommend the following Instagram accounts:
 
 * [Tyler Hobbs](https://www.instagram.com/tylerxhobbs/)
 * [Kjetil Golid](https://www.instagram.com/kgolid/)
 * [Ilya Borisov](https://www.instagram.com/shvembldr/)
 * [Joshua Bagley](https://www.instagram.com/gengeomergence/)
-* [me](https://www.instagram.com/anders.larsen.96/)
 
 Most importantly I hope you're inspired to make weird stuff of your own! I obviously recommend p5 as it feels super familiar if you've ever worked with JavaScript before. As mentioned earlier, they have some great [examples](https://p5js.org/examples/) where you can just jump into their web editor and get to tweaking. The [reference](https://p5js.org/reference/) really comes in handy along the way too.
 
-I've only really been messing around with it here and there for a few months, but I find that the main limitation is creativity. Then again, I believe Steve Jobs said that great artists steal. I also believe he was quoting Picasso, who may have been rephrasing Igor Stravinsky, which really goes to show that the whole “take credit for someone else's idea” thing can really pan out in the end. I mean just look at The Lion King, the core of it is just Hamlet with more talking animals and less death. 
+I've only really been messing around with it here and there for a few months, as may be evident by [my own Instagram account](https://www.instagram.com/anders.larsen.96/), but I find that the main limitation is creativity. Then again, I believe Steve Jobs said that great artists steal. I also believe he was quoting Picasso, who may have been rephrasing Igor Stravinsky, which really goes to show that the whole “take credit for someone else's idea” thing can really pan out in the end. I mean just look at The Lion King, the core concept is basically Hamlet with more talking animals and less murder. 
 
 That's why my artistic process usually just involves looking at all the great art other people make and wonder “how did they do that”, and then start trying to make it from scratch. It becomes reverse engineering of sorts, which can be a fun technical challenge by itself. And sure, sometimes it doesn't pan out. Maybe the sketch ends up being a bit too much of the same because you found the original to be just right. That's why I don't post a lot of what I make, it just feels like it's lacking a certain _je ne sais quoi_.
 
