@@ -26,7 +26,7 @@ We spent many months designing and building the auction. Although we wanted to r
 
 ### All the information is important, so structure wisely
 
-![](/assets/info2.png)
+![](/assets/info3.png)
 
 When working on the information architecture for an active auction, we realized that pretty much all the information on the page is equally important for the users. This includes photos, information about the machine, and auction-specific information. Our hypothesis is that if users can’t find enough information, they won’t bother bidding. 
 
