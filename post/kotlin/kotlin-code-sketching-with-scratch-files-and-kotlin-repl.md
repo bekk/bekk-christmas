@@ -30,12 +30,12 @@ and provided us with just the tools we need: _Scratch Files_, _Worksheets_ and _
 
 ## Scratches and Kotlin Worksheets
 
-If you want the whole suite of IntelliJ built in auxiliary coding tools, you pretty much have two types of alternatives for your code sketching needs. Firstly there's **Scratch Files** (or **Skratches** for short), which aren't tied to any particular project, and are stored in a separate area (\*). **Kotlin Worksheets** are similar, but will be tied to a specific project upon creation.
+If you want the whole suite of IntelliJ built in auxiliary coding tools, you pretty much have two types of alternatives for your code sketching needs. Firstly there's **Scratch Files** (or **Scratches** for short), which aren't tied to any particular project, and are stored in a separate area (\*). **Kotlin Worksheets** are similar, but will be tied to a specific project upon creation.
 Personally I tend to use mostly scratches, but it can be convenient to have them included in the project itself, in which case worksheets would be the go-to alternative. Additionally, scratches support a wide variety of different languages and extensions, in addition to Kotlin. We'll be focusing on Scratch files for this article.
 
 Scratches can be created either via the menu **File > New > Scratch File**, or by using the built in shortcut if you find that more convenient: **⌘ + Shift + N** or **Ctrl + Alt + Shift + Insert** for Mac and Windows respectively, if using the default keymap. Finally choose the **Kotlin** format for your scratch file, and you're good to go; a file with a `.kts` extension will be opened in a separate tab. To avoid losing your scratches, it may be an idea to rename them and move (or copy) them into a more persistent location.
 
-\* _Your cratches can be found under **Scratches and Consoles** in the IntelliJ project tree_
+\* _Your scratches can be found under **Scratches and Consoles** in the IntelliJ project tree_
 
 ## Features of scratches, and how to run them
 
