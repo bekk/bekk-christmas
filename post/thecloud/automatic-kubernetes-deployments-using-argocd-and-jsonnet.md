@@ -77,7 +77,7 @@ function(name='echo-server', namespace='default', env)
   }.newAppAsList()
 ```
 
-If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (similar to YAML) still allow you to do stuff like:
+If done right, all resources can still be fully patchable. And since the jsonnet code is rendered into JSON which Kubernetes speaks natively, it will (like YAML) still allow you to do stuff like:
 
 * Validate the resources:
 
@@ -111,7 +111,7 @@ argocd-root              # git repo
     apps.jsonnet         # renders all Applications according to vars/<env>.libsonnet, injecting tla for env etc
 ```
 
-The root-repo will, render the echoserver `Application`, propagating relevant tlas such as `<env>`. *That* repo
+The root-repo will render the echoserver `Application` and propagate relevant tlas such as `<env>`. *That* repo
 will in turn render the app-specific Kubernetes-manifests. It might look something like:
 
 ```
@@ -127,4 +127,6 @@ argocd-apps                 # git repo
     anotherapp/...
 ```
 
-New `Applications` are then added by pushing changes to `argocd-root` and deployments are triggered by pushing changes to `argocd-apps`. Voilà! No more manual deploys 🎉.
+New `Applications` are then added by pushing changes to `argocd-root` and deployments are triggered by pushing changes to `argocd-apps`. 
+
+Voilà! No more manual deploys and hopefully a tidier codebase 🎉.
