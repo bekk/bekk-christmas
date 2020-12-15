@@ -9,6 +9,8 @@ ingress: As designers we are used to working on new domains, problems and design
   reflection on the design challenges and solutions of designing for an online
   auction. Perhaps this article can serve as inspiration or insight for other
   designers out there!
+authors:
+  - Thea Sommersletta
 ---
 If I say “online auction”, I’m guessing that eBay is one of the first things you think of. At least that was the first site I thought of when introduced to a new project I would be designing for: an online auction for a company that leases machinery such as tractors, trucks, and wheel loaders (one of many new machines I’ve come to learn about!).
 
