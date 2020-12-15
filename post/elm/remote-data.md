@@ -56,7 +56,7 @@ type alias Model =
     }
 ```
 
-This solves our problems, but is kind of unruly to manage. Imagine for instance that we needed to make 3 network requests in our app, then we would have to have _9_ fields to manage all this state, which would make the model a little bloated and hard to deal with. Also, there is another problem that this approach causes.
+This solves our problems, but is kind of unruly to manage. Imagine for instance that we needed to make 3 network requests in our app, then we would have to have _9 fields_ to manage all this state, which would make the model a little bloated and hard to deal with. Also, there is another problem that this approach causes.
 
 ## Impossible States
 
