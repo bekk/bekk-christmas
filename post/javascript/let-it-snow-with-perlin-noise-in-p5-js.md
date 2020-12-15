@@ -29,14 +29,14 @@ For today's article we'll use my weapon of choice for creative coding, namely [p
 
 ## Drawing a delightful disk
 
+As we move through this article we will provide sandboxes like the one below so you can see both the code and the result. The live editor doesn't seem to update the result, so just press "Open Sandbox" in the lower right corner if you want to tweak parameters. I highly recommend it! We will explain the code following each sandbox regardless.
+
 <iframe src="https://codesandbox.io/embed/snow-0-lli8m?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-0"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-
-We will provide sandboxes like the one above throughout the article so you can see both the code and the result. The live editor doesn't seem to update the result, so just press "Open Sandbox" in the lower right corner if you want to tweak parameters. I highly recommend it! We will explain the code following each sandbox regardless.
 
 P5 offers an API of functions and values, and it runs by looking for certain named functions in your code. The most important ones to know about are `setup()` and `draw()`:
 
@@ -47,6 +47,8 @@ Meanwhile, the draw function runs every time your screen renders a new frame. Th
 I won't go too in-depth on the p5 API, as you can find just about everything you need in the [reference](https://p5js.org/reference/) or the [examples](https://p5js.org/examples/). There's even an example of [simulating snowflakes](https://p5js.org/examples/simulate-snowflakes.html) there, which served as one of the main inspirations for this article. Speaking of which, let's get started on simulating snow.
 
 ## Simulating some static snow
+
+We should probably have more than a single snowflake. In fact, we should probably have _infinite_ snowflakes. There are many clever ways to do that kind of thing, and I wouldn't really say one way is worse than the other. As long as the code can expand to support more features then you'll be fine! You probably won't look back at the code when you feel like you've completed the sketch anyways, so don't fret over code quality. But I digress! Here is our first set of snowflakes: 
 
 <iframe src="https://codesandbox.io/embed/snow-1-vr9mo?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -63,6 +65,8 @@ This is a great start, but the snowflakes all seem fairly static. While their pa
 
 ## Learning to love layers of lists
 
+To provide som illusion of depth, we can think of some basics of perspective. Like imagine looking out the window of a moving train and looking at the passing landscape. Things that are further away from the train look smaller and like they move slower. Conversely, things that are close by look bigger and move faster.
+
 <iframe src="https://codesandbox.io/embed/snow-2-h8gww?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-2"
@@ -70,7 +74,7 @@ This is a great start, but the snowflakes all seem fairly static. While their pa
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-The snowflake data structure is now a list of lists, where the inner lists represent a layer of snowflakes. While we could have simply assigned a random layer to a snowflake at initialization, this structure will come in handy when we play around with depth again later. Now that the data structure is layered, we can make the snowflakes appear layered too. We've created the updateSnowflake() function to get all the snowflake computation in one place, and the first thing we'll do is adjust the size of the snowflakes. Things that are further away look smaller than they would if they were close by, so we'll base the size of the snowflakes on their layer.
+The snowflake data structure is now a list of lists, where the inner lists represent a layer of snowflakes. While we could have simply assigned a random layer to a snowflake at initialization, this structure will come in handy when we play around with depth again later. Now that the data structure is layered, we can make the snowflakes appear layered too. We've created the `updateSnowflake()` function to get all the snowflake computation in one place. The first thing we'll do is adjust the size of the snowflakes by simply scaling the size of the snowflakes with their layer index.
 
 In terms of movement we can also make snowflakes in the back move slightly slower than the ones in the front. Instead of a single static layer, we now have multiple static layers! To alleviate this we can assign each snowflake with a mass during the setup function, which factors into the speed at which the snowflakes fall. That way the pattern of snowflakes will change ever so slightly.
 
@@ -110,6 +114,8 @@ With the wind in order, we now have ourselves some pretty cool snow! Honestly, w
 
 ## Making majestic mountains
 
+The ideal winter landscape will undoubtedly differ from person to person, but today I'll offer some escapism from the gray and dark city life many of us have grown accustomed to. Let's make a beautiful winter morning with great weather and some sweeping scenery!
+
 <iframe src="https://codesandbox.io/embed/snow-4-5wvvn?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="snow-4"
@@ -117,7 +123,7 @@ With the wind in order, we now have ourselves some pretty cool snow! Honestly, w
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Now this is quite a different scene! We've added a more appropriate sky color, a sun, and some mountain ridges. The sun is drawn right on top of the background in the draw function. Our custom drawSun function is fairly simple, as it really is just a circle with some colored shadow. The shadow is an excellent example of how one can still use methods and properties of the Canvas API within p5, giving us this grossly incandescent sun!
+We've added a more appropriate sky color, a sun, and some mountain ridges. The sun is drawn right on top of the background in the draw function. Our custom drawSun function is fairly simple, as it really is just a circle with some colored shadow. The shadow is an excellent example of how one can still use methods and properties of the Canvas API within p5, giving us this grossly incandescent sun!
 
 For the mountain ridges we've made our own custom draw function again, called `drawRidge()`. This is where our layers of snow come in handy too, as we can call the drawRidge function as we iterate through our layers of snowflakes. This will then draw the layers in order so that the snowflakes should fall between the mountain ridges, providing additional depth! If each snowflake was simply assigned a random depth instead of the data structure itself being layered, we wouldn't get this effect.
 
@@ -127,9 +133,9 @@ For the actual drawing of the ridge, we are given a y-coordinate and iterate thr
 
 Note that we step over some pixels to reduce the amount of computation needed. One can hardly tell the difference visually with our default parameters, but chaotic ridges would look more spiky as a result of this.
 
-We're getting very close to the end result here, but the sun isn't quite right. We could place the sun randomly, but I like how it looks just peeking over the ridges in the back. However, that implies it's sort of a sunrise or sunset, which is typically accompanied by a gradient in the sky! Oh, and we should also turn that snow back on.
-
 ## Ready to reveal our riveting results
+
+We're getting very close to the end result here, but the sun isn't quite right. It's sort of always the same flat thing, but how would we make it more dynamic? We could place the sun randomly, but I like how it looks just peeking over the ridges in the back. However, that implies our scene is sort of a sunrise or sunset, which is typically accompanied by a gradient in the sky! Thankfully we have already made just the thing for that. Oh, and we should also turn that snow back on.
 
 <iframe src="https://codesandbox.io/embed/snow-5-gsvls?codemirror=1&fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -138,7 +144,7 @@ We're getting very close to the end result here, but the sun isn't quite right. 
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-That's not too bad! The layers of snow hide behind the mountain ridges, and it all looks kinda alright. The gradient in the sky is simply made by using the drawRidge function with different colors a few times before drawing the sun. The colors of the sky ridges are determined by blending the color of the sun with the color of the sky. 
+I don't know about you, but that looks pretty nice to me. The layers of snow fall down gently between the mountain ridges, and we get that great gradient effect in the sky too. For the sky we just used the drawRidge function with different colors a few times before drawing the sun. The colors of the sky ridges are determined by blending the color of the sun with the original sky color. 
 
 Now that we have a playground, let's play around with some parameters and see what we can get out of it! You can open the final sandbox yourselves [here](https://codesandbox.io/s/gsvls), tweak parameters, save, and the result should update. Here are some images I got from tweaking the parameters at the top:
 
