@@ -60,7 +60,7 @@ This solves our problems, but is kind of unruly to manage. Imagine for instance 
 
 ## Impossible States
 
-In Richard Feldman's [brilliant talk from 2016](https://youtu.be/IcgmSRJHu_8), he explains the concept of making impossible states impossible. Or said in another way: to make sure that only valid states are representable. Our approach thus far does not achieve to do that. Take for instance the following model:
+This is an example of a model state that is valid, as far as the compiler is concerned:
 
 ```elm
     { articles = [ article1, article2 ]
