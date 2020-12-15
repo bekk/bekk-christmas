@@ -96,3 +96,19 @@ type RemoteArticles
 ```
 
 This one custom type allows for all the states that we want to be able to represent, and does not allow for any of the states that we want to be unrepresentable. The article request is either still loading, _or_ it has failed with an error, _or_ it has succeeded, in which case we have a list of articles.
+
+To use our articles, for instance in the view, we just have to pattern match on the field:
+
+```elm
+viewRemoteArticles : RemoteArticles -> Html a
+viewRemoteArticles remoteArticles =
+    case remoteArticles of
+        Loading ->
+            viewLoadingSpinner
+
+        Failure error ->
+            viewFailure error
+
+        Success articles ->
+            viewArticles
+```
