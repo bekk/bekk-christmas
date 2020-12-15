@@ -16,6 +16,8 @@ links:
     url: https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/200309-sustainable-finance-teg-final-report-taxonomy_en.pdf
   - title: Technical Expert Group (TEG) technical annex, 2020
     url: https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/200309-sustainable-finance-teg-final-report-taxonomy-annexes_en.pdf
+authors:
+  - Therese Borge Lied
 ---
 ## Hva er EU-Taksonomien?
 
