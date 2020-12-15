@@ -30,7 +30,7 @@ Even taking a one or two second… pause… can help to recapture the attention 
 
 Imagine meeting an acquaintance at the grocery store that you don’t care much for. But to not come along as a rude idiot, I’m sure most of you start out with a “*Oh, hi there!*”. Now if you just say this line in a flat tone you’re not really convincing this person, but introduce a little high pitch, and you come along as much more friendly. Same in presentations; convey trivial stuff in high pitch, and more serious and authoritative stuff in low pitch.
 
-The keyword for all three is **variation**.
+**The keyword for all three is *variation*.**
 
 Think that you’re reading a story book to a child, and how you actively would use you voice then. At first it will feel uncomfortable and forced, but give it a few tries, and you’ll hopefully start to make use of this without even thinking.
 
