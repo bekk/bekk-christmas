@@ -46,7 +46,7 @@ But "loading" and "not loading" are not the only two states our app can be in: w
 
 ## An Error Field
 
-To solve this issue, we could add _another_ field to our model, called `error`. This field could also be a `Bool`, and be set to `False` unless the request failed. But maybe we want to keep the actual error in our model, to display different error messages, depending on what kind of error we got? In that case we could make the `error` field a `Maybe Http.Error`, and if the `error` field was `Nothing` then the request succeeded (or is still loading), and if the `error` field is a `Just Http.Error`, then the request failed:
+To solve this issue, we could add _another_ field to our model, called `error`. This field could also be a `Bool`, and be set to `False` unless the request failed. But maybe we want to keep the actual error in our model, to display different error messages depending on what kind of error we got? In that case we could make the `error` field a `Maybe Http.Error`, and if the `error` field was `Nothing` then the request succeeded (or is still loading), and if the `error` field is a `Just Http.Error`, then the request failed:
 
 ```elm
 type alias Model =
