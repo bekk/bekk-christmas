@@ -24,7 +24,7 @@ The Internet of things promises us connected devices in your home talking to eac
 
 **Default / Weak passwords**
 
-"Box fresh" devices often have a default password. If your device has a weak or easy to guess password then it will be susceptible to guessing attacks. Default passwords are easily obtained from the Internet (https://www.routerpasswords.com/)
+"Box fresh" devices often have a default password. If your device has a weak or easy to guess password then it will be susceptible to guessing attacks. Default passwords are [easily obtained from the Internet](https://www.routerpasswords.com/)
 
 **Missing security updates**
 
@@ -72,9 +72,9 @@ If your device can store data locally then you need to be aware of the risks of 
 
 * **Check for open ports:**
 
-  [Nmap-cheatsheet](https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67):
+  [Nmap-cheatsheet](https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67)
 
-  First obtain the IP-adress of your device. This can be done by looking for "connected devices" on your router or do a network scan with nmap (https://nmap.org/).
+  First obtain the IP-address of your device. This can be done by looking for "connected devices" on your router or do a network scan with nmap (https://nmap.org/).
 
   * Does your device expose any ports? 
 
@@ -84,3 +84,11 @@ If your device can store data locally then you need to be aware of the risks of 
 
   Secondly do a full service scan on your device: 
   Grab a cup of coffee, this usually takes some time.
+
+  Example of a generic scan for performing host discovery on your subnet:
+
+  `nmap -sP 192.168.1.0/24`
+
+  Example of a specific scan to find printer's open ports on your subnet:
+
+  `nmap -p 515,9100 192.168.1.0/24 -oG - | grep open`
