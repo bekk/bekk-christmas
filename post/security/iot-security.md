@@ -74,21 +74,20 @@ If your device can store data locally then you need to be aware of the risks of 
 
   [Nmap-cheatsheet](https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67)
 
-  First obtain the IP-address of your device. This can be done by looking for "connected devices" on your router or do a network scan with nmap (https://nmap.org/).
+  First obtain the IP-address of your device. This can be done by looking for "connected devices" on your router or do a network scan with [nmap](https://nmap.org/).
 
   * Does your device expose any ports? 
 
   * What does that port do? (google port + {port number})
 
   * Can you connect to your device through the port? For example through your web browser, ftp client, ssh?
+  
+  * Example of a generic scan for performing host discovery on your subnet:
 
-  Secondly do a full service scan on your device: 
-  Grab a cup of coffee, this usually takes some time.
+    `nmap -sP 192.168.1.0/24`
 
-  Example of a generic scan for performing host discovery on your subnet:
+  Secondly do a full service scan on your device. Grab a cup of coffee, this usually takes some time.
 
-  `nmap -sP 192.168.1.0/24`
+  * Example of a specific scan to find printer's open ports on your subnet:
 
-  Example of a specific scan to find printer's open ports on your subnet:
-
-  `nmap -p 515,9100 192.168.1.0/24 -oG - | grep open`
+    `nmap -p 515,9100 192.168.1.0/24 -oG - | grep open`
