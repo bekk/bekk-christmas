@@ -3,6 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 16
 title: IoT Security at home
+image: https://i.ibb.co/C7HYC2L/jason-leung-j6-QZXBVys-E8-unsplash.jpg
 ingress: How is the IoT security in your home? Do you have any gadgets on your
   network that are vulnerable to exploitation? Maybe you have any devices you do
   not recognize? If you own an IoT device then you should be curious about how
