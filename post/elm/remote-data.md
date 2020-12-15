@@ -69,7 +69,7 @@ This is an example of a model state that is valid, as far as the compiler is con
     }
 ```
 
-What does this mean? We have a list of articles, but we also have an error. Did the request succeed or fail? Your guess is as good as mine. And what about this one:
+But what does this mean? We have a list of articles, but we also have an error. Did the request succeed or fail? Your guess is as good as mine. And what about this one:
 
 ```elm
     { articles = []
