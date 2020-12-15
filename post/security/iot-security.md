@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 16
 title: IoT Security at home
-image: https://i.ibb.co/Qkzt8jF/erik-mclean-Cf-k-Y8-HFJOs-unsplash.jpg
+image: https://i.ibb.co/KzGcFd9/yoonjae-baik-p7-Ms-AMLSbb-U-unsplash.jpg
 ingress: What is the state of your IoT (Internet of Things)-security in your
   home? Do you have any gadgets on your network that are vulnerable to
   exploitation? Maybe you have any devices you do not recognize? If you own an
