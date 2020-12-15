@@ -127,8 +127,4 @@ argocd-apps                 # git repo
     anotherapp/...
 ```
 
-New `Applications` are then added by pushing changes to `argocd-root` and deployments are triggered by pushing changes to `argocd-apps`. Voilà!
-
-## Summing up
-
-I have given you a taste of two powerful yet simple tools for automating deploys of Kubernetes-based applications, ArgoCD and jsonnet. ...TODO
+New `Applications` are then added by pushing changes to `argocd-root` and deployments are triggered by pushing changes to `argocd-apps`. Voilà! No more manual deploys 🎉.
