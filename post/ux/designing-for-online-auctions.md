@@ -3,12 +3,12 @@ calendar: ux
 post_year: 2020
 post_day: 16
 title: Designing for online auctions
-ingress: As designers we are used to working on new domains, problems and design
-  challenges, and we are left with interesting reflections and insights about
-  them. In an attempt to share some of these insights, this article is a
-  reflection on the design challenges and solutions of designing for an online
-  auction. Perhaps this article can serve as inspiration or insight for other
-  designers out there!
+ingress: As designers we are used to working on new domains, problems, and
+  design challenges, and we are left with interesting reflections and insights
+  about them. In an attempt to share some of these insights, I have written this
+  article about the design challenges and solutions of designing for an online
+  auction. Hopefully it can serve as inspiration or insight for other designers
+  out there!
 authors:
   - Thea Sommersletta
 ---
