@@ -10,6 +10,8 @@ ingress: Den siste tiden har vi sett stadig økende forventinger til at bedrifte
   bærekraft blitt mye mer enn en omdømmeparameter eller en kuriositet på utsiden
   av kjernedriften. Dette betyr at bærekraft i større og større grad utvikler
   seg til å bli en økonomisk nøkkelfaktor som begynner å gi utslag på bunnlinja.
+authors:
+  - Snorre Handeland Gryte
 ---
 ## Bærekraft som risikodriver
 
