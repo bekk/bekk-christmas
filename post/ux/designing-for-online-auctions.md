@@ -3,8 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 16
 title: Designing for online auctions
-ingress: >
-  As designers we are used to working on new domains, problems and design
+ingress: As designers we are used to working on new domains, problems and design
   challenges, and we are left with interesting reflections and insights about
   them. In an attempt to share some of these insights, this article is a
   reflection on the design challenges and solutions of designing for an online
@@ -17,7 +16,7 @@ After scouring Dribbble, Pinterest, and Behance on the great search for inspirat
 
 One of the first things my team of two developers, a product owner, and myself as a UX-designer did was get to know our users through interviews and surveys. It was difficult to get the user group to talk to us, and they just kept repeating “make it simple”. So, we realized that these farmers, truck drivers, and construction workers appreciate simple interfaces they can use while operating their machines, which they spend most of their days doing. They have a unique, close bond to their machines and a lot of knowledge about them, yet they are not particularly technical. What they want to be doing is using their machines, not spending lots of time online trying to place bids.
 
-(https://media.giphy.com/media/xT5LMESHbV1KLGMsq4/giphy.gif)
+![](https://media.giphy.com/media/xT5LMESHbV1KLGMsq4/giphy.gif)
 
 I came to understand that there are several essential elements to an online auction, and that it is absolutely critical that they work well and are simple to use, especially when the user is committing himself to bids of millions of krones. Physical auctions are fast paced and the prices rise quickly, and this is exactly what happens during the final minutes of an online auction as well. Therefore it is imperative that the user knows how to place a bid and that the site doesn’t go down (yes, we stress tested this multiple times 😅). 
 
@@ -25,7 +24,7 @@ We spent many months designing and building the auction. Although we wanted to r
 
 ### All the information is important, so structure wisely
 
-![](/assets/test.png)
+![](/assets/info2.png)
 
 When working on the information architecture for an active auction, we realized that pretty much all the information on the page is equally important for the users. This includes photos, information about the machine, and auction-specific information. Our hypothesis is that if users can’t find enough information, they won’t bother bidding. 
 
@@ -41,6 +40,8 @@ Proxy bidding is pretty straightforward - you enter the highest amount you are w
 
 To make it easier to understand we created separate input fields for regular bids and proxy bids. Many other online auctions only use one field for placing bids, which can be confusing for the user. By displaying the users’ maximum bid right beneath the input field they are always updated on what bid they have placed. We also added a link to an explanation of proxy bidding with concrete examples, and designed the bidding log to be scannable and transparent when it comes to different types of bids, more on that below. 
 
+
+
 ### Make bidding simple, and always give feedback
 
 Our main activation goal is for a user to place a bid, so we have focused on making bidding understandable and simple. By displaying two separate input fields for bidding, the user gets a feeling of control, and we can keep them updated by displaying personalized contextual information. 
@@ -49,22 +50,20 @@ We observed that the users wanted more concrete feedback on how they were doing 
 
 We decided to add a fake 2-second delay after submitting a bid before showing the feedback. This gives the user a feeling that the system is working hard to review and accept their bid. We also prioritized sending notifications to the bidders when they have been outbid, as well as when there is two hours left of the auction. This is essential to keep the bidders updated, as well as for retention. From our insights we know that some users prefer to be notified on SMS and others on email, so we give them the choice during registration. 
 
+
+
 ### The bidding log can get long, so make it scannable and transparent
+
+![](/assets/biddinglog.png)
 
 Transparency is imperative in an auction. The users should always be able to see a complete log of the bids that have come in, down to the second they were placed. The log should be structured well and easy to scan. Also, don’t underestimate white space!
 
 Based on user feedback we have iterated on our bidding log a few times. Users often look for their own bids in the log to see where they stand, so we chose to highlight your own bids with a background color and changed the bidder-ID to “my bid”. We also needed a way to show which bids were proxy bids. Many auctions use an asterix (*) to visualize a proxy bid, but we discovered that it wasn’t very scannable. Text also became invisible next to a bid, and took a lot of space on mobiles. We tried using a robot-icon, but it was too detailed in such a small size. We are currently using a refresh icon to show the automatic part of it, but this has been mistaken as an icon to refresh the bidding log, so we are searching for an icon that represents proxy bids even better.
 
-
-
 ### Nudge the user, but stay away from dark design
 
 As mentioned earlier, our ultimate goal is to get the users to place a bid. E-commerce websites sometimes use nudging to get users to buy something - such as stating that there are few items left, or that 20 people have bought the item in the last hour. We decided to use elements to nudge the user, such as saying that there have been many bids in the last hour, or that there is little time left, yet being aware of staying away from dark design. We never lie when displaying these numbers, and we don’t trick the users into placing bids in any way. We even get them to confirm their bids before actually submitting them, and letting them know when the sum seems too high. 
 
-
-
 \---- 
-
-
 
 Hopefully you’ve gained some insights into the challenges and potential solutions to designing user friendly online auctions. Perhaps you’ve learned something you can bring back to your own project? I’m looking forward to continuing the online auction journey, and learning even more about wheel loaders and forklifts! 😄🚜
