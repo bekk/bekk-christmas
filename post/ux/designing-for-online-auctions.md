@@ -69,6 +69,7 @@ Based on user feedback we have iterated on our bidding log a few times. Users of
 <p>&nbsp;</p>
 
 ### Nudge the user, but stay away from dark design
+![](/assets/nudge.png)
 
 As mentioned earlier, our ultimate goal is to get the users to place a bid. E-commerce websites sometimes use nudging to get users to buy something - such as stating that there are few items left, or that 20 people have bought the item in the last hour. We decided to use elements to nudge the user, such as saying that there have been many bids in the last hour, or that there is little time left, yet being aware of staying away from dark design. We never lie when displaying these numbers, and we don’t trick the users into placing bids in any way. We even get them to confirm their bids before actually submitting them, and letting them know when the sum seems too high. 
 
