@@ -110,5 +110,5 @@ viewRemoteArticles remoteArticles =
             viewFailure error
 
         Success articles ->
-            viewArticles
+            viewArticles articles
 ```
