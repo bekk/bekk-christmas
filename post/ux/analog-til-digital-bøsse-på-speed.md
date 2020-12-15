@@ -1,17 +1,17 @@
 ---
-calendar: ux
 post_year: 2020
-post_day: 1
+post_day: 20
 title: Analog til digital bøsse på speed
 ingress: I en nasjonal dugnad, en søndag i året har over 100 000 mennsker banket
   på dører i hel Norge for en god sak. Hva skjer når man ikke lenger kan samles
   fysisk og hvordan erstatter vi denne aktiviteten digitalt, på seks uker?!
+authors:
+  - Ida Opsahl
+  - Helen Le
 ---
 Spleis er en av TV-aksjonens viktigste samarbeidspartnere og ble i år leverandør av de digitale bøssene til årets aksjon. Spleis er en norsk folkefinansieringstjeneste der folk enkelt kan starte digitale innsamlinger. Vi er to designere som til daglig sitter hos Spleis og skal i dagens luke fortelle litt om våres erfaringer fra å erstatte en tradisjonell fysisk løsning med noe heldigitalt.\
 \
 Konseptet digital bøsse fikk en spe start allerede i 2018. Hypotesen var da at bøssebærere kunne samle inn enda mer penger med en digital innsamling etter de hadde gått med sin fysiske bøsse. I 2019 lagde vi en pilot der flere fikk testet løsningen. I år, i disse koronatider, ble året vi virkelig fikk testet ut konseptet digital bøsse med å erstatte hele den tradisjonelle bøsseløsningen.
-
-
 
 TV-aksjonen er verdens største innsamlingsaksjon og en stor nasjonal dugnad der privatpersoner, næringsliv, skoler, regjeringen, kongehuset, og mange flere over hele landet kommer sammen for å engasjere seg på ulike måter. En av de viktigste aktivitetene tradisjonelt sett har vært den fysiske bøssebærerrunden. Nå som den ble avlyst, måtte vi være kreative og tenke nytt for hvordan Spleis kunne engasjere flest mulig bøssebærere.
 
