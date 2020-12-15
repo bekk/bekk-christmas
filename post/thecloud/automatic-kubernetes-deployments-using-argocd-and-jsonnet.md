@@ -4,10 +4,10 @@ post_year: 2020
 post_day: 16
 title: Automating deploys to Kubernetes using ArgoCD and jsonnet
 image: https://images.unsplash.com/photo-1542735950-ff674376d161?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop
-ingress: You have a Kubernetes-cluster and a bunch of applications. You trigger
-  deploys by manually pushing templated yaml to your cluster. The codebase is
-  messy and the manual processes time-consuming and error-prone. You need a
-  better way. Well, let me help you with a opinionated suggestion.
+ingress: So you have a Kubernetes-cluster and a bunch of applications. You
+  trigger deploys by manually pushing templated yaml to your cluster. The
+  codebase is messy and the manual processes time-consuming and error-prone. You
+  need a better way. Well, let me help you with a opinionated suggestion.
 links:
   - title: Why are we templating yaml?
     url: https://leebriggs.co.uk/blog/2019/02/07/why-are-we-templating-yaml.html
