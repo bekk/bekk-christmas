@@ -42,7 +42,7 @@ type alias Model =
 
 We can then initalize the `loading` field to be `True`, and when the request is finished, we set the `loading` field to be `False`. That way we can show nothing, or maybe a loading spinner, until the request is done.
 
-But "loading" and "not loading" is not the only two states our app can be in: what if the request fails? In that case we would have to set the `loading` field to be `False`, since we are no longer loading, but then the user would _definitely_ think that all their articles were gone. Even if the problem was only that they lost their internet connection for a second.
+But "loading" and "not loading" are not the only two states our app can be in: what if the request fails? In that case we would have to set the `loading` field to be `False`, since we are no longer loading, but then the user would _definitely_ think that all their articles were gone. Even if the problem was only that they lost their internet connection for a second.
 
 ## An Error Field
 
