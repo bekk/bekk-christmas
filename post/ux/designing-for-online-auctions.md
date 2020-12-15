@@ -26,7 +26,7 @@ We spent many months designing and building the auction. Although we wanted to r
 
 ### All the information is important, so structure wisely
 
-![](/assets/info3.png)
+![](/assets/info4.png)
 
 When working on the information architecture for an active auction, we realized that pretty much all the information on the page is equally important for the users. This includes photos, information about the machine, and auction-specific information. Our hypothesis is that if users can’t find enough information, they won’t bother bidding. 
 
@@ -38,7 +38,7 @@ We compressed some information to save space, such as the picture carousel and a
 
 ### Proxy bidding is logical, yet so complicated
 
-![](/assets/proxybid.png)
+![](/assets/proxybid2.png)
 
 Proxy bidding *is* pretty straightforward - you enter the highest amount you are willing to buy the machine for and place the bid. The system then automatically bids for you until your maximum sum has been reached. Pretty simple, right? Well, we thought so to, but when writing the logic for proxy bidding we realized that there are plenty of edge cases. What happens when two users place the same proxy bid? What about when four users have submitted proxy bids and someone bids over all of them? We knew that about 50% of our users use proxy bidding, and if we thought it was complicated, it was definitely complicated for them.
 
@@ -58,7 +58,7 @@ We decided to add a fake 2-second delay after submitting a bid before showing th
 
 ### The bidding log can get long, so make it scannable and transparent
 
-![](/assets/biddinglog.png)
+![](/assets/biddinglog2.png)
 
 Transparency is imperative in an auction. The users should always be able to see a complete log of the bids that have come in, down to the second they were placed. The log should be structured well and easy to scan. Also, don’t underestimate white space!
 
