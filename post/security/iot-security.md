@@ -72,11 +72,9 @@ If your device can store data locally then you need to be aware of the risks of 
 
 * **Check for open ports:**
 
-  Nmap-cheatsheet here: https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67
+  [Nmap-cheatsheet](https://gist.github.com/rsperl/321aac3d529aa8f8c7924fd12d581b67):
 
-
-  First obtain the IP-adress of your device. This can be done by looking for “connected devices” on your router or do a network scan with nmap (https://nmap.org/).
-
+  First obtain the IP-adress of your device. This can be done by looking for "connected devices" on your router or do a network scan with nmap (https://nmap.org/).
 
   * Does your device expose any ports? 
 
