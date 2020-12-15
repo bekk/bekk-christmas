@@ -7,8 +7,7 @@ ingress: As designers we are used to working on new domains, problems, and
   design challenges, and we are left with interesting reflections and insights
   about them. In an attempt to share some of these insights, I have written this
   article about the design challenges and solutions of designing for an online
-  auction. Hopefully it can serve as inspiration or insight for other designers
-  out there!
+  auction. Hopefully it can serve as inspiration or insight for other designers!
 authors:
   - Thea Sommersletta
 ---
