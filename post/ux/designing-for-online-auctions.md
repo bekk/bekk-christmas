@@ -18,9 +18,11 @@ One of the first things my team of two developers, a product owner, and myself a
 
 ![](https://media.giphy.com/media/xT5LMESHbV1KLGMsq4/giphy.gif)
 
-I came to understand that there are several essential elements to an online auction, and that it is absolutely critical that they work well and are simple to use, especially when the user is committing himself to bids of millions of krones. Physical auctions are fast paced and the prices rise quickly, and this is exactly what happens during the final minutes of an online auction as well. Therefore it is imperative that the user knows how to place a bid and that the site doesn’t go down (yes, we stress tested this multiple times 😅). 
+I came to understand that there are several essential elements to an online auction, and that it is absolutely critical that they work well and are simple to use, especially when the user is committing himself to bids of *millions* of krones. Physical auctions are fast-paced and the prices rise quickly, and this is exactly what happens during the final minutes of an online auction as well. Therefore it is imperative that the user knows how to place a bid and that the site doesn’t go down (yes, we stress -ested this multiple times 😅). 
 
 We spent many months designing and building the auction. Although we wanted to release early to get direct feedback from users, there was a lot of functionality that had to be ready before a release. I regularly tested my designs and the flow I had made on the users I could get a hold of, iterating on everything from the information architecture to the microcopy, yet we launched with a slight uncertainty of how the product would be received. After launching our product in October we have been observing and monitoring how the auction is being used, as well as communicating with actual users. This is an attempt to summarize some challenges and key learnings of how to design for an online auction, or similar platforms, such as the article I would have wanted to read many months ago. 
+
+<p>&nbsp;</p>
 
 ### All the information is important, so structure wisely
 
@@ -32,15 +34,17 @@ This is quite a lot of information, so we had to structure the page in an organi
 
 We compressed some information to save space, such as the picture carousel and an expand/collapse box for the bidding log (which can get really long - the record is 165 bids!). By following up on emails and phone calls from users asking questions about the machines, we can keep iterating on the design and information architecture to give them what they need when they need it. 
 
-
+<p>&nbsp;</p>
 
 ### Proxy bidding is logical, yet so complicated
 
-Proxy bidding is pretty straightforward - you enter the highest amount you are willing to buy the machine for and place the bid. The system then automatically bids for you until your maximum sum has been reached. Pretty simple, right? Well, we thought so to, but when writing the logic for proxy bidding we realized that there are plenty of edge cases. What happens when two users place the same proxy bid? What about when four users have submitted proxy bids and someone bids over all of them? We knew that about 50% of our users use proxy bidding, and if we thought it was complicated, it was definitely complicated for them.
+![](/assets/proxybid.png)
+
+Proxy bidding *is* pretty straightforward - you enter the highest amount you are willing to buy the machine for and place the bid. The system then automatically bids for you until your maximum sum has been reached. Pretty simple, right? Well, we thought so to, but when writing the logic for proxy bidding we realized that there are plenty of edge cases. What happens when two users place the same proxy bid? What about when four users have submitted proxy bids and someone bids over all of them? We knew that about 50% of our users use proxy bidding, and if we thought it was complicated, it was definitely complicated for them.
 
 To make it easier to understand we created separate input fields for regular bids and proxy bids. Many other online auctions only use one field for placing bids, which can be confusing for the user. By displaying the users’ maximum bid right beneath the input field they are always updated on what bid they have placed. We also added a link to an explanation of proxy bidding with concrete examples, and designed the bidding log to be scannable and transparent when it comes to different types of bids, more on that below. 
 
-
+<p>&nbsp;</p>
 
 ### Make bidding simple, and always give feedback
 
@@ -50,7 +54,7 @@ We observed that the users wanted more concrete feedback on how they were doing 
 
 We decided to add a fake 2-second delay after submitting a bid before showing the feedback. This gives the user a feeling that the system is working hard to review and accept their bid. We also prioritized sending notifications to the bidders when they have been outbid, as well as when there is two hours left of the auction. This is essential to keep the bidders updated, as well as for retention. From our insights we know that some users prefer to be notified on SMS and others on email, so we give them the choice during registration. 
 
-
+<p>&nbsp;</p>
 
 ### The bidding log can get long, so make it scannable and transparent
 
@@ -58,7 +62,9 @@ We decided to add a fake 2-second delay after submitting a bid before showing th
 
 Transparency is imperative in an auction. The users should always be able to see a complete log of the bids that have come in, down to the second they were placed. The log should be structured well and easy to scan. Also, don’t underestimate white space!
 
-Based on user feedback we have iterated on our bidding log a few times. Users often look for their own bids in the log to see where they stand, so we chose to highlight your own bids with a background color and changed the bidder-ID to “my bid”. We also needed a way to show which bids were proxy bids. Many auctions use an asterix (*) to visualize a proxy bid, but we discovered that it wasn’t very scannable. Text also became invisible next to a bid, and took a lot of space on mobiles. We tried using a robot-icon, but it was too detailed in such a small size. We are currently using a refresh icon to show the automatic part of it, but this has been mistaken as an icon to refresh the bidding log, so we are searching for an icon that represents proxy bids even better.
+Based on user feedback we have iterated on our bidding log a few times. Users often look for their own bids in the log to see where they stand, so we chose to highlight your own bids with a background color and changed the bidder-ID to “my bid”. We also needed a way to show which bids were proxy bids. Many auctions use an asterisk (*) to visualize a proxy bid, but we discovered that it wasn’t very scannable. A text label became invisible next to a bid, and took too much space on mobiles. We tried using a robot-icon, but it was too detailed in such a small size. We are currently using a refresh icon to show the automatic part of it, but this has been mistaken as an icon to refresh the bidding log, so we are searching for an icon that represents proxy bids even better.
+
+<p>&nbsp;</p>
 
 ### Nudge the user, but stay away from dark design
 
