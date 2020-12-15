@@ -112,4 +112,3 @@ viewRemoteArticles remoteArticles =
         Success articles ->
             viewArticles articles
 ```
-
