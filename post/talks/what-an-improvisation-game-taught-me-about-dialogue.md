@@ -33,6 +33,10 @@ Next, with a tiny bit of training, as well as a minor adjustment of the mind-set
 
 The last two points cannot be stressed enough. The flow of the talk is everything and also providing the momentum necessary to come up with new ideas.
 
+![person with paint all over](/assets/alice-dietrich-fwf_fkj5tbo-unsplash.jpg)
+
+
+
 In hindsight, the game represented more than just an activity to have fun, get more acquainted, or to train for that specific game: The exact same learnings might as well be applied to just about any normal dialogue. 
 
-During your next conversation, try to listen a tad more to your partner than usually and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination.
+During your next conversation, try to listen a tad more to your partner than usually and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination. Welcome the feeling of uncertainty and enjoy the moment!
