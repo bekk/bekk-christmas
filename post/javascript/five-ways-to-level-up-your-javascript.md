@@ -18,7 +18,7 @@ This might not be for everyone, but if you’re not totally sure you grasp the i
 
 
 
-**[Eloquent Javascript](https://eloquentjavascript.net)** (2018) by Marijn Haverbeke is a good place to start. If you prefer to read in the browser, check out [javascript.info](https://javascript.info/)! These books are usually a bit thorough and cover most aspects of JavaScript, even the most rudimentary parts. If you’re somewhat familiar with the language, make sure you skip the first chapters and skip directly to the complex matters you need help with.
+**[Eloquent Javascript](https://eloquentjavascript.net)** (2018) by Marijn Haverbeke is a good place to start. If you prefer to read in the browser, check out [javascript.info](https://javascript.info/)! These books are usually a bit thorough and cover most aspects of JavaScript. If you’re somewhat familiar with the language, make sure you skip the first chapters and skip directly to the complex matters you need help with.
 
 
 
