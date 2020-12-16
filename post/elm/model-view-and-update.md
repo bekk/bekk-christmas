@@ -22,9 +22,9 @@ type alias Model =
 ```
 
 The state of the program is currently represented by one property, a counter of how many gifts someone has received that is represented by an `Int` type.
-The Model is represented by what is called a **record**, and is a central store for all the data we use to represent our application with. The Model will at all times contain the most recent data that we want to use in our program. So if a user has clicked something that changes  the state of our program this should create a new state which will be the current state of the program.
+The Model is represented by what is called a **record**, and is a central store for all the data we use to represent our application with. The \`Model\` will at all times contain the most recent data that we want to use in our program. So if a user has clicked something that changes  the state of our program this should create a new state which will be the current state of the program.
 
-So how is the model updated? That's where the update function comes in. The update function takes in the current Model and a Msg that describes how the Model should change, and returns the new Model
+So how is the model updated? That's where the update function comes in. The update function takes in the current Model and a Msg that describes how the Model should change, and returns the new Model`
 
 ```elm
 -- UPDATE
@@ -54,9 +54,9 @@ view model =
 
 If we didn't have any elements to interact with, or didn't need anything to change in our application, then we would not need to pay attention to the other two elements in the **MVU** architecture. Like most applications we do want to build a webpage that changes as the user interacts with elements in our application.
 
-We can see from the definition of the `view` function that it receives a parameter of the `Model` type which we have learned is the state of our program. The `view` will use the data we have chosen that resides in the `Model` to represent the application correctly. This will always be the newest version of the state, so whenever a `Msg` type is dispatched to the `update` function, this `Msg` will proceed to update the `Model` and the `view` will be rendered with the newly updated `Model`.
+We can see from the definition of the view function that it receives a parameter of the `Model` type which we have learned is the state of our program. The `view` will use the data we have chosen that resides in the `Model` to represent the application correctly. This will always be the newest version of the state, so whenever a `Msg` type is dispatched to the update function, this `Msg` will proceed to update the `Model` and the `view` will be rendered with the newly updated `Model`.
 
-The return type of the `view` function is also interesting. This is `Html Msg` where `Html` is the core building block of html code. Msg is what we would like to happen when the user interacts with our Html. For instance, what Msg should be sent to the update function when a specific button is pressed
+The return type of the view function is also interesting. This is `Html Msg` where `Html` is the core building block of html code. Msg is what we would like to happen when the user interacts with our `Html. For instance, what Msg should be sent to the update function when a specific button is pressed
 
 As an example, let's see how a view that allows the user to update their gift-receiving counter would look like.
 
@@ -66,6 +66,6 @@ view model =
     Html.button
         [ Events.onClick ReceivePresent ]
         [ Html.text "Number of gifts received: " ++ (String.fromInt model.presentCounter) ]
-
 ```
+
 When the button is pressed, the Msg ReceivePresent will be dispatched to the update function. This updated the model, which then causes the view to be refreshed with the new state.
