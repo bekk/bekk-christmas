@@ -71,7 +71,7 @@ null === undefined // false
 BigInt(2) == "2" -> BigInt(2) == BigInt("2") // true
 ```
 
-If one value is a string type and the other is numeric, JavaScript compares the numeric value of the string. Remember, converting an empty string results in 0. 
+If one value is a string type and the other is numeric, JavaScript compares the numeric value of the string. Remember, converting an empty string to a number results in `0`. 
 
 #### 4 If `x` or `y` is a boolean type - convert it to a number and perform `==`
 
@@ -129,7 +129,7 @@ Converting the data type object into primitive is usually done by returning the 
 
 #### 7 If none of the above applies, return `false`!
 ```javascript
-[1,2,3] == {valueOf() { return "1,2,3" }} // false
+[1,2,3] == { valueOf() { return "1,2,3" } } // false since both are objects
 0 == null // false
 0 == NaN // false
 0 == undefined // false
