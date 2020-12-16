@@ -25,7 +25,7 @@ The digitalization of critical infrastructures increases efficiency, safety and 
 
 #### Legacy systems
 
-Digitization usually involves introduction of IT into existing Operational technology (OT) systems. OT systems are often legacy systems that interact with automation and mechanical equipment both locally in industrial facilities and between installations throughout regions. Hence, they are frequently used to monitor and control for instance power grids and oil platforms. OT systems have until now, usually existed within closed networks with air-gaps. An air-gap is a strong security measure where components are physically isolated from the rest of the network. However, air-gaps are considered nearly impossible to achieve in today’s interconnected systems. As a result, legacy systems that were not created to be exposed to the Internet and its accompanying threats are now connected to the Internet. Unfortunately, such systems do not necessarily have the proper security mechanisms to defend against the wide range of new attacks that the interconnectivity enables. But, to update the security measures is a complex task as legacy systems don’t always support new security mechanisms that are used in modern systems.
+Digitization usually involves introduction of IT into existing Operational technology (OT) systems. OT systems are often legacy systems that interact with automation and mechanical equipment both locally in industrial facilities and between installations throughout regions. Hence, they are frequently used to monitor and control for instance power grids and oil platforms. OT systems, have until now, usually existed within closed networks with air-gaps. An air-gap is a strong security measure where components are physically isolated from the rest of the network. However, air-gaps are considered nearly impossible to achieve in today’s interconnected systems. As a result, legacy systems that were not created to be exposed to the Internet and its accompanying threats are now connected to the Internet. Unfortunately, such systems do not necessarily have the proper security mechanisms to defend themselves against the wide range of new attacks that the interconnectivity enables. But, to update the security measures is a complex task as legacy systems don’t always support new security mechanisms that are used in modern systems.
 
 
 
@@ -47,4 +47,4 @@ Security management, the process of protecting assets and preparing for the wors
 
 
 
-Securing critical infrastructure is challenging, but the escalating number of attacks and their increased sophistication as well as the possible fatal consequences illustrates the importance of proper cyber security in our critical infrastructures.
+Securing critical infrastructure is challenging, but the escalating number of attacks and the increased sophistication, as well as the possible fatal consequences illustrates the importance of proper cyber security in our critical infrastructures.
