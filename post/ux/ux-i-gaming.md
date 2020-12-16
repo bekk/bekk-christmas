@@ -69,7 +69,11 @@ I super mario Oddesy på nintendo switch, har du med deg en partner in crime som
 
 Noen spill er totalt brutale, og kaster deg ut, in medias res. Andre spill som apex legends, som er 100% online pvp (player vs player) basert, har gjort det slik at du ikke får spille online, før du har fullført en treningssesjon. Dette er gjort med fullt overlegg fra utviklerne bak spillet, slik at du skal være best mulig rustet for online spilling. Du kan alltid gå tilbake til trening, for å lære deg nye teknikker eller øve i ro og mak, før du igjen kaster deg ut  hvirvelvinden som er online pvp. 
 
-Avslutningsvis
+
+
+
+
+
 
 Jeg kan skrive utrolig mye mer om ux i spill, og dette er virkelig et helt eget fagfelt. Alt fra HUD i spill som differensierer fra fps til rpg spill, og menyer som er med på å matche spillet det skal inn i. Navigering i menyer og flyt i verdener og brett. Lanes i skytespill og lanes i bilspill. Men det blir dessverre for stort for denne korte artikkelen. Jeg vil heller avslutte med å dra en parallell fra ux i spill til vår hverdag. Når vi designer tjenester for kunder og oss selv, kan vi raskt se at måten vi forventer interaksjonsnivået til brukerne har økt raskt de siste årene. En tjeneste vi i dag leverer på lik linje med et spill i dag er noe helt annet enn for 6-7 år siden. For å fortsette å utvikle oss å skape intuitive løsninger, må vi kanskje se til en usynlig vind for brukeren, en naturlig flow som gjør det enklere for brukere å møte nye eller eksisterende løsninger på? Uansett så vil jeg nå tro at du ser på enkle og avanserte spill i et ganske nytt lys når du neste gang spiller et spill. Kanskje du til og med tar med deg noe nyttig lærdom inn til prosjekt!
 
