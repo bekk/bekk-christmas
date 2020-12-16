@@ -3,6 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 21
 title: "Privacy Pass: Anonymous Tokens on the Web"
+image: https://i.ibb.co/XCdLWgY/huzeyfe-turan-2i-K6-KNVwc-Y-unsplash.jpg
 ingress: We discussed elliptic curves [earlier this
   month](https://security.christmas/2020/5). Today, we look at a way to use
   those to make the internet a bit more user friendly.
