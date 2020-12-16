@@ -34,6 +34,6 @@ The sequence of anonymous tokens in Smittestopp will be:
 2. [Fhi.Smittestopp.App](https://github.com/folkehelseinstituttet/Fhi.Smittestopp.App) generates a request `P`, and lets the user identify itself against Fhi.Smittestopp.Verification.
 3. Fhi.Smittestopp.Verification verifies the infection status, and generates the response `(Q, c, z)`, where the latter two constitute the transcript of the zero-knowledge proof of correctness.
 4. Fhi.Smittestopp.App verifies the proof, generates the tuple `(t, W)` and submits it to Fhi.Smittestopp.Backend.
-5. 5. Fhi.Smittestopp.Backend verifies that `W` is generated from `t` and signed with the secret key `k`. It then stores `t` for as long as `k` is valid.
+5. Fhi.Smittestopp.Backend verifies that `W` is generated from `t` and signed with the secret key `k`. It then stores `t` for as long as `k` is valid.
 
 [A previous blog post](https://security.christmas/2020/9) discussed how privacy was handled in the first version of Smittestopp. We are happy to report that privacy has been a central aspect of the new app, with excellent response from the Norwegian Institute of Public Health. We believe that this work should be readily available for other countries' COVID-19 apps as well, and hope that this process also serves as a demonstration of how an open approach can bring in non-trivial contributions and expertise.
