@@ -5,11 +5,12 @@ post_day: 12
 title: Operators are functions, too
 image: https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 ingress: Much of Elm's power stems from the fact that most things are just
-  functions. So how does operators fit in?
+  functions. So how do operators fit in?
+description: Elm  operators
 authors:
   - Robin Heggelund Hansen
 ---
-Imagine that we have a list of example first names, and another list of example last names. Let's also imagine that our task is to come up with a set of example full names. We could solve the problem like so:
+Imagine that we have a list of first names (like Stanly, Paul and so forth), and another list of last names (Henderson, Hansen, Copperfield etc.). Also imagine that we have been given a task to come up with a set of full names, to be used as an example for a form we're making. We could solve the problem like so:
 
 ```elm
 exampleNames : List String
@@ -17,7 +18,7 @@ exampleNames =
     List.map2 (\firstName lastName -> firstName ++ lastName) listOfFirstNames listOfLastNames
 ```
 
-This works, but the anonymous function we've made takes a surprisingly large amount of screen real estate considering how little it actually does.
+This works, but the anonymous function we've made takes up a surprisingly large amount of screen real estate considering how little it actually does.
 
 We could try to improve the situation by turning this into a proper function:
 

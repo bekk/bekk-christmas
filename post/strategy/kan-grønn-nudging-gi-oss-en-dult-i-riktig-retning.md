@@ -1,7 +1,7 @@
 ---
 calendar: strategy
 post_year: 2020
-post_day: 13
+post_day: 16
 title: 'Kan vi "dultes" i en grønnere retning? '
 image: https://images.unsplash.com/photo-1554976326-7b74d5ea44e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=728&q=80
 ingress: "Stadig flere retter fokus mot klimaendringene, og vi som forbrukere og
@@ -22,10 +22,8 @@ I tillegg har vi som mennesker begrenset mental kapasitet, og det er ubegripelig
 
 I Bekk designer vi digitale produkter og tjenester. Felles for flere av disse er at de også påvirker det fysiske miljøet, det kan være gjennom reisevaner, sykemelding eller sparing. Akkurat som vi designer kundereiser som skal gjøre det sømløst å bestille billetter fra A til Å, søke sykemelding eller spare smart, må vi sikre at det blir sømløst å velge bærekraftige alternativer i disse produktene og tjenestene. I dette øyemed kan grønn nudging kan være et verktøy verdt å utforske.
 
-Nudging, eller *«dulting»* på godt norsk, defineres *som målrettede endringer i individers beslutningsarkitektur som påvirker adferd gjennom endringer i miljøet*. Kort og godt handler dette om å påvirke folks adferd i en bestemt retning, gjerne ved å revurdere hvordan ulike valgmuligheter presenteres. Du fjerner ikke valgalternativer, men du endrer oppsettet. Et eksempel kan være endret oppsett av en meny på Foodora der vegetaralternativer gis økt synlighet. Eller det kan være at standardløsningen ved bestilling av take-away er *uten* engangsbestikk fremfor *med* (de fleste har bestikk i heimen).
+Nudging, eller **«dulting»** på godt norsk, defineres *som målrettede endringer i individers beslutningsarkitektur som påvirker adferd gjennom endringer i miljøet*. Kort og godt handler dette om å påvirke folks adferd i en bestemt retning, gjerne ved å revurdere hvordan ulike valgmuligheter presenteres. Du fjerner ikke valgalternativer, men du endrer oppsettet. Et eksempel kan være endret oppsett av en meny på Foodora der vegetaralternativer gis økt synlighet. Eller det kan være at standardløsningen ved bestilling av take-away er *uten* engangsbestikk fremfor *med* (de fleste har bestikk i heimen).
 
 Det er mange alternative redskap i verktøykassen *nudging* – det handler rett og slett om å bedre forstå psykologien bak valg. På den måten kan digitale produkter og tjenester bistå oss forbrukere der vi selv kommer litt til kort. Ulike redskap kan være å endre standardløsningen, endre oppsett av valgalternativer, eller rett og slett tilby annen type informasjon (levetid på produktet, besparelser i karbonutslipp ved å velge et alternativ fremfor et annet, osv.). Et godt eksempel her er Kolonial.no som ved bestilling av hjemlevering synliggjør hvilke leveringstidspunkt de også leverer til naboen *Spar miljøet! Bestill til samme tid som en nabo.* Ved å være transparente bistår de kunden i å velge miljøvennlig, samtidig som det gir økt forretningsmessig verdi gjennom besparelser i fraktkostnader.
 
 Viktige spørsmål man kan stille seg som produktutvikler, er gjerne: Er det noen beslutningsnoder i kundereisen der kunden stilles ovenfor mer eller mindre bærekraftige alternativer? Kan du gjøre noen enkle grep for å gjøre det lettere for kunden å velge mer bærekraftig? Kanskje åpner til og med forretningsmodellen din opp for å tjene på at kundene *dultes* i en mer bærekraftig retning? Bra for bedriften, bra for miljøet og positivt for forbrukeren som får hjelp til å velge bærekraftig. Selv takker jeg i hvert fall gledelig ja til avlastning i det å ta bærekraftige valg. Særlig nå i julestria, når alt fra gaveinnkjøp til julebakst konkurrerer om min oppmerksomhet!
-
-<!--EndFragment-->

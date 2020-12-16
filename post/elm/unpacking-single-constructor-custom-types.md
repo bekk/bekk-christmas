@@ -2,7 +2,8 @@
 calendar: elm
 post_year: 2020
 post_day: 3
-title: Single-constructor Custom Types
+title: Single-Constructor Custom Types
+image: https://source.unsplash.com/vJz7tkHncFk
 authors:
   - Aksel Wester
 ---
@@ -49,7 +50,7 @@ type Height
 ```
 
 Both constructors of the custom types have the same name as the name of the custom type, which is normal to do with single-constructor custom types.
-Next, let's say we change our `bodyMassIndex` function to have the following signature:
+Next, let's say we change our `bodyMassIndex` function to have the following type signature:
 
 ```elm
 bodyMassIndex : Weight -> Height -> Float

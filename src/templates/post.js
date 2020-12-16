@@ -128,6 +128,10 @@ const Template = ({ data, pageContext }) => {
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={seoDescription} />
                 <meta property="og:image" content={heroImage} />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:description" content={seoDescription} />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:image" content={heroImage} />
             </Helmet>
             <TitleContainer>{title}</TitleContainer>
             <MaxWidth>

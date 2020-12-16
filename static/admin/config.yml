@@ -9,6 +9,7 @@ collections:
       folder: post/javascript
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -67,6 +68,7 @@ collections:
       folder: post/react
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -125,6 +127,7 @@ collections:
       folder: post/kotlin
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -183,6 +186,7 @@ collections:
       folder: post/opensource
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -241,6 +245,7 @@ collections:
       folder: post/functional
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -299,6 +304,7 @@ collections:
       folder: post/java
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -357,6 +363,7 @@ collections:
       folder: post/ml
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -415,6 +422,7 @@ collections:
       folder: post/innovation
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -473,6 +481,7 @@ collections:
       folder: post/security
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -531,6 +540,7 @@ collections:
       folder: post/thecloud
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -589,6 +599,7 @@ collections:
       folder: post/ux
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -647,6 +658,7 @@ collections:
       folder: post/css
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -705,6 +717,7 @@ collections:
       folder: post/talks
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -763,6 +776,7 @@ collections:
       folder: post/elm
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year
@@ -821,6 +835,7 @@ collections:
       folder: post/strategy
       create: true
       summary: '{{post_year}}/{{post_day}}: {{title}}'
+      sortable_fields: ['post_day', 'commit_date', 'title']
       view_groups:
           - label: Year
             field: post_year

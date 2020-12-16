@@ -14,6 +14,11 @@ ingress: >-
   One way of doing this would be to rewrite the whole thing, and to be honest, it probably would not have been that much work. But it got me thinking, how would I go about injecting the already written code into my React application? I haven't done anything like this before, and if you haven't either, this is a blog post for you!
 description: A small article about how I integrated a JavaScript application
   into React code.
+links:
+  - url: https://reactjs.org/docs/integrating-with-other-libraries.html
+    title: Integrating with Other Libraries
+  - url: https://reactjs.org/docs/refs-and-the-dom.html
+    title: Refs and the DOM
 authors:
   - Sissel Fladby
 ---
@@ -42,11 +47,11 @@ And this works! However, while having the React code and the JavaScript code sid
 
 ## **Integrating with React**
 
-I wanted to integrate the methods and functions from the JavaScript with my React code, which meant having to import it into the React code.
+You see, while the JavaScript app in itself is nice enough, I actually wanted to "extract" the image processing functions from that app, and use those together with my React code, which meant having to import it into the React code.
 
 ### Importing the code
 
-First of all, this code is not in any package registry, so in order to have something to work with I simply put the git url into my package.json. Since the code is from a workshop, and I don’t intend to implement the algorithms *again* I choose the solution-branch.
+First of all, this code is not in any package registry, so in order to have something to work with I simply put the git url into my package.json.
 
 ```
 "name": "dummy-app",
@@ -63,7 +68,7 @@ First of all, this code is not in any package registry, so in order to have some
 
 ### And so it begins..
 
-Taking the naive approach, I want to import the code to use it in my dummy-app*.* So what happens when I import it?
+Taking the naive approach, I want to import the code to use it in my dummy React app. So what happens when I import it?
 
 ```
 import React from "react";
@@ -89,7 +94,7 @@ const sharpen = require('./effects/sharpen');
 module.exports = {Editor, histogramequalization, medianfilter, invert, colorfilter, sharpen};
 ```
 
-Then we can just use these functions in our code:\
+Then we can just use these functions in our code. I have made a new "FunctionalEditor" in React that uses the Editor and all the effect functions from the image-workshop:\
 Note that I have to include the `<canvas id="..`. because the JS depends on it.
 
 ```
@@ -143,4 +148,68 @@ export default MyFunctionalEditor;
 
 ![Screenshot of the resulting app, with one edited photo and the original side by side](https://i.ibb.co/jwWZNxJ/Screenshot-from-2020-11-29-18-14-15.png)
 
-And success! I get my own version of photoshop inside my React app! And that is pretty much it. Thank you for reading!
+And success! I get my own version of photoshop inside my React app!
+
+### querySelector >:(
+
+And I am mostly happy with this. All is well *as long as I have HTML-elements with a certain id,* because the JavaScript code uses querySelector to find the DOM-elements to manipulate. This also puts restraints on my React code. In order to truly have customisable code, the JavaScript should not care what I name my elements or where I put them.
+
+Instead of having the render function in the image-workshop use querySelector to grab the canvasses, it would be better to refer to the elements directly. That way, I can also basically send any canvas to be rendered.
+
+```
+//Editor.js
+
+//Render function as it used to be
+render(image, canvasName) {
+        //canvasName is either "original" or "edited"
+        const canvas = document.querySelector("#" + canvasName);
+        const context = canvas.getContext('2d');
+
+        canvas.width = image.width;
+        canvas.height = image.height;
+
+        context.putImageData(image.imageData, 0, 0);
+    }
+
+//Wouldn't this be nicer? 
+render(image, canvasName, canvas) {
+    const context = canvas.getContext('2d');
+
+    canvas.width = image.width;
+    canvas.height = image.height;
+
+    context.putImageData(image.imageData, 0, 0);
+ }
+```
+
+Since the editor now needs access to the canvas-element, we can create refs that belong to the canvasses and pass them to the *loadImage* and *applyEffect* functions in Editor.js.
+
+```
+const MyFunctionalEditor = () => {
+    const editor = useMemo(() => new Editor(), []);
+    const originalCanvasRef = React.createRef();
+    const editedCanvasRef = React.createRef();
+
+    useEffect(() => {
+        editor.loadImage("tower.jpg", editedCanvasRef.current, originalCanvasRef.current);
+    }, [editor, editedCanvasRef, originalCanvasRef])
+
+    return (
+                ...
+                <button id="invert" className="notgroup" onClick={() => editor.applyEffect(invert, editedCanvasRef.current)}>Invert</button>
+                ...
+                <div>
+                    <h3>Edited:</h3>
+                    <canvas style={{height: 400}} ref={editedCanvasRef} />
+                </div>
+                <div>
+                    <h3>Original:</h3>
+                    <canvas style={{height: 400}} ref={originalCanvasRef} />
+                </div>
+                ...
+          )
+}
+```
+
+\
+And that is pretty much it! This small JavaScript project is turned into a simple API, and used in modern React code. I hope you enjoyed this article, and hopefully the next time you encounter an awesome non-React library you'd like to try out, you won't be scared off!

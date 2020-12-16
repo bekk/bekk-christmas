@@ -1,7 +1,7 @@
 ---
 calendar: thecloud
 post_year: 2020
-post_day: 23
+post_day: 14
 title: Sharing infrastructure as code with linked Azure Resource Manager templates
 ingress: This blog post will not focus on how or even why you should write your
   infrastructure as code. Rather, it will focus on how you, a curious developer

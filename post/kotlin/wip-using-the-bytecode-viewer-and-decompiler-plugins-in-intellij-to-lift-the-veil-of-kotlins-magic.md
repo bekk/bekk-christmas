@@ -4,14 +4,14 @@ post_year: 2020
 post_day: 5
 title: Using the Bytecode Viewer and Decompiler tools in IntelliJ to lift the
   veil of Kotlin's magic
-image: ""
+image: https://images.unsplash.com/photo-1562563436-a73bab993173?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80
 ingress: IDE's commonly include a lot of useful tools that can make our lives as
   developers easier. Some are pure productivity tools to speed up our
   development, while others may actually help our understanding of the code we
   are implementing. The toolset included with the [IntelliJ
   IDEA](https://www.jetbrains.com/idea/) IDE is no exception. In this article we
   will take a look at the *Bytecode Viewer* and *Java Bytecode Decompiler*
-  integrated tools in IntelliJ, and how the may help us in getting a better
+  integrated tools in IntelliJ, and how they may help us getting a better
   understanding of how our Kotlin code is represented on the JVM, and how it
   could potentially look in Java.
 links: []
@@ -20,7 +20,7 @@ authors:
 ---
 ## How to use the tools
 
-First of all it is required that you have IntelliJ IDEA installed. You may use either one of the Community or Ultimate edition, since [both come bundled](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html) with the necessary tools. Then simply create or open a Kotlin file of your chosing and select **Tools > Kotlin > Show Kotlin Bytecode** from the menu. A new side panel will open and, given that you have a Kotlin file currently selected, will display the corresponding bytecode generated for that specific file. From here you can study the actual bytecode, or jump to another Kotlin file of your liking. The Bytecode Viewer will update automatically according to the Kotlin file currently being viewed:
+First of all it is required that you have IntelliJ IDEA installed. You can use the Community or Ultimate edition, since [both come bundled](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html) with the necessary tools. Then simply create or open a Kotlin file of your chosing and select **Tools > Kotlin > Show Kotlin Bytecode** from the menu. A new side panel will open and, given that you have a Kotlin file currently selected, will display the corresponding bytecode generated for that specific file. From here you can study the actual bytecode, or jump to another Kotlin file of your liking. The Bytecode Viewer will update automatically with the Kotlin file currently being viewed:
 
 ![TopLevel.kt opened in the Bytecode Viewer](https://i.ibb.co/LS7nvZc/Intelli-J-IDEA-CE-2020-2-1-Bytecode-Viewer-1.png "TopLevel.kt opened in the Bytecode Viewer")
 ![Another Kotlin file opened in the Bytecode Viewer](https://i.ibb.co/tDrV5yG/Intelli-J-IDEA-CE-2020-2-1-Bytecode-Viewer-2.png "Another Kotlin file opened in the Bytecode Viewer")
@@ -29,7 +29,7 @@ Now, the bytecode itself might not make much sense, unless you're already adept 
 
 ## A practical example
 
-Kotlin expands upon Java by offering [additional language features](https://kotlinlang.org/docs/reference/comparison-to-java.html), while at the same time providing [interoperability](https://kotlinlang.org/docs/reference/java-interop.html). It's easy to take this fact for granted, and it might seem as a bit of magic sometimes. By combining the Bytecode Viewer and Decompiler tools we now have the ability to compare Kotlin source code side-by-side with Java. If you're coming from a Java background, and is just starting with Kotlin, this can be very convenient if you quickly want to compare your Kotlin code to something more familiar.
+Kotlin expands upon Java by offering [additional language features](https://kotlinlang.org/docs/reference/comparison-to-java.html), while at the same time providing [interoperability](https://kotlinlang.org/docs/reference/java-interop.html). It's easy to take this fact for granted, and it might seem as a bit of magic sometimes. By combining the Bytecode Viewer and Decompiler tools we now have the ability to compare Kotlin source code side-by-side with Java. If you're coming from a Java background, and you've just started with Kotlin, this can be very convenient if you quickly want to compare your Kotlin code to something more familiar.
 
 Let's take a look at a concrete example with [top-level functions in Kotlin, which Java currently do not support](https://kotlinlang.org/docs/reference/functions.html#function-scope). Let's say we want to get an idea of how this could be represented in Java. We'll define a Kotlin file, `TopLevel.kt`, and declare the following top-level function:
 
@@ -76,4 +76,4 @@ We've barely scratched the surface here with this simple example, but hopefully 
 
 ## A note on decompilers
 
-An important thing to remember about decompilers are the fact that they make[ presumptions about the underlying bytecode](https://link.springer.com/chapter/10.1007/3-540-45937-5_10). More specifically, they may assume that the bytecode was produced through very specific compilation patterns. Generally this means that the source code produced by a decompiler, i.e. the Java Decompiler that IntelliJ uses, should be treated as indicative only. For use-cases such as the one in this article, it can give us a pinpoint as to how a concept in Kotlin may be represented in Java. However there is no guarantee that every Kotlin concept can be represented entirely by native Java features.
+An important thing to remember about decompilers is the fact that they make[ presumptions about the underlying bytecode](https://link.springer.com/chapter/10.1007/3-540-45937-5_10). More specifically, they may assume that the bytecode was produced through very specific compilation patterns. Generally this means that the source code produced by a decompiler, i.e. the Java Decompiler that IntelliJ uses, should be treated as indicative only. For use-cases such as the one in this article, it can give us a pinpoint as to how a concept in Kotlin may be represented in Java. However there is no guarantee that every Kotlin concept can be represented entirely by native Java features.

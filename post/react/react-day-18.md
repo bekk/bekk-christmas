@@ -2,61 +2,101 @@
 calendar: react
 post_year: 2020
 post_day: 16
-title: "[UTKAST] Underneath Create React App"
+title: Maintainable React components with Typescript
 image: https://images.unsplash.com/photo-1484603738253-e5b73679e8cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
-ingress: Ever since I started coding, Create React App (CRA) has been my go-to
-  when starting up a new React project. After working with CRA applications
-  daily for over a year, I haven’t really put much thought into what is actually
-  going on beneath the surface of CRA. I’ve simply been happy copy-pasting `npx
-  create-react-app my-app` into the terminal so that I can start coding as soon
-  as possible. But recently I started to get curious, what is actually happening
-  here?
+ingress: I often find myself coming into code bases that I haven't worked with
+  before to fix a bug or add some new feature. This is honestly more often that
+  not quite challenging.
 links:
-  - url: https://spin.atomicobject.com/2020/01/28/eject-create-react-app-drawbacks/
-    title: Don’t Eject! – Leave your Create React App in the Disc Drive
-  - url: https://create-react-app.dev/docs/available-scripts/
-    title: Create react app script documentation
-  - url: https://dev.to/nikhilkumaran/don-t-use-create-react-app-how-you-can-set-up-your-own-reactjs-boilerplate-43l0
-    title: Alternatives to CRA and some interesting discussion
+  - url: https://www.typescriptlang.org/
+    title: TypeScript Documentation
 authors:
   - Joakim Gyllenskepp
 ---
-# A fresh CRA project
+Recently, santa needed my help to improve the gift generator that the North pole uses to find the perfect christmas gifts. Santa suggested that I should tweak the parameters that are sent into the generator to make it more precise.
 
-After running `create-react-app` your root folder will look something like this:
+What I always do when working with a new code base is that I read it through top-down. I start with the `<App />`-component that wraps the application, and navigate myself down to the component that I'm going to work with. When I finally find the relevant component, I might be met by something like this:
 
-* Root
+```TSX
+function SantasGiftGenerator(props) {
+    // some less important code
+    ...
 
-  * `node_modules/`
-  * `public/`
-  * `src/`
-  * `package.json`
-  * `yarn.lock`
-  * `README.md`
-  * `.gitignore`
+    // This code generates the perfect gift
+    return (
+        <>
+            <h1>The perfect gift:<h1>
+            <ThePerfectGift
+                wishlist={props.wishlist}
+                name={props.child.name}
+                naughtyOrNice={() => props.naughtyOrNice(props.child.name)}
+            >
+        </>
+    )
+}
+```
 
-`yarn.lock/package-lock.json`, `README.md`, and `.gitignore` aren't all that interesting. And you’re probably familiar with `node_modules`, where the code of all dependencies and peer dependencies of the project are stored.
+Sure, that doesn't look so bad. But a problem with this component is that it's quite hard to figure out what `props` actually contains. In my eyes `props` simply hides some of the most important information that determines how a component works, the input.
 
-This `public` folder contains files that we want the user to be able to directly access in the web browser, for example `robots.txt` that is used by search engine crawlers, and `index.html` which React will mount itself to.
+In this case, it's clear that `props` contains the input `props.wishlist`, `props.child.name` and a function `props.naughtyOrNice`. So what is `props.wishlist`? Maybe it's a list? But if that's the case, what does the list contain? Is it a list of strings or a list of objects containing more information? Also, does `props.child` contain any other information than `name`? It certaintly seems like it, since it would be weird to have an object with only one value in it...
 
-In the `src/` folder we find the React code, css-files, Jest test-files, etc.
+My point is, if we know what information is available to our components, it is a lot easier to figure out what the component does and how to change it without breaking the application somehow.
 
-`package.json` contains some scripts, all of the dependencies of a project, and some eslint config and a browser-list. As of CRA version 4 we can find the following dependencies: `@testing-library`, `react`, `react-dom`, `web-vitals`, and last but not least the `react-scripts`. There are also four scripts: `start`, `build`, `test`, and `eject`. Note that all of these scripts are dependent on `react-scripts`. Interesting... What is actually going on here?
+## So how can Typescript help?
 
-Note: If you use the typescript template for CRA, `package.json` will additionaly contain the dependencies `typescript` and some `@types`-dependencies that add ts support to packages that doesn't support typescript out of the box. You will also find `tsconfig.json`, `src/react-app-env.d.ts`, and all the code will be written in Typescript.
+After consulting with Santa, I converted the component to Typescript and added types to make it easier to work with. It ended up like this:
 
-# So what happens if you eject the app?
+```TSX
+type Child = {
+    name: string;
+    age: number;
+    favouriteColor: string;
+}
 
-By browsing into `package.json` we can immediately see that a lot have changed. We went from fewer than 10 to more than 60 dependencies! what actually happened is that `react-scripts` and all of its configuration and peer dependencies got replaced by moving all the configuration and dependencies into our project. A lot of these things were put into the `config`- and  `scripts`-folder. There is also some more configuration for `jest` and `babel`.
+type GeneratorProps= {
+    wishlist: string[];
+    child: Child
+    naughtyOrNice: (name: string) => "Nice" | "Naughty"
+}
 
-## scripts
+function SantasGiftGenerator(props : GeneratorProps) {
+    // some less important code
+    ...
 
-We can see that our scripts have changed a bit, for example our `start` script went from `react-scripts start` to `node scripts/start.js`. In other words, instead of utilizing the `react-scripts` package we’re now running a Javascript-snippet with node to start the app. By navigating into `scripts/start.js` we can see a quite lengthy script with quite a few dependencies.
+    // This code generates the perfect gift
+    return (
+        <>
+            <h1>The perfect gift:<h1>
+            <ThePerfectGift
+                wishlist={props.wishlist}
+                name={props.child.name}
+                naughtyOrNice={() => props.naughtyOrNice(props.child.name)}
+            >
+        </>
+    )
+}
+```
 
-## config
+With these type definitions added to the component, it's not necessary to go on a treasure hunt to find input used by the component. In the case of `SantasGiftGenerator`, Typescript makes it easier to answer previously unanswered questions:
 
-In the `config`-folder we can now find configurations for Jest, http(s), setup for compiling our modules, environmental config, typescript, and a lot of config for webpack (800+ lines!!), which is the module bundler running beneath `react-scripts`.
+1. `wishlist` is a list of strings.
+2. `child` is actually an object which contains information about `age` and `favouriteColor` in addition to `name`.
+3. The function `naughtyOrNice()` takes the string `name` as input, and either returns the string `Naugthy` or `Nice`.
 
-# So is that it?
+Even though you need to write some extra lines of code to add type definitions to your components, I'd say it's worth it a hundred times over! Well, maybe that's a bit exaggerated, but type definitions will most likely save a lot of time for the next person working with the code, and maybe even your future self.
 
-There we go, now we’re free of CRA and all of the magic happening behind the scenes in CRA and `react-scripts`. We now have full control over dependencies and we’re free to configure our project however we want to. Be careful though, this means that we have full responsibility for maintaining the code. If you want to upgrade some packages to the newest version, you have to make sure that everything is compatible with your configuration so that half of your scripts doesn’t accidentally break
+
+
+## Other neat advantages
+
+Of course, there's a heap of other advantages that comes with typed languages.
+
+Since Typescript gives more informations about functions and components, most popular IDEs uses this information to improve auto-completion. And to be honest, coding without auto-completion is just a pain.
+
+The Typescript compiler also makes you a lot more confident when changing your code. When you add, remove, or change the input of a component, the compiler will output useful error messages that helps you understand how much impact such a change has.
+
+Anyway, that's my two cents when it comes to adding static typing to Javascript, either through Typescript or with some other tool such as Flow.
+
+Stay typed!
+
+

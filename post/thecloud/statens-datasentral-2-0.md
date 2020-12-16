@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 2
 title: Statens Datasentral 2.0
-image: http://web.archive.org/web/19970429055012im_/http://www.interpost.no/sds/images/sdslogo.gif
+image: /assets/sdslogo.png
 ingress: NSM er bekymret for den samlede nasjonale avhengigheten av utenlandske
   skytjenesteleverandører. De mener Norge bør [vurdere å etablere en offentlig
   sky på norsk jord, for å sikre nasjonal

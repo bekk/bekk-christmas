@@ -2,7 +2,7 @@
 calendar: functional
 post_year: 2020
 post_day: 16
-title: Typeclasses in Haskell (and Elm?!)
+title: Typeclasses in Haskell (and Elm?)
 authors:
   - Øyvind Stette Haarberg
 ---
@@ -43,9 +43,9 @@ class Eq a => Ord a where
 
 ## The "freebies" of typeclasses
 
-As we saw with the `Eq`instance we didn't have to provide all functions for the functions of the typeclass. This benefit might not seem to be significant when looking at `Eq`, but for other typeclasses like `Foldable` you get a whole load of functions already defined if you implement a sufficient part of the typeclass functions.
+As we saw with the `Eq` instance we didn't have to provide all functions for the functions of the typeclass. This benefit might not seem to be significant when looking at `Eq`, but for other typeclasses like `Foldable` you get a whole load of functions already defined if you implement a sufficient part of the typeclass functions.
 
-If we look at the info for the `Ord` typeclass we can see that the minimal definition is providing `(<=)`. Just by providing a function for comparing lesser than or equal, we gain the other comparisons, as well as the `max` and `min` functions for free.
+If we look at the info for the `Ord` typeclass we can see that the minimal definition is providing `(<=)`. Just by providing a function for comparing lesser than or equal, we gain the other comparisons, as well as the `max` and `min` functions for free. Additionally, we are guaranteed that the definitions for our typeclass are _coherent_ this way. In other words, the definitions have to internally make sense, such that we can't have that `a > b && b > a` for instance.
 
 ## A world without custom typeclasses
 
@@ -68,7 +68,7 @@ This way you don't have the added abstraction of providing a mapping to some oth
 
 A difference between the Haskell and Elm examples is that for Haskell the correct function for comparing the elements will be sourced by the `Ord` instance for a (whichever type a turns out to be), but for the Elm examples you have to provide the correct instance when calling the function.
 
-The need to know the types is easier to see if you look at the `map`-functions in the Elm standard library. Instead of having a single map-function for some typeclass, Elm provides different mapping functions for the standard containers (such as `List.map`, `Set.map`, `Maybe.map` and so on). This way you don't need typeclasses for foldables, but there is no way to map over some structure in Elm without also knowing _what_ that structure is. This is a tighter coupling to the types used. If the underlying type changes in your model, say from a `List` to a `Set`, then any functions simply mapping over the elements now have to provide the appropriate mapping function.
+The need to know the types is easier to see if you look at the `map`-functions in the Elm standard library. Instead of having a single map-function for some typeclass (`Functor` for instance), Elm provides different mapping functions for the standard containers (such as `List.map`, `Dict.map`, `Maybe.map` and so on). This way you don't need typeclasses for `Functors`, but there is no way to map over some structure in Elm without also knowing _what_ that structure is. This is a tighter coupling to the types used. If the underlying type changes in your model, say from a `List` to a `Maybe`, then any functions simply mapping over the elements now have to provide the appropriate mapping function.
 
 ## Custom typeclasses in Elm?
 
@@ -91,7 +91,7 @@ listSort : Ord a -> List a -> List a
 
 Not too far off from our Haskell `listSort`!
 
-You still can't extend the built-in typeclasses and the typeclass functions aren't provided implicitly, but you can write functions using a constrained type as you know that the caller has to provide the instance for your typeclass.
+You still can't extend the built-in typeclasses and the typeclass functions aren't provided implicitly, but you can write functions using a constrained type as you know that the caller has to provide the instance for your typeclass. We also lose the guarantee of _coherence_ for the typeclass functions. Even if you wrote a helper function that fills the rest of the instances from a minimal definition, we could still provide an `Ord` record where the `lessThan`- and `greaterThan`-functions are the same.
 
 One thing that breaks with this approach is typeclasses for higher-kinded polymorphism. Trying to use a record to implement a similar set of functions as `Foldable` in Haskell (the typeclass of types that can be "folded over", a more general version of `reduce` for instance) illustrates this issue.
 

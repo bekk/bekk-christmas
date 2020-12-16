@@ -8,7 +8,7 @@ ingress: Do you feel compelled to manually test your React frontend after each
   deploy, because it’s not tested as well as your backend? Or perhaps you
   already have frontend tests, but you feel that they only serve as a hindrance,
   slowing down your development speed? Perhaps it’s time to give frontend
-  testing another go, with the React Testing Library.
+  testing another go, with the React Testing Library!
 authors:
   - Daniel Strømme Solberg
 ---
@@ -26,6 +26,7 @@ import { render, screen } from "@testing-library/react";
 const CustomButton = ({ label }) => {
   return <button>{label}</button>;
 }
+
 test("can render CustomButton", () => {
   const buttonLabel = "Submit";
   render(<CustomButton label={buttonLabel} />);
@@ -33,13 +34,13 @@ test("can render CustomButton", () => {
 });
 ```
 
-Fairly straight forward, huh? Let’s break it down a bit anyway. RTL provides a `render` function that lets us, well, render our component. Specifically, it renders it into the document body that the tests operate on. The second import, `screen`, then lets us query the contents of the document, here by searching for any element with the given text. Lastly, we *expect* such an element *to be in the document*. The latter is an argument matcher from `@testing-library/jest-dom` which give us declarative assertions. The test is dead simple and only tests what the user cares about: how the component appears on the screen.
+Fairly straight forward, huh? Let’s break it down a bit anyway. RTL provides a `render` function that lets us, well, render our component. Specifically, it renders it into the document body that the tests operate on. The second import, `screen`, then lets us query the contents of the document, here by searching for any element with the given text. Lastly, we *expect* such an element *to be in the document*. The latter is an argument matcher from `@testing-library/jest-dom` which gives us declarative assertions. The test is dead simple and only tests what the user cares about: how the component appears on the screen.
 
 ## Avoid testing implementation details
 
 RTL tries to encourage writing tests that do not depend on how the components work internally. One example we’ve seen already is the way we query the document for an element  — by its text content. The tests should approach the component like the end user would; they should only care that the button be present and that it have the correct label. The alternative of querying an element by its CSS selector (a widespread approach) is thus discouraged.
 
-One reason you may have felt that frontend tests hinder you in the past could be due to what Dodds refers to as the *test user*. The essence is that your components normally have two users: the end user and the developer. For each user, you have to maintain the interface through which they access the component. The end user cares about the UX interface on his screen, while the developer cares about the component’s API. However, if your tests depend on the *implementation details* of your component, you’ve added another (informal) interface that you need to maintain —  you’ve introduced the test user. Now you might find that any future changes or internal refactoring breaks the tests unnecessarily, and you’re slowed down. Oof.
+One reason you may have felt that frontend tests hinder you in the past could be due to what Dodds refers to as the *test user*. The essence is that your components normally have two users: the end user and the developer. For each user, you have to maintain the interface through which they access the component. The end user cares about the UX interface on his screen, while the developer cares about the component’s API. However, if your tests depend on the *implementation details* of your component, you’ve added another (informal) interface that you need to maintain —  you’ve introduced the test user. Now you might find that any future changes or internal refactoring break the tests unnecessarily, and you’re slowed down. Oof.
 
 So let’s avoid that! RTL does a good job at providing an API that uses your components in the same way that they’re used in your production code, and interacts with it like the end user would.
 
@@ -59,7 +60,7 @@ This is no doubt a more specific query, and it also has an additional advantage:
 
 ## User interaction and asynchronicity
 
-Let’s say that when our button is clicked, it triggers the loading of some data, which is then rendered somehow. We can test this scenario with the user-event utility. We’ll find the button with the label “Load Data”, click it, and then assert that the content eventually shows up. Let’s assume that the content includes the header *Your Data*.
+Let’s say that when our button is clicked, it triggers the loading of some data, which is then rendered somehow. We can test this scenario using the user-event utility and asynchronous queries. We’ll find the button, click it and then assert that the content eventually shows up. Let’s assume that the component `MyComponent` includes a button with the label "Load Data" and that the loaded content has the header "Your Data*"*.
 
 ```jsx
 import userEvent from "@testing-library/user-event";
@@ -88,7 +89,7 @@ For a bit of extra robustness, I replaced the strings here with case-insensitive
 
 You can still test your components with RTL, even when they utilize a state store, context or router. Although *pure* components are easier to test (just as for pure functions), you can override the `render` method to render the components within a wrapper where you set up all your providers. For state stores, you can then either let all your tests use the initial state, or override parts of the state on a test-by-test basis. The docs offer some excellent examples for this.
 
-When you’re writing tests that operate heavily on local or global state, you may be tempted to assert that parts of the state have correct values after performing an action. In this case, the more idiomatic approach is to verify the state through how the component is rendered, in line with avoiding testing implementation details. This ensures you’ll be able to freely move parts of the state from global to component level and vice versa in the future. If necessary, you can always supplement the RTL tests with additional Jest unit tests, verifying the correctness of your reducers.
+When you’re writing tests that operate heavily on local or global state, you may be tempted to assert that parts of the state have correct values after performing an action. In this case, the more idiomatic approach is to verify the state through how the component is rendered, in line with avoiding testing implementation details. This ensures you’ll be able to freely move parts of the state from global to component level and vice versa in the future. If necessary, you can always supplement the RTL tests with additional Jest unit tests to verify the correctness of your reducers.
 
 ## Final thoughts
 

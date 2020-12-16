@@ -1,13 +1,15 @@
 ---
 calendar: talks
 post_year: 2020
-post_day: 11
+post_day: 14
 title: How to Present Like Me
 image: https://pbs.twimg.com/profile_banners/21295249/1540032331/1500x500
 ingress: If you're curious about doing tech talks, chances are you're stressed
   out about preparing for it. Let's see how it's done.
 description: Learn how to create tech talks, presentations and speeches with
   this 7-step guide
+authors:
+  - Kristofer Giltvedt Selbekk
 ---
 
 First, a few lines about myself. I'm 33 years old, and I've done about 100 presentations and talks throughout my life. Some of those talks have been for four or five colleagues in a cramped room, and others has been in front of hundreds of live spectators. Although the amount I prepare vary based on the impact that particular presentation has, I follow about the same procedure.

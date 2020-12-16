@@ -10,11 +10,11 @@ links: []
 authors:
   - Vinh Nguyen
 ---
-Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape viralvekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan lære av vekstselskaper og deres tilnærming til vekst og eksperimenter.
+Det er ikke rart at selskaper stadig ser etter nye måter å vokse på. Dette er spesielt viktig for oppstartsbedrifter som opererer med begrensede ressurser og utålmodige investorer. Til tross for at vi har tilgang til mer kundedata, metoder og dataverkøy enn noen gang, så sliter mange selskaper med vekst og å jobbe målrettet med de riktige vekstinitiativene. Et relativt nytt fagfelt som har vokst frem som et tilsvar til dette er growth hacking. Målet er å skape massiv vekst, ved at bedriften til enhver tid har laserfokus på vekst og eksperimenter som bidrar til dette. I denne julekalenderluken skal jeg introdusere dere for growth hacking og hvordan etablerte selskaper kan lære av vekstselskaper og deres tilnærming til vekst og eksperimenter.
 
 ## Hva er Growth hacking
 
-Det var i 2010 at gründeren Sean Ellis introduserte verden for begrepet growth hacking og siden har fagfeltet eksplodert, særlig i startupverden. Kort fortalt er growth hacking et paraplybegrep for strategier, metoder og et tankesett for å oppnå massiv vekst, på relativt beskjedne budsjetter og kort tid. Hyppige eksperimenter er et nøkkelord. Selskaper som ønsker å øke fokuset på vekst, bør ha et bevisst forhold til antall eksperimenter som gjennomføres hver uke. Gjennomføres nok eksperimenter over tid bidrar dette til å styrke kompetansen og kulturen på dette området, og det er nesten helt sikkert at noen av eksperimentene vil gi gevinst for bedriften.
+Det var i 2010 at gründeren Sean Ellis introduserte verden for begrepet growth hacking og siden har fagfeltet eksplodert, særlig i startupverden. Kort fortalt er growth hacking et paraplybegrep for strategier, metoder og et tankesett for å oppnå massiv vekst, på relativt beskjedne budsjetter og kort tid. Hyppige eksperimenter er et nøkkelord. Selskaper som ønsker å øke fokuset på vekst, bør ha et bevisst forhold til antall eksperimenter som gjennomføres hver uke. Gjennomføres nok eksperimenter over tid bidrar dette til å styrke kompetansen og kulturen på dette området, og det er nesten helt sikkert at noen av eksperimentene vil gi gevinst for bedriften. Det er nettopp dette etablerte selskaper kan lære av vekstselskaper; hensynsløs fokus på å skape massiv vekst gjennom hyppige eksperimenter.
 
 Growth hacking slår ned de usynlige veggene mellom dataanalyse, programmering, produktutvikling og markedsføring. Det er få enkeltindivider som behersker alle disse fagfeltene godt, og det er derfor ikke uvanlig med såkalte *growth teams* som typisk jobber med å drive vekst eller utvikling av nye vekstinitiativer. I en jungel av data, strategier, verktøy og teknologi er det lett å miste fokus på de tingene som faktisk gir vekst. Vi i Bekk foreslår å ta et skritt tilbake for å identifisere vekstmålet og gjennomføre de eksperimentene som bidrar å nå dette målet - slik mange vekstselskaper gjør det!
 
@@ -30,9 +30,9 @@ Vi har identifisert 4 steg for enkelt å komme i gang med å identifisere vekste
 
 ### 1) Identifiser vekstmålet – din nordstjernemetrikk
 
-Formålet med det første steget er å identifisere hva som er teamets nordstjernemetrikk og dermed den metrikken som teamet ønsker å forbedre. For Facebook var den viktigste vekstmetrikken i starten antall brukere som la til [7 venner i løpet av de 10 første dagene](https://blog.modeanalytics.com/facebook-aha-moment-simpler-than-you-think/). De fant ut at dette var den metrikken som best forklarte om de klarte å skape nettverkseffekter og viralvekst. Airbnb sin vekstmetrikk er antall netter reservert på plattformen. Dette fanger verdien som leveres til både gjester og utleiere, og dermed et godt tall på vekst for Airbnb.
+Formålet med det første steget er å identifisere hva som er teamets nordstjernemetrikk og dermed den metrikken som teamet ønsker å forbedre. For Facebook var den viktigste vekstmetrikken i starten antall brukere som la til [7 venner i løpet av de 10 første dagene](https://blog.modeanalytics.com/facebook-aha-moment-simpler-than-you-think/). De fant ut at dette var den metrikken som best forklarte om de klarte å skape nettverkseffekter og viralvekst. Airbnb sin vekstmetrikk er antall netter reservert på plattformen. Dette fanger verdien som leveres til både gjester og utleiere, og dermed et godt tall på vekst for Airbnb. 
 
-Diskutert innad i teamet hva denne metrikken er og ha den i bakhodet i hele vekstsprinten.
+Diskutert innad i teamet hva denne metrikken er og ha den i bakhodet i hele vekstsprinten. 
 
 ### 2) Kartlegg veksthindringer i kundereisen
 
@@ -70,7 +70,7 @@ Etter prioriteringsøvelsen sitter teamet igjen med en prioritert liste med eksp
 **Det anbefales å:**
 
 * Lage en konkret plan over hvordan eksperimentene skal gjennomføres, samt hvem som skal gjøre hva. Hver konkret på deadlines og når dere eventuelt skal gjennomgå resultatene. Send gjerne ut kalenderinvitasjoner for å sikre at eksperimentene gjennomføres og gjennomgås.
-* Gjennomføre slike vekstsprinter med jevne mellomrom. Eksempelvis hvert kvartal for å fylle opp backlogen med eksperimenter.
+* Gjennomføre slike vekstsprinter med jevne mellomrom. Eksempelvis hvert kvartal for å fylle opp backlogen med eksperimenter. Vekstmetrikken kan endres over tid og livssyklusen til produktet.
 * Mål antall eksperimenter gjennomført hver uke og ha et bevist forhold til denne metrikken. Gjennomfører teamet mange nok eksperimenter, så skapes det en kultur for testing og feiling, samt at teamene lærer noe nytt ofte.
 
 Nå har dere en oppskrift på hvordan teamet ditt kan komme i gang med å identifisere veksteksperimenter. Hvorfor ikke kickstarte nyåret med en vekstsprint!

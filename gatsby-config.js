@@ -7,11 +7,16 @@ const fs = require('fs');
 const feedPluginConfig = require('./config/feed-plugin-config');
 const getMetadataForSite = require('./config/get-metadata-for-site');
 
+const envCalendar = process.env.CALENDAR_ENV;
+const isPreview = envCalendar === 'preview';
+const isPreviewOrBekk = !envCalendar || isPreview;
+
 // Adds every directory under post (not recursively) as its own filesystem
 // source.
 const calendarPlugins = fs
     .readdirSync(`${__dirname}/post`, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
+    .filter((dirent) => isPreviewOrBekk || dirent.name === envCalendar || dirent.name === 'dummy') // Only source current calendar
     .map((dirent) => dirent.name)
     .map((calendar) => ({
         resolve: `gatsby-source-filesystem`,
@@ -19,9 +24,6 @@ const calendarPlugins = fs
             path: `${__dirname}/post/${calendar}`,
         },
     }));
-
-const envCalendar = process.env.CALENDAR_ENV;
-const isPreview = envCalendar === 'preview';
 
 const currentDate = new Date();
 const currentYear = currentDate.getUTCFullYear();
@@ -65,7 +67,7 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: feedPluginConfig(envCalendar),
         },
-        {
+        isPreviewOrBekk && {
             resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {
                 fields: [`title`, 'authors'],
@@ -87,5 +89,5 @@ module.exports = {
                         node.frontmatter.post_day <= currentDay),
             },
         },
-    ],
+    ].filter(Boolean),
 };

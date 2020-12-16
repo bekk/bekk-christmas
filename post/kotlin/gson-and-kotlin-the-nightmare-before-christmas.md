@@ -12,7 +12,7 @@ links:
 authors:
   - Tia Firing
 ---
-You've just started developing your new WishList application, and you have decided to go with Gson as your serialization library. Gson is a very popular library for serializing and deserializing Java objects and JSON, and you see no reason to use anything else just because you are working on a Kotlin application this time. You create your wish list api that expects a `WhishList` payload. The payload consists of a list of wishes and the name of the person who made the wishes. The application will then save the wish list and a trimmed version of the owner's name to your database. The payload looks like this: 
+You've just started developing your new WishList application, and you have decided to go with Gson as your serialization library. Gson is a very popular library for serializing and deserializing Java objects and JSON, and you see no reason to use anything else just because you are working on a Kotlin application this time. You create your wish list api that expects a `WishList` payload. The payload consists of a list of wishes and the name of the person who made the wishes. The application will then save the wish list and a trimmed version of the owner's name to your database. The payload looks like this: 
 
 ```kotlin
 data class WishList(

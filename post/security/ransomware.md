@@ -35,12 +35,13 @@ Once the ransomware is installed, it encrypts all the data on your computer. Unf
 
 #### Symmetric encryption
 
-One of the oldest ciphers in history is the Caesar’s cipher, which shifts each letter a set number of times back or forth in the alphabet. Knowing this set number, also referred to as the “key”, is therefore enough to both encrypt and decrypt a text. This is one of the simplest examples of a symmetric encryption. 
-Today, there are more advanced versions, which can be broadly categorized as block ciphers (encrypts in byte-sized blocks) or stream ciphers (encrypts single digits). These methods are fast and only require the same key to encrypt and decrypt, though some argue it is less secure than asymmetric encryption as the same key is used. 
+One of the oldest ciphers in history is the shift cipher, which shifts each letter a set number of times back or forth in the alphabet. Knowing this set number, also referred to as the “key”, is therefore enough to both encrypt and decrypt a text. Julius Caesar was believed to use a shift cipher, substituting each letter with the one 3 spaces to the right. This is one of the simplest examples of a symmetric encryption. 
+
+Today, there are more advanced versions, which can be broadly categorized as block ciphers (encrypts in byte-sized blocks) or stream ciphers (encrypts single digits). These methods are fast and only require the same key to encrypt and decrypt. 
 
 #### Asymmetric encryption
 
-Asymmetric encryption is slower but is considered more secure. It uses two keys instead of one: one public and one private. The private key is only in the possession of the key pair owner, whereas the public one is widely distributed. When using the public key to encrypt a message it can only be decrypted using the private key, and vice versa.  
+Asymmetric encryption is slower and uses two keys instead of one: one public and one private. The private key is only in the possession of the key pair owner, whereas the public one is widely distributed. When using the public key to encrypt a message it can only be decrypted using the private key, and vice versa.  
 
 #### Ransomware take advantage of both encryption methods.
 
@@ -61,8 +62,8 @@ Originally, ransomware was used to target individuals, with a low enough ransom 
 
 An estimate shows that total ransom demands will reach a staggering [20 billion USD by 2021](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-20-billion-usd-by-2021/). 
 
-While paying the ransom is strongly discouraged as it helps create a marked for extorting money in this manner, some still chose to pay the ransom to retrieve their data. One recent [study](https://news.sophos.com/en-us/2020/05/12/the-state-of-ransomware-2020/) of 5000 IT people showed that about 26% chose to pay and that of these, 95% did actually get the decryption key needed to unlock their files again. Over half chose not to pay and instead used backups of their data, while the rest used other methods.
+While paying the ransom is strongly discouraged as it helps create a marked for extorting money in this manner, some still choose to pay the ransom to retrieve their data. One recent [study](https://news.sophos.com/en-us/2020/05/12/the-state-of-ransomware-2020/) of 5000 IT people showed that about 26% chose to pay and that of these, 95% did actually get the decryption key needed to unlock their files again. Over half chose not to pay and instead used backups of their data, while the rest used other methods.
 
 However, even though paying up may seem like the best way to get things restored again, it may actually double the costs of being affected. All organizations attacked by ransomware had a high cost due to downtime, network costs, lost opportunity etc. even without paying the ransom. In fact, the authors of this [study](https://news.sophos.com/en-us/2020/05/12/the-state-of-ransomware-2020/) argue that the organizations that chose to pay  had the same costs as those who did not with getting their systems back online, except they also had the cost of removing the encryption in addition to their other expenses.
 
-As most attacks are successful and as it is nearly impossible to decrypt your files after an attack, it’s best to try and prevent an attack in the first place. Good strategies include expecting to get hit, have regular and off-site backup of data, make sure you have a ransomware insurance, and install anti-ransomware on your system. Stay tuned for more on this and other good preventative measure in our next article.
+As most attacks are successful and as it is nearly impossible to decrypt your files after an attack, it’s best to try and prevent an attack in the first place. Good strategies include having regular and off-site backup of data, installing anti-ransomware on your system, training employees in recognizing phishing, and closing any technological vulnerabilites that could be exploited. Stay tuned for more on this and other good preventative measure in our next article.

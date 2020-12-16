@@ -3,38 +3,38 @@ calendar: elm
 post_year: 2020
 post_day: 8
 title: Peeking Inside Lists
-ingress: Working with lists in Elm is often quite nice, but sometimes it can
-  feel a bit difficult to get a sense of what is inside a list. In this article
-  we will look at a techinque that allows us to get access to the elements
-  inside a list.
+image: https://source.unsplash.com/s8QSJTJI6qg
+ingress: Working with lists in Elm is nice, but getting a sense of what’s inside
+  a list can be tricky. In this article we will look at a techinque that allows
+  us to get access to the elements inside a list.
 authors:
   - Aksel Wester
 ---
-We will start by looking at a somewhat finicky example. Let's say we have a list of somethings in our app, that we want to display. If there are multiple somethings in the list, we would like to show all the elements in their minimized form. If there is only one something in the list, we would like to show a maximized view of that something, since showing a list with only one element is a waste in that case. And lastly, if the list is empty, we would like to display a message saying that the list is empty.
+We will start by looking at a somewhat finicky example. Let's say we have a list of text notes in our app, that we want to display. If there are multiple notes in the list, we would like to show all the elements in their minimized form. If there is only one note in the list, we would like to show a maximized view of that note, since showing a list with only one element is a waste in that case. And lastly, if the list is empty, we would like to display a message saying that the list is empty.
 
 To meet those requirements, we could write something like this:
 
 ```elm
-view : List Something -> Html a
-view somethings =
-    if List.length somethings == 1 then
-        case List.first somethings of
+view : List Note -> Html a
+view notes =
+    if List.length notes == 1 then
+        case List.first notes of
             Just first ->
-                viewSomething first
+                viewNote first
 
             Nothing ->
                 -- This should never happen
                 text ""
 
-    else if List.length somethings == 0 then
+    else if List.length notes == 0 then
         viewEmptyList
 
     else
         -- There is more than one element in the list
-        viewMinimizedSomethings somethings
+        viewMinimizedNotes notes
 ```
 
-Now, this function is _fine_. But it could be a lot simpler! The main problem is in the case where we have only one something. When we have entered the first branch of the if-statement, we _know_ that there is exactly one element in the list, but we still have to use `List.first` to get access to that element. And since the compiler doesn't know that there is a first element in the list, we still have to account for the `Nothing`-case.
+Now, this function is _fine_. But it could be a lot simpler! The main problem is in the case where we have only one text note. When we have entered the first branch of the if-statement, we _know_ that there is exactly one element in the list, but we still have to use `List.first` to get access to that element. And since the compiler doesn't know that there is a first element in the list, we still have to account for the `Nothing`-case.
 
 Wouldn't it be nice if we could get access to the elements inside the list _at the same time_ as we got information about the structure of the list? Well sure, and there is actually a way to do this in Elm.
 
@@ -70,17 +70,17 @@ As we can see from the example, pattern matching on lists gives us information a
 Let's use this technique to rewrite our `view` function from before:
 
 ```elm
-view : List Something -> Html a
-view somethings =
-    case somethings of
-        onlySomething :: [] ->
-            viewSomething onlySomething
+view : List Note -> Html a
+view notes =
+    case notes of
+        onlyNote :: [] ->
+            viewNote onlyNote
 
         [] ->
             viewEmptyList
 
         _ ->
-            viewMinimizedSomethings somethings
+            viewMinimizedNotes notes
 ```
 
 Doesn't this look way better?

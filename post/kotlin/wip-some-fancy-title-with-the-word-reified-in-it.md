@@ -2,7 +2,9 @@
 calendar: kotlin
 post_year: 2020
 post_day: 10
-title: Bring your type parameters back to life with the reified keyword
+title: Bring your generic function type parameters back to life with the reified
+  keyword
+image: https://images.unsplash.com/photo-1516382799247-87df95d790b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3306&q=80
 ingress: _Reification_. Like many other concepts, it can be applied in a number
   of different ways and it might carry slightly different meanings depending on
   the context. According to [this
@@ -14,14 +16,14 @@ ingress: _Reification_. Like many other concepts, it can be applied in a number
   Additionally, in Kotlin we actually have a modifier keyword built into the
   language, namely _reified_. In this article we'll take a closer look at how
   reification and type erasure are connected, and more specifically how we can
-  combine _inline functions_ and _reified_ generic type parameters in Kotlin to
-  achieve things in generic functions that we normally would not be able to.
+  combine _inline functions_ and _reified_ type parameters in Kotlin to achieve
+  things in generic functions that we normally would not be able to.
 authors:
   - Sondre Larsen Ovrid
 ---
 ## A brief introduction to type erasure
 
-In order to get a good picture of how and when reification can help us, a little background is needed. Just like Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic function type parameters when our code is compiled. In other words, information about the actual type of our type parameters are *by default* not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following  generic functions which simply takes an argument of a generic type `G` and returns it:
+In order to get a good picture of how and when reification can help us, a little background is needed. Just like Java, Kotlin applies [type erasure](https://kotlinlang.org/docs/reference/generics.html#type-erasure) to generic function type parameters when our code is compiled. In other words, information about the actual type of our type parameters are *by default* not available to us at runtime. We can illustrate this by looking at some examples. Let's say we have the following generic functions which simply takes an argument of a generic type `G` and returns it:
 
 ```kotlin
 fun <G> simpleGenericFunctionWithoutBound(thing: G) = thing
@@ -41,7 +43,7 @@ public static final ExtendableClass simpleGenericFunctionWithBound(ExtendableCla
 }
 ```
 
-Here we're observing how type erasure and [bounded/unbounded type substitution](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) have been applied by the compiler. Our `simpleGenericFunctionWithoutBound`-function has had its generic type parameter replaced by `Object`. Similarly in `simpleGenericFunctionWithBound` it has been replaced by `ExtendableClass`, which we defined as the upper limit for our generic type parameter.
+Here we're observing how type erasure and [bounded/unbounded type substitution](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) have been applied by the compiler. Our `simpleGenericFunctionWithoutBound`-function has had its type parameter replaced by the concrete type `Object`. Similarly in `simpleGenericFunctionWithBound` it has been replaced by `ExtendableClass`, which we defined as the upper limit for our type parameter. 
 
 As a result of this substitution, there is no way for the JVM runtime to derive any information about the concrete type of the supplied argument when these functions are being invoked. We can invoke the generic functions with arguments of any type adhering to the bounds, but type information will ultimately be lost on the way. Put in another way, generic function type parameters are by-default defined as *non-reifiable*.
 
@@ -50,7 +52,7 @@ As a result of this substitution, there is no way for the JVM runtime to derive 
 ## The *reified* modifier keyword
 
 So how can we reify our type parameters in the generic functions we defined above?
-Unfortunately there's no escaping the type erasure that the compiler applies. Instead, Kotlin can help us yet again with some of its language specific magic. We can modify the generic functions we defined earlier like so, and invoke it:
+Unfortunately there's no escaping the type erasure that the compiler applies. Instead, Kotlin can help us yet again with some of its language specific magic. We can modify one of the generic functions we defined earlier, and invoke it like so:
 
 ```kotlin
 inline fun <reified G : Any> simpleGenericFunctionWithoutBounds(thing: G): G {
@@ -63,9 +65,9 @@ fun main() {
 }
 ```
 
-The *inline* modifier keyword tells the Kotlin compiler that we want to perform [inline expansion](https://en.wikipedia.org/wiki/Inline_expansion) of the function at the callsite. We will not go into the details of inlining (*), but it has some interesting implications which Kotlin can take advantage of to get around type erasure. Essentially what happens is that the content of the declared function body is duplicated and included wherever we're invoking the function.
+The *inline* modifier keyword tells the Kotlin compiler that we want to perform [inline expansion](https://en.wikipedia.org/wiki/Inline_expansion) of the function at the call-site. We will not go into the details of inlining (*), but it has some interesting implications which Kotlin can take advantage of to get around type erasure. Essentially what happens is that the content of the declared function body is duplicated and included wherever we're invoking the function.
 
-Since we have information about the generic type parameter at the call site, maybe there is some way to carry over this information to runtime? This is what the *reified* modifier keyword instructs the compiler to do. Let's invoke our updated function and take another look at the decompiled byte code:
+Since we have information about the actual type of the type parameter at the call-site, maybe there is some way to carry over this information to runtime? This is what the *reified* modifier keyword instructs the compiler to do. Let's take another look at the decompiled byte code of our updated function:
 
 ```kotlin
     // Function declaration
@@ -78,7 +80,7 @@ Since we have information about the generic type parameter at the call site, may
         return thing;
     }
 
-    // Invokation
+    // Invocation
     public static final void main() {
         new ExtendableClass();
         ...
@@ -88,7 +90,7 @@ Since we have information about the generic type parameter at the call site, may
     }
 ```
 
-Here we see how Kotlin has gotten around the erasure of parameterized types: since inline expansion is performed, additional information can be included at the callsite - i.e. Kotlin can provide us with runtime information about the actual type of the argument we invoked the function with! Specifically, in this example we now have access to the concrete type information about the parameter we invoked the function with: `ExtendableClass`, on which we're accessing the `.class` property through reflection. 
+Here we see how Kotlin has gotten around type erasure of type parameters: since inline expansion is performed, additional information can be included at the call-site - i.e. Kotlin can provide us with runtime information about the actual type of generic function type arguments! Specifically, in this example we now have access to the concrete type information about the parameter we invoked `simpleGenericFunctionWithoutBounds` with: `ExtendableClass`, on which we're accessing `::class`. 
 
 Hopefully this article has helped in demystifying the concept of reification a little, and illustrated how we may take advantage of this concept to do things we otherwise would not be able to through the use of the reified keyword. Whether it is using the Reflection API as we did in the example above, using it for [type checks and type casts](https://github.com/JetBrains/kotlin/blob/master/spec-docs/reified-type-parameters.md), and so forth.
 

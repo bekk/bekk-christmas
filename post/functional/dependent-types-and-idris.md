@@ -1,7 +1,7 @@
 ---
 calendar: functional
 post_year: 2020
-post_day: 14
+post_day: 9
 title: Dependent types and Idris
 image: https://images.unsplash.com/photo-1482003297000-b7663a1673f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80
 description: ""
@@ -16,7 +16,7 @@ authors:
   - Isak Sunde Singh
 ---
 Often when we write code we have a clear idea in our minds of how to write the code, but when we actually write it, the compiler steps in and points out a few things for us.
-In strong, statically typed programming languages, we can get a lot of help from the compiler.
+In statically-typed programming languages, we can get a lot of help from the compiler.
 One especially nice feature is compile-time checked exhaustive pattern-matching.
 As an example, let's look at some Elm code (if Elm is unfamiliar, go check out [elm.christmas](https://www.elm.christmas/) 😉):
 
@@ -278,7 +278,7 @@ type NonEmpty a
     = NonEmpty a (List a)
 ```
 
-This single-case union ensures that we have at least one instanse of the type `a`, and is such a non-empty list!
+This single-case union ensures that we have at least one instance of the type `a`, and is such a non-empty list!
 A clean `head`-function could be written easily as:
 
 ```elm
@@ -287,5 +287,5 @@ head (NonEmpty x xs) =
     x
 ```
 
-This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material such as [Parse, don't validate](parse-dont-validate) and [Designing with types: Making illegal states unrepresentable](illegal-states-unrepresentable).
-For longer reads, the book [_Type-Driven Development with Idris_](https://www.manning.com/books/type-driven-development-with-idris) by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅
+This is becoming a long article, so I would recommend you to go on reading some fantastic reading-material, all linked below, such as _Parse, don't validate_ and _Designing with types: Making illegal states unrepresentable_.
+For longer reads, the book _Type-Driven Development with Idris_ by Edwin Brady, the author of Idris, is a fantastically exciting read on dependent types and Idris that anyone fond of strong types would love to read for the Christmas holiday, at least I did last year 🎄🎁🎅

@@ -2,14 +2,15 @@
 calendar: elm
 post_year: 2020
 post_day: 11
-title: UTKAST Lord of the pipes
-image: https://source.unsplash.com/_R95VMWyn7A/2000x800
+title: Lord of the pipes
+image: https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=2000&h=800&fit=crop
 ingress: If the bulk of your programming experience comes from C-like languages,
   there’s a chance you find pipes, `|>`and `<|` some of the most distinct
-  features of Elm. Fold up your heels and dig your sleeves in, it's time to
-  master the art of piping.
+  features of Elm. Roll up your sleeves, it's time to master the art of piping.
+authors:
+  - Jørgen Tu Sveli
 ---
-If C-like languages form the bulk of your programming experience, there’s a chance you find pipes, `|>`and `<|` to be some of the most distinct features of Elm. Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm. They have the role of operators in Elm and they control function application. 
+Their shape partly reveals what they do; something goes to the right `|>` or to the left `<|`. Yet you quickly realize you need to really understand what they do to in turn understand Elm. They have the role of operators in Elm and they control function application. 
 
 Below is one way of calculating the sum of the n first natural numbers `( 1 + 2 + 3 + .. n = ? )`
 
@@ -50,9 +51,9 @@ nFirstSquaresSum n =
     |> List.sum 
 ```
 
-While the former requires careful parsing of parens, the latter variant instantly reveals the different steps. It forms a *pipeline.* 
+The former requires us to parse the parens, to spot the order of the statements. In this case the order is right to left. The latter variant instantly reveals the different steps in perfect order of execution. It forms a *pipeline.* 
 
-The backwards pipe, `<|` can be used to express the same sequence of calls as its brother. Rewriting the example above, that would put `List.sum `first and on a line of its own. This can be confusing since in reality it is the last function called. Reformatted, this would become:
+The backwards pipe, `<|` *could* be used to express the same sequence of calls as its brother `|>`, but in the opposite order. The example above, with the same formatting, would put `List.sum` first and on a line of its own. This is confusing since in reality it is the last function called. It is better expressed on one line:
 
 ```elm
 nFirstSquaresSum: Int -> Int
@@ -60,46 +61,33 @@ nFirstSquaresSum n =
     List.sum <| List.map square <| List.range 1 n
 ```
 
-This is closer to how one would write in a language that uses parens for function calls. Though it leads to long lines or confusion if broken up onto separate lines. My personal rules of thumb are:
+This is closer to how one would write in a language that uses parens for function calls. However, long sequences of `<|` quickly produce long lines. It is almost always possible to express the same sequence using `|>` . My personal rules of thumb are:
 
-1 Expressing things vertically with |>
+1. Try to express things vertically with |>
+2. Dont mix |> and <| in the same expression
+3. Use a single <| in an expression to avoid parens
 
-2 Dont mix |> and <| in the same expression
-
-3 Use a single <| in an expression to avoid parens
-
-Of these, number 3 deserves additional examples. 
-
-
-
-
+Of these, number 3 deserves additional examples. Recall [day 1](https://www.elm.christmas/2020/1), when we noticed that we can pair two values with both syntax `(1, "one")` and the function `Tuple.pair`. One way this function is useful is with pipes. In the code below, we pair an argument to the function tup with the result of some other expression. With a pipe and Tuple.pair it looks cleaner than if we would use normal tuple syntax.
 
 ```elm
-nFirstSum : SumType -> Int -> Int
-nFirstSum sumType n =
-    let
-        numbers =
-            List.range 1 n
-    in
-    List.sum <|
-        case sumType of
-            Normal ->
-                numbers
-
-            Squares ->                
-                List.map square numbers
-
-
+tup : Int -> (Int, String)
+tup number =
+    Tuple.pair number 
+        <| case number of
+            1 -> "one"
+            2 -> "two"
+            3 -> "three"
+            _ -> "something else"
 ```
 
-\|> is one of Elm’s operators. Like + it’s an infix operator which gets its two operands from either side. + adds the left and right operand together. You might have already guessed it, + and all other operators are functions in Elm. This is the type signature for +
+## Going deep
 
-(+) : number -> number -> number
+\|> is one of Elm’s operators. Like +, it’s an infix operator which gets its two *operands* from either side. + adds the left and right operand together. As you will learn more about in coming days, + and all other operators are functions in Elm. This is the type signature for +
 
-\[The parens can be used when referring to the operator as a function, for example to pass as an argument  or to compose with another function that takes two numbers]
+`(+) : number -> number -> number`
 
-\|> has its own type signature:
+`|>` has its own type signature:
 
-(|>) : a -> (a -> b) -> b
+`(|>) : a -> (a -> b) -> b`
 
-This signature tells us that the left operand (first argument) is an \`a\` value, the second operand is something that changes an \`a\` value into a \`b\` value, and the result is a \`b\`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will allow you to identify where and how you can use pipes in your own code.
+This signature tells us that the left operand (first argument) is an `a` value, the second operand is something that changes an `a` value into a `b` value, and the result is a `b`. Studying these type signatures might seem like an unnecessarily academic activity, but reading and understanding type signatures will enable you to identify where and how you can use pipes in your own code. In my experience the compiler becomes even more helpful with a basic understanding of what type each side of the pipe is expected to have.
