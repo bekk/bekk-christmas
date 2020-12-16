@@ -19,7 +19,7 @@ authors:
 
 However, if each of these notes had a serial number (which we should assume; otherwise one could just make several copies and hand out to a bot friend), those serial numbers could be used to track users across the internet, which is obviously a privacy issue. The authors of Privacy Pass have therefore come up with an elegant solution to this.
 
-By using the Privacy Pass browser extension users can be both authenticated and remain anonymous. There can also be an opportunity to make usability-improvements where existing CAPTCHA solutions can be replaced, as the user is already authenticated and don’t need a CAPTCHA challenge to verify themselves.
+By using the [Privacy Pass browser extension](https://privacypass.github.io/) users can be both authenticated and remain anonymous. There can also be an opportunity to make usability-improvements where existing CAPTCHA solutions can be replaced, as the user is already authenticated and don’t need a CAPTCHA challenge to verify themselves.
 
 ## How it works
 
