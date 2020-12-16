@@ -2,7 +2,8 @@
 calendar: elm
 post_year: 2020
 post_day: 19
-title: "WIP: Model, view and update"
+title: Let's talk about TEA - The Elm Architecture!
+image: https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3024&q=80
 ingress: >-
   Elm and other functional programming languages might look weird and scary to
   newcomers. Once you get to know them, however, functional languages becomes
