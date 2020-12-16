@@ -53,18 +53,23 @@ If your device can store data locally then you need to be aware of the risks of 
 * **Change default passwords:** 
 
   Refer to the manual, do an online search, or contact the manufacturer for advice.
+
 * **Check for firmware and system updates:** 
 
   Even a brand new device could need a security update. Refer to the manual, do an online search, or contact the manufacturer for advice.
+
 * **Apply updates regularly:**
 
   Manufacturers patch bugs and flaws on an ongoing basis – and so should you.Sign up for automatic updates or software update alerts when possible.
+
 * **Set up a guest WiFi network for IoT-devices to connect to:**
 
   Isolate your IoT-devices from your home computers to reduce risk to important data. If you need advice, start with an online search for your WiFi router model. Many devices make it easy to set up a guest network.
-* **Disable Universal Plug-and-Play (UPnP) functionality on your wireless router:**
 
-  Some IoT-devices can leave your home firewall vulnerable to attack via UPnP. Unless you specifically need it for an IoT device, turn off UPnP. An online search can help you find advice for your specific model.
+* **Disable Universal Plug-and-Play (UPnP) functionality:**
+
+  Some IoT-devices can leave your home firewall vulnerable to attack via UPnP. Unless you specifically need it for an IoT-device, turn off UPnP. An online search can help you find advice for your specific model.
+
 * **Google *{name of the device}* + CVE:**
 
   You should see if there exists one or more [Common Vulnerabilities and Exposures (CVE) ](https://www.cvedetails.com/) for your device. If there is, see if the manufacturer of your device has patched the CVE in one of the software updates, or consider sending them an email letting them know. If the CVE is serious, you should consider turning your IoT off until there is a fix available. 
