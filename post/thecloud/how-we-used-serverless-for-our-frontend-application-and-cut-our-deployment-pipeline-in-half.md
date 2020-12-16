@@ -9,7 +9,6 @@ authors:
   - Eirik Årseth
 ---
 A while back we needed to host a react app. Sounds simple right? Thats just some static files (html, css and js). It got a bit more complicated when we needed to add a navigation bar, that was shared across the organization. The contents of this nav-bar would change frequently, and we had no way of "subscribing" to these changes. Instead, it needed to be added, or decorated🎄 on top of our frontend app dynamically.
-<img src="https://github.com/eirarset/bekk-christmas-sketches/blob/main/ServerlessSketch.png?raw=true" width="400" alt="app sketch"/>
 
 Originally, before going serverless, this decoration of our app was handled by a Node.js application that would append the nav-bar to the top of our html, and serve the decorated app.
 
