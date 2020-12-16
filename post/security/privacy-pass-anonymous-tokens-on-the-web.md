@@ -24,11 +24,11 @@ By using the Privacy Pass browser extension users can be both authenticated and 
 
 The Privacy Pass protocol works as following:
 
-1. First, the server side generates an elliptic curve E with a distinguished point G, secret key k and a public key K = kG.
-2. The browser chooses a random number t, and generates a point T on the curve from t using a hash function. It then creates a masked point P = rT, which it submits to the token issuer.
-3. The token issuer signs the token by computing a new point Q = kP. It also provides a Chaum-Pedersen [zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof) to prove that it was indeed k what was used to sign P, but without revealing k.
-4. The original point T is now masked by both r and k. The browser can remove r, so that it is left with the token W = kT.
-5. In order to redeem the token, the browser can submit (t, W) to the website the user wants to visit. The website generates T from t, computes kT, and verifies that it equals W. The seed t is stored in order to prevent the token being used twice.
+1. First, the server side generates an elliptic curve `E` with a distinguished point `G`, secret key `k` and a public key `K = kG`.
+2. The browser chooses a random number `t`, and generates a point `T` on the curve from `t` using a hash function. It then creates a masked point `P = rT`, which it submits to the token issuer.
+3. The token issuer signs the token by computing a new point `Q = kP`. It also provides a Chaum-Pedersen [zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof) to prove that it was indeed `k` what was used to sign `P`, but without revealing `k`.
+4. The original point `T` is now masked by both `r` and `k`. The browser can remove `r`, so that it is left with the token `W = kT`.
+5. In order to redeem the token, the browser can submit `(t, W)` to the website the user wants to visit. The website generates `T` from `t`, computes `kT`, and verifies that it equals `W`. The seed `t` is stored in order to prevent the token being used twice.
 
 ![](/assets/privacypass.png)
 
@@ -38,10 +38,10 @@ The Privacy Pass protocol works as following:
 
 We give some intuition-based arguments for why this protocol achieves its goals:
 
-1. In order to manufacture tokens that could be used more than once, the browser would need to generate values t, t' such that they both generated the point T. Hence, the hash function needs to be collision resistant and second preimage resistant. The SHA2 family of hash functions is believed to satisfy these requirements.
+1. In order to manufacture tokens that could be used more than once, the browser would need to generate values `t`, `t'` such that they both generated the point `T`. Hence, the hash function needs to be collision resistant and second preimage resistant. The SHA2 family of hash functions is believed to satisfy these requirements.
+2. Since `r` is chosen uniformly at random, the point `P = rT` carries no meaningful information. Likewise, if the discrete log problem is hard on the chosen elliptic curve, then it is infeasible to extract the secret key `k` from the point `kT`. The Chaum-Pedersen proof guarantees that `Q` is well-formed. The browser is therefore none the wiser regarding generating tokens.
+3. Since the points `P` and `Q` are masked with `r`, and `W` is independent of these points, the issuing service and the verification service will not be able to trace when a specific token was used, and so the anonymity of the user is guaranteed
 
-2. Since r is chosen uniformly at random, the point P = rT carries no meaningful information. Likewise, if the discrete log problem is hard on the chosen elliptic curve, then it is infeasible to extract the secret key k from the point kT. The Chaum-Pedersen proof guarantees that Q is well-formed. The browser is therefore none the wiser regarding generating tokens.
+Content delivery networks such as Cloudflare or Akamai may record misbehaving IP-addresses to mitigate attacks. However, if you use anonymity tools such as onion routing, your visible IP address may be shared with less honest users, which will in turn make you have to go through the hassle of responding to frequent CAPTCHA requests. Privacy Pass enables you to avoid those without compromising your anonymity. 
 
-3. Since the points P and Q are masked with r, and W is independent of these points, the issuing service and the verification service will not be able to trace when a specific token was used, and so the anonymity of the user is guaranteed
-
-Content delivery networks such as Cloudflare or Akamai may record misbehaving IP-addresses to mitigate attacks. However, if you use anonymity tools such as onion routing, your visible IP address may be shared with less honest users, which will in turn make you have to go through the hassle of responding to frequent CAPTCHA requests. Privacy Pass enables you to avoid those without compromising your anonymity. Tomorrow, we will look at a seemingly different way of using the exact same cryptography, which may also benefit you in 2021.
+Tomorrow, we will look at a seemingly different way of using the exact same cryptography, which may also benefit you in 2021.
