@@ -14,7 +14,7 @@ ingress: You’ve done your fair share of JavaScript. You’ve shipped productio
 
 
 
-This might not be for everyone, but if you’ve got an uncomfortable feeling about your grasp of the inner workings of the language, there’s nothing like bunkering down with a great book. JavaScript has plenty of concepts that every professional developer should have solid understanding of. Closures, hoisting, context and «*this»,* prototypical inheritance, async code are just some examples. I’d argue the most efficient (albeit not the most fun) way to learn them is through reading.
+This might not be for everyone, but if you’re not totally sure you grasp the inner workings of the language, there’s nothing like bunkering down with a great book. JavaScript has plenty of concepts that every professional developer should have solid understanding of. Closures, hoisting, context and «*this»,* prototypical inheritance, async code are just some examples. I’d argue the most efficient (albeit not the most fun) way to learn them is through reading.
 
 
 
