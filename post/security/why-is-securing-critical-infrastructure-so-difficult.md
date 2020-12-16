@@ -39,7 +39,7 @@ The usually distributed nature of critical infrastructures means securing many d
 
 #### Cyber-physical systems
 
-As today’s critical infrastructures are both physical and virtual, security breaches can lead to safety breaches and vice versa. This does not only increase the complexity, but also escalates the possible consequences, and means that in worst-case scenarios hackers can cause train crashes or nuclear explosions. The other way around, a physical attack on a vulnerable sensor in a power grid can be the gateway into the core functionality and can thus enable a blackout. Monitoring systems in critical infrastructures often have to depend on their sensors alone, which creates vulnerabilities and opportunities for exploitation. Physical sensors can be tampered with, making the input untrustworthy.   
+As today’s critical infrastructures are both physical and virtual, security breaches can lead to safety breaches and vice versa. This does not only increase the complexity, but also escalates the possible consequences, and means that in worst-case scenarios hackers can cause train crashes or nuclear explosions. The other way around, a physical attack on a vulnerable sensor in a power grid can be the gateway into the core functionality and can thus enable a blackout. Monitoring systems in critical infrastructures often have to depend only on their sensors, which creates vulnerabilities and opportunities for exploitation. Physical sensors can be tampered with, making the input untrustworthy.   
 
 #### Complex security management
 
