@@ -10,9 +10,9 @@ authors:
 ---
 ## When systems and structure is of no help
 
-A few months ago, I and a group of colleagues attended a workshop held by a professional actor and comedian. A number of challenges and activities were on the menu, but one marked me more than the others: Improvising a story together with a partner.
+A few months ago, a group of colleagues and I attended a workshop held by a professional actor and comedian. A number of challenges and activities were on the menu, but one marked me more than the others: Improvising a story together with a partner.
 
-The game was as simple as it was engaging: First, partner up with someone. Second, listen to the few cues given by the instructor. Third, begin telling the story - and you invent on the go! Fourth, at the instructor’s signal, switch the person telling the story -this might be right in the middle of a sentence. Hear your partner out until you fear a new signal is, and take the lead once again. And so the story grows, perhaps together with your heart rate.
+The game was as simple as it was engaging: First, partner up with someone. Second, listen to the few cues given by the instructor providing inspiration for the story. Third, begin telling the story - and invent on the go! Fourth, at the instructor’s signal, switch the person telling the story. This might be right in the middle of a sentence. Hear your partner out until you fear a new signal is, and take the lead once again. And so the story grows, perhaps together with your heart rate.
 
 The participating group consisted of a broad range of people and backgrounds: designers, software devs, and managers. Personally, I work as a programmer, and I generally prefer to think things through before I either speak or act. I like it when things are being part of a larger system in a way that makes sense. Spontaneity and uncertainty are not my strongest assets - I get the feeling of lacking something to lean back on in case of unwanted surprises.
 
@@ -37,4 +37,4 @@ The last two points cannot be stressed enough. The flow of the talk is everythin
 
 In hindsight, the game represented more than just an activity to have fun, get more acquainted, or to train for that specific game: The same learnings apply to any normal conversation you're having.
 
-During your next conversation, try to listen a tad more to your partner than usually, and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination. Welcome the feeling of uncertainty and enjoy the moment!
+During your next conversation, try to listen a tad more to your partner than usually, and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination. Welcome the feeling of uncertainty and enjoy the flow!
