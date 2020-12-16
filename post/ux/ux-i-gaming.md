@@ -75,7 +75,7 @@ Jeg kan skrive utrolig mye mer om ux i spill, og dette er virkelig et helt eget 
 
 ## Mine tips til spill i julen, med gode og dårlige brukergrensesnitt!
 
-### [QWOP](http://www.foddy.net/Athletics.html) - PC - en av de vanskeligste spillene, brukergrensesnittsmessig
+### [QWOP](http://www.foddy.net/Athletics.html) - PC - et av de vanskeligste spillene, brukergrensesnittsmessig
 
 ![screenshot fra spillet qwop](https://lh3.googleusercontent.com/6C9kqu6cwZt0LK1hS_tbk45bU4TbjTSi4GgA8-ZT2yDweM5vbz4Awl_Kk_Ve__uItY6aOzAoiD_QekLpbgvTSkdqFvoNTLSwWFu-xz-lXvyU3XDPb1BmdtxYQ38XyupVhnXt1uPS "Qwop er utrolig vanskelig, når du får teken på det kan du løpe flere meter, helt til du møter hekker")
 
