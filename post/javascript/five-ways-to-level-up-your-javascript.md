@@ -2,7 +2,7 @@
 calendar: javascript
 post_year: 2020
 post_day: 17
-title: Five Ways To Level Up Your JavaScript
+title: Six Ways To Level Up Your JavaScript
 image: https://images.unsplash.com/photo-1426927308491-6380b6a9936f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80
 ingress: You’ve done your fair share of JavaScript. You’ve shipped production
   code for years. You’re definitely no noob, nor a true expert. What’s the next
