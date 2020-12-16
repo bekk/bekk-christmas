@@ -2,9 +2,9 @@
 calendar: talks
 post_year: 2020
 post_day: 17
-title: What an Improvisation Game Taught me About Dialogue
+title: What Improvisation Taught Me About Conversations
 ingress: In today’s article, we’ll skip the tips, tricks, and wisdom of public
-  speaking and rather say a few words about normal, everyday dialogue.
+  speaking and say a few words about everyday conversation.
 authors:
   - Erlend Morthen
 ---
@@ -33,10 +33,8 @@ Next, with a tiny bit of training, as well as a minor adjustment of the mind-set
 
 The last two points cannot be stressed enough. The flow of the talk is everything and also providing the momentum necessary to come up with new ideas.
 
-![person with paint all over](/assets/alice-dietrich-fwf_fkj5tbo-unsplash.jpg)
+![person with coulourful paint on his hands](/assets/alice-dietrich-fwf_fkj5tbo-unsplash.jpg)
 
+In hindsight, the game represented more than just an activity to have fun, get more acquainted, or to train for that specific game: The same learnings apply to any normal conversation you're having.
 
-
-In hindsight, the game represented more than just an activity to have fun, get more acquainted, or to train for that specific game: The exact same learnings might as well be applied to just about any normal dialogue. 
-
-During your next conversation, try to listen a tad more to your partner than usually and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination. Welcome the feeling of uncertainty and enjoy the moment!
+During your next conversation, try to listen a tad more to your partner than usually, and leave your own needs of concern behind for a moment - and try sprinkle in some words awakening the imagination. Welcome the feeling of uncertainty and enjoy the moment!
