@@ -5,8 +5,8 @@ post_day: 21
 title: "Privacy Pass: Anonymous Tokens on the Web"
 image: https://i.ibb.co/XCdLWgY/huzeyfe-turan-2i-K6-KNVwc-Y-unsplash.jpg
 ingress: We discussed elliptic curves [earlier this
-  month](https://security.christmas/2020/5). Today, we look at a way to use
-  those to make the internet a bit more user friendly.
+  month](https://security.christmas/2020/5). Today, we look at how to use those
+  to make the internet a bit more user friendly.
 links:
   - url: https://www.ietf.org/archive/id/draft-davidson-pp-architecture-01.txt
     title: "Privacy Pass: Architectural Framework"
@@ -15,15 +15,15 @@ authors:
   - Tjerand Silde
   - Martin Strand
 ---
-[Privacy Pass](https://privacypass.github.io) was[ introduced by Alex Davidson, Ian Goldberg, Nick Sullivan, George Tankersley, and Filippo Valsorda in 2018](https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf) in order to reduce the number of CAPTCHA challenges human users would meet online. The basic idea is to allow the user to submit a number of tokes to a server ahead of time. The server will sign these, equivalent to issuing notes with the text "The holder of this token should be considered human, not a bot". Every time the user visits a website that would otherwise have asked for a CAPTCHA, the browser can hand over one of the tokes instead, hence not bothering the user with reading garbled letters or clicking on images of road signs.
+[Privacy Pass](https://privacypass.github.io) was [introduced in 2018](https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf) by Alex Davidson, Ian Goldberg, Nick Sullivan, George Tankersley, and Filippo Valsorda in order to reduce the number of CAPTCHA challenges human users would meet online. The basic idea is to allow the user to submit a number of tokens to a server ahead of time. The server will sign these, equivalent to issuing notes with the text "The holder of this token should be considered human, not a bot." - Every time the user visits a website that would have asked for a CAPTCHA, the browser can hand over one of the tokens instead, hence not bothering the user with reading garbled letters or clicking on images of road signs.
 
-However, if each of these notes had a serial number (which we should assume; otherwise one could just make several copies and hand out to a bot friend), those serial numbers could be used to track users across the internet, which is obviously a privacy issue. The authors of Privacy Pass have therefore come up with an elegant solution to this.
+To avoid token replication and reuse by bots, one can assign these tokens serial numbers; however, these serial numbers could violate privacy by tracking users across the internet. The authors of Privacy Pass have an elegant solution to this.
 
-By using the [Privacy Pass browser extension](https://privacypass.github.io/) users can be both authenticated and remain anonymous. There can also be an opportunity to make usability-improvements where existing CAPTCHA solutions can be replaced, as the user is already authenticated and don’t need a CAPTCHA challenge to verify themselves.
+By using the [Privacy Pass browser extension](https://privacypass.github.io/) users can be both authenticated and remain anonymous. Usability is also improved when existing CAPTCHA solutions can be replaced, as the user is already authenticated and doesn't need another verification challenge.
 
 ## How it works
 
-The Privacy Pass protocol works as following:
+The Privacy Pass protocol works the following way:
 
 1. First, the server side generates an elliptic curve `E` with a distinguished point `G`, secret key `k` and a public key `K = kG`.
 2. The browser chooses a random number `t`, and generates a point `T` on the curve from `t` using a hash function. It then creates a masked point `P = rT`, which it submits to the token issuer.
@@ -33,7 +33,7 @@ The Privacy Pass protocol works as following:
 
 ![](/assets/privacypass.png)
 
-*From: https://blog.cloudflare.com/supporting-the-latest-version-of-the-privacy-pass-protocol*
+*From: https://blog.cloudflare.com*
 
 ## Security of Privacy Pass
 
