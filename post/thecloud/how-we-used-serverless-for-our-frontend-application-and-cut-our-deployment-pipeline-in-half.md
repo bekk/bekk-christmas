@@ -15,7 +15,7 @@ Originally, before going serverless, this decoration of our app was handled by a
 
 The app ran in a container, that was deployed to the organizations own IaaS (infrastructure as a service) solution, built on top of kubernetes. Therefore any new deployment of this app was quite elaborate.
 
-The deploy pipeline would then be:
+The deploy pipeline was something like this:
 
 1. Push react app to github
 2. CircleCI builds production version of frontend(```npm run build```)
