@@ -8,7 +8,7 @@ export const MaxWidth = styled.div`
 export const BorderButton = styled.button`
     font-size: 22px;
     font-family: inherit;
-    color: black;
+    color: var(--text-color);
 
     background: transparent;
     outline: 0;
@@ -22,8 +22,8 @@ export const BorderButton = styled.button`
 
     &:focus,
     &:hover {
-        background: black;
-        color: white;
+        background: var(--text-color);
+        color: var(--primary-background-color);
     }
 `;
 
@@ -34,13 +34,4 @@ export const Icon = styled.img`
     margin: 0px !important;
     height: 90px;
     width: 90px !important;
-`;
-
-export const TransparentButton = styled.button`
-    background: transparent;
-    padding: 0px;
-    margin: 0px;
-    outline: none;
-    border: none;
-    cursor: pointer;
 `;
