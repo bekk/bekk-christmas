@@ -8,7 +8,7 @@ ingress: In today’s article, we’ll skip the tips, tricks, and wisdom of publ
 authors:
   - Erlend Morthen
 ---
-**When systems and structure is of no help**
+## When systems and structure is of no help
 
 A few months ago, I and a group of colleagues attended a workshop held by a professional actor and comedian. A number of challenges and activities were on the menu, but one marked me more than the others: Improvising a story together with a partner.
 
@@ -20,7 +20,7 @@ Being my usual self, this was the mindset I brought to the task we were assigned
 
 This approach failed spectacularly. The stories we all had planned out were just fine, but in the midst of the heat, combining them proved next to impossible. We would get hung up in the middle of sentences, struggling in our search for the next word and phrase which could fit into the grand plan we all had in mind. The situation was awkward rather than funny.
 
-**Engaging Creativity**
+## **Engaging Creativity**
 
 Next, with a tiny bit of training, as well as a minor adjustment of the mind-set, we were now ready to take on the challenge once again. Based on our previous experience and tips from the coach, we now had a number of tricks in the back of our mind:
 
