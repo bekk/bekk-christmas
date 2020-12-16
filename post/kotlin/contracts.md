@@ -7,6 +7,8 @@ image: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1226&h=400
 ingress: "Kotlin contracts are a way to help the compiler get more information
   about what the code actually does. Sometimes the compiler can’t infer all the
   information we as programmers know. "
+authors:
+  - Vegard Veiset
 ---
 What are they? What do they mean? Where can we find them? Let's take a look at an example to get an idea of what contracts are good for.
 
