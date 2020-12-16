@@ -63,9 +63,9 @@ You can test this rule interactively in a simple [GeoGebra demonstration](https:
 
 ![](/assets/ec_group_law.gif)
 
-We just assumed that *P* and *Q* were distinct. If *P* = *Q*, then we simply use the tangent to the curve at point *P* instead, and proceed as before.
+In this case we assumed that *P* and *Q* were distinct. If *P* = *Q*, then we simply use the tangent to the curve at point *P* instead, and proceed as before.
 
-In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc. Eventually, we reach the point at infinity, and then back to *G*. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above, and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that "large enough" is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
+In particular, take a point *G*, and compute 2*G* = *G* + *G*, 3*G*, 4*G*, etc, that is, we add *G* to itself many times.  Eventually, we reach the point at infinity, and then back to *G*, see illustration below. We have now spent about 1000 words of this blog post getting here, just to do the same as we did above (where some fixed number *g* was multiplied by itself over and over again until we reached 1 modulo *p*), and what was the point? Above, we said that computing exponents are secure if the primes were large enough. It turns out that "large enough" is currently about 3072 bits, or a number with approximately 925 digits. That is somewhat strenuous even for a computer, but the elliptic curve version only requires us to work on numbers of size 256 bits, or 77 digits, which is far more efficient.
 
 ## Elliptic Curve Diffie-Hellman Key-Exchange
 
