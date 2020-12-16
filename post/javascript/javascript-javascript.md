@@ -43,13 +43,14 @@ So, if you’re able to keep `==` away from the JavaScript-codebase you’ll pro
 There are a lot of rules to be aware of when using `==`. Let’s take a walkthrough of these rules and try to understand them by some examples. 
 
 #### 1 If `x` and `y` is the same data type the behavior of `==` is the same as `===`
-This is a rule that can make refactoring `==` to `===` a bit easier. If you expect both values to be the same data type - add another equal sign and breathe! 
-
 ```javascript
 1==1 => 1===1
 "abc" == "ABC => "abc" === "ABC"
 [1,2,3] == [1,2,3] => [1,2,3] === [1,2,3]
 ```
+This is a rule that can make refactoring `==` to `===` a bit easier. If you expect both values to be the same data type - add another equal sign and breathe! 
+
+
 #### 2 Truthy if `x` and `y` is `undefined` and `null` 
 
 ```javascript
