@@ -13,10 +13,15 @@ ingress: >-
 
 
   ```javascript
-    false == 0 // true
-    ['1', '2', '3'] == '1,2,3' // true
-    undefined == null // true
-    "wtf" == "WTF" // false
+
+  false == 0 // true
+
+  ['1', '2', '3'] == '1,2,3' // true
+
+  undefined == null // true
+
+  "wtf" == "WTF" // false
+
   ```
 description: javascript equality equal double equal abstract equality comparison
 links:
@@ -26,6 +31,8 @@ links:
     title: Abstract equality comparison
   - title: Object-to-primitive conversions
     url: http://www.adequatelygood.com/Object-to-Primitive-Conversions-in-JavaScript.html
+authors:
+  - Charlie Midtlyng
 ---
 First of all, JavaScript has two operators for equality: `==` and `===`. In order to understand equality, we have to understand the difference between these two options. As we know equality from other programming languages and mathematics, `===` behaves the way we are used to.
 
@@ -53,7 +60,7 @@ null === undefined // false
 
 `null` and `undefined` are special cases and we have to accept that they are equal when using double-quotes. But I’m not sure if I like it...
 
-#### 3 If `x` and `y` are the data types number and string - try to convert the string into number and perform ==
+#### 3 If `x` and `y` are the data types number and string - try to convert the string into number and perform `==`
 
 ```javascript
 '2' == 2 => Number('2') == 2 // true
