@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 20
 title: Fra analog til digital bøsse på speed
-image: https://i.ibb.co/2M40SRf/Coverbilde.png
+image: https://i.ibb.co/z622DhQ/Coverbilde.png
 ingress: I en nasjonal dugnad, én søndag i året har over 100 000 mennesker
   banket på dører i hele Norge for et godt formål. Hva skjer når man ikke lenger
   kan samles fysisk og hvordan erstatter man denne aktiviteten digitalt på kun
