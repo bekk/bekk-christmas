@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Steps from './Steps';
 import ArticleBody from '../ArticleBody';
 import { MaxWidth } from './styles';
@@ -16,15 +16,25 @@ const assignmentKeys = [
 ];
 
 const JsMysteryPage = () => {
-    const storedStep = Math.max(
-        assignmentKeys.indexOf(sessionStorage.getItem('currentStep') || ''),
-        0
-    );
+    const [step, setStep] = useState(0);
+    const [firstRun, setFirstRun] = useState(true);
+    const [lastCompletedAssignment, setLastCompletedAssignment] = useState(0);
 
-    const [step, setStep] = useState(storedStep);
-    const [lastCompletedAssignment, setLastCompletedAssignment] = useState(
-        Math.max(0, storedStep - 1)
-    );
+    useEffect(() => {
+        if (firstRun) {
+            const storedStep = Math.max(
+                assignmentKeys.indexOf(sessionStorage.getItem('currentStep') || ''),
+                0
+            );
+
+            if (storedStep > step) {
+                setStep(storedStep);
+                setLastCompletedAssignment(step - 1);
+            }
+
+            setFirstRun(false);
+        }
+    }, [firstRun, step]);
 
     const onCompleteAssignment = () => {
         window.scrollBy({
@@ -39,6 +49,10 @@ const JsMysteryPage = () => {
             );
         }
     };
+
+    if (firstRun) {
+        return null;
+    }
 
     return (
         <MaxWidth>
