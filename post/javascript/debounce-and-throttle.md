@@ -43,7 +43,9 @@ const searchField = document.querySelector('#searchField')
 searchField.addEventListener('keydown', onType)
 ```
 
-If we type a key in the `searchField` a request to the server will be sent after 500 milliseconds, but if the user types another key before that time has elapsed, the request is delayed another 500 ms.
+`debounce` is a higher-order function that takes two arguments, `func`, the function that will be debounced, and `wait`, the wait in milliseconds before the passed function will be called, unless it's cancelled by a second call.
+
+So if we type a key in the `searchField` a request to the server will be sent after 500 milliseconds, but if the user types another key before that time has elapsed, the request is delayed another 500 ms.
 
 Let's see this in action. Type something into the search input, and if you pause for more than 500 ms a "search" will be triggered. Don't expect any results here though.
 
@@ -70,23 +72,23 @@ function debounce(func, wait) {
 }
 ```
 
-## Let's scroll
+## Let it scroll, let it scroll, let it scroll
 
 While debouncing calls the function _after_ the user has completed typing, a _throttled_ function is called every `n` milliseconds, limiting how many times a function is called. Throttling is best suited when a continuing function call is needed, like on scrolling, window resizing or drag and drop. 
 
-Here were creating a function `throttle`, and utilize it by a function that should be called when the user scrolls the browser window.
+Here were creating a function `throttle`, and utilise it by a function that should be called when the user scrolls the browser window.
 
 ```javascript
 function throttle(func, wait) {
     let waiting = false;
-    return () => {
+    return (...args) => {
         if (waiting) {
             return;
         }
 
         waiting = true;
         setTimeout(() => {
-            func();
+            func.call(...args);
             waiting = false;
         }, wait)
     }
@@ -98,3 +100,5 @@ const onScroll = throttle(() => {
 
 document.addEventListener('scroll', onScroll)
 ```
+Similar to `debounce`, `throttle` is a higher-order function. 
+The function that is returned will be called by the event listener, that is when the user scrolls. As long as the flag `waiting` from the previous function call is set, `func` will be called after `wait`.
