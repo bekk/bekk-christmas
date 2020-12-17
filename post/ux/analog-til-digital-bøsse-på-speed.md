@@ -39,6 +39,8 @@ Som bøssebærer er man en av mange engasjerte frivillige fra hele Norge. Vi øn
 
 En av de viktigste suksessfaktorene på Spleis er hvor mye penger folk klarer å samle inn. For TV-aksjonen var det også viktig å ivareta dugnadsfølelsen. Det ble derfor lagt til en hyllest til bøssebærerne inne på bøssene sammen med tall på antall bøssebærere fra samme by. Vi ønsket med det å rette vel så mye fokus på det positive ved å engasjere seg, som på mye hver av dem klarte å samle inn.
 
+![Skjermdump av Idas digitale bøsse på spleis.no](/assets/idas-digitale-bøsse.png "Idas digitale bøsse på spleis.no")
+
 Videre viste det seg at flere ønsket å samle inn til en digital bøsse sammen som en gruppe, og ny funksjonalitet ble lagt til på rekordtid for å gjøre det mulig. To fine eksempler er bøssene til håndballaget [Vipers](https://www.spleis.no/project/132942) og [Norges seilforbund](https://www.spleis.no/project/129586). For å motivere til større giverglede blant bedrifter gjorde vi det mulig å sette opp samlesider der ulike avdelinger kunne konkurrere mot hverandre om å samle inn mest. Mange bedrifter valgte også å doble beløpet som de ansatte gav til spleisen og gav dette som en et felles bidrag til TV-aksjonen.
 
 ### 4. Veilede gjennom alternative aktiviteter
