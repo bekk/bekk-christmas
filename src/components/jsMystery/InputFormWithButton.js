@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components/macro';
 import { BorderButton, InputField } from './styles';
 
 const InputFormWithButton = ({ buttonText, validAnswers, formState, setFormState }) => {

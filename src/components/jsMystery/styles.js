@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 export const MaxWidth = styled.div`
     max-width: 760px;
-    margin: auto;
+    margin: 100px auto;
 `;
 
 export const BorderButton = styled.button`

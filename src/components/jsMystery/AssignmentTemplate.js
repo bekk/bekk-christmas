@@ -9,16 +9,6 @@ import styled from 'styled-components';
 const Pre = styled.pre`
     position: relative;
     overflow: visible !important;
-    background-color: ${(props) => {
-        switch (props.formState) {
-            case 'ERROR':
-                return '#FFCCCC';
-            case 'SUCCESS':
-                return '#BFF4DE';
-            default:
-                return 'var(--prism-background-color)';
-        }
-    }} !important;
 `;
 
 const AssignmentTemplate = ({
@@ -42,7 +32,7 @@ const AssignmentTemplate = ({
         <>
             <h1>{title}</h1>
             <p>{intro}</p>
-            <Pre className="language-javascript" formState={formState}>
+            <Pre className="language-javascript">
                 <code className="language-javascript">{code}</code>
                 {formState === 'SUCCESS' && <Icon src={CheckmarkInCircle} />}
                 {formState === 'ERROR' && <Icon src={CrossInCircle} />}
@@ -56,8 +46,11 @@ const AssignmentTemplate = ({
             />
             {formState === 'SUCCESS' && (
                 <>
-                    <BorderButton onClick={() => goToNextAssignment()}>Next puzzle</BorderButton>
+                    <span role="img" aria-label="tada">
+                        🎉
+                    </span>
                     <p>Explanation: {explanation}</p>
+                    <BorderButton onClick={() => goToNextAssignment()}>Next puzzle</BorderButton>
                 </>
             )}
             {formState === 'ERROR' && <p>Wrong answer, try again</p>}
