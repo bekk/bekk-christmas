@@ -15,6 +15,8 @@ ingress: >-
 
 
   It is easier to make an application that can scale to infinity in the cloud, but it is not necessarily easy.
+authors:
+  - Ole-Martin Mørk
 ---
 ## Architectures
 
