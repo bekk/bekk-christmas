@@ -17,7 +17,7 @@ authors:
 ---
 ## Disclaimer! 
 
-Dette er mine observasjoner og tanker jeg har gjort meg rundt interaksjonsdesign i spill som en gamer og ux designer. Observasjoner av gode opplevelser, dårlige opplevelser eller bare tanker rundt design og layout av alt fra HUD (link), gameplay, menystrukturer, generell spillforståelse og flyt. Du er kanskje ikke enig, eller har ikke tenkt noe særlig over det, men kanskje du blir litt mer oppmerksom nå? Teksten inneholder også en del norsk/engelske blandingsord eller fornorskede ord fra spill- og gamingkulturen. Jeg er usikker på om det er en type dialekt eller skrivefeil… de er nå der så kan du bedømme selv.
+Dette er mine observasjoner og tanker jeg har gjort meg rundt interaksjonsdesign i spill som en gamer og ux designer. Observasjoner av gode opplevelser, dårlige opplevelser eller bare tanker rundt design og layout av alt fra HUD, gameplay, menystrukturer, generell spillforståelse og flyt. Du er kanskje ikke enig, eller har ikke tenkt noe særlig over det, men kanskje du blir litt mer oppmerksom nå? Teksten inneholder også en del norsk/engelske blandingsord eller fornorskede ord fra spill- og gamingkulturen. Jeg er usikker på om det er en type dialekt eller skrivefeil… de er nå der så kan du bedømme selv.
 
 ### Early days
 
