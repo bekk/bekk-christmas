@@ -61,8 +61,7 @@ const FirstStep = ({ setStep }) => {
     return <BorderButton onClick={() => setStep(1)}>Start!</BorderButton>;
 };
 
-const code1 = `
-function hateChristmasMusic() {
+const code1 = `function hateChristmasMusic() {
     a = 6;
     ruinChristmas();
 }
@@ -106,8 +105,7 @@ const Assignment1 = ({ setStep, onCompleteAssignment }) => {
     );
 };
 
-const code2 = `
-const crypticMessage = 1+2+"A"+2+2+[]+"0";
+const code2 = `const crypticMessage = 1+2+"A"+2+2+[]+"0";
 
 console.log(crypticMessage);
 `;
@@ -158,8 +156,7 @@ const Assignment2 = ({ setStep, onCompleteAssignment }) => {
     );
 };
 
-const code3 = `
-const a = [1, 2, 3];
+const code3 = `const a = [1, 2, 3];
 const b = [4, 5, 6];
 
 console.log(a + b);
@@ -191,8 +188,7 @@ const Assignment3 = ({ setStep, onCompleteAssignment }) => {
     );
 };
 
-const code4 = `
-if ("123" === 123) {
+const code4 = `if ("123" === 123) {
     if ("ABC" == "abc") {
         console.log("ABCabc");
     } else {
@@ -238,8 +234,7 @@ const Assignment4 = ({ setStep, onCompleteAssignment }) => {
     );
 };
 
-const code5 = `
-const a = [1, 2, 3];
+const code5 = `const a = [1, 2, 3];
 const b = [4, 5, 6];
 
 console.log([...b, ...a]);
@@ -268,8 +263,7 @@ const Assignment5 = ({ setStep, onCompleteAssignment }) => {
     );
 };
 
-const code6 = `
-const numbers = [1, 3, 5, 7, 9, 11];
+const code6 = `const numbers = [1, 3, 5, 7, 9, 11];
 const multiplyOrSquare = (number, factor) => {
     if (typeof factor === 'number') {
       return number * factor;
