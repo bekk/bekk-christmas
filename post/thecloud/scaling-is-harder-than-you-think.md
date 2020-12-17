@@ -3,6 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 20
 title: Scaling is harder than you think
+image: https://images.unsplash.com/photo-1465447142348-e9952c393450?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80
 ingress: >-
   *“Why aren’t they running in the cloud?”* - everytime a service goes down
   under heavy traffic this is a common response. Some developers seem to think
