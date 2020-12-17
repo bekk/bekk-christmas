@@ -145,7 +145,7 @@ view =
         |> Input.toHtml
 ```
 
-The handy thing here is that adding the placeholder capability to our `Input` module doesn't have to result in any code changes in places that already us the text field without a placeholder! This is especially important as your app starts to grow, and you are using a view element in tens or hundreds of places in your code!
+The handy thing here is that adding the placeholder capability to our `Input` module doesn't have to result in any code changes in places that already use the text field without a placeholder! This is especially important as your app starts to grow, and you are using a view element in tens or hundreds of places in your code!
 
 ## Conclusion
 
