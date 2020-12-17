@@ -23,7 +23,7 @@ We will examine this technique by creating an element for text input fields. We 
 
 ```elm
 label []
-    [ {label}
+    [ text {label}
     , input
         [ type_ "text"
         , value {value}
@@ -61,7 +61,7 @@ To transform an `Input` into `Html`, we create the following function:
 toHtml : Input msg -> Html msg
 toHtml (Input options) =
     label []
-        [ options.label
+        [ text options.label
         , input
             [ type_ "text"
             , value options.value
@@ -113,7 +113,7 @@ To use the placeholder in the HTML, we modify the `toHtml` function to take the 
 toHtml : Input msg -> Html msg
 toHtml (Input options) =
     label []
-        [ options.label
+        [ text options.label
         , input
             [ type_ "text"
             , value options.value
