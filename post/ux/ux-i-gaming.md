@@ -12,6 +12,8 @@ links:
     url: https://www.youtube.com/watch?v=QNV2xtiBk5U
   - title: UX i spill
     url: https://www.youtube.com/watch?v=mPD5dUBFsps
+  - title: Game UI Database
+    url: https://www.gameuidatabase.com/
 authors:
   - Thomas Bråthen Fjeldberg-Norheim
 ---
