@@ -3,7 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 19
 title: Verdiskapning gjennom lønnsomhet og vekst
-image: https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1502&q=80
+image: https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80
 ingress: "**Basert på økonomisk teori bør det overordnede målet for private
   virksomheter være finansiell verdiskapning. Men hvordan skapes egentlig
   finansiell verdi? Og hva bør prioriteres mellom lønnsomhet og vekst?**"
