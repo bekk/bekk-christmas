@@ -65,7 +65,7 @@ Surely the compiler will let you know you can't create properties on a primitive
 
 ## Introducing strict mode
 
-As I'm sure you can understand, the examples above surely allows for some crazy bugs and can even pose a serious security threat. To deal with this ECMAScript 5 introduces strict mode, a subset with some different semantics and more thorough error-checking. If you try to run any of the code examples above in strict mode it will result in some kind of error being thrown by the compiler. Because this is a "new" feature, not all browsers support this, but [most modern browser do](https://caniuse.com/use-strict). Browsers not supporting strict mode will run strict mode code as if it was normal code.
+As I'm sure you can understand, the examples above allows for some crazy bugs and can even pose a serious security threat. To deal with this ECMAScript 5 introduces strict mode, a subset with some different semantics and more thorough error-checking. If you try to run any of the code examples above in strict mode it will result in some kind of error being thrown by the compiler. Because this is a "new" feature, not all browsers support this, but [most modern browser do](https://caniuse.com/use-strict). Browsers not supporting strict mode will run strict mode code as if it was normal code.
 
 Strict mode makes three general changes to normal JavaScript semantics. Shamelessly copied from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode):
 1. Eliminates some JavaScript silent errors by changing them to throw errors.
@@ -106,7 +106,7 @@ export default strict;
 
 ## Preparing for the future
 
-In addition to adding security and preventing bugs strict mode also adds a couple of other restrictions to help you write future-proof code.
+In addition to adding security and preventing bugs, strict mode also adds a couple of other restrictions to help you write future-proof code.
 
 ### Reserved keywords
 
@@ -120,4 +120,4 @@ Strict mode in ES 5 prohibits such functions and causes a syntax error. Great! B
 
 ## Transitioning to strict mode
 
-Really? I'm sorry, but we've actually come to 2020, and by now I hope most code being written out there is strict mode compatible. But of course, you might get dumped on (intentional wording here) with some old code that you need to rectify. If that's the case, you won't get any help from this blog post, other than a [link to MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode).
+Hopefully most of the code you write in 2020 is already strict mode compatible. But in case it's not, or you need to tend to some old code, you might need a bit of help to adjust your codebase. That's fine, but it's getting late now, and I need to publish this blog post before midnight, so I really need to wrap this up. Fortunately for you, MDN has [a great article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode) on the subject. Have fun!
