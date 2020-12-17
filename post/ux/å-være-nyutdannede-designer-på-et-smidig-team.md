@@ -33,10 +33,12 @@ Dette synes vi er en vanskelig problemstilling som vi på ingen måte har funnet
 
 Å være en designer i et smidig team betyr blant annet å følge oppgaver som utviklerne jobber med, samtidig som man planlegger hva som skal gjøres i neste sprint. Dette gjør at man blir sittende mye med enkeltoppgaver og små funksjoner i produktet. Vår opplevelse har vært at vi av og til glemmer å løfte blikket opp og se det store bildet av hvor produktet er på vei.
 
-Hvordan tar man seg tid til å løfte blikket i en stressende hverdag? For å gjøre det har vi sett oss nødt til å ta en fot i bakken med oss selv innimellom for å vurdere om det vi lager nå ivaretar målet til teamet. Dette kan være vanskelig å gjøre i praksis, men vi har erfart at å sette av en halvtime med produkteier, utviklere eller noen andre på teamet kan være til hjelp for å forsikre seg om at vi er på riktig vei.
+Hvordan tar man seg tid til å løfte blikket i en stressende hverdag? For å gjøre det har vi sett oss nødt til å ta en fot i bakken innimellom for å vurdere om det vi lager nå ivaretar målet til teamet. Sett gjerne av en halvtime med produkteier, utviklere eller noen andre på teamet kan være til hjelp for å forsikre seg om at du er på riktig vei.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
 Kort oppsummert kan vi si at å være designer i et smidig team betyr å være på forskudd, og se både detaljene og det store målbildet samtidig. Slike ferdigheter krever erfaring og det vil også variere hvordan man håndterer dette i ulike team, kunder og domener. Det er viktig å være tilpasningsdyktig, jobbe raskt og samtidig klare å sette av tid til å designe for gode brukeropplevelser.
+
+Planen var egentlig å skrive noe om designsystem i smidige team, men i kjent studentstil er denne artikkelen produkt av et skikkelig skippertak. Kanskje vi er kvitt studentvanene neste år? God jul!🎅
 
 *Takk Anna og Live for gjennomlesning og støtte!*
