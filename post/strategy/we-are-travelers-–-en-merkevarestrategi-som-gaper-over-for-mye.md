@@ -89,7 +89,7 @@ For dette vil jeg selvfølgelig klage på. Men det er jo med en bismak. Jeg oppl
 
 ### **Ok, la meg komme til poenget.** 
 
-Dette er ikke bare en rant over dårlige systemer og elendig kundeservice. Dette er et problem som er velkjent nok til at det er forsket på det. I artikkelen «Are the strategic stars aligned for your corporate brand» omtales visjon, kultur og image som tre strategiske stjerner som må være i synk for at man skal kunne lykkes med sin merkevarestrategi. Når disse ikke er i synk snakker vi om gap som kan gjøre at hele strategien faller i grus.
+Dette er ikke bare en rant over dårlige systemer og elendig kundeservice. Dette er et problem som er velkjent nok til at det er forsket på det. I artikkelen «Are the strategic stars aligned for your corporate brand» omtales visjon, kultur og image som tre strategiske stjerner som må være i synk for at man skal kunne lykkes med sin merkevarestrategi. Når disse ikke er i synk snakker vi om gap som kan gjøre at hele strategien rakner.
 
 #### Image-visjon gap
 
