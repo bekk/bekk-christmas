@@ -15,7 +15,7 @@ Let's start with a common use case for the builder pattern in Elm: view elements
 
 If we were to write separate functions for each of these variants of view elements, we would end up with many similiar, but slightly different, functions, to account for all the combinations of characteristics.
 
-There are multiple strategies to deal with this challenge in Elm, and Brian Hicks examines many of them his excellent talk [_Robot Buttons from Mars_](https://youtu.be/PDyWP-0H4Zo), which is where I first learned about the builder pattern in Elm. To see the alternatives to the builder pattern, and their limitations, I would encourage you to watch that talk.
+There are multiple strategies to deal with this challenge in Elm, and Brian Hicks examines many of them in his excellent talk [_Robot Buttons from Mars_](https://youtu.be/PDyWP-0H4Zo), which is where I first learned about the builder pattern in Elm. To see the alternatives to the builder pattern, and their limitations, I would encourage you to watch that talk.
 
 ## A Simple Text Field
 
