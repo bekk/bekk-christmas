@@ -26,6 +26,7 @@ const AssignmentTemplate = ({
     title,
     intro,
     code,
+    explanation,
     goToNextAssignment,
     onCompleteAssignment,
 }) => {
@@ -54,7 +55,10 @@ const AssignmentTemplate = ({
                 setFormState={setFormState}
             />
             {formState === 'SUCCESS' && (
-                <BorderButton onClick={() => goToNextAssignment()}>Continue</BorderButton>
+                <>
+                    <BorderButton onClick={() => goToNextAssignment()}>Next puzzle</BorderButton>
+                    <p>Explanation: {explanation}</p>
+                </>
             )}
             {formState === 'ERROR' && <p>Wrong answer, try again</p>}
         </>
