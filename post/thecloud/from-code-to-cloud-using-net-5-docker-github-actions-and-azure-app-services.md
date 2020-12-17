@@ -12,6 +12,11 @@ description: Have you ever had an application that you wanted to automate the
   building, packing, and deployment for? In this article, I will show you how to
   can utilize Docker, Github Actions, and Azure App Services in just a few
   steps.
+links:
+  - title: The Source Code
+    url: https://github.com/andersro93/dotnet5-docker-demo
+  - title: Introduction to Github Actions with Docker
+    url: https://andersro93.medium.com/using-github-actions-with-docker-9ba1cc481ae1
 authors:
   - Anders Refsdal Olsen
 ---
@@ -209,3 +214,8 @@ We may configure to use that by selecting DockerHub, and then our image name. Hi
 ## Conclusion
 In this article, we got a brief introduction on how we may use Docker and Github Actions to package and publish a .Net 5 on Dockerhub. Thereafter, we consumed that image on Azure App Service to make the .Net application publically accessible from all over the world. 
 However, this pipeline is not complete, there are lots of things that could have been better. Nevertheless, I think that it may serve you in your current or your next project as a baseline that you will need to expand for your project to thrive. I hope that this has been helpful and that you now have another tool to use in the future. 
+
+## Suggestions for further work
+Like with any solution, it can often be improved. This is no exception. In fact, I think there is tons of room for improvement. However, I'll leave that to you. If you want some suggestions, this is what I recommend looking into.
+- Make your repository private, such that it is only available for your App Service.
+- Add triggers to your Github Action, such that you only run your Action, or parts of your Action, when something is pushed to the main branch. 
