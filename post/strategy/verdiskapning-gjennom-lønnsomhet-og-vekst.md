@@ -16,7 +16,6 @@ Et selskap investerer kapital i prosjekter som genererer avkastning på kapitale
 
 ![](/assets/verdiskapning.png)
 
-
 Verdiskapningen som følger av å øke lønnsomheten eller omsetning avhenger av den spesifikke virksomheten og situasjonen den står overfor i dag. Grafen over viser verdien til et tenkt selskap, og hvordan det påvirkes av forskjeller i lønnsomhet (målt ved totalkapitalavkastning) og vekst. Selskapet har en kapitalkostnad på 9%. Dersom selskapet har en lønnsomhet som er det samme som kapitalkostnaden (9%), skapes det ikke noe verdi ved at selskapet vokser. Dersom selskapet har en lavere lønnsomhet enn kapitalkostnaden, ødelegges det verdi for hver ekstra omsatte krone. Dersom selskapet har veldig høy lønnsomhet, oppnår det relativt begrenset verdiskapning av å øke lønnsomheten ytterligere. Vi ser med andre ord at hva som bør prioriteres av lønnsomhet og vekst avhenger av virksomhetens situasjon. 
 
 #### Lønnsomhet og vekst på bekostning av hverandre
@@ -25,13 +24,19 @@ Lønnsomhet og vekst kan ofte gå på bekostning av hverandre. Dersom du har kje
 
 #### Vekst som forutsetning for lønnsomhet
 
+![](/assets/techs.jpg)
+
 Noen ganger er vekst en forutsetning for å oppnå lønnsomhet. Enkelte bransjer har betydelige stordriftsfordeler, der du er nødt til å ha en viss kritisk størrelse for å oppnå en lønnsomhet på linje med konkurrentene. Det er vanskelig å lykkes med et flyselskap som bare har ett fly, en dagligvarekjede med bare en butikk, eller et bemanningsbyrå med bare en ansatt. Spesielt innen fremveksten av nye teknologiske start-ups innen sosiale medier og delingsplattformer er nettverkseffekter rådende, og det er avgjørende å oppnå en kritisk masse av brukere. Du hadde aldri brukt Facebook hvis du bare hadde tre venner som brukte det, og du hadde aldri brukt Nabobil hvis de bare hadde en bil tilgjengelig. De sterke nettverkseffektene sørger også for at konkurransesituasjonen blir kraftig svekket når en aktør først har tatt et marked, slik vi ser av den nærmest monopolistiske posisjonen Google, Facebook, Uber og andre har oppnådd. Når man først har en «Facebook» som fungerer, er det vanskelig å få noen til å ta i bruk en ny tilsvarende tjeneste uten betydelig differensiering og innovasjon. Samtidig har disse tech-selskapene ekstremt lave variable kostnader – slik at lønnsomheten er nærmest proporsjonal med antall bruker. Derfor er det i disse bransjene spesielt viktig å fokusere på vekst, både for å øke kvaliteten på produktet og kapre markedet for å oppnå en monopolistisk posisjon på sikt. Da kommer lønnsomheten «av seg selv». 
 
 #### Lønnsomhet som forutsetning for vekst
 
+![](/assets/tradd.jpg)
+
 Dersom et selskap ikke er lønnsomt og taper penger, vil vekst føre til enda flere tapte kroner og sånn sett være kostbart. Veksten kan ikke finansieres fra selskapets drift og man vil måtte låne penger eller få med seg eksterne investorer. Mange vekstselskaper har ikke tilgang til gjeldsfinansiering, og gjeld kan generelt medføre en del ulemper som strenge lånebetingelser, høye rentekostnader og økt konkursrisiko. Å hente penger fra eksterne investorer vil medføre utvanning av de eksisterende aksjonærene, og enkelte selskaper vil kunne ha problemer med å hente kapital på attraktive verdsettelser. Disse problemene unngås dersom man har oppnådd lønnsomhet før man fokuserer på vekst, og man har da muligheten til å vokse raskere og uten å måtte hente inn kapital for å gjennomføre veksten. Et selskap som AirBnB har oppnådd rekordvekst uten lønnsomhet som følge av at de har kunnet hente store mengder kapital til høye verdsettelser og dermed lav utvanning for eierne, takket være solide fremtidsutsikter til monopol og høy lønnsomhet. Men de aller fleste selskaper har ikke like unike verdiforslag med like gode fremtidsutsikter som AirBnB. Virksomheter innenfor tradisjonelle, kompetitive bransjer som for eksempel flybransjen, olje og gass, oppdrett, retail, finans og så videre vil ha problemer med å hente kapital dersom de taper penger, og bør dermed fokusere på å få lønnsomheten på plass før de fokuserer på stor vekst.  
 
 #### Når søken etter finansiell verdiskapning går for langt
+
+![](/assets/forurensing.jpg)
 
 Basert på økonomisk teori er hovedmålet for private selskaper å maksimere finansiell verdi, med aksjonærer som viktigste interessent. Men private selskaper har en rekke andre interessenter virksomheter også bør skape verdi for – kundene, de ansatte, samfunnet, miljøet og så videre. Higen etter å maksimere aksjonærverdi kan bli for kraftig og få uheldige konsekvenser for øvrige interessenter, som man har sett mange eksempler på gjennom tidene. Selskaper som driver feilaktig markedsføring og selger kunder feil produkter, utnytter ansatte og driver sosial dumping, beacher skip på strendene i Bangladesh, skaper finansielle katastrofer grunnet overdreven risikotaking og så videre. Utelukkende fokus på maksimering av finansiell verdi, og insentivordninger som utelukkende støtter dette, kan raskt være veien til uetisk og problematisk drift. Hvis man kun blir målt på egenkapitalavkastning og aksjekurser kan det fort oppstå en uheldig kultur preget av snarveier og moralsk tvilsomme beslutninger.  
 
