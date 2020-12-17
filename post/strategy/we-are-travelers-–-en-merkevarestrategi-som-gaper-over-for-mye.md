@@ -75,12 +75,15 @@ Slik utarter kundestøtten seg (denne blir litt lang, du er herved advart):
 
 «Ja»
 
-«Men 540 kr? Det koster vel ikke så mye på nett?»\
+«Men 540 kr? Det koster vel ikke så mye på nett?»
+
 «Nei, det koster mer å betale på flyplassen»
 
 «Men, jeg har jo bestilt de på nett sier jeg jo! Det står jo her på kvitteringen! Hvordan skal jeg kunne betale på nett hvis ikke skiene legges til betalingen når jeg bestiller!?»
 
 «Nei altså jeg kan ikke gjøre noe med prisen»
+
+
 
 Jeg stopper der. Klokken var tre, det var 40 minutter til avgang, jeg hadde ikke spist lunsj og planen om mat før avgang hang i en tynn tråd. Tonen eskalerte litt kan du si. Ikke bare måtte jeg betale de 540 kronene, jeg ble bedt om å betale to ganger, og da jeg ble stresset over å måtte vente på en død kortterminal for å få den ene betalingen tilbake, var svaret: «Ja, vil du ha pengene eller ikke?». Kvittering fikk jeg ikke, da måtte jeg gå til kundeservice og stille meg i ny kø der, men jeg fikk med nød og neppe overtalt damen i skranken til å skrive på kvitteringen fra kortterminalen at det var ski jeg hadde betalt for. 
 
