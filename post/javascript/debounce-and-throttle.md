@@ -61,13 +61,37 @@ We can also improve our debounce a bit by passing the parameters from the event 
 
 function debounce(func, wait) {
   let timeout;
-  return (...args) => {
+  return function () {
     if (timeout) {
       clearTimeout(timeout);
     }
     timeout = setTimeout(() => {
-      func.call(...args);
+      func.apply(this, arguments);
     }, wait);
+  };
+}
+```
+
+We may also add a third attribute to our function, `maxWait`, allowing us to force the function to be called at least every `n` milliseconds, which can be useful in some cases.
+
+
+```javascript
+function debounce(func, wait, maxWait) {
+  let timeout;
+  let max;
+
+  return function () {
+    const functionToCall = () => {
+      func.apply(this, arguments);
+      max = null;
+    };
+    if (!max) {
+      max = setTimeout(functionToCall, maxWait);
+    }
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+    timeout = setTimeout(functionToCall, wait);
   };
 }
 ```
@@ -94,11 +118,22 @@ function throttle(func, wait) {
     }
 }
 
-const onScroll = throttle(() => {
+const onResize = throttle(() => {
     // do something
 }, 100);
 
-document.addEventListener('scroll', onScroll)
+document.addEventListener('resize', onResize)
 ```
+
 Similar to `debounce`, `throttle` is a higher-order function. 
-The function that is returned will be called by the event listener, that is when the user scrolls. As long as the flag `waiting` from the previous function call is set, `func` will be called after `wait`.
+The function that is returned will be called by the event listener, that is when the user resizes the window. As long as the flag `waiting` from the previous function call is set, `func` will be called after `wait`.
+
+A resize event can be especially heavy since the browser also needs to rerender everything. 
+
+
+### How long do we need to wait?
+
+For both debounce and throttle the `wait` should be set to your situation and find what gives the best performance for your users and application.
+
+##
+I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions. lodash and underscore both have implementations that are well tested and the have probably thought of other cases that I haven't done here.
