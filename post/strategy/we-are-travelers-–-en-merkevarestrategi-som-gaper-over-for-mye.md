@@ -19,11 +19,9 @@ Et par måneder tilbake i tid. Jeg sjekker flybilletter på nett, sammenligner p
 
 Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen. Så skjer det. Automaten vil ikke. Vi kan sjekke inn to bagger og ski, eller tre bagger, men vi har totalt fire kolli inkludert skiene. En vennlig SAS-ansatt klør seg i hodet og sender meg til «customer support» skranken. 
 
-## **Customer support, sa du?**
+### **Customer support, sa du?**
 
 Slik utarter kundestøtten seg (denne blir litt lang, du er herved advart):
-
-
 
 «Du har ikke booket ski»
 
@@ -88,23 +86,23 @@ Jeg stopper der. Klokken var tre, det var 40 minutter til avgang, jeg hadde ikke
 
 For dette vil jeg selvfølgelig klage på. Men det er jo med en bismak. Jeg opplever selv at jeg har gjort alt så riktig som jeg kunne: Jeg har brukt SAS’ egne nettsider. Booket ski. Betalt på forhånd. Men det er dama i skranken som har makta. Hun bestemmer om jeg får med meg skiene eller om jeg må sette de igjen på Gardermoen. Og det er jeg som har et fly jeg skal rekke og en sulten 2-åring hengende i buksebenet. Det er klar jeg bøyer. Det er klart jeg betaler. Og så er det jeg som må bruke tid på å sende inn en klage og ærbødigst be om å få tilbake de 540 kronene jeg har betalt for mye. Om 6 til 8 uker, dersom SAS er enig med meg. We are travelers. Eller er det jeg som er den reisende, mens dama i skranken er den som lar meg reise? Med SAS endatil! Jeg er heldig jeg.
 
-## **Ok, la meg komme til poenget.** 
+### **Ok, la meg komme til poenget.** 
 
 Dette er ikke bare en rant over dårlige systemer og elendig kundeservice. Dette er et problem som er velkjent nok til at det er forsket på det. I artikkelen «Are the strategic stars aligned for your corporate brand» omtales visjon, kultur og image som tre strategiske stjerner som må være i synk for at man skal kunne lykkes med sin merkevarestrategi. Når disse ikke er i synk snakker vi om gap som kan gjøre at hele strategien faller i grus.
 
-### Image-visjon gap
+#### Image-visjon gap
 
 Ethvert selskap er en merkevare. Kundene har et bilde og inntrykk av selskapet, hva de står for og hva man som kunde kan forvente. Denne oppfatningen har selskapet begrenset kontroll over, siden den eies vel så mye av den som står på utsiden, slik som kundene, som de som sitter på innsiden og lager strategier. De fleste selskaper legger derfor betydelige ressurser i å markedsføre seg, for å sikre at kundens inntrykk av selskapet gjenspeiler visjonen. Dersom kundenes inntrykk avviker fra visjonen, har man et image-visjon gap.
 
-### Image-kultur gap
+#### Image-kultur gap
 
 Men, kundens oppfatning av selskapet avhenger ikke bare av hva man kommuniserer ut gjennom mottoer og markedsføring. For å lykkes med en visjon, for eksempel at man skal spille på lag med kunden, må også kulturen, altså de ansattes verdier, holdninger og handlinger, gjenspeile visjonen. Dersom kunden opplever at de ansatte i selskapet gjør noe annet enn det selskaper formidler at de skal gjøre, har man et image-kultur gap. 
 
-### Visjon-kultur gap
+#### Visjon-kultur gap
 
 For at ansatte skal handle i tråd med visjonen, trenger du enten en visjon som bygger på selskapets eksisterende kultur, eller så må du jobbe med å endre kulturen slik at denne støtter opp om visjonen. Dette kan du lese mer om i Luke 10 der Thilde skriver om [hvordan forme kulturen når man arbeider med strategi](https://www.strategy.christmas/2020/10). Kultur spiser som kjent strategi til frokost, så hvis visjonen ikke er i synk med kulturen er det en risiko for at du ikke lykkes hverken med å realisere visjonen (gjennom de ansatte), eller at kundene oppfatter selskapet slik du ønsker. Da har du et visjon-kultur gap, og visjonen var i beste fall en god frokost. 
 
-## **Hva har dette med flybilletter og ski å gjøre?**
+### **Hva har dette med flybilletter og ski å gjøre?**
 
 Jo, opplevelsen med SAS er et praktisk eksempel på gapene beskrevet ovenfor. Jeg oppfatter at SAS forsøker å kommunisere et nytt budskap, som antageligvis bygger på en ny visjon: We are travelers. Vi gir reisetips. Vi gjør det superenkelt å legge til ski til flyturen. Vi spiller på lag med kunden. 
 
