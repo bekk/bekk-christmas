@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 20
 title: Fra analog til digital bøsse på speed
-image: https://i.ibb.co/z622DhQ/Coverbilde.png
+image: https://i.ibb.co/2qpY7fk/Coverbilde.png
 ingress: I en nasjonal dugnad, én søndag i året har over 100 000 mennesker
   banket på dører i hele Norge for et godt formål. Hva skjer når man ikke lenger
   kan samles fysisk og hvordan erstatter man denne aktiviteten digitalt på kun
@@ -32,7 +32,6 @@ De som melder seg som bøssebærere representerer alle deler av den norske befol
 ### 2. Få frem det personlige med å være digital bøssebærer
 
 Et annet mål var å gjøre den «digitale bøssebærer-opplevelsen» like personlig som det tradisjonelle møtet i døren. En digital løsning åpnet samtidig for at giverne i tillegg kunne bli litt bedre kjent med personen bak bøssen. De som ønsket det kunne derfor legge inn et bilde av seg selv og beskrive sitt engasjement for saken ved å redigere teksten og belønningene. Av erfaring fra Spleis vet vi at personlige innsamlinger gjerne engasjerer mer når innsamlingen deles i nettverket til innsamler. 
-
 ![Skjermdumper av ulike digitale bøsser fra spleis.no](/assets/bøsser.png "Digitale bøsser fra spleis.no")
 
 ### 3. Skape tilhørighet nasjonalt og lokalt
