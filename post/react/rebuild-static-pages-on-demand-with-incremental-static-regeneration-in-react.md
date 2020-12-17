@@ -23,19 +23,17 @@ When you load a regular React app in a browser there are a lot of things happeni
 
 First, after the JavaScript has been downloaded and parsed we can begin fetching data from an API. This can lead to waiting times, spinners, and an overall slower experience of the website.
 
-With static pages we can make sure the users sees the content as soon as possible, by including the content in the initial HTML from the server. This means we will not have to wait for JavaScript to load before displaying meaningful content, and the users will not have to wait for potentially slow API-calls to finish before dynamic content is visible.
+With static pages, we can make sure the users see the content as soon as possible, by including the content in the initial HTML from the server. This means we will not have to wait for JavaScript to load before displaying meaningful content, and the users will not have to wait for potentially slow API-calls to finish before dynamic content is visible.
 
 ## The difference in load times
 
 Let us take an example of an article page. Below is the exact same component loaded in two different ways. The client-side approach fetches the article in a `useEffect` hook, while the static site approach fetches the article at build time and bundles it as part of the initial HTML.
 
-<!--
 | Client-side rendering                                                     | Static site generation                                                     |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | ![Client-side rendering](https://next-examples-one.vercel.app/next-1.gif) | ![Static site generation](https://next-examples-one.vercel.app/next-2.gif) |
--->
 
-What you are seeing in the two gifs is what a page looks like when it is reloaded using the two different approaches. This also applies to navigating from one page to another inside the same app, but the greatest difference you will see is when loading the page for the first time.
+What you are seeing in the two gifs is what a page looks like when it is reloaded using the two different approaches. This also applies to navigating from one page to another inside the same app. But, the greatest difference you will see is when loading the page for the first time.
 
 ## Loading data in static pages
 
@@ -43,7 +41,17 @@ Static pages are rendered at build-time, which means you have to know which data
 
 ### Enter the solution: incremental static regeneration (ISR)
 
-With ISR we can re-build pages on demand when changes occur, or at certain intervals when users load pages.
+With incremental rebuild we allow the previously static data to change without building the app from scratch. We can re-build pages on demand when changes occur, or at certain intervals when users load pages.
+
+The interval-based approach relies mostly on timers. The application defines how often the page will be re-built. pages can be re-built whenever a user visits the page if the timer from the previous build has run out.
+
+The on-demand approach works by allowing webhooks to trigger a rebuild of a page. This works great for headless content management systems, where a webhook can be triggered when an entry is changed. Rebuilds will then only be done when relevant data is changed.
+
+### What we can't do with static pages
+
+With all this talk of pages being static, we leave out some of the parts that can't be static. Content such as user information, or browser-specific data is impossible to know at build-time.
+
+This does not make it impossible to display such data on a static page. It only means that this data won't be available instantly like the static data. It can still be loaded on the client like with regular React apps!
 
 ## Getting started with static pages in React
 
@@ -97,7 +105,7 @@ Static site generation works in much the same way as client-side rendering. The 
 </html>
 ```
 
-When the JavaScript has finally loaded the client-side _rehydrates_ the existing HTML instead of overwriting it. It takes over the HTML that was delivered by the server and renders it again on the client. It will now behave like any other React app. Operations such as navigating from one page in the app to another will render that page on the client, instead of waiting for the server to respond.
+When the JavaScript has finally loaded the client _rehydrates_ the existing HTML instead of overwriting it. It takes over the HTML that was delivered by the server and renders it again on the client. It will now behave like any other React app. Operations such as navigating from one page in the app to another will render that page on the client, instead of waiting for the server to respond.
 
 ## Static Site Generation with Next
 
@@ -162,3 +170,4 @@ return {
   revalidate: 60 * 60, // 1 hour
 };
 ```
+
