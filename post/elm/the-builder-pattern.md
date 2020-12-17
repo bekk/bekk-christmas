@@ -3,12 +3,14 @@ calendar: elm
 post_year: 2020
 post_day: 18
 title: The Builder Pattern
+ingress: Elm doesn't have a concept of required and optional arguments. Every
+  function takes all the arguments they specify, no more, no less. But sometimes
+  we want to be able specify only some arguments to a function, and use default
+  values for the rest. The builder pattern is one solution to that challenge.
 authors:
   - Aksel Wester
 ---
-Elm doesn't have a concept of required and optional arguments. Every function takes all the arguments they specify, no more, no less. But sometimes we want to be able specify only some arguments to a function, and use default values for the rest. The builder pattern is one solution to that challenge.
-
-Let's start with a common use for the builder pattern in Elm: view elements. These are reusable elements that can be used in view code in different places in an app. The most common examples are buttons, input fields, links. What these elements have in commons is that they should be reusable, but that they aren't always identical. A botton could be solid or just have an outline, and have different colors depending on where you use it. Text input fields could differ in size, have error messages, or be disabled.
+Let's start with a common use case for the builder pattern in Elm: view elements. These are reusable elements that can be used in view code in different places in an app. The most common examples are buttons, input fields, and links. What these elements have in commons is that they should be reusable, but that they aren't always identical. A botton could be solid or just have an outline, and have different colors depending on where you use it. Text input fields could differ in size, have error messages, or be disabled.
 
 If we were to write separate functions for each of these variants of view elements, we would end up with many, many similiar, but slightly different, functions, to account for all the combinations of characteristics.
 
