@@ -91,6 +91,8 @@ For dette vil jeg selvfølgelig klage på. Men det er jo med en bismak. Jeg oppl
 
 Dette er ikke bare en rant over dårlige systemer og elendig kundeservice. Dette er et problem som er velkjent nok til at det er forsket på det. I artikkelen «Are the strategic stars aligned for your corporate brand» omtales visjon, kultur og image som tre strategiske stjerner som må være i synk for at man skal kunne lykkes med sin merkevarestrategi. Når disse ikke er i synk snakker vi om gap som kan gjøre at hele strategien rakner.
 
+![](/assets/threestrategicstars.png "The Three Strategic Stars")
+
 #### Image-visjon gap
 
 Ethvert selskap er en merkevare. Kundene har et bilde og inntrykk av selskapet, hva de står for og hva man som kunde kan forvente. Denne oppfatningen har selskapet begrenset kontroll over, siden den eies vel så mye av den som står på utsiden, slik som kundene, som de som sitter på innsiden og lager strategier. De fleste selskaper legger derfor betydelige ressurser i å markedsføre seg, for å sikre at kundens inntrykk av selskapet gjenspeiler visjonen. Dersom kundenes inntrykk avviker fra visjonen, har man et image-visjon gap.
