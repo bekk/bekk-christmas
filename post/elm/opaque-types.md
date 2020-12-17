@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 17
-title: Achieve type safety with opaque types!
+title: Greater type safety with opaque types!
 image: https://images.unsplash.com/photo-1471086569966-db3eebc25a59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80
 ingress: It may become tedious to always check if a value in your records is on
   the supposed format. To be absolutely certain that a value correctly
