@@ -48,12 +48,13 @@ You might consider adding a scalable persistent queue of some sort between the a
 If reading from the integration is where you have scaling problems, you might choose to propagate changes written to the database to other datasources, like a search engine, file storage or other databases. Some databases have built in support for Master/Slave architectures that makes this quite easy to do. As with using a queue for writing, this approach will also make the data available at the slaves some seconds later than when you wrote it. However, if you need realtime data in some parts of your application you can read from the master database.
 
 ### Rent a huge database server
-This might be the best short time solution. It might feel expensive, but compared to the development cost in the previous solutions it is nothing. Make sure to rent a server that will handle as much traffic as you think you will have in the year. Of course, it you suddenly have a spike in traffic that you didn’t foresee, you will go down.
+This might be the best short time solution. It might feel expensive, but compared to the development cost in the previous solutions it is nothing. Make sure to rent a server that will handle as much traffic as you think you will have in the next year. Of course, if you suddenly have a spike in traffic that you didn’t foresee, you will go down.
 
 ### Queuing your customers
-One solution I haven’t discussed is simply to have a limit on how much traffic you can handle. Ticket vendors and stores having black friday sales have this active. If the amount of traffic is too much, the customers will be put in a queue. Let just pray that they’ll stick around long enough to do what they came to your site to do
+One solution I haven’t discussed is simply to have a limit on how much traffic you can handle. Ticket vendors and stores having black friday do this. If the amount of traffic is too much, the customers will be put in a queue. Let's just pray that they’ll stick around long enough to do what they came to your site to do
 
 ## Scaling vs development speed vs complexity vs cost
+
 There are several things you can do in order to handle scaling of your application and services. However they all come with a cost. The man hours required to write the scaling, the effect this scaling has on your development speed and the increased complexity of your application.
 If your time to market is drastically increased after you have implemented advanced unlimited scaling, you might not need the scaling after all.
 
