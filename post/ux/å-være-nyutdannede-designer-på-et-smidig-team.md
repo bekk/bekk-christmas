@@ -9,6 +9,9 @@ ingress: Vi er to nyutdannede interaksjonsdesignere fra UiO som startet å jobbe
   team, og vi gikk derfor inn i arbeidslivet med nysgjerrighet for hvordan det å
   jobbe smidig fungerer i praksis. I denne artikkelen prøver vi å svare på noen
   spørsmål vi hadde før vi startet.
+authors:
+  - Citona Marie Rygg
+  - Sigurd Rognhaugen
 ---
 [I Bekk bruker vi begrepet “kontinuerlig design” for å omtale en designers rolle i smidige team](https://blogg.bekk.no/kontinuerlig-design-5996f9786e1c). Dette begrepet viste seg å innebære en ganske stor omveltning fra den tradisjonelle designprosessen, slik vi kjente den. Den klassiske designprosessen består gjerne av flere steg man kan følge i en viss rekkefølge. For eksempel består en typisk design thinking prosess av fem faser; empatisere, definere, idégenerere, prototype og til slutt teste. Stegene skal så klart itereres, men fungerer likevel som tydelige, definerbare faser. Det er trygt og godt. Sånn er ikke kontinuerlig design. I kontinuerlig design ruller mange baller i luften samtidig uten en helt åpenbar oppskrift å følge. Det er fordi alt endrer seg så fort at det ikke er hensiktsmessig med en detaljert oppskrift. Raske endringer kan være utfordrende for hvem som helst, men kanskje spesielt en som er ny i arbeidslivet og ikke har mange års erfaring å lene seg på.
 
