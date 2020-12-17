@@ -13,7 +13,7 @@ authors:
 My advice would be to try to stick to as normal procedure as possible, and in some way try to
 forget that the situation we are in, and that it is different from what we all want it to be.
 
-**Dont focus of what is not working.**
+**Dont focus on what is not working.**
 
 First of all, most of us are at this point pretty tired of technical issues of various kinds, we are also
 fed up with joking about it, so why not try to to minimize the effects that these have on the points
