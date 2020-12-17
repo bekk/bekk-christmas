@@ -13,7 +13,7 @@ ingress: Det mangler alltid et punktum eller en hjelpetekst. Knappen er ikke
 authors:
   - Kjersti Barstad Strand
 ---
-Det mangler alltid et punktum eller en hjelpetekst. Knappen er ikke helt midtstilt og det finnes skriveleifer her og der. Det er for lite eller for mye avstand mellom noen elementer, mobilversjonen avviker litt fra desktopversjonen og det er for lav kontrast på teksten i dark mode. Dette er eksempler på småfeil som fort oppstår. Hvorfor er det viktig å få fikset disse feilene? Og hvordan kan vi holde oversikt over dem og få de prioritert slik at de blir fikset?
+
 
 Småfeilene nevnt ovenfor er det kanskje primært teamet bak tjenestene som er klar over, men hoper de seg opp over tid vil brukerne også etter hvert legge merke til dem. Min oppfatning er at for mange småfeil får tjenestene til å fremstå som uferdige. Dette igjen skader troverdigheten og i verste fall skaper utrygghet hos brukerne våre. 
 
