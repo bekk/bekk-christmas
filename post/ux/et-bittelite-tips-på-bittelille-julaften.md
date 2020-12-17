@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 22
 title: Et bittelite tips på bittelille julaften
-image: file:///Users/kjerstistrand/Desktop/UXChristmas.svg
+image: ""
 ingress: Det mangler alltid et punktum eller en hjelpetekst. Knappen er ikke
   helt midtstilt og det finnes skriveleifer her og der. Det er for lite eller
   for mye avstand mellom noen elementer, mobilversjonen avviker litt fra
