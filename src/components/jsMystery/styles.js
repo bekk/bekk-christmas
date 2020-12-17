@@ -35,3 +35,16 @@ export const Icon = styled.img`
     height: 90px;
     width: 90px !important;
 `;
+
+export const InputField = styled.input`
+    font-family: inherit;
+    font-size: 22px;
+    color: var(--text-color);
+
+    width: 100%;
+    background: transparent;
+    outline: 0;
+    border: 1px solid var(--text-color);
+    padding: 15px 30px;
+    margin-bottom: 30px;
+`;

@@ -1,19 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components/macro';
-import { BorderButton } from './styles';
-
-const InputField = styled.input`
-    font-family: inherit;
-    font-size: 22px;
-    color: black;
-
-    width: 100%;
-    background: transparent;
-    outline: 0;
-    border: 1px solid;
-    padding: 15px 30px;
-    margin-bottom: 30px;
-`;
+import { BorderButton, InputField } from './styles';
 
 const InputFormWithButton = ({ buttonText, validAnswers, formState, setFormState }) => {
     const [inputValue, setInputValue] = React.useState('');
