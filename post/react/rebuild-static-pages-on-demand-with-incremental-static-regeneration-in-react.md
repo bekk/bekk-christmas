@@ -2,7 +2,7 @@
 calendar: react
 post_year: 2020
 post_day: 18
-title: Rebuild static pages on demand with incremental static regeneration in React
+title: Rebuild static pages on demand with incremental static regeneration
 ingress: Building static pages with React is a great way to improve the
   experience of a website. But how can you still get the static pages to change
   when your data changes?
@@ -12,11 +12,19 @@ links:
 authors:
   - Ole Anders Stokker
 ---
-[DRAFT] This is mostly a test. A lot of cleanup and direction is still needed!
-
 ## Why would I want static pages, isn't React all about dynamic client side rendered content?
 
-When you load a regular React app in a browser there are a lot of things happening in the background before you can see any content on the page.
+When you load a regular React app in a browser there are a lot of things happening in the background before you can see any content on the page. The browser has to load a lot of HTML, CSS and JavaScript before any content can be displayed to the user.
+
+First after the JavaScript has been downloaded and parsed we can begin fetching data from an API. This can lead to waiting times, spinners, and and overall slower experience of the website.
+
+With static pages we can make sure the users sees the content as soon as possible, by including the content in the initial HTML from the server. This means we don't have to wait for JavaScript to load before displaying meaningful content, and the users wont have to wait for potentially slow API-calls to finish before dynamic content is visible.
+
+Lets take an example of an article page. Bolow is the exact same component loaded in two different ways. The client side approach fetches the article in a `useEffect` hook, while the static site approach fetches the article at build time and and bundles it as part of the initial HTML.
+
+| Client side rendering                                               | Static site generation                                              |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Getting Started](https://next-examples-one.vercel.app/next-1.gif) | ![Getting Started](https://next-examples-one.vercel.app/next-2.gif) |
 
 ## Rendering React on a server as well as on the client
 
@@ -60,14 +68,12 @@ Static site generation has a lot in common with server side rendering (SSR), and
   </head>
   <body>
     <div id="root">
-      <header>Christmas articles<header>
+      <header>Christmas articles</header>
       <main>
-        <h1>Christmas Trees<h1>
+        <h1>Christmas Trees</h1>
         <p>An article about christmas trees</p>
       </main>
-      <footer>
-        Made by me
-      </footer>
+      <footer>Made by me</footer>
     </div>
   </body>
 </html>
@@ -130,7 +136,7 @@ export const getStaticProps: GetStaticProps<StaticProps, QueryParams> = async (
 
 Since pages are rendered at build time we reach a problem when the data in our page changes. With static site generation we would have to build our application all over again to update any of the pages.
 
-With incremental static regeneration we can re-render pages at defined intervals when a user requests the page to update the content instead. By using the `revalidate` option in `getStaticProps` we can define how long we should wait until we can re-render the given page.
+With incremental static regeneration we can re-render pages at defined intervals when a users requests the page to update the content instead. By using the `revalidate` option in `getStaticProps` we can define how long we should wait until we can re-render the given page.
 
 ```typescript
 return {
