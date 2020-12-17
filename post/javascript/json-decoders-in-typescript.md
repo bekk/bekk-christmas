@@ -3,6 +3,8 @@ calendar: javascript
 post_year: 2020
 post_day: 23
 title: Json decoders in TypeScript
+authors:
+  - Tarjei Skjærset
 ---
 
 TypeScript is great because it lets you write statically verified code. You'll never try to access a property on an object that doesn't have it, and you'll never get a `undefined is not a function`. Except there are holes.
