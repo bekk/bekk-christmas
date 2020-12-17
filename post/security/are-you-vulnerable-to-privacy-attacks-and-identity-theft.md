@@ -7,6 +7,9 @@ image: https://images.unsplash.com/photo-1481450112092-f00a4c77e381?ixid=MXwxMjA
 ingress: Christmas is fast approaching, and with it, a new year. It’s time to
   leave bad security habits behind in 2020, set aside some time for a digital
   cleanup, and move forwards with a clean slate.
+links:
+  - url: https://www.dn.no/teknologi/liv-anne-holst/bisnode/per-thorsheim/frykter-id-tyveri-nekter-a-la-seg-kredittsjekke/2-1-561488
+    title: Frykter id-tyveri – nekter å la seg kredittsjekke
 authors:
   - Kaja Alexandra Dey
 ---
@@ -14,7 +17,7 @@ This doors format is that of a bingo card with different tasks and tips to consi
 
 In 2019, I finished my Master Thesis on how to detect Identity theft in online banking. Working on this gave me insight into how people may commit identity theft, and how you can protect yourself against it. It is honestly quite shocking how some very simple steps can give a significant increase in your personal security.
 
-![bingo card with security tips, All tips are explaied in detail below this image](/assets/bingo.jpg)
+![bingo card with security tips. All tips are explaied in detail below this image](/assets/bingo.jpg)
 
 1. This is one of those tips we always see, and with good reason—a password manager is essential to keep up with good password policies. Take a look at [this blog post](<1. https://security.christmas/2018/16>) by H. K. Henriksen from 2018 to learn more about why you should have a password manager.
 2. Many identity thefts happen between close relations. It might be a close family member or someone else that you have let into your home. Get control over where you have sensitive documents or code generators, and in so doing, limit who might have access to them. 
