@@ -3,7 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 19
 title: "Are you vulnerable to privacy attacks and identity theft? "
-image: https://images.unsplash.com/photo-1595666944516-bbb485958fb5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80
+image: https://images.unsplash.com/photo-1481450112092-f00a4c77e381?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1014&q=80
 ingress: Christmas is fast approaching, and with it, a new year. It’s time to
   leave bad security habits behind in 2020, set aside some time for a digital
   cleanup, and move forwards with a clean slate.
