@@ -13,6 +13,8 @@ links:
     url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
   - title: Transitioning to strict mode
     url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode
+  - title: Can I use strict mode?
+    url: https://caniuse.com/use-strict
 authors:
   - Henrik Hermansen
 ---
@@ -115,3 +117,7 @@ This first restriction is pretty simple. A short list of identifiers (which were
 This second restriction is a bit more complicated. Neither ECMAScript 3 nor ECMAScript 5 has block level functions as part of their specifications. Functions were only supposed to be at the top level of a script or of a function. However, many browsers implemented support for block level functions, but with incompatible semantics between them.
 
 Strict mode in ES 5 prohibits such functions and causes a syntax error. Great! But then came ES 2015 which actually introduces block level functions in the specification. So then all is well in ES 2015? Nope, because [Annex B](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-additional-ecmascript-features-for-web-browsers) introduces some additional ECMAScript features for web browsers causing [some confusion to remain](https://stackoverflow.com/a/31461615) about block level functions when not running in strict mode.
+
+## Transitioning to strict mode
+
+Really? I'm sorry, but we've actually come to 2020, and by now I hope most code being written out there is strict mode compatible. But of course, you might get dumped on (intentional wording here) with some old code that you need to rectify. If that's the case, you won't get any help from this blog post, other than a [link to MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode).
