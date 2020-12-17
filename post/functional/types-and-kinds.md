@@ -42,9 +42,9 @@ It follows that a type like `Either` has kind `* -> * -> *`. You get the idea.
 
 ### Higher-kinded types
 
-An `Int` or a `String` is just a value. In a pure functional language we can think of values as functions that take no arguments and return a value: Since there are no side effects and no arguments, the outcome must be predetermined. We can conceptualize the *order* of a function as the level of abstraction it has from being a value, and thus values have order 0.
+An `Int` or a `String` is just a value. In a pure functional language we can think of values as functions that take no arguments and return a value: Since there are no side effects and no arguments, the outcome is predetermined. We can conceptualize the *order* of a function as its level of abstraction from values. In this interpretation, values are functions of order 0.
 
-A step up from values we have what are normally considered functions; a construct that operates on inputs and outputs that are values (i.e. of order 0), so their level of abstraction is higher; they are of order 1. In general, a function of order *n* operates on inputs and outputs of order less than *n*.
+A step up from values we have what are normally considered functions; a construct that operates on inputs and outputs that are values, so their level of abstraction is higher - they are of order 1. In general, a function of order *n* operates on inputs and outputs of order less than *n*.
 
 A higher-order function is a function with order greater than 1 (who'd-a thunk it!) - in other words a function that operates on other functions. In an analogous way, a higher-kinded type is a type that operates on other types so that their level of abstraction from concrete types is greater than 1.
 
@@ -58,7 +58,7 @@ Note how this is fundamentally different from the kind of `Either`. `Either` is 
 
 ### Higher-kinded polymorphism
 
-Functors exist in many languages. The essence of a [functor](https://functional.christmas/2020/8) is some context that you can *map* over, i.e. lift a function into the context and apply it in a sensible manner. A list is a straightforward example of a functor. In Haskell, they are abstracted as a type class:
+Functors exist in many languages. The essence of a [functor](https://functional.christmas/2020/8) is some context that you can *map* over, i.e. lift a function into the context and apply it in a sensible manner. A list is a straightforward example of a functor. In Haskell, functors are abstracted as a type class:
 
 ```haskell
 class Functor f where
