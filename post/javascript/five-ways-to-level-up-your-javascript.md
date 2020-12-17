@@ -9,6 +9,8 @@ ingress: You’ve done your fair share of JavaScript. You’ve shipped productio
   step? How to find a learning path towards JavaScript mastery that actually
   motivates you to reach the next level? This article presents six alternative
   routes forward.
+authors:
+  - Erik Wendel
 ---
 ## The Boring Path: Read A Book
 
