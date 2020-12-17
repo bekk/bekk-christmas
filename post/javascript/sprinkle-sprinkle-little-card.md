@@ -104,7 +104,7 @@ Time to look at some CSS. If you're not familiar with the variables we have used
 }
 ```
 
-Okay, so we provided some [custom variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to our style by writing `var(--name)`. This allows us to vary the colors and animated motions of the dots. Now, we need to define these custom variables in our code to be able to access them in the CSS. They are defined in JavaScript using the [style property](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration) of the dot element: `dot.style.setProperty(propertyName, value);`
+Okay, so we provided some [custom variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to our style by writing `var(--name)`. This allows us to vary the colors and animated motions of the dots. Now, we need to define these custom variables in our code to be able to access them in the CSS. They are defined in JavaScript using the [style property](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration) of the dot element, supplying a property name and a value: `dot.style.setProperty('--color', 'red');`
 
 We want the confetti dots to start from the same source, but end up in different, seemingly random x and y positions.
 
