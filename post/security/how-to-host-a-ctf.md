@@ -1,7 +1,7 @@
 ---
 calendar: security
 post_year: 2020
-post_day: 20
+post_day: 18
 title: How to host a CTF?
 ---
 I'm a huge proponent of Capture The Flag competitions, and I've been involved in the CTF scene since my university days. Lucky for me, there was a CTF club at the University of Oslo. I've always been curious about hacking and the club quickly caught my attention. The club formerly known as UiO CTF (now Oslo CTF) organized workshops and competitions. Soon enough I was a dedicated member of the group and was heavily involved in organizing both competitions and workshops. One of my fondest memories is when we hosted a on campus CTF with over 80 attendees, and we called Peppes Pizza requesting pizza for 80 people. Peppes wasn't too happy, but they delivered while the head of the security department's jaw dropped when figured out that the department had to pay for 80 peoples worth of pizza. We had an absolute blast.
