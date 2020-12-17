@@ -5,10 +5,10 @@ post_day: 22
 title: We are travelers – en merkevarestrategi som gaper over for mye?
 image: https://images.unsplash.com/photo-1533289408336-ac92d0dbf036?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlY2slMjBpbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
 ingress: Juleferie. Endelig. Billettene er for lengst booket. Vi skal hjem til
-  jul. Hjem til familie. Hjem til vinter og skiføre. Vi tar bilen til flyplassen
-  for å ikke reise kollektivt. Minsten kommer rett fra barnehagen, så vi har
-  beregnet god tid, for å spise på flyplassen og forhindre en potensiell
-  meltdown 10 000 fot opp i lufta. Vi er i rute, alt lover godt.
+  jul. Hjem til familie. Hjem til vinter og skiføre. Vi tar bilen til
+  flyplassen. Minsten kommer rett fra barnehagen, så vi har beregnet god tid,
+  for å spise på flyplassen og forhindre en potensiell meltdown 10 000 fot opp i
+  lufta. Vi er i rute, alt lover godt.
 links:
   - url: <https://hbr.org/2001/02/are-the-strategic-stars-aligned-for-your-corporate-brand>
     title: Are the strategic stars aligned for your corporate brand?
