@@ -17,7 +17,7 @@ authors:
   - Ida Opsahl Høydal
   - Helen Le
 ---
-Spleis er en av TV-aksjonens viktigste samarbeidspartnere og ble i år leverandør av de digitale bøssene til årets aksjon. [Spleis](http://spleis.no) er en norsk folkefinansieringstjeneste der folk enkelt kan starte digitale innsamlinger. Vi er to designere som til daglig sitter hos Spleis og skal i dagens luke fortelle litt om våres erfaringer fra å erstatte en fysisk løsning med noe heldigitalt.
+Spleis er en av TV-aksjonens viktigste samarbeidspartnere og ble i år leverandør av de digitale bøssene til årets aksjon. [Spleis](http://spleis.no) er en norsk folkefinansieringstjeneste der folk enkelt kan starte digitale innsamlinger. Vi er to designere som til daglig sitter hos Spleis og skal i dagens luke fortelle litt om våre erfaringer fra å erstatte en fysisk løsning med noe heldigitalt.
 
 Konseptet digital bøsse fikk en sped start allerede i 2018. Hypotesen var da at bøssebærerne kunne samle inn enda mer penger med en digital innsamling etter at de hadde gått med sin fysiske bøsse. I 2019 lagde vi en pilot der flere fikk testet løsningen. I år, i disse koronatider, ble året vi virkelig fikk testet ut konseptet digital bøsse ved å erstatte hele bøsseløsningen.
 
@@ -38,6 +38,8 @@ Et annet mål var å gjøre den «digitale bøssebærer-opplevelsen» like perso
 ### 3. Skape tilhørighet nasjonalt og lokalt
 
 Som bøssebærer er man en av mange engasjerte frivillige fra hele Norge. Vi ønsket å trekke frem at de var en del av et større fellesskap både lokalt og nasjonalt. En søkeside ble satt opp så folk enkelt kunne finne bøssene til naboer, bekjente eller andre fra samme lokalområde. Statistikk som «antall bøsser» og «innsamlet beløp per innbygger» ble lagt til på [bøssesøket](http://www.spleis.no/bosse) for å synliggjøre aktiviteten både på kommune, og fylkesnivå. Dette økte engasjementet blant de frivillige lokallagene som jobbet med å rekruttere flere bøssebærere, og folk begynte å engasjere seg for å få opp det innsamlede beløpet i sin kommune ved å dele statistikken i sosiale medier med en oppfordring til flere om å gi.
+
+![Skjermdump fra bøssesøket for digitale bøsser på spleis.no – Sagene bydel i Oslo](/assets/bøssesøk-statistikk.png "Bøssesøket for digitale bøsser på spleis.no")
 
 En av de viktigste suksessfaktorene på Spleis er hvor mye penger folk klarer å samle inn. For TV-aksjonen var det også viktig å ivareta dugnadsfølelsen. Det ble derfor lagt til en hyllest til bøssebærerne inne på bøssene sammen med tall på antall bøssebærere fra samme by. Vi ønsket med det å rette vel så mye fokus på det positive ved å engasjere seg, som på mye hver av dem klarte å samle inn.
 
@@ -71,8 +73,10 @@ Til vanlig rullerer hele teamet på å svare på kundeservice. Designer, utvikle
 
 Den store fordelen med at kundeservice er en del av teamet, er at alle sitter nært på problemene brukerne opplever og får ekstra eierskap og forståelse av hva som bør forbedres. Ikke minst har vi erfart at kundeservice er en viktig del av hele brukerreisen. Brukerne får en mye bedre opplevelse med tjenesten om de blir hørt og hjulpet videre når de har behov for hjelp. På det mest hektiske, mot innspurten av aksjonsdagen opplevde vi at nettsiden ble treg og flere brukere fikk ikke til å logge seg inn eller donere penger. Mens utviklerne febrilsk jobbet med å løse problemene, så sørget vi andre for å lytte til brukerne, forsikre om at vi jobbet med saken og at vi ville si ifra når vi hadde en løsning.
 
+![Skjermdump av kundeservice](/assets/kundeservice.png "Skjermdump av kundeservice")
+
 Målet med å sitte nært på kundeservice og våre brukerne er enkelt og greit å få ned antall henvendelser, noe som betyr færre problemer og dermed bedre brukeropplevelser. De daglige prioriteringene, basert på fersk innsikt fra kundeservice og testing i produksjon, bidro til at vi kunne holde høy fart og ta noen bets underveis.
 
 ## Så, hvordan gikk digital bøsse lurer du kanskje på? 
 
-Etter noen intense uker med lange kvelder og høy fart på hvert vårt hjemmekontor kunne vi 19. oktober puste lettet ut. TV-aksjonen og WWF var storfornøyde med årets sluttresultat og at mange tidligere bøssebærere kjente igjen dugnaden og ønsket å opprette en bøsse for sin “tur”. Digitaliseringen av bøssa bidro i tillegg til at flere nye meldte seg som bøssebærer i år, som ikke hadde deltatt tidligere.Vi er veldig stolte av hva Spleis-teamet klarte å levere på rekordtid. Det ble satt mange nye rekorder på Spleis og det innsamlede beløpet ble seksdoblet fra resultatet for TV-aksjonen på Spleis i 2019. Det var rørende å se alle som tok i bruk de digitale bøssene og gjorde de til sitt eget. Alt fra [tre generasjoner](https://www.spleis.no/project/125472), [Besteforeldrenes klimaaksjon](https://www.spleis.no/project/126017), [Frida Ånnevik](https://www.spleis.no/project/145398) til selve statsminister [Erna sin digitale bøsse](https://www.spleis.no/project/137656).
+Etter noen intense uker med lange kvelder og høy fart på hvert vårt hjemmekontor kunne vi 19. oktober puste lettet ut. TV-aksjonen og WWF var veldig fornøyde med årets sluttresultat og at mange tidligere bøssebærere kjente igjen dugnaden og ønsket å opprette en bøsse for sin “tur”. Digitaliseringen av bøssa bidro i tillegg til at flere nye meldte seg som bøssebærer i år, som ikke hadde deltatt tidligere.Vi er veldig stolte av hva Spleis-teamet klarte å levere på rekordtid. Det ble satt mange nye rekorder på Spleis og det innsamlede beløpet ble seksdoblet fra resultatet for TV-aksjonen på Spleis i 2019. Det var rørende å se alle som tok i bruk de digitale bøssene og gjorde de til sitt eget. Alt fra [tre generasjoner](https://www.spleis.no/project/125472), [Besteforeldrenes klimaaksjon](https://www.spleis.no/project/126017), [Frida Ånnevik](https://www.spleis.no/project/145398) til selve statsminister [Erna sin digitale bøsse](https://www.spleis.no/project/137656).
