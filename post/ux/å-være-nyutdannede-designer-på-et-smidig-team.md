@@ -33,12 +33,8 @@ PS: Siden penn og papir er litt vrient å dele digitalt anbefaler vi [Sketchy Wi
 
 Det er viktig å ha en felles forståelse i teamet for hva målet er og hva man jobber mot. Som designer blir du gjerne broen mellom det som skal ut i prod nå og det målet man jobber mot. Mens utviklerne jobber med oppgaver må du ha forberedt og tenkt ut de neste oppgavene som skal gjøres. Du må samtidig kunne se fremover på hvilke andre oppgaver som kan dukke opp slik at du kan være med på å planlegge leveranser og deadlines. I tillegg til dette må du kunne snakke med de ulike stakeholderne om målet slik at de er trygge på at man er på riktig vei.
 
-Men hvordan gjør man det? Her har vi rett og slett vært nødt til å ta en fot i bakken med oss selv innimellom for å se på om det vi lager nå ivaretar det målet vi skal nå i fremtiden.
-
-
+Men hvordan gjør man det? Her har vi rett og slett vært nødt til å ta en fot i bakken med oss selv innimellom for å se på om det vi lager nå ivaretar det målet vi skal nå i fremtiden. Når man sitter “nedi grøten” med skissedetaljer kan det være fint å ta en pause og se på det større bildet. Er det du lager nå med på å ta deg dit du skal? Her er det også utrolig viktig å jobbe tett med utviklere for å sørge for at man ikke introduserer noe teknisk kompleksitet som senere vil bli et hinder på vei til målet.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
-
-
 
 Vi skulle egentlig skrive noe om designsystem i smidige team, men på grunn av skippertaket vårt med å skrive denne artikkelen får vi spare det til en senere anledning. God jul! 🎅
