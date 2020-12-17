@@ -27,7 +27,7 @@ The goal was to make it as simple and quick as possible. No flashy frameworks, j
 <figure>
 <img class="dark-theme-image" src="https://i.ibb.co/gycYDN9/confetti-dark.gif?h=200&fit=crop&crop=edges" alt="confetti-dark" border="0">
 <img class="light-theme-image" src="https://i.ibb.co/6XTTtRd/confetti-light.gif?h=200&fit=crop&crop=edges" alt="confetti-light" border="0">
-<figcaption>The final result of some simple confetti code.</figcaption>
+<figcaption style="text-align: center;">The final result of some simple confetti code.</figcaption>
 </figure>
 
 On our internal front page we have a carousel with employees, sorted by birthdays. Every upcoming birthday boy or girl has their own “card” in the carousel, with their image on it. Let’s say each card looks like this:
