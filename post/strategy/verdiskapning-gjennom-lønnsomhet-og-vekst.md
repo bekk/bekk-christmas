@@ -7,6 +7,11 @@ image: https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixid=MXwxMjA
 ingress: "**Basert på økonomisk teori bør det overordnede målet for private
   virksomheter være finansiell verdiskapning. Men hvordan skapes egentlig
   finansiell verdi? Og hva bør prioriteres mellom lønnsomhet og vekst?**"
+links:
+  - url: https://www.wiley.com/WileyCDA/WileyTitle/productCd-0470424605,descCd-buy.html
+    title: "Value: The Four Cornerstones of Corporate Finance"
+authors:
+  - Jonas Løvås
 ---
 ### Hvordan skapes finansiell verdi?
 
