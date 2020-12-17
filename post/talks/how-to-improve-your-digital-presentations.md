@@ -13,6 +13,8 @@ authors:
 My advice would be to try to stick to as normal procedure as possible, and in some way try to
 forget that the situation we are in, and that it is different from what we all want it to be.
 
+**Dont focus of what is not working.**
+
 First of all, most of us are at this point pretty tired of technical issues of various kinds, we are also
 fed up with joking about it, so why not try to to minimize the effects that these have on the points
 you want to get through?
@@ -28,18 +30,27 @@ Some platforms, like Zoom and Teams, have the functionality to choose a sequence
 Just as you would in a more classic talk, you can choose to watch more closely those who seems to paying the most
 attention, and have a vivid body language.
 
+**How to handle non-attentive audience?**\
+\
 What do you do if you spot someone in your (maybe even preselected) audience who seems to drop their attention,
 or maybe even yawn or looking at their phone? Just as in a live setting there is really little you can do about it,
 other than trying to ignore it (and then focuse on someone with more orderly digital manners), and try to
 push through as unaffected as possible.
 
+**Dress normally.**
+
+\
 Another tip would be to dress and act just as you would in the hopefully more normal setting we eventually will
 return to. To run your talk while standing should also be as natural as it would be in a live setting.
 
+**Remove background stuff.**\
+\
 Also try to remove any background noise, both visually and audially, from your talk. While it still is somewhat cute with
 animals, plants, santa clauses or home-made snowmen in the background of your surroundings, this is probably still best in
 more familiar settings with your closer collegaues. Try to keep it a bit more professional and avoid needless distractions
-where you can.
+where you can.\
+\
+**Keep clean slides.**
 
 Your slides may have to be altered a bit from a regular talk. Keeping slides clean is always a virtue - with the smaller screens
 that is most often used by the participants in a digital setting - one must focus even a bit more to keep headlines and text
