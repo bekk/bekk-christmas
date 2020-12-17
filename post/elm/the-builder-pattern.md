@@ -5,8 +5,9 @@ post_day: 18
 title: The Builder Pattern
 ingress: Elm doesn't have a concept of required and optional arguments. Every
   function takes all the arguments they specify, no more, no less. But sometimes
-  we want to be able specify only some arguments to a function, and use default
-  values for the rest. The builder pattern is one solution to that challenge.
+  we want to be able to specify only some arguments to a function, and use
+  default values for the rest. The builder pattern is one solution to that
+  challenge.
 authors:
   - Aksel Wester
 ---
