@@ -11,31 +11,49 @@ links:
     url: https://nextjs.org/docs/basic-features/pages
   - title: Example application built for this article
     url: https://next-examples-one.vercel.app/
+  - title: What is a static site generator? | Gatsby Docs
+    url: https://www.gatsbyjs.com/docs/glossary/static-site-generator/#what-is-a-static-site-generator
 authors:
   - Ole Anders Stokker
 ---
-## Why would I want static pages, isn't React all about dynamic client side rendered content?
+# Rebuild static pages on demand with incremental static regeneration
+
+Ingress:
+Building static pages with React is a great way to improve the experience of a website. But how do they work, and how can you still get the static pages to change when your data changes?
+
+## Why would I want static pages, isn't React all about dynamic client-side rendered content?
 
 When you load a regular React app in a browser there are a lot of things happening in the background before you can see any content on the page. The browser has to load a lot of HTML, CSS and JavaScript before any content can be displayed to the user.
 
 First after the JavaScript has been downloaded and parsed we can begin fetching data from an API. This can lead to waiting times, spinners, and and overall slower experience of the website.
 
-With static pages we can make sure the users sees the content as soon as possible, by including the content in the initial HTML from the server. This means we don't have to wait for JavaScript to load before displaying meaningful content, and the users wont have to wait for potentially slow API-calls to finish before dynamic content is visible.
+With static pages we can make sure the users sees the content as soon as possible, by including the content in the initial HTML from the server. This means we will not have to wait for JavaScript to load before displaying meaningful content, and the users wont have to wait for potentially slow API-calls to finish before dynamic content is visible.
 
-Lets take an example of an article page. Bolow is the exact same component loaded in two different ways. The client side approach fetches the article in a `useEffect` hook, while the static site approach fetches the article at build time and and bundles it as part of the initial HTML.
+## The difference in load times
 
-| Client side rendering                                               | Static site generation                                              |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| ![Getting Started](https://next-examples-one.vercel.app/next-1.gif) | ![Getting Started](https://next-examples-one.vercel.app/next-2.gif) |
+Lets take an example of an article page. Bolow is the exact same component loaded in two different ways. The client-side approach fetches the article in a `useEffect` hook, while the static site approach fetches the article at build time and and bundles it as part of the initial HTML.
 
-## Rendering React on a server as well as on the client
+| Client-side rendering                                                     | Static site generation                                                     |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ![Client-side rendering](https://next-examples-one.vercel.app/next-1.gif) | ![Static site generation](https://next-examples-one.vercel.app/next-2.gif) |
 
-Concepts:
+What you are seeing in the two gifs is what a page looks like when it is reloaded using the two different approaches. This also applies to navigating from one page to another inside the same app, but the greates difference you will si is when loading the page for the first time.
 
-- Client Side Rendering (CSR)
-- Server Side Rendering (SSR)
-- Static Site Generation (SSG)
-- Incremental Static Regeneration (ISR)
+## Loading data in static pages
+
+Static pages are rendered at build-time, which means you have to know which data to fetch at build-time as well. It also means that the data is constant for that build of the app, and you have to build the app all over again to update the content.
+
+### Enter the solution: incremental static regeneration (ISR)
+
+With ISR we can re-build pages on demand when changes occur, or at certain intervals when users load pages.
+
+## Getting started with static pages in React
+
+There are currently two major players in the market for building static pages with React, **Next** and **Gatsby**. There are of course other solutions, such as the upcoming Remix, and the possibility of building it yourself!
+
+_As of 2020 this site is actually built with Gatsby, and uses static rendering for all articles._
+
+This article uses Next as its building block for using static site generation. Next is a framework built around React, and offers a lot of functionality, such as static pages, routing, automatic bundle splitting, i18n and much more. It can be used in much the same way as Create React App, and is just as easy to set up.
 
 ### Rendering only on the client
 
@@ -46,7 +64,7 @@ When rendering React on a client you'll start of with a very basic html template
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>Client Side React App</title>
+    <title>Client-Side React App</title>
   </head>
   <body>
     <noscript> You need to enable JavaScript to run this app.</noscript>
@@ -60,13 +78,13 @@ When the HTML has been parsed by the client the client will start loading CSS an
 
 ### Rendering on both the server and the client
 
-Static site generation has a lot in common with server side rendering (SSR), and works in much the same way as client side rendering. Since the React app is rendered on the server the initial HTML will contain all the content on the page, _before_ the javascript is parsed or even downloaded!
+Static site generation works in much the same way as client-side rendering. Since the React app is rendered on the server the initial HTML will contain all the content on the page, _before_ the javascript is parsed or even downloaded!
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Server Side React App</title>
+    <title>Server-Side React App</title>
   </head>
   <body>
     <div id="root">
@@ -81,21 +99,19 @@ Static site generation has a lot in common with server side rendering (SSR), and
 </html>
 ```
 
-When the JavaScript has finally loaded the client side _rehydrates_ the existing HTML instead of overwriting it. It _takes over_ the HTML that was delivered by the server, and renders it again og the client. It will now behave just like any other React app.
+When the JavaScript has finally loaded the client-side _rehydrates_ the existing HTML instead of overwriting it. It _takes over_ the HTML that was delivered by the server, and renders it again og the client. It will now behave just like any other React app. Operations such as navigating from one page in the app to another will render that page on the client, instead of waiting for the server to respond.
 
-## Static Site Generation (SSG)
+## Static Site Generation with Next
 
-With static site generation the initial HTML for each page you can visit in an application will be rendered at _build time_.
+Next uses a file-system based router, which means each route in the app has a corresponding file. This file exports the `Component` that will be rendered on that route, and can also export a set of function for data fetching if needed.
 
 ### Data fetching with static site generation
 
-WHen pages are created at build time that means all that relevant data has to be avaiable at build time as well. A solution to this is doing data fetching at build time!
+For static sites we have to fetch data at build-time.
+In Next we can do this with the combination of `getStaticProps` and `getStaticPaths`. These function are exported from the page file, which corresponds with a given route in our application.
+In this case we will use the path `/articles/[articleId]`, where `articleId` is a paramter in the url.
 
-With Nextjs each page has the option of adding a data fetching method where you can fetch all relevant data at build time and pass it as props to the page.
-
-In Next we can do this with the combination of `getStaticProps` and `getStaticPaths`.
-
-With `getStaticPaths` you have to get all the url parameters required for a static page. In this case we are creating a page which renders articles, and all articles should be rendered at build time. The `articleId` parameter describes which article to url represents, and we have to return a list of all the articles we want rendered as static pages
+With `getStaticPaths` you have to get all the url parameters required for a static page. Since the url we are using has a parameter we have to return a list of all the articles we want rendered as static pages.
 
 ```typescript
 export const getStaticPaths: GetStaticPaths<QueryParams> = async () => {
@@ -114,7 +130,7 @@ Any `articleId` not present in the paths will direct to a 404 page by default. I
 ```typescript
 return {
   paths,
-  fallback: true,
+  fallback: true, // can also be <false> or <'blocking'>
 };
 ```
 
