@@ -84,7 +84,7 @@ How our app responds to these models is anyone's guess, but it's a recipe for di
 
 ## Making Impossible States Impossible
 
-In Richard Feldman's [brilliant talk from 2016](https://youtu.be/IcgmSRJHu_8), he explains the concept of making impossible states impossible. Or said in another way: to make sure that only valid states are representable. Our approach thus far does not achieve to do that.
+In Richard Feldman's [brilliant talk from 2016](https://youtu.be/IcgmSRJHu_8), he explains the concept of making impossible states impossible. Or said in another way: to make sure that only valid states are representable. Our approach thus far does not achieve that.
 
 The problem is that we have three fields that can be changed independently, but that are actually not independent of one another. To solve this, we can replace all three fields with just a single field `articles`, of type `RemoteArticles`, which we define like this:
 
