@@ -112,3 +112,9 @@ viewRemoteArticles remoteArticles =
         Success articles ->
             viewArticles articles
 ```
+
+This approach serves to both simplify our code, by getting rid of multiple fields to handle one state, _and_ to remove the possibility for a class of bugs in our app.
+
+Modelling remote data with a custom type is a powerful technique, which can be adapted to for different scenarios, depending on your app. You could for instance add an variant for `NotAsked`, if a request is only triggered by something else. And of you need the result of multiple requests to render something, you could combine the state for multiple requests in one custom type.
+
+The Elm package directory has [a package for `RemoteData`](https://package.elm-lang.org/packages/krisajenkins/remotedata/6.0.1), which has a custom type and some helper methods, but I usually prefer to make my own when using this pattern in Elm. But however you decide to do it, I hope you try out this technique for modelling remote data in Elm.
