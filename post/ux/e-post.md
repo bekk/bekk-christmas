@@ -3,7 +3,11 @@ calendar: ux
 post_year: 2020
 post_day: 19
 title: E-post
-ingress: Ingressen tralalala
+image: https://unsplash.com/photos/NL_DF0Klepc
+ingress: |-
+  Ingressen tralalala
+
+  hero-bilde øverst.
 description: organisering
 authors:
   - Anne Berit Kigen Bjering
@@ -11,4 +15,7 @@ authors:
 Her kommer selve teksten.
 
 ###Mange
+
+
+Her legger man inn bilder
 
