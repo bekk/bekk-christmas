@@ -7,8 +7,10 @@ ingress: Building static pages with React is a great way to improve the
   experience of a website. But how can you still get the static pages to change
   when your data changes?
 links:
-  - title: Nextjs Docs
+  - title: Data fetching in Next | Next Docs
     url: https://nextjs.org/docs/basic-features/pages
+  - title: Example application built for this article
+    url: https://next-examples-one.vercel.app/
 authors:
   - Ole Anders Stokker
 ---
