@@ -42,7 +42,7 @@ const LastStep = () => {
     return (
         <>
             <h2>You saved Christmas!</h2>
-            <p>Thanks to you, Santa Clause will make it.</p>
+            <p>Thanks to you, Santa Claus will make it.</p>
             <img
                 alt="Rudolph"
                 src="https://images.unsplash.com/photo-1605915359741-d89596dc6bdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
