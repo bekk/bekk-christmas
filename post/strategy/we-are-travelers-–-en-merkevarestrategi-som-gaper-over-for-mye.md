@@ -93,7 +93,7 @@ Dette er ikke bare en rant over dårlige systemer og elendig kundeservice. Dette
 
 ![](/assets/threestrategicstars.png "The Three Strategic Stars")
 
-#### Image-visjon gap
+**Image-visjon gap**
 
 Ethvert selskap er en merkevare. Kundene har et bilde og inntrykk av selskapet, hva de står for og hva man som kunde kan forvente. Denne oppfatningen har selskapet begrenset kontroll over, siden den eies vel så mye av den som står på utsiden, slik som kundene, som de som sitter på innsiden og lager strategier. De fleste selskaper legger derfor betydelige ressurser i å markedsføre seg, for å sikre at kundens inntrykk av selskapet gjenspeiler visjonen. Dersom kundenes inntrykk avviker fra visjonen, har man et image-visjon gap.
 
