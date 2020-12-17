@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 20
 title: Fra analog til digital bøsse på speed
-image: https://i.ibb.co/2qpY7fk/Coverbilde.png
+image: https://i.ibb.co/C1n1BJT/Coverbilde.png
 ingress: I en nasjonal dugnad, én søndag i året har over 100 000 mennesker
   banket på dører i hele Norge for et godt formål. Hva skjer når man ikke lenger
   kan samles fysisk og hvordan erstatter man denne aktiviteten digitalt på kun
@@ -72,7 +72,7 @@ Til vanlig rullerer hele teamet på å svare på kundeservice. Designer, utvikle
 
 Den store fordelen med at kundeservice er en del av teamet, er at alle sitter nært på problemene brukerne opplever og får ekstra eierskap og forståelse av hva som bør forbedres. Ikke minst har vi erfart at kundeservice er en viktig del av hele brukerreisen. Brukerne får en mye bedre opplevelse med tjenesten om de blir hørt og hjulpet videre når de har behov for hjelp. På det mest hektiske, mot innspurten av aksjonsdagen opplevde vi at nettsiden ble treg og flere brukere fikk ikke til å logge seg inn eller donere penger. Mens utviklerne febrilsk jobbet med å løse problemene, så sørget vi andre for å lytte til brukerne, forsikre om at vi jobbet med saken og at vi ville si ifra når vi hadde en løsning.
 
-![Skjermdump av kundeservice](/assets/kundeservice.png "Skjermdump av kundeservice")
+![Skjermdump av kundeservicesamtale](/assets/kundeservice.png "Skjermdump av kundeservicesamtale")
 
 Målet med å sitte nært på kundeservice og våre brukerne er enkelt og greit å få ned antall henvendelser, noe som betyr færre problemer og dermed bedre brukeropplevelser. De daglige prioriteringene, basert på fersk innsikt fra kundeservice og testing i produksjon, bidro til at vi kunne holde høy fart og ta noen bets underveis.
 
