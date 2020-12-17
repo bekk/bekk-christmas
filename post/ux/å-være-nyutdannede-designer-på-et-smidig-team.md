@@ -37,4 +37,4 @@ Men hvordan gjør man det? Her har vi rett og slett vært nødt til å ta en fot
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
-Vi skulle egentlig skrive noe om designsystem i smidige team, men på grunn av skippertaket vårt med å skrive denne artikkelen får vi spare det til en senere anledning. God jul! 🎅
+Vi skulle egentlig skrive noe om designsystem i smidige team, men på grunn av skippertaket vårt med å skrive denne artikkelen får vi spare det til en senere anledning. Vi var visst ikke helt ferdige med skippertakene likevel. God jul! 🎅
