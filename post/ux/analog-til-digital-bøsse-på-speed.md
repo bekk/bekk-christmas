@@ -31,7 +31,9 @@ De som melder seg som bøssebærere representerer alle deler av den norske befol
 
 ### 2. Få frem det personlige med å være digital bøssebærer
 
-Et annet mål var å gjøre den «digitale bøssebærer-opplevelsen» like personlig som det tradisjonelle møtet i døren. En digital løsning åpnet samtidig for at giverne i tillegg kunne bli litt bedre kjent med personen bak bøssen. De som ønsket det kunne derfor legge inn et bilde av seg selv og beskrive sitt engasjement for saken ved å redigere teksten og belønningene. Av erfaring fra Spleis vet vi at personlige innsamlinger gjerne engasjerer mer når innsamlingen deles i nettverket til innsamler.
+Et annet mål var å gjøre den «digitale bøssebærer-opplevelsen» like personlig som det tradisjonelle møtet i døren. En digital løsning åpnet samtidig for at giverne i tillegg kunne bli litt bedre kjent med personen bak bøssen. De som ønsket det kunne derfor legge inn et bilde av seg selv og beskrive sitt engasjement for saken ved å redigere teksten og belønningene. Av erfaring fra Spleis vet vi at personlige innsamlinger gjerne engasjerer mer når innsamlingen deles i nettverket til innsamler. 
+
+![Skjermdumper av ulike digitale bøsser fra spleis.no](/assets/bøsser.png "Digitale bøsser fra spleis.no")
 
 ### 3. Skape tilhørighet nasjonalt og lokalt
 
@@ -46,6 +48,8 @@ Videre viste det seg at flere ønsket å samle inn til en digital bøsse sammen 
 ### 4. Veilede gjennom alternative aktiviteter
 
 Etter å ha opprettet en digital bøsse, var det ikke gitt hva man skulle gjøre for å nå ut til folk. I stedet for å gå rundt og banke på dører, måtte vi komme opp med alternative aktiviteter som blant annet kunne gjennomføres fra sofaen. Til det ble det satt opp en introduksjons-side første gang man gikk inn på den digitale bøssen i tillegg til gjøremålskort med tips om aktiviteter man burde gjøre for å spre bøssen. Vi laget delingsmateriale som enkelt kunne lastes ned fra spleisen, både delingsbilder i ulike formater til sosiale medier, og en plakat som kunne printes ut og henges opp. Spesielt fint var det å se at delingsbildene ble tatt godt i bruk like etter lansering og prydet newsfeeden på instagram.
+
+![Delingsbilder fra digital bøsse](/assets/delingsbilder.png "Delingsbilder fra digital bøsse")
 
 ## Hvordan gjøre dette på seks uker?
 
