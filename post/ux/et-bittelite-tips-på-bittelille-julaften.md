@@ -13,11 +13,9 @@ ingress: Det mangler alltid et punktum eller en hjelpetekst. Knappen er ikke
 authors:
   - Kjersti Barstad Strand
 ---
-
-
 Småfeilene nevnt ovenfor er det kanskje primært teamet bak tjenestene som er klar over, men hoper de seg opp over tid vil brukerne også etter hvert legge merke til dem. Min oppfatning er at for mange småfeil får tjenestene til å fremstå som uferdige. Dette igjen skader troverdigheten og i verste fall skaper utrygghet hos brukerne våre. 
 
-Jeg leste et sted at det er fort gjort å tenke at \*hvordan noe ser ut kun handler om noe overfladisk. Men når ting ser bra ut påvirker det hjernen din rent kjemisk. Stoffet dopamin, som gir følelsen av glede og velvære, frigjøres i kroppen vår\*. Jeg har ikke undersøkt om det finnes troverdig vitenskapelig forskning som understøtter dette. Men et kjapt googlesøk på “UI design dopamine” konstaterer likevel at dette blir påstått av flere, og ved å skumlese noen av artiklene virker det også som at dopamin kan knyttes til motivasjon. Det er fristende å dra den enkle slutningen at dersom tjenestene vi lager ser bra ut kan man fremprovosere produksjon av dopamin, som igjen øker motivasjonen til brukerne våre. 
+Jeg leste et sted at det er fort gjort å tenke *at hvordan noe ser ut kun handler om noe overfladisk. Men når ting ser bra ut påvirker det hjernen din rent kjemisk. Stoffet dopamin, som gir følelsen av glede og velvære, frigjøres i kroppen vår.* Jeg har ikke undersøkt om det finnes troverdig vitenskapelig forskning som understøtter dette. Men et kjapt googlesøk på “UI design dopamine” konstaterer likevel at dette blir påstått av flere, og ved å skumlese noen av artiklene virker det også som at dopamin kan knyttes til motivasjon. Det er fristende å dra den enkle slutningen at dersom tjenestene vi lager ser bra ut kan man fremprovosere produksjon av dopamin, som igjen øker motivasjonen til brukerne våre. 
 
 Uttrykket at noe “ser bra ut” kan bety så mangt, det gjør egentlig litt vondt å bruke det. Jeg synes det er et platt uttrykk, men akkurat til denne artikkelen fungerer det fordi uttrykket i seg selv også gjør det generelt, det handler om hvordan noe oppfattes visuelt. En tjeneste uten masse småfeil vil jeg påstå er en del av det å “se bra ut”. 
 
