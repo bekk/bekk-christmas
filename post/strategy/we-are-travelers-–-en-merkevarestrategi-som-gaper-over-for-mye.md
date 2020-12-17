@@ -29,7 +29,7 @@ Slik utarter kundestøtten seg (denne blir litt lang, du er herved advart):
 
 «Nei, det står ikke her»
 
-«Jo, men det står jo her på billetten min. Innsjekket bagasje: Skibag.» 
+«Jo, men det står jo her på billetten min. Innsjekket bagasje: Skibag» 
 
 «Hvor har du booket den?»
 
