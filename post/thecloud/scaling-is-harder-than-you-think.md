@@ -53,7 +53,7 @@ This might be the best short time solution. It might feel expensive, but compare
 ### Queuing your customers
 One solution I haven’t discussed is simply to have a limit on how much traffic you can handle. Ticket vendors and stores having black friday sales have this active. If the amount of traffic is too much, the customers will be put in a queue. Let just pray that they’ll stick around long enough to do what they came to your site to do
 
-### Scaling vs development speed vs complexity vs cost
+## Scaling vs development speed vs complexity vs cost
 There are several things you can do in order to handle scaling of your application and services. However they all come with a cost. The man hours required to write the scaling, the effect this scaling has on your development speed and the increased complexity of your application.
 If your time to market is drastically increased after you have implemented advanced unlimited scaling, you might not need the scaling after all.
 
