@@ -3,15 +3,16 @@ calendar: ux
 post_year: 2020
 post_day: 20
 title: Fra analog til digital bøsse på speed
+image: https://i.ibb.co/2M40SRf/Coverbilde.png
 ingress: I en nasjonal dugnad, én søndag i året har over 100 000 mennesker
   banket på dører i hele Norge for et godt formål. Hva skjer når man ikke lenger
   kan samles fysisk og hvordan erstatter man denne aktiviteten digitalt på kun
   seks uker?! 😱
 links:
-  - url: https://uxdesign.cc/customer-support-is-a-ux-job-d179a3b8946
-    title: Why customer support is a UX job
   - url: https://blimed.no/aktuelt/historiens-foerste-heldigitale-tv-aksjon-dette-er-utrolig-spennende-arbeid/
     title: Historiens første heldigitale TV-aksjon
+  - url: https://uxdesign.cc/customer-support-is-a-ux-job-d179a3b8946
+    title: Why customer support is a UX job
 authors:
   - Ida Opsahl Høydal
   - Helen Le
