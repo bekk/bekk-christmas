@@ -81,7 +81,7 @@ Slik utarter kundestøtten seg (denne blir litt lang, du er herved advart):
 
 «Men, jeg har jo bestilt de på nett sier jeg jo! Det står jo her på kvitteringen! Hvordan skal jeg kunne betale på nett hvis ikke skiene legges til betalingen når jeg bestiller!?»
 
-«Nei altså, *jeg* kan ikke gjøre noe med prisen»
+«Nei altså, jeg kan ikke gjøre noe med prisen»
 
 ...
 
