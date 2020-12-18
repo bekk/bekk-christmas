@@ -13,6 +13,8 @@ description: ""
 links:
   - title: Lodash implementation of debouce
     url: https://github.com/lodash/lodash/blob/master/debounce.js
+  - title: Underscore implementation of throttle
+    url: https://underscorejs.org/docs/modules/throttle.html
 authors:
   - Eirik Luka
 ---
@@ -58,7 +60,6 @@ Let's see this in action. Type something into the search input, and if you pause
 We can also improve our debounce a bit by passing the parameters from the event to our debounced function, allowing our function to get the value of the input.
 
 ```javascript
-
 function debounce(func, wait) {
   let timeout;
   return function () {
@@ -73,7 +74,6 @@ function debounce(func, wait) {
 ```
 
 We may also add a third attribute to our function, `maxWait`, allowing us to force the function to be called at least every `n` milliseconds, which can be useful in some cases.
-
 
 ```javascript
 function debounce(func, wait, maxWait) {
@@ -98,7 +98,7 @@ function debounce(func, wait, maxWait) {
 
 ## Let it scroll, let it scroll, let it scroll
 
-While debouncing calls the function _after_ the user has completed typing, a _throttled_ function is called every `n` milliseconds, limiting how many times a function is called. Throttling is best suited when a continuing function call is needed, like on scrolling, window resizing or drag and drop. 
+While debouncing calls the function *after* the user has completed typing, a *throttled* function is called every `n` milliseconds, limiting how many times a function is called. Throttling is best suited when a continuing function call is needed, like on scrolling, window resizing or drag and drop. 
 
 Here were creating a function `throttle`, and utilise it by a function that should be called when the user scrolls the browser window.
 
@@ -128,12 +128,16 @@ document.addEventListener('resize', onScroll)
 Similar to `debounce`, `throttle` is a higher-order function. 
 The function that is returned will be called by the event listener, that is when the user resizes the window. As long as the flag `waiting` from the previous function call is set, `func` will be called after `wait`.
 
-A resize event can be especially heavy since the browser also needs to rerender everything. 
+And here it is in action:
 
+[![Edit quizzical-sun-qdv7p](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-sun-qdv7p?fontsize=14&hidenavigation=1&theme=dark&view=preview)
 
-### How long do we need to wait?
+As you may notice the throttled boxes are "lagging" a lot more, than the ones not throttled. So in this scenario a throttle isn't really needed, but in cases of for example resizing you will have great use for throttle. A resize event can be especially heavy since the browser needs to rerender everything.
+
+### How long do we need to `wait`?
 
 For both debounce and throttle the `wait` should be set to your situation and find what gives the best performance for your users and application.
 
-##
-I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions. lodash and underscore both have implementations that are well tested and the have probably thought of other cases that I haven't done here.
+## Let's wrap it up
+
+I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions.  [Lodash](https://lodash.com/) and [Underscore.js](https://underscorejs.org/) both have implementations that are well tested and the have probably thought of other cases that I haven't done here.
