@@ -25,7 +25,7 @@ Jeg digger organisering. Kanskje på et litt nerdete nivå. Jeg var nok blant de
 
 Jeg er også en person som kan kose meg med å browse og bestille matchende oppbevaringsbokser fra Clas Ohlson. Sånn at innholdet av korn, frø og mel kommer til sin rett, i like gjennomsiktige bokser. På denne måten er det mye enklere å finne det jeg skal ha, og jeg ser med en gang når noe må fylles på. 
 
-![kjøkkenhylle med gjennomsiktige bokser](https://i.ibb.co/Brn5c8V/IMG-5836.jpg)
+![kjøkkenhylle med gjennomsiktige bokser](https://i.ibb.co/r7VpVT9/kjokkenhylla.jpg)
 
 Man skulle derfor kanskje tro at jeg er en ryddig person. Det kan jeg avkrefte. Er det én person som roter i husholdningen, så er det meg. Jeg er litt usikker på hva som skjer. Det kan gå fra å være superfint og strøkent, til neste dag å være ting overalt. Jeg har derfor hatt stor nytte av å innføre noen av tiltakene til Marie Kondo.
 
