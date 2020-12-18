@@ -13,7 +13,7 @@ description: ""
 links:
   - title: Lodash implementation of debouce
     url: https://github.com/lodash/lodash/blob/master/debounce.js
-  - title: Underscore implementation of throttle
+  - title: Underscore.js implementation of throttle
     url: https://underscorejs.org/docs/modules/throttle.html
 authors:
   - Eirik Luka
