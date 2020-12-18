@@ -3,7 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 19
 title: Den digitale julevasken
-image: https://i.ibb.co/TrfNjzh/unsplash.png
+image: https://i.ibb.co/dGFLFkp/skrivebord.png
 ingress: >-
   Hva har Marie Kondo og Hey til felles? Hvordan kan de hjelpe en rotete sjel å
   få styr på nyhetsbrev og viktige e-poster? Her får du et innblikk i hverdagen
