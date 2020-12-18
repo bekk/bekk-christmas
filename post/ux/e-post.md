@@ -87,6 +87,4 @@ Jeg har nå igjen to dager før jeg må betale for Hey. En forholdsvis stiv pris
 
 <p>&nbsp;</p>
 
-----
-
 _Tusen takk til Helen Le og Kjersti Barstad Strand for gode innspill og korrekturlesing._
