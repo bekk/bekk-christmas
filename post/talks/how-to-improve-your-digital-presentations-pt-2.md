@@ -54,7 +54,7 @@ This is important. If you ever have held a live digital presentation you know wh
 
 ## Tip NO. 10 - Energize! ⚡
 
-Sitting down while presenting can actually affect you presentations negatively (if you are not very conscious about this), and many digital presentations tend to become somewhat monotonous. Give the next digital presentation while standing. Unconsciously, this will give your presentation new energy and action! 🚀 
+Sitting down while presenting can actually affect you presentations negatively (if you are not very conscious about this), and many digital presentations tend to become somewhat monotonous. Give the next digital presentation while standing. Unconsciously, this will give your presentation new energy and action! 
 
 Others tips here also include; use your hands! Change facial expressions! Laugh! Change your tone of voice and pitch!
 
@@ -68,4 +68,4 @@ Another positive aspect by you broadcasting your presentation digitally is that 
 
 ## Something else?
 
-A big thank you to everyone that gave these neat tips and tricks on digital presentations 💖 I'm sure that there is a lot more tips still out there. Please let me know on Twitter if anything comes to mind --> [@nicolai_a_hagen](https://twitter.com/nicolai_a_hagen). 
+A big thank you to everyone that gave away these neat tips and tricks on digital presentations 💖 I'm sure that there is a lot more tips still out there. Please let me know on Twitter if anything comes to mind --> [@nicolai_a_hagen](https://twitter.com/nicolai_a_hagen). 
