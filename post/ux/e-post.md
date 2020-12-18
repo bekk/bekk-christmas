@@ -47,7 +47,9 @@ På [Y-konferansen](https://www.y-oslo.com/) til Netlife fikk jeg høre om Hey -
 
 ## The Screener
 
-Det første konseptet jeg blir introdusert for, er en screener. Hey lar meg ta stilling til én og én avsender: Ønsker jeg å motta e-post fra denne personen eller bedriften? En liten lyspære blinker i bakhodet mitt - dette høres da kjent ut? Akkurat som med Marie Kondo-metoden skal jeg altså her ta tak i én og én avsender, og vurdere om jeg skal la den få spille en rolle i mailboksen min. Etter å ha takket ja til Hey som avsender, rekker jeg å se at jeg har mottatt ikke mindre enn seks e-poster fra dem. Antageligvis tips og triks for å lære meg systemet, men det oppleves litt i overkant mange. Jeg har uansett ikke tid til å lese dem med én gang, og jeg logger ut.
+![Screening av avsendere hos Hey](https://i.ibb.co/BGcnLL8/the-screener.png)
+
+Det første konseptet jeg blir introdusert for, er en screener. Hey lar meg ta stilling til én og én avsender: Ønsker jeg å motta e-post fra denne personen eller bedriften? En liten lyspære blinker i bakhodet mitt - dette høres da kjent ut? Akkurat som med Marie Kondo-metoden skal jeg altså her ta tak i én og én avsender, og vurdere om jeg skal la den få spille en rolle i mailboksen min. Etter å ha takket ja til Hey som avsender, rekker jeg å se at jeg har mottatt ikke mindre enn seks e-poster fra dem. Antageligvis tips og triks for å lære meg systemet, men det oppleves litt i overkant mange. Jeg har uansett ikke tid til å lese dem med én gang.
 
 Et par dager senere logger jeg inn med ny giv og lyst - klar for å sette meg ordentlig inn i sakene! Dette møter meg:
 
@@ -75,9 +77,9 @@ Etter 8 dager er det nesten sånn at jeg gleder meg til å åpne Hey. Hvor mange
 
 ## Til slutt
 
-Det finnes garantert noen negative sider ved Hey. De har ikke integrert en kalender, og man kan ikke bruke sitt eget domene - foreløpig. Av mindre features skulle jeg ønske det fantes en “angre”-knapp når jeg har gjort en handling. Jeg har foreløpig bare testet dette til privat bruk. “Hey for work” skal komme i 2021, men det hadde selvfølgelig vært fint å få testet samspillet mellom privat-mail og jobbmail også.
+Det finnes garantert noen negative sider ved Hey. De har ikke integrert en kalender, og man kan ikke bruke sitt eget domene - foreløpig. Av mindre features skulle jeg ønske det fantes en “angre”-knapp når jeg har gjort en handling. Jeg har foreløpig bare testet dette til privat bruk, men nettsiden lover at “Hey for work” skal komme i 2021. Det hadde selvfølgelig vært fint å teste samspillet mellom privat-mail og jobbmail også.
 
-Likevel - jeg digger konseptet. Og jeg tror mye av grunnen til dette, er at Hey har tatt tak i et virkelig problem. De har ikke bare gått for nok en e-postklient som er prikk lik alle andre sin, men tenkt nytt rund hele konseptet: Hva har man behov for? Hva er painpoints? Hvordan kan dette produktet støtte opp under brukerens faktiske prosesser og hverdagsliv? Og ikke minst - hvordan kan produktet gi en rotete sjel litt mer system på sakene?
+Likevel - jeg digger konseptet. Og jeg tror mye av grunnen til dette, er at Hey har tatt tak i et virkelig problem. De har ikke bare gått for nok en e-postklient som er prikk lik alle andre sin, men tenkt nytt rundt hele konseptet: Hva har man behov for? Hva er painpoints? Hvordan kan dette produktet støtte opp under brukerens faktiske prosesser og hverdagsliv? Og ikke minst - hvordan kan produktet gi en rotete sjel litt mer system på sakene?
 
 Jeg har nå igjen to dager før jeg må betale for Hey. En forholdsvis stiv pris til å være e-post, med 99 dollar per år. Men - jeg har blitt kvitt over 40 nyhetsbrev. Jeg har sagt nei til avsendere jeg strengt tatt ikke trenger å motta noe fra. Og jeg har på magisk vis klart å opprettholde en slags zero imbox. Kanskje er det litt som med kjøkkenhylla mi: Nå når jeg først har fått ting på plass, så er det mye lettere å fortsette å holde orden. Du skal ikke se bort fra at dette blir årets julegave. Til meg selv fra meg selv med ønske om en ryddig og fresh start på 2021.
 
