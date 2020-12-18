@@ -6,32 +6,35 @@ title: How to improve your digital presentations (pt. 2)
 image: https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
 ingress: >-
   If you planned for doing a presentation or two in 2020, as with the vacation
-  plans,  it didn't quite go as planned.  
+  plans,  it might not have gone *quite* as planned.  
 
 
-  We have asked people in Bekk what their favourite tips and tricks are when presenting digitally. What new possibilities arises? In this article, we summarize our main findings in 12 concrete tips. Enjoy!
+  We have asked people in Bekk what their favourite tips and tricks are when presenting digitally. What new possibilities arises? 
+
+
+  In this article, we summarize our main findings in 12 concrete tips. Enjoy!
 authors:
   - Nicolai August Hagen
 ---
 ## Tip NO. 1 - Screen all the things 
 
-As you now present in your own, closed and private area, you can really make use of all the screens you have available. It may be helpful to view your presentation on screen 1 and webcam on screen 2 (where you now also can have your speaker notes and attendee-list. 
+As you now present in your own, closed out and private area, you can really make use of all the screens you have available. It may be helpful to view your presentation on screen 1 and webcam on screen 2 (where you now also can have your speaker notes and attendee-list. 
 
 ## Tip NO. 2 - Finally, eye contact for everyone
 
-Make sure that the screen or computer with the webcam recording is at level with your eyes, so you will look directly into the eyes of everyone in the other end. In the digital era, you can 
+Make sure that the screen or computer with the webcam recording is at level with your eyes, so you will look directly into the eyes of everyone in the other end. In the digital era, you can finally have eye contact with everyone. Yeah!
 
 ## Tip NO. 3 - Consider unmuting in the audience
 
-This tip depends on both the presenter and the presenter style. For some, and in some occasions, it is beneficial to get some kind of feedback from the audience, at least from some of them. This is especially so if this is your first digital presentation. Just a "mhmmm", or similar acknowledgements in between your slides can help a lot to making sure that the audience still is there and can hear you. 
+Disclaimer; this tip depends on both the presenter and the presenter style. For some, and in some occasions, it is beneficial to get some kind of feedback from the audience, at least from some of them. This is especially so if this is your first digital presentation. Just a "mhmmm", or similar acknowledgements in between your slides can help a lot in making sure that the audience still is there and are able to hear you speak. 
 
-## Tip NO. 4 - Trust that the technology works
+## Tip NO. 4 - Trust your technology 👊
 
-If you don't like people making small "audience-like" sounds in your presentations, just try to remember that the technology *most likely* is working well, that everyone can hear you, and can see you and your slides. 
+If you don't like, from the previous tip, people making small "audience-like" sounds in your presentations, just try to remember that the technology *most likely* is working well, that everyone can hear you, and are able to see you and your slides. 
 
 ## Tip NO. 5 - Remember that technical difficulties can happen to everyone
 
-Even the long-reigning [Queen Elizabeth](https://www.glamour.com/story/queen-elizabeth-ii-had-a-glitch-on-zoom-and-she-handled-it-perfectly) experienced difficulties on the video call, and so can you! Don't be sad if you experience it too, we've all been there. 
+Even the long-reigning [Queen Elizabeth](https://www.glamour.com/story/queen-elizabeth-ii-had-a-glitch-on-zoom-and-she-handled-it-perfectly) experienced difficulties on her video call, and so can you! Don't be sad if you experience it too, we've all been there. 
 
 ## Tip NO. 6 - Bring a friend 
 
