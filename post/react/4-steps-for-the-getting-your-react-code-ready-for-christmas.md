@@ -13,6 +13,8 @@ ingress: 🎶 It's beginning to look at lot like Christmas...🎶 You have put u
   it's probably time to do some proper refactoring of your react code. Here are
   four steps which I have recognized to help me get going. It's time to roll up
   your sleeves.
+description: Let's get ready for Christmas by refactoring an Advent Candles
+  React application🎄✨
 links: []
 authors:
   - Nora Futsæter
@@ -163,7 +165,7 @@ Let's sprinkle some magic on our application that will also be a gift to ourselv
 So, let's connect the dots, how does this relate to our refactoring? Tests can actually indicate if further refactoring is needed. If you have to write long tests in order to test your component, it is probably time to split the component. The Advent Candles application first had one single large implementation of the User Interface. However, when refactoring the code, we split the code into two functional components; App and Candle and we now have an application that is easier to test. So, in order to increase testability it's a good practice to split components into smaller independent components. 
 
 \
-[Here](https://codesandbox.io/s/advent-candles-4-up11x?file=/src/__tests__/App.js) is how our Advent Candles application looks like with some tests.
+[Here](https://codesandbox.io/s/advent-candles-4-up11x?file=/src/__tests__/App.js) is how our Advent Candles application looks like with some tests. Click on the *Tests* tab to run the tests. 
 
 Writing the tests based on the components behavior also has some advantages for future refactoring. What the component wants to accomplish. When refactoring the Advent Candle application, we did not change what the components did, only how they did this. This is a key element to be a support for refactoring instead of a redraw. When we a year from now want to refactor the application, we can do this without using a lot of time trying to understand how the tests worked, and what will make them pass. So, with behavior-based tests we can in the future do further refactoring and know that the tests will tell us only if we do changes that change the behavior. They can give you confidence knowing that you don't break anything, and you can work faster and write new functionality. We can now test the components individually, and when in the future we change the code we have a better understanding for where in the code the break is happening if one test breaks. Neat huh? 
 
