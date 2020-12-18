@@ -61,8 +61,6 @@ Et par dager senere logger jeg inn med ny giv og lyst - klar for å sette meg or
 
 De få nyhetsbrevene som er interessante velger jeg at skal gå direkte til “The feed”, i stedet for at de skal lande i inboxen. Eller iMboks - som det heter hos Hey. For i Heys imbox skal jeg bare ha viktige - important - e-poster. I feeden derimot, lar Hey meg scrolle gjennom nyhetsbrev i et helt annet format! Alt er åpnet, akkurat som på instagram. Får jeg derimot kvitteringer eller ordrebekreftelser, kan jeg velge å sende disse direkte til the Paper trail. Jeg kan også velge at alt først skal gå til Imboxen, og selv sortere det videre om jeg ønsker det. Imboxen gir også en naturlig imbox zero-state når jeg har åpnet og sortert dagens mail.
 
-![Inbox zero](https://i.ibb.co/DzwHVW1/zero.png)
-
 Hvorfor er dette digg? Her blir det naturlig å trekke en parallell til Marie Kondo: For at man enkelt skal kunne holde det ryddig må alt ha sin faste plass. Og har det ikke en fast plass, ja så må man opprette eller lage en slik plass. Her blir Imboxen stedet for viktige ting jeg må ta stilling til, Feeden stedet for å sjekke ut teaterforestillinger, og Paper Trailen blir fylt opp av ordrebekreftelser, kvitteringer og hentemeldinger fra Posten nå før jul.
 
 I tillegg minsker den [kognitive lasten](https://medium.com/design-signals/cognitive-psychology-in-ux-minimising-the-cognitive-load-d97ad8e3115b) hver gang jeg åpner imboxen. Noe som er et viktig UX-prinsipp i seg selv. Jeg slipper å ta stilling til nyhetsbrev, og kan heller oppsøke dem når jeg er interessert selv. Færre valg = mindre tid brukt til kjipe ting = bedre brukeropplevelse.
