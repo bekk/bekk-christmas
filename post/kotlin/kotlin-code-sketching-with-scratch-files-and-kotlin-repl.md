@@ -45,7 +45,7 @@ Scratches can be created either via the menu **File > New > Scratch File**, or b
 
 We're ready to put that ingenious Kotlin idea of ours to the test! With the scratch file open in IntelliJ, let's take a look at what kind of features we get:
 
-![A Kotlin scratch file opened in IntelliJ](https://i.ibb.co/Qmsbvr0/Intelli-J-IDEA-CE-2020-2-1-Scratch-File.png)
+![A Kotlin scratch file opened in the IntelliJ IDEA Community Edition](https://i.ibb.co/Qmsbvr0/Intelli-J-IDEA-CE-2020-2-1-Scratch-File.png)
 
 We can see clearly that our Kotlin code has been syntax highlighted in addition to code completion being active, like we're used to when working with regular Kotlin files. In general we can pretty much write Kotlin code like we normally would in any other IntelliJ Kotlin project. One thing to note here is that a Kotlin scratch file does not require us to create an entry point, i.e. a Kotlin application `main` method, so we're able to start typing and executing Kotlin code right away. The output will be conveniently displayed in a window to the right of our source code upon hitting **Run Scratch File**.
 
@@ -53,7 +53,7 @@ We can see clearly that our Kotlin code has been syntax highlighted in addition 
 
 By default we have access to the native Kotlin language constructs as well as the the Kotlin Standard Library in the scratch file context, which is why we're able to invoke the `iterator` and `forEachRemaining` functions in the example above. Should you want to use functionality from other modules defined in a project of yours, you can do so by choosing the **Use classpath of module** option and select said module from the dropdown. You may now import and reference functionality defined in the module from within your scratch file (\*):
 
-![Referencing functionality from a project module from within a scratch file](https://i.ibb.co/1b3kJbF/Intelli-J-IDEA-CE-2020-2-1-Scratch-File-2.png)
+![Referencing functionality from a project module from within a scratch file, in the IntelliJ IDEA Community Edition](https://i.ibb.co/1b3kJbF/Intelli-J-IDEA-CE-2020-2-1-Scratch-File-2.png)
 
 _\* If you get an `Unresolved reference` error in the Scratch Output, make sure the functionality from your module is defined inside a [package](https://kotlinlang.org/docs/reference/packages.html#packages)._
 
@@ -67,4 +67,4 @@ The example provided in the beginning, although a bit contrived but realistic no
 
 ## Alternatives with even less overhead
 
-To create a Scratch file you have to at least get IntelliJ up and running with an existing project, so that we can access the scratches folder. If you're comfortable not having the auxiliary tools that IntelliJ provides, like syntax highlighting for instance, a more lightweight approach can be used. It's possible to use the Kotlin REPL to execute Kotlin code snippets directly on a command line and avoid IntelliJ and a corresponding project setup all together. Invoking `kotlinc` on a command line will give access to an interactive shell in the Kotlin compiler, where we may execute individual Kotlin code snippets and read output from the console. The standalone Kotlin compiler can be found here: https://github.com/JetBrains/kotlin/releases/tag/v1.4.21.
+To create a Scratch file you have to at least get IntelliJ up and running with an existing project, so that we can access the scratches folder. If you're comfortable not having the auxiliary tools that IntelliJ provides, like syntax highlighting for instance, a more lightweight approach can be used. It's possible to use the **Kotlin REPL** to execute Kotlin code snippets directly on a command line and avoid IntelliJ and a corresponding project setup all together. Invoking `kotlinc` on a command line will give access to an interactive shell in the Kotlin compiler, where we may execute individual Kotlin code snippets and read output from the console. The standalone Kotlin compiler can be found here: https://github.com/JetBrains/kotlin/releases/latest.
