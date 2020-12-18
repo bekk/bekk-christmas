@@ -29,7 +29,7 @@ Verdiskapningen som følger av å øke lønnsomheten eller omsetning avhenger av
 
 Lønnsomhet og vekst kan ofte gå på bekostning av hverandre. Dersom du har kjempelave marginer og nærmest gir bort et produkt gratis, er det sannsynlig at kundene flommer inn døren og gir deg høy omsetning. Dersom du har høye marginer og snyter kundene dine maksimalt, er det sannsynligvis få kunder som er interessert. Et selskap i situasjon A i figuren over bør fokusere alt de kan på å øke lønnsomheten uten å fokusere på vekst i det hele tatt, snarere tvert i mot. Dersom de ikke klarer å oppnå en lønnsomhet som er over kapitalkostnaden vil de skape verdi ved å legge ned virksomheten. Et selskap i situasjon B i figuren over bør derimot fokusere alt de kan på å oppnå vekst uten å ha like stort fokus på lønnsomhet. For de aller fleste selskaper som befinner seg et sted i midten, vil det alltid være en avveining mellom lønnsomhet og vekst. Beslutningen om å fokusere på vekst, lønnsomhet eller begge deler bør derfor være fundert i grundige nyttevurderinger av verdiskapningen som oppstår av de ulike strategiske grepene. 
 
-### Vekst som forutsetning for lønnsomhet
+## Vekst som forutsetning for lønnsomhet
 
 ![](/assets/techs.jpg)
 
