@@ -22,6 +22,8 @@ authors:
 
 Throttle and debounce are two very similar ways to handle function calls to optimise performance. Throttle is normally used when you have a function that is called continuously while the user is interacting with your page, e.g. while scrolling. Debounce is used to call a function when the user has stopped interacting, e.g. when they have stopped typing in an input field.
 
+Let's say a function is fired many times. By using throttle, the function will be called at a set interval, every `n` milliseconds. By using debounce, the function will be called once the function is stopped firing.
+
 ## Search-as-you-type
 
 Let's say you have an input for searching, but you want to give the user results while typing. Sending a request for every key entered is not only heavy on the server, it is also unnecessary if the user types more letters before the response gets back from the server. We can utilise debounce to instead send the request when the user has paused typing.
@@ -146,4 +148,7 @@ For both debounce and throttle the `wait` should be set to your situation and fi
 
 ## Let's wrap it up
 
-I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions.  [Lodash](https://lodash.com/) and [Underscore.js](https://underscorejs.org/) both have implementations that are well tested and they have probably thought of other cases that I haven't done here.
+I hope this makes it clearer how debounce and throttle differs from each other. To 
+
+
+I also recommend taking a look at how some libraries have solved these functions.  [Lodash](https://lodash.com/) and [Underscore.js](https://underscorejs.org/) both have implementations that are well tested and they have probably thought of other cases that I haven't done here.
