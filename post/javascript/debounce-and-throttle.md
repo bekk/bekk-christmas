@@ -4,8 +4,8 @@ post_year: 2020
 post_day: 19
 title: Debounce and throttle
 ingress: Ever wanted to implement a search as-you-type? What about transforming
-  something while the user is scrolling. Just adding an event listener for this
-  works, but it can really impact the browser performance and fetching from the
+  something while the user is scrolling. Just add an event listener for this
+  works, but it can really impact the browser performance. Fetching from the
   server on every keypress isn't just unnecessary, it may also be hard on your
   server. This can be solved by two functions, `debounce` and `throttle`. Let's
   have a look at the difference between the two and how they can be implemented
@@ -100,7 +100,7 @@ function debounce(func, wait, maxWait) {
 
 While debouncing calls the function *after* the user has completed typing, a *throttled* function is called every `n` milliseconds, limiting how many times a function is called. Throttling is best suited when a continuing function call is needed, like on scrolling, window resizing or drag and drop. 
 
-Here were creating a function `throttle`, and utilise it by a function that should be called when the user scrolls the browser window.
+Here we're creating a function `throttle`, and utilise it by a function that should be called when the user scrolls the browser window.
 
 ```javascript
 function throttle(func, wait) {
@@ -136,7 +136,7 @@ And here it is in action:
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-As you may notice the throttled boxes are "lagging" a lot more, than the ones not throttled. So in this scenario a throttle isn't really needed, but in cases of for example resizing you will have great use for throttle. A resize event can be especially heavy since the browser needs to rerender everything.
+As you may notice, the throttled boxes are "lagging" a lot more than the ones not throttled. So in this scenario a throttle isn't really needed, but in cases of for example resizing you will have great use for throttle. A resize event can be especially heavy since the browser needs to rerender everything.
 
 ### How long do we need to `wait`?
 
@@ -144,4 +144,4 @@ For both debounce and throttle the `wait` should be set to your situation and fi
 
 ## Let's wrap it up
 
-I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions.  [Lodash](https://lodash.com/) and [Underscore.js](https://underscorejs.org/) both have implementations that are well tested and the have probably thought of other cases that I haven't done here.
+I hope this makes it clearer how debounce and throttle differs from each other. I also recommend taking a look at how some libraries have solved these functions.  [Lodash](https://lodash.com/) and [Underscore.js](https://underscorejs.org/) both have implementations that are well tested and they have probably thought of other cases that I haven't done here.
