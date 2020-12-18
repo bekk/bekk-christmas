@@ -31,15 +31,15 @@ På Y-konferasen til Netlife fikk jeg høre om Hey. Hey er en e-posttjeneste som
 
 Her følger mine erfaringer med Hey i løpet av knappe to uker. 
 
-## 1. Screening: Hvem vil jeg motta e-poster fra?
+### 1. Screening: Hvem vil jeg motta e-poster fra?
 Det første konseptet jeg blir introdusert for er en screener. Hey lar meg ta stilling til én og én avsender. Allerede her kan jeg luke ut om jeg i det hele tatt ønsker meg mail fra en person eller en bedrift. En liten lyspære blinker i hodet mitt - dette hørtes da kjent ut? Akkurat som med Marie Kondo - skal jeg altså ta tak i én og én avsender, og vurdere om jeg skal la den få spille en rolle i inboksen min. Eller iMboks - som det heter hos Hey. For i Heys imbox skal du bare ha viktige - important - e-poster. Jeg innser at dette er en glimrende mulighet til å få meldt meg av en haug med nyhetsbrev! På kort tid har jeg både meldt meg av, og screenet ut 40 avsendere. Magisk! Og utrolig tilfredsstillende å kunne luke ut fra start.
 
-![alt-tekst](https://ibb.co/kQdTz1N.no)
+![alt-tekst](https://ibb.co/BLCyk2L)
 
-## 2. Alt har sin plass: Imbox - The Feed - Paper trail
+### 2. Alt har sin plass: Imbox - The Feed - Paper trail
 De få nyhetsbrevene som er interessante velger jeg at skal gå direkte til “The feed”, i stedet for at de skal lande i imboxen. Hey lar meg nemlig scrolle gjennom disse i et helt annet format! Alt er åpnet, akkurat som på instagram. Får jeg derimot kvitteringer eller ordrebekreftelser, kan jeg velge å sende disse direkte til the paper trail. Jeg kan også få alt i imboxen, og selv flytte videre om jeg ønsker det. 
 
-### Hvorfor er dette digg?
+#### Hvorfor er dette digg?
 Igjen trekker jeg en parallell til Marie Kondo og the home edit: For at man enkelt skal kunne holde det ryddig må 1) alt ha sin faste plass. Og har det ikke en fast plass, ja så må man opprette eller lage en slik plass. Her blir imboxen for viktige ting jeg må ta stilling til, feeden for browsing på teaterforestillinger og paper trailen blir fylt opp av ordrebekreftelser, kvitteringer og hentemeldinger fra posten nå før jul.
 
 Grunn nummer to er fordi dette minsker den kognitive workloaden hver gang jeg åpner umboxen. Jeg slipper å ta stilling til nyhetsbrev, og kan heller oppsøke dem når jeg er interessert selv. Færre valg = mindre tid brukt til kjipe ting = bedre liv.
@@ -48,7 +48,7 @@ Grunn nummer to er fordi dette minsker den kognitive workloaden hver gang jeg å
 
 Imboxen gir også en naturlig imbox zero når du har vært innom noe.
 
-## 3. Annet snacks
+### 3. Annet snacks
 Notifications er default satt til å være av. Fantastisk. I tillegg kan jeg legge til notater til e-postene mine. Jeg kan bruke hurtigtaster til ALT.
 
 Jeg kan til og med kopiere ut små ting fra e-postene som er relevante, såkalte “clips” for enklere å finne det igjen senere. Perfekt til hentekoder på posten eller lignende som man ofte må scanne for å finne igjen.
@@ -57,7 +57,7 @@ Etter 8 dager er det nesten sånn at jeg gleder meg til å åpne Hey. Hvor mange
 
 Det finnes garantert noen negative sider ved produktet også. Har foreløpig kun prøvd til min personlige private e-post. Usikker på hvor godt det vil fungere til jobbmail der jeg er avhengig av å ha en kalender godt linket inn. Skulle også ønske det fantes en “angre”-knapp når jeg har gjort en handling. Heldigvis er det lett å finne igjen det jeg har slettet eller de jeg har screenet ut.
 
-## Bottom line
+### Bottom line
 Jeg digger konseptet. Og jeg tror mye av grunnen til dette, er at Hey har tatt tak i et virkelig problem. De har ikke bare gått for nok en e-postklient som er prikk lik alle andre sin, men tenkt nytt på hele konseptet: Hva har man behov for? Hva er painpoints? Hvordan kan dette produktet støtte opp under brukerens faktiske prosesser og hverdagsliv?
 
 Jeg har nå igjen to dager før jeg må betale. Er konseptet for godt til å være sant? Jeg har blitt kvitt 40 nyhetsbrev. Jeg har sagt nei til avsendere jeg faktisk strengt tatt ikke trenger å motta noe fra. Og jeg har på magisk vis klart å holde en slags zero imbox. Kanskje er det litt som med kjøkkenskapet: Nå når jeg først har fått ting på plass, så er det mye lettere å fortsette å holde orden. Du skal ikke se bort fra at dette blir årets julegave. Til meg selv fra meg selv med ønske om en ryddig og fresh start på 2021. (For er det noe Hey gjør, så er det å “spark joy”!)
