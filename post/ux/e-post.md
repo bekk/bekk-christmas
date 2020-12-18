@@ -45,9 +45,9 @@ Det er en stund siden jeg har praktisert [inbox zero](https://medium.com/@nicoes
 
 På [Y-konferansen](https://www.y-oslo.com/) til Netlife fikk jeg høre om [Hey](https://hey.com/) - en e-posttjeneste som ble lansert i juni i år. Hey skal røske tak i de virkelige e-postproblemene. Kunne dette løse min manglende oversikt i innboksen? Jeg bestemte meg for å gi det en sjanse. Her følger mine erfaringer med Hey i løpet av knappe to uker. 
 
-## The Screener
-
 ![Screening av avsendere hos Hey](https://i.ibb.co/BGcnLL8/the-screener.png)
+
+## The Screener
 
 Det første konseptet jeg blir introdusert for, er en screener. Hey lar meg ta stilling til én og én avsender: Ønsker jeg å motta e-post fra denne personen eller bedriften? En liten lyspære blinker i bakhodet mitt - dette høres da kjent ut? Akkurat som med Marie Kondo-metoden, skal jeg altså her ta tak i én og én avsender, og vurdere om jeg skal la den få spille en rolle i mailboksen min. Etter å ha takket ja til Hey som avsender, rekker jeg å se at jeg har mottatt ikke mindre enn seks e-poster fra dem. Antageligvis tips og triks for å lære meg systemet, men det oppleves litt i overkant mange. Jeg har uansett ikke tid til å lese dem med én gang.
 
