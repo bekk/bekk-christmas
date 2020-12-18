@@ -19,7 +19,7 @@ Length: 51 minutes
 
 
 
-## Bonus
+## Bonus video 🎉
 
 ### Faster JavaScript with Category Theory - John Bender
 
