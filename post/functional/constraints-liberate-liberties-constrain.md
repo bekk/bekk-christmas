@@ -27,6 +27,6 @@ Link: https://youtu.be/PtD-WKSC6ak
 
 Length: 31 minutes
 
-> This video is not particularly relevant to the first, but it is a recent discovery on my part and you might enjoy ut too. It's a oldie but a goodie! John Bender gives an insight into category theory while showing how jQuery could be faster through the power of functional programming and category theory! If you know just a little javascript you will be able to keep up with this talk. 😄
+> This video is not particularly relevant to the first, but it is a recent discovery on my part and you might enjoy ut too. It's an oldie but a goodie! John Bender gives an insight into category theory while showing how jQuery could be faster through the power of functional programming and category theory! If you know just a little javascript you will be able to keep up with this talk. 😄
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PtD-WKSC6ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
