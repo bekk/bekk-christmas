@@ -73,7 +73,9 @@ function debounce(func, wait) {
 }
 ```
 
-We may also add a third attribute to our function, `maxWait`, allowing us to force the function to be called at least every `n` milliseconds, which can be useful in some cases.
+The reason the returned function is not an arrow function, is because it would have resulted in `this` being bound to `debounce` and not the returned function, and the context would have been lost to our debounced function.
+
+We may also expand `debounce` and add a third attribute to our function, `maxWait`. This allows us to force the function to be called at least every `n` milliseconds, which can be useful in some cases.
 
 ```javascript
 function debounce(func, wait, maxWait) {
