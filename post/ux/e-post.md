@@ -65,9 +65,9 @@ Hvorfor er dette digg? Her blir det naturlig å trekke en parallell til Marie Ko
 
 I tillegg minsker den [kognitive lasten](https://medium.com/design-signals/cognitive-psychology-in-ux-minimising-the-cognitive-load-d97ad8e3115b) hver gang jeg åpner imboxen. Noe som er et viktig UX-prinsipp i seg selv. Jeg slipper å ta stilling til nyhetsbrev, og kan heller oppsøke dem når jeg har lyst. Færre valg = mindre tid brukt til kjipe ting = bedre brukeropplevelse.
 
-## Andre smarte funksjoner
-
 ![Legge ved notat til e-posten](https://i.ibb.co/Gcj9LQy/notat.png)
+
+## Andre smarte funksjoner
 
 Notifications er default satt til å være av. Jeg kan legge til notater til e-postene mine. Og jeg kan bruke hurtigtaster til ALT.
 
