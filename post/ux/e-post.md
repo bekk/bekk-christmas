@@ -61,7 +61,7 @@ De få nyhetsbrevene som er interessante velger jeg at skal gå direkte til “T
 
 Hvorfor er dette digg? Her blir det naturlig å trekke en parallell til Marie Kondo: For at man enkelt skal kunne holde det ryddig må alt ha sin faste plass. Og har det ikke en fast plass, ja så må man opprette eller lage en slik plass. Her blir imboxen stedet for viktige ting jeg må ta stilling til, feeden for browsing på teaterforestillinger og paper trailen blir fylt opp av ordrebekreftelser, kvitteringer og hentemeldinger fra posten nå før jul.
 
-I tillegg minsker den [kognitive arbeidsmengden](https://medium.com/design-signals/cognitive-psychology-in-ux-minimising-the-cognitive-load-d97ad8e3115b) hver gang jeg åpner imboxen. Noe som er et viktig UX-prinsipp i seg selv. Jeg slipper å ta stilling til nyhetsbrev, og kan heller oppsøke dem når jeg er interessert selv. Færre valg = mindre tid brukt til kjipe ting = bedre brukeropplevelse.
+I tillegg minsker den [kognitive lasten](https://medium.com/design-signals/cognitive-psychology-in-ux-minimising-the-cognitive-load-d97ad8e3115b) hver gang jeg åpner imboxen. Noe som er et viktig UX-prinsipp i seg selv. Jeg slipper å ta stilling til nyhetsbrev, og kan heller oppsøke dem når jeg er interessert selv. Færre valg = mindre tid brukt til kjipe ting = bedre brukeropplevelse.
 
 ## Andre smarte funksjoner
 
