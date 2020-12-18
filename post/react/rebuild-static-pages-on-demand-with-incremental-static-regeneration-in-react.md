@@ -156,7 +156,7 @@ export const getStaticProps: GetStaticProps<StaticProps, QueryParams> = async (
 };
 ```
 
-## Incremental Static Regeneration (ISR)
+### Incremental Static Regeneration in Next
 
 Since pages are rendered at build time we reach a problem when the data in our page changes. With static site generation, we would have to build our application all over again to update any of the pages.
 
@@ -171,3 +171,22 @@ return {
 };
 ```
 
+## Combining static pages with dynamic data fetching
+
+Static pages can work very well by themselves, but that won't stop you from combining them with other forms of data fetching!
+
+As an earlier part of this calendar, we had an article on [Intelligent fetching and caching with SWR](https://react.christmas/2020/4).
+
+To combine the two approaches we can populate the initial data of the SWR hook without static data. By doing this you can get the best of both worlds, no loading times, and dynamic data you can mutate.
+
+```javascript
+const { data: articles } = useSWR(`/api/articles/${articleId}`, fetcher, {
+  initialData: initialArticles,
+});
+```
+
+## Ready to build static pages?
+
+In short, static pages allow you to deliver content faster and will less strain on APIs and servers. With incremental regeneration, it is also possible to make the content dynamic to a certain extent.
+
+Have you found any nice use cases for the technology, or are you otherwise eager to try it out? It's as easy to start as with any other React project, I've fallen in love with the concept and I'm sure you will love it too!
