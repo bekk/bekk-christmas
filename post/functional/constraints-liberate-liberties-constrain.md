@@ -18,7 +18,10 @@ Length: 51 minutes
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GqmsQeSzMdw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### Bonus: Faster JavaScript with Category Theory - John Bender
+
+## Bonus
+
+### Faster JavaScript with Category Theory - John Bender
 
 Link: https://youtu.be/PtD-WKSC6ak
 
