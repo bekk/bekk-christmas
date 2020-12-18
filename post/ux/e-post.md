@@ -85,5 +85,7 @@ Likevel - jeg digger konseptet. Og jeg tror mye av grunnen til dette, er at Hey 
 
 Jeg har nå igjen to dager før jeg må betale for Hey. En forholdsvis stiv pris til å være e-post, med 99 dollar per år. Men - jeg har blitt kvitt over 40 nyhetsbrev. Jeg har sagt nei til avsendere jeg strengt tatt ikke trenger å motta noe fra. Og jeg har på magisk vis klart å opprettholde en slags zero imbox. Kanskje er det litt som med kjøkkenhylla mi: Når jeg først har fått ting på plass, så er det mye lettere å holde orden. Du skal ikke se bort fra at dette blir årets julegave. Til meg selv, fra meg selv, med ønske om en ryddig og fresh start på 2021.
 
+<p>&nbsp;</p>
+----
 
 _Tusen takk til Helen Le og Kjersti Barstad Strand for gode innspill og korrekturlesing._
