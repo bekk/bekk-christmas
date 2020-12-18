@@ -21,7 +21,8 @@ Jeg har derfor hatt stor nytte av å prøve å innføre noen av tiltakene fra Ma
 
 Jeg vil si at det digitale livet mitt omtrent er som det virkelige. Noen steder - stålkontroll. Andre steder, not so much. Jeg kunne snakket om et skrivebord som er så fullt av skjermbilder at jeg i desperasjon før et kundemøte smekker alt sammen inn i en mappe som heter “desember”. Men det som kanskje er hakket verre, er innboksen min.
 
-![E-post](https://ibb.co/899r9zd.no)
+<img src="https://i.ibb.co/hsmB0Fs/8-dager-igjen.png" alt="8-dager-igjen" border="0">
+
 
 Ganske sikker på at mange grøsser av å se dette. Hvordan kan en som har stålkontoll på orden i kjøkkenskapet samtidig ha SÅ mye rot i sitt digitale liv? Godt spørsmål. Andre nikker kanskje gjenkjennende. Det er en stund siden jeg har praktisert inbox zero her. Og det er ikke sånn at jeg ikke sjekker e-postene mine. Jeg tror jeg bare har blitt litt blind. Blind for notifications, og blind for å åpne ting som ikke er relevant. Og når jeg ikke åpner det, så sletter jeg det heller ikke. Jeg tipper at 80 % av e-postene er nyhetsbrev som jeg av en eller annen grunn en gang i tiden har takket ja til. Men ikke meldt meg ut av. 
 
@@ -35,6 +36,7 @@ Her følger mine erfaringer med Hey i løpet av knappe to uker.
 Det første konseptet jeg blir introdusert for er en screener. Hey lar meg ta stilling til én og én avsender. Allerede her kan jeg luke ut om jeg i det hele tatt ønsker meg mail fra en person eller en bedrift. En liten lyspære blinker i hodet mitt - dette hørtes da kjent ut? Akkurat som med Marie Kondo - skal jeg altså ta tak i én og én avsender, og vurdere om jeg skal la den få spille en rolle i inboksen min. Eller iMboks - som det heter hos Hey. For i Heys imbox skal du bare ha viktige - important - e-poster. Jeg innser at dette er en glimrende mulighet til å få meldt meg av en haug med nyhetsbrev! På kort tid har jeg både meldt meg av, og screenet ut 40 avsendere. Magisk! Og utrolig tilfredsstillende å kunne luke ut fra start.
 
 ![alt-tekst](https://ibb.co/BLCyk2L)
+
 
 ### 2. Alt har sin plass: Imbox - The Feed - Paper trail
 De få nyhetsbrevene som er interessante velger jeg at skal gå direkte til “The feed”, i stedet for at de skal lande i imboxen. Hey lar meg nemlig scrolle gjennom disse i et helt annet format! Alt er åpnet, akkurat som på instagram. Får jeg derimot kvitteringer eller ordrebekreftelser, kan jeg velge å sende disse direkte til the paper trail. Jeg kan også få alt i imboxen, og selv flytte videre om jeg ønsker det. 
