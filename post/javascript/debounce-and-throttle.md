@@ -130,7 +130,11 @@ The function that is returned will be called by the event listener, that is when
 
 And here it is in action:
 
-[![Edit quizzical-sun-qdv7p](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-sun-qdv7p?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+<iframe src="https://codesandbox.io/embed/quizzical-sun-qdv7p?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="quizzical-sun-qdv7p"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 As you may notice the throttled boxes are "lagging" a lot more, than the ones not throttled. So in this scenario a throttle isn't really needed, but in cases of for example resizing you will have great use for throttle. A resize event can be especially heavy since the browser needs to rerender everything.
 
