@@ -92,6 +92,7 @@ Static site generation works in much the same way as client-side rendering. The 
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <title>Server-Side React App</title>
   </head>
   <body>
@@ -103,6 +104,7 @@ Static site generation works in much the same way as client-side rendering. The 
       </main>
       <footer>Made by me</footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
