@@ -4,13 +4,22 @@ post_year: 2020
 post_day: 19
 title: Rot, orden og Hey!
 image: https://images.unsplash.com/photo-1521459382675-a3f2f35a6b9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80
-ingress: Hva har Marie Kondo, the Home edit og Hey til felles? Og hvordan kan
-  disse hjelpe en rotete sjel å bli mer organisert? Her får du et innblikk i min
+ingress: >-
+  Hva har Marie Kondo, the Home edit og Hey til felles? Og hvordan kan disse
+  hjelpe en rotete sjel å bli mer organisert? Her får du et innblikk i min
   hverdag ispedd et aldri så lite review av e-posttjenesten Hey.
+
+
+  <p>&nbsp;</p>
+
+
+  ----
 description: organisering
 authors:
   - Anne Berit Kigen Bjering
 ---
+<p>&nbsp;</p>
+
 Jeg digger organisering. Kanskje på et litt nerdete nivå. Jeg var en av de første til å “binge” hele Marie Kondo-serien på Netflix. Da Home Edit dukket opp midt i korona, ble det nye timer foran skjerm. I tillegg til timene med skjerm fra hjemmekontoret altså. Det er rart hvordan noen av oss blir fascinert av sånt. Det går litt i kategori med Eventyrlig oppussing, Luksusfellen og Tid for hjem. Det er ikke akkurat realityserie, men det er en eller annen tilfredsstillelse med at man har et problem eller en utfordring, som blir løst og ting går i orden. En såkalt guilty pleasure.
 
 Jeg er også en person som kan kose meg med å browse og bestille matchende oppbevaringsbokser på Clas ohlson. Sånn at innholdet av alt av korn, frø og mel kommer til sin rett i like, gjennomsiktige bokser. På denne måten er det mye enklere å finne det man skal ha, og jeg ser med en gang når noe må fylles på. 
