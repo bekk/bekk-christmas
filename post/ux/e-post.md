@@ -43,7 +43,7 @@ Det er en stund siden jeg har praktisert [inbox zero](https://medium.com/@nicoes
 
 ## Hey
 
-På [Y-konferansen](https://www.y-oslo.com/) til Netlife fikk jeg høre om Hey - en e-posttjeneste som ble lansert i juni i år. Hey skal røske tak i de virkelige e-postproblemene. Kunne dette løse min manglende oversikt i innboksen? Jeg bestemte meg for å gi det en sjanse. Her følger mine erfaringer med Hey i løpet av knappe to uker. 
+På [Y-konferansen](https://www.y-oslo.com/) til Netlife fikk jeg høre om [Hey](https://hey.com/) - en e-posttjeneste som ble lansert i juni i år. Hey skal røske tak i de virkelige e-postproblemene. Kunne dette løse min manglende oversikt i innboksen? Jeg bestemte meg for å gi det en sjanse. Her følger mine erfaringer med Hey i løpet av knappe to uker. 
 
 ## The Screener
 
