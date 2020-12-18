@@ -55,7 +55,7 @@ Et par dager senere logger jeg inn med ny giv og lyst - klar for å sette meg or
 
 ![Screener med 47 avsendere](https://i.ibb.co/hsmB0Fs/8-dager-igjen.png)
 
-47 nye avsendere på bare to-tre dager. Jeg innser at dette er en glimrende mulighet til å få meldt meg av en haug med nyhetsbrev. På kort tid har jeg både meldt meg av, og screenet alle de 47 avsenderne - noen ønsker jeg å få e-poster fra, andre takker jeg rett og slett nei til. Magisk!
+47 nye avsendere på bare to-tre dager. Jeg innser at dette er en glimrende mulighet til å få meldt meg av en haug med nyhetsbrev. På kort tid har jeg både meldt meg av, og screenet alle de 47 avsenderne; noen ønsker jeg å få e-poster fra, andre takker jeg rett og slett nei til. Magisk!
 
 ## Alt får endelig sin plass: Imbox, The Feed og Paper trail
 
