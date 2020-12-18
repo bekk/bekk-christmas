@@ -19,6 +19,8 @@ ingress: >-
   At the office, the solution you once had so clear in your mind now is lost to the void. If only you had a
 
   tool to quickly verify that code snippet, with less overhead!
+authors:
+  - Sondre Larsen Ovrid
 ---
 This example is arguably a little overdramatised (\*), and you would probably be better off just scribbling
 down some pseudo-code in an arbitrary text file, instead of going through the process of setting up a new project.
