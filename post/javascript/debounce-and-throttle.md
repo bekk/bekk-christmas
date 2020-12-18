@@ -5,11 +5,11 @@ post_day: 19
 title: Debounce and throttle
 ingress: Ever wanted to implement a search as-you-type? What about transforming
   something while the user is scrolling. Just adding an event listener for this
-  works, but it is hard on the browser performance and fetching from the server
-  on every keypress isn't just unnecessary, it may also be hard on your server.
-  This can be solved by two functions, `debounce` and `throttle`. Let's have a
-  look at the difference between the two, and also how we can implement these
-  ourselves.
+  works, but it can really impact the browser performance and fetching from the
+  server on every keypress isn't just unnecessary, it may also be hard on your
+  server. This can be solved by two functions, `debounce` and `throttle`. Let's
+  have a look at the difference between the two and how they can be implemented
+description: ""
 links:
   - title: Lodash implementation of debouce
     url: https://github.com/lodash/lodash/blob/master/debounce.js
@@ -18,7 +18,7 @@ authors:
 ---
 ## What is the difference?
 
-Throttle and debounce are two very similar ways to handle function calls to optimise performance. Throttle is normally used when you have a function that is called continuously while the user is interacting with your page, e.g. while scrolling, and debounce is used to call a function when the user has stopped interacting, e.g. when they have stopped typing in an input field.
+Throttle and debounce are two very similar ways to handle function calls to optimise performance. Throttle is normally used when you have a function that is called continuously while the user is interacting with your page, e.g. while scrolling. Debounce is used to call a function when the user has stopped interacting, e.g. when they have stopped typing in an input field.
 
 ## Search-as-you-type
 
@@ -104,25 +104,25 @@ Here were creating a function `throttle`, and utilise it by a function that shou
 
 ```javascript
 function throttle(func, wait) {
-    let waiting = false;
-    return (...args) => {
-        if (waiting) {
-            return;
-        }
-
-        waiting = true;
-        setTimeout(() => {
-            func.call(...args);
-            waiting = false;
-        }, wait)
+  let waiting = false;
+  return function () {
+    if (waiting) {
+      return;
     }
+
+    waiting = true;
+    setTimeout(() => {
+      func.apply(this, arguments);
+      waiting = false;
+    }, wait);
+  };
 }
 
-const onResize = throttle(() => {
+const onScroll = throttle(() => {
     // do something
 }, 100);
 
-document.addEventListener('resize', onResize)
+document.addEventListener('resize', onScroll)
 ```
 
 Similar to `debounce`, `throttle` is a higher-order function. 
