@@ -38,31 +38,34 @@ Even the long-reigning [Queen Elizabeth](https://www.glamour.com/story/queen-eli
 
 ## Tip NO. 6 - Bring a friend 
 
-Everyone can see you in front of the camera. But. They can't really see what's going on *behind* the camera 😏 You might even feel more at ease if you can have a family member, colleague, friend or loved ones in front of you while you speak. 
+Everyone can see you in front of the camera. But. They can't really see what's going on *behind* the camera 😏 You might feel more at ease if you can have a family member, colleague, friend or loved ones in front of you while you speak. 
 
 ## Tip NO. 7 - Get comfy
 
-You are (often) in your home when giving a digital Corona-presentation. Make use of it! Take on your favourite slippers, enjoy your favourite cup of tea, and have the presentation in a room in your home where you feel at ease. 
+You are (often) in your home when giving a digital Corona-presentation. Make sure to make good use of it! Take on your favourite slippers, enjoy your favourite cup of tea, and have the presentation in a room in your home where you feel at ease and comfortable. 
 
-## Tip NO. 8 - Do a smoke test
+## Tip NO. 8 - Smoke test everything!
 
-Check that everything works at least once. Well in before-hand. Do you have internet access, or do you need a hot spot on the fly when your service provider experience downtime? Is your preferred video stream service up-and-running today, or do you need to find an alternative? Check your screen-setup, video-recording and microphone. Some of us have also recorded ourselves in trial-runs to see what can be improved. Embarrassing, yet recommended! 
+Check that everything works. At least once. Well in before-hand. Do you have internet access? Or do you need a personal hot spot on the fly when your service provider decides to give you some good-ol downtime in the middle of the day? Is your preferred video stream service up-and-running today, or do you need to find an alternative? Check your screen-setup, video-recording and microphone. Some of us have also recorded ourselves in trial-runs to see what can be improved. Personally I find recording myself highly embarrassing, however this is something that's highly recommended! 
 
-## Tip NO. 9 - Audience, stay on video!
+## Tip NO. 9 - Audience, show your face!
 
 This is important. If you ever have held a live digital presentation you know what I mean. You want to see an audience, and reaction! Everything helps. You may for example let them know in the beginning that you would appreciate to see some faces while presenting. If you are now comfortable with asking them, ask a colleague or friend to stay on video while you present. 
 
-## Tip NO. 10 - Get energized!
+## Tip NO. 10 - Energize! ⚡
 
-Sitting down while presenting can actually affect you presentations negatively (if you are not very conscious about this), and many digital presentations tend to become somewhat monotonous. Give the next digital presentation while standing. Unconsciously, this will give your presentation new energy and action! 🚀 Others tips here include; use your hands! Change facial expressions! 
+Sitting down while presenting can actually affect you presentations negatively (if you are not very conscious about this), and many digital presentations tend to become somewhat monotonous. Give the next digital presentation while standing. Unconsciously, this will give your presentation new energy and action! 🚀 
+
+Others tips here also include; use your hands! Change facial expressions! Laugh! Change your tone of voice and pitch!
 
 ## Tip NO. 11 - Be careful with reading the chat
 
 If you really want to read the chat underway and engage the audience in this way, be very careful as this may interrupt your whole speaker-flow (which is perhaps the most precious aspect of your presentation). If you still want to read the chat, set aside a specific time in your presentation to do so. 
 
 ## Tip NO. 12 - If you record, don't edit
+
 Another positive aspect by you broadcasting your presentation digitally is that it's a very short way to making it accessible to many, many others by merely clicking the record-button. However, be aware that if you edit the video too much afterwards, the presentation becomes increasingly hard to follow. 
 
+## Something else?
 
-A big thank you to everyone that helped out summarizing neat tips and tricks on digital presentations 💖 I'm sure that there is a lot more tips out there. Please let me know on Twitter if anything comes to mind --> [@nicolai_a_hagen](https://twitter.com/nicolai_a_hagen). 
-
+A big thank you to everyone that gave these neat tips and tricks on digital presentations 💖 I'm sure that there is a lot more tips still out there. Please let me know on Twitter if anything comes to mind --> [@nicolai_a_hagen](https://twitter.com/nicolai_a_hagen). 
