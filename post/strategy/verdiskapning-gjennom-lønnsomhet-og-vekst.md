@@ -15,19 +15,19 @@ links:
 authors:
   - Jonas Løvås
 ---
-### Hvordan skapes finansiell verdi?
+## Hvordan skapes finansiell verdi?
 
 Et selskap investerer kapital i prosjekter som genererer avkastning på kapitalen gjennom kontantstrømmer. Den finansielle nåverdien av et selskap er verdien av kontantstrømmene (avkastningen) selskapet klarer å oppnå i fremtiden, diskontert for kapitalkostnaden til kapitalen som bindes opp i selskapet. Kapitalkostnaden reflekterer den avkastningen alternative selskaper/prosjekter med tilsvarende risiko vil generere. Dersom selskapet oppnår en avkastning som overstiger kapitalkostnaden skaper den verdi, og dersom avkastningen er lavere enn kapitalkostnaden ødelegger det verdi. Dermed følger det at verdiskapning baserer seg på å øke kontantstrømmene (avkastningen) selskapet klarer å oppnå på sine prosjekter og investeringer. Kontantstrømmene kan hovedsakelig økes gjennom å øke lønnsomheten eller veksten. 
 
-### Kampen mellom lønnsomhet og vekst
+## Kampen mellom lønnsomhet og vekst
 
 ![](/assets/verdiskapning.png)
 
 Verdiskapningen som følger av å øke lønnsomheten eller omsetning avhenger av den spesifikke virksomheten og situasjonen den står overfor i dag. Grafen over viser verdien til et tenkt selskap, og hvordan det påvirkes av forskjeller i lønnsomhet (målt ved totalkapitalavkastning) og vekst. Selskapet har en kapitalkostnad på 9%. Dersom selskapet har en lønnsomhet som er det samme som kapitalkostnaden (9%), skapes det ikke noe verdi ved at selskapet vokser. Dersom selskapet har en lavere lønnsomhet enn kapitalkostnaden, ødelegges det verdi for hver ekstra omsatte krone. Dersom selskapet har veldig høy lønnsomhet, oppnår det relativt begrenset verdiskapning av å øke lønnsomheten ytterligere. Vi ser med andre ord at hva som bør prioriteres av lønnsomhet og vekst avhenger av virksomhetens situasjon. 
 
-### Lønnsomhet og vekst på bekostning av hverandre
+## Lønnsomhet og vekst på bekostning av hverandre
 
-Lønnsomhet og vekst kan ofte gå på bekostning av hverandre. Dersom du har kjempelave marginer og nærmest gir bort et produkt gratis, er det sannsynlig at kundene flommer inn døren og gir deg høy omsetning. Dersom du har høye marginer og snyter kundene dine maksimalt, er det sannsynligvis ganske få kunder som er interessert. Et selskap i situasjon A i figuren over bør fokusere alt de kan på å øke lønnsomheten uten å fokusere på vekst i det hele tatt, snarere tvert i mot. Dersom de ikke klarer å oppnå en lønnsomhet som er over kapitalkostnaden vil de skape verdi ved å legge ned virksomheten. Et selskap i situasjon B i figuren over bør derimot fokusere alt de kan på å oppnå vekst uten å ha like stort fokus på lønnsomhet. For de aller fleste selskaper som befinner seg et sted i midten, vil det alltid være en avveining mellom lønnsomhet og vekst. Beslutningen om å fokusere på vekst, lønnsomhet eller begge deler bør derfor være fundert i grundige nyttevurderinger av verdiskapningen som oppstår av de ulike strategiske grepene. 
+Lønnsomhet og vekst kan ofte gå på bekostning av hverandre. Dersom du har kjempelave marginer og nærmest gir bort et produkt gratis, er det sannsynlig at kundene flommer inn døren og gir deg høy omsetning. Dersom du har høye marginer og snyter kundene dine maksimalt, er det sannsynligvis få kunder som er interessert. Et selskap i situasjon A i figuren over bør fokusere alt de kan på å øke lønnsomheten uten å fokusere på vekst i det hele tatt, snarere tvert i mot. Dersom de ikke klarer å oppnå en lønnsomhet som er over kapitalkostnaden vil de skape verdi ved å legge ned virksomheten. Et selskap i situasjon B i figuren over bør derimot fokusere alt de kan på å oppnå vekst uten å ha like stort fokus på lønnsomhet. For de aller fleste selskaper som befinner seg et sted i midten, vil det alltid være en avveining mellom lønnsomhet og vekst. Beslutningen om å fokusere på vekst, lønnsomhet eller begge deler bør derfor være fundert i grundige nyttevurderinger av verdiskapningen som oppstår av de ulike strategiske grepene. 
 
 ### Vekst som forutsetning for lønnsomhet
 
@@ -37,7 +37,7 @@ Noen ganger er vekst en forutsetning for å oppnå lønnsomhet. Enkelte bransjer
 
 Spesielt innen fremveksten av nye teknologiske start-ups innen sosiale medier og delingsplattformer er nettverkseffekter rådende, og det er avgjørende å oppnå en kritisk masse av brukere. Du hadde aldri brukt Facebook hvis du bare hadde tre venner som brukte det, og du hadde aldri brukt Nabobil hvis de bare hadde en bil tilgjengelig. De sterke nettverkseffektene sørger også for at konkurransesituasjonen blir kraftig svekket når en aktør først har tatt et marked, slik vi ser av den nærmest monopolistiske posisjonen Google, Facebook, Uber og andre har oppnådd. Når man først har en «Facebook» som fungerer, er det vanskelig å få noen til å ta i bruk en ny tilsvarende tjeneste uten betydelig differensiering og innovasjon. Samtidig har disse tech-selskapene ekstremt lave variable kostnader – slik at lønnsomheten er nærmest proporsjonal med antall bruker. Derfor er det i disse bransjene spesielt viktig å fokusere på vekst, både for å øke kvaliteten på produktet og kapre markedet for å oppnå en monopolistisk posisjon på sikt. Da kommer lønnsomheten «av seg selv». 
 
-### Lønnsomhet som forutsetning for vekst
+## Lønnsomhet som forutsetning for vekst
 
 ![](/assets/tradd.jpg)
 
@@ -45,12 +45,12 @@ Dersom et selskap ikke er lønnsomt og taper penger, vil vekst føre til enda fl
 
 Et selskap som AirBnB har oppnådd rekordvekst uten lønnsomhet som følge av at de har kunnet hente store mengder kapital til høye verdsettelser og dermed lav utvanning for eierne, takket være solide fremtidsutsikter til monopol og høy lønnsomhet. Men de aller fleste selskaper har ikke like unike verdiforslag med like gode fremtidsutsikter som AirBnB. Virksomheter innenfor tradisjonelle, kompetitive bransjer som for eksempel flybransjen, olje og gass, oppdrett, retail, finans og så videre vil ha problemer med å hente kapital dersom de taper penger, og bør dermed fokusere på å få lønnsomheten på plass før de fokuserer på stor vekst.  
 
-### Når søken etter finansiell verdiskapning går for langt
+## Når søken etter finansiell verdiskapning går for langt
 
 ![](/assets/forurensing.jpg)
 
 Maksimering av finansiell verdi for aksjonærene har historisk vært det ledende målet for private selskaper. Men private selskaper har en rekke andre interessenter de også bør skape verdi for – kundene, de ansatte, samfunnet, miljøet og så videre. Higen etter å maksimere aksjonærverdi kan bli for kraftig og få uheldige konsekvenser for øvrige interessenter, som man har sett mange eksempler på gjennom tidene. Selskaper som driver feilaktig markedsføring og selger kunder feil produkter, utnytter ansatte og driver sosial dumping, "beacher" skip på strendene i Bangladesh, skaper finansielle katastrofer grunnet overdreven risikotaking og så videre. Utelukkende fokus på maksimering av finansiell verdi, og insentivordninger som utelukkende støtter dette, kan raskt være veien til uetisk og problematisk drift. Hvis man kun blir målt på egenkapitalavkastning og aksjekurser kan det fort oppstå en uheldig kultur preget av snarveier og moralsk tvilsomme beslutninger.  
 
-### Konsernstrategi
+## Konsernstrategi
 
 Finansiell verdiskapning bør være et av hovedmålene som inngår i en konsernstrategi, der lønnsomhet og vekst vør være hovedfokusområder. Om et selskap bør fokusere på lønnsomhet, vekst eller begge deler vil avhenge av det spesifikke selskapet, dets eksisterende lønnsomhet og vekstrate, konkurrentlandskap og bransje. Det er derfor viktig at man har en analytisk og datadrevet tilnærming der man ser helheten og estimerer effektene av ulike strategiske retninger. Private virksomheter har også et stort samfunnsmessig ansvar, og bærekraft og samfunnsansvar bør også være viktige komponenter i konsernstrategien slik at man unngår at jakten på finansiell verdiskapning går for langt.
