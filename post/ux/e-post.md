@@ -69,6 +69,8 @@ I tillegg minsker den [kognitive lasten](https://medium.com/design-signals/cogni
 
 Notifications er default satt til å være av. Jeg kan legge til notater til e-postene mine. Og jeg kan bruke hurtigtaster til ALT.
 
+![Legge ved notat til e-posten](https://i.ibb.co/Gcj9LQy/notat.png)
+
 Kommer det en e-post jeg ønsker å svare på, men det passer litt dårlig akkurat nå, markerer jeg den med “Reply later”. Dukker det opp noe jeg må ta stilling til, men ikke skal svare på, kan jeg legge den til side, i en pen liten bunke - lett tilgjengelig.
 
 Jeg kan til og med kopiere ut små ting fra e-postene som er relevante, såkalte “clips” for enklere å finne det igjen senere. Perfekt til hentekoder på posten eller lignende som man ofte må skumlese for å finne igjen.
