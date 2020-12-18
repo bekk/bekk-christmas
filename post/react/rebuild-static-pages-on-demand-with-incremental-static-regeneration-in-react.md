@@ -187,6 +187,6 @@ const { data: articles } = useSWR(`/api/articles/${articleId}`, fetcher, {
 
 ## Ready to build static pages?
 
-In short, static pages allow you to deliver content faster and will less strain on APIs and servers. With incremental regeneration, it is also possible to make the content dynamic to a certain extent.
+In short, static pages allow you to deliver content faster and with less strain on APIs and servers. With incremental regeneration, it is also possible to make the content dynamic to a certain extent.
 
 Have you found any nice use cases for the technology, or are you otherwise eager to try it out? It's as easy to start as with any other React project, I've fallen in love with the concept and I'm sure you will love it too!
