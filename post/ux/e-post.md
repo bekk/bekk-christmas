@@ -75,7 +75,7 @@ Jeg kan til og med kopiere ut små ting fra e-postene som er relevante, såkalte
 
 Etter 8 dager er det nesten sånn at jeg gleder meg til å åpne Hey. Hvor mange nye avsendere kan jeg luke ut i dag? Snart senker ikke bare natten seg, men også skuldrene mine, og jeg får mer og mer julefred for hver dag som går.
 
-## Til slutt
+## For godt til å være sant?
 
 Det finnes garantert noen negative sider ved Hey. De har ikke integrert en kalender, og man kan ikke bruke sitt eget domene - foreløpig. Av mindre features skulle jeg ønske det fantes en “angre”-knapp når jeg har gjort en handling. Jeg har foreløpig bare testet dette til privat bruk, men nettsiden lover at “Hey for work” skal komme i 2021. Det hadde selvfølgelig vært fint å teste samspillet mellom privat-mail og jobbmail også.
 
