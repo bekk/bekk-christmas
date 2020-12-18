@@ -4,9 +4,10 @@ post_year: 2020
 post_day: 20
 title: Hvordan oppnå verdiskapende vekst og forbedre lønnsomhet?
 image: https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80
-ingress: "**For å oppnå finansiell verdiskapning bør konsernstrategier legge til
-  rette for vekst og/eller lønnsomhetsforbedringer. Hvordan bør vi gå frem for å
-  vokse? Og hvordan bør vi gå frem for å forbedre lønnsomheten? **"
+ingress: I gårsdagens luke skrev vi om at for å oppnå finansiell verdiskapning,
+  bør en konsernstrategi legge til rette for vekst og/eller
+  lønnsomhetsforbedringer. Hvordan bør vi gå frem for å vokse? Og hvordan bør vi
+  gå frem for å forbedre lønnsomheten?
 links:
   - title: "Creating value: An interactive tutorial"
     url: https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/creating-value-an-interactive-tutorial
@@ -15,7 +16,7 @@ links:
 authors:
   - Jonas Løvås
 ---
-### Ikke all vekst skaper den samme verdien
+## Ikke all vekst skaper den samme verdien
 
 Hvordan bør vi vokse? Skal vi ekspandere til et nytt marked, lage et nytt produkt eller kjøpe opp en konkurrent? Selskaper står overfor et bredt spekter av strategiske vekstalternativer, og det kan være vanskelig å ta beslutningen om hvordan man skal vokse. Selskaper bør tilstrebe verdiskapende vekst, altså at veksten isolert sett har tilstrekkelig lønnsomhet til å skape verdi.  
 
@@ -25,7 +26,7 @@ Grafen over viser hvordan ulike typer vekst skaper ulik verdi basert på studier
 
 Disse funnene er kun basert på en bransje i det amerikanske markedet, og det er sannsynlig at det er store forskjeller mellom bransjer og for ulike selskaper. Det enkelte selskap bør derfor gjennomføre grundige analyser og business case på lønnsomheten og verdiskapningen som vil følge av ulike strategiske vekstalternativer. 
 
-### Lønnsomhetsforbedring kan bli kontra-produktivt
+## Lønnsomhetsforbedring kan bli kontra-produktivt
 
 Lønnsomhet avhenger av marginene som oppnås, altså forskjellen på inntekter og kostnader. Vi kan øke inntektene gjennom å endre inntektsmodell, endre prisstrategier, forbedre verdiforslag, forbedre pakketering og forbedre salgs- og distribusjonsmodell. Vi kan redusere kostnadene gjennom kostnadskutting, prosessforbedring, effektivisering og produktivitetsvekst. Lønnsomhetsforbedringer gjennom å øke inntekter og kutte kostnader gir direkte resultater på bunnlinjen og er derfor noe enhver virksomhet indirekte kontinuerlig bedriver, og bør ha en strategisk og analytisk tilnærming rundt.
 
