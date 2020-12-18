@@ -2,7 +2,7 @@
 calendar: ux
 post_year: 2020
 post_day: 19
-title: Rot, Marie Kondo og testing av Hey
+title: Den digitale julevasken
 image: https://images.unsplash.com/photo-1521459382675-a3f2f35a6b9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80
 ingress: >-
   Hva har Marie Kondo og Hey til felles? Og hvordan kan de hjelpe en rotete sjel
@@ -21,7 +21,7 @@ authors:
 ---
 <p>&nbsp;</p>
 
-Jeg digger organisering. Kanskje på et litt nerdete nivå. Jeg var en av de første til å “binge” hele [Marie Kondo-serien](https://www.youtube.com/watch?v=WvyeapVBLWY&feature=emb_logo&ab_channel=Netflix) på Netflix. Da Home Edit dukket opp midt i korona, ble det flere timer med rydde-TV på skjerm. I tillegg til timene med skjerm fra hjemmekontoret altså. Det er rart hvordan noen av oss blir fascinert av sånt. Det går litt i kategori med Eventyrlig oppussing, Luksusfellen og Tid for hjem. En såkalt guilty pleasure. Det er ikke akkurat realityserie, men det er et eller annet veldig tilfredsstillende med å se at folk med konkrete problemer og utfordringer får løst det, og det i løpet av én episode.
+Jeg digger organisering. Kanskje på et litt nerdete nivå. Jeg var nok blant de første til å “binge” hele [Marie Kondo-serien](https://www.youtube.com/watch?v=WvyeapVBLWY&feature=emb_logo&ab_channel=Netflix) på Netflix. Da the Home Edit dukket opp midt under korona, ble det flere timer med "rydde-TV". Det er rart hvordan noen av oss blir fascinert av sånt. Det går litt i kategori med "Eventyrlig oppussing", "Luksusfellen" og "Tid for hjem" - en såkalt guilty pleasure. Det er ikke akkurat realityserie, men det er et eller annet veldig tilfredsstillende med å se at folk rydder opp i livene sine.
 
 Jeg er også en person som kan kose meg med å browse og bestille matchende oppbevaringsbokser på Clas Ohlson. Sånn at innholdet av korn, frø og mel kommer til sin rett, i like gjennomsiktige bokser. På denne måten er det mye enklere å finne det man skal ha, og jeg ser med en gang når noe må fylles på. 
 
