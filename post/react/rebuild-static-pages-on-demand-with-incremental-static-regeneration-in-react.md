@@ -11,9 +11,11 @@ links:
   - title: Data fetching in Next | Next Docs
     url: https://nextjs.org/docs/basic-features/pages
   - title: Example application built for this article
-    url: https://next-examples-one.vercel.app/
+    url: https://next-examples-one.vercel.app/articles/1/static-ssg
   - title: What is a static site generator? | Gatsby Docs
     url: https://www.gatsbyjs.com/docs/glossary/static-site-generator/#what-is-a-static-site-generator
+  - title: Examples repository for this article
+    url: https://github.com/oleast/next-examples
 authors:
   - Ole Anders Stokker
 ---
