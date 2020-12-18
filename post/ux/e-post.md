@@ -57,7 +57,7 @@ Et par dager senere logger jeg inn med ny giv og lyst - klar for å sette meg or
 
 47 nye avsendere på bare to-tre dager. Jeg innser at dette er en glimrende mulighet til å få meldt meg av en haug med nyhetsbrev. På kort tid har jeg både meldt meg av, og screenet alle de 47 avsenderne - noen ønsker jeg å få e-poster fra, andre takker jeg rett og slett nei til. Magisk!
 
-## Alt får endelig sin plass: Imbox - The Feed - Paper trail
+## Alt får endelig sin plass: Imbox, The Feed og Paper trail
 
 De få nyhetsbrevene som er interessante velger jeg at skal gå direkte til “The feed”, i stedet for at de skal lande i inboxen. Eller iMboks - som det heter hos Hey. For i Heys imbox skal jeg bare ha viktige - important - e-poster. I feeden derimot, lar Hey meg scrolle gjennom nyhetsbrev i et helt annet format! Alt er åpnet, akkurat som på instagram. Får jeg derimot kvitteringer eller ordrebekreftelser, kan jeg velge å sende disse direkte til the Paper trail. Jeg kan også velge at alt først skal gå til Imboxen, og selv sortere det videre om jeg ønsker det. Imboxen gir også en naturlig imbox zero-state når jeg har åpnet og sortert dagens mail.
 
