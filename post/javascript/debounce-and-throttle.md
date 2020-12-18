@@ -22,7 +22,7 @@ authors:
 
 Throttle and debounce are two very similar ways to handle function calls to optimise performance. Throttle is normally used when you have a function that is called continuously while the user is interacting with your page, e.g. while scrolling. Debounce is used to call a function when the user has stopped interacting, e.g. when they have stopped typing in an input field.
 
-Let's say a function is fired many times. By using throttle, the function will be called at a set interval, every `n` milliseconds. By using debounce, the function will be called once the function is stopped firing.
+Let's say a function is fired many times. By using throttle, the function will be called at a set interval, every `n` milliseconds. By using debounce, the function will be called `n` milliseconds after the _last_ fired function.
 
 ## Search-as-you-type
 
