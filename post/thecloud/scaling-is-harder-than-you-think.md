@@ -5,10 +5,10 @@ post_day: 20
 title: Scaling is harder than you think
 image: https://images.unsplash.com/photo-1465447142348-e9952c393450
 ingress: >-
-  *“Why aren’t they running in the cloud?”* - everytime a service goes down
-  under heavy traffic this is a common response. Some developers seem to think
-  that as long as you are running in the cloud, you are home free. Everything in
-  the cloud can scale to infinity.
+  *“Why don't they run the application on the cloud?”* - every time a service
+  goes down under heavy traffic this is a common response. Some developers seem
+  to think that as long as you are running in the cloud, you are home free.
+  Everything in the cloud can scale to infinity.
 
 
   This is of course not the case.
