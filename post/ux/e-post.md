@@ -35,7 +35,7 @@ En viktig brikke i [Marie Kondos filosofi](https://konmari.com/how-to-eliminate-
 
 Jeg vil si at det digitale livet mitt omtrent er som det virkelige. Noen steder har jeg stålkontroll. Andre steder, not so much. Jeg kunne snakket om et skrivebord som er så fullt av skjermbilder at jeg i desperasjon før et kundemøte smekker alt sammen inn i en mappe som heter “desember”. Det som kanskje er hakket verre, er innboksen min.
 
-![Innboks med 5479 uleste e-poster](https://i.ibb.co/Svr44LM/gmail.png) 
+![Innboks med 5479 uleste e-poster](https://i.ibb.co/jWTLLC9/innboksen.png) 
 
 Ganske sikker på at mange grøsser av å se dette. Andre nikker kanskje gjenkjennende. 5479 uleste e-poster. Hvordan kan en som har komplett orden i kjøkkenhylla samtidig ha SÅ mye rot i sitt digitale liv? Godt spørsmål. Jeg tipper at 80 % av e-postene er nyhetsbrev som jeg av en eller annen grunn en gang i tiden har takket ja til. Men altså ikke meldt meg ut av. 
 
@@ -73,7 +73,7 @@ Jeg kan til og med kopiere ut små ting fra e-postene som er relevante, såkalte
 
 Etter 8 dager er det nesten sånn at jeg gleder meg til å åpne Hey. Hvor mange nye avsendere kan jeg luke ut i dag? Snart senker ikke bare natten seg, men også skuldrene mine, og jeg får mer og mer julefred for hver dag som går.
 
-## Bottom line
+## Til slutt
 
 Det finnes garantert noen negative sider ved Hey. De har ikke integrert en kalender, og man kan ikke bruke sitt eget domene - foreløpig. Av mindre features skulle jeg ønske det fantes en “angre”-knapp når jeg har gjort en handling. Jeg har foreløpig bare testet dette til privat bruk. “Hey for work” skal komme i 2021, men det hadde selvfølgelig vært fint å få testet samspillet mellom privat-mail og jobbmail også.
 
