@@ -23,7 +23,7 @@ authors:
 
 Jeg digger organisering. Kanskje på et litt nerdete nivå. Jeg var nok blant de første til å “binge” hele [Marie Kondo-serien](https://www.youtube.com/watch?v=WvyeapVBLWY&feature=emb_logo&ab_channel=Netflix) på Netflix. Da [the Home Edit](https://www.thehomeedit.com/) dukket opp midt under korona, ble det flere timer med "rydde-TV". Det er rart hvordan noen av oss blir fascinert av sånt. Det går litt i kategori med "Sinnasnekker'n Sverige", "Luksusfellen" og "Tid for hjem" - en såkalt guilty pleasure. Det er ikke akkurat realityserie, men det er et eller annet veldig tilfredsstillende med å se at folk rydder opp i livene sine.
 
-Jeg er også en person som kan kose meg med å lete etter, vurdere, og til slutt bestille matchende oppbevaringsbokser fra Clas Ohlson. Sånn at innholdet av korn, frø og mel kommer til sin rett, i like gjennomsiktige bokser. På denne måten er det mye enklere å finne det jeg skal ha, og jeg ser med en gang når noe må fylles på. 
+Jeg er også en person som kan kose meg med å browse og bestille matchende oppbevaringsbokser fra Clas Ohlson. Sånn at innholdet av korn, frø og mel kommer til sin rett, i like gjennomsiktige bokser. På denne måten er det mye enklere å finne det jeg skal ha, og jeg ser med en gang når noe må fylles på. 
 
 ![kjøkkenhylle med gjennomsiktige bokser](https://i.ibb.co/Brn5c8V/IMG-5836.jpg)
 
