@@ -13,7 +13,7 @@ Link: https://youtu.be/GqmsQeSzMdw
 
 Length: 51 minutes 
 
-> There are lots of discussion on the impact of abstractions. These choices we make have impact on the expressiveness and the potential of our programs. In this video Runar Bjarnesson, now one of the co-creators of Unison language (https://www.unisonweb.org/), dives into these contradictions we face with abstractions.
+> There are lots of discussion on the impact of abstractions. These choices we make have impact on the expressiveness and the potential of our programs. In this video Runar Bjarnason, now one of the co-creators of Unison language (https://www.unisonweb.org/), dives into these contradictions we face with abstractions.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GqmsQeSzMdw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
