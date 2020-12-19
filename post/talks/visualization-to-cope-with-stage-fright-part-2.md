@@ -10,7 +10,7 @@ ingress: In this [previous](talks.christmas/2020/20) post I wrote about how I
 ---
 ## The Charlie Chaplin movie
 
-I am always most nervous in the beginning of a talk. This technique is all about disrupting that pattern, to create some new emotions to relate to during the start.
+I am always most nervous in the beginning of a talk. This technique is all about disrupting that pattern and create some new emotions to relate to during the start.
 
 Close your eyes and try this one out:
 
