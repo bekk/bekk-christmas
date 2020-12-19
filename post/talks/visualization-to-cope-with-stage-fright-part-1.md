@@ -38,7 +38,7 @@ Now zoom out one step, and watch yourself in a movie instead.
 1. Picture yourself sitting in the front row at the cinema and watching a movie. 
 2. In this movie, you see yourself sitting in a cinema. You stand up and walk up in front of the audience.
 3. This person in the movie (you) takes a good look at the audience and then starts the presentation.
-4. Watch yourself finish the presentation in the movie and return to your seat. The movie ends.
+4. Watch yourself finish the presentation and return to your seat in the movie. The movie ends.
 5. Repeat this process a couple of times.
 
 ### Zoom out even more
@@ -55,6 +55,6 @@ Now zoom out even further, and watch yourself watching yourself! 🤯
 
 Switching the view from watching yourself through your own eyes, and then from the outside, and then from even further away, made me somehow smaller and less exposed than I expected.
 
-Repetition is also a key here. Doing this several times helped me practice the process to walk up, start the presentation, finish it and return to my seat. The more times I have been throught the process, the less scary it got.
+Repetition is also a key here. Doing this several times helped me practice the process to walk up, start the presentation, finish it and return to my seat. The more times I have been through the process, the less scary it got.
 
 I hope some of this can help others cope with stage fright or other related feelings when being in the spotlight! :)
