@@ -24,12 +24,12 @@ Close your eyes and try this one out.
 3. Watch yourself finish the presentation in the movie, soak in the applause and hold on to that feeling of relief.
 4. In that moment, freeze the picture of you on stage. 
 
-### Edit and tamper with the movie
+### Tamper with the movie
 
 5. Remove the colours and make that picture *black and white*.
-6. Remove the sound :mute:.
+6. Remove the sound :mute:
 7. Then rewind :rewind: the movie quickly back to the start of the presentation, when you felt really nervous.
-8. Play the movie quickly forward :fast_forward: again from the start to the end. Then play it backwards again, really fast. Do this back and forth a couple of times.
+8. Fast forward :fast_forward: from the start to the end. Then play it backwards again, really fast. Do this back and forth a couple of times.
 9. Add some funny music to this black and white movie. Something comedic, carnival-like. Keep playing it quickly forward and backward several times. I always envision something like a [Charlie Chaplin movie](https://www.youtube.com/watch?v=Z7-QdoofMq8).
 
 Notice how the picture of anxiety and the picture of relief now are so close to each other, like two scenes in a movie appearing sequentially.
