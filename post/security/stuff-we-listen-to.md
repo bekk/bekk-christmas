@@ -21,7 +21,7 @@ authors:
   [](https://twit.tv/shows/security-now)Hosted by Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, and Leo Laporte. They discuss, in understandable terms, the hottest topics and latest news in security today. 
 * [Reply All](https://gimletmedia.com/shows/reply-all)
 
-  Not really a security podcast, but rather about the "life on the internet" in general. It occasionally has some hacker stories. Hosted by PJ Vogt, Alex Goldman, and Emmanuel Dzotsi.
+  Not really a pure security podcast, but rather about the "life on the internet" in general. It occasionally has some hacker stories. Hosted by PJ Vogt, Alex Goldman, and Emmanuel Dzotsi.
 * [Hunting Warhead](https://www.cbc.ca/listen/cbc-podcasts/387-hunting-warhead)
 
   Hunting Warhead follows journalists and police on a global mission to expose the darkest corners of the internet. Host Daemon Fairless tracks down the investigators, survivors and criminals themselves.
