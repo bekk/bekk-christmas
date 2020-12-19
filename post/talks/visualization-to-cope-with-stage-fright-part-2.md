@@ -7,6 +7,8 @@ image: https://images.unsplash.com/photo-1599941054283-2ea17eb48f05?ixid=MXwxMjA
 ingress: In this [previous](talks.christmas/2020/20) post I wrote about how I
   came across a few visualization techniques to manage my own fear. Today I am
   going to share the next one. I call it **The Charlie Chaplin movie**.
+authors:
+  - Hong Nhung Thi Vo
 ---
 ## The Charlie Chaplin movie 🎞️
 
