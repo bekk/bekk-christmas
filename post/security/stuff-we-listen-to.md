@@ -15,13 +15,13 @@ authors:
   True stories from the dark side of the Internet. Hosted by security veteran Jack Rhysider. A podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.
 * [Hackable](https://hackablepodcast.com)
 
-  This podcast covers topics that should be relevant for anyone even outside the security industry. From Wi-Fi to webcams and cars to computers, the episodes expose the places hackers may hit, and explain how they get our information. The hosts, Geoff Siskind and Bruce Snell, explore where we’re susceptible in our daily routines, without even realizing it. The podcast is presented by McAfee.
+  This podcast covers topics that should be relevant for anyone even outside the security industry. From Wi-Fi to webcams and cars to computers, the episodes expose the places hackers may hit, and explain how they get our information. The hosts, Geoff Siskind and Bruce Snell, explore where we’re susceptible in our daily routines, without even realizing it.
 * [Security Now](https://twit.tv/shows/security-now)
 
   [](https://twit.tv/shows/security-now)Hosted by Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, and Leo Laporte. They discuss, in understandable terms, the hottest topics and latest news in security today. 
-* Hunting Warhead
+* [Reply All](https://gimletmedia.com/shows/reply-all)
 
-  <https://open.spotify.com/show/49oRKtzgTPoOg3s9Y7Yuyh?si=AuuxSQU_RYKSVzNEMUUkbA>
-* Reply All
+  Not really a security podcast, but rather about the "life on the internet" in general. It occasionally has some hacker stories. Hosted by PJ Vogt, Alex Goldman, and Emmanuel Dzotsi.
+* [Hunting Warhead](https://www.cbc.ca/listen/cbc-podcasts/387-hunting-warhead)
 
-  <https://gimletmedia.com/shows/reply-all>
+  Hunting Warhead follows journalists and police on a global mission to expose the darkest corners of the internet. Host Daemon Fairless tracks down the investigators, survivors and criminals themselves.
