@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 21
 title: Visualization to cope with stage fright (part 2)
 image: https://images.unsplash.com/photo-1599941054283-2ea17eb48f05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
-ingress: In this [previous](https://www.talks.christmas/2020/20) post I wrote
+ingress: In this [previous post](https://www.talks.christmas/2020/20) I wrote
   about how I came across a few visualization techniques to manage my own fear.
   Today I am going to share the next one. I call it **The Charlie Chaplin
   movie**.
