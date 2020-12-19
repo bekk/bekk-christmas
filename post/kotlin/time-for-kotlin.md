@@ -62,4 +62,4 @@ Under the hood `measureTime` and `measureTimedValue` uses the corresponding func
     println(inThreeSeconds.hasPassedNow())
 ```
 
-`kotlin.time` is nice, little library which simplifies measuring and manipulating elapsed time compactly and robustly. It is still experimental, and its features can change, and has in the past.
+`kotlin.time` is nice, little library which simplifies measuring and manipulating elapsed time compactly and robustly. It is still experimental, and its features can change (and has in the past). But if you are about to sprinkle your Kotlin code with large amounts of `java.time.Duration`, consider using this little native gem instead.
