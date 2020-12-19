@@ -2,7 +2,7 @@
 calendar: thecloud
 post_year: 2020
 post_day: 19
-title: Rethinking data sharing in the IoT era
+title: Rethinking data sharing in the next decade
 ingress: Data is today
   [recognized](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)
   as the single most important resource to contribute to economic growth in the
@@ -41,8 +41,6 @@ Let's also assume that your system is generating a couple of gigabytes of data e
 \
 Let's further assume your data set is popular and you have a couple of hundred potential consumers of said data set.
 
-
-
 \
 What do you need to make your data available through an API?
 
@@ -59,7 +57,26 @@ What kind of problems arise for those that want to make use of your data? Perhap
 The questions arise
 
 1. Is an API really the best way to share such a data source? 
-2. Are APIs really well suited if the data in question is binary data such as audio, images, video or files
+2. Are APIs really well suited if the data in question is binary data such as audio, images, video or files?
 3. Or if your data is real-time data, do you really want consumers to hammer your API endpoint to get up-to-date data? 
 
-What do you think would happen if you have 10 systems that share datasets to othe? Or 50? The points above become a problem of multiplication, and you realize that sharing data through APIs is resource-intensive with both special expertise necessary and system capabilities on both ends of the API.
+Furthermore, what do you think would happen if you have 10 systems that share datasets to othe? Or 50? The points above become a problem of multiplication, and you realize that sharing data through APIs is resource-intensive with both special expertise necessary and system capabilities on both ends of the API.\
+\
+In the example above, we have only described a single data producer. Imagine how many connections in the graph you would get if there were thousands of data producers and thousands of data consumers all intertwined in a web sharing data back and forth via APIs. The problem is factorial.
+
+### Possibilities
+
+Luckily, some have already faced issues with the described model with regards to data sharing, and possible solutions are emerging. \
+\
+One of the examples of such a solution is to make your dataset available through a Cloud provider data marketplace. AWS and Google have both such marketplaces
+
+1. https://aws.amazon.com/data-exchange/
+2. https://console.cloud.google.com/marketplace/browse?filter=solution-type:dataset 
+
+An example of a dataset made available through this mechanism is the [OpenStreetMap dataset](https://console.cloud.google.com/marketplace/product/openstreetmap/geo-openstreetmap?filter=solution-type:dataset&id=88e087d0-5f92-4407-8dcc-5577bd06d776&project=project-5553349987741481369&folder=&organizationId=). There are hundreds of other datasets available in these marketplaces. The advantage of this mechanism is that the Cloud provider takes care of the infrastructure, and it is equally easy, or in some regards easier for consumers to make use of the data.\
+\
+Another possibility is to provide data through a messaging interface / streaming platform, decoupling the producer from consumers and providing a model for serving real-time data to third parties that is better than APIs, which are in nature based on a request-response model. There are many open source alternatives to these types of systems, such as [Kafka](https://kafka.apache.org/), and a lot of Cloud providers also provide general purpose managed services based on a messaging / data push interface. A well known example of a purpose-built system based on a data push-model are the notifications you recieve on your phone from all the applications you use. \
+\
+A third possibilty if you have huge amounts of binary data, such as video, is to make such data available in the buckets on Clouds, such as S3, GCS or Azure Storage.\
+\
+No matter what type of data you have or will have in the future, in order to make good choices for how to share data, you must familiarize yourself with the possibilities and the shortcomings of the alternatives I have mentioned as well. Perhaps even better alternatives for data sharing will emerge. Or perhaps we will be stuck with APIs forever. Time will tell.
