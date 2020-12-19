@@ -12,7 +12,7 @@ ingress: >-
   comfortable when left unexposed.
 
 
-  12 years ago I started working at Bekk. Here I came across a coach that shared a few visualization techniques with me to help me cope with my anxiety when being on stage, in the spotlight.
+  12 years ago I started working at Bekk. Here I came across a coach that shared a few visualization techniques with me to help me cope with my anxiety when being on stage, being in the spotlight.
 
 
   I have used these techniques several times, and especially when preparing for important presentations, for example competency days for the whole company or big conferences like JavaZone. Today I want to share the first technique with you! I call it **The cinema** 🎥
