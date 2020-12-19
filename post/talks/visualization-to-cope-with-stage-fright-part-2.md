@@ -6,9 +6,9 @@ title: Visualization to cope with stage fright (part 2)
 image: https://images.unsplash.com/photo-1599941054283-2ea17eb48f05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
 ingress: In this [previous](talks.christmas/2020/20) post I wrote about how I
   came across a few visualization techniques to manage my own fear. Today I am
-  going to share the next one. I call it **The Charlie Chaplin movie** 🎞️
+  going to share the next one. I call it **The Charlie Chaplin movie**
 ---
-## The Charlie Chaplin movie
+## The Charlie Chaplin movie 🎞️
 
 I am always most nervous in the beginning of a talk. This technique is all about disrupting that pattern and create some new emotions to relate to during the start.
 
@@ -27,7 +27,7 @@ Close your eyes and try this one out:
 
 ## The effect
 
-Experiencing the two opposite feelings side by side had a nice effect on me. Two opposite emotions, but somehow also so close. You can feel uncomfortable in one moment, but this can all change in the next one. Acknowledging this is also comforting.
+Experiencing the two opposite feelings side by side felt comforting and in a way safe for me. Two opposite emotions, but somehow also so close. You can feel uncomfortable in one moment, but this can all change in the next one.
 
 The black and white movie with the fast pace and the quirky music really made me smile. Picturing myself in a Charlie Chaplin movie, walking awkwardly up and down numerous times to give a presentation — how hilarious! This made me not take this all too seriously.
 
