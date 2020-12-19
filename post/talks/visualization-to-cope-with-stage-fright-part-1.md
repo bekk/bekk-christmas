@@ -57,4 +57,4 @@ Switching the view from watching yourself through your own eyes, and then from t
 
 Repetition is also a key here. Doing this several times helped me practice the process to walk up, start the presentation, finish it and return to my seat. The more times I have been through the process, the less scary it got.
 
-I hope some of this can help others cope with stage fright or other related feelings when being in the spotlight! :)
+I hope some of this can help others cope with stage fright or other related feelings when being in the spotlight!
