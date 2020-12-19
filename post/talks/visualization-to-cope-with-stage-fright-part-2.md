@@ -40,4 +40,4 @@ Experiencing the two opposite feelings side by side felt comforting and in a way
 
 The black and white movie with the fast pace and the quirky music really made me smile. Picturing myself in a Charlie Chaplin movie, walking awkwardly up and down numerous times to give a presentation — how hilarious! This made me not take this all too seriously.
 
-All this helps me disrupt the anxiety I feel in the beginning. I am still nervous, but I also remember that I have seen this movie before, and I know the ending very well. It is a happy one! :)
+All this helps me disrupt the anxiety I feel in the beginning. I am still nervous, but I also remember that I have seen this movie before, and I know the ending very well. It is a happy one!
