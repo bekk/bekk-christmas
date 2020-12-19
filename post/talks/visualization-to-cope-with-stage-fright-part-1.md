@@ -21,9 +21,9 @@ authors:
 ---
 ## The cinema 🎥
 
-### Through your own eyes
-
 Close your eyes and try this one out.
+
+### Through your own eyes
 
 1. Picture yourself sitting in the front row at the cinema.
 2. Now imagine you stand up and walk up on stage in front of the audience. 
