@@ -15,13 +15,13 @@ I am always most nervous in the beginning of a talk. This technique is all about
 Close your eyes and try this one out:
 
 1. Watch a movie where you are the main character.
-2. In this movie picture yourself standing up, walk up on stage and start your presentation. Feel the nervousness in the beginning.
+2. In this movie picture yourself standing up, walk up on stage and start your presentation. Feel the anxiety in the beginning.
 3. Watch yourself finish the presentation in the movie, soak in the applause and hold on to that feeling of relief.
 4. In that moment, freeze the picture of you on stage. 
 5. Remove the colours and make that picture black and white.
-6. Remove the sound.
+6. Remove the sound :mute:.
 7. Then rewind :rewind: the movie quickly back to the start of the presentation, when you felt really nervous.
-8. Play the movie quickly forward again from the start to the end. Then play it backwards again, really fast. Do this back and forth a couple of times.
+8. Play the movie quickly forward :fast_forward: again from the start to the end. Then play it backwards again, really fast. Do this back and forth a couple of times.
 9. Add some funny music to this black and white movie. Something comedic, carnival-like. Keep playing it quickly forward and backward several times. I always envision something like a [Charlie Chaplin movie](https://www.youtube.com/watch?v=Z7-QdoofMq8).
 10. Notice how the picture of anxiety and the picture of relief now are so close to each other, like two scenes in a movie appearing sequentially.
 
