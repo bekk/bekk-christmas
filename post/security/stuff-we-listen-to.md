@@ -18,7 +18,7 @@ authors:
   This podcast covers topics that should be relevant for anyone even outside the security industry. From Wi-Fi to webcams and cars to computers, the episodes expose the places hackers may hit, and explain how they get our information. The hosts, Geoff Siskind and Bruce Snell, explore where we’re susceptible in our daily routines, without even realizing it. The podcast is presented by McAfee.
 * [Security Now](https://twit.tv/shows/security-now)
 
-  <https://twit.tv/shows/security-now>
+  [](https://twit.tv/shows/security-now)Hosted by Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, and Leo Laporte. They discuss, in understandable terms, the hottest topics and latest news in security today. 
 * Hunting Warhead
 
   <https://open.spotify.com/show/49oRKtzgTPoOg3s9Y7Yuyh?si=AuuxSQU_RYKSVzNEMUUkbA>
