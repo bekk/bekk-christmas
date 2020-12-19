@@ -13,10 +13,10 @@ authors:
 * [Darknet Diaries](https://darknetdiaries.com)
 
   True stories from the dark side of the Internet. Hosted by security veteran Jack Rhysider. A podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.
-* Hackable
+* [Hackable](https://hackablepodcast.com)
 
-  <https://hackablepodcast.com/>
-* Security Now
+  This podcast covers topics that should be relevant for anyone even outside the security industry. From Wi-Fi to webcams and cars to computers, the episodes expose the places hackers may hit, and explain how they get our information. The hosts, Geoff Siskind and Bruce Snell, explore where we’re susceptible in our daily routines, without even realizing it. The podcast is presented by McAfee.
+* [Security Now](https://twit.tv/shows/security-now)
 
   <https://twit.tv/shows/security-now>
 * Hunting Warhead
