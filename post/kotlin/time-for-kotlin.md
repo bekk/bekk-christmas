@@ -15,7 +15,7 @@ val doubleElapsedTime = elapsedTime * 2
 println(doubleElapsedTime.toString(DurationUnit.MICROSECONDS))
 ```
 
-which will return `177687us.`  Another nice feature is the ability to decompose a *Duration* into convenient parts using `toComponents`
+which will print `177687us.`  Another nice feature is the ability to decompose a *Duration* into convenient parts using `toComponents`
 
 ```
     val elapsedTime = 3.days + 68.hours + 112.minutes
@@ -26,3 +26,40 @@ which will return `177687us.`  Another nice feature is the ability to decompose 
     }
 
 ```
+
+However, the library is perhaps most useful if you want to measure the duration of some block of code when executed. `measureTime` to the rescue
+
+```
+val elapsed: Duration = measureTime {
+    Thread.sleep(100)
+    println("Measuring time via measureTime")
+}
+println(elapsed)
+
+```
+
+Or, if you need to return a result from your measured block of code, `measureTimedValue` is an alternative
+
+```
+val (elapsedTime, returnValue) = measureTimedValue {
+    Thread.sleep(100)
+    println("Measuring time via measureTime")
+    "The returned value"
+}
+println(elapsedTime)
+```
+
+Under the hood `measureTime` and `measureTimedValue` uses the corresponding functions on the underlying `TimeSource`. By default `Monotonic` is used, which is a `TimeSource` Implementation on top of `System.nanoTime()`, which is the monotonic (strictly increasing) clock in Java, and therefore the most robust way of measuring elapsed time. There is also a `TestTimeSource` implementation that can be used if you need to control the elapsed time for testing purposes. 
+
+`TimeSource` has a single function, `markNow()`, which returns a `TimeMark`. The `TimeMark` provides methods for checking how much time (as `Duration`) has passed since the mark, creating offsets from the mark, and checking if a marks has occurred or not.
+
+```
+    val mark = Monotonic.markNow()
+    val inThreeSeconds = mark + 3.seconds
+
+    Thread.sleep(3000)
+
+    println(inThreeSeconds.hasPassedNow())
+```
+
+`kotlin.time` is nice, little library which simplifies measuring and manipulating elapsed time compactly and robustly. It is still experimental, and its features can change, and has in the past.
