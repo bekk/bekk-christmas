@@ -29,7 +29,7 @@ val uppercaseFn: Uppercase = {
 println(uppercaseFn("Hello")) // HELLO
 ```
 
-Typealiases are just syntactic sugar that will be rewritten to the underlying type at compilation, this means that the typealias `Uppercase` will be replaced with `(String) ->String` when we compile. The issue with typealiases is that it doesn’t ensure that we actually pass a function that with a typealias, we can pass any function that matches the signature of the typealias. Typealiases still work wonders to make complex types easier to read, but we get no guarantee that the function we pass actually uses the type alias. 
+Typealiases are just syntactic sugar that will be rewritten to the underlying type at compilation, this means that the typealias `Uppercase` will be replaced with `(String) ->String` when we compile. The issue with using typealiases is that it doesn’t ensure we pass a function with the corresponding typealias, we can pass any function that matches the signature of the typealias. Typealiases still work wonders to make complex types easier to read, but we get no guarantee that the function we pass actually uses the type alias. 
 
 ```kotlin
 fun myFunction: (String) -> String = { it.upperCase() }
@@ -60,7 +60,7 @@ fun doStuff(fn: Suffix) = fn.exclaim("Hello")
 doStuff(suffixFn)
 ```
 
-One thing we can see from the example is that we need to invoke the function we defined in our interface, e.g `suffixFn.exlciam`. A neat trick to get around this is to use the [invoke operator](https://kotlinlang.org/docs/reference/operator-overloading.html#invoke). 
+One thing we can see from the example is that we need to invoke the function we defined in our interface, e.g `suffixFn.excliam`. A neat trick to get around this is to use the [invoke operator](https://kotlinlang.org/docs/reference/operator-overloading.html#invoke). 
 
 ```kotlin
 fun interface Prefix {
