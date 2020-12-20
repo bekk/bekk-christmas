@@ -3,6 +3,10 @@ calendar: functional
 post_year: 2020
 post_day: 21
 title: Using F# in Xamarin Apps
+description: "F# is not a natural drop-in replace for C# when writing mobile
+  apps, but rather an excellent option for modeling our domain. Giving
+  expressive power, ease of testing and clean code where it matters the most:
+  the business rules and their data."
 ---
 My first post in this year's calendar on [some improved functional aspects of C#](https://functional.christmas/2020/5) was immediately met with some [well deserved snark](https://www.reddit.com/r/csharp/comments/k749sf/functional_c/geotkbc):
 
@@ -10,7 +14,7 @@ My first post in this year's calendar on [some improved functional aspects of C#
 
 Well, no, but I still love C# more 😘
 
-However, [F#](https://functional.christmas/2020/17) is a fun and well designed language with a loyal following, OK tooling support from Microsoft and has one great advantage over other primarily functional languages: *the entire .Net ecosystem is available to us*! And this naturally includes Xamarin and the power to easily write modern mobile apps using your favorite language.
+However, [F#](https://functional.christmas/2020/17) is a fun and well-designed language with a loyal following, OK tooling support from Microsoft and has one great advantage over other primarily functional languages: *the entire .Net ecosystem is available to us*! And this naturally includes Xamarin and the power to easily write modern mobile apps using your favorite language.
 
 ![Four important concepts](https://hjerpbakk.com/img/christmas/four-concepts.png)
 
@@ -23,7 +27,7 @@ As a language F# has a couple of striking benefits over C#:
 
 <h2>Mobile development with F#</h2>
 
-Getting started is as easy as downloading Visual Studio and choosing F# as your language of choice in the `New Project` wizard.
+Getting started is as easy as downloading Visual Studio and choosing F# as our language of choice in the `New Project` wizard.
 
 ![File -> New F# Project](https://hjerpbakk.com/img/christmas/new-fsharp-project.png)
 
@@ -56,11 +60,11 @@ A discourageable start, but there is hope.
 
 ## All in with MVU
 
-A year ago I wrote about using the [Fabulous framework and MVU pattern](https://functional.christmas/2019/11) on this very blog, thus making mobile go fully functional.
+A year ago, I wrote about using the [Fabulous framework and MVU pattern](https://functional.christmas/2019/11) on this very blog, thus making mobile go fully functional.
 
-As fabulous as Fabulous can be, this road requires commitment. From us, our team and preferably out organization too! The thinking behind MVU is markedly different from MVVM or MVC, and needs to be understood for the pattern to be more effective and less error prone than its older friends.
+As fabulous as Fabulous can be, this road requires commitment. From us, our team and preferably out organization too! The thinking behind MVU is markedly different from MVVM or MVC and needs to be understood for the pattern to be more effective and less error prone than its older friends.
 
-MVU is best utilized in a green field setting or within logically self contained parts of the app.
+MVU is best utilized in a green field setting or within logically self-contained parts of the app.
 
 ## The .Net advantage
 
@@ -72,6 +76,6 @@ In addition, this approach is easier on our peers, since modeling in F# can be d
 
 ## Conclusion
 
-To summarize, both iOS' and Android's UI frameworks are naturally object oriented, same for Xamarin Forms. Thus, F# is not a natural drop-in replace for C# when writing mobile apps, but rather an excellent option for modeling our domain. Giving expressive power, easy of testing and clean code where it matters the most: the business rules and their data.
+To summarize, both iOS' and Android's UI frameworks are naturally object oriented, same for Xamarin Forms. Thus, F# is not a natural drop-in replace for C# when writing mobile apps, but rather an excellent option for modeling our domain. Giving expressive power, ease of testing and clean code where it matters the most: the business rules and their data.
 
-Unless off course you go Full Elmish.
+Unless off course we go [Full Elmish](https://www.elm.christmas/2020).
