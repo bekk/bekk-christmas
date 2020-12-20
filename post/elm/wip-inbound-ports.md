@@ -8,9 +8,9 @@ ingress: What if your elm program needs to communicate with the JavaScript
   lifecycle and need to act on such events? To receive messages from JavaScript
   we can make use of inbound ports🌈
 ---
-If we are in need of communication with the JavaScript outside of our elm code inbound ports in elm are designed to do just that. 
+If we are in need of communication with the JavaScript, outside of our elm code inbound ports are designed to do just that. 
 
-There are various ways to define the entry to our elm app. We can do this both through an \`index.js\` file, and an \`index.html\`. We'll use the \`index.html\` for this example.  \`index.html\` can be seen below
+There are various ways to define the entry to our elm app. We can do this both through an \`index.js\` file, and an \`index.html\`. We'll use the \`index.html\` for this example. Our \`index.html\` file can be seen below
 
 ```html
 <!DOCTYPE HTML>
