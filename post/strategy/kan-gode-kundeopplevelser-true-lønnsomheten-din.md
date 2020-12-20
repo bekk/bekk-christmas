@@ -98,4 +98,4 @@ Project Impact viser faren ved å fokusere på å forbedre kundeopplevelsen, ute
 
 *“They loved the experience. They just bought less. And that generally is not a good long-term strategy.”*
 
-Fortsatt nysgjerrig? Du kan lese mer om dette i denne [HBR-artikkelen](https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet) eller i [selve boka](https://www.walletrule.com/).
+Fortsatt nysgjerrig? Du kan lese mer om dette i denne [HBR-artikkelen](https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet) eller i [boka](https://www.walletrule.com/) som denne artikkelen er basert på.
