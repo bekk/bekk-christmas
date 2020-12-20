@@ -75,4 +75,20 @@ Forbruksindeksen handler om hvor stort forbruk kundene har av produkt ditt samme
 
 Share of wallet betegner den andelen av en kundens forbruk i en gitt produktkategori som tilfaller deg. Altså hvor stor andel av kundens «produktlommebok» som brukes på dine produkter. Share of wallet økes ved å få kundene til å bruke flere penger hos deg som de i dag bruker hos dine konkurrenter.
 
-Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Av de tre komponentene er det også den av faktorene som blir mest påvirket av kundeopplevelsen. 
+Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Av de tre komponentene er det også den av faktorene som blir mest påvirket av kundeopplevelsen.
+
+Løsning: The wallet allocation rule
+
+## Historien om Walmart og «Project impact»
+
+Tilbake i 2008/2009 i etterkant av finanskrisen hadde flere av konkurrentene kommet dårlig ut økonomisk, mens Walmart klarte seg bra. På kundetilfredshet var imidlertid ikke Walmart på topp.  
+
+Med dette som utgangspunkt satte konsernledelsen i gang «Project impact» for å øke kundetilfredsheten. Nye hyller ble satt opp, mindre rotete butikker og en bedre kjøpsopplevelse. Dette førte til at KTI’en gikk høyere opp enn noen gang før, men selskapet endte samtidig opp med å miste store markedsandeler.
+
+Hva var så problemet? De kundene som oppga å være mer fornøyde hadde ikke nødvendigvis mer penger å bruke hos Walmart. De kundene som derimot hadde økonomisk potensial for å bruke mer penger hos Walmart, endte opp med å bruke mindre. For hva var poenget med å dra på Walmart når de billige varene lenger ikke lenger var der? Da kunne de vel like greit bruke alle pengene et annet sted? 
+
+Project Impact viser faren ved å fokusere på å forbedre kundetilfredsheten, uten sterk tilknytning til kundens forbruk. CEO i Walmart William S. Simon, oppsummerte dette på en fin måte:  
+
+“They loved the experience. They just bought less. And that generally is not a good long-term strategy.”
+
+Fortsatt nysgjerrig? Du kan lese mer om dette i denne [HBR-artikkelen](https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet) eller i [selve boka](https://www.walletrule.com/).
