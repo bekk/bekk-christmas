@@ -21,7 +21,7 @@ I struggled with how the `new` operator fit into JavaScript when I first started
 
 ## Objects
 
-Objects in JavaScript are just key/value pairs, which make up the properties of the objects. Values can be primitive, array, functions or any other object. Functions are called methods when they are used in objects. The easiest, and most common way to create an object in JavaScript is by using the literal notation known as "object initializer".
+Objects in JavaScript are just key/value pairs, which make up the properties of the objects. Values can be primitive, array, functions or any other object. Functions are called "methods" when they are used in objects. The easiest, and most common way to create an object in JavaScript is by using the literal notation known as "object initializer".
 
 ```js
 const person = {
