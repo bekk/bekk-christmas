@@ -4,20 +4,20 @@ post_year: 2020
 post_day: 21
 title: Kan gode kundeopplevelser true lønnsomheten din?
 image: https://images.unsplash.com/photo-1540340061722-9293d5163008?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvY2VyeSUyMHN0b3JlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60
-ingress: >-
-  *Det er 2009. Du jobber som markedsdirektør i den amerikanske
+ingress: "*Det er 2009. Du jobber som markedsdirektør i den amerikanske
   dagligvaregiganten Walmart, og er særs godt fornøyd. Det strategiske
   prosjektet ditt har endelig blitt realisert. Butikkene har aldri sett bedre
   ut. De rotete pallene med billige varer midt i butikken har blitt erstattet
   med oversiktlige hyller som bugner av tiltalende produkter. KTI-tallene har
-  skutt i været, kundene har aldri vært mer fornøyde.*
-
-
-  *Nå gjenstår det bare å legge den siste biten i puslespillet. Beviset på at konkurrentene er knust en gang for alle. Du finner frem den finansielle rapporten du har mottatt og gleder deg til å se resultatene. I det du begynner å bla i dokumentet merker du hvordan smilet gradvis stivner. Tallene er blodrøde. Markedsandelen har ikke falt så mye på over 30 år.*
-links: []
+  skutt i været, kundene har aldri vært mer fornøyde.*"
+links:
+  - url: https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet
+    title: Customer Loyalty Isn’t Enough. Grow Your Share of Wallet
 authors:
   - Stian Daazenko
 ---
+Nå gjenstår det bare å legge den siste biten i puslespillet. Beviset på at konkurrentene er knust en gang for alle. Du finner frem den finansielle rapporten du har mottatt og gleder deg til å se resultatene. I det du begynner å bla i dokumentet merker du hvordan smilet gradvis stivner. Tallene er blodrøde. Markedsandelen har ikke falt så mye på over 30 år.
+
 ## **Customer is king! Eller?**
 
 Kundesentrert strategi er i vinden som aldri før. Moderne strategiutvikling tar ofte utgangspunkt i en grundig forståelse av kundens behov og atferd. Og strategiprosessen skal aller helst være smidig, med hyppig involvering av kunden underveis. Som et resultat av dette har tankesett og verktøy fra tjenesteinnovasjon, tjenestedesign og digital produktutvikling gradvis smeltet sammen med strategifaget, noe vi i Bekk også har jobbet mye med de siste årene.
@@ -68,9 +68,7 @@ Derfor: Kunder har ulikt lønnsomhetspotensial og bør segmenteres deretter. Øk
 
 Tidligere i teksten har vi benyttet markedsandel som en proxy på vekst, og definert den som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
 
-
 *Markedsandel = Penetrasjonsrate × Forbruksindeks × Share of wallet* 
-
 
 *Penetrasjonsraten* er andelen kunder i markedet som har kjøpt ditt produkt minst én gang i en gitt tidsperiode, og som dermed kan regnes som en del av din eksisterende kundebase. Penetrasjonsraten øker du ved å skaffe deg nye kunder.
 
@@ -92,12 +90,10 @@ Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg brukb
 
 Med dette som utgangspunkt satte konsernledelsen i gang «Project impact» for å øke kundetilfredsheten. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI’en gikk høyere opp enn noen gang før, men samtidig endte selskapet opp med å miste store markedsandeler.
 
-![](/assets/walmart1.png)
-
 Hva var så problemet? De kundene som oppga å være mer fornøyde hadde ikke nødvendigvis mer penger å bruke hos Walmart. De kundene som derimot hadde potensial for å bruke mer penger hos Walmart, endte opp med å bruke mindre. For hva var poenget med å dra på Walmart når de billige varene lenger ikke lenger var der? Da kunne de vel like greit bruke alle pengene et annet sted? 
 
 Project Impact viser faren ved å fokusere på å forbedre kundeopplevelsen, uten sterk tilknytning til kundens forbruk og kjøpsmønster. CEO i Walmart William S. Simon, oppsummerte dette på en fin måte:  
 
 *“They loved the experience. They just bought less. And that generally is not a good long-term strategy.”*
 
-Fortsatt nysgjerrig? Du kan lese mer om dette i denne [HBR-artikkelen](https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet) eller i [boka](https://www.walletrule.com/) som denne artikkelen er basert på.
+Fortsatt nysgjerrig? Du kan lese mer om dette i artikkelen nedenfor eller i [boka](https://www.walletrule.com/) som denne artikkelen er basert på.
