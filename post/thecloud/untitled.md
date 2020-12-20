@@ -2,7 +2,14 @@
 calendar: thecloud
 post_year: 2020
 post_day: 21
-title: Untitled
+title: Boundary and remote access based on trusted identity
+ingress: If you've ever started at or switched jobs to a mid- or large-size
+  enterprise, you probably know the onboarding process can be both long and
+  exhausting. Possibly sitting there weeks on end, without access to the
+  services you need, and feeling like a bother because you have to ask one of
+  your colleagues for help the 3027th time that week. I shudder at the thought
+  of it, and if you do to I just might have the answer to all our *boundary*
+  issues!
 links: []
 authors:
   - Kenan Mahic
@@ -22,11 +29,19 @@ There are a number of issues with this workflow.
 3. Now we need to put a firewall in front of the target hosts to only allow access from the jump box. This firewall operates based on IP and port identities. This is pretty brittle in a dynamic environment such as a public cloud where IPs are ephemeral.
 4. Finally, the user needs to know the credentials of the end target host that they want to access. If this target is a database, then the user needs to have a username and password to the database. That’s also a concern from a security point of view because the credentials are exposed to the user.
 
-![Traditional](https://www.datocms-assets.com/2885/1602530950-boundary-blog-3-edited.png?fit=max&fm=png&q=80&w=800)
+
+
+| ![Traditional](https://www.datocms-assets.com/2885/1602530950-boundary-blog-3-edited.png?fit=max&fm=png&q=80&w=800)| 
+|:--:| 
+| *HashiConf2020 Boundary presentation* |
 
 ## HashiCorp Boundary’s Structure and Hierarchy
 Now let’s see what the boundary workflow looks like. Below is a diagram of the HashiCorp Boundary workflow.
-![Boundary](https://www.datocms-assets.com/2885/1602530901-boundary-blog-1-edited.png?fit=max&fm=png&q=80&w=800)
+
+
+| ![Boundary](https://www.datocms-assets.com/2885/1602530901-boundary-blog-1-edited.png?fit=max&fm=png&q=80&w=800)| 
+|:--:| 
+| *HashiConf2020 Boundary presentation* |
 
 1. Once again the user here needs to access a host or a set of hosts, The user now logs in with a trusted identity such as Okta, GitHub, or Active Directory. This is outside of Boundary. The identity provider would integrate with Boundary. From an onboarding and offboarding perspective it’s pretty easy since it’s tied to a trusted identity provider. Once a user is no longer part of the company, you can take them out of Okta and you’re good to go.
 2. The next step is authorizing who gets to do what. This is achieved by using roles and logical services making authorization robust in dynamic environments.
