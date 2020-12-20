@@ -17,7 +17,7 @@ links:
 authors:
   - Eirik Vigeland
 ---
-I struggled with how the `new` operator fit into JavaScript when I first started out many years ago. Coming from object-oriented languages such as Java, it might was strange to be able to use objects (and functions for that matter) before they are somehow instantiated (with `new`) in JavaScript (although this is not really the case). Objects, in the object-oriented way, made a bit more sense to me when classes were introduced in ES5. Classes are really just syntactic sugar for creating objects in JavaScript, but unlike objects, classes will throw a `TypeError` if you attempt to use them without calling `new`. So today let's do a deep dive into how the `new` operator works and try to demystify some of it's secrets.
+I struggled with how the `new` operator fit into JavaScript when I first started out many years ago. Coming from object-oriented languages such as Java, it was strange to be able to use objects (and functions for that matter) before they were somehow instantiated (with `new` - although this is not really the case). Objects, in the object-oriented way, made a bit more sense to me when classes were introduced in ES5. Classes are really just syntactic sugar for creating objects in JavaScript, but unlike objects, classes will throw a `TypeError` if you attempt to use them without calling `new`. So today let's do a deep dive into how the `new` operator really works and try to demystify some of it's secrets.
 
 ## Objects
 
