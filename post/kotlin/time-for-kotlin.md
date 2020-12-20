@@ -4,6 +4,8 @@ post_year: 2020
 post_day: 20
 title: It's (Christmas) Time for Kotlin
 image: https://source.unsplash.com/FlHdnPO6dlw/1600x900
+authors:
+  - Jørn Ola Birkeland
 ---
 `kotlin.time` is a small, experimental library introduced with Kotlin 1.3. Its main purpose is to simplify measuring and manipulating elapsed time. 
 
