@@ -27,3 +27,10 @@ Hvis vi da velger å være enige om at det er viktig å ikke feie alle småfeil 
 Som designer er denne listen super å ha fordi jeg, men også resten av teamet, har et sted å notere alle småfeil som oppdages. Det er godt å vite at vi har kontroll på dem selv om de ikke alltid blir fikset med en gang. Vi trenger heller ikke å diskutere prioriteringen av oppgavene, da utviklerne selv prioriterer å ta tak i dem når det passer. Utviklerne virker også fornøyd med å ha en slik liste, og flere har gitt uttrykk for at det er godt å kunne plukke noen lettbeinte småoppgaver og føle at det går unna. Slik får teamet strøket ut flere oppgaver på en liste i løpet av en dag, noe som føles utrolig godt når man normalt sitter med komplekse oppgaver som fort kan ta en uke eller to å løse. 
 
 Dukker det opp masse småfeil her og der i tjenestene du også jobber med? Og er det vanskelig å få de prioritert?  Ja da fikk du kanskje et bittelite tips på bittelille julaften her.
+
+
+
+
+
+*Takk til Jonas, Anne Berit, Erik & Hanna for gjennomlesning og innspill.*
+
