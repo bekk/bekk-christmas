@@ -18,7 +18,7 @@ authors:
 ---
 Nå gjenstår det bare å legge den siste biten i puslespillet. Beviset på at konkurrentene er knust en gang for alle. Du finner frem den finansielle rapporten du har mottatt og gleder deg til å se resultatene. I det du begynner å bla i dokumentet merker du hvordan smilet gradvis stivner. Tallene er blodrøde. Markedsandelen har ikke falt så mye på over 30 år.
 
-## **Customer is king! Eller?**
+## Customer is king! Eller?
 
 Kundesentrert strategi er i vinden som aldri før. Moderne strategiutvikling tar ofte utgangspunkt i en grundig forståelse av kundens behov og atferd. Og strategiprosessen skal aller helst være smidig, med hyppig involvering av kunden underveis. Som et resultat av dette har tankesett og verktøy fra tjenesteinnovasjon, tjenestedesign og digital produktutvikling gradvis smeltet sammen med strategifaget, noe vi i Bekk også har jobbet mye med de siste årene.
 
@@ -28,7 +28,7 @@ Som et resultat av dette bruker selskaper milliarder av kroner hvert eneste år 
 
 Nei, det er faktisk ikke slik! I boka «The Wallet Allocation Rule» fra 2015 legger forfatterne frem en omfattende studie som  viser at kundeopplevelse i seg selv ikke har noe positiv påvirkning på lønnsomheten. I mange tilfeller kan effekten til og med være negativ. For å forklare hvordan det kan ha seg må vi først ta ett skritt tilbake og se litt på hva lønnsomhet egentlig handler om.
 
-## **Hva driver et selskaps lønnsomhet?**
+## Hva driver et selskaps lønnsomhet?
 
 Kommersielle selskaper er vanligvis besatt av å oppnå to ting, nemlig profitt og vekst. Over tid er det imidlertid vekst som regnes å være den viktigste indikatoren på et selskaps finansielle suksess. Det er tross alt vekst som skaper økonomisk verdi for aksjonærene og som legger grunnlaget for den langsiktige verdien av selskapet. 
 
@@ -36,7 +36,7 @@ Vekst kan måles på en rekke ulike måter, avhengig av hvilket selskap og marke
 
 Vi velger derfor å bruke markedsandel som en indikator på vekst og langsiktig lønnsomhet. Med dette som utgangspunkt kan vi se nærmere på forholdet til kundeopplevelse.
 
-## **Markedsandel og kundeopplevelse er negativt korrelert**
+## Markedsandel og kundeopplevelse er negativt korrelert
 
 Gitt at et marked består av kunder med ulike behov og preferanser må et selskap posisjonere seg med én hovedmålgruppe i tankene. I dagligvaremarkedet må man for eksempel bestemme om man primært skal tjene lavprissegmentet eller om man heller skal tilby et bredere utvalg av varer med høyere kvalitet og pris. 
 
@@ -52,7 +52,7 @@ Så er spørsmålet hvordan det likevel kan ha seg at mange studier viser en sig
 
 I teksten over har vi forklart hvordan det kan ha seg at en økning av kundeopplevelsen ikke medfører økt markedsandel, og at uriktige analyser av sammenhengen mellom kundeopplevelse og lønnsomhet ofte skyldes aggregering av data. Spørsmålet blir da hvordan den vi heller burde gå frem for å sikre ønsket vekst. 
 
-## **Løsning 1: Å segmentere kundene på lønnsomhetspotensial**
+## Løsning 1: Å segmentere kundene på lønnsomhetspotensial
 
 Første løsning på problemet handler om hvordan kundene segmenteres. Som vi var innom lenger oppe i teksten er vi avhengig av å behandle kundene ulikt i analysene. Kundetilfredshet og NPS gjør imidlertid en dårlig jobb med å forklare vekst og lønnsomhet, som beskrevet over, og er derfor lite egnet som segmenteringsvariabel. Vi trenger derfor en annen måte å segmentere kunder på, og det handler om å forstå hvor pengene dine kommer fra.
 
@@ -64,7 +64,7 @@ Dette er kritisk informasjon for å forstå kundelønnsomheten din, og bør vær
 
 Derfor: Kunder har ulikt lønnsomhetspotensial og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensial.
 
-## **Løsning 2: Vi må  forstå hva som faktiske driver markedsandelen**
+## Løsning 2: Vi må  forstå hva som faktiske driver markedsandelen
 
 Tidligere i teksten har vi benyttet markedsandel som en proxy på vekst, og definert den som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
 
