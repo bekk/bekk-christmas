@@ -64,6 +64,7 @@ Next we'll finally the code required on the JavaScript side to be able to send m
 
 We will now have to write the code that will be receiving whatever JavaScript wants to tell us, *inside* our elm program.
 Part of initialising our elm program inside `Main.elm` is telling it where it will find the `view`, `update`, the `init` function and so on. Here you will also find where you supply the `subscriptions` function, which describes to elm which ports exists.
+
 ```elm
 
 port helloFromJS : (String -> msg) -> Sub msg
@@ -94,8 +95,8 @@ type Msg
 
 ```
 
-We define our port, `helloFromJS`, and our `subscriptions`. Next step is to tap into the elm lifecycle. You can maybe see that we started a little bit already, by telling the `subscription` function that it should send the `HelloFromJS` `Msg` when it receives a message from the `helloFromJS` port. 
-Every time JavaScript sends a message to elm, the port `helloFromJS` will receive it, and the `HelloFromJS` message will be called. 
+We define our port, `helloFromJS`, and our `subscriptions`. Next step is to tap into the elm lifecycle. You can see that we started a little bit already, by telling the `subscription` function that it should send the `HelloFromJS` `Msg` when it receives a message from the `helloFromJS` port. 
+Every time JavaScript sends a message to elm, the port `helloFromJS` will receive it, and the `update` function will be called with the `HelloFromJS` message.
 
 ```elm
 
@@ -113,3 +114,5 @@ update msg model =
 
 
 ```
+
+From here we will able to add it to our `Model`, or proceed to perform a side effect (`Cmd Msg`).
