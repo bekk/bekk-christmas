@@ -3,7 +3,7 @@ calendar: javascript
 post_year: 2020
 post_day: 21
 title: The new Operator
-image: https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd
+image: https://javascript.christmas/assets/lukebilder/12/21.jpeg
 ingress: You probably came here to read about something cutting edge in
   JavaScript, but today we’re going to do a deep dive into one of the
   fundamental operators of JavaScript, `new`.
@@ -17,9 +17,10 @@ links:
 authors:
   - Eirik Vigeland
 ---
-Way back when, in my first encounters with JavaScript I really did not see the point in the `new` operator. Coming from object-oriented languages such as Java, it might be strange to be able to use objects before they are somehow instantiated (with `new`). Objects made more sense for my part when classes were introduced in ES5. Classes are really just syntactic sugar for creating objects in JavaScript, but unlike objects, classes will throw a `TypeError` if you attempt to use them without calling `new`.
+Coming from object-oriented languages such as Java, it might be strange to be able to use objects before they are somehow instantiated (with `new`) in JavaScript (although this is not really the case). Objects, in the object-oriented way, made a bit more sense when classes were introduced in ES5. Classes are really just syntactic sugar for creating objects in JavaScript, but unlike objects, classes will throw a `TypeError` if you attempt to use them without calling `new`.
 
 ## Objects
+
 Objects in JavaScript are just key/value pairs, which make up the properties of the objects. Values can be primitive, array, functions or any other object. Functions are called methods when they are used in objects. The easiest, and most common way to create an object in JavaScript is by using the literal notation known as "object initializer".
 
 ```js
@@ -44,6 +45,7 @@ console.log(person.firstName); // Jane
 ```
 
 ## Functions
+
 So what about functions? What happens when you don’t use the `new` operator on functions? Functions in JavaScript are also objects, they are instances of the `Function` object.
 
 ```js
@@ -53,7 +55,7 @@ console.log(myFunction.constructor === Function); // true
 
 Unlike the constructor of `Object` (`new Object`), calling the constructor of `Function` (`new Function`), is not the same as using function declarations (`function () {}`). You can read more to get a deeper understanding of the differences at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
 
-A function is defined in MDN as “a set of statements that performs a task or calculates a value”, also called a procedure. Furthermore to qualify as a function, the procedure should return an output which has some relationship to the input of the function.
+A function is defined in MDN as "a set of statements that performs a task or calculates a value", also called a procedure. Furthermore to qualify as a function, the procedure should return an output which has some relationship to the input of the function.
 
 Unless a function has an explicit return, a default value is returned from the function. And here is where the `new` operator comes into play. The default return value of a function is `undefined` if the function is not a constructor function. A function is a constructor if it is called with the `new` operator. For a constructor function the default value is `this`. So for functions that are not called with the `new` operator. The statements of the function are executed and the explicit return value or `undefined` is returned. By using the `new` operator the function will return a newly created object which is bound to `this`.
 
@@ -74,6 +76,7 @@ console.log(jane.firstName); // Jane
 It is important to note that this does not apply to arrow functions (`const fun = () => {}`). Arrow functions cannot be used as a constructor function and will yiled a `TypeError` when used in conjunction with `new`. One of the reasons is how arrow functions handle `this`, which will be bound to the scope where the arrow function is used. Therefore we cannot create new instances of arrow functions since the `new` operator will bind `this` of the function to the instance. You can read more about [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) at MDN.
 
 ## Prototypes
+
 The last thing we need to discuss are prototypes. JavaScript inheritance works by prototype chaining. I’m not going to reiterate all the properties of how prototypes and prototype chaining works. You can read more about it over at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 
 In broad strokes an objects in JavaScript (almost) always inherits from the `Object.prototype`. 
@@ -105,10 +108,10 @@ console.log(jane.fullName()); // Jane Doe
 ```
 
 ## Summary
+
 I hope this gives you a better understanding of how the `new` operator works, in a nutshell. We have only scratched the surface of "the secret life of Objects" in JavaScript. And if you want to know more, I recommend you dive deeper into the documentation on MDN, read [Eloquent JavaScript](https://eloquentjavascript.net/06_object.html), or [YDKJS](https://github.com/getify/You-Dont-Know-JS) series. To summarize, as documented on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new), the new-operator:
 
 > * Creates a blank, plain JavaScript object;
 > * Links (sets the constructor of) the newly created object to another object by setting the other object as its parent prototype;
 > * Passes the newly created object from Step 1 as the this context;
 > * Returns this if the function doesn't return an object.
-
