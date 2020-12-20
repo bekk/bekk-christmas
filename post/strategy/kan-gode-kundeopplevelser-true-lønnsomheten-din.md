@@ -17,4 +17,12 @@ ingress: >-
 authors:
   - Stian Daazenko
 ---
-*..*
+## **Customer is king! Eller?**
+
+Kundesentrert strategi er i vinden som aldri før. Moderne strategiutvikling tar ofte utgangspunkt i en grundig forståelse av kundens behov og atferd. Og strategiprosessen skal aller helst være smidig, med hyppig involvering av kunden underveis. Som et resultat av dette har tankesett og verktøy fra tjenesteinnovasjon, tjenestedesign og produktutvikling gradvis smeltet sammen med strategifaget, noe vi i Bekk også har jobbet mye med de siste årene.
+
+ Med dette som bakteppe er det vanlig, og kanskje også intuitivt, å anta at høyere kundetilfredshet og bedre kundeopplevelse er bra for business. Dette underbygges av at toppledelsen ofte har kundelojalitet og kundeopplevelse høyt oppe på sin prioriteringsliste.
+
+I en amerikansk undersøkelse fra 2014 oppga 70 prosent av markedsdirektørene at kundelojalitet var en topp tre strategisk prioritering, mens hele 93 prosent hadde det på sin topp fem-liste[](#_ftn1)
+
+ Som et resultat av dette bruker selskaper milliarder hvert eneste år på å forbedre opplevelsen for sine kunder. Det er også vanlig å bruke aggregerte målinger av kundetilfredshet (KTI) og Net Presenter Score (NPS) til å evaluere hvordan det står til med forretningen. For når kundene våre totalt sett blir mer fornøyde tjener vi mer penger, ikke sant?
