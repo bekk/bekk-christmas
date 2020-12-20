@@ -4,12 +4,12 @@ post_year: 2020
 post_day: 21
 title: Kan gode kundeopplevelser true lønnsomheten din?
 image: https://images.unsplash.com/photo-1540340061722-9293d5163008?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvY2VyeSUyMHN0b3JlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60
-ingress: "*Det er 2009. Du jobber som markedsdirektør i den amerikanske
+ingress: Det er 2009. Du jobber som markedsdirektør i den amerikanske
   dagligvaregiganten Walmart, og er særs godt fornøyd. Det strategiske
   prosjektet ditt har endelig blitt realisert. Butikkene har aldri sett bedre
   ut. De rotete pallene med billige varer midt i butikken har blitt erstattet
   med oversiktlige hyller som bugner av tiltalende produkter. KTI-tallene har
-  skutt i været, kundene har aldri vært mer fornøyde.*"
+  skutt i været, kundene har aldri vært mer fornøyde.
 links:
   - url: https://hbr.org/2011/10/customer-loyalty-isnt-enough-grow-your-share-of-wallet
     title: Customer Loyalty Isn’t Enough. Grow Your Share of Wallet
