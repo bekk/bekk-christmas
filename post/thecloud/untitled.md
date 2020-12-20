@@ -6,10 +6,10 @@ title: Boundary and remote access based on trusted identity
 ingress: I recently switched projects, and if you've ever started at or switched
   jobs to a mid- or large-size enterprise, you probably know the onboarding
   process can be both long and exhausting. Possibly sitting there weeks on end,
-  without access to the services you need, and feeling like a bother because you
-  have to ask one of your colleagues for help the 3027th time this week. Welp, I
-  just shudder at the thought of it, and if you do too, I just might have the
-  answer to all our *boundary* issues!
+  without access to the services you need, and purely feeling like a bother
+  because you have to ask one of your colleagues for help the 3027th time this
+  week. Welp, I just shudder at the thought of it, and if you do too, I just
+  might have the answer to all our *boundary* issues!
 links: []
 authors:
   - Kenan Mahic
@@ -17,7 +17,7 @@ authors:
 ## By Whom and What
 As the cloud space has gotten bigger, so has the need for tools and products for provisioning, security and run-and-connect tools for cloud-computing infrastructure. So when Hashicorp, one of the leading companies in this commercial area decides to announce two new products(HashiConf 2020) for the first time in 5 years, it's worth taking a peek. One of these products is Waypoint, which in their words is a tool for consistent developer workflow to build, deploy, and release applications across any platform. That might be intriguing for some, but what really peaked my interest was Boundary, a cloud security framework for access control.
 
-Boundary lets you access any system from anywhere based on user identity. Other providers for cloud infrastructure have started taking similar routes for access control, but unlike most of them Boundary is both cloud-agnostic *and* open-source. If that and the gruesome onboarding process I pictured earlier was not enough to get you excited, let's take a deeper look.
+Boundary lets you access any system from anywhere based on user identity. Other providers for cloud infrastructure have started taking similar routes for access control, but unlike most of them Boundary is both cloud-agnostic *and* open-source. If that and the gruesome onboarding process I described earlier isn't enough to get you excited as well, I'll try and spark the interest by showing what else it's capable of.
 
 
 ## Traditional Workflow
