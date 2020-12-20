@@ -2,7 +2,7 @@
 calendar: elm
 post_year: 2020
 post_day: 21
-title: "WIP: Inbound ports"
+title: Inbound ports - receiving external messages in Elm
 ingress: What if your elm program needs to communicate with the JavaScript
   enclosing the app? Maybe you need some kind of messages flowing into the elm
   lifecycle and need to act on such events? To receive messages from JavaScript
