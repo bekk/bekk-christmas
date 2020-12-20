@@ -45,10 +45,34 @@ Gitt at markedet består av kunder med ulike behov og preferanser må et selskap
 
 Selskaper med stor markedsandel (massemarked) må nødvendigvis nå ut til flere ulike kunder i markedet, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de har flere kunder hvis behov ikke er helt i tråd med selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
 
-
-
 ![](/assets/kundeopplevelse-versus-markedsandel.png)
 
 Dersom selskapene med høy markedsandel i mindre grad svarer på alle kundenes behov og preferanser må det innebære at kundeopplevelsen totalt sett blir lavere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert – og at en økning av markedsandelen faktisk vil innebære at kundeopplevelsen går ned.  
 
 Og er det ikke egentlig slik når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
+
+HHvordan kan det ha seg at mange vitenskapelige studier likevel viser at det er en signifikant positiv sammenheng mellom tilfredshet og kjøpsatferd? Dette skyldes at de fleste kundemålingene i stor grad blir analysert og tolket på aggregerte nivå, og ignorerer det faktum at kundene varierer mye i egenskaper, preferanser, atferdsmønster og lønnsomhet. Ved å benytte gjennomsnitt vil kundene kansellerer hverandre ut slik at gjennomsnittet ser bedre ut. Output fra dette? Vi må begynne å betrakte kundene som individer. 
+
+## **Kundene må segmenteres på lønnsomhet**
+
+Kundetilfredshet og NPS gjør åpenbart en dårlig jobb med å forklare kundenes forbruksnivå, som beskrevet i forrige avsnitt. Vi trenger derfor en annen måte å segmentere kunder på. Og løsningen handler om å forstå hvor pengene dine kommer fra.
+
+En tommelfingerregel, illustrert av Stobachoff-kurven nedenfor, sier at 20% av kundene bidrar til at du tjener penger, 60% av kundene går i null og 20% bidrar til å redusere lønnsomheten din. Sagt på en annen måte er det bare en femtedel av kundene dine som bidrar til overskuddet ditt, mens en annen femtedel faktisk reduserer det.
+
+![](/assets/stobachoff.png)
+
+Men dette betyr ikke nødvendigvis at alle kunder som er ikke er lønnsomme er uinteressante. Kunder har ulikt lønnsomhetspotensial og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer for kunder med det største økonomiske potensial.
+
+## **Vi må forstå hva som driver markedsandel**
+
+Markedsandel defineres som ofte som Salgsinntekter/ Totalt salg i markedet.  Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
+
+Markedsandel = Penetrasjonsrate × Forbruksindeks × Share of wallet 
+
+Penetrasjonsraten er andelen kunder i markedet som har kjøpt ditt produkt minst én gang i en gitt tidsperiode, og som dermed kan regnes som en del av din eksisterende kundebase. Penetrasjonsraten øker du ved å skaffe deg nye kunder.
+
+Forbruksindeksen handler om hvor stort forbruk kundene har av produkt ditt sammenlignet med det gjennomsnittlige forbruket i markedet. En økning av forbruksindeksen krever gjerne en endring i hvordan produktet er utformet eller hvordan det konsumeres. Et klassisk eksempel er vaskemidler som blir puttet i flasker med større åpning for at kunden skal bruke mer vaskemiddel hver gang de gjør rent.
+
+Share of wallet betegner den andelen av en kundens forbruk i en gitt produktkategori som tilfaller deg. Altså hvor stor andel av kundens «produktlommebok» som brukes på dine produkter. Share of wallet økes ved å få kundene til å bruke flere penger hos deg som de i dag bruker hos dine konkurrenter.
+
+Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Av de tre komponentene er det også den av faktorene som blir mest påvirket av kundeopplevelsen. 
