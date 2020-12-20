@@ -181,7 +181,7 @@ Static pages can work very well by themselves, but that won't stop you from comb
 
 As an earlier part of this calendar, we had an article on [Intelligent fetching and caching with SWR](https://react.christmas/2020/4).
 
-To combine the two approaches we can populate the initial data of the SWR hook without static data. By doing this you can get the best of both worlds, no loading times, and dynamic data you can mutate.
+To combine the two approaches we can populate the initial data of the SWR hook with static our data. By doing this you can get the best of both worlds, no loading times, and dynamic data you can mutate.
 
 ```javascript
 const { data: articles } = useSWR(`/api/articles/${articleId}`, fetcher, {
