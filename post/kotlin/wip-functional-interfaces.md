@@ -2,7 +2,7 @@
 calendar: kotlin
 post_year: 2020
 post_day: 21
-title: WIP Functional Interfaces
+title: Functional Interfaces
 ingress: Functional interfaces was introduced in Kotlin 1.3 and is a way of
   giving lambdas proper types  which can make our code more readable and make
   the intent clearer.
