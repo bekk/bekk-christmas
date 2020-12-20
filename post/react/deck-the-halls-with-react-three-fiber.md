@@ -31,7 +31,10 @@ react-three-fiber is a React renderer for three.js, which in turn is built on th
 There are a couple of things to know before you get started. To display the animations, three.js renders a HTML `<canvas>` element with your content in a loop inside it. We need to prepare this canvas before we can "paint" on it (or animate, if you will). For this, three.js requires a _scene, camera and renderer_. In basic three.js, you would need to define and configure these yourself (as you probably saw in Holger's article). Luckily, react-three-fiber does this for us, which means even less boilerplate code! We can use the Canvas-component directly:
 
 ```javascript
-export const Component = () => {
+import React from 'react';
+import { Canvas } from 'react-three-fiber';
+
+const Component = () => {
     return (
         <Canvas>
             // Insert cool animations
@@ -40,15 +43,15 @@ export const Component = () => {
 };
 ```
 
-react-three-fiber provides us with some neat default values, which makes the setup easy. For example, the camera will _look at_ position `[0,0,0]` (the center of the canvas), but a little bit zoomed out (z-position = 5). It gives us a good bird's eye view of the scene. That way, when our content is placed in the center by default, we are able to see it in the canvas (because we aren't "standing" in the middle of the content). Of course, there are a great deal of properties available in the Canvas-component if you want to customise things later.
+react-three-fiber provides us with some neat default values, which makes the setup easy. For example, the camera will _look at_ position `[0,0,0]` (the center of the canvas), but a little bit zoomed out (z-position = 5). It gives us a good bird's eye view of the scene. Now, when our content is placed in the center by default, we are able to see it (because we aren't "standing" in the middle of the content). Of course, there are a great deal of properties available in the Canvas-component if you want to customise things later.
 
 ## Comparable Cubes
 
 To illustrate how easy react-three-fiber is to use, compared to the good old three.js way, we are going to create the same red, shaking cube as in the article mentioned above.
 
-First, we'll need to change the position of the camera in the canvas to reflect the example we are reproducing. To achieve this, we simply set the camera property in the Canvas component, using x, y and z coordinates: `camera={{ position: [2, 2, 2] }}`. Now, we are looking at the scene a little sideways.
+First, we'll need to change the position of the camera in the canvas to reflect the example we are reproducing. To achieve this, we simply set the camera property in the Canvas component, using x, y and z coordinates: `camera={{ position: [2, 2, 2] }}`. Now we are looking at the scene a little sideways.
 
-Then, we can add objects to our scene inside the canvas. An object is created using a _mesh_, which is given a _geometry_ (a cube) and a _material_ (the appearance of the cube; red 🟥), which we render in the scene. In react-three-fiber, we just need to put it inside the canvas element, along with some light to actually see it:
+Then, we can add objects to our scene inside the canvas. An object is created using a **mesh**, which is given a **geometry** (a cube) and a **material** (the appearance of the cube; red 🟥), which we render in the scene. In react-three-fiber, we just need to put it inside the canvas element, along with some light to actually see it:
 
 <iframe src="https://codesandbox.io/embed/react-three-fiber-simple-box-yzh0k?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -57,7 +60,7 @@ Then, we can add objects to our scene inside the canvas. An object is created us
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Now we've got a red box in our canvas! But it doesn't do much. You can try and change some of the numerical values and see what happens. Maybe even try to remove the light?
+Now we've got a red box in our canvas! You can try and change some of the numerical values and see what happens. Maybe even try to remove the light?
 
 ## Shake It Up
 
@@ -87,6 +90,11 @@ const Box = () => {
 We have a box, and we have an initial rotation (which is zero). Our hook doesn't do much yet. In his [article](https://javascript.christmas/2020/9), Holger explained the details of the shaking animation he made. Let's borrow that nice code from Holger to shake it, baby!
 
 ```javascript
+let animationTime = 1.0;
+let timeDelta = 0;
+let time = 0;
+let timeStart = new Date().getTime();
+
 const Box = () => {
   const [rotation, setRotation] = useState([0, 0, 0]);
 
