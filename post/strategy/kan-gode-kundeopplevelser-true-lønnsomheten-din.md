@@ -14,5 +14,7 @@ ingress: >-
 
 
    Nå gjenstår det bare å legge den siste biten i puslespillet. Beviset på at konkurrentene er knust en gang for alle. Du finner frem den finansielle rapporten du har mottatt og gleder deg til å se resultatene. I det du begynner å bla i dokumentet merker du hvordan smilet gradvis stivner. Tallene er blodrøde. Markedsandelen har ikke falt så mye på over 30 år.
+authors:
+  - Stian Daazenko
 ---
-*...*
+*..*
