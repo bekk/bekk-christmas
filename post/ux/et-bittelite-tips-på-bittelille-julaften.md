@@ -32,5 +32,5 @@ Dukker det opp masse småfeil her og der i tjenestene du også jobber med? Og er
 
 
 
-*Takk til Jonas, Anne Berit, Erik & Hanna for gjennomlesning og innspill.*
+*Takk til Jonas, Anne Berit, Erik & Hanna for gjennomlesning og innspill. Og takk til Stian, kollegaen som ga meg tipset.*
 
