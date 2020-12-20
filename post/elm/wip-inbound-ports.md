@@ -2,13 +2,14 @@
 calendar: elm
 post_year: 2020
 post_day: 21
-title: Inbound ports - receiving external messages in Elm
+title: Inbound ports
+image: https://images.unsplash.com/photo-1561702469-c4239ced3f47?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80
 ingress: What if your elm program needs to communicate with the JavaScript
-  enclosing the app? Maybe you need some kind of messages flowing into the elm
-  lifecycle and need to act on such events? To receive messages from JavaScript
-  we can make use of inbound ports🌈
+  enclosing your application? Maybe you need some kind of messages flowing into
+  the elm lifecycle and need to act on such events? To receive messages from
+  JavaScript we can make use of inbound ports🌈
 ---
-If we are in need of communication with the JavaScript, outside of our elm code inbound ports are designed to do just that. 
+If we are in need of communication with the JavaScript, outside of our elm code inbound ports are designed to do just that.
 
 There are various ways to define the entry to our elm app. We can do this both through an \`index.js\` file, and an \`index.html\`. We'll use the \`index.html\` for this example. Our \`index.html\` file can be seen below
 
@@ -92,14 +93,12 @@ subscriptions _ =
 type Msg 
     = SomeOtherMsg
     | HelloFromJS
-
 ```
 
 We define our port, `helloFromJS`, and our `subscriptions`. Next step is to tap into the elm lifecycle. You can see that we started a little bit already, by telling the `subscription` function that it should send the `HelloFromJS` `Msg` when it receives a message from the `helloFromJS` port. 
 Every time JavaScript sends a message to elm, the port `helloFromJS` will receive it, and the `update` function will be called with the `HelloFromJS` message.
 
 ```elm
-
 -- UPDATE
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -110,9 +109,6 @@ update msg model =
         
         HelloFromJS messageFromJS ->
             { model | latesMessageFromJs = messageFromJS }
-
-
-
 ```
 
 From here we will able to add it to our `Model`, or proceed to perform a side effect (`Cmd Msg`).
