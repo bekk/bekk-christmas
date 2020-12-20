@@ -111,4 +111,4 @@ update msg model =
             { model | latesMessageFromJs = messageFromJS }
 ```
 
-From here we will able to add it to our `Model`, or proceed to perform a side effect (`Cmd Msg`).
+From here we will be able to add it to our `Model`, or proceed to perform a side effect (`Cmd Msg`), or anything else we might would want to do with the information received from JavaScript.
