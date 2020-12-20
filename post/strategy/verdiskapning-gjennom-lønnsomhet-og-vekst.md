@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 19
-title: Verdiskapning gjennom lønnsomhet og vekst
+title: Hvordan skapes finansiell verdi?
 image: https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80
 ingress: "**Basert på økonomisk teori bør det overordnede målet for private
   virksomheter være finansiell verdiskapning. Men hvordan skapes egentlig
@@ -15,8 +15,6 @@ links:
 authors:
   - Jonas Løvås
 ---
-## Hvordan skapes finansiell verdi?
-
 Et selskap investerer kapital i prosjekter som genererer avkastning på kapitalen gjennom kontantstrømmer. Den finansielle nåverdien av et selskap er verdien av kontantstrømmene (avkastningen) selskapet klarer å oppnå i fremtiden, diskontert for kapitalkostnaden til kapitalen som bindes opp i selskapet. Kapitalkostnaden reflekterer den avkastningen alternative selskaper/prosjekter med tilsvarende risiko vil generere. Dersom selskapet oppnår en avkastning som overstiger kapitalkostnaden skaper den verdi, og dersom avkastningen er lavere enn kapitalkostnaden ødelegger det verdi. Dermed følger det at verdiskapning baserer seg på å øke kontantstrømmene (avkastningen) selskapet klarer å oppnå på sine prosjekter og investeringer. Kontantstrømmene kan hovedsakelig økes gjennom å øke lønnsomheten eller veksten. 
 
 ## Kampen mellom lønnsomhet og vekst
