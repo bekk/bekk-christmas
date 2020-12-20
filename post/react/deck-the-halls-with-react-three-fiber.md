@@ -139,4 +139,4 @@ To compare the code to the version made using only `three.js`, you can find Holg
 
 If you want to play with animations in `react-three-fiber`, the holidays might be the perfect opportunity for a new hobby project. I'll be linking some useful resources below to get started. And while you're at it, why not try out the brand new [Create React App 4](https://github.com/facebook/create-react-app)? That's a combination I can vouch for :raised_hands:
 
-Happy Holidays, and happy coding! :christmas_tree: :hugs:
+Happy Holidays, and happy coding! :christmas_tree: 🤗
