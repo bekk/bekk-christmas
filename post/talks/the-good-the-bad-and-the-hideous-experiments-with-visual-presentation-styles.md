@@ -2,7 +2,7 @@
 calendar: talks
 post_year: 2020
 post_day: 22
-title: "The good, the bad and the hideous: experiments with visual presentation
+title: "The good, the Bad and the Hideous: experiments with visual presentation
   styles"
 description: "Join in on a journey of different and weird visual styles for presentations. "
 links:
@@ -33,10 +33,10 @@ I often start with something like this to structure my thoughts and to get past 
 ### Good for
 
 * Structuring thoughts
-* Those times when you've paniced and don't have time for anything else
+* Those times when you've panicked and don't have time for anything else
 * Setting low expectations to your sense of esthetics
 
-## Gearing it up: bulletpoints with emphasis 🎯
+## Gearing it up: bullet points with emphasis 🎯
 
 If you've ever sat through an hour of slides like the ones above, you've probably noticed that it does very little to help your audience focus over time. Worse than looking dull, they give little information and does little to direct attention where you want it.
 
@@ -54,13 +54,13 @@ This is usually my go to for short, to-the-point decision making type of present
 
 ## Captivating the audience: Photo time! 📸
 
-I still remember the first time I saw a photo-centric slideset. I'd been working for about half a year, and I was _totally_ doing basic bulletpoints in all my own presentations. Then somone showed up with a set of quite vanilla stock photos. And it blew my mind.
+I still remember the first time I saw a photo-centric slideset. I'd been working for about half a year, and I was _totally_ doing basic bulletpoints in all of my own presentations. Then someone showed up with a set of quite vanilla stock photos. And it blew my mind.
 
 Although visually pleasing, there are certainly times when loading up on photos isn't the way to go about it. It tends to give presentations a more lofty feeling, and for better or worse, it might pull some attention from what you're actually talking about.
 
-<img src="https://i.ibb.co/3mVb20K/photos-final.gif" alt="Example of a photo centric presentation">
+<img src="https://i.ibb.co/3mVb20K/photos-final.gif" alt="Example of a photo-centric presentation">
 
-Use photos that are related to what you're talking about if you can. But, alas, all presentations can't be about terroir and the ageing of wines. A time honoured way of finding nice-looking free to use photos for presentation is [Unsplash](https://unsplash.com/). Just remember to give credit to the photographer!
+Use photos that are related to what you're talking about if you can. But, alas, all presentations can't be about terroir and the ageing of wines. A time honored way of finding nice-looking free to use photos for presentation is [Unsplash](https://unsplash.com/). Just remember to give credit to the photographer!
 
 ### Good for
 
@@ -132,4 +132,4 @@ I've used all the techniques described above with great success in the right con
 
 In 12 years of giving presentation, my visual style has changed a lot. But most importantly, I've grown my toolbox. Sometimes I give straight up powerpoint presentations like everyone else, at other times I go completely bonkers with animations, drawings and everything else. Experimenting with what works and what's effective in a given context, makes creating presentations both more fun and gives a better effect over time.
 
-So that's my message to you. There's more to giving presentations that standard templates and bullet points. Once you start opening that box, there's so much fun to be had!
+So that's my message to you. There's more to giving presentations than standard templates and bullet points. Once you start opening that box, there's so much fun to be had!
