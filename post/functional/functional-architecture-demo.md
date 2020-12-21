@@ -461,7 +461,7 @@ New state: { Data = map [(1, (1, 2)); (2, (1, 2))]
 This concludes our little demo, with an architecture which is pure,
 immutable, and side-effect free. The side-effects is pushed to the
 boundaries, making the core of the application easy to test and make bug
-free. Check out the repository for some code and the larger demo based
+free. [Check out the repository](https://github.com/simendsjo/functional-christmas-2020_functional-architecture-demo) for some code and the larger demo based
 on the production application. If you're interested in learning more
 about F\#, I wrote a short post with various useful links at the
 [Getting Started With F\#](https://functional.christmas/2020/17)
