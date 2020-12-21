@@ -31,7 +31,7 @@ Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen,
 
 «Ja jeg er sikker»
 
-«Ok, vi kan fikse det her»
+«Ok, vi får fikse det her»
 
 ...
 
