@@ -30,3 +30,6 @@ I often start with something like this to structure my thoughts and to get past 
 
 ## The slightly less simple
 
+If you've ever sat through an hour of slides like the ones above, you've probably noticed that it does very little to help your audience focus over time. Worse than looking dull, they give little information and does little to direct attention where you want it.
+
+A simple step forward is to write out sentences a bit more, and for good measure highlight what would otherwise be the single point in a list.
