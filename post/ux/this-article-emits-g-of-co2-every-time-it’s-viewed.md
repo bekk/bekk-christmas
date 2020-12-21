@@ -106,7 +106,7 @@ Guess what. Emails [also have carbon footprints](https://www.statista.com/chart/
 
 Just talk about it. Tell developers, colleagues, and clients. Yes! Even friends, moms, granddads and everyone else needs should be aware of this. Websites, streaming services, and the internet in general has a real CO2 footprint and requires huge amounts of electricity through transfer networks, data centers, and devices.  
 
-Choose a green hosting service
+### Choose a green hosting service
 
 Use a green hosting service when starting a new project. The location of the data centers and their energy sources will have a huge impact on the CO2 emissions from your site/product. You can check what energy source your current hosting service uses on [websitecarbon.com](https://www.websitecarbon.com/) and see if you should switch. 
 
