@@ -26,10 +26,10 @@ Using `mutableListOf` will in the end give you an instance of `java.util.ArrayLi
 An interesting observation is that since the underlying type is the same for mutable and immutable `Set`s and `Map`s, the compiler will gladly accept a change to an immutable collection
 
 ```kotlin
- val set = setOf("A", "B", "C") // Immutable
+ val aSet = setOf("A", "B", "C") // Immutable
 
- if(set is MutableSet) {
-    val modifiableSet: MutableSet<String> = set
+ if(aSet is MutableSet) {
+    val modifiableSet: MutableSet<String> = aSet
     modifiableSet.add("D")
     modifiableSet.remove("A")
  }
