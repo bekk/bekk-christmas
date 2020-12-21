@@ -26,4 +26,6 @@ Might seem obvious and a bit repetetive, but you should never trust input to you
 
 4. Don't expose more than you need to
 
+A user does normally not care about that you use version X of webserver Y. So, why not keep that information for yourself? There is no need to expose such information, e.g. in an error message or stack-trace ini tmsfdg
+
 5. Know your platform
