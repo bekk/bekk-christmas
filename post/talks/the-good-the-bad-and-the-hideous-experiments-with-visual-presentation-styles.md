@@ -102,11 +102,22 @@ Obviously, this isn't fit for all (or even most) situations, but I find it creat
 
 You can probably see the trend here. And feel the worry: will he go there? And yes, I've went there. Before you judge: remember that all presentations have their context. Sometimes you want to teach, sometimes you want to preach, sometimes you need to win an argument. And sometimes you just want to entertain.
 
+A relaxing opening slide:<br>
 <img src="https://i.ibb.co/9sJJr1M/lada.png" style="border: 1px solid grey" alt="Hand drawn opening slide">
 
+
+A much less relaxing opening slide:<br>
 <img src="https://i.ibb.co/GvYZvYM/wizards.gif" style="border: 1px solid grey" alt="Animated opening slide">
 
+How to horizontally scale infrastructure:<br>
+<img src="https://i.ibb.co/xfmTgGf/infrastructure.gif" style="border: 1px solid grey" alt="Animated infrastructure slide">
 
+## So… now what?
 
+So that's a brief intro to what I've been doing. And I'm pretty sure I don't really need to tell you that all of these are good ideas. Especially in all contexts. And that's the key word here: context.
 
-## A word about templates
+I've used all the techniques described above with great success in the right context. And it's obvious that they could all crash completely when used at the wrong time.
+
+In 12 years of giving presentation, my visual style has changed a lot. But most importantly, I've grown my toolbox. Sometimes I give straight up powerpoint presentations like everyone else, at other times I go completely bonkers with animations, drawings and everything else. Experimenting with what works and what's effective in a given context, makes creating presentations both more fun and gives a better effect over time.
+
+So that's my message to you. There's more to giving presentations that standard templates and bullet points. Once you start opening that box, there's so much fun to be had!
