@@ -2,15 +2,15 @@
 calendar: kotlin
 post_year: 2020
 post_day: 22
-title: "val aGoodLife = collectionOf(moments).filter {it.isHappy} "
+title: Collection magic
 image: https://source.unsplash.com/JBrfoV-BZts/1600x900
 ingress: >-
   Kotlin has a restricted menu of collection types available. Basically, it
-  boils down to `Set`, `List`, and `Map` (`Map` is technically not a
-  `Collection`, though), whereas java has a seemingly much larger offering. For
-  example, java's List has Stack, Vector and LinkedList implementations. On top
-  of that, the kotlin collection interfaces are more compact than the java
-  counterparts.  
+  boils down to `Set`, `List`, and `Map` (all the while `Map` is technically not
+  a `Collection`), whereas java has a seemingly much larger offering. For
+  example, java's `List` interface has implementations like `Stack`, `Vector`
+  and `LinkedList`. On top of that, the kotlin collection interfaces has less
+  features than the java counterparts.  
 
 
   One reason is probably platform interoperability, which could allow kotlin code more easily to be complied down to javascript, mobile platforms, or other virtual machines. Another is that extension methods and properties allow kotlin to add a lot more features to the various collections without "polluting" the interface. Finally, the corresponding java interfaces are all mutable, with methods like `add` and `remove`, while kotlin has explicit interfaces for mutable collections, like `MutableList`, `MutableSet`, and `MutableMap`. 
@@ -61,6 +61,6 @@ ingress: >-
   ```
 
 
-  A mutable collection can (and should?) be assigned to a read-only variable. Even though the variable cannot be reassigned you can freely modify the collection. From a performance perspective you would in principle expect better performance by modifying the contents of a collection, rather than creating new instances (but being guilty of premature optimization, most likely).
+  A mutable collection can (and should?) be assigned to a read-only variable. Even though the variable cannot be reassigned you can freely modify the collection. From a performance perspective you would in principle expect better performance by modifying the contents of a single collection, rather than creating new instances (but being guilty of premature optimization, most likely).
 ---
 TODO
