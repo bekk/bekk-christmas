@@ -7,6 +7,7 @@ image: https://images.unsplash.com/photo-1556805256-a0650b57d008?ixid=MXwxMjA3fD
 ingress: Yesterday, we learned about inbound ports in elm. Today, instead of
   receiving a message, we want to send a message from our elm application to the
   outside world (JavaScript).
+description: elm ports
 ---
 It is easy to imagine that we will have the need to communicate something from inside our elm app to JavaScript. We might be using some browser API that doesn't exist in elm and that is needed to be imported in JavaScript (FIX THIS).
 
@@ -62,3 +63,5 @@ The `update` function proceeds to call the port and supply the `String` that wil
 ```
 
 The message sent from elm will be received in the above javascript function, and inside this code block we can proceed to do whatever we want to do with the information received from elm.
+
+It might happen that we send out a little more complicated messages than just a `String` type. In these other cases we can send out a json structure that can be received in JavaScript. We can use [Json-encoder](https://package.elm-lang.org/packages/elm/json/latest/Json-Encode) to turn elm values into this json structure.
