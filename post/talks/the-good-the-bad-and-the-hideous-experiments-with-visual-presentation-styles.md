@@ -28,8 +28,47 @@ Obviously, it's not the most visually pleasing. But it gets the job done. It mak
 
 I often start with something like this to structure my thoughts and to get past the "OMG, I have NO idea how I'm gonna get this done" phase. But I _very_ rarely end up with something looking like this.
 
+### Good for
+
+* Structuring thoughts
+* Those times when you've paniced and don't have time for anything else
+* Setting low expectations to your sense of esthetics
+
 ## The slightly less simple
 
 If you've ever sat through an hour of slides like the ones above, you've probably noticed that it does very little to help your audience focus over time. Worse than looking dull, they give little information and does little to direct attention where you want it.
 
 A simple step forward is to write out sentences a bit more, and for good measure highlight what would otherwise be the single point in a list.
+
+<figure>
+<img src="https://i.ibb.co/YdW7vwq/bulletpoints-long.gif" style="border: 1px solid black" alt="Example of simple presentation with longer bulletpoints and bolded emphasis">
+<figcaption>Certainly looks and feels more engaging!</figcaption>
+</figure>
+
+This is usually my go to for short, to-the-point decision making type of presentations. If elaborated a bit further, they could also be used as handouts.
+
+### Good for
+
+* Summarizing contents without bells and whistles
+* Presentations that also need to be distributed afterwards
+* Creating quick presentations about a topic, with very little time spent on non-essentials
+
+## Photo time! 📸
+
+I still remember the first time I saw a photo centric slideset. I'd been working for about half a year, and I was _totally_ doing "The simple" in all my own presentations. Then somone showed up with a set of quite vanilla stock photos. And it blew my mind.
+
+Although visually pleasing, there are certainly times when loading up on photos isn't the way to go about it. It tends to give presentations a more lofty feeling, and for better or worse, it might pull some attention from what you're actually talking about.
+
+<img src="https://i.ibb.co/3mVb20K/photos-final.gif" alt="Example of a photo centric presentation">
+
+If you can, it's best to use descriptive photos that add to what you're talking about. But, alas, all presentations can't be about terroir and the ageing of wines. A time honoured way of finding nice-looking free to use photos for presentation is [Unsplash](https://unsplash.com/). Just remember to give credit to the photographer!
+
+### Good for
+
+* Visual and engaging story-telling
+* Captivating your audience
+* Distracting from your contents, intentionally or by accident
+
+
+
+## A word about templates
