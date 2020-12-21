@@ -54,4 +54,4 @@ valList.add("even better")
 
 A mutable collection can (and should?) be assigned to a read-only variable. Even though the variable cannot be reassigned you can freely modify the collection. You would in principle expect better performance by modifying the contents of a single collection, rather than creating new instances from scratch (but is a premature optimization until you *actually* hit a performance problem, of course)
 
-All in all, kotlin's handling of collections is a pragmatic compromise between interoperability, reuse, and readability. The result is robust, high-performing implementations, sleak interfaces, and an anbundance of extensions to make your development experience festive and joyful.
+All in all, kotlin's handling of collections is a pragmatic compromise between interoperability, reuse, and readability. The result is robust, high-performing implementations, sleak interfaces, and an anbundance of extensions to make your developer experience festive and joyful.
