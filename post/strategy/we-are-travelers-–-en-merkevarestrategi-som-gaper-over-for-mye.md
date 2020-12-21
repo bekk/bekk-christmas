@@ -67,19 +67,19 @@ SAS tjener her som eksempel på et problem som er velkjent nok til at det har bl
 
 ![](/assets/threestrategicstars.png "The three strategic stars")
 
-#### Image-visjon gap
+### Image-visjon gap
 
 Ethvert selskap er en merkevare. Kundene har et bilde og inntrykk av selskapet, hva de står for og hva man som kunde kan forvente. Denne oppfatningen har selskapet begrenset kontroll over, siden den eies vel så mye av den som står på utsiden, slik som kundene, som de som sitter på innsiden og lager strategier. De fleste selskaper legger derfor betydelige ressurser i å markedsføre seg, for å sikre at kundens inntrykk av selskapet gjenspeiler visjonen. Dersom kundenes inntrykk avviker fra visjonen, har man et image-visjon gap. 
 
 Nikes visjon var å lage «high-performance athletic shoes» til toppidrettsutøvere. Så oppdaget de at halvparten av salget var til folk som brukte Nike som hverdagssko, og lanserte dermed en egen linje med hverdagssko – som ingen kjøpte. Kundene kjøpte Nike fordi de ønsket å gå i samme sko som idolene sine, de likte atlet-imaget, og det var ikke før Nike innså dette at de virkelig kunne «sko seg» på visjonen sin.
 
-#### Image-kultur gap
+### Image-kultur gap
 
 Men, kundens oppfatning av selskapet avhenger ikke bare av hva man kommuniserer ut gjennom mottoer og markedsføring. For å lykkes med en visjon, for eksempel at man skal spille på lag med kunden, må også kulturen, altså de ansattes verdier, holdninger og handlinger, gjenspeile visjonen. Dersom kunden opplever at de ansatte i selskapet gjør noe annet enn det selskaper formidler at de skal gjøre, har man et image-kultur gap. 
 
 British Airways lanserte en kampanje for å endre sitt image fra «The worlds *favourite* airline» til «The *worlds* favourite airline». For å kommunisere ette malte de flyenes haleror med kunst fra ulike verdensdeler. I det du satte deg på flyet møtte du imidlertid flyvertinner i tradisjonelle britiske uniformer som serverte engelsk *tea* i sølvservise. Opplevelsen de reisende fikk ved bruk av tjenesten var distinkt britisk, som ikke matchet det det imaget selskapet på forhånd hadde kommunisert.
 
-#### Visjon-kultur gap
+### Visjon-kultur gap
 
 For at ansatte skal handle i tråd med visjonen, trenger du enten en visjon som bygger på selskapets eksisterende kultur, eller så må du jobbe med å endre kulturen slik at denne støtter opp om visjonen. Dette kan du lese mer om i Luke 10 der Thilde skriver om [hvordan forme kulturen når man arbeider med strategi](https://www.strategy.christmas/2020/10). Kultur spiser som kjent strategi til frokost, så hvis visjonen ikke er i synk med kulturen er det en risiko for at du ikke lykkes med å realisere visjonen og bygge det imaget du ønsker. Da har du et visjon-kultur gap, og visjonen var i beste fall en god frokost. 
 
