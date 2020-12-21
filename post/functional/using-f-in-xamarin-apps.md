@@ -3,10 +3,10 @@ calendar: functional
 post_year: 2020
 post_day: 21
 title: Using F# in Xamarin Apps
-description: "F# is not a natural drop-in replace for C# when writing mobile
+description: F# is not a natural drop-in replace for C# when writing mobile
   apps, but rather an excellent option for modeling our domain. Giving
-  expressive power, ease of testing and clean code where it matters the most:
-  the business rules and their data."
+  expressive power, ease of testing and clean code where it matters the most the
+  business rules and their data.
 ---
 My first post in this year's calendar on [some improved functional aspects of C#](https://functional.christmas/2020/5) was immediately met with some [well deserved snark](https://www.reddit.com/r/csharp/comments/k749sf/functional_c/geotkbc):
 
