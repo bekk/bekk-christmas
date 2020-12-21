@@ -86,7 +86,9 @@ Som svar på dette kommer overnevnte bok med en formel som forsøker å forklare
 
 Det er mye som kan sies om denne formelen og bakgrunnen for at den er bygget opp som den er. Denne kalenderposten er imidlertid lang nok som den er allerede. Det som imidlertid er verdt å merke seg er at det er kundenes *relative* vurdering av kundeopplevelsen hos ulike selskaper som betyr noe, og ikke kundeopplevelsen hos ditt selskap isolert sett. Måling av kundeopplevelse kan dermed fortsatt være relevant, men du må også forstå hvordan kunden vurderer opplevelsen av dine konkurrenter.
 
-Kombinerer vi denne formelen med kundesegmentering basert på økonomisk potensial begynner vi se konturene av hvordan vi kan jobbe aktivt med å skape vekst blant kundene: (1) Identifiser først kundesegmentet/ -segmentene med størst økonomisk potensial og fokuser analysen mot dem. (2) Bruk Wallet Allocation Rule til å finne ut hvordan disse kundene rangerer deg i forhold til dine konkurrenter. Det er gapet i rangeringen mellom deg og konkurrentene dine som bør være utgangspunktet for forbedringsarbeid og innovasjon. Gjort riktig vil dette kunne medføre økt share of wallet fra kundene, økt markedsandel og til syvende og sist fremtidig lønnsomhet for ditt selskap
+Kombinerer vi denne formelen med kundesegmentering basert på økonomisk potensial begynner vi se konturene av hvordan vi kan jobbe aktivt med å skape vekst blant kundene: (1) Identifiser først kundesegmentet/ -segmentene med størst økonomisk potensial og fokuser analysen mot dem. (2) Bruk Wallet Allocation Rule til å finne ut hvordan disse kundene rangerer deg i forhold til dine konkurrenter. Det er gapet i rangeringen mellom deg og konkurrentene dine som bør være utgangspunktet for forbedringsarbeid og innovasjon. 
+
+Gjort riktig vil dette kunne medføre økt share of wallet fra kundene, økt markedsandel og til syvende og sist fremtidig lønnsomhet for ditt selskap. Så enkelt og så vanskelig.
 
 ## Historien om Walmart og «Project impact»
 
