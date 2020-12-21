@@ -79,6 +79,12 @@ And once you start doing that, you can really go wild. Not saying that you shoul
 
 <img src="https://i.ibb.co/p0GZRyw/a-lot-of-emojis.png" style="border: 1px solid grey" alt="Example presentation using a lot of emojis">
 
+### Good for
+
+* Adding more life to simple presentations without too much work
+* Giving a more personal touch to your slides
+* Not looking professional
+
 ## Let's get crazy: drawing! 👨‍🎨
 
 For better or worse, a huge breakthrough for me was when I discovered the drawing tool in Powerpoint. It was one of those… moments. I was working in a weekend to get a presentation ready, I was getting a bit bored and was looking for something else. So, this abomination ended up in that presentation:
