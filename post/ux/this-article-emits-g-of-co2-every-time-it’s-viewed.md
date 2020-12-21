@@ -6,6 +6,10 @@ title: "This article emits ###g of CO2 every time it’s viewed..."
 ingress: ...whereas [this article](https://ux.christmas/2020/4) only emits
   0.27grams CO2 per page view. But oh [this one](https://ux.christmas/2020/6)…
   1.56grams CO2 for each view 😬
+description: "The internet and websites require a lot of energy, and thus also
+  have an impactful carbon footprint. As digital product designers and
+  developers, we have a responsibility to design and develop more sustainable
+  websites.  "
 authors:
   - Håkon L'orange
 ---
@@ -15,7 +19,7 @@ Well, I’m not particularly concerned about the environmental impact of these a
 
 As digital product designers and developers, we make tiny decisions every day. Decisions that affect the amount of energy required by data centers, networks, and devices to run what we design and build. Some of us are designing websites with hundreds of thousands or even millions of page views every year. Or even more. This means we’re in a position to make a lot of harm if we’re unconscious about the consequences of these everyday decisions. On the other hand, it also means we can have a great impact if we’re doing it the right way!
 
-By reading this article you’ll hopefully get a better understanding and become more conscious about the carbon footprint of websites and digital products. And fear not. It’s not all carbon shaming. I’ll also provide some tips and show how those green little tweaks in many cases also contribute to delivering better user experiences. Thank God it’s not all for sustainability’s sake!
+By reading this article you’ll hopefully get a better understanding and become more conscious about the carbon footprint of websites and digital products. And fear not. It’s not all carbon shaming. I’ll also provide some tips to design and develop more sustainable products and websites. More often than not, these tweaks will also improve your user's experiences. Thank God it’s not all for sustainability’s sake!
 
 ## So what makes these articles so different?
 
@@ -39,7 +43,7 @@ Here is a breakdown of the content and how it affects the web page.
 | g CO2 / page view         | 0.27                 | 1.56                 |
 | Compared to average sites | 81 % cleaner         | 68 % dirtier         |
 
-![Tabell](https://i.ibb.co/9vjkfjp/Skjermbilde-2020-12-21-kl-07-35-30.png)
+
 
 As you can see, there's quite a large difference in both words and images in these articles. From checking the network tab in the browser developer we can see that the images make the main difference between these articles. Actually, one of the images in the UX writing article is 1.2MB and makes up half the total page size of the. I don’t think the author was aware of this image’s size. And I don’t think he’s alone in not being aware of the size of images, videos, and other files that get added to the web. 
 
@@ -49,19 +53,19 @@ Plain markup and text hosted on the same server as the rest of the page require 
 
 Imagine these articles getting attention from the UX scene in various scales and parts of the world which brings the following page views and CO2 emissions.
 
-|                           |              | TOTAL KILOGRAMS OF CO2 |            |
-| ------------------------- | ------------ | ---------------------- | ---------- |
-| **Reach**                     | **Page views**   | **Figma**                  | **UX writing** |
-| Colleagues 🙋‍♀️🙋‍♂️     | 50           | 0.0135                 | 0.078      |
-| Norway 🇳🇴               | 1000         | 0.27                   | 1.56       |
-| Scandinavia 🇳🇴🇩🇰🇸🇪  | 50000        | 13.5                   | 78         |
-| Europe 🌍                 | 100000       | 27                     | 156        |
-| Global 🌍🌎🌏             | 550000       | 148.5                  | 858        |
-| Compared to average sites | 81 % cleaner | 68 % dirtier           |            |
+|                           |                | TOTAL KILOGRAMS OF CO2 |                |
+| ------------------------- | -------------- | ---------------------- | -------------- |
+| **Reach**                 | **Page views** | **Figma**              | **UX writing** |
+| Colleagues 🙋‍♀️🙋‍♂️     | 50             | 0.0135                 | 0.078          |
+| Norway 🇳🇴               | 1000           | 0.27                   | 1.56           |
+| Scandinavia 🇳🇴🇩🇰🇸🇪  | 50000          | 13.5                   | 78             |
+| Europe 🌍                 | 100000         | 27                     | 156            |
+| Global 🌍🌎🌏             | 550000         | 148.5                  | 858            |
+| Compared to average sites |                | 81 % cleaner           | 68 % dirtier   |
 
-![Tabell](https://i.ibb.co/SytYdGn/Skjermbilde-2020-12-21-kl-07-35-50.png)
 
-If these articles went completely viral across the globe with 550 000 pageviews each it would roughly add up to 1 ton of emitted CO2. One ton of CO2 compares to producing 250 hamburgers or flying one passenger about 4500 km – that’s roughly Oslo - Sardinia roundtrip. Considering these emissions are just for 2 pages and the page view numbers are quite small compared to other websites, you can see how this quickly adds up. 
+
+If these articles went completely viral across the globe with 550 000 pageviews each it would roughly add up to 1 ton of emitted CO2. One ton of CO2 compares to producing 250 hamburgers or flying one passenger about 4500 km – that’s roughly Oslo - Sardinia roundtrip. Considering these emissions are just for 2 pages below average size and quite few page views compared to other websites, you can see how this quickly adds up. 
 
 And by the way. The total time people (if they were in the UK) would wait to access these articles would be 21.9 days. Better make that content worth it!
 
@@ -114,8 +118,6 @@ By the way, @selbekk you don’t have to check. I already did. It doesn’t look
 
 There are sooo many other things you and your team can do. If you’re interested, Wholegrain Digital takes this topic seriously and provides many [additional tips for developing greener websites](https://www.wholegraindigital.com/blog/website-energy-efficiency/).
 
-
-
 ## Let’s make the world wide web green again 🌱
 
 Some nice (and green) websites and resources for you to check out:
@@ -130,7 +132,7 @@ Some nice (and green) websites and resources for you to check out:
 
 <p>&nbsp;</p>
 
----
+- - -
 
 Sources:
 
