@@ -110,7 +110,7 @@ Just talk about it. Tell developers, colleagues, and clients. Yes! Even friends,
 
 Use a green hosting service when starting a new project. The location of the data centers and their energy sources will have a huge impact on the CO2 emissions from your site/product. You can check what energy source your current hosting service uses on [websitecarbon.com](https://www.websitecarbon.com/) and see if you should switch. 
 
-By the way, @selbekk you don’t have to check. I already did. It doesn’t look good. Since you use every occasion to brag about how much traffic these calendars drive, I think it’s time we do our part and use green hosting for these calendars right away 😉 Hope you’re up for the challenge! In this article, you can learn about [how to choose a green hosting provider](https://www.wholegraindigital.com/blog/choose-a-green-web-host/). 
+By the way, Kristofer Selbekk you don’t have to check. I already did. It doesn’t look good. Since you use every occasion to brag about how much traffic these calendars drive, I think it’s time we do our part and use green hosting for these calendars right away 😉 Hope you’re up for the challenge! In this article, you can learn about [how to choose a green hosting provider](https://www.wholegraindigital.com/blog/choose-a-green-web-host/). 
 
 There are sooo many other things you and your team can do. If you’re interested, Wholegrain Digital takes this topic seriously and provides many [additional tips for developing greener websites](https://www.wholegraindigital.com/blog/website-energy-efficiency/).
 
