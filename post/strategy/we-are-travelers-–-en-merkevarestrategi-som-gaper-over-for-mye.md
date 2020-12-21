@@ -43,7 +43,7 @@ Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen,
 
 «Men jeg har jo lagt det til i bestillingen på nett. Det står jo her: 1 stk skibag!»
 
-«Ja, men jeg kan ikke se her at de er betalt for»
+«Ja, men de er ikke betalt for»
 
 «Neivel? Hvordan kan de ikke være betalt for? Jeg la de jo til billetten før jeg betalte?»
 
