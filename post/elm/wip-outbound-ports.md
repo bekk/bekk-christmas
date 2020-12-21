@@ -3,6 +3,7 @@ calendar: elm
 post_year: 2020
 post_day: 22
 title: Outbound ports
+image: https://images.unsplash.com/photo-1556805256-a0650b57d008?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
 ingress: Yesterday, we learned about inbound ports in elm. Today, instead of
   receiving a message, we want to send a message from our elm application to the
   outside world (JavaScript).
@@ -44,10 +45,20 @@ update msg model =
             ( model, sendButtonClickedMessage messageToSend )
 ```
 
-The `update` function proceeds to call the port and supply the `String` that will be received in our JavaScript code enclosing our elm applications. This code in JavaScript that will be receiving the message lives within 
+The `update` function proceeds to call the port and supply the `String` that will be received in our JavaScript code enclosing our elm applications. This code in JavaScript that will be receiving the message lives in the `index.html` file, within the `script` tags that we learned about in yesterday's post.
 
-```javascript
-app.ports.sendOutgoingMessage.subscribe(function(messageText) {
-    socket.send(messageText);
-});
+```html
+<script type="text/javascript">
+
+    var app = Elm.Main.init({
+        node: document.getElementById('elm-app')
+    });
+
+
+    app.ports.sendButtonClickedMessage.subscribe(function(messageText) {
+        console.log(messageText);
+    });
+</script>
 ```
+
+The message sent from elm will be received in the above javascript function, and inside this code block we can proceed to do whatever we want to do with the information received from elm.
