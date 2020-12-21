@@ -13,7 +13,7 @@ ingress: Thank you for joining our calendar this December. We truly hope you
 authors:
   - Nicolai August Hagen
 ---
-And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections from all of these hatches [2](https://www.talks.christmas/2020/2), [3](https://www.talks.christmas/2020/3), [9](https://www.talks.christmas/2020/9), [10](https://www.talks.christmas/2020/10), [11](https://www.talks.christmas/2020/11), [20](https://www.talks.christmas/2020/20), [21](https://www.talks.christmas/2020/21), or just enjoy the laughs from the old classic from Don McMillan;
+And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections from all of these hatches [2](https://www.talks.christmas/2020/2), [3](https://www.talks.christmas/2020/3), [9](https://www.talks.christmas/2020/9), [10](https://www.talks.christmas/2020/10), [11](https://www.talks.christmas/2020/11), [20](https://www.talks.christmas/2020/20), [21](https://www.talks.christmas/2020/21), or just enjoy the laughs from the old classic from Don McMillan *"Life After Death by PowerPoint"*;
 
 [![Life After Death by PowerPoint (Corporate Comedy Video)](https://img.youtube.com/vi/MjcO2ExtHso/0.jpg)](https://www.youtube.com/watch?v=MjcO2ExtHso "Life After Death by PowerPoint (Corporate Comedy Video)")
 
