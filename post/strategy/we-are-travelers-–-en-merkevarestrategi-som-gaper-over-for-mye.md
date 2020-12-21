@@ -7,9 +7,8 @@ image: https://images.unsplash.com/photo-1533289408336-ac92d0dbf036?ixid=MXwxMjA
 ingress: Ferie. Endelig. Vi skal hjem, til hvit jul og til skiføre. Billettene
   er for lengst booket, inkludert ski. Den digitale reisen har gått som smurt,
   men nå ender den brått i innsjekkingsskranken på Gardermoen, med en motvillig
-  kundesupport-ansatt i rubben. Hvorfor blir det slik, at inntrykket man har
-  fått av et selskap digitalt, kan ta en helomvending i møte med mennesker og
-  kultur?
+  SAS-ansatt i rubben. Hvorfor blir det slik, at inntrykket man har fått av et
+  selskap digitalt, kan ta en helomvending i møte med mennesker og kultur?
 links:
   - url: <https://hbr.org/2001/02/are-the-strategic-stars-aligned-for-your-corporate-brand>
     title: Are the strategic stars aligned for your corporate brand?
