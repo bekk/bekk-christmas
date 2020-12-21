@@ -4,6 +4,7 @@ post_year: 2020
 post_day: 22
 title: "The good, the bad and the hideous: experiments with visual presentation
   styles"
+description: "Join in on a journey of different and weird visual styles for presentations. "
 links:
   - title: "Fear, loathing and uneasy love: how experimentation taught me to enjoy
       public speaking"
