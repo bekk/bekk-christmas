@@ -46,7 +46,7 @@ update msg model =
             ( model, sendButtonClickedMessage messageToSend )
 ```
 
-The `update` function proceeds to call the port and supply the `String` that will be received in our JavaScript code enclosing our Elm applications. This code in JavaScript that will be receiving the message lives in the `index.html` file, within the `script` tags that we learned about in yesterday's post.
+The `update` function proceeds to call the port and supply the `String` that will be received in our JavaScript code enclosing our Elm applications. This code in JavaScript that will be receiving the message lives in the `index.html` file, within the `script` tags that we learned about in yesterday's [post](/2020/21).
 
 ```html
 <script type="text/javascript">
