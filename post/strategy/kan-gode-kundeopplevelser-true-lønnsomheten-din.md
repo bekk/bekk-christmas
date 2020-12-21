@@ -62,7 +62,7 @@ En tommelfingerregel, illustrert av den såkalte Stobachoff-kurven nedenfor, sie
 
 ![](/assets/stobachoff.png)
 
-Dette er sentral informasjon for å forstå lønnsomheten av kundebasen din, og bør være utgangspunktet for segmentering. Men dette betyr ikke nødvendigvis at ulønnsomme kunder er uinteressante. For hva om noen av disse kundene som er lite lønnsom i dag har det største økonomiske potensialet for fremtiden?
+En slik oversikt er sentral for å forstå lønnsomheten av kundebasen din, og bør være utgangspunktet for segmentering av kuundene. Men det betyr ikke nødvendigvis at ulønnsomme kunder er uinteressante. For hva om noen av disse kundene som er lite lønnsom i dag har det største økonomiske potensialet for fremtiden?
 
 Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensialet.
 
