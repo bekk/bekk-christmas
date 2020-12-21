@@ -18,6 +18,8 @@ Use a centralized logging tool, so you have a chance to aggregate and search thr
 
 2. Take control of your data
 
+Take a step back and consider, is the data I have something I really need. And, needing the data now does not mean that you need to keep it forever. Perform an analysis of what data you have and where it flows. In that way, it may be easier to identify vulnerabilities in where the data flows. Often it is the data you have that makes you an attractive target to attack. The less you know, the less tempting it will be to attack you.
+
 3. Never trust input
 
 4. Don't expose more than you need to
