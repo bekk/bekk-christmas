@@ -4,9 +4,9 @@ post_year: 2020
 post_day: 22
 title: Outbound ports
 image: https://images.unsplash.com/photo-1556805256-a0650b57d008?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
-ingress: Yesterday, we learned about inbound ports in Elm. Today, instead of
-  receiving a message, we want to send a message from our Elm application to the
-  outside world (JavaScript).
+ingress: In yesterday's [post](/2020/21), we learned about inbound ports in Elm.
+  Today, instead of receiving a message, we want to send a message from our Elm
+  application to the outside world (JavaScript).
 description: elm ports
 ---
 It is easy to imagine that we will have the need to communicate something from inside our Elm app to JavaScript. We might be using some browser API that doesn't exist in Elm and that is needed to be imported in JavaScript (FIX THIS SENTENCE).
