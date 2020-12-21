@@ -42,3 +42,5 @@ The sequence of anonymous tokens in Smittestopp will be:
 *From presentation (in Norwegian): <https://tjerandsilde.no/files/Anonym-Smittesporing.pdf>.*
 
 A [previous blog post](https://security.christmas/2020/9) discussed how privacy was handled in the first version of Smittestopp. We are happy to report that privacy has been a central aspect of the new app, and was endorsed by FHI. We believe that this work should be readily available for other countries' COVID-19 apps as well, and hope that this process also serves as a demonstration of how an open approach can bring in valuable contributions and expertise.
+
+Finally, the interested reader can find a demo-version of our protocol written in Go at [github.com/tjesi/anonymous-tokens](https://github.com/tjesi/anonymous-tokens), and a professionally built library in C# at [github.com/HenrikWM/anonymous-tokens](https://github.com/HenrikWM/anonymous-tokens).
