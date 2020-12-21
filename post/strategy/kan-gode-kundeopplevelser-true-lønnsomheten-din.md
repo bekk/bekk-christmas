@@ -80,7 +80,7 @@ Tidligere i teksten besluttet vi å bruke markedsandel som en proxy på vekst, o
 
 Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Det er også den av de tre komponentene som henger mest samme med kundeopplevelse. Det virker derfor logisk å rette innsatsen for økt markedsandel inn mot hvordan vi kan øke kundens share of wallet. 
 
-Det er på dette punktet overnevnte bok kommer med en formel som forsøker å forklare hva som påvirker share of wallet, i form av The Wallet Allocation Rule. 
+Det er på dette punktet overnevnte bok kommer med en formel som forsøker å forklare hva som påvirker share of wallet, i form av The Wallet Allocation Rule:
 
 ![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/wallet-allocation-rule.png)
 
