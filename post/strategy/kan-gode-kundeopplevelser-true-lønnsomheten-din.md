@@ -44,9 +44,9 @@ Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut t
 
 ![](/assets/kundeopplevelse-versus-markedsandel.png)
 
-Dersom selskapene med høy markedsandel i mindre grad tilrfedsstiller enkelte kunders behov og preferanser  innebærer det at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Fra dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil medføre at markedsandelen går ned - og motsatt. 
+Dersom selskapene med høy markedsandel i mindre grad tilfredsstiller enkelte kunders behov og preferanser  innebærer det at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Fra dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil medføre at markedsandelen går ned - og motsatt. 
 
-Og er ikke dette egentlig ganske logisk når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene på kjøpesenteret ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
+Og er ikke det egentlig ganske logisk når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene på kjøpesenteret ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
 
 Så er spørsmålet hvordan det likevel kan ha seg at mange studier viser en signifikant positiv sammenheng mellom tilfredshet og kjøpsatferd. Dette skyldes helt enkelt at de fleste studier benytter kundemålinger som er analysert og tolket på aggregert nivå, og som ignorerer det faktum at kundene varierer mye i preferanser, atferdsmønster og lønnsomhet. Ved å benytte gjennomsnittlig kundeopplevelse som utgangspunkt for tolkning vil ytterpunktene i tillegg kansellere hverandre ut og gi inntrykk av at tallene er mer korrellert enn de faktisk er. Vi må altså slutte å behandle alle kundene våre som om de skulle vært helt like.
 
@@ -64,7 +64,7 @@ En tommelfingerregel, illustrert av den såkalte Stobachoff-kurven nedenfor, sie
 
 Dette er sentral informasjon for å forstå lønnsomheten av kundebasen din, og bør være utgangspunktet for segmentering. Men dette betyr ikke nødvendigvis at ulønnsomme kunder er uinteressante. For hva om noen av disse kundene som er lite lønnsom i dag har det største økonomiske potensialet for fremtiden?
 
-Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensial.
+Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensialet.
 
 ## **Tiltak 2: Forstå hva som faktisk driver markedsandelen og bruk ressursene dine der det monner**
 
