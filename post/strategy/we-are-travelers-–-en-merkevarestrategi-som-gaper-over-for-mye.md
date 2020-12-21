@@ -49,10 +49,11 @@ Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen,
 
 «Nei, jeg vet ikke»
 
-«Men 540 kr? Det koster vel ikke så mye på nett?»\
+«Men 540 kr? Det koster vel ikke så mye på nett?»
+
 «Nei, det koster mer å betale på flyplassen»
 
-«Men, de er jo bestilt som del av billetten! Det står jo her på kvitteringen! Hvordan skal jeg kunne betale på nett hvis ikke skiene legges til betalingen når jeg bestiller!?»
+«Men, de er jo bestilt på nett! Det står jo her på kvitteringen! Hvordan skal jeg kunne betale på nett hvis ikke skiene legges til betalingen når jeg bestiller!?»
 
 ...
 
