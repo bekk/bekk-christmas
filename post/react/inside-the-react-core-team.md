@@ -3,6 +3,8 @@ calendar: react
 post_year: 2020
 post_day: 24
 title: Inside the React Core team
+authors:
+  - Rachel Nabors (React Core team)
 ---
 ![Drawing of a plant with its roots, illustrating that a flower of success has tons of roots of failure](https://i.ibb.co/tmXN0bB/jgat011e.jpg)
 
