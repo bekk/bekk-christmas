@@ -34,7 +34,7 @@ An interesting observation is that since the underlying type is the same for mut
     modifiableSet.remove("A")
  }
 
- println(set)
+ println(aSet)
 ```
 
  which will print `[B, C, D]`.
