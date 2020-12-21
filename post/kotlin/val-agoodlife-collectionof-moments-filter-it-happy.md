@@ -19,7 +19,7 @@ ingress: >-
   Under the hood kotlin uses the corresponding java classes, and a bit of compiler magic to ensure that the types effectively seem to implement the kotlin interfaces, known as *mapped types*. Runtime, however, there is no difference between the java and kotlin counterparts. There is a couple of big benefits with this approach: First, instead of implementing new collections natively in kotlin, the battletested implementations of java can be used. Second, interoperability between java and kotlin is ensured. And it means you can still use the`java.util.Vector` class, and get the extension goodies associated with the kotlin `Collection` and `List` interfaces in kotlin. 
 
 
-  ```
+  ```kotlin
 
   val vector = Vector<String>(3) // java.util.Vector
 
@@ -40,7 +40,7 @@ ingress: >-
   The fact that a collection is mutable, is not the same that the variable needs to be mutable. In fact, the opposite is closer to the truth. Consider
 
 
-  ```
+  ```kotlin
 
   // Immutable list assigned to reassignable variable
 
@@ -57,10 +57,12 @@ ingress: >-
 
   valList.add("even better")
 
-
   ```
 
 
   A mutable collection can (and should?) be assigned to a read-only variable. Even though the variable cannot be reassigned you can freely modify the collection. From a performance perspective you would in principle expect better performance by modifying the contents of a single collection, rather than creating new instances (but being guilty of premature optimization, most likely).
+
+
+  All in all, kotlin's handling of collections is a pragmatic compromise between interoperability, reuse, and readability. The result is robust, high-performing implementations, sleak interfaces, and an anbundance of extensions to make your development experience joyful.
 ---
 TODO
