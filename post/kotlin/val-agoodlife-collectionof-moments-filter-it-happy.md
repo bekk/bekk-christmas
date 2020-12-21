@@ -6,7 +6,7 @@ title: Collection magic
 image: https://source.unsplash.com/JBrfoV-BZts/1600x900
 ingress: ""
 ---
-Kotlin has a restricted menu of collection types available. Basically, it boils down to `Set`, `List`, and `Map` (even though `Map` *technically* is not a `Collection`), whereas java has a seemingly much larger offering. For example, java's `List` interface has implementations like `Stack`, `Vector` and `LinkedList`. On top of that, the kotlin collection interfaces have less features than their java counterparts.  
+Kotlin has a restricted menu of collection types available. Basically, it boils down to `Set`, `List`, and `Map` (even though `Map` *technically* is not a `Collection`), whereas java seemingly has a much larger lineup. For example, java's `List` interface has implementations like `Stack`, `Vector` and `LinkedList`. On top of that, the kotlin collection interfaces have less features than their java counterparts.  
 
 One rationale behind this design choice is probably platform interoperability - simpler interfaces would allow kotlin code to be more easily complied down to javascript, mobile platforms, or other virtual machines. Another reason is that extension methods and properties allow kotlin to add a lot more features to the various collections without "polluting" the interface. Finally, the corresponding java interfaces are all mutable, with methods like `add` and `remove`, while kotlin has explicit interfaces for mutable collections, like `MutableList`, `MutableSet`, and `MutableMap`. This is a cleaner, more readable improvement of the `Unmodifiable`* wrappers for the `java.util.List` interface in java.
 
