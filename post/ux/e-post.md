@@ -87,4 +87,4 @@ Jeg har nå igjen to dager før jeg må betale for Hey. En forholdsvis stiv pris
 
 <p>&nbsp;</p>
 
-_Tusen takk til Helen Le, Kjersti Barstad Strand og Ola Claussen for gode innspill, korrekturlesing og support._
+_Tusen takk til Helen Le, Kjersti Barstad Strand og Ola Claussen for innspill, korrekturlesing og support._
