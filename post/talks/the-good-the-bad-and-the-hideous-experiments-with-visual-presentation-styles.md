@@ -108,14 +108,14 @@ Obviously, this isn't fit for all (or even most) situations, but I find it creat
 
 You can probably see the trend here. And feel the worry: will he go there? And yes, I've went there. Before you judge: remember that all presentations have their context. Sometimes you want to teach, sometimes you want to preach, sometimes you need to win an argument. And sometimes you just want to entertain.
 
-A relaxing opening slide:<br>
+A relaxing opening slide:
 <img src="https://i.ibb.co/9sJJr1M/lada.png" style="border: 1px solid grey" alt="Hand drawn opening slide">
 
 
-A much less relaxing opening slide:<br>
+A much less relaxing opening slide:
 <img src="https://i.ibb.co/GvYZvYM/wizards.gif" style="border: 1px solid grey" alt="Animated opening slide">
 
-How to horizontally scale infrastructure:<br>
+How to horizontally scale infrastructure:
 <img src="https://i.ibb.co/xfmTgGf/infrastructure.gif" style="border: 1px solid grey" alt="Animated infrastructure slide">
 
 ### Good for
