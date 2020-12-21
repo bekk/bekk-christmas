@@ -51,7 +51,7 @@ Imagine these articles getting attention from the UX scene in various scales and
 
 |                           |              | TOTAL KILOGRAMS OF CO2 |            |
 | ------------------------- | ------------ | ---------------------- | ---------- |
-| Reach                     | Page views   | Figma                  | UX writing |
+| **Reach**                     | **Page views**   | **Figma**                  | **UX writing** |
 | Colleagues 🙋‍♀️🙋‍♂️     | 50           | 0.0135                 | 0.078      |
 | Norway 🇳🇴               | 1000         | 0.27                   | 1.56       |
 | Scandinavia 🇳🇴🇩🇰🇸🇪  | 50000        | 13.5                   | 78         |
