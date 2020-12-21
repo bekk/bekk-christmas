@@ -71,7 +71,7 @@ SAS tjener her som eksempel på et problem som er velkjent nok til at det har bl
 
 Ethvert selskap er en merkevare. Kundene har et bilde og inntrykk av selskapet, hva de står for og hva man som kunde kan forvente. Denne oppfatningen har selskapet begrenset kontroll over, siden den eies vel så mye av den som står på utsiden, slik som kundene, som de som sitter på innsiden og lager strategier. De fleste selskaper legger derfor betydelige ressurser i å markedsføre seg, for å sikre at kundens inntrykk av selskapet gjenspeiler visjonen. Dersom kundenes inntrykk avviker fra visjonen, har man et image-visjon gap. 
 
-Nikes visjon var å lage «high-performance athletic shoes» til toppidrettsutøvere. Så oppdaget de at halvparten av salget var til folk som brukte Nike som hverdagssko, og lanserte dermed en egen linje med hverdagssko – som ingen kjøpte. Kundene kjøpte Nike fordi de ønsket å gå i samme sko som idolene sine, de likte atlet-imaget, og det var ikke før Nike innså dette at de virkelig kunne «sko seg» på visjonen sin.
+Nikes visjon var å lage «high-performance athletic shoes» til toppidrettsutøvere. Så oppdaget de at halvparten av salget var til folk som brukte Nike som hverdagssko, og de lanserte dermed en egen linje med hverdagssko – som ingen kjøpte. Kundene kjøpte Nike fordi de ønsket å gå i samme sko som idolene sine, de likte atlet-imaget, og det var ikke før Nike innså dette at de virkelig kunne «sko seg» på visjonen sin.
 
 ### Image-kultur gap
 
