@@ -66,7 +66,7 @@ En slik oversikt er sentral for å forstå lønnsomheten av kundebasen din, og b
 
 Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensialet.
 
-## **Tiltak 2: Forstå hva som faktisk driver markedsandelen og bruk ressursene dine der det monner**
+## **Tiltak 2: Forstå hva som faktisk driver markedsandelen og bruk ressursene dine deretter**
 
 Tidligere i teksten besluttet vi å bruke markedsandel som en proxy på vekst, og definerte det som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
 
@@ -78,7 +78,7 @@ Tidligere i teksten besluttet vi å bruke markedsandel som en proxy på vekst, o
 
 *Share of wallet* betegner den andelen av en kundens forbruk i en gitt produktkategori som tilfaller deg. Altså hvor stor andel av kundens «produktlommebok» som brukes på dine produkter. Share of wallet økes ved å få kundene til å bruke flere penger hos deg som de i dag bruker hos dine konkurrenter.
 
-Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Det er også den av de tre komponentene som henger mest samme med kundeopplevelse. Det virker derfor logisk å rette innsatsen for økt markedsandel inn mot hvordan vi kan øke kundens share of wallet. 
+Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Det er også den av de tre komponentene som henger mest sammen med kundeopplevelse. Det virker derfor logisk å rette innsatsen for økt markedsandel inn mot hvordan vi kan øke kundens share of wallet. 
 
 Det er på dette punktet overnevnte bok kommer med en formel som forsøker å forklare hva som påvirker share of wallet, i form av The Wallet Allocation Rule:
 
