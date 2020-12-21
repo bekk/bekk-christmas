@@ -32,47 +32,45 @@ Nei, det er faktisk ikke slik. I boka «The Wallet Allocation Rule» fra 2015 pr
 
 Kommersielle selskaper er vanligvis besatt av å oppnå to ting, nemlig profitt og vekst. Over tid er det imidlertid vekst som regnes å være den viktigste indikatoren på et selskaps finansielle suksess. Det er tross alt vekst som skaper økonomisk verdi for aksjonærene og som legger grunnlaget for den langsiktige verdien av selskapet. 
 
-Vekst kan måles på en rekke ulike måter, avhengig av hvilket selskap og marked man befinner seg i. For selskaper som befinner seg i et modent marked, med et relativt oversiktlig konkurrentlandskap, handler dette som oftest om å øke selskapets markedsandel. Markedsandelen defineres da typisk som *Selskapets salgsinntekter/ Totalt salg i markedet*, slik at en økning i markedsandel krever at selskapet tilegner seg en større andel av markedets totale omsetning. Et klassisk eksempel er hvordan de ulike dagligvarekjedene hver dag kjemper om kundenes matbudsjett. Handler du middagen din på Rema 1000, Kiwi eller Coop i dag? Eller blir det Jacobs siden det snart er jul?
+Vekst kan måles på en rekke ulike måter, avhengig av hvilket selskap og marked man befinner seg i. For selskaper som befinner seg i et modent marked, med et relativt oversiktlig konkurrentlandskap, handler dette som oftest om å øke selskapets markedsandel. Markedsandelen defineres da typisk som *Selskapets salgsinntekter/ Totalt salg i markedet.* En økning i markedsandel krever dermed at selskapet tilegner seg en større andel av markedets totale omsetning. Et klassisk eksempel er hvordan de ulike dagligvarekjedene hver dag kjemper om kundenes matbudsjett. Handler du middagen din på Rema 1000, Kiwi eller Coop i dag? Eller blir det Jacobs siden det snart er jul?
 
 Det virker derfor rimelig å bruke markedsandel som en indikator på vekst og langsiktig lønnsomhet. Med dette som utgangspunkt kan vi se nærmere på forholdet til kundeopplevelse.
 
 ## **Markedsandel og kundeopplevelse er negativt korrelert**
 
-I et marked som består av kunder med ulike behov og preferanser må et selskap posisjonere seg med én hovedmålgruppe i tankene. En aktør i dagligvaremarkedet må for eksempel bestemme om det primært er lavprissegmentet man skal rette seg mot eller om man i stedet skal tilby varer med høyere kvalitet og pris. 
+I et marked som består av kunder med ulike behov og preferanser må et selskap posisjonere seg med én hovedmålgruppe i tankene. En aktør i dagligvaremarkedet må for eksempel bestemme om det primært er lavprissegmentet de skal rette seg mot eller om de i stedet skal tilby varer med høyere kvalitet og pris. 
 
-Selskaper med stor markedsandel (typisk massemarked) må nødvendigvis nå ut til flere kunder, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de har flere kunder som ikke er helt i tråd med selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
+Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut til flere kunder i markedet, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de betjener flere kunder som ikke er innefor selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
 
 ![](/assets/kundeopplevelse-versus-markedsandel.png)
 
-Dersom selskapene med høy markedsandel i mindre grad svarer på kundenes behov og preferanser vil det innebære at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil innebære at markedsandelen går ned - og motsatt.
+Dersom selskapene med høy markedsandel i mindre grad svarer på enkelte kunders behov og preferanser vil det innebære at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil innebære at markedsandelen går ned - og motsatt. 
 
-Og er ikke dette egentlig ganske logisk når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
+Og er ikke dette egentlig ganske logisk når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene på kjøpesenteret ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
 
 Så er spørsmålet hvordan det likevel kan ha seg at mange studier viser en signifikant positiv sammenheng mellom tilfredshet og kjøpsatferd. Dette skyldes helt enkelt at de fleste studier benytter kundemålinger som er analysert og tolket på aggregert nivå, og som ignorerer det faktum at kundene varierer mye i preferanser, atferdsmønster og lønnsomhet. Ved å benytte gjennomsnittlig kundeopplevelse som utgangspunkt for tolkning vil ytterpunktene i tillegg kansellere hverandre ut og gi inntrykk av at tallene er mer korrellert enn de faktisk er. Vi må altså slutte å behandle alle kundene våre som om de skulle vært helt like.
 
-Med nyvunnet kunnskap om at kundeopplevelse ikke driver vekst, og at bruk av aggregerte data ofte kan gi inntrykk av det motsatte, blir dermed spørsmålet: Hvordan burde vi heller gått frem for å sikre lønnsom vekst fra kundene våre?
+Med nyvunnet kunnskap om at kundeopplevelse ikke driver vekst, og at bruk av aggregerte data ofte kan gi inntrykk av det motsatte, blir dermed spørsmålet: Hvordan bør du heller gå frem for å sikre lønnsom vekst fra dine kunder? 
 
-## **Løsning 1: Å segmentere kundene på lønnsomhetspotensial**
+## **Tiltak 1: Segmenter kundene dine basert på lønnsomhetspotensial**
 
-Første løsning på problemet handler om hvordan kundene segmenteres. Som vi var innom lenger i forrige avsnitt må vi slutte å behandle kundene våre som om de skulle vært like. Kundetilfredshet og NPS gjør imidlertid en dårlig jobb med å forklare vekst og lønnsomhet, og er derfor lite egnet som segmenteringsvariabel. Vi trenger derfor en annen måte å segmentere kunder på.
+Første løsning på problemet handler om hvordan kundene segmenteres. Som vi var innom i forrige avsnitt må vi slutte å behandle kundene våre som om de skulle vært helt like. Kundetilfredshet og NPS gjør imidlertid en dårlig jobb med å forklare vekst og lønnsomhet, og er derfor lite egnet som segmenteringsvariabel. Vi trenger derfor en annen måte å segmentere kunder på.
 
-Svaret er egentlig ganske logisk: Du må basere segmenteringen på en forståelse av hvor pengene dine kommer fra, eller enda bedre: Hvor pengene kan komme fra i fremtiden. 
+Svaret er egentlig ganske logisk: Du må basere segmenteringen på en forståelse av hvor pengene dine kommer fra. Eller enda bedre: Hvor pengene kan komme fra i fremtiden. 
 
 En tommelfingerregel, illustrert av den såkalte Stobachoff-kurven nedenfor, sier at 20% av kundene din bidrar til at du tjener penger, 60% av kundene går i null og 20% bidrar til å redusere lønnsomheten din. Sagt på en annen måte er det bare en femtedel av kundene dine som bidrar til overskuddet ditt, mens en annen femtedel faktisk reduserer det.
 
 ![](/assets/stobachoff.png)
 
-Dette er kritisk informasjon for å forstå kundelønnsomheten din, og bør være utgangspunktet for segmentering. Men dette betyr ikke nødvendigvis at ulønnsomme kunder er uinteressante. For hva om noen av disse kundene har det største økonomiske potensialet?
+Dette er sentral informasjon for å forstå lønnsomheten av kundebasen din, og bør være utgangspunktet for segmentering. Men dette betyr ikke nødvendigvis at ulønnsomme kunder er uinteressante. For hva om noen av disse kundene som er lite lønnsom i dag har det største økonomiske potensialet for fremtiden?
 
 Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensial.
 
 ## **Løsning 2: Å forstå hva som faktisk driver markedsandel**
 
-Tidligere i teksten har vi benyttet markedsandel som en proxy på vekst, og definert den som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
-
+Tidligere i teksten besluttet vi å bruke markedsandel som en proxy på vekst, og definerte det som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
 
 *Markedsandel = Penetrasjonsrate × Forbruksindeks × Share of wallet* 
-
 
 *Penetrasjonsraten* er andelen kunder i markedet som har kjøpt ditt produkt minst én gang i en gitt tidsperiode, og som dermed kan regnes som en del av din eksisterende kundebase. Penetrasjonsraten øker du ved å skaffe deg nye kunder.
 
@@ -82,25 +80,25 @@ Tidligere i teksten har vi benyttet markedsandel som en proxy på vekst, og defi
 
 Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseffektive driveren å påvirke. Det er også den av de tre komponentene som henger mest samme med kundeopplevelse. Det virker derfor logisk å rette innsatsen for økt markedsandel inn mot hvordan vi kan øke kundens share of wallet. 
 
-Det er på dette punktet overnevnte bok kommer med en løsning på hvordan dette kan beregnes, i form av The Wallet Allocation Rule, som gjengitt under:
+Det er på dette punktet overnevnte bok kommer med en formel som forsøker å forklare hva som påvirker share of wallet, i form av The Wallet Allocation Rule. 
 
 ![](/assets/wallet-allocation-rule.png)
 
-Det er mye som kan sies om denne formelen og bakgrunnen for at den er bygget opp som den er. Denne kalenderposten er imidlertid lang nok som den er.Det som imidlertid er verdt å merke seg er at det er kundenes *relative* vurdering av kundeopplevelsen hos ulike selskaper som betyr noe, og ikke kundeopplevelsen hos ett selskap isolert sett. Måling av kundeopplevelse kan dermed fortsatt være relevant, men du må også forstå hvordan kunden vurderer opplevelsen av dine konkurrenter.
+Det er mye som kan sies om denne formelen og bakgrunnen for at den er bygget opp som den er. Denne kalenderposten er imidlertid lang nok som den er alllerede. Det som imidlertid er verdt å merke seg er at det er kundenes *relative* vurdering av kundeopplevelsen hos ulike selskaper som betyr noe, og ikke kundeopplevelsen hos ditt selskap isolert sett. Måling av kundeopplevelse kan dermed fortsatt være relevant, men du må også forstå hvordan kunden vurderer opplevelsen av dine konkurrenter.
 
-Kombinerer du denne formelen med kundesegmentering basert på økonomisk potensial begynner vi se oppskriften på hvordan man jobber aktivt med å skape vekst. Identifiser først kundesegmentet/-segmentene med størst økonomisk potensial og fokuser analysen mot dem. Bruk deretter Wallet Allocation Rule til å finne ut hvordan disse kundene rangerer deg i forhold til dine konkurrenter. Det er dette gapet i opplevelse mellom deg og konkurrentene dine som bør være utgangspunktet for forbedring og forretningsutvikling - til syvende og sist for øke kundens share of wallet - og dermed sin markedsandel. Dette vil igjen sikrer deg vekst og fremtidig lønnsomhet - så enkelt og så vanskelig.
+Kombinerer vi denne formelen med kundesegmentering basert på økonomisk potensial begynner vi se konturene av hvordan vi kan jobber aktivt med å skape vekst: (1) Identifiser først kundesegmentet/ -segmentene med størst økonomisk potensial og fokuser analysen mot dem og  (2) Bruk Wallet Allocation Rule til å finne ut hvordan disse kundene rangerer deg i forhold til dine konkurrenter. Det er gapet i rangeringen mellom deg og konkurrentene dine som bør være utgangspunktet for forbedring og forretningsutvikling. Gjort riktig vil dette kunne medføre økt share of wallet fra kundene, økt markedsandel og til syvende og sist vekst og fremtidig lønnsomhet. 
 
 ## Historien om Walmart og «Project impact»
 
-Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg gjennom finanskrisen med mye bedre økonomiske resultater enn sine konkurrenter. Det eneste området der Walmart fortsatt lå bak konkurrentene var kundetilfredshet.
+Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg gjennom finanskrisen med mye bedre økonomiske resultater enn sine konkurrenter.  Flere av konkurrentene kunne imidlertid vise til bedre resultater på kundetilfredshet, noe ledelsen bestemte seg for å gjøre noe med.
 
-Med dette som utgangspunkt satte konsernledelsen i gang «Project impact» for å øke kundetilfredsheten. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI-resultatene skjøt i taket. Samtidig endte selskapet opp med å miste dramatisk store markedsandeler.
+På bakgrunn av dette satte konsernledelsen i gang «Project impact» som hadde som mål å øke tilfredsheten blant selskapets kunder. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI-resultatene skjøt i taket. Samtidig endte selskapet opp med å miste dramatisk store markedsandeler.
 
 ![](/assets/walmart1.png)
 
-Så hva var det egentlig som skjedde? Walmart gjennomførte sine forbedringstiltak uten en tydelig forståelse for hvor inntektene deres kom fra. Selv om mange kunder ble mer fornøyde hadde de ikke nødvendigvis mer penger å bruke i butikken. Andre kunder så antakeligvis ikke lenger poenget med å dra på Walmart når de billige varene lenger ikke lenger var der. Da kunne de vel like greit bruke pengene et annet sted? 
+Så hva var det egentlig som skjedde? Walmart gjennomførte sine forbedringstiltak uten en tydelig forståelse for hvor inntektene deres kom fra. Selv om mange kunder ble mer fornøyde hadde de ikke nødvendigvis mer penger å bruke i butikken. Andre kunder så  ikke lenger poenget med å dra på Walmart når de billige varene og tilbudstorgene lenger ikke var der. Da kunne de vel likså greit bruke pengene et annet sted? 
 
-Project Impact viser faren ved å fokusere på å forbedre kundeopplevelsen uten sterk tilknytning til kundens forbruk og kjøpsmønster. CEO i Walmart William S. Simon, oppsummerte dette på en fin måte:  
+Project Impact viser faren ved å fokusere på å forbedre kundeopplevelsen uten en klar kobling til kundens forbruk og kjøpsmønster. CEO i Walmart William S. Simon, oppsummerte dette på en fin måte:  
 
 *“They loved the experience. They just bought less. And that generally is not a good long-term strategy.”*
 
