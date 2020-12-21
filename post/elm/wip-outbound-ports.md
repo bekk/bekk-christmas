@@ -9,7 +9,7 @@ ingress: Yesterday, we learned about inbound ports in Elm. Today, instead of
   outside world (JavaScript).
 description: elm ports
 ---
-It is easy to imagine that we will have the need to communicate something from inside our Elm app to JavaScript. We might be using some browser API that doesn't exist in Elm and that is needed to be imported in JavaScript (FIX THIS).
+It is easy to imagine that we will have the need to communicate something from inside our Elm app to JavaScript. We might be using some browser API that doesn't exist in Elm and that is needed to be imported in JavaScript (FIX THIS SENTENCE).
 
 First we will declare our outgoing port.
 
