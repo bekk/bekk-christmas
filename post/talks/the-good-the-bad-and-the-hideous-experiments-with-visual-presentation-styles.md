@@ -112,6 +112,12 @@ A much less relaxing opening slide:<br>
 How to horizontally scale infrastructure:<br>
 <img src="https://i.ibb.co/xfmTgGf/infrastructure.gif" style="border: 1px solid grey" alt="Animated infrastructure slide">
 
+### Good for
+
+* Creating stunning or surprising slides that capture people's attention by sheer audicity
+* Showing complex interactions and flow
+* Entertaining and creating emotion
+
 ## So… now what?
 
 So that's a brief intro to what I've been doing. And I'm pretty sure I don't really need to tell you that all of these are good ideas. Especially in all contexts. And that's the key word here: context.
