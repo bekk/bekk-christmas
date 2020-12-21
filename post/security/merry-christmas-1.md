@@ -8,8 +8,6 @@ authors:
 ---
 The last weeks, we have covered a lot of different topics. We started by giving you a few tips for a more secure application. Before we log out of this years calendar, which we certainly hope that you have enjoyed, we give give you a few more.
 
-
-
 1. Sufficient logging and monitoring
 
 Without sufficient logging you know very little about how you are app is doing. You can be under constant attack, without even knowing about it. Pay special attention to login-errors and failed validation of input. These things can be signs of someone trying to attack you. 
@@ -26,6 +24,6 @@ Might seem obvious and a bit repetetive, but you should never trust input to you
 
 4. Don't expose more than you need to
 
-A user does normally not care about that you use version X of webserver Y. So, why not keep that information for yourself? There is no need to expose such information, e.g. in an error message or stack-trace ini tmsfdg
+A user does normally not care about that you use version X of webserver Y. Or that you have a table-column named Z in your database. So, why not keep that information for yourself? We see lot of examples where such information is exposed in error messages or stack-traces when something goes wrong.
 
 5. Know your platform
