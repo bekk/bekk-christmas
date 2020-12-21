@@ -1,7 +1,7 @@
 ---
 calendar: ux
 post_year: 2020
-post_day: 24
+post_day: 21
 title: "This article emits ###g of CO2 every time it’s viewed..."
 ingress: ...whereas [this article](https://ux.christmas/2020/4) only emits
   0.27grams CO2 per page view. But oh [this one](https://ux.christmas/2020/6)…
