@@ -4,6 +4,14 @@ post_year: 2020
 post_day: 22
 title: "The good, the bad and the hideous: experiments with visual presentation
   styles"
+links:
+  - title: "Fear, loathing and uneasy love: how experimentation taught me to enjoy
+      public speaking"
+    url: https://www.talks.christmas/2020/11
+  - url: https://www.theguardian.com/artanddesign/architecture-design-blog/2013/jun/12/prism-nsa-powerpoint-graphic-design
+    title: "Prism: the PowerPoint presentation so ugly it was meant to stay secret"
+authors:
+  - Jøran Vagnby Lillesand
 ---
 Remember the Global Surveillance Disclosures from Edward Snowden in June 2013? Of course. We all remember that faithful day when the world become a slightly more scary place, but also a bit more illuminated. What you might not remember, is the the widely publicized slide deck that the Guardian dubbed “[Prism: the PowerPoint presentation so ugly it was meant to stay secret](https://www.theguardian.com/artanddesign/architecture-design-blog/2013/jun/12/prism-nsa-powerpoint-graphic-design).” Top secret and scary? Certainly. Pretty and inspiring? Nope:
 
