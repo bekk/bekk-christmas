@@ -86,7 +86,21 @@ For better or worse, a huge breakthrough for me was when I discovered the drawin
 
 <img src="https://i.ibb.co/4NnF9Ht/neshorn.png" style="border: 1px solid grey" alt="A hand drawn rhino head in a presentation. But why.">
 
+It can also be used for (slightly) more useful things:
 
+<img src="https://i.ibb.co/Jkg44pM/drawings.gif" style="border: 1px solid grey" alt="Hand drawn slides">
+
+Obviously, this isn't fit for all (or even most) situations, but I find it creates a really neat personal touch on light subjects.
+
+### Good for
+
+* When you want to add a personal touch
+* Lightening the mood with entertaining slides
+* Visualizing concepts, for example with technical drawings
+
+## Just because you can, doesn't mean you should: bring it all together! 🤠
+
+You can probably see the trend here. And feel the worry: will he go there? And yes, I've went there.
 
 
 ## A word about templates
