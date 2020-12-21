@@ -22,6 +22,8 @@ Take a step back and consider, is the data I have something I really need. And, 
 
 3. Never trust input
 
+Might seem obvious and a bit repetetive, but you should never trust input to your app. Neither from users or other systems. Escape requestdata that you cannot trust. In frontend, use a framework or tool designed to prevent XSS. If you are talking to a relational database, you might use a light-weight ORM-tool with advantage. As we mentioned in 1st of December, know your HTTP-headers and use them correctly. 
+
 4. Don't expose more than you need to
 
 5. Know your platform
