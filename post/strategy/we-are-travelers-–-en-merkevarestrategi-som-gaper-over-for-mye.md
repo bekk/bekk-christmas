@@ -77,7 +77,7 @@ Nikes visjon var å lage «high-performance athletic shoes» til toppidrettsutø
 
 Men, kundens oppfatning av selskapet avhenger ikke bare av hva man kommuniserer ut gjennom mottoer og markedsføring. For å lykkes med en visjon, for eksempel at man skal spille på lag med kunden, må også kulturen, altså de ansattes verdier, holdninger og handlinger, gjenspeile visjonen. Dersom kunden opplever at de ansatte i selskapet gjør noe annet enn det selskaper formidler at de skal gjøre, har man et image-kultur gap. 
 
-British Airways lanserte en kampanje for å endre sitt image fra «The worlds *favourite* airline» til «The *worlds* favourite airline». For å kommunisere ette malte de flyenes haleror med kunst fra ulike verdensdeler. I det du satte deg på flyet møtte du imidlertid flyvertinner i tradisjonelle britiske uniformer som serverte engelsk *tea* i sølvservise. Opplevelsen de reisende fikk ved bruk av tjenesten var distinkt britisk, som ikke matchet det det imaget selskapet på forhånd hadde kommunisert.
+British Airways lanserte en kampanje for å endre sitt image fra «The worlds *favourite* airline» til «The *worlds* favourite airline». For å kommunisere dette malte de flyenes haleror med kunst fra ulike verdensdeler. I det du satte deg på flyet møtte du imidlertid flyvertinner i tradisjonelle britiske uniformer som serverte engelsk *tea* i sølvservise. Opplevelsen de reisende fikk ved bruk av tjenesten var distinkt britisk, som ikke matchet det det imaget selskapet på forhånd hadde kommunisert.
 
 ### Visjon-kultur gap
 
