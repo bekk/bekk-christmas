@@ -44,7 +44,7 @@ Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut t
 
 ![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/kundeopplevelse-versus-markedsandel.png)
 
-Dersom selskapene med høy markedsandel i mindre grad svarer på enkelte kunders behov og preferanser vil det innebære at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil innebære at markedsandelen går ned - og motsatt. 
+Dersom selskapene med høy markedsandel i mindre grad tilrfedsstiller enkelte kunders behov og preferanser  innebærer det at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil innebære at markedsandelen går ned - og motsatt. 
 
 Og er ikke dette egentlig ganske logisk når du tenker deg om? Du er sikkert glad i den nisjebutikken på hjørnet der du bor, mens de store butikkjedene på kjøpesenteret ikke akkurat får blodet ditt til å bruse. Men gjett hvem av dem som tjener mest penger?
 
