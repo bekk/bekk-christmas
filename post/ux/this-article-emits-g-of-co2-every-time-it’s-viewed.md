@@ -19,7 +19,7 @@ Well, I’m not particularly concerned about the environmental impact of these a
 
 As digital product designers and developers, we make tiny decisions every day. Decisions that affect the amount of energy required by data centers, networks, and devices to run what we design and build. Some of us are designing websites with hundreds of thousands or even millions of page views every year. Or even more. This means we’re in a position to make a lot of harm if we’re unconscious about the consequences of these everyday decisions. On the other hand, it also means we can have a great impact if we’re doing it the right way!
 
-By reading this article you’ll hopefully get a better understanding and become more conscious about the carbon footprint of websites and digital products. And fear not. It’s not all carbon shaming. I’ll also provide some tips to design and develop more sustainable products and websites. More often than not, these tweaks will also improve your user's experiences. Thank God it’s not all for sustainability’s sake!
+By reading this article you’ll hopefully get a better understanding and become more conscious about the carbon footprint of websites and digital products. And fear not. It’s not all carbon shaming. I’ll also provide some tips to design and develop more sustainable products and websites. More often than not, these tweaks will also improve your user's experiences.
 
 ## So what makes these articles so different?
 
@@ -43,8 +43,6 @@ Here is a breakdown of the content and how it affects the web page.
 | g CO2 / page view         | 0.27                 | 1.56                 |
 | Compared to average sites | 81 % cleaner         | 68 % dirtier         |
 
-
-
 As you can see, there's quite a large difference in both words and images in these articles. From checking the network tab in the browser developer we can see that the images make the main difference between these articles. Actually, one of the images in the UX writing article is 1.2MB and makes up half the total page size of the. I don’t think the author was aware of this image’s size. And I don’t think he’s alone in not being aware of the size of images, videos, and other files that get added to the web. 
 
 Plain markup and text hosted on the same server as the rest of the page require minimal amounts of additional energy needed to load the page. Whereas media, custom font files, javascript packages, and scripts that are hosted outside can quickly add up and make your page large and thus require a lot of energy to load slowly to the user.
@@ -62,8 +60,6 @@ Imagine these articles getting attention from the UX scene in various scales and
 | Europe 🌍                 | 100000         | 27                     | 156            |
 | Global 🌍🌎🌏             | 550000         | 148.5                  | 858            |
 | Compared to average sites |                | 81 % cleaner           | 68 % dirtier   |
-
-
 
 If these articles went completely viral across the globe with 550 000 pageviews each it would roughly add up to 1 ton of emitted CO2. One ton of CO2 compares to producing 250 hamburgers or flying one passenger about 4500 km – that’s roughly Oslo - Sardinia roundtrip. Considering these emissions are just for 2 pages below average size and quite few page views compared to other websites, you can see how this quickly adds up. 
 
