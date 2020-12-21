@@ -86,7 +86,7 @@ can never affect something else.
 
 # Smaller demo
 
-We'll go through the key parts of our [Small](Small.fs) demo.
+We'll go through the key parts of our [Small](https://github.com/simendsjo/functional-christmas-2020_functional-architecture-demo/blob/main/Small.fs) demo.
 More/different comments are in the actual source file, so I encourage
 you to look there as well.
 
