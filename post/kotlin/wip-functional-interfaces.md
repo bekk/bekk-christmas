@@ -4,7 +4,7 @@ post_year: 2020
 post_day: 21
 title: Functional Interfaces
 image: https://images.unsplash.com/photo-1510736661179-a0d68edb2f90?w=1226&h=400&fit=crop&crop=edges
-ingress: Functional interfaces was introduced in Kotlin 1.3 and is a way of
+ingress: Functional interfaces was introduced in Kotlin 1.4 and is a way of
   giving lambdas proper types  which can make our code more readable and make
   the intent clearer.
 authors:
