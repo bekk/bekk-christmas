@@ -40,7 +40,7 @@ Det virker derfor rimelig å bruke markedsandel som en indikator på vekst og la
 
 I et marked som består av kunder med ulike behov og preferanser må et selskap posisjonere seg med én hovedmålgruppe i tankene. En aktør i dagligvaremarkedet må for eksempel bestemme om det primært er lavprissegmentet de skal rette seg mot eller om de i stedet skal tilby varer med høyere kvalitet og pris. 
 
-Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut til flere kunder i markedet, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de betjener flere kunder som ikke er innefor selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
+Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut til flere kunder i markedet, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de betjener flere kunder som ikke er innenfor selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
 
 ![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/kundeopplevelse-versus-markedsandel.png)
 
