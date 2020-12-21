@@ -9,7 +9,9 @@ ingress: In yesterday's [post](/2020/21), we learned about inbound ports in Elm.
   application to the outside world that is JavaScript.
 description: elm ports
 ---
-At some point when writing an Elm program we might have the need to communicate something from inside our Elm app to JavaScript. The first thing we will need to do is declare our outgoing port.
+At some point when writing an Elm program we might have the need to communicate something from inside our Elm app to JavaScript, and as we have learned that is exactly the function of ports in Elm. We use ports to be able to bridge the world between JavaScript and Elm.
+
+The first thing we will need to do in accomplishing sending a message from our application is to define our outgoing port.
 
 ```elm
 port sendButtonClickedMessage : String -> Cmd Msg
