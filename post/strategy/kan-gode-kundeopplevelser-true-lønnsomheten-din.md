@@ -66,7 +66,7 @@ Dette er sentral informasjon for å forstå lønnsomheten av kundebasen din, og 
 
 Konklusjon: Kunder har ulikt lønnsomhet og bør segmenteres deretter. Økt lønnsomhet oppnås ved å målrette forbedringer og tiltak mot kunder med det største økonomiske potensial.
 
-## **Løsning 2: Å forstå hva som faktisk driver markedsandel**
+## **Tiltak 2: Forstå hva som faktisk driver markedsandelen og bruk det som utgangspunkt for forretningsutvikling og forbedring**
 
 Tidligere i teksten besluttet vi å bruke markedsandel som en proxy på vekst, og definerte det som *Selskapets salgsinntekter/ Totalt salg i markedet*. Men denne definisjonen sier lite om hva man kan gjøre for å påvirke markedsandelen eller hva som faktisk driver den. Det er derfor mer interessant å bryte opp markedsandel ved hjelp av følgende formel: 
 
