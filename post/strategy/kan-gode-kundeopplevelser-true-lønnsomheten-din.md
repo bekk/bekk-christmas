@@ -90,13 +90,13 @@ Kombinerer vi denne formelen med kundesegmentering basert på økonomisk potensi
 
 ## Historien om Walmart og «Project impact»
 
-Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg gjennom finanskrisen med mye bedre økonomiske resultater enn sine konkurrenter.  Flere av konkurrentene kunne imidlertid vise til bedre resultater på kundetilfredshet, noe ledelsen bestemte seg for å gjøre noe med.
+Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg gjennom finanskrisen med mye bedre økonomiske resultater enn sine konkurrenter.  Flere av konkurrentene kunne imidlertid vise til bedre resultater på kundetilfredshetsmålinger, noe ledelsen i Walmart bestemte seg for å gjøre noe med.
 
-På bakgrunn av dette satte konsernledelsen i gang «Project impact» som hadde som mål å øke tilfredsheten blant selskapets kunder. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI-resultatene skjøt i taket. Samtidig endte selskapet opp med å miste dramatisk store markedsandeler ((Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al, 2015):
+På bakgrunn av dette satte konsernledelsen i gang «Project impact» som hadde som mål å øke tilfredsheten blant selskapets kunder. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI-resultatene skjøt i taket. Samtidig endte selskapet opp med å miste dramatisk store markedsandeler, som vist i grafen under (Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al, 2015):
 
 ![](/assets/walmart1.png "Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)")
 
-Så hva var det egentlig som skjedde? Walmart gjennomførte sine forbedringstiltak uten en tydelig forståelse for hvor inntektene deres kom fra. Selv om mange kunder ble mer fornøyde hadde de ikke nødvendigvis mer penger å bruke i butikken. Andre kunder så  ikke lenger poenget med å dra på Walmart når de billige varene og tilbudstorgene lenger ikke var der. Da kunne de vel likså greit bruke pengene et annet sted? 
+Så hva var det egentlig som skjedde? Walmart gjennomførte sine forbedringstiltak uten en tydelig forståelse for hvor inntektene deres kom fra. Selv om mange kunder ble mer fornøyde hadde ikke disse kundene  nødvendigvis mer penger å bruke i butikkene. Andre kunder så  ikke lenger poenget med å dra på Walmart når de billige varene og tilbudstorgene lenger ikke var der. Da kunne de vel likså greit bruke pengene et annet sted? 
 
 Project Impact viser faren ved å fokusere på å forbedre kundeopplevelsen uten en klar kobling til kundens forbruk og kjøpsmønster. CEO i Walmart William S. Simon, oppsummerte dette på en fin måte:  
 
