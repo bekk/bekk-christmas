@@ -42,7 +42,7 @@ I et marked som består av kunder med ulike behov og preferanser må et selskap 
 
 Selskaper med stor markedsandel (typisk massemarked) må per definisjon nå ut til flere kunder i markedet, og dermed forsøke å tilfredsstille et bredere utvalg av behov og preferanser. Dette betyr igjen at de betjener flere kunder som ikke er innefor selskapets hovedmålgruppe. Selskaper med mindre markedsandel, såkalte nisjeaktører, kan imidlertid konsentrere seg om behov og preferanser i sin hovedmålgruppe, som illustrert i figuren under. 
 
-![](/assets/kundeopplevelse-versus-markedsandel.png)
+![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/kundeopplevelse-versus-markedsandel.png)
 
 Dersom selskapene med høy markedsandel i mindre grad svarer på enkelte kunders behov og preferanser vil det innebære at den totale kundeopplevelsen blir dårligere. Nisjeselskapene, med relativt liten markedsandel, vil imidlertid kunne levere en veldig god kundeopplevelse til nesten alle sine kunder. Av dette kan man trekke slutningen at markedsandeler og kundetilfredshet ser ut til å være er negativt korrelert. Det vil si at en økning av kundeopplevelsen faktisk vil innebære at markedsandelen går ned - og motsatt. 
 
@@ -82,7 +82,7 @@ Av disse tre er det den sistnevnte som er den klart enkleste og mest kostnadseff
 
 Det er på dette punktet overnevnte bok kommer med en formel som forsøker å forklare hva som påvirker share of wallet, i form av The Wallet Allocation Rule. 
 
-![](/assets/wallet-allocation-rule.png)
+![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/wallet-allocation-rule.png)
 
 Det er mye som kan sies om denne formelen og bakgrunnen for at den er bygget opp som den er. Denne kalenderposten er imidlertid lang nok som den er alllerede. Det som imidlertid er verdt å merke seg er at det er kundenes *relative* vurdering av kundeopplevelsen hos ulike selskaper som betyr noe, og ikke kundeopplevelsen hos ditt selskap isolert sett. Måling av kundeopplevelse kan dermed fortsatt være relevant, men du må også forstå hvordan kunden vurderer opplevelsen av dine konkurrenter.
 
@@ -94,7 +94,7 @@ Tilbake i 2009 hadde den amerikanske dagligvaregiganten Walmart kommet seg gjenn
 
 På bakgrunn av dette satte konsernledelsen i gang «Project impact» som hadde som mål å øke tilfredsheten blant selskapets kunder. Nye hyller ble satt opp, mindre rotete butikker ble designet og en bedre kjøpsopplevelse ble skapt. Dette førte til at KTI-resultatene skjøt i taket. Samtidig endte selskapet opp med å miste dramatisk store markedsandeler.
 
-![](/assets/walmart1.png)
+![Kilde: The wallet allocation rule: Winning the battle for share, T. Keiningham et al (2015)](/assets/walmart1.png)
 
 Så hva var det egentlig som skjedde? Walmart gjennomførte sine forbedringstiltak uten en tydelig forståelse for hvor inntektene deres kom fra. Selv om mange kunder ble mer fornøyde hadde de ikke nødvendigvis mer penger å bruke i butikken. Andre kunder så  ikke lenger poenget med å dra på Walmart når de billige varene og tilbudstorgene lenger ikke var der. Da kunne de vel likså greit bruke pengene et annet sted? 
 
