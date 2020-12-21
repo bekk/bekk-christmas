@@ -57,7 +57,7 @@ Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen,
 
 ...
 
-Jeg stopper der. Klokken var tre, det var 40 minutter til avgang og jeg hadde ikke spist lunsj. Tonen eskalerte litt kan du si. Jeg opplever selv at jeg har gjort alt riktig: Jeg har brukt SAS’ nettsider. Lagt til ski. Betalt. Men det hun i skranken som bestemmer om jeg får med meg skiene eller om jeg må sette de igjen på Gardermoen. Og det er jeg som har et fly jeg skal rekke og en sulten 2-åring hengende i buksebenet. Det er klart jeg betaler. Men det fikk meg til å reflektere over dette nye mottoet: We are travelers. Er vi egentlig det? Er vi på lag om å løse dette og få til denne reisen? Eller er det jeg som er den reisende, mens hun er den som lar meg reise? På nød og neppe, og på SAS’ premisser?
+Jeg stopper der. Klokken var tre, det var 40 minutter til avgang og jeg hadde ikke spist lunsj. Tonen eskalerte litt kan du si. Jeg opplever selv at jeg har gjort alt riktig: Jeg har brukt SAS’ nettsider. Lagt til ski. Betalt. Men det er hun i skranken som bestemmer om jeg får med meg skiene eller om jeg må sette de igjen på Gardermoen. Og det er jeg som har et fly jeg skal rekke og en sulten 2-åring hengende i buksebenet. Det er klart jeg betaler. Men det fikk meg til å reflektere over dette nye mottoet: We are travelers. Er vi egentlig det? Er vi på lag om å løse dette og få til denne reisen? Eller er det jeg som er den reisende, mens hun er den som lar meg reise? På nød og neppe, og på SAS’ premisser?
 
 
 
