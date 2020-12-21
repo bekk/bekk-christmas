@@ -28,7 +28,7 @@ view model =
         [ Html.text "Click me to send a message to JavaScript!" ]
 ```
 
-In this `view` we have a `Html.button` that when clicked, causes the `update` function to be called with the message `SendOutgoingMessage`.
+In this `view` we have a `Html.button` that when clicked, causes the `update` function to be called with the `Msg` `SendOutgoingMessage`.
 
 ```elm
 type Msg
