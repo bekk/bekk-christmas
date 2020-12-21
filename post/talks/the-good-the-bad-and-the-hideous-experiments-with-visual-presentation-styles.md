@@ -100,7 +100,13 @@ Obviously, this isn't fit for all (or even most) situations, but I find it creat
 
 ## Just because you can, doesn't mean you should: bring it all together! 🤠
 
-You can probably see the trend here. And feel the worry: will he go there? And yes, I've went there.
+You can probably see the trend here. And feel the worry: will he go there? And yes, I've went there. Before you judge: remember that all presentations have their context. Sometimes you want to teach, sometimes you want to preach, sometimes you need to win an argument. And sometimes you just want to entertain.
+
+<img src="https://i.ibb.co/9sJJr1M/lada.png" style="border: 1px solid grey" alt="Hand drawn opening slide">
+
+<img src="https://i.ibb.co/GvYZvYM/wizards.gif" style="border: 1px solid grey" alt="Animated opening slide">
+
+
 
 
 ## A word about templates
