@@ -59,8 +59,6 @@ Vi hopper frem i tid igjen. Det er avreisedag og vi befinner oss på Gardermoen,
 
 Jeg stopper der. Klokken var tre, det var 40 minutter til avgang og jeg hadde ikke spist lunsj. Tonen eskalerte litt kan du si. Jeg opplever selv at jeg har gjort alt riktig: Jeg har brukt SAS’ nettsider. Lagt til ski. Betalt. Men det er hun i skranken som bestemmer om jeg får med meg skiene eller om jeg må sette de igjen på Gardermoen. Og det er jeg som har et fly jeg skal rekke og en sulten 2-åring hengende i buksebenet. Det er klart jeg betaler. Men det fikk meg til å reflektere over dette nye mottoet: We are travelers. Er vi egentlig det? Er vi på lag om å løse dette og få til denne reisen? Eller er det jeg som er den reisende, mens hun er den som lar meg reise? På nød og neppe, og på SAS’ premisser?
 
-
-
 ## **Når visjon, kultur og image ikke er i synk**
 
 SAS tjener her som eksempel på et problem som er velkjent nok til at det har blitt forsket på. De er på ingen måte alene om å havne i en situasjon der kunden opplever at det selskapet kommuniserer ikke står i stil til kundens faktiske opplevelse av selskapet. I artikkelen «Are the strategic stars aligned for your corporate brand» omtales visjon, kultur og image som tre strategiske stjerner som må være i synk for at man skal kunne lykkes med sin merkevarestrategi. Når disse ikke er i synk ender vi opp med gap som kan gjøre at hele strategien faller i grus.
@@ -84,8 +82,6 @@ British Airways lanserte en kampanje for å endre sitt image fra «The worlds *f
 For at ansatte skal handle i tråd med visjonen, trenger du enten en visjon som bygger på selskapets eksisterende kultur, eller så må du jobbe med å endre kulturen slik at denne støtter opp om visjonen. Dette kan du lese mer om i Luke 10 der Thilde skriver om [hvordan forme kulturen når man arbeider med strategi](https://www.strategy.christmas/2020/10). Kultur spiser som kjent strategi til frokost, så hvis visjonen ikke er i synk med kulturen er det en risiko for at du ikke lykkes med å realisere visjonen og bygge det imaget du ønsker. Da har du et visjon-kultur gap, og visjonen var i beste fall en god frokost. 
 
 IBM var kjent for «livslang ansettelse», men iverksatte på 90-tallet en ny strategisk retning som krevde masseoppsigelser. Dette ledet til en intern vits om at IBM egentlig sto for I´ve Been Mislead. Strategien tok ikke hensyn til kulturen og verdiene selskapet var bygget på, og denne mismatchen skadet også IBMs image. 
-
-
 
 ## Hva har dette med flybilletter og ski å gjøre?
 
