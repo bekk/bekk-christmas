@@ -5,9 +5,9 @@ post_day: 23
 title: Resources for Learning Kotlin
 image: https://images.unsplash.com/photo-1572061486195-d811e12d0a10?w=1226&h=400&fit=crop&crop=edges
 ingress: "There are many ways of getting started with learning Kotlin, different
-  people learn best from different approaches. If it is reading books, solving
-  code puzzles, getting practical experience or watching talks I hope this
-  blogpost helps you find some interesting resources. "
+  people learn best from different approaches. Whether it's reading books,
+  solving code puzzles, getting practical experience or watching talks I hope
+  this blogpost helps you find some interesting resources. "
 authors:
   - Vegard Veiset
 ---
@@ -21,7 +21,7 @@ If you’re learning more by doing practical stuff another way of honing your Ko
 
 If you have some more time to spare, doing workshops can be a great way to get started with a new language. There are multiple workshops to choose from but I can recommend both the [Kotlin Workshop](https://github.com/Kotlin/workshop) by Jetbrains and the [Kotlin Workshop](https://github.com/bekk/kotlin-workshop) we’ve created at Bekk.
 
-Another great way of learning Kotlin is to have a side project where you can experiment everything you find interesting and explore the language without having any hard requirements you need to meet.
+Another great way of learning Kotlin is to have a side project where you can experiment with everything you find interesting and explore the language without having any hard requirements you need to meet.
 
 ## Videos
 
