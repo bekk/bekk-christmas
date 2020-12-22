@@ -3,6 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 23
 title: Å designe en kultur med psykologisk trygghet
+image: https://www.dropbox.com/s/b5qlsh5rrik0dbt/psykheader.png?raw=1
 ingress: Kultur spiser strategi til frokost. Særlig når den omfavner psykologisk
   trygghet blant de ansatte. La oss se på hvorfor vi trenger dette, og se på
   noen enkle verktøy vi kan bruke for å metodisk skape denne kulturen i teamene
