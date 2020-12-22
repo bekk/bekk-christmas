@@ -18,4 +18,4 @@ And if you are afraid of presenting, know that almost every man or woman is! If 
 
 [![Life After Death by PowerPoint (Corporate Comedy Video)](https://img.youtube.com/vi/MjcO2ExtHso/0.jpg)](https://www.youtube.com/watch?v=MjcO2ExtHso "Life After Death by PowerPoint (Corporate Comedy Video)")
 
-Happy holidays! 
+Happy holidays, everyone!
