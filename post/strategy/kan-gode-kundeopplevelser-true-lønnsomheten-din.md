@@ -26,7 +26,7 @@ Med dette som bakteppe er det vanlig, og kanskje også intuitivt, å anta at hø
 
 Som et resultat av dette bruker selskaper milliarder av kroner hvert eneste år på å forbedre opplevelsen for sine kunder. Det er også vanlig å bruke aggregerte målinger av kundetilfredshet (KTI) og Net Presenter Score (NPS) til å evaluere hvordan det står til med forretningen. For når kundene våre totalt sett blir mer fornøyde tjener vi mer penger, ikke sant? 
 
-Nei, det er faktisk ikke slik. I boka «The Wallet Allocation Rule» fra 2015 presenterer forfatterne en omfattende studie som viser at kundeopplevelse i seg selv ikke har noe positiv påvirkning på lønnsomheten. I mange tilfeller kan effekten til og med være negativ. For å forklare hvordan det kan ha seg må vi først ta ett skritt tilbake og se litt på hva lønnsomhet egentlig handler om.
+Nei, det er faktisk ikke slik. I boka «The Wallet Allocation Rule» fra 2015 presenterer forfatterne en omfattende studie som viser at kundeopplevelse i seg selv ikke har noe positiv påvirkning på lønnsomheten. I mange tilfeller kan effekten til og med være negativ. For å forklare hvordan det kan ha seg må vi først ta ett skritt tilbake og se litt på hva lønnsomhet egentlig handler om. 
 
 ## **Hva driver et selskaps lønnsomhet?**
 
