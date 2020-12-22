@@ -28,6 +28,8 @@ For nærmere et år siden er vi gledelig uvitende om året som kommer. Vi har h�
 
 **Februar: The Black Swan: the Impact of the Highly Impropable**, Nassim Taleb, 2007, 400 sider (1 juleferie)
 
+![](/assets/1.png)
+
 Februar er preget av usikkerhet. Coronaviruset begynner virkelig å få fotfeste flere steder i Europa, og vi innser gradvis at viruset før eller siden kan komme til Norge. Når og i hvor stor grad er fortsatt uvisst, men spørsmålet om hvordan en potensiell nasjonal epidemi vil påvirke samfunnet diskuteres stadig oftere. I boken The Black Swan: The Impact of the Hihgly Improbable fra 2007 beskriver tidligere finansmann Nassim Taleb hvordan store, uventende, og innvirkningsfulle hendelser – som corona – påvirker oss. Taleb definerer slike hendelser som sorte svaner, hendelser som er spesielt uvanlige, har ekstrem innvirkning, men som også kan forklares i ettertid. Bokens hensikt er ikke å beskrive hvordan man forutser slike hendelser, men heller å skape bedre forståelse rundt de og hvordan man kan posisjonere seg selv for å bedre dra nytte av det uventede. Nyttig lesning for den som ønsker å stille forberedt til neste pandemi.  
 
 **Mars: 1984 – George Orwell**, 1949, 328 (1 juleferie)
