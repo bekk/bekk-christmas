@@ -7,6 +7,13 @@ ingress: Do you get convinced by spreadsheets with inarguable and objective
   facts? Imagine a talk where the presenter lists facts, from behind a lectern,
   at a comedy conference. It is hard to picture this would sway the listeners.
   What does it take to create a compelling and convincing talk?
+links:
+  - url: https://www.masterclass.com/articles/what-is-pathos-definition-of-pathos-with-examples
+    title: What Is Pathos?
+  - url: https://www.masterclass.com/articles/what-is-ethos-definition-of-ethos-with-examples
+    title: What is Ethos?
+  - url: What is Logos?
+    title: https://www.masterclass.com/articles/what-is-logos-definition-and-examples-of-logos-in-literature
 authors:
   - Håvard Hvassing
 ---
