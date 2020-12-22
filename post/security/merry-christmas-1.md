@@ -3,6 +3,7 @@ calendar: security
 post_year: 2020
 post_day: 24
 title: Merry Christmas!
+image: https://images.unsplash.com/photo-1482173074468-5b323335debe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 ingress: In the [first article](https://security.christmas/2020/1) of this
   year's calendar, we gave a few tips to help making your applications a bit
   more secure. Now, as the countdown has come to an end, and we are ready to
