@@ -91,6 +91,12 @@ Når vi ser på verktøy for å skape mer psykologisk trygghet, kan vi angripe d
 2. En nyutdannet utvikler har samarbeidet lite med andre fagfelt, men føler seg trygg blant de andre utviklerne i teamet
 3. En produkteier har jobbet lenge i organisasjonen, men er med å opprette et nytt. Personen er ikke trygg på teamet, men trygg relevante stakeholdere og fageller på tvers av organisasjonen.
 
+   ![Personer som kun er trygg på fagfeller utenfor teamet](/assets/sit1.png "Situasjon 1")
+
+   ![Personer som kun er trygg på fagfeller i teamet](/assets/sit2.png "Situasjon 2")
+
+   ![Personer som er trygg på personer utenfor teamet](/assets/sit3.png "Situasjon 3")
+
 Dette er tre av de mest typiske trygghetsfærene jeg har opplevd på prosjekter. Er man ny i en organisasjon, og det er lite metodisk som settes i gang for å skape trygghet, skjer det ofte organisk gjennom å finne fagfeller. Disse personene blir ofte trygg på organisasjonen på en organisk måte, ved å først bli trygg på sitt eget sitt eget team.
 
 Når det gjelder personer med få fagfeller i et produktteam, søker man ofte trygghet utenfor teamet. Enten gjennom personer man kjenner i organisasjonen fra før, eller fagfeller utenfor teamet. Dette kan virke helt selvfølgelig for mange, men dette har en viktig konsekvens. Jobber du i et team med mange fagfeller, har du et ekstra ansvar for å inkludere de med få. Man kan oppleve en illusjon om at alle i et produktteam opplever psykologisk trygghet, fordi en selv opplever det.  
