@@ -3,7 +3,7 @@ calendar: thecloud
 post_year: 2020
 post_day: 23
 title: Demoing and training in the cloud
-image: https://unsplash.com/photos/6O853OGeq-c
+image: https://images.unsplash.com/photo-1600980300832-0a4657648418?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80
 ingress: ""
 authors:
   - Torstein Gjengedal
