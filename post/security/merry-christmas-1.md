@@ -5,20 +5,22 @@ post_day: 24
 title: Merry Christmas!
 ingress: In the [first article](https://security.christmas/2020/1) of this
   year's calendar, we gave a few tips to help making your applications a bit
-  more secure. Now, as the countdown has come to an end and we are ready to
+  more secure. Now, as the countdown has come to an end, and we are ready to
   start the Christmas holidays, we want to give you a few more.
 authors:
   - Robert Larsen
 ---
-## 1. Sufficient logging and monitoring
+## 1. Logging and monitoring
 
-Without sufficient logging you know very little about how you are app is doing. You can be under constant attack, without even knowing about it. Pay special attention to login-errors and failed validation of input. These things can be signs of someone trying to attack you. 
+Sufficient logging and monitoring is essential to gain insight into how your app is doing out there in production. Without it, you may be under attack without even knowing it. In your logs, pay special attention to login-errors and failed validation of input. Repeated errors of this kind may indicate that someone is trying to attack you. 
 
-Use a centralized logging tool, so you have a chance to aggregate and search through your logs. Trigger alerts when something unusual happens. Log what you need to debug and follow a situation, but not more. To establish a good logging and monitoring regime is difficult. Evolve and learn over time.
+To be able to aggregate the information and search your logs in a useable way, you should use a centralized logging tool. An alternative is to use the so-called "ELK-stack", i.e. Elastic Search, Logstach and Kibana. You should not need to continuously read your logs manually, to detect suspicious or unexpected situations. You should instead set up some triggers for alerts. If there are many log entries of a certain kind, unusual amount of errors, and so on, an alert should be fired in a channel you have an eye on.
+
+The amount of logging needed, and what information you should log, does not have a definitive answer. As usual, it depends... However, it is important to continuously improve and gradually learn over time. Do not log so much information that you are overwhelmed with data, but, on the other side, you should also have the information necessary to debug and detect abnormal situations. Be careful with sensitive data!
 
 ## 2. Take control of your data
 
-Take a step back and consider, is the data I have something I really need. And, needing the data now does not mean that you need to keep it forever. Perform an analysis of what data you have and where it flows. In that way, it may be easier to identify vulnerabilities in where the data flows. Often it is the data you have that makes you an attractive target to attack. The less you know, the less tempting it will be to attack you.
+Often, the data you have is what makes your application an attractive target to attack. know, the less tempting it will be to attack you. Take a step back and consider, is the data I have something I really need. And, needing the data now does not mean that you need to keep it forever. Perform an analysis of what data you have and where it flows. In that way, it may be easier to identify vulnerabilities in where the data flows. Often it is the data you have that makes you an attractive target to attack. 
 
 ## 3. Never trust input
 
@@ -30,6 +32,6 @@ A user does normally not care about that you use version X of webserver Y. Or th
 
 ## 5. Know your platform
 
+Whatever technology or platform you are using to build and run your application, you should invest some time to get to know it. Learn how you configure it in a proper manner, to suit your own needs. Be wary of default configuration, and remove or turn off functionality you do neither need nor use.  
 
-
-We hope you have enjoyed the calendar just a much as we enjoyed creating it. From the security practice group at Bekk - Merry Christmas!
+With these words we wish you a happy and secure Christmas celebration. We hope you have enjoyed following our calendar just a much as we enjoyed creating it. From the security practice group at Bekk - Merry Christmas!
