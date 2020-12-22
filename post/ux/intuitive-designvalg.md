@@ -4,8 +4,9 @@ post_year: 2020
 post_day: 23
 title: Å designe en kultur med psykologisk trygghet
 ingress: Kultur spiser strategi til frokost. Særlig når den omfavner psykologisk
-  trygghet blant de ansatte. La oss se på verktøyene vi trenger for å skape
-  denne kulturen.
+  trygghet blant de ansatte. La oss se på hvorfor vi trenger dette, og se på
+  noen enkle verktøy vi kan bruke for å metodisk skape denne kulturen i teamene
+  vi sitter i.
 description: ""
 links:
   - url: https://blogg.bekk.no/ikke-glem-kultur-i-en-krevende-hverdag-1436f7d18f2b
