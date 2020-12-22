@@ -3,6 +3,7 @@ calendar: kotlin
 post_year: 2020
 post_day: 23
 title: Resources for Learning Kotlin
+image: https://images.unsplash.com/photo-1572061486195-d811e12d0a10?w=1226&h=400&fit=crop&crop=edges
 ingress: "There are many ways of getting started with learning Kotlin, different
   people learn best from different approaches. If it is reading books, solving
   code puzzles, getting practical experience or watching talks I hope this
