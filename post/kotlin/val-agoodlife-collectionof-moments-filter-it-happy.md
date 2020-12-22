@@ -5,6 +5,11 @@ post_day: 22
 title: Collection magic
 image: https://source.unsplash.com/JBrfoV-BZts/1600x900
 ingress: ""
+links:
+  - url: https://proandroiddev.com/the-mystery-of-mutable-kotlin-collections-e82cbf5d781
+    title: The mystery of mutable Kotlin collections
+authors:
+  - Jørn Ola Birkeland
 ---
 Kotlin has a restricted menu of collection types available. Basically, it boils down to `Set`, `List`, and `Map` (even though `Map` *technically* is not a `Collection`), whereas java seemingly has a much larger lineup. For example, java's `List` interface has implementations like `Stack`, `Vector` and `LinkedList`. On top of that, the kotlin collection interfaces have less features than their java counterparts.  
 
@@ -17,7 +22,7 @@ val vector = Vector<String>(3) // java.util.Vector
 val first = vector.first()     // from kotlin.collections
 ```
 
-It goes the other way, too: if you decide to make and implementation of the kotlin `List` interface yourself, the compiler will replace it with `java.util.List`, and supply the missing method implementations itself, all throwing an `UnsupportedOperationException`. In other words, the kotlin collection interfaces are somewhat of an illusion. 
+It goes the other way, too: if you decide to make an implementation of the kotlin `List` interface yourself, the compiler will replace it with `java.util.List`, and supply the missing method implementations itself, all throwing an `UnsupportedOperationException`. In other words, the kotlin collection interfaces are somewhat of an illusion. 
 
 Generally, it is a good idea to use factory methods for creating collections. Examples are `listOf`, `setOf` and `mapOf`, and the corresponding `mutableListOf`, `mutableSetOf` and `mutibleMapOf` for the mutable variants. It leaves your code less dependent on concrete implementations, which may or may not be portable across platforms, and open for future improvements to the default implementation. 
 
@@ -54,4 +59,6 @@ valList.add("even better")
 
 A mutable collection can (and should?) be assigned to a read-only variable. Even though the variable cannot be reassigned you can freely modify the collection. You would in principle expect better performance by modifying the contents of a single collection, rather than creating new instances from scratch (but is a premature optimization until you *actually* hit a performance problem, of course)
 
-All in all, kotlin's handling of collections is a pragmatic compromise between interoperability, reuse, and readability. The result is robust, high-performing implementations, sleak interfaces, and an anbundance of extensions to make your developer experience festive and joyful.
+All in all, kotlin's handling of collections is a pragmatic compromise between interoperability, reuse, and readability. The result is robust, high-performing implementations, sleak interfaces, and an abundance of extensions to make your developer experience festive and joyful.
+
+If you want to learn more about immutabiliy, have a look at [this year's calendar's very first entry](https://kotlin.christmas/2020/1).
