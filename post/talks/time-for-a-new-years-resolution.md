@@ -14,7 +14,24 @@ ingress: >-
 authors:
   - Nicolai August Hagen
 ---
-And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections from all of these hatches [2](https://www.talks.christmas/2020/2), [3](https://www.talks.christmas/2020/3), [9](https://www.talks.christmas/2020/9), [10](https://www.talks.christmas/2020/10), [11](https://www.talks.christmas/2020/11), [20](https://www.talks.christmas/2020/20), [21](https://www.talks.christmas/2020/21), or just enjoy the laughs from the old classic from Don McMillan *"Life After Death by PowerPoint"*;
+And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections from all of these hatches\
+\
+**Hein** in hatch NO. 2: *["How to cope with stage fright"](https://www.talks.christmas/2020/2)*
+
+**Hein** in hatch NO. 3:  *["How I stopped worrying and started to love holding presentations."](https://www.talks.christmas/2020/3)*
+
+**Jens Andreas** in hatch NO. 9:  *["Hack your paleolithic mind to overcome stage fright
+"](https://www.talks.christmas/2020/9)*
+
+**Julia** in hatch NO. 10:  *["Tips & tricks staying calm on stage"](https://www.talks.christmas/2020/10)*
+
+**Jøran** in hatch NO. 11:  *["Fear, loathing and uneasy love: how experimentation taught me to enjoy public speaking"](https://www.talks.christmas/2020/11)*
+
+**Hong Nhung** in hatch NO. 20:  *["Visualization to cope with stage fright (part 1)"](https://www.talks.christmas/2020/20)*
+
+**Hong Nhung** in hatch NO. 21:  *["Visualization to cope with stage fright (part 2)"](https://www.talks.christmas/2020/21)*
+
+Or just enjoy the laughs from the old classic from Don McMillan *"Life After Death by PowerPoint"*;
 
 [![Life After Death by PowerPoint (Corporate Comedy Video)](https://img.youtube.com/vi/MjcO2ExtHso/0.jpg)](https://www.youtube.com/watch?v=MjcO2ExtHso "Life After Death by PowerPoint (Corporate Comedy Video)")
 
