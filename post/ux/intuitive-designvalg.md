@@ -96,7 +96,7 @@ Når vi ser på verktøy for å skape mer psykologisk trygghet, kan vi angripe d
 
 1. En designer i et utviklingsteam føler seg ikke inkludert i sitt eget team, men finner trygghet hos andre designere i et sentralt designteam eller hos designere i andre produktteam.
 2. En nyutdannet utvikler har samarbeidet lite med andre fagfelt, men føler seg trygg blant de andre utviklerne i teamet
-3. En produkteier har jobbet lenge i organisasjonen, men er med å opprette et nytt. Personen er ikke trygg på teamet, men trygg relevante stakeholdere og fageller på tvers av organisasjonen.
+3. En produkteier har jobbet lenge i organisasjonen, men er med å opprette et nytt. Personen er ikke trygg på teamet, men trygg de relevante stakeholdere og fageller på tvers av organisasjonen.
 
    ![Personer som kun er trygg på fagfeller utenfor teamet](/assets/sit1.png "Situasjon 1")
 
