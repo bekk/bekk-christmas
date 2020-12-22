@@ -14,7 +14,6 @@ authors:
   - Pia Solheim
   - Moquan Chen
   - Jens Andreas Huseby
-  - Marit Andreassen
 ---
 Smidige virksomheter har for lengst tatt til seg hyppige læringssykluser og hypotesetesting som metode. Det prøves og feiles og læres raskt om alt fra kundebehov, organisering, teamdynamikk og løsninger til strategi og eierstrukturer.
 
