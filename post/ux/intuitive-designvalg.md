@@ -76,6 +76,16 @@ Med sine tidvise paternalistiske prosesser, kan byråkratiske selskaper både ha
 
 Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
 
+**Spørsmålene man kan stille seg selv eller andre er dermed:**
+
+1. Føler person x seg inkludert av personer i team y?
+2. Lærer person x aktivt bort kunnskap til personer i team y og motsatt?
+3. Er det trygt å spørre om hjelp i team x, og stilles det aktivt spørsmål i plenum?
+4. Hjelper og bidrar personer i team x hverandre og andre team av eget initiativ?
+5. Stiller personer i team x spørsmålstegn ved det som blir sagt, eller er det ingen som utfordrer?
+
+Å overføre denne mentale modellen skriftlig er en vanskelig oppgave. Psykologisk trygghet er sammensatt. Noen opplever en sterk trygghet kun blant fagfeller i eget team. En del personer opplever ingen trygghet innad i eget team, og søker støtte hos fagfeller eller gode kolleger i andre team. Basert på egne erfaringer, har jeg laget denne modellen for psykologisk trygghet, trygghetssfæren.
+
 ![Modell som ser litt ut som en løk, med lag innerst til ytterst: personlig, fagfeller, team, stakeholdere.](/assets/trygghet.png "Trygghetssfæren")
 
 Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
