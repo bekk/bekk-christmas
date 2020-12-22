@@ -3,11 +3,13 @@ calendar: security
 post_year: 2020
 post_day: 24
 title: Merry Christmas!
+ingress: In the [first article](https://security.christmas/2020/1) of this
+  year's calendar, we gave a few tips to help making your applications a bit
+  more secure. Now, as the countdown has come to an end and we are ready to
+  start the Christmas holidays, we want to give you a few more.
 authors:
   - Robert Larsen
 ---
-The last weeks, we have covered a lot of different topics. We started by giving you a few tips for a more secure application. Before we log out of this years calendar, which we certainly hope that you have enjoyed, we give give you a few more.
-
 1. Sufficient logging and monitoring
 
 Without sufficient logging you know very little about how you are app is doing. You can be under constant attack, without even knowing about it. Pay special attention to login-errors and failed validation of input. These things can be signs of someone trying to attack you. 
@@ -27,3 +29,7 @@ Might seem obvious and a bit repetetive, but you should never trust input to you
 A user does normally not care about that you use version X of webserver Y. Or that you have a table-column named Z in your database. So, why not keep that information for yourself? We see lot of examples where such information is exposed in error messages or stack-traces when something goes wrong.
 
 5. Know your platform
+
+
+
+We hope you have enjoyed the calendar just a much as we enjoyed creating it. From the security practice group at Bekk - Merry Christmas!
