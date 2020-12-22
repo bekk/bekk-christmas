@@ -24,11 +24,11 @@ Often, the data you have is what makes your application an attractive target to 
 
 ## 3. Never trust input
 
-Might seem obvious and a bit repetetive, but you should never trust input to your app. Neither from users or other systems. Escape requestdata that you cannot trust. In frontend, use a framework or tool designed to prevent XSS. If you are talking to a relational database, you might use a light-weight ORM-tool with advantage. As we mentioned in 1st of December, know your HTTP-headers and use them correctly. 
+This might seem obvious and a bit repetetive, but you should never trust input. Neither from users or external systems. Always escape request-data that you cannot trust. In frontend, use a framework or tool designed to prevent XSS. If you are talking with a relational database, you might wan't to use a light-weight ORM-tool. That will help you prevent SQL-injections. And, as we halve also mentioned [before](https://security.christmas/2020/1), know your HTTP-headers and use them correctly. 
 
-## 4. Don't expose more than you need to
+## 4. Don't expose unnecessary information
 
-A user does normally not care about that you use version X of webserver Y. Or that you have a table-column named Z in your database. So, why not keep that information for yourself? We see lot of examples where such information is exposed in error messages or stack-traces when something goes wrong.
+Your users does normally not care that you use version X of webserver Y. Nor that you have a table-column named Z in your database. So, why not keep that information for yourself? We see lot of examples where such information is exposed in error messages or stack-traces in the browser, thus presented to the users, when something goes wrong. This information does not belong there. The more information you reveal about your platform and application, the more attack vectors you introduce. Instead, keep such information in your logs and serve you users with a more decent and and understandable error-message. 
 
 ## 5. Know your platform
 
