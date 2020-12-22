@@ -3,6 +3,7 @@ calendar: strategy
 post_year: 2020
 post_day: 23
 title: Hvordan lese seg gjennom 2020 med strategibrillene på?
+image: https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1141&q=80
 ingress: "**2020** har vært et uforutsigbart år preget av pandemi, nedstengning,
   smittevernstiltak, smitterisiko, og kohorter, men også et år der
   tilpasningsdyktighet, digital omstilling, nye arbeidsmetoder, børsrekorder,
