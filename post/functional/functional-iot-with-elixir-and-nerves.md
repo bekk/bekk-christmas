@@ -113,9 +113,9 @@ So what is Nerves used for? Lets look at some different examples!
 
 Even in small hobby projects Nerves can simplify deployment and maintenance. One of my projects is a dashboard on a Raspberry Pi touch screen, [nerves-pidash](https://github.com/ringvold/nerves-pidash). For the [first version](https://github.com/ringvold/pidash) the backend was written in Go. This worked well for a while. Go produces a staticly linked binary which makes deployments easy compared to other interpeted langugage where you need to make sure all dependencies is available. 
 
-The hassle comes when the device loose power and I have to manually go and start the backend and open the browser to the correct url. This became tedious and of course I had the well known SD card corruption issue because of power loss.
+The hassle comes when the device loose power and I have to manually go and start the backend and open the browser to the correct URL. This became tedious and of course I had the well known SD card corruption issue because of power loss.
 
-Nerves' way of handling the filesystem and updates makes sure that power loss is not a issue and with the [nerves-web-kiosk/kiosk_system_rpi3](https://github.com/nerves-web-kiosk/kiosk_system_rpi3) the device starts a browser with a predefined url. Changes to the system is a breeze with OTA updates.
+Nerves' way of handling the filesystem and updates makes sure that power loss does not cause corruption and with the [nerves-web-kiosk/kiosk_system_rpi3](https://github.com/nerves-web-kiosk/kiosk_system_rpi3) the device starts a browser with a predefined url. Changes to the system is a breeze with OTA updates.
 
 With the [Circuits library](https://elixir-circuits.github.io/) you can interact with many different sensors with support for GPIO, UART, I2C and SPI.
 
