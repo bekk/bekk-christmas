@@ -33,6 +33,8 @@ Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger 
 > Definisjonen til Ph.D. Timothy R. Clark \[1] oversatt med mine ord:
 > Psykologisk trygghet er en tilstand der du føler deg sosialt inkludert, føler at det er trygt å lære, føler det er trygt å bidra, og føler det er trygt å utfordre status quo — uten noen frykt for å oppleve å bli flau, marginalisert eller straffet på noen som helst måte.
 
+![Skala som viser psykologisk trygghet; eksludert, inkludert, trygg på læring, trygg på å bidra, trygg på å utfordre. Etter det siste punktet når man innovasjonsterskelen.](/assets/trgghetsskala.png "Skala for psykologisk trygghet")
+
 På mange måter er det å oppleve psykologisk trygghet, det motsatte av å oppleve bedragersyndromet. Du bør føle deg fullstendig trygg når du deler din kunnskap til andre, uten å være redd for noen håner deg og sier det er en selvfølgelighet. Hører du et ord du ikke kjenner til i et møte, bør du uten å tenke deg om — kunne spørre i plenum om hva ordet betyr. Er du uenig med ledelsen, bør du kunne skrive en slack-melding i #general og fortelle dette til hele selskapet. Uten å forvente en streng telefon fra en leder. Å bli invitert til å spise lunsj med kollegaene dine bør være en selvfølge.
 
 Fullstendig psykologisk trygghet på arbeidsplassen er nok en utopi. Det er kamp om posisjoner, forventning til lojalitet og alle mennesker du møter har ikke en empatisk personlighet. Men stor grad av psykologisk trygghet er noe du bør kjempe for. Skape for deg selv og andre rundt deg.
@@ -64,6 +66,16 @@ En byråkratisk kultur kan ofte skape mye psykologisk trygghet for de ansatte, p
 Men når et selskap beveger seg bort fra en byråkratisk kultur, fjernes mange av de trygge rammene. Dette kan skape enorm psykologisk smerte og utrygghet. Byråkratiske organisasjoner kan skape psykologisk trygghet gjennom prosesser, standarder og at endring tar tid. Å gå mot en adhokratisk kultur kan dermed skape problemer fra to kanter, det kan bli en catch 22. Den nye kulturen krever at de ansatte opplever psykologisk trygghet for å kunne yte godt, og man har mistet mange av virkemidlene for å skape psykologisk trygghet.
 
 Med sine tidvise paternalistiske prosesser, kan byråkratiske selskaper både skapt psykologisk trygghet hos de ansatte — men også gjort de en bjørnetjeneste. De kan ha mistet evnen til å ta initiativ og være kritisk til ledelsen og andre rundt seg. Helt essensielle evner for å skape gode teammedlemmer for autonome produktteam.
+
+## Mental modell for psykologisk trygghet i en nettverksorganisasjon, med autonome og kryssfunksjonelle produktteam
+
+Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av  en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
+
+![Modell som ser litt ut som en løk, med lag innerst til ytterst: personlig, fagfeller, team, stakeholdere.](/assets/trygghet.png "Trygghetssfæren")
+
+
+
+Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
 
 
 
