@@ -33,7 +33,7 @@ And if you are afraid of presenting, know that almost every man or woman is! If 
 
 Or just enjoy the laughs from the old classic from Don McMillan *"Life After Death by PowerPoint"*;
 
-<iframe style="border:none;" width="700" height="400"  src="https://www.youtube.com/embed/MjcO2ExtHso">
+<iframe style="border:none;" width="1000" height="400"  src="https://www.youtube.com/embed/MjcO2ExtHso">
 </iframe>
 
 Happy holidays, everyone!
