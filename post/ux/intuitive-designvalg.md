@@ -75,7 +75,7 @@ Med sine tidvise paternalistiske prosesser, kan byråkratiske selskaper både ha
 
 ## En mental modell for psykologisk trygghet i en nettverksorganisasjon, med autonome og kryssfunksjonelle produktteam
 
-Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av  en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
+Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
 
 ![Modell som ser litt ut som en løk, med lag innerst til ytterst: personlig, fagfeller, team, stakeholdere.](/assets/trygghet.png "Trygghetssfæren")
 
@@ -83,7 +83,34 @@ Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfu
 
 Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
 
+Når vi ser på verktøy for å skape mer psykologisk trygghet, kan vi angripe de ulike sirklene metodisk. Vi kan jobbe med å forbedre tryggheten innad i et team, og mellom team. Dersom man sitter i et team, har man stor mulighet for å skape større trygghet for deg selv og andre i dette teamet. Når det kommer til trygghet mellom team, er man mer avhengig av strategisk arbeid for psykologisk trygghet på organisasjonsnivå. 
 
+**La oss se på noen konkrete situasjoner, for å forstå modellen bedre:**
+
+1. En designer i et utviklingsteam føler seg ikke inkludert i sitt eget team, men finner trygghet hos andre designere i et sentralt designteam eller hos designere i andre produktteam.
+2. En nyutdannet utvikler har samarbeidet lite med andre fagfelt, men føler seg trygg blant de andre utviklerne i teamet
+3. En produkteier har jobbet lenge i organisasjonen, men er med å opprette et nytt. Personen er ikke trygg på teamet, men trygg relevante stakeholdere og fageller på tvers av organisasjonen.
+
+Dette er tre av de mest typiske trygghetsfærene jeg har opplevd på prosjekter. Er man ny i en organisasjon, og det er lite metodisk som settes i gang for å skape trygghet, skjer det ofte organisk gjennom å finne fagfeller. Disse personene blir ofte trygg på organisasjonen på en organisk måte, ved å først bli trygg på sitt eget sitt eget team.
+
+Når det gjelder personer med få fagfeller i et produktteam, søker man ofte trygghet utenfor teamet. Enten gjennom personer man kjenner i organisasjonen fra før, eller fagfeller utenfor teamet. Dette kan virke helt selvfølgelig for mange, men dette har en viktig konsekvens. Jobber du i et team med mange fagfeller, har du et ekstra ansvar for å inkludere de med få. Man kan oppleve en illusjon om at alle i et produktteam opplever psykologisk trygghet, fordi en selv opplever det.  
+
+Å skape psykologisk trygghet på tvers av team, skjer ofte mye mindre organisk. Her finnes det også flere hindre. Noe helt konkret som kan hindre psykologisk trygghet på tvers av team, er muligheten for kommunikasjon. Typiske situasjoner som kan hindre denne tryggheten er; 
+
+* Teamene sitter på fysisk ulike lokasjoner. Dette kan hindre teamene å bli kjent med hverandre og sosialisere utenfor arbeidstid. 
+* Man har manglende digitale samhandlingsverktøy, som Slack og Teams på tvers av team.
+* Teamene må timeføre tiden sin, eller alltid rapportere hva man jobber med gjennom verktøy som Jira. Dette kan være et stort hinder for å lære og lære bort på tvers av team, og det å kunne bidra på tvers av team. To helt essensielle dimensjoner for psykologisk trygghet.
+
+Satt sammen, kan man se disse effektene av psykologisk trygghet:\
+- En person som er trygg på egen kompetanse, kommuniserer mye med fagfeller.\
+- En person som er trygg på teamet, kommuniserer mye i teamet og på vegne av teamet.\
+- En person som er trygg på organisasjonen og/eller mennesker i organisasjonen — kommuniserer mye med personer utenfor teamet.
+
+![Modellen med psykologisk trygghet som viser at personer som er trygg på seg selv tar kontakt med fagfeller, personer som er trygg i team snakker mye med teamet, og personer som er trygg på organisasjon tar kontakt med organisasjonen.](/assets/trygghet2.png "Psykologisk trygghet i nettverk av team")
+
+
+
+Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekter i  en nettverksorganisasjon. Informasjon og kompetanse spres organisk og uformelt, som gjør at eventuell innovasjon ikke bare skjer i siloer — men på tvers av organisasjonen.
 
 ## Verktøykasse for psykologisk trygghet
 
