@@ -10,7 +10,7 @@ ingress: Ferie. Endelig. Vi skal hjem, til hvit jul og til skiføre. Billettene
   SAS-ansatt i rubben. Hvorfor blir det slik, at inntrykket man har fått av et
   selskap digitalt, kan ta en helomvending i møte med mennesker og kultur?
 links:
-  - url: <https://hbr.org/2001/02/are-the-strategic-stars-aligned-for-your-corporate-brand>
+  - url: https://hbr.org/2001/02/are-the-strategic-stars-aligned-for-your-corporate-brand
     title: Are the strategic stars aligned for your corporate brand?
 authors:
   - Pia Solheim
