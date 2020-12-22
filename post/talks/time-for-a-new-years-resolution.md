@@ -10,7 +10,7 @@ ingress: >-
   Eve, and the story of Cinderella will soon reveal itself once again. Relax. 
 
 
-  During December, we hope to have given you a tiny spark in the back of your head. *Share more with others, try presenting more, in the year to come*. We promise you that it will be worth it!
+  During December, we hope to have given you a tiny spark in the back of your head. Share more with others, try presenting more, in the year to come. We promise you that it will be worth it!
 authors:
   - Nicolai August Hagen
 ---
