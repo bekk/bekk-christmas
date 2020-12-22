@@ -12,8 +12,8 @@ links:
     title: What Is Pathos?
   - url: https://www.masterclass.com/articles/what-is-ethos-definition-of-ethos-with-examples
     title: What is Ethos?
-  - url: What is Logos?
-    title: https://www.masterclass.com/articles/what-is-logos-definition-and-examples-of-logos-in-literature
+  - url: https://www.masterclass.com/articles/what-is-logos-definition-and-examples-of-logos-in-literature
+    title: What is Logos?
 authors:
   - Håvard Hvassing
 ---
