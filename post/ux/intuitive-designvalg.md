@@ -36,7 +36,8 @@ Vi har blitt dyktige på rammeverk, metoder, organisering og å skape produkter.
 
 Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger av sosiale kontekster. Du kan føle deg fullstendig trygg i vennegjengen, sånn passe i en familiesetting. Der opplever at du kanskje at du veier hvert ordvalg i støre grad. Men mest relevant for denne artikkelen, så opplever du kanskje en helt annen trygghet blant kollegaer.
 
-> Definisjonen til Ph.D. Timothy R. Clark oversatt med mine ord, er som følgende:
+Definisjonen til Ph.D. Timothy R. Clark oversatt med mine ord, er som følgende:
+
 > Psykologisk trygghet er en tilstand der du føler deg sosialt inkludert, føler at det er trygt å lære, føler det er trygt å bidra, og føler det er trygt å utfordre status quo — uten noen frykt for å oppleve å bli flau, marginalisert eller straffet på noen som helst måte.
 
 ![Skala som viser psykologisk trygghet; eksludert, inkludert, trygg på læring, trygg på å bidra, trygg på å utfordre. Etter det siste punktet når man innovasjonsterskelen.](/assets/trgghetsskala.png "Skala for psykologisk trygghet")
