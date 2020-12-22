@@ -7,6 +7,13 @@ ingress: Kultur spiser strategi til frokost. Særlig når den omfavner psykologi
   trygghet blant de ansatte. La oss se på verktøyene vi trenger for å skape
   denne kulturen.
 description: ""
+links:
+  - url: https://blogg.bekk.no/ikke-glem-kultur-i-en-krevende-hverdag-1436f7d18f2b
+    title: OCAI
+  - url: https://www.strategy.christmas/2020/9
+    title: Kultur spiser strategi til frokost
+  - url: https://www.strategy.christmas/2020/10
+    title: Strategisk arbeid med kultur
 authors:
   - Martin Skarbø Sangolt
 ---
@@ -42,4 +49,10 @@ Men alt dette arbeidet er nyttig. Å skape et miljø med psykologisk trygghet gj
 
 ## Verktøykasse for psykologisk trygghet
 
-Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.
+Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
+Martin Sangolt
+
+Anbefalt lesestoff:
+
+1 — The 4 stages of Psychological Safety, Timothy R. Clark\
+2 — Team Topologies, Skeleton & Pais
