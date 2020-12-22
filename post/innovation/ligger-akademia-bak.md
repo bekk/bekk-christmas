@@ -2,7 +2,7 @@
 calendar: innovation
 post_year: 2020
 post_day: 23
-title: Ligger akademia bak?
+title: Ligger akademia bakpå?
 image: https://images.unsplash.com/photo-1470378639897-89788e74b7bf
 ingress: ""
 links:
