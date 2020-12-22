@@ -34,7 +34,7 @@ Vi har blitt dyktige på rammeverk, metoder, organisering og å skape produkter.
 
 ## Hva er psykologisk trygghet?
 
-Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger av sosiale kontekster. Du kan føle deg fullstendig trygg i vennegjengen, sånn passe i en familiesetting hvor du opplever at du veier verdt ordvalg mer. Men mest relevant for artikkelen, så opplever du kanskje en helt annen trygghet blant kollegaer.
+Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger av sosiale kontekster. Du kan føle deg fullstendig trygg i vennegjengen, sånn passe i en familiesetting. Der opplever at du kanskje at du veier hvert ordvalg i støre grad. Men mest relevant for denne artikkelen, så opplever du kanskje en helt annen trygghet blant kollegaer.
 
 > Definisjonen til Ph.D. Timothy R. Clark \[1] oversatt med mine ord:
 > Psykologisk trygghet er en tilstand der du føler deg sosialt inkludert, føler at det er trygt å lære, føler det er trygt å bidra, og føler det er trygt å utfordre status quo — uten noen frykt for å oppleve å bli flau, marginalisert eller straffet på noen som helst måte.
