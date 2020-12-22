@@ -76,6 +76,8 @@ Med sine tidvise paternalistiske prosesser, kan byråkratiske selskaper både ha
 
 Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
 
+Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
+
 **Spørsmålene man kan stille seg selv eller andre er dermed:**
 
 1. Føler person x seg inkludert av personer i team y?
@@ -87,8 +89,6 @@ Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfu
 Å overføre denne mentale modellen skriftlig er en vanskelig oppgave. Psykologisk trygghet er sammensatt. Noen opplever en sterk trygghet kun blant fagfeller i eget team. En del personer opplever ingen trygghet innad i eget team, og søker støtte hos fagfeller eller gode kolleger i andre team. Basert på egne erfaringer, har jeg laget denne modellen for psykologisk trygghet, trygghetssfæren.
 
 ![Modell som ser litt ut som en løk, med lag innerst til ytterst: personlig, fagfeller, team, stakeholdere.](/assets/trygghet.png "Trygghetssfæren")
-
-Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
 
 Når vi ser på verktøy for å skape mer psykologisk trygghet, kan vi angripe de ulike sirklene metodisk. Vi kan jobbe med å forbedre tryggheten innad i et team, og mellom team. Dersom man sitter i et team, har man stor mulighet for å skape større trygghet for deg selv og andre i dette teamet. Når det kommer til trygghet mellom team, er man mer avhengig av strategisk arbeid for psykologisk trygghet på organisasjonsnivå. 
 
