@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 17
-title: Bærekraft - fra omdømmeparameter til økonomisk nøkkelfaktor?
+title: Bærekraft; fra omdømmeparameter til økonomisk nøkkelfaktor?
 image: https://images.unsplash.com/photo-1578604665675-9aee692f6ddc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2303&q=80
 ingress: Den siste tiden har vi sett stadig økende forventinger til at bedrifter
   skal ta samfunnsansvar og bidra til åpenhet knyttet til bærekraft. Gode
