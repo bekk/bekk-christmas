@@ -22,29 +22,37 @@ authors:
 
 **Januar: Predictive analytics**, Eric Siegel, 2015, 368 sider (1 juleferie)
 
-![](/assets/1.png)
+![](/assets/1-1-.png)
 
 For nærmere et år siden er vi gledelig uvitende om året som kommer. Vi har hørt om en pangolin og en flaggermus i Kina, men dette virker aldeles fjernt og irrelevant for oss i lille Norge. Hverdagen går som normalt og starten på det nye året er tilsynelatende lik som alle andre år. Vi skulle bare visst. Hadde vi bare hatt evner og verktøy til å se frem i tid kunne mye vært avverget og vi kunne tatt de riktige valgene hele veien. Dessverre er slike verktøy kun forbeholdt spåkoner og overtroiske, men som tidligere professor Eric Siegel skriver i sin bok Predictive Analytics, har vi faktisk evner til å forutse mye, dog på et lavere nivå. Siegel beskriver hvordan analyse av store mengder data kan avdekke handlingsmønstre og hjelpe oss til å bedre forstå hvordan konsumenter oppfører seg. Selv om boken tar for seg kompliserte konsepter som maskinlæring og kunstig intelligens, er den lettskrevet med fokus på forståelige eksempler fra virkeligheten. 
 
 **Februar: The Black Swan: the Impact of the Highly Impropable**, Nassim Taleb, 2007, 400 sider (1 juleferie)
 
-![](/assets/1.png)
+![](/assets/2.png)
 
 Februar er preget av usikkerhet. Coronaviruset begynner virkelig å få fotfeste flere steder i Europa, og vi innser gradvis at viruset før eller siden kan komme til Norge. Når og i hvor stor grad er fortsatt uvisst, men spørsmålet om hvordan en potensiell nasjonal epidemi vil påvirke samfunnet diskuteres stadig oftere. I boken The Black Swan: The Impact of the Hihgly Improbable fra 2007 beskriver tidligere finansmann Nassim Taleb hvordan store, uventende, og innvirkningsfulle hendelser – som corona – påvirker oss. Taleb definerer slike hendelser som sorte svaner, hendelser som er spesielt uvanlige, har ekstrem innvirkning, men som også kan forklares i ettertid. Bokens hensikt er ikke å beskrive hvordan man forutser slike hendelser, men heller å skape bedre forståelse rundt de og hvordan man kan posisjonere seg selv for å bedre dra nytte av det uventede. Nyttig lesning for den som ønsker å stille forberedt til neste pandemi.  
 
 **Mars: 1984 – George Orwell**, 1949, 328 (1 juleferie)
 
+![](/assets/3.png)
+
 Torsdag 12. mars stenges Norge ned og de mest inngripende tiltakene i fredstid innføres. Vi går alle en uventet og mørk tid i møte, børsene raser, folk hamstrer, hysteriet sprer seg og mange rømmer utenbys. I noen dager var usikkerheten og hysteriet av apokalyptisk preg, og det så lenge ut som at verden slik vi skjente den var historie. Heldigvis ble ikke de dystopiske forestillingene virkelighet, og verden gikk videre – det gjorde den ikke i George Orwells 1984. Det er kanskje i overkant dramatisk å sammenlikne Norge anno 2020 med den fiktive, mørke og dypt dystopiske verdenen beskrevet av Orwell, men boken kan likevel representere stemningen mange opplevde i mars. Skrevet allerede i 1949, ønsket Orwell å beskrive den ytterste konsekvens av totalitærisme og en splittet verden. I boken følger man Winston Smith og deler av hans liv som borger av London i nasjonen Oceania i året 1984. Dette er dog ikke et London fra den virkelig verden, men et trist, mørkt og dystopisk sted dyrket frem av et totalitært parti som undertrykker og styrer livene til innbyggere. 
 
 **April: The Art of War**, Sun Tzu, 500 f.kr, 112 sider (0.25 juleferier)
+
+![](/assets/4.png)
 
 I april begynner det å synke inn; vi er rammet av en dødelig pandemi som vanskelig kan kontrolleres og som potensielt kan vare lenge. Deler av næringslivet er i knestående, folk permitteres og hjemmekontoret gjør sitt definitive inntog i det norske hjem. Det blir tydelig at gamle vaner og arbeidsmetodikk må legges bort på ubestemt tid, og at omstilling og nye verktøy blir viktige i tiden fremover. Mens kunder flykter og inntektsstrømmer stadig faller bort, blir også bedrifter tvunget til å omstille seg, ta grep og tilpasse strategier for å overleve. Mange opplever likevel en form for optimisme der tiltak innføres, og man virkelig tar tak for å finne tilpassede løsninger til denne spesielle situasjonen. I slike tider blir stå-på-vilje, mot og strategisk tankegang viktig, og man kan se mot Sun Tzu og hans The Art of War for inspirasjon om fundamentale strategiske prinsipper. Selv om boken ble skrevet for mer enn 2500 år siden og kun beskriver militær strategi og krigføring, er den fortsatt populær i dag, da flere av prinsippene enkelt kan anvendes i andre disipliner for å fremme effektive handlinger og gode beslutninger.  
 
 **Mai: Drive**, Daniel H. Pink, 2009, 242 sider (1 juleferie)
 
+![](/assets/5.png)
+
 Vi begynner stadig å vende oss til den nye normalen, og børser og næringsliv løftes gradvis opp av mørket. Likevel føler mange et sterkt savn etter kollegaer og fysisk samvær, og motivasjonen er for mange sterkt preget av en mindre spennende hverdag på hjemmekontor. I slike tider kan boken Drive være et nyttig verktøy for å tenne gnisten og for å forstå hvordan vi mennesker virkelig motiveres. Advokat og Al Gores tidligere taleskriver, Daniel H. Pink, utforsker i denne boken hva som har motivert mennesker gjennom historien, hvordan den moderne verden er preget av et utdatert jag etter gevinster, og hvordan man kan finne og utnytte den indre motivasjonen mennesker har som barn. Nyttig innsikt og viktige poenger i en tid som krever litt ekstra motivasjon.
 
 **Juni: Factfulness** – Hans Rosling med Ola Rosling og Anna Rosling, 2018, 341 sider (1 juleferie)
+
+![](/assets/6.png)
 
 Smittetallene reduseres stadig, tiltakene lettes gradvis og det er en generell positiv holdning i vårt vidstrakte land – er dette slutten på pandemien? Dessverre viser det seg å være en tidkrevende prosess med stadig mindre tilbakefall og smittemønstre som er krevende å kartlegge. Det kan virke som at vi er fanget i et begrenset samfunn der det normale livet kun er en fjern virkelighet. I slike tider er det viktig å bevare positive holdninger og holde motet oppe. Et godt verktøy som kan bidra til å se helheten og å sette verden i et bedre perspektiv er Hans Roslings Factfulness. I denne boken analyserer den svenske professoren Hans Rosling sammenhenger i makroøkonomiske og demografiske data for å avkrefte typiske misforståelser ved verdens utvikling, samt hvordan vi kan rette opp i disse feilene. Denne lettleste boken gir håp og bidrar til å snu et generelt negativt perspektiv på verdens utvikling til noe positivt. Hans Rosling gikk dessverre bort før boken ble utgitt, men hans sønn Ola Rosling og svigerdatteren Anna Rosling fullførte og utga boken til hans ære, året etter hans død i 2018.  
 
