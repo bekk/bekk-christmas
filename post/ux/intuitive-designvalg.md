@@ -10,8 +10,6 @@ description: ""
 authors:
   - Martin Skarbø Sangolt
 ---
-<p><iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/942664546%3Fsecret_token%3Ds-O4bfxFNa1C5&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe></p>
-
 ## La oss først være takknemlig for alt som er bra.
 
 De siste 15 årene har mange selskaper blitt dyktige på å lage digitale produkter. Vi leverer kontinuerlig verdi, gjennom å jobbe smidig og iterativt. Vi unngår testfaser før leveranser, fordi eventuelle feil er så små at vi kan rette dem opp i produksjon. Tjenestene vi lager er skikkelig brukervennlige. Vi involverer brukere ofte og tidlig. Tekstene vi skriver er i klarspråk, og språkdrakten er on point med tanke på merkevareposisjonen. Det er ikke i tvil for brukeren at de har kommet til riktig sted, for konverteringsraten og søkemotoroptimaliseringen er på topp. Det er også merkevareopplevelsen, fordi hver lille mikroanimasjon på tvers av produkter er mer synkronisert enn OL-medaljevinnere i synkronstup — takket være moderne komponentbiblioteker. Teamene får kontinuerlig og ærlige tilbakemeldinger direkte fra brukerne. Selv mange kunder tror at det man skriver i “fant du det du lette etter”-sprettoppboksene går til kundesenteret. Kundeorientering er trygt, kjapt og billig — takket være tilbakemeldingsløkker og brukeratferdsovervåkning fra utallige leverandører. Fra et uventet hold og som en konsekvens av europeisk byråkrati, er løsningene også snart universelt utformet. På samme måte som GDPR fra samme gjeng gjorde at vi begynte å ta vare på personvernet til brukerne våre.
