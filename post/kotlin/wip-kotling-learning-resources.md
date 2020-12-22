@@ -11,7 +11,7 @@ ingress: "There are many ways of getting started with learning Kotlin, different
 authors:
   - Vegard Veiset
 ---
-One good way to both start learning Kotlin and honing your already existing skills is to use the official Kotlin documentation. [getting started guide](https://kotlinlang.org/docs/tutorials/getting-started.html) is a great place to start. While the  [Kotlin reference](https://kotlinlang.org/docs/reference/) page is a good tool to get an overview of subjects, and often points you in the right direction on where to dig for more information. An example of this is the [Kotlin coding conventions](https://kotlinlang.org/docs/reference/coding-conventions.html) that can help you if you’re a little unsure if you've structured your code in a good way.
+One good way to both start learning Kotlin and honing your already existing skills is to use the official Kotlin documentation. The [getting started guide](https://kotlinlang.org/docs/tutorials/getting-started.html) is a great place to start, while the [Kotlin reference](https://kotlinlang.org/docs/reference/) page is a good tool to get an overview of subjects, and often points you in the right direction on where to dig for more information. An example of this is the [Kotlin coding conventions](https://kotlinlang.org/docs/reference/coding-conventions.html) that can help you if you’re a little unsure if you've structured your code in a good way.
 
 If you’re learning more by doing practical stuff another way of honing your Kotlin skills is to do code puzzles, or koans, to get familiar with the language. The official [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) comes with an online editor making the setup and learning curve minimal.
 
