@@ -14,7 +14,7 @@ ingress: >-
 authors:
   - Nicolai August Hagen
 ---
-And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections from all of these hatches\
+And if you are afraid of presenting, know that almost every man or woman is! If you're not sure, rewind and take a stroll down memory lane and look back at our own experiences and reflections on stage fright and how you can cope with it in any of these hatches\
 \
 **Hein** in hatch NO. 2: *["How to cope with stage fright"](https://www.talks.christmas/2020/2)*
 
