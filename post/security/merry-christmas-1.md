@@ -20,7 +20,7 @@ The amount of logging needed, and what information you should log, does not have
 
 ## 2. Take control of your data
 
-Often, the data you have is what makes your application an attractive target to attack. know, the less tempting it will be to attack you. Take a step back and consider, is the data I have something I really need. And, needing the data now does not mean that you need to keep it forever. Perform an analysis of what data you have and where it flows. In that way, it may be easier to identify vulnerabilities in where the data flows. Often it is the data you have that makes you an attractive target to attack. 
+Often, the data you have is what makes your application an attractive target to attack. The less you know, the less tempting it will be to attack you. Take a step back and consider, is this data something I really need? And, even if you need it now you probably not need to keep it forever. Do an analysis of what data you actually have, where it is stored, and where it flows. Then, it may be easier to identify vulnerabilities and take qualified decisions.
 
 ## 3. Never trust input
 
