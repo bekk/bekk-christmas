@@ -61,8 +61,6 @@ En god del virksomheter jobber strategisk med kulturendring i sine selskap. Et r
 
 ![Figur av OCAI-rammeverket](/assets/ocai.png "Figur av OCAI-rammeverket")
 
-
-
 Uansett hvilken type organisasjonskultur man har, kan man jobbe med å få kolleger til å oppleve psykologisk trygghet. En byråkratisk organisasjon kan være like inkluderende og ekskluderende som en adhokratisk en. Mye av dette handler om at psykologisk trygghet oppleves på individ og team-nivå og noen ganger i større subkulturer, enn på selskapsnivå.
 
 Likevel er det mye spennende som skjer i organisasjoner som blir mer orientert rundt digitale tjenester. Fordi en byråkratisk organisasjon og kultur, ikke nødvendgivs er den beste til å jobbe med tøff konkurranse i et svært bevegelig marked. Å gå fra en byråkratisk organisasjonskultur, til en adohokratisk kultur kan skape interessante spenninger i selskapet. Mye handler om psykologisk trygghet.
@@ -78,8 +76,6 @@ Med sine tidvise paternalistiske prosesser, kan byråkratiske selskaper både ha
 Mange av oss som jobber med å lage digitale produkter, sitter ofte i et kryssfunksjonelt produktteam. Et team bestående av mange ulike disipliner, som eier den digitale delen av en vertikal i forretningen, et produkt. Enten om vi kommer fra en byråkratisk organisasjon, eller en fleksibel en — er det også typisk at organiseringen av team begynner å bli mer og mer nettverksbasert. Ikke hierarkisk.
 
 ![Modell som ser litt ut som en løk, med lag innerst til ytterst: personlig, fagfeller, team, stakeholdere.](/assets/trygghet.png "Trygghetssfæren")
-
-
 
 Når man skal arbeide metodisk med å enten forstå eller forbedre situasjonen, med tanke på psykologisk trygghet — kan man se på flere perspektiver. Enten se på dimensjonene; oppleves det trygt sosialt, læringsmessig, å bidra og å utfordre? Men man kan også kombinere dette med de ulike kontekstene på arbeidsplassen; Individer, team, og utenfor team.
 
@@ -101,20 +97,21 @@ Dette er tre av de mest typiske trygghetsfærene jeg har opplevd på prosjekter.
 
 Når det gjelder personer med få fagfeller i et produktteam, søker man ofte trygghet utenfor teamet. Enten gjennom personer man kjenner i organisasjonen fra før, eller fagfeller utenfor teamet. Dette kan virke helt selvfølgelig for mange, men dette har en viktig konsekvens. Jobber du i et team med mange fagfeller, har du et ekstra ansvar for å inkludere de med få. Man kan oppleve en illusjon om at alle i et produktteam opplever psykologisk trygghet, fordi en selv opplever det.  
 
-Å skape psykologisk trygghet på tvers av team, skjer ofte mye mindre organisk. Her finnes det også flere hindre. Noe helt konkret som kan hindre psykologisk trygghet på tvers av team, er muligheten for kommunikasjon. Typiske situasjoner som kan hindre denne tryggheten er; 
+Å skape psykologisk trygghet på tvers av team, skjer ofte mye mindre organisk. Her finnes det også flere hindre. Noe helt konkret som kan hindre psykologisk trygghet på tvers av team, er muligheten for kommunikasjon. 
+
+**Typiske situasjoner som kan hindre denne tryggheten er:**
 
 * Teamene sitter på fysisk ulike lokasjoner. Dette kan hindre teamene å bli kjent med hverandre og sosialisere utenfor arbeidstid. 
 * Man har manglende digitale samhandlingsverktøy, som Slack og Teams på tvers av team.
 * Teamene må timeføre tiden sin, eller alltid rapportere hva man jobber med gjennom verktøy som Jira. Dette kan være et stort hinder for å lære og lære bort på tvers av team, og det å kunne bidra på tvers av team. To helt essensielle dimensjoner for psykologisk trygghet.
 
-Satt sammen, kan man se disse effektene av psykologisk trygghet:\
-- En person som er trygg på egen kompetanse, kommuniserer mye med fagfeller.\
-- En person som er trygg på teamet, kommuniserer mye i teamet og på vegne av teamet.\
-- En person som er trygg på organisasjonen og/eller mennesker i organisasjonen — kommuniserer mye med personer utenfor teamet.
+**Satt sammen, kan man se disse effektene av psykologisk trygghet:**
+
+* En person som er trygg på egen kompetanse, kommuniserer mye med fagfeller.
+* En person som er trygg på teamet, kommuniserer mye i teamet og på vegne av teamet.
+* En person som er trygg på organisasjonen og/eller mennesker i organisasjonen — kommuniserer mye med personer utenfor teamet.
 
 ![Modellen med psykologisk trygghet som viser at personer som er trygg på seg selv tar kontakt med fagfeller, personer som er trygg i team snakker mye med teamet, og personer som er trygg på organisasjon tar kontakt med organisasjonen.](/assets/trygghet2.png "Psykologisk trygghet i nettverk av team")
-
-
 
 Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekter i  en nettverksorganisasjon. Informasjon og kompetanse spres organisk og uformelt, som gjør at eventuell innovasjon ikke bare skjer i siloer — men på tvers av organisasjonen.
 
