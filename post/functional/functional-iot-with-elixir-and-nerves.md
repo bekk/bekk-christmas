@@ -119,7 +119,7 @@ Nerves' way of handling the filesystem and updates makes sure that power loss do
 
 With the [Circuits library](https://elixir-circuits.github.io/) you can interact with many different sensors with support for GPIO, UART, I2C and SPI.
 
-For my smart meter project the hard part was actually to find out how the binary protocol works. Reading the data from the device is easy with Circuits, and implemented in just a few lines of code. Admittedly this project is not in a workings state and some code has been lost. Remember to check in your code! That is something Nerves will not do for you. 😅 For the interested the project can be found at <https://github.com/ringvold/han_ams>.
+For my smart meter project the hard part was actually to find out how the binary protocol works. Reading the data from the device is easy with Circuits, and implemented in just a few lines of code. Admittedly this project is not in a working state and some code has been lost. Remember to check in your code! That is something Nerves will not do for you. 😅 For the interested the project can be found at <https://github.com/ringvold/han_ams>.
 
 But there are more serious projects out there. Some are even basing their business on devices powered by Nerves!
 
