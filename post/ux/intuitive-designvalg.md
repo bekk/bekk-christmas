@@ -182,6 +182,10 @@ Med dette tiltaket har man blitt godt kjent i teamet, og man kan lettere ta hens
 **Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
 Kommer...
 
+
+
+![Midlertidig ansvar](/assets/ansvar.png "Midlertidig ansvar")
+
 **Tiltak 3: Ta med motivasjon i priorierting av oppgaver.**\
 Kommer...
 
@@ -189,12 +193,12 @@ Kommer...
 Kommer...
 
 **Tiltak 5: Motivasjonstaktikker**\
-Fire taktikker for å hensynta motivasjon på mindre spennende oppgaver er: 
+Fire teknikker man kan bruke for å øke motivasjon, for viktige, men kjedelige oppgaver er: 
 
 1. Skap forståelse for hvorfor arbeidet gir verdi og er meningsfylt. Dette er ikke alltid synlig for alle. Noen ganger er det å vise til kundetilbakemeldinger, for andre kan det å være å vise hvorfor et prosjekt er lønnsomt. Ulike personer har ulike motivasjonsdrivere.
-2. Er oppgavene kjedelige, men høyst nødvendig — gjør det mer spennende å utføre oppgavene. Gjør en konkurranse av det, om å fullføre flest oppgaver. Er sett av en uke eller to til at hele teamet kun jobber med de kjedelige oppgave. Typisk kan dette være forvaltningsoppgaver eller bugs. I team jeg har sittet i, har vi skapt hele tema rundt disse ukene; “Forvaltningsuken” med eget internt navn, scoreboard på TV og rekvisitter. Ofte kan kjedelige oppgaver bli morsomme når flere jobber med det sammen.
-3. Begrens tiden enkelte jobber med demotiverende oppgaver, bytt på i et team eller benytt tydelig timeboxing.
-4. Gjør justeringer slik at oppgaven blir mer spennende å jobbe med. Bruk en ny arbeidsmetodikk som design sprint, benytt ny teknologi og rammeverk, eller gjør andre tilpasninger som motiverer den som skal jobbe med oppgaven.
+2.  Er oppgavene kjedelige, men høyst nødvendig — kan man gjøre dem spennende på eksterne måter. Man kan gamifisere det å løse flest mulig kjedelige oppgaver, ved å lage en konkurranse ut av det. Typisk er oppgavene det gjelder forvaltningsoppgaver eller bugs, som tar kort tid å fullføre. I team jeg har sittet i, har vi skapt hele tema rundt å løse slike oppgaver, og satt av en hel uke for hele teamet. En slik felles forvaltningsuke kan man gi eget internt navn, tema, scoreboard på TV og rekvisitter. Ofte kan kjedelige oppgaver bli morsomme når flere jobber med det sammen.
+3. Tidsbegrensninger og tydelige mål, kan skape motivasjon for å fullføre mindre spennende oppgaver. 
+4.  Gjør justeringer slik at oppgaven blir mer spennende å jobbe med. Bruk en ny arbeidsmetodikk som design sprint, benytt ny teknologi og rammeverk, eller gjør andre tilpasninger — helst i felleskap med den som skal utføre oppgavene.
 
 ### Trygg på team-nivå
 
