@@ -171,23 +171,41 @@ Kommer...
 **Tiltak 5: Motivasjonstaktikker**\
 Kommer...
 
-
-
 ### Trygg på team-nivå
 
 Å skape psykologisk trygghet på teamnivå, handler i stor grad om kommunikasjon og forstå uskrevne regler. Hva betyr det egentlig når en person sier “Dette er ikke sånn jeg ville gjort det”? Er det kritikk for dårlig utført arbeid eller er personen nysgjerrig og vil lære mer? For å forstå hverandre på dette nivået, forstå spillereglene og eventuelt endre dem — må man snakke sammen. Man må samarbeide. Her er fire aspekter man kan vurdere, for å forbedre trygghet på teamnivå:
 
-
+1. **Rollemodeller:**\
+   Å skape sin egen psykologisk trygghet kan være tungt. Dermed kan det være lurt å aktivt benytte enkeltpersoner som rollemodeller for kulturen man ønsker. På ekte konsulent-speak: opprette kulturelle arkitekter. Rollemodeller kan ha en formell rolle, eller utøve rollen sin uformelt.
+2. **Å bli kjent:**\
+   Skal et team fungere over tid, bør man bli kjent så fort som mulig. Det handler om å få et godt samarbeidsklima, gjensidig tillit, respekt og forventningsavklaring.
+3. **Kontinuerlig sosialisering:**\
+   For å skape og opprettholde teamfølelsen, at man tilhører en gruppe, er det viktig at et team opprettholder sosial kontakt. Enten i arbeidstiden eller utenfor. Dette gjør man for å utveksle informasjon og læring i en uformell setting, sparre om potensielle bidrag — og generelt bli mer kjent. Jo mer kjent man er med de man jobber med, jo bedre kommuniserer man og forstår forventningene man har til hverandre. 
+4. **Feire læring, bidrag og krangler:**For å skape trygghet rundt det å lære bort, lære av andre, at personer bidrar og at folk utfordrer — må slik atferd oppmuntres og roses av teamet. Det skaper gjensidig respekt, teamfølelse og trygghet rundt bidragene. Satt på spissen bør man applaudere når teammedlemmer krangler — har konstruktive diskusjoner. Det er indikasjon på at personer opplever utfordringstrygghet. 
 
 ### Tiltak og verktøy
 
 Eksempler på hva man kan gjøre for å skape psykologisk trygghet i team-kontekst, er følgende:
 
-**Tiltak 1: Uformell rollemodell i praksis**\
-Kommer..
+**Tiltak 1: Uformell rollemodell i praksis**
 
-**Tiltak 2: Formelle rollemodeller**\
-Kommer..
+Å være uformell rollemodell er noe man selv kan praktisere, eller be andre personer om å gjøre. I enkelhet betyr det å gjøre det man ønsker at andre skal gjøre, og rose andre når de tar initiativ.
+
+Helt konkret kan dette bety; å stille spørsmål i plenum. Feks få avklart et begrep som enkelte i teamet benytter, som du vet alle ikke kjenner til. Personlig pleier jeg ofte å stille “dumme” spørsmål i plenum, selv om jeg vet svaret — for å skape en kultur hvor dette er trygt. Man kan også dele kunnskap aktivt på ulike areaner, i samtaler og digitalt — eller be andre personer om å dele av sin kunnskap.
+
+En fin måte å være en uformell rollemodell i et team, er å dele problemer man har. Det skaper en følelse av felleskap, fjerner bedragersyndrom og skaper trygghet i teamet. Det kan være så enkelt å si at man har en vanskelig dag av personlige årsaker, foran teamet. Det kan også bety at man forteller om skjær i sjøen man ser, for eksempel at man ikke tror at teamet kommer i mål med prosjektet — eller fortelle at man ikke klarte å møte forventningene til teamet, når det kom til å levere noe. Ved at ledere og uformelle rollemodeller åpner seg opp og er sårbar, skaper det et trygt miljø for andre å dele tilsvarende informasjon.
+
+I praksis betyr det å være uformell rollemodell at man ser kollegaene sine ekstra godt. Et konkret eksempel kan være at man opplever en heftig diskusjon mellom andre teammedlemmer, om hvordan noe skal løses. Er det en skjev maktbalanse, på grunn av ulikhet i erfaring eller tilsvarende — kan man aktivt skape trygghet for den svake parten ved å fortelle at det var bra at personen utfordret status quo. Også om den ikke endres.
+
+Generelt bør man rose personer som tar initiativ for å sosialisere, lærer og lærer bort, bidrar og utfordrer.
+
+**Tiltak 2: Formelle rollemodeller**
+
+Skal man gå mer metodisk inn for å skape psykologisk trygghet, kan det være lurt å innføre formelle roller — formelle rollemodeller. I produtviklingsteam kan dette være roller som fasilitator, agile coach, prosessdesigner, design lead, tech lead, produktleder og team lead.
+
+Grunnen til at formelle roller kan være nyttig for å skape trygghet er tosidig. Rollene gjør at teamet eller respekterte personer tydelig gir tillatelse for personen å utøve en rolle. På den måten kan rollen i seg selv skape psykologisk trygghet for personen som innehar den. Formelle roller skaper også større forståelse for andre, for hvorfor personen bruker mye tid utover seg selv. Om en Tech lead ber en utvikler om å dele kunnskap, kan det ha større tyngde enn om annen person gjør det. Rollene signaliserer også hvem teamet bør se opp til. Sannsynligheten for at teamet hermer etter hvordan en person med rolle oppfører seg, øker dermed når rollen blir formalisert.
+
+I større team, hvor man kanskje har team-i-team som ikke er like bestandige — man målrettet bruke formelle roller for å forme kulturen på individnivå. Ser man personer som ikke opplever psykologisk trygghet, kan man sette sammen små team hvor en rollemodell er en del av teamet. Det kan også være så enkelt som å la en Tech lead parprogrammere med en utrygg utvikler.
 
 **Tiltak 3: Lavterskel sosialisering**\
 Kommer..
