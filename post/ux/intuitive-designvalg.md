@@ -137,11 +137,7 @@ Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “d
 
 Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
 
-
-
-
-
-Verktøykasse for psykologisk trygghet
+## Verktøykasse for psykologisk trygghet
 
 ### Personlig nivå
 
