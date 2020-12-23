@@ -129,6 +129,31 @@ Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekte
 
 ## Verktøykasse for psykologisk trygghet
 
+
+
+## Skap egne metoder og tankesett for å skape tryggheten
+
+Å få til psykologisk trygghet for seg selv, og for andre — er et kontinuerlig arbeid. Det handler om å si ifra, høre på andre, endre vaner, hvordan vi snakker til andre, oppføre oss på en god måte rundt andre og alltid ønske de rundt oss godt. Noe jeg tenker passer fint å ta med inn i julen.
+
+I forrige avsnitt gav jeg flere eksempler på hva dere kan gjøre, for å skape mer psykologisk trygghet. Men man kan enkelt å lage helt egne ritualer, aktiviteter, tankesett og metoder for å forbedre kulturen. Det er bare å gå tilbake til de 4 dimensjonene: inkludere, lære, bidra og utfordre.
+
+**Du kan skape din egen psykologisk trygghet, ved å stille spørsmålene til deg selv:**
+
+1. Hvorfor føler jeg meg ikke inkludert?
+2. Hva hindrer meg å lære og lære bort?
+3. Hvorfor bidrar jeg ikke med alt jeg kan?
+4. Hvorfor utfordrer jeg ikke, når jeg er uenig?
+
+Når du forstår hvorfor, kan du sette opp tiltak du tror kan hjelpe. Da kan du på en strukturert og metodisk måte skape en bedre hverdag for deg selv.
+
+Om du vil hjelpe andre rundt deg, snakk med de og still de samme spørsmålene i en samtale.
+
+Om du vil designe hverdagen og kulturen til teamet ditt og deler av organisasjonen; engasjer teamet ditt og fagfeller på tvers av organisasjonen. Ta initiativ til samtaler eller idéworkshops for å skape et bedre miljø for læring, initiativ og innovasjon. Plutselig har dere skapt en kultur som i større grad vektlegger psykologisk trygghet.
+
+God jul.
+
+
+
 Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
 Martin Sangolt
 
