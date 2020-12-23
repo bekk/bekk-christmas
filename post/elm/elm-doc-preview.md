@@ -12,7 +12,7 @@ ingress: Wow! It's Christmas Eve, and elm.christmas is drawing to a close. We've
 authors:
   - Aksel Wester
 ---
-I remember being really inspired by Richard Feldman's [keynote talk at Elm Europe 2018](https://youtu.be/x1FU3e0sT1I), and on the plane from Paris I was in the middle of rewriting of my side project using some of the techniques from that talk, when I needed to check the documentation of a package at [package.elm-lang.org](https://package.elm-lang.org). The only problem was that I was 30 000 feet above France, with no Internet access.
+I remember being really inspired by Richard Feldman's [keynote talk at Elm Europe 2018](https://youtu.be/x1FU3e0sT1I), and on the plane from Paris I just _had to_ start rewriting my side project using some of the techniques from that talk, when I needed to check the documentation of a package at [package.elm-lang.org](https://package.elm-lang.org). The only problem was that I was 30 000 feet above France, with no Internet access.
 
 What I didn't know at the time, was that I actually had all of the documentation locally for Elm packages I was using already. So I _could_ have just checked the source files to read the documentation I was looking for.
 
