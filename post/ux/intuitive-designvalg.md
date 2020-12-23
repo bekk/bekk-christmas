@@ -254,6 +254,16 @@ For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbef
 * Om man har en skjerm i åpent landskap — gamifiser produksjonssetting med “siste produksjonssetter” slik at dette feires offentlig.
 * Ha egne eventer halvårlig for å feire bidrag. Særlig nyttig for støtteroller i produktteam, som ikke produksjonssetter eller jobber direkte med utviklingsoppgaver. Gi ros og kanskje en enkel premie til alle i teamet. I et team jeg har vært i, som kaltes Service-teamet, kalte vi dette ritualet for “Service Awards”.
 
+Hvordan en post i #prodfest typisk ser ut:
+
+![Post i slack](/assets/reisekort.png "Post i slack")
+
+Hvordan staselig man kan feire bidrag på større events, her fra et teams interne "Service Awards":
+
+
+
+![Feiring av bidrag](/assets/img_4965.jpg "Feiring av bidrag")
+
 ### Trygg på organisasjonsnivå
 
 Å bli trygg på organisasjonsnivå, handler i stor grad om å forstå hvordan ulike avdelinger og team forholder seg til hverandre. Det handler om å forstå maktmønstre, å skape og forstå organisasjonens felles mål, og få innsyn i hva ledelsen og andre team jobber med. Noe av det viktigste er kanskje å forstå hva virksomheten driver med, historikken og domenet. Å bli trygg på organisasjonsnivå, er gjerne det som kan låse opp det øverste nivået i psykologisk trygghet: utfordringstrygghet. Dette er noen av de viktigste dimensjonene, for å gjøre personer og team trygg på tvers av team og organisasjonen. 
