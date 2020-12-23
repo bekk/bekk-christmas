@@ -157,7 +157,28 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 Eksempler på hva man kan gjøre for å skape psykologisk trygghet på individnivå, uavhengig av organisasjon og teamstruktur, er følgende:
 
 **Tiltak 1: Kartlegge personer og team gjennom bli kjent-aktiviteter**\
-Kommer...
+For å kunne ta hensyn til ulike personligheter, og situasjon til den enkelte — kan man kjapt kartlegge dette innad hos teammedlemmer. Dette kan man gjøre gjennom strukturerte bli kjent-aktiviteter.
+
+Samle alle som skal jobbe sammen enten fysisk eller på video. Man må ha en tavle tilgjengelig, enten en fysisk tavle og post-it-lapper, eller digital tavle som Miro. Begynn med en oppvarmingsøvelse, og gå deretter gjennom noen personlige spørsmål som alle må svare på. Gjør det tydelig at man trygt kan dele så lite og så mye man ønsker.\
+\
+Typiske spørsmål jeg stiller er:\
+- Hva er din første betalte jobb?\
+- Hva var drømmejobben din da du var barn?\
+- Om du skulle jobbet med noe annet, hva ville det vært?\
+- Kan du fortelle noe kjipt som har skjedd i en profesjonell setting?\
+- Fortell om noe du er stolt av å ha bidratt til / laget.
+
+Deretter kan man kartlegge teamet gjennom kart som Team Canvas:
+
+![Team Canvas, en modell for samarbeid](/assets/skjermbilde-2020-06-24-kl.-14.42-1.png)
+
+I mine prosjekter, har jeg ofte samlet alle bli kjent-øvelsene og team canvas-spørsmålene i et stort Miro-board. Jeg har også opplevd at det kan være lurt å benytte personlige kolonner også på spørsmålene man finner i Team Canvas. Jeg pleier også å legge til litt flere punkter enn det man finner i Team Canvas. Etter å ha fylt ut dette omfattende kartet, ser det ofte slik ut (sensurert):
+
+![Min variant av team canvas i Miro](/assets/miroopgave.png)
+
+Med dette tiltaket har man blitt ganske godt kjent i teamet, og man har kan lettere ta hensyn til hverandres kompetanse, egenskaper, personligheter og situasjon. En effektiv måte å skape et grunnlag for psykologisk trygghet.
+
+
 
 **Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
 Kommer...
@@ -169,7 +190,12 @@ Kommer...
 Kommer...
 
 **Tiltak 5: Motivasjonstaktikker**\
-Kommer...
+Fire taktikker for å hensynta motivasjon på mindre spennende oppgaver er: 
+
+1. Skap forståelse for hvorfor arbeidet gir verdi og er meningsfylt. Dette er ikke alltid synlig for alle. Noen ganger er det å vise til kundetilbakemeldinger, for andre kan det å være å vise hvorfor et prosjekt er lønnsomt. Ulike personer har ulike motivasjonsdrivere.
+2. Er oppgavene kjedelige, men høyst nødvendig — gjør det mer spennende å utføre oppgavene. Gjør en konkurranse av det, om å fullføre flest oppgaver. Er sett av en uke eller to til at hele teamet kun jobber med de kjedelige oppgave. Typisk kan dette være forvaltningsoppgaver eller bugs. I team jeg har sittet i, har vi skapt hele tema rundt disse ukene; “Forvaltningsuken” med eget internt navn, scoreboard på TV og rekvisitter. Ofte kan kjedelige oppgaver bli morsomme når flere jobber med det sammen.
+3. Begrens tiden enkelte jobber med demotiverende oppgaver, bytt på i et team eller benytt tydelig timeboxing.
+4. Gjør justeringer slik at oppgaven blir mer spennende å jobbe med. Bruk en ny arbeidsmetodikk som design sprint, benytt ny teknologi og rammeverk, eller gjør andre tilpasninger som motiverer den som skal jobbe med oppgaven.
 
 ### Trygg på team-nivå
 
