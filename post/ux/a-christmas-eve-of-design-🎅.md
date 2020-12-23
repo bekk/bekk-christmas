@@ -5,25 +5,27 @@ post_day: 24
 title: A Christmas Eve of Design 🎅
 image: https://images.unsplash.com/photo-1577156130348-b935e8e0b173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2848&q=80
 ingress: Finally Christmas Eve! Hopefully, this calendar has made the Christmas
-  advent a little more interesting. This year with both [harde og myke
-  pakker](https://ux.christmas/2020/9) which Kjersti Bjelkarøy has written
+  advent a little more interesting. This year with both [*harde og myke
+  pakker*](https://ux.christmas/2020/9) which Kjersti Bjelkarøy has written
   about. That you might have learned something new from the calendar or got some
-  tips and tricks for yourself or your team. Maybe it has contributed to making
-  the [wait for Christmas Eve a little easier](https://ux.christmas/2020/1)?
+  tips and tricks for yourself or your team. Maybe it has contributed to [*Ease
+  the wait for Christmas Eve*](https://ux.christmas/2020/1)?
 authors:
   - Ola Claussen
 ---
 I’m not going to write a long article today, but instead, take a look back at some of the articles written. If you haven’t read it already, this might inspire you to read some in the calm days before the new year arrives (Romjulen as we call it in Norwegian). 
 
+<p>&nbsp;</p>
+
 ## This year’s calendar had a lot to offer!
 
-Maybe you have used the last weeks to become a master of Figma after taking the Figma 101 that Herman Slyngstadli wrote about in [So you’ve opened Figma, now what?](https://ux.christmas/2020/4). Or maybe you have tried one of Thea Sommersletta’s [17 activities to get to know your team remotely](https://ux.christmas/2020/5), to get some Christmas fun in between meetings and work. 
+Maybe you have used the last weeks to become a master of Figma after taking the Figma 101 that Herman Slyngstadli wrote about in [*So you’ve opened Figma, now what?*](https://ux.christmas/2020/4). Or maybe you have tried one of Thea Sommersletta’s [*17 activities to get to know your team remotely*](https://ux.christmas/2020/5), to get some Christmas fun in between meetings and work. 
 
 ### My todo for the new year: 
 
-First of all, I’m going to take [the digital Christmas clean up](https://ux.christmas/2020/19) inspired by Anne-Berits experiences testing the email service Hey.  
+First of all, I’m going to take [*the digital Christmas clean up*](https://ux.christmas/2020/19) inspired by Anne-Berits experiences testing the email service Hey.  
 
-Then I’m going to set up a new column with UX debt so we won’t forget to fix the small, but important design-improvements often not prioritized or forgotten. This was a genius tip from Kjersti in the article [Et bittelite tips på bittelille julaften](https://ux.christmas/2020/22). 
+Then I’m going to set up a new column with UX debt so we won’t forget to fix the small, but important design-improvements often not prioritized or forgotten. This was a genius tip from Kjersti Barstad Strand in the article [Et bittelite tips på bittelille julaften](https://ux.christmas/2020/22). 
 
 Finally, I’m going to focus a bit more on everyday inspiration after getting inspired by Espen Stavern’s article [Inspirasjon: En date med et fabeldyr](https://ux.christmas/2020/11).
 
