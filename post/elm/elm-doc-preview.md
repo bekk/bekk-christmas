@@ -31,6 +31,7 @@ $ elm-doc-preview
 ```
 
 
+![Test](/assets/elm-doc-preview-1.png)
 
 ## Lastly...
 
