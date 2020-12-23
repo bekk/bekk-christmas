@@ -154,11 +154,48 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 
 ### Tiltak og verktøy
 
+Eksempler på hva man kan gjøre for å skape psykologisk trygghet på individnivå, uavhengig av organisasjon og teamstruktur, er følgende:
+
+**Tiltak 1: Kartlegge personer og team gjennom bli kjent-aktiviteter**\
+Kommer...
+
+**Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
+Kommer...
+
+**Tiltak 3: Ta med motivasjon i priorierting av oppgaver.**\
+Kommer...
+
+**Tiltak 4: Forstå tidshorisont og viktighet av oppgaver**\
+Kommer...
+
+**Tiltak 5: Motivasjonstaktikker**\
+Kommer...
+
+
+
 ### Trygg på team-nivå
 
 Å skape psykologisk trygghet på teamnivå, handler i stor grad om kommunikasjon og forstå uskrevne regler. Hva betyr det egentlig når en person sier “Dette er ikke sånn jeg ville gjort det”? Er det kritikk for dårlig utført arbeid eller er personen nysgjerrig og vil lære mer? For å forstå hverandre på dette nivået, forstå spillereglene og eventuelt endre dem — må man snakke sammen. Man må samarbeide. Her er fire aspekter man kan vurdere, for å forbedre trygghet på teamnivå:
 
+
+
 ### Tiltak og verktøy
+
+Eksempler på hva man kan gjøre for å skape psykologisk trygghet i team-kontekst, er følgende:
+
+**Tiltak 1: Uformell rollemodell i praksis**\
+Kommer..
+
+**Tiltak 2: Formelle rollemodeller**\
+Kommer..
+
+**Tiltak 3: Lavterskel sosialisering**\
+Kommer..
+
+For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbefale [denne fine artikkelen til Thea Søfting.](https://ux.christmas/2020/5)
+
+**Tiltak 4: Taktikker for å feire initiativ**\
+Kommer..
 
 ### Trygg på organisasjonsnivå
 
@@ -175,7 +212,7 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 
 ### Tiltak og verktøy
 
-Eksempel på hva man kan gjøre for å skape psykologisk trygghet i organisasjonskontekst, er følgende:
+Eksempler på hva man kan gjøre for å skape psykologisk trygghet i organisasjonskontekst, er følgende:
 
 **Tiltak 1: Onboarding av nye teammedlemmer og ansatte.**\
 På en måte er dette en selvfølge, for å jobbe effektivt på en kjappest mulig måte, trenger man onboarding. Men jeg har selv opplevd liten onboarding eller manglende onboarding. Når det kommer en ny person i teamet, bør teamet selv ta initiativ til at personen blir onboardet på følgende punkter:
@@ -206,7 +243,9 @@ Når informasjonen er tilgjengelig, kan man oppnå plutselige synergieffekter me
 
 Å ha åpne forum og verktøy bør være et mål for en organisasjon og for team, men er ikke en regel man låse seg til. Noen ganger kan slike forum hindre deling, fordi det kan oppleves utrygt å dele noe for hele organisasjonen. Dette blir dermed en balanseøvelse mellom å få til trygghet innad i et team, og trygghet mellom teammedlemmer og andre team.
 
-Tiltak 4:
+**Tiltak 4: Hospitering, gavepakker og samarbeid på tvers av team**
+
+Kommer..
 
 **Tiltak 5: Felles forum for deling**\
 For å skape tillit, transparens og læring på tvers av team — er det nyttig å opprette fourm på tvers. Dette kan være fagspesifikt; arkitektforum, teknisk forum, designforum, produktlederforum. Et av målene er at det er lavterskel deling på tvers, i en uformell arena. Typisk en time hver uke eller annenhver uke.
