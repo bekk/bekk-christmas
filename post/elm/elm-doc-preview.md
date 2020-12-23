@@ -18,6 +18,18 @@ What I didn't know at the time, was that I actually had all of the documentation
 
 Another, even better, solution would have been to use the command line tool [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview) to view the documentation I wanted. Elm Doc Preview displays the documentation of the packages you have installed in the browser, and makes them look exactly like the documentation does on package.elm-lang.org.
 
+You can install the command line tool using `npm`:
+
+```
+$ npm install -g elm-doc-preview
+```
+
+And to view the documentation, you simply run the following command:
+
+```
+$ elm-doc-preview
+```
+
 ## Lastly...
 
 Lastly I want to thank every one who contributed to this years elm.christmas.
