@@ -158,8 +158,6 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 
 Å skape psykologisk trygghet på teamnivå, handler i stor grad om kommunikasjon og forstå uskrevne regler. Hva betyr det egentlig når en person sier “Dette er ikke sånn jeg ville gjort det”? Er det kritikk for dårlig utført arbeid eller er personen nysgjerrig og vil lære mer? For å forstå hverandre på dette nivået, forstå spillereglene og eventuelt endre dem — må man snakke sammen. Man må samarbeide. Her er fire aspekter man kan vurdere, for å forbedre trygghet på teamnivå:
 
-
-
 ### Tiltak og verktøy
 
 ### Trygg på organisasjonsnivå
@@ -182,13 +180,11 @@ Eksempel på hva man kan gjøre for å skape psykologisk trygghet i organisasjon
 **Tiltak 1: Onboarding av nye teammedlemmer og ansatte.**\
 På en måte er dette en selvfølge, for å jobbe effektivt på en kjappest mulig måte, trenger man onboarding. Men jeg har selv opplevd liten onboarding eller manglende onboarding. Når det kommer en ny person i teamet, bør teamet selv ta initiativ til at personen blir onboardet på følgende punkter:
 
-
+![Oversikt over onboardingsøkter; organisasjon, domene, teknologi, produkt, fagspesifikt og team.](/assets/onboarding.png "Onboardingsprogram")
 
 Forberedelser til hver onboardingsøkt, trenger ikke å være særlig omfattende. Det kan være veldig nyttig å bruke visualiseringsverktøy som Miro, for å ha kartlagt organisasjonskart (formell og opplevd), overordnet kundereiser og systemarkitektur — til de respektive øktende for det er nyttig å ha med.
 
 Er du ny selv, og ikke opplever deg trygg på organisasjonen, kan du selv ta initiativ til å bli onboardet på punktene over. Da kan du i løpet av få dager, på en metodisk måte blitt trygg på organisasjonen, og skapt psykologisk trygghet for deg selv.
-
-
 
 ## Skap egne metoder og tankesett for å skape tryggheten
 
@@ -214,7 +210,7 @@ Om du vil designe hverdagen og kulturen til teamet ditt og deler av organisasjon
 UX-designer & Agile Coach. Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
 Martin Sangolt
 
-![Linje](/assets/line.png)
+![Artikkelslutt](/assets/line.png)
 
 Anbefalt lesestoff:
 
