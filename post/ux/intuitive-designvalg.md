@@ -139,25 +139,41 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 
 ## Verktøykasse for psykologisk trygghet
 
-### Personlig nivå
+### Trygg på personlig nivå
 
 Å skape psykologisk trygghet på individnivå, handler mye om å fjerne redsel for å feile. Individuell forventningsstyring. Det handler også om å skape lærevillighet og rom for å vokse. For å skape psykologisk trygghet på individnivå, bør man hensynta disse fire punktene:
 
-#### Personlighet og personlig situasjon:
+1. **Personlighet og personlig situasjon:**\
+   Mennesker trives med ulike miljø, eksponering og arbeidsmetoder. Noen er ekstroverte, og trenger å snakke med personer ofte for å trives. Mens introverte ønsker gjerne å jobbe med oppgavene sine i fred og ro. En telefon til en introvert, kan skape angst — mens det kan være dagens opptur for en ekstrovert. Det handlinger ikke bare om introvert/ekstrovert — man bør hensynta ulikhetene ellers også for å skape trygghet. Noen kan ha dårlig hørsel, så lange diskusjoner i store møterom kan være slitsomt. Noen må hente barn i barnehagen hver dag, så møter sent på dagen kan skape stress. Enkelte elsker å stå på en scene og dele holde demo i plenum, mens andre liker heller en fin post på slack om hva som er lansert. Tar man hensyn til personlighet og situasjon, kan man skape stor individuell trygghet, og gjøre at man føler seg inkludert. 
+2. **Ambisjonsnivå og ansvarstrygghet:**\
+   For noen er jobben livet, for andre er jobben det som gjør at man kan nyte fritid etter jobben. Å gi personer riktig mengde ansvar etter ambisjonsnivå og erfaring, vil skape bidragstrygghet og læringstrygghet.
+3. **Kompetanse:**\
+   Det er viktig at teammedlemmer gjør oppgaver de har mulighet til å utføre. Samtidig er det viktig å skape en arena for læring. Det kan dermed være lurt å kartlegge kjernekompetanse, annen kompetanse og hva personer ønsker å bli bedre på. En tittel gir sjeldent det hele bildet. En utvikler kan plutselig skrive gode tekster, og en forretningsutvikler kan plutselig holde kundeintervju.
+4. **Motivasjon:**\
+   Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gjøre det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
 
-Mennesker trives med ulike miljø, eksponering og arbeidsmetoder. Noen er ekstroverte, og trenger å snakke med personer ofte for å trives. Mens introverte ønsker gjerne å jobbe med oppgavene sine i fred og ro. En telefon til en introvert, kan skape angst — mens det kan være dagens opptur for en ekstrovert. Det handlinger ikke bare om introvert/ekstrovert — man bør hensynta ulikhetene ellers også for å skape trygghet. Noen kan ha dårlig hørsel, så lange diskusjoner i store møterom kan være slitsomt. Noen må hente barn i barnehagen hver dag, så møter sent på dagen kan skape stress. Enkelte elsker å stå på en scene og dele holde demo i plenum, mens andre liker heller en fin post på slack om hva som er lansert. Tar man hensyn til personlighet og situasjon, kan man skape stor individuell trygghet, og gjøre at man føler seg inkludert. 
+#### Tiltak og verktøy
 
-#### Ambisjonsnivå og ansvarstrygghet:
+### Trygg på team-nivå
 
-For noen er jobben livet, for andre er jobben det som gjør at man kan nyte fritid etter jobben. Å gi personer riktig mengde ansvar etter ambisjonsnivå og erfaring, vil skape bidragstrygghet og læringstrygghet.
 
-#### Kompetanse:
 
-Det er viktig at teammedlemmer gjør oppgaver de har mulighet til å utføre. Samtidig er det viktig å skape en arena for læring. Det kan dermed være lurt å kartlegge kjernekompetanse, annen kompetanse og hva personer ønsker å bli bedre på. En tittel gir sjeldent det hele bildet. En utvikler kan plutselig skrive gode tekster, og en forretningsutvikler kan plutselig holde kundeintervju.
+#### Tiltak og verktøy
 
-#### **Motivasjon:**
+### Trygg på organisasjonsnivå
 
-Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gjøre det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
+Å bli trygg på organisasjonsnivå, handler i stor grad om å forstå hvordan ulike avdelinger og team forholder seg til hverandre. Det handler om å forstå maktmønstre, å skape og forstå organisasjonens felles mål, og få innsyn i hva ledelsen og andre team jobber med. Noe av det viktigste er kanskje å forstå hva virksomheten driver med, historikken og domenet. Å bli trygg på organisasjonsnivå, er gjerne det som kan låse opp det øverste nivået i psykologisk trygghet: utfordringstrygghet. Dette er noen av de viktigste dimensjonene, for å gjøre personer og team trygg på tvers av team og organisasjonen. 
+
+1. **Domenekunnskap**\
+   Dette handler om å få innsyn i alt fra fagbegreper, til å forstå forretningen. Dette kan ofte skape mye usikkerhet, og være et hinder for læringstrygghet og bidragstrygghet.
+2. **Organisasjonskunnskap**\
+   Å forstå hvem som er nøkkelpersoner i organisasjonen, og hvordan organisasjonen fungerer på papiret — men like viktig hvordan de uformelle strukturene er. Her trenger man ofte å forstå historikken i selskapet. 
+3. **Visjon og mål**\
+   Særlig viktig for å aligne team, og skape trygghet rundt de øverse nivåene: bidragstrygghet og utfordringstrygghet.
+4. **Transparens**\
+   For å kunne øke initativet hos enkelpersoner, trenger man innsyn. Dette handler om å tilgjengeliggjøre informasjon som kan være nyttig indirekte — eller informasjon på et tidlig stadium. Skal man øke bidragstrygghet på tvers av team er dette essensielt.
+
+#### Tiltak og verktøy
 
 
 
@@ -165,7 +181,7 @@ Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gj
 
 Å få til psykologisk trygghet for seg selv, og for andre — er et kontinuerlig arbeid. Det handler om å si ifra, høre på andre, endre vaner, hvordan vi snakker til andre, oppføre oss på en god måte rundt andre og alltid ønske de rundt oss godt. Noe jeg tenker passer fint å ta med inn i julen.
 
-I forrige avsnitt gav jeg flere eksempler på hva dere kan gjøre, for å skape mer psykologisk trygghet. Men man kan enkelt å lage helt egne ritualer, aktiviteter, tankesett og metoder for å forbedre kulturen. Det er bare å gå tilbake til de 4 dimensjonene: inkludere, lære, bidra og utfordre.
+I forrige avsnitt gav jeg flere eksempler på hva man kan gjøre, for å skape mer psykologisk trygghet. Men man kan enkelt å lage helt egne ritualer, aktiviteter, tankesett og metoder for å forbedre kulturen. Det er bare å gå tilbake til de 4 dimensjonene: inkludere, lære, bidra og utfordre.
 
 **Du kan skape din egen psykologisk trygghet, ved å stille spørsmålene til deg selv:**
 
