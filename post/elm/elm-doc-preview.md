@@ -43,4 +43,4 @@ The tool is a really nice convenience for those times where you don't have an in
 
 ## Lastly...
 
-Lastly I want to thank everyone who contributed to this years elm.christmas. 10 authors wrote 24 articles in total, in addition to reading and giving feedback to articles written by others. Thank you all for taking the time in a hectic holiday season to give a little back to the Elm community. ❤️
+Lastly I want to thank everyone who contributed to this years elm.christmas. 10 authors wrote 24 articles in total, in addition to reading and giving feedback to articles written by others. Thank you all for taking the time in a busy holiday season to give a little back to the Elm community. ❤️
