@@ -152,13 +152,13 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 4. **Motivasjon:**\
    Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gjøre det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
 
-#### Tiltak og verktøy
+### Tiltak og verktøy
 
 ### Trygg på team-nivå
 
 
 
-#### Tiltak og verktøy
+### Tiltak og verktøy
 
 ### Trygg på organisasjonsnivå
 
@@ -173,7 +173,7 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 4. **Transparens**\
    For å kunne øke initativet hos enkelpersoner, trenger man innsyn. Dette handler om å tilgjengeliggjøre informasjon som kan være nyttig indirekte — eller informasjon på et tidlig stadium. Skal man øke bidragstrygghet på tvers av team er dette essensielt.
 
-#### Tiltak og verktøy
+### Tiltak og verktøy
 
 
 
