@@ -131,7 +131,7 @@ One of my favorite real world cases is [Realtime Vehicle Tracking with Elixir an
 
 ## Wrapping up
 
-For a good introduction by one of the co-authors of Nerves I recommend checking out Justin Schnecks talk [Functional IoT with Elixir and Nerves](https://www.youtube.com/watch?v=mrpQHZcy3CI)[^fpiot]. It goes a bit more into detail in some areas and have some awesome demos at the end!
+For a good introduction I recommend checking out a talk by one of the co-authors of Nerves, Justin Schneck: [Functional IoT with Elixir and Nerves](https://www.youtube.com/watch?v=mrpQHZcy3CI)[^fpiot]. It goes a bit more into detail in some areas and have some awesome demos at the end!
 
 If you have a project involving a Raspberry Pi or another embedded device I would recommend you to check out Nerves. It simplifies a lot of the hard parts about embedded programming and helps you focus on solving the problem at hand and not having to build you own deployment schemes. And you can do it all with functional programming! 😄
 
