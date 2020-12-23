@@ -3,6 +3,7 @@ calendar: ux
 post_year: 2020
 post_day: 24
 title: A Christmas Eve of Design 🎅
+image: https://images.unsplash.com/photo-1577156130348-b935e8e0b173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2848&q=80
 ingress: Finally Christmas Eve! Hopefully, this calendar has made the Christmas
   advent a little more interesting. This year with both [harde og myke
   pakker](https://ux.christmas/2020/9) which Kjersti Bjelkarøy has written
