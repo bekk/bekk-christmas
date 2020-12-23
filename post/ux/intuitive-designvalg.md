@@ -257,7 +257,7 @@ Hvordan en post i #prodfest typisk ser ut:
 
 ![Post i slack](/assets/reisekort.png "Post i slack")
 
-Hvordan staselig man kan feire bidrag på større events, her fra et teams interne "Service Awards":
+Hvor staselig man kan feire bidrag fra teammedlemmer på et event på kontoret, her et team kalt Team Service sin "Service Awards":
 
 ![Feiring av bidrag](/assets/img_4965.jpg "Feiring av bidrag")
 
