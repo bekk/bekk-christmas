@@ -2,7 +2,7 @@
 calendar: strategy
 post_year: 2020
 post_day: 22
-title: "We are travelers - en merkevarestrategi som gaper over for mye? "
+title: "Kan en merkevarestrategi gape over for mye? "
 image: https://images.unsplash.com/photo-1533289408336-ac92d0dbf036?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlY2slMjBpbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
 ingress: Ferie. Endelig. Vi skal hjem, til hvit jul og til skiføre. Billettene
   er for lengst booket, inkludert ski. Den digitale reisen har gått som smurt,
