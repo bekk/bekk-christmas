@@ -245,8 +245,14 @@ I større team, hvor man kanskje har team-i-team som ikke er like bestandige —
 
 For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbefale [denne fine artikkelen til Thea Søfting.](https://ux.christmas/2020/5)
 
-**Tiltak 4: Taktikker for å feire initiativ**\
-Kommer..
+**Tiltak 4: Taktikker for å feire initiativ**
+
+Å feire initiativ og bidrag bør være utrolig lavterskel, og gjøres på mange ulike måter for å forsterke en kultur med bidragstrygghet. Noe man kan innføre er:
+
+* Egen offentlig kanal i slack eller tilsvarende verktøy, hvor hver minste lille lansering blir publisert. Et godt navn for en slik kanal i produktutviklingsverden er #prodfest.
+* Ha interne demos kun for teamet hver uke. Bruk gjerne “Friday Wins” for å omtale ritualet. Ikke bare del ferdige løsninger, hvis back-end-kode og hvis bilder fra brukertester. Alt som kan feires, skal feires.
+* Om man har en skjerm i åpent landskap — gamifiser produksjonssetting med “siste produksjonssetter” slik at dette feires offentlig.
+* Ha egne eventer halvårlig for å feire bidrag. Særlig nyttig for støtteroller i produktteam, som ikke produksjonssetter eller jobber direkte med utviklingsoppgaver. Gi ros og kanskje en enkel premie til alle i teamet. I et team jeg har vært i, som kaltes Service-teamet, kalte vi dette ritualet for “Service Awards”.
 
 ### Trygg på organisasjonsnivå
 
