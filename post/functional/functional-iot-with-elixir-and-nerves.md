@@ -86,7 +86,7 @@ Nerves support all a lot of different hardware:
 - GRiSP 2
 - Custom hardware and most boards that can run embedded Linux (via Buildroot)
 
-The most common for getting started is probably the Raspberry Pi line of boards but with other boards are supported and with some extra work you can make it work on hardware that kan run embedded Linux.
+The most common for getting started is probably the Raspberry Pi line of boards but other boards are supported and with some extra work you can make it work on hardware that kan run embedded Linux.
 
 Nerves uses [Buildroot](https://buildroot.org/) to create a custom firmware for the device you are targeting. The common boards has premade "images" so unless you are doing some custom board or peripherals, you will not need to learn Buildroot. Just build your application and run a command to get the firmware for you target system. Buildroot takes care of cross-compilation for other architectures like ARM.
 
@@ -105,7 +105,7 @@ Security is a primary concern of NervesHub and it has several features to secure
 If you enable it NervesHub can give you remote console/iex access directly to the device in the browser.
 
 
-## What is use Nerves for?
+## What is Nerves used for?
 
 So what is Nerves used for? Lets look at some different examples!
 
