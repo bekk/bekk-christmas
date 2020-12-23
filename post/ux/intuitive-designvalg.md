@@ -232,7 +232,7 @@ Noe konkret man kan benytte i et team, om prioriteringen til en viss grad bestem
 
 ![Bilde av fysisk roadmap og digitalt roadmap.](/assets/roadmap.png "Dynamisk roadmap")
 
-Har teamet mulighet til å bestemme sin egen hverdag i større grad, kan man fortsatt bruke en slik dynamisk roadmap. Fordelen kan være at skaper noen rammer, uten å love noe som helst om tidshorisont eller om oppgavene nedover faktisk skal bli gjort. Det er bare en midlertidig plan. Om man ønsker å bli mer sofistikert, kan man bruke mer komplekse målstyringsverktøy — som OKR.
+Har teamet mulighet til å bestemme sin egen hverdag i større grad, kan man fortsatt bruke en slik dynamisk roadmap. Fordelen kan være at det skaper noen trygge rammer, uten å love noe om tidshorisont eller om oppgavene lengre ned på listen faktisk blir gjort. Det er bare en midlertidig plan. Om man ønsker å bli mer sofistikert, kan man bruke mer komplekse målstyringsverktøy — som OKR.
 
 **Tiltak 3: Åpne verktøy og forum**\
 Dersom team har muligheten til det, bør man bruke så åpne verktøy som mulig i arbeidet, for å kunne være så transparent som mulig. Informasjon som strengt ikke trenger å være privat, bør kunne deles i åpne forum. I praksis kan det bety å ha samtaler og deling av informasjon i åpne slack-kanaler, ikke hemmelige kanaler eller direktechat.\
