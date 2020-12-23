@@ -182,9 +182,36 @@ På en måte er dette en selvfølge, for å jobbe effektivt på en kjappest muli
 
 ![Oversikt over onboardingsøkter; organisasjon, domene, teknologi, produkt, fagspesifikt og team.](/assets/onboarding.png "Onboardingsprogram")
 
-Forberedelser til hver onboardingsøkt, trenger ikke å være særlig omfattende. Det kan være veldig nyttig å bruke visualiseringsverktøy som Miro, for å ha kartlagt organisasjonskart (formell og opplevd), overordnet kundereiser og systemarkitektur — til de respektive øktende for det er nyttig å ha med.
+Forberedelser til hver onboardingsøkt, trenger ikke å være særlig omfattende. Det kan være veldig nyttig å bruke visualiseringsverktøy som Miro, for å ha kartlagt organisasjonskart (formell og opplevd), overordnet kundereiser og systemarkitektur — til de respektive øktene for det er nyttig å ha med.
 
 Er du ny selv, og ikke opplever deg trygg på organisasjonen, kan du selv ta initiativ til å bli onboardet på punktene over. Da kan du i løpet av få dager, på en metodisk måte blitt trygg på organisasjonen, og skapt psykologisk trygghet for deg selv.
+
+**Tiltak 2: Synlig prioritering, mål og målstyring**\
+For å synliggjøre hvorfor et team jobber med noe, er viktig for å skape en forståelse av mål og visjon. Å være transparent på prioritering så tidlig som mulig, kan skape trygge rammer og er viktig for å skape bidragstrygghet.
+
+Det første organisasjonen bør gjøre, er å synliggjøre prioritering. Det kan være så enkelt som en liste i Trello og Jira, på konkrete oppgaver. Dokumentasjon man har laget for fremtidsplaner og visjoner, eller potensielle roadmaps. Det kan også være å synliggjøre KPIer i selskapet. Om en produkteier for et team blir målt på en konkret metrikk, bør dette være åpent for teamet.
+
+Noe konkret man kan benytte i et team, om prioriteringen til en viss grad bestemmes utenfor teamet, er et dynamisk roadmap, hvor man lister opp større tiltak eller prosjekter som er tenkt at teamet skal jobbe med i fremtiden og hva som jobbes med for øyeblikket. Å gjøre dette fysisk kan være en hyggelig øvelse, som skaper transparens innad i teamet og utenfor teamet. Her fra et konkret prosjekt, hvor jeg lagde en slik roadmap på en magnettavle — hvor jeg tegnet opp alle teammedlemmene og plasserte dem på magneter som kunne flyttes på tavlen. Dette gav innsyn både i kapasitet, hvem som arbeidet sammen og hva som ble jobbet med. Til høyre i figuren, er tavlen beskrevet på en abstrakt måte — om man ønsker å ta i bruk et lignende verktøy, uavhengig om det er fysisk eller digitalt:
+
+![Bilde av fysisk roadmap og digitalt roadmap.](/assets/roadmap.png "Dynamisk roadmap")
+
+Har teamet mulighet til å bestemme sin egen hverdag i større grad, kan man fortsatt bruke en slik dynamisk roadmap. Fordelen kan være at skaper noen rammer, uten å love noe som helst om tidshorisont eller om oppgavene nedover faktisk skal bli gjort. Det er bare en midlertidig plan. Om man ønsker å bli mer sofistikert, kan man bruke mer komplekse målstyringsverktøy — som OKR.
+
+**Tiltak 3: Åpne verktøy og forum**\
+Dersom team har muligheten til det, bør man bruke så åpne verktøy som mulig i arbeidet, for å kunne være så transparent som mulig. Informasjon som strengt ikke trenger å være privat, bør kunne deles i åpne forum. I praksis kan det bety å ha samtaler og deling av informasjon i åpne slack-kanaler, ikke hemmelige kanaler eller direktechat.\
+\
+Mer langsiktig dokumentasjon, kan legges i verktøy hvor man stille inn at informasjonen er tilgjengelig for alle i organisasjonen. Typisk kan det være Confluence, Notion, Office på nett, Google Docs, skylagringstjenester, Miro og lignende. For designere, kan det bety å ta i bruk verktøy som Figma.
+
+Når informasjonen er tilgjengelig, kan man oppnå plutselige synergieffekter mellom team. Noe man tenkte ikke var nødvendig å dele på tvers, kan være nyttig og skape innovasjon eller at man unngår dobbeltarbeid. Mye av det man oppnår mellom team, er en følelse av fellesskap og inkludering; som er er viktig for psykologisk trygghet.
+
+Å ha åpne forum og verktøy bør være et mål for en organisasjon og for team, men er ikke en regel man låse seg til. Noen ganger kan slike forum hindre deling, fordi det kan oppleves utrygt å dele noe for hele organisasjonen. Dette blir dermed en balanseøvelse mellom å få til trygghet innad i et team, og trygghet mellom teammedlemmer og andre team.
+
+Tiltak 4:
+
+**Tiltak 5: Felles forum for deling**\
+For å skape tillit, transparens og læring på tvers av team — er det nyttig å opprette fourm på tvers. Dette kan være fagspesifikt; arkitektforum, teknisk forum, designforum, produktlederforum. Et av målene er at det er lavterskel deling på tvers, i en uformell arena. Typisk en time hver uke eller annenhver uke.
+
+For å inkludere personer utenfor produktteam i slike forum, kan det også være en idé å ha lavterskel demomøter eller town halls hvor store deler av organisasjonen er invitert. Slike arenaer kan både skape psykologisk trygghet, men også ha motsatt effekt. For å unngå at team føler seg presset i så store forum, kan det være lurt at en rollemodell i teamet tar ansvar for delingen — og at delingen ikke krever noe forberedelser. Målsetningen må være at delingen er enkel og har fokus på læring og progresjon.
 
 ## Skap egne metoder og tankesett for å skape tryggheten
 
