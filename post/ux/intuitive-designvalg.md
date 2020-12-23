@@ -208,7 +208,14 @@ Grunnen til at formelle roller kan være nyttig for å skape trygghet er tosidig
 I større team, hvor man kanskje har team-i-team som ikke er like bestandige — man målrettet bruke formelle roller for å forme kulturen på individnivå. Ser man personer som ikke opplever psykologisk trygghet, kan man sette sammen små team hvor en rollemodell er en del av teamet. Det kan også være så enkelt som å la en Tech lead parprogrammere med en utrygg utvikler.
 
 **Tiltak 3: Lavterskel sosialisering**\
-Kommer..
+Å opprettholde et sosialt miljø, er ofte noe som skjer organisk når teammedlemmer har blitt kjent. Men om dette ikke skjer, kan man lage små sosiale ritualer.
+
+* Opprette en gruppe i et sosialt medium, for lavterskel personlig deling uten at det oppleves som press. For eksempel en Snapchat-gruppe.
+* Opprette faste pauser. Kaffepauser, pauser for å spise frukt, luftepauser.
+* Gjøre en nyttig, sosial aktivitet sammen. For eksempel tøye ut på hvert sitt hjemmekontor over video.
+* På fysisk kontor bør man spise lunsj sammen i team som et fast rituale, men en fin gest en gang i blant kan være å spise ute spontant.
+* Å komme seg ut av kontoret sammen en gang i blant. Jobbe på et stort møterom i stedenfor åpent landskap. Har man konsulenter i teamet, kan man sitte på konsulenthusets kontorer i blant. 
+* Enkle sosiale eventer etter jobb; lønningspils, quiz, middager eller organiserte aktiviteter som dart og minigolf.
 
 For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbefale [denne fine artikkelen til Thea Søfting.](https://ux.christmas/2020/5)
 
