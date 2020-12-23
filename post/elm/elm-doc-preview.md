@@ -14,6 +14,10 @@ This last article won't be long, as I just want to highlight a neat tool that yo
 
 I remember being really inspired by Richard Feldman's [keynote talk at Elm Europe 2018](https://youtu.be/x1FU3e0sT1I), and on the plane from Paris I was in the middle of rewriting of my side project using some of the techniques from that talk, when I needed to check the documentation of a package at [package.elm-lang.org](https://package.elm-lang.org). The only problem was that I was 30 000 feet above France, with no Internet access.
 
+What I didn't know at the time, was that I actually had all of the documentation locally for Elm packages I was using already. So I _could_ have just checked the source files to read the documentation I was looking for.
+
+Another, even better, solution would have been to use the command line tool [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview) to view the documentation I wanted. Elm Doc Preview displays the documentation of the packages you have installed in the browser, and makes them look exactly like the documentation does on package.elm-lang.org.
+
 ## Lastly...
 
 Lastly I want to thank every one who contributed to this years elm.christmas.
