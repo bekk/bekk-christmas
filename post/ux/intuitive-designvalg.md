@@ -135,11 +135,35 @@ Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekte
 
 Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “design” betyr ikke noe mer enn det motsatte av ordet “tilfeldig”. Å designe betyr å skape, planlegge, eller påvirke. Og det kan vi gjøre, selv om kulturen ikke er håndfast.
 
-Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer foretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
+Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
+
+
 
 
 
 Verktøykasse for psykologisk trygghet
+
+### Personlig nivå
+
+Å skape psykologisk trygghet på individnivå, handler mye om å fjerne redsel for å feile. Individuell forventningsstyring. Det handler også om å skape lærevillighet og rom for å vokse. For å skape psykologisk trygghet på individnivå, bør man hensynta disse fire punktene:
+
+#### Personlighet og personlig situasjon:
+
+Mennesker trives med ulike miljø, eksponering og arbeidsmetoder. Noen er ekstroverte, og trenger å snakke med personer ofte for å trives. Mens introverte ønsker gjerne å jobbe med oppgavene sine i fred og ro. En telefon til en introvert, kan skape angst — mens det kan være dagens opptur for en ekstrovert. Det handlinger ikke bare om introvert/ekstrovert — man bør hensynta ulikhetene ellers også for å skape trygghet. Noen kan ha dårlig hørsel, så lange diskusjoner i store møterom kan være slitsomt. Noen må hente barn i barnehagen hver dag, så møter sent på dagen kan skape stress. Enkelte elsker å stå på en scene og dele holde demo i plenum, mens andre liker heller en fin post på slack om hva som er lansert. Tar man hensyn til personlighet og situasjon, kan man skape stor individuell trygghet, og gjøre at man føler seg inkludert. 
+
+#### Ambisjonsnivå og ansvarstrygghet:
+
+For noen er jobben livet, for andre er jobben det som gjør at man kan nyte fritid etter jobben. Å gi personer riktig mengde ansvar etter ambisjonsnivå og erfaring, vil skape bidragstrygghet og læringstrygghet.
+
+#### Kompetanse:
+
+Det er viktig at teammedlemmer gjør oppgaver de har mulighet til å utføre. Samtidig er det viktig å skape en arena for læring. Det kan dermed være lurt å kartlegge kjernekompetanse, annen kompetanse og hva personer ønsker å bli bedre på. En tittel gir sjeldent det hele bildet. En utvikler kan plutselig skrive gode tekster, og en forretningsutvikler kan plutselig holde kundeintervju.
+
+#### **Motivasjon:**
+
+Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gjøre det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
+
+
 
 ## Skap egne metoder og tankesett for å skape tryggheten
 
