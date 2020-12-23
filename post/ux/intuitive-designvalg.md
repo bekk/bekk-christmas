@@ -127,7 +127,16 @@ Når det gjelder personer med få fagfeller i et produktteam, søker man ofte tr
 
 Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekter i  en nettverksorganisasjon. Informasjon og kompetanse spres organisk og uformelt, som gjør at eventuell innovasjon ikke bare skjer i siloer — men på tvers av organisasjonen.
 
-## Verktøykasse for psykologisk trygghet
+## La oss designe kulturen nedenfra og opp
+
+Å skape en kultur med psykologisk trygghet, er noe man som enkeltperson og team fint kan ta initiativ til selv. Om team er satt sammen av personligheter som jobber godt sammen, kan dette ofte skje organisk over tid. Men dette skjer ikke alltid, og noen ganger kan det ta veldig lang tid.
+
+Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “design” betyr ikke noe mer enn det motsatte av ordet “tilfeldig”. Å designe betyr å skape, planlegge, eller påvirke. Og det kan vi gjøre, selv om kulturen ikke er håndfast.
+
+Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer foretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
+
+## \
+Verktøykasse for psykologisk trygghet
 
 
 
