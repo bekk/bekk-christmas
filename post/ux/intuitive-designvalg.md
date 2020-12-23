@@ -160,9 +160,9 @@ Om du vil hjelpe andre rundt deg, snakk med de og still de samme spørsmålene i
 
 Om du vil designe hverdagen og kulturen til teamet ditt og deler av organisasjonen; engasjer teamet ditt og fagfeller på tvers av organisasjonen. Ta initiativ til samtaler eller idéworkshops for å skape et bedre miljø for læring, initiativ og innovasjon. Plutselig har dere skapt en kultur som i større grad vektlegger psykologisk trygghet.
 
-**God jul.**
+#### **God jul.**
 
-Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
+UX-designer & Agile Coach. Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
 Martin Sangolt
 
 ![Linje](/assets/line.png)
