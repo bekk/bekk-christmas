@@ -180,11 +180,21 @@ I mine prosjekter, har jeg ofte samlet alle bli kjent-øvelsene og team canvas-s
 Med dette tiltaket har man blitt godt kjent i teamet, og man kan lettere ta hensyn til hverandres kompetanse, egenskaper, personligheter og situasjon. En effektiv måte å skape et grunnlag for psykologisk trygghet.
 
 **Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
-Kommer...
-
-
+For å bygge selvtillit og initativstamina, bidragstrygghet, kan man ta på seg eller gi personer lov til å gjøre noe. Dette kan man gjøre muntlig eller skriftlig, direkte eller i en plenumssituasjon.
 
 ![Midlertidig ansvar](/assets/ansvar.png "Midlertidig ansvar")
+
+Dette kan være ansvar en konkret aktivitet: Gjøre noen ansvarlig å holde retrospektiv, ansvarlig for å oppsummere ukens kundetilbakemeldinger eller ordne noe sosialt for teamet.
+
+Det kan også være noe mer langsiktig. I mine team har jeg ofte benyttet begrepet “task force” for dette formålet. En, to eller tre personer blir gitt en helt konkret oppgave med en kort tidsfrist. Tidsbegrensningen ufarliggjør ansvaret, men gir personer et tydelig mandat til å komme med bidrag på en trygg måte.
+
+Midlertidige roller kan være en fin måte å ufarliggjøre det å bidra, ta ansvar. For å gjøre mer ut av disse rollene kan man innføre små ritualer og ha rekvisitter. I et team jeg jobbet i, hadde en i teamet ekstra ansvar for å se til at systemet vi bygget var oppe — og måtte følge med på systemanalyser og feil i produksjon. For å symbolisere dette, fikk personen overrakt en brannslukker-badeand. En humoristisk ritual, men som også gjorde det synlig for utenforstående hvem som hadde dette ansvaret — da anden alltid var synlig på pulten til den det gjaldt:
+
+
+
+![Badeand brukt i bug-sermoni](/assets/img_3996-1.png "Badeand")
+
+
 
 **Tiltak 3: Ta med motivasjon i priorierting av oppgaver.**\
 Kommer...
