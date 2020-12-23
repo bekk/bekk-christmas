@@ -196,13 +196,16 @@ Midlertidige roller kan være en fin måte å ufarliggjøre det å bidra, ta ans
 
 
 
-**Tiltak 3: Ta med motivasjon i priorierting av oppgaver.**\
-Kommer...
+**Tiltak 3: Ta med motivasjon i prioritering av oppgaver.**\
+Mange team og produkteiere, bruker en verdi/arbeid-matrise for å finne ut hvilke oppgaver som er lønnsomme. Enten mentalt i hodet, eller helt faktisk en matrise. Noen er kanskje så metodisk at de bruker regneark hvor man gir ulike poenger i ulike skalaer for å regne ut hvilke oppgaver man burde prioritere og nedprioritere.
 
-**Tiltak 4: Forstå tidshorisont og viktighet av oppgaver**\
-Kommer...
+Skal man gjøre slike øvelser, bør man også ta med hvor motivert team-medlemmer er for å utføre en oppgave. Selv om et prosjekt eller en oppgave gir mye verdi (forretningsverdi og kundeverdi), og krever relativt lite arbeid (tid, kompleksitet og teamet har nok kompetanse) — er det mulig at ingen i teamet har høy motivasjon for å utføre en oppgave. Høy motivasjon for å utføre en oppgave, kan gjøre at personer er villig til å lære noe nytt, samarbeider med andre for å løse de komplekse knotene og til og med bruker noe av fritiden sin på å løse oppgaven — fordi det er så spennende. Å ta med motivasjon i prioritering av oppgaver kan dermed både være smart forretningsmessig, men også skape trygghet og engasjerte teammedlemmer.
 
-**Tiltak 5: Motivasjonstaktikker**\
+En abstrakt illustrasjon av forskjellen på en matrise som enten tar hensyn eller ikke til motivasjon:
+
+![Verdimatrise med motivasjon](/assets/verdimatrise.png "Verdimatrise med motivasjon")
+
+**Tiltak 4: Motivasjonstaktikker**\
 Fire teknikker man kan bruke for å øke motivasjon, for viktige, men kjedelige oppgaver er: 
 
 1. Skap forståelse for hvorfor arbeidet gir verdi og er meningsfylt. Dette er ikke alltid synlig for alle. Noen ganger er det å vise til kundetilbakemeldinger, for andre kan det å være å vise hvorfor et prosjekt er lønnsomt. Ulike personer har ulike motivasjonsdrivere.
