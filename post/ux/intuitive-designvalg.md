@@ -29,7 +29,7 @@ Teamene får kontinuerlig og ærlige tilbakemeldinger direkte fra brukerne. Selv
 
 Ta et godt innpust. Noen klapp på skulderen for bransjen vår har fortjent to ekstra avsnitt, og en håndfull flere buzzord.
 
-Innovasjonstakten har økt med lean startup-metodikk, hvor vi tester forretningsmodeller og har hypotesetester. Det kastes bort minst mulig ressurser, for å oppnå en digital forretningsutviklers drøm; produkt-marked-egnethet. Eller mindre språkrådvennlig; product-market fit. Prosjekter er borte, og de hippeste tjenestene utvikles av selvorganiserte, tverrfaglige produktteam. Siloene *nytuvkling* og *forvaltning* eksisterer nå bare i budsjettene, de manifisteres ikke lengre i strukturer i selskapene. Dette er mye takket være fremmedordet devOps. Skalering har blitt så viktig at det har fått egne team, designsystem-team, platform-team, og designOps-team. Sistnevnte har forresten ingenting med devOps å gjøre — men det er trendy å sette "Ops" på slutten av ord i tech-bransjen for tiden. “Ops” er det nye IO. 
+Innovasjonstakten har økt med lean startup-metodikk, hvor vi tester forretningsmodeller og har hypotesetester. Det kastes bort minst mulig ressurser, for å oppnå en digital forretningsutviklers drøm; produkt-marked-egnethet. Eller mindre språkrådvennlig; product-market fit. Prosjekter er borte, og de hippeste tjenestene utvikles av selvorganiserte, tverrfaglige produktteam. Siloene *nyutvkling* og *forvaltning* eksisterer nå bare i budsjettene, de manifisteres ikke lengre i strukturer i selskapene. Dette er mye takket være fremmedordet devOps. Skalering har blitt så viktig at det har fått egne team, designsystem-team, platform-team, og designOps-team. Sistnevnte har forresten ingenting med devOps å gjøre — men det er trendy å sette "Ops" på slutten av ord i tech-bransjen for tiden. “Ops” er det nye IO. 
 
 I de siste årene har vi også blitt flinkere til å jobbe strategisk i utviklingsteam. Vi er ikke lengre feature factories som higer etter story points. Å produsere output føles fortsatt godt. At det flyttes brukerhistorier langs kanban-brettet mot done-kolonnen i rasende fart, gir en god selvfølelse. Men vi har også blitt dyktige på å skape effekt. Skape outcome, ikke bare output. Mer av ansvaret til produktutviklingen ligger lokalt i teamene. De bestemmer mer. Og litt overraskende har det blitt OK for ledelsen å ha mindre kontroll, takket være målstyringsverktøy som OKR.
 
@@ -37,7 +37,7 @@ Vi har blitt dyktige på rammeverk, metoder, organisering og å skape produkter.
 
 ## Hva er psykologisk trygghet?
 
-Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger av sosiale kontekster. Du kan føle deg fullstendig trygg i vennegjengen, sånn passe i en familiesetting. Der opplever at du kanskje at du veier hvert ordvalg i støre grad. Men mest relevant for denne artikkelen, så opplever du kanskje en helt annen trygghet blant kollegaer.
+Psykologisk trygghet er noe man opplever på individuelt nivå. Og det avhenger av sosiale kontekster. Du kan føle deg fullstendig trygg i vennegjengen, men bare sånn passe i en familiesetting. Der kan du oppleve at du veier hvert ord i større grad. Men mest relevant for denne artikkelen, så opplever du kanskje en helt annen trygghet blant kollegaer.
 
 Definisjonen til Ph.D. Timothy R. Clark oversatt med mine ord, er som følgende:
 
@@ -99,7 +99,7 @@ Når vi ser på verktøy for å skape mer psykologisk trygghet, kan vi angripe d
 
 1. En designer i et utviklingsteam føler seg ikke inkludert i sitt eget team, men finner trygghet hos andre designere i et sentralt designteam eller hos designere i andre produktteam.
 2. En nyutdannet utvikler har samarbeidet lite med andre fagfelt, men føler seg trygg blant de andre utviklerne i teamet
-3. En produkteier har jobbet lenge i organisasjonen, men er med å opprette et nytt. Personen er ikke trygg på teamet, men trygg de relevante stakeholdere og fageller på tvers av organisasjonen.
+3. En produkteier har jobbet lenge i organisasjonen, men er med på å opprette et nytt. Personen er ikke trygg på teamet, men trygg  på de relevante stakeholdere og fageller på tvers av organisasjonen.
 
    ![Personer som kun er trygg på fagfeller utenfor teamet](/assets/sit1.png "Situasjon 1")
 
@@ -135,7 +135,7 @@ Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekte
 
 Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “design” betyr ikke noe mer enn det motsatte av ordet “tilfeldig”. Å designe betyr å skape, planlegge, eller påvirke. Og det kan vi gjøre, selv om kulturen ikke er håndfast.
 
-Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
+Vi designere er vant til å designe det immaterielle. Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
 
 ## Verktøykasse for psykologisk trygghet
 
@@ -144,13 +144,13 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 Å skape psykologisk trygghet på individnivå, handler mye om å fjerne redsel for å feile. Individuell forventningsstyring. Det handler også om å skape lærevillighet og rom for å vokse. For å skape psykologisk trygghet på individnivå, bør man hensynta disse fire punktene:
 
 1. **Personlighet og personlig situasjon:**\
-   Mennesker trives med ulike miljø, eksponering og arbeidsmetoder. Noen er ekstroverte, og trenger å snakke med personer ofte for å trives. Mens introverte ønsker gjerne å jobbe med oppgavene sine i fred og ro. En telefon til en introvert, kan skape angst — mens det kan være dagens opptur for en ekstrovert. Det handlinger ikke bare om introvert/ekstrovert — man bør hensynta ulikhetene ellers også for å skape trygghet. Noen kan ha dårlig hørsel, så lange diskusjoner i store møterom kan være slitsomt. Noen må hente barn i barnehagen hver dag, så møter sent på dagen kan skape stress. Enkelte elsker å stå på en scene og dele holde demo i plenum, mens andre liker heller en fin post på slack om hva som er lansert. Tar man hensyn til personlighet og situasjon, kan man skape stor individuell trygghet, og gjøre at man føler seg inkludert. 
+   Mennesker trives med ulike miljø, eksponering og arbeidsmetoder. Noen er ekstroverte, og trenger å snakke med personer ofte for å trives. Mens introverte ønsker gjerne å jobbe med oppgavene sine i fred og ro. En telefon til en introvert, kan skape angst — mens det kan være dagens opptur for en ekstrovert. Det handler ikke bare om introvert/ekstrovert. Noen kan ha dårlig hørsel, så lange diskusjoner i store møterom kan være slitsomt. Noen må hente barn i barnehagen hver dag, så møter sent på dagen kan skape stress. Tar man hensyn til personlighet og situasjon, kan man skape stor individuell trygghet, og gjøre at man føler seg inkludert. 
 2. **Ambisjonsnivå og ansvarstrygghet:**\
    For noen er jobben livet, for andre er jobben det som gjør at man kan nyte fritid etter jobben. Å gi personer riktig mengde ansvar etter ambisjonsnivå og erfaring, vil skape bidragstrygghet og læringstrygghet.
 3. **Kompetanse:**\
    Det er viktig at teammedlemmer gjør oppgaver de har mulighet til å utføre. Samtidig er det viktig å skape en arena for læring. Det kan dermed være lurt å kartlegge kjernekompetanse, annen kompetanse og hva personer ønsker å bli bedre på. En tittel gir sjeldent det hele bildet. En utvikler kan plutselig skrive gode tekster, og en forretningsutvikler kan plutselig holde kundeintervju.
 4. **Motivasjon:**\
-   Selv om en person får til å gjøre noe, betyr ikke at de er motivert til å gjøre det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
+   En person kan ha kompetansen til å fullføre en oppgave, men det betyr ikke at man er motivert for det. For å få teammedlemmer med mye giv og initiativ, må man ta hensyn til motivasjon. Dette er særlig viktig for de øvre dimensjonene for psykologisk trygghet; læring, bidrag og utfordring.
 
 ### Tiltak og verktøy
 
@@ -173,11 +173,11 @@ Deretter kan man kartlegge teamet gjennom kart som Team Canvas:
 
 ![Team Canvas, en modell for samarbeid](/assets/skjermbilde-2020-06-24-kl.-14.42-1.png)
 
-I mine prosjekter, har jeg ofte samlet alle bli kjent-øvelsene og team canvas-spørsmålene i et stort Miro-board. Jeg har også opplevd at det kan være lurt å benytte personlige kolonner også på spørsmålene man finner i Team Canvas. Jeg pleier også å legge til litt flere punkter enn det man finner i Team Canvas. Etter å ha fylt ut dette omfattende kartet, ser det ofte slik ut (sensurert):
+I mine prosjekter, har jeg ofte samlet alle bli kjent-øvelsene og team canvas-spørsmålene i et stort Miro-board. I Team Canvas-metoden, er synliggjør man ikke individene. Jeg opplever derimot at det kan være nyttig å benytte personlige kolonner, på punktene man finner i Team Canvas. En ren Team Canvas-øvelse er også veldig formell, så i min personlige vri — har jeg lagt til noen ekstra punkter. Etter å ha fylt ut dette omfattende kartet, ser det ofte slik ut (sensurert):
 
 ![Min variant av team canvas i Miro](/assets/miroopgave.png)
 
-Med dette tiltaket har man blitt ganske godt kjent i teamet, og man har kan lettere ta hensyn til hverandres kompetanse, egenskaper, personligheter og situasjon. En effektiv måte å skape et grunnlag for psykologisk trygghet.
+Med dette tiltaket har man blitt godt kjent i teamet, og man kan lettere ta hensyn til hverandres kompetanse, egenskaper, personligheter og situasjon. En effektiv måte å skape et grunnlag for psykologisk trygghet.
 
 **Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
 Kommer...
