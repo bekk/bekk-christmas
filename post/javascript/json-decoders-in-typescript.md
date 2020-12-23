@@ -6,7 +6,6 @@ title: Json decoders in TypeScript
 authors:
   - Tarjei Skjærset
 ---
-
 TypeScript is great because it lets you write statically verified code. You'll never try to access a property on an object that doesn't have it, and you'll never get a `undefined is not a function`. Except there are holes.
 
 Have you ever written code like this?
@@ -178,3 +177,7 @@ type User = {
 ```
 
 And that's basically it! If you're curious to see the actual implementation I suggest checking out the source code on GitHub. It's a bit more involved, but I have tried to keep it pretty clean. I would very much welcome PR's and suggestions for improvements. Thanks for reading!
+
+
+
+Twitter: @\_tskj\_
