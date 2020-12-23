@@ -3,6 +3,8 @@ calendar: elm
 post_year: 2020
 post_day: 24
 title: elm-doc-preview
+authors:
+  - Aksel Wester
 ---
 Wow! It's Christmas Eve, and elm.christmas is drawing to a close. We've published 24 articles, and I want to thank you for visiting our advent calendar, regardless of whether you've read all 24 articles, or if this is the first one you've read.
 
