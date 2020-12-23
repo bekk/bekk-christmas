@@ -42,7 +42,7 @@ And I think 2021 is going to be the year where the carbon footprint of the inter
 
 
 
-### Huge applause to all the brilliant people that have contributed to the calendar this year! And happy Christmas 
+### Huge applause to all the brilliant people that have contributed to the calendar this year and happy Christmas! 
 👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅👏🎅
 
 <p>&nbsp;</p>
