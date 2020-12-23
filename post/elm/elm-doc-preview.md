@@ -39,6 +39,8 @@ Select a dependency and you see that the documentation page looks exactly like i
 
 ![elm-doc-preview displaying the documentation for the elm/browser/dom module](/assets/elm-doc-preview-2.png)
 
+The tool is a really nice convenience for those times where you don't have an internet connection. And even when you do, it's nice to have an easy way to see the documentation for every dependency in your app in one spot.
+
 ## Lastly...
 
 Lastly I want to thank every one who contributed to this years elm.christmas.
