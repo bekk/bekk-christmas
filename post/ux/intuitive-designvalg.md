@@ -156,6 +156,8 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 
 ### Trygg på team-nivå
 
+Å skape psykologisk trygghet på teamnivå, handler i stor grad om kommunikasjon og forstå uskrevne regler. Hva betyr det egentlig når en person sier “Dette er ikke sånn jeg ville gjort det”? Er det kritikk for dårlig utført arbeid eller er personen nysgjerrig og vil lære mer? For å forstå hverandre på dette nivået, forstå spillereglene og eventuelt endre dem — må man snakke sammen. Man må samarbeide. Her er fire aspekter man kan vurdere, for å forbedre trygghet på teamnivå:
+
 
 
 ### Tiltak og verktøy
@@ -169,11 +171,22 @@ Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje .
 2. **Organisasjonskunnskap**\
    Å forstå hvem som er nøkkelpersoner i organisasjonen, og hvordan organisasjonen fungerer på papiret — men like viktig hvordan de uformelle strukturene er. Her trenger man ofte å forstå historikken i selskapet. 
 3. **Visjon og mål**\
-   Særlig viktig for å aligne team, og skape trygghet rundt de øverse nivåene: bidragstrygghet og utfordringstrygghet.
+   Særlig viktig for å aligne team, og skape trygghet rundt de øverste nivåene: bidragstrygghet og utfordringstrygghet.
 4. **Transparens**\
-   For å kunne øke initativet hos enkelpersoner, trenger man innsyn. Dette handler om å tilgjengeliggjøre informasjon som kan være nyttig indirekte — eller informasjon på et tidlig stadium. Skal man øke bidragstrygghet på tvers av team er dette essensielt.
+   For å kunne øke initiativet hos enkeltpersoner, trenger man innsyn. Dette handler om å tilgjengeliggjøre informasjon som kan være nyttig indirekte — eller informasjon på et tidlig stadium. Skal man øke bidragstrygghet på tvers av team er dette essensielt.
 
 ### Tiltak og verktøy
+
+Eksempel på hva man kan gjøre for å skape psykologisk trygghet i organisasjonskontekst, er følgende:
+
+**Tiltak 1: Onboarding av nye teammedlemmer og ansatte.**\
+På en måte er dette en selvfølge, for å jobbe effektivt på en kjappest mulig måte, trenger man onboarding. Men jeg har selv opplevd liten onboarding eller manglende onboarding. Når det kommer en ny person i teamet, bør teamet selv ta initiativ til at personen blir onboardet på følgende punkter:
+
+
+
+Forberedelser til hver onboardingsøkt, trenger ikke å være særlig omfattende. Det kan være veldig nyttig å bruke visualiseringsverktøy som Miro, for å ha kartlagt organisasjonskart (formell og opplevd), overordnet kundereiser og systemarkitektur — til de respektive øktende for det er nyttig å ha med.
+
+Er du ny selv, og ikke opplever deg trygg på organisasjonen, kan du selv ta initiativ til å bli onboardet på punktene over. Da kan du i løpet av få dager, på en metodisk måte blitt trygg på organisasjonen, og skapt psykologisk trygghet for deg selv.
 
 
 
