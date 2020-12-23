@@ -161,12 +161,13 @@ For å kunne ta hensyn til ulike personligheter, og situasjon til den enkelte �
 
 Samle alle som skal jobbe sammen enten fysisk eller på video. Man må ha en tavle tilgjengelig, enten en fysisk tavle og post-it-lapper, eller digital tavle som Miro. Begynn med en oppvarmingsøvelse, og gå deretter gjennom noen personlige spørsmål som alle må svare på. Gjør det tydelig at man trygt kan dele så lite og så mye man ønsker.\
 \
-Typiske spørsmål jeg stiller er:\
-- Hva er din første betalte jobb?\
-- Hva var drømmejobben din da du var barn?\
-- Om du skulle jobbet med noe annet, hva ville det vært?\
-- Kan du fortelle noe kjipt som har skjedd i en profesjonell setting?\
-- Fortell om noe du er stolt av å ha bidratt til / laget.
+Typiske spørsmål jeg stiller er:
+
+* Hva er din første betalte jobb?
+* Hva var drømmejobben din da du var barn?
+* Om du skulle jobbet med noe annet, hva ville det vært?
+* Kan du fortelle noe kjipt som har skjedd i en profesjonell setting?
+* Fortell om noe du er stolt av å ha bidratt til.
 
 Deretter kan man kartlegge teamet gjennom kart som Team Canvas:
 
@@ -177,8 +178,6 @@ I mine prosjekter, har jeg ofte samlet alle bli kjent-øvelsene og team canvas-s
 ![Min variant av team canvas i Miro](/assets/miroopgave.png)
 
 Med dette tiltaket har man blitt ganske godt kjent i teamet, og man har kan lettere ta hensyn til hverandres kompetanse, egenskaper, personligheter og situasjon. En effektiv måte å skape et grunnlag for psykologisk trygghet.
-
-
 
 **Tiltak 2: Å påta seg eller gi personer midlertidig ansvar**\
 Kommer...
@@ -259,8 +258,6 @@ Hvordan en post i #prodfest typisk ser ut:
 ![Post i slack](/assets/reisekort.png "Post i slack")
 
 Hvordan staselig man kan feire bidrag på større events, her fra et teams interne "Service Awards":
-
-
 
 ![Feiring av bidrag](/assets/img_4965.jpg "Feiring av bidrag")
 
