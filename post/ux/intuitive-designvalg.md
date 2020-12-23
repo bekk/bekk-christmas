@@ -346,7 +346,7 @@ Om du vil designe hverdagen og kulturen til teamet ditt og deler av organisasjon
 #### **God jul.**
 
 UX-designer & Agile Coach. Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
-Martin Sangolt
+[Martin Sangolt](https://www.linkedin.com/in/martinsangolt/)
 
 ![Artikkelslutt](/assets/line.png)
 
