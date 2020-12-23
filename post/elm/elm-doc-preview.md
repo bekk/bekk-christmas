@@ -30,8 +30,14 @@ And to view the documentation, you simply run the following command:
 $ elm-doc-preview
 ```
 
+And the command line tool starts up a web page showing all the dependencies you have installed in your app.
 
-![Test](/assets/elm-doc-preview-1.png)
+![A webpage showing elm-doc-preview and a list of all the dependencies the app is using](/assets/elm-doc-preview-1.png)
+
+Select a dependency and you see that the documentation page looks exactly like it does on package.elm-lang.org.
+
+
+![elm-doc-preview displaying the documentation for the elm/browser/dom module](/assets/elm-doc-preview-2.png)
 
 ## Lastly...
 
