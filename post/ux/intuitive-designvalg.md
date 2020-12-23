@@ -16,6 +16,8 @@ links:
     title: Kultur spiser strategi til frokost
   - url: https://www.strategy.christmas/2020/10
     title: Strategisk arbeid med kultur
+  - url: https://ux.christmas/2020/5
+    title: Get To Know Your Teammates Remotely
 authors:
   - Martin Skarbø Sangolt
 ---
@@ -135,10 +137,9 @@ Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “d
 
 Vi designere er vant til å designe det immaterielle, og vil ikke la ting skje . Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer foretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
 
-## \
+
+
 Verktøykasse for psykologisk trygghet
-
-
 
 ## Skap egne metoder og tankesett for å skape tryggheten
 
@@ -164,7 +165,7 @@ Om du vil designe hverdagen og kulturen til teamet ditt og deler av organisasjon
 Tidligere fagleder, anvendt psykologi og kognitiv nevrovitenskap.\
 Martin Sangolt
 
-\-------------------------------------------------------------
+![Linje](/assets/line.png)
 
 Anbefalt lesestoff:
 
