@@ -242,7 +242,7 @@ I større team, hvor man kanskje har team-i-team som ikke er like bestandige —
 * Å komme seg ut av kontoret sammen en gang i blant. Jobbe på et stort møterom i stedenfor åpent landskap. Har man konsulenter i teamet, kan man sitte på konsulenthusets kontorer i blant. 
 * Enkle sosiale eventer etter jobb; lønningspils, quiz, middager eller organiserte aktiviteter som dart og minigolf.
 
-For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbefale [denne fine artikkelen til Thea Søfting.](https://ux.christmas/2020/5)
+For flere måter å sosialisere på, nå som vi jobber mye remote, kan jeg anbefale [denne fine artikkelen til Thea.](https://ux.christmas/2020/5)
 
 **Tiltak 4: Taktikker for å feire initiativ**
 
