@@ -55,7 +55,7 @@ I enkelhet handler psykologisk trygghet i arbeidslivet om å ha det fint på job
 
 På individuelt plan, er dette fryktelig enkelt. Å føle seg trygg er et kjernebehov vi mennesker opplever. Vi ønsker å oppleve så lite psykologisk smerte som mulig. De aller fleste av oss ønsker å ha det en fin dag på jobb.
 
-På team og organisasjonsnivå gir dette også mening. Men problemene dukker opp når man forstår hva det vil si å skape en kultur for psykologisk trygghet — i praksis. Det betyr at teammedlemmer må invitere den personen de ikke klarer å holde en samtale med, på pilsen etter arbeidstid. Eller at du som leder må bruke noe av budsjettet på en sosial aktivitet for teambuilding, selv om du heller ville brukt pengene et annet sted. Det betyr at du må høre på en argumentasjon du er fryktelig uenig i, uten å slå det ned. Og det betyr i noen tilfeller at du må tillate at personer gjør noe fullstendig galt, selv om nesten har lyst å le høyt i åpent landskap om hvor galt dette kommer til å gå. I noen slike tilfeller bør du applaudere slike initiativ. Å skape et miljø hvor alle opplever psykologisk trygghet, kan bety at enkeltpersoner også må bruke energi på mennesker de ikke bryr deg mye om, og at alt ikke gjøres på måten en selv ønsker. Det er krevende. 
+På team og organisasjonsnivå gir dette også mening. Men problemene dukker opp når man forstår hva det vil si å skape en kultur for psykologisk trygghet — i praksis. Det betyr at teammedlemmer må invitere den personen de ikke klarer å holde en samtale med, på pilsen etter arbeidstid. Eller at du som leder må bruke noe av budsjettet på en sosial aktivitet for teambuilding, selv om du heller ville brukt pengene et annet sted. Det betyr at du må høre på en argumentasjon du er fryktelig uenig i, uten å slå det ned. Og det betyr i noen tilfeller at du må tillate at personer gjør noe fullstendig galt, selv om du har lyst å le høyt i åpent landskap om hvor galt dette kommer til å gå. I noen slike tilfeller bør du applaudere slike initiativ. Å skape et miljø hvor alle opplever psykologisk trygghet, kan bety at enkeltpersoner også må bruke energi på mennesker de ikke bryr deg mye om, og at alt ikke gjøres på måten en selv ønsker. Det er krevende. 
 
 Men alt dette arbeidet er nyttig. Å skape et miljø med psykologisk trygghet gjør at man får ansatte som trives og blir. Et miljø som hyppig lærer og lærer bort — blir et stort kompetent miljø som ikke stopper opp, og ikke er avhengig av enkeltindivider for progresjon. Når de ansatte får tillatelse til å bidra, får man mennesker som tar initiativ, som blir selvstendige og kan skape selvdrevne team som tar ansvar for seg selv. Og våger teamet eller organisasjonen å skape utfordringstrygghet vil man oppnå mer innovasjon. Da kan miljøet bli en lekegrind for å fortelle om nye idéer, forretningsmodeller, teknologier og måter å jobbe på. Et miljø hvor mennesker tar kontakt med mange og hyppig, og forteller hva de virkelig mener — er det godt sted for hyppig innovasjonstakt.
 
@@ -65,9 +65,9 @@ En god del virksomheter jobber strategisk med kulturendring i sine selskap. Et r
 
 ![Figur av OCAI-rammeverket](/assets/ocai.png "Figur av OCAI-rammeverket")
 
-Uansett hvilken type organisasjonskultur man har, kan man jobbe med å få kolleger til å oppleve psykologisk trygghet. En byråkratisk organisasjon kan være like inkluderende og ekskluderende som en adhokratisk en. Mye av dette handler om at psykologisk trygghet oppleves på individ og team-nivå og noen ganger i større subkulturer, enn på selskapsnivå.
+Uansett hvilken type organisasjonskultur man har, kan man jobbe med å få kolleger til å oppleve psykologisk trygghet. En byråkratisk organisasjon kan være like inkluderende og ekskluderende som en adhokratisk en. Mye av dette handler om at psykologisk trygghet oppleves på individ og team-nivå og noen ganger i større subkulturer, enn på selskapsnivå. Man kan dermed jobbe med kulturendring for psykologisk trygghet innad i team, selv om ledelsen jobber med å endre selskapskultur for å oppnå noe annet.
 
-Likevel er det mye spennende som skjer i organisasjoner som blir mer orientert rundt digitale tjenester. Fordi en byråkratisk organisasjon og kultur, ikke nødvendgivs er den beste til å jobbe med tøff konkurranse i et svært bevegelig marked. Å gå fra en byråkratisk organisasjonskultur, til en adohokratisk kultur kan skape interessante spenninger i selskapet. Mye handler om psykologisk trygghet.
+Likevel er det mye spennende som skjer i organisasjoner som blir mer orientert rundt digitale tjenester, og endrer selskapskultur. Fordi en byråkratisk organisasjon og kultur, ikke nødvendgivs er den beste til å jobbe med tøff konkurranse i et svært bevegelig marked. Å gå fra en byråkratisk organisasjonskultur, til en adohokratisk kultur kan skape interessante spenninger i selskapet. Mye handler om psykologisk trygghet.
 
 En byråkratisk kultur kan ofte skape mye psykologisk trygghet for de ansatte, på en ovenfra og ned måte. Det finnes ofte mange prosesser og strukturer man må forholde seg til. Disse fjerner mye usikkerhet. Disse selskapene har langsiktige planer, som de ansatte kan forholde seg til. Teamene og organisasjonstrukturen er noe rigid, slik at man alltid vet hvem man jobber med — og hvem man skal ta kontakt med for å løse et problem — typisk linjelederen. I en IT-kontekst, følger man kanskje arbeidsrammeverk på en bestemt måte. Kanskje man følger en streng SCRUM-metode, med faste møtepunkter for planlegging, standups, testing og antall oppgaver som skal fullføres til et gitt tidspunkt. Arbeidsoppgavene og brukerhistorier er kanskje beskrevet av andre enn deg selv, så du trenger kun å følge listen og vet nøyaktig når du er ferdig. Det er bare å følge akseptansekriterier. Ved å fjerne all denne usikkerheten, skaper rammene i seg selv en psykologisk trygghet.
 
@@ -111,7 +111,7 @@ Dette er tre av de mest typiske trygghetsfærene jeg har opplevd på prosjekter.
 
 Når det gjelder personer med få fagfeller i et produktteam, søker man ofte trygghet utenfor teamet. Enten gjennom personer man kjenner i organisasjonen fra før, eller fagfeller utenfor teamet. Dette kan virke helt selvfølgelig for mange, men dette har en viktig konsekvens. Jobber du i et team med mange fagfeller, har du et ekstra ansvar for å inkludere de med få. Man kan oppleve en illusjon om at alle i et produktteam opplever psykologisk trygghet, fordi en selv opplever det.  
 
-Å skape psykologisk trygghet på tvers av team, skjer ofte mye mindre organisk. Her finnes det også flere hindre. Noe helt konkret som kan hindre psykologisk trygghet på tvers av team, er muligheten for kommunikasjon. 
+Å skape psykologisk trygghet på tvers av team, skjer ofte ikke av seg selv. Her finnes det også flere hindre. Noe helt konkret som kan hindre psykologisk trygghet på tvers av team, er muligheten for kommunikasjon. 
 
 **Typiske situasjoner som kan hindre denne tryggheten er:**
 
@@ -135,11 +135,11 @@ Psykologisk trygghet hos individer og team, skaper dermed enormt nyttige effekte
 
 Dermed bør vi designe kulturen. Som kan høres litt flåsete ut, men ordet “design” betyr ikke noe mer enn det motsatte av ordet “tilfeldig”. Å designe betyr å skape, planlegge, eller påvirke. Og det kan vi gjøre, selv om kulturen ikke er håndfast.
 
-Vi designere er vant til å designe det immaterielle. Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en liten smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
+Vi designere er vant til å designe det immaterielle. Vi designer arbeidsprosesser gjennom tjenestedesignmetoder, vi designer forretningsmodeller og organisasjoner, og vi designer tjenester og opplevelser — brukeropplevelser. Vi burde dermed også kunne gå like metodisk til verks, for å angripe kultur i team. Basert på mine erfaringer i syv ulike produktteam, har jeg laget en saftig smørbrødliste med enkle tiltak og verktøy man kan bruke for å skape mer psykologisk trygghet.
 
 ## Verktøykasse for psykologisk trygghet
 
-### Trygg på personlig nivå
+### Trygg på personlig nivå[team-i-team](team-i-team)
 
 Å skape psykologisk trygghet på individnivå, handler mye om å fjerne redsel for å feile. Individuell forventningsstyring. Det handler også om å skape lærevillighet og rom for å vokse. For å skape psykologisk trygghet på individnivå, bør man hensynta disse fire punktene:
 
@@ -190,11 +190,7 @@ Det kan også være noe mer langsiktig. I mine team har jeg ofte benyttet begrep
 
 Midlertidige roller kan være en fin måte å ufarliggjøre det å bidra, ta ansvar. For å gjøre mer ut av disse rollene kan man innføre små ritualer og ha rekvisitter. I et team jeg jobbet i, hadde en i teamet ekstra ansvar for å se til at systemet vi bygget var oppe — og måtte følge med på systemanalyser og feil i produksjon. For å symbolisere dette, fikk personen overrakt en brannslukker-badeand. En humoristisk ritual, men som også gjorde det synlig for utenforstående hvem som hadde dette ansvaret — da anden alltid var synlig på pulten til den det gjaldt:
 
-
-
 ![Badeand brukt i bug-sermoni](/assets/img_3996-1.png "Badeand")
-
-
 
 **Tiltak 3: Ta med motivasjon i prioritering av oppgaver.**\
 Mange team og produkteiere, bruker en verdi/arbeid-matrise for å finne ut hvilke oppgaver som er lønnsomme. Enten mentalt i hodet, eller helt faktisk en matrise. Noen er kanskje så metodisk at de bruker regneark hvor man gir ulike poenger i ulike skalaer for å regne ut hvilke oppgaver man burde prioritere og nedprioritere.
@@ -247,7 +243,7 @@ Skal man gå mer metodisk inn for å skape psykologisk trygghet, kan det være l
 
 Grunnen til at formelle roller kan være nyttig for å skape trygghet er tosidig. Rollene gjør at teamet eller respekterte personer tydelig gir tillatelse for personen å utøve en rolle. På den måten kan rollen i seg selv skape psykologisk trygghet for personen som innehar den. Formelle roller skaper også større forståelse for andre, for hvorfor personen bruker mye tid utover seg selv. Om en Tech lead ber en utvikler om å dele kunnskap, kan det ha større tyngde enn om annen person gjør det. Rollene signaliserer også hvem teamet bør se opp til. Sannsynligheten for at teamet hermer etter hvordan en person med rolle oppfører seg, øker dermed når rollen blir formalisert.
 
-I større team, hvor man kanskje har team-i-team som ikke er like bestandige — man målrettet bruke formelle roller for å forme kulturen på individnivå. Ser man personer som ikke opplever psykologisk trygghet, kan man sette sammen små team hvor en rollemodell er en del av teamet. Det kan også være så enkelt som å la en Tech lead parprogrammere med en utrygg utvikler.
+I større team, hvor man kanskje har team-i-team som ikke er like bestandige — kan man målrettet bruke formelle roller for å forme kulturen på individnivå. Ser man personer som ikke opplever psykologisk trygghet, kan man sette sammen små team hvor en rollemodell er en del av teamet. Det kan også være så enkelt som å la en Tech lead parprogrammere med en utrygg utvikler.
 
 **Tiltak 3: Lavterskel sosialisering**\
 Å opprettholde et sosialt miljø, er ofte noe som skjer organisk når teammedlemmer har blitt kjent. Men om dette ikke skjer, kan man lage små sosiale ritualer.
