@@ -33,7 +33,7 @@ The Privacy Pass protocol works the following way:
 
 ![](/assets/privacypass.png)
 
-*From: https://blog.cloudflare.com*
+*Image courtesy of Cloudflare, Inc. (1.)*
 
 ## Security of Privacy Pass
 
@@ -46,3 +46,5 @@ We give some intuition-based arguments for why this protocol achieves its goals:
 Content delivery networks such as Cloudflare or Akamai may record misbehaving IP-addresses to mitigate attacks. However, if you use anonymity tools such as onion routing, your visible IP address may be shared with less honest users, which will in turn make you have to go through the hassle of responding to frequent CAPTCHA requests. Privacy Pass enables you to avoid those without compromising your anonymity. 
 
 Tomorrow, we will look at a seemingly different way of using the exact same cryptography, which may also benefit you in 2021.
+
+(1.) "The orange cloud logo is a registered trademark of Cloudflare, Inc. This blog post is not sponsored by or affiliated with Cloudflare, Inc."
