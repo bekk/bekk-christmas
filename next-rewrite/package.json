@@ -1,0 +1,34 @@
+{
+  "name": "next-rewrite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@bekk/storybook": "^2.5.1",
+    "@chakra-ui/react": "^1.6.0",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "framer-motion": "4",
+    "gray-matter": "^4.0.3",
+    "next": "10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-markdown": "^6.0.2",
+    "react-syntax-highlighter": "^15.4.3",
+    "reading-time": "^1.3.0",
+    "remark": "^13.0.0",
+    "remark-emoji": "^2.2.0",
+    "remark-gfm": "^1.0.0",
+    "strip-markdown": "^4.0.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.1"
+  }
+}
