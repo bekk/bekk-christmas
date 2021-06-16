@@ -24,7 +24,7 @@ export default function CalendarYearPage({
   const { displayName, ...info } = calendarInfo[calendarName];
   return (
     <Layout
-      title={`${displayName} {year} - bekk.christmas`}
+      title={`${displayName} - ${year} - bekk.christmas`}
       description={`Articles about ${displayName} from ${year}`}
       {...info}
     >
@@ -32,7 +32,6 @@ export default function CalendarYearPage({
         articles={articles}
         otherYears={otherYears}
         name={calendarName}
-        year={year}
       />
     </Layout>
   );

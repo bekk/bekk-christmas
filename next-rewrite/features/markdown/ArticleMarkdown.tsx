@@ -2,7 +2,6 @@ import {
   Box,
   Code,
   Heading,
-  Image,
   ListItem,
   OrderedList,
   Skeleton,
@@ -19,6 +18,7 @@ import emojiSupport from "remark-emoji";
 import githubFlavoredMarkdownSupport from "remark-gfm";
 import { BlockQuote } from "../design-system/BlockQuote";
 import { HorizontalRule } from "../design-system/HorizontalRule";
+import { Image } from "../design-system/Image";
 import { SyntaxHighlighter } from "../design-system/SyntaxHighlighter";
 import { TextLink } from "../design-system/TextLink";
 
@@ -99,7 +99,6 @@ const markdownComponents = {
   ),
   hr: () => <HorizontalRule {...narrowProps} />,
   img: ({ src, alt }: any) => (
-    // TODO: Add placeholder
     <Image
       src={src}
       alt={alt}

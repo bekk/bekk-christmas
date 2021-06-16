@@ -43,8 +43,7 @@ export default function BlogPostPage({
             maxWidth="1200px"
             mx="auto"
             height="50vh"
-            objectFit="cover"
-            objectPosition="center center"
+            layout="fill"
             fallback={<Skeleton height="500vh" />}
           />
         )}
@@ -90,6 +89,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       year: Number(year),
       day: Number(slug),
     }),
+    revalidate: 60,
   };
 };
 

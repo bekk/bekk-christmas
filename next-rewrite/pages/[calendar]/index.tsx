@@ -1,42 +1,39 @@
+import { Heading } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
-import { Calendar } from "../../features/calendar/Calendar";
 import { Layout } from "../../features/layout/Layout";
-import { calendarInfo } from "../../utils/calendars";
-import { Article, getAllCalendars, getCalendarData } from "../../utils/data";
+import { getAllCalendars, getCalendarData } from "../../utils/data";
 
 type CalendarPageProps = {
-  articles: Article[];
-  otherYears: number[];
-  calendarName: string;
-  year: number;
+  notFound: boolean;
 };
-export default function CalendarPage({
-  articles,
-  otherYears,
-  calendarName,
-  year,
-}: CalendarPageProps) {
-  const { displayName, ...info } = calendarInfo[calendarName];
+export default function CalendarPage(props: CalendarPageProps) {
   return (
-    <Layout
-      title={`${displayName} ${year} - bekk.christmas`}
-      description={`Articles about ${displayName}`}
-      {...info}
-    >
-      <Calendar
-        articles={articles}
-        otherYears={otherYears}
-        name={calendarName}
-        year={year}
-      />
+    <Layout title={`Calendar not found - bekk.christmas`} description="">
+      <Heading>Could not find that calendar!</Heading>
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
+  const calendarData = getCalendarData({
+    name: context.params.calendar as string,
+  });
+  if (
+    calendarData.articles.length === 0 &&
+    calendarData.otherYears.length === 0
+  ) {
+    return {
+      props: {
+        notFound: true,
+      },
+    };
+  }
   return {
-    props: getCalendarData({ name: context.params.calendar as string }),
+    redirect: {
+      destination: `/${calendarData.calendarName}/${calendarData.year}`,
+      permanent: false,
+    },
   };
 };
 

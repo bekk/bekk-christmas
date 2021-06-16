@@ -3,31 +3,28 @@ import {
   Center,
   Flex,
   Heading,
-  Image,
   SimpleGrid,
-  Skeleton,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import * as React from "react";
 import { Article } from "../../utils/data";
+import {
+  getGeneratedArtForArticle,
+  getGeneratedArtPreviewForArticle,
+} from "../../utils/generated-art";
+import { Image } from "../design-system/Image";
 import { TextLink } from "../design-system/TextLink";
 
 type CalendarProps = {
   name: string;
-  year: number;
   otherYears: number[];
   articles: Article[];
 };
 /** This shows a grid of 24 articles!
  */
-export const Calendar = ({
-  name,
-  year,
-  otherYears,
-  articles,
-}: CalendarProps) => {
+export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
   if (articles.length === 0) {
     return (
       <Box>
@@ -72,7 +69,6 @@ export const Calendar = ({
             key={article.post_day}
             calendar={article.calendar}
             title={article.title}
-            image={article.image}
             year={article.post_year}
             day={article.post_day}
             isAvailable={article.isAvailable}
@@ -103,17 +99,21 @@ type ArticleEntranceProps = {
   year: number;
   day: number;
   title: string;
-  image: string;
   isAvailable: boolean;
 };
 const ArticleEntrance = ({
   calendar,
   year,
   day,
-  image,
   title,
   isAvailable,
 }: ArticleEntranceProps) => {
+  const url = `/${calendar}/${year}/${day}`;
+  const image = React.useMemo(() => getGeneratedArtForArticle(url), [url]);
+  const fallbackImage = React.useMemo(
+    () => getGeneratedArtPreviewForArticle(url),
+    [url]
+  );
   if (!isAvailable) {
     return (
       <Stack>
@@ -131,20 +131,21 @@ const ArticleEntrance = ({
       </Stack>
     );
   }
+
   return (
-    <Link href={`/${calendar}/${year}/${day}`}>
+    <Link href={url}>
       <a>
         <Stack>
           <Box position="relative">
             <Image
-              src={image || "https://picsum.photos/200/300"}
-              fallback={<Skeleton width="100%" height="300px" />}
-              width="100%"
-              height="300px"
+              src={image}
+              fallback={fallbackImage}
+              width="500px"
+              height="500px"
+              layout="fill"
               objectFit="cover"
               objectPosition="center center"
               alt={title}
-              overflow="hidden"
             />
             <Flex
               position="absolute"

@@ -91,7 +91,7 @@ const SiteHeader = ({ title }: SiteHeaderProps) => {
 
 const SiteFooter = () => {
   return (
-    <Box as="footer" maxWidth="60ch" mx="auto" textAlign="center">
+    <Box as="footer" maxWidth="60ch" mx="auto" mt={12} textAlign="center">
       <BekkLogo maxWidth="150px" mx="auto" mb={6} />
       <Text fontSize="sm">
         Bekk is all about craftmanship and the people crafting it. We have a
