@@ -63,6 +63,7 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
         rowGap={9}
         maxWidth="1200px"
         mx="auto"
+        p={3}
       >
         {articles.map((article) => (
           <ArticleEntrance
@@ -158,6 +159,8 @@ const ArticleEntrance = ({
               alignItems="center"
               justifyContent="center"
               background="red.300"
+              border="2px solid"
+              borderColor="red.800"
               aria-label={`Day ${day}`}
             >
               {day}

@@ -1,18 +1,20 @@
-import { Heading, ListItem, UnorderedList } from "@chakra-ui/layout";
-import fs from "fs";
+import { Center, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
-import path from "path";
-import { TextLink } from "../features/design-system/TextLink";
+import Link from "next/link";
+import React from "react";
+import { HorizontalRule } from "../features/design-system/HorizontalRule";
 import { Layout } from "../features/layout/Layout";
+import { getCalendarsGroupedByYear } from "../utils/data";
 
 type Props = {
-  calendars: string[];
+  calendarsGroupedByYear: { year: number; calendars: string[] }[];
 };
-export default function Home({ calendars }: Props) {
+export default function Home({ calendarsGroupedByYear }: Props) {
   return (
     <Layout
-      title="Bekk.christmas - advent calendars about tech, design and strategy"
+      title="Bekk.christmas - advent calendarsGroupedByYear about tech, design and strategy"
       description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
+      headerLink="/"
       keywords={[
         "tech",
         "technology",
@@ -24,28 +26,47 @@ export default function Home({ calendars }: Props) {
         "articles",
       ]}
     >
-      <Heading as="h1">Calendars</Heading>
-      <UnorderedList>
-        {calendars.map((calendar) => (
-          <ListItem key={calendar}>
-            <TextLink href={`/${calendar}`}>{calendar}</TextLink>
-          </ListItem>
-        ))}
-      </UnorderedList>
+      <Text fontSize="5xl" maxWidth="container.lg" mx="auto" mb={12}>
+        264 articles, 24 days.
+        <br />
+        Made with 🎅 in Oslo and Trondheim, Norway!
+      </Text>
+      {calendarsGroupedByYear.map(({ year, calendars }, index) => (
+        <Stack
+          as="section"
+          key={year}
+          mb={12}
+          maxWidth="container.lg"
+          mx="auto"
+        >
+          <Heading>{year} calendars</Heading>
+          <SimpleGrid columns={[1, 2, 3]} rowGap={9} columnGap={3} px={3}>
+            {calendars.map((calendar) => (
+              <Link href={`/${calendar}/${year}`}>
+                <a>
+                  <Center
+                    height="200px"
+                    key={calendar}
+                    fontSize="3xl"
+                    background="red.100"
+                  >
+                    {calendar}
+                  </Center>
+                </a>
+              </Link>
+            ))}
+          </SimpleGrid>
+          {index === 0 && <HorizontalRule py={12} />}
+        </Stack>
+      ))}
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const calendars = fs
-    .readdirSync(path.join(process.cwd(), "post"), { encoding: "utf8" })
-    .filter((dirent) =>
-      fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory()
-    );
-
   return {
     props: {
-      calendars,
+      calendarsGroupedByYear: getCalendarsGroupedByYear(),
     },
   };
 };

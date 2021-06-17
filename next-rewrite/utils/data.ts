@@ -149,6 +149,23 @@ export const getCalendarsWithYears = () => {
   return calendarsWithYears;
 };
 
+/** Gets an array of years, and what calendars were available that year */
+export const getCalendarsGroupedByYear = () => {
+  const allArticles = getAllArticles();
+  const uniqueYears = unique(
+    allArticles.map((article) => article.post_year)
+  ).sort((a, b) => b - a); // descending
+
+  return uniqueYears.map((year) => {
+    const calendarsFromYear = unique(
+      allArticles
+        .filter((article) => article.post_year === year)
+        .map((article) => article.calendar)
+    ).sort();
+    return { year, calendars: calendarsFromYear };
+  });
+};
+
 /** Returns unique members of an array */
 function unique<Type>(array: Type[]) {
   return Array.from(new Set(array));

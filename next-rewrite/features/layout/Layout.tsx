@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import * as React from "react";
 import { BekkLogo } from "../design-system/BekkLogo";
@@ -12,17 +13,21 @@ type LayoutProps = {
   keywords?: string[];
   image?: string;
   author?: string;
+  headerLink: string;
+  headerTitle?: string;
 };
 export const Layout = ({
   children,
   title,
   description,
   keywords,
+  headerLink,
+  headerTitle = "Bekk Christmas",
   image,
   author,
 }: LayoutProps) => {
   return (
-    <Box>
+    <Flex minHeight="100vh" flexDirection="column">
       <SiteMetadata
         title={title}
         description={description}
@@ -30,10 +35,12 @@ export const Layout = ({
         image={image}
         author={author}
       />
-      <SiteHeader title="Bekk.christmas" />
-      <Box as="main">{children}</Box>
+      <SiteHeader link={headerLink}>{headerTitle}</SiteHeader>
+      <Box as="main" flex="1">
+        {children}
+      </Box>
       <SiteFooter />
-    </Box>
+    </Flex>
   );
 };
 
@@ -64,7 +71,7 @@ const SiteMetadata = ({
       <meta property="og:type" content="article" />
       <meta
         property="og:url"
-        content={`https://bekk.christmas/${router.pathname}`}
+        content={`https://bekk.christmas${router.asPath}`}
       />
       <meta property="og:image" content={image} />
 
@@ -77,13 +84,17 @@ const SiteMetadata = ({
 
 type SiteHeaderProps = {
   /** The topmost title of the site */
-  title: string;
+  children: string;
+  /** Where to link to */
+  link: string;
 };
-const SiteHeader = ({ title }: SiteHeaderProps) => {
+const SiteHeader = ({ link, children }: SiteHeaderProps) => {
   return (
     <Box as="header">
       <Heading as="h1" textAlign="center" mt={6} mb={12}>
-        {title}
+        <Link href={link}>
+          <a>{children}</a>
+        </Link>
       </Heading>
     </Box>
   );
@@ -91,7 +102,14 @@ const SiteHeader = ({ title }: SiteHeaderProps) => {
 
 const SiteFooter = () => {
   return (
-    <Box as="footer" maxWidth="60ch" mx="auto" mt={12} textAlign="center">
+    <Box
+      as="footer"
+      maxWidth="80ch"
+      mx="auto"
+      mt={12}
+      mb={6}
+      textAlign="center"
+    >
       <BekkLogo maxWidth="150px" mx="auto" mb={6} />
       <Text fontSize="sm">
         Bekk is all about craftmanship and the people crafting it. We have a

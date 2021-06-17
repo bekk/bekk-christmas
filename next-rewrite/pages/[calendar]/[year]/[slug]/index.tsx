@@ -13,6 +13,7 @@ import readingTime from "reading-time";
 import { Layout } from "../../../../features/layout/Layout";
 import { ArticleMarkdown } from "../../../../features/markdown/ArticleMarkdown";
 import { IngressMarkdown } from "../../../../features/markdown/IngressMarkdown";
+import { calendarInfo } from "../../../../utils/calendars";
 import {
   Article,
   getAllArticles,
@@ -20,6 +21,7 @@ import {
 } from "../../../../utils/data";
 
 export default function BlogPostPage({
+  calendar,
   title,
   ingress,
   ingressWithoutMarkdown,
@@ -28,11 +30,31 @@ export default function BlogPostPage({
   authors,
   post_day,
   post_year,
+  isAvailable,
 }: Article) {
+  if (!isAvailable) {
+    return (
+      <Layout
+        title="Not available yet!"
+        description="This article isn't available yet"
+        headerLink={`/${calendar}/${post_year}`}
+      >
+        <Stack textAlign="center">
+          <Heading as="h1" fontSize="6xl">
+            Article isn't available yet
+          </Heading>
+          <Text>Please check back in a few.</Text>
+        </Stack>
+      </Layout>
+    );
+  }
+  const { displayName } = calendarInfo[calendar];
   return (
     <Layout
       title={`${title} - bekk.christmas`}
       description={ingressWithoutMarkdown}
+      headerLink={`/${calendar}/${post_year}`}
+      headerTitle={`Bekk Christmas / ${displayName} (${post_year})`}
     >
       <Box>
         {image && (
@@ -44,20 +66,27 @@ export default function BlogPostPage({
             mx="auto"
             height="50vh"
             layout="fill"
-            fallback={<Skeleton height="500vh" />}
+            objectFit="cover"
+            objectPosition="center center"
+            fallback={<Skeleton height="50vh" maxWidth="1200px" mx="auto" />}
           />
         )}
         <Stack as="article" mt={6}>
           <Box as="header" textAlign="center">
-            <Container>
-              <Heading as="h1" fontSize="4xl">
+            <Container maxWidth="container.lg">
+              <Heading as="h1" fontSize="6xl">
                 {title}
               </Heading>
             </Container>
             <Text mb={12} mt={3}>
-              A {readingTime(content).text} written by
-              <br />
-              <strong>{new Intl.ListFormat("en").format(authors)}</strong>
+              A {readingTime(content).text}{" "}
+              {authors?.length > 0 && (
+                <>
+                  written by
+                  <br />
+                  <strong>{new Intl.ListFormat("en").format(authors)}</strong>
+                </>
+              )}
               <br />
               {post_day}.12.{post_year}
             </Text>

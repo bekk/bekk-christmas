@@ -9,7 +9,11 @@ type CalendarPageProps = {
 };
 export default function CalendarPage(props: CalendarPageProps) {
   return (
-    <Layout title={`Calendar not found - bekk.christmas`} description="">
+    <Layout
+      title={`Calendar not found - bekk.christmas`}
+      description=""
+      headerLink="/"
+    >
       <Heading>Could not find that calendar!</Heading>
     </Layout>
   );

@@ -21,11 +21,14 @@ export default function CalendarYearPage({
   calendarName,
   year,
 }: CalendarYearPageProps) {
-  const { displayName, ...info } = calendarInfo[calendarName];
+  const { displayName, ...info } = calendarInfo[calendarName] || {};
+  const name = displayName || calendarName;
   return (
     <Layout
-      title={`${displayName} - ${year} - bekk.christmas`}
-      description={`Articles about ${displayName} from ${year}`}
+      title={`${name} - ${year} - bekk.christmas`}
+      description={`Articles about ${name} from ${year}`}
+      headerLink="/"
+      headerTitle={`Bekk Christmas / ${name} (${year})`}
       {...info}
     >
       <Calendar
