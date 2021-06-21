@@ -1,18 +1,27 @@
-import { Center, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Center,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import { HorizontalRule } from "../features/design-system/HorizontalRule";
 import { Layout } from "../features/layout/Layout";
+import { calendarInfo } from "../utils/calendars";
 import { getCalendarsGroupedByYear } from "../utils/data";
 
 type Props = {
   calendarsGroupedByYear: { year: number; calendars: string[] }[];
 };
 export default function Home({ calendarsGroupedByYear }: Props) {
+  const calendarColor = useColorModeValue("red.100", "red.800");
   return (
     <Layout
-      title="Bekk.christmas - advent calendarsGroupedByYear about tech, design and strategy"
+      title="Bekk Christmas - advent calendars about tech, design and strategy"
       description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       headerLink="/"
       keywords={[
@@ -41,22 +50,25 @@ export default function Home({ calendarsGroupedByYear }: Props) {
         >
           <Heading>{year} calendars</Heading>
           <SimpleGrid columns={[1, 2, 3]} rowGap={9} columnGap={3} px={3}>
-            {calendars.map((calendar) => (
-              <Link href={`/${calendar}/${year}`}>
-                <a>
-                  <Center
-                    height="200px"
-                    key={calendar}
-                    fontSize="3xl"
-                    background="red.100"
-                  >
-                    {calendar}
-                  </Center>
-                </a>
-              </Link>
-            ))}
+            {calendars.map((calendar) => {
+              const info = calendarInfo[calendar];
+              return (
+                <Link href={`/${calendar}/${year}`}>
+                  <a>
+                    <Center
+                      height="200px"
+                      key={calendar}
+                      fontSize="3xl"
+                      background={calendarColor}
+                    >
+                      {info?.displayName || calendar}
+                    </Center>
+                  </a>
+                </Link>
+              );
+            })}
           </SimpleGrid>
-          {index === 0 && <HorizontalRule py={12} />}
+          {index === 0 && <HorizontalRule pt={12} />}
         </Stack>
       ))}
     </Layout>
