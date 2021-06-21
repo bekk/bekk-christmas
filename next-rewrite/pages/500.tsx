@@ -17,7 +17,7 @@ const InternalErrorPage = () => (
       </Heading>
       <BrokenBalls />
       <Heading as="h2" fontSize="4xl" mt={6}>
-        Oh balls...
+        Oh balls…
       </Heading>
       <Text>
         Yup, something definitely broke. Try again, or{" "}
