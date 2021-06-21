@@ -14,6 +14,7 @@ import {
   getGeneratedArtForArticle,
   getGeneratedArtPreviewForArticle,
 } from "../../utils/generated-art";
+import { BrokenBalls } from "../broken-balls/BrokenBalls";
 import { Image } from "../design-system/Image";
 import { TextLink } from "../design-system/TextLink";
 
@@ -28,7 +29,10 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
   if (articles.length === 0) {
     return (
       <Box>
-        <Heading as="h2" textAlign="center" mt={6} mb={12}>
+        <Box maxWidth="380px" width="80%" mx="auto">
+          <BrokenBalls />
+        </Box>
+        <Heading as="h2" textAlign="center" mt={6} mb={6}>
           Sorry, we couldn't find that {otherYears.length ? "year" : "calendar"}
           !
         </Heading>

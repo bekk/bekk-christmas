@@ -6,7 +6,7 @@ import { calendarInfo } from "../../../utils/calendars";
 import {
   Article,
   getCalendarData,
-  getCalendarsWithYears,
+  getCalendarsWithYears
 } from "../../../utils/data";
 
 type CalendarYearPageProps = {
@@ -28,7 +28,7 @@ export default function CalendarYearPage({
       title={`${name} - ${year} - bekk.christmas`}
       description={`Articles about ${name} from ${year}`}
       headerLink="/"
-      headerTitle={`Bekk Christmas / ${name} (${year})`}
+      headerTitle={`Bekk Christmas / ${name} (${year || ""})`}
       {...info}
     >
       <Calendar
@@ -41,11 +41,17 @@ export default function CalendarYearPage({
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
+  const calendarData = getCalendarData({
+    name: String(context.params.calendar),
+    year: Number(context.params.year),
+  });
+
+  const calendarNotFound =
+    calendarData.articles.length === 0 && calendarData.otherYears.length === 0;
+
   return {
-    props: getCalendarData({
-      name: String(context.params.calendar),
-      year: Number(context.params.year),
-    }),
+    props: calendarData,
+    notFound: calendarNotFound,
   };
 };
 

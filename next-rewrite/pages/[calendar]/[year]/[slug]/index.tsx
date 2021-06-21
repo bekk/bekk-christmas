@@ -112,13 +112,15 @@ export default function BlogPostPage({
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { calendar, year, slug } = context.params;
+  const articleData = getArticleData({
+    calendar: String(calendar),
+    year: Number(year),
+    day: Number(slug),
+  });
   return {
-    props: getArticleData({
-      calendar: String(calendar),
-      year: Number(year),
-      day: Number(slug),
-    }),
+    props: articleData,
     revalidate: 60,
+    notFound: !articleData,
   };
 };
 

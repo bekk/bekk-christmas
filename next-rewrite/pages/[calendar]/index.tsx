@@ -1,22 +1,8 @@
-import { Heading } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
-import React from "react";
-import { Layout } from "../../features/layout/Layout";
 import { getAllCalendars, getCalendarData } from "../../utils/data";
 
-type CalendarPageProps = {
-  notFound: boolean;
-};
-export default function CalendarPage(props: CalendarPageProps) {
-  return (
-    <Layout
-      title={`Calendar not found - bekk.christmas`}
-      description=""
-      headerLink="/"
-    >
-      <Heading>Could not find that calendar!</Heading>
-    </Layout>
-  );
+export default function CalendarPage() {
+  return null;
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -28,9 +14,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     calendarData.otherYears.length === 0
   ) {
     return {
-      props: {
-        notFound: true,
-      },
+      notFound: true,
     };
   }
   return {

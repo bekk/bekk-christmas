@@ -53,7 +53,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
             {calendars.map((calendar) => {
               const info = calendarInfo[calendar];
               return (
-                <Link href={`/${calendar}/${year}`}>
+                <Link href={`/${calendar}/${year}`} key={calendar}>
                   <a>
                     <Center
                       height="200px"
