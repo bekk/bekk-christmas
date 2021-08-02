@@ -15,10 +15,12 @@ import {
 import * as React from "react";
 import ReactMarkdown from "react-markdown";
 import { ReactMarkdownProps } from "react-markdown/src/ast-to-react";
+import rawHtmlSupport from "rehype-raw";
 import emojiSupport from "remark-emoji";
 import githubFlavoredMarkdownSupport from "remark-gfm";
 import { BlockQuote } from "../design-system/BlockQuote";
 import { HorizontalRule } from "../design-system/HorizontalRule";
+import { ResponsiveIframe } from "../design-system/ResponsiveIframe";
 import { SyntaxHighlighter } from "../design-system/SyntaxHighlighter";
 import { TextLink } from "../design-system/TextLink";
 
@@ -26,12 +28,13 @@ type MarkdownProps = {
   /** Unparsed markdown */
   children: string;
 };
-/** Renders markdown with the correct design */
+/** Renders markdown with the correct design for articles */
 export const ArticleMarkdown = ({ children }: MarkdownProps) => {
   return (
     <ReactMarkdown
       components={markdownComponents}
       plugins={[emojiSupport, githubFlavoredMarkdownSupport]}
+      rehypePlugins={[rawHtmlSupport]}
     >
       {children}
     </ReactMarkdown>
@@ -104,6 +107,7 @@ const markdownComponents = {
       alt={alt}
       width="100%"
       {...wideProps}
+      my={12}
       fallback={<Skeleton width="100%" height="300px" />}
     />
   ),
@@ -149,5 +153,19 @@ const markdownComponents = {
   ),
   td: ({ children }: ReactMarkdownProps & { isHeader: boolean }) => (
     <Td>{children}</Td>
+  ),
+  iframe: ({
+    children,
+    node,
+    ...rest
+  }: ReactMarkdownProps & {
+    width: number;
+    height: number;
+    src: string;
+    allowFullScreen?: string;
+  }) => (
+    <Box {...wideProps}>
+      <ResponsiveIframe {...rest} />
+    </Box>
   ),
 };

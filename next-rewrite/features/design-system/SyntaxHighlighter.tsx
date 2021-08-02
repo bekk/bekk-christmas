@@ -25,7 +25,7 @@ export const SyntaxHighlighter = ({
     <ReactSyntaxHighlighter
       language={strippedLanguage}
       PreTag={(props: any) => (
-        <Box as="pre" background={background} p={3}>
+        <Box as="pre" background={background} p={3} overflowX="scroll">
           {props.children}
         </Box>
       )}

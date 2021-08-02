@@ -8,26 +8,24 @@ ingress: >-
   a trick on him, and have made all the toys run around, resisting getting
   wrapped in the lovely Christmas wrapping paper he just spent all day picking
   out. Can you help Santa catch and wrap all of them?
-
-
-  <iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas
-  game"
-  src="https://codepen.io/mfeiring/embed/eYmJNZy?height=265&theme-id=default&default-tab=result"
-  frameborder="no" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href='https://codepen.io/mfeiring/pen/eYmJNZy'>CSS Christmas game</a> by Mira Feiring
-    (<a href='https://codepen.io/mfeiring'>@mfeiring</a>) on <a href='https://codepen.io'>CodePen</a>.
-  </iframe>
-description: ''
+description: ""
 links:
   - title: Pure CSS games
-    url: 'https://codepen.io/collection/AKkZro'
-  - title: 'Una Kravets: Let’s Build a CSS Game | CSSconf EU 2017'
-    url: 'https://www.youtube.com/watch?v=WmVH85G59Lk'
-  - title: 'CSS: Global Offensive | JavaZone 2019'
-    url: 'https://vimeo.com/363513036'
+    url: "https://codepen.io/collection/AKkZro"
+  - title: "Una Kravets: Let’s Build a CSS Game | CSSconf EU 2017"
+    url: "https://www.youtube.com/watch?v=WmVH85G59Lk"
+  - title: "CSS: Global Offensive | JavaZone 2019"
+    url: "https://vimeo.com/363513036"
 authors:
   - Mira Thoen Feiring
 ---
+
+<iframe height="423" style="width: 100%;" scrolling="no" title="CSS Christmas
+  game"
+  src="https://codepen.io/mfeiring/embed/eYmJNZy?height=265&theme-id=default&default-tab=result"
+  frameborder="no" allowtransparency="true" allowfullscreen="true">
+  </iframe>
+
 Did you catch all the toys? Well, perhaps it wasn't really the most challenging game. But might I interest you in a short rundown of how the game is build? Read on my dear friend. But beware: This might not look its best on a small devices.
 
 ## The setup
@@ -41,7 +39,7 @@ To start I've created a pretty basic layout. In contains five checkboxes, with c
 
 ## The counter
 
-First up is the counter for how many gifts have been wrapped, starting by removing the static numbers from the HTML. Then moving on to the CSS "magic" – the `counter` property. 
+First up is the counter for how many gifts have been wrapped, starting by removing the static numbers from the HTML. Then moving on to the CSS "magic" – the `counter` property.
 
 The following snippet will increment the counter `gifts` for each `input` field in the DOM, as well as the counter `gifts-wrapped` for each of them that is checked.
 
@@ -49,17 +47,17 @@ The following snippet will increment the counter `gifts` for each `input` field 
 input {
   counter-increment: gifts;
 }
-    
+
 input:checked {
   counter-increment: gifts gifts-wrapped;
 }
 ```
 
-In order to display these counters, we need to use a pseudo-element and  the `counter()` function, which returns the current value of a counter as a string:
+In order to display these counters, we need to use a pseudo-element and the `counter()` function, which returns the current value of a counter as a string:
 
 ```css
 footer:before {
-  content: counter(gifts-wrapped) '/' counter(gifts) ' ';
+  content: counter(gifts-wrapped) "/" counter(gifts) " ";
 }
 ```
 
@@ -76,11 +74,11 @@ A game about checking boxes isn't really that enticing, so some styling of them 
 
 ```css
 label[for="1"]:before {
-  content: '🧸';
+  content: "🧸";
 }
 
 label[for="2"]:before {
-  content: '🏀';
+  content: "🏀";
 }
 ```
 
@@ -88,7 +86,7 @@ label[for="2"]:before {
 
 ```css
 input:checked + label:before {
-  content: '🎁';
+  content: "🎁";
 }
 ```
 
@@ -218,6 +216,7 @@ input:checked
   transition: 200ms;
 }
 ```
+
 And to prevent anyone from just scrolling down to this screen, let's prevent scrolling completely:
 
 ```css
@@ -232,6 +231,7 @@ body {
 </iframe>
 
 ## Wrapping up
-And that's it! We've created a game using only CSS and HTML. 
+
+And that's it! We've created a game using only CSS and HTML.
 
 For more inspiration, I'd highly recommend checking out the collection of CSS games that Una Kravets has compiled on Codepen, as well as the talk she held on CSSconf EU in 2017, both linked down below.
