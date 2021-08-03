@@ -20,7 +20,7 @@ import emojiSupport from "remark-emoji";
 import githubFlavoredMarkdownSupport from "remark-gfm";
 import { BlockQuote } from "../design-system/BlockQuote";
 import { HorizontalRule } from "../design-system/HorizontalRule";
-import { ResponsiveIframe } from "../design-system/ResponsiveIframe";
+import { ResponsiveIframe, ResponsiveIframeProps } from "../design-system/ResponsiveIframe";
 import { SyntaxHighlighter } from "../design-system/SyntaxHighlighter";
 import { TextLink } from "../design-system/TextLink";
 
@@ -116,7 +116,7 @@ const markdownComponents = {
     // in a paragraph. However, we want images to be wider than paragraphs.
     // Here, if we find a paragraph tag with an image in it,
     // we just render the image directly
-    if (node.children.some((child) => child.tagName === "img")) {
+    if (node.children.some((child) => "tagName" in child && child.tagName === "img")) {
       return children;
     }
     return (
@@ -157,13 +157,10 @@ const markdownComponents = {
   iframe: ({
     children,
     node,
+    width,
+    height,
     ...rest
-  }: ReactMarkdownProps & {
-    width: number;
-    height: number;
-    src: string;
-    allowFullScreen?: string;
-  }) => (
+  }: ReactMarkdownProps & ResponsiveIframeProps) => (
     <Box {...wideProps}>
       <ResponsiveIframe {...rest} />
     </Box>

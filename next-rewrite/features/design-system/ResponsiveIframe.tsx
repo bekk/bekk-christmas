@@ -1,11 +1,11 @@
 import { AspectRatio, Box } from "@chakra-ui/react";
 import React from "react";
 
-type ResponsiveIframeProps = {
-  width?: number;
-  height?: number;
-  src: string;
-  allowFullScreen?: string;
+export type ResponsiveIframeProps = {
+  width?: string | number;
+  height?: string | number;
+  src?: string;
+  allowFullScreen?: boolean;
 };
 export const ResponsiveIframe = ({
   width,
@@ -13,14 +13,16 @@ export const ResponsiveIframe = ({
   allowFullScreen,
   ...rest
 }: ResponsiveIframeProps) => {
-  const ratio = width && height ? width / height : 4 / 3;
+  const w = Number(width);
+  const h = Number(height);
+  const ratio = width && height ? w / h : 4 / 3;
   return (
     <AspectRatio ratio={ratio}>
       <Box
         as="iframe"
         width={width}
         height={height}
-        allowFullScreen={allowFullScreen === "true"}
+        allowFullScreen={allowFullScreen}
         {...rest}
       />
     </AspectRatio>
