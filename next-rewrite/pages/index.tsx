@@ -11,6 +11,7 @@ import Link from "next/link";
 import React from "react";
 import { HorizontalRule } from "../features/design-system/HorizontalRule";
 import { Layout } from "../features/layout/Layout";
+import Search from "../features/search/Search";
 import { calendarInfo } from "../utils/calendars";
 import { getCalendarsGroupedByYear } from "../utils/data";
 
@@ -40,6 +41,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
         <br />
         Made with 🎅 in Oslo and Trondheim, Norway!
       </Text>
+      <Search />
       {calendarsGroupedByYear.map(({ year, calendars }, index) => (
         <Stack
           as="section"
@@ -49,7 +51,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
           mx="auto"
         >
           <Heading>{year} calendars</Heading>
-          <SimpleGrid columns={[1, 2, 3]} rowGap={9} columnGap={3} px={3}>
+          <SimpleGrid columns={[1, 2, 3]} rowGap={6} columnGap={3}>
             {calendars.map((calendar) => {
               const info = calendarInfo[calendar];
               return (

@@ -34,7 +34,7 @@ export const Layout = ({
         author={author}
       />
       <SiteHeader link={headerLink}>{headerTitle}</SiteHeader>
-      <Box as="main" flex="1">
+      <Box as="main" flex="1" px="4">
         {children}
       </Box>
       <SiteFooter />
