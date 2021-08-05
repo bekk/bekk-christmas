@@ -1,8 +1,9 @@
-import fs from "fs";
-import * as grayMatter from "gray-matter";
-import path from "path";
-import remark from "remark";
-import stripMarkdownPlugin from "strip-markdown";
+import fs from 'fs';
+import * as grayMatter from 'gray-matter';
+import path from 'path';
+import remark from 'remark';
+import stripMarkdownPlugin from 'strip-markdown';
+import Fuse from 'fuse.js';
 
 /** An article from the CMS */
 export type Article = {
@@ -60,15 +61,13 @@ export const getCalendarData = ({ name, year }: GetCalendarDataProps) => {
 export const getAllCalendars = () => {
   return (
     fs
-      .readdirSync(path.join(process.cwd(), "post"), {
-        encoding: "utf8",
+      .readdirSync(path.join(process.cwd(), 'post'), {
+        encoding: 'utf8',
       })
       // Only get the calendars, not any files
-      .filter((dirent) =>
-        fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory()
-      )
+      .filter((dirent) => fs.statSync(path.join(process.cwd(), 'post', dirent)).isDirectory())
       // Filter out the dummy calendar
-      .filter((dirent) => dirent !== "dummy")
+      .filter((dirent) => dirent !== 'dummy')
   );
 };
 
@@ -83,9 +82,7 @@ type GetAllArticlesProps = {
  * Reads every single article from disk - should only be used during build time
  * and even then, very sparingly.
  */
-export const getAllArticles = ({
-  filterCalendar = "",
-}: GetAllArticlesProps = {}) => {
+export const getAllArticles = ({ filterCalendar = '' }: GetAllArticlesProps = {}) => {
   return getAllCalendars()
     .filter((calendar) => (filterCalendar ? calendar === filterCalendar : true))
     .flatMap((calendar) => ({
@@ -101,11 +98,7 @@ export const getAllArticles = ({
     )
     .map((article) => {
       const now = new Date();
-      const postDate = new Date(
-        article.data.post_year,
-        11,
-        article.data.post_day
-      );
+      const postDate = new Date(article.data.post_year, 11, article.data.post_day);
 
       const isAvailable = postDate < now;
       return {
@@ -124,11 +117,7 @@ type GetArticleDataProps = {
   year: number;
   day: number;
 };
-export const getArticleData = ({
-  calendar,
-  year,
-  day,
-}: GetArticleDataProps) => {
+export const getArticleData = ({ calendar, year, day }: GetArticleDataProps) => {
   return getAllArticles({
     filterCalendar: calendar,
   }).find((article) => article.post_year === year && article.post_day === day);
@@ -152,15 +141,11 @@ export const getCalendarsWithYears = () => {
 /** Gets an array of years, and what calendars were available that year */
 export const getCalendarsGroupedByYear = () => {
   const allArticles = getAllArticles();
-  const uniqueYears = unique(
-    allArticles.map((article) => article.post_year)
-  ).sort((a, b) => b - a); // descending
+  const uniqueYears = unique(allArticles.map((article) => article.post_year)).sort((a, b) => b - a); // descending
 
   return uniqueYears.map((year) => {
     const calendarsFromYear = unique(
-      allArticles
-        .filter((article) => article.post_year === year)
-        .map((article) => article.calendar)
+      allArticles.filter((article) => article.post_year === year).map((article) => article.calendar)
     ).sort();
     return { year, calendars: calendarsFromYear };
   });
@@ -170,3 +155,29 @@ export const getCalendarsGroupedByYear = () => {
 function unique<Type>(array: Type[]) {
   return Array.from(new Set(array));
 }
+
+export type SearchResult = {
+  /** The slug of the calendar the article belongs to */
+  calendar: string;
+  /** The year the article was posted */
+  post_year: number;
+  /** The day the article was posted */
+  post_day: number;
+  /** The title of the article */
+  title: string;
+};
+
+export const getFuse = () => {
+  const allAvailableArticles = getAllArticles().filter((article) => article.isAvailable);
+  const allReducedArticles = allAvailableArticles.map(
+    ({ title, calendar, post_year, post_day }) => ({
+      title,
+      calendar,
+      post_year,
+      post_day,
+    })
+  );
+  const index = Fuse.createIndex(['title'], allReducedArticles);
+  const fuse = new Fuse(allReducedArticles, { keys: ['title'] }, index);
+  return fuse;
+};
