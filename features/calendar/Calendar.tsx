@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import * as React from "react";
 import { Article } from "../../utils/data";
@@ -33,8 +25,7 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
           <BrokenBalls />
         </Box>
         <Heading as="h2" textAlign="center" mt={6} mb={6}>
-          Sorry, we couldn't find that {otherYears.length ? "year" : "calendar"}
-          !
+          Sorry, we couldn&apos;t find that {otherYears.length ? "year" : "calendar"}!
         </Heading>
         {otherYears.length > 0 ? (
           <Text textAlign="center" fontSize="lg" my={6}>
@@ -43,17 +34,14 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
               <React.Fragment key={index}>
                 <TextLink href={`/${name}/${year}`}>{year}</TextLink>
                 {otherYears.length > 1 && index < otherYears.length - 2 && ", "}
-                {otherYears.length > 1 &&
-                  index === otherYears.length - 2 &&
-                  " and "}
+                {otherYears.length > 1 && index === otherYears.length - 2 && " and "}
               </React.Fragment>
             ))}
             !
           </Text>
         ) : (
           <Text textAlign="center" fontSize="lg" my={6}>
-            Go <TextLink href="/">back to start</TextLink> to find an existing
-            calendar!
+            Go <TextLink href="/">back to start</TextLink> to find an existing calendar!
           </Text>
         )}
       </Box>
@@ -61,14 +49,7 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
   }
   return (
     <Box>
-      <SimpleGrid
-        columns={[1, 2, 3]}
-        columnGap={3}
-        rowGap={9}
-        maxWidth="1200px"
-        mx="auto"
-        p={3}
-      >
+      <SimpleGrid columns={[1, 2, 3]} columnGap={3} rowGap={9} maxWidth="1200px" mx="auto" p={3}>
         {articles.map((article) => (
           <ArticleEntrance
             key={article.post_day}
@@ -87,9 +68,7 @@ export const Calendar = ({ name, otherYears, articles }: CalendarProps) => {
             <React.Fragment key={index}>
               <TextLink href={`/${name}/${year}`}>{year}</TextLink>
               {otherYears.length > 1 && index < otherYears.length - 2 && ", "}
-              {otherYears.length > 1 &&
-                index === otherYears.length - 2 &&
-                " and "}
+              {otherYears.length > 1 && index === otherYears.length - 2 && " and "}
             </React.Fragment>
           ))}
           !
@@ -106,30 +85,15 @@ type ArticleEntranceProps = {
   title: string;
   isAvailable: boolean;
 };
-const ArticleEntrance = ({
-  calendar,
-  year,
-  day,
-  title,
-  isAvailable,
-}: ArticleEntranceProps) => {
+const ArticleEntrance = ({ calendar, year, day, title, isAvailable }: ArticleEntranceProps) => {
   const url = `/${calendar}/${year}/${day}`;
   const image = React.useMemo(() => getGeneratedArtForArticle(url), [url]);
-  const fallbackImage = React.useMemo(
-    () => getGeneratedArtPreviewForArticle(url),
-    [url]
-  );
+  const fallbackImage = React.useMemo(() => getGeneratedArtPreviewForArticle(url), [url]);
   if (!isAvailable) {
     return (
       <Stack>
         <Center height="300px" bgGradient="to-tr(gray.500, gray.300)">
-          <Center
-            fontSize="5em"
-            background="red.300"
-            borderRadius="50%"
-            width="2em"
-            height="2em"
-          >
+          <Center fontSize="5em" background="red.300" borderRadius="50%" width="2em" height="2em">
             {day}
           </Center>
         </Center>

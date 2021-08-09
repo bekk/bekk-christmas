@@ -1,8 +1,8 @@
 /** TypeScript doesn't ship with ListFormat types yet */
 type ListFormatOptions = {
-  type?: 'conjunction' | 'disjunction' | 'unit';
-  style?: 'long' | 'short' | 'narrow';
-  localeMatcher?: 'lookup' | 'best fit';
+  type?: "conjunction" | "disjunction" | "unit";
+  style?: "long" | "short" | "narrow";
+  localeMatcher?: "lookup" | "best fit";
 };
 declare namespace Intl {
   class ListFormat {

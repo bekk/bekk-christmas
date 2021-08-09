@@ -1,9 +1,9 @@
-import React, { useCallback, useState } from 'react';
-import { Box, Input, Link } from '@chakra-ui/react';
-import { SearchResult } from '../../utils/data';
+import React, { useCallback, useState } from "react";
+import { Box, Input, Link } from "@chakra-ui/react";
+import { SearchResult } from "../../utils/data";
 
 const Search: React.FC = () => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isActive, setIsActive] = useState(false);
   const searchEndpoint = (query) => `/api/search?q=${query}`;

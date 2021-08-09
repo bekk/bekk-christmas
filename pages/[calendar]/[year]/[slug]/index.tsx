@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Image,
-  Skeleton,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Container, Heading, Image, Skeleton, Stack, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import readingTime from "reading-time";
@@ -14,11 +6,7 @@ import { Layout } from "../../../../features/layout/Layout";
 import { ArticleMarkdown } from "../../../../features/markdown/ArticleMarkdown";
 import { IngressMarkdown } from "../../../../features/markdown/IngressMarkdown";
 import { calendarInfo } from "../../../../utils/calendars";
-import {
-  Article,
-  getAllArticles,
-  getArticleData,
-} from "../../../../utils/data";
+import { Article, getAllArticles, getArticleData } from "../../../../utils/data";
 
 export default function BlogPostPage({
   calendar,
@@ -41,7 +29,7 @@ export default function BlogPostPage({
       >
         <Stack textAlign="center">
           <Heading as="h1" fontSize="6xl">
-            Article isn't available yet
+            Article isn&apos;t available yet
           </Heading>
           <Text>Please check back in a few.</Text>
         </Stack>
@@ -91,12 +79,7 @@ export default function BlogPostPage({
               {post_day}.12.{post_year}
             </Text>
             {ingress && (
-              <Container
-                maxWidth="container.md"
-                mx="auto"
-                fontSize="2xl"
-                textAlign="center"
-              >
+              <Container maxWidth="container.md" mx="auto" fontSize="2xl" textAlign="center">
                 <IngressMarkdown>{ingress}</IngressMarkdown>
               </Container>
             )}
@@ -128,8 +111,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const allArticles = getAllArticles();
   return {
     paths: allArticles.map(
-      (article) =>
-        `/${article.calendar}/${article.post_year}/${article.post_day}`
+      (article) => `/${article.calendar}/${article.post_year}/${article.post_day}`
     ),
     fallback: "blocking",
   };

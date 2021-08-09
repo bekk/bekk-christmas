@@ -1,19 +1,19 @@
-const fs = require('fs');
-const path = require('path');
-const grayMatter = require('gray-matter');
-const remark = require('remark');
-const stripMarkdownPlugin = require('strip-markdown');
+const fs = require("fs");
+const path = require("path");
+const grayMatter = require("gray-matter");
+const remark = require("remark");
+const stripMarkdownPlugin = require("strip-markdown");
 
 const getAllArticles = () => {
   return (
     fs
-      .readdirSync(path.join(process.cwd(), 'post'), {
-        encoding: 'utf8',
+      .readdirSync(path.join(process.cwd(), "post"), {
+        encoding: "utf8",
       })
       // Only get the calendars, not any files
-      .filter((dirent) => fs.statSync(path.join(process.cwd(), 'post', dirent)).isDirectory())
+      .filter((dirent) => fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory())
       // Filter out the dummy calendar
-      .filter((dirent) => dirent !== 'dummy')
+      .filter((dirent) => dirent !== "dummy")
       .flatMap((calendar) => ({
         calendar,
         files: fs.readdirSync(path.join(process.cwd(), `post/${calendar}`)),
@@ -44,7 +44,7 @@ const getAllArticles = () => {
 
 const articlesRssXml = (articles) => {
   let latestArticleDate;
-  let rssItemsXml = '';
+  let rssItemsXml = "";
   articles.forEach((article) => {
     const articleDate = new Date(article.post_year, 11, article.post_day);
 
@@ -99,7 +99,7 @@ const getRssXml = (articles) => {
 };
 
 function generateRSS() {
-  console.log('Attempting to generate rss.xml');
+  console.log("Attempting to generate rss.xml");
   const allArticles = getAllArticles();
   const processedXml = getRssXml(allArticles);
 
@@ -107,7 +107,7 @@ function generateRSS() {
     if (err) {
       console.log(err);
     } else {
-      console.log('Generated rss.xml successfully');
+      console.log("Generated rss.xml successfully");
     }
   });
 }

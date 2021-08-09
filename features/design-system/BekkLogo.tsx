@@ -3,12 +3,7 @@ import React from "react";
 
 export const BekkLogo = (props: BoxProps) => {
   return (
-    <Box
-      as="a"
-      display="block"
-      href="https://bekk.no"
-      {...props}
-    >
+    <Box as="a" display="block" href="https://bekk.no" {...props}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 398.51 93.42"

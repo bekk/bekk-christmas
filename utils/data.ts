@@ -1,9 +1,9 @@
-import fs from 'fs';
-import * as grayMatter from 'gray-matter';
-import path from 'path';
-import remark from 'remark';
-import stripMarkdownPlugin from 'strip-markdown';
-import Fuse from 'fuse.js';
+import fs from "fs";
+import * as grayMatter from "gray-matter";
+import path from "path";
+import remark from "remark";
+import stripMarkdownPlugin from "strip-markdown";
+import Fuse from "fuse.js";
 
 /** An article from the CMS */
 export type Article = {
@@ -61,13 +61,13 @@ export const getCalendarData = ({ name, year }: GetCalendarDataProps) => {
 export const getAllCalendars = () => {
   return (
     fs
-      .readdirSync(path.join(process.cwd(), 'post'), {
-        encoding: 'utf8',
+      .readdirSync(path.join(process.cwd(), "post"), {
+        encoding: "utf8",
       })
       // Only get the calendars, not any files
-      .filter((dirent) => fs.statSync(path.join(process.cwd(), 'post', dirent)).isDirectory())
+      .filter((dirent) => fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory())
       // Filter out the dummy calendar
-      .filter((dirent) => dirent !== 'dummy')
+      .filter((dirent) => dirent !== "dummy")
   );
 };
 
@@ -82,7 +82,7 @@ type GetAllArticlesProps = {
  * Reads every single article from disk - should only be used during build time
  * and even then, very sparingly.
  */
-export const getAllArticles = ({ filterCalendar = '' }: GetAllArticlesProps = {}) => {
+export const getAllArticles = ({ filterCalendar = "" }: GetAllArticlesProps = {}) => {
   return getAllCalendars()
     .filter((calendar) => (filterCalendar ? calendar === filterCalendar : true))
     .flatMap((calendar) => ({
@@ -177,7 +177,7 @@ export const getFuse = () => {
       post_day,
     })
   );
-  const index = Fuse.createIndex(['title'], allReducedArticles);
-  const fuse = new Fuse(allReducedArticles, { keys: ['title'] }, index);
+  const index = Fuse.createIndex(["title"], allReducedArticles);
+  const fuse = new Fuse(allReducedArticles, { keys: ["title"] }, index);
   return fuse;
 };

@@ -3,11 +3,7 @@ import React from "react";
 import { Calendar } from "../../../features/calendar/Calendar";
 import { Layout } from "../../../features/layout/Layout";
 import { calendarInfo } from "../../../utils/calendars";
-import {
-  Article,
-  getCalendarData,
-  getCalendarsWithYears
-} from "../../../utils/data";
+import { Article, getCalendarData, getCalendarsWithYears } from "../../../utils/data";
 
 type CalendarYearPageProps = {
   articles: Article[];
@@ -31,11 +27,7 @@ export default function CalendarYearPage({
       headerTitle={`Bekk Christmas / ${name} (${year || ""})`}
       {...info}
     >
-      <Calendar
-        articles={articles}
-        otherYears={otherYears}
-        name={calendarName}
-      />
+      <Calendar articles={articles} otherYears={otherYears} name={calendarName} />
     </Layout>
   );
 }
@@ -61,9 +53,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: Object.entries(calendarsWithYears)
       .map(([calendar, years]) => ({ calendar, years }))
-      .flatMap(({ calendar, years }) =>
-        years.map((year) => `/${calendar}/${year}`)
-      ),
+      .flatMap(({ calendar, years }) => years.map((year) => `/${calendar}/${year}`)),
     fallback: "blocking",
   };
 };

@@ -1,11 +1,4 @@
-import {
-  Center,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Center, Heading, SimpleGrid, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
@@ -43,13 +36,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
       </Text>
       <Search />
       {calendarsGroupedByYear.map(({ year, calendars }, index) => (
-        <Stack
-          as="section"
-          key={year}
-          mb={12}
-          maxWidth="container.lg"
-          mx="auto"
-        >
+        <Stack as="section" key={year} mb={12} maxWidth="container.lg" mx="auto">
           <Heading>{year} calendars</Heading>
           <SimpleGrid columns={[1, 2, 3]} rowGap={6} columnGap={3}>
             {calendars.map((calendar) => {
@@ -57,12 +44,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
               return (
                 <Link href={`/${calendar}/${year}`} key={calendar}>
                   <a>
-                    <Center
-                      height="200px"
-                      key={calendar}
-                      fontSize="3xl"
-                      background={calendarColor}
-                    >
+                    <Center height="200px" key={calendar} fontSize="3xl" background={calendarColor}>
                       {info?.displayName || calendar}
                     </Center>
                   </a>

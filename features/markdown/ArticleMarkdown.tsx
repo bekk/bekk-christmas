@@ -120,11 +120,7 @@ const markdownComponents = {
       return children;
     }
     return (
-      <Text
-        {...narrowProps}
-        lineHeight="1.65"
-        fontFamily="FFDINWebProLight, sans-serif"
-      >
+      <Text {...narrowProps} lineHeight="1.65" fontFamily="FFDINWebProLight, sans-serif">
         {children}
       </Text>
     );
@@ -140,20 +136,14 @@ const markdownComponents = {
       {children}
     </UnorderedList>
   ),
-  table: ({ children }: ReactMarkdownProps) => (
-    <Table {...wideProps}>{children}</Table>
-  ),
+  table: ({ children }: ReactMarkdownProps) => <Table {...wideProps}>{children}</Table>,
   tr: ({ children, isHeader }: ReactMarkdownProps & { isHeader: boolean }) => (
     <Tr borderBottom="solid gray.500" borderBottomWidth={isHeader ? 3 : 1}>
       {children}
     </Tr>
   ),
-  th: ({ children }: ReactMarkdownProps & { isHeader: boolean }) => (
-    <Td as="th">{children}</Td>
-  ),
-  td: ({ children }: ReactMarkdownProps & { isHeader: boolean }) => (
-    <Td>{children}</Td>
-  ),
+  th: ({ children }: ReactMarkdownProps & { isHeader: boolean }) => <Td as="th">{children}</Td>,
+  td: ({ children }: ReactMarkdownProps & { isHeader: boolean }) => <Td>{children}</Td>,
   iframe: ({
     children,
     node,

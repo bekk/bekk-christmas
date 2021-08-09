@@ -5,12 +5,7 @@ import { TextLink } from "../features/design-system/TextLink";
 import { Layout } from "../features/layout/Layout";
 
 const InternalErrorPage = () => (
-  <Layout
-    title="Something broke"
-    description=""
-    headerLink="/"
-    headerTitle="Bekk Christmas"
-  >
+  <Layout title="Something broke" description="" headerLink="/" headerTitle="Bekk Christmas">
     <Box width="80%" maxWidth="380px" textAlign="center" mx="auto">
       <Heading as="h1" fontSize="5.5em" mb={6}>
         500

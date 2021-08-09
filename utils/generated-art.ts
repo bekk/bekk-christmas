@@ -15,8 +15,7 @@ const getUniqueId = (key: string) => {
   return lotsOfImages[articles.indexOf(key) % lotsOfImages.length];
 };
 
-const CLOUDINARY_BASE_URL =
-  "https://res.cloudinary.com/bekkimg/image/upload/v1622570512";
+const CLOUDINARY_BASE_URL = "https://res.cloudinary.com/bekkimg/image/upload/v1622570512";
 
 const lotsOfImages = [
   "fagdag/yzni8duyk7p2d5v5z2at",

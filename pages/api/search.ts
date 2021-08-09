@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { getFuse } from '../../utils/data';
+import { NextApiRequest, NextApiResponse } from "next";
+import { getFuse } from "../../utils/data";
 
 type Data = {
   results: string[];
@@ -7,9 +7,11 @@ type Data = {
 
 const fuse = getFuse();
 
-export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const search = (req: NextApiRequest, res: NextApiResponse<Data>) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader("Content-Type", "application/json");
   const results = fuse.search(req.query.q as string, { limit: 10 });
   res.end(JSON.stringify({ results }));
 };
+
+export default search;

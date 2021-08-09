@@ -41,13 +41,7 @@ export const calendarInfo: Record<string, CalendarInfo> = {
   },
   talks: {
     displayName: "Talks",
-    keywords: [
-      "talks",
-      "presentations",
-      "cfp",
-      "call for proposals",
-      "public speaking",
-    ],
+    keywords: ["talks", "presentations", "cfp", "call for proposals", "public speaking"],
   },
   thecloud: {
     displayName: "The Cloud",

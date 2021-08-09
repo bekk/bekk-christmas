@@ -1,10 +1,7 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import * as React from "react";
 import ReactSyntaxHighlighter from "react-syntax-highlighter";
-import {
-  a11yDark,
-  a11yLight,
-} from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { a11yDark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 type SyntaxHighlighterProps = {
   /** The language to highlight */
@@ -12,10 +9,7 @@ type SyntaxHighlighterProps = {
   /** The code to highlight */
   children: React.ReactNode;
 };
-export const SyntaxHighlighter = ({
-  language,
-  children,
-}: SyntaxHighlighterProps) => {
+export const SyntaxHighlighter = ({ language, children }: SyntaxHighlighterProps) => {
   const theme = useColorModeValue(a11yLight, a11yDark);
   const background = useColorModeValue("gray.100", "gray.900");
   const strippedLanguage = language?.startsWith("language-")

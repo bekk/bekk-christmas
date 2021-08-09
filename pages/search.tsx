@@ -1,3 +1,3 @@
 export default function SearchPage() {
-  return <div>Search page</div>
+  return <div>Search page</div>;
 }

@@ -1,7 +1,7 @@
-import { Box, Button, Flex, Text, useColorMode } from '@chakra-ui/react';
-import * as React from 'react';
-import { BekkLogo } from '../design-system/BekkLogo';
-import { TextLink } from '../design-system/TextLink';
+import { Box, Button, Flex, Text, useColorMode } from "@chakra-ui/react";
+import * as React from "react";
+import { BekkLogo } from "../design-system/BekkLogo";
+import { TextLink } from "../design-system/TextLink";
 
 export const SiteFooter = () => {
   const { toggleColorMode, colorMode } = useColorMode();
@@ -34,7 +34,7 @@ export const SiteFooter = () => {
       </Flex>
       <Box mt={6}>
         <Button size="sm" variant="outline" colorScheme="black" onClick={toggleColorMode}>
-          Turn {colorMode === 'light' ? 'off' : 'on'} the lights!
+          Turn {colorMode === "light" ? "off" : "on"} the lights!
         </Button>
       </Box>
     </Box>
