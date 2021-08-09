@@ -1,4 +1,4 @@
-import "@bekk/storybook/build/lib/fonts/webfonts.css";
+import "../public/fonts/webfonts.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import { theme } from "../utils/theme";
