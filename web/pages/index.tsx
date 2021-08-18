@@ -2,16 +2,15 @@ import { Center, Heading, SimpleGrid, Stack, Text, useColorModeValue } from "@ch
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
-import { HorizontalRule } from "../features/design-system/HorizontalRule";
 import { Layout } from "../features/layout/Layout";
 import Search from "../features/search/Search";
-import { calendarInfo } from "../utils/calendars";
-import { getCalendarsGroupedByYear } from "../utils/data";
+import { getAllTags } from "../utils/data";
 
 type Props = {
-  calendarsGroupedByYear: { year: number; calendars: string[] }[];
+  tags: { slug: string; name: string }[];
 };
-export default function Home({ calendarsGroupedByYear }: Props) {
+
+export default function Home({ tags }: Props) {
   const calendarColor = useColorModeValue("red.100", "red.800");
   return (
     <Layout
@@ -35,26 +34,20 @@ export default function Home({ calendarsGroupedByYear }: Props) {
         Made with 🎅 in Oslo and Trondheim, Norway!
       </Text>
       <Search />
-      {calendarsGroupedByYear.map(({ year, calendars }, index) => (
-        <Stack as="section" key={year} mb={12} maxWidth="container.lg" mx="auto">
-          <Heading>{year} calendars</Heading>
-          <SimpleGrid columns={[1, 2, 3]} rowGap={6} columnGap={3}>
-            {calendars.map((calendar) => {
-              const info = calendarInfo[calendar];
-              return (
-                <Link href={`/${calendar}/${year}`} key={calendar}>
-                  <a>
-                    <Center height="200px" key={calendar} fontSize="3xl" background={calendarColor}>
-                      {info?.displayName || calendar}
-                    </Center>
-                  </a>
-                </Link>
-              );
-            })}
-          </SimpleGrid>
-          {index === 0 && <HorizontalRule pt={12} />}
-        </Stack>
-      ))}
+      <Stack as="section" mb={12} maxWidth="container.lg" mx="auto">
+        <Heading>All calendars</Heading>
+        <SimpleGrid columns={[1, 2, 3]} rowGap={6} columnGap={3}>
+          {tags.map(({ slug, name }) => (
+            <Link href={`/tag/${slug}`} key={slug}>
+              <a>
+                <Center height="200px" fontSize="3xl" background={calendarColor}>
+                  {name}
+                </Center>
+              </a>
+            </Link>
+          ))}
+        </SimpleGrid>
+      </Stack>
     </Layout>
   );
 }
@@ -62,7 +55,7 @@ export default function Home({ calendarsGroupedByYear }: Props) {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      calendarsGroupedByYear: getCalendarsGroupedByYear(),
+      tags: await getAllTags(),
     },
   };
 };

@@ -1,31 +1,20 @@
 import { Box, Container, Heading, Image, Skeleton, Stack, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
-import readingTime from "reading-time";
-import { Layout } from "../../../../features/layout/Layout";
-import { ArticleMarkdown } from "../../../../features/markdown/ArticleMarkdown";
-import { IngressMarkdown } from "../../../../features/markdown/IngressMarkdown";
-import { calendarInfo } from "../../../../utils/calendars";
-import { Article, getAllArticles, getArticleData } from "../../../../utils/data";
+import { Layout } from "../../features/layout/Layout";
+import { IngressMarkdown } from "../../features/markdown/IngressMarkdown";
+import { getAllPosts, getPostById, Post } from "../../utils/data";
+import BlockContent from "@sanity/block-content-to-react";
 
-export default function BlogPostPage({
-  calendar,
-  title,
-  ingress,
-  ingressWithoutMarkdown,
-  content,
-  image,
-  authors,
-  post_day,
-  post_year,
-  isAvailable,
-}: Article) {
+export default function BlogPostPage({ post }) {
+  const { tags, title, description, content, authorNames, coverImage, availableFrom } = post;
+  const isAvailable = new Date(availableFrom) < new Date();
   if (!isAvailable) {
     return (
       <Layout
         title="Not available yet!"
         description="This article isn't available yet"
-        headerLink={`/${calendar}/${post_year}`}
+        headerLink="/"
       >
         <Stack textAlign="center">
           <Heading as="h1" fontSize="6xl">
@@ -36,18 +25,17 @@ export default function BlogPostPage({
       </Layout>
     );
   }
-  const { displayName } = calendarInfo[calendar];
   return (
     <Layout
       title={`${title} - bekk.christmas`}
-      description={ingressWithoutMarkdown}
-      headerLink={`/${calendar}/${post_year}`}
-      headerTitle={`Bekk Christmas / ${displayName} (${post_year})`}
+      description={description}
+      headerLink="/"
+      headerTitle={`Bekk Christmas / ${tags[0]}`}
     >
       <Box>
-        {image && (
+        {coverImage && (
           <Image
-            src={image}
+            src={coverImage}
             alt={title}
             width="100%"
             maxWidth="1200px"
@@ -67,25 +55,25 @@ export default function BlogPostPage({
               </Heading>
             </Container>
             <Text mb={12} mt={3}>
-              A {readingTime(content).text}{" "}
-              {authors?.length > 0 && (
+              {/* TODO: A {readingTime(content).text}{" "} */}
+              {authorNames?.length > 0 && (
                 <>
                   written by
                   <br />
-                  <strong>{new Intl.ListFormat("en").format(authors)}</strong>
+                  <strong>{new Intl.ListFormat("en").format(authorNames)}</strong>
                 </>
               )}
               <br />
-              {post_day}.12.{post_year}
+              {availableFrom}
             </Text>
-            {ingress && (
+            {description && (
               <Container maxWidth="container.md" mx="auto" fontSize="2xl" textAlign="center">
-                <IngressMarkdown>{ingress}</IngressMarkdown>
+                <IngressMarkdown>{description}</IngressMarkdown>
               </Container>
             )}
           </Box>
           <Box fontSize="lg">
-            <ArticleMarkdown>{content}</ArticleMarkdown>
+            <BlockContent blocks={content} />
           </Box>
         </Stack>
       </Box>
@@ -94,25 +82,19 @@ export default function BlogPostPage({
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { calendar, year, slug } = context.params;
-  const articleData = getArticleData({
-    calendar: String(calendar),
-    year: Number(year),
-    day: Number(slug),
-  });
+  const { id } = context.params;
+  const post = await getPostById(id);
   return {
-    props: articleData,
-    revalidate: 60,
-    notFound: !articleData,
+    props: {
+      post,
+    },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const allArticles = getAllArticles();
+  const allPosts = await getAllPosts();
   return {
-    paths: allArticles.map(
-      (article) => `/${article.calendar}/${article.post_year}/${article.post_day}`
-    ),
-    fallback: "blocking",
+    paths: allPosts.map((post) => `/post/${post.id}`),
+    fallback: false,
   };
 };
