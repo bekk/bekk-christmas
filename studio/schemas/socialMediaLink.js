@@ -9,10 +9,11 @@ const socialMediaLink = {
       type: "string",
       options: {
         list: [
+          { title: "Email", name: "email" },
           { title: "GitHub", name: "gitHub" },
+          { title: "Medium", name: "medium" },
           { title: "Twitter", name: "twitter" },
           { title: "Website", name: "website" },
-          { title: "Facebook", name: "facebook" },
           { title: "LinkedIn", name: "linkedIn" },
           { title: "Instagram", name: "instagram" },
         ],
