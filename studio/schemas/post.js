@@ -89,7 +89,6 @@ const post = {
       type: "array",
       of: [
         { type: "block" },
-        { type: "placeholder" },
         { type: "iframe" },
         { type: "code" },
         {
@@ -98,11 +97,6 @@ const post = {
             {
               title: "Alternative text",
               name: "alt",
-              type: "string",
-            },
-            {
-              title: "Image source",
-              name: "src",
               type: "string",
             },
           ],

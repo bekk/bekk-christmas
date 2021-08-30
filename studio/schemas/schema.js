@@ -9,7 +9,6 @@ import author from "./author.js";
 import tag from "./tag.js";
 import socialMediaLink from "./socialMediaLink.js";
 import iframe from "./iframe.js";
-import placeholder from "./placeholder.js";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,6 +23,5 @@ export default createSchema({
     tag,
     socialMediaLink,
     iframe,
-    placeholder,
   ]),
 });
