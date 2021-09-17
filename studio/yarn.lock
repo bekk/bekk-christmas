@@ -1183,6 +1183,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.10.1.tgz#728ecd95ab207aab8a9a4e421f0422db329232be"
+  integrity sha512-HnUhk1Sy9IuKrxEMdIRCxpIqPw6BFsbYSEUO9p/hNw5sMld/+3OLMWQP80F8/db9qsv3qUjs7ZR5bS/R+iinXw==
+
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.9.3":
   version "2.9.3"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.9.3.tgz#8b68da1ebd7fc603999cf6ebee34a4899a14b88e"
@@ -1354,6 +1359,11 @@
   version "2.1.4"
   resolved "https://registry.npmjs.org/@sanity/color/-/color-2.1.4.tgz#f66f38c352352378e7eb0b1168b66417a16009fb"
   integrity sha512-qE043GzfnoM9PQ4SYtT20d14lCgpTnxgn5aZlSJUffUiwqXbu3RcPxxkM5P7pyMXpIu0sIWqenegpkA2Ocbz7w==
+
+"@sanity/color@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.npmjs.org/@sanity/color/-/color-2.1.5.tgz#63579cf729a42cc004fa850b46b674510a700bda"
+  integrity sha512-miq04+tp9I0/k8TooM/iB1ifpjVaWke9Pg+GD4SbrZ+YQkqaMqQFvzu4JjPr55lMkBrzOjE4JHrwBO/bzgottw==
 
 "@sanity/components@^2.14.0":
   version "2.14.0"
@@ -1621,6 +1631,11 @@
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.1.5.tgz#ebfd3b61fbd285b83d43e8258b9449aaa72a42f1"
   integrity sha512-L2t8tfeDyZnycW0LWNwRFo/kVU4t8cHaljZIu1O6kh8eDkfKhmYXPnLLuTK3Zjy+iXLX7PhaATAVHR/QyRpj9g==
 
+"@sanity/icons@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.1.7.tgz#f2b6f2d9b68965b6f26975c0d5528ae75e1472d8"
+  integrity sha512-5KbAhNowjO94UjIrsaaKCGNLdHs+ek+RF5Bc+XRELOi1TFR0GBG3Wo7LK30df2ajA7TW6HwERLbPQB3sJyMRMQ==
+
 "@sanity/image-url@^0.140.19":
   version "0.140.22"
   resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-0.140.22.tgz#7a65f56bb751f7b1c5dfacfadd34ee10fc4f0fde"
@@ -1880,6 +1895,22 @@
     react-popper "^2.2.5"
     react-refractor "^2.1.4"
 
+"@sanity/ui@^0.36.8":
+  version "0.36.9"
+  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.36.9.tgz#0b6da18d6bfb5b91fca8d0258c1586e78c276d3e"
+  integrity sha512-duL6E2qA69r+4X8cT3o/vhehzFmJX82Jx4fejXk+3e4yPQOUPGpjqWwkhIBSDFv/lE0/7tphgp5K3+UVw+RA+w==
+  dependencies:
+    "@juggle/resize-observer" "^3.3.1"
+    "@popperjs/core" "^2.10.1"
+    "@reach/auto-id" "^0.16.0"
+    "@sanity/color" "^2.1.5"
+    "@sanity/icons" "^1.1.7"
+    framer-motion "^4.1.17"
+    popper-max-size-modifier "^0.2.0"
+    react-is "^17.0.2"
+    react-popper "^2.2.5"
+    react-refractor "^2.1.4"
+
 "@sanity/util@2.14.0":
   version "2.14.0"
   resolved "https://registry.npmjs.org/@sanity/util/-/util-2.14.0.tgz#cc9ef12af78b5b7e6e33635143d6f83ceeb7a21d"
@@ -1912,13 +1943,13 @@
     lodash "^4.17.15"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.14.0":
-  version "2.14.0"
-  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-2.14.0.tgz#4b0934e7e8eb6266759c15e2935546b2364429b3"
-  integrity sha512-FTc61RpiVPQjB9Y+oxwm/CWL6cbidXjsVeWX9+z/qPmwE5CXrHbHfxJ77nRw5VRHv2ujVXo1aiYi++RHSfPyYg==
+"@sanity/vision@^2.19.0":
+  version "2.19.0"
+  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-2.19.0.tgz#c849ef16c6e1cdfe59c4482825444fa91ced1fbd"
+  integrity sha512-QN+bDlHHJqApg1+BQoyjYWlOhxuVb4PEwYVKiiZl1wr62s/U/b+qhvGjZN+mxqyN4F/jAsD3ITSg0YyLxkMN3w==
   dependencies:
-    "@sanity/icons" "^1.1.4"
-    "@sanity/ui" "^0.35.0"
+    "@sanity/icons" "^1.1.7"
+    "@sanity/ui" "^0.36.8"
     classnames "^2.2.5"
     codemirror "^5.47.0"
     moment "^2.19.1"
