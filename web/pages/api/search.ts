@@ -1,17 +1,17 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { getFuse } from "../../utils/data";
-
+import { NextApiHandler } from "next";
+import sanity from "../../utils/sanity";
 type Data = {
   results: string[];
 };
 
-const fuse = getFuse();
-
-const search = (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const search: NextApiHandler<Data> = async (req, res) => {
+  const searchString = req.query.q as string;
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  const results = fuse.search(req.query.q as string, { limit: 10 });
+  const results = await sanity.fetch()
   res.end(JSON.stringify({ results }));
 };
+
+const query = groq
 
 export default search;
