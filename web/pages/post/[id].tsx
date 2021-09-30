@@ -40,7 +40,7 @@ export default function BlogPostPage({
       author={authors.join(", ")}
     >
       <Box>
-        {coverImage && (
+        {imageUrl && (
           <Image
             src={imageUrl}
             alt={title}
