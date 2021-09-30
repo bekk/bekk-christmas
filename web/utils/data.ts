@@ -1,13 +1,14 @@
-import client from "./sanity";
-import { BlockContentProps } from "@sanity/block-content-to-react";
+import groq from "groq";
+import {} from "./sanity/sanity.client";
+import { sanityClient } from "./sanity/sanity.server";
 
-type Tag = {
+export type Tag = {
   slug: string;
   name: string;
   synonyms: string[];
 };
 
-type PostLink = {
+export type PostLink = {
   id: string;
   title: string;
 };
@@ -16,32 +17,29 @@ export type Post = {
   id: string;
   title: string;
   description: string;
-  content: BlockContentProps;
-  authorNames: string[];
+  content: any;
+  authors: string[];
   tags: string[];
-  coverImage: string;
+  coverImage?: string;
   availableFrom: string;
 };
 
-export const getAllTags = async (): Promise<Tag[]> => {
-  return await client.fetch(`*[_type == "tag"]`);
-};
+/** Gets all unique tags in Sanity */
+export const getAllTags = () => sanityClient.fetch<Tag[]>(groq`*[_type == "tag"]`);
 
-export const getPostsByTag = async (tag): Promise<PostLink[]> => {
-  return await client.fetch(
-    `*[_type == "post" && references(*[_type == "tag" && slug == "${tag}"]._id)]{"id": _id, title}`
+/** Gets all posts tagged with a given tag */
+export const getPostsByTag = (tag: string) =>
+  sanityClient.fetch<PostLink[]>(
+    groq`*[_type == "post" && references(*[_type == "tag" && slug == "${tag}"]._id)]{"id": _id, title}`
   );
-};
 
-export const getPostById = async (id): Promise<Post> => {
-  return await client.fetch(`
+/** Get a particular post by its ID */
+export const getPostById = (id: string): Promise<Post> =>
+  sanityClient.fetch<Post>(groq`
     *[_type == "post" && _id == "${id}"]
     {..., "authors": authors[].fullName, "tags": tags[]->.name}
     [0]
   `);
-  //
-};
 
-export const getAllPosts = async (): Promise<Post[]> => {
-  return await client.fetch(`*[_type == "post"]{..., "id": _id}`);
-};
+export const getAllPosts = () =>
+  sanityClient.fetch<Post[]>(groq`*[_type == "post"]{..., "id": _id}`);
