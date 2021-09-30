@@ -1,4 +1,4 @@
-import { FiCodepen, FiCodesandbox, FiTwitter, FiYoutube } from "react-icons/fi";
+import { FiCodepen, FiCodesandbox, FiSquare, FiTwitter, FiYoutube } from "react-icons/fi";
 export default {
   name: "portableText",
   type: "array",
@@ -66,5 +66,6 @@ export default {
     { type: "codePen", icon: FiCodepen },
     { type: "youtube", icon: FiYoutube },
     { type: "twitter", icon: FiTwitter },
+    { type: "iframe", icon: FiSquare },
   ],
 };
