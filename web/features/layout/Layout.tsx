@@ -11,7 +11,7 @@ type LayoutProps = {
   keywords?: string[];
   image?: string;
   author?: string;
-  headerLink: string;
+  headerLink?: string;
   headerTitle?: string;
 };
 export const Layout = ({
@@ -19,7 +19,7 @@ export const Layout = ({
   title,
   description,
   keywords,
-  headerLink,
+  headerLink = "/",
   headerTitle = "Bekk Christmas",
   image,
   author,
@@ -34,7 +34,7 @@ export const Layout = ({
         author={author}
       />
       <SiteHeader link={headerLink}>{headerTitle}</SiteHeader>
-      <Box as="main" flex="1" px="4">
+      <Box as="main" flex="1">
         {children}
       </Box>
       <SiteFooter />
