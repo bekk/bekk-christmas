@@ -7,11 +7,13 @@ const author = {
       title: "Full name",
       name: "fullName",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Company name",
       name: "companyName",
       type: "string",
+      initialValue: "Bekk",
     },
     {
       title: "Profile picture",
