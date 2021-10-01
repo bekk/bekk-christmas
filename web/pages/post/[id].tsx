@@ -108,7 +108,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 const getImageUrl = (image: any) => {
   if (!image) {
-    return "/fallback-image.jpg";
+    return null;
   }
   if (typeof image.src === "string") {
     return image.src;
