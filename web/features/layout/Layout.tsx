@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, BoxProps, Flex } from "@chakra-ui/react";
 import * as React from "react";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
@@ -11,18 +11,20 @@ type LayoutProps = {
   keywords?: string[];
   image?: string;
   author?: string;
-  headerLink: string;
+  headerLink?: string;
   headerTitle?: string;
+  px?: BoxProps["px"];
 };
 export const Layout = ({
   children,
   title,
   description,
   keywords,
-  headerLink,
+  headerLink = "/",
   headerTitle = "Bekk Christmas",
   image,
   author,
+  px = 4,
 }: LayoutProps) => {
   return (
     <Flex minHeight="100vh" flexDirection="column">
@@ -34,7 +36,7 @@ export const Layout = ({
         author={author}
       />
       <SiteHeader link={headerLink}>{headerTitle}</SiteHeader>
-      <Box as="main" flex="1" px="4">
+      <Box as="main" flex="1" px={px}>
         {children}
       </Box>
       <SiteFooter />

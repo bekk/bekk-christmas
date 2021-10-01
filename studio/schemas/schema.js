@@ -1,27 +1,33 @@
-// First, we must import the schema creator
-import createSchema from "part:@sanity/base/schema-creator";
-
-// Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
+import createSchema from "part:@sanity/base/schema-creator";
+import author from "./documents/author";
+import post from "./documents/post";
+import tag from "./documents/tag";
+import codePen from "./objects/codePen";
+import codeSandbox from "./objects/codeSandbox";
+import iframe from "./objects/iframe";
+import imageWithMetadata from "./objects/imageWithMetadata";
+import portableText from "./objects/portableText";
+import socialMediaLink from "./objects/socialMediaLink";
+import twitter from "./objects/twitter";
+import youtube from "./objects/youtube";
 
-import post from "./post.js";
-import author from "./author.js";
-import tag from "./tag.js";
-import socialMediaLink from "./socialMediaLink.js";
-import iframe from "./iframe.js";
-
-// Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
-  // We name our schema
   name: "default",
-  // Then proceed to concatenate our document type
-  // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    /* Your types here! */
+    // Documents
     post,
     author,
     tag,
+
+    // Objects (stuff used in documents)
     socialMediaLink,
     iframe,
+    codePen,
+    codeSandbox,
+    imageWithMetadata,
+    portableText,
+    twitter,
+    youtube,
   ]),
 });

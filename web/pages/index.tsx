@@ -4,13 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { Layout } from "../features/layout/Layout";
 import Search from "../features/search/Search";
-import { getAllTags } from "../utils/data";
+import { getAllTags, Tag } from "../utils/data";
 
-type Props = {
-  tags: { slug: string; name: string }[];
+type HomePageProps = {
+  tags: Tag[];
 };
 
-export default function Home({ tags }: Props) {
+export default function HomePage({ tags }: HomePageProps) {
   const calendarColor = useColorModeValue("red.100", "red.800");
   return (
     <Layout
@@ -29,7 +29,7 @@ export default function Home({ tags }: Props) {
       ]}
     >
       <Text fontSize="5xl" maxWidth="container.lg" mx="auto" mb={12}>
-        264 articles, 24 days.
+        A perfect storm of content.
         <br />
         Made with 🎅 in Oslo and Trondheim, Norway!
       </Text>

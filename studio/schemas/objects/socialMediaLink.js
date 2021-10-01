@@ -18,11 +18,13 @@ const socialMediaLink = {
           { title: "Instagram", name: "instagram" },
         ],
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "URL",
       name: "url",
       type: "url",
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

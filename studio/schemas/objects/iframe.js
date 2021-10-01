@@ -7,6 +7,7 @@ const iframe = {
       title: "Source URL",
       name: "src",
       type: "url",
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

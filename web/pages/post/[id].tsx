@@ -1,13 +1,18 @@
 import { Box, Container, Heading, Image, Skeleton, Stack, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
+import readingTime from "reading-time";
 import { Layout } from "../../features/layout/Layout";
-import { IngressMarkdown } from "../../features/markdown/IngressMarkdown";
+import { PortableText } from "../../features/portable-text/PortableText";
 import { getAllPosts, getPostById, Post } from "../../utils/data";
-import BlockContent from "@sanity/block-content-to-react";
+import { toPlainText, urlFor } from "../../utils/sanity/sanity.client";
 
-export default function BlogPostPage({ post }) {
-  const { tags, title, description, content, authorNames, coverImage, availableFrom } = post;
+type BlogPostPageProps = {
+  post: Post;
+};
+export default function BlogPostPage({
+  post: { title, description, content, authors, coverImage, availableFrom },
+}: BlogPostPageProps) {
   const isAvailable = new Date(availableFrom) < new Date();
   if (!isAvailable) {
     return (
@@ -20,22 +25,24 @@ export default function BlogPostPage({ post }) {
           <Heading as="h1" fontSize="6xl">
             Article isn&apos;t available yet
           </Heading>
-          <Text>Please check back in a few.</Text>
+          <Text>Please check back later.</Text>
         </Stack>
       </Layout>
     );
   }
+  const noNullAuthors = authors.filter((author) => author);
+  const imageUrl = getImageUrl(coverImage);
   return (
     <Layout
       title={`${title} - bekk.christmas`}
       description={description}
-      headerLink="/"
-      headerTitle={`Bekk Christmas / ${tags[0]}`}
+      image={imageUrl}
+      author={authors.join(", ")}
     >
       <Box>
-        {coverImage && (
+        {imageUrl && (
           <Image
-            src={coverImage}
+            src={imageUrl}
             alt={title}
             width="100%"
             maxWidth="1200px"
@@ -55,25 +62,25 @@ export default function BlogPostPage({ post }) {
               </Heading>
             </Container>
             <Text mb={12} mt={3}>
-              {/* TODO: A {readingTime(content).text}{" "} */}
-              {authorNames?.length > 0 && (
+              A {readingTime(toPlainText(content)).text}{" "}
+              {noNullAuthors.length > 0 && (
                 <>
-                  written by
+                  by
                   <br />
-                  <strong>{new Intl.ListFormat("en").format(authorNames)}</strong>
+                  <strong>{new Intl.ListFormat("en").format(noNullAuthors)}</strong>
                 </>
               )}
               <br />
-              {availableFrom}
+              {new Date(availableFrom).toLocaleDateString("nb-NO")}
             </Text>
             {description && (
               <Container maxWidth="container.md" mx="auto" fontSize="2xl" textAlign="center">
-                <IngressMarkdown>{description}</IngressMarkdown>
+                {description}
               </Container>
             )}
           </Box>
           <Box fontSize="lg">
-            <BlockContent blocks={content} />
+            <PortableText blocks={content} />
           </Box>
         </Stack>
       </Box>
@@ -83,7 +90,7 @@ export default function BlogPostPage({ post }) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { id } = context.params;
-  const post = await getPostById(id);
+  const post = await getPostById(id as string);
   return {
     props: {
       post,
@@ -97,4 +104,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: allPosts.map((post) => `/post/${post.id}`),
     fallback: false,
   };
+};
+
+const getImageUrl = (image: any) => {
+  if (!image) {
+    return null;
+  }
+  if (typeof image.src === "string") {
+    return image.src;
+  }
+  return urlFor(image).width(1200).url();
 };

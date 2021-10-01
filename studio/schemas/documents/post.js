@@ -5,16 +5,21 @@ const post = {
   fields: [
     {
       title: "Title",
+      description: "Make it snappy!",
       name: "title",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Description",
+      description:
+        "This is the excerpt, shown at the top of the article, as well as when shared on social media. Keep it short!",
       name: "description",
       type: "string",
     },
     {
       title: "Authors",
+      description: "Remember to add yourself as an author as well!",
       name: "authors",
       type: "array",
       of: [
@@ -41,6 +46,7 @@ const post = {
       name: "availableFrom",
       description: "The date the post was or will be posted",
       type: "date",
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Tags",
@@ -86,24 +92,27 @@ const post = {
     {
       title: "Content",
       name: "content",
-      type: "array",
-      of: [
-        { type: "block" },
-        { type: "iframe" },
-        { type: "code" },
-        {
-          type: "image",
-          fields: [
-            {
-              title: "Alternative text",
-              name: "alt",
-              type: "string",
-            },
-          ],
-        },
-      ],
+      type: "portableText",
+      validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      tag: "tags.0.name",
+      author: "authors.0.fullName",
+      extraAuthor: "authors.1.fullName",
+      media: "coverImage",
+    },
+    prepare({ title, tag, author, extraAuthor, media }) {
+      const authors = extraAuthor ? `${author}, ${extraAuthor}` : author;
+      return {
+        title: title,
+        subtitle: `${authors} – ${tag || "No category 🤷"}`,
+        media: media,
+      };
+    },
+  },
 };
 
 export default post;
