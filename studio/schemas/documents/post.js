@@ -96,6 +96,23 @@ const post = {
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      tag: "tags.0.name",
+      author: "authors.0.fullName",
+      extraAuthor: "authors.1.fullName",
+      media: "coverImage",
+    },
+    prepare({ title, tag, author, extraAuthor, media }) {
+      const authors = extraAuthor ? `${author}, ${extraAuthor}` : author;
+      return {
+        title: title,
+        subtitle: `${authors} – ${tag || "No category 🤷"}`,
+        media: media,
+      };
+    },
+  },
 };
 
 export default post;
