@@ -1,5 +1,4 @@
 import groq from "groq";
-import {} from "./sanity/sanity.client";
 import { sanityClient } from "./sanity/sanity.server";
 
 export type Tag = {

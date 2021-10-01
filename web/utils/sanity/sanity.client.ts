@@ -1,14 +1,10 @@
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import {
-  createClient,
   createCurrentUserHook,
   createImageUrlBuilder,
   createPreviewSubscriptionHook,
 } from "next-sanity";
 import { sanityConfig } from "./config";
-
-/** The sanity client config */
-export const client = createClient(sanityConfig);
 
 /** Create a URL for a Sanity image, complete with custom dimensions */
 export const urlFor = (source: SanityImageSource) =>
