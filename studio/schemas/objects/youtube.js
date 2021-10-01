@@ -17,6 +17,7 @@ export default {
       name: "url",
       type: "url",
       title: "YouTube video URL",
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {

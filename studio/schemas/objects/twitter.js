@@ -30,6 +30,7 @@ export default {
       name: "url",
       type: "url",
       title: "Tweet URL",
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
