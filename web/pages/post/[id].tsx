@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import readingTime from "reading-time";
 import { Layout } from "../../features/layout/Layout";
-import { ContentPortableText } from "../../features/portable-text/PortableText";
+import { PortableText } from "../../features/portable-text/PortableText";
 import { getAllPosts, getPostById, Post } from "../../utils/data";
 import { toPlainText, urlFor } from "../../utils/sanity/sanity.client";
 
@@ -80,7 +80,7 @@ export default function BlogPostPage({
             )}
           </Box>
           <Box fontSize="lg">
-            <ContentPortableText blocks={content} />
+            <PortableText blocks={content} />
           </Box>
         </Stack>
       </Box>
