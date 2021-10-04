@@ -15,7 +15,8 @@
     "@sanity/desk-tool",
     "@sanity/code-input",
     "media",
-    "@sanity/vision"
+    "@sanity/vision",
+    "@sanity/production-preview"
   ],
   "env": {
     "development": {
@@ -28,6 +29,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./resolveProductionUrl.js"
     }
   ]
 }

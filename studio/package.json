@@ -22,6 +22,7 @@
     "@sanity/default-layout": "^2.14.0",
     "@sanity/default-login": "^2.14.0",
     "@sanity/desk-tool": "^2.14.0",
+    "@sanity/production-preview": "^2.15.0",
     "@sanity/vision": "^2.19.0",
     "get-youtube-id": "^1.0.1",
     "prop-types": "^15.7",
