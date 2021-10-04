@@ -8,7 +8,7 @@ import { authClient, writeClient } from "../../../utils/sanity/sanity.server";
 export default handleAuth({
   async callback(req, res) {
     try {
-      await handleCallback(req, res, { afterCallback });
+      await handleCallback(req, res, { afterCallback: logIntoSanity });
     } catch (error) {
       console.error("Error while authenticating", error);
       res.status(500).json({
@@ -18,7 +18,14 @@ export default handleAuth({
   },
 });
 
-const afterCallback = async (_: NextApiRequest, res: NextApiResponse, session: Session) => {
+type State = { returnTo: string };
+
+const logIntoSanity = async (
+  _: NextApiRequest,
+  __: NextApiResponse,
+  session: Session,
+  state: State
+) => {
   try {
     const { user: auth0User } = session;
     const existingSanityUser = await getSanityUser();
@@ -26,15 +33,14 @@ const afterCallback = async (_: NextApiRequest, res: NextApiResponse, session: S
       `User ${auth0User.email} ${existingSanityUser ? "is already" : "was not"} logged into Sanity`
     );
 
-    // If you're already logged in, and your sanity user stems from your Bekk user
-    // we're going to just log you in to Sanity.
+    // If you're already logged in, and your sanity user stems from your Bekk user we're going to just log you in to Sanity.
     // This will be what happens most of the time.
     // TODO: Is this safe, given the context?
     if (existingSanityUser?.provider === "external") {
       console.info(
         `User ${auth0User.email} had a valid session in Sanity, redirecting to the Studio`
       );
-      res.writeHead(302, { Location: process.env.SANITY_STUDIO_URL });
+      state.returnTo = process.env.SANITY_STUDIO_URL;
       return session;
     }
 
@@ -48,9 +54,7 @@ const afterCallback = async (_: NextApiRequest, res: NextApiResponse, session: S
 
     // And then we're going to get your "log in to Sanity" URL,
     // which will set the user's session cookie.
-    const redirectUrl = await getEndUserClaimUrl(sanityAuthor, auth0User);
-
-    res.writeHead(302, { Location: redirectUrl });
+    state.returnTo = await getEndUserClaimUrl(sanityAuthor, auth0User);
     return session;
   } catch (e) {
     console.error("Error while authenticating", e);
@@ -61,49 +65,62 @@ async function getSanityUser() {
   try {
     const res = await fetch("https://api.sanity.io/v1/users/me", {
       credentials: "include",
+      headers: { "Content-Type": "application/json" },
     });
     if (res.status === 401) {
       return null;
     }
-    return res.json();
+    const body = await res.json();
+
+    // This endpoint returns an empty object if we're logged in.
+    // We're going to check for that and return null if it's empty.
+    return body?.id ? body : null;
   } catch (error) {
     return null;
   }
 }
 
 async function createOrUpdateAuthorInSanity(user: Session["user"]) {
-  console.info("Checking if the author exists already", user);
   const existingAuthor = await getExistingAuthorFromSanity(user.name);
   if (existingAuthor) {
-    console.info(
-      `Found an existing author called ${user.name}. Updating it instead of creating a new one.`
-    );
+    console.info(`Found an existing author called ${user.name}. Updating it with newest data`);
+  } else {
+    console.info(`Could not find a matching author for ${user.name}. Creating it.`);
   }
   const authorId = existingAuthor ? existingAuthor._id : userIdFromEmail(user.email);
   const socialMediaLinks = existingAuthor?.socialMediaLinks ?? [];
-  return createAuthorInSanity({ ...user, _id: authorId }, socialMediaLinks);
+  return createAuthorInSanity({
+    id: authorId,
+    name: user.name,
+    imageUrl: user.picture,
+    socialMediaLinks,
+  });
 }
 
-// TODO: The socialMediaLinks add-on is a crap way to do this.
-// Review this code before merging
-async function createAuthorInSanity(user: Session["user"], socialMediaLinks?: any[]) {
+type AuthorDetails = {
+  id: string;
+  name: string;
+  imageUrl: string;
+  socialMediaLinks: unknown[];
+};
+async function createAuthorInSanity(authorDetails: AuthorDetails) {
   try {
     return writeClient.createOrReplace({
       _type: "author",
-      _id: user._id,
-      fullName: "SANITY " + user.name, // TODO: Remove the prefix
+      _id: authorDetails.id,
+      fullName: authorDetails.name,
       companyName: "Bekk",
-      profilePicture: user.picture,
-      socialMediaLinks,
+      profilePicture: authorDetails.imageUrl,
+      socialMediaLinks: authorDetails.socialMediaLinks,
     });
   } catch (error) {
     // If the user exists already, we'll just update their profile picture
     if (error.statusCode === 409) {
-      console.log(`User ${user._id} already exists, updating the profile picture`);
+      console.log(`User ${authorDetails.id} already exists, updating the profile picture`);
       return writeClient
-        .patch(user._id)
+        .patch(authorDetails.id)
         .set({
-          profilePicture: user.picture,
+          profilePicture: authorDetails.imageUrl,
         })
         .commit();
     } else {
@@ -133,13 +150,10 @@ async function addUserToGroup(userId: string) {
       .setIfMissing({ members: [] })
       .append("members", [userId])
       .commit();
-  } else {
-    console.info(`User "${userId}" is already a member of group "${group._id}".`);
   }
 }
 
 function createGroupIfNotExists(groupName: string) {
-  console.info(`Creating group "${groupName}" if it does not yet exist`);
   return authClient.createIfNotExists({
     _id: `_.groups.${groupName}`,
     _type: "system.group",
@@ -154,7 +168,7 @@ function createGroupIfNotExists(groupName: string) {
 }
 
 async function getEndUserClaimUrl(sanityUser: SanityDocument, auth0User: Session["user"]) {
-  console.info(`Creating a session for ${sanityUser._id}`);
+  console.info(`Creating a session for ${auth0User.email}`);
   const dateIn24Hours = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const response = await fetch(
     `https://${sanityConfig.projectId}.api.sanity.io/${sanityConfig.apiVersion}/auth/thirdParty/session`,
