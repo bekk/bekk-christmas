@@ -63,14 +63,18 @@ const logIntoSanity = async (
 
 async function getSanityUser() {
   try {
-    const res = await fetch("https://api.sanity.io/v1/users/me", {
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-    });
+    const res = await fetch(
+      `https://${sanityConfig.projectId}.api.sanity.io/${sanityConfig.apiVersion}/users/me`,
+      {
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
     if (res.status === 401) {
       return null;
     }
     const body = await res.json();
+    console.log(res.status, body);
 
     // This endpoint returns an empty object if we're logged in.
     // We're going to check for that and return null if it's empty.
