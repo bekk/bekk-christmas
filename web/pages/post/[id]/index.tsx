@@ -1,9 +1,9 @@
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
-import { Layout } from "../../features/layout/Layout";
-import { PostPageTemplate } from "../../features/post-page-template/PostPageTemplate";
-import { getAllPosts, getPostById, Post } from "../../utils/data";
+import { Layout } from "../../../features/layout/Layout";
+import { PostPageTemplate } from "../../../features/post-page-template/PostPageTemplate";
+import { getAllPosts, getPostById, Post } from "../../../utils/data";
 
 type BlogPostPageProps = {
   post: Post;
