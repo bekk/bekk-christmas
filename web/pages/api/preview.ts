@@ -29,9 +29,7 @@ const previewApiHandler: NextApiHandler = (req, res) => {
 
   res.setPreviewData({});
 
-  res.writeHead(307, { Location: `/post/${id}/preview` ?? `/` });
-
-  return res.end();
+  res.redirect(307, `/post/${id}`);
 };
 
 export default previewApiHandler;
