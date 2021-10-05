@@ -61,6 +61,8 @@ const logIntoSanity = async (
   }
 };
 
+// TODO: This is not currently working for some reason. It looks like it doesn't send the correct cookies along…
+// It doesn't seem to be a blocker however, as we just look up the user by name instead, and update it there.
 async function getSanityUser() {
   try {
     const res = await fetch(
@@ -74,7 +76,6 @@ async function getSanityUser() {
       return null;
     }
     const body = await res.json();
-    console.log(res.status, body);
 
     // This endpoint returns an empty object if we're logged in.
     // We're going to check for that and return null if it's empty.
