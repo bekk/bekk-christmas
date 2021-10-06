@@ -47,6 +47,8 @@ export default function BlogPostPage({
   }
 
   const imageUrl = getImageUrl(post.coverImage);
+  // Some authors may be null (at least for now), so we filter them out
+  post.authors = post.authors?.filter((author: string | null) => author) ?? [];
   return (
     <Layout
       title={`${post.title ?? "No title"} - bekk.christmas`}
@@ -121,8 +123,6 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
   if (!allPosts || !post) {
     return { notFound: true };
   }
-  // Some authors may be null (at least for now), so we filter them out
-  post.authors = post.authors?.map((author: string | null) => author) ?? [];
 
   return {
     props: {
