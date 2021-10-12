@@ -12,6 +12,7 @@ import React from "react";
 import { Layout } from "../features/layout/Layout";
 import Search from "../features/search/Search";
 import { getAllTags, Tag } from "../utils/data";
+import { generateRss } from "../utils/rss";
 
 type HomePageProps = {
   tags: Tag[];
@@ -64,6 +65,10 @@ export default function HomePage({ tags }: HomePageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  // We generate a new RSS feed every time the index page is built.
+  // This creates a new public/rss.xml file with the latest articles.
+  await generateRss();
+
   return {
     props: {
       tags: await getAllTags(),
