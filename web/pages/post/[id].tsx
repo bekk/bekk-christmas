@@ -165,7 +165,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     groq`*[_type == 'post'] { _id }`
   );
   return {
-    paths: allPosts.map((post) => `/post/${post._id}`), // TODO: Perhaps remove draft?
+    paths: allPosts.map((post) => `/post/${post._id}`),
     fallback: false,
   };
 };

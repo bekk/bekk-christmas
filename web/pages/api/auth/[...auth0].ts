@@ -188,25 +188,38 @@ async function getEndUserClaimUrl(
 ) {
   console.info(`Creating a session for ${auth0User.email}`);
   const dateIn24Hours = new Date(Date.now() + 24 * 60 * 60 * 1000);
-  const response = await fetch(
-    `https://${sanityConfig.projectId}.api.sanity.io/${sanityConfig.apiVersion}/auth/thirdParty/session`,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.SANITY_SESSION_API_TOKEN}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        userId: sanityUser._id,
-        userFullName: sanityUser.fullName,
-        userEmail: auth0User.email,
-        userImage: auth0User.picture,
-        userRole: "editor",
-        sessionExpires: dateIn24Hours.toISOString(),
-        sessionLabel: "SSO",
-      }),
+  try {
+    const response = await fetch(
+      `https://${sanityConfig.projectId}.api.sanity.io/${sanityConfig.apiVersion}/auth/thirdParty/session`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.SANITY_SESSION_API_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userId: sanityUser._id,
+          userFullName: sanityUser.fullName,
+          userEmail: auth0User.email,
+          userImage: auth0User.picture,
+          userRole: "editor",
+          sessionExpires: dateIn24Hours.toISOString(),
+          sessionLabel: "SSO",
+        }),
+      }
+    );
+    const json = await response.json();
+
+    if (!json.endUserClaimUrl) {
+      console.error("Could not create user session in Sanity", {
+        responseStatus: response.status,
+        json,
+      });
+      throw new Error("Could not create session");
     }
-  );
-  const json = await response.json();
-  return `${json.endUserClaimUrl}?origin=${process.env.SANITY_STUDIO_URL}`;
+    return `${json.endUserClaimUrl}?origin=${process.env.SANITY_STUDIO_URL}`;
+  } catch (e) {
+    console.error("Error while creating session", e);
+    throw e;
+  }
 }
