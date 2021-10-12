@@ -1,0 +1,7 @@
+# Built files
+.next/
+/out/
+
+
+# RSS feed
+public/rss.xml

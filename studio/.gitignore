@@ -1,0 +1,5 @@
+# The built studio
+dist/
+
+# The production secrets
+.env.production
