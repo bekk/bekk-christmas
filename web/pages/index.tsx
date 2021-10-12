@@ -10,7 +10,6 @@ import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import { Layout } from "../features/layout/Layout";
-import Search from "../features/search/Search";
 import { getAllTags, Tag } from "../utils/data";
 import { generateRss } from "../utils/rss";
 
@@ -41,7 +40,7 @@ export default function HomePage({ tags }: HomePageProps) {
         <br />
         Made with 🎅 in Oslo and Trondheim, Norway!
       </Text>
-      <Search />
+
       <Stack as="section" mb={12} maxWidth="container.lg" mx="auto">
         <Heading>All calendars</Heading>
         <SimpleGrid columns={[1, 2, 3]} rowGap={6} columnGap={3}>
