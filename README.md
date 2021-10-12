@@ -1,140 +1,46 @@
 # Bekk Christmas
 
-God jul 🎅, og velkommen til **verdens råeste julekalender-satsning**!
+Welcome to the Bekk Christmas codebase. :santa:
 
-Dette repoet er kildekoden til disse sidene:
+> ## :warning: In active development :warning:
+>
+> We're in the middle of rewriting and redesigning this app. That means this version is not yet in production. Please bear with us while we get ready to re-launch!
 
-- [bekk.christmas](https://bekk.christmas) (samlesiden)
-- [preview.bekk.christmas](https://preview.bekk.christmas/) (forhåndsvisningssiden)
-- [functional.christmas](https://functional.christmas)
-- [java.christmas](https://java.christmas)
-- [javascript.christmas](https://javascript.christmas)
-- [kotlin.christmas](https://kotlin.christmas)
-- [ml.christmas](https://ml.christmas)
-- [opensource.christmas](https://opensource.christmas)
-- [innovation.christmas](https://innovation.christmas)
-- [react.christmas](https://react.christmas)
-- [security.christmas](https://security.christmas)
-- [thecloud.christmas](https://thecloud.christmas)
-- [ux.christmas](https://ux.christmas)
+If you want to add content, please get in touch with @selbekk.
 
-## Jeg vil legge til innhold!
+## Structure
 
-Så bra, da skal vi få deg i gang.
+This repository has two main parts - the `studio` and the `web` folder.
 
-For å legge til innhold, så må du være logget inn på GitHub, og brukeren din må være lagt til gruppen "[Julenissens hjelpere](https://github.com/orgs/bekk/teams/julenissens-hjelpere)". Ta kontakt med Svein Petter Gjøby ([@sveinpg](https://github.com/sveinpg)) om du trenger slik tilgang, eller om du vil legge til noen andre.
+### The Studio
 
-Gå inn i CMSet vårt på [preview.bekk.christmas/admin/](https://preview.bekk.christmas/admin/). Passordet er "sniktitt".
+Bekk Christmas is built around [Sanity](https://sanity.io), and has its own custom studio. You can access it at [bekk-christmas.sanity.studio](https://bekk-christmas.sanity.studio) (only available for Bekk employees).
 
-Første gang du logger inn må du trykke "Log in with GitHub", for å autentisere deg.
+The `studio` folder contains all the schemas and custom setup for our Sanity studio. If you want to change (or add) a type of content, this is where you want to look.
 
-Når du er logget inn riktig, vil du se denne oversiktssiden:
+### The Web
 
-![Bilde av oversiktssiden](https://i.ibb.co/YDbMf7t/Screenshot-2019-11-07-at-1-06-39-PM.png)
+The frontend of Bekk Christmas is based on [Next.js](https://nextjs.org).
 
-Aller først må du registrere deg som forfatter. Det gjør du ved å trykke på "Authors" i det venstre panelet, og så trykke "New Authors", og fyll ut informasjon om deg selv. Vi trenger bare navnet ditt og en lenke for å kontakte deg (Twitter-profil eller eposten din f.eks.). Når du er ferdig trykker du "Publish now" øverst i høyre hjørnet.
+The `web` folder contains all frontend code, as well as any API endpoints.
 
-Gå tilbake til forsiden, trykk på kalenderen du vil skrive for i det venstre panelet, og trykk "New Post:"-knappen øverst i høyre hjørnet etter det. Du vil da komme til siden for å endre en artikkel:
+## Development
 
-![Bilde av artikkel-endringssiden](https://i.ibb.co/mNm7QCt/Screenshot-2019-11-07-at-1-11-40-PM.png)
+To develop, you need a set of secrets for Sanity and Auth0.
+Reach out to @selbekk for the proper access tokens.
 
-Her er det bare å fylle ut feltene så godt du kan. Her er en beskrivelse av hva hvert betyr:
+### The Studio
 
-- `Year` er året julekalenderen er for. Dette trenger du nok ikke endre.
-- `Date` er hvilken luke din artikkel skal gjemme seg bak. Sjekk dette med lederen for din kalender, men i utgangspunktet er det bare å velge fritt.
-- `Title` er tittelen på artikkelen din
-- `Link to image` er URLen til hovedbildet til artikkelen din. Her anbefaler vi at du finner et bilde på [unsplash.com](https://unsplash.com). Finn et bilde, høyreklikk på det, og kopier bilde-URLen. Lim inn URLen her, og så er du i mål!
-- `Ingress` er ingressen til artikkelen din. Hold den kort - 2-3 setninger - og gjør leseren interessert i hva du skal skrive om!
-- `Body` er artikkelteksten. Her kan du enten bruke den rike teksteditoren, eller skrive i [Markdown-format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-- `Relevant links` er en måte å legge til relevante lenker til andre artikler, tutorials osv. Du må ikke legge til noen, men vi anbefaler 2-3 stykker. Dette er så leseren kan dykke videre ned i emnet du har skrevet om. Trykk på "Add relevant links", og legg til tittel, URL og en kort beskrivelse.
-- `Authors` er hvor du legger til deg selv. Søk opp navnet ditt, så skal du dukke opp.
-
-### Jeg vil legge til bilder i artikkelen min!
-
-Vi anbefaler at du laster opp bilder på en ekstern service, som [imgbb](https://imgbb.com/) eller hvor som helst ellers. Du kan legge til bilder ved å gå inn i `markdown`-formatet, og lime inn følgende code-snippet:
-
-```md
-![alt-tekst til bilde](https://url-til-bildet.no)
+```bash
+$ cd studio # Go to the studio folder
+$ npm install # Install dependencies
+$ npm run dev # Start a dev server at localhost:3333
 ```
 
-Hvis du ønsker å ha et bilde i samme format som hero bildet(bilde rett under tittelen) kan du legge det inn ved å legge til koden `<img class="wide-image" src="Sett inn lenke til bilde her" />`og bytte ut `Sett inn lenke til bilde her`med lenken til bildet du vil bruke. På stor skjerm vil bildet være `1260px`brett, og vil krympe med skjermen. Bildet er alltid `400px` høyt. For å få bildene automatisk tilpasset bør en fjerne det som kommer etter `?` i URLen og legge til `?w=1226&h=400&fit=crop&crop=edges? i stede.
+### The Web
 
-Eksempel på dette
-
-![](https://i.ibb.co/nCZ5nhg/wide-image.png)
-
-#### Endre bilde ut fra light og dark theme
-
-For å ha forskjellig bilde ut fra light or dark theme kan en benytte seg av:
-
-`<img class="light-theme-image" src="Sett inn lenke til bilde her" />`
-
-for bilder som kun skal være tilgjengelig for light theme. Og
-
-`<img class="dark-theme-image" src=<Sett inn lenke til bilde her" />`
-
-for bilder kun tilgjengelig for dark theme.
-
-### Jeg vil embede eksternt innhold
-
-Vi anbefaler at du viser det eksterne innholdet med en iframe. Du kan legge til bilder ved å gå inn i `markdown`-formatet, og lime inn følgende code-snippet, og legger til de attributtene du trenger på tag'en:
-
-```md
-<iframe src="https://url-til-eksternt-innhold.no"></iframe>
+```bash
+$ cd web # Go to the studio folder
+$ npm install # Install dependencies
+$ npm run dev # Start a dev server at localhost:3000
 ```
-
-### Jeg er klar for å publisere!
-
-Når du er ferdig, trykker du "Publish now" oppe i hjørnet, og lener deg tilbake.
-
-Hvis din kalender har et Trello-board med ideen din på, så er det på tide å flytte det kortet til "ferdig"-seksjonen.
-
-Du kan se artikkelen din på `preview.bekk.christmas/<kalendernavn>/2020/<lukenummer>`.
-
-Gratulerer, du har nå skrevet din første artikkel for bekk.christmas! 🎅 Tusen tusen takk for innsatsen.
-
-## Jeg vil endre noe i koden på websiden!
-
-Utrolig kult! Da bør du begynne med å klone ned repoet:
-
-```sh
-git clone git@github.com:bekk/bekk-christmas.git
-```
-
-Naviger til mappen, og installer alle avhengigheter:
-
-```sh
-cd bekk-christmas
-npm install
-```
-
-Så kan du starte en lokal utviklingsserver med en av følgende kommandos:
-
-```sh
-npm run dev # starter dev-server for lokal utvikling
-npm run build # lager et prod-bygg
-npm run start # starter prod-versjon
-```
-
-Både dev-server og prod-server kjører på [http://localhost:3000](http://localhost:3000).
-
-Det finnes masse andre kule scripts i scripts-lista vår også, og de kan du se ved å kjøre `npm run`.
-
-### Hva er hvor?
-
-Dette er et [Next.js](https://nextjs.org/)-prosjekt, og baserer seg på strukturen til [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-Artiklene ligger i `post`-mappa, gruppert etter hvilken kalender den tilhører. Informasjon om hver forfatter ligger i `author`.
-
-I `pages/`-mappen blir sider automatisk generert basert på innholdet. Mapper med navn på strukturen `[mappenavn]` behandles som en dynamisk route. Filer i `/pages/api/` behandles som API-endepunkter og kan nås på nettsiden ved `/api/filnavn`.
-
-Konfigurasjonsfiler og statiske ressurser ligger i `public`-mappen
-
-Siden bruker Next.js. For å lære mer om det kan du se på følgende ressurser:
-
-- [Next.js sin dokumentasjon](https://nextjs.org/docs)
-- [Next.js tutorial](https://nextjs.org/learn)
-
-### Fortell meg om CMSet
-
-bekk.christmas bruker noe som heter [Netlify CMS](https://www.netlifycms.org/) for å administrere innhold. Du kan logge deg inn på [bekk.christmas/admin](https://bekk.christmas/admin/).
