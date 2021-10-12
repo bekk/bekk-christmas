@@ -26,7 +26,10 @@ const markdownComponents = {
   a: ({ href, children }: ReactMarkdownProps & { href: string }) => (
     <TextLink href={href}>{children}</TextLink>
   ),
-  code: ({ inline, children }: ReactMarkdownProps & { inline: boolean; className: string }) => {
+  code: ({
+    inline,
+    children,
+  }: ReactMarkdownProps & { inline: boolean; className: string }) => {
     if (inline) {
       return <Code>{children}</Code>;
     }

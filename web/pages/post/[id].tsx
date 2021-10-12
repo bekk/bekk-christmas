@@ -1,12 +1,27 @@
-import { Box, Container, Heading, Image, Skeleton, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  Image,
+  Skeleton,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import readingTime from "reading-time";
 import { Layout } from "../../features/layout/Layout";
 import { PortableText } from "../../features/portable-text/PortableText";
-import { toPlainText, urlFor, usePreviewSubscription } from "../../utils/sanity/sanity.client";
-import { filterDataToSingleItem, getClient } from "../../utils/sanity/sanity.server";
+import {
+  toPlainText,
+  urlFor,
+  usePreviewSubscription,
+} from "../../utils/sanity/sanity.client";
+import {
+  filterDataToSingleItem,
+  getClient,
+} from "../../utils/sanity/sanity.server";
 
 type BlogPostPageProps = {
   data: Post;
@@ -94,10 +109,17 @@ export default function BlogPostPage({
                 </>
               )}
               <br />
-              {new Date(post.availableFrom ?? Date.now()).toLocaleDateString("nb-NO")}
+              {new Date(post.availableFrom ?? Date.now()).toLocaleDateString(
+                "nb-NO"
+              )}
             </Text>
             {post.description && (
-              <Container maxWidth="container.md" mx="auto" fontSize="2xl" textAlign="center">
+              <Container
+                maxWidth="container.md"
+                mx="auto"
+                fontSize="2xl"
+                textAlign="center"
+              >
                 {post.description}
               </Container>
             )}
@@ -111,7 +133,10 @@ export default function BlogPostPage({
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({ params, preview = false }) => {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview = false,
+}) => {
   const id = params.id as string;
   const query = groq`*[_type == 'post' && _id == $id] {
     ..., 
@@ -136,7 +161,9 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   type PostId = { _id: string };
-  const allPosts = await getClient().fetch<PostId[]>(groq`*[_type == 'post'] { _id }`);
+  const allPosts = await getClient().fetch<PostId[]>(
+    groq`*[_type == 'post'] { _id }`
+  );
   return {
     paths: allPosts.map((post) => `/post/${post._id}`), // TODO: Perhaps remove draft?
     fallback: false,

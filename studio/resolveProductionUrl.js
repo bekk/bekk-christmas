@@ -1,4 +1,4 @@
-const previewSecret = process.env.SANITY_PREVIEW_SECRET || 'development-secret'
+const previewSecret = process.env.SANITY_PREVIEW_SECRET || "development-secret";
 
 const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";

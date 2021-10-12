@@ -1,4 +1,11 @@
-import { Center, Heading, SimpleGrid, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Center,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
@@ -40,7 +47,11 @@ export default function HomePage({ tags }: HomePageProps) {
           {tags.map(({ slug, name }) => (
             <Link href={`/tag/${slug}`} key={slug}>
               <a>
-                <Center height="200px" fontSize="3xl" background={calendarColor}>
+                <Center
+                  height="200px"
+                  fontSize="3xl"
+                  background={calendarColor}
+                >
                   {name}
                 </Center>
               </a>

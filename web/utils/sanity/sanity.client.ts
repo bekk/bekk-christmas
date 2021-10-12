@@ -11,7 +11,8 @@ export const urlFor = (source: SanityImageSource) =>
   createImageUrlBuilder(sanityConfig).image(source);
 
 /** Use the usePreviewSubscription hook to get preview details */
-export const usePreviewSubscription = createPreviewSubscriptionHook(sanityConfig);
+export const usePreviewSubscription =
+  createPreviewSubscriptionHook(sanityConfig);
 
 /** Gets the logged in Sanity user (if any) */
 export const useCurrentUser = createCurrentUserHook(sanityConfig);

@@ -11,7 +11,9 @@ const getAllArticles = () => {
         encoding: "utf8",
       })
       // Only get the calendars, not any files
-      .filter((dirent) => fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory())
+      .filter((dirent) =>
+        fs.statSync(path.join(process.cwd(), "post", dirent)).isDirectory()
+      )
       // Filter out the dummy calendar
       .filter((dirent) => dirent !== "dummy")
       .flatMap((calendar) => ({
@@ -20,14 +22,21 @@ const getAllArticles = () => {
       }))
       .flatMap(({ calendar, files }) =>
         files.map((file) =>
-          grayMatter.read(path.join(process.cwd(), `post/${calendar}/${file}`), {
-            eval: false,
-          })
+          grayMatter.read(
+            path.join(process.cwd(), `post/${calendar}/${file}`),
+            {
+              eval: false,
+            }
+          )
         )
       )
       .map((article) => {
         const now = new Date();
-        const postDate = new Date(article.data.post_year, 11, article.data.post_day);
+        const postDate = new Date(
+          article.data.post_year,
+          11,
+          article.data.post_day
+        );
 
         const isAvailable = postDate < now;
         return {

@@ -9,10 +9,19 @@ type TextLinkProps = LinkProps & {
  *
  * Will automatically pick the correct link format based on whether it's internal or external
  */
-export const TextLink: React.FC<TextLinkProps> = ({ href, children, ...rest }) => {
+export const TextLink: React.FC<TextLinkProps> = ({
+  href,
+  children,
+  ...rest
+}) => {
   if (/^(mailto:|https?:\/\/)/.test(href)) {
     return (
-      <Link textDecoration="underline" href={href} rel="noopener noreferrer" {...rest}>
+      <Link
+        textDecoration="underline"
+        href={href}
+        rel="noopener noreferrer"
+        {...rest}
+      >
         {children}
       </Link>
     );

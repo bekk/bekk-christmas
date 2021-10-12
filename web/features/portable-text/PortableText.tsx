@@ -1,4 +1,10 @@
-import { Box, Container, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  ListItem,
+  Stack,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
@@ -35,7 +41,9 @@ const serializers = {
     mainImage: withWrap("wide")(ImageBlock),
   },
   marks: {
-    link: (props: any) => <TextLink href={props.mark.href}>{props.children}</TextLink>,
+    link: (props: any) => (
+      <TextLink href={props.mark.href}>{props.children}</TextLink>
+    ),
   },
   list: withWrap()((props) => <UnorderedList>{props.children}</UnorderedList>),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,

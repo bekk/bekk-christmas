@@ -13,7 +13,8 @@ export type PostLink = {
 };
 
 /** Gets all unique tags in Sanity */
-export const getAllTags = () => sanityClient.fetch<Tag[]>(groq`*[_type == "tag"]`);
+export const getAllTags = () =>
+  sanityClient.fetch<Tag[]>(groq`*[_type == "tag"]`);
 
 /** Gets all posts tagged with a given tag */
 export const getPostsByTag = (tag: string) =>

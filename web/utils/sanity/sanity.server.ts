@@ -31,7 +31,8 @@ export const authClient = createClient({
 });
 
 /** Returns the correct client for preview or "regular" mode */
-export const getClient = (isPreview: boolean = false) => (isPreview ? previewClient : sanityClient);
+export const getClient = (isPreview: boolean = false) =>
+  isPreview ? previewClient : sanityClient;
 
 /**
  * Helper function to return the correct version of the document

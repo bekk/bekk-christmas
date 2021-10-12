@@ -30,7 +30,9 @@ const logIntoSanity = async (
     const { user: auth0User } = session;
     const existingSanityUser = await getSanityUser();
     console.info(
-      `User ${auth0User.email} ${existingSanityUser ? "is already" : "was not"} logged into Sanity`
+      `User ${auth0User.email} ${
+        existingSanityUser ? "is already" : "was not"
+      } logged into Sanity`
     );
 
     // If you're already logged in, and your sanity user stems from your Bekk user we're going to just log you in to Sanity.
@@ -88,11 +90,17 @@ async function getSanityUser() {
 async function createOrUpdateAuthorInSanity(user: Session["user"]) {
   const existingAuthor = await getExistingAuthorFromSanity(user.name);
   if (existingAuthor) {
-    console.info(`Found an existing author called ${user.name}. Updating it with newest data`);
+    console.info(
+      `Found an existing author called ${user.name}. Updating it with newest data`
+    );
   } else {
-    console.info(`Could not find a matching author for ${user.name}. Creating it.`);
+    console.info(
+      `Could not find a matching author for ${user.name}. Creating it.`
+    );
   }
-  const authorId = existingAuthor ? existingAuthor._id : userIdFromEmail(user.email);
+  const authorId = existingAuthor
+    ? existingAuthor._id
+    : userIdFromEmail(user.email);
   const socialMediaLinks = existingAuthor?.socialMediaLinks ?? [];
   return createAuthorInSanity({
     id: authorId,
@@ -121,7 +129,9 @@ async function createAuthorInSanity(authorDetails: AuthorDetails) {
   } catch (error) {
     // If the user exists already, we'll just update their profile picture
     if (error.statusCode === 409) {
-      console.log(`User ${authorDetails.id} already exists, updating the profile picture`);
+      console.log(
+        `User ${authorDetails.id} already exists, updating the profile picture`
+      );
       return writeClient
         .patch(authorDetails.id)
         .set({
@@ -172,7 +182,10 @@ function createGroupIfNotExists(groupName: string) {
   });
 }
 
-async function getEndUserClaimUrl(sanityUser: SanityDocument, auth0User: Session["user"]) {
+async function getEndUserClaimUrl(
+  sanityUser: SanityDocument,
+  auth0User: Session["user"]
+) {
   console.info(`Creating a session for ${auth0User.email}`);
   const dateIn24Hours = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const response = await fetch(

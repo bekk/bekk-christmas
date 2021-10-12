@@ -26,7 +26,10 @@ export const SiteMetadata = ({
 
       <meta property="og:title" content={title} />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content={`https://bekk.christmas${router.asPath}`} />
+      <meta
+        property="og:url"
+        content={`https://bekk.christmas${router.asPath}`}
+      />
       <meta property="og:image" content={image} />
 
       <meta name="twitter:card" content="summary" />

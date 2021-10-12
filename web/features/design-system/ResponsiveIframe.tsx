@@ -18,7 +18,13 @@ export const ResponsiveIframe = ({
   const ratio = width && height ? w / h : 4 / 3;
   return (
     <AspectRatio ratio={ratio}>
-      <Box as="iframe" width={width} height={height} allowFullScreen={allowFullScreen} {...rest} />
+      <Box
+        as="iframe"
+        width={width}
+        height={height}
+        allowFullScreen={allowFullScreen}
+        {...rest}
+      />
     </AspectRatio>
   );
 };

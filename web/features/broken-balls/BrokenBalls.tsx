@@ -5,7 +5,11 @@ export const BrokenBalls = () => {
   const contrastColor = useColorModeValue("black", "white");
   const bgColor = useColorModeValue("white", "black");
   return (
-    <svg xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 381 377" width="100%">
+    <svg
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 381 377"
+      width="100%"
+    >
       <defs>
         <path
           id="a"

@@ -6,5 +6,12 @@ type BlockQuoteProps = TextProps & {
 };
 /** Make pretty block quotes */
 export const BlockQuote = (props: BlockQuoteProps) => (
-  <Text as="blockquote" fontSize="2xl" textAlign="center" textStyle="italic" py={6} {...props} />
+  <Text
+    as="blockquote"
+    fontSize="2xl"
+    textAlign="center"
+    textStyle="italic"
+    py={6}
+    {...props}
+  />
 );

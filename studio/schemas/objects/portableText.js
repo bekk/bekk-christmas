@@ -1,4 +1,10 @@
-import { FiCodepen, FiCodesandbox, FiSquare, FiTwitter, FiYoutube } from "react-icons/fi";
+import {
+  FiCodepen,
+  FiCodesandbox,
+  FiSquare,
+  FiTwitter,
+  FiYoutube,
+} from "react-icons/fi";
 export default {
   name: "portableText",
   type: "array",
