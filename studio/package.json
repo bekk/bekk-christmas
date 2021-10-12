@@ -1,0 +1,42 @@
+{
+  "name": "bekkchristmas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "God jul 🎅, og velkommen til **verdens råeste julekalender-satsning**!",
+  "main": "package.json",
+  "author": "Anders Larsen <andelar96@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity start",
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.14.0",
+    "@sanity/code-input": "^2.14.0",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.14.0",
+    "@sanity/default-layout": "^2.14.0",
+    "@sanity/default-login": "^2.14.0",
+    "@sanity/desk-tool": "^2.14.0",
+    "@sanity/production-preview": "^2.15.0",
+    "@sanity/vision": "^2.19.0",
+    "get-youtube-id": "^1.0.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-icons": "^4.2.0",
+    "react-twitter-embed": "^3.0.3",
+    "react-youtube": "^7.13.1",
+    "sanity-plugin-iframe-pane": "^1.0.8",
+    "sanity-plugin-media": "^1.3.1",
+    "styled-components": "^5.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bekk/bekk-christmas.git"
+  }
+}

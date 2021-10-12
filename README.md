@@ -4,19 +4,19 @@ God jul 🎅, og velkommen til **verdens råeste julekalender-satsning**!
 
 Dette repoet er kildekoden til disse sidene:
 
--   [bekk.christmas](https://bekk.christmas) (samlesiden)
--   [preview.bekk.christmas](https://preview.bekk.christmas/) (forhåndsvisningssiden)
--   [functional.christmas](https://functional.christmas)
--   [java.christmas](https://java.christmas)
--   [javascript.christmas](https://javascript.christmas)
--   [kotlin.christmas](https://kotlin.christmas)
--   [ml.christmas](https://ml.christmas)
--   [opensource.christmas](https://opensource.christmas)
--   [innovation.christmas](https://innovation.christmas)
--   [react.christmas](https://react.christmas)
--   [security.christmas](https://security.christmas)
--   [thecloud.christmas](https://thecloud.christmas)
--   [ux.christmas](https://ux.christmas)
+- [bekk.christmas](https://bekk.christmas) (samlesiden)
+- [preview.bekk.christmas](https://preview.bekk.christmas/) (forhåndsvisningssiden)
+- [functional.christmas](https://functional.christmas)
+- [java.christmas](https://java.christmas)
+- [javascript.christmas](https://javascript.christmas)
+- [kotlin.christmas](https://kotlin.christmas)
+- [ml.christmas](https://ml.christmas)
+- [opensource.christmas](https://opensource.christmas)
+- [innovation.christmas](https://innovation.christmas)
+- [react.christmas](https://react.christmas)
+- [security.christmas](https://security.christmas)
+- [thecloud.christmas](https://thecloud.christmas)
+- [ux.christmas](https://ux.christmas)
 
 ## Jeg vil legge til innhold!
 
@@ -40,14 +40,14 @@ Gå tilbake til forsiden, trykk på kalenderen du vil skrive for i det venstre p
 
 Her er det bare å fylle ut feltene så godt du kan. Her er en beskrivelse av hva hvert betyr:
 
--   `Year` er året julekalenderen er for. Dette trenger du nok ikke endre.
--   `Date` er hvilken luke din artikkel skal gjemme seg bak. Sjekk dette med lederen for din kalender, men i utgangspunktet er det bare å velge fritt.
--   `Title` er tittelen på artikkelen din
--   `Link to image` er URLen til hovedbildet til artikkelen din. Her anbefaler vi at du finner et bilde på [unsplash.com](https://unsplash.com). Finn et bilde, høyreklikk på det, og kopier bilde-URLen. Lim inn URLen her, og så er du i mål!
--   `Ingress` er ingressen til artikkelen din. Hold den kort - 2-3 setninger - og gjør leseren interessert i hva du skal skrive om!
--   `Body` er artikkelteksten. Her kan du enten bruke den rike teksteditoren, eller skrive i [Markdown-format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
--   `Relevant links` er en måte å legge til relevante lenker til andre artikler, tutorials osv. Du må ikke legge til noen, men vi anbefaler 2-3 stykker. Dette er så leseren kan dykke videre ned i emnet du har skrevet om. Trykk på "Add relevant links", og legg til tittel, URL og en kort beskrivelse.
--   `Authors` er hvor du legger til deg selv. Søk opp navnet ditt, så skal du dukke opp.
+- `Year` er året julekalenderen er for. Dette trenger du nok ikke endre.
+- `Date` er hvilken luke din artikkel skal gjemme seg bak. Sjekk dette med lederen for din kalender, men i utgangspunktet er det bare å velge fritt.
+- `Title` er tittelen på artikkelen din
+- `Link to image` er URLen til hovedbildet til artikkelen din. Her anbefaler vi at du finner et bilde på [unsplash.com](https://unsplash.com). Finn et bilde, høyreklikk på det, og kopier bilde-URLen. Lim inn URLen her, og så er du i mål!
+- `Ingress` er ingressen til artikkelen din. Hold den kort - 2-3 setninger - og gjør leseren interessert i hva du skal skrive om!
+- `Body` er artikkelteksten. Her kan du enten bruke den rike teksteditoren, eller skrive i [Markdown-format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+- `Relevant links` er en måte å legge til relevante lenker til andre artikler, tutorials osv. Du må ikke legge til noen, men vi anbefaler 2-3 stykker. Dette er så leseren kan dykke videre ned i emnet du har skrevet om. Trykk på "Add relevant links", og legg til tittel, URL og en kort beskrivelse.
+- `Authors` er hvor du legger til deg selv. Søk opp navnet ditt, så skal du dukke opp.
 
 ### Jeg vil legge til bilder i artikkelen min!
 
@@ -111,20 +111,29 @@ npm install
 Så kan du starte en lokal utviklingsserver med en av følgende kommandos:
 
 ```sh
-npm start # start bekk.christmas
-npm run start:preview # start preview.bekk.christmas
-npm run start:calendar <kalendernavn> # start <kalendernavn>.christmas
+npm run dev # starter dev-server for lokal utvikling
+npm run build # lager et prod-bygg
+npm run start # starter prod-versjon
 ```
+
+Både dev-server og prod-server kjører på [http://localhost:3000](http://localhost:3000).
 
 Det finnes masse andre kule scripts i scripts-lista vår også, og de kan du se ved å kjøre `npm run`.
 
 ### Hva er hvor?
 
+Dette er et [Next.js](https://nextjs.org/)-prosjekt, og baserer seg på strukturen til [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 Artiklene ligger i `post`-mappa, gruppert etter hvilken kalender den tilhører. Informasjon om hver forfatter ligger i `author`.
 
-Koden som rendrer siden vår ligger i `src`, som igjen er delt opp i `components`, `constants` og `templates`. Dette finner du sikkert ut av på null komma niks´.
+I `pages/`-mappen blir sider automatisk generert basert på innholdet. Mapper med navn på strukturen `[mappenavn]` behandles som en dynamisk route. Filer i `/pages/api/` behandles som API-endepunkter og kan nås på nettsiden ved `/api/filnavn`.
 
-Konfigurasjonsfiler og statiske ressurser ligger i `static`-mappen
+Konfigurasjonsfiler og statiske ressurser ligger i `public`-mappen
+
+Siden bruker Next.js. For å lære mer om det kan du se på følgende ressurser:
+
+- [Next.js sin dokumentasjon](https://nextjs.org/docs)
+- [Next.js tutorial](https://nextjs.org/learn)
 
 ### Fortell meg om CMSet
 
