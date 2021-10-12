@@ -1,6 +1,7 @@
-const previewSecret = process.env.SANITY_PREVIEW_SECRET || "development-secret";
+const previewSecret = process.env.SANITY_STUDIO_PREVIEW_SECRET;
 
-const remoteUrl = "https://bekk.christmas";
+// TODO: Change this URL when we're ready to deploy to production
+const remoteUrl = "https://bekk-christmas.vercel.app";
 const localUrl = "http://localhost:3000";
 
 export default function resolveProductionUrl(doc) {
