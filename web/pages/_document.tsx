@@ -11,6 +11,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <meta name="robots" content="noindex, nofollow" />
           <link
             rel="alternate"
             type="application/rss+xml"
