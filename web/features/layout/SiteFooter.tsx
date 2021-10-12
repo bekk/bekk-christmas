@@ -1,9 +1,12 @@
-import { Box, Button, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Text, useColorMode } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import * as React from "react";
 import { BekkLogo } from "../design-system/BekkLogo";
 import { TextLink } from "../design-system/TextLink";
 
-export const SiteFooter = () => {
+type SiteFooterProps = { preview?: boolean };
+export const SiteFooter = ({ preview = false }: SiteFooterProps) => {
+  const router = useRouter();
   const { toggleColorMode, colorMode } = useColorMode();
   return (
     <Box as="footer" maxWidth="80ch" mx="auto" mt={12} mb={6} textAlign="center">
@@ -33,9 +36,22 @@ export const SiteFooter = () => {
         </TextLink>
       </Flex>
       <Box mt={6}>
-        <Button size="sm" variant="outline" colorScheme="black" onClick={toggleColorMode}>
-          Turn {colorMode === "light" ? "off" : "on"} the lights!
-        </Button>
+        <HStack justifyContent="center">
+          <Button size="sm" variant="outline" colorScheme="black" onClick={toggleColorMode}>
+            Turn {colorMode === "light" ? "off" : "on"} the lights!
+          </Button>
+          {preview && (
+            <Button
+              size="sm"
+              variant="outline"
+              colorScheme="gray"
+              as="a"
+              href={`/api/exit-preview?returnTo=${router.asPath}`}
+            >
+              Exit preview mode
+            </Button>
+          )}
+        </HStack>
       </Box>
     </Box>
   );

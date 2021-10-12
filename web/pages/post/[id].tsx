@@ -1,19 +1,34 @@
 import { Box, Container, Heading, Image, Skeleton, Stack, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { groq } from "next-sanity";
 import React from "react";
 import readingTime from "reading-time";
 import { Layout } from "../../features/layout/Layout";
 import { PortableText } from "../../features/portable-text/PortableText";
-import { getAllPosts, getPostById, Post } from "../../utils/data";
-import { toPlainText, urlFor } from "../../utils/sanity/sanity.client";
+import { toPlainText, urlFor, usePreviewSubscription } from "../../utils/sanity/sanity.client";
+import { filterDataToSingleItem, getClient } from "../../utils/sanity/sanity.server";
 
 type BlogPostPageProps = {
-  post: Post;
+  data: Post;
+  preview: boolean;
+  query: string;
+  queryParams: { id: string };
 };
 export default function BlogPostPage({
-  post: { title, description, content, authors, coverImage, availableFrom },
+  data: initialData,
+  preview,
+  query,
+  queryParams,
 }: BlogPostPageProps) {
-  const isAvailable = new Date(availableFrom) < new Date();
+  const { data } = usePreviewSubscription(query, {
+    params: queryParams,
+    initialData: [initialData],
+    enabled: preview,
+  });
+
+  const [post] = data;
+
+  const isAvailable = preview || new Date(post.availableFrom) < new Date();
   if (!isAvailable) {
     return (
       <Layout
@@ -30,20 +45,23 @@ export default function BlogPostPage({
       </Layout>
     );
   }
-  const noNullAuthors = authors.filter((author) => author);
-  const imageUrl = getImageUrl(coverImage);
+
+  const imageUrl = getImageUrl(post.coverImage);
+  // Some authors may be null (at least for now), so we filter them out
+  post.authors = post.authors?.filter((author: string | null) => author) ?? [];
   return (
     <Layout
-      title={`${title} - bekk.christmas`}
-      description={description}
+      title={`${post.title ?? "No title"} - bekk.christmas`}
+      description={post.description ?? "No description"}
       image={imageUrl}
-      author={authors.join(", ")}
+      author={post.authors?.join(", ")}
+      preview={preview}
     >
       <Box>
         {imageUrl && (
           <Image
             src={imageUrl}
-            alt={title}
+            alt={post.title ?? "No title"}
             width="100%"
             maxWidth="1200px"
             mx="auto"
@@ -58,29 +76,34 @@ export default function BlogPostPage({
           <Box as="header" textAlign="center">
             <Container maxWidth="container.lg">
               <Heading as="h1" fontSize="6xl">
-                {title}
+                {post.title ?? "[No title]"}
+                {preview && " (preview)"}
               </Heading>
             </Container>
             <Text mb={12} mt={3}>
-              A {readingTime(toPlainText(content)).text}{" "}
-              {noNullAuthors.length > 0 && (
+              A {readingTime(toPlainText(post.content)).text}{" "}
+              {post.authors?.length > 0 && (
                 <>
                   by
                   <br />
-                  <strong>{new Intl.ListFormat("en").format(noNullAuthors)}</strong>
+                  <strong>
+                    {post.authors.length > 0
+                      ? new Intl.ListFormat("en").format(post.authors)
+                      : "No authors"}
+                  </strong>
                 </>
               )}
               <br />
-              {new Date(availableFrom).toLocaleDateString("nb-NO")}
+              {new Date(post.availableFrom ?? Date.now()).toLocaleDateString("nb-NO")}
             </Text>
-            {description && (
+            {post.description && (
               <Container maxWidth="container.md" mx="auto" fontSize="2xl" textAlign="center">
-                {description}
+                {post.description}
               </Container>
             )}
           </Box>
           <Box fontSize="lg">
-            <PortableText blocks={content} />
+            <PortableText blocks={post.content} />
           </Box>
         </Stack>
       </Box>
@@ -88,22 +111,47 @@ export default function BlogPostPage({
   );
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const { id } = context.params;
-  const post = await getPostById(id as string);
+export const getStaticProps: GetStaticProps = async ({ params, preview = false }) => {
+  const id = params.id as string;
+  const query = groq`*[_type == 'post' && _id == $id] {
+    ..., 
+    "authors": authors[].fullName, 
+    "tags": tags[]->.name
+  }`;
+  const allPosts = await getClient(preview).fetch<Post[]>(query, { id });
+  const post = filterDataToSingleItem(allPosts, preview);
+  if (!allPosts || !post) {
+    return { notFound: true };
+  }
+
   return {
     props: {
-      post,
+      preview,
+      data: post,
+      query,
+      queryParams: { id: id.replace("drafts.", "") },
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = await getAllPosts();
+  type PostId = { _id: string };
+  const allPosts = await getClient().fetch<PostId[]>(groq`*[_type == 'post'] { _id }`);
   return {
-    paths: allPosts.map((post) => `/post/${post.id}`),
+    paths: allPosts.map((post) => `/post/${post._id}`), // TODO: Perhaps remove draft?
     fallback: false,
   };
+};
+
+type Post = {
+  id: string;
+  title: string;
+  description: string;
+  content: any;
+  authors: string[];
+  tags: string[];
+  coverImage?: string;
+  availableFrom: string;
 };
 
 const getImageUrl = (image: any) => {

@@ -14,6 +14,7 @@ type LayoutProps = {
   headerLink?: string;
   headerTitle?: string;
   px?: BoxProps["px"];
+  preview?: boolean;
 };
 export const Layout = ({
   children,
@@ -25,11 +26,12 @@ export const Layout = ({
   image,
   author,
   px = 4,
+  preview = false,
 }: LayoutProps) => {
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <SiteMetadata
-        title={title}
+        title={preview ? `PREVIEW - ${title}` : title}
         description={description}
         keywords={keywords}
         image={image}
@@ -39,7 +41,7 @@ export const Layout = ({
       <Box as="main" flex="1" px={px}>
         {children}
       </Box>
-      <SiteFooter />
+      <SiteFooter preview={preview} />
     </Flex>
   );
 };
