@@ -43,8 +43,6 @@ export const filterDataToSingleItem = (items: unknown, preview: boolean) => {
     return items;
   }
 
-  console.log("items length", items.length);
-
   const lastIndex = items.length - 1;
 
   return items.length > 1 && preview

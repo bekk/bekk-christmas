@@ -151,11 +151,14 @@ async function getExistingAuthorFromSanity(name: string) {
 }
 
 const userIdFromEmail = (email: string) => {
-  const hash = createHash("md5").update(email).digest("hex");
-  return `e-${hash}`;
+  return createHash("md5").update(email).digest("hex");
 };
 
-async function addUserToGroup(userId: string) {
+const getSanityUserId = (sanityAuthorId: string) =>
+  sanityAuthorId.startsWith("e-") ? sanityAuthorId : `e-${sanityAuthorId}`;
+
+async function addUserToGroup(sanityAuthorId: string) {
+  const userId = getSanityUserId(sanityAuthorId);
   const group = await createGroupIfNotExists("bekker");
   const members = group.members || [];
   if (!members.includes(userId)) {
@@ -198,7 +201,7 @@ async function getEndUserClaimUrl(
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          userId: sanityUser._id,
+          userId: getSanityUserId(sanityUser._id),
           userFullName: sanityUser.fullName,
           userEmail: auth0User.email,
           userImage: auth0User.picture,
