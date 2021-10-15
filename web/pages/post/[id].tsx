@@ -1,21 +1,19 @@
 import {
   Box,
   Container,
+  Flex,
   Heading,
-  Image,
-  Skeleton,
-  Stack,
+  IconButton,
   Text,
 } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
+import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
-import { Layout } from "../../features/layout/Layout";
 import { PortableText } from "../../features/portable-text/PortableText";
 import {
   toPlainText,
-  urlFor,
   usePreviewSubscription,
 } from "../../utils/sanity/sanity.client";
 import {
@@ -30,10 +28,10 @@ type BlogPostPageProps = {
   queryParams: { id: string };
 };
 export default function BlogPostPage({
-  data: initialData,
-  preview,
   query,
   queryParams,
+  data: initialData,
+  preview,
 }: BlogPostPageProps) {
   const { data } = usePreviewSubscription(query, {
     params: queryParams,
@@ -43,93 +41,93 @@ export default function BlogPostPage({
 
   const [post] = data;
 
-  const isAvailable = preview || new Date(post.availableFrom) < new Date();
+  const availableFromDate = post.availableFrom
+    ? new Date(post.availableFrom)
+    : new Date();
+
+  const isAvailable = preview || availableFromDate < new Date();
+
   if (!isAvailable) {
     return (
-      <Layout
-        title="Not available yet!"
-        description="This article isn't available yet"
-        headerLink="/"
-      >
-        <Stack textAlign="center">
-          <Heading as="h1" fontSize="6xl">
-            Article isn&apos;t available yet
-          </Heading>
-          <Text>Please check back later.</Text>
-        </Stack>
-      </Layout>
+      <Text>
+        This article is not yet available. Check back at{" "}
+        {availableFromDate.toLocaleDateString("nb-no")}
+      </Text>
     );
   }
 
-  const imageUrl = getImageUrl(post.coverImage);
-  // Some authors may be null (at least for now), so we filter them out
-  post.authors = post.authors?.filter((author: string | null) => author) ?? [];
+  const authors = post.authors.filter((author) => author);
   return (
-    <Layout
-      title={`${post.title ?? "No title"} - bekk.christmas`}
-      description={post.description ?? "No description"}
-      image={imageUrl}
-      author={post.authors?.join(", ")}
-      preview={preview}
-    >
-      <Box>
-        {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={post.title ?? "No title"}
-            width="100%"
-            maxWidth="1200px"
-            mx="auto"
-            height="50vh"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center center"
-            fallback={<Skeleton height="50vh" maxWidth="1200px" mx="auto" />}
-          />
-        )}
-        <Stack as="article" mt={6}>
-          <Box as="header" textAlign="center">
-            <Container maxWidth="container.lg">
-              <Heading as="h1" fontSize="6xl">
-                {post.title ?? "[No title]"}
-                {preview && " (preview)"}
-              </Heading>
-            </Container>
-            <Text mb={12} mt={3}>
-              A {readingTime(toPlainText(post.content)).text}{" "}
-              {post.authors?.length > 0 && (
-                <>
-                  by
-                  <br />
-                  <strong>
-                    {post.authors.length > 0
-                      ? new Intl.ListFormat("en").format(post.authors)
-                      : "No authors"}
-                  </strong>
-                </>
-              )}
-              <br />
-              {new Date(post.availableFrom ?? Date.now()).toLocaleDateString(
-                "nb-NO"
-              )}
-            </Text>
-            {post.description && (
-              <Container
-                maxWidth="container.md"
-                mx="auto"
-                fontSize="2xl"
-                textAlign="center"
+    <Flex minHeight="100vh" flexDirection="column">
+      <Box
+        as="header"
+        background="brand.green"
+        color="brand.pink"
+        minHeight="33vh"
+      >
+        <Container maxWidth="container.md" padding="2.5rem">
+          <Flex>
+            <Link href="/" passHref>
+              <IconButton
+                as="a"
+                href="/"
+                aria-label={`See more posts for December ${availableFromDate.toLocaleDateString()}`}
+                title={`See more posts for December ${availableFromDate.toLocaleDateString()}`}
+                variant="outline"
+                colorScheme="white"
               >
-                {post.description}
-              </Container>
-            )}
+                <Box
+                  width="0.7em"
+                  height="0.7em"
+                  borderLeft="1px solid currentColor"
+                  borderTop="1px solid currentColor"
+                  transform="rotate(-45deg)"
+                  position="relative"
+                  left="0.2em"
+                />
+              </IconButton>
+            </Link>
+            <Box flex="1" fontSize="24px" ml="4" color="white">
+              Article
+            </Box>
+          </Flex>
+          <Box marginTop="10">
+            {readingTime(toPlainText(post.content)).text}
           </Box>
-          <Box fontSize="lg">
-            <PortableText blocks={post.content} />
-          </Box>
-        </Stack>
+          <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
+            {post.title ?? "No title yet"}
+          </Heading>
+        </Container>
       </Box>
-    </Layout>
+      <Box backgroundColor="brand.pink" color="brand.green" flex="1" py="6">
+        {post.description && (
+          <Container
+            maxWidth="container.md"
+            textAlign={["left", "center"]}
+            fontSize="2xl"
+            mb="4"
+            px="2.5rem"
+          >
+            {post.description}
+          </Container>
+        )}
+        <Container maxWidth="container.md" textAlign="center">
+          <strong>
+            {authors.length > 0
+              ? new Intl.ListFormat("en").format(authors)
+              : "No authors"}
+          </strong>{" "}
+          – {availableFromDate.toLocaleDateString("nb-no")}
+        </Container>
+        <Container maxWidth="container.md" mt="4" px={0} fontSize="20px">
+          {post.content ? (
+            <PortableText blocks={post.content} />
+          ) : (
+            <Text>No content</Text>
+          )}
+        </Container>
+      </Box>
+    </Flex>
   );
 }
 
@@ -179,14 +177,4 @@ type Post = {
   tags: string[];
   coverImage?: string;
   availableFrom: string;
-};
-
-const getImageUrl = (image: any) => {
-  if (!image) {
-    return null;
-  }
-  if (typeof image.src === "string") {
-    return image.src;
-  }
-  return urlFor(image).width(1200).url();
 };

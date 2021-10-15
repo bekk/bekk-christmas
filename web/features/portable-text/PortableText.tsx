@@ -23,7 +23,10 @@ const withWrap =
   (props: any) =>
     (
       <Box>
-        <Container maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}>
+        <Container
+          maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
+          px={maxWidth === "wide" ? "0" : "2.5rem"}
+        >
           <Component {...props} />
         </Container>
       </Box>

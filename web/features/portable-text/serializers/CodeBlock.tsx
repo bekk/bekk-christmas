@@ -24,7 +24,7 @@ export const CodeBlock = ({ node }: any) => {
   }
   const { language, code } = node;
   return (
-    <Box boxShadow="lg" my="3rem">
+    <Box boxShadow="lg" my="3rem" fontSize="md">
       <SyntaxHighlighter style={prism} language={language}>
         {code}
       </SyntaxHighlighter>
