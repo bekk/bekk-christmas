@@ -11,6 +11,7 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
+import { SiteMetadata } from "../../features/layout/SiteMetadata";
 import { PortableText } from "../../features/portable-text/PortableText";
 import {
   toPlainText,
@@ -59,6 +60,11 @@ export default function BlogPostPage({
   const authors = post.authors.filter((author) => author);
   return (
     <Flex minHeight="100vh" flexDirection="column">
+      <SiteMetadata
+        title={preview ? `${post.title} [preview]` : post.title}
+        description={post.description}
+        author={authors.join(", ")}
+      />
       <Box
         as="header"
         background="brand.green"
