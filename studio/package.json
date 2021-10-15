@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "sanity start",
     "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy"
+    "build": "SANITY_ACTIVE_ENV=production sanity build",
+    "deploy": "SANITY_ACTIVE_ENV=production sanity deploy"
   },
   "keywords": [
     "sanity"
