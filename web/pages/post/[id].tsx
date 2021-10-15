@@ -57,7 +57,7 @@ export default function BlogPostPage({
     );
   }
 
-  const authors = post.authors.filter((author) => author);
+  const authors = post.authors?.filter((author) => author);
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <SiteMetadata
