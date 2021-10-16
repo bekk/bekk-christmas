@@ -63,6 +63,16 @@ function Day({ day }: DayProps) {
         width="100%"
         maxWidth="200px"
         height="200px"
+        transition=".25s ease-out"
+        transformOrigin="top"
+        _hover={{
+          transform: "rotateX(-30deg) skew(1.5deg, 0) scale(1, 1.05)",
+          boxShadow: "xl",
+        }}
+        _focus={{
+          transform: "rotateX(-30deg) skew(1.5deg, 0) scale(1, 1.05)",
+          boxShadow: "xl",
+        }}
       >
         <Heading
           as="h2"
