@@ -1,17 +1,17 @@
-import { Box, IconButton } from "@chakra-ui/react";
+import { Box, IconButton, IconButtonProps } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
-export const ArticleBackButton = () => {
+export const ArticleBackButton = (props: Partial<IconButtonProps>) => {
   return (
     <Link href="/" passHref>
       <IconButton
         as="a"
-        href="/"
         aria-label="Back to blog"
         title="Back to blog"
         variant="outline"
         colorScheme="white"
+        {...props}
       >
         <Box
           width="0.7em"

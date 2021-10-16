@@ -6,7 +6,7 @@ import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { SiteFooter } from "../features/site-footer/SiteFooter";
 import { Snowfall } from "../features/snowfall/Snowfall";
 import { generateRss } from "../utils/rss";
-import { theme } from "../utils/theme";
+import { colorCombinations } from "../utils/theme";
 
 const listOf24Days = Array(24)
   .fill(0)
@@ -116,39 +116,6 @@ const Snowheap = (props: BoxProps) => (
     </defs>
   </Box>
 );
-
-type DayColors = {
-  background: string;
-  foreground: string;
-};
-
-const brandColors = theme.colors.brand;
-const colorCombinations: DayColors[] = [
-  {
-    background: brandColors.midGreen,
-    foreground: brandColors.lightPink,
-  },
-  {
-    background: brandColors.lightPink,
-    foreground: brandColors.midGreen,
-  },
-  {
-    background: brandColors.lightGreen,
-    foreground: brandColors.midGreenTransparent,
-  },
-  {
-    background: brandColors.red,
-    foreground: brandColors.lightPink,
-  },
-  {
-    background: brandColors.peach,
-    foreground: brandColors.midGreen,
-  },
-  {
-    background: brandColors.lightGreen,
-    foreground: brandColors.midGreen,
-  },
-];
 
 export const getStaticProps: GetStaticProps = async () => {
   // We generate a new RSS feed every time the index page is built.

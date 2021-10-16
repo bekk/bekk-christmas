@@ -20,3 +20,31 @@ export const theme = extendTheme({
     },
   },
 });
+
+const brandColors = theme.colors.brand;
+export const colorCombinations = [
+  {
+    background: brandColors.midGreen,
+    foreground: brandColors.lightPink,
+  },
+  {
+    background: brandColors.lightPink,
+    foreground: brandColors.midGreen,
+  },
+  {
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreenTransparent,
+  },
+  {
+    background: brandColors.red,
+    foreground: brandColors.lightPink,
+  },
+  {
+    background: brandColors.peach,
+    foreground: brandColors.midGreen,
+  },
+  {
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreen,
+  },
+];
