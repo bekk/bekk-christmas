@@ -6,9 +6,13 @@ import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { generateRss } from "../utils/rss";
 import { theme } from "../utils/theme";
 
+const listOf24Days = Array(24)
+  .fill(0)
+  .map((_, i) => i + 1);
+
 export default function HomePage() {
   return (
-    <Center flexDirection={"column"} backgroundColor={"brand.darkGreen"}>
+    <Center flexDirection="column" backgroundColor="brand.darkGreen">
       <SiteMetadata
         title="Bekk Christmas - advent calendars about technology, design and strategy"
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
@@ -25,11 +29,9 @@ export default function HomePage() {
         The Day
       </Heading>
       <SimpleGrid columns={[1, 2, 3, 4]} gap={6}>
-        {Array(24)
-          .fill(undefined)
-          .map((_, index) => (
-            <Day key={index} day={index + 1} />
-          ))}
+        {listOf24Days.map((day) => (
+          <Day key={day} day={day} />
+        ))}
       </SimpleGrid>
     </Center>
   );
