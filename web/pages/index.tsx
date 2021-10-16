@@ -1,4 +1,5 @@
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
+import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
@@ -92,31 +93,31 @@ type DayColors = {
   foreground: string;
 };
 
-// TODO Missing or wrong combos. I'm color blind give me a break
+const brandColors = theme.colors.brand;
 const colorCombinations: DayColors[] = [
   {
-    background: theme.colors.brand.midGreen,
-    foreground: theme.colors.brand.lightPink,
+    background: brandColors.midGreen,
+    foreground: brandColors.lightPink,
   },
   {
-    background: theme.colors.brand.lightPink,
-    foreground: theme.colors.brand.midGreen,
+    background: brandColors.lightPink,
+    foreground: brandColors.midGreen,
   },
   {
-    background: theme.colors.brand.lightGreen,
-    foreground: theme.colors.brand.midGreenTransparent,
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreenTransparent,
   },
   {
-    background: theme.colors.brand.red,
-    foreground: theme.colors.brand.lightPink,
+    background: brandColors.red,
+    foreground: brandColors.lightPink,
   },
   {
-    background: theme.colors.brand.peach,
-    foreground: theme.colors.brand.midGreen,
+    background: brandColors.peach,
+    foreground: brandColors.midGreen,
   },
   {
-    background: theme.colors.brand.lightGreen,
-    foreground: theme.colors.brand.midGreen,
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreen,
   },
 ];
 
