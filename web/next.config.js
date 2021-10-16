@@ -29,10 +29,6 @@ module.exports = {
           value: "1; mode=block",
         },
         {
-          key: "X-Frame-Options",
-          value: "SAMEORIGIN",
-        },
-        {
           key: "Permissions-Policy",
           value: "camera=(), microphone=(), geolocation=()",
         },
