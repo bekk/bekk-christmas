@@ -69,7 +69,7 @@ export default function BlogPostPage({
       />
       <Box
         as="header"
-        background="brand.green"
+        background="brand.darkGreen"
         color="brand.pink"
         minHeight="33vh"
       >
@@ -88,7 +88,7 @@ export default function BlogPostPage({
           </Heading>
         </Container>
       </Box>
-      <Box backgroundColor="brand.pink" color="brand.green" flex="1" py="6">
+      <Box backgroundColor="brand.pink" color="brand.darkGreen" flex="1" py="6">
         <Container maxWidth="container.md" px="2.5rem">
           {post.description && (
             <Box fontSize="2xl" mb="4">
@@ -149,7 +149,7 @@ const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
     <Flex
       flexDirection="column"
       minHeight="100vh"
-      background="brand.green"
+      background="brand.darkGreen"
       color="brand.pink"
       padding="2.5rem"
     >
