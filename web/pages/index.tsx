@@ -3,6 +3,7 @@ import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
+import { SiteFooter } from "../features/site-footer/SiteFooter";
 import { generateRss } from "../utils/rss";
 import { theme } from "../utils/theme";
 
@@ -12,40 +13,43 @@ const listOf24Days = Array(24)
 
 export default function HomePage() {
   return (
-    <Center flexDirection="column" backgroundColor="brand.darkGreen">
+    <Box>
       <SiteMetadata
         title="Bekk Christmas - advent calendars about technology, design and strategy"
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       />
-      <Heading as="h1" mt="80px" color="brand.lightPink" position="relative">
-        <Box
-          as="span"
-          fontSize="lg"
-          fontFamily="body"
-          fontWeight="400"
-          position="absolute"
-          top="0.1em"
-          left="3.4em"
+      <Center flexDirection="column" backgroundColor="brand.darkGreen">
+        <Heading as="h1" mt="80px" color="brand.lightPink" position="relative">
+          <Box
+            as="span"
+            fontSize="lg"
+            fontFamily="body"
+            fontWeight="400"
+            position="absolute"
+            top="0.1em"
+            left="3.4em"
+          >
+            Bekk
+          </Box>
+          <Box as="span" fontSize="72px" fontWeight="400">
+            Christmas
+          </Box>
+        </Heading>
+        <SimpleGrid
+          columns={[2, 2, 3, 4]}
+          gap={6}
+          my="40px"
+          width="100%"
+          maxWidth="872px"
+          px={6}
         >
-          Bekk
-        </Box>
-        <Box as="span" fontSize="72px" fontWeight="400">
-          Christmas
-        </Box>
-      </Heading>
-      <SimpleGrid
-        columns={[2, 2, 3, 4]}
-        gap={6}
-        my="40px"
-        width="100%"
-        maxWidth="872px"
-        px={6}
-      >
-        {listOf24Days.map((day) => (
-          <Day key={day} day={day} />
-        ))}
-      </SimpleGrid>
-    </Center>
+          {listOf24Days.map((day) => (
+            <Day key={day} day={day} />
+          ))}
+        </SimpleGrid>
+      </Center>
+      <SiteFooter />
+    </Box>
   );
 }
 
