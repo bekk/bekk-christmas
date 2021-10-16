@@ -85,12 +85,12 @@ export default function BlogPostPage({
         </Container>
       </Box>
       <Box backgroundColor="brand.pink" color="brand.green" flex="1" py="6">
-        {post.description && (
-          <Container maxWidth="container.md" fontSize="2xl" mb="4" px="2.5rem">
-            {post.description}
-          </Container>
-        )}
         <Container maxWidth="container.md" px="2.5rem">
+          {post.description && (
+            <Box fontSize="2xl" mb="4">
+              {post.description}
+            </Box>
+          )}
           <strong>
             {authors.length > 0
               ? new Intl.ListFormat("en").format(authors)
@@ -98,7 +98,7 @@ export default function BlogPostPage({
           </strong>{" "}
           – {availableFromDate.toLocaleDateString("nb-no")}
         </Container>
-        <Container maxWidth="container.md" mt="4" px={0} fontSize="20px">
+        <Container maxWidth="container.md" mt="4" px={0} fontSize="xl">
           {post.content ? (
             <PortableText blocks={post.content} />
           ) : (
