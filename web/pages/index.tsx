@@ -7,11 +7,12 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
+import { groq } from "next-sanity";
 import Link from "next/link";
 import React from "react";
 import { Layout } from "../features/layout/Layout";
-import { getAllTags, Tag } from "../utils/data";
 import { generateRss } from "../utils/rss";
+import { getClient } from "../utils/sanity/sanity.server";
 
 type HomePageProps = {
   tags: Tag[];
@@ -63,14 +64,22 @@ export default function HomePage({ tags }: HomePageProps) {
   );
 }
 
+type Tag = {
+  slug: string;
+  name: string;
+  synonyms: string[];
+};
+
 export const getStaticProps: GetStaticProps = async () => {
   // We generate a new RSS feed every time the index page is built.
   // This creates a new public/rss.xml file with the latest articles.
   await generateRss();
 
+  const tags = await getClient().fetch<Tag[]>(groq`*[_type == "tag"]`);
+
   return {
     props: {
-      tags: await getAllTags(),
+      tags,
     },
   };
 };

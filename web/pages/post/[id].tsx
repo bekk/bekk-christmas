@@ -7,7 +7,7 @@ import {
   IconButton,
   Text,
 } from "@chakra-ui/react";
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import Link from "next/link";
 import React from "react";
@@ -171,10 +171,10 @@ const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({
+export const getStaticProps = async ({
   params,
   preview = false,
-}) => {
+}: GetStaticPropsContext) => {
   const id = params.id as string;
   const query = groq`*[_type == 'post' && _id == $id] {
     ..., 
