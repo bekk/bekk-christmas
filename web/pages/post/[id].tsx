@@ -54,7 +54,10 @@ export default function BlogPostPage({
     return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
-  const authors = post.authors?.filter((author) => author) || [];
+  // TODO: Migrate all old authors to the new author format, with references
+  const authors = [...post.oldAuthors, ...post.newAuthors].filter(
+    (author) => author?.fullName
+  );
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <SiteMetadata
@@ -93,7 +96,9 @@ export default function BlogPostPage({
           )}
           <strong>
             {authors.length > 0
-              ? new Intl.ListFormat("en").format(authors)
+              ? new Intl.ListFormat("en").format(
+                  authors.map((author) => author.fullName)
+                )
               : "No authors"}
           </strong>{" "}
           – {availableFromDate.toLocaleDateString("nb-no")}
@@ -172,7 +177,8 @@ export const getStaticProps: GetStaticProps = async ({
   const id = params.id as string;
   const query = groq`*[_type == 'post' && _id == $id] {
     ..., 
-    "authors": authors[].fullName, 
+    "newAuthors": authors[]->{ fullName },
+    "oldAuthors": authors[],
     "tags": tags[]->.name
   }`;
   const allPosts = await getClient(preview).fetch<Post[]>(query, { id });
@@ -207,7 +213,8 @@ type Post = {
   title: string;
   description: string;
   content: any;
-  authors: string[];
+  newAuthors: { fullName: string }[];
+  oldAuthors: { fullName: string }[];
   tags: string[];
   coverImage?: string;
   availableFrom: string;
