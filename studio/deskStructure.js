@@ -21,4 +21,5 @@ export default () =>
       S.documentTypeListItem("post"),
       S.documentTypeListItem("author"),
       S.documentTypeListItem("tag"),
+      S.documentTypeListItem("page"),
     ]);
