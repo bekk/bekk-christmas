@@ -11,10 +11,12 @@ export const theme = extendTheme({
       darkGreen: "#005941",
       darkGreenTransparent: "00594180",
       pink: "#FFE0E0",
+      lightPink: "#F7DEDF",
       lightGreen: "#E3F0E5",
       red: "#BC3436",
       peach: "#EAA196",
       midGreen: "#447A67",
+      midGreenTransparent: "#447A6766",
     },
   },
 });
