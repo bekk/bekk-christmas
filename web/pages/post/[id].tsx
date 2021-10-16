@@ -128,6 +128,7 @@ export const getStaticProps = async ({
       query,
       queryParams: { id: id.replace("drafts.", "") },
     },
+    revalidate: 10,
   };
 };
 
@@ -138,7 +139,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   );
   return {
     paths: allPosts.map((post) => `/post/${post._id}`),
-    fallback: false,
+    fallback: "blocking",
   };
 };
 

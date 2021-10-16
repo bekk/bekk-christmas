@@ -70,6 +70,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({
       queryParams,
       preview,
     },
+    revalidate: 10,
   };
 };
 
@@ -82,6 +83,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   );
   return {
     paths: pages.map((page) => `/${page.slug.current}`),
-    fallback: false,
+    fallback: "blocking",
   };
 };

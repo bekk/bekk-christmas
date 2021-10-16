@@ -80,6 +80,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
       posts: await postsRequest,
       tag: await tagRequest,
     },
+    revalidate: 10,
   };
 };
 
@@ -92,6 +93,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   );
   return {
     paths: allTags.map((tag) => `/tag/${tag.slug}`),
-    fallback: false,
+    fallback: "blocking",
   };
 };
