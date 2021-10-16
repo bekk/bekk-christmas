@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   Container,
   Flex,
   Heading,
@@ -15,6 +16,7 @@ import { SiteMetadata } from "../../features/layout/SiteMetadata";
 import { PortableText } from "../../features/portable-text/PortableText";
 import {
   toPlainText,
+  urlFor,
   usePreviewSubscription,
 } from "../../utils/sanity/sanity.client";
 import {
@@ -49,12 +51,7 @@ export default function BlogPostPage({
   const isAvailable = preview || availableFromDate < new Date();
 
   if (!isAvailable) {
-    return (
-      <Text>
-        This article is not yet available. Check back at{" "}
-        {availableFromDate.toLocaleDateString("nb-no")}
-      </Text>
-    );
+    return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
   const authors = post.authors?.filter((author) => author) || [];
@@ -63,6 +60,7 @@ export default function BlogPostPage({
       <SiteMetadata
         title={preview ? `${post.title} [preview]` : post.title}
         description={post.description}
+        image={getImageUrl(post.coverImage)}
         author={authors.join(", ")}
       />
       <Box
@@ -73,26 +71,7 @@ export default function BlogPostPage({
       >
         <Container maxWidth="container.md" padding="2.5rem">
           <Flex>
-            <Link href="/" passHref>
-              <IconButton
-                as="a"
-                href="/"
-                aria-label={`See more posts for December ${availableFromDate.toLocaleDateString()}`}
-                title={`See more posts for December ${availableFromDate.toLocaleDateString()}`}
-                variant="outline"
-                colorScheme="white"
-              >
-                <Box
-                  width="0.7em"
-                  height="0.7em"
-                  borderLeft="1px solid currentColor"
-                  borderTop="1px solid currentColor"
-                  transform="rotate(-45deg)"
-                  position="relative"
-                  left="0.2em"
-                />
-              </IconButton>
-            </Link>
+            <BackButton />
             <Box flex="1" fontSize="24px" ml="4" color="white">
               Article
             </Box>
@@ -107,17 +86,11 @@ export default function BlogPostPage({
       </Box>
       <Box backgroundColor="brand.pink" color="brand.green" flex="1" py="6">
         {post.description && (
-          <Container
-            maxWidth="container.md"
-            textAlign={["left", "center"]}
-            fontSize="2xl"
-            mb="4"
-            px="2.5rem"
-          >
+          <Container maxWidth="container.md" fontSize="2xl" mb="4" px="2.5rem">
             {post.description}
           </Container>
         )}
-        <Container maxWidth="container.md" textAlign="center">
+        <Container maxWidth="container.md" px="2.5rem">
           <strong>
             {authors.length > 0
               ? new Intl.ListFormat("en").format(authors)
@@ -136,6 +109,61 @@ export default function BlogPostPage({
     </Flex>
   );
 }
+
+const BackButton = () => {
+  return (
+    <Link href="/" passHref>
+      <IconButton
+        as="a"
+        href="/"
+        aria-label="Back to blog"
+        title="Back to blog"
+        variant="outline"
+        colorScheme="white"
+      >
+        <Box
+          width="0.7em"
+          height="0.7em"
+          borderLeft="1px solid currentColor"
+          borderTop="1px solid currentColor"
+          transform="rotate(-45deg)"
+          position="relative"
+          left="0.2em"
+        />
+      </IconButton>
+    </Link>
+  );
+};
+
+type NotAvailableYetProps = {
+  availableFrom?: Date;
+};
+const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
+  return (
+    <Flex
+      flexDirection="column"
+      minHeight="100vh"
+      background="brand.green"
+      color="brand.pink"
+      padding="2.5rem"
+    >
+      <Container maxWidth="container.md">
+        <BackButton />
+      </Container>
+      <Center textAlign="center" flex="1">
+        <Box>
+          <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
+            This post is not available yet.
+          </Heading>
+          <Text fontSize="xl">
+            This article is not yet available. Check back at{" "}
+            {availableFrom.toLocaleDateString("nb-no")}
+          </Text>
+        </Box>
+      </Center>
+    </Flex>
+  );
+};
 
 export const getStaticProps: GetStaticProps = async ({
   params,
@@ -183,4 +211,14 @@ type Post = {
   tags: string[];
   coverImage?: string;
   availableFrom: string;
+};
+
+const getImageUrl = (image: any) => {
+  if (!image) {
+    return null;
+  }
+  if (typeof image.src === "string") {
+    return image.src;
+  }
+  return urlFor(image).width(1200).url();
 };
