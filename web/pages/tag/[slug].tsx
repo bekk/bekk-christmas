@@ -16,8 +16,8 @@ export default function Tag({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout
-      title={`Posts tagged with "${tag.title}" | Bekk Christmas`}
-      description={`Discover posts tagged with "${tag.title}"`}
+      title={`Posts tagged with "${tag.name}" | Bekk Christmas`}
+      description={`Discover posts tagged with "${tag.name}"`}
       keywords={[
         "tech",
         "technology",
@@ -27,12 +27,12 @@ export default function Tag({
         "strategy",
         "business",
         "articles",
-        tag.title,
+        tag.name,
         ...(tag.synonyms || []),
       ]}
     >
       <Stack as="section" mb={12} maxWidth="container.lg" mx="auto">
-        <Heading>All posts in {tag.title}</Heading>
+        <Heading>All posts in {tag.name}</Heading>
         <UnorderedList>
           {posts.map(({ title, id }) => (
             <ListItem key={title}>
@@ -50,30 +50,35 @@ type Post = {
   title: string;
 };
 type Tag = {
-  title: string;
+  name: string;
   synonyms: string[];
 };
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const { slug = "" } = context.params;
 
+  const client = getClient();
+
+  const postsRequest = client.fetch<Post[]>(
+    groq`*[
+      _type == "post" 
+      && references(*[_type == "tag" && slug == $slug]._id)] 
+      { 
+        "id": _id, 
+        title,
+      }`,
+    { slug }
+  );
+  const tagRequest = client.fetch<Tag>(
+    groq`*[_type == "tag" && slug == $slug] 
+    { name, synonyms }[0]`,
+    { slug }
+  );
+
   return {
     props: {
-      posts: await getClient().fetch<Post[]>(
-        groq`*[
-          _type == "post" 
-          && references(*[_type == "tag" && slug == "${slug}"]._id)] 
-          { 
-            "id": _id, 
-            title
-          }`,
-        { slug }
-      ),
-      tag: await getClient().fetch<Tag>(
-        groq`*[_type == "tag" && slug == "${slug}"] 
-        { title, synonyms }`,
-        { slug }
-      ),
+      posts: await postsRequest,
+      tag: await tagRequest,
     },
   };
 };
