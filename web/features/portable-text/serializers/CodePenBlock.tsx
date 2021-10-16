@@ -4,7 +4,7 @@ export const CodePenBlock = ({ node }: any) => {
   if (!node || !node.url) {
     return null;
   }
-  const url = new URL(node.url);
+  const url = new URL(node.url || node.src);
   if (url.hostname !== "codepen.io") {
     console.error(
       `The URL provided was not a CodePen URL. Instead, it was "${url}"`

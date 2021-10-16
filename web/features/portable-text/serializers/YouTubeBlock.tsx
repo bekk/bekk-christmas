@@ -8,7 +8,7 @@ export const YouTubeBlock = ({ node }: any) => {
   if (!node) {
     return null;
   }
-  const id = getYouTubeId(node?.url); // shivvers..
+  const id = getYouTubeId(node.url || node.src);
   return (
     <Box boxShadow="lg">
       <YouTube videoId={id as string} opts={{ width: "100%", height }} />

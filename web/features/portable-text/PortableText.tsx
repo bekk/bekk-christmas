@@ -13,6 +13,7 @@ import { BlockBlock } from "./serializers/BlockBlock";
 import { CodeBlock } from "./serializers/CodeBlock";
 import { CodePenBlock } from "./serializers/CodePenBlock";
 import { CodeSandboxBlock } from "./serializers/CodeSandboxBlock";
+import { IframeBlock } from "./serializers/IframeBlock";
 import { ImageBlock } from "./serializers/ImageBlock";
 import { TwitterBlock } from "./serializers/TwitterBlock";
 import { YouTubeBlock } from "./serializers/YouTubeBlock";
@@ -42,6 +43,18 @@ const serializers = {
     youtube: withWrap("wide")(YouTubeBlock),
     twitter: withWrap("wide")(TwitterBlock),
     mainImage: withWrap("wide")(ImageBlock),
+    iframe: withWrap("wide")(IframeBlock),
+    image: withWrap("wide")(ImageBlock),
+    __block: ({ node }) => {
+      if (node.block?._type === "image") {
+        return <ImageBlock node={node} />;
+      }
+      if (node.block?._type === "code") {
+        return <CodeBlock node={node} />;
+      }
+      console.log("unhandled __block found", node);
+      return null;
+    },
   },
   marks: {
     link: (props: any) => (

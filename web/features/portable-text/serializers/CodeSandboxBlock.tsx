@@ -4,7 +4,7 @@ export const CodeSandboxBlock = ({ node }: any) => {
   if (!node?.url) {
     return null;
   }
-  const url = new URL(node.url);
+  const url = new URL(node.url || node.src);
   if (url.hostname !== "codesandbox.io") {
     console.error(
       `The URL provided was not a Code Sandbox URL. Instead, it was "${url}"`

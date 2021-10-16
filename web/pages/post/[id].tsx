@@ -55,9 +55,10 @@ export default function BlogPostPage({
   }
 
   // TODO: Migrate all old authors to the new author format, with references
-  const authors = [...post.oldAuthors, ...post.newAuthors].filter(
-    (author) => author?.fullName
-  );
+  const authors = [
+    ...(post.oldAuthors || []),
+    ...(post.newAuthors || []),
+  ].filter((author) => author?.fullName);
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <SiteMetadata
