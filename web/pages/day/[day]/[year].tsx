@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
+import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
 import { ArticleBackButton } from "../../../features/article/ArticleBackButton";
@@ -69,36 +70,42 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
           </Center>
         </GridItem>
         {posts.map((post, index) => (
-          <GridItem
-            key={post._id}
-            backgroundColor={
-              colorCombinations[index % colorCombinations.length].background
-            }
-            color={
-              colorCombinations[index % colorCombinations.length].foreground
-            }
-            p={10}
-            pb={6}
-            position="relative"
-            minWidth="368px"
-          >
-            <Text mb="24px">{readingTime(toPlainText(post.content)).text}</Text>
-            <Heading as="h2" fontWeight="400" fontSize="48px" lineHeight="54px">
-              {post.title}
-            </Heading>
-            <ArrowIcon
-              position="absolute"
-              bottom="24px"
-              right="24px"
-              width="24px"
-              height="16px"
-            />
-          </GridItem>
+          <ArticleGridItem key={post._id} post={post} index={index} />
         ))}
       </Grid>
     </Box>
   );
 }
+
+const ArticleGridItem = ({ post, index }) => {
+  return (
+    <Link key={post._id} href={`/post/${post._id}`} passHref>
+      <GridItem
+        as="a"
+        backgroundColor={
+          colorCombinations[index % colorCombinations.length].background
+        }
+        color={colorCombinations[index % colorCombinations.length].foreground}
+        p={10}
+        pb={6}
+        position="relative"
+        minWidth="368px"
+      >
+        <Text mb="24px">{readingTime(toPlainText(post.content)).text}</Text>
+        <Heading as="h2" fontWeight="400" fontSize="48px" lineHeight="54px">
+          {post.title}
+        </Heading>
+        <ArrowIcon
+          position="absolute"
+          bottom="24px"
+          right="24px"
+          width="24px"
+          height="16px"
+        />
+      </GridItem>
+    </Link>
+  );
+};
 
 const ArrowIcon = (props: BoxProps) => {
   return (

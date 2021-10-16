@@ -46,7 +46,7 @@ export default function HomePage() {
           px={6}
         >
           {listOf24Days.map((day) => (
-            <Day key={day} day={day} />
+            <Day key={day} day={day} year={2020} />
           ))}
         </SimpleGrid>
       </Center>
@@ -57,17 +57,17 @@ export default function HomePage() {
 
 type DayProps = {
   day: number;
+  year: number;
 };
-function Day({ day }: DayProps) {
+function Day({ day, year }: DayProps) {
   const colors = colorCombinations[(day - 1) % colorCombinations.length];
   const degreeTable = [-1.5, -0.75, 0.75, 1.5];
   const daysToDecorateWithSnow = [4, 5, 11, 19, 24];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
-    <Link href={`/day/${day}`} passHref>
+    <Link href={`/day/${day}/${year}`} passHref>
       <Center
         as="a"
-        href={`/day/${day}`}
         backgroundColor={colors.background}
         color={colors.foreground}
         width="100%"
