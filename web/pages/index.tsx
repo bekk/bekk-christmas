@@ -1,5 +1,4 @@
-import { Center, Heading, SimpleGrid } from "@chakra-ui/react";
-import { GetStaticProps } from "next";
+import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
@@ -17,18 +16,30 @@ export default function HomePage() {
         title="Bekk Christmas - advent calendars about technology, design and strategy"
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       />
-      <Heading
-        as="h1"
-        fontSize="56px"
-        lineHeight="66px"
-        fontWeight="400"
-        paddingBottom={20}
-        paddingTop={60}
-        color={"brand.lightPink"}
-      >
-        The Day
+      <Heading as="h1" mt="80px" color="brand.lightPink" position="relative">
+        <Box
+          as="span"
+          fontSize="lg"
+          fontFamily="body"
+          fontWeight="400"
+          position="absolute"
+          top="0.1em"
+          left="3.4em"
+        >
+          Bekk
+        </Box>
+        <Box as="span" fontSize="72px" fontWeight="400">
+          Christmas
+        </Box>
       </Heading>
-      <SimpleGrid columns={[1, 2, 3, 4]} gap={6}>
+      <SimpleGrid
+        columns={[2, 2, 3, 4]}
+        gap={6}
+        my="40px"
+        width="100%"
+        maxWidth="872px"
+        px={6}
+      >
         {listOf24Days.map((day) => (
           <Day key={day} day={day} />
         ))}
@@ -49,7 +60,8 @@ function Day({ day }: DayProps) {
         href={`/day/${day}`}
         backgroundColor={colors.background}
         color={colors.foreground}
-        width="200px"
+        width="100%"
+        maxWidth="200px"
         height="200px"
       >
         <Heading
