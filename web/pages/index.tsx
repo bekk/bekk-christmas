@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <Center flexDirection={"column"} backgroundColor={"brand.darkGreen"}>
       <SiteMetadata
-        title="Bekk Christmas - advent calendars about tech, design and strategy"
+        title="Bekk Christmas - advent calendars about technology, design and strategy"
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       />
       <Heading
@@ -35,19 +35,27 @@ export default function HomePage() {
   );
 }
 
-function Day({ day }: { day: number }) {
-  const colors = randomColors();
+type DayProps = {
+  day: number;
+};
+function Day({ day }: DayProps) {
+  const colors = colorCombinations[(day - 1) % colorCombinations.length];
   return (
     <Link href={`/day/${day}`} passHref>
       <Center
         as="a"
         href={`/day/${day}`}
         backgroundColor={colors.background}
-        color={colors.number}
+        color={colors.foreground}
         width="200px"
         height="200px"
       >
-        <Heading as="h2" fontSize={100}>
+        <Heading
+          as="h2"
+          fontSize="100px"
+          fontWeight="400"
+          aria-label={`See the articles for day ${day}`}
+        >
           {day}
         </Heading>
       </Center>
@@ -57,38 +65,36 @@ function Day({ day }: { day: number }) {
 
 type DayColors = {
   background: string;
-  number: string;
+  foreground: string;
 };
 
 // TODO Missing or wrong combos. I'm color blind give me a break
 const colorCombinations: DayColors[] = [
   {
     background: theme.colors.brand.midGreen,
-    number: theme.colors.brand.lightPink,
+    foreground: theme.colors.brand.lightPink,
   },
   {
     background: theme.colors.brand.lightPink,
-    number: theme.colors.brand.midGreen,
+    foreground: theme.colors.brand.midGreen,
   },
   {
     background: theme.colors.brand.lightGreen,
-    number: theme.colors.brand.midGreenTransparent,
+    foreground: theme.colors.brand.midGreenTransparent,
   },
-  { background: theme.colors.brand.red, number: theme.colors.brand.lightPink },
+  {
+    background: theme.colors.brand.red,
+    foreground: theme.colors.brand.lightPink,
+  },
   {
     background: theme.colors.brand.peach,
-    number: theme.colors.brand.midGreen,
+    foreground: theme.colors.brand.midGreen,
   },
   {
     background: theme.colors.brand.lightGreen,
-    number: theme.colors.brand.midGreen,
+    foreground: theme.colors.brand.midGreen,
   },
 ];
-
-function randomColors(): DayColors {
-  const randomIndex = Math.floor(Math.random() * colorCombinations.length);
-  return colorCombinations[randomIndex];
-}
 
 export const getStaticProps: GetStaticProps = async () => {
   // We generate a new RSS feed every time the index page is built.
