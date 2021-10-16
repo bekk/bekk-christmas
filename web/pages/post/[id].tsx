@@ -1,22 +1,12 @@
-import {
-  Box,
-  Center,
-  Container,
-  Flex,
-  Heading,
-  IconButton,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
-import Link from "next/link";
 import React from "react";
-import readingTime from "reading-time";
+import { Article } from "../../features/article/Article";
+import { ArticleBackButton } from "../../features/article/ArticleBackButton";
 import { SiteMetadata } from "../../features/layout/SiteMetadata";
-import { PortableText } from "../../features/portable-text/PortableText";
 import { SiteFooter } from "../../features/site-footer/SiteFooter";
 import {
-  toPlainText,
   urlFor,
   usePreviewSubscription,
 } from "../../utils/sanity/sanity.client";
@@ -61,86 +51,25 @@ export default function BlogPostPage({
     ...(post.newAuthors || []),
   ].filter((author) => author?.fullName);
   return (
-    <Flex minHeight="100vh" flexDirection="column">
+    <>
       <SiteMetadata
         title={preview ? `${post.title} [preview]` : post.title}
         description={post.description}
         image={getImageUrl(post.coverImage)}
         author={authors.join(", ")}
       />
-      <Box
-        as="header"
-        background="brand.darkGreen"
-        color="brand.pink"
-        minHeight="33vh"
-      >
-        <Container maxWidth="container.md" padding="2.5rem">
-          <Flex>
-            <BackButton />
-            <Box flex="1" fontSize="24px" ml="4" color="white">
-              Article
-            </Box>
-          </Flex>
-          <Box marginTop="10">
-            {readingTime(toPlainText(post.content)).text}
-          </Box>
-          <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
-            {post.title ?? "No title yet"}
-          </Heading>
-        </Container>
-      </Box>
-      <Box backgroundColor="brand.pink" color="brand.darkGreen" flex="1" py="6">
-        <Container maxWidth="container.md" px="2.5rem">
-          {post.description && (
-            <Box fontSize="2xl" mb="4">
-              {post.description}
-            </Box>
-          )}
-          <strong>
-            {authors.length > 0
-              ? new Intl.ListFormat("en").format(
-                  authors.map((author) => author.fullName)
-                )
-              : "No authors"}
-          </strong>{" "}
-          – {availableFromDate.toLocaleDateString("nb-no")}
-        </Container>
-        <Container maxWidth="container.md" mt="4" px={0} fontSize="xl">
-          {post.content ? (
-            <PortableText blocks={post.content} />
-          ) : (
-            <Text>No content</Text>
-          )}
-        </Container>
-      </Box>
-    </Flex>
+      <Article
+        title={post.title}
+        description={post.description}
+        category="Article"
+        content={post.content}
+        publishedAt={availableFromDate}
+        authors={authors}
+        showReadingTime
+      />
+    </>
   );
 }
-
-const BackButton = () => {
-  return (
-    <Link href="/" passHref>
-      <IconButton
-        as="a"
-        href="/"
-        aria-label="Back to blog"
-        title="Back to blog"
-        variant="outline"
-        colorScheme="white"
-      >
-        <Box
-          width="0.7em"
-          height="0.7em"
-          borderLeft="1px solid currentColor"
-          borderTop="1px solid currentColor"
-          transform="rotate(-45deg)"
-          position="relative"
-          left="0.2em"
-        />
-      </IconButton>
-    </Link>
-  );
-};
 
 type NotAvailableYetProps = {
   availableFrom?: Date;
@@ -156,7 +85,7 @@ const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
         padding="2.5rem"
       >
         <Container maxWidth="container.md">
-          <BackButton />
+          <ArticleBackButton />
         </Container>
         <Center textAlign="center" flex="1">
           <Box>
