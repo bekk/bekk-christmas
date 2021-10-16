@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { SiteFooter } from "../features/site-footer/SiteFooter";
+import { Snowfall } from "../features/snowfall/Snowfall";
 import { generateRss } from "../utils/rss";
 import { theme } from "../utils/theme";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       />
       <Center flexDirection="column" backgroundColor="brand.darkGreen">
+        <Snowfall />
         <Heading as="h1" mt="80px" color="brand.lightPink" position="relative">
           <Box
             as="span"
