@@ -3,36 +3,61 @@ import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../features/article/Article";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
-import { getClient } from "../utils/sanity/sanity.server";
+import { usePreviewSubscription } from "../utils/sanity/sanity.client";
+import {
+  filterDataToSingleItem,
+  getClient,
+} from "../utils/sanity/sanity.server";
 
 type PageProps = {
-  title: string;
-  description: string;
-  content: unknown[];
+  query: string;
+  queryParams: { slug: string };
+  preview: boolean;
+  data: {
+    slug: string;
+    title: string;
+    description: string;
+    content: unknown[];
+  };
 };
-export default function Page({ title, description, content }: PageProps) {
+export default function Page({
+  data: initialData,
+  query,
+  queryParams,
+  preview,
+}: PageProps) {
+  const { data } = usePreviewSubscription(query, {
+    params: queryParams,
+    initialData: [initialData],
+    enabled: preview,
+  });
+
+  const [post] = data;
   return (
     <>
       <SiteMetadata
-        title={`${title} | Bekk Christmas`}
-        description={description}
+        title={`${post.title} | Bekk Christmas`}
+        description={post.description}
       />
       <Article
-        title={title}
+        title={post.title}
         category="Info"
-        description={description}
-        content={content}
+        description={post.description}
+        content={post.content}
       />
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<PageProps> = async ({
+  params,
+  preview = false,
+}) => {
   const slug = params.slug as string;
-  const page = await getClient().fetch(
-    groq`*[_type == "page" && slug.current == $slug][0]`,
-    { slug }
-  );
+  const query = groq`*[_type == "page" && slug.current == $slug]`;
+  const queryParams = { slug };
+  const response = await getClient().fetch(query, queryParams);
+  const page = filterDataToSingleItem(response, preview);
   if (!page) {
     return {
       notFound: true,
@@ -40,20 +65,23 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
   }
   return {
     props: {
-      ...page,
+      data: page,
+      query,
+      queryParams,
+      preview,
     },
   };
 };
 
 type Page = {
-  slug: string;
+  slug: { current: string };
 };
 export const getStaticPaths: GetStaticPaths = async () => {
   const pages = await getClient().fetch<Page[]>(
     groq`*[_type == 'page'] { slug }`
   );
   return {
-    paths: pages.map((page) => `/${page.slug}`),
+    paths: pages.map((page) => `/${page.slug.current}`),
     fallback: false,
   };
 };
