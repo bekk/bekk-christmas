@@ -14,6 +14,7 @@ import React from "react";
 import readingTime from "reading-time";
 import { SiteMetadata } from "../../features/layout/SiteMetadata";
 import { PortableText } from "../../features/portable-text/PortableText";
+import { SiteFooter } from "../../features/site-footer/SiteFooter";
 import {
   toPlainText,
   urlFor,
@@ -146,28 +147,31 @@ type NotAvailableYetProps = {
 };
 const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
   return (
-    <Flex
-      flexDirection="column"
-      minHeight="100vh"
-      background="brand.darkGreen"
-      color="brand.pink"
-      padding="2.5rem"
-    >
-      <Container maxWidth="container.md">
-        <BackButton />
-      </Container>
-      <Center textAlign="center" flex="1">
-        <Box>
-          <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
-            This post is not available yet.
-          </Heading>
-          <Text fontSize="xl">
-            This article is not yet available. Check back at{" "}
-            {availableFrom.toLocaleDateString("nb-no")}
-          </Text>
-        </Box>
-      </Center>
-    </Flex>
+    <Box>
+      <Flex
+        flexDirection="column"
+        minHeight="100vh"
+        background="brand.darkGreen"
+        color="brand.pink"
+        padding="2.5rem"
+      >
+        <Container maxWidth="container.md">
+          <BackButton />
+        </Container>
+        <Center textAlign="center" flex="1">
+          <Box>
+            <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
+              This post is not available yet.
+            </Heading>
+            <Text fontSize="xl">
+              This article is not yet available. Check back at{" "}
+              {availableFrom.toLocaleDateString("nb-no")}
+            </Text>
+          </Box>
+        </Center>
+      </Flex>
+      <SiteFooter />
+    </Box>
   );
 };
 
