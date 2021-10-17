@@ -50,13 +50,18 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
         description={`Check out all ${posts.length} posts from Bekk on day ${day} of the ${year} Christmas season`}
       />
       <Grid
-        overflowX={["scroll"]}
+        overflowX={["visible", "scroll"]}
         gridAutoFlow={["row", "column"]}
-        templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(6, 1fr)"
-        height="100vh"
+        templateRows={["repeat(12, 1fr)", "repeat(2, 1fr)"]}
+        templateColumns={["none", "repeat(6, 1fr)"]}
+        minHeight="100vh"
       >
-        <GridItem rowSpan={2} colSpan={3} minWidth="570px" position="relative">
+        <GridItem
+          rowSpan={2}
+          colSpan={[1, 3]}
+          minWidth="570px"
+          position="relative"
+        >
           <Center
             background="brand.midGreen"
             color="white"
@@ -66,7 +71,7 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
           >
             <ArticleBackButton position="absolute" top={10} left={10} />
             <Stack>
-              <Heading as="h1" fontWeight="400">
+              <Heading as="h1" fontWeight="400" mt={[10, 0]}>
                 Posts for day {day}, {year}
               </Heading>
               <Text fontSize="xl">
@@ -123,7 +128,7 @@ const ArticleGridItem = ({ post, year, day, index }: ArticleGridItemProps) => {
         p={10}
         pb={6}
         position="relative"
-        minWidth="368px"
+        minWidth={["100%", "368px"]}
       >
         <Text mb="24px">
           {readingTime(post.plaintextContent).text} –{" "}
@@ -158,7 +163,7 @@ const ArtworkGridItem = ({ index, post }: ArtworkGridItemProps) => {
       color={colorCombinations[index % colorCombinations.length].foreground}
       px={10}
       position="relative"
-      minWidth="368px"
+      minWidth={["100%", "368px"]}
     >
       <Image
         width="100%"
