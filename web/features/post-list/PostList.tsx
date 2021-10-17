@@ -2,7 +2,6 @@ import { Grid } from "@chakra-ui/react";
 import React from "react";
 import { ArticleItem, ArticlePostType } from "./ArticleItem";
 import { ArtworkItem, ArtworkPostType } from "./ArtworkItem";
-import { SummaryItem } from "./SummaryItem";
 
 type PostType = ArticlePostType | ArtworkPostType;
 
@@ -10,8 +9,9 @@ type PostListProps = {
   posts: ArticlePostType[];
   day: number;
   year: number;
+  children?: React.ReactNode;
 };
-export const PostList = ({ posts, day, year }: PostListProps) => {
+export const PostList = ({ posts, day, year, children }: PostListProps) => {
   const postsWithIllustrations = decorateWithArtworkEntries(posts);
   return (
     <Grid
@@ -21,7 +21,7 @@ export const PostList = ({ posts, day, year }: PostListProps) => {
       templateColumns={["none", "repeat(6, 1fr)"]}
       minHeight="100vh"
     >
-      <SummaryItem day={day} year={year} posts={posts} />
+      {children}
       {postsWithIllustrations.map((post, index) => {
         switch (post._type) {
           case "post":

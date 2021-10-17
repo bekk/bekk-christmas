@@ -4,6 +4,7 @@ import { groq } from "next-sanity";
 import React from "react";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { PostList } from "../../../../features/post-list/PostList";
+import { PostSummaryItem } from "../../../../features/post-list/PostSummaryItem";
 import { toDayYear } from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
@@ -27,7 +28,9 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
         title={`Posts for day ${day}, ${year}`}
         description={`Check out all ${posts.length} posts from Bekk on day ${day} of the ${year} Christmas season`}
       />
-      <PostList posts={posts} day={day} year={year} />
+      <PostList posts={posts} day={day} year={year}>
+        <PostSummaryItem day={day} year={year} posts={posts} />
+      </PostList>
     </Box>
   );
 }
