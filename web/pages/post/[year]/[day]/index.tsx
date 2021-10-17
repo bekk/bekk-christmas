@@ -6,6 +6,7 @@ import {
   GridItem,
   Heading,
   Image,
+  ImageProps,
   ListItem,
   OrderedList,
   Stack,
@@ -19,11 +20,24 @@ import readingTime from "reading-time";
 import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { getClient } from "../../../../utils/sanity/sanity.server";
-import { toPlainText } from "../../../../utils/sanity/utils";
 import { theme } from "../../../../utils/theme";
 
+type ArticlePostType = {
+  _id: string;
+  _type: "post";
+  title: string;
+  plaintextContent: string;
+  tags: { name: string; slug: string }[];
+};
+
+type ArtworkPostType = ImageProps & {
+  _type: "artwork";
+  src: string;
+  alt: string;
+};
+
 type PostsForDayProps = {
-  posts: any[];
+  posts: ArticlePostType[];
   day: number;
   year: number;
 };
@@ -63,7 +77,6 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
                 {posts.map((post) => (
                   <ListItem key={post._id}>{post.title}</ListItem>
                 ))}
-                <ListItem fontWeight="bold">golden riiiiiings</ListItem>
               </OrderedList>
               <Text fontSize="xl">Dig in!</Text>
             </Stack>
@@ -73,11 +86,18 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
           switch (post._type) {
             case "post":
               return (
-                <ArticleGridItem key={post._id} post={post} index={index} />
+                <ArticleGridItem
+                  key={post._id}
+                  post={post}
+                  year={year}
+                  day={day}
+                  index={index}
+                />
               );
             case "artwork":
               return <ArtworkGridItem key={index} post={post} index={index} />;
             default:
+              console.log("Unknown _type found", post);
               throw Error("Unknown post type found");
           }
         })}
@@ -85,54 +105,15 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
     </Box>
   );
 }
-
-const decorateWithArtworkEntries = (posts: PostsForDayProps["posts"]) => {
-  const copyOfPosts = [...posts];
-  const arts = [
-    {
-      index: 2,
-      src: "/illustrations/branch-with-white-berries.svg",
-      alt: "A branch with white berries",
-    },
-    {
-      index: 5,
-      src: "/illustrations/man-working-at-computer.svg",
-      alt: "A man working at his computer",
-    },
-    {
-      index: 8,
-      src: "/illustrations/man-looking-at-phone.svg",
-      alt: "A man looking at his phone",
-    },
-    {
-      index: 11,
-      src: "/illustrations/branch-with-white-berries.svg",
-      alt: "A branch with white berries",
-    },
-    {
-      index: 14,
-      src: "/illustrations/man-and-woman-looking-at-phones.svg",
-      alt: "A man and a woman, looking at their phones.",
-    },
-  ];
-  arts.forEach((art) => {
-    if (art.index <= copyOfPosts.length) {
-      copyOfPosts.splice(art.index, 0, {
-        _type: "artwork",
-        src: art.src,
-      });
-    }
-  });
-  return copyOfPosts;
-};
-
 type ArticleGridItemProps = {
-  post: any;
+  post: ArticlePostType;
+  year: number;
+  day: number;
   index: number;
 };
-const ArticleGridItem = ({ post, index }: ArticleGridItemProps) => {
+const ArticleGridItem = ({ post, year, day, index }: ArticleGridItemProps) => {
   return (
-    <Link key={post._id} href={`/post/${post._id}`} passHref>
+    <Link key={post._id} href={`/post/${year}/${day}/${post._id}`} passHref>
       <GridItem
         as="a"
         backgroundColor={
@@ -144,7 +125,10 @@ const ArticleGridItem = ({ post, index }: ArticleGridItemProps) => {
         position="relative"
         minWidth="368px"
       >
-        <Text mb="24px">{readingTime(toPlainText(post.content)).text}</Text>
+        <Text mb="24px">
+          {readingTime(post.plaintextContent).text} –{" "}
+          {post.tags.map((tag) => tag.name).join(", ")}
+        </Text>
         <Heading as="h2" fontWeight="400" fontSize="48px" lineHeight="54px">
           {post.title}
         </Heading>
@@ -161,10 +145,11 @@ const ArticleGridItem = ({ post, index }: ArticleGridItemProps) => {
 };
 
 type ArtworkGridItemProps = {
-  post: { _type: "artwork"; src: string; alt: string };
+  post: ArtworkPostType;
   index: number;
 };
 const ArtworkGridItem = ({ index, post }: ArtworkGridItemProps) => {
+  const { _type, ...imageProps } = post;
   return (
     <GridItem
       backgroundColor={
@@ -176,14 +161,57 @@ const ArtworkGridItem = ({ index, post }: ArtworkGridItemProps) => {
       minWidth="368px"
     >
       <Image
-        src={post.src}
-        alt={post.alt}
         width="100%"
         maxHeight="300px"
         objectFit="contain"
+        alt={imageProps.alt /*To avoid an eslint error */}
+        {...imageProps}
       />
     </GridItem>
   );
+};
+
+const decorateWithArtworkEntries = (posts: PostsForDayProps["posts"]) => {
+  const copyOfPosts: (ArticlePostType | ArtworkPostType)[] = [...posts];
+  const arts = [
+    {
+      index: 2,
+      src: "/illustrations/branch-with-white-berries.svg",
+      alt: "A branch with white berries",
+    },
+    {
+      index: 5,
+      src: "/illustrations/man-working-at-computer.svg",
+      alt: "A man working at his computer",
+      mt: "40px",
+    },
+    {
+      index: 8,
+      src: "/illustrations/man-looking-at-phone.svg",
+      alt: "A man looking at his phone",
+      mt: "40px",
+    },
+    {
+      index: 11,
+      src: "/illustrations/branch-with-white-berries.svg",
+      alt: "A branch with white berries",
+    },
+    {
+      index: 14,
+      src: "/illustrations/man-and-woman-looking-at-phones.svg",
+      alt: "A man and a woman, looking at their phones.",
+      mt: "40px",
+    },
+  ];
+  arts.forEach(({ index, ...artProps }) => {
+    if (index <= copyOfPosts.length) {
+      copyOfPosts.splice(index, 0, {
+        _type: "artwork",
+        ...artProps,
+      });
+    }
+  });
+  return copyOfPosts;
 };
 
 const colorCombinations = [
@@ -264,6 +292,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 const FIRST_DAY_OF_CHRISTMAS = 1;
 const LAST_DAY_OF_CHRISTMAS = 24;
 const FIRST_CONTENT_YEAR = 2016;
+// TODO: This should probably be calculated from the latest post
 const LATEST_CONTENT_YEAR = 2021;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
@@ -281,7 +310,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const endOfDay = new Date(year, 11, day, 23, 59, 59);
 
   const postsPublishedForDay = await getClient().fetch(
-    groq`*[_type == "post" && availableFrom >= $beginningOfDay && availableFrom < $endOfDay]`,
+    groq`*[_type == "post" 
+    && availableFrom >= $beginningOfDay 
+    && availableFrom < $endOfDay] {
+       _id, 
+      _type,
+      title, 
+      "plaintextContent": pt::text(content), 
+      tags[]->{ name, slug }
+      }`,
     { beginningOfDay, endOfDay }
   );
 
