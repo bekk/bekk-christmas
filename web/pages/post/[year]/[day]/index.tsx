@@ -5,6 +5,7 @@ import {
   Grid,
   GridItem,
   Heading,
+  Image,
   ListItem,
   OrderedList,
   Stack,
@@ -27,8 +28,7 @@ type PostsForDayProps = {
   year: number;
 };
 export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
-  // TODO: Add illustrations
-
+  const postsWithIllustrations = decorateWithArtworkEntries(posts);
   return (
     <Box>
       <SiteMetadata
@@ -69,15 +69,68 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
             </Stack>
           </Center>
         </GridItem>
-        {posts.map((post, index) => (
-          <ArticleGridItem key={post._id} post={post} index={index} />
-        ))}
+        {postsWithIllustrations.map((post, index) => {
+          switch (post._type) {
+            case "post":
+              return (
+                <ArticleGridItem key={post._id} post={post} index={index} />
+              );
+            case "artwork":
+              return <ArtworkGridItem key={index} post={post} index={index} />;
+            default:
+              throw Error("Unknown post type found");
+          }
+        })}
       </Grid>
     </Box>
   );
 }
 
-const ArticleGridItem = ({ post, index }) => {
+const decorateWithArtworkEntries = (posts: PostsForDayProps["posts"]) => {
+  const copyOfPosts = [...posts];
+  const arts = [
+    {
+      index: 2,
+      src: "/illustrations/branch-with-white-berries.svg",
+      alt: "A branch with white berries",
+    },
+    {
+      index: 5,
+      src: "/illustrations/man-working-at-computer.svg",
+      alt: "A man working at his computer",
+    },
+    {
+      index: 8,
+      src: "/illustrations/man-looking-at-phone.svg",
+      alt: "A man looking at his phone",
+    },
+    {
+      index: 11,
+      src: "/illustrations/branch-with-white-berries.svg",
+      alt: "A branch with white berries",
+    },
+    {
+      index: 14,
+      src: "/illustrations/man-and-woman-looking-at-phones.svg",
+      alt: "A man and a woman, looking at their phones.",
+    },
+  ];
+  arts.forEach((art) => {
+    if (art.index <= copyOfPosts.length) {
+      copyOfPosts.splice(art.index, 0, {
+        _type: "artwork",
+        src: art.src,
+      });
+    }
+  });
+  return copyOfPosts;
+};
+
+type ArticleGridItemProps = {
+  post: any;
+  index: number;
+};
+const ArticleGridItem = ({ post, index }: ArticleGridItemProps) => {
   return (
     <Link key={post._id} href={`/post/${post._id}`} passHref>
       <GridItem
@@ -104,6 +157,32 @@ const ArticleGridItem = ({ post, index }) => {
         />
       </GridItem>
     </Link>
+  );
+};
+
+type ArtworkGridItemProps = {
+  post: { _type: "artwork"; src: string; alt: string };
+  index: number;
+};
+const ArtworkGridItem = ({ index, post }: ArtworkGridItemProps) => {
+  return (
+    <GridItem
+      backgroundColor={
+        colorCombinations[index % colorCombinations.length].background
+      }
+      color={colorCombinations[index % colorCombinations.length].foreground}
+      px={10}
+      position="relative"
+      minWidth="368px"
+    >
+      <Image
+        src={post.src}
+        alt={post.alt}
+        width="100%"
+        maxHeight="300px"
+        objectFit="contain"
+      />
+    </GridItem>
   );
 };
 
