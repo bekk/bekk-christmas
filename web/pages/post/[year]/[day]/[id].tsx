@@ -2,18 +2,16 @@ import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { Article } from "../../features/article/Article";
-import { ArticleBackButton } from "../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../features/site-footer/SiteFooter";
-import {
-  urlFor,
-  usePreviewSubscription,
-} from "../../utils/sanity/sanity.client";
+import { Article } from "../../../../features/article/Article";
+import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
+import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
+import { SiteFooter } from "../../../../features/site-footer/SiteFooter";
+import { usePreviewSubscription } from "../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
   getClient,
-} from "../../utils/sanity/sanity.server";
+} from "../../../../utils/sanity/sanity.server";
+import { urlFor } from "../../../../utils/sanity/utils";
 
 type BlogPostPageProps = {
   data: Post;
@@ -45,18 +43,14 @@ export default function BlogPostPage({
     return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
-  // TODO: Migrate all old authors to the new author format, with references
-  const authors = [
-    ...(post.oldAuthors || []),
-    ...(post.newAuthors || []),
-  ].filter((author) => author?.fullName);
+  const authors = normalizeAuthors(post);
   return (
     <>
       <SiteMetadata
         title={preview ? `${post.title} [preview]` : post.title}
         description={post.description}
         image={getImageUrl(post.coverImage)}
-        author={authors.join(", ")}
+        author={authors.map((author) => author.fullName).join(", ")}
       />
       <Article
         title={post.title}
@@ -70,6 +64,19 @@ export default function BlogPostPage({
     </>
   );
 }
+
+/** We have two different types of authors, legacy ones and "new" ones.
+ *
+ * The legacy ones are regular objects, while the new ones are references to
+ * author documents. In order to access them together, we need to do this little trick.
+ *
+ * // TODO: Normalize the actual author data to the new format,
+ * // and remove this function
+ */
+const normalizeAuthors = (post: Post) =>
+  [...(post.oldAuthors || []), ...(post.newAuthors || [])].filter(
+    (author) => author?.fullName
+  );
 
 type NotAvailableYetProps = {
   availableFrom?: Date;
@@ -112,7 +119,7 @@ export const getStaticProps = async ({
   const query = groq`*[_type == 'post' && _id == $id] {
     ..., 
     "newAuthors": authors[]->{ fullName },
-    "oldAuthors": authors[],
+    "oldAuthors": authors[].fullName,
     "tags": tags[]->.name
   }`;
   const allPosts = await getClient(preview).fetch<Post[]>(query, { id });
@@ -133,12 +140,17 @@ export const getStaticProps = async ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  type PostId = { _id: string };
+  type PostId = { _id: string; availableFrom?: string };
   const allPosts = await getClient().fetch<PostId[]>(
-    groq`*[_type == 'post'] { _id }`
+    groq`*[_type == 'post'] { _id, availableFrom }`
   );
   return {
-    paths: allPosts.map((post) => `/post/${post._id}`),
+    paths: allPosts.map((post) => {
+      const date = post.availableFrom
+        ? new Date(post.availableFrom)
+        : new Date();
+      return `/post/${date.getFullYear()}/${date.getDate()}/${post._id}`;
+    }),
     fallback: "blocking",
   };
 };

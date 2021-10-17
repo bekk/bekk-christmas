@@ -22,7 +22,12 @@ export const ArticleBody = ({
             {description}
           </Box>
         )}
-        {authors && <strong>{authors.join(", ") ?? "No authors"}</strong>}
+        {authors && (
+          <strong>
+            {authors.map((author) => author.fullName).join(", ") ??
+              "No authors"}
+          </strong>
+        )}
         {authors && publishedAt && " – "}
         {publishedAt}
       </Container>
