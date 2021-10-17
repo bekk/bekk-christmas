@@ -7,11 +7,9 @@ type PostType = ArticlePostType | ArtworkPostType;
 
 type PostListProps = {
   posts: ArticlePostType[];
-  day: number;
-  year: number;
   children?: React.ReactNode;
 };
-export const PostList = ({ posts, day, year, children }: PostListProps) => {
+export const PostList = ({ posts, children }: PostListProps) => {
   const postsWithIllustrations = decorateWithArtworkEntries(posts);
   return (
     <Grid
@@ -25,15 +23,7 @@ export const PostList = ({ posts, day, year, children }: PostListProps) => {
       {postsWithIllustrations.map((post, index) => {
         switch (post._type) {
           case "post":
-            return (
-              <ArticleItem
-                key={post.slug}
-                post={post}
-                year={year}
-                day={day}
-                index={index}
-              />
-            );
+            return <ArticleItem key={post.slug} post={post} index={index} />;
           case "artwork":
             return <ArtworkItem key={index} post={post} index={index} />;
           default:
@@ -75,6 +65,7 @@ const decorateWithArtworkEntries = (posts: PostType[]) => {
       alt: "A man and a woman, looking at their phones.",
       mt: "40px",
     },
+    // TODO: Add much more of these
   ];
   arts.forEach(({ index, ...artProps }) => {
     if (index <= copyOfPosts.length) {

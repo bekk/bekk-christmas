@@ -1,4 +1,4 @@
-import { Heading, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import {
   GetStaticPaths,
   GetStaticPropsContext,
@@ -6,9 +6,9 @@ import {
 } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { TextLink } from "../../features/design-system/TextLink";
-import { Layout } from "../../features/layout/Layout";
-import { toDayYear } from "../../utils/date";
+import { SiteMetadata } from "../../features/layout/SiteMetadata";
+import { PostList } from "../../features/post-list/PostList";
+import { SummaryItem } from "../../features/post-list/SummaryItem";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
@@ -16,44 +16,40 @@ export default function Tag({
   tag,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout
-      title={`Posts tagged with "${tag.name}" | Bekk Christmas`}
-      description={`Discover posts tagged with "${tag.name}"`}
-      keywords={[
-        "tech",
-        "technology",
-        "design",
-        "ux",
-        "visual",
-        "strategy",
-        "business",
-        "articles",
-        tag.name,
-        ...(tag.synonyms || []),
-      ]}
-    >
-      <Stack as="section" mb={12} maxWidth="container.lg" mx="auto">
-        <Heading>All posts in {tag.name}</Heading>
-        <UnorderedList>
-          {posts.map(({ title, slug, availableFrom }) => {
-            const { day, year } = toDayYear(availableFrom);
-            return (
-              <ListItem key={title}>
-                <TextLink href={`/post/${year}/${day}/${slug}`}>
-                  {title}
-                </TextLink>
-              </ListItem>
-            );
-          })}
-        </UnorderedList>
-      </Stack>
-    </Layout>
+    <Box>
+      <SiteMetadata
+        title={`Posts tagged with "${tag.name}" | Bekk Christmas`}
+        description={`Discover posts tagged with "${tag.name}"`}
+        keywords={[
+          "tech",
+          "technology",
+          "design",
+          "ux",
+          "visual",
+          "strategy",
+          "business",
+          "articles",
+          tag.name,
+          ...(tag.synonyms || []),
+        ]}
+      />
+      <PostList posts={posts}>
+        <SummaryItem>
+          <Heading as="h1" fontWeight="400">
+            All posts tagged with &quot;{tag.name}&quot;
+          </Heading>
+        </SummaryItem>
+      </PostList>
+    </Box>
   );
 }
 
 type Post = {
+  _type: "post";
   slug: string;
   title: string;
+  plaintextContent: string;
+  tags: { name: string; slug: string }[];
   availableFrom: string;
 };
 type Tag = {
@@ -71,9 +67,12 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
       _type == "post" 
       && references(*[_type == "tag" && slug == $slug]._id)] 
       { 
+        _type,
         "slug": slug.current, 
-        availableFrom,
-        title,
+        title, 
+        tags[]->{ name, "slug": slug },
+        "plaintextContent": pt::text(content),
+        availableFrom
       }`,
     { slug }
   );

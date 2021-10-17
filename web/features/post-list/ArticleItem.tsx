@@ -2,6 +2,7 @@ import { Box, BoxProps, GridItem, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
+import { toDayYear } from "../../utils/date";
 import { colorCombinations } from "./color-combinations";
 
 export type ArticlePostType = {
@@ -10,15 +11,15 @@ export type ArticlePostType = {
   title: string;
   plaintextContent: string;
   tags: { name: string; slug: string }[];
+  availableFrom: string;
 };
 
 type ArticleItemProps = {
   post: ArticlePostType;
-  year: number;
-  day: number;
   index: number;
 };
-export const ArticleItem = ({ post, year, day, index }: ArticleItemProps) => {
+export const ArticleItem = ({ post, index }: ArticleItemProps) => {
+  const { year, day } = toDayYear(post.availableFrom);
   return (
     <Link key={post.slug} href={`/post/${year}/${day}/${post.slug}`} passHref>
       <GridItem
@@ -31,12 +32,20 @@ export const ArticleItem = ({ post, year, day, index }: ArticleItemProps) => {
         pb={6}
         position="relative"
         minWidth={["100%", "368px"]}
+        maxHeight="50vh"
+        overflowY="hidden"
       >
         <Text mb="24px">
           {readingTime(post.plaintextContent || "").text} –{" "}
           {post.tags.map((tag) => tag.name).join(", ")}
         </Text>
-        <Heading as="h2" fontWeight="400" fontSize="48px" lineHeight="54px">
+        <Heading
+          as="h2"
+          fontWeight="400"
+          fontSize="48px"
+          lineHeight="54px"
+          title={post.title}
+        >
           {post.title}
         </Heading>
         <ArrowIcon
