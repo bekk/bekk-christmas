@@ -10,6 +10,15 @@ const author = {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      validation: (Rule) => Rule.required(),
+      options: {
+        source: "fullName",
+      },
+    },
+    {
       title: "Company name",
       name: "companyName",
       type: "string",
