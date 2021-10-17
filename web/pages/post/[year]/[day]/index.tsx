@@ -3,17 +3,11 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
+import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
 import { PostList } from "../../../../features/post-list/PostList";
+import { PostSummaryItem } from "../../../../features/post-list/PostSummaryItem";
 import { toDayYear } from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
-
-type ArticlePostType = {
-  _type: "post";
-  slug: string;
-  title: string;
-  plaintextContent: string;
-  tags: { name: string; slug: string }[];
-};
 
 type PostsForDayProps = {
   posts: ArticlePostType[];
@@ -27,7 +21,9 @@ export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
         title={`Posts for day ${day}, ${year}`}
         description={`Check out all ${posts.length} posts from Bekk on day ${day} of the ${year} Christmas season`}
       />
-      <PostList posts={posts} day={day} year={year} />
+      <PostList posts={posts}>
+        <PostSummaryItem posts={posts} />
+      </PostList>
     </Box>
   );
 }
@@ -81,7 +77,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       _type,
       title, 
       "plaintextContent": pt::text(content), 
-      tags[]->{ name, slug }
+      tags[]->{ name, slug },
+      availableFrom
       }`,
     {
       beginningOfDay: toDateString(year, day),
