@@ -45,18 +45,14 @@ export default function BlogPostPage({
     return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
-  // TODO: Migrate all old authors to the new author format, with references
-  const authors = [
-    ...(post.oldAuthors || []),
-    ...(post.newAuthors || []),
-  ].filter((author) => author?.fullName);
+  const authors = normalizeAuthors(post);
   return (
     <>
       <SiteMetadata
         title={preview ? `${post.title} [preview]` : post.title}
         description={post.description}
         image={getImageUrl(post.coverImage)}
-        author={authors.join(", ")}
+        author={authors.map((author) => author.fullName).join(", ")}
       />
       <Article
         title={post.title}
@@ -70,6 +66,19 @@ export default function BlogPostPage({
     </>
   );
 }
+
+/** We have two different types of authors, legacy ones and "new" ones.
+ *
+ * The legacy ones are regular objects, while the new ones are references to
+ * author documents. In order to access them together, we need to do this little trick.
+ *
+ * // TODO: Normalize the actual author data to the new format,
+ * // and remove this function
+ */
+const normalizeAuthors = (post: Post) =>
+  [...(post.oldAuthors || []), ...(post.newAuthors || [])].filter(
+    (author) => author?.fullName
+  );
 
 type NotAvailableYetProps = {
   availableFrom?: Date;
