@@ -2,18 +2,18 @@ import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { Article } from "../../../features/article/Article";
-import { ArticleBackButton } from "../../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../../features/site-footer/SiteFooter";
+import { Article } from "../../../../features/article/Article";
+import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
+import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
+import { SiteFooter } from "../../../../features/site-footer/SiteFooter";
 import {
   urlFor,
   usePreviewSubscription,
-} from "../../../utils/sanity/sanity.client";
+} from "../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
   getClient,
-} from "../../../utils/sanity/sanity.server";
+} from "../../../../utils/sanity/sanity.server";
 
 type BlogPostPageProps = {
   data: Post;
@@ -46,9 +46,10 @@ export default function BlogPostPage({
   }
 
   // TODO: Migrate all old authors to the new author format, with references
-  const authors = [...(post.oldAuthors || []), ...(post.newAuthors || [])]
-    .filter((author) => author?.fullName)
-    .map((author) => author.fullName);
+  const authors = [
+    ...(post.oldAuthors || []),
+    ...(post.newAuthors || []),
+  ].filter((author) => author?.fullName);
   return (
     <>
       <SiteMetadata
@@ -132,12 +133,17 @@ export const getStaticProps = async ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  type PostId = { _id: string };
+  type PostId = { _id: string; availableFrom?: string };
   const allPosts = await getClient().fetch<PostId[]>(
-    groq`*[_type == 'post'] { _id }`
+    groq`*[_type == 'post'] { _id, availableFrom }`
   );
   return {
-    paths: allPosts.map((post) => `/post/${post._id}`),
+    paths: allPosts.map((post) => {
+      const date = post.availableFrom
+        ? new Date(post.availableFrom)
+        : new Date();
+      return `/post/${date.getFullYear()}/${date.getDate()}/${post._id}`;
+    }),
     fallback: "blocking",
   };
 };

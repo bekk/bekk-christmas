@@ -19,7 +19,7 @@ import { ArticleBackButton } from "../../../../features/article/ArticleBackButto
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { toPlainText } from "../../../../utils/sanity/sanity.client";
 import { getClient } from "../../../../utils/sanity/sanity.server";
-import { colorCombinations } from "../../../../utils/theme";
+import { theme } from "../../../../utils/theme";
 
 type PostsForDayProps = {
   posts: any[];
@@ -107,6 +107,31 @@ const ArticleGridItem = ({ post, index }) => {
   );
 };
 
+const colorCombinations = [
+  {
+    background: theme.colors.brand.darkGreen,
+    foreground: theme.colors.white,
+  },
+  {
+    background: theme.colors.brand.red,
+    foreground: theme.colors.white,
+  },
+  {
+    background: theme.colors.brand.peach,
+    foreground: theme.colors.brand.red,
+  },
+
+  {
+    background: theme.colors.brand.lightGreen,
+    foreground: theme.colors.brand.darkGreen,
+  },
+
+  {
+    background: theme.colors.white,
+    foreground: theme.colors.brand.darkGreen,
+  },
+];
+
 const ArrowIcon = (props: BoxProps) => {
   return (
     <Box as="svg" viewBox="0 0 24 16" {...props}>
@@ -148,7 +173,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   ];
 
   const paths = uniqueYears.flatMap((year) =>
-    days.map((day) => `/day/${year}/${day}`)
+    days.map((day) => `/post/${year}/${day}`)
   );
 
   return {
