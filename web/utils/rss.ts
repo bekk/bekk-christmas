@@ -1,10 +1,11 @@
 import { writeFileSync } from "fs";
 import { groq } from "next-sanity";
 import stripTags from "striptags";
+import { toDayYear } from "./date";
 import { sanityClient } from "./sanity/sanity.server";
 
 type RssPost = {
-  _id: string;
+  slug: string;
   title: string;
   description: string;
   availableFrom: string;
@@ -13,7 +14,7 @@ type RssPost = {
 /** Generates and updates the RSS feed file */
 export const generateRss = async () => {
   const posts = await sanityClient.fetch<RssPost[]>(
-    groq`*[_type == 'post' && availableFrom < $now] | order(availableFrom desc)`,
+    groq`*[_type == 'post' && availableFrom < $now] | order(availableFrom desc) { ..., "slug": slug.current }`,
     { now: new Date().toISOString() }
   );
   writeFileSync("./public/rss.xml", generateRssFeedString(posts));
@@ -38,11 +39,12 @@ const generateRssFeedString = (posts: RssPost[]) => {
 };
 
 const generateRssItem = (post: RssPost) => {
+  const { year, day } = toDayYear(post.availableFrom);
   return `
   <item>
-    <guid>https://bekk.christmas/post/${post._id}</guid>
+    <guid>https://bekk.christmas/post/${year}/${day}/${post.slug}</guid>
     <title><![CDATA[${post.title}]]></title>
-    <link>https://bekk.christmas/post/${post._id}</link>
+    <link>https://bekk.christmas/post/${year}/${day}/${post.slug}</link>
     <description><![CDATA[${stripTags(post.description)}]]></description>
     <pubDate>${new Date(post.availableFrom).toUTCString()}</pubDate>
   </item>

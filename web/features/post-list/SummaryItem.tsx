@@ -37,7 +37,7 @@ export const SummaryItem = ({ day, year, posts }: SummaryItemProps) => {
           </Text>
           <OrderedList pl={6} fontSize="xl">
             {posts.map((post) => (
-              <ListItem key={post._id}>{post.title}</ListItem>
+              <ListItem key={post.slug}>{post.title}</ListItem>
             ))}
           </OrderedList>
           <Text fontSize="xl">Dig in!</Text>
