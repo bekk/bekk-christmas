@@ -27,7 +27,7 @@ export const PostList = ({ posts, day, year }: PostListProps) => {
           case "post":
             return (
               <ArticleItem
-                key={post._id}
+                key={post.slug}
                 post={post}
                 year={year}
                 day={day}

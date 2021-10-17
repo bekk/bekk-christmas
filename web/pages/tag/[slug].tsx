@@ -8,6 +8,7 @@ import { groq } from "next-sanity";
 import React from "react";
 import { TextLink } from "../../features/design-system/TextLink";
 import { Layout } from "../../features/layout/Layout";
+import { toDayYear } from "../../utils/date";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
@@ -34,11 +35,16 @@ export default function Tag({
       <Stack as="section" mb={12} maxWidth="container.lg" mx="auto">
         <Heading>All posts in {tag.name}</Heading>
         <UnorderedList>
-          {posts.map(({ title, id }) => (
-            <ListItem key={title}>
-              <TextLink href={`/post/${id}`}>{title}</TextLink>
-            </ListItem>
-          ))}
+          {posts.map(({ title, slug, availableFrom }) => {
+            const { day, year } = toDayYear(availableFrom);
+            return (
+              <ListItem key={title}>
+                <TextLink href={`/post/${year}/${day}/${slug}`}>
+                  {title}
+                </TextLink>
+              </ListItem>
+            );
+          })}
         </UnorderedList>
       </Stack>
     </Layout>
@@ -46,8 +52,9 @@ export default function Tag({
 }
 
 type Post = {
-  id: string;
+  slug: string;
   title: string;
+  availableFrom: string;
 };
 type Tag = {
   name: string;
@@ -64,7 +71,8 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
       _type == "post" 
       && references(*[_type == "tag" && slug == $slug]._id)] 
       { 
-        "id": _id, 
+        "slug": slug.current, 
+        availableFrom,
         title,
       }`,
     { slug }

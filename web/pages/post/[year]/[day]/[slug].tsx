@@ -6,6 +6,7 @@ import { Article } from "../../../../features/article/Article";
 import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { SiteFooter } from "../../../../features/site-footer/SiteFooter";
+import { toDayYear } from "../../../../utils/date";
 import { usePreviewSubscription } from "../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
@@ -17,7 +18,7 @@ type BlogPostPageProps = {
   data: Post;
   preview: boolean;
   query: string;
-  queryParams: { id: string };
+  queryParams: { slug: string };
 };
 export default function BlogPostPage({
   query,
@@ -115,14 +116,14 @@ export const getStaticProps = async ({
   params,
   preview = false,
 }: GetStaticPropsContext) => {
-  const id = params.id as string;
-  const query = groq`*[_type == 'post' && _id == $id] {
+  const slug = params.slug as string;
+  const query = groq`*[_type == 'post' && slug.current == $slug] {
     ..., 
     "newAuthors": authors[]->{ fullName },
     "oldAuthors": authors[].fullName,
     "tags": tags[]->.name
   }`;
-  const allPosts = await getClient(preview).fetch<Post[]>(query, { id });
+  const allPosts = await getClient(preview).fetch<Post[]>(query, { slug });
   const post = filterDataToSingleItem(allPosts, preview);
   if (!allPosts || !post) {
     return { notFound: true };
@@ -133,23 +134,21 @@ export const getStaticProps = async ({
       preview,
       data: post,
       query,
-      queryParams: { id: id.replace("drafts.", "") },
+      queryParams: { slug },
     },
     revalidate: 10,
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  type PostId = { _id: string; availableFrom?: string };
-  const allPosts = await getClient().fetch<PostId[]>(
-    groq`*[_type == 'post'] { _id, availableFrom }`
+  type PathResult = { slug: string; availableFrom?: string };
+  const allPosts = await getClient().fetch<PathResult[]>(
+    groq`*[_type == 'post'] { "slug": slug.current, availableFrom }`
   );
   return {
     paths: allPosts.map((post) => {
-      const date = post.availableFrom
-        ? new Date(post.availableFrom)
-        : new Date();
-      return `/post/${date.getFullYear()}/${date.getDate()}/${post._id}`;
+      const { year, day } = toDayYear(post.availableFrom);
+      return `/post/${year}/${day}/${post.slug}`;
     }),
     fallback: "blocking",
   };
@@ -157,6 +156,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 type Post = {
   id: string;
+  slug: string;
   title: string;
   description: string;
   content: any;

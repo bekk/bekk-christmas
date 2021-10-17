@@ -4,11 +4,12 @@ import { groq } from "next-sanity";
 import React from "react";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { PostList } from "../../../../features/post-list/PostList";
+import { toDayYear } from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
 type ArticlePostType = {
-  _id: string;
   _type: "post";
+  slug: string;
   title: string;
   plaintextContent: string;
   tags: { name: string; slug: string }[];
@@ -42,9 +43,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   );
 
   const uniqueYears = [
-    ...new Set(
-      allPosts.map((post) => new Date(post.availableFrom).getFullYear())
-    ),
+    ...new Set(allPosts.map((post) => toDayYear(post.availableFrom).year)),
   ];
 
   const paths = uniqueYears.flatMap((year) =>
@@ -78,7 +77,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     groq`*[_type == "post" 
     && availableFrom >= $beginningOfDay 
     && availableFrom < $endOfDay] {
-       _id, 
+      "slug": slug.current, 
       _type,
       title, 
       "plaintextContent": pt::text(content), 

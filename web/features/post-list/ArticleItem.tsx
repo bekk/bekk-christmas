@@ -5,8 +5,8 @@ import readingTime from "reading-time";
 import { colorCombinations } from "./color-combinations";
 
 export type ArticlePostType = {
-  _id: string;
   _type: "post";
+  slug: string;
   title: string;
   plaintextContent: string;
   tags: { name: string; slug: string }[];
@@ -20,7 +20,7 @@ type ArticleItemProps = {
 };
 export const ArticleItem = ({ post, year, day, index }: ArticleItemProps) => {
   return (
-    <Link key={post._id} href={`/post/${year}/${day}/${post._id}`} passHref>
+    <Link key={post.slug} href={`/post/${year}/${day}/${post.slug}`} passHref>
       <GridItem
         as="a"
         backgroundColor={
