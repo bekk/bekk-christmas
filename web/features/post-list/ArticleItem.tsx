@@ -33,7 +33,7 @@ export const ArticleItem = ({ post, year, day, index }: ArticleItemProps) => {
         minWidth={["100%", "368px"]}
       >
         <Text mb="24px">
-          {readingTime(post.plaintextContent).text} –{" "}
+          {readingTime(post.plaintextContent || "").text} –{" "}
           {post.tags.map((tag) => tag.name).join(", ")}
         </Text>
         <Heading as="h2" fontWeight="400" fontSize="48px" lineHeight="54px">
