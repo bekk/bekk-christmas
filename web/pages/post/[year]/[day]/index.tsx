@@ -100,4 +100,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const toDateString = (year: number, day: number) => `${year}-12-${day}`;
+const toDateString = (year: number, day: number) =>
+  `${year}-12-${day.toString().padStart(2, "0")}`;
