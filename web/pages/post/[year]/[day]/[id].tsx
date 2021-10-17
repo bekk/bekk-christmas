@@ -6,14 +6,12 @@ import { Article } from "../../../../features/article/Article";
 import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
 import { SiteFooter } from "../../../../features/site-footer/SiteFooter";
-import {
-  urlFor,
-  usePreviewSubscription,
-} from "../../../../utils/sanity/sanity.client";
+import { usePreviewSubscription } from "../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
   getClient,
 } from "../../../../utils/sanity/sanity.server";
+import { urlFor } from "../../../../utils/sanity/utils";
 
 type BlogPostPageProps = {
   data: Post;

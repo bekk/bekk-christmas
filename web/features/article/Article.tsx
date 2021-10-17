@@ -1,6 +1,6 @@
 import React from "react";
 import readingTime from "reading-time";
-import { toPlainText } from "../../utils/sanity/sanity.client";
+import { toPlainText } from "../../utils/sanity/utils";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleContainer } from "./ArticleContainer";
 import { ArticleHeader } from "./ArticleHeader";

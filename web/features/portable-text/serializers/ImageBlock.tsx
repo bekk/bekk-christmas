@@ -2,7 +2,7 @@ import { Image } from "@chakra-ui/image";
 import { Text } from "@chakra-ui/layout";
 import { Stack } from "@chakra-ui/react";
 import * as React from "react";
-import { urlFor } from "../../../utils/sanity/sanity.client";
+import { urlFor } from "../../../utils/sanity/utils";
 
 export const ImageBlock = ({ node }: any) => {
   if (!node?.asset) {

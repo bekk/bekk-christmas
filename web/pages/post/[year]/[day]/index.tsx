@@ -17,8 +17,8 @@ import React from "react";
 import readingTime from "reading-time";
 import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
 import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
-import { toPlainText } from "../../../../utils/sanity/sanity.client";
 import { getClient } from "../../../../utils/sanity/sanity.server";
+import { toPlainText } from "../../../../utils/sanity/utils";
 import { theme } from "../../../../utils/theme";
 
 type PostsForDayProps = {
