@@ -11,6 +11,16 @@ const post = {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: "Slug",
+      description:
+        "The slug is used in the URL. The complete URL will be `/post/{year}/{day}/{slug}`",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "title",
+      },
+    },
+    {
       title: "Description",
       description:
         "This is the excerpt, shown at the top of the article, as well as when shared on social media. Keep it short!",

@@ -8,6 +8,9 @@ const tag = {
       name: "slug",
       type: "string",
       validation: (Rule) => Rule.required(),
+      options: {
+        source: "name",
+      },
     },
     {
       title: "Name",
