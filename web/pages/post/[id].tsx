@@ -46,10 +46,9 @@ export default function BlogPostPage({
   }
 
   // TODO: Migrate all old authors to the new author format, with references
-  const authors = [
-    ...(post.oldAuthors || []),
-    ...(post.newAuthors || []),
-  ].filter((author) => author?.fullName);
+  const authors = [...(post.oldAuthors || []), ...(post.newAuthors || [])]
+    .filter((author) => author?.fullName)
+    .map((author) => author.fullName);
   return (
     <>
       <SiteMetadata
@@ -112,7 +111,7 @@ export const getStaticProps = async ({
   const query = groq`*[_type == 'post' && _id == $id] {
     ..., 
     "newAuthors": authors[]->{ fullName },
-    "oldAuthors": authors[],
+    "oldAuthors": authors[].fullName,
     "tags": tags[]->.name
   }`;
   const allPosts = await getClient(preview).fetch<Post[]>(query, { id });
