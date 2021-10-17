@@ -2,18 +2,18 @@ import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { Article } from "../../features/article/Article";
-import { ArticleBackButton } from "../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../features/site-footer/SiteFooter";
+import { Article } from "../../../features/article/Article";
+import { ArticleBackButton } from "../../../features/article/ArticleBackButton";
+import { SiteMetadata } from "../../../features/layout/SiteMetadata";
+import { SiteFooter } from "../../../features/site-footer/SiteFooter";
 import {
   urlFor,
   usePreviewSubscription,
-} from "../../utils/sanity/sanity.client";
+} from "../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
   getClient,
-} from "../../utils/sanity/sanity.server";
+} from "../../../utils/sanity/sanity.server";
 
 type BlogPostPageProps = {
   data: Post;

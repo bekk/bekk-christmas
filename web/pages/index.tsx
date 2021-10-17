@@ -65,7 +65,7 @@ function Day({ day, year }: DayProps) {
   const daysToDecorateWithSnow = [4, 5, 11, 19, 24];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
-    <Link href={`/day/${day}/${year}`} passHref>
+    <Link href={`/post/${year}/${day}`} passHref>
       <Center
         as="a"
         backgroundColor={colors.background}

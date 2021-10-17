@@ -15,11 +15,11 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
-import { ArticleBackButton } from "../../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../../features/layout/SiteMetadata";
-import { toPlainText } from "../../../utils/sanity/sanity.client";
-import { getClient } from "../../../utils/sanity/sanity.server";
-import { colorCombinations } from "../../../utils/theme";
+import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
+import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
+import { toPlainText } from "../../../../utils/sanity/sanity.client";
+import { getClient } from "../../../../utils/sanity/sanity.server";
+import { colorCombinations } from "../../../../utils/theme";
 
 type PostsForDayProps = {
   posts: any[];
