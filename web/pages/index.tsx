@@ -6,7 +6,7 @@ import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { SiteFooter } from "../features/site-footer/SiteFooter";
 import { Snowfall } from "../features/snowfall/Snowfall";
 import { generateRss } from "../utils/rss";
-import { colorCombinations } from "../utils/theme";
+import { theme } from "../utils/theme";
 
 const listOf24Days = Array(24)
   .fill(0)
@@ -100,6 +100,34 @@ function Day({ day, year }: DayProps) {
     </Link>
   );
 }
+
+const brandColors = theme.colors.brand;
+export const colorCombinations = [
+  {
+    background: brandColors.midGreen,
+    foreground: brandColors.lightPink,
+  },
+  {
+    background: brandColors.lightPink,
+    foreground: brandColors.midGreen,
+  },
+  {
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreenTransparent,
+  },
+  {
+    background: brandColors.red,
+    foreground: brandColors.lightPink,
+  },
+  {
+    background: brandColors.peach,
+    foreground: brandColors.midGreen,
+  },
+  {
+    background: brandColors.lightGreen,
+    foreground: brandColors.midGreen,
+  },
+];
 
 const Snowheap = (props: BoxProps) => (
   <Box as="svg" viewBox="0 0 84 74" position="absolute" {...props}>
