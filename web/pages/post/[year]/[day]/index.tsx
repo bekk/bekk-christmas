@@ -90,12 +90,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     { beginningOfDay, endOfDay }
   );
 
+  console.log("debug", beginningOfDay, endOfDay, postsPublishedForDay);
+
   return {
     props: {
       posts: postsPublishedForDay,
       day,
       year,
     },
-    revalidate: 10,
   };
 };
