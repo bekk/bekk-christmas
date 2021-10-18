@@ -17,7 +17,10 @@ export const generateRss = async () => {
     groq`*[_type == 'post' && availableFrom < $now] | order(availableFrom desc) { ..., "slug": slug.current }`,
     { now: new Date().toISOString() }
   );
-  writeFileSync("./public/rss.xml", generateRssFeedString(posts));
+  writeFileSync(
+    process.cwd() + "/public/rss.xml",
+    generateRssFeedString(posts)
+  );
 };
 
 const generateRssFeedString = (posts: RssPost[]) => {
