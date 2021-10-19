@@ -148,8 +148,12 @@ const Snowheap = (props: BoxProps) => (
 export const getStaticProps: GetStaticProps = async () => {
   // We generate a new RSS feed every time the index page is built.
   // This creates a new public/rss.xml file with the latest articles.
-  await generateRss();
-  return {
-    props: {},
-  };
+  try {
+    await generateRss();
+  } catch (e) {
+  } finally {
+    return {
+      props: {},
+    };
+  }
 };
