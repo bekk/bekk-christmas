@@ -12,11 +12,30 @@ export default function resolveProductionUrl(doc) {
 
   previewUrl.pathname = `/api/preview`;
   previewUrl.searchParams.append(`secret`, previewSecret);
-  previewUrl.searchParams.append(`id`, doc?._id ?? `/`);
-  if (doc?.slug) {
-    previewUrl.searchParams.append(`slug`, doc.slug.current);
-  }
-  previewUrl.searchParams.append("type", doc?._type);
+  previewUrl.searchParams.append("url", getUrlForDocument(doc));
 
   return previewUrl.toString();
 }
+
+function getUrlForDocument(doc) {
+  switch (doc?._type) {
+    case "post":
+      return getUrlForPost(doc);
+    case "page":
+      return getUrlForPage(doc);
+    default:
+      return null;
+  }
+}
+function getUrlForPost(doc) {
+  const { day, year } = toDayYear(doc.availableFrom);
+  return `/post/${year}/${day}/${doc.slug.current}`;
+}
+const getUrlForPage = (doc) => {
+  return `/${doc.slug.current}`;
+};
+
+const toDayYear = (date) => ({
+  day: Number(date.split("-")[2]),
+  year: Number(date.split("-")[0]),
+});

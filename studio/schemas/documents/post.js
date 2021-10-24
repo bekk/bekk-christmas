@@ -57,6 +57,7 @@ const post = {
       description: "The date the post was or will be posted",
       type: "date",
       validation: (Rule) => Rule.required(),
+      initialValue: `${new Date().getUTCFullYear()}-12-01`,
     },
     {
       title: "Tags",
