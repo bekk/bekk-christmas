@@ -7,10 +7,7 @@ const previewApiHandler: NextApiHandler = (req, res) => {
       .json({ message: "Could not access request params. Internal error" });
   }
 
-  const { secret, id, slug, type } = req.query as Record<
-    string,
-    string | undefined
-  >;
+  const { secret, url } = req.query as Record<string, string | undefined>;
 
   if (!secret) {
     return res.status(401).json({ message: "No secret token" });
@@ -20,36 +17,13 @@ const previewApiHandler: NextApiHandler = (req, res) => {
     return res.status(401).json({ message: "Invalid secret token" });
   }
 
-  if (!id || !slug) {
-    return res.status(401).json({ message: "No id or slug provided" });
-  }
-
-  if (!type) {
-    return res.status(400).json({ message: "No type provided" });
-  }
-
-  if (!["post", "page"].includes(type)) {
-    return res.status(400).json({
-      message: "Posts and pages are the only things that supports preview yet",
-    });
+  if (!url) {
+    return res.status(401).json({ message: "No URL provided" });
   }
 
   res.setPreviewData({});
 
-  switch (type) {
-    case "post": {
-      res.redirect(307, `/posts/${id}`);
-      break;
-    }
-    case "page": {
-      res.redirect(307, `/${slug}`);
-      break;
-    }
-    default: {
-      res.status(400).json({ message: "Invalid type" });
-      break;
-    }
-  }
+  res.redirect(307, url);
 };
 
 export default previewApiHandler;
