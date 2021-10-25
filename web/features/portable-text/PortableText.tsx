@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  ListItem,
-  Stack,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { GridItem, ListItem, UnorderedList } from "@chakra-ui/react";
 import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
@@ -19,18 +13,22 @@ import { TwitterBlock } from "./serializers/TwitterBlock";
 import { YouTubeBlock } from "./serializers/YouTubeBlock";
 
 const withWrap =
-  (maxWidth: "wide" | "default" = "default") =>
+  (
+    maxWidth: "wide" | "default" = "default",
+    colSpan: number = 8,
+    colStart: number = 4
+  ) =>
   (Component: React.FunctionComponent) =>
   (props: any) =>
     (
-      <Box>
-        <Container
-          maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
-          px={maxWidth === "wide" ? "0" : "2.5rem"}
-        >
-          <Component {...props} />
-        </Container>
-      </Box>
+      <GridItem
+        colSpan={colSpan}
+        colStart={colStart}
+        maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
+        px={maxWidth === "wide" ? "0" : "2.5rem"}
+      >
+        <Component {...props} />
+      </GridItem>
     );
 
 const serializers = {
@@ -64,7 +62,7 @@ const serializers = {
   },
   list: withWrap()((props) => <UnorderedList>{props.children}</UnorderedList>),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
-  container: (props: any) => <Stack {...props} spacing={6} />,
+  container: (props: any) => <> {props.children} </>,
 };
 
 export const PortableText = createPortableTextComponent({

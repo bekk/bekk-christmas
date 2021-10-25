@@ -2,8 +2,8 @@ import React from "react";
 import readingTime from "reading-time";
 import { toPlainText } from "../../utils/sanity/utils";
 import { ArticleBody } from "./ArticleBody";
-import { ArticleContainer } from "./ArticleContainer";
 import { ArticleHeader } from "./ArticleHeader";
+
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   category: string;
@@ -24,20 +24,19 @@ export const Article = ({
   showReadingTime = false,
 }: ArticleProps) => {
   return (
-    <ArticleContainer>
-      <ArticleHeader
+    <>
+      <ArticleHeader />
+      <ArticleBody
         title={title}
         category={category}
         readingTime={
           showReadingTime ? readingTime(toPlainText(content)).text : undefined
         }
-      />
-      <ArticleBody
         description={description}
         authors={authors}
         publishedAt={publishedAt?.toLocaleDateString("nb-NO")}
         content={content}
       />
-    </ArticleContainer>
+    </>
   );
 };
