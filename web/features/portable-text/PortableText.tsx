@@ -45,6 +45,7 @@ const serializers = {
     mainImage: withWrap("wide")(ImageBlock),
     iframe: withWrap("wide")(IframeBlock),
     image: withWrap("wide")(ImageBlock),
+    imageWithMetadata: withWrap("wide")(ImageBlock),
     __block: ({ node }) => {
       if (node.block?._type === "image") {
         return <ImageBlock node={node} />;

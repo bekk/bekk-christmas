@@ -37,7 +37,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
       >
         <Text mb="24px">
           {readingTime(post.plaintextContent || "").text} –{" "}
-          {post.tags.map((tag) => tag.name).join(", ")}
+          {post.tags?.map((tag) => tag.name).join(", ")}
         </Text>
         <Heading
           as="h2"
