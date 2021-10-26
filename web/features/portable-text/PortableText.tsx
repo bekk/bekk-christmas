@@ -4,6 +4,7 @@ import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
 import { TextLink } from "../design-system/TextLink";
 import { BlockBlock } from "./serializers/BlockBlock";
+import { BlockQuoteBlock } from "./serializers/BlockQuoteBlock";
 import { CodeBlock } from "./serializers/CodeBlock";
 import { CodePenBlock } from "./serializers/CodePenBlock";
 import { CodeSandboxBlock } from "./serializers/CodeSandboxBlock";
@@ -34,7 +35,12 @@ const withWrap =
 const serializers = {
   types: {
     authorReference: ({ node }: any) => <span>{node.author.name}</span>,
-    block: withWrap("default")(BlockBlock),
+    block: (props: any) => {
+      if (props.node.style === "blockquote") {
+        return withWrap("wide")(BlockQuoteBlock)(props);
+      }
+      return withWrap("default")(BlockBlock)(props);
+    },
     code: withWrap("wide")(CodeBlock),
     codeSandbox: withWrap("wide")(CodeSandboxBlock),
     codePen: withWrap("wide")(CodePenBlock),
@@ -60,7 +66,9 @@ const serializers = {
       <TextLink href={props.mark.href}>{props.children}</TextLink>
     ),
   },
-  list: withWrap()((props) => <UnorderedList>{props.children}</UnorderedList>),
+  list: withWrap("default")((props) => (
+    <UnorderedList>{props.children}</UnorderedList>
+  )),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
   container: (props: any) => <> {props.children} </>,
 };
