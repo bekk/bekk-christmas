@@ -1,11 +1,4 @@
-import {
-  Box,
-  Flex,
-  GridItem,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Container, Text } from "@chakra-ui/react";
 import React from "react";
 import { PortableText } from "../portable-text/PortableText";
 import { Space } from "../design-system/Space";
@@ -29,37 +22,49 @@ export const ArticleBody = ({
   publishedAt,
 }: ArticleBodyProps) => {
   return (
-    <SimpleGrid
+    <Container
       backgroundColor="white"
-      color="brand.darkGrey"
-      columns={12}
-      spacingX={"32px"}
-      margin={"40px"}
+      color="brand.midGrey"
+      margin="120px auto 80px"
+      maxWidth="container.lg"
     >
-      <GridItem colSpan={10} colStart={2}>
-        <Space times={3} />
-        {category && <Box fontSize={"lg"}>{category}</Box>}
-        <Space size={"small"} />
-        <Heading as={"h1"} size={"3xl"}>
+      <Box marginBottom={20}>
+        {category && (
+          <Box fontSize={"lg"} marginBottom={4}>
+            {category}
+          </Box>
+        )}
+        <Heading
+          as={"h1"}
+          size={"4xl"}
+          fontWeight="normal"
+          lineHeight="1.15"
+          color="brand.darkGrey"
+        >
           {title}
         </Heading>
-        <Space times={2} />
-      </GridItem>
-      <GridItem colSpan={8} colStart={4}>
+      </Box>
+      <Box marginLeft={60} marginBottom={20} color="brand.darkGrey">
         <Flex>
-          <Box mr={"8px"}>{readingTime}</Box>
-          {authors && (
-            <strong>
-              {authors.map((author) => author.fullName).join(", ") ??
-                "No authors"}
-            </strong>
-          )}
-          {authors && publishedAt && " – "}
+          <Text>{readingTime}</Text>
+          <Text px={2}>-</Text>
+          <Text>
+            {authors
+              ? "Written by " +
+                authors.map((author) => author.fullName).join(", ")
+              : "No authors"}
+          </Text>
+          {authors && publishedAt && <Text px={2}>-</Text>}
           {publishedAt}
         </Flex>
-        {description && <Box fontSize="2xl">{description}</Box>}
-      </GridItem>
+        {description && (
+          <>
+            <Space />
+            <Box fontSize="2xl">{description}</Box>
+          </>
+        )}
+      </Box>
       {content ? <PortableText blocks={content} /> : <Text>No content</Text>}
-    </SimpleGrid>
+    </Container>
   );
 };

@@ -15,6 +15,6 @@ const pxFor = (size: Storrelse): number => {
     case "medium":
       return 40;
     case "small":
-      return 8;
+      return 16;
   }
 };

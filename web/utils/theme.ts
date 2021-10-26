@@ -18,6 +18,7 @@ export const theme = extendTheme({
       red: "#BC3436",
       peach: "#EAA196",
       darkGrey: "#242424",
+      midGrey: "#505050",
     },
   },
 });

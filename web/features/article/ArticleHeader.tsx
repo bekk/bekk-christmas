@@ -1,13 +1,18 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Flex, Container } from "@chakra-ui/react";
 import React from "react";
 import { ArticleBackButton } from "./ArticleBackButton";
 
 export const ArticleHeader = () => {
   return (
-    <Box as="header" background="brand.pink" minHeight="10vh">
-      <Container maxWidth="container.md" padding="2.5rem">
+    <Flex
+      as="header"
+      background="brand.pink"
+      minHeight="15vh"
+      alignItems="center"
+    >
+      <Container maxWidth="container.lg">
         <ArticleBackButton />
       </Container>
-    </Box>
+    </Flex>
   );
 };

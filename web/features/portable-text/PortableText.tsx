@@ -3,28 +3,31 @@ import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
 import { TextLink } from "../design-system/TextLink";
-import { BlockBlock } from "./serializers/BlockBlock";
+import { TextBlock } from "./serializers/TextBlock";
 import { BlockQuoteBlock } from "./serializers/BlockQuoteBlock";
 import { CodeBlock } from "./serializers/CodeBlock";
 import { CodePenBlock } from "./serializers/CodePenBlock";
 import { CodeSandboxBlock } from "./serializers/CodeSandboxBlock";
 import { IframeBlock } from "./serializers/IframeBlock";
 import { ImageBlock } from "./serializers/ImageBlock";
+import { HeadingBlock } from "./serializers/HeadingBlock";
 import { TwitterBlock } from "./serializers/TwitterBlock";
 import { YouTubeBlock } from "./serializers/YouTubeBlock";
 
 const withWrap =
   (
     maxWidth: "wide" | "default" = "default",
-    colSpan: number = 8,
-    colStart: number = 4
+    spaceAbove: number = 0,
+    spaceBelow: number = 0,
+    indent: number = 240
   ) =>
   (Component: React.FunctionComponent) =>
   (props: any) =>
     (
       <GridItem
-        colSpan={colSpan}
-        colStart={colStart}
+        marginLeft={`${indent}px`}
+        marginTop={spaceAbove}
+        marginBottom={spaceBelow}
         maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
         px={maxWidth === "wide" ? "0" : "2.5rem"}
       >
@@ -37,9 +40,12 @@ const serializers = {
     authorReference: ({ node }: any) => <span>{node.author.name}</span>,
     block: (props: any) => {
       if (props.node.style === "blockquote") {
-        return withWrap("wide")(BlockQuoteBlock)(props);
+        return withWrap("wide", 20, 20)(BlockQuoteBlock)(props);
       }
-      return withWrap("default")(BlockBlock)(props);
+      if (/^h\d/.test(props.node.style)) {
+        return withWrap("wide", 20, 4)(HeadingBlock)(props);
+      }
+      return withWrap("wide", 4, 4)(TextBlock)(props);
     },
     code: withWrap("wide")(CodeBlock),
     codeSandbox: withWrap("wide")(CodeSandboxBlock),
@@ -48,7 +54,7 @@ const serializers = {
     twitter: withWrap("wide")(TwitterBlock),
     mainImage: withWrap("wide")(ImageBlock),
     iframe: withWrap("wide")(IframeBlock),
-    image: withWrap("wide")(ImageBlock),
+    image: withWrap("wide", 20, 20, 120)(ImageBlock),
     imageWithMetadata: withWrap("wide")(ImageBlock),
     __block: ({ node }) => {
       if (node.block?._type === "image") {
@@ -70,7 +76,7 @@ const serializers = {
     <UnorderedList>{props.children}</UnorderedList>
   )),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
-  container: (props: any) => <> {props.children} </>,
+  container: (props: any) => <>{props.children}</>,
 };
 
 export const PortableText = createPortableTextComponent({

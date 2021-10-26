@@ -3,6 +3,7 @@ import { Text } from "@chakra-ui/layout";
 import { Stack } from "@chakra-ui/react";
 import * as React from "react";
 import { urlFor } from "../../../utils/sanity/utils";
+import { Space } from "../../design-system/Space";
 
 export const ImageBlock = ({ node }: any) => {
   if (!node?.asset) {
@@ -11,7 +12,11 @@ export const ImageBlock = ({ node }: any) => {
 
   return (
     <Stack as="figure">
-      <Image src={urlFor(node.asset).width(800).url()!} alt={node.alt} />
+      <Image
+        src={urlFor(node.asset).width(800).url()!}
+        alt={node.alt}
+        borderRadius={20}
+      />
       {node.caption && (
         <Text as="figcaption" color="gray.500" textAlign="center">
           {node.caption}
