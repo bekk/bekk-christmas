@@ -60,8 +60,10 @@ const post = {
       initialValue: `${new Date().getUTCFullYear()}-12-01`,
     },
     {
-      title: "Tags",
+      title: "Category",
       name: "tags",
+      description:
+        "Choose a main category for your post. Or add a new one, if you can't find the perfect one",
       type: "array",
       of: [
         {
@@ -69,6 +71,23 @@ const post = {
           to: [{ type: "tag" }],
         },
       ],
+    },
+    {
+      title: "Searcahable keywords",
+      name: "keywords",
+      description:
+        "These are keywords people might want to search for to find your article. By default we'll include the title and category.",
+      type: "array",
+      of: [{ type: "string" }],
+      options: {
+        layout: "tags",
+      },
+    },
+    {
+      title: "Content",
+      name: "content",
+      type: "portableText",
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Related links",
@@ -99,12 +118,6 @@ const post = {
           ],
         },
       ],
-    },
-    {
-      title: "Content",
-      name: "content",
-      type: "portableText",
-      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
