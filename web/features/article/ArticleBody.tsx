@@ -49,8 +49,12 @@ export const ArticleBody = ({
           {title}
         </Heading>
       </Box>
-      <Box marginLeft="240px" marginBottom="80px" color="brand.darkGrey">
-        <Flex>
+      <Box
+        marginLeft={[0, 0, "240px"]}
+        marginBottom="80px"
+        color="brand.darkGrey"
+      >
+        <Flex flexWrap="wrap">
           <Text>{readingTime}</Text>
           <Text px={2}>-</Text>
           <Text>
@@ -71,7 +75,7 @@ export const ArticleBody = ({
       </Box>
       {coverImageSrc && (
         <Image
-          marginLeft="120px"
+          marginLeft={[0, 0, "120"]}
           marginTop="80px"
           marginBottom="80px"
           src={coverImageSrc}

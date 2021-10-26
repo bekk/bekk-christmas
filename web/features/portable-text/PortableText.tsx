@@ -25,7 +25,7 @@ const withWrap =
   (props: any) =>
     (
       <GridItem
-        marginLeft={`${indent}px`}
+        marginLeft={[0, 0, `${indent}px`]}
         marginTop={`${spaceAbove}px`}
         marginBottom={`${spaceBelow}px`}
         maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
