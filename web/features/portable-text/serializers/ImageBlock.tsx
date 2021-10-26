@@ -3,7 +3,6 @@ import { Text } from "@chakra-ui/layout";
 import { Stack } from "@chakra-ui/react";
 import * as React from "react";
 import { urlFor } from "../../../utils/sanity/utils";
-import { Space } from "../../design-system/Space";
 
 export const ImageBlock = ({ node }: any) => {
   if (!node?.asset) {

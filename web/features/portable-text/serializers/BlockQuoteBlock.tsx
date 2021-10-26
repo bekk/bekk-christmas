@@ -5,8 +5,6 @@ export const BlockQuoteBlock = ({ children }: any) => {
   return (
     <Text
       as="blockquote"
-      my={["40px", "80px"]}
-      ml={[0, 0, "120px"]}
       pl="16px"
       borderLeft="3px solid"
       borderColor="brand.darkGreen"

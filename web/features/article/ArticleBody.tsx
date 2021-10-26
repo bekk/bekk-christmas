@@ -2,6 +2,8 @@ import { Box, Flex, Heading, Container, Text } from "@chakra-ui/react";
 import React from "react";
 import { PortableText } from "../portable-text/PortableText";
 import { Space } from "../design-system/Space";
+import { Image } from "@chakra-ui/image";
+import { urlFor } from "../../utils/sanity/utils";
 
 type ArticleBodyProps = {
   title: string;
@@ -10,6 +12,7 @@ type ArticleBodyProps = {
   description?: string;
   authors?: { fullName: string }[];
   publishedAt?: string;
+  coverImage: string;
   content: unknown;
 };
 export const ArticleBody = ({
@@ -20,7 +23,9 @@ export const ArticleBody = ({
   content,
   authors,
   publishedAt,
+  coverImage,
 }: ArticleBodyProps) => {
+  const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
     <Container
       backgroundColor="white"
@@ -28,9 +33,9 @@ export const ArticleBody = ({
       margin="120px auto 80px"
       maxWidth="container.lg"
     >
-      <Box marginBottom={20}>
+      <Box marginBottom="80px">
         {category && (
-          <Box fontSize={"lg"} marginBottom={4}>
+          <Box fontSize={"lg"} marginBottom="16px">
             {category}
           </Box>
         )}
@@ -44,7 +49,7 @@ export const ArticleBody = ({
           {title}
         </Heading>
       </Box>
-      <Box marginLeft={60} marginBottom={20} color="brand.darkGrey">
+      <Box marginLeft="240px" marginBottom="80px" color="brand.darkGrey">
         <Flex>
           <Text>{readingTime}</Text>
           <Text px={2}>-</Text>
@@ -64,6 +69,16 @@ export const ArticleBody = ({
           </>
         )}
       </Box>
+      {coverImageSrc && (
+        <Image
+          marginLeft="120px"
+          marginTop="80px"
+          marginBottom="80px"
+          src={coverImageSrc}
+          alt=""
+          borderRadius="20px"
+        />
+      )}
       {content ? <PortableText blocks={content} /> : <Text>No content</Text>}
     </Container>
   );

@@ -17,8 +17,8 @@ import { YouTubeBlock } from "./serializers/YouTubeBlock";
 const withWrap =
   (
     maxWidth: "wide" | "default" = "default",
-    spaceAbove: number = 0,
-    spaceBelow: number = 0,
+    spaceAbove: number = 16,
+    spaceBelow: number = 16,
     indent: number = 240
   ) =>
   (Component: React.FunctionComponent) =>
@@ -26,8 +26,8 @@ const withWrap =
     (
       <GridItem
         marginLeft={`${indent}px`}
-        marginTop={spaceAbove}
-        marginBottom={spaceBelow}
+        marginTop={`${spaceAbove}px`}
+        marginBottom={`${spaceBelow}px`}
         maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
         px={maxWidth === "wide" ? "0" : "2.5rem"}
       >
@@ -35,27 +35,29 @@ const withWrap =
       </GridItem>
     );
 
+const withSpacing = (block) => withWrap("wide", 32, 32)(block);
+
 const serializers = {
   types: {
     authorReference: ({ node }: any) => <span>{node.author.name}</span>,
     block: (props: any) => {
       if (props.node.style === "blockquote") {
-        return withWrap("wide", 20, 20)(BlockQuoteBlock)(props);
+        return withSpacing(BlockQuoteBlock)(props);
       }
       if (/^h\d/.test(props.node.style)) {
-        return withWrap("wide", 20, 4)(HeadingBlock)(props);
+        return withWrap("wide", 80)(HeadingBlock)(props);
       }
-      return withWrap("wide", 4, 4)(TextBlock)(props);
+      return withWrap("wide")(TextBlock)(props);
     },
-    code: withWrap("wide")(CodeBlock),
-    codeSandbox: withWrap("wide")(CodeSandboxBlock),
-    codePen: withWrap("wide")(CodePenBlock),
-    youtube: withWrap("wide")(YouTubeBlock),
-    twitter: withWrap("wide")(TwitterBlock),
-    mainImage: withWrap("wide")(ImageBlock),
-    iframe: withWrap("wide")(IframeBlock),
-    image: withWrap("wide", 20, 20, 120)(ImageBlock),
-    imageWithMetadata: withWrap("wide")(ImageBlock),
+    code: withSpacing(CodeBlock),
+    codeSandbox: withSpacing(CodeSandboxBlock),
+    codePen: withSpacing(CodePenBlock),
+    youtube: withSpacing(YouTubeBlock),
+    twitter: withSpacing(TwitterBlock),
+    mainImage: withWrap("wide", 80, 80, 120)(ImageBlock),
+    iframe: withSpacing(IframeBlock),
+    image: withWrap("wide", 80, 80, 120)(ImageBlock),
+    imageWithMetadata: withWrap("wide", 80, 80, 120)(ImageBlock),
     __block: ({ node }) => {
       if (node.block?._type === "image") {
         return <ImageBlock node={node} />;
@@ -73,7 +75,7 @@ const serializers = {
     ),
   },
   list: withWrap("default")((props) => (
-    <UnorderedList>{props.children}</UnorderedList>
+    <UnorderedList fontSize="lg">{props.children}</UnorderedList>
   )),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
   container: (props: any) => <>{props.children}</>,

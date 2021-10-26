@@ -60,6 +60,7 @@ export default function BlogPostPage({
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
+        coverImage={post.coverImage}
         showReadingTime
       />
     </>
