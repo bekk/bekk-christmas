@@ -1,14 +1,9 @@
-import {
-  Box,
-  Flex,
-  GridItem,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Container, Text } from "@chakra-ui/react";
 import React from "react";
 import { PortableText } from "../portable-text/PortableText";
 import { Space } from "../design-system/Space";
+import { Image } from "@chakra-ui/image";
+import { urlFor } from "../../utils/sanity/utils";
 
 type ArticleBodyProps = {
   title: string;
@@ -17,6 +12,7 @@ type ArticleBodyProps = {
   description?: string;
   authors?: { fullName: string }[];
   publishedAt?: string;
+  coverImage: string;
   content: unknown;
 };
 export const ArticleBody = ({
@@ -27,39 +23,67 @@ export const ArticleBody = ({
   content,
   authors,
   publishedAt,
+  coverImage,
 }: ArticleBodyProps) => {
+  const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <SimpleGrid
+    <Container
       backgroundColor="white"
-      color="brand.darkGrey"
-      columns={12}
-      spacingX={"32px"}
-      margin={"40px"}
+      color="brand.midGrey"
+      margin="120px auto 80px"
+      maxWidth="container.lg"
     >
-      <GridItem colSpan={10} colStart={2}>
-        <Space times={3} />
-        {category && <Box fontSize={"lg"}>{category}</Box>}
-        <Space size={"small"} />
-        <Heading as={"h1"} size={"3xl"}>
+      <Box marginBottom="80px">
+        {category && (
+          <Box fontSize={"lg"} marginBottom="16px">
+            {category}
+          </Box>
+        )}
+        <Heading
+          as={"h1"}
+          size={"4xl"}
+          fontWeight="normal"
+          lineHeight="1.15"
+          color="brand.darkGrey"
+        >
           {title}
         </Heading>
-        <Space times={2} />
-      </GridItem>
-      <GridItem colSpan={8} colStart={4}>
-        <Flex>
-          <Box mr={"8px"}>{readingTime}</Box>
-          {authors && (
-            <strong>
-              {authors.map((author) => author.fullName).join(", ") ??
-                "No authors"}
-            </strong>
-          )}
-          {authors && publishedAt && " – "}
+      </Box>
+      <Box
+        marginLeft={[0, 0, "240px"]}
+        marginBottom="80px"
+        color="brand.darkGrey"
+      >
+        <Flex flexWrap="wrap">
+          <Text>{readingTime}</Text>
+          <Text px={2}>-</Text>
+          <Text>
+            {authors
+              ? "Written by " +
+                authors.map((author) => author.fullName).join(", ")
+              : "No authors"}
+          </Text>
+          {authors && publishedAt && <Text px={2}>-</Text>}
           {publishedAt}
         </Flex>
-        {description && <Box fontSize="2xl">{description}</Box>}
-      </GridItem>
+        {description && (
+          <>
+            <Space />
+            <Box fontSize="2xl">{description}</Box>
+          </>
+        )}
+      </Box>
+      {coverImageSrc && (
+        <Image
+          marginLeft={[0, 0, "120"]}
+          marginTop="80px"
+          marginBottom="80px"
+          src={coverImageSrc}
+          alt=""
+          borderRadius="20px"
+        />
+      )}
       {content ? <PortableText blocks={content} /> : <Text>No content</Text>}
-    </SimpleGrid>
+    </Container>
   );
 };

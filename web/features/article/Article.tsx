@@ -12,6 +12,7 @@ type ArticleProps = {
   content: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: Date;
+  coverImage?: string;
   showReadingTime?: boolean;
 };
 export const Article = ({
@@ -21,6 +22,7 @@ export const Article = ({
   content,
   authors,
   publishedAt,
+  coverImage,
   showReadingTime = false,
 }: ArticleProps) => {
   return (
@@ -36,6 +38,7 @@ export const Article = ({
         authors={authors}
         publishedAt={publishedAt?.toLocaleDateString("nb-NO")}
         content={content}
+        coverImage={coverImage ?? ""}
       />
     </>
   );
