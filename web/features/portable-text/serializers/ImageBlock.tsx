@@ -11,7 +11,11 @@ export const ImageBlock = ({ node }: any) => {
 
   return (
     <Stack as="figure">
-      <Image src={urlFor(node.asset).width(800).url()!} alt={node.alt} />
+      <Image
+        src={urlFor(node.asset).width(800).url()!}
+        alt={node.alt}
+        borderRadius={20}
+      />
       {node.caption && (
         <Text as="figcaption" color="gray.500" textAlign="center">
           {node.caption}

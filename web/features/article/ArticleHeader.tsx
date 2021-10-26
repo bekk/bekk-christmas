@@ -1,37 +1,18 @@
-import { Box, Container, Flex, Heading } from "@chakra-ui/react";
+import { Flex, Container } from "@chakra-ui/react";
 import React from "react";
 import { ArticleBackButton } from "./ArticleBackButton";
 
-type ArticleHeaderProps = {
-  title: string;
-  category: string;
-  readingTime?: string;
-};
-
-export const ArticleHeader = ({
-  title,
-  category,
-  readingTime,
-}: ArticleHeaderProps) => {
+export const ArticleHeader = () => {
   return (
-    <Box
+    <Flex
       as="header"
-      background="brand.darkGreen"
-      color="brand.pink"
-      minHeight="33vh"
+      background="brand.pink"
+      minHeight="15vh"
+      alignItems="center"
     >
-      <Container maxWidth="container.md" padding="2.5rem">
-        <Flex mb={10}>
-          <ArticleBackButton />
-          <Box flex="1" fontSize="24px" ml="4" color="white">
-            {category ?? "Uncategorized"}
-          </Box>
-        </Flex>
-        {readingTime && <Box>{readingTime}</Box>}
-        <Heading as="h1" fontSize="56px" lineHeight="66px" fontWeight="400">
-          {title ?? "No title yet"}
-        </Heading>
+      <Container maxWidth="container.lg">
+        <ArticleBackButton />
       </Container>
-    </Box>
+    </Flex>
   );
 };
