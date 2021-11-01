@@ -1,16 +1,16 @@
-import { GridItem, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Code, GridItem, ListItem, UnorderedList } from "@chakra-ui/react";
 import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
 import { TextLink } from "../design-system/TextLink";
-import { TextBlock } from "./serializers/TextBlock";
 import { BlockQuoteBlock } from "./serializers/BlockQuoteBlock";
 import { CodeBlock } from "./serializers/CodeBlock";
 import { CodePenBlock } from "./serializers/CodePenBlock";
 import { CodeSandboxBlock } from "./serializers/CodeSandboxBlock";
+import { HeadingBlock } from "./serializers/HeadingBlock";
 import { IframeBlock } from "./serializers/IframeBlock";
 import { ImageBlock } from "./serializers/ImageBlock";
-import { HeadingBlock } from "./serializers/HeadingBlock";
+import { TextBlock } from "./serializers/TextBlock";
 import { TwitterBlock } from "./serializers/TwitterBlock";
 import { YouTubeBlock } from "./serializers/YouTubeBlock";
 
@@ -73,6 +73,7 @@ const serializers = {
     link: (props: any) => (
       <TextLink href={props.mark.href}>{props.children}</TextLink>
     ),
+    code: Code,
   },
   list: withWrap("default")((props) => (
     <UnorderedList fontSize="lg">{props.children}</UnorderedList>
@@ -81,7 +82,7 @@ const serializers = {
   container: (props: any) => <>{props.children}</>,
 };
 
-export const PortableText = createPortableTextComponent({
+export const ContentPortableText = createPortableTextComponent({
   ...sanityConfig,
   serializers: serializers,
 });

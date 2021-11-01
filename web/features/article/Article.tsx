@@ -8,7 +8,7 @@ type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   category: string;
   title?: string;
-  description?: string;
+  description?: unknown[];
   content: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: Date;
@@ -18,7 +18,7 @@ type ArticleProps = {
 export const Article = ({
   category,
   title = "",
-  description = "",
+  description = [],
   content,
   authors,
   publishedAt,

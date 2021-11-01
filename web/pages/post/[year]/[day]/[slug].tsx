@@ -12,7 +12,7 @@ import {
   filterDataToSingleItem,
   getClient,
 } from "../../../../utils/sanity/sanity.server";
-import { urlFor } from "../../../../utils/sanity/utils";
+import { toPlainText, urlFor } from "../../../../utils/sanity/utils";
 
 type BlogPostPageProps = {
   data: Post;
@@ -49,7 +49,7 @@ export default function BlogPostPage({
     <>
       <SiteMetadata
         title={preview ? `${post.title} [preview]` : post.title}
-        description={post.description}
+        description={toPlainText(post.description)}
         image={getImageUrl(post.coverImage)}
         author={authors.map((author) => author.fullName).join(", ")}
       />
@@ -159,8 +159,8 @@ type Post = {
   id: string;
   slug: string;
   title: string;
-  description: string;
-  content: any;
+  description: unknown[];
+  content: unknown[];
   newAuthors: { fullName: string }[];
   oldAuthors: { fullName: string }[];
   tags: string[];

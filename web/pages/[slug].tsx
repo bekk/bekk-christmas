@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
+import {toPlainText} from "../utils/sanity/utils";
 import { Article } from "../features/article/Article";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { usePreviewSubscription } from "../utils/sanity/sanity.client";
@@ -16,7 +17,7 @@ type PageProps = {
   data: {
     slug: string;
     title: string;
-    description: string;
+    description: unknown[];
     content: unknown[];
   };
 };
@@ -32,18 +33,18 @@ export default function Page({
     enabled: preview,
   });
 
-  const [post] = data;
+  const [page] = data;
   return (
     <>
       <SiteMetadata
-        title={`${post.title} | Bekk Christmas`}
-        description={post.description}
+        title={`${page.title} | Bekk Christmas`}
+        description={toPlainText(page.description)}
       />
       <Article
-        title={post.title}
+        title={page.title}
         category="Info"
-        description={post.description}
-        content={post.content}
+        description={page.description}
+        content={page.content}
       />
     </>
   );
