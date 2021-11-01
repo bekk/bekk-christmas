@@ -6,6 +6,7 @@ import post from "./documents/post";
 import tag from "./documents/tag";
 import codePen from "./objects/codePen";
 import codeSandbox from "./objects/codeSandbox";
+import descriptionText from "./objects/descriptionText";
 import iframe from "./objects/iframe";
 import imageWithMetadata from "./objects/imageWithMetadata";
 import portableText from "./objects/portableText";
@@ -27,6 +28,7 @@ export default createSchema({
     iframe,
     codePen,
     codeSandbox,
+    descriptionText,
     imageWithMetadata,
     portableText,
     twitter,

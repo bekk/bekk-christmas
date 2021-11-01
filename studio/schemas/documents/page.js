@@ -23,7 +23,7 @@ const post = {
       description:
         "This is the excerpt, shown at the top of the page, as well as when shared on social media.",
       name: "description",
-      type: "text",
+      type: "descriptionText",
     },
     {
       title: "Content",

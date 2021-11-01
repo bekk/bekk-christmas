@@ -1,19 +1,20 @@
-import { Box, Flex, Heading, Container, Text } from "@chakra-ui/react";
-import React from "react";
-import { PortableText } from "../portable-text/PortableText";
-import { Space } from "../design-system/Space";
 import { Image } from "@chakra-ui/image";
+import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
+import { Space } from "../design-system/Space";
+import { ContentPortableText } from "../portable-text/ContentPortableText";
+import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 
 type ArticleBodyProps = {
   title: string;
   category: string;
   readingTime?: string;
-  description?: string;
+  description?: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: string;
   coverImage: string;
-  content: unknown;
+  content: unknown[];
 };
 export const ArticleBody = ({
   title,
@@ -69,7 +70,9 @@ export const ArticleBody = ({
         {description && (
           <>
             <Space />
-            <Box fontSize="2xl">{description}</Box>
+            <Box fontSize="2xl">
+              <DescriptionPortableText blocks={description} />
+            </Box>
           </>
         )}
       </Box>
@@ -83,7 +86,11 @@ export const ArticleBody = ({
           borderRadius="20px"
         />
       )}
-      {content ? <PortableText blocks={content} /> : <Text>No content</Text>}
+      {content ? (
+        <ContentPortableText blocks={content} />
+      ) : (
+        <Text>No content</Text>
+      )}
     </Container>
   );
 };
