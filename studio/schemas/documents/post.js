@@ -23,9 +23,9 @@ const post = {
     {
       title: "Description",
       description:
-        "This is the excerpt, shown at the top of the article, as well as when shared on social media. Keep it short!",
+        "This is the excerpt, shown at the top of the page, as well as when shared on social media.",
       name: "description",
-      type: "text",
+      type: "descriptionText",
     },
     {
       title: "Authors",
