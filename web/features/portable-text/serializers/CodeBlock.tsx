@@ -6,6 +6,7 @@ import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
 import elm from "react-syntax-highlighter/dist/cjs/languages/prism/elm";
 import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
+import kotlin from "react-syntax-highlighter/dist/cjs/languages/prism/kotlin";
 import html from "react-syntax-highlighter/dist/cjs/languages/prism/markup";
 import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
 import prism from "react-syntax-highlighter/dist/cjs/styles/prism/prism";
@@ -17,6 +18,7 @@ SyntaxHighlighter.registerLanguage("jsx", jsx);
 SyntaxHighlighter.registerLanguage("tsx", tsx);
 SyntaxHighlighter.registerLanguage("elm", elm);
 SyntaxHighlighter.registerLanguage("bash", bash);
+SyntaxHighlighter.registerLanguage("kotlin", kotlin);
 
 export const CodeBlock = ({ node }: any) => {
   if (!node?.code) {
