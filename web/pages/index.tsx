@@ -49,7 +49,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const now = new Date();
   const isAfterJuly = now.getMonth() > 6;
   const isBeforeChristmas = now.getMonth() < 11;
-  console.log({ isAfterJuly, isBeforeChristmas });
 
   return {
     props: {
