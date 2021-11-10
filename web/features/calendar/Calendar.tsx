@@ -9,14 +9,20 @@ const listOf24Days = Array(24)
   .fill(0)
   .map((_, i) => i + 1);
 
-type LandingPageProps = {
-  year: number;
+type CalendarProps = {
+  year: number | string;
 };
-const LandingPage = (props: LandingPageProps) => {
+const Calendar = (props: CalendarProps) => {
+  const showYearNumber = new Date().getFullYear() !== Number(props.year);
   return (
     <Center flexDirection="column" backgroundColor="brand.darkGreen">
       <Snowfall />
       <BekkChristmasLogo maxWidth={300} mt={12} />
+      {showYearNumber && (
+        <Heading mt={12} color="white" fontSize="4rem" fontWeight="normal">
+          The {props.year} calendar
+        </Heading>
+      )}
       <SimpleGrid
         columns={[2, 2, 3, 4]}
         gap={6}
@@ -33,11 +39,11 @@ const LandingPage = (props: LandingPageProps) => {
   );
 };
 
-export default LandingPage;
+export default Calendar;
 
 type DayProps = {
   day: number;
-  year: number;
+  year: number | string;
 };
 function Day({ day, year }: DayProps) {
   const colors = colorCombinations[(day - 1) % colorCombinations.length];
