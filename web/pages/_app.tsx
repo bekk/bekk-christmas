@@ -2,11 +2,11 @@ import { UserProvider } from "@auth0/nextjs-auth0";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import React from "react";
-import { useAnalytics } from "../features/analytics/useAnalytics";
+import { usePageViewTracking } from "../features/analytics/usePageViewTracking";
 import { theme } from "../utils/theme";
 
 function App({ Component, pageProps }: AppProps) {
-  useAnalytics();
+  usePageViewTracking();
   return (
     <UserProvider>
       <ChakraProvider theme={theme}>

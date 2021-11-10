@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { slugify } from "../../utils/slug";
 
-export const useAnalytics = () => {
+export const usePageViewTracking = () => {
   const router = useRouter();
   const trackPageView = (url: string) => {
     const safeUrl = slugify(url);
