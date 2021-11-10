@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import {toPlainText} from "../utils/sanity/utils";
 import { Article } from "../features/article/Article";
 import { SiteMetadata } from "../features/layout/SiteMetadata";
 import { usePreviewSubscription } from "../utils/sanity/sanity.client";
@@ -9,6 +8,7 @@ import {
   filterDataToSingleItem,
   getClient,
 } from "../utils/sanity/sanity.server";
+import { toPlainText } from "../utils/sanity/utils";
 
 type PageProps = {
   query: string;

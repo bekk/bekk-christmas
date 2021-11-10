@@ -2,17 +2,17 @@ import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { Article } from "../../../../features/article/Article";
-import { ArticleBackButton } from "../../../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../../../features/site-footer/SiteFooter";
-import { toDayYear } from "../../../../utils/date";
-import { usePreviewSubscription } from "../../../../utils/sanity/sanity.client";
+import { Article } from "../../../../../features/article/Article";
+import { ArticleBackButton } from "../../../../../features/article/ArticleBackButton";
+import { SiteMetadata } from "../../../../../features/layout/SiteMetadata";
+import { SiteFooter } from "../../../../../features/site-footer/SiteFooter";
+import { toDayYear } from "../../../../../utils/date";
+import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
   getClient,
-} from "../../../../utils/sanity/sanity.server";
-import { toPlainText, urlFor } from "../../../../utils/sanity/utils";
+} from "../../../../../utils/sanity/sanity.server";
+import { toPlainText, urlFor } from "../../../../../utils/sanity/utils";
 
 type BlogPostPageProps = {
   data: Post;
