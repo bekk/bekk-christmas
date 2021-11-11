@@ -1,9 +1,16 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
 import readingTime from "reading-time";
 import { toPlainText } from "../../utils/sanity/utils";
 import { HypeButton } from "../hype/HypeButton";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleHeader } from "./ArticleHeader";
+
+const formatter = Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
@@ -28,13 +35,24 @@ export const Article = ({
   showReadingTime = false,
   showHype = false,
 }: ArticleProps) => {
-  const year = publishedAt?.getFullYear();
-  const month = publishedAt?.getMonth() + 1;
-  const day = publishedAt?.getDate();
+  const publishedAtDate = formatter.format(publishedAt);
 
-  const publishedAtDate = publishedAt ? `${day}. ${month} ${year}` : undefined;
+  const [isScrolledToTop, setScrolledToTop] = React.useState(true);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolledToTop(window.scrollY < 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <>
+    <Box
+      backgroundColor={isScrolledToTop ? "brand.pink" : "white"}
+      transition="background-color 1s ease-out"
+    >
       <ArticleHeader />
       <ArticleBody
         title={title}
@@ -49,6 +67,6 @@ export const Article = ({
         coverImage={coverImage ?? ""}
       />
       {showHype && <HypeButton position="fixed" bottom="1rem" left="1rem" />}
-    </>
+    </Box>
   );
 };
