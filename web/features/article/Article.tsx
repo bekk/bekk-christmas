@@ -1,6 +1,7 @@
 import React from "react";
 import readingTime from "reading-time";
 import { toPlainText } from "../../utils/sanity/utils";
+import { HypeButton } from "../hype/HypeButton";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleHeader } from "./ArticleHeader";
 
@@ -14,6 +15,7 @@ type ArticleProps = {
   publishedAt?: Date;
   coverImage?: string;
   showReadingTime?: boolean;
+  showHype?: boolean;
 };
 export const Article = ({
   category,
@@ -24,7 +26,13 @@ export const Article = ({
   publishedAt,
   coverImage,
   showReadingTime = false,
+  showHype = false,
 }: ArticleProps) => {
+  const year = publishedAt?.getFullYear();
+  const month =publishedAt?.getMonth() + 1;
+  const day = publishedAt?.getDate();
+
+  const publishedAtDate = publishedAt ? `${day}. ${month} ${year}` : undefined;
   return (
     <>
       <ArticleHeader />
@@ -36,10 +44,11 @@ export const Article = ({
         }
         description={description}
         authors={authors}
-        publishedAt={publishedAt?.toLocaleDateString("nb-NO")}
+        publishedAt={publishedAtDate}
         content={content}
         coverImage={coverImage ?? ""}
       />
+      {showHype && <HypeButton position="fixed" bottom="1rem" left="1rem" />}
     </>
   );
 };

@@ -19,7 +19,6 @@ function App({ Component, pageProps }: AppProps) {
 
 export default App;
 
-
 export const usePageViewTracking = () => {
   const router = useRouter();
   const trackPageView = (url: string) => {
