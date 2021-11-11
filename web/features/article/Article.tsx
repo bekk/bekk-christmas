@@ -7,7 +7,7 @@ import { ArticleHeader } from "./ArticleHeader";
 
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
-  category: string;
+  category?: string;
   title?: string;
   description?: unknown[];
   content: unknown[];
