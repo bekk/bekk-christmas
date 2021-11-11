@@ -62,6 +62,7 @@ export default function BlogPostPage({
         authors={authors}
         coverImage={post.coverImage}
         showReadingTime
+        showHype
       />
     </>
   );

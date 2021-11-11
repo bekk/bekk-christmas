@@ -1,0 +1,104 @@
+import { Box, BoxProps, Center, Stack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import React from "react";
+import { Package } from "./Package";
+import { useHype } from "./useHype";
+
+export const HypeButton = (props: BoxProps) => {
+  const { serverHype, addHype } = useHype();
+  const [addedHype, setAddedHype] = React.useState(0);
+  const [isAddingHype, setAddingHype] = React.useState(false);
+  const [whatToShow, setWhatToShow] = React.useState<"added" | "total">(
+    "total"
+  );
+  const [isMaxedOut, setMaxedOut] = React.useState(false);
+
+  const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  const onPointerPressed = () => {
+    clearTimeout(timeoutRef.current);
+    setWhatToShow("added");
+    setAddingHype(true);
+    setAddedHype((prev) => Math.min(prev + 1, 50));
+    intervalRef.current = setInterval(() => {
+      setAddedHype((prev) => Math.min(prev + 1, 50));
+      if (navigator.vibrate) {
+        navigator.vibrate(10);
+      }
+    }, 150);
+  };
+  const onPointerReleased = () => {
+    clearInterval(intervalRef.current);
+    setAddingHype(false);
+    timeoutRef.current = setTimeout(async () => {
+      if (!isMaxedOut) {
+        await addHype(addedHype);
+      }
+      setWhatToShow("total");
+      setMaxedOut(addedHype === 50);
+    }, 2000);
+  };
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      onPointerPressed();
+    }
+  };
+  const onKeyUp = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      onPointerReleased();
+    }
+  };
+
+  return (
+    <Box {...props}>
+      <Stack>
+        <Box
+          as="button"
+          aria-label="Add hype"
+          onPointerDown={onPointerPressed}
+          onPointerUp={onPointerReleased}
+          onKeyDown={onKeyDown}
+          onKeyUp={onKeyUp}
+          width="60px"
+        >
+          <Box>
+            <Package isOpen={isAddingHype} />
+          </Box>
+          {serverHype > 0 && (
+            <Box userSelect="none">
+              <motion.div
+                animate={{
+                  scale: addedHype % 2 ? 1.1 : 1,
+                }}
+                transition={{ duration: 0.2 }}
+              >
+                <Center
+                  borderRadius="1em"
+                  height="2em"
+                  background="black"
+                  color="white"
+                  mx="auto"
+                >
+                  {whatToShow === "total"
+                    ? getHypeDisplayValue(serverHype)
+                    : `+${addedHype}`}
+                </Center>
+              </motion.div>
+            </Box>
+          )}
+        </Box>
+      </Stack>
+    </Box>
+  );
+};
+
+const getHypeDisplayValue = (hype: number) => {
+  if (hype < 1000) {
+    return hype;
+  }
+  if (hype < 1000000) {
+    return `${(hype / 1000).toFixed(1)}K`;
+  }
+  return "🔥🔥🔥";
+};
