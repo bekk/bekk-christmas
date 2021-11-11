@@ -29,15 +29,15 @@ export const ArticleBody = ({
   const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
     <Container
-      backgroundColor="white"
       color="brand.midGrey"
-      margin="120px auto 80px"
+      mx="auto"
+      pb="120px"
       maxWidth="container.lg"
     >
       <Box marginBottom="80px">
         {category && (
           <Box fontSize={"lg"} marginBottom="16px">
-            {category}
+            {category.toUpperCase()}
           </Box>
         )}
         <Heading
@@ -55,18 +55,24 @@ export const ArticleBody = ({
         marginBottom="80px"
         color="brand.darkGrey"
       >
-        <Flex flexWrap="wrap">
-          <Text>{readingTime}</Text>
-          <Text px={2}>-</Text>
-          <Text>
-            {authors
+        <Flex flexWrap="wrap" fontSize="24px">
+          <Text fontWeight="bold" mb={[2, 0]}>
+            {readingTime}
+          </Text>
+          <Text display={["none", "block"]} px="8px">
+            &middot;
+          </Text>
+          <Text mb={[2, 0]}>
+            {authors?.length
               ? "Written by " +
                 authors.map((author) => author.fullName).join(", ")
               : "No authors"}
           </Text>
-          {authors && publishedAt && <Text px={2}>-</Text>}
-          {publishedAt}
         </Flex>
+
+        <Text fontSize="24px" color="gray.500">
+          {publishedAt}
+        </Text>
         {description && (
           <>
             <Space />

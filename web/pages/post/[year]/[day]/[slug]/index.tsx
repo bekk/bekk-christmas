@@ -56,7 +56,7 @@ export default function BlogPostPage({
       <Article
         title={post.title}
         description={post.description}
-        category="Article"
+        category={post.tags?.join(", ")}
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
