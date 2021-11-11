@@ -7,7 +7,10 @@ import { useHype } from "./useHype";
 export const HypeButton = (props: BoxProps) => {
   const { serverHype, addHype } = useHype();
   const [addedHype, setAddedHype] = React.useState(0);
-  const [showMode, setShowMode] = React.useState<"added" | "total">("total");
+  const [isAddingHype, setAddingHype] = React.useState(false);
+  const [whatToShow, setWhatToShow] = React.useState<"added" | "total">(
+    "total"
+  );
   const [isMaxedOut, setMaxedOut] = React.useState(false);
 
   const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
@@ -15,28 +18,38 @@ export const HypeButton = (props: BoxProps) => {
 
   const onPointerPressed = () => {
     clearTimeout(timeoutRef.current);
-    setShowMode("added");
-    if (isMaxedOut) {
-      return;
-    }
+    setWhatToShow("added");
+    setAddingHype(true);
     setAddedHype((prev) => Math.min(prev + 1, 50));
     intervalRef.current = setInterval(() => {
       setAddedHype((prev) => Math.min(prev + 1, 50));
       if (navigator.vibrate) {
         navigator.vibrate(10);
       }
-    }, 100);
+    }, 150);
   };
   const onPointerReleased = () => {
     clearInterval(intervalRef.current);
+    setAddingHype(false);
     timeoutRef.current = setTimeout(async () => {
       if (!isMaxedOut) {
         await addHype(addedHype);
       }
-      setShowMode("total");
+      setWhatToShow("total");
       setMaxedOut(addedHype === 50);
     }, 2000);
   };
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      onPointerPressed();
+    }
+  };
+  const onKeyUp = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      onPointerReleased();
+    }
+  };
+
   return (
     <Box {...props}>
       <Stack>
@@ -45,38 +58,35 @@ export const HypeButton = (props: BoxProps) => {
           aria-label="Add hype"
           onPointerDown={onPointerPressed}
           onPointerUp={onPointerReleased}
+          onKeyDown={onKeyDown}
+          onKeyUp={onKeyUp}
           width="60px"
         >
           <Box>
-            <motion.div
-              animate={{
-                rotate: addedHype === 0 ? 0 : addedHype % 2 ? -5 : 5,
-              }}
-              transition={{ duration: 0.1 }}
-            >
-              <Package />
-            </motion.div>
+            <Package isOpen={isAddingHype} />
           </Box>
-          <Box>
-            <motion.div
-              animate={{
-                scale: addedHype % 2 ? 1.1 : 1,
-              }}
-              transition={{ duration: 0.1 }}
-            >
-              <Center
-                borderRadius="1em"
-                height="2em"
-                background="black"
-                color="white"
-                mx="auto"
+          {serverHype > 0 && (
+            <Box userSelect="none">
+              <motion.div
+                animate={{
+                  scale: addedHype % 2 ? 1.1 : 1,
+                }}
+                transition={{ duration: 0.2 }}
               >
-                {showMode === "total"
-                  ? serverHype
-                  : `+${getHypeDisplayValue(addedHype)}`}
-              </Center>
-            </motion.div>
-          </Box>
+                <Center
+                  borderRadius="1em"
+                  height="2em"
+                  background="black"
+                  color="white"
+                  mx="auto"
+                >
+                  {whatToShow === "total"
+                    ? getHypeDisplayValue(serverHype)
+                    : `+${addedHype}`}
+                </Center>
+              </motion.div>
+            </Box>
+          )}
         </Box>
       </Stack>
     </Box>

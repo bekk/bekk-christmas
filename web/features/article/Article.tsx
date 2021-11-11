@@ -29,7 +29,7 @@ export const Article = ({
   showHype = false,
 }: ArticleProps) => {
   const year = publishedAt?.getFullYear();
-  const month =publishedAt?.getMonth() + 1;
+  const month = publishedAt?.getMonth() + 1;
   const day = publishedAt?.getDate();
 
   const publishedAtDate = publishedAt ? `${day}. ${month} ${year}` : undefined;
