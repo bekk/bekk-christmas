@@ -51,7 +51,7 @@ export const Article = ({
   return (
     <Box
       backgroundColor={isScrolledToTop ? "brand.pink" : "white"}
-      transition="background-color 1s ease-out"
+      transition="background-color .5s ease-out"
     >
       <ArticleHeader />
       <ArticleBody
