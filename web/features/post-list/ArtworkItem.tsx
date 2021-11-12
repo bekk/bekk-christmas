@@ -1,7 +1,7 @@
 import { GridItem, Image, ImageProps } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 import { colorCombinations } from "./color-combinations";
-
 
 export type ArtworkPostType = ImageProps & {
   _type: "artwork";
@@ -25,15 +25,18 @@ export const ArtworkItem = ({ index, post }: ArtworkItemProps) => {
       position="relative"
       minWidth={["100%", "368px"]}
     >
-      <Image
-        width="100%"
-        maxHeight="300px"
-        objectFit="contain"
-        alt={imageProps.alt /*To avoid an eslint error */}
-        {...imageProps}
-      />
+      <motion.div
+        animate={{ x: [0, 5, 2, -5, 1, 0], rotate: [0, -5, -2, 2, 5, 1, 0] }}
+        transition={{ loop: Infinity, duration: 5, delay: index * 0.5 }}
+      >
+        <Image
+          width="100%"
+          maxHeight="300px"
+          objectFit="contain"
+          alt={imageProps.alt /*To avoid an eslint error */}
+          {...imageProps}
+        />
+      </motion.div>
     </GridItem>
   );
 };
-
-
