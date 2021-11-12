@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../features/article/Article";
-import { SiteMetadata } from "../features/layout/SiteMetadata";
+import { SiteMetadata } from "../features/site-metadata/SiteMetadata";
 import { usePreviewSubscription } from "../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,

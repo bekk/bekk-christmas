@@ -1,4 +1,5 @@
 import { Box, BoxProps, GridItem, Heading, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
@@ -18,11 +19,14 @@ type ArticleItemProps = {
   post: ArticlePostType;
   index: number;
 };
+
+const MotionGridItem = motion(GridItem);
+
 export const ArticleItem = ({ post, index }: ArticleItemProps) => {
   const { year, day } = toDayYear(post.availableFrom);
   return (
-    <Link key={post.slug} href={`/post/${year}/${day}/${post.slug}`} passHref>
-      <GridItem
+    <Link href={`/post/${year}/${day}/${post.slug}`} passHref>
+      <MotionGridItem
         as="a"
         backgroundColor={
           colorCombinations[index % colorCombinations.length].background
@@ -32,22 +36,32 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         pb={6}
         position="relative"
         minWidth={["100%", "368px"]}
-        maxHeight="50vh"
+        maxHeight={["none", "50vh"]}
         overflowY="hidden"
+        _focus={{ outline: "10px solid red", zIndex: 100 }}
+        transition=".1s ease-out"
       >
-        <Text mb="24px">
-          {readingTime(post.plaintextContent || "").text} –{" "}
-          {post.tags?.map((tag) => tag.name).join(", ")}
-        </Text>
-        <Heading
-          as="h2"
-          fontWeight="400"
-          fontSize="48px"
-          lineHeight="54px"
-          title={post.title}
+        <motion.div
+          whileHover={{ scale: 1.04, skew: 0.9, zIndex: 100, outline: "none" }}
+          whileTap={{ scale: 0.9, zIndex: 100, outline: "none" }}
+          style={{ height: "100%" }}
+          transition={{ duration: 1 }}
         >
-          {post.title}
-        </Heading>
+          <Text mb="24px">
+            {readingTime(post.plaintextContent || "").text} –{" "}
+            {post.tags?.map((tag) => tag.name).join(", ")}
+          </Text>
+          <Heading
+            as="h2"
+            fontWeight="400"
+            fontSize="48px"
+            lineHeight="54px"
+            title={post.title}
+          >
+            {post.title}
+          </Heading>
+        </motion.div>
+
         <ArrowIcon
           position="absolute"
           bottom="24px"
@@ -55,7 +69,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
           width="24px"
           height="16px"
         />
-      </GridItem>
+      </MotionGridItem>
     </Link>
   );
 };

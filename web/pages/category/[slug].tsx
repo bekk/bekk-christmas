@@ -6,20 +6,20 @@ import {
 } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { SiteMetadata } from "../../features/layout/SiteMetadata";
+import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { PostList } from "../../features/post-list/PostList";
 import { SummaryItem } from "../../features/post-list/SummaryItem";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
   posts,
-  tag,
+  category,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Box>
       <SiteMetadata
-        title={`Posts tagged with "${tag.name}" | Bekk Christmas`}
-        description={`Discover posts tagged with "${tag.name}"`}
+        title={`Posts in the "${category.name}" category | Bekk Christmas`}
+        description={`Discover posts in the "${category.name}" category`}
         keywords={[
           "tech",
           "technology",
@@ -29,14 +29,14 @@ export default function Tag({
           "strategy",
           "business",
           "articles",
-          tag.name,
-          ...(tag.synonyms || []),
+          category.name,
+          ...(category.synonyms || []),
         ]}
       />
       <PostList posts={posts}>
         <SummaryItem>
           <Heading as="h1" fontWeight="400">
-            All posts tagged with &quot;{tag.name}&quot;
+            All posts in the &quot;{category.name}&quot; category
           </Heading>
         </SummaryItem>
       </PostList>
@@ -52,7 +52,7 @@ type Post = {
   tags: { name: string; slug: string }[];
   availableFrom: string;
 };
-type Tag = {
+type Category = {
   name: string;
   synonyms: string[];
 };
@@ -76,7 +76,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
       }`,
     { slug }
   );
-  const tagRequest = client.fetch<Tag>(
+  const categoryRequest = client.fetch<Category>(
     groq`*[_type == "tag" && slug == $slug] 
     { name, synonyms }[0]`,
     { slug }
@@ -85,7 +85,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   return {
     props: {
       posts: await postsRequest,
-      tag: await tagRequest,
+      category: await categoryRequest,
     },
     revalidate: 10,
   };
@@ -95,11 +95,11 @@ type StaticPathResult = {
   slug: string;
 };
 export const getStaticPaths: GetStaticPaths = async () => {
-  const allTags = await getClient().fetch<StaticPathResult[]>(
+  const allCategories = await getClient().fetch<StaticPathResult[]>(
     groq`*[_type == "tag"] { slug }`
   );
   return {
-    paths: allTags.map((tag) => `/tag/${tag.slug}`),
+    paths: allCategories.map((tag) => `/category/${tag.slug}`),
     fallback: "blocking",
   };
 };

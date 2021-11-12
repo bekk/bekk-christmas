@@ -1,7 +1,7 @@
 import { Center, Text } from "@chakra-ui/react";
 import { GetServerSideProps } from "next";
 import React from "react";
-import { SiteMetadata } from "../../../../../features/layout/SiteMetadata";
+import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
 import { slugify } from "../../../../../utils/slug";
 import { supabaseClient } from "../../../../../utils/supabase.client";
 

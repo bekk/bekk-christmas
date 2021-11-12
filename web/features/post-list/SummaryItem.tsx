@@ -8,8 +8,7 @@ type SummaryItemProps = {
 export const SummaryItem = ({ children }: SummaryItemProps) => (
   <GridItem
     rowSpan={2}
-    colSpan={[1, 3]}
-    minWidth={["100%", "570px"]}
+    minWidth={["100%", "552px"]}
     width="100%"
     position="relative"
   >

@@ -2,8 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import React from "react";
 import Calendar from "../features/calendar/Calendar";
-import { SiteMetadata } from "../features/layout/SiteMetadata";
-import { SiteFooter } from "../features/site-footer/SiteFooter";
+import { SiteMetadata } from "../features/site-metadata/SiteMetadata";
 import { TeaserLandingPage } from "../features/teaser/TeaserLandingPage";
 import { generateRss } from "../utils/rss";
 
@@ -30,7 +29,6 @@ const LandingPage = (props: LandingPageProps) => {
         description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
       />
       <Calendar year={props.year} />
-      <SiteFooter />
     </Box>
   );
 };
