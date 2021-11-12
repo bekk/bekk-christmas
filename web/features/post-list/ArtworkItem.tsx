@@ -27,7 +27,7 @@ export const ArtworkItem = ({ index, post }: ArtworkItemProps) => {
       minWidth={["100%", "368px"]}
     >
       <motion.div
-        animate={{ x: [0, 5, 2, -5, 1, 0], rotate: [0, -5, -2, 2, 5, 1, 0] }}
+        animate={{ x: [0, 3, 1, -3, 1, 0], rotate: [0, -3, -1, 1, 3, 1, 0] }}
         transition={{ loop: Infinity, duration: 5, delay: index * 0.5 }}
       >
         <Image

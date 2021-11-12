@@ -38,7 +38,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         minWidth={["100%", "368px"]}
         maxHeight={["none", "50vh"]}
         overflowY="hidden"
-        _focus={{ transform: "scale(1.1)", zIndex: 100, outline: "none" }}
+        _focus={{ outline: "10px solid red", zIndex: 100 }}
         transition=".1s ease-out"
       >
         <motion.div
