@@ -2,9 +2,9 @@ import { Box } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import React from "react";
-import Calendar from "../../features/calendar/Calendar";
-import { SiteMetadata } from "../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../features/site-footer/SiteFooter";
+import Calendar from "../../../features/calendar/Calendar";
+import { SiteMetadata } from "../../../features/layout/SiteMetadata";
+import { SiteFooter } from "../../../features/site-footer/SiteFooter";
 
 const YearPage = () => {
   const year = useRouter().query.year as string;
@@ -38,7 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     .fill(undefined)
     .map((_, i) => 2017 + i);
   return {
-    paths: calendarYears.map((year) => `/year/${year}`),
+    paths: calendarYears.map((year) => `/post/${year}`),
     fallback: "blocking",
   };
 };
