@@ -36,7 +36,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         pb={6}
         position="relative"
         minWidth={["100%", "368px"]}
-        maxHeight="50vh"
+        maxHeight={["none", "50vh"]}
         overflowY="hidden"
         _focus={{ transform: "scale(1.1)", zIndex: 100, outline: "none" }}
         transition=".1s ease-out"
@@ -45,7 +45,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
           whileHover={{ scale: 1.04, skew: 0.9, zIndex: 100, outline: "none" }}
           whileTap={{ scale: 0.9, zIndex: 100, outline: "none" }}
           style={{ height: "100%" }}
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
         >
           <Text mb="24px">
             {readingTime(post.plaintextContent || "").text} –{" "}

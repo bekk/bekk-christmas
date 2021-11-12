@@ -22,6 +22,7 @@ export const ArtworkItem = ({ index, post }: ArtworkItemProps) => {
       }
       color={colorCombinations[index % colorCombinations.length].foreground}
       px={10}
+      pb={[10, 0]}
       position="relative"
       minWidth={["100%", "368px"]}
     >
