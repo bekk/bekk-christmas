@@ -3,8 +3,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import React from "react";
 import Calendar from "../../../features/calendar/Calendar";
-import { SiteMetadata } from "../../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../../features/site-footer/SiteFooter";
+import { SiteMetadata } from "../../../features/site-metadata/SiteMetadata";
 
 const YearPage = () => {
   const year = useRouter().query.year as string;
@@ -15,7 +14,6 @@ const YearPage = () => {
         description={`This is the Bekk Christmas of ${year}`}
       />
       <Calendar year={year} />
-      <SiteFooter />
     </Box>
   );
 };

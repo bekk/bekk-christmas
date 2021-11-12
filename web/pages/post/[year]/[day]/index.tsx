@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { SiteMetadata } from "../../../../features/layout/SiteMetadata";
+import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
 import { PostList } from "../../../../features/post-list/PostList";
 import { PostSummaryItem } from "../../../../features/post-list/PostSummaryItem";

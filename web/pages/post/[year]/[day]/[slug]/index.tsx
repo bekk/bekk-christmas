@@ -4,8 +4,7 @@ import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../../../../../features/article/Article";
 import { ArticleBackButton } from "../../../../../features/article/ArticleBackButton";
-import { SiteMetadata } from "../../../../../features/layout/SiteMetadata";
-import { SiteFooter } from "../../../../../features/site-footer/SiteFooter";
+import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
 import { toDayYear } from "../../../../../utils/date";
 import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
 import {
@@ -109,7 +108,6 @@ const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
           </Box>
         </Center>
       </Flex>
-      <SiteFooter />
     </Box>
   );
 };

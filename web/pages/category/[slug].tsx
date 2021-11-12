@@ -6,7 +6,7 @@ import {
 } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { SiteMetadata } from "../../features/layout/SiteMetadata";
+import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { PostList } from "../../features/post-list/PostList";
 import { SummaryItem } from "../../features/post-list/SummaryItem";
 import { getClient } from "../../utils/sanity/sanity.server";
