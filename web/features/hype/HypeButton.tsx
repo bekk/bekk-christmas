@@ -50,6 +50,8 @@ export const HypeButton = (props: BoxProps) => {
     }
   };
 
+  const showNumber = serverHype > 0 || addedHype > 0;
+
   return (
     <Box {...props}>
       <Stack>
@@ -65,7 +67,7 @@ export const HypeButton = (props: BoxProps) => {
           <Box>
             <Package isOpen={isAddingHype} />
           </Box>
-          {serverHype > 0 && (
+          {showNumber && (
             <Box userSelect="none">
               <motion.div
                 animate={{
@@ -79,6 +81,8 @@ export const HypeButton = (props: BoxProps) => {
                   background="black"
                   color="white"
                   mx="auto"
+                  px="0.5em"
+                  width="fit-content"
                 >
                   {whatToShow === "total"
                     ? getHypeDisplayValue(serverHype)

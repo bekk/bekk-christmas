@@ -48,7 +48,7 @@ export const Package = (props: PackageProps) => {
           shaking: {
             y: [-10, -10],
             rotate: [-25, -5],
-            transition: { duration: 0.15, loop: Infinity },
+            transition: { duration: 0.15, repeat: Infinity },
           },
           close: { y: 0, rotate: 0 },
         }}

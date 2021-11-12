@@ -28,7 +28,7 @@ export const ArtworkItem = ({ index, post }: ArtworkItemProps) => {
     >
       <motion.div
         animate={{ x: [0, 3, 1, -3, 1, 0], rotate: [0, -3, -1, 1, 3, 1, 0] }}
-        transition={{ loop: Infinity, duration: 5, delay: index * 0.5 }}
+        transition={{ repeat: Infinity, duration: 5, delay: index * 0.5 }}
       >
         <Image
           width="100%"
