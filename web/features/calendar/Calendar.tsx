@@ -19,7 +19,12 @@ const Calendar = (props: CalendarProps) => {
       <Snowfall />
       <BekkChristmasLogo maxWidth={300} mt={12} />
       {showYearNumber && (
-        <Heading mt={12} color="white" fontSize="4rem" fontWeight="normal">
+        <Heading
+          mt={12}
+          color="white"
+          fontSize={["2.5rem", "4rem"]}
+          fontWeight="normal"
+        >
           The {props.year} calendar
         </Heading>
       )}
