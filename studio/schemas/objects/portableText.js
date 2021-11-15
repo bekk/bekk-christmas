@@ -1,6 +1,7 @@
 import {
   FiCodepen,
   FiCodesandbox,
+  FiLink2,
   FiSquare,
   FiTwitter,
   FiYoutube,
@@ -82,5 +83,6 @@ export default {
     { type: "youtube", icon: FiYoutube },
     { type: "twitter", icon: FiTwitter },
     { type: "iframe", icon: FiSquare },
+    { type: "unfurledUrl", icon: FiLink2 },
   ],
 };

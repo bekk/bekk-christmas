@@ -12,6 +12,7 @@ import { IframeBlock } from "./serializers/IframeBlock";
 import { ImageBlock } from "./serializers/ImageBlock";
 import { TextBlock } from "./serializers/TextBlock";
 import { TwitterBlock } from "./serializers/TwitterBlock";
+import { UnfurledUrlBlock } from "./serializers/UnfurledUrlBlock";
 import { YouTubeBlock } from "./serializers/YouTubeBlock";
 
 const withWrap =
@@ -54,6 +55,7 @@ const serializers = {
     codePen: withSpacing(CodePenBlock),
     youtube: withSpacing(YouTubeBlock),
     twitter: withSpacing(TwitterBlock),
+    unfurledUrl: withSpacing(UnfurledUrlBlock),
     mainImage: withWrap("wide", 80, 80, 120)(ImageBlock),
     iframe: withSpacing(IframeBlock),
     image: withWrap("wide", 80, 80, 120)(ImageBlock),

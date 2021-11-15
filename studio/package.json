@@ -16,6 +16,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@opengraphninja/react": "^0.1.5",
     "@sanity/base": "^2.14.0",
     "@sanity/code-input": "^2.14.0",
     "@sanity/components": "^2.14.0",

@@ -12,6 +12,7 @@ import imageWithMetadata from "./objects/imageWithMetadata";
 import portableText from "./objects/portableText";
 import socialMediaLink from "./objects/socialMediaLink";
 import twitter from "./objects/twitter";
+import unfurledUrl from "./objects/unfurled-url";
 import youtube from "./objects/youtube";
 
 export default createSchema({
@@ -33,5 +34,6 @@ export default createSchema({
     portableText,
     twitter,
     youtube,
+    unfurledUrl,
   ]),
 });
