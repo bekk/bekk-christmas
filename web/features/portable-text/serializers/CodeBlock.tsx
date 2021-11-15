@@ -15,6 +15,7 @@ import less from "react-syntax-highlighter/dist/cjs/languages/prism/less";
 import html from "react-syntax-highlighter/dist/cjs/languages/prism/markup";
 import rust from "react-syntax-highlighter/dist/cjs/languages/prism/rust";
 import scala from "react-syntax-highlighter/dist/cjs/languages/prism/scala";
+import swift from "react-syntax-highlighter/dist/cjs/languages/prism/swift"
 import scss from "react-syntax-highlighter/dist/cjs/languages/prism/scss";
 import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
 import prism from "react-syntax-highlighter/dist/cjs/styles/prism/prism";
@@ -40,6 +41,7 @@ SyntaxHighlighter.registerLanguage("scala", scala);
 SyntaxHighlighter.registerLanguage("clojure", clojure);
 SyntaxHighlighter.registerLanguage("fsharp", fsharp);
 SyntaxHighlighter.registerLanguage("rust", rust);
+SyntaxHighlighter.registerLanguage("swift", rust);
 
 export const CodeBlock = ({ node }: any) => {
   if (!node?.code) {
