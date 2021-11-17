@@ -73,7 +73,7 @@ export default {
           { title: "Rust", value: "rust" },
           { title: "Scala", value: "scala" },
           { title: "SCSS", value: "scss" },
-          { title: "Swift", value: "scala" },
+          { title: "Swift", value: "swift" },
           { title: "TS / TSX", value: "tsx" },
           { title: "Plain text", value: "text" },
         ],
