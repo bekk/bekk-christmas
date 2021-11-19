@@ -20,5 +20,14 @@ export const theme = extendTheme({
       darkGrey: "#242424",
       midGrey: "#505050",
     },
+    new: {
+      darkGreen: "#0B5742",
+      lightGreen: "#007E4E",
+      yellow: "#FFF19F",
+      salmon: "#FF8278",
+      peach: "#F89B90",
+      red: "#DD0026",
+      pink: "#F7DEDF",
+    },
   },
 });
