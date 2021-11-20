@@ -47,7 +47,7 @@ export const TeaserLandingPage = () => {
     >
       <ShapeBackground />
       <a href="/post/2020">
-        <Logo width="75vmin" />
+        <Logo width={["75vmin", "50vmin"]} />
       </a>
       <Countdown position="absolute" bottom="15vh" />
     </Center>
