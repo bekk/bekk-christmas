@@ -2,8 +2,8 @@ import { Box, BoxProps, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { theme } from "../../utils/theme";
-import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
-import { Snowfall } from "../snowfall/Snowfall";
+import { Logo } from "../shapes/Logo";
+import { ShapeBackground } from "../shapes/ShapeBackground";
 
 const listOf24Days = Array(24)
   .fill(0)
@@ -12,12 +12,13 @@ const listOf24Days = Array(24)
 type CalendarProps = {
   year: number | string;
 };
+
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
   return (
-    <Center flexDirection="column" backgroundColor="brand.darkGreen">
-      <Snowfall />
-      <BekkChristmasLogo maxWidth={300} mt={12} />
+    <Center flexDirection="column">
+      <Logo position="absolute" top="1vh" right="1vw" width="10vmin" />
+      <ShapeBackground />
       {showYearNumber && (
         <Heading
           mt={12}

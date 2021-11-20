@@ -4,7 +4,7 @@ import { BekkLogo } from "../design-system/BekkLogo";
 
 export const SiteFooter = () => {
   return (
-    <Center minHeight="30vh" textAlign="center">
+    <Center minHeight="30vh" textAlign="center" background="new.white">
       <Box>
         <BekkLogo />
         <Text mt={6}>Proudly powered by</Text>
