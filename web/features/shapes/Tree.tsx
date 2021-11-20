@@ -1,8 +1,6 @@
-import { Box } from "@chakra-ui/react";
-import { theme } from "../../utils/theme";
-import { ShapeProps } from "./Shape";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export const Tree = (props: ShapeProps) => {
+export const Tree = (props: BoxProps) => {
   return (
     <Box
       as="svg"

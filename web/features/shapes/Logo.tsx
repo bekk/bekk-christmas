@@ -1,8 +1,11 @@
-import { Box, keyframes, usePrefersReducedMotion } from "@chakra-ui/react";
-import { theme } from "../../utils/theme";
-import { ShapeProps } from "./Shape";
+import {
+  Box,
+  BoxProps,
+  keyframes,
+  usePrefersReducedMotion,
+} from "@chakra-ui/react";
 
-export const Logo = (props: ShapeProps) => {
+export const Logo = (props: BoxProps) => {
   const spin = keyframes`
     from { transform: rotate(0deg)}
     to { transform: rotate(360deg)}

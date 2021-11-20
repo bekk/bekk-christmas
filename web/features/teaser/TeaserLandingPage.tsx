@@ -14,13 +14,13 @@ const NumberWithLabel = ({
     display="flex"
     flexDirection="column"
     alignItems="center"
-    margin="0 1.5rem"
+    mx={["0.75rem", "1.5rem"]}
     fontFamily="heading"
   >
-    <Text fontSize="4.5rem" lineHeight="1">
+    <Text fontSize={["2.5rem", "4.5rem"]} lineHeight="1">
       {number}
     </Text>
-    <Text fontSize="1.5rem" lineHeight="1">
+    <Text fontSize={["1rem", "1.5rem"]} lineHeight="1">
       {label}
     </Text>
   </Box>
@@ -39,10 +39,15 @@ const Countdown = (props: BoxProps) => {
 
 export const TeaserLandingPage = () => {
   return (
-    <Center position="relative" height="100vh" flexDirection="column">
+    <Center
+      position="relative"
+      height="100vh"
+      width="100vw"
+      flexDirection="column"
+    >
       <ShapeBackground />
       <a href="/post/2020">
-        <Logo />
+        <Logo width="75vmin" />
       </a>
       <Countdown position="absolute" bottom="15vh" />
     </Center>
