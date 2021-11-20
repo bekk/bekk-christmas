@@ -16,27 +16,25 @@ type CalendarProps = {
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
   return (
-    <Center flexDirection="column">
-      <Logo position="absolute" top="1vh" right="1vw" width="10vmin" />
+    <Center position="relative" flexDirection="column" minHeight="100vh">
+      <Logo
+        position={["relative", "relative", "absolute"]}
+        top={["5vmin", "5vmin", "1vmin"]}
+        right="1vmin"
+        width={["25vmin", "20vmin", "15vmin"]}
+      />
       <ShapeBackground />
       {showYearNumber && (
         <Heading
           mt={12}
           color="white"
-          fontSize={["2.5rem", "4rem"]}
+          fontSize={["2.5rem", "3.5rem", "4rem"]}
           fontWeight="normal"
         >
           The {props.year} calendar
         </Heading>
       )}
-      <SimpleGrid
-        columns={[2, 2, 3, 4]}
-        gap={6}
-        my="40px"
-        width="100%"
-        maxWidth="872px"
-        px={6}
-      >
+      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" my="40px" px={6}>
         {listOf24Days.map((day) => (
           <Day key={day} day={day} year={props.year} />
         ))}
@@ -52,43 +50,43 @@ type DayProps = {
   year: number | string;
 };
 function Day({ day, year }: DayProps) {
-  const colors = colorCombinations[(day - 1) % colorCombinations.length];
-  const degreeTable = [-1.5, -0.75, 0.75, 1.5];
-  const daysToDecorateWithSnow = [4, 5, 11, 19, 24];
+  const degreeTable = [-1.5, -1, -0.5, 0.5, 1, 1.5];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
     <Link href={`/post/${year}/${day}`} passHref>
-      <Center
+      <Box
         as="a"
-        backgroundColor={colors.background}
-        color={colors.foreground}
-        width="100%"
-        maxWidth="200px"
-        height="200px"
+        color="new.white"
+        border="3px solid white"
+        width="150px"
+        height="150px"
         transition=".25s ease-out"
         transformOrigin="top"
-        position="relative"
+        display="flex"
+        justifyContent="flex-end"
+        alignItems="flex-end"
+        padding="10px"
         _hover={{
           transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
           boxShadow: "xl",
+          background: "rgba(255, 255, 255, 0.375)",
         }}
         _focus={{
           transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
           boxShadow: "xl",
+          background: "rgba(255, 255, 255, 0.375)",
         }}
       >
-        {daysToDecorateWithSnow.includes(day) && (
-          <Snowheap top="-16px" right="-16px" width="60%" />
-        )}
         <Heading
           as="h2"
-          fontSize="100px"
+          fontSize="40px"
           fontWeight="400"
+          lineHeight="1"
           aria-label={`See the articles for day ${day}`}
         >
           {day}
         </Heading>
-      </Center>
+      </Box>
     </Link>
   );
 }
