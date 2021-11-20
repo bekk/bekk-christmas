@@ -1,4 +1,4 @@
-import { Center } from "@chakra-ui/react";
+import { Box, Text, BoxProps, Center } from "@chakra-ui/react";
 import React from "react";
 import { BlobThick } from "../shapes/BlobThick";
 import { BlobWide } from "../shapes/BlobWide";
@@ -11,6 +11,42 @@ import { PillarSmall } from "../shapes/PillarSmall";
 import { Star } from "../shapes/Star";
 import { Squiggle } from "../shapes/Squiggle";
 import { Tree } from "../shapes/Tree";
+import { Logo } from "../shapes/Logo";
+import { FontLoader } from "../../features/design-system/FontLoader";
+
+const NumberWithLabel = ({
+  number,
+  label,
+}: {
+  number: string;
+  label: string;
+}) => (
+  <Box
+    display="flex"
+    flexDirection="column"
+    alignItems="center"
+    margin="0 1.5rem"
+    fontFamily="heading"
+  >
+    <Text fontSize="4.5rem" lineHeight="1">
+      {number}
+    </Text>
+    <Text fontSize="1.5rem" lineHeight="1">
+      {label}
+    </Text>
+  </Box>
+);
+
+const Countdown = (props: BoxProps) => {
+  return (
+    <Box {...props} color="white" display="flex">
+      <NumberWithLabel number="6" label="Days" />
+      <NumberWithLabel number="4" label="Hours" />
+      <NumberWithLabel number="11" label="minutes" />
+      <NumberWithLabel number="47" label="seconds" />
+    </Box>
+  );
+};
 
 export const TeaserLandingPage = () => {
   return (
@@ -19,6 +55,7 @@ export const TeaserLandingPage = () => {
       background="new.darkGreen"
       overflow="hidden"
       position="relative"
+      flexDirection="column"
     >
       <CircleLarge position="absolute" bottom="-10vh" left="-10vw" />
       <CircleLarge position="absolute" top="-50vh" right="5vw" />
@@ -39,6 +76,8 @@ export const TeaserLandingPage = () => {
       <Star position="absolute" bottom="5vh" right="15vw" />
       <Squiggle position="absolute" top="-5vh" left="45vw" />
       <Tree position="absolute" bottom="0vh" left="-3vw" />
+      <Logo position="relative" />
+      <Countdown position="absolute" bottom="15vh" />
     </Center>
   );
 };

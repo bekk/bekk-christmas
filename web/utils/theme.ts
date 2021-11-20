@@ -28,6 +28,7 @@ export const theme = extendTheme({
       peach: "#F89B90",
       red: "#DD0026",
       pink: "#F7DEDF",
+      white: "#FFFFFF",
     },
   },
 });
