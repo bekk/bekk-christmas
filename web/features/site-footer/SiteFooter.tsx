@@ -1,12 +1,10 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { BekkLogo } from "../design-system/BekkLogo";
 
 export const SiteFooter = () => {
   return (
-    <Center minHeight="30vh" textAlign="center" background="new.white">
+    <Center minHeight="20vh" textAlign="center" background="new.white">
       <Box>
-        <BekkLogo />
         <Text mt={6}>Proudly powered by</Text>
         <a href="https://sanity.io" rel="noopener noreferrer">
           <Image

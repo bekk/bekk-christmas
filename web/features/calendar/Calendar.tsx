@@ -4,6 +4,7 @@ import React from "react";
 import { theme } from "../../utils/theme";
 import { Logo } from "../shapes/Logo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
+import { SiteFooter } from "../site-footer/SiteFooter";
 
 const listOf24Days = Array(24)
   .fill(0)
@@ -16,12 +17,17 @@ type CalendarProps = {
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
   return (
-    <Center position="relative" flexDirection="column" minHeight="100vh">
+    <Center
+      position="relative"
+      flexDirection="column"
+      minHeight="100vh"
+      overflowX="hidden"
+    >
       <Logo
         position={["relative", "relative", "absolute"]}
-        top={["5vmin", "5vmin", "1vmin"]}
-        right="1vmin"
-        width={["25vmin", "20vmin", "15vmin"]}
+        top={["5vmin", "5vmin", "3vmin"]}
+        right={["5vmin", "5vmin", "3vmin"]}
+        width={["20vmin", "15vmin", "10vmin"]}
       />
       <ShapeBackground />
       {showYearNumber && (
