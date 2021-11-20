@@ -34,7 +34,7 @@ const Calendar = (props: CalendarProps) => {
           The {props.year} calendar
         </Heading>
       )}
-      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" my="40px" px={6}>
+      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" margin="30px 0 80px" px={6}>
         {listOf24Days.map((day) => (
           <Day key={day} day={day} year={props.year} />
         ))}
