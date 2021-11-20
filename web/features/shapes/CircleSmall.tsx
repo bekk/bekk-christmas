@@ -1,6 +1,8 @@
-import { Box, BoxProps } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { theme } from "../../utils/theme";
+import { ShapeProps } from "./Shape";
 
-export const CircleSmall = (props: BoxProps) => {
+export const CircleSmall = (props: ShapeProps) => {
   return (
     <Box
       as="svg"
@@ -11,17 +13,10 @@ export const CircleSmall = (props: BoxProps) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_647_6237)">
-        <path
-          d="M291.545 583.09C452.561 583.09 583.09 452.561 583.09 291.545C583.09 130.529 452.561 0 291.545 0C130.529 0 0 130.529 0 291.545C0 452.561 130.529 583.09 291.545 583.09Z"
-          fill="#FF8278"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_647_6237">
-          <rect width="583.091" height="583.091" fill="white" />
-        </clipPath>
-      </defs>
+      <path
+        d="M291.545 583.09C452.561 583.09 583.09 452.561 583.09 291.545C583.09 130.529 452.561 0 291.545 0C130.529 0 0 130.529 0 291.545C0 452.561 130.529 583.09 291.545 583.09Z"
+        fill={props.shapeColor ?? theme.colors.new.salmon}
+      />
     </Box>
   );
 };
