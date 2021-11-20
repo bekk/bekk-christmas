@@ -25,7 +25,7 @@ export const ShapeBackground = () => {
     >
       <Circle
         position="absolute"
-        bottom={["0%", "-10%", "-20%", "-10%"]}
+        bottom={["0%", "-10%", "-20%", "-25%"]}
         left={["-60%", "-40%", "-30%", "-10%"]}
       />
       <Circle
@@ -46,12 +46,12 @@ export const ShapeBackground = () => {
         position="absolute"
         top={["2%", "12%", "3%", "2%"]}
         right={["-3%", "-15%", "-15%", "-3%"]}
-        width={["75vmin", "60vmin", "50vmin", "75vmin"]}
+        width={["75vmin", "60vmin", "50vmin", "60vmin"]}
         fill="new.salmon"
       />
       <BlobWide
         position="absolute"
-        bottom={["45%", "45%", "-15%", "-15%"]}
+        bottom={["45%", "45%", "-15%", "-30%"]}
         left={["-60%", "-60%", "10%", "17%"]}
         width={["120vmin", "120vmin", "80vmin", "80vmin"]}
       />
@@ -69,7 +69,7 @@ export const ShapeBackground = () => {
       <Branch
         position="absolute"
         top={["-1%", "-5%", "-8%", "-10%"]}
-        right={["-60%", "-55%", "-45%", "-22%"]}
+        right={["-60%", "-55%", "-45%", "-25%"]}
         width={["130vmin", "115vmin", "100vmin", "85vmin"]}
       />
       <Star
@@ -87,24 +87,24 @@ export const ShapeBackground = () => {
       <Squiggle
         position="absolute"
         top={["25%", "25%", "5%", "-7%"]}
-        right={["-7%", "-7%", "-10%", "12%"]}
+        right={["-7%", "-7%", "-10%", "16%"]}
         width={["110vmin", "110vmin", "65vmin", "75vmin"]}
       />
 
       <Pillar
         position="absolute"
-        bottom={["-5%", "-15%", "-15%", "-20%"]}
+        bottom={["-5%", "-15%", "-15%", "-25%"]}
         left={["-15%", "-5%", "2%", "5%"]}
         fill="#004A33"
       />
       <Pillar
         position="absolute"
-        bottom={["-100%", "-100%", "-15%", "-15%"]}
+        bottom={["-100%", "-100%", "-15%", "-30%"]}
         left={["25%", "25%", "35%", "25%"]}
       />
       <Pillar
         position="absolute"
-        bottom={["-2%", "-20%", "-30%", "-20%"]}
+        bottom={["-2%", "-20%", "-30%", "-30%"]}
         left={["5%", "10%", "5%", "10%"]}
         width={["75vmin", "60vmin", "50vmin", "37vmin"]}
         fill="new.darkGreen"
