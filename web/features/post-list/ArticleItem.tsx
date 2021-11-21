@@ -31,10 +31,15 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         flexDirection="column"
         background="new.white"
         padding={["32px 16px", "32px"]}
-        width={["219px", "300px"]}
+        width={["220px", "300px"]}
         height={["300px", "430px"]}
         color="new.darkGreen"
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+        transition="transform 0.2s, background 0.2s"
+        _hover={{
+          transform: "scale(1.05)",
+          background: "new.pink",
+        }}
       >
         <Text mb="12px" fontSize="14px">
           <Box
