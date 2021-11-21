@@ -2,6 +2,7 @@ import React, { createRef } from "react";
 import { Flex, Box, HStack } from "@chakra-ui/react";
 import { ArticleItem, ArticlePostType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
+import { Squiggle } from "../shapes/Squiggle";
 
 type PostListProps = {
   posts: ArticlePostType[];
@@ -9,6 +10,7 @@ type PostListProps = {
 };
 export const PostList = ({ posts, children }: PostListProps) => {
   const headingRef = createRef<HTMLDivElement>();
+  const headingSpace = 0.4;
   let scroll = 0;
   let headingOpacity = 1;
 
@@ -17,7 +19,7 @@ export const PostList = ({ posts, children }: PostListProps) => {
     scroll = Math.max(0, Math.min(scroll + e.deltaY, max));
     e.currentTarget.style.transform = `translateX(-${Math.min(scroll, max)}px)`;
 
-    const newOpacity = 1 - scroll / (window.innerWidth / 4);
+    const newOpacity = 1 - scroll / (window.innerWidth * headingSpace);
     headingRef.current.style.opacity = newOpacity.toString();
   };
 
@@ -42,13 +44,26 @@ export const PostList = ({ posts, children }: PostListProps) => {
       >
         {children}
       </Box>
+      <Squiggle
+        position="fixed"
+        width="50vw"
+        transform="translateY(-50%) rotate(-60deg)"
+        top="50%"
+        pointerEvents="none"
+        right="10vw"
+        strokeWidth="100"
+      />
       <Flex
         transition="transform 0.2s"
         alignItems="center"
         px="48px"
         onWheel={handleWheel}
       >
-        <HStack spacing="48px" height="430px" marginLeft="25vw">
+        <HStack
+          spacing="48px"
+          height="430px"
+          marginLeft={`${100 * headingSpace}vw`}
+        >
           {posts.map((post, index) => {
             switch (post._type) {
               case "post":
