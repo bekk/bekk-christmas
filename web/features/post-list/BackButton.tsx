@@ -15,6 +15,7 @@ export const BackButton = (props: BoxProps) => {
         fontSize={["1.5rem", "2rem"]}
         lineHeight="1"
         cursor="pointer"
+        role="group"
         {...props}
       >
         <ArrowLong
@@ -22,6 +23,8 @@ export const BackButton = (props: BoxProps) => {
           marginRight="12px"
           width="32px"
           stroke="currentColor"
+          transition="transform 0.2s"
+          _groupHover={{ transform: "translateX(-8px)" }}
         />
         Home
       </Box>

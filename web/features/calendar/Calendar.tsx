@@ -56,7 +56,7 @@ type DayProps = {
   year: number | string;
 };
 function Day({ day, year }: DayProps) {
-  const degreeTable = [-1.5, -1, -0.5, 0.5, 1, 1.5];
+  const degreeTable = [-3, -2, -1, 1, 2, 3];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
     <Link href={`/post/${year}/${day}`} passHref>
