@@ -32,11 +32,7 @@ export default function Tag({
           ...(category.synonyms || []),
         ]}
       />
-      <PostList posts={posts}>
-        <Heading as="h1" fontWeight="400">
-          {category.name}
-        </Heading>
-      </PostList>
+      <PostList posts={posts} heading={category.name} />
     </Box>
   );
 }

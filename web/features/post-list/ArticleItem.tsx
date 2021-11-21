@@ -30,9 +30,9 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         position="relative"
         flexDirection="column"
         background="new.white"
-        padding="32px"
-        width="300px"
-        height="430px"
+        padding={["32px 16px", "32px"]}
+        width={["219px", "300px"]}
+        height={["300px", "430px"]}
         color="new.darkGreen"
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
       >
@@ -42,7 +42,7 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
             background="new.salmon"
             width="0.65em"
             height="0.65em"
-            marginRight="0.25rem"
+            marginRight="8px"
             borderRadius="50%"
           />
           {readingTime(post.plaintextContent || "").text} –{" "}
@@ -51,8 +51,8 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
         <Heading
           as="h2"
           fontWeight="400"
-          fontSize="32px"
-          marginBottom="24px"
+          fontSize={["24px", "32px"]}
+          marginBottom="12px"
           title={post.title}
         >
           {post.title}

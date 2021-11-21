@@ -9,15 +9,15 @@ export const BackButton = (props: BoxProps) => {
       <Box
         as="a"
         display="block"
-        padding="16px"
+        padding="8px"
         title="Back to blog"
         color="new.pink"
-        fontSize="2rem"
+        fontSize={["1.5rem", "2rem"]}
         lineHeight="1"
         cursor="pointer"
         {...props}
       >
-        <ArrowLong display="inline-block" marginRight="12px" />
+        <ArrowLong display="inline-block" marginRight="12px" width="32px" />
         Home
       </Box>
     </Link>
