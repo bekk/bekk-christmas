@@ -8,7 +8,7 @@ type PostListProps = {
   children?: React.ReactNode;
 };
 export const PostList = ({ posts, children }: PostListProps) => {
-  const headingRef = createRef();
+  const headingRef = createRef<HTMLDivElement>();
   let scroll = 0;
   let headingOpacity = 1;
 
@@ -17,7 +17,8 @@ export const PostList = ({ posts, children }: PostListProps) => {
     scroll = Math.max(0, Math.min(scroll + e.deltaY, max));
     e.currentTarget.style.transform = `translateX(-${Math.min(scroll, max)}px)`;
 
-    headingRef.current.style.opacity = 1 - scroll / (window.innerWidth / 4);
+    const newOpacity = 1 - scroll / (window.innerWidth / 4);
+    headingRef.current.style.opacity = newOpacity.toString();
   };
 
   return (

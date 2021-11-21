@@ -48,6 +48,7 @@ type Post = {
   plaintextContent: string;
   tags: { name: string; slug: string }[];
   availableFrom: string;
+  description: unknown[];
 };
 type Category = {
   name: string;
