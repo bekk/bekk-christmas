@@ -82,7 +82,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       "plaintextContent": pt::text(content), 
       tags[]->{ name, slug },
       availableFrom,
-      description
+      description,
+      coverImage
       }`,
     {
       beginningOfDay: toDateString(year, day),

@@ -93,9 +93,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
           {posts.map((post, index) => {
             switch (post._type) {
               case "post":
-                return (
-                  <ArticleItem key={post.slug} post={post} index={index} />
-                );
+                return <ArticleItem key={post.slug} {...post} />;
               default:
                 console.log("Unknown _type found", post);
                 throw Error("Unknown post type found");
@@ -106,9 +104,10 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
       <Box
         position={["relative", "fixed"]}
         alignSelf="flex-end"
-        bottom={["0", "50%"]}
-        right={["40px", `${100 - 100 * headingSpace}%`]}
+        bottom={["0px", "50%"]}
+        right={["40px", `${100 * headingSpace}%`]}
         transform={["", "translate(200px, 350px)"]}
+        pointerEvents="none"
       >
         <Logo width="100px" />
       </Box>

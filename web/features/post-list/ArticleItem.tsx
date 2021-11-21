@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, BoxProps, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { urlFor } from "../../utils/sanity/utils";
+import { Image } from "@chakra-ui/image";
 import Link from "next/link";
 import readingTime from "reading-time";
 import { ArrowShort } from "./Arrow";
@@ -14,15 +16,12 @@ export type ArticlePostType = {
   tags: { name: string; slug: string }[];
   availableFrom: string;
   description: unknown[];
+  coverImage: string;
 };
 
-type ArticleItemProps = {
-  post: ArticlePostType;
-  index: number;
-};
-
-export const ArticleItem = ({ post, index }: ArticleItemProps) => {
+export const ArticleItem = (post: ArticlePostType) => {
   const { year, day } = toDayYear(post.availableFrom);
+  const coverImageSrc = urlFor(post.coverImage).width(800).url()!;
   return (
     <Link href={`/post/${year}/${day}/${post.slug}`} passHref>
       <Flex
@@ -53,10 +52,20 @@ export const ArticleItem = ({ post, index }: ArticleItemProps) => {
           {readingTime(post.plaintextContent || "").text} –{" "}
           {post.tags?.map((tag) => tag.name).join(", ")}
         </Text>
+        {coverImageSrc && (
+          <Image
+            src={coverImageSrc}
+            alt=""
+            borderRadius="8px"
+            maxHeight="150px"
+            objectFit="cover"
+            mb="12px"
+          />
+        )}
         <Heading
           as="h2"
           fontWeight="400"
-          fontSize={["24px", "32px"]}
+          fontSize={["24px", coverImageSrc ? "22px" : "30px"]}
           marginBottom="12px"
           title={post.title}
         >

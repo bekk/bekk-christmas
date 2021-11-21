@@ -45,6 +45,7 @@ type Post = {
   tags: { name: string; slug: string }[];
   availableFrom: string;
   description: unknown[];
+  coverImage: string;
 };
 type Category = {
   name: string;
