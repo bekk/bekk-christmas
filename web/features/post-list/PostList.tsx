@@ -26,18 +26,21 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
     headingRef.current.style.opacity = opacity.toString();
   };
 
-  const { day } = toDayYear(posts[0].availableFrom);
-  const { background, foreground, text } =
-    colorCombinations[(day - 1) % colorCombinations.length];
+  let theme = colorCombinations[0];
+
+  if (posts && posts[0]) {
+    const { day } = toDayYear(posts[0].availableFrom);
+    theme = colorCombinations[(day - 1) % colorCombinations.length];
+  }
 
   return (
     <Flex
       flexDirection={["column", "row"]}
       height="100vh"
-      background={background}
+      background={theme.background}
       overflowY="hidden"
       overflowX="hidden"
-      color={text}
+      color={theme.text}
     >
       <Squiggle
         position="fixed"
@@ -47,7 +50,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         pointerEvents="none"
         right="10vw"
         strokeWidth="100"
-        stroke={foreground}
+        stroke={theme.foreground}
       />
       <Box
         position={["static", "absolute"]}
