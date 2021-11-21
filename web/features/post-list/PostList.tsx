@@ -4,6 +4,8 @@ import { ArticleItem, ArticlePostType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
 import { Squiggle } from "../shapes/Squiggle";
 import { Logo } from "../shapes/Logo";
+import { colorCombinations } from "./color-combinations";
+import { toDayYear } from "../../utils/date";
 
 type PostListProps = {
   posts: ArticlePostType[];
@@ -24,13 +26,18 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
     headingRef.current.style.opacity = opacity.toString();
   };
 
+  const { day } = toDayYear(posts[0].availableFrom);
+  const { background, foreground, text } =
+    colorCombinations[(day - 1) % colorCombinations.length];
+
   return (
     <Flex
       flexDirection={["column", "row"]}
       height="100vh"
-      background="new.darkGreen"
+      background={background}
       overflowY="hidden"
       overflowX="hidden"
+      color={text}
     >
       <Squiggle
         position="fixed"
@@ -40,6 +47,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         pointerEvents="none"
         right="10vw"
         strokeWidth="100"
+        stroke={foreground}
       />
       <Box
         position={["static", "absolute"]}
@@ -48,14 +56,13 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         left="0"
         padding={["40px", "64px"]}
       >
-        <BackButton />
+        <BackButton color="inherit" />
       </Box>
       <Box
         position={["relative", "fixed"]}
         top={["0", "50%"]}
         left={["40px", "64px"]}
         transform={["", "translateY(-50%)"]}
-        color="new.pink"
         ref={headingRef}
         transition="opacity 0.2s"
         pointerEvents="none"

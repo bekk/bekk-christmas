@@ -17,7 +17,12 @@ export const BackButton = (props: BoxProps) => {
         cursor="pointer"
         {...props}
       >
-        <ArrowLong display="inline-block" marginRight="12px" width="32px" />
+        <ArrowLong
+          display="inline-block"
+          marginRight="12px"
+          width="32px"
+          stroke="currentColor"
+        />
         Home
       </Box>
     </Link>
