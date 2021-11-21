@@ -8,7 +8,6 @@ import { groq } from "next-sanity";
 import React from "react";
 import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { PostList } from "../../features/post-list/PostList";
-import { SummaryItem } from "../../features/post-list/SummaryItem";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
@@ -34,11 +33,9 @@ export default function Tag({
         ]}
       />
       <PostList posts={posts}>
-        <SummaryItem>
-          <Heading as="h1" fontWeight="400">
-            All posts in the &quot;{category.name}&quot; category
-          </Heading>
-        </SummaryItem>
+        <Heading as="h1" fontWeight="400">
+          {category.name}
+        </Heading>
       </PostList>
     </Box>
   );

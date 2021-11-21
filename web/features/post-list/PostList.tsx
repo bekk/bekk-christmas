@@ -1,79 +1,66 @@
-import { Grid } from "@chakra-ui/react";
-import React from "react";
+import React, { createRef } from "react";
+import { Flex, Box, HStack } from "@chakra-ui/react";
 import { ArticleItem, ArticlePostType } from "./ArticleItem";
-import { ArtworkItem, ArtworkPostType } from "./ArtworkItem";
-
-type PostType = ArticlePostType | ArtworkPostType;
+import { BackButton } from "./BackButton";
 
 type PostListProps = {
   posts: ArticlePostType[];
   children?: React.ReactNode;
 };
 export const PostList = ({ posts, children }: PostListProps) => {
-  const postsWithIllustrations = decorateWithArtworkEntries(posts);
+  const headingRef = createRef();
+  let scroll = 0;
+  let headingOpacity = 1;
+
+  const handleWheel = (e) => {
+    const max = e.currentTarget.offsetWidth - window.innerWidth;
+    scroll = Math.max(0, Math.min(scroll + e.deltaY, max));
+    e.currentTarget.style.transform = `translateX(-${Math.min(scroll, max)}px)`;
+
+    headingRef.current.style.opacity = 1 - scroll / (window.innerWidth / 4);
+  };
+
   return (
-    <Grid
-      overflowX={["visible", "scroll"]}
-      gridAutoFlow={["row", "column"]}
-      templateRows={["repeat(12, 1fr)", "repeat(2, 1fr)"]}
-      templateColumns={["none", "repeat(6, 1fr)"]}
-      minHeight="100vh"
+    <Flex
+      height="100vh"
+      overflowY="hidden"
+      overflowX="hidden"
+      background="new.darkGreen"
     >
-      {children}
-      {postsWithIllustrations.map((post, index) => {
-        switch (post._type) {
-          case "post":
-            return <ArticleItem key={post.slug} post={post} index={index} />;
-          case "artwork":
-            return <ArtworkItem key={index} post={post} index={index} />;
-          default:
-            console.log("Unknown _type found", post);
-            throw Error("Unknown post type found");
-        }
-      })}
-    </Grid>
+      <BackButton position="absolute" zIndex="1" top="48px" left="48px" />
+      <Box
+        position="fixed"
+        top="50%"
+        left="64px"
+        transform="translateY(-50%)"
+        color="new.pink"
+        pointerEvents="none"
+        opacity={headingOpacity}
+        ref={headingRef}
+        transition="opacity 0.2s"
+      >
+        {children}
+      </Box>
+      <Flex
+        transition="transform 0.2s"
+        alignItems="center"
+        px="48px"
+        onWheel={handleWheel}
+      >
+        <HStack spacing="48px" height="430px" marginLeft="25vw">
+          {posts.map((post, index) => {
+            switch (post._type) {
+              case "post":
+                return (
+                  <ArticleItem key={post.slug} post={post} index={index} />
+                );
+              default:
+                console.log("Unknown _type found", post);
+                throw Error("Unknown post type found");
+            }
+          })}
+        </HStack>
+      </Flex>
+    </Flex>
   );
-};
-const decorateWithArtworkEntries = (posts: PostType[]) => {
-  const copyOfPosts: (ArticlePostType | ArtworkPostType)[] = [...posts];
-  const arts = [
-    {
-      index: 2,
-      src: "/illustrations/branch-with-white-berries.svg",
-      alt: "A branch with white berries",
-    },
-    {
-      index: 5,
-      src: "/illustrations/man-working-at-computer.svg",
-      alt: "A man working at his computer",
-      mt: "40px",
-    },
-    {
-      index: 8,
-      src: "/illustrations/man-looking-at-phone.svg",
-      alt: "A man looking at his phone",
-      mt: "40px",
-    },
-    {
-      index: 11,
-      src: "/illustrations/branch-with-white-berries.svg",
-      alt: "A branch with white berries",
-    },
-    {
-      index: 14,
-      src: "/illustrations/man-and-woman-looking-at-phones.svg",
-      alt: "A man and a woman, looking at their phones.",
-      mt: "40px",
-    },
-    // TODO: Add much more of these
-  ];
-  arts.forEach(({ index, ...artProps }) => {
-    if (index <= copyOfPosts.length) {
-      copyOfPosts.splice(index, 0, {
-        _type: "artwork",
-        ...artProps,
-      });
-    }
-  });
-  return copyOfPosts;
 };

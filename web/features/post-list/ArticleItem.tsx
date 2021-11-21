@@ -1,10 +1,10 @@
-import { Box, BoxProps, GridItem, Heading, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import Link from "next/link";
 import React from "react";
+import { Box, BoxProps, Flex, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import readingTime from "reading-time";
+import { ArrowShort } from "./Arrow";
 import { toDayYear } from "../../utils/date";
-import { colorCombinations } from "./color-combinations";
+import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 
 export type ArticlePostType = {
   _type: "post";
@@ -13,6 +13,7 @@ export type ArticlePostType = {
   plaintextContent: string;
   tags: { name: string; slug: string }[];
   availableFrom: string;
+  description: unknown[];
 };
 
 type ArticleItemProps = {
@@ -20,67 +21,53 @@ type ArticleItemProps = {
   index: number;
 };
 
-const MotionGridItem = motion(GridItem);
-
 export const ArticleItem = ({ post, index }: ArticleItemProps) => {
   const { year, day } = toDayYear(post.availableFrom);
   return (
     <Link href={`/post/${year}/${day}/${post.slug}`} passHref>
-      <MotionGridItem
-        as="a"
-        backgroundColor={
-          colorCombinations[index % colorCombinations.length].background
-        }
-        color={colorCombinations[index % colorCombinations.length].foreground}
-        p={10}
-        pb={6}
+      <Flex
+        cursor="pointer"
         position="relative"
-        minWidth={["100%", "368px"]}
-        maxHeight={["none", "50vh"]}
-        overflowY="hidden"
-        _focus={{ outline: "10px solid red", zIndex: 100 }}
-        transition=".1s ease-out"
+        flexDirection="column"
+        background="new.white"
+        padding="32px"
+        width="300px"
+        height="430px"
+        color="new.darkGreen"
+        boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
       >
-        <motion.div
-          whileHover={{ scale: 1.04, skew: 0.9, zIndex: 100, outline: "none" }}
-          whileTap={{ scale: 0.9, zIndex: 100, outline: "none" }}
-          style={{ height: "100%" }}
-          transition={{ duration: 1 }}
+        <Text mb="12px" fontSize="14px">
+          <Box
+            display="inline-block"
+            background="new.salmon"
+            width="0.65em"
+            height="0.65em"
+            marginRight="0.25rem"
+            borderRadius="50%"
+          />
+          {readingTime(post.plaintextContent || "").text} –{" "}
+          {post.tags?.map((tag) => tag.name).join(", ")}
+        </Text>
+        <Heading
+          as="h2"
+          fontWeight="400"
+          fontSize="32px"
+          marginBottom="24px"
+          title={post.title}
         >
-          <Text mb="24px">
-            {readingTime(post.plaintextContent || "").text} –{" "}
-            {post.tags?.map((tag) => tag.name).join(", ")}
-          </Text>
-          <Heading
-            as="h2"
-            fontWeight="400"
-            fontSize="48px"
-            lineHeight="54px"
-            title={post.title}
-          >
-            {post.title}
-          </Heading>
-        </motion.div>
+          {post.title}
+        </Heading>
+        <Text noOfLines={2}>
+          <DescriptionPortableText blocks={post.description} />
+        </Text>
 
-        <ArrowIcon
+        <ArrowShort
           position="absolute"
           bottom="24px"
           right="24px"
-          width="24px"
-          height="16px"
+          width="40px"
         />
-      </MotionGridItem>
+      </Flex>
     </Link>
-  );
-};
-
-const ArrowIcon = (props: BoxProps) => {
-  return (
-    <Box as="svg" viewBox="0 0 24 16" {...props}>
-      <path
-        d="m16.25 0-.68.69 6.58 6.57H0v.97h22.15l-6.58 6.58.68.69L24 7.75 16.25 0Z"
-        fill="currentColor"
-      />
-    </Box>
   );
 };
