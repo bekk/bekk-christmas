@@ -13,25 +13,24 @@ type PostListProps = {
 export const PostList = ({ posts, heading, description }: PostListProps) => {
   const headingRef = createRef<HTMLDivElement>();
   const headingSpace = 0.4;
-  let scroll = 0;
-  let headingOpacity = 1;
 
   const handleWheel = (e) => {
-    const max = e.currentTarget.offsetWidth - window.innerWidth;
-    scroll = Math.max(0, Math.min(scroll + e.deltaY + e.deltaX, max));
-    e.currentTarget.style.transform = `translateX(-${Math.min(scroll, max)}px)`;
+    const delta = e.deltaY + e.deltaX;
+    e.currentTarget.scrollLeft += delta;
 
-    const newOpacity = 1 - scroll / (window.innerWidth * headingSpace);
-    headingRef.current.style.opacity = newOpacity.toString();
+    const scrollMax = e.currentTarget.scrollWidth - e.currentTarget.clientWidth;
+    const opacity = 1 - e.currentTarget.scrollLeft / (scrollMax * headingSpace);
+
+    headingRef.current.style.opacity = opacity.toString();
   };
 
   return (
     <Flex
       flexDirection={["column", "row"]}
-      minHeight="100vh"
+      height="100vh"
+      background="new.darkGreen"
       overflowY="hidden"
       overflowX="hidden"
-      background="new.darkGreen"
     >
       <Squiggle
         position="fixed"
@@ -53,12 +52,11 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
       </Box>
       <Box
         position={["relative", "fixed"]}
-        top="50%"
+        top={["0", "50%"]}
         left={["40px", "64px"]}
         transform={["", "translateY(-50%)"]}
         color="new.pink"
         ref={headingRef}
-        opacity={headingOpacity}
         transition="opacity 0.2s"
         pointerEvents="none"
       >
@@ -85,7 +83,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         transition="transform 0.2s"
         alignItems="center"
         padding={["40px", "48px"]}
-        width="fit-content"
+        overflowX="scroll"
         onWheel={handleWheel}
       >
         <HStack
