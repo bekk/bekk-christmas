@@ -18,7 +18,7 @@ export const Logo = (props: BoxProps) => {
     <Box
       as="svg"
       width="250px"
-      fill="new.white"
+      fill="brand.white"
       viewBox="0 0 250 243"
       animation={prefersReducedMotion ? undefined : animation}
       {...props}

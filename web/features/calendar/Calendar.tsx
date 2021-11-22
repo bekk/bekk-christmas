@@ -62,7 +62,7 @@ function Day({ day, year }: DayProps) {
     <Link href={`/post/${year}/${day}`} passHref>
       <Box
         as="a"
-        color="new.white"
+        color="brand.white"
         border="3px solid white"
         width="150px"
         height="150px"
@@ -96,47 +96,3 @@ function Day({ day, year }: DayProps) {
     </Link>
   );
 }
-
-const brandColors = theme.colors.brand;
-export const colorCombinations = [
-  {
-    background: brandColors.midGreen,
-    foreground: brandColors.lightPink,
-  },
-  {
-    background: brandColors.lightPink,
-    foreground: brandColors.midGreen,
-  },
-  {
-    background: brandColors.lightGreen,
-    foreground: brandColors.midGreenTransparent,
-  },
-  {
-    background: brandColors.red,
-    foreground: brandColors.lightPink,
-  },
-  {
-    background: brandColors.peach,
-    foreground: brandColors.midGreen,
-  },
-  {
-    background: brandColors.lightGreen,
-    foreground: brandColors.midGreen,
-  },
-];
-
-const Snowheap = (props: BoxProps) => (
-  <Box as="svg" viewBox="0 0 84 74" position="absolute" {...props}>
-    <g clipPath="url(#a)">
-      <path
-        d="M19.3 17.7S1.5 22.4 0 13 40-4.1 55.7 2.4C71.4 8.9 86.6 19.9 83 47.5 79.4 75.1 77.9 74 71.7 73.7c-6.2-.4-5.8-21.1-10.2-22.9-4.4-1.8-3.6 7.3-9.1 5.8s-.7-24.4-6.2-28.7c-5.5-4.3-3.6 10.4-8.7 9-5.1-1.4-.7-8.3-6.9-14.1-6.2-5.8-11.3-5.1-11.3-5.1Z"
-        fill="#fff"
-      />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0h83.5v73.8H0z" />
-      </clipPath>
-    </defs>
-  </Box>
-);

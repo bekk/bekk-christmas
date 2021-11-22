@@ -2,30 +2,30 @@ import { theme } from "../../utils/theme";
 
 export const colorCombinations = [
   {
-    background: theme.colors.new.darkGreen,
-    foreground: theme.colors.new.red,
-    text: theme.colors.new.pink,
+    background: theme.colors.brand.darkGreen,
+    foreground: theme.colors.brand.red,
+    text: theme.colors.brand.pink,
   },
   {
-    background: theme.colors.new.yellow,
-    foreground: theme.colors.new.darkGreen,
-    text: theme.colors.new.darkGreen,
+    background: theme.colors.brand.yellow,
+    foreground: theme.colors.brand.darkGreen,
+    text: theme.colors.brand.darkGreen,
   },
   {
-    background: theme.colors.new.lightGreen,
-    foreground: theme.colors.new.red,
-    text: theme.colors.new.pink,
-  },
-
-  {
-    background: theme.colors.new.pink,
-    foreground: theme.colors.new.darkGreen,
-    text: theme.colors.new.darkGreen,
+    background: theme.colors.brand.lightGreen,
+    foreground: theme.colors.brand.red,
+    text: theme.colors.brand.pink,
   },
 
   {
-    background: theme.colors.new.peach,
-    foreground: theme.colors.new.darkGreen,
-    text: theme.colors.new.darkGreen,
+    background: theme.colors.brand.pink,
+    foreground: theme.colors.brand.darkGreen,
+    text: theme.colors.brand.darkGreen,
+  },
+
+  {
+    background: theme.colors.brand.peach,
+    foreground: theme.colors.brand.darkGreen,
+    text: theme.colors.brand.darkGreen,
   },
 ];

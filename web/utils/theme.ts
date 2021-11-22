@@ -8,19 +8,6 @@ export const theme = extendTheme({
   },
   colors: {
     brand: {
-      midGreen: "#447A67",
-      midGreenTransparent: "#447A6766",
-      darkGreen: "#005941",
-      darkGreenTransparent: "00594180",
-      pink: "#FFE0E0",
-      lightPink: "#F7DEDF",
-      lightGreen: "#E3F0E5",
-      red: "#BC3436",
-      peach: "#EAA196",
-      darkGrey: "#242424",
-      midGrey: "#505050",
-    },
-    new: {
       darkGreen: "#0B5742",
       lightGreen: "#007E4E",
       yellow: "#FFF19F",
@@ -29,6 +16,8 @@ export const theme = extendTheme({
       red: "#DD0026",
       pink: "#F7DEDF",
       white: "#FFFFFF",
+      darkGrey: "#242424",
+      midGrey: "#505050",
     },
   },
 });

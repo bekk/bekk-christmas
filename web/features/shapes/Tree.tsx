@@ -6,7 +6,7 @@ export const Tree = (props: BoxProps) => {
       as="svg"
       width="152px"
       viewBox="0 0 152 552"
-      fill="new.darkGreen"
+      fill="brand.darkGreen"
       {...props}
     >
       <path

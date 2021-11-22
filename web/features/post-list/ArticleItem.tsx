@@ -28,22 +28,22 @@ export const ArticleItem = (post: ArticlePostType) => {
         cursor="pointer"
         position="relative"
         flexDirection="column"
-        background="new.white"
+        background="brand.white"
         padding={["24px 16px", "32px"]}
         width={["220px", "300px"]}
         height={["300px", "430px"]}
-        color="new.darkGreen"
+        color="brand.darkGreen"
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
         transition="transform 0.2s, background 0.2s"
         _hover={{
           transform: "scale(1.05)",
-          background: "new.pink",
+          background: "brand.pink",
         }}
       >
         <Text mb="12px" fontSize="14px">
           <Box
             display="inline-block"
-            background="new.salmon"
+            background="brand.salmon"
             width="0.65em"
             height="0.65em"
             marginRight="8px"

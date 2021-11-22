@@ -6,7 +6,7 @@ export const Dots = (props: BoxProps) => {
       as="svg"
       width="294px"
       viewBox="0 0 294 292"
-      fill="new.peach"
+      fill="brand.peach"
       {...props}
     >
       <path d="M11.627 78.254C18.0484 78.254 23.254 73.0484 23.254 66.627C23.254 60.2056 18.0484 55 11.627 55C5.20559 55 0 60.2056 0 66.627C0 73.0484 5.20559 78.254 11.627 78.254Z" />

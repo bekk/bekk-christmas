@@ -3,7 +3,7 @@ import React from "react";
 
 export const SiteFooter = () => {
   return (
-    <Center minHeight="20vh" textAlign="center" background="new.white">
+    <Center minHeight="20vh" textAlign="center" background="brand.white">
       <Box>
         <Text mt={6}>Proudly powered by</Text>
         <a href="https://sanity.io" rel="noopener noreferrer">

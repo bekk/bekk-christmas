@@ -55,7 +55,9 @@ const NumberWithLabel = ({
     mx={["0.75rem", "1.5rem"]}
     fontFamily="heading"
   >
-    <Text fontSize={["2.5rem", "4.5rem"]}>{number}</Text>
+    <Text fontSize={["2.5rem", "4.5rem"]} lineHeight="1">
+      {number}
+    </Text>
     <Text fontSize={["1rem", "1.5rem"]} lineHeight="1">
       {label}
     </Text>

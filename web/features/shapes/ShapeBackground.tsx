@@ -19,7 +19,7 @@ export const ShapeBackground = () => {
       width="100vw"
       minHeight="100vh"
       height="100%"
-      background="new.darkGreen"
+      background="brand.darkGreen"
       overflow="hidden"
       zIndex="-1"
     >
@@ -40,14 +40,14 @@ export const ShapeBackground = () => {
         bottom={["-100%", "-100%", "-100%", "-8%"]}
         right={["5%"]}
         width="60vmin"
-        fill="new.darkGreen"
+        fill="brand.darkGreen"
       />
       <Circle
         position="absolute"
         top={["2%", "12%", "3%", "2%"]}
         right={["-3%", "-15%", "-15%", "-3%"]}
         width={["75vmin", "60vmin", "50vmin", "60vmin"]}
-        fill="new.salmon"
+        fill="brand.salmon"
       />
       <BlobWide
         position="absolute"
@@ -107,7 +107,7 @@ export const ShapeBackground = () => {
         bottom={["-2%", "-20%", "-30%", "-30%"]}
         left={["5%", "10%", "5%", "10%"]}
         width={["75vmin", "60vmin", "50vmin", "37vmin"]}
-        fill="new.darkGreen"
+        fill="brand.darkGreen"
       />
     </Box>
   );
