@@ -4,6 +4,7 @@ import { useLuke } from "../../features/stand/useLuke";
 import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
 import { useSlideshow } from "../../features/stand/useSlideshow";
 import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
+import { GenerativeArtSlide } from "../../features/stand/views/GenerativeArtSlide";
 import { TextSlide } from "../../features/stand/views/TextSlide";
 import { TitleSlide } from "../../features/stand/views/TitleSlide";
 
@@ -20,11 +21,7 @@ export default function StandPage() {
   if (secondsLeft < 60) {
     return <CountdownSlide secondsLeft={secondsLeft} />;
   }
-  return <LukeSelector secondsLeft={secondsLeft} currentLuke={currentLuke} />;
-}
 
-type LukeSelectorProps = { currentLuke: number; secondsLeft: number };
-const LukeSelector = ({ currentLuke, secondsLeft }: LukeSelectorProps) => {
   switch (currentLuke) {
     case 1:
       return <Luke1 />;
@@ -77,7 +74,7 @@ const LukeSelector = ({ currentLuke, secondsLeft }: LukeSelectorProps) => {
     default:
       return null;
   }
-};
+}
 
 const CONFERENCE_NAME = "NDC";
 
@@ -140,7 +137,14 @@ const Luke10 = () => {
   return useSlideshow([<TitleSlide key={1}>Fun facts om Bekk</TitleSlide>]);
 };
 const Luke11 = () => {
-  return useSlideshow([<TitleSlide key={1}>Generativ kunst!</TitleSlide>]);
+  return useSlideshow([
+    <TitleSlide key={1}>Generativ kunst!</TitleSlide>,
+    <TextSlide key={2}>
+      <Text>Lag dine egne generative kunstverk her!</Text>
+      <Text>Gå til laptopen ved skjermen for å teste det ut selv.</Text>
+    </TextSlide>,
+    [<GenerativeArtSlide key={3} />, { duration: 60 * 1000 }],
+  ]);
 };
 const Luke12 = () => {
   return useSlideshow([<TitleSlide key={1}>Dagens artikler</TitleSlide>]);
