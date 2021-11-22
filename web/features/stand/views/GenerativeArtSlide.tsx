@@ -3,7 +3,7 @@ import { Box, SimpleGrid } from "@chakra-ui/layout";
 import React from "react";
 import useSWR from "swr";
 
-type CloudinaryImage = { public_id: string };
+type CloudinaryImage = { public_id: string; created_at: string };
 type Response = {
   resources: CloudinaryImage[];
 };
@@ -12,7 +12,9 @@ const getImages = async () => {
   const url = `https://res.cloudinary.com/bekkimg/image/list/fagdag-tag.json`;
   const res = await fetch(url);
   const body = (await res.json()) as Response;
-  return body.resources;
+  console.log(body);
+  // we only want to load the 21 latest images, so we discard the rest here
+  return body.resources.slice(0, 21);
 };
 
 export const GenerativeArtSlide = () => {
