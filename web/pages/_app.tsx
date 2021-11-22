@@ -1,4 +1,3 @@
-import { UserProvider } from "@auth0/nextjs-auth0";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
@@ -10,12 +9,10 @@ import { theme } from "../utils/theme";
 function App({ Component, pageProps }: AppProps) {
   usePageViewTracking();
   return (
-    <UserProvider>
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
-        <SiteFooter />
-      </ChakraProvider>
-    </UserProvider>
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+      <SiteFooter />
+    </ChakraProvider>
   );
 }
 
