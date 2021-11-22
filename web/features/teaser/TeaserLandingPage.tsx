@@ -14,7 +14,7 @@ export const TeaserLandingPage = () => {
     >
       <ShapeBackground />
       <a href="/post/2020">
-        <Logo width={["75vmin", "40vmin"]} />
+        <Logo width={["70vmin", "40vmin"]} />
       </a>
       <Countdown
         date={`${new Date().getFullYear()}/12/01`}
@@ -27,7 +27,7 @@ export const TeaserLandingPage = () => {
 const CountdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
-    return <Heading>It's happening!</Heading>;
+    return <Heading>{`It's happening!`}</Heading>;
   } else {
     // Render a countdown
     return (

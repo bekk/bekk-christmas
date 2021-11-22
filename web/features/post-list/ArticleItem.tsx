@@ -29,7 +29,7 @@ export const ArticleItem = (post: ArticlePostType) => {
         position="relative"
         flexDirection="column"
         background="new.white"
-        padding={["32px 16px", "32px"]}
+        padding={["24px 16px", "32px"]}
         width={["220px", "300px"]}
         height={["300px", "430px"]}
         color="new.darkGreen"
@@ -57,7 +57,7 @@ export const ArticleItem = (post: ArticlePostType) => {
             src={coverImageSrc}
             alt=""
             borderRadius="8px"
-            maxHeight="150px"
+            maxHeight={["75px", "150px"]}
             objectFit="cover"
             mb="12px"
           />
@@ -65,13 +65,14 @@ export const ArticleItem = (post: ArticlePostType) => {
         <Heading
           as="h2"
           fontWeight="400"
-          fontSize={["24px", coverImageSrc ? "22px" : "30px"]}
-          marginBottom="12px"
+          fontSize={coverImageSrc ? ["20px", "22px"] : ["24px", "30px"]}
+          marginBottom={coverImageSrc ? "6px" : "12px"}
           title={post.title}
+          noOfLines={[coverImageSrc ? 3 : 4, 4]}
         >
           {post.title}
         </Heading>
-        <Text noOfLines={2}>
+        <Text noOfLines={[coverImageSrc ? 1 : 2, 2]}>
           <DescriptionPortableText blocks={post.description} />
         </Text>
 
