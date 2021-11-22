@@ -1,12 +1,12 @@
+import { Box, Flex, Heading, HStack } from "@chakra-ui/react";
 import React, { createRef } from "react";
-import { Flex, Box, Heading, HStack } from "@chakra-ui/react";
+import { toDayYear } from "../../utils/date";
+import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
+import { Squiggle } from "../shapes/Squiggle";
+import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticlePostType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
-import { ArrowShort } from "./Arrow";
-import { Squiggle } from "../shapes/Squiggle";
-import { Logo } from "../shapes/Logo";
 import { colorCombinations } from "./color-combinations";
-import { toDayYear } from "../../utils/date";
 
 type PostListProps = {
   posts: ArticlePostType[];
@@ -154,7 +154,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         transform={["", "translate(200px, 350px)"]}
         pointerEvents="none"
       >
-        <Logo width="100px" />
+        <BekkChristmasLogo width="100px" />
       </Box>
     </Flex>
   );

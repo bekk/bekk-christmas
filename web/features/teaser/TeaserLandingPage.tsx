@@ -1,8 +1,8 @@
-import { Box, Heading, Text, BoxProps, Center } from "@chakra-ui/react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import React from "react";
+import Countdown, { CountdownRendererFn } from "react-countdown";
+import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
-import { Logo } from "../shapes/Logo";
-import Countdown from "react-countdown";
 
 export const TeaserLandingPage = () => {
   return (
@@ -14,7 +14,7 @@ export const TeaserLandingPage = () => {
     >
       <ShapeBackground />
       <a href="/post/2020">
-        <Logo width={["70vmin", "40vmin"]} />
+        <BekkChristmasLogo width={["70vmin", "40vmin"]} />
       </a>
       <Countdown
         date={`${new Date().getFullYear()}/12/01`}
@@ -23,19 +23,22 @@ export const TeaserLandingPage = () => {
     </Center>
   );
 };
-
-const CountdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
+const CountdownRenderer: CountdownRendererFn = ({
+  days,
+  hours,
+  minutes,
+  seconds,
+  completed,
+}) => {
   if (completed) {
-    // Render a completed state
-    return <Heading>{`It's happening!`}</Heading>;
+    return <Heading>It's happening!</Heading>;
   } else {
-    // Render a countdown
     return (
       <Box color="white" display="flex" marginTop="3rem">
         <NumberWithLabel number={days} label="Days" />
         <NumberWithLabel number={hours} label="Hours" />
-        <NumberWithLabel number={minutes} label="minutes" />
-        <NumberWithLabel number={seconds} label="seconds" />
+        <NumberWithLabel number={minutes} label="Minutes" />
+        <NumberWithLabel number={seconds} label="Seconds" />
       </Box>
     );
   }
@@ -45,7 +48,7 @@ const NumberWithLabel = ({
   number,
   label,
 }: {
-  number: string;
+  number: number;
   label: string;
 }) => (
   <Box
