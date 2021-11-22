@@ -2,7 +2,7 @@ import { Box, BoxProps, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { theme } from "../../utils/theme";
-import { Logo } from "../shapes/Logo";
+import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
 import { SiteFooter } from "../site-footer/SiteFooter";
 
@@ -23,7 +23,7 @@ const Calendar = (props: CalendarProps) => {
       minHeight="100vh"
       overflowX="hidden"
     >
-      <Logo
+      <BekkChristmasLogo
         position={["relative", "relative", "absolute"]}
         top={["5vmin", "5vmin", "3vmin"]}
         right={["5vmin", "5vmin", "3vmin"]}
