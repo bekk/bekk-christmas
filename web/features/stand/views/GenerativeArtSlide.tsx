@@ -9,17 +9,17 @@ type Response = {
 };
 
 const getImages = async () => {
-  const url = `https://res.cloudinary.com/bekkimg/image/list/fagdag-tag.json`;
+  const TAG = "ndc-2021";
+  const url = `https://res.cloudinary.com/bekkimg/image/list/${TAG}.json`;
   const res = await fetch(url);
   const body = (await res.json()) as Response;
-  console.log(body);
   // we only want to load the 21 latest images, so we discard the rest here
   return body.resources.slice(0, 21);
 };
 
 export const GenerativeArtSlide = () => {
   const { data } = useSWR("generativeArt", getImages, {
-    refreshInterval: 5000,
+    refreshInterval: 3000,
   });
 
   if (!data) {

@@ -1,7 +1,8 @@
 import React from "react";
+import tp from "timeproxy";
 
-const SECONDS_TO_SHOW_ONE_LUKE = 60 * 60;
-const A_SECOND = 1000;
+const SECONDS_TO_SHOW_ONE_LUKE = tp`one hour` / 1000;
+const EVERY_SECOND = tp`a second`;
 
 export const useSecondsLeft = () => {
   const [secondsLeft, setSecondsLeft] = React.useState(
@@ -16,8 +17,11 @@ export const useSecondsLeft = () => {
           return prev - 1;
         }
       });
-    }, A_SECOND);
+    }, EVERY_SECOND);
     return () => clearInterval(interval);
   }, []);
-  return secondsLeft;
+  return {
+    secondsLeft,
+    reset: () => setSecondsLeft(SECONDS_TO_SHOW_ONE_LUKE),
+  };
 };

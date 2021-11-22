@@ -1,7 +1,8 @@
 import { useToast } from "@chakra-ui/react";
 import React from "react";
 
-export function useLuke() {
+type Args = { onLukeChange: () => void };
+export function useLuke({ onLukeChange }: Args) {
   const toast = useToast();
   const [currentLuke, setLuke] = React.useState(1);
 
@@ -16,6 +17,7 @@ export function useLuke() {
               description: `Nå viser vi luke ${nextLuke}`,
               status: "success",
             });
+            onLukeChange();
             return nextLuke;
           });
           return;
@@ -28,6 +30,7 @@ export function useLuke() {
               description: `Nå viser vi luke ${prevLuke}`,
               status: "success",
             });
+            onLukeChange();
             return prevLuke;
           });
           return;
@@ -36,7 +39,7 @@ export function useLuke() {
     };
     window.addEventListener("keyup", handleKeypress);
     return () => window.removeEventListener("keyup", handleKeypress);
-  }, [toast]);
+  }, [toast, onLukeChange]);
   return {
     currentLuke,
     onNextLuke: () => setLuke((prev) => (prev === 24 ? 1 : prev + 1)),

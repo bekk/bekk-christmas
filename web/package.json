@@ -37,6 +37,7 @@
     "reading-time": "^1.3.0",
     "striptags": "^3.2.0",
     "swr": "^1.0.1",
+    "timeproxy": "^1.2.1",
     "typescript": "^4.3.2"
   },
   "devDependencies": {

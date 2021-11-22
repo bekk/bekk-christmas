@@ -1,7 +1,7 @@
 import React from "react";
 import { LogoSlide } from "./views/LogoSlide";
 
-const DEFAULT_DURATION = 3 * 1000;
+const DEFAULT_DURATION = 10 * 1000;
 
 /** Show your slides with this useful little bugger
  *
