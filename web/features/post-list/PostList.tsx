@@ -1,7 +1,8 @@
 import React, { createRef } from "react";
-import { Flex, Box, Text, Heading, HStack } from "@chakra-ui/react";
+import { Flex, Box, Heading, HStack } from "@chakra-ui/react";
 import { ArticleItem, ArticlePostType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
+import { ArrowShort } from "./Arrow";
 import { Squiggle } from "../shapes/Squiggle";
 import { Logo } from "../shapes/Logo";
 import { colorCombinations } from "./color-combinations";
@@ -14,20 +15,32 @@ type PostListProps = {
 };
 export const PostList = ({ posts, heading, description }: PostListProps) => {
   const headingRef = createRef<HTMLDivElement>();
+  const scrollButtonRef = createRef<HTMLDivElement>();
+  const postListContainerRef = createRef<HTMLDivElement>();
+
   const headingSpace = 0.4;
 
   const handleWheel = (e) => {
-    const delta = e.deltaY + e.deltaX;
-    e.currentTarget.scrollLeft += delta;
+    const postList = postListContainerRef.current;
+    postList.scrollLeft += e.deltaY + e.deltaX;
 
-    const scrollMax = e.currentTarget.scrollWidth - e.currentTarget.clientWidth;
-    const opacity = 1 - e.currentTarget.scrollLeft / (scrollMax * headingSpace);
+    const scrollMax = postList.scrollWidth - postList.clientWidth;
+    const opacity = postList.scrollLeft / (scrollMax * headingSpace);
+    scrollButtonRef.current.style.opacity = opacity.toString();
+    headingRef.current.style.opacity = (1 - opacity).toString();
+  };
 
-    headingRef.current.style.opacity = opacity.toString();
+  const scrollToStart = () => {
+    scrollButtonRef.current.style.opacity = "0";
+    headingRef.current.style.opacity = "1";
+    postListContainerRef.current.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   let theme = colorCombinations[0];
-
   if (posts && posts[0]) {
     const { day } = toDayYear(posts[0].availableFrom);
     theme = colorCombinations[(day - 1) % colorCombinations.length];
@@ -66,9 +79,9 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         top={["0", "50%"]}
         left={["40px", "64px"]}
         transform={["", "translateY(-50%)"]}
-        ref={headingRef}
         transition="opacity 0.2s"
         pointerEvents="none"
+        ref={headingRef}
       >
         <Heading
           as="h1"
@@ -95,6 +108,7 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         padding={["40px", "48px"]}
         overflowX="scroll"
         onWheel={handleWheel}
+        ref={postListContainerRef}
       >
         <HStack
           spacing={["16px", "48px"]}
@@ -112,9 +126,30 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         </HStack>
       </Flex>
       <Box
-        position={["relative", "fixed"]}
+        position={["relative", "absolute"]}
+        bottom={["0px", "23%"]}
+        left={["40px", "80px"]}
+        width="fit-content"
+        padding={["1.5rem", "2rem"]}
+        background={theme.text}
+        borderRadius="50%"
+        cursor="pointer"
+        opacity="0"
+        transition="opacity 0.2s"
+        onClick={scrollToStart}
+        ref={scrollButtonRef}
+      >
+        <ArrowShort
+          stroke={theme.background}
+          width={["32px", "50px"]}
+          height={["32px", "50px"]}
+          transform="rotate(180deg)"
+        />
+      </Box>
+      <Box
+        position={["fixed"]}
         alignSelf="flex-end"
-        bottom={["0px", "50%"]}
+        bottom={["40px", "50%"]}
         right={["40px", `${100 * headingSpace}%`]}
         transform={["", "translate(200px, 350px)"]}
         pointerEvents="none"
