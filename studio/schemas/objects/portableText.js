@@ -58,6 +58,7 @@ export default {
       type: "code",
       options: {
         languageAlternatives: [
+          { title: "Plain text", value: "text" },
           { title: "Bash", value: "bash" },
           { title: "Clojure", value: "clojure" },
           { title: "CSS", value: "css" },
@@ -70,6 +71,8 @@ export default {
           { title: "JS / JSX", value: "jsx" },
           { title: "JSON", value: "json" },
           { title: "Kotlin", value: "kotlin" },
+          { title: "NIX", value: "nix" },
+          { title: "Python", value: "python" },
           { title: "Rust", value: "rust" },
           { title: "Scala", value: "scala" },
           { title: "SCSS", value: "scss" },
