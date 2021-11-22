@@ -5,7 +5,6 @@ import React from "react";
 import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
 import { PostList } from "../../../../features/post-list/PostList";
-import { PostSummaryItem } from "../../../../features/post-list/PostSummaryItem";
 import { toDayYear } from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
@@ -15,15 +14,19 @@ type PostsForDayProps = {
   year: number;
 };
 export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
+  const heading = posts.length === 0 ? "No posts found!" : `${day}-Dec`;
+  const description =
+    posts.length === 0
+      ? "We are sorry, there are no posts available."
+      : `Today's content`;
+
   return (
     <Box>
       <SiteMetadata
         title={`Posts for day ${day}, ${year}`}
         description={`Check out all ${posts.length} posts from Bekk on day ${day} of the ${year} Christmas season`}
       />
-      <PostList posts={posts}>
-        <PostSummaryItem posts={posts} />
-      </PostList>
+      <PostList posts={posts} heading={heading} description={description} />
     </Box>
   );
 }
@@ -78,7 +81,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       title, 
       "plaintextContent": pt::text(content), 
       tags[]->{ name, slug },
-      availableFrom
+      availableFrom,
+      description,
+      coverImage
       }`,
     {
       beginningOfDay: toDateString(year, day),

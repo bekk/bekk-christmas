@@ -8,7 +8,6 @@ import { groq } from "next-sanity";
 import React from "react";
 import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { PostList } from "../../features/post-list/PostList";
-import { SummaryItem } from "../../features/post-list/SummaryItem";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
@@ -33,13 +32,7 @@ export default function Tag({
           ...(category.synonyms || []),
         ]}
       />
-      <PostList posts={posts}>
-        <SummaryItem>
-          <Heading as="h1" fontWeight="400">
-            All posts in the &quot;{category.name}&quot; category
-          </Heading>
-        </SummaryItem>
-      </PostList>
+      <PostList posts={posts} heading={category.name} />
     </Box>
   );
 }
@@ -51,6 +44,8 @@ type Post = {
   plaintextContent: string;
   tags: { name: string; slug: string }[];
   availableFrom: string;
+  description: unknown[];
+  coverImage: string;
 };
 type Category = {
   name: string;

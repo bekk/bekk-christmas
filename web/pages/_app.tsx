@@ -2,7 +2,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import React from "react";
-import { SiteFooter } from "../features/site-footer/SiteFooter";
 import { slugify } from "../utils/slug";
 import { theme } from "../utils/theme";
 
@@ -11,7 +10,6 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
-      <SiteFooter />
     </ChakraProvider>
   );
 }
