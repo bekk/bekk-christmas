@@ -41,13 +41,13 @@ SyntaxHighlighter.registerLanguage("scala", scala);
 SyntaxHighlighter.registerLanguage("clojure", clojure);
 SyntaxHighlighter.registerLanguage("fsharp", fsharp);
 SyntaxHighlighter.registerLanguage("rust", rust);
-SyntaxHighlighter.registerLanguage("swift", rust);
+SyntaxHighlighter.registerLanguage("swift", swift);
 
 export const CodeBlock = ({ node }: any) => {
   if (!node?.code) {
     return null;
   }
-  const { language, code } = node;
+  const { language = "text", code } = node;
   return (
     <Box fontSize="sm">
       <SyntaxHighlighter style={prism} language={language}>
