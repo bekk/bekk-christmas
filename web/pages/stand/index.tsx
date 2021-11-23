@@ -1,10 +1,13 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
+import tp from "timeproxy";
 import { useLuke } from "../../features/stand/useLuke";
 import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
 import { useSlideshow } from "../../features/stand/useSlideshow";
 import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
 import { GenerativeArtSlide } from "../../features/stand/views/GenerativeArtSlide";
+import { IframeSlide } from "../../features/stand/views/IframeSlide";
+import { ImageSlide } from "../../features/stand/views/ImageSlide";
 import { TextSlide } from "../../features/stand/views/TextSlide";
 import { TitleSlide } from "../../features/stand/views/TitleSlide";
 
@@ -40,7 +43,11 @@ const luker = {
   },
   Luke2: () => {
     return useSlideshow([
-      <TitleSlide key={1}>Gløgg og pepper-kaker!</TitleSlide>,
+      <TitleSlide key={1}>Bekk gjennom tidene</TitleSlide>,
+      <TextSlide key={2}>
+        <strong>Bekk er 21 år i år.</strong> Her er en liten historie om hvordan
+        vi har blitt de vi er.
+      </TextSlide>,
     ]);
   },
   Luke3: () => {
@@ -69,10 +76,25 @@ const luker = {
     ]);
   },
   Luke7: () => {
-    return useSlideshow([<TitleSlide key={1}>Taste-konkurranse</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>Taste-konkurranse!</TitleSlide>,
+      <TextSlide key={2}>
+        Tror du at du er den raskeste tastern på {CONFERENCE_NAME}? På tide å
+        bevise det 👇
+      </TextSlide>,
+      [
+        <IframeSlide url="https://priceless-bose-d509cc.netlify.app" key={3} />,
+        { duration: tp`30 minutes` },
+      ],
+    ]);
   },
   Luke8: () => {
-    return useSlideshow([<TitleSlide key={1}>Takk for i dag!</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>Takk for i dag!</TitleSlide>,
+      <TextSlide key={2}>
+        Dagen er over, men heldigvis er det mer moro i morgen. På gjensyn!
+      </TextSlide>,
+    ]);
   },
   Luke9: () => {
     return useSlideshow([
@@ -86,7 +108,95 @@ const luker = {
     ]);
   },
   Luke10: () => {
-    return useSlideshow([<TitleSlide key={1}>Fun facts om Bekk</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>Fun facts om Bekk</TitleSlide>,
+      <TextSlide key={2}>
+        <Stack>
+          <Heading>#1: Hvorfor Bekk</Heading>
+          <Text>
+            En av grunnene til at Bekk heter Bekk er fordi det første kontoret
+            vårt var ved Akerselvas utløp
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={3}>
+        <Stack>
+          <Heading>#2: Før Bekk var Bekk</Heading>
+          <Text>
+            Før Bekk het Bekk, het vi XO, Ice Econsulting og til og med avarten
+            Bekk eBusiness Integrator 🕴
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={3}>
+        <Stack>
+          <Heading>#3: Logoer fra arkivet</Heading>
+          <Image
+            src="/images/bekk-logos.png"
+            alt="Forskjellige versjoner av Bekk-logoen"
+          />
+          <Text>
+            Vi har ikke skiftet logo før, men det var fordi vi itererte litt på
+            den vi har
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={4}>
+        <Stack>
+          <Heading>#4: Mange Bekker små</Heading>
+          <Text>
+            I dag teller Bekk 522 ansatte, men det er over 1.000 som har kalt
+            seg Bekkere på ett eller annet tidspunkt. Pluss over 500
+            sommerstudenter. Mange Bekkere små gjør en stor… vel forskjell.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={5}>
+        <Stack>
+          <Heading>#5: Den spede begynnelse</Heading>
+          <Text>
+            Det første prosjektet Bekk leverte var en forretningsplan for
+            Ingeniørforlaget!
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={6}>
+        <Stack>
+          <Heading>#6: Bootcamps</Heading>
+          <Text>
+            Når man starter i Bekk, drar man sammen med resten av "kullet" sitt
+            til Lyngør. Men visste du at den aller første bootcampen ble avholdt
+            "i en kjeller i Syden", ifølge CTOen vår.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={7}>
+        <Stack>
+          <Heading>#7: Bekk Band!</Heading>
+          <Text>
+            Bekk Band er Bekk sitt eget husband, komplett med både salgssjef på
+            trommer, administrerende direktør på gitar og mange andre flotte
+            medlemmer. De har holdt på i over 10 år!
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={8}>
+        <Stack>
+          <Heading>#8: Celebert besøk</Heading>
+          <Text>
+            Bekk Band er ikke de eneste artistene som har hatt glede av å
+            underholde Bekkere. Andre stjerner inkluderer
+          </Text>
+          <Text fontSize="2xl">
+            Postgirobygget, Sunsanne Sundfør, Bare Egil Band, Tourettes,
+            Datarock, Pony the Pirate, OnklP, Svømmebasseng, Paul Tonning,
+            Klondike, Sonde Justad, Oslo Ess, Valentourettes, Dagny, Jonas
+            Alaska, Lars Lillo Stenberg, Stein Torleif Bjella, Marion Ravn, Hank
+            von Helvete (RIP), Espen Beranek og Highasakite
+          </Text>
+        </Stack>
+      </TextSlide>,
+    ]);
   },
   Luke11: () => {
     return useSlideshow([
@@ -97,7 +207,7 @@ const luker = {
           <Text>Gå til laptopen ved skjermen for å teste det ut selv.</Text>
         </Stack>
       </TextSlide>,
-      [<GenerativeArtSlide key={3} />, { duration: 60 * 1000 }],
+      [<GenerativeArtSlide key={3} />, { duration: tp`1 minute` }],
     ]);
   },
   Luke12: () => {
@@ -120,12 +230,76 @@ const luker = {
     ]);
   },
   Luke14: () => {
-    return useSlideshow([<TitleSlide key={1}>#ekte</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>#ekte</TitleSlide>,
+      <TextSlide key={2}>
+        <Stack>
+          <Text>
+            Det var mange følelser under Corona-året. Mange vonde, men også
+            mange gode.
+          </Text>
+          <Text>
+            Noen Bekkere startet #ekte - en anonym kanal der man kunne sende inn
+            tanker, og få dem illustrert.
+          </Text>
+          <Text>Her er noen av disse tankene</Text>
+        </Stack>
+      </TextSlide>,
+      <ImageSlide key={3} src="/images/ekte/ekte-12-ar.png" />,
+      <ImageSlide key={4} src="/images/ekte/ekte-dagene-er-like.png" />,
+      <ImageSlide key={5} src="/images/ekte/ekte-fagdag-apent.png" />,
+      <ImageSlide key={6} src="/images/ekte/ekte-fagdag-bla-bil.png" />,
+      <ImageSlide key={7} src="/images/ekte/ekte-fagdag-koronaklode.png">
+        Jeg har angst for å ubevisst kunne smitte folk rundt meg! Hva om jeg
+        smitter noen som dør ? 😳
+      </ImageSlide>,
+      <ImageSlide key={8} src="/images/ekte/ekte-fagdag-trangt.png" />,
+      <ImageSlide key={9} src="/images/ekte/ekte-fette-lei-korona.png">
+        æ e så fette lei korona
+      </ImageSlide>,
+      <ImageSlide key={10} src="/images/ekte/ekte-forlatt-igjen.png" />,
+      <ImageSlide key={11} src="/images/ekte/ekte-fredagsshow.png" />,
+      <ImageSlide key={12} src="/images/ekte/ekte-gaming.png">
+        Spill og gaming har hjulpet meg å sosialisere mye via nett i korona! Det
+        er jeg takknemmelig for
+      </ImageSlide>,
+      <ImageSlide key={13} src="/images/ekte/ekte-hagearbeid.png">
+        Elsker at man kan gjøre litt hus og hagearbeid i lunsjen når man har
+        hjemmekontor
+      </ImageSlide>,
+      <ImageSlide key={14} src="/images/ekte/ekte-helen-1.png">
+        Jeg elsker høsten
+      </ImageSlide>,
+      <ImageSlide key={15} src="/images/ekte/ekte-helen-2.png" />,
+      <ImageSlide key={16} src="/images/ekte/ekte-helen-3.png" />,
+      <ImageSlide key={17} src="/images/ekte/ekte-hurra-vaksinedose.png" />,
+      <ImageSlide key={18} src="/images/ekte/ekte-indre-ro.png" />,
+      <ImageSlide
+        key={19}
+        src="/images/ekte/ekte-jeg-tror-jeg-er-forelsket.png"
+      >
+        Jeg har truffet en jente, nå kan våren komme. Jeg tror jeg er forelsket.
+      </ImageSlide>,
+      <ImageSlide key={20} src="/images/ekte/ekte-kaffe.png" />,
+      <ImageSlide key={21} src="/images/ekte/ekte-katt.png">
+        Den nye lockdownen kunne ikke kommet på et verre tidspunkt. Nå er jeg
+        helt på bristepunktet :(
+      </ImageSlide>,
+      <ImageSlide key={21} src="/images/ekte/ekte-lost.png">
+        Jeg er helt lost i livet
+      </ImageSlide>,
+      <ImageSlide
+        key={21}
+        src="/images/ekte/ekte-nyvinning-og-kreativitet.png"
+      />,
+      <ImageSlide key={21} src="/images/ekte/ekte-pacemaker-leve-evig.png" />,
+      <ImageSlide key={21} src="/images/ekte/ekte-pappa.png" />,
+      <ImageSlide key={21} src="/images/ekte/ekte-skriket-pa-brygga.png" />,
+      <ImageSlide key={21} src="/images/ekte/ekte-slange.png" />,
+    ]);
   },
   Luke15: () => {
-    return useSlideshow([
-      <TitleSlide key={1}>Velkommen til Bekkvort!</TitleSlide>,
-    ]);
+    return useSlideshow([<TitleSlide key={1}>TBD</TitleSlide>]);
   },
   Luke16: () => {
     // Glitch or die
@@ -135,7 +309,30 @@ const luker = {
     return useSlideshow([<TitleSlide key={1}>Morgenlulz</TitleSlide>]);
   },
   Luke18: () => {
-    return useSlideshow([<TitleSlide key={1}>UU-utfordringen!</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>UU-utfordringen!</TitleSlide>,
+      <TextSlide key={2}>
+        <Text fontSize="4xl">
+          Universell utforming handler om å gjøre tjenester vi lager
+          tilgjengelig for alle, uavhengig av hvilken forutsetning man har.
+          Personer som ser dårlig har ofte behov for hjelpemidler som
+          skjermleser og navigering med tastatur.
+        </Text>
+      </TextSlide>,
+      <TextSlide key={3}>
+        <Text fontSize="4xl" mb="8">
+          Klarer du å navigere deg gjennom et skjema, uten å se?
+        </Text>
+        <Image
+          src="/images/uu-utfordringen-qr-code.svg"
+          alt="https://skjermleser-stand.herokuapp.com/"
+        />
+      </TextSlide>,
+      [
+        <IframeSlide key={4} url="https://skjermleser-stand.herokuapp.com" />,
+        { duration: tp`30 minutes` },
+      ],
+    ]);
   },
   Luke19: () => {
     return useSlideshow([
@@ -144,7 +341,27 @@ const luker = {
   },
   Luke20: () => {
     return useSlideshow([
-      <TitleSlide key={1}>Velkommen til Bekkvort</TitleSlide>,
+      <TitleSlide key={1}>Velkommen til Bekkvort 🧙‍♀️</TitleSlide>,
+      <TextSlide key={2}>
+        Corona var kjipt, men godt for kreativiteten. Derfor satt vi oss ned og
+        laget et helt digitalt escape room, for å holde stemningen oppe.
+      </TextSlide>,
+      [
+        <TextSlide key={3}>
+          <Stack>
+            <Text>
+              Bli med inn i en Harry Potter-inspirert verden, laget av Bekk.
+            </Text>
+            <Text>Gå til bekkvort.com</Text>
+          </Stack>
+          <Image
+            src="/images/bekkvort-qr-code.svg"
+            alt="https://bekkvort.com"
+            mt={8}
+          />
+        </TextSlide>,
+        { duration: tp`1 minute` },
+      ],
     ]);
   },
   Luke21: () => {

@@ -1,8 +1,9 @@
+import { useInterval } from "@chakra-ui/react";
 import React from "react";
+import tp from "timeproxy";
 import { LogoSlide } from "./views/LogoSlide";
-import tp from 'timeproxy'
 
-const DEFAULT_DURATION = tp`ten seconds`;
+const DEFAULT_DURATION = tp`two seconds`;
 
 /** Show your slides with this useful little bugger
  *
@@ -23,14 +24,16 @@ export const useSlideshow = (
     () => [...slides, <LogoSlide key="logo" />],
     [slides]
   );
+  const goToNextSlide = () =>
+    setCurrentSlideIndex((prev) => (prev + 1) % slidesWithLogo.length);
 
   const slideToShow = React.useMemo(
     () => slidesWithLogo[currentSlideIndex],
     [currentSlideIndex, slidesWithLogo]
   );
+
   useInterval(() => {
-    const nextIndex = (currentSlideIndex + 1) % slidesWithLogo.length;
-    setCurrentSlideIndex(nextIndex);
+    goToNextSlide();
   }, duration);
 
   const nextDuration = slideToShow[1]
@@ -41,25 +44,16 @@ export const useSlideshow = (
     setDuration(nextDuration);
   }, [nextDuration]);
 
+  useGlobalClickHandler(goToNextSlide);
+
   return Array.isArray(slideToShow) ? slideToShow[0] : slideToShow;
 };
 
-function useInterval(callback: Function, delay: number) {
-  const savedCallback = React.useRef<Function>();
-
-  // Remember the latest callback.
+const useGlobalClickHandler = (callback: () => void) => {
+  const callbackRef = React.useRef<() => void>(callback);
   React.useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  // Set up the interval.
-  React.useEffect(() => {
-    function tick() {
-      savedCallback.current();
-    }
-    if (delay !== null) {
-      let id = setInterval(tick, delay);
-      return () => clearInterval(id);
-    }
-  }, [delay]);
-}
+    const handleClick = () => callbackRef.current();
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, []);
+};

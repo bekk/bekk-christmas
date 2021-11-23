@@ -2,7 +2,6 @@ import { Image } from "@chakra-ui/image";
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
-import { Space } from "../design-system/Space";
 import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 
@@ -75,8 +74,7 @@ export const ArticleBody = ({
         </Text>
         {description && (
           <>
-            <Space />
-            <Box fontSize="2xl">
+            <Box fontSize="2xl" pt="40px">
               <DescriptionPortableText blocks={description} />
             </Box>
           </>
