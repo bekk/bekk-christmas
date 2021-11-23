@@ -58,7 +58,7 @@ export const ArticleBody = ({
           {publishedAt}
         </Text>
       </Flex>
-      <Box marginLeft={[0, 0, "240px"]} my="72px">
+      <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
         {description && (
           <Box fontSize="2xl">
             <DescriptionPortableText blocks={description} />
@@ -67,9 +67,11 @@ export const ArticleBody = ({
       </Box>
       {coverImageSrc && (
         <Image
-          marginLeft={[0, 0, "120"]}
-          marginTop="80px"
-          marginBottom="80px"
+          margin="40px auto"
+          maxHeight="400px"
+          maxWidth="80ch"
+          width="100%"
+          objectFit="cover"
           src={coverImageSrc}
           alt=""
           borderRadius="20px"
