@@ -37,7 +37,10 @@ export default function BlogPostPage({
     ? new Date(post.availableFrom)
     : new Date();
 
-  const isAvailable = preview || availableFromDate < new Date();
+  const isAvailable =
+    process.env.NODE_ENV === "development" ||
+    preview ||
+    availableFromDate < new Date();
 
   if (!isAvailable) {
     return <NotAvailableYet availableFrom={availableFromDate} />;
@@ -53,6 +56,8 @@ export default function BlogPostPage({
         author={authors.map((author) => author.fullName).join(", ")}
       />
       <Article
+        type={post.type}
+        embedUrl={post.embedUrl}
         title={post.title}
         description={post.description}
         category={post.tags?.join(", ")}
@@ -156,6 +161,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 type Post = {
   id: string;
+  type: "article" | "podcast" | "video";
+  embedUrl?: string;
   slug: string;
   title: string;
   description: unknown[];

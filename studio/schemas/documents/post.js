@@ -29,8 +29,16 @@ const post = {
           if (["podcast", "video"].includes(context.document.type) && !url) {
             return "A URL to embed is required";
           }
+          if (
+            context.document.type === "video" &&
+            !url.startsWith("https://player.vimeo.com")
+          ) {
+            return "Get the embed URL, not the regular URL. It should start with player.vimeo.com/video";
+          }
+          return true;
         }),
-      hidden: ({ document }) => !["podcast", "video"].includes(document.type),
+      hidden: ({ document }) =>
+        !["podcast", "video", undefined].includes(document.type),
     },
     {
       title: "Title",
