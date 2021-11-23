@@ -1,10 +1,12 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
+import tp from "timeproxy";
 import { useLuke } from "../../features/stand/useLuke";
 import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
 import { useSlideshow } from "../../features/stand/useSlideshow";
 import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
 import { GenerativeArtSlide } from "../../features/stand/views/GenerativeArtSlide";
+import { IframeSlide } from "../../features/stand/views/IframeSlide";
 import { TextSlide } from "../../features/stand/views/TextSlide";
 import { TitleSlide } from "../../features/stand/views/TitleSlide";
 
@@ -40,7 +42,11 @@ const luker = {
   },
   Luke2: () => {
     return useSlideshow([
-      <TitleSlide key={1}>Gløgg og pepper-kaker!</TitleSlide>,
+      <TitleSlide key={1}>Bekk gjennom tidene</TitleSlide>,
+      <TextSlide key={2}>
+        <strong>Bekk er 21 år i år.</strong> Her er en liten historie om hvordan
+        vi har blitt de vi er.
+      </TextSlide>,
     ]);
   },
   Luke3: () => {
@@ -97,7 +103,7 @@ const luker = {
           <Text>Gå til laptopen ved skjermen for å teste det ut selv.</Text>
         </Stack>
       </TextSlide>,
-      [<GenerativeArtSlide key={3} />, { duration: 60 * 1000 }],
+      [<GenerativeArtSlide key={3} />, { duration: tp`1 minute` }],
     ]);
   },
   Luke12: () => {
@@ -135,7 +141,30 @@ const luker = {
     return useSlideshow([<TitleSlide key={1}>Morgenlulz</TitleSlide>]);
   },
   Luke18: () => {
-    return useSlideshow([<TitleSlide key={1}>UU-utfordringen!</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>UU-utfordringen!</TitleSlide>,
+      <TextSlide key={2}>
+        <Text fontSize="4xl">
+          Universell utforming handler om å gjøre tjenester vi lager
+          tilgjengelig for alle, uavhengig av hvilken forutsetning man har.
+          Personer som ser dårlig har ofte behov for hjelpemidler som
+          skjermleser og navigering med tastatur.
+        </Text>
+      </TextSlide>,
+      <TextSlide key={3}>
+        <Text fontSize="4xl" mb="8">
+          Klarer du å navigere deg gjennom et skjema, uten å se?
+        </Text>
+        <Image
+          src="/images/uu-utfordringen-qr-code.svg"
+          alt="https://skjermleser-stand.herokuapp.com/"
+        />
+      </TextSlide>,
+      [
+        <IframeSlide key={4} url="https://skjermleser-stand.herokuapp.com" />,
+        { duration: tp`30 minutes` },
+      ],
+    ]);
   },
   Luke19: () => {
     return useSlideshow([
