@@ -1,4 +1,3 @@
-import Head from "next/head";
 import * as React from "react";
 
 const fonts = [
@@ -53,19 +52,19 @@ export const FontLoader = () => {
           crossOrigin="anonymous"
         />
       ))}
-      <style>
-        {fonts.map((font) => (
-          <>
-            {`
-            @font-face {
-              src: url("${font.src}") format("${font.format}");
-              font-family: ${font.fontFamily};
-              font-weight: ${font.fontWeight};
-              font-style: ${font.fontStyle};
-          }`}
-          </>
-        ))}
-      </style>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: fonts
+            .map(
+              (font) => `@font-face {
+        src: url("${font.src}") format("${font.format}");
+        font-family: ${font.fontFamily};
+        font-weight: ${font.fontWeight};
+        font-style: ${font.fontStyle};}`
+            )
+            .join("\n"),
+        }}
+      />
     </>
   );
 };
