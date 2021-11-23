@@ -173,7 +173,27 @@ const luker = {
   },
   Luke20: () => {
     return useSlideshow([
-      <TitleSlide key={1}>Velkommen til Bekkvort</TitleSlide>,
+      <TitleSlide key={1}>Velkommen til Bekkvort 🧙‍♀️</TitleSlide>,
+      <TextSlide key={2}>
+        Corona var kjipt, men godt for kreativiteten. Derfor satt vi oss ned og
+        laget et helt digitalt escape room, for å holde stemningen oppe.
+      </TextSlide>,
+      [
+        <TextSlide key={3}>
+          <Stack>
+            <Text>
+              Bli med inn i en Harry Potter-inspirert verden, laget av Bekk.
+            </Text>
+            <Text>Gå til bekkvort.com</Text>
+          </Stack>
+          <Image
+            src="/images/bekkvort-qr-code.svg"
+            alt="https://bekkvort.com"
+            mt={8}
+          />
+        </TextSlide>,
+        { duration: tp`1 minute` },
+      ],
     ]);
   },
   Luke21: () => {
