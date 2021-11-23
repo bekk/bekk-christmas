@@ -1,4 +1,4 @@
-import { Code, GridItem, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Code, Box, ListItem, UnorderedList } from "@chakra-ui/react";
 import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
@@ -17,49 +17,45 @@ import { YouTubeBlock } from "./serializers/YouTubeBlock";
 
 const withWrap =
   (
-    maxWidth: "wide" | "default" = "default",
     spaceAbove: number = 16,
     spaceBelow: number = 16,
-    indent: number = 240
+    fullWidth: boolean = false
   ) =>
   (Component: React.FunctionComponent) =>
   (props: any) =>
     (
-      <GridItem
-        marginLeft={[0, 0, `${indent}px`]}
-        marginTop={`${spaceAbove}px`}
-        marginBottom={`${spaceBelow}px`}
-        maxWidth={maxWidth === "wide" ? "80ch" : "60ch"}
-        px={maxWidth === "wide" ? "0" : "2.5rem"}
+      <Box
+        margin={`${spaceAbove}px auto ${spaceBelow}px`}
+        maxWidth={fullWidth ? "100%" : "80ch"}
       >
         <Component {...props} />
-      </GridItem>
+      </Box>
     );
 
-const withSpacing = (block) => withWrap("wide", 32, 32)(block);
+const withExtraSpacing = (block) => withWrap(40, 40)(block);
 
 const serializers = {
   types: {
     authorReference: ({ node }: any) => <span>{node.author.name}</span>,
     block: (props: any) => {
       if (props.node.style === "blockquote") {
-        return withSpacing(BlockQuoteBlock)(props);
+        return withExtraSpacing(BlockQuoteBlock)(props);
       }
       if (/^h\d/.test(props.node.style)) {
-        return withWrap("wide", 80)(HeadingBlock)(props);
+        return withWrap(40)(HeadingBlock)(props);
       }
-      return withWrap("wide")(TextBlock)(props);
+      return withWrap()(TextBlock)(props);
     },
-    code: withSpacing(CodeBlock),
-    codeSandbox: withSpacing(CodeSandboxBlock),
-    codePen: withSpacing(CodePenBlock),
-    youtube: withSpacing(YouTubeBlock),
-    twitter: withSpacing(TwitterBlock),
-    unfurledUrl: withSpacing(UnfurledUrlBlock),
-    mainImage: withWrap("wide", 80, 80, 120)(ImageBlock),
-    iframe: withSpacing(IframeBlock),
-    image: withWrap("wide", 80, 80, 120)(ImageBlock),
-    imageWithMetadata: withWrap("wide", 80, 80, 120)(ImageBlock),
+    code: withExtraSpacing(CodeBlock),
+    codeSandbox: withExtraSpacing(CodeSandboxBlock),
+    codePen: withExtraSpacing(CodePenBlock),
+    youtube: withExtraSpacing(YouTubeBlock),
+    twitter: withExtraSpacing(TwitterBlock),
+    unfurledUrl: withExtraSpacing(UnfurledUrlBlock),
+    mainImage: withWrap(40, 40, true)(ImageBlock),
+    iframe: withExtraSpacing(IframeBlock),
+    image: withWrap(40, 40, true)(ImageBlock),
+    imageWithMetadata: withWrap(40, 40, true)(ImageBlock),
     __block: ({ node }) => {
       if (node.block?._type === "image") {
         return <ImageBlock node={node} />;
@@ -77,7 +73,7 @@ const serializers = {
     ),
     code: Code,
   },
-  list: withWrap("default")((props) => (
+  list: withWrap()((props) => (
     <UnorderedList fontSize="lg">{props.children}</UnorderedList>
   )),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,

@@ -42,7 +42,7 @@ const fonts = [
 /** Loads our custom fonts */
 export const FontLoader = () => {
   return (
-    <Head>
+    <>
       {fonts.map((font) => (
         <link
           key={font.src}
@@ -54,8 +54,8 @@ export const FontLoader = () => {
         />
       ))}
       <style>
-        {fonts.map((font, index) => (
-          <React.Fragment key={index}>
+        {fonts.map((font) => (
+          <>
             {`
             @font-face {
               src: url("${font.src}") format("${font.format}");
@@ -63,9 +63,9 @@ export const FontLoader = () => {
               font-weight: ${font.fontWeight};
               font-style: ${font.fontStyle};
           }`}
-          </React.Fragment>
+          </>
         ))}
       </style>
-    </Head>
+    </>
   );
 };

@@ -26,7 +26,7 @@ const Calendar = (props: CalendarProps) => {
       <BekkChristmasLogo
         position={["relative", "relative", "absolute"]}
         top={["5vmin", "5vmin", "3vmin"]}
-        right={["5vmin", "5vmin", "3vmin"]}
+        right={["0vmin", "0vmin", "3vmin"]}
         width={["20vmin", "15vmin", "10vmin"]}
       />
       <ShapeBackground />
@@ -34,7 +34,7 @@ const Calendar = (props: CalendarProps) => {
         <Heading
           mt={12}
           color="white"
-          fontSize={["2.5rem", "3.5rem", "4rem"]}
+          fontSize={["2rem", "2.5rem", "3rem"]}
           fontWeight="normal"
         >
           The {props.year} calendar

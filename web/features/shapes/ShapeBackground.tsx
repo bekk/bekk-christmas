@@ -10,7 +10,11 @@ import { Squiggle } from "./Squiggle";
 import { Tree } from "./Tree";
 import { Circle } from "./Circle";
 
-export const ShapeBackground = () => {
+export const ShapeBackground = ({
+  isFullPage = false,
+}: {
+  isFullPage?: boolean;
+}) => {
   return (
     <Box
       position="absolute"
@@ -25,88 +29,180 @@ export const ShapeBackground = () => {
     >
       <Circle
         position="absolute"
-        bottom={["0%", "-10%", "-20%", "-25%"]}
-        left={["-60%", "-40%", "-30%", "-10%"]}
+        bottom={[
+          isFullPage ? "-80%" : "0%",
+          isFullPage ? "-80%" : "-10%",
+          "-20%",
+          "-25%",
+        ]}
+        left={[
+          isFullPage ? "-100%" : "-60%",
+          isFullPage ? "-100%" : "-40%",
+          "-30%",
+          "-10%",
+        ]}
       />
       <Circle
         position="absolute"
-        top={["-50%", "-10%", "-30%", "-50%"]}
+        top={["-100%", "-100%", "-30%", "-50%"]}
         right={["5%", "-15%", "-15%", "5%"]}
         width="80vmin"
       />
-      <Circle position="absolute" bottom={["-50%"]} right={["-15%"]} />
       <Circle
         position="absolute"
-        bottom={["-100%", "-100%", "-100%", "-8%"]}
-        right={["5%"]}
-        width="60vmin"
-        fill="brand.darkGreen"
+        bottom={[
+          isFullPage ? "80%" : "90%",
+          isFullPage ? "80%" : "90%",
+          "-50%",
+          "-50%",
+        ]}
+        right={["-15%", isFullPage ? "-25%" : "-15%", "-15%", "-15%"]}
       />
       <Circle
         position="absolute"
-        top={["2%", "12%", "3%", "2%"]}
-        right={["-3%", "-15%", "-15%", "-3%"]}
-        width={["75vmin", "60vmin", "50vmin", "60vmin"]}
+        top={[
+          isFullPage ? "-15%" : "-5%",
+          isFullPage ? "-15%" : "-20%",
+          "-20%",
+          "-20%",
+        ]}
+        right={[
+          isFullPage ? "-25%" : "-15%",
+          isFullPage ? "-25%" : "-15%",
+          "-15%",
+          "-5%",
+        ]}
+        width={["90vmin", "60vmin", "50vmin", "60vmin"]}
         fill="brand.salmon"
       />
       <BlobWide
         position="absolute"
-        bottom={["45%", "45%", "-15%", "-30%"]}
-        left={["-60%", "-60%", "10%", "17%"]}
-        width={["120vmin", "120vmin", "80vmin", "80vmin"]}
+        bottom={[
+          isFullPage ? "35%" : "45%",
+          isFullPage ? "35%" : "45%",
+          "-15%",
+          "-30%",
+        ]}
+        left={[
+          isFullPage ? "-80%" : "-60%",
+          isFullPage ? "-80%" : "-60%",
+          "10%",
+          "17%",
+        ]}
+        width={[
+          isFullPage ? "110vmin" : "120vmin",
+          isFullPage ? "110vmin" : "120vmin",
+          "80vmin",
+          "80vmin",
+        ]}
       />
       <Dots
         position="absolute"
-        top={["15%", "8%", "8%", "-0.5%"]}
-        left={["5%", "2%", "-1%", "-0.5%"]}
+        top={["10%", "8%", "8%", "15%"]}
+        left={["5%", "2%", "-1%", "5%"]}
+        width={["30vmin"]}
       />
       <BlobThick
         position="absolute"
-        top={["-3%", "-20%", "-40%", "-48%"]}
-        left={["-40%", "-50%", "-40%", "10%"]}
-        width={["100vmin", "95vmin", "90vmin", "85vmin"]}
+        top={[
+          isFullPage ? "-20%" : "60%",
+          isFullPage ? "-28%" : "-20%",
+          isFullPage ? "-30%" : "-30%",
+          "-50%",
+        ]}
+        left={[
+          isFullPage ? "-35%" : "70%",
+          isFullPage ? "-60%" : "-60%",
+          "-40%",
+          "-15%",
+        ]}
+        width={["80vmin", "95vmin", "80vmin", "85vmin"]}
       />
       <Branch
         position="absolute"
         top={["-1%", "-5%", "-8%", "-10%"]}
-        right={["-60%", "-55%", "-45%", "-25%"]}
-        width={["130vmin", "115vmin", "100vmin", "85vmin"]}
+        right={[
+          isFullPage ? "-55%" : "-30%",
+          isFullPage ? "-50%" : "-55%",
+          "-45%",
+          "-25%",
+        ]}
+        width={[
+          isFullPage ? "110vmin" : "130vmin",
+          isFullPage ? "100vmin" : "115vmin",
+          "100vmin",
+          "85vmin",
+        ]}
       />
       <Star
         position="absolute"
-        bottom={["-2%", "-5%", "-5%", "5%"]}
-        right={["-25%", "-25%", "-25%", "-1%"]}
-        width={["50vmin", "50vmin", "40vmin", "20vmin"]}
+        bottom={[isFullPage ? "-10%" : "-2%", "-5%", "-5%", "-5%"]}
+        right={[isFullPage ? "-20%" : "-25%", "-25%", "-25%", "-5%"]}
+        width={["50vmin", "50vmin", "40vmin", "40vmin"]}
       />
       <Tree
         position="absolute"
         bottom={["20%", "15%", "10%", "5%"]}
-        left={["-15%", "-15%", "-10%", "-5%"]}
-        width={["30vmin", "25vmin", "18vmin", "15vmin"]}
+        left={["-15%", isFullPage ? "-12%" : "-15%", "-10%", "-5%"]}
+        width={["30vmin", isFullPage ? "20vmin" : "25vmin", "18vmin", "15vmin"]}
       />
       <Squiggle
         position="absolute"
-        top={["25%", "25%", "5%", "-7%"]}
-        right={["-7%", "-7%", "-10%", "16%"]}
-        width={["110vmin", "110vmin", "65vmin", "75vmin"]}
+        top={[
+          isFullPage ? "10%" : "25%",
+          isFullPage ? "5%" : "25%",
+          "5%",
+          "-7%",
+        ]}
+        right={[
+          isFullPage ? "-20%" : "-7%",
+          isFullPage ? "-20%" : "-7%",
+          "-10%",
+          "16%",
+        ]}
+        width={[
+          isFullPage ? "90vmin" : "110vmin",
+          isFullPage ? "70vmin" : "110vmin",
+          "65vmin",
+          "75vmin",
+        ]}
       />
-
       <Pillar
         position="absolute"
-        bottom={["-5%", "-15%", "-15%", "-25%"]}
-        left={["-15%", "-5%", "2%", "5%"]}
+        bottom={[
+          isFullPage ? "-40%" : "-5%",
+          isFullPage ? "-30%" : "-15%",
+          isFullPage ? "-20%" : "-15%",
+          "-25%",
+        ]}
+        left={[
+          isFullPage ? "-5%" : "-15%",
+          isFullPage ? "10%" : "-5%",
+          "2%",
+          "5%",
+        ]}
         fill="#004A33"
       />
       <Pillar
         position="absolute"
-        bottom={["-100%", "-100%", "-15%", "-30%"]}
-        left={["25%", "25%", "35%", "25%"]}
+        bottom={["-100%", "-100%", isFullPage ? "-25%" : "-15%", "-30%"]}
+        left={["25%", "25%", "25%", "25%"]}
       />
       <Pillar
         position="absolute"
-        bottom={["-2%", "-20%", "-30%", "-30%"]}
-        left={["5%", "10%", "5%", "10%"]}
-        width={["75vmin", "60vmin", "50vmin", "37vmin"]}
+        bottom={[isFullPage ? "-20%" : "-2%", "-20%", "-30%", "-30%"]}
+        left={[
+          isFullPage ? "15%" : "5%",
+          isFullPage ? "20%" : "10%",
+          "5%",
+          "10%",
+        ]}
+        width={[
+          isFullPage ? "50vmin" : "75vmin",
+          isFullPage ? "40vmin" : "60vmin",
+          isFullPage ? "40vmin" : "50vmin",
+          "37vmin",
+        ]}
         fill="brand.darkGreen"
       />
     </Box>

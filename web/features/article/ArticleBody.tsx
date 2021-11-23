@@ -27,64 +27,51 @@ export const ArticleBody = ({
 }: ArticleBodyProps) => {
   const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <Container
-      color="brand.midGrey"
-      mx="auto"
-      pb="120px"
-      maxWidth="container.lg"
-    >
-      <Box marginBottom="80px">
+    <Container mx="auto" pb="120px" maxWidth="container.lg">
+      <Box marginBottom="20px">
         {category && (
           <Box fontSize={"lg"} marginBottom="16px">
             {category.toUpperCase()}
           </Box>
         )}
-        <Heading
-          as={"h1"}
-          size={"4xl"}
-          fontWeight="normal"
-          lineHeight="1.15"
-          color="brand.darkGrey"
-        >
+        <Heading as={"h1"} size={"4xl"} fontWeight="normal" lineHeight="1.15">
           {title}
         </Heading>
       </Box>
-      <Box
-        marginLeft={[0, 0, "240px"]}
-        marginBottom="80px"
-        color="brand.darkGrey"
-      >
-        <Flex flexWrap="wrap" fontSize="24px">
-          <Text fontWeight="bold" mb={[2, 0]}>
-            {readingTime}
-          </Text>
-          <Text display={["none", "block"]} px="8px">
-            &middot;
-          </Text>
-          <Text mb={[2, 0]}>
-            {authors?.length
-              ? "Written by " +
-                authors.map((author) => author.fullName).join(", ")
-              : "No authors"}
-          </Text>
-        </Flex>
-
-        <Text fontSize="24px" color="gray.500">
+      <Flex flexWrap="wrap" fontSize="24px">
+        <Text fontWeight="bold" mb={[2, 0]}>
+          {readingTime}
+        </Text>
+        <Text display={["none", "block"]} px="8px">
+          &middot;
+        </Text>
+        <Text mb={[2, 0]}>
+          {authors?.length
+            ? "Written by " +
+              authors.map((author) => author.fullName).join(", ")
+            : "No authors"}
+        </Text>
+        <Text display={["none", "block"]} px="8px">
+          &middot;
+        </Text>
+        <Text fontSize="24px" color="brand.gray">
           {publishedAt}
         </Text>
+      </Flex>
+      <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
         {description && (
-          <>
-            <Box fontSize="2xl" pt="40px">
-              <DescriptionPortableText blocks={description} />
-            </Box>
-          </>
+          <Box fontSize="2xl">
+            <DescriptionPortableText blocks={description} />
+          </Box>
         )}
       </Box>
       {coverImageSrc && (
         <Image
-          marginLeft={[0, 0, "120"]}
-          marginTop="80px"
-          marginBottom="80px"
+          margin="40px auto"
+          maxHeight="400px"
+          maxWidth="80ch"
+          width="100%"
+          objectFit="cover"
           src={coverImageSrc}
           alt=""
           borderRadius="20px"

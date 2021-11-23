@@ -8,10 +8,11 @@ export const BackButton = (props: BoxProps) => {
     <Link href="/" passHref>
       <Box
         as="a"
+        aria-label="Back to blog"
+        title="Back to blog"
         display="block"
         padding="8px"
-        title="Back to blog"
-        color="brand.pink"
+        color="inherit"
         fontSize={["1.5rem", "2rem"]}
         lineHeight="1"
         cursor="pointer"

@@ -12,7 +12,7 @@ export const BekkChristmasLogo = (props: BoxProps) => {
   `;
 
   const prefersReducedMotion = usePrefersReducedMotion();
-  const animation = `${spin} infinite 30s linear`;
+  const animation = `${spin} infinite 20s linear`;
 
   return (
     <Box

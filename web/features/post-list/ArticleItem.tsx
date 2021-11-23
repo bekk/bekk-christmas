@@ -29,9 +29,9 @@ export const ArticleItem = (post: ArticlePostType) => {
         position="relative"
         flexDirection="column"
         background="brand.white"
-        padding={["24px 16px", "32px"]}
-        width={["220px", "300px"]}
-        height={["300px", "430px"]}
+        padding={["24px 16px", "24px 16px", "32px", "32px"]}
+        width={["220px", "220px", "300px", "300px"]}
+        height={["300px", "300px", "430px", "430px"]}
         color="brand.darkGreen"
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
         transition="transform 0.2s, background 0.2s"
@@ -57,7 +57,7 @@ export const ArticleItem = (post: ArticlePostType) => {
             src={coverImageSrc}
             alt=""
             borderRadius="8px"
-            maxHeight={["75px", "150px"]}
+            maxHeight={["75px", "75px", "150px", "150px"]}
             objectFit="cover"
             mb="12px"
           />
@@ -65,14 +65,18 @@ export const ArticleItem = (post: ArticlePostType) => {
         <Heading
           as="h2"
           fontWeight="400"
-          fontSize={coverImageSrc ? ["20px", "22px"] : ["24px", "30px"]}
+          fontSize={
+            coverImageSrc
+              ? ["20px", "20px", "26px", "26px"]
+              : ["24px", "24px", "30px", "34px"]
+          }
           marginBottom={coverImageSrc ? "6px" : "12px"}
           title={post.title}
-          noOfLines={[coverImageSrc ? 3 : 4, 4]}
+          noOfLines={coverImageSrc ? 3 : 4}
         >
           {post.title}
         </Heading>
-        <Text noOfLines={[coverImageSrc ? 1 : 2, 2]}>
+        <Text noOfLines={[coverImageSrc ? 1 : 2, coverImageSrc ? 1 : 2, 2, 2]}>
           <DescriptionPortableText blocks={post.description} />
         </Text>
 
@@ -80,7 +84,7 @@ export const ArticleItem = (post: ArticlePostType) => {
           position="absolute"
           bottom="24px"
           right="24px"
-          width="40px"
+          width={["30px", "30px", "40px", "40px"]}
         />
       </Flex>
     </Link>
