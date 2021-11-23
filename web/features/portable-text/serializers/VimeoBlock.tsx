@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
 
+type VimeoBlockProps = { node: { src: string } };
 export const VimeoBlock = ({ node }: any) => {
   return (
     <Box maxWidth="854px">

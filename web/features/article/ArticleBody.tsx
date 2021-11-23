@@ -4,8 +4,12 @@ import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
 import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
+import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodcastBlock";
+import { VimeoBlock } from "../portable-text/serializers/VimeoBlock";
 
 type ArticleBodyProps = {
+  type?: "article" | "podcast" | "video";
+  embedUrl?: string;
   title: string;
   category: string;
   readingTime?: string;
@@ -16,6 +20,8 @@ type ArticleBodyProps = {
   content: unknown[];
 };
 export const ArticleBody = ({
+  type,
+  embedUrl,
   title,
   category,
   readingTime,
@@ -77,11 +83,9 @@ export const ArticleBody = ({
           borderRadius="20px"
         />
       )}
-      {content ? (
-        <ContentPortableText blocks={content} />
-      ) : (
-        <Text>No content</Text>
-      )}
+      {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
+      {type === "video" && <VimeoBlock node={{ src: embedUrl }} />}
+      {content && <ContentPortableText blocks={content} />}
     </Container>
   );
 };
