@@ -6,7 +6,6 @@ import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
 import { useSlideshow } from "../../features/stand/useSlideshow";
 import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
 import { GenerativeArtSlide } from "../../features/stand/views/GenerativeArtSlide";
-import { IframeSlide } from "../../features/stand/views/IframeSlide";
 import { ImageSlide } from "../../features/stand/views/ImageSlide";
 import { TextSlide } from "../../features/stand/views/TextSlide";
 import { TitleSlide } from "../../features/stand/views/TitleSlide";
@@ -54,7 +53,98 @@ const luker = {
     return useSlideshow([<TitleSlide key={1}>Fagdags&shy;minner</TitleSlide>]);
   },
   Luke4: () => {
-    return useSlideshow([<TitleSlide key={1}>Bekk-prosjekter</TitleSlide>]);
+    return useSlideshow([
+      <TitleSlide key={1}>Bekk-prosjekter</TitleSlide>,
+      <TextSlide key={2}>
+        <Stack>
+          <Heading>{"<ForrigeUke />"}</Heading>
+          <Text>
+            {"<ForrigeUke />"}er en artikkelserie på blogg.bekk.no, som
+            oppsummerer hva som skjedde i frontend-verden i uken som var
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={3}>
+        <Stack>
+          <Heading>Drypp</Heading>
+          <Text>
+            Drypp er en lavterskel podcast der vi snakker om innovasjon,
+            produktutvikling, forretningsutvikling og ledelse.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={4}>
+        <Stack>
+          <Heading>Den Norske Opera og Ballett</Heading>
+          <Text>Vi fikk mulighet til å revitalisere Operaen.no</Text>
+          <Text>
+            For å bedre gjenspeile det moderne uttrykket til bygget og den åpne
+            atmosfæren, har nettsidene gått fra å være tett innrammet med en
+            massiv meny til å ha mer luft mellom både bilder og tekst. I tillegg
+            har fargepaletten blitt lysere og lettere, med inspirasjon fra
+            bygget og materialene der.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={5}>
+        <Stack>
+          <Heading>Pils og Programmering</Heading>
+          <Text>
+            «Pils og programmering» er et enkelt konsept: en samling for folk
+            som liker å ta et par pils mens de progger i godt lag. Ta med deg
+            maskinen og en idé du bryr deg om, og slipp skaperevnen løs blant
+            likesinnede. Bli inspirert av hva andre jobber på, få feedback på
+            dine egne prosjekter og ha en hyggelig kveld med andre flinke
+            fagfolk.
+          </Text>
+          <Text>
+            Og selvfølgelig, du trenger ikke drikke pils. Du får også
+            alkoholfritt og brus. Og mat.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={6}>
+        <Stack>
+          <Heading>Klimabrølet</Heading>
+          <Text>
+            Klimabrølet er en uavhengig forening som har som mål å iverksette
+            tiltak slik av vi kan begrense global oppvarming. Klimabrølet jobber
+            for å bygge en folkelig oppslutning for å påvirke politikere til å
+            ta klimaet på alvor. Teamet har jobbet med løsningen for de digitale
+            brølene, og med årets Klimabrøl-markering som var i slutten av
+            august.
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={7}>
+        <Stack>
+          <Heading>Entur Tavla</Heading>
+          <Text>
+            Entur Tavla lar deg enkelt lage din egen avgangstavle for den
+            adressen du ønsker i hele Norge, med tilpasset visningsformat,
+            antall stoppesteder og hvilke reisemodaliteter du ønsker
+          </Text>
+          <Text>
+            Tavla har et stort potensiale til å ta over som
+            ruteinformasjonssystem på hoteller, kjøpesentre, flyplasser,
+            kontorer og lignende
+          </Text>
+          <Text>
+            Er du interessert i en sniktitt, ta en tur på tavla.entur.no!
+          </Text>
+        </Stack>
+      </TextSlide>,
+      <TextSlide key={8}>
+        <Stack>
+          <Heading>Pushwagnesizer</Heading>
+          <Text>
+            I samarbeid med Grafill, fikk Bekk være med å konseptualisere temaet
+            for ED Awards, «Making new connections». Målet var å skape en unik
+            opplevelse for de besøkende ved å forene design og teknologi.
+          </Text>
+        </Stack>
+      </TextSlide>,
+    ]);
   },
   Luke5: () => {
     return useSlideshow([
@@ -79,13 +169,21 @@ const luker = {
     return useSlideshow([
       <TitleSlide key={1}>Taste-konkurranse!</TitleSlide>,
       <TextSlide key={2}>
-        Tror du at du er den raskeste tastern på {CONFERENCE_NAME}? På tide å
-        bevise det 👇
+        <Stack spacing={4}>
+          <Text>
+            Tror du at du er den raskeste tastern på {CONFERENCE_NAME}? På tide
+            å bevise det 👇
+          </Text>
+          <Image
+            src="/images/tastekonkurranse-qr-code.svg"
+            alt="
+https://priceless-bose-d509cc.netlify.app"
+          />
+          <Text fontSize="3xl" textAlign="center">
+            (vi har en data stående her også)
+          </Text>
+        </Stack>
       </TextSlide>,
-      [
-        <IframeSlide url="https://priceless-bose-d509cc.netlify.app" key={3} />,
-        { duration: tp`30 minutes` },
-      ],
     ]);
   },
   Luke8: () => {
@@ -176,7 +274,8 @@ const luker = {
           <Text>
             Bekk Band er Bekk sitt eget husband, komplett med både salgssjef på
             trommer, administrerende direktør på gitar og mange andre flotte
-            medlemmer. De har holdt på i over 10 år!
+            medlemmer. De har holdt på siden sin første konsert på julebordet på
+            Stratos i 2004.
           </Text>
         </Stack>
       </TextSlide>,
@@ -192,7 +291,8 @@ const luker = {
             Datarock, Pony the Pirate, OnklP, Svømmebasseng, Paul Tonning,
             Klondike, Sonde Justad, Oslo Ess, Valentourettes, Dagny, Jonas
             Alaska, Lars Lillo Stenberg, Stein Torleif Bjella, Marion Ravn, Hank
-            von Helvete (RIP), Espen Beranek og Highasakite
+            von Helvete (RIP), Espen Beranek, Oral Bee, Pimp Lotion og
+            Highasakite
           </Text>
         </Stack>
       </TextSlide>,
@@ -328,10 +428,6 @@ const luker = {
           alt="https://skjermleser-stand.herokuapp.com/"
         />
       </TextSlide>,
-      [
-        <IframeSlide key={4} url="https://skjermleser-stand.herokuapp.com" />,
-        { duration: tp`30 minutes` },
-      ],
     ]);
   },
   Luke19: () => {
