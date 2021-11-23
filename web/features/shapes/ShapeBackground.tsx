@@ -34,7 +34,7 @@ export const ShapeBackground = () => {
         right={["5%", "-15%", "-15%", "5%"]}
         width="80vmin"
       />
-      <Circle position="absolute" bottom={["-50%"]} right={["-15%"]} />
+      <Circle position="absolute" bottom={["90%", "-50%"]} right={["-15%"]} />
       <Circle
         position="absolute"
         bottom={["-100%", "-100%", "-100%", "-8%"]}
@@ -44,9 +44,9 @@ export const ShapeBackground = () => {
       />
       <Circle
         position="absolute"
-        top={["2%", "12%", "3%", "2%"]}
-        right={["-3%", "-15%", "-15%", "-3%"]}
-        width={["75vmin", "60vmin", "50vmin", "60vmin"]}
+        top={["-5%", "12%", "3%", "2%"]}
+        right={["-15%", "-15%", "-15%", "-3%"]}
+        width={["90vmin", "60vmin", "50vmin", "60vmin"]}
         fill="brand.salmon"
       />
       <BlobWide
@@ -57,19 +57,19 @@ export const ShapeBackground = () => {
       />
       <Dots
         position="absolute"
-        top={["15%", "8%", "8%", "-0.5%"]}
-        left={["5%", "2%", "-1%", "-0.5%"]}
+        top={["10%", "8%", "8%", "15%"]}
+        left={["5%", "2%", "-1%", "5%"]}
       />
       <BlobThick
         position="absolute"
-        top={["-3%", "-20%", "-40%", "-48%"]}
-        left={["-40%", "-50%", "-40%", "10%"]}
-        width={["100vmin", "95vmin", "90vmin", "85vmin"]}
+        top={["60%", "-20%", "-30%", "-50%"]}
+        left={["60%", "-50%", "-60%", "-15%"]}
+        width={["80vmin", "95vmin", "80vmin", "85vmin"]}
       />
       <Branch
         position="absolute"
         top={["-1%", "-5%", "-8%", "-10%"]}
-        right={["-60%", "-55%", "-45%", "-25%"]}
+        right={["-30%", "-55%", "-45%", "-25%"]}
         width={["130vmin", "115vmin", "100vmin", "85vmin"]}
       />
       <Star

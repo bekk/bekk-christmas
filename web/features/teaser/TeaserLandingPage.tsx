@@ -14,7 +14,7 @@ export const TeaserLandingPage = () => {
     >
       <ShapeBackground />
       <a href="/post/2020">
-        <BekkChristmasLogo width={["70vmin", "40vmin"]} />
+        <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
       </a>
       <Countdown
         date={`${new Date().getFullYear()}/12/01`}
@@ -34,7 +34,7 @@ const CountdownRenderer: CountdownRendererFn = ({
     return <Heading>It's happening!</Heading>;
   } else {
     return (
-      <Box color="white" display="flex" marginTop="3rem">
+      <Box color="white" display="flex" marginTop="7rem">
         <NumberWithLabel number={days} label="Days" />
         <NumberWithLabel number={hours} label="Hours" />
         <NumberWithLabel number={minutes} label="Minutes" />
