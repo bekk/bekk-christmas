@@ -54,7 +54,8 @@ const post = {
     {
       title: "Available from",
       name: "availableFrom",
-      description: "The date the post was or will be posted",
+      description:
+        "The date the post was or will be posted. If you don't know, just let this be as is, and somebody will do this for you :)",
       type: "date",
       validation: (Rule) => Rule.required(),
       initialValue: `${new Date().getUTCFullYear()}-12-01`,
