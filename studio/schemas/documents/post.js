@@ -4,6 +4,47 @@ const post = {
   type: "document",
   fields: [
     {
+      title: "Type of content",
+      description: "Pick what kind of content you're creating.",
+      name: "type",
+      type: "string",
+      initialValue: "article",
+      options: {
+        list: [
+          { title: "Article", value: "article" },
+          { title: "Video", value: "video" },
+          { title: "Podcast", value: "podcast" },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: "Embed URL",
+      description:
+        "If you're uploading a video or a podcast, you need to upload your content to somebody who knows what they're doing. Upload podcasts to anchor.fm, and videos to vimeo.com. If you need access, contact Kristofer G. Selbekk.",
+      name: "embedUrl",
+      type: "url",
+      validation: (Rule) =>
+        Rule.custom((url, context) => {
+          if (["podcast", "video"].includes(context.document.type) && !url) {
+            return "A URL to embed is required";
+          }
+<<<<<<< HEAD
+          if (
+            context.document.type === "video" &&
+            !url.startsWith("https://player.vimeo.com")
+          ) {
+=======
+          if (context.document.type === "video" && !url.startsWith("https://player.vimeo.com")) {
+>>>>>>> 738c5155db15ae9a4a4ebe3bb062f1416b7ead0d
+            return "Get the embed URL, not the regular URL. It should start with player.vimeo.com/video";
+          }
+          return true;
+        }),
+      hidden: ({ document }) =>
+        !["podcast", "video", undefined].includes(document.type),
+    },
+    {
       title: "Title",
       description: "Make it snappy!",
       name: "title",
@@ -54,7 +95,8 @@ const post = {
     {
       title: "Available from",
       name: "availableFrom",
-      description: "The date the post was or will be posted",
+      description:
+        "The date the post was or will be posted. If you don't know, just let this be as is, and somebody will do this for you :)",
       type: "date",
       validation: (Rule) => Rule.required(),
       initialValue: `${new Date().getUTCFullYear()}-12-01`,

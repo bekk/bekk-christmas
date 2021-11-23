@@ -15,6 +15,8 @@ const formatter = Intl.DateTimeFormat("en-US", {
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   category?: string;
+  type?: "article" | "podcast" | "video";
+  embedUrl?: string;
   title?: string;
   description?: unknown[];
   content: unknown[];
@@ -26,6 +28,8 @@ type ArticleProps = {
 };
 export const Article = ({
   category,
+  type = "article",
+  embedUrl,
   title = "",
   description = [],
   content,
@@ -56,6 +60,8 @@ export const Article = ({
     >
       <ArticleHeader />
       <ArticleBody
+        type={type}
+        embedUrl={embedUrl}
         title={title}
         category={category}
         readingTime={
