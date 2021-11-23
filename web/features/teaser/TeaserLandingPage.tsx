@@ -12,7 +12,7 @@ export const TeaserLandingPage = () => {
       width="100vw"
       flexDirection="column"
     >
-      <ShapeBackground />
+      <ShapeBackground isFullPage />
       <a href="/post/2020">
         <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
       </a>
