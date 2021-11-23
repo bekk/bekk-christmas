@@ -58,7 +58,6 @@ export default {
       type: "code",
       options: {
         languageAlternatives: [
-          { title: "Plain text", value: "text" },
           { title: "Bash", value: "bash" },
           { title: "Clojure", value: "clojure" },
           { title: "CSS", value: "css" },
