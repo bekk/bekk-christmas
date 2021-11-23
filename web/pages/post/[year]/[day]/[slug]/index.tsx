@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../../../../../features/article/Article";
-import { ArticleBackButton } from "../../../../../features/article/ArticleBackButton";
+import { BackButton } from "../../../../../features/post-list/BackButton";
 import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
 import { toDayYear } from "../../../../../utils/date";
 import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
@@ -94,7 +94,7 @@ const NotAvailableYet = ({ availableFrom }: NotAvailableYetProps) => {
         padding="2.5rem"
       >
         <Container maxWidth="container.md">
-          <ArticleBackButton />
+          <BackButton />
         </Container>
         <Center textAlign="center" flex="1">
           <Box>

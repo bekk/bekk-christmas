@@ -72,7 +72,7 @@ export const ArticleItem = (post: ArticlePostType) => {
           }
           marginBottom={coverImageSrc ? "6px" : "12px"}
           title={post.title}
-          noOfLines={[coverImageSrc ? 3 : 4, coverImageSrc ? 3 : 4, 4, 4]}
+          noOfLines={coverImageSrc ? 3 : 4}
         >
           {post.title}
         </Heading>

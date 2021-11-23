@@ -16,8 +16,8 @@ export const theme = extendTheme({
       red: "#DD0026",
       pink: "#F7DEDF",
       white: "#FFFFFF",
-      darkGrey: "#242424",
-      midGrey: "#505050",
+      black: "#0E0E0E",
+      gray: "#646464",
     },
   },
 });

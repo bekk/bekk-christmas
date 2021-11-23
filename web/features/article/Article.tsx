@@ -50,6 +50,7 @@ export const Article = ({
 
   return (
     <Box
+      color="brand.black"
       backgroundColor={isScrolledToTop ? "brand.pink" : "white"}
       transition="background-color .5s ease-out"
     >
