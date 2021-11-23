@@ -111,7 +111,7 @@ export const ShapeBackground = ({
           "-50%",
         ]}
         left={[
-          isFullPage ? "-35%" : "-50%",
+          isFullPage ? "-35%" : "70%",
           isFullPage ? "-60%" : "-60%",
           "-40%",
           "-15%",

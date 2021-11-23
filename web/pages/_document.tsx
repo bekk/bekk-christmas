@@ -19,9 +19,9 @@ export default class Document extends NextDocument {
             title="RSS feed for Bekk Christmas"
             href={`${baseUrl}/rss.xml`}
           />
+          <FontLoader />
         </Head>
         <body>
-          <FontLoader />
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
