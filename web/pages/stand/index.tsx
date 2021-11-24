@@ -291,8 +291,8 @@ https://priceless-bose-d509cc.netlify.app"
             Datarock, Pony the Pirate, OnklP, Svømmebasseng, Paul Tonning,
             Klondike, Sonde Justad, Oslo Ess, Valentourettes, Dagny, Jonas
             Alaska, Lars Lillo Stenberg, Stein Torleif Bjella, Marion Ravn, Hank
-            von Helvete (RIP), Espen Beranek, Oral Bee, Pimp Lotion og
-            Highasakite
+            von Helvete (RIP), Espen Beranek, Oral Bee, Pimp Lotion, Highasakite
+            og Astrid S
           </Text>
         </Stack>
       </TextSlide>,
