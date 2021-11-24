@@ -1,4 +1,10 @@
-import { Code, Box, ListItem, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Code,
+  ListItem,
+  OrderedList,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { createPortableTextComponent } from "next-sanity";
 import React from "react";
 import { sanityConfig } from "../../utils/sanity/config";
@@ -73,9 +79,13 @@ const serializers = {
     ),
     code: Code,
   },
-  list: withWrap()((props) => (
-    <UnorderedList fontSize="lg">{props.children}</UnorderedList>
-  )),
+  list: withWrap()(
+    (props: { type: "number" | "bullet"; children: React.ReactNode }) => {
+      const ListComponent =
+        props.type === "number" ? OrderedList : UnorderedList;
+      return <ListComponent fontSize="lg">{props.children}</ListComponent>;
+    }
+  ),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
   container: (props: any) => <>{props.children}</>,
 };
