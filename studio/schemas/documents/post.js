@@ -29,14 +29,10 @@ const post = {
           if (["podcast", "video"].includes(context.document.type) && !url) {
             return "A URL to embed is required";
           }
-<<<<<<< HEAD
           if (
             context.document.type === "video" &&
             !url.startsWith("https://player.vimeo.com")
           ) {
-=======
-          if (context.document.type === "video" && !url.startsWith("https://player.vimeo.com")) {
->>>>>>> 738c5155db15ae9a4a4ebe3bb062f1416b7ead0d
             return "Get the embed URL, not the regular URL. It should start with player.vimeo.com/video";
           }
           return true;
