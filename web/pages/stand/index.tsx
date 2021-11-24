@@ -289,10 +289,10 @@ https://priceless-bose-d509cc.netlify.app"
           <Text fontSize="2xl">
             Postgirobygget, Sunsanne Sundfør, Bare Egil Band, Tourettes,
             Datarock, Pony the Pirate, OnklP, Svømmebasseng, Paul Tonning,
-            Klondike, Sonde Justad, Oslo Ess, Valentourettes, Dagny, Jonas
+            Klondike, Sondre Justad, Oslo Ess, Valentourettes, Dagny, Jonas
             Alaska, Lars Lillo Stenberg, Stein Torleif Bjella, Marion Ravn, Hank
-            von Helvete (RIP), Espen Beranek, Oral Bee, Pimp Lotion og
-            Highasakite
+            von Helvete (RIP), Tacobitch, Espen Beranek, Vidar Villa, Oral Bee,
+            Pimp Lotion og Highasakite
           </Text>
         </Stack>
       </TextSlide>,
