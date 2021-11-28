@@ -9,11 +9,17 @@ import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
 
 type PostListProps = {
+  year: number;
   posts: ArticlePostType[];
   heading: string;
   description?: string;
 };
-export const PostList = ({ posts, heading, description }: PostListProps) => {
+export const PostList = ({
+  year,
+  posts,
+  heading,
+  description,
+}: PostListProps) => {
   const headingRef = createRef<HTMLDivElement>();
   const scrollButtonRef = createRef<HTMLDivElement>();
   const postListContainerRef = createRef<HTMLDivElement>();
@@ -72,7 +78,9 @@ export const PostList = ({ posts, heading, description }: PostListProps) => {
         left="0"
         padding={["40px", "40px", "64px", "64px"]}
       >
-        <BackButton color="inherit" />
+        <BackButton color="inherit" href={`/post/${year}`}>
+          Home
+        </BackButton>
       </Box>
       <Box
         position={["relative", "relative", "fixed", "fixed"]}

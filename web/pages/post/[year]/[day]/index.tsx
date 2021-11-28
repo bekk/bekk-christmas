@@ -2,9 +2,9 @@ import { Box } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
 import { PostList } from "../../../../features/post-list/PostList";
+import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { toDayYear } from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
@@ -12,21 +12,39 @@ type PostsForDayProps = {
   posts: ArticlePostType[];
   day: number;
   year: number;
+  available: boolean;
 };
-export default function PostsForDay({ posts, day, year }: PostsForDayProps) {
-  const heading = posts.length === 0 ? "No posts found!" : `${day}-Dec`;
-  const description =
-    posts.length === 0
-      ? "We are sorry, there are no posts available."
-      : `Today's content`;
+export default function PostsForDay({
+  posts,
+  day,
+  year,
+  available,
+}: PostsForDayProps) {
+  const heading = !available
+    ? "Not available yet"
+    : posts.length === 0
+    ? "No posts found!"
+    : `${day}-Dec`;
+  const description = !available
+    ? `You have to check back on December ${day}.`
+    : posts.length === 0
+    ? "We are sorry, there are no posts available yet."
+    : `Today's content`;
 
   return (
     <Box>
       <SiteMetadata
         title={`Posts for day ${day}, ${year}`}
-        description={`Check out all ${posts.length} posts from Bekk on day ${day} of the ${year} Christmas season`}
+        description={`Check out ${
+          posts.length > 1 ? `all ${posts.length} posts` : `the content`
+        } from Bekk on day ${day} of the ${year} Christmas season`}
       />
-      <PostList posts={posts} heading={heading} description={description} />
+      <PostList
+        posts={posts}
+        heading={heading}
+        description={description}
+        year={year}
+      />
     </Box>
   );
 }
@@ -63,13 +81,33 @@ const LATEST_CONTENT_YEAR = 2021;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const day = Number(params?.day);
+  const year = Number(params?.year);
+
   const isValidDay =
     day >= FIRST_DAY_OF_CHRISTMAS || day <= LAST_DAY_OF_CHRISTMAS;
-  const year = Number(params?.year);
+
   const isValidYear = year >= FIRST_CONTENT_YEAR && year <= LATEST_CONTENT_YEAR;
 
   if (!isValidDay || !isValidYear) {
     return { notFound: true };
+  }
+
+  const now = new Date();
+
+  const isDayAvailable =
+    year < LATEST_CONTENT_YEAR ||
+    (now.getMonth() === 11 && day <= now.getDate());
+
+  if (!isDayAvailable) {
+    return {
+      props: {
+        posts: [],
+        available: false,
+        day,
+        year,
+      },
+      revalidate: 5,
+    };
   }
 
   const postsPublishedForDay = await getClient().fetch(
@@ -94,6 +132,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       posts: postsPublishedForDay,
+      available: true,
       day,
       year,
     },

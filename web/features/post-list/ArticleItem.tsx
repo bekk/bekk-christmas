@@ -1,12 +1,12 @@
-import React from "react";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { urlFor } from "../../utils/sanity/utils";
 import { Image } from "@chakra-ui/image";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 import readingTime from "reading-time";
-import { ArrowShort } from "./Arrow";
 import { toDayYear } from "../../utils/date";
+import { urlFor } from "../../utils/sanity/utils";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
+import { ArrowShort } from "./Arrow";
 
 export type ArticlePostType = {
   _type: "post";
@@ -25,6 +25,7 @@ export const ArticleItem = (post: ArticlePostType) => {
   return (
     <Link href={`/post/${year}/${day}/${post.slug}`} passHref>
       <Flex
+        as="a"
         cursor="pointer"
         position="relative"
         flexDirection="column"
@@ -36,6 +37,10 @@ export const ArticleItem = (post: ArticlePostType) => {
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
         transition="transform 0.2s, background 0.2s"
         _hover={{
+          transform: "scale(1.05)",
+          background: "brand.pink",
+        }}
+        _focus={{
           transform: "scale(1.05)",
           background: "brand.pink",
         }}

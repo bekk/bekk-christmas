@@ -1,11 +1,16 @@
-import React from "react";
 import { Box, BoxProps, Heading } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 import { ArrowLong } from "./Arrow";
 
-export const BackButton = (props: BoxProps) => {
+type BackButtonProps = BoxProps & { href?: string };
+export const BackButton = ({
+  href = "/",
+  children = "Home",
+  ...props
+}: BackButtonProps) => {
   return (
-    <Link href="/" passHref>
+    <Link href={href} passHref>
       <Box
         as="a"
         aria-label="Back to blog"
@@ -28,7 +33,7 @@ export const BackButton = (props: BoxProps) => {
           _groupHover={{ transform: "translateX(-8px)" }}
         />
         <Heading as="h3" fontWeight="400" display="inline">
-          Home
+          {children}
         </Heading>
       </Box>
     </Link>
