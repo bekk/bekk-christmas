@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, HStack } from "@chakra-ui/react";
 import React, { createRef } from "react";
 import { toDayYear } from "../../utils/date";
-import { toPlainText } from "../../utils/sanity/utils";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
 import { ArrowShort } from "./Arrow";
@@ -127,6 +126,7 @@ export const PostList = ({
             `${100 * headingSpace}vw`,
             `${100 * headingSpace}vw`,
           ]}
+          marginRight={["30vw", "20vw", "10vw"]}
         >
           {posts.map((post, index) => {
             switch (post._type) {

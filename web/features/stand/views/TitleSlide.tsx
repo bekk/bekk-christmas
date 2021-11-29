@@ -7,7 +7,7 @@ export const TitleSlide = ({ children }: TitleSlideProps) => {
     <Center minHeight="100vh" background="brand.pink" color="brand.darkGreen">
       <Box
         fontFamily="heading"
-        fontSize="8em"
+        fontSize="7em"
         lineHeight="1"
         textAlign="center"
       >
