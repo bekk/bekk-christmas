@@ -48,7 +48,6 @@ export const FontLoader = () => {
           rel="preload"
           href={font.src}
           as="font"
-          type={`font/${font.format}`}
           crossOrigin="anonymous"
         />
       ))}
