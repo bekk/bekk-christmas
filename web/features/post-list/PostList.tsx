@@ -69,7 +69,7 @@ export const PostList = ({
           top="50%"
           pointerEvents="none"
           left="55vw"
-          strokeWidth="100"
+          strokeWidth="150"
           stroke={theme.foreground}
         />
         <Box
