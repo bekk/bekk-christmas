@@ -9,7 +9,7 @@ const listOf24Days = Array(24)
   .map((_, i) => i + 1);
 
 type CalendarProps = {
-  year: number | string;
+  year: number;
 };
 
 const Calendar = (props: CalendarProps) => {
@@ -51,10 +51,11 @@ export default Calendar;
 
 type DayProps = {
   day: number;
-  year: number | string;
+  year: number;
 };
 
 function Day({ day, year }: DayProps) {
+  const isOpen = new Date() > new Date(year, 11, day);
   const degreeTable = [-3, -2, -1, 1, 2, 3];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
@@ -62,7 +63,8 @@ function Day({ day, year }: DayProps) {
       <Box
         as="a"
         color="brand.white"
-        border="3px solid white"
+        border={"3px white " + (isOpen ? "solid" : "dotted")}
+        opacity={isOpen ? "1" : "0.6"}
         width="150px"
         height="150px"
         transition=".25s ease-out"

@@ -6,7 +6,7 @@ import Calendar from "../../../features/calendar/Calendar";
 import { SiteMetadata } from "../../../features/site-metadata/SiteMetadata";
 
 const YearPage = () => {
-  const year = useRouter().query.year as string;
+  const year = parseInt(useRouter().query.year as string);
   return (
     <Box>
       <SiteMetadata
