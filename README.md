@@ -2,9 +2,7 @@
 
 Welcome to the Bekk Christmas codebase. :santa:
 
-> ## :warning: In active development :warning:
->
-> We're in the middle of rewriting and redesigning this app. That means this version is not yet in production. Please bear with us while we get ready to re-launch!
+Please visit us at [bekk.christmas](https://bekk.christmas)!
 
 If you want to add content, please get in touch with @selbekk.
 
