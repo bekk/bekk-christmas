@@ -26,7 +26,7 @@ export default function PostsForDay({
     ? "No posts found!"
     : `${day}-Dec`;
   const description = !available
-    ? `You have to check back on December ${day}.`
+    ? `Check back on December ${getDayWithEnding(day)}.`
     : posts.length === 0
     ? "We are sorry, there are no posts available yet."
     : `Today's content`;
@@ -142,3 +142,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const toDateString = (year: number, day: number) =>
   `${year}-12-${day.toString().padStart(2, "0")}`;
+
+const getDayWithEnding = (day: number) => {
+  if (day % 10 === 1) {
+    return "1st";
+  }
+  if (day % 10 === 2) {
+    return "2nd";
+  }
+  if (day % 10 === 3) {
+    return "3rd";
+  }
+  return `${day}th`;
+};
