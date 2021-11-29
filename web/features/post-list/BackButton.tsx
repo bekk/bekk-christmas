@@ -32,7 +32,13 @@ export const BackButton = ({
           transition="transform 0.2s"
           _groupHover={{ transform: "translateX(-8px)" }}
         />
-        <Heading as="h3" fontWeight="400" display="inline">
+        <Heading
+          as="h3"
+          fontWeight="400"
+          display="inline"
+          fontFamily={"DINOT"}
+          fontSize={"1.5rem"}
+        >
           {children}
         </Heading>
       </Box>

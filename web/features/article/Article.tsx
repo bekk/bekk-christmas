@@ -58,7 +58,7 @@ export const Article = ({
       backgroundColor={isScrolledToTop ? "brand.pink" : "white"}
       transition="background-color .5s ease-out"
     >
-      <ArticleHeader />
+      <ArticleHeader publishedAt={publishedAt} />
       <ArticleBody
         type={type}
         embedUrl={embedUrl}

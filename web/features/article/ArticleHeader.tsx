@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Box, Flex } from "@chakra-ui/react";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { BackButton } from "../post-list/BackButton";
+import { shortDateFormat } from "../../utils/date";
 
-export const ArticleHeader = () => {
+export const ArticleHeader = ({ publishedAt }: { publishedAt: Date }) => {
   return (
     <Flex as="header" minHeight="15vh" alignItems="center">
       <Container maxWidth="container.lg">
-        <BackButton color="brand.darkGreen" />
+        <BackButton color="brand.darkGreen">
+          {shortDateFormat(publishedAt)}
+        </BackButton>
         <Box
           position={["absolute"]}
           alignSelf="flex-end"
