@@ -5,7 +5,7 @@ import React from "react";
 import { Article } from "../../../../../features/article/Article";
 import { BackButton } from "../../../../../features/post-list/BackButton";
 import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
-import { toDayYear } from "../../../../../utils/date";
+import { shortDateFormat, toDayYear } from "../../../../../utils/date";
 import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
@@ -56,6 +56,8 @@ export default function BlogPostPage({
         author={authors.map((author) => author.fullName).join(", ")}
       />
       <Article
+        backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
+        backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}
         title={post.title}

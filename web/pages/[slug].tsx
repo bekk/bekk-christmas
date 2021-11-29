@@ -41,10 +41,13 @@ export default function Page({
         description={toPlainText(page.description)}
       />
       <Article
+        type="page"
         title={page.title}
         category="Info"
         description={page.description}
         content={page.content}
+        backButtonHref="/"
+        backButtonText="Home"
       />
     </>
   );
