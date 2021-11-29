@@ -75,8 +75,8 @@ export const BekkFunFactsLuke = () => {
         Pony the Pirate, OnklP, Svømmebasseng, Paul Tonning, Klondike, Sondre
         Justad, Oslo Ess, Valentourettes, Dagny, Jonas Alaska, Lars Lillo
         Stenberg, Stein Torleif Bjella, Marion Ravn, Hank von Helvete (RIP),
-        Tacobitch, Espen Beranek, Vidar Villa, Oral Bee, Pimp Lotion og
-        Highasakite
+        Tacobitch, Espen Beranek, Vidar Villa, Oral Bee, Pimp Lotion,
+        Highasakite og Astrid S
       </Text>
     </TextSlide>,
   ]);
