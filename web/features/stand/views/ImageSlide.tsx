@@ -8,7 +8,7 @@ type ImageSlideProps = {
 export const ImageSlide = ({ children, src, ...props }: ImageSlideProps) => {
   return (
     <Center minHeight="100vh" background="brand.pink" color="brand.darkGreen">
-      <Box px="2em" fontSize="5xl" lineHeight="1.3" {...props}>
+      <Box px="2em" fontSize="4xl" lineHeight="1.3" {...props}>
         <Image src={src} alt={children} />
         {children && <Box>{children}</Box>}
       </Box>
