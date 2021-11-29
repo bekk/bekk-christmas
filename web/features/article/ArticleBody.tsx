@@ -8,7 +8,7 @@ import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodca
 import { VimeoBlock } from "../portable-text/serializers/VimeoBlock";
 
 type ArticleBodyProps = {
-  type?: "article" | "podcast" | "video";
+  type?: "page" | "article" | "podcast" | "video";
   embedUrl?: string;
   title: string;
   category: string;
@@ -44,26 +44,28 @@ export const ArticleBody = ({
           {title}
         </Heading>
       </Box>
-      <Flex flexWrap="wrap" fontSize="24px">
-        <Text fontWeight="bold" mb={[2, 0]}>
-          {readingTime}
-        </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
-        <Text mb={[2, 0]}>
-          {authors?.length
-            ? "Written by " +
-              authors.map((author) => author.fullName).join(", ")
-            : "No authors"}
-        </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
-        <Text fontSize="24px" color="brand.gray">
-          {publishedAt}
-        </Text>
-      </Flex>
+      {type !== "page" && (
+        <Flex flexWrap="wrap" fontSize="24px">
+          <Text fontWeight="bold" mb={[2, 0]}>
+            {readingTime}
+          </Text>
+          <Text display={["none", "block"]} px="8px">
+            &middot;
+          </Text>
+          <Text mb={[2, 0]}>
+            {authors?.length
+              ? "Written by " +
+                authors.map((author) => author.fullName).join(", ")
+              : null}
+          </Text>
+          <Text display={["none", "block"]} px="8px">
+            &middot;
+          </Text>
+          <Text fontSize="24px" color="brand.gray">
+            {publishedAt}
+          </Text>
+        </Flex>
+      )}
       <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
         {description && (
           <Box fontSize="2xl">

@@ -15,7 +15,7 @@ const formatter = Intl.DateTimeFormat("en-US", {
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   category?: string;
-  type?: "article" | "podcast" | "video";
+  type?: "page" | "article" | "podcast" | "video";
   embedUrl?: string;
   title?: string;
   description?: unknown[];
@@ -25,6 +25,8 @@ type ArticleProps = {
   coverImage?: string;
   showReadingTime?: boolean;
   showHype?: boolean;
+  backButtonHref?: string;
+  backButtonText: string;
 };
 export const Article = ({
   category,
@@ -38,19 +40,11 @@ export const Article = ({
   coverImage,
   showReadingTime = false,
   showHype = false,
+  backButtonHref,
+  backButtonText,
 }: ArticleProps) => {
-  const publishedAtDate = formatter.format(publishedAt);
-
-  const [isScrolledToTop, setScrolledToTop] = React.useState(true);
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setScrolledToTop(window.scrollY < 100);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const publishedAtDate = publishedAt ? formatter.format(publishedAt) : null;
+  const isScrolledToTop = useScrolledToTop();
 
   return (
     <Box
@@ -58,7 +52,10 @@ export const Article = ({
       backgroundColor={isScrolledToTop ? "brand.pink" : "white"}
       transition="background-color .5s ease-out"
     >
-      <ArticleHeader publishedAt={publishedAt} />
+      <ArticleHeader
+        backButtonHref={backButtonHref}
+        backButtonText={backButtonText}
+      />
       <ArticleBody
         type={type}
         embedUrl={embedUrl}
@@ -82,4 +79,18 @@ export const Article = ({
       )}
     </Box>
   );
+};
+
+const useScrolledToTop = () => {
+  const [isScrolledToTop, setScrolledToTop] = React.useState(true);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolledToTop(window.scrollY < 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return isScrolledToTop;
 };

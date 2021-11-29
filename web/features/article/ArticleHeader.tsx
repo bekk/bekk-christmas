@@ -1,23 +1,21 @@
+import { Box, Container, Flex } from "@chakra-ui/react";
 import React from "react";
-import { Container, Box, Flex } from "@chakra-ui/react";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { BackButton } from "../post-list/BackButton";
-import { shortDateFormat } from "../../utils/date";
 
-export const ArticleHeader = ({ publishedAt }: { publishedAt: Date }) => {
+type ArticleHeaderProps = { backButtonHref?: string; backButtonText: string };
+export const ArticleHeader = ({
+  backButtonHref,
+  backButtonText,
+}: ArticleHeaderProps) => {
   return (
     <Flex as="header" minHeight="15vh" alignItems="center">
       <Container maxWidth="container.lg">
-        <BackButton
-          color="brand.darkGreen"
-          href={
-            "/post/" + publishedAt.getFullYear() + "/" + publishedAt.getDate()
-          }
-        >
-          {shortDateFormat(publishedAt)}
+        <BackButton color="brand.darkGreen" href={backButtonHref}>
+          {backButtonText}
         </BackButton>
         <Box
-          position={["absolute"]}
+          position="absolute"
           alignSelf="flex-end"
           top={["40px", "60px"]}
           right={["5vw", "10vw"]}
