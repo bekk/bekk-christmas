@@ -18,7 +18,7 @@ export const TastekonkurranseLuke = () => {
 https://priceless-bose-d509cc.netlify.app"
       />
       <Text fontSize="3xl" textAlign="center">
-        (vi har en data stående her også)
+        (Vi har en data stående her også 👇)
       </Text>
     </TextSlide>,
   ]);
