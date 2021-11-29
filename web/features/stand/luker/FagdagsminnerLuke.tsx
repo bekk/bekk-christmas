@@ -29,7 +29,7 @@ export const FagdagsminnerLuke = () => {
         title="Stand-video 2021"
         pointerEvents="none"
       />,
-      { duration: tp`6 minutes 57 seconds` },
+      { duration: tp`7 minutes` },
     ],
   ]);
 };
