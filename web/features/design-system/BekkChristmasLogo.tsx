@@ -7,8 +7,8 @@ import {
 
 export const BekkChristmasLogo = (props: BoxProps) => {
   const spin = keyframes`
-    from { transform: rotate(0deg)}
-    to { transform: rotate(360deg)}
+    from { transform: rotate(360deg)}
+    to { transform: rotate(0deg)}
   `;
 
   const prefersReducedMotion = usePrefersReducedMotion();
