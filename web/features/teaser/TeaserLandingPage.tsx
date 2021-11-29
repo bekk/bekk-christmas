@@ -1,4 +1,5 @@
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
@@ -13,9 +14,11 @@ export const TeaserLandingPage = () => {
       flexDirection="column"
     >
       <ShapeBackground isFullPage />
-      <a href="/post/2020">
-        <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-      </a>
+      <Link href="/post/2021">
+        <a>
+          <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
+        </a>
+      </Link>
       <Countdown
         date={`${new Date().getFullYear()}/12/01`}
         renderer={CountdownRenderer}
