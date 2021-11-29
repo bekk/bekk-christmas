@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import React from "react";
 import { useSlideshow } from "../useSlideshow";
 import { ImageSlide } from "../views/ImageSlide";
@@ -9,17 +9,15 @@ export const HashtagEkteLuke = () => {
   return useSlideshow([
     <TitleSlide key={1}>#ekte</TitleSlide>,
     <TextSlide key={2}>
-      <Stack>
-        <Text>
-          Det var mange følelser under Corona-året. Mange vonde, men også mange
-          gode.
-        </Text>
-        <Text>
-          Noen Bekkere startet #ekte - en anonym kanal der man kunne sende inn
-          tanker, og få dem illustrert.
-        </Text>
-        <Text>Her er noen av disse tankene</Text>
-      </Stack>
+      <Text>
+        Det var mange følelser under Corona-året. Mange vonde, men også mange
+        gode.
+      </Text>
+      <Text>
+        Noen Bekkere startet #ekte - en anonym kanal der man kunne sende inn
+        tanker, og få dem illustrert.
+      </Text>
+      <Text>Her er noen av disse tankene 🙏</Text>
     </TextSlide>,
     <ImageSlide key={3} src="/images/ekte/ekte-12-ar.png" />,
     <ImageSlide key={4} src="/images/ekte/ekte-dagene-er-like.png" />,
