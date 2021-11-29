@@ -1,48 +1,33 @@
-import { Image } from "@chakra-ui/react";
 import React from "react";
 import { useSlideshow } from "../useSlideshow";
+import { FullScreenImageSlide } from "../views/FullScreenImageSlide";
 import { TitleSlide } from "../views/TitleSlide";
 
 export const BekkGjennomTideneLuke = () => {
   return useSlideshow([
     <TitleSlide key={1}>Bekk.no gjennom tidene</TitleSlide>,
-    <Image
+    <FullScreenImageSlide
       key={2}
-      width="100vw"
-      height="100vh"
-      objectFit="cover"
       src="/images/bekkno-gjennom-tidene/bekkno-2000.png"
       alt="Bekk.no i 2000"
     />,
-    <Image
+    <FullScreenImageSlide
       key={3}
-      width="100vw"
-      height="100vh"
-      objectFit="cover"
       src="/images/bekkno-gjennom-tidene/bekkno-2002.png"
       alt="Bekk.no i 2002"
     />,
-    <Image
+    <FullScreenImageSlide
       key={4}
-      width="100vw"
-      height="100vh"
-      objectFit="cover"
       src="/images/bekkno-gjennom-tidene/bekkno-2007.png"
       alt="Bekk.no i 2007"
     />,
-    <Image
+    <FullScreenImageSlide
       key={5}
-      width="100vw"
-      height="100vh"
-      objectFit="cover"
       src="/images/bekkno-gjennom-tidene/bekkno-2012.png"
       alt="Bekk.no i 2012"
     />,
-    <Image
+    <FullScreenImageSlide
       key={6}
-      width="100vw"
-      height="100vh"
-      objectFit="cover"
       src="/images/bekkno-gjennom-tidene/bekkno-2021.png"
       alt="Bekk.no i 2021"
     />,

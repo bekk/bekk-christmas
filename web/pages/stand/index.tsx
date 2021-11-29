@@ -1,25 +1,5 @@
 import React from "react";
-import {
-  ApningsLuke,
-  BekkalikesLuke,
-  BekkFunFactsLuke,
-  BekkGjennomTideneLuke,
-  BekkProsjekterLuke,
-  BekkvortLuke,
-  DagensArtiklerLuke,
-  EtArMedHjemmekontorLuke,
-  FagdagsminnerLuke,
-  GenerativKunstLuke,
-  GlitchOrDieLuke,
-  HashtagEkteLuke,
-  HobbyprosjekterLuke,
-  RobinTalkLuke,
-  SjokoladetidLuke,
-  SluttenAvDagenLuke,
-  TastekonkurranseLuke,
-  UtviklervitserLuke,
-  UuUtfordringenLuke,
-} from "../../features/stand/luker";
+import * as Luker from "../../features/stand/luker";
 import { useLuke } from "../../features/stand/useLuke";
 import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
 import { useSlideshow } from "../../features/stand/useSlideshow";
@@ -40,43 +20,41 @@ export default function StandPage() {
     return <CountdownSlide secondsLeft={secondsLeft} />;
   }
 
-  const Luke = luker[`Luke${currentLuke}`];
+  const Luke = lukeMapping[`Luke${currentLuke}`];
 
   return <Luke />;
 }
 
-const luker = {
+const lukeMapping = {
   // Dag 1
-  Luke1: ApningsLuke,
-  Luke2: BekkGjennomTideneLuke,
-  Luke3: FagdagsminnerLuke,
-  Luke4: BekkProsjekterLuke,
-  Luke5: EtArMedHjemmekontorLuke,
-  Luke6: () => <DagensArtiklerLuke day={1} />,
-  Luke7: TastekonkurranseLuke,
-  Luke8: SluttenAvDagenLuke,
+  Luke1: Luker.ApningsLuke,
+  Luke2: Luker.BekkGjennomTideneLuke,
+  Luke3: Luker.FagdagsminnerLuke,
+  Luke4: Luker.BekkProsjekterLuke,
+  Luke5: Luker.PelsedirektoratetLuke,
+  Luke6: () => <Luker.DagensArtiklerLuke day={1} />,
+  Luke7: Luker.TastekonkurranseLuke,
+  Luke8: Luker.SluttenAvDagenLuke,
 
   // Dag 2
-  Luke9: RobinTalkLuke,
-  Luke10: BekkFunFactsLuke,
-  Luke11: GenerativKunstLuke,
-  Luke12: () => <DagensArtiklerLuke day={2} />,
-  Luke13: SjokoladetidLuke,
-  Luke14: HashtagEkteLuke,
-  Luke15: () => {
-    return useSlideshow([<TitleSlide key={1}>TBD</TitleSlide>]);
-  },
-  Luke16: GlitchOrDieLuke,
+  Luke9: Luker.RobinTalkLuke,
+  Luke10: Luker.BekkFunFactsLuke,
+  Luke11: Luker.GenerativKunstLuke,
+  Luke12: () => <Luker.DagensArtiklerLuke day={2} />,
+  Luke13: Luker.SjokoladetidLuke,
+  Luke14: Luker.HashtagEkteLuke,
+  Luke15: Luker.AtlasLuke,
+  Luke16: Luker.GlitchOrDieLuke,
 
   // Dag 3
-  Luke17: UtviklervitserLuke,
-  Luke18: UuUtfordringenLuke,
-  Luke19: HobbyprosjekterLuke,
-  Luke20: BekkvortLuke,
-  Luke21: BekkalikesLuke,
-  Luke22: () => <DagensArtiklerLuke day={3} />,
+  Luke17: Luker.UtviklervitserLuke,
+  Luke18: Luker.UuUtfordringenLuke,
+  Luke19: Luker.HobbyprosjekterLuke,
+  Luke20: Luker.BekkvortLuke,
+  Luke21: Luker.BekkalikesLuke,
+  Luke22: () => <Luker.DagensArtiklerLuke day={3} />,
   Luke23: () => {
     return useSlideshow([<TitleSlide key={1}>TBD</TitleSlide>]);
   },
-  Luke24: SluttenAvDagenLuke,
+  Luke24: Luker.SluttenAvDagenLuke,
 };
