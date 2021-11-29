@@ -1,10 +1,8 @@
-import { Box, BoxProps, Center, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import { theme } from "../../utils/theme";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
-import { SiteFooter } from "../site-footer/SiteFooter";
 
 const listOf24Days = Array(24)
   .fill(0)
@@ -25,19 +23,19 @@ const Calendar = (props: CalendarProps) => {
     >
       <BekkChristmasLogo
         position={["relative", "relative", "absolute"]}
-        top={["5vmin", "5vmin", "3vmin"]}
-        right={["0vmin", "0vmin", "3vmin"]}
-        width={["20vmin", "15vmin", "10vmin"]}
+        top={["5vmin", "5vmin", "-6vmin"]}
+        right={["0vmin", "0vmin", "-6vmin"]}
+        width={["30vmin", "24vmin", "20vmin"]}
       />
       <ShapeBackground />
       {showYearNumber && (
         <Heading
           mt={12}
           color="white"
-          fontSize={["2rem", "2.5rem", "3rem"]}
+          fontSize={["1.5rem", "2rem", "2.5rem"]}
           fontWeight="normal"
         >
-          The {props.year} calendar
+          Calendar {props.year}
         </Heading>
       )}
       <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" margin="30px 0 80px" px={6}>
@@ -55,6 +53,7 @@ type DayProps = {
   day: number;
   year: number | string;
 };
+
 function Day({ day, year }: DayProps) {
   const degreeTable = [-3, -2, -1, 1, 2, 3];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
