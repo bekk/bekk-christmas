@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import React from "react";
 import tp from "timeproxy";
 import { useSlideshow } from "../useSlideshow";
@@ -10,10 +10,8 @@ export const GenerativKunstLuke = () => {
   return useSlideshow([
     <TitleSlide key={1}>Generativ kunst!</TitleSlide>,
     <TextSlide key={2}>
-      <Stack>
-        <Text>Lag dine egne generative kunstverk her</Text>
-        <Text>Gå til laptopen ved skjermen for å teste det ut selv.</Text>
-      </Stack>
+      <Text>Lag dine egne generative kunstverk her</Text>
+      <Text>Gå til laptopen ved skjermen for å teste det ut selv.</Text>
     </TextSlide>,
     [<GenerativeArtSlide key={3} />, { duration: tp`1 minute` }],
   ]);
