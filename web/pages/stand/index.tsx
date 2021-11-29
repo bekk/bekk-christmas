@@ -48,11 +48,11 @@ const lukeMapping = {
 
   // Dag 3
   Luke17: Luker.UtviklervitserLuke,
-  Luke18: Luker.UuUtfordringenLuke,
+  Luke18: () => <Luker.DagensArtiklerLuke day={3} />,
   Luke19: Luker.HobbyprosjekterLuke,
   Luke20: Luker.BekkvortLuke,
   Luke21: Luker.BekkalikesLuke,
-  Luke22: () => <Luker.DagensArtiklerLuke day={3} />,
+  Luke22: Luker.UuUtfordringenLuke,
   Luke23: () => {
     return useSlideshow([<TitleSlide key={1}>TBD</TitleSlide>]);
   },
