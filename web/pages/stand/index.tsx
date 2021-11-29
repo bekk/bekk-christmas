@@ -2,9 +2,7 @@ import React from "react";
 import * as Luker from "../../features/stand/luker";
 import { useLuke } from "../../features/stand/useLuke";
 import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
-import { useSlideshow } from "../../features/stand/useSlideshow";
 import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
-import { TitleSlide } from "../../features/stand/views/TitleSlide";
 
 export default function StandPage() {
   const { secondsLeft, reset } = useSecondsLeft();
@@ -28,19 +26,19 @@ export default function StandPage() {
 const lukeMapping = {
   // Dag 1
   Luke1: Luker.ApningsLuke,
-  Luke2: Luker.BekkGjennomTideneLuke,
+  Luke2: () => <Luker.DagensArtiklerLuke day={1} />,
   Luke3: Luker.FagdagsminnerLuke,
   Luke4: Luker.BekkProsjekterLuke,
   Luke5: Luker.PelsedirektoratetLuke,
-  Luke6: () => <Luker.DagensArtiklerLuke day={1} />,
+  Luke6: Luker.BekkGjennomTideneLuke,
   Luke7: Luker.TastekonkurranseLuke,
   Luke8: Luker.SluttenAvDagenLuke,
 
   // Dag 2
   Luke9: Luker.RobinTalkLuke,
-  Luke10: Luker.BekkFunFactsLuke,
+  Luke10: () => <Luker.DagensArtiklerLuke day={2} />,
   Luke11: Luker.GenerativKunstLuke,
-  Luke12: () => <Luker.DagensArtiklerLuke day={2} />,
+  Luke12: Luker.BekkFunFactsLuke,
   Luke13: Luker.SjokoladetidLuke,
   Luke14: Luker.HashtagEkteLuke,
   Luke15: Luker.AtlasLuke,
@@ -53,8 +51,6 @@ const lukeMapping = {
   Luke20: Luker.BekkvortLuke,
   Luke21: Luker.BekkalikesLuke,
   Luke22: Luker.UuUtfordringenLuke,
-  Luke23: () => {
-    return useSlideshow([<TitleSlide key={1}>TBD</TitleSlide>]);
-  },
+  Luke23: Luker.LivetIBekkLuke,
   Luke24: Luker.SluttenAvDagenLuke,
 };
