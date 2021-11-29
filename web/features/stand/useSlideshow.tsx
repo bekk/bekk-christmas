@@ -3,7 +3,7 @@ import React from "react";
 import tp from "timeproxy";
 import { LogoSlide } from "./views/LogoSlide";
 
-const DEFAULT_DURATION = tp`two seconds`;
+const DEFAULT_DURATION = tp`ten seconds`;
 
 /** Show your slides with this useful little bugger
  *
