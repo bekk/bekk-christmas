@@ -51,12 +51,10 @@ const Calendar = (props: CalendarProps) => {
         <Text color="white" mb="80px" textShadow="2xl" mx={6}>
           Also check out the calendars from{" "}
           {filteredYears.map((year, index) => (
-            <>
-              <TextLink key={year} href={`/post/${year}`}>
-                {year}
-              </TextLink>
+            <React.Fragment key={year}>
+              <TextLink href={`/post/${year}`}>{year}</TextLink>
               {getSeparator(index, filteredYears)}
-            </>
+            </React.Fragment>
           ))}
         </Text>
       )}
