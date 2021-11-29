@@ -32,7 +32,7 @@ export default function Tag({
           ...(category.synonyms || []),
         ]}
       />
-      <PostList posts={posts} heading={category.name} />
+      <PostList posts={posts} heading={category.name} backButtonHref="/" />
     </Box>
   );
 }

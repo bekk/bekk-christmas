@@ -9,13 +9,13 @@ import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
 
 type PostListProps = {
-  year: number;
+  backButtonHref: string;
   posts: ArticlePostType[];
   heading: string;
   description?: string;
 };
 export const PostList = ({
-  year,
+  backButtonHref,
   posts,
   heading,
   description,
@@ -78,7 +78,7 @@ export const PostList = ({
         left="0"
         padding={["40px", "40px", "64px", "64px"]}
       >
-        <BackButton color="inherit" href={`/post/${year}`}>
+        <BackButton color="inherit" href={backButtonHref}>
           Home
         </BackButton>
       </Box>

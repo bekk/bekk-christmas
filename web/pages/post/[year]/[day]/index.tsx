@@ -43,7 +43,7 @@ export default function PostsForDay({
         posts={posts}
         heading={heading}
         description={description}
-        year={year}
+        backButtonHref={`/post/${year}`}
       />
     </Box>
   );
