@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, HStack } from "@chakra-ui/react";
 import React, { createRef } from "react";
 import { toDayYear } from "../../utils/date";
+import { toPlainText } from "../../utils/sanity/utils";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
 import { ArrowShort } from "./Arrow";

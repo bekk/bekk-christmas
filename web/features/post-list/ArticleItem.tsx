@@ -4,8 +4,7 @@ import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
 import { toDayYear } from "../../utils/date";
-import { urlFor } from "../../utils/sanity/utils";
-import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
+import { toPlainText, urlFor } from "../../utils/sanity/utils";
 import { ArrowShort } from "./Arrow";
 
 export type ArticlePostType = {
@@ -45,7 +44,7 @@ export const ArticleItem = (post: ArticlePostType) => {
           background: "brand.pink",
         }}
       >
-        <Text mb="12px" fontSize="14px">
+        <Text as="div" mb="12px" fontSize="14px">
           <Box
             display="inline-block"
             background="brand.salmon"
@@ -82,7 +81,7 @@ export const ArticleItem = (post: ArticlePostType) => {
           {post.title}
         </Heading>
         <Text noOfLines={[coverImageSrc ? 1 : 2, coverImageSrc ? 1 : 2, 2, 2]}>
-          <DescriptionPortableText blocks={post.description} />
+          {toPlainText(post.description)}
         </Text>
 
         <ArrowShort
