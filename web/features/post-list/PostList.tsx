@@ -173,7 +173,7 @@ export const PostList = ({
         right={"-150px"}
         pointerEvents="none"
       >
-        <BekkChristmasLogo width="300px" fill="currentColor" />
+        <BekkChristmasLogo width="300px" fill={theme.logo} />
       </Box>
     </>
   );
