@@ -73,7 +73,13 @@ export const Article = ({
         content={content}
         coverImage={coverImage ?? ""}
       />
-      {showHype && <HypeButton position="fixed" bottom="1rem" left="1rem" />}
+      {showHype && (
+        <HypeButton
+          position={{ base: "relative", md: "fixed" }}
+          bottom="1rem"
+          left="1rem"
+        />
+      )}
     </Box>
   );
 };
