@@ -19,6 +19,7 @@ export const FagdagsminnerLuke = () => {
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
         title="Stand-video 2021"
+        pointerEvents="none"
       />,
       { duration: tp`6 minutes 57 seconds` },
     ],
