@@ -1,7 +1,8 @@
-import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
+import { TextLink } from "../design-system/TextLink";
 import { ShapeBackground } from "../shapes/ShapeBackground";
 
 const listOf24Days = Array(24)
@@ -12,8 +13,11 @@ type CalendarProps = {
   year: number;
 };
 
+const CALENDAR_YEARS = [2021, 2020, 2019, 2018, 2017];
+
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
+  const filteredYears = CALENDAR_YEARS.filter((year) => year !== props.year);
   return (
     <Center
       position="relative"
@@ -38,13 +42,38 @@ const Calendar = (props: CalendarProps) => {
           Calendar {props.year}
         </Heading>
       )}
-      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" margin="30px 0 80px" px={6}>
+      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" margin="30px 0 40px" px={6}>
         {listOf24Days.map((day) => (
           <Day key={day} day={day} year={props.year} />
         ))}
       </SimpleGrid>
+      {filteredYears.length > 0 && (
+        <Text color="white" mb="80px" textShadow="2xl" mx={6}>
+          Also check out the calendars from{" "}
+          {filteredYears.map((year, index) => (
+            <>
+              <TextLink key={year} href={`/post/${year}`}>
+                {year}
+              </TextLink>
+              {getSeparator(index, filteredYears)}
+            </>
+          ))}
+        </Text>
+      )}
     </Center>
   );
+};
+
+const getSeparator = (index: number, list: unknown[]) => {
+  const lastItemInList = index === list.length - 1;
+  if (lastItemInList) {
+    return "";
+  }
+  const secondToLastItemInList = list.length > 2 && index === list.length - 2;
+  if (secondToLastItemInList) {
+    return " and ";
+  }
+  return ", ";
 };
 
 export default Calendar;
