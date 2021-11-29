@@ -8,7 +8,12 @@ export const ArticleHeader = ({ publishedAt }: { publishedAt: Date }) => {
   return (
     <Flex as="header" minHeight="15vh" alignItems="center">
       <Container maxWidth="container.lg">
-        <BackButton color="brand.darkGreen">
+        <BackButton
+          color="brand.darkGreen"
+          href={
+            "/post/" + publishedAt.getFullYear() + "/" + publishedAt.getDate()
+          }
+        >
           {shortDateFormat(publishedAt)}
         </BackButton>
         <Box
