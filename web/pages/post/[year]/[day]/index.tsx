@@ -20,7 +20,6 @@ export default function PostsForDay({
   year,
   available,
 }: PostsForDayProps) {
-  console.log(day, year);
   const heading = !available
     ? "Not yet!"
     : posts.length === 0
