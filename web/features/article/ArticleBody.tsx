@@ -57,7 +57,12 @@ export const ArticleBody = ({
             {getSeparator(index, categories)}
           </React.Fragment>
         ))}
-        <Heading as={"h1"} size={"4xl"} fontWeight="normal" lineHeight="1.15">
+        <Heading
+          as="h1"
+          fontSize={["5xl", "5xl", "6xl"]}
+          fontWeight="normal"
+          lineHeight="1.15"
+        >
           {title}
         </Heading>
       </Box>
