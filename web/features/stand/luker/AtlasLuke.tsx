@@ -1,9 +1,11 @@
 import React from "react";
 import { useSlideshow } from "../useSlideshow";
 import { FullScreenImageSlide } from "../views/FullScreenImageSlide";
+import { TitleSlide } from "../views/TitleSlide";
 
 export const AtlasLuke = () => {
   return useSlideshow([
+    <TitleSlide key={1}>Atlas </TitleSlide>,
     <FullScreenImageSlide
       key={1}
       src="/images/atlas/atlas-1.png"
