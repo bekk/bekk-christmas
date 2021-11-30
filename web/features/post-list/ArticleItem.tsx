@@ -34,14 +34,18 @@ export const ArticleItem = (post: ArticlePostType) => {
         height={["300px", "300px", "430px", "430px"]}
         color="brand.darkGreen"
         boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-        transition="transform 0.2s, background 0.2s"
+        transition="all 0.2s"
+        border="0.5rem solid transparent"
+        outline="0 solid #fff"
         _hover={{
           transform: "scale(1.05)",
           background: "brand.pink",
+          border: "0.5rem solid #fff",
         }}
         _focus={{
           transform: "scale(1.05)",
           background: "brand.pink",
+          border: "0.5rem solid #fff",
         }}
       >
         <Text as="div" mb="12px" fontSize="14px">
