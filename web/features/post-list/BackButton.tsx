@@ -13,6 +13,7 @@ export const BackButton = ({
     <Link href={href} passHref>
       <Box
         as="a"
+        width="fit-content"
         aria-label="Back to blog"
         title="Back to blog"
         display="block"

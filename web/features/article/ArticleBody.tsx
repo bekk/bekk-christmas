@@ -38,7 +38,7 @@ export const ArticleBody = ({
     <Container
       mx="auto"
       maxWidth="container.lg"
-      mb={[0, 0, 160]}
+      mb={[0, 0, "72px"]}
       mt={["40px", "40px", "60px"]}
     >
       <Box marginBottom="20px">

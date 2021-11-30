@@ -1,7 +1,8 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import React from "react";
 import readingTime from "reading-time";
 import { toPlainText } from "../../utils/sanity/utils";
+import { BackButton } from "../post-list/BackButton";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleFooter } from "./ArticleFooter";
 import { ArticleHeader } from "./ArticleHeader";
@@ -70,6 +71,11 @@ export const Article = ({
         content={content}
         coverImage={coverImage ?? ""}
       />
+      <Container maxWidth="container.lg" mb={[0, 0, "72px"]}>
+        <BackButton color="brand.darkGreen" href={backButtonHref}>
+          {backButtonText}
+        </BackButton>
+      </Container>
       <ArticleFooter showHype={showHype} />
     </Box>
   );
