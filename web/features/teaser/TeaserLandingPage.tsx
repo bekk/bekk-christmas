@@ -15,7 +15,6 @@ const useClientSideOnly = () => {
 
 export const TeaserLandingPage = () => {
   const isClientSide = useClientSideOnly();
-  const now = Date.UT;
   return (
     <Center
       position="relative"
