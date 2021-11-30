@@ -35,7 +35,12 @@ export const ArticleBody = ({
 }: ArticleBodyProps) => {
   const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <Container mx="auto" maxWidth="container.lg" mb={[0, 0, 160]}>
+    <Container
+      mx="auto"
+      maxWidth="container.lg"
+      mb={[0, 0, 160]}
+      mt={[0, 0, "60px"]}
+    >
       <Box marginBottom="20px">
         {categories?.map((category, index) => (
           <React.Fragment key={category.slug}>
