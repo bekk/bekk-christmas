@@ -46,7 +46,7 @@ export const PostList = ({
     });
   };
 
-  let theme = colorCombinations[0];
+  let theme = colorCombinations[1];
   if (posts && posts[0]) {
     const { day } = toDayYear(posts[0].availableFrom);
     theme = colorCombinations[(day - 1) % colorCombinations.length];
