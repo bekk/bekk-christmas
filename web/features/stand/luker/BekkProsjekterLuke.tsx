@@ -61,6 +61,27 @@ export const BekkProsjekterLuke = () => {
       src="/images/bekk-prosjekter/operaen.gif"
       alt="En scroll nedover operaen.no"
     />,
+    <TextSlide key="strim">
+      <Heading fontSize="7xl" fontWeight="normal">
+        Strim
+      </Heading>
+      <Text>
+        Sammen med RiksTV lager vi Norges mest innovative og fremtidsrettede
+        strømmetjeneste, Strim. I Strim får du (nesten) alt innholdet du kan
+        ønske deg under samme tak. Enkelt og greit.
+      </Text>
+    </TextSlide>,
+    <ImageSlide key="strim-bilde" src="/images/bekk-prosjekter/strim.png" />,
+    <ImageSlide
+      background="#092971"
+      color="white"
+      key="spleis-bilde"
+      src="/images/bekk-prosjekter/spleis.png"
+    >
+      Spleis er en norsk folkefinansieringstjeneste fra SpareBank 1. Her har vi
+      bidratt med alt fra produktutvikling og design til utvikling og
+      kundeservice.
+    </ImageSlide>,
     <TextSlide key={5}>
       <Heading fontSize="7xl" fontWeight="normal">
         Pils og Programmering
