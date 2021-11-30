@@ -39,14 +39,15 @@ const useArticlesForDay = (day: number) => {
     sanityClient.fetch(
       groq`*[
         _type == "post" 
-        && availableFrom >= "2021-12-$day"
-        && availableFrom > "2021-12-$dayAfter"
+        && availableFrom == $date
       ] { 
         _id,
         title, 
         "authors": authors[]->fullName
       }`,
-      { day, dayAfter: day + 1 }
+      {
+        date: `2021-12-${String(day).padStart(2, "0")}`,
+      }
     )
   );
   return data;
