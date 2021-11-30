@@ -79,9 +79,21 @@ const FIRST_CONTENT_YEAR = 2016;
 // TODO: This should probably be calculated from the latest post
 const LATEST_CONTENT_YEAR = 2021;
 
+const getBoundedNumber = (
+  min: number,
+  max: number,
+  value?: string | string[]
+) => {
+  const number = Number(value);
+  if (Number.isNaN(number)) {
+    return 1;
+  }
+  return Math.max(min, Math.min(max, number));
+};
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const day = Number(params?.day);
-  const year = Number(params?.year);
+  const day = getBoundedNumber(1, 24, params?.day);
+  const year = getBoundedNumber(2017, new Date().getFullYear(), params?.year);
 
   const isValidDay =
     day >= FIRST_DAY_OF_CHRISTMAS || day <= LAST_DAY_OF_CHRISTMAS;
