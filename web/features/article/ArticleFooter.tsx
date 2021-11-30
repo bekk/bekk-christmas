@@ -9,7 +9,7 @@ export const ArticleFooter = ({ showHype }: ArticleFooterProps) => {
       {showHype && (
         <HypeButton
           position={["static", "static", "fixed"]}
-          bottom="1rem"
+          bottom="5rem"
           left="1rem"
         />
       )}
