@@ -3,11 +3,12 @@ import React from "react";
 
 type TextSlideProps = { children: React.ReactNode } & BoxProps;
 export const TextSlide = ({
-  background = "brand.pink",
+  background = "brand.darkGreen",
+  color = "brand.white",
   ...props
 }: TextSlideProps) => {
   return (
-    <Center minHeight="100vh" background={background} color="brand.darkGreen">
+    <Center height="100vh" width="100vw" background={background} color={color}>
       <Stack px="2em" fontSize="5xl" lineHeight="1.3" {...props} />
     </Center>
   );

@@ -5,14 +5,15 @@ type TitleSlideProps = { children: React.ReactNode };
 export const TitleSlide = ({ children }: TitleSlideProps) => {
   return (
     <Center
-      minHeight="100vh"
-      background="brand.pink"
-      color="brand.darkGreen"
+      height="100vh"
+      width="100vw"
+      color="brand.white"
+      backgroundColor="brand.darkGreen"
       px="2em"
     >
       <Box
         fontFamily="heading"
-        fontSize="6em"
+        fontSize={["4em", "5em"]}
         lineHeight="1"
         textAlign="center"
       >

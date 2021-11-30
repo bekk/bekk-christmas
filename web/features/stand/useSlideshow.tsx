@@ -1,6 +1,7 @@
 import { useInterval } from "@chakra-ui/react";
 import React from "react";
 import tp from "timeproxy";
+import Calendar from "../calendar/Calendar";
 import { LogoSlide } from "./views/LogoSlide";
 
 const DEFAULT_DURATION = tp`ten seconds`;
@@ -21,7 +22,11 @@ export const useSlideshow = (
   const [duration, setDuration] = React.useState(DEFAULT_DURATION);
   const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0);
   const slidesWithLogo = React.useMemo(
-    () => [...slides, <LogoSlide key="logo" />],
+    () => [
+      ...slides,
+      <LogoSlide key="logo" />,
+      <Calendar key="calendar" year={2021} />,
+    ],
     [slides]
   );
   const goToNextSlide = () =>
