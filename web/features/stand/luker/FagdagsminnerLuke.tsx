@@ -7,7 +7,7 @@ import { TitleSlide } from "../views/TitleSlide";
 
 export const FagdagsminnerLuke = () => {
   return useSlideshow([
-    <TitleSlide key={1}>Fagdags-minner</TitleSlide>,
+    <TitleSlide key={1}>Fagdagsminner</TitleSlide>,
     <TextSlide key={2}>
       <Text>
         Tre ganger i året tar alle Bekkere seg fri fra prosjekt for å lære nye
