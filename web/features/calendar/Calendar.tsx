@@ -71,7 +71,7 @@ type DayProps = {
 };
 
 function Day({ day, year }: DayProps) {
-  const isOpen = new Date() > new Date(year, 11, day);
+  const isOpen = new Date() >= new Date(year, 11, day);
   const degreeTable = [-3, -2, -1, 1, 2, 3];
   const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
   return (
@@ -79,7 +79,7 @@ function Day({ day, year }: DayProps) {
       <Box
         as="a"
         color="brand.white"
-        border={"3px white " + (isOpen ? "solid" : "dotted")}
+        border={`3px white ${isOpen ? "solid" : "dotted"}`}
         opacity={isOpen ? "1" : "0.6"}
         width="150px"
         height="150px"
