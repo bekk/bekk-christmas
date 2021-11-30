@@ -6,7 +6,7 @@ import { TitleSlide } from "../views/TitleSlide";
 
 export const TastekonkurranseLuke = () => {
   return useSlideshow([
-    <TitleSlide key={1}>Tastekonkurranse!</TitleSlide>,
+    <TitleSlide key={1}>Taste-konkurranse!</TitleSlide>,
     <TextSlide key={2}>
       <Text>
         Tror du at du er den raskeste tastern i Oslo Spektrum? På tide å bevise
