@@ -1,5 +1,6 @@
 import { Box, Center } from "@chakra-ui/react";
 import React from "react";
+import { ShapeBackground } from "../../shapes/ShapeBackground";
 
 type TitleSlideProps = { children: React.ReactNode };
 export const TitleSlide = ({ children }: TitleSlideProps) => {
@@ -7,10 +8,11 @@ export const TitleSlide = ({ children }: TitleSlideProps) => {
     <Center
       height="100vh"
       width="100vw"
+      position="relative"
       color="brand.white"
-      backgroundColor="brand.darkGreen"
       px="2em"
     >
+      <ShapeBackground />
       <Box
         fontFamily="heading"
         fontSize={["4em", "5em"]}
