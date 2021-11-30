@@ -21,7 +21,7 @@ export const BackButton = ({
         color="inherit"
         fontSize={["1.5rem", "2rem"]}
         fontWeight="bold"
-        lineHeight="1"
+        lineHeight="1.01"
         cursor="pointer"
         role="group"
         {...props}
