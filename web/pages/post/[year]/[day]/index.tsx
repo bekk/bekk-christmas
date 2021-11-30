@@ -21,7 +21,7 @@ export default function PostsForDay({
   available,
 }: PostsForDayProps) {
   const heading = !available
-    ? "Not available yet"
+    ? "Not yet!"
     : posts.length === 0
     ? "No posts found!"
     : `${day}-Dec`;
