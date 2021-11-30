@@ -6,7 +6,7 @@ import { TitleSlide } from "../views/TitleSlide";
 
 export const TastekonkurranseLuke = () => {
   return useSlideshow([
-    <TitleSlide key={1}>Taste-konkurranse!</TitleSlide>,
+    <TitleSlide key={1}>Tastekonkurranse!</TitleSlide>,
     <TextSlide key={2}>
       <Text>
         Tror du at du er den raskeste tastern i Oslo Spektrum? På tide å bevise
@@ -18,7 +18,7 @@ export const TastekonkurranseLuke = () => {
 https://priceless-bose-d509cc.netlify.app"
       />
       <Text fontSize="3xl" textAlign="center">
-        (Vi har en data stående her også 👇)
+        Vi har en datamaskin stående her også 👇
       </Text>
     </TextSlide>,
   ]);

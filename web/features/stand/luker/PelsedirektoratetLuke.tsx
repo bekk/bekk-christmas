@@ -7,7 +7,7 @@ import { TitleSlide } from "../views/TitleSlide";
 
 export const PelsedirektoratetLuke = () => {
   return useSlideshow([
-    <TitleSlide key={1}>#pelse-direktoratet</TitleSlide>,
+    <TitleSlide key={1}>#pelsedirektoratet</TitleSlide>,
     <TextSlide key={2}>
       <Text>
         Et år på hjemmekontor ga oss alle muligheten til å bli bedre kjent med
