@@ -29,7 +29,7 @@ export const DagensArtiklerLuke = ({ day }: DagensArtiklerLukeProps) => {
   ]);
 };
 
-const useArticlesForDay = (day: number) => {
+export const useArticlesForDay = (day: number) => {
   type Article = {
     _id: string;
     title: string;
