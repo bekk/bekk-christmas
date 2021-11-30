@@ -20,6 +20,7 @@ export default function PostsForDay({
   year,
   available,
 }: PostsForDayProps) {
+  console.log(day, year);
   const heading = !available
     ? "Not yet!"
     : posts.length === 0
@@ -157,13 +158,13 @@ const toDateString = (year: number, day: number) =>
 
 const getDayWithEnding = (day: number) => {
   if (day % 10 === 1) {
-    return "1st";
+    return `${day}st`;
   }
   if (day % 10 === 2) {
-    return "2nd";
+    return `${day}nd`;
   }
   if (day % 10 === 3) {
-    return "3rd";
+    return `${day}rd`;
   }
   return `${day}th`;
 };
