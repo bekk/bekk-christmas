@@ -1,6 +1,7 @@
 import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
+import { getSeparator } from "../../utils/string";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { TextLink } from "../design-system/TextLink";
 import { ShapeBackground } from "../shapes/ShapeBackground";
@@ -60,18 +61,6 @@ const Calendar = (props: CalendarProps) => {
       )}
     </Center>
   );
-};
-
-const getSeparator = (index: number, list: unknown[]) => {
-  const lastItemInList = index === list.length - 1;
-  if (lastItemInList) {
-    return "";
-  }
-  const secondToLastItemInList = list.length > 2 && index === list.length - 2;
-  if (secondToLastItemInList) {
-    return " and ";
-  }
-  return ", ";
 };
 
 export default Calendar;

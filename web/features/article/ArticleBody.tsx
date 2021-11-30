@@ -1,17 +1,19 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
+import { getSeparator } from "../../utils/string";
 import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodcastBlock";
 import { VimeoBlock } from "../portable-text/serializers/VimeoBlock";
 
 type ArticleBodyProps = {
-  type?: "page" | "article" | "podcast" | "video";
+  type?: "article" | "podcast" | "video";
   embedUrl?: string;
   title: string;
-  category: string;
+  categories: { name: string; slug: string }[];
   readingTime?: string;
   description?: unknown[];
   authors?: { fullName: string }[];
@@ -23,7 +25,7 @@ export const ArticleBody = ({
   type,
   embedUrl,
   title,
-  category,
+  categories,
   readingTime,
   description,
   content,
@@ -35,37 +37,45 @@ export const ArticleBody = ({
   return (
     <Container mx="auto" maxWidth="container.lg" mb={[0, 0, 160]}>
       <Box marginBottom="20px">
-        {category && (
-          <Box fontSize={"lg"} marginBottom="16px">
-            {category.toUpperCase()}
-          </Box>
-        )}
+        {categories.map((category, index) => (
+          <React.Fragment key={category.slug}>
+            <Link href={`/category/${category.slug}`} passHref>
+              <Box
+                as="a"
+                fontSize={"lg"}
+                marginBottom="16px"
+                textTransform="uppercase"
+              >
+                {category.name}
+              </Box>
+            </Link>
+            {getSeparator(index, categories)}
+          </React.Fragment>
+        ))}
         <Heading as={"h1"} size={"4xl"} fontWeight="normal" lineHeight="1.15">
           {title}
         </Heading>
       </Box>
-      {type !== "page" && (
-        <Flex flexWrap="wrap" fontSize="24px">
-          <Text fontWeight="bold" mb={[2, 0]}>
-            {readingTime}
-          </Text>
-          <Text display={["none", "block"]} px="8px">
-            &middot;
-          </Text>
-          <Text mb={[2, 0]}>
-            {authors?.length
-              ? "Written by " +
-                authors.map((author) => author.fullName).join(", ")
-              : null}
-          </Text>
-          <Text display={["none", "block"]} px="8px">
-            &middot;
-          </Text>
-          <Text fontSize="24px" color="brand.gray">
-            {publishedAt}
-          </Text>
-        </Flex>
-      )}
+      <Flex flexWrap="wrap" fontSize="24px">
+        <Text fontWeight="bold" mb={[2, 0]}>
+          {readingTime}
+        </Text>
+        <Text display={["none", "block"]} px="8px">
+          &middot;
+        </Text>
+        <Text mb={[2, 0]}>
+          {authors?.length
+            ? "Written by " +
+              authors.map((author) => author.fullName).join(", ")
+            : null}
+        </Text>
+        <Text display={["none", "block"]} px="8px">
+          &middot;
+        </Text>
+        <Text fontSize="24px" color="brand.gray">
+          {publishedAt}
+        </Text>
+      </Flex>
       <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
         {description && (
           <Box fontSize="2xl">

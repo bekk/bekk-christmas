@@ -14,8 +14,8 @@ const formatter = Intl.DateTimeFormat("en-US", {
 
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
-  category?: string;
-  type?: "page" | "article" | "podcast" | "video";
+  categories?: { name: string; slug: string }[];
+  type?: "article" | "podcast" | "video";
   embedUrl?: string;
   title?: string;
   description?: unknown[];
@@ -29,7 +29,7 @@ type ArticleProps = {
   backButtonText: string;
 };
 export const Article = ({
-  category,
+  categories = [],
   type = "article",
   embedUrl,
   title = "",
@@ -60,7 +60,7 @@ export const Article = ({
         type={type}
         embedUrl={embedUrl}
         title={title}
-        category={category}
+        categories={categories}
         readingTime={
           showReadingTime ? readingTime(toPlainText(content)).text : undefined
         }

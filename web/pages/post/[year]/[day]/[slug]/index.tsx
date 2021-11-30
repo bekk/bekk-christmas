@@ -62,7 +62,7 @@ export default function BlogPostPage({
         embedUrl={post.embedUrl}
         title={post.title}
         description={post.description}
-        category={post.tags?.join(", ")}
+        categories={post.categories}
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
@@ -128,7 +128,7 @@ export const getStaticProps = async ({
     ..., 
     "newAuthors": authors[]->{ fullName },
     "oldAuthors": authors[].fullName,
-    "tags": tags[]->.name
+    "categories": tags[]->{ name, "slug": slug }
   }`;
   const allPosts = await getClient(preview).fetch<Post[]>(query, { slug });
   const post = filterDataToSingleItem(allPosts, preview);
@@ -171,7 +171,7 @@ type Post = {
   content: unknown[];
   newAuthors: { fullName: string }[];
   oldAuthors: { fullName: string }[];
-  tags: string[];
+  categories: { name: string; slug: string }[];
   coverImage?: string;
   availableFrom: string;
 };
