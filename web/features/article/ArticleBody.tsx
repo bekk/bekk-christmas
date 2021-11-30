@@ -37,7 +37,7 @@ export const ArticleBody = ({
   return (
     <Container mx="auto" maxWidth="container.lg" mb={[0, 0, 160]}>
       <Box marginBottom="20px">
-        {categories.map((category, index) => (
+        {categories?.map((category, index) => (
           <React.Fragment key={category.slug}>
             <Link href={`/category/${category.slug}`} passHref>
               <Box

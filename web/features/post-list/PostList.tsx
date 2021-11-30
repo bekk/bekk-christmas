@@ -26,7 +26,7 @@ export const PostList = ({
 
   const headingSpace = 0.4;
 
-  const handleWheel = (e) => {
+  const handleWheel = (e: any) => {
     const postList = postListContainerRef.current;
     postList.scrollLeft += e.deltaY + e.deltaX;
 
