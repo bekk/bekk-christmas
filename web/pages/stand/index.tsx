@@ -40,10 +40,11 @@ const lukeMapping = [
   () => <Luker.DagensArtiklerLuke day={2} />,
   Luker.GlitchOrDieLuke,
   Luker.SjokoladetidLuke,
-  Luker.GenerativKunstLuke,
+  Luker.GenerativKunstLuke, // TODO: Denne må vi fikse på et vis
   Luker.HashtagEkteLuke,
   Luker.BekkFunFactsLuke,
   Luker.AtlasLuke,
+  // TODO: En til her kanskje?
   Luker.SluttenAvDagenLuke,
 
   // Dag 3
