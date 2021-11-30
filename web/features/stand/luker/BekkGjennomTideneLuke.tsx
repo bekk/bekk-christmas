@@ -7,7 +7,7 @@ import { TitleSlide } from "../views/TitleSlide";
 
 export const BekkGjennomTideneLuke = () => {
   return useSlideshow([
-    <TitleSlide key={1}>Bekk.no gjennom tidene</TitleSlide>,
+    <TitleSlide key={1}>Bekk.no gjennom årene</TitleSlide>,
     <TextSlide key={1.5}>
       <Text>
         Selv om vi har det mye moro, er Bekk et ganske stabilt firma, med solide
