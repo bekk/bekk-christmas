@@ -33,7 +33,7 @@ export const ArticleBody = ({
 }: ArticleBodyProps) => {
   const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <Container mx="auto" pb="120px" maxWidth="container.lg">
+    <Container mx="auto" maxWidth="container.lg" mb={[0, 0, 160]}>
       <Box marginBottom="20px">
         {category && (
           <Box fontSize={"lg"} marginBottom="16px">

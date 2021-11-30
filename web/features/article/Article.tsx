@@ -2,8 +2,8 @@ import { Box } from "@chakra-ui/react";
 import React from "react";
 import readingTime from "reading-time";
 import { toPlainText } from "../../utils/sanity/utils";
-import { HypeButton } from "../hype/HypeButton";
 import { ArticleBody } from "./ArticleBody";
+import { ArticleFooter } from "./ArticleFooter";
 import { ArticleHeader } from "./ArticleHeader";
 
 const formatter = Intl.DateTimeFormat("en-US", {
@@ -70,13 +70,7 @@ export const Article = ({
         content={content}
         coverImage={coverImage ?? ""}
       />
-      {showHype && (
-        <HypeButton
-          position={{ base: "relative", md: "fixed" }}
-          bottom="1rem"
-          left="1rem"
-        />
-      )}
+      <ArticleFooter showHype={showHype} />
     </Box>
   );
 };
