@@ -95,7 +95,7 @@ const post = {
         "The date the post was or will be posted. If you don't know, just let this be as is, and somebody will do this for you :)",
       type: "date",
       validation: (Rule) => Rule.required(),
-      initialValue: `${new Date().getUTCFullYear()}-12-01`,
+      initialValue: `${new Date().getUTCFullYear()}-12-25`,
     },
     {
       title: "Category",
