@@ -41,7 +41,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
       // We generate a new RSS feed every time the index page is built.
       // This creates a new public/rss.xml file with the latest articles.
       await generateRss();
-    } catch (e) {}
+      console.info("RSS feed regenerated");
+    } catch (e) {
+      console.error("RSS feed failed to regenerate", e);
+    }
   }
 
   const now = new Date();
