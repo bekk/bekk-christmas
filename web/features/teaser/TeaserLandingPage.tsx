@@ -15,6 +15,7 @@ const useClientSideOnly = () => {
 
 export const TeaserLandingPage = () => {
   const isClientSide = useClientSideOnly();
+  const now = Date.UT;
   return (
     <Center
       position="relative"
@@ -45,7 +46,7 @@ const CountdownRenderer: CountdownRendererFn = ({
   completed,
 }) => {
   if (completed) {
-    return <Heading>It's happening!</Heading>;
+    return <Heading color="white">It's happening!</Heading>;
   } else {
     return (
       <Box color="white" display="flex" marginTop="7rem">
