@@ -31,6 +31,7 @@ export const HashtagEkteLuke = () => {
     <ImageSlide key={9} src="/images/ekte/ekte-fette-lei-korona.png">
       æ e så fette lei korona
     </ImageSlide>,
+    <TitleSlide key={9.5}>#ekte</TitleSlide>,
     <ImageSlide key={10} src="/images/ekte/ekte-forlatt-igjen.png" />,
     <ImageSlide key={11} src="/images/ekte/ekte-fredagsshow.png" />,
     <ImageSlide key={12} src="/images/ekte/ekte-gaming.png">

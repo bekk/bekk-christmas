@@ -10,7 +10,7 @@ export const GlitchOrDieLuke = () => {
     <TextSlide key={2}>
       <Text>
         Glitch or Die er et spill vi laget før pandemien, som lar deg tegne din
-        egen spillebrikke.
+        egen spillebrikke, så du kan slå de andre!
       </Text>
       <Text>Kom innom og test det ut!</Text>
     </TextSlide>,

@@ -10,7 +10,7 @@ export const ImageSlide = ({ children, src, ...props }: ImageSlideProps) => {
     <Center minHeight="100vh" background="brand.pink" color="brand.darkGreen">
       <Box px="2em" fontSize="4xl" lineHeight="1.3" {...props}>
         <Image src={src} alt={children} />
-        {children && <Box>{children}</Box>}
+        {children && <Box pt={6}>{children}</Box>}
       </Box>
     </Center>
   );
