@@ -1,5 +1,5 @@
-import React from "react";
 import { Box, BoxProps } from "@chakra-ui/react";
+import React from "react";
 
 export const ArrowSlim = (props: BoxProps) => {
   return (
@@ -37,9 +37,9 @@ export const ArrowLong = (props: BoxProps) => {
       as="svg"
       width="37"
       height="21"
-      viewBox="0 0 37 21"
+      viewBox="-3 0 41 21"
       stroke="brand.pink"
-      strokeWidth="3"
+      strokeWidth="5"
       strokeLinecap="round"
       strokeLinejoin="round"
       fill="none"

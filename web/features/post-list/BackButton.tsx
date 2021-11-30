@@ -35,7 +35,7 @@ export const BackButton = ({
         />
         <Heading
           as="h3"
-          fontWeight="400"
+          fontWeight="bold"
           display="inline"
           fontFamily={"DINOT"}
           fontSize={"1.5rem"}

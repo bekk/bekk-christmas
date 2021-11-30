@@ -4,6 +4,7 @@ import {
   keyframes,
   usePrefersReducedMotion,
 } from "@chakra-ui/react";
+import React from "react";
 
 export const BekkChristmasLogo = (props: BoxProps) => {
   const spin = keyframes`
