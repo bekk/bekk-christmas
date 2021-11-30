@@ -5,7 +5,16 @@ import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
 
+const useClientSideOnly = () => {
+  const [isClientSide, setIsClientSide] = React.useState(false);
+  React.useEffect(() => {
+    setIsClientSide(true);
+  }, []);
+  return isClientSide;
+};
+
 export const TeaserLandingPage = () => {
+  const isClientSide = useClientSideOnly();
   return (
     <Center
       position="relative"
@@ -19,10 +28,12 @@ export const TeaserLandingPage = () => {
           <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
         </a>
       </Link>
-      <Countdown
-        date={`${new Date().getFullYear()}/12/01`}
-        renderer={CountdownRenderer}
-      />
+      {isClientSide && (
+        <Countdown
+          date={`${new Date().getFullYear()}/12/01`}
+          renderer={CountdownRenderer}
+        />
+      )}
     </Center>
   );
 };
