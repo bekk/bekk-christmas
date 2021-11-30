@@ -19,6 +19,7 @@ export const BackButton = ({
         padding="8px"
         color="inherit"
         fontSize={["1.5rem", "2rem"]}
+        fontWeight="bold"
         lineHeight="1"
         cursor="pointer"
         role="group"
