@@ -107,5 +107,5 @@ const getHypeDisplayValue = (hype: number) => {
   if (hype < 1000000) {
     return `${(hype / 1000).toFixed(1)}K`;
   }
-  return "🔥🔥🔥";
+  return "🔥";
 };

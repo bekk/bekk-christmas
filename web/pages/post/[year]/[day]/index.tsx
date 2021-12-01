@@ -6,6 +6,7 @@ import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
 import { PostList } from "../../../../features/post-list/PostList";
 import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { toDayYear } from "../../../../utils/date";
+import { getBoundedNumber } from "../../../../utils/number";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
 type PostsForDayProps = {
@@ -78,18 +79,6 @@ const LAST_DAY_OF_CHRISTMAS = 24;
 const FIRST_CONTENT_YEAR = 2016;
 // TODO: This should probably be calculated from the latest post
 const LATEST_CONTENT_YEAR = 2021;
-
-const getBoundedNumber = (
-  min: number,
-  max: number,
-  value?: string | string[]
-) => {
-  const number = Number(value);
-  if (Number.isNaN(number)) {
-    return 1;
-  }
-  return Math.max(min, Math.min(max, number));
-};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const day = getBoundedNumber(1, 24, params?.day);

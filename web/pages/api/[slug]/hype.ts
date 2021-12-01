@@ -1,13 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { getBoundedNumber } from "../../../utils/number";
+import { slugify } from "../../../utils/slug";
 import { supabaseClient } from "../../../utils/supabase.client";
 export default async function apiHandler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
+    const slug = slugify(req.query.slug as string);
+
     await supabaseClient.rpc("increment_hype", {
-      page_slug: req.query.slug,
-      additional_hype: req.body.hype,
+      page_slug: slug,
+      additional_hype: getBoundedNumber(1, 50, req.body.hype),
     });
     return res.status(200).json({
       message: `Successfully incremented hype: ${req.query.slug}`,
