@@ -13,12 +13,13 @@ export const ArticleFooter = ({
 }: ArticleFooterProps) => {
   return (
     <>
-      <Container maxWidth="80ch" mb={[0, 0, "72px"]} px={[3, 3, 0]}>
-        <HypeButton />
+      <Container maxWidth="80ch" px={[3, 3, 0]}>
+        <HypeButton height="121px" />
         <BackButton
           color="brand.darkGreen"
           href={backButtonHref}
           fontSize={["18px", "18px", "24px"]}
+          my="54px"
         >
           {backButtonText}
         </BackButton>
