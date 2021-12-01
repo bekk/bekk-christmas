@@ -67,21 +67,25 @@ export const ArticleBody = ({
         </Heading>
       </Box>
       <Flex flexWrap="wrap" fontSize="24px">
-        <Text fontWeight="bold" mb={[2, 0]}>
-          {readingTime}
-        </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
-        <Text mb={[2, 0]}>
-          {authors?.length
-            ? "Written by " +
-              authors.map((author) => author.fullName).join(", ")
-            : null}
-        </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
+        {type !== "podcast" && (
+          <>
+            <Text fontWeight="bold" mb={[2, 0]}>
+              {readingTime}
+            </Text>
+            <Text display={["none", "block"]} px="8px">
+              &middot;
+            </Text>
+            <Text mb={[2, 0]}>
+              {authors?.length
+                ? "Written by " +
+                  authors.map((author) => author.fullName).join(", ")
+                : null}
+            </Text>
+            <Text display={["none", "block"]} px="8px">
+              &middot;
+            </Text>
+          </>
+        )}
         <Text fontSize="24px" color="brand.gray">
           {publishedAt}
         </Text>
@@ -93,6 +97,7 @@ export const ArticleBody = ({
           </Box>
         )}
       </Box>
+      {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
       {coverImageSrc && (
         <Image
           margin="40px auto"
@@ -105,7 +110,6 @@ export const ArticleBody = ({
           borderRadius="20px"
         />
       )}
-      {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
       {type === "video" && <VimeoBlock node={{ src: embedUrl }} />}
       {content && <ContentPortableText blocks={content} />}
     </Container>
