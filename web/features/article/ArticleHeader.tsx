@@ -11,7 +11,11 @@ export const ArticleHeader = ({
   return (
     <Flex as="header" minHeight="15vh" alignItems="center">
       <Container maxWidth="container.lg">
-        <BackButton color="brand.darkGreen" href={backButtonHref}>
+        <BackButton
+          color="brand.darkGreen"
+          href={backButtonHref}
+          fontFamily="Newzald"
+        >
           {backButtonText}
         </BackButton>
         <Box

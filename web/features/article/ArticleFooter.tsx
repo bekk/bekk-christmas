@@ -19,6 +19,7 @@ export const ArticleFooter = ({
           color="brand.darkGreen"
           href={backButtonHref}
           fontSize={["18px", "18px", "24px"]}
+          fontFamily="Newzald"
           my="54px"
         >
           {backButtonText}

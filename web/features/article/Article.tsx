@@ -24,7 +24,6 @@ type ArticleProps = {
   publishedAt?: Date;
   coverImage?: string;
   showReadingTime?: boolean;
-  showHype?: boolean;
   backButtonHref?: string;
   backButtonText: string;
 };
@@ -39,7 +38,6 @@ export const Article = ({
   publishedAt,
   coverImage,
   showReadingTime = false,
-  showHype = false,
   backButtonHref,
   backButtonText,
 }: ArticleProps) => {

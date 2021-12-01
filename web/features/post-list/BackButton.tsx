@@ -8,6 +8,7 @@ export const BackButton = ({
   href = "/",
   children = "Home",
   fontSize,
+  fontFamily,
   ...props
 }: BackButtonProps) => {
   return (
@@ -40,6 +41,7 @@ export const BackButton = ({
           fontWeight="normal"
           display="inline"
           fontSize={fontSize}
+          fontFamily={fontFamily}
         >
           {children}
         </Heading>

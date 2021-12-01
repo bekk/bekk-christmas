@@ -79,7 +79,7 @@ export const PostList = ({
           left="0"
           padding={["40px", "40px", "64px", "64px"]}
         >
-          <BackButton color="inherit" href={backButtonHref}>
+          <BackButton color="inherit" href={backButtonHref} fontFamily="DINOT">
             Home
           </BackButton>
         </Box>
