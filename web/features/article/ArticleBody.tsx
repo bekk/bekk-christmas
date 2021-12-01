@@ -66,37 +66,30 @@ export const ArticleBody = ({
           {title}
         </Heading>
       </Box>
-      <Flex flexWrap="wrap" fontSize="24px">
+
+      <Box fontSize="24px" mb={4} maxWidth="60ch">
+        <DescriptionPortableText blocks={description} />
+      </Box>
+      <Flex flexWrap="wrap" fontSize="18px" mb={6}>
         {type !== "podcast" && (
           <>
             <Text fontWeight="bold" mb={[2, 0]}>
               {readingTime}
             </Text>
-            <Text display={["none", "block"]} px="8px">
-              &middot;
-            </Text>
-            <Text mb={[2, 0]}>
-              {authors?.length
-                ? "Written by " +
-                  authors.map((author) => author.fullName).join(", ")
-                : null}
-            </Text>
-            <Text display={["none", "block"]} px="8px">
-              &middot;
-            </Text>
+            <Text px="8px">&middot;</Text>
           </>
         )}
-        <Text fontSize="24px" color="brand.gray">
-          {publishedAt}
+        <Text mb={[2, 0]}>
+          {authors?.length
+            ? `By ${authors.map((author) => author.fullName).join(", ")}`
+            : null}
         </Text>
+        <Text display={["none", "block"]} px="8px">
+          &middot;
+        </Text>
+        <Text color="brand.gray">{publishedAt}</Text>
       </Flex>
-      <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
-        {description && (
-          <Box fontSize="2xl">
-            <DescriptionPortableText blocks={description} />
-          </Box>
-        )}
-      </Box>
+
       {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
       {coverImageSrc && (
         <Image
