@@ -1,18 +1,24 @@
-import { Box, Center, Flex, Image } from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { HypeButton } from "../hype/HypeButton";
+import { BackButton } from "../post-list/BackButton";
 
-type ArticleFooterProps = { showHype: boolean };
-export const ArticleFooter = ({ showHype }: ArticleFooterProps) => {
+type ArticleFooterProps = {
+  backButtonHref: string;
+  backButtonText: string;
+};
+export const ArticleFooter = ({
+  backButtonHref,
+  backButtonText,
+}: ArticleFooterProps) => {
   return (
     <>
-      {showHype && (
-        <HypeButton
-          position={["static", "static", "fixed"]}
-          bottom="5rem"
-          left="1rem"
-        />
-      )}
+      <Container maxWidth="80ch" mb={[0, 0, "72px"]} px={[3, 3, 0]}>
+        <HypeButton />
+        <BackButton color="brand.darkGreen" href={backButtonHref}>
+          {backButtonText}
+        </BackButton>
+      </Container>
       <Center boxShadow="0 0 10px 5px #8C8C8C50" backgroundColor="white" p={5}>
         <Box>
           <Flex justifyContent="center" alignItems="center">

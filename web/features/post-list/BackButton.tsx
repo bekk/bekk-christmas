@@ -14,8 +14,8 @@ export const BackButton = ({
       <Box
         as="a"
         width="fit-content"
-        aria-label="Back to blog"
-        title="Back to blog"
+        aria-label={`${children}`}
+        title={`${children}`}
         display="block"
         padding="8px"
         color="inherit"
@@ -34,13 +34,7 @@ export const BackButton = ({
           transition="transform 0.2s"
           _groupHover={{ transform: "translateX(-8px)" }}
         />
-        <Heading
-          as="h3"
-          fontWeight="bold"
-          display="inline"
-          fontFamily={"DINOT"}
-          fontSize={"1.5rem"}
-        >
+        <Heading as="h3" fontWeight="normal" display="inline" fontSize="41px">
           {children}
         </Heading>
       </Box>
