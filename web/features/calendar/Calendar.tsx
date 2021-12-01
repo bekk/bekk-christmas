@@ -80,7 +80,9 @@ function Day({ day, year }: DayProps) {
         as="a"
         color="brand.white"
         border={`3px white ${isOpen ? "solid" : "dotted"}`}
+        cursor={isOpen ? "pointer" : "default"}
         opacity={isOpen ? "1" : "0.6"}
+        pointerEvents={isOpen ? "all" : "none"}
         width="150px"
         height="150px"
         transition=".25s ease-out"
@@ -89,16 +91,24 @@ function Day({ day, year }: DayProps) {
         justifyContent="flex-end"
         alignItems="flex-end"
         padding="10px"
-        _hover={{
-          transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
-          boxShadow: "xl",
-          background: "rgba(255, 255, 255, 0.375)",
-        }}
-        _focus={{
-          transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
-          boxShadow: "xl",
-          background: "rgba(255, 255, 255, 0.375)",
-        }}
+        _hover={
+          isOpen
+            ? {
+                transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
+                boxShadow: "xl",
+                background: "rgba(255, 255, 255, 0.375)",
+              }
+            : undefined
+        }
+        _focus={
+          isOpen
+            ? {
+                transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
+                boxShadow: "xl",
+                background: "rgba(255, 255, 255, 0.375)",
+              }
+            : undefined
+        }
       >
         <Heading
           as="h2"
