@@ -1,22 +1,9 @@
 import React from "react";
 import * as Luker from "../../features/stand/luker";
 import { useLuke } from "../../features/stand/useLuke";
-import { useSecondsLeft } from "../../features/stand/useSecondsLeft";
-import { CountdownSlide } from "../../features/stand/views/CountdownSlide";
 
 export default function StandPage() {
-  const { secondsLeft, reset } = useSecondsLeft();
-  const { currentLuke, onNextLuke } = useLuke({ onLukeChange: reset });
-
-  React.useEffect(() => {
-    if (secondsLeft === 0) {
-      onNextLuke();
-    }
-  }, [secondsLeft, onNextLuke]);
-
-  if (secondsLeft < 60) {
-    return <CountdownSlide secondsLeft={secondsLeft} />;
-  }
+  const { currentLuke } = useLuke();
 
   const Luke = lukeMapping[currentLuke - 1];
 
