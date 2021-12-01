@@ -64,7 +64,6 @@ export const HypeButton = (props: BoxProps) => {
           onKeyDown={onKeyDown}
           onKeyUp={onKeyUp}
           width="56px"
-          mx={["auto", "auto", 0]}
           mb={[10, 10, 0]}
         >
           <Box>
