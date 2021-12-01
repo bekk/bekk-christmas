@@ -63,7 +63,7 @@ export const HypeButton = (props: BoxProps) => {
           onPointerLeave={onPointerReleased}
           onKeyDown={onKeyDown}
           onKeyUp={onKeyUp}
-          width="60px"
+          width="56px"
           mx={["auto", "auto", 0]}
           mb={[10, 10, 0]}
         >
@@ -71,7 +71,7 @@ export const HypeButton = (props: BoxProps) => {
             <Package isOpen={isAddingHype} />
           </Box>
           {showNumber && (
-            <Box userSelect="none">
+            <Box userSelect="none" position="relative" top="-35px">
               <motion.div
                 animate={{
                   scale: addedHype % 2 ? 1.1 : 1,

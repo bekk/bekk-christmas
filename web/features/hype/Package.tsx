@@ -9,7 +9,7 @@ export const Package = (props: PackageProps) => {
   return (
     <Box
       as="svg"
-      viewBox="0 0 30 65"
+      viewBox="0 20 30 65"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
     >

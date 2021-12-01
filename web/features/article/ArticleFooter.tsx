@@ -15,7 +15,11 @@ export const ArticleFooter = ({
     <>
       <Container maxWidth="80ch" mb={[0, 0, "72px"]} px={[3, 3, 0]}>
         <HypeButton />
-        <BackButton color="brand.darkGreen" href={backButtonHref}>
+        <BackButton
+          color="brand.darkGreen"
+          href={backButtonHref}
+          fontSize={["18px", "18px", "24px"]}
+        >
           {backButtonText}
         </BackButton>
       </Container>

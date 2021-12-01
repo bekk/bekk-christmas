@@ -7,6 +7,7 @@ type BackButtonProps = BoxProps & { href?: string };
 export const BackButton = ({
   href = "/",
   children = "Home",
+  fontSize,
   ...props
 }: BackButtonProps) => {
   return (
@@ -16,10 +17,10 @@ export const BackButton = ({
         width="fit-content"
         aria-label={`${children}`}
         title={`${children}`}
-        display="block"
+        display="flex"
+        alignItems="center"
         padding="8px"
         color="inherit"
-        fontSize={["1.5rem", "2rem"]}
         fontWeight="bold"
         lineHeight="1.01"
         cursor="pointer"
@@ -34,7 +35,12 @@ export const BackButton = ({
           transition="transform 0.2s"
           _groupHover={{ transform: "translateX(-8px)" }}
         />
-        <Heading as="h3" fontWeight="normal" display="inline" fontSize="41px">
+        <Heading
+          as="h3"
+          fontWeight="normal"
+          display="inline"
+          fontSize={fontSize}
+        >
           {children}
         </Heading>
       </Box>
