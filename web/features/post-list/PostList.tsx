@@ -104,7 +104,7 @@ export const PostList = ({
           <Heading
             as="h2"
             fontWeight="400"
-            fontSize={["2rem", "2rem", "2rem", "3rem"]}
+            fontSize={["1.8rem", "2rem", "2rem", "3rem"]}
             lineHeight="1"
           >
             {description}
