@@ -60,6 +60,7 @@ export const HypeButton = (props: BoxProps) => {
           aria-label="Add hype"
           onPointerDown={onPointerPressed}
           onPointerUp={onPointerReleased}
+          onPointerLeave={onPointerReleased}
           onKeyDown={onKeyDown}
           onKeyUp={onKeyUp}
           width="60px"
