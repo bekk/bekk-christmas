@@ -1,4 +1,10 @@
-import { Box, BoxProps, Center, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  BoxProps,
+  Center,
+  Stack,
+  usePrefersReducedMotion,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
 import { Package } from "./Package";
@@ -12,6 +18,7 @@ export const HypeButton = (props: BoxProps) => {
     "total"
   );
   const [isMaxedOut, setMaxedOut] = React.useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
   const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
@@ -73,7 +80,7 @@ export const HypeButton = (props: BoxProps) => {
             <Box userSelect="none" position="relative" top="-35px">
               <motion.div
                 animate={{
-                  scale: addedHype % 2 ? 1.1 : 1,
+                  scale: !prefersReducedMotion && addedHype % 2 ? 1.1 : 1,
                 }}
                 transition={{ duration: 0.2 }}
               >

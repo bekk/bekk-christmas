@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, usePrefersReducedMotion } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -6,6 +6,7 @@ type PackageProps = {
   isOpen: boolean;
 };
 export const Package = (props: PackageProps) => {
+  const prefersReducedMotion = usePrefersReducedMotion();
   return (
     <Box
       as="svg"
@@ -46,8 +47,8 @@ export const Package = (props: PackageProps) => {
       <motion.g
         variants={{
           shaking: {
-            y: [-10, -10],
-            rotate: [-25, -5],
+            y: prefersReducedMotion ? [] : [-10, -10],
+            rotate: prefersReducedMotion ? [] : [-25, -5],
             transition: { duration: 0.15, repeat: Infinity },
           },
           close: { y: 0, rotate: 0 },
