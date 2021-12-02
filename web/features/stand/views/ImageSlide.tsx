@@ -8,8 +8,8 @@ type ImageSlideProps = {
   color?: string;
 } & BoxProps;
 export const ImageSlide = ({
-  background = "brand.pink",
-  color = "brand.darkGreen",
+  background = "brand.darkGreen",
+  color = "white",
   children,
   src,
   ...props
@@ -17,8 +17,8 @@ export const ImageSlide = ({
   return (
     <Center minHeight="100vh" background={background} color={color}>
       <Box px="2em" fontSize="4xl" lineHeight="1.3" {...props}>
+        {children && <Box pb={6}>{children}</Box>}
         <Image src={src} alt={children} />
-        {children && <Box pt={6}>{children}</Box>}
       </Box>
     </Center>
   );
