@@ -46,6 +46,7 @@ export default function BlogPostPage({
     return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
+
   const authors = normalizeAuthors(post);
   return (
     <>
@@ -177,7 +178,7 @@ type Post = {
 
 const getImageUrl = (image: any) => {
   if (!image) {
-    return null;
+    return undefined;
   }
   if (typeof image.src === "string") {
     return image.src;

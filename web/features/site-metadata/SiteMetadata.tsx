@@ -12,7 +12,7 @@ export const SiteMetadata = ({
   title,
   description,
   keywords = ["bekk", "christmas", "technology", "design", "strategy"],
-  image = "",
+  image = "https://cdn.sanity.io/images/ah2n1vfr/production/b13a686723a264260182df3e79b1b94b4f766b35-1440x879.png?w=1200",
   author = "Bekk",
 }: SiteMetadataProps) => {
   const router = useRouter();
