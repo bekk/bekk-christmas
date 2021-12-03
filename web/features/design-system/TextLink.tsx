@@ -14,6 +14,9 @@ export const TextLink: React.FC<TextLinkProps> = ({
   children,
   ...rest
 }) => {
+  if (!href) {
+    return <>{children}</>;
+  }
   if (/^(mailto:|https?:\/\/)/.test(href)) {
     return (
       <Link
