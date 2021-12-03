@@ -22,7 +22,11 @@ type ArticleProps = {
   content: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: Date;
-  coverImage?: string;
+  coverImage?: {
+    _type: "image";
+    hideFromPost?: boolean;
+    asset: Record<string, any>;
+  };
   showReadingTime?: boolean;
   backButtonHref?: string;
   backButtonText: string;
@@ -66,7 +70,7 @@ export const Article = ({
         authors={authors}
         publishedAt={publishedAtDate}
         content={content}
-        coverImage={coverImage ?? ""}
+        coverImage={coverImage}
       />
       <ArticleFooter
         backButtonHref={backButtonHref}

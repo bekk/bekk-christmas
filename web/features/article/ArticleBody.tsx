@@ -18,7 +18,11 @@ type ArticleBodyProps = {
   description?: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: string;
-  coverImage: string;
+  coverImage?: {
+    _type: "image";
+    hideFromPost?: boolean;
+    asset: Record<string, any>;
+  };
   content: unknown[];
 };
 export const ArticleBody = ({
@@ -33,7 +37,6 @@ export const ArticleBody = ({
   publishedAt,
   coverImage,
 }: ArticleBodyProps) => {
-  const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
     <Container maxWidth="container.lg" mt={["40px", "40px", "60px"]}>
       <Box marginBottom="20px">
@@ -86,14 +89,14 @@ export const ArticleBody = ({
       </Flex>
 
       {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
-      {coverImageSrc && (
+      {coverImage && (
         <Image
           margin="40px auto"
           maxHeight="400px"
           maxWidth="80ch"
           width="100%"
           objectFit="cover"
-          src={coverImageSrc}
+          src={urlFor(coverImage).width(800).url()}
           alt=""
           borderRadius="20px"
         />

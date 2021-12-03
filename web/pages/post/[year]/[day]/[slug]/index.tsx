@@ -46,7 +46,6 @@ export default function BlogPostPage({
     return <NotAvailableYet availableFrom={availableFromDate} />;
   }
 
-
   const authors = normalizeAuthors(post);
   return (
     <>
@@ -67,7 +66,7 @@ export default function BlogPostPage({
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
-        coverImage={post.coverImage}
+        coverImage={post.coverImage.hideFromPost ? undefined : post.coverImage }
         showReadingTime
       />
     </>
@@ -172,7 +171,11 @@ type Post = {
   newAuthors: { fullName: string }[];
   oldAuthors: { fullName: string }[];
   categories: { name: string; slug: string }[];
-  coverImage?: string;
+  coverImage?: {
+    _type: "image";
+    hideFromPost?: boolean;
+    asset: Record<string, any>;
+  };
   availableFrom: string;
 };
 
