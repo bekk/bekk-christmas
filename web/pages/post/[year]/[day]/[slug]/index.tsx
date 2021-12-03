@@ -66,7 +66,7 @@ export default function BlogPostPage({
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
-        coverImage={post.coverImage.hideFromPost ? undefined : post.coverImage }
+        coverImage={post.coverImage?.hideFromPost ? undefined : post.coverImage }
         showReadingTime
       />
     </>
