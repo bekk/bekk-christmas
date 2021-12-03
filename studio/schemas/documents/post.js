@@ -37,8 +37,9 @@ const post = {
           }
           return true;
         }),
-      hidden: ({ document }) =>
-        !["podcast", "video", undefined].includes(document.type),
+      hidden: ({ document }) => {
+        return !["podcast", "video", undefined].includes(document.type);
+      },
     },
     {
       title: "Title",
@@ -85,6 +86,14 @@ const post = {
           title: "Image source",
           name: "src",
           type: "string",
+        },
+        {
+          title: "Hide from post",
+          description:
+            "Check this if you only want the image to show up on the daily summary page, not in your own post",
+          name: "hideFromPost",
+          type: "boolean",
+          defaultValue: false,
         },
       ],
     },
