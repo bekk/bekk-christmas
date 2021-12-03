@@ -1,4 +1,4 @@
-import { Box, BoxProps, Heading } from "@chakra-ui/react";
+import { Box, BoxProps, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { ArrowLong } from "./Arrow";
@@ -25,7 +25,7 @@ export const BackButton = ({
         fontWeight="bold"
         lineHeight="1.01"
         cursor="pointer"
-        role="group"
+        whiteSpace="nowrap"
         {...props}
       >
         <ArrowLong
@@ -36,15 +36,14 @@ export const BackButton = ({
           transition="transform 0.2s"
           _groupHover={{ transform: "translateX(-8px)" }}
         />
-        <Heading
-          as="h3"
+        <Text
           fontWeight="normal"
           display="inline"
           fontSize={fontSize}
           fontFamily={fontFamily}
         >
           {children}
-        </Heading>
+        </Text>
       </Box>
     </Link>
   );
