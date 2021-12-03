@@ -62,6 +62,7 @@ export default {
           { title: "Clojure", value: "clojure" },
           { title: "CSS", value: "css" },
           { title: "Elm", value: "elm" },
+          { title: "C#", value: "csharp" },
           { title: "F#", value: "fsharp" },
           { title: "Haskell", value: "haskell" },
           { title: "HTML", value: "html" },
