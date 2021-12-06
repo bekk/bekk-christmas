@@ -11,6 +11,9 @@ export const urlFor = (source: SanityImageSource) =>
  * Borrowed from https://www.sanity.io/docs/presenting-block-text#ac67a867dd69
  */
 export function toPlainText(blocks: any[] = []) {
+  if (!blocks || !blocks.length) {
+    return "";
+  }
   return (
     blocks
       // loop through each block
