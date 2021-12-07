@@ -7,14 +7,16 @@ export default async function apiHandler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const slug = slugify(req.query.slug as string);
+    const originalSlug = req.query.slug as string;
+    const originalSlugWithoutQueryString = originalSlug.split("?")[0];
+    const slug = slugify(originalSlugWithoutQueryString);
 
     await supabaseClient.rpc("increment_hype", {
       page_slug: slug,
       additional_hype: getBoundedNumber(1, 50, req.body.hype),
     });
     return res.status(200).json({
-      message: `Successfully incremented hype: ${req.query.slug}`,
+      message: `Successfully incremented hype: ${originalSlugWithoutQueryString}`,
     });
   }
 
