@@ -2,15 +2,17 @@ import { Box } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { ArticlePostType } from "../../../../features/post-list/ArticleItem";
+import { ArticleItemType } from "../../../../features/post-list/ArticleItem";
+import { PodcastItemType } from "../../../../features/post-list/PodcastItem";
 import { PostList } from "../../../../features/post-list/PostList";
+import { VideoItemType } from "../../../../features/post-list/VideoItem";
 import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
 import { toDayYear } from "../../../../utils/date";
 import { getBoundedNumber } from "../../../../utils/number";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
 type PostsForDayProps = {
-  posts: ArticlePostType[];
+  posts: (ArticleItemType | VideoItemType | PodcastItemType)[];
   day: number;
   year: number;
   available: boolean;

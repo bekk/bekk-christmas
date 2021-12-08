@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import {
   GetStaticPaths,
   GetStaticPropsContext,
@@ -6,8 +6,11 @@ import {
 } from "next";
 import { groq } from "next-sanity";
 import React from "react";
-import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
+import { ArticleItemType } from "../../features/post-list/ArticleItem";
+import { PodcastItemType } from "../../features/post-list/PodcastItem";
 import { PostList } from "../../features/post-list/PostList";
+import { VideoItemType } from "../../features/post-list/VideoItem";
+import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export default function Tag({
@@ -37,16 +40,6 @@ export default function Tag({
   );
 }
 
-type Post = {
-  _type: "post";
-  slug: string;
-  title: string;
-  plaintextContent: string;
-  tags: { name: string; slug: string }[];
-  availableFrom: string;
-  description: unknown[];
-  coverImage: string;
-};
 type Category = {
   name: string;
   synonyms: string[];
@@ -57,15 +50,19 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 
   const client = getClient();
 
-  const postsRequest = client.fetch<Post[]>(
+  const postsRequest = client.fetch<
+    (ArticleItemType | PodcastItemType | VideoItemType)[]
+  >(
     groq`*[
       _type == "post" 
       && references(*[_type == "tag" && slug == $slug]._id)] 
       { 
         _type,
+        type,
         "slug": slug.current, 
         title, 
         tags[]->{ name, "slug": slug },
+        "description": pt::text(description),
         "plaintextContent": pt::text(content),
         availableFrom
       }`,
