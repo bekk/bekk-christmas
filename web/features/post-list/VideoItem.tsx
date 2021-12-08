@@ -1,18 +1,16 @@
 import React from "react";
-import readingTime from "reading-time";
 import { BasePostItemType, PostItem } from "./PostItem";
 
-export interface ArticleItemType extends BasePostItemType {
-  type?: "article";
+export interface VideoItemType extends BasePostItemType {
+  type: "video";
   embedUrl: string;
-  plaintextContent: string;
 }
 
-export const ArticleItem = (props: ArticleItemType) => {
+export const VideoItem = (props: VideoItemType) => {
   return (
     <PostItem
       availableFrom={props.availableFrom}
-      readingTime={readingTime(props.plaintextContent || "").text}
+      readingTime="Video"
       title={props.title}
       slug={props.slug}
       tags={props.tags}

@@ -117,11 +117,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     && availableFrom < $endOfDay] {
       "slug": slug.current, 
       _type,
+      type,
       title, 
+      "description": pt::text(description), 
       "plaintextContent": pt::text(content), 
       tags[]->{ name, slug },
       availableFrom,
-      description,
       coverImage
       }`,
     {

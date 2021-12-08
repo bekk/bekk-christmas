@@ -1,16 +1,18 @@
 import { Box, Flex, Heading, HStack } from "@chakra-ui/react";
-import React, { createRef } from "react";
+import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
 import { ArrowShort } from "./Arrow";
-import { ArticleItem, ArticlePostType } from "./ArticleItem";
+import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
+import { PodcastItem, PodcastItemType } from "./PodcastItem";
+import { VideoItem, VideoItemType } from "./VideoItem";
 
 type PostListProps = {
   backButtonHref: string;
-  posts: ArticlePostType[];
+  posts: (PodcastItemType | VideoItemType | ArticleItemType)[];
   heading: string;
   description?: string;
 };
@@ -20,9 +22,9 @@ export const PostList = ({
   heading,
   description,
 }: PostListProps) => {
-  const headingRef = createRef<HTMLDivElement>();
-  const scrollButtonRef = createRef<HTMLDivElement>();
-  const postListContainerRef = createRef<HTMLDivElement>();
+  const headingRef = React.useRef<HTMLDivElement>();
+  const scrollButtonRef = React.useRef<HTMLDivElement>();
+  const postListContainerRef = React.useRef<HTMLDivElement>();
 
   const headingSpace = 0.4;
 
@@ -130,12 +132,14 @@ export const PostList = ({
             marginRight={["30vw", "20vw", "10vw"]}
           >
             {posts.map((post, _) => {
-              switch (post._type) {
-                case "post":
-                  return <ArticleItem key={post.slug} {...post} />;
+              switch (post.type) {
+                case "podcast":
+                  return <PodcastItem key={post.slug} {...post} />;
+                case "video":
+                  return <VideoItem key={post.slug} {...post} />;
+                case "article":
                 default:
-                  console.log("Unknown _type found", post);
-                  throw Error("Unknown post type found");
+                  return <ArticleItem key={post.slug} {...post} />;
               }
             })}
           </HStack>
