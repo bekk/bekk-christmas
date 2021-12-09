@@ -114,9 +114,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   const postsPublishedForDay = await getClient().fetch(
-    groq`*[_type == "post" 
-    && availableFrom >= $beginningOfDay 
-    && availableFrom < $endOfDay] {
+    groq`*[_type == "post" && availableFrom == $dateString] {
       "slug": slug.current, 
       _type,
       type,
@@ -128,8 +126,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       coverImage
       }`,
     {
-      beginningOfDay: toDateString(year, day),
-      endOfDay: toDateString(year, day + 1),
+      dateString: `${year}-12-${day.toString().padStart(2, "0")}`,
     }
   );
 
