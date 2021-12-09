@@ -13,18 +13,18 @@ import {
 } from "../../../../../utils/sanity/sanity.server";
 import { toPlainText, urlFor } from "../../../../../utils/sanity/utils";
 
-type BlogPostPageProps = {
+type PostPageProps = {
   data: Post;
   preview: boolean;
   query: string;
   queryParams: { slug: string };
 };
-export default function BlogPostPage({
+export default function PostPage({
   query,
   queryParams,
   data: initialData,
   preview,
-}: BlogPostPageProps) {
+}: PostPageProps) {
   const { data } = usePreviewSubscription(query, {
     params: queryParams,
     initialData: [initialData],
