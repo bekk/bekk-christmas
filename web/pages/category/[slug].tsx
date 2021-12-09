@@ -67,7 +67,8 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
         tags[]->{ name, "slug": slug },
         "description": pt::text(description),
         "plaintextContent": pt::text(content),
-        availableFrom
+        availableFrom,
+        podcastLength
       }`,
     { slug, now: toISODateString(new Date()) }
   );
