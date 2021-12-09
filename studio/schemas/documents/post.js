@@ -38,7 +38,24 @@ const post = {
           return true;
         }),
       hidden: ({ document }) => {
-        return !["podcast", "video", undefined].includes(document.type);
+        return document.type === "article";
+      },
+    },
+    {
+      title: "Podcast length",
+      description:
+        "The length of the podcast in minutes. You can find this on Anchor",
+      name: "podcastLength",
+      type: "number",
+      validation: (Rule) =>
+        Rule.custom((length, context) => {
+          if (context.document.type !== "podcast") {
+            return true;
+          }
+          return length ? true : "Please specify the length of the podcast";
+        }),
+      hidden: ({ document }) => {
+        return document.type !== "podcast";
       },
     },
     {
