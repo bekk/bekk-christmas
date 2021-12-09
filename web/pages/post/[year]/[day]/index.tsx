@@ -141,9 +141,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const toDateString = (year: number, day: number) =>
-  `${year}-12-${day.toString().padStart(2, "0")}`;
-
 const getDayWithEnding = (day: number) => {
   if (day % 10 === 1) {
     return `${day}st`;

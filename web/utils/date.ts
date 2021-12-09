@@ -12,3 +12,9 @@ export function shortDateFormat(publishedAt: Date): string {
     publishedAt.toLocaleDateString("en-US", { month: "short" })
   );
 }
+
+export function toISODateString(date: Date) {
+  // An ISO string looks like YYYY-MM-DDTHH:MM:SS.SSSZ
+  // To get the date part, split the string by capital Ts and take the first item
+  return date.toISOString().split("T")[0];
+}

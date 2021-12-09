@@ -11,9 +11,10 @@ import { PodcastItemType } from "../../features/post-list/PodcastItem";
 import { PostList } from "../../features/post-list/PostList";
 import { VideoItemType } from "../../features/post-list/VideoItem";
 import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
+import { toISODateString } from "../../utils/date";
 import { getClient } from "../../utils/sanity/sanity.server";
 
-export default function Tag({
+export default function CategoryPage({
   posts,
   category,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -55,7 +56,8 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   >(
     groq`*[
       _type == "post" 
-      && references(*[_type == "tag" && slug == $slug]._id)] 
+      && availableFrom <= $now
+      && references(*[_type == "tag" && slug == $slug]._id)]
       { 
         _type,
         type,
@@ -66,7 +68,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
         "plaintextContent": pt::text(content),
         availableFrom
       }`,
-    { slug }
+    { slug, now: toISODateString(new Date()) }
   );
   const categoryRequest = client.fetch<Category>(
     groq`*[_type == "tag" && slug == $slug] 
@@ -74,10 +76,17 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     { slug }
   );
 
+  const [posts, category] = await Promise.all([postsRequest, categoryRequest]);
+  if (!category) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
-      posts: await postsRequest,
-      category: await categoryRequest,
+      posts,
+      category,
     },
     revalidate: 10,
   };
