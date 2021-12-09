@@ -22,14 +22,14 @@ type PostItemProps = {
   title: string;
   tags: { name: string; slug: string }[];
   description?: string;
-  readingTime: string;
+  consumptionTime: string;
 };
 
 export const PostItem = ({
   availableFrom,
   coverImage,
   slug,
-  readingTime,
+  consumptionTime,
   tags,
   title,
   description,
@@ -72,7 +72,7 @@ export const PostItem = ({
             marginRight="8px"
             borderRadius="50%"
           />
-          {readingTime} – {tags?.map((tag) => tag.name).join(", ")}
+          {consumptionTime} – {tags?.map((tag) => tag.name).join(", ")}
         </Text>
         {coverImageSrc && (
           <Image

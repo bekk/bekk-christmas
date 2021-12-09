@@ -60,6 +60,7 @@ export default function PostPage({
         backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}
+        podcastLength={post.podcastLength}
         title={post.title}
         description={post.description}
         categories={post.categories}
@@ -163,6 +164,7 @@ type Post = {
   id: string;
   type: "article" | "podcast" | "video";
   embedUrl?: string;
+  podcastLength?: number;
   slug: string;
   title: string;
   description: unknown[];

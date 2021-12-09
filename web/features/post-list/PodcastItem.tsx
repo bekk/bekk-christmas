@@ -12,7 +12,7 @@ export const PodcastItem = (props: PodcastItemType) => {
   return (
     <PostItem
       availableFrom={props.availableFrom}
-      readingTime={
+      consumptionTime={
         props.podcastLength ? `${props.podcastLength} min listen` : "Podcast"
       }
       title={props.title}

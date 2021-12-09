@@ -15,8 +15,9 @@ const formatter = Intl.DateTimeFormat("en-US", {
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   categories?: { name: string; slug: string }[];
-  type?: "article" | "podcast" | "video";
+  type: "article" | "podcast" | "video";
   embedUrl?: string;
+  podcastLength?: number;
   title?: string;
   description?: unknown[];
   content: unknown[];
@@ -32,8 +33,9 @@ type ArticleProps = {
 };
 export const Article = ({
   categories = [],
-  type = "article",
+  type,
   embedUrl,
+  podcastLength,
   title = "",
   description = [],
   content,
@@ -45,6 +47,9 @@ export const Article = ({
 }: ArticleProps) => {
   const publishedAtDate = publishedAt ? formatter.format(publishedAt) : null;
   const isScrolledToTop = useScrolledToTop();
+  const consumptionTime = podcastLength
+    ? `${podcastLength} min listen`
+    : readingTime(toPlainText(content)).text;
 
   return (
     <Box
@@ -61,7 +66,7 @@ export const Article = ({
         embedUrl={embedUrl}
         title={title}
         categories={categories}
-        readingTime={readingTime(toPlainText(content)).text}
+        consumptionTime={consumptionTime}
         description={description}
         authors={authors}
         publishedAt={publishedAtDate}
