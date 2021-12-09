@@ -58,6 +58,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
       _type == "post" 
       && availableFrom <= $now
       && references(*[_type == "tag" && slug == $slug]._id)]
+      | order(availableFrom desc)
       { 
         _type,
         type,
