@@ -1,9 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import {
-  GetStaticPaths,
-  GetStaticPropsContext,
-  InferGetStaticPropsType,
-} from "next";
+import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import { ArticleItemType } from "../../features/post-list/ArticleItem";
@@ -14,10 +10,11 @@ import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
 import { toISODateString } from "../../utils/date";
 import { getClient } from "../../utils/sanity/sanity.server";
 
-export default function CategoryPage({
-  posts,
-  category,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+type CategoryPageProps = {
+  posts: (ArticleItemType | PodcastItemType | VideoItemType)[];
+  category: Category;
+};
+export default function CategoryPage({ posts, category }: CategoryPageProps) {
   return (
     <Box>
       <SiteMetadata
