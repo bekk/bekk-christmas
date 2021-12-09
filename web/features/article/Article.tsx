@@ -15,8 +15,9 @@ const formatter = Intl.DateTimeFormat("en-US", {
 type ArticleProps = {
   /** The category shown at the top of the article, like "Article", "Podcast", "Information" etc */
   categories?: { name: string; slug: string }[];
-  type?: "article" | "podcast" | "video";
+  type: "article" | "podcast" | "video";
   embedUrl?: string;
+  podcastLength?: number;
   title?: string;
   description?: unknown[];
   content: unknown[];
@@ -27,26 +28,28 @@ type ArticleProps = {
     hideFromPost?: boolean;
     asset: Record<string, any>;
   };
-  showReadingTime?: boolean;
   backButtonHref?: string;
   backButtonText: string;
 };
 export const Article = ({
   categories = [],
-  type = "article",
+  type,
   embedUrl,
+  podcastLength,
   title = "",
   description = [],
   content,
   authors,
   publishedAt,
   coverImage,
-  showReadingTime = false,
   backButtonHref,
   backButtonText,
 }: ArticleProps) => {
   const publishedAtDate = publishedAt ? formatter.format(publishedAt) : null;
   const isScrolledToTop = useScrolledToTop();
+  const consumptionTime = podcastLength
+    ? `${podcastLength} min listen`
+    : readingTime(toPlainText(content)).text;
 
   return (
     <Box
@@ -63,9 +66,7 @@ export const Article = ({
         embedUrl={embedUrl}
         title={title}
         categories={categories}
-        readingTime={
-          showReadingTime ? readingTime(toPlainText(content)).text : undefined
-        }
+        consumptionTime={consumptionTime}
         description={description}
         authors={authors}
         publishedAt={publishedAtDate}

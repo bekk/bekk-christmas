@@ -13,18 +13,18 @@ import {
 } from "../../../../../utils/sanity/sanity.server";
 import { toPlainText, urlFor } from "../../../../../utils/sanity/utils";
 
-type BlogPostPageProps = {
+type PostPageProps = {
   data: Post;
   preview: boolean;
   query: string;
   queryParams: { slug: string };
 };
-export default function BlogPostPage({
+export default function PostPage({
   query,
   queryParams,
   data: initialData,
   preview,
-}: BlogPostPageProps) {
+}: PostPageProps) {
   const { data } = usePreviewSubscription(query, {
     params: queryParams,
     initialData: [initialData],
@@ -60,6 +60,7 @@ export default function BlogPostPage({
         backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}
+        podcastLength={post.podcastLength}
         title={post.title}
         description={post.description}
         categories={post.categories}
@@ -67,7 +68,6 @@ export default function BlogPostPage({
         publishedAt={availableFromDate}
         authors={authors}
         coverImage={post.coverImage?.hideFromPost ? undefined : post.coverImage}
-        showReadingTime
       />
     </>
   );
@@ -164,6 +164,7 @@ type Post = {
   id: string;
   type: "article" | "podcast" | "video";
   embedUrl?: string;
+  podcastLength?: number;
   slug: string;
   title: string;
   description: unknown[];

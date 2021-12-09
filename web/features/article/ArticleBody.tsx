@@ -14,7 +14,7 @@ type ArticleBodyProps = {
   embedUrl?: string;
   title: string;
   categories: { name: string; slug: string }[];
-  readingTime?: string;
+  consumptionTime?: string;
   description?: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: string;
@@ -30,7 +30,7 @@ export const ArticleBody = ({
   embedUrl,
   title,
   categories,
-  readingTime,
+  consumptionTime,
   description,
   content,
   authors,
@@ -69,14 +69,10 @@ export const ArticleBody = ({
         <DescriptionPortableText blocks={description} />
       </Box>
       <Flex flexWrap="wrap" fontSize="18px" mb={6}>
-        {type !== "podcast" && (
-          <>
-            <Text fontWeight="bold" mb={[2, 0]}>
-              {readingTime}
-            </Text>
-            <Text px="8px">&middot;</Text>
-          </>
-        )}
+        <Text fontWeight="bold" mb={[2, 0]}>
+          {consumptionTime}
+        </Text>
+        <Text px="8px">&middot;</Text>
         <Text mb={[2, 0]}>
           {authors?.length
             ? `By ${authors.map((author) => author.fullName).join(", ")}`

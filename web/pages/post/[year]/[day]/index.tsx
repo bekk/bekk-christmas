@@ -114,9 +114,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   const postsPublishedForDay = await getClient().fetch(
-    groq`*[_type == "post" 
-    && availableFrom >= $beginningOfDay 
-    && availableFrom < $endOfDay] {
+    groq`*[_type == "post" && availableFrom == $dateString] {
       "slug": slug.current, 
       _type,
       type,
@@ -125,11 +123,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       "plaintextContent": pt::text(content), 
       tags[]->{ name, slug },
       availableFrom,
-      coverImage
+      coverImage,
+      podcastLength
       }`,
     {
-      beginningOfDay: toDateString(year, day),
-      endOfDay: toDateString(year, day + 1),
+      dateString: `${year}-12-${day.toString().padStart(2, "0")}`,
     }
   );
 
@@ -143,9 +141,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     revalidate: 60,
   };
 };
-
-const toDateString = (year: number, day: number) =>
-  `${year}-12-${day.toString().padStart(2, "0")}`;
 
 const getDayWithEnding = (day: number) => {
   if (day % 10 === 1) {

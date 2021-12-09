@@ -1,9 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import {
-  GetStaticPaths,
-  GetStaticPropsContext,
-  InferGetStaticPropsType,
-} from "next";
+import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
 import { ArticleItemType } from "../../features/post-list/ArticleItem";
@@ -11,12 +7,14 @@ import { PodcastItemType } from "../../features/post-list/PodcastItem";
 import { PostList } from "../../features/post-list/PostList";
 import { VideoItemType } from "../../features/post-list/VideoItem";
 import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
+import { toISODateString } from "../../utils/date";
 import { getClient } from "../../utils/sanity/sanity.server";
 
-export default function Tag({
-  posts,
-  category,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+type CategoryPageProps = {
+  posts: (ArticleItemType | PodcastItemType | VideoItemType)[];
+  category: Category;
+};
+export default function CategoryPage({ posts, category }: CategoryPageProps) {
   return (
     <Box>
       <SiteMetadata
@@ -55,7 +53,9 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   >(
     groq`*[
       _type == "post" 
-      && references(*[_type == "tag" && slug == $slug]._id)] 
+      && availableFrom <= $now
+      && references(*[_type == "tag" && slug == $slug]._id)]
+      | order(availableFrom desc)
       { 
         _type,
         type,
@@ -64,9 +64,10 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
         tags[]->{ name, "slug": slug },
         "description": pt::text(description),
         "plaintextContent": pt::text(content),
-        availableFrom
+        availableFrom,
+        podcastLength
       }`,
-    { slug }
+    { slug, now: toISODateString(new Date()) }
   );
   const categoryRequest = client.fetch<Category>(
     groq`*[_type == "tag" && slug == $slug] 
@@ -74,10 +75,17 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     { slug }
   );
 
+  const [posts, category] = await Promise.all([postsRequest, categoryRequest]);
+  if (!category) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
-      posts: await postsRequest,
-      category: await categoryRequest,
+      posts,
+      category,
     },
     revalidate: 10,
   };

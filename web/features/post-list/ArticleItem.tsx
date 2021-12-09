@@ -12,7 +12,7 @@ export const ArticleItem = (props: ArticleItemType) => {
   return (
     <PostItem
       availableFrom={props.availableFrom}
-      readingTime={readingTime(props.plaintextContent || "").text}
+      consumptionTime={readingTime(props.plaintextContent || "").text}
       title={props.title}
       slug={props.slug}
       tags={props.tags}

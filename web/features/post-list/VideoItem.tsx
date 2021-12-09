@@ -10,7 +10,7 @@ export const VideoItem = (props: VideoItemType) => {
   return (
     <PostItem
       availableFrom={props.availableFrom}
-      readingTime="Video"
+      consumptionTime="Video"
       title={props.title}
       slug={props.slug}
       tags={props.tags}
