@@ -67,7 +67,6 @@ export default function BlogPostPage({
         publishedAt={availableFromDate}
         authors={authors}
         coverImage={post.coverImage?.hideFromPost ? undefined : post.coverImage}
-        showReadingTime
       />
     </>
   );

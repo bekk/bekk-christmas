@@ -27,7 +27,6 @@ type ArticleProps = {
     hideFromPost?: boolean;
     asset: Record<string, any>;
   };
-  showReadingTime?: boolean;
   backButtonHref?: string;
   backButtonText: string;
 };
@@ -41,7 +40,6 @@ export const Article = ({
   authors,
   publishedAt,
   coverImage,
-  showReadingTime = false,
   backButtonHref,
   backButtonText,
 }: ArticleProps) => {
@@ -63,9 +61,7 @@ export const Article = ({
         embedUrl={embedUrl}
         title={title}
         categories={categories}
-        readingTime={
-          showReadingTime ? readingTime(toPlainText(content)).text : undefined
-        }
+        readingTime={readingTime(toPlainText(content)).text}
         description={description}
         authors={authors}
         publishedAt={publishedAtDate}
