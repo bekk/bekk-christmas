@@ -1,7 +1,6 @@
 const previewSecret = process.env.SANITY_STUDIO_PREVIEW_SECRET;
 
-// TODO: Change this URL when we're ready to deploy to production
-const remoteUrl = "https://bekk-christmas.vercel.app";
+const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";
 
 export default function resolveProductionUrl(doc) {
@@ -29,7 +28,7 @@ function getUrlForDocument(doc) {
 }
 function getUrlForPost(doc) {
   if (!doc.availableFrom || !doc.slug.current) {
-    return '/';
+    return "/";
   }
   const { day, year } = toDayYear(doc.availableFrom);
   return `/post/${year}/${day}/${doc.slug.current}`;
