@@ -76,6 +76,12 @@ const post = {
       },
     },
     {
+      name: 'canonicalUrl',
+      type: 'url',
+      title: 'Canonical URL',
+      description: 'If the URL was posted elsewhere, please specify the original (canonical) url here.',
+    },
+    {
       title: "Description",
       description:
         "This is the excerpt, shown at the top of the page, as well as when shared on social media.",
