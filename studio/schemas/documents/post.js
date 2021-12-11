@@ -19,6 +19,18 @@ const post = {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: "Language",
+      name: "language",
+      type: "string",
+      options: {
+        list: [
+          { title: "English", value: "en-US" },
+          { title: "Norwegian (Bokmål)", value: "nb-NO" },
+          { title: "Norwegian (Nynorsk)", value: "nn-NO" },
+        ],
+      },
+    },
+    {
       title: "Embed URL",
       description:
         "If you're uploading a video or a podcast, you need to upload your content to somebody who knows what they're doing. Upload podcasts to anchor.fm, and videos to vimeo.com. If you need access, contact Kristofer G. Selbekk.",
@@ -76,10 +88,11 @@ const post = {
       },
     },
     {
-      name: 'canonicalUrl',
-      type: 'url',
-      title: 'Canonical URL',
-      description: 'If the URL was posted elsewhere, please specify the original (canonical) url here.',
+      name: "canonicalUrl",
+      type: "url",
+      title: "Canonical URL",
+      description:
+        "If the content has been posted elsewhere originally, please specify the original (canonical) url here.",
     },
     {
       title: "Description",
