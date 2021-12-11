@@ -54,6 +54,7 @@ export default function PostPage({
         description={toPlainText(post.description)}
         image={getImageUrl(post.coverImage)}
         author={authors.map((author) => author.fullName).join(", ")}
+        canonicalUrl={post.canonicalUrl}
       />
       <Article
         backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
@@ -166,6 +167,7 @@ type Post = {
   embedUrl?: string;
   podcastLength?: number;
   slug: string;
+  canonicalUrl?: string;
   title: string;
   description: unknown[];
   content: unknown[];
