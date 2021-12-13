@@ -93,6 +93,8 @@ export const ArticleBody = ({
           width="100%"
           objectFit="cover"
           src={urlFor(coverImage).width(800).url()}
+          srcSet={`${urlFor(coverImage).width(400).url()} 400w, ${urlFor(coverImage).width(800).url()} 800w, ${urlFor(coverImage).width(1200).url()} 1200w, ${urlFor(coverImage).width(1600).url()} 1600w`}
+          sizes="(max-width: 80ch) 100vw, 80ch"
           alt=""
           borderRadius="20px"
         />
