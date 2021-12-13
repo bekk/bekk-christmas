@@ -61,6 +61,7 @@ export default {
           { title: "Bash", value: "bash" },
           { title: "Clojure", value: "clojure" },
           { title: "CSS", value: "css" },
+          { title: "Diff", value: "diff" },
           { title: "Elm", value: "elm" },
           { title: "C#", value: "csharp" },
           { title: "F#", value: "fsharp" },
