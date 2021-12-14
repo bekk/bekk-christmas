@@ -6,7 +6,7 @@
       {
         "name": "bekk-login",
         "title": "Logg inn med Bekk",
-        "url": "https://bekk-christmas.vercel.app/api/auth/login",
+        "url": "https://bekk.christmas/api/auth/login",
         "logo": "static/logo.svg"
       }
     ]
