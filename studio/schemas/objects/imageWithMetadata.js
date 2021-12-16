@@ -20,6 +20,17 @@ export default {
       },
     },
     {
+      name: "maxWidth",
+      title: "Max width",
+      description:
+        'If you for some reason want to set a custom max width for the image, specify it in pixels here (ex. "500" - skip the "px").',
+      type: "number",
+      validation: (Rule) => Rule.min(0).max(1200),
+      options: {
+        isHighlighted: true,
+      },
+    },
+    {
       name: "alt",
       type: "string",
       title: "Alternative text",
