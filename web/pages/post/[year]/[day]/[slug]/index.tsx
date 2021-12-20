@@ -192,13 +192,17 @@ const getImageUrl = (image: any) => {
     return undefined;
   }
 
-  return urlFor(image).width(1200).url();
+  if (typeof image.src === "string") {
+    return image.src;
+  }
+
+  if (image) return urlFor(image).width(1200).url();
 };
 
 const getKeywordsFromCategories = (
   categories: { name: string; slug: string }[]
 ): string[] => {
   return categories.length !== 0
-    ? [...defaultKeywords, ...categories.map((category) => category.name)]
+    ? categories.map((category) => category.name)
     : defaultKeywords;
 };
