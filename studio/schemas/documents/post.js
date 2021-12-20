@@ -29,6 +29,7 @@ const post = {
           { title: "Norwegian (Nynorsk)", value: "nn-NO" },
         ],
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Embed URL",
