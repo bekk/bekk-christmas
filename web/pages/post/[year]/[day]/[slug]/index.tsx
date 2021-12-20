@@ -4,7 +4,10 @@ import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../../../../../features/article/Article";
 import { BackButton } from "../../../../../features/post-list/BackButton";
-import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
+import {
+  defaultKeywords,
+  SiteMetadata,
+} from "../../../../../features/site-metadata/SiteMetadata";
 import { shortDateFormat, toDayYear } from "../../../../../utils/date";
 import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
 import {
@@ -55,6 +58,8 @@ export default function PostPage({
         image={getImageUrl(post.coverImage)}
         author={authors.map((author) => author.fullName).join(", ")}
         canonicalUrl={post.canonicalUrl}
+        contentType={post.type}
+        keywords={getKeywordsFromCategories(post.categories)}
       />
       <Article
         backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
@@ -186,8 +191,14 @@ const getImageUrl = (image: any) => {
   if (!image) {
     return undefined;
   }
-  if (typeof image.src === "string") {
-    return image.src;
-  }
+
   return urlFor(image).width(1200).url();
+};
+
+const getKeywordsFromCategories = (
+  categories: { name: string; slug: string }[]
+): string[] => {
+  return categories.length !== 0
+    ? [...defaultKeywords, ...categories.map((category) => category.name)]
+    : defaultKeywords;
 };
