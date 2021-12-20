@@ -191,12 +191,10 @@ const getImageUrl = (image: any) => {
   if (!image) {
     return undefined;
   }
-
   if (typeof image.src === "string") {
     return image.src;
   }
-
-  if (image) return urlFor(image).width(1200).url();
+  return urlFor(image).width(1200).url();
 };
 
 const getKeywordsFromCategories = (
