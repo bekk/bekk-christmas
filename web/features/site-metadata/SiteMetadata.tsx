@@ -8,14 +8,25 @@ type SiteMetadataProps = {
   image?: string;
   author?: string;
   canonicalUrl?: string;
+  contentType?: string;
 };
+
+export const defaultKeywords = [
+  "bekk",
+  "christmas",
+  "technology",
+  "design",
+  "strategy",
+];
+
 export const SiteMetadata = ({
   title,
   description,
-  keywords = ["bekk", "christmas", "technology", "design", "strategy"],
+  keywords = defaultKeywords,
   image = "https://cdn.sanity.io/images/ah2n1vfr/production/b13a686723a264260182df3e79b1b94b4f766b35-1440x879.png?w=1200",
   author = "Bekk",
   canonicalUrl,
+  contentType = "article",
 }: SiteMetadataProps) => {
   const router = useRouter();
 
@@ -27,7 +38,7 @@ export const SiteMetadata = ({
       <meta name="author" content={author} />
 
       <meta property="og:title" content={title} />
-      <meta property="og:type" content="article" />
+      <meta property="og:type" content={contentType} />
       <meta
         property="og:url"
         content={`https://bekk.christmas${router.asPath}`}
