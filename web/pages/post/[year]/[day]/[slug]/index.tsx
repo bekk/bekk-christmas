@@ -198,9 +198,9 @@ const getImageUrl = (image: any) => {
 };
 
 const getKeywordsFromCategories = (
-  categories: { name: string; slug: string }[]
+  categories?: { name: string; slug: string }[]
 ): string[] => {
-  return categories.length !== 0
+  return categories?.length
     ? categories.map((category) => category.name)
     : defaultKeywords;
 };
