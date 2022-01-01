@@ -102,6 +102,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const now = new Date();
 
   const isDayAvailable =
+    now.getFullYear() > LATEST_CONTENT_YEAR ||
     year < LATEST_CONTENT_YEAR ||
     (now.getMonth() === 11 && day <= now.getDate());
 
