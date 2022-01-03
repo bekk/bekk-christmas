@@ -37,7 +37,6 @@ const logIntoSanity = async (
 
     // If you're already logged in, and your sanity user stems from your Bekk user we're going to just log you in to Sanity.
     // This will be what happens most of the time.
-    // TODO: Is this safe, given the context?
     if (existingSanityUser?.provider === "external") {
       console.info(
         `User ${auth0User.email} had a valid session in Sanity, redirecting to the Studio`
@@ -63,8 +62,6 @@ const logIntoSanity = async (
   }
 };
 
-// TODO: This is not currently working for some reason. It looks like it doesn't send the correct cookies along…
-// It doesn't seem to be a blocker however, as we just look up the user by name instead, and update it there.
 async function getSanityUser() {
   try {
     const res = await fetch(

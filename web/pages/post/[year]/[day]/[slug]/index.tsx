@@ -4,8 +4,11 @@ import { groq } from "next-sanity";
 import React from "react";
 import { Article } from "../../../../../features/article/Article";
 import { BackButton } from "../../../../../features/post-list/BackButton";
-import { SiteMetadata } from "../../../../../features/site-metadata/SiteMetadata";
-import { toDayYear } from "../../../../../utils/date";
+import {
+  defaultKeywords,
+  SiteMetadata,
+} from "../../../../../features/site-metadata/SiteMetadata";
+import { shortDateFormat, toDayYear } from "../../../../../utils/date";
 import { usePreviewSubscription } from "../../../../../utils/sanity/sanity.client";
 import {
   filterDataToSingleItem,
@@ -13,18 +16,18 @@ import {
 } from "../../../../../utils/sanity/sanity.server";
 import { toPlainText, urlFor } from "../../../../../utils/sanity/utils";
 
-type BlogPostPageProps = {
+type PostPageProps = {
   data: Post;
   preview: boolean;
   query: string;
   queryParams: { slug: string };
 };
-export default function BlogPostPage({
+export default function PostPage({
   query,
   queryParams,
   data: initialData,
   preview,
-}: BlogPostPageProps) {
+}: PostPageProps) {
   const { data } = usePreviewSubscription(query, {
     params: queryParams,
     initialData: [initialData],
@@ -54,19 +57,23 @@ export default function BlogPostPage({
         description={toPlainText(post.description)}
         image={getImageUrl(post.coverImage)}
         author={authors.map((author) => author.fullName).join(", ")}
+        canonicalUrl={post.canonicalUrl}
+        contentType={post.type}
+        keywords={getKeywordsFromCategories(post.categories)}
       />
       <Article
+        backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
+        backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}
+        podcastLength={post.podcastLength}
         title={post.title}
         description={post.description}
-        category={post.tags?.join(", ")}
+        categories={post.categories}
         content={post.content}
         publishedAt={availableFromDate}
         authors={authors}
-        coverImage={post.coverImage}
-        showReadingTime
-        showHype
+        coverImage={post.coverImage?.hideFromPost ? undefined : post.coverImage}
       />
     </>
   );
@@ -126,7 +133,7 @@ export const getStaticProps = async ({
     ..., 
     "newAuthors": authors[]->{ fullName },
     "oldAuthors": authors[].fullName,
-    "tags": tags[]->.name
+    "categories": tags[]->{ name, "slug": slug }
   }`;
   const allPosts = await getClient(preview).fetch<Post[]>(query, { slug });
   const post = filterDataToSingleItem(allPosts, preview);
@@ -153,7 +160,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: allPosts.map((post) => {
       const { year, day } = toDayYear(post.availableFrom);
-      return `/post/${year}/${day}/${post.slug}`;
+      return `/post/${year}/${day}/${post.slug?.replace(/\//g, "")}`;
     }),
     fallback: "blocking",
   };
@@ -163,23 +170,37 @@ type Post = {
   id: string;
   type: "article" | "podcast" | "video";
   embedUrl?: string;
+  podcastLength?: number;
   slug: string;
+  canonicalUrl?: string;
   title: string;
   description: unknown[];
   content: unknown[];
   newAuthors: { fullName: string }[];
   oldAuthors: { fullName: string }[];
-  tags: string[];
-  coverImage?: string;
+  categories: { name: string; slug: string }[];
+  coverImage?: {
+    _type: "image";
+    hideFromPost?: boolean;
+    asset: Record<string, any>;
+  };
   availableFrom: string;
 };
 
 const getImageUrl = (image: any) => {
   if (!image) {
-    return null;
+    return undefined;
   }
   if (typeof image.src === "string") {
     return image.src;
   }
   return urlFor(image).width(1200).url();
+};
+
+const getKeywordsFromCategories = (
+  categories?: { name: string; slug: string }[]
+): string[] => {
+  return categories?.length
+    ? categories.map((category) => category.name)
+    : defaultKeywords;
 };

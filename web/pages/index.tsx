@@ -41,7 +41,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
       // We generate a new RSS feed every time the index page is built.
       // This creates a new public/rss.xml file with the latest articles.
       await generateRss();
-    } catch (e) {}
+      console.info("RSS feed regenerated");
+    } catch (e) {
+      console.error("RSS feed failed to regenerate", e);
+    }
   }
 
   const now = new Date();
@@ -50,9 +53,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      showTeaser: isAfterJuly && isBeforeChristmas,
+      showTeaser: false, // isAfterJuly && isBeforeChristmas,
       year: isAfterJuly ? now.getFullYear() : now.getFullYear() - 1,
     },
-    revalidate: 60,
+    revalidate: 10,
   };
 };

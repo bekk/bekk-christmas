@@ -1,22 +1,31 @@
-import React from "react";
-import { Box, BoxProps, Heading } from "@chakra-ui/react";
+import { Box, BoxProps, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 import { ArrowLong } from "./Arrow";
 
-export const BackButton = (props: BoxProps) => {
+type BackButtonProps = BoxProps & { href?: string };
+export const BackButton = ({
+  href = "/",
+  children = "Home",
+  fontSize,
+  fontFamily,
+  ...props
+}: BackButtonProps) => {
   return (
-    <Link href="/" passHref>
+    <Link href={href} passHref>
       <Box
         as="a"
-        aria-label="Back to blog"
-        title="Back to blog"
-        display="block"
+        width="fit-content"
+        aria-label={`${children}`}
+        title={`${children}`}
+        display="flex"
+        alignItems="center"
         padding="8px"
         color="inherit"
-        fontSize={["1.5rem", "2rem"]}
-        lineHeight="1"
+        fontWeight="bold"
+        lineHeight="1.01"
         cursor="pointer"
-        role="group"
+        whiteSpace="nowrap"
         {...props}
       >
         <ArrowLong
@@ -27,9 +36,14 @@ export const BackButton = (props: BoxProps) => {
           transition="transform 0.2s"
           _groupHover={{ transform: "translateX(-8px)" }}
         />
-        <Heading as="h3" fontWeight="400" display="inline">
-          Home
-        </Heading>
+        <Text
+          fontWeight="normal"
+          display="inline"
+          fontSize={fontSize}
+          fontFamily={fontFamily}
+        >
+          {children}
+        </Text>
       </Box>
     </Link>
   );

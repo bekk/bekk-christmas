@@ -1,10 +1,20 @@
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
 
+const useClientSideOnly = () => {
+  const [isClientSide, setIsClientSide] = React.useState(false);
+  React.useEffect(() => {
+    setIsClientSide(true);
+  }, []);
+  return isClientSide;
+};
+
 export const TeaserLandingPage = () => {
+  const isClientSide = useClientSideOnly();
   return (
     <Center
       position="relative"
@@ -13,13 +23,17 @@ export const TeaserLandingPage = () => {
       flexDirection="column"
     >
       <ShapeBackground isFullPage />
-      <a href="/post/2020">
-        <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-      </a>
-      <Countdown
-        date={`${new Date().getFullYear()}/12/01`}
-        renderer={CountdownRenderer}
-      />
+      <Link href="/post/2021">
+        <a>
+          <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
+        </a>
+      </Link>
+      {isClientSide && (
+        <Countdown
+          date={`${new Date().getFullYear()}/12/01`}
+          renderer={CountdownRenderer}
+        />
+      )}
     </Center>
   );
 };
@@ -31,7 +45,7 @@ const CountdownRenderer: CountdownRendererFn = ({
   completed,
 }) => {
   if (completed) {
-    return <Heading>It's happening!</Heading>;
+    return <Heading color="white">It's happening!</Heading>;
   } else {
     return (
       <Box color="white" display="flex" marginTop="7rem">

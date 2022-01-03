@@ -4,7 +4,7 @@ import { slugify } from "../../utils/slug";
 
 export const useHype = () => {
   const router = useRouter();
-  const slug = slugify(router.asPath);
+  const slug = slugify(router.asPath.split("?")[0]);
   const [serverHype, setServerHype] = useState(0);
 
   const fetchHype = React.useCallback(async () => {

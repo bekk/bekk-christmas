@@ -1,14 +1,14 @@
-import React from "react";
 import { Box } from "@chakra-ui/react";
+import React from "react";
 import { BlobThick } from "./BlobThick";
 import { BlobWide } from "./BlobWide";
 import { Branch } from "./Branch";
+import { Circle } from "./Circle";
 import { Dots } from "./Dots";
 import { Pillar } from "./Pillar";
-import { Star } from "./Star";
 import { Squiggle } from "./Squiggle";
+import { Star } from "./Star";
 import { Tree } from "./Tree";
-import { Circle } from "./Circle";
 
 export const ShapeBackground = ({
   isFullPage = false,

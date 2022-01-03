@@ -19,6 +19,19 @@ const post = {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: "Language",
+      name: "language",
+      type: "string",
+      options: {
+        list: [
+          { title: "English", value: "en-US" },
+          { title: "Norwegian (Bokmål)", value: "nb-NO" },
+          { title: "Norwegian (Nynorsk)", value: "nn-NO" },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
       title: "Embed URL",
       description:
         "If you're uploading a video or a podcast, you need to upload your content to somebody who knows what they're doing. Upload podcasts to anchor.fm, and videos to vimeo.com. If you need access, contact Kristofer G. Selbekk.",
@@ -37,8 +50,26 @@ const post = {
           }
           return true;
         }),
-      hidden: ({ document }) =>
-        !["podcast", "video", undefined].includes(document.type),
+      hidden: ({ document }) => {
+        return document.type === "article";
+      },
+    },
+    {
+      title: "Podcast length",
+      description:
+        "The length of the podcast in minutes. You can find this on Anchor",
+      name: "podcastLength",
+      type: "number",
+      validation: (Rule) =>
+        Rule.custom((length, context) => {
+          if (context.document.type !== "podcast") {
+            return true;
+          }
+          return length ? true : "Please specify the length of the podcast";
+        }),
+      hidden: ({ document }) => {
+        return document.type !== "podcast";
+      },
     },
     {
       title: "Title",
@@ -56,6 +87,13 @@ const post = {
       options: {
         source: "title",
       },
+    },
+    {
+      name: "canonicalUrl",
+      type: "url",
+      title: "Canonical URL",
+      description:
+        "If the content has been posted elsewhere originally, please specify the original (canonical) url here.",
     },
     {
       title: "Description",
@@ -86,6 +124,14 @@ const post = {
           name: "src",
           type: "string",
         },
+        {
+          title: "Hide from post",
+          description:
+            "Check this if you only want the image to show up on the daily summary page, not in your own post",
+          name: "hideFromPost",
+          type: "boolean",
+          defaultValue: false,
+        },
       ],
     },
     {
@@ -95,7 +141,7 @@ const post = {
         "The date the post was or will be posted. If you don't know, just let this be as is, and somebody will do this for you :)",
       type: "date",
       validation: (Rule) => Rule.required(),
-      initialValue: `${new Date().getUTCFullYear()}-12-01`,
+      initialValue: `${new Date().getUTCFullYear()}-12-25`,
     },
     {
       title: "Category",

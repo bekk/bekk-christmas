@@ -1,22 +1,25 @@
-import { Box, BoxProps, Center, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import { theme } from "../../utils/theme";
+import { getSeparator } from "../../utils/string";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
+import { TextLink } from "../design-system/TextLink";
 import { ShapeBackground } from "../shapes/ShapeBackground";
-import { SiteFooter } from "../site-footer/SiteFooter";
 
 const listOf24Days = Array(24)
   .fill(0)
   .map((_, i) => i + 1);
 
 type CalendarProps = {
-  year: number | string;
+  year: number;
 };
+
+const CALENDAR_YEARS = [2021, 2020, 2019, 2018, 2017];
 
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
   const columns = [2, 3, 4, 6];
+  const filteredYears = CALENDAR_YEARS.filter((year) => year !== props.year);
   return (
     <Center
       position="relative"
@@ -26,26 +29,37 @@ const Calendar = (props: CalendarProps) => {
     >
       <BekkChristmasLogo
         position={["relative", "relative", "absolute"]}
-        top={["5vmin", "5vmin", "3vmin"]}
-        right={["0vmin", "0vmin", "3vmin"]}
-        width={["20vmin", "15vmin", "10vmin"]}
+        top={["5vmin", "5vmin", "-6vmin"]}
+        right={["0vmin", "0vmin", "-6vmin"]}
+        width={["30vmin", "24vmin", "20vmin"]}
       />
       <ShapeBackground />
       {showYearNumber && (
         <Heading
           mt={12}
           color="white"
-          fontSize={["2rem", "2.5rem", "3rem"]}
+          fontSize={["1.5rem", "2rem", "2.5rem"]}
           fontWeight="normal"
         >
-          The {props.year} calendar
+          Calendar {props.year}
         </Heading>
       )}
-      <SimpleGrid columns={columns} gap="24px" margin="30px 0 80px" px={6}>
+      <SimpleGrid columns={columns} gap="24px" margin="30px 0 40px" px={6}>
         {listOf24Days.map((day) => (
           <Day key={day} day={day} year={props.year} columns={columns} />
         ))}
       </SimpleGrid>
+      {filteredYears.length > 0 && (
+        <Text color="white" mb="80px" textShadow="2xl" mx={6}>
+          Also check out the calendars from{" "}
+          {filteredYears.map((year, index) => (
+            <React.Fragment key={year}>
+              <TextLink href={`/post/${year}`}>{year}</TextLink>
+              {getSeparator(index, filteredYears)}
+            </React.Fragment>
+          ))}
+        </Text>
+      )}
     </Center>
   );
 };
@@ -54,7 +68,7 @@ export default Calendar;
 
 type DayProps = {
   day: number;
-  year: number | string;
+  year: number;
   columns: number[];
 };
 
@@ -73,6 +87,7 @@ const getSkewDegrees = (columns, maxSkewDegrees, day) => {
 };
 
 function Day({ day, year, columns }: DayProps) {
+  const isOpen = new Date() >= new Date(year, 11, day);
   const maxSkewDegrees = 3; // The skewed degrees will span from -maxSkewDegrees to maxSkewDegrees
   const degreesToSkew = getSkewDegrees(columns, maxSkewDegrees, day);
 
@@ -84,13 +99,15 @@ function Day({ day, year, columns }: DayProps) {
     boxShadow: "xl",
     background: "rgba(255, 255, 255, 0.375)",
   };
-
   return (
     <Link href={`/post/${year}/${day}`} passHref>
       <Box
         as="a"
         color="brand.white"
-        border="3px solid white"
+        border={`3px white ${isOpen ? "solid" : "dotted"}`}
+        cursor={isOpen ? "pointer" : "default"}
+        opacity={isOpen ? "1" : "0.6"}
+        pointerEvents={isOpen ? "all" : "none"}
         width="150px"
         height="150px"
         transition=".25s ease-out"
@@ -99,8 +116,8 @@ function Day({ day, year, columns }: DayProps) {
         justifyContent="flex-end"
         alignItems="flex-end"
         padding="10px"
-        _hover={activeStyle}
-        _focus={activeStyle}
+        _hover={isOpen ? activeStyle : undefined}
+        _focus={isOpen ? activeStyle : undefined}
       >
         <Heading
           as="h2"

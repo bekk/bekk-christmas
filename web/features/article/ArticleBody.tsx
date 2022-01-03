@@ -1,7 +1,9 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
+import { getSeparator } from "../../utils/string";
 import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodcastBlock";
@@ -11,79 +13,92 @@ type ArticleBodyProps = {
   type?: "article" | "podcast" | "video";
   embedUrl?: string;
   title: string;
-  category: string;
-  readingTime?: string;
+  categories: { name: string; slug: string }[];
+  consumptionTime?: string;
   description?: unknown[];
   authors?: { fullName: string }[];
   publishedAt?: string;
-  coverImage: string;
+  coverImage?: {
+    _type: "image";
+    hideFromPost?: boolean;
+    asset: Record<string, any>;
+  };
   content: unknown[];
 };
 export const ArticleBody = ({
   type,
   embedUrl,
   title,
-  category,
-  readingTime,
+  categories,
+  consumptionTime,
   description,
   content,
   authors,
   publishedAt,
   coverImage,
 }: ArticleBodyProps) => {
-  const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <Container mx="auto" pb="120px" maxWidth="container.lg">
+    <Container maxWidth="container.lg" mt={["40px", "40px", "60px"]}>
       <Box marginBottom="20px">
-        {category && (
-          <Box fontSize={"lg"} marginBottom="16px">
-            {category.toUpperCase()}
-          </Box>
-        )}
-        <Heading as={"h1"} size={"4xl"} fontWeight="normal" lineHeight="1.15">
+        {categories?.map((category, index) => (
+          <React.Fragment key={category.slug}>
+            <Link href={`/category/${category.slug}`} passHref>
+              <Box
+                as="a"
+                fontSize={"lg"}
+                marginBottom="16px"
+                textTransform="uppercase"
+              >
+                {category.name}
+              </Box>
+            </Link>
+            {getSeparator(index, categories)}
+          </React.Fragment>
+        ))}
+        <Heading
+          as="h1"
+          fontSize={["5xl", "5xl", "6xl"]}
+          fontWeight="normal"
+          lineHeight="1.15"
+        >
           {title}
         </Heading>
       </Box>
-      <Flex flexWrap="wrap" fontSize="24px">
+
+      <Box fontSize="24px" mb={4} maxWidth="60ch">
+        <DescriptionPortableText blocks={description} />
+      </Box>
+      <Flex flexWrap="wrap" fontSize="18px" mb={6}>
         <Text fontWeight="bold" mb={[2, 0]}>
-          {readingTime}
+          {consumptionTime}
         </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
+        <Text px="8px">&middot;</Text>
         <Text mb={[2, 0]}>
           {authors?.length
-            ? "Written by " +
-              authors.map((author) => author.fullName).join(", ")
-            : "No authors"}
+            ? `By ${authors.map((author) => author.fullName).join(", ")}`
+            : null}
         </Text>
         <Text display={["none", "block"]} px="8px">
           &middot;
         </Text>
-        <Text fontSize="24px" color="brand.gray">
-          {publishedAt}
-        </Text>
+        <Text color="brand.gray">{publishedAt}</Text>
       </Flex>
-      <Box margin={["40px 0", "72px auto 40px"]} maxWidth="80ch">
-        {description && (
-          <Box fontSize="2xl">
-            <DescriptionPortableText blocks={description} />
-          </Box>
-        )}
-      </Box>
-      {coverImageSrc && (
+
+      {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
+      {coverImage && (
         <Image
           margin="40px auto"
           maxHeight="400px"
           maxWidth="80ch"
           width="100%"
           objectFit="cover"
-          src={coverImageSrc}
+          src={urlFor(coverImage).width(800).url()}
+          srcSet={`${urlFor(coverImage).width(400).url()} 400w, ${urlFor(coverImage).width(800).url()} 800w, ${urlFor(coverImage).width(1200).url()} 1200w, ${urlFor(coverImage).width(1600).url()} 1600w`}
+          sizes="(max-width: 80ch) 100vw, 80ch"
           alt=""
           borderRadius="20px"
         />
       )}
-      {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
       {type === "video" && <VimeoBlock node={{ src: embedUrl }} />}
       {content && <ContentPortableText blocks={content} />}
     </Container>

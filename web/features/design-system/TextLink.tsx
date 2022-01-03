@@ -14,6 +14,9 @@ export const TextLink: React.FC<TextLinkProps> = ({
   children,
   ...rest
 }) => {
+  if (!href) {
+    return <>{children}</>;
+  }
   if (/^(mailto:|https?:\/\/)/.test(href)) {
     return (
       <Link
@@ -27,7 +30,7 @@ export const TextLink: React.FC<TextLinkProps> = ({
     );
   }
   return (
-    <NextLink href={href} passHref scroll={!href.includes("#")}>
+    <NextLink href={href} passHref>
       <Link textDecoration="underline" {...rest}>
         {children}
       </Link>
