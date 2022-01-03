@@ -72,7 +72,8 @@ export const PostItem = ({
             marginRight="8px"
             borderRadius="50%"
           />
-          {consumptionTime} – {tags?.map((tag) => tag.name).join(", ")}
+          {consumptionTime}
+          {tags && ` – ${tags.map((tag) => tag.name).join(", ")}`}
         </Text>
         {coverImageSrc && (
           <Image
