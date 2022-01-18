@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Link } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import React from "react";
 import Calendar from "../features/calendar/Calendar";
