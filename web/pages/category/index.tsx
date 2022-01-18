@@ -2,7 +2,6 @@ import { Stack, Text, Wrap } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import { TextLink } from "../../features/design-system/TextLink";
 import { getClient } from "../../utils/sanity/sanity.server";
-import React, { useEffect } from "react";
 import { getRainbowColor } from "../../utils/color";
 
 type Category = { name: string; slug: string };
