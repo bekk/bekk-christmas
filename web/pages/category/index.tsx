@@ -35,24 +35,8 @@ export default function CategoryOverviewPage({
                     color={getRainbowColor(categories.length, index + 1)}
                     mr={4}
                     transition=".5s ease-out"
-                    _hover={{
-                      transform: "scale(1.1)",
-                      color: "#000",
-                      backgroundColor: getRainbowColor(
-                        categories.length,
-                        index + 1
-                      ),
-                      padding: 1,
-                    }}
-                    _focus={{
-                      transform: "scale(1.1)",
-                      color: "#000",
-                      backgroundColor: getRainbowColor(
-                        categories.length,
-                        index + 1
-                      ),
-                      padding: 1,
-                    }}
+                    _hover={getCategoryHoverEffect(index)}
+                    _focus={getCategoryHoverEffect(index)}
                   >
                     {category.name}
                   </TextLink>
@@ -64,6 +48,14 @@ export default function CategoryOverviewPage({
       </Flex>
     </Box>
   );
+  function getCategoryHoverEffect(index) {
+    return {
+      transform: "scale(1.1)",
+      color: "#000",
+      backgroundColor: getRainbowColor(categories.length, index + 1),
+      padding: 1,
+    };
+  }
 }
 
 export const getStaticProps: GetStaticProps = async () => {
