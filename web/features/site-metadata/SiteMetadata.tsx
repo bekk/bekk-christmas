@@ -9,6 +9,7 @@ type SiteMetadataProps = {
   author?: string;
   canonicalUrl?: string;
   contentType?: string;
+  children?: React.ReactNode;
 };
 
 export const defaultKeywords = [
@@ -27,6 +28,7 @@ export const SiteMetadata = ({
   author = "Bekk",
   canonicalUrl,
   contentType = "article",
+  children,
 }: SiteMetadataProps) => {
   const router = useRouter();
 
@@ -50,6 +52,7 @@ export const SiteMetadata = ({
       <meta name="twitter:creator" content="@livetibekk" />
 
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {children}
     </Head>
   );
 };
