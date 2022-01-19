@@ -4,7 +4,6 @@ import { TextLink } from "../../features/design-system/TextLink";
 import { getClient } from "../../utils/sanity/sanity.server";
 import { getRainbowColor } from "../../utils/color";
 import { BackButton } from "../../features/post-list/BackButton";
-import { transform } from "typescript";
 
 type Category = { name: string; slug: string };
 
