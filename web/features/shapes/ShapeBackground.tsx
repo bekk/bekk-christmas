@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
+import { getGreyNote } from "../../utils/color";
 import { BlobThick } from "./BlobThick";
 import { BlobWide } from "./BlobWide";
 import { Branch } from "./Branch";
@@ -12,8 +13,10 @@ import { Tree } from "./Tree";
 
 export const ShapeBackground = ({
   isFullPage = false,
+  isBlackAndWhite = false,
 }: {
   isFullPage?: boolean;
+  isBlackAndWhite?: boolean;
 }) => {
   return (
     <Box
@@ -23,7 +26,7 @@ export const ShapeBackground = ({
       width="100vw"
       minHeight="100vh"
       height="100%"
-      background="brand.darkGreen"
+      background={isBlackAndWhite ? "#000" : "brand.darkGreen"}
       overflow="hidden"
       zIndex="-1"
     >
@@ -41,12 +44,14 @@ export const ShapeBackground = ({
           "-30%",
           "-10%",
         ]}
+        fill={isBlackAndWhite ? getGreyNote(14, 6) : "brand.lightGreen"}
       />
       <Circle
         position="absolute"
         top={["-100%", "-100%", "-30%", "-50%"]}
         right={["5%", "-15%", "-15%", "5%"]}
         width="80vmin"
+        fill={isBlackAndWhite ? getGreyNote(14, 6) : "brand.lightGreen"}
       />
       <Circle
         position="absolute"
@@ -57,6 +62,7 @@ export const ShapeBackground = ({
           "-50%",
         ]}
         right={["-15%", isFullPage ? "-25%" : "-15%", "-15%", "-15%"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 3) : "brand.lightGreen"}
       />
       <Circle
         position="absolute"
@@ -73,7 +79,7 @@ export const ShapeBackground = ({
           "-5%",
         ]}
         width={["90vmin", "60vmin", "50vmin", "60vmin"]}
-        fill="brand.salmon"
+        fill={isBlackAndWhite ? getGreyNote(14, 4) : "brand.salmon"}
       />
       <BlobWide
         position="absolute"
@@ -95,12 +101,14 @@ export const ShapeBackground = ({
           "80vmin",
           "80vmin",
         ]}
+        fill={isBlackAndWhite ? getGreyNote(14, 1) : "brand.peach"}
       />
       <Dots
         position="absolute"
         top={["10%", "8%", "8%", "15%"]}
         left={["5%", "2%", "-1%", "5%"]}
         width={["30vmin"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 11) : "brand.peach"}
       />
       <BlobThick
         position="absolute"
@@ -117,6 +125,7 @@ export const ShapeBackground = ({
           "-15%",
         ]}
         width={["80vmin", "95vmin", "80vmin", "85vmin"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 3) : "brand.yellow"}
       />
       <Branch
         position="absolute"
@@ -133,18 +142,21 @@ export const ShapeBackground = ({
           "100vmin",
           "85vmin",
         ]}
+        fill={isBlackAndWhite ? getGreyNote(14, 7) : "brand.darkGreen"}
       />
       <Star
         position="absolute"
         bottom={[isFullPage ? "-10%" : "-2%", "-5%", "-5%", "-5%"]}
         right={[isFullPage ? "-20%" : "-25%", "-25%", "-25%", "-5%"]}
         width={["50vmin", "50vmin", "40vmin", "40vmin"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 13) : "brand.yellow"}
       />
       <Tree
         position="absolute"
         bottom={["20%", "15%", "10%", "5%"]}
         left={["-15%", isFullPage ? "-12%" : "-15%", "-10%", "-5%"]}
         width={["30vmin", isFullPage ? "20vmin" : "25vmin", "18vmin", "15vmin"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 7) : "brand.darkGreen"}
       />
       <Squiggle
         position="absolute"
@@ -166,6 +178,7 @@ export const ShapeBackground = ({
           "65vmin",
           "75vmin",
         ]}
+        fill={isBlackAndWhite ? getGreyNote(14, 3) : "brand.red"}
       />
       <Pillar
         position="absolute"
@@ -181,12 +194,13 @@ export const ShapeBackground = ({
           "2%",
           "5%",
         ]}
-        fill="#004A33"
+        fill={isBlackAndWhite ? getGreyNote(14, 7) : "#004A33"}
       />
       <Pillar
         position="absolute"
         bottom={["-100%", "-100%", isFullPage ? "-25%" : "-15%", "-30%"]}
         left={["25%", "25%", "25%", "25%"]}
+        fill={isBlackAndWhite ? getGreyNote(14, 6) : "brand.lightGreen"}
       />
       <Pillar
         position="absolute"
@@ -203,7 +217,7 @@ export const ShapeBackground = ({
           isFullPage ? "40vmin" : "50vmin",
           "37vmin",
         ]}
-        fill="brand.darkGreen"
+        fill={isBlackAndWhite ? getGreyNote(14, 8) : "brand.darkGreen"}
       />
     </Box>
   );
