@@ -2,6 +2,7 @@ import { Box, Center, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import { groq } from "next-sanity";
 import React from "react";
+import readingTime from "reading-time";
 import { Article } from "../../../../../features/article/Article";
 import { BackButton } from "../../../../../features/post-list/BackButton";
 import {
@@ -50,6 +51,9 @@ export default function PostPage({
   }
 
   const authors = normalizeAuthors(post);
+  const consumptionTime = post.podcastLength
+    ? `${post.podcastLength} min listen`
+    : readingTime(toPlainText(post.content)).text;
   return (
     <>
       <SiteMetadata
@@ -60,13 +64,15 @@ export default function PostPage({
         canonicalUrl={post.canonicalUrl}
         contentType={post.type}
         keywords={getKeywordsFromCategories(post.categories)}
-      />
+      >
+        <meta data-rh="true" name="twitter:data1" content={consumptionTime} />
+      </SiteMetadata>
       <Article
         backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
         backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}
-        podcastLength={post.podcastLength}
+        consumptionTime={consumptionTime}
         title={post.title}
         description={post.description}
         categories={post.categories}

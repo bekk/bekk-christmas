@@ -49,7 +49,7 @@ const Calendar = (props: CalendarProps) => {
         ))}
       </SimpleGrid>
       {filteredYears.length > 0 && (
-        <Text color="white" mb="80px" textShadow="2xl" mx={6}>
+        <Text color="white" textShadow="2xl" mt={6}>
           Also check out the calendars from{" "}
           {filteredYears.map((year, index) => (
             <React.Fragment key={year}>
@@ -59,6 +59,10 @@ const Calendar = (props: CalendarProps) => {
           ))}
         </Text>
       )}
+      <Text color="white" mb="80px" textShadow="2xl" mt={2}>
+        You can also browse all articles sorted by{" "}
+        <TextLink href="/category">categories</TextLink>
+      </Text>
     </Center>
   );
 };
