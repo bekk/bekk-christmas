@@ -1,7 +1,5 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import readingTime from "reading-time";
-import { toPlainText } from "../../utils/sanity/utils";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleFooter } from "./ArticleFooter";
 import { ArticleHeader } from "./ArticleHeader";
@@ -17,7 +15,6 @@ type ArticleProps = {
   categories?: { name: string; slug: string }[];
   type: "article" | "podcast" | "video";
   embedUrl?: string;
-  podcastLength?: number;
   title?: string;
   description?: unknown[];
   content: unknown[];
@@ -30,12 +27,12 @@ type ArticleProps = {
   };
   backButtonHref?: string;
   backButtonText: string;
+  consumptionTime: string;
 };
 export const Article = ({
   categories = [],
   type,
   embedUrl,
-  podcastLength,
   title = "",
   description = [],
   content,
@@ -44,12 +41,10 @@ export const Article = ({
   coverImage,
   backButtonHref,
   backButtonText,
+  consumptionTime,
 }: ArticleProps) => {
   const publishedAtDate = publishedAt ? formatter.format(publishedAt) : null;
   const isScrolledToTop = useScrolledToTop();
-  const consumptionTime = podcastLength
-    ? `${podcastLength} min listen`
-    : readingTime(toPlainText(content)).text;
 
   return (
     <Box
