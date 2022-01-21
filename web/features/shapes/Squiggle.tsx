@@ -6,8 +6,8 @@ export const Squiggle = (props: BoxProps & IconProps) => {
       as="svg"
       width="650px"
       viewBox="0 0 650 1019"
-      stroke="brand.red"
-      fill="none"
+      stroke={props.fill ?? "brand.red"}
+      fill={props.fill ?? "none"}
       strokeWidth="145"
       strokeMiterlimit="10"
       strokeLinecap="round"
