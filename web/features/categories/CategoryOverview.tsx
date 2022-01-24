@@ -1,18 +1,9 @@
 import { Category } from "../../pages/category";
-import {
-  Stack,
-  Wrap,
-  Container,
-  Flex,
-  WrapItem,
-  Center,
-  Button,
-  Box,
-} from "@chakra-ui/react";
+import { Stack, Wrap, Container, Flex, WrapItem, Box } from "@chakra-ui/react";
 import { BackButton } from "../post-list/BackButton";
 import { TextLink } from "../design-system/TextLink";
 import { getRainbowColor } from "../../utils/color";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import SearchContainer from "../search/SearchContainer";
 
 type Props = {
