@@ -62,7 +62,7 @@ export const ShapeBackground = ({
           "-50%",
         ]}
         right={["-15%", isFullPage ? "-25%" : "-15%", "-15%", "-15%"]}
-        fill={isBlackAndWhite ? getGreyNote(14, 3) : "brand.lightGreen"}
+        fill={isBlackAndWhite ? getGreyNote(14, 7) : "brand.lightGreen"}
       />
       <Circle
         position="absolute"
