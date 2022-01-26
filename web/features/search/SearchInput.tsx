@@ -4,7 +4,6 @@ import {
   Input,
   Icon,
   IconButton,
-  BoxProps,
   InputProps,
 } from "@chakra-ui/react";
 import { SearchIcon } from "./SearchIcon";
@@ -18,7 +17,7 @@ type Props = {
 
 export default function SearchInput(props: Props) {
   return (
-    <InputGroup>
+    <InputGroup ml={-2}>
       {props.value === "" ? (
         <InputRightElement pointerEvents="none" mr={-4}>
           <SearchIcon mr={2} />
@@ -42,6 +41,9 @@ export default function SearchInput(props: Props) {
         border="0px"
         borderBottom="4px"
         borderRadius="+0px"
+        fontSize={32}
+        fontFamily={"Newzald"}
+        variant={"unstyled"}
         {...props}
       />
     </InputGroup>
