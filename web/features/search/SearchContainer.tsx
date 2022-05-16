@@ -1,16 +1,10 @@
 import { Flex, Box } from "@chakra-ui/react";
-import { TextLink } from "../design-system/TextLink";
-import SearchInput from "./SearchInput";
+import { SearchInput } from "./SearchInput";
 import { useSearch } from "./SearchContext";
-import { useEffect } from "react";
 
-export default function SearchContainer() {
-  const { searchStr, setSearchStr, onSearchClose, onSearch, searchIsActive } =
-    useSearch();
+export const SearchContainer = () => {
+  const { searchStr, setSearchStr, closeSearch } = useSearch();
 
-  useEffect(() => {
-    console.log(searchStr);
-  }, [searchStr]);
   return (
     <Flex
       flexDirection="column"
@@ -21,22 +15,10 @@ export default function SearchContainer() {
       <Box minWidth="400px" mb={4}>
         <SearchInput
           onChange={(e) => setSearchStr(e.target.value)}
-          onClose={() => onSearchClose()}
+          onClose={() => closeSearch()}
           value={searchStr}
-          onKeyPress={(e) => {
-            if (e.key === "Enter") {
-              onSearch();
-            }
-          }}
         />
-      </Box>
-      <Box height={"16px"} ml={-2}>
-        {!searchIsActive && searchStr && searchStr.trim().length > 0 && (
-          <TextLink color="white" onClick={onSearch} href={"#"}>
-            Show all results for "{searchStr}"
-          </TextLink>
-        )}
       </Box>
     </Flex>
   );
-}
+};

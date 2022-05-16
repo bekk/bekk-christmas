@@ -2,7 +2,7 @@ import { Box, Center } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import { getClient } from "../../utils/sanity/sanity.server";
 import { SiteMetadata } from "../../features/site-metadata/SiteMetadata";
-import CategoryOverview from "../../features/categories/CategoryOverview";
+import { CategoryOverview } from "../../features/categories/CategoryOverview";
 import { BekkChristmasLogo } from "../../features/design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../../features/shapes/ShapeBackground";
 

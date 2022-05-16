@@ -1,15 +1,18 @@
 import { Center, Text } from "@chakra-ui/react";
-import { SearchResultType } from "../search/SearchContext";
+import { useSearch } from "../search/SearchContext";
 import { TextLink } from "../design-system/TextLink";
 
-type Props = {
-  results: SearchResultType[];
-};
-
-export default function SearchResult({ results }: Props) {
+export const SearchResult = () => {
+  const { loading, searchResults } = useSearch();
+  const getSearchResultHoverEffect = () => {
+    return {
+      transform: "scale(1.05)",
+      color: "white",
+    };
+  };
   return (
     <Center mt={8} flexDirection="column" aria-label="results">
-      {results.length === 0 && (
+      {searchResults.length === 0 && !loading && (
         <Text
           fontSize={[32, 32, 51, 51]}
           fontFamily={"DINOT"}
@@ -19,34 +22,26 @@ export default function SearchResult({ results }: Props) {
           Sorry, no results
         </Text>
       )}
-      {results.map((result, index) => {
+      {searchResults.map((result, index) => {
         return (
-          <>
-            <TextLink
-              key={`${index}-${result.title}`}
-              href={`#`}
-              fontSize={[32, 32, 51, 51]}
-              fontFamily="Newzald"
-              lineHeight={1.5}
-              color="grey"
-              textAlign="center"
-              transition=".25s ease-out"
-              _hover={getSearchResultHoverEffect()}
-              _focus={getSearchResultHoverEffect()}
-              textDecoration={"none"}
-              my={2}
-            >
-              {result.title}
-            </TextLink>
-          </>
+          <TextLink
+            key={`${index}-${result.title}`}
+            href={`#`}
+            fontSize={[32, 32, 51, 51]}
+            fontFamily="Newzald"
+            lineHeight={1.5}
+            color="grey"
+            textAlign="center"
+            transition=".25s ease-out"
+            _hover={getSearchResultHoverEffect()}
+            _focus={getSearchResultHoverEffect()}
+            textDecoration={"none"}
+            my={2}
+          >
+            {result.title}
+          </TextLink>
         );
       })}
     </Center>
   );
-  function getSearchResultHoverEffect() {
-    return {
-      transform: "scale(1.05)",
-      color: "white",
-    };
-  }
-}
+};

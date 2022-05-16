@@ -1,16 +1,17 @@
 import { Category } from "../../pages/category";
-import { Center, Container, Flex, Text } from "@chakra-ui/react";
-import CategoryBody from "./CategoryBody";
-import SearchResult from "../search/SearchResult";
-import CategoryHeader from "./CategoryHeader";
+import { Container, Flex, Text } from "@chakra-ui/react";
+import { CategoryBody } from "./CategoryBody";
+import { SearchResult } from "../search/SearchResult";
+import { CategoryHeader } from "./CategoryHeader";
 import { SearchProvider, useSearch } from "../search/SearchContext";
 
 type Props = {
   categories: Category[];
 };
 
-function CategoryOverviewContent({ categories }: Props) {
-  const { loading, searchIsActive, searchResults } = useSearch();
+const CategoryOverviewContent = ({ categories }: Props) => {
+  const { searchIsActive } = useSearch();
+
   return (
     <Flex
       flexDirection="column"
@@ -20,15 +21,8 @@ function CategoryOverviewContent({ categories }: Props) {
     >
       <Container maxWidth="container.xl">
         <CategoryHeader />
-        {loading && (
-          <Center mt={8}>
-            <Text color="white" fontSize={31}>
-              Loading...
-            </Text>
-          </Center>
-        )}
-        {searchIsActive && !loading && <SearchResult results={searchResults} />}
-        {!searchIsActive && !loading && (
+        {searchIsActive && <SearchResult />}
+        {!searchIsActive && (
           <>
             <Text
               color="white"
@@ -44,12 +38,12 @@ function CategoryOverviewContent({ categories }: Props) {
       </Container>
     </Flex>
   );
-}
+};
 
-export default function CategoryOverview({ categories }: Props) {
+export const CategoryOverview = ({ categories }: Props) => {
   return (
     <SearchProvider>
       <CategoryOverviewContent categories={categories} />
     </SearchProvider>
   );
-}
+};

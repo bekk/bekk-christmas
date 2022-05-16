@@ -18,13 +18,10 @@ type SearchContextType = {
   searchStr: string;
   setSearchStr: (searchStr: string) => void;
   loading: boolean;
-  setLoading: (loading: boolean) => void;
   searchResults: SearchResultType[];
-  setSearchResults: (searchResults: SearchResultType[]) => void;
   searchIsActive: boolean;
-  setSearchIsActive: (searchIsActive: boolean) => void;
-  onSearch: () => void;
-  onSearchClose: () => void;
+  search: () => void;
+  closeSearch: () => void;
 };
 
 export const useSearch = (): SearchContextType => {
@@ -36,13 +33,10 @@ export const useSearch = (): SearchContextType => {
     searchStr: context.searchStr,
     setSearchStr: context.setSearchStr,
     loading: context.loading,
-    setLoading: context.setLoading,
     searchResults: context.searchResults,
-    setSearchResults: context.setSearchResults,
     searchIsActive: context.searchIsActive,
-    setSearchIsActive: context.setSearchIsActive,
-    onSearch: context.onSearch,
-    onSearchClose: context.onSearchClose,
+    search: context.search,
+    closeSearch: context.closeSearch,
   };
 };
 
@@ -73,7 +67,7 @@ export const SearchProvider = ({ children }) => {
 
   useEffect(() => {
     if (searchStr.length === 0) {
-      onSearchClose();
+      close();
     }
   }, [searchStr]);
 
@@ -89,7 +83,7 @@ export const SearchProvider = ({ children }) => {
     };
   }, [searchStr, search]);
 
-  const onSearchClose = () => {
+  const closeSearch = () => {
     setSearchIsActive(false);
     setSearchStr("");
     setSearchResults([]);
@@ -101,13 +95,10 @@ export const SearchProvider = ({ children }) => {
         searchStr,
         setSearchStr,
         loading,
-        setLoading,
         searchIsActive,
-        setSearchIsActive,
         searchResults,
-        setSearchResults,
         search,
-        onSearchClose,
+        closeSearch,
       }}
     >
       {children}

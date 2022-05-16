@@ -7,7 +7,14 @@ type Props = {
   categories: Category[];
 };
 
-export default function App({ categories }: Props) {
+export const CategoryBody = ({ categories }: Props) => {
+  const getCategoryHoverEffect = (index) => {
+    return {
+      transform: "scale(1.01)",
+      color: "#000",
+      backgroundColor: getRainbowColor(categories.length, index + 1),
+    };
+  };
   return (
     <Stack direction="row" mt={4}>
       <Wrap>
@@ -31,11 +38,4 @@ export default function App({ categories }: Props) {
       </Wrap>
     </Stack>
   );
-  function getCategoryHoverEffect(index) {
-    return {
-      transform: "scale(1.01)",
-      color: "#000",
-      backgroundColor: getRainbowColor(categories.length, index + 1),
-    };
-  }
-}
+};

@@ -15,7 +15,7 @@ type Props = {
   value: string;
 } & InputProps;
 
-export default function SearchInput(props: Props) {
+export const SearchInput = (props: Props) => {
   return (
     <InputGroup ml={-2}>
       {props.value === "" ? (
@@ -48,4 +48,4 @@ export default function SearchInput(props: Props) {
       />
     </InputGroup>
   );
-}
+};
