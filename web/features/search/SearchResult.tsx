@@ -1,91 +1,46 @@
-import { Center } from "@chakra-ui/react";
+import { Center, Text } from "@chakra-ui/react";
+import { SearchResultType } from "../search/SearchContext";
 import { TextLink } from "../design-system/TextLink";
-import { ArticleItemType } from "../post-list/ArticleItem";
-import { PodcastItemType } from "../post-list/PodcastItem";
-import { VideoItemType } from "../post-list/VideoItem";
 
 type Props = {
-  results: (PodcastItemType | VideoItemType | ArticleItemType)[];
+  results: SearchResultType[];
 };
 
-export default function SearchResult(props: Props) {
+export default function SearchResult({ results }: Props) {
   return (
     <Center mt={8} flexDirection="column" aria-label="results">
-      <TextLink
-        href={`#`}
-        fontSize={51}
-        fontFamily="Newzald"
-        lineHeight={1.5}
-        color="grey"
-        textAlign="center"
-        transition=".25s ease-out"
-        _hover={getSearchResultHoverEffect()}
-        _focus={getSearchResultHoverEffect()}
-        textDecoration={"none"}
-        my={2}
-      >
-        {"Design and emotion"}
-      </TextLink>
-      <TextLink
-        href={`#`}
-        fontSize={51}
-        fontFamily="Newzald"
-        lineHeight={1.5}
-        color="grey"
-        textAlign="center"
-        transition=".25s ease-out"
-        _hover={getSearchResultHoverEffect()}
-        _focus={getSearchResultHoverEffect()}
-        textDecoration={"none"}
-        my={2}
-      >
-        {"Implement typography how the design wants it"}
-      </TextLink>
-      <TextLink
-        href={`#`}
-        fontSize={51}
-        fontFamily="Newzald"
-        lineHeight={1.5}
-        color="grey"
-        textAlign="center"
-        transition=".25s ease-out"
-        _hover={getSearchResultHoverEffect()}
-        _focus={getSearchResultHoverEffect()}
-        textDecoration={"none"}
-        my={2}
-      >
-        {"Why make designsystem?"}
-      </TextLink>
-      <TextLink
-        href={`#`}
-        fontSize={51}
-        fontFamily="Newzald"
-        lineHeight={1.5}
-        color="grey"
-        textAlign="center"
-        transition=".25s ease-out"
-        _hover={getSearchResultHoverEffect()}
-        _focus={getSearchResultHoverEffect()}
-        textDecoration={"none"}
-        my={2}
-      >
-        {"A Christmas Eve of Design  🤶 "}
-      </TextLink>
-      <TextLink
-        href={`#`}
-        fontSize={51}
-        fontFamily="Newzald"
-        lineHeight={1.5}
-        color="grey"
-        textAlign="center"
-        transition=".25s ease-out"
-        _hover={getSearchResultHoverEffect()}
-        _focus={getSearchResultHoverEffect()}
-        textDecoration={"none"}
-        my={2}
-      >
-        {"Four defininition of design"}
-      </TextLink>
+      {results.length === 0 && (
+        <Text
+          fontSize={[32, 32, 51, 51]}
+          fontFamily={"DINOT"}
+          color="gray"
+          textAlign="center"
+        >
+          Sorry, no results
+        </Text>
+      )}
+      {results.map((result, index) => {
+        return (
+          <>
+            <TextLink
+              key={`${index}-${result.title}`}
+              href={`#`}
+              fontSize={[32, 32, 51, 51]}
+              fontFamily="Newzald"
+              lineHeight={1.5}
+              color="grey"
+              textAlign="center"
+              transition=".25s ease-out"
+              _hover={getSearchResultHoverEffect()}
+              _focus={getSearchResultHoverEffect()}
+              textDecoration={"none"}
+              my={2}
+            >
+              {result.title}
+            </TextLink>
+          </>
+        );
+      })}
     </Center>
   );
   function getSearchResultHoverEffect() {
