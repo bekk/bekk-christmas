@@ -8,8 +8,11 @@ import {
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export type SearchResultType = {
+  slug: {
+    current: string;
+  };
   title: string;
-  slug: string;
+  availableFrom: string;
 };
 
 const SearchContext = createContext(null);
@@ -54,8 +57,9 @@ export const SearchProvider = ({ children }) => {
       const results = await client.fetch<
         SearchResultType[]
       >(`*[[title, category, tags] match ["${searchStr}*"]]{
-        title,
         slug,
+        title,
+        availableFrom,
       }`);
       setSearchResults(results);
       setLoading(false);

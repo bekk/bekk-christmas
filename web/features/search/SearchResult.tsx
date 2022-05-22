@@ -1,6 +1,7 @@
 import { Center, Text } from "@chakra-ui/react";
 import { useSearch } from "../search/SearchContext";
 import { TextLink } from "../design-system/TextLink";
+import { toDayYear } from "../../utils/date";
 
 export const SearchResult = () => {
   const { loading, searchResults } = useSearch();
@@ -23,10 +24,12 @@ export const SearchResult = () => {
         </Text>
       )}
       {searchResults.map((result, index) => {
+        const { year, day } = toDayYear(result.availableFrom);
+        const { slug } = result;
         return (
           <TextLink
             key={`${index}-${result.title}`}
-            href={`#`}
+            href={`/post/${year}/${day}/${slug.current}`}
             fontSize={[32, 32, 51, 51]}
             fontFamily="Newzald"
             lineHeight={1.5}
