@@ -33,7 +33,12 @@ export default function CategoryPage({ posts, category }: CategoryPageProps) {
           ...(category.synonyms || []),
         ]}
       />
-      <PostList posts={posts} heading={category.name} backButtonHref="/" />
+      <PostList
+        posts={posts}
+        heading={category.name}
+        backButtonLabel="Back to all categories"
+        backButtonHref="/category"
+      />
     </Box>
   );
 }

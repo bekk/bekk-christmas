@@ -12,12 +12,14 @@ import { VideoItem, VideoItemType } from "./VideoItem";
 
 type PostListProps = {
   backButtonHref: string;
+  backButtonLabel?: string;
   posts: (PodcastItemType | VideoItemType | ArticleItemType)[];
   heading: string;
   description?: string;
 };
 export const PostList = ({
   backButtonHref,
+  backButtonLabel = "Home",
   posts,
   heading,
   description,
@@ -82,7 +84,7 @@ export const PostList = ({
           padding={["40px", "40px", "64px", "64px"]}
         >
           <BackButton color="inherit" href={backButtonHref} fontFamily="DINOT">
-            Home
+            {backButtonLabel}
           </BackButton>
         </Box>
         <Box
