@@ -40,12 +40,31 @@ export const SearchInput = (props: Props) => {
         color="white"
         border="0px"
         borderBottom="4px"
-        borderRadius="+0px"
+        borderRadius="0px"
         fontSize={32}
         fontFamily={"Newzald"}
         variant={"unstyled"}
+        type="search"
+        css={{
+          "::-webkit-search-cancel-button, ::-webkit-search-decoration": {
+            WebkitAppearance: "none",
+            appearance: "none",
+          },
+        }}
         {...props}
       />
     </InputGroup>
   );
 };
+/*
+{
+  '[type="search"]::-webkit-search-cancel-button': {
+    "-webkit-appearance": "none",
+    appearance: "none",
+  },
+  '[type="search"]::-webkit-search-decoration': {
+    "-webkit-appearance": "none",
+    appearance: "none",
+  },
+}
+*/

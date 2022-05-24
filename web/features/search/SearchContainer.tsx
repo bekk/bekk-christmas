@@ -3,7 +3,7 @@ import { SearchInput } from "./SearchInput";
 import { useSearch } from "./SearchContext";
 
 export const SearchContainer = () => {
-  const { searchStr, setSearchStr, closeSearch } = useSearch();
+  const { query, setQuery, onClose } = useSearch();
 
   return (
     <Flex
@@ -14,9 +14,9 @@ export const SearchContainer = () => {
     >
       <Box minWidth="400px" mb={4}>
         <SearchInput
-          onChange={(e) => setSearchStr(e.target.value)}
-          onClose={() => closeSearch()}
-          value={searchStr}
+          onChange={(e) => setQuery(e.target.value)}
+          onClose={onClose}
+          value={query}
         />
       </Box>
     </Flex>

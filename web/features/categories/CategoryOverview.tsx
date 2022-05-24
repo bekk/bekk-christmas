@@ -10,7 +10,7 @@ type Props = {
 };
 
 const CategoryOverviewContent = ({ categories }: Props) => {
-  const { searchIsActive } = useSearch();
+  const { isSearchActive } = useSearch();
 
   return (
     <Flex
@@ -21,8 +21,8 @@ const CategoryOverviewContent = ({ categories }: Props) => {
     >
       <Container maxWidth="container.xl">
         <CategoryHeader />
-        {searchIsActive && <SearchResult />}
-        {!searchIsActive && (
+        {isSearchActive && <SearchResult />}
+        {!isSearchActive && (
           <>
             <Text
               color="white"

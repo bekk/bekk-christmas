@@ -15,94 +15,97 @@ export type SearchResultType = {
   availableFrom: string;
 };
 
-const SearchContext = createContext(null);
-
 type SearchContextType = {
-  searchStr: string;
-  setSearchStr: (searchStr: string) => void;
-  loading: boolean;
+  query: string;
+  setQuery: (query: string) => void;
+  isLoading: boolean;
+  hasError: boolean;
   searchResults: SearchResultType[];
-  searchIsActive: boolean;
-  search: () => void;
-  closeSearch: () => void;
+  isSearchActive: boolean;
+  onSearch: () => void;
+  onClose: () => void;
 };
 
+const SearchContext = createContext<SearchContextType | null>(null);
+
 export const useSearch = (): SearchContextType => {
-  const context: SearchContextType | null = useContext(SearchContext);
+  const context = useContext(SearchContext);
   if (context === null) {
     throw new Error("useSearch must be used within a SearchProvider");
   }
-  return {
-    searchStr: context.searchStr,
-    setSearchStr: context.setSearchStr,
-    loading: context.loading,
-    searchResults: context.searchResults,
-    searchIsActive: context.searchIsActive,
-    search: context.search,
-    closeSearch: context.closeSearch,
-  };
+  return context;
 };
 
 export const SearchProvider = ({ children }) => {
-  const [searchStr, setSearchStr] = useState<string>("");
+  const [query, setQuery] = useState<string>("");
   const [searchResults, setSearchResults] = useState<SearchResultType[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  const [searchIsActive, setSearchIsActive] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [hasError, setHasError] = useState<boolean>(false);
+  const [isSearchActive, setIsSearchActive] = useState<boolean>(false);
 
-  const search = useCallback(async () => {
-    if (searchStr.trim().length > 0) {
-      setSearchIsActive(true);
-      setLoading(true);
-      const client = getClient();
-      const results = await client.fetch<
-        SearchResultType[]
-      >(`*[[title, category, tags] match ["${searchStr}*"]]{
-        slug,
-        title,
-        availableFrom,
-      }`);
-      setSearchResults(results);
-      setLoading(false);
+  const onSearch = useCallback(async () => {
+    try {
+      if (query.trim().length > 0) {
+        setIsSearchActive(true);
+        setHasError(false);
+        setIsLoading(true);
+        const client = getClient();
+        const results = await client.fetch<
+          SearchResultType[]
+        >(`*[[title, category, tags] match ["${query}*"]]{
+              slug,
+              title,
+              availableFrom,
+            }`);
+        setSearchResults(results);
+      }
+    } catch (error) {
+      console.error(error);
+      setHasError(true);
+    } finally {
+      setIsLoading(false);
     }
-    if (searchStr.trim().length === 0) {
-      setSearchIsActive(false);
+
+    if (query.trim().length === 0) {
+      setIsSearchActive(false);
     }
-  }, [searchStr]);
+  }, [query]);
 
   useEffect(() => {
-    if (searchStr.length === 0) {
-      close();
+    if (query.length === 0) {
+      onClose();
     }
-  }, [searchStr]);
+  }, [query]);
 
   useEffect(() => {
     const debounce = setTimeout(() => {
-      if (searchStr.trim().length > 0) {
-        search();
+      if (query.trim().length > 0) {
+        onSearch();
       }
     }, 500);
 
     return () => {
       clearTimeout(debounce);
     };
-  }, [searchStr, search]);
+  }, [query, onSearch]);
 
-  const closeSearch = () => {
-    setSearchIsActive(false);
-    setSearchStr("");
+  const onClose = () => {
+    setIsSearchActive(false);
+    setQuery("");
     setSearchResults([]);
   };
 
   return (
     <SearchContext.Provider
       value={{
-        searchStr,
-        setSearchStr,
-        loading,
-        searchIsActive,
+        query,
+        setQuery,
+        isLoading,
+        hasError,
+        isSearchActive,
         searchResults,
-        search,
-        closeSearch,
+        onSearch,
+        onClose,
       }}
     >
       {children}

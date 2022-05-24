@@ -4,7 +4,7 @@ import { TextLink } from "../design-system/TextLink";
 import { toDayYear } from "../../utils/date";
 
 export const SearchResult = () => {
-  const { loading, searchResults } = useSearch();
+  const { isLoading, hasError, searchResults } = useSearch();
   const getSearchResultHoverEffect = () => {
     return {
       transform: "scale(1.05)",
@@ -13,7 +13,17 @@ export const SearchResult = () => {
   };
   return (
     <Center mt={8} flexDirection="column" aria-label="results">
-      {searchResults.length === 0 && !loading && (
+      {!isLoading && hasError && (
+        <Text
+          fontSize={[32, 32, 51, 51]}
+          fontFamily={"DINOT"}
+          color="gray"
+          textAlign="center"
+        >
+          Woops! Something went wrong.
+        </Text>
+      )}
+      {searchResults.length === 0 && !isLoading && !hasError && (
         <Text
           fontSize={[32, 32, 51, 51]}
           fontFamily={"DINOT"}
