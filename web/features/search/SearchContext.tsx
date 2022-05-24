@@ -52,11 +52,13 @@ export const SearchProvider = ({ children }) => {
         const client = getClient();
         const results = await client.fetch<
           SearchResultType[]
-        >(`*[[title, category, tags] match ["${query}*"]]{
-              slug,
-              title,
-              availableFrom,
-            }`);
+        >(`*[[title, category, tags] match ["${query}*"]] | score(
+                boost(title match ["${query}"], 4),
+                boost(tags match ["${query}"], 2),
+                boost(category match ["${query}"], 1)
+            ) | order(_score desc)
+            { slug, title, availableFrom }
+        `);
         setSearchResults(results);
       }
     } catch (error) {
