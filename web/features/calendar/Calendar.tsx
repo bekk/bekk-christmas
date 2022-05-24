@@ -18,6 +18,7 @@ const CALENDAR_YEARS = [2021, 2020, 2019, 2018, 2017];
 
 const Calendar = (props: CalendarProps) => {
   const showYearNumber = new Date().getFullYear() !== Number(props.year);
+  const columns = [2, 3, 4, 6];
   const filteredYears = CALENDAR_YEARS.filter((year) => year !== props.year);
   return (
     <Center
@@ -43,9 +44,9 @@ const Calendar = (props: CalendarProps) => {
           Calendar {props.year}
         </Heading>
       )}
-      <SimpleGrid columns={[2, 3, 4, 6]} gap="24px" margin="30px 0 40px" px={6}>
+      <SimpleGrid columns={columns} gap="24px" margin="30px 0 40px" px={6}>
         {listOf24Days.map((day) => (
-          <Day key={day} day={day} year={props.year} />
+          <Day key={day} day={day} year={props.year} columns={columns} />
         ))}
       </SimpleGrid>
       {filteredYears.length > 0 && (
@@ -72,12 +73,36 @@ export default Calendar;
 type DayProps = {
   day: number;
   year: number;
+  columns: number[];
 };
 
-function Day({ day, year }: DayProps) {
+const getSkewDegrees = (columns, maxSkewDegrees, day) => {
+  // Generate a list of lists like [-3, -1, 1, -3]
+  const degreeMatrix = columns.map((col) => {
+    const degrees = [];
+    for (let i = 0; i < col; i++) {
+      degrees.push(-maxSkewDegrees + i * ((2 * maxSkewDegrees) / (col - 1)));
+    }
+    return degrees;
+  });
+
+  // Decide the degrees of a given day based on day number
+  return degreeMatrix.map((degrees) => degrees[(day - 1) % degrees.length]);
+};
+
+function Day({ day, year, columns }: DayProps) {
   const isOpen = new Date() >= new Date(year, 11, day);
-  const degreeTable = [-3, -2, -1, 1, 2, 3];
-  const degreesToSkew = degreeTable[(day - 1) % degreeTable.length];
+  const maxSkewDegrees = 3; // The skewed degrees will span from -maxSkewDegrees to maxSkewDegrees
+  const degreesToSkew = getSkewDegrees(columns, maxSkewDegrees, day);
+
+  // Map out list of transforms based on column dimensions / breakpoints
+  const activeStyle = {
+    transform: degreesToSkew.map(
+      (degrees) => `rotateX(-30deg) skew(${degrees}deg, 0) scale(1, 1.05)`
+    ),
+    boxShadow: "xl",
+    background: "rgba(255, 255, 255, 0.375)",
+  };
   return (
     <Link href={`/post/${year}/${day}`} passHref>
       <Box
@@ -95,24 +120,8 @@ function Day({ day, year }: DayProps) {
         justifyContent="flex-end"
         alignItems="flex-end"
         padding="10px"
-        _hover={
-          isOpen
-            ? {
-                transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
-                boxShadow: "xl",
-                background: "rgba(255, 255, 255, 0.375)",
-              }
-            : undefined
-        }
-        _focus={
-          isOpen
-            ? {
-                transform: `rotateX(-30deg) skew(${degreesToSkew}deg, 0) scale(1, 1.05)`,
-                boxShadow: "xl",
-                background: "rgba(255, 255, 255, 0.375)",
-              }
-            : undefined
-        }
+        _hover={isOpen ? activeStyle : undefined}
+        _focus={isOpen ? activeStyle : undefined}
       >
         <Heading
           as="h2"

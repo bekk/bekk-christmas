@@ -25,23 +25,26 @@ export const PostList = ({
   description,
 }: PostListProps) => {
   const headingRef = React.useRef<HTMLDivElement>();
-  const scrollButtonRef = React.useRef<HTMLDivElement>();
+  const scrollBackButtonRef = React.useRef<HTMLDivElement>();
+  const scrollForwardButtonRef = React.useRef<HTMLDivElement>();
   const postListContainerRef = React.useRef<HTMLDivElement>();
 
   const headingSpace = 0.4;
 
   const handleWheel = (e: any) => {
     const postList = postListContainerRef.current;
+    const scrollMax = postList.scrollWidth - postList.clientWidth;
     postList.scrollLeft += e.deltaY + e.deltaX;
 
-    const scrollMax = postList.scrollWidth - postList.clientWidth;
     const opacity = postList.scrollLeft / (scrollMax * headingSpace);
-    scrollButtonRef.current.style.opacity = opacity.toString();
+    scrollBackButtonRef.current.style.opacity = opacity.toString();
+    scrollForwardButtonRef.current.style.opacity = (1 - opacity).toString();
     headingRef.current.style.opacity = (1 - opacity).toString();
   };
 
   const scrollToStart = () => {
-    scrollButtonRef.current.style.opacity = "0";
+    scrollBackButtonRef.current.style.opacity = "0";
+    scrollForwardButtonRef.current.style.opacity = "1";
     headingRef.current.style.opacity = "1";
     postListContainerRef.current.scrollTo({
       top: 0,
@@ -85,6 +88,25 @@ export const PostList = ({
         >
           <BackButton color="inherit" href={backButtonHref} fontFamily="DINOT">
             {backButtonLabel}
+          </BackButton>
+        </Box>
+        <Box
+          display={posts.length <= 3 && "none"}
+          position={["relative", "relative", "absolute", "absolute"]}
+          top={["20px", "20px", "200px", "200px"]}
+          right={["40px", "40px", "60px", "60px"]}
+          transition="opacity 0.2s"
+          role="group"
+          pointerEvents="none"
+          ref={scrollForwardButtonRef}
+        >
+          <BackButton
+            color="inherit"
+            fontFamily="DINOT"
+            fontSize="24px"
+            reverseDirection
+          >
+            Scroll to see more
           </BackButton>
         </Box>
         <Box
@@ -158,7 +180,7 @@ export const PostList = ({
           opacity="0"
           transition="opacity 0.2s"
           onClick={scrollToStart}
-          ref={scrollButtonRef}
+          ref={scrollBackButtonRef}
           role="group"
         >
           <ArrowShort
