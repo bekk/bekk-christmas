@@ -20,7 +20,7 @@ export const SearchResult = () => {
           color="gray"
           textAlign="center"
         >
-          Woops! Something went wrong.
+          {"Woops! Something went wrong :("}
         </Text>
       )}
       {searchResults.length === 0 && !isLoading && !hasError && (
