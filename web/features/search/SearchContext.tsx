@@ -51,10 +51,7 @@ export const SearchProvider = ({ children }) => {
         setIsLoading(true);
         const client = getClient();
         const results = await client.fetch<SearchResultType[]>(`
-            *[[title, tags,  category] match "${query}*"
-            || pt::text(description) match "${query}*"
-            || pt::text(authors) match "${query}*"
-            || pt::text(content) match "${query}*"]
+            *[[title, tags,  category, pt::text(description), pt::text(authors), pt::text(content)] match "${query}*"]
             | score(
                 boost(pt::text(authors) match "${query}", 10),
                 boost(title match "${query}", 5),

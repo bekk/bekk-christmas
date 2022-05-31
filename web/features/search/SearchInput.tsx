@@ -56,15 +56,3 @@ export const SearchInput = (props: Props) => {
     </InputGroup>
   );
 };
-/*
-{
-  '[type="search"]::-webkit-search-cancel-button': {
-    "-webkit-appearance": "none",
-    appearance: "none",
-  },
-  '[type="search"]::-webkit-search-decoration': {
-    "-webkit-appearance": "none",
-    appearance: "none",
-  },
-}
-*/
