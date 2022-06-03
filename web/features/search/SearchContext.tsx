@@ -8,10 +8,10 @@ import {
 import { getClient } from "../../utils/sanity/sanity.server";
 
 export type SearchResultType = {
+  title: string;
   slug: {
     current: string;
   };
-  title: string;
   availableFrom: string;
 };
 
@@ -50,14 +50,18 @@ export const SearchProvider = ({ children }) => {
         setHasError(false);
         setIsLoading(true);
         const client = getClient();
-        const results = await client.fetch<
-          SearchResultType[]
-        >(`*[[title, category, tags] match ["${query}*"]] | score(
-                boost(title match ["${query}"], 4),
-                boost(tags match ["${query}"], 2),
-                boost(category match ["${query}"], 1)
-            ) | order(_score desc)
-            { slug, title, availableFrom }
+        const results = await client.fetch<SearchResultType[]>(`
+            *[[title, tags,  category, pt::text(description), pt::text(authors), pt::text(content)] match "${query}*"]
+            | score(
+                boost(pt::text(authors) match "${query}", 10),
+                boost(title match "${query}", 5),
+                boost(tags match "${query}", 4),
+                boost(category match "${query}", 3),
+                boost(pt::text(description) match "${query}", 2),
+                boost(pt::text(content) match "${query}", 1),
+            )
+            | order(_score desc)
+            { title, slug, availableFrom }
         `);
         setSearchResults(results);
       }
