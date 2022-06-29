@@ -18,6 +18,11 @@ export default class Document extends NextDocument {
             title="RSS feed for Bekk Christmas"
             href={`${baseUrl}/rss.xml`}
           />
+          <script
+            defer
+            data-domain="bekk.christmas"
+            src="https://plausible.io/js/plausible.js"
+          />
           <FontLoader />
         </Head>
         <body>
