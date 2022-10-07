@@ -1,6 +1,6 @@
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { createImageUrlBuilder } from "next-sanity";
 import { sanityConfig } from "./config";
-import createImageUrlBuilder from "@sanity/image-url";
 
 /** Create a URL for a Sanity image, complete with custom dimensions */
 export const urlFor = (source: SanityImageSource) =>

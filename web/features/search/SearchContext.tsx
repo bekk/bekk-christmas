@@ -7,7 +7,7 @@ import {
 } from "react";
 import { getClient } from "../../utils/sanity/sanity.server";
 
-type SearchResultType = {
+export type SearchResultType = {
   title: string;
   slug: {
     current: string;
