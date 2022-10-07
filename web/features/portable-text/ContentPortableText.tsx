@@ -5,9 +5,8 @@ import {
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
-import { createPortableTextComponent } from "next-sanity";
+import { PortableText as PortableTextComponent } from "@portabletext/react";
 import React from "react";
-import { sanityConfig } from "../../utils/sanity/config";
 import { TextLink } from "../design-system/TextLink";
 import { BlockQuoteBlock } from "./serializers/BlockQuoteBlock";
 import { CodeBlock } from "./serializers/CodeBlock";
@@ -90,7 +89,11 @@ const serializers = {
   container: (props: any) => <>{props.children}</>,
 };
 
-export const ContentPortableText = createPortableTextComponent({
-  ...sanityConfig,
-  serializers: serializers,
-});
+export const ContentPortableText = (props) => (
+  <PortableTextComponent
+    components={{
+      serializers,
+    }}
+    {...props}
+  />
+);

@@ -1,8 +1,7 @@
 import { Code } from "@chakra-ui/react";
-import { createPortableTextComponent } from "next-sanity";
 import React from "react";
-import { sanityConfig } from "../../utils/sanity/config";
 import { TextLink } from "../design-system/TextLink";
+import { PortableText as PortableTextComponent } from "@portabletext/react";
 
 const serializers = {
   marks: {
@@ -13,7 +12,11 @@ const serializers = {
   },
 };
 
-export const DescriptionPortableText = createPortableTextComponent({
-  ...sanityConfig,
-  serializers: serializers,
-});
+export const DescriptionPortableText = (props) => (
+  <PortableTextComponent
+    components={{
+      serializers,
+    }}
+    {...props}
+  />
+);
