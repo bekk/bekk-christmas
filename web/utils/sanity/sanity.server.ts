@@ -11,7 +11,7 @@ export const sanityClient = createClient(sanityConfig);
  *
  * Note - should only be used server side!
  */
-export const previewClient = createClient({
+const previewClient = createClient({
   ...sanityConfig,
   useCdn: false,
   withCredentials: true,

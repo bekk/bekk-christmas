@@ -1,17 +1,6 @@
 import { Box, BoxProps } from "@chakra-ui/react";
 import React from "react";
 
-export const ArrowSlim = (props: BoxProps) => {
-  return (
-    <Box as="svg" viewBox="0 0 24 16" {...props}>
-      <path
-        d="m16.25 0-.68.69 6.58 6.57H0v.97h22.15l-6.58 6.58.68.69L24 7.75 16.25 0Z"
-        fill="currentColor"
-      />
-    </Box>
-  );
-};
-
 export const ArrowShort = (props: BoxProps) => {
   return (
     <Box
