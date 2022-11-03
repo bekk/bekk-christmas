@@ -4,6 +4,7 @@ import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
+import Subscribe from "../subscribe/Subscribe";
 
 const useClientSideOnly = () => {
   const [isClientSide, setIsClientSide] = React.useState(false);
@@ -20,20 +21,23 @@ export const TeaserLandingPage = () => {
       position="relative"
       height="100vh"
       width="100vw"
-      flexDirection="column"
+      flexDirection="row"
     >
-      <ShapeBackground isFullPage />
-      <Link href="/post/2021">
-        <a>
-          <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-        </a>
-      </Link>
-      {isClientSide && (
-        <Countdown
-          date={`${new Date().getFullYear()}/12/01`}
-          renderer={CountdownRenderer}
-        />
-      )}
+      <Box>
+        <ShapeBackground isFullPage />
+        <Link href="/post/2021">
+          <a>
+            <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
+          </a>
+        </Link>
+        {isClientSide && (
+          <Countdown
+            date={`${new Date().getFullYear()}/12/01`}
+            renderer={CountdownRenderer}
+          />
+        )}
+      </Box>
+      <Subscribe />
     </Center>
   );
 };
