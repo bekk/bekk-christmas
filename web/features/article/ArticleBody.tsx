@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Spacer, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
@@ -8,6 +8,7 @@ import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodcastBlock";
 import { VimeoBlock } from "../portable-text/serializers/VimeoBlock";
+import SubscribeModal from "../subscribe/SubscribeModal";
 
 type ArticleBodyProps = {
   type?: "article" | "podcast" | "video";
@@ -82,6 +83,8 @@ export const ArticleBody = ({
           &middot;
         </Text>
         <Text color="brand.gray">{publishedAt}</Text>
+        <Spacer />
+        <SubscribeModal />
       </Flex>
 
       {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}
@@ -93,7 +96,13 @@ export const ArticleBody = ({
           width="100%"
           objectFit="cover"
           src={urlFor(coverImage).width(800).url()}
-          srcSet={`${urlFor(coverImage).width(400).url()} 400w, ${urlFor(coverImage).width(800).url()} 800w, ${urlFor(coverImage).width(1200).url()} 1200w, ${urlFor(coverImage).width(1600).url()} 1600w`}
+          srcSet={`${urlFor(coverImage).width(400).url()} 400w, ${urlFor(
+            coverImage
+          )
+            .width(800)
+            .url()} 800w, ${urlFor(coverImage)
+            .width(1200)
+            .url()} 1200w, ${urlFor(coverImage).width(1600).url()} 1600w`}
           sizes="(max-width: 80ch) 100vw, 80ch"
           alt=""
           borderRadius="20px"

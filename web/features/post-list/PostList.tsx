@@ -3,6 +3,7 @@ import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
+import Subscribe from "../subscribe/Subscribe";
 import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
@@ -166,6 +167,7 @@ export const PostList = ({
                   return <ArticleItem key={post.slug} {...post} />;
               }
             })}
+            <Subscribe />
           </HStack>
         </Flex>
         <Box
