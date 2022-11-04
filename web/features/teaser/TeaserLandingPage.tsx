@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
@@ -22,8 +22,9 @@ export const TeaserLandingPage = () => {
       height="100vh"
       width="100vw"
       flexDirection="row"
+      gridGap="4rem"
     >
-      <Box>
+      <Flex direction="column" align="center" mb="3rem">
         <ShapeBackground isFullPage />
         <Link href="/post/2021">
           <a>
@@ -36,7 +37,7 @@ export const TeaserLandingPage = () => {
             renderer={CountdownRenderer}
           />
         )}
-      </Box>
+      </Flex>
       <Subscribe />
     </Center>
   );
@@ -52,7 +53,7 @@ const CountdownRenderer: CountdownRendererFn = ({
     return <Heading color="white">It's happening!</Heading>;
   } else {
     return (
-      <Box color="white" display="flex" marginTop="7rem">
+      <Box color="white" display="flex" marginTop="3rem">
         <NumberWithLabel number={days} label="Days" />
         <NumberWithLabel number={hours} label="Hours" />
         <NumberWithLabel number={minutes} label="Minutes" />
