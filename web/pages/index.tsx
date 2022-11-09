@@ -53,7 +53,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      showTeaser: false, // isAfterJuly && isBeforeChristmas,
+      showTeaser: isAfterJuly && isBeforeChristmas,
       year: isAfterJuly ? now.getFullYear() : now.getFullYear() - 1,
     },
     revalidate: 10,

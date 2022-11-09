@@ -1,9 +1,10 @@
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
+import Subscribe from "../subscribe/Subscribe";
 
 const useClientSideOnly = () => {
   const [isClientSide, setIsClientSide] = React.useState(false);
@@ -16,24 +17,32 @@ const useClientSideOnly = () => {
 export const TeaserLandingPage = () => {
   const isClientSide = useClientSideOnly();
   return (
-    <Center
-      position="relative"
-      height="100vh"
-      width="100vw"
-      flexDirection="column"
-    >
-      <ShapeBackground isFullPage />
-      <Link href="/post/2021">
-        <a>
-          <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-        </a>
-      </Link>
-      {isClientSide && (
-        <Countdown
-          date={`${new Date().getFullYear()}/12/01`}
-          renderer={CountdownRenderer}
-        />
-      )}
+    <Center position="relative" height="100vh" width="100vw">
+      <Flex
+        sx={{ gap: "3rem" }}
+        alignItems="center"
+        justifyContent="center"
+        flexWrap="wrap"
+      >
+        <Flex direction="column" align="center" mb="3rem">
+          <ShapeBackground isFullPage />
+          <Link href="/post/2021">
+            <a>
+              <BekkChristmasLogo
+                width={["50vmin", "40vmin"]}
+                marginTop="3rem"
+              />
+            </a>
+          </Link>
+          {isClientSide && (
+            <Countdown
+              date={`${new Date().getFullYear()}/12/01`}
+              renderer={CountdownRenderer}
+            />
+          )}
+        </Flex>
+        <Subscribe />
+      </Flex>
     </Center>
   );
 };
@@ -48,7 +57,7 @@ const CountdownRenderer: CountdownRendererFn = ({
     return <Heading color="white">It's happening!</Heading>;
   } else {
     return (
-      <Box color="white" display="flex" marginTop="7rem">
+      <Box color="white" display="flex" marginTop="3rem">
         <NumberWithLabel number={days} label="Days" />
         <NumberWithLabel number={hours} label="Hours" />
         <NumberWithLabel number={minutes} label="Minutes" />

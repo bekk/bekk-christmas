@@ -1,7 +1,8 @@
-import { Box, Center, Container, Flex, Image } from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Image, Spacer } from "@chakra-ui/react";
 import React from "react";
 import { HypeButton } from "../hype/HypeButton";
 import { BackButton } from "../post-list/BackButton";
+import Subscribe from "../subscribe/Subscribe";
 
 type ArticleFooterProps = {
   backButtonHref: string;
@@ -25,6 +26,7 @@ export const ArticleFooter = ({
           {backButtonText}
         </BackButton>
       </Container>
+      <Subscribe my="6rem" w="fit-content" mx="auto" />
       <Center boxShadow="0 0 10px 5px #8C8C8C50" backgroundColor="white" p={5}>
         <Box>
           <Flex justifyContent="center" alignItems="center">
