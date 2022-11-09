@@ -17,14 +17,14 @@ const useClientSideOnly = () => {
 export const TeaserLandingPage = () => {
   const isClientSide = useClientSideOnly();
   return (
-    <Center position="relative" height="100vh" width="100vw">
+    <Center position="relative" minHeight="100vh" width="100vw">
       <Flex
         sx={{ gap: "3rem" }}
         alignItems="center"
         justifyContent="center"
         flexWrap="wrap"
       >
-        <Flex direction="column" align="center" mb="3rem">
+        <Flex direction="column" align="center" mb={[0, "3rem"]}>
           <ShapeBackground isFullPage />
           <Link href="/post/2021">
             <a>
