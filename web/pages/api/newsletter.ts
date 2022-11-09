@@ -52,7 +52,9 @@ const signUpForNewsletter = async ({
         fields: {
           name,
         },
-        groups: ["71325098595846139"],
+        // These are the group IDs from MailerLite
+        // for weekly and daily newsletters, respectively
+        groups: ["70574898356946087", "70574890549249837"],
         status: "active",
       }),
     }
