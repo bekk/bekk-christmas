@@ -24,7 +24,6 @@ export default class Document extends NextDocument {
             src="https://plausible.io/js/plausible.js"
           />
           <FontLoader />
-          <script async src="/mailerlite.js"></script>
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />

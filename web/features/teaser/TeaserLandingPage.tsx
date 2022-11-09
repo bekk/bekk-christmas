@@ -17,28 +17,32 @@ const useClientSideOnly = () => {
 export const TeaserLandingPage = () => {
   const isClientSide = useClientSideOnly();
   return (
-    <Center
-      position="relative"
-      height="100vh"
-      width="100vw"
-      flexDirection="row"
-      gridGap="4rem"
-    >
-      <Flex direction="column" align="center" mb="3rem">
-        <ShapeBackground isFullPage />
-        <Link href="/post/2021">
-          <a>
-            <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-          </a>
-        </Link>
-        {isClientSide && (
-          <Countdown
-            date={`${new Date().getFullYear()}/12/01`}
-            renderer={CountdownRenderer}
-          />
-        )}
+    <Center position="relative" height="100vh" width="100vw">
+      <Flex
+        sx={{ gap: "3rem" }}
+        alignItems="center"
+        justifyContent="center"
+        flexWrap="wrap"
+      >
+        <Flex direction="column" align="center" mb="3rem">
+          <ShapeBackground isFullPage />
+          <Link href="/post/2021">
+            <a>
+              <BekkChristmasLogo
+                width={["50vmin", "40vmin"]}
+                marginTop="3rem"
+              />
+            </a>
+          </Link>
+          {isClientSide && (
+            <Countdown
+              date={`${new Date().getFullYear()}/12/01`}
+              renderer={CountdownRenderer}
+            />
+          )}
+        </Flex>
+        <Subscribe />
       </Flex>
-      <Subscribe />
     </Center>
   );
 };
