@@ -2,32 +2,37 @@ import {
   Box,
   BoxProps,
   Button,
+  CloseButton,
+  Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
   Heading,
   Input,
-  InputGroup,
-  InputLeftAddon,
+  Radio,
+  RadioGroup,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaEnvelope, FaSnowman } from "react-icons/fa";
 
-const Subscribe = (props: BoxProps) => {
+type FormFields = { email: string; interval: "daily" | "weekly" };
+
+const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       setSignupAction({ state: "pending" });
       const formData = Object.fromEntries(
         new FormData(e.target as HTMLFormElement)
-      );
+      ) as FormFields;
+
       const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
       if (response.ok) {
         setSignupAction({ state: "success" });
       } else {
@@ -49,9 +54,14 @@ const Subscribe = (props: BoxProps) => {
     | { state: "success" }
     | {
         state: "error";
-        errors: Partial<Record<"email" | "name", string>> | null;
+        errors: Partial<Record<"email" | "interval", string>> | null;
       }
   >({ state: "idle" });
+  const [isDismissed, setDismissed] = React.useState(false);
+
+  if (isDismissed) {
+    return null;
+  }
 
   if (signupAction.state === "success") {
     return (
@@ -63,7 +73,7 @@ const Subscribe = (props: BoxProps) => {
         maxWidth="lg"
         {...props}
       >
-        <Heading as="h2" mb={4}>
+        <Heading as="h2" mb={4} color="brand.darkGreen">
           🎅 Thanks for signing up!
         </Heading>
         <Text>
@@ -78,31 +88,44 @@ const Subscribe = (props: BoxProps) => {
       border="2px solid black"
       borderRadius="1rem"
       background="white"
-      padding={5}
+      padding={[4, 8, 12]}
       margin={4}
       maxWidth="lg"
+      position="relative"
       {...props}
     >
-      <Heading>Get Christmas spirit right in your mailbox</Heading>
-      <Text>
-        Want to get a daily drip of articles, podcasts and videos in your inbox
-        from December 1st to 24th? <strong>Sign up here 👇</strong>
-      </Text>
-      <Stack as="form" onSubmit={handleSubmit} mt={4}>
+      <CloseButton
+        position="absolute"
+        top={[2, 5]}
+        right={[2, 5]}
+        size="lg"
+        onClick={() => {
+          setDismissed(true);
+          if (props.onClose) {
+            props.onClose();
+          }
+        }}
+      />
+      <Heading color="brand.darkGreen" fontWeight="400" fontSize="1.8rem">
+        Join in the holiday cheer and count down to Christmas with us!
+      </Heading>
+      <Stack as="form" onSubmit={handleSubmit} mt={4} spacing={4}>
         <FormControl
+          as="fieldset"
           isInvalid={
-            signupAction.state === "error" && Boolean(signupAction.errors?.name)
+            signupAction.state === "error" &&
+            Boolean(signupAction.errors?.interval)
           }
         >
-          <FormLabel>What's your name?</FormLabel>
-          <InputGroup>
-            <InputLeftAddon>
-              <FaSnowman />
-            </InputLeftAddon>
-            <Input name="name" autoComplete="given-name" required />
-          </InputGroup>
+          <FormLabel as="legend">I would like updates:</FormLabel>
+          <RadioGroup name="interval" defaultValue="daily" colorScheme="green">
+            <Stack>
+              <Radio value="daily">For each calendar window</Radio>
+              <Radio value="weekly">Weekly summaries</Radio>
+            </Stack>
+          </RadioGroup>
           <FormErrorMessage>
-            {signupAction.state === "error" && signupAction.errors.name}
+            {signupAction.state === "error" && signupAction.errors.interval}
           </FormErrorMessage>
         </FormControl>
         <FormControl
@@ -112,32 +135,40 @@ const Subscribe = (props: BoxProps) => {
           }
         >
           <FormLabel>E-mail</FormLabel>
-          <InputGroup>
-            <InputLeftAddon>
-              <FaEnvelope />
-            </InputLeftAddon>
-            <Input name="email" type="email" required autoComplete="email" />
-          </InputGroup>
+          <Flex>
+            <Input
+              flex="1"
+              name="email"
+              type="email"
+              required
+              autoComplete="email"
+              borderRightRadius={0}
+              placeholder="Type your email…"
+              borderColor="black"
+            />
+            <Button
+              borderLeftRadius={0}
+              fontFamily="DIN OT"
+              fontWeight="350"
+              backgroundColor="black"
+              variant="solid"
+              colorScheme="blackAlpha"
+              type="submit"
+              isLoading={signupAction.state === "pending"}
+              loadingText="Subscribing…"
+            >
+              Subscribe
+            </Button>
+          </Flex>
           <FormErrorMessage>
             {signupAction.state === "error" && signupAction.errors.email}
           </FormErrorMessage>
         </FormControl>
-        <Text as="small">
-          We will never sell or abuse your email for anything other than sending
-          your original Christmas cheer and content from bekk.christmas during
-          December.
+        <Text as="small" color="brand.darkGrey">
+          Your email will only be used for these advent calendar updates during
+          the holiday season. They will never be sold or shared with third
+          parties.
         </Text>
-        <Box textAlign="right">
-          <Button
-            variant="solid"
-            colorScheme="green"
-            type="submit"
-            isLoading={signupAction.state === "pending"}
-            loadingText="Signing you up! 🛷"
-          >
-            Subscribe 🎅
-          </Button>
-        </Box>
       </Stack>
     </Box>
   );

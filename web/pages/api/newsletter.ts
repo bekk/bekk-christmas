@@ -19,24 +19,31 @@ export default newsletterHandler;
 
 const validateInput = (input: Record<string, string>) => {
   const errors: Record<string, string> = {};
-  if (!input.name) {
-    errors.name = "Name is required";
+  if (!input.interval) {
+    errors.interval = "Please choose an interval";
+  } else if (!["weekly", "daily"].includes(input.interval)) {
+    errors.interval =
+      "I'll put you right on the naughtly list if you even try that again";
   }
   if (!input.email) {
-    errors.email = "Email is required";
+    errors.email = "Please fill out an email";
   } else if (!EmailValidator.validate(input.email)) {
-    errors.email = "Email is invalid";
+    errors.email = "Please fill out a valid email";
   }
   return { hasErrors: Object.keys(errors).length > 0, errors };
 };
 
 type SignUpForNewsletterArgs = {
   email: string;
-  name: string;
+  interval: "daily" | "weekly";
 };
+// These are the group IDs from MailerLite
+const WEEKLY_GROUP_ID = "70574898356946087";
+const DAILY_GROUP_ID = "70574890549249837";
+
 const signUpForNewsletter = async ({
-  name,
   email,
+  interval,
 }: SignUpForNewsletterArgs) => {
   const response = await fetch(
     "https://connect.mailerlite.com/api/subscribers",
@@ -49,12 +56,7 @@ const signUpForNewsletter = async ({
       },
       body: JSON.stringify({
         email,
-        fields: {
-          name,
-        },
-        // These are the group IDs from MailerLite
-        // for weekly and daily newsletters, respectively
-        groups: ["70574898356946087", "70574890549249837"],
+        groups: [interval === "daily" ? DAILY_GROUP_ID : WEEKLY_GROUP_ID],
         status: "active",
       }),
     }
