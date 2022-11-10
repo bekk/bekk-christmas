@@ -63,26 +63,6 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
     return null;
   }
 
-  if (signupAction.state === "success") {
-    return (
-      <Box
-        border="2px solid black"
-        borderRadius="1rem"
-        background="white"
-        padding={5}
-        maxWidth="lg"
-        {...props}
-      >
-        <Heading as="h2" mb={4} color="brand.darkGreen">
-          🎅 Thanks for signing up!
-        </Heading>
-        <Text>
-          You'll get an email from us when we have something to share. Until
-          then, you can check out the rest of the site!
-        </Text>
-      </Box>
-    );
-  }
   return (
     <Box
       border="2px solid black"
@@ -106,70 +86,91 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
           }
         }}
       />
-      <Heading color="brand.darkGreen" fontWeight="400" fontSize="1.8rem">
-        Join in the holiday cheer and count down to Christmas with us!
-      </Heading>
-      <Stack as="form" onSubmit={handleSubmit} mt={4} spacing={4}>
-        <FormControl
-          as="fieldset"
-          isInvalid={
-            signupAction.state === "error" &&
-            Boolean(signupAction.errors?.interval)
-          }
-        >
-          <FormLabel as="legend">I would like updates:</FormLabel>
-          <RadioGroup name="interval" defaultValue="daily" colorScheme="green">
-            <Stack>
-              <Radio value="daily">For each calendar window</Radio>
-              <Radio value="weekly">Weekly summaries</Radio>
-            </Stack>
-          </RadioGroup>
-          <FormErrorMessage>
-            {signupAction.state === "error" && signupAction.errors.interval}
-          </FormErrorMessage>
-        </FormControl>
-        <FormControl
-          isInvalid={
-            signupAction.state === "error" &&
-            Boolean(signupAction.errors?.email)
-          }
-        >
-          <FormLabel>E-mail</FormLabel>
-          <Flex>
-            <Input
-              flex="1"
-              name="email"
-              type="email"
-              required
-              autoComplete="email"
-              borderRightRadius={0}
-              placeholder="Type your email…"
-              borderColor="black"
-            />
-            <Button
-              borderLeftRadius={0}
-              fontFamily="DIN OT"
-              fontWeight="350"
-              backgroundColor="black"
-              variant="solid"
-              colorScheme="blackAlpha"
-              type="submit"
-              isLoading={signupAction.state === "pending"}
-              loadingText="Subscribing…"
+      {signupAction.state === "success" ? (
+        <>
+          <Heading
+            as="h2"
+            mb={4}
+            fontWeight="400"
+            fontSize="1.8rem"
+            color="brand.darkGreen"
+          >
+            🎅 Cheers!
+          </Heading>
+          <Text>You'll hear from us soon 🎁</Text>
+        </>
+      ) : (
+        <>
+          <Heading color="brand.darkGreen" fontWeight="400" fontSize="1.8rem">
+            Join in the holiday cheer and count down to Christmas with us!
+          </Heading>
+          <Stack as="form" onSubmit={handleSubmit} mt={4} spacing={4}>
+            <FormControl
+              as="fieldset"
+              isInvalid={
+                signupAction.state === "error" &&
+                Boolean(signupAction.errors?.interval)
+              }
             >
-              Subscribe
-            </Button>
-          </Flex>
-          <FormErrorMessage>
-            {signupAction.state === "error" && signupAction.errors.email}
-          </FormErrorMessage>
-        </FormControl>
-        <Text as="small" color="brand.darkGrey">
-          Your email will only be used for these advent calendar updates during
-          the holiday season. They will never be sold or shared with third
-          parties.
-        </Text>
-      </Stack>
+              <FormLabel as="legend">I would like updates:</FormLabel>
+              <RadioGroup
+                name="interval"
+                defaultValue="daily"
+                colorScheme="green"
+              >
+                <Stack>
+                  <Radio value="daily">For each calendar window</Radio>
+                  <Radio value="weekly">Weekly summaries</Radio>
+                </Stack>
+              </RadioGroup>
+              <FormErrorMessage>
+                {signupAction.state === "error" && signupAction.errors.interval}
+              </FormErrorMessage>
+            </FormControl>
+            <FormControl
+              isInvalid={
+                signupAction.state === "error" &&
+                Boolean(signupAction.errors?.email)
+              }
+            >
+              <FormLabel>E-mail</FormLabel>
+              <Flex>
+                <Input
+                  flex="1"
+                  name="email"
+                  type="email"
+                  required
+                  autoComplete="email"
+                  borderRightRadius={0}
+                  placeholder="Type your email…"
+                  borderColor="black"
+                />
+                <Button
+                  borderLeftRadius={0}
+                  fontFamily="DIN OT"
+                  fontWeight="350"
+                  backgroundColor="black"
+                  variant="solid"
+                  colorScheme="blackAlpha"
+                  type="submit"
+                  isLoading={signupAction.state === "pending"}
+                  loadingText="Subscribing…"
+                >
+                  Subscribe
+                </Button>
+              </Flex>
+              <FormErrorMessage>
+                {signupAction.state === "error" && signupAction.errors.email}
+              </FormErrorMessage>
+            </FormControl>
+            <Text as="small" color="brand.darkGrey">
+              Your email will only be used for these advent calendar updates
+              during the holiday season. They will never be sold or shared with
+              third parties.
+            </Text>
+          </Stack>
+        </>
+      )}
     </Box>
   );
 };
