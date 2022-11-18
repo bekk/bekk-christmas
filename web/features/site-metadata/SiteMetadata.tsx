@@ -24,7 +24,7 @@ export const SiteMetadata = ({
   title,
   description,
   keywords = defaultKeywords,
-  image = "https://cdn.sanity.io/images/ah2n1vfr/production/b13a686723a264260182df3e79b1b94b4f766b35-1440x879.png?w=1200",
+  image = "https://bekk.christmas/og-image.png",
   author = "Bekk",
   canonicalUrl,
   contentType = "article",
