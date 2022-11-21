@@ -9,6 +9,7 @@ import codeSandbox from "./objects/codeSandbox";
 import descriptionText from "./objects/descriptionText";
 import iframe from "./objects/iframe";
 import imageWithMetadata from "./objects/imageWithMetadata";
+import infoBlock from "./objects/infoBlock";
 import portableText from "./objects/portableText";
 import socialMediaLink from "./objects/socialMediaLink";
 import twitter from "./objects/twitter";
@@ -27,6 +28,7 @@ export default createSchema({
     // Objects (stuff used in documents)
     socialMediaLink,
     iframe,
+    infoBlock,
     codePen,
     codeSandbox,
     descriptionText,

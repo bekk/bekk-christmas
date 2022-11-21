@@ -16,6 +16,7 @@ import { CodeSandboxBlock } from "./serializers/CodeSandboxBlock";
 import { HeadingBlock } from "./serializers/HeadingBlock";
 import { IframeBlock } from "./serializers/IframeBlock";
 import { ImageBlock } from "./serializers/ImageBlock";
+import { InfoBlock } from "./serializers/InfoBlock";
 import { TextBlock } from "./serializers/TextBlock";
 import { TwitterBlock } from "./serializers/TwitterBlock";
 import { UnfurledUrlBlock } from "./serializers/UnfurledUrlBlock";
@@ -62,6 +63,7 @@ const serializers = {
     iframe: withExtraSpacing(IframeBlock),
     image: withWrap(40, 40, true)(ImageBlock),
     imageWithMetadata: withWrap(40, 40, true)(ImageBlock),
+    infoBlock: withWrap(40, 40, true)(InfoBlock),
     __block: ({ node }) => {
       if (node.block?._type === "image") {
         return <ImageBlock node={node} />;
