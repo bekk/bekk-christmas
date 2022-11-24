@@ -24,7 +24,7 @@ export const SiteMetadata = ({
   title,
   description,
   keywords = defaultKeywords,
-  image = "https://bekk.christmas/og-image.png",
+  image = "https://bekk.christmas/og-image.jpg",
   author = "Bekk",
   canonicalUrl,
   contentType = "article",
@@ -43,7 +43,9 @@ export const SiteMetadata = ({
       <meta property="og:type" content={contentType} />
       <meta
         property="og:url"
-        content={`https://bekk.christmas${router.asPath}`}
+        content={`https://bekk.christmas${
+          router.asPath !== "index" ? router.asPath : ""
+        }`}
       />
       <meta property="og:image" content={image} />
 
