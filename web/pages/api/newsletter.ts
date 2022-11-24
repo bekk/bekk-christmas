@@ -1,3 +1,4 @@
+import sendGridClient from "@sendgrid/client";
 import * as EmailValidator from "email-validator";
 import { NextApiHandler } from "next";
 
@@ -37,29 +38,27 @@ type SignUpForNewsletterArgs = {
   email: string;
   interval: "daily" | "weekly";
 };
-// These are the group IDs from MailerLite
-const WEEKLY_GROUP_ID = "70574898356946087";
-const DAILY_GROUP_ID = "70574890549249837";
+// These are the group IDs from SendGrid
+const WEEKLY_GROUP_ID = "e73a3126-37a7-4f9f-8e3b-10fa0f4ce100";
+const DAILY_GROUP_ID = "8bb548e6-5e3e-4d17-a219-733e77e863a8";
+
+sendGridClient.setApiKey(process.env.SENDGRID_API_KEY);
 
 const signUpForNewsletter = async ({
   email,
   interval,
 }: SignUpForNewsletterArgs) => {
-  const response = await fetch(
-    "https://connect.mailerlite.com/api/subscribers",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        Authorization: `Bearer ${process.env.MAILERLITE_API_KEY}`,
-      },
-      body: JSON.stringify({
-        email,
-        groups: [interval === "daily" ? DAILY_GROUP_ID : WEEKLY_GROUP_ID],
-        status: "active",
-      }),
-    }
-  );
-  return response.ok;
+  const [req] = await sendGridClient.request({
+    url: "/v3/marketing/contacts",
+    method: "PUT",
+    body: {
+      list_ids: [interval === "daily" ? DAILY_GROUP_ID : WEEKLY_GROUP_ID],
+      contacts: [
+        {
+          email,
+        },
+      ],
+    },
+  });
+  return req.statusCode === 202;
 };
