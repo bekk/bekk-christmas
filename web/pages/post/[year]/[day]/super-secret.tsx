@@ -22,29 +22,16 @@ export default function PostsForDay({
   year,
   available,
 }: PostsForDayProps) {
-  const heading = !available
-    ? "Not yet!"
-    : posts.length === 0
-    ? "No posts found!"
-    : `${day}-Dec`;
-  const description = !available
-    ? `Check back on December ${getDayWithEnding(day)}.`
-    : posts.length === 0
-    ? "We are sorry, there are no posts available yet."
-    : `Content`;
-
   return (
     <Box>
       <SiteMetadata
         title={`Posts for day ${day}, ${year}`}
-        description={`Check out ${
-          posts.length > 1 ? `all ${posts.length} posts` : `the content`
-        } from Bekk on day ${day} of the ${year} Christmas season`}
+        description="Super secret preview page"
       />
       <PostList
         posts={posts}
-        heading={heading}
-        description={description}
+        heading="Preview"
+        description="Here are the posts for a given day"
         backButtonHref={`/post/${year}`}
       />
     </Box>
@@ -66,7 +53,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   ];
 
   const paths = uniqueYears.flatMap((year) =>
-    days.map((day) => `/post/${year}/${day}`)
+    days.map((day) => `/post/${year}/${day}/super-secret`)
   );
 
   return {
@@ -98,25 +85,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { notFound: true };
   }
 
-  const now = new Date();
-
-  const isDayAvailable =
-    now.getFullYear() > LATEST_CONTENT_YEAR ||
-    year < LATEST_CONTENT_YEAR ||
-    (now.getMonth() === 11 && day <= now.getDate());
-
-  if (!isDayAvailable) {
-    return {
-      props: {
-        posts: [],
-        available: false,
-        day,
-        year,
-      },
-      revalidate: 5,
-    };
-  }
-
   const postsPublishedForDay = await getClient().fetch(
     groq`*[_type == "post" && availableFrom == $dateString] {
       "slug": slug.current, 
@@ -144,17 +112,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
     revalidate: 60,
   };
-};
-
-const getDayWithEnding = (day: number) => {
-  if (day % 10 === 1) {
-    return `${day}st`;
-  }
-  if (day % 10 === 2) {
-    return `${day}nd`;
-  }
-  if (day % 10 === 3) {
-    return `${day}rd`;
-  }
-  return `${day}th`;
 };
