@@ -39,16 +39,17 @@ const RelatedLink = (
           marginRight="40px"
           borderRadius="8px"
           maxHeight={["75px", "75px", "150px", "150px"]}
+          maxWidth="230px"
           objectFit="cover"
         />
       )}
       <Flex flexDirection="column" maxWidth="450px">
-        <Heading as="h3" fontSize="22px" fontWeight="normal">
+        <Heading as="h3" fontSize="22px" fontWeight="normal" noOfLines={2}>
           <LinkOverlay href={props.link.url}>
             {props.link.title ?? previewData.data.title}
           </LinkOverlay>
         </Heading>
-        <Text fontSize="16px">
+        <Text fontSize="16px" noOfLines={3}>
           {props.link.description ?? previewData.data.description}
         </Text>
       </Flex>
