@@ -86,7 +86,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   const postsPublishedForDay = await getClient().fetch(
-    groq`*[_type == "post" && availableFrom == $dateString] {
+    groq`*[_type == "post" && availableFrom == $dateString]
+    | order(priority desc)
+    {
       "slug": slug.current, 
       _type,
       type,
