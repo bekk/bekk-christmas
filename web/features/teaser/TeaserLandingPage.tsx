@@ -14,7 +14,7 @@ const useClientSideOnly = () => {
   return isClientSide;
 };
 
-export const TeaserLandingPage = () => {
+export const TeaserLandingPage = ({ year }: { year: number }) => {
   const isClientSide = useClientSideOnly();
   return (
     <Center position="relative" minHeight="100vh" width="100vw">
@@ -26,7 +26,7 @@ export const TeaserLandingPage = () => {
       >
         <Flex direction="column" align="center" mb={[0, "3rem"]}>
           <ShapeBackground isFullPage />
-          <Link href="/post/2021">
+          <Link href={`/post/${year}`}>
             <a>
               <BekkChristmasLogo
                 width={["50vmin", "40vmin"]}
