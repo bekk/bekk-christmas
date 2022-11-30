@@ -80,6 +80,7 @@ export default function PostPage({
         publishedAt={availableFromDate}
         authors={authors}
         coverImage={post.coverImage?.hideFromPost ? undefined : post.coverImage}
+        relatedLinks={post.relatedLinks ?? []}
       />
     </>
   );
@@ -191,6 +192,11 @@ type Post = {
     asset: Record<string, any>;
   };
   availableFrom: string;
+  relatedLinks?: {
+    title: string;
+    description: string;
+    url: string;
+  }[];
 };
 
 const getImageUrl = (image: any) => {

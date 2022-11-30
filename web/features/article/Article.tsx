@@ -28,6 +28,11 @@ type ArticleProps = {
   backButtonHref?: string;
   backButtonText: string;
   consumptionTime: string;
+  relatedLinks: {
+    title: string;
+    description: string;
+    url: string;
+  }[];
 };
 export const Article = ({
   categories = [],
@@ -42,6 +47,7 @@ export const Article = ({
   backButtonHref,
   backButtonText,
   consumptionTime,
+  relatedLinks,
 }: ArticleProps) => {
   const publishedAtDate = publishedAt ? formatter.format(publishedAt) : null;
   const isScrolledToTop = useScrolledToTop();
@@ -71,6 +77,7 @@ export const Article = ({
       <ArticleFooter
         backButtonHref={backButtonHref}
         backButtonText={backButtonText}
+        relatedLinks={relatedLinks}
       />
     </Box>
   );
