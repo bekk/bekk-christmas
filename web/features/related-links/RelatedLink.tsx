@@ -42,7 +42,7 @@ const RelatedLink = (
           objectFit="cover"
         />
       )}
-      <Flex flexDirection="column">
+      <Flex flexDirection="column" maxWidth="450px">
         <Heading as="h3" fontSize="22px" fontWeight="normal">
           <LinkOverlay href={props.link.url}>
             {props.link.title ?? previewData.data.title}
@@ -56,6 +56,7 @@ const RelatedLink = (
         width="2rem"
         flexShrink={0}
         transition="transform 0.1s"
+        alignSelf="flex-end"
         marginLeft="auto"
         _groupHover={{ transform: "translateX(4px)" }}
       />
