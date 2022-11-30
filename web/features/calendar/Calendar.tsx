@@ -14,12 +14,16 @@ type CalendarProps = {
   year: number;
 };
 
-const CALENDAR_YEARS = [2021, 2020, 2019, 2018, 2017];
-
 const Calendar = (props: CalendarProps) => {
-  const showYearNumber = new Date().getFullYear() !== Number(props.year);
-  const columns = [2, 3, 4, 6];
+  const START_YEAR = 2017;
+  const CURRENT_YEAR = new Date().getFullYear();
+  const CALENDAR_YEARS = Array.from(
+    { length: CURRENT_YEAR - START_YEAR + 1 },
+    (_, i) => START_YEAR + i
+  ).reverse();
   const filteredYears = CALENDAR_YEARS.filter((year) => year !== props.year);
+  const columns = [2, 3, 4, 6];
+
   return (
     <Center
       position="relative"
@@ -34,7 +38,7 @@ const Calendar = (props: CalendarProps) => {
         width={["30vmin", "24vmin", "20vmin"]}
       />
       <ShapeBackground />
-      {showYearNumber && (
+      {CURRENT_YEAR !== props.year && (
         <Heading
           mt={12}
           color="white"
