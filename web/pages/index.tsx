@@ -18,7 +18,7 @@ const LandingPage = (props: LandingPageProps) => {
           title="Bekk Christmas - advent calendars about technology, design and strategy"
           description="Get in the holiday spirit by diving into some of the many hundred articles we've made for you"
         />
-        <TeaserLandingPage />
+        <TeaserLandingPage year={props.year} />
       </Box>
     );
   }

@@ -23,7 +23,7 @@ export const ArticleFooter = ({
           fontFamily="Newzald"
           my="54px"
         >
-          {backButtonText}
+          {"Read more from " + backButtonText}
         </BackButton>
       </Container>
       <Subscribe my="6rem" w="fit-content" mx="auto" />
