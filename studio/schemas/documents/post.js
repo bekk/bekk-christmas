@@ -203,6 +203,13 @@ const post = {
         },
       ],
     },
+    {
+      title: "Priority",
+      name: "priority",
+      description:
+        "Defines the ordering of posts in certain lists. Higher number means higher priority",
+      type: "number",
+    },
   ],
   preview: {
     select: {
