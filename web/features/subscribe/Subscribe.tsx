@@ -72,6 +72,7 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
       margin={4}
       maxWidth="lg"
       position="relative"
+      flexShrink={0}
       {...props}
     >
       <CloseButton
@@ -104,7 +105,13 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
           <Heading color="brand.darkGreen" fontWeight="400" fontSize="1.8rem">
             Join in the holiday cheer and count down to Christmas with us!
           </Heading>
-          <Stack as="form" onSubmit={handleSubmit} mt={4} spacing={4} color="brand.black">
+          <Stack
+            as="form"
+            onSubmit={handleSubmit}
+            mt={4}
+            spacing={4}
+            color="brand.black"
+          >
             <FormControl
               as="fieldset"
               isInvalid={

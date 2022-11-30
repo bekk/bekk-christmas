@@ -52,6 +52,7 @@ export const PostItem = ({
         transition="all 0.2s"
         border="0.5rem solid transparent"
         outline="0 solid #fff"
+        flexShrink={0}
         _hover={{
           transform: "scale(1.05)",
           background: "brand.pink",
