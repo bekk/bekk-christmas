@@ -209,6 +209,7 @@ const post = {
       description:
         "Defines the ordering of posts in certain lists. Higher number means higher priority",
       type: "number",
+      initialValue: 0,
     },
   ],
   preview: {
