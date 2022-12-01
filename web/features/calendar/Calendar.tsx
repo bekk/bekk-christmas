@@ -53,21 +53,23 @@ const Calendar = (props: CalendarProps) => {
           <Day key={day} day={day} year={props.year} columns={columns} />
         ))}
       </SimpleGrid>
-      {filteredYears.length > 0 && (
-        <Text color="white" textShadow="2xl" mt={6}>
-          Also check out the calendars from{" "}
-          {filteredYears.map((year, index) => (
-            <React.Fragment key={year}>
-              <TextLink href={`/post/${year}`}>{year}</TextLink>
-              {getSeparator(index, filteredYears)}
-            </React.Fragment>
-          ))}
+      <Box mx={4}>
+        {filteredYears.length > 0 && (
+          <Text color="white" textShadow="2xl" mt={6}>
+            Also check out the calendars from{" "}
+            {filteredYears.map((year, index) => (
+              <React.Fragment key={year}>
+                <TextLink href={`/post/${year}`}>{year}</TextLink>
+                {getSeparator(index, filteredYears)}
+              </React.Fragment>
+            ))}
+          </Text>
+        )}
+        <Text color="white" mb="80px" textShadow="2xl" mt={2}>
+          You can also browse all articles sorted by{" "}
+          <TextLink href="/category">categories</TextLink>
         </Text>
-      )}
-      <Text color="white" mb="80px" textShadow="2xl" mt={2}>
-        You can also browse all articles sorted by{" "}
-        <TextLink href="/category">categories</TextLink>
-      </Text>
+      </Box>
     </Center>
   );
 };
