@@ -155,7 +155,7 @@ export const PostList = ({
               `${100 * headingSpace}vw`,
               `${100 * headingSpace}vw`,
             ]}
-            marginRight={["30vw", "20vw", "10vw"]}
+            marginRight={["10vw", "20vw", "30vw"]}
           >
             {posts.map((post, _) => {
               switch (post.type) {
