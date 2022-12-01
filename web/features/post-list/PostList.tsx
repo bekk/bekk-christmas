@@ -3,12 +3,12 @@ import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
-import Subscribe from "../subscribe/Subscribe";
 import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
 import { PodcastItem, PodcastItemType } from "./PodcastItem";
+import { SignupForNewsletterItem } from "./SignupForNewsletterItem";
 import { VideoItem, VideoItemType } from "./VideoItem";
 
 type PostListProps = {
@@ -94,8 +94,8 @@ export const PostList = ({
         <Box
           display={posts.length <= 3 && "none"}
           position={["relative", "relative", "absolute", "absolute"]}
-          top={["20px", "20px", "200px", "200px"]}
-          right={["40px", "40px", "60px", "60px"]}
+          top={["0px", "0px", "200px", "200px"]}
+          right={["-36px", "-36px", "60px", "60px"]}
           transition="opacity 0.2s"
           role="group"
           pointerEvents="none"
@@ -167,7 +167,7 @@ export const PostList = ({
                   return <ArticleItem key={post.slug} {...post} />;
               }
             })}
-            <Subscribe />
+            <SignupForNewsletterItem />
           </HStack>
         </Flex>
         <Box

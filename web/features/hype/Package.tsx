@@ -1,6 +1,5 @@
 import { Box, usePrefersReducedMotion } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import React from "react";
 
 type PackageProps = {
   isOpen: boolean;
@@ -13,6 +12,7 @@ export const Package = (props: PackageProps) => {
       viewBox="0 20 30 65"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
+      userSelect="none"
     >
       <g transform="translate(2.13 42.06)">
         <path d="m1.38.59 23.65.88.62.65L.07 1.1 1.38.59Z" fill="#0B5742" />
