@@ -1,4 +1,5 @@
 import {
+  ButtonProps,
   Button,
   Modal,
   ModalContent,
@@ -7,11 +8,11 @@ import {
 } from "@chakra-ui/react";
 import Subscribe from "./Subscribe";
 
-const SubscribeModal = () => {
+const SubscribeModal = (props: ButtonProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button onClick={onOpen} variant="solid" colorScheme="green">
+      <Button onClick={onOpen} variant="solid" colorScheme="green" {...props}>
         Subscribe
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
