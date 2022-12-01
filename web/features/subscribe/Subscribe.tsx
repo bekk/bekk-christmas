@@ -70,9 +70,9 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
       background="white"
       padding={[4, 8, 12]}
       margin={4}
-      maxWidth="90vw"
+      maxWidth="lg"
       position="relative"
-      minWidth={["300px", "400px", "500px", "600px"]}
+      flexShrink={0}
       zIndex="modal"
       {...props}
     >
