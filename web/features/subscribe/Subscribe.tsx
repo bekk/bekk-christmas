@@ -14,7 +14,34 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { ReactNode } from "react";
+
+const HeadingWithCloseButton = ({
+  children,
+  onClose,
+  setDismissed,
+}: {
+  children: ReactNode;
+  onClose?: () => void;
+  setDismissed: (isDismissed: boolean) => void;
+}) => (
+  <Flex justifyContent="space-between">
+    <Heading fontWeight="400" fontSize="1.8rem" color="brand.darkGreen">
+      {children}
+    </Heading>
+    <CloseButton
+      size="lg"
+      mt={["-0.5rem", "-0.5rem", "-2rem", "-2rem"]}
+      mr={["-0.5rem", "-0.5rem", "-2rem", "-2rem"]}
+      onClick={() => {
+        setDismissed(true);
+        if (onClose) {
+          onClose();
+        }
+      }}
+    />
+  </Flex>
+);
 
 type FormFields = { email: string; interval: "daily" | "weekly" };
 
@@ -76,36 +103,24 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
       zIndex="modal"
       {...props}
     >
-      <CloseButton
-        position="absolute"
-        top={[2, 5]}
-        right={[2, 5]}
-        size="lg"
-        onClick={() => {
-          setDismissed(true);
-          if (props.onClose) {
-            props.onClose();
-          }
-        }}
-      />
       {signupAction.state === "success" ? (
         <>
-          <Heading
-            as="h2"
-            mb={4}
-            fontWeight="400"
-            fontSize="1.8rem"
-            color="brand.darkGreen"
+          <HeadingWithCloseButton
+            onClose={props.onClose}
+            setDismissed={setDismissed}
           >
             🎅 Cheers!
-          </Heading>
-          <Text>You'll hear from us soon 🎁</Text>
+          </HeadingWithCloseButton>
+          <Text mt={4}>You'll hear from us soon 🎁</Text>
         </>
       ) : (
         <>
-          <Heading color="brand.darkGreen" fontWeight="400" fontSize="1.8rem">
+          <HeadingWithCloseButton
+            onClose={props.onClose}
+            setDismissed={setDismissed}
+          >
             Join in the holiday cheer and count down to Christmas with us!
-          </Heading>
+          </HeadingWithCloseButton>
           <Stack
             as="form"
             onSubmit={handleSubmit}
