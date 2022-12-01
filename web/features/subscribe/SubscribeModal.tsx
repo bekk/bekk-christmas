@@ -16,7 +16,7 @@ const SubscribeModal = () => {
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent background="none" boxShadow="none">
           <Subscribe border="none" borderRadius="lg" onClose={onClose} />
         </ModalContent>
       </Modal>
