@@ -20,30 +20,35 @@ export const ArticleFooter = ({
   relatedLinks,
 }: ArticleFooterProps) => {
   return (
-    <>
-      <Container
-        display="flex"
-        alignItems="center"
-        justifyContent="space-between"
-        maxWidth="80ch"
-        px={[3, 3, 0]}
-      >
-        <BackButton
-          color="brand.darkGreen"
-          href={backButtonHref}
-          fontSize={["18px", "18px", "24px"]}
-          fontFamily="Newzald"
-          my="54px"
-        >
-          {"Read more from " + backButtonText}
-        </BackButton>
-        <HypeButton height="121px" />
-      </Container>
-      {relatedLinks.length > 0 && (
-        <RelatedLinks relatedLinks={relatedLinks} mx="auto" maxWidth="80ch" />
-      )}
+    <Container maxWidth="container.lg">
+      <Box maxWidth="80ch" mx="auto">
+        <Flex alignItems="center" justifyContent="space-between">
+          <BackButton
+            color="brand.darkGreen"
+            href={backButtonHref}
+            fontSize={["18px", "18px", "24px"]}
+            fontFamily="Newzald"
+            my="54px"
+            p={0}
+          >
+            {"Read more from " + backButtonText}
+          </BackButton>
+          <HypeButton height="121px" />
+        </Flex>
+        {relatedLinks.length > 0 && (
+          <RelatedLinks relatedLinks={relatedLinks} />
+        )}
+      </Box>
       <Subscribe my="6rem" w="fit-content" mx="auto" />
-      <Center boxShadow="0 0 10px 5px #8C8C8C50" backgroundColor="white" p={5}>
+      <Center
+        position="relative"
+        width="100vw"
+        marginLeft="-50vw"
+        left="50%"
+        boxShadow="0 0 10px 5px #8C8C8C50"
+        backgroundColor="white"
+        p={5}
+      >
         <Box>
           <Flex justifyContent="center" alignItems="center">
             Proudly powered by{" "}
@@ -62,6 +67,6 @@ export const ArticleFooter = ({
           </Flex>
         </Box>
       </Center>
-    </>
+    </Container>
   );
 };

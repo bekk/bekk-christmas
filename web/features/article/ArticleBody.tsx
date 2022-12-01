@@ -40,7 +40,7 @@ export const ArticleBody = ({
 }: ArticleBodyProps) => {
   return (
     <Container maxWidth="container.lg" mt={["40px", "40px", "60px"]}>
-      <Box marginBottom="20px">
+      <Box mb={4}>
         {categories?.map((category, index) => (
           <React.Fragment key={category.slug}>
             <Link href={`/category/${category.slug}`} passHref>
@@ -69,21 +69,23 @@ export const ArticleBody = ({
       <Box fontSize="24px" mb={4} maxWidth="60ch">
         <DescriptionPortableText blocks={description} />
       </Box>
-      <Flex flexWrap="wrap" fontSize="18px" mb={6}>
-        <Text fontWeight="bold" mb={[2, 0]}>
-          {consumptionTime}
-        </Text>
-        <Text px="8px">&middot;</Text>
-        <Text mb={[2, 0]}>
+      <Flex
+        alignItems="center"
+        flexWrap="wrap"
+        gridGap="0.5rem"
+        fontSize="18px"
+        mb={6}
+      >
+        <Text fontWeight="bold">{consumptionTime}</Text>
+        <Text>&middot;</Text>
+        <Text>
           {authors?.length
             ? `By ${authors.map((author) => author.fullName).join(", ")}`
             : null}
         </Text>
-        <Text px="8px">&middot;</Text>
+        <Text>&middot;</Text>
         <Text color="brand.gray">{publishedAt}</Text>
-      </Flex>
-      <Flex justifyContent="flex-end">
-        <SubscribeModal />
+        <SubscribeModal marginLeft="auto" />
       </Flex>
 
       {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}

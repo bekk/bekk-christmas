@@ -3,6 +3,7 @@ import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
+import Subscribe from "../subscribe/Subscribe";
 import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
@@ -154,7 +155,7 @@ export const PostList = ({
               `${100 * headingSpace}vw`,
               `${100 * headingSpace}vw`,
             ]}
-            marginRight={["30vw", "20vw", "10vw"]}
+            marginRight={["10vw", "20vw", "30vw"]}
           >
             {posts.map((post, _) => {
               switch (post.type) {
@@ -167,7 +168,10 @@ export const PostList = ({
                   return <ArticleItem key={post.slug} {...post} />;
               }
             })}
-            <SignupForNewsletterItem />
+            <SignupForNewsletterItem
+              display={["flex", "flex", "none", "none"]}
+            />
+            <Subscribe display={["none", "none", "unset", "unset"]} />
           </HStack>
         </Flex>
         <Box

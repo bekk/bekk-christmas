@@ -1,8 +1,8 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { BoxProps, Box, Heading, Text } from "@chakra-ui/react";
 import SubscribeModal from "../subscribe/SubscribeModal";
 
-export const SignupForNewsletterItem = () => (
-  <Flex
+export const SignupForNewsletterItem = (props: BoxProps) => (
+  <Box
     position="relative"
     flexDirection="column"
     background="brand.white"
@@ -19,6 +19,7 @@ export const SignupForNewsletterItem = () => (
       background: "brand.pink",
       border: "0.5rem solid #fff",
     }}
+    {...props}
   >
     <Heading
       as="h2"
@@ -28,7 +29,6 @@ export const SignupForNewsletterItem = () => (
       Sign up for our newsletter
     </Heading>
     <Text mb={12}>Get every day's articles delivered to your inbox.</Text>
-
     <SubscribeModal />
-  </Flex>
+  </Box>
 );
