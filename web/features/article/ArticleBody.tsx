@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Container, Flex, Heading, Spacer, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../utils/sanity/utils";
@@ -79,11 +79,10 @@ export const ArticleBody = ({
             ? `By ${authors.map((author) => author.fullName).join(", ")}`
             : null}
         </Text>
-        <Text display={["none", "block"]} px="8px">
-          &middot;
-        </Text>
+        <Text px="8px">&middot;</Text>
         <Text color="brand.gray">{publishedAt}</Text>
-        <Spacer />
+      </Flex>
+      <Flex justifyContent="flex-end">
         <SubscribeModal />
       </Flex>
 

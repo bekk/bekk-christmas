@@ -31,7 +31,7 @@ export default function PostsForDay({
     ? `Check back on December ${getDayWithEnding(day)}.`
     : posts.length === 0
     ? "We are sorry, there are no posts available yet."
-    : `Content`;
+    : `Today's posts`;
 
   return (
     <Box>

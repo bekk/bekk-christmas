@@ -94,8 +94,8 @@ export const PostList = ({
         <Box
           display={posts.length <= 3 && "none"}
           position={["relative", "relative", "absolute", "absolute"]}
-          top={["20px", "20px", "200px", "200px"]}
-          right={["40px", "40px", "60px", "60px"]}
+          top={["0px", "0px", "200px", "200px"]}
+          right={["-36px", "-36px", "60px", "60px"]}
           transition="opacity 0.2s"
           role="group"
           pointerEvents="none"
