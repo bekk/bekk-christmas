@@ -70,9 +70,10 @@ const Subscribe = (props: BoxProps & { onClose?: () => void }) => {
       background="white"
       padding={[4, 8, 12]}
       margin={4}
-      maxWidth="lg"
+      maxWidth="90vw"
       position="relative"
-      flexShrink={0}
+      minWidth={["300px", "400px", "500px", "600px"]}
+      zIndex="modal"
       {...props}
     >
       <CloseButton
