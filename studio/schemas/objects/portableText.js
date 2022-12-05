@@ -61,6 +61,7 @@ export default {
         languageAlternatives: [
           { title: "Bash", value: "bash" },
           { title: "Clojure", value: "clojure" },
+          { title: "Common Lisp", value: "lisp" },
           { title: "CSS", value: "css" },
           { title: "Diff", value: "diff" },
           { title: "Elm", value: "elm" },
