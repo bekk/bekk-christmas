@@ -1,4 +1,5 @@
 module.exports = {
+  staticPageGenerationTimeout: 10 * 60 * 1000, // 10 minute
   images: {
     domains: [
       "images.unsplash.com",
