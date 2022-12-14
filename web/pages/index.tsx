@@ -1,6 +1,5 @@
 import { Box } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
-import React from "react";
 import Calendar from "../features/calendar/Calendar";
 import { SiteMetadata } from "../features/site-metadata/SiteMetadata";
 import { TeaserLandingPage } from "../features/teaser/TeaserLandingPage";
@@ -55,6 +54,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       showTeaser: isAfterJuly && isBeforeChristmas,
       year: isAfterJuly ? now.getFullYear() : now.getFullYear() - 1,
+      day: now.getDate(),
     },
     revalidate: 10,
   };
