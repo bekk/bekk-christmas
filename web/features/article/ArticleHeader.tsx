@@ -23,7 +23,7 @@ export const ArticleHeader = ({
           position="absolute"
           alignSelf="flex-end"
           top={["40px", "60px"]}
-          right={["5vw", "10vw"]}
+          right={["7.5vw", "10vw"]}
           pointerEvents="none"
         >
           <BekkChristmasLogo width="100px" fill="brand.darkGreen" />
