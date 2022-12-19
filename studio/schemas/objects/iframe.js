@@ -9,6 +9,12 @@ const iframe = {
       type: "url",
       validation: (Rule) => Rule.required(),
     },
+    {
+      title: "Height",
+      description: "Set the height you want in pixels",
+      name: "height",
+      type: "number",
+    },
   ],
 };
 
