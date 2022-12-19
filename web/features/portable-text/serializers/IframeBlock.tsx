@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/layout";
-import React from "react";
 import { AnchorFmPodcastBlock } from "./AnchorFmPodcastBlock";
 import { CodePenBlock } from "./CodePenBlock";
 import { CodeSandboxBlock } from "./CodeSandboxBlock";
@@ -33,7 +32,7 @@ export const IframeBlock = ({ node }: any) => {
       <Box position="relative" height="0" pb="56.25%">
         <Box
           as="iframe"
-          height="265"
+          height={node.height ?? "265"}
           style={{ width: "100%" }}
           scrolling="no"
           src={node.src}
