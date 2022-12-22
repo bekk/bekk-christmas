@@ -11,7 +11,7 @@ import { Package } from "./Package";
 import { useHype } from "./useHype";
 
 export const HypeButton = (props: BoxProps) => {
-  const { serverHype, addHype } = useHype();
+  const { serverHype, addHype, myAddedHype } = useHype();
   const [addedHype, setAddedHype] = React.useState(0);
   const [isAddingHype, setAddingHype] = React.useState(false);
   const [whatToShow, setWhatToShow] = React.useState<"added" | "total">(
@@ -38,9 +38,12 @@ export const HypeButton = (props: BoxProps) => {
   const onPointerReleased = () => {
     clearInterval(intervalRef.current);
     setAddingHype(false);
+    clearInterval(timeoutRef.current);
     timeoutRef.current = setTimeout(async () => {
       if (!isMaxedOut) {
-        await addHype(addedHype);
+        // Only add the hype we haven't already submitted
+        const hypeToAdd = addedHype - myAddedHype;
+        await addHype(Math.min(Math.max(hypeToAdd, 0), 50));
       }
       setWhatToShow("total");
       setMaxedOut(addedHype === 50);
