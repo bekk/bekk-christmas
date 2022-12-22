@@ -6,6 +6,7 @@ export const useHype = () => {
   const router = useRouter();
   const slug = slugify(router.asPath.split("?")[0]);
   const [serverHype, setServerHype] = useState(0);
+  const [myAddedHype, setMyAddedHype] = useState(0);
 
   const fetchHype = React.useCallback(async () => {
     const response = await fetch(`/api/${slug}/hype`);
@@ -20,6 +21,7 @@ export const useHype = () => {
 
   const addHype = async (hypeToAdd: number) => {
     try {
+      setMyAddedHype((prev) => prev + hypeToAdd);
       await fetch(`/api/${slug}/hype`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -31,5 +33,5 @@ export const useHype = () => {
     }
   };
 
-  return { serverHype, addHype };
+  return { serverHype, addHype, myAddedHype };
 };
