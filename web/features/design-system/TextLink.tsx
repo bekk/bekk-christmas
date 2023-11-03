@@ -30,7 +30,7 @@ export const TextLink: React.FC<TextLinkProps> = ({
     );
   }
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <Link textDecoration="underline" {...rest}>
         {children}
       </Link>

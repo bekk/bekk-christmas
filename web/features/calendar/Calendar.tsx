@@ -19,7 +19,7 @@ const Calendar = (props: CalendarProps) => {
   const CURRENT_YEAR = new Date().getFullYear();
   const CALENDAR_YEARS = Array.from(
     { length: CURRENT_YEAR - START_YEAR + 1 },
-    (_, i) => START_YEAR + i
+    (_, i) => START_YEAR + i,
   ).reverse();
   const filteredYears = CALENDAR_YEARS.filter((year) => year !== props.year);
   const columns = [2, 3, 4, 6];
@@ -104,7 +104,7 @@ function Day({ day, year, columns }: DayProps) {
   // Map out list of transforms based on column dimensions / breakpoints
   const activeStyle = {
     transform: degreesToSkew.map(
-      (degrees) => `rotateX(-30deg) skew(${degrees}deg, 0) scale(1, 1.05)`
+      (degrees) => `rotateX(-30deg) skew(${degrees}deg, 0) scale(1, 1.05)`,
     ),
     boxShadow: "xl",
     background: "rgba(255, 255, 255, 0.375)",
@@ -112,7 +112,7 @@ function Day({ day, year, columns }: DayProps) {
   return (
     <Link href={`/post/${year}/${day}`} passHref>
       <Box
-        as="a"
+        as="span"
         color="brand.white"
         border={`3px white ${isOpen ? "solid" : "dotted"}`}
         cursor={isOpen ? "pointer" : "default"}

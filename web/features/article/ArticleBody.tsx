@@ -45,7 +45,7 @@ export const ArticleBody = ({
           <React.Fragment key={category.slug}>
             <Link href={`/category/${category.slug}`} passHref>
               <Box
-                as="a"
+                as="span"
                 fontSize={"lg"}
                 marginBottom="16px"
                 textTransform="uppercase"
@@ -98,7 +98,7 @@ export const ArticleBody = ({
           objectFit="cover"
           src={urlFor(coverImage).width(800).url()}
           srcSet={`${urlFor(coverImage).width(400).url()} 400w, ${urlFor(
-            coverImage
+            coverImage,
           )
             .width(800)
             .url()} 800w, ${urlFor(coverImage)
