@@ -23,7 +23,6 @@ export const CategoryBody = ({ categories }: Props) => {
             <TextLink
               href={`/category/${category.slug}`}
               fontSize={51}
-              fontFamily="DINOT"
               lineHeight={1.5}
               color={getRainbowColor(categories.length, index + 1)}
               mr={4}

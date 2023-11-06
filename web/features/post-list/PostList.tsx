@@ -3,13 +3,11 @@ import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
-import Subscribe from "../subscribe/Subscribe";
 import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
 import { PodcastItem, PodcastItemType } from "./PodcastItem";
-import { SignupForNewsletterItem } from "./SignupForNewsletterItem";
 import { VideoItem, VideoItemType } from "./VideoItem";
 
 type PostListProps = {
@@ -63,6 +61,14 @@ export const PostList = ({
 
   return (
     <>
+      <Box
+        position={["fixed"]}
+        bottom={"-150px"}
+        right={"-150px"}
+        pointerEvents="none"
+      >
+        <BekkChristmasLogo width="300px" fill={theme.logo} />
+      </Box>
       <Flex
         flexDirection={["column", "column", "row", "row"]}
         height="100vh"
@@ -87,8 +93,9 @@ export const PostList = ({
           top="0"
           left="0"
           padding={["40px", "40px", "64px", "64px"]}
+          fontSize={["20px", "24px"]}
         >
-          <BackButton color="inherit" href={backButtonHref} fontFamily="DINOT">
+          <BackButton color="inherit" href={backButtonHref}>
             {backButtonLabel}
           </BackButton>
         </Box>
@@ -102,12 +109,7 @@ export const PostList = ({
           pointerEvents="none"
           ref={scrollForwardButtonRef}
         >
-          <BackButton
-            color="inherit"
-            fontFamily="DINOT"
-            fontSize="24px"
-            reverseDirection
-          >
+          <BackButton color="inherit" fontSize="20px" reverseDirection>
             Scroll to see more
           </BackButton>
         </Box>
@@ -123,9 +125,9 @@ export const PostList = ({
           <Heading
             as="h1"
             fontWeight="400"
-            fontSize={["4rem", "5rem", "6rem", "9rem"]}
+            fontSize={["3rem", "5rem", "6rem", "9rem"]}
             lineHeight="1"
-            mb={["12px", "12px", "24px", "12px"]}
+            mb={["8px", "12px", "24px", "12px"]}
           >
             {heading}
           </Heading>
@@ -142,7 +144,8 @@ export const PostList = ({
         <Flex
           transition="transform 0.2s"
           alignItems="center"
-          padding={["40px", "40px", "48px", "48px"]}
+          mt={["20px", "0"]}
+          px={["40px", "40px", "48px", "48px"]}
           overflowX="scroll"
           onWheel={handleWheel}
           ref={postListContainerRef}
@@ -168,10 +171,6 @@ export const PostList = ({
                   return <ArticleItem key={post.slug} {...post} />;
               }
             })}
-            <SignupForNewsletterItem
-              display={["flex", "flex", "none", "none"]}
-            />
-            <Subscribe display={["none", "none", "unset", "unset"]} />
           </HStack>
         </Flex>
         <Box
@@ -201,14 +200,6 @@ export const PostList = ({
           />
         </Box>
       </Flex>
-      <Box
-        position={["fixed"]}
-        bottom={"-150px"}
-        right={"-150px"}
-        pointerEvents="none"
-      >
-        <BekkChristmasLogo width="300px" fill={theme.logo} />
-      </Box>
     </>
   );
 };

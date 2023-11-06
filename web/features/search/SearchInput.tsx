@@ -42,7 +42,6 @@ export const SearchInput = (props: Props) => {
         borderBottom="4px"
         borderRadius="0px"
         fontSize={32}
-        fontFamily={"Newzald"}
         variant={"unstyled"}
         type="search"
         css={{
