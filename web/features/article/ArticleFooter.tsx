@@ -3,7 +3,6 @@ import React from "react";
 import { HypeButton } from "../hype/HypeButton";
 import { BackButton } from "../post-list/BackButton";
 import RelatedLinks from "../related-links/RelatedLinks";
-import Subscribe from "../subscribe/Subscribe";
 
 type ArticleFooterProps = {
   backButtonHref: string;
@@ -39,7 +38,6 @@ export const ArticleFooter = ({
           <RelatedLinks relatedLinks={relatedLinks} />
         )}
       </Box>
-      <Subscribe my="6rem" w="fit-content" mx="auto" />
       <Center
         position="relative"
         width="100vw"

@@ -3,13 +3,11 @@ import React from "react";
 import { toDayYear } from "../../utils/date";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { Squiggle } from "../shapes/Squiggle";
-import Subscribe from "../subscribe/Subscribe";
 import { ArrowShort } from "./Arrow";
 import { ArticleItem, ArticleItemType } from "./ArticleItem";
 import { BackButton } from "./BackButton";
 import { colorCombinations } from "./color-combinations";
 import { PodcastItem, PodcastItemType } from "./PodcastItem";
-import { SignupForNewsletterItem } from "./SignupForNewsletterItem";
 import { VideoItem, VideoItemType } from "./VideoItem";
 
 type PostListProps = {
@@ -168,10 +166,6 @@ export const PostList = ({
                   return <ArticleItem key={post.slug} {...post} />;
               }
             })}
-            <SignupForNewsletterItem
-              display={["flex", "flex", "none", "none"]}
-            />
-            <Subscribe display={["none", "none", "unset", "unset"]} />
           </HStack>
         </Flex>
         <Box

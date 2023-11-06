@@ -8,7 +8,6 @@ import { ContentPortableText } from "../portable-text/ContentPortableText";
 import { DescriptionPortableText } from "../portable-text/DescriptionPortableText";
 import { AnchorFmPodcastBlock } from "../portable-text/serializers/AnchorFmPodcastBlock";
 import { VimeoBlock } from "../portable-text/serializers/VimeoBlock";
-import SubscribeModal from "../subscribe/SubscribeModal";
 
 type ArticleBodyProps = {
   type?: "article" | "podcast" | "video";
@@ -85,7 +84,6 @@ export const ArticleBody = ({
         </Text>
         <Text>&middot;</Text>
         <Text color="brand.gray">{publishedAt}</Text>
-        <SubscribeModal marginLeft="auto" />
       </Flex>
 
       {type === "podcast" && <AnchorFmPodcastBlock node={{ src: embedUrl }} />}

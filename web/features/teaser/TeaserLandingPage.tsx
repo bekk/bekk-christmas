@@ -4,7 +4,6 @@ import React from "react";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { BekkChristmasLogo } from "../design-system/BekkChristmasLogo";
 import { ShapeBackground } from "../shapes/ShapeBackground";
-import Subscribe from "../subscribe/Subscribe";
 
 const useClientSideOnly = () => {
   const [isClientSide, setIsClientSide] = React.useState(false);
@@ -18,25 +17,17 @@ export const TeaserLandingPage = ({ year }: { year: number }) => {
   const isClientSide = useClientSideOnly();
   return (
     <Center position="relative" minHeight="100vh" width="100vw">
-      <Flex
-        sx={{ gap: "3rem" }}
-        alignItems="center"
-        justifyContent="center"
-        flexWrap="wrap"
-      >
-        <Flex direction="column" align="center" mb={[0, "3rem"]}>
-          <ShapeBackground isFullPage />
-          <Link href={`/post/${year}`}>
-            <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
-          </Link>
-          {isClientSide && (
-            <Countdown
-              date={`${new Date().getFullYear()}/12/01`}
-              renderer={CountdownRenderer}
-            />
-          )}
-        </Flex>
-        <Subscribe />
+      <Flex direction="column" align="center" mb={[0, "3rem"]}>
+        <ShapeBackground isFullPage />
+        <Link href={`/post/${year}`}>
+          <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
+        </Link>
+        {isClientSide && (
+          <Countdown
+            date={`${new Date().getFullYear()}/12/01`}
+            renderer={CountdownRenderer}
+          />
+        )}
       </Flex>
     </Center>
   );
