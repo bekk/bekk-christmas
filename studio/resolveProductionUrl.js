@@ -1,9 +1,10 @@
-const previewSecret = process.env.SANITY_STUDIO_PREVIEW_SECRET;
+const previewSecret = process.env.SANITY_PREVIEW_SECRET;
 
 const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";
 
-export default function resolveProductionUrl(doc) {
+export default function resolveProductionUrl(prev, context) {
+  const { document } = context;
   const isLocalhost = window.location.hostname === "localhost";
   const baseUrl = isLocalhost ? localUrl : remoteUrl;
 
@@ -11,7 +12,7 @@ export default function resolveProductionUrl(doc) {
 
   previewUrl.pathname = `/api/preview`;
   previewUrl.searchParams.append(`secret`, previewSecret);
-  previewUrl.searchParams.append("url", getUrlForDocument(doc));
+  previewUrl.searchParams.append("url", getUrlForDocument(document));
 
   return previewUrl.toString();
 }
@@ -26,6 +27,7 @@ function getUrlForDocument(doc) {
       return null;
   }
 }
+
 function getUrlForPost(doc) {
   if (!doc.availableFrom || !doc.slug.current) {
     return "/";
@@ -33,6 +35,7 @@ function getUrlForPost(doc) {
   const { day, year } = toDayYear(doc.availableFrom);
   return `/post/${year}/${day}/${doc.slug.current}`;
 }
+
 const getUrlForPage = (doc) => {
   return `/${doc.slug.current}`;
 };
