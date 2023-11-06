@@ -27,12 +27,7 @@ export const TeaserLandingPage = ({ year }: { year: number }) => {
         <Flex direction="column" align="center" mb={[0, "3rem"]}>
           <ShapeBackground isFullPage />
           <Link href={`/post/${year}`}>
-            <a>
-              <BekkChristmasLogo
-                width={["50vmin", "40vmin"]}
-                marginTop="3rem"
-              />
-            </a>
+            <BekkChristmasLogo width={["50vmin", "40vmin"]} marginTop="3rem" />
           </Link>
           {isClientSide && (
             <Countdown

@@ -3,3 +3,6 @@ dist/
 
 # The production secrets
 .env.production
+
+# Sanity temp folders
+.sanity

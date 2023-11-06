@@ -39,7 +39,7 @@ export const PostItem = ({
   return (
     <Link href={`/post/${year}/${day}/${slug}`} passHref>
       <Flex
-        as="a"
+        as="span"
         cursor="pointer"
         position="relative"
         flexDirection="column"

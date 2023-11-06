@@ -26,18 +26,17 @@ const withWrap =
   (
     spaceAbove: number = 16,
     spaceBelow: number = 16,
-    fullWidth: boolean = false
+    fullWidth: boolean = false,
   ) =>
   (Component: React.FunctionComponent) =>
-  (props: any) =>
-    (
-      <Box
-        margin={`${spaceAbove}px auto ${spaceBelow}px`}
-        maxWidth={fullWidth ? "100%" : "80ch"}
-      >
-        <Component {...props} />
-      </Box>
-    );
+  (props: any) => (
+    <Box
+      margin={`${spaceAbove}px auto ${spaceBelow}px`}
+      maxWidth={fullWidth ? "100%" : "80ch"}
+    >
+      <Component {...props} />
+    </Box>
+  );
 
 const withExtraSpacing = (block) => withWrap(40, 40)(block);
 
@@ -86,7 +85,7 @@ const serializers = {
       const ListComponent =
         props.type === "number" ? OrderedList : UnorderedList;
       return <ListComponent fontSize="lg">{props.children}</ListComponent>;
-    }
+    },
   ),
   listItem: (props: any) => <ListItem>{props.children}</ListItem>,
   container: (props: any) => <>{props.children}</>,

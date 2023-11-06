@@ -1,8 +1,7 @@
-import S from "@sanity/desk-tool/structure-builder";
 import Iframe from "sanity-plugin-iframe-pane";
 import resolveProductionUrl from "./resolveProductionUrl";
 
-export const getDefaultDocumentNode = () => {
+export const getDefaultDocumentNode = (S) => {
   return S.document().views([
     S.view.form(),
     S.view
@@ -14,7 +13,7 @@ export const getDefaultDocumentNode = () => {
   ]);
 };
 
-export default () =>
+export default (S) =>
   S.list()
     .title("Content")
     .items([
