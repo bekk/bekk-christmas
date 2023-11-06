@@ -1,9 +1,54 @@
 import { extendTheme } from "@chakra-ui/react";
+import localFont from "next/font/local";
+
+export const gtAmericaStandard = localFont({
+  src: [
+    {
+      path: "fonts/GT-America-Standard-Medium-Italic.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "fonts/GT-America-Standard-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "fonts/GT-America-Standard-Regular-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "fonts/GT-America-Standard-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "fonts/GT-America-Standard-Light-Italic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "fonts/GT-America-Standard-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+});
+
+export const gtAmericaExpanded = localFont({
+  src: [
+    {
+      path: "fonts/GT-America-Expanded-Medium.woff2",
+      weight: "500",
+    },
+  ],
+});
 
 export const theme = extendTheme({
   fonts: {
-    heading: 'Newzald, Georgia, Cambria, "Times New Roman", Times, serif',
-    body: "DINOT, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Arial, sans-serif",
+    heading: `${gtAmericaStandard.style.fontFamily}, Arial, sans-serif`,
+    body: `${gtAmericaStandard.style.fontFamily}, Arial, sans-serif`,
     monospace: '"Dank Mono", Menlo, Monaco, "Courier New", Courier, monospace',
   },
   colors: {

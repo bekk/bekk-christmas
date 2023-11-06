@@ -15,7 +15,6 @@ export const ArticleHeader = ({
           color="brand.darkGreen"
           href={backButtonHref}
           fontSize={["24px", "41px"]}
-          fontFamily="Newzald"
         >
           {backButtonText}
         </BackButton>

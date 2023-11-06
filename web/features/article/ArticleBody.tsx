@@ -75,7 +75,7 @@ export const ArticleBody = ({
         fontSize="18px"
         mb={6}
       >
-        <Text fontWeight="bold">{consumptionTime}</Text>
+        <Text fontWeight="500">{consumptionTime}</Text>
         <Text>&middot;</Text>
         <Text>
           {authors?.length

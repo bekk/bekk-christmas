@@ -9,7 +9,6 @@ export const BlockQuoteBlock = ({ children }: any) => {
       borderLeft="3px solid"
       borderColor="brand.darkGreen"
       fontSize="24"
-      fontFamily="body"
       fontWeight="300"
       fontStyle="italic"
     >

@@ -17,7 +17,6 @@ export const BackButton = ({
   href = "/",
   children = "Home",
   fontSize,
-  fontFamily,
   reverseDirection = false,
   ...props
 }: BackButtonProps) => {
@@ -44,7 +43,7 @@ export const BackButton = ({
         alignItems="center"
         padding="8px"
         color="inherit"
-        fontWeight="bold"
+        fontWeight="500"
         lineHeight="1.01"
         cursor="pointer"
         whiteSpace="nowrap"
@@ -61,12 +60,7 @@ export const BackButton = ({
             _groupHover={{ transform: "translateX(-8px)" }}
           />
         )}
-        <Text
-          fontWeight="normal"
-          display="inline"
-          fontSize={fontSize}
-          fontFamily={fontFamily}
-        >
+        <Text fontWeight="normal" display="inline" fontSize={fontSize}>
           {children}
         </Text>
         {reverseDirection && (

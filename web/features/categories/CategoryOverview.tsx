@@ -24,12 +24,7 @@ const CategoryOverviewContent = ({ categories }: Props) => {
         {isSearchActive && <SearchResult />}
         {!isSearchActive && (
           <>
-            <Text
-              color="white"
-              fontSize={56}
-              fontFamily="DINOT"
-              fontWeight="bold"
-            >
+            <Text color="white" fontSize={56} fontWeight="bold">
               Article categories
             </Text>
             <CategoryBody categories={categories} />
