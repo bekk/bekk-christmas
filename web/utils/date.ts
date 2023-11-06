@@ -18,3 +18,8 @@ export function toISODateString(date: Date) {
   // To get the date part, split the string by capital Ts and take the first item
   return date.toISOString().split("T")[0];
 }
+
+export const FIRST_DAY_OF_CHRISTMAS = 1;
+export const LAST_DAY_OF_CHRISTMAS = 24;
+export const FIRST_CONTENT_YEAR = 2016;
+export const LATEST_CONTENT_YEAR = 2023;

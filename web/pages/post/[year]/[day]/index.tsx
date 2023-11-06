@@ -6,8 +6,13 @@ import { PodcastItemType } from "../../../../features/post-list/PodcastItem";
 import { PostList } from "../../../../features/post-list/PostList";
 import { VideoItemType } from "../../../../features/post-list/VideoItem";
 import { SiteMetadata } from "../../../../features/site-metadata/SiteMetadata";
-import { toDayYear } from "../../../../utils/date";
-import { getBoundedNumber } from "../../../../utils/number";
+import {
+  FIRST_CONTENT_YEAR,
+  FIRST_DAY_OF_CHRISTMAS,
+  LAST_DAY_OF_CHRISTMAS,
+  LATEST_CONTENT_YEAR,
+  toDayYear,
+} from "../../../../utils/date";
 import { getClient } from "../../../../utils/sanity/sanity.server";
 
 type PostsForDayProps = {
@@ -58,7 +63,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   type Post = { availableFrom: string };
   const allPosts = await getClient().fetch<Post[]>(
-    groq`*[_type == "post"] { availableFrom }`
+    groq`*[_type == "post"] { availableFrom }`,
   );
 
   const uniqueYears = [
@@ -66,7 +71,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   ];
 
   const paths = uniqueYears.flatMap((year) =>
-    days.map((day) => `/post/${year}/${day}`)
+    days.map((day) => `/post/${year}/${day}`),
   );
 
   return {
@@ -75,24 +80,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-const FIRST_DAY_OF_CHRISTMAS = 1;
-const LAST_DAY_OF_CHRISTMAS = 24;
-const FIRST_CONTENT_YEAR = 2016;
-// TODO: This should probably be calculated from the latest post
-const LATEST_CONTENT_YEAR = 2022;
-
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const day = getBoundedNumber(1, 24, params?.day);
-  const year = getBoundedNumber(
-    FIRST_CONTENT_YEAR,
-    new Date().getFullYear(),
-    params?.year
-  );
-
+  const day = Number(params?.day);
+  const year = Number(params?.year);
+  const isValidYear = FIRST_CONTENT_YEAR <= year && year <= LATEST_CONTENT_YEAR;
   const isValidDay =
-    day >= FIRST_DAY_OF_CHRISTMAS || day <= LAST_DAY_OF_CHRISTMAS;
-
-  const isValidYear = year >= FIRST_CONTENT_YEAR && year <= LATEST_CONTENT_YEAR;
+    FIRST_DAY_OF_CHRISTMAS <= day && day <= LAST_DAY_OF_CHRISTMAS;
 
   if (!isValidDay || !isValidYear) {
     return { notFound: true };
@@ -134,7 +127,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       }`,
     {
       dateString: `${year}-12-${day.toString().padStart(2, "0")}`,
-    }
+    },
   );
 
   return {
