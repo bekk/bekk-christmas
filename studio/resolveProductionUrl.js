@@ -1,4 +1,4 @@
-import { getStudioEnvironmentVariables } from "sanity/cli";
+const previewSecret = process.env.SANITY_STUDIO_PREVIEW_SECRET;
 
 const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";
@@ -9,13 +9,9 @@ export default function resolveProductionUrl(_, context) {
   const baseUrl = isLocalhost ? localUrl : remoteUrl;
 
   const previewUrl = new URL(baseUrl);
-  const studioEnv = getStudioEnvironmentVariables();
 
-  previewUrl.pathname = `/api/preview`;
-  previewUrl.searchParams.append(
-    `secret`,
-    studioEnv.SANITY_STUDIO_PREVIEW_SECRET
-  );
+  previewUrl.pathname = "/api/preview";
+  previewUrl.searchParams.append("secret", previewSecret);
   previewUrl.searchParams.append("url", getUrlForDocument(document));
 
   return previewUrl.toString();
