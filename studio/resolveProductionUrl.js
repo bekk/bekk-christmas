@@ -1,17 +1,16 @@
-const previewSecret = process.env.SANITY_STUDIO_PREVIEW_SECRET;
-
 const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";
 
-export default function resolveProductionUrl(_, context) {
-  const { document } = context;
+export default function resolveProductionUrl(document) {
   const isLocalhost = window.location.hostname === "localhost";
   const baseUrl = isLocalhost ? localUrl : remoteUrl;
 
   const previewUrl = new URL(baseUrl);
-
   previewUrl.pathname = "/api/preview";
-  previewUrl.searchParams.append("secret", previewSecret);
+  previewUrl.searchParams.append(
+    "secret",
+    process.env.SANITY_STUDIO_PREVIEW_SECRET
+  );
   previewUrl.searchParams.append("url", getUrlForDocument(document));
 
   return previewUrl.toString();
