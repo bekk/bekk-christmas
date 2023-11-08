@@ -1,4 +1,6 @@
-export default {
+import { SchemaTypeDefinition } from "sanity";
+
+const descriptionText: SchemaTypeDefinition = {
   name: "descriptionText",
   type: "array",
   title: "Description content",
@@ -31,3 +33,5 @@ export default {
     },
   ],
 };
+
+export default descriptionText;

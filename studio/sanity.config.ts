@@ -23,7 +23,7 @@ export default defineConfig({
     types: schemas,
   },
   document: {
-    productionUrl: (_, context) => resolveProductionUrl(context.document),
+    productionUrl: async (_, context) => resolveProductionUrl(context.document),
   },
   auth: {
     redirectOnSingle: true,

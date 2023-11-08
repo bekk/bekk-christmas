@@ -1,3 +1,5 @@
+import { Rule } from "sanity";
+
 const author = {
   title: "Author",
   name: "author",
@@ -7,13 +9,13 @@ const author = {
       title: "Full name",
       name: "fullName",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Slug",
       name: "slug",
       type: "slug",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "fullName",
       },

@@ -1,5 +1,6 @@
 import React from "react";
 import { TwitterTweetEmbed } from "react-twitter-embed";
+import { SchemaTypeDefinition } from "sanity";
 
 const getTweetId = (url) => {
   if (!url) {
@@ -21,7 +22,7 @@ const Preview = ({ value }) => {
   );
 };
 
-export default {
+const twitter: SchemaTypeDefinition = {
   name: "twitter",
   type: "object",
   title: "Twitter Embed",
@@ -40,3 +41,5 @@ export default {
     component: Preview,
   },
 };
+
+export default twitter;

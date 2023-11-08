@@ -1,4 +1,6 @@
-export default {
+import { SchemaTypeDefinition } from "sanity";
+
+const imageWithMetadata: SchemaTypeDefinition = {
   name: "imageWithMetadata",
   type: "image",
   title: "Image",
@@ -25,7 +27,7 @@ export default {
       description:
         'If you for some reason want to set a custom max width for the image, specify it in pixels here (ex. "500" - skip the "px").',
       type: "number",
-      validation: (Rule) => Rule.min(0).max(1200),
+      validation: (rule) => rule.min(0).max(1200),
       options: {
         isHighlighted: true,
       },
@@ -35,8 +37,8 @@ export default {
       type: "string",
       title: "Alternative text",
       description: "Important for SEO and accessiblity.",
-      validation: (Rule) =>
-        Rule.error("You have to fill out the alternative text.").required(),
+      validation: (rule) =>
+        rule.error("You have to fill out the alternative text.").required(),
       options: {
         isHighlighted: true,
       },
@@ -49,3 +51,5 @@ export default {
     },
   },
 };
+
+export default imageWithMetadata;

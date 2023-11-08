@@ -1,4 +1,6 @@
-const infoBlock = {
+import { SchemaTypeDefinition } from "sanity";
+
+const infoBlock: SchemaTypeDefinition = {
   title: "Info block",
   description: "A light green block",
   name: "infoBlock",
@@ -9,7 +11,7 @@ const infoBlock = {
       name: "content",
       type: "array",
       of: [{ type: "block" }],
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
 };

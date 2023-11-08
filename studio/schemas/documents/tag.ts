@@ -1,3 +1,5 @@
+import { Rule } from "sanity";
+
 const tag = {
   title: "Tag",
   name: "tag",
@@ -7,7 +9,7 @@ const tag = {
       title: "Slug",
       name: "slug",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "name",
       },
@@ -16,7 +18,7 @@ const tag = {
       title: "Name",
       name: "name",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Synonyms",

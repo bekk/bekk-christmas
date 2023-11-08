@@ -1,4 +1,6 @@
-const iframe = {
+import { SchemaTypeDefinition } from "sanity";
+
+const iframe: SchemaTypeDefinition = {
   title: "Inline frame",
   name: "iframe",
   type: "object",
@@ -7,7 +9,7 @@ const iframe = {
       title: "Source URL",
       name: "src",
       type: "url",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Height",

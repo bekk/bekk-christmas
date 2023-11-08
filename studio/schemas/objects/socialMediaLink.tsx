@@ -1,4 +1,6 @@
-const socialMediaLink = {
+import { SchemaTypeDefinition } from "sanity";
+
+const socialMediaLink: SchemaTypeDefinition = {
   title: "Social media link",
   name: "socialMediaLink",
   type: "object",
@@ -18,13 +20,13 @@ const socialMediaLink = {
           { title: "Instagram", value: "instagram" },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "URL",
       name: "url",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
 };

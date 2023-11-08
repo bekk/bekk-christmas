@@ -1,4 +1,6 @@
-export default {
+import { SchemaTypeDefinition } from "sanity";
+
+const codePen: SchemaTypeDefinition = {
   type: "object",
   name: "codePen",
   title: "CodePen embed",
@@ -7,7 +9,9 @@ export default {
       name: "url",
       type: "url",
       description: "The CodePen url",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
 };
+
+export default codePen;

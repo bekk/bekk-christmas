@@ -1,3 +1,4 @@
+import { SchemaTypeDefinition } from "sanity";
 import author from "./documents/author";
 import page from "./documents/page";
 import post from "./documents/post";
@@ -11,10 +12,10 @@ import infoBlock from "./objects/infoBlock";
 import portableText from "./objects/portableText";
 import socialMediaLink from "./objects/socialMediaLink";
 import twitter from "./objects/twitter";
-import unfurledUrl from "./objects/unfurled-url";
+import unfurledUrl from "./objects/unfurledUrl";
 import youtube from "./objects/youtube";
 
-export default [
+const schema: SchemaTypeDefinition[] = [
   // Documents
   post,
   author,
@@ -34,3 +35,5 @@ export default [
   youtube,
   unfurledUrl,
 ];
+
+export default schema;

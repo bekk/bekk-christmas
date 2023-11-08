@@ -1,14 +1,14 @@
 import getYouTubeId from "get-youtube-id";
-import React from "react";
 import YouTube from "react-youtube";
+import { SchemaTypeDefinition } from "sanity";
 
-const Preview = ({ value }) => {
+const Preview = ({ value }: Record<string, any>) => {
   const { url } = value;
   const id = getYouTubeId(url);
-  return <YouTube videoId={id} />;
+  return <YouTube videoId={id ?? undefined} />;
 };
 
-export default {
+const youtube: SchemaTypeDefinition = {
   name: "youtube",
   type: "object",
   title: "YouTube Embed",
@@ -17,7 +17,7 @@ export default {
       name: "url",
       type: "url",
       title: "YouTube video URL",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
   preview: {
@@ -27,3 +27,5 @@ export default {
     component: Preview,
   },
 };
+
+export default youtube;

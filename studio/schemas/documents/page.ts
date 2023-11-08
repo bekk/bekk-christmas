@@ -1,3 +1,5 @@
+import { Rule } from "sanity";
+
 const post = {
   title: "Page",
   name: "page",
@@ -7,13 +9,13 @@ const post = {
       title: "Title",
       name: "title",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Slug",
       name: "slug",
       type: "slug",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "title",
       },
@@ -29,7 +31,7 @@ const post = {
       title: "Content",
       name: "content",
       type: "portableText",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
   preview: {
