@@ -7,9 +7,9 @@ import {
   FiTwitter,
   FiYoutube,
 } from "react-icons/fi";
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const portableText: SchemaTypeDefinition = {
+const portableText = defineType({
   name: "portableText",
   type: "array",
   title: "Post body",
@@ -95,6 +95,6 @@ const portableText: SchemaTypeDefinition = {
     { type: "infoBlock", icon: FiInfo },
     { type: "unfurledUrl", icon: FiLink2 },
   ],
-};
+});
 
 export default portableText;

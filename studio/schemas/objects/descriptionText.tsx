@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const descriptionText: SchemaTypeDefinition = {
+const descriptionText = defineType({
   name: "descriptionText",
   type: "array",
   title: "Description content",
@@ -32,6 +32,6 @@ const descriptionText: SchemaTypeDefinition = {
       },
     },
   ],
-};
+});
 
 export default descriptionText;

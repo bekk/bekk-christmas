@@ -1,6 +1,6 @@
-import { Rule } from "sanity";
+import { defineType } from "sanity";
 
-const post = {
+const post = defineType({
   title: "Page",
   name: "page",
   type: "document",
@@ -39,6 +39,6 @@ const post = {
       title: "title",
     },
   },
-};
+});
 
 export default post;

@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const iframe: SchemaTypeDefinition = {
+const iframe = defineType({
   title: "Inline frame",
   name: "iframe",
   type: "object",
@@ -18,6 +18,6 @@ const iframe: SchemaTypeDefinition = {
       type: "number",
     },
   ],
-};
+});
 
 export default iframe;

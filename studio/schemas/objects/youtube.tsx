@@ -1,6 +1,6 @@
 import getYouTubeId from "get-youtube-id";
 import YouTube from "react-youtube";
-import { SchemaTypeDefinition } from "sanity";
+import { SchemaTypeDefinition, defineType } from "sanity";
 
 const Preview = ({ value }: Record<string, any>) => {
   const { url } = value;
@@ -8,7 +8,7 @@ const Preview = ({ value }: Record<string, any>) => {
   return <YouTube videoId={id ?? undefined} />;
 };
 
-const youtube: SchemaTypeDefinition = {
+const youtube = defineType({
   name: "youtube",
   type: "object",
   title: "YouTube Embed",
@@ -26,6 +26,6 @@ const youtube: SchemaTypeDefinition = {
     },
     component: Preview,
   },
-};
+});
 
 export default youtube;

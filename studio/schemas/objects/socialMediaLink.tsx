@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const socialMediaLink: SchemaTypeDefinition = {
+const socialMediaLink = defineType({
   title: "Social media link",
   name: "socialMediaLink",
   type: "object",
@@ -29,6 +29,6 @@ const socialMediaLink: SchemaTypeDefinition = {
       validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default socialMediaLink;

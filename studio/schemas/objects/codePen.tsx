@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const codePen: SchemaTypeDefinition = {
+const codePen = defineType({
   type: "object",
   name: "codePen",
   title: "CodePen embed",
@@ -12,6 +12,6 @@ const codePen: SchemaTypeDefinition = {
       validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default codePen;

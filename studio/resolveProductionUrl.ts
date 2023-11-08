@@ -1,7 +1,9 @@
+import { SanityDocumentLike, Slug } from "sanity";
+
 const remoteUrl = "https://bekk.christmas";
 const localUrl = "http://localhost:3000";
 
-export default function resolveProductionUrl(document) {
+export default function resolveProductionUrl(document: SanityDocumentLike) {
   const isLocalhost = window.location.hostname === "localhost";
   const baseUrl = isLocalhost ? localUrl : remoteUrl;
 
@@ -9,37 +11,40 @@ export default function resolveProductionUrl(document) {
   previewUrl.pathname = "/api/preview";
   previewUrl.searchParams.append(
     "secret",
-    process.env.SANITY_STUDIO_PREVIEW_SECRET
+    process.env.SANITY_STUDIO_PREVIEW_SECRET ?? ""
   );
   previewUrl.searchParams.append("url", getUrlForDocument(document));
 
   return previewUrl.toString();
 }
 
-function getUrlForDocument(doc) {
-  switch (doc?._type) {
+function getUrlForDocument(doc: SanityDocumentLike) {
+  switch (doc._type) {
     case "post":
       return getUrlForPost(doc);
     case "page":
       return getUrlForPage(doc);
     default:
-      return null;
+      return "";
   }
 }
 
-function getUrlForPost(doc) {
-  if (!doc.availableFrom || !doc.slug?.current) {
+function getUrlForPost(doc: SanityDocumentLike) {
+  const slug = doc.slug as Slug;
+  const date = doc.availableFrom as string;
+  if (!doc.availableFrom || !slug.current) {
     return "/";
   }
-  const { day, year } = toDayYear(doc.availableFrom);
-  return `/post/${year}/${day}/${doc.slug.current}`;
+  const { day, year } = toDayYear(date);
+  return `/post/${year}/${day}/${slug.current}`;
 }
 
-const getUrlForPage = (doc) => {
-  return `/${doc.slug.current}`;
+const getUrlForPage = (doc: SanityDocumentLike) => {
+  const slug = doc.slug as Slug;
+  return `/${slug.current}`;
 };
 
-const toDayYear = (date) => ({
+const toDayYear = (date: string) => ({
   day: Number(date.split("-")[2]),
   year: Number(date.split("-")[0]),
 });

@@ -1,6 +1,6 @@
-import { Rule } from "sanity";
+import { defineType } from "sanity";
 
-const author = {
+const author = defineType({
   title: "Author",
   name: "author",
   type: "document",
@@ -38,6 +38,6 @@ const author = {
       of: [{ type: "socialMediaLink" }],
     },
   ],
-};
+});
 
 export default author;

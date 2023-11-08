@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const codeSandbox: SchemaTypeDefinition = {
+const codeSandbox = defineType({
   type: "object",
   name: "codeSandbox",
   title: "Code Sandbox embed",
@@ -12,6 +12,6 @@ const codeSandbox: SchemaTypeDefinition = {
       validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default codeSandbox;

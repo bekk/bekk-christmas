@@ -1,6 +1,6 @@
-import { Image, Rule, SanityDocument, SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const post: SchemaTypeDefinition = {
+const post = defineType({
   title: "Post",
   name: "post",
   type: "document",
@@ -53,8 +53,8 @@ const post: SchemaTypeDefinition = {
           }
           return true;
         }),
-      hidden: ({ document }: { document: SanityDocument }) => {
-        return document.type === "article";
+      hidden: ({ document }) => {
+        return document?.type === "article";
       },
     },
     {
@@ -70,8 +70,8 @@ const post: SchemaTypeDefinition = {
           }
           return length ? true : "Please specify the length of the podcast";
         }),
-      hidden: ({ document }: { document: SanityDocument }) => {
-        return document.type !== "podcast";
+      hidden: ({ document }) => {
+        return document?.type !== "podcast";
       },
     },
     {
@@ -133,7 +133,6 @@ const post: SchemaTypeDefinition = {
             "Check this if you only want the image to show up on the daily summary page, not in your own post",
           name: "hideFromPost",
           type: "boolean",
-          defaultValue: false,
         },
       ],
     },
@@ -232,6 +231,6 @@ const post: SchemaTypeDefinition = {
       };
     },
   },
-};
+});
 
 export default post;

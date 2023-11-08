@@ -1,6 +1,6 @@
-import { Rule } from "sanity";
+import { defineType } from "sanity";
 
-const tag = {
+const tag = defineType({
   title: "Tag",
   name: "tag",
   type: "document",
@@ -33,6 +33,6 @@ const tag = {
       ],
     },
   ],
-};
+});
 
 export default tag;

@@ -1,8 +1,8 @@
 import { PreviewLink } from "@opengraphninja/react";
 import "@opengraphninja/react/styles.css?raw";
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const unfurledUrl: SchemaTypeDefinition = {
+const unfurledUrl = defineType({
   type: "object",
   name: "unfurledUrl",
   title: "Unfurled URL",
@@ -29,6 +29,6 @@ const unfurledUrl: SchemaTypeDefinition = {
       }
     },
   },
-};
+});
 
 export default unfurledUrl;

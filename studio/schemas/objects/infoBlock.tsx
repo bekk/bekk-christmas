@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const infoBlock: SchemaTypeDefinition = {
+const infoBlock = defineType({
   title: "Info block",
   description: "A light green block",
   name: "infoBlock",
@@ -14,6 +14,6 @@ const infoBlock: SchemaTypeDefinition = {
       validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default infoBlock;

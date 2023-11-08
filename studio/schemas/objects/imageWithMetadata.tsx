@@ -1,6 +1,6 @@
-import { SchemaTypeDefinition } from "sanity";
+import { defineType } from "sanity";
 
-const imageWithMetadata: SchemaTypeDefinition = {
+const imageWithMetadata = defineType({
   name: "imageWithMetadata",
   type: "image",
   title: "Image",
@@ -50,6 +50,6 @@ const imageWithMetadata: SchemaTypeDefinition = {
       title: "caption",
     },
   },
-};
+});
 
 export default imageWithMetadata;
