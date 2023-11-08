@@ -7,7 +7,9 @@ import {
   FiTwitter,
   FiYoutube,
 } from "react-icons/fi";
-export default {
+import { defineType } from "sanity";
+
+const portableText = defineType({
   name: "portableText",
   type: "array",
   title: "Post body",
@@ -93,4 +95,6 @@ export default {
     { type: "infoBlock", icon: FiInfo },
     { type: "unfurledUrl", icon: FiLink2 },
   ],
-};
+});
+
+export default portableText;

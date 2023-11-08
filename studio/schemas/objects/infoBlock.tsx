@@ -1,4 +1,6 @@
-const infoBlock = {
+import { defineType } from "sanity";
+
+const infoBlock = defineType({
   title: "Info block",
   description: "A light green block",
   name: "infoBlock",
@@ -9,9 +11,9 @@ const infoBlock = {
       name: "content",
       type: "array",
       of: [{ type: "block" }],
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default infoBlock;

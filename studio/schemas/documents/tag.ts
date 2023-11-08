@@ -1,4 +1,6 @@
-const tag = {
+import { defineType } from "sanity";
+
+const tag = defineType({
   title: "Tag",
   name: "tag",
   type: "document",
@@ -7,7 +9,7 @@ const tag = {
       title: "Slug",
       name: "slug",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "name",
       },
@@ -16,7 +18,7 @@ const tag = {
       title: "Name",
       name: "name",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Synonyms",
@@ -31,6 +33,6 @@ const tag = {
       ],
     },
   ],
-};
+});
 
 export default tag;

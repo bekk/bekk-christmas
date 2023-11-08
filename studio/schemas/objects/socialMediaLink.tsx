@@ -1,4 +1,6 @@
-const socialMediaLink = {
+import { defineType } from "sanity";
+
+const socialMediaLink = defineType({
   title: "Social media link",
   name: "socialMediaLink",
   type: "object",
@@ -18,15 +20,15 @@ const socialMediaLink = {
           { title: "Instagram", value: "instagram" },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "URL",
       name: "url",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
-};
+});
 
 export default socialMediaLink;

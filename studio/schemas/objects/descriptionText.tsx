@@ -1,4 +1,6 @@
-export default {
+import { defineType } from "sanity";
+
+const descriptionText = defineType({
   name: "descriptionText",
   type: "array",
   title: "Description content",
@@ -30,4 +32,6 @@ export default {
       },
     },
   ],
-};
+});
+
+export default descriptionText;

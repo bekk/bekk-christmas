@@ -1,4 +1,6 @@
-const iframe = {
+import { defineType } from "sanity";
+
+const iframe = defineType({
   title: "Inline frame",
   name: "iframe",
   type: "object",
@@ -7,7 +9,7 @@ const iframe = {
       title: "Source URL",
       name: "src",
       type: "url",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Height",
@@ -16,6 +18,6 @@ const iframe = {
       type: "number",
     },
   ],
-};
+});
 
 export default iframe;

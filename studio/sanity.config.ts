@@ -2,7 +2,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { codeInput } from "@sanity/code-input";
-import deskStructure from "./deskStructure";
+import deskStructure, { defaultDocumentNode } from "./deskStructure";
 import schemas from "./schemas/schema";
 import { media } from "sanity-plugin-media";
 import resolveProductionUrl from "./resolveProductionUrl";
@@ -13,6 +13,7 @@ export default defineConfig({
   dataset: "production",
   plugins: [
     deskTool({
+      defaultDocumentNode,
       structure: deskStructure,
     }),
     visionTool(),
@@ -23,7 +24,7 @@ export default defineConfig({
     types: schemas,
   },
   document: {
-    productionUrl: (_, context) => resolveProductionUrl(context.document),
+    productionUrl: async (_, context) => resolveProductionUrl(context.document),
   },
   auth: {
     redirectOnSingle: true,

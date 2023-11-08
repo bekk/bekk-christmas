@@ -1,4 +1,6 @@
-const post = {
+import { defineType } from "sanity";
+
+const post = defineType({
   title: "Post",
   name: "post",
   type: "document",
@@ -16,7 +18,7 @@ const post = {
           { title: "Podcast", value: "podcast" },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Language",
@@ -29,7 +31,7 @@ const post = {
           { title: "Norwegian (Nynorsk)", value: "nn-NO" },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Embed URL",
@@ -37,21 +39,22 @@ const post = {
         "If you're uploading a video or a podcast, you need to upload your content to somebody who knows what they're doing. Upload podcasts to anchor.fm, and videos to vimeo.com. If you need access, contact Kristofer G. Selbekk.",
       name: "embedUrl",
       type: "url",
-      validation: (Rule) =>
-        Rule.custom((url, context) => {
-          if (["podcast", "video"].includes(context.document.type) && !url) {
+      validation: (rule) =>
+        rule.custom((url: string | undefined, context) => {
+          const postType = context.document?.type as string;
+          if (["podcast", "video"].includes(postType) && !url) {
             return "A URL to embed is required";
           }
           if (
-            context.document.type === "video" &&
-            !url.startsWith("https://player.vimeo.com")
+            postType === "video" &&
+            !url?.startsWith("https://player.vimeo.com")
           ) {
             return "Get the embed URL, not the regular URL. It should start with player.vimeo.com/video";
           }
           return true;
         }),
       hidden: ({ document }) => {
-        return document.type === "article";
+        return document?.type === "article";
       },
     },
     {
@@ -60,15 +63,15 @@ const post = {
         "The length of the podcast in minutes. You can find this on Anchor",
       name: "podcastLength",
       type: "number",
-      validation: (Rule) =>
-        Rule.custom((length, context) => {
-          if (context.document.type !== "podcast") {
+      validation: (rule) =>
+        rule.custom((length, context) => {
+          if (context.document?._type !== "podcast") {
             return true;
           }
           return length ? true : "Please specify the length of the podcast";
         }),
       hidden: ({ document }) => {
-        return document.type !== "podcast";
+        return document?.type !== "podcast";
       },
     },
     {
@@ -76,7 +79,7 @@ const post = {
       description: "Make it snappy!",
       name: "title",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Slug",
@@ -130,7 +133,6 @@ const post = {
             "Check this if you only want the image to show up on the daily summary page, not in your own post",
           name: "hideFromPost",
           type: "boolean",
-          defaultValue: false,
         },
       ],
     },
@@ -140,7 +142,7 @@ const post = {
       description:
         "The date the post was or will be posted. If you don't know, just let this be as is, and somebody will do this for you :)",
       type: "date",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       initialValue: `${new Date().getUTCFullYear()}-12-25`,
     },
     {
@@ -171,7 +173,7 @@ const post = {
       title: "Content",
       name: "content",
       type: "portableText",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Related links",
@@ -229,6 +231,6 @@ const post = {
       };
     },
   },
-};
+});
 
 export default post;

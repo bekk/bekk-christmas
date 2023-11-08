@@ -1,7 +1,8 @@
 import React from "react";
 import { TwitterTweetEmbed } from "react-twitter-embed";
+import { PreviewProps, SchemaTypeDefinition, defineType } from "sanity";
 
-const getTweetId = (url) => {
+const getTweetId = (url?: string) => {
   if (!url) {
     return "";
   }
@@ -9,8 +10,11 @@ const getTweetId = (url) => {
   return parsedUrl.pathname.split("/").pop();
 };
 
-const Preview = ({ value }) => {
-  const id = getTweetId(value ? value.url : null);
+type CastPreviewProps = PreviewProps & { url?: string };
+
+const Preview = (props: PreviewProps) => {
+  const { url } = props as CastPreviewProps;
+  const id = getTweetId(url);
   if (!id) {
     return null;
   }
@@ -21,7 +25,7 @@ const Preview = ({ value }) => {
   );
 };
 
-export default {
+const twitter = defineType({
   name: "twitter",
   type: "object",
   title: "Twitter Embed",
@@ -33,10 +37,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
+  components: { preview: Preview },
   preview: {
     select: {
       url: "url",
     },
-    component: Preview,
   },
-};
+});
+
+export default twitter;

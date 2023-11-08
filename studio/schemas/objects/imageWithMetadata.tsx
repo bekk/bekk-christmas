@@ -1,4 +1,6 @@
-export default {
+import { defineType } from "sanity";
+
+const imageWithMetadata = defineType({
   name: "imageWithMetadata",
   type: "image",
   title: "Image",
@@ -15,9 +17,6 @@ export default {
       name: "caption",
       type: "string",
       title: "Caption",
-      options: {
-        isHighlighted: true,
-      },
     },
     {
       name: "maxWidth",
@@ -25,21 +24,15 @@ export default {
       description:
         'If you for some reason want to set a custom max width for the image, specify it in pixels here (ex. "500" - skip the "px").',
       type: "number",
-      validation: (Rule) => Rule.min(0).max(1200),
-      options: {
-        isHighlighted: true,
-      },
+      validation: (rule) => rule.min(0).max(1200),
     },
     {
       name: "alt",
       type: "string",
       title: "Alternative text",
       description: "Important for SEO and accessiblity.",
-      validation: (Rule) =>
-        Rule.error("You have to fill out the alternative text.").required(),
-      options: {
-        isHighlighted: true,
-      },
+      validation: (rule) =>
+        rule.error("You have to fill out the alternative text.").required(),
     },
   ],
   preview: {
@@ -48,4 +41,6 @@ export default {
       title: "caption",
     },
   },
-};
+});
+
+export default imageWithMetadata;

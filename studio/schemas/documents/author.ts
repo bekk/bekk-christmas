@@ -1,4 +1,6 @@
-const author = {
+import { defineType } from "sanity";
+
+const author = defineType({
   title: "Author",
   name: "author",
   type: "document",
@@ -7,13 +9,13 @@ const author = {
       title: "Full name",
       name: "fullName",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Slug",
       name: "slug",
       type: "slug",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "fullName",
       },
@@ -36,6 +38,6 @@ const author = {
       of: [{ type: "socialMediaLink" }],
     },
   ],
-};
+});
 
 export default author;

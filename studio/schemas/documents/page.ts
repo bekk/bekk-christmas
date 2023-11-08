@@ -1,4 +1,6 @@
-const post = {
+import { defineType } from "sanity";
+
+const post = defineType({
   title: "Page",
   name: "page",
   type: "document",
@@ -7,13 +9,13 @@ const post = {
       title: "Title",
       name: "title",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
       title: "Slug",
       name: "slug",
       type: "slug",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
       options: {
         source: "title",
       },
@@ -29,7 +31,7 @@ const post = {
       title: "Content",
       name: "content",
       type: "portableText",
-      validation: (Rule) => Rule.required(),
+      validation: (rule) => rule.required(),
     },
   ],
   preview: {
@@ -37,6 +39,6 @@ const post = {
       title: "title",
     },
   },
-};
+});
 
 export default post;
