@@ -28,7 +28,7 @@ function getUrlForDocument(doc) {
 }
 
 function getUrlForPost(doc) {
-  if (!doc.availableFrom || !doc.slug.current) {
+  if (!doc.availableFrom || !doc.slug?.current) {
     return "/";
   }
   const { day, year } = toDayYear(doc.availableFrom);
