@@ -17,9 +17,6 @@ const imageWithMetadata = defineType({
       name: "caption",
       type: "string",
       title: "Caption",
-      options: {
-        isHighlighted: true,
-      },
     },
     {
       name: "maxWidth",
@@ -28,9 +25,6 @@ const imageWithMetadata = defineType({
         'If you for some reason want to set a custom max width for the image, specify it in pixels here (ex. "500" - skip the "px").',
       type: "number",
       validation: (rule) => rule.min(0).max(1200),
-      options: {
-        isHighlighted: true,
-      },
     },
     {
       name: "alt",
@@ -39,9 +33,6 @@ const imageWithMetadata = defineType({
       description: "Important for SEO and accessiblity.",
       validation: (rule) =>
         rule.error("You have to fill out the alternative text.").required(),
-      options: {
-        isHighlighted: true,
-      },
     },
   ],
   preview: {

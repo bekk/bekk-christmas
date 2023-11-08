@@ -222,7 +222,7 @@ const post = defineType({
       extraAuthor: "authors.1.fullName",
       media: "coverImage",
     },
-    prepare({ title, tag, author, extraAuthor, media }: Record<string, any>) {
+    prepare({ title, tag, author, extraAuthor, media }) {
       const authors = extraAuthor ? `${author}, ${extraAuthor}` : author;
       return {
         title: title,

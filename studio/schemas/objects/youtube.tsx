@@ -1,11 +1,14 @@
 import getYouTubeId from "get-youtube-id";
 import YouTube from "react-youtube";
-import { SchemaTypeDefinition, defineType } from "sanity";
+import { PreviewProps, defineType } from "sanity";
 
-const Preview = ({ value }: Record<string, any>) => {
-  const { url } = value;
-  const id = getYouTubeId(url);
-  return <YouTube videoId={id ?? undefined} />;
+type CastPreviewProps = PreviewProps & { url?: string };
+
+const Preview = (props: PreviewProps) => {
+  const { url } = props as CastPreviewProps;
+  const id = getYouTubeId(url ?? "");
+  if (id) return <YouTube videoId={id} />;
+  else return null;
 };
 
 const youtube = defineType({
@@ -20,11 +23,13 @@ const youtube = defineType({
       validation: (rule) => rule.required(),
     },
   ],
+  components: {
+    preview: Preview,
+  },
   preview: {
     select: {
       url: "url",
     },
-    component: Preview,
   },
 });
 
