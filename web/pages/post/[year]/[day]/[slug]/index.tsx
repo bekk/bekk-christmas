@@ -96,7 +96,7 @@ export default function PostPage({
  */
 const normalizeAuthors = (post: Post) =>
   [...(post.oldAuthors || []), ...(post.newAuthors || [])].filter(
-    (author) => author?.fullName
+    (author) => author?.fullName,
   );
 
 type NotAvailableYetProps = {
@@ -162,7 +162,7 @@ export const getStaticProps = async ({
 export const getStaticPaths: GetStaticPaths = async () => {
   type PathResult = { slug: string; availableFrom?: string };
   const allPosts = await getClient().fetch<PathResult[]>(
-    groq`*[_type == 'post'] { "slug": slug.current, availableFrom }`
+    groq`*[_type == 'post'] { "slug": slug.current, availableFrom }`,
   );
   return {
     paths: allPosts.map((post) => {
@@ -210,7 +210,7 @@ const getImageUrl = (image: any) => {
 };
 
 const getKeywordsFromCategories = (
-  categories?: { name: string; slug: string }[]
+  categories?: { name: string; slug: string }[],
 ): string[] => {
   return categories?.length
     ? categories.map((category) => category.name)

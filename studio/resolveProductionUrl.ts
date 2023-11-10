@@ -30,9 +30,12 @@ function getUrlForDocument(doc: SanityDocumentLike) {
 }
 
 function getUrlForPost(doc: SanityDocumentLike) {
+  if (!doc.slug || !doc.availableFrom) {
+    return "/";
+  }
   const slug = doc.slug as Slug;
   const date = doc.availableFrom as string;
-  if (!doc.availableFrom || !slug.current) {
+  if (!slug.current) {
     return "/";
   }
   const { day, year } = toDayYear(date);
