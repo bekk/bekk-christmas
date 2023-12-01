@@ -45,11 +45,12 @@ export const ArticleFooter = ({
         boxShadow="0 0 10px 5px #8C8C8C50"
         backgroundColor="white"
         p={5}
+        mt={5}
       >
         <Box>
-          <Flex justifyContent="center" alignItems="center">
-            Proudly powered by{" "}
-            <a href="https://sanity.io" rel="noopener noreferrer">
+          <a href="https://sanity.io" rel="noopener noreferrer">
+            <Flex justifyContent="center" alignItems="center">
+              Proudly powered by{" "}
               <Image
                 src="/logos/sanity.svg"
                 alt="Sanity.io"
@@ -57,11 +58,9 @@ export const ArticleFooter = ({
                 width="5rem"
                 ml={2}
                 display="inline-block"
-                position="relative"
-                top="-2px"
               />
-            </a>
-          </Flex>
+            </Flex>
+          </a>
         </Box>
       </Center>
     </Container>

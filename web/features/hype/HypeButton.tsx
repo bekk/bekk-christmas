@@ -15,7 +15,7 @@ export const HypeButton = (props: BoxProps) => {
   const [addedHype, setAddedHype] = React.useState(0);
   const [isAddingHype, setAddingHype] = React.useState(false);
   const [whatToShow, setWhatToShow] = React.useState<"added" | "total">(
-    "total"
+    "total",
   );
   const [isMaxedOut, setMaxedOut] = React.useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -74,7 +74,6 @@ export const HypeButton = (props: BoxProps) => {
           onKeyDown={onKeyDown}
           onKeyUp={onKeyUp}
           width="56px"
-          mb={[10, 10, 0]}
         >
           <Box>
             <Package isOpen={isAddingHype} />
