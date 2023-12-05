@@ -92,7 +92,7 @@ export const PostList = ({
           zIndex="1"
           top="0"
           left="0"
-          padding={["40px", "40px", "64px", "64px"]}
+          padding={["32px", "32px", "64px", "64px"]}
           fontSize={["20px", "24px"]}
         >
           <BackButton color="inherit" href={backButtonHref}>
@@ -178,7 +178,7 @@ export const PostList = ({
           bottom={["20px", "20px", "80px", "80px"]}
           left={["40px", "40px", "80px", "80px"]}
           width="fit-content"
-          padding={["1.5rem", "1.5rem", "2rem", "2rem"]}
+          padding={["1rem", "1rem", "2rem", "2rem"]}
           background={theme.text}
           borderRadius="50%"
           cursor="pointer"
