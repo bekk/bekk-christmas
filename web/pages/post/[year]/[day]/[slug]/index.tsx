@@ -170,7 +170,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: allPosts.map((post) => {
       const { year, day } = toDayYear(post.availableFrom);
-      return `/post/${year}/${day}/${post.slug?.replace(/\//g, "")}`;
+      return `/post/${year}/${day
+        .toString()
+        .padStart(2, "0")}/${post.slug?.replace(/\//g, "")}`;
     }),
     fallback: "blocking",
   };
