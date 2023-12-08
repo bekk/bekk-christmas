@@ -68,7 +68,10 @@ export default function PostPage({
         <meta data-rh="true" name="twitter:data1" content={consumptionTime} />
       </SiteMetadata>
       <Article
-        backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate.getDate()}`}
+        backButtonHref={`/post/${availableFromDate.getFullYear()}/${availableFromDate
+          .getDate()
+          .toString()
+          .padStart(2, "0")}`}
         backButtonText={shortDateFormat(availableFromDate)}
         type={post.type}
         embedUrl={post.embedUrl}

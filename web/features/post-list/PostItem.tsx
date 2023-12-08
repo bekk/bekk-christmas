@@ -37,7 +37,10 @@ export const PostItem = ({
   const { year, day } = toDayYear(availableFrom);
   const coverImageSrc = urlFor(coverImage).width(800).url()!;
   return (
-    <Link href={`/post/${year}/${day}/${slug}`} passHref>
+    <Link
+      href={`/post/${year}/${day.toString().padStart(2, "0")}/${slug}`}
+      passHref
+    >
       <Flex
         as="span"
         cursor="pointer"

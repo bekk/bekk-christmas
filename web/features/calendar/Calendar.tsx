@@ -110,7 +110,7 @@ function Day({ day, year, columns }: DayProps) {
     background: "rgba(255, 255, 255, 0.375)",
   };
   return (
-    <Link href={`/post/${year}/${day}`} passHref>
+    <Link href={`/post/${year}/${day.toString().padStart(2, "0")}`} passHref>
       <Box
         as="span"
         color="brand.white"

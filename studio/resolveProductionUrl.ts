@@ -48,6 +48,6 @@ const getUrlForPage = (doc: SanityDocumentLike) => {
 };
 
 const toDayYear = (date: string) => ({
-  day: Number(date.split("-")[2]),
-  year: Number(date.split("-")[0]),
+  day: date.split("-")[2],
+  year: date.split("-")[0],
 });
