@@ -90,6 +90,7 @@ const post = defineType({
       options: {
         source: "title",
       },
+      validation: (rule) => rule.required(),
     },
     {
       name: "canonicalUrl",
