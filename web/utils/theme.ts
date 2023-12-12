@@ -4,33 +4,8 @@ import localFont from "next/font/local";
 export const gtAmericaStandard = localFont({
   src: [
     {
-      path: "fonts/GT-America-Standard-Medium-Italic.ttf",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "fonts/GT-America-Standard-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "fonts/GT-America-Standard-Regular-Italic.ttf",
+      path: "fonts/GT-America-Standard-Regular.otf",
       weight: "400",
-      style: "italic",
-    },
-    {
-      path: "fonts/GT-America-Standard-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "fonts/GT-America-Standard-Light-Italic.ttf",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "fonts/GT-America-Standard-Light.ttf",
-      weight: "300",
       style: "normal",
     },
   ],
@@ -39,7 +14,7 @@ export const gtAmericaStandard = localFont({
 export const gtAmericaExpanded = localFont({
   src: [
     {
-      path: "fonts/GT-America-Expanded-Medium.ttf",
+      path: "fonts/GT-America-Expanded-Medium.otf",
       weight: "500",
     },
   ],
