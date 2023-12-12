@@ -52,4 +52,11 @@ export const theme = extendTheme({
       900: "#B2C9AC",
     },
   },
+  styles: {
+    global: {
+      body: {
+        fontFeatureSettings: '"ss01" on, "ss05" on',
+      },
+    },
+  },
 });
