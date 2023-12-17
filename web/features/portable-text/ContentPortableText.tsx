@@ -84,10 +84,10 @@ const serializers = {
     (props: { type: "number" | "bullet"; children: React.ReactNode }) => {
       const ListComponent =
         props.type === "number" ? OrderedList : UnorderedList;
-      return <ListComponent fontSize="lg">{props.children}</ListComponent>;
+      return <ListComponent fontSize="xl">{props.children}</ListComponent>;
     },
   ),
-  listItem: (props: any) => <ListItem>{props.children}</ListItem>,
+  listItem: (props: any) => <ListItem fontSize="xl">{props.children}</ListItem>,
   container: (props: any) => <>{props.children}</>,
 };
 
