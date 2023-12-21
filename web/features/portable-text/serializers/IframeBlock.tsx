@@ -29,7 +29,7 @@ export const IframeBlock = ({ node }: any) => {
 
   return (
     <Box maxWidth="854px">
-      <Box position="relative" height="0" pb="56.25%">
+      <Box position="relative">
         <Box
           as="iframe"
           height={node.height ?? "265"}
